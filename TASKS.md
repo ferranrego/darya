@@ -30,42 +30,42 @@
 ## Phase 1 — Complete usable product
 
 ### Auth & onboarding
-- [ ] Email/password auth (login/signup), session middleware, profile bootstrap
-- [ ] Welcome screen
-- [ ] Script check ("Can you read this?")
-- [ ] Level assessment: word-cloud tap UI across frequency bands
-- [ ] Vocab-size estimation + known-word seeding + starting level
-- [ ] Non-reader route → alphabet course entry
+- [x] Email/password auth (login/signup), session middleware, profile bootstrap
+- [x] Welcome screen
+- [x] Script check ("Can you read this?")
+- [x] Level assessment: word-cloud tap UI across frequency bands
+- [x] Vocab-size estimation + known-word seeding + starting level
+- [x] Non-reader route → alphabet course entry
 
 ### Alphabet course
-- [ ] Course map (units, progress)
-- [ ] Letter-forms component (isolated/initial/medial/final)
-- [ ] Exercises: recognizeLetter, pickForm, matchSound, readWord, readSentence
-- [ ] Progress persistence + unlock logic
+- [x] Course map (units, progress)
+- [x] Letter-forms component (isolated/initial/medial/final)
+- [x] Exercises: recognizeLetter, pickForm, matchSound, readWord, readSentence
+- [x] Progress persistence + unlock logic
 
 ### Reading
-- [ ] Token renderer (RTL, tap targets, state tints: new/learning/known)
-- [ ] Word popover (gloss, translit, add-to-learning)
-- [ ] Text view with sentence translation reveal
-- [ ] Home: continue reading / next text / daily goal ring
+- [x] Token renderer (RTL, tap targets, state tints: new/learning/known)
+- [x] Word popover (gloss, translit, add-to-learning)
+- [x] Text view with sentence translation reveal
+- [x] Home: continue reading / next text / daily goal ring
 - [ ] Generation route: Gemini Flash → Groq → OpenRouter fallback, Zod-validated JSON, vocab-constraint verifier, Postgres cache
-- [ ] Adaptive next-text logic (new-word ratio tunable per user)
+- [x] Adaptive next-text logic (new-word ratio tunable per user)
 - [ ] Pre-generation queue (3–5 texts ahead)
 
 ### SRS
-- [ ] ts-fsrs scheduler integration (server-persisted cards)
-- [ ] Review UI: two buttons (Forgot → Again, Got it → Good), reveal flow
-- [ ] learning → known transition (threshold + micro-celebration)
-- [ ] Daily review queue + cap
+- [x] ts-fsrs scheduler integration (server-persisted cards)
+- [x] Review UI: two buttons (Forgot → Again, Got it → Good), reveal flow
+- [x] learning → known transition (threshold + micro-celebration)
+- [x] Daily review queue + cap
 
 ### Gamification
-- [ ] XP model (reading, reviews, alphabet)
-- [ ] Streaks (current/best, any-activity day)
-- [ ] Daily goal + progress ring
-- [ ] Minimal stats (known words, words read)
+- [x] XP model (reading, reviews, alphabet)
+- [x] Streaks (current/best, any-activity day)
+- [x] Daily goal + progress ring
+- [x] Minimal stats (known words, words read)
 
 ### PWA & ship
-- [ ] manifest.webmanifest + icons + install prompt
+- [x] manifest.webmanifest + icons + install prompt
 - [ ] Service worker: shell precache, font/lexicon runtime cache, offline current-texts + due reviews
 - [ ] Polish pass: typography, spacing, motion audit, reduced-motion, RTL audit
 - [ ] E2E browser walkthrough (375px + desktop): onboarding both branches, read 3 texts, tap words, review session, streak, offline reload

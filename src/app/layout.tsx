@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Vazirmatn } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { MotionSetup } from "@/components/motion-config";
 import { SwRegister } from "@/components/sw-register";
 
 const inter = Inter({
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Providers>{children}</Providers>
         <SwRegister />
+        <MotionSetup />
       </body>
     </html>
   );

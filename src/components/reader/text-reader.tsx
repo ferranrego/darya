@@ -70,7 +70,11 @@ export function TextReader({
         .eq("user_id", user.id)
         .eq("status", "known");
       const eligible = levels.filter((l) => (count ?? 0) >= l.entryKnownWords).at(-1);
-      if (eligible && eligible.id !== profile.level_estimate) {
+      const currentIdx = levels.findIndex((l) => l.id === profile.level_estimate);
+      const eligibleIdx = eligible ? levels.findIndex((l) => l.id === eligible.id) : -1;
+      // Promote only — the assessment may estimate a higher level than the
+      // seeded known-word rows alone would justify; never demote.
+      if (eligible && eligibleIdx > currentIdx) {
         await db.from("profiles").update({ level_estimate: eligible.id }).eq("id", user.id);
       }
     },
