@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export:schemas": "node scripts/export-schemas.ts",
+    "validate:content": "node scripts/validate-content.ts",
+    "build:lexicon": "node scripts/build-lexicon.ts",
+    "build:texts": "node scripts/build-seed-texts.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",
