@@ -1,0 +1,150 @@
+0|معادله|mo'adela|n|formal|equation|این معادله دو مجهول دارد.|In mo'adela do majhul darad.|This equation has two unknowns.|math,algebra|
+0|متغیر|motaghayyer|n|formal|variable|متغیرهای مستقل را تعیین کنید.|Motaghayyer-ha-ye mostaqel ra ta'yin koned.|Determine the independent variables.|math,statistics|
+0|ثابت|sabet|n|formal|constant|سرعت نور یک ثابت فیزیکی است.|Sor'at-e nur yak sabet-e fiziki ast.|The speed of light is a physical constant.|math,physics|
+0|تابع|tabe'|n|formal|function|این تابع خطی را رسم کنید.|In tabe'-e khati ra rasm koned.|Draw this linear function.|math|
+0|مشتق|moshtaq|n|formal|derivative|مشتق این تابع صفر است.|Moshtaq-e in tabe' sefr ast.|The derivative of this function is zero.|math|
+0|انتگرال|integral|n|formal|integral|محاسبه انتگرال زمان می‌برد.|Mohaseba-ye integral zaman mebarad.|Calculating the integral takes time.|math|
+0|ماتریکس|matriks|n|formal|matrix|ماتریکس معکوس را پیدا کنید.|Matriks-e ma'kus ra payda koned.|Find the inverse matrix.|math|
+0|وکتور|wektor|n|formal|vector|وکتور دارای جهت و مقدار است.|Wektor daray-e jahat wa meqdar ast.|A vector has direction and magnitude.|math,physics|
+0|هندسه|handasa|n|formal|geometry|هندسه فضایی شاخه‌ای جالب است.|Handasa-ye fazayi shakha-i jaleb ast.|Spatial geometry is an interesting branch.|math|
+0|الجبیر|aljebr|n|formal|algebra|قوانین الجبیر در اینجا تطبیق می‌شود.|Qawanin-e aljebr dar inja tatbiq meshawad.|The laws of algebra are applied here.|math|
+0|حساب تفاضلی|hesab-e tafazoli|n|formal|calculus|او حساب تفاضلی می‌خواند.|O hesab-e tafazoli mekhanad.|He studies calculus.|math|
+0|کثیرالحدود|kasirolhodud|n|formal|polynomial|ریشه‌های کثیرالحدود را بیابید.|Risha-ha-ye kasirolhodud ra biyabed.|Find the roots of the polynomial.|math|
+0|کسر|kasr|n|formal|fraction|این کسر بیشتر ساده نمی‌شود.|In kasr beshtar sada nameshawad.|This fraction cannot be simplified further.|math|
+0|اعشاری|ashari|adj|formal|decimal|عدد اعشاری دقیق‌تر است.|Adad-e ashari daqiq-tar ast.|The decimal number is more precise.|math|
+0|مخرج|makhraj|n|formal|denominator|مخرج مشترک بگیرید.|Makhraj-e moshtarak begired.|Find a common denominator.|math|
+0|صورت|surat|n|formal|numerator|صورت کسر از مخرج بزرگتر است.|Surat-e kasr az makhraj bozorgtar ast.|The numerator of the fraction is larger than the denominator.|math|
+0|قضیه|qaziya|n|formal|theorem|قضیه فیثاغورث بسیار معروف است.|Qaziya-ye fisaghors besyar ma'ruf ast.|The Pythagorean theorem is very famous.|math|
+0|اثبات|esbat|n|formal|proof|اثبات این قضیه دشوار است.|Esbat-e in qaziya doshwar ast.|The proof of this theorem is difficult.|math,logic|
+0|اصل موضوعه|asl-e mawzu'a|n|formal|axiom|این یک اصل موضوعه در هندسه اقلیدسی است.|In yak asl-e mawzu'a dar handasa-ye oqlidosi ast.|This is an axiom in Euclidean geometry.|math|
+0|مختصات|mokhtasat|n|formal|coordinate|سیستم مختصات دکارتی را رسم کنید.|Sistem-e mokhtasat-e dekarti ra rasm koned.|Draw the Cartesian coordinate system.|math|
+0|محور|mehwar|n|formal|axis|محور افقی را با دقت رسم کنید.|Mehwar-e ofoqi ra ba deqat rasm koned.|Draw the horizontal axis carefully.|math|
+0|تقاطع|taqato'|n|formal|intersection|نقطه تقاطع دو خط را بیابید.|Noqta-ye taqato'-e do khat ra biyabed.|Find the point of intersection of the two lines.|math|
+0|اتحاد|ettehad|n|formal|union|اتحاد این دو مجموعه را حساب کنید.|Ettehad-e in do majmu'a ra hesab koned.|Calculate the union of these two sets.|math|
+0|زیرمجموعه|zer-majmu'a|n|formal|subset|این زیرمجموعه هیچ عنصری ندارد.|In zer-majmu'a hech onsari nadarad.|This subset has no elements.|math|
+0|مماس|mamas|adj|formal|tangent|یک خط مماس بر دایره بکشید.|Yak khat-e mamas bar dayera bekashed.|Draw a line tangent to the circle.|math|
+0|شعاع|sho'a'|n|formal|radius|شعاع دایره پنج سانتی‌متر است.|Sho'a'-e dayera panj santi-metr ast.|The radius of the circle is five centimeters.|math|
+0|قطر|qotr|n|formal|diameter|قطر همواره دو برابر شعاع است.|Qotr hamwara do barabar-e sho'a' ast.|The diameter is always twice the radius.|math|
+0|محیط|mohit|n|formal|perimeter|محیط مستطیل چقدر است؟|Mohit-e mostatil cheqadar ast?|What is the perimeter of the rectangle?|math|
+0|مساحت|masahat|n|formal|area|مساحت مثلث را محاسبه کنید.|Masahat-e mosallas ra mohaseba koned.|Calculate the area of the triangle.|math|
+0|زاویه|zawiya|n|formal|angle|زاویه قائمه دقیقاً نود درجه است.|Zawiya-ye qa'ema daqiqan nawad daraja ast.|A right angle is exactly ninety degrees.|math|
+0|موازی|mawazi|adj|formal|parallel|این دو خط کاملاً موازی هستند.|In do khat kamilan mawazi hastand.|These two lines are perfectly parallel.|math|
+0|عمود|amud|adj|formal|perpendicular|این خط بر سطح مستوی عمود است.|In khat bar sath-e mostawi amud ast.|This line is perpendicular to the flat surface.|math|
+0|تناظر|tanazor|n|formal|symmetry|تناظر در این اشکال هندسی دیده می‌شود.|Tanazor dar in ashkal-e handasi dida meshawad.|Symmetry is seen in these geometric shapes.|math|
+0|نسبت|nesbat|n|formal|ratio|نسبت طلایی در طبیعت وجود دارد.|Nesbat-e telayi dar tabiat wojud darad.|The golden ratio exists in nature.|math|
+0|تناسب|tanasob|n|formal|proportion|این یک تناسب مستقیم است.|In yak tanasob-e mostaqim ast.|This is a direct proportion.|math|
+0|فیصدی|fisadi|n|formal|percentage|فیصدی موفقیت در امتحان بالا بود.|Fisadi-ye mowafaqiyat dar emtehan bala bud.|The success percentage in the exam was high.|math,stats|
+0|اوسط|awsat|n|formal|average|اوسط نمرات شاگردان عالی است.|Awsat-e namarat-e shagerdan aali ast.|The average of the students' grades is excellent.|math,stats|
+0|میانه|miyana|n|formal|median|میانه این داده‌ها را پیدا کنید.|Miyana-ye in dada-ha ra payda koned.|Find the median of this data.|stats|
+0|مود|mod|n|formal|mode|مود مقداری است که بیشترین تکرار را دارد.|Mod meqdari ast ke beshtarin takrar ra darad.|The mode is the value that has the most repetitions.|stats|
+0|احتمال|ehtemal|n|formal|probability|احتمال وقوع این رویداد کم است.|Ehtemal-e woqu'-e in roydad kam ast.|The probability of this event occurring is low.|stats|
+0|واریانس|waryans|n|formal|variance|واریانس نمونه به دقت محاسبه شد.|Waryans-e namuna ba deqat mohaseba shod.|The sample variance was calculated carefully.|stats|
+0|انحراف معیاری|enheraf-e me'yari|n|formal|standard deviation|انحراف معیاری نشان‌دهنده میزان پراکندگی است.|Enheraf-e me'yari neshan-dihanda-ye mezan-e parakandagi ast.|Standard deviation indicates the degree of dispersion.|stats|
+0|توزیع|tawzi'|n|formal|distribution|توزیع نرمال در این آمار مهم است.|Tawzi'-e normal dar in amar mohem ast.|Normal distribution is important in these statistics.|stats|
+0|نمونه|namuna|n|formal|sample|اندازه نمونه برای تحقیق باید کافی باشد.|Andaza-ye namuna baray-e tahqiq bayad kafi bashad.|The sample size for the research must be sufficient.|stats,research|
+0|جمعیت|jam'iyat|n|formal|population|جمعیت آماری تحت بررسی قرار گرفت.|Jam'iyat-e amari taht-e barrasi qarar gereft.|The statistical population was placed under review.|stats,research|
+0|همبستگی|hambastagi|n|formal|correlation|همبستگی مثبت قوی بین این دو متغیر وجود دارد.|Hambastagi-ye mosbat-e qawi bayn-e in do motaghayyer wojud darad.|There is a strong positive correlation between these two variables.|stats|
+0|رگرسیون|regresyon|n|formal|regression|تحلیل رگرسیون خطی انجام شد.|Tahlil-e regresyon-e khati anjam shod.|Linear regression analysis was performed.|stats|
+0|فرضیه|farziya|n|formal|hypothesis|فرضیه صفر در این تحقیق رد نشد.|Farziya-ye sefr dar in tahqiq rad nashod.|The null hypothesis was not rejected in this research.|research,stats|
+0|معناداری|ma'nadari|n|formal|significance|سطح معناداری آماری پنج درصد تعیین شد.|Sath-e ma'nadari-ye amari panj darsad ta'yin shod.|The statistical significance level was set at five percent.|stats|
+0|فاصله اطمینان|fasela-ye etminan|n|formal|confidence interval|فاصله اطمینان نود و پنج درصدی محاسبه گردید.|Fasela-ye etminan-e nawad wa panj darsadi mohaseba gardid.|A ninety-five percent confidence interval was calculated.|stats|
+0|پرت|part|adj|formal|outlier|داده‌های پرت از مجموعه حذف شدند.|Dada-ha-ye part az majmu'a hazf shodand.|Outlier data were removed from the set.|stats,data|
+0|مجموعه داده|majmu'a-ye dada|n|formal|dataset|این مجموعه داده بسیار بزرگ و پیچیده است.|In majmu'a-ye dada besyar bozorg wa pechida ast.|This dataset is very large and complex.|data|
+0|الگوریتم|algoritm|n|formal|algorithm|الگوریتم جستجو به خوبی بهینه‌سازی شد.|Algoritm-e jostoju ba khubi behina-sazi shod.|The search algorithm was well optimized.|data,math|
+0|یادگیری ماشین|yadgiri-e mashin|n|formal|machine learning|یادگیری ماشین کاربردهای علمی زیادی دارد.|Yadgiri-e mashin karbord-ha-ye elmi-ye ziyadi darad.|Machine learning has many scientific applications.|data|
+0|هوش مصنوعی|hosh-e masno'i|n|formal|artificial intelligence|هوش مصنوعی آینده تکنولوژی را تغییر می‌دهد.|Hosh-e masno'i ayanda-ye teknoloji ra taghir medehad.|Artificial intelligence changes the future of technology.|data|
+0|شبکه عصبی|shabaka-ye asabi|n|formal|neural network|این مدل بر اساس شبکه عصبی عمیق است.|In model bar asas-e shabaka-ye asabi-ye amiq ast.|This model is based on a deep neural network.|data|
+0|طبقه‌بندی|tabaqa-bandi|n|formal|classification|طبقه‌بندی تصاویر توسط هوش مصنوعی انجام شد.|Tabaqa-bandi-ye tasawir tawassot-e hosh-e masno'i anjam shod.|Image classification was done by artificial intelligence.|data,stats|
+0|خوشه‌بندی|khosha-bandi|n|formal|clustering|خوشه‌بندی داده‌ها برای کشف الگوهای جدید|Khosha-bandi-ye dada-ha baray-e kashf-e olgu-ha-ye jadid|Data clustering for discovering new patterns|data|
+0|بهینه‌سازی|behina-sazi|n|formal|optimization|بهینه‌سازی مصرف انرژی یک اولویت است.|Behina-sazi-ye masraf-e enerzhi yak awlawiyat ast.|Optimization of energy consumption is a priority.|math,physics|
+0|پارامتر|parametr|n|formal|parameter|پارامترهای مدل باید دوباره تنظیم شوند.|Parametr-ha-ye model bayad dobara tanzim shawand.|The model parameters must be readjusted.|math,stats|
+0|تخمین|takhmin|n|formal|estimation|تخمین دقیق هزینه پروژه مشکل است.|Takhmin-e daqiq-e hazina-ye prozha moshkel ast.|Accurate estimation of the project cost is difficult.|stats|
+0|استنتاج|estentaj|n|formal|inference|استنتاج آماری بر اساس این نمونه‌هاست.|Estentaj-e amari bar asas-e in namuna-hast.|Statistical inference is based on these samples.|stats,research|
+0|سوگیری|sugiri|n|formal|bias|سوگیری سیستماتیک در نمونه‌گیری وجود داشت.|Sugiri-ye sistematik dar namuna-giri wojud dasht.|There was systematic bias in the sampling.|research,stats|
+0|اعتبار|e'tebar|n|formal|validity|اعتبار این پژوهش علمی بسیار بالاست.|E'tebar-e in pazhohesh-e elmi besyar balast.|The validity of this scientific research is very high.|research|
+0|قابلیت اعتماد|qabeliyat-e e'temad|n|formal|reliability|قابلیت اعتماد ابزار اندازه‌گیری تایید شد.|Qabeliyat-e e'temad-e abzar-e andaza-giri ta'yid shod.|The reliability of the measurement tool was confirmed.|research|
+0|کمی|kammi|adj|formal|quantitative|تحقیق کمی به تحلیل ارقام متکی است.|Tahqiq-e kammi ba tahlil-e arqam mottaki ast.|Quantitative research relies on analyzing figures.|research|
+0|کیفی|keyfi|adj|formal|qualitative|تحلیل کیفی مصاحبه‌ها زمان‌گیر بود.|Tahlil-e keyfi-ye mosaheba-ha zaman-gir bud.|Qualitative analysis of the interviews was time-consuming.|research|
+0|تجربی|tajrobi|adj|formal|empirical|شواهد تجربی این نظریه را تایید می‌کنند.|Shawahad-e tajrobi in nazariya ra ta'yid mekonand.|Empirical evidence supports this theory.|research,physics|
+0|روش‌شناسی|rawesh-shenasi|n|formal|methodology|روش‌شناسی تحقیق در فصل سوم نوشته شد.|Rawesh-shenasi-ye tahqiq dar fasl-e sewom naweshta shod.|The research methodology was written in the third chapter.|research|
+0|مرور ادبیات|morur-e adabiyat|n|formal|literature review|مرور ادبیات نشان داد که شکافی وجود دارد.|Morur-e adabiyat neshan dad ke shekafi wojud darad.|The literature review showed that there is a gap.|research|
+0|بررسی همتایان|barrasi-e hamtayan|n|formal|peer review|مقاله علمی تحت بررسی همتایان قرار دارد.|Maqala-ye elmi taht-e barrasi-e hamtayan qarar darad.|The scientific article is under peer review.|research|
+0|ارجاع|erja'|n|formal|citation|ارجاع به منابع معتبر در مقاله ضروری است.|Erja' ba manabe'-e mo'tabar dar maqala zaruri ast.|Citation to credible sources in the article is essential.|research|
+0|چکیده|chakida|n|formal|abstract|چکیده مقاله باید کوتاه و جامع باشد.|Chakida-ye maqala bayad kotah wa jame' bashad.|The article abstract should be short and comprehensive.|research|
+0|نظرسنجی|nazar-sanji|n|formal|survey|یک نظرسنجی آنلاین بین محصلین راه‌اندازی شد.|Yak nazar-sanji-ye onlayn bayn-e mohasselin rah-andazi shod.|An online survey was launched among students.|research|
+0|پرسشنامه|porsesh-nama|n|formal|questionnaire|پرسشنامه‌ها بین اشتراک‌کنندگان توزیع شد.|Porsesh-nama-ha bayn-e eshterak-konandagan tawzi' shod.|The questionnaires were distributed among the participants.|research|
+0|مشاهده|moshaheda|n|formal|observation|مشاهده مستقیم رفتار موجودات زنده|Moshaheda-ye mostaqim-e raftar-e mawjudat-e zenda|Direct observation of the behavior of living organisms|research,physics|
+0|تجربه|tajroba|n|formal|experiment|این تجربه در یک لابراتوار مجهز انجام شد.|In tajroba dar yak labratwar-e mojahhaz anjam shod.|This experiment was conducted in an equipped laboratory.|research,physics|
+0|وابسته|wabasta|adj|formal|dependent|متغیر وابسته در طول زمان تغییر کرد.|Motaghayyer-e wabasta dar tul-e zaman taghir kard.|The dependent variable changed over time.|math,research|
+0|مستقل|mostaqel|adj|formal|independent|این دو متغیر کاملاً از هم مستقل هستند.|In do motaghayyer kamilan az ham mostaqel hastand.|These two variables are completely independent of each other.|stats,research|
+0|جاذبه|jazebe|n|formal|gravity|قوه جاذبه زمین اجسام را به سمت خود می‌کشد.|Quwa-ye jazebe-ye zamin ajsam ra ba samt-e khod mekeshad.|Earth's gravity pulls objects towards itself.|physics|
+0|جرم|jerm|n|formal|mass|جرم یک جسم فیزیکی همیشه ثابت است.|Jerm-e yak jesm-e fiziki hamesha sabet ast.|The mass of a physical object is always constant.|physics|
+0|وزن|wazn|n|formal|weight|وزن فضانوردان در فضا متفاوت است.|Wazn-e fazanawardan dar faza motafawat ast.|The weight of astronauts is different in space.|physics|
+0|قوه|quwa|n|formal|force|قوه اصطکاک باعث کند شدن حرکت می‌شود.|Quwa-ye estekak ba'es-e kond shodan-e harakat meshawad.|The force of friction causes the movement to slow down.|physics|
+0|سرعت|sor'at|n|formal|velocity|سرعت نور در خلاء بالاترین سرعت است.|Sor'at-e nur dar khala' balatarin sor'at ast.|The velocity of light in a vacuum is the highest velocity.|physics|
+0|شتاب|shetab|n|formal|acceleration|شتاب موتر در حال افزایش مداوم است.|Shetab-e motar dar hal-e afzayesh-e modawem ast.|The car's acceleration is continuously increasing.|physics|
+0|تکانه|takana|n|formal|momentum|قانون بقای تکانه در فیزیک اساسی است.|Qanun-e baqa-ye takana dar fizik asasi ast.|The law of conservation of momentum is fundamental in physics.|physics|
+0|انرژی|enerzhi|n|formal|energy|انرژی آفتابی یک منبع تجدیدپذیر است.|Enerzhi-ye aftabi yak manba'-e tajdid-pazir ast.|Solar energy is a renewable source.|physics|
+0|جنبشی|jonbeshi|adj|formal|kinetic|انرژی جنبشی به سرعت جسم بستگی دارد.|Enerzhi-ye jonbeshi ba sor'at-e jesm bastagi darad.|Kinetic energy depends on the object's velocity.|physics|
+0|پتانسیل|potansiyel|n|formal|potential|انرژی پتانسیل در جسم ذخیره شده است.|Enerzhi-ye potansiyel dar jesm zakhira shoda ast.|Potential energy is stored in the object.|physics|
+0|کار|kar|n|formal|work|کار فیزیکی زیادی برای جابجایی انجام شد.|Kar-e fiziki-ye ziyadi baray-e jabajayi anjam shod.|A lot of physical work was done for the displacement.|physics|
+0|توان|tawan|n|formal|power|توان این ماشین الکتریکی بسیار بالا است.|Tawan-e in mashin-e elektroniki besyar bala ast.|The power of this electrical machine is very high.|physics|
+0|ترمودینامیک|termodinamik|n|formal|thermodynamics|قوانین ترمودینامیک در پوهنتون تدریس می‌شود.|Qawanin-e termodinamik dar pohantun tadris meshawad.|The laws of thermodynamics are taught at the university.|physics|
+0|حرارت|hararat|n|formal|heat|انتقال حرارت از طریق هدایت صورت می‌گیرد.|Enteqal-e hararat az tariq-e hedayat surat megirad.|Heat transfer takes place through conduction.|physics|
+0|درجه حرارت|daraja-ye hararat|n|formal|temperature|درجه حرارت محیط در شب کاهش یافت.|Daraja-ye hararat-e mohit dar shab kahesh yaft.|The ambient temperature decreased at night.|physics|
+0|انتروپی|entropi|n|formal|entropy|انتروپی این سیستم پیوسته در حال افزایش است.|Entropi-ye in sistem paywasta dar hal-e afzayesh ast.|The entropy of this system is continuously increasing.|physics|
+0|فشار|feshar|n|formal|pressure|فشار هوا در ارتفاعات کوه کمتر است.|Feshar-e hawa dar ertefa'at-e koh kamtar ast.|Air pressure is lower at mountain altitudes.|physics|
+0|کثافت|kasafat|n|formal|density|کثافت آب به مراتب بیشتر از تیل است.|Kasafat-e ab ba marateb beshtar az tel ast.|The density of water is much higher than oil.|physics|
+0|حجم|hajm|n|formal|volume|حجم این گاز با تغییر دما متغیر است.|Hajm-e in gaz ba taghir-e dama motaghayyer ast.|The volume of this gas is variable with temperature changes.|physics,math|
+0|ذره|zarra|n|formal|particle|فیزیک ذرات زیراتمی بسیار پیچیده است.|Fizik-e zarra-ha-ye zer-atomi besyar pechida ast.|Subatomic particle physics is very complex.|physics|
+0|موج|mawj|n|formal|wave|موج صوتی برای انتقال نیاز به محیط دارد.|Mawj-e sawti baray-e enteqal niyaz ba mohit darad.|A sound wave needs a medium to be transmitted.|physics|
+0|فریکانس|frekans|n|formal|frequency|فریکانس این موج رادیویی بسیار بالاست.|Frekans-e in mawj-e radiyoyi besyar balast.|The frequency of this radio wave is very high.|physics|
+0|طول موج|tul-e mawj|n|formal|wavelength|طول موج نور سرخ نسبت به آبی بلندتر است.|Tul-e mawj-e nur-e sorkh nesbat ba abi boland-tar ast.|The wavelength of red light is longer compared to blue.|physics|
+0|دامنه|damana|n|formal|amplitude|دامنه نوسان پاندول به تدریج کاهش یافت.|Damana-ye nawasan-e pandol ba tadrij kahesh yaft.|The amplitude of the pendulum's oscillation gradually decreased.|physics|
+0|تشعشع|tasha'sho'|n|formal|radiation|تشعشع هستوی برای سلامتی خطرناک است.|Tasha'sho'-e hastawi baray-e salamati khatarnak ast.|Nuclear radiation is dangerous for health.|physics|
+0|اپتیک|optik|n|formal|optics|علم اپتیک رفتار نور را دقیق بررسی می‌کند.|Elm-e optik raftar-e nur ra daqiq barrasi mekonad.|The science of optics precisely studies the behavior of light.|physics|
+0|انعکاس|en'ekas|n|formal|reflection|انعکاس نور از سطح آینه چشم را می‌زند.|En'ekas-e nur az sath-e ayena chashm ra mezanad.|The reflection of light from the mirror surface dazzles the eye.|physics|
+0|شکست|shekast|n|formal|refraction|شکست نور در آب باعث خطای دید می‌شود.|Shekast-e nur dar ab ba'es-e khata-ye did meshawad.|Refraction of light in water causes an optical illusion.|physics|
+0|عدسیه|adasiya|n|formal|lens|عدسیه محدب نور را در یک نقطه متمرکز می‌کند.|Adasiya-ye mohaddab nur ra dar yak noqta motamarkez mekonad.|A convex lens focuses light in one point.|physics|
+0|مغناطیس|meqnatis|n|formal|magnetism|میدان مغناطیسی زمین قطب‌نما را هدایت می‌کند.|Meydan-e meqnatis-e zamin qotb-nama ra hedayat mekonad.|Earth's magnetic field guides the compass.|physics|
+0|برق|barq|n|formal|electricity|تولید برق از انرژی باد دوستدار محیط زیست است.|Tawlid-e barq az enerzhi-ye bad dost-dar-e mohit-e zist ast.|Generation of electricity from wind energy is eco-friendly.|physics|
+0|چارج|charj|n|formal|charge|چارج الکتریکی یک الکترون کاملاً منفی است.|Charj-e elektroniki-ye yak elektron kamilan manfi ast.|The electric charge of an electron is completely negative.|physics|
+0|جریان|jaryan|n|formal|current|جریان مستقیم در این مدار الکتریکی استفاده شده است.|Jaryan-e mostaqim dar in madar-e elektroniki estefada shoda ast.|Direct current is used in this electrical circuit.|physics|
+0|ولتاژ|woltaj|n|formal|voltage|ولتاژ استاندارد برق شهر ۲۲۰ ولت است.|Woltaj-e estandard-e barq-e shahr do sad wa bist wolt ast.|The standard voltage of city electricity is 220 volts.|physics|
+0|مقاومت|moqawemat|n|formal|resistance|مقاومت این سیم مسی به نسبت کم است.|Moqawemat-e in sim-e mesi ba nesbat kam ast.|The resistance of this copper wire is relatively low.|physics|
+0|مدار|madar|n|formal|circuit|این مدار برقی بسته است و جریان دارد.|In madar-e barqi basta ast wa jaryan darad.|This electrical circuit is closed and has a current.|physics|
+0|کوانتوم|kwantom|n|formal|quantum|مکانیک کوانتوم دنیای ذرات را توصیف می‌کند.|Mekanik-e kwantom donya-ye zarra-ha ra tawsif mekonad.|Quantum mechanics describes the world of particles.|physics|
+0|مکانیک|mekanik|n|formal|mechanics|قوانین مکانیک نیوتنی در مکتب تدریس می‌شوند.|Qawanin-e mekanik-e nyutoni dar maktab tadris meshawand.|The laws of Newtonian mechanics are taught in school.|physics|
+0|نسبیت|nesbiyat|n|formal|relativity|نظریه نسبیت عام اینشتین فیزیک را دگرگون کرد.|Nazariya-ye nesbiyat-e aam-e inshtin fizik ra degargun kard.|Einstein's theory of general relativity revolutionized physics.|physics|
+0|بُعد|bo'd|n|formal|dimension|جهان ما حداقل دارای چهار بُعد است.|Jahan-e ma hadaqal daray-e chahar bo'd ast.|Our universe has at least four dimensions.|physics,math|
+0|تصویر|taswir|n|formal|projection|تصویر هندسی این شکل بر روی یک سطح مسطح است.|Taswir-e handasi-ye in shakl bar roy-e yak sath-e mosattah ast.|The geometric projection of this shape is on a flat surface.|math|
+0|مقدار|meqdar|n|formal|magnitude|مقدار وکتور نیرو را در فضا محاسبه کنید.|Meqdar-e wektor-e neru ra dar faza mohaseba koned.|Calculate the magnitude of the force vector in space.|math,physics|
+0|اسکالر|eskalar|n|formal|scalar|تله و سرعت کمیت‌های اسکالر نیستند.|Tala wa sor'at kamiyat-ha-ye eskalar nestand.|Trap and velocity are not scalar quantities.|math,physics|
+0|تنسور|tensor|n|formal|tensor|تنسورها در فیزیک پیشرفته کاربرد فراوانی دارند.|Tensor-ha dar fizik-e peshrafta karbord-e farawani darand.|Tensors have wide application in advanced physics.|math,physics|
+0|منطق|manteq|n|formal|logic|منطق ریاضی اساس برنامه‌نویسی کمپیوتر است.|Manteq-e riyazi asas-e barnama-nawisi-ye kompyutar ast.|Mathematical logic is the foundation of computer programming.|math|
+0|استقراء|esteqra'|n|formal|induction|اثبات این قضیه به روش استقراء ریاضی بود.|Esbat-e in qaziya ba rawesh-e esteqra'-e riyazi bud.|The proof of this theorem was by mathematical induction.|math,logic|
+0|قیاس|qiyas|n|formal|deduction|قیاس منطقی بهترین راه برای نتیجه‌گیری است.|Qiyas-e manteqi behtarin rah baray-e natija-giri ast.|Logical deduction is the best way to conclude.|math,logic|
+0|مطلق|motlaq|adj|formal|absolute|قیمت مطلق این عدد همیشه مثبت است.|Qimat-e motlaq-e in adad hamesha mosbat ast.|The absolute value of this number is always positive.|math|
+0|نسبی|nesbi|adj|formal|relative|خطای نسبی در این اندازه‌گیری قابل قبول است.|Khata-ye nesbi dar in andaza-giri qabel-e qabul ast.|The relative error in this measurement is acceptable.|math,physics|
+0|دنباله|donbala|n|formal|sequence|دنباله اعداد فیبوناچی در طبیعت زیاد دیده می‌شود.|Donbala-ye a'dad-e fibonachi dar tabiat ziyad dida meshawad.|The Fibonacci sequence of numbers is often seen in nature.|math|
+0|سری|seri|n|formal|series|مجموع این سری هندسی بی‌نهایت محاسبه شد.|Majmu'-e in seri-ye handasi be-nahayat mohaseba shod.|The sum of this geometric series was calculated as infinite.|math|
+0|حد|had|n|formal|limit|حد این تابع در نقطه صفر وجود ندارد.|Had-e in tabe' dar noqta-ye sefr wojud nadarad.|The limit of this function at point zero does not exist.|math|
+0|همگرایی|hamgarayi|n|formal|convergence|همگرایی این سری با موفقیت ثابت شده است.|Hamgarayi-ye in seri ba mowafaqiyat sabet shoda ast.|The convergence of this series has been successfully proven.|math|
+0|واگرایی|wagarayi|n|formal|divergence|واگرایی تابع در این نقطه بحرانی رخ می‌دهد.|Wagarayi-ye tabe' dar in noqta-ye bohrani rokh medehad.|Divergence of the function occurs at this critical point.|math|
+0|گسسته|gosasta|adj|formal|discrete|ریاضیات گسسته برای محصلین کمپیوتر ساینس الزامی است.|Riyaziyat-e gosasta baray-e mohasselin-e kompyutar sayns elzami ast.|Discrete mathematics is mandatory for computer science students.|math,data|
+0|پیوسته|paywasta|adj|formal|continuous|این تابع در تمام نقاط دامنه خود پیوسته است.|In tabe' dar tamam-e noqatat-e damana-ye khod paywasta ast.|This function is continuous at all points in its domain.|math|
+0|تبدیل|tabdil|n|formal|transformation|تبدیل فوریه در پردازش سیگنال‌ها حیاتی است.|Tabdil-e foriye dar pardazesh-e signal-ha hayati ast.|Fourier transformation is vital in signal processing.|math,physics|
+0|شبیه‌سازی|shabih-sazi|n|formal|simulation|شبیه‌سازی کمپیوتری رفتار این سیستم‌های پیچیده را نشان داد.|Shabih-sazi-ye kompyutari raftar-e in sistem-ha-ye pechida ra neshan dad.|Computer simulation showed the behavior of these complex systems.|data,physics|
+0|مدل‌سازی|model-sazi|n|formal|modeling|مدل‌سازی ریاضی شیوع ویروس به ما کمک کرد.|Model-sazi-ye riyazi-ye shoyu'-e wirus ba ma komak kard.|Mathematical modeling of the virus spread helped us.|math,research|
+0|معیار|me'yar|n|formal|criterion|معیار اصلی برای انتخاب داده‌ها مشخص است.|Me'yar-e asli baray-e entekhab-e dada-ha moshakhas ast.|The main criterion for data selection is clear.|research,stats|
+0|طیف|tayf|n|formal|spectrum|طیف الکترومغناطیسی شامل نور مرئی نیز می‌شود.|Tayf-e elektromaqnatisi shamel-e nur-e mar'i niz meshawad.|The electromagnetic spectrum also includes visible light.|physics|
+0|عطالت|atalat|n|formal|inertia|عطالت جسم مانع از تغییر ناگهانی حرکت آن می‌شود.|Atalat-e jesm mane' az taghir-e nagahani-ye harakat-e an meshawad.|The inertia of the object prevents its sudden change in motion.|physics|
+0|اصطکاک|estekak|n|formal|friction|اصطکاک دو سطح باعث تولید گرما می‌شود.|Estekak-e do sath ba'es-e tawlid-e garma meshawad.|The friction of two surfaces causes heat generation.|physics|
+0|تعادل|ta'adol|n|formal|equilibrium|سیستم پس از چند دقیقه به حالت تعادل ترمودینامیکی رسید.|Sistem pas az chand daqiqa ba halat-e ta'adol-e termodinamiki rasid.|The system reached thermodynamic equilibrium after a few minutes.|physics,math|
+0|سیال|sayyal|n|formal|fluid|مکانیک سیالات شاخه‌ای مهم از فیزیک مهندسی است.|Mekanik-e sayyalat shakha-i mohem az fizik-e mohandesi ast.|Fluid mechanics is an important branch of engineering physics.|physics|
+0|جامد|jamed|adj|formal|solid|ذرات در حالت جامد حرکت بسیار کمی دارند.|Zarra-ha dar halat-e jamed harakat-e besyar kami darand.|Particles in a solid state have very little motion.|physics|
+0|مایع|maye'|adj|formal|liquid|آب در دمای اتاق به شکل مایع است.|Ab dar dama-ye otaq ba shakl-e maye' ast.|Water is in liquid form at room temperature.|physics|
+0|گاز|gaz|n|formal|gas|گازها حجم مشخصی ندارند و در فضا پخش می‌شوند.|Gaz-ha hajm-e moshakhasi nadarand wa dar faza pakhsh meshawand.|Gases do not have a specific volume and spread in space.|physics|
+0|خلاء|khala'|n|formal|vacuum|امواج صوتی در خلاء منتقل نمی‌شوند.|Amwaj-e sawti dar khala' montaquel nameshawand.|Sound waves are not transmitted in a vacuum.|physics|
+0|فوتون|foton|n|formal|photon|فوتون ذره بنیادین انتقال‌دهنده نور است.|Foton zarra-ye bonyadin-e enteqal-dihanda-ye nur ast.|A photon is the fundamental particle transmitting light.|physics|
+0|تحلیل کردن|tahlil kardan|v|formal|to analyze|ما باید این داده‌ها را به دقت تحلیل کنیم.|Ma bayad in dada-ha ra ba deqat tahlil konem.|We must analyze this data carefully.|research|tahlil mekon-

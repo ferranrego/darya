@@ -1,0 +1,160 @@
+0|زیرساخت|zirsakht|noun|formal|infrastructure|زیرساخت‌های شهری باید مقاوم باشند.|zirsakht-ha-ye shahri bayad moqavem bashand.|Urban infrastructure must be resilient.|engineering|
+0|استحکام|estehkam|noun|formal|structural integrity|استحکام بنا در برابر زلزله ارزیابی شد.|estehkam-e bana dar barabar-e zelzele arzyabi shod.|The structural integrity against earthquakes was evaluated.|architecture|
+0|پایداری|paydari|noun|formal|sustainability/stability|پایداری سازه در شرایط سخت مهم است.|paydari-ye saze dar sharayet-e sakht mohem ast.|The structure's stability in harsh conditions is important.|engineering|
+0|مقاومت|moqavemat|noun|formal|resistance/strength|مقاومت مصالح باید آزمایش شود.|moqavemat-e masaleh bayad azmayesh shaved.|The strength of materials must be tested.|engineering|
+0|تنش|tanesh|noun|formal|stress|تنش‌های وارده بر تیرآهن محاسبه شد.|tanesh-ha-ye varede bar tir-ahan mohasebe shod.|The stresses applied to the beam were calculated.|structural_dynamics|
+0|کرنش|kornesh|noun|formal|strain|کرنش در بتن مسلح اندازه‌گیری گردید.|kornesh dar beton-e mosallah andaze-giri gardid.|Strain in the reinforced concrete was measured.|structural_dynamics|
+0|ارتجاعی|erteja'i|adj|formal|elastic|خاصیت ارتجاعی فلزات در طراحی مهم است.|khasiyat-e erteja'i-ye felezat dar tarahi mohem ast.|The elastic property of metals is important in design.|materials|
+0|خمش|khamesh|noun|formal|bending/flexure|مقاومت در برابر خمش ارزیابی شد.|moqavemat dar barabar-e khamesh arzyabi shod.|Bending resistance was evaluated.|structural|
+0|برش|boresh|noun|formal|shear|نیروی برش در اتصالات بحرانی است.|niroo-ye boresh dar etesalat bohrani ast.|Shear force in connections is critical.|structural|
+0|تراکم|tarakom|noun|formal|compaction|تراکم خاک قبل از ساخت ضروری است.|tarakom-e khak qabl az sakht zaroori ast.|Soil compaction is essential before construction.|civil_engineering|
+0|پیوند|peyvand|noun|formal|joint/connection|پیوند بین ستون و سقف محکم شد.|peyvand beyn-e sotoon va saqf mohkam shod.|The joint between column and roof was secured.|architecture|
+0|بتن‌آرمه|beton-arme|noun|formal|reinforced concrete|از بتن‌آرمه برای فونداسیون استفاده شد.|az beton-arme baraye fondasiyon estefade shod.|Reinforced concrete was used for the foundation.|materials|
+0|فونداسیون|fondasiyon|noun|formal|foundation|عمق فونداسیون باید استاندارد باشد.|omq-e fondasiyon bayad standard bashad.|The foundation depth must be standard.|civil_engineering|
+0|نما|nama|noun|formal|facade|نمای ساختمان با سنگ مرمر تزئین شد.|nama-ye sakhteman ba sang-e marmar tazyin shod.|The building's facade was decorated with marble.|architecture|
+0|تهویه|tahviye|noun|formal|ventilation|سیستم تهویه مطبوع نصب گردید.|sistem-e tahviye matboo' nasb gardid.|The HVAC system was installed.|urban_design|
+0|عایق‌بندی|ayeq-bandi|noun|formal|insulation|عایق‌بندی صوتی در آپارتمان‌ها ضروری است.|ayeq-bandi-ye sowti dar aparteman-ha zaroori ast.|Acoustic insulation is essential in apartments.|architecture|
+0|بارگذاری|bar-gozari|noun|formal|loading|بارگذاری دینامیکی روی پل محاسبه شد.|bar-gozari-ye dinamiki rooye pol mohasebe shod.|Dynamic loading on the bridge was calculated.|structural_dynamics|
+0|ارتعاش|erte'ash|noun|formal|vibration|میزان ارتعاش سازه کنترل می‌شود.|mizan-e erte'ash-e saze kontrol mishavad.|The structure's vibration level is controlled.|structural_dynamics|
+0|تشدید|tashdid|noun|formal|resonance|پدیده تشدید می‌تواند مخرب باشد.|padide-ye tashdid mitavanad mokharrab bashad.|The resonance phenomenon can be destructive.|structural_dynamics|
+0|میرایی|mirayi|noun|formal|damping|نسبت میرایی در سیستم‌های لرزه‌ای مهم است.|nesbat-e mirayi dar sistem-ha-ye larze-i mohem ast.|The damping ratio in seismic systems is important.|structural_dynamics|
+0|تحلیل|tahlil|noun|formal|analysis|تحلیل ساختاری با نرم‌افزار انجام شد.|tahlil-e sakhtari ba narm-afzar anjam shod.|Structural analysis was done with software.|engineering|
+0|شبیه‌سازی|shabih-sazi|noun|formal|simulation|شبیه‌سازی جریان هوا در شهر انجام گرفت.|shabih-sazi-ye jaryan-e hava dar shahr anjam gereft.|Wind flow simulation in the city was conducted.|urban_design|
+0|گسل|gosal|noun|formal|fault|ساختمان بر روی گسل فعال بنا نشده است.|sakhteman bar rooye gosal-e fa'al bana nashode ast.|The building is not built on an active fault.|civil_engineering|
+0|لرزه‌خیز|larze-khiz|adj|formal|seismically active|منطقه ما بسیار لرزه‌خیز است.|mantaqe-ye ma besyar larze-khiz ast.|Our region is highly seismically active.|geology|
+0|کمانش|kamanesh|noun|formal|buckling|جلوگیری از کمانش ستون‌ها حیاتی است.|jologiri az kamanesh-e sotoon-ha hayati ast.|Preventing buckling of columns is vital.|structural|
+0|ترمیم|tarmim|noun|formal|restoration/repair|ترمیم بناهای تاریخی به دقت نیاز دارد.|tarmim-e banaha-ye tarikhi be deqqat niyaz darad.|Restoration of historical buildings requires care.|architecture|
+0|نوسازی|nowsazi|noun|formal|renovation|پروژه نوسازی بافت فرسوده آغاز شد.|proje-ye nowsazi-ye baft-e farsoode aghaz shod.|The urban renewal project for the decayed texture started.|urban_design|
+0|توسعه|towse'e|noun|formal|development|توسعه پایدار شهری هدف اصلی ماست.|towse'e-ye paydar-e shahri hadaf-e asli-ye mast.|Sustainable urban development is our main goal.|urban_design|
+0|کاربری|karbari|noun|formal|land use|تغییر کاربری اراضی ممنوع است.|taghyir-e karbari-ye arazi mamnoo' ast.|Changing land use is prohibited.|urban_design|
+0|تراکم‌فروشی|tarakom-forooshi|noun|formal|selling of density (zoning)|تراکم‌فروشی باعث مشکلات ترافیکی می‌شود.|tarakom-forooshi ba'es-e moshkelat-e trafiki mishavad.|Selling density rights causes traffic problems.|urban_design|
+0|حریم|harim|noun|formal|easement/setback|رعایت حریم رودخانه الزامی است.|re'ayat-e harim-e roodkhane elzami ast.|Observing the river setback is mandatory.|civil_engineering|
+0|بافت|baft|noun|formal|texture/fabric|بافت تاریخی شهر باید حفظ شود.|baft-e tarikhi-ye shahr bayad hefz shaved.|The historical urban fabric must be preserved.|urban_design|
+0|پلان|pelan|noun|formal|plan/floorplan|پلان طبقات توسط مهندس کشیده شد.|pelan-e tabaqat tavassot-e mohandes keshide shod.|The floorplan was drawn by the engineer.|architecture|
+0|مقاطع|maqate'|noun|formal|cross-sections|مقاطع عرضی تونل طراحی شدند.|maqate'-e arzi-ye toonel tarahi shodand.|The cross-sections of the tunnel were designed.|civil_engineering|
+0|محاسبات|mohasebat|noun|formal|calculations|محاسبات مهندسی بدون خطا انجام گرفت.|mohasebat-e mohandesi bedoon-e khata anjam gereft.|Engineering calculations were done without error.|engineering|
+0|تجهیزات|tajhizat|noun|formal|equipment|تجهیزات سنگین به کارگاه منتقل شد.|tajhizat-e sangin be kargah montaqel shod.|Heavy equipment was moved to the site.|construction|
+0|مصالح|masaleh|noun|formal|materials|کیفیت مصالح ساختمانی باید بررسی شود.|keyfiyat-e masaleh-e sakhtemani bayad barrasi shaved.|The quality of construction materials must be checked.|construction|
+0|نازک‌کاری|nazok-kari|noun|formal|finishing (construction)|مرحله نازک‌کاری ساختمان رو به اتمام است.|marhale-ye nazok-kari-ye sakhteman roo be etmam ast.|The finishing phase of the building is nearing completion.|architecture|
+0|سفت‌کاری|seft-kari|noun|formal|rough structure (construction)|سفت‌کاری پروژه به پایان رسید.|seft-kari-ye proje be payan resid.|The rough construction of the project has finished.|construction|
+0|تیرچه|tirche|noun|formal|joist|تیرچه‌های سقف نصب شدند.|tirche-ha-ye saqf nasb shodand.|The roof joists were installed.|structural|
+0|بلوک|bolook|noun|formal|block|دیوارها با بلوک سیمانی ساخته شدند.|divar-ha ba bolook-e simani sakhte shodand.|The walls were built with cement blocks.|construction|
+0|ملات|malat|noun|formal|mortar|نسبت آب به سیمان در ملات مهم است.|nesbat-e ab be siman dar malat mohem ast.|The water-cement ratio in mortar is important.|materials|
+0|قالب‌بندی|qaleb-bandi|noun|formal|formwork|قالب‌بندی ستون‌ها انجام شد.|qaleb-bandi-ye sotoon-ha anjam shod.|Column formwork was completed.|construction|
+0|بتن‌ریزی|beton-rizi|noun|formal|concrete pouring|بتن‌ریزی فونداسیون فردا آغاز می‌شود.|beton-rizi-ye fondasiyon farda aghaz mishavad.|Concrete pouring for the foundation starts tomorrow.|construction|
+0|آرماتور|armatoor|noun|formal|rebar|آرماتوربندی سقف مطابق نقشه بود.|armatoor-bandi-ye saqf motabeq-e naqshe bood.|The roof rebar tying was according to the plan.|structural|
+0|شالوده|shaloode|noun|formal|base/foundation|شالوده اصلی بنا بر سنگ استوار است.|shaloode-ye asli-ye bana bar sang ostovar ast.|The main foundation of the building rests on rock.|architecture|
+0|شمع‌کوبی|sham'-koobi|noun|formal|pile driving|برای خاک‌های سست از شمع‌کوبی استفاده می‌شود.|baraye khak-ha-ye sost az sham'-koobi estefade mishavad.|Pile driving is used for loose soils.|civil_engineering|
+0|آب‌بندی|ab-bandi|noun|formal|waterproofing|آب‌بندی سد با موفقیت انجام شد.|ab-bandi-ye sad ba movaffaqiyat anjam shod.|Waterproofing of the dam was successfully done.|civil_engineering|
+0|زهکشی|zehkeshi|noun|formal|drainage|سیستم زهکشی جاده باید اصلاح شود.|sistem-e zehkeshi-ye jade bayad eslah shaved.|The road's drainage system must be corrected.|civil_engineering|
+0|محیط‌زیست|mohit-e zist|noun|formal|environment|ارزیابی اثرات محیط‌زیست الزامی است.|arzyabi-ye asarat-e mohit-e zist elzami ast.|Environmental impact assessment is mandatory.|urban_design|
+0|آلودگی|aloodegi|noun|formal|pollution|آلودگی صوتی در طراحی شهری در نظر گرفته شد.|aloodegi-ye sowti dar tarahi-ye shahri dar nazar gerefte shod.|Noise pollution was considered in urban design.|urban_design|
+0|پخ|pakh|noun|formal|chamfer|پخ زدن لبه‌های تیز برای ایمنی است.|pakh zadan-e labe-ha-ye tiz baraye imeni ast.|Chamfering sharp edges is for safety.|architecture|
+0|کنسول|konsool|noun|formal|cantilever|بالکن به صورت کنسول طراحی شده است.|balkon be soorat-e konsool tarahi shode ast.|The balcony is designed as a cantilever.|structural|
+0|طاق|taq|noun|formal|arch/vault|طاق‌های آجری در معماری سنتی رایج است.|taq-ha-ye ajori dar me'mari-ye sonnati rayej ast.|Brick arches are common in traditional architecture.|architecture|
+0|گنبد|gonbad|noun|formal|dome|گنبد مسجد با کاشی‌های فیروزه‌ای پوشیده شد.|gonbad-e masjed ba kashi-ha-ye firooze-i pooshide shod.|The mosque's dome was covered with turquoise tiles.|architecture|
+0|سردر|sar-dar|noun|formal|portal/gateway|سردر اصلی دانشگاه بسیار باشکوه است.|sar-dar-e asli-ye daneshgah besyar bashokooh ast.|The university's main portal is very magnificent.|architecture|
+0|مقرنس|moqarnas|noun|formal|muqarnas (architectural ornament)|مقرنس‌کاری سقف زیبایی خاصی دارد.|moqarnas-kari-ye saqf zibayi-ye khasi darad.|The ceiling's muqarnas work has a special beauty.|architecture|
+0|پلان‌متریک|pelan-metrik|adj|formal|planimetric|نقشه‌برداری پلان‌متریک انجام شد.|naqshe-bardari-ye pelan-metrik anjam shod.|Planimetric surveying was conducted.|engineering|
+0|توپوگرافی|toopografi|noun|formal|topography|توپوگرافی منطقه برای احداث جاده مناسب نیست.|toopografi-ye mantaqe baraye ehdas-e jade monaseb nist.|The region's topography is not suitable for road construction.|civil_engineering|
+0|شیب‌بندی|shib-bandi|noun|formal|sloping/grading|شیب‌بندی بام برای هدایت آب باران است.|shib-bandi-ye bam baraye hedayat-e ab-e baran ast.|Roof grading is for directing rainwater.|architecture|
+0|فضای‌سبز|faza-ye sabz|noun|formal|green space|سرانه فضای سبز در این شهر پایین است.|sarane-ye faza-ye sabz dar in shahr payin ast.|The green space per capita in this city is low.|urban_design|
+0|معبر|ma'bar|noun|formal|passageway|عرض معابر عمومی باید استاندارد باشد.|arz-e ma'aber-e omoomi bayad standard bashad.|The width of public passageways must be standard.|urban_design|
+0|تقاطع|taqato'|noun|formal|intersection|طراحی تقاطع غیرهمسطح ترافیک را کاهش می‌دهد.|tarahi-ye taqato'-e qeyr-e hamsath trafik ra kahesh midahad.|Designing a grade-separated intersection reduces traffic.|civil_engineering|
+0|زیرگذر|zir-gozar|noun|formal|underpass|ساخت زیرگذر به زودی آغاز می‌شود.|sakht-e zir-gozar be zoodi aghaz mishavad.|Construction of the underpass will start soon.|civil_engineering|
+0|روگذر|roo-gozar|noun|formal|overpass|روگذر جدید باعث روان شدن ترافیک شد.|roo-gozar-e jadid ba'es-e ravan shodan-e trafik shod.|The new overpass made the traffic flow smoothly.|civil_engineering|
+0|بزرگراه|bozorg-rah|noun|formal|highway|اتصال بزرگراه‌ها به اقتصاد شهر کمک می‌کند.|etesal-e bozorg-rah-ha be eqtesad-e shahr komak mikonad.|Connecting highways helps the city's economy.|urban_design|
+0|آزادراه|azad-rah|noun|formal|freeway|عوارض آزادراه الکترونیکی دریافت می‌شود.|avarez-e azad-rah elektroniki daryaft mishavad.|Freeway tolls are collected electronically.|civil_engineering|
+0|پیاده‌رو|piyade-roo|noun|formal|sidewalk|سنگ‌فرش پیاده‌روها تعویض شد.|sang-farsh-e piyade-roo-ha ta'viz shod.|The sidewalk paving was replaced.|urban_design|
+0|مبلمان‌شهری|mobleman-e shahri|noun|formal|urban furniture|مبلمان شهری باید با محیط سازگار باشد.|mobleman-e shahri bayad ba mohit sazgar bashad.|Urban furniture must be compatible with the environment.|urban_design|
+0|زیباسازی|ziba-sazi|noun|formal|beautification|پروژه زیباسازی میادین شهر اجرا شد.|proje-ye ziba-sazi-ye mayadin-e shahr ejra shod.|The beautification project of city squares was executed.|urban_design|
+0|نورپردازی|noor-pardazi|noun|formal|lighting|نورپردازی پل‌ها جلوه شبانه را بهبود می‌بخشد.|noor-pardazi-ye pol-ha jelve-ye shabane ra behbood mibakhshad.|Lighting the bridges improves the nighttime appearance.|architecture|
+0|مصالح‌نوین|masaleh-e novin|noun|formal|modern materials|استفاده از مصالح نوین هزینه را کاهش می‌دهد.|estefade az masaleh-e novin hazine ra kahesh midahad.|Using modern materials reduces the cost.|materials|
+0|نانوتکنولوژی|nano-teknoloji|noun|formal|nanotechnology|نانوتکنولوژی در تولید بتن‌های مقاوم کاربرد دارد.|nano-teknoloji dar towlid-e beton-ha-ye moqavem karbord darad.|Nanotechnology is applied in producing strong concretes.|materials|
+0|سبک‌سازی|sabok-sazi|noun|formal|lightweighting|سبک‌سازی سازه از خطرات زلزله می‌کاهد.|sabok-sazi-ye saze az khatarat-e zelzele mikahad.|Lightweighting the structure reduces earthquake risks.|structural|
+0|تخریب|takhrib|noun|formal|demolition|تخریب ساختمان قدیمی با دینامیت انجام شد.|takhrib-e sakhteman-e qadimi ba dinamit anjam shod.|The demolition of the old building was done with dynamite.|construction|
+0|خاکبرداری|khak-bardari|noun|formal|excavation|عملیات خاکبرداری یک ماه طول کشید.|amaliyat-e khak-bardari yek mah tool keshid.|The excavation operation took one month.|civil_engineering|
+0|گودبرداری|good-bardari|noun|formal|deep excavation|ایمنی در گودبرداری‌های عمیق بسیار مهم است.|imeni dar good-bardari-ha-ye amiq besyar mohem ast.|Safety in deep excavations is very important.|civil_engineering|
+0|سازه|saze|noun|formal|structure|سازه فولادی در برابر حریق مقاوم‌سازی شد.|saze-ye fooladi dar barabar-e hariq moqavem-sazi shod.|The steel structure was made fire-resistant.|structural|
+0|فولاد|foolad|noun|formal|steel|قیمت فولاد در بازار جهانی افزایش یافت.|qeymat-e foolad dar bazar-e jahani afzayesh yaft.|The price of steel in the global market increased.|materials|
+0|آهن‌آلات|ahan-alat|noun|formal|ironware/iron materials|خرید آهن‌آلات بخش عمده‌ای از بودجه را می‌طلبد.|kharid-e ahan-alat bakhsh-e omde-i az boodje ra mitalabad.|Buying ironware demands a major part of the budget.|materials|
+0|داربست|darbast|noun|formal|scaffolding|کارگران روی داربست مشغول کار هستند.|kargaran rooye darbast mashghool-e kar hastand.|The workers are busy working on the scaffolding.|construction|
+0|ایمنی|imeni|noun|formal|safety|رعایت اصول ایمنی در کارگاه اجباری است.|re'ayat-e osool-e imeni dar kargah ejbari ast.|Observing safety principles at the site is mandatory.|construction|
+0|استاندارد|standard|noun|formal|standard|تمام مصالح باید مطابق استاندارد باشند.|tamam-e masaleh bayad motabeq-e standard bashand.|All materials must comply with the standard.|engineering|
+0|آیین‌نامه|ayin-name|noun|formal|code/regulation|آیین‌نامه زلزله اخیراً بازنگری شده است.|ayin-name-ye zelzele akhiran baz-negari shode ast.|The earthquake code has recently been revised.|engineering|
+0|بازرسی|bazresi|noun|formal|inspection|بازرسی دوره‌ای از پل‌ها ضروری است.|bazresi-ye dowre-i az pol-ha zaroori ast.|Periodic inspection of bridges is essential.|civil_engineering|
+0|ناظر|nazer|noun|formal|supervisor/inspector|مهندس ناظر کیفیت بتن را تایید کرد.|mohandes nazer keyfiyat-e beton ra tayid kard.|The supervising engineer approved the concrete quality.|engineering|
+0|پیمانکار|peymankar|noun|formal|contractor|پیمانکار متعهد به اتمام پروژه در زمان مقرر است.|peymankar motahed be etmam-e proje dar zaman-e moqarrar ast.|The contractor is committed to finishing the project on time.|construction|
+0|کارفرما|karfarma|noun|formal|client/employer|کارفرما بودجه اضافی را تصویب کرد.|karfarma boodje-ye ezafi ra tasvib kard.|The client approved the additional budget.|construction|
+0|مناقصه|monaqese|noun|formal|tender/bid|شرکت ما در مناقصه ساخت سد برنده شد.|sherkat-e ma dar monaqese-ye sakht-e sad barande shod.|Our company won the tender for building the dam.|construction|
+0|مزایده|mozayede|noun|formal|auction|تجهیزات مازاد به مزایده گذاشته شد.|tajhizat-e mazad be mozayede gozashte shod.|Surplus equipment was put up for auction.|construction|
+0|قرارداد|qarardad|noun|formal|contract|قرارداد فیدیک برای پروژه‌های بین‌المللی استفاده می‌شود.|qarardad-e fidik baraye proje-ha-ye beyn-ol-melali estefade mishavad.|The FIDIC contract is used for international projects.|engineering|
+0|برآورد|bar-avord|noun|formal|estimation|برآورد هزینه‌ها با دقت انجام شده است.|bar-avord-e hazine-ha ba deqqat anjam shode ast.|Cost estimation has been done carefully.|engineering|
+0|صورت‌وضعیت|soorat-vaz'iyat|noun|formal|interim payment certificate|صورت‌وضعیت کارکرد ماهانه تهیه شد.|soorat-vaz'iyat-e karkard-e mahane tahiye shod.|The monthly interim payment certificate was prepared.|construction|
+0|متره|metre|noun|formal|quantity surveying|متره و برآورد مصالح توسط دفتر فنی انجام می‌گیرد.|metre va bar-avord-e masaleh tavassot-e daftar-e fanni anjam migirad.|Quantity surveying and estimation of materials are done by the technical office.|engineering|
+0|پروانه|parvane|noun|formal|permit/license|پروانه ساختمان توسط شهرداری صادر شد.|parvane-ye sakhteman tavassot-e shahrdari sader shod.|The building permit was issued by the municipality.|urban_design|
+0|شهرداری|shahrdari|noun|formal|municipality|شهرداری مسئول نظارت بر ساخت‌وسازهای شهری است.|shahrdari mas'ool-e nezarat bar sakht-o-saz-ha-ye shahri ast.|The municipality is responsible for supervising urban constructions.|urban_design|
+0|نظام‌مهندسی|nezam-mohandesi|noun|formal|engineering organization|سازمان نظام‌مهندسی نقشه‌ها را تایید می‌کند.|sazman-e nezam-mohandesi naqshe-ha ra tayid mikonad.|The engineering organization approves the plans.|engineering|
+0|شهرسازی|shahr-sazi|noun|formal|urban planning|قوانین شهرسازی باید به‌روز شوند.|qavanin-e shahr-sazi bayad be-rooz shavand.|Urban planning laws must be updated.|urban_design|
+0|معماری|me'mari|noun|formal|architecture|معماری اسلامی ویژگی‌های منحصربه‌فردی دارد.|me'mari-ye eslami vizhegi-ha-ye monhaser-be-fardi darad.|Islamic architecture has unique characteristics.|architecture|
+0|مهندس|mohandes|noun|formal|engineer|مهندسان در حال حل مشکل فاضلاب هستند.|mohandesan dar hal-e hall-e moshkel-e fazelab hastand.|Engineers are solving the sewage problem.|engineering|
+0|پروژه|proje|noun|formal|project|این پروژه ملی پنج سال زمان می‌برد.|in proje-ye melli panj sal zaman mibarad.|This national project takes five years.|engineering|
+0|کارگاه|kargah|noun|formal|workshop/site|ورود افراد متفرقه به کارگاه ممنوع است.|vorood-e afrad-e motafarreqe be kargah mamnoo' ast.|Entry of unauthorized personnel to the site is prohibited.|construction|
+0|دفترفنی|daftar-fanni|noun|formal|technical office|مهندسان دفتر فنی نقشه‌های چون‌ساخت را آماده کردند.|mohandesan-e daftar-fanni naqshe-ha-ye choon-sakht ra amade kardand.|Technical office engineers prepared the as-built drawings.|engineering|
+0|چون‌ساخت|choon-sakht|adj|formal|as-built|نقشه‌های چون‌ساخت باید به کارفرما تحویل داده شود.|naqshe-ha-ye choon-sakht bayad be karfarma tahvil dade shaved.|As-built drawings must be delivered to the client.|engineering|
+0|عمران|omran|noun|formal|development/civil|رشته مهندسی عمران طرفداران زیادی دارد.|reshte-ye mohandesi-ye omran tarafdaran-e ziyadi darad.|The civil engineering field has many fans.|civil_engineering|
+0|هیدرولیک|hidrolik|noun|formal|hydraulics|تحلیل هیدرولیک رودخانه برای ساخت پل ضروری است.|tahlil-e hidrolik-e roodkhane baraye sakht-e pol zaroori ast.|River hydraulic analysis is essential for building the bridge.|civil_engineering|
+0|ژئوتکنیک|zhe'oteknik|noun|formal|geotechnics|مطالعات ژئوتکنیک نشان‌دهنده سستی خاک بود.|motale'at-e zhe'oteknik neshan-dahande-ye sosti-ye khak bood.|Geotechnical studies showed the looseness of the soil.|civil_engineering|
+0|مکانیک‌خاک|mekanik-e khak|noun|formal|soil mechanics|آزمایشگاه مکانیک خاک نتایج را ارسال کرد.|azmayeshgah-e mekanik-e khak natayej ra ersal kard.|The soil mechanics lab sent the results.|civil_engineering|
+0|دینامیک|dinamik|noun|formal|dynamics|دینامیک سازه‌ها درسی پیچیده در مهندسی است.|dinamik-e saze-ha darsi pichide dar mohandesi ast.|Structural dynamics is a complex subject in engineering.|structural_dynamics|
+0|استاتیک|estatik|noun|formal|statics|قوانین استاتیک پایه و اساس طراحی هستند.|qavanin-e estatik paye va asas-e tarahi hastand.|The laws of statics are the foundation of design.|structural|
+0|ممان|moman|noun|formal|moment|ممان اینرسی مقطع فولادی محاسبه شد.|moman-e inersi-ye maqta'-e fooladi mohasebe shod.|The moment of inertia of the steel section was calculated.|structural|
+0|گشتاور|gashtavar|noun|formal|torque/moment|گشتاور خمشی در وسط دهانه ماکزیمم است.|gashtavar-e khameshi dar vasat-e dahane makzimom ast.|The bending moment at mid-span is maximum.|structural|
+0|نیرو|niroo|noun|formal|force|توزیع نیروها در خرپا باید تحلیل شود.|towzi'-e niroo-ha dar kharpa bayad tahlil shaved.|The distribution of forces in the truss must be analyzed.|structural|
+0|خرپا|kharpa|noun|formal|truss|سقف سوله با استفاده از خرپا ساخته شده است.|saqf-e soole ba estefade az kharpa sakhte shode ast.|The shed's roof is built using a truss.|structural|
+0|سوله|soole|noun|formal|industrial shed|ساخت سوله برای کارخانه جدید آغاز شد.|sakht-e soole baraye karkhane-ye jadid aghaz shod.|Building the shed for the new factory started.|architecture|
+0|دهانه|dahane|noun|formal|span|پل‌های معلق دهانه‌های بسیار بلندی دارند.|pol-ha-ye mo'allaq dahane-ha-ye besyar bolandi darand.|Suspension bridges have very long spans.|civil_engineering|
+0|تیر|tir|noun|formal|beam|تیر اصلی بار سقف را تحمل می‌کند.|tir-e asli bar-e saqf ra tahammol mikonad.|The main beam bears the roof load.|structural|
+0|ستون|sotoon|noun|formal|column|ستون‌های بتنی مقاومت فشاری بالایی دارند.|sotoon-ha-ye betoni moqavemat-e feshari-ye balayi darand.|Concrete columns have high compressive strength.|structural|
+0|دال|dal|noun|formal|slab|دال بتنی کف با ضخامت بیست سانتیمتر اجرا شد.|dal-e betoni-ye kaf ba zekhamat-e bist santimetr ejra shod.|The concrete floor slab was executed with a 20 cm thickness.|structural|
+0|تیرورق|tir-varaq|noun|formal|plate girder|برای دهانه‌های بزرگ از تیرورق استفاده می‌شود.|baraye dahane-ha-ye bozorg az tir-varaq estefade mishavad.|Plate girders are used for large spans.|structural|
+0|ورق|varaq|noun|formal|plate/sheet|ورق‌های فولادی با دستگاه برش داده شدند.|varaq-ha-ye fooladi ba dastgah boresh dade shodand.|The steel plates were cut with a machine.|materials|
+0|جوشکاری|joosh-kari|noun|formal|welding|کیفیت جوشکاری اتصالات با اشعه ایکس بررسی شد.|keyfiyat-e joosh-kari-ye etesalat ba ashe'e-ye iks barrasi shod.|The welding quality of connections was inspected with X-rays.|construction|
+0|پیچ‌ومهره|pich-o-mohre|noun|formal|bolts and nuts|اتصالات اسکلت فلزی از نوع پیچ‌ومهره است.|etesalat-e eskelet-e felezi az now'-e pich-o-mohre ast.|The steel frame connections are bolted.|structural|
+0|اسکلت|eskelet|noun|formal|frame/skeleton|اسکلت ساختمان در کمتر از دو ماه برپا شد.|eskelet-e sakhteman dar kamtar az do mah barpa shod.|The building's frame was erected in less than two months.|structural|
+0|پوشش|pooshesh|noun|formal|coating/cover|پوشش ضدحریق روی ستون‌ها اعمال شد.|pooshesh-e zedd-hariq rooye sotoon-ha e'mal shod.|Fireproof coating was applied on the columns.|materials|
+0|رنگ‌آمیزی|rang-amizi|noun|formal|painting|رنگ‌آمیزی نما به زیبایی شهر کمک می‌کند.|rang-amizi-ye nama be zibayi-ye shahr komak mikonad.|Painting the facade helps the city's beauty.|architecture|
+0|شیشه|shishe|noun|formal|glass|استفاده از شیشه‌های دوجداره باعث کاهش مصرف انرژی می‌شود.|estefade az shishe-ha-ye do-jedare ba'es-e kahesh-e masraf-e enerzhi mishavad.|Using double-glazed glass reduces energy consumption.|materials|
+0|دوجداره|do-jedare|adj|formal|double-glazed/double-walled|پنجره‌های دوجداره عایق خوبی در برابر صدا هستند.|panjere-ha-ye do-jedare ayeq-e khoobi dar barabar-e seda hastand.|Double-glazed windows are good sound insulators.|materials|
+0|عایق|ayeq|noun|formal|insulator|پشم‌سنگ یک عایق حرارتی مناسب است.|pashm-e sang yek ayeq-e hararati-ye monaseb ast.|Rockwool is a suitable thermal insulator.|materials|
+0|حرارتی|hararati|adj|formal|thermal|تغییرات حرارتی باعث انبساط فلزات می‌شود.|taghyirat-e hararati ba'es-e enbesat-e felezat mishavad.|Thermal changes cause metals to expand.|materials|
+0|برودتی|borooudati|adj|formal|cooling/refrigerating|تاسیسات برودتی مجتمع نصب گردید.|tasisat-e borooudati-ye mojtama' nasb gardid.|The cooling facilities of the complex were installed.|engineering|
+0|تاسیسات|tasisat|noun|formal|facilities/installations|نقشه‌های تاسیسات مکانیکی و الکتریکی تایید شد.|naqshe-ha-ye tasisat-e mekaniki va elektriki tayid shod.|Mechanical and electrical installation plans were approved.|engineering|
+0|مکانیکی|mekaniki|adj|formal|mechanical|خواص مکانیکی خاک در آزمایشگاه تعیین می‌گردد.|khavas-e mekaniki-ye khak dar azmayeshgah ta'yin migardad.|The mechanical properties of soil are determined in the lab.|civil_engineering|
+0|الکتریکی|elektriki|adj|formal|electrical|تابلوهای الکتریکی باید ضدآب باشند.|tablo-ha-ye elektriki bayad zedd-ab bashand.|Electrical panels must be waterproof.|engineering|
+0|مقاوم‌سازی|moqavem-sazi|noun|formal|retrofitting|پروژه مقاوم‌سازی مدارس قدیمی اجرا شد.|proje-ye moqavem-sazi-ye madares-e qadimi ejra shod.|The retrofitting project for old schools was executed.|civil_engineering|
+0|بهسازی|behsazi|noun|formal|improvement/rehabilitation|بهسازی لرزه‌ای ساختمان‌های مهم در دستور کار است.|behsazi-ye larze-i-ye sakhteman-ha-ye mohem dar dastoor-e kar ast.|Seismic rehabilitation of important buildings is on the agenda.|civil_engineering|
+0|فرونشست|forooneshast|noun|formal|subsidence|فرونشست زمین تهدیدی برای زیرساخت‌ها محسوب می‌شود.|forooneshast-e zamin tahdidi baraye zirsakht-ha mahsoob mishavad.|Land subsidence is considered a threat to infrastructure.|geology|
+0|نشست|neshast|noun|formal|settlement|نشست نامتقارن باعث ترک‌خوردگی دیوارها شد.|neshast-e na-moteqaren ba'es-e tarak-khordegi-ye divar-ha shod.|Differential settlement caused cracking in the walls.|civil_engineering|
+0|نامتقارن|na-moteqaren|adj|formal|asymmetrical|بارگذاری نامتقارن سازه را دچار پیچش می‌کند.|bar-gozari-ye na-moteqaren saze ra dochar-e pichesh mikonad.|Asymmetrical loading subjects the structure to torsion.|structural_dynamics|
+0|پیچش|pichesh|noun|formal|torsion|نیروی پیچش در ساختمان‌های نامنظم خطرناک است.|niroo-ye pichesh dar sakhteman-ha-ye na-monazzam khatarnak ast.|Torsional force in irregular buildings is dangerous.|structural_dynamics|
+0|لنگر|langar|noun|formal|moment (mechanics)|لنگر واژگونی در اثر نیروی باد ایجاد می‌شود.|langar-e vazhgooni dar asar-e niroo-ye bad ijad mishavad.|Overturning moment is created due to wind force.|structural|
+0|واژگونی|vazhgooni|noun|formal|overturning|ضریب اطمینان در برابر واژگونی محاسبه گردید.|zarib-e etminan dar barabar-e vazhgooni mohasebe gardid.|The factor of safety against overturning was calculated.|structural|
+0|لغزش|laghzesh|noun|formal|sliding|خطر لغزش در شیروانی‌های خاکی وجود دارد.|khatar-e laghzesh dar shirvani-ha-ye khaki vojood darad.|The risk of sliding exists in soil slopes.|civil_engineering|
+0|شیروانی|shirvani|noun|formal|slope/pitched roof|پایداری شیروانی با استفاده از دیوار حائل تامین شد.|paydari-ye shirvani ba estefade az divar-e ha'el tamin shod.|Slope stability was secured using a retaining wall.|civil_engineering|
+0|حائل|ha'el|noun|formal|retaining (wall)|دیوار حائل بتنی برای جلوگیری از ریزش کوه ساخته شد.|divar-e ha'el-e betoni baraye jologiri az rizesh-e kooh sakhte shod.|A concrete retaining wall was built to prevent landslides.|civil_engineering|
+0|ریزش|rizesh|noun|formal|collapse/cave-in|ریزش سقف تونل باعث تاخیر در پروژه شد.|rizesh-e saqf-e toonel ba'es-e takhir dar proje shod.|The tunnel roof cave-in caused a delay in the project.|construction|
+0|تونل|toonel|noun|formal|tunnel|تونل مترو با دستگاه حفاری پیشرفته حفر می‌شود.|toonel-e metro ba dastgah-e haffari-ye pishrafte hafr mishavad.|The subway tunnel is excavated with an advanced boring machine.|civil_engineering|
+0|حفاری|haffari|noun|formal|excavation/drilling|عملیات حفاری در سنگ‌های سخت کند پیش می‌رود.|amaliyat-e haffari dar sang-ha-ye sakht kond pish miravad.|Drilling operations progress slowly in hard rocks.|civil_engineering|
+0|مترو|metro|noun|formal|subway|سیستم مترو نقش مهمی در کاهش ترافیک شهری دارد.|sistem-e metro naqsh-e mohemi dar kahesh-e trafik-e shahri darad.|The subway system plays an important role in reducing urban traffic.|urban_design|
+0|قطار|qatar|noun|formal|train|ایستگاه قطار سریع‌السیر در مرکز شهر احداث می‌شود.|istgah-e qatar-e sari'-os-seyr dar markaz-e shahr ehdas mishavad.|The high-speed train station is built in the city center.|urban_design|
+0|ریل|ril|noun|formal|rail|انحنای ریل در قوس‌ها با دقت طراحی شده است.|enhena-ye ril dar qows-ha ba deqqat tarahi shode ast.|The rail curvature in curves is carefully designed.|civil_engineering|
+0|روسازی|roo-sazi|noun|formal|superstructure/pavement|روسازی آسفالتی جاده نیاز به ترمیم دارد.|roo-sazi-ye asfalti-ye jade niyaz be tarmim darad.|The asphalt pavement of the road needs repair.|civil_engineering|
+0|زیرسازی|zir-sazi|noun|formal|subgrade/substructure|زیرسازی مسیر آهن با مصالح مناسب انجام گرفت.|zir-sazi-ye masir-e ahan ba masaleh-e monaseb anjam gereft.|The railway subgrade was done with proper materials.|civil_engineering|
+0|آسفالت|asfalt|noun|formal|asphalt|ضخامت لایه آسفالت در مشخصات فنی ذکر شده است.|zekhamat-e laye-ye asfalt dar moshakhasat-e fanni zekr shode ast.|The thickness of the asphalt layer is stated in the technical specifications.|materials|
+0|قیر|qir|noun|formal|bitumen|استفاده از قیر اصلاح‌شده دوام جاده را افزایش می‌دهد.|estefade az qir-e eslah-shode davam-e jade ra afzayesh midahad.|Using modified bitumen increases road durability.|materials|
+0|مخلوط|makhloot|noun|formal|mixture|طرح اختلاط بتن بهینه شد.|tarh-e ekhtelat-e beton behine shod.|The concrete mix design was optimized.|materials|
+0|سیمان|siman|noun|formal|cement|نوع سیمان مصرفی در محیط‌های سولفاتی تفاوت دارد.|now'-e siman-e masrafi dar mohit-ha-ye soolfati tafavot darad.|The type of cement used differs in sulfate environments.|materials|
+0|شن|shen|noun|formal|gravel|دانه بندی شن و ماسه در مقاومت بتن تاثیر دارد.|dane-bandi-ye shen va mase dar moqavemat-e beton ta'sir darad.|Gravel and sand grading affects concrete strength.|materials|
+0|ماسه|mase|noun|formal|sand|از ماسه شسته در ملات آجرکاری استفاده می‌شود.|az mase-ye shoste dar malat-e ajor-kari estefade mishavad.|Washed sand is used in brickwork mortar.|materials|
+0|آجر|ajor|noun|formal|brick|نمای آجر نسوز به ساختمان جلوه زیبایی می‌بخشد.|nama-ye ajor-e nasooz be sakhteman jelve-ye zibayi mibakhshad.|Firebrick facade gives a beautiful look to the building.|materials|

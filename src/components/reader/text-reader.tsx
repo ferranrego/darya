@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation } from "@tanstack/react-query";
-import { Check, Languages } from "lucide-react";
+import { Check, Languages, Volume2 } from "lucide-react";
 import { motion } from "motion/react";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,7 @@ import { upsertUserWord } from "@/lib/db/words";
 import { XP, recordActivity } from "@/lib/gamification";
 import { useInvalidateLearning, useProfile, useSupabase, useUser, useWordStatusMap } from "@/lib/queries/hooks";
 import { newCard } from "@/lib/srs/scheduler";
+import { useAudio } from "@/lib/use-audio";
 import { segmentSentence } from "./segments";
 import { WordSheet } from "./word-sheet";
 
@@ -32,6 +33,7 @@ export function TextReader({
   const { data: profile } = useProfile();
   const statusMap = useWordStatusMap();
   const invalidate = useInvalidateLearning();
+  const { playAudio } = useAudio();
 
   const [tapped, setTapped] = useState<TappedWord | null>(null);
   const [tapCount, setTapCount] = useState(0);
@@ -180,7 +182,7 @@ export function TextReader({
         </button>
       </header>
 
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-4">
         {doc.sentences.map((sentence, i) => (
           <div key={i}>
             <p lang="prs" className="text-[28px] leading-[2.1]">
@@ -204,15 +206,27 @@ export function TextReader({
             {showTranslit && (
               <p className="mt-1 text-[14px] leading-relaxed text-ink-faint">{sentence.translit}</p>
             )}
-            <button
-              type="button"
-              onClick={() => toggleEn(i)}
-              className={`mt-1.5 text-[13px] transition-colors ${
-                revealedEn.has(i) ? "text-ink-soft" : "text-ink-faint/70 hover:text-ink-soft"
-              }`}
-            >
-              {revealedEn.has(i) ? sentence.en : "· · ·"}
-            </button>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => toggleEn(i)}
+                className={`mt-1.5 text-[13px] transition-colors flex items-center justify-center ${
+                  revealedEn.has(i) ? "text-ink-soft" : "text-ink-faint/70 hover:text-ink-soft"
+                }`}
+              >
+                {revealedEn.has(i) ? sentence.en : <Languages size={14} className="opacity-70" />}
+              </button>
+              {revealedEn.has(i) && (
+                <button
+                  type="button"
+                  onClick={() => playAudio(sentence.dari)}
+                  className="mt-1.5 flex items-center justify-center text-ink-faint hover:text-lapis transition-colors"
+                  title="Play audio"
+                >
+                  <Volume2 size={16} />
+                </button>
+              )}
+            </div>
           </div>
         ))}
       </div>
@@ -249,8 +263,10 @@ function WordSpan({
     status === "new"
       ? "bg-new-tint rounded-md"
       : status === "learning"
-        ? "underline decoration-lapis decoration-2 underline-offset-8"
-        : "";
+        ? "underline decoration-lapis decoration-2 underline-offset-8 font-medium"
+        : status === "known"
+          ? "text-ink font-medium"
+          : "";
   return (
     <button
       type="button"

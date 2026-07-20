@@ -2,9 +2,13 @@
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Flame, LogOut, Trophy } from "lucide-react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { updateProfile } from "@/lib/db/profiles";
 import { useProfile, useSignOut, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
+import { useSettingsStore } from "@/lib/settings-store";
+import { FSRS_PARAMETERS } from "@/lib/srs/scheduler";
+import { usePushSubscription } from "@/lib/use-push-subscription";
 
 const RATIOS = [
   { value: 0.02, label: "Gentle", detail: "~2% new words" },
@@ -22,6 +26,8 @@ export default function ProfilePage() {
   const { data: profile } = useProfile();
   const { data: words } = useUserWords();
   const signOut = useSignOut();
+  const { readingFont, setReadingFont } = useSettingsStore();
+  const { isSupported, isSubscribed, isSubscribing, subscribe } = usePushSubscription();
 
   const patch = useMutation({
     mutationFn: async (p: { new_word_ratio?: number; daily_goal?: number }) => {
@@ -37,11 +43,27 @@ export default function ProfilePage() {
 
   return (
     <div className="flex flex-col gap-8">
-      <header className="pt-2">
-        <h1 className="text-[26px] font-semibold tracking-tight">{profile.display_name}</h1>
-        <p className="mt-1 text-[14px] text-ink-soft">
-          Level {profile.level_estimate.replace("L", "")} · {knownCount} words known · {profile.xp} XP
-        </p>
+      <header className="pt-2 flex justify-between items-start">
+        <div>
+          <h1 className="text-[26px] font-semibold tracking-tight">{profile.display_name}</h1>
+          <p className="mt-1 text-[14px] text-ink-soft">
+            Level {profile.level_estimate.replace("L", "")} · {knownCount} words known · {profile.xp} XP
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <Link 
+            href="/history" 
+            className="text-[13px] font-medium text-ink-soft hover:text-ink transition-colors bg-surface border border-line px-3 py-1.5 rounded-full"
+          >
+            History
+          </Link>
+          <Link 
+            href="/stats" 
+            className="text-[13px] font-medium text-lapis hover:text-lapis-deep transition-colors bg-lapis-soft px-3 py-1.5 rounded-full"
+          >
+            Detailed Stats
+          </Link>
+        </div>
       </header>
 
       <section className="grid grid-cols-2 gap-3">
@@ -106,6 +128,73 @@ export default function ProfilePage() {
               </button>
             );
           })}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-[15px] font-semibold">Reading Font</h2>
+        <p className="mt-0.5 text-[13px] text-ink-soft">
+          Choose the font for reading Dari texts.
+        </p>
+        <div className="mt-3 grid grid-cols-2 gap-2">
+          {(["vazirmatn", "scheherazade"] as const).map((font) => {
+            const active = readingFont === font;
+            return (
+              <button
+                key={font}
+                type="button"
+                onClick={() => setReadingFont(font)}
+                aria-pressed={active}
+                className={`rounded-2xl border px-3 py-3 text-center transition-all duration-200 ${
+                  active ? "border-lapis bg-lapis-soft text-lapis" : "border-line bg-surface hover:border-ink-faint"
+                }`}
+              >
+                <p className="text-[14px] font-medium capitalize">{font === "vazirmatn" ? "Vazirmatn (Default)" : "Scheherazade New"}</p>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      {isSupported && (
+        <section>
+          <h2 className="text-[15px] font-semibold">Notifications</h2>
+          <p className="mt-0.5 text-[13px] text-ink-soft">
+            Get daily streak reminders and updates.
+          </p>
+          <div className="mt-3">
+            <button
+              type="button"
+              onClick={subscribe}
+              disabled={isSubscribed || isSubscribing}
+              className={`rounded-2xl border px-4 py-3 text-center transition-all duration-200 w-full ${
+                isSubscribed 
+                  ? "border-sabz bg-sabz-soft text-sabz cursor-default" 
+                  : "border-line bg-surface hover:border-lapis text-lapis"
+              } ${isSubscribing ? "opacity-50" : ""}`}
+            >
+              <p className="text-[14px] font-medium">
+                {isSubscribed ? "Subscribed to Notifications" : isSubscribing ? "Subscribing..." : "Enable Notifications"}
+              </p>
+            </button>
+          </div>
+        </section>
+      )}
+
+      <section>
+        <h2 className="text-[15px] font-semibold">Spaced Repetition (FSRS) Parameters</h2>
+        <p className="mt-0.5 text-[13px] text-ink-soft">
+          Current parameters used by the spaced repetition scheduler.
+        </p>
+        <div className="mt-3 rounded-2xl border border-line bg-surface p-4">
+          <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-[13px]">
+            <dt className="font-medium text-ink-soft">Request Retention</dt>
+            <dd>{FSRS_PARAMETERS.request_retention}</dd>
+            <dt className="font-medium text-ink-soft">Maximum Interval</dt>
+            <dd>{FSRS_PARAMETERS.maximum_interval} days</dd>
+            <dt className="font-medium text-ink-soft">Weights</dt>
+            <dd className="font-mono text-[11px] text-ink-soft break-all">{FSRS_PARAMETERS.w.join(", ")}</dd>
+          </dl>
         </div>
       </section>
 

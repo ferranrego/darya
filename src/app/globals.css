@@ -59,6 +59,10 @@ body {
   direction: rtl;
 }
 
+.use-scheherazade [lang="prs"] {
+  font-family: var(--font-scheherazade), "Noto Naskh Arabic", serif;
+}
+
 ::selection {
   background: var(--lapis-soft);
 }

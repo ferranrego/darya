@@ -6,7 +6,8 @@ const validPos = new Set([
   "interjection", "determiner", "phrase"
 ]);
 
-const content = fs.readFileSync("scripts/data/core-lexicon-6.txt", "utf8");
+const filePath = process.argv[2] || "scripts/data/core-lexicon-6.txt";
+const content = fs.readFileSync(filePath, "utf8");
 const lines = content.split("\n");
 for (let i = 0; i < lines.length; i++) {
   if (!lines[i].trim() || lines[i].startsWith("#")) continue;
@@ -43,5 +44,5 @@ for (let i = 0; i < lines.length; i++) {
   lines[i] = parts.join("|");
 }
 
-fs.writeFileSync("scripts/data/core-lexicon-6.txt", lines.join("\n"));
-console.log("Fixed POS tags.");
+fs.writeFileSync(filePath, lines.join("\n"));
+console.log(`Fixed POS tags in ${filePath}`);

@@ -72,16 +72,16 @@
 - [x] Deploy to Vercel + production PWA install check
 
 ## Phase 2 — Audio & depth
-- [ ] Word/sentence audio (pick best free TTS; pre-generated files as content if quality wins)
-- [ ] Richer stats page
-- [ ] Reading-font toggle (Scheherazade New)
-- [ ] FSRS parameters view
+- [x] Word/sentence audio (pick best free TTS; pre-generated files as content if quality wins)
+- [x] Richer stats page
+- [x] Reading-font toggle (Scheherazade New)
+- [x] FSRS parameters view
 
 ## Phase 3 — Social & notifications
-- [ ] Web push: VAPID, subscribe flow, Declarative Web Push payloads (iOS ≥18.4)
-- [ ] Vercel cron: streak-reminder push
-- [ ] Leaderboard (weekly XP + known words)
-- [ ] Text library / reading history
+- [x] Web push: VAPID, subscribe flow, Declarative Web Push payloads (iOS ≥18.4)
+- [x] Vercel cron: streak-reminder push
+- [x] Leaderboard (weekly XP + known words)
+- [x] Text library / reading history
 
 ## Blocked on user
 - [ ] `GEMINI_API_KEY` in `.env.local` — get free key at https://aistudio.google.com/apikey (no card, cannot incur costs)

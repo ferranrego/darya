@@ -1,702 +1,702 @@
 # Darya core lexicon — A2 batch (AI scripted)
 # rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants
-501|انجنیر|enjinīr|noun|neutral|engineer|انجنیر پل را ساخت.|enjinīr pul rā sākht.|The engineer built the bridge.||
-502|نجار|najjār|noun|neutral|carpenter|نجار یک میز جور کرد.|najjār yak mēz jōr kard.|The carpenter made a table.||
-503|دریور|draywar|noun|neutral|driver|دریور تکسی بسیار تیز رفت.|draywar-i taksī bisyār tēz raft.|The taxi driver went very fast.|dari-specific|
-504|خیاط|khayyāt|noun|neutral|tailor|خیاط کالا را دوخت.|khayyāt kālā rā dōkht.|The tailor sewed the clothes.||
-505|پولیس|pōlīs|noun|neutral|police|پولیس امنیت را می‌گیرد.|pōlīs amniyat rā mēgīrad.|The police maintain security.||
-506|عسکر|askar|noun|neutral|soldier|عسکر وطن را دفاع می‌کند.|askar watan rā difā mēkunad.|The soldier defends the country.||
-507|مامور|māmūr|noun|neutral|official/employee|مامور دولتی به دفتر رفت.|māmūr-i dawlatī ba daftar raft.|The government employee went to the office.||
-508|مدیر|mudīr|noun|neutral|manager/principal|مدیر مکتب سخنرانی کرد.|mudīr-i maktab sukhanrānī kard.|The school principal gave a speech.||
-509|رئیس|ra'īs|noun|neutral|boss/president|رئیس شرکت جلسه دارد.|ra'īs-i shirkat jalasa dārad.|The company boss has a meeting.||
-510|مستری|mistarī|noun|neutral|mechanic|مستری موتر را ترمیم کرد.|mistarī mōtar rā tarmīm kard.|The mechanic repaired the car.|dari-specific|
-511|نانوا|nānwā|noun|neutral|baker|نانوا نان گرم پخت.|nānwā nān-i garm pukht.|The baker baked hot bread.||
-512|قصاب|qassāb|noun|neutral|butcher|قصاب گوشت تازه آورد.|qassāb gōsht-i tāza āward.|The butcher brought fresh meat.||
-513|دکاندار|dukāndār|noun|neutral|shopkeeper|دکاندار سودا می‌فروشد.|dukāndār sawdā mēfurōshad.|The shopkeeper sells goods.||
-514|ترکاری فروش|tarkārī furōsh|noun|neutral|vegetable seller|ترکاری فروش کچالو دارد.|tarkārī furōsh kachālō dārad.|The vegetable seller has potatoes.||
-515|آشپز|āshpaz|noun|neutral|cook/chef|آشپز قابلی پلو پخته می‌کند.|āshpaz qābilī palaw pukhta mēkunad.|The chef is cooking Qabili palaw.||
-516|ترجمان|tarjumān|noun|neutral|translator/interpreter|ترجمان زبان انگلیسی می‌فهمد.|tarjumān zabān-i inglisī mēfahmad.|The translator understands the English language.||
-517|خبرنگار|khabar-nigār|noun|neutral|journalist|خبرنگار راپور می‌دهد.|khabar-nigār rāpōr mēdihad.|The journalist gives a report.||
-518|عکاس|akkās|noun|neutral|photographer|عکاس عکس‌های مقبول گرفت.|akkās aks-hā-yi maqbūl girift.|The photographer took beautiful photos.||
-519|وکیل|wakīl|noun|neutral|lawyer/representative|وکیل در محکمه گپ زد.|wakīl dar mahkama gap zad.|The lawyer spoke in court.||
-520|قاضی|qāzī|noun|neutral|judge|قاضی فیصله کرد.|qāzī faysala kard.|The judge made a decision.||
-521|شاروال|shārwāl|noun|neutral|mayor|شاروال سرک‌ها را پاک کرد.|shārwāl sarak-hā rā pāk kard.|The mayor cleaned the streets.|dari-specific|
-522|کارگر|kārgar|noun|neutral|worker|کارگر در فابریکه زحمت می‌کشد.|kārgar dar fābrīka zahmat mēkashad.|The worker works hard in the factory.||
-523|صفاکار|safākār|noun|neutral|cleaner|صفاکار صنف را جارو زد.|safākār sinf rā jārō zad.|The cleaner swept the class.||
-524|محافظ|muhāfiz|noun|neutral|guard|محافظ دروازه را بسته کرد.|muhāfiz darwāza rā basta kard.|The guard closed the gate.||
-525|تاجر|tājir|noun|neutral|merchant/businessman|تاجر مال وارد می‌کند.|tājir māl wārid mēkunad.|The merchant imports goods.||
-526|صراف|sarrāf|noun|neutral|money changer|صراف دالر را افغانی کرد.|sarrāf dālar rā afghānī kard.|The money changer exchanged dollars to Afghanis.||
-527|سلمانی|salmānī|noun|neutral|barber|سلمانی موی مرا اصلاح کرد.|salmānī mō-yi ma rā islāh kard.|The barber cut my hair.||
-528|شار|shār|noun|neutral|city|کابل یک شار کلان است.|kābul yak shār-i kalān ast.|Kabul is a big city.||
-529|کوچه|kōcha|noun|neutral|street/alley|ما در این کوچه زندگی می‌کنیم.|mā dar īn kōcha zindagī mēkunēm.|We live in this alley.||
-530|چهارراهی|chahār-rāhī|noun|neutral|intersection/square|در چهارراهی ترافیک است.|dar chahār-rāhī tarāfīk ast.|There is traffic at the intersection.||
-531|پیاده‌رو|piyāda-raw|noun|neutral|sidewalk|از پیاده‌رو بروید.|az piyāda-raw birawēd.|Walk on the sidewalk.||
-532|ساختمان|sākhtamān|noun|neutral|building|این ساختمان نو است.|īn sākhtamān naw ast.|This building is new.||
-533|تعمیر|ta'mīr|noun|neutral|building (structure)|تعمیر مکتب بزرگ است.|ta'mīr-i maktab buzurg ast.|The school building is large.||
-534|مارکیت|mārkīt|noun|neutral|market/shopping center|برای سودا به مارکیت رفتیم.|barāyi sawdā ba mārkīt raftēm.|We went to the market for shopping.||
-535|شاروالی|shārwālī|noun|neutral|municipality|شاروالی کثافات را انتقال داد.|shārwālī kasāfāt rā intiqāl dād.|The municipality transported the garbage.|dari-specific|
-536|کلینیک|kilīnīk|noun|neutral|clinic|کلینیک دندان باز است.|kilīnīk-i dandān bāz ast.|The dental clinic is open.||
-537|پارک|pārk|noun|neutral|park|اطفال در پارک بازی می‌کنند.|atfāl dar pārk bāzī mēkunand.|Children are playing in the park.||
-538|سینما|sīnamā|noun|neutral|cinema|ما به سینما رفتیم.|mā ba sīnamā raftēm.|We went to the cinema.||
-539|هوتل|hōtal|noun|neutral|hotel/restaurant|در هوتل چای خوردیم.|dar hōtal chāy khurdēm.|We had tea at the restaurant.||
-540|رستورانت|rastūrānt|noun|neutral|restaurant|رستورانت غذای مزه‌دار دارد.|rastūrānt ghazā-yi maza-dār dārad.|The restaurant has delicious food.||
-541|بانک|bānk|noun|neutral|bank|برای گرفتن پیسه به بانک رفتم.|barāyi giriftan-i paysa ba bānk raftam.|I went to the bank to get money.||
-542|پوسته خانه|pōsta khāna|noun|neutral|post office|پوسته خانه بسته است.|pōsta khāna basta ast.|The post office is closed.||
-543|ماموریت|māmūriyat|noun|neutral|police station/precinct|به ماموریت پولیس زنگ زدم.|ba māmūriyat-i pōlīs zang zadam.|I called the police station.||
-544|استدیوم|stadyōm|noun|neutral|stadium|مسابقه در استدیوم است.|musābiqa dar stadyōm ast.|The match is in the stadium.||
-545|میدان|maydān|noun|neutral|field/square|میدان فوتبال سبز است.|maydān-i fūtbāl sabz ast.|The football field is green.||
-546|پل|pul|noun|neutral|bridge|موترها از بالای پل تیر می‌شوند.|mōtar-hā az bālā-yi pul tēr mēshawand.|Cars pass over the bridge.||
-547|تونل|tōnal|noun|neutral|tunnel|تونل سالنگ سرد است.|tōnal-i sālang sard ast.|The Salang tunnel is cold.||
-548|کتابخانه|kitābkhāna|noun|neutral|library|در کتابخانه مطالعه می‌کنم.|dar kitābkhāna mutāla'a mēkunam.|I study in the library.||
-549|موزیم|mōziyam|noun|neutral|museum|موزیم آثار تاریخی دارد.|mōziyam āsār-i tārīkhī dārad.|The museum has historical artifacts.||
-550|زیارت|ziyārat|noun|neutral|shrine|مردم به زیارت می‌روند.|mardum ba ziyārat mērawand.|People go to the shrine.||
-551|قبرستان|qabristān|noun|neutral|graveyard|قبرستان در بیرون شار است.|qabristān dar bērūn-i shār ast.|The graveyard is outside the city.||
-552|تکسی|taksī|noun|neutral|taxi|با تکسی به خانه رفتم.|bā taksī ba khāna raftam.|I went home by taxi.||
-553|سرویس|sarwēs|noun|neutral|bus|سرویس پر از آدم بود.|sarwēs pur az ādam būd.|The bus was full of people.||
-554|ملی بس|millī bas|noun|neutral|city bus|ملی بس ایستاد شد.|millī bas ēstād shud.|The city bus stopped.|dari-specific|
-555|مینی بس|mīnī bas|noun|neutral|minibus|مینی بس به مزار می‌رود.|mīnī bas ba mazār mērawad.|The minibus goes to Mazar.||
-556|موترسایکل|mōtarsāykal|noun|neutral|motorcycle|موترسایکل بسیار تیز است.|mōtarsāykal bisyār tēz ast.|The motorcycle is very fast.||
-557|طیاره|tayāra|noun|neutral|airplane|طیاره در هوا پرواز می‌کند.|tayāra dar hawā parwāz mēkunad.|The airplane flies in the air.||
-558|هلیکوپتر|hilīkōptar|noun|neutral|helicopter|هلیکوپتر نشست کرد.|hilīkōptar nishast kard.|The helicopter landed.||
-559|ریل|rēl|noun|neutral|train|در افغانستان ریل کم است.|dar afghānistān rēl kam ast.|There are few trains in Afghanistan.||
-560|کشتی|kishtī|noun|neutral|ship/boat|کشتی در دریا روان است.|kishtī dar daryā rawān ast.|The ship is moving in the river.||
-561|قایق|qāyiq|noun|neutral|boat|ماهیگیر در قایق است.|māhīgīr dar qāyiq ast.|The fisherman is in the boat.||
-562|کراچی|karāchī|noun|neutral|cart|بارها را در کراچی انداختیم.|bār-hā rā dar karāchī andākhtēm.|We put the loads in the cart.|dari-specific|
-563|زرنج|zaranj|noun|neutral|auto-rickshaw|با زرنج به بازار رفتیم.|bā zaranj ba bāzār raftēm.|We went to the bazaar by auto-rickshaw.|dari-specific|
-564|ریکشا|rēkshā|noun|neutral|rickshaw|ریکشا ارزان است.|rēkshā arzān ast.|The rickshaw is cheap.||
-565|لاری|lārī|noun|neutral|truck|لاری بار می‌برد.|lārī bār mēburad.|The truck carries loads.||
-566|باربری|bār-barī|noun|neutral|freight/cargo transport|موتر باربری کلان است.|mōtar-i bār-barī kalān ast.|The cargo truck is big.||
-567|تانک تیل|tānk-i tēl|noun|neutral|gas station|در تانک تیل، تیل انداختم.|dar tānk-i tēl, tēl andākhtam.|I put gas at the gas station.|dari-specific|
-568|پرزه|purza|noun|neutral|spare part|پرزه موتر خراب شد.|purza-i mōtar kharāb shud.|The car's spare part broke.||
-569|تایر|tāyar|noun|neutral|tire|تایر موتر پنچر شد.|tāyar-i mōtar panchar shud.|The car tire got punctured.||
-570|اشترنگ|ishtirang|noun|neutral|steering wheel|اشترنگ دست راست است.|ishtirang dast-i rāst ast.|The steering wheel is on the right.||
-571|بریک|brēk|noun|neutral|brake|بریک را محکم بگیر.|brēk rā muhkam bigīr.|Hold the brake firmly.||
-572|هارن|hāran|noun|neutral|horn|او زیاد هارن می‌زند.|ō ziyād hāran mēzanad.|He honks the horn a lot.||
-573|سیط|sēt|noun|neutral|seat|در سیط پیشرو بشین.|dar sēt-i pēsh-raw bishīn.|Sit in the front seat.||
-574|کرایه|kirāya|noun|neutral|fare/rent|کرایه موتر چند است؟|kirāya-i mōtar chand ast?|How much is the car fare?||
-575|تکت|tikat|noun|neutral|ticket|تکت طیاره را گرفتم.|tikat-i tayāra rā giriftam.|I got the airplane ticket.||
-576|مسافر|musāfir|noun|neutral|traveler/passenger|مسافرین خسته هستند.|musāfirīn khasta hastand.|The passengers are tired.||
-577|دریوری|draywarī|noun|neutral|driving|دریوری در زمستان سخت است.|draywarī dar zamistān sakht ast.|Driving in winter is hard.||
-578|ترافیک|tarāfīk|noun|neutral|traffic/traffic police|ترافیک راه را باز کرد.|tarāfīk rāh rā bāz kard.|The traffic police opened the road.||
-579|لیسنس|lēsans|noun|neutral|driver's license|من لیسنس دریوری دارم.|man lēsans-i draywarī dāram.|I have a driver's license.||
-580|سیاحت|sayāhat|noun|neutral|tourism/sightseeing|برای سیاحت به بامیان رفتیم.|barāyi sayāhat ba bāmiyān raftēm.|We went to Bamiyan for sightseeing.||
-581|رخصتی|rukhsatī|noun|neutral|holiday/vacation|روز جمعه رخصتی است.|rōz-i jum'a rukhsatī ast.|Friday is a holiday.||
-582|ویزه|wīza|noun|neutral|visa|من ویزه دوبی را گرفتم.|man wīza-i dubay rā giriftam.|I got a Dubai visa.||
-583|پاسپورت|pāspōrt|noun|neutral|passport|پاسپورت من گم شد.|pāspōrt-i man gum shud.|My passport got lost.||
-584|سرحد|sarhad|noun|neutral|border|سرحد بسته است.|sarhad basta ast.|The border is closed.||
-585|گمرک|gumruk|noun|neutral|customs|مال‌ها در گمرک ماند.|māl-hā dar gumruk mānd.|The goods remained at customs.||
-586|میدان هوایی|maydān-i hawāī|noun|neutral|airport|به میدان هوایی رفتم.|ba maydān-i hawāī raftam.|I went to the airport.|dari-specific|
-587|پرواز|parwāz|noun|neutral|flight|پرواز ناوقت شد.|parwāz nāwaqt shud.|The flight was delayed.||
-588|بکس|baks|noun|neutral|suitcase/bag|بکس من سنگین است.|baks-i man sangīn ast.|My suitcase is heavy.||
-589|خریطه|kharīta|noun|neutral|bag/sack|خریطه پلاستیکی نگیر.|kharīta-i plāstīkī nagīr.|Do not take a plastic bag.||
-590|سامان|sāmān|noun|neutral|luggage/equipment|سامان خود را بردار.|sāmān-i khud rā bardār.|Pick up your luggage.||
-591|مهمانخانه|mihmān-khāna|noun|neutral|guesthouse/living room|مهمان‌ها در مهمانخانه نشستند.|mihmān-hā dar mihmān-khāna nishastand.|The guests sat in the guesthouse.||
-592|راهنما|rāhnumā|noun|neutral|guide|ما یک راهنما کار داریم.|mā yak rāhnumā kār dārēm.|We need a guide.||
-593|نقشه|naqsha|noun|neutral|map|نقشه کابل را ببین.|naqsha-i kābul rā bibīn.|Look at the map of Kabul.||
-594|قطب‌نما|qutb-numā|noun|neutral|compass|قطب‌نما جهت را نشان می‌دهد.|qutb-numā jahat rā nishān mēdihad.|The compass shows the direction.||
-595|خیمه|khayma|noun|neutral|tent|در کوه خیمه زدیم.|dar kōh khayma zadēm.|We pitched a tent in the mountain.||
-596|کمپ|kamp|noun|neutral|camp|ما در کمپ استیم.|mā dar kamp astēm.|We are in the camp.||
-597|کوهنوردی|kōh-nawardī|noun|neutral|mountaineering/hiking|من کوهنوردی را خوش دارم.|man kōh-nawardī rā khush dāram.|I like mountaineering.||
-598|منظره|manzara|noun|neutral|view/scenery|منظره بند امیر زیبا است.|manzara-i band-i amīr zēbā ast.|The scenery of Band-e-Amir is beautiful.||
-599|چکر|chakar|noun|neutral|stroll/trip|برای چکر رفتیم.|barāyi chakar raftēm.|We went for a stroll.||
-600|تفریح|tafrēh|noun|neutral|recreation/break|وقت تفریح است.|waqt-i tafrēh ast.|It is time for a break.||
-601|کمره|kamra|noun|neutral|camera|کمره عکاسی نو خریدم.|kamra-i akkāsī-i naw kharīdam.|I bought a new camera.||
-602|یادگاری|yādgārī|noun|neutral|souvenir/memorial|یک عکس یادگاری گرفتیم.|yak aks-i yādgārī giriftēm.|We took a souvenir photo.||
-603|سوغات|sawghāt|noun|neutral|souvenir/gift|از هرات سوغات آوردم.|az hirāt sawghāt āwardam.|I brought a souvenir from Herat.||
-604|خارجی|khārijī|noun|neutral|foreigner/foreign|او یک خارجی است.|ō yak khārijī ast.|He is a foreigner.||
-605|داخلی|dākhilī|noun|neutral|domestic/internal|پرواز داخلی ارزان است.|parwāz-i dākhilī arzān ast.|The domestic flight is cheap.||
-606|ویزیت|wīzīt|noun|neutral|visit/appointment|من پیش داکتر ویزیت دارم.|man pēsh-i dāktar wīzīt dāram.|I have an appointment with the doctor.||
-607|طرف|taraf|noun|neutral|direction/side|به این طرف بیا.|ba īn taraf biyā.|Come to this side.||
-608|دست راست|dast-i rāst|noun|neutral|right side|طرف دست راست دور بخور.|taraf-i dast-i rāst dōr bukhur.|Turn to the right side.||
-609|دست چپ|dast-i chap|noun|neutral|left side|شفاخانه دست چپ است.|shifākhāna dast-i chap ast.|The hospital is on the left side.||
-610|مستقیم|mustaqīm|noun|neutral|straight|مستقیم برو.|mustaqīm biraw.|Go straight.||
-611|پیشرو|pēsh-raw|noun|neutral|front/ahead|پیشرو سیل کن.|pēsh-raw sayl ku.|Look ahead.||
-612|پشت سر|pusht-i sar|noun|neutral|behind/back|کتاب پشت سر تو است.|kitāb pusht-i sar-i tu ast.|The book is behind you.||
-613|پایین|pāyīn|noun|neutral|down/below|از زینه پایین بیا.|az zīna pāyīn biyā.|Come down the stairs.||
-614|شمال|shamāl|noun|neutral|north|مزار در شمال افغانستان است.|mazār dar shamāl-i afghānistān ast.|Mazar is in the north of Afghanistan.||
-615|جنوب|junūb|noun|neutral|south|قندهار در جنوب است.|qandahār dar junūb ast.|Kandahar is in the south.||
-616|شرق|sharq|noun|neutral|east|آفتاب از شرق برمی‌خیزد.|āftāb az sharq bar-mēkhēzad.|The sun rises from the east.||
-617|غرب|gharb|noun|neutral|west|هرات در غرب است.|hirāt dar gharb ast.|Herat is in the west.||
-618|مابین|mābēn|noun|neutral|between/middle|میز در مابین اتاق است.|mēz dar mābēn-i utāq ast.|The table is in the middle of the room.||
-619|کنج|kunj|noun|neutral|corner|چوکی را در کنج بمان.|chawkī rā dar kunj bimān.|Put the chair in the corner.||
-620|دور خوردن|dōr khurdan|verb|neutral|to turn|در چهارراهی دور بخورید.|dar chahār-rāhī dōr bukhurēd.|Turn at the intersection.||خور (khur)
-621|گذشتن|guzashtan|verb|neutral|to pass/cross|از سرک گذشتم.|az sarak guzashtam.|I crossed the street.||گذر (guzar)
-622|آدرس|ādras|noun|neutral|address|آدرس خانه خود را بده.|ādras-i khāna-i khud rā bida.|Give your home address.||
-623|نشانی|nishānī|noun|neutral|sign/address mark|نشانی خانه شما چیست؟|nishānī-i khāna-i shumā chīst?|What is the sign of your house?||
-624|راه|rāh|noun|neutral|way/path|این راه بسته است.|īn rāh basta ast.|This way is closed.||
-625|مسیر|masīr|noun|neutral|route|مسیر پرواز تغییر کرد.|masīr-i parwāz taghyīr kard.|The flight route changed.||
-626|سرک عمومی|sarak-i umūmī|noun|neutral|main road|به سرک عمومی برآمدیم.|ba sarak-i umūmī bar-āmadēm.|We came out to the main road.||
-627|کوچه فرعی|kōcha-i far'ī|noun|neutral|side street|از کوچه فرعی برو.|az kōcha-i far'ī biraw.|Go through the side street.||
-628|بن‌بست|bunbast|noun|neutral|dead end|این کوچه بن‌بست است.|īn kōcha bunbast ast.|This alley is a dead end.||
-629|تقاطع|taqātu'|noun|neutral|intersection|در تقاطع توقف کن.|dar taqātu' tawaqquf kun.|Stop at the intersection.||
-630|قطار|qatār|noun|neutral|row/queue|در قطار ایستاد شوید.|dar qatār ēstād shawēd.|Stand in the queue.||
-631|فاصله|fāsila|noun|neutral|distance|فاصله کابل تا جلال آباد چقدر است؟|fāsila-i kābul tā jalāl-ābād chīqadar ast?|What is the distance from Kabul to Jalalabad?||
-632|کیلومتر|kīlōmitr|noun|neutral|kilometer|چند کیلومتر راه مانده است؟|chand kīlōmitr rāh mānda ast?|How many kilometers are left?||
-633|جمپر|jampar|noun|spoken|jacket|او در زمستان جمپر می‌پوشد.|ō dar zamistān jampar mēpōshad.|He wears a jacket in winter.||
-634|دریشی|darēshī|noun|neutral|suit|پدرم یک دریشی نو خرید.|padaram yak darēshī-e naw kharīd.|My father bought a new suit.||
-635|چادر|chādar|noun|neutral|scarf (head)|زنان افغان معمولاً چادر می‌پوشند.|zanān-e afghān ma'mūlan chādar mēpōshand.|Afghan women usually wear a headscarf.||
-636|دستمال گردن|dastmāl-e gardan|noun|neutral|scarf (neck)|دستمال گردن او بسیار مقبول است.|dastmāl-e gardan-e ō bisyār maqbūl ast.|His neck scarf is very beautiful.||
-637|دستکش|dastkash|noun|neutral|glove|در برف بازی دستکش بپوش.|dar barf bāzī dastkash bipōsh.|Wear gloves when playing in the snow.||
-638|جیب|jēb|noun|neutral|pocket|پیسه در جیب من است.|paysa dar jēb-e man ast.|The money is in my pocket.||
-639|زنجیر|zanjīr|noun|neutral|zipper|زنجیر جمپرم خراب شده است.|zanjīr-e jamparam kharāb shuda ast.|My jacket's zipper is broken.||
-640|تکمه|tukma|noun|neutral|button|تکمه پیراهن تو افتاده است.|tukma-e pērāhan-e tō uftāda ast.|Your shirt's button has fallen off.||
-641|آستین|āstīn|noun|neutral|sleeve|آستین‌های این پیراهن دراز است.|āstīnhā-ye īn pērāhan darāz ast.|The sleeves of this shirt are long.||
-642|یخن|yakhan|noun|spoken|collar|یخن پیراهنش پاک است.|yakhan-e pērāhanash pāk ast.|His shirt's collar is clean.||
-643|دامن|dāman|noun|neutral|skirt|او دامن سیاه پوشیده بود.|ō dāman-e siyāh pōshīda būd.|She was wearing a black skirt.||
-644|نکتایی|nektāyī|noun|neutral|tie|بستن نکتایی را یاد دارم.|bastan-e nektāyī rā yād dāram.|I know how to tie a tie.||
-645|کمربند|kamarband|noun|neutral|belt|این کمربند چرمی است.|īn kamarband-e charmī ast.|This belt is made of leather.||
-646|کرتی پشمی|kurtī-e pashmī|noun|neutral|sweater|کرتی پشمی مرا گرم نگاه می‌دارد.|kurtī-e pashmī marā garm nigāh mēdārad.|A wool sweater keeps me warm.||
-647|جراب|jurāb|noun|spoken|socks|یک جوره جراب پشمی خریدم.|yak jūra jurāb-e pashmī kharīdam.|I bought a pair of wool socks.||
-648|زیرپوشی|zērpōshī|noun|neutral|underwear|کالی‌های زیرپوشی باید پاک باشند.|kālīhā-ye zērpōshī bāyad pāk bāshand.|Underwear must be clean.||
-649|یونیفورم|yōnīfōrm|noun|neutral|uniform|شاگردان مکتب یونیفورم می‌پوشند.|shāgirdān-e maktab yōnīfōrm mēpōshand.|School students wear a uniform.||
-650|تکه|tuka|noun|spoken|fabric|این تکه برای لباس مناسب است.|īn tuka barāye libās munāsib ast.|This fabric is suitable for a dress.||پارچه
-651|پخته|pakhta|noun|spoken|cotton|لباس پخته‌گی در تابستان خنک است.|libās-e pakhtagī dar tābistān khunak ast.|Cotton clothes are cool in the summer.||پنبه
-652|ابریشم|abrēsham|noun|neutral|silk|این دستمال از ابریشم خالص است.|īn dastmāl az abrēsham-e khālis ast.|This scarf is made of pure silk.||
-653|چرم|charm|noun|neutral|leather|بوت‌های چرمی بسیار دوام‌دار هستند.|būthā-ye charmī bisyār dawāmdār hastand.|Leather shoes are very durable.||
-654|اتو کردن|utū kardan|verb|neutral|to iron|باید پیراهنم را اتو کنم.|bāyad pērāhanam rā utū kunam.|I must iron my shirt.||اتو کن
-655|رفو کردن|rufū kardan|verb|neutral|to mend|این جراب‌ها را رفو کن.|īn jurābhā rā rufū kun.|Mend these socks.||رفو کن
-656|تنگ|tang|adjective|neutral|tight|این بوت‌ها برایم تنگ است.|īn būthā barāyam tang ast.|These shoes are tight for me.||
-657|گشاد|gushād|adjective|neutral|loose|لباس‌های گشاد راحت‌تر هستند.|libāshā-ye gushād rāhat-tar hastand.|Loose clothes are more comfortable.||
-658|مود|mōd|noun|spoken|fashion|این رنگ حالا مود است.|īn rang hālā mōd ast.|This color is in fashion now.||مد
-659|داغ|dāgh|noun|spoken|stain|روی پیراهنم یک داغ افتاد.|rō-ye pērāhanam yak dāgh uftād.|A stain got on my shirt.||لکه
-660|کالی‌شویی|kālīshōyī|noun|spoken|laundry|ماشین کالی‌شویی خراب است.|māshīn-e kālīshōyī kharāb ast.|The washing machine is broken.||لباس‌شویی
-661|طوفان|tūfān|noun|neutral|storm|دیشب طوفان شدیدی بود.|dīshab tūfān-e shadīdī būd.|There was a severe storm last night.||
-662|برق|barq|noun|neutral|lightning|برق آسمان بسیار روشن بود.|barq-e āsmān bisyār rawshan būd.|The lightning was very bright.||
-663|رعد|ra'd|noun|neutral|thunder|صدای رعد ترسناک بود.|sadā-ye ra'd tarsnāk būd.|The sound of thunder was scary.||
-664|مه|ma|noun|spoken|fog|در مه رانندگی خطرناک است.|dar ma rānandagī khatarnāk ast.|Driving in fog is dangerous.||
-665|خنک‌زدگی|khunakzadagī|noun|spoken|frostbite|دست‌هایش دچار خنک‌زدگی شده است.|dasthāyash duchār-e khunakzadagī shuda ast.|His hands have suffered frostbite.||سرمازدگی
-666|ژاله|zhāla|noun|neutral|hail|ژاله شیشه‌های موتر را شکست.|zhāla shīshahā-ye mōtar rā shikast.|The hail broke the car windows.||تگرگ
-667|شمالک|shamālak|noun|spoken|breeze|شمالک خنک می‌وزد.|shamālak-e khunak mēwazad.|A cool breeze is blowing.||نسیم
-668|مرطوب|martūb|adjective|neutral|humid|هوای اینجا بسیار مرطوب است.|hawā-ye īnjā bisyār martūb ast.|The weather here is very humid.||
-669|خشک|khushk|adjective|neutral|dry|در فصل گرما هوا خشک می‌شود.|dar fasl-e garmā hawā khushk mēshawad.|In the hot season, the weather becomes dry.||
-670|پیش‌بینی|pēshbīnī|noun|neutral|forecast|پیش‌بینی هوا نشان می‌دهد که فردا باران می‌بارد.|pēshbīnī-e hawā nishān mēdihad ki fardā bārān mēbārad.|The weather forecast shows it will rain tomorrow.||
-671|درجه حرارت|daraja-e harārat|noun|neutral|temperature|درجه حرارت امروز چند است؟|daraja-e harārat-e imrōz chand ast?|What is the temperature today?||
-672|درجه|daraja|noun|neutral|degree|هوا ده درجه زیر صفر است.|hawā da daraja zēr-e sifr ast.|The weather is ten degrees below zero.||
-673|یخ زدن|yakh zadan|verb|neutral|to freeze|آب در پیاله یخ زده است.|āb dar pyāla yakh zada ast.|The water in the cup has frozen.||یخ زن
-674|ابری|abrī|adjective|neutral|cloudy|امروز هوا ابری است.|imrōz hawā abrī ast.|The weather is cloudy today.||
-675|آسمان صاف|āsmān-e sāf|noun|neutral|clear sky|آسمان صاف و آفتابی است.|āsmān-e sāf wa āftābī ast.|The clear sky is sunny.||
-676|کمان رستم|kamān-e rustam|noun|spoken|rainbow|بعد از باران کمان رستم پیدا شد.|ba'd az bārān kamān-e rustam paydā shud.|A rainbow appeared after the rain.||رنگین کمان
-677|اقلیم|iqlīm|noun|neutral|climate|اقلیم افغانستان خشک است.|iqlīm-e afghānistān khushk ast.|The climate of Afghanistan is dry.||آب و هوا
-678|فصل|fasl|noun|neutral|season|خزان فصل مورد علاقه من است.|khazān fasl-e mawrid-e alāqa-e man ast.|Autumn is my favorite season.||
-679|خاکباد|khākbād|noun|spoken|dust storm|در دشت‌ها خاکباد زیاد است.|dar dashthā khākbād ziyād ast.|There are many dust storms in the plains.||
-680|ملایم|mulāyim|adjective|neutral|mild|هوای بهار بسیار ملایم است.|hawā-ye bahār bisyār mulāyim ast.|Spring weather is very mild.||
-681|شدید|shadīd|adjective|neutral|severe|باران شدید باعث سیلاب شد.|bārān-e shadīd bā'is-e sēlāb shud.|Severe rain caused a flood.||
-682|سیلاب|sēlāb|noun|neutral|flood|سیلاب خانه‌های زیادی را ویران کرد.|sēlāb khānahā-ye ziyādī rā wērān kard.|The flood destroyed many houses.||سیل
-683|خشکسالی|khushksālī|noun|neutral|drought|دهقانان از خشکسالی نگران هستند.|dihqānān az khushksālī nigarān hastand.|Farmers are worried about the drought.||
-684|دندآب|dandāb|noun|spoken|puddle|از روی دندآب خیز بزن.|az rō-ye dandāb khēz bizan.|Jump over the puddle.||
-685|لشم|lashm|adjective|spoken|slippery|بعد از باران سرک لشم می‌شود.|ba'd az bārān sarak lashm mēshawad.|After the rain, the road becomes slippery.||لغزنده
-686|قطره|qatra|noun|neutral|drop|یک قطره باران روی دستم افتاد.|yak qatra-e bārān rō-ye dastam uftād.|A drop of rain fell on my hand.||
-687|تب|tab|noun|neutral|fever|طفل تب بالایی دارد.|tifl tab-e bālāyī dārad.|The child has a high fever.||
-688|سرفه|surfa|noun|neutral|cough|سرفه‌های خشک دارد.|surfahā-ye khushk dārad.|He has a dry cough.||
-689|عطسه|atsa|noun|neutral|sneeze|مریضی او با عطسه شروع شد.|marīzī-e ō bā atsa shurō shud.|His illness started with a sneeze.||
-690|گنس|gans|adjective|spoken|dizzy|سرم گنس است.|saram gans ast.|I feel dizzy.||گیج
-691|نسخه|nuskhā|noun|neutral|prescription|داکتر برایم نسخه داد.|dāktar barāyam nuskhā dād.|The doctor gave me a prescription.||
-692|تابلیت|tāblēt|noun|spoken|pill|این تابلیت را بعد از نان بخور.|īn tāblēt rā ba'd az nān bukhur.|Take this pill after meals.||قرص
-693|شربت|sharbat|noun|neutral|syrup|شربت سرفه طعم خوبی ندارد.|sharbat-e surfa ta'm-e khūbī nadārad.|Cough syrup doesn't taste good.||
-694|پیچکاری|pēchkārī|noun|spoken|injection|من از پیچکاری می‌ترسم.|man az pēchkārī mētarsam.|I am afraid of injections.||تزریق
-695|پٹی|patī|noun|spoken|bandage|روی زخمش پٹی بستند.|rō-ye zakhmash patī bastand.|They put a bandage on his wound.||باند
-696|زخم|zakhm|noun|neutral|wound|زخمش هنوز خوب نشده است.|zakhmash hanōz khūb nashuda ast.|His wound hasn't healed yet.||
-697|جور شدن|jōr shudan|verb|spoken|to heal|او به زودی جور می‌شود.|ō ba zōdī jōr mēshawad.|He will heal soon.||جور شو
-698|مسکن|musakkin|noun|neutral|painkiller|یک تابلیت مسکن خوردم.|yak tāblēt-e musakkin khōrdam.|I took a painkiller pill.||
-699|حساسیت|hassāsiyat|noun|neutral|allergy|من به گل‌ها حساسیت دارم.|man ba gulhā hassāsiyat dāram.|I have an allergy to flowers.||
-700|فشار خون|fishār-e khūn|noun|neutral|blood pressure|فشار خونش بالا است.|fishār-e khūnash bālā ast.|His blood pressure is high.||
-701|مرض|maraz|noun|neutral|disease|این یک مرض خطرناک است.|īn yak maraz-e khatarnāk ast.|This is a dangerous disease.||بیماری
-702|عرض|araz|noun|neutral|symptom|علائم این مریضی چیست؟|alāyim-e īn marīzī chīst?|What are the symptoms of this illness?||علایم
-703|انتان|untān|noun|neutral|infection|زخمش انتان کرده است.|zakhmash untān karda ast.|His wound has an infection.||عفونت
-704|ویروس|wīrūs|noun|neutral|virus|این ویروس به سرعت پخش می‌شود.|īn wīrūs ba sur'at pakhsh mēshawad.|This virus spreads quickly.||
-705|میکروب|mīkrōb|noun|neutral|bacteria|دست‌هایت را بشوی تا میکروب‌ها کشته شوند.|dasthāyat rā bishōy tā mīkrōbhā kushta shawand.|Wash your hands to kill the bacteria.||
-706|عملیات|amaliyāt|noun|spoken|surgery|فردا داکتران او را عملیات می‌کنند.|fardā dāktarān ō rā amaliyāt mēkunand.|Doctors will perform surgery on him tomorrow.||جراحی
-707|داکتر دندان|dāktar-e dandān|noun|spoken|dentist|برای کشیدن دندانم پیش داکتر دندان رفتم.|barāye kashīdan-e dandānam pēsh-e dāktar-e dandān raftam.|I went to the dentist to pull my tooth.||دندان‌پزشک
-708|امبولانس|ambulāns|noun|neutral|ambulance|امبولانس به سرعت رسید.|ambulāns ba sur'at rasīd.|The ambulance arrived quickly.||
-709|عاجل|ājil|adjective|neutral|emergency|این یک وضعیت عاجل است.|īn yak waz'iyat-e ājil ast.|This is an emergency situation.||فوری
-710|نبض|nabz|noun|neutral|pulse|داکتر نبض مریض را گرفت.|dāktar nabz-e marīz rā girift.|The doctor took the patient's pulse.||
-711|ترمامیتر|tarmāmītar|noun|neutral|thermometer|درجه حرارت را با ترمامیتر اندازه بگیرید.|daraja-e harārat rā bā tarmāmītar andāza bigīrēd.|Measure the temperature with a thermometer.||دماسنج
-712|استفراغ|istifrāgh|noun|neutral|vomit|بعد از خوردن آن غذا استفراغ کرد.|ba'd az khōrdan-e ān ghazā istifrāgh kard.|He vomited after eating that food.||
-713|دل‌بدی|dilbadī|noun|spoken|nausea|در موتر دل‌بدی می‌شوم.|dar mōtar dilbadī mēshawam.|I get nausea in the car.||حالت تهوع
-714|کبودی|kabūdī|noun|neutral|bruise|روی دستش یک کبودی بزرگ است.|rō-ye dastash yak kabūdī-e buzurg ast.|There is a large bruise on his arm.||
-715|بجلک پا|bujulak-e pā|noun|spoken|ankle|بجلک پایم پیچ خورد.|bujulak-e pāyam pēch khōrd.|My ankle twisted.||مچ پا
-716|بند دست|band-e dast|noun|spoken|wrist|ساعت را در بند دستم می‌بندم.|sā'at rā dar band-e dastam mēbandam.|I wear a watch on my wrist.||مچ دست
-717|آرنج|āranj|noun|neutral|elbow|آرنجم به دروازه خورد.|āranjam ba darwāza khōrd.|My elbow hit the door.||
-718|سینه|sīna|noun|neutral|chest|درد شدیدی در سینه احساس می‌کنم.|dard-e shadīdī dar sīna ihsās mēkunam.|I feel a severe pain in my chest.||
-719|کمر|kamar|noun|neutral|waist|کمربند را دور کمرم بستم.|kamarband rā dōr-e kamaram bastam.|I tied the belt around my waist.||
-720|سرین|surīn|noun|neutral|hip|درد سرین او را اذیت می‌کند.|dard-e surīn ō rā aziyat mēkunad.|Hip pain bothers him.||
-721|ران|rān|noun|neutral|thigh|عضله ران او کشیده شده است.|azala-e rān-e ō kashīda shuda ast.|His thigh muscle is pulled.||
-722|لنگ پا|ling-e pā|noun|spoken|calf|لنگ پایم درد می‌کند.|ling-e pāyam dard mēkunad.|My calf hurts.||
-723|کوری|kūrī|noun|spoken|heel|کوری بوتم بلند است.|kūrī-e būtam buland ast.|My shoe's heel is high.||پاشنه
-724|انگشت پا|angusht-e pā|noun|neutral|toe|انگشت پایش زخم شده است.|angusht-e pāyash zakhm shuda ast.|His toe is injured.||
-725|شست|shast|noun|neutral|thumb|او با شست خود اشاره کرد.|ō bā shast-e khud ishāra kard.|He pointed with his thumb.||
-726|ناخن|nākhun|noun|neutral|nail|ناخن‌هایت را کوتاه کن.|nākhunhāyat rā kōtāh kun.|Cut your nails.||
-727|پیشانی|pēshānī|noun|neutral|forehead|پیشانی او گرم است.|pēshānī-e ō garm ast.|His forehead is warm.||
-728|رخسار|rukhsār|noun|neutral|cheek|اشک از رخسارش جاری شد.|ashk az rukhsārash jārī shud.|A tear flowed from her cheek.||گونه
-729|الاشه|alāsha|noun|spoken|chin|ریش او در الاشه اش بلند است.|rēsh-e ō dar alāsha ash buland ast.|His beard is long on his chin.||چانه
-730|فک|fak|noun|neutral|jaw|هنگام جویدن غذا فکم درد می‌کند.|hangām-e jawīdan-e ghazā fakam dard mēkunad.|My jaw hurts when chewing food.||
-731|ابرو|abrō|noun|neutral|eyebrow|ابروهای او سیاه هستند.|abrōhā-ye ō siyāh hastand.|His eyebrows are black.||
-732|مژه|muzha|noun|neutral|eyelash|مژه‌های او دراز است.|muzhahā-ye ō darāz ast.|Her eyelashes are long.||
-733|پلک|pilk|noun|neutral|eyelid|پلک‌هایم سنگین شده‌اند.|pilkhāyam sangīn shuda-and.|My eyelids have become heavy.||
-734|لب|lab|noun|neutral|lip|لب‌هایم از سردی خشک شده‌اند.|labhāyam az sardī khushk shuda-and.|My lips are dry from the cold.||
-735|گلو|gūlō|noun|neutral|throat|گلویم درد می‌کند.|gūlōyam dard mēkunad.|My throat hurts.||
-736|گردن|gardan|noun|neutral|neck|گردنبند را در گردنش انداخت.|gardanband rā dar gardanash andākht.|She put the necklace around her neck.||
-737|ستون فقرات|sutūn-e faqarāt|noun|neutral|spine|ستون فقرات او آسیب دیده است.|sutūn-e faqarāt-e ō āsēb dīda ast.|His spine is injured.||
-738|قبرغه|qaburgha|noun|spoken|rib|قبرغه‌اش در تصادف شکست.|qaburgha-ash dar tasāduf shikast.|His rib broke in the accident.||دنده
-739|عضله|azala|noun|neutral|muscle|ورزش عضلات را قوی می‌سازد.|warzish azalāt rā qawī mēsāzad.|Exercise makes muscles strong.||
-740|مفصل|mafsal|noun|neutral|joint|مفصل زانوی او پندیده است.|mafsal-e zānō-ye ō pandīda ast.|His knee joint is swollen.||
-741|مغز|maghz|noun|neutral|brain|مغز انسان بسیار پیچیده است.|maghz-e insān bisyār pēchīda ast.|The human brain is very complex.||
-742|رگ|rag|noun|neutral|vein|داکتر رگ او را پیدا کرد.|dāktar rag-e ō rā paydā kard.|The doctor found his vein.||
-743|طرزالعمل|tarzul'amal|noun|neutral|recipe|طرزالعمل این غذا چیست؟|tarzul'amal-e īn ghazā chīst?|What is the recipe for this food?||
-744|مواد لازم|mawād-e lāzim|noun|neutral|ingredient|مواد لازم برای کیک را خریدم.|mawād-e lāzim barāye kayk rā kharīdam.|I bought the ingredients for the cake.||
-745|مصالح|masāla|noun|spoken|spices|در این غذا مصالح زیاد است.|dar īn ghazā masāla ziyād ast.|There are many spices in this food.||ادویه
-746|خمیر|khamīr|noun|neutral|dough|مادرم خمیر را آماده کرد.|mādaram khamīr rā āmāda kard.|My mother prepared the dough.||
-747|داش|dāsh|noun|spoken|oven|نان را در داش پختیم.|nān rā dar dāsh pukhtēm.|We baked the bread in the oven.||فر
-748|دیگ|dēg|noun|neutral|pot|دیگ روی اجاق است.|dēg rō-ye ujāq ast.|The pot is on the stove.||قابلمه
-749|تخم‌پزی|tukhmpazī|noun|spoken|pan|تخم‌ها را در تخم‌پزی سرخ کن.|tukhmhā rā dar tukhmpazī surkh kun.|Fry the eggs in the pan.||ماهیتابه
-750|کاسه|kāsa|noun|neutral|bowl|یک کاسه شوربا بیاور.|yak kāsa shōrbā biyāwar.|Bring a bowl of soup.||
-751|بشقاب|bushqāb|noun|neutral|plate|غذا را در بشقاب کشیدم.|ghazā rā dar bushqāb kashīdam.|I served the food on the plate.||
-752|پنجه|panja|noun|spoken|fork|با قاشق و پنجه غذا می‌خوریم.|bā qāshuq wa panja ghazā mēkhōrēm.|We eat with a spoon and fork.||چنگال
-753|قاشق|qāshuq|noun|neutral|spoon|برای خوردن سوپ قاشق ضرورت است.|barāye khōrdan-e sōp qāshuq zarūrat ast.|A spoon is needed to eat soup.||
-754|کارد|kārd|noun|neutral|knife|کارد بسیار تیز است.|kārd bisyār tēz ast.|The knife is very sharp.||چاقو
-755|سرخ کردن|surkh kardan|verb|neutral|to fry|کچالوها را در روغن سرخ کن.|kachālōhā rā dar rōghan surkh kun.|Fry the potatoes in oil.||سرخ کن
-756|جوشاندن|jōshāndan|verb|neutral|to boil|آب را برای چای جوشاند.|āb rā barāye chāy jōshānd.|He boiled the water for tea.||جوشان
-757|توته کردن|tōta kardan|verb|spoken|to chop|پیاز را توته کن.|piyāz rā tōta kun.|Chop the onion.||توته کن
-758|پوست کردن|pōst kardan|verb|neutral|to peel|من سیب را پوست می‌کنم.|man sēb rā pōst mēkunam.|I peel the apple.||پوست کن
-759|شور دادن|shōr dādan|verb|spoken|to stir|آش را شور بده تا نسوزد.|āsh rā shōr bida tā nasōzad.|Stir the soup so it doesn't burn.||شور ده
-760|گډول|gadowal|verb|spoken|to mix|مواد را با هم گډ کن.|mawād rā bā ham gad kun.|Mix the ingredients together.||گډ کن
-761|ترش|tursh|adjective|neutral|sour|این لیمو بسیار ترش است.|īn lēmō bisyār tursh ast.|This lemon is very sour.||
-762|تلخ|talkh|adjective|neutral|bitter|دوا تلخ بود اما خوردم.|dawā talkh būd ammā khōrdam.|The medicine was bitter but I took it.||
-763|تند|tund|adjective|neutral|spicy|غذاهای هندی تند هستند.|ghazāhā-ye hindī tund hastand.|Indian foods are spicy.||
-764|خام|khām|adjective|neutral|raw|گوشت هنوز خام است.|gōsht hanōz khām ast.|The meat is still raw.||
-765|گنده|ganda|adjective|spoken|rotten|سیب‌های گنده را دور بینداز.|sēbhā-ye ganda rā dōr binyandāz.|Throw away the rotten apples.||خراب
-766|طعم|ta'm|noun|neutral|flavor|طعم این غذا عالی است.|ta'm-e īn ghazā ālī ast.|The flavor of this food is excellent.||مزه
-767|اشتها|ishtihā|noun|neutral|appetite|من امروز هیچ اشتها ندارم.|man imrōz hēch ishtihā nadāram.|I have no appetite today.||
-768|اینترنت|intarnit|noun|neutral|internet|من از اینترنت استفاده می‌کنم.|man az intarnit istifāda mēkunum.|I use the internet.||
-769|کمپیوتر|kampyūtar|noun|neutral|computer|کمپیوتر من خراب است.|kampyūtar-i man kharāb ast.|My computer is broken.||
-770|نرم‌افزار|narm-afzār|noun|neutral|software|این نرم‌افزار جدید است.|īn narm-afzār jadīd ast.|This software is new.||
-771|صفحه نمایش|safha-yi namāyish|noun|neutral|screen|صفحه نمایش کلان است.|safha-yi namāyish kalān ast.|The screen is large.||
-772|باتری|batrī|noun|neutral|battery|باتری تیلیفون من خلاص شد.|batrī-yi tilifōn-i man khalās shud.|My phone's battery died.||بتری
-773|کیبورد|kībōrd|noun|neutral|keyboard|کیبورد لپ‌تاپم خراب است.|kībōrd-i laptāp-am kharāb ast.|My laptop keyboard is broken.||
-774|دانلود|dānlōd|noun|neutral|download|من یک فایل دانلود کردم.|man yak fāyl dānlōd kadum.|I downloaded a file.||
-775|فایل|fāyl|noun|neutral|file|این فایل مهم است.|īn fāyl muhim ast.|This file is important.||
-776|لینک|lēnk|noun|neutral|link|روی این لینک کلیک کنید.|rōy-i īn lēnk kilīk kunēd.|Click on this link.||
-777|شبکه|shabaka|noun|neutral|network|شبکه اینجا ضعیف است.|shabaka īnjā za'īf ast.|The network is weak here.||
-778|دستگاه|dastgāh|noun|neutral|device|این دستگاه چگونه کار می‌کند؟|īn dastgāh chigūna kār mēkuna?|How does this device work?||
-779|اتصال|ittisāl|noun|neutral|connection|اتصال اینترنت قطع شد.|ittisāl-i intarnit qat' shud.|The internet connection dropped.||
-780|رمز عبور|ramz-i ubūr|noun|neutral|password|رمز عبور خود را فراموش کردم.|ramz-i ubūr-i khud ra farāmōsh kadum.|I forgot my password.||
-781|حساب کاربری|hisāb-i kārbārī|noun|neutral|user account|من یک حساب کاربری جدید ساختم.|man yak hisāb-i kārbārī-yi jadīd sākhtum.|I created a new user account.||
-782|پیام|payām|noun|neutral|message|من برایت یک پیام روان کردم.|man barēt yak payām rawān kadum.|I sent you a message.||
-783|تماس تصویری|tamās-i taswīrī|noun|neutral|video call|ما تماس تصویری گرفتیم.|mā tamās-i taswīrī giriftēm.|We made a video call.||
-784|اپلیکیشن|aplīkēshan|noun|neutral|application|این اپلیکیشن رایگان است.|īn aplīkēshan rāygān ast.|This application is free.||برنامه
-785|بروزرسانی|burōz-rasānī|noun|neutral|update|نیاز به بروزرسانی دارد.|niyāz ba burōz-rasānī dāra.|It needs an update.||آپدیت
-786|دیتا|dētā|noun|neutral|data|دیتای من خلاص شده.|dētā-yi man khalās shuda.|My data is finished.||
-787|چارجر|chārjar|noun|neutral|charger|چارجر تیلیفون داری؟|chārjar-i tilifōn dārī?|Do you have a phone charger?||
-788|سیگنال|sīgnāl|noun|neutral|signal|اینجا سیگنال نیست.|īnjā sīgnāl nēst.|There is no signal here.||
-789|مرورگر|murūr-gar|noun|neutral|browser|کدام مرورگر را استفاده می‌کنی؟|kudām murūr-gar ra istifāda mēkunī?|Which browser do you use?||
-790|میکروفون|māykrōfūn|noun|neutral|microphone|میکروفون روشن است.|māykrōfūn rōshan ast.|The microphone is on.||
-791|اسپیکر|ispaykar|noun|neutral|speaker|صدای اسپیکر بلند است.|sadā-yi ispaykar buland ast.|The speaker's volume is loud.||بلندگو
-792|استاد|ustād|noun|neutral|professor, teacher|استاد ما بسیار مهربان است.|ustād-i mā bisyār mihrabān ast.|Our professor is very kind.||
-793|نمره|numra|noun|neutral|grade, score|نمره من در امتحان خوب بود.|numra-i man dar imtihān khūb būd.|My grade in the exam was good.||
-794|کار خانگی|kār-i khānagī|noun|neutral|homework|من کار خانگی خود را انجام دادم.|man kār-i khānagī-yi khud ra anjām dādum.|I did my homework.||
-795|مضمون|mazmūn|noun|neutral|subject, course|مضمون دلخواهت چیست؟|mazmūn-i dilkhwāh-it chīst?|What is your favorite subject?||
-796|سند|sanad|noun|neutral|degree, document|او سند لیسانس دارد.|ō sanad-i lēsāns dāra.|He has a bachelor's degree.||
-797|مطالعه کردن|mutāla'a kadan|verb|neutral|to study|من هر شب مطالعه می‌کنم.|man har shab mutāla'a mēkunum.|I study every night.||mutāla'a mēkun-
-798|تحقیق|tahqīq|noun|neutral|research|او مصروف تحقیق است.|ō masrūf-i tahqīq ast.|He is busy with research.||
-799|مقاله|maqāla|noun|neutral|article|من یک مقاله می‌نویسم.|man yak maqāla mēnawīsum.|I am writing an article.||
-800|قاموس|qāmūs|noun|neutral|dictionary|من از قاموس استفاده می‌کنم.|man az qāmūs istifāda mēkunum.|I use a dictionary.||لغت‌نامه
-801|گرامر|garāmar|noun|neutral|grammar|گرامر این زبان سخت است.|garāmar-i īn zabān sakht ast.|The grammar of this language is hard.||دستور زبان
-802|سمستر|simistar|noun|neutral|semester|این سمستر آخر من است.|īn simistar-i ākhir-i man ast.|This is my last semester.||
-803|کتاب درسی|kitāb-i darsī|noun|neutral|textbook|کتاب درسی را خریدم.|kitāb-i darsī ra kharīdum.|I bought the textbook.||
-804|لابراتوار|lābrātwār|noun|neutral|laboratory|ما در لابراتوار کار می‌کنیم.|mā dar lābrātwār kār mēkunēm.|We work in the laboratory.||آزمایشگاه
-805|فراغت|farāghat|noun|neutral|graduation|جشن فراغت فردا است.|jashn-i farāghat fardā ast.|The graduation party is tomorrow.||
-806|بورس تحصیلی|būrs-i tahsīlī|noun|neutral|scholarship|او بورس تحصیلی گرفت.|ō būrs-i tahsīlī girift.|He got a scholarship.||
-807|آزمون|āzmūn|noun|neutral|test|آزمون بسیار آسان بود.|āzmūn bisyār āsān būd.|The test was very easy.||
-808|کتابچه|kitābcha|noun|neutral|notebook|یک کتابچه جدید خریدم.|yak kitābcha-yi jadīd kharīdum.|I bought a new notebook.||
-809|تدریس کردن|tadrīs kadan|verb|neutral|to teach|او در مکتب تدریس می‌کند.|ō dar maktab tadrīs mēkuna.|He teaches at the school.||tadrīs mēkun-
-810|لکچر|lakchar|noun|neutral|lecture|لکچر استاد جالب بود.|lakchar-i ustād jālib būd.|The professor's lecture was interesting.||
-811|انستیتوت|institūt|noun|neutral|institute|من در انستیتوت زبان می‌خوانم.|man dar institūt zabān mēkhwānum.|I study language at the institute.||
-812|تعلیم و تربیه|ta'līm u tarbiya|noun|neutral|education|تعلیم و تربیه برای همه مهم است.|ta'līm u tarbiya barāyi hama muhim ast.|Education is important for everyone.||
-813|شهادت‌نامه|shuhādat-nāma|noun|neutral|certificate|شهادت‌نامه مکتب را گرفتم.|shuhādat-nāma-yi maktab ra giriftum.|I got my school certificate.||
-814|نقاشی|naqqāshī|noun|neutral|painting|این نقاشی زیبا است.|īn naqqāshī zēbā ast.|This painting is beautiful.||
-815|آله موسیقی|āla-yi mūsīqī|noun|neutral|instrument|کدام آله موسیقی را می‌نوازی؟|kudām āla-yi mūsīqī ra mēnawāzī?|Which instrument do you play?||
-816|تیاتر|tiyātar|noun|neutral|theater|ما به تیاتر رفتیم.|mā ba tiyātar raftēm.|We went to the theater.||
-817|گالری|gālarī|noun|neutral|gallery|گالری هنری باز است.|gālarī-yi hunarī bāz ast.|The art gallery is open.||
-818|نمایشگاه|namāyishgāh|noun|neutral|exhibition|نمایشگاه کتاب فردا است.|namāyishgāh-i kitāb fardā ast.|The book exhibition is tomorrow.||
-819|مجسمه‌سازی|mujassama-sāzī|noun|neutral|sculpture, sculpting|او در مجسمه‌سازی مهارت دارد.|ō dar mujassama-sāzī mahārat dāra.|He is skilled in sculpting.||
-820|طراحی|tarrāhī|noun|neutral|design|طراحی این خانه قشنگ است.|tarrāhī-yi īn khāna qashang ast.|The design of this house is beautiful.||دیزاین
-821|هنرمند|hunarmand|noun|neutral|artist|او یک هنرمند مشهور است.|ō yak hunarmand-i mashhūr ast.|He is a famous artist.||
-822|برس نقاشی|burus-i naqqāshī|noun|neutral|paintbrush|من یک برس نقاشی خریدم.|man yak burus-i naqqāshī kharīdum.|I bought a paintbrush.||
-823|بوم|būm|noun|neutral|canvas|او روی بوم نقاشی می‌کند.|ō rōy-i būm naqqāshī mēkuna.|He paints on canvas.||تاروپود
-824|رسم کردن|rasm kadan|verb|neutral|to draw|کودک یک گل رسم کرد.|kōdak yak gul rasm kad.|The child drew a flower.||rasm mēkun-
-825|عکاسی|akkāsī|noun|neutral|photography|عکاسی یک هنر است.|akkāsī yak hunar ast.|Photography is an art.||
-826|پرتره|purtrī|noun|neutral|portrait|او پرتره مرا کشید.|ō purtrī-yi mara kashīd.|He drew my portrait.||تصویر
-827|رمان|rumān|noun|neutral|novel|این رمان بسیار جالب است.|īn rumān bisyār jālib ast.|This novel is very interesting.||
-828|اجرا کردن|ijrā kadan|verb|neutral|to perform|او در کنسرت اجرا می‌کند.|ō dar kansart ijrā mēkuna.|He performs in the concert.||ijrā mēkun-
-829|کنسرت|kansart|noun|neutral|concert|تکت کنسرت را خریدی؟|tikit-i kansart ra kharīdī?|Did you buy the concert ticket?||
-830|صنایع دستی|sanāyi'-i dastī|noun|neutral|handicraft|افغانستان صنایع دستی زیبا دارد.|afghānistān sanāyi'-i dastī-yi zēbā dāra.|Afghanistan has beautiful handicrafts.||
-831|معماری|mi'mārī|noun|neutral|architecture|معماری این مسجد قدیمی است.|mi'mārī-yi īn masjid qadīmī ast.|The architecture of this mosque is old.||
-832|اخبار|akhbār|noun|neutral|news|من اخبار را شنیدم.|man akhbār ra shinīdum.|I heard the news.||
-833|روزنامه|rōznāma|noun|neutral|newspaper|پدرم روزنامه می‌خواند.|padar-am rōznāma mēkhwāna.|My father reads the newspaper.||
-834|مجله|majalla|noun|neutral|magazine|این مجله معلوماتی است.|īn majalla ma'lūmātī ast.|This magazine is informative.||
-835|تلویزیون|tilwīzyōn|noun|neutral|television|ما تلویزیون می‌بینیم.|mā tilwīzyōn mēbīnēm.|We are watching television.||
-836|رادیو|rādyō|noun|neutral|radio|در موتر رادیو گوش می‌دهم.|dar mōtar rādyō gōsh mētiyum.|I listen to the radio in the car.||
-837|کانال|kānāl|noun|neutral|channel|کدام کانال را تماشا می‌کنی؟|kudām kānāl ra tamāshā mēkunī?|Which channel are you watching?||
-838|مصاحبه|musāhiba|noun|neutral|interview|فردا مصاحبه کاری دارم.|fardā musāhiba-yi kārī dārum.|I have a job interview tomorrow.||
-839|گزارش|guzārish|noun|neutral|report|او یک گزارش آماده کرد.|ō yak guzārish āmāda kad.|He prepared a report.||
-840|نشرات|nasharāt|noun|neutral|broadcast|نشرات این شبکه خوب است.|nasharāt-i īn shabaka khūb ast.|The broadcast of this network is good.||
-841|اعلان|i'lān|noun|neutral|advertisement|من اعلان را در روزنامه دیدم.|man i'lān ra dar rōznāma dīdum.|I saw the advertisement in the newspaper.||تبلیغات
-842|شبکه‌های اجتماعی|shabaka-hā-yi ijtimā'ī|noun|neutral|social media|جوانان زیاد از شبکه‌های اجتماعی استفاده می‌کنند.|jawānān ziyād az shabaka-hā-yi ijtimā'ī istifāda mēkunand.|Young people use social media a lot.||
-843|سرخط|sar-khat|noun|neutral|headline|سرخط خبرها چیست؟|sar-khat-i khabar-hā chīst?|What are the news headlines?||
-844|رسانه‌ها|rasāna-hā|noun|neutral|media|رسانه‌ها نقش مهمی دارند.|rasāna-hā naqsh-i muhimmē dārand.|The media has an important role.||
-845|دنبال‌کننده|dunbāl-kunanda|noun|neutral|follower|او هزار دنبال‌کننده دارد.|ō hazār dunbāl-kunanda dāra.|He has a thousand followers.||فالوور
-846|نشر کردن|nashar kadan|verb|neutral|to publish|کتاب جدید خود را نشر کرد.|kitāb-i jadīd-i khud ra nashar kad.|He published his new book.||nashar mēkun-
-847|مطبوعات|matbū'āt|noun|neutral|press|آزادی مطبوعات مهم است.|āzādī-yi matbū'āt muhim ast.|Freedom of the press is important.||
-848|قسمت|qismat|noun|neutral|episode|قسمت اول سریال جالب بود.|qismat-i awwal-i siryāl jālib būd.|The first episode of the series was interesting.||
-849|سریال|siryāl|noun|neutral|series|من هر شب این سریال را می‌بینم.|man har shab īn siryāl ra mēbīnum.|I watch this series every night.||
-850|مستند|mustanad|noun|neutral|documentary|یک مستند درباره طبیعت دیدم.|yak mustanad dar bāra-yi tabī'at dīdum.|I watched a documentary about nature.||
-851|خبر عاجل|khabar-i 'ājil|noun|neutral|breaking news|خبر عاجل از تلویزیون پخش شد.|khabar-i 'ājil az tilwīzyōn pakhsh shud.|Breaking news was broadcast on TV.||
-852|بینندگان|bīnandagān|noun|neutral|audience, viewers|تعداد بینندگان زیاد است.|ta'dād-i bīnandagān ziyād ast.|The number of viewers is high.||
-853|چنل|chanāl|noun|neutral|channel|چنل یوتیوب من را سبسکرایب کنید.|chanāl-i yūtiyūb-i man ra sabskarāyb kunēd.|Subscribe to my YouTube channel.||
-854|ورزش|warzish|noun|neutral|sports, exercise|ورزش برای صحت مفید است.|warzish barāyi sihat mufīd ast.|Sports are good for health.||
-855|آب‌بازی|āb-bāzī|noun|neutral|swimming|ما برای آب‌بازی رفتیم.|mā barāyi āb-bāzī raftēm.|We went swimming.||شنا
-856|شطرنج|shatranj|noun|neutral|chess|من شطرنج بازی کردن را دوست دارم.|man shatranj bāzī kadan ra dōst dārum.|I like playing chess.||
-857|باغداری|bāghdārī|noun|neutral|gardening|پدرم به باغداری علاقه دارد.|padar-am ba bāghdārī alāqa dāra.|My father is interested in gardening.||
-858|آشپزی|āshpazī|noun|neutral|cooking|آشپزی مادر من عالی است.|āshpazī-yi mādar-i man ālī ast.|My mother's cooking is excellent.||
-859|کتاب‌خوانی|kitāb-khānī|noun|neutral|reading|کتاب‌خوانی ذهن را باز می‌کند.|kitāb-khānī zihn ra bāz mēkuna.|Reading opens the mind.||
-860|گیم زدن|gēm zadan|verb|spoken|to play video games|او تمام روز گیم می‌زند.|ō tamām-i rōz gēm mēzana.|He plays video games all day.||gēm mēzan-
-861|کلکسیون|kilaksyūn|noun|neutral|collection|من کلکسیون سکه دارم.|man kilaksyūn-i sikka dārum.|I have a coin collection.||
-862|کمپینگ|kampīng|noun|neutral|camping|ما آخر هفته به کمپینگ می‌رویم.|mā ākhir-i hafta ba kampīng mērawēm.|We are going camping this weekend.||خیمه زدن
-863|بایسکل‌رانی|bāyskil-rānī|noun|neutral|cycling|بایسکل‌رانی ورزش خوبی است.|bāyskil-rānī warzish-i khūbī ast.|Cycling is a good exercise.||
-864|یوگا|yōgā|noun|neutral|yoga|من هر صبح یوگا انجام می‌دهم.|man har subh yōgā anjām mētiyum.|I do yoga every morning.||
-865|نویسندگی|nawīsandagī|noun|neutral|writing|او به نویسندگی علاقه دارد.|ō ba nawīsandagī alāqa dāra.|He is interested in writing.||
-866|رقص|raqs|noun|neutral|dancing|آنها در محفل رقص کردند.|ānhā dar mahfil raqs kadand.|They danced at the party.||
-867|دوش|dawish|noun|neutral|running|من هر روز دوش می‌کنم.|man har rōz dawish mēkunum.|I go running every day.||
-868|ماهی‌گیری|māhī-gīrī|noun|neutral|fishing|ما برای ماهی‌گیری به دریا رفتیم.|mā barāyi māhī-gīrī ba daryā raftēm.|We went to the river for fishing.||
-869|پختن کیک|pukhtan-i kēk|noun|neutral|baking|پختن کیک کار آسانی است.|pukhtan-i kēk kār-i āsānī ast.|Baking a cake is an easy task.||
-870|رسامی|rassāmī|noun|neutral|drawing, sketching|رسامی او بسیار خوب است.|rassāmī-yi ō bisyār khūb ast.|His drawing is very good.||
-871|خیاطی|khayyātī|noun|neutral|sewing, tailoring|مادرم خیاطی می‌کند.|mādar-am khayyātī mēkuna.|My mother sews.||
-872|نجاری|najjārī|noun|neutral|woodworking, carpentry|او در کارگاه نجاری کار می‌کند.|ō dar kār-gāh-i najjārī kār mēkuna.|He works in a carpentry workshop.||
-873|صخره‌نوردی|sakhra-nawardī|noun|neutral|rock climbing|صخره‌نوردی ورزش خطرناکی است.|sakhra-nawardī warzish-i khatarnākī ast.|Rock climbing is a dangerous sport.||
-874|آوازخوانی|āwāz-khwānī|noun|neutral|singing|آوازخوانی او زیباست.|āwāz-khwānī-yi ō zēbā-st.|Her singing is beautiful.||
-875|چکش|chakush|noun|neutral|hammer|من با چکش میخ را زدم.|man bā chakush mēkh ra zadum.|I hit the nail with a hammer.||
-876|پیچ‌کش|pēch-kash|noun|neutral|screwdriver|پیچ‌کش را به من بده.|pēch-kash ra ba man bidi.|Give me the screwdriver.||
-877|رنچ|ranch|noun|neutral|wrench|برای این کار رنچ ضرورت داریم.|barāyi īn kār ranch zarūrat dārēm.|We need a wrench for this work.||آچار
-878|پلاس|palās|noun|neutral|pliers|با پلاس سیم را قطع کن.|bā palās sīm ra qat' kun.|Cut the wire with pliers.||
-879|اره|arra|noun|neutral|saw|او با اره چوب را برید.|ō bā arra chōb ra burīd.|He cut the wood with a saw.||
-880|میخ|mēkh|noun|neutral|nail|یک میخ در دیوار بکوب.|yak mēkh dar dēwār bukōb.|Hammer a nail into the wall.||
-881|پیچ|pēch|noun|neutral|screw|این پیچ شل شده است.|īn pēch shul shuda ast.|This screw is loose.||
-882|متر|mitr|noun|neutral|tape measure|طول اتاق را با متر اندازه بگیر.|tūl-i utāq ra bā mitr andāza bigīr.|Measure the length of the room with a tape measure.||
-883|برمه|barma|noun|neutral|drill|او با برمه دیوار را سوراخ کرد.|ō bā barma dēwār ra sūrākh kad.|He drilled a hole in the wall with a drill.||
-884|قیچی|qaychī|noun|neutral|scissors|تکه را با قیچی ببر.|tuka ra bā qaychī bubur.|Cut the cloth with scissors.||
-885|تبر|tabar|noun|neutral|axe|او با تبر هیزم می‌شکند.|ō bā tabar hēzum mēshikana.|He chops firewood with an axe.||
-886|زینه|zīna|noun|neutral|ladder, stairs|از زینه بالا برو.|az zīna bālā buru.|Go up the ladder.||
-887|گروپ دستی|grūp-i dastī|noun|neutral|flashlight|در تاریکی گروپ دستی روشن کن.|dar tārīkī grūp-i dastī rōshan kun.|Turn on the flashlight in the dark.||
-888|سریش|sirēsh|noun|neutral|glue|کاغذها را با سریش بچسپان.|kāghaz-hā ra bā sirēsh bichaspān.|Stick the papers with glue.||چسپ
-889|سطل|satl|noun|neutral|bucket|یک سطل آب بیاور.|yak satl-i āb biyāwar.|Bring a bucket of water.||
-890|ریسمان|rīsmān|noun|neutral|rope|ریسمان را محکم بگیر.|rīsmān ra muhkam bigīr.|Hold the rope tightly.||تناب
-891|سیم|sīm|noun|neutral|wire|این سیم برق است.|īn sīm-i barq ast.|This is an electrical wire.||لین
-892|بیل|bēl|noun|neutral|shovel|با بیل خاک را بردار.|bā bēl khāk ra bardār.|Remove the dirt with a shovel.||
-893|چنگک|changak|noun|neutral|rake, hook|برگ‌ها را با چنگک جمع کن.|barg-hā ra bā changak jam' kun.|Gather the leaves with a rake.||
-894|کراچی دستی|karāchī-yi dastī|noun|neutral|wheelbarrow|بار را در کراچی دستی بگذار.|bār ra dar karāchī-yi dastī bugzār.|Put the load in the wheelbarrow.||
-895|آب‌تراز|āb-tarāz|noun|neutral|level (tool)|نجار از آب‌تراز استفاده می‌کند.|najjār az āb-tarāz istifāda mēkuna.|The carpenter uses a level.||
-896|اسپانر|ispānar|noun|neutral|spanner, wrench|اسپانر را به من بده.|ispānar ra ba man bidi.|Give me the spanner.||رنچ
-897|تصمیم گرفتن|tasmīm giriftan|verb|neutral|to decide|من تصمیم گرفتم بروم.|man tasmīm giriftam birawam.|I decided to go.||تصمیم می‌گیرد
-898|مقایسه کردن|muqāyisa kardan|verb|neutral|to compare|لطفاً این دو را با هم مقایسه کنید.|lutfan īn dū rā bā ham muqāyisa kunēd.|Please compare these two together.||مقایسه می‌کند
-899|ثابت کردن|sābit kardan|verb|neutral|to prove|او بی‌گناهی خود را ثابت کرد.|ū bē-gunāhī-yi khud rā sābit kard.|He proved his innocence.||ثابت می‌کند
-900|موافقت کردن|muwāfiqat kardan|verb|neutral|to agree|من با نظر شما موافقت می‌کنم.|man bā nazar-i shumā muwāfiqat mēkunam.|I agree with your opinion.||موافقت می‌کند
-901|مخالفت کردن|mukhālifat kardan|verb|neutral|to disagree|آنها با این طرح مخالفت کردند.|ānhā bā īn tarh mukhālifat kardand.|They disagreed with this plan.||مخالفت می‌کند
-902|حدس زدن|hads zadan|verb|neutral|to guess|می‌توانی حدس بزنی چه اتفاقی افتاد؟|mētāwānī hads bizanī chi ittifāqī uftād?|Can you guess what happened?||حدس می‌زند
-903|باور کردن|bāwar kardan|verb|neutral|to believe|نمی‌توانم حرفت را باور کنم.|namētāwānam harf-at rā bāwar kunam.|I cannot believe your word.||باور می‌کند
-904|فراموش کردن|farāmōsh kardan|verb|neutral|to forget|آدرس را فراموش کردم.|ādras rā farāmōsh kardam.|I forgot the address.||فراموش می‌کند
-905|به یاد آوردن|ba yād āwurdan|verb|neutral|to remember|نام او را به یاد نمی‌آورم.|nām-i ū rā ba yād namēāwaram.|I do not remember his name.||به یاد می‌آورد
-906|تغییر دادن|taghyīr dādan|verb|neutral|to change (something)|باید برنامه را تغییر دهیم.|bāyad barnāma rā taghyīr dihēm.|We must change the schedule.||تغییر می‌دهد
-907|تبدیل شدن|tabdīl shudan|verb|neutral|to become/transform|آب به یخ تبدیل شد.|āb ba yakh tabdīl shud.|The water transformed into ice.||تبدیل می‌شود
-908|جستجو کردن|justujū kardan|verb|neutral|to search|پولیس کلید را جستجو می‌کند.|pōlīs kilīd rā justujū mēkunad.|The police are searching for the key.||جستجو می‌کند
-909|کشف کردن|kashf kardan|verb|neutral|to discover|آنها یک راه جدید کشف کردند.|ānhā yak rāh-i jadīd kashf kardand.|They discovered a new way.||کشف می‌کند
-910|حمایت کردن|himāyat kardan|verb|neutral|to support|خانواده‌ام از من حمایت می‌کنند.|khānawāda-am az man himāyat mēkunand.|My family supports me.||حمایت می‌کند
-911|تشویق کردن|tashwīq kardan|verb|neutral|to encourage|معلم دانش‌آموزان را تشویق کرد.|muallim dānish-āmōzān rā tashwīq kard.|The teacher encouraged the students.||تشویق می‌کند
-912|توهین کردن|tawhīn kardan|verb|neutral|to insult|لطفاً به کسی توهین نکنید.|lutfan ba kasē tawhīn nakunēd.|Please do not insult anyone.||توهین می‌کند
-913|احترام گذاشتن|ihtirām guzāshtan|verb|neutral|to respect|ما باید به بزرگان احترام بگذاریم.|mā bāyad ba buzurgān ihtirām biguzārēm.|We must respect the elders.||احترام می‌گذارد
-914|شکایت کردن|shikāyat kardan|verb|neutral|to complain|مشتری از غذا شکایت کرد.|mushtarī az ghazā shikāyat kard.|The customer complained about the food.||شکایت می‌کند
-915|پیشنهاد دادن|pēshnihād dādan|verb|neutral|to suggest/propose|دوستم پیشنهاد داد که به پارک برویم.|dōst-am pēshnihād dād ki ba pārk birawēm.|My friend suggested that we go to the park.||پیشنهاد می‌دهد
-916|توضیح دادن|tawzēh dādan|verb|neutral|to explain|می‌توانی این مشکل را توضیح دهی؟|mētāwānī īn mushkil rā tawzēh dihī?|Can you explain this problem?||توضیح می‌دهد
-917|توصیف کردن|tawsīf kardan|verb|neutral|to describe|آن منظره را توصیف کنید.|ān manzara rā tawsīf kunēd.|Describe that scenery.||توصیف می‌کند
-918|مقاومت کردن|muqāwimat kardan|verb|neutral|to resist|آنها در برابر دشمن مقاومت کردند.|ānhā dar barābar-i dushman muqāwimat kardand.|They resisted the enemy.||مقاومت می‌کند
-919|تسلیم شدن|taslīm shudan|verb|neutral|to surrender|دزد بالاخره تسلیم شد.|duzd bilākhira taslīm shud.|The thief finally surrendered.||تسلیم می‌شود
-920|تحمل کردن|tahammul kardan|verb|neutral|to tolerate|نمی‌توانم این درد را تحمل کنم.|namētāwānam īn dard rā tahammul kunam.|I cannot tolerate this pain.||تحمل می‌کند
-921|حل کردن|hal kardan|verb|neutral|to solve|باید این مسئله را حل کنیم.|bāyad īn mas'ala rā hal kunēm.|We must solve this issue.||حل می‌کند
-922|پیچیده کردن|pēchīda kardan|verb|neutral|to complicate|اوضاع را پیچیده نکنید.|awzā rā pēchīda nakunēd.|Do not complicate the situation.||پیچیده می‌کند
-923|نابود کردن|nābōd kardan|verb|neutral|to destroy|زلزله شهر را نابود کرد.|zilzila shahr rā nābōd kard.|The earthquake destroyed the city.||نابود می‌کند
-924|تعمیر کردن|ta'mīr kardan|verb|neutral|to repair|من موتر خود را تعمیر کردم.|man mōtar-i khud rā ta'mīr kardam.|I repaired my car.||تعمیر می‌کند
-925|ایجاد کردن|ījād kardan|verb|neutral|to create/establish|این شرکت فرصت‌های شغلی ایجاد کرد.|īn shirkat fursathā-yi shughlī ījād kard.|This company created job opportunities.||ایجاد می‌کند
-926|بررسی کردن|barrasī kardan|verb|neutral|to examine/investigate|داکتر بیمار را بررسی کرد.|dāktar bīmār rā barrasī kard.|The doctor examined the patient.||بررسی می‌کند
-927|تأیید کردن|ta'yīd kardan|verb|neutral|to confirm|رئیس این خبر را تأیید کرد.|ra'īs īn khabar rā ta'yīd kard.|The boss confirmed this news.||تأیید می‌کند
-928|انکار کردن|inkār kardan|verb|neutral|to deny|او اشتباه خود را انکار کرد.|ū ishtibāh-i khud rā inkār kard.|He denied his mistake.||انکار می‌کند
-929|اعتراف کردن|i'tirāf kardan|verb|neutral|to confess|متهم به جرم خود اعتراف کرد.|muttaham ba jurm-i khud i'tirāf kard.|The accused confessed to his crime.||اعتراف می‌کند
-930|پشیمان شدن|pashēmān shudan|verb|neutral|to regret|از گفته‌هایم پشیمان شدم.|az guftahā-yam pashēmān shudam.|I regretted my words.||پشیمان می‌شود
-931|خجالت کشیدن|khijālat kashīdan|verb|neutral|to be embarrassed/ashamed|از اشتباهم خجالت کشیدم.|az ishtibāh-am khijālat kashīdam.|I was embarrassed by my mistake.||خجالت می‌کشد
-932|نگران بودن|nigarān būdan|verb|neutral|to be worried|مادرم برایم نگران بود.|mādar-am barāy-am nigarān būd.|My mother was worried about me.||نگران است
-933|آرام شدن|ārām shudan|verb|neutral|to calm down|لطفاً آرام شوید و گوش دهید.|lutfan ārām shawēd wa gōsh dihēd.|Please calm down and listen.||آرام می‌شود
-934|هیجان‌زده شدن|hayajān-zada shudan|verb|neutral|to get excited|کودکان بسیار هیجان‌زده شدند.|kōdakān bisyār hayajān-zada shudand.|The children got very excited.||هیجان‌زده می‌شود
-935|ناامید شدن|nā-umēd shudan|verb|neutral|to become disappointed|او از نتیجه ناامید شد.|ū az natīja nā-umēd shud.|He became disappointed with the result.||ناامید می‌شود
-936|امیدوار بودن|umēdwār būdan|verb|neutral|to be hopeful|به آینده روشن امیدوار هستم.|ba āyanda-yi rawshan umēdwār hastam.|I am hopeful for a bright future.||امیدوار است
-937|تعجب کردن|ta'ajjub kardan|verb|neutral|to be surprised|از دیدن او تعجب کردم.|az dīdan-i ū ta'ajjub kardam.|I was surprised to see him.||تعجب می‌کند
-938|فریاد زدن|faryād zadan|verb|neutral|to shout/scream|چرا فریاد می‌زنی؟|charā faryād mēzanī?|Why are you shouting?||فریاد می‌زند
-939|زمزمه کردن|zamzama kardan|verb|neutral|to whisper|او چیزی در گوشم زمزمه کرد.|ū chīzē dar gōsh-am zamzama kard.|He whispered something in my ear.||زمزمه می‌کند
-940|خیره شدن|khīra shudan|verb|neutral|to stare|به تصویر خیره شدم.|ba taswīr khīra shudam.|I stared at the picture.||خیره می‌شود
-941|اشاره کردن|ishāra kardan|verb|neutral|to point/indicate|به ساختمان اشاره کرد.|ba sākhtamān ishāra kard.|He pointed to the building.||اشاره می‌کند
-942|لمس کردن|lams kardan|verb|neutral|to touch|لطفاً نقاشی را لمس نکنید.|lutfan naqqāshī rā lams nakunēd.|Please do not touch the painting.||لمس می‌کند
-943|احساس کردن|ihsās kardan|verb|neutral|to feel|احساس سردی می‌کنم.|ihsās-i sardī mēkunam.|I feel cold.||احساس می‌کند
-944|بوییدن|bōyīdan|verb|neutral|to smell|گل‌ها را بوییدم.|gulhā rā bōyīdam.|I smelled the flowers.||می‌بوید
-945|جویدن|jawīdan|verb|neutral|to chew|غذا را خوب بجوید.|ghazā rā khūb bijawēd.|Chew your food well.||می‌جود
-946|بلعیدن|bal'īdan|verb|neutral|to swallow|دوای خود را به سختی بلعید.|dawā-yi khud rā ba sakhtī bal'īd.|He swallowed his medicine with difficulty.||می‌بلعد
-947|نفس کشیدن|nafas kashīdan|verb|neutral|to breathe|عمیق نفس بکشید.|amīq nafas bikashēd.|Breathe deeply.||نفس می‌کشد
-948|سرفه کردن|surfa kardan|verb|neutral|to cough|او تمام شب سرفه می‌کرد.|ū tamām-i shab surfa mēkard.|He was coughing all night.||سرفه می‌کند
-949|عطسه کردن|atsa kardan|verb|neutral|to sneeze|وقتی مریض می‌شوم، زیاد عطسه می‌کنم.|waqtī marēz mēshawam, ziyād atsa mēkunam.|When I get sick, I sneeze a lot.||عطسه می‌کند
-950|خمیازه کشیدن|khamyāza kashīdan|verb|neutral|to yawn|از خستگی خمیازه کشید.|az khastagī khamyāza kashīd.|He yawned out of tiredness.||خمیازه می‌کشد
-951|چرت زدن|churt zadan|verb|neutral|to nap|بعد از ظهرها چرت می‌زنم.|ba'd az zuhr-hā churt mēzanam.|I nap in the afternoons.||چرت می‌زند
-952|استراحت کردن|istirāhat kardan|verb|neutral|to rest|بعد از کار استراحت کردم.|ba'd az kār istirāhat kardam.|I rested after work.||استراحت می‌کند
-953|خسته شدن|khasta shudan|verb|neutral|to get tired|از پیاده‌روی خسته شدم.|az piyāda-rawī khasta shudam.|I got tired from walking.||خسته می‌شود
-954|انرژی گرفتن|inirzhī giriftan|verb|neutral|to gain energy|با خوردن میوه انرژی گرفتم.|bā khurdan-i mēwa inirzhī giriftam.|I gained energy by eating fruit.||انرژی می‌گیرد
-955|ورزش کردن|warzish kardan|verb|neutral|to exercise|هر روز صبح ورزش می‌کنم.|har rōz subh warzish mēkunam.|I exercise every morning.||ورزش می‌کند
-956|مراقبت کردن|murāqibat kardan|verb|neutral|to take care of|از مریض مراقبت کرد.|az marēz murāqibat kard.|She took care of the patient.||مراقبت می‌کند
-957|استفاده کردن|istifāda kardan|verb|neutral|to use|از کامپیوتر استفاده می‌کنم.|az kāmpīyūtar istifāda mēkunam.|I use the computer.||استفاده می‌کند
-958|ادامه دادن|idāma dādan|verb|neutral|to continue|ما باید به راه خود ادامه دهیم.|mā bāyad ba rāh-i khud idāma dihēm.|We must continue our way.||ادامه می‌دهد
-959|متوقف کردن|mutawaqqif kardan|verb|neutral|to stop (something)|پولیس موتر را متوقف کرد.|pōlīs mōtar rā mutawaqqif kard.|The police stopped the car.||متوقف می‌کند
-960|تصادف کردن|tasāduf kardan|verb|neutral|to crash/collide|دو موتر با هم تصادف کردند.|dū mōtar bā ham tasāduf kardand.|Two cars collided with each other.||تصادف می‌کند
-961|تأخیر داشتن|ta'khīr dāshtan|verb|neutral|to be delayed|پرواز یک ساعت تأخیر دارد.|parwāz yak sā'at ta'khīr dārad.|The flight is delayed by one hour.||تأخیر دارد
-962|لغو کردن|laghwa kardan|verb|neutral|to cancel|جلسه را لغو کردیم.|jalasa rā laghwa kardēm.|We canceled the meeting.||لغو می‌کند
-963|برگزار کردن|barguzār kardan|verb|neutral|to hold/organize (an event)|آنها یک مهمانی برگزار کردند.|ānhā yak mihmānī barguzār kardand.|They held a party.||برگزار می‌کند
-964|شرکت کردن|shirkat kardan|verb|neutral|to participate|در مسابقه شرکت کردم.|dar musābiqa shirkat kardam.|I participated in the competition.||شرکت می‌کند
-965|تمرکز کردن|tamarkuz kardan|verb|neutral|to focus|نمی‌توانم روی کارم تمرکز کنم.|namētāwānam rōy-i kār-am tamarkuz kunam.|I cannot focus on my work.||تمرکز می‌کند
-966|پیچیده|pēchīda|adjective|neutral|complicated|این مسئله بسیار پیچیده است.|īn mas'ala bisyār pēchīda ast.|This issue is very complicated.||
-967|دشوار|dushwār|adjective|neutral|difficult/arduous|آزمون امروز دشوار بود.|āzmōn-i imrōz dushwār būd.|Today's exam was difficult.||
-968|مضر|muzir|adjective|neutral|harmful|سگرت کشیدن برای صحت مضر است.|sigrit kashīdan barāyi sihat muzir ast.|Smoking is harmful to health.||
-969|باارزش|bā-arzish|adjective|neutral|valuable|این انگشتر بسیار باارزش است.|īn angushtar bisyār bā-arzish ast.|This ring is very valuable.||
-970|بی‌اهمیت|bē-ahammiyat|adjective|neutral|unimportant|این موضوع برای من بی‌اهمیت است.|īn mawzō' barāyi man bē-ahammiyat ast.|This matter is unimportant to me.||
-971|خسته‌کننده|khasta-kunanda|adjective|neutral|boring/tiring|فیلم خسته‌کننده‌ای بود.|fīlm-i khasta-kunanda-ē būd.|It was a boring movie.||
-972|عجیب|ajīb|adjective|neutral|strange/weird|صدای عجیبی شنیدم.|sadā-yi ajībī shunīdam.|I heard a strange sound.||
-973|معمولی|ma'mūlī|adjective|neutral|ordinary/regular|این یک روز معمولی است.|īn yak rōz-i ma'mūlī ast.|This is an ordinary day.||
-974|منحصر|munhasir|adjective|neutral|unique|طراحی این ساختمان منحصر به فرد است.|tarrāhī-yi īn sākhtamān munhasir ba fard ast.|The design of this building is unique.||
-975|عمومی|umūmī|adjective|neutral|public/general|این یک پارک عمومی است.|īn yak pārk-i umūmī ast.|This is a public park.||
-976|خصوصی|khusūsī|adjective|neutral|private|این یک مکالمه خصوصی است.|īn yak mukālima-yi khusūsī ast.|This is a private conversation.||
-977|ناموفق|nā-muwaffaq|adjective|neutral|unsuccessful|تلاش او ناموفق بود.|talāsh-i ū nā-muwaffaq būd.|His attempt was unsuccessful.||
-978|ثروتمند|sarwatmand|adjective|neutral|wealthy|او یک تاجر ثروتمند است.|ū yak tājir-i sarwatmand ast.|He is a wealthy businessman.||
-979|سخاوتمند|sakhāwatmand|adjective|neutral|generous|پدرم مرد سخاوتمندی است.|padar-am mard-i sakhāwatmandī ast.|My father is a generous man.||
-980|خسیس|khasīs|adjective|neutral|stingy/miserly|او آنقدر خسیس است که چیزی نمی‌خرد.|ū ānqadar khasīs ast ki chīzē namēkharad.|He is so stingy that he doesn't buy anything.||
-981|ظالم|zālim|adjective|neutral|cruel/oppressive|پادشاه ظالم بود.|pādshāh zālim būd.|The king was cruel.||
-982|دلیر|dalēr|adjective|neutral|brave/valiant|سربازان دلیر جنگیدند.|sarbāzān-i dalēr jangīdand.|The valiant soldiers fought.||
-983|ترسو|tarsō|adjective|neutral|cowardly|او یک آدم ترسو است.|ū yak ādam-i tarsō ast.|He is a cowardly person.||
-984|زیرک|zērak|adjective|neutral|clever/astute|دانش‌آموز زیرک سوالات را حل کرد.|dānish-āmōz-i zērak suwālāt rā hal kard.|The clever student solved the questions.||
-985|احمقانه|ahmaqāna|adjective|neutral|foolish/stupid|این یک تصمیم احمقانه بود.|īn yak tasmīm-i ahmaqāna būd.|This was a foolish decision.||
-986|صبور|sabūr|adjective|neutral|patient|معلم باید صبور باشد.|muallim bāyad sabūr bāshad.|A teacher must be patient.||
-987|عجول|ajūl|adjective|neutral|hasty/impatient|در تصمیم‌گیری عجول نباش.|dar tasmīm-gīrī ajūl nabāsh.|Do not be hasty in decision-making.||
-988|مضطرب|muztarib|adjective|neutral|anxious|قبل از امتحان مضطرب بودم.|qabl az imtihān muztarib būdam.|I was anxious before the exam.||
-989|بی‌تفاوت|bē-tafāwut|adjective|neutral|indifferent|او نسبت به مشکلات بی‌تفاوت است.|ū nisbat ba mushkilāt bē-tafāwut ast.|He is indifferent to the problems.||
-990|مطمئن|mutma'in|adjective|neutral|sure/certain|من کاملاً مطمئن هستم.|man kāmilān mutma'in hastam.|I am completely sure.||
-991|مشکوک|mashkūk|adjective|neutral|suspicious|رفتار او مشکوک به نظر می‌رسید.|raftār-i ū mashkūk ba nazar mērasīd.|His behavior seemed suspicious.||
-992|گناهکار|gunāhkār|adjective|neutral|guilty|قاضی او را گناهکار شناخت.|qāzī ū rā gunāhkār shinākht.|The judge found him guilty.||
-993|بی‌گناه|bē-gunāh|adjective|neutral|innocent|مرد بی‌گناه آزاد شد.|mard-i bē-gunāh āzād shud.|The innocent man was released.||
-994|صادق|sādiq|adjective|neutral|honest|او یک دوست صادق است.|ū yak dōst-i sādiq ast.|He is an honest friend.||
-995|دروغگو|durōghgō|adjective|neutral|liar/deceitful|نباید به آدم دروغگو اعتماد کرد.|nabāyad ba ādam-i durōghgō i'timād kard.|One should not trust a deceitful person.||
-996|وفادار|wafādār|adjective|neutral|loyal|سگ یک حیوان وفادار است.|sag yak haywān-i wafādār ast.|A dog is a loyal animal.||
-997|خیانتکار|khiyānatkār|adjective|neutral|traitorous|مرد خیانتکار دستگیر شد.|mard-i khiyānatkār dastgīr shud.|The traitorous man was arrested.||
-998|مستقل|mustaqil|adjective|neutral|independent|او یک زن مستقل است.|ū yak zan-i mustaqil ast.|She is an independent woman.||
-999|وابسته|wābasta|adjective|neutral|dependent|اقتصاد به نفت وابسته است.|iqtisād ba naft wābasta ast.|The economy is dependent on oil.||
-1000|نیرومند|nērōmand|adjective|neutral|powerful|ورزشکار بسیار نیرومند است.|warzishkār bisyār nērōmand ast.|The athlete is very powerful.||
-1001|ضعیف|za'īf|adjective|neutral|weak|بیمار احساس ضعیف بودن می‌کرد.|bīmār ihsās-i za'īf būdan mēkard.|The patient felt weak.||
-1002|سالم|sālim|adjective|neutral|healthy|غذاهای سالم بخورید.|ghazāhā-yi sālim bukhurēd.|Eat healthy foods.||
-1003|بیمار|bīmār|adjective|neutral|sick/ill|کودک بیمار در شفاخانه است.|kōdak-i bīmār dar shafākhāna ast.|The sick child is in the hospital.||
-1004|پرانرژی|pur-inirzhī|adjective|neutral|energetic|او همیشه پرانرژی است.|ū hamēsha pur-inirzhī ast.|He is always energetic.||
-1005|خواب‌آلود|khwāb-ālūda|adjective|neutral|sleepy|هنگام رانندگی خواب‌آلود بودم.|hangām-i rānandagī khwāb-ālūda būdam.|I was sleepy while driving.||
-1006|پاکیزه|pākēza|adjective|neutral|immaculate/clean|اتاق او همیشه پاکیزه است.|utāq-i ū hamēsha pākēza ast.|His room is always immaculate.||
-1007|آلوده|ālūda|adjective|neutral|polluted|هوای شهر آلوده است.|hawā-yi shahr ālūda ast.|The city's air is polluted.||
-1008|مرتب|murattab|adjective|neutral|tidy/organized|میز کارش مرتب است.|mēz-i kār-ash murattab ast.|His desk is tidy.||
-1009|نامرتب|nā-murattab|adjective|neutral|untidy/messy|اتاق بچه‌ها نامرتب بود.|utāq-i bachahā nā-murattab būd.|The children's room was untidy.||
-1010|خیره‌کننده|khīra-kunanda|adjective|neutral|stunning|منظره‌ای خیره‌کننده داشت.|manzara-ē khīra-kunanda dāsht.|It had a stunning view.||
-1011|زشت|zisht|adjective|neutral|ugly|آن ساختمان زشت است.|ān sākhtamān zisht ast.|That building is ugly.||
-1012|جذاب|jāzzāb|adjective|neutral|attractive|طراحی آن جذاب است.|tarrāhī-yi ān jāzzāb ast.|Its design is attractive.||
-1013|مرتفع|murtafi'|adjective|neutral|elevated/high|کوه‌های مرتفع افغانستان زیبا هستند.|kōh-hā-yi murtafi'-i afghānistān zēbā hastand.|The high mountains of Afghanistan are beautiful.||
-1014|عمیق|amīq|adjective|neutral|deep|دریاچه بسیار عمیق است.|daryācha bisyār amīq ast.|The lake is very deep.||
-1015|پهن|pahn|adjective|neutral|wide|سرک اصلی پهن است.|sarak-i aslī pahn ast.|The main road is wide.||
-1016|باریک|bārīk|adjective|neutral|narrow|این کوچه خیلی باریک است.|īn kōcha khailī bārīk ast.|This alley is very narrow.||
-1017|سبک|subuk|adjective|neutral|light (weight)|این بکس سبک است.|īn baks subuk ast.|This bag is light.||
-1018|مشخص|mushakkhas|adjective|neutral|specific/clear|دلیل مشخصی برای این کار وجود دارد.|dalīl-i mushakkhasī barāyi īn kār wujūd dārad.|There is a specific reason for this.||
-1019|پنهانی|pinhānī|adjective|neutral|secret/hidden|او یک نقشه پنهانی داشت.|ū yak naqsha-yi pinhānī dāsht.|He had a secret plan.||
-1020|ناشناخته|nā-shinākhta|adjective|neutral|unknown|این بیماری هنوز ناشناخته است.|īn bēmārī hanōz nā-shinākhta ast.|This disease is still unknown.||
-1021|پرتلاش|pur-talāsh|adjective|neutral|hardworking|او کارمند پرتلاشی است.|ū kārmand-i pur-talāshī ast.|He is a hardworking employee.||
-1022|تنبلی کردن|tambalī kardan|verb|neutral|to be lazy|در انجام تکالیف تنبلی نکنید.|dar anjām-i takālīf tambalī nakunēd.|Do not be lazy in doing your homework.||تنبلی می‌کند
-1023|مجبور کردن|majbūr kardan|verb|neutral|to force/compel|مرا مجبور به رفتن کرد.|marā majbūr ba raftan kard.|He forced me to go.||مجبور می‌کند
-1024|متعجب|muta'ajjib|adjective|neutral|astonished|از شنیدن این خبر متعجب شدم.|az shunīdan-i īn khabar muta'ajjib shudam.|I was astonished to hear this news.||
-1025|کنجکاو|kunjkāw|adjective|neutral|curious|کودک نسبت به همه چیز کنجکاو است.|kōdak nisbat ba hama chīz kunjkāw ast.|The child is curious about everything.||
-1026|مغرور|maghrūr|adjective|neutral|arrogant|آدم مغروری است و دوستان کمی دارد.|ādam-i maghrūrī ast wa dōstān-i kamī dārad.|He is an arrogant person and has few friends.||
-1027|متواضع|mutawāzi'|adjective|neutral|humble|با وجود موفقیت، او بسیار متواضع است.|bā wujūd-i muwaffaqiyat, ū bisyār mutawāzi' ast.|Despite his success, he is very humble.||
-1028|شرمنده|sharmanda|adjective|neutral|ashamed|من از رفتارم شرمنده هستم.|man az raftār-am sharmanda hastam.|I am ashamed of my behavior.||
-1029|غافلگیر|ghāfilgīr|adjective|neutral|surprised/caught off guard|با دیدن هدیه غافلگیر شدم.|bā dīdan-i hadiya ghāfilgīr shudam.|I was surprised upon seeing the gift.||
-1030|منطقی|mantiqī|adjective|neutral|logical|این یک استدلال منطقی است.|īn yak istidlāl-i mantiqī ast.|This is a logical argument.||
-1031|غیرمنطقی|ghayr-i mantiqī|adjective|neutral|illogical|تصمیم او غیرمنطقی بود.|tasmīm-i ū ghayr-i mantiqī būd.|His decision was illogical.||
-1032|واقعی|wāqi'ī|adjective|neutral|real/actual|داستان بر اساس رویدادهای واقعی است.|dāstān bar asās-i rōydādhā-yi wāqi'ī ast.|The story is based on real events.||
-1033|مصنوعی|masnū'ī|adjective|neutral|artificial|این گل‌ها مصنوعی هستند.|īn gulhā masnū'ī hastand.|These flowers are artificial.||
-1034|مفید|mufīd|adjective|neutral|useful/beneficial|این کتاب اطلاعات مفیدی دارد.|īn kitāb ittilā'āt-i mufīdī dārad.|This book has useful information.||
-1035|لذت بردن|lazzat burdan|verb|neutral|to enjoy|از موسیقی کلاسیک لذت می‌برم.|az mōsīqī-yi kilāsīk lazzat mēbaram.|I enjoy classical music.||لذت می‌برد
-1036|آرزو کردن|ārzō kardan|verb|neutral|to wish|برایت موفقیت آرزو می‌کنم.|barāy-at muwaffaqiyat ārzō mēkunam.|I wish you success.||آرزو می‌کند
-1037|رد شدن|rad shudan|verb|neutral|to fail/be rejected|در امتحان رانندگی رد شدم.|dar imtihān-i rānandagī rad shudam.|I failed the driving test.||رد می‌شود
-1038|پنهان شدن|pinhān shudan|verb|neutral|to hide (oneself)|پشت درخت پنهان شدم.|pusht-i dirakht pinhān shudam.|I hid behind the tree.||پنهان می‌شود
-1039|خاطرنشان کردن|khātir-nishān kardan|verb|neutral|to point out/remind|رئیس اهمیت پروژه را خاطرنشان کرد.|ra'īs ahammiyat-i purōzha rā khātir-nishān kard.|The boss pointed out the importance of the project.||خاطرنشان می‌کند
-1040|امید|umēd|noun|neutral|hope|او همیشه به آینده امید دارد.|ō hamēsha ba āyanda umēd dārad.|He always has hope for the future.||
-1041|عدالت|adālat|noun|neutral|justice|عدالت باید تأمین شود.|adālat bāyad ta'mīn shawad.|Justice must be secured.||
-1042|پیروزی|pērōzī|noun|neutral|victory|تیم ما به پیروزی رسید.|tīm-i mā ba pērōzī rasīd.|Our team achieved victory.||
-1043|شکست|shikast|noun|neutral|defeat|آنها شکست را قبول نکردند.|ānhā shikast rā qabūl nakardand.|They did not accept defeat.||
-1044|موفقیت|muwaffaqiyat|noun|neutral|success|موفقیت تو باعث افتخار من است.|muwaffaqiyat-i tu bā'is-i iftikhār-i man ast.|Your success makes me proud.||
-1045|تجربه|tajruba|noun|neutral|experience|او تجربه زیادی در کار دارد.|ō tajruba-i ziyādī dar kār dārad.|He has a lot of experience in work.||
-1046|تصمیم|tasmīm|noun|neutral|decision|من تصمیم خود را گرفتم.|man tasmīm-i khud rā giriftam.|I made my decision.||
-1047|هدف|hadaf|noun|neutral|goal|هدف او کمک به مردم است.|hadaf-i ō kumak ba mardum ast.|His goal is to help people.||
-1048|پیشرفت|pēshraft|noun|neutral|progress|اقتصاد کشور پیشرفت کرده است.|iqtisād-i kishwar pēshraft karda ast.|The country's economy has progressed.||
-1049|تغییر|taghīr|noun|neutral|change|تغییر همیشه خوب نیست.|taghīr hamēsha khūb nēst.|Change is not always good.||
-1050|آینده|āyanda|noun|neutral|future|ما به آینده امیدوار هستیم.|mā ba āyanda umēdwār hastēm.|We are hopeful for the future.||
-1051|گذشته|guzashta|noun|neutral|past|به گذشته فکر نکن.|ba guzashta fikr nakun.|Do not think about the past.||
-1052|حقیقت|haqīqat|noun|neutral|truth|حقیقت روزی روشن می‌شود.|haqīqat rōzē rawshan mēshawad.|The truth will come to light one day.||
-1053|دروغ|durōgh|noun|neutral|lie|دروغ گفتن کار بدی است.|durōgh guftan kār-i badī ast.|Telling a lie is a bad thing.||
-1054|افتخار|iftikhār|noun|neutral|pride|او مایه افتخار ماست.|ō māya-i iftikhār-i māst.|He is our source of pride.||
-1055|احترام|ihtirām|noun|neutral|respect|احترام به والدین واجب است.|ihtirām ba wālidayn wājib ast.|Respect for parents is obligatory.||
-1056|اعتماد|i'timād|noun|neutral|trust|من به تو اعتماد دارم.|man ba tu i'timād dāram.|I trust you.||
-1057|امنیت|amniyat|noun|neutral|security|امنیت در شهر برقرار است.|amniyat dar shahr barqarār ast.|Security is established in the city.||
-1058|خطر|khatar|noun|neutral|danger|این کار خطر دارد.|īn kār khatar dārad.|This work has danger.||
-1059|فرصت|fursat|noun|neutral|opportunity|این یک فرصت عالی است.|īn yak fursat-i ālī ast.|This is a great opportunity.||
-1060|فایده|fāyda|noun|neutral|benefit|این دارو فایده ندارد.|īn dārū fāyda nadārad.|This medicine has no benefit.||
-1061|ضرر|zarar|noun|neutral|harm|سیگار کشیدن ضرر دارد.|sīgār kashīdan zarar dārad.|Smoking is harmful.||
-1062|توانایی|tawānā'ī|noun|neutral|ability|او توانایی انجام این کار را دارد.|ō tawānā'ī-yi anjām-i īn kār rā dārad.|He has the ability to do this work.||
-1063|مهارت|mahārat|noun|neutral|skill|رانندگی نیاز به مهارت دارد.|rānandagī niyāz ba mahārat dārad.|Driving requires skill.||
-1064|دانش|dānish|noun|neutral|knowledge|دانش قدرت است.|dānish qudrat ast.|Knowledge is power.||
-1065|ارزش|arzish|noun|neutral|value|وقت ارزش زیادی دارد.|waqt arzish-i ziyādī dārad.|Time has a lot of value.||
-1066|کیفیت|kayfiyat|noun|neutral|quality|کیفیت این لباس خوب است.|kayfiyat-i īn libās khūb ast.|The quality of this dress is good.||
-1067|کمیت|kamiyat|noun|neutral|quantity|کمیت مهم نیست، کیفیت مهم است.|kamiyat muhim nēst, kayfiyat muhim ast.|Quantity is not important, quality is important.||
-1068|وضعیت|waz'iyat|noun|neutral|situation|وضعیت هوا امروز بهتر است.|waz'iyat-i hawā imrōz bihtar ast.|The weather situation is better today.||
-1069|شرایط|sharāyit|noun|neutral|conditions|شرایط زندگی سخت شده است.|sharāyit-i zindagī sakht shuda ast.|Living conditions have become difficult.||
-1070|دلیل|dalēl|noun|neutral|reason|دلیل این کار چیست؟|dalēl-i īn kār chēst?|What is the reason for this action?||
-1071|نتیجه|natija|noun|neutral|result|نتیجه امتحان فردا اعلان می‌شود.|natija-i imtihān fardā i'lān mēshawad.|The result of the exam will be announced tomorrow.||
-1072|تأثیر|ta'sīr|noun|neutral|effect|این حرف روی او تأثیر گذاشت.|īn harf rōy-i ō ta'sīr guzāsht.|This statement had an effect on him.||
-1073|احساس|ihsās|noun|neutral|feeling|احساس خستگی می‌کنم.|ihsās-i khastagī mēkunam.|I have a feeling of tiredness.||
-1074|عاطفه|ātifa|noun|neutral|emotion|انسان با عاطفه است.|insān bā ātifa ast.|Humans have emotions.||
-1075|شجاعت|shujā'at|noun|neutral|bravery|سرباز شجاعت نشان داد.|sarbāz shujā'at nishān dād.|The soldier showed bravery.||
-1076|خشم|khashm|noun|neutral|anger|او خشم خود را کنترل کرد.|ō khashm-i khud rā kuntrōl kard.|He controlled his anger.||
-1077|شادی|shādī|noun|neutral|happiness|عروسی با شادی برگزار شد.|arūsī bā shādī barguzār shud.|The wedding was held with happiness.||
-1078|غم|gham|noun|neutral|sorrow|غم بزرگی در دل دارد.|gham-i buzurgē dar dil dārad.|He has a great sorrow in his heart.||
-1079|آرامش|ārāmish|noun|neutral|calmness|آرامش خود را حفظ کنید.|ārāmish-i khud rā hifz kunēd.|Keep your calmness.||
-1080|اضطراب|iztirāb|noun|neutral|anxiety|قبل از امتحان اضطراب داشتم.|qabl az imtihān iztirāb dāshtam.|I had anxiety before the exam.||
-1081|عجله|ajala|noun|neutral|haste|در کار عجله نکنید.|dar kār ajala nakunēd.|Do not make haste in work.||
-1082|نیاز|niyāz|noun|neutral|need|من به کمک تو نیاز دارم.|man ba kumak-i tu niyāz dāram.|I have a need for your help.||
-1083|استعداد|isti'dād|noun|neutral|talent|او استعداد نقاشی دارد.|ō isti'dād-i naqqāshī dārad.|He has a talent for painting.||
-1084|غرور|ghurūr|noun|neutral|pride|غرور زیاد خوب نیست.|ghurūr-i ziyād khūb nēst.|Too much pride is not good.||
-1085|اراده|irāda|noun|neutral|will|او اراده قوی دارد.|ō irāda-i qawī dārad.|He has a strong will.||
-1086|تلاش|talāsh|noun|neutral|effort|برای موفقیت تلاش کن.|barāy-i muwaffaqiyat talāsh kun.|Make an effort for success.||
-1087|حق|haq|noun|neutral|right|این حق قانونی من است.|īn haq-i qānūnī-yi man ast.|This is my legal right.||
-1088|وظیفه|wazīfa|noun|neutral|duty|این وظیفه توست.|īn wazīfa-i tust.|This is your duty.||
-1089|انتخاب|intikhāb|noun|neutral|choice|این انتخاب خودم بود.|īn intikhāb-i khudam būd.|This was my own choice.||
-1090|آگاهی|āgāhī|noun|neutral|awareness|آگاهی مردم بالا رفته است.|āgāhī-yi mardum bālā rafta ast.|People's awareness has gone up.||
-1091|نظم|nazm|noun|neutral|order|نظم در کار مهم است.|nazm dar kār muhim ast.|Order in work is important.||
-1092|اخیراً|akhīran|verb|formal|recently|اخیراً او را ندیدم.|akhīran ō rā nadīdam.|I haven't seen him recently.||
-1093|فوراً|fawran|verb|formal|immediately|لطفاً فوراً به اینجا بیایید.|lutfan fawran ba īnjā biyāyēd.|Please come here immediately.||
-1094|معمولاً|ma'mūlan|verb|neutral|usually|من معمولاً چای می‌نوشم.|man ma'mūlan chāy mēnōsham.|I usually drink tea.||
-1095|ندرتاً|nudratan|verb|formal|rarely|او ندرتاً گوشت می‌خورد.|ō nudratan gōsht mēkhurad.|He rarely eats meat.||
-1096|گاهی|gāhē|verb|neutral|sometimes|گاهی به سینما می‌رویم.|gāhē ba sēnamā mērawēm.|Sometimes we go to the cinema.||
-1097|مرتباً|murattaban|verb|formal|regularly|او مرتباً ورزش می‌کند.|ō murattaban warzish mēkunad.|He exercises regularly.||
-1098|حتماً|hatman|verb|neutral|definitely|حتماً فردا می‌آیم.|hatman fardā mēāyam.|I will definitely come tomorrow.||
-1099|احتمالاً|ihtimālan|verb|formal|probably|احتمالاً باران می‌بارد.|ihtimālan bārān mēbārad.|It will probably rain.||
-1100|کاملاً|kāmilan|verb|neutral|completely|من کاملاً با شما موافقم.|man kāmilan bā shumā muwāfiqam.|I completely agree with you.||
-1101|نسبتاً|nisbatan|verb|formal|relatively|امروز هوا نسبتاً سرد است.|imrōz hawā nisbatan sard ast.|The weather is relatively cold today.||
-1102|دقیقاً|daqīqan|verb|neutral|exactly|دقیقاً همینطور است.|daqīqan hamīntawr ast.|It is exactly like this.||
-1103|مستقیماً|mustaqīman|verb|formal|directly|من مستقیماً به خانه می‌روم.|man mustaqīman ba khāna mērawam.|I am going directly home.||
-1104|غیرمستقیم|ghayr-i mustaqīm|verb|formal|indirectly|او غیرمستقیم اشاره کرد.|ō ghayr-i mustaqīm ishāra kard.|He pointed indirectly.||
-1105|به زودی|ba zūdī|verb|neutral|soon|او به زودی می‌رسد.|ō ba zūdī mērasad.|He will arrive soon.||
-1106|بالاخره|bilākhira|verb|neutral|finally|بالاخره کارم تمام شد.|bilākhira kāram tamām shud.|Finally my work is finished.||
-1107|در نهایت|dar nihāyat|verb|formal|eventually|در نهایت او قبول کرد.|dar nihāyat ō qabūl kard.|Eventually he accepted.||
-1108|در حال حاضر|dar hāl-i hāzir|verb|formal|currently|در حال حاضر مشغول کار هستم.|dar hāl-i hāzir mashghūl-i kār hastam.|I am currently busy working.||
-1109|همزمان|hamzamān|verb|formal|simultaneously|هر دو همزمان رسیدند.|har du hamzamān rasīdand.|Both arrived simultaneously.||
-1110|قبلاً|qablan|verb|neutral|previously|من قبلاً اینجا بوده‌ام.|man qablan īnjā būda-am.|I have been here previously.||
-1111|بعداً|ba'dan|verb|neutral|later|بعداً در موردش صحبت می‌کنیم.|ba'dan dar mawridash suhbat mēkunēm.|We will talk about it later.||
-1112|دائماً|dā'iman|verb|formal|constantly|او دائماً شکایت می‌کند.|ō dā'iman shikāyat mēkunad.|He constantly complains.||
-1113|موقتاً|muwaqqatan|verb|formal|temporarily|موقتاً اینجا زندگی می‌کنم.|muwaqqatan īnjā zindagī mēkunam.|I am temporarily living here.||
-1114|تدریجاً|tadrījan|verb|formal|gradually|وضعیت تدریجاً بهتر می‌شود.|waz'iyat tadrījan bihtar mēshawad.|The situation is gradually improving.||
-1115|مخفیانه|makhfiyāna|verb|neutral|secretly|آنها مخفیانه ملاقات کردند.|ānhā makhfiyāna mulāqāt kardand.|They met secretly.||
-1116|آشکارا|āshkārā|verb|formal|openly|او آشکارا مخالفت کرد.|ō āshkārā mukhālafat kard.|He opposed openly.||
-1117|خوشبختانه|khushbakhtāna|verb|neutral|fortunately|خوشبختانه کسی صدمه ندید.|khushbakhtāna kasē sadma nadīd.|Fortunately no one was hurt.||
-1118|متأسفانه|muta'assifāna|verb|neutral|unfortunately|متأسفانه او نتوانست بیاید.|muta'assifāna ō natawānist biyāyad.|Unfortunately he couldn't come.||
-1119|اتفاقاً|ittifāqan|verb|formal|by chance|اتفاقاً او را در بازار دیدم.|ittifāqan ō rā dar bāzār dīdam.|I saw him in the market by chance.||
-1120|عمداً|amdan|verb|formal|intentionally|او این کار را عمداً نکرد.|ō īn kār rā amdan nakard.|He didn't do this intentionally.||
-1121|اشتباهاً|ishtibāhan|verb|formal|mistakenly|اشتباهاً کلید را بردم.|ishtibāhan kilīd rā burdam.|I took the key mistakenly.||
-1122|ظاهراً|zāhiran|verb|formal|apparently|ظاهراً او بیمار است.|zāhiran ō bēmār ast.|Apparently he is sick.||
-1123|شخصاً|shakhsan|verb|formal|personally|من شخصاً او را می‌شناسم.|man shakhsan ō rā mēshināsam.|I personally know him.||
-1124|عموماً|umūman|verb|formal|generally|عموماً مردم این را دوست دارند.|umūman mardum īn rā dōst dārand.|Generally people like this.||
-1125|خصوصاً|khusūsan|verb|formal|especially|من خصوصاً چای سبز را دوست دارم.|man khusūsan chāy-i sabz rā dōst dāram.|I especially like green tea.||
-1126|مسلماً|musallaman|verb|formal|certainly|مسلماً این بهترین راه است.|musallaman īn bihtarīn rāh ast.|Certainly this is the best way.||
-1127|طبیعتاً|tabī'atan|verb|formal|naturally|طبیعتاً او نگران است.|tabī'atan ō nigarān ast.|Naturally he is worried.||
-1128|سریعاً|sarī'an|verb|formal|quickly|سریعاً به شفاخانه رفت.|sarī'an ba shifākhāna raft.|He quickly went to the hospital.||
-1129|به تنهایی|ba tanhā'ī|verb|neutral|alone|او به تنهایی زندگی می‌کند.|ō ba tanhā'ī zindagī mēkunad.|He lives alone.||
-1130|با هم|bā ham|verb|neutral|together|ما با هم کار می‌کنیم.|mā bā ham kār mēkunēm.|We work together.||
-1131|جداگانه|judāgāna|verb|formal|separately|آنها جداگانه سفر کردند.|ānhā judāgāna safar kardand.|They traveled separately.||
-1132|مجدداً|mujaddadan|verb|formal|again|مجدداً تلاش کنید.|mujaddadan talāsh kunēd.|Try again.||
-1133|به جز|ba juz|preposition|neutral|except|همه آمدند به جز علی.|hama āmadand ba juz alī.|Everyone came except Ali.||
-1134|بدون|bidūn-i|preposition|neutral|without|بدون تو نمی‌روم.|bidūn-i tu namērawam.|I won't go without you.||
-1135|بر خلاف|bar khilāf-i|preposition|formal|unlike|بر خلاف او، من مهربانم.|bar khilāf-i ō, man mihrabānam.|Unlike him, I am kind.||
-1136|بر اساس|bar asās-i|preposition|formal|based on|بر اساس گزارش‌ها، باران می‌بارد.|bar asās-i guzārish-hā, bārān mēbārad.|Based on the reports, it is raining.||
-1137|مطابق|mutābiq-i|preposition|formal|according to|مطابق قانون رفتار کنید.|mutābiq-i qānūn raftār kunēd.|Act according to the law.||
-1138|با وجود|bā wujūd-i|preposition|neutral|despite|با وجود مریضی، به مکتب رفت.|bā wujūd-i marēzī, ba maktab raft.|Despite the illness, he went to school.||
-1139|به علاوه|ba ilāwa-i|preposition|formal|in addition to|به علاوه این، پول هم داد.|ba ilāwa-i īn, pūl ham dād.|In addition to this, he also gave money.||
-1140|به غیر از|ba ghayr az|preposition|neutral|other than|به غیر از تو کسی را ندارم.|ba ghayr az tu kasē rā nadāram.|I have no one other than you.||
-1141|از طریق|az tarīq-i|preposition|formal|through/via|از طریق ایمیل تماس بگیرید.|az tarīq-i ēmēl tamās bigīrēd.|Contact via email.||
-1142|به وسیله|ba wasīla-i|preposition|formal|by means of|پیام به وسیله کبوتر فرستاده شد.|payām ba wasīla-i kabūtar firistāda shud.|The message was sent by means of a pigeon.||
-1143|در مورد|dar mawrid-i|preposition|neutral|regarding|در مورد آن فکر می‌کنم.|dar mawrid-i ān fikr mēkunam.|I will think regarding it.||
-1144|راجع به|rāji' ba|preposition|formal|concerning|راجع به این موضوع صحبت کردیم.|rāji' ba īn mawzū' suhbat kardēm.|We spoke concerning this subject.||
-1145|به خاطر|ba khātir-i|preposition|neutral|because of|به خاطر تو آمدم.|ba khātir-i tu āmadam.|I came because of you.||
-1146|در برابر|dar barābar-i|preposition|formal|against|در برابر دشمن مقاومت کردند.|dar barābar-i dushman muqāwamat kardand.|They resisted against the enemy.||
-1147|در مقابل|dar muqābil-i|preposition|neutral|opposite/in front of|در مقابل مسجد ایستاد.|dar muqābil-i masjid ēstād.|He stood opposite the mosque.||
-1148|در میان|dar miyān-i|preposition|formal|among|او در میان مردم است.|ō dar miyān-i mardum ast.|He is among the people.||
-1149|بین|bayn-i|preposition|neutral|between|فاصله بین دو شهر کم است.|fāsila bayn-i du shahr kam ast.|The distance between the two cities is short.||
-1150|خارج از|khārij az|preposition|neutral|outside of|خارج از کشور زندگی می‌کند.|khārij az kishwar zindagī mēkunad.|He lives outside of the country.||
-1151|داخل|dākhil-i|preposition|neutral|inside|داخل اتاق سرد است.|dākhil-i utāq sard ast.|Inside the room is cold.||
-1152|پیرامون|pērāmōn-i|preposition|formal|around|پیرامون شهر دیوار است.|pērāmōn-i shahr dēwār ast.|There is a wall around the city.||
-1153|اطراف|atrāf-i|preposition|neutral|surroundings of|اطراف خانه درخت است.|atrāf-i khāna dirakht ast.|There are trees in the surroundings of the house.||
-1154|در طول|dar tūl-i|preposition|neutral|during|در طول روز کار می‌کنم.|dar tūl-i rōz kār mēkunam.|I work during the day.||
-1155|در عرض|dar arz-i|preposition|formal|within/during|در عرض یک هفته برمی‌گردم.|dar arz-i yak hafta barmēgardam.|I will return within a week.||
-1156|به جای|ba jāy-i|preposition|neutral|instead of|به جای من او رفت.|ba jāy-i man ō raft.|Instead of me, he went.||
-1157|بنابراین|binābar'īn|conjunction|formal|therefore|بنابراین ما تصمیم گرفتیم برویم.|binābar'īn mā tasmīm giriftēm birawēm.|Therefore, we decided to go.||
-1158|در نتیجه|dar natija|conjunction|formal|as a result|در نتیجه، امتحان لغو شد.|dar natija, imtihān laghw shud.|As a result, the exam was canceled.||
-1159|با این حال|bā īn hāl|conjunction|formal|however|با این حال، او تسلیم نشد.|bā īn hāl, ō taslīm nashud.|However, he did not give up.||
-1160|در حالی که|dar hālē ki|conjunction|formal|while/whereas|او می‌خندید در حالی که من گریه می‌کردم.|ō mēkhandīd dar hālē ki man girya mēkardam.|He was laughing while I was crying.||
-1161|اگرچه|agarchi|conjunction|neutral|although|اگرچه خسته بودم، کار کردم.|agarchi khasta būdam, kār kardam.|Although I was tired, I worked.||
-1162|هرچند|harchand|conjunction|formal|even though|هرچند پول نداشت، شاد بود.|harchand pūl nadāsht, shād būd.|Even though he had no money, he was happy.||
-1163|تا اینکه|tā īnki|conjunction|neutral|until|منتظر ماندم تا اینکه آمد.|muntazir māndam tā īnki āmad.|I waited until he came.||
-1164|به شرطی که|ba shartē ki|conjunction|neutral|provided that|می‌آیم به شرطی که زود برگردیم.|mēāyam ba shartē ki zūd bargardēm.|I will come provided that we return early.||
-1165|مگر اینکه|magar īnki|conjunction|formal|unless|نمی‌روم مگر اینکه او بیاید.|namērawam magar īnki ō biyāyad.|I will not go unless he comes.||
-1166|چنانچه|chunānchi|conjunction|formal|in case/if|چنانچه باران ببارد، نمی‌رویم.|chunānchi bārān bibārad, namērawēm.|In case it rains, we will not go.||
-1167|خواه... خواه|khāh... khāh|conjunction|formal|whether... or|خواه بیایی خواه نیایی، من می‌روم.|khāh biyāyī khāh nayāyī, man mērawam.|Whether you come or not, I will go.||
-1168|نه تنها... بلکه|na tanhā... balki|conjunction|formal|not only... but also|نه تنها زرنگ است بلکه مهربان هم است.|na tanhā zirang ast balki mihrabān ham ast.|Not only is he smart but also kind.||
-1169|هم... هم|ham... ham|conjunction|neutral|both... and|هم علی و هم احمد آمدند.|ham alī wa ham ahmad āmadand.|Both Ali and Ahmad came.||
-1170|از این رو|az īn rō|conjunction|formal|hence|از این رو، کار را تمام کردیم.|az īn rō, kār rā tamām kardēm.|Hence, we finished the work.||
-1171|بدین ترتیب|bidīn tartīb|conjunction|formal|thus|بدین ترتیب، مشکل حل شد.|bidīn tartīb, mushkil hal shud.|Thus, the problem was solved.||
-1172|به همین دلیل|ba hamīn dalēl|conjunction|neutral|for this reason|به همین دلیل دیر آمدم.|ba hamīn dalēl dēr āmadam.|For this reason I came late.||
-1173|با این وجود|bā īn wujūd|conjunction|formal|nevertheless|با این وجود، او تلاش کرد.|bā īn wujūd, ō talāsh kard.|Nevertheless, he tried.||
-1174|از آنجایی که|az ānjāyē ki|conjunction|formal|since/as|از آنجایی که هوا سرد است، لباس گرم بپوش.|az ānjāyē ki hawā sard ast, libās-i garm bipōsh.|Since the weather is cold, wear warm clothes.||
-1175|همانطور که|hamāntawr ki|conjunction|neutral|just as|همانطور که گفتم، او نیامد.|hamāntawr ki guftam, ō nayāmad.|Just as I said, he didn't come.||
-1176|طوری که|tawrē ki|conjunction|neutral|in such a way that|طوری که به نظر می‌رسد، او بیمار است.|tawrē ki ba nazar mērasad, ō bēmār ast.|The way it seems, he is sick.||
-1177|به طوری که|ba tawrē ki|conjunction|formal|so that|آهسته صحبت کن به طوری که بیدار نشود.|āhista suhbat kun ba tawrē ki bēdār nashawad.|Speak softly so that he doesn't wake up.||
-1178|زیرا|zērā|conjunction|formal|because|او نیامد زیرا مریض بود.|ō nayāmad zērā marēz būd.|He didn't come because he was sick.||
-1179|چونکه|chūnki|conjunction|neutral|because|چونکه وقت نداشتم، نرفتم.|chūnki waqt nadāshtam, naraftam.|Because I didn't have time, I didn't go.||
-1180|پنجره|panjara|noun|neutral|window|پنجره را باز کن.|panjara rā bāz kun.|Open the window.||
-1181|صندلی|sandalī|noun|neutral|chair|روی صندلی نشست.|rō-yi sandalī nishast.|He sat on the chair.||چوکی
-1182|فرش|farsh|noun|neutral|carpet/rug|فرش جدید خریدم.|farsh-i jadīd kharīdam.|I bought a new carpet.||قالین
-1183|پتو|patū|noun|neutral|blanket|هوا سرد است، پتو بیاور.|hawā sard ast, patū biyāwar.|It is cold, bring a blanket.||کمپل
-1184|بالشت|bālisht|noun|neutral|pillow|بالشت نرم است.|bālisht narm ast.|The pillow is soft.||
-1185|یخچال|yakhchāl|noun|neutral|refrigerator|آب در یخچال است.|āb dar yakhchāl ast.|The water is in the refrigerator.||
-1186|اجاق|ujāq|noun|neutral|stove|غذا روی اجاق است.|ghazā rō-yi ujāq ast.|The food is on the stove.||
-1187|لیوان|lēwān|noun|neutral|glass/cup|یک لیوان آب بده.|yak lēwān āb bidi.|Give me a glass of water.||گیلاس
-1188|فنجان|finjān|noun|neutral|cup|یک فنجان چای.|yak finjān chāy.|A cup of tea.||پیاله
-1189|صابون|sābūn|noun|neutral|soap|دست‌ها را با صابون شستم.|dast-hā rā bā sābūn shustam.|I washed my hands with soap.||
-1190|حوله|hawla|noun|neutral|towel|حوله کجاست؟|hawla kujāst?|Where is the towel?||روی‌پاک
-1191|مسواک|miswāk|noun|neutral|toothbrush|مسواک زدن مهم است.|miswāk zadan muhimm ast.|Brushing teeth is important.||برس دندان
-1192|خمیردندان|khamīr-dandān|noun|neutral|toothpaste|خمیردندان تمام شد.|khamīr-dandān tamām shud.|The toothpaste ran out.||کریم دندان
-1193|آینه|āyina|noun|neutral|mirror|در آینه نگاه کرد.|dar āyina nigāh kard.|He looked in the mirror.||آیینه
-1194|شامپو|shāmpū|noun|neutral|shampoo|شامپو خریدم.|shāmpū kharīdam.|I bought shampoo.||
-1195|سوزن|sōzan|noun|neutral|needle|سوزن و تار بیاور.|sōzan wa tār biyāwar.|Bring a needle and thread.||
-1196|برفباری|barfbārī|noun|neutral|snowfall|برفباری شروع شد.|barfbārī shurū shud.|The snowfall started.||
-1197|یخبندان|yakhbandān|noun|neutral|frost/freezing|هوا یخبندان است.|hawā yakhbandān ast.|The weather is freezing.||
-1198|شارژر|shārjar|noun|neutral|charger|شارژر تلیفون کجاست؟|shārjar-i tēlifōn kujāst?|Where is the phone charger?||
-1199|پریز|parēz|noun|neutral|socket|پریز برق خراب است.|parēz-i barq kharāb ast.|The electrical socket is broken.||
-1200|بطری|batrī|noun|neutral|battery|بطری خلاص شد.|batrī khalās shud.|The battery is dead.||
+501|انجنیر|enjinīr|noun|neutral|engineer|انجنیر پل را ساخت.|enjinīr pul rā sākht.|The engineer built the bridge.|Abstract Concepts|
+502|نجار|najjār|noun|neutral|carpenter|نجار یک میز جور کرد.|najjār yak mēz jōr kard.|The carpenter made a table.|Abstract Concepts|
+503|دریور|draywar|noun|neutral|driver|دریور تکسی بسیار تیز رفت.|draywar-i taksī bisyār tēz raft.|The taxi driver went very fast.|Abstract Concepts|
+504|خیاط|khayyāt|noun|neutral|tailor|خیاط کالا را دوخت.|khayyāt kālā rā dōkht.|The tailor sewed the clothes.|Abstract Concepts|
+505|پولیس|pōlīs|noun|neutral|police|پولیس امنیت را می‌گیرد.|pōlīs amniyat rā mēgīrad.|The police maintain security.|Law & Justice|
+506|عسکر|askar|noun|neutral|soldier|عسکر وطن را دفاع می‌کند.|askar watan rā difā mēkunad.|The soldier defends the country.|Society & Politics|
+507|مامور|māmūr|noun|neutral|official/employee|مامور دولتی به دفتر رفت.|māmūr-i dawlatī ba daftar raft.|The government employee went to the office.|Work & Business|
+508|مدیر|mudīr|noun|neutral|manager/principal|مدیر مکتب سخنرانی کرد.|mudīr-i maktab sukhanrānī kard.|The school principal gave a speech.|Work & Business|
+509|رئیس|ra'īs|noun|neutral|boss/president|رئیس شرکت جلسه دارد.|ra'īs-i shirkat jalasa dārad.|The company boss has a meeting.|Work & Business|
+510|مستری|mistarī|noun|neutral|mechanic|مستری موتر را ترمیم کرد.|mistarī mōtar rā tarmīm kard.|The mechanic repaired the car.|Abstract Concepts|
+511|نانوا|nānwā|noun|neutral|baker|نانوا نان گرم پخت.|nānwā nān-i garm pukht.|The baker baked hot bread.|Abstract Concepts|
+512|قصاب|qassāb|noun|neutral|butcher|قصاب گوشت تازه آورد.|qassāb gōsht-i tāza āward.|The butcher brought fresh meat.|Abstract Concepts|
+513|دکاندار|dukāndār|noun|neutral|shopkeeper|دکاندار سودا می‌فروشد.|dukāndār sawdā mēfurōshad.|The shopkeeper sells goods.|Abstract Concepts|
+514|ترکاری فروش|tarkārī furōsh|noun|neutral|vegetable seller|ترکاری فروش کچالو دارد.|tarkārī furōsh kachālō dārad.|The vegetable seller has potatoes.|Food & Drink|
+515|آشپز|āshpaz|noun|neutral|cook/chef|آشپز قابلی پلو پخته می‌کند.|āshpaz qābilī palaw pukhta mēkunad.|The chef is cooking Qabili palaw.|Food & Drink|
+516|ترجمان|tarjumān|noun|neutral|translator/interpreter|ترجمان زبان انگلیسی می‌فهمد.|tarjumān zabān-i inglisī mēfahmad.|The translator understands the English language.|Abstract Concepts|
+517|خبرنگار|khabar-nigār|noun|neutral|journalist|خبرنگار راپور می‌دهد.|khabar-nigār rāpōr mēdihad.|The journalist gives a report.|Abstract Concepts|
+518|عکاس|akkās|noun|neutral|photographer|عکاس عکس‌های مقبول گرفت.|akkās aks-hā-yi maqbūl girift.|The photographer took beautiful photos.|Abstract Concepts|
+519|وکیل|wakīl|noun|neutral|lawyer/representative|وکیل در محکمه گپ زد.|wakīl dar mahkama gap zad.|The lawyer spoke in court.|Law & Justice|
+520|قاضی|qāzī|noun|neutral|judge|قاضی فیصله کرد.|qāzī faysala kard.|The judge made a decision.|Law & Justice|
+521|شاروال|shārwāl|noun|neutral|mayor|شاروال سرک‌ها را پاک کرد.|shārwāl sarak-hā rā pāk kard.|The mayor cleaned the streets.|Abstract Concepts|
+522|کارگر|kārgar|noun|neutral|worker|کارگر در فابریکه زحمت می‌کشد.|kārgar dar fābrīka zahmat mēkashad.|The worker works hard in the factory.|Work & Business|
+523|صفاکار|safākār|noun|neutral|cleaner|صفاکار صنف را جارو زد.|safākār sinf rā jārō zad.|The cleaner swept the class.|Abstract Concepts|
+524|محافظ|muhāfiz|noun|neutral|guard|محافظ دروازه را بسته کرد.|muhāfiz darwāza rā basta kard.|The guard closed the gate.|Abstract Concepts|
+525|تاجر|tājir|noun|neutral|merchant/businessman|تاجر مال وارد می‌کند.|tājir māl wārid mēkunad.|The merchant imports goods.|Abstract Concepts|
+526|صراف|sarrāf|noun|neutral|money changer|صراف دالر را افغانی کرد.|sarrāf dālar rā afghānī kard.|The money changer exchanged dollars to Afghanis.|Work & Business|
+527|سلمانی|salmānī|noun|neutral|barber|سلمانی موی مرا اصلاح کرد.|salmānī mō-yi ma rā islāh kard.|The barber cut my hair.|Abstract Concepts|
+528|شار|shār|noun|neutral|city|کابل یک شار کلان است.|kābul yak shār-i kalān ast.|Kabul is a big city.|Society & Politics|
+529|کوچه|kōcha|noun|neutral|street/alley|ما در این کوچه زندگی می‌کنیم.|mā dar īn kōcha zindagī mēkunēm.|We live in this alley.|Travel & Transportation|
+530|چهارراهی|chahār-rāhī|noun|neutral|intersection/square|در چهارراهی ترافیک است.|dar chahār-rāhī tarāfīk ast.|There is traffic at the intersection.|Colors & Shapes|
+531|پیاده‌رو|piyāda-raw|noun|neutral|sidewalk|از پیاده‌رو بروید.|az piyāda-raw birawēd.|Walk on the sidewalk.|Abstract Concepts|
+532|ساختمان|sākhtamān|noun|neutral|building|این ساختمان نو است.|īn sākhtamān naw ast.|This building is new.|Abstract Concepts|
+533|تعمیر|ta'mīr|noun|neutral|building (structure)|تعمیر مکتب بزرگ است.|ta'mīr-i maktab buzurg ast.|The school building is large.|Abstract Concepts|
+534|مارکیت|mārkīt|noun|neutral|market/shopping center|برای سودا به مارکیت رفتیم.|barāyi sawdā ba mārkīt raftēm.|We went to the market for shopping.|Work & Business|
+535|شاروالی|shārwālī|noun|neutral|municipality|شاروالی کثافات را انتقال داد.|shārwālī kasāfāt rā intiqāl dād.|The municipality transported the garbage.|Abstract Concepts|
+536|کلینیک|kilīnīk|noun|neutral|clinic|کلینیک دندان باز است.|kilīnīk-i dandān bāz ast.|The dental clinic is open.|Abstract Concepts|
+537|پارک|pārk|noun|neutral|park|اطفال در پارک بازی می‌کنند.|atfāl dar pārk bāzī mēkunand.|Children are playing in the park.|Abstract Concepts|
+538|سینما|sīnamā|noun|neutral|cinema|ما به سینما رفتیم.|mā ba sīnamā raftēm.|We went to the cinema.|Abstract Concepts|
+539|هوتل|hōtal|noun|neutral|hotel/restaurant|در هوتل چای خوردیم.|dar hōtal chāy khurdēm.|We had tea at the restaurant.|Travel & Transportation|
+540|رستورانت|rastūrānt|noun|neutral|restaurant|رستورانت غذای مزه‌دار دارد.|rastūrānt ghazā-yi maza-dār dārad.|The restaurant has delicious food.|Abstract Concepts|
+541|بانک|bānk|noun|neutral|bank|برای گرفتن پیسه به بانک رفتم.|barāyi giriftan-i paysa ba bānk raftam.|I went to the bank to get money.|Work & Business|
+542|پوسته خانه|pōsta khāna|noun|neutral|post office|پوسته خانه بسته است.|pōsta khāna basta ast.|The post office is closed.|Work & Business|
+543|ماموریت|māmūriyat|noun|neutral|police station/precinct|به ماموریت پولیس زنگ زدم.|ba māmūriyat-i pōlīs zang zadam.|I called the police station.|Travel & Transportation|
+544|استدیوم|stadyōm|noun|neutral|stadium|مسابقه در استدیوم است.|musābiqa dar stadyōm ast.|The match is in the stadium.|Abstract Concepts|
+545|میدان|maydān|noun|neutral|field/square|میدان فوتبال سبز است.|maydān-i fūtbāl sabz ast.|The football field is green.|Colors & Shapes|
+546|پل|pul|noun|neutral|bridge|موترها از بالای پل تیر می‌شوند.|mōtar-hā az bālā-yi pul tēr mēshawand.|Cars pass over the bridge.|Abstract Concepts|
+547|تونل|tōnal|noun|neutral|tunnel|تونل سالنگ سرد است.|tōnal-i sālang sard ast.|The Salang tunnel is cold.|Abstract Concepts|
+548|کتابخانه|kitābkhāna|noun|neutral|library|در کتابخانه مطالعه می‌کنم.|dar kitābkhāna mutāla'a mēkunam.|I study in the library.|Abstract Concepts|
+549|موزیم|mōziyam|noun|neutral|museum|موزیم آثار تاریخی دارد.|mōziyam āsār-i tārīkhī dārad.|The museum has historical artifacts.|Abstract Concepts|
+550|زیارت|ziyārat|noun|neutral|shrine|مردم به زیارت می‌روند.|mardum ba ziyārat mērawand.|People go to the shrine.|Abstract Concepts|
+551|قبرستان|qabristān|noun|neutral|graveyard|قبرستان در بیرون شار است.|qabristān dar bērūn-i shār ast.|The graveyard is outside the city.|Abstract Concepts|
+552|تکسی|taksī|noun|neutral|taxi|با تکسی به خانه رفتم.|bā taksī ba khāna raftam.|I went home by taxi.|Abstract Concepts|
+553|سرویس|sarwēs|noun|neutral|bus|سرویس پر از آدم بود.|sarwēs pur az ādam būd.|The bus was full of people.|Travel & Transportation|
+554|ملی بس|millī bas|noun|neutral|city bus|ملی بس ایستاد شد.|millī bas ēstād shud.|The city bus stopped.|Travel & Transportation|
+555|مینی بس|mīnī bas|noun|neutral|minibus|مینی بس به مزار می‌رود.|mīnī bas ba mazār mērawad.|The minibus goes to Mazar.|Abstract Concepts|
+556|موترسایکل|mōtarsāykal|noun|neutral|motorcycle|موترسایکل بسیار تیز است.|mōtarsāykal bisyār tēz ast.|The motorcycle is very fast.|Abstract Concepts|
+557|طیاره|tayāra|noun|neutral|airplane|طیاره در هوا پرواز می‌کند.|tayāra dar hawā parwāz mēkunad.|The airplane flies in the air.|Abstract Concepts|
+558|هلیکوپتر|hilīkōptar|noun|neutral|helicopter|هلیکوپتر نشست کرد.|hilīkōptar nishast kard.|The helicopter landed.|Abstract Concepts|
+559|ریل|rēl|noun|neutral|train|در افغانستان ریل کم است.|dar afghānistān rēl kam ast.|There are few trains in Afghanistan.|Travel & Transportation|
+560|کشتی|kishtī|noun|neutral|ship/boat|کشتی در دریا روان است.|kishtī dar daryā rawān ast.|The ship is moving in the river.|Abstract Concepts|
+561|قایق|qāyiq|noun|neutral|boat|ماهیگیر در قایق است.|māhīgīr dar qāyiq ast.|The fisherman is in the boat.|Abstract Concepts|
+562|کراچی|karāchī|noun|neutral|cart|بارها را در کراچی انداختیم.|bār-hā rā dar karāchī andākhtēm.|We put the loads in the cart.|Abstract Concepts|
+563|زرنج|zaranj|noun|neutral|auto-rickshaw|با زرنج به بازار رفتیم.|bā zaranj ba bāzār raftēm.|We went to the bazaar by auto-rickshaw.|Abstract Concepts|
+564|ریکشا|rēkshā|noun|neutral|rickshaw|ریکشا ارزان است.|rēkshā arzān ast.|The rickshaw is cheap.|Abstract Concepts|
+565|لاری|lārī|noun|neutral|truck|لاری بار می‌برد.|lārī bār mēburad.|The truck carries loads.|Abstract Concepts|
+566|باربری|bār-barī|noun|neutral|freight/cargo transport|موتر باربری کلان است.|mōtar-i bār-barī kalān ast.|The cargo truck is big.|Abstract Concepts|
+567|تانک تیل|tānk-i tēl|noun|neutral|gas station|در تانک تیل، تیل انداختم.|dar tānk-i tēl, tēl andākhtam.|I put gas at the gas station.|Travel & Transportation|
+568|پرزه|purza|noun|neutral|spare part|پرزه موتر خراب شد.|purza-i mōtar kharāb shud.|The car's spare part broke.|Abstract Concepts|
+569|تایر|tāyar|noun|neutral|tire|تایر موتر پنچر شد.|tāyar-i mōtar panchar shud.|The car tire got punctured.|Abstract Concepts|
+570|اشترنگ|ishtirang|noun|neutral|steering wheel|اشترنگ دست راست است.|ishtirang dast-i rāst ast.|The steering wheel is on the right.|Abstract Concepts|
+571|بریک|brēk|noun|neutral|brake|بریک را محکم بگیر.|brēk rā muhkam bigīr.|Hold the brake firmly.|Abstract Concepts|
+572|هارن|hāran|noun|neutral|horn|او زیاد هارن می‌زند.|ō ziyād hāran mēzanad.|He honks the horn a lot.|Abstract Concepts|
+573|سیط|sēt|noun|neutral|seat|در سیط پیشرو بشین.|dar sēt-i pēsh-raw bishīn.|Sit in the front seat.|Abstract Concepts|
+574|کرایه|kirāya|noun|neutral|fare/rent|کرایه موتر چند است؟|kirāya-i mōtar chand ast?|How much is the car fare?|Abstract Concepts|
+575|تکت|tikat|noun|neutral|ticket|تکت طیاره را گرفتم.|tikat-i tayāra rā giriftam.|I got the airplane ticket.|Travel & Transportation|
+576|مسافر|musāfir|noun|neutral|traveler/passenger|مسافرین خسته هستند.|musāfirīn khasta hastand.|The passengers are tired.|Abstract Concepts|
+577|دریوری|draywarī|noun|neutral|driving|دریوری در زمستان سخت است.|draywarī dar zamistān sakht ast.|Driving in winter is hard.|Abstract Concepts|
+578|ترافیک|tarāfīk|noun|neutral|traffic/traffic police|ترافیک راه را باز کرد.|tarāfīk rāh rā bāz kard.|The traffic police opened the road.|Law & Justice|
+579|لیسنس|lēsans|noun|neutral|driver's license|من لیسنس دریوری دارم.|man lēsans-i draywarī dāram.|I have a driver's license.|Abstract Concepts|
+580|سیاحت|sayāhat|noun|neutral|tourism/sightseeing|برای سیاحت به بامیان رفتیم.|barāyi sayāhat ba bāmiyān raftēm.|We went to Bamiyan for sightseeing.|Abstract Concepts|
+581|رخصتی|rukhsatī|noun|neutral|holiday/vacation|روز جمعه رخصتی است.|rōz-i jum'a rukhsatī ast.|Friday is a holiday.|Abstract Concepts|
+582|ویزه|wīza|noun|neutral|visa|من ویزه دوبی را گرفتم.|man wīza-i dubay rā giriftam.|I got a Dubai visa.|Abstract Concepts|
+583|پاسپورت|pāspōrt|noun|neutral|passport|پاسپورت من گم شد.|pāspōrt-i man gum shud.|My passport got lost.|Travel & Transportation|
+584|سرحد|sarhad|noun|neutral|border|سرحد بسته است.|sarhad basta ast.|The border is closed.|Abstract Concepts|
+585|گمرک|gumruk|noun|neutral|customs|مال‌ها در گمرک ماند.|māl-hā dar gumruk mānd.|The goods remained at customs.|Abstract Concepts|
+586|میدان هوایی|maydān-i hawāī|noun|neutral|airport|به میدان هوایی رفتم.|ba maydān-i hawāī raftam.|I went to the airport.|Travel & Transportation|
+587|پرواز|parwāz|noun|neutral|flight|پرواز ناوقت شد.|parwāz nāwaqt shud.|The flight was delayed.|Travel & Transportation|
+588|بکس|baks|noun|neutral|suitcase/bag|بکس من سنگین است.|baks-i man sangīn ast.|My suitcase is heavy.|Abstract Concepts|
+589|خریطه|kharīta|noun|neutral|bag/sack|خریطه پلاستیکی نگیر.|kharīta-i plāstīkī nagīr.|Do not take a plastic bag.|Abstract Concepts|
+590|سامان|sāmān|noun|neutral|luggage/equipment|سامان خود را بردار.|sāmān-i khud rā bardār.|Pick up your luggage.|Abstract Concepts|
+591|مهمانخانه|mihmān-khāna|noun|neutral|guesthouse/living room|مهمان‌ها در مهمانخانه نشستند.|mihmān-hā dar mihmān-khāna nishastand.|The guests sat in the guesthouse.|Home & Furniture|
+592|راهنما|rāhnumā|noun|neutral|guide|ما یک راهنما کار داریم.|mā yak rāhnumā kār dārēm.|We need a guide.|Abstract Concepts|
+593|نقشه|naqsha|noun|neutral|map|نقشه کابل را ببین.|naqsha-i kābul rā bibīn.|Look at the map of Kabul.|Travel & Transportation|
+594|قطب‌نما|qutb-numā|noun|neutral|compass|قطب‌نما جهت را نشان می‌دهد.|qutb-numā jahat rā nishān mēdihad.|The compass shows the direction.|Abstract Concepts|
+595|خیمه|khayma|noun|neutral|tent|در کوه خیمه زدیم.|dar kōh khayma zadēm.|We pitched a tent in the mountain.|Abstract Concepts|
+596|کمپ|kamp|noun|neutral|camp|ما در کمپ استیم.|mā dar kamp astēm.|We are in the camp.|Abstract Concepts|
+597|کوهنوردی|kōh-nawardī|noun|neutral|mountaineering/hiking|من کوهنوردی را خوش دارم.|man kōh-nawardī rā khush dāram.|I like mountaineering.|Abstract Concepts|
+598|منظره|manzara|noun|neutral|view/scenery|منظره بند امیر زیبا است.|manzara-i band-i amīr zēbā ast.|The scenery of Band-e-Amir is beautiful.|Abstract Concepts|
+599|چکر|chakar|noun|neutral|stroll/trip|برای چکر رفتیم.|barāyi chakar raftēm.|We went for a stroll.|Travel & Transportation|
+600|تفریح|tafrēh|noun|neutral|recreation/break|وقت تفریح است.|waqt-i tafrēh ast.|It is time for a break.|Abstract Concepts|
+601|کمره|kamra|noun|neutral|camera|کمره عکاسی نو خریدم.|kamra-i akkāsī-i naw kharīdam.|I bought a new camera.|Abstract Concepts|
+602|یادگاری|yādgārī|noun|neutral|souvenir/memorial|یک عکس یادگاری گرفتیم.|yak aks-i yādgārī giriftēm.|We took a souvenir photo.|Abstract Concepts|
+603|سوغات|sawghāt|noun|neutral|souvenir/gift|از هرات سوغات آوردم.|az hirāt sawghāt āwardam.|I brought a souvenir from Herat.|Abstract Concepts|
+604|خارجی|khārijī|noun|neutral|foreigner/foreign|او یک خارجی است.|ō yak khārijī ast.|He is a foreigner.|Abstract Concepts|
+605|داخلی|dākhilī|noun|neutral|domestic/internal|پرواز داخلی ارزان است.|parwāz-i dākhilī arzān ast.|The domestic flight is cheap.|Abstract Concepts|
+606|ویزیت|wīzīt|noun|neutral|visit/appointment|من پیش داکتر ویزیت دارم.|man pēsh-i dāktar wīzīt dāram.|I have an appointment with the doctor.|Travel & Transportation|
+607|طرف|taraf|noun|neutral|direction/side|به این طرف بیا.|ba īn taraf biyā.|Come to this side.|Abstract Concepts|
+608|دست راست|dast-i rāst|noun|neutral|right side|طرف دست راست دور بخور.|taraf-i dast-i rāst dōr bukhur.|Turn to the right side.|Abstract Concepts|
+609|دست چپ|dast-i chap|noun|neutral|left side|شفاخانه دست چپ است.|shifākhāna dast-i chap ast.|The hospital is on the left side.|Abstract Concepts|
+610|مستقیم|mustaqīm|noun|neutral|straight|مستقیم برو.|mustaqīm biraw.|Go straight.|Abstract Concepts|
+611|پیشرو|pēsh-raw|noun|neutral|front/ahead|پیشرو سیل کن.|pēsh-raw sayl ku.|Look ahead.|Abstract Concepts|
+612|پشت سر|pusht-i sar|noun|neutral|behind/back|کتاب پشت سر تو است.|kitāb pusht-i sar-i tu ast.|The book is behind you.|Body & Health|
+613|پایین|pāyīn|noun|neutral|down/below|از زینه پایین بیا.|az zīna pāyīn biyā.|Come down the stairs.|Abstract Concepts|
+614|شمال|shamāl|noun|neutral|north|مزار در شمال افغانستان است.|mazār dar shamāl-i afghānistān ast.|Mazar is in the north of Afghanistan.|Abstract Concepts|
+615|جنوب|junūb|noun|neutral|south|قندهار در جنوب است.|qandahār dar junūb ast.|Kandahar is in the south.|Abstract Concepts|
+616|شرق|sharq|noun|neutral|east|آفتاب از شرق برمی‌خیزد.|āftāb az sharq bar-mēkhēzad.|The sun rises from the east.|Abstract Concepts|
+617|غرب|gharb|noun|neutral|west|هرات در غرب است.|hirāt dar gharb ast.|Herat is in the west.|Abstract Concepts|
+618|مابین|mābēn|noun|neutral|between/middle|میز در مابین اتاق است.|mēz dar mābēn-i utāq ast.|The table is in the middle of the room.|Abstract Concepts|
+619|کنج|kunj|noun|neutral|corner|چوکی را در کنج بمان.|chawkī rā dar kunj bimān.|Put the chair in the corner.|Abstract Concepts|
+620|دور خوردن|dōr khurdan|verb|neutral|to turn|در چهارراهی دور بخورید.|dar chahār-rāhī dōr bukhurēd.|Turn at the intersection.|Actions|خور (khur)
+621|گذشتن|guzashtan|verb|neutral|to pass/cross|از سرک گذشتم.|az sarak guzashtam.|I crossed the street.|Actions|گذر (guzar)
+622|آدرس|ādras|noun|neutral|address|آدرس خانه خود را بده.|ādras-i khāna-i khud rā bida.|Give your home address.|Abstract Concepts|
+623|نشانی|nishānī|noun|neutral|sign/address mark|نشانی خانه شما چیست؟|nishānī-i khāna-i shumā chīst?|What is the sign of your house?|Abstract Concepts|
+624|راه|rāh|noun|neutral|way/path|این راه بسته است.|īn rāh basta ast.|This way is closed.|Travel & Transportation|
+625|مسیر|masīr|noun|neutral|route|مسیر پرواز تغییر کرد.|masīr-i parwāz taghyīr kard.|The flight route changed.|Abstract Concepts|
+626|سرک عمومی|sarak-i umūmī|noun|neutral|main road|به سرک عمومی برآمدیم.|ba sarak-i umūmī bar-āmadēm.|We came out to the main road.|Travel & Transportation|
+627|کوچه فرعی|kōcha-i far'ī|noun|neutral|side street|از کوچه فرعی برو.|az kōcha-i far'ī biraw.|Go through the side street.|Travel & Transportation|
+628|بن‌بست|bunbast|noun|neutral|dead end|این کوچه بن‌بست است.|īn kōcha bunbast ast.|This alley is a dead end.|Abstract Concepts|
+629|تقاطع|taqātu'|noun|neutral|intersection|در تقاطع توقف کن.|dar taqātu' tawaqquf kun.|Stop at the intersection.|Abstract Concepts|
+630|قطار|qatār|noun|neutral|row/queue|در قطار ایستاد شوید.|dar qatār ēstād shawēd.|Stand in the queue.|Abstract Concepts|
+631|فاصله|fāsila|noun|neutral|distance|فاصله کابل تا جلال آباد چقدر است؟|fāsila-i kābul tā jalāl-ābād chīqadar ast?|What is the distance from Kabul to Jalalabad?|Abstract Concepts|
+632|کیلومتر|kīlōmitr|noun|neutral|kilometer|چند کیلومتر راه مانده است؟|chand kīlōmitr rāh mānda ast?|How many kilometers are left?|Abstract Concepts|
+633|جمپر|jampar|noun|spoken|jacket|او در زمستان جمپر می‌پوشد.|ō dar zamistān jampar mēpōshad.|He wears a jacket in winter.|Abstract Concepts|
+634|دریشی|darēshī|noun|neutral|suit|پدرم یک دریشی نو خرید.|padaram yak darēshī-e naw kharīd.|My father bought a new suit.|Abstract Concepts|
+635|چادر|chādar|noun|neutral|scarf (head)|زنان افغان معمولاً چادر می‌پوشند.|zanān-e afghān ma'mūlan chādar mēpōshand.|Afghan women usually wear a headscarf.|Body & Health|
+636|دستمال گردن|dastmāl-e gardan|noun|neutral|scarf (neck)|دستمال گردن او بسیار مقبول است.|dastmāl-e gardan-e ō bisyār maqbūl ast.|His neck scarf is very beautiful.|Body & Health|
+637|دستکش|dastkash|noun|neutral|glove|در برف بازی دستکش بپوش.|dar barf bāzī dastkash bipōsh.|Wear gloves when playing in the snow.|Abstract Concepts|
+638|جیب|jēb|noun|neutral|pocket|پیسه در جیب من است.|paysa dar jēb-e man ast.|The money is in my pocket.|Abstract Concepts|
+639|زنجیر|zanjīr|noun|neutral|zipper|زنجیر جمپرم خراب شده است.|zanjīr-e jamparam kharāb shuda ast.|My jacket's zipper is broken.|Abstract Concepts|
+640|تکمه|tukma|noun|neutral|button|تکمه پیراهن تو افتاده است.|tukma-e pērāhan-e tō uftāda ast.|Your shirt's button has fallen off.|Abstract Concepts|
+641|آستین|āstīn|noun|neutral|sleeve|آستین‌های این پیراهن دراز است.|āstīnhā-ye īn pērāhan darāz ast.|The sleeves of this shirt are long.|Abstract Concepts|
+642|یخن|yakhan|noun|spoken|collar|یخن پیراهنش پاک است.|yakhan-e pērāhanash pāk ast.|His shirt's collar is clean.|Abstract Concepts|
+643|دامن|dāman|noun|neutral|skirt|او دامن سیاه پوشیده بود.|ō dāman-e siyāh pōshīda būd.|She was wearing a black skirt.|Abstract Concepts|
+644|نکتایی|nektāyī|noun|neutral|tie|بستن نکتایی را یاد دارم.|bastan-e nektāyī rā yād dāram.|I know how to tie a tie.|Abstract Concepts|
+645|کمربند|kamarband|noun|neutral|belt|این کمربند چرمی است.|īn kamarband-e charmī ast.|This belt is made of leather.|Abstract Concepts|
+646|کرتی پشمی|kurtī-e pashmī|noun|neutral|sweater|کرتی پشمی مرا گرم نگاه می‌دارد.|kurtī-e pashmī marā garm nigāh mēdārad.|A wool sweater keeps me warm.|Abstract Concepts|
+647|جراب|jurāb|noun|spoken|socks|یک جوره جراب پشمی خریدم.|yak jūra jurāb-e pashmī kharīdam.|I bought a pair of wool socks.|Abstract Concepts|
+648|زیرپوشی|zērpōshī|noun|neutral|underwear|کالی‌های زیرپوشی باید پاک باشند.|kālīhā-ye zērpōshī bāyad pāk bāshand.|Underwear must be clean.|Abstract Concepts|
+649|یونیفورم|yōnīfōrm|noun|neutral|uniform|شاگردان مکتب یونیفورم می‌پوشند.|shāgirdān-e maktab yōnīfōrm mēpōshand.|School students wear a uniform.|Abstract Concepts|
+650|تکه|tuka|noun|spoken|fabric|این تکه برای لباس مناسب است.|īn tuka barāye libās munāsib ast.|This fabric is suitable for a dress.|Abstract Concepts|پارچه
+651|پخته|pakhta|noun|spoken|cotton|لباس پخته‌گی در تابستان خنک است.|libās-e pakhtagī dar tābistān khunak ast.|Cotton clothes are cool in the summer.|Abstract Concepts|پنبه
+652|ابریشم|abrēsham|noun|neutral|silk|این دستمال از ابریشم خالص است.|īn dastmāl az abrēsham-e khālis ast.|This scarf is made of pure silk.|Abstract Concepts|
+653|چرم|charm|noun|neutral|leather|بوت‌های چرمی بسیار دوام‌دار هستند.|būthā-ye charmī bisyār dawāmdār hastand.|Leather shoes are very durable.|Abstract Concepts|
+654|اتو کردن|utū kardan|verb|neutral|to iron|باید پیراهنم را اتو کنم.|bāyad pērāhanam rā utū kunam.|I must iron my shirt.|Actions|اتو کن
+655|رفو کردن|rufū kardan|verb|neutral|to mend|این جراب‌ها را رفو کن.|īn jurābhā rā rufū kun.|Mend these socks.|Actions|رفو کن
+656|تنگ|tang|adjective|neutral|tight|این بوت‌ها برایم تنگ است.|īn būthā barāyam tang ast.|These shoes are tight for me.|Descriptions|
+657|گشاد|gushād|adjective|neutral|loose|لباس‌های گشاد راحت‌تر هستند.|libāshā-ye gushād rāhat-tar hastand.|Loose clothes are more comfortable.|Descriptions|
+658|مود|mōd|noun|spoken|fashion|این رنگ حالا مود است.|īn rang hālā mōd ast.|This color is in fashion now.|Abstract Concepts|مد
+659|داغ|dāgh|noun|spoken|stain|روی پیراهنم یک داغ افتاد.|rō-ye pērāhanam yak dāgh uftād.|A stain got on my shirt.|Abstract Concepts|لکه
+660|کالی‌شویی|kālīshōyī|noun|spoken|laundry|ماشین کالی‌شویی خراب است.|māshīn-e kālīshōyī kharāb ast.|The washing machine is broken.|Abstract Concepts|لباس‌شویی
+661|طوفان|tūfān|noun|neutral|storm|دیشب طوفان شدیدی بود.|dīshab tūfān-e shadīdī būd.|There was a severe storm last night.|Nature & Weather|
+662|برق|barq|noun|neutral|lightning|برق آسمان بسیار روشن بود.|barq-e āsmān bisyār rawshan būd.|The lightning was very bright.|Abstract Concepts|
+663|رعد|ra'd|noun|neutral|thunder|صدای رعد ترسناک بود.|sadā-ye ra'd tarsnāk būd.|The sound of thunder was scary.|Abstract Concepts|
+664|مه|ma|noun|spoken|fog|در مه رانندگی خطرناک است.|dar ma rānandagī khatarnāk ast.|Driving in fog is dangerous.|Abstract Concepts|
+665|خنک‌زدگی|khunakzadagī|noun|spoken|frostbite|دست‌هایش دچار خنک‌زدگی شده است.|dasthāyash duchār-e khunakzadagī shuda ast.|His hands have suffered frostbite.|Abstract Concepts|سرمازدگی
+666|ژاله|zhāla|noun|neutral|hail|ژاله شیشه‌های موتر را شکست.|zhāla shīshahā-ye mōtar rā shikast.|The hail broke the car windows.|Abstract Concepts|تگرگ
+667|شمالک|shamālak|noun|spoken|breeze|شمالک خنک می‌وزد.|shamālak-e khunak mēwazad.|A cool breeze is blowing.|Abstract Concepts|نسیم
+668|مرطوب|martūb|adjective|neutral|humid|هوای اینجا بسیار مرطوب است.|hawā-ye īnjā bisyār martūb ast.|The weather here is very humid.|Descriptions|
+669|خشک|khushk|adjective|neutral|dry|در فصل گرما هوا خشک می‌شود.|dar fasl-e garmā hawā khushk mēshawad.|In the hot season, the weather becomes dry.|Descriptions|
+670|پیش‌بینی|pēshbīnī|noun|neutral|forecast|پیش‌بینی هوا نشان می‌دهد که فردا باران می‌بارد.|pēshbīnī-e hawā nishān mēdihad ki fardā bārān mēbārad.|The weather forecast shows it will rain tomorrow.|Abstract Concepts|
+671|درجه حرارت|daraja-e harārat|noun|neutral|temperature|درجه حرارت امروز چند است؟|daraja-e harārat-e imrōz chand ast?|What is the temperature today?|Abstract Concepts|
+672|درجه|daraja|noun|neutral|degree|هوا ده درجه زیر صفر است.|hawā da daraja zēr-e sifr ast.|The weather is ten degrees below zero.|Abstract Concepts|
+673|یخ زدن|yakh zadan|verb|neutral|to freeze|آب در پیاله یخ زده است.|āb dar pyāla yakh zada ast.|The water in the cup has frozen.|Actions|یخ زن
+674|ابری|abrī|adjective|neutral|cloudy|امروز هوا ابری است.|imrōz hawā abrī ast.|The weather is cloudy today.|Descriptions|
+675|آسمان صاف|āsmān-e sāf|noun|neutral|clear sky|آسمان صاف و آفتابی است.|āsmān-e sāf wa āftābī ast.|The clear sky is sunny.|Nature & Weather|
+676|کمان رستم|kamān-e rustam|noun|spoken|rainbow|بعد از باران کمان رستم پیدا شد.|ba'd az bārān kamān-e rustam paydā shud.|A rainbow appeared after the rain.|Abstract Concepts|رنگین کمان
+677|اقلیم|iqlīm|noun|neutral|climate|اقلیم افغانستان خشک است.|iqlīm-e afghānistān khushk ast.|The climate of Afghanistan is dry.|Abstract Concepts|آب و هوا
+678|فصل|fasl|noun|neutral|season|خزان فصل مورد علاقه من است.|khazān fasl-e mawrid-e alāqa-e man ast.|Autumn is my favorite season.|Abstract Concepts|
+679|خاکباد|khākbād|noun|spoken|dust storm|در دشت‌ها خاکباد زیاد است.|dar dashthā khākbād ziyād ast.|There are many dust storms in the plains.|Nature & Weather|
+680|ملایم|mulāyim|adjective|neutral|mild|هوای بهار بسیار ملایم است.|hawā-ye bahār bisyār mulāyim ast.|Spring weather is very mild.|Descriptions|
+681|شدید|shadīd|adjective|neutral|severe|باران شدید باعث سیلاب شد.|bārān-e shadīd bā'is-e sēlāb shud.|Severe rain caused a flood.|Descriptions|
+682|سیلاب|sēlāb|noun|neutral|flood|سیلاب خانه‌های زیادی را ویران کرد.|sēlāb khānahā-ye ziyādī rā wērān kard.|The flood destroyed many houses.|Abstract Concepts|سیل
+683|خشکسالی|khushksālī|noun|neutral|drought|دهقانان از خشکسالی نگران هستند.|dihqānān az khushksālī nigarān hastand.|Farmers are worried about the drought.|Abstract Concepts|
+684|دندآب|dandāb|noun|spoken|puddle|از روی دندآب خیز بزن.|az rō-ye dandāb khēz bizan.|Jump over the puddle.|Abstract Concepts|
+685|لشم|lashm|adjective|spoken|slippery|بعد از باران سرک لشم می‌شود.|ba'd az bārān sarak lashm mēshawad.|After the rain, the road becomes slippery.|Descriptions|لغزنده
+686|قطره|qatra|noun|neutral|drop|یک قطره باران روی دستم افتاد.|yak qatra-e bārān rō-ye dastam uftād.|A drop of rain fell on my hand.|Abstract Concepts|
+687|تب|tab|noun|neutral|fever|طفل تب بالایی دارد.|tifl tab-e bālāyī dārad.|The child has a high fever.|Abstract Concepts|
+688|سرفه|surfa|noun|neutral|cough|سرفه‌های خشک دارد.|surfahā-ye khushk dārad.|He has a dry cough.|Abstract Concepts|
+689|عطسه|atsa|noun|neutral|sneeze|مریضی او با عطسه شروع شد.|marīzī-e ō bā atsa shurō shud.|His illness started with a sneeze.|Abstract Concepts|
+690|گنس|gans|adjective|spoken|dizzy|سرم گنس است.|saram gans ast.|I feel dizzy.|Descriptions|گیج
+691|نسخه|nuskhā|noun|neutral|prescription|داکتر برایم نسخه داد.|dāktar barāyam nuskhā dād.|The doctor gave me a prescription.|Abstract Concepts|
+692|تابلیت|tāblēt|noun|spoken|pill|این تابلیت را بعد از نان بخور.|īn tāblēt rā ba'd az nān bukhur.|Take this pill after meals.|Abstract Concepts|قرص
+693|شربت|sharbat|noun|neutral|syrup|شربت سرفه طعم خوبی ندارد.|sharbat-e surfa ta'm-e khūbī nadārad.|Cough syrup doesn't taste good.|Abstract Concepts|
+694|پیچکاری|pēchkārī|noun|spoken|injection|من از پیچکاری می‌ترسم.|man az pēchkārī mētarsam.|I am afraid of injections.|Abstract Concepts|تزریق
+695|پٹی|patī|noun|spoken|bandage|روی زخمش پٹی بستند.|rō-ye zakhmash patī bastand.|They put a bandage on his wound.|Abstract Concepts|باند
+696|زخم|zakhm|noun|neutral|wound|زخمش هنوز خوب نشده است.|zakhmash hanōz khūb nashuda ast.|His wound hasn't healed yet.|Abstract Concepts|
+697|جور شدن|jōr shudan|verb|spoken|to heal|او به زودی جور می‌شود.|ō ba zōdī jōr mēshawad.|He will heal soon.|Actions|جور شو
+698|مسکن|musakkin|noun|neutral|painkiller|یک تابلیت مسکن خوردم.|yak tāblēt-e musakkin khōrdam.|I took a painkiller pill.|Abstract Concepts|
+699|حساسیت|hassāsiyat|noun|neutral|allergy|من به گل‌ها حساسیت دارم.|man ba gulhā hassāsiyat dāram.|I have an allergy to flowers.|Abstract Concepts|
+700|فشار خون|fishār-e khūn|noun|neutral|blood pressure|فشار خونش بالا است.|fishār-e khūnash bālā ast.|His blood pressure is high.|Body & Health|
+701|مرض|maraz|noun|neutral|disease|این یک مرض خطرناک است.|īn yak maraz-e khatarnāk ast.|This is a dangerous disease.|Body & Health|بیماری
+702|عرض|araz|noun|neutral|symptom|علائم این مریضی چیست؟|alāyim-e īn marīzī chīst?|What are the symptoms of this illness?|Abstract Concepts|علایم
+703|انتان|untān|noun|neutral|infection|زخمش انتان کرده است.|zakhmash untān karda ast.|His wound has an infection.|Abstract Concepts|عفونت
+704|ویروس|wīrūs|noun|neutral|virus|این ویروس به سرعت پخش می‌شود.|īn wīrūs ba sur'at pakhsh mēshawad.|This virus spreads quickly.|Abstract Concepts|
+705|میکروب|mīkrōb|noun|neutral|bacteria|دست‌هایت را بشوی تا میکروب‌ها کشته شوند.|dasthāyat rā bishōy tā mīkrōbhā kushta shawand.|Wash your hands to kill the bacteria.|Abstract Concepts|
+706|عملیات|amaliyāt|noun|spoken|surgery|فردا داکتران او را عملیات می‌کنند.|fardā dāktarān ō rā amaliyāt mēkunand.|Doctors will perform surgery on him tomorrow.|Abstract Concepts|جراحی
+707|داکتر دندان|dāktar-e dandān|noun|spoken|dentist|برای کشیدن دندانم پیش داکتر دندان رفتم.|barāye kashīdan-e dandānam pēsh-e dāktar-e dandān raftam.|I went to the dentist to pull my tooth.|Abstract Concepts|دندان‌پزشک
+708|امبولانس|ambulāns|noun|neutral|ambulance|امبولانس به سرعت رسید.|ambulāns ba sur'at rasīd.|The ambulance arrived quickly.|Abstract Concepts|
+709|عاجل|ājil|adjective|neutral|emergency|این یک وضعیت عاجل است.|īn yak waz'iyat-e ājil ast.|This is an emergency situation.|Descriptions|فوری
+710|نبض|nabz|noun|neutral|pulse|داکتر نبض مریض را گرفت.|dāktar nabz-e marīz rā girift.|The doctor took the patient's pulse.|Abstract Concepts|
+711|ترمامیتر|tarmāmītar|noun|neutral|thermometer|درجه حرارت را با ترمامیتر اندازه بگیرید.|daraja-e harārat rā bā tarmāmītar andāza bigīrēd.|Measure the temperature with a thermometer.|Abstract Concepts|دماسنج
+712|استفراغ|istifrāgh|noun|neutral|vomit|بعد از خوردن آن غذا استفراغ کرد.|ba'd az khōrdan-e ān ghazā istifrāgh kard.|He vomited after eating that food.|Abstract Concepts|
+713|دل‌بدی|dilbadī|noun|spoken|nausea|در موتر دل‌بدی می‌شوم.|dar mōtar dilbadī mēshawam.|I get nausea in the car.|Abstract Concepts|حالت تهوع
+714|کبودی|kabūdī|noun|neutral|bruise|روی دستش یک کبودی بزرگ است.|rō-ye dastash yak kabūdī-e buzurg ast.|There is a large bruise on his arm.|Abstract Concepts|
+715|بجلک پا|bujulak-e pā|noun|spoken|ankle|بجلک پایم پیچ خورد.|bujulak-e pāyam pēch khōrd.|My ankle twisted.|Abstract Concepts|مچ پا
+716|بند دست|band-e dast|noun|spoken|wrist|ساعت را در بند دستم می‌بندم.|sā'at rā dar band-e dastam mēbandam.|I wear a watch on my wrist.|Abstract Concepts|مچ دست
+717|آرنج|āranj|noun|neutral|elbow|آرنجم به دروازه خورد.|āranjam ba darwāza khōrd.|My elbow hit the door.|Abstract Concepts|
+718|سینه|sīna|noun|neutral|chest|درد شدیدی در سینه احساس می‌کنم.|dard-e shadīdī dar sīna ihsās mēkunam.|I feel a severe pain in my chest.|Body & Health|
+719|کمر|kamar|noun|neutral|waist|کمربند را دور کمرم بستم.|kamarband rā dōr-e kamaram bastam.|I tied the belt around my waist.|Abstract Concepts|
+720|سرین|surīn|noun|neutral|hip|درد سرین او را اذیت می‌کند.|dard-e surīn ō rā aziyat mēkunad.|Hip pain bothers him.|Abstract Concepts|
+721|ران|rān|noun|neutral|thigh|عضله ران او کشیده شده است.|azala-e rān-e ō kashīda shuda ast.|His thigh muscle is pulled.|Abstract Concepts|
+722|لنگ پا|ling-e pā|noun|spoken|calf|لنگ پایم درد می‌کند.|ling-e pāyam dard mēkunad.|My calf hurts.|Abstract Concepts|
+723|کوری|kūrī|noun|spoken|heel|کوری بوتم بلند است.|kūrī-e būtam buland ast.|My shoe's heel is high.|Abstract Concepts|پاشنه
+724|انگشت پا|angusht-e pā|noun|neutral|toe|انگشت پایش زخم شده است.|angusht-e pāyash zakhm shuda ast.|His toe is injured.|Body & Health|
+725|شست|shast|noun|neutral|thumb|او با شست خود اشاره کرد.|ō bā shast-e khud ishāra kard.|He pointed with his thumb.|Abstract Concepts|
+726|ناخن|nākhun|noun|neutral|nail|ناخن‌هایت را کوتاه کن.|nākhunhāyat rā kōtāh kun.|Cut your nails.|Abstract Concepts|
+727|پیشانی|pēshānī|noun|neutral|forehead|پیشانی او گرم است.|pēshānī-e ō garm ast.|His forehead is warm.|Abstract Concepts|
+728|رخسار|rukhsār|noun|neutral|cheek|اشک از رخسارش جاری شد.|ashk az rukhsārash jārī shud.|A tear flowed from her cheek.|Abstract Concepts|گونه
+729|الاشه|alāsha|noun|spoken|chin|ریش او در الاشه اش بلند است.|rēsh-e ō dar alāsha ash buland ast.|His beard is long on his chin.|Abstract Concepts|چانه
+730|فک|fak|noun|neutral|jaw|هنگام جویدن غذا فکم درد می‌کند.|hangām-e jawīdan-e ghazā fakam dard mēkunad.|My jaw hurts when chewing food.|Abstract Concepts|
+731|ابرو|abrō|noun|neutral|eyebrow|ابروهای او سیاه هستند.|abrōhā-ye ō siyāh hastand.|His eyebrows are black.|Abstract Concepts|
+732|مژه|muzha|noun|neutral|eyelash|مژه‌های او دراز است.|muzhahā-ye ō darāz ast.|Her eyelashes are long.|Abstract Concepts|
+733|پلک|pilk|noun|neutral|eyelid|پلک‌هایم سنگین شده‌اند.|pilkhāyam sangīn shuda-and.|My eyelids have become heavy.|Abstract Concepts|
+734|لب|lab|noun|neutral|lip|لب‌هایم از سردی خشک شده‌اند.|labhāyam az sardī khushk shuda-and.|My lips are dry from the cold.|Body & Health|
+735|گلو|gūlō|noun|neutral|throat|گلویم درد می‌کند.|gūlōyam dard mēkunad.|My throat hurts.|Abstract Concepts|
+736|گردن|gardan|noun|neutral|neck|گردنبند را در گردنش انداخت.|gardanband rā dar gardanash andākht.|She put the necklace around her neck.|Body & Health|
+737|ستون فقرات|sutūn-e faqarāt|noun|neutral|spine|ستون فقرات او آسیب دیده است.|sutūn-e faqarāt-e ō āsēb dīda ast.|His spine is injured.|Abstract Concepts|
+738|قبرغه|qaburgha|noun|spoken|rib|قبرغه‌اش در تصادف شکست.|qaburgha-ash dar tasāduf shikast.|His rib broke in the accident.|Abstract Concepts|دنده
+739|عضله|azala|noun|neutral|muscle|ورزش عضلات را قوی می‌سازد.|warzish azalāt rā qawī mēsāzad.|Exercise makes muscles strong.|Abstract Concepts|
+740|مفصل|mafsal|noun|neutral|joint|مفصل زانوی او پندیده است.|mafsal-e zānō-ye ō pandīda ast.|His knee joint is swollen.|Abstract Concepts|
+741|مغز|maghz|noun|neutral|brain|مغز انسان بسیار پیچیده است.|maghz-e insān bisyār pēchīda ast.|The human brain is very complex.|Abstract Concepts|
+742|رگ|rag|noun|neutral|vein|داکتر رگ او را پیدا کرد.|dāktar rag-e ō rā paydā kard.|The doctor found his vein.|Abstract Concepts|
+743|طرزالعمل|tarzul'amal|noun|neutral|recipe|طرزالعمل این غذا چیست؟|tarzul'amal-e īn ghazā chīst?|What is the recipe for this food?|Abstract Concepts|
+744|مواد لازم|mawād-e lāzim|noun|neutral|ingredient|مواد لازم برای کیک را خریدم.|mawād-e lāzim barāye kayk rā kharīdam.|I bought the ingredients for the cake.|Abstract Concepts|
+745|مصالح|masāla|noun|spoken|spices|در این غذا مصالح زیاد است.|dar īn ghazā masāla ziyād ast.|There are many spices in this food.|Abstract Concepts|ادویه
+746|خمیر|khamīr|noun|neutral|dough|مادرم خمیر را آماده کرد.|mādaram khamīr rā āmāda kard.|My mother prepared the dough.|Abstract Concepts|
+747|داش|dāsh|noun|spoken|oven|نان را در داش پختیم.|nān rā dar dāsh pukhtēm.|We baked the bread in the oven.|Abstract Concepts|فر
+748|دیگ|dēg|noun|neutral|pot|دیگ روی اجاق است.|dēg rō-ye ujāq ast.|The pot is on the stove.|Abstract Concepts|قابلمه
+749|تخم‌پزی|tukhmpazī|noun|spoken|pan|تخم‌ها را در تخم‌پزی سرخ کن.|tukhmhā rā dar tukhmpazī surkh kun.|Fry the eggs in the pan.|Abstract Concepts|ماهیتابه
+750|کاسه|kāsa|noun|neutral|bowl|یک کاسه شوربا بیاور.|yak kāsa shōrbā biyāwar.|Bring a bowl of soup.|Abstract Concepts|
+751|بشقاب|bushqāb|noun|neutral|plate|غذا را در بشقاب کشیدم.|ghazā rā dar bushqāb kashīdam.|I served the food on the plate.|Abstract Concepts|
+752|پنجه|panja|noun|spoken|fork|با قاشق و پنجه غذا می‌خوریم.|bā qāshuq wa panja ghazā mēkhōrēm.|We eat with a spoon and fork.|Abstract Concepts|چنگال
+753|قاشق|qāshuq|noun|neutral|spoon|برای خوردن سوپ قاشق ضرورت است.|barāye khōrdan-e sōp qāshuq zarūrat ast.|A spoon is needed to eat soup.|Abstract Concepts|
+754|کارد|kārd|noun|neutral|knife|کارد بسیار تیز است.|kārd bisyār tēz ast.|The knife is very sharp.|Abstract Concepts|چاقو
+755|سرخ کردن|surkh kardan|verb|neutral|to fry|کچالوها را در روغن سرخ کن.|kachālōhā rā dar rōghan surkh kun.|Fry the potatoes in oil.|Actions|سرخ کن
+756|جوشاندن|jōshāndan|verb|neutral|to boil|آب را برای چای جوشاند.|āb rā barāye chāy jōshānd.|He boiled the water for tea.|Actions|جوشان
+757|توته کردن|tōta kardan|verb|spoken|to chop|پیاز را توته کن.|piyāz rā tōta kun.|Chop the onion.|Actions|توته کن
+758|پوست کردن|pōst kardan|verb|neutral|to peel|من سیب را پوست می‌کنم.|man sēb rā pōst mēkunam.|I peel the apple.|Actions|پوست کن
+759|شور دادن|shōr dādan|verb|spoken|to stir|آش را شور بده تا نسوزد.|āsh rā shōr bida tā nasōzad.|Stir the soup so it doesn't burn.|Actions|شور ده
+760|گډول|gadowal|verb|spoken|to mix|مواد را با هم گډ کن.|mawād rā bā ham gad kun.|Mix the ingredients together.|Actions|گډ کن
+761|ترش|tursh|adjective|neutral|sour|این لیمو بسیار ترش است.|īn lēmō bisyār tursh ast.|This lemon is very sour.|Descriptions|
+762|تلخ|talkh|adjective|neutral|bitter|دوا تلخ بود اما خوردم.|dawā talkh būd ammā khōrdam.|The medicine was bitter but I took it.|Descriptions|
+763|تند|tund|adjective|neutral|spicy|غذاهای هندی تند هستند.|ghazāhā-ye hindī tund hastand.|Indian foods are spicy.|Descriptions|
+764|خام|khām|adjective|neutral|raw|گوشت هنوز خام است.|gōsht hanōz khām ast.|The meat is still raw.|Descriptions|
+765|گنده|ganda|adjective|spoken|rotten|سیب‌های گنده را دور بینداز.|sēbhā-ye ganda rā dōr binyandāz.|Throw away the rotten apples.|Descriptions|خراب
+766|طعم|ta'm|noun|neutral|flavor|طعم این غذا عالی است.|ta'm-e īn ghazā ālī ast.|The flavor of this food is excellent.|Abstract Concepts|مزه
+767|اشتها|ishtihā|noun|neutral|appetite|من امروز هیچ اشتها ندارم.|man imrōz hēch ishtihā nadāram.|I have no appetite today.|Abstract Concepts|
+768|اینترنت|intarnit|noun|neutral|internet|من از اینترنت استفاده می‌کنم.|man az intarnit istifāda mēkunum.|I use the internet.|Science & Tech|
+769|کمپیوتر|kampyūtar|noun|neutral|computer|کمپیوتر من خراب است.|kampyūtar-i man kharāb ast.|My computer is broken.|Science & Tech|
+770|نرم‌افزار|narm-afzār|noun|neutral|software|این نرم‌افزار جدید است.|īn narm-afzār jadīd ast.|This software is new.|Science & Tech|
+771|صفحه نمایش|safha-yi namāyish|noun|neutral|screen|صفحه نمایش کلان است.|safha-yi namāyish kalān ast.|The screen is large.|Abstract Concepts|
+772|باتری|batrī|noun|neutral|battery|باتری تیلیفون من خلاص شد.|batrī-yi tilifōn-i man khalās shud.|My phone's battery died.|Abstract Concepts|بتری
+773|کیبورد|kībōrd|noun|neutral|keyboard|کیبورد لپ‌تاپم خراب است.|kībōrd-i laptāp-am kharāb ast.|My laptop keyboard is broken.|Abstract Concepts|
+774|دانلود|dānlōd|noun|neutral|download|من یک فایل دانلود کردم.|man yak fāyl dānlōd kadum.|I downloaded a file.|Abstract Concepts|
+775|فایل|fāyl|noun|neutral|file|این فایل مهم است.|īn fāyl muhim ast.|This file is important.|Abstract Concepts|
+776|لینک|lēnk|noun|neutral|link|روی این لینک کلیک کنید.|rōy-i īn lēnk kilīk kunēd.|Click on this link.|Abstract Concepts|
+777|شبکه|shabaka|noun|neutral|network|شبکه اینجا ضعیف است.|shabaka īnjā za'īf ast.|The network is weak here.|Abstract Concepts|
+778|دستگاه|dastgāh|noun|neutral|device|این دستگاه چگونه کار می‌کند؟|īn dastgāh chigūna kār mēkuna?|How does this device work?|Abstract Concepts|
+779|اتصال|ittisāl|noun|neutral|connection|اتصال اینترنت قطع شد.|ittisāl-i intarnit qat' shud.|The internet connection dropped.|Abstract Concepts|
+780|رمز عبور|ramz-i ubūr|noun|neutral|password|رمز عبور خود را فراموش کردم.|ramz-i ubūr-i khud ra farāmōsh kadum.|I forgot my password.|Abstract Concepts|
+781|حساب کاربری|hisāb-i kārbārī|noun|neutral|user account|من یک حساب کاربری جدید ساختم.|man yak hisāb-i kārbārī-yi jadīd sākhtum.|I created a new user account.|Abstract Concepts|
+782|پیام|payām|noun|neutral|message|من برایت یک پیام روان کردم.|man barēt yak payām rawān kadum.|I sent you a message.|Abstract Concepts|
+783|تماس تصویری|tamās-i taswīrī|noun|neutral|video call|ما تماس تصویری گرفتیم.|mā tamās-i taswīrī giriftēm.|We made a video call.|Abstract Concepts|
+784|اپلیکیشن|aplīkēshan|noun|neutral|application|این اپلیکیشن رایگان است.|īn aplīkēshan rāygān ast.|This application is free.|Abstract Concepts|برنامه
+785|بروزرسانی|burōz-rasānī|noun|neutral|update|نیاز به بروزرسانی دارد.|niyāz ba burōz-rasānī dāra.|It needs an update.|Abstract Concepts|آپدیت
+786|دیتا|dētā|noun|neutral|data|دیتای من خلاص شده.|dētā-yi man khalās shuda.|My data is finished.|Abstract Concepts|
+787|چارجر|chārjar|noun|neutral|charger|چارجر تیلیفون داری؟|chārjar-i tilifōn dārī?|Do you have a phone charger?|Abstract Concepts|
+788|سیگنال|sīgnāl|noun|neutral|signal|اینجا سیگنال نیست.|īnjā sīgnāl nēst.|There is no signal here.|Abstract Concepts|
+789|مرورگر|murūr-gar|noun|neutral|browser|کدام مرورگر را استفاده می‌کنی؟|kudām murūr-gar ra istifāda mēkunī?|Which browser do you use?|Abstract Concepts|
+790|میکروفون|māykrōfūn|noun|neutral|microphone|میکروفون روشن است.|māykrōfūn rōshan ast.|The microphone is on.|Abstract Concepts|
+791|اسپیکر|ispaykar|noun|neutral|speaker|صدای اسپیکر بلند است.|sadā-yi ispaykar buland ast.|The speaker's volume is loud.|Abstract Concepts|بلندگو
+792|استاد|ustād|noun|neutral|professor, teacher|استاد ما بسیار مهربان است.|ustād-i mā bisyār mihrabān ast.|Our professor is very kind.|Abstract Concepts|
+793|نمره|numra|noun|neutral|grade, score|نمره من در امتحان خوب بود.|numra-i man dar imtihān khūb būd.|My grade in the exam was good.|Abstract Concepts|
+794|کار خانگی|kār-i khānagī|noun|neutral|homework|من کار خانگی خود را انجام دادم.|man kār-i khānagī-yi khud ra anjām dādum.|I did my homework.|Abstract Concepts|
+795|مضمون|mazmūn|noun|neutral|subject, course|مضمون دلخواهت چیست؟|mazmūn-i dilkhwāh-it chīst?|What is your favorite subject?|Abstract Concepts|
+796|سند|sanad|noun|neutral|degree, document|او سند لیسانس دارد.|ō sanad-i lēsāns dāra.|He has a bachelor's degree.|Abstract Concepts|
+797|مطالعه کردن|mutāla'a kadan|verb|neutral|to study|من هر شب مطالعه می‌کنم.|man har shab mutāla'a mēkunum.|I study every night.|Actions|mutāla'a mēkun-
+798|تحقیق|tahqīq|noun|neutral|research|او مصروف تحقیق است.|ō masrūf-i tahqīq ast.|He is busy with research.|Abstract Concepts|
+799|مقاله|maqāla|noun|neutral|article|من یک مقاله می‌نویسم.|man yak maqāla mēnawīsum.|I am writing an article.|Abstract Concepts|
+800|قاموس|qāmūs|noun|neutral|dictionary|من از قاموس استفاده می‌کنم.|man az qāmūs istifāda mēkunum.|I use a dictionary.|Abstract Concepts|لغت‌نامه
+801|گرامر|garāmar|noun|neutral|grammar|گرامر این زبان سخت است.|garāmar-i īn zabān sakht ast.|The grammar of this language is hard.|Abstract Concepts|دستور زبان
+802|سمستر|simistar|noun|neutral|semester|این سمستر آخر من است.|īn simistar-i ākhir-i man ast.|This is my last semester.|Abstract Concepts|
+803|کتاب درسی|kitāb-i darsī|noun|neutral|textbook|کتاب درسی را خریدم.|kitāb-i darsī ra kharīdum.|I bought the textbook.|Abstract Concepts|
+804|لابراتوار|lābrātwār|noun|neutral|laboratory|ما در لابراتوار کار می‌کنیم.|mā dar lābrātwār kār mēkunēm.|We work in the laboratory.|Abstract Concepts|آزمایشگاه
+805|فراغت|farāghat|noun|neutral|graduation|جشن فراغت فردا است.|jashn-i farāghat fardā ast.|The graduation party is tomorrow.|Abstract Concepts|
+806|بورس تحصیلی|būrs-i tahsīlī|noun|neutral|scholarship|او بورس تحصیلی گرفت.|ō būrs-i tahsīlī girift.|He got a scholarship.|Abstract Concepts|
+807|آزمون|āzmūn|noun|neutral|test|آزمون بسیار آسان بود.|āzmūn bisyār āsān būd.|The test was very easy.|Abstract Concepts|
+808|کتابچه|kitābcha|noun|neutral|notebook|یک کتابچه جدید خریدم.|yak kitābcha-yi jadīd kharīdum.|I bought a new notebook.|Abstract Concepts|
+809|تدریس کردن|tadrīs kadan|verb|neutral|to teach|او در مکتب تدریس می‌کند.|ō dar maktab tadrīs mēkuna.|He teaches at the school.|Actions|tadrīs mēkun-
+810|لکچر|lakchar|noun|neutral|lecture|لکچر استاد جالب بود.|lakchar-i ustād jālib būd.|The professor's lecture was interesting.|Abstract Concepts|
+811|انستیتوت|institūt|noun|neutral|institute|من در انستیتوت زبان می‌خوانم.|man dar institūt zabān mēkhwānum.|I study language at the institute.|Abstract Concepts|
+812|تعلیم و تربیه|ta'līm u tarbiya|noun|neutral|education|تعلیم و تربیه برای همه مهم است.|ta'līm u tarbiya barāyi hama muhim ast.|Education is important for everyone.|Abstract Concepts|
+813|شهادت‌نامه|shuhādat-nāma|noun|neutral|certificate|شهادت‌نامه مکتب را گرفتم.|shuhādat-nāma-yi maktab ra giriftum.|I got my school certificate.|Abstract Concepts|
+814|نقاشی|naqqāshī|noun|neutral|painting|این نقاشی زیبا است.|īn naqqāshī zēbā ast.|This painting is beautiful.|Abstract Concepts|
+815|آله موسیقی|āla-yi mūsīqī|noun|neutral|instrument|کدام آله موسیقی را می‌نوازی؟|kudām āla-yi mūsīqī ra mēnawāzī?|Which instrument do you play?|Abstract Concepts|
+816|تیاتر|tiyātar|noun|neutral|theater|ما به تیاتر رفتیم.|mā ba tiyātar raftēm.|We went to the theater.|Arts & Culture|
+817|گالری|gālarī|noun|neutral|gallery|گالری هنری باز است.|gālarī-yi hunarī bāz ast.|The art gallery is open.|Abstract Concepts|
+818|نمایشگاه|namāyishgāh|noun|neutral|exhibition|نمایشگاه کتاب فردا است.|namāyishgāh-i kitāb fardā ast.|The book exhibition is tomorrow.|Abstract Concepts|
+819|مجسمه‌سازی|mujassama-sāzī|noun|neutral|sculpture, sculpting|او در مجسمه‌سازی مهارت دارد.|ō dar mujassama-sāzī mahārat dāra.|He is skilled in sculpting.|Abstract Concepts|
+820|طراحی|tarrāhī|noun|neutral|design|طراحی این خانه قشنگ است.|tarrāhī-yi īn khāna qashang ast.|The design of this house is beautiful.|Abstract Concepts|دیزاین
+821|هنرمند|hunarmand|noun|neutral|artist|او یک هنرمند مشهور است.|ō yak hunarmand-i mashhūr ast.|He is a famous artist.|Abstract Concepts|
+822|برس نقاشی|burus-i naqqāshī|noun|neutral|paintbrush|من یک برس نقاشی خریدم.|man yak burus-i naqqāshī kharīdum.|I bought a paintbrush.|Abstract Concepts|
+823|بوم|būm|noun|neutral|canvas|او روی بوم نقاشی می‌کند.|ō rōy-i būm naqqāshī mēkuna.|He paints on canvas.|Abstract Concepts|تاروپود
+824|رسم کردن|rasm kadan|verb|neutral|to draw|کودک یک گل رسم کرد.|kōdak yak gul rasm kad.|The child drew a flower.|Arts & Culture|rasm mēkun-
+825|عکاسی|akkāsī|noun|neutral|photography|عکاسی یک هنر است.|akkāsī yak hunar ast.|Photography is an art.|Abstract Concepts|
+826|پرتره|purtrī|noun|neutral|portrait|او پرتره مرا کشید.|ō purtrī-yi mara kashīd.|He drew my portrait.|Abstract Concepts|تصویر
+827|رمان|rumān|noun|neutral|novel|این رمان بسیار جالب است.|īn rumān bisyār jālib ast.|This novel is very interesting.|Abstract Concepts|
+828|اجرا کردن|ijrā kadan|verb|neutral|to perform|او در کنسرت اجرا می‌کند.|ō dar kansart ijrā mēkuna.|He performs in the concert.|Actions|ijrā mēkun-
+829|کنسرت|kansart|noun|neutral|concert|تکت کنسرت را خریدی؟|tikit-i kansart ra kharīdī?|Did you buy the concert ticket?|Abstract Concepts|
+830|صنایع دستی|sanāyi'-i dastī|noun|neutral|handicraft|افغانستان صنایع دستی زیبا دارد.|afghānistān sanāyi'-i dastī-yi zēbā dāra.|Afghanistan has beautiful handicrafts.|Abstract Concepts|
+831|معماری|mi'mārī|noun|neutral|architecture|معماری این مسجد قدیمی است.|mi'mārī-yi īn masjid qadīmī ast.|The architecture of this mosque is old.|Abstract Concepts|
+832|اخبار|akhbār|noun|neutral|news|من اخبار را شنیدم.|man akhbār ra shinīdum.|I heard the news.|Abstract Concepts|
+833|روزنامه|rōznāma|noun|neutral|newspaper|پدرم روزنامه می‌خواند.|padar-am rōznāma mēkhwāna.|My father reads the newspaper.|Abstract Concepts|
+834|مجله|majalla|noun|neutral|magazine|این مجله معلوماتی است.|īn majalla ma'lūmātī ast.|This magazine is informative.|Abstract Concepts|
+835|تلویزیون|tilwīzyōn|noun|neutral|television|ما تلویزیون می‌بینیم.|mā tilwīzyōn mēbīnēm.|We are watching television.|Abstract Concepts|
+836|رادیو|rādyō|noun|neutral|radio|در موتر رادیو گوش می‌دهم.|dar mōtar rādyō gōsh mētiyum.|I listen to the radio in the car.|Abstract Concepts|
+837|کانال|kānāl|noun|neutral|channel|کدام کانال را تماشا می‌کنی؟|kudām kānāl ra tamāshā mēkunī?|Which channel are you watching?|Abstract Concepts|
+838|مصاحبه|musāhiba|noun|neutral|interview|فردا مصاحبه کاری دارم.|fardā musāhiba-yi kārī dārum.|I have a job interview tomorrow.|Abstract Concepts|
+839|گزارش|guzārish|noun|neutral|report|او یک گزارش آماده کرد.|ō yak guzārish āmāda kad.|He prepared a report.|Abstract Concepts|
+840|نشرات|nasharāt|noun|neutral|broadcast|نشرات این شبکه خوب است.|nasharāt-i īn shabaka khūb ast.|The broadcast of this network is good.|Abstract Concepts|
+841|اعلان|i'lān|noun|neutral|advertisement|من اعلان را در روزنامه دیدم.|man i'lān ra dar rōznāma dīdum.|I saw the advertisement in the newspaper.|Abstract Concepts|تبلیغات
+842|شبکه‌های اجتماعی|shabaka-hā-yi ijtimā'ī|noun|neutral|social media|جوانان زیاد از شبکه‌های اجتماعی استفاده می‌کنند.|jawānān ziyād az shabaka-hā-yi ijtimā'ī istifāda mēkunand.|Young people use social media a lot.|Abstract Concepts|
+843|سرخط|sar-khat|noun|neutral|headline|سرخط خبرها چیست؟|sar-khat-i khabar-hā chīst?|What are the news headlines?|Abstract Concepts|
+844|رسانه‌ها|rasāna-hā|noun|neutral|media|رسانه‌ها نقش مهمی دارند.|rasāna-hā naqsh-i muhimmē dārand.|The media has an important role.|Abstract Concepts|
+845|دنبال‌کننده|dunbāl-kunanda|noun|neutral|follower|او هزار دنبال‌کننده دارد.|ō hazār dunbāl-kunanda dāra.|He has a thousand followers.|Abstract Concepts|فالوور
+846|نشر کردن|nashar kadan|verb|neutral|to publish|کتاب جدید خود را نشر کرد.|kitāb-i jadīd-i khud ra nashar kad.|He published his new book.|Actions|nashar mēkun-
+847|مطبوعات|matbū'āt|noun|neutral|press|آزادی مطبوعات مهم است.|āzādī-yi matbū'āt muhim ast.|Freedom of the press is important.|Abstract Concepts|
+848|قسمت|qismat|noun|neutral|episode|قسمت اول سریال جالب بود.|qismat-i awwal-i siryāl jālib būd.|The first episode of the series was interesting.|Abstract Concepts|
+849|سریال|siryāl|noun|neutral|series|من هر شب این سریال را می‌بینم.|man har shab īn siryāl ra mēbīnum.|I watch this series every night.|Abstract Concepts|
+850|مستند|mustanad|noun|neutral|documentary|یک مستند درباره طبیعت دیدم.|yak mustanad dar bāra-yi tabī'at dīdum.|I watched a documentary about nature.|Abstract Concepts|
+851|خبر عاجل|khabar-i 'ājil|noun|neutral|breaking news|خبر عاجل از تلویزیون پخش شد.|khabar-i 'ājil az tilwīzyōn pakhsh shud.|Breaking news was broadcast on TV.|Abstract Concepts|
+852|بینندگان|bīnandagān|noun|neutral|audience, viewers|تعداد بینندگان زیاد است.|ta'dād-i bīnandagān ziyād ast.|The number of viewers is high.|Abstract Concepts|
+853|چنل|chanāl|noun|neutral|channel|چنل یوتیوب من را سبسکرایب کنید.|chanāl-i yūtiyūb-i man ra sabskarāyb kunēd.|Subscribe to my YouTube channel.|Abstract Concepts|
+854|ورزش|warzish|noun|neutral|sports, exercise|ورزش برای صحت مفید است.|warzish barāyi sihat mufīd ast.|Sports are good for health.|Abstract Concepts|
+855|آب‌بازی|āb-bāzī|noun|neutral|swimming|ما برای آب‌بازی رفتیم.|mā barāyi āb-bāzī raftēm.|We went swimming.|Abstract Concepts|شنا
+856|شطرنج|shatranj|noun|neutral|chess|من شطرنج بازی کردن را دوست دارم.|man shatranj bāzī kadan ra dōst dārum.|I like playing chess.|Abstract Concepts|
+857|باغداری|bāghdārī|noun|neutral|gardening|پدرم به باغداری علاقه دارد.|padar-am ba bāghdārī alāqa dāra.|My father is interested in gardening.|Abstract Concepts|
+858|آشپزی|āshpazī|noun|neutral|cooking|آشپزی مادر من عالی است.|āshpazī-yi mādar-i man ālī ast.|My mother's cooking is excellent.|Abstract Concepts|
+859|کتاب‌خوانی|kitāb-khānī|noun|neutral|reading|کتاب‌خوانی ذهن را باز می‌کند.|kitāb-khānī zihn ra bāz mēkuna.|Reading opens the mind.|Abstract Concepts|
+860|گیم زدن|gēm zadan|verb|spoken|to play video games|او تمام روز گیم می‌زند.|ō tamām-i rōz gēm mēzana.|He plays video games all day.|Arts & Culture|gēm mēzan-
+861|کلکسیون|kilaksyūn|noun|neutral|collection|من کلکسیون سکه دارم.|man kilaksyūn-i sikka dārum.|I have a coin collection.|Abstract Concepts|
+862|کمپینگ|kampīng|noun|neutral|camping|ما آخر هفته به کمپینگ می‌رویم.|mā ākhir-i hafta ba kampīng mērawēm.|We are going camping this weekend.|Abstract Concepts|خیمه زدن
+863|بایسکل‌رانی|bāyskil-rānī|noun|neutral|cycling|بایسکل‌رانی ورزش خوبی است.|bāyskil-rānī warzish-i khūbī ast.|Cycling is a good exercise.|Abstract Concepts|
+864|یوگا|yōgā|noun|neutral|yoga|من هر صبح یوگا انجام می‌دهم.|man har subh yōgā anjām mētiyum.|I do yoga every morning.|Abstract Concepts|
+865|نویسندگی|nawīsandagī|noun|neutral|writing|او به نویسندگی علاقه دارد.|ō ba nawīsandagī alāqa dāra.|He is interested in writing.|Abstract Concepts|
+866|رقص|raqs|noun|neutral|dancing|آنها در محفل رقص کردند.|ānhā dar mahfil raqs kadand.|They danced at the party.|Abstract Concepts|
+867|دوش|dawish|noun|neutral|running|من هر روز دوش می‌کنم.|man har rōz dawish mēkunum.|I go running every day.|Abstract Concepts|
+868|ماهی‌گیری|māhī-gīrī|noun|neutral|fishing|ما برای ماهی‌گیری به دریا رفتیم.|mā barāyi māhī-gīrī ba daryā raftēm.|We went to the river for fishing.|Abstract Concepts|
+869|پختن کیک|pukhtan-i kēk|noun|neutral|baking|پختن کیک کار آسانی است.|pukhtan-i kēk kār-i āsānī ast.|Baking a cake is an easy task.|Abstract Concepts|
+870|رسامی|rassāmī|noun|neutral|drawing, sketching|رسامی او بسیار خوب است.|rassāmī-yi ō bisyār khūb ast.|His drawing is very good.|Abstract Concepts|
+871|خیاطی|khayyātī|noun|neutral|sewing, tailoring|مادرم خیاطی می‌کند.|mādar-am khayyātī mēkuna.|My mother sews.|Abstract Concepts|
+872|نجاری|najjārī|noun|neutral|woodworking, carpentry|او در کارگاه نجاری کار می‌کند.|ō dar kār-gāh-i najjārī kār mēkuna.|He works in a carpentry workshop.|Abstract Concepts|
+873|صخره‌نوردی|sakhra-nawardī|noun|neutral|rock climbing|صخره‌نوردی ورزش خطرناکی است.|sakhra-nawardī warzish-i khatarnākī ast.|Rock climbing is a dangerous sport.|Abstract Concepts|
+874|آوازخوانی|āwāz-khwānī|noun|neutral|singing|آوازخوانی او زیباست.|āwāz-khwānī-yi ō zēbā-st.|Her singing is beautiful.|Abstract Concepts|
+875|چکش|chakush|noun|neutral|hammer|من با چکش میخ را زدم.|man bā chakush mēkh ra zadum.|I hit the nail with a hammer.|Abstract Concepts|
+876|پیچ‌کش|pēch-kash|noun|neutral|screwdriver|پیچ‌کش را به من بده.|pēch-kash ra ba man bidi.|Give me the screwdriver.|Abstract Concepts|
+877|رنچ|ranch|noun|neutral|wrench|برای این کار رنچ ضرورت داریم.|barāyi īn kār ranch zarūrat dārēm.|We need a wrench for this work.|Abstract Concepts|آچار
+878|پلاس|palās|noun|neutral|pliers|با پلاس سیم را قطع کن.|bā palās sīm ra qat' kun.|Cut the wire with pliers.|Abstract Concepts|
+879|اره|arra|noun|neutral|saw|او با اره چوب را برید.|ō bā arra chōb ra burīd.|He cut the wood with a saw.|Abstract Concepts|
+880|میخ|mēkh|noun|neutral|nail|یک میخ در دیوار بکوب.|yak mēkh dar dēwār bukōb.|Hammer a nail into the wall.|Abstract Concepts|
+881|پیچ|pēch|noun|neutral|screw|این پیچ شل شده است.|īn pēch shul shuda ast.|This screw is loose.|Abstract Concepts|
+882|متر|mitr|noun|neutral|tape measure|طول اتاق را با متر اندازه بگیر.|tūl-i utāq ra bā mitr andāza bigīr.|Measure the length of the room with a tape measure.|Science & Tech|
+883|برمه|barma|noun|neutral|drill|او با برمه دیوار را سوراخ کرد.|ō bā barma dēwār ra sūrākh kad.|He drilled a hole in the wall with a drill.|Abstract Concepts|
+884|قیچی|qaychī|noun|neutral|scissors|تکه را با قیچی ببر.|tuka ra bā qaychī bubur.|Cut the cloth with scissors.|Abstract Concepts|
+885|تبر|tabar|noun|neutral|axe|او با تبر هیزم می‌شکند.|ō bā tabar hēzum mēshikana.|He chops firewood with an axe.|Abstract Concepts|
+886|زینه|zīna|noun|neutral|ladder, stairs|از زینه بالا برو.|az zīna bālā buru.|Go up the ladder.|Abstract Concepts|
+887|گروپ دستی|grūp-i dastī|noun|neutral|flashlight|در تاریکی گروپ دستی روشن کن.|dar tārīkī grūp-i dastī rōshan kun.|Turn on the flashlight in the dark.|Abstract Concepts|
+888|سریش|sirēsh|noun|neutral|glue|کاغذها را با سریش بچسپان.|kāghaz-hā ra bā sirēsh bichaspān.|Stick the papers with glue.|Abstract Concepts|چسپ
+889|سطل|satl|noun|neutral|bucket|یک سطل آب بیاور.|yak satl-i āb biyāwar.|Bring a bucket of water.|Abstract Concepts|
+890|ریسمان|rīsmān|noun|neutral|rope|ریسمان را محکم بگیر.|rīsmān ra muhkam bigīr.|Hold the rope tightly.|Abstract Concepts|تناب
+891|سیم|sīm|noun|neutral|wire|این سیم برق است.|īn sīm-i barq ast.|This is an electrical wire.|Abstract Concepts|لین
+892|بیل|bēl|noun|neutral|shovel|با بیل خاک را بردار.|bā bēl khāk ra bardār.|Remove the dirt with a shovel.|Abstract Concepts|
+893|چنگک|changak|noun|neutral|rake, hook|برگ‌ها را با چنگک جمع کن.|barg-hā ra bā changak jam' kun.|Gather the leaves with a rake.|Abstract Concepts|
+894|کراچی دستی|karāchī-yi dastī|noun|neutral|wheelbarrow|بار را در کراچی دستی بگذار.|bār ra dar karāchī-yi dastī bugzār.|Put the load in the wheelbarrow.|Abstract Concepts|
+895|آب‌تراز|āb-tarāz|noun|neutral|level (tool)|نجار از آب‌تراز استفاده می‌کند.|najjār az āb-tarāz istifāda mēkuna.|The carpenter uses a level.|Abstract Concepts|
+896|اسپانر|ispānar|noun|neutral|spanner, wrench|اسپانر را به من بده.|ispānar ra ba man bidi.|Give me the spanner.|Abstract Concepts|رنچ
+897|تصمیم گرفتن|tasmīm giriftan|verb|neutral|to decide|من تصمیم گرفتم بروم.|man tasmīm giriftam birawam.|I decided to go.|Actions|تصمیم می‌گیرد
+898|مقایسه کردن|muqāyisa kardan|verb|neutral|to compare|لطفاً این دو را با هم مقایسه کنید.|lutfan īn dū rā bā ham muqāyisa kunēd.|Please compare these two together.|Actions|مقایسه می‌کند
+899|ثابت کردن|sābit kardan|verb|neutral|to prove|او بی‌گناهی خود را ثابت کرد.|ū bē-gunāhī-yi khud rā sābit kard.|He proved his innocence.|Actions|ثابت می‌کند
+900|موافقت کردن|muwāfiqat kardan|verb|neutral|to agree|من با نظر شما موافقت می‌کنم.|man bā nazar-i shumā muwāfiqat mēkunam.|I agree with your opinion.|Actions|موافقت می‌کند
+901|مخالفت کردن|mukhālifat kardan|verb|neutral|to disagree|آنها با این طرح مخالفت کردند.|ānhā bā īn tarh mukhālifat kardand.|They disagreed with this plan.|Actions|مخالفت می‌کند
+902|حدس زدن|hads zadan|verb|neutral|to guess|می‌توانی حدس بزنی چه اتفاقی افتاد؟|mētāwānī hads bizanī chi ittifāqī uftād?|Can you guess what happened?|Actions|حدس می‌زند
+903|باور کردن|bāwar kardan|verb|neutral|to believe|نمی‌توانم حرفت را باور کنم.|namētāwānam harf-at rā bāwar kunam.|I cannot believe your word.|Actions|باور می‌کند
+904|فراموش کردن|farāmōsh kardan|verb|neutral|to forget|آدرس را فراموش کردم.|ādras rā farāmōsh kardam.|I forgot the address.|Actions|فراموش می‌کند
+905|به یاد آوردن|ba yād āwurdan|verb|neutral|to remember|نام او را به یاد نمی‌آورم.|nām-i ū rā ba yād namēāwaram.|I do not remember his name.|Actions|به یاد می‌آورد
+906|تغییر دادن|taghyīr dādan|verb|neutral|to change (something)|باید برنامه را تغییر دهیم.|bāyad barnāma rā taghyīr dihēm.|We must change the schedule.|Actions|تغییر می‌دهد
+907|تبدیل شدن|tabdīl shudan|verb|neutral|to become/transform|آب به یخ تبدیل شد.|āb ba yakh tabdīl shud.|The water transformed into ice.|Actions|تبدیل می‌شود
+908|جستجو کردن|justujū kardan|verb|neutral|to search|پولیس کلید را جستجو می‌کند.|pōlīs kilīd rā justujū mēkunad.|The police are searching for the key.|Actions|جستجو می‌کند
+909|کشف کردن|kashf kardan|verb|neutral|to discover|آنها یک راه جدید کشف کردند.|ānhā yak rāh-i jadīd kashf kardand.|They discovered a new way.|Actions|کشف می‌کند
+910|حمایت کردن|himāyat kardan|verb|neutral|to support|خانواده‌ام از من حمایت می‌کنند.|khānawāda-am az man himāyat mēkunand.|My family supports me.|Actions|حمایت می‌کند
+911|تشویق کردن|tashwīq kardan|verb|neutral|to encourage|معلم دانش‌آموزان را تشویق کرد.|muallim dānish-āmōzān rā tashwīq kard.|The teacher encouraged the students.|Actions|تشویق می‌کند
+912|توهین کردن|tawhīn kardan|verb|neutral|to insult|لطفاً به کسی توهین نکنید.|lutfan ba kasē tawhīn nakunēd.|Please do not insult anyone.|Actions|توهین می‌کند
+913|احترام گذاشتن|ihtirām guzāshtan|verb|neutral|to respect|ما باید به بزرگان احترام بگذاریم.|mā bāyad ba buzurgān ihtirām biguzārēm.|We must respect the elders.|Actions|احترام می‌گذارد
+914|شکایت کردن|shikāyat kardan|verb|neutral|to complain|مشتری از غذا شکایت کرد.|mushtarī az ghazā shikāyat kard.|The customer complained about the food.|Actions|شکایت می‌کند
+915|پیشنهاد دادن|pēshnihād dādan|verb|neutral|to suggest/propose|دوستم پیشنهاد داد که به پارک برویم.|dōst-am pēshnihād dād ki ba pārk birawēm.|My friend suggested that we go to the park.|Actions|پیشنهاد می‌دهد
+916|توضیح دادن|tawzēh dādan|verb|neutral|to explain|می‌توانی این مشکل را توضیح دهی؟|mētāwānī īn mushkil rā tawzēh dihī?|Can you explain this problem?|Actions|توضیح می‌دهد
+917|توصیف کردن|tawsīf kardan|verb|neutral|to describe|آن منظره را توصیف کنید.|ān manzara rā tawsīf kunēd.|Describe that scenery.|Actions|توصیف می‌کند
+918|مقاومت کردن|muqāwimat kardan|verb|neutral|to resist|آنها در برابر دشمن مقاومت کردند.|ānhā dar barābar-i dushman muqāwimat kardand.|They resisted the enemy.|Actions|مقاومت می‌کند
+919|تسلیم شدن|taslīm shudan|verb|neutral|to surrender|دزد بالاخره تسلیم شد.|duzd bilākhira taslīm shud.|The thief finally surrendered.|Actions|تسلیم می‌شود
+920|تحمل کردن|tahammul kardan|verb|neutral|to tolerate|نمی‌توانم این درد را تحمل کنم.|namētāwānam īn dard rā tahammul kunam.|I cannot tolerate this pain.|Actions|تحمل می‌کند
+921|حل کردن|hal kardan|verb|neutral|to solve|باید این مسئله را حل کنیم.|bāyad īn mas'ala rā hal kunēm.|We must solve this issue.|Actions|حل می‌کند
+922|پیچیده کردن|pēchīda kardan|verb|neutral|to complicate|اوضاع را پیچیده نکنید.|awzā rā pēchīda nakunēd.|Do not complicate the situation.|Actions|پیچیده می‌کند
+923|نابود کردن|nābōd kardan|verb|neutral|to destroy|زلزله شهر را نابود کرد.|zilzila shahr rā nābōd kard.|The earthquake destroyed the city.|Actions|نابود می‌کند
+924|تعمیر کردن|ta'mīr kardan|verb|neutral|to repair|من موتر خود را تعمیر کردم.|man mōtar-i khud rā ta'mīr kardam.|I repaired my car.|Actions|تعمیر می‌کند
+925|ایجاد کردن|ījād kardan|verb|neutral|to create/establish|این شرکت فرصت‌های شغلی ایجاد کرد.|īn shirkat fursathā-yi shughlī ījād kard.|This company created job opportunities.|Actions|ایجاد می‌کند
+926|بررسی کردن|barrasī kardan|verb|neutral|to examine/investigate|داکتر بیمار را بررسی کرد.|dāktar bīmār rā barrasī kard.|The doctor examined the patient.|Actions|بررسی می‌کند
+927|تأیید کردن|ta'yīd kardan|verb|neutral|to confirm|رئیس این خبر را تأیید کرد.|ra'īs īn khabar rā ta'yīd kard.|The boss confirmed this news.|Actions|تأیید می‌کند
+928|انکار کردن|inkār kardan|verb|neutral|to deny|او اشتباه خود را انکار کرد.|ū ishtibāh-i khud rā inkār kard.|He denied his mistake.|Actions|انکار می‌کند
+929|اعتراف کردن|i'tirāf kardan|verb|neutral|to confess|متهم به جرم خود اعتراف کرد.|muttaham ba jurm-i khud i'tirāf kard.|The accused confessed to his crime.|Actions|اعتراف می‌کند
+930|پشیمان شدن|pashēmān shudan|verb|neutral|to regret|از گفته‌هایم پشیمان شدم.|az guftahā-yam pashēmān shudam.|I regretted my words.|Actions|پشیمان می‌شود
+931|خجالت کشیدن|khijālat kashīdan|verb|neutral|to be embarrassed/ashamed|از اشتباهم خجالت کشیدم.|az ishtibāh-am khijālat kashīdam.|I was embarrassed by my mistake.|Emotions & Feelings|خجالت می‌کشد
+932|نگران بودن|nigarān būdan|verb|neutral|to be worried|مادرم برایم نگران بود.|mādar-am barāy-am nigarān būd.|My mother was worried about me.|Actions|نگران است
+933|آرام شدن|ārām shudan|verb|neutral|to calm down|لطفاً آرام شوید و گوش دهید.|lutfan ārām shawēd wa gōsh dihēd.|Please calm down and listen.|Emotions & Feelings|آرام می‌شود
+934|هیجان‌زده شدن|hayajān-zada shudan|verb|neutral|to get excited|کودکان بسیار هیجان‌زده شدند.|kōdakān bisyār hayajān-zada shudand.|The children got very excited.|Actions|هیجان‌زده می‌شود
+935|ناامید شدن|nā-umēd shudan|verb|neutral|to become disappointed|او از نتیجه ناامید شد.|ū az natīja nā-umēd shud.|He became disappointed with the result.|Actions|ناامید می‌شود
+936|امیدوار بودن|umēdwār būdan|verb|neutral|to be hopeful|به آینده روشن امیدوار هستم.|ba āyanda-yi rawshan umēdwār hastam.|I am hopeful for a bright future.|Actions|امیدوار است
+937|تعجب کردن|ta'ajjub kardan|verb|neutral|to be surprised|از دیدن او تعجب کردم.|az dīdan-i ū ta'ajjub kardam.|I was surprised to see him.|Actions|تعجب می‌کند
+938|فریاد زدن|faryād zadan|verb|neutral|to shout/scream|چرا فریاد می‌زنی؟|charā faryād mēzanī?|Why are you shouting?|Actions|فریاد می‌زند
+939|زمزمه کردن|zamzama kardan|verb|neutral|to whisper|او چیزی در گوشم زمزمه کرد.|ū chīzē dar gōsh-am zamzama kard.|He whispered something in my ear.|Actions|زمزمه می‌کند
+940|خیره شدن|khīra shudan|verb|neutral|to stare|به تصویر خیره شدم.|ba taswīr khīra shudam.|I stared at the picture.|Actions|خیره می‌شود
+941|اشاره کردن|ishāra kardan|verb|neutral|to point/indicate|به ساختمان اشاره کرد.|ba sākhtamān ishāra kard.|He pointed to the building.|Actions|اشاره می‌کند
+942|لمس کردن|lams kardan|verb|neutral|to touch|لطفاً نقاشی را لمس نکنید.|lutfan naqqāshī rā lams nakunēd.|Please do not touch the painting.|Actions|لمس می‌کند
+943|احساس کردن|ihsās kardan|verb|neutral|to feel|احساس سردی می‌کنم.|ihsās-i sardī mēkunam.|I feel cold.|Emotions & Feelings|احساس می‌کند
+944|بوییدن|bōyīdan|verb|neutral|to smell|گل‌ها را بوییدم.|gulhā rā bōyīdam.|I smelled the flowers.|Actions|می‌بوید
+945|جویدن|jawīdan|verb|neutral|to chew|غذا را خوب بجوید.|ghazā rā khūb bijawēd.|Chew your food well.|Actions|می‌جود
+946|بلعیدن|bal'īdan|verb|neutral|to swallow|دوای خود را به سختی بلعید.|dawā-yi khud rā ba sakhtī bal'īd.|He swallowed his medicine with difficulty.|Actions|می‌بلعد
+947|نفس کشیدن|nafas kashīdan|verb|neutral|to breathe|عمیق نفس بکشید.|amīq nafas bikashēd.|Breathe deeply.|Actions|نفس می‌کشد
+948|سرفه کردن|surfa kardan|verb|neutral|to cough|او تمام شب سرفه می‌کرد.|ū tamām-i shab surfa mēkard.|He was coughing all night.|Actions|سرفه می‌کند
+949|عطسه کردن|atsa kardan|verb|neutral|to sneeze|وقتی مریض می‌شوم، زیاد عطسه می‌کنم.|waqtī marēz mēshawam, ziyād atsa mēkunam.|When I get sick, I sneeze a lot.|Actions|عطسه می‌کند
+950|خمیازه کشیدن|khamyāza kashīdan|verb|neutral|to yawn|از خستگی خمیازه کشید.|az khastagī khamyāza kashīd.|He yawned out of tiredness.|Actions|خمیازه می‌کشد
+951|چرت زدن|churt zadan|verb|neutral|to nap|بعد از ظهرها چرت می‌زنم.|ba'd az zuhr-hā churt mēzanam.|I nap in the afternoons.|Actions|چرت می‌زند
+952|استراحت کردن|istirāhat kardan|verb|neutral|to rest|بعد از کار استراحت کردم.|ba'd az kār istirāhat kardam.|I rested after work.|Actions|استراحت می‌کند
+953|خسته شدن|khasta shudan|verb|neutral|to get tired|از پیاده‌روی خسته شدم.|az piyāda-rawī khasta shudam.|I got tired from walking.|Actions|خسته می‌شود
+954|انرژی گرفتن|inirzhī giriftan|verb|neutral|to gain energy|با خوردن میوه انرژی گرفتم.|bā khurdan-i mēwa inirzhī giriftam.|I gained energy by eating fruit.|Science & Tech|انرژی می‌گیرد
+955|ورزش کردن|warzish kardan|verb|neutral|to exercise|هر روز صبح ورزش می‌کنم.|har rōz subh warzish mēkunam.|I exercise every morning.|Actions|ورزش می‌کند
+956|مراقبت کردن|murāqibat kardan|verb|neutral|to take care of|از مریض مراقبت کرد.|az marēz murāqibat kard.|She took care of the patient.|Actions|مراقبت می‌کند
+957|استفاده کردن|istifāda kardan|verb|neutral|to use|از کامپیوتر استفاده می‌کنم.|az kāmpīyūtar istifāda mēkunam.|I use the computer.|Actions|استفاده می‌کند
+958|ادامه دادن|idāma dādan|verb|neutral|to continue|ما باید به راه خود ادامه دهیم.|mā bāyad ba rāh-i khud idāma dihēm.|We must continue our way.|Actions|ادامه می‌دهد
+959|متوقف کردن|mutawaqqif kardan|verb|neutral|to stop (something)|پولیس موتر را متوقف کرد.|pōlīs mōtar rā mutawaqqif kard.|The police stopped the car.|Actions|متوقف می‌کند
+960|تصادف کردن|tasāduf kardan|verb|neutral|to crash/collide|دو موتر با هم تصادف کردند.|dū mōtar bā ham tasāduf kardand.|Two cars collided with each other.|Actions|تصادف می‌کند
+961|تأخیر داشتن|ta'khīr dāshtan|verb|neutral|to be delayed|پرواز یک ساعت تأخیر دارد.|parwāz yak sā'at ta'khīr dārad.|The flight is delayed by one hour.|Actions|تأخیر دارد
+962|لغو کردن|laghwa kardan|verb|neutral|to cancel|جلسه را لغو کردیم.|jalasa rā laghwa kardēm.|We canceled the meeting.|Actions|لغو می‌کند
+963|برگزار کردن|barguzār kardan|verb|neutral|to hold/organize (an event)|آنها یک مهمانی برگزار کردند.|ānhā yak mihmānī barguzār kardand.|They held a party.|Actions|برگزار می‌کند
+964|شرکت کردن|shirkat kardan|verb|neutral|to participate|در مسابقه شرکت کردم.|dar musābiqa shirkat kardam.|I participated in the competition.|Actions|شرکت می‌کند
+965|تمرکز کردن|tamarkuz kardan|verb|neutral|to focus|نمی‌توانم روی کارم تمرکز کنم.|namētāwānam rōy-i kār-am tamarkuz kunam.|I cannot focus on my work.|Actions|تمرکز می‌کند
+966|پیچیده|pēchīda|adjective|neutral|complicated|این مسئله بسیار پیچیده است.|īn mas'ala bisyār pēchīda ast.|This issue is very complicated.|Descriptions|
+967|دشوار|dushwār|adjective|neutral|difficult/arduous|آزمون امروز دشوار بود.|āzmōn-i imrōz dushwār būd.|Today's exam was difficult.|Descriptions|
+968|مضر|muzir|adjective|neutral|harmful|سگرت کشیدن برای صحت مضر است.|sigrit kashīdan barāyi sihat muzir ast.|Smoking is harmful to health.|Descriptions|
+969|باارزش|bā-arzish|adjective|neutral|valuable|این انگشتر بسیار باارزش است.|īn angushtar bisyār bā-arzish ast.|This ring is very valuable.|Descriptions|
+970|بی‌اهمیت|bē-ahammiyat|adjective|neutral|unimportant|این موضوع برای من بی‌اهمیت است.|īn mawzō' barāyi man bē-ahammiyat ast.|This matter is unimportant to me.|Descriptions|
+971|خسته‌کننده|khasta-kunanda|adjective|neutral|boring/tiring|فیلم خسته‌کننده‌ای بود.|fīlm-i khasta-kunanda-ē būd.|It was a boring movie.|Descriptions|
+972|عجیب|ajīb|adjective|neutral|strange/weird|صدای عجیبی شنیدم.|sadā-yi ajībī shunīdam.|I heard a strange sound.|Descriptions|
+973|معمولی|ma'mūlī|adjective|neutral|ordinary/regular|این یک روز معمولی است.|īn yak rōz-i ma'mūlī ast.|This is an ordinary day.|Descriptions|
+974|منحصر|munhasir|adjective|neutral|unique|طراحی این ساختمان منحصر به فرد است.|tarrāhī-yi īn sākhtamān munhasir ba fard ast.|The design of this building is unique.|Descriptions|
+975|عمومی|umūmī|adjective|neutral|public/general|این یک پارک عمومی است.|īn yak pārk-i umūmī ast.|This is a public park.|Society & Politics|
+976|خصوصی|khusūsī|adjective|neutral|private|این یک مکالمه خصوصی است.|īn yak mukālima-yi khusūsī ast.|This is a private conversation.|Society & Politics|
+977|ناموفق|nā-muwaffaq|adjective|neutral|unsuccessful|تلاش او ناموفق بود.|talāsh-i ū nā-muwaffaq būd.|His attempt was unsuccessful.|Descriptions|
+978|ثروتمند|sarwatmand|adjective|neutral|wealthy|او یک تاجر ثروتمند است.|ū yak tājir-i sarwatmand ast.|He is a wealthy businessman.|Descriptions|
+979|سخاوتمند|sakhāwatmand|adjective|neutral|generous|پدرم مرد سخاوتمندی است.|padar-am mard-i sakhāwatmandī ast.|My father is a generous man.|Descriptions|
+980|خسیس|khasīs|adjective|neutral|stingy/miserly|او آنقدر خسیس است که چیزی نمی‌خرد.|ū ānqadar khasīs ast ki chīzē namēkharad.|He is so stingy that he doesn't buy anything.|Descriptions|
+981|ظالم|zālim|adjective|neutral|cruel/oppressive|پادشاه ظالم بود.|pādshāh zālim būd.|The king was cruel.|Descriptions|
+982|دلیر|dalēr|adjective|neutral|brave/valiant|سربازان دلیر جنگیدند.|sarbāzān-i dalēr jangīdand.|The valiant soldiers fought.|Descriptions|
+983|ترسو|tarsō|adjective|neutral|cowardly|او یک آدم ترسو است.|ū yak ādam-i tarsō ast.|He is a cowardly person.|Descriptions|
+984|زیرک|zērak|adjective|neutral|clever/astute|دانش‌آموز زیرک سوالات را حل کرد.|dānish-āmōz-i zērak suwālāt rā hal kard.|The clever student solved the questions.|Descriptions|
+985|احمقانه|ahmaqāna|adjective|neutral|foolish/stupid|این یک تصمیم احمقانه بود.|īn yak tasmīm-i ahmaqāna būd.|This was a foolish decision.|Descriptions|
+986|صبور|sabūr|adjective|neutral|patient|معلم باید صبور باشد.|muallim bāyad sabūr bāshad.|A teacher must be patient.|Descriptions|
+987|عجول|ajūl|adjective|neutral|hasty/impatient|در تصمیم‌گیری عجول نباش.|dar tasmīm-gīrī ajūl nabāsh.|Do not be hasty in decision-making.|Descriptions|
+988|مضطرب|muztarib|adjective|neutral|anxious|قبل از امتحان مضطرب بودم.|qabl az imtihān muztarib būdam.|I was anxious before the exam.|Emotions & Feelings|
+989|بی‌تفاوت|bē-tafāwut|adjective|neutral|indifferent|او نسبت به مشکلات بی‌تفاوت است.|ū nisbat ba mushkilāt bē-tafāwut ast.|He is indifferent to the problems.|Descriptions|
+990|مطمئن|mutma'in|adjective|neutral|sure/certain|من کاملاً مطمئن هستم.|man kāmilān mutma'in hastam.|I am completely sure.|Descriptions|
+991|مشکوک|mashkūk|adjective|neutral|suspicious|رفتار او مشکوک به نظر می‌رسید.|raftār-i ū mashkūk ba nazar mērasīd.|His behavior seemed suspicious.|Descriptions|
+992|گناهکار|gunāhkār|adjective|neutral|guilty|قاضی او را گناهکار شناخت.|qāzī ū rā gunāhkār shinākht.|The judge found him guilty.|Emotions & Feelings|
+993|بی‌گناه|bē-gunāh|adjective|neutral|innocent|مرد بی‌گناه آزاد شد.|mard-i bē-gunāh āzād shud.|The innocent man was released.|Law & Justice|
+994|صادق|sādiq|adjective|neutral|honest|او یک دوست صادق است.|ū yak dōst-i sādiq ast.|He is an honest friend.|Descriptions|
+995|دروغگو|durōghgō|adjective|neutral|liar/deceitful|نباید به آدم دروغگو اعتماد کرد.|nabāyad ba ādam-i durōghgō i'timād kard.|One should not trust a deceitful person.|Descriptions|
+996|وفادار|wafādār|adjective|neutral|loyal|سگ یک حیوان وفادار است.|sag yak haywān-i wafādār ast.|A dog is a loyal animal.|Descriptions|
+997|خیانتکار|khiyānatkār|adjective|neutral|traitorous|مرد خیانتکار دستگیر شد.|mard-i khiyānatkār dastgīr shud.|The traitorous man was arrested.|Descriptions|
+998|مستقل|mustaqil|adjective|neutral|independent|او یک زن مستقل است.|ū yak zan-i mustaqil ast.|She is an independent woman.|Descriptions|
+999|وابسته|wābasta|adjective|neutral|dependent|اقتصاد به نفت وابسته است.|iqtisād ba naft wābasta ast.|The economy is dependent on oil.|Descriptions|
+1000|نیرومند|nērōmand|adjective|neutral|powerful|ورزشکار بسیار نیرومند است.|warzishkār bisyār nērōmand ast.|The athlete is very powerful.|Descriptions|
+1001|ضعیف|za'īf|adjective|neutral|weak|بیمار احساس ضعیف بودن می‌کرد.|bīmār ihsās-i za'īf būdan mēkard.|The patient felt weak.|Descriptions|
+1002|سالم|sālim|adjective|neutral|healthy|غذاهای سالم بخورید.|ghazāhā-yi sālim bukhurēd.|Eat healthy foods.|Descriptions|
+1003|بیمار|bīmār|adjective|neutral|sick/ill|کودک بیمار در شفاخانه است.|kōdak-i bīmār dar shafākhāna ast.|The sick child is in the hospital.|Body & Health|
+1004|پرانرژی|pur-inirzhī|adjective|neutral|energetic|او همیشه پرانرژی است.|ū hamēsha pur-inirzhī ast.|He is always energetic.|Descriptions|
+1005|خواب‌آلود|khwāb-ālūda|adjective|neutral|sleepy|هنگام رانندگی خواب‌آلود بودم.|hangām-i rānandagī khwāb-ālūda būdam.|I was sleepy while driving.|Descriptions|
+1006|پاکیزه|pākēza|adjective|neutral|immaculate/clean|اتاق او همیشه پاکیزه است.|utāq-i ū hamēsha pākēza ast.|His room is always immaculate.|Descriptions|
+1007|آلوده|ālūda|adjective|neutral|polluted|هوای شهر آلوده است.|hawā-yi shahr ālūda ast.|The city's air is polluted.|Descriptions|
+1008|مرتب|murattab|adjective|neutral|tidy/organized|میز کارش مرتب است.|mēz-i kār-ash murattab ast.|His desk is tidy.|Descriptions|
+1009|نامرتب|nā-murattab|adjective|neutral|untidy/messy|اتاق بچه‌ها نامرتب بود.|utāq-i bachahā nā-murattab būd.|The children's room was untidy.|Descriptions|
+1010|خیره‌کننده|khīra-kunanda|adjective|neutral|stunning|منظره‌ای خیره‌کننده داشت.|manzara-ē khīra-kunanda dāsht.|It had a stunning view.|Descriptions|
+1011|زشت|zisht|adjective|neutral|ugly|آن ساختمان زشت است.|ān sākhtamān zisht ast.|That building is ugly.|Descriptions|
+1012|جذاب|jāzzāb|adjective|neutral|attractive|طراحی آن جذاب است.|tarrāhī-yi ān jāzzāb ast.|Its design is attractive.|Descriptions|
+1013|مرتفع|murtafi'|adjective|neutral|elevated/high|کوه‌های مرتفع افغانستان زیبا هستند.|kōh-hā-yi murtafi'-i afghānistān zēbā hastand.|The high mountains of Afghanistan are beautiful.|Descriptions|
+1014|عمیق|amīq|adjective|neutral|deep|دریاچه بسیار عمیق است.|daryācha bisyār amīq ast.|The lake is very deep.|Descriptions|
+1015|پهن|pahn|adjective|neutral|wide|سرک اصلی پهن است.|sarak-i aslī pahn ast.|The main road is wide.|Descriptions|
+1016|باریک|bārīk|adjective|neutral|narrow|این کوچه خیلی باریک است.|īn kōcha khailī bārīk ast.|This alley is very narrow.|Descriptions|
+1017|سبک|subuk|adjective|neutral|light (weight)|این بکس سبک است.|īn baks subuk ast.|This bag is light.|Colors & Shapes|
+1018|مشخص|mushakkhas|adjective|neutral|specific/clear|دلیل مشخصی برای این کار وجود دارد.|dalīl-i mushakkhasī barāyi īn kār wujūd dārad.|There is a specific reason for this.|Descriptions|
+1019|پنهانی|pinhānī|adjective|neutral|secret/hidden|او یک نقشه پنهانی داشت.|ū yak naqsha-yi pinhānī dāsht.|He had a secret plan.|Descriptions|
+1020|ناشناخته|nā-shinākhta|adjective|neutral|unknown|این بیماری هنوز ناشناخته است.|īn bēmārī hanōz nā-shinākhta ast.|This disease is still unknown.|Descriptions|
+1021|پرتلاش|pur-talāsh|adjective|neutral|hardworking|او کارمند پرتلاشی است.|ū kārmand-i pur-talāshī ast.|He is a hardworking employee.|Descriptions|
+1022|تنبلی کردن|tambalī kardan|verb|neutral|to be lazy|در انجام تکالیف تنبلی نکنید.|dar anjām-i takālīf tambalī nakunēd.|Do not be lazy in doing your homework.|Actions|تنبلی می‌کند
+1023|مجبور کردن|majbūr kardan|verb|neutral|to force/compel|مرا مجبور به رفتن کرد.|marā majbūr ba raftan kard.|He forced me to go.|Actions|مجبور می‌کند
+1024|متعجب|muta'ajjib|adjective|neutral|astonished|از شنیدن این خبر متعجب شدم.|az shunīdan-i īn khabar muta'ajjib shudam.|I was astonished to hear this news.|Descriptions|
+1025|کنجکاو|kunjkāw|adjective|neutral|curious|کودک نسبت به همه چیز کنجکاو است.|kōdak nisbat ba hama chīz kunjkāw ast.|The child is curious about everything.|Descriptions|
+1026|مغرور|maghrūr|adjective|neutral|arrogant|آدم مغروری است و دوستان کمی دارد.|ādam-i maghrūrī ast wa dōstān-i kamī dārad.|He is an arrogant person and has few friends.|Descriptions|
+1027|متواضع|mutawāzi'|adjective|neutral|humble|با وجود موفقیت، او بسیار متواضع است.|bā wujūd-i muwaffaqiyat, ū bisyār mutawāzi' ast.|Despite his success, he is very humble.|Descriptions|
+1028|شرمنده|sharmanda|adjective|neutral|ashamed|من از رفتارم شرمنده هستم.|man az raftār-am sharmanda hastam.|I am ashamed of my behavior.|Emotions & Feelings|
+1029|غافلگیر|ghāfilgīr|adjective|neutral|surprised/caught off guard|با دیدن هدیه غافلگیر شدم.|bā dīdan-i hadiya ghāfilgīr shudam.|I was surprised upon seeing the gift.|Descriptions|
+1030|منطقی|mantiqī|adjective|neutral|logical|این یک استدلال منطقی است.|īn yak istidlāl-i mantiqī ast.|This is a logical argument.|Descriptions|
+1031|غیرمنطقی|ghayr-i mantiqī|adjective|neutral|illogical|تصمیم او غیرمنطقی بود.|tasmīm-i ū ghayr-i mantiqī būd.|His decision was illogical.|Descriptions|
+1032|واقعی|wāqi'ī|adjective|neutral|real/actual|داستان بر اساس رویدادهای واقعی است.|dāstān bar asās-i rōydādhā-yi wāqi'ī ast.|The story is based on real events.|Descriptions|
+1033|مصنوعی|masnū'ī|adjective|neutral|artificial|این گل‌ها مصنوعی هستند.|īn gulhā masnū'ī hastand.|These flowers are artificial.|Descriptions|
+1034|مفید|mufīd|adjective|neutral|useful/beneficial|این کتاب اطلاعات مفیدی دارد.|īn kitāb ittilā'āt-i mufīdī dārad.|This book has useful information.|Descriptions|
+1035|لذت بردن|lazzat burdan|verb|neutral|to enjoy|از موسیقی کلاسیک لذت می‌برم.|az mōsīqī-yi kilāsīk lazzat mēbaram.|I enjoy classical music.|Actions|لذت می‌برد
+1036|آرزو کردن|ārzō kardan|verb|neutral|to wish|برایت موفقیت آرزو می‌کنم.|barāy-at muwaffaqiyat ārzō mēkunam.|I wish you success.|Actions|آرزو می‌کند
+1037|رد شدن|rad shudan|verb|neutral|to fail/be rejected|در امتحان رانندگی رد شدم.|dar imtihān-i rānandagī rad shudam.|I failed the driving test.|Actions|رد می‌شود
+1038|پنهان شدن|pinhān shudan|verb|neutral|to hide (oneself)|پشت درخت پنهان شدم.|pusht-i dirakht pinhān shudam.|I hid behind the tree.|Actions|پنهان می‌شود
+1039|خاطرنشان کردن|khātir-nishān kardan|verb|neutral|to point out/remind|رئیس اهمیت پروژه را خاطرنشان کرد.|ra'īs ahammiyat-i purōzha rā khātir-nishān kard.|The boss pointed out the importance of the project.|Actions|خاطرنشان می‌کند
+1040|امید|umēd|noun|neutral|hope|او همیشه به آینده امید دارد.|ō hamēsha ba āyanda umēd dārad.|He always has hope for the future.|Emotions & Feelings|
+1041|عدالت|adālat|noun|neutral|justice|عدالت باید تأمین شود.|adālat bāyad ta'mīn shawad.|Justice must be secured.|Law & Justice|
+1042|پیروزی|pērōzī|noun|neutral|victory|تیم ما به پیروزی رسید.|tīm-i mā ba pērōzī rasīd.|Our team achieved victory.|Abstract Concepts|
+1043|شکست|shikast|noun|neutral|defeat|آنها شکست را قبول نکردند.|ānhā shikast rā qabūl nakardand.|They did not accept defeat.|Abstract Concepts|
+1044|موفقیت|muwaffaqiyat|noun|neutral|success|موفقیت تو باعث افتخار من است.|muwaffaqiyat-i tu bā'is-i iftikhār-i man ast.|Your success makes me proud.|Abstract Concepts|
+1045|تجربه|tajruba|noun|neutral|experience|او تجربه زیادی در کار دارد.|ō tajruba-i ziyādī dar kār dārad.|He has a lot of experience in work.|Abstract Concepts|
+1046|تصمیم|tasmīm|noun|neutral|decision|من تصمیم خود را گرفتم.|man tasmīm-i khud rā giriftam.|I made my decision.|Abstract Concepts|
+1047|هدف|hadaf|noun|neutral|goal|هدف او کمک به مردم است.|hadaf-i ō kumak ba mardum ast.|His goal is to help people.|Abstract Concepts|
+1048|پیشرفت|pēshraft|noun|neutral|progress|اقتصاد کشور پیشرفت کرده است.|iqtisād-i kishwar pēshraft karda ast.|The country's economy has progressed.|Abstract Concepts|
+1049|تغییر|taghīr|noun|neutral|change|تغییر همیشه خوب نیست.|taghīr hamēsha khūb nēst.|Change is not always good.|Abstract Concepts|
+1050|آینده|āyanda|noun|neutral|future|ما به آینده امیدوار هستیم.|mā ba āyanda umēdwār hastēm.|We are hopeful for the future.|Abstract Concepts|
+1051|گذشته|guzashta|noun|neutral|past|به گذشته فکر نکن.|ba guzashta fikr nakun.|Do not think about the past.|Abstract Concepts|
+1052|حقیقت|haqīqat|noun|neutral|truth|حقیقت روزی روشن می‌شود.|haqīqat rōzē rawshan mēshawad.|The truth will come to light one day.|Abstract Concepts|
+1053|دروغ|durōgh|noun|neutral|lie|دروغ گفتن کار بدی است.|durōgh guftan kār-i badī ast.|Telling a lie is a bad thing.|Abstract Concepts|
+1054|افتخار|iftikhār|noun|neutral|pride|او مایه افتخار ماست.|ō māya-i iftikhār-i māst.|He is our source of pride.|Abstract Concepts|
+1055|احترام|ihtirām|noun|neutral|respect|احترام به والدین واجب است.|ihtirām ba wālidayn wājib ast.|Respect for parents is obligatory.|Abstract Concepts|
+1056|اعتماد|i'timād|noun|neutral|trust|من به تو اعتماد دارم.|man ba tu i'timād dāram.|I trust you.|Abstract Concepts|
+1057|امنیت|amniyat|noun|neutral|security|امنیت در شهر برقرار است.|amniyat dar shahr barqarār ast.|Security is established in the city.|Abstract Concepts|
+1058|خطر|khatar|noun|neutral|danger|این کار خطر دارد.|īn kār khatar dārad.|This work has danger.|Abstract Concepts|
+1059|فرصت|fursat|noun|neutral|opportunity|این یک فرصت عالی است.|īn yak fursat-i ālī ast.|This is a great opportunity.|Abstract Concepts|
+1060|فایده|fāyda|noun|neutral|benefit|این دارو فایده ندارد.|īn dārū fāyda nadārad.|This medicine has no benefit.|Abstract Concepts|
+1061|ضرر|zarar|noun|neutral|harm|سیگار کشیدن ضرر دارد.|sīgār kashīdan zarar dārad.|Smoking is harmful.|Abstract Concepts|
+1062|توانایی|tawānā'ī|noun|neutral|ability|او توانایی انجام این کار را دارد.|ō tawānā'ī-yi anjām-i īn kār rā dārad.|He has the ability to do this work.|Abstract Concepts|
+1063|مهارت|mahārat|noun|neutral|skill|رانندگی نیاز به مهارت دارد.|rānandagī niyāz ba mahārat dārad.|Driving requires skill.|Abstract Concepts|
+1064|دانش|dānish|noun|neutral|knowledge|دانش قدرت است.|dānish qudrat ast.|Knowledge is power.|Abstract Concepts|
+1065|ارزش|arzish|noun|neutral|value|وقت ارزش زیادی دارد.|waqt arzish-i ziyādī dārad.|Time has a lot of value.|Abstract Concepts|
+1066|کیفیت|kayfiyat|noun|neutral|quality|کیفیت این لباس خوب است.|kayfiyat-i īn libās khūb ast.|The quality of this dress is good.|Abstract Concepts|
+1067|کمیت|kamiyat|noun|neutral|quantity|کمیت مهم نیست، کیفیت مهم است.|kamiyat muhim nēst, kayfiyat muhim ast.|Quantity is not important, quality is important.|Abstract Concepts|
+1068|وضعیت|waz'iyat|noun|neutral|situation|وضعیت هوا امروز بهتر است.|waz'iyat-i hawā imrōz bihtar ast.|The weather situation is better today.|Abstract Concepts|
+1069|شرایط|sharāyit|noun|neutral|conditions|شرایط زندگی سخت شده است.|sharāyit-i zindagī sakht shuda ast.|Living conditions have become difficult.|Abstract Concepts|
+1070|دلیل|dalēl|noun|neutral|reason|دلیل این کار چیست؟|dalēl-i īn kār chēst?|What is the reason for this action?|Abstract Concepts|
+1071|نتیجه|natija|noun|neutral|result|نتیجه امتحان فردا اعلان می‌شود.|natija-i imtihān fardā i'lān mēshawad.|The result of the exam will be announced tomorrow.|Abstract Concepts|
+1072|تأثیر|ta'sīr|noun|neutral|effect|این حرف روی او تأثیر گذاشت.|īn harf rōy-i ō ta'sīr guzāsht.|This statement had an effect on him.|Abstract Concepts|
+1073|احساس|ihsās|noun|neutral|feeling|احساس خستگی می‌کنم.|ihsās-i khastagī mēkunam.|I have a feeling of tiredness.|Emotions & Feelings|
+1074|عاطفه|ātifa|noun|neutral|emotion|انسان با عاطفه است.|insān bā ātifa ast.|Humans have emotions.|Emotions & Feelings|
+1075|شجاعت|shujā'at|noun|neutral|bravery|سرباز شجاعت نشان داد.|sarbāz shujā'at nishān dād.|The soldier showed bravery.|Abstract Concepts|
+1076|خشم|khashm|noun|neutral|anger|او خشم خود را کنترل کرد.|ō khashm-i khud rā kuntrōl kard.|He controlled his anger.|Abstract Concepts|
+1077|شادی|shādī|noun|neutral|happiness|عروسی با شادی برگزار شد.|arūsī bā shādī barguzār shud.|The wedding was held with happiness.|Abstract Concepts|
+1078|غم|gham|noun|neutral|sorrow|غم بزرگی در دل دارد.|gham-i buzurgē dar dil dārad.|He has a great sorrow in his heart.|Emotions & Feelings|
+1079|آرامش|ārāmish|noun|neutral|calmness|آرامش خود را حفظ کنید.|ārāmish-i khud rā hifz kunēd.|Keep your calmness.|Abstract Concepts|
+1080|اضطراب|iztirāb|noun|neutral|anxiety|قبل از امتحان اضطراب داشتم.|qabl az imtihān iztirāb dāshtam.|I had anxiety before the exam.|Abstract Concepts|
+1081|عجله|ajala|noun|neutral|haste|در کار عجله نکنید.|dar kār ajala nakunēd.|Do not make haste in work.|Abstract Concepts|
+1082|نیاز|niyāz|noun|neutral|need|من به کمک تو نیاز دارم.|man ba kumak-i tu niyāz dāram.|I have a need for your help.|Abstract Concepts|
+1083|استعداد|isti'dād|noun|neutral|talent|او استعداد نقاشی دارد.|ō isti'dād-i naqqāshī dārad.|He has a talent for painting.|Abstract Concepts|
+1084|غرور|ghurūr|noun|neutral|pride|غرور زیاد خوب نیست.|ghurūr-i ziyād khūb nēst.|Too much pride is not good.|Abstract Concepts|
+1085|اراده|irāda|noun|neutral|will|او اراده قوی دارد.|ō irāda-i qawī dārad.|He has a strong will.|Abstract Concepts|
+1086|تلاش|talāsh|noun|neutral|effort|برای موفقیت تلاش کن.|barāy-i muwaffaqiyat talāsh kun.|Make an effort for success.|Abstract Concepts|
+1087|حق|haq|noun|neutral|right|این حق قانونی من است.|īn haq-i qānūnī-yi man ast.|This is my legal right.|Abstract Concepts|
+1088|وظیفه|wazīfa|noun|neutral|duty|این وظیفه توست.|īn wazīfa-i tust.|This is your duty.|Abstract Concepts|
+1089|انتخاب|intikhāb|noun|neutral|choice|این انتخاب خودم بود.|īn intikhāb-i khudam būd.|This was my own choice.|Abstract Concepts|
+1090|آگاهی|āgāhī|noun|neutral|awareness|آگاهی مردم بالا رفته است.|āgāhī-yi mardum bālā rafta ast.|People's awareness has gone up.|Abstract Concepts|
+1091|نظم|nazm|noun|neutral|order|نظم در کار مهم است.|nazm dar kār muhim ast.|Order in work is important.|Abstract Concepts|
+1092|اخیراً|akhīran|verb|formal|recently|اخیراً او را ندیدم.|akhīran ō rā nadīdam.|I haven't seen him recently.|Actions|
+1093|فوراً|fawran|verb|formal|immediately|لطفاً فوراً به اینجا بیایید.|lutfan fawran ba īnjā biyāyēd.|Please come here immediately.|Actions|
+1094|معمولاً|ma'mūlan|verb|neutral|usually|من معمولاً چای می‌نوشم.|man ma'mūlan chāy mēnōsham.|I usually drink tea.|Actions|
+1095|ندرتاً|nudratan|verb|formal|rarely|او ندرتاً گوشت می‌خورد.|ō nudratan gōsht mēkhurad.|He rarely eats meat.|Time & Calendar|
+1096|گاهی|gāhē|verb|neutral|sometimes|گاهی به سینما می‌رویم.|gāhē ba sēnamā mērawēm.|Sometimes we go to the cinema.|Time & Calendar|
+1097|مرتباً|murattaban|verb|formal|regularly|او مرتباً ورزش می‌کند.|ō murattaban warzish mēkunad.|He exercises regularly.|Actions|
+1098|حتماً|hatman|verb|neutral|definitely|حتماً فردا می‌آیم.|hatman fardā mēāyam.|I will definitely come tomorrow.|Actions|
+1099|احتمالاً|ihtimālan|verb|formal|probably|احتمالاً باران می‌بارد.|ihtimālan bārān mēbārad.|It will probably rain.|Actions|
+1100|کاملاً|kāmilan|verb|neutral|completely|من کاملاً با شما موافقم.|man kāmilan bā shumā muwāfiqam.|I completely agree with you.|Actions|
+1101|نسبتاً|nisbatan|verb|formal|relatively|امروز هوا نسبتاً سرد است.|imrōz hawā nisbatan sard ast.|The weather is relatively cold today.|Actions|
+1102|دقیقاً|daqīqan|verb|neutral|exactly|دقیقاً همینطور است.|daqīqan hamīntawr ast.|It is exactly like this.|Actions|
+1103|مستقیماً|mustaqīman|verb|formal|directly|من مستقیماً به خانه می‌روم.|man mustaqīman ba khāna mērawam.|I am going directly home.|Actions|
+1104|غیرمستقیم|ghayr-i mustaqīm|verb|formal|indirectly|او غیرمستقیم اشاره کرد.|ō ghayr-i mustaqīm ishāra kard.|He pointed indirectly.|Actions|
+1105|به زودی|ba zūdī|verb|neutral|soon|او به زودی می‌رسد.|ō ba zūdī mērasad.|He will arrive soon.|Time & Calendar|
+1106|بالاخره|bilākhira|verb|neutral|finally|بالاخره کارم تمام شد.|bilākhira kāram tamām shud.|Finally my work is finished.|Actions|
+1107|در نهایت|dar nihāyat|verb|formal|eventually|در نهایت او قبول کرد.|dar nihāyat ō qabūl kard.|Eventually he accepted.|Actions|
+1108|در حال حاضر|dar hāl-i hāzir|verb|formal|currently|در حال حاضر مشغول کار هستم.|dar hāl-i hāzir mashghūl-i kār hastam.|I am currently busy working.|Actions|
+1109|همزمان|hamzamān|verb|formal|simultaneously|هر دو همزمان رسیدند.|har du hamzamān rasīdand.|Both arrived simultaneously.|Actions|
+1110|قبلاً|qablan|verb|neutral|previously|من قبلاً اینجا بوده‌ام.|man qablan īnjā būda-am.|I have been here previously.|Actions|
+1111|بعداً|ba'dan|verb|neutral|later|بعداً در موردش صحبت می‌کنیم.|ba'dan dar mawridash suhbat mēkunēm.|We will talk about it later.|Actions|
+1112|دائماً|dā'iman|verb|formal|constantly|او دائماً شکایت می‌کند.|ō dā'iman shikāyat mēkunad.|He constantly complains.|Actions|
+1113|موقتاً|muwaqqatan|verb|formal|temporarily|موقتاً اینجا زندگی می‌کنم.|muwaqqatan īnjā zindagī mēkunam.|I am temporarily living here.|Actions|
+1114|تدریجاً|tadrījan|verb|formal|gradually|وضعیت تدریجاً بهتر می‌شود.|waz'iyat tadrījan bihtar mēshawad.|The situation is gradually improving.|Actions|
+1115|مخفیانه|makhfiyāna|verb|neutral|secretly|آنها مخفیانه ملاقات کردند.|ānhā makhfiyāna mulāqāt kardand.|They met secretly.|Actions|
+1116|آشکارا|āshkārā|verb|formal|openly|او آشکارا مخالفت کرد.|ō āshkārā mukhālafat kard.|He opposed openly.|Actions|
+1117|خوشبختانه|khushbakhtāna|verb|neutral|fortunately|خوشبختانه کسی صدمه ندید.|khushbakhtāna kasē sadma nadīd.|Fortunately no one was hurt.|Actions|
+1118|متأسفانه|muta'assifāna|verb|neutral|unfortunately|متأسفانه او نتوانست بیاید.|muta'assifāna ō natawānist biyāyad.|Unfortunately he couldn't come.|Actions|
+1119|اتفاقاً|ittifāqan|verb|formal|by chance|اتفاقاً او را در بازار دیدم.|ittifāqan ō rā dar bāzār dīdam.|I saw him in the market by chance.|Actions|
+1120|عمداً|amdan|verb|formal|intentionally|او این کار را عمداً نکرد.|ō īn kār rā amdan nakard.|He didn't do this intentionally.|Actions|
+1121|اشتباهاً|ishtibāhan|verb|formal|mistakenly|اشتباهاً کلید را بردم.|ishtibāhan kilīd rā burdam.|I took the key mistakenly.|Actions|
+1122|ظاهراً|zāhiran|verb|formal|apparently|ظاهراً او بیمار است.|zāhiran ō bēmār ast.|Apparently he is sick.|Actions|
+1123|شخصاً|shakhsan|verb|formal|personally|من شخصاً او را می‌شناسم.|man shakhsan ō rā mēshināsam.|I personally know him.|Actions|
+1124|عموماً|umūman|verb|formal|generally|عموماً مردم این را دوست دارند.|umūman mardum īn rā dōst dārand.|Generally people like this.|Actions|
+1125|خصوصاً|khusūsan|verb|formal|especially|من خصوصاً چای سبز را دوست دارم.|man khusūsan chāy-i sabz rā dōst dāram.|I especially like green tea.|Actions|
+1126|مسلماً|musallaman|verb|formal|certainly|مسلماً این بهترین راه است.|musallaman īn bihtarīn rāh ast.|Certainly this is the best way.|Actions|
+1127|طبیعتاً|tabī'atan|verb|formal|naturally|طبیعتاً او نگران است.|tabī'atan ō nigarān ast.|Naturally he is worried.|Actions|
+1128|سریعاً|sarī'an|verb|formal|quickly|سریعاً به شفاخانه رفت.|sarī'an ba shifākhāna raft.|He quickly went to the hospital.|Actions|
+1129|به تنهایی|ba tanhā'ī|verb|neutral|alone|او به تنهایی زندگی می‌کند.|ō ba tanhā'ī zindagī mēkunad.|He lives alone.|Actions|
+1130|با هم|bā ham|verb|neutral|together|ما با هم کار می‌کنیم.|mā bā ham kār mēkunēm.|We work together.|Actions|
+1131|جداگانه|judāgāna|verb|formal|separately|آنها جداگانه سفر کردند.|ānhā judāgāna safar kardand.|They traveled separately.|Actions|
+1132|مجدداً|mujaddadan|verb|formal|again|مجدداً تلاش کنید.|mujaddadan talāsh kunēd.|Try again.|Actions|
+1133|به جز|ba juz|preposition|neutral|except|همه آمدند به جز علی.|hama āmadand ba juz alī.|Everyone came except Ali.|Grammar & Connectors|
+1134|بدون|bidūn-i|preposition|neutral|without|بدون تو نمی‌روم.|bidūn-i tu namērawam.|I won't go without you.|Grammar & Connectors|
+1135|بر خلاف|bar khilāf-i|preposition|formal|unlike|بر خلاف او، من مهربانم.|bar khilāf-i ō, man mihrabānam.|Unlike him, I am kind.|Grammar & Connectors|
+1136|بر اساس|bar asās-i|preposition|formal|based on|بر اساس گزارش‌ها، باران می‌بارد.|bar asās-i guzārish-hā, bārān mēbārad.|Based on the reports, it is raining.|Grammar & Connectors|
+1137|مطابق|mutābiq-i|preposition|formal|according to|مطابق قانون رفتار کنید.|mutābiq-i qānūn raftār kunēd.|Act according to the law.|Grammar & Connectors|
+1138|با وجود|bā wujūd-i|preposition|neutral|despite|با وجود مریضی، به مکتب رفت.|bā wujūd-i marēzī, ba maktab raft.|Despite the illness, he went to school.|Grammar & Connectors|
+1139|به علاوه|ba ilāwa-i|preposition|formal|in addition to|به علاوه این، پول هم داد.|ba ilāwa-i īn, pūl ham dād.|In addition to this, he also gave money.|Grammar & Connectors|
+1140|به غیر از|ba ghayr az|preposition|neutral|other than|به غیر از تو کسی را ندارم.|ba ghayr az tu kasē rā nadāram.|I have no one other than you.|Grammar & Connectors|
+1141|از طریق|az tarīq-i|preposition|formal|through/via|از طریق ایمیل تماس بگیرید.|az tarīq-i ēmēl tamās bigīrēd.|Contact via email.|Grammar & Connectors|
+1142|به وسیله|ba wasīla-i|preposition|formal|by means of|پیام به وسیله کبوتر فرستاده شد.|payām ba wasīla-i kabūtar firistāda shud.|The message was sent by means of a pigeon.|Grammar & Connectors|
+1143|در مورد|dar mawrid-i|preposition|neutral|regarding|در مورد آن فکر می‌کنم.|dar mawrid-i ān fikr mēkunam.|I will think regarding it.|Grammar & Connectors|
+1144|راجع به|rāji' ba|preposition|formal|concerning|راجع به این موضوع صحبت کردیم.|rāji' ba īn mawzū' suhbat kardēm.|We spoke concerning this subject.|Grammar & Connectors|
+1145|به خاطر|ba khātir-i|preposition|neutral|because of|به خاطر تو آمدم.|ba khātir-i tu āmadam.|I came because of you.|Grammar & Connectors|
+1146|در برابر|dar barābar-i|preposition|formal|against|در برابر دشمن مقاومت کردند.|dar barābar-i dushman muqāwamat kardand.|They resisted against the enemy.|Grammar & Connectors|
+1147|در مقابل|dar muqābil-i|preposition|neutral|opposite/in front of|در مقابل مسجد ایستاد.|dar muqābil-i masjid ēstād.|He stood opposite the mosque.|Grammar & Connectors|
+1148|در میان|dar miyān-i|preposition|formal|among|او در میان مردم است.|ō dar miyān-i mardum ast.|He is among the people.|Grammar & Connectors|
+1149|بین|bayn-i|preposition|neutral|between|فاصله بین دو شهر کم است.|fāsila bayn-i du shahr kam ast.|The distance between the two cities is short.|Grammar & Connectors|
+1150|خارج از|khārij az|preposition|neutral|outside of|خارج از کشور زندگی می‌کند.|khārij az kishwar zindagī mēkunad.|He lives outside of the country.|Grammar & Connectors|
+1151|داخل|dākhil-i|preposition|neutral|inside|داخل اتاق سرد است.|dākhil-i utāq sard ast.|Inside the room is cold.|Grammar & Connectors|
+1152|پیرامون|pērāmōn-i|preposition|formal|around|پیرامون شهر دیوار است.|pērāmōn-i shahr dēwār ast.|There is a wall around the city.|Grammar & Connectors|
+1153|اطراف|atrāf-i|preposition|neutral|surroundings of|اطراف خانه درخت است.|atrāf-i khāna dirakht ast.|There are trees in the surroundings of the house.|Grammar & Connectors|
+1154|در طول|dar tūl-i|preposition|neutral|during|در طول روز کار می‌کنم.|dar tūl-i rōz kār mēkunam.|I work during the day.|Grammar & Connectors|
+1155|در عرض|dar arz-i|preposition|formal|within/during|در عرض یک هفته برمی‌گردم.|dar arz-i yak hafta barmēgardam.|I will return within a week.|Grammar & Connectors|
+1156|به جای|ba jāy-i|preposition|neutral|instead of|به جای من او رفت.|ba jāy-i man ō raft.|Instead of me, he went.|Grammar & Connectors|
+1157|بنابراین|binābar'īn|conjunction|formal|therefore|بنابراین ما تصمیم گرفتیم برویم.|binābar'īn mā tasmīm giriftēm birawēm.|Therefore, we decided to go.|Grammar & Connectors|
+1158|در نتیجه|dar natija|conjunction|formal|as a result|در نتیجه، امتحان لغو شد.|dar natija, imtihān laghw shud.|As a result, the exam was canceled.|Grammar & Connectors|
+1159|با این حال|bā īn hāl|conjunction|formal|however|با این حال، او تسلیم نشد.|bā īn hāl, ō taslīm nashud.|However, he did not give up.|Grammar & Connectors|
+1160|در حالی که|dar hālē ki|conjunction|formal|while/whereas|او می‌خندید در حالی که من گریه می‌کردم.|ō mēkhandīd dar hālē ki man girya mēkardam.|He was laughing while I was crying.|Grammar & Connectors|
+1161|اگرچه|agarchi|conjunction|neutral|although|اگرچه خسته بودم، کار کردم.|agarchi khasta būdam, kār kardam.|Although I was tired, I worked.|Grammar & Connectors|
+1162|هرچند|harchand|conjunction|formal|even though|هرچند پول نداشت، شاد بود.|harchand pūl nadāsht, shād būd.|Even though he had no money, he was happy.|Grammar & Connectors|
+1163|تا اینکه|tā īnki|conjunction|neutral|until|منتظر ماندم تا اینکه آمد.|muntazir māndam tā īnki āmad.|I waited until he came.|Grammar & Connectors|
+1164|به شرطی که|ba shartē ki|conjunction|neutral|provided that|می‌آیم به شرطی که زود برگردیم.|mēāyam ba shartē ki zūd bargardēm.|I will come provided that we return early.|Grammar & Connectors|
+1165|مگر اینکه|magar īnki|conjunction|formal|unless|نمی‌روم مگر اینکه او بیاید.|namērawam magar īnki ō biyāyad.|I will not go unless he comes.|Grammar & Connectors|
+1166|چنانچه|chunānchi|conjunction|formal|in case/if|چنانچه باران ببارد، نمی‌رویم.|chunānchi bārān bibārad, namērawēm.|In case it rains, we will not go.|Grammar & Connectors|
+1167|خواه... خواه|khāh... khāh|conjunction|formal|whether... or|خواه بیایی خواه نیایی، من می‌روم.|khāh biyāyī khāh nayāyī, man mērawam.|Whether you come or not, I will go.|Grammar & Connectors|
+1168|نه تنها... بلکه|na tanhā... balki|conjunction|formal|not only... but also|نه تنها زرنگ است بلکه مهربان هم است.|na tanhā zirang ast balki mihrabān ham ast.|Not only is he smart but also kind.|Grammar & Connectors|
+1169|هم... هم|ham... ham|conjunction|neutral|both... and|هم علی و هم احمد آمدند.|ham alī wa ham ahmad āmadand.|Both Ali and Ahmad came.|Grammar & Connectors|
+1170|از این رو|az īn rō|conjunction|formal|hence|از این رو، کار را تمام کردیم.|az īn rō, kār rā tamām kardēm.|Hence, we finished the work.|Grammar & Connectors|
+1171|بدین ترتیب|bidīn tartīb|conjunction|formal|thus|بدین ترتیب، مشکل حل شد.|bidīn tartīb, mushkil hal shud.|Thus, the problem was solved.|Grammar & Connectors|
+1172|به همین دلیل|ba hamīn dalēl|conjunction|neutral|for this reason|به همین دلیل دیر آمدم.|ba hamīn dalēl dēr āmadam.|For this reason I came late.|Grammar & Connectors|
+1173|با این وجود|bā īn wujūd|conjunction|formal|nevertheless|با این وجود، او تلاش کرد.|bā īn wujūd, ō talāsh kard.|Nevertheless, he tried.|Grammar & Connectors|
+1174|از آنجایی که|az ānjāyē ki|conjunction|formal|since/as|از آنجایی که هوا سرد است، لباس گرم بپوش.|az ānjāyē ki hawā sard ast, libās-i garm bipōsh.|Since the weather is cold, wear warm clothes.|Grammar & Connectors|
+1175|همانطور که|hamāntawr ki|conjunction|neutral|just as|همانطور که گفتم، او نیامد.|hamāntawr ki guftam, ō nayāmad.|Just as I said, he didn't come.|Grammar & Connectors|
+1176|طوری که|tawrē ki|conjunction|neutral|in such a way that|طوری که به نظر می‌رسد، او بیمار است.|tawrē ki ba nazar mērasad, ō bēmār ast.|The way it seems, he is sick.|Travel & Transportation|
+1177|به طوری که|ba tawrē ki|conjunction|formal|so that|آهسته صحبت کن به طوری که بیدار نشود.|āhista suhbat kun ba tawrē ki bēdār nashawad.|Speak softly so that he doesn't wake up.|Grammar & Connectors|
+1178|زیرا|zērā|conjunction|formal|because|او نیامد زیرا مریض بود.|ō nayāmad zērā marēz būd.|He didn't come because he was sick.|Grammar & Connectors|
+1179|چونکه|chūnki|conjunction|neutral|because|چونکه وقت نداشتم، نرفتم.|chūnki waqt nadāshtam, naraftam.|Because I didn't have time, I didn't go.|Grammar & Connectors|
+1180|پنجره|panjara|noun|neutral|window|پنجره را باز کن.|panjara rā bāz kun.|Open the window.|Home & Furniture|
+1181|صندلی|sandalī|noun|neutral|chair|روی صندلی نشست.|rō-yi sandalī nishast.|He sat on the chair.|Home & Furniture|چوکی
+1182|فرش|farsh|noun|neutral|carpet/rug|فرش جدید خریدم.|farsh-i jadīd kharīdam.|I bought a new carpet.|Abstract Concepts|قالین
+1183|پتو|patū|noun|neutral|blanket|هوا سرد است، پتو بیاور.|hawā sard ast, patū biyāwar.|It is cold, bring a blanket.|Abstract Concepts|کمپل
+1184|بالشت|bālisht|noun|neutral|pillow|بالشت نرم است.|bālisht narm ast.|The pillow is soft.|Abstract Concepts|
+1185|یخچال|yakhchāl|noun|neutral|refrigerator|آب در یخچال است.|āb dar yakhchāl ast.|The water is in the refrigerator.|Abstract Concepts|
+1186|اجاق|ujāq|noun|neutral|stove|غذا روی اجاق است.|ghazā rō-yi ujāq ast.|The food is on the stove.|Abstract Concepts|
+1187|لیوان|lēwān|noun|neutral|glass/cup|یک لیوان آب بده.|yak lēwān āb bidi.|Give me a glass of water.|Abstract Concepts|گیلاس
+1188|فنجان|finjān|noun|neutral|cup|یک فنجان چای.|yak finjān chāy.|A cup of tea.|Abstract Concepts|پیاله
+1189|صابون|sābūn|noun|neutral|soap|دست‌ها را با صابون شستم.|dast-hā rā bā sābūn shustam.|I washed my hands with soap.|Abstract Concepts|
+1190|حوله|hawla|noun|neutral|towel|حوله کجاست؟|hawla kujāst?|Where is the towel?|Abstract Concepts|روی‌پاک
+1191|مسواک|miswāk|noun|neutral|toothbrush|مسواک زدن مهم است.|miswāk zadan muhimm ast.|Brushing teeth is important.|Abstract Concepts|برس دندان
+1192|خمیردندان|khamīr-dandān|noun|neutral|toothpaste|خمیردندان تمام شد.|khamīr-dandān tamām shud.|The toothpaste ran out.|Abstract Concepts|کریم دندان
+1193|آینه|āyina|noun|neutral|mirror|در آینه نگاه کرد.|dar āyina nigāh kard.|He looked in the mirror.|Abstract Concepts|آیینه
+1194|شامپو|shāmpū|noun|neutral|shampoo|شامپو خریدم.|shāmpū kharīdam.|I bought shampoo.|Abstract Concepts|
+1195|سوزن|sōzan|noun|neutral|needle|سوزن و تار بیاور.|sōzan wa tār biyāwar.|Bring a needle and thread.|Abstract Concepts|
+1196|برفباری|barfbārī|noun|neutral|snowfall|برفباری شروع شد.|barfbārī shurū shud.|The snowfall started.|Abstract Concepts|
+1197|یخبندان|yakhbandān|noun|neutral|frost/freezing|هوا یخبندان است.|hawā yakhbandān ast.|The weather is freezing.|Abstract Concepts|
+1198|شارژر|shārjar|noun|neutral|charger|شارژر تلیفون کجاست؟|shārjar-i tēlifōn kujāst?|Where is the phone charger?|Abstract Concepts|
+1199|پریز|parēz|noun|neutral|socket|پریز برق خراب است.|parēz-i barq kharāb ast.|The electrical socket is broken.|Abstract Concepts|
+1200|بطری|batrī|noun|neutral|battery|بطری خلاص شد.|batrī khalās shud.|The battery is dead.|Abstract Concepts|

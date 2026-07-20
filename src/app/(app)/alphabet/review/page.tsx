@@ -10,7 +10,7 @@ import { getUserLetters, updateUserLetter } from "@/lib/db/letters";
 import { Button } from "@/components/ui/button";
 import { FSRS, Rating, createEmptyCard, type Card } from "ts-fsrs";
 
-const fsrs = new FSRS();
+const fsrs = new FSRS({});
 
 export default function AlphabetReviewPage() {
   const db = useSupabase();
@@ -27,10 +27,13 @@ export default function AlphabetReviewPage() {
 
   const dueLetters = letters?.filter(l => l.due && new Date(l.due) <= new Date()) || [];
   
+  const [forceReview, setForceReview] = useState(false);
+  const activeLetters = forceReview ? (letters || []) : dueLetters;
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
 
-  const currentDue = dueLetters[currentIndex];
+  const currentDue = activeLetters[currentIndex];
   
   // Look up the letter in the course to get its forms
   const letterData = useMemo(() => {
@@ -57,7 +60,7 @@ export default function AlphabetReviewPage() {
   const reviewMutation = useMutation({
     mutationFn: async ({ rating, card }: { rating: Rating; card: Card }) => {
       if (!user || !currentDue) return;
-      const f = new FSRS();
+      const f = new FSRS({});
       // Ensure the card has valid dates
       const validCard = {
         ...card,
@@ -66,18 +69,19 @@ export default function AlphabetReviewPage() {
       };
       
       const scheduling = f.repeat(validCard, new Date());
-      const nextCard = scheduling[rating].card;
+      const nextCard = (scheduling as any)[rating].card;
       
       await updateUserLetter(db, user.id, currentDue.letter_char, nextCard);
     },
     onSuccess: () => {
-      if (currentIndex < dueLetters.length - 1) {
+      if (currentIndex < activeLetters.length - 1) {
         setCurrentIndex(i => i + 1);
         setShowAnswer(false);
       } else {
         refetch();
         setCurrentIndex(0);
         setShowAnswer(false);
+        setForceReview(false);
       }
     }
   });
@@ -85,7 +89,7 @@ export default function AlphabetReviewPage() {
   const handleRate = (rating: Rating) => {
     if (!currentDue) return;
     const card = currentDue.fsrs || createEmptyCard(new Date());
-    reviewMutation.mutate({ rating, card });
+    reviewMutation.mutate({ rating, card: card as Card });
   };
 
   return (
@@ -99,18 +103,23 @@ export default function AlphabetReviewPage() {
         </Link>
         <div>
           <p className="text-[15px] font-semibold leading-tight">Review Letters</p>
-          <p className="text-[12px] text-ink-faint">{dueLetters.length - currentIndex} remaining</p>
+          <p className="text-[12px] text-ink-faint">{activeLetters.length - currentIndex} remaining</p>
         </div>
       </div>
 
       <div className="flex flex-1 flex-col items-center justify-center text-center p-4">
         {isLoading ? (
           <p className="text-ink-soft">Loading reviews...</p>
-        ) : dueLetters.length === 0 ? (
+        ) : activeLetters.length === 0 ? (
           <div className="flex flex-col items-center gap-4">
             <div className="text-[48px]">🎉</div>
             <h2 className="text-[20px] font-semibold">You're all caught up!</h2>
             <p className="text-ink-soft">No letters due for review right now.</p>
+            {letters && letters.length > 0 && (
+              <Button variant="secondary" className="mt-4" onClick={() => setForceReview(true)}>
+                Review anyway
+              </Button>
+            )}
           </div>
         ) : (
           <div className="flex flex-col items-center w-full max-w-sm gap-8">
@@ -134,14 +143,17 @@ export default function AlphabetReviewPage() {
                   <p className="text-[16px] text-ink-soft">{letterData?.translit} · {letterData?.sound}</p>
                 </div>
                 
-                <div className="grid grid-cols-3 gap-2">
-                  <Button variant="outline" className="border-red-500/20 text-red-600 hover:bg-red-50" onClick={() => handleRate(Rating.Again)}>
+                <div className="grid grid-cols-4 gap-2">
+                  <Button variant="secondary" className="border-red-500/20 text-red-600 hover:bg-red-50 px-2" onClick={() => handleRate(Rating.Again)}>
                     Forgot
                   </Button>
-                  <Button variant="outline" className="border-sabz/20 text-sabz hover:bg-sabz-soft/50" onClick={() => handleRate(Rating.Good)}>
+                  <Button variant="secondary" className="border-amber-500/20 text-amber-600 hover:bg-amber-50 px-2" onClick={() => handleRate(Rating.Hard)}>
+                    Hard
+                  </Button>
+                  <Button variant="secondary" className="border-sabz/20 text-sabz hover:bg-sabz/5 px-2" onClick={() => handleRate(Rating.Good)}>
                     Good
                   </Button>
-                  <Button variant="outline" className="border-lapis/20 text-lapis hover:bg-lapis-soft/50" onClick={() => handleRate(Rating.Easy)}>
+                  <Button variant="secondary" className="border-lapis/20 text-lapis hover:bg-lapis/5 px-2" onClick={() => handleRate(Rating.Easy)}>
                     Easy
                   </Button>
                 </div>

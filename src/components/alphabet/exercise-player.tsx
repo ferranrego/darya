@@ -119,7 +119,11 @@ function ExerciseView({
           prompt={
             <>
               Which one is <strong>{letter?.name ?? exercise.targetChar}</strong>
-              {letter ? <span className="text-ink-soft"> ({letter.sound})</span> : null}?
+              {letter ? (
+                <RevealInline>
+                  <span className="text-ink-soft"> ({letter.sound})</span>
+                </RevealInline>
+              ) : null}?
             </>
           }
           hint={exercise.hint}
@@ -154,9 +158,11 @@ function ExerciseView({
         <div className="flex flex-1 flex-col">
           <Prompt hint={exercise.hint}>
             Tap the letter <strong>{letter?.name ?? exercise.targetChar}</strong>{" "}
-            <span lang="prs" className="text-[20px]">
-              ({exercise.targetChar})
-            </span>{" "}
+            <RevealInline>
+              <span lang="prs" className="text-[20px]">
+                ({exercise.targetChar})
+              </span>
+            </RevealInline>{" "}
             in this word
           </Prompt>
           <div className="my-auto py-10 text-center">
@@ -174,9 +180,13 @@ function ExerciseView({
                 </FeedbackButton>
               ))}
             </div>
-            <p className="mt-4 text-[14px] text-ink-soft">
-              {exercise.translit} · {exercise.glossEn}
-            </p>
+            <div className="mt-4 flex justify-center">
+              <Reveal>
+                <p className="text-[14px] text-ink-soft">
+                  {exercise.translit} · {exercise.glossEn}
+                </p>
+              </Reveal>
+            </div>
           </div>
         </div>
       );
@@ -189,7 +199,11 @@ function ExerciseView({
             <p lang="prs" className="text-[64px] leading-tight">
               {exercise.word}
             </p>
-            <p className="mt-2 text-[14px] text-ink-faint">{exercise.glossEn}</p>
+            <div className="mt-2 flex justify-center">
+              <Reveal>
+                <p className="text-[14px] text-ink-faint">{exercise.glossEn}</p>
+              </Reveal>
+            </div>
             <div className="mx-auto mt-10 flex max-w-sm flex-col gap-3">
               {shuffled(exercise.choices, exercise.id).map((choice) => (
                 <FeedbackButton
@@ -208,6 +222,44 @@ function ExerciseView({
       );
     case "readSentence":
       return <ReadSentence key={exercise.id} exercise={exercise} onAnswer={onAnswer} />;
+    case "recognizeForm":
+      return (
+        <ChoiceGrid
+          prompt={
+            <>
+              Which letter has this <strong>{exercise.targetForm}</strong> form?
+            </>
+          }
+          hint={exercise.hint}
+          options={shuffled([exercise.targetChar, ...exercise.distractors], exercise.id)}
+          isCorrect={(o) => o === exercise.targetChar}
+          feedback={feedback}
+          onAnswer={onAnswer}
+          big
+          topContent={
+            <div className="py-6 text-center">
+              <span lang="prs" className="text-[80px] leading-none text-lapis">{exercise.glyph}</span>
+            </div>
+          }
+        />
+      );
+    case "constructWord":
+      return (
+        <ChoiceGrid
+          prompt={<>Join these letters to make a word:</>}
+          hint={exercise.hint}
+          options={shuffled([exercise.targetWord, ...exercise.distractors], exercise.id)}
+          isCorrect={(o) => o === exercise.targetWord}
+          feedback={feedback}
+          onAnswer={onAnswer}
+          big
+          topContent={
+            <div className="py-6 text-center" dir="rtl">
+              <span lang="prs" className="text-[60px] tracking-[0.2em]">{exercise.letters.join("")}</span>
+            </div>
+          }
+        />
+      );
   }
 }
 
@@ -265,6 +317,7 @@ function ChoiceGrid({
   feedback,
   onAnswer,
   big,
+  topContent,
 }: {
   prompt: React.ReactNode;
   hint?: string;
@@ -273,26 +326,62 @@ function ChoiceGrid({
   feedback: Feedback;
   onAnswer: (correct: boolean) => void;
   big?: boolean;
+  topContent?: React.ReactNode;
 }) {
   return (
     <div className="flex flex-1 flex-col">
       <Prompt hint={hint}>{prompt}</Prompt>
-      <div className="my-auto grid grid-cols-2 gap-3 py-10">
-        {options.map((option) => (
-          <FeedbackButton
-            key={option}
-            correct={isCorrect(option)}
-            feedback={feedback}
-            onAnswer={onAnswer}
-            lang="prs"
-            className={`rounded-2xl border border-line bg-surface py-6 ${big ? "text-[48px]" : "text-[28px]"} hover:border-ink-faint`}
-          >
-            {option}
-          </FeedbackButton>
-        ))}
+      <div className="my-auto flex flex-col">
+        {topContent}
+        <div className="grid grid-cols-2 gap-3 py-10">
+          {options.map((option) => (
+            <FeedbackButton
+              key={option}
+              correct={isCorrect(option)}
+              feedback={feedback}
+              onAnswer={onAnswer}
+              lang="prs"
+              className={`rounded-2xl border border-line bg-surface py-6 ${big ? "text-[48px]" : "text-[28px]"} hover:border-ink-faint`}
+            >
+              {option}
+            </FeedbackButton>
+          ))}
+        </div>
       </div>
     </div>
   );
+}
+
+function Reveal({ children }: { children: React.ReactNode }) {
+  const [revealed, setRevealed] = useState(false);
+  if (!revealed) {
+    return (
+      <button 
+        type="button" 
+        onClick={() => setRevealed(true)}
+        className="rounded-md border border-line bg-surface px-3 py-1.5 text-[13px] text-ink-faint hover:text-ink-soft transition-colors"
+      >
+        Tap to show hint
+      </button>
+    );
+  }
+  return <div className="animate-in fade-in slide-in-from-top-1">{children}</div>;
+}
+
+function RevealInline({ children }: { children: React.ReactNode }) {
+  const [revealed, setRevealed] = useState(false);
+  if (!revealed) {
+    return (
+      <button 
+        type="button" 
+        onClick={() => setRevealed(true)}
+        className="inline-flex items-center rounded bg-line/50 px-1.5 text-[12px] font-medium text-ink-faint transition-colors hover:bg-line"
+      >
+        Show
+      </button>
+    );
+  }
+  return <span className="animate-in fade-in">{children}</span>;
 }
 
 /**

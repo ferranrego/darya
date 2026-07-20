@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen, Home, Library, RotateCcw, User } from "lucide-react";
+import { BookOpen, Compass, Home, Library, RotateCcw, User, Trophy } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -9,6 +9,7 @@ const tabs = [
   { href: "/read", label: "Read", icon: BookOpen },
   { href: "/words", label: "Words", icon: Library },
   { href: "/review", label: "Review", icon: RotateCcw },
+  { href: "/leaderboard", label: "Ranks", icon: Trophy },
   { href: "/profile", label: "Profile", icon: User },
 ] as const;
 
@@ -17,8 +18,7 @@ export function TabBar() {
   const pathname = usePathname();
   return (
     <nav
-      className="fixed bottom-0 inset-x-0 z-40 border-t border-line/70 bg-paper/80 backdrop-blur-xl"
-      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+      className="fixed bottom-0 inset-x-0 z-40 w-full border-t border-line/70 bg-paper/80 backdrop-blur-xl pb-[max(env(safe-area-inset-bottom),12px)]"
     >
       <div className="mx-auto flex max-w-2xl items-stretch justify-around">
         {tabs.map(({ href, label, icon: Icon }) => {

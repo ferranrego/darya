@@ -122,7 +122,7 @@ export const recognizeLetterExercise = z.object({
   type: z.literal("recognizeLetter"),
   targetChar: z.string(),
   /** Distractor isolated chars; UI shuffles target in. */
-  distractors: z.array(z.string()).min(2),
+  distractors: z.array(z.string()).min(3),
 });
 
 /** "Find [letter] inside this word" by tapping the highlighted-form position. */
@@ -143,7 +143,7 @@ export const matchSoundExercise = z.object({
   type: z.literal("matchSound"),
   sound: z.string(),
   targetChar: z.string(),
-  distractors: z.array(z.string()).min(2),
+  distractors: z.array(z.string()).min(3),
 });
 
 /** Read a whole word, self-check against transliteration + gloss. */
@@ -166,12 +166,36 @@ export const readSentenceExercise = z.object({
   en: z.string(),
 });
 
+export const recognizeFormExercise = z.object({
+  ...exerciseBase,
+  type: z.literal("recognizeForm"),
+  targetChar: z.string(),
+  /** The specific form of the letter to test ("initial", "medial", "final", or "isolated"). */
+  targetForm: z.enum(["initial", "medial", "final", "isolated"]),
+  /** The actual glyph for the form to show, e.g., "ـبـ" */
+  glyph: z.string().min(1),
+  distractors: z.array(z.string()).min(3),
+});
+
+export const constructWordExercise = z.object({
+  ...exerciseBase,
+  type: z.literal("constructWord"),
+  /** The isolated letters in reading order (RTL). */
+  letters: z.array(z.string()).min(2),
+  /** The correct joined word, e.g. "باب" */
+  targetWord: z.string(),
+  /** Distractor joined words */
+  distractors: z.array(z.string()).min(3),
+});
+
 export const exerciseSchema = z.discriminatedUnion("type", [
   recognizeLetterExercise,
   pickFormExercise,
   matchSoundExercise,
   readWordExercise,
   readSentenceExercise,
+  recognizeFormExercise,
+  constructWordExercise,
 ]);
 
 export const alphabetUnitSchema = z.object({

@@ -1,102 +1,102 @@
 # Darya core lexicon — part 1 (function words, pronouns, numbers, family, basics)
 # rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants
-1|و|wa|conjunction|neutral|and|من و تو دوست هستیم.|man wa tu dōst hastēm.|You and I are friends.||
-2|در|dar|preposition|neutral|in, at|او در خانه است.|ō dar khāna ast.|He is at home.||
-3|به|ba|preposition|neutral|to, for|من به مکتب می‌روم.|man ba maktab mērawam.|I go to school.||
-4|از|az|preposition|neutral|from, of|او از کابل است.|ō az kābul ast.|She is from Kabul.||
-5|که|ke|conjunction|neutral|that, which|می‌دانم که تو مانده هستی.|mēdānam ke tu mānda hastī.|I know that you are tired.||
-6|این|īn|determiner|neutral|this|این کتاب خوب است.|īn ketāb khōb ast.|This book is good.||
-7|را|rā|particle|neutral|(object marker)|کتاب را خواندم.|ketāb rā khāndam.|I read the book.||
-8|با|bā|preposition|neutral|with|با دوستم چای می‌خورم.|bā dōstam chāy mēkhuram.|I have tea with my friend.||
-9|آن|ān|determiner|neutral|that|آن مرد معلم است.|ān mard mu'allem ast.|That man is a teacher.||
-10|است|ast|verb|neutral|is|هوا سرد است.|hawā sard ast.|The weather is cold.||
-11|من|man|pronoun|neutral|I|من شاگرد هستم.|man shāgerd hastam.|I am a student.||
-12|او|ō|pronoun|neutral|he, she|او برادر من است.|ō barādar-e man ast.|He is my brother.||
-13|تو|tu|pronoun|neutral|you (singular)|تو کجا هستی؟|tu kujā hastī?|Where are you?||
-14|ما|mā|pronoun|neutral|we|ما در کابل زندگی می‌کنیم.|mā dar kābul zendagī mēkunēm.|We live in Kabul.||
-15|شما|shumā|pronoun|neutral|you (plural, polite)|شما چطور هستید؟|shumā chetōr hastēd?|How are you?||
-16|آنها|ānhā|pronoun|neutral|they|آنها به بازار رفتند.|ānhā ba bāzār raftand.|They went to the market.||آن‌ها
-17|چه|che|pronoun|neutral|what|چه می‌خواهی؟|che mēkhāhī?|What do you want?||چی
-18|کی|kī|pronoun|neutral|who|این مرد کی است؟|īn mard kī ast?|Who is this man?||
-19|کجا|kujā|adverb|neutral|where|خانه شما کجا است؟|khāna-ye shumā kujā ast?|Where is your house?||
-20|چرا|cherā|adverb|neutral|why|چرا مانده هستی؟|cherā mānda hastī?|Why are you tired?||
-21|چطور|chetōr|adverb|spoken|how|چطور هستید؟|chetōr hastēd?|How are you?||
-22|بلی|balē|interjection|neutral|yes|بلی، من گرسنه هستم.|balē, man gushna hastam.|Yes, I am hungry.|dari-specific|
-23|نه|na|interjection|neutral|no (also: nine, "nuh")|نه، تشکر.|na, tashakur.|No, thank you.||
-24|هم|ham|adverb|neutral|also, too|من هم چای می‌خواهم.|man ham chāy mēkhāham.|I want tea too.||
-25|یک|yak|numeral|neutral|one, a|یک کتاب دارم.|yak ketāb dāram.|I have one book.||
-26|دو|dū|numeral|neutral|two|دو برادر دارم.|dū barādar dāram.|I have two brothers.||
-27|سه|se|numeral|neutral|three|سه روز کار کردم.|se rōz kār kardam.|I worked for three days.||
-28|چهار|chār|numeral|neutral|four|چهار بجه است.|chār baja ast.|It is four o'clock.||
-29|پنج|panj|numeral|neutral|five|پنج سال در کابل بودم.|panj sāl dar kābul būdam.|I was in Kabul for five years.||
-30|شش|shash|numeral|neutral|six|شش دقیقه وقت داریم.|shash daqīqa waqt dārēm.|We have six minutes.||
-31|هفت|haft|numeral|neutral|seven|هفت روز در یک هفته است.|haft rōz dar yak hafta ast.|There are seven days in a week.||
-32|هشت|hasht|numeral|neutral|eight|صبح هشت بجه کار می‌کنم.|subh hasht baja kār mēkunam.|I work at eight in the morning.||
-33|ده|dah|numeral|neutral|ten|ده دقیقه صبر کن.|dah daqīqa sabr kun.|Wait ten minutes.||
-34|صد|sad|numeral|neutral|hundred|این کتاب صد صفحه دارد.|īn ketāb sad safha dārad.|This book has a hundred pages.||
-35|هزار|hazār|numeral|neutral|thousand|هزار افغانی دارم.|hazār afghānī dāram.|I have a thousand afghanis.||
-36|خانه|khāna|noun|neutral|house, home|خانه ما کلان است.|khāna-ye mā kalān ast.|Our house is big.||
-37|آب|āb|noun|neutral|water|یک گیلاس آب می‌خواهم.|yak gīlās āb mēkhāham.|I want a glass of water.||
-38|نان|nān|noun|neutral|bread; food, meal|نان گرم بسیار خوش‌مزه است.|nān-e garm besyār khushmaza ast.|Warm bread is very tasty.||
-39|چای|chāy|noun|neutral|tea|چای سبز می‌خوری؟|chāy-e sabz mēkhurī?|Do you drink green tea?||
-40|روز|rōz|noun|neutral|day|امروز روز خوب است.|emrōz rōz-e khōb ast.|Today is a good day.||
-41|شب|shab|noun|neutral|night|شب هوا سرد می‌شود.|shab hawā sard mēshawad.|At night the weather gets cold.||
-42|صبح|subh|noun|neutral|morning|صبح چای می‌خورم.|subh chāy mēkhuram.|In the morning I drink tea.||
-43|امروز|emrōz|adverb|neutral|today|امروز به بازار می‌روم.|emrōz ba bāzār mērawam.|Today I am going to the market.||
-44|فردا|fardā|adverb|neutral|tomorrow|فردا به مکتب می‌روم.|fardā ba maktab mērawam.|Tomorrow I go to school.||
-45|دیروز|dīrōz|adverb|neutral|yesterday|دیروز باران بارید.|dīrōz bārān bārīd.|Yesterday it rained.||
-46|حالا|hālā|adverb|neutral|now|حالا وقت نان است.|hālā waqt-e nān ast.|Now it is time to eat.||
-47|وقت|waqt|noun|neutral|time|وقت کم داریم.|waqt-e kam dārēm.|We have little time.||
-48|سال|sāl|noun|neutral|year|سال نو مبارک!|sāl-e naw mubārak!|Happy New Year!||
-49|ماه|māh|noun|neutral|month; moon|ماه آینده سفر می‌کنم.|māh-e āyenda safar mēkunam.|Next month I will travel.||
-50|هفته|hafta|noun|neutral|week|هفته هفت روز دارد.|hafta haft rōz dārad.|A week has seven days.||
-51|مادر|mādar|noun|neutral|mother|مادرم نان پخته می‌کند.|mādaram nān pukhta mēkunad.|My mother bakes bread.||
-52|پدر|padar|noun|neutral|father|پدرم در دکان کار می‌کند.|padaram dar dukān kār mēkunad.|My father works in the shop.||
-53|برادر|barādar|noun|neutral|brother|برادرم شاگرد پوهنتون است.|barādaram shāgerd-e pohantūn ast.|My brother is a university student.||
-54|خواهر|khāhar|noun|neutral|sister|خواهرم کتاب می‌خواند.|khāharam ketāb mēkhānad.|My sister reads a book.||
-55|پسر|pesar|noun|neutral|son, boy|پسر او در مکتب است.|pesar-e ō dar maktab ast.|His son is at school.||
-56|دختر|dukhtar|noun|neutral|daughter, girl|دختر ما دری می‌خواند.|dukhtar-e mā darī mēkhānad.|Our daughter studies Dari.||
-57|بچه|bacha|noun|spoken|child, boy|بچه‌ها در سرک بازی می‌کنند.|bacha-hā dar sarak bāzī mēkunand.|The children play in the street.||بچه‌ها
-58|دوست|dōst|noun|neutral|friend|دوست من از هرات است.|dōst-e man az herāt ast.|My friend is from Herat.||
-59|مردم|mardum|noun|neutral|people|مردم افغانستان مهمان‌نواز هستند.|mardum-e afghānestān mehmān-nawāz hastand.|The people of Afghanistan are hospitable.||
-60|مرد|mard|noun|neutral|man|آن مرد دکان‌دار است.|ān mard dukāndār ast.|That man is a shopkeeper.||
-61|زن|zan|noun|neutral|woman, wife|این زن داکتر است.|īn zan dāktar ast.|This woman is a doctor.||
-62|نام|nām|noun|neutral|name|نام شما چیست؟|nām-e shumā chīst?|What is your name?||
-63|خوب|khōb|adjective|neutral|good, well|حال من خوب است.|hāl-e man khōb ast.|I am well.||
-64|بد|bad|adjective|neutral|bad|هوا امروز بد نیست.|hawā emrōz bad nēst.|The weather today is not bad.||
-65|کلان|kalān|adjective|neutral|big, large|کابل شهر کلان است.|kābul shahr-e kalān ast.|Kabul is a big city.|dari-specific|
-66|خورد|khurd|adjective|neutral|small, little|خانه ما خورد است.|khāna-ye mā khurd ast.|Our house is small.|dari-specific|
-67|نو|naw|adjective|neutral|new|موتر نو خریدیم.|mōtar-e naw kharīdēm.|We bought a new car.||
-68|کهنه|kuhna|adjective|neutral|old (of things)|این بایسکل کهنه است.|īn bāyskel kuhna ast.|This bicycle is old.||
-69|زیاد|ziyād|adjective|neutral|much, many, a lot|در بازار مردم زیاد بود.|dar bāzār mardum-e ziyād būd.|There were many people at the market.||
-70|کم|kam|adjective|neutral|little, few|وقت کم است.|waqt kam ast.|There is little time.||
-71|گرم|garm|adjective|neutral|warm, hot|چای گرم می‌خواهم.|chāy-e garm mēkhāham.|I want hot tea.||
-72|سرد|sard|adjective|neutral|cold|زمستان کابل سرد است.|zemestān-e kābul sard ast.|Kabul's winter is cold.||
-73|مقبول|maqbūl|adjective|neutral|beautiful, pretty|این قریه بسیار مقبول است.|īn qarya besyār maqbūl ast.|This village is very beautiful.|dari-specific|
-74|کتاب|ketāb|noun|neutral|book|این کتاب دری است.|īn ketāb-e darī ast.|This is a Dari book.||
-75|مکتب|maktab|noun|neutral|school|مکتب هشت بجه شروع می‌شود.|maktab hasht baja shurū' mēshawad.|School starts at eight o'clock.|dari-specific|
-76|پوهنتون|pohantūn|noun|neutral|university|برادرم به پوهنتون می‌رود.|barādaram ba pohantūn mērawad.|My brother goes to the university.|dari-specific,loanword|
-77|شاگرد|shāgerd|noun|neutral|student, pupil|شاگردان در صنف هستند.|shāgerdān dar senf hastand.|The students are in the classroom.||شاگردان
-78|معلم|mu'allem|noun|neutral|teacher|معلم ما بسیار خوب است.|mu'allem-e mā besyār khōb ast.|Our teacher is very good.||
-79|کار|kār|noun|neutral|work, job|کار من سخت است.|kār-e man sakht ast.|My work is hard.||
-80|شهر|shahr|noun|neutral|city|هرات شهر قدیمی است.|herāt shahr-e qadīmī ast.|Herat is an ancient city.||
-81|قریه|qarya|noun|neutral|village|پدرکلانم در قریه زندگی می‌کند.|padarkalānam dar qarya zendagī mēkunad.|My grandfather lives in the village.|dari-specific|
-82|سرک|sarak|noun|neutral|street, road|این سرک به بازار می‌رود.|īn sarak ba bāzār mērawad.|This road goes to the market.|dari-specific|
-83|موتر|mōtar|noun|neutral|car|موتر ما کهنه است.|mōtar-e mā kuhna ast.|Our car is old.|dari-specific,loanword|
-84|بایسکل|bāyskel|noun|neutral|bicycle|با بایسکل به کار می‌روم.|bā bāyskel ba kār mērawam.|I go to work by bicycle.|dari-specific,loanword|
-85|افغانستان|afghānestān|noun|neutral|Afghanistan|افغانستان کشور مقبول است.|afghānestān keshwar-e maqbūl ast.|Afghanistan is a beautiful country.|place|
-86|کابل|kābul|noun|neutral|Kabul|کابل پایتخت افغانستان است.|kābul pāytakht-e afghānestān ast.|Kabul is the capital of Afghanistan.|place|
-87|دری|darī|noun|neutral|Dari (language)|من دری یاد می‌گیرم.|man darī yād mēgīram.|I am learning Dari.||
-88|زبان|zabān|noun|neutral|language; tongue|دری زبان شیرین است.|darī zabān-e shīrīn ast.|Dari is a sweet language.||
-89|رفتن|raftan|verb|neutral|to go|هر روز به کار می‌روم.|har rōz ba kār mērawam.|Every day I go to work.||می‌روم,می‌روی,می‌رود,می‌رویم,می‌روید,می‌روند,رفتم,رفتی,رفت,رفتیم,رفتند,برو,بروید,برویم
-90|آمدن|āmadan|verb|neutral|to come|فردا به خانه ما بیا.|fardā ba khāna-ye mā biyā.|Come to our house tomorrow.||می‌آیم,می‌آیی,می‌آید,می‌آییم,می‌آیند,آمدم,آمدی,آمد,آمدیم,آمدند,بیا,بیایید
-91|خوردن|khurdan|verb|neutral|to eat; to drink|نان چاشت را با فامیل می‌خوریم.|nān-e chāsht rā bā fāmīl mēkhurēm.|We eat lunch with the family.||می‌خورم,می‌خوری,می‌خورد,می‌خوریم,می‌خورید,می‌خورند,خوردم,خوردی,خوردیم,خوردند,بخور,بخورید
-92|دیدن|dīdan|verb|neutral|to see|دیروز دوستم را دیدم.|dīrōz dōstam rā dīdam.|Yesterday I saw my friend.||می‌بینم,می‌بینی,می‌بیند,می‌بینیم,می‌بینند,دیدم,دیدی,دید,دیدیم,دیدند,ببین,ببینید
-93|گفتن|guftan|verb|neutral|to say, to tell|معلم گفت که فردا امتحان است.|mu'allem guft ke fardā emtehān ast.|The teacher said that tomorrow is the exam.||می‌گویم,می‌گویی,می‌گوید,می‌گوییم,می‌گویند,گفتم,گفتی,گفت,گفتیم,گفتند,بگو,بگویید
-94|دانستن|dānestan|verb|neutral|to know|جواب را نمی‌دانم.|jawāb rā namēdānam.|I do not know the answer.||می‌دانم,می‌دانی,می‌داند,می‌دانیم,می‌دانند,نمی‌دانم,دانستم,دانست
-95|داشتن|dāshtan|verb|neutral|to have|دو خواهر دارم.|dū khāhar dāram.|I have two sisters.||دارم,داری,دارد,داریم,دارید,دارند,داشتم,داشتی,داشت,داشتیم,داشتند
-96|بودن|būdan|verb|neutral|to be|پارسال در هرات بودم.|pārsāl dar herāt būdam.|Last year I was in Herat.||هستم,هستی,هستیم,هستید,هستند,بودم,بودی,بود,بودیم,بودند,باشد,نیست,نیستم,نیستیم,نیستند,نیستی,چیست,نیستید
-97|کردن|kardan|verb|neutral|to do, to make|هر روز کار می‌کنم.|har rōz kār mēkunam.|I work every day.||می‌کنم,می‌کنی,می‌کند,می‌کنیم,می‌کنید,می‌کنند,کردم,کردی,کرد,کردیم,کردند,بکن,کن,کنیم
-98|خواندن|khāndan|verb|neutral|to read; to study; to sing|شب‌ها کتاب می‌خوانم.|shab-hā ketāb mēkhānam.|In the evenings I read books.||می‌خوانم,می‌خوانی,می‌خواند,می‌خوانیم,می‌خوانند,خواندم,خواندی,خواند,خواندیم,خواندند,بخوان
-99|خواستن|khāstan|verb|neutral|to want|یک گیلاس چای می‌خواهم.|yak gīlās chāy mēkhāham.|I want a glass of tea.||می‌خواهم,می‌خواهی,می‌خواهد,می‌خواهیم,می‌خواهند,خواستم,خواست,مه‌خواهم
-100|دادن|dādan|verb|neutral|to give|کتاب را به من بده.|ketāb rā ba man bedeh.|Give me the book.||می‌دهم,می‌دهی,می‌دهد,می‌دهیم,می‌دهند,دادم,دادی,داد,دادیم,دادند,بده,بدهید
+1|و|wa|conjunction|neutral|and|من و تو دوست هستیم.|man wa tu dōst hastēm.|You and I are friends.|Grammar & Connectors|
+2|در|dar|preposition|neutral|in, at|او در خانه است.|ō dar khāna ast.|He is at home.|Grammar & Connectors|
+3|به|ba|preposition|neutral|to, for|من به مکتب می‌روم.|man ba maktab mērawam.|I go to school.|Grammar & Connectors|
+4|از|az|preposition|neutral|from, of|او از کابل است.|ō az kābul ast.|She is from Kabul.|Grammar & Connectors|
+5|که|ke|conjunction|neutral|that, which|می‌دانم که تو مانده هستی.|mēdānam ke tu mānda hastī.|I know that you are tired.|Grammar & Connectors|
+6|این|īn|determiner|neutral|this|این کتاب خوب است.|īn ketāb khōb ast.|This book is good.|Grammar & Connectors|
+7|را|rā|particle|neutral|(object marker)|کتاب را خواندم.|ketāb rā khāndam.|I read the book.|Grammar & Connectors|
+8|با|bā|preposition|neutral|with|با دوستم چای می‌خورم.|bā dōstam chāy mēkhuram.|I have tea with my friend.|Grammar & Connectors|
+9|آن|ān|determiner|neutral|that|آن مرد معلم است.|ān mard mu'allem ast.|That man is a teacher.|Grammar & Connectors|
+10|است|ast|verb|neutral|is|هوا سرد است.|hawā sard ast.|The weather is cold.|Actions|
+11|من|man|pronoun|neutral|I|من شاگرد هستم.|man shāgerd hastam.|I am a student.|Grammar & Connectors|
+12|او|ō|pronoun|neutral|he, she|او برادر من است.|ō barādar-e man ast.|He is my brother.|Grammar & Connectors|
+13|تو|tu|pronoun|neutral|you (singular)|تو کجا هستی؟|tu kujā hastī?|Where are you?|Grammar & Connectors|
+14|ما|mā|pronoun|neutral|we|ما در کابل زندگی می‌کنیم.|mā dar kābul zendagī mēkunēm.|We live in Kabul.|Grammar & Connectors|
+15|شما|shumā|pronoun|neutral|you (plural, polite)|شما چطور هستید؟|shumā chetōr hastēd?|How are you?|Grammar & Connectors|
+16|آنها|ānhā|pronoun|neutral|they|آنها به بازار رفتند.|ānhā ba bāzār raftand.|They went to the market.|Grammar & Connectors|آن‌ها
+17|چه|che|pronoun|neutral|what|چه می‌خواهی؟|che mēkhāhī?|What do you want?|Grammar & Connectors|چی
+18|کی|kī|pronoun|neutral|who|این مرد کی است؟|īn mard kī ast?|Who is this man?|Grammar & Connectors|
+19|کجا|kujā|adverb|neutral|where|خانه شما کجا است؟|khāna-ye shumā kujā ast?|Where is your house?|Descriptions|
+20|چرا|cherā|adverb|neutral|why|چرا مانده هستی؟|cherā mānda hastī?|Why are you tired?|Descriptions|
+21|چطور|chetōr|adverb|spoken|how|چطور هستید؟|chetōr hastēd?|How are you?|Descriptions|
+22|بلی|balē|interjection|neutral|yes|بلی، من گرسنه هستم.|balē, man gushna hastam.|Yes, I am hungry.|Abstract Concepts|
+23|نه|na|interjection|neutral|no (also: nine, "nuh")|نه، تشکر.|na, tashakur.|No, thank you.|Abstract Concepts|
+24|هم|ham|adverb|neutral|also, too|من هم چای می‌خواهم.|man ham chāy mēkhāham.|I want tea too.|Descriptions|
+25|یک|yak|numeral|neutral|one, a|یک کتاب دارم.|yak ketāb dāram.|I have one book.|Abstract Concepts|
+26|دو|dū|numeral|neutral|two|دو برادر دارم.|dū barādar dāram.|I have two brothers.|Abstract Concepts|
+27|سه|se|numeral|neutral|three|سه روز کار کردم.|se rōz kār kardam.|I worked for three days.|Abstract Concepts|
+28|چهار|chār|numeral|neutral|four|چهار بجه است.|chār baja ast.|It is four o'clock.|Abstract Concepts|
+29|پنج|panj|numeral|neutral|five|پنج سال در کابل بودم.|panj sāl dar kābul būdam.|I was in Kabul for five years.|Abstract Concepts|
+30|شش|shash|numeral|neutral|six|شش دقیقه وقت داریم.|shash daqīqa waqt dārēm.|We have six minutes.|Abstract Concepts|
+31|هفت|haft|numeral|neutral|seven|هفت روز در یک هفته است.|haft rōz dar yak hafta ast.|There are seven days in a week.|Abstract Concepts|
+32|هشت|hasht|numeral|neutral|eight|صبح هشت بجه کار می‌کنم.|subh hasht baja kār mēkunam.|I work at eight in the morning.|Abstract Concepts|
+33|ده|dah|numeral|neutral|ten|ده دقیقه صبر کن.|dah daqīqa sabr kun.|Wait ten minutes.|Abstract Concepts|
+34|صد|sad|numeral|neutral|hundred|این کتاب صد صفحه دارد.|īn ketāb sad safha dārad.|This book has a hundred pages.|Abstract Concepts|
+35|هزار|hazār|numeral|neutral|thousand|هزار افغانی دارم.|hazār afghānī dāram.|I have a thousand afghanis.|Abstract Concepts|
+36|خانه|khāna|noun|neutral|house, home|خانه ما کلان است.|khāna-ye mā kalān ast.|Our house is big.|Home & Furniture|
+37|آب|āb|noun|neutral|water|یک گیلاس آب می‌خواهم.|yak gīlās āb mēkhāham.|I want a glass of water.|Food & Drink|
+38|نان|nān|noun|neutral|bread; food, meal|نان گرم بسیار خوش‌مزه است.|nān-e garm besyār khushmaza ast.|Warm bread is very tasty.|Food & Drink|
+39|چای|chāy|noun|neutral|tea|چای سبز می‌خوری؟|chāy-e sabz mēkhurī?|Do you drink green tea?|Food & Drink|
+40|روز|rōz|noun|neutral|day|امروز روز خوب است.|emrōz rōz-e khōb ast.|Today is a good day.|Time & Calendar|
+41|شب|shab|noun|neutral|night|شب هوا سرد می‌شود.|shab hawā sard mēshawad.|At night the weather gets cold.|Time & Calendar|
+42|صبح|subh|noun|neutral|morning|صبح چای می‌خورم.|subh chāy mēkhuram.|In the morning I drink tea.|Time & Calendar|
+43|امروز|emrōz|adverb|neutral|today|امروز به بازار می‌روم.|emrōz ba bāzār mērawam.|Today I am going to the market.|Time & Calendar|
+44|فردا|fardā|adverb|neutral|tomorrow|فردا به مکتب می‌روم.|fardā ba maktab mērawam.|Tomorrow I go to school.|Time & Calendar|
+45|دیروز|dīrōz|adverb|neutral|yesterday|دیروز باران بارید.|dīrōz bārān bārīd.|Yesterday it rained.|Time & Calendar|
+46|حالا|hālā|adverb|neutral|now|حالا وقت نان است.|hālā waqt-e nān ast.|Now it is time to eat.|Time & Calendar|
+47|وقت|waqt|noun|neutral|time|وقت کم داریم.|waqt-e kam dārēm.|We have little time.|Time & Calendar|
+48|سال|sāl|noun|neutral|year|سال نو مبارک!|sāl-e naw mubārak!|Happy New Year!|Time & Calendar|
+49|ماه|māh|noun|neutral|month; moon|ماه آینده سفر می‌کنم.|māh-e āyenda safar mēkunam.|Next month I will travel.|Nature & Weather|
+50|هفته|hafta|noun|neutral|week|هفته هفت روز دارد.|hafta haft rōz dārad.|A week has seven days.|Time & Calendar|
+51|مادر|mādar|noun|neutral|mother|مادرم نان پخته می‌کند.|mādaram nān pukhta mēkunad.|My mother bakes bread.|People & Family|
+52|پدر|padar|noun|neutral|father|پدرم در دکان کار می‌کند.|padaram dar dukān kār mēkunad.|My father works in the shop.|People & Family|
+53|برادر|barādar|noun|neutral|brother|برادرم شاگرد پوهنتون است.|barādaram shāgerd-e pohantūn ast.|My brother is a university student.|People & Family|
+54|خواهر|khāhar|noun|neutral|sister|خواهرم کتاب می‌خواند.|khāharam ketāb mēkhānad.|My sister reads a book.|People & Family|
+55|پسر|pesar|noun|neutral|son, boy|پسر او در مکتب است.|pesar-e ō dar maktab ast.|His son is at school.|People & Family|
+56|دختر|dukhtar|noun|neutral|daughter, girl|دختر ما دری می‌خواند.|dukhtar-e mā darī mēkhānad.|Our daughter studies Dari.|People & Family|
+57|بچه|bacha|noun|spoken|child, boy|بچه‌ها در سرک بازی می‌کنند.|bacha-hā dar sarak bāzī mēkunand.|The children play in the street.|People & Family|بچه‌ها
+58|دوست|dōst|noun|neutral|friend|دوست من از هرات است.|dōst-e man az herāt ast.|My friend is from Herat.|People & Family|
+59|مردم|mardum|noun|neutral|people|مردم افغانستان مهمان‌نواز هستند.|mardum-e afghānestān mehmān-nawāz hastand.|The people of Afghanistan are hospitable.|People & Family|
+60|مرد|mard|noun|neutral|man|آن مرد دکان‌دار است.|ān mard dukāndār ast.|That man is a shopkeeper.|People & Family|
+61|زن|zan|noun|neutral|woman, wife|این زن داکتر است.|īn zan dāktar ast.|This woman is a doctor.|People & Family|
+62|نام|nām|noun|neutral|name|نام شما چیست؟|nām-e shumā chīst?|What is your name?|Abstract Concepts|
+63|خوب|khōb|adjective|neutral|good, well|حال من خوب است.|hāl-e man khōb ast.|I am well.|Descriptions|
+64|بد|bad|adjective|neutral|bad|هوا امروز بد نیست.|hawā emrōz bad nēst.|The weather today is not bad.|Descriptions|
+65|کلان|kalān|adjective|neutral|big, large|کابل شهر کلان است.|kābul shahr-e kalān ast.|Kabul is a big city.|Descriptions|
+66|خورد|khurd|adjective|neutral|small, little|خانه ما خورد است.|khāna-ye mā khurd ast.|Our house is small.|Descriptions|
+67|نو|naw|adjective|neutral|new|موتر نو خریدیم.|mōtar-e naw kharīdēm.|We bought a new car.|Descriptions|
+68|کهنه|kuhna|adjective|neutral|old (of things)|این بایسکل کهنه است.|īn bāyskel kuhna ast.|This bicycle is old.|Descriptions|
+69|زیاد|ziyād|adjective|neutral|much, many, a lot|در بازار مردم زیاد بود.|dar bāzār mardum-e ziyād būd.|There were many people at the market.|Descriptions|
+70|کم|kam|adjective|neutral|little, few|وقت کم است.|waqt kam ast.|There is little time.|Descriptions|
+71|گرم|garm|adjective|neutral|warm, hot|چای گرم می‌خواهم.|chāy-e garm mēkhāham.|I want hot tea.|Nature & Weather|
+72|سرد|sard|adjective|neutral|cold|زمستان کابل سرد است.|zemestān-e kābul sard ast.|Kabul's winter is cold.|Nature & Weather|
+73|مقبول|maqbūl|adjective|neutral|beautiful, pretty|این قریه بسیار مقبول است.|īn qarya besyār maqbūl ast.|This village is very beautiful.|Descriptions|
+74|کتاب|ketāb|noun|neutral|book|این کتاب دری است.|īn ketāb-e darī ast.|This is a Dari book.|Arts & Culture|
+75|مکتب|maktab|noun|neutral|school|مکتب هشت بجه شروع می‌شود.|maktab hasht baja shurū' mēshawad.|School starts at eight o'clock.|Abstract Concepts|
+76|پوهنتون|pohantūn|noun|neutral|university|برادرم به پوهنتون می‌رود.|barādaram ba pohantūn mērawad.|My brother goes to the university.|Abstract Concepts|
+77|شاگرد|shāgerd|noun|neutral|student, pupil|شاگردان در صنف هستند.|shāgerdān dar senf hastand.|The students are in the classroom.|Abstract Concepts|شاگردان
+78|معلم|mu'allem|noun|neutral|teacher|معلم ما بسیار خوب است.|mu'allem-e mā besyār khōb ast.|Our teacher is very good.|Abstract Concepts|
+79|کار|kār|noun|neutral|work, job|کار من سخت است.|kār-e man sakht ast.|My work is hard.|Work & Business|
+80|شهر|shahr|noun|neutral|city|هرات شهر قدیمی است.|herāt shahr-e qadīmī ast.|Herat is an ancient city.|Society & Politics|
+81|قریه|qarya|noun|neutral|village|پدرکلانم در قریه زندگی می‌کند.|padarkalānam dar qarya zendagī mēkunad.|My grandfather lives in the village.|Society & Politics|
+82|سرک|sarak|noun|neutral|street, road|این سرک به بازار می‌رود.|īn sarak ba bāzār mērawad.|This road goes to the market.|Travel & Transportation|
+83|موتر|mōtar|noun|neutral|car|موتر ما کهنه است.|mōtar-e mā kuhna ast.|Our car is old.|Travel & Transportation|
+84|بایسکل|bāyskel|noun|neutral|bicycle|با بایسکل به کار می‌روم.|bā bāyskel ba kār mērawam.|I go to work by bicycle.|Abstract Concepts|
+85|افغانستان|afghānestān|noun|neutral|Afghanistan|افغانستان کشور مقبول است.|afghānestān keshwar-e maqbūl ast.|Afghanistan is a beautiful country.|Abstract Concepts|
+86|کابل|kābul|noun|neutral|Kabul|کابل پایتخت افغانستان است.|kābul pāytakht-e afghānestān ast.|Kabul is the capital of Afghanistan.|Abstract Concepts|
+87|دری|darī|noun|neutral|Dari (language)|من دری یاد می‌گیرم.|man darī yād mēgīram.|I am learning Dari.|Abstract Concepts|
+88|زبان|zabān|noun|neutral|language; tongue|دری زبان شیرین است.|darī zabān-e shīrīn ast.|Dari is a sweet language.|Abstract Concepts|
+89|رفتن|raftan|verb|neutral|to go|هر روز به کار می‌روم.|har rōz ba kār mērawam.|Every day I go to work.|Travel & Transportation|می‌روم,می‌روی,می‌رود,می‌رویم,می‌روید,می‌روند,رفتم,رفتی,رفت,رفتیم,رفتند,برو,بروید,برویم
+90|آمدن|āmadan|verb|neutral|to come|فردا به خانه ما بیا.|fardā ba khāna-ye mā biyā.|Come to our house tomorrow.|Actions|می‌آیم,می‌آیی,می‌آید,می‌آییم,می‌آیند,آمدم,آمدی,آمد,آمدیم,آمدند,بیا,بیایید
+91|خوردن|khurdan|verb|neutral|to eat; to drink|نان چاشت را با فامیل می‌خوریم.|nān-e chāsht rā bā fāmīl mēkhurēm.|We eat lunch with the family.|Food & Drink|می‌خورم,می‌خوری,می‌خورد,می‌خوریم,می‌خورید,می‌خورند,خوردم,خوردی,خوردیم,خوردند,بخور,بخورید
+92|دیدن|dīdan|verb|neutral|to see|دیروز دوستم را دیدم.|dīrōz dōstam rā dīdam.|Yesterday I saw my friend.|Actions|می‌بینم,می‌بینی,می‌بیند,می‌بینیم,می‌بینند,دیدم,دیدی,دید,دیدیم,دیدند,ببین,ببینید
+93|گفتن|guftan|verb|neutral|to say, to tell|معلم گفت که فردا امتحان است.|mu'allem guft ke fardā emtehān ast.|The teacher said that tomorrow is the exam.|Actions|می‌گویم,می‌گویی,می‌گوید,می‌گوییم,می‌گویند,گفتم,گفتی,گفت,گفتیم,گفتند,بگو,بگویید
+94|دانستن|dānestan|verb|neutral|to know|جواب را نمی‌دانم.|jawāb rā namēdānam.|I do not know the answer.|Actions|می‌دانم,می‌دانی,می‌داند,می‌دانیم,می‌دانند,نمی‌دانم,دانستم,دانست
+95|داشتن|dāshtan|verb|neutral|to have|دو خواهر دارم.|dū khāhar dāram.|I have two sisters.|Actions|دارم,داری,دارد,داریم,دارید,دارند,داشتم,داشتی,داشت,داشتیم,داشتند
+96|بودن|būdan|verb|neutral|to be|پارسال در هرات بودم.|pārsāl dar herāt būdam.|Last year I was in Herat.|Actions|هستم,هستی,هستیم,هستید,هستند,بودم,بودی,بود,بودیم,بودند,باشد,نیست,نیستم,نیستیم,نیستند,نیستی,چیست,نیستید
+97|کردن|kardan|verb|neutral|to do, to make|هر روز کار می‌کنم.|har rōz kār mēkunam.|I work every day.|Actions|می‌کنم,می‌کنی,می‌کند,می‌کنیم,می‌کنید,می‌کنند,کردم,کردی,کرد,کردیم,کردند,بکن,کن,کنیم
+98|خواندن|khāndan|verb|neutral|to read; to study; to sing|شب‌ها کتاب می‌خوانم.|shab-hā ketāb mēkhānam.|In the evenings I read books.|Arts & Culture|می‌خوانم,می‌خوانی,می‌خواند,می‌خوانیم,می‌خوانند,خواندم,خواندی,خواند,خواندیم,خواندند,بخوان
+99|خواستن|khāstan|verb|neutral|to want|یک گیلاس چای می‌خواهم.|yak gīlās chāy mēkhāham.|I want a glass of tea.|Actions|می‌خواهم,می‌خواهی,می‌خواهد,می‌خواهیم,می‌خواهند,خواستم,خواست,مه‌خواهم
+100|دادن|dādan|verb|neutral|to give|کتاب را به من بده.|ketāb rā ba man bedeh.|Give me the book.|Actions|می‌دهم,می‌دهی,می‌دهد,می‌دهیم,می‌دهند,دادم,دادی,داد,دادیم,دادند,بده,بدهید

@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen, ChevronLeft, Flame, RotateCcw, Type } from "lucide-react";
+import { BookOpen, ChevronLeft, Flame, RotateCcw, SpellCheck } from "lucide-react";
 import Link from "next/link";
 import { ProgressRing } from "@/components/ui/progress-ring";
 import { alphabetCourse } from "@/lib/content/load";
@@ -116,7 +116,7 @@ export default function HomePage() {
         {showAlphabet && (
           <ActionCard
             href="/alphabet"
-            icon={<Type size={20} />}
+            icon={<SpellCheck size={20} />}
             title="Alphabet course"
             subtitle={`${completedUnits} of ${totalUnits} units · learn to read Dari`}
             accent

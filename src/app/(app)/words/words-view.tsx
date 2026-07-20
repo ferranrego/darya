@@ -8,7 +8,7 @@ import { KNOWN_STABILITY_DAYS } from "@/lib/srs/scheduler";
 
 export function WordsView() {
   const { data: words } = useUserWords();
-  const [filter, setFilter] = useState<"learning" | "known">("learning");
+  const [filter, setFilter] = useState<"categories" | "learning" | "known">("categories");
 
   const cefrLevels = useMemo(() => {
     return levels.filter((l) => ["A1", "A2", "B1", "B2"].includes(l.cefrHint));
@@ -122,16 +122,27 @@ export function WordsView() {
         })()}
       </section>
 
-      {/* Dictionary Section */}
+      {/* Main Content Tabs */}
       <section>
-        <div className="flex rounded-lg bg-surface p-1 shadow-sm border border-line mb-4">
+        <div className="flex rounded-xl bg-surface p-1 shadow-sm border border-line mb-6">
+          <button
+            type="button"
+            onClick={() => setFilter("categories")}
+            className={`flex-1 rounded-lg py-2.5 text-center text-[14px] font-semibold transition-all duration-300 ${
+              filter === "categories"
+                ? "bg-lapis-deep text-white shadow-md transform scale-[1.02]"
+                : "text-ink-soft hover:text-ink hover:bg-line/30"
+            }`}
+          >
+            Categories
+          </button>
           <button
             type="button"
             onClick={() => setFilter("learning")}
-            className={`flex-1 rounded-md py-2 text-center text-[14px] font-medium transition-colors ${
+            className={`flex-1 rounded-lg py-2.5 text-center text-[14px] font-semibold transition-all duration-300 ${
               filter === "learning"
-                ? "bg-lapis-soft text-lapis shadow-sm"
-                : "text-ink-soft hover:text-ink"
+                ? "bg-lapis-soft text-lapis shadow-md transform scale-[1.02]"
+                : "text-ink-soft hover:text-ink hover:bg-line/30"
             }`}
           >
             Learning
@@ -139,69 +150,103 @@ export function WordsView() {
           <button
             type="button"
             onClick={() => setFilter("known")}
-            className={`flex-1 rounded-md py-2 text-center text-[14px] font-medium transition-colors ${
+            className={`flex-1 rounded-lg py-2.5 text-center text-[14px] font-semibold transition-all duration-300 ${
               filter === "known"
-                ? "bg-sabz-soft text-sabz shadow-sm"
-                : "text-ink-soft hover:text-ink"
+                ? "bg-sabz-soft text-sabz shadow-md transform scale-[1.02]"
+                : "text-ink-soft hover:text-ink hover:bg-line/30"
             }`}
           >
             Known
           </button>
         </div>
 
-        <div className="flex flex-col gap-3">
-          {filteredWords.length === 0 ? (
-            <div className="py-8 text-center text-ink-faint text-[14px]">
-              No {filter} words yet.
-            </div>
-          ) : (
-            filteredWords.map((word) => {
-              const lexeme = lexemeById(word.lexeme_id);
-              if (!lexeme) return null;
+        {filter === "categories" ? (
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 pb-24">
+            {/* Hardcoded visual mapping for the 18 standardized themes */}
+            {[
+              { name: "Food & Drink", emoji: "🍎", color: "bg-red-50 text-red-600 border-red-100" },
+              { name: "Colors & Shapes", emoji: "🎨", color: "bg-purple-50 text-purple-600 border-purple-100" },
+              { name: "Nature & Weather", emoji: "☀️", color: "bg-amber-50 text-amber-600 border-amber-100" },
+              { name: "Time & Calendar", emoji: "🕰️", color: "bg-slate-50 text-slate-600 border-slate-200" },
+              { name: "People & Family", emoji: "👪", color: "bg-pink-50 text-pink-600 border-pink-100" },
+              { name: "Home & Furniture", emoji: "🏠", color: "bg-orange-50 text-orange-600 border-orange-100" },
+              { name: "Travel & Transportation", emoji: "✈️", color: "bg-sky-50 text-sky-600 border-sky-100" },
+              { name: "Work & Business", emoji: "👔", color: "bg-emerald-50 text-emerald-600 border-emerald-100" },
+              { name: "Emotions & Feelings", emoji: "❤️", color: "bg-rose-50 text-rose-600 border-rose-100" },
+              { name: "Body & Health", emoji: "🩺", color: "bg-teal-50 text-teal-600 border-teal-100" },
+              { name: "Society & Politics", emoji: "🏛️", color: "bg-indigo-50 text-indigo-600 border-indigo-100" },
+              { name: "Science & Tech", emoji: "🧬", color: "bg-blue-50 text-blue-600 border-blue-100" },
+              { name: "Arts & Culture", emoji: "🎭", color: "bg-fuchsia-50 text-fuchsia-600 border-fuchsia-100" },
+              { name: "Law & Justice", emoji: "⚖️", color: "bg-stone-50 text-stone-600 border-stone-200" },
+              { name: "Abstract Concepts", emoji: "💭", color: "bg-gray-50 text-gray-600 border-gray-200" },
+              { name: "Actions", emoji: "🏃", color: "bg-lime-50 text-lime-700 border-lime-200" },
+              { name: "Descriptions", emoji: "✨", color: "bg-yellow-50 text-yellow-700 border-yellow-200" },
+              { name: "Grammar & Connectors", emoji: "🔗", color: "bg-zinc-50 text-zinc-600 border-zinc-200" },
+            ].map((theme) => (
+              <a
+                key={theme.name}
+                href={`/words/theme/${encodeURIComponent(theme.name)}`}
+                className={`group flex flex-col items-center justify-center gap-2 rounded-2xl border ${theme.color} p-5 text-center transition-all duration-300 hover:shadow-md hover:-translate-y-1`}
+              >
+                <span className="text-[32px] mb-1 transform transition-transform duration-300 group-hover:scale-110">{theme.emoji}</span>
+                <span className="text-[14px] font-bold leading-tight">{theme.name}</span>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-col gap-3 pb-24">
+            {filteredWords.length === 0 ? (
+              <div className="py-12 text-center text-ink-faint text-[15px] bg-surface rounded-2xl border border-line">
+                No {filter} words yet. Keep reviewing!
+              </div>
+            ) : (
+              filteredWords.map((word) => {
+                const lexeme = lexemeById(word.lexeme_id);
+                if (!lexeme) return null;
 
-              // Calculate how close the word is to being known
-              let srsProgress = 100;
-              if (word.status === "learning") {
-                const stability = word.fsrs?.stability ?? 0;
-                srsProgress = Math.min(100, Math.max(0, Math.round((stability / KNOWN_STABILITY_DAYS) * 100)));
-              }
+                let srsProgress = 100;
+                if (word.status === "learning") {
+                  const stability = word.fsrs?.stability ?? 0;
+                  srsProgress = Math.min(100, Math.max(0, Math.round((stability / KNOWN_STABILITY_DAYS) * 100)));
+                }
 
-              return (
-                <div
-                  key={word.lexeme_id}
-                  className="flex items-center justify-between rounded-2xl border border-line bg-surface p-4"
-                >
-                  <div className="flex flex-col gap-0.5 max-w-[60%]">
-                    <p lang="prs" className="text-[20px] leading-snug text-left">
-                      {lexeme.dari}
-                    </p>
-                    <p className="text-[12px] text-ink-soft">{lexeme.translit}</p>
-                    <p className="mt-1 text-[14px] font-medium leading-tight truncate">
-                      {lexeme.glossEn}
-                    </p>
-                  </div>
-                  
-                  <div className="flex flex-col items-end gap-1.5 shrink-0">
-                    <div className="text-[12px] font-medium text-ink-soft">
-                      {srsProgress}%
+                return (
+                  <div
+                    key={word.lexeme_id}
+                    className="flex items-center justify-between rounded-2xl border border-line bg-surface p-4 shadow-sm"
+                  >
+                    <div className="flex flex-col gap-1 max-w-[65%]">
+                      <p lang="prs" className="text-[22px] leading-snug text-left text-ink">
+                        {lexeme.dari}
+                      </p>
+                      <p className="text-[13px] text-ink-soft font-medium">{lexeme.translit}</p>
+                      <p className="mt-1 text-[15px] font-semibold leading-tight text-ink">
+                        {lexeme.glossEn}
+                      </p>
                     </div>
-                    <div className="h-1.5 w-16 overflow-hidden rounded-full bg-line">
-                      <div
-                        className={`h-full rounded-full transition-all duration-300 ${
-                          word.status === "known" ? "bg-sabz" : "bg-lapis"
-                        }`}
-                        style={{ width: `${srsProgress}%` }}
-                      />
+                    
+                    <div className="flex flex-col items-end gap-2 shrink-0">
+                      <div className="flex items-center gap-1.5 text-[13px] font-bold text-ink-soft">
+                        {srsProgress}%
+                      </div>
+                      <div className="h-2 w-[72px] overflow-hidden rounded-full bg-line/60">
+                        <div
+                          className={`h-full rounded-full transition-all duration-500 ease-out ${
+                            word.status === "known" ? "bg-sabz shadow-[0_0_8px_rgba(62,124,89,0.4)]" : "bg-lapis"
+                          }`}
+                          style={{ width: `${srsProgress}%` }}
+                        />
+                      </div>
+                      <span className={`text-[10px] uppercase tracking-wider font-bold ${word.status === 'known' ? 'text-sabz' : 'text-lapis'}`}>
+                        {word.status}
+                      </span>
                     </div>
-                    <span className="text-[10px] text-ink-faint uppercase tracking-wide">
-                      {word.status}
-                    </span>
                   </div>
-                </div>
-              );
-            })
-          )}
-        </div>
+                );
+              })
+            )}
+          </div>
+        )}
       </section>
     </div>
   );

@@ -79,6 +79,7 @@ export default function ReadPage() {
   const current = unread[0];
   return (
     <TextReader
+      key={current.doc.id}
       doc={current.doc}
       onFinished={() => {
         void refetchRead();

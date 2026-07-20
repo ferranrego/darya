@@ -12,9 +12,8 @@ import {
  * FSRS wrapper. The review UI exposes exactly two buttons; they map to FSRS
  * grades here and nowhere else.
  */
-const scheduler = fsrs(
-  generatorParameters({ enable_fuzz: true, enable_short_term: true }),
-);
+export const FSRS_PARAMETERS = generatorParameters({ enable_fuzz: true, enable_short_term: true });
+const scheduler = fsrs(FSRS_PARAMETERS);
 
 export type TwoButtonGrade = "forgot" | "got_it";
 

@@ -76,7 +76,7 @@ export default function WelcomePage() {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            autoComplete="email"
+            autoComplete="username"
           />
           <input
             className={inputCls}
