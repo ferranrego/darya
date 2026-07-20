@@ -91,7 +91,13 @@ export default function OnboardingPage() {
 
         {step === "script" && (
           <motion.div key="script" {...stepMotion} className="my-auto text-center">
-            <h1 className="text-[22px] font-semibold tracking-tight">Can you read this?</h1>
+            <h1 className="text-[22px] font-semibold tracking-tight">
+              Can you read the Dari script?
+            </h1>
+            <p className="mx-auto mt-3 max-w-sm text-[15px] leading-relaxed text-ink-soft">
+              Dari is written in the Perso-Arabic script. Can you read this sentence
+              in it — without the Latin spelling below?
+            </p>
             <p lang="prs" className="mt-8 text-[40px] leading-relaxed">
               سلام، چطور هستید؟
             </p>
