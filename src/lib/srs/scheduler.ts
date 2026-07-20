@@ -45,3 +45,27 @@ export function reviveCard(raw: Card): Card {
     last_review: raw.last_review ? new Date(raw.last_review) : undefined,
   };
 }
+
+/** Format a future due Date into a compact Anki-style label, e.g. "<1m", "10m", "3d". */
+function formatInterval(due: Date, now: Date): string {
+  const diffMs = due.getTime() - now.getTime();
+  const diffMin = Math.round(diffMs / 60_000);
+  if (diffMin < 1) return "<1m";
+  if (diffMin < 60) return `${diffMin}m`;
+  const diffHr = Math.round(diffMin / 60);
+  if (diffHr < 24) return `${diffHr}h`;
+  const diffDays = Math.round(diffHr / 24);
+  if (diffDays < 30) return `${diffDays}d`;
+  const diffMo = Math.round(diffDays / 30);
+  return `${diffMo}mo`;
+}
+
+/** Returns the interval labels for both buttons shown as hints in the review UI. */
+export function previewIntervals(card: Card, now: Date): { forgot: string; got_it: string } {
+  const againDue = scheduler.next(card, now, Rating.Again).card.due;
+  const goodDue = scheduler.next(card, now, Rating.Good).card.due;
+  return {
+    forgot: formatInterval(againDue, now),
+    got_it: formatInterval(goodDue, now),
+  };
+}

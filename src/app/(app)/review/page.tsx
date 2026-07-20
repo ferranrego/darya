@@ -1,31 +1,53 @@
 "use client";
 
 import { useMutation } from "@tanstack/react-query";
-import { Check, RotateCcw, Sparkles } from "lucide-react";
+import { Check, RotateCcw, Sparkles, Brain, BookOpen, TrendingUp } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import { useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { lexemeById } from "@/lib/content/load";
 import { logReview, upsertUserWord } from "@/lib/db/words";
 import type { UserWordRow } from "@/lib/db/types";
 import { XP, recordActivity } from "@/lib/gamification";
 import { useInvalidateLearning, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
-import { isGraduated, reviewCard, reviveCard, type TwoButtonGrade } from "@/lib/srs/scheduler";
+import {
+  isGraduated,
+  previewIntervals,
+  reviewCard,
+  reviveCard,
+  type TwoButtonGrade,
+} from "@/lib/srs/scheduler";
 
 const SESSION_CAP = 40;
+
+type SessionStats = {
+  totalReps: number;
+  uniqueReviewed: Set<string>;
+  forgotIds: Set<string>;
+  graduatedIds: string[];
+};
 
 export default function ReviewPage() {
   const db = useSupabase();
   const { data: user } = useUser();
   const { data: words, isLoading } = useUserWords();
   const invalidate = useInvalidateLearning();
+  const router = useRouter();
 
   // Snapshot the queue once per session so grading doesn't reshuffle it.
   const [queue, setQueue] = useState<UserWordRow[] | null>(null);
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
-  const [graduatedNow, setGraduatedNow] = useState<string[]>([]);
   const [exitDir, setExitDir] = useState<1 | -1>(1);
+
+  // Persistent session stats
+  const statsRef = useRef<SessionStats>({
+    totalReps: 0,
+    uniqueReviewed: new Set(),
+    forgotIds: new Set(),
+    graduatedIds: [],
+  });
 
   const due = useMemo(() => {
     if (!words) return null;
@@ -61,14 +83,27 @@ export default function ReviewPage() {
       return { graduated, entryId: row.lexeme_id };
     },
     onSuccess: (result) => {
-      if (result?.graduated) setGraduatedNow((g) => [...g, result.entryId]);
+      if (!result) return;
+      const s = statsRef.current;
+      s.totalReps += 1;
+      s.uniqueReviewed.add(result.entryId);
+      if (result.graduated) s.graduatedIds.push(result.entryId);
     },
   });
 
   function answer(g: TwoButtonGrade) {
     if (!queue) return;
+    const row = queue[index];
     setExitDir(g === "got_it" ? 1 : -1);
-    grade.mutate({ row: queue[index], g });
+
+    // Track forgot words
+    if (g === "forgot") {
+      statsRef.current.forgotIds.add(row.lexeme_id);
+      // Re-queue at the end so the user must see it again this session
+      setQueue((q) => (q ? [...q, row] : [row]));
+    }
+
+    grade.mutate({ row, g });
     setRevealed(false);
     setIndex((i) => i + 1);
   }
@@ -88,7 +123,19 @@ export default function ReviewPage() {
   }
 
   if (index >= queue.length) {
-    return <SessionDone total={queue.length} graduated={graduatedNow} onExit={() => invalidate()} />;
+    const s = statsRef.current;
+    return (
+      <SessionDone
+        totalReps={s.totalReps}
+        uniqueCount={s.uniqueReviewed.size}
+        forgotCount={s.forgotIds.size}
+        graduatedIds={s.graduatedIds}
+        onExit={() => {
+          invalidate();
+          router.push("/");
+        }}
+      />
+    );
   }
 
   const row = queue[index];
@@ -96,6 +143,10 @@ export default function ReviewPage() {
   if (!entry) {
     return <EmptyState icon={<RotateCcw size={24} />} title="Hmm" body="A reviewed word is missing from the dictionary." />;
   }
+
+  // Compute interval hints for the current card
+  const now = new Date();
+  const intervals = row.fsrs ? previewIntervals(reviveCard(row.fsrs), now) : null;
 
   return (
     <div className="flex flex-1 flex-col">
@@ -159,13 +210,22 @@ export default function ReviewPage() {
 
       <div className="pb-6 pt-8">
         {revealed ? (
-          <div className="mx-auto flex max-w-md gap-3">
-            <Button variant="secondary" size="lg" className="flex-1" onClick={() => answer("forgot")}>
-              Forgot
-            </Button>
-            <Button size="lg" className="flex-1" onClick={() => answer("got_it")}>
-              Got it
-            </Button>
+          <div className="mx-auto max-w-md space-y-2">
+            {/* Interval hints above the buttons */}
+            {intervals && (
+              <div className="flex gap-3 px-0.5">
+                <p className="flex-1 text-center text-[11px] font-medium text-red-400/80">{intervals.forgot}</p>
+                <p className="flex-1 text-center text-[11px] font-medium text-sabz/80">{intervals.got_it}</p>
+              </div>
+            )}
+            <div className="flex gap-3">
+              <Button variant="secondary" size="lg" className="flex-1" onClick={() => answer("forgot")}>
+                Forgot
+              </Button>
+              <Button size="lg" className="flex-1" onClick={() => answer("got_it")}>
+                Got it
+              </Button>
+            </div>
           </div>
         ) : (
           <div className="mx-auto max-w-md">
@@ -180,14 +240,19 @@ export default function ReviewPage() {
 }
 
 function SessionDone({
-  total,
-  graduated,
+  totalReps,
+  uniqueCount,
+  forgotCount,
+  graduatedIds,
   onExit,
 }: {
-  total: number;
-  graduated: string[];
+  totalReps: number;
+  uniqueCount: number;
+  forgotCount: number;
+  graduatedIds: string[];
   onExit: () => void;
 }) {
+  const stillLearning = uniqueCount - graduatedIds.length;
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.97 }}
@@ -203,33 +268,79 @@ function SessionDone({
         <Sparkles size={28} />
       </motion.div>
       <h2 className="mt-6 text-[22px] font-semibold tracking-tight">Session complete</h2>
-      <p className="mt-2 text-[15px] text-ink-soft">
-        {total} review{total === 1 ? "" : "s"}
-        {graduated.length > 0 && (
-          <>
-            {" · "}
-            <span className="font-medium text-sabz">
-              {graduated.length} word{graduated.length === 1 ? "" : "s"} now known
-            </span>
-          </>
-        )}
-      </p>
-      {graduated.length > 0 && (
-        <div className="mt-6 flex max-w-sm flex-wrap justify-center gap-2">
-          {graduated.map((id) => {
-            const e = lexemeById(id);
-            return e ? (
-              <span key={id} lang="prs" className="rounded-full bg-sabz-soft px-3.5 py-1 text-[18px] text-sabz">
-                {e.dari}
-              </span>
-            ) : null;
-          })}
+      <p className="mt-1 text-[14px] text-ink-faint">{totalReps} rep{totalReps === 1 ? "" : "s"} across {uniqueCount} word{uniqueCount === 1 ? "" : "s"}</p>
+
+      {/* Stats grid */}
+      <div className="mt-8 grid w-full max-w-sm grid-cols-3 gap-3">
+        <StatCard
+          icon={<TrendingUp size={16} />}
+          value={graduatedIds.length}
+          label="Mastered"
+          color="sabz"
+        />
+        <StatCard
+          icon={<BookOpen size={16} />}
+          value={stillLearning}
+          label="Learning"
+          color="lapis"
+        />
+        <StatCard
+          icon={<Brain size={16} />}
+          value={forgotCount}
+          label="Forgot"
+          color="red"
+        />
+      </div>
+
+      {/* Graduated words */}
+      {graduatedIds.length > 0 && (
+        <div className="mt-6 w-full max-w-sm">
+          <p className="mb-2 text-[12px] font-medium uppercase tracking-widest text-ink-faint">Newly mastered</p>
+          <div className="flex flex-wrap justify-center gap-2">
+            {graduatedIds.map((id) => {
+              const e = lexemeById(id);
+              return e ? (
+                <span key={id} lang="prs" className="rounded-full bg-sabz-soft px-3.5 py-1 text-[18px] text-sabz">
+                  {e.dari}
+                </span>
+              ) : null;
+            })}
+          </div>
         </div>
       )}
+
       <Button size="lg" className="mt-10" onClick={onExit}>
         Done
       </Button>
     </motion.div>
+  );
+}
+
+function StatCard({
+  icon,
+  value,
+  label,
+  color,
+}: {
+  icon: React.ReactNode;
+  value: number;
+  label: string;
+  color: "sabz" | "lapis" | "red";
+}) {
+  const colorMap = {
+    sabz: "text-sabz bg-sabz-soft",
+    lapis: "text-lapis bg-lapis/10",
+    red: "text-red-500 bg-red-50",
+  } as const;
+
+  return (
+    <div className="flex flex-col items-center gap-1.5 rounded-2xl border border-line bg-surface px-3 py-4">
+      <div className={`flex size-8 items-center justify-center rounded-full ${colorMap[color]}`}>
+        {icon}
+      </div>
+      <p className="text-[22px] font-semibold tabular-nums leading-none">{value}</p>
+      <p className="text-[11px] text-ink-faint">{label}</p>
+    </div>
   );
 }
 
