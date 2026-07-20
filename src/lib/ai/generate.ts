@@ -9,7 +9,7 @@ import { tokenizeDari } from "../text/normalize";
 /**
  * AI text generation: one entry point, an ordered free-tier provider chain
  * (Gemini → Groq → OpenRouter), strict validation, and a vocabulary
- * verifier. Callers cache results in Postgres — this module never bills.
+ * verifier. Callers cache results in Postgres, so this module never bills.
  */
 
 const outputSchema = z.object({
@@ -44,11 +44,11 @@ const MAX_OOV_RATE = 0.14;
 function buildPrompt(req: GenerationRequest): string {
   const known = req.knownWords.map((w) => `${w.dari} (${w.translit})`).join("، ");
   const target = req.targetWords
-    .map((w) => `${w.dari} (${w.translit} — ${w.glossEn})`)
+    .map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`)
     .join("، ");
   const [minS, maxS] = req.level.sentenceRange;
 
-  return `You are a Dari language teacher in Kabul writing a graded reader text in standard Afghan Dari (NOT Iranian Persian — use Dari vocabulary like مکتب، موتر، کلان and Kabuli usage).
+  return `You are a Dari language teacher in Kabul writing a graded reader text in standard Afghan Dari (NOT Iranian Persian, use Dari vocabulary like مکتب، موتر، کلان and Kabuli usage).
 
 Write a short, warm, concrete text (${minS}-${maxS} sentences, ${req.level.sentenceLengthHint}) about everyday Afghan life.
 

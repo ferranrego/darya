@@ -17,7 +17,7 @@ export async function supabaseServer() {
               cookieStore.set(name, value, options);
             }
           } catch {
-            // Called from a Server Component — middleware handles refresh.
+            // Called from a Server Component; middleware handles refresh.
           }
         },
       },

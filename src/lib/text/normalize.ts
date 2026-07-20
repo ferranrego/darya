@@ -9,12 +9,12 @@
 const ARABIC_YEH = /ي/g; // ي → ی
 const ARABIC_KAF = /ك/g; // ك → ک
 const ALEF_VARIANTS = /[آأإ]/g; // آأإ handled separately below
-const DIACRITICS = /[ً-ْٰ]/g; // tanwin/harakat — strip for matching
+const DIACRITICS = /[ً-ْٰ]/g; // tanwin/harakat; strip for matching
 const TATWEEL = /ـ/g;
 
 export const ZWNJ = "‌";
 
-/** Canonical form stored in `dariNormalized` — display-safe (keeps آ). */
+/** Canonical form stored in `dariNormalized`; display-safe (keeps آ). */
 export function normalizeDari(input: string): string {
   return input
     .normalize("NFC")

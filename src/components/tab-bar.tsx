@@ -12,7 +12,7 @@ const tabs = [
   { href: "/profile", label: "Profile", icon: User },
 ] as const;
 
-/** Bottom tab bar — the app's single translucent surface (see DESIGN.md). */
+/** Bottom tab bar: the app's single translucent surface (see DESIGN.md). */
 export function TabBar() {
   const pathname = usePathname();
   return (

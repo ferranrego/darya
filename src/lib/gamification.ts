@@ -3,7 +3,7 @@ import { bumpDailyActivity, localDate, type ActivityDelta } from "./db/activity"
 import { getProfile, updateProfile } from "./db/profiles";
 import type { ProfileRow } from "./db/types";
 
-/** XP awards — the only place point values live. */
+/** XP awards: the only place point values live. */
 export const XP = {
   textRead: 10,
   review: 2,

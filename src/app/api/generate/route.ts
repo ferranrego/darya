@@ -41,7 +41,7 @@ export async function POST() {
     .filter((e) => !statusById.has(e.id))
     .sort((a, b) => a.freqRank - b.freqRank);
 
-  // For brand-new learners the "known" set is empty — fall back to the most
+  // For brand-new learners the "known" set is empty, so fall back to the most
   // frequent words of the level so generation still works.
   const effectiveKnown = knownWords.length >= 15 ? knownWords : inBand.slice(0, 40);
 

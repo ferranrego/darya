@@ -1,6 +1,6 @@
 /**
  * Typed, build-time loaders for the open content files. Content ships in the
- * app bundle — no network round-trip for lexicon/course/levels.
+ * app bundle, so no network round-trip for lexicon/course/levels.
  */
 import alphabetJson from "../../../content/alphabet/course.json";
 import lexiconJson from "../../../content/lexicon/lexicon.json";

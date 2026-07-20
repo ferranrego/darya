@@ -1,6 +1,6 @@
 # Darya Lexicon
 
-`lexicon.json` is the app's Dari word database — standard Afghan Dari (Kabul),
+`lexicon.json` is the app's Dari word database: standard Afghan Dari (Kabul),
 English glosses, European-friendly transliteration (ā ē ī ō ū, kh/gh/ch/sh/zh, ʼ→',
 w for و). Built from `scripts/data/core-lexicon-*.txt` by `pnpm build:lexicon`;
 edit the data files, not the JSON.
@@ -16,14 +16,14 @@ edit the data files, not the JSON.
 - **Surface-form matching, lemma entries.** Verbs are listed as infinitives with
   common conjugations in `variants`, so tapping می‌روم resolves to رفتن. Homographs
   (نه no/nine, شیر milk/lion) are one entry with a combined gloss.
-- **Frequency ranks** are editorial, informed by open Persian corpora — the
+- **Frequency ranks** are editorial, informed by open Persian corpora: the
   [behnam/persian-words-frequency](https://github.com/behnam/persian-words-frequency)
   Wikipedia/news lists and [hermitdave/FrequencyWords](https://github.com/hermitdave/FrequencyWords)
-  OpenSubtitles fa — re-weighted for spoken Afghan Dari (courtesy phrases, Afghan
+  OpenSubtitles fa, re-weighted for spoken Afghan Dari (courtesy phrases, Afghan
   places and culture up; Iranian-specific items removed). Bands: 1 ≤ 100 <
   2 ≤ 250 < 3 ≤ 500 < 4 ≤ 800 < 5 ≤ 1200 < 6 ≤ 1700 < 7 ≤ 2400 < 8.
 - **IDs (`lx-NNNN`) are stable**: data lines may be edited in place but never
-  reordered or deleted once shipped — per-user SRS state references these IDs.
+  reordered or deleted once shipped, since per-user SRS state references these IDs.
 
 ## Expansion
 

@@ -49,7 +49,7 @@ export const posSchema = z.enum([
 export const registerSchema = z.enum(["neutral", "spoken", "formal", "literary"]);
 
 // ---------------------------------------------------------------------------
-// Lexicon — content/lexicon/lexicon.json
+// Lexicon: content/lexicon/lexicon.json
 // ---------------------------------------------------------------------------
 
 export const lexiconEntrySchema = z.object({
@@ -87,7 +87,7 @@ export type LexiconEntry = z.infer<typeof lexiconEntrySchema>;
 export type LexiconFile = z.infer<typeof lexiconFileSchema>;
 
 // ---------------------------------------------------------------------------
-// Alphabet course — content/alphabet/course.json
+// Alphabet course: content/alphabet/course.json
 // ---------------------------------------------------------------------------
 
 export const letterFormsSchema = z.object({
@@ -116,7 +116,7 @@ const exerciseBase = {
   hint: z.string().optional(),
 };
 
-/** "Which of these is [name/sound]?" — pick the letter among distractors. */
+/** "Which of these is [name/sound]?" Pick the letter among distractors. */
 export const recognizeLetterExercise = z.object({
   ...exerciseBase,
   type: z.literal("recognizeLetter"),
@@ -125,7 +125,7 @@ export const recognizeLetterExercise = z.object({
   distractors: z.array(z.string()).min(2),
 });
 
-/** "Find [letter] inside this word" — tap the highlighted-form position. */
+/** "Find [letter] inside this word" by tapping the highlighted-form position. */
 export const pickFormExercise = z.object({
   ...exerciseBase,
   type: z.literal("pickForm"),
@@ -196,7 +196,7 @@ export type AlphabetUnit = z.infer<typeof alphabetUnitSchema>;
 export type AlphabetCourse = z.infer<typeof alphabetCourseSchema>;
 
 // ---------------------------------------------------------------------------
-// Levels — content/levels/levels.json
+// Levels: content/levels/levels.json
 // ---------------------------------------------------------------------------
 
 export const levelSchema = z.object({
@@ -225,7 +225,7 @@ export type Level = z.infer<typeof levelSchema>;
 export type LevelsFile = z.infer<typeof levelsFileSchema>;
 
 // ---------------------------------------------------------------------------
-// Texts — content/texts/seed/*.json and AI-generated (same format)
+// Texts: content/texts/seed/*.json and AI-generated (same format)
 // ---------------------------------------------------------------------------
 
 export const tokenSchema = z.object({

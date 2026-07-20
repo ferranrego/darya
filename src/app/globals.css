@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Darya design tokens — see docs/DESIGN.md ("Kabul paper & lapis"). */
+/* Darya design tokens; see docs/DESIGN.md ("Kabul paper & lapis"). */
 :root {
   --paper: #faf7f2;
   --surface: #ffffff;
