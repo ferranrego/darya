@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Darya — Learn Dari",
+    name: "Darya · Learn Dari",
     short_name: "Darya",
     description:
-      "Learn Dari by reading — adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
+      "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
     start_url: "/",
     display: "standalone",
     background_color: "#faf7f2",

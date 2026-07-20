@@ -57,6 +57,23 @@ export function TextReader({
     onSuccess: () => invalidate(),
   });
 
+  const markKnown = useMutation({
+    mutationFn: async (lexemeId: string) => {
+      if (!user) return;
+      await upsertUserWord(db, {
+        user_id: user.id,
+        lexeme_id: lexemeId,
+        status: "known",
+        due: null,
+        fsrs: null,
+      });
+      // A word tapped this session was already counted toward words_learned;
+      // reward the promotion with XP and leave the daily count untouched.
+      await recordActivity(db, user.id, { xp: XP.wordLearned });
+    },
+    onSuccess: () => invalidate(),
+  });
+
   const finish = useMutation({
     mutationFn: async () => {
       if (!user || !profile) return;
@@ -210,6 +227,9 @@ export function TextReader({
         entry={tappedEntry}
         surface={tapped?.surface ?? null}
         status={tappedStatus}
+        onMarkKnown={() => {
+          if (tapped?.lexemeId) markKnown.mutate(tapped.lexemeId);
+        }}
         onClose={() => setTapped(null)}
       />
     </motion.article>

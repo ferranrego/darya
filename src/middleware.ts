@@ -32,12 +32,20 @@ export async function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
   const isPublic = PUBLIC_PATHS.some((p) => pathname.startsWith(p));
+  const isAdmin = pathname.startsWith("/admin");
 
   if (!user && !isPublic) {
     const url = request.nextUrl.clone();
     url.pathname = "/welcome";
     return NextResponse.redirect(url);
   }
+
+  if (isAdmin && user?.email !== "darya.6cf38@passmail.net") {
+    const url = request.nextUrl.clone();
+    url.pathname = "/";
+    return NextResponse.redirect(url);
+  }
+
   if (user && pathname.startsWith("/welcome")) {
     const url = request.nextUrl.clone();
     url.pathname = "/";

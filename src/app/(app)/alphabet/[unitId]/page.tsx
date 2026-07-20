@@ -28,8 +28,9 @@ export default function AlphabetUnitPage() {
 
   const complete = useMutation({
     mutationFn: async ({ correct, total }: { correct: number; total: number }) => {
-      if (!user) return;
-      await completeAlphabetUnit(db, user.id, unitId, correct, total);
+      if (!user || !unit) return;
+      const letters = unit.letters.map(l => l.char);
+      await completeAlphabetUnit(db, user.id, unitId, correct, total, letters);
       await recordActivity(db, user.id, { xp: XP.alphabetUnit });
     },
     onSuccess: () => invalidate(),

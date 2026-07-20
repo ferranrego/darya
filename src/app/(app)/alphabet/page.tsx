@@ -11,6 +11,16 @@ export default function AlphabetMapPage() {
 
   // A unit unlocks when every previous unit is complete.
   let unlocked = true;
+  
+  // Calculate known letters for the Reading Practice
+  const knownLetters = new Set<string>();
+  alphabetCourse.units.forEach(unit => {
+    if (completed.has(unit.id)) {
+      unit.letters.forEach(l => knownLetters.add(l.char));
+    }
+  });
+  
+  const canRead = knownLetters.size >= 8; // Unlock reading after ~8 letters (usually 2-3 units)
 
   return (
     <div className="flex flex-col gap-6">
@@ -20,6 +30,45 @@ export default function AlphabetMapPage() {
           {completed.size} of {alphabetCourse.units.length} units · learn to read Dari, letter by letter
         </p>
       </header>
+
+      {/* Action Buttons */}
+      <div className="flex flex-col sm:flex-row gap-3">
+        <Link
+          href="/alphabet/review"
+          className="flex-1 flex items-center justify-between rounded-2xl bg-lapis-soft/20 border border-lapis/20 p-4 transition-all hover:-translate-y-0.5 hover:shadow-sm"
+        >
+          <div>
+            <h3 className="text-[16px] font-bold text-lapis">Review Letters</h3>
+            <p className="text-[13px] text-lapis/70">Keep your memory fresh</p>
+          </div>
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lapis text-white">
+            <span className="font-bold">RS</span>
+          </div>
+        </Link>
+
+        {canRead ? (
+          <Link
+            href="/alphabet/reading"
+            className="flex-1 flex items-center justify-between rounded-2xl bg-sabz-soft/20 border border-sabz/20 p-4 transition-all hover:-translate-y-0.5 hover:shadow-sm"
+          >
+            <div>
+              <h3 className="text-[16px] font-bold text-sabz">Assess Reading</h3>
+              <p className="text-[13px] text-sabz/70">Practice with known letters</p>
+            </div>
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sabz text-white">
+              <span className="font-bold text-[18px]" lang="prs">ا</span>
+            </div>
+          </Link>
+        ) : (
+           <div className="flex-1 flex items-center justify-between rounded-2xl bg-surface/50 border border-line p-4 opacity-60">
+            <div>
+              <h3 className="text-[16px] font-bold text-ink-soft">Assess Reading</h3>
+              <p className="text-[13px] text-ink-faint">Unlock by learning more letters</p>
+            </div>
+            <Lock size={20} className="text-ink-faint mr-2" />
+          </div>
+        )}
+      </div>
 
       <ol className="flex flex-col gap-3">
         {alphabetCourse.units.map((unit, i) => {

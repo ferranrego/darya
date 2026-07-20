@@ -1,12 +1,13 @@
 "use client";
 
-import { BookOpen, Home, RotateCcw, User } from "lucide-react";
+import { BookOpen, Home, Library, RotateCcw, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const tabs = [
   { href: "/", label: "Home", icon: Home },
   { href: "/read", label: "Read", icon: BookOpen },
+  { href: "/words", label: "Words", icon: Library },
   { href: "/review", label: "Review", icon: RotateCcw },
   { href: "/profile", label: "Profile", icon: User },
 ] as const;

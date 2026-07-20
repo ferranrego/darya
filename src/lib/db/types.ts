@@ -28,6 +28,15 @@ export interface UserWordRow {
   updated_at: string;
 }
 
+export interface UserLetterRow {
+  user_id: string;
+  letter_char: string;
+  due: string | null;
+  fsrs: Card | null;
+  created_at: string;
+  updated_at: string;
+}
+
 export interface TextRow {
   id: string;
   level: string;

@@ -55,7 +55,7 @@ export default function WelcomePage() {
           </p>
           <h1 className="mt-1 text-[22px] font-semibold tracking-tight">Darya</h1>
           <p className="mt-2 text-[15px] text-ink-soft">
-            Learn Dari by reading — one word at a time.
+            Learn Dari by reading, one word at a time.
           </p>
         </div>
 

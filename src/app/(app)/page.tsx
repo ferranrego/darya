@@ -118,7 +118,7 @@ export default function HomePage() {
             href="/alphabet"
             icon={<Type size={20} />}
             title="Alphabet course"
-            subtitle={`${completedUnits} of ${totalUnits} units — learn to read Dari`}
+            subtitle={`${completedUnits} of ${totalUnits} units · learn to read Dari`}
             accent
           />
         )}
@@ -133,7 +133,7 @@ export default function HomePage() {
           href="/review"
           icon={<RotateCcw size={20} />}
           title="Review"
-          subtitle={dueCount > 0 ? `${dueCount} word${dueCount === 1 ? "" : "s"} ready` : "Nothing due — all caught up"}
+          subtitle={dueCount > 0 ? `${dueCount} word${dueCount === 1 ? "" : "s"} ready` : "Nothing due, all caught up"}
         />
       </section>
 

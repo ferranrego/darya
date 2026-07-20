@@ -1,5 +1,6 @@
 "use client";
 
+import { Check } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import type { LexiconEntry } from "@/lib/content/schema";
 import type { WordStatus } from "@/lib/db/types";
@@ -12,17 +13,20 @@ const statusLabel: Record<WordStatus | "new", { text: string; cls: string }> = {
 
 /**
  * Bottom sheet showing a tapped word's meaning. Opening it on a new word is
- * what moves the word into "learning" (handled by the parent).
+ * what moves the word into "learning" (handled by the parent); the "I know
+ * this word" action promotes it straight to "known".
  */
 export function WordSheet({
   entry,
   surface,
   status,
+  onMarkKnown,
   onClose,
 }: {
   entry: LexiconEntry | null;
   surface: string | null;
   status: WordStatus | "new";
+  onMarkKnown: () => void;
   onClose: () => void;
 }) {
   const open = surface !== null;
@@ -75,6 +79,22 @@ export function WordSheet({
                   <p className="mt-1 text-[13px] text-ink-soft">{entry.exampleTranslit}</p>
                   <p className="mt-0.5 text-[13px] text-ink-faint">{entry.exampleEn}</p>
                 </div>
+
+                {status === "known" ? (
+                  <p className="mt-5 flex items-center justify-center gap-1.5 text-[14px] font-medium text-sabz">
+                    <Check size={16} strokeWidth={2.5} />
+                    You know this word
+                  </p>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={onMarkKnown}
+                    className="mt-5 flex h-12 w-full items-center justify-center gap-2 rounded-full border border-sabz/40 bg-sabz-soft text-[15px] font-medium text-sabz transition-colors duration-200 hover:bg-sabz/15 active:scale-[0.99]"
+                  >
+                    <Check size={18} strokeWidth={2.5} />
+                    I already know this word
+                  </button>
+                )}
               </div>
             ) : (
               <div>
@@ -82,7 +102,7 @@ export function WordSheet({
                   {surface}
                 </p>
                 <p className="mt-3 text-[15px] text-ink-soft">
-                  Probably a name — it isn&apos;t in the dictionary yet.
+                  Probably a name. It isn&apos;t in the dictionary yet.
                 </p>
               </div>
             )}

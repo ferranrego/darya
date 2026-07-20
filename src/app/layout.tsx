@@ -16,9 +16,9 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "Darya — Learn Dari",
+  title: "Darya · Learn Dari",
   description:
-    "Learn Dari by reading — adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
+    "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
   applicationName: "Darya",
   icons: { apple: "/icons/apple-touch-icon.png" },
   appleWebApp: {

@@ -21,7 +21,7 @@
       "name": "Daily life",
       "cefrHint": "A1",
       "freqBands": [1, 2],
-      "entryKnownWords": 80,
+      "entryKnownWords": 500,
       "sentenceRange": [4, 7],
       "sentenceLengthHint": "4-8 words per sentence",
       "grammarAllowed": [
@@ -36,7 +36,7 @@
       "name": "Short stories",
       "cefrHint": "A2",
       "freqBands": [1, 2, 3],
-      "entryKnownWords": 220,
+      "entryKnownWords": 1200,
       "sentenceRange": [5, 9],
       "sentenceLengthHint": "5-10 words per sentence, may connect with wa/amā/chun",
       "grammarAllowed": [
@@ -51,7 +51,7 @@
       "name": "Real texts",
       "cefrHint": "B1",
       "freqBands": [1, 2, 3, 4],
-      "entryKnownWords": 450,
+      "entryKnownWords": 2500,
       "sentenceRange": [6, 12],
       "sentenceLengthHint": "natural paragraph rhythm, 6-14 words per sentence",
       "grammarAllowed": [
@@ -66,7 +66,7 @@
       "name": "Culture & ideas",
       "cefrHint": "B2",
       "freqBands": [1, 2, 3, 4, 5, 6],
-      "entryKnownWords": 750,
+      "entryKnownWords": 4000,
       "sentenceRange": [8, 14],
       "sentenceLengthHint": "essay-like flow, varied sentence length",
       "grammarAllowed": [
@@ -81,7 +81,7 @@
       "name": "Near-native",
       "cefrHint": "C1",
       "freqBands": [1, 2, 3, 4, 5, 6, 7, 8],
-      "entryKnownWords": 1200,
+      "entryKnownWords": 6000,
       "sentenceRange": [10, 16],
       "sentenceLengthHint": "literary and journalistic prose",
       "grammarAllowed": ["unrestricted, including literary forms and poetry excerpts"]

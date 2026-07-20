@@ -16,6 +16,7 @@ export async function completeAlphabetUnit(
   unitId: string,
   correct: number,
   total: number,
+  letters: string[],
 ): Promise<void> {
   const { error } = await db.from("alphabet_progress").upsert({
     user_id: userId,
@@ -25,4 +26,9 @@ export async function completeAlphabetUnit(
     total,
   });
   if (error) throw error;
+
+  if (letters.length > 0) {
+    const { initUserLetters } = await import("./letters");
+    await initUserLetters(db, userId, letters);
+  }
 }

@@ -82,7 +82,7 @@ export default function ReviewPage() {
       <EmptyState
         icon={<Check size={24} />}
         title="All caught up"
-        body="No words are due right now. Read something new — tapped words will show up here."
+        body="No words are due right now. Read something new. Tapped words will show up here."
       />
     );
   }
