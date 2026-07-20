@@ -48,9 +48,9 @@
 - [x] Word popover (gloss, translit, add-to-learning)
 - [x] Text view with sentence translation reveal
 - [x] Home: continue reading / next text / daily goal ring
-- [ ] Generation route: Gemini Flash → Groq → OpenRouter fallback, Zod-validated JSON, vocab-constraint verifier, Postgres cache
+- [x] Generation route: Gemini Flash → Groq → OpenRouter fallback, Zod-validated JSON, vocab-constraint verifier, Postgres cache
 - [x] Adaptive next-text logic (new-word ratio tunable per user)
-- [ ] Pre-generation queue (3–5 texts ahead)
+- [x] Pre-generation queue (3–5 texts ahead)
 
 ### SRS
 - [x] ts-fsrs scheduler integration (server-persisted cards)
@@ -66,10 +66,10 @@
 
 ### PWA & ship
 - [x] manifest.webmanifest + icons + install prompt
-- [ ] Service worker: shell precache, font/lexicon runtime cache, offline current-texts + due reviews
-- [ ] Polish pass: typography, spacing, motion audit, reduced-motion, RTL audit
-- [ ] E2E browser walkthrough (375px + desktop): onboarding both branches, read 3 texts, tap words, review session, streak, offline reload
-- [ ] Deploy to Vercel + production PWA install check
+- [x] Service worker: shell precache, font/lexicon runtime cache, offline current-texts + due reviews
+- [x] Polish pass: typography, spacing, motion audit, reduced-motion, RTL audit
+- [x] E2E browser walkthrough (375px + desktop): onboarding both branches, read 3 texts, tap words, review session, streak, offline reload
+- [x] Deploy to Vercel + production PWA install check
 
 ## Phase 2 — Audio & depth
 - [ ] Word/sentence audio (pick best free TTS; pre-generated files as content if quality wins)

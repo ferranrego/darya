@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Darya — Learn Dari by reading
 
-## Getting Started
+A comprehensible-input Dari (Afghan Persian, Kabul standard) learning PWA for a
+small circle of learners. Adaptive AI-generated texts at ~2–10% new vocabulary,
+tap-to-learn word lookup, FSRS spaced repetition with a two-button review, an
+alphabet course for non-readers, and light gamification — on 100% free
+infrastructure.
 
-First, run the development server:
+**Live:** https://darya-delta.vercel.app
+
+## Stack
+
+Next.js 16 · TypeScript · Tailwind v4 · Supabase (Postgres + Auth + RLS) ·
+`ts-fsrs` · Gemini Flash (→ Groq → OpenRouter fallback) · Vercel · PWA.
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/DESIGN.md](docs/DESIGN.md),
+[docs/MIGRATION.md](docs/MIGRATION.md), [docs/CONTENT-SCHEMA.md](docs/CONTENT-SCHEMA.md).
+
+Progress and the phased plan live in [TASKS.md](TASKS.md).
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+cp .env.example .env.local        # fill in the values below
+pnpm dev                          # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`.env.local` needs:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Variable | Where |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project settings |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase publishable key |
+| `SUPABASE_SECRET_KEY` | Supabase secret key (server only) |
+| `GEMINI_API_KEY` | https://aistudio.google.com/apikey — **free, no card** |
+| `GROQ_API_KEY` | optional fallback, https://console.groq.com |
+| `OPENROUTER_API_KEY` | optional last-resort fallback |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Without an AI key the app still runs on the bundled seed texts; new texts are
+generated only once a learner exhausts the seed pool for their level.
 
-## Learn More
+## Content pipeline
 
-To learn more about Next.js, take a look at the following resources:
+Content is open, versioned JSON in [`content/`](content/) validated by Zod
+schemas. Regenerate and check it with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm build:lexicon        # scripts/data/*.txt → content/lexicon/lexicon.json
+pnpm build:texts          # seed sources → content/texts/seed/*.json
+pnpm export:schemas       # Zod → content/schema/*.schema.json
+pnpm validate:content     # schema + cross-file integrity checks
+pnpm seed                 # push lexicon + seed texts to Supabase
+pnpm test                 # vitest (tokenizer, normalization)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Database
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Schema and RLS live in [`supabase/migrations/`](supabase/migrations/). Apply with
+`supabase db push` (or `psql` against the connection string).
