@@ -12,7 +12,8 @@
     "build:lexicon": "node scripts/build-lexicon.ts",
     "build:texts": "node scripts/build-seed-texts.ts",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "seed": "node --env-file=.env.local scripts/seed.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",
