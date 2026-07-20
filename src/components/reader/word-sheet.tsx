@@ -1,10 +1,9 @@
 "use client";
 
-import { Check, Volume2 } from "lucide-react";
+import { Check } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import type { LexiconEntry } from "@/lib/content/schema";
 import type { WordStatus } from "@/lib/db/types";
-import { useAudio } from "@/lib/use-audio";
 
 const statusLabel: Record<WordStatus | "new", { text: string; cls: string }> = {
   new: { text: "New word", cls: "bg-new-tint text-ink-soft" },
@@ -32,8 +31,6 @@ export function WordSheet({
 }) {
   const open = surface !== null;
   const badge = statusLabel[status];
-  const { playAudio } = useAudio();
-
   return (
     <AnimatePresence>
       {open && (
@@ -67,14 +64,6 @@ export function WordSheet({
                       <p lang="prs" className="text-[36px] leading-snug">
                         {entry.dari}
                       </p>
-                      <button
-                        type="button"
-                        onClick={() => playAudio(entry.dari)}
-                        className="flex items-center justify-center text-ink-soft hover:text-lapis transition-colors"
-                        title="Play audio"
-                      >
-                        <Volume2 size={24} />
-                      </button>
                     </div>
                     <p className="mt-0.5 text-[15px] text-ink-soft">{entry.translit}</p>
                   </div>
@@ -114,14 +103,6 @@ export function WordSheet({
                   <p lang="prs" className="text-[36px] leading-snug">
                     {surface}
                   </p>
-                  <button
-                    type="button"
-                    onClick={() => playAudio(surface ?? "")}
-                    className="flex items-center justify-center text-ink-soft hover:text-lapis transition-colors"
-                    title="Play audio"
-                  >
-                    <Volume2 size={24} />
-                  </button>
                 </div>
                 <p className="mt-3 text-[15px] text-ink-soft">
                   Probably a name. It isn&apos;t in the dictionary yet.
