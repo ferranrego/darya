@@ -21,11 +21,11 @@
 
 ## Phase 0b — Backend
 
-- [ ] Supabase project created + linked via CLI
-- [ ] Migration: full schema (profiles, lexemes, user_words, review_logs, texts, user_texts, alphabet_progress, push_subscriptions, daily_activity) with RLS
-- [ ] Seed script `scripts/seed.ts` (content JSON → DB)
-- [ ] Typed repository layer `src/lib/db/`
-- [ ] `.env.local` wiring (Supabase keys auto; **GEMINI_API_KEY needed from user**)
+- [x] Supabase project created + linked via CLI
+- [x] Migration: full schema (profiles, lexemes, user_words, review_logs, texts, user_texts, alphabet_progress, push_subscriptions, daily_activity) with RLS
+- [x] Seed script `scripts/seed.ts` (content JSON → DB)
+- [x] Typed repository layer `src/lib/db/`
+- [x] `.env.local` wiring (Supabase keys auto; **GEMINI_API_KEY needed from user**)
 
 ## Phase 1 — Complete usable product
 

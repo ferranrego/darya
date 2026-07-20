@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Vazirmatn } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
+import { SwRegister } from "@/components/sw-register";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,6 +19,7 @@ export const metadata: Metadata = {
   description:
     "Learn Dari by reading — adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
   applicationName: "Darya",
+  icons: { apple: "/icons/apple-touch-icon.png" },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -38,7 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${vazirmatn.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Providers>{children}</Providers>
+        <SwRegister />
+      </body>
     </html>
   );
 }
