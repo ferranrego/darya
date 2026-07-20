@@ -1,0 +1,102 @@
+# Darya core lexicon — part 2 (band 2: everyday verbs, courtesy, food, body, weather)
+# rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants
+101|سلام|salām|interjection|neutral|hello|سلام، چطور هستید؟|salām, chetōr hastēd?|Hello, how are you?||
+102|تشکر|tashakur|interjection|neutral|thank you|تشکر، حال من خوب است.|tashakur, hāl-e man khōb ast.|Thank you, I am well.|dari-specific|
+103|لطفاً|lutfan|adverb|neutral|please|لطفاً یک چای بیاور.|lutfan yak chāy biyāwar.|Please bring a tea.||لطفا
+104|ببخشید|bubakhshēd|interjection|neutral|excuse me, sorry|ببخشید، بازار کجا است؟|bubakhshēd, bāzār kujā ast?|Excuse me, where is the market?||
+105|خداحافظ|khudā hāfez|interjection|neutral|goodbye|خداحافظ، فردا می‌بینمت.|khudā hāfez, fardā mēbīnamet.|Goodbye, see you tomorrow.||خدا حافظ
+106|جور|jōr|adjective|spoken|well, healthy|جور هستید؟|jōr hastēd?|Are you well?|dari-specific|
+107|خوش|khush|adjective|neutral|happy, glad|از دیدن شما خوش شدم.|az dīdan-e shumā khush shudam.|I am glad to see you.||
+108|مانده|mānda|adjective|spoken|tired|بعد از کار مانده هستم.|ba'd az kār mānda hastam.|After work I am tired.|dari-specific|
+109|گرسنه|gushna|adjective|spoken|hungry|بچه گرسنه است.|bacha gushna ast.|The child is hungry.||گشنه
+110|تشنه|tushna|adjective|neutral|thirsty|تشنه هستم، آب می‌خواهم.|tushna hastam, āb mēkhāham.|I am thirsty, I want water.||
+111|برنج|berenj|noun|neutral|rice|برنج با گوشت می‌خوریم.|berenj bā gōsht mēkhurēm.|We eat rice with meat.||
+112|گوشت|gōsht|noun|neutral|meat|گوشت گوسفند خوش‌مزه است.|gōsht-e gōsfand khushmaza ast.|Lamb meat is tasty.||
+113|میوه|mēwa|noun|neutral|fruit|میوه تازه از بازار خریدم.|mēwa-ye tāza az bāzār kharīdam.|I bought fresh fruit from the market.||
+114|سیب|sēb|noun|neutral|apple|سیب سرخ شیرین است.|sēb-e surkh shīrīn ast.|The red apple is sweet.||
+115|انگور|angūr|noun|neutral|grapes|انگور هرات مشهور است.|angūr-e herāt mash'hūr ast.|Herat's grapes are famous.||
+116|انار|anār|noun|neutral|pomegranate|انار قندهار بسیار خوب است.|anār-e qandahār besyār khōb ast.|Kandahar's pomegranates are very good.||
+117|شیر|shīr|noun|neutral|milk (shīr); lion (shēr)|صبح شیر گرم می‌خورم.|subh shīr-e garm mēkhuram.|In the morning I drink warm milk.||
+118|قند|qand|noun|neutral|sugar (lump)|چای را با قند می‌خورم.|chāy rā bā qand mēkhuram.|I drink tea with sugar.||
+119|خوش‌مزه|khushmaza|adjective|neutral|tasty, delicious|نان مادرم خوش‌مزه است.|nān-e mādaram khushmaza ast.|My mother's food is delicious.||خوشمزه
+120|شیرین|shīrīn|adjective|neutral|sweet|این چای بسیار شیرین است.|īn chāy besyār shīrīn ast.|This tea is very sweet.||
+121|دست|dast|noun|neutral|hand; arm|دست‌هایت را بشوی.|dast-hāyat rā bushōy.|Wash your hands.||دست‌ها,دست‌هایت
+122|سر|sar|noun|neutral|head; top|سرم درد می‌کند.|saram dard mēkunad.|My head hurts.||سرم
+123|چشم|chashm|noun|neutral|eye|چشم‌های او سیاه است.|chashm-hā-ye ō siyāh ast.|Her eyes are black.||چشم‌ها,چشم‌های
+124|دل|del|noun|neutral|heart (figurative)|دلم برای وطن تنگ شده است.|delam barāye watan tang shuda ast.|I miss my homeland.||دلم
+125|پای|pāy|noun|neutral|foot, leg|پیاده با پای خود رفتم.|piyāda bā pāy-e khud raftam.|I went on foot.||پایم
+126|هوا|hawā|noun|neutral|weather; air|هوای امروز آفتابی است.|hawā-ye emrōz āftābī ast.|Today's weather is sunny.||هوای
+127|باران|bārān|noun|neutral|rain|در بهار باران زیاد می‌بارد.|dar bahār bārān-e ziyād mēbārad.|In spring it rains a lot.||
+128|برف|barf|noun|neutral|snow|زمستان در کابل برف می‌بارد.|zemestān dar kābul barf mēbārad.|In winter it snows in Kabul.||
+129|آفتاب|āftāb|noun|neutral|sun; sunshine|آفتاب گرم است.|āftāb garm ast.|The sun is warm.|dari-specific|آفتابی
+130|بهار|bahār|noun|neutral|spring (season)|بهار فصل مقبول است.|bahār fasl-e maqbūl ast.|Spring is a beautiful season.||
+131|زمستان|zemestān|noun|neutral|winter|زمستان سرد است.|zemestān sard ast.|Winter is cold.||
+132|تابستان|tābestān|noun|neutral|summer|تابستان به قریه می‌رویم.|tābestān ba qarya mērawēm.|In summer we go to the village.||
+133|بازار|bāzār|noun|neutral|market, bazaar|بازار امروز شلوغ است.|bāzār emrōz shulūgh ast.|The market is crowded today.||
+134|دکان|dukān|noun|neutral|shop, store|از دکان نان خریدم.|az dukān nān kharīdam.|I bought bread from the shop.|dari-specific|
+135|مسجد|masjed|noun|neutral|mosque|مسجد نزدیک خانه ما است.|masjed nazdīk-e khāna-ye mā ast.|The mosque is near our house.||
+136|دریا|daryā|noun|neutral|river|دریای کابل از شهر می‌گذرد.|daryā-ye kābul az shahr mēguzarad.|The Kabul river passes through the city.|dari-specific|دریای
+137|کوه|kōh|noun|neutral|mountain|افغانستان کوه‌های بلند دارد.|afghānestān kōh-hā-ye buland dārad.|Afghanistan has high mountains.||کوه‌ها,کوه‌های
+138|درخت|darakht|noun|neutral|tree|در باغ ما درخت سیب است.|dar bāgh-e mā darakht-e sēb ast.|In our garden there is an apple tree.||
+139|باغ|bāgh|noun|neutral|garden, orchard|بچه‌ها در باغ بازی می‌کنند.|bacha-hā dar bāgh bāzī mēkunand.|The children play in the garden.||
+140|گل|gul|noun|neutral|flower|گل سرخ مقبول است.|gul-e surkh maqbūl ast.|The red flower is beautiful.||
+141|رنگ|rang|noun|neutral|color|این رنگ را دوست دارم.|īn rang rā dōst dāram.|I like this color.||
+142|سرخ|surkh|adjective|neutral|red|انار سرخ است.|anār surkh ast.|The pomegranate is red.|dari-specific|
+143|سفید|safēd|adjective|neutral|white|برف سفید است.|barf safēd ast.|Snow is white.||
+144|سیاه|siyāh|adjective|neutral|black|چای سیاه می‌خورم.|chāy-e siyāh mēkhuram.|I drink black tea.||
+145|سبز|sabz|adjective|neutral|green|چای سبز دوست دارم.|chāy-e sabz dōst dāram.|I like green tea.||
+146|آبی|ābī|adjective|neutral|blue|آسمان آبی است.|āsmān ābī ast.|The sky is blue.||
+147|آسمان|āsmān|noun|neutral|sky|آسمان امشب پر از ستاره است.|āsmān emshab pur az setāra ast.|The sky tonight is full of stars.||
+148|ستاره|setāra|noun|neutral|star|ستاره‌ها روشن هستند.|setāra-hā rōshan hastand.|The stars are bright.||ستاره‌ها
+149|شدن|shudan|verb|neutral|to become|هوا سرد می‌شود.|hawā sard mēshawad.|The weather is getting cold.||می‌شوم,می‌شوی,می‌شود,می‌شویم,می‌شوند,شدم,شدی,شد,شدیم,شدند,بشود,نمی‌شود
+150|زندگی|zendagī|noun|neutral|life|زندگی در قریه آرام است.|zendagī dar qarya ārām ast.|Life in the village is calm.||
+151|گپ|gap|noun|spoken|talk, word, conversation|با دوستم گپ زدم.|bā dōstam gap zadam.|I talked with my friend.|dari-specific|
+152|زدن|zadan|verb|neutral|to hit; (in compounds) to do|برادرم با من گپ می‌زند.|barādaram bā man gap mēzanad.|My brother talks with me.||می‌زنم,می‌زنی,می‌زند,می‌زنیم,می‌زنند,زدم,زدی,زد,زدیم,زدند,بزن
+153|گرفتن|gereftan|verb|neutral|to take, to get|از بازار میوه گرفتم.|az bāzār mēwa gereftam.|I got fruit from the market.||می‌گیرم,می‌گیری,می‌گیرد,می‌گیریم,می‌گیرند,گرفتم,گرفتی,گرفت,گرفتیم,گرفتند,بگیر
+154|یاد|yād|noun|neutral|memory; (yād gereftan: to learn)|دری یاد می‌گیرم.|darī yād mēgīram.|I am learning Dari.||
+155|نوشتن|neweshtan|verb|neutral|to write|نامت را اینجا بنویس.|nāmat rā īnjā benewīs.|Write your name here.||می‌نویسم,می‌نویسی,می‌نویسد,می‌نویسیم,می‌نویسند,نوشتم,نوشتی,نوشت,نوشتیم,نوشتند,بنویس
+156|شنیدن|shunīdan|verb|neutral|to hear, to listen|آهنگ افغانی می‌شنوم.|āhang-e afghānī mēshunawam.|I listen to Afghan music.||می‌شنوم,می‌شنوی,می‌شنود,می‌شنویم,می‌شنوند,شنیدم,شنیدی,شنید,شنیدیم,شنیدند,بشنو
+157|فهمیدن|fahmīdan|verb|neutral|to understand|دری را خوب می‌فهمم.|darī rā khōb mēfahmam.|I understand Dari well.||می‌فهمم,می‌فهمی,می‌فهمد,می‌فهمیم,می‌فهمند,فهمیدم,فهمیدی,فهمید,فهمیدیم,نمی‌فهمم
+158|توانستن|tawānestan|verb|neutral|to be able, can|می‌توانم دری بخوانم.|mētawānam darī bukhānam.|I can read Dari.||می‌توانم,می‌توانی,می‌تواند,می‌توانیم,می‌توانند,توانستم,توانست,نمی‌توانم,بخوانم
+159|خوابیدن|khāb kardan|verb|neutral|to sleep|شب‌ها وقت خواب می‌کنم.|shab-hā waqt khāb mēkunam.|At night I sleep early.||می‌خوابم,می‌خوابی,می‌خوابد,خوابیدم,خوابید,بخواب,خواب
+160|نشستن|neshastan|verb|neutral|to sit|لطفاً اینجا بنشین.|lutfan īnjā benshīn.|Please sit here.||می‌نشینم,می‌نشیند,نشستم,نشست,بنشین,نشسته
+161|کشور|keshwar|noun|neutral|country|افغانستان کشور من است.|afghānestān keshwar-e man ast.|Afghanistan is my country.||
+162|وطن|watan|noun|neutral|homeland|وطن خود را دوست دارم.|watan-e khud rā dōst dāram.|I love my homeland.||
+163|جای|jāy|noun|neutral|place|این جای آرام است.|īn jāy-e ārām ast.|This is a calm place.||جا
+164|چیز|chīz|noun|neutral|thing|یک چیز می‌خواهم بگویم.|yak chīz mēkhāham bugōyam.|I want to say one thing.||چیزی
+165|همه|hama|determiner|neutral|all, everyone|همه به خانه رفتند.|hama ba khāna raftand.|Everyone went home.||
+166|هر|har|determiner|neutral|every, each|هر روز چای می‌خورم.|har rōz chāy mēkhuram.|I drink tea every day.||
+167|بسیار|besyār|adverb|neutral|very, much|این شهر بسیار مقبول است.|īn shahr besyār maqbūl ast.|This city is very beautiful.||
+168|اما|amā|conjunction|neutral|but|مانده هستم اما خوش هستم.|mānda hastam amā khush hastam.|I am tired but happy.||
+169|یا|yā|conjunction|neutral|or|چای می‌خواهی یا آب؟|chāy mēkhāhī yā āb?|Do you want tea or water?||
+170|اگر|agar|conjunction|neutral|if|اگر وقت داشتی، بیا.|agar waqt dāshtī, biyā.|If you have time, come.||
+171|چون|chun|conjunction|neutral|because|نرفتم چون باران بود.|naraftam chun bārān būd.|I did not go because it was raining.||
+172|پس|pas|adverb|neutral|then, so|پس فردا می‌بینمت.|pas fardā mēbīnamet.|So I will see you tomorrow.||
+173|دیگر|dīgar|determiner|neutral|other, another; anymore|یک چای دیگر لطفاً.|yak chāy-e dīgar lutfan.|Another tea, please.||دگه,دیگه
+174|اینجا|īnjā|adverb|neutral|here|اینجا خانه ما است.|īnjā khāna-ye mā ast.|Here is our house.||این‌جا
+175|آنجا|ānjā|adverb|neutral|there|آنجا مسجد است.|ānjā masjed ast.|There is the mosque.||آن‌جا
+176|نزدیک|nazdīk|adjective|neutral|near, close|دکان نزدیک است.|dukān nazdīk ast.|The shop is near.||
+177|دور|dūr|adjective|neutral|far|پوهنتون از خانه ما دور است.|pohantūn az khāna-ye mā dūr ast.|The university is far from our house.||
+178|خود|khud|pronoun|neutral|self, own|کتاب خود را آوردم.|ketāb-e khud rā āwardam.|I brought my own book.||خودم,خودت
+179|بجه|baja|noun|spoken|o'clock|حالا چند بجه است؟|hālā chand baja ast?|What time is it now?|dari-specific|
+180|چند|chand|determiner|neutral|how many; a few|چند برادر داری؟|chand barādar dārī?|How many brothers do you have?||
+181|ساعت|sā'at|noun|neutral|hour; clock, watch|یک ساعت صبر کردم.|yak sā'at sabr kardam.|I waited for an hour.||
+182|دقیقه|daqīqa|noun|neutral|minute|پنج دقیقه وقت می‌خواهم.|panj daqīqa waqt mēkhāham.|I need five minutes.||
+183|فامیل|fāmīl|noun|spoken|family|فامیل ما کلان است.|fāmīl-e mā kalān ast.|Our family is big.|dari-specific,loanword|
+184|خاله|khāla|noun|neutral|aunt (maternal)|خاله‌ام در مزار زندگی می‌کند.|khāla-am dar mazār zendagī mēkunad.|My aunt lives in Mazar.||
+185|کاکا|kākā|noun|neutral|uncle (paternal)|کاکایم دکان دارد.|kākāyam dukān dārad.|My uncle has a shop.|dari-specific|کاکایم
+186|پدرکلان|padarkalān|noun|neutral|grandfather|پدرکلانم قصه می‌گوید.|padarkalānam qessa mēgōyad.|My grandfather tells stories.|dari-specific|پدرکلانم
+187|مادرکلان|mādarkalān|noun|neutral|grandmother|مادرکلانم چای دم می‌کند.|mādarkalānam chāy dam mēkunad.|My grandmother brews tea.|dari-specific|مادرکلانم
+188|مهمان|mehmān|noun|neutral|guest|امشب مهمان داریم.|emshab mehmān dārēm.|Tonight we have guests.||
+189|قصه|qessa|noun|neutral|story, tale|این قصه را دوست دارم.|īn qessa rā dōst dāram.|I like this story.||
+190|آهنگ|āhang|noun|neutral|song|این آهنگ مشهور است.|īn āhang mash'hūr ast.|This song is famous.||
+191|بازی|bāzī|noun|neutral|game, play|بازی فوتبال را دیدیم.|bāzī-ye fūtbāl rā dīdēm.|We watched the football game.||
+192|فوتبال|fūtbāl|noun|neutral|football, soccer|بچه‌ها فوتبال بازی می‌کنند.|bacha-hā fūtbāl bāzī mēkunand.|The boys play football.|loanword|
+193|کرکت|kriket|noun|neutral|cricket (sport)|کرکت در افغانستان مشهور است.|kriket dar afghānestān mash'hūr ast.|Cricket is popular in Afghanistan.|loanword|
+194|روشن|rōshan|adjective|neutral|bright, light; on|اتاق روشن است.|utāq rōshan ast.|The room is bright.||
+195|تاریک|tārīk|adjective|neutral|dark|شب سرک تاریک است.|shab sarak tārīk ast.|At night the street is dark.||
+196|اتاق|utāq|noun|neutral|room|اتاق من خورد است.|utāq-e man khurd ast.|My room is small.||
+197|دروازه|darwāza|noun|neutral|door, gate|دروازه را باز کن.|darwāza rā bāz kun.|Open the door.|dari-specific|
+198|کلکین|kelkīn|noun|neutral|window|از کلکین کوه را می‌بینم.|az kelkīn kōh rā mēbīnam.|From the window I see the mountain.|dari-specific|
+199|باز|bāz|adjective|neutral|open|دکان باز است.|dukān bāz ast.|The shop is open.||
+200|بسته|basta|adjective|neutral|closed|مکتب امروز بسته است.|maktab emrōz basta ast.|The school is closed today.||

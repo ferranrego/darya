@@ -38,10 +38,5 @@
     "typescript": "^5",
     "vitest": "^4.1.10"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "sharp",
-      "unrs-resolver"
-    ]
-  }
+  "type": "module"
 }

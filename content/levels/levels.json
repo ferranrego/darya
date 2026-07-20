@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.0.0",
+  "levels": [
+    {
+      "id": "L1",
+      "name": "First words",
+      "cefrHint": "pre-A1",
+      "freqBands": [1],
+      "entryKnownWords": 0,
+      "sentenceRange": [3, 5],
+      "sentenceLengthHint": "3-6 words per sentence, simple subject-object-verb",
+      "grammarAllowed": [
+        "present tense of budan (ast, hastam, hastēm)",
+        "simple SOV sentences",
+        "possessive ezafe (khāna-ye man)",
+        "yes/no and chetōr/kujā questions"
+      ]
+    },
+    {
+      "id": "L2",
+      "name": "Daily life",
+      "cefrHint": "A1",
+      "freqBands": [1, 2],
+      "entryKnownWords": 80,
+      "sentenceRange": [4, 7],
+      "sentenceLengthHint": "4-8 words per sentence",
+      "grammarAllowed": [
+        "present tense mē- verbs",
+        "simple past tense",
+        "object marker rā",
+        "ham, besyār, negation with na-/namē-"
+      ]
+    },
+    {
+      "id": "L3",
+      "name": "Short stories",
+      "cefrHint": "A2",
+      "freqBands": [1, 2, 3],
+      "entryKnownWords": 220,
+      "sentenceRange": [5, 9],
+      "sentenceLengthHint": "5-10 words per sentence, may connect with wa/amā/chun",
+      "grammarAllowed": [
+        "past and present tenses",
+        "future with mē- + context",
+        "subordinate clauses with ke",
+        "comparatives (-tar)"
+      ]
+    },
+    {
+      "id": "L4",
+      "name": "Real texts",
+      "cefrHint": "B1",
+      "freqBands": [1, 2, 3, 4],
+      "entryKnownWords": 450,
+      "sentenceRange": [6, 12],
+      "sentenceLengthHint": "natural paragraph rhythm, 6-14 words per sentence",
+      "grammarAllowed": [
+        "perfect tenses (rafta ast)",
+        "conditional with agar",
+        "passive with shudan",
+        "relative clauses"
+      ]
+    },
+    {
+      "id": "L5",
+      "name": "Culture & ideas",
+      "cefrHint": "B2",
+      "freqBands": [1, 2, 3, 4, 5, 6],
+      "entryKnownWords": 750,
+      "sentenceRange": [8, 14],
+      "sentenceLengthHint": "essay-like flow, varied sentence length",
+      "grammarAllowed": [
+        "subjunctive (bāyad berawad)",
+        "reported speech",
+        "formal register",
+        "idiomatic compounds"
+      ]
+    },
+    {
+      "id": "L6",
+      "name": "Near-native",
+      "cefrHint": "C1",
+      "freqBands": [1, 2, 3, 4, 5, 6, 7, 8],
+      "entryKnownWords": 1200,
+      "sentenceRange": [10, 16],
+      "sentenceLengthHint": "literary and journalistic prose",
+      "grammarAllowed": ["unrestricted, including literary forms and poetry excerpts"]
+    }
+  ]
+}

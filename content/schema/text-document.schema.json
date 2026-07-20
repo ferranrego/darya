@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "formatVersion": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string",
+      "pattern": "^L\\d$"
+    },
+    "titleDari": {
+      "type": "string",
+      "minLength": 1
+    },
+    "titleTranslit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "titleEn": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sentences": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "dari": {
+            "type": "string",
+            "minLength": 1
+          },
+          "translit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "en": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tokens": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "surface": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "lexemeId": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "surface",
+                "lexemeId"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "dari",
+          "translit",
+          "en",
+          "tokens"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "vocabUsed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "newWordRatio": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "seed",
+        "generated"
+      ]
+    },
+    "model": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "formatVersion",
+    "level",
+    "titleDari",
+    "titleTranslit",
+    "titleEn",
+    "sentences",
+    "vocabUsed",
+    "newWordRatio",
+    "source",
+    "createdAt"
+  ],
+  "additionalProperties": false
+}

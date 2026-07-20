@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "const": "prs"
+    },
+    "glossLanguage": {
+      "type": "string",
+      "const": "en"
+    },
+    "license": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^lx-\\d{4,}$"
+          },
+          "dari": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dariNormalized": {
+            "type": "string",
+            "minLength": 1
+          },
+          "translit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "glossEn": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pos": {
+            "type": "string",
+            "enum": [
+              "noun",
+              "verb",
+              "adjective",
+              "adverb",
+              "pronoun",
+              "preposition",
+              "conjunction",
+              "particle",
+              "numeral",
+              "interjection",
+              "determiner",
+              "phrase"
+            ]
+          },
+          "freqRank": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "freqBand": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "register": {
+            "type": "string",
+            "enum": [
+              "neutral",
+              "spoken",
+              "formal",
+              "literary"
+            ]
+          },
+          "variants": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "exampleDari": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exampleTranslit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exampleEn": {
+            "type": "string",
+            "minLength": 1
+          },
+          "audioUrl": {
+            "type": "string"
+          },
+          "tags": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "dari",
+          "dariNormalized",
+          "translit",
+          "glossEn",
+          "pos",
+          "freqRank",
+          "freqBand",
+          "register",
+          "variants",
+          "exampleDari",
+          "exampleTranslit",
+          "exampleEn",
+          "tags"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "language",
+    "glossLanguage",
+    "license",
+    "entries"
+  ],
+  "additionalProperties": false
+}

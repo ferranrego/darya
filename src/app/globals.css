@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
+/* Darya design tokens — see docs/DESIGN.md ("Kabul paper & lapis"). */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper: #faf7f2;
+  --surface: #ffffff;
+  --ink: #1f1a17;
+  --ink-soft: #6e6459;
+  --ink-faint: #a89e91;
+  --lapis: #2b4c8c;
+  --lapis-deep: #1e3563;
+  --lapis-soft: #e8edf6;
+  --saffron: #d9a036;
+  --saffron-soft: #f8efdc;
+  --sabz: #3e7c59;
+  --sabz-soft: #e4efe8;
+  --new-tint: #efe9dd;
+  --line: #e7e0d6;
+  --danger: #b4543e;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-lapis: var(--lapis);
+  --color-lapis-deep: var(--lapis-deep);
+  --color-lapis-soft: var(--lapis-soft);
+  --color-saffron: var(--saffron);
+  --color-saffron-soft: var(--saffron-soft);
+  --color-sabz: var(--sabz);
+  --color-sabz-soft: var(--sabz-soft);
+  --color-new-tint: var(--new-tint);
+  --color-line: var(--line);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-dari: var(--font-vazirmatn), "Noto Naskh Arabic", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv05", "cv11";
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+/* Dari script rendering. Never letterspace Arabic script. */
+[lang="prs"] {
+  font-family: var(--font-dari);
+  letter-spacing: 0 !important;
+  direction: rtl;
+}
+
+::selection {
+  background: var(--lapis-soft);
+}
+
+:focus-visible {
+  outline: 2px solid var(--lapis);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

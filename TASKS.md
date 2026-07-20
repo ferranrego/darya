@@ -7,17 +7,17 @@
 
 - [x] Git init, Next.js 16 + TypeScript strict + Tailwind v4 scaffold (pnpm)
 - [x] Core deps: ts-fsrs, zod, @tanstack/react-query, zustand, motion, supabase-js/ssr, vitest
-- [ ] TASKS.md + docs: ARCHITECTURE, DESIGN, MIGRATION, CONTENT-SCHEMA
-- [ ] Zod content schemas (`src/lib/content/schema.ts`) + JSON Schema export script
-- [ ] Fonts: Vazirmatn (variable) + Inter, self-hosted, RTL base styles
-- [ ] Design tokens: palette, type scale, spacing, motion durations (globals.css)
-- [ ] Seed lexicon `content/lexicon/lexicon.json` (core set now; Gemini batch-expand once API key present)
-- [ ] Dari override + curation notes (`content/lexicon/README.md`)
-- [ ] Alphabet course content `content/alphabet/course.json` (all 32 letters, ordered units, exercises)
-- [ ] Level definitions `content/levels/levels.json`
-- [ ] Seed texts `content/texts/seed/` (hand-authored, per level)
-- [ ] Content validation script `scripts/validate-content.ts` (+ `pnpm validate:content`)
-- [ ] Unit tests: tokenizer/ZWNJ normalization, schema round-trip
+- [x] TASKS.md + docs: ARCHITECTURE, DESIGN, MIGRATION, CONTENT-SCHEMA
+- [x] Zod content schemas (`src/lib/content/schema.ts`) + JSON Schema export script
+- [x] Fonts: Vazirmatn (variable) + Inter, self-hosted, RTL base styles
+- [x] Design tokens: palette, type scale, spacing, motion durations (globals.css)
+- [x] Seed lexicon `content/lexicon/lexicon.json` (core set now; Gemini batch-expand once API key present)
+- [x] Dari override + curation notes (`content/lexicon/README.md`)
+- [x] Alphabet course content `content/alphabet/course.json` (all 32 letters, ordered units, exercises)
+- [x] Level definitions `content/levels/levels.json`
+- [x] Seed texts `content/texts/seed/` (hand-authored, per level)
+- [x] Content validation script `scripts/validate-content.ts` (+ `pnpm validate:content`)
+- [x] Unit tests: tokenizer/ZWNJ normalization, schema round-trip
 
 ## Phase 0b — Backend
 

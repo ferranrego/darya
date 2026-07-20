@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "type": "string"
+    },
+    "levels": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^L\\d$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cefrHint": {
+            "type": "string",
+            "minLength": 1
+          },
+          "freqBands": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8
+            }
+          },
+          "entryKnownWords": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "sentenceRange": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            ]
+          },
+          "sentenceLengthHint": {
+            "type": "string",
+            "minLength": 1
+          },
+          "grammarAllowed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "cefrHint",
+          "freqBands",
+          "entryKnownWords",
+          "sentenceRange",
+          "sentenceLengthHint",
+          "grammarAllowed"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "levels"
+  ],
+  "additionalProperties": false
+}
