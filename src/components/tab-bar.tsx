@@ -51,37 +51,38 @@ export function TabBar() {
                 active ? "text-lapis" : "text-ink-faint hover:text-ink-soft"
               }`}
             >
-              {active && (
-                <motion.span
-                  layoutId={reduced ? undefined : "tab-pill"}
-                  aria-hidden
-                  className="absolute inset-0 rounded-2xl bg-lapis-soft"
-                  transition={
-                    reduced
-                      ? { duration: 0 }
-                      : { type: "spring", stiffness: 400, damping: 32, mass: 0.8 }
-                  }
-                />
-              )}
-
-              <span className="relative">
-                <motion.span
-                  className="block"
-                  animate={{ scale: active && !reduced ? 1.06 : 1 }}
-                  whileTap={reduced ? undefined : { scale: 0.92 }}
-                  transition={{ type: "spring", stiffness: 500, damping: 30 }}
-                >
-                  <Icon size={22} strokeWidth={active ? 2.2 : 1.8} />
-                </motion.span>
-                {badge > 0 && (
-                  <span
+              <div className="relative flex h-8 w-14 items-center justify-center">
+                {active && (
+                  <motion.span
+                    layoutId={reduced ? undefined : "tab-pill"}
                     aria-hidden
-                    className="absolute -right-2 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-lapis px-1 text-[10px] font-semibold leading-none text-white"
-                  >
-                    {badge > 99 ? "99+" : badge}
-                  </span>
+                    className="absolute inset-0 rounded-full bg-lapis-soft"
+                    transition={
+                      reduced
+                        ? { duration: 0 }
+                        : { type: "spring", stiffness: 400, damping: 32, mass: 0.8 }
+                    }
+                  />
                 )}
-              </span>
+                <span className="relative z-10 flex items-center justify-center">
+                  <motion.span
+                    className="block"
+                    animate={{ scale: active && !reduced ? 1.06 : 1 }}
+                    whileTap={reduced ? undefined : { scale: 0.92 }}
+                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                  >
+                    <Icon size={22} strokeWidth={active ? 2.2 : 1.8} />
+                  </motion.span>
+                  {badge > 0 && (
+                    <span
+                      aria-hidden
+                      className="absolute -right-2 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-lapis px-1 text-[10px] font-semibold leading-none text-white"
+                    >
+                      {badge > 99 ? "99+" : badge}
+                    </span>
+                  )}
+                </span>
+              </div>
 
               <span className="relative">{label}</span>
             </Link>

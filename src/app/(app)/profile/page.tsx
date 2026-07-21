@@ -34,6 +34,7 @@ export default function ProfilePage() {
       new_word_ratio?: number;
       daily_goal?: number;
       chat_notifications?: boolean;
+      reminder_notifications?: boolean;
     }) => {
       if (!user) return;
       await updateProfile(db, user.id, p);
@@ -195,20 +196,36 @@ export default function ProfilePage() {
           </div>
 
           {isSubscribed && (
-            <label className="mt-3 flex cursor-pointer items-center justify-between gap-4 rounded-2xl border border-line bg-surface px-4 py-3">
-              <span>
-                <span className="block text-[14px] font-medium">Chat messages</span>
-                <span className="block text-[13px] text-ink-soft">
-                  Tell me when someone writes in the chat room
+            <div className="mt-3 flex flex-col gap-2">
+              <label className="flex cursor-pointer items-center justify-between gap-4 rounded-2xl border border-line bg-surface px-4 py-3">
+                <span>
+                  <span className="block text-[14px] font-medium">Chat messages</span>
+                  <span className="block text-[13px] text-ink-soft">
+                    Tell me when someone writes in the chat room
+                  </span>
                 </span>
-              </span>
-              <input
-                type="checkbox"
-                checked={profile.chat_notifications}
-                onChange={(e) => patch.mutate({ chat_notifications: e.target.checked })}
-                className="h-5 w-5 shrink-0 accent-lapis"
-              />
-            </label>
+                <input
+                  type="checkbox"
+                  checked={profile.chat_notifications}
+                  onChange={(e) => patch.mutate({ chat_notifications: e.target.checked })}
+                  className="h-5 w-5 shrink-0 accent-lapis"
+                />
+              </label>
+              <label className="flex cursor-pointer items-center justify-between gap-4 rounded-2xl border border-line bg-surface px-4 py-3">
+                <span>
+                  <span className="block text-[14px] font-medium">Daily reminders</span>
+                  <span className="block text-[13px] text-ink-soft">
+                    Remind me to catch up with my progress
+                  </span>
+                </span>
+                <input
+                  type="checkbox"
+                  checked={profile.reminder_notifications}
+                  onChange={(e) => patch.mutate({ reminder_notifications: e.target.checked })}
+                  className="h-5 w-5 shrink-0 accent-lapis"
+                />
+              </label>
+            </div>
           )}
         </section>
       )}

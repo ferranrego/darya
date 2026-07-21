@@ -16,6 +16,7 @@ export interface ProfileRow {
   level_estimate: string;
   onboarded_at: string | null;
   chat_notifications: boolean;
+  reminder_notifications: boolean;
   last_chat_push_at: string | null;
   created_at: string;
 }

@@ -24,6 +24,7 @@ export async function updateProfile(
       | "level_estimate"
       | "onboarded_at"
       | "chat_notifications"
+      | "reminder_notifications"
     >
   >,
 ): Promise<void> {

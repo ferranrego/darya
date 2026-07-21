@@ -23,6 +23,7 @@ export async function GET(req: Request) {
     const { data: usersToRemind } = await supabaseAdmin
       .from("profiles")
       .select("id, streak_current, last_active_date")
+      .eq("reminder_notifications", true)
       .gt("streak_current", 0)
       .neq("last_active_date", today);
 
