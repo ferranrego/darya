@@ -1,5 +1,5 @@
 import type { LexiconEntry } from "../content/schema.ts";
-import { matchKey } from "./normalize.ts";
+import { matchKey, ZWNJ } from "./normalize.ts";
 
 /**
  * Fast surface-form → lexeme lookup. Headwords win over variants when both
@@ -28,7 +28,32 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
     byId,
     resolve(surface: string) {
       const key = matchKey(surface);
-      return headwords.get(key) ?? variants.get(key) ?? null;
+      
+      // 1. Exact match (Headword or Variant)
+      let match = headwords.get(key) ?? variants.get(key);
+      if (match) return match;
+
+      // 2. Basic Stemmer for common Persian enclitics, plural markers, and comparatives
+      const suffixes = [
+        "یم", "ید", "ند", // verb endings (we, you pl, they)
+        "ام", "ای", "ایم", "اید", "اند", // verb endings after vowels
+        "ها", "ان", // plurals
+        "تر", "ترین", // comparative / superlative
+        "م", "ت", "ش", "ی", // possessives / singular verb endings
+      ];
+
+      for (const suffix of suffixes) {
+        if (key.endsWith(suffix) && key.length > suffix.length + 1) {
+          const root = key.slice(0, -suffix.length);
+          // Strip ZWNJ if it was placed immediately before the suffix (e.g., خانه-ام)
+          const cleanRoot = root.endsWith(ZWNJ) ? root.slice(0, -1) : root;
+          
+          match = headwords.get(cleanRoot) ?? variants.get(cleanRoot);
+          if (match) return match;
+        }
+      }
+
+      return null;
     },
   };
 }

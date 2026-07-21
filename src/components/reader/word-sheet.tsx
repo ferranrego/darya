@@ -1,9 +1,11 @@
 "use client";
 
-import { Check } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Check, Loader2, Wand2 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import type { LexiconEntry } from "@/lib/content/schema";
 import type { WordStatus } from "@/lib/db/types";
+import { analyzeConjugation, type ConjugationResponse } from "@/app/actions/conjugation";
 
 const statusLabel: Record<WordStatus | "new", { text: string; cls: string }> = {
   new: { text: "New word", cls: "bg-new-tint text-ink-soft" },
@@ -29,8 +31,31 @@ export function WordSheet({
   onMarkKnown: () => void;
   onClose: () => void;
 }) {
+  const [conjugation, setConjugation] = useState<ConjugationResponse | null>(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+
+  useEffect(() => {
+    setConjugation(null);
+    setIsAnalyzing(false);
+  }, [surface]);
+
   const open = surface !== null;
   const badge = statusLabel[status];
+  
+  const isConjugatedVerb = entry && surface && entry.dari !== surface;
+
+  const handleAnalyze = async () => {
+    if (!surface || !entry) return;
+    setIsAnalyzing(true);
+    const result = await analyzeConjugation(surface, entry.dari, entry.glossEn);
+    if ("error" in result) {
+      alert(result.error);
+    } else {
+      setConjugation(result);
+    }
+    setIsAnalyzing(false);
+  };
+
   return (
     <AnimatePresence>
       {open && (
@@ -80,6 +105,48 @@ export function WordSheet({
                   <p className="mt-1 text-[13px] text-ink-soft">{entry.exampleTranslit}</p>
                   <p className="mt-0.5 text-[13px] text-ink-faint">{entry.exampleEn}</p>
                 </div>
+
+                {isConjugatedVerb && (
+                  <div className="mt-5 border-t border-line pt-5">
+                    {conjugation ? (
+                      <div className="rounded-2xl border border-line bg-paper/50 p-4">
+                        <div className="mb-3 flex items-center justify-between">
+                          <h4 className="text-[14px] font-medium text-ink-soft">Conjugation Analysis</h4>
+                          <div className="flex items-center gap-1.5 rounded-full bg-lapis/10 px-2.5 py-1 text-[11px] font-medium text-lapis">
+                            <Wand2 size={12} /> AI
+                          </div>
+                        </div>
+                        <p className="text-[15px] font-semibold">{conjugation.tense}</p>
+                        <p className="mb-4 text-[13px] text-ink-faint">{conjugation.person}</p>
+                        
+                        <div className="flex flex-col gap-2">
+                          {conjugation.conjugation.map((row, i) => (
+                            <div key={i} className="flex items-center justify-between rounded-xl bg-surface p-3 shadow-sm border border-line/50">
+                              <div className="flex flex-col">
+                                <span className="text-[11px] font-medium text-ink-faint uppercase tracking-wider">{row.person}</span>
+                                <span className="text-[12px] text-ink-soft mt-0.5">{row.en}</span>
+                              </div>
+                              <div className="flex flex-col items-end text-right">
+                                <span lang="prs" className="text-[18px]">{row.dari}</span>
+                                <span className="text-[12px] text-ink-soft">{row.translit}</span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={handleAnalyze}
+                        disabled={isAnalyzing}
+                        className="flex w-full items-center justify-center gap-2 rounded-xl bg-lapis-soft/50 py-3 text-[14px] font-medium text-lapis transition-colors hover:bg-lapis-soft disabled:opacity-50"
+                      >
+                        {isAnalyzing ? <Loader2 size={16} className="animate-spin" /> : <Wand2 size={16} />}
+                        {isAnalyzing ? "Analyzing tense..." : "Analyze Conjugation (AI)"}
+                      </button>
+                    )}
+                  </div>
+                )}
 
                 {status === "known" ? (
                   <p className="mt-5 flex items-center justify-center gap-1.5 text-[14px] font-medium text-sabz">

@@ -5,7 +5,7 @@ import { Check, Languages } from "lucide-react";
 import { motion } from "motion/react";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { lexemeById, levels } from "@/lib/content/load";
+import { lexemeById, lexiconIndex, levels } from "@/lib/content/load";
 import type { TextDocument } from "@/lib/content/schema";
 import { markTextRead } from "@/lib/db/texts";
 import { upsertUserWord } from "@/lib/db/words";
@@ -104,6 +104,10 @@ export function TextReader({
   });
 
   function handleTap(surface: string, lexemeId: string | null) {
+    if (!lexemeId) {
+      const resolved = lexiconIndex().resolve(surface);
+      if (resolved) lexemeId = resolved.id;
+    }
     setTapped({ surface, lexemeId });
     setTapCount((c) => c + 1);
     if (lexemeId && statusMap && !statusMap.has(lexemeId)) {
@@ -193,11 +197,14 @@ export function TextReader({
                   <WordSpan
                     key={j}
                     surface={seg.token.surface}
-                    status={
-                      seg.token.lexemeId
-                        ? (statusMap?.get(seg.token.lexemeId) ?? "new")
-                        : "name"
-                    }
+                    status={(() => {
+                      let id = seg.token.lexemeId;
+                      if (!id) {
+                        const resolved = lexiconIndex().resolve(seg.token.surface);
+                        if (resolved) id = resolved.id;
+                      }
+                      return id ? (statusMap?.get(id) ?? "new") : "name";
+                    })()}
                     onTap={() => handleTap(seg.token.surface, seg.token.lexemeId)}
                   />
                 ),
