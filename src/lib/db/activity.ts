@@ -1,6 +1,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { DailyActivityRow } from "./types";
 
+/** Deltas accepted by the record_activity RPC (see gamification.ts). */
 export interface ActivityDelta {
   xp?: number;
   reviews_done?: number;
@@ -8,54 +9,39 @@ export interface ActivityDelta {
   words_learned?: number;
 }
 
-/** Local calendar date as YYYY-MM-DD (streaks are user-local by design). */
+/**
+ * The app's canonical timezone. The day boundary is Barcelona midnight for
+ * every user (Berlin shares the same clock), so daily XP and streaks roll
+ * over at the same instant for everyone. Writes get their date server-side
+ * in the record_activity RPC; this client-side mirror is for reads and the
+ * midnight rollover timer only.
+ */
+export const APP_TIMEZONE = "Europe/Madrid";
+
+// en-CA formats as YYYY-MM-DD, which is what Postgres `date` columns expect.
+const dateFormatter = new Intl.DateTimeFormat("en-CA", {
+  timeZone: APP_TIMEZONE,
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+});
+
+/** Calendar date as YYYY-MM-DD in Barcelona time. */
 export function localDate(d = new Date()): string {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
+  return dateFormatter.format(d);
 }
 
-export async function bumpDailyActivity(
+/** Today's activity row, or null when the user has not earned anything yet today. */
+export async function getTodayActivity(
   db: SupabaseClient,
   userId: string,
-  delta: ActivityDelta,
-): Promise<DailyActivityRow> {
-  const date = localDate();
-  const { data: existing, error: readError } = await db
-    .from("daily_activity")
-    .select("*")
-    .eq("user_id", userId)
-    .eq("date", date)
-    .maybeSingle();
-  if (readError) throw readError;
-
-  const row: DailyActivityRow = {
-    user_id: userId,
-    date,
-    xp: (existing?.xp ?? 0) + (delta.xp ?? 0),
-    reviews_done: (existing?.reviews_done ?? 0) + (delta.reviews_done ?? 0),
-    texts_read: (existing?.texts_read ?? 0) + (delta.texts_read ?? 0),
-    words_learned: (existing?.words_learned ?? 0) + (delta.words_learned ?? 0),
-  };
-  const { error } = await db.from("daily_activity").upsert(row);
-  if (error) throw error;
-  return row;
-}
-
-export async function getRecentActivity(
-  db: SupabaseClient,
-  userId: string,
-  days: number,
-): Promise<DailyActivityRow[]> {
-  const since = new Date();
-  since.setDate(since.getDate() - days);
+): Promise<DailyActivityRow | null> {
   const { data, error } = await db
     .from("daily_activity")
     .select("*")
     .eq("user_id", userId)
-    .gte("date", localDate(since))
-    .order("date", { ascending: false });
+    .eq("date", localDate())
+    .maybeSingle();
   if (error) throw error;
-  return data as DailyActivityRow[];
+  return (data as DailyActivityRow) ?? null;
 }

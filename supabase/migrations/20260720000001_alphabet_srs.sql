@@ -28,7 +28,7 @@ create policy "Users can update their own letters"
 create trigger set_updated_at
     before update on public.user_letters
     for each row
-    execute function public.set_current_timestamp_updated_at();
+    execute function public.touch_updated_at();
 
 -- Index for due reviews
 create index user_letters_due_idx on public.user_letters(user_id, due);

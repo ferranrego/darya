@@ -1,6 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { bumpDailyActivity, localDate, type ActivityDelta } from "./db/activity";
-import { getProfile, updateProfile } from "./db/profiles";
+import type { ActivityDelta } from "./db/activity";
 import type { ProfileRow } from "./db/types";
 
 /** XP awards: the only place point values live. */
@@ -11,38 +10,23 @@ export const XP = {
   alphabetUnit: 15,
 } as const;
 
-function yesterdayOf(date: string): string {
-  const d = new Date(`${date}T12:00:00`);
-  d.setDate(d.getDate() - 1);
-  return localDate(d);
-}
-
 /**
- * Record activity: bumps today's daily_activity row, adds XP to the profile,
- * and maintains the streak (any-activity day counts).
+ * Record activity via the record_activity RPC: one atomic call that bumps
+ * today's daily_activity row, adds XP, and maintains the streak. The day
+ * boundary (Barcelona midnight) is computed server-side, so device clocks
+ * can never write into the wrong day.
  */
 export async function recordActivity(
   db: SupabaseClient,
-  userId: string,
+  _userId: string,
   delta: ActivityDelta,
 ): Promise<ProfileRow> {
-  await bumpDailyActivity(db, userId, delta);
-  const profile = await getProfile(db, userId);
-  const today = localDate();
-
-  let { streak_current, streak_best } = profile;
-  if (profile.last_active_date !== today) {
-    streak_current =
-      profile.last_active_date === yesterdayOf(today) ? streak_current + 1 : 1;
-    streak_best = Math.max(streak_best, streak_current);
-  }
-
-  const patch = {
-    xp: profile.xp + (delta.xp ?? 0),
-    streak_current,
-    streak_best,
-    last_active_date: today,
-  };
-  await updateProfile(db, userId, patch);
-  return { ...profile, ...patch };
+  const { data, error } = await db.rpc("record_activity", {
+    xp_delta: delta.xp ?? 0,
+    reviews: delta.reviews_done ?? 0,
+    texts: delta.texts_read ?? 0,
+    words: delta.words_learned ?? 0,
+  });
+  if (error) throw error;
+  return data as ProfileRow;
 }

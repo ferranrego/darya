@@ -4,7 +4,7 @@ import { BookOpen, ChevronLeft, Flame, RotateCcw, SpellCheck } from "lucide-reac
 import Link from "next/link";
 import { ProgressRing } from "@/components/ui/progress-ring";
 import { alphabetCourse } from "@/lib/content/load";
-import { getRecentActivity } from "@/lib/db/activity";
+import { getTodayActivity } from "@/lib/db/activity";
 import {
   useAlphabetProgress,
   useProfile,
@@ -21,8 +21,7 @@ function useTodayXp() {
     queryKey: ["activity", user?.id],
     enabled: !!user,
     queryFn: async () => {
-      const rows = await getRecentActivity(db, user!.id, 1);
-      const today = rows[0];
+      const today = await getTodayActivity(db, user!.id);
       return today?.xp ?? 0;
     },
   });
