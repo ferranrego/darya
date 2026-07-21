@@ -15,6 +15,8 @@ export interface ProfileRow {
   can_read_script: boolean | null;
   level_estimate: string;
   onboarded_at: string | null;
+  chat_notifications: boolean;
+  last_chat_push_at: string | null;
   created_at: string;
 }
 
@@ -59,6 +61,16 @@ export interface AlphabetProgressRow {
   completed_at: string | null;
   correct: number;
   total: number;
+}
+
+export interface ChatMessageRow {
+  id: string;
+  user_id: string;
+  display_name: string;
+  body: string;
+  translit: string | null;
+  translation: string | null;
+  created_at: string;
 }
 
 export interface DailyActivityRow {

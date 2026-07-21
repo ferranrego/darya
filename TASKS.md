@@ -48,7 +48,7 @@
 - [x] Word popover (gloss, translit, add-to-learning)
 - [x] Text view with sentence translation reveal
 - [x] Home: continue reading / next text / daily goal ring
-- [x] Generation route: Gemini Flash → Groq → OpenRouter fallback, Zod-validated JSON, vocab-constraint verifier, Postgres cache
+- [x] Generation route: Groq → OpenRouter fallback, Zod-validated JSON, vocab-constraint verifier, Postgres cache
 - [x] Adaptive next-text logic (new-word ratio tunable per user)
 - [x] Pre-generation queue (3–5 texts ahead)
 
@@ -83,5 +83,4 @@
 - [x] Leaderboard (weekly XP + known words)
 - [x] Text library / reading history
 
-## Blocked on user
-- [ ] `GEMINI_API_KEY` in `.env.local` — get free key at https://aistudio.google.com/apikey (no card, cannot incur costs)
+

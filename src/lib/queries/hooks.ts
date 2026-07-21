@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getAlphabetProgress } from "../db/alphabet";
 import { getProfile } from "../db/profiles";
 import { getReadTexts, getTextsForLevel } from "../db/texts";
@@ -52,6 +52,31 @@ export function useWordStatusMap(): Map<string, WordStatus> | undefined {
     if (!data) return undefined;
     return new Map(data.map((w) => [w.lexeme_id, w.status]));
   }, [data]);
+}
+
+/** Current time as reactive state, re-read every `intervalMs`. */
+function useNow(intervalMs: number): number {
+  const [now, setNow] = useState(() => Date.now());
+  useEffect(() => {
+    const id = setInterval(() => setNow(Date.now()), intervalMs);
+    return () => clearInterval(id);
+  }, [intervalMs]);
+  return now;
+}
+
+/**
+ * How many learning words are due right now. Derived from the shared `user_words`
+ * query, so it costs no extra request. Ticks every minute so the Review badge
+ * appears as words come due, without a reload.
+ */
+export function useDueCount(): number {
+  const { data } = useUserWords();
+  const now = useNow(60_000);
+  return useMemo(() => {
+    if (!data) return 0;
+    return data.filter((w) => w.status === "learning" && w.due && new Date(w.due).getTime() <= now)
+      .length;
+  }, [data, now]);
 }
 
 export function useTextsForLevel(level: string | undefined) {

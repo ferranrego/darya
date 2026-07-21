@@ -17,6 +17,9 @@
   --new-tint: #efe9dd;
   --line: #e7e0d6;
   --danger: #b4543e;
+  /* Height of the fixed tab bar: content (57px) plus its safe-area padding.
+     Anything else pinned to the bottom offsets by this. */
+  --tab-bar-h: calc(57px + max(env(safe-area-inset-bottom), 12px));
 }
 
 @theme inline {

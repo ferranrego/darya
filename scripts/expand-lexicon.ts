@@ -1,5 +1,6 @@
 /**
- * Expand the lexicon using the HermitDave Persian frequency list and Gemini API.
+ * Expand the lexicon using the HermitDave Persian frequency list and Groq API.
+ * Falls back to OpenRouter if GROQ_API_KEY is not set.
  * 
  * Run: pnpm tsx scripts/expand-lexicon.ts
  */
@@ -14,7 +15,7 @@ import { normalizeDari, matchKey } from "../src/lib/text/normalize.ts";
 const outPath = join(import.meta.dirname, "data", "core-lexicon-4.txt");
 const lexiconJsonPath = join(import.meta.dirname, "..", "content", "lexicon", "lexicon.json");
 
-// Define schema for Gemini structured output
+// Define schema for structured output
 const batchResponseSchema = z.object({
   entries: z.array(z.object({
     dari: z.string(),
@@ -30,9 +31,33 @@ const batchResponseSchema = z.object({
   }))
 });
 
+async function callOpenAiCompatible(apiKey: string, baseUrl: string, model: string, prompt: string): Promise<string> {
+  const res = await fetch(`${baseUrl}/chat/completions`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model,
+      messages: [{ role: "user", content: prompt }],
+      temperature: 0.3,
+      response_format: { type: "json_object" },
+    }),
+  });
+  if (!res.ok) throw new Error(`API error: ${res.status} ${(await res.text()).slice(0, 200)}`);
+  const data = await res.json();
+  const text = data?.choices?.[0]?.message?.content;
+  if (!text) throw new Error("Empty response from API");
+  return text;
+}
+
 async function main() {
-  if (!process.env.GEMINI_API_KEY) {
-    console.error("GEMINI_API_KEY must be set in your environment.");
+  const groqKey = process.env.GROQ_API_KEY;
+  const openrouterKey = process.env.OPENROUTER_API_KEY;
+
+  if (!groqKey && !openrouterKey) {
+    console.error("GROQ_API_KEY or OPENROUTER_API_KEY must be set in your environment.");
     process.exit(1);
   }
 
@@ -123,30 +148,27 @@ Schema:
 }
 `;
 
-  console.log("Calling Gemini API...");
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-latest:generateContent?key=${process.env.GEMINI_API_KEY}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { 
-          responseMimeType: "application/json",
-          temperature: 0.3 
-        },
-      }),
-    }
-  );
+  let rawText: string | undefined;
 
-  if (!res.ok) {
-    console.error("API Error:", await res.text());
-    process.exit(1);
+  if (groqKey) {
+    console.log("Calling Groq API...");
+    rawText = await callOpenAiCompatible(
+      groqKey,
+      "https://api.groq.com/openai/v1",
+      process.env.GROQ_MODEL ?? "llama-3.3-70b-versatile",
+      prompt
+    );
+  } else if (openrouterKey) {
+    console.log("Calling OpenRouter API...");
+    rawText = await callOpenAiCompatible(
+      openrouterKey,
+      "https://openrouter.ai/api/v1",
+      process.env.OPENROUTER_MODEL ?? "meta-llama/llama-3.3-70b-instruct:free",
+      prompt
+    );
   }
 
-  const data = await res.json();
-  const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!rawText) throw new Error("Empty response from API");
+  if (!rawText) throw new Error("No API response");
 
   const parsed = batchResponseSchema.parse(JSON.parse(rawText));
   
@@ -174,7 +196,7 @@ Schema:
   }
 
   appendFileSync(outPath, linesOut.join("\n") + "\n");
-  console.log(`Appended ${linesOut.length} entries to core-lexicon-expanded.txt`);
+  console.log(`Appended ${linesOut.length} entries to ${outPath}`);
 }
 
 main().catch(console.error);

@@ -23,6 +23,7 @@ export async function updateProfile(
       | "can_read_script"
       | "level_estimate"
       | "onboarded_at"
+      | "chat_notifications"
     >
   >,
 ): Promise<void> {

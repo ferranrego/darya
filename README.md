@@ -11,7 +11,7 @@ infrastructure.
 ## Stack
 
 Next.js 16 · TypeScript · Tailwind v4 · Supabase (Postgres + Auth + RLS) ·
-`ts-fsrs` · Gemini Flash (→ Groq → OpenRouter fallback) · Vercel · PWA.
+`ts-fsrs` · Groq (→ OpenRouter fallback) · Vercel · PWA.
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/DESIGN.md](docs/DESIGN.md),
 [docs/MIGRATION.md](docs/MIGRATION.md), [docs/CONTENT-SCHEMA.md](docs/CONTENT-SCHEMA.md).
 
@@ -32,9 +32,8 @@ pnpm dev                          # http://localhost:3000
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project settings |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase publishable key |
 | `SUPABASE_SECRET_KEY` | Supabase secret key (server only) |
-| `GEMINI_API_KEY` | https://aistudio.google.com/apikey — **free, no card** |
-| `GROQ_API_KEY` | optional fallback, https://console.groq.com |
-| `OPENROUTER_API_KEY` | optional last-resort fallback |
+| `GROQ_API_KEY` | https://console.groq.com — free tier, primary AI provider |
+| `OPENROUTER_API_KEY` | https://openrouter.ai — free-tier fallback |
 
 Without an AI key the app still runs on the bundled seed texts; new texts are
 generated only once a learner exhausts the seed pool for their level.

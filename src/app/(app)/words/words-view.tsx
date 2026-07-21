@@ -6,9 +6,11 @@ import { lexemeById, levels } from "@/lib/content/load";
 import { useUserWords } from "@/lib/queries/hooks";
 import { KNOWN_STABILITY_DAYS } from "@/lib/srs/scheduler";
 
-export function WordsView() {
+type Filter = "categories" | "learning" | "known";
+
+export function WordsView({ initialFilter = "categories" }: { initialFilter?: Filter }) {
   const { data: words } = useUserWords();
-  const [filter, setFilter] = useState<"categories" | "learning" | "known">("categories");
+  const [filter, setFilter] = useState<Filter>(initialFilter);
 
   const cefrLevels = useMemo(() => {
     return levels.filter((l) => ["A1", "A2", "B1", "B2"].includes(l.cefrHint));

@@ -12,7 +12,7 @@ course — for a small circle of users on 100% free infrastructure.
 | State | TanStack Query (server state) + Zustand (ephemeral UI state) |
 | Data | Supabase (Postgres + Auth + RLS), SQL migrations in `supabase/migrations/` |
 | SRS | `ts-fsrs` (FSRS algorithm; we never hand-roll scheduling) |
-| AI | Gemini Flash free tier → Groq → OpenRouter `:free` fallback chain |
+| AI | Groq (primary, free tier) → OpenRouter (free-tier fallback) |
 | PWA | Hand-written service worker (`public/sw.js`) + web manifest |
 | Push | Web Push API (VAPID) with Declarative Web Push payloads for iOS ≥ 18.4 |
 
@@ -57,7 +57,7 @@ public/             ← manifest, sw.js, icons, self-hosted fonts
 
 ## Free-tier budget
 
-- Gemini Flash free tier: ~10 RPM / 1,500 req-day, no billing attached (cannot incur
+- Groq free tier: ~30 RPM / generous daily quota, no billing required
   cost). One text ≈ 1 request; caching + pre-generation keeps 3–5 users at
   a few dozen requests/day worst case.
 - Supabase free: 500 MB DB — lexicon + thousands of cached texts ≈ a few MB.

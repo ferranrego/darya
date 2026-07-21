@@ -94,22 +94,32 @@ self.addEventListener("push", (event) => {
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
   
-  const urlToOpen = event.notification.data?.url || "/";
+  // Payloads carry a path; compare against absolute URLs so an already-open
+  // window is reused instead of spawning a second copy of the PWA.
+  const urlToOpen = new URL(event.notification.data?.url || "/", self.location.origin).href;
 
   event.waitUntil(
-    clients.matchAll({ type: "window", includeUncontrolled: true }).then((windowClients) => {
-      // Check if there is already a window/tab open with the target URL
-      for (let i = 0; i < windowClients.length; i++) {
-        const client = windowClients[i];
-        // If so, just focus it.
+    (async () => {
+      const windowClients = await clients.matchAll({
+        type: "window",
+        includeUncontrolled: true,
+      });
+
+      for (const client of windowClients) {
         if (client.url === urlToOpen && "focus" in client) {
           return client.focus();
         }
       }
-      // If not, then open the target URL in a new window/tab.
-      if (clients.openWindow) {
-        return clients.openWindow(urlToOpen);
+
+      // Already open, but elsewhere in the app: focus it and navigate.
+      const existing = windowClients[0];
+      if (existing && "focus" in existing) {
+        await existing.focus();
+        if ("navigate" in existing) return existing.navigate(urlToOpen);
+        return;
       }
-    })
+
+      if (clients.openWindow) return clients.openWindow(urlToOpen);
+    })()
   );
 });

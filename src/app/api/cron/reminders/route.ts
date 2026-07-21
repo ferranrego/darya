@@ -58,7 +58,7 @@ export async function GET(req: Request) {
             JSON.stringify({
               title: "Keep your streak alive! 🔥",
               body: "You haven't practiced Dari today. Do a quick review now to keep your streak going!",
-              data: { url: "/home" },
+              data: { url: "/" },
             })
           );
           sent++;

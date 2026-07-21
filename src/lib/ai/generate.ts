@@ -5,11 +5,12 @@ import { CONTENT_FORMAT_VERSION, type LexiconEntry, type Level, type TextDocumen
 import { buildLexiconIndex } from "../text/lexicon-index";
 import { lexicon } from "../content/load";
 import { tokenizeDari } from "../text/normalize";
+import { completeJson } from "./providers";
 
 /**
- * AI text generation: one entry point, an ordered free-tier provider chain
- * (Gemini → Groq → OpenRouter), strict validation, and a vocabulary
- * verifier. Callers cache results in Postgres, so this module never bills.
+ * AI text generation: one entry point over the shared free-tier provider
+ * chain (see ./providers), strict validation, and a vocabulary verifier.
+ * Callers cache results in Postgres, so this module never bills.
  */
 
 const outputSchema = z.object({
@@ -66,76 +67,6 @@ Return ONLY JSON with this exact shape:
 }
 
 // ---------------------------------------------------------------------------
-// Providers
-// ---------------------------------------------------------------------------
-
-interface Provider {
-  name: string;
-  available: () => boolean;
-  call: (prompt: string) => Promise<string>;
-}
-
-const gemini: Provider = {
-  name: "gemini",
-  available: () => !!process.env.GEMINI_API_KEY,
-  async call(prompt) {
-    const model = process.env.GEMINI_MODEL ?? "gemini-flash-latest";
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-goog-api-key": process.env.GEMINI_API_KEY!,
-        },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { responseMimeType: "application/json", temperature: 0.8 },
-        }),
-      },
-    );
-    if (!res.ok) throw new Error(`gemini ${res.status}: ${(await res.text()).slice(0, 200)}`);
-    const data = await res.json();
-    const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (!text) throw new Error("gemini: empty response");
-    return text;
-  },
-};
-
-function openAiCompatible(name: string, baseUrl: string, keyEnv: string, modelEnv: string, defaultModel: string): Provider {
-  return {
-    name,
-    available: () => !!process.env[keyEnv],
-    async call(prompt) {
-      const res = await fetch(`${baseUrl}/chat/completions`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env[keyEnv]}`,
-        },
-        body: JSON.stringify({
-          model: process.env[modelEnv] ?? defaultModel,
-          messages: [{ role: "user", content: prompt }],
-          temperature: 0.8,
-          response_format: { type: "json_object" },
-        }),
-      });
-      if (!res.ok) throw new Error(`${name} ${res.status}: ${(await res.text()).slice(0, 200)}`);
-      const data = await res.json();
-      const text = data?.choices?.[0]?.message?.content;
-      if (!text) throw new Error(`${name}: empty response`);
-      return text;
-    },
-  };
-}
-
-const providers: Provider[] = [
-  gemini,
-  openAiCompatible("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "llama-3.3-70b-versatile"),
-  openAiCompatible("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", "OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free"),
-];
-
-// ---------------------------------------------------------------------------
 // Verification + assembly
 // ---------------------------------------------------------------------------
 
@@ -188,25 +119,15 @@ export function vocabHash(doc: TextDocument): string {
 }
 
 export async function generateText(req: GenerationRequest): Promise<TextDocument> {
-  const prompt = buildPrompt(req);
-  const errors: string[] = [];
-
-  for (const provider of providers) {
-    if (!provider.available()) continue;
-    for (let attempt = 0; attempt < 2; attempt++) {
-      try {
-        const rawText = await provider.call(prompt);
-        const parsed = outputSchema.parse(JSON.parse(rawText));
-        const { doc, oovRate } = assemble(parsed, req, provider.name);
-        if (oovRate > MAX_OOV_RATE) {
-          errors.push(`${provider.name}#${attempt}: OOV rate ${(oovRate * 100).toFixed(0)}%`);
-          continue;
-        }
-        return doc;
-      } catch (e) {
-        errors.push(`${provider.name}#${attempt}: ${e instanceof Error ? e.message : String(e)}`);
+  return completeJson(buildPrompt(req), {
+    temperature: 0.8,
+    validate: (raw, model) => {
+      const parsed = outputSchema.parse(JSON.parse(raw));
+      const { doc, oovRate } = assemble(parsed, req, model);
+      if (oovRate > MAX_OOV_RATE) {
+        throw new Error(`OOV rate ${(oovRate * 100).toFixed(0)}%`);
       }
-    }
-  }
-  throw new Error(`All providers failed: ${errors.join(" | ")}`);
+      return doc;
+    },
+  });
 }

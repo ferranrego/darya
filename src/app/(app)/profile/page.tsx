@@ -1,9 +1,9 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { Flame, LogOut, Trophy } from "lucide-react";
-import Link from "next/link";
+import { BarChart3, Flame, History, Library, LogOut, Trophy } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { ActionCard } from "@/components/ui/action-card";
 import { updateProfile } from "@/lib/db/profiles";
 import { useProfile, useSignOut, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
 import { useSettingsStore } from "@/lib/settings-store";
@@ -30,7 +30,11 @@ export default function ProfilePage() {
   const { isSupported, isSubscribed, isSubscribing, subscribe } = usePushSubscription();
 
   const patch = useMutation({
-    mutationFn: async (p: { new_word_ratio?: number; daily_goal?: number }) => {
+    mutationFn: async (p: {
+      new_word_ratio?: number;
+      daily_goal?: number;
+      chat_notifications?: boolean;
+    }) => {
       if (!user) return;
       await updateProfile(db, user.id, p);
     },
@@ -43,27 +47,11 @@ export default function ProfilePage() {
 
   return (
     <div className="flex flex-col gap-8">
-      <header className="pt-2 flex justify-between items-start">
-        <div>
-          <h1 className="text-[26px] font-semibold tracking-tight">{profile.display_name}</h1>
-          <p className="mt-1 text-[14px] text-ink-soft">
-            Level {profile.level_estimate.replace("L", "")} · {knownCount} words known · {profile.xp} XP
-          </p>
-        </div>
-        <div className="flex items-center gap-2">
-          <Link 
-            href="/history" 
-            className="text-[13px] font-medium text-ink-soft hover:text-ink transition-colors bg-surface border border-line px-3 py-1.5 rounded-full"
-          >
-            History
-          </Link>
-          <Link 
-            href="/stats" 
-            className="text-[13px] font-medium text-lapis hover:text-lapis-deep transition-colors bg-lapis-soft px-3 py-1.5 rounded-full"
-          >
-            Detailed Stats
-          </Link>
-        </div>
+      <header className="pt-2">
+        <h1 className="text-[26px] font-semibold tracking-tight">{profile.display_name}</h1>
+        <p className="mt-1 text-[14px] text-ink-soft">
+          Level {profile.level_estimate.replace("L", "")} · {knownCount} words known · {profile.xp} XP
+        </p>
       </header>
 
       <section className="grid grid-cols-2 gap-3">
@@ -81,6 +69,33 @@ export default function ProfilePage() {
             <p className="text-[12px] text-ink-soft">best streak</p>
           </div>
         </div>
+      </section>
+
+      <section className="flex flex-col gap-3">
+        <ActionCard
+          href="/words"
+          icon={<Library size={20} />}
+          title="My words"
+          subtitle={`${knownCount} known · browse by theme`}
+        />
+        <ActionCard
+          href="/leaderboard"
+          icon={<Trophy size={20} />}
+          title="Leaderboard"
+          subtitle="Top learners by total XP"
+        />
+        <ActionCard
+          href="/history"
+          icon={<History size={20} />}
+          title="History"
+          subtitle="Texts you have read"
+        />
+        <ActionCard
+          href="/stats"
+          icon={<BarChart3 size={20} />}
+          title="Detailed stats"
+          subtitle="Progress over time"
+        />
       </section>
 
       <section>
@@ -178,6 +193,23 @@ export default function ProfilePage() {
               </p>
             </button>
           </div>
+
+          {isSubscribed && (
+            <label className="mt-3 flex cursor-pointer items-center justify-between gap-4 rounded-2xl border border-line bg-surface px-4 py-3">
+              <span>
+                <span className="block text-[14px] font-medium">Chat messages</span>
+                <span className="block text-[13px] text-ink-soft">
+                  Tell me when someone writes in the chat room
+                </span>
+              </span>
+              <input
+                type="checkbox"
+                checked={profile.chat_notifications}
+                onChange={(e) => patch.mutate({ chat_notifications: e.target.checked })}
+                className="h-5 w-5 shrink-0 accent-lapis"
+              />
+            </label>
+          )}
         </section>
       )}
 

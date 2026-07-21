@@ -1,12 +1,14 @@
 "use client";
 
-import { BookOpen, ChevronLeft, Flame, RotateCcw, SpellCheck } from "lucide-react";
+import { BookOpen, Flame, RotateCcw, SpellCheck } from "lucide-react";
 import Link from "next/link";
+import { ActionCard } from "@/components/ui/action-card";
 import { ProgressRing } from "@/components/ui/progress-ring";
 import { alphabetCourse } from "@/lib/content/load";
 import { getTodayActivity } from "@/lib/db/activity";
 import {
   useAlphabetProgress,
+  useDueCount,
   useProfile,
   useSupabase,
   useUser,
@@ -27,52 +29,13 @@ function useTodayXp() {
   });
 }
 
-function ActionCard({
-  href,
-  icon,
-  title,
-  subtitle,
-  accent,
-}: {
-  href: string;
-  icon: React.ReactNode;
-  title: string;
-  subtitle: string;
-  accent?: boolean;
-}) {
-  return (
-    <Link
-      href={href}
-      className={`group flex items-center gap-4 rounded-2xl border p-4 transition-all duration-200 hover:shadow-[0_4px_16px_rgba(31,26,23,0.06)] ${
-        accent ? "border-lapis/25 bg-lapis-soft/60" : "border-line bg-surface"
-      }`}
-    >
-      <div
-        className={`flex size-11 shrink-0 items-center justify-center rounded-xl ${
-          accent ? "bg-lapis text-white" : "bg-paper text-lapis"
-        }`}
-      >
-        {icon}
-      </div>
-      <div className="min-w-0 flex-1">
-        <p className="text-[16px] font-medium">{title}</p>
-        <p className="truncate text-[13px] text-ink-soft">{subtitle}</p>
-      </div>
-      <ChevronLeft className="rotate-180 text-ink-faint transition-transform duration-200 group-hover:translate-x-0.5" size={18} />
-    </Link>
-  );
-}
-
 export default function HomePage() {
   const { data: profile } = useProfile();
   const { data: words } = useUserWords();
   const { data: todayXp = 0 } = useTodayXp();
   const { data: alphaProgress } = useAlphabetProgress();
+  const dueCount = useDueCount();
 
-  const now = Date.now();
-  const dueCount =
-    words?.filter((w) => w.status === "learning" && w.due && new Date(w.due).getTime() <= now)
-      .length ?? 0;
   const knownCount = words?.filter((w) => w.status === "known").length ?? 0;
   const learningCount = words?.filter((w) => w.status === "learning").length ?? 0;
 
@@ -137,14 +100,20 @@ export default function HomePage() {
       </section>
 
       <section className="grid grid-cols-2 gap-3">
-        <div className="rounded-2xl border border-line bg-surface p-4">
+        <Link
+          href="/words?filter=known"
+          className="rounded-2xl border border-line bg-surface p-4 transition-all duration-200 hover:shadow-[0_4px_16px_rgba(31,26,23,0.06)]"
+        >
           <p className="text-[26px] font-semibold tracking-tight text-sabz">{knownCount}</p>
           <p className="text-[13px] text-ink-soft">words known</p>
-        </div>
-        <div className="rounded-2xl border border-line bg-surface p-4">
+        </Link>
+        <Link
+          href="/words?filter=learning"
+          className="rounded-2xl border border-line bg-surface p-4 transition-all duration-200 hover:shadow-[0_4px_16px_rgba(31,26,23,0.06)]"
+        >
           <p className="text-[26px] font-semibold tracking-tight text-lapis">{learningCount}</p>
           <p className="text-[13px] text-ink-soft">words learning</p>
-        </div>
+        </Link>
       </section>
     </div>
   );

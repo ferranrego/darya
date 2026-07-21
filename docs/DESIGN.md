@@ -34,8 +34,9 @@ out of scope for v1 (light is the identity); revisit in Phase 2.
 
 - 4px base grid; generous defaults (sections 32–48, screen padding 20–24).
 - Mobile-first; reading column `max-width: 42rem` centered on desktop.
-- Bottom tab bar (Home · Read · Review · Profile), translucent blur — the **only**
-  glass surface in the app.
+- Bottom tab bar (Home · Read · Review · Chat · You), translucent blur — the **only**
+  glass surface in the app. Five destinations is the cap (iOS HIG / Material 3); anything
+  else lives in the You hub. Words and Leaderboard are reached from there and from Home.
 - Tap targets ≥ 44px; word tokens get invisible padding to reach it.
 
 ## Word-state language (core of the product)
@@ -59,6 +60,7 @@ Every animation has a job; if it has no objective, cut it.
 | Word learned | reward | sabz pulse 500ms |
 | Assessment words | invite tapping | staggered rise-in 30ms/word |
 | Streak/goal ring | progress feedback | ring sweep 600ms ease-in-out, once |
+| Tab indicator | "where am I" | pill slides between tabs, spring stiffness 400, damping 32, mass 0.8 |
 
 Respect `prefers-reduced-motion`: all of the above degrade to instant/opacity-only.
 
