@@ -2,7 +2,7 @@
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect } from "react";
-import { listRecentMessages, sendMessage } from "../db/chat";
+import { deleteMessage, listRecentMessages, sendMessage } from "../db/chat";
 import type { ChatMessageRow } from "../db/types";
 import type { EnrichMode } from "../chat/shared";
 import { useSupabase, useUser } from "./hooks";
@@ -45,6 +45,15 @@ export function useChatMessages() {
         { event: "INSERT", schema: "public", table: "chat_messages" },
         (payload) => upsert(payload.new as ChatMessageRow),
       )
+      .on(
+        "postgres_changes",
+        { event: "DELETE", schema: "public", table: "chat_messages" },
+        (payload) => {
+          qc.setQueryData<ChatMessageRow[]>(KEY, (old) =>
+            old ? old.filter((m) => m.id !== payload.old.id) : old
+          );
+        },
+      )
       // Enrichment fills translit/translation, so every reader gets the
       // cached result without asking for it again.
       .on(
@@ -72,6 +81,20 @@ export function useSendMessage() {
     onSuccess: (row) => {
       qc.setQueryData<ChatMessageRow[]>(KEY, (old) =>
         !old || old.some((m) => m.id === row.id) ? old : [...old, row],
+      );
+    },
+  });
+}
+
+export function useDeleteMessage() {
+  const db = useSupabase();
+  const qc = useQueryClient();
+
+  return useMutation({
+    mutationFn: (id: string) => deleteMessage(db, id),
+    onSuccess: (_, id) => {
+      qc.setQueryData<ChatMessageRow[]>(KEY, (old) =>
+        old ? old.filter((m) => m.id !== id) : old
       );
     },
   });

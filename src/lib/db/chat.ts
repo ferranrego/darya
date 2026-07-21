@@ -33,3 +33,11 @@ export async function sendMessage(
   if (error) throw error;
   return data as ChatMessageRow;
 }
+
+export async function deleteMessage(
+  db: SupabaseClient,
+  id: string,
+): Promise<void> {
+  const { error } = await db.from("chat_messages").delete().eq("id", id);
+  if (error) throw error;
+}

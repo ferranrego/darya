@@ -20,6 +20,30 @@ export function usePushSubscription() {
   const subscribe = useCallback(async () => {
     try {
       setIsSubscribing(true);
+
+      // Safari requires explicit permission request in a user gesture
+      // before we do any other asynchronous operations.
+      if ("Notification" in window) {
+        let permission = window.Notification.permission;
+        if (permission !== "granted") {
+          permission = await new Promise((resolve) => {
+            const req = window.Notification.requestPermission(resolve);
+            if (req && typeof req.then === "function") {
+              req.then(resolve);
+            }
+          });
+        }
+        if (permission !== "granted") {
+          throw new Error("Notification permission denied");
+        }
+      }
+
+      // Ensure SW is registered so that ready doesn't hang indefinitely
+      // if SwRegister was bypassed or failed.
+      if ("serviceWorker" in navigator) {
+        await navigator.serviceWorker.register("/sw.js");
+      }
+
       const reg = await navigator.serviceWorker.ready;
       
       let sub = await reg.pushManager.getSubscription();

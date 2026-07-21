@@ -1,10 +1,10 @@
 "use client";
 
-import { Languages, Loader2 } from "lucide-react";
+import { Languages, Loader2, Trash2 } from "lucide-react";
 import { useState } from "react";
 import { DARI_SCRIPT, type EnrichMode } from "@/lib/chat/shared";
 import type { ChatMessageRow } from "@/lib/db/types";
-import { useEnrichMessage } from "@/lib/queries/use-chat";
+import { useEnrichMessage, useDeleteMessage } from "@/lib/queries/use-chat";
 
 function timeOf(iso: string): string {
   return new Date(iso).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -28,6 +28,7 @@ export function MessageBubble({
 }) {
   const [open, setOpen] = useState<EnrichMode | null>(null);
   const enrich = useEnrichMessage();
+  const deleteMsg = useDeleteMessage();
 
   const isDari = DARI_SCRIPT.test(message.body);
   const pending = enrich.isPending && enrich.variables?.id === message.id;
@@ -52,29 +53,47 @@ export function MessageBubble({
         <span className="px-1 text-[13px] text-ink-soft">{message.display_name || "Anonymous"}</span>
       )}
 
-      <div
-        className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${
-          own ? "bg-lapis text-white" : "border border-line bg-surface text-ink"
-        }`}
-      >
-        <p
-          {...(isDari ? { lang: "prs" } : { dir: "auto" })}
-          className={`whitespace-pre-wrap break-words text-[16px] leading-relaxed ${
-            isDari ? "text-[19px]" : ""
+      <div className={`flex max-w-full items-center gap-2 ${own ? "flex-row-reverse" : ""}`}>
+        <div
+          className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${
+            own ? "bg-lapis text-white" : "border border-line bg-surface text-ink"
           }`}
         >
-          {message.body}
-        </p>
-
-        {(shown || pending || failed) && (
           <p
-            dir="auto"
-            className={`mt-2 border-t pt-2 text-[14px] italic ${
-              own ? "border-white/25 text-white/80" : "border-line text-ink-soft"
+            {...(isDari ? { lang: "prs" } : { dir: "auto" })}
+            className={`whitespace-pre-wrap break-words text-[16px] leading-relaxed ${
+              isDari ? "text-[19px]" : ""
             }`}
           >
-            {shown ?? (pending ? "Thinking..." : "Could not do that right now.")}
+            {message.body}
           </p>
+
+          {(shown || pending || failed) && (
+            <p
+              dir="auto"
+              className={`mt-2 border-t pt-2 text-[14px] italic ${
+                own ? "border-white/25 text-white/80" : "border-line text-ink-soft"
+              }`}
+            >
+              {shown ?? (pending ? "Thinking..." : "Could not do that right now.")}
+            </p>
+          )}
+        </div>
+
+        {own && (
+          <button
+            type="button"
+            onClick={() => deleteMsg.mutate(message.id)}
+            disabled={deleteMsg.isPending}
+            className="shrink-0 p-1.5 text-ink-faint/60 transition-colors hover:text-danger active:scale-95"
+            aria-label="Delete message"
+          >
+            {deleteMsg.isPending ? (
+              <Loader2 size={15} className="animate-spin" />
+            ) : (
+              <Trash2 size={15} />
+            )}
+          </button>
         )}
       </div>
 
