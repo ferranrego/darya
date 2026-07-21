@@ -25,11 +25,10 @@ for (const unit of data.units) {
     
     if (ex.type === "readWord") {
       if (ex.choices && ex.choices.length < 4) {
-         // pad choices
-         const needed = 4 - ex.choices.length;
-         for (let i = 0; i < needed; i++) {
-            ex.choices.push(ex.choices[0] + "z" + i); // dummy fallback
-         }
+         // Never auto-pad with fake choices — a padded choice derived from the
+         // correct answer once leaked into course.json as "mēwaz0" etc.
+         // Real distractors must be written by hand.
+         throw new Error(`readWord ${ex.id} has only ${ex.choices.length} choices; add real distractors manually`);
       }
     }
   }
