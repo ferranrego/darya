@@ -127,7 +127,16 @@ export default function WelcomePage() {
 
         <button
           type="button"
-          onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
+          onClick={() => {
+            if (mode === "signin") {
+              // New users without onboarding data should go through the
+              // onboarding wizard first; it sends them back here to sign up.
+              if (hasOnboardingData) setMode("signup");
+              else router.push("/onboarding");
+            } else {
+              setMode("signin");
+            }
+          }}
           className="mx-auto mt-6 block text-[14px] text-lapis hover:underline"
         >
           {mode === "signin" ? "New here? Create an account" : "Have an account? Sign in"}
