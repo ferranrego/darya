@@ -60,6 +60,6 @@ export const config = {
   // user routes, bearer secrets for the cron and chat-notify webhooks). Without
   // this, server-to-server calls with no cookie get redirected to /welcome.
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|icons|fonts|.*\\.(?:svg|png|jpg|webp|woff2)$).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|icons|fonts|.*\\.(?:svg|png|jpg|webp|webm|mp4|woff2)$).*)",
   ],
 };

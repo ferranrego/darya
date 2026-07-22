@@ -78,7 +78,7 @@ export default function OnboardingPage() {
               transition={{ delay: 0.1, type: "spring", stiffness: 260, damping: 18 }}
               className="mb-6 flex justify-center"
             >
-              <Poncha pose="wave" size={180} priority />
+              <Poncha pose="wave" size={180} priority animated />
             </motion.div>
             <p lang="prs" className="text-[56px] text-lapis">
               خوش آمدید
