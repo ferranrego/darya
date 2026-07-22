@@ -23,7 +23,8 @@ const POSES: Record<PonchaPose, { src: string; w: number; h: number; alt: string
  * VP9+alpha webm (Chrome/Firefox).
  */
 const ANIMATED: Partial<Record<PonchaPose, { webm: string; mp4: string; w: number; h: number }>> = {
-  wave: { webm: "/poncha/poncha-wave.webm", mp4: "/poncha/poncha-wave.mp4", w: 362, h: 512 },
+  // "-v2" busts device caches from the first encode, whose mp4 lacked alpha.
+  wave: { webm: "/poncha/poncha-wave-v2.webm", mp4: "/poncha/poncha-wave-v2.mp4", w: 362, h: 512 },
 };
 
 /** Poncha's name in Dari script — handy for captions and speech bubbles. */
