@@ -17,14 +17,14 @@ const POSES: Record<PonchaPose, { src: string; w: number; h: number; alt: string
 };
 
 /**
- * Poses that also have a looping video with a transparent background.
+ * Poses that also have a looping animation with a transparent background.
  * Generated via Higgsfield (Seedance 2.0) from the matching still, then keyed
- * out per-frame. Two encodes per pose: HEVC+alpha mp4 (hvc1, Safari) and
- * VP9+alpha webm (Chrome/Firefox).
+ * out per-frame. Encoded as a single animated WebP: alpha renders reliably in
+ * every modern browser via plain <img>, unlike HEVC-alpha video, which some
+ * iOS releases decode without its alpha layer (opaque white box).
  */
-const ANIMATED: Partial<Record<PonchaPose, { webm: string; mp4: string; w: number; h: number }>> = {
-  // "-v2" busts device caches from the first encode, whose mp4 lacked alpha.
-  wave: { webm: "/poncha/poncha-wave-v2.webm", mp4: "/poncha/poncha-wave-v2.mp4", w: 362, h: 512 },
+const ANIMATED: Partial<Record<PonchaPose, { src: string; w: number; h: number }>> = {
+  wave: { src: "/poncha/poncha-wave-anim.webp", w: 288, h: 384 },
 };
 
 /** Poncha's name in Dari script — handy for captions and speech bubbles. */
@@ -46,25 +46,19 @@ export function Poncha({
   className?: string;
 }) {
   const p = POSES[pose];
-  const video = animated ? ANIMATED[pose] : undefined;
-  if (video) {
+  const anim = animated ? ANIMATED[pose] : undefined;
+  if (anim) {
+    // Plain <img>: the Next image optimizer would re-encode away the frames.
     return (
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster={p.src}
-        width={video.w}
-        height={video.h}
-        aria-label={p.alt}
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={anim.src}
+        alt={p.alt}
+        width={anim.w}
+        height={anim.h}
         style={{ height: size, width: "auto" }}
         className={`pointer-events-none select-none ${className}`}
-      >
-        {/* hvc1 first: Safari needs HEVC for alpha; Chrome/Firefox skip to VP9. */}
-        <source src={video.mp4} type='video/mp4; codecs="hvc1"' />
-        <source src={video.webm} type="video/webm" />
-      </video>
+      />
     );
   }
   return (
