@@ -52,6 +52,10 @@ function buildPrompt(req: GenerationRequest): string {
   return `You are a Dari language teacher in Kabul writing a graded reader text in standard Afghan Dari (NOT Iranian Persian, use Dari vocabulary like مکتب، موتر، کلان and Kabuli usage).
 
 Write a short, warm, concrete text (${minS}-${maxS} sentences, ${req.level.sentenceLengthHint}) about everyday Afghan life.
+CRITICAL NARRATIVE RULES:
+- The text must tell a coherent story or explain something clearly.
+- Every sentence MUST be a logical continuation of the previous one. 
+- Ensure a natural flow that makes sense to the reader; do NOT just write a list of disconnected sentences.
 
 STRICT VOCABULARY CONSTRAINT:
 - You may ONLY use these words the learner already knows (any inflection of them is fine): ${known}
