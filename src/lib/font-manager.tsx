@@ -7,10 +7,9 @@ export function FontManager() {
   const readingFont = useSettingsStore((state) => state.readingFont);
 
   useEffect(() => {
-    if (readingFont === "scheherazade") {
-      document.documentElement.classList.add("use-scheherazade");
-    } else {
-      document.documentElement.classList.remove("use-scheherazade");
+    document.documentElement.classList.remove("use-scheherazade", "use-amiri", "use-lateef");
+    if (readingFont !== "vazirmatn") {
+      document.documentElement.classList.add(`use-${readingFont}`);
     }
   }, [readingFont]);
 

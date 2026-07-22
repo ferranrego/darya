@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation } from "@tanstack/react-query";
-import { Check, Languages } from "lucide-react";
+import { Check, Languages, Highlighter } from "lucide-react";
 import { motion } from "motion/react";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -19,6 +19,7 @@ import { WordSheet } from "./word-sheet";
 interface TappedWord {
   surface: string;
   lexemeId: string | null;
+  sentenceIndex?: number;
 }
 
 export function TextReader({
@@ -39,20 +40,25 @@ export function TextReader({
   const [tapCount, setTapCount] = useState(0);
   const [revealedEn, setRevealedEn] = useState<Set<number>>(new Set());
   const [showTranslit, setShowTranslit] = useState(false);
+  const [showSyntax, setShowSyntax] = useState(false);
   const [finished, setFinished] = useState(false);
 
   const segments = useMemo(() => doc.sentences.map(segmentSentence), [doc]);
 
   const startLearning = useMutation({
-    mutationFn: async (lexemeId: string) => {
+    mutationFn: async ({ lexemeId, sentenceIndex }: { lexemeId: string; sentenceIndex?: number }) => {
       if (!user) return;
       const card = newCard(new Date());
+      const sentence = sentenceIndex !== undefined ? doc.sentences[sentenceIndex] : undefined;
       await upsertUserWord(db, {
         user_id: user.id,
         lexeme_id: lexemeId,
         status: "learning",
         due: card.due.toISOString(),
         fsrs: card,
+        context_dari: sentence?.dari ?? null,
+        context_translit: sentence?.translit ?? null,
+        context_en: sentence?.en ?? null,
       });
       await recordActivity(db, user.id, { words_learned: 1 });
     },
@@ -60,14 +66,18 @@ export function TextReader({
   });
 
   const markKnown = useMutation({
-    mutationFn: async (lexemeId: string) => {
+    mutationFn: async ({ lexemeId, sentenceIndex }: { lexemeId: string; sentenceIndex?: number }) => {
       if (!user) return;
+      const sentence = sentenceIndex !== undefined ? doc.sentences[sentenceIndex] : undefined;
       await upsertUserWord(db, {
         user_id: user.id,
         lexeme_id: lexemeId,
         status: "known",
         due: null,
         fsrs: null,
+        context_dari: sentence?.dari ?? null,
+        context_translit: sentence?.translit ?? null,
+        context_en: sentence?.en ?? null,
       });
       // A word tapped this session was already counted toward words_learned;
       // reward the promotion with XP and leave the daily count untouched.
@@ -103,15 +113,15 @@ export function TextReader({
     },
   });
 
-  function handleTap(surface: string, lexemeId: string | null) {
+  function handleTap(surface: string, lexemeId: string | null, sentenceIndex: number) {
     if (!lexemeId) {
       const resolved = lexiconIndex().resolve(surface);
       if (resolved) lexemeId = resolved.id;
     }
-    setTapped({ surface, lexemeId });
+    setTapped({ surface, lexemeId, sentenceIndex });
     setTapCount((c) => c + 1);
     if (lexemeId && statusMap && !statusMap.has(lexemeId)) {
-      startLearning.mutate(lexemeId);
+      startLearning.mutate({ lexemeId, sentenceIndex });
     }
   }
 
@@ -173,18 +183,65 @@ export function TextReader({
             {doc.titleTranslit} · {doc.titleEn}
           </p>
         </div>
-        <button
-          type="button"
-          onClick={() => setShowTranslit((v) => !v)}
-          aria-pressed={showTranslit}
-          title="Show transliteration"
-          className={`mt-2 flex size-10 shrink-0 items-center justify-center rounded-full border transition-colors ${
-            showTranslit ? "border-lapis bg-lapis-soft text-lapis" : "border-line text-ink-faint hover:text-ink-soft"
-          }`}
-        >
-          <Languages size={18} />
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setShowSyntax((v) => !v)}
+            aria-pressed={showSyntax}
+            title="Toggle grammar highlighting"
+            className={`mt-2 flex size-10 shrink-0 items-center justify-center rounded-full border transition-colors ${
+              showSyntax ? "border-lapis bg-lapis-soft text-lapis" : "border-line text-ink-faint hover:text-ink-soft"
+            }`}
+          >
+            <Highlighter size={18} />
+          </button>
+          <button
+            type="button"
+            onClick={() => setShowTranslit((v) => !v)}
+            aria-pressed={showTranslit}
+            title="Show transliteration"
+            className={`mt-2 flex size-10 shrink-0 items-center justify-center rounded-full border transition-colors ${
+              showTranslit ? "border-lapis bg-lapis-soft text-lapis" : "border-line text-ink-faint hover:text-ink-soft"
+            }`}
+          >
+            <Languages size={18} />
+          </button>
+        </div>
       </header>
+
+      <div className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[13px] text-ink-soft">
+        <div className="flex items-center gap-2">
+          <span className="bg-new-tint rounded-md px-1.5 py-0.5 text-ink">New</span>
+          <span>Tap to discover</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="underline decoration-lapis decoration-2 underline-offset-4 font-medium px-1.5 py-0.5 text-ink">Learning</span>
+          <span>In progress</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="font-medium px-1.5 py-0.5 text-ink">Known</span>
+          <span>Mastered</span>
+        </div>
+      </div>
+
+      {showSyntax && (
+        <motion.div
+          initial={{ height: 0, opacity: 0, marginBottom: 0 }}
+          animate={{ height: "auto", opacity: 1, marginBottom: 24 }}
+          className="flex flex-wrap gap-x-4 gap-y-2 rounded-xl bg-surface-50 p-4 text-[13px] border border-line overflow-hidden"
+        >
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-red-500" />Verb</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-blue-500" />Noun</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-emerald-500" />Adjective</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-orange-500" />Adverb</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-purple-500" />Pronoun</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-teal-500" />Preposition</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-amber-500" />Conjunction</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-pink-500" />Particle</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-cyan-600" />Determiner</div>
+          <div className="flex items-center gap-2"><div className="size-2.5 rounded-full bg-indigo-500" />Numeral</div>
+        </motion.div>
+      )}
 
       <div className="flex flex-col gap-4">
         {doc.sentences.map((sentence, i) => (
@@ -205,7 +262,18 @@ export function TextReader({
                       }
                       return id ? (statusMap?.get(id) ?? "new") : "name";
                     })()}
-                    onTap={() => handleTap(seg.token.surface, seg.token.lexemeId)}
+                    onTap={() => handleTap(seg.token.surface, seg.token.lexemeId, i)}
+                    pos={(() => {
+                      if (!showSyntax) return undefined;
+                      let id = seg.token.lexemeId;
+                      if (!id) {
+                        const resolved = lexiconIndex().resolve(seg.token.surface);
+                        if (resolved) id = resolved.id;
+                      }
+                      if (!id) return undefined;
+                      const entry = lexemeById(id);
+                      return entry?.pos;
+                    })()}
                   />
                 ),
               )}
@@ -239,7 +307,7 @@ export function TextReader({
         surface={tapped?.surface ?? null}
         status={tappedStatus}
         onMarkKnown={() => {
-          if (tapped?.lexemeId) markKnown.mutate(tapped.lexemeId);
+          if (tapped?.lexemeId) markKnown.mutate({ lexemeId: tapped.lexemeId, sentenceIndex: tapped.sentenceIndex });
         }}
         onClose={() => setTapped(null)}
       />
@@ -251,24 +319,39 @@ function WordSpan({
   surface,
   status,
   onTap,
+  pos,
 }: {
   surface: string;
   status: "new" | "learning" | "known" | "name";
   onTap: () => void;
+  pos?: string;
 }) {
-  const cls =
+  const statusCls =
     status === "new"
       ? "bg-new-tint rounded-md"
       : status === "learning"
         ? "underline decoration-lapis decoration-2 underline-offset-8 font-medium"
         : status === "known"
-          ? "text-ink font-medium"
+          ? "font-medium"
           : "";
+
+  let posCls = "text-ink";
+  if (pos === "verb") posCls = "text-red-500 font-medium";
+  else if (pos === "noun") posCls = "text-blue-500";
+  else if (pos === "adjective") posCls = "text-emerald-500";
+  else if (pos === "adverb") posCls = "text-orange-500";
+  else if (pos === "pronoun") posCls = "text-purple-500 font-medium";
+  else if (pos === "preposition") posCls = "text-teal-500";
+  else if (pos === "conjunction") posCls = "text-amber-500";
+  else if (pos === "particle") posCls = "text-pink-500";
+  else if (pos === "determiner") posCls = "text-cyan-600";
+  else if (pos === "numeral") posCls = "text-indigo-500";
+
   return (
     <button
       type="button"
       onClick={onTap}
-      className={`-mx-0.5 inline cursor-pointer px-0.5 py-1 transition-colors duration-300 hover:text-lapis ${cls}`}
+      className={`-mx-0.5 inline cursor-pointer px-0.5 py-1 transition-colors duration-300 hover:opacity-80 ${statusCls} ${posCls}`}
     >
       {surface}
     </button>

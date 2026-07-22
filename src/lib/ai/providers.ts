@@ -1,4 +1,4 @@
-import "server-only";
+
 
 /**
  * The shared free-tier provider chain: an ordered list of OpenAI-compatible
@@ -22,24 +22,33 @@ function openAiCompatible(
     name,
     available: () => !!process.env[keyEnv],
     async call(prompt, temperature) {
-      const res = await fetch(`${baseUrl}/chat/completions`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env[keyEnv]}`,
-        },
-        body: JSON.stringify({
-          model: process.env[modelEnv] ?? defaultModel,
-          messages: [{ role: "user", content: prompt }],
-          temperature,
-          response_format: { type: "json_object" },
-        }),
-      });
-      if (!res.ok) throw new Error(`${name} ${res.status}: ${(await res.text()).slice(0, 200)}`);
-      const data = await res.json();
-      const text = data?.choices?.[0]?.message?.content;
-      if (!text) throw new Error(`${name}: empty response`);
-      return text;
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 20000); // 20s timeout
+      
+      try {
+        const res = await fetch(`${baseUrl}/chat/completions`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${process.env[keyEnv]}`,
+          },
+          body: JSON.stringify({
+            model: process.env[modelEnv] ?? defaultModel,
+            messages: [{ role: "user", content: prompt }],
+            temperature,
+            response_format: { type: "json_object" },
+          }),
+          signal: controller.signal,
+        });
+        
+        if (!res.ok) throw new Error(`${name} ${res.status}: ${(await res.text()).slice(0, 200)}`);
+        const data = await res.json();
+        const text = data?.choices?.[0]?.message?.content;
+        if (!text) throw new Error(`${name}: empty response`);
+        return text;
+      } finally {
+        clearTimeout(timeout);
+      }
     },
   };
 }

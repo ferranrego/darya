@@ -2,13 +2,23 @@
 
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { updateProfile } from "@/lib/db/profiles";
+import { seedKnownWords } from "@/lib/db/words";
 import { supabaseBrowser } from "@/lib/supabase/client";
 
 export default function WelcomePage() {
   const router = useRouter();
   const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const [hasOnboardingData, setHasOnboardingData] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && localStorage.getItem("darya_onboarding_data")) {
+      setHasOnboardingData(true);
+      setMode("signup");
+    }
+  }, []);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -33,6 +43,25 @@ export default function WelcomePage() {
       setBusy(false);
       return;
     }
+    
+    if (result.data.user) {
+      const storedData = localStorage.getItem("darya_onboarding_data");
+      if (storedData) {
+        try {
+          const parsed = JSON.parse(storedData);
+          await seedKnownWords(db, result.data.user.id, parsed.knownLexemeIds);
+          await updateProfile(db, result.data.user.id, {
+            can_read_script: parsed.canRead,
+            level_estimate: parsed.levelId,
+            onboarded_at: new Date().toISOString(),
+          });
+          localStorage.removeItem("darya_onboarding_data");
+        } catch (e) {
+          console.error("Failed to sync onboarding data", e);
+        }
+      }
+    }
+
     router.push("/");
     router.refresh();
   }
@@ -55,7 +84,9 @@ export default function WelcomePage() {
           </p>
           <h1 className="mt-1 text-[22px] font-semibold tracking-tight">Darya</h1>
           <p className="mt-2 text-[15px] text-ink-soft">
-            Learn Dari by reading, one word at a time.
+            {hasOnboardingData
+              ? "Create an account to save your progress."
+              : "Learn Dari by reading, one word at a time."}
           </p>
         </div>
 

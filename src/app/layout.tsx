@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Vazirmatn, Scheherazade_New } from "next/font/google";
+import { Inter, Vazirmatn, Scheherazade_New, Amiri, Lateef } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { MotionSetup } from "@/components/motion-config";
@@ -19,6 +19,18 @@ const scheherazade = Scheherazade_New({
   variable: "--font-scheherazade",
   subsets: ["arabic"],
   weight: ["400", "700"],
+});
+
+const amiri = Amiri({
+  variable: "--font-amiri",
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+});
+
+const lateef = Lateef({
+  variable: "--font-lateef",
+  subsets: ["arabic"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -49,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${vazirmatn.variable} ${scheherazade.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${vazirmatn.variable} ${scheherazade.variable} ${amiri.variable} ${lateef.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Providers>{children}</Providers>
         <SwRegister />

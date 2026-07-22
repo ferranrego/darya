@@ -35,6 +35,9 @@ export async function upsertUserWord(
     status: WordStatus;
     due: string | null;
     fsrs: Card | null;
+    context_dari?: string | null;
+    context_translit?: string | null;
+    context_en?: string | null;
   },
 ): Promise<void> {
   const { error } = await db.from("user_words").upsert(row);

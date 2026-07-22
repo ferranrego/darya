@@ -415,6 +415,8 @@ export const tokenSchema = z.object({
   surface: z.string().min(1),
   /** Lexeme this token resolves to; null for names/punct/unmatched. */
   lexemeId: z.string().nullable(),
+  /** Optional syntax role for color-coded grammar highlighting. */
+  syntaxRole: z.enum(["subject", "object", "verb"]).optional(),
 });
 
 export const sentenceSchema = z.object({

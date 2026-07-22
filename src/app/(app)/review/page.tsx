@@ -2,9 +2,9 @@
 
 import { useMutation } from "@tanstack/react-query";
 import { Check, RotateCcw, Sparkles, Brain, BookOpen, TrendingUp } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useMotionValue, useTransform, animate } from "motion/react";
 import { useRouter } from "next/navigation";
-import { useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState, useEffect } from "react";
 import { Poncha, type PonchaPose } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { lexemeById } from "@/lib/content/load";
@@ -19,6 +19,7 @@ import {
   reviveCard,
   type TwoButtonGrade,
 } from "@/lib/srs/scheduler";
+import { PracticeSession } from "@/components/exercises/practice-session";
 
 const SESSION_CAP = 40;
 
@@ -36,11 +37,35 @@ export default function ReviewPage() {
   const invalidate = useInvalidateLearning();
   const router = useRouter();
 
+  const [mode, setMode] = useState<"srs" | "practice">("srs");
+
   // Snapshot the queue once per session so grading doesn't reshuffle it.
   const [queue, setQueue] = useState<UserWordRow[] | null>(null);
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [exitDir, setExitDir] = useState<1 | -1>(1);
+
+  // Swipe animation values
+  const x = useMotionValue(0);
+  const rotate = useTransform(x, [-200, 200], [-10, 10]);
+  const opacityGotIt = useTransform(x, [0, 100], [0, 1]);
+  const opacityForgot = useTransform(x, [0, -100], [0, 1]);
+
+  useEffect(() => {
+    x.set(0);
+  }, [index, queue, x]);
+
+  useEffect(() => {
+    if (revealed) {
+      const hasSeen = localStorage.getItem("hasSeenSwipeHint");
+      if (!hasSeen) {
+        setTimeout(() => {
+          animate(x, [0, -15, 20, -15, 0], { duration: 0.5 });
+          localStorage.setItem("hasSeenSwipeHint", "true");
+        }, 300);
+      }
+    }
+  }, [revealed, x]);
 
   // Persistent session stats
   const statsRef = useRef<SessionStats>({
@@ -59,9 +84,11 @@ export default function ReviewPage() {
       .slice(0, SESSION_CAP);
   }, [words]);
 
-  if (queue === null && due !== null) {
-    setQueue(due);
-  }
+  useEffect(() => {
+    if (queue === null && due !== null) {
+      setQueue(due);
+    }
+  }, [queue, due]);
 
   const grade = useMutation({
     mutationFn: async ({ row, g }: { row: UserWordRow; g: TwoButtonGrade }) => {
@@ -115,12 +142,19 @@ export default function ReviewPage() {
 
   if (queue.length === 0) {
     return (
-      <EmptyState
-        poncha="sleep"
-        icon={<Check size={24} />}
-        title="All caught up"
-        body="Nothing due right now — Poncha's taking a nap. Read something new and tapped words will show up here."
-      />
+      <div className="flex flex-1 flex-col">
+        <SegmentedControl mode={mode} setMode={setMode} />
+        {mode === "practice" ? (
+          <PracticeSession onFinish={() => router.push("/")} />
+        ) : (
+          <EmptyState
+            poncha="sleep"
+            icon={<Check size={24} />}
+            title="All caught up"
+            body="Nothing due right now — Poncha's taking a nap. Try a Practice session!"
+          />
+        )}
+      </div>
     );
   }
 
@@ -152,31 +186,83 @@ export default function ReviewPage() {
 
   return (
     <div className="flex flex-1 flex-col">
-      <div className="mb-6 flex items-center gap-3 pt-2">
-        <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-line/70">
-          <div
-            className="h-full rounded-full bg-lapis transition-all duration-300"
-            style={{ width: `${(index / queue.length) * 100}%` }}
-          />
-        </div>
-        <span className="text-[13px] tabular-nums text-ink-faint">
-          {index + 1}/{queue.length}
-        </span>
-      </div>
+      <SegmentedControl mode={mode} setMode={setMode} />
+      
+      {mode === "practice" ? (
+        <PracticeSession onFinish={() => setMode("srs")} />
+      ) : (
+        <div className="flex flex-1 flex-col">
+          <div className="mb-6 flex items-center gap-3 pt-2 px-4">
+            <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-line/70">
+              <div
+                className="h-full rounded-full bg-lapis transition-all duration-300"
+                style={{ width: `${(index / queue.length) * 100}%` }}
+              />
+            </div>
+            <span className="text-[13px] tabular-nums text-ink-faint">
+              {index + 1}/{queue.length}
+            </span>
+          </div>
 
       <div className="relative flex flex-1 items-center justify-center">
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" onExitComplete={() => x.set(0)}>
           <motion.div
             key={`${row.lexeme_id}-${index}`}
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, x: exitDir * 60, transition: { duration: 0.2 } }}
             transition={{ duration: 0.22, ease: "easeOut" }}
-            className="w-full max-w-md rounded-3xl border border-line bg-surface px-8 py-12 text-center shadow-[0_2px_20px_rgba(31,26,23,0.05)]"
+            style={{ x, rotate }}
+            drag={revealed ? "x" : false}
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.6}
+            onDragEnd={(e, { offset, velocity }) => {
+              const swipePower = Math.abs(offset.x) * velocity.x;
+              if (offset.x > 100 || swipePower > 500) {
+                answer("got_it");
+              } else if (offset.x < -100 || swipePower < -500) {
+                answer("forgot");
+              } else {
+                animate(x, 0, { type: "spring", stiffness: 300, damping: 20 });
+              }
+            }}
+            className="w-full max-w-md rounded-3xl border border-line bg-surface px-8 py-12 text-center shadow-[0_2px_20px_rgba(31,26,23,0.05)] relative overflow-hidden"
           >
-            <p lang="prs" className="text-[52px] leading-snug">
-              {entry.dari}
-            </p>
+            {/* Swipe Overlays */}
+            {revealed && (
+              <>
+                <motion.div style={{ opacity: opacityGotIt }} className="pointer-events-none absolute inset-0 bg-sabz-soft/40 flex items-center justify-center z-20">
+                  <span className="text-sabz font-bold text-2xl uppercase tracking-widest bg-surface/90 px-5 py-2.5 rounded-2xl shadow-sm border border-sabz/20">Got it</span>
+                </motion.div>
+                <motion.div style={{ opacity: opacityForgot }} className="pointer-events-none absolute inset-0 bg-red-500/10 flex items-center justify-center z-20">
+                  <span className="text-red-500 font-bold text-2xl uppercase tracking-widest bg-surface/90 px-5 py-2.5 rounded-2xl shadow-sm border border-red-500/20">Forgot</span>
+                </motion.div>
+              </>
+            )}
+
+            <div className="relative z-10">
+              {row.context_dari ? (
+                <p lang="prs" className="text-[28px] leading-[2.1] cursor-default select-none">
+                  {(() => {
+                    // Try to highlight the base word if it matches exactly
+                    const parts = row.context_dari!.split(new RegExp(`(${entry.dari})`, "i"));
+                    if (parts.length > 1) {
+                      return parts.map((part, i) =>
+                        part.toLowerCase() === entry.dari.toLowerCase() ? (
+                          <span key={i} className="text-lapis font-semibold">{part}</span>
+                        ) : (
+                          <span key={i}>{part}</span>
+                        )
+                      );
+                    }
+                    return row.context_dari;
+                  })()}
+                </p>
+              ) : (
+                <p lang="prs" className="text-[52px] leading-snug cursor-default select-none">
+                  {entry.dari}
+                </p>
+              )}
             <AnimatePresence mode="wait">
               {revealed ? (
                 <motion.div
@@ -186,14 +272,33 @@ export default function ReviewPage() {
                   transition={{ duration: 0.2 }}
                   className="mt-4"
                 >
-                  <p className="text-[16px] text-ink-soft">{entry.translit}</p>
-                  <p className="mt-2 text-[22px] font-medium">{entry.glossEn}</p>
-                  <div className="mt-6 rounded-2xl bg-paper px-4 py-3">
-                    <p lang="prs" className="text-[18px] leading-loose">
-                      {entry.exampleDari}
-                    </p>
-                    <p className="mt-0.5 text-[12px] text-ink-faint">{entry.exampleEn}</p>
-                  </div>
+                  <p className="text-[16px] text-ink-soft">
+                    {row.context_translit || entry.translit}
+                  </p>
+                  <p className="mt-2 text-[22px] font-medium">
+                    {row.context_en || entry.glossEn}
+                  </p>
+                  
+                  {/* If we showed context, still show the dictionary definition to clarify the exact word */}
+                  {row.context_dari && (
+                    <div className="mt-6 flex flex-col items-center rounded-2xl bg-lapis-soft/30 px-6 py-3 border border-lapis/20">
+                      <span lang="prs" className="text-[40px] font-bold text-lapis-dark mb-1">{entry.dari}</span>
+                      <div className="flex items-center gap-2 text-[16px] text-lapis-dark/80">
+                        <span>{entry.translit}</span>
+                        <span className="opacity-40">•</span>
+                        <span className="font-medium">{entry.glossEn}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {!row.context_dari && (
+                    <div className="mt-6 rounded-2xl bg-paper px-4 py-3">
+                      <p lang="prs" className="text-[18px] leading-loose">
+                        {entry.exampleDari}
+                      </p>
+                      <p className="mt-0.5 text-[12px] text-ink-faint">{entry.exampleEn}</p>
+                    </div>
+                  )}
                 </motion.div>
               ) : (
                 <motion.p
@@ -206,6 +311,7 @@ export default function ReviewPage() {
                 </motion.p>
               )}
             </AnimatePresence>
+            </div>
           </motion.div>
         </AnimatePresence>
       </div>
@@ -234,9 +340,11 @@ export default function ReviewPage() {
             <Button size="lg" className="w-full" onClick={() => setRevealed(true)}>
               Show answer
             </Button>
-          </div>
-        )}
+            </div>
+          )}
+        </div>
       </div>
+      )}
     </div>
   );
 }
@@ -365,7 +473,38 @@ function EmptyState({
         <div className="flex size-14 items-center justify-center rounded-full bg-sabz-soft text-sabz">{icon}</div>
       )}
       <h2 className="mt-6 text-[20px] font-semibold">{title}</h2>
-      <p className="mx-auto mt-2 max-w-xs text-[14px] leading-relaxed text-ink-soft">{body}</p>
+      <p className="mt-2 text-[15px] text-ink-soft max-w-[280px]">{body}</p>
+    </div>
+  );
+}
+
+function SegmentedControl({ mode, setMode }: { mode: "srs" | "practice", setMode: (m: "srs" | "practice") => void }) {
+  return (
+    <div className="p-4 w-full flex justify-center pb-2">
+      <div className="bg-surface border border-line rounded-full p-1 flex gap-1 shadow-sm w-full max-w-xs relative">
+        <button
+          onClick={() => setMode("srs")}
+          className={`flex-1 py-2.5 px-4 text-sm font-medium rounded-full transition-colors z-10 ${
+            mode === "srs" ? "text-ink" : "text-ink-soft hover:text-ink"
+          }`}
+        >
+          Flashcards
+        </button>
+        <button
+          onClick={() => setMode("practice")}
+          className={`flex-1 py-2.5 px-4 text-sm font-medium rounded-full transition-colors z-10 ${
+            mode === "practice" ? "text-ink" : "text-ink-soft hover:text-ink"
+          }`}
+        >
+          Practice
+        </button>
+        
+        {/* Sliding Indicator */}
+        <div 
+          className="absolute top-1 bottom-1 left-1 w-[calc(50%-6px)] bg-paper rounded-full shadow-sm border border-line z-0 transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]"
+          style={{ transform: `translateX(${mode === "srs" ? "0%" : "calc(100% + 4px)"})` }}
+        />
+      </div>
     </div>
   );
 }

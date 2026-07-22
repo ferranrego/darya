@@ -45,3 +45,19 @@ export async function getTodayActivity(
   if (error) throw error;
   return (data as DailyActivityRow) ?? null;
 }
+
+/** Get activity history for the user over the last N days. */
+export async function getHistoryActivity(
+  db: SupabaseClient,
+  userId: string,
+  limitDays: number = 365,
+): Promise<DailyActivityRow[]> {
+  const { data, error } = await db
+    .from("daily_activity")
+    .select("*")
+    .eq("user_id", userId)
+    .order("date", { ascending: false })
+    .limit(limitDays);
+  if (error) throw error;
+  return (data as DailyActivityRow[]) ?? [];
+}

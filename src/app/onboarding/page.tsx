@@ -55,15 +55,27 @@ export default function OnboardingPage() {
    * still lands in the alphabet course but with the right words already known.
    */
   async function finishAssessment() {
-    if (!user) return;
     setBusy(true);
     const scored = scoreAssessment(words, selected, lexicon.entries);
-    await seedKnownWords(db, user.id, scored.knownLexemeIds);
-    await updateProfile(db, user.id, {
-      can_read_script: canRead,
-      level_estimate: scored.levelId,
-      onboarded_at: new Date().toISOString(),
-    });
+    
+    if (user) {
+      await seedKnownWords(db, user.id, scored.knownLexemeIds);
+      await updateProfile(db, user.id, {
+        can_read_script: canRead,
+        level_estimate: scored.levelId,
+        onboarded_at: new Date().toISOString(),
+      });
+    } else {
+      localStorage.setItem(
+        "darya_onboarding_data",
+        JSON.stringify({
+          canRead,
+          levelId: scored.levelId,
+          knownLexemeIds: scored.knownLexemeIds,
+        })
+      );
+    }
+    
     setResult(scored);
     setBusy(false);
     setStep("result");
@@ -105,6 +117,15 @@ export default function OnboardingPage() {
             <Button size="lg" className="mt-10" onClick={startWizard}>
               Let's begin
             </Button>
+            {!user && (
+              <button
+                type="button"
+                onClick={() => router.push("/welcome")}
+                className="mx-auto mt-6 block text-[14px] font-medium text-ink-soft hover:text-ink transition-colors"
+              >
+                Already have an account? Sign in
+              </button>
+            )}
           </motion.div>
         )}
 
@@ -259,8 +280,12 @@ export default function OnboardingPage() {
                 <Button
                   size="lg"
                   onClick={() => {
-                    router.push("/read");
-                    router.refresh();
+                    if (!user) {
+                      router.push("/welcome");
+                    } else {
+                      router.push("/read");
+                      router.refresh();
+                    }
                   }}
                 >
                   Start reading
@@ -277,8 +302,12 @@ export default function OnboardingPage() {
                   <Button
                     size="lg"
                     onClick={() => {
-                      router.push("/alphabet");
-                      router.refresh();
+                      if (!user) {
+                        router.push("/welcome");
+                      } else {
+                        router.push("/alphabet");
+                        router.refresh();
+                      }
                     }}
                   >
                     Start the alphabet course

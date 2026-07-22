@@ -66,6 +66,27 @@ body {
   font-family: var(--font-scheherazade), "Noto Naskh Arabic", serif;
 }
 
+.use-amiri [lang="prs"] {
+  font-family: var(--font-amiri), "Noto Naskh Arabic", serif;
+}
+
+.use-lateef [lang="prs"] {
+  font-family: var(--font-lateef), "Noto Naskh Arabic", serif;
+}
+
+.font-vazirmatn {
+  font-family: var(--font-vazirmatn), "Noto Naskh Arabic", serif !important;
+}
+.font-scheherazade {
+  font-family: var(--font-scheherazade), "Noto Naskh Arabic", serif !important;
+}
+.font-amiri {
+  font-family: var(--font-amiri), "Noto Naskh Arabic", serif !important;
+}
+.font-lateef {
+  font-family: var(--font-lateef), "Noto Naskh Arabic", serif !important;
+}
+
 ::selection {
   background: var(--lapis-soft);
 }

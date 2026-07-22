@@ -4,6 +4,8 @@ import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { useAlphabetProgress, useProfile, useUserWords } from "@/lib/queries/hooks";
 import { levels } from "@/lib/content/load";
+import { VocabChart } from "./vocab-chart";
+import { ActivityHeatmap } from "./heatmap";
 
 export default function StatsPage() {
   const { data: profile } = useProfile();
@@ -63,26 +65,7 @@ export default function StatsPage() {
             <p className="text-[13px] text-ink-soft">Learning words</p>
           </div>
         </div>
-        <div className="mt-4 pt-4 border-t border-line">
-          <div className="flex justify-between items-end mb-2">
-            <span className="text-[13px] font-medium text-ink-soft">Total vocabulary size</span>
-            <span className="text-[15px] font-semibold">{totalWords}</span>
-          </div>
-          <div className="h-2 w-full bg-line rounded-full overflow-hidden flex">
-            {totalWords > 0 && (
-              <>
-                <div 
-                  className="h-full bg-lapis" 
-                  style={{ width: `${(knownCount / totalWords) * 100}%` }} 
-                />
-                <div 
-                  className="h-full bg-saffron" 
-                  style={{ width: `${(learningCount / totalWords) * 100}%` }} 
-                />
-              </>
-            )}
-          </div>
-        </div>
+        <VocabChart knownCount={knownCount} learningCount={learningCount} startTimestamp={startTimestamp} />
       </section>
 
       <section className="grid grid-cols-2 gap-4">
@@ -103,6 +86,7 @@ export default function StatsPage() {
             <span className="text-[14px] text-ink-soft">Current Level Estimate</span>
             <span className="text-[15px] font-medium px-2 py-0.5 bg-lapis-soft text-lapis rounded-md">
               {profile.level_estimate.replace("L", "Level ")}
+              {currentLevelIdx >= 0 ? ` (${levels[currentLevelIdx].cefrHint === 'pre-A1' ? 'pre-A1' : levels[currentLevelIdx].cefrHint.toUpperCase()})` : ""}
             </span>
           </div>
 
@@ -120,6 +104,7 @@ export default function StatsPage() {
             <span className="text-[15px] font-medium">{profile.streak_best} days</span>
           </div>
         </div>
+        <ActivityHeatmap />
       </section>
     </div>
   );

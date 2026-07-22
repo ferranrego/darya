@@ -1,13 +1,12 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BarChart3, Flame, History, Library, LogOut, Trophy } from "lucide-react";
+import { BarChart3, Flame, Library, LogOut, Trophy } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { ActionCard } from "@/components/ui/action-card";
 import { updateProfile } from "@/lib/db/profiles";
 import { useProfile, useSignOut, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
 import { useSettingsStore } from "@/lib/settings-store";
-import { FSRS_PARAMETERS } from "@/lib/srs/scheduler";
 import { usePushSubscription } from "@/lib/use-push-subscription";
 
 const RATIOS = [
@@ -17,6 +16,13 @@ const RATIOS = [
 ] as const;
 
 const GOALS = [15, 30, 60] as const;
+
+const FONTS = [
+  { id: "vazirmatn", label: "Vazirmatn", desc: "Modern UI" },
+  { id: "scheherazade", label: "Scheherazade", desc: "Traditional Naskh" },
+  { id: "amiri", label: "Amiri", desc: "Classic Serif" },
+  { id: "lateef", label: "Lateef", desc: "Elegant Naskh" },
+] as const;
 
 export default function ProfilePage() {
   const db = useSupabase();
@@ -86,12 +92,6 @@ export default function ProfilePage() {
           subtitle="Top learners by total XP"
         />
         <ActionCard
-          href="/history"
-          icon={<History size={20} />}
-          title="History"
-          subtitle="Texts you have read"
-        />
-        <ActionCard
           href="/stats"
           icon={<BarChart3 size={20} />}
           title="Detailed stats"
@@ -153,19 +153,21 @@ export default function ProfilePage() {
           Choose the font for reading Dari texts.
         </p>
         <div className="mt-3 grid grid-cols-2 gap-2">
-          {(["vazirmatn", "scheherazade"] as const).map((font) => {
-            const active = readingFont === font;
+          {FONTS.map((font) => {
+            const active = readingFont === font.id;
             return (
               <button
-                key={font}
+                key={font.id}
                 type="button"
-                onClick={() => setReadingFont(font)}
+                onClick={() => setReadingFont(font.id)}
                 aria-pressed={active}
-                className={`rounded-2xl border px-3 py-3 text-center transition-all duration-200 ${
+                className={`flex flex-col items-center justify-center rounded-2xl border px-3 py-3 text-center transition-all duration-200 ${
                   active ? "border-lapis bg-lapis-soft text-lapis" : "border-line bg-surface hover:border-ink-faint"
                 }`}
               >
-                <p className="text-[14px] font-medium capitalize">{font === "vazirmatn" ? "Vazirmatn (Default)" : "Scheherazade New"}</p>
+                <p className="text-[14px] font-medium">{font.label}</p>
+                <p className={`text-[11px] ${active ? "text-lapis/70" : "text-ink-faint"}`}>{font.desc}</p>
+                <p className={`mt-2 text-[26px] font-${font.id}`} lang="prs" dir="rtl">زبان دری</p>
               </button>
             );
           })}
@@ -229,23 +231,6 @@ export default function ProfilePage() {
           )}
         </section>
       )}
-
-      <section>
-        <h2 className="text-[15px] font-semibold">Spaced Repetition (FSRS) Parameters</h2>
-        <p className="mt-0.5 text-[13px] text-ink-soft">
-          Current parameters used by the spaced repetition scheduler.
-        </p>
-        <div className="mt-3 rounded-2xl border border-line bg-surface p-4">
-          <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-[13px]">
-            <dt className="font-medium text-ink-soft">Request Retention</dt>
-            <dd>{FSRS_PARAMETERS.request_retention}</dd>
-            <dt className="font-medium text-ink-soft">Maximum Interval</dt>
-            <dd>{FSRS_PARAMETERS.maximum_interval} days</dd>
-            <dt className="font-medium text-ink-soft">Weights</dt>
-            <dd className="font-mono text-[11px] text-ink-soft break-all">{FSRS_PARAMETERS.w.join(", ")}</dd>
-          </dl>
-        </div>
-      </section>
 
       <button
         type="button"

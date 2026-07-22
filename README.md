@@ -8,7 +8,9 @@ By reading adaptive, AI-generated texts tailored to your exact vocabulary level,
 
 - **📖 Adaptive Reading:** AI-generated texts are dynamically created to contain roughly ~2–10% new vocabulary based on your known words.
 - **👆 Tap-to-Learn:** Simply tap any word to see its gloss, transliteration, and instantly add it to your learning queue.
-- **🧠 FSRS Spaced Repetition:** Built-in flashcard system using the modern Free Spaced Repetition Scheduler (FSRS). Review new words with a minimal two-button interface.
+- **🎨 Syntax Highlighting & Legends:** Visual aids including part-of-speech color-coding in texts and intuitive legends indicating word mastery states (To Discover, Learning, Known).
+- **🧠 FSRS Spaced Repetition:** Built-in flashcard system using the modern Free Spaced Repetition Scheduler (FSRS). Includes context-rich cards with prominent target words, transliterations, and translation hints.
+- **🧩 Interactive Exercises:** Practice sessions featuring dynamically generated cloze deletions, sentence unscrambling, grammar detective challenges, and cultural realia reading comprehension.
 - **🔤 Alphabet Course:** Complete interactive course for non-readers to learn the Perso-Arabic script from scratch.
 - **🎮 Gamification & Streaks:** Daily goals, XP tracking, and streak reminders keep you consistent.
 - **📱 PWA & Offline Support:** Installable on iOS/Android with offline support for reading and reviewing.
@@ -79,10 +81,10 @@ pnpm seed              # Push the lexicon and seed texts to Supabase
 
 Darya is continually evolving. Some exciting features on the horizon include:
 
+- **Sentence-Level SRS**: Contextual flashcards testing vocabulary inside previously read sentences.
+- **Data Visualization & UX**: Upgraded stats page with bezier curves and heatmaps, plus celebratory milestone animations.
+- **Text-Based Roleplay**: Chatbots constrained to the user's exact known vocabulary.
 - **Audio Integration:** Word and sentence audio using high-quality TTS.
-- **Richer Analytics:** More detailed statistics on reading speed and word retention.
-- **Social Features:** Weekly leaderboards and reading history sharing.
-- **Custom Font Toggles:** Allowing users to switch reading fonts.
 
 ## 🤝 Contributing
 Contributions are welcome! Whether it's fixing bugs, improving the UI, or adding new seed texts, please feel free to fork the repository, make your changes, and submit a pull request. 

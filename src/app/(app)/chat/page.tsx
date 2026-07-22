@@ -65,6 +65,7 @@ export default function ChatPage() {
           <div className="relative">
             <span
               lang="prs"
+              dir="rtl"
               className="absolute -right-3 -top-2 rounded-2xl rounded-br-sm border border-line bg-paper px-3 py-1 text-[20px] text-lapis shadow-[0_2px_8px_rgba(31,26,23,0.06)]"
             >
               سلام

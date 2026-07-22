@@ -1,6 +1,6 @@
 "use client";
 
-import { Blocks, BookOpen, Flame, RotateCcw, SpellCheck } from "lucide-react";
+import { Blocks, BookOpen, Flame, Map, RotateCcw, SpellCheck, BarChart2 } from "lucide-react";
 import Link from "next/link";
 import { ActionCard } from "@/components/ui/action-card";
 import { ProgressRing } from "@/components/ui/progress-ring";
@@ -79,14 +79,23 @@ export default function HomePage() {
           </p>
           <h1 className="mt-1 text-[26px] font-semibold tracking-tight">Salām, {firstName}</h1>
         </div>
-        <div
-          className={`flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[15px] font-semibold ${
-            (profile?.streak_current ?? 0) > 0 ? "bg-saffron-soft text-saffron" : "bg-paper text-ink-faint border border-line"
-          }`}
-          title="Day streak"
-        >
-          <Flame size={17} />
-          {profile?.streak_current ?? 0}
+        <div className="flex items-center gap-2">
+          <Link
+            href="/stats"
+            className="flex items-center justify-center rounded-full bg-paper border border-line w-9 h-9 text-ink-soft hover:text-ink hover:bg-surface transition-colors"
+            title="View Stats"
+          >
+            <BarChart2 size={18} />
+          </Link>
+          <div
+            className={`flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-[15px] font-semibold h-9 ${
+              (profile?.streak_current ?? 0) > 0 ? "bg-saffron-soft text-saffron" : "bg-paper text-ink-faint border border-line"
+            }`}
+            title="Day streak"
+          >
+            <Flame size={17} />
+            {profile?.streak_current ?? 0}
+          </div>
         </div>
       </header>
 
@@ -109,6 +118,12 @@ export default function HomePage() {
             accent
           />
         )}
+        <ActionCard
+          href="/journey"
+          icon={<Map size={20} />}
+          title="Journey Map"
+          subtitle="Visualize your learning path"
+        />
         <ActionCard
           href="/grammar"
           icon={<Blocks size={20} />}

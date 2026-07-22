@@ -1,0 +1,47 @@
+
+> dariapp@0.1.0 dev
+> next dev -p 4000
+
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:4000
+- Network:       http://192.168.8.215:4000
+- Environments: .env.local
+✓ Ready in 328ms
+⚠ turbopack.root should be absolute, using: /Users/ferran/repositories/dariapp
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+=== API GENERATE EXERCISES START ===
+User not found or unauthorized
+ POST /api/generate/exercises 401 in 671ms (next.js: 242ms, application-code: 429ms)
+ GET / 200 in 1327ms (next.js: 102ms, proxy.ts: 394ms, application-code: 831ms)
+ GET /profile 200 in 193ms (next.js: 29ms, proxy.ts: 151ms, application-code: 13ms)
+=== API GENERATE EXERCISES START ===
+DEV BYPASS: Using user from db: 5cf9f6a3-158b-4b32-9e99-727a95181096
+Profile not found
+ POST /api/generate/exercises 400 in 359ms (next.js: 4ms, application-code: 354ms)
+ GET /stats 200 in 197ms (next.js: 26ms, proxy.ts: 156ms, application-code: 15ms)
+ GET / 200 in 268ms (next.js: 7ms, proxy.ts: 238ms, application-code: 23ms)
+=== API GENERATE EXERCISES START ===
+DEV BYPASS: Using user from db: 5cf9f6a3-158b-4b32-9e99-727a95181096
+⨯ ReferenceError: srv is not defined
+    at POST (src/app/api/generate/exercises/route.ts:30:5)
+  28 |
+  29 |   const [{ data: profile }, { data: words }] = await Promise.all([
+> 30 |     srv.from("profiles").select("level_estimate").eq("id", user.id).single(),
+     |     ^
+  31 |     srv.from("user_words").select("lexeme_id,status").eq("user_id", user.id),
+  32 |   ]);
+  33 |   if (!profile) {
+ POST /api/generate/exercises 500 in 459ms (next.js: 6ms, application-code: 454ms)
+ GET /journey 200 in 1480ms (next.js: 1321ms, proxy.ts: 137ms, application-code: 22ms)
+ GET / 200 in 231ms (next.js: 6ms, proxy.ts: 204ms, application-code: 21ms)
+ GET /review 200 in 242ms (next.js: 58ms, proxy.ts: 165ms, application-code: 19ms)
+User found from auth: 3adb2c02-3d87-4d10-8119-f79518048e94
+Profile level: L1 Words count: 6
+Not enough vocab. Known: 4
+ POST /api/generate/exercises 400 in 345ms (next.js: 5ms, application-code: 340ms)
+DEV BYPASS: Using user from db: 5cf9f6a3-158b-4b32-9e99-727a95181096
+Profile level: L1 Words count: 0
+Not enough vocab. Known: 0
+ POST /api/generate/exercises 400 in 295ms (next.js: 3ms, application-code: 291ms)
+[?25h

@@ -45,7 +45,7 @@ export function MessageBubble({
 
   return (
     <div
-      className={`flex flex-col gap-1 ${own ? "items-end" : "items-start"} ${
+      className={`flex flex-col gap-1 w-full ${
         groupStart ? "mt-3" : "mt-0.5"
       }`}
     >
@@ -53,16 +53,17 @@ export function MessageBubble({
         <span className="px-1 text-[13px] text-ink-soft">{message.display_name || "Anonymous"}</span>
       )}
 
-      <div className={`flex max-w-full items-center gap-2 ${own ? "flex-row-reverse" : ""}`}>
+      <div className={`flex w-full items-center gap-2 ${own ? "flex-row-reverse" : ""}`}>
         <div
           className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${
             own ? "bg-lapis text-white" : "border border-line bg-surface text-ink"
           }`}
         >
           <p
-            {...(isDari ? { lang: "prs" } : { dir: "auto" })}
-            className={`whitespace-pre-wrap break-words text-[16px] leading-relaxed ${
-              isDari ? "text-[19px]" : ""
+            lang={isDari ? "prs" : undefined}
+            dir="auto"
+            className={`whitespace-pre-wrap text-[16px] leading-relaxed ${
+              isDari ? "text-[19px] break-normal" : "break-words"
             }`}
           >
             {message.body}
@@ -98,7 +99,7 @@ export function MessageBubble({
       </div>
 
       {showFooter && (
-        <div className={`flex items-center gap-2 px-1 ${own ? "flex-row-reverse" : ""}`}>
+        <div className={`flex w-full items-center gap-2 px-1 ${own ? "flex-row-reverse" : ""}`}>
           {showTime && (
             <span className="text-[11px] text-ink-faint">{timeOf(message.created_at)}</span>
           )}

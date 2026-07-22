@@ -88,6 +88,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       const entry = index.resolve(surface);
       if (entry) vocab.add(entry.id);
       if (!entry || !allowed.has(entry.id)) oov++;
+      
       return { surface, lexemeId: entry?.id ?? null };
     });
     return { dari: s.dari, translit: s.translit, en: s.en, tokens };

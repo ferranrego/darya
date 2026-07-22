@@ -27,6 +27,9 @@ export interface UserWordRow {
   status: WordStatus;
   due: string | null;
   fsrs: Card | null;
+  context_dari: string | null;
+  context_translit: string | null;
+  context_en: string | null;
   created_at: string;
   updated_at: string;
 }
@@ -89,4 +92,22 @@ export interface DailyActivityRow {
   reviews_done: number;
   texts_read: number;
   words_learned: number;
+}
+
+export type ExerciseType = "cloze" | "unscramble" | "realia" | "grammar_detective";
+
+export interface ExerciseRow {
+  id: string;
+  type: ExerciseType;
+  data: any; // Stored as jsonb, can be typed more specifically later
+  lexeme_ids: string[];
+  level: string;
+  created_at: string;
+}
+
+export interface UserExerciseRow {
+  user_id: string;
+  exercise_id: string;
+  completed_at: string;
+  is_correct: boolean;
 }
