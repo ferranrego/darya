@@ -1,0 +1,542 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "formatVersion": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "const": "prs"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "blocks": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^gb-\\d{2}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subtitle": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lessons": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^gl-\\d{2}$"
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "subtitle": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "grammarPoint": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "grammarPointEn": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "slides": {
+                  "minItems": 1,
+                  "maxItems": 5,
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "title": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "body": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "examples": {
+                        "minItems": 1,
+                        "maxItems": 4,
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "dari": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "translit": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "en": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "highlight": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "dari",
+                            "translit",
+                            "en"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "table": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "prefixItems": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "title",
+                      "body",
+                      "examples"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "exercises": {
+                  "minItems": 6,
+                  "maxItems": 12,
+                  "type": "array",
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "hint": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string",
+                            "const": "fillBlank"
+                          },
+                          "dari": {
+                            "type": "string",
+                            "pattern": "^[^_]*___[^_]*$"
+                          },
+                          "translit": {
+                            "type": "string",
+                            "pattern": "^[^_]*___[^_]*$"
+                          },
+                          "en": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "answer": {
+                            "type": "object",
+                            "properties": {
+                              "dari": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "translit": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "dari",
+                              "translit"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "distractors": {
+                            "minItems": 2,
+                            "maxItems": 4,
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "dari": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "translit": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "dari",
+                                "translit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "type",
+                          "dari",
+                          "translit",
+                          "en",
+                          "answer",
+                          "distractors"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "hint": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string",
+                            "const": "buildSentence"
+                          },
+                          "en": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "words": {
+                            "minItems": 2,
+                            "maxItems": 8,
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "dari": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "translit": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "dari",
+                                "translit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "translit": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "extraWords": {
+                            "default": [],
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "dari": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "translit": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "dari",
+                                "translit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "type",
+                          "en",
+                          "words",
+                          "translit",
+                          "extraWords"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "hint": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string",
+                            "const": "chooseTranslation"
+                          },
+                          "direction": {
+                            "type": "string",
+                            "enum": [
+                              "toEn",
+                              "toDari"
+                            ]
+                          },
+                          "dari": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "translit": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "en": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "distractorsEn": {
+                            "default": [],
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "distractorsDari": {
+                            "default": [],
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "dari": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "translit": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "dari",
+                                "translit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "type",
+                          "direction",
+                          "dari",
+                          "translit",
+                          "en",
+                          "distractorsEn",
+                          "distractorsDari"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "hint": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string",
+                            "const": "matchPairs"
+                          },
+                          "prompt": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "pairs": {
+                            "minItems": 3,
+                            "maxItems": 5,
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "dari": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "translit": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "en": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "dari",
+                                "translit",
+                                "en"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "type",
+                          "prompt",
+                          "pairs"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "hint": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string",
+                            "const": "spotError"
+                          },
+                          "dari": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "translit": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "en": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "errorWord": {
+                            "type": "object",
+                            "properties": {
+                              "dari": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "translit": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "dari",
+                              "translit"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "correction": {
+                            "type": "object",
+                            "properties": {
+                              "dari": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "translit": {
+                                "type": "string",
+                                "minLength": 1
+                              }
+                            },
+                            "required": [
+                              "dari",
+                              "translit"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "type",
+                          "dari",
+                          "translit",
+                          "en",
+                          "errorWord",
+                          "correction"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "subtitle",
+                "grammarPoint",
+                "grammarPointEn",
+                "slides",
+                "exercises"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "subtitle",
+          "lessons"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "formatVersion",
+    "language",
+    "level",
+    "blocks"
+  ],
+  "additionalProperties": false
+}

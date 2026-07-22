@@ -1,0 +1,3175 @@
+{
+  "formatVersion": "1.3.0",
+  "language": "prs",
+  "level": "A1",
+  "blocks": [
+    {
+      "id": "gb-01",
+      "title": "First Sentences",
+      "subtitle": "Say who and what things are",
+      "lessons": [
+        {
+          "id": "gl-01",
+          "title": "I am, you are",
+          "subtitle": "Six pronouns and the verb 'to be'",
+          "grammarPoint": "pronouns-budan",
+          "grammarPointEn": "Personal pronouns (man, tu, ō, mā, shumā, ānhā) with the present of 'to be': hastam, hasti, ast, hastēm, hastēd, hastand; the verb always comes last.",
+          "slides": [
+            {
+              "id": "gs-01-1",
+              "title": "Six little words",
+              "body": "Every Dari sentence starts with who it is about. These six pronouns cover everyone.",
+              "table": [
+                [
+                  "man — من",
+                  "I"
+                ],
+                [
+                  "tu — تو",
+                  "you"
+                ],
+                [
+                  "ō — او",
+                  "he / she"
+                ],
+                [
+                  "mā — ما",
+                  "we"
+                ],
+                [
+                  "shumā — شما",
+                  "you (polite)"
+                ],
+                [
+                  "ānhā — آنها",
+                  "they"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "من شاگرد هستم",
+                  "translit": "man shāgerd hastam",
+                  "en": "I am a student.",
+                  "highlight": "من"
+                }
+              ]
+            },
+            {
+              "id": "gs-01-2",
+              "title": "The verb 'to be'",
+              "body": "Each pronoun pairs with its own form of 'to be'. Learn these six and you can already build real sentences.",
+              "table": [
+                [
+                  "man",
+                  "hastam"
+                ],
+                [
+                  "tu",
+                  "hasti"
+                ],
+                [
+                  "ō / īn / ān",
+                  "ast"
+                ],
+                [
+                  "mā",
+                  "hastēm"
+                ],
+                [
+                  "shumā",
+                  "hastēd"
+                ],
+                [
+                  "ānhā",
+                  "hastand"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "من معلم هستم",
+                  "translit": "man mu'allem hastam",
+                  "en": "I am a teacher.",
+                  "highlight": "هستم"
+                },
+                {
+                  "dari": "تو شاگرد هستی",
+                  "translit": "tu shāgerd hasti",
+                  "en": "You are a student.",
+                  "highlight": "هستی"
+                },
+                {
+                  "dari": "او دوست است",
+                  "translit": "ō dōst ast",
+                  "en": "He is a friend.",
+                  "highlight": "است"
+                }
+              ]
+            },
+            {
+              "id": "gs-01-3",
+              "title": "The verb goes last",
+              "body": "English says 'I am a teacher'. Dari says 'I teacher am' — the verb always closes the sentence.",
+              "examples": [
+                {
+                  "dari": "ما دوست هستیم",
+                  "translit": "mā dōst hastēm",
+                  "en": "We are friends.",
+                  "highlight": "هستیم"
+                },
+                {
+                  "dari": "شما معلم هستید",
+                  "translit": "shumā mu'allem hastēd",
+                  "en": "You are teachers.",
+                  "highlight": "هستید"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-01-1",
+              "type": "fillBlank",
+              "dari": "من شاگرد ___",
+              "translit": "man shāgerd ___",
+              "en": "I am a student.",
+              "answer": {
+                "dari": "هستم",
+                "translit": "hastam"
+              },
+              "distractors": [
+                {
+                  "dari": "هستی",
+                  "translit": "hasti"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                },
+                {
+                  "dari": "هستند",
+                  "translit": "hastand"
+                }
+              ]
+            },
+            {
+              "id": "ge-01-2",
+              "type": "fillBlank",
+              "dari": "تو دوست ___",
+              "translit": "tu dōst ___",
+              "en": "You are a friend.",
+              "answer": {
+                "dari": "هستی",
+                "translit": "hasti"
+              },
+              "distractors": [
+                {
+                  "dari": "هستم",
+                  "translit": "hastam"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                },
+                {
+                  "dari": "هستیم",
+                  "translit": "hastēm"
+                }
+              ]
+            },
+            {
+              "id": "ge-01-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "او معلم است",
+              "translit": "ō mu'allem ast",
+              "en": "He is a teacher.",
+              "distractorsEn": [
+                "I am a teacher.",
+                "You are a teacher."
+              ]
+            },
+            {
+              "id": "ge-01-4",
+              "type": "fillBlank",
+              "dari": "ما شاگرد ___",
+              "translit": "mā shāgerd ___",
+              "en": "We are students.",
+              "answer": {
+                "dari": "هستیم",
+                "translit": "hastēm"
+              },
+              "distractors": [
+                {
+                  "dari": "هستم",
+                  "translit": "hastam"
+                },
+                {
+                  "dari": "هستند",
+                  "translit": "hastand"
+                },
+                {
+                  "dari": "هستید",
+                  "translit": "hastēd"
+                }
+              ]
+            },
+            {
+              "id": "ge-01-5",
+              "type": "buildSentence",
+              "en": "I am a teacher.",
+              "words": [
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "معلم",
+                  "translit": "mu'allem"
+                },
+                {
+                  "dari": "هستم",
+                  "translit": "hastam"
+                }
+              ],
+              "translit": "man mu'allem hastam",
+              "extraWords": [
+                {
+                  "dari": "هستی",
+                  "translit": "hasti"
+                }
+              ]
+            },
+            {
+              "id": "ge-01-6",
+              "type": "matchPairs",
+              "prompt": "Match the pronouns",
+              "pairs": [
+                {
+                  "dari": "من",
+                  "translit": "man",
+                  "en": "I"
+                },
+                {
+                  "dari": "تو",
+                  "translit": "tu",
+                  "en": "you"
+                },
+                {
+                  "dari": "ما",
+                  "translit": "mā",
+                  "en": "we"
+                },
+                {
+                  "dari": "آنها",
+                  "translit": "ānhā",
+                  "en": "they"
+                }
+              ]
+            },
+            {
+              "id": "ge-01-7",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "آنها شاگرد هستند",
+              "translit": "ānhā shāgerd hastand",
+              "en": "They are students.",
+              "distractorsDari": [
+                {
+                  "dari": "ما شاگرد هستیم",
+                  "translit": "mā shāgerd hastēm"
+                },
+                {
+                  "dari": "او شاگرد است",
+                  "translit": "ō shāgerd ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-01-8",
+              "type": "fillBlank",
+              "dari": "شما معلم ___",
+              "translit": "shumā mu'allem ___",
+              "en": "You (plural) are teachers.",
+              "answer": {
+                "dari": "هستید",
+                "translit": "hastēd"
+              },
+              "distractors": [
+                {
+                  "dari": "هستند",
+                  "translit": "hastand"
+                },
+                {
+                  "dari": "هستی",
+                  "translit": "hasti"
+                },
+                {
+                  "dari": "هستم",
+                  "translit": "hastam"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-02",
+          "title": "This and that",
+          "subtitle": "Point at the world with īn, ān, here and there",
+          "grammarPoint": "demonstratives",
+          "grammarPointEn": "Demonstratives īn (this) and ān (that) with ast; the question īn chīst? (what is this?); īnjā (here) and ānjā (there).",
+          "slides": [
+            {
+              "id": "gs-02-1",
+              "title": "īn and ān",
+              "body": "īn points at something near you, ān at something far away. Both take ast, like ō.",
+              "examples": [
+                {
+                  "dari": "این کتاب است",
+                  "translit": "īn ketāb ast",
+                  "en": "This is a book.",
+                  "highlight": "این"
+                },
+                {
+                  "dari": "آن خانه است",
+                  "translit": "ān khāna ast",
+                  "en": "That is a house.",
+                  "highlight": "آن"
+                }
+              ]
+            },
+            {
+              "id": "gs-02-2",
+              "title": "What is this?",
+              "body": "che (what) + ast squeezes into one word: chīst. It is the question you will ask most as a learner.",
+              "examples": [
+                {
+                  "dari": "این چیست؟",
+                  "translit": "īn chīst?",
+                  "en": "What is this?",
+                  "highlight": "چیست"
+                },
+                {
+                  "dari": "این قلم است",
+                  "translit": "īn qalam ast",
+                  "en": "It is a pen."
+                }
+              ]
+            },
+            {
+              "id": "gs-02-3",
+              "title": "Here and there",
+              "body": "īnjā means here, ānjā means there. They slot in right before the verb.",
+              "examples": [
+                {
+                  "dari": "کتاب اینجا است",
+                  "translit": "ketāb īnjā ast",
+                  "en": "The book is here.",
+                  "highlight": "اینجا"
+                },
+                {
+                  "dari": "مکتب آنجا است",
+                  "translit": "maktab ānjā ast",
+                  "en": "The school is there.",
+                  "highlight": "آنجا"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-02-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "این کتاب است",
+              "translit": "īn ketāb ast",
+              "en": "This is a book.",
+              "distractorsEn": [
+                "That is a book.",
+                "This is a pen."
+              ]
+            },
+            {
+              "id": "ge-02-2",
+              "type": "fillBlank",
+              "dari": "___ قلم است",
+              "translit": "___ qalam ast",
+              "en": "This is a pen.",
+              "answer": {
+                "dari": "این",
+                "translit": "īn"
+              },
+              "distractors": [
+                {
+                  "dari": "آن",
+                  "translit": "ān"
+                },
+                {
+                  "dari": "او",
+                  "translit": "ō"
+                }
+              ]
+            },
+            {
+              "id": "ge-02-3",
+              "type": "fillBlank",
+              "dari": "این چای ___",
+              "translit": "īn chāy ___",
+              "en": "This is tea.",
+              "answer": {
+                "dari": "است",
+                "translit": "ast"
+              },
+              "distractors": [
+                {
+                  "dari": "هستم",
+                  "translit": "hastam"
+                },
+                {
+                  "dari": "هستی",
+                  "translit": "hasti"
+                }
+              ]
+            },
+            {
+              "id": "ge-02-4",
+              "type": "buildSentence",
+              "en": "That is a house.",
+              "words": [
+                {
+                  "dari": "آن",
+                  "translit": "ān"
+                },
+                {
+                  "dari": "خانه",
+                  "translit": "khāna"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "ān khāna ast",
+              "extraWords": [
+                {
+                  "dari": "این",
+                  "translit": "īn"
+                }
+              ]
+            },
+            {
+              "id": "ge-02-5",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "این چیست؟",
+              "translit": "īn chīst?",
+              "en": "What is this?",
+              "distractorsDari": [
+                {
+                  "dari": "آن چیست؟",
+                  "translit": "ān chīst?"
+                },
+                {
+                  "dari": "این کتاب است",
+                  "translit": "īn ketāb ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-02-6",
+              "type": "matchPairs",
+              "prompt": "Match the pointing words",
+              "pairs": [
+                {
+                  "dari": "این",
+                  "translit": "īn",
+                  "en": "this"
+                },
+                {
+                  "dari": "آن",
+                  "translit": "ān",
+                  "en": "that"
+                },
+                {
+                  "dari": "اینجا",
+                  "translit": "īnjā",
+                  "en": "here"
+                },
+                {
+                  "dari": "آنجا",
+                  "translit": "ānjā",
+                  "en": "there"
+                }
+              ]
+            },
+            {
+              "id": "ge-02-7",
+              "type": "fillBlank",
+              "dari": "___ سیب است",
+              "translit": "___ sēb ast",
+              "en": "That is an apple.",
+              "answer": {
+                "dari": "آن",
+                "translit": "ān"
+              },
+              "distractors": [
+                {
+                  "dari": "این",
+                  "translit": "īn"
+                },
+                {
+                  "dari": "او",
+                  "translit": "ō"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-03",
+          "title": "Asking questions",
+          "subtitle": "Question words, yes and no",
+          "grammarPoint": "question-words",
+          "grammarPointEn": "Question words che (what), kī (who), kujā (where), chetōr (how), chand (how many); yes/no questions are made by intonation alone and answered with balē (yes) or na (no).",
+          "slides": [
+            {
+              "id": "gs-03-1",
+              "title": "The question words",
+              "body": "Five words unlock most beginner questions. They sit where the answer would go — the verb still comes last.",
+              "table": [
+                [
+                  "che — چی",
+                  "what"
+                ],
+                [
+                  "kī — کی",
+                  "who"
+                ],
+                [
+                  "kujā — کجا",
+                  "where"
+                ],
+                [
+                  "chetōr — چطور",
+                  "how"
+                ],
+                [
+                  "chand — چند",
+                  "how many"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "تو کجا هستی؟",
+                  "translit": "tu kujā hasti?",
+                  "en": "Where are you?",
+                  "highlight": "کجا"
+                },
+                {
+                  "dari": "او کی است؟",
+                  "translit": "ō kī ast?",
+                  "en": "Who is he?",
+                  "highlight": "کی"
+                }
+              ]
+            },
+            {
+              "id": "gs-03-2",
+              "title": "Yes or no",
+              "body": "To ask a yes/no question, keep the words exactly the same and raise your voice at the end. (In formal Dari you may hear āyā at the start.) Answer with balē — yes, or na — no.",
+              "examples": [
+                {
+                  "dari": "تو معلم هستی؟",
+                  "translit": "tu mu'allem hasti?",
+                  "en": "Are you a teacher?"
+                },
+                {
+                  "dari": "بلی، من معلم هستم",
+                  "translit": "balē, man mu'allem hastam",
+                  "en": "Yes, I am a teacher.",
+                  "highlight": "بلی"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-03-1",
+              "type": "fillBlank",
+              "dari": "تو ___ هستی؟",
+              "translit": "tu ___ hasti?",
+              "en": "Where are you?",
+              "answer": {
+                "dari": "کجا",
+                "translit": "kujā"
+              },
+              "distractors": [
+                {
+                  "dari": "چی",
+                  "translit": "che"
+                },
+                {
+                  "dari": "کی",
+                  "translit": "kī"
+                }
+              ]
+            },
+            {
+              "id": "ge-03-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "او کی است؟",
+              "translit": "ō kī ast?",
+              "en": "Who is he?",
+              "distractorsEn": [
+                "What is this?",
+                "Where is he?"
+              ]
+            },
+            {
+              "id": "ge-03-3",
+              "type": "fillBlank",
+              "dari": "این ___ است؟",
+              "translit": "īn ___ ast?",
+              "en": "What is this?",
+              "answer": {
+                "dari": "چی",
+                "translit": "che"
+              },
+              "distractors": [
+                {
+                  "dari": "کجا",
+                  "translit": "kujā"
+                },
+                {
+                  "dari": "کی",
+                  "translit": "kī"
+                }
+              ]
+            },
+            {
+              "id": "ge-03-4",
+              "type": "buildSentence",
+              "en": "Where is the house?",
+              "words": [
+                {
+                  "dari": "خانه",
+                  "translit": "khāna"
+                },
+                {
+                  "dari": "کجا",
+                  "translit": "kujā"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "khāna kujā ast?",
+              "extraWords": [
+                {
+                  "dari": "چی",
+                  "translit": "che"
+                }
+              ]
+            },
+            {
+              "id": "ge-03-5",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "تو چطور هستی؟",
+              "translit": "tu chetōr hasti?",
+              "en": "How are you?",
+              "distractorsDari": [
+                {
+                  "dari": "تو کجا هستی؟",
+                  "translit": "tu kujā hasti?"
+                },
+                {
+                  "dari": "تو کی هستی؟",
+                  "translit": "tu kī hasti?"
+                }
+              ]
+            },
+            {
+              "id": "ge-03-6",
+              "type": "matchPairs",
+              "prompt": "Match the question words",
+              "pairs": [
+                {
+                  "dari": "کجا",
+                  "translit": "kujā",
+                  "en": "where"
+                },
+                {
+                  "dari": "چطور",
+                  "translit": "chetōr",
+                  "en": "how"
+                },
+                {
+                  "dari": "چند",
+                  "translit": "chand",
+                  "en": "how many"
+                },
+                {
+                  "dari": "بلی",
+                  "translit": "balē",
+                  "en": "yes"
+                }
+              ]
+            },
+            {
+              "id": "ge-03-7",
+              "type": "fillBlank",
+              "dari": "___، من شاگرد هستم",
+              "translit": "___, man shāgerd hastam",
+              "en": "Yes, I am a student.",
+              "answer": {
+                "dari": "بلی",
+                "translit": "balē"
+              },
+              "distractors": [
+                {
+                  "dari": "نه",
+                  "translit": "na"
+                },
+                {
+                  "dari": "چطور",
+                  "translit": "chetōr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-02",
+      "title": "Naming Things",
+      "subtitle": "Plurals and the little -e that links words",
+      "lessons": [
+        {
+          "id": "gl-04",
+          "title": "More than one",
+          "subtitle": "Make plurals with -hā",
+          "grammarPoint": "plural-ha",
+          "grammarPointEn": "Plural nouns with the suffix -hā (ketāb → ketāb-hā); after a number the noun stays singular (dū ketāb, never dū ketāb-hā).",
+          "slides": [
+            {
+              "id": "gs-04-1",
+              "title": "Add -hā",
+              "body": "One suffix makes any noun plural: -hā. No exceptions to memorise.",
+              "examples": [
+                {
+                  "dari": "کتاب‌ها اینجا هستند",
+                  "translit": "ketāb-hā īnjā hastand",
+                  "en": "The books are here.",
+                  "highlight": "کتاب‌ها"
+                },
+                {
+                  "dari": "خانه‌ها کلان هستند",
+                  "translit": "khāna-hā kalān hastand",
+                  "en": "The houses are big.",
+                  "highlight": "خانه‌ها"
+                }
+              ]
+            },
+            {
+              "id": "gs-04-2",
+              "title": "Numbers keep it singular",
+              "body": "After a number the noun never takes -hā. Literally: 'two book', 'three student'.",
+              "examples": [
+                {
+                  "dari": "دو کتاب اینجا است",
+                  "translit": "dū ketāb īnjā ast",
+                  "en": "Two books are here.",
+                  "highlight": "دو کتاب"
+                },
+                {
+                  "dari": "سه شاگرد اینجا هستند",
+                  "translit": "se shāgerd īnjā hastand",
+                  "en": "Three students are here.",
+                  "highlight": "سه شاگرد"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-04-1",
+              "type": "fillBlank",
+              "dari": "___ اینجا هستند",
+              "translit": "___ īnjā hastand",
+              "en": "The books are here.",
+              "answer": {
+                "dari": "کتاب‌ها",
+                "translit": "ketāb-hā"
+              },
+              "distractors": [
+                {
+                  "dari": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "dari": "خانه",
+                  "translit": "khāna"
+                }
+              ]
+            },
+            {
+              "id": "ge-04-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "خانه‌ها کلان هستند",
+              "translit": "khāna-hā kalān hastand",
+              "en": "The houses are big.",
+              "distractorsEn": [
+                "The house is big.",
+                "The rooms are big."
+              ]
+            },
+            {
+              "id": "ge-04-3",
+              "type": "fillBlank",
+              "dari": "دو ___ اینجا است",
+              "translit": "dū ___ īnjā ast",
+              "en": "Two books are here.",
+              "answer": {
+                "dari": "کتاب",
+                "translit": "ketāb"
+              },
+              "distractors": [
+                {
+                  "dari": "کتاب‌ها",
+                  "translit": "ketāb-hā"
+                },
+                {
+                  "dari": "قلم‌ها",
+                  "translit": "qalam-hā"
+                }
+              ],
+              "hint": "After a number, the noun stays singular."
+            },
+            {
+              "id": "ge-04-4",
+              "type": "buildSentence",
+              "en": "The students are here.",
+              "words": [
+                {
+                  "dari": "شاگردها",
+                  "translit": "shāgerd-hā"
+                },
+                {
+                  "dari": "اینجا",
+                  "translit": "īnjā"
+                },
+                {
+                  "dari": "هستند",
+                  "translit": "hastand"
+                }
+              ],
+              "translit": "shāgerd-hā īnjā hastand",
+              "extraWords": [
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-04-5",
+              "type": "matchPairs",
+              "prompt": "Match singular and plural",
+              "pairs": [
+                {
+                  "dari": "کتاب",
+                  "translit": "ketāb",
+                  "en": "book"
+                },
+                {
+                  "dari": "کتاب‌ها",
+                  "translit": "ketāb-hā",
+                  "en": "books"
+                },
+                {
+                  "dari": "خانه",
+                  "translit": "khāna",
+                  "en": "house"
+                },
+                {
+                  "dari": "خانه‌ها",
+                  "translit": "khāna-hā",
+                  "en": "houses"
+                }
+              ]
+            },
+            {
+              "id": "ge-04-6",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "دخترها اینجا هستند",
+              "translit": "dukhtar-hā īnjā hastand",
+              "en": "The girls are here.",
+              "distractorsDari": [
+                {
+                  "dari": "دختر اینجا است",
+                  "translit": "dukhtar īnjā ast"
+                },
+                {
+                  "dari": "پسرها اینجا هستند",
+                  "translit": "pesar-hā īnjā hastand"
+                }
+              ]
+            },
+            {
+              "id": "ge-04-7",
+              "type": "fillBlank",
+              "dari": "قلم‌ها ___ هستند",
+              "translit": "qalam-hā ___ hastand",
+              "en": "The pens are new.",
+              "answer": {
+                "dari": "نو",
+                "translit": "naw"
+              },
+              "distractors": [
+                {
+                  "dari": "کلان",
+                  "translit": "kalān"
+                },
+                {
+                  "dari": "گرم",
+                  "translit": "garm"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-05",
+          "title": "My, your, the teacher's",
+          "subtitle": "Link owner and thing with ezāfa",
+          "grammarPoint": "ezafa-possession",
+          "grammarPointEn": "Possession with the ezāfa linker -e / -ye: ketāb-e man (my book), khāna-ye mā (our house); the linker is spoken but usually not written in script.",
+          "slides": [
+            {
+              "id": "gs-05-1",
+              "title": "The invisible -e",
+              "body": "'My book' is ketāb-e man — literally 'book of me'. The little -e (called ezāfa) is spoken but usually not written. After a vowel it becomes -ye.",
+              "examples": [
+                {
+                  "dari": "این کتاب من است",
+                  "translit": "īn ketāb-e man ast",
+                  "en": "This is my book.",
+                  "highlight": "کتاب من"
+                },
+                {
+                  "dari": "خانه ما کلان است",
+                  "translit": "khāna-ye mā kalān ast",
+                  "en": "Our house is big.",
+                  "highlight": "خانه ما"
+                }
+              ]
+            },
+            {
+              "id": "gs-05-2",
+              "title": "Chain it",
+              "body": "Keep linking with -e: khāna-ye padar-e man — 'my father's house'. Any owner works, not just pronouns.",
+              "examples": [
+                {
+                  "dari": "خانه پدر من کلان است",
+                  "translit": "khāna-ye padar-e man kalān ast",
+                  "en": "My father's house is big.",
+                  "highlight": "خانه پدر من"
+                },
+                {
+                  "dari": "کتاب معلم اینجا است",
+                  "translit": "ketāb-e mu'allem īnjā ast",
+                  "en": "The teacher's book is here.",
+                  "highlight": "کتاب معلم"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-05-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "این کتاب من است",
+              "translit": "īn ketāb-e man ast",
+              "en": "This is my book.",
+              "distractorsEn": [
+                "This is your book.",
+                "This book is good."
+              ]
+            },
+            {
+              "id": "ge-05-2",
+              "type": "fillBlank",
+              "dari": "خانه ___ کلان است",
+              "translit": "khāna-ye ___ kalān ast",
+              "en": "Our house is big.",
+              "answer": {
+                "dari": "ما",
+                "translit": "mā"
+              },
+              "distractors": [
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "تو",
+                  "translit": "tu"
+                }
+              ]
+            },
+            {
+              "id": "ge-05-3",
+              "type": "buildSentence",
+              "en": "This is my father's house.",
+              "words": [
+                {
+                  "dari": "این",
+                  "translit": "īn"
+                },
+                {
+                  "dari": "خانه",
+                  "translit": "khāna"
+                },
+                {
+                  "dari": "پدر",
+                  "translit": "padar"
+                },
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "īn khāna-ye padar-e man ast",
+              "extraWords": [
+                {
+                  "dari": "تو",
+                  "translit": "tu"
+                }
+              ]
+            },
+            {
+              "id": "ge-05-4",
+              "type": "fillBlank",
+              "dari": "قلم ___ نو است",
+              "translit": "qalam-e ___ naw ast",
+              "en": "Your pen is new.",
+              "answer": {
+                "dari": "تو",
+                "translit": "tu"
+              },
+              "distractors": [
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "او",
+                  "translit": "ō"
+                }
+              ]
+            },
+            {
+              "id": "ge-05-5",
+              "type": "matchPairs",
+              "prompt": "Match owner and thing",
+              "pairs": [
+                {
+                  "dari": "کتاب من",
+                  "translit": "ketāb-e man",
+                  "en": "my book"
+                },
+                {
+                  "dari": "کتاب تو",
+                  "translit": "ketāb-e tu",
+                  "en": "your book"
+                },
+                {
+                  "dari": "خانه ما",
+                  "translit": "khāna-ye mā",
+                  "en": "our house"
+                },
+                {
+                  "dari": "خانه او",
+                  "translit": "khāna-ye ō",
+                  "en": "her house"
+                }
+              ]
+            },
+            {
+              "id": "ge-05-6",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "کتاب معلم اینجا است",
+              "translit": "ketāb-e mu'allem īnjā ast",
+              "en": "The teacher's book is here.",
+              "distractorsDari": [
+                {
+                  "dari": "کتاب من اینجا است",
+                  "translit": "ketāb-e man īnjā ast"
+                },
+                {
+                  "dari": "معلم اینجا است",
+                  "translit": "mu'allem īnjā ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-05-7",
+              "type": "fillBlank",
+              "dari": "___ او مقبول است",
+              "translit": "___ ō maqbūl ast",
+              "en": "Her house is beautiful.",
+              "answer": {
+                "dari": "خانه",
+                "translit": "khāna-ye"
+              },
+              "distractors": [
+                {
+                  "dari": "شهر",
+                  "translit": "shahr-e"
+                },
+                {
+                  "dari": "قلم",
+                  "translit": "qalam-e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-06",
+          "title": "Good friends, hot tea",
+          "subtitle": "Describe things with ezāfa + adjective",
+          "grammarPoint": "ezafa-adjectives",
+          "grammarPointEn": "Attributive adjectives follow the noun with ezāfa: dōst-e khōb (good friend), chāy-e garm (hot tea); chains like dōst-e khōb-e man (my good friend).",
+          "slides": [
+            {
+              "id": "gs-06-1",
+              "title": "Adjective after the noun",
+              "body": "In Dari the adjective follows its noun, linked by the same -e: chāy-e garm, 'tea of hot'.",
+              "examples": [
+                {
+                  "dari": "چای گرم خوب است",
+                  "translit": "chāy-e garm khōb ast",
+                  "en": "Hot tea is good.",
+                  "highlight": "چای گرم"
+                },
+                {
+                  "dari": "کتاب نو اینجا است",
+                  "translit": "ketāb-e naw īnjā ast",
+                  "en": "The new book is here.",
+                  "highlight": "کتاب نو"
+                }
+              ]
+            },
+            {
+              "id": "gs-06-2",
+              "title": "Chain it further",
+              "body": "Noun, adjective, owner — all linked with -e: dōst-e khōb-e man, 'my good friend'.",
+              "examples": [
+                {
+                  "dari": "او دوست خوب من است",
+                  "translit": "ō dōst-e khōb-e man ast",
+                  "en": "He is my good friend.",
+                  "highlight": "دوست خوب من"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-06-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "او دوست خوب من است",
+              "translit": "ō dōst-e khōb-e man ast",
+              "en": "He is my good friend.",
+              "distractorsEn": [
+                "He is my friend.",
+                "My friend is good."
+              ]
+            },
+            {
+              "id": "ge-06-2",
+              "type": "fillBlank",
+              "dari": "چای ___ خوب است",
+              "translit": "chāy-e ___ khōb ast",
+              "en": "Hot tea is good.",
+              "answer": {
+                "dari": "گرم",
+                "translit": "garm"
+              },
+              "distractors": [
+                {
+                  "dari": "سرد",
+                  "translit": "sard"
+                },
+                {
+                  "dari": "نو",
+                  "translit": "naw"
+                }
+              ]
+            },
+            {
+              "id": "ge-06-3",
+              "type": "buildSentence",
+              "en": "The big house is beautiful.",
+              "words": [
+                {
+                  "dari": "خانه",
+                  "translit": "khāna-ye"
+                },
+                {
+                  "dari": "کلان",
+                  "translit": "kalān"
+                },
+                {
+                  "dari": "مقبول",
+                  "translit": "maqbūl"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "khāna-ye kalān maqbūl ast",
+              "extraWords": [
+                {
+                  "dari": "خورد",
+                  "translit": "khurd"
+                }
+              ]
+            },
+            {
+              "id": "ge-06-4",
+              "type": "fillBlank",
+              "dari": "آب ___ خوب است",
+              "translit": "āb-e ___ khōb ast",
+              "en": "Cold water is good.",
+              "answer": {
+                "dari": "سرد",
+                "translit": "sard"
+              },
+              "distractors": [
+                {
+                  "dari": "گرم",
+                  "translit": "garm"
+                },
+                {
+                  "dari": "کلان",
+                  "translit": "kalān"
+                }
+              ]
+            },
+            {
+              "id": "ge-06-5",
+              "type": "matchPairs",
+              "prompt": "Match the phrases",
+              "pairs": [
+                {
+                  "dari": "چای گرم",
+                  "translit": "chāy-e garm",
+                  "en": "hot tea"
+                },
+                {
+                  "dari": "آب سرد",
+                  "translit": "āb-e sard",
+                  "en": "cold water"
+                },
+                {
+                  "dari": "کتاب نو",
+                  "translit": "ketāb-e naw",
+                  "en": "new book"
+                },
+                {
+                  "dari": "خانه کلان",
+                  "translit": "khāna-ye kalān",
+                  "en": "big house"
+                }
+              ]
+            },
+            {
+              "id": "ge-06-6",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "قلم نو من اینجا است",
+              "translit": "qalam-e naw-e man īnjā ast",
+              "en": "My new pen is here.",
+              "distractorsDari": [
+                {
+                  "dari": "قلم من اینجا است",
+                  "translit": "qalam-e man īnjā ast"
+                },
+                {
+                  "dari": "قلم نو تو اینجا است",
+                  "translit": "qalam-e naw-e tu īnjā ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-06-7",
+              "type": "buildSentence",
+              "en": "She is my good sister.",
+              "words": [
+                {
+                  "dari": "او",
+                  "translit": "ō"
+                },
+                {
+                  "dari": "خواهر",
+                  "translit": "khāhar-e"
+                },
+                {
+                  "dari": "خوب",
+                  "translit": "khōb-e"
+                },
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "ō khāhar-e khōb-e man ast",
+              "extraWords": [
+                {
+                  "dari": "برادر",
+                  "translit": "barādar-e"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-03",
+      "title": "Where Things Are",
+      "subtitle": "Little words of place, and saying what exists",
+      "lessons": [
+        {
+          "id": "gl-07",
+          "title": "In, to, from, with",
+          "subtitle": "The four prepositions you'll use every day",
+          "grammarPoint": "prepositions",
+          "grammarPointEn": "Prepositions dar (in/at), ba (to), az (from), bā (with) placed before the noun: man dar kābul hastam (I am in Kabul).",
+          "slides": [
+            {
+              "id": "gs-07-1",
+              "title": "Before the noun",
+              "body": "Unlike the verb, prepositions work just like English: they come before their noun.",
+              "table": [
+                [
+                  "dar — در",
+                  "in, at"
+                ],
+                [
+                  "ba — به",
+                  "to"
+                ],
+                [
+                  "az — از",
+                  "from"
+                ],
+                [
+                  "bā — با",
+                  "with"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "من در کابل هستم",
+                  "translit": "man dar kābul hastam",
+                  "en": "I am in Kabul.",
+                  "highlight": "در"
+                },
+                {
+                  "dari": "او از افغانستان است",
+                  "translit": "ō az afghānestān ast",
+                  "en": "He is from Afghanistan.",
+                  "highlight": "از"
+                }
+              ]
+            },
+            {
+              "id": "gs-07-2",
+              "title": "Putting it together",
+              "body": "Combine prepositions with what you already know — questions, ezāfa, plurals.",
+              "examples": [
+                {
+                  "dari": "خانه تو کجا است؟",
+                  "translit": "khāna-ye tu kujā ast?",
+                  "en": "Where is your house?"
+                },
+                {
+                  "dari": "او با پدر من است",
+                  "translit": "ō bā padar-e man ast",
+                  "en": "He is with my father.",
+                  "highlight": "با"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-07-1",
+              "type": "fillBlank",
+              "dari": "من ___ کابل هستم",
+              "translit": "man ___ kābul hastam",
+              "en": "I am in Kabul.",
+              "answer": {
+                "dari": "در",
+                "translit": "dar"
+              },
+              "distractors": [
+                {
+                  "dari": "از",
+                  "translit": "az"
+                },
+                {
+                  "dari": "به",
+                  "translit": "ba"
+                }
+              ]
+            },
+            {
+              "id": "ge-07-2",
+              "type": "fillBlank",
+              "dari": "او ___ افغانستان است",
+              "translit": "ō ___ afghānestān ast",
+              "en": "He is from Afghanistan.",
+              "answer": {
+                "dari": "از",
+                "translit": "az"
+              },
+              "distractors": [
+                {
+                  "dari": "در",
+                  "translit": "dar"
+                },
+                {
+                  "dari": "با",
+                  "translit": "bā"
+                }
+              ]
+            },
+            {
+              "id": "ge-07-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "او با پدر من است",
+              "translit": "ō bā padar-e man ast",
+              "en": "He is with my father.",
+              "distractorsEn": [
+                "He is my father.",
+                "He is from my father's house."
+              ]
+            },
+            {
+              "id": "ge-07-4",
+              "type": "buildSentence",
+              "en": "We are at school.",
+              "words": [
+                {
+                  "dari": "ما",
+                  "translit": "mā"
+                },
+                {
+                  "dari": "در",
+                  "translit": "dar"
+                },
+                {
+                  "dari": "مکتب",
+                  "translit": "maktab"
+                },
+                {
+                  "dari": "هستیم",
+                  "translit": "hastēm"
+                }
+              ],
+              "translit": "mā dar maktab hastēm",
+              "extraWords": [
+                {
+                  "dari": "از",
+                  "translit": "az"
+                }
+              ]
+            },
+            {
+              "id": "ge-07-5",
+              "type": "matchPairs",
+              "prompt": "Match the prepositions",
+              "pairs": [
+                {
+                  "dari": "در",
+                  "translit": "dar",
+                  "en": "in, at"
+                },
+                {
+                  "dari": "از",
+                  "translit": "az",
+                  "en": "from"
+                },
+                {
+                  "dari": "با",
+                  "translit": "bā",
+                  "en": "with"
+                },
+                {
+                  "dari": "به",
+                  "translit": "ba",
+                  "en": "to"
+                }
+              ]
+            },
+            {
+              "id": "ge-07-6",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "بازار آنجا است",
+              "translit": "bāzār ānjā ast",
+              "en": "The bazaar is there.",
+              "distractorsDari": [
+                {
+                  "dari": "بازار اینجا است",
+                  "translit": "bāzār īnjā ast"
+                },
+                {
+                  "dari": "خانه آنجا است",
+                  "translit": "khāna ānjā ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-07-7",
+              "type": "fillBlank",
+              "dari": "مادر من ___ خانه است",
+              "translit": "mādar-e man ___ khāna ast",
+              "en": "My mother is at home.",
+              "answer": {
+                "dari": "در",
+                "translit": "dar"
+              },
+              "distractors": [
+                {
+                  "dari": "با",
+                  "translit": "bā"
+                },
+                {
+                  "dari": "از",
+                  "translit": "az"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-08",
+          "title": "There is, there isn't",
+          "subtitle": "hast and nēst — saying what exists",
+          "grammarPoint": "existential-hast",
+          "grammarPointEn": "Existential hast (there is) and nēst (there isn't) versus linking ast (is): dar khāna yak ketāb hast (there is a book in the house).",
+          "slides": [
+            {
+              "id": "gs-08-1",
+              "title": "hast — it exists",
+              "body": "hast says something exists; nēst says it doesn't. Perfect for what's in the house, the room, the market.",
+              "examples": [
+                {
+                  "dari": "در خانه یک کتاب هست",
+                  "translit": "dar khāna yak ketāb hast",
+                  "en": "There is a book in the house.",
+                  "highlight": "هست"
+                },
+                {
+                  "dari": "در اتاق آب نیست",
+                  "translit": "dar utāq āb nēst",
+                  "en": "There is no water in the room.",
+                  "highlight": "نیست"
+                }
+              ]
+            },
+            {
+              "id": "gs-08-2",
+              "title": "ast or hast?",
+              "body": "ast links two ideas — the tea IS hot. hast says something exists — there IS tea.",
+              "examples": [
+                {
+                  "dari": "چای گرم است",
+                  "translit": "chāy garm ast",
+                  "en": "The tea is hot.",
+                  "highlight": "است"
+                },
+                {
+                  "dari": "چای هست",
+                  "translit": "chāy hast",
+                  "en": "There is tea.",
+                  "highlight": "هست"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-08-1",
+              "type": "fillBlank",
+              "dari": "در خانه یک کتاب ___",
+              "translit": "dar khāna yak ketāb ___",
+              "en": "There is a book in the house.",
+              "answer": {
+                "dari": "هست",
+                "translit": "hast"
+              },
+              "distractors": [
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                },
+                {
+                  "dari": "نیست",
+                  "translit": "nēst"
+                }
+              ]
+            },
+            {
+              "id": "ge-08-2",
+              "type": "fillBlank",
+              "dari": "در اتاق آب ___",
+              "translit": "dar utāq āb ___",
+              "en": "There is no water in the room.",
+              "answer": {
+                "dari": "نیست",
+                "translit": "nēst"
+              },
+              "distractors": [
+                {
+                  "dari": "هست",
+                  "translit": "hast"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-08-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "در مکتب معلم هست",
+              "translit": "dar maktab mu'allem hast",
+              "en": "There is a teacher at the school.",
+              "distractorsEn": [
+                "There is a student at the school.",
+                "There is no teacher at the school."
+              ]
+            },
+            {
+              "id": "ge-08-4",
+              "type": "buildSentence",
+              "en": "There is tea in the house.",
+              "words": [
+                {
+                  "dari": "در",
+                  "translit": "dar"
+                },
+                {
+                  "dari": "خانه",
+                  "translit": "khāna"
+                },
+                {
+                  "dari": "چای",
+                  "translit": "chāy"
+                },
+                {
+                  "dari": "هست",
+                  "translit": "hast"
+                }
+              ],
+              "translit": "dar khāna chāy hast",
+              "extraWords": [
+                {
+                  "dari": "نیست",
+                  "translit": "nēst"
+                }
+              ]
+            },
+            {
+              "id": "ge-08-5",
+              "type": "matchPairs",
+              "prompt": "Match the forms of 'to be'",
+              "pairs": [
+                {
+                  "dari": "هست",
+                  "translit": "hast",
+                  "en": "there is"
+                },
+                {
+                  "dari": "نیست",
+                  "translit": "nēst",
+                  "en": "there isn't"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast",
+                  "en": "is"
+                },
+                {
+                  "dari": "هستند",
+                  "translit": "hastand",
+                  "en": "they are"
+                }
+              ]
+            },
+            {
+              "id": "ge-08-6",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "نان نیست",
+              "translit": "nān nēst",
+              "en": "There is no bread.",
+              "distractorsDari": [
+                {
+                  "dari": "نان هست",
+                  "translit": "nān hast"
+                },
+                {
+                  "dari": "نان خوب نیست",
+                  "translit": "nān khōb nēst"
+                }
+              ]
+            },
+            {
+              "id": "ge-08-7",
+              "type": "fillBlank",
+              "dari": "اینجا یک مکتب ___",
+              "translit": "īnjā yak maktab ___",
+              "en": "There is a school here.",
+              "answer": {
+                "dari": "هست",
+                "translit": "hast"
+              },
+              "distractors": [
+                {
+                  "dari": "نیست",
+                  "translit": "nēst"
+                },
+                {
+                  "dari": "هستند",
+                  "translit": "hastand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-04",
+      "title": "Doing Things Now",
+      "subtitle": "From having to doing — the present tense",
+      "lessons": [
+        {
+          "id": "gl-09",
+          "title": "I have two brothers",
+          "subtitle": "dāshtan and counting to ten",
+          "grammarPoint": "dashtan-numbers",
+          "grammarPointEn": "The verb dāshtan (to have) in the present — dāram, dāri, dārad, dārēm, dārēd, dārand, with no mē- prefix — plus numbers and chand (how many).",
+          "slides": [
+            {
+              "id": "gs-09-1",
+              "title": "dāram — I have",
+              "body": "Your first real verb. The endings are the same family you met with hastam. dāshtan is special: no prefix needed in the present.",
+              "table": [
+                [
+                  "man",
+                  "dāram"
+                ],
+                [
+                  "tu",
+                  "dāri"
+                ],
+                [
+                  "ō",
+                  "dārad"
+                ],
+                [
+                  "mā",
+                  "dārēm"
+                ],
+                [
+                  "shumā",
+                  "dārēd"
+                ],
+                [
+                  "ānhā",
+                  "dārand"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "من دو برادر دارم",
+                  "translit": "man dū barādar dāram",
+                  "en": "I have two brothers.",
+                  "highlight": "دارم"
+                }
+              ]
+            },
+            {
+              "id": "gs-09-2",
+              "title": "Counting",
+              "body": "Numbers go before the noun — and remember, the noun stays singular.",
+              "table": [
+                [
+                  "yak",
+                  "1"
+                ],
+                [
+                  "dū",
+                  "2"
+                ],
+                [
+                  "se",
+                  "3"
+                ],
+                [
+                  "chār",
+                  "4"
+                ],
+                [
+                  "panj",
+                  "5"
+                ],
+                [
+                  "dah",
+                  "10"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "تو چند خواهر داری؟",
+                  "translit": "tu chand khāhar dāri?",
+                  "en": "How many sisters do you have?",
+                  "highlight": "چند"
+                },
+                {
+                  "dari": "من سه خواهر دارم",
+                  "translit": "man se khāhar dāram",
+                  "en": "I have three sisters."
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-09-1",
+              "type": "fillBlank",
+              "dari": "من دو برادر ___",
+              "translit": "man dū barādar ___",
+              "en": "I have two brothers.",
+              "answer": {
+                "dari": "دارم",
+                "translit": "dāram"
+              },
+              "distractors": [
+                {
+                  "dari": "داری",
+                  "translit": "dāri"
+                },
+                {
+                  "dari": "دارد",
+                  "translit": "dārad"
+                }
+              ]
+            },
+            {
+              "id": "ge-09-2",
+              "type": "fillBlank",
+              "dari": "او یک خواهر ___",
+              "translit": "ō yak khāhar ___",
+              "en": "She has one sister.",
+              "answer": {
+                "dari": "دارد",
+                "translit": "dārad"
+              },
+              "distractors": [
+                {
+                  "dari": "دارم",
+                  "translit": "dāram"
+                },
+                {
+                  "dari": "دارند",
+                  "translit": "dārand"
+                }
+              ]
+            },
+            {
+              "id": "ge-09-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "ما یک خانه کلان داریم",
+              "translit": "mā yak khāna-ye kalān dārēm",
+              "en": "We have a big house.",
+              "distractorsEn": [
+                "We have a small house.",
+                "They have a big house."
+              ]
+            },
+            {
+              "id": "ge-09-4",
+              "type": "buildSentence",
+              "en": "Do you have tea?",
+              "words": [
+                {
+                  "dari": "تو",
+                  "translit": "tu"
+                },
+                {
+                  "dari": "چای",
+                  "translit": "chāy"
+                },
+                {
+                  "dari": "داری",
+                  "translit": "dāri"
+                }
+              ],
+              "translit": "tu chāy dāri?",
+              "extraWords": [
+                {
+                  "dari": "دارم",
+                  "translit": "dāram"
+                }
+              ]
+            },
+            {
+              "id": "ge-09-5",
+              "type": "fillBlank",
+              "dari": "تو ___ برادر داری؟",
+              "translit": "tu ___ barādar dāri?",
+              "en": "How many brothers do you have?",
+              "answer": {
+                "dari": "چند",
+                "translit": "chand"
+              },
+              "distractors": [
+                {
+                  "dari": "چی",
+                  "translit": "che"
+                },
+                {
+                  "dari": "کجا",
+                  "translit": "kujā"
+                }
+              ]
+            },
+            {
+              "id": "ge-09-6",
+              "type": "matchPairs",
+              "prompt": "Match the numbers",
+              "pairs": [
+                {
+                  "dari": "یک",
+                  "translit": "yak",
+                  "en": "one"
+                },
+                {
+                  "dari": "دو",
+                  "translit": "dū",
+                  "en": "two"
+                },
+                {
+                  "dari": "سه",
+                  "translit": "se",
+                  "en": "three"
+                },
+                {
+                  "dari": "پنج",
+                  "translit": "panj",
+                  "en": "five"
+                }
+              ]
+            },
+            {
+              "id": "ge-09-7",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "من پنج کتاب دارم",
+              "translit": "man panj ketāb dāram",
+              "en": "I have five books.",
+              "distractorsDari": [
+                {
+                  "dari": "من پنج کتاب‌ها دارم",
+                  "translit": "man panj ketāb-hā dāram"
+                },
+                {
+                  "dari": "من چهار کتاب دارم",
+                  "translit": "man chār ketāb dāram"
+                }
+              ]
+            },
+            {
+              "id": "ge-09-8",
+              "type": "fillBlank",
+              "dari": "آنها چهار قلم ___",
+              "translit": "ānhā chār qalam ___",
+              "en": "They have four pens.",
+              "answer": {
+                "dari": "دارند",
+                "translit": "dārand"
+              },
+              "distractors": [
+                {
+                  "dari": "دارم",
+                  "translit": "dāram"
+                },
+                {
+                  "dari": "داریم",
+                  "translit": "dārēm"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-10",
+          "title": "The mē- machine",
+          "subtitle": "Say what you do with mē- + verb",
+          "grammarPoint": "present-me",
+          "grammarPointEn": "Present tense: mē- + present stem + personal ending (mēkhānam, mēkhāni, mēkhānad, mēkhānēm, mēkhānēd, mēkhānand); the verb stays at the end of the sentence.",
+          "slides": [
+            {
+              "id": "gs-10-1",
+              "title": "The formula",
+              "body": "mē- + verb stem + the endings you know from dāram. That one pattern gives you the whole present tense.",
+              "table": [
+                [
+                  "man",
+                  "mēkhānam"
+                ],
+                [
+                  "tu",
+                  "mēkhāni"
+                ],
+                [
+                  "ō",
+                  "mēkhānad"
+                ],
+                [
+                  "mā",
+                  "mēkhānēm"
+                ],
+                [
+                  "shumā",
+                  "mēkhānēd"
+                ],
+                [
+                  "ānhā",
+                  "mēkhānand"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "من دری می‌خوانم",
+                  "translit": "man darī mēkhānam",
+                  "en": "I read Dari.",
+                  "highlight": "می‌خوانم"
+                }
+              ]
+            },
+            {
+              "id": "gs-10-2",
+              "title": "Four verbs to start",
+              "body": "Each verb has a present stem. Learn the stem and the formula does the rest.",
+              "table": [
+                [
+                  "raftan → mēraw-",
+                  "go"
+                ],
+                [
+                  "khurdan → mēkhur-",
+                  "eat, drink"
+                ],
+                [
+                  "dīdan → mēbīn-",
+                  "see"
+                ],
+                [
+                  "kardan → mēkun-",
+                  "do"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "او به مکتب می‌رود",
+                  "translit": "ō ba maktab mērawad",
+                  "en": "He goes to school.",
+                  "highlight": "می‌رود"
+                },
+                {
+                  "dari": "ما نان می‌خوریم",
+                  "translit": "mā nān mēkhurēm",
+                  "en": "We eat bread.",
+                  "highlight": "می‌خوریم"
+                }
+              ]
+            },
+            {
+              "id": "gs-10-3",
+              "title": "Still verb-last",
+              "body": "Subject, then everything else, then the verb. khurdan covers both eating and drinking.",
+              "examples": [
+                {
+                  "dari": "من چای می‌خورم",
+                  "translit": "man chāy mēkhuram",
+                  "en": "I drink tea.",
+                  "highlight": "می‌خورم"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-10-1",
+              "type": "fillBlank",
+              "dari": "من دری ___",
+              "translit": "man darī ___",
+              "en": "I read Dari.",
+              "answer": {
+                "dari": "می‌خوانم",
+                "translit": "mēkhānam"
+              },
+              "distractors": [
+                {
+                  "dari": "می‌خوانی",
+                  "translit": "mēkhāni"
+                },
+                {
+                  "dari": "می‌خواند",
+                  "translit": "mēkhānad"
+                }
+              ]
+            },
+            {
+              "id": "ge-10-2",
+              "type": "fillBlank",
+              "dari": "او به مکتب ___",
+              "translit": "ō ba maktab ___",
+              "en": "He goes to school.",
+              "answer": {
+                "dari": "می‌رود",
+                "translit": "mērawad"
+              },
+              "distractors": [
+                {
+                  "dari": "می‌روم",
+                  "translit": "mērawam"
+                },
+                {
+                  "dari": "می‌روی",
+                  "translit": "mērawi"
+                }
+              ]
+            },
+            {
+              "id": "ge-10-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "ما نان می‌خوریم",
+              "translit": "mā nān mēkhurēm",
+              "en": "We eat bread.",
+              "distractorsEn": [
+                "We ate bread.",
+                "They eat bread."
+              ]
+            },
+            {
+              "id": "ge-10-4",
+              "type": "buildSentence",
+              "en": "I drink tea.",
+              "words": [
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "چای",
+                  "translit": "chāy"
+                },
+                {
+                  "dari": "می‌خورم",
+                  "translit": "mēkhuram"
+                }
+              ],
+              "translit": "man chāy mēkhuram",
+              "extraWords": [
+                {
+                  "dari": "می‌خورد",
+                  "translit": "mēkhurad"
+                }
+              ]
+            },
+            {
+              "id": "ge-10-5",
+              "type": "fillBlank",
+              "dari": "آنها کار ___",
+              "translit": "ānhā kār ___",
+              "en": "They work.",
+              "answer": {
+                "dari": "می‌کنند",
+                "translit": "mēkunand"
+              },
+              "distractors": [
+                {
+                  "dari": "می‌کنم",
+                  "translit": "mēkunam"
+                },
+                {
+                  "dari": "می‌کنیم",
+                  "translit": "mēkunēm"
+                }
+              ]
+            },
+            {
+              "id": "ge-10-6",
+              "type": "matchPairs",
+              "prompt": "Match verb and meaning",
+              "pairs": [
+                {
+                  "dari": "می‌روم",
+                  "translit": "mērawam",
+                  "en": "I go"
+                },
+                {
+                  "dari": "می‌خورم",
+                  "translit": "mēkhuram",
+                  "en": "I eat"
+                },
+                {
+                  "dari": "می‌بینم",
+                  "translit": "mēbīnam",
+                  "en": "I see"
+                },
+                {
+                  "dari": "می‌خوانم",
+                  "translit": "mēkhānam",
+                  "en": "I read"
+                }
+              ]
+            },
+            {
+              "id": "ge-10-7",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "شما دری می‌خوانید",
+              "translit": "shumā darī mēkhānēd",
+              "en": "You (plural) read Dari.",
+              "distractorsDari": [
+                {
+                  "dari": "شما دری می‌خوانی",
+                  "translit": "shumā darī mēkhāni"
+                },
+                {
+                  "dari": "ما دری می‌خوانیم",
+                  "translit": "mā darī mēkhānēm"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-11",
+          "title": "The little word rā",
+          "subtitle": "Mark the thing you act on",
+          "grammarPoint": "object-ra",
+          "grammarPointEn": "The object marker rā after definite direct objects: man ketāb rā mēkhānam (I read THE book) versus man ketāb mēkhānam (I read books in general).",
+          "slides": [
+            {
+              "id": "gs-11-1",
+              "title": "Spot the object",
+              "body": "When you act on a SPECIFIC thing — the book, that house — mark it with rā. Without rā it stays general.",
+              "examples": [
+                {
+                  "dari": "من کتاب را می‌خوانم",
+                  "translit": "man ketāb rā mēkhānam",
+                  "en": "I read the book.",
+                  "highlight": "را"
+                },
+                {
+                  "dari": "من کتاب می‌خوانم",
+                  "translit": "man ketāb mēkhānam",
+                  "en": "I read books."
+                }
+              ]
+            },
+            {
+              "id": "gs-11-2",
+              "title": "rā after the whole phrase",
+              "body": "rā comes after the complete object phrase, ezāfa chain and all.",
+              "examples": [
+                {
+                  "dari": "او برادر من را می‌بیند",
+                  "translit": "ō barādar-e man rā mēbīnad",
+                  "en": "He sees my brother.",
+                  "highlight": "را"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-11-1",
+              "type": "fillBlank",
+              "dari": "من کتاب ___ می‌خوانم",
+              "translit": "man ketāb ___ mēkhānam",
+              "en": "I read the book.",
+              "answer": {
+                "dari": "را",
+                "translit": "rā"
+              },
+              "distractors": [
+                {
+                  "dari": "و",
+                  "translit": "wa"
+                },
+                {
+                  "dari": "هم",
+                  "translit": "ham"
+                }
+              ]
+            },
+            {
+              "id": "ge-11-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "او نان را می‌خورد",
+              "translit": "ō nān rā mēkhurad",
+              "en": "He eats the bread.",
+              "distractorsEn": [
+                "He eats bread.",
+                "He ate the bread."
+              ]
+            },
+            {
+              "id": "ge-11-3",
+              "type": "buildSentence",
+              "en": "I see the teacher.",
+              "words": [
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "معلم",
+                  "translit": "mu'allem"
+                },
+                {
+                  "dari": "را",
+                  "translit": "rā"
+                },
+                {
+                  "dari": "می‌بینم",
+                  "translit": "mēbīnam"
+                }
+              ],
+              "translit": "man mu'allem rā mēbīnam",
+              "extraWords": [
+                {
+                  "dari": "و",
+                  "translit": "wa"
+                }
+              ]
+            },
+            {
+              "id": "ge-11-4",
+              "type": "fillBlank",
+              "dari": "ما آن خانه ___ می‌بینیم",
+              "translit": "mā ān khāna ___ mēbīnēm",
+              "en": "We see that house.",
+              "answer": {
+                "dari": "را",
+                "translit": "rā"
+              },
+              "distractors": [
+                {
+                  "dari": "هم",
+                  "translit": "ham"
+                },
+                {
+                  "dari": "از",
+                  "translit": "az"
+                }
+              ]
+            },
+            {
+              "id": "ge-11-5",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "او کتاب را می‌خواند",
+              "translit": "ō ketāb rā mēkhānad",
+              "en": "She reads the book.",
+              "distractorsDari": [
+                {
+                  "dari": "او کتاب می‌خواند",
+                  "translit": "ō ketāb mēkhānad"
+                },
+                {
+                  "dari": "او کتاب را خواند",
+                  "translit": "ō ketāb rā khānd"
+                }
+              ]
+            },
+            {
+              "id": "ge-11-6",
+              "type": "buildSentence",
+              "en": "You see my house.",
+              "words": [
+                {
+                  "dari": "تو",
+                  "translit": "tu"
+                },
+                {
+                  "dari": "خانه",
+                  "translit": "khāna-ye"
+                },
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "را",
+                  "translit": "rā"
+                },
+                {
+                  "dari": "می‌بینی",
+                  "translit": "mēbīni"
+                }
+              ],
+              "translit": "tu khāna-ye man rā mēbīni",
+              "extraWords": [
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-11-7",
+              "type": "fillBlank",
+              "dari": "تو چای ___ می‌خوری؟",
+              "translit": "tu chāy ___ mēkhuri?",
+              "en": "Are you drinking the tea?",
+              "answer": {
+                "dari": "را",
+                "translit": "rā"
+              },
+              "distractors": [
+                {
+                  "dari": "و",
+                  "translit": "wa"
+                },
+                {
+                  "dari": "از",
+                  "translit": "az"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-12",
+          "title": "Saying no",
+          "subtitle": "namē-, nēstam and nadāram",
+          "grammarPoint": "negation",
+          "grammarPointEn": "Negation: namē- replaces mē- on present verbs (namērawam), 'to be' negates as nēstam/nēst, and dāshtan as nadāram.",
+          "slides": [
+            {
+              "id": "gs-12-1",
+              "title": "namē-",
+              "body": "Turn mē- into namē- and the sentence flips to 'don't'.",
+              "examples": [
+                {
+                  "dari": "من نان نمی‌خورم",
+                  "translit": "man nān namēkhuram",
+                  "en": "I don't eat bread.",
+                  "highlight": "نمی‌خورم"
+                },
+                {
+                  "dari": "او به بازار نمی‌رود",
+                  "translit": "ō ba bāzār namērawad",
+                  "en": "He doesn't go to the bazaar.",
+                  "highlight": "نمی‌رود"
+                }
+              ]
+            },
+            {
+              "id": "gs-12-2",
+              "title": "nēstam — I am not",
+              "body": "'To be' has its own negative forms.",
+              "table": [
+                [
+                  "man",
+                  "nēstam"
+                ],
+                [
+                  "tu",
+                  "nēsti"
+                ],
+                [
+                  "ō",
+                  "nēst"
+                ],
+                [
+                  "mā",
+                  "nēstēm"
+                ],
+                [
+                  "shumā",
+                  "nēstēd"
+                ],
+                [
+                  "ānhā",
+                  "nēstand"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "من معلم نیستم",
+                  "translit": "man mu'allem nēstam",
+                  "en": "I am not a teacher.",
+                  "highlight": "نیستم"
+                }
+              ]
+            },
+            {
+              "id": "gs-12-3",
+              "title": "nadāram — I don't have",
+              "body": "dāshtan takes plain na-: nadāram, nadāri, nadārad…",
+              "examples": [
+                {
+                  "dari": "من چای ندارم",
+                  "translit": "man chāy nadāram",
+                  "en": "I don't have tea.",
+                  "highlight": "ندارم"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-12-1",
+              "type": "fillBlank",
+              "dari": "من نان ___",
+              "translit": "man nān ___",
+              "en": "I don't eat bread.",
+              "answer": {
+                "dari": "نمی‌خورم",
+                "translit": "namēkhuram"
+              },
+              "distractors": [
+                {
+                  "dari": "می‌خورم",
+                  "translit": "mēkhuram"
+                },
+                {
+                  "dari": "نمی‌خورد",
+                  "translit": "namēkhurad"
+                }
+              ]
+            },
+            {
+              "id": "ge-12-2",
+              "type": "fillBlank",
+              "dari": "او معلم ___",
+              "translit": "ō mu'allem ___",
+              "en": "He is not a teacher.",
+              "answer": {
+                "dari": "نیست",
+                "translit": "nēst"
+              },
+              "distractors": [
+                {
+                  "dari": "نیستم",
+                  "translit": "nēstam"
+                },
+                {
+                  "dari": "است",
+                  "translit": "ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-12-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "ما به بازار نمی‌رویم",
+              "translit": "mā ba bāzār namērawēm",
+              "en": "We don't go to the bazaar.",
+              "distractorsEn": [
+                "We go to the bazaar.",
+                "We didn't go to the bazaar."
+              ]
+            },
+            {
+              "id": "ge-12-4",
+              "type": "fillBlank",
+              "dari": "من قلم ___",
+              "translit": "man qalam ___",
+              "en": "I don't have a pen.",
+              "answer": {
+                "dari": "ندارم",
+                "translit": "nadāram"
+              },
+              "distractors": [
+                {
+                  "dari": "دارم",
+                  "translit": "dāram"
+                },
+                {
+                  "dari": "نداری",
+                  "translit": "nadāri"
+                }
+              ]
+            },
+            {
+              "id": "ge-12-5",
+              "type": "buildSentence",
+              "en": "I am not a student.",
+              "words": [
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "شاگرد",
+                  "translit": "shāgerd"
+                },
+                {
+                  "dari": "نیستم",
+                  "translit": "nēstam"
+                }
+              ],
+              "translit": "man shāgerd nēstam",
+              "extraWords": [
+                {
+                  "dari": "هستم",
+                  "translit": "hastam"
+                }
+              ]
+            },
+            {
+              "id": "ge-12-6",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "او کار نمی‌کند",
+              "translit": "ō kār namēkunad",
+              "en": "He doesn't work.",
+              "distractorsDari": [
+                {
+                  "dari": "او کار می‌کند",
+                  "translit": "ō kār mēkunad"
+                },
+                {
+                  "dari": "او کار نکرد",
+                  "translit": "ō kār nakard"
+                }
+              ]
+            },
+            {
+              "id": "ge-12-7",
+              "type": "matchPairs",
+              "prompt": "Match yes and no",
+              "pairs": [
+                {
+                  "dari": "می‌روم",
+                  "translit": "mērawam",
+                  "en": "I go"
+                },
+                {
+                  "dari": "نمی‌روم",
+                  "translit": "namērawam",
+                  "en": "I don't go"
+                },
+                {
+                  "dari": "دارم",
+                  "translit": "dāram",
+                  "en": "I have"
+                },
+                {
+                  "dari": "ندارم",
+                  "translit": "nadāram",
+                  "en": "I don't have"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-05",
+      "title": "Talking About Yesterday",
+      "subtitle": "The simple past and a victory lap",
+      "lessons": [
+        {
+          "id": "gl-13",
+          "title": "Yesterday I went",
+          "subtitle": "The simple past",
+          "grammarPoint": "simple-past",
+          "grammarPointEn": "Simple past: past stem (infinitive minus -an) + endings -am, -ī, nothing, -ēm, -ēd, -and: raftam, raft, raftēm; time words dīrōz (yesterday), emrōz (today).",
+          "slides": [
+            {
+              "id": "gs-13-1",
+              "title": "Chop the -an",
+              "body": "raftan → raft. Add the same endings — except 'he/she', which takes nothing: ō raft. You can even drop the pronoun; the ending already says who.",
+              "table": [
+                [
+                  "man",
+                  "raftam"
+                ],
+                [
+                  "tu",
+                  "rafti"
+                ],
+                [
+                  "ō",
+                  "raft"
+                ],
+                [
+                  "mā",
+                  "raftēm"
+                ],
+                [
+                  "shumā",
+                  "raftēd"
+                ],
+                [
+                  "ānhā",
+                  "raftand"
+                ]
+              ],
+              "examples": [
+                {
+                  "dari": "دیروز به بازار رفتم",
+                  "translit": "dīrōz ba bāzār raftam",
+                  "en": "Yesterday I went to the bazaar.",
+                  "highlight": "رفتم"
+                }
+              ]
+            },
+            {
+              "id": "gs-13-2",
+              "title": "Time words",
+              "body": "dīrōz — yesterday, emrōz — today, fardā — tomorrow. They usually open the sentence.",
+              "examples": [
+                {
+                  "dari": "دیروز کار کردم",
+                  "translit": "dīrōz kār kardam",
+                  "en": "Yesterday I worked.",
+                  "highlight": "دیروز"
+                },
+                {
+                  "dari": "او امروز آمد",
+                  "translit": "ō emrōz āmad",
+                  "en": "He came today.",
+                  "highlight": "آمد"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-13-1",
+              "type": "fillBlank",
+              "dari": "دیروز من به بازار ___",
+              "translit": "dīrōz man ba bāzār ___",
+              "en": "Yesterday I went to the bazaar.",
+              "answer": {
+                "dari": "رفتم",
+                "translit": "raftam"
+              },
+              "distractors": [
+                {
+                  "dari": "رفت",
+                  "translit": "raft"
+                },
+                {
+                  "dari": "می‌روم",
+                  "translit": "mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-2",
+              "type": "fillBlank",
+              "dari": "او دیروز ___",
+              "translit": "ō dīrōz ___",
+              "en": "He came yesterday.",
+              "answer": {
+                "dari": "آمد",
+                "translit": "āmad"
+              },
+              "distractors": [
+                {
+                  "dari": "آمدم",
+                  "translit": "āmadam"
+                },
+                {
+                  "dari": "می‌آید",
+                  "translit": "mēāyad"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "ما نان خوردیم",
+              "translit": "mā nān khurdēm",
+              "en": "We ate bread.",
+              "distractorsEn": [
+                "We eat bread.",
+                "They ate bread."
+              ]
+            },
+            {
+              "id": "ge-13-4",
+              "type": "buildSentence",
+              "en": "I saw the teacher.",
+              "words": [
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "معلم",
+                  "translit": "mu'allem"
+                },
+                {
+                  "dari": "را",
+                  "translit": "rā"
+                },
+                {
+                  "dari": "دیدم",
+                  "translit": "dīdam"
+                }
+              ],
+              "translit": "man mu'allem rā dīdam",
+              "extraWords": [
+                {
+                  "dari": "دید",
+                  "translit": "dīd"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-5",
+              "type": "fillBlank",
+              "dari": "تو چای ___",
+              "translit": "tu chāy ___",
+              "en": "You drank tea.",
+              "answer": {
+                "dari": "خوردی",
+                "translit": "khurdi"
+              },
+              "distractors": [
+                {
+                  "dari": "خوردم",
+                  "translit": "khurdam"
+                },
+                {
+                  "dari": "می‌خوری",
+                  "translit": "mēkhuri"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-6",
+              "type": "matchPairs",
+              "prompt": "Match present and past",
+              "pairs": [
+                {
+                  "dari": "می‌روم",
+                  "translit": "mērawam",
+                  "en": "I go"
+                },
+                {
+                  "dari": "رفتم",
+                  "translit": "raftam",
+                  "en": "I went"
+                },
+                {
+                  "dari": "می‌بینم",
+                  "translit": "mēbīnam",
+                  "en": "I see"
+                },
+                {
+                  "dari": "دیدم",
+                  "translit": "dīdam",
+                  "en": "I saw"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-7",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "آنها به خانه رفتند",
+              "translit": "ānhā ba khāna raftand",
+              "en": "They went home.",
+              "distractorsDari": [
+                {
+                  "dari": "آنها به خانه می‌روند",
+                  "translit": "ānhā ba khāna mērawand"
+                },
+                {
+                  "dari": "او به خانه رفت",
+                  "translit": "ō ba khāna raft"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-14",
+          "title": "Didn't — and done!",
+          "subtitle": "Past negation, then everything together",
+          "grammarPoint": "past-negation-capstone",
+          "grammarPointEn": "Past negation with na- (nakardam, naraftam), plus mixed review of every A1 point: to be, plurals, ezāfa, prepositions, hast/nēst, dāshtan, present mē-, object rā, negation, and the simple past.",
+          "slides": [
+            {
+              "id": "gs-14-1",
+              "title": "na- + past",
+              "body": "The past negates with a simple na- in front: kardam → nakardam.",
+              "examples": [
+                {
+                  "dari": "من دیروز کار نکردم",
+                  "translit": "man dīrōz kār nakardam",
+                  "en": "I didn't work yesterday.",
+                  "highlight": "نکردم"
+                },
+                {
+                  "dari": "او به مکتب نرفت",
+                  "translit": "ō ba maktab naraft",
+                  "en": "He didn't go to school.",
+                  "highlight": "نرفت"
+                }
+              ]
+            },
+            {
+              "id": "gs-14-2",
+              "title": "You made it!",
+              "body": "That's the whole A1 toolkit: to be, plurals, ezāfa, prepositions, hast, dāshtan, the present, rā, negation and the past. These last exercises mix everything.",
+              "examples": [
+                {
+                  "dari": "من دری می‌خوانم و دیروز یک کتاب خواندم",
+                  "translit": "man darī mēkhānam wa dīrōz yak ketāb khāndam",
+                  "en": "I study Dari, and yesterday I read a book."
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-14-1",
+              "type": "fillBlank",
+              "dari": "من دیروز کار ___",
+              "translit": "man dīrōz kār ___",
+              "en": "I didn't work yesterday.",
+              "answer": {
+                "dari": "نکردم",
+                "translit": "nakardam"
+              },
+              "distractors": [
+                {
+                  "dari": "کردم",
+                  "translit": "kardam"
+                },
+                {
+                  "dari": "نمی‌کنم",
+                  "translit": "namēkunam"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-2",
+              "type": "fillBlank",
+              "dari": "او به مکتب ___",
+              "translit": "ō ba maktab ___",
+              "en": "He didn't go to school.",
+              "answer": {
+                "dari": "نرفت",
+                "translit": "naraft"
+              },
+              "distractors": [
+                {
+                  "dari": "رفت",
+                  "translit": "raft"
+                },
+                {
+                  "dari": "نرفتم",
+                  "translit": "naraftam"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "dari": "ما آن کتاب را نخواندیم",
+              "translit": "mā ān ketāb rā nakhāndēm",
+              "en": "We didn't read that book.",
+              "distractorsEn": [
+                "We read that book.",
+                "We don't read that book."
+              ]
+            },
+            {
+              "id": "ge-14-4",
+              "type": "buildSentence",
+              "en": "Yesterday I went to the city.",
+              "words": [
+                {
+                  "dari": "دیروز",
+                  "translit": "dīrōz"
+                },
+                {
+                  "dari": "به",
+                  "translit": "ba"
+                },
+                {
+                  "dari": "شهر",
+                  "translit": "shahr"
+                },
+                {
+                  "dari": "رفتم",
+                  "translit": "raftam"
+                }
+              ],
+              "translit": "dīrōz ba shahr raftam",
+              "extraWords": [
+                {
+                  "dari": "نرفتم",
+                  "translit": "naraftam"
+                }
+              ],
+              "hint": "You can drop the pronoun — the ending already says who."
+            },
+            {
+              "id": "ge-14-5",
+              "type": "fillBlank",
+              "dari": "من دو برادر ___",
+              "translit": "man dū barādar ___",
+              "en": "I have two brothers.",
+              "answer": {
+                "dari": "دارم",
+                "translit": "dāram"
+              },
+              "distractors": [
+                {
+                  "dari": "داری",
+                  "translit": "dāri"
+                },
+                {
+                  "dari": "ندارم",
+                  "translit": "nadāram"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-6",
+              "type": "chooseTranslation",
+              "direction": "toDari",
+              "dari": "در خانه آب نیست",
+              "translit": "dar khāna āb nēst",
+              "en": "There is no water in the house.",
+              "distractorsDari": [
+                {
+                  "dari": "در خانه آب هست",
+                  "translit": "dar khāna āb hast"
+                },
+                {
+                  "dari": "در خانه آب است",
+                  "translit": "dar khāna āb ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-7",
+              "type": "matchPairs",
+              "prompt": "Match — the grand finale",
+              "pairs": [
+                {
+                  "dari": "رفتم",
+                  "translit": "raftam",
+                  "en": "I went"
+                },
+                {
+                  "dari": "نرفتم",
+                  "translit": "naraftam",
+                  "en": "I didn't go"
+                },
+                {
+                  "dari": "می‌روم",
+                  "translit": "mērawam",
+                  "en": "I go"
+                },
+                {
+                  "dari": "نمی‌روم",
+                  "translit": "namērawam",
+                  "en": "I don't go"
+                },
+                {
+                  "dari": "دارم",
+                  "translit": "dāram",
+                  "en": "I have"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-8",
+              "type": "buildSentence",
+              "en": "I don't drink cold water.",
+              "words": [
+                {
+                  "dari": "من",
+                  "translit": "man"
+                },
+                {
+                  "dari": "آب",
+                  "translit": "āb-e"
+                },
+                {
+                  "dari": "سرد",
+                  "translit": "sard"
+                },
+                {
+                  "dari": "نمی‌خورم",
+                  "translit": "namēkhuram"
+                }
+              ],
+              "translit": "man āb-e sard namēkhuram",
+              "extraWords": [
+                {
+                  "dari": "می‌خورم",
+                  "translit": "mēkhuram"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

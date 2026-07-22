@@ -64,6 +64,14 @@ export interface AlphabetProgressRow {
   total: number;
 }
 
+export interface GrammarProgressRow {
+  user_id: string;
+  lesson_id: string;
+  completed_at: string | null;
+  correct: number;
+  total: number;
+}
+
 export interface ChatMessageRow {
   id: string;
   user_id: string;

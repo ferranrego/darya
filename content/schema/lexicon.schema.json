@@ -85,6 +85,10 @@
               "minLength": 1
             }
           },
+          "presentStem": {
+            "type": "string",
+            "minLength": 1
+          },
           "exampleDari": {
             "type": "string",
             "minLength": 1

@@ -6,6 +6,12 @@
  * rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants
  *
  * Run: pnpm build:lexicon
+ *
+ * WARNING: the core-lexicon-*.txt sources are STALE relative to the committed
+ * content/lexicon/lexicon.json — later enrichment (merge-*.js appended entries,
+ * enrich-verb-stems.ts presentStem fields, variant cleanup) was written into
+ * lexicon.json directly. Re-running this script would destroy that data. Do
+ * not run it unless you first fold those changes back into the txt sources.
  */
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";

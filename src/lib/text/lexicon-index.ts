@@ -1,9 +1,11 @@
 import type { LexiconEntry } from "../content/schema.ts";
+import { conjugationSurfaces, derivePastStem, VERB_OVERRIDES, type VerbStems } from "./conjugate.ts";
 import { matchKey, ZWNJ } from "./normalize.ts";
 
 /**
  * Fast surface-form → lexeme lookup. Headwords win over variants when both
- * claim the same key (homograph policy, see content/lexicon/README.md).
+ * claim the same key (homograph policy, see content/lexicon/README.md), and
+ * authored data (headwords, variants) wins over generated conjugations.
  */
 export interface LexiconIndex {
   byId: Map<string, LexiconEntry>;
@@ -14,6 +16,10 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
   const byId = new Map<string, LexiconEntry>();
   const headwords = new Map<string, LexiconEntry>();
   const variants = new Map<string, LexiconEntry>();
+  // Generated verb paradigms (کرده‌ام، نمی‌روم، بخوانید…). Lowest precedence;
+  // first write wins, and entries are freqRank-ordered in the lexicon file,
+  // so frequent verbs claim contested keys.
+  const conjugations = new Map<string, LexiconEntry>();
 
   for (const entry of entries) {
     byId.set(entry.id, entry);
@@ -24,13 +30,48 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
     }
   }
 
+  // Pass 2: expand verb paradigms. Simple verbs conjugate their own
+  // infinitive; compound verbs (کار کردن) conjugate their light verb, but
+  // only when no simple entry owns it — the tokenizer splits compounds, so
+  // at token level the light verb's forms are what get tapped.
+  const simpleVerbKeys = new Set(
+    entries
+      .filter((e) => e.pos === "verb" && !e.dariNormalized.includes(" ") && /(دن|تن)$/.test(e.dariNormalized))
+      .map((e) => matchKey(e.dariNormalized))
+  );
+  for (const entry of entries) {
+    if (entry.pos !== "verb") continue;
+    const infinitive = entry.dariNormalized.split(" ").at(-1)!;
+    if (!/(دن|تن)$/.test(infinitive)) continue;
+    const isCompound = entry.dariNormalized.includes(" ");
+    if (isCompound && simpleVerbKeys.has(matchKey(infinitive))) continue;
+    if (isCompound && !entry.presentStem) continue; // carrier entries only
+
+    const override = VERB_OVERRIDES[matchKey(infinitive)];
+    const pastStem = derivePastStem(infinitive);
+    if (!pastStem) continue;
+    const stems: VerbStems = {
+      pastStem: override?.prefix ? pastStem.slice(override.prefix.length) : pastStem,
+      presentStem: override?.skip ? null : override?.presentStem ?? entry.presentStem ?? null,
+      prefix: override?.prefix,
+      noMiPresent: override?.noMiPresent,
+    };
+    for (const surface of conjugationSurfaces(stems)) {
+      const key = matchKey(surface);
+      if (!conjugations.has(key)) conjugations.set(key, entry);
+    }
+  }
+
+  const lookup = (key: string) =>
+    headwords.get(key) ?? variants.get(key) ?? conjugations.get(key);
+
   return {
     byId,
     resolve(surface: string) {
       const key = matchKey(surface);
-      
-      // 1. Exact match (Headword or Variant)
-      let match = headwords.get(key) ?? variants.get(key);
+
+      // 1. Exact match (headword, variant, or generated conjugation)
+      let match = lookup(key);
       if (match) return match;
 
       // 2. Basic Stemmer for common Persian enclitics, plural markers, and comparatives
@@ -47,9 +88,17 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
           const root = key.slice(0, -suffix.length);
           // Strip ZWNJ if it was placed immediately before the suffix (e.g., خانه-ام)
           const cleanRoot = root.endsWith(ZWNJ) ? root.slice(0, -1) : root;
-          
-          match = headwords.get(cleanRoot) ?? variants.get(cleanRoot);
+
+          match = lookup(cleanRoot);
           if (match) return match;
+
+          // Perfect participle safety net (uncommon verbs without stems):
+          // strip the participle's ه to reach the past stem, e.g. an object
+          // enclitic form like دیده‌مش → دیده → دید.
+          if (cleanRoot.endsWith("ه") && cleanRoot.length > 2) {
+            match = lookup(cleanRoot.slice(0, -1));
+            if (match) return match;
+          }
         }
       }
 

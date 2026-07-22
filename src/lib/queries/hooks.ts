@@ -3,6 +3,7 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useMemo, useState } from "react";
 import { getAlphabetProgress } from "../db/alphabet";
+import { getGrammarProgress } from "../db/grammar";
 import { getProfile } from "../db/profiles";
 import { getReadTexts, getTextsForLevel } from "../db/texts";
 import { getUserWords } from "../db/words";
@@ -108,6 +109,16 @@ export function useAlphabetProgress() {
   });
 }
 
+export function useGrammarProgress() {
+  const db = useSupabase();
+  const { data: user } = useUser();
+  return useQuery({
+    queryKey: ["grammar_progress", user?.id],
+    enabled: !!user,
+    queryFn: () => getGrammarProgress(db, user!.id),
+  });
+}
+
 /** Invalidate the per-user caches that change after any learning action. */
 export function useInvalidateLearning() {
   const qc = useQueryClient();
@@ -117,6 +128,7 @@ export function useInvalidateLearning() {
       qc.invalidateQueries({ queryKey: ["user_words"] }),
       qc.invalidateQueries({ queryKey: ["user_texts"] }),
       qc.invalidateQueries({ queryKey: ["alphabet_progress"] }),
+      qc.invalidateQueries({ queryKey: ["grammar_progress"] }),
       qc.invalidateQueries({ queryKey: ["activity"] }),
     ]);
 }

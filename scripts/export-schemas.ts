@@ -7,6 +7,7 @@ import { join } from "node:path";
 import { z } from "zod";
 import {
   alphabetCourseSchema,
+  grammarCourseSchema,
   lexiconFileSchema,
   levelsFileSchema,
   textDocumentSchema,
@@ -18,6 +19,7 @@ mkdirSync(outDir, { recursive: true });
 const targets: Array<[string, z.ZodType]> = [
   ["lexicon", lexiconFileSchema],
   ["alphabet-course", alphabetCourseSchema],
+  ["grammar-course", grammarCourseSchema],
   ["levels", levelsFileSchema],
   ["text-document", textDocumentSchema],
 ];

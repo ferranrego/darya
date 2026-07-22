@@ -56,7 +56,10 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
+  // Exclude /api: those routes authenticate themselves (session cookie for
+  // user routes, bearer secrets for the cron and chat-notify webhooks). Without
+  // this, server-to-server calls with no cookie get redirected to /welcome.
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|icons|fonts|.*\\.(?:svg|png|jpg|webp|woff2)$).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|icons|fonts|.*\\.(?:svg|png|jpg|webp|woff2)$).*)",
   ],
 };

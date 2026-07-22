@@ -26,7 +26,7 @@ export function TabBar() {
 
   return (
     <nav
-      className="fixed bottom-0 inset-x-0 z-40 w-full pb-[max(env(safe-area-inset-bottom),12px)] pointer-events-none"
+      className="fixed bottom-0 inset-x-0 z-40 w-full pb-[max(env(safe-area-inset-bottom),12px)] pointer-events-none [transform:translateZ(0)] [will-change:transform] [backface-visibility:hidden]"
     >
       <div className="mx-auto flex max-w-[360px] items-center justify-center px-4 pointer-events-auto">
         <div className="flex w-full items-center justify-between rounded-full border border-line/70 bg-paper/90 backdrop-blur-xl p-1.5 shadow-lg">

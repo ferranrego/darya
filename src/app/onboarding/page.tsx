@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
+import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { sampleAssessmentWords, scoreAssessment } from "@/lib/assessment";
 import { lexicon } from "@/lib/content/load";
@@ -71,6 +72,14 @@ export default function OnboardingPage() {
       <AnimatePresence mode="wait">
         {step === "hello" && (
           <motion.div key="hello" {...stepMotion} className="my-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, y: 8 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ delay: 0.1, type: "spring", stiffness: 260, damping: 18 }}
+              className="mb-6 flex justify-center"
+            >
+              <Poncha pose="wave" size={180} priority />
+            </motion.div>
             <p lang="prs" className="text-[56px] text-lapis">
               خوش آمدید
             </p>
@@ -181,6 +190,14 @@ export default function OnboardingPage() {
 
         {step === "result" && result && (
           <motion.div key="result" {...stepMotion} className="my-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, y: 8 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ delay: 0.1, type: "spring", stiffness: 260, damping: 18 }}
+              className="mb-5 flex justify-center"
+            >
+              <Poncha pose="celebrate" size={150} />
+            </motion.div>
             <p className="text-[14px] font-medium uppercase tracking-wide text-ink-faint">
               Your starting point
             </p>

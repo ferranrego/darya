@@ -8,6 +8,7 @@ export const XP = {
   review: 2,
   wordLearned: 5,
   alphabetUnit: 15,
+  grammarLesson: 15,
 } as const;
 
 /**

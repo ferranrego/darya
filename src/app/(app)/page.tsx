@@ -1,14 +1,22 @@
 "use client";
 
-import { BookOpen, Flame, RotateCcw, SpellCheck } from "lucide-react";
+import { Blocks, BookOpen, Flame, RotateCcw, SpellCheck } from "lucide-react";
 import Link from "next/link";
 import { ActionCard } from "@/components/ui/action-card";
 import { ProgressRing } from "@/components/ui/progress-ring";
-import { alphabetCourse } from "@/lib/content/load";
+import {
+  GRAMMAR_LEVEL_ORDER,
+  alphabetCourse,
+  grammarCourses,
+  grammarLessonLevel,
+  grammarLessons,
+  grammarStartLevel,
+} from "@/lib/content/load";
 import { getTodayActivity } from "@/lib/db/activity";
 import {
   useAlphabetProgress,
   useDueCount,
+  useGrammarProgress,
   useProfile,
   useSupabase,
   useUser,
@@ -34,6 +42,7 @@ export default function HomePage() {
   const { data: words } = useUserWords();
   const { data: todayXp = 0 } = useTodayXp();
   const { data: alphaProgress } = useAlphabetProgress();
+  const { data: grammarProgress } = useGrammarProgress();
   const dueCount = useDueCount();
 
   const knownCount = words?.filter((w) => w.status === "known").length ?? 0;
@@ -42,6 +51,22 @@ export default function HomePage() {
   const completedUnits = alphaProgress?.filter((u) => u.completed_at).length ?? 0;
   const totalUnits = alphabetCourse.units.length;
   const showAlphabet = profile?.can_read_script === false && completedUnits < totalUnits;
+
+  // Grammar levels the learner tested past are skipped; count only active ones.
+  const startIdx = GRAMMAR_LEVEL_ORDER.indexOf(grammarStartLevel(profile?.level_estimate));
+  const completedRows = new Set(
+    grammarProgress?.filter((l) => l.completed_at).map((l) => l.lesson_id),
+  );
+  const activeLessons = grammarLessons.filter(
+    (l) => GRAMMAR_LEVEL_ORDER.indexOf(grammarLessonLevel(l.id) ?? "A1") >= startIdx,
+  );
+  const completedLessons = activeLessons.filter((l) => completedRows.has(l.id)).length;
+  const grammarComplete = completedLessons >= activeLessons.length;
+  // Current level = the level of the first not-yet-done active lesson.
+  const currentGrammarLevel =
+    grammarLessonLevel(activeLessons.find((l) => !completedRows.has(l.id))?.id ?? "") ??
+    grammarCourses[startIdx]?.level ??
+    "A1";
 
   const firstName = profile?.display_name?.split(" ")[0] || "there";
 
@@ -85,11 +110,22 @@ export default function HomePage() {
           />
         )}
         <ActionCard
+          href="/grammar"
+          icon={<Blocks size={20} />}
+          title="Grammar"
+          subtitle={
+            grammarComplete
+              ? `All ${activeLessons.length} lessons done · how Dari fits together`
+              : `${currentGrammarLevel} · ${completedLessons} of ${activeLessons.length} lessons · how Dari fits together`
+          }
+          accent={!showAlphabet && !grammarComplete}
+        />
+        <ActionCard
           href="/read"
           icon={<BookOpen size={20} />}
           title="Read"
           subtitle={`Level ${profile?.level_estimate?.replace("L", "") ?? "1"} · texts tuned to your words`}
-          accent={!showAlphabet}
+          accent={!showAlphabet && grammarComplete}
         />
         <ActionCard
           href="/review"

@@ -6,15 +6,19 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import {
   alphabetCourseSchema,
+  grammarCourseSchema,
   lexiconFileSchema,
   levelsFileSchema,
   textDocumentSchema,
   type AlphabetCourse,
+  type GrammarExercise,
   type LexiconFile,
   type LevelsFile,
   type TextDocument,
 } from "../src/lib/content/schema.ts";
-import { matchKey, normalizeDari } from "../src/lib/text/normalize.ts";
+import { buildAllowedFormKeys } from "../src/lib/text/dari-forms.ts";
+import { buildLexiconIndex } from "../src/lib/text/lexicon-index.ts";
+import { matchKey, normalizeDari, tokenizeDari } from "../src/lib/text/normalize.ts";
 
 const root = join(import.meta.dirname, "..", "content");
 let errors = 0;
@@ -49,6 +53,14 @@ if (existsSync(lexiconPath)) {
       const clash = keys.get(key);
       if (clash) fail(`lexicon: ${e.id} and ${clash} share match key "${key}"`);
       keys.set(key, e.id);
+      if (e.presentStem !== undefined) {
+        if (!/^[؀-ۿ‌]+$/.test(e.presentStem)) {
+          fail(`lexicon ${e.id}: presentStem not Persian script (${e.presentStem})`);
+        }
+        if (e.presentStem !== normalizeDari(e.presentStem)) {
+          fail(`lexicon ${e.id}: presentStem not normalized (${e.presentStem})`);
+        }
+      }
     }
     console.log(`✓ lexicon.json (${lexicon.entries.length} entries)`);
   }
@@ -103,6 +115,153 @@ if (existsSync(coursePath)) {
     console.log(`✓ course.json (${course.units.length} units, ${letterCount} letters)`);
   }
 } else fail("course.json missing");
+
+// --- Grammar courses (one file per CEFR level) -----------------------------
+{
+  const index = lexicon ? buildLexiconIndex(lexicon.entries) : null;
+  const allowedForms = lexicon ? buildAllowedFormKeys(lexicon.entries) : new Set<string>();
+
+  // ids must be globally unique across every level file.
+  const blockIds = new Set<string>();
+  const lessonIds = new Set<string>();
+  const exerciseIds = new Set<string>();
+
+  function checkVocab(where: string, dari: string, warn: () => void) {
+    if (!index) return;
+    for (const token of tokenizeDari(dari)) {
+      if (token === "___") continue;
+      if (index.resolve(token)) continue;
+      if (allowedForms.has(matchKey(token))) continue;
+      warn();
+      console.warn(`⚠ grammar ${where}: "${token}" not in lexicon`);
+    }
+  }
+
+  function checkNormalized(where: string, dari: string) {
+    if (dari !== normalizeDari(dari)) fail(`grammar ${where}: Dari not normalized ("${dari}")`);
+  }
+
+  function checkExercise(where: string, ex: GrammarExercise, warn: () => void) {
+    switch (ex.type) {
+      case "fillBlank": {
+        checkNormalized(where, ex.dari);
+        checkNormalized(`${where} answer`, ex.answer.dari);
+        const answerKey = normalizeDari(ex.answer.dari);
+        for (const d of ex.distractors) {
+          checkNormalized(`${where} distractor`, d.dari);
+          if (normalizeDari(d.dari) === answerKey) fail(`${where}: distractor equals answer ("${d.dari}")`);
+        }
+        checkVocab(where, ex.dari.replace("___", ex.answer.dari), warn);
+        break;
+      }
+      case "buildSentence": {
+        const wordKeys = new Set(ex.words.map((w) => normalizeDari(w.dari)));
+        for (const w of [...ex.words, ...ex.extraWords]) checkNormalized(where, w.dari);
+        for (const x of ex.extraWords) {
+          if (wordKeys.has(normalizeDari(x.dari))) fail(`${where}: extraWord duplicates a sentence word ("${x.dari}")`);
+        }
+        checkVocab(where, ex.words.map((w) => w.dari).join(" "), warn);
+        break;
+      }
+      case "chooseTranslation": {
+        checkNormalized(where, ex.dari);
+        if (ex.direction === "toEn" && ex.distractorsEn.length < 2) {
+          fail(`${where}: toEn needs at least 2 distractorsEn`);
+        }
+        if (ex.direction === "toDari" && ex.distractorsDari.length < 2) {
+          fail(`${where}: toDari needs at least 2 distractorsDari`);
+        }
+        if (ex.distractorsEn.includes(ex.en)) fail(`${where}: distractorsEn contains the answer`);
+        const dariKey = normalizeDari(ex.dari);
+        for (const d of ex.distractorsDari) {
+          checkNormalized(`${where} distractor`, d.dari);
+          if (normalizeDari(d.dari) === dariKey) fail(`${where}: distractorsDari contains the answer`);
+        }
+        checkVocab(where, ex.dari, warn);
+        break;
+      }
+      case "matchPairs": {
+        const dariSeen = new Set<string>();
+        const enSeen = new Set<string>();
+        for (const p of ex.pairs) {
+          checkNormalized(where, p.dari);
+          const dk = normalizeDari(p.dari);
+          if (dariSeen.has(dk)) fail(`${where}: duplicate pair Dari "${p.dari}"`);
+          if (enSeen.has(p.en)) fail(`${where}: duplicate pair English "${p.en}"`);
+          dariSeen.add(dk);
+          enSeen.add(p.en);
+          checkVocab(where, p.dari, warn);
+        }
+        break;
+      }
+      case "spotError": {
+        checkNormalized(where, ex.dari);
+        checkNormalized(`${where} correction`, ex.correction.dari);
+        const tokens = tokenizeDari(ex.dari).map((t) => normalizeDari(t));
+        if (!tokens.includes(normalizeDari(ex.errorWord.dari))) {
+          fail(`${where}: errorWord "${ex.errorWord.dari}" is not a token of the sentence`);
+        }
+        if (normalizeDari(ex.errorWord.dari) === normalizeDari(ex.correction.dari)) {
+          fail(`${where}: correction equals errorWord`);
+        }
+        // Vocab-check the corrected sentence, not the (deliberately wrong) one.
+        const corrected = ex.dari.replace(ex.errorWord.dari, ex.correction.dari);
+        checkVocab(where, corrected, warn);
+        break;
+      }
+    }
+  }
+
+  for (const level of ["a1", "a2", "b1", "b2", "c1", "c2"]) {
+    const path = join(root, "grammar", `${level}.json`);
+    if (!existsSync(path)) {
+      // A1 must exist; higher levels are optional until authored.
+      if (level === "a1") fail(`grammar/${level}.json missing`);
+      continue;
+    }
+    const parsed = grammarCourseSchema.safeParse(loadJson(path));
+    if (!parsed.success) {
+      fail(`grammar/${level}.json: ${parsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`);
+      continue;
+    }
+    const course = parsed.data;
+    if (course.level.toLowerCase() !== level) {
+      fail(`grammar/${level}.json: level field is "${course.level}", expected ${level.toUpperCase()}`);
+    }
+    let warnings = 0;
+    const warn = () => {
+      warnings++;
+    };
+    let lessonCount = 0;
+    let exerciseCount = 0;
+    for (const block of course.blocks) {
+      if (blockIds.has(block.id)) fail(`grammar: duplicate block id ${block.id}`);
+      blockIds.add(block.id);
+      for (const lesson of block.lessons) {
+        if (lessonIds.has(lesson.id)) fail(`grammar: duplicate lesson id ${lesson.id}`);
+        lessonIds.add(lesson.id);
+        lessonCount++;
+        for (const slide of lesson.slides) {
+          for (const exm of slide.examples) {
+            checkNormalized(`${lesson.id}/${slide.id}`, exm.dari);
+            if (exm.highlight && !exm.dari.includes(exm.highlight)) {
+              fail(`grammar ${lesson.id}/${slide.id}: highlight "${exm.highlight}" not in "${exm.dari}"`);
+            }
+            checkVocab(`${lesson.id}/${slide.id}`, exm.dari, warn);
+          }
+        }
+        for (const ex of lesson.exercises) {
+          if (exerciseIds.has(ex.id)) fail(`grammar: duplicate exercise id ${ex.id}`);
+          exerciseIds.add(ex.id);
+          exerciseCount++;
+          checkExercise(`${lesson.id}/${ex.id}`, ex, warn);
+        }
+      }
+    }
+    const warnNote = warnings > 0 ? `, ${warnings} vocab warning(s)` : "";
+    console.log(`✓ grammar/${level}.json (${course.blocks.length} blocks, ${lessonCount} lessons, ${exerciseCount} exercises${warnNote})`);
+  }
+}
 
 // --- Seed texts ------------------------------------------------------------
 const seedDir = join(root, "texts", "seed");

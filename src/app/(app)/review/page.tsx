@@ -5,6 +5,7 @@ import { Check, RotateCcw, Sparkles, Brain, BookOpen, TrendingUp } from "lucide-
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState } from "react";
+import { Poncha, type PonchaPose } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { lexemeById } from "@/lib/content/load";
 import { logReview, upsertUserWord } from "@/lib/db/words";
@@ -115,9 +116,10 @@ export default function ReviewPage() {
   if (queue.length === 0) {
     return (
       <EmptyState
+        poncha="sleep"
         icon={<Check size={24} />}
         title="All caught up"
-        body="No words are due right now. Read something new. Tapped words will show up here."
+        body="Nothing due right now — Poncha's taking a nap. Read something new and tapped words will show up here."
       />
     );
   }
@@ -344,10 +346,24 @@ function StatCard({
   );
 }
 
-function EmptyState({ icon, title, body }: { icon: React.ReactNode; title: string; body: string }) {
+function EmptyState({
+  icon,
+  title,
+  body,
+  poncha,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  body: string;
+  poncha?: PonchaPose;
+}) {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center py-32 text-center">
-      <div className="flex size-14 items-center justify-center rounded-full bg-sabz-soft text-sabz">{icon}</div>
+    <div className="flex flex-1 flex-col items-center justify-center py-24 text-center">
+      {poncha ? (
+        <Poncha pose={poncha} size={150} />
+      ) : (
+        <div className="flex size-14 items-center justify-center rounded-full bg-sabz-soft text-sabz">{icon}</div>
+      )}
       <h2 className="mt-6 text-[20px] font-semibold">{title}</h2>
       <p className="mx-auto mt-2 max-w-xs text-[14px] leading-relaxed text-ink-soft">{body}</p>
     </div>

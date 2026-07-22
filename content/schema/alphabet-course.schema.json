@@ -115,7 +115,7 @@
                       "type": "string"
                     },
                     "distractors": {
-                      "minItems": 2,
+                      "minItems": 3,
                       "type": "array",
                       "items": {
                         "type": "string"
@@ -196,7 +196,7 @@
                       "type": "string"
                     },
                     "distractors": {
-                      "minItems": 2,
+                      "minItems": 3,
                       "type": "array",
                       "items": {
                         "type": "string"
@@ -288,6 +288,95 @@
                     "dari",
                     "translit",
                     "en"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "hint": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "const": "recognizeForm"
+                    },
+                    "targetChar": {
+                      "type": "string"
+                    },
+                    "targetForm": {
+                      "type": "string",
+                      "enum": [
+                        "initial",
+                        "medial",
+                        "final",
+                        "isolated"
+                      ]
+                    },
+                    "glyph": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "distractors": {
+                      "minItems": 3,
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "type",
+                    "targetChar",
+                    "targetForm",
+                    "glyph",
+                    "distractors"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "hint": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "const": "constructWord"
+                    },
+                    "letters": {
+                      "minItems": 2,
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "targetWord": {
+                      "type": "string"
+                    },
+                    "distractors": {
+                      "minItems": 3,
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "type",
+                    "letters",
+                    "targetWord",
+                    "distractors"
                   ],
                   "additionalProperties": false
                 }
