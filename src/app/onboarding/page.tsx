@@ -11,7 +11,7 @@ import { updateProfile } from "@/lib/db/profiles";
 import { seedKnownWords } from "@/lib/db/words";
 import { useSupabase, useUser } from "@/lib/queries/hooks";
 
-type Step = "hello" | "script" | "assessment" | "result";
+type Step = "hello" | "install" | "script" | "assessment" | "result";
 
 const stepMotion = {
   initial: { opacity: 0, y: 16 },
@@ -31,6 +31,17 @@ export default function OnboardingPage() {
   const [busy, setBusy] = useState(false);
 
   const words = useMemo(() => sampleAssessmentWords(lexicon.entries), []);
+
+  function startWizard() {
+    if (
+      typeof window !== "undefined" &&
+      (window.matchMedia("(display-mode: standalone)").matches || (window.navigator as any).standalone)
+    ) {
+      setStep("script");
+    } else {
+      setStep("install");
+    }
+  }
 
   function startAssessment(reads: boolean) {
     setCanRead(reads);
@@ -91,9 +102,42 @@ export default function OnboardingPage() {
               Darya gives you short texts where you already know almost every word,
               plus just enough new ones to grow. Tap any word to see what it means.
             </p>
-            <Button size="lg" className="mt-10" onClick={() => setStep("script")}>
-              Let&apos;s begin
+            <Button size="lg" className="mt-10" onClick={startWizard}>
+              Let's begin
             </Button>
+          </motion.div>
+        )}
+
+        {step === "install" && (
+          <motion.div key="install" {...stepMotion} className="my-auto text-center">
+            <div className="mb-6 flex justify-center">
+              <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-lapis text-white shadow-[0_4px_16px_rgba(43,76,140,0.3)]">
+                <svg className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                </svg>
+              </div>
+            </div>
+            <h1 className="mt-8 text-[24px] font-semibold tracking-tight">
+              Add to Home Screen
+            </h1>
+            <p className="mx-auto mt-4 max-w-sm text-[15px] leading-relaxed text-ink-soft">
+              For the best experience, install Darya as an app on your phone.
+            </p>
+            <div className="mx-auto mt-8 flex max-w-xs flex-col gap-4 rounded-2xl border border-line bg-surface p-5 text-left text-[14.5px] text-ink-soft">
+              <p className="flex items-center gap-3.5">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-line/50 text-[11px] font-bold text-ink">1</span>
+                <span>Tap <strong>Share</strong> (iOS) or <strong>Menu</strong> (Android)</span>
+              </p>
+              <p className="flex items-center gap-3.5">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-line/50 text-[11px] font-bold text-ink">2</span>
+                <span>Select <strong>Add to Home Screen</strong></span>
+              </p>
+            </div>
+            <div className="mt-10 flex flex-col items-center gap-3">
+              <Button size="lg" onClick={() => setStep("script")}>
+                Continue
+              </Button>
+            </div>
           </motion.div>
         )}
 

@@ -42,7 +42,7 @@ export function WordSheet({
   const open = surface !== null;
   const badge = statusLabel[status];
   
-  const isConjugatedVerb = entry && surface && entry.dari !== surface;
+  const isVerb = entry?.pos === "verb";
 
   const handleAnalyze = async () => {
     if (!surface || !entry) return;
@@ -73,14 +73,14 @@ export function WordSheet({
             key="sheet"
             role="dialog"
             aria-modal="true"
-            className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-2xl rounded-t-3xl border border-b-0 border-line bg-surface px-6 pb-10 pt-3 shadow-[0_-8px_40px_rgba(31,26,23,0.12)]"
+            className="fixed inset-x-0 bottom-0 z-50 mx-auto max-h-[85dvh] w-full max-w-2xl overflow-y-auto rounded-t-3xl border border-b-0 border-line bg-surface px-6 pb-10 pt-3 shadow-[0_-8px_40px_rgba(31,26,23,0.12)]"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             exit={{ y: "100%" }}
             transition={{ type: "spring", stiffness: 500, damping: 42 }}
             style={{ paddingBottom: "calc(env(safe-area-inset-bottom) + 2rem)" }}
           >
-            <div className="mx-auto mb-4 h-1 w-9 rounded-full bg-line" />
+            <div className="mx-auto mb-4 h-1 w-9 shrink-0 rounded-full bg-line" />
             {entry ? (
               <div>
                 <div className="flex items-start justify-between gap-4">
@@ -106,7 +106,7 @@ export function WordSheet({
                   <p className="mt-0.5 text-[13px] text-ink-faint">{entry.exampleEn}</p>
                 </div>
 
-                {isConjugatedVerb && (
+                {isVerb && (
                   <div className="mt-5 border-t border-line pt-5">
                     {conjugation ? (
                       <div className="rounded-2xl border border-line bg-paper/50 p-4">

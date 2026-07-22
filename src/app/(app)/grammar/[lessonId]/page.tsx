@@ -5,16 +5,17 @@ import { ArrowLeft, Check, Sparkles } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { GrammarExercisePlayer } from "@/components/grammar/exercise-player";
 import { SlideCard } from "@/components/grammar/slide-card";
+import { NotificationPrompt } from "@/components/notification-prompt";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { grammarLessonById, grammarLessons } from "@/lib/content/load";
 import type { GrammarExercise } from "@/lib/content/schema";
 import { completeGrammarLesson } from "@/lib/db/grammar";
 import { XP, recordActivity } from "@/lib/gamification";
-import { useInvalidateLearning, useSupabase, useUser } from "@/lib/queries/hooks";
+import { useAlphabetProgress, useGrammarProgress, useInvalidateLearning, useSupabase, useUser } from "@/lib/queries/hooks";
 
 type Phase =
   | { kind: "slides"; index: number }
@@ -38,9 +39,25 @@ export default function GrammarLessonPage() {
   const lesson = grammarLessonById(lessonId);
   const [phase, setPhase] = useState<Phase>({ kind: "slides", index: 0 });
   const [practiceError, setPracticeError] = useState(false);
+  const [showNotifPrompt, setShowNotifPrompt] = useState(false);
+
+  const { data: alphaProgress } = useAlphabetProgress();
+  const { data: grammarProgress } = useGrammarProgress();
+
   // Practice items already played this session, so "Practice more" again
   // brings fresh ones from the shared pool.
   const seenPracticeIds = useRef<number[]>([]);
+
+  const totalCompleted = 
+    (alphaProgress?.filter((u) => u.completed_at)?.length ?? 0) + 
+    (grammarProgress?.filter((l) => l.completed_at)?.length ?? 0);
+
+  useEffect(() => {
+    if (phase.kind === "done" && totalCompleted === 1 && !localStorage.getItem("hasSeenNotifPrompt")) {
+      setShowNotifPrompt(true);
+      localStorage.setItem("hasSeenNotifPrompt", "true");
+    }
+  }, [phase.kind, totalCompleted]);
 
   const complete = useMutation({
     mutationFn: async ({ correct, total }: { correct: number; total: number }) => {
@@ -240,6 +257,7 @@ export default function GrammarLessonPage() {
           </motion.div>
         )}
       </AnimatePresence>
+      <NotificationPrompt isOpen={showNotifPrompt} onClose={() => setShowNotifPrompt(false)} />
     </div>
   );
 }

@@ -5,14 +5,15 @@ import { ArrowLeft, Check } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ExercisePlayer } from "@/components/alphabet/exercise-player";
 import { LetterCard } from "@/components/alphabet/letter-card";
+import { NotificationPrompt } from "@/components/notification-prompt";
 import { Button } from "@/components/ui/button";
 import { alphabetCourse } from "@/lib/content/load";
 import { completeAlphabetUnit } from "@/lib/db/alphabet";
 import { XP, recordActivity } from "@/lib/gamification";
-import { useInvalidateLearning, useSupabase, useUser } from "@/lib/queries/hooks";
+import { useAlphabetProgress, useGrammarProgress, useInvalidateLearning, useSupabase, useUser } from "@/lib/queries/hooks";
 
 type Phase = { kind: "letters"; index: number } | { kind: "exercises" } | { kind: "done"; correct: number; total: number };
 
@@ -25,6 +26,21 @@ export default function AlphabetUnitPage() {
 
   const unit = alphabetCourse.units.find((u) => u.id === unitId);
   const [phase, setPhase] = useState<Phase>({ kind: "letters", index: 0 });
+  const [showNotifPrompt, setShowNotifPrompt] = useState(false);
+
+  const { data: alphaProgress } = useAlphabetProgress();
+  const { data: grammarProgress } = useGrammarProgress();
+
+  const totalCompleted = 
+    (alphaProgress?.filter((u) => u.completed_at)?.length ?? 0) + 
+    (grammarProgress?.filter((l) => l.completed_at)?.length ?? 0);
+
+  useEffect(() => {
+    if (phase.kind === "done" && totalCompleted === 1 && !localStorage.getItem("hasSeenNotifPrompt")) {
+      setShowNotifPrompt(true);
+      localStorage.setItem("hasSeenNotifPrompt", "true");
+    }
+  }, [phase.kind, totalCompleted]);
 
   const complete = useMutation({
     mutationFn: async ({ correct, total }: { correct: number; total: number }) => {
@@ -147,6 +163,7 @@ export default function AlphabetUnitPage() {
           </motion.div>
         )}
       </AnimatePresence>
+      <NotificationPrompt isOpen={showNotifPrompt} onClose={() => setShowNotifPrompt(false)} />
     </div>
   );
 }
