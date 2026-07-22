@@ -8,6 +8,8 @@ interface ClozeExerciseProps {
   sentenceDari: string;
   sentenceEn: string;
   missingWord: string;
+  missingTranslit?: string;
+  missingEn?: string;
   distractors: string[];
   onComplete: (isCorrect: boolean) => void;
 }
@@ -16,6 +18,8 @@ export function ClozeExercise({
   sentenceDari,
   sentenceEn,
   missingWord,
+  missingTranslit,
+  missingEn,
   distractors,
   onComplete,
 }: ClozeExerciseProps) {
@@ -27,10 +31,24 @@ export function ClozeExercise({
   const [selected, setSelected] = useState<string | null>(null);
   const [status, setStatus] = useState<"idle" | "correct" | "incorrect">("idle");
 
-  const parts = sentenceDari.split(missingWord);
-  // Fallback if the missing word wasn't cleanly in the string
-  const before = parts[0] ?? sentenceDari;
-  const after = parts[1] ?? "";
+  // The AI sometimes returns the sentence with a literal blank (e.g. "____" or
+  // tatweel "ـــ") instead of containing the missing word. Render our
+  // interactive blank at that spot, so we never show two underlines.
+  const placeholderMatch = sentenceDari.match(/_{2,}|ـ{2,}|…|\.{3,}/);
+  let before: string;
+  let after: string;
+  if (placeholderMatch?.index !== undefined) {
+    before = sentenceDari.slice(0, placeholderMatch.index).trim();
+    after = sentenceDari.slice(placeholderMatch.index + placeholderMatch[0].length).trim();
+  } else if (sentenceDari.includes(missingWord)) {
+    const idx = sentenceDari.indexOf(missingWord);
+    before = sentenceDari.slice(0, idx).trim();
+    after = sentenceDari.slice(idx + missingWord.length).trim();
+  } else {
+    // Missing word not found at all: show the sentence with the blank at the end
+    before = sentenceDari.trim();
+    after = "";
+  }
 
   const handleSelect = (option: string) => {
     if (status !== "idle") return;
@@ -51,8 +69,7 @@ export function ClozeExercise({
     <div className="flex flex-col h-full w-full max-w-md mx-auto items-center justify-center p-4">
       <h3 className="text-lg font-semibold mb-1 text-center">Fill in the blank</h3>
       <div className="w-full bg-surface border border-line rounded-3xl p-6 shadow-sm mb-8 mt-2">
-        <p className="text-sm text-ink-soft mb-2 text-center">{sentenceEn}</p>
-        <div 
+        <div
           dir="rtl" 
           className="text-2xl leading-relaxed text-center font-dari flex flex-wrap items-center justify-center gap-2"
         >
@@ -78,6 +95,22 @@ export function ClozeExercise({
           </div>
           <span>{after}</span>
         </div>
+        <AnimatePresence>
+          {status === "correct" && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              className="overflow-hidden text-center"
+            >
+              <p className="text-sm text-ink-soft mt-4">{sentenceEn}</p>
+              <p className="text-sm text-sabz font-medium mt-1">
+                <span className="font-dari">{missingWord}</span>
+                {missingTranslit && ` (${missingTranslit})`}
+                {missingEn && ` = ${missingEn}`}
+              </p>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       <div className="flex flex-wrap gap-3 justify-center">

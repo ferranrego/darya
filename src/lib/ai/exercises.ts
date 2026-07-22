@@ -13,6 +13,7 @@ const exerciseOutputSchema = z.object({
         sentenceEn: z.string(),
         missingWord: z.string(),
         missingTranslit: z.string(),
+        missingEn: z.string().optional(),
         distractors: z.array(z.string()).min(2),
         lexemeId: z.string().optional(),
       }),
@@ -61,7 +62,7 @@ function buildPrompt(req: ExerciseGenerationRequest): string {
 Generate exactly ${req.count} mixed exercises for a student at level ${req.level}.
 
 Types of exercises to include (mix them up):
-1. "cloze": A SHORT fill-in-the-blank sentence (3-6 words maximum). Provide the missing word and 3 wrong distractors (must be valid Dari words but wrong for the context).
+1. "cloze": A SHORT fill-in-the-blank sentence (3-6 words maximum). "sentenceDari" MUST be the COMPLETE sentence containing the missing word — do NOT replace it with blanks, underscores, or dots (the UI renders the blank itself). "missingWord" must appear verbatim in "sentenceDari". Provide the missing word, its English translation ("missingEn"), and 3 wrong distractors (must be valid Dari words but wrong for the context).
 2. "realia": A short Markdown document (like a menu or sign in Dari) and a multiple-choice question in English about it.
 3. "grammar_detective": Two sentences: one grammatically correct and one with a common error. Provide an English explanation.
 
@@ -77,7 +78,7 @@ Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū.
 Return ONLY JSON with this exact shape:
 {
   "exercises": [
-    { "type": "cloze", "sentenceDari": "...", "sentenceTranslit": "...", "sentenceEn": "...", "missingWord": "...", "missingTranslit": "...", "distractors": ["...", "..."] },
+    { "type": "cloze", "sentenceDari": "...", "sentenceTranslit": "...", "sentenceEn": "...", "missingWord": "...", "missingTranslit": "...", "missingEn": "...", "distractors": ["...", "..."] },
     { "type": "realia", "documentType": "Menu", "markdown": "...", "questionEn": "...", "optionsEn": ["..."], "correctOptionIndex": 0 },
     { "type": "grammar_detective", "correctSentenceDari": "...", "correctSentenceTranslit": "...", "incorrectSentenceDari": "...", "incorrectSentenceTranslit": "...", "explanationEn": "..." }
   ]
