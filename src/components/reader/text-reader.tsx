@@ -1,9 +1,9 @@
 "use client";
 
 import { useMutation } from "@tanstack/react-query";
-import { Check, Languages, Highlighter } from "lucide-react";
+import { Check, CircleHelp, Languages, Highlighter } from "lucide-react";
 import { motion } from "motion/react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { lexemeById, lexiconIndex, levels } from "@/lib/content/load";
 import type { TextDocument } from "@/lib/content/schema";
@@ -13,6 +13,7 @@ import { XP, recordActivity } from "@/lib/gamification";
 import { useInvalidateLearning, useProfile, useSupabase, useUser, useWordStatusMap } from "@/lib/queries/hooks";
 import { newCard } from "@/lib/srs/scheduler";
 
+import { ReaderGuideSheet } from "./reader-guide-sheet";
 import { segmentSentence } from "./segments";
 import { WordSheet } from "./word-sheet";
 
@@ -42,6 +43,17 @@ export function TextReader({
   const [showTranslit, setShowTranslit] = useState(false);
   const [showSyntax, setShowSyntax] = useState(false);
   const [finished, setFinished] = useState(false);
+  const [showGuide, setShowGuide] = useState(false);
+
+  // First ever visit: open the guide once the reader has settled.
+  useEffect(() => {
+    if (localStorage.getItem("hasSeenReaderGuide")) return;
+    const t = setTimeout(() => {
+      setShowGuide(true);
+      localStorage.setItem("hasSeenReaderGuide", "true");
+    }, 600);
+    return () => clearTimeout(t);
+  }, []);
 
   const segments = useMemo(() => doc.sentences.map(segmentSentence), [doc]);
 
@@ -186,6 +198,14 @@ export function TextReader({
         <div className="flex items-center gap-2">
           <button
             type="button"
+            onClick={() => setShowGuide(true)}
+            title="How reading works"
+            className="mt-2 flex size-10 shrink-0 items-center justify-center rounded-full border border-line text-ink-faint transition-colors hover:text-ink-soft"
+          >
+            <CircleHelp size={18} />
+          </button>
+          <button
+            type="button"
             onClick={() => setShowSyntax((v) => !v)}
             aria-pressed={showSyntax}
             title="Toggle grammar highlighting"
@@ -208,21 +228,6 @@ export function TextReader({
           </button>
         </div>
       </header>
-
-      <div className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[13px] text-ink-soft">
-        <div className="flex items-center gap-2">
-          <span className="bg-new-tint rounded-md px-1.5 py-0.5 text-ink">New</span>
-          <span>Tap to discover</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="underline decoration-lapis decoration-2 underline-offset-4 font-medium px-1.5 py-0.5 text-ink">Learning</span>
-          <span>In progress</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="font-medium px-1.5 py-0.5 text-ink">Known</span>
-          <span>Mastered</span>
-        </div>
-      </div>
 
       {showSyntax && (
         <motion.div
@@ -311,6 +316,8 @@ export function TextReader({
         }}
         onClose={() => setTapped(null)}
       />
+
+      <ReaderGuideSheet open={showGuide} onClose={() => setShowGuide(false)} />
     </motion.article>
   );
 }
@@ -326,14 +333,14 @@ function WordSpan({
   onTap: () => void;
   pos?: string;
 }) {
+  // Known words render as plain text: the marks fading away once a word is
+  // mastered is the encoding itself (explained in ReaderGuideSheet).
   const statusCls =
     status === "new"
       ? "bg-new-tint rounded-md"
       : status === "learning"
         ? "underline decoration-lapis decoration-2 underline-offset-8 font-medium"
-        : status === "known"
-          ? "font-medium"
-          : "";
+        : "";
 
   let posCls = "text-ink";
   if (pos === "verb") posCls = "text-red-500 font-medium";

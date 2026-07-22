@@ -8,6 +8,7 @@ import { useMemo, useRef, useState, useEffect } from "react";
 import { Poncha, type PonchaPose } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { lexemeById } from "@/lib/content/load";
+import { segmentForHighlight } from "@/lib/text/highlight";
 import { logReview, upsertUserWord } from "@/lib/db/words";
 import type { UserWordRow } from "@/lib/db/types";
 import { XP, recordActivity } from "@/lib/gamification";
@@ -184,6 +185,15 @@ export default function ReviewPage() {
   const now = new Date();
   const intervals = row.fsrs ? previewIntervals(reviveCard(row.fsrs), now) : null;
 
+  // Verbs are always tested in isolation (conjugated forms are too irregular
+  // to reinforce the infinitive). For other words, only show the stored
+  // context sentence when we can actually highlight the word in it.
+  const contextSegments =
+    row.context_dari && entry.pos !== "verb"
+      ? segmentForHighlight(row.context_dari, entry.id)
+      : null;
+  const showContext = contextSegments !== null;
+
   return (
     <div className="flex flex-1 flex-col">
       <SegmentedControl mode={mode} setMode={setMode} />
@@ -241,22 +251,15 @@ export default function ReviewPage() {
             )}
 
             <div className="relative z-10">
-              {row.context_dari ? (
+              {showContext ? (
                 <p lang="prs" className="text-[28px] leading-[2.1] cursor-default select-none">
-                  {(() => {
-                    // Try to highlight the base word if it matches exactly
-                    const parts = row.context_dari!.split(new RegExp(`(${entry.dari})`, "i"));
-                    if (parts.length > 1) {
-                      return parts.map((part, i) =>
-                        part.toLowerCase() === entry.dari.toLowerCase() ? (
-                          <span key={i} className="text-lapis font-semibold">{part}</span>
-                        ) : (
-                          <span key={i}>{part}</span>
-                        )
-                      );
-                    }
-                    return row.context_dari;
-                  })()}
+                  {contextSegments!.map((seg, i) =>
+                    seg.hit ? (
+                      <span key={i} className="text-lapis font-semibold">{seg.text}</span>
+                    ) : (
+                      <span key={i}>{seg.text}</span>
+                    )
+                  )}
                 </p>
               ) : (
                 <p lang="prs" className="text-[52px] leading-snug cursor-default select-none">
@@ -273,14 +276,14 @@ export default function ReviewPage() {
                   className="mt-4"
                 >
                   <p className="text-[16px] text-ink-soft">
-                    {row.context_translit || entry.translit}
+                    {showContext ? row.context_translit || entry.translit : entry.translit}
                   </p>
                   <p className="mt-2 text-[22px] font-medium">
-                    {row.context_en || entry.glossEn}
+                    {showContext ? row.context_en || entry.glossEn : entry.glossEn}
                   </p>
-                  
+
                   {/* If we showed context, still show the dictionary definition to clarify the exact word */}
-                  {row.context_dari && (
+                  {showContext && (
                     <div className="mt-6 flex flex-col items-center rounded-2xl bg-lapis-soft/30 px-6 py-3 border border-lapis/20">
                       <span lang="prs" className="text-[40px] font-bold text-lapis-dark mb-1">{entry.dari}</span>
                       <div className="flex items-center gap-2 text-[16px] text-lapis-dark/80">
@@ -291,7 +294,7 @@ export default function ReviewPage() {
                     </div>
                   )}
 
-                  {!row.context_dari && (
+                  {!showContext && (
                     <div className="mt-6 rounded-2xl bg-paper px-4 py-3">
                       <p lang="prs" className="text-[18px] leading-loose">
                         {entry.exampleDari}
