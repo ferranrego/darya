@@ -112,6 +112,8 @@ export const letterSchema = z.object({
   translit: z.string().min(1),
   /** Plain-English sound description: "p as in pen". */
   sound: z.string().min(1),
+  /** Optional short explanation shown under the forms, e.g. the two uses of final ه. */
+  note: z.string().optional(),
   forms: letterFormsSchema,
   /** True for letters that do not join to the following letter (و د ذ ر ز ژ ا). */
   nonConnecting: z.boolean().default(false),

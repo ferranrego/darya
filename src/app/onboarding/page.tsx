@@ -6,10 +6,10 @@ import { useMemo, useState } from "react";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { sampleAssessmentWords, scoreAssessment } from "@/lib/assessment";
-import { lexicon } from "@/lib/content/load";
+import { lexicon, levelLabel } from "@/lib/content/load";
 import { updateProfile } from "@/lib/db/profiles";
 import { seedKnownWords } from "@/lib/db/words";
-import { useSupabase, useUser } from "@/lib/queries/hooks";
+import { useSupabase } from "@/lib/queries/hooks";
 
 type Step = "hello" | "install" | "script" | "assessment" | "result";
 
@@ -23,12 +23,12 @@ const stepMotion = {
 export default function OnboardingPage() {
   const router = useRouter();
   const db = useSupabase();
-  const { data: user } = useUser();
   const [step, setStep] = useState<Step>("hello");
   const [canRead, setCanRead] = useState(true);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [result, setResult] = useState<{ estimatedVocab: number; levelId: string } | null>(null);
   const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const words = useMemo(() => sampleAssessmentWords(lexicon.entries), []);
 
@@ -56,28 +56,28 @@ export default function OnboardingPage() {
    */
   async function finishAssessment() {
     setBusy(true);
+    setError(null);
     const scored = scoreAssessment(words, selected, lexicon.entries);
-    
-    if (user) {
-      await seedKnownWords(db, user.id, scored.knownLexemeIds);
-      await updateProfile(db, user.id, {
+    try {
+      const { data, error: authError } = await db.auth.getUser();
+      if (authError || !data.user) {
+        // Session gone (expired mid-wizard); sign in again and retry.
+        router.push("/welcome");
+        return;
+      }
+      await seedKnownWords(db, data.user.id, scored.knownLexemeIds);
+      await updateProfile(db, data.user.id, {
         can_read_script: canRead,
         level_estimate: scored.levelId,
         onboarded_at: new Date().toISOString(),
       });
-    } else {
-      localStorage.setItem(
-        "darya_onboarding_data",
-        JSON.stringify({
-          canRead,
-          levelId: scored.levelId,
-          knownLexemeIds: scored.knownLexemeIds,
-        })
-      );
+    } catch {
+      setError("Couldn't save your results. Check your connection and try again.");
+      return;
+    } finally {
+      setBusy(false);
     }
-    
     setResult(scored);
-    setBusy(false);
     setStep("result");
   }
 
@@ -101,7 +101,7 @@ export default function OnboardingPage() {
               transition={{ delay: 0.1, type: "spring", stiffness: 260, damping: 18 }}
               className="mb-6 flex justify-center"
             >
-              <Poncha pose="wave" size={180} priority animated />
+              <Poncha pose="greet" size={180} priority />
             </motion.div>
             <p lang="prs" className="text-[56px] text-lapis">
               خوش آمدید
@@ -117,15 +117,6 @@ export default function OnboardingPage() {
             <Button size="lg" className="mt-10" onClick={startWizard}>
               Let's begin
             </Button>
-            {!user && (
-              <button
-                type="button"
-                onClick={() => router.push("/welcome")}
-                className="mx-auto mt-6 block text-[14px] font-medium text-ink-soft hover:text-ink transition-colors"
-              >
-                Already have an account? Sign in
-              </button>
-            )}
           </motion.div>
         )}
 
@@ -241,13 +232,16 @@ export default function OnboardingPage() {
               })}
             </div>
             <div className="fixed inset-x-0 bottom-0 border-t border-line/70 bg-paper/85 backdrop-blur-xl">
-              <div className="mx-auto flex max-w-xl items-center justify-between px-6 py-4">
-                <span className="text-[14px] text-ink-soft">
-                  {selected.size} word{selected.size === 1 ? "" : "s"}
-                </span>
-                <Button disabled={busy} onClick={finishAssessment}>
-                  {busy ? "Working it out…" : "I'm done"}
-                </Button>
+              <div className="mx-auto max-w-xl px-6 py-4">
+                {error && <p className="mb-2 text-[13px] text-danger">{error}</p>}
+                <div className="flex items-center justify-between">
+                  <span className="text-[14px] text-ink-soft">
+                    {selected.size} word{selected.size === 1 ? "" : "s"}
+                  </span>
+                  <Button disabled={busy} onClick={finishAssessment}>
+                    {busy ? "Working it out…" : "I'm done"}
+                  </Button>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -271,50 +265,27 @@ export default function OnboardingPage() {
             </p>
             <p className="text-[15px] text-ink-soft">words you already know</p>
             <p className="mt-6 inline-block rounded-full bg-lapis-soft px-4 py-1.5 text-[14px] font-medium text-lapis">
-              Level {result.levelId.replace("L", "")} ·{" "}
-              {result.levelId === "L1" ? "First words" : "ready to read"}
+              {levelLabel(result.levelId)}
             </p>
 
-            {canRead ? (
-              <div className="mt-10">
-                <Button
-                  size="lg"
-                  onClick={() => {
-                    if (!user) {
-                      router.push("/welcome");
-                    } else {
-                      router.push("/read");
-                      router.refresh();
-                    }
-                  }}
-                >
-                  Start reading
-                </Button>
-              </div>
-            ) : (
-              <>
-                <p className="mx-auto mt-6 max-w-sm text-[15px] leading-relaxed text-ink-soft">
-                  {result.estimatedVocab > 0
-                    ? "You already know plenty of Dari. Now let's teach you to read the script, so you can put those words on the page."
-                    : "Let's start at the very beginning and teach you to read the script, letter by letter."}
-                </p>
-                <div className="mt-8">
-                  <Button
-                    size="lg"
-                    onClick={() => {
-                      if (!user) {
-                        router.push("/welcome");
-                      } else {
-                        router.push("/alphabet");
-                        router.refresh();
-                      }
-                    }}
-                  >
-                    Start the alphabet course
-                  </Button>
-                </div>
-              </>
+            {!canRead && (
+              <p className="mx-auto mt-6 max-w-sm text-[15px] leading-relaxed text-ink-soft">
+                {result.estimatedVocab > 0
+                  ? "You already know plenty of Dari. Now let's teach you to read the script, so you can put those words on the page."
+                  : "Let's start at the very beginning and teach you to read the script, letter by letter."}
+              </p>
             )}
+            <div className={canRead ? "mt-10" : "mt-8"}>
+              <Button
+                size="lg"
+                onClick={() => {
+                  router.push("/");
+                  router.refresh();
+                }}
+              >
+                Start learning
+              </Button>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

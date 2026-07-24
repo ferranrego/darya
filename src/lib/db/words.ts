@@ -58,8 +58,13 @@ export async function seedKnownWords(
     due: null,
     fsrs: null,
   }));
-  const { error } = await db.from("user_words").upsert(rows);
-  if (error) throw error;
+  // A near-native assessment can seed the whole lexicon; chunk the upsert to
+  // keep each request payload comfortably under PostgREST limits.
+  const CHUNK = 500;
+  for (let i = 0; i < rows.length; i += CHUNK) {
+    const { error } = await db.from("user_words").upsert(rows.slice(i, i + CHUNK));
+    if (error) throw error;
+  }
 }
 
 export async function logReview(

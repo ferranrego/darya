@@ -79,8 +79,10 @@ export default function ChatPage() {
         </div>
       )}
 
-      {/* Sits above the tab bar, which paints over the padding below. */}
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line/70 bg-paper/90 pb-[calc(var(--tab-bar-h)+10px)] pt-3 backdrop-blur-xl">
+      {/* Sits above the tab bar, which paints over the padding below. Anchored
+          to the app shell (`absolute`, containing block outside #app-scroll)
+          rather than `fixed`, which iOS standalone PWAs misplace. */}
+      <div className="absolute inset-x-0 bottom-0 z-30 border-t border-line/70 bg-paper/90 pb-[calc(var(--tab-bar-h)+10px)] pt-3 backdrop-blur-xl">
         <div className="mx-auto w-full max-w-2xl px-5">
           {send.isError && (
             <p className="mb-2 text-[13px] text-danger">

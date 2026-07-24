@@ -4,6 +4,7 @@ import { generatePracticeBatch, PRACTICE_BATCH_SIZE } from "@/lib/ai/grammar-pra
 import { grammarLessonById } from "@/lib/content/load";
 import type { GrammarExercise } from "@/lib/content/schema";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
+import { shuffle } from "@/lib/util/shuffle";
 
 export const maxDuration = 60;
 
@@ -72,13 +73,4 @@ export async function POST(req: Request) {
       { status: 502 },
     );
   }
-}
-
-function shuffle<T>(items: T[]): T[] {
-  const arr = [...items];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
 }

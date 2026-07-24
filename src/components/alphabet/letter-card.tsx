@@ -32,6 +32,9 @@ export function LetterCard({ letter }: { letter: Letter }) {
           </div>
         ))}
       </div>
+      {letter.note && (
+        <p className="mt-4 text-[12px] text-ink-faint">{letter.note}</p>
+      )}
       {letter.nonConnecting && (
         <p className="mt-4 text-[12px] text-ink-faint">
           This letter never joins to the letter after it.

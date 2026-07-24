@@ -2,6 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { Medal, Trophy } from "lucide-react";
+import { levelLabel } from "@/lib/content/load";
 import { useSupabase, useUser } from "@/lib/queries/hooks";
 
 export default function LeaderboardPage() {
@@ -61,7 +62,7 @@ export default function LeaderboardPage() {
                     {profile.display_name || "Anonymous"}
                   </p>
                   <p className="text-[13px] text-ink-soft">
-                    Level {profile.level_estimate.replace("L", "")}
+                    {levelLabel(profile.level_estimate)}
                   </p>
                 </div>
                 

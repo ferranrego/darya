@@ -2,23 +2,16 @@
 
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useQueryClient } from "@tanstack/react-query";
+import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
-import { updateProfile } from "@/lib/db/profiles";
-import { seedKnownWords } from "@/lib/db/words";
 import { supabaseBrowser } from "@/lib/supabase/client";
 
 export default function WelcomePage() {
   const router = useRouter();
+  const qc = useQueryClient();
   const [mode, setMode] = useState<"signin" | "signup">("signin");
-  const [hasOnboardingData, setHasOnboardingData] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && localStorage.getItem("darya_onboarding_data")) {
-      setHasOnboardingData(true);
-      setMode("signup");
-    }
-  }, []);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -43,26 +36,20 @@ export default function WelcomePage() {
       setBusy(false);
       return;
     }
-    
-    if (result.data.user) {
-      const storedData = localStorage.getItem("darya_onboarding_data");
-      if (storedData) {
-        try {
-          const parsed = JSON.parse(storedData);
-          await seedKnownWords(db, result.data.user.id, parsed.knownLexemeIds);
-          await updateProfile(db, result.data.user.id, {
-            can_read_script: parsed.canRead,
-            level_estimate: parsed.levelId,
-            onboarded_at: new Date().toISOString(),
-          });
-          localStorage.removeItem("darya_onboarding_data");
-        } catch (e) {
-          console.error("Failed to sync onboarding data", e);
-        }
-      }
+
+    // Email confirmation is off in config; if the hosted project ever turns it
+    // on, signUp returns a user without a session and no write would succeed.
+    if (mode === "signup" && !result.data.session) {
+      setError("Check your email to confirm your account, then sign in.");
+      setMode("signin");
+      setBusy(false);
+      return;
     }
 
-    router.push("/");
+    // Drop any queries cached while anonymous (e.g. a null user) so the
+    // onboarding wizard sees the fresh session.
+    qc.clear();
+    router.push(mode === "signup" ? "/onboarding" : "/");
     router.refresh();
   }
 
@@ -79,14 +66,15 @@ export default function WelcomePage() {
         className="w-full max-w-sm"
       >
         <div className="mb-10 text-center">
-          <p lang="prs" className="text-[64px] leading-tight text-lapis">
+          <div className="mb-4 flex justify-center">
+            <Poncha pose="wave" size={160} priority animated />
+          </div>
+          <p lang="prs" className="text-[44px] leading-tight text-lapis">
             دریا
           </p>
           <h1 className="mt-1 text-[22px] font-semibold tracking-tight">Darya</h1>
           <p className="mt-2 text-[15px] text-ink-soft">
-            {hasOnboardingData
-              ? "Create an account to save your progress."
-              : "Learn Dari by reading, one word at a time."}
+            Learn Dari by reading, one word at a time.
           </p>
         </div>
 
@@ -127,16 +115,7 @@ export default function WelcomePage() {
 
         <button
           type="button"
-          onClick={() => {
-            if (mode === "signin") {
-              // New users without onboarding data should go through the
-              // onboarding wizard first; it sends them back here to sign up.
-              if (hasOnboardingData) setMode("signup");
-              else router.push("/onboarding");
-            } else {
-              setMode("signin");
-            }
-          }}
+          onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
           className="mx-auto mt-6 block text-[14px] text-lapis hover:underline"
         >
           {mode === "signin" ? "New here? Create an account" : "Have an account? Sign in"}

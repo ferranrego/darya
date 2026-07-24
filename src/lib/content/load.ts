@@ -116,6 +116,15 @@ export function levelById(id: string): Level {
   return level;
 }
 
+/**
+ * Human-readable label for a level estimate, e.g. "A1 · Daily life".
+ * Falls back to the first level for null/unknown ids.
+ */
+export function levelLabel(levelId: string | null | undefined): string {
+  const level = levels.find((l) => l.id === levelId) ?? levels[0];
+  return `${level.cefrHint.replace(/^pre/, "Pre")} · ${level.name}`;
+}
+
 export function getWordsByLevel(cefrHint: string): LexiconEntry[] {
   const levelIndex = levels.findIndex((l) => l.cefrHint === cefrHint);
   if (levelIndex === -1) return [];

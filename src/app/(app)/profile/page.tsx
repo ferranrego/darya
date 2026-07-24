@@ -4,6 +4,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { BarChart3, Flame, Library, LogOut, Trophy } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { ActionCard } from "@/components/ui/action-card";
+import { levelLabel } from "@/lib/content/load";
 import { updateProfile } from "@/lib/db/profiles";
 import { useProfile, useSignOut, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
 import { useSettingsStore } from "@/lib/settings-store";
@@ -57,7 +58,7 @@ export default function ProfilePage() {
       <header className="pt-2">
         <h1 className="text-[26px] font-semibold tracking-tight">{profile.display_name}</h1>
         <p className="mt-1 text-[14px] text-ink-soft">
-          Level {profile.level_estimate.replace("L", "")} · {knownCount} words known · {profile.xp} XP
+          {levelLabel(profile.level_estimate)} · {knownCount} words known · {profile.xp} XP
         </p>
       </header>
 

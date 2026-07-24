@@ -5,7 +5,8 @@ async function run() {
     const data = await generateExercises({
       level: "beginner",
       knownWords: [{ dari: "من", translit: "man", glossEn: "I", id: "lx-0001", freqRank: 1, freqBand: 1 } as any],
-      targetWords: [],
+      learningTargets: [],
+      newTargets: [],
       count: 5
     });
     console.log("Success:", data);

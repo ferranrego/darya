@@ -32,11 +32,12 @@ export default function JourneyPage() {
       </header>
 
       <main className="flex-1 w-full relative pt-4 pb-20">
-        <JourneyMap 
+        <JourneyMap
           alphabetCompletedUnits={completedUnits}
           totalAlphabetUnits={totalUnits}
           grammarCompletedLessonIds={completedRows}
           userLevelEstimate={profile?.level_estimate ?? "L1"}
+          canReadScript={profile?.can_read_script ?? null}
         />
       </main>
     </div>

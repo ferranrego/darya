@@ -25,9 +25,12 @@ export async function updateProfile(
       | "onboarded_at"
       | "chat_notifications"
       | "reminder_notifications"
+      | "prior_words_decision"
     >
   >,
 ): Promise<void> {
-  const { error } = await db.from("profiles").update(patch).eq("id", userId);
+  // .select().single() makes a zero-row update (missing profile, RLS mismatch)
+  // throw instead of silently succeeding.
+  const { error } = await db.from("profiles").update(patch).eq("id", userId).select("id").single();
   if (error) throw error;
 }

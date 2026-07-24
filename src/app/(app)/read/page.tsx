@@ -1,22 +1,74 @@
 "use client";
 
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { BookOpen } from "lucide-react";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { PriorWordsSheet } from "@/components/reader/prior-words-sheet";
 import { TextReader } from "@/components/reader/text-reader";
 import { Button } from "@/components/ui/button";
+import { levels, lexicon } from "@/lib/content/load";
+import { updateProfile } from "@/lib/db/profiles";
+import { seedKnownWords } from "@/lib/db/words";
 import {
   useProfile,
   useReadTexts,
+  useSupabase,
   useTextsForLevel,
+  useUser,
+  useUserWords,
 } from "@/lib/queries/hooks";
 
 export default function ReadPage() {
+  const db = useSupabase();
+  const qc = useQueryClient();
+  const { data: user } = useUser();
   const { data: profile } = useProfile();
+  const { data: userWords } = useUserWords();
   const { data: texts, isLoading, refetch } = useTextsForLevel(profile?.level_estimate);
   const { data: readRows, refetch: refetchRead } = useReadTexts();
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
+
+  // Words from levels below the assessed level that the learner isn't
+  // tracking yet — offered as a one-time bulk "mark as known" before the
+  // second text (see PriorWordsSheet).
+  const priorWordIds = useMemo(() => {
+    const levelIdx = levels.findIndex((l) => l.id === profile?.level_estimate);
+    if (levelIdx < 1 || !userWords) return [];
+    const maxRank = levels[levelIdx - 1].entryKnownWords;
+    const tracked = new Set(userWords.map((w) => w.lexeme_id));
+    return lexicon.entries
+      .filter((e) => e.freqRank <= maxRank && !tracked.has(e.id))
+      .map((e) => e.id);
+  }, [profile?.level_estimate, userWords]);
+
+  const [priorDismissed, setPriorDismissed] = useState(false);
+  const [priorBusy, setPriorBusy] = useState(false);
+  const showPriorSheet =
+    !!profile &&
+    !!user &&
+    profile.prior_words_decision == null &&
+    !priorDismissed &&
+    readIds.size >= 1 &&
+    priorWordIds.length > 0;
+
+  async function decidePriorWords(decision: "seeded" | "manual") {
+    if (!user) return;
+    setPriorBusy(true);
+    try {
+      if (decision === "seeded") await seedKnownWords(db, user.id, priorWordIds);
+      await updateProfile(db, user.id, { prior_words_decision: decision });
+      await Promise.all([
+        qc.invalidateQueries({ queryKey: ["profile"] }),
+        qc.invalidateQueries({ queryKey: ["user_words"] }),
+      ]);
+      setPriorDismissed(true);
+    } catch (e) {
+      console.error("Failed to save prior-words decision", e);
+    } finally {
+      setPriorBusy(false);
+    }
+  }
 
   const unread = useMemo(() => {
     if (!texts) return [];
@@ -78,15 +130,26 @@ export default function ReadPage() {
 
   const current = unread[0];
   return (
-    <TextReader
-      key={current.doc.id}
-      doc={current.doc}
-      onFinished={() => {
-        void refetchRead();
-        // Keep the pool warm for next time (fire-and-forget).
-        void fetch("/api/generate", { method: "POST" });
-      }}
-    />
+    <>
+      <TextReader
+        key={current.doc.id}
+        doc={current.doc}
+        onFinished={() => {
+          void refetchRead();
+          // Keep the pool warm for next time (fire-and-forget).
+          void fetch("/api/generate", { method: "POST" });
+        }}
+      />
+      <PriorWordsSheet
+        open={showPriorSheet}
+        wordCount={priorWordIds.length}
+        levelId={profile?.level_estimate}
+        busy={priorBusy}
+        onSeed={() => void decidePriorWords("seeded")}
+        onManual={() => void decidePriorWords("manual")}
+        onClose={() => setPriorDismissed(true)}
+      />
+    </>
   );
 }
 

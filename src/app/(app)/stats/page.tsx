@@ -3,7 +3,7 @@
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { useAlphabetProgress, useProfile, useUserWords } from "@/lib/queries/hooks";
-import { levels } from "@/lib/content/load";
+import { levelLabel, levels } from "@/lib/content/load";
 import { VocabChart } from "./vocab-chart";
 import { ActivityHeatmap } from "./heatmap";
 
@@ -85,8 +85,7 @@ export default function StatsPage() {
           <div className="flex justify-between items-center">
             <span className="text-[14px] text-ink-soft">Current Level Estimate</span>
             <span className="text-[15px] font-medium px-2 py-0.5 bg-lapis-soft text-lapis rounded-md">
-              {profile.level_estimate.replace("L", "Level ")}
-              {currentLevelIdx >= 0 ? ` (${levels[currentLevelIdx].cefrHint === 'pre-A1' ? 'pre-A1' : levels[currentLevelIdx].cefrHint.toUpperCase()})` : ""}
+              {levelLabel(profile.level_estimate)}
             </span>
           </div>
 

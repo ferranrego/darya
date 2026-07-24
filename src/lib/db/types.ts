@@ -18,6 +18,7 @@ export interface ProfileRow {
   chat_notifications: boolean;
   reminder_notifications: boolean;
   last_chat_push_at: string | null;
+  prior_words_decision: "seeded" | "manual" | null;
   created_at: string;
 }
 

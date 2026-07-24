@@ -5,7 +5,9 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import {
+  GRAMMAR_LEVEL_ORDER,
   grammarCourses,
+  grammarStartLevel,
   levels,
 } from "@/lib/content/load";
 
@@ -26,6 +28,7 @@ interface JourneyMapProps {
   totalAlphabetUnits: number;
   grammarCompletedLessonIds: Set<string>;
   userLevelEstimate: string; // e.g. "L1"..."L6"
+  canReadScript: boolean | null;
 }
 
 export function JourneyMap({
@@ -33,29 +36,29 @@ export function JourneyMap({
   totalAlphabetUnits,
   grammarCompletedLessonIds,
   userLevelEstimate,
+  canReadScript,
 }: JourneyMapProps) {
   const currentRef = useRef<HTMLDivElement>(null);
 
   // 1. Build the logical nodes
   const nodes: MapNodeData[] = [];
 
-  // Alphabet Node
+  // Alphabet: a learner who already reads the script tested past this node;
+  // one who can't read yet must finish it before the rest of the map opens.
   const alphabetDone = alphabetCompletedUnits >= totalAlphabetUnits;
-  let hasFoundCurrent = false;
-
-  const alphabetState = alphabetDone
-    ? "completed"
-    : hasFoundCurrent
-      ? "locked"
-      : ((hasFoundCurrent = true), "current");
+  const alphabetNeeded = canReadScript === false && !alphabetDone;
 
   nodes.push({
     id: "alphabet",
     type: "alphabet",
     title: "Alphabet",
-    subtitle: `${alphabetCompletedUnits} / ${totalAlphabetUnits} units`,
+    subtitle: alphabetNeeded
+      ? `${alphabetCompletedUnits} / ${totalAlphabetUnits} units`
+      : alphabetDone
+        ? `${totalAlphabetUnits} / ${totalAlphabetUnits} units`
+        : "You already read Dari",
     route: "/alphabet",
-    state: alphabetState,
+    state: alphabetNeeded ? "current" : "completed",
     icon: <SpellCheck size={24} />,
   });
 
@@ -70,37 +73,36 @@ export function JourneyMap({
   ];
 
   const userLevelNum = parseInt(userLevelEstimate?.replace("L", "") || "1", 10);
+  // Grammar courses below the assessed start level count as passed.
+  const grammarStartIdx = GRAMMAR_LEVEL_ORDER.indexOf(grammarStartLevel(userLevelEstimate));
+  let grammarCurrentFound = false;
 
   order.forEach(({ read, grammar }) => {
-    // Reading Node
+    // Reading Node: levels below the assessment are done, the assessed level
+    // is where the learner reads today, everything above is locked.
     const readLevelInfo = levels.find((l) => l.id === read);
-    const readLevelNum = parseInt(read || "1", 10);
-    const readState =
+    const readLevelNum = parseInt(read.replace("L", ""), 10);
+    const readState: MapNodeState =
       readLevelNum < userLevelNum
         ? "completed"
-        : readLevelNum === userLevelNum && !hasFoundCurrent
-          ? ((hasFoundCurrent = true), "current")
-          : readLevelNum === userLevelNum
-            ? "current"
-            : "locked";
-
-    if (readLevelNum === userLevelNum && readState === "current") {
-      hasFoundCurrent = true;
-    }
+        : readLevelNum === userLevelNum
+          ? "current"
+          : "locked";
 
     if (readLevelInfo) {
       nodes.push({
         id: `read-${read}`,
         type: "reading",
         title: readLevelInfo.name,
-        subtitle: `Level ${read.replace("L", "")}`,
+        subtitle: readLevelInfo.cefrHint.replace(/^pre/, "Pre") + " reading",
         route: "/read",
         state: readState,
         icon: <BookOpen size={24} />,
       });
     }
 
-    // Grammar Node
+    // Grammar Node: passed by assessment, finished lesson by lesson, or the
+    // first open course (current); later courses stay locked.
     const course = grammarCourses.find((c) => c.level === grammar);
     if (course) {
       const courseLessons = course.blocks.flatMap((b) => b.lessons.map((l) => l.id));
@@ -108,25 +110,36 @@ export function JourneyMap({
         grammarCompletedLessonIds.has(id)
       ).length;
       const totalInCourse = courseLessons.length;
-      const grammarDone = totalInCourse > 0 && completedInCourse >= totalInCourse;
+      const passedByAssessment = GRAMMAR_LEVEL_ORDER.indexOf(course.level) < grammarStartIdx;
+      const grammarDone =
+        passedByAssessment || (totalInCourse > 0 && completedInCourse >= totalInCourse);
 
-      const grammarState = grammarDone
+      const grammarState: MapNodeState = grammarDone
         ? "completed"
-        : !hasFoundCurrent
-          ? ((hasFoundCurrent = true), "current")
-          : "locked";
+        : grammarCurrentFound
+          ? "locked"
+          : ((grammarCurrentFound = true), "current");
 
       nodes.push({
         id: `grammar-${grammar}`,
         type: "grammar",
         title: `${grammar} Grammar`,
-        subtitle: `${completedInCourse} / ${totalInCourse} lessons`,
+        subtitle: passedByAssessment
+          ? "Passed by assessment"
+          : `${completedInCourse} / ${totalInCourse} lessons`,
         route: "/grammar",
         state: grammarState,
         icon: <Blocks size={24} />,
       });
     }
   });
+
+  // Until the learner can read the script, the alphabet is the only open node.
+  if (alphabetNeeded) {
+    for (const node of nodes) {
+      if (node.id !== "alphabet") node.state = "locked";
+    }
+  }
 
   // 2. Render visually winding map
   // We'll reverse the array so the start is at the bottom.
@@ -141,6 +154,18 @@ export function JourneyMap({
 
   return (
     <div className="relative w-full py-12 flex flex-col items-center overflow-hidden">
+      {alphabetNeeded && (
+        <div className="relative z-20 mx-6 mb-6 flex items-center gap-3 rounded-2xl border border-saffron/30 bg-saffron-soft px-4 py-3">
+          <Lock size={18} className="shrink-0 text-saffron" />
+          <p className="text-[14px] leading-snug text-ink-soft">
+            The journey unlocks once you finish the{" "}
+            <Link href="/alphabet" className="font-medium text-saffron underline">
+              Alphabet course
+            </Link>
+            . You&apos;ll start at your assessed level right after.
+          </p>
+        </div>
+      )}
       {/* SVG Path Background */}
       <div className="absolute inset-0 pointer-events-none flex justify-center">
         <svg

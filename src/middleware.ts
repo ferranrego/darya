@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-const PUBLIC_PATHS = ["/welcome", "/onboarding", "/manifest.webmanifest", "/sw.js"];
+const PUBLIC_PATHS = ["/welcome", "/manifest.webmanifest", "/sw.js"];
 
 export async function middleware(request: NextRequest) {
   let response = NextResponse.next({ request });
@@ -36,7 +36,7 @@ export async function middleware(request: NextRequest) {
 
   if (!user && !isPublic) {
     const url = request.nextUrl.clone();
-    url.pathname = "/onboarding";
+    url.pathname = "/welcome";
     return NextResponse.redirect(url);
   }
 

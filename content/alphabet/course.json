@@ -11,7 +11,7 @@
           "char": "آ",
           "name": "alef maddā",
           "translit": "ā",
-          "sound": "long 'a' as in father",
+          "sound": "deep 'aw' as in 'saw'",
           "forms": {
             "isolated": "آ",
             "initial": "آ",
@@ -24,7 +24,7 @@
           "char": "ا",
           "name": "alef",
           "translit": "ā / –",
-          "sound": "long 'a', or a vowel seat at the start of words",
+          "sound": "deep 'aw', or a vowel seat at the start of words",
           "forms": {
             "isolated": "ا",
             "initial": "ا",
@@ -50,7 +50,7 @@
           "char": "ن",
           "name": "nūn",
           "translit": "n",
-          "sound": "n as in nan",
+          "sound": "n as in noon",
           "forms": {
             "isolated": "ن",
             "initial": "نـ",
@@ -97,7 +97,7 @@
         {
           "id": "au01-e4",
           "type": "matchSound",
-          "sound": "long 'ā' as in father",
+          "sound": "deep 'aw' as in 'saw'",
           "targetChar": "آ",
           "distractors": [
             "ب",
@@ -213,7 +213,7 @@
           "char": "ر",
           "name": "re",
           "translit": "r",
-          "sound": "rolled r, tip of the tongue",
+          "sound": "rolled r, like Spanish 'r'",
           "forms": {
             "isolated": "ر",
             "initial": "ر",
@@ -361,7 +361,7 @@
           "char": "و",
           "name": "wāw",
           "translit": "w / ō / ū",
-          "sound": "w as in water, or the vowels ō / ū",
+          "sound": "w as in water, or the vowels ō / ū / aw",
           "forms": {
             "isolated": "و",
             "initial": "و",
@@ -374,7 +374,8 @@
           "char": "ه",
           "name": "he",
           "translit": "h / -a",
-          "sound": "h as in hello; silent '-a' at word ends",
+          "sound": "h as in hello; often the vowel '-a' at word ends",
+          "note": "At word ends after a consonant, ه is not an h — it marks the vowel '-a': خانه khāna. After a long vowel it is an h you actually breathe out — unlike English 'shah', where the h is written but never heard: ماه māh, شاه shāh.",
           "forms": {
             "isolated": "ه",
             "initial": "هـ",
@@ -387,7 +388,7 @@
           "char": "ی",
           "name": "yā",
           "translit": "y / ī / ē",
-          "sound": "y as in yes, or the vowels ī / ē",
+          "sound": "y as in yes, or the vowels ī / ē / ay",
           "forms": {
             "isolated": "ی",
             "initial": "یـ",
@@ -946,7 +947,7 @@
           "char": "ژ",
           "name": "zhe",
           "translit": "zh",
-          "sound": "zh as in 'vision'",
+          "sound": "zh, the 's' in 'vision'",
           "forms": {
             "isolated": "ژ",
             "initial": "ژ",
@@ -1002,7 +1003,7 @@
         {
           "id": "au06-e5",
           "type": "matchSound",
-          "sound": "zh as in 'vision'",
+          "sound": "zh, the 's' in 'vision'",
           "targetChar": "ژ",
           "distractors": [
             "ز",

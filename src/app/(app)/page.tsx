@@ -1,7 +1,9 @@
 "use client";
 
-import { Blocks, BookOpen, Flame, Map, RotateCcw, SpellCheck, BarChart2 } from "lucide-react";
+import { Blocks, BookOpen, CircleHelp, Flame, Map, RotateCcw, SpellCheck, BarChart2 } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { HomeGuideSheet } from "@/components/home/home-guide-sheet";
 import { ActionCard } from "@/components/ui/action-card";
 import { ProgressRing } from "@/components/ui/progress-ring";
 import {
@@ -11,6 +13,7 @@ import {
   grammarLessonLevel,
   grammarLessons,
   grammarStartLevel,
+  levelLabel,
 } from "@/lib/content/load";
 import { getTodayActivity } from "@/lib/db/activity";
 import {
@@ -70,6 +73,19 @@ export default function HomePage() {
 
   const firstName = profile?.display_name?.split(" ")[0] || "there";
 
+  // First home visit: open the welcome tour once the profile has resolved,
+  // so the sheet never appears with un-personalized copy.
+  const [showGuide, setShowGuide] = useState(false);
+  useEffect(() => {
+    if (!profile) return;
+    if (localStorage.getItem("hasSeenHomeGuide")) return;
+    const t = setTimeout(() => {
+      setShowGuide(true);
+      localStorage.setItem("hasSeenHomeGuide", "true");
+    }, 600);
+    return () => clearTimeout(t);
+  }, [profile]);
+
   return (
     <div className="flex flex-col gap-8">
       <header className="flex items-start justify-between pt-2">
@@ -80,6 +96,14 @@ export default function HomePage() {
           <h1 className="mt-1 text-[26px] font-semibold tracking-tight">Salām, {firstName}</h1>
         </div>
         <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setShowGuide(true)}
+            className="flex items-center justify-center rounded-full bg-paper border border-line w-9 h-9 text-ink-soft hover:text-ink hover:bg-surface transition-colors"
+            title="How Darya works"
+          >
+            <CircleHelp size={18} />
+          </button>
           <Link
             href="/stats"
             className="flex items-center justify-center rounded-full bg-paper border border-line w-9 h-9 text-ink-soft hover:text-ink hover:bg-surface transition-colors"
@@ -119,12 +143,6 @@ export default function HomePage() {
           />
         )}
         <ActionCard
-          href="/journey"
-          icon={<Map size={20} />}
-          title="Journey Map"
-          subtitle="Visualize your learning path"
-        />
-        <ActionCard
           href="/grammar"
           icon={<Blocks size={20} />}
           title="Grammar"
@@ -139,7 +157,7 @@ export default function HomePage() {
           href="/read"
           icon={<BookOpen size={20} />}
           title="Read"
-          subtitle={`Level ${profile?.level_estimate?.replace("L", "") ?? "1"} · texts tuned to your words`}
+          subtitle={`${levelLabel(profile?.level_estimate)} · texts tuned to your words`}
           accent={!showAlphabet && grammarComplete}
         />
         <ActionCard
@@ -147,6 +165,12 @@ export default function HomePage() {
           icon={<RotateCcw size={20} />}
           title="Review"
           subtitle={dueCount > 0 ? `${dueCount} word${dueCount === 1 ? "" : "s"} ready` : "Nothing due, all caught up"}
+        />
+        <ActionCard
+          href="/journey"
+          icon={<Map size={20} />}
+          title="Journey Map"
+          subtitle="Visualize your learning path"
         />
       </section>
 
@@ -166,6 +190,14 @@ export default function HomePage() {
           <p className="text-[13px] text-ink-soft">words learning</p>
         </Link>
       </section>
+
+      <HomeGuideSheet
+        open={showGuide}
+        onClose={() => setShowGuide(false)}
+        firstName={firstName}
+        levelId={profile?.level_estimate}
+        canReadScript={profile?.can_read_script ?? null}
+      />
     </div>
   );
 }

@@ -40,6 +40,7 @@ export function TextReader({
   const [tapped, setTapped] = useState<TappedWord | null>(null);
   const [tapCount, setTapCount] = useState(0);
   const [revealedEn, setRevealedEn] = useState<Set<number>>(new Set());
+  const [revealedTranslit, setRevealedTranslit] = useState<Set<number>>(new Set());
   const [showTranslit, setShowTranslit] = useState(false);
   const [showSyntax, setShowSyntax] = useState(false);
   const [finished, setFinished] = useState(false);
@@ -146,6 +147,17 @@ export function TextReader({
     });
   }
 
+  // Per-sentence transliteration flips the global toggle for that sentence:
+  // reveals it when the global toggle is off, hides it when on.
+  function toggleTranslit(i: number) {
+    setRevealedTranslit((prev) => {
+      const next = new Set(prev);
+      if (next.has(i)) next.delete(i);
+      else next.add(i);
+      return next;
+    });
+  }
+
   const tappedEntry = tapped?.lexemeId ? (lexemeById(tapped.lexemeId) ?? null) : null;
   const tappedStatus = tapped?.lexemeId
     ? (statusMap?.get(tapped.lexemeId) ?? "learning")
@@ -217,14 +229,17 @@ export function TextReader({
           </button>
           <button
             type="button"
-            onClick={() => setShowTranslit((v) => !v)}
+            onClick={() => {
+              setShowTranslit((v) => !v);
+              setRevealedTranslit(new Set());
+            }}
             aria-pressed={showTranslit}
             title="Show transliteration"
-            className={`mt-2 flex size-10 shrink-0 items-center justify-center rounded-full border transition-colors ${
+            className={`mt-2 flex size-10 shrink-0 items-center justify-center rounded-full border text-[13px] font-medium transition-colors ${
               showTranslit ? "border-lapis bg-lapis-soft text-lapis" : "border-line text-ink-faint hover:text-ink-soft"
             }`}
           >
-            <Languages size={18} />
+            abc
           </button>
         </div>
       </header>
@@ -283,18 +298,38 @@ export function TextReader({
                 ),
               )}
             </p>
-            {showTranslit && (
+            {(showTranslit !== revealedTranslit.has(i)) && (
               <p className="mt-1 text-[14px] leading-relaxed text-ink-faint">{sentence.translit}</p>
             )}
-            <div className="flex items-center gap-3">
+            {revealedEn.has(i) && (
+              <p className="mt-1 text-[13px] leading-relaxed text-ink-soft">{sentence.en}</p>
+            )}
+            <div className="mt-1.5 flex items-center gap-1">
+              <button
+                type="button"
+                onClick={() => toggleTranslit(i)}
+                aria-pressed={showTranslit !== revealedTranslit.has(i)}
+                aria-label="Show transliteration"
+                className={`rounded-full px-2 py-0.5 text-[11px] font-medium transition-colors ${
+                  showTranslit !== revealedTranslit.has(i)
+                    ? "bg-lapis-soft text-lapis"
+                    : "text-ink-faint/70 hover:text-lapis"
+                }`}
+              >
+                abc
+              </button>
               <button
                 type="button"
                 onClick={() => toggleEn(i)}
-                className={`mt-1.5 text-[13px] transition-colors flex items-center justify-center ${
-                  revealedEn.has(i) ? "text-ink-soft" : "text-ink-faint/70 hover:text-ink-soft"
+                aria-pressed={revealedEn.has(i)}
+                aria-label="Translate to English"
+                className={`rounded-full p-1 transition-colors flex items-center justify-center ${
+                  revealedEn.has(i)
+                    ? "bg-lapis-soft text-lapis"
+                    : "text-ink-faint/70 hover:text-lapis"
                 }`}
               >
-                {revealedEn.has(i) ? sentence.en : <Languages size={14} className="opacity-70" />}
+                <Languages size={13} />
               </button>
             </div>
           </div>

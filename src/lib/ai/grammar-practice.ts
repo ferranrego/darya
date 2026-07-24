@@ -1,6 +1,6 @@
 import "server-only";
 import { z } from "zod";
-import { grammarLessonLevel, lexicon, lexiconIndex } from "../content/load";
+import { grammarLessonLevel, lexicon } from "../content/load";
 import type { GrammarLevel } from "../content/schema";
 import {
   fillBlankExercise,
@@ -8,9 +8,9 @@ import {
   type GrammarExercise,
   type GrammarLesson,
 } from "../content/schema";
-import { buildAllowedFormKeys } from "../text/dari-forms";
-import { matchKey, normalizeDari, tokenizeDari } from "../text/normalize";
+import { normalizeDari } from "../text/normalize";
 import { completeJson } from "./providers";
+import { assertKnownVocab } from "./vocab-check";
 
 /**
  * Extra-practice generation for grammar lessons.
@@ -34,35 +34,18 @@ const rawItemSchema = z.union([
 
 const outputSchema = z.object({ exercises: z.array(rawItemSchema).min(1) });
 
-let allowedFormKeys: Set<string> | null = null;
-function allowedForms(): Set<string> {
-  allowedFormKeys ??= buildAllowedFormKeys(lexicon.entries);
-  return allowedFormKeys;
-}
-
-/** Throw unless every token of `dari` is lexicon vocabulary or a taught form. */
-function assertKnownVocab(dari: string) {
-  const tokens = tokenizeDari(dari);
-  if (tokens.length > MAX_SENTENCE_WORDS) throw new Error(`Sentence too long: "${dari}"`);
-  for (const token of tokens) {
-    if (lexiconIndex().resolve(token)) continue;
-    if (allowedForms().has(matchKey(token))) continue;
-    throw new Error(`Unknown word "${token}" in "${dari}"`);
-  }
-}
-
 function checkItem(item: z.infer<typeof rawItemSchema>) {
   if (item.type === "fillBlank") {
     const answerKey = normalizeDari(item.answer.dari);
     for (const d of item.distractors) {
       if (normalizeDari(d.dari) === answerKey) throw new Error("Distractor equals answer");
     }
-    assertKnownVocab(item.dari.replace("___", item.answer.dari));
+    assertKnownVocab(item.dari.replace("___", item.answer.dari), MAX_SENTENCE_WORDS);
   } else {
     if (item.direction !== "toEn") throw new Error("Only toEn is generated");
     if (item.distractorsEn.length < 2) throw new Error("Need 2 English distractors");
     if (item.distractorsEn.includes(item.en)) throw new Error("Distractor equals answer");
-    assertKnownVocab(item.dari);
+    assertKnownVocab(item.dari, MAX_SENTENCE_WORDS);
   }
 }
 

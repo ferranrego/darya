@@ -26,7 +26,7 @@ export function TabBar() {
 
   return (
     <nav
-      className="fixed bottom-0 inset-x-0 z-40 w-full pb-[max(env(safe-area-inset-bottom),12px)] pointer-events-none [transform:translateZ(0)] [will-change:transform] [backface-visibility:hidden]"
+      className="absolute bottom-0 inset-x-0 z-40 w-full pb-[max(env(safe-area-inset-bottom),12px)] pointer-events-none [transform:translateZ(0)] [will-change:transform] [backface-visibility:hidden]"
     >
       <div className="mx-auto flex max-w-[360px] items-center justify-center px-4 pointer-events-auto">
         <div className="flex w-full items-center justify-between rounded-full border border-line/70 bg-paper/90 backdrop-blur-xl p-1.5 shadow-lg">
@@ -45,7 +45,8 @@ export function TabBar() {
                   // Repeat-tap on the current tab scrolls to top instead of navigating.
                   if (active) {
                     e.preventDefault();
-                    window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
+                    const scroller = document.getElementById("app-scroll") ?? window;
+                    scroller.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
                   }
                 }}
                 className={`relative flex h-12 items-center justify-center rounded-full transition-colors ${

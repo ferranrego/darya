@@ -7,10 +7,12 @@ import { levels } from "./content/load";
  * which words to seed as known.
  */
 
-/** Approximate real-world width (word count) of each frequency band. */
-const BAND_WIDTHS = [100, 150, 250, 300, 400, 500, 700, 1000];
-
-const SAMPLE_PER_BAND = [10, 9, 9, 8, 8, 6, 0, 0];
+/**
+ * How many words to show from each frequency band (50 total). Every band is
+ * sampled — including 7 and 8 — so the estimate can span the whole lexicon;
+ * otherwise the upper levels are mathematically unreachable.
+ */
+const SAMPLE_PER_BAND = [8, 7, 7, 6, 6, 6, 5, 5];
 
 /** Bands with recognition at or above this seed every core word as known. */
 const BAND_KNOWN_THRESHOLD = 0.8;
@@ -64,18 +66,29 @@ export function scoreAssessment(
     perBand.set(w.band, s);
   }
 
+  // Estimate against the actual lexicon: recognition rate per band times the
+  // band's real entry count. This puts the estimate on the same scale as the
+  // levels' entryKnownWords rank cutoffs, so every level is reachable.
+  const bandSizes = new Array<number>(FREQ_BAND_COUNT).fill(0);
+  for (const e of allEntries) bandSizes[e.freqBand - 1]++;
+
   let estimatedVocab = 0;
   const known = new Set<string>(selectedIds);
+  // Only seed a band wholesale when every easier band also cleared the
+  // threshold: a few lucky hits among rare words shouldn't mark the whole
+  // long tail as known.
+  let prefixKnown = true;
   for (let band = 1; band <= FREQ_BAND_COUNT; band++) {
     const s = perBand.get(band);
     if (!s || s.total === 0) continue;
     const rate = s.hit / s.total;
-    estimatedVocab += Math.round(rate * BAND_WIDTHS[band - 1]);
-    if (rate >= BAND_KNOWN_THRESHOLD) {
+    estimatedVocab += Math.round(rate * bandSizes[band - 1]);
+    if (rate >= BAND_KNOWN_THRESHOLD && prefixKnown) {
       for (const e of allEntries) {
         if (e.freqBand === band) known.add(e.id);
       }
     }
+    prefixKnown = prefixKnown && rate >= BAND_KNOWN_THRESHOLD;
   }
 
   // Highest level whose entry threshold the learner clears.
