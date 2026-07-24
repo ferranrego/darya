@@ -65,7 +65,7 @@
           "title": "Precision in meaning",
           "subtitle": "manzūr, qasd, ma'nā",
           "grammarPoint": "meaning-nuance",
-          "grammarPointEn": "Talking about meaning and intent precisely: manzūr (what one means), qasd (intention), ma'nā (the meaning of a word) — distinguishing subtle senses.",
+          "grammarPointEn": "Talking about meaning and intent precisely: manzūr (what one means), qasd (intention), ma'nā (the meaning of a word) - distinguishing subtle senses.",
           "slides": [
             {
               "id": "gs-81-1",
@@ -154,7 +154,7 @@
             {
               "id": "gs-84-1",
               "title": "Following the chain",
-              "body": "Formal Dari builds long ezāfa chains, each -e linking to the next. Read them from the head noun outward: 'book — new — of the teacher — of our school'.",
+              "body": "Formal Dari builds long ezāfa chains, each -e linking to the next. Read them from the head noun outward: 'book - new - of the teacher - of our school'.",
               "examples": [
                 { "dari": "کتاب نو معلم مکتب ما", "translit": "ketāb-e naw-e mu'allem-e maktab-e mā", "en": "The new book of our school's teacher.", "highlight": "معلم مکتب ما" }
               ]
@@ -211,7 +211,7 @@
             {
               "id": "gs-86-1",
               "title": "Body parts, big meanings",
-              "body": "dil (heart) carries emotion, dast (hand) carries action or having, sar (head) carries thought. dilam mēkhāhad — 'my heart wants', i.e. 'I feel like'.",
+              "body": "dil (heart) carries emotion, dast (hand) carries action or having, sar (head) carries thought. dilam mēkhāhad - 'my heart wants', i.e. 'I feel like'.",
               "examples": [
                 { "dari": "دلم می‌خواهد بروم", "translit": "dilam mēkhāhad burawam", "en": "I feel like going.", "highlight": "دلم می‌خواهد" }
               ]
@@ -403,7 +403,7 @@
             {
               "id": "gs-93-1",
               "title": "You've done it",
-              "body": "From your first pronoun to layered argument and register-switching — you now command the whole ladder. This final set mixes the C2 toolkit. تبریک!",
+              "body": "From your first pronoun to layered argument and register-switching - you now command the whole ladder. This final set mixes the C2 toolkit. تبریک!",
               "examples": [
                 { "dari": "اگرچه سخت بود، اما با این هم به هدف خود رسید", "translit": "agarche sakht būd, amā bā īn ham ba hadaf-e khud rasīd", "en": "Although it was hard, even so he reached his goal." }
               ]
@@ -417,7 +417,7 @@
             { "id": "ge-93-5", "type": "buildSentence", "en": "This book, I read myself.", "words": [{ "dari": "این کتاب را", "translit": "īn ketāb rā" }, { "dari": "خودم", "translit": "khudam" }, { "dari": "خواندم", "translit": "khāndam" }], "translit": "īn ketāb rā khudam khāndam", "extraWords": [{ "dari": "خودش", "translit": "khudash" }] },
             { "id": "ge-93-6", "type": "chooseTranslation", "direction": "toDari", "dari": "احتمالاً او هنوز نیامده است", "translit": "ehtemālan ō hanōz nayāmada ast", "en": "He has probably not come yet.", "distractorsDari": [{ "dari": "حتماً او آمده است", "translit": "hatman ō āmada ast" }, { "dari": "او دیگر نیامده است", "translit": "ō dēgar nayāmada ast" }] },
             { "id": "ge-93-7", "type": "spotError", "dari": "اگرچه سرد بود، بنابراین رفتیم", "translit": "agarche sard būd, binābar'īn raftēm", "en": "Although it was cold, even so we went.", "errorWord": { "dari": "بنابراین", "translit": "binābar'īn" }, "correction": { "dari": "با این هم", "translit": "bā īn ham" }, "hint": "'Although' pairs with 'even so', not 'therefore'." },
-            { "id": "ge-93-8", "type": "matchPairs", "prompt": "Match — the final board", "pairs": [{ "dari": "دلم می‌خواهد", "translit": "dilam mēkhāhad", "en": "I feel like" }, { "dari": "به دست آوردن", "translit": "ba dast āwardan", "en": "to gain" }, { "dari": "نمود", "translit": "namūd", "en": "did (formal)" }, { "dari": "احتمالاً", "translit": "ehtemālan", "en": "probably" }] }
+            { "id": "ge-93-8", "type": "matchPairs", "prompt": "Match - the final board", "pairs": [{ "dari": "دلم می‌خواهد", "translit": "dilam mēkhāhad", "en": "I feel like" }, { "dari": "به دست آوردن", "translit": "ba dast āwardan", "en": "to gain" }, { "dari": "نمود", "translit": "namūd", "en": "did (formal)" }, { "dari": "احتمالاً", "translit": "ehtemālan", "en": "probably" }] }
           ]
         }
       ]

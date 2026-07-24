@@ -1,6 +1,6 @@
 "use client";
 
-import { Languages, Loader2, Trash2 } from "lucide-react";
+import { Languages, Loader2, Trash2, SpellCheck } from "lucide-react";
 import { useState } from "react";
 import { DARI_SCRIPT, type EnrichMode } from "@/lib/chat/shared";
 import type { ChatMessageRow } from "@/lib/db/types";
@@ -70,14 +70,38 @@ export function MessageBubble({
           </p>
 
           {(shown || pending || failed) && (
-            <p
-              dir="auto"
-              className={`mt-2 border-t pt-2 text-[14px] italic ${
+            <div
+              className={`mt-2 border-t pt-2 text-[14px] ${
                 own ? "border-white/25 text-white/80" : "border-line text-ink-soft"
               }`}
             >
-              {shown ?? (pending ? "Thinking..." : "Could not do that right now.")}
-            </p>
+              {open === "correction" && shown ? (
+                <div className="flex flex-col gap-2">
+                  <p className="text-[16px]" dir="auto" lang="prs">
+                    {(shown as any).corrected}
+                  </p>
+                  {((shown as any).issues || []).length === 0 ? (
+                    <p className="italic text-[13px]">Looks good! No issues found.</p>
+                  ) : (
+                    <ul className="list-disc pl-4 text-[13px] flex flex-col gap-1">
+                      {(shown as any).issues.map((issue: any, i: number) => (
+                        <li key={i}>
+                          <span className="line-through opacity-70" dir="auto" lang="prs">{issue.before}</span>
+                          {" → "}
+                          <span dir="auto" lang="prs">{issue.after}</span>
+                          {": "}
+                          {issue.whyEn}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ) : (
+                <p dir="auto" className="italic">
+                  {(shown as string) ?? (pending ? "Thinking..." : "Could not do that right now.")}
+                </p>
+              )}
+            </div>
           )}
         </div>
 
@@ -137,6 +161,25 @@ export function MessageBubble({
                   <Languages size={13} />
                 )}
               </button>
+              {own && (
+                <button
+                  type="button"
+                  onClick={() => toggle("correction")}
+                  aria-label="Check my Dari"
+                  aria-pressed={open === "correction"}
+                  className={`rounded-full p-1 transition-colors ${
+                    open === "correction"
+                      ? "bg-lapis-soft text-lapis"
+                      : "text-ink-faint hover:text-lapis"
+                  }`}
+                >
+                  {pending && open === "correction" ? (
+                    <Loader2 size={13} className="animate-spin" />
+                  ) : (
+                    <SpellCheck size={13} />
+                  )}
+                </button>
+              )}
             </>
           )}
         </div>

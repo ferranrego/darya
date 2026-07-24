@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Check } from "lucide-react";
-import { lexemeById, levels } from "@/lib/content/load";
+import { lexemeById, levels, themes } from "@/lib/content/load";
 import { useUserWords } from "@/lib/queries/hooks";
 import { KNOWN_STABILITY_DAYS } from "@/lib/srs/scheduler";
 
@@ -164,34 +164,14 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
 
         {filter === "categories" ? (
           <div className="grid grid-cols-2 gap-3 sm:gap-4 pb-24">
-            {/* Hardcoded visual mapping for the 18 standardized themes */}
-            {[
-              { name: "Food & Drink", emoji: "🍎", color: "bg-red-50 text-red-600 border-red-100" },
-              { name: "Colors & Shapes", emoji: "🎨", color: "bg-purple-50 text-purple-600 border-purple-100" },
-              { name: "Nature & Weather", emoji: "☀️", color: "bg-amber-50 text-amber-600 border-amber-100" },
-              { name: "Time & Calendar", emoji: "🕰️", color: "bg-slate-50 text-slate-600 border-slate-200" },
-              { name: "People & Family", emoji: "👪", color: "bg-pink-50 text-pink-600 border-pink-100" },
-              { name: "Home & Furniture", emoji: "🏠", color: "bg-orange-50 text-orange-600 border-orange-100" },
-              { name: "Travel & Transportation", emoji: "✈️", color: "bg-sky-50 text-sky-600 border-sky-100" },
-              { name: "Work & Business", emoji: "👔", color: "bg-emerald-50 text-emerald-600 border-emerald-100" },
-              { name: "Emotions & Feelings", emoji: "❤️", color: "bg-rose-50 text-rose-600 border-rose-100" },
-              { name: "Body & Health", emoji: "🩺", color: "bg-teal-50 text-teal-600 border-teal-100" },
-              { name: "Society & Politics", emoji: "🏛️", color: "bg-indigo-50 text-indigo-600 border-indigo-100" },
-              { name: "Science & Tech", emoji: "🧬", color: "bg-blue-50 text-blue-600 border-blue-100" },
-              { name: "Arts & Culture", emoji: "🎭", color: "bg-fuchsia-50 text-fuchsia-600 border-fuchsia-100" },
-              { name: "Law & Justice", emoji: "⚖️", color: "bg-stone-50 text-stone-600 border-stone-200" },
-              { name: "Abstract Concepts", emoji: "💭", color: "bg-gray-50 text-gray-600 border-gray-200" },
-              { name: "Actions", emoji: "🏃", color: "bg-lime-50 text-lime-700 border-lime-200" },
-              { name: "Descriptions", emoji: "✨", color: "bg-yellow-50 text-yellow-700 border-yellow-200" },
-              { name: "Grammar & Connectors", emoji: "🔗", color: "bg-zinc-50 text-zinc-600 border-zinc-200" },
-            ].map((theme) => (
+            {themes.map((theme) => (
               <a
-                key={theme.name}
-                href={`/words/theme/${encodeURIComponent(theme.name)}`}
+                key={theme.id}
+                href={`/words/theme/${encodeURIComponent(theme.id)}`}
                 className={`group flex flex-col items-center justify-center gap-2 rounded-2xl border ${theme.color} p-5 text-center transition-all duration-300 hover:shadow-md hover:-translate-y-1`}
               >
                 <span className="text-[32px] mb-1 transform transition-transform duration-300 group-hover:scale-110">{theme.emoji}</span>
-                <span className="text-[14px] font-bold leading-tight">{theme.name}</span>
+                <span className="text-[14px] font-bold leading-tight">{theme.id}</span>
               </a>
             ))}
           </div>

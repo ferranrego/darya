@@ -22,7 +22,7 @@ const PAST_ENDINGS = ["م", "ی", "", "یم", "ید", "ند"];
  * two-word "رفته است", handled by the participle + budan forms below. */
 const PERFECT_ENCLITICS = ["ام", "ای", "ایم", "اید", "اند"];
 
-/** budan/hastan/dāshtan forms, and khāhad future — not derivable from variants. */
+/** budan/hastan/dāshtan forms, and khāhad future - not derivable from variants. */
 const IRREGULAR_FORMS = [
   // present / negative present of budan (existential + copula)
   "هستم", "هستی", "هست", "است", "هستیم", "هستید", "هستند",
@@ -30,7 +30,7 @@ const IRREGULAR_FORMS = [
   // simple past of budan
   "بودم", "بودی", "بود", "بودیم", "بودید", "بودند",
   "نبودم", "نبودی", "نبود", "نبودیم", "نبودید", "نبودند",
-  // subjunctive of budan (bāsham…) — used in past subjunctive "رفته باشم"
+  // subjunctive of budan (bāsham…) - used in past subjunctive "رفته باشم"
   "باشم", "باشی", "باشد", "باشیم", "باشید", "باشند",
   "نباشم", "نباشی", "نباشد", "نباشیم", "نباشید", "نباشند",
   // participle + perfect of budan
@@ -43,7 +43,7 @@ const IRREGULAR_FORMS = [
   // āmadan is irregular in the subjunctive/imperative (biā, not *beāy)
   "بیا", "بیایید", "بیایم", "بیایی", "بیاید", "بیاییم", "بیایند",
   "نیا", "نیایید", "نیایم", "نیایی", "نیاید", "نیاییم", "نیایند",
-  // impersonal mētawān ("one can") + short infinitive — a fixed form with no
+  // impersonal mētawān ("one can") + short infinitive - a fixed form with no
   // personal ending, so the derived توان- paradigm doesn't cover it.
   `می${ZWNJ}توان`, `نمی${ZWNJ}توان`,
 ];
@@ -77,7 +77,7 @@ export function buildAllowedFormKeys(entries: LexiconEntry[]): Set<string> {
       addParadigm(stem, PRESENT_ENDINGS, `ن${ME_PREFIX}`);
 
       // Subjunctive / imperative with be-/na-. Vowel-initial stems (آ / ا)
-      // take an irregular prefix (بیا for āmadan), hardcoded above — skip them.
+      // take an irregular prefix (بیا for āmadan), hardcoded above - skip them.
       if (!/^[آا]/.test(stem)) {
         addParadigm(stem, PRESENT_ENDINGS, "ب");
         add(`ب${stem}`); // bare imperative (برو)

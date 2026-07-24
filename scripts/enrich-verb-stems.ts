@@ -14,7 +14,7 @@
  * get the light verb's stem, so lexicon-index can conjugate the light verb
  * and map its forms to the compound.
  *
- * Reads/writes raw JSON — never through zod, which would strip/inject fields.
+ * Reads/writes raw JSON - never through zod, which would strip/inject fields.
  *
  * Run: pnpm tsx scripts/enrich-verb-stems.ts [--dry-run] [--limit N]
  */
@@ -184,7 +184,7 @@ async function callLlm(prompt: string): Promise<string> {
 
 async function llmStems(batch: RawEntry[]): Promise<Map<string, string>> {
   const list = batch.map((e) => `- ${e.dari} (${e.translit}, "${e.glossEn}")`).join("\n");
-  const prompt = `You are an expert Persian (Dari/Farsi) linguist. For each infinitive verb below, give its PRESENT STEM (بن مضارع) in Persian script only — the stem used in present-tense conjugation. Examples: کردن → کن، رفتن → رو، گفتن → گو، خریدن → خر، پرسیدن → پرس، فهمیدن → فهم.
+  const prompt = `You are an expert Persian (Dari/Farsi) linguist. For each infinitive verb below, give its PRESENT STEM (بن مضارع) in Persian script only - the stem used in present-tense conjugation. Examples: کردن → کن، رفتن → رو، گفتن → گو، خریدن → خر، پرسیدن → پرس، فهمیدن → فهم.
 
 Verbs:
 ${list}
@@ -217,7 +217,7 @@ async function main() {
   let cleaned = 0;
   let processed = 0;
 
-  // Pass 1: variant cleanup (all entries) — drop dead Latin-only keys.
+  // Pass 1: variant cleanup (all entries) - drop dead Latin-only keys.
   for (const e of entries) {
     const before = e.variants.length;
     e.variants = e.variants.filter((v) => HAS_PERSIAN.test(v));
@@ -281,7 +281,7 @@ async function main() {
     }
   }
 
-  // Pass 4: compound verbs whose light verb has no simple entry — put the
+  // Pass 4: compound verbs whose light verb has no simple entry - put the
   // light verb's stem on the highest-frequency compound so lexicon-index can
   // conjugate the light verb under that entry's id.
   const lightVerbCarrier = new Map<string, RawEntry>();
@@ -314,7 +314,7 @@ async function main() {
   console.log(`\nStems: ${bySource.override} override, ${bySource.table} table, ${bySource.regex} regex, ${bySource.llm} LLM, ${bySource.compound} compound-carrier`);
   console.log(`Dropped ${cleaned} non-Persian variants`);
   if (skipped.length) console.log(`\nSkipped (${skipped.length}):\n  ${skipped.join("\n  ")}`);
-  if (flagged.length) console.log(`\nPossible prefix verbs — review stems manually:\n  ${flagged.join("\n  ")}`);
+  if (flagged.length) console.log(`\nPossible prefix verbs - review stems manually:\n  ${flagged.join("\n  ")}`);
   if (needLlm.length && dryRun) console.log(`\n[dry-run] would query LLM for ${needLlm.length} verbs`);
 
   const regexDerived = entries.filter((e) => e.presentStem && !VERB_OVERRIDES[matchKey(normalizeDari(e.dari))] && e.pos === "verb" && !e.dari.includes(" "));

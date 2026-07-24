@@ -55,7 +55,7 @@ export type ExerciseData = GeneratedExercises["exercises"][number];
 export interface ExerciseGenerationRequest {
   level: string;
   knownWords: LexiconEntry[];
-  /** SRS words the learner is actively studying — each exercise should test one. */
+  /** SRS words the learner is actively studying - each exercise should test one. */
   learningTargets: LexiconEntry[];
   /** Brand-new in-band words to introduce gently. */
   newTargets: LexiconEntry[];
@@ -113,13 +113,13 @@ Generate exactly ${req.count} exercises for a student at level ${req.level}: ${m
 ${req.theme ? `Set the exercises in this scenario/theme where it fits naturally: ${req.theme}.` : ""}
 
 Types of exercises:
-1. "cloze": A SHORT fill-in-the-blank sentence (3-6 words maximum). "sentenceDari" MUST be the COMPLETE sentence containing the missing word — do NOT replace it with blanks, underscores, or dots (the UI renders the blank itself). "missingWord" must appear verbatim in "sentenceDari". Provide the missing word, its English translation ("missingEn"), and 3 wrong distractors (must be valid Dari words but wrong for the context).
+1. "cloze": A SHORT fill-in-the-blank sentence (3-6 words maximum). "sentenceDari" MUST be the COMPLETE sentence containing the missing word - do NOT replace it with blanks, underscores, or dots (the UI renders the blank itself). "missingWord" must appear verbatim in "sentenceDari". Provide the missing word, its English translation ("missingEn"), and 3 wrong distractors (must be valid Dari words but wrong for the context).
 2. "realia": A short Markdown document (like a menu or sign in Dari) and a multiple-choice question in English about it.
 3. "grammar_detective": Two sentences: one grammatically correct and one with a common error. Provide an English explanation.
 
 STRICT VOCABULARY AND NATURALNESS CONSTRAINT:
 - MAKE SURE ALL SENTENCES ARE 100% NATURAL AND IDIOMATIC IN DARI. Do NOT generate awkward or word-for-word translated sentences (e.g. do not literally translate "I go to him at home").
-${learning ? `- WORDS THE STUDENT IS CURRENTLY STUDYING — each exercise must test one of these as its focus (e.g. as the cloze missing word): ${learning}` : ""}
+${learning ? `- WORDS THE STUDENT IS CURRENTLY STUDYING - each exercise must test one of these as its focus (e.g. as the cloze missing word): ${learning}` : ""}
 ${fresh ? `- Brand-new words to introduce gently in one or two exercises: ${fresh}` : ""}
 - You should primarily use these words the learner already knows: ${known}
 - If it is impossible to make a natural, idiomatic sentence using ONLY the known words, you are allowed to introduce 1 or 2 simple, common words that are NOT in the list, but only if absolutely necessary for the sentence to make sense in real life.

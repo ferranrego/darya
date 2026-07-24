@@ -64,7 +64,7 @@ function buildPrompt(lesson: GrammarLesson): string {
   const level = grammarLessonLevel(lesson.id) ?? "A1";
   const anchors = lesson.slides
     .flatMap((s) => s.examples)
-    .map((e) => `${e.dari} — ${e.translit} — "${e.en}"`)
+    .map((e) => `${e.dari} - ${e.translit} - "${e.en}"`)
     .join("\n");
 
   // Most frequent vocabulary up to this level's frequency-band cap.
@@ -79,7 +79,7 @@ function buildPrompt(lesson: GrammarLesson): string {
 
 THE GRAMMAR POINT to drill: ${lesson.grammarPointEn}
 
-Style anchors — the lesson taught exactly these patterns; imitate their difficulty, spelling and transliteration style:
+Style anchors - the lesson taught exactly these patterns; imitate their difficulty, spelling and transliteration style:
 ${anchors}
 
 ALLOWED VOCABULARY (use ONLY these words, plus conjugated forms of these verbs and forms of "to be"):
@@ -95,7 +95,7 @@ STRICT RULES:
 - Afghan Dari (Kabuli) usage and spelling. Transliteration: long vowels ā ē ī ō ū, mē- for the present prefix, w for و.
 - Use ZWNJ in می‌ verb forms (می‌روم).
 - Every sentence must be natural and meaningful, never a random pile of words.
-- Do not copy the anchor sentences — write new ones.
+- Do not copy the anchor sentences - write new ones.
 
 Return ONLY JSON:
 {"exercises": [

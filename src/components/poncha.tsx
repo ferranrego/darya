@@ -1,15 +1,16 @@
 import Image from "next/image";
 
 /**
- * Poncha (پونچا) — Darya's mascot, a golden Kabul street puppy who accompanies
+ * Poncha (پونچا) - Darya's mascot, a golden Kabul street puppy who accompanies
  * the learner through the app. One flat-vector sticker per mood; render her at
  * moments that deserve a friendly face (welcome, empty states, celebration).
  */
-export type PonchaPose = "wave" | "sleep" | "greet" | "read" | "celebrate";
+export type PonchaPose = "wave" | "sleep" | "greet" | "read" | "celebrate" | "home";
 
 /** Intrinsic size of each trimmed asset, so Next/Image reserves exact space. */
 const POSES: Record<PonchaPose, { src: string; w: number; h: number; alt: string }> = {
   wave: { src: "/poncha/poncha-wave.webp", w: 329, h: 512, alt: "Poncha waving hello" },
+  home: { src: "/poncha/poncha-home.webp", w: 335, h: 512, alt: "Poncha sitting, ready to learn" },
   sleep: { src: "/poncha/poncha-sleep.webp", w: 512, h: 383, alt: "Poncha curled up asleep" },
   greet: { src: "/poncha/poncha-greet.webp", w: 340, h: 512, alt: "Poncha saying hello" },
   read: { src: "/poncha/poncha-read.webp", w: 330, h: 512, alt: "Poncha reading a book" },
@@ -27,7 +28,7 @@ const ANIMATED: Partial<Record<PonchaPose, { src: string; w: number; h: number }
   wave: { src: "/poncha/poncha-wave-anim.webp", w: 288, h: 384 },
 };
 
-/** Poncha's name in Dari script — handy for captions and speech bubbles. */
+/** Poncha's name in Dari script - handy for captions and speech bubbles. */
 export const PONCHA_DARI = "پونچا";
 
 export function Poncha({

@@ -136,7 +136,7 @@
           "slides": [
             {
               "id": "gs-35-1",
-              "title": "waqtē ke — when",
+              "title": "waqtē ke - when",
               "body": "waqtē ke means 'when' and joins two events. For past events, both verbs are in the past.",
               "examples": [
                 { "dari": "وقتی که آمد، من خانه بودم", "translit": "waqtē ke āmad, man khāna būdam", "en": "When he came, I was at home.", "highlight": "وقتی که" }
@@ -169,7 +169,7 @@
             {
               "id": "gs-36-1",
               "title": "Participle + būdam",
-              "body": "For 'I had done' something before another past event, use the participle + the past of budan: rafta būdam — 'I had gone'.",
+              "body": "For 'I had done' something before another past event, use the participle + the past of budan: rafta būdam - 'I had gone'.",
               "table": [["man", "rafta būdam"], ["tu", "rafta būdi"], ["ō", "rafta būd"], ["mā", "rafta būdēm"], ["shumā", "rafta būdēd"], ["ānhā", "rafta būdand"]],
               "examples": [
                 { "dari": "وقتی که آمدی، من رفته بودم", "translit": "waqtē ke āmadi, man rafta būdam", "en": "When you came, I had already gone.", "highlight": "رفته بودم" }
@@ -338,7 +338,7 @@
             {
               "id": "gs-42-1",
               "title": "participle + shudan",
-              "body": "To say something 'was done' without naming who did it, use the participle + a form of shudan (to become): neweshta shud — 'it was written'.",
+              "body": "To say something 'was done' without naming who did it, use the participle + a form of shudan (to become): neweshta shud - 'it was written'.",
               "examples": [
                 { "dari": "نامه نوشته شد", "translit": "nāma neweshta shud", "en": "The letter was written.", "highlight": "نوشته شد" },
                 { "dari": "این کتاب خوانده می‌شود", "translit": "īn ketāb khānda mēshawad", "en": "This book is read.", "highlight": "خوانده می‌شود" }
@@ -417,7 +417,7 @@
             {
               "id": "gs-45-1",
               "title": "khāhad + past stem",
-              "body": "In formal or written Dari, the future is khāham (etc.) + the bare past stem: khāham raft — 'I will go'. In everyday speech, the present tense with a time word is more common.",
+              "body": "In formal or written Dari, the future is khāham (etc.) + the bare past stem: khāham raft - 'I will go'. In everyday speech, the present tense with a time word is more common.",
               "table": [["man", "khāham raft"], ["tu", "khāhi raft"], ["ō", "khāhad raft"], ["mā", "khāhēm raft"], ["shumā", "khāhēd raft"], ["ānhā", "khāhand raft"]],
               "examples": [
                 { "dari": "فردا خواهم رفت", "translit": "fardā khāham raft", "en": "Tomorrow I will go.", "highlight": "خواهم رفت" }
@@ -469,7 +469,7 @@
             {
               "id": "gs-47-1",
               "title": "You can say a lot now",
-              "body": "You can hypothesize, report, describe with clauses, and shift between layers of past. These exercises mix it all — watch for the subtle mistakes.",
+              "body": "You can hypothesize, report, describe with clauses, and shift between layers of past. These exercises mix it all - watch for the subtle mistakes.",
               "examples": [
                 { "dari": "اگر بیایی، مردی را که دیدم می‌بینی", "translit": "agar biāyi, mardē rā ke dīdam mēbīni", "en": "If you come, you'll see the man I saw." }
               ]

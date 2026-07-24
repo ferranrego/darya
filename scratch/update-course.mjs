@@ -25,7 +25,7 @@ for (const unit of data.units) {
     
     if (ex.type === "readWord") {
       if (ex.choices && ex.choices.length < 4) {
-         // Never auto-pad with fake choices — a padded choice derived from the
+         // Never auto-pad with fake choices - a padded choice derived from the
          // correct answer once leaked into course.json as "mēwaz0" etc.
          // Real distractors must be written by hand.
          throw new Error(`readWord ${ex.id} has only ${ex.choices.length} choices; add real distractors manually`);

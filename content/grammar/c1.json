@@ -43,7 +43,7 @@
             {
               "id": "gs-65-1",
               "title": "The escape clauses",
-              "body": "magar means 'unless' or 'except'. wa gar na means 'otherwise' — it warns what happens if the first clause isn't met.",
+              "body": "magar means 'unless' or 'except'. wa gar na means 'otherwise' - it warns what happens if the first clause isn't met.",
               "examples": [
                 { "dari": "نمی‌روم مگر تو بیایی", "translit": "namērawam magar tu biāyi", "en": "I won't go unless you come.", "highlight": "مگر" },
                 { "dari": "زود بیا، وگرنه می‌رویم", "translit": "zūd biā, wa gar na mērawēm", "en": "Come soon, otherwise we'll go.", "highlight": "وگرنه" }
@@ -101,7 +101,7 @@
             {
               "id": "gs-67-1",
               "title": "'Before' loves the subjunctive",
-              "body": "qabl az īnke (before) is always followed by the subjunctive — the event it names hasn't happened yet at that point in the story.",
+              "body": "qabl az īnke (before) is always followed by the subjunctive - the event it names hasn't happened yet at that point in the story.",
               "examples": [
                 { "dari": "قبل از اینکه بروم، نان خوردم", "translit": "qabl az īnke burawam, nān khurdam", "en": "Before I went, I ate.", "highlight": "قبل از اینکه" }
               ]
@@ -126,7 +126,7 @@
             {
               "id": "gs-68-1",
               "title": "'After' takes the real tense",
-              "body": "bād az īnke (after) describes something that did happen, so it takes the ordinary past — the mirror image of 'before'.",
+              "body": "bād az īnke (after) describes something that did happen, so it takes the ordinary past - the mirror image of 'before'.",
               "examples": [
                 { "dari": "بعد از اینکه آمد، رفتیم", "translit": "bād az īnke āmad, raftēm", "en": "After he came, we left.", "highlight": "بعد از اینکه" }
               ]
@@ -151,7 +151,7 @@
             {
               "id": "gs-69-1",
               "title": "Any time it happens",
-              "body": "har waqt ke and hargāh both mean 'whenever' — the event repeats or holds any time the condition is met.",
+              "body": "har waqt ke and hargāh both mean 'whenever' - the event repeats or holds any time the condition is met.",
               "examples": [
                 { "dari": "هر وقت که می‌آیی، خوش می‌شوم", "translit": "har waqt ke mēāyi, khush mēshawam", "en": "Whenever you come, I am glad.", "highlight": "هر وقت که" },
                 { "dari": "هرگاه بخواهی، بیا", "translit": "hargāh bukhāhi, biā", "en": "Come whenever you want.", "highlight": "هرگاه" }
@@ -184,7 +184,7 @@
             {
               "id": "gs-70-1",
               "title": "No named source",
-              "body": "gufta mēshawad ke ('it is said that') and mēgōyand ke ('they say that') report general belief without naming who says it — common in formal and written Dari.",
+              "body": "gufta mēshawad ke ('it is said that') and mēgōyand ke ('they say that') report general belief without naming who says it - common in formal and written Dari.",
               "examples": [
                 { "dari": "گفته می‌شود که او رفته است", "translit": "gufta mēshawad ke ō rafta ast", "en": "It is said that he has gone.", "highlight": "گفته می‌شود" },
                 { "dari": "می‌گویند که کابل مقبول است", "translit": "mēgōyand ke kābul maqbūl ast", "en": "They say that Kabul is beautiful.", "highlight": "می‌گویند" }
@@ -210,7 +210,7 @@
             {
               "id": "gs-71-1",
               "title": "Softening a claim",
-              "body": "be nazar mērasad ke ('it seems that') presents something as an impression rather than a fact — a key move in careful, formal speech.",
+              "body": "be nazar mērasad ke ('it seems that') presents something as an impression rather than a fact - a key move in careful, formal speech.",
               "examples": [
                 { "dari": "به نظر می‌رسد که او مانده است", "translit": "be nazar mērasad ke ō mānda ast", "en": "It seems that he is tired.", "highlight": "به نظر می‌رسد" }
               ]
@@ -262,12 +262,12 @@
           "title": "I wish I had gone",
           "subtitle": "kāsh + past perfect",
           "grammarPoint": "wish-past-perfect",
-          "grammarPointEn": "Regret about the past with kāsh + past perfect: kāsh rafta būdam (I wish I had gone) — an unfulfilled past.",
+          "grammarPointEn": "Regret about the past with kāsh + past perfect: kāsh rafta būdam (I wish I had gone) - an unfulfilled past.",
           "slides": [
             {
               "id": "gs-73-1",
               "title": "Regret over the past",
-              "body": "For a regret about something that didn't happen, use kāsh with the past perfect: kāsh rafta būdam — 'I wish I had gone (but I didn't)'.",
+              "body": "For a regret about something that didn't happen, use kāsh with the past perfect: kāsh rafta būdam - 'I wish I had gone (but I didn't)'.",
               "examples": [
                 { "dari": "کاش رفته بودم", "translit": "kāsh rafta būdam", "en": "I wish I had gone.", "highlight": "رفته بودم" }
               ]
@@ -316,7 +316,7 @@
           "slides": [
             {
               "id": "gs-75-1",
-              "title": "gōyā — as if",
+              "title": "gōyā - as if",
               "body": "gōyā ('as if') introduces an unreal comparison, usually with a past-tense verb: 'he spoke as if he knew everything'.",
               "examples": [
                 { "dari": "گویا همه چیز را می‌دانست", "translit": "gōyā hama chīz rā mēdānist", "en": "As if he knew everything.", "highlight": "گویا" }
@@ -349,7 +349,7 @@
             {
               "id": "gs-76-1",
               "title": "Elevated equivalents",
-              "body": "In formal writing, namūdan stands in for kardan, and gardīdan for shudan. Same meaning, higher register — you'll meet them in letters and news.",
+              "body": "In formal writing, namūdan stands in for kardan, and gardīdan for shudan. Same meaning, higher register - you'll meet them in letters and news.",
               "examples": [
                 { "dari": "او کار را تمام نمود", "translit": "ō kār rā tamām namūd", "en": "He completed the work. (formal)", "highlight": "نمود" },
                 { "dari": "هوا سرد گردید", "translit": "hawā sard gardīd", "en": "The weather turned cold. (formal)", "highlight": "گردید" }
@@ -375,7 +375,7 @@
             {
               "id": "gs-77-1",
               "title": "Fixed expressions",
-              "body": "Many everyday meanings are idioms with a noun + light verb. ba yād āwardan — 'to bring to mind, remember'; az dast dādan — 'to give from the hand, lose'.",
+              "body": "Many everyday meanings are idioms with a noun + light verb. ba yād āwardan - 'to bring to mind, remember'; az dast dādan - 'to give from the hand, lose'.",
               "examples": [
                 { "dari": "نام او را به یاد آوردم", "translit": "nām-e ō rā ba yād āwardam", "en": "I remembered his name.", "highlight": "به یاد آوردم" },
                 { "dari": "پول خود را از دست داد", "translit": "pūl-e khud rā az dast dād", "en": "He lost his money.", "highlight": "از دست داد" }

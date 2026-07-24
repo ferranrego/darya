@@ -55,7 +55,7 @@ Write ONE very short but REAL and MEANINGFUL Dari sentence (2 to 5 words) that a
 
 STRICT RULES:
 - Use ONLY words from the list above. You may use a word more than once. Do NOT invent or inflect words in a way that introduces any letter not present in the listed words.
-- The sentence must be natural and actually make sense — not a random pile of words.
+- The sentence must be natural and actually make sense - not a random pile of words.
 - If the list is tiny, a 2-word phrase is fine (e.g. a greeting or a "noun is adjective" statement).
 - Use Afghan Dari usage and spelling.
 

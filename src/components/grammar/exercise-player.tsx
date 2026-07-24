@@ -152,7 +152,7 @@ function FillBlank({
                 {exercise.answer.dari}
               </motion.span>
             ) : (
-              "—"
+              "-"
             )}
           </span>
           {dariAfter}

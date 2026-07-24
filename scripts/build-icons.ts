@@ -1,5 +1,5 @@
 /**
- * Render app icons from an inline SVG mark (three river waves on lapis —
+ * Render app icons from an inline SVG mark (three river waves on lapis -
  * دریا means "river" in Dari). Pure vector, no font dependencies.
  * Run: node scripts/build-icons.ts
  */

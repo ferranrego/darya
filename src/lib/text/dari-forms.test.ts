@@ -23,7 +23,7 @@ function verb(id: string, dari: string, variants: string[]): LexiconEntry {
 }
 
 describe("buildAllowedFormKeys", () => {
-  // raftan with a couple of present variants — the rest is derived.
+  // raftan with a couple of present variants - the rest is derived.
   const keys = buildAllowedFormKeys([verb("lx-1", "رفتن", [`می${ZWNJ}روم`, `می${ZWNJ}رود`])]);
   const has = (form: string) => keys.has(matchKey(form));
 

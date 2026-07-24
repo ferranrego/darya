@@ -6,12 +6,18 @@ export function ProgressRing({
   max,
   size = 120,
   stroke = 9,
+  trackColor = "var(--line)",
+  progressColor,
   children,
 }: {
   value: number;
   max: number;
   size?: number;
   stroke?: number;
+  /** Ring background track. Override on dark surfaces (e.g. the night hero). */
+  trackColor?: string;
+  /** In-progress stroke. Defaults to lapis, flips to saffron when the goal is met. */
+  progressColor?: string;
   children?: React.ReactNode;
 }) {
   const r = (size - stroke) / 2;
@@ -22,13 +28,13 @@ export function ProgressRing({
   return (
     <div className="relative inline-flex items-center justify-center" style={{ width: size, height: size }}>
       <svg width={size} height={size} className="-rotate-90">
-        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="var(--line)" strokeWidth={stroke} />
+        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={trackColor} strokeWidth={stroke} />
         <circle
           cx={size / 2}
           cy={size / 2}
           r={r}
           fill="none"
-          stroke={done ? "var(--saffron)" : "var(--lapis)"}
+          stroke={progressColor ?? (done ? "var(--saffron)" : "var(--lapis)")}
           strokeWidth={stroke}
           strokeLinecap="round"
           strokeDasharray={c}

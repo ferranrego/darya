@@ -1,4 +1,4 @@
-# 🌊 Darya — Learn Dari through Comprehensible Input
+# 🌊 Darya - Learn Dari through Comprehensible Input
 
 Darya (دریا) is an open-source, progressive web app (PWA) designed to help you learn **Dari** (Afghan Persian, Kabul standard) through **comprehensible input**. 
 

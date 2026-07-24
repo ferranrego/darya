@@ -32,7 +32,7 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
 
   // Pass 2: expand verb paradigms. Simple verbs conjugate their own
   // infinitive; compound verbs (کار کردن) conjugate their light verb, but
-  // only when no simple entry owns it — the tokenizer splits compounds, so
+  // only when no simple entry owns it - the tokenizer splits compounds, so
   // at token level the light verb's forms are what get tapped.
   const simpleVerbKeys = new Set(
     entries

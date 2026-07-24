@@ -3,7 +3,7 @@
 **Feel:** light, spacious, elegant, quietly confident. The reading page is the product;
 everything else stays out of its way. Restraint is the aesthetic.
 
-## Palette — "Kabul paper & lapis"
+## Palette - "Kabul paper & lapis"
 
 | Token | Light | Role |
 |---|---|---|
@@ -34,7 +34,7 @@ out of scope for v1 (light is the identity); revisit in Phase 2.
 
 - 4px base grid; generous defaults (sections 32–48, screen padding 20–24).
 - Mobile-first; reading column `max-width: 42rem` centered on desktop.
-- Bottom tab bar (Home · Read · Review · Chat · You), translucent blur — the **only**
+- Bottom tab bar (Home · Read · Review · Chat · You), translucent blur - the **only**
   glass surface in the app. Five destinations is the cap (iOS HIG / Material 3); anything
   else lives in the You hub. Words and Leaderboard are reached from there and from Home.
 - Tap targets ≥ 44px; word tokens get invisible padding to reach it.
@@ -75,4 +75,20 @@ Respect `prefers-reduced-motion`: all of the above degrade to instant/opacity-on
 no decorative gradients · no glass beyond the tab bar · no emoji as UI · no dead
 whitespace asymmetry · no default-blue focus rings (style them lapis) · no layout
 shift on data load (skeletons sized exactly) · icons from one set (lucide) at one
-stroke width · every empty state designed.
+stroke width · every empty state designed · no em dashes (`—`), ever; use regular dashes (`-`) or colons.
+
+## Signature exception - the Home "Today" hero
+
+One surface is deliberately allowed to break two rules above, **and only this one**:
+the `TodayHero` card (`src/components/home/today-hero.tsx`). It is the home's focal
+moment and earns a richer treatment.
+
+- **Time-of-day tonal wash.** A very low-opacity radial glow (built from palette
+  colours - saffron at dawn/dusk, lapis by day) shifts with the user's local hour.
+  This is the one sanctioned gradient; it is ambient, never a "decorative" fill.
+- **Night surface.** From ~22:00 the hero flips to a deep-lapis surface with light
+  text and a sleeping Poncha. This is a *local* dark treatment, not app-wide dark
+  mode (still out of scope). Everything outside the hero stays on paper.
+
+Everywhere else the anti-slop checklist holds. Do not spread the wash or the dark
+surface to other cards or screens.

@@ -8,7 +8,7 @@ export const maxDuration = 30;
 
 const bodySchema = z.object({
   id: z.string().uuid(),
-  mode: z.enum(["translit", "translation"]),
+  mode: z.enum(["translit", "translation", "correction"]),
 });
 
 /**
@@ -29,7 +29,7 @@ export async function POST(req: Request) {
   // RLS hides messages past the 48h window, so expired ids read as missing.
   const { data: message } = await db
     .from("chat_messages")
-    .select("id, body, translit, translation")
+    .select("id, body, translit, translation, correction")
     .eq("id", id)
     .maybeSingle();
   if (!message) return NextResponse.json({ error: "message not found" }, { status: 404 });

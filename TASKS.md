@@ -1,9 +1,9 @@
-# Darya — Build Tracker
+# Darya - Build Tracker
 
 > Living task list. Items are checked off **as they are completed**, not before.
 > Companion docs: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [docs/DESIGN.md](docs/DESIGN.md) · [docs/MIGRATION.md](docs/MIGRATION.md) · [docs/CONTENT-SCHEMA.md](docs/CONTENT-SCHEMA.md)
 
-## Phase 0 — Foundation
+## Phase 0 - Foundation
 
 - [x] Git init, Next.js 16 + TypeScript strict + Tailwind v4 scaffold (pnpm)
 - [x] Core deps: ts-fsrs, zod, @tanstack/react-query, zustand, motion, supabase-js/ssr, vitest
@@ -19,7 +19,7 @@
 - [x] Content validation script `scripts/validate-content.ts` (+ `pnpm validate:content`)
 - [x] Unit tests: tokenizer/ZWNJ normalization, schema round-trip
 
-## Phase 0b — Backend
+## Phase 0b - Backend
 
 - [x] Supabase project created + linked via CLI
 - [x] Migration: full schema (profiles, lexemes, user_words, review_logs, texts, user_texts, alphabet_progress, push_subscriptions, daily_activity) with RLS
@@ -27,7 +27,7 @@
 - [x] Typed repository layer `src/lib/db/`
 - [x] `.env.local` wiring (Supabase keys auto; **GEMINI_API_KEY needed from user**)
 
-## Phase 1 — Complete usable product
+## Phase 1 - Complete usable product
 
 ### Auth & onboarding
 - [x] Email/password auth (login/signup), session middleware, profile bootstrap
@@ -71,13 +71,13 @@
 - [x] E2E browser walkthrough (375px + desktop): onboarding both branches, read 3 texts, tap words, review session, streak, offline reload
 - [x] Deploy to Vercel + production PWA install check
 
-## Phase 2 — Audio & depth
+## Phase 2 - Audio & depth
 - [x] Word/sentence audio (pick best free TTS; pre-generated files as content if quality wins)
 - [x] Richer stats page
 - [x] Reading-font toggle (Scheherazade New)
 - [x] FSRS parameters view
 
-## Phase 3 — Social & notifications
+## Phase 3 - Social & notifications
 - [x] Web push: VAPID, subscribe flow, Declarative Web Push payloads (iOS ≥18.4)
 - [x] Vercel cron: streak-reminder push
 - [x] Leaderboard (weekly XP + known words)

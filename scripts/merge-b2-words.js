@@ -53,7 +53,7 @@ for (let i = 1; i <= 14; i++) {
   }
 }
 
-let out = "# Darya core lexicon — B2 batch (AI scripted)\n# rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants\n";
+let out = "# Darya core lexicon - B2 batch (AI scripted)\n# rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants\n";
 let currentRank = currentLexicon.length + 1;
 for (const parts of validWords) {
   parts[0] = currentRank; // overwrite rank

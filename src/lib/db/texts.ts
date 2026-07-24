@@ -27,6 +27,16 @@ export async function getReadTexts(db: SupabaseClient, userId: string): Promise<
   return data as UserTextRow[];
 }
 
+export async function getReadTextsWithDocs(db: SupabaseClient, userId: string) {
+  const { data, error } = await db
+    .from("user_texts")
+    .select("*, texts(*)")
+    .eq("user_id", userId)
+    .order("read_at", { ascending: false });
+  if (error) throw error;
+  return data as (UserTextRow & { texts: TextRow })[];
+}
+
 export async function markTextRead(
   db: SupabaseClient,
   userId: string,
@@ -46,11 +56,13 @@ export async function insertGeneratedText(
   db: SupabaseClient,
   doc: TextDocument,
   vocabHash: string,
+  theme?: string,
 ): Promise<void> {
   const { error } = await db.from("texts").upsert({
     id: doc.id,
     level: doc.level,
     vocab_hash: vocabHash,
+    theme: theme ?? null,
     source: "generated",
     doc,
   });

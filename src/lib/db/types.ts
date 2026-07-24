@@ -48,8 +48,10 @@ export interface TextRow {
   id: string;
   level: string;
   vocab_hash: string | null;
+  theme: string | null;
   source: "seed" | "generated";
   doc: TextDocument;
+
   created_at: string;
 }
 
@@ -83,6 +85,10 @@ export interface ChatMessageRow {
   body: string;
   translit: string | null;
   translation: string | null;
+  correction: {
+    corrected: string;
+    issues: { before: string; after: string; whyEn: string }[];
+  } | null;
   created_at: string;
 }
 
@@ -111,4 +117,17 @@ export interface UserExerciseRow {
   exercise_id: string;
   completed_at: string;
   is_correct: boolean;
+}
+
+export interface SentenceExplanationRow {
+  sentence_hash: string;
+  explanation: any; // Stored as jsonb
+  created_at: string;
+}
+
+export interface WrongAnswerExplanationRow {
+  exercise_id: string;
+  chosen_answer: string;
+  explanation_en: string;
+  created_at: string;
 }

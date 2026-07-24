@@ -21,6 +21,8 @@ import {
   type TwoButtonGrade,
 } from "@/lib/srs/scheduler";
 import { PracticeSession } from "@/components/exercises/practice-session";
+import { useQuery } from "@tanstack/react-query";
+import { getContextSentences } from "@/app/actions/context-sentences";
 
 const SESSION_CAP = 40;
 
@@ -39,6 +41,15 @@ export default function ReviewPage() {
   const router = useRouter();
 
   const [mode, setMode] = useState<"srs" | "practice">("srs");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get("mode") === "practice") {
+        setMode("practice");
+      }
+    }
+  }, []);
 
   // Snapshot the queue once per session so grading doesn't reshuffle it.
   const [queue, setQueue] = useState<UserWordRow[] | null>(null);
@@ -137,6 +148,43 @@ export default function ReviewPage() {
     setIndex((i) => i + 1);
   }
 
+  const row = queue?.[index];
+  const entry = row ? lexemeById(row.lexeme_id) : undefined;
+
+  const { data: generatedSentences = [] } = useQuery({
+    queryKey: ["context-sentences", row?.lexeme_id],
+    queryFn: () => getContextSentences(row!.lexeme_id),
+    staleTime: Infinity,
+    enabled: !!row,
+  });
+
+  const pool = useMemo(() => {
+    const p = [...generatedSentences];
+    if (row?.context_dari && !p.some((s) => s.dari === row.context_dari)) {
+      p.push({
+        dari: row.context_dari,
+        translit: row.context_translit || entry?.translit || "",
+        en: row.context_en || entry?.glossEn || "",
+      });
+    }
+    return p;
+  }, [generatedSentences, row, entry]);
+
+  // Lock the context so it doesn't change mid-view if the AI sentences finish loading
+  const stableContextRef = useRef<{ index: number; context: any } | null>(null);
+
+  const activeContext = useMemo(() => {
+    if (pool.length === 0) return null;
+
+    if (stableContextRef.current?.index === index) {
+      return stableContextRef.current.context;
+    }
+
+    const chosen = pool[index % pool.length];
+    stableContextRef.current = { index, context: chosen };
+    return chosen;
+  }, [pool, index]);
+
   if (isLoading || queue === null) {
     return <div className="flex flex-1 items-center justify-center py-32 text-ink-faint">Loading…</div>;
   }
@@ -152,7 +200,7 @@ export default function ReviewPage() {
             poncha="sleep"
             icon={<Check size={24} />}
             title="All caught up"
-            body="Nothing due right now — Poncha's taking a nap. Try a Practice session!"
+            body="Nothing due right now - Poncha's taking a nap. Try a Practice session!"
           />
         )}
       </div>
@@ -175,22 +223,20 @@ export default function ReviewPage() {
     );
   }
 
-  const row = queue[index];
-  const entry = lexemeById(row.lexeme_id);
   if (!entry) {
     return <EmptyState icon={<RotateCcw size={24} />} title="Hmm" body="A reviewed word is missing from the dictionary." />;
   }
 
   // Compute interval hints for the current card
   const now = new Date();
-  const intervals = row.fsrs ? previewIntervals(reviveCard(row.fsrs), now) : null;
+  const intervals = row!.fsrs ? previewIntervals(reviveCard(row!.fsrs), now) : null;
 
   // Verbs are always tested in isolation (conjugated forms are too irregular
   // to reinforce the infinitive). For other words, only show the stored
   // context sentence when we can actually highlight the word in it.
   const contextSegments =
-    row.context_dari && entry.pos !== "verb"
-      ? segmentForHighlight(row.context_dari, entry.id)
+    activeContext?.dari && entry.pos !== "verb"
+      ? segmentForHighlight(activeContext.dari, entry.id)
       : null;
   const showContext = contextSegments !== null;
 
@@ -217,7 +263,7 @@ export default function ReviewPage() {
       <div className="relative flex flex-1 items-center justify-center">
         <AnimatePresence mode="wait" onExitComplete={() => x.set(0)}>
           <motion.div
-            key={`${row.lexeme_id}-${index}`}
+            key={`${row!.lexeme_id}-${index}`}
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, x: exitDir * 60, transition: { duration: 0.2 } }}
@@ -276,10 +322,10 @@ export default function ReviewPage() {
                   className="mt-4"
                 >
                   <p className="text-[16px] text-ink-soft">
-                    {showContext ? row.context_translit || entry.translit : entry.translit}
+                    {showContext ? activeContext?.translit || entry.translit : entry.translit}
                   </p>
                   <p className="mt-2 text-[22px] font-medium">
-                    {showContext ? row.context_en || entry.glossEn : entry.glossEn}
+                    {showContext ? activeContext?.en || entry.glossEn : entry.glossEn}
                   </p>
 
                   {/* If we showed context, still show the dictionary definition to clarify the exact word */}

@@ -66,7 +66,7 @@ interface CompleteOptions<T> {
 
 /**
  * Ask the chain for one JSON completion. The prompt must contain the word
- * "JSON" — providers require it alongside `response_format: json_object`.
+ * "JSON" - providers require it alongside `response_format: json_object`.
  */
 export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>): Promise<T> {
   const errors: string[] = [];
@@ -75,7 +75,13 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
     if (!provider.available()) continue;
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
-        const raw = await provider.call(prompt, opts.temperature ?? 0.8);
+        let raw = await provider.call(prompt, opts.temperature ?? 0.8);
+        // Strip markdown backticks if present
+        if (raw.startsWith("```json")) {
+          raw = raw.replace(/^```json\s*/, "").replace(/\s*```$/, "");
+        } else if (raw.startsWith("```")) {
+          raw = raw.replace(/^```\s*/, "").replace(/\s*```$/, "");
+        }
         return opts.validate(raw, provider.name);
       } catch (e) {
         errors.push(`${provider.name}#${attempt}: ${e instanceof Error ? e.message : String(e)}`);

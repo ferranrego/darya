@@ -54,7 +54,7 @@
             {
               "id": "gs-16-1",
               "title": "Add -tarīn, move it front",
-              "body": "The superlative adds -tarīn — and unlike the adjective, it goes BEFORE the noun. bihtarīn is the special word for 'best'.",
+              "body": "The superlative adds -tarīn - and unlike the adjective, it goes BEFORE the noun. bihtarīn is the special word for 'best'.",
               "examples": [
                 { "dari": "او بهترین دوست من است", "translit": "ō bihtarīn dōst-e man ast", "en": "He is my best friend.", "highlight": "بهترین" },
                 { "dari": "کابل کلان‌ترین شهر است", "translit": "kābul kalāntarīn shahr ast", "en": "Kabul is the biggest city.", "highlight": "کلان‌ترین" }
@@ -81,7 +81,7 @@
             {
               "id": "gs-17-1",
               "title": "Stick it on the end",
-              "body": "Instead of ketāb-e man you can say ketābam — 'my book' — by attaching a short ending. Both are correct; the ending is quicker.",
+              "body": "Instead of ketāb-e man you can say ketābam - 'my book' - by attaching a short ending. Both are correct; the ending is quicker.",
               "table": [["-am", "my"], ["-at", "your"], ["-ash", "his / her"], ["-emā", "our"], ["-etān", "your (pl)"], ["-eshān", "their"]],
               "examples": [
                 { "dari": "کتابم اینجا است", "translit": "ketābam īnjā ast", "en": "My book is here.", "highlight": "کتابم" },
@@ -90,7 +90,7 @@
             },
             {
               "id": "gs-17-2",
-              "title": "khud — one's own",
+              "title": "khud - one's own",
               "body": "khud means 'own' and works for any person: kār-e khud, 'one's own work'.",
               "examples": [
                 { "dari": "من کار خود را می‌کنم", "translit": "man kār-e khud rā mēkunam", "en": "I do my own work.", "highlight": "خود" }
@@ -278,7 +278,7 @@
             {
               "id": "gs-23-1",
               "title": "Want + a second verb",
-              "body": "'I want to go' uses two verbs: mēkhāham (I want) + burawam (go). This second form — be- + stem + ending — is the 'want-form' (subjunctive). It never takes mē-.",
+              "body": "'I want to go' uses two verbs: mēkhāham (I want) + burawam (go). This second form - be- + stem + ending - is the 'want-form' (subjunctive). It never takes mē-.",
               "examples": [
                 { "dari": "می‌خواهم بروم", "translit": "mēkhāham burawam", "en": "I want to go.", "highlight": "بروم" },
                 { "dari": "او می‌خواهد نان بخورد", "translit": "ō mēkhāhad nān bukhurad", "en": "He wants to eat bread.", "highlight": "بخورد" }
@@ -304,7 +304,7 @@
             {
               "id": "gs-24-1",
               "title": "Can + a second verb",
-              "body": "'Can' works just like 'want': mētawānam (I can) + the be- form. mētawānam bukhānam — 'I can read'.",
+              "body": "'Can' works just like 'want': mētawānam (I can) + the be- form. mētawānam bukhānam - 'I can read'.",
               "examples": [
                 { "dari": "می‌توانم دری بخوانم", "translit": "mētawānam darī bukhānam", "en": "I can read Dari.", "highlight": "می‌توانم" },
                 { "dari": "او می‌تواند بیاید", "translit": "ō mētawānad biāyad", "en": "He can come.", "highlight": "بیاید" }
@@ -330,7 +330,7 @@
             {
               "id": "gs-25-1",
               "title": "bāyad never changes",
-              "body": "bāyad means 'must'. Unlike other verbs it stays the same for everyone — only the second verb (the be- form) changes for person.",
+              "body": "bāyad means 'must'. Unlike other verbs it stays the same for everyone - only the second verb (the be- form) changes for person.",
               "examples": [
                 { "dari": "باید بروم", "translit": "bāyad burawam", "en": "I must go.", "highlight": "باید" },
                 { "dari": "تو باید کار کنی", "translit": "tu bāyad kār kuni", "en": "You must work.", "highlight": "کنی" }
@@ -442,7 +442,7 @@
             {
               "id": "gs-29-1",
               "title": "ke links two ideas",
-              "body": "Use ke (that) after verbs like 'know', 'say', 'think' to attach a whole sentence: guftam ke mērawam — 'I said that I am going'.",
+              "body": "Use ke (that) after verbs like 'know', 'say', 'think' to attach a whole sentence: guftam ke mērawam - 'I said that I am going'.",
               "examples": [
                 { "dari": "می‌دانم که او آمد", "translit": "mēdānam ke ō āmad", "en": "I know that he came.", "highlight": "که" },
                 { "dari": "گفتم که به بازار می‌روم", "translit": "guftam ke ba bāzār mērawam", "en": "I said that I am going to the bazaar.", "highlight": "که" }

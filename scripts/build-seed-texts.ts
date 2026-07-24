@@ -1,6 +1,6 @@
 /**
  * Tokenize seed text sources against the lexicon and write TextDocument JSON
- * files to content/texts/seed/. Fails if any word cannot be resolved — add the
+ * files to content/texts/seed/. Fails if any word cannot be resolved - add the
  * word to the lexicon rather than weakening this check.
  *
  * Run: pnpm build:texts (after pnpm build:lexicon)

@@ -30,7 +30,7 @@ export default function ReadPage() {
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
 
   // Words from levels below the assessed level that the learner isn't
-  // tracking yet — offered as a one-time bulk "mark as known" before the
+  // tracking yet - offered as a one-time bulk "mark as known" before the
   // second text (see PriorWordsSheet).
   const priorWordIds = useMemo(() => {
     const levelIdx = levels.findIndex((l) => l.id === profile?.level_estimate);

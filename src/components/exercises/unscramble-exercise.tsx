@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Reorder, motion } from "motion/react";
 import { Check, X } from "lucide-react";
 
@@ -17,10 +17,12 @@ export function UnscrambleExercise({
   sentenceEn,
   onComplete,
 }: UnscrambleExerciseProps) {
+  const [targetTexts] = useState(() => sentenceDari.trim().split(/\s+/));
+
   const [items, setItems] = useState(() => {
     // Return items scrambled (but guarantee they aren't accidentally correct initially)
-    let scrambled = [...words].sort(() => Math.random() - 0.5);
-    if (scrambled.join(" ") === sentenceDari && words.length > 1) {
+    let scrambled = [...words].map((text, i) => ({ id: `${i}-${text}`, text })).sort(() => Math.random() - 0.5);
+    if (scrambled.map(s => s.text).join(" ") === sentenceDari && words.length > 1) {
       scrambled.reverse();
     }
     return scrambled;
@@ -29,8 +31,7 @@ export function UnscrambleExercise({
   const [status, setStatus] = useState<"idle" | "correct" | "incorrect">("idle");
 
   const checkAnswer = () => {
-    const attempt = items.join(" ");
-    // Remove extra spaces for comparison just in case
+    const attempt = items.map(s => s.text).join(" ");
     if (attempt.replace(/\s+/g, "") === sentenceDari.replace(/\s+/g, "")) {
       setStatus("correct");
     } else {
@@ -38,6 +39,14 @@ export function UnscrambleExercise({
       setTimeout(() => setStatus("idle"), 1500);
     }
   };
+
+  const isAllCorrect = items.every((item, idx) => item.text === targetTexts[idx]);
+  
+  useEffect(() => {
+    if (isAllCorrect && status === "idle") {
+      setStatus("correct");
+    }
+  }, [isAllCorrect, status]);
 
   return (
     <div className="flex flex-col h-full w-full max-w-md mx-auto items-center p-4 pt-8">
@@ -50,15 +59,23 @@ export function UnscrambleExercise({
         onReorder={setItems} 
         className="flex flex-col gap-3 w-full"
       >
-        {items.map((word) => (
-          <Reorder.Item 
-            key={word} 
-            value={word} 
-            className="w-full bg-paper border border-line p-4 rounded-2xl shadow-sm text-center font-dari text-2xl cursor-grab active:cursor-grabbing hover:bg-surface transition-colors"
-          >
-            {word}
-          </Reorder.Item>
-        ))}
+        {items.map((item, idx) => {
+          const isFixed = item.text === targetTexts[idx];
+          return (
+            <Reorder.Item 
+              key={item.id} 
+              value={item} 
+              dragListener={!isFixed}
+              className={`w-full p-4 rounded-2xl shadow-sm text-center font-dari text-2xl transition-colors ${
+                isFixed 
+                  ? "bg-sabz-soft border-sabz text-sabz cursor-default" 
+                  : "bg-paper border border-line cursor-grab active:cursor-grabbing hover:bg-surface"
+              }`}
+            >
+              {item.text}
+            </Reorder.Item>
+          );
+        })}
       </Reorder.Group>
 
       <div className="mt-8 w-full flex flex-col items-center">

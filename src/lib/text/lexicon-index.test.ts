@@ -71,7 +71,7 @@ describe("resolve against the real lexicon", () => {
   const idx = buildLexiconIndex(entries);
 
   const cases: Array<[string, string]> = [
-    ["کرده‌ام", "کردن"], // present perfect — the original bug
+    ["کرده‌ام", "کردن"], // present perfect - the original bug
     ["کرده", "کردن"], // bare participle
     ["نمی‌روم", "رفتن"], // negative present
     ["میروم", "رفتن"], // ZWNJ-less spelling
@@ -124,7 +124,7 @@ describe("resolve against the real lexicon", () => {
     }
     // ~74% of verbs own every single generated form; the rest lose a handful
     // of keys to authored homographs (روند/بینی/شکست/کشتی/شاید…) or
-    // higher-frequency verbs — correct precedence, not a defect.
+    // higher-frequency verbs - correct precedence, not a defect.
     expect(sameId / verbs.length).toBeGreaterThan(0.7);
   });
 });

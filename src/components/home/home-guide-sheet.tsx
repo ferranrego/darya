@@ -42,7 +42,7 @@ export function HomeGuideSheet({
   const callout = needsAlphabet
     ? beyondBeginner
       ? {
-          title: `You tested at ${level} — impressive!`,
+          title: `You tested at ${level} - impressive!`,
           body: "But the Dari script comes first: start with the Alphabet course, and everything else opens up once you can read.",
         }
       : {
@@ -51,7 +51,7 @@ export function HomeGuideSheet({
         }
     : {
         title: `You tested at ${level}`,
-        body: "Grammar lessons and Reading texts are tuned to start right at your level — no wading through basics you already know.",
+        body: "Grammar lessons and Reading texts are tuned to start right at your level - no wading through basics you already know.",
       };
 
   return (
@@ -86,7 +86,7 @@ export function HomeGuideSheet({
               <div>
                 <h2 className="text-[20px] font-semibold tracking-tight">Salām, {firstName}!</h2>
                 <p className="mt-0.5 text-[14px] text-ink-soft">
-                  Poncha here — let me show you around.
+                  Poncha here - let me show you around.
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ export function HomeGuideSheet({
               <TourRow
                 icon={BookOpen}
                 label="Read"
-                description="Texts tuned to the words you know — tap any word to learn it."
+                description="Texts tuned to the words you know - tap any word to learn it."
               />
               <TourRow
                 icon={RotateCcw}

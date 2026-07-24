@@ -13,6 +13,25 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: "Literal[value=/—/]",
+          message: "Do not use em dashes (—). Use a normal dash (-) or colon (:) instead."
+        },
+        {
+          selector: "JSXText[value=/—/]",
+          message: "Do not use em dashes (—). Use a normal dash (-) or colon (:) instead."
+        },
+        {
+          selector: "TemplateElement[value.raw=/—/]",
+          message: "Do not use em dashes (—). Use a normal dash (-) or colon (:) instead."
+        }
+      ]
+    }
+  }
 ]);
 
 export default eslintConfig;

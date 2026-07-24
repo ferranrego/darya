@@ -24,7 +24,7 @@ const LEVEL_TITLE: Record<GrammarLevel, string> = {
   C2: "Mastery",
 };
 
-/** Global 1-based lesson number in course order — stable, so compute it once. */
+/** Global 1-based lesson number in course order - stable, so compute it once. */
 const LESSON_NUMBER = new Map(grammarLessons.map((l, i) => [l.id, i + 1]));
 
 export default function GrammarMapPage() {

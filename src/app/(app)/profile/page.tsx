@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BarChart3, Flame, Library, LogOut, Trophy } from "lucide-react";
+import { BarChart3, BookOpen, Flame, Library, LogOut, Trophy } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { ActionCard } from "@/components/ui/action-card";
 import { levelLabel } from "@/lib/content/load";
@@ -85,6 +85,12 @@ export default function ProfilePage() {
           icon={<Library size={20} />}
           title="My words"
           subtitle={`${knownCount} known · browse by theme`}
+        />
+        <ActionCard
+          href="/profile/history"
+          icon={<BookOpen size={20} />}
+          title="Reading History"
+          subtitle="Revisit texts you've read"
         />
         <ActionCard
           href="/leaderboard"

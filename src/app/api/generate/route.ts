@@ -10,7 +10,21 @@ export const maxDuration = 60;
  * Ensure the signed-in user has at least `want` unread texts at their level.
  * Generates (and caches, shared across users) only when the pool runs dry.
  */
-export async function POST() {
+export async function POST(req: Request) {
+  let theme: string | undefined = undefined;
+  try {
+    const body = await req.json();
+    theme = body?.theme;
+  } catch (e) {
+    // ignore
+  }
+
+  // If no theme is provided, pick a random one so "Surprise Me!" gives diverse texts
+  if (!theme) {
+    const defaultThemes = ["Daily Life", "Food", "Travel", "Work", "Folktales", "Family", "Shopping", "Friendship"];
+    theme = defaultThemes[Math.floor(Math.random() * defaultThemes.length)];
+  }
+
   const db = await supabaseServer();
   const {
     data: { user },
@@ -27,10 +41,18 @@ export async function POST() {
   const level = levelById(profile.level_estimate);
   const readIds = new Set((readRows ?? []).map((r) => r.text_id));
 
-  const { data: pool } = await db.from("texts").select("id").eq("level", level.id);
+  const { data: pool } = await db.from("texts").select("id, theme").eq("level", level.id);
   const unread = (pool ?? []).filter((t) => !readIds.has(t.id));
-  if (unread.length > 0) {
-    return NextResponse.json({ created: false, unread: unread.length });
+  
+  if (theme) {
+    const unreadThemed = unread.filter((t) => t.theme === theme);
+    if (unreadThemed.length > 0) {
+      return NextResponse.json({ created: false, unread: unreadThemed.length });
+    }
+  } else {
+    if (unread.length > 0) {
+      return NextResponse.json({ created: false, unread: unread.length });
+    }
   }
 
   // Build the vocabulary constraint from the learner's actual words.
@@ -57,12 +79,14 @@ export async function POST() {
       knownWords: effectiveKnown.slice(0, 120),
       targetWords,
       newWordRatio: ratio,
+      theme,
     });
-    await insertGeneratedText(supabaseService(), doc, vocabHash(doc));
+    await insertGeneratedText(supabaseService(), doc, vocabHash(doc), theme);
     return NextResponse.json({ created: true, id: doc.id });
-  } catch (e) {
+  } catch (e: any) {
+    console.error("API /generate error:", e);
     return NextResponse.json(
-      { error: e instanceof Error ? e.message : "generation failed" },
+      { error: e?.message || String(e) || "generation failed" },
       { status: 502 },
     );
   }

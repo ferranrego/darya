@@ -4,8 +4,8 @@ import { ZWNJ } from "./normalize.ts";
  * Deterministic Dari/Persian verb conjugation.
  *
  * Persian conjugation is regular given two stems: the past stem (infinitive
- * minus the final ن of its دن/تن ending — derivable) and the present stem
- * (suppletive — supplied per-entry via `presentStem` or VERB_OVERRIDES).
+ * minus the final ن of its دن/تن ending - derivable) and the present stem
+ * (suppletive - supplied per-entry via `presentStem` or VERB_OVERRIDES).
  * `conjugationSurfaces` expands a stem pair into every single-token surface
  * form of the standard paradigm; multi-token constructions (future خواهم کرد,
  * pluperfect کرده بودم, progressive داشتم می‌رفتم, passive کرده می‌شود) need no
@@ -39,7 +39,7 @@ const PERFECT_ENCLITICS = ["ام", "ای", "ایم", "اید", "اند"];
 
 /**
  * Present stems that take an epenthetic ی before vowel-initial endings.
- * All ا/آ-final stems do (نما → نمایم); و-final stems are lexical — گو/جو
+ * All ا/آ-final stems do (نما → نمایم); و-final stems are lexical - گو/جو
  * (gō/jō → گویم) do, رو/شو/دو (raw/shaw/daw → روم) do not.
  */
 const Y_EPENTHESIS_STEMS = new Set(["گو", "جو"]);
@@ -127,7 +127,7 @@ export function conjugationSurfaces(stems: VerbStems): string[] {
  * Present stems (and irregular flags) for core verbs, keyed by matchKey of the
  * infinitive. These take precedence over `presentStem` in the lexicon data and
  * over regex extraction in the enrichment script. `skip: true` blocks present
- * generation entirely (بودن is suppletive — هست/است live in authored variants).
+ * generation entirely (بودن is suppletive - هست/است live in authored variants).
  */
 export const VERB_OVERRIDES: Record<string, Partial<VerbStems> & { skip?: boolean }> = {
   [k("کردن")]: { presentStem: "کن" },

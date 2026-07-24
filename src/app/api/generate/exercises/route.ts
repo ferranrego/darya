@@ -8,8 +8,6 @@ import { sample, shuffle } from "@/lib/util/shuffle";
 export const maxDuration = 60;
 
 const SESSION_SIZE = 5;
-/** How many exercises per session come from the stored pool (rest are fresh). */
-const POOL_SHARE = 2;
 /** Weakest-learning-words window to sample targets from. */
 const LEARNING_WINDOW = 8;
 /** New-words frontier window to sample targets from. */
@@ -71,14 +69,14 @@ export async function POST() {
   const learningTargets = sample(learning.slice(0, LEARNING_WINDOW), 3);
   const newTargets = sample(unseen.slice(0, NEW_WINDOW), 5 - learningTargets.length);
   if (learningTargets.length + newTargets.length < 5) {
-    // Unseen frontier is dry — backfill from deeper in the learning queue.
+    // Unseen frontier is dry - backfill from deeper in the learning queue.
     const extra = learning.filter((e) => !learningTargets.includes(e));
     learningTargets.push(...sample(extra, 5 - learningTargets.length - newTargets.length));
   }
   const targets = [...learningTargets, ...newTargets];
   const targetIds = new Set(targets.map((t) => t.id));
   console.log(
-    "Targets — learning:", learningTargets.map((w) => w.dari),
+    "Targets - learning:", learningTargets.map((w) => w.dari),
     "new:", newTargets.map((w) => w.dari),
   );
 
@@ -101,10 +99,7 @@ export async function POST() {
   const relevant = pool.filter((row) => row.lexeme_ids?.some((id) => targetIds.has(id)));
   const rest = pool.filter((row) => !relevant.includes(row));
 
-  const poolPick = [...sample(relevant, POOL_SHARE)];
-  if (poolPick.length < POOL_SHARE) {
-    poolPick.push(...sample(rest, POOL_SHARE - poolPick.length));
-  }
+  const poolPick = [...sample(relevant, SESSION_SIZE)];
   const freshCount = SESSION_SIZE - poolPick.length;
 
   // Recent sentences the model must not converge back onto.
@@ -119,35 +114,40 @@ export async function POST() {
     .slice(0, 12);
 
   try {
-    const exercisesData = await generateExercises({
-      level: level.id,
-      knownWords: knownContext,
-      learningTargets,
-      newTargets,
-      count: freshCount,
-      theme,
-      avoidSentences,
-    });
+    let session: ExerciseRow[] = [...poolPick];
 
-    if (!exercisesData || exercisesData.length === 0) {
-      throw new Error("AI failed to generate any exercises");
+    if (freshCount > 0) {
+      const exercisesData = await generateExercises({
+        level: level.id,
+        knownWords: knownContext,
+        learningTargets,
+        newTargets,
+        count: freshCount,
+        theme,
+        avoidSentences,
+      });
+
+      if (!exercisesData || exercisesData.length === 0) {
+        throw new Error("AI failed to generate any exercises");
+      }
+
+      const rows = exercisesData.map((ex) => ({
+        type: ex.type,
+        data: ex,
+        lexeme_ids: taggedLexemes(ex, targetIds),
+        level: level.id,
+      }));
+
+      const srv = supabaseService();
+      const { data: inserted, error } = await srv.from("exercises").insert(rows).select("*");
+      if (error) {
+        throw new Error(`DB insert failed: ${error.message}`);
+      }
+      
+      session = [...session, ...((inserted ?? []) as ExerciseRow[])];
     }
 
-    const rows = exercisesData.map((ex) => ({
-      type: ex.type,
-      data: ex,
-      lexeme_ids: taggedLexemes(ex, targetIds),
-      level: level.id,
-    }));
-
-    const srv = supabaseService();
-    const { data: inserted, error } = await srv.from("exercises").insert(rows).select("*");
-    if (error) {
-      throw new Error(`DB insert failed: ${error.message}`);
-    }
-
-    const session = shuffle([...poolPick, ...((inserted ?? []) as ExerciseRow[])]);
-    return NextResponse.json({ created: true, exercises: session });
+    return NextResponse.json({ created: freshCount > 0, exercises: shuffle(session) });
   } catch (e) {
     console.error("Error in generate exercises:", e);
     // Generation is best-effort: fall back to unseen pool exercises.

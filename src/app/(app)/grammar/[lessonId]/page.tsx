@@ -250,7 +250,7 @@ export default function GrammarLessonPage() {
               </Button>
               {practiceError && (
                 <p className="text-[13px] text-ink-faint">
-                  Practice isn&apos;t available right now — try again later.
+                  Practice isn&apos;t available right now - try again later.
                 </p>
               )}
             </div>

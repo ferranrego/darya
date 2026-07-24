@@ -21,27 +21,27 @@
               "body": "Every Dari sentence starts with who it is about. These six pronouns cover everyone.",
               "table": [
                 [
-                  "man — من",
+                  "man - من",
                   "I"
                 ],
                 [
-                  "tu — تو",
+                  "tu - تو",
                   "you"
                 ],
                 [
-                  "ō — او",
+                  "ō - او",
                   "he / she"
                 ],
                 [
-                  "mā — ما",
+                  "mā - ما",
                   "we"
                 ],
                 [
-                  "shumā — شما",
+                  "shumā - شما",
                   "you (polite)"
                 ],
                 [
-                  "ānhā — آنها",
+                  "ānhā - آنها",
                   "they"
                 ]
               ],
@@ -108,7 +108,7 @@
             {
               "id": "gs-01-3",
               "title": "The verb goes last",
-              "body": "English says 'I am a teacher'. Dari says 'I teacher am' — the verb always closes the sentence.",
+              "body": "English says 'I am a teacher'. Dari says 'I teacher am' - the verb always closes the sentence.",
               "examples": [
                 {
                   "dari": "ما دوست هستیم",
@@ -534,26 +534,26 @@
             {
               "id": "gs-03-1",
               "title": "The question words",
-              "body": "Five words unlock most beginner questions. They sit where the answer would go — the verb still comes last.",
+              "body": "Five words unlock most beginner questions. They sit where the answer would go - the verb still comes last.",
               "table": [
                 [
-                  "che — چی",
+                  "che - چی",
                   "what"
                 ],
                 [
-                  "kī — کی",
+                  "kī - کی",
                   "who"
                 ],
                 [
-                  "kujā — کجا",
+                  "kujā - کجا",
                   "where"
                 ],
                 [
-                  "chetōr — چطور",
+                  "chetōr - چطور",
                   "how"
                 ],
                 [
-                  "chand — چند",
+                  "chand - چند",
                   "how many"
                 ]
               ],
@@ -575,7 +575,7 @@
             {
               "id": "gs-03-2",
               "title": "Yes or no",
-              "body": "To ask a yes/no question, keep the words exactly the same and raise your voice at the end. (In formal Dari you may hear āyā at the start.) Answer with balē — yes, or na — no.",
+              "body": "To ask a yes/no question, keep the words exactly the same and raise your voice at the end. (In formal Dari you may hear āyā at the start.) Answer with balē - yes, or na - no.",
               "examples": [
                 {
                   "dari": "تو معلم هستی؟",
@@ -953,7 +953,7 @@
             {
               "id": "gs-05-1",
               "title": "The invisible -e",
-              "body": "'My book' is ketāb-e man — literally 'book of me'. The little -e (called ezāfa) is spoken but usually not written. After a vowel it becomes -ye.",
+              "body": "'My book' is ketāb-e man - literally 'book of me'. The little -e (called ezāfa) is spoken but usually not written. After a vowel it becomes -ye.",
               "examples": [
                 {
                   "dari": "این کتاب من است",
@@ -972,7 +972,7 @@
             {
               "id": "gs-05-2",
               "title": "Chain it",
-              "body": "Keep linking with -e: khāna-ye padar-e man — 'my father's house'. Any owner works, not just pronouns.",
+              "body": "Keep linking with -e: khāna-ye padar-e man - 'my father's house'. Any owner works, not just pronouns.",
               "examples": [
                 {
                   "dari": "خانه پدر من کلان است",
@@ -1175,7 +1175,7 @@
             {
               "id": "gs-06-2",
               "title": "Chain it further",
-              "body": "Noun, adjective, owner — all linked with -e: dōst-e khōb-e man, 'my good friend'.",
+              "body": "Noun, adjective, owner - all linked with -e: dōst-e khōb-e man, 'my good friend'.",
               "examples": [
                 {
                   "dari": "او دوست خوب من است",
@@ -1372,19 +1372,19 @@
               "body": "Unlike the verb, prepositions work just like English: they come before their noun.",
               "table": [
                 [
-                  "dar — در",
+                  "dar - در",
                   "in, at"
                 ],
                 [
-                  "ba — به",
+                  "ba - به",
                   "to"
                 ],
                 [
-                  "az — از",
+                  "az - از",
                   "from"
                 ],
                 [
-                  "bā — با",
+                  "bā - با",
                   "with"
                 ]
               ],
@@ -1406,7 +1406,7 @@
             {
               "id": "gs-07-2",
               "title": "Putting it together",
-              "body": "Combine prepositions with what you already know — questions, ezāfa, plurals.",
+              "body": "Combine prepositions with what you already know - questions, ezāfa, plurals.",
               "examples": [
                 {
                   "dari": "خانه تو کجا است؟",
@@ -1578,13 +1578,13 @@
         {
           "id": "gl-08",
           "title": "There is, there isn't",
-          "subtitle": "hast and nēst — saying what exists",
+          "subtitle": "hast and nēst - saying what exists",
           "grammarPoint": "existential-hast",
           "grammarPointEn": "Existential hast (there is) and nēst (there isn't) versus linking ast (is): dar khāna yak ketāb hast (there is a book in the house).",
           "slides": [
             {
               "id": "gs-08-1",
-              "title": "hast — it exists",
+              "title": "hast - it exists",
               "body": "hast says something exists; nēst says it doesn't. Perfect for what's in the house, the room, the market.",
               "examples": [
                 {
@@ -1604,7 +1604,7 @@
             {
               "id": "gs-08-2",
               "title": "ast or hast?",
-              "body": "ast links two ideas — the tea IS hot. hast says something exists — there IS tea.",
+              "body": "ast links two ideas - the tea IS hot. hast says something exists - there IS tea.",
               "examples": [
                 {
                   "dari": "چای گرم است",
@@ -1779,18 +1779,18 @@
     {
       "id": "gb-04",
       "title": "Doing Things Now",
-      "subtitle": "From having to doing — the present tense",
+      "subtitle": "From having to doing - the present tense",
       "lessons": [
         {
           "id": "gl-09",
           "title": "I have two brothers",
           "subtitle": "dāshtan and counting to ten",
           "grammarPoint": "dashtan-numbers",
-          "grammarPointEn": "The verb dāshtan (to have) in the present — dāram, dāri, dārad, dārēm, dārēd, dārand, with no mē- prefix — plus numbers and chand (how many).",
+          "grammarPointEn": "The verb dāshtan (to have) in the present - dāram, dāri, dārad, dārēm, dārēd, dārand, with no mē- prefix - plus numbers and chand (how many).",
           "slides": [
             {
               "id": "gs-09-1",
-              "title": "dāram — I have",
+              "title": "dāram - I have",
               "body": "Your first real verb. The endings are the same family you met with hastam. dāshtan is special: no prefix needed in the present.",
               "table": [
                 [
@@ -1830,7 +1830,7 @@
             {
               "id": "gs-09-2",
               "title": "Counting",
-              "body": "Numbers go before the noun — and remember, the noun stays singular.",
+              "body": "Numbers go before the noun - and remember, the noun stays singular.",
               "table": [
                 [
                   "yak",
@@ -2298,7 +2298,7 @@
             {
               "id": "gs-11-1",
               "title": "Spot the object",
-              "body": "When you act on a SPECIFIC thing — the book, that house — mark it with rā. Without rā it stays general.",
+              "body": "When you act on a SPECIFIC thing - the book, that house - mark it with rā. Without rā it stays general.",
               "examples": [
                 {
                   "dari": "من کتاب را می‌خوانم",
@@ -2515,7 +2515,7 @@
             },
             {
               "id": "gs-12-2",
-              "title": "nēstam — I am not",
+              "title": "nēstam - I am not",
               "body": "'To be' has its own negative forms.",
               "table": [
                 [
@@ -2554,7 +2554,7 @@
             },
             {
               "id": "gs-12-3",
-              "title": "nadāram — I don't have",
+              "title": "nadāram - I don't have",
               "body": "dāshtan takes plain na-: nadāram, nadāri, nadārad…",
               "examples": [
                 {
@@ -2732,7 +2732,7 @@
             {
               "id": "gs-13-1",
               "title": "Chop the -an",
-              "body": "raftan → raft. Add the same endings — except 'he/she', which takes nothing: ō raft. You can even drop the pronoun; the ending already says who.",
+              "body": "raftan → raft. Add the same endings - except 'he/she', which takes nothing: ō raft. You can even drop the pronoun; the ending already says who.",
               "table": [
                 [
                   "man",
@@ -2771,7 +2771,7 @@
             {
               "id": "gs-13-2",
               "title": "Time words",
-              "body": "dīrōz — yesterday, emrōz — today, fardā — tomorrow. They usually open the sentence.",
+              "body": "dīrōz - yesterday, emrōz - today, fardā - tomorrow. They usually open the sentence.",
               "examples": [
                 {
                   "dari": "دیروز کار کردم",
@@ -2943,7 +2943,7 @@
         },
         {
           "id": "gl-14",
-          "title": "Didn't — and done!",
+          "title": "Didn't - and done!",
           "subtitle": "Past negation, then everything together",
           "grammarPoint": "past-negation-capstone",
           "grammarPointEn": "Past negation with na- (nakardam, naraftam), plus mixed review of every A1 point: to be, plurals, ezāfa, prepositions, hast/nēst, dāshtan, present mē-, object rā, negation, and the simple past.",
@@ -3064,7 +3064,7 @@
                   "translit": "naraftam"
                 }
               ],
-              "hint": "You can drop the pronoun — the ending already says who."
+              "hint": "You can drop the pronoun - the ending already says who."
             },
             {
               "id": "ge-14-5",
@@ -3108,7 +3108,7 @@
             {
               "id": "ge-14-7",
               "type": "matchPairs",
-              "prompt": "Match — the grand finale",
+              "prompt": "Match - the grand finale",
               "pairs": [
                 {
                   "dari": "رفتم",

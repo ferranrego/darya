@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 /**
  * One-time (and on-demand) explainer for the reader. Replaces the old
  * always-visible legend: instead of three static chips it walks through the
- * word lifecycle — New → tap → Learning → reviews → Known — with sample words
+ * word lifecycle - New → tap → Learning → reviews → Known - with sample words
  * styled exactly as they appear in the text.
  */
 export function ReaderGuideSheet({
@@ -60,7 +60,7 @@ export function ReaderGuideSheet({
                 sample="کتاب"
                 sampleCls="bg-new-tint rounded-md"
                 label="New"
-                description="Softly highlighted. Tap it to reveal the meaning — Darya starts tracking it for you."
+                description="Softly highlighted. Tap it to reveal the meaning - Darya starts tracking it for you."
               />
               <GuideArrow hint="you tap it" />
               <GuideRow
@@ -76,7 +76,7 @@ export function ReaderGuideSheet({
                 sampleCls=""
                 label="Known"
                 labelCls="text-sabz"
-                description="Plain text — the marks fade away once a word is yours."
+                description="Plain text - the marks fade away once a word is yours."
               />
             </div>
 

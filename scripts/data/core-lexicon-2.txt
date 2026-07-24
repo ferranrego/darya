@@ -1,15 +1,15 @@
-# Darya core lexicon — part 2 (band 2: everyday verbs, courtesy, food, body, weather)
+# Darya core lexicon - part 2 (band 2: everyday verbs, courtesy, food, body, weather)
 # rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants
 101|سلام|salām|interjection|neutral|hello|سلام، چطور هستید؟|salām, chetōr hastēd?|Hello, how are you?|Abstract Concepts|
 102|تشکر|tashakur|interjection|neutral|thank you|تشکر، حال من خوب است.|tashakur, hāl-e man khōb ast.|Thank you, I am well.|Abstract Concepts|
-103|لطفاً|lutfan|adverb|neutral|please|لطفاً یک چای بیاور.|lutfan yak chāy biyāwar.|Please bring a tea.|Descriptions|لطفا
+103|لطفاً|lutfan|adverb|neutral|please|لطفاً یک چای بیاور.|lutfan yak chāy biyāwar.|Please bring a tea.|Descriptions & Qualities|لطفا
 104|ببخشید|bubakhshēd|interjection|neutral|excuse me, sorry|ببخشید، بازار کجا است؟|bubakhshēd, bāzār kujā ast?|Excuse me, where is the market?|Abstract Concepts|
 105|خداحافظ|khudā hāfez|interjection|neutral|goodbye|خداحافظ، فردا می‌بینمت.|khudā hāfez, fardā mēbīnamet.|Goodbye, see you tomorrow.|Abstract Concepts|خدا حافظ
-106|جور|jōr|adjective|spoken|well, healthy|جور هستید؟|jōr hastēd?|Are you well?|Descriptions|
+106|جور|jōr|adjective|spoken|well, healthy|جور هستید؟|jōr hastēd?|Are you well?|Descriptions & Qualities|
 107|خوش|khush|adjective|neutral|happy, glad|از دیدن شما خوش شدم.|az dīdan-e shumā khush shudam.|I am glad to see you.|Emotions & Feelings|
-108|مانده|mānda|adjective|spoken|tired|بعد از کار مانده هستم.|ba'd az kār mānda hastam.|After work I am tired.|Descriptions|
-109|گرسنه|gushna|adjective|spoken|hungry|بچه گرسنه است.|bacha gushna ast.|The child is hungry.|Descriptions|گشنه
-110|تشنه|tushna|adjective|neutral|thirsty|تشنه هستم، آب می‌خواهم.|tushna hastam, āb mēkhāham.|I am thirsty, I want water.|Descriptions|
+108|مانده|mānda|adjective|spoken|tired|بعد از کار مانده هستم.|ba'd az kār mānda hastam.|After work I am tired.|Descriptions & Qualities|
+109|گرسنه|gushna|adjective|spoken|hungry|بچه گرسنه است.|bacha gushna ast.|The child is hungry.|Food & Drink|گشنه
+110|تشنه|tushna|adjective|neutral|thirsty|تشنه هستم، آب می‌خواهم.|tushna hastam, āb mēkhāham.|I am thirsty, I want water.|Food & Drink|
 111|برنج|berenj|noun|neutral|rice|برنج با گوشت می‌خوریم.|berenj bā gōsht mēkhurēm.|We eat rice with meat.|Food & Drink|
 112|گوشت|gōsht|noun|neutral|meat|گوشت گوسفند خوش‌مزه است.|gōsht-e gōsfand khushmaza ast.|Lamb meat is tasty.|Food & Drink|
 113|میوه|mēwa|noun|neutral|fruit|میوه تازه از بازار خریدم.|mēwa-ye tāza az bāzār kharīdam.|I bought fresh fruit from the market.|Food & Drink|
@@ -18,85 +18,85 @@
 116|انار|anār|noun|neutral|pomegranate|انار قندهار بسیار خوب است.|anār-e qandahār besyār khōb ast.|Kandahar's pomegranates are very good.|Abstract Concepts|
 117|شیر|shīr|noun|neutral|milk (shīr); lion (shēr)|صبح شیر گرم می‌خورم.|subh shīr-e garm mēkhuram.|In the morning I drink warm milk.|Food & Drink|
 118|قند|qand|noun|neutral|sugar (lump)|چای را با قند می‌خورم.|chāy rā bā qand mēkhuram.|I drink tea with sugar.|Food & Drink|
-119|خوش‌مزه|khushmaza|adjective|neutral|tasty, delicious|نان مادرم خوش‌مزه است.|nān-e mādaram khushmaza ast.|My mother's food is delicious.|Descriptions|خوشمزه
+119|خوش‌مزه|khushmaza|adjective|neutral|tasty, delicious|نان مادرم خوش‌مزه است.|nān-e mādaram khushmaza ast.|My mother's food is delicious.|Descriptions & Qualities|خوشمزه
 120|شیرین|shīrīn|adjective|neutral|sweet|این چای بسیار شیرین است.|īn chāy besyār shīrīn ast.|This tea is very sweet.|Food & Drink|
-121|دست|dast|noun|neutral|hand; arm|دست‌هایت را بشوی.|dast-hāyat rā bushōy.|Wash your hands.|Body & Health|دست‌ها,دست‌هایت
-122|سر|sar|noun|neutral|head; top|سرم درد می‌کند.|saram dard mēkunad.|My head hurts.|Body & Health|سرم
-123|چشم|chashm|noun|neutral|eye|چشم‌های او سیاه است.|chashm-hā-ye ō siyāh ast.|Her eyes are black.|Body & Health|چشم‌ها,چشم‌های
-124|دل|del|noun|neutral|heart (figurative)|دلم برای وطن تنگ شده است.|delam barāye watan tang shuda ast.|I miss my homeland.|Body & Health|دلم
-125|پای|pāy|noun|neutral|foot, leg|پیاده با پای خود رفتم.|piyāda bā pāy-e khud raftam.|I went on foot.|Body & Health|پایم
-126|هوا|hawā|noun|neutral|weather; air|هوای امروز آفتابی است.|hawā-ye emrōz āftābī ast.|Today's weather is sunny.|Nature & Weather|هوای
-127|باران|bārān|noun|neutral|rain|در بهار باران زیاد می‌بارد.|dar bahār bārān-e ziyād mēbārad.|In spring it rains a lot.|Nature & Weather|
-128|برف|barf|noun|neutral|snow|زمستان در کابل برف می‌بارد.|zemestān dar kābul barf mēbārad.|In winter it snows in Kabul.|Nature & Weather|
-129|آفتاب|āftāb|noun|neutral|sun; sunshine|آفتاب گرم است.|āftāb garm ast.|The sun is warm.|Nature & Weather|آفتابی
+121|دست|dast|noun|neutral|hand; arm|دست‌هایت را بشوی.|dast-hāyat rā bushōy.|Wash your hands.|Body & Anatomy|دست‌ها,دست‌هایت
+122|سر|sar|noun|neutral|head; top|سرم درد می‌کند.|saram dard mēkunad.|My head hurts.|Body & Anatomy|سرم
+123|چشم|chashm|noun|neutral|eye|چشم‌های او سیاه است.|chashm-hā-ye ō siyāh ast.|Her eyes are black.|Body & Anatomy|چشم‌ها,چشم‌های
+124|دل|del|noun|neutral|heart (figurative)|دلم برای وطن تنگ شده است.|delam barāye watan tang shuda ast.|I miss my homeland.|Body & Anatomy|دلم
+125|پای|pāy|noun|neutral|foot, leg|پیاده با پای خود رفتم.|piyāda bā pāy-e khud raftam.|I went on foot.|Body & Anatomy|پایم
+126|هوا|hawā|noun|neutral|weather; air|هوای امروز آفتابی است.|hawā-ye emrōz āftābī ast.|Today's weather is sunny.|Nature & Environment|هوای
+127|باران|bārān|noun|neutral|rain|در بهار باران زیاد می‌بارد.|dar bahār bārān-e ziyād mēbārad.|In spring it rains a lot.|Nature & Environment|
+128|برف|barf|noun|neutral|snow|زمستان در کابل برف می‌بارد.|zemestān dar kābul barf mēbārad.|In winter it snows in Kabul.|Nature & Environment|
+129|آفتاب|āftāb|noun|neutral|sun; sunshine|آفتاب گرم است.|āftāb garm ast.|The sun is warm.|Nature & Environment|آفتابی
 130|بهار|bahār|noun|neutral|spring (season)|بهار فصل مقبول است.|bahār fasl-e maqbūl ast.|Spring is a beautiful season.|Time & Calendar|
 131|زمستان|zemestān|noun|neutral|winter|زمستان سرد است.|zemestān sard ast.|Winter is cold.|Time & Calendar|
 132|تابستان|tābestān|noun|neutral|summer|تابستان به قریه می‌رویم.|tābestān ba qarya mērawēm.|In summer we go to the village.|Time & Calendar|
 133|بازار|bāzār|noun|neutral|market, bazaar|بازار امروز شلوغ است.|bāzār emrōz shulūgh ast.|The market is crowded today.|Work & Business|
 134|دکان|dukān|noun|neutral|shop, store|از دکان نان خریدم.|az dukān nān kharīdam.|I bought bread from the shop.|Work & Business|
-135|مسجد|masjed|noun|neutral|mosque|مسجد نزدیک خانه ما است.|masjed nazdīk-e khāna-ye mā ast.|The mosque is near our house.|Arts & Culture|
-136|دریا|daryā|noun|neutral|river|دریای کابل از شهر می‌گذرد.|daryā-ye kābul az shahr mēguzarad.|The Kabul river passes through the city.|Nature & Weather|دریای
-137|کوه|kōh|noun|neutral|mountain|افغانستان کوه‌های بلند دارد.|afghānestān kōh-hā-ye buland dārad.|Afghanistan has high mountains.|Nature & Weather|کوه‌ها,کوه‌های
-138|درخت|darakht|noun|neutral|tree|در باغ ما درخت سیب است.|dar bāgh-e mā darakht-e sēb ast.|In our garden there is an apple tree.|Nature & Weather|
+135|مسجد|masjed|noun|neutral|mosque|مسجد نزدیک خانه ما است.|masjed nazdīk-e khāna-ye mā ast.|The mosque is near our house.|Religion & Beliefs|
+136|دریا|daryā|noun|neutral|river|دریای کابل از شهر می‌گذرد.|daryā-ye kābul az shahr mēguzarad.|The Kabul river passes through the city.|Nature & Environment|دریای
+137|کوه|kōh|noun|neutral|mountain|افغانستان کوه‌های بلند دارد.|afghānestān kōh-hā-ye buland dārad.|Afghanistan has high mountains.|Nature & Environment|کوه‌ها,کوه‌های
+138|درخت|darakht|noun|neutral|tree|در باغ ما درخت سیب است.|dar bāgh-e mā darakht-e sēb ast.|In our garden there is an apple tree.|Nature & Environment|
 139|باغ|bāgh|noun|neutral|garden, orchard|بچه‌ها در باغ بازی می‌کنند.|bacha-hā dar bāgh bāzī mēkunand.|The children play in the garden.|Home & Furniture|
-140|گل|gul|noun|neutral|flower|گل سرخ مقبول است.|gul-e surkh maqbūl ast.|The red flower is beautiful.|Nature & Weather|
+140|گل|gul|noun|neutral|flower|گل سرخ مقبول است.|gul-e surkh maqbūl ast.|The red flower is beautiful.|Nature & Environment|
 141|رنگ|rang|noun|neutral|color|این رنگ را دوست دارم.|īn rang rā dōst dāram.|I like this color.|Colors & Shapes|
 142|سرخ|surkh|adjective|neutral|red|انار سرخ است.|anār surkh ast.|The pomegranate is red.|Colors & Shapes|
 143|سفید|safēd|adjective|neutral|white|برف سفید است.|barf safēd ast.|Snow is white.|Colors & Shapes|
 144|سیاه|siyāh|adjective|neutral|black|چای سیاه می‌خورم.|chāy-e siyāh mēkhuram.|I drink black tea.|Colors & Shapes|
 145|سبز|sabz|adjective|neutral|green|چای سبز دوست دارم.|chāy-e sabz dōst dāram.|I like green tea.|Colors & Shapes|
 146|آبی|ābī|adjective|neutral|blue|آسمان آبی است.|āsmān ābī ast.|The sky is blue.|Colors & Shapes|
-147|آسمان|āsmān|noun|neutral|sky|آسمان امشب پر از ستاره است.|āsmān emshab pur az setāra ast.|The sky tonight is full of stars.|Nature & Weather|
-148|ستاره|setāra|noun|neutral|star|ستاره‌ها روشن هستند.|setāra-hā rōshan hastand.|The stars are bright.|Nature & Weather|ستاره‌ها
-149|شدن|shudan|verb|neutral|to become|هوا سرد می‌شود.|hawā sard mēshawad.|The weather is getting cold.|Actions|می‌شوم,می‌شوی,می‌شود,می‌شویم,می‌شوند,شدم,شدی,شد,شدیم,شدند,بشود,نمی‌شود
+147|آسمان|āsmān|noun|neutral|sky|آسمان امشب پر از ستاره است.|āsmān emshab pur az setāra ast.|The sky tonight is full of stars.|Nature & Environment|
+148|ستاره|setāra|noun|neutral|star|ستاره‌ها روشن هستند.|setāra-hā rōshan hastand.|The stars are bright.|Nature & Environment|ستاره‌ها
+149|شدن|shudan|verb|neutral|to become|هوا سرد می‌شود.|hawā sard mēshawad.|The weather is getting cold.|Actions & Movement|می‌شوم,می‌شوی,می‌شود,می‌شویم,می‌شوند,شدم,شدی,شد,شدیم,شدند,بشود,نمی‌شود
 150|زندگی|zendagī|noun|neutral|life|زندگی در قریه آرام است.|zendagī dar qarya ārām ast.|Life in the village is calm.|Abstract Concepts|
-151|گپ|gap|noun|spoken|talk, word, conversation|با دوستم گپ زدم.|bā dōstam gap zadam.|I talked with my friend.|Abstract Concepts|
-152|زدن|zadan|verb|neutral|to hit; (in compounds) to do|برادرم با من گپ می‌زند.|barādaram bā man gap mēzanad.|My brother talks with me.|Actions|می‌زنم,می‌زنی,می‌زند,می‌زنیم,می‌زنند,زدم,زدی,زد,زدیم,زدند,بزن
-153|گرفتن|gereftan|verb|neutral|to take, to get|از بازار میوه گرفتم.|az bāzār mēwa gereftam.|I got fruit from the market.|Actions|می‌گیرم,می‌گیری,می‌گیرد,می‌گیریم,می‌گیرند,گرفتم,گرفتی,گرفت,گرفتیم,گرفتند,بگیر
-154|یاد|yād|noun|neutral|memory; (yād gereftan: to learn)|دری یاد می‌گیرم.|darī yād mēgīram.|I am learning Dari.|Abstract Concepts|
-155|نوشتن|neweshtan|verb|neutral|to write|نامت را اینجا بنویس.|nāmat rā īnjā benewīs.|Write your name here.|Arts & Culture|می‌نویسم,می‌نویسی,می‌نویسد,می‌نویسیم,می‌نویسند,نوشتم,نوشتی,نوشت,نوشتیم,نوشتند,بنویس
-156|شنیدن|shunīdan|verb|neutral|to hear, to listen|آهنگ افغانی می‌شنوم.|āhang-e afghānī mēshunawam.|I listen to Afghan music.|Actions|می‌شنوم,می‌شنوی,می‌شنود,می‌شنویم,می‌شنوند,شنیدم,شنیدی,شنید,شنیدیم,شنیدند,بشنو
-157|فهمیدن|fahmīdan|verb|neutral|to understand|دری را خوب می‌فهمم.|darī rā khōb mēfahmam.|I understand Dari well.|Actions|می‌فهمم,می‌فهمی,می‌فهمد,می‌فهمیم,می‌فهمند,فهمیدم,فهمیدی,فهمید,فهمیدیم,نمی‌فهمم
-158|توانستن|tawānestan|verb|neutral|to be able, can|می‌توانم دری بخوانم.|mētawānam darī bukhānam.|I can read Dari.|Actions|می‌توانم,می‌توانی,می‌تواند,می‌توانیم,می‌توانند,توانستم,توانست,نمی‌توانم,بخوانم
-159|خوابیدن|khāb kardan|verb|neutral|to sleep|شب‌ها وقت خواب می‌کنم.|shab-hā waqt khāb mēkunam.|At night I sleep early.|Actions|می‌خوابم,می‌خوابی,می‌خوابد,خوابیدم,خوابید,بخواب,خواب
-160|نشستن|neshastan|verb|neutral|to sit|لطفاً اینجا بنشین.|lutfan īnjā benshīn.|Please sit here.|Actions|می‌نشینم,می‌نشیند,نشستم,نشست,بنشین,نشسته
+151|گپ|gap|noun|spoken|talk, word, conversation|با دوستم گپ زدم.|bā dōstam gap zadam.|I talked with my friend.|Communication & Media|
+152|زدن|zadan|verb|neutral|to hit; (in compounds) to do|برادرم با من گپ می‌زند.|barādaram bā man gap mēzanad.|My brother talks with me.|Actions & Movement|می‌زنم,می‌زنی,می‌زند,می‌زنیم,می‌زنند,زدم,زدی,زد,زدیم,زدند,بزن
+153|گرفتن|gereftan|verb|neutral|to take, to get|از بازار میوه گرفتم.|az bāzār mēwa gereftam.|I got fruit from the market.|Actions & Movement|می‌گیرم,می‌گیری,می‌گیرد,می‌گیریم,می‌گیرند,گرفتم,گرفتی,گرفت,گرفتیم,گرفتند,بگیر
+154|یاد|yād|noun|neutral|memory; (yād gereftan: to learn)|دری یاد می‌گیرم.|darī yād mēgīram.|I am learning Dari.|Education & Learning|
+155|نوشتن|neweshtan|verb|neutral|to write|نامت را اینجا بنویس.|nāmat rā īnjā benewīs.|Write your name here.|Arts & Entertainment|می‌نویسم,می‌نویسی,می‌نویسد,می‌نویسیم,می‌نویسند,نوشتم,نوشتی,نوشت,نوشتیم,نوشتند,بنویس
+156|شنیدن|shunīdan|verb|neutral|to hear, to listen|آهنگ افغانی می‌شنوم.|āhang-e afghānī mēshunawam.|I listen to Afghan music.|Actions & Movement|می‌شنوم,می‌شنوی,می‌شنود,می‌شنویم,می‌شنوند,شنیدم,شنیدی,شنید,شنیدیم,شنیدند,بشنو
+157|فهمیدن|fahmīdan|verb|neutral|to understand|دری را خوب می‌فهمم.|darī rā khōb mēfahmam.|I understand Dari well.|Actions & Movement|می‌فهمم,می‌فهمی,می‌فهمد,می‌فهمیم,می‌فهمند,فهمیدم,فهمیدی,فهمید,فهمیدیم,نمی‌فهمم
+158|توانستن|tawānestan|verb|neutral|to be able, can|می‌توانم دری بخوانم.|mētawānam darī bukhānam.|I can read Dari.|Actions & Movement|می‌توانم,می‌توانی,می‌تواند,می‌توانیم,می‌توانند,توانستم,توانست,نمی‌توانم,بخوانم
+159|خوابیدن|khāb kardan|verb|neutral|to sleep|شب‌ها وقت خواب می‌کنم.|shab-hā waqt khāb mēkunam.|At night I sleep early.|Actions & Movement|می‌خوابم,می‌خوابی,می‌خوابد,خوابیدم,خوابید,بخواب,خواب
+160|نشستن|neshastan|verb|neutral|to sit|لطفاً اینجا بنشین.|lutfan īnjā benshīn.|Please sit here.|Actions & Movement|می‌نشینم,می‌نشیند,نشستم,نشست,بنشین,نشسته
 161|کشور|keshwar|noun|neutral|country|افغانستان کشور من است.|afghānestān keshwar-e man ast.|Afghanistan is my country.|Society & Politics|
 162|وطن|watan|noun|neutral|homeland|وطن خود را دوست دارم.|watan-e khud rā dōst dāram.|I love my homeland.|Abstract Concepts|
-163|جای|jāy|noun|neutral|place|این جای آرام است.|īn jāy-e ārām ast.|This is a calm place.|Abstract Concepts|جا
+163|جای|jāy|noun|neutral|place|این جای آرام است.|īn jāy-e ārām ast.|This is a calm place.|Geography & Places|جا
 164|چیز|chīz|noun|neutral|thing|یک چیز می‌خواهم بگویم.|yak chīz mēkhāham bugōyam.|I want to say one thing.|Abstract Concepts|چیزی
 165|همه|hama|determiner|neutral|all, everyone|همه به خانه رفتند.|hama ba khāna raftand.|Everyone went home.|Grammar & Connectors|
 166|هر|har|determiner|neutral|every, each|هر روز چای می‌خورم.|har rōz chāy mēkhuram.|I drink tea every day.|Grammar & Connectors|
-167|بسیار|besyār|adverb|neutral|very, much|این شهر بسیار مقبول است.|īn shahr besyār maqbūl ast.|This city is very beautiful.|Descriptions|
+167|بسیار|besyār|adverb|neutral|very, much|این شهر بسیار مقبول است.|īn shahr besyār maqbūl ast.|This city is very beautiful.|Descriptions & Qualities|
 168|اما|amā|conjunction|neutral|but|مانده هستم اما خوش هستم.|mānda hastam amā khush hastam.|I am tired but happy.|Grammar & Connectors|
 169|یا|yā|conjunction|neutral|or|چای می‌خواهی یا آب؟|chāy mēkhāhī yā āb?|Do you want tea or water?|Grammar & Connectors|
 170|اگر|agar|conjunction|neutral|if|اگر وقت داشتی، بیا.|agar waqt dāshtī, biyā.|If you have time, come.|Grammar & Connectors|
 171|چون|chun|conjunction|neutral|because|نرفتم چون باران بود.|naraftam chun bārān būd.|I did not go because it was raining.|Grammar & Connectors|
 172|پس|pas|adverb|neutral|then, so|پس فردا می‌بینمت.|pas fardā mēbīnamet.|So I will see you tomorrow.|Time & Calendar|
 173|دیگر|dīgar|determiner|neutral|other, another; anymore|یک چای دیگر لطفاً.|yak chāy-e dīgar lutfan.|Another tea, please.|Grammar & Connectors|دگه,دیگه
-174|اینجا|īnjā|adverb|neutral|here|اینجا خانه ما است.|īnjā khāna-ye mā ast.|Here is our house.|Descriptions|این‌جا
-175|آنجا|ānjā|adverb|neutral|there|آنجا مسجد است.|ānjā masjed ast.|There is the mosque.|Descriptions|آن‌جا
-176|نزدیک|nazdīk|adjective|neutral|near, close|دکان نزدیک است.|dukān nazdīk ast.|The shop is near.|Descriptions|
-177|دور|dūr|adjective|neutral|far|پوهنتون از خانه ما دور است.|pohantūn az khāna-ye mā dūr ast.|The university is far from our house.|Descriptions|
+174|اینجا|īnjā|adverb|neutral|here|اینجا خانه ما است.|īnjā khāna-ye mā ast.|Here is our house.|Descriptions & Qualities|این‌جا
+175|آنجا|ānjā|adverb|neutral|there|آنجا مسجد است.|ānjā masjed ast.|There is the mosque.|Descriptions & Qualities|آن‌جا
+176|نزدیک|nazdīk|adjective|neutral|near, close|دکان نزدیک است.|dukān nazdīk ast.|The shop is near.|Descriptions & Qualities|
+177|دور|dūr|adjective|neutral|far|پوهنتون از خانه ما دور است.|pohantūn az khāna-ye mā dūr ast.|The university is far from our house.|Descriptions & Qualities|
 178|خود|khud|pronoun|neutral|self, own|کتاب خود را آوردم.|ketāb-e khud rā āwardam.|I brought my own book.|Grammar & Connectors|خودم,خودت
 179|بجه|baja|noun|spoken|o'clock|حالا چند بجه است؟|hālā chand baja ast?|What time is it now?|Abstract Concepts|
 180|چند|chand|determiner|neutral|how many; a few|چند برادر داری؟|chand barādar dārī?|How many brothers do you have?|Grammar & Connectors|
 181|ساعت|sā'at|noun|neutral|hour; clock, watch|یک ساعت صبر کردم.|yak sā'at sabr kardam.|I waited for an hour.|Time & Calendar|
 182|دقیقه|daqīqa|noun|neutral|minute|پنج دقیقه وقت می‌خواهم.|panj daqīqa waqt mēkhāham.|I need five minutes.|Time & Calendar|
-183|فامیل|fāmīl|noun|spoken|family|فامیل ما کلان است.|fāmīl-e mā kalān ast.|Our family is big.|People & Family|
-184|خاله|khāla|noun|neutral|aunt (maternal)|خاله‌ام در مزار زندگی می‌کند.|khāla-am dar mazār zendagī mēkunad.|My aunt lives in Mazar.|People & Family|
-185|کاکا|kākā|noun|neutral|uncle (paternal)|کاکایم دکان دارد.|kākāyam dukān dārad.|My uncle has a shop.|People & Family|کاکایم
-186|پدرکلان|padarkalān|noun|neutral|grandfather|پدرکلانم قصه می‌گوید.|padarkalānam qessa mēgōyad.|My grandfather tells stories.|People & Family|پدرکلانم
-187|مادرکلان|mādarkalān|noun|neutral|grandmother|مادرکلانم چای دم می‌کند.|mādarkalānam chāy dam mēkunad.|My grandmother brews tea.|People & Family|مادرکلانم
+183|فامیل|fāmīl|noun|spoken|family|فامیل ما کلان است.|fāmīl-e mā kalān ast.|Our family is big.|Family & Relationships|
+184|خاله|khāla|noun|neutral|aunt (maternal)|خاله‌ام در مزار زندگی می‌کند.|khāla-am dar mazār zendagī mēkunad.|My aunt lives in Mazar.|Family & Relationships|
+185|کاکا|kākā|noun|neutral|uncle (paternal)|کاکایم دکان دارد.|kākāyam dukān dārad.|My uncle has a shop.|Family & Relationships|کاکایم
+186|پدرکلان|padarkalān|noun|neutral|grandfather|پدرکلانم قصه می‌گوید.|padarkalānam qessa mēgōyad.|My grandfather tells stories.|Family & Relationships|پدرکلانم
+187|مادرکلان|mādarkalān|noun|neutral|grandmother|مادرکلانم چای دم می‌کند.|mādarkalānam chāy dam mēkunad.|My grandmother brews tea.|Family & Relationships|مادرکلانم
 188|مهمان|mehmān|noun|neutral|guest|امشب مهمان داریم.|emshab mehmān dārēm.|Tonight we have guests.|Abstract Concepts|
 189|قصه|qessa|noun|neutral|story, tale|این قصه را دوست دارم.|īn qessa rā dōst dāram.|I like this story.|Abstract Concepts|
-190|آهنگ|āhang|noun|neutral|song|این آهنگ مشهور است.|īn āhang mash'hūr ast.|This song is famous.|Arts & Culture|
-191|بازی|bāzī|noun|neutral|game, play|بازی فوتبال را دیدیم.|bāzī-ye fūtbāl rā dīdēm.|We watched the football game.|Arts & Culture|
-192|فوتبال|fūtbāl|noun|neutral|football, soccer|بچه‌ها فوتبال بازی می‌کنند.|bacha-hā fūtbāl bāzī mēkunand.|The boys play football.|Abstract Concepts|
-193|کرکت|kriket|noun|neutral|cricket (sport)|کرکت در افغانستان مشهور است.|kriket dar afghānestān mash'hūr ast.|Cricket is popular in Afghanistan.|Abstract Concepts|
+190|آهنگ|āhang|noun|neutral|song|این آهنگ مشهور است.|īn āhang mash'hūr ast.|This song is famous.|Arts & Entertainment|
+191|بازی|bāzī|noun|neutral|game, play|بازی فوتبال را دیدیم.|bāzī-ye fūtbāl rā dīdēm.|We watched the football game.|Arts & Entertainment|
+192|فوتبال|fūtbāl|noun|neutral|football, soccer|بچه‌ها فوتبال بازی می‌کنند.|bacha-hā fūtbāl bāzī mēkunand.|The boys play football.|Sports & Recreation|
+193|کرکت|kriket|noun|neutral|cricket (sport)|کرکت در افغانستان مشهور است.|kriket dar afghānestān mash'hūr ast.|Cricket is popular in Afghanistan.|Arts & Entertainment|
 194|روشن|rōshan|adjective|neutral|bright, light; on|اتاق روشن است.|utāq rōshan ast.|The room is bright.|Colors & Shapes|
 195|تاریک|tārīk|adjective|neutral|dark|شب سرک تاریک است.|shab sarak tārīk ast.|At night the street is dark.|Colors & Shapes|
 196|اتاق|utāq|noun|neutral|room|اتاق من خورد است.|utāq-e man khurd ast.|My room is small.|Home & Furniture|
 197|دروازه|darwāza|noun|neutral|door, gate|دروازه را باز کن.|darwāza rā bāz kun.|Open the door.|Home & Furniture|
 198|کلکین|kelkīn|noun|neutral|window|از کلکین کوه را می‌بینم.|az kelkīn kōh rā mēbīnam.|From the window I see the mountain.|Home & Furniture|
-199|باز|bāz|adjective|neutral|open|دکان باز است.|dukān bāz ast.|The shop is open.|Descriptions|
-200|بسته|basta|adjective|neutral|closed|مکتب امروز بسته است.|maktab emrōz basta ast.|The school is closed today.|Descriptions|
+199|باز|bāz|adjective|neutral|open|دکان باز است.|dukān bāz ast.|The shop is open.|Descriptions & Qualities|
+200|بسته|basta|adjective|neutral|closed|مکتب امروز بسته است.|maktab emrōz basta ast.|The school is closed today.|Descriptions & Qualities|

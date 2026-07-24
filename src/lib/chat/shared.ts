@@ -1,6 +1,6 @@
 /** Bits the chat UI and the enrichment API both need. No server-only imports. */
 
-export type EnrichMode = "translit" | "translation";
+export type EnrichMode = "translit" | "translation" | "correction";
 
 /** Dari is written in Arabic script; Latin-only messages need no help. */
 export const DARI_SCRIPT = /[؀-ۿ]/;

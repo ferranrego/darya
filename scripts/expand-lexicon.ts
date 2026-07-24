@@ -173,7 +173,7 @@ Schema:
   const parsed = batchResponseSchema.parse(JSON.parse(rawText));
   
   if (!existsSync(outPath)) {
-    appendFileSync(outPath, "# Darya core lexicon — expanded batch\n# rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants\n");
+    appendFileSync(outPath, "# Darya core lexicon - expanded batch\n# rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants\n");
   }
 
   let rank = nextRank;

@@ -10,6 +10,7 @@ import grammarB2Json from "../../../content/grammar/b2.json";
 import grammarC1Json from "../../../content/grammar/c1.json";
 import grammarC2Json from "../../../content/grammar/c2.json";
 import lexiconJson from "../../../content/lexicon/lexicon.json";
+import themesJson from "../../../content/lexicon/themes.json";
 import levelsJson from "../../../content/levels/levels.json";
 import { buildLexiconIndex, type LexiconIndex } from "../text/lexicon-index";
 import {
@@ -25,9 +26,12 @@ import {
   type LexiconEntry,
   type LexiconFile,
   type LevelsFile,
+  themesFileSchema,
+  type Theme,
 } from "./schema";
 
 export const lexicon: LexiconFile = lexiconFileSchema.parse(lexiconJson);
+export const themes: Theme[] = themesFileSchema.parse(themesJson);
 export const alphabetCourse: AlphabetCourse = alphabetCourseSchema.parse(alphabetJson);
 export const levelsFile: LevelsFile = levelsFileSchema.parse(levelsJson);
 

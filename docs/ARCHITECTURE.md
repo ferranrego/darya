@@ -2,7 +2,7 @@
 
 Darya is a Dari (Afghan Persian) learning PWA built on comprehensible input: adaptive
 AI-generated texts, tap-to-reveal vocabulary, FSRS spaced repetition, and an alphabet
-course — for a small circle of users on 100% free infrastructure.
+course - for a small circle of users on 100% free infrastructure.
 
 ## Stack
 
@@ -53,12 +53,12 @@ public/             ← manifest, sw.js, icons, self-hosted fonts
 4. **FSRS state is authoritative in `user_words`.** `review_logs` is append-only and
    sufficient to re-derive/optimize parameters later.
 5. **Strong typing end to end.** DB row types, content types, and API payloads are all
-   derived from Zod schemas or generated Supabase types — no `any`.
+   derived from Zod schemas or generated Supabase types - no `any`.
 
 ## Free-tier budget
 
 - Groq free tier: ~30 RPM / generous daily quota, no billing required
   cost). One text ≈ 1 request; caching + pre-generation keeps 3–5 users at
   a few dozen requests/day worst case.
-- Supabase free: 500 MB DB — lexicon + thousands of cached texts ≈ a few MB.
+- Supabase free: 500 MB DB - lexicon + thousands of cached texts ≈ a few MB.
 - Vercel Hobby: static-heavy PWA, tiny serverless usage; daily cron for push.

@@ -8,7 +8,7 @@ export interface HighlightSegment {
 
 /**
  * Split a context sentence into segments, marking the ones that belong to the
- * given lexeme — including conjugated/suffixed surface forms (خوبم → خوب),
+ * given lexeme - including conjugated/suffixed surface forms (خوبم → خوب),
  * resolved through the same lexicon index the reader uses for tap-to-lookup.
  * Returns null when no part of the sentence can be attributed to the lexeme,
  * so callers can fall back to showing the word in isolation.

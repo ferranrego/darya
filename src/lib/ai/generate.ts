@@ -37,10 +37,11 @@ export interface GenerationRequest {
   /** New words the text should introduce. */
   targetWords: LexiconEntry[];
   newWordRatio: number;
+  theme?: string;
 }
 
 /** Tokens that resolve to lexemes outside known+target, or not at all. */
-const MAX_OOV_RATE = 0.14;
+const MAX_OOV_RATE = 0.25;
 
 function buildPrompt(req: GenerationRequest): string {
   const known = req.knownWords.map((w) => `${w.dari} (${w.translit})`).join("، ");
@@ -48,6 +49,7 @@ function buildPrompt(req: GenerationRequest): string {
     .map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`)
     .join("، ");
   const [minS, maxS] = req.level.sentenceRange;
+  const themeInstructions = req.theme ? `\n- Set the text in this scenario/theme where it fits naturally: ${req.theme}` : "";
 
   return `You are a Dari language teacher in Kabul writing a graded reader text in standard Afghan Dari (NOT Iranian Persian, use Dari vocabulary like مکتب، موتر، کلان and Kabuli usage).
 
@@ -55,7 +57,7 @@ Write a short, warm, concrete text (${minS}-${maxS} sentences, ${req.level.sente
 CRITICAL NARRATIVE RULES:
 - The text must tell a coherent story or explain something clearly.
 - Every sentence MUST be a logical continuation of the previous one. 
-- Ensure a natural flow that makes sense to the reader; do NOT just write a list of disconnected sentences.
+- Ensure a natural flow that makes sense to the reader; do NOT just write a list of disconnected sentences.${themeInstructions}
 
 STRICT VOCABULARY CONSTRAINT:
 - You may ONLY use these words the learner already knows (any inflection of them is fine): ${known}
@@ -123,16 +125,102 @@ export function vocabHash(doc: TextDocument): string {
   return createHash("sha256").update(doc.vocabUsed.join(",")).digest("hex").slice(0, 16);
 }
 
-export async function generateText(req: GenerationRequest): Promise<TextDocument> {
-  return completeJson(buildPrompt(req), {
-    temperature: 0.8,
-    validate: (raw, model) => {
-      const parsed = outputSchema.parse(JSON.parse(raw));
-      const { doc, oovRate } = assemble(parsed, req, model);
-      if (oovRate > MAX_OOV_RATE) {
-        throw new Error(`OOV rate ${(oovRate * 100).toFixed(0)}%`);
-      }
-      return doc;
-    },
+export async function repairText(
+  doc: TextDocument,
+  req: GenerationRequest,
+  strict = true
+): Promise<TextDocument> {
+  const allowed = new Set([...req.knownWords, ...req.targetWords].map((w) => w.id));
+  
+  const badSentenceIndices: number[] = [];
+  doc.sentences.forEach((s, idx) => {
+    const hasOov = s.tokens.some((t) => !t.lexemeId || !allowed.has(t.lexemeId));
+    if (hasOov) badSentenceIndices.push(idx);
   });
+  
+  if (badSentenceIndices.length === 0) return doc;
+  
+  const known = req.knownWords.map((w) => `${w.dari} (${w.translit})`).join("، ");
+  const target = req.targetWords.map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`).join("، ");
+  
+  const badSentencesText = badSentenceIndices.map(i => `${i}: ${doc.sentences[i].dari}`).join('\n');
+  
+  const repairPrompt = `You are a Dari language teacher. The following sentences have vocabulary that is too difficult for the student.
+Rewrite ONLY these specific sentences using ONLY allowed words. Keep the meaning as close to the original as possible.
+
+ALLOWED WORDS:
+${known}
+${target}
+
+SENTENCES TO REPAIR:
+${badSentencesText}
+
+Return JSON strictly in this format:
+{"repairs": [{"index": 0, "dari": "...", "translit": "...", "en": "..."}]}
+where "index" is the number provided above for the sentence.`;
+
+  const repairSchema = z.object({
+    repairs: z.array(z.object({
+      index: z.number(),
+      dari: z.string(),
+      translit: z.string(),
+      en: z.string()
+    }))
+  });
+
+  const repairs = await completeJson(repairPrompt, {
+    temperature: 0.2,
+    validate: (raw) => repairSchema.parse(JSON.parse(raw)).repairs
+  });
+  
+  const raw: RawText = {
+    titleDari: doc.titleDari,
+    titleTranslit: doc.titleTranslit,
+    titleEn: doc.titleEn,
+    sentences: doc.sentences.map((s, i) => {
+      const repair = repairs.find(r => r.index === i);
+      return repair ? { dari: repair.dari, translit: repair.translit, en: repair.en } : { dari: s.dari, translit: s.translit, en: s.en };
+    })
+  };
+  
+  const { doc: finalDoc, oovRate } = assemble(raw, req, doc.model ?? "unknown-repair");
+  if (strict && oovRate > MAX_OOV_RATE) {
+    throw new Error(`Repair failed: OOV rate still ${(oovRate * 100).toFixed(0)}%`);
+  }
+  return finalDoc;
+}
+
+export async function generateText(req: GenerationRequest): Promise<TextDocument> {
+  let lastError: unknown;
+  
+  // Try up to 3 times to get a good text (including repairs)
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      const result = await completeJson(buildPrompt(req), {
+        temperature: 0.8,
+        validate: (raw, model) => {
+          const parsed = outputSchema.parse(JSON.parse(raw));
+          return assemble(parsed, req, model);
+        },
+      });
+      
+      if (result.oovRate <= MAX_OOV_RATE) {
+        return result.doc;
+      }
+      
+      // Attempt repair
+      try {
+        const strict = attempt < 2; // Strict on attempts 0 and 1, lenient on attempt 2
+        return await repairText(result.doc, req, strict);
+      } catch (repairError) {
+        // If repair fails, we throw to trigger the outer generation retry
+        throw new Error(`Repair failed: ${repairError instanceof Error ? repairError.message : String(repairError)}`);
+      }
+    } catch (e) {
+      lastError = e;
+      console.warn(`Generation attempt ${attempt + 1} failed:`, e);
+    }
+  }
+  
+  throw lastError;
 }

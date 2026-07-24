@@ -6,7 +6,7 @@ import { getAlphabetProgress } from "../db/alphabet";
 import { getHistoryActivity } from "../db/activity";
 import { getGrammarProgress } from "../db/grammar";
 import { getProfile } from "../db/profiles";
-import { getReadTexts, getTextsForLevel } from "../db/texts";
+import { getReadTexts, getReadTextsWithDocs, getText, getTextsForLevel } from "../db/texts";
 import { getUserWords } from "../db/words";
 import type { WordStatus } from "../db/types";
 import { supabaseBrowser } from "../supabase/client";
@@ -90,6 +90,15 @@ export function useTextsForLevel(level: string | undefined) {
   });
 }
 
+export function useText(id: string | undefined) {
+  const db = useSupabase();
+  return useQuery({
+    queryKey: ["text", id],
+    enabled: !!id,
+    queryFn: () => getText(db, id!),
+  });
+}
+
 export function useReadTexts() {
   const db = useSupabase();
   const { data: user } = useUser();
@@ -97,6 +106,16 @@ export function useReadTexts() {
     queryKey: ["user_texts", user?.id],
     enabled: !!user,
     queryFn: () => getReadTexts(db, user!.id),
+  });
+}
+
+export function useReadTextsWithDocs() {
+  const db = useSupabase();
+  const { data: user } = useUser();
+  return useQuery({
+    queryKey: ["user_texts_docs", user?.id],
+    enabled: !!user,
+    queryFn: () => getReadTextsWithDocs(db, user!.id),
   });
 }
 

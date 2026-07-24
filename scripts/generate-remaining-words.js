@@ -381,7 +381,7 @@ for (const word of candidateWords) {
   }
 }
 
-let out = "# Darya core lexicon — expanded batch (AI scripted)\n# rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants\n";
+let out = "# Darya core lexicon - expanded batch (AI scripted)\n# rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants\n";
 let currentRank = currentLexicon.length + 1; // e.g. 292
 for (const w of validWords) {
   out += `${currentRank}|${w[0]}|${w[1]}|${w[2]}|${w[3]}|${w[4]}|${w[5]}|${w[6]}|${w[7]}|${(w[2] === "verb" && !w[8]) ? "dari-specific" : ""}|${w[8] || ""}\n`;

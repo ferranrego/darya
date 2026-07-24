@@ -9,7 +9,7 @@ import { levels } from "./content/load";
 
 /**
  * How many words to show from each frequency band (50 total). Every band is
- * sampled — including 7 and 8 — so the estimate can span the whole lexicon;
+ * sampled - including 7 and 8 - so the estimate can span the whole lexicon;
  * otherwise the upper levels are mathematically unreachable.
  */
 const SAMPLE_PER_BAND = [8, 7, 7, 6, 6, 6, 5, 5];

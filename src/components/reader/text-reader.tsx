@@ -1,7 +1,7 @@
 "use client";
 
-import { useMutation } from "@tanstack/react-query";
-import { Check, CircleHelp, Languages, Highlighter } from "lucide-react";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import { Check, CircleHelp, Languages, Highlighter, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -16,6 +16,7 @@ import { newCard } from "@/lib/srs/scheduler";
 import { ReaderGuideSheet } from "./reader-guide-sheet";
 import { segmentSentence } from "./segments";
 import { WordSheet } from "./word-sheet";
+import { SentenceSheet } from "./sentence-sheet";
 
 interface TappedWord {
   surface: string;
@@ -38,12 +39,13 @@ export function TextReader({
 
 
   const [tapped, setTapped] = useState<TappedWord | null>(null);
+  const [tappedSentence, setTappedSentence] = useState<string | null>(null);
   const [tapCount, setTapCount] = useState(0);
   const [revealedEn, setRevealedEn] = useState<Set<number>>(new Set());
   const [revealedTranslit, setRevealedTranslit] = useState<Set<number>>(new Set());
   const [showTranslit, setShowTranslit] = useState(false);
   const [showSyntax, setShowSyntax] = useState(false);
-  const [finished, setFinished] = useState(false);
+  const [phase, setPhase] = useState<"reading" | "done">("reading");
   const [showGuide, setShowGuide] = useState(false);
 
   // First ever visit: open the guide once the reader has settled.
@@ -122,9 +124,11 @@ export function TextReader({
     },
     onSuccess: async () => {
       await invalidate();
-      setFinished(true);
+      setPhase("done");
     },
   });
+
+
 
   function handleTap(surface: string, lexemeId: string | null, sentenceIndex: number) {
     if (!lexemeId) {
@@ -163,30 +167,12 @@ export function TextReader({
     ? (statusMap?.get(tapped.lexemeId) ?? "learning")
     : "new";
 
-  if (finished) {
+  if (phase === "done") {
     return (
-      <motion.div
-        initial={{ opacity: 0, scale: 0.96 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.35, ease: "easeOut" }}
-        className="flex flex-1 flex-col items-center justify-center py-24 text-center"
-      >
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ type: "spring", stiffness: 400, damping: 22, delay: 0.1 }}
-          className="flex size-16 items-center justify-center rounded-full bg-sabz-soft text-sabz"
-        >
-          <Check size={30} strokeWidth={2.5} />
-        </motion.div>
-        <h2 className="mt-6 text-[22px] font-semibold tracking-tight">Text finished</h2>
-        <p className="mt-2 text-[15px] text-ink-soft">
-          +{XP.textRead} XP{tapCount > 0 ? ` · ${tapCount} words explored` : ""}
-        </p>
-        <Button size="lg" className="mt-10" onClick={onFinished}>
-          Next text
-        </Button>
-      </motion.div>
+      <DoneScreen
+        tapCount={tapCount}
+        onNext={onFinished}
+      />
     );
   }
 
@@ -331,6 +317,14 @@ export function TextReader({
               >
                 <Languages size={13} />
               </button>
+              <button
+                type="button"
+                onClick={() => setTappedSentence(sentence.dari)}
+                aria-label="Explain this sentence"
+                className="rounded-full p-1 transition-colors flex items-center justify-center text-ink-faint/70 hover:text-lapis"
+              >
+                <Sparkles size={13} />
+              </button>
             </div>
           </div>
         ))}
@@ -352,8 +346,47 @@ export function TextReader({
         onClose={() => setTapped(null)}
       />
 
+      <SentenceSheet
+        sentence={tappedSentence}
+        open={tappedSentence !== null}
+        onClose={() => setTappedSentence(null)}
+      />
+
       <ReaderGuideSheet open={showGuide} onClose={() => setShowGuide(false)} />
     </motion.article>
+  );
+}
+
+function DoneScreen({
+  tapCount,
+  onNext,
+}: {
+  tapCount: number;
+  onNext: () => void;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.96 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+      className="flex flex-1 flex-col items-center justify-center py-24 text-center"
+    >
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 22, delay: 0.1 }}
+        className="flex size-16 items-center justify-center rounded-full bg-sabz-soft text-sabz"
+      >
+        <Check size={30} strokeWidth={2.5} />
+      </motion.div>
+      <h2 className="mt-6 text-[22px] font-semibold tracking-tight">Text finished</h2>
+      <p className="mt-2 text-[15px] text-ink-soft">
+        +{XP.textRead} XP{tapCount > 0 ? ` · ${tapCount} words explored` : ""}
+      </p>
+      <Button size="lg" className="mt-10" onClick={onNext}>
+        Next text
+      </Button>
+    </motion.div>
   );
 }
 

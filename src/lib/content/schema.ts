@@ -409,6 +409,20 @@ export type Level = z.infer<typeof levelSchema>;
 export type LevelsFile = z.infer<typeof levelsFileSchema>;
 
 // ---------------------------------------------------------------------------
+// Themes: content/lexicon/themes.json
+// ---------------------------------------------------------------------------
+
+export const themeSchema = z.object({
+  id: z.string().min(1),
+  emoji: z.string().min(1),
+  color: z.string().min(1),
+});
+
+export const themesFileSchema = z.array(themeSchema);
+
+export type Theme = z.infer<typeof themeSchema>;
+
+// ---------------------------------------------------------------------------
 // Texts: content/texts/seed/*.json and AI-generated (same format)
 // ---------------------------------------------------------------------------
 

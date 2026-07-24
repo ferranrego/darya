@@ -8,7 +8,7 @@ The stack is chosen so nothing is trapped. If/when the app outgrows free tiers:
   beyond `auth.uid()` in RLS policies, which are marked with comments).
 - Move: `pg_dump` → restore on Neon/Fly/RDS/self-hosted; re-run RLS or enforce
   authorization in the app layer.
-- All app data access goes through `src/lib/db/` repositories — swap the Supabase
+- All app data access goes through `src/lib/db/` repositories - swap the Supabase
   client for postgres.js/Drizzle behind the same interfaces.
 
 ## Auth (Supabase Auth → anything)
@@ -21,7 +21,7 @@ The stack is chosen so nothing is trapped. If/when the app outgrows free tiers:
 ## Content
 
 - Source of truth is `content/*.json` in git, with published JSON Schemas
-  (`content/schema/`). Any future system re-seeds from these files. No export needed —
+  (`content/schema/`). Any future system re-seeds from these files. No export needed -
   it was never locked in.
 
 ## AI providers
@@ -35,9 +35,9 @@ The stack is chosen so nothing is trapped. If/when the app outgrows free tiers:
 
 - Standard Next.js: `next build` runs on Cloudflare (OpenNext), Netlify, or a
   Node/Docker host. Vercel-specific surface is limited to `vercel.json`
-  (cron definition) — replace with any scheduler hitting the same route.
+  (cron definition) - replace with any scheduler hitting the same route.
 
 ## Push
 
-- Standard Web Push (VAPID) — subscriptions are provider-independent and stored in
+- Standard Web Push (VAPID) - subscriptions are provider-independent and stored in
   our own `push_subscriptions` table. Nothing to migrate, ever.
