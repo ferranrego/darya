@@ -3,7 +3,7 @@
  * - navigations & API reads: network-first with cache fallback
  * Push handling arrives in Phase 3 (Declarative Web Push payloads). */
 
-const VERSION = "darya-v1";
+const VERSION = "darya-v1.1";
 const STATIC_CACHE = `${VERSION}-static`;
 const PAGE_CACHE = `${VERSION}-pages`;
 
@@ -79,8 +79,8 @@ self.addEventListener("push", (event) => {
     const title = data.title || "Darya";
     const options = {
       body: data.body || "It's time for your daily review!",
-      icon: "/icons/icon-192x192.png",
-      badge: "/icons/icon-192x192.png",
+      icon: "/icons/icon-192.png",
+      badge: "/icons/icon-192.png",
       data: data.data || { url: "/" },
       vibrate: [100, 50, 100],
     };
