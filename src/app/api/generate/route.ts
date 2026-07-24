@@ -15,7 +15,7 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     theme = body?.theme;
-  } catch (e) {
+  } catch {
     // ignore
   }
 
@@ -83,10 +83,10 @@ export async function POST(req: Request) {
     });
     await insertGeneratedText(supabaseService(), doc, vocabHash(doc), theme);
     return NextResponse.json({ created: true, id: doc.id });
-  } catch (e: any) {
+  } catch (e: unknown) {
     console.error("API /generate error:", e);
     return NextResponse.json(
-      { error: e?.message || String(e) || "generation failed" },
+      { error: (e as Error)?.message || String(e) || "generation failed" },
       { status: 502 },
     );
   }

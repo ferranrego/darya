@@ -35,6 +35,7 @@ export default function OnboardingPage() {
   function startWizard() {
     if (
       typeof window !== "undefined" &&
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (window.matchMedia("(display-mode: standalone)").matches || (window.navigator as any).standalone)
     ) {
       setStep("script");
@@ -115,7 +116,7 @@ export default function OnboardingPage() {
               plus just enough new ones to grow. Tap any word to see what it means.
             </p>
             <Button size="lg" className="mt-10" onClick={startWizard}>
-              Let's begin
+              Let&apos;s begin
             </Button>
           </motion.div>
         )}

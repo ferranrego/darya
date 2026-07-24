@@ -106,7 +106,7 @@ export type ExerciseType = "cloze" | "unscramble" | "realia" | "grammar_detectiv
 export interface ExerciseRow {
   id: string;
   type: ExerciseType;
-  data: any; // Stored as jsonb, can be typed more specifically later
+  data: unknown; // Stored as jsonb, can be typed more specifically later
   lexeme_ids: string[];
   level: string;
   created_at: string;
@@ -121,7 +121,7 @@ export interface UserExerciseRow {
 
 export interface SentenceExplanationRow {
   sentence_hash: string;
-  explanation: any; // Stored as jsonb
+  explanation: unknown; // Stored as jsonb
   created_at: string;
 }
 

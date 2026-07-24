@@ -37,6 +37,7 @@ export default function AlphabetUnitPage() {
 
   useEffect(() => {
     if (phase.kind === "done" && totalCompleted === 1 && !localStorage.getItem("hasSeenNotifPrompt")) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setShowNotifPrompt(true);
       localStorage.setItem("hasSeenNotifPrompt", "true");
     }

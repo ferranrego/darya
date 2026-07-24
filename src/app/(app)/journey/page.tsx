@@ -26,7 +26,7 @@ export default function JourneyPage() {
         <div>
           <h1 className="text-[26px] font-semibold tracking-tight">Your Journey</h1>
           <p className="text-[14px] text-ink-soft">
-            See how far you've come
+            See how far you&apos;ve come
           </p>
         </div>
       </header>

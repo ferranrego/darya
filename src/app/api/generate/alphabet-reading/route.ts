@@ -17,6 +17,7 @@ export async function POST(req: Request) {
 
     const sentence = await generateReadingSentence(knownLetters);
     return NextResponse.json(sentence);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (err: any) {
     console.error("Alphabet Reading generation failed:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });

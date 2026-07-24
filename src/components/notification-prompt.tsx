@@ -2,7 +2,7 @@
 
 import { Bell } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { usePushSubscription } from "@/lib/use-push-subscription";
 

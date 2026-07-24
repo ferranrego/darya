@@ -27,7 +27,7 @@ export function useAudio() {
         const utterance = new SpeechSynthesisUtterance(text);
         const availableVoices = window.speechSynthesis.getVoices();
         
-        let selectedVoice = availableVoices.find(v => v.lang.startsWith("fa") || v.lang.startsWith("prs") || v.lang.startsWith("ar"));
+        const selectedVoice = availableVoices.find(v => v.lang.startsWith("fa") || v.lang.startsWith("prs") || v.lang.startsWith("ar"));
         
         if (selectedVoice) {
           utterance.voice = selectedVoice;

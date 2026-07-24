@@ -56,8 +56,8 @@ function RingXp({ xp, goal, dark }: { xp: number; goal: number; dark: boolean })
   const [shown, setShown] = useState(reduce ? xp : 0);
   useEffect(() => {
     if (reduce) {
-      setShown(xp);
-      return;
+      const t2 = setTimeout(() => setShown(xp), 0);
+      return () => clearTimeout(t2);
     }
     const t = setTimeout(() => setShown(xp), 260);
     return () => clearTimeout(t);

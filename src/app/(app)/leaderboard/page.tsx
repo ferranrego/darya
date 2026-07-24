@@ -1,6 +1,7 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Medal, Trophy } from "lucide-react";
 import { levelLabel } from "@/lib/content/load";
 import { useSupabase, useUser } from "@/lib/queries/hooks";

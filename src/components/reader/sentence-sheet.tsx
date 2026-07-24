@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Loader2, Sparkles, Wand2 } from "lucide-react";
+import { Loader2, Sparkles } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { explainSentence } from "@/app/actions/explain";
 import type { SentenceExplanation } from "@/lib/ai/explain";
@@ -21,12 +21,15 @@ export function SentenceSheet({
 
   useEffect(() => {
     if (!open || !sentence) {
-      setExplanation(null);
-      setError(null);
+      setTimeout(() => {
+        setExplanation(null);
+        setError(null);
+      }, 0);
       return;
     }
 
     let active = true;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsAnalyzing(true);
     setError(null);
 

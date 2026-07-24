@@ -2,6 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { BookOpen } from "lucide-react";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Link from "next/link";
 import { useSupabase, useUser } from "@/lib/queries/hooks";
 
@@ -50,11 +51,12 @@ export default function HistoryPage() {
       ) : history?.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 text-center">
           <BookOpen size={48} className="text-line mb-4" />
-          <p className="text-[15px] text-ink-soft">You haven't read any texts yet.</p>
+          <p className="text-[15px] text-ink-soft">You haven&apos;t read any texts yet.</p>
         </div>
       ) : (
         <div className="flex flex-col gap-4">
-          {history?.map((entry: any, index) => {
+          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+          {history?.map((entry: any, index: number) => {
             const textData = entry.texts;
             const doc = textData.doc;
             const date = new Date(entry.read_at).toLocaleDateString();

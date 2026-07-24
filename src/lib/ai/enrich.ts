@@ -54,7 +54,7 @@ Translate it into natural, everyday English. Keep the tone casual, as chat.
 Return ONLY JSON: {"translation": "..."}`;
 }
 
-export async function enrichChatMessage(body: string, mode: EnrichMode): Promise<any> {
+export async function enrichChatMessage(body: string, mode: EnrichMode): Promise<unknown> {
   return completeJson(buildPrompt(body, mode), {
     temperature: 0.2,
     validate: (raw) => {

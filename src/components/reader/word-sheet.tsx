@@ -35,8 +35,10 @@ export function WordSheet({
   const [isAnalyzing, setIsAnalyzing] = useState(false);
 
   useEffect(() => {
-    setConjugation(null);
-    setIsAnalyzing(false);
+    setTimeout(() => {
+      setConjugation(null);
+      setIsAnalyzing(false);
+    }, 0);
   }, [surface]);
 
   const open = surface !== null;

@@ -43,6 +43,7 @@ export async function GET(req: Request) {
     }
 
     let sent = 0;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const errors: any[] = [];
 
     await Promise.all(
@@ -63,6 +64,7 @@ export async function GET(req: Request) {
             })
           );
           sent++;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (e: any) {
           if (e.statusCode === 404 || e.statusCode === 410) {
             // Subscription has expired or is no longer valid

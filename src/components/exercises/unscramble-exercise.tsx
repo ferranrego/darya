@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Reorder, motion } from "motion/react";
+import { Reorder } from "motion/react";
 import { Check, X } from "lucide-react";
 
 interface UnscrambleExerciseProps {
@@ -21,7 +21,7 @@ export function UnscrambleExercise({
 
   const [items, setItems] = useState(() => {
     // Return items scrambled (but guarantee they aren't accidentally correct initially)
-    let scrambled = [...words].map((text, i) => ({ id: `${i}-${text}`, text })).sort(() => Math.random() - 0.5);
+    const scrambled = [...words].map((text, i) => ({ id: `${i}-${text}`, text })).sort(() => Math.random() - 0.5);
     if (scrambled.map(s => s.text).join(" ") === sentenceDari && words.length > 1) {
       scrambled.reverse();
     }
@@ -44,7 +44,7 @@ export function UnscrambleExercise({
   
   useEffect(() => {
     if (isAllCorrect && status === "idle") {
-      setStatus("correct");
+      setTimeout(() => setStatus("correct"), 0);
     }
   }, [isAllCorrect, status]);
 

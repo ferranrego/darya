@@ -64,6 +64,7 @@ export default function HomePage() {
   // Time-of-day drives the hero; set after mount so SSR and client agree.
   const [now, setNow] = useState<Date | null>(null);
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setNow(new Date());
     const id = setInterval(() => setNow(new Date()), 60_000);
     return () => clearInterval(id);

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { Loader2, Sparkles } from "lucide-react";
 import { ClozeExercise } from "./cloze-exercise";
@@ -13,7 +13,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useSupabase, useUser } from "@/lib/queries/hooks";
 import { useRouter } from "next/navigation";
 
-export function PracticeSession({ onFinish }: { onFinish: () => void }) {
+export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
   const router = useRouter();
   const db = useSupabase();
   const { data: user } = useUser();
@@ -106,8 +106,8 @@ export function PracticeSession({ onFinish }: { onFinish: () => void }) {
           <Sparkles size={28} />
         </div>
         <h2 className="text-2xl font-semibold tracking-tight">Practice Complete!</h2>
-        <p className="text-ink-soft mt-2 mb-8">You're making great progress.</p>
-        <Button size="lg" onClick={() => router.push("/")}>Return Home</Button>
+        <p className="text-ink-soft mt-2 mb-8">You&apos;re making great progress.</p>
+        <Button size="lg" onClick={() => (onFinish ? onFinish() : router.push("/"))}>Return Home</Button>
       </motion.div>
     );
   }
@@ -117,7 +117,8 @@ export function PracticeSession({ onFinish }: { onFinish: () => void }) {
   }
 
   const ex = exercises[index];
-  const data = ex.data;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const data = ex.data as any;
 
   const handleComplete = (isCorrect: boolean) => {
     recordResult.mutate({ exId: ex.id, isCorrect });

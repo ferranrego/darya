@@ -17,8 +17,8 @@ export function LevelForecastCard({ forecast }: { forecast: LevelForecast }) {
   useEffect(() => {
     if (forecast.daysToGo == null) return;
     if (reduce) {
-      setDays(forecast.daysToGo);
-      return;
+      const t2 = setTimeout(() => setDays(forecast.daysToGo!), 0);
+      return () => clearTimeout(t2);
     }
     const t = setTimeout(() => setDays(forecast.daysToGo!), 260);
     return () => clearTimeout(t);

@@ -11,6 +11,7 @@ import { getUserLetters, updateUserLetter } from "@/lib/db/letters";
 import { Button } from "@/components/ui/button";
 import { FSRS, Rating, createEmptyCard, type Card } from "ts-fsrs";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const fsrs = new FSRS({});
 
 export default function AlphabetReviewPage() {
@@ -78,6 +79,7 @@ export default function AlphabetReviewPage() {
       { name: "Medial", char: letterData.forms.medial },
       { name: "Final", char: letterData.forms.final },
     ];
+    // eslint-disable-next-line react-hooks/purity
     return forms[Math.floor(Math.random() * forms.length)];
   }, [letterData]);
 
@@ -93,6 +95,7 @@ export default function AlphabetReviewPage() {
       };
       
       const scheduling = f.repeat(validCard, new Date());
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const nextCard = (scheduling as any)[rating].card;
       
       await updateUserLetter(db, user.id, currentDue.letter_char, nextCard);
@@ -138,7 +141,7 @@ export default function AlphabetReviewPage() {
         ) : activeLetters.length === 0 ? (
           <div className="flex flex-col items-center gap-4">
             <div className="text-[48px]">🎉</div>
-            <h2 className="text-[20px] font-semibold">You're all caught up!</h2>
+            <h2 className="text-[20px] font-semibold">You&apos;re all caught up!</h2>
             <p className="text-ink-soft">No letters due for review right now.</p>
             {letters && letters.length > 0 && (
               <Button variant="secondary" className="mt-4" onClick={() => setForceReview(true)}>

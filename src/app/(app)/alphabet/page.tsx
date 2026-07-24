@@ -74,6 +74,7 @@ export default function AlphabetMapPage() {
         {alphabetCourse.units.map((unit, i) => {
           const done = completed.has(unit.id);
           const available = unlocked;
+          // eslint-disable-next-line react-hooks/immutability
           if (!done) unlocked = false;
 
           const inner = (

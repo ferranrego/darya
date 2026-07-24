@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { AreaChart, Area, Tooltip, ResponsiveContainer } from "recharts";
 
 export function VocabChart({ knownCount, learningCount, startTimestamp }: { knownCount: number; learningCount: number, startTimestamp: number }) {
   const [now] = useState(() => Date.now());
@@ -25,6 +25,7 @@ export function VocabChart({ knownCount, learningCount, startTimestamp }: { know
       });
     }
     return points;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [knownCount, learningCount, startTimestamp]);
 
   if (knownCount === 0 && learningCount === 0) return null;

@@ -31,6 +31,7 @@ export async function explainSentence(dari: string): Promise<SentenceExplanation
       .from("sentence_explanations")
       .upsert({
         sentence_hash: hash,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         explanation: explanation as any,
       });
 

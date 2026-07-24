@@ -24,6 +24,7 @@ export function MomentumStrip({
   const days = useMemo(() => {
     const byDate = new Map((history ?? []).map((r) => [r.date, r.xp]));
     return Array.from({ length: 7 }, (_, i) => {
+      // eslint-disable-next-line react-hooks/purity
       const d = new Date(Date.now() - (6 - i) * 86_400_000);
       const key = localDate(d);
       return { key, xp: byDate.get(key) ?? 0, dow: new Date(key + "T00:00:00Z").getUTCDay() };

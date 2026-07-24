@@ -78,13 +78,13 @@ export function MessageBubble({
               {open === "correction" && shown ? (
                 <div className="flex flex-col gap-2">
                   <p className="text-[16px]" dir="auto" lang="prs">
-                    {(shown as any).corrected}
+                    {(shown as { corrected: string }).corrected}
                   </p>
-                  {((shown as any).issues || []).length === 0 ? (
+                  {((shown as { issues?: unknown[] }).issues || []).length === 0 ? (
                     <p className="italic text-[13px]">Looks good! No issues found.</p>
                   ) : (
                     <ul className="list-disc pl-4 text-[13px] flex flex-col gap-1">
-                      {(shown as any).issues.map((issue: any, i: number) => (
+                      {((shown as { issues?: Array<{ before: string; after: string; whyEn: string }> }).issues ?? []).map((issue, i: number) => (
                         <li key={i}>
                           <span className="line-through opacity-70" dir="auto" lang="prs">{issue.before}</span>
                           {" → "}

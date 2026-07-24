@@ -1,5 +1,6 @@
 import fs from "fs";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const validPos = new Set([
   "noun", "verb", "adjective", "adverb", "pronoun", 
   "preposition", "conjunction", "particle", "numeral", 

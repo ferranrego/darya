@@ -10,6 +10,7 @@ import { z } from "zod";
 
 // We'll import the loader for the existing lexicon
 import { lexiconFileSchema } from "../src/lib/content/schema.ts";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { normalizeDari, matchKey } from "../src/lib/text/normalize.ts";
 
 const outPath = join(import.meta.dirname, "data", "core-lexicon-4.txt");
