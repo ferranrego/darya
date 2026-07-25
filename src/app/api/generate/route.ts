@@ -74,7 +74,7 @@ export async function POST(req: Request) {
   const ratio = profile.new_word_ratio ?? 0.05;
   const avgSentenceWords = 7;
   const expectedTokens = ((level.sentenceRange[0] + level.sentenceRange[1]) / 2) * avgSentenceWords;
-  const targetCount = Math.max(2, Math.min(8, Math.round(expectedTokens * ratio)));
+  const targetCount = Math.max(2, Math.min(15, Math.round(expectedTokens * ratio)));
   
   const candidateTargetWords = newWords.slice(0, targetCount * 3);
   const targetWords = candidateTargetWords

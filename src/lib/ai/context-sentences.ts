@@ -53,9 +53,8 @@ export async function generateContextSentences(
 
       for (const sentence of parsed.sentences) {
         try {
-          if (!sentence.dari.includes(wordDari)) {
-            throw new Error(`Missing word "${wordDari}" not in "${sentence.dari}"`);
-          }
+          // Relaxed validation: we no longer strictly require the exact infinitive form
+          // to be present in the sentence, as verbs will naturally be conjugated.
           assertKnownVocab(sentence.dari, MAX_SENTENCE_WORDS);
           good.push(sentence);
         } catch (e) {

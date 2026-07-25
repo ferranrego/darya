@@ -88,7 +88,7 @@ export function WordSheet({
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="flex items-center gap-3">
-                      <p lang="prs" className="text-[36px] leading-snug">
+                      <p lang="prs" className="text-[35px] leading-snug">
                         {entry.dari}
                       </p>
                     </div>
@@ -101,7 +101,7 @@ export function WordSheet({
                 <p className="mt-3 text-[18px] font-medium">{entry.glossEn}</p>
                 <p className="text-[13px] text-ink-faint">{entry.pos}</p>
                 <div className="mt-5 rounded-2xl bg-paper p-4">
-                  <p lang="prs" className="text-[20px] leading-loose">
+                  <p lang="prs" className="text-[19px] leading-loose">
                     {entry.exampleDari}
                   </p>
                   <p className="mt-1 text-[13px] text-ink-soft">{entry.exampleTranslit}</p>
@@ -169,7 +169,7 @@ export function WordSheet({
             ) : (
               <div>
                 <div className="flex items-center gap-3">
-                  <p lang="prs" className="text-[36px] leading-snug">
+                  <p lang="prs" className="text-[35px] leading-snug">
                     {surface}
                   </p>
                 </div>

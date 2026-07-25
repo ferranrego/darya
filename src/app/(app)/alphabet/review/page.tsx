@@ -1,9 +1,9 @@
 "use client";
 
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { ArrowLeft, Check, X } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { AnimatePresence, motion, useMotionValue, useTransform, animate } from "motion/react";
 import { alphabetCourse } from "@/lib/content/load";
 import { useSupabase, useUser } from "@/lib/queries/hooks";
@@ -31,6 +31,17 @@ export default function AlphabetReviewPage() {
   
   const [forceReview, setForceReview] = useState(false);
   const activeLetters = forceReview ? (letters || []) : dueLetters;
+
+  const invalidate = useInvalidateLearning();
+  const hasReviewed = useRef(false);
+
+  useEffect(() => {
+    return () => {
+      if (hasReviewed.current) {
+        invalidate();
+      }
+    };
+  }, [invalidate]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
@@ -71,16 +82,20 @@ export default function AlphabetReviewPage() {
   }, [currentDue]);
 
   // Randomly select a form to test
-  const formToTest = useMemo(() => {
-    if (!letterData) return null;
+  const [formToTest, setFormToTest] = useState<{name: string, char: string} | null>(null);
+
+  useEffect(() => {
+    if (!letterData) {
+      queueMicrotask(() => setFormToTest(null));
+      return;
+    }
     const forms = [
       { name: "Isolated", char: letterData.forms.isolated || letterData.char },
       { name: "Initial", char: letterData.forms.initial },
       { name: "Medial", char: letterData.forms.medial },
       { name: "Final", char: letterData.forms.final },
     ];
-    // eslint-disable-next-line react-hooks/purity
-    return forms[Math.floor(Math.random() * forms.length)];
+    queueMicrotask(() => setFormToTest(forms[Math.floor(Math.random() * forms.length)]));
   }, [letterData]);
 
   const reviewMutation = useMutation({
@@ -95,8 +110,7 @@ export default function AlphabetReviewPage() {
       };
       
       const scheduling = f.repeat(validCard, new Date());
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const nextCard = (scheduling as any)[rating].card;
+      const nextCard = (scheduling as Record<number, {card: Card}>)[rating].card;
       
       await updateUserLetter(db, user.id, currentDue.letter_char, nextCard);
     },

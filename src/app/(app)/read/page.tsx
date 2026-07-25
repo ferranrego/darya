@@ -2,7 +2,7 @@
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { BookOpen } from "lucide-react";
-import { useEffect, useMemo, useState, useRef } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { PriorWordsSheet } from "@/components/reader/prior-words-sheet";
 import { TextReader } from "@/components/reader/text-reader";
 import { Button } from "@/components/ui/button";
@@ -27,7 +27,7 @@ export default function ReadPage() {
   const { data: texts, isLoading, refetch } = useTextsForLevel(profile?.level_estimate);
   const { data: readRows, refetch: refetchRead } = useReadTexts();
   
-  const activeTextIdRef = useRef<string | null>(null);
+  const [activeTextId, setActiveTextId] = useState<string | null>(null);
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
 
@@ -96,10 +96,10 @@ export default function ReadPage() {
         
         // At least 1 new word, and not too many unknown words
         // OR it is the text we are currently reading (so it doesn't vanish while reading)
-        return (oovRate <= 0.25 && oovCount >= 1) || t.id === activeTextIdRef.current;
+        return (oovRate <= 0.25 && oovCount >= 1) || t.id === activeTextId;
       })
       .sort((a, b) => (a.source === b.source ? 0 : a.source === "seed" ? -1 : 1));
-  }, [texts, readIds, userWords]);
+  }, [texts, readIds, userWords, activeTextId]);
 
   const generate = useMutation({
     mutationFn: async () => {
@@ -123,6 +123,12 @@ export default function ReadPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [poolEmpty]);
 
+  useEffect(() => {
+    if (unread.length > 0 && unread[0].id !== activeTextId) {
+      queueMicrotask(() => setActiveTextId(unread[0].id));
+    }
+  }, [unread, activeTextId]);
+
   if (isLoading || !profile || !readRows || !userWords) {
     return <ReaderSkeleton />;
   }
@@ -135,7 +141,7 @@ export default function ReadPage() {
         </div>
         {generate.isError ? (
           <>
-            <h2 className="mt-6 text-[20px] font-semibold">Couldn&apos;t write a new text</h2>
+            <h1 className="mt-6 text-[20px] font-semibold">Couldn&apos;t write a new text</h1>
             <p className="mx-auto mt-2 max-w-xs text-[14px] text-ink-soft">
               {generate.error instanceof Error ? generate.error.message : "The AI writer is unavailable."}
             </p>
@@ -145,7 +151,7 @@ export default function ReadPage() {
           </>
         ) : (
           <>
-            <h2 className="mt-6 text-[20px] font-semibold">Writing your next text…</h2>
+            <h1 className="mt-6 text-[20px] font-semibold">Writing your next text…</h1>
             <p className="mt-2 text-[14px] text-ink-soft">
               A fresh story with just the right new words.
             </p>
@@ -156,10 +162,6 @@ export default function ReadPage() {
   }
 
   const current = unread[0];
-  if (current) {
-    activeTextIdRef.current = current.id;
-  }
-  
   return (
     <>
       <TextReader

@@ -104,6 +104,16 @@ export default function ReviewPage() {
     }
   }, [queue, due]);
 
+  // If the user navigates away mid-session or uses the back button instead of "Done",
+  // we must invalidate the cache so the homepage due counts are immediately accurate.
+  useEffect(() => {
+    return () => {
+      if (statsRef.current.totalReps > 0) {
+        invalidate();
+      }
+    };
+  }, [invalidate]);
+
   const grade = useMutation({
     mutationFn: async ({ row, g }: { row: UserWordRow; g: TwoButtonGrade }) => {
       if (!user) return { graduated: false, entryId: row.lexeme_id };

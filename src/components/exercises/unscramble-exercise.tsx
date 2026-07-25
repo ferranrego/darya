@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, X } from "lucide-react";
 
 interface UnscrambleExerciseProps {
   words: string[];
   sentenceDari: string;
+  sentenceTranslit?: string;
   sentenceEn: string;
   onComplete: (isCorrect: boolean) => void;
 }
@@ -14,6 +15,7 @@ interface UnscrambleExerciseProps {
 export function UnscrambleExercise({
   words,
   sentenceDari,
+  sentenceTranslit,
   sentenceEn,
   onComplete,
 }: UnscrambleExerciseProps) {
@@ -30,8 +32,20 @@ export function UnscrambleExercise({
 
   const handleSelectWord = (word: typeof availableWords[0]) => {
     if (status !== "idle") return;
-    setAvailableWords(prev => prev.filter(w => w.id !== word.id));
-    setSelectedWords(prev => [...prev, word]);
+    setAvailableWords(prev => {
+      const nextAvailable = prev.filter(w => w.id !== word.id);
+      setSelectedWords(prevSelected => {
+        const nextSelected = [...prevSelected, word];
+        if (nextAvailable.length === 0) {
+          const attempt = nextSelected.map(s => s.text).join(" ");
+          if (attempt.replace(/\s+/g, "") === sentenceDari.replace(/\s+/g, "")) {
+            setStatus("correct");
+          }
+        }
+        return nextSelected;
+      });
+      return nextAvailable;
+    });
   };
 
   const handleDeselectWord = (word: typeof availableWords[0]) => {
@@ -50,15 +64,6 @@ export function UnscrambleExercise({
     }
   };
 
-  // Auto-check if all words are placed and it's correct
-  useEffect(() => {
-    if (availableWords.length === 0 && status === "idle") {
-      const attempt = selectedWords.map(s => s.text).join(" ");
-      if (attempt.replace(/\s+/g, "") === sentenceDari.replace(/\s+/g, "")) {
-        setStatus("correct");
-      }
-    }
-  }, [availableWords.length, status, selectedWords, sentenceDari]);
 
   return (
     <div className="flex flex-col h-full w-full max-w-md mx-auto items-center p-4 pt-8">
@@ -111,6 +116,18 @@ export function UnscrambleExercise({
           </motion.button>
         ))}
       </motion.div>
+
+      <AnimatePresence>
+        {status === "correct" && sentenceTranslit && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            className="w-full text-center mb-4 -mt-4 text-sm text-ink-soft italic overflow-hidden"
+          >
+            {sentenceTranslit}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Word Pool */}
       <div 

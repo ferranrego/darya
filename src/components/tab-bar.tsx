@@ -28,7 +28,7 @@ export function TabBar() {
 
   useEffect(() => {
     if (typeof navigator !== "undefined" && "setAppBadge" in navigator) {
-      const nav = navigator as any;
+      const nav = navigator as Navigator & { setAppBadge?: (count: number) => Promise<void>; clearAppBadge?: () => Promise<void> };
       if (due > 0) {
         nav.setAppBadge(due).catch(() => {});
       } else if (nav.clearAppBadge) {

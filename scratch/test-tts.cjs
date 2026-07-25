@@ -1,6 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/no-require-imports
+/* eslint-disable @typescript-eslint/no-require-imports */
 const https = require('https');
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const fs = require('fs');
 
 const text = encodeURIComponent('سلام');

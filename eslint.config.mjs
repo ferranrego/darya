@@ -20,20 +20,17 @@ const eslintConfig = defineConfig([
         {
           // eslint-disable-next-line no-restricted-syntax
           selector: "Literal[value=/—/]",
-          // eslint-disable-next-line no-restricted-syntax
-          message: "Do not use em dashes (—). Use a normal dash (-) or colon (:) instead."
+          message: "Do not use em dashes. Use a normal dash (-) or colon (:) instead."
         },
         {
           // eslint-disable-next-line no-restricted-syntax
           selector: "JSXText[value=/—/]",
-          // eslint-disable-next-line no-restricted-syntax
-          message: "Do not use em dashes (—). Use a normal dash (-) or colon (:) instead."
+          message: "Do not use em dashes. Use a normal dash (-) or colon (:) instead."
         },
         {
           // eslint-disable-next-line no-restricted-syntax
           selector: "TemplateElement[value.raw=/—/]",
-          // eslint-disable-next-line no-restricted-syntax
-          message: "Do not use em dashes (—). Use a normal dash (-) or colon (:) instead."
+          message: "Do not use em dashes. Use a normal dash (-) or colon (:) instead."
         }
       ]
     }

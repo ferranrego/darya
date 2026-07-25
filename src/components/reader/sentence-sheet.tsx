@@ -88,7 +88,9 @@ export function SentenceSheet({
               </div>
             </div>
 
-            <p lang="prs" className="mb-6 text-[28px] leading-snug">
+            <p lang="prs" className="mb-6 leading-snug [text-wrap:balance]" style={{ 
+              fontSize: `clamp(20px, calc((100vw - 48px) / ${Math.max(1, sentence.length * 0.45)}), 28px)` 
+            }}>
               {sentence}
             </p>
 

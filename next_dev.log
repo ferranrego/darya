@@ -1,0 +1,25 @@
+$ next dev
+⚠ Port 3000 is in use by process 82820, using available port 3001 instead.
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.18.205:3001
+- Environments: .env.local
+✓ Ready in 341ms
+Error: EPERM: operation not permitted, open '/Users/ferran/package-lock.json'
+    at ignore-listed frames {
+  errno: -1,
+  code: 'EPERM',
+  syscall: 'open',
+  path: '/Users/ferran/package-lock.json'
+}
+⚠ turbopack.root should be absolute, using: /Users/ferran/repositories/dariapp
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          82820
+- Dir:          /Users/ferran/repositories/dariapp
+- Log:          .next/dev/logs/next-development.log
+
+Run kill 82820 to stop it.
+[?25h
+[ELIFECYCLE] Command failed with exit code 1.

@@ -18,12 +18,28 @@ export interface HeroCta {
 
 /** Per-phase tonal wash + surface treatment. Night is the one dark surface. */
 function surfaceFor(phase: DayPhase): { dark: boolean; layer: string; base: string } {
-  return {
-    dark: true,
-    base: "linear-gradient(160deg, #223a67 0%, #1a2e56 55%, #142343 100%)",
-    layer:
-      "radial-gradient(90% 70% at 82% -5%, rgba(240,244,251,0.14), transparent 60%), radial-gradient(70% 60% at 8% 108%, rgba(217,160,54,0.12), transparent 62%)",
-  };
+  if (phase === "night") {
+    return {
+      dark: true,
+      base: "linear-gradient(160deg, #223a67 0%, #1a2e56 55%, #142343 100%)",
+      layer:
+        "radial-gradient(90% 70% at 82% -5%, rgba(240,244,251,0.14), transparent 60%), radial-gradient(70% 60% at 8% 108%, rgba(217,160,54,0.12), transparent 62%)",
+    };
+  } else if (phase === "morning" || phase === "evening") {
+    return {
+      dark: false,
+      base: "var(--paper)",
+      layer:
+        "radial-gradient(120% 120% at 50% 120%, rgba(217,160,54,0.15), transparent 70%)",
+    };
+  } else {
+    return {
+      dark: false,
+      base: "var(--paper)",
+      layer:
+        "radial-gradient(100% 100% at 50% 100%, rgba(43,76,140,0.08), transparent 70%)",
+    };
+  }
 }
 
 /** XP numeral that counts up from zero once on mount (NumberFlow). */

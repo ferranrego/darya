@@ -34,6 +34,7 @@ const lateef = Lateef({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://darya-app.vercel.app"),
   title: "Darya · Learn Dari",
   description:
     "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
@@ -43,6 +44,28 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
     title: "Darya",
+  },
+  openGraph: {
+    title: "Darya · Learn Dari",
+    description: "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
+    url: "https://darya-app.vercel.app", 
+    siteName: "Darya",
+    images: [
+      {
+        url: "/icons/apple-touch-icon.png", 
+        width: 180,
+        height: 180,
+        alt: "Darya Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Darya · Learn Dari",
+    description: "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
+    images: ["/icons/apple-touch-icon.png"],
   },
 };
 

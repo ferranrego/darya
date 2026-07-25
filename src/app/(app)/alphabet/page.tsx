@@ -9,9 +9,6 @@ export default function AlphabetMapPage() {
   const { data: progress } = useAlphabetProgress();
   const completed = new Set(progress?.filter((p) => p.completed_at).map((p) => p.unit_id));
 
-  // A unit unlocks when every previous unit is complete.
-  let unlocked = true;
-  
   // Calculate known letters for the Reading Practice
   const knownLetters = new Set<string>();
   alphabetCourse.units.forEach(unit => {
@@ -38,7 +35,7 @@ export default function AlphabetMapPage() {
           className="flex-1 flex items-center justify-between rounded-2xl bg-lapis-soft/20 border border-lapis/20 p-4 transition-all hover:-translate-y-0.5 hover:shadow-sm"
         >
           <div>
-            <h3 className="text-[16px] font-bold text-lapis">Review Letters</h3>
+            <h2 className="text-[16px] font-bold text-lapis">Review Letters</h2>
             <p className="text-[13px] text-lapis/70">Keep your memory fresh</p>
           </div>
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-lapis text-white">
@@ -52,7 +49,7 @@ export default function AlphabetMapPage() {
             className="flex-1 flex items-center justify-between rounded-2xl bg-sabz-soft/20 border border-sabz/20 p-4 transition-all hover:-translate-y-0.5 hover:shadow-sm"
           >
             <div>
-              <h3 className="text-[16px] font-bold text-sabz">Assess Reading</h3>
+              <h2 className="text-[16px] font-bold text-sabz">Assess Reading</h2>
               <p className="text-[13px] text-sabz/70">Practice with known letters</p>
             </div>
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sabz text-white">
@@ -62,7 +59,7 @@ export default function AlphabetMapPage() {
         ) : (
            <div className="flex-1 flex items-center justify-between rounded-2xl bg-surface/50 border border-line p-4 opacity-60">
             <div>
-              <h3 className="text-[16px] font-bold text-ink-soft">Assess Reading</h3>
+              <h2 className="text-[16px] font-bold text-ink-soft">Assess Reading</h2>
               <p className="text-[13px] text-ink-faint">Unlock by learning more letters</p>
             </div>
             <Lock size={20} className="text-ink-faint mr-2" />
@@ -73,9 +70,7 @@ export default function AlphabetMapPage() {
       <ol className="flex flex-col gap-3">
         {alphabetCourse.units.map((unit, i) => {
           const done = completed.has(unit.id);
-          const available = unlocked;
-          // eslint-disable-next-line react-hooks/immutability
-          if (!done) unlocked = false;
+          const available = i === 0 || alphabetCourse.units.slice(0, i).every((u) => completed.has(u.id));
 
           const inner = (
             <div

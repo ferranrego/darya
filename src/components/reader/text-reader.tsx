@@ -167,11 +167,19 @@ export function TextReader({
     return <DoneScreen tapCount={tapCount} onNext={onFinished} />;
   }
 
+  // A smarter dynamic font calculation:
+  // We want sentences to ideally fit on a single line on mobile (if they are short).
+  // Container width is ~100vw - 48px. An Arabic character takes ~0.45em width.
+  // fontSize * maxDariLength * 0.45 = containerWidth => fontSize = containerWidth / (maxDariLength * 0.45)
+  // We clamp it between 22px (for readability on long B2/C1 texts) and 32px.
+  const maxDariLength = Math.max(...doc.sentences.map(s => s.dari.length));
+  const optimalFontSize = `clamp(22px, calc((100vw - 48px) / ${Math.max(1, maxDariLength * 0.45)}), 32px)`;
+
   return (
     <article className="flex flex-col relative pb-32">
       {/* Pure Editorial Header */}
       <header className="mb-12 mt-6 flex flex-col items-center text-center">
-        <h1 lang="prs" className="text-[34px] font-bold leading-[1.4] text-ink max-w-[280px] mx-auto">
+        <h1 lang="prs" className="text-[33px] font-bold leading-[1.4] text-ink max-w-[280px] mx-auto">
           {doc.titleDari}
         </h1>
         <div className="mt-4 flex flex-col items-center gap-1.5">
@@ -201,12 +209,12 @@ export function TextReader({
               className="flex flex-col relative"
             >
               <div className="relative">
-                <p lang="prs" className="text-[30px] leading-[1.85]">
+                <p lang="prs" className="leading-[1.85] [text-wrap:balance]" style={{ fontSize: optimalFontSize }}>
                   {(() => {
                     const lastWordIdx = segments[i].map(s => s.kind).lastIndexOf("word");
                     const splitIdx = lastWordIdx >= 0 ? lastWordIdx : 0;
                     
-                    const renderSeg = (seg: any, j: number) => (
+                    const renderSeg = (seg: typeof segments[0][0], j: number) => (
                       seg.kind === "text" ? (
                         <span key={j}>{seg.text}</span>
                       ) : (
@@ -537,15 +545,18 @@ function WordSpan({
   else if (pos === "numeral") posCls = "text-indigo-500";
 
   return (
-    <button
+    <motion.button
       type="button"
+      layout="position"
       onClick={() => {
         hapticTap();
         onTap();
       }}
-      className={`-mx-[2px] inline cursor-pointer px-[2px] py-1 transition-all duration-150 hover:bg-line/20 active:bg-line/40 active:scale-[0.97] rounded ${statusCls} ${posCls}`}
+      whileTap={{ scale: 0.95 }}
+      transition={{ layout: { type: "spring", stiffness: 400, damping: 30 } }}
+      className={`-mx-[2px] inline cursor-pointer px-[2px] py-1 transition-colors hover:bg-line/20 active:bg-line/40 rounded ${statusCls} ${posCls}`}
     >
       {surface}
-    </button>
+    </motion.button>
   );
 }

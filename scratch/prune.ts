@@ -1,4 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
+
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const secret = process.env.SUPABASE_SECRET_KEY;
@@ -7,7 +7,6 @@ if (!url || !secret) {
   throw new Error("Missing NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SECRET_KEY");
 }
 
-const db = createClient(url, secret, { auth: { persistSession: false } });
 
 async function run() {
   const idsToDelete = [
@@ -20,7 +19,7 @@ async function run() {
     const res = await fetch(`${url}/auth/v1/admin/users/${id}`, {
       method: "DELETE",
       headers: {
-        "apikey": secret,
+        "apikey": secret as string,
         "Authorization": `Bearer ${secret}`
       }
     });

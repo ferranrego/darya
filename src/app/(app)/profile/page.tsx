@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BarChart3, BookOpen, Flame, Library, LogOut, Trophy, Bell, Settings2, BookType, Hash } from "lucide-react";
+import { BarChart3, BookOpen, Flame, Library, LogOut, Trophy, Bell, Settings2, BookType, Hash, Skull } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { motion, useReducedMotion } from "motion/react";
 import { levelLabel } from "@/lib/content/load";
@@ -20,6 +20,17 @@ const RATIOS = [
   { value: 0.02, label: "Gentle", detail: "~2% new words" },
   { value: 0.05, label: "Standard", detail: "~5% new words" },
   { value: 0.1, label: "Challenge", detail: "~10% new words" },
+  { 
+    value: 0.25, 
+    label: "Extreme", 
+    danger: true, 
+    detail: (
+      <span className="flex items-center gap-1.5 font-bold text-danger">
+        <Skull size={14} className="animate-bounce" />
+        ~25% new words. Enter the Danger Zone!
+      </span>
+    )
+  },
 ];
 
 const GOALS = [

@@ -1,12 +1,4 @@
 import fs from "fs";
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const validPos = new Set([
-  "noun", "verb", "adjective", "adverb", "pronoun", 
-  "preposition", "conjunction", "particle", "numeral", 
-  "interjection", "determiner", "phrase"
-]);
-
 const filePath = process.argv[2] || "scripts/data/core-lexicon-6.txt";
 const content = fs.readFileSync(filePath, "utf8");
 const lines = content.split("\n");

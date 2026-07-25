@@ -6,6 +6,7 @@ import { Check, X } from "lucide-react";
 
 interface ClozeExerciseProps {
   sentenceDari: string;
+  sentenceTranslit?: string;
   sentenceEn: string;
   missingWord: string;
   missingTranslit?: string;
@@ -16,6 +17,7 @@ interface ClozeExerciseProps {
 
 export function ClozeExercise({
   sentenceDari,
+  sentenceTranslit,
   sentenceEn,
   missingWord,
   missingTranslit,
@@ -102,7 +104,10 @@ export function ClozeExercise({
               animate={{ opacity: 1, height: "auto" }}
               className="overflow-hidden text-center"
             >
-              <p className="text-sm text-ink-soft mt-4">{sentenceEn}</p>
+              {sentenceTranslit && (
+                <p className="text-sm text-ink-soft mt-4 italic">{sentenceTranslit}</p>
+              )}
+              <p className={`text-sm text-ink-soft ${sentenceTranslit ? 'mt-1' : 'mt-4'}`}>{sentenceEn}</p>
               <p className="text-sm text-sabz font-medium mt-1">
                 <span className="font-dari">{missingWord}</span>
                 {missingTranslit && ` (${missingTranslit})`}

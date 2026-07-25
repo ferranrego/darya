@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "motion/react";
-import { useId } from "react";
+import React, { useId } from "react";
 import { hapticTap } from "@/lib/util/haptics";
 
 export interface SleekSelectorOption<T> {
   value: T;
   label: string;
-  detail?: string;
+  detail?: React.ReactNode;
+  danger?: boolean;
 }
 
 interface SleekSelectorProps<T> {
@@ -52,13 +53,19 @@ export function SleekSelector<T extends string | number>({
               {isActive && (
                 <motion.div
                   layoutId={layoutId}
-                  className="absolute inset-0 z-0 rounded-[14px] bg-white shadow-[0_1px_3px_rgba(0,0,0,0.1)] ring-1 ring-black/[0.04]"
+                  className={`absolute inset-0 z-0 rounded-[14px] shadow-[0_1px_3px_rgba(0,0,0,0.1)] ring-1 ${
+                    option.danger 
+                      ? "bg-danger/10 ring-danger/20" 
+                      : "bg-white ring-black/[0.04]"
+                  }`}
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}
               <span
                 className={`relative z-10 text-[14px] transition-colors duration-200 ${
-                  isActive ? "font-semibold text-ink" : "font-medium text-ink-soft hover:text-ink/80"
+                  isActive 
+                    ? option.danger ? "font-semibold text-danger" : "font-semibold text-ink" 
+                    : "font-medium text-ink-soft hover:text-ink/80"
                 }`}
               >
                 {option.label}
