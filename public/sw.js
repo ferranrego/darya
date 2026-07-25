@@ -3,7 +3,7 @@
  * - navigations & API reads: network-first with cache fallback
  * Push handling arrives in Phase 3 (Declarative Web Push payloads). */
 
-const VERSION = "darya-v1.1";
+const VERSION = "darya-v1.2";
 const STATIC_CACHE = `${VERSION}-static`;
 const PAGE_CACHE = `${VERSION}-pages`;
 
@@ -28,6 +28,11 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  // Bypass cache completely during local development to avoid stale Turbopack chunks
+  if (self.location.hostname === "localhost" || self.location.hostname === "127.0.0.1") {
+    return; // Fall through to standard network fetch
+  }
 
   // Immutable build assets, fonts, icons.
   if (

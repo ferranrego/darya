@@ -24,6 +24,7 @@ import {
 import { PracticeSession } from "@/components/exercises/practice-session";
 import { useQuery } from "@tanstack/react-query";
 import { getContextSentences } from "@/app/actions/context-sentences";
+import { hapticFeedback } from "@/lib/util/haptics";
 
 const SESSION_CAP = 40;
 
@@ -139,9 +140,12 @@ export default function ReviewPage() {
 
     // Track forgot words
     if (g === "forgot") {
+      hapticFeedback("warning");
       statsRef.current.forgotIds.add(row.lexeme_id);
       // Re-queue at the end so the user must see it again this session
       setQueue((q) => (q ? [...q, row] : [row]));
+    } else {
+      hapticFeedback("success");
     }
 
     grade.mutate({ row, g });

@@ -1,29 +1,39 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BarChart3, BookOpen, Flame, Library, LogOut, Trophy } from "lucide-react";
+import { BarChart3, BookOpen, Flame, Library, LogOut, Trophy, Bell, Settings2, BookType, Hash } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { ActionCard } from "@/components/ui/action-card";
+import { motion, useReducedMotion } from "motion/react";
 import { levelLabel } from "@/lib/content/load";
 import { updateProfile } from "@/lib/db/profiles";
 import { useProfile, useSignOut, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
-import { useSettingsStore } from "@/lib/settings-store";
+import { useSettingsStore, type ReadingFont } from "@/lib/settings-store";
 import { usePushSubscription } from "@/lib/use-push-subscription";
+import { ProfileHero } from "@/components/profile/profile-hero";
+import { SettingsGroup, SettingsItem } from "@/components/profile/settings-group";
+import { SleekSelector } from "@/components/profile/sleek-selector";
+import { FontCarousel } from "@/components/profile/font-carousel";
+import { ToggleSwitch } from "@/components/profile/toggle-switch";
+import { hapticTap } from "@/lib/util/haptics";
 
 const RATIOS = [
   { value: 0.02, label: "Gentle", detail: "~2% new words" },
   { value: 0.05, label: "Standard", detail: "~5% new words" },
   { value: 0.1, label: "Challenge", detail: "~10% new words" },
-] as const;
+];
 
-const GOALS = [15, 30, 60] as const;
+const GOALS = [
+  { value: 15, label: "15 XP" },
+  { value: 30, label: "30 XP" },
+  { value: 60, label: "60 XP" },
+];
 
-const FONTS = [
-  { id: "vazirmatn", label: "Vazirmatn", desc: "Modern UI" },
-  { id: "scheherazade", label: "Scheherazade", desc: "Traditional Naskh" },
-  { id: "amiri", label: "Amiri", desc: "Classic Serif" },
-  { id: "lateef", label: "Lateef", desc: "Elegant Naskh" },
-] as const;
+const FONTS: { value: ReadingFont; label: string; desc: string; dariPreview?: boolean }[] = [
+  { value: "vazirmatn", label: "Vazirmatn", desc: "Modern UI", dariPreview: true },
+  { value: "scheherazade", label: "Scheherazade", desc: "Traditional", dariPreview: true },
+  { value: "amiri", label: "Amiri", desc: "Classic Serif", dariPreview: true },
+  { value: "lateef", label: "Lateef", desc: "Elegant Naskh", dariPreview: true },
+];
 
 export default function ProfilePage() {
   const db = useSupabase();
@@ -35,6 +45,7 @@ export default function ProfilePage() {
   const signOut = useSignOut();
   const { readingFont, setReadingFont } = useSettingsStore();
   const { isSupported, isSubscribed, isSubscribing, subscribe } = usePushSubscription();
+  const reduce = useReducedMotion();
 
   const patch = useMutation({
     mutationFn: async (p: {
@@ -53,204 +64,178 @@ export default function ProfilePage() {
 
   if (!profile) return null;
 
+  const stagger = (delay: number) =>
+    reduce
+      ? {}
+      : {
+          initial: { opacity: 0, y: 15 },
+          animate: { opacity: 1, y: 0 },
+          transition: { type: "spring" as const, stiffness: 260, damping: 26, delay },
+        };
+
   return (
-    <div className="flex flex-col gap-8">
-      <header className="pt-2">
-        <h1 className="text-[26px] font-semibold tracking-tight">{profile.display_name}</h1>
-        <p className="mt-1 text-[14px] text-ink-soft">
-          {levelLabel(profile.level_estimate)} · {knownCount} words known · {profile.xp} XP
-        </p>
-      </header>
+    <div className="flex flex-col gap-6 pb-8">
+      <ProfileHero 
+        displayName={profile.display_name || "Learner"}
+        levelText={levelLabel(profile.level_estimate)}
+        knownCount={knownCount}
+        xp={profile.xp}
+        streakCurrent={profile.streak_current}
+        streakBest={profile.streak_best}
+      />
 
-      <section className="grid grid-cols-2 gap-3">
-        <div className="flex items-center gap-3 rounded-2xl border border-line bg-surface p-4">
-          <Flame size={20} className="text-saffron" />
-          <div>
-            <p className="text-[20px] font-semibold leading-tight">{profile.streak_current}</p>
-            <p className="text-[12px] text-ink-soft">day streak</p>
+
+
+      <motion.section {...stagger(0.15)}>
+        <SettingsGroup title="Activity">
+          <SettingsItem
+            href="/words"
+            icon={<Library size={18} />}
+            iconBgColor="bg-lapis-soft"
+            iconColor="text-lapis"
+            title="My Words"
+            subtitle={`${knownCount} known · browse by theme`}
+          />
+          <SettingsItem
+            href="/profile/history"
+            icon={<BookOpen size={18} />}
+            iconBgColor="bg-saffron-soft"
+            iconColor="text-saffron"
+            title="Reading History"
+            subtitle="Revisit texts you've read"
+          />
+          <SettingsItem
+            href="/leaderboard"
+            icon={<Trophy size={18} />}
+            iconBgColor="bg-[#e4efe8]" // sabz-soft
+            iconColor="text-[#3e7c59]" // sabz
+            title="Leaderboard"
+            subtitle="Top learners by total XP"
+          />
+          <SettingsItem
+            href="/stats"
+            icon={<BarChart3 size={18} />}
+            iconBgColor="bg-line/50"
+            iconColor="text-ink-soft"
+            title="Detailed Stats"
+            subtitle="Progress over time"
+          />
+        </SettingsGroup>
+      </motion.section>
+
+      <motion.section {...stagger(0.2)}>
+        <SettingsGroup title="Preferences">
+          <div className="flex flex-col gap-3 px-4 py-4">
+            <div>
+              <div className="mb-2 flex items-center gap-2">
+                <Hash size={16} className="text-lapis" />
+                <span className="text-[15px] font-medium text-ink">New words per text</span>
+              </div>
+              <SleekSelector
+                options={RATIOS}
+                value={profile.new_word_ratio || 0.05}
+                onChange={(val) => patch.mutate({ new_word_ratio: val })}
+              />
+            </div>
           </div>
-        </div>
-        <div className="flex items-center gap-3 rounded-2xl border border-line bg-surface p-4">
-          <Trophy size={20} className="text-lapis" />
-          <div>
-            <p className="text-[20px] font-semibold leading-tight">{profile.streak_best}</p>
-            <p className="text-[12px] text-ink-soft">best streak</p>
+          
+          <div className="flex flex-col gap-3 border-t border-line/60 px-4 py-4">
+            <div>
+              <div className="mb-2 flex items-center gap-2">
+                <Settings2 size={16} className="text-saffron" />
+                <span className="text-[15px] font-medium text-ink">Daily goal</span>
+              </div>
+              <SleekSelector
+                options={GOALS}
+                value={profile.daily_goal || 30}
+                onChange={(val) => patch.mutate({ daily_goal: val })}
+              />
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section className="flex flex-col gap-3">
-        <ActionCard
-          href="/words"
-          icon={<Library size={20} />}
-          title="My words"
-          subtitle={`${knownCount} known · browse by theme`}
-        />
-        <ActionCard
-          href="/profile/history"
-          icon={<BookOpen size={20} />}
-          title="Reading History"
-          subtitle="Revisit texts you've read"
-        />
-        <ActionCard
-          href="/leaderboard"
-          icon={<Trophy size={20} />}
-          title="Leaderboard"
-          subtitle="Top learners by total XP"
-        />
-        <ActionCard
-          href="/stats"
-          icon={<BarChart3 size={20} />}
-          title="Detailed stats"
-          subtitle="Progress over time"
-        />
-      </section>
-
-      <section>
-        <h2 className="text-[15px] font-semibold">New words per text</h2>
-        <p className="mt-0.5 text-[13px] text-ink-soft">
-          How much unknown vocabulary generated texts should contain.
-        </p>
-        <div className="mt-3 grid grid-cols-3 gap-2">
-          {RATIOS.map((r) => {
-            const active = Math.abs(profile.new_word_ratio - r.value) < 0.005;
-            return (
-              <button
-                key={r.value}
-                type="button"
-                onClick={() => patch.mutate({ new_word_ratio: r.value })}
-                aria-pressed={active}
-                className={`rounded-2xl border px-3 py-3 text-center transition-all duration-200 ${
-                  active ? "border-lapis bg-lapis-soft text-lapis" : "border-line bg-surface hover:border-ink-faint"
-                }`}
-              >
-                <p className="text-[14px] font-medium">{r.label}</p>
-                <p className={`text-[11px] ${active ? "text-lapis/70" : "text-ink-faint"}`}>{r.detail}</p>
-              </button>
-            );
-          })}
-        </div>
-      </section>
-
-      <section>
-        <h2 className="text-[15px] font-semibold">Daily goal</h2>
-        <div className="mt-3 grid grid-cols-3 gap-2">
-          {GOALS.map((g) => {
-            const active = profile.daily_goal === g;
-            return (
-              <button
-                key={g}
-                type="button"
-                onClick={() => patch.mutate({ daily_goal: g })}
-                aria-pressed={active}
-                className={`rounded-2xl border px-3 py-3 text-center transition-all duration-200 ${
-                  active ? "border-lapis bg-lapis-soft text-lapis" : "border-line bg-surface hover:border-ink-faint"
-                }`}
-              >
-                <p className="text-[14px] font-medium">{g} XP</p>
-              </button>
-            );
-          })}
-        </div>
-      </section>
-
-      <section>
-        <h2 className="text-[15px] font-semibold">Reading Font</h2>
-        <p className="mt-0.5 text-[13px] text-ink-soft">
-          Choose the font for reading Dari texts.
-        </p>
-        <div className="mt-3 grid grid-cols-2 gap-2">
-          {FONTS.map((font) => {
-            const active = readingFont === font.id;
-            return (
-              <button
-                key={font.id}
-                type="button"
-                onClick={() => setReadingFont(font.id)}
-                aria-pressed={active}
-                className={`flex flex-col items-center justify-center rounded-2xl border px-3 py-3 text-center transition-all duration-200 ${
-                  active ? "border-lapis bg-lapis-soft text-lapis" : "border-line bg-surface hover:border-ink-faint"
-                }`}
-              >
-                <p className="text-[14px] font-medium">{font.label}</p>
-                <p className={`text-[11px] ${active ? "text-lapis/70" : "text-ink-faint"}`}>{font.desc}</p>
-                <p className={`mt-2 text-[26px] font-${font.id}`} lang="prs" dir="rtl">زبان دری</p>
-              </button>
-            );
-          })}
-        </div>
-      </section>
+          <div className="flex flex-col gap-3 border-t border-line/60 px-4 py-4">
+            <div>
+              <div className="mb-2 flex items-center gap-2">
+                <BookType size={16} className="text-[#3e7c59]" />
+                <span className="text-[15px] font-medium text-ink">Reading Font</span>
+              </div>
+              <p className="mb-3 text-[13px] text-ink-soft">Choose the font for reading Dari texts.</p>
+              <FontCarousel
+                options={FONTS}
+                value={readingFont || "vazirmatn"}
+                onChange={(val) => setReadingFont(val)}
+              />
+            </div>
+          </div>
+        </SettingsGroup>
+      </motion.section>
 
       {isSupported && (
-        <section>
-          <h2 className="text-[15px] font-semibold">Notifications</h2>
-          <p className="mt-0.5 text-[13px] text-ink-soft">
-            Get daily streak reminders and updates.
-          </p>
-          <div className="mt-3">
-            <button
-              type="button"
-              onClick={subscribe}
-              disabled={isSubscribed || isSubscribing}
-              className={`rounded-2xl border px-4 py-3 text-center transition-all duration-200 w-full ${
-                isSubscribed 
-                  ? "border-sabz bg-sabz-soft text-sabz cursor-default" 
-                  : "border-line bg-surface hover:border-lapis text-lapis"
-              } ${isSubscribing ? "opacity-50" : ""}`}
-            >
-              <p className="text-[14px] font-medium">
-                {isSubscribed ? "Subscribed to Notifications" : isSubscribing ? "Subscribing..." : "Enable Notifications"}
-              </p>
-            </button>
-          </div>
-
-          {isSubscribed && (
-            <div className="mt-3 flex flex-col gap-2">
-              <label className="flex cursor-pointer items-center justify-between gap-4 rounded-2xl border border-line bg-surface px-4 py-3">
-                <span>
-                  <span className="block text-[14px] font-medium">Chat messages</span>
-                  <span className="block text-[13px] text-ink-soft">
-                    Tell me when someone writes in the chat room
-                  </span>
-                </span>
-                <input
-                  type="checkbox"
-                  checked={profile.chat_notifications}
-                  onChange={(e) => patch.mutate({ chat_notifications: e.target.checked })}
-                  className="h-5 w-5 shrink-0 accent-lapis"
+        <motion.section {...stagger(0.25)}>
+          <SettingsGroup title="Notifications" footer="Get daily streak reminders and updates.">
+            {!isSubscribed ? (
+              <SettingsItem
+                onClick={() => {
+                  hapticTap();
+                  subscribe();
+                }}
+                icon={<Bell size={18} />}
+                iconBgColor="bg-surface"
+                iconColor="text-lapis"
+                title={isSubscribing ? "Subscribing..." : "Enable Notifications"}
+                subtitle="Stay on top of your learning"
+              />
+            ) : (
+              <>
+                <SettingsItem
+                  icon={<Bell size={18} />}
+                  iconBgColor="bg-lapis-soft"
+                  iconColor="text-lapis"
+                  title="Chat messages"
+                  subtitle="When someone writes in chat"
+                  rightElement={
+                    <ToggleSwitch
+                      checked={!!profile.chat_notifications}
+                      onChange={(checked) => patch.mutate({ chat_notifications: checked })}
+                    />
+                  }
                 />
-              </label>
-              <label className="flex cursor-pointer items-center justify-between gap-4 rounded-2xl border border-line bg-surface px-4 py-3">
-                <span>
-                  <span className="block text-[14px] font-medium">Daily reminders</span>
-                  <span className="block text-[13px] text-ink-soft">
-                    Remind me to catch up with my progress
-                  </span>
-                </span>
-                <input
-                  type="checkbox"
-                  checked={profile.reminder_notifications}
-                  onChange={(e) => patch.mutate({ reminder_notifications: e.target.checked })}
-                  className="h-5 w-5 shrink-0 accent-lapis"
+                <SettingsItem
+                  icon={<Flame size={18} />}
+                  iconBgColor="bg-saffron-soft"
+                  iconColor="text-saffron"
+                  title="Daily reminders"
+                  subtitle="Remind me to catch up"
+                  rightElement={
+                    <ToggleSwitch
+                      checked={!!profile.reminder_notifications}
+                      onChange={(checked) => patch.mutate({ reminder_notifications: checked })}
+                    />
+                  }
                 />
-              </label>
-            </div>
-          )}
-        </section>
+              </>
+            )}
+          </SettingsGroup>
+        </motion.section>
       )}
 
-      <button
-        type="button"
-        onClick={async () => {
-          await signOut.mutateAsync();
-          router.push("/welcome");
-          router.refresh();
-        }}
-        className="flex items-center gap-2 self-start text-[14px] text-ink-soft transition-colors hover:text-danger"
-      >
-        <LogOut size={16} />
-        Sign out
-      </button>
+      <motion.section {...stagger(0.3)}>
+        <SettingsGroup>
+          <SettingsItem
+            onClick={async () => {
+              hapticTap();
+              await signOut.mutateAsync();
+              router.push("/welcome");
+              router.refresh();
+            }}
+            icon={<LogOut size={18} />}
+            iconBgColor="bg-danger/10"
+            iconColor="text-danger"
+            title="Sign out"
+            isDestructive={true}
+          />
+        </SettingsGroup>
+      </motion.section>
     </div>
   );
 }

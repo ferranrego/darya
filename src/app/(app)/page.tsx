@@ -3,7 +3,7 @@
 import { Blocks, BookOpen, CircleHelp, Flame, Map, RotateCcw, SpellCheck, BarChart2, Brain } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { HomeGuideSheet } from "@/components/home/home-guide-sheet";
 import { LevelForecastCard } from "@/components/home/level-forecast-card";
 import { MomentumStrip } from "@/components/home/momentum-strip";
@@ -33,6 +33,7 @@ import { levelForecast } from "@/lib/util/level-forecast";
 import { timeOfDay, type TimeOfDay } from "@/lib/util/time-of-day";
 import type { PonchaPose } from "@/components/poncha";
 import { useQuery } from "@tanstack/react-query";
+import { hapticFeedback } from "@/lib/util/haptics";
 
 function useTodayXp() {
   const db = useSupabase();
@@ -98,6 +99,15 @@ export default function HomePage() {
   const goalMet = (profile?.daily_goal ?? 30) > 0 && todayXp >= (profile?.daily_goal ?? 30);
   const streakAtRisk = (profile?.streak_current ?? 0) > 0 && todayXp === 0;
 
+  const prevTodayXp = useRef(todayXp);
+  useEffect(() => {
+    const prevGoalMet = (profile?.daily_goal ?? 30) > 0 && prevTodayXp.current >= (profile?.daily_goal ?? 30);
+    if (goalMet && !prevGoalMet) {
+      hapticFeedback("success");
+    }
+    prevTodayXp.current = todayXp;
+  }, [goalMet, todayXp, profile?.daily_goal]);
+
   // The single next best action → hero CTA. SRS-first: after the alphabet
   // gate, due reviews take priority, then grammar, then reading.
   const grammarHint = grammarComplete
@@ -157,8 +167,8 @@ export default function HomePage() {
     <div className="flex flex-col gap-6">
       <header className="flex items-start justify-between pt-1">
         <div>
-          <p className="text-[13px] text-ink-soft">
-            {new Date().toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" })}
+          <p className="text-[13px] text-ink-soft h-5">
+            {now ? now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) : ""}
           </p>
           <h1 className="mt-1 text-[26px] font-semibold tracking-tight">
             {tod.greeting}, {firstName}

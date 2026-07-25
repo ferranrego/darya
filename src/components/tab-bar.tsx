@@ -4,7 +4,9 @@ import { BookOpen, Home, MessageCircle, RotateCcw, User } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 import { useDueCount } from "@/lib/queries/hooks";
+import { hapticFeedback } from "@/lib/util/haptics";
 
 const tabs = [
   { href: "/", label: "Home", icon: Home },
@@ -24,6 +26,17 @@ export function TabBar() {
   const due = useDueCount();
   const reduced = useReducedMotion();
 
+  useEffect(() => {
+    if (typeof navigator !== "undefined" && "setAppBadge" in navigator) {
+      const nav = navigator as any;
+      if (due > 0) {
+        nav.setAppBadge(due).catch(() => {});
+      } else if (nav.clearAppBadge) {
+        nav.clearAppBadge().catch(() => {});
+      }
+    }
+  }, [due]);
+
   return (
     <nav
       className="absolute bottom-0 inset-x-0 z-40 w-full pb-[max(env(safe-area-inset-bottom),12px)] pointer-events-none [transform:translateZ(0)] [will-change:transform] [backface-visibility:hidden]"
@@ -41,7 +54,7 @@ export function TabBar() {
                 aria-current={active ? "page" : undefined}
                 aria-label={badge ? `${label}, ${badge} due` : label}
                 onClick={(e) => {
-                  navigator.vibrate?.(8);
+                  hapticFeedback("light");
                   // Repeat-tap on the current tab scrolls to top instead of navigating.
                   if (active) {
                     e.preventDefault();

@@ -12,9 +12,11 @@ export const maxDuration = 60;
  */
 export async function POST(req: Request) {
   let theme: string | undefined = undefined;
+  let force: boolean = false;
   try {
     const body = await req.json();
     theme = body?.theme;
+    force = body?.force === true;
   } catch {
     // ignore
   }
@@ -44,14 +46,16 @@ export async function POST(req: Request) {
   const { data: pool } = await db.from("texts").select("id, theme").eq("level", level.id);
   const unread = (pool ?? []).filter((t) => !readIds.has(t.id));
   
-  if (theme) {
-    const unreadThemed = unread.filter((t) => t.theme === theme);
-    if (unreadThemed.length > 0) {
-      return NextResponse.json({ created: false, unread: unreadThemed.length });
-    }
-  } else {
-    if (unread.length > 0) {
-      return NextResponse.json({ created: false, unread: unread.length });
+  if (!force) {
+    if (theme) {
+      const unreadThemed = unread.filter((t) => t.theme === theme);
+      if (unreadThemed.length > 0) {
+        return NextResponse.json({ created: false, unread: unreadThemed.length });
+      }
+    } else {
+      if (unread.length > 0) {
+        return NextResponse.json({ created: false, unread: unread.length });
+      }
     }
   }
 
@@ -71,7 +75,11 @@ export async function POST(req: Request) {
   const avgSentenceWords = 7;
   const expectedTokens = ((level.sentenceRange[0] + level.sentenceRange[1]) / 2) * avgSentenceWords;
   const targetCount = Math.max(2, Math.min(8, Math.round(expectedTokens * ratio)));
-  const targetWords = newWords.slice(0, targetCount);
+  
+  const candidateTargetWords = newWords.slice(0, targetCount * 3);
+  const targetWords = candidateTargetWords
+    .sort(() => Math.random() - 0.5)
+    .slice(0, targetCount);
 
   try {
     const doc = await generateText({

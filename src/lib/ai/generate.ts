@@ -1,5 +1,5 @@
 import "server-only";
-import { createHash } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import { z } from "zod";
 import { CONTENT_FORMAT_VERSION, type LexiconEntry, type Level, type TextDocument } from "../content/schema";
 import { buildLexiconIndex } from "../text/lexicon-index";
@@ -104,7 +104,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
 
   return {
     doc: {
-      id: `tx-gen-${hash}`,
+      id: `tx-gen-${hash}-${randomUUID().slice(0, 8)}`,
       formatVersion: CONTENT_FORMAT_VERSION,
       level: req.level.id,
       titleDari: raw.titleDari,

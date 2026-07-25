@@ -18,36 +18,12 @@ export interface HeroCta {
 
 /** Per-phase tonal wash + surface treatment. Night is the one dark surface. */
 function surfaceFor(phase: DayPhase): { dark: boolean; layer: string; base: string } {
-  switch (phase) {
-    case "morning":
-      return {
-        dark: false,
-        base: "var(--surface)",
-        layer:
-          "radial-gradient(120% 85% at 12% 0%, rgba(217,160,54,0.16), transparent 60%), radial-gradient(95% 75% at 100% 100%, rgba(43,76,140,0.08), transparent 62%)",
-      };
-    case "day":
-      return {
-        dark: false,
-        base: "var(--surface)",
-        layer:
-          "radial-gradient(120% 90% at 88% 0%, rgba(43,76,140,0.11), transparent 60%), radial-gradient(90% 75% at 0% 100%, rgba(62,124,89,0.07), transparent 62%)",
-      };
-    case "evening":
-      return {
-        dark: false,
-        base: "var(--surface)",
-        layer:
-          "radial-gradient(125% 90% at 12% 0%, rgba(217,160,54,0.20), transparent 62%), radial-gradient(100% 90% at 100% 100%, rgba(43,76,140,0.13), transparent 64%)",
-      };
-    case "night":
-      return {
-        dark: true,
-        base: "linear-gradient(160deg, #223a67 0%, #1a2e56 55%, #142343 100%)",
-        layer:
-          "radial-gradient(90% 70% at 82% -5%, rgba(240,244,251,0.14), transparent 60%), radial-gradient(70% 60% at 8% 108%, rgba(217,160,54,0.12), transparent 62%)",
-      };
-  }
+  return {
+    dark: true,
+    base: "linear-gradient(160deg, #223a67 0%, #1a2e56 55%, #142343 100%)",
+    layer:
+      "radial-gradient(90% 70% at 82% -5%, rgba(240,244,251,0.14), transparent 60%), radial-gradient(70% 60% at 8% 108%, rgba(217,160,54,0.12), transparent 62%)",
+  };
 }
 
 /** XP numeral that counts up from zero once on mount (NumberFlow). */

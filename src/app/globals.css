@@ -53,6 +53,13 @@ body {
   font-feature-settings: "cv05", "cv11";
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior-y: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+input, textarea {
+  user-select: auto;
+  -webkit-touch-callout: default;
 }
 
 /* Dari script rendering. Never letterspace Arabic script. */
@@ -85,6 +92,14 @@ body {
 }
 .font-lateef {
   font-family: var(--font-lateef), "Noto Naskh Arabic", serif !important;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 ::selection {

@@ -1,12 +1,13 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { ArrowLeft, Loader2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { alphabetCourse } from "@/lib/content/load";
 import { useAlphabetProgress } from "@/lib/queries/hooks";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function AlphabetReadingPage() {
   const { data: progress } = useAlphabetProgress();
@@ -53,9 +54,10 @@ export default function AlphabetReadingPage() {
 
       <div className="flex flex-1 flex-col items-center justify-center text-center p-4">
         {isLoading && (
-          <div className="flex flex-col items-center gap-4 text-ink-soft">
-            <Loader2 className="animate-spin" size={32} />
-            <p>Generating a custom sentence...</p>
+          <div className="flex flex-col items-center gap-4 w-full max-w-md">
+            <Skeleton className="h-[120px] w-full rounded-3xl" />
+            <Skeleton className="h-6 w-32 mt-4" />
+            <Skeleton className="h-4 w-48 mt-2" />
           </div>
         )}
 

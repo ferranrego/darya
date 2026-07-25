@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Loader2, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { explainSentence } from "@/app/actions/explain";
 import type { SentenceExplanation } from "@/lib/ai/explain";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export function SentenceSheet({
   sentence,
@@ -92,9 +93,16 @@ export function SentenceSheet({
             </p>
 
             {isAnalyzing ? (
-              <div className="flex flex-col items-center justify-center py-8 text-ink-soft">
-                <Loader2 size={24} className="animate-spin mb-3 text-lapis" />
-                <p className="text-[14px]">Analyzing sentence structure...</p>
+              <div className="flex flex-col gap-6 py-4 w-full">
+                <div className="flex flex-col gap-2">
+                  <Skeleton className="h-4 w-24 mb-2" />
+                  <Skeleton className="h-[72px] w-full rounded-xl" />
+                  <Skeleton className="h-[72px] w-full rounded-xl" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <Skeleton className="h-4 w-24 mb-2" />
+                  <Skeleton className="h-24 w-full rounded-xl" />
+                </div>
               </div>
             ) : error ? (
               <div className="rounded-2xl border border-red-500/20 bg-red-500/5 p-4 text-[14px] text-red-600">
