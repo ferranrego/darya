@@ -2,7 +2,7 @@
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { BookOpen } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 import { PriorWordsSheet } from "@/components/reader/prior-words-sheet";
 import { TextReader } from "@/components/reader/text-reader";
 import { Button } from "@/components/ui/button";
@@ -26,6 +26,8 @@ export default function ReadPage() {
   const { data: userWords } = useUserWords();
   const { data: texts, isLoading, refetch } = useTextsForLevel(profile?.level_estimate);
   const { data: readRows, refetch: refetchRead } = useReadTexts();
+  
+  const activeTextIdRef = useRef<string | null>(null);
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
 
@@ -93,7 +95,8 @@ export default function ReadPage() {
         const oovRate = t.doc.vocabUsed.length > 0 ? oovCount / t.doc.vocabUsed.length : 0;
         
         // At least 1 new word, and not too many unknown words
-        return oovRate <= 0.25 && oovCount >= 1;
+        // OR it is the text we are currently reading (so it doesn't vanish while reading)
+        return (oovRate <= 0.25 && oovCount >= 1) || t.id === activeTextIdRef.current;
       })
       .sort((a, b) => (a.source === b.source ? 0 : a.source === "seed" ? -1 : 1));
   }, [texts, readIds, userWords]);
@@ -153,6 +156,10 @@ export default function ReadPage() {
   }
 
   const current = unread[0];
+  if (current) {
+    activeTextIdRef.current = current.id;
+  }
+  
   return (
     <>
       <TextReader
