@@ -177,19 +177,18 @@ export function TextReader({
 
   return (
     <article className="flex flex-col relative pb-32">
-      {/* Pure Editorial Header */}
-      <header className="mb-12 mt-6 flex flex-col items-center text-center">
-        <h1 lang="prs" className="text-[33px] font-bold leading-[1.4] text-ink max-w-[280px] mx-auto">
+      {/* Compact Editorial Header */}
+      <header className="mb-8 mt-4 flex flex-col items-center text-center">
+        <h1 lang="prs" className="text-[30px] font-bold leading-[1.35] text-ink max-w-[300px] mx-auto">
           {doc.titleDari}
         </h1>
-        <div className="mt-4 flex flex-col items-center gap-1.5">
-          <p className="text-[13px] uppercase tracking-widest text-ink-faint font-medium">
+        <div className="mt-2.5 flex flex-col items-center gap-0.5 px-4">
+          <span className="text-[12px] uppercase tracking-widest text-ink-faint font-semibold">
             {doc.titleTranslit}
-          </p>
-          <div className="h-px w-8 bg-line/80 my-1" />
-          <p className="text-[14px] text-ink-soft max-w-[260px] mx-auto">
+          </span>
+          <span className="text-[14px] text-ink-soft font-medium">
             {doc.titleEn}
-          </p>
+          </span>
         </div>
       </header>
 
