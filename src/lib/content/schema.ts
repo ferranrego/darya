@@ -286,6 +286,8 @@ export const buildSentenceExercise = z.object({
   translit: translitText,
   /** Wrong tiles mixed into the bank. */
   extraWords: z.array(grammarOptionSchema).default([]),
+  /** Extra accepted orderings; each is a permutation of the `words` dari forms. */
+  altOrders: z.array(z.array(z.string()).min(2)).default([]),
 });
 
 /** Pick the English meaning of a Dari sentence, or the Dari for an English one. */

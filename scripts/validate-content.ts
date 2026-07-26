@@ -160,6 +160,15 @@ if (existsSync(coursePath)) {
         for (const x of ex.extraWords) {
           if (wordKeys.has(normalizeDari(x.dari))) fail(`${where}: extraWord duplicates a sentence word ("${x.dari}")`);
         }
+        // Every alternate ordering must be a permutation of the sentence words.
+        const sortedWords = ex.words.map((w) => normalizeDari(w.dari)).sort();
+        for (const order of ex.altOrders) {
+          const sortedOrder = order.map((d) => normalizeDari(d)).sort();
+          const isPermutation =
+            sortedOrder.length === sortedWords.length &&
+            sortedOrder.every((d, i) => d === sortedWords[i]);
+          if (!isPermutation) fail(`${where}: altOrder is not a permutation of words ("${order.join(" ")}")`);
+        }
         checkVocab(where, ex.words.map((w) => w.dari).join(" "), warn);
         break;
       }

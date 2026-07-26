@@ -10,9 +10,13 @@ By reading adaptive, AI-generated texts tailored to your exact vocabulary level,
 - **👆 Tap-to-Learn:** Simply tap any word to see its gloss, transliteration, and instantly add it to your learning queue.
 - **🎨 Syntax Highlighting & Legends:** Visual aids including part-of-speech color-coding in texts and intuitive legends indicating word mastery states (To Discover, Learning, Known).
 - **🧠 FSRS Spaced Repetition:** Built-in flashcard system using the modern Free Spaced Repetition Scheduler (FSRS). Includes context-rich cards with prominent target words, transliterations, and translation hints.
-- **🧩 Interactive Exercises:** Practice sessions featuring dynamically generated cloze deletions, sentence unscrambling, grammar detective challenges, and cultural realia reading comprehension.
+- **📝 Contextual Sentence Review:** Flashcards test each word inside a real sentence you've already read — or a freshly AI-generated one — with the target word highlighted so you recall it in context, not in isolation.
+- **🧩 Interactive Exercises:** Practice sessions featuring dynamically generated cloze deletions, sentence building, grammar detective challenges, and cultural realia reading comprehension.
+- **📚 Grammar Course (A1–C2):** A full CEFR-aligned grammar curriculum with bite-sized lessons and five interactive exercise types — fill-in-the-blank, build-the-sentence, translation, matching, and spot-the-error.
 - **🔤 Alphabet Course:** Complete interactive course for non-readers to learn the Perso-Arabic script from scratch.
-- **🎮 Gamification & Streaks:** Daily goals, XP tracking, and streak reminders keep you consistent.
+- **📊 Progress Dashboard:** A stats page with a study-streak heatmap, vocabulary-growth charts, level forecasting, and celebratory milestone animations.
+- **💬 Community Chat:** A shared space to practice writing in Dari, with one-tap transliteration, translation, and gentle correction for any message.
+- **🎮 Gamification & Streaks:** Daily goals, XP tracking, a leaderboard, and streak reminders keep you consistent.
 - **📱 PWA & Offline Support:** Installable on iOS/Android with offline support for reading and reviewing.
 
 ## 🛠️ Tech Stack
@@ -77,14 +81,19 @@ pnpm validate:content  # Verify schema and integrity
 pnpm seed              # Push the lexicon and seed texts to Supabase
 ```
 
-## 🗺️ Roadmap & Upcoming Features
+## 🗺️ Roadmap
 
-Darya is continually evolving. Some exciting features on the horizon include:
+Darya is continually evolving.
 
-- **Sentence-Level SRS**: Contextual flashcards testing vocabulary inside previously read sentences.
-- **Data Visualization & UX**: Upgraded stats page with bezier curves and heatmaps, plus celebratory milestone animations.
-- **Text-Based Roleplay**: Chatbots constrained to the user's exact known vocabulary.
-- **Audio Integration:** Word and sentence audio using high-quality TTS.
+**✅ Recently shipped**
+- **Sentence-Level SRS** — contextual flashcards that test vocabulary inside previously read sentences.
+- **Data Visualization & UX** — a stats dashboard with vocabulary-growth charts and a study heatmap, plus celebratory milestone animations.
+- **Grammar Course (A1–C2)** — a full CEFR grammar curriculum with five interactive exercise types.
+- **Community Chat** — a shared practice space with on-demand transliteration, translation, and correction.
+
+**🚧 On the horizon**
+- **Text-Based Roleplay** — chatbots constrained to the user's exact known vocabulary.
+- **Audio Integration** — word and sentence audio using high-quality TTS.
 
 ## 🤝 Contributing
 Contributions are welcome! Whether it's fixing bugs, improving the UI, or adding new seed texts, please feel free to fork the repository, make your changes, and submit a pull request. 

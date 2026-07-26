@@ -221,13 +221,14 @@ function BuildSentence({
     .filter((t): t is Tile => !!t);
 
   function check() {
-    // Compare the logical tap sequence against `words` by index. Visual order
-    // is RTL but the arrays are in logical (first spoken word first) order.
+    // Compare the logical tap sequence against `words` by index, or any of the
+    // `altOrders` alternates. Visual order is RTL but the arrays are in logical
+    // (first spoken word first) order.
+    const seq = placed.map((tile) => normalizeDari(tile.option.dari));
+    const matches = (order: string[]) =>
+      order.length === seq.length && order.every((w, i) => normalizeDari(w) === seq[i]);
     const ok =
-      placed.length === exercise.words.length &&
-      placed.every(
-        (tile, i) => normalizeDari(tile.option.dari) === normalizeDari(exercise.words[i].dari),
-      );
+      matches(exercise.words.map((w) => w.dari)) || exercise.altOrders.some(matches);
     onAnswer(ok);
   }
 
