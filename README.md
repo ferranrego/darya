@@ -81,17 +81,10 @@ pnpm validate:content  # Verify schema and integrity
 pnpm seed              # Push the lexicon and seed texts to Supabase
 ```
 
-## 🗺️ Roadmap
+## 🗺️ Roadmap & Upcoming Features
 
-Darya is continually evolving.
+Darya is continually evolving. Some exciting features on the horizon include:
 
-**✅ Recently shipped**
-- **Sentence-Level SRS** — contextual flashcards that test vocabulary inside previously read sentences.
-- **Data Visualization & UX** — a stats dashboard with vocabulary-growth charts and a study heatmap, plus celebratory milestone animations.
-- **Grammar Course (A1–C2)** — a full CEFR grammar curriculum with five interactive exercise types.
-- **Community Chat** — a shared practice space with on-demand transliteration, translation, and correction.
-
-**🚧 On the horizon**
 - **Text-Based Roleplay** — chatbots constrained to the user's exact known vocabulary.
 - **Audio Integration** — word and sentence audio using high-quality TTS.
 
