@@ -1,6 +1,6 @@
-# Darya - Learn Dari through Comprehensible Input
+# Darya - Learn Dari through Meaning-Focused Input
 
-Darya (دریا) is an open-source, progressive web app (PWA) designed to help you learn **Dari** (Afghan Persian, Kabul standard) through **comprehensible input**.
+Darya (دریا) is an open-source, progressive web app (PWA) designed to help you learn **Dari** (Afghan Persian, Kabul standard) through **meaning-focused input**.
 
 By reading adaptive, AI-generated texts tailored to your exact vocabulary level, you can naturally acquire the language. The app tracks the words you know and introduces new ones incrementally, ensuring that every text you read is challenging enough to teach you something new, but easy enough to understand from context.
 
