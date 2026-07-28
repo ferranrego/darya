@@ -90,7 +90,7 @@
                         "items": {
                           "type": "object",
                           "properties": {
-                            "dari": {
+                            "target": {
                               "type": "string",
                               "minLength": 1
                             },
@@ -107,7 +107,7 @@
                             }
                           },
                           "required": [
-                            "dari",
+                            "target",
                             "translit",
                             "en"
                           ],
@@ -158,7 +158,7 @@
                             "type": "string",
                             "const": "fillBlank"
                           },
-                          "dari": {
+                          "target": {
                             "type": "string",
                             "pattern": "^[^_]*___[^_]*$"
                           },
@@ -173,7 +173,7 @@
                           "answer": {
                             "type": "object",
                             "properties": {
-                              "dari": {
+                              "target": {
                                 "type": "string",
                                 "minLength": 1
                               },
@@ -183,7 +183,7 @@
                               }
                             },
                             "required": [
-                              "dari",
+                              "target",
                               "translit"
                             ],
                             "additionalProperties": false
@@ -195,7 +195,7 @@
                             "items": {
                               "type": "object",
                               "properties": {
-                                "dari": {
+                                "target": {
                                   "type": "string",
                                   "minLength": 1
                                 },
@@ -205,7 +205,7 @@
                                 }
                               },
                               "required": [
-                                "dari",
+                                "target",
                                 "translit"
                               ],
                               "additionalProperties": false
@@ -215,7 +215,7 @@
                         "required": [
                           "id",
                           "type",
-                          "dari",
+                          "target",
                           "translit",
                           "en",
                           "answer",
@@ -248,7 +248,7 @@
                             "items": {
                               "type": "object",
                               "properties": {
-                                "dari": {
+                                "target": {
                                   "type": "string",
                                   "minLength": 1
                                 },
@@ -258,7 +258,7 @@
                                 }
                               },
                               "required": [
-                                "dari",
+                                "target",
                                 "translit"
                               ],
                               "additionalProperties": false
@@ -274,7 +274,7 @@
                             "items": {
                               "type": "object",
                               "properties": {
-                                "dari": {
+                                "target": {
                                   "type": "string",
                                   "minLength": 1
                                 },
@@ -284,7 +284,7 @@
                                 }
                               },
                               "required": [
-                                "dari",
+                                "target",
                                 "translit"
                               ],
                               "additionalProperties": false
@@ -331,10 +331,10 @@
                             "type": "string",
                             "enum": [
                               "toEn",
-                              "toDari"
+                              "toTarget"
                             ]
                           },
-                          "dari": {
+                          "target": {
                             "type": "string",
                             "minLength": 1
                           },
@@ -353,13 +353,13 @@
                               "type": "string"
                             }
                           },
-                          "distractorsDari": {
+                          "distractorsTarget": {
                             "default": [],
                             "type": "array",
                             "items": {
                               "type": "object",
                               "properties": {
-                                "dari": {
+                                "target": {
                                   "type": "string",
                                   "minLength": 1
                                 },
@@ -369,7 +369,7 @@
                                 }
                               },
                               "required": [
-                                "dari",
+                                "target",
                                 "translit"
                               ],
                               "additionalProperties": false
@@ -380,11 +380,11 @@
                           "id",
                           "type",
                           "direction",
-                          "dari",
+                          "target",
                           "translit",
                           "en",
                           "distractorsEn",
-                          "distractorsDari"
+                          "distractorsTarget"
                         ],
                         "additionalProperties": false
                       },
@@ -413,7 +413,7 @@
                             "items": {
                               "type": "object",
                               "properties": {
-                                "dari": {
+                                "target": {
                                   "type": "string",
                                   "minLength": 1
                                 },
@@ -427,7 +427,7 @@
                                 }
                               },
                               "required": [
-                                "dari",
+                                "target",
                                 "translit",
                                 "en"
                               ],
@@ -457,7 +457,7 @@
                             "type": "string",
                             "const": "spotError"
                           },
-                          "dari": {
+                          "target": {
                             "type": "string",
                             "minLength": 1
                           },
@@ -472,7 +472,7 @@
                           "errorWord": {
                             "type": "object",
                             "properties": {
-                              "dari": {
+                              "target": {
                                 "type": "string",
                                 "minLength": 1
                               },
@@ -482,7 +482,7 @@
                               }
                             },
                             "required": [
-                              "dari",
+                              "target",
                               "translit"
                             ],
                             "additionalProperties": false
@@ -490,7 +490,7 @@
                           "correction": {
                             "type": "object",
                             "properties": {
-                              "dari": {
+                              "target": {
                                 "type": "string",
                                 "minLength": 1
                               },
@@ -500,7 +500,7 @@
                               }
                             },
                             "required": [
-                              "dari",
+                              "target",
                               "translit"
                             ],
                             "additionalProperties": false
@@ -509,7 +509,7 @@
                         "required": [
                           "id",
                           "type",
-                          "dari",
+                          "target",
                           "translit",
                           "en",
                           "errorWord",

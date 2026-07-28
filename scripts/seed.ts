@@ -25,8 +25,8 @@ const lexicon = lexiconFileSchema.parse(
 );
 const lexemeRows = lexicon.entries.map((e) => ({
   id: e.id,
-  dari: e.dari,
-  dari_normalized: e.dariNormalized,
+  target: e.target,
+  target_normalized: e.targetNormalized,
   translit: e.translit,
   gloss_en: e.glossEn,
   pos: e.pos,
@@ -34,7 +34,7 @@ const lexemeRows = lexicon.entries.map((e) => ({
   freq_band: e.freqBand,
   register: e.register,
   variants: e.variants,
-  example_dari: e.exampleDari,
+  example_target: e.exampleTarget,
   example_translit: e.exampleTranslit,
   example_en: e.exampleEn,
   audio_url: e.audioUrl ?? null,

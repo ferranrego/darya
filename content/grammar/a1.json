@@ -47,7 +47,7 @@
               ],
               "examples": [
                 {
-                  "dari": "من شاگرد هستم",
+                  "target": "من شاگرد هستم",
                   "translit": "man shāgerd hastam",
                   "en": "I am a student.",
                   "highlight": "من"
@@ -86,19 +86,19 @@
               ],
               "examples": [
                 {
-                  "dari": "من معلم هستم",
+                  "target": "من معلم هستم",
                   "translit": "man mu'allem hastam",
                   "en": "I am a teacher.",
                   "highlight": "هستم"
                 },
                 {
-                  "dari": "تو شاگرد هستی",
+                  "target": "تو شاگرد هستی",
                   "translit": "tu shāgerd hasti",
                   "en": "You are a student.",
                   "highlight": "هستی"
                 },
                 {
-                  "dari": "او دوست است",
+                  "target": "او دوست است",
                   "translit": "ō dōst ast",
                   "en": "He is a friend.",
                   "highlight": "است"
@@ -111,13 +111,13 @@
               "body": "English says 'I am a teacher'. Dari says 'I teacher am' - the verb always closes the sentence.",
               "examples": [
                 {
-                  "dari": "ما دوست هستیم",
+                  "target": "ما دوست هستیم",
                   "translit": "mā dōst hastēm",
                   "en": "We are friends.",
                   "highlight": "هستیم"
                 },
                 {
-                  "dari": "شما معلم هستید",
+                  "target": "شما معلم هستید",
                   "translit": "shumā mu'allem hastēd",
                   "en": "You are teachers.",
                   "highlight": "هستید"
@@ -129,24 +129,24 @@
             {
               "id": "ge-01-1",
               "type": "fillBlank",
-              "dari": "من شاگرد ___",
+              "target": "من شاگرد ___",
               "translit": "man shāgerd ___",
               "en": "I am a student.",
               "answer": {
-                "dari": "هستم",
+                "target": "هستم",
                 "translit": "hastam"
               },
               "distractors": [
                 {
-                  "dari": "هستی",
+                  "target": "هستی",
                   "translit": "hasti"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 },
                 {
-                  "dari": "هستند",
+                  "target": "هستند",
                   "translit": "hastand"
                 }
               ]
@@ -154,24 +154,24 @@
             {
               "id": "ge-01-2",
               "type": "fillBlank",
-              "dari": "تو دوست ___",
+              "target": "تو دوست ___",
               "translit": "tu dōst ___",
               "en": "You are a friend.",
               "answer": {
-                "dari": "هستی",
+                "target": "هستی",
                 "translit": "hasti"
               },
               "distractors": [
                 {
-                  "dari": "هستم",
+                  "target": "هستم",
                   "translit": "hastam"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 },
                 {
-                  "dari": "هستیم",
+                  "target": "هستیم",
                   "translit": "hastēm"
                 }
               ]
@@ -180,7 +180,7 @@
               "id": "ge-01-3",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "او معلم است",
+              "target": "او معلم است",
               "translit": "ō mu'allem ast",
               "en": "He is a teacher.",
               "distractorsEn": [
@@ -191,24 +191,24 @@
             {
               "id": "ge-01-4",
               "type": "fillBlank",
-              "dari": "ما شاگرد ___",
+              "target": "ما شاگرد ___",
               "translit": "mā shāgerd ___",
               "en": "We are students.",
               "answer": {
-                "dari": "هستیم",
+                "target": "هستیم",
                 "translit": "hastēm"
               },
               "distractors": [
                 {
-                  "dari": "هستم",
+                  "target": "هستم",
                   "translit": "hastam"
                 },
                 {
-                  "dari": "هستند",
+                  "target": "هستند",
                   "translit": "hastand"
                 },
                 {
-                  "dari": "هستید",
+                  "target": "هستید",
                   "translit": "hastēd"
                 }
               ]
@@ -219,22 +219,22 @@
               "en": "I am a teacher.",
               "words": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "معلم",
+                  "target": "معلم",
                   "translit": "mu'allem"
                 },
                 {
-                  "dari": "هستم",
+                  "target": "هستم",
                   "translit": "hastam"
                 }
               ],
               "translit": "man mu'allem hastam",
               "extraWords": [
                 {
-                  "dari": "هستی",
+                  "target": "هستی",
                   "translit": "hasti"
                 }
               ]
@@ -245,22 +245,22 @@
               "prompt": "Match the pronouns",
               "pairs": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man",
                   "en": "I"
                 },
                 {
-                  "dari": "تو",
+                  "target": "تو",
                   "translit": "tu",
                   "en": "you"
                 },
                 {
-                  "dari": "ما",
+                  "target": "ما",
                   "translit": "mā",
                   "en": "we"
                 },
                 {
-                  "dari": "آنها",
+                  "target": "آنها",
                   "translit": "ānhā",
                   "en": "they"
                 }
@@ -269,17 +269,17 @@
             {
               "id": "ge-01-7",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "آنها شاگرد هستند",
+              "direction": "toTarget",
+              "target": "آنها شاگرد هستند",
               "translit": "ānhā shāgerd hastand",
               "en": "They are students.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "ما شاگرد هستیم",
+                  "target": "ما شاگرد هستیم",
                   "translit": "mā shāgerd hastēm"
                 },
                 {
-                  "dari": "او شاگرد است",
+                  "target": "او شاگرد است",
                   "translit": "ō shāgerd ast"
                 }
               ]
@@ -287,24 +287,24 @@
             {
               "id": "ge-01-8",
               "type": "fillBlank",
-              "dari": "شما معلم ___",
+              "target": "شما معلم ___",
               "translit": "shumā mu'allem ___",
               "en": "You (plural) are teachers.",
               "answer": {
-                "dari": "هستید",
+                "target": "هستید",
                 "translit": "hastēd"
               },
               "distractors": [
                 {
-                  "dari": "هستند",
+                  "target": "هستند",
                   "translit": "hastand"
                 },
                 {
-                  "dari": "هستی",
+                  "target": "هستی",
                   "translit": "hasti"
                 },
                 {
-                  "dari": "هستم",
+                  "target": "هستم",
                   "translit": "hastam"
                 }
               ]
@@ -324,13 +324,13 @@
               "body": "īn points at something near you, ān at something far away. Both take ast, like ō.",
               "examples": [
                 {
-                  "dari": "این کتاب است",
+                  "target": "این کتاب است",
                   "translit": "īn ketāb ast",
                   "en": "This is a book.",
                   "highlight": "این"
                 },
                 {
-                  "dari": "آن خانه است",
+                  "target": "آن خانه است",
                   "translit": "ān khāna ast",
                   "en": "That is a house.",
                   "highlight": "آن"
@@ -343,13 +343,13 @@
               "body": "che (what) + ast squeezes into one word: chīst. It is the question you will ask most as a learner.",
               "examples": [
                 {
-                  "dari": "این چیست؟",
+                  "target": "این چیست؟",
                   "translit": "īn chīst?",
                   "en": "What is this?",
                   "highlight": "چیست"
                 },
                 {
-                  "dari": "این قلم است",
+                  "target": "این قلم است",
                   "translit": "īn qalam ast",
                   "en": "It is a pen."
                 }
@@ -361,13 +361,13 @@
               "body": "īnjā means here, ānjā means there. They slot in right before the verb.",
               "examples": [
                 {
-                  "dari": "کتاب اینجا است",
+                  "target": "کتاب اینجا است",
                   "translit": "ketāb īnjā ast",
                   "en": "The book is here.",
                   "highlight": "اینجا"
                 },
                 {
-                  "dari": "مکتب آنجا است",
+                  "target": "مکتب آنجا است",
                   "translit": "maktab ānjā ast",
                   "en": "The school is there.",
                   "highlight": "آنجا"
@@ -380,7 +380,7 @@
               "id": "ge-02-1",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "این کتاب است",
+              "target": "این کتاب است",
               "translit": "īn ketāb ast",
               "en": "This is a book.",
               "distractorsEn": [
@@ -391,20 +391,20 @@
             {
               "id": "ge-02-2",
               "type": "fillBlank",
-              "dari": "___ قلم است",
+              "target": "___ قلم است",
               "translit": "___ qalam ast",
               "en": "This is a pen.",
               "answer": {
-                "dari": "این",
+                "target": "این",
                 "translit": "īn"
               },
               "distractors": [
                 {
-                  "dari": "آن",
+                  "target": "آن",
                   "translit": "ān"
                 },
                 {
-                  "dari": "او",
+                  "target": "او",
                   "translit": "ō"
                 }
               ]
@@ -412,20 +412,20 @@
             {
               "id": "ge-02-3",
               "type": "fillBlank",
-              "dari": "این چای ___",
+              "target": "این چای ___",
               "translit": "īn chāy ___",
               "en": "This is tea.",
               "answer": {
-                "dari": "است",
+                "target": "است",
                 "translit": "ast"
               },
               "distractors": [
                 {
-                  "dari": "هستم",
+                  "target": "هستم",
                   "translit": "hastam"
                 },
                 {
-                  "dari": "هستی",
+                  "target": "هستی",
                   "translit": "hasti"
                 }
               ]
@@ -436,22 +436,22 @@
               "en": "That is a house.",
               "words": [
                 {
-                  "dari": "آن",
+                  "target": "آن",
                   "translit": "ān"
                 },
                 {
-                  "dari": "خانه",
+                  "target": "خانه",
                   "translit": "khāna"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ],
               "translit": "ān khāna ast",
               "extraWords": [
                 {
-                  "dari": "این",
+                  "target": "این",
                   "translit": "īn"
                 }
               ]
@@ -459,17 +459,17 @@
             {
               "id": "ge-02-5",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "این چیست؟",
+              "direction": "toTarget",
+              "target": "این چیست؟",
               "translit": "īn chīst?",
               "en": "What is this?",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "آن چیست؟",
+                  "target": "آن چیست؟",
                   "translit": "ān chīst?"
                 },
                 {
-                  "dari": "این کتاب است",
+                  "target": "این کتاب است",
                   "translit": "īn ketāb ast"
                 }
               ]
@@ -480,22 +480,22 @@
               "prompt": "Match the pointing words",
               "pairs": [
                 {
-                  "dari": "این",
+                  "target": "این",
                   "translit": "īn",
                   "en": "this"
                 },
                 {
-                  "dari": "آن",
+                  "target": "آن",
                   "translit": "ān",
                   "en": "that"
                 },
                 {
-                  "dari": "اینجا",
+                  "target": "اینجا",
                   "translit": "īnjā",
                   "en": "here"
                 },
                 {
-                  "dari": "آنجا",
+                  "target": "آنجا",
                   "translit": "ānjā",
                   "en": "there"
                 }
@@ -504,20 +504,20 @@
             {
               "id": "ge-02-7",
               "type": "fillBlank",
-              "dari": "___ سیب است",
+              "target": "___ سیب است",
               "translit": "___ sēb ast",
               "en": "That is an apple.",
               "answer": {
-                "dari": "آن",
+                "target": "آن",
                 "translit": "ān"
               },
               "distractors": [
                 {
-                  "dari": "این",
+                  "target": "این",
                   "translit": "īn"
                 },
                 {
-                  "dari": "او",
+                  "target": "او",
                   "translit": "ō"
                 }
               ]
@@ -559,13 +559,13 @@
               ],
               "examples": [
                 {
-                  "dari": "تو کجا هستی؟",
+                  "target": "تو کجا هستی؟",
                   "translit": "tu kujā hasti?",
                   "en": "Where are you?",
                   "highlight": "کجا"
                 },
                 {
-                  "dari": "او کی است؟",
+                  "target": "او کی است؟",
                   "translit": "ō kī ast?",
                   "en": "Who is he?",
                   "highlight": "کی"
@@ -578,12 +578,12 @@
               "body": "To ask a yes/no question, keep the words exactly the same and raise your voice at the end. (In formal Dari you may hear āyā at the start.) Answer with balē - yes, or na - no.",
               "examples": [
                 {
-                  "dari": "تو معلم هستی؟",
+                  "target": "تو معلم هستی؟",
                   "translit": "tu mu'allem hasti?",
                   "en": "Are you a teacher?"
                 },
                 {
-                  "dari": "بلی، من معلم هستم",
+                  "target": "بلی، من معلم هستم",
                   "translit": "balē, man mu'allem hastam",
                   "en": "Yes, I am a teacher.",
                   "highlight": "بلی"
@@ -595,20 +595,20 @@
             {
               "id": "ge-03-1",
               "type": "fillBlank",
-              "dari": "تو ___ هستی؟",
+              "target": "تو ___ هستی؟",
               "translit": "tu ___ hasti?",
               "en": "Where are you?",
               "answer": {
-                "dari": "کجا",
+                "target": "کجا",
                 "translit": "kujā"
               },
               "distractors": [
                 {
-                  "dari": "چی",
+                  "target": "چی",
                   "translit": "che"
                 },
                 {
-                  "dari": "کی",
+                  "target": "کی",
                   "translit": "kī"
                 }
               ]
@@ -617,7 +617,7 @@
               "id": "ge-03-2",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "او کی است؟",
+              "target": "او کی است؟",
               "translit": "ō kī ast?",
               "en": "Who is he?",
               "distractorsEn": [
@@ -628,20 +628,20 @@
             {
               "id": "ge-03-3",
               "type": "fillBlank",
-              "dari": "این ___ است؟",
+              "target": "این ___ است؟",
               "translit": "īn ___ ast?",
               "en": "What is this?",
               "answer": {
-                "dari": "چی",
+                "target": "چی",
                 "translit": "che"
               },
               "distractors": [
                 {
-                  "dari": "کجا",
+                  "target": "کجا",
                   "translit": "kujā"
                 },
                 {
-                  "dari": "کی",
+                  "target": "کی",
                   "translit": "kī"
                 }
               ]
@@ -652,22 +652,22 @@
               "en": "Where is the house?",
               "words": [
                 {
-                  "dari": "خانه",
+                  "target": "خانه",
                   "translit": "khāna"
                 },
                 {
-                  "dari": "کجا",
+                  "target": "کجا",
                   "translit": "kujā"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ],
               "translit": "khāna kujā ast?",
               "extraWords": [
                 {
-                  "dari": "چی",
+                  "target": "چی",
                   "translit": "che"
                 }
               ]
@@ -675,17 +675,17 @@
             {
               "id": "ge-03-5",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "تو چطور هستی؟",
+              "direction": "toTarget",
+              "target": "تو چطور هستی؟",
               "translit": "tu chetōr hasti?",
               "en": "How are you?",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "تو کجا هستی؟",
+                  "target": "تو کجا هستی؟",
                   "translit": "tu kujā hasti?"
                 },
                 {
-                  "dari": "تو کی هستی؟",
+                  "target": "تو کی هستی؟",
                   "translit": "tu kī hasti?"
                 }
               ]
@@ -696,22 +696,22 @@
               "prompt": "Match the question words",
               "pairs": [
                 {
-                  "dari": "کجا",
+                  "target": "کجا",
                   "translit": "kujā",
                   "en": "where"
                 },
                 {
-                  "dari": "چطور",
+                  "target": "چطور",
                   "translit": "chetōr",
                   "en": "how"
                 },
                 {
-                  "dari": "چند",
+                  "target": "چند",
                   "translit": "chand",
                   "en": "how many"
                 },
                 {
-                  "dari": "بلی",
+                  "target": "بلی",
                   "translit": "balē",
                   "en": "yes"
                 }
@@ -720,20 +720,20 @@
             {
               "id": "ge-03-7",
               "type": "fillBlank",
-              "dari": "___، من شاگرد هستم",
+              "target": "___، من شاگرد هستم",
               "translit": "___, man shāgerd hastam",
               "en": "Yes, I am a student.",
               "answer": {
-                "dari": "بلی",
+                "target": "بلی",
                 "translit": "balē"
               },
               "distractors": [
                 {
-                  "dari": "نه",
+                  "target": "نه",
                   "translit": "na"
                 },
                 {
-                  "dari": "چطور",
+                  "target": "چطور",
                   "translit": "chetōr"
                 }
               ]
@@ -760,13 +760,13 @@
               "body": "One suffix makes any noun plural: -hā. No exceptions to memorise.",
               "examples": [
                 {
-                  "dari": "کتاب‌ها اینجا هستند",
+                  "target": "کتاب‌ها اینجا هستند",
                   "translit": "ketāb-hā īnjā hastand",
                   "en": "The books are here.",
                   "highlight": "کتاب‌ها"
                 },
                 {
-                  "dari": "خانه‌ها کلان هستند",
+                  "target": "خانه‌ها کلان هستند",
                   "translit": "khāna-hā kalān hastand",
                   "en": "The houses are big.",
                   "highlight": "خانه‌ها"
@@ -779,13 +779,13 @@
               "body": "After a number the noun never takes -hā. Literally: 'two book', 'three student'.",
               "examples": [
                 {
-                  "dari": "دو کتاب اینجا است",
+                  "target": "دو کتاب اینجا است",
                   "translit": "dū ketāb īnjā ast",
                   "en": "Two books are here.",
                   "highlight": "دو کتاب"
                 },
                 {
-                  "dari": "سه شاگرد اینجا هستند",
+                  "target": "سه شاگرد اینجا هستند",
                   "translit": "se shāgerd īnjā hastand",
                   "en": "Three students are here.",
                   "highlight": "سه شاگرد"
@@ -797,20 +797,20 @@
             {
               "id": "ge-04-1",
               "type": "fillBlank",
-              "dari": "___ اینجا هستند",
+              "target": "___ اینجا هستند",
               "translit": "___ īnjā hastand",
               "en": "The books are here.",
               "answer": {
-                "dari": "کتاب‌ها",
+                "target": "کتاب‌ها",
                 "translit": "ketāb-hā"
               },
               "distractors": [
                 {
-                  "dari": "کتاب",
+                  "target": "کتاب",
                   "translit": "ketāb"
                 },
                 {
-                  "dari": "خانه",
+                  "target": "خانه",
                   "translit": "khāna"
                 }
               ]
@@ -819,7 +819,7 @@
               "id": "ge-04-2",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "خانه‌ها کلان هستند",
+              "target": "خانه‌ها کلان هستند",
               "translit": "khāna-hā kalān hastand",
               "en": "The houses are big.",
               "distractorsEn": [
@@ -830,20 +830,20 @@
             {
               "id": "ge-04-3",
               "type": "fillBlank",
-              "dari": "دو ___ اینجا است",
+              "target": "دو ___ اینجا است",
               "translit": "dū ___ īnjā ast",
               "en": "Two books are here.",
               "answer": {
-                "dari": "کتاب",
+                "target": "کتاب",
                 "translit": "ketāb"
               },
               "distractors": [
                 {
-                  "dari": "کتاب‌ها",
+                  "target": "کتاب‌ها",
                   "translit": "ketāb-hā"
                 },
                 {
-                  "dari": "قلم‌ها",
+                  "target": "قلم‌ها",
                   "translit": "qalam-hā"
                 }
               ],
@@ -855,22 +855,22 @@
               "en": "The students are here.",
               "words": [
                 {
-                  "dari": "شاگردها",
+                  "target": "شاگردها",
                   "translit": "shāgerd-hā"
                 },
                 {
-                  "dari": "اینجا",
+                  "target": "اینجا",
                   "translit": "īnjā"
                 },
                 {
-                  "dari": "هستند",
+                  "target": "هستند",
                   "translit": "hastand"
                 }
               ],
               "translit": "shāgerd-hā īnjā hastand",
               "extraWords": [
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ]
@@ -881,22 +881,22 @@
               "prompt": "Match singular and plural",
               "pairs": [
                 {
-                  "dari": "کتاب",
+                  "target": "کتاب",
                   "translit": "ketāb",
                   "en": "book"
                 },
                 {
-                  "dari": "کتاب‌ها",
+                  "target": "کتاب‌ها",
                   "translit": "ketāb-hā",
                   "en": "books"
                 },
                 {
-                  "dari": "خانه",
+                  "target": "خانه",
                   "translit": "khāna",
                   "en": "house"
                 },
                 {
-                  "dari": "خانه‌ها",
+                  "target": "خانه‌ها",
                   "translit": "khāna-hā",
                   "en": "houses"
                 }
@@ -905,17 +905,17 @@
             {
               "id": "ge-04-6",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "دخترها اینجا هستند",
+              "direction": "toTarget",
+              "target": "دخترها اینجا هستند",
               "translit": "dukhtar-hā īnjā hastand",
               "en": "The girls are here.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "دختر اینجا است",
+                  "target": "دختر اینجا است",
                   "translit": "dukhtar īnjā ast"
                 },
                 {
-                  "dari": "پسرها اینجا هستند",
+                  "target": "پسرها اینجا هستند",
                   "translit": "pesar-hā īnjā hastand"
                 }
               ]
@@ -923,20 +923,20 @@
             {
               "id": "ge-04-7",
               "type": "fillBlank",
-              "dari": "قلم‌ها ___ هستند",
+              "target": "قلم‌ها ___ هستند",
               "translit": "qalam-hā ___ hastand",
               "en": "The pens are new.",
               "answer": {
-                "dari": "نو",
+                "target": "نو",
                 "translit": "naw"
               },
               "distractors": [
                 {
-                  "dari": "کلان",
+                  "target": "کلان",
                   "translit": "kalān"
                 },
                 {
-                  "dari": "گرم",
+                  "target": "گرم",
                   "translit": "garm"
                 }
               ]
@@ -956,13 +956,13 @@
               "body": "'My book' is ketāb-e man - literally 'book of me'. The little -e (called ezāfa) is spoken but usually not written. After a vowel it becomes -ye.",
               "examples": [
                 {
-                  "dari": "این کتاب من است",
+                  "target": "این کتاب من است",
                   "translit": "īn ketāb-e man ast",
                   "en": "This is my book.",
                   "highlight": "کتاب من"
                 },
                 {
-                  "dari": "خانه ما کلان است",
+                  "target": "خانه ما کلان است",
                   "translit": "khāna-ye mā kalān ast",
                   "en": "Our house is big.",
                   "highlight": "خانه ما"
@@ -975,13 +975,13 @@
               "body": "Keep linking with -e: khāna-ye padar-e man - 'my father's house'. Any owner works, not just pronouns.",
               "examples": [
                 {
-                  "dari": "خانه پدر من کلان است",
+                  "target": "خانه پدر من کلان است",
                   "translit": "khāna-ye padar-e man kalān ast",
                   "en": "My father's house is big.",
                   "highlight": "خانه پدر من"
                 },
                 {
-                  "dari": "کتاب معلم اینجا است",
+                  "target": "کتاب معلم اینجا است",
                   "translit": "ketāb-e mu'allem īnjā ast",
                   "en": "The teacher's book is here.",
                   "highlight": "کتاب معلم"
@@ -994,7 +994,7 @@
               "id": "ge-05-1",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "این کتاب من است",
+              "target": "این کتاب من است",
               "translit": "īn ketāb-e man ast",
               "en": "This is my book.",
               "distractorsEn": [
@@ -1005,20 +1005,20 @@
             {
               "id": "ge-05-2",
               "type": "fillBlank",
-              "dari": "خانه ___ کلان است",
+              "target": "خانه ___ کلان است",
               "translit": "khāna-ye ___ kalān ast",
               "en": "Our house is big.",
               "answer": {
-                "dari": "ما",
+                "target": "ما",
                 "translit": "mā"
               },
               "distractors": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "تو",
+                  "target": "تو",
                   "translit": "tu"
                 }
               ]
@@ -1029,30 +1029,30 @@
               "en": "This is my father's house.",
               "words": [
                 {
-                  "dari": "این",
+                  "target": "این",
                   "translit": "īn"
                 },
                 {
-                  "dari": "خانه",
+                  "target": "خانه",
                   "translit": "khāna"
                 },
                 {
-                  "dari": "پدر",
+                  "target": "پدر",
                   "translit": "padar"
                 },
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ],
               "translit": "īn khāna-ye padar-e man ast",
               "extraWords": [
                 {
-                  "dari": "تو",
+                  "target": "تو",
                   "translit": "tu"
                 }
               ]
@@ -1060,20 +1060,20 @@
             {
               "id": "ge-05-4",
               "type": "fillBlank",
-              "dari": "قلم ___ نو است",
+              "target": "قلم ___ نو است",
               "translit": "qalam-e ___ naw ast",
               "en": "Your pen is new.",
               "answer": {
-                "dari": "تو",
+                "target": "تو",
                 "translit": "tu"
               },
               "distractors": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "او",
+                  "target": "او",
                   "translit": "ō"
                 }
               ]
@@ -1084,22 +1084,22 @@
               "prompt": "Match owner and thing",
               "pairs": [
                 {
-                  "dari": "کتاب من",
+                  "target": "کتاب من",
                   "translit": "ketāb-e man",
                   "en": "my book"
                 },
                 {
-                  "dari": "کتاب تو",
+                  "target": "کتاب تو",
                   "translit": "ketāb-e tu",
                   "en": "your book"
                 },
                 {
-                  "dari": "خانه ما",
+                  "target": "خانه ما",
                   "translit": "khāna-ye mā",
                   "en": "our house"
                 },
                 {
-                  "dari": "خانه او",
+                  "target": "خانه او",
                   "translit": "khāna-ye ō",
                   "en": "her house"
                 }
@@ -1108,17 +1108,17 @@
             {
               "id": "ge-05-6",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "کتاب معلم اینجا است",
+              "direction": "toTarget",
+              "target": "کتاب معلم اینجا است",
               "translit": "ketāb-e mu'allem īnjā ast",
               "en": "The teacher's book is here.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "کتاب من اینجا است",
+                  "target": "کتاب من اینجا است",
                   "translit": "ketāb-e man īnjā ast"
                 },
                 {
-                  "dari": "معلم اینجا است",
+                  "target": "معلم اینجا است",
                   "translit": "mu'allem īnjā ast"
                 }
               ]
@@ -1126,20 +1126,20 @@
             {
               "id": "ge-05-7",
               "type": "fillBlank",
-              "dari": "___ او مقبول است",
+              "target": "___ او مقبول است",
               "translit": "___ ō maqbūl ast",
               "en": "Her house is beautiful.",
               "answer": {
-                "dari": "خانه",
+                "target": "خانه",
                 "translit": "khāna-ye"
               },
               "distractors": [
                 {
-                  "dari": "شهر",
+                  "target": "شهر",
                   "translit": "shahr-e"
                 },
                 {
-                  "dari": "قلم",
+                  "target": "قلم",
                   "translit": "qalam-e"
                 }
               ]
@@ -1159,13 +1159,13 @@
               "body": "In Dari the adjective follows its noun, linked by the same -e: chāy-e garm, 'tea of hot'.",
               "examples": [
                 {
-                  "dari": "چای گرم خوب است",
+                  "target": "چای گرم خوب است",
                   "translit": "chāy-e garm khōb ast",
                   "en": "Hot tea is good.",
                   "highlight": "چای گرم"
                 },
                 {
-                  "dari": "کتاب نو اینجا است",
+                  "target": "کتاب نو اینجا است",
                   "translit": "ketāb-e naw īnjā ast",
                   "en": "The new book is here.",
                   "highlight": "کتاب نو"
@@ -1178,7 +1178,7 @@
               "body": "Noun, adjective, owner - all linked with -e: dōst-e khōb-e man, 'my good friend'.",
               "examples": [
                 {
-                  "dari": "او دوست خوب من است",
+                  "target": "او دوست خوب من است",
                   "translit": "ō dōst-e khōb-e man ast",
                   "en": "He is my good friend.",
                   "highlight": "دوست خوب من"
@@ -1191,7 +1191,7 @@
               "id": "ge-06-1",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "او دوست خوب من است",
+              "target": "او دوست خوب من است",
               "translit": "ō dōst-e khōb-e man ast",
               "en": "He is my good friend.",
               "distractorsEn": [
@@ -1202,20 +1202,20 @@
             {
               "id": "ge-06-2",
               "type": "fillBlank",
-              "dari": "چای ___ خوب است",
+              "target": "چای ___ خوب است",
               "translit": "chāy-e ___ khōb ast",
               "en": "Hot tea is good.",
               "answer": {
-                "dari": "گرم",
+                "target": "گرم",
                 "translit": "garm"
               },
               "distractors": [
                 {
-                  "dari": "سرد",
+                  "target": "سرد",
                   "translit": "sard"
                 },
                 {
-                  "dari": "نو",
+                  "target": "نو",
                   "translit": "naw"
                 }
               ]
@@ -1226,26 +1226,26 @@
               "en": "The big house is beautiful.",
               "words": [
                 {
-                  "dari": "خانه",
+                  "target": "خانه",
                   "translit": "khāna-ye"
                 },
                 {
-                  "dari": "کلان",
+                  "target": "کلان",
                   "translit": "kalān"
                 },
                 {
-                  "dari": "مقبول",
+                  "target": "مقبول",
                   "translit": "maqbūl"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ],
               "translit": "khāna-ye kalān maqbūl ast",
               "extraWords": [
                 {
-                  "dari": "خورد",
+                  "target": "خورد",
                   "translit": "khurd"
                 }
               ]
@@ -1253,20 +1253,20 @@
             {
               "id": "ge-06-4",
               "type": "fillBlank",
-              "dari": "آب ___ خوب است",
+              "target": "آب ___ خوب است",
               "translit": "āb-e ___ khōb ast",
               "en": "Cold water is good.",
               "answer": {
-                "dari": "سرد",
+                "target": "سرد",
                 "translit": "sard"
               },
               "distractors": [
                 {
-                  "dari": "گرم",
+                  "target": "گرم",
                   "translit": "garm"
                 },
                 {
-                  "dari": "کلان",
+                  "target": "کلان",
                   "translit": "kalān"
                 }
               ]
@@ -1277,22 +1277,22 @@
               "prompt": "Match the phrases",
               "pairs": [
                 {
-                  "dari": "چای گرم",
+                  "target": "چای گرم",
                   "translit": "chāy-e garm",
                   "en": "hot tea"
                 },
                 {
-                  "dari": "آب سرد",
+                  "target": "آب سرد",
                   "translit": "āb-e sard",
                   "en": "cold water"
                 },
                 {
-                  "dari": "کتاب نو",
+                  "target": "کتاب نو",
                   "translit": "ketāb-e naw",
                   "en": "new book"
                 },
                 {
-                  "dari": "خانه کلان",
+                  "target": "خانه کلان",
                   "translit": "khāna-ye kalān",
                   "en": "big house"
                 }
@@ -1301,17 +1301,17 @@
             {
               "id": "ge-06-6",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "قلم نو من اینجا است",
+              "direction": "toTarget",
+              "target": "قلم نو من اینجا است",
               "translit": "qalam-e naw-e man īnjā ast",
               "en": "My new pen is here.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "قلم من اینجا است",
+                  "target": "قلم من اینجا است",
                   "translit": "qalam-e man īnjā ast"
                 },
                 {
-                  "dari": "قلم نو تو اینجا است",
+                  "target": "قلم نو تو اینجا است",
                   "translit": "qalam-e naw-e tu īnjā ast"
                 }
               ]
@@ -1322,30 +1322,30 @@
               "en": "She is my good sister.",
               "words": [
                 {
-                  "dari": "او",
+                  "target": "او",
                   "translit": "ō"
                 },
                 {
-                  "dari": "خواهر",
+                  "target": "خواهر",
                   "translit": "khāhar-e"
                 },
                 {
-                  "dari": "خوب",
+                  "target": "خوب",
                   "translit": "khōb-e"
                 },
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ],
               "translit": "ō khāhar-e khōb-e man ast",
               "extraWords": [
                 {
-                  "dari": "برادر",
+                  "target": "برادر",
                   "translit": "barādar-e"
                 }
               ]
@@ -1390,13 +1390,13 @@
               ],
               "examples": [
                 {
-                  "dari": "من در کابل هستم",
+                  "target": "من در کابل هستم",
                   "translit": "man dar kābul hastam",
                   "en": "I am in Kabul.",
                   "highlight": "در"
                 },
                 {
-                  "dari": "او از افغانستان است",
+                  "target": "او از افغانستان است",
                   "translit": "ō az afghānestān ast",
                   "en": "He is from Afghanistan.",
                   "highlight": "از"
@@ -1409,12 +1409,12 @@
               "body": "Combine prepositions with what you already know - questions, ezāfa, plurals.",
               "examples": [
                 {
-                  "dari": "خانه تو کجا است؟",
+                  "target": "خانه تو کجا است؟",
                   "translit": "khāna-ye tu kujā ast?",
                   "en": "Where is your house?"
                 },
                 {
-                  "dari": "او با پدر من است",
+                  "target": "او با پدر من است",
                   "translit": "ō bā padar-e man ast",
                   "en": "He is with my father.",
                   "highlight": "با"
@@ -1426,20 +1426,20 @@
             {
               "id": "ge-07-1",
               "type": "fillBlank",
-              "dari": "من ___ کابل هستم",
+              "target": "من ___ کابل هستم",
               "translit": "man ___ kābul hastam",
               "en": "I am in Kabul.",
               "answer": {
-                "dari": "در",
+                "target": "در",
                 "translit": "dar"
               },
               "distractors": [
                 {
-                  "dari": "از",
+                  "target": "از",
                   "translit": "az"
                 },
                 {
-                  "dari": "به",
+                  "target": "به",
                   "translit": "ba"
                 }
               ]
@@ -1447,20 +1447,20 @@
             {
               "id": "ge-07-2",
               "type": "fillBlank",
-              "dari": "او ___ افغانستان است",
+              "target": "او ___ افغانستان است",
               "translit": "ō ___ afghānestān ast",
               "en": "He is from Afghanistan.",
               "answer": {
-                "dari": "از",
+                "target": "از",
                 "translit": "az"
               },
               "distractors": [
                 {
-                  "dari": "در",
+                  "target": "در",
                   "translit": "dar"
                 },
                 {
-                  "dari": "با",
+                  "target": "با",
                   "translit": "bā"
                 }
               ]
@@ -1469,7 +1469,7 @@
               "id": "ge-07-3",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "او با پدر من است",
+              "target": "او با پدر من است",
               "translit": "ō bā padar-e man ast",
               "en": "He is with my father.",
               "distractorsEn": [
@@ -1483,26 +1483,26 @@
               "en": "We are at school.",
               "words": [
                 {
-                  "dari": "ما",
+                  "target": "ما",
                   "translit": "mā"
                 },
                 {
-                  "dari": "در",
+                  "target": "در",
                   "translit": "dar"
                 },
                 {
-                  "dari": "مکتب",
+                  "target": "مکتب",
                   "translit": "maktab"
                 },
                 {
-                  "dari": "هستیم",
+                  "target": "هستیم",
                   "translit": "hastēm"
                 }
               ],
               "translit": "mā dar maktab hastēm",
               "extraWords": [
                 {
-                  "dari": "از",
+                  "target": "از",
                   "translit": "az"
                 }
               ]
@@ -1513,22 +1513,22 @@
               "prompt": "Match the prepositions",
               "pairs": [
                 {
-                  "dari": "در",
+                  "target": "در",
                   "translit": "dar",
                   "en": "in, at"
                 },
                 {
-                  "dari": "از",
+                  "target": "از",
                   "translit": "az",
                   "en": "from"
                 },
                 {
-                  "dari": "با",
+                  "target": "با",
                   "translit": "bā",
                   "en": "with"
                 },
                 {
-                  "dari": "به",
+                  "target": "به",
                   "translit": "ba",
                   "en": "to"
                 }
@@ -1537,17 +1537,17 @@
             {
               "id": "ge-07-6",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "بازار آنجا است",
+              "direction": "toTarget",
+              "target": "بازار آنجا است",
               "translit": "bāzār ānjā ast",
               "en": "The bazaar is there.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "بازار اینجا است",
+                  "target": "بازار اینجا است",
                   "translit": "bāzār īnjā ast"
                 },
                 {
-                  "dari": "خانه آنجا است",
+                  "target": "خانه آنجا است",
                   "translit": "khāna ānjā ast"
                 }
               ]
@@ -1555,20 +1555,20 @@
             {
               "id": "ge-07-7",
               "type": "fillBlank",
-              "dari": "مادر من ___ خانه است",
+              "target": "مادر من ___ خانه است",
               "translit": "mādar-e man ___ khāna ast",
               "en": "My mother is at home.",
               "answer": {
-                "dari": "در",
+                "target": "در",
                 "translit": "dar"
               },
               "distractors": [
                 {
-                  "dari": "با",
+                  "target": "با",
                   "translit": "bā"
                 },
                 {
-                  "dari": "از",
+                  "target": "از",
                   "translit": "az"
                 }
               ]
@@ -1588,13 +1588,13 @@
               "body": "hast says something exists; nēst says it doesn't. Perfect for what's in the house, the room, the market.",
               "examples": [
                 {
-                  "dari": "در خانه یک کتاب هست",
+                  "target": "در خانه یک کتاب هست",
                   "translit": "dar khāna yak ketāb hast",
                   "en": "There is a book in the house.",
                   "highlight": "هست"
                 },
                 {
-                  "dari": "در اتاق آب نیست",
+                  "target": "در اتاق آب نیست",
                   "translit": "dar utāq āb nēst",
                   "en": "There is no water in the room.",
                   "highlight": "نیست"
@@ -1607,13 +1607,13 @@
               "body": "ast links two ideas - the tea IS hot. hast says something exists - there IS tea.",
               "examples": [
                 {
-                  "dari": "چای گرم است",
+                  "target": "چای گرم است",
                   "translit": "chāy garm ast",
                   "en": "The tea is hot.",
                   "highlight": "است"
                 },
                 {
-                  "dari": "چای هست",
+                  "target": "چای هست",
                   "translit": "chāy hast",
                   "en": "There is tea.",
                   "highlight": "هست"
@@ -1625,20 +1625,20 @@
             {
               "id": "ge-08-1",
               "type": "fillBlank",
-              "dari": "در خانه یک کتاب ___",
+              "target": "در خانه یک کتاب ___",
               "translit": "dar khāna yak ketāb ___",
               "en": "There is a book in the house.",
               "answer": {
-                "dari": "هست",
+                "target": "هست",
                 "translit": "hast"
               },
               "distractors": [
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 },
                 {
-                  "dari": "نیست",
+                  "target": "نیست",
                   "translit": "nēst"
                 }
               ]
@@ -1646,20 +1646,20 @@
             {
               "id": "ge-08-2",
               "type": "fillBlank",
-              "dari": "در اتاق آب ___",
+              "target": "در اتاق آب ___",
               "translit": "dar utāq āb ___",
               "en": "There is no water in the room.",
               "answer": {
-                "dari": "نیست",
+                "target": "نیست",
                 "translit": "nēst"
               },
               "distractors": [
                 {
-                  "dari": "هست",
+                  "target": "هست",
                   "translit": "hast"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ]
@@ -1668,7 +1668,7 @@
               "id": "ge-08-3",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "در مکتب معلم هست",
+              "target": "در مکتب معلم هست",
               "translit": "dar maktab mu'allem hast",
               "en": "There is a teacher at the school.",
               "distractorsEn": [
@@ -1682,26 +1682,26 @@
               "en": "There is tea in the house.",
               "words": [
                 {
-                  "dari": "در",
+                  "target": "در",
                   "translit": "dar"
                 },
                 {
-                  "dari": "خانه",
+                  "target": "خانه",
                   "translit": "khāna"
                 },
                 {
-                  "dari": "چای",
+                  "target": "چای",
                   "translit": "chāy"
                 },
                 {
-                  "dari": "هست",
+                  "target": "هست",
                   "translit": "hast"
                 }
               ],
               "translit": "dar khāna chāy hast",
               "extraWords": [
                 {
-                  "dari": "نیست",
+                  "target": "نیست",
                   "translit": "nēst"
                 }
               ]
@@ -1712,22 +1712,22 @@
               "prompt": "Match the forms of 'to be'",
               "pairs": [
                 {
-                  "dari": "هست",
+                  "target": "هست",
                   "translit": "hast",
                   "en": "there is"
                 },
                 {
-                  "dari": "نیست",
+                  "target": "نیست",
                   "translit": "nēst",
                   "en": "there isn't"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast",
                   "en": "is"
                 },
                 {
-                  "dari": "هستند",
+                  "target": "هستند",
                   "translit": "hastand",
                   "en": "they are"
                 }
@@ -1736,17 +1736,17 @@
             {
               "id": "ge-08-6",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "نان نیست",
+              "direction": "toTarget",
+              "target": "نان نیست",
               "translit": "nān nēst",
               "en": "There is no bread.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "نان هست",
+                  "target": "نان هست",
                   "translit": "nān hast"
                 },
                 {
-                  "dari": "نان خوب نیست",
+                  "target": "نان خوب نیست",
                   "translit": "nān khōb nēst"
                 }
               ]
@@ -1754,20 +1754,20 @@
             {
               "id": "ge-08-7",
               "type": "fillBlank",
-              "dari": "اینجا یک مکتب ___",
+              "target": "اینجا یک مکتب ___",
               "translit": "īnjā yak maktab ___",
               "en": "There is a school here.",
               "answer": {
-                "dari": "هست",
+                "target": "هست",
                 "translit": "hast"
               },
               "distractors": [
                 {
-                  "dari": "نیست",
+                  "target": "نیست",
                   "translit": "nēst"
                 },
                 {
-                  "dari": "هستند",
+                  "target": "هستند",
                   "translit": "hastand"
                 }
               ]
@@ -1820,7 +1820,7 @@
               ],
               "examples": [
                 {
-                  "dari": "من دو برادر دارم",
+                  "target": "من دو برادر دارم",
                   "translit": "man dū barādar dāram",
                   "en": "I have two brothers.",
                   "highlight": "دارم"
@@ -1859,13 +1859,13 @@
               ],
               "examples": [
                 {
-                  "dari": "تو چند خواهر داری؟",
+                  "target": "تو چند خواهر داری؟",
                   "translit": "tu chand khāhar dāri?",
                   "en": "How many sisters do you have?",
                   "highlight": "چند"
                 },
                 {
-                  "dari": "من سه خواهر دارم",
+                  "target": "من سه خواهر دارم",
                   "translit": "man se khāhar dāram",
                   "en": "I have three sisters."
                 }
@@ -1876,20 +1876,20 @@
             {
               "id": "ge-09-1",
               "type": "fillBlank",
-              "dari": "من دو برادر ___",
+              "target": "من دو برادر ___",
               "translit": "man dū barādar ___",
               "en": "I have two brothers.",
               "answer": {
-                "dari": "دارم",
+                "target": "دارم",
                 "translit": "dāram"
               },
               "distractors": [
                 {
-                  "dari": "داری",
+                  "target": "داری",
                   "translit": "dāri"
                 },
                 {
-                  "dari": "دارد",
+                  "target": "دارد",
                   "translit": "dārad"
                 }
               ]
@@ -1897,20 +1897,20 @@
             {
               "id": "ge-09-2",
               "type": "fillBlank",
-              "dari": "او یک خواهر ___",
+              "target": "او یک خواهر ___",
               "translit": "ō yak khāhar ___",
               "en": "She has one sister.",
               "answer": {
-                "dari": "دارد",
+                "target": "دارد",
                 "translit": "dārad"
               },
               "distractors": [
                 {
-                  "dari": "دارم",
+                  "target": "دارم",
                   "translit": "dāram"
                 },
                 {
-                  "dari": "دارند",
+                  "target": "دارند",
                   "translit": "dārand"
                 }
               ]
@@ -1919,7 +1919,7 @@
               "id": "ge-09-3",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "ما یک خانه کلان داریم",
+              "target": "ما یک خانه کلان داریم",
               "translit": "mā yak khāna-ye kalān dārēm",
               "en": "We have a big house.",
               "distractorsEn": [
@@ -1933,22 +1933,22 @@
               "en": "Do you have tea?",
               "words": [
                 {
-                  "dari": "تو",
+                  "target": "تو",
                   "translit": "tu"
                 },
                 {
-                  "dari": "چای",
+                  "target": "چای",
                   "translit": "chāy"
                 },
                 {
-                  "dari": "داری",
+                  "target": "داری",
                   "translit": "dāri"
                 }
               ],
               "translit": "tu chāy dāri?",
               "extraWords": [
                 {
-                  "dari": "دارم",
+                  "target": "دارم",
                   "translit": "dāram"
                 }
               ]
@@ -1956,20 +1956,20 @@
             {
               "id": "ge-09-5",
               "type": "fillBlank",
-              "dari": "تو ___ برادر داری؟",
+              "target": "تو ___ برادر داری؟",
               "translit": "tu ___ barādar dāri?",
               "en": "How many brothers do you have?",
               "answer": {
-                "dari": "چند",
+                "target": "چند",
                 "translit": "chand"
               },
               "distractors": [
                 {
-                  "dari": "چی",
+                  "target": "چی",
                   "translit": "che"
                 },
                 {
-                  "dari": "کجا",
+                  "target": "کجا",
                   "translit": "kujā"
                 }
               ]
@@ -1980,22 +1980,22 @@
               "prompt": "Match the numbers",
               "pairs": [
                 {
-                  "dari": "یک",
+                  "target": "یک",
                   "translit": "yak",
                   "en": "one"
                 },
                 {
-                  "dari": "دو",
+                  "target": "دو",
                   "translit": "dū",
                   "en": "two"
                 },
                 {
-                  "dari": "سه",
+                  "target": "سه",
                   "translit": "se",
                   "en": "three"
                 },
                 {
-                  "dari": "پنج",
+                  "target": "پنج",
                   "translit": "panj",
                   "en": "five"
                 }
@@ -2004,17 +2004,17 @@
             {
               "id": "ge-09-7",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "من پنج کتاب دارم",
+              "direction": "toTarget",
+              "target": "من پنج کتاب دارم",
               "translit": "man panj ketāb dāram",
               "en": "I have five books.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "من پنج کتاب‌ها دارم",
+                  "target": "من پنج کتاب‌ها دارم",
                   "translit": "man panj ketāb-hā dāram"
                 },
                 {
-                  "dari": "من چهار کتاب دارم",
+                  "target": "من چهار کتاب دارم",
                   "translit": "man chār ketāb dāram"
                 }
               ]
@@ -2022,20 +2022,20 @@
             {
               "id": "ge-09-8",
               "type": "fillBlank",
-              "dari": "آنها چهار قلم ___",
+              "target": "آنها چهار قلم ___",
               "translit": "ānhā chār qalam ___",
               "en": "They have four pens.",
               "answer": {
-                "dari": "دارند",
+                "target": "دارند",
                 "translit": "dārand"
               },
               "distractors": [
                 {
-                  "dari": "دارم",
+                  "target": "دارم",
                   "translit": "dāram"
                 },
                 {
-                  "dari": "داریم",
+                  "target": "داریم",
                   "translit": "dārēm"
                 }
               ]
@@ -2081,7 +2081,7 @@
               ],
               "examples": [
                 {
-                  "dari": "من دری می‌خوانم",
+                  "target": "من دری می‌خوانم",
                   "translit": "man darī mēkhānam",
                   "en": "I read Dari.",
                   "highlight": "می‌خوانم"
@@ -2112,13 +2112,13 @@
               ],
               "examples": [
                 {
-                  "dari": "او به مکتب می‌رود",
+                  "target": "او به مکتب می‌رود",
                   "translit": "ō ba maktab mērawad",
                   "en": "He goes to school.",
                   "highlight": "می‌رود"
                 },
                 {
-                  "dari": "ما نان می‌خوریم",
+                  "target": "ما نان می‌خوریم",
                   "translit": "mā nān mēkhurēm",
                   "en": "We eat bread.",
                   "highlight": "می‌خوریم"
@@ -2131,7 +2131,7 @@
               "body": "Subject, then everything else, then the verb. khurdan covers both eating and drinking.",
               "examples": [
                 {
-                  "dari": "من چای می‌خورم",
+                  "target": "من چای می‌خورم",
                   "translit": "man chāy mēkhuram",
                   "en": "I drink tea.",
                   "highlight": "می‌خورم"
@@ -2143,20 +2143,20 @@
             {
               "id": "ge-10-1",
               "type": "fillBlank",
-              "dari": "من دری ___",
+              "target": "من دری ___",
               "translit": "man darī ___",
               "en": "I read Dari.",
               "answer": {
-                "dari": "می‌خوانم",
+                "target": "می‌خوانم",
                 "translit": "mēkhānam"
               },
               "distractors": [
                 {
-                  "dari": "می‌خوانی",
+                  "target": "می‌خوانی",
                   "translit": "mēkhāni"
                 },
                 {
-                  "dari": "می‌خواند",
+                  "target": "می‌خواند",
                   "translit": "mēkhānad"
                 }
               ]
@@ -2164,20 +2164,20 @@
             {
               "id": "ge-10-2",
               "type": "fillBlank",
-              "dari": "او به مکتب ___",
+              "target": "او به مکتب ___",
               "translit": "ō ba maktab ___",
               "en": "He goes to school.",
               "answer": {
-                "dari": "می‌رود",
+                "target": "می‌رود",
                 "translit": "mērawad"
               },
               "distractors": [
                 {
-                  "dari": "می‌روم",
+                  "target": "می‌روم",
                   "translit": "mērawam"
                 },
                 {
-                  "dari": "می‌روی",
+                  "target": "می‌روی",
                   "translit": "mērawi"
                 }
               ]
@@ -2186,7 +2186,7 @@
               "id": "ge-10-3",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "ما نان می‌خوریم",
+              "target": "ما نان می‌خوریم",
               "translit": "mā nān mēkhurēm",
               "en": "We eat bread.",
               "distractorsEn": [
@@ -2200,22 +2200,22 @@
               "en": "I drink tea.",
               "words": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "چای",
+                  "target": "چای",
                   "translit": "chāy"
                 },
                 {
-                  "dari": "می‌خورم",
+                  "target": "می‌خورم",
                   "translit": "mēkhuram"
                 }
               ],
               "translit": "man chāy mēkhuram",
               "extraWords": [
                 {
-                  "dari": "می‌خورد",
+                  "target": "می‌خورد",
                   "translit": "mēkhurad"
                 }
               ]
@@ -2223,20 +2223,20 @@
             {
               "id": "ge-10-5",
               "type": "fillBlank",
-              "dari": "آنها کار ___",
+              "target": "آنها کار ___",
               "translit": "ānhā kār ___",
               "en": "They work.",
               "answer": {
-                "dari": "می‌کنند",
+                "target": "می‌کنند",
                 "translit": "mēkunand"
               },
               "distractors": [
                 {
-                  "dari": "می‌کنم",
+                  "target": "می‌کنم",
                   "translit": "mēkunam"
                 },
                 {
-                  "dari": "می‌کنیم",
+                  "target": "می‌کنیم",
                   "translit": "mēkunēm"
                 }
               ]
@@ -2247,22 +2247,22 @@
               "prompt": "Match verb and meaning",
               "pairs": [
                 {
-                  "dari": "می‌روم",
+                  "target": "می‌روم",
                   "translit": "mērawam",
                   "en": "I go"
                 },
                 {
-                  "dari": "می‌خورم",
+                  "target": "می‌خورم",
                   "translit": "mēkhuram",
                   "en": "I eat"
                 },
                 {
-                  "dari": "می‌بینم",
+                  "target": "می‌بینم",
                   "translit": "mēbīnam",
                   "en": "I see"
                 },
                 {
-                  "dari": "می‌خوانم",
+                  "target": "می‌خوانم",
                   "translit": "mēkhānam",
                   "en": "I read"
                 }
@@ -2271,17 +2271,17 @@
             {
               "id": "ge-10-7",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "شما دری می‌خوانید",
+              "direction": "toTarget",
+              "target": "شما دری می‌خوانید",
               "translit": "shumā darī mēkhānēd",
               "en": "You (plural) read Dari.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "شما دری می‌خوانی",
+                  "target": "شما دری می‌خوانی",
                   "translit": "shumā darī mēkhāni"
                 },
                 {
-                  "dari": "ما دری می‌خوانیم",
+                  "target": "ما دری می‌خوانیم",
                   "translit": "mā darī mēkhānēm"
                 }
               ]
@@ -2301,13 +2301,13 @@
               "body": "When you act on a SPECIFIC thing - the book, that house - mark it with rā. Without rā it stays general.",
               "examples": [
                 {
-                  "dari": "من کتاب را می‌خوانم",
+                  "target": "من کتاب را می‌خوانم",
                   "translit": "man ketāb rā mēkhānam",
                   "en": "I read the book.",
                   "highlight": "را"
                 },
                 {
-                  "dari": "من کتاب می‌خوانم",
+                  "target": "من کتاب می‌خوانم",
                   "translit": "man ketāb mēkhānam",
                   "en": "I read books."
                 }
@@ -2319,7 +2319,7 @@
               "body": "rā comes after the complete object phrase, ezāfa chain and all.",
               "examples": [
                 {
-                  "dari": "او برادر من را می‌بیند",
+                  "target": "او برادر من را می‌بیند",
                   "translit": "ō barādar-e man rā mēbīnad",
                   "en": "He sees my brother.",
                   "highlight": "را"
@@ -2331,20 +2331,20 @@
             {
               "id": "ge-11-1",
               "type": "fillBlank",
-              "dari": "من کتاب ___ می‌خوانم",
+              "target": "من کتاب ___ می‌خوانم",
               "translit": "man ketāb ___ mēkhānam",
               "en": "I read the book.",
               "answer": {
-                "dari": "را",
+                "target": "را",
                 "translit": "rā"
               },
               "distractors": [
                 {
-                  "dari": "و",
+                  "target": "و",
                   "translit": "wa"
                 },
                 {
-                  "dari": "هم",
+                  "target": "هم",
                   "translit": "ham"
                 }
               ]
@@ -2353,7 +2353,7 @@
               "id": "ge-11-2",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "او نان را می‌خورد",
+              "target": "او نان را می‌خورد",
               "translit": "ō nān rā mēkhurad",
               "en": "He eats the bread.",
               "distractorsEn": [
@@ -2367,26 +2367,26 @@
               "en": "I see the teacher.",
               "words": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "معلم",
+                  "target": "معلم",
                   "translit": "mu'allem"
                 },
                 {
-                  "dari": "را",
+                  "target": "را",
                   "translit": "rā"
                 },
                 {
-                  "dari": "می‌بینم",
+                  "target": "می‌بینم",
                   "translit": "mēbīnam"
                 }
               ],
               "translit": "man mu'allem rā mēbīnam",
               "extraWords": [
                 {
-                  "dari": "و",
+                  "target": "و",
                   "translit": "wa"
                 }
               ]
@@ -2394,20 +2394,20 @@
             {
               "id": "ge-11-4",
               "type": "fillBlank",
-              "dari": "ما آن خانه ___ می‌بینیم",
+              "target": "ما آن خانه ___ می‌بینیم",
               "translit": "mā ān khāna ___ mēbīnēm",
               "en": "We see that house.",
               "answer": {
-                "dari": "را",
+                "target": "را",
                 "translit": "rā"
               },
               "distractors": [
                 {
-                  "dari": "هم",
+                  "target": "هم",
                   "translit": "ham"
                 },
                 {
-                  "dari": "از",
+                  "target": "از",
                   "translit": "az"
                 }
               ]
@@ -2415,17 +2415,17 @@
             {
               "id": "ge-11-5",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "او کتاب را می‌خواند",
+              "direction": "toTarget",
+              "target": "او کتاب را می‌خواند",
               "translit": "ō ketāb rā mēkhānad",
               "en": "She reads the book.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "او کتاب می‌خواند",
+                  "target": "او کتاب می‌خواند",
                   "translit": "ō ketāb mēkhānad"
                 },
                 {
-                  "dari": "او کتاب را خواند",
+                  "target": "او کتاب را خواند",
                   "translit": "ō ketāb rā khānd"
                 }
               ]
@@ -2436,30 +2436,30 @@
               "en": "You see my house.",
               "words": [
                 {
-                  "dari": "تو",
+                  "target": "تو",
                   "translit": "tu"
                 },
                 {
-                  "dari": "خانه",
+                  "target": "خانه",
                   "translit": "khāna-ye"
                 },
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "را",
+                  "target": "را",
                   "translit": "rā"
                 },
                 {
-                  "dari": "می‌بینی",
+                  "target": "می‌بینی",
                   "translit": "mēbīni"
                 }
               ],
               "translit": "tu khāna-ye man rā mēbīni",
               "extraWords": [
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ]
@@ -2467,20 +2467,20 @@
             {
               "id": "ge-11-7",
               "type": "fillBlank",
-              "dari": "تو چای ___ می‌خوری؟",
+              "target": "تو چای ___ می‌خوری؟",
               "translit": "tu chāy ___ mēkhuri?",
               "en": "Are you drinking the tea?",
               "answer": {
-                "dari": "را",
+                "target": "را",
                 "translit": "rā"
               },
               "distractors": [
                 {
-                  "dari": "و",
+                  "target": "و",
                   "translit": "wa"
                 },
                 {
-                  "dari": "از",
+                  "target": "از",
                   "translit": "az"
                 }
               ]
@@ -2500,13 +2500,13 @@
               "body": "Turn mē- into namē- and the sentence flips to 'don't'.",
               "examples": [
                 {
-                  "dari": "من نان نمی‌خورم",
+                  "target": "من نان نمی‌خورم",
                   "translit": "man nān namēkhuram",
                   "en": "I don't eat bread.",
                   "highlight": "نمی‌خورم"
                 },
                 {
-                  "dari": "او به بازار نمی‌رود",
+                  "target": "او به بازار نمی‌رود",
                   "translit": "ō ba bāzār namērawad",
                   "en": "He doesn't go to the bazaar.",
                   "highlight": "نمی‌رود"
@@ -2545,7 +2545,7 @@
               ],
               "examples": [
                 {
-                  "dari": "من معلم نیستم",
+                  "target": "من معلم نیستم",
                   "translit": "man mu'allem nēstam",
                   "en": "I am not a teacher.",
                   "highlight": "نیستم"
@@ -2558,7 +2558,7 @@
               "body": "dāshtan takes plain na-: nadāram, nadāri, nadārad…",
               "examples": [
                 {
-                  "dari": "من چای ندارم",
+                  "target": "من چای ندارم",
                   "translit": "man chāy nadāram",
                   "en": "I don't have tea.",
                   "highlight": "ندارم"
@@ -2570,20 +2570,20 @@
             {
               "id": "ge-12-1",
               "type": "fillBlank",
-              "dari": "من نان ___",
+              "target": "من نان ___",
               "translit": "man nān ___",
               "en": "I don't eat bread.",
               "answer": {
-                "dari": "نمی‌خورم",
+                "target": "نمی‌خورم",
                 "translit": "namēkhuram"
               },
               "distractors": [
                 {
-                  "dari": "می‌خورم",
+                  "target": "می‌خورم",
                   "translit": "mēkhuram"
                 },
                 {
-                  "dari": "نمی‌خورد",
+                  "target": "نمی‌خورد",
                   "translit": "namēkhurad"
                 }
               ]
@@ -2591,20 +2591,20 @@
             {
               "id": "ge-12-2",
               "type": "fillBlank",
-              "dari": "او معلم ___",
+              "target": "او معلم ___",
               "translit": "ō mu'allem ___",
               "en": "He is not a teacher.",
               "answer": {
-                "dari": "نیست",
+                "target": "نیست",
                 "translit": "nēst"
               },
               "distractors": [
                 {
-                  "dari": "نیستم",
+                  "target": "نیستم",
                   "translit": "nēstam"
                 },
                 {
-                  "dari": "است",
+                  "target": "است",
                   "translit": "ast"
                 }
               ]
@@ -2613,7 +2613,7 @@
               "id": "ge-12-3",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "ما به بازار نمی‌رویم",
+              "target": "ما به بازار نمی‌رویم",
               "translit": "mā ba bāzār namērawēm",
               "en": "We don't go to the bazaar.",
               "distractorsEn": [
@@ -2624,20 +2624,20 @@
             {
               "id": "ge-12-4",
               "type": "fillBlank",
-              "dari": "من قلم ___",
+              "target": "من قلم ___",
               "translit": "man qalam ___",
               "en": "I don't have a pen.",
               "answer": {
-                "dari": "ندارم",
+                "target": "ندارم",
                 "translit": "nadāram"
               },
               "distractors": [
                 {
-                  "dari": "دارم",
+                  "target": "دارم",
                   "translit": "dāram"
                 },
                 {
-                  "dari": "نداری",
+                  "target": "نداری",
                   "translit": "nadāri"
                 }
               ]
@@ -2648,22 +2648,22 @@
               "en": "I am not a student.",
               "words": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "شاگرد",
+                  "target": "شاگرد",
                   "translit": "shāgerd"
                 },
                 {
-                  "dari": "نیستم",
+                  "target": "نیستم",
                   "translit": "nēstam"
                 }
               ],
               "translit": "man shāgerd nēstam",
               "extraWords": [
                 {
-                  "dari": "هستم",
+                  "target": "هستم",
                   "translit": "hastam"
                 }
               ]
@@ -2671,17 +2671,17 @@
             {
               "id": "ge-12-6",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "او کار نمی‌کند",
+              "direction": "toTarget",
+              "target": "او کار نمی‌کند",
               "translit": "ō kār namēkunad",
               "en": "He doesn't work.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "او کار می‌کند",
+                  "target": "او کار می‌کند",
                   "translit": "ō kār mēkunad"
                 },
                 {
-                  "dari": "او کار نکرد",
+                  "target": "او کار نکرد",
                   "translit": "ō kār nakard"
                 }
               ]
@@ -2692,22 +2692,22 @@
               "prompt": "Match yes and no",
               "pairs": [
                 {
-                  "dari": "می‌روم",
+                  "target": "می‌روم",
                   "translit": "mērawam",
                   "en": "I go"
                 },
                 {
-                  "dari": "نمی‌روم",
+                  "target": "نمی‌روم",
                   "translit": "namērawam",
                   "en": "I don't go"
                 },
                 {
-                  "dari": "دارم",
+                  "target": "دارم",
                   "translit": "dāram",
                   "en": "I have"
                 },
                 {
-                  "dari": "ندارم",
+                  "target": "ندارم",
                   "translit": "nadāram",
                   "en": "I don't have"
                 }
@@ -2761,7 +2761,7 @@
               ],
               "examples": [
                 {
-                  "dari": "دیروز به بازار رفتم",
+                  "target": "دیروز به بازار رفتم",
                   "translit": "dīrōz ba bāzār raftam",
                   "en": "Yesterday I went to the bazaar.",
                   "highlight": "رفتم"
@@ -2774,13 +2774,13 @@
               "body": "dīrōz - yesterday, emrōz - today, fardā - tomorrow. They usually open the sentence.",
               "examples": [
                 {
-                  "dari": "دیروز کار کردم",
+                  "target": "دیروز کار کردم",
                   "translit": "dīrōz kār kardam",
                   "en": "Yesterday I worked.",
                   "highlight": "دیروز"
                 },
                 {
-                  "dari": "او امروز آمد",
+                  "target": "او امروز آمد",
                   "translit": "ō emrōz āmad",
                   "en": "He came today.",
                   "highlight": "آمد"
@@ -2792,20 +2792,20 @@
             {
               "id": "ge-13-1",
               "type": "fillBlank",
-              "dari": "دیروز من به بازار ___",
+              "target": "دیروز من به بازار ___",
               "translit": "dīrōz man ba bāzār ___",
               "en": "Yesterday I went to the bazaar.",
               "answer": {
-                "dari": "رفتم",
+                "target": "رفتم",
                 "translit": "raftam"
               },
               "distractors": [
                 {
-                  "dari": "رفت",
+                  "target": "رفت",
                   "translit": "raft"
                 },
                 {
-                  "dari": "می‌روم",
+                  "target": "می‌روم",
                   "translit": "mērawam"
                 }
               ]
@@ -2813,20 +2813,20 @@
             {
               "id": "ge-13-2",
               "type": "fillBlank",
-              "dari": "او دیروز ___",
+              "target": "او دیروز ___",
               "translit": "ō dīrōz ___",
               "en": "He came yesterday.",
               "answer": {
-                "dari": "آمد",
+                "target": "آمد",
                 "translit": "āmad"
               },
               "distractors": [
                 {
-                  "dari": "آمدم",
+                  "target": "آمدم",
                   "translit": "āmadam"
                 },
                 {
-                  "dari": "می‌آید",
+                  "target": "می‌آید",
                   "translit": "mēāyad"
                 }
               ]
@@ -2835,7 +2835,7 @@
               "id": "ge-13-3",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "ما نان خوردیم",
+              "target": "ما نان خوردیم",
               "translit": "mā nān khurdēm",
               "en": "We ate bread.",
               "distractorsEn": [
@@ -2849,26 +2849,26 @@
               "en": "I saw the teacher.",
               "words": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "معلم",
+                  "target": "معلم",
                   "translit": "mu'allem"
                 },
                 {
-                  "dari": "را",
+                  "target": "را",
                   "translit": "rā"
                 },
                 {
-                  "dari": "دیدم",
+                  "target": "دیدم",
                   "translit": "dīdam"
                 }
               ],
               "translit": "man mu'allem rā dīdam",
               "extraWords": [
                 {
-                  "dari": "دید",
+                  "target": "دید",
                   "translit": "dīd"
                 }
               ]
@@ -2876,20 +2876,20 @@
             {
               "id": "ge-13-5",
               "type": "fillBlank",
-              "dari": "تو چای ___",
+              "target": "تو چای ___",
               "translit": "tu chāy ___",
               "en": "You drank tea.",
               "answer": {
-                "dari": "خوردی",
+                "target": "خوردی",
                 "translit": "khurdi"
               },
               "distractors": [
                 {
-                  "dari": "خوردم",
+                  "target": "خوردم",
                   "translit": "khurdam"
                 },
                 {
-                  "dari": "می‌خوری",
+                  "target": "می‌خوری",
                   "translit": "mēkhuri"
                 }
               ]
@@ -2900,22 +2900,22 @@
               "prompt": "Match present and past",
               "pairs": [
                 {
-                  "dari": "می‌روم",
+                  "target": "می‌روم",
                   "translit": "mērawam",
                   "en": "I go"
                 },
                 {
-                  "dari": "رفتم",
+                  "target": "رفتم",
                   "translit": "raftam",
                   "en": "I went"
                 },
                 {
-                  "dari": "می‌بینم",
+                  "target": "می‌بینم",
                   "translit": "mēbīnam",
                   "en": "I see"
                 },
                 {
-                  "dari": "دیدم",
+                  "target": "دیدم",
                   "translit": "dīdam",
                   "en": "I saw"
                 }
@@ -2924,17 +2924,17 @@
             {
               "id": "ge-13-7",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "آنها به خانه رفتند",
+              "direction": "toTarget",
+              "target": "آنها به خانه رفتند",
               "translit": "ānhā ba khāna raftand",
               "en": "They went home.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "آنها به خانه می‌روند",
+                  "target": "آنها به خانه می‌روند",
                   "translit": "ānhā ba khāna mērawand"
                 },
                 {
-                  "dari": "او به خانه رفت",
+                  "target": "او به خانه رفت",
                   "translit": "ō ba khāna raft"
                 }
               ]
@@ -2954,13 +2954,13 @@
               "body": "The past negates with a simple na- in front: kardam → nakardam.",
               "examples": [
                 {
-                  "dari": "من دیروز کار نکردم",
+                  "target": "من دیروز کار نکردم",
                   "translit": "man dīrōz kār nakardam",
                   "en": "I didn't work yesterday.",
                   "highlight": "نکردم"
                 },
                 {
-                  "dari": "او به مکتب نرفت",
+                  "target": "او به مکتب نرفت",
                   "translit": "ō ba maktab naraft",
                   "en": "He didn't go to school.",
                   "highlight": "نرفت"
@@ -2973,7 +2973,7 @@
               "body": "That's the whole A1 toolkit: to be, plurals, ezāfa, prepositions, hast, dāshtan, the present, rā, negation and the past. These last exercises mix everything.",
               "examples": [
                 {
-                  "dari": "من دری می‌خوانم و دیروز یک کتاب خواندم",
+                  "target": "من دری می‌خوانم و دیروز یک کتاب خواندم",
                   "translit": "man darī mēkhānam wa dīrōz yak ketāb khāndam",
                   "en": "I study Dari, and yesterday I read a book."
                 }
@@ -2984,20 +2984,20 @@
             {
               "id": "ge-14-1",
               "type": "fillBlank",
-              "dari": "من دیروز کار ___",
+              "target": "من دیروز کار ___",
               "translit": "man dīrōz kār ___",
               "en": "I didn't work yesterday.",
               "answer": {
-                "dari": "نکردم",
+                "target": "نکردم",
                 "translit": "nakardam"
               },
               "distractors": [
                 {
-                  "dari": "کردم",
+                  "target": "کردم",
                   "translit": "kardam"
                 },
                 {
-                  "dari": "نمی‌کنم",
+                  "target": "نمی‌کنم",
                   "translit": "namēkunam"
                 }
               ]
@@ -3005,20 +3005,20 @@
             {
               "id": "ge-14-2",
               "type": "fillBlank",
-              "dari": "او به مکتب ___",
+              "target": "او به مکتب ___",
               "translit": "ō ba maktab ___",
               "en": "He didn't go to school.",
               "answer": {
-                "dari": "نرفت",
+                "target": "نرفت",
                 "translit": "naraft"
               },
               "distractors": [
                 {
-                  "dari": "رفت",
+                  "target": "رفت",
                   "translit": "raft"
                 },
                 {
-                  "dari": "نرفتم",
+                  "target": "نرفتم",
                   "translit": "naraftam"
                 }
               ]
@@ -3027,7 +3027,7 @@
               "id": "ge-14-3",
               "type": "chooseTranslation",
               "direction": "toEn",
-              "dari": "ما آن کتاب را نخواندیم",
+              "target": "ما آن کتاب را نخواندیم",
               "translit": "mā ān ketāb rā nakhāndēm",
               "en": "We didn't read that book.",
               "distractorsEn": [
@@ -3041,26 +3041,26 @@
               "en": "Yesterday I went to the city.",
               "words": [
                 {
-                  "dari": "دیروز",
+                  "target": "دیروز",
                   "translit": "dīrōz"
                 },
                 {
-                  "dari": "به",
+                  "target": "به",
                   "translit": "ba"
                 },
                 {
-                  "dari": "شهر",
+                  "target": "شهر",
                   "translit": "shahr"
                 },
                 {
-                  "dari": "رفتم",
+                  "target": "رفتم",
                   "translit": "raftam"
                 }
               ],
               "translit": "dīrōz ba shahr raftam",
               "extraWords": [
                 {
-                  "dari": "نرفتم",
+                  "target": "نرفتم",
                   "translit": "naraftam"
                 }
               ],
@@ -3069,20 +3069,20 @@
             {
               "id": "ge-14-5",
               "type": "fillBlank",
-              "dari": "من دو برادر ___",
+              "target": "من دو برادر ___",
               "translit": "man dū barādar ___",
               "en": "I have two brothers.",
               "answer": {
-                "dari": "دارم",
+                "target": "دارم",
                 "translit": "dāram"
               },
               "distractors": [
                 {
-                  "dari": "داری",
+                  "target": "داری",
                   "translit": "dāri"
                 },
                 {
-                  "dari": "ندارم",
+                  "target": "ندارم",
                   "translit": "nadāram"
                 }
               ]
@@ -3090,17 +3090,17 @@
             {
               "id": "ge-14-6",
               "type": "chooseTranslation",
-              "direction": "toDari",
-              "dari": "در خانه آب نیست",
+              "direction": "toTarget",
+              "target": "در خانه آب نیست",
               "translit": "dar khāna āb nēst",
               "en": "There is no water in the house.",
-              "distractorsDari": [
+              "distractorsTarget": [
                 {
-                  "dari": "در خانه آب هست",
+                  "target": "در خانه آب هست",
                   "translit": "dar khāna āb hast"
                 },
                 {
-                  "dari": "در خانه آب است",
+                  "target": "در خانه آب است",
                   "translit": "dar khāna āb ast"
                 }
               ]
@@ -3111,27 +3111,27 @@
               "prompt": "Match - the grand finale",
               "pairs": [
                 {
-                  "dari": "رفتم",
+                  "target": "رفتم",
                   "translit": "raftam",
                   "en": "I went"
                 },
                 {
-                  "dari": "نرفتم",
+                  "target": "نرفتم",
                   "translit": "naraftam",
                   "en": "I didn't go"
                 },
                 {
-                  "dari": "می‌روم",
+                  "target": "می‌روم",
                   "translit": "mērawam",
                   "en": "I go"
                 },
                 {
-                  "dari": "نمی‌روم",
+                  "target": "نمی‌روم",
                   "translit": "namērawam",
                   "en": "I don't go"
                 },
                 {
-                  "dari": "دارم",
+                  "target": "دارم",
                   "translit": "dāram",
                   "en": "I have"
                 }
@@ -3143,26 +3143,26 @@
               "en": "I don't drink cold water.",
               "words": [
                 {
-                  "dari": "من",
+                  "target": "من",
                   "translit": "man"
                 },
                 {
-                  "dari": "آب",
+                  "target": "آب",
                   "translit": "āb-e"
                 },
                 {
-                  "dari": "سرد",
+                  "target": "سرد",
                   "translit": "sard"
                 },
                 {
-                  "dari": "نمی‌خورم",
+                  "target": "نمی‌خورم",
                   "translit": "namēkhuram"
                 }
               ],
               "translit": "man āb-e sard namēkhuram",
               "extraWords": [
                 {
-                  "dari": "می‌خورم",
+                  "target": "می‌خورم",
                   "translit": "mēkhuram"
                 }
               ]

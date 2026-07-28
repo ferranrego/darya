@@ -2,12 +2,12 @@
   "id": "tx-seed-l3-001",
   "formatVersion": "1.3.0",
   "level": "L3",
-  "titleDari": "سفر به هرات",
+  "titleTarget": "سفر به هرات",
   "titleTranslit": "safar ba herāt",
   "titleEn": "A trip to Herat",
   "sentences": [
     {
-      "dari": "ما به هرات سفر کردیم.",
+      "target": "ما به هرات سفر کردیم.",
       "translit": "mā ba herāt safar kardēm.",
       "en": "We traveled to Herat.",
       "tokens": [
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "dari": "هرات شهر قدیمی است.",
+      "target": "هرات شهر قدیمی است.",
       "translit": "herāt shahr-e qadīmī ast.",
       "en": "Herat is an ancient city.",
       "tokens": [
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "dari": "انگور هرات مشهور است.",
+      "target": "انگور هرات مشهور است.",
       "translit": "angūr-e herāt mash'hūr ast.",
       "en": "Herat's grapes are famous.",
       "tokens": [
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "dari": "مردم آنجا مهربان هستند.",
+      "target": "مردم آنجا مهربان هستند.",
       "translit": "mardum-e ānjā mehrabān hastand.",
       "en": "The people there are kind.",
       "tokens": [
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "dari": "سفر ما پنج روز بود.",
+      "target": "سفر ما پنج روز بود.",
       "translit": "safar-e mā panj rōz būd.",
       "en": "Our trip was five days.",
       "tokens": [

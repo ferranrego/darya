@@ -69,7 +69,7 @@ export default function HistoryPage() {
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 lang="prs" className="text-[20px] font-medium leading-snug">
-                      {doc.titleDari}
+                      {doc.titleTarget}
                     </h3>
                     <p className="text-[14px] text-ink-soft mt-0.5">
                       {doc.titleEn}

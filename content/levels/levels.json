@@ -5,9 +5,14 @@
       "id": "L1",
       "name": "First words",
       "cefrHint": "pre-A1",
-      "freqBands": [1],
+      "freqBands": [
+        1
+      ],
       "entryKnownWords": 0,
-      "sentenceRange": [2, 3],
+      "sentenceRange": [
+        2,
+        3
+      ],
       "sentenceLengthHint": "strictly max 7 words per sentence, simple subject-object-verb",
       "grammarAllowed": [
         "present tense of budan (ast, hastam, hastēm)",
@@ -20,9 +25,15 @@
       "id": "L2",
       "name": "Daily life",
       "cefrHint": "A1",
-      "freqBands": [1, 2],
+      "freqBands": [
+        1,
+        2
+      ],
       "entryKnownWords": 500,
-      "sentenceRange": [2, 3],
+      "sentenceRange": [
+        2,
+        3
+      ],
       "sentenceLengthHint": "strictly max 7 words per sentence",
       "grammarAllowed": [
         "present tense mē- verbs",
@@ -35,9 +46,16 @@
       "id": "L3",
       "name": "Short stories",
       "cefrHint": "A2",
-      "freqBands": [1, 2, 3],
+      "freqBands": [
+        1,
+        2,
+        3
+      ],
       "entryKnownWords": 1200,
-      "sentenceRange": [3, 4],
+      "sentenceRange": [
+        3,
+        4
+      ],
       "sentenceLengthHint": "strictly max 9 words per sentence, may connect with wa/amā/chun",
       "grammarAllowed": [
         "past and present tenses",
@@ -50,9 +68,17 @@
       "id": "L4",
       "name": "Real texts",
       "cefrHint": "B1",
-      "freqBands": [1, 2, 3, 4],
+      "freqBands": [
+        1,
+        2,
+        3,
+        4
+      ],
       "entryKnownWords": 2500,
-      "sentenceRange": [4, 6],
+      "sentenceRange": [
+        4,
+        6
+      ],
       "sentenceLengthHint": "strictly max 14 words per sentence",
       "grammarAllowed": [
         "perfect tenses (rafta ast)",
@@ -65,9 +91,19 @@
       "id": "L5",
       "name": "Culture & ideas",
       "cefrHint": "B2",
-      "freqBands": [1, 2, 3, 4, 5, 6],
+      "freqBands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
       "entryKnownWords": 4000,
-      "sentenceRange": [5, 8],
+      "sentenceRange": [
+        5,
+        8
+      ],
       "sentenceLengthHint": "strictly max 18 words per sentence",
       "grammarAllowed": [
         "subjunctive (bāyad berawad)",
@@ -80,11 +116,25 @@
       "id": "L6",
       "name": "Near-native",
       "cefrHint": "C1",
-      "freqBands": [1, 2, 3, 4, 5, 6, 7, 8],
+      "freqBands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
       "entryKnownWords": 6000,
-      "sentenceRange": [6, 10],
+      "sentenceRange": [
+        6,
+        10
+      ],
       "sentenceLengthHint": "strictly max 22 words per sentence",
-      "grammarAllowed": ["unrestricted, including literary forms and poetry excerpts"]
+      "grammarAllowed": [
+        "unrestricted, including literary forms and poetry excerpts"
+      ]
     }
   ]
 }

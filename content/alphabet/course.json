@@ -699,7 +699,7 @@
         {
           "id": "au04-e11",
           "type": "readSentence",
-          "dari": "هوا خوب است.",
+          "target": "هوا خوب است.",
           "translit": "hawā khōb ast.",
           "en": "The weather is good.",
           "hint": "است (ast) = 'is'. You can read every letter in it."
@@ -881,7 +881,7 @@
         {
           "id": "au05-e11",
           "type": "readSentence",
-          "dari": "کابل کلان است.",
+          "target": "کابل کلان است.",
           "translit": "kābul kalān ast.",
           "en": "Kabul is big."
         },
@@ -1075,7 +1075,7 @@
         {
           "id": "au06-e11",
           "type": "readSentence",
-          "dari": "چای گرم است.",
+          "target": "چای گرم است.",
           "translit": "chāy garm ast.",
           "en": "The tea is hot."
         },
@@ -1278,7 +1278,7 @@
         {
           "id": "au07-e12",
           "type": "readSentence",
-          "dari": "پدر در باغ است.",
+          "target": "پدر در باغ است.",
           "translit": "padar dar bāgh ast.",
           "en": "Father is in the garden."
         },
@@ -1556,14 +1556,14 @@
         {
           "id": "au08-e14",
           "type": "readSentence",
-          "dari": "عید مبارک!",
+          "target": "عید مبارک!",
           "translit": "ēd mubārak!",
           "en": "Happy Eid!"
         },
         {
           "id": "au08-e15",
           "type": "readSentence",
-          "dari": "صبح چای می‌خورم.",
+          "target": "صبح چای می‌خورم.",
           "translit": "subh chāy mēkhuram.",
           "en": "In the morning I drink tea.",
           "hint": "می‌ (mē-) glues to the verb with an invisible joiner. You'll see it everywhere."

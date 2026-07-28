@@ -72,7 +72,7 @@ export default function AlphabetReadingPage() {
           <div className="flex flex-col items-center max-w-md w-full gap-8">
             <div className="rounded-3xl border border-line bg-surface p-8 w-full shadow-sm">
               <p lang="prs" className="text-[36px] font-bold text-ink leading-normal" dir="rtl">
-                {sentence.dari}
+                {sentence.target}
               </p>
             </div>
             

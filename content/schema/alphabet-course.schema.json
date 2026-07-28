@@ -48,6 +48,9 @@
                   "type": "string",
                   "minLength": 1
                 },
+                "note": {
+                  "type": "string"
+                },
                 "forms": {
                   "type": "object",
                   "properties": {
@@ -270,7 +273,7 @@
                       "type": "string",
                       "const": "readSentence"
                     },
-                    "dari": {
+                    "target": {
                       "type": "string",
                       "minLength": 1
                     },
@@ -285,7 +288,7 @@
                   "required": [
                     "id",
                     "type",
-                    "dari",
+                    "target",
                     "translit",
                     "en"
                   ],

@@ -10,18 +10,18 @@ export type Segment =
  * keeping every word tappable.
  */
 export function segmentSentence(sentence: Sentence): Segment[] {
-  const { dari, tokens } = sentence;
+  const { target, tokens } = sentence;
   const segments: Segment[] = [];
   let cursor = 0;
 
   tokens.forEach((token, tokenIndex) => {
-    const at = dari.indexOf(token.surface, cursor);
+    const at = target.indexOf(token.surface, cursor);
     if (at === -1) return;
-    if (at > cursor) segments.push({ kind: "text", text: dari.slice(cursor, at) });
+    if (at > cursor) segments.push({ kind: "text", text: target.slice(cursor, at) });
     segments.push({ kind: "word", token, tokenIndex });
     cursor = at + token.surface.length;
   });
-  if (cursor < dari.length) segments.push({ kind: "text", text: dari.slice(cursor) });
+  if (cursor < target.length) segments.push({ kind: "text", text: target.slice(cursor) });
 
   return segments;
 }

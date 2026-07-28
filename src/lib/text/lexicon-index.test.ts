@@ -6,9 +6,9 @@ import { conjugationSurfaces, derivePastStem, VERB_OVERRIDES } from "./conjugate
 import { buildLexiconIndex } from "./lexicon-index.ts";
 import { matchKey, ZWNJ } from "./normalize.ts";
 
-function entry(partial: Partial<LexiconEntry> & { id: string; dari: string }): LexiconEntry {
+function entry(partial: Partial<LexiconEntry> & { id: string; target: string }): LexiconEntry {
   return {
-    dariNormalized: partial.dari,
+    targetNormalized: partial.target,
     translit: "x",
     glossEn: "x",
     pos: "noun",
@@ -16,7 +16,7 @@ function entry(partial: Partial<LexiconEntry> & { id: string; dari: string }): L
     freqBand: 1,
     register: "neutral",
     variants: [],
-    exampleDari: "x",
+    exampleTarget: "x",
     exampleTranslit: "x",
     exampleEn: "x",
     tags: [],
@@ -27,10 +27,10 @@ function entry(partial: Partial<LexiconEntry> & { id: string; dari: string }): L
 describe("resolve precedence (synthetic)", () => {
   it("an authored headword beats a generated conjugation on the same key", () => {
     // درد (pain, noun) collides with در+د, a subjunctive parse of دریدن's stem.
-    const pain = entry({ id: "lx-0001", dari: "درد", pos: "noun", freqRank: 1 });
+    const pain = entry({ id: "lx-0001", target: "درد", pos: "noun", freqRank: 1 });
     const daridan = entry({
       id: "lx-0002",
-      dari: "دریدن",
+      target: "دریدن",
       pos: "verb",
       freqRank: 2,
       presentStem: "در",
@@ -42,8 +42,8 @@ describe("resolve precedence (synthetic)", () => {
 
   it("earlier (more frequent) verbs win contested conjugation keys", () => {
     // خفتن (stem خواب) generates می‌خوابم, same as خوابیدن's paradigm.
-    const khabidan = entry({ id: "lx-0001", dari: "خوابیدن", pos: "verb", freqRank: 1, presentStem: "خواب" });
-    const khoftan = entry({ id: "lx-0002", dari: "خفتن", pos: "verb", freqRank: 2, presentStem: "خواب" });
+    const khabidan = entry({ id: "lx-0001", target: "خوابیدن", pos: "verb", freqRank: 1, presentStem: "خواب" });
+    const khoftan = entry({ id: "lx-0002", target: "خفتن", pos: "verb", freqRank: 2, presentStem: "خواب" });
     const idx = buildLexiconIndex([khabidan, khoftan]);
     expect(idx.resolve(`می${ZWNJ}خوابم`)?.id).toBe("lx-0001");
     expect(idx.resolve("خفتم")?.id).toBe("lx-0002"); // uncontested past stays put
@@ -52,7 +52,7 @@ describe("resolve precedence (synthetic)", () => {
   it("compound carrier conjugates its light verb only when no simple entry owns it", () => {
     const carrier = entry({
       id: "lx-0001",
-      dari: "خجالت کشیدن",
+      target: "خجالت کشیدن",
       pos: "verb",
       freqRank: 1,
       presentStem: "کش",
@@ -84,28 +84,51 @@ describe("resolve against the real lexicon", () => {
     ["بخرم", "خریدن"], // subjunctive, long-tail verb
     ["می‌بارد", "باریدن"], // present 3sg
     ["خواهم", "خواستن"], // future auxiliary resolves via variants/conjugations
+
+    // می‌کنم used to be its own headword glossed "I do (present)", which
+    // outranked the generated conjugation and shadowed کردن - while می‌کند
+    // resolved correctly. Assert both, since the inconsistency was the symptom.
+    ["می‌کنم", "کردن"],
+    ["می‌کند", "کردن"],
+
+    // Suppletive budan: not derivable from any stem pair, so authored in
+    // SUPPLETIVE_FORMS. The subjunctive was entirely unresolvable before.
+    ["باشم", "بودن"],
+    ["نباشند", "بودن"],
+    ["هست", "بودن"],
+    ["می‌توان", "توانستن"], // impersonal, no personal ending
   ];
   it.each(cases)("%s → %s", (surface, infinitive) => {
-    expect(idx.resolve(surface)?.dari).toBe(infinitive);
+    expect(idx.resolve(surface)?.target).toBe(infinitive);
   });
 
   it("does not hijack nouns: خانه‌ام → خانه", () => {
-    expect(idx.resolve("خانه‌ام")?.dari).toBe("خانه");
+    expect(idx.resolve("خانه‌ام")?.target).toBe("خانه");
   });
 
   it("still returns null for actual names", () => {
     expect(idx.resolve("فرشته‌جان")).toBeNull();
   });
 
+  it("rejects the malformed forms the deleted scraper accepted", () => {
+    // buildAllowedFormKeys derived stems from می‌-variants and mis-stripped the
+    // 3sg ـد as the 3pl ـند on ن-final stems, so می‌کند yielded "ک" and می‌بیند
+    // yielded "بی". ~240 forms like these were whitelisted as valid Dari that
+    // the AI was free to put in front of learners.
+    for (const bogus of ["می‌کم", "می‌بیم", "ببیم", "نکی", "می‌زم", "می‌مام"]) {
+      expect(idx.resolve(bogus), bogus).toBeNull();
+    }
+  });
+
   it("every verb with a presentStem round-trips its core generated forms", () => {
     const verbs = entries.filter(
-      (e) => e.pos === "verb" && e.presentStem && !e.dariNormalized.includes(" ")
+      (e) => e.pos === "verb" && e.presentStem && !e.targetNormalized.includes(" ")
     );
     expect(verbs.length).toBeGreaterThan(100);
     let sameId = 0;
     for (const v of verbs) {
-      const override = VERB_OVERRIDES[matchKey(v.dariNormalized)];
-      const pastStem = derivePastStem(v.dariNormalized)!;
+      const override = VERB_OVERRIDES[matchKey(v.targetNormalized)];
+      const pastStem = derivePastStem(v.targetNormalized)!;
       const surfaces = conjugationSurfaces({
         pastStem: override?.prefix ? pastStem.slice(override.prefix.length) : pastStem,
         presentStem: override?.presentStem ?? v.presentStem ?? null,
@@ -117,7 +140,7 @@ describe("resolve against the real lexicon", () => {
         const hit = idx.resolve(s);
         // Every generated form must resolve to SOME entry (homographs may
         // legitimately claim a key), never fall through to null.
-        expect(hit, `${v.dari}: ${s}`).not.toBeNull();
+        expect(hit, `${v.target}: ${s}`).not.toBeNull();
         if (hit!.id !== v.id) allSame = false;
       }
       if (allSame) sameId++;

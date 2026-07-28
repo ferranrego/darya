@@ -16,11 +16,17 @@ import {
   type LevelsFile,
   type TextDocument,
 } from "../src/lib/content/schema.ts";
-import { buildAllowedFormKeys } from "../src/lib/text/dari-forms.ts";
 import { buildLexiconIndex } from "../src/lib/text/lexicon-index.ts";
-import { matchKey, normalizeDari, tokenizeDari } from "../src/lib/text/normalize.ts";
+import { matchKey, normalizeDari, tokenizeDari, ZWNJ } from "../src/lib/text/normalize.ts";
 
 const root = join(import.meta.dirname, "..", "content");
+
+/**
+ * Verb entries that are legitimately not infinitives: high-frequency finite
+ * forms (است، باشد) and a modal (باید) kept as standalone headwords because
+ * learners meet them constantly and look them up by themselves.
+ */
+const VERB_POS_EXEMPT = new Set(["lx-0010", "lx-0287", "lx-0290"]);
 let errors = 0;
 
 function fail(msg: string) {
@@ -46,10 +52,10 @@ if (existsSync(lexiconPath)) {
     for (const e of lexicon.entries) {
       if (ids.has(e.id)) fail(`lexicon: duplicate id ${e.id}`);
       ids.add(e.id);
-      if (e.dariNormalized !== normalizeDari(e.dariNormalized)) {
-        fail(`lexicon ${e.id}: dariNormalized not normalized (${e.dariNormalized})`);
+      if (e.targetNormalized !== normalizeDari(e.targetNormalized)) {
+        fail(`lexicon ${e.id}: targetNormalized not normalized (${e.targetNormalized})`);
       }
-      const key = matchKey(e.dariNormalized);
+      const key = matchKey(e.targetNormalized);
       const clash = keys.get(key);
       if (clash) fail(`lexicon: ${e.id} and ${clash} share match key "${key}"`);
       keys.set(key, e.id);
@@ -60,6 +66,29 @@ if (existsSync(lexiconPath)) {
         if (e.presentStem !== normalizeDari(e.presentStem)) {
           fail(`lexicon ${e.id}: presentStem not normalized (${e.presentStem})`);
         }
+      }
+      // A Dari verb entry is an infinitive: it ends in دن/تن, or is a compound
+      // whose light verb does. Without this, a whole freqRank block of adverbs
+      // once shipped tagged pos="verb" - which colours them as verbs in the
+      // reader and strips context off their SRS cards. The exemptions are
+      // genuine high-frequency finite forms kept as standalone entries.
+      if (e.pos === "verb" && !VERB_POS_EXEMPT.has(e.id)) {
+        const head = e.targetNormalized.split(" ").at(-1)!;
+        if (!/(دن|تن)$/.test(head)) {
+          fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" is not an infinitive`);
+        }
+      }
+      // Compounds must be space-separated so lexicon-index can spot the light
+      // verb; a ZWNJ standing in for the space (استخدام‌کردن) silently defeats
+      // that. A ZWNJ *inside* a part is fine (هیجان‌زده شدن), so only flag
+      // entries that have no space at all.
+      if (
+        e.pos === "verb" &&
+        !e.targetNormalized.includes(" ") &&
+        e.targetNormalized.includes(ZWNJ) &&
+        /(دن|تن)$/.test(e.targetNormalized)
+      ) {
+        fail(`lexicon ${e.id}: compound verb joined with ZWNJ, use a space (${e.targetNormalized})`);
       }
     }
     console.log(`✓ lexicon.json (${lexicon.entries.length} entries)`);
@@ -119,49 +148,47 @@ if (existsSync(coursePath)) {
 // --- Grammar courses (one file per CEFR level) -----------------------------
 {
   const index = lexicon ? buildLexiconIndex(lexicon.entries) : null;
-  const allowedForms = lexicon ? buildAllowedFormKeys(lexicon.entries) : new Set<string>();
 
   // ids must be globally unique across every level file.
   const blockIds = new Set<string>();
   const lessonIds = new Set<string>();
   const exerciseIds = new Set<string>();
 
-  function checkVocab(where: string, dari: string, warn: () => void) {
+  function checkVocab(where: string, target: string, warn: () => void) {
     if (!index) return;
-    for (const token of tokenizeDari(dari)) {
+    for (const token of tokenizeDari(target)) {
       if (token === "___") continue;
       if (index.resolve(token)) continue;
-      if (allowedForms.has(matchKey(token))) continue;
       warn();
       console.warn(`⚠ grammar ${where}: "${token}" not in lexicon`);
     }
   }
 
-  function checkNormalized(where: string, dari: string) {
-    if (dari !== normalizeDari(dari)) fail(`grammar ${where}: Dari not normalized ("${dari}")`);
+  function checkNormalized(where: string, target: string) {
+    if (target !== normalizeDari(target)) fail(`grammar ${where}: Dari not normalized ("${target}")`);
   }
 
   function checkExercise(where: string, ex: GrammarExercise, warn: () => void) {
     switch (ex.type) {
       case "fillBlank": {
-        checkNormalized(where, ex.dari);
-        checkNormalized(`${where} answer`, ex.answer.dari);
-        const answerKey = normalizeDari(ex.answer.dari);
+        checkNormalized(where, ex.target);
+        checkNormalized(`${where} answer`, ex.answer.target);
+        const answerKey = normalizeDari(ex.answer.target);
         for (const d of ex.distractors) {
-          checkNormalized(`${where} distractor`, d.dari);
-          if (normalizeDari(d.dari) === answerKey) fail(`${where}: distractor equals answer ("${d.dari}")`);
+          checkNormalized(`${where} distractor`, d.target);
+          if (normalizeDari(d.target) === answerKey) fail(`${where}: distractor equals answer ("${d.target}")`);
         }
-        checkVocab(where, ex.dari.replace("___", ex.answer.dari), warn);
+        checkVocab(where, ex.target.replace("___", ex.answer.target), warn);
         break;
       }
       case "buildSentence": {
-        const wordKeys = new Set(ex.words.map((w) => normalizeDari(w.dari)));
-        for (const w of [...ex.words, ...ex.extraWords]) checkNormalized(where, w.dari);
+        const wordKeys = new Set(ex.words.map((w) => normalizeDari(w.target)));
+        for (const w of [...ex.words, ...ex.extraWords]) checkNormalized(where, w.target);
         for (const x of ex.extraWords) {
-          if (wordKeys.has(normalizeDari(x.dari))) fail(`${where}: extraWord duplicates a sentence word ("${x.dari}")`);
+          if (wordKeys.has(normalizeDari(x.target))) fail(`${where}: extraWord duplicates a sentence word ("${x.target}")`);
         }
         // Every alternate ordering must be a permutation of the sentence words.
-        const sortedWords = ex.words.map((w) => normalizeDari(w.dari)).sort();
+        const sortedWords = ex.words.map((w) => normalizeDari(w.target)).sort();
         for (const order of ex.altOrders) {
           const sortedOrder = order.map((d) => normalizeDari(d)).sort();
           const isPermutation =
@@ -169,52 +196,52 @@ if (existsSync(coursePath)) {
             sortedOrder.every((d, i) => d === sortedWords[i]);
           if (!isPermutation) fail(`${where}: altOrder is not a permutation of words ("${order.join(" ")}")`);
         }
-        checkVocab(where, ex.words.map((w) => w.dari).join(" "), warn);
+        checkVocab(where, ex.words.map((w) => w.target).join(" "), warn);
         break;
       }
       case "chooseTranslation": {
-        checkNormalized(where, ex.dari);
+        checkNormalized(where, ex.target);
         if (ex.direction === "toEn" && ex.distractorsEn.length < 2) {
           fail(`${where}: toEn needs at least 2 distractorsEn`);
         }
-        if (ex.direction === "toDari" && ex.distractorsDari.length < 2) {
-          fail(`${where}: toDari needs at least 2 distractorsDari`);
+        if (ex.direction === "toTarget" && ex.distractorsTarget.length < 2) {
+          fail(`${where}: toTarget needs at least 2 distractorsTarget`);
         }
         if (ex.distractorsEn.includes(ex.en)) fail(`${where}: distractorsEn contains the answer`);
-        const dariKey = normalizeDari(ex.dari);
-        for (const d of ex.distractorsDari) {
-          checkNormalized(`${where} distractor`, d.dari);
-          if (normalizeDari(d.dari) === dariKey) fail(`${where}: distractorsDari contains the answer`);
+        const targetKey = normalizeDari(ex.target);
+        for (const d of ex.distractorsTarget) {
+          checkNormalized(`${where} distractor`, d.target);
+          if (normalizeDari(d.target) === targetKey) fail(`${where}: distractorsTarget contains the answer`);
         }
-        checkVocab(where, ex.dari, warn);
+        checkVocab(where, ex.target, warn);
         break;
       }
       case "matchPairs": {
-        const dariSeen = new Set<string>();
+        const targetSeen = new Set<string>();
         const enSeen = new Set<string>();
         for (const p of ex.pairs) {
-          checkNormalized(where, p.dari);
-          const dk = normalizeDari(p.dari);
-          if (dariSeen.has(dk)) fail(`${where}: duplicate pair Dari "${p.dari}"`);
+          checkNormalized(where, p.target);
+          const dk = normalizeDari(p.target);
+          if (targetSeen.has(dk)) fail(`${where}: duplicate pair Dari "${p.target}"`);
           if (enSeen.has(p.en)) fail(`${where}: duplicate pair English "${p.en}"`);
-          dariSeen.add(dk);
+          targetSeen.add(dk);
           enSeen.add(p.en);
-          checkVocab(where, p.dari, warn);
+          checkVocab(where, p.target, warn);
         }
         break;
       }
       case "spotError": {
-        checkNormalized(where, ex.dari);
-        checkNormalized(`${where} correction`, ex.correction.dari);
-        const tokens = tokenizeDari(ex.dari).map((t) => normalizeDari(t));
-        if (!tokens.includes(normalizeDari(ex.errorWord.dari))) {
-          fail(`${where}: errorWord "${ex.errorWord.dari}" is not a token of the sentence`);
+        checkNormalized(where, ex.target);
+        checkNormalized(`${where} correction`, ex.correction.target);
+        const tokens = tokenizeDari(ex.target).map((t) => normalizeDari(t));
+        if (!tokens.includes(normalizeDari(ex.errorWord.target))) {
+          fail(`${where}: errorWord "${ex.errorWord.target}" is not a token of the sentence`);
         }
-        if (normalizeDari(ex.errorWord.dari) === normalizeDari(ex.correction.dari)) {
+        if (normalizeDari(ex.errorWord.target) === normalizeDari(ex.correction.target)) {
           fail(`${where}: correction equals errorWord`);
         }
         // Vocab-check the corrected sentence, not the (deliberately wrong) one.
-        const corrected = ex.dari.replace(ex.errorWord.dari, ex.correction.dari);
+        const corrected = ex.target.replace(ex.errorWord.target, ex.correction.target);
         checkVocab(where, corrected, warn);
         break;
       }
@@ -252,11 +279,11 @@ if (existsSync(coursePath)) {
         lessonCount++;
         for (const slide of lesson.slides) {
           for (const exm of slide.examples) {
-            checkNormalized(`${lesson.id}/${slide.id}`, exm.dari);
-            if (exm.highlight && !exm.dari.includes(exm.highlight)) {
-              fail(`grammar ${lesson.id}/${slide.id}: highlight "${exm.highlight}" not in "${exm.dari}"`);
+            checkNormalized(`${lesson.id}/${slide.id}`, exm.target);
+            if (exm.highlight && !exm.target.includes(exm.highlight)) {
+              fail(`grammar ${lesson.id}/${slide.id}: highlight "${exm.highlight}" not in "${exm.target}"`);
             }
-            checkVocab(`${lesson.id}/${slide.id}`, exm.dari, warn);
+            checkVocab(`${lesson.id}/${slide.id}`, exm.target, warn);
           }
         }
         for (const ex of lesson.exercises) {

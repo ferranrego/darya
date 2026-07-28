@@ -39,11 +39,11 @@ const GOALS = [
   { value: 60, label: "60 XP" },
 ];
 
-const FONTS: { value: ReadingFont; label: string; desc: string; dariPreview?: boolean }[] = [
-  { value: "vazirmatn", label: "Vazirmatn", desc: "Modern UI", dariPreview: true },
-  { value: "scheherazade", label: "Scheherazade", desc: "Traditional", dariPreview: true },
-  { value: "amiri", label: "Amiri", desc: "Classic Serif", dariPreview: true },
-  { value: "lateef", label: "Lateef", desc: "Elegant Naskh", dariPreview: true },
+const FONTS: { value: ReadingFont; label: string; desc: string; targetPreview?: boolean }[] = [
+  { value: "vazirmatn", label: "Vazirmatn", desc: "Modern UI", targetPreview: true },
+  { value: "scheherazade", label: "Scheherazade", desc: "Traditional", targetPreview: true },
+  { value: "amiri", label: "Amiri", desc: "Classic Serif", targetPreview: true },
+  { value: "lateef", label: "Lateef", desc: "Elegant Naskh", targetPreview: true },
 ];
 
 export default function ProfilePage() {

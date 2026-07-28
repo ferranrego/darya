@@ -2,7 +2,7 @@
 "use client";
 
 import { useMutation } from "@tanstack/react-query";
-import { Check, RotateCcw, Sparkles, Brain, BookOpen, TrendingUp } from "lucide-react";
+import { Check, Sparkles, Brain, BookOpen, TrendingUp } from "lucide-react";
 import { AnimatePresence, motion, useMotionValue, useTransform, animate } from "motion/react";
 import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState, useEffect } from "react";
@@ -175,9 +175,9 @@ export default function ReviewPage() {
 
   const pool = useMemo(() => {
     const p = [...generatedSentences];
-    if (row?.context_dari && !p.some((s) => s.dari === row.context_dari)) {
+    if (row?.context_target && !p.some((s) => s.target === row.context_target)) {
       p.push({
-        dari: row.context_dari,
+        target: row.context_target,
         translit: row.context_translit || entry?.translit || "",
         en: row.context_en || entry?.glossEn || "",
       });
@@ -199,6 +199,14 @@ export default function ReviewPage() {
     stableContextRef.current = { index, context: chosen };
     return chosen;
   }, [pool, index]);
+
+  // A queued word whose lexeme is no longer in the shipped lexicon (removed or
+  // merged by a content edit) must not strand the session. The queue only
+  // advances through answer(), which is wired to the grade buttons rendered
+  // below - so without this the user is stuck on that card forever.
+  useEffect(() => {
+    if (row && !entry) setIndex((i) => i + 1);
+  }, [row, entry]);
 
   if (isLoading || queue === null) {
     return <div className="flex flex-1 items-center justify-center py-32 text-ink-faint">Loading…</div>;
@@ -238,8 +246,9 @@ export default function ReviewPage() {
     );
   }
 
+  // Transient: the effect above advances past this card on the next tick.
   if (!entry) {
-    return <EmptyState icon={<RotateCcw size={24} />} title="Hmm" body="A reviewed word is missing from the dictionary." />;
+    return <div className="flex flex-1 items-center justify-center py-32 text-ink-faint">Loading…</div>;
   }
 
   // Compute interval hints for the current card
@@ -250,8 +259,8 @@ export default function ReviewPage() {
   // to reinforce the infinitive). For other words, only show the stored
   // context sentence when we can actually highlight the word in it.
   const contextSegments =
-    activeContext?.dari && entry.pos !== "verb"
-      ? segmentForHighlight(activeContext.dari, entry.id)
+    activeContext?.target && entry.pos !== "verb"
+      ? segmentForHighlight(activeContext.target, entry.id)
       : null;
   const showContext = contextSegments !== null;
 
@@ -324,7 +333,7 @@ export default function ReviewPage() {
                 </p>
               ) : (
                 <p lang="prs" className="text-[52px] leading-snug cursor-default select-none">
-                  {entry.dari}
+                  {entry.target}
                 </p>
               )}
             <AnimatePresence mode="wait">
@@ -346,7 +355,7 @@ export default function ReviewPage() {
                   {/* If we showed context, still show the dictionary definition to clarify the exact word */}
                   {showContext && (
                     <div className="mt-6 flex flex-col items-center rounded-2xl bg-lapis-soft/30 px-6 py-3 border border-lapis/20">
-                      <span lang="prs" className="text-[40px] font-bold text-lapis-dark mb-1">{entry.dari}</span>
+                      <span lang="prs" className="text-[40px] font-bold text-lapis-dark mb-1">{entry.target}</span>
                       <div className="flex items-center gap-2 text-[16px] text-lapis-dark/80">
                         <span>{entry.translit}</span>
                         <span className="opacity-40">•</span>
@@ -358,7 +367,7 @@ export default function ReviewPage() {
                   {!showContext && (
                     <div className="mt-6 rounded-2xl bg-paper px-4 py-3">
                       <p lang="prs" className="text-[18px] leading-loose">
-                        {entry.exampleDari}
+                        {entry.exampleTarget}
                       </p>
                       <p className="mt-0.5 text-[12px] text-ink-faint">{entry.exampleEn}</p>
                     </div>
@@ -475,7 +484,7 @@ function SessionDone({
               const e = lexemeById(id);
               return e ? (
                 <span key={id} lang="prs" className="rounded-full bg-sabz-soft px-3.5 py-1 text-[18px] text-sabz">
-                  {e.dari}
+                  {e.target}
                 </span>
               ) : null;
             })}

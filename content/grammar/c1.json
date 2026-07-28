@@ -20,17 +20,144 @@
               "title": "agarche … bāz ham",
               "body": "agarche (although) opens a conceded fact; the main clause often answers with bāz ham (still). Together they sharpen a contrast beyond a plain amā.",
               "examples": [
-                { "dari": "اگرچه مانده بود، باز هم کار کرد", "translit": "agarche mānda būd, bāz ham kār kard", "en": "Although he was tired, he still worked.", "highlight": "اگرچه" }
+                {
+                  "target": "اگرچه مانده بود، باز هم کار کرد",
+                  "translit": "agarche mānda būd, bāz ham kār kard",
+                  "en": "Although he was tired, he still worked.",
+                  "highlight": "اگرچه"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-64-1", "type": "fillBlank", "dari": "___ مانده بود، باز هم کار کرد", "translit": "___ mānda būd, bāz ham kār kard", "en": "Although he was tired, he still worked.", "answer": { "dari": "اگرچه", "translit": "agarche" }, "distractors": [{ "dari": "چون", "translit": "chun" }, { "dari": "اگر", "translit": "agar" }] },
-            { "id": "ge-64-2", "type": "chooseTranslation", "direction": "toEn", "dari": "گرچه باران بود، باز هم رفتیم", "translit": "garche bārān būd, bāz ham raftēm", "en": "Although it was raining, we still went.", "distractorsEn": ["Because it was raining, we went.", "If it rains, we still go."] },
-            { "id": "ge-64-3", "type": "spotError", "dari": "چون مریض بود، باز هم آمد", "translit": "chun marīz būd, bāz ham āmad", "en": "Although he was sick, he still came.", "errorWord": { "dari": "چون", "translit": "chun" }, "correction": { "dari": "اگرچه", "translit": "agarche" }, "hint": "'Although' concedes a point; chun means 'because'." },
-            { "id": "ge-64-4", "type": "buildSentence", "en": "Although it was cold, we went to the bazaar.", "words": [{ "dari": "اگرچه", "translit": "agarche" }, { "dari": "سرد", "translit": "sard" }, { "dari": "بود", "translit": "būd" }, { "dari": "به بازار", "translit": "ba bāzār" }, { "dari": "رفتیم", "translit": "raftēm" }], "translit": "agarche sard būd, ba bāzār raftēm", "extraWords": [{ "dari": "چون", "translit": "chun" }] },
-            { "id": "ge-64-5", "type": "chooseTranslation", "direction": "toDari", "dari": "اگرچه پول نداشت، کتاب خرید", "translit": "agarche pūl nadāsht, ketāb kharīd", "en": "Although he had no money, he bought a book.", "distractorsDari": [{ "dari": "چون پول نداشت، کتاب نخرید", "translit": "chun pūl nadāsht, ketāb nakharīd" }, { "dari": "اگر پول نداشت، کتاب نخرید", "translit": "agar pūl nadāsht, ketāb nakharīd" }] },
-            { "id": "ge-64-6", "type": "matchPairs", "prompt": "Match the connectors", "pairs": [{ "dari": "اگرچه", "translit": "agarche", "en": "although" }, { "dari": "باز هم", "translit": "bāz ham", "en": "still, even so" }, { "dari": "چون", "translit": "chun", "en": "because" }, { "dari": "بنابراین", "translit": "binābar'īn", "en": "therefore" }] }
+            {
+              "id": "ge-64-1",
+              "type": "fillBlank",
+              "target": "___ مانده بود، باز هم کار کرد",
+              "translit": "___ mānda būd, bāz ham kār kard",
+              "en": "Although he was tired, he still worked.",
+              "answer": {
+                "target": "اگرچه",
+                "translit": "agarche"
+              },
+              "distractors": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                },
+                {
+                  "target": "اگر",
+                  "translit": "agar"
+                }
+              ]
+            },
+            {
+              "id": "ge-64-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "گرچه باران بود، باز هم رفتیم",
+              "translit": "garche bārān būd, bāz ham raftēm",
+              "en": "Although it was raining, we still went.",
+              "distractorsEn": [
+                "Because it was raining, we went.",
+                "If it rains, we still go."
+              ]
+            },
+            {
+              "id": "ge-64-3",
+              "type": "spotError",
+              "target": "چون مریض بود، باز هم آمد",
+              "translit": "chun marīz būd, bāz ham āmad",
+              "en": "Although he was sick, he still came.",
+              "errorWord": {
+                "target": "چون",
+                "translit": "chun"
+              },
+              "correction": {
+                "target": "اگرچه",
+                "translit": "agarche"
+              },
+              "hint": "'Although' concedes a point; chun means 'because'."
+            },
+            {
+              "id": "ge-64-4",
+              "type": "buildSentence",
+              "en": "Although it was cold, we went to the bazaar.",
+              "words": [
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche"
+                },
+                {
+                  "target": "سرد",
+                  "translit": "sard"
+                },
+                {
+                  "target": "بود",
+                  "translit": "būd"
+                },
+                {
+                  "target": "به بازار",
+                  "translit": "ba bāzār"
+                },
+                {
+                  "target": "رفتیم",
+                  "translit": "raftēm"
+                }
+              ],
+              "translit": "agarche sard būd, ba bāzār raftēm",
+              "extraWords": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                }
+              ]
+            },
+            {
+              "id": "ge-64-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "اگرچه پول نداشت، کتاب خرید",
+              "translit": "agarche pūl nadāsht, ketāb kharīd",
+              "en": "Although he had no money, he bought a book.",
+              "distractorsTarget": [
+                {
+                  "target": "چون پول نداشت، کتاب نخرید",
+                  "translit": "chun pūl nadāsht, ketāb nakharīd"
+                },
+                {
+                  "target": "اگر پول نداشت، کتاب نخرید",
+                  "translit": "agar pūl nadāsht, ketāb nakharīd"
+                }
+              ]
+            },
+            {
+              "id": "ge-64-6",
+              "type": "matchPairs",
+              "prompt": "Match the connectors",
+              "pairs": [
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche",
+                  "en": "although"
+                },
+                {
+                  "target": "باز هم",
+                  "translit": "bāz ham",
+                  "en": "still, even so"
+                },
+                {
+                  "target": "چون",
+                  "translit": "chun",
+                  "en": "because"
+                },
+                {
+                  "target": "بنابراین",
+                  "translit": "binābar'īn",
+                  "en": "therefore"
+                }
+              ]
+            }
           ]
         },
         {
@@ -45,18 +172,146 @@
               "title": "The escape clauses",
               "body": "magar means 'unless' or 'except'. wa gar na means 'otherwise' - it warns what happens if the first clause isn't met.",
               "examples": [
-                { "dari": "نمی‌روم مگر تو بیایی", "translit": "namērawam magar tu biāyi", "en": "I won't go unless you come.", "highlight": "مگر" },
-                { "dari": "زود بیا، وگرنه می‌رویم", "translit": "zūd biā, wa gar na mērawēm", "en": "Come soon, otherwise we'll go.", "highlight": "وگرنه" }
+                {
+                  "target": "نمی‌روم مگر تو بیایی",
+                  "translit": "namērawam magar tu biāyi",
+                  "en": "I won't go unless you come.",
+                  "highlight": "مگر"
+                },
+                {
+                  "target": "زود بیا، وگرنه می‌رویم",
+                  "translit": "zūd biā, wa gar na mērawēm",
+                  "en": "Come soon, otherwise we'll go.",
+                  "highlight": "وگرنه"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-65-1", "type": "fillBlank", "dari": "نمی‌روم ___ تو بیایی", "translit": "namērawam ___ tu biāyi", "en": "I won't go unless you come.", "answer": { "dari": "مگر", "translit": "magar" }, "distractors": [{ "dari": "چون", "translit": "chun" }, { "dari": "اگرچه", "translit": "agarche" }] },
-            { "id": "ge-65-2", "type": "chooseTranslation", "direction": "toEn", "dari": "زود بیا، وگرنه می‌رویم", "translit": "zūd biā, wa gar na mērawēm", "en": "Come soon, otherwise we'll go.", "distractorsEn": ["Come soon, because we are going.", "Come soon so that we go."] },
-            { "id": "ge-65-3", "type": "buildSentence", "en": "Sleep, otherwise you'll be tired.", "words": [{ "dari": "بخواب", "translit": "bukhāb" }, { "dari": "وگرنه", "translit": "wa gar na" }, { "dari": "مانده", "translit": "mānda" }, { "dari": "می‌شوی", "translit": "mēshawi" }], "translit": "bukhāb, wa gar na mānda mēshawi", "extraWords": [{ "dari": "چون", "translit": "chun" }] },
-            { "id": "ge-65-4", "type": "spotError", "dari": "نمی‌آیم اگرچه تو بروی", "translit": "namēāyam agarche tu burawi", "en": "I won't come unless you go.", "errorWord": { "dari": "اگرچه", "translit": "agarche" }, "correction": { "dari": "مگر", "translit": "magar" }, "hint": "'Unless' is magar, not 'although'." },
-            { "id": "ge-65-5", "type": "chooseTranslation", "direction": "toDari", "dari": "کار کن، وگرنه پول نمی‌گیری", "translit": "kār kun, wa gar na pūl namēgīri", "en": "Work, otherwise you won't get money.", "distractorsDari": [{ "dari": "کار کن چون پول می‌گیری", "translit": "kār kun chun pūl mēgīri" }, { "dari": "کار کن تا پول بگیری", "translit": "kār kun tā pūl bigīri" }] },
-            { "id": "ge-65-6", "type": "matchPairs", "prompt": "Match the meaning", "pairs": [{ "dari": "مگر", "translit": "magar", "en": "unless / except" }, { "dari": "وگرنه", "translit": "wa gar na", "en": "otherwise" }, { "dari": "اگر", "translit": "agar", "en": "if" }, { "dari": "اگرچه", "translit": "agarche", "en": "although" }] }
+            {
+              "id": "ge-65-1",
+              "type": "fillBlank",
+              "target": "نمی‌روم ___ تو بیایی",
+              "translit": "namērawam ___ tu biāyi",
+              "en": "I won't go unless you come.",
+              "answer": {
+                "target": "مگر",
+                "translit": "magar"
+              },
+              "distractors": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                },
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche"
+                }
+              ]
+            },
+            {
+              "id": "ge-65-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "زود بیا، وگرنه می‌رویم",
+              "translit": "zūd biā, wa gar na mērawēm",
+              "en": "Come soon, otherwise we'll go.",
+              "distractorsEn": [
+                "Come soon, because we are going.",
+                "Come soon so that we go."
+              ]
+            },
+            {
+              "id": "ge-65-3",
+              "type": "buildSentence",
+              "en": "Sleep, otherwise you'll be tired.",
+              "words": [
+                {
+                  "target": "بخواب",
+                  "translit": "bukhāb"
+                },
+                {
+                  "target": "وگرنه",
+                  "translit": "wa gar na"
+                },
+                {
+                  "target": "مانده",
+                  "translit": "mānda"
+                },
+                {
+                  "target": "می‌شوی",
+                  "translit": "mēshawi"
+                }
+              ],
+              "translit": "bukhāb, wa gar na mānda mēshawi",
+              "extraWords": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                }
+              ]
+            },
+            {
+              "id": "ge-65-4",
+              "type": "spotError",
+              "target": "نمی‌آیم اگرچه تو بروی",
+              "translit": "namēāyam agarche tu burawi",
+              "en": "I won't come unless you go.",
+              "errorWord": {
+                "target": "اگرچه",
+                "translit": "agarche"
+              },
+              "correction": {
+                "target": "مگر",
+                "translit": "magar"
+              },
+              "hint": "'Unless' is magar, not 'although'."
+            },
+            {
+              "id": "ge-65-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "کار کن، وگرنه پول نمی‌گیری",
+              "translit": "kār kun, wa gar na pūl namēgīri",
+              "en": "Work, otherwise you won't get money.",
+              "distractorsTarget": [
+                {
+                  "target": "کار کن چون پول می‌گیری",
+                  "translit": "kār kun chun pūl mēgīri"
+                },
+                {
+                  "target": "کار کن تا پول بگیری",
+                  "translit": "kār kun tā pūl bigīri"
+                }
+              ]
+            },
+            {
+              "id": "ge-65-6",
+              "type": "matchPairs",
+              "prompt": "Match the meaning",
+              "pairs": [
+                {
+                  "target": "مگر",
+                  "translit": "magar",
+                  "en": "unless / except"
+                },
+                {
+                  "target": "وگرنه",
+                  "translit": "wa gar na",
+                  "en": "otherwise"
+                },
+                {
+                  "target": "اگر",
+                  "translit": "agar",
+                  "en": "if"
+                },
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche",
+                  "en": "although"
+                }
+              ]
+            }
           ]
         },
         {
@@ -71,17 +326,141 @@
               "title": "Setting a term",
               "body": "ba shart-ē ke means 'on the condition that' and takes the subjunctive. It states a precise term for agreeing to something.",
               "examples": [
-                { "dari": "می‌آیم به شرطی که تو هم بیایی", "translit": "mēāyam ba shart-ē ke tu ham biāyi", "en": "I'll come, on the condition that you come too.", "highlight": "به شرطی که" }
+                {
+                  "target": "می‌آیم به شرطی که تو هم بیایی",
+                  "translit": "mēāyam ba shart-ē ke tu ham biāyi",
+                  "en": "I'll come, on the condition that you come too.",
+                  "highlight": "به شرطی که"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-66-1", "type": "fillBlank", "dari": "می‌آیم به شرطی که تو هم ___", "translit": "mēāyam ba shart-ē ke tu ham ___", "en": "I'll come, on the condition that you come too.", "answer": { "dari": "بیایی", "translit": "biāyi" }, "distractors": [{ "dari": "می‌آیی", "translit": "mēāyi" }, { "dari": "آمدی", "translit": "āmadi" }] },
-            { "id": "ge-66-2", "type": "chooseTranslation", "direction": "toEn", "dari": "کمک می‌کنم به شرطی که کار کنی", "translit": "kumak mēkunam ba shart-ē ke kār kuni", "en": "I'll help, on the condition that you work.", "distractorsEn": ["I help because you work.", "I'll help although you work."] },
-            { "id": "ge-66-3", "type": "buildSentence", "en": "I'll give the book, on the condition that you read it.", "words": [{ "dari": "کتاب را می‌دهم", "translit": "ketāb rā mēdiham" }, { "dari": "به شرطی که", "translit": "ba shart-ē ke" }, { "dari": "بخوانی", "translit": "bukhāni" }], "translit": "ketāb rā mēdiham ba shart-ē ke bukhāni", "extraWords": [{ "dari": "می‌خوانی", "translit": "mēkhāni" }] },
-            { "id": "ge-66-4", "type": "chooseTranslation", "direction": "toDari", "dari": "می‌روم به شرطی که تو بمانی", "translit": "mērawam ba shart-ē ke tu bumāni", "en": "I'll go, provided that you stay.", "distractorsDari": [{ "dari": "می‌روم اگرچه تو بمانی", "translit": "mērawam agarche tu bumāni" }, { "dari": "می‌روم چون تو می‌مانی", "translit": "mērawam chun tu mēmāni" }] },
-            { "id": "ge-66-5", "type": "fillBlank", "dari": "به یک ___ می‌آیم", "translit": "ba yak ___ mēāyam", "en": "I'll come on one condition.", "answer": { "dari": "شرط", "translit": "shart" }, "distractors": [{ "dari": "راه", "translit": "rāh" }, { "dari": "روز", "translit": "rōz" }] },
-            { "id": "ge-66-6", "type": "matchPairs", "prompt": "Match the conditional linkers", "pairs": [{ "dari": "به شرطی که", "translit": "ba shart-ē ke", "en": "on condition that" }, { "dari": "مگر", "translit": "magar", "en": "unless" }, { "dari": "اگر", "translit": "agar", "en": "if" }, { "dari": "وگرنه", "translit": "wa gar na", "en": "otherwise" }] }
+            {
+              "id": "ge-66-1",
+              "type": "fillBlank",
+              "target": "می‌آیم به شرطی که تو هم ___",
+              "translit": "mēāyam ba shart-ē ke tu ham ___",
+              "en": "I'll come, on the condition that you come too.",
+              "answer": {
+                "target": "بیایی",
+                "translit": "biāyi"
+              },
+              "distractors": [
+                {
+                  "target": "می‌آیی",
+                  "translit": "mēāyi"
+                },
+                {
+                  "target": "آمدی",
+                  "translit": "āmadi"
+                }
+              ]
+            },
+            {
+              "id": "ge-66-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "کمک می‌کنم به شرطی که کار کنی",
+              "translit": "kumak mēkunam ba shart-ē ke kār kuni",
+              "en": "I'll help, on the condition that you work.",
+              "distractorsEn": [
+                "I help because you work.",
+                "I'll help although you work."
+              ]
+            },
+            {
+              "id": "ge-66-3",
+              "type": "buildSentence",
+              "en": "I'll give the book, on the condition that you read it.",
+              "words": [
+                {
+                  "target": "کتاب را می‌دهم",
+                  "translit": "ketāb rā mēdiham"
+                },
+                {
+                  "target": "به شرطی که",
+                  "translit": "ba shart-ē ke"
+                },
+                {
+                  "target": "بخوانی",
+                  "translit": "bukhāni"
+                }
+              ],
+              "translit": "ketāb rā mēdiham ba shart-ē ke bukhāni",
+              "extraWords": [
+                {
+                  "target": "می‌خوانی",
+                  "translit": "mēkhāni"
+                }
+              ]
+            },
+            {
+              "id": "ge-66-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "می‌روم به شرطی که تو بمانی",
+              "translit": "mērawam ba shart-ē ke tu bumāni",
+              "en": "I'll go, provided that you stay.",
+              "distractorsTarget": [
+                {
+                  "target": "می‌روم اگرچه تو بمانی",
+                  "translit": "mērawam agarche tu bumāni"
+                },
+                {
+                  "target": "می‌روم چون تو می‌مانی",
+                  "translit": "mērawam chun tu mēmāni"
+                }
+              ]
+            },
+            {
+              "id": "ge-66-5",
+              "type": "fillBlank",
+              "target": "به یک ___ می‌آیم",
+              "translit": "ba yak ___ mēāyam",
+              "en": "I'll come on one condition.",
+              "answer": {
+                "target": "شرط",
+                "translit": "shart"
+              },
+              "distractors": [
+                {
+                  "target": "راه",
+                  "translit": "rāh"
+                },
+                {
+                  "target": "روز",
+                  "translit": "rōz"
+                }
+              ]
+            },
+            {
+              "id": "ge-66-6",
+              "type": "matchPairs",
+              "prompt": "Match the conditional linkers",
+              "pairs": [
+                {
+                  "target": "به شرطی که",
+                  "translit": "ba shart-ē ke",
+                  "en": "on condition that"
+                },
+                {
+                  "target": "مگر",
+                  "translit": "magar",
+                  "en": "unless"
+                },
+                {
+                  "target": "اگر",
+                  "translit": "agar",
+                  "en": "if"
+                },
+                {
+                  "target": "وگرنه",
+                  "translit": "wa gar na",
+                  "en": "otherwise"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -103,17 +482,134 @@
               "title": "'Before' loves the subjunctive",
               "body": "qabl az īnke (before) is always followed by the subjunctive - the event it names hasn't happened yet at that point in the story.",
               "examples": [
-                { "dari": "قبل از اینکه بروم، نان خوردم", "translit": "qabl az īnke burawam, nān khurdam", "en": "Before I went, I ate.", "highlight": "قبل از اینکه" }
+                {
+                  "target": "قبل از اینکه بروم، نان خوردم",
+                  "translit": "qabl az īnke burawam, nān khurdam",
+                  "en": "Before I went, I ate.",
+                  "highlight": "قبل از اینکه"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-67-1", "type": "fillBlank", "dari": "قبل از اینکه ___، نان خوردم", "translit": "qabl az īnke ___, nān khurdam", "en": "Before I went, I ate.", "answer": { "dari": "بروم", "translit": "burawam" }, "distractors": [{ "dari": "رفتم", "translit": "raftam" }, { "dari": "می‌روم", "translit": "mērawam" }] },
-            { "id": "ge-67-2", "type": "chooseTranslation", "direction": "toEn", "dari": "قبل از اینکه بیاید، رفتیم", "translit": "qabl az īnke biāyad, raftēm", "en": "Before he came, we left.", "distractorsEn": ["After he came, we left.", "When he came, we left."] },
-            { "id": "ge-67-3", "type": "spotError", "dari": "قبل از اینکه آمد، رفتم", "translit": "qabl az īnke āmad, raftam", "en": "Before he came, I left.", "errorWord": { "dari": "آمد", "translit": "āmad" }, "correction": { "dari": "بیاید", "translit": "biāyad" }, "hint": "'Before' always takes the subjunctive." },
-            { "id": "ge-67-4", "type": "buildSentence", "en": "Before you sleep, read the book.", "words": [{ "dari": "قبل از اینکه", "translit": "qabl az īnke" }, { "dari": "بخوابی", "translit": "bukhābi" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "بخوان", "translit": "bukhān" }], "translit": "qabl az īnke bukhābi, ketāb bukhān", "extraWords": [{ "dari": "می‌خوابی", "translit": "mēkhābi" }] },
-            { "id": "ge-67-5", "type": "chooseTranslation", "direction": "toDari", "dari": "قبل از اینکه بروی، مرا ببین", "translit": "qabl az īnke burawi, marā bubīn", "en": "Before you go, see me.", "distractorsDari": [{ "dari": "قبل از اینکه رفتی، مرا دیدی", "translit": "qabl az īnke rafti, marā dīdi" }, { "dari": "بعد از اینکه بروی، مرا ببین", "translit": "bād az īnke burawi, marā bubīn" }] },
-            { "id": "ge-67-6", "type": "fillBlank", "dari": "قبل از اینکه او ___، ما آمدیم", "translit": "qabl az īnke ō ___, mā āmadēm", "en": "Before he left, we came.", "answer": { "dari": "برود", "translit": "burawad" }, "distractors": [{ "dari": "رفت", "translit": "raft" }, { "dari": "می‌رود", "translit": "mērawad" }] }
+            {
+              "id": "ge-67-1",
+              "type": "fillBlank",
+              "target": "قبل از اینکه ___، نان خوردم",
+              "translit": "qabl az īnke ___, nān khurdam",
+              "en": "Before I went, I ate.",
+              "answer": {
+                "target": "بروم",
+                "translit": "burawam"
+              },
+              "distractors": [
+                {
+                  "target": "رفتم",
+                  "translit": "raftam"
+                },
+                {
+                  "target": "می‌روم",
+                  "translit": "mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-67-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "قبل از اینکه بیاید، رفتیم",
+              "translit": "qabl az īnke biāyad, raftēm",
+              "en": "Before he came, we left.",
+              "distractorsEn": [
+                "After he came, we left.",
+                "When he came, we left."
+              ]
+            },
+            {
+              "id": "ge-67-3",
+              "type": "spotError",
+              "target": "قبل از اینکه آمد، رفتم",
+              "translit": "qabl az īnke āmad, raftam",
+              "en": "Before he came, I left.",
+              "errorWord": {
+                "target": "آمد",
+                "translit": "āmad"
+              },
+              "correction": {
+                "target": "بیاید",
+                "translit": "biāyad"
+              },
+              "hint": "'Before' always takes the subjunctive."
+            },
+            {
+              "id": "ge-67-4",
+              "type": "buildSentence",
+              "en": "Before you sleep, read the book.",
+              "words": [
+                {
+                  "target": "قبل از اینکه",
+                  "translit": "qabl az īnke"
+                },
+                {
+                  "target": "بخوابی",
+                  "translit": "bukhābi"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "بخوان",
+                  "translit": "bukhān"
+                }
+              ],
+              "translit": "qabl az īnke bukhābi, ketāb bukhān",
+              "extraWords": [
+                {
+                  "target": "می‌خوابی",
+                  "translit": "mēkhābi"
+                }
+              ]
+            },
+            {
+              "id": "ge-67-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "قبل از اینکه بروی، مرا ببین",
+              "translit": "qabl az īnke burawi, marā bubīn",
+              "en": "Before you go, see me.",
+              "distractorsTarget": [
+                {
+                  "target": "قبل از اینکه رفتی، مرا دیدی",
+                  "translit": "qabl az īnke rafti, marā dīdi"
+                },
+                {
+                  "target": "بعد از اینکه بروی، مرا ببین",
+                  "translit": "bād az īnke burawi, marā bubīn"
+                }
+              ]
+            },
+            {
+              "id": "ge-67-6",
+              "type": "fillBlank",
+              "target": "قبل از اینکه او ___، ما آمدیم",
+              "translit": "qabl az īnke ō ___, mā āmadēm",
+              "en": "Before he left, we came.",
+              "answer": {
+                "target": "برود",
+                "translit": "burawad"
+              },
+              "distractors": [
+                {
+                  "target": "رفت",
+                  "translit": "raft"
+                },
+                {
+                  "target": "می‌رود",
+                  "translit": "mērawad"
+                }
+              ]
+            }
           ]
         },
         {
@@ -128,17 +624,136 @@
               "title": "'After' takes the real tense",
               "body": "bād az īnke (after) describes something that did happen, so it takes the ordinary past - the mirror image of 'before'.",
               "examples": [
-                { "dari": "بعد از اینکه آمد، رفتیم", "translit": "bād az īnke āmad, raftēm", "en": "After he came, we left.", "highlight": "بعد از اینکه" }
+                {
+                  "target": "بعد از اینکه آمد، رفتیم",
+                  "translit": "bād az īnke āmad, raftēm",
+                  "en": "After he came, we left.",
+                  "highlight": "بعد از اینکه"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-68-1", "type": "fillBlank", "dari": "بعد از اینکه ___، رفتیم", "translit": "bād az īnke ___, raftēm", "en": "After he came, we left.", "answer": { "dari": "آمد", "translit": "āmad" }, "distractors": [{ "dari": "بیاید", "translit": "biāyad" }, { "dari": "می‌آید", "translit": "mēāyad" }] },
-            { "id": "ge-68-2", "type": "chooseTranslation", "direction": "toEn", "dari": "بعد از اینکه نان خوردم، خوابیدم", "translit": "bād az īnke nān khurdam, khābīdam", "en": "After I ate, I slept.", "distractorsEn": ["Before I ate, I slept.", "While I ate, I slept."] },
-            { "id": "ge-68-3", "type": "spotError", "dari": "بعد از اینکه بیاید، رفتیم", "translit": "bād az īnke biāyad, raftēm", "en": "After he came, we left.", "errorWord": { "dari": "بیاید", "translit": "biāyad" }, "correction": { "dari": "آمد", "translit": "āmad" }, "hint": "'After' takes the real past, not the subjunctive." },
-            { "id": "ge-68-4", "type": "buildSentence", "en": "After I read the book, I gave it to you.", "words": [{ "dari": "بعد از اینکه", "translit": "bād az īnke" }, { "dari": "کتاب را خواندم", "translit": "ketāb rā khāndam" }, { "dari": "به تو دادم", "translit": "ba tu dādam" }], "translit": "bād az īnke ketāb rā khāndam, ba tu dādam", "extraWords": [{ "dari": "بخوانم", "translit": "bukhānam" }] },
-            { "id": "ge-68-5", "type": "matchPairs", "prompt": "Match before and after", "pairs": [{ "dari": "قبل از اینکه بروم", "translit": "qabl az īnke burawam", "en": "before I go" }, { "dari": "بعد از اینکه رفتم", "translit": "bād az īnke raftam", "en": "after I went" }, { "dari": "وقتی که رفتم", "translit": "waqtē ke raftam", "en": "when I went" }, { "dari": "تا رفتم", "translit": "tā raftam", "en": "as soon as I went" }] },
-            { "id": "ge-68-6", "type": "chooseTranslation", "direction": "toDari", "dari": "بعد از اینکه کار کردم، مانده شدم", "translit": "bād az īnke kār kardam, mānda shudam", "en": "After I worked, I got tired.", "distractorsDari": [{ "dari": "قبل از اینکه کار کنم، مانده شدم", "translit": "qabl az īnke kār kunam, mānda shudam" }, { "dari": "چون کار کردم، مانده شدم", "translit": "chun kār kardam, mānda shudam" }] }
+            {
+              "id": "ge-68-1",
+              "type": "fillBlank",
+              "target": "بعد از اینکه ___، رفتیم",
+              "translit": "bād az īnke ___, raftēm",
+              "en": "After he came, we left.",
+              "answer": {
+                "target": "آمد",
+                "translit": "āmad"
+              },
+              "distractors": [
+                {
+                  "target": "بیاید",
+                  "translit": "biāyad"
+                },
+                {
+                  "target": "می‌آید",
+                  "translit": "mēāyad"
+                }
+              ]
+            },
+            {
+              "id": "ge-68-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "بعد از اینکه نان خوردم، خوابیدم",
+              "translit": "bād az īnke nān khurdam, khābīdam",
+              "en": "After I ate, I slept.",
+              "distractorsEn": [
+                "Before I ate, I slept.",
+                "While I ate, I slept."
+              ]
+            },
+            {
+              "id": "ge-68-3",
+              "type": "spotError",
+              "target": "بعد از اینکه بیاید، رفتیم",
+              "translit": "bād az īnke biāyad, raftēm",
+              "en": "After he came, we left.",
+              "errorWord": {
+                "target": "بیاید",
+                "translit": "biāyad"
+              },
+              "correction": {
+                "target": "آمد",
+                "translit": "āmad"
+              },
+              "hint": "'After' takes the real past, not the subjunctive."
+            },
+            {
+              "id": "ge-68-4",
+              "type": "buildSentence",
+              "en": "After I read the book, I gave it to you.",
+              "words": [
+                {
+                  "target": "بعد از اینکه",
+                  "translit": "bād az īnke"
+                },
+                {
+                  "target": "کتاب را خواندم",
+                  "translit": "ketāb rā khāndam"
+                },
+                {
+                  "target": "به تو دادم",
+                  "translit": "ba tu dādam"
+                }
+              ],
+              "translit": "bād az īnke ketāb rā khāndam, ba tu dādam",
+              "extraWords": [
+                {
+                  "target": "بخوانم",
+                  "translit": "bukhānam"
+                }
+              ]
+            },
+            {
+              "id": "ge-68-5",
+              "type": "matchPairs",
+              "prompt": "Match before and after",
+              "pairs": [
+                {
+                  "target": "قبل از اینکه بروم",
+                  "translit": "qabl az īnke burawam",
+                  "en": "before I go"
+                },
+                {
+                  "target": "بعد از اینکه رفتم",
+                  "translit": "bād az īnke raftam",
+                  "en": "after I went"
+                },
+                {
+                  "target": "وقتی که رفتم",
+                  "translit": "waqtē ke raftam",
+                  "en": "when I went"
+                },
+                {
+                  "target": "تا رفتم",
+                  "translit": "tā raftam",
+                  "en": "as soon as I went"
+                }
+              ]
+            },
+            {
+              "id": "ge-68-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "بعد از اینکه کار کردم، مانده شدم",
+              "translit": "bād az īnke kār kardam, mānda shudam",
+              "en": "After I worked, I got tired.",
+              "distractorsTarget": [
+                {
+                  "target": "قبل از اینکه کار کنم، مانده شدم",
+                  "translit": "qabl az īnke kār kunam, mānda shudam"
+                },
+                {
+                  "target": "چون کار کردم، مانده شدم",
+                  "translit": "chun kār kardam, mānda shudam"
+                }
+              ]
+            }
           ]
         },
         {
@@ -153,18 +768,151 @@
               "title": "Any time it happens",
               "body": "har waqt ke and hargāh both mean 'whenever' - the event repeats or holds any time the condition is met.",
               "examples": [
-                { "dari": "هر وقت که می‌آیی، خوش می‌شوم", "translit": "har waqt ke mēāyi, khush mēshawam", "en": "Whenever you come, I am glad.", "highlight": "هر وقت که" },
-                { "dari": "هرگاه بخواهی، بیا", "translit": "hargāh bukhāhi, biā", "en": "Come whenever you want.", "highlight": "هرگاه" }
+                {
+                  "target": "هر وقت که می‌آیی، خوش می‌شوم",
+                  "translit": "har waqt ke mēāyi, khush mēshawam",
+                  "en": "Whenever you come, I am glad.",
+                  "highlight": "هر وقت که"
+                },
+                {
+                  "target": "هرگاه بخواهی، بیا",
+                  "translit": "hargāh bukhāhi, biā",
+                  "en": "Come whenever you want.",
+                  "highlight": "هرگاه"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-69-1", "type": "fillBlank", "dari": "___ که می‌آیی، خوش می‌شوم", "translit": "___ ke mēāyi, khush mēshawam", "en": "Whenever you come, I am glad.", "answer": { "dari": "هر وقت", "translit": "har waqt" }, "distractors": [{ "dari": "قبل از این", "translit": "qabl az īn" }, { "dari": "اگرچه", "translit": "agarche" }] },
-            { "id": "ge-69-2", "type": "chooseTranslation", "direction": "toEn", "dari": "هرگاه بخواهی، بیا", "translit": "hargāh bukhāhi, biā", "en": "Come whenever you want.", "distractorsEn": ["Come because you want.", "Come although you want."] },
-            { "id": "ge-69-3", "type": "buildSentence", "en": "Whenever I see him, I am happy.", "words": [{ "dari": "هر وقت که", "translit": "har waqt ke" }, { "dari": "او را", "translit": "ō rā" }, { "dari": "می‌بینم", "translit": "mēbīnam" }, { "dari": "خوش می‌شوم", "translit": "khush mēshawam" }], "translit": "har waqt ke ō rā mēbīnam, khush mēshawam", "extraWords": [{ "dari": "دیدم", "translit": "dīdam" }] },
-            { "id": "ge-69-4", "type": "chooseTranslation", "direction": "toDari", "dari": "هرگاه کار داری، به من بگو", "translit": "hargāh kār dāri, ba man bugō", "en": "Whenever you have work, tell me.", "distractorsDari": [{ "dari": "چون کار داری، به من بگو", "translit": "chun kār dāri, ba man bugō" }, { "dari": "اگرچه کار داری، به من بگو", "translit": "agarche kār dāri, ba man bugō" }] },
-            { "id": "ge-69-5", "type": "matchPairs", "prompt": "Match the time linkers", "pairs": [{ "dari": "هر وقت که", "translit": "har waqt ke", "en": "whenever" }, { "dari": "وقتی که", "translit": "waqtē ke", "en": "when" }, { "dari": "قبل از اینکه", "translit": "qabl az īnke", "en": "before" }, { "dari": "بعد از اینکه", "translit": "bād az īnke", "en": "after" }] },
-            { "id": "ge-69-6", "type": "fillBlank", "dari": "___ بخواهی، می‌توانی بیایی", "translit": "___ bukhāhi, mētawāni biāyi", "en": "Whenever you want, you can come.", "answer": { "dari": "هرگاه", "translit": "hargāh" }, "distractors": [{ "dari": "چون", "translit": "chun" }, { "dari": "مگر", "translit": "magar" }] }
+            {
+              "id": "ge-69-1",
+              "type": "fillBlank",
+              "target": "___ که می‌آیی، خوش می‌شوم",
+              "translit": "___ ke mēāyi, khush mēshawam",
+              "en": "Whenever you come, I am glad.",
+              "answer": {
+                "target": "هر وقت",
+                "translit": "har waqt"
+              },
+              "distractors": [
+                {
+                  "target": "قبل از این",
+                  "translit": "qabl az īn"
+                },
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche"
+                }
+              ]
+            },
+            {
+              "id": "ge-69-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "هرگاه بخواهی، بیا",
+              "translit": "hargāh bukhāhi, biā",
+              "en": "Come whenever you want.",
+              "distractorsEn": [
+                "Come because you want.",
+                "Come although you want."
+              ]
+            },
+            {
+              "id": "ge-69-3",
+              "type": "buildSentence",
+              "en": "Whenever I see him, I am happy.",
+              "words": [
+                {
+                  "target": "هر وقت که",
+                  "translit": "har waqt ke"
+                },
+                {
+                  "target": "او را",
+                  "translit": "ō rā"
+                },
+                {
+                  "target": "می‌بینم",
+                  "translit": "mēbīnam"
+                },
+                {
+                  "target": "خوش می‌شوم",
+                  "translit": "khush mēshawam"
+                }
+              ],
+              "translit": "har waqt ke ō rā mēbīnam, khush mēshawam",
+              "extraWords": [
+                {
+                  "target": "دیدم",
+                  "translit": "dīdam"
+                }
+              ]
+            },
+            {
+              "id": "ge-69-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "هرگاه کار داری، به من بگو",
+              "translit": "hargāh kār dāri, ba man bugō",
+              "en": "Whenever you have work, tell me.",
+              "distractorsTarget": [
+                {
+                  "target": "چون کار داری، به من بگو",
+                  "translit": "chun kār dāri, ba man bugō"
+                },
+                {
+                  "target": "اگرچه کار داری، به من بگو",
+                  "translit": "agarche kār dāri, ba man bugō"
+                }
+              ]
+            },
+            {
+              "id": "ge-69-5",
+              "type": "matchPairs",
+              "prompt": "Match the time linkers",
+              "pairs": [
+                {
+                  "target": "هر وقت که",
+                  "translit": "har waqt ke",
+                  "en": "whenever"
+                },
+                {
+                  "target": "وقتی که",
+                  "translit": "waqtē ke",
+                  "en": "when"
+                },
+                {
+                  "target": "قبل از اینکه",
+                  "translit": "qabl az īnke",
+                  "en": "before"
+                },
+                {
+                  "target": "بعد از اینکه",
+                  "translit": "bād az īnke",
+                  "en": "after"
+                }
+              ]
+            },
+            {
+              "id": "ge-69-6",
+              "type": "fillBlank",
+              "target": "___ بخواهی، می‌توانی بیایی",
+              "translit": "___ bukhāhi, mētawāni biāyi",
+              "en": "Whenever you want, you can come.",
+              "answer": {
+                "target": "هرگاه",
+                "translit": "hargāh"
+              },
+              "distractors": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                },
+                {
+                  "target": "مگر",
+                  "translit": "magar"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -186,18 +934,146 @@
               "title": "No named source",
               "body": "gufta mēshawad ke ('it is said that') and mēgōyand ke ('they say that') report general belief without naming who says it - common in formal and written Dari.",
               "examples": [
-                { "dari": "گفته می‌شود که او رفته است", "translit": "gufta mēshawad ke ō rafta ast", "en": "It is said that he has gone.", "highlight": "گفته می‌شود" },
-                { "dari": "می‌گویند که کابل مقبول است", "translit": "mēgōyand ke kābul maqbūl ast", "en": "They say that Kabul is beautiful.", "highlight": "می‌گویند" }
+                {
+                  "target": "گفته می‌شود که او رفته است",
+                  "translit": "gufta mēshawad ke ō rafta ast",
+                  "en": "It is said that he has gone.",
+                  "highlight": "گفته می‌شود"
+                },
+                {
+                  "target": "می‌گویند که کابل مقبول است",
+                  "translit": "mēgōyand ke kābul maqbūl ast",
+                  "en": "They say that Kabul is beautiful.",
+                  "highlight": "می‌گویند"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-70-1", "type": "chooseTranslation", "direction": "toEn", "dari": "گفته می‌شود که او رفته است", "translit": "gufta mēshawad ke ō rafta ast", "en": "It is said that he has gone.", "distractorsEn": ["He said that he has gone.", "He is told to go."] },
-            { "id": "ge-70-2", "type": "fillBlank", "dari": "___ که کابل مقبول است", "translit": "___ ke kābul maqbūl ast", "en": "They say that Kabul is beautiful.", "answer": { "dari": "می‌گویند", "translit": "mēgōyand" }, "distractors": [{ "dari": "می‌گویم", "translit": "mēgōyam" }, { "dari": "گفتم", "translit": "guftam" }] },
-            { "id": "ge-70-3", "type": "buildSentence", "en": "It is said that this book is good.", "words": [{ "dari": "گفته می‌شود", "translit": "gufta mēshawad" }, { "dari": "که", "translit": "ke" }, { "dari": "این کتاب", "translit": "īn ketāb" }, { "dari": "خوب است", "translit": "khōb ast" }], "translit": "gufta mēshawad ke īn ketāb khōb ast", "extraWords": [{ "dari": "می‌گویم", "translit": "mēgōyam" }] },
-            { "id": "ge-70-4", "type": "spotError", "dari": "گفته کرد که او آمد", "translit": "gufta kard ke ō āmad", "en": "It is said that he came.", "errorWord": { "dari": "کرد", "translit": "kard" }, "correction": { "dari": "می‌شود", "translit": "mēshawad" }, "hint": "The impersonal 'it is said' uses mēshawad." },
-            { "id": "ge-70-5", "type": "chooseTranslation", "direction": "toDari", "dari": "می‌گویند که او معلم خوب است", "translit": "mēgōyand ke ō mu'allem-e khōb ast", "en": "They say that he is a good teacher.", "distractorsDari": [{ "dari": "او می‌گوید که معلم خوب است", "translit": "ō mēgōyad ke mu'allem-e khōb ast" }, { "dari": "گفتند که او معلم خوب است", "translit": "guftand ke ō mu'allem-e khōb ast" }] },
-            { "id": "ge-70-6", "type": "matchPairs", "prompt": "Match the reporting forms", "pairs": [{ "dari": "می‌گویند", "translit": "mēgōyand", "en": "they say" }, { "dari": "گفته می‌شود", "translit": "gufta mēshawad", "en": "it is said" }, { "dari": "او گفت", "translit": "ō guft", "en": "he said" }, { "dari": "شنیده می‌شود", "translit": "shunīda mēshawad", "en": "it is heard" }] }
+            {
+              "id": "ge-70-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "گفته می‌شود که او رفته است",
+              "translit": "gufta mēshawad ke ō rafta ast",
+              "en": "It is said that he has gone.",
+              "distractorsEn": [
+                "He said that he has gone.",
+                "He is told to go."
+              ]
+            },
+            {
+              "id": "ge-70-2",
+              "type": "fillBlank",
+              "target": "___ که کابل مقبول است",
+              "translit": "___ ke kābul maqbūl ast",
+              "en": "They say that Kabul is beautiful.",
+              "answer": {
+                "target": "می‌گویند",
+                "translit": "mēgōyand"
+              },
+              "distractors": [
+                {
+                  "target": "می‌گویم",
+                  "translit": "mēgōyam"
+                },
+                {
+                  "target": "گفتم",
+                  "translit": "guftam"
+                }
+              ]
+            },
+            {
+              "id": "ge-70-3",
+              "type": "buildSentence",
+              "en": "It is said that this book is good.",
+              "words": [
+                {
+                  "target": "گفته می‌شود",
+                  "translit": "gufta mēshawad"
+                },
+                {
+                  "target": "که",
+                  "translit": "ke"
+                },
+                {
+                  "target": "این کتاب",
+                  "translit": "īn ketāb"
+                },
+                {
+                  "target": "خوب است",
+                  "translit": "khōb ast"
+                }
+              ],
+              "translit": "gufta mēshawad ke īn ketāb khōb ast",
+              "extraWords": [
+                {
+                  "target": "می‌گویم",
+                  "translit": "mēgōyam"
+                }
+              ]
+            },
+            {
+              "id": "ge-70-4",
+              "type": "spotError",
+              "target": "گفته کرد که او آمد",
+              "translit": "gufta kard ke ō āmad",
+              "en": "It is said that he came.",
+              "errorWord": {
+                "target": "کرد",
+                "translit": "kard"
+              },
+              "correction": {
+                "target": "می‌شود",
+                "translit": "mēshawad"
+              },
+              "hint": "The impersonal 'it is said' uses mēshawad."
+            },
+            {
+              "id": "ge-70-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "می‌گویند که او معلم خوب است",
+              "translit": "mēgōyand ke ō mu'allem-e khōb ast",
+              "en": "They say that he is a good teacher.",
+              "distractorsTarget": [
+                {
+                  "target": "او می‌گوید که معلم خوب است",
+                  "translit": "ō mēgōyad ke mu'allem-e khōb ast"
+                },
+                {
+                  "target": "گفتند که او معلم خوب است",
+                  "translit": "guftand ke ō mu'allem-e khōb ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-70-6",
+              "type": "matchPairs",
+              "prompt": "Match the reporting forms",
+              "pairs": [
+                {
+                  "target": "می‌گویند",
+                  "translit": "mēgōyand",
+                  "en": "they say"
+                },
+                {
+                  "target": "گفته می‌شود",
+                  "translit": "gufta mēshawad",
+                  "en": "it is said"
+                },
+                {
+                  "target": "او گفت",
+                  "translit": "ō guft",
+                  "en": "he said"
+                },
+                {
+                  "target": "شنیده می‌شود",
+                  "translit": "shunīda mēshawad",
+                  "en": "it is heard"
+                }
+              ]
+            }
           ]
         },
         {
@@ -212,17 +1088,149 @@
               "title": "Softening a claim",
               "body": "be nazar mērasad ke ('it seems that') presents something as an impression rather than a fact - a key move in careful, formal speech.",
               "examples": [
-                { "dari": "به نظر می‌رسد که او مانده است", "translit": "be nazar mērasad ke ō mānda ast", "en": "It seems that he is tired.", "highlight": "به نظر می‌رسد" }
+                {
+                  "target": "به نظر می‌رسد که او مانده است",
+                  "translit": "be nazar mērasad ke ō mānda ast",
+                  "en": "It seems that he is tired.",
+                  "highlight": "به نظر می‌رسد"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-71-1", "type": "chooseTranslation", "direction": "toEn", "dari": "به نظر می‌رسد که او مانده است", "translit": "be nazar mērasad ke ō mānda ast", "en": "It seems that he is tired.", "distractorsEn": ["He is certainly tired.", "He looks at the tired one."] },
-            { "id": "ge-71-2", "type": "fillBlank", "dari": "به نظر ___ که باران می‌آید", "translit": "be nazar ___ ke bārān mēāyad", "en": "It seems that it will rain.", "answer": { "dari": "می‌رسد", "translit": "mērasad" }, "distractors": [{ "dari": "می‌رود", "translit": "mērawad" }, { "dari": "می‌بیند", "translit": "mēbīnad" }] },
-            { "id": "ge-71-3", "type": "buildSentence", "en": "It seems that he has gone home.", "words": [{ "dari": "به نظر می‌رسد", "translit": "be nazar mērasad" }, { "dari": "که", "translit": "ke" }, { "dari": "او", "translit": "ō" }, { "dari": "به خانه", "translit": "ba khāna" }, { "dari": "رفته است", "translit": "rafta ast" }], "translit": "be nazar mērasad ke ō ba khāna rafta ast", "extraWords": [{ "dari": "می‌رود", "translit": "mērawad" }] },
-            { "id": "ge-71-4", "type": "chooseTranslation", "direction": "toDari", "dari": "به نظر می‌رسد که کار سخت است", "translit": "be nazar mērasad ke kār sakht ast", "en": "It seems that the work is hard.", "distractorsDari": [{ "dari": "کار سخت است", "translit": "kār sakht ast" }, { "dari": "به نظر می‌رسد که کار آسان است", "translit": "be nazar mērasad ke kār āsān ast" }] },
-            { "id": "ge-71-5", "type": "matchPairs", "prompt": "Match the hedges", "pairs": [{ "dari": "به نظر می‌رسد", "translit": "be nazar mērasad", "en": "it seems" }, { "dari": "گفته می‌شود", "translit": "gufta mēshawad", "en": "it is said" }, { "dari": "شاید", "translit": "shāyad", "en": "maybe" }, { "dari": "ممکن است", "translit": "mumken ast", "en": "it is possible" }] },
-            { "id": "ge-71-6", "type": "fillBlank", "dari": "به نظر می‌رسد ___ او خوش است", "translit": "be nazar mērasad ___ ō khush ast", "en": "It seems that he is happy.", "answer": { "dari": "که", "translit": "ke" }, "distractors": [{ "dari": "را", "translit": "rā" }, { "dari": "تا", "translit": "tā" }] }
+            {
+              "id": "ge-71-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "به نظر می‌رسد که او مانده است",
+              "translit": "be nazar mērasad ke ō mānda ast",
+              "en": "It seems that he is tired.",
+              "distractorsEn": [
+                "He is certainly tired.",
+                "He looks at the tired one."
+              ]
+            },
+            {
+              "id": "ge-71-2",
+              "type": "fillBlank",
+              "target": "به نظر ___ که باران می‌آید",
+              "translit": "be nazar ___ ke bārān mēāyad",
+              "en": "It seems that it will rain.",
+              "answer": {
+                "target": "می‌رسد",
+                "translit": "mērasad"
+              },
+              "distractors": [
+                {
+                  "target": "می‌رود",
+                  "translit": "mērawad"
+                },
+                {
+                  "target": "می‌بیند",
+                  "translit": "mēbīnad"
+                }
+              ]
+            },
+            {
+              "id": "ge-71-3",
+              "type": "buildSentence",
+              "en": "It seems that he has gone home.",
+              "words": [
+                {
+                  "target": "به نظر می‌رسد",
+                  "translit": "be nazar mērasad"
+                },
+                {
+                  "target": "که",
+                  "translit": "ke"
+                },
+                {
+                  "target": "او",
+                  "translit": "ō"
+                },
+                {
+                  "target": "به خانه",
+                  "translit": "ba khāna"
+                },
+                {
+                  "target": "رفته است",
+                  "translit": "rafta ast"
+                }
+              ],
+              "translit": "be nazar mērasad ke ō ba khāna rafta ast",
+              "extraWords": [
+                {
+                  "target": "می‌رود",
+                  "translit": "mērawad"
+                }
+              ]
+            },
+            {
+              "id": "ge-71-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "به نظر می‌رسد که کار سخت است",
+              "translit": "be nazar mērasad ke kār sakht ast",
+              "en": "It seems that the work is hard.",
+              "distractorsTarget": [
+                {
+                  "target": "کار سخت است",
+                  "translit": "kār sakht ast"
+                },
+                {
+                  "target": "به نظر می‌رسد که کار آسان است",
+                  "translit": "be nazar mērasad ke kār āsān ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-71-5",
+              "type": "matchPairs",
+              "prompt": "Match the hedges",
+              "pairs": [
+                {
+                  "target": "به نظر می‌رسد",
+                  "translit": "be nazar mērasad",
+                  "en": "it seems"
+                },
+                {
+                  "target": "گفته می‌شود",
+                  "translit": "gufta mēshawad",
+                  "en": "it is said"
+                },
+                {
+                  "target": "شاید",
+                  "translit": "shāyad",
+                  "en": "maybe"
+                },
+                {
+                  "target": "ممکن است",
+                  "translit": "mumken ast",
+                  "en": "it is possible"
+                }
+              ]
+            },
+            {
+              "id": "ge-71-6",
+              "type": "fillBlank",
+              "target": "به نظر می‌رسد ___ او خوش است",
+              "translit": "be nazar mērasad ___ ō khush ast",
+              "en": "It seems that he is happy.",
+              "answer": {
+                "target": "که",
+                "translit": "ke"
+              },
+              "distractors": [
+                {
+                  "target": "را",
+                  "translit": "rā"
+                },
+                {
+                  "target": "تا",
+                  "translit": "tā"
+                }
+              ]
+            }
           ]
         },
         {
@@ -237,17 +1245,149 @@
               "title": "Adding with emphasis",
               "body": "na tanhā (not only) opens the pair; balke (but rather / but also) completes it, often with ham (too). It raises the stakes of a statement.",
               "examples": [
-                { "dari": "او نه تنها معلم، بلکه دوست من هم است", "translit": "ō na tanhā mu'allem, balke dōst-e man ham ast", "en": "He is not only a teacher, but also my friend.", "highlight": "نه تنها" }
+                {
+                  "target": "او نه تنها معلم، بلکه دوست من هم است",
+                  "translit": "ō na tanhā mu'allem, balke dōst-e man ham ast",
+                  "en": "He is not only a teacher, but also my friend.",
+                  "highlight": "نه تنها"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-72-1", "type": "fillBlank", "dari": "او ___ معلم، بلکه دوست من هم است", "translit": "ō ___ mu'allem, balke dōst-e man ham ast", "en": "He is not only a teacher, but also my friend.", "answer": { "dari": "نه تنها", "translit": "na tanhā" }, "distractors": [{ "dari": "اگرچه", "translit": "agarche" }, { "dari": "چون", "translit": "chun" }] },
-            { "id": "ge-72-2", "type": "chooseTranslation", "direction": "toEn", "dari": "نه تنها آمد، بلکه کمک هم کرد", "translit": "na tanhā āmad, balke kumak ham kard", "en": "He not only came, but also helped.", "distractorsEn": ["He came but didn't help.", "He came because he helped."] },
-            { "id": "ge-72-3", "type": "fillBlank", "dari": "نه تنها آمد، ___ کمک هم کرد", "translit": "na tanhā āmad, ___ kumak ham kard", "en": "He not only came, but also helped.", "answer": { "dari": "بلکه", "translit": "balke" }, "distractors": [{ "dari": "اما", "translit": "amā" }, { "dari": "وگرنه", "translit": "wa gar na" }] },
-            { "id": "ge-72-4", "type": "buildSentence", "en": "Not only Kabul, but Herat too is big.", "words": [{ "dari": "نه تنها", "translit": "na tanhā" }, { "dari": "کابل", "translit": "kābul" }, { "dari": "بلکه", "translit": "balke" }, { "dari": "هرات هم", "translit": "herāt ham" }, { "dari": "کلان است", "translit": "kalān ast" }], "translit": "na tanhā kābul, balke herāt ham kalān ast", "extraWords": [{ "dari": "اما", "translit": "amā" }] },
-            { "id": "ge-72-5", "type": "chooseTranslation", "direction": "toDari", "dari": "نه تنها خواند، بلکه نوشت هم", "translit": "na tanhā khānd, balke newesht ham", "en": "He not only read, but also wrote.", "distractorsDari": [{ "dari": "خواند اما ننوشت", "translit": "khānd amā nanewesht" }, { "dari": "نه خواند و نه نوشت", "translit": "na khānd wa na newesht" }] },
-            { "id": "ge-72-6", "type": "matchPairs", "prompt": "Match the paired parts", "pairs": [{ "dari": "نه تنها", "translit": "na tanhā", "en": "not only" }, { "dari": "بلکه", "translit": "balke", "en": "but also" }, { "dari": "هم", "translit": "ham", "en": "too" }, { "dari": "همچنین", "translit": "hamchunīn", "en": "likewise" }] }
+            {
+              "id": "ge-72-1",
+              "type": "fillBlank",
+              "target": "او ___ معلم، بلکه دوست من هم است",
+              "translit": "ō ___ mu'allem, balke dōst-e man ham ast",
+              "en": "He is not only a teacher, but also my friend.",
+              "answer": {
+                "target": "نه تنها",
+                "translit": "na tanhā"
+              },
+              "distractors": [
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche"
+                },
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                }
+              ]
+            },
+            {
+              "id": "ge-72-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "نه تنها آمد، بلکه کمک هم کرد",
+              "translit": "na tanhā āmad, balke kumak ham kard",
+              "en": "He not only came, but also helped.",
+              "distractorsEn": [
+                "He came but didn't help.",
+                "He came because he helped."
+              ]
+            },
+            {
+              "id": "ge-72-3",
+              "type": "fillBlank",
+              "target": "نه تنها آمد، ___ کمک هم کرد",
+              "translit": "na tanhā āmad, ___ kumak ham kard",
+              "en": "He not only came, but also helped.",
+              "answer": {
+                "target": "بلکه",
+                "translit": "balke"
+              },
+              "distractors": [
+                {
+                  "target": "اما",
+                  "translit": "amā"
+                },
+                {
+                  "target": "وگرنه",
+                  "translit": "wa gar na"
+                }
+              ]
+            },
+            {
+              "id": "ge-72-4",
+              "type": "buildSentence",
+              "en": "Not only Kabul, but Herat too is big.",
+              "words": [
+                {
+                  "target": "نه تنها",
+                  "translit": "na tanhā"
+                },
+                {
+                  "target": "کابل",
+                  "translit": "kābul"
+                },
+                {
+                  "target": "بلکه",
+                  "translit": "balke"
+                },
+                {
+                  "target": "هرات هم",
+                  "translit": "herāt ham"
+                },
+                {
+                  "target": "کلان است",
+                  "translit": "kalān ast"
+                }
+              ],
+              "translit": "na tanhā kābul, balke herāt ham kalān ast",
+              "extraWords": [
+                {
+                  "target": "اما",
+                  "translit": "amā"
+                }
+              ]
+            },
+            {
+              "id": "ge-72-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "نه تنها خواند، بلکه نوشت هم",
+              "translit": "na tanhā khānd, balke newesht ham",
+              "en": "He not only read, but also wrote.",
+              "distractorsTarget": [
+                {
+                  "target": "خواند اما ننوشت",
+                  "translit": "khānd amā nanewesht"
+                },
+                {
+                  "target": "نه خواند و نه نوشت",
+                  "translit": "na khānd wa na newesht"
+                }
+              ]
+            },
+            {
+              "id": "ge-72-6",
+              "type": "matchPairs",
+              "prompt": "Match the paired parts",
+              "pairs": [
+                {
+                  "target": "نه تنها",
+                  "translit": "na tanhā",
+                  "en": "not only"
+                },
+                {
+                  "target": "بلکه",
+                  "translit": "balke",
+                  "en": "but also"
+                },
+                {
+                  "target": "هم",
+                  "translit": "ham",
+                  "en": "too"
+                },
+                {
+                  "target": "همچنین",
+                  "translit": "hamchunīn",
+                  "en": "likewise"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -269,17 +1409,140 @@
               "title": "Regret over the past",
               "body": "For a regret about something that didn't happen, use kāsh with the past perfect: kāsh rafta būdam - 'I wish I had gone (but I didn't)'.",
               "examples": [
-                { "dari": "کاش رفته بودم", "translit": "kāsh rafta būdam", "en": "I wish I had gone.", "highlight": "رفته بودم" }
+                {
+                  "target": "کاش رفته بودم",
+                  "translit": "kāsh rafta būdam",
+                  "en": "I wish I had gone.",
+                  "highlight": "رفته بودم"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-73-1", "type": "fillBlank", "dari": "کاش او را ___", "translit": "kāsh ō rā ___", "en": "I wish I had seen him.", "answer": { "dari": "دیده بودم", "translit": "dīda būdam" }, "distractors": [{ "dari": "دیدم", "translit": "dīdam" }, { "dari": "می‌بینم", "translit": "mēbīnam" }] },
-            { "id": "ge-73-2", "type": "chooseTranslation", "direction": "toEn", "dari": "کاش درس خوانده بودم", "translit": "kāsh dars khānda būdam", "en": "I wish I had studied.", "distractorsEn": ["I wish I would study.", "I wish I were studying."] },
-            { "id": "ge-73-3", "type": "spotError", "dari": "کاش رفتم", "translit": "kāsh raftam", "en": "I wish I had gone.", "errorWord": { "dari": "رفتم", "translit": "raftam" }, "correction": { "dari": "رفته بودم", "translit": "rafta būdam" }, "hint": "A past regret uses the past perfect." },
-            { "id": "ge-73-4", "type": "buildSentence", "en": "I wish I had helped him.", "words": [{ "dari": "کاش", "translit": "kāsh" }, { "dari": "به او", "translit": "ba ō" }, { "dari": "کمک", "translit": "kumak" }, { "dari": "کرده بودم", "translit": "karda būdam" }], "translit": "kāsh ba ō kumak karda būdam", "extraWords": [{ "dari": "می‌کنم", "translit": "mēkunam" }] },
-            { "id": "ge-73-5", "type": "matchPairs", "prompt": "Match the wish forms", "pairs": [{ "dari": "کاش می‌آمد", "translit": "kāsh mēāmad", "en": "if only he'd come" }, { "dari": "کاش آمده بود", "translit": "kāsh āmada būd", "en": "if only he had come" }, { "dari": "شاید بیاید", "translit": "shāyad biāyad", "en": "maybe he'll come" }, { "dari": "کاش بیاید", "translit": "kāsh biāyad", "en": "I hope he comes" }] },
-            { "id": "ge-73-6", "type": "chooseTranslation", "direction": "toDari", "dari": "کاش آن کتاب را خوانده بودم", "translit": "kāsh ān ketāb rā khānda būdam", "en": "I wish I had read that book.", "distractorsDari": [{ "dari": "کاش آن کتاب را بخوانم", "translit": "kāsh ān ketāb rā bukhānam" }, { "dari": "آن کتاب را خواندم", "translit": "ān ketāb rā khāndam" }] }
+            {
+              "id": "ge-73-1",
+              "type": "fillBlank",
+              "target": "کاش او را ___",
+              "translit": "kāsh ō rā ___",
+              "en": "I wish I had seen him.",
+              "answer": {
+                "target": "دیده بودم",
+                "translit": "dīda būdam"
+              },
+              "distractors": [
+                {
+                  "target": "دیدم",
+                  "translit": "dīdam"
+                },
+                {
+                  "target": "می‌بینم",
+                  "translit": "mēbīnam"
+                }
+              ]
+            },
+            {
+              "id": "ge-73-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "کاش درس خوانده بودم",
+              "translit": "kāsh dars khānda būdam",
+              "en": "I wish I had studied.",
+              "distractorsEn": [
+                "I wish I would study.",
+                "I wish I were studying."
+              ]
+            },
+            {
+              "id": "ge-73-3",
+              "type": "spotError",
+              "target": "کاش رفتم",
+              "translit": "kāsh raftam",
+              "en": "I wish I had gone.",
+              "errorWord": {
+                "target": "رفتم",
+                "translit": "raftam"
+              },
+              "correction": {
+                "target": "رفته بودم",
+                "translit": "rafta būdam"
+              },
+              "hint": "A past regret uses the past perfect."
+            },
+            {
+              "id": "ge-73-4",
+              "type": "buildSentence",
+              "en": "I wish I had helped him.",
+              "words": [
+                {
+                  "target": "کاش",
+                  "translit": "kāsh"
+                },
+                {
+                  "target": "به او",
+                  "translit": "ba ō"
+                },
+                {
+                  "target": "کمک",
+                  "translit": "kumak"
+                },
+                {
+                  "target": "کرده بودم",
+                  "translit": "karda būdam"
+                }
+              ],
+              "translit": "kāsh ba ō kumak karda būdam",
+              "extraWords": [
+                {
+                  "target": "می‌کنم",
+                  "translit": "mēkunam"
+                }
+              ]
+            },
+            {
+              "id": "ge-73-5",
+              "type": "matchPairs",
+              "prompt": "Match the wish forms",
+              "pairs": [
+                {
+                  "target": "کاش می‌آمد",
+                  "translit": "kāsh mēāmad",
+                  "en": "if only he'd come"
+                },
+                {
+                  "target": "کاش آمده بود",
+                  "translit": "kāsh āmada būd",
+                  "en": "if only he had come"
+                },
+                {
+                  "target": "شاید بیاید",
+                  "translit": "shāyad biāyad",
+                  "en": "maybe he'll come"
+                },
+                {
+                  "target": "کاش بیاید",
+                  "translit": "kāsh biāyad",
+                  "en": "I hope he comes"
+                }
+              ]
+            },
+            {
+              "id": "ge-73-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "کاش آن کتاب را خوانده بودم",
+              "translit": "kāsh ān ketāb rā khānda būdam",
+              "en": "I wish I had read that book.",
+              "distractorsTarget": [
+                {
+                  "target": "کاش آن کتاب را بخوانم",
+                  "translit": "kāsh ān ketāb rā bukhānam"
+                },
+                {
+                  "target": "آن کتاب را خواندم",
+                  "translit": "ān ketāb rā khāndam"
+                }
+              ]
+            }
           ]
         },
         {
@@ -294,17 +1557,140 @@
               "title": "Doubt inside a thought",
               "body": "When you report an uncertain guess about the past, the inner clause takes the past subjunctive: fikr kardam ke rafta bāshad.",
               "examples": [
-                { "dari": "فکر کردم که او رفته باشد", "translit": "fikr kardam ke ō rafta bāshad", "en": "I thought he might have gone.", "highlight": "رفته باشد" }
+                {
+                  "target": "فکر کردم که او رفته باشد",
+                  "translit": "fikr kardam ke ō rafta bāshad",
+                  "en": "I thought he might have gone.",
+                  "highlight": "رفته باشد"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-74-1", "type": "fillBlank", "dari": "فکر کردم که او ___", "translit": "fikr kardam ke ō ___", "en": "I thought he might have gone.", "answer": { "dari": "رفته باشد", "translit": "rafta bāshad" }, "distractors": [{ "dari": "رفت", "translit": "raft" }, { "dari": "می‌رود", "translit": "mērawad" }] },
-            { "id": "ge-74-2", "type": "chooseTranslation", "direction": "toEn", "dari": "گمان کردم که نان خورده باشد", "translit": "gumān kardam ke nān khurda bāshad", "en": "I supposed he might have eaten.", "distractorsEn": ["I know he ate.", "I thought he would eat."] },
-            { "id": "ge-74-3", "type": "spotError", "dari": "فکر کردم که او رفت باشد", "translit": "fikr kardam ke ō raft bāshad", "en": "I thought he might have gone.", "errorWord": { "dari": "رفت", "translit": "raft" }, "correction": { "dari": "رفته", "translit": "rafta" }, "hint": "The past subjunctive needs the participle: rafta bāshad." },
-            { "id": "ge-74-4", "type": "buildSentence", "en": "I thought that you might have come.", "words": [{ "dari": "فکر کردم", "translit": "fikr kardam" }, { "dari": "که", "translit": "ke" }, { "dari": "تو", "translit": "tu" }, { "dari": "آمده باشی", "translit": "āmada bāshi" }], "translit": "fikr kardam ke tu āmada bāshi", "extraWords": [{ "dari": "آمدی", "translit": "āmadi" }] },
-            { "id": "ge-74-5", "type": "chooseTranslation", "direction": "toDari", "dari": "گمان کردم که او را دیده باشی", "translit": "gumān kardam ke ō rā dīda bāshi", "en": "I supposed you might have seen him.", "distractorsDari": [{ "dari": "گمان کردم که او را دیدی", "translit": "gumān kardam ke ō rā dīdi" }, { "dari": "فکر کردم که او را ببینی", "translit": "fikr kardam ke ō rā bubīni" }] },
-            { "id": "ge-74-6", "type": "matchPairs", "prompt": "Match the certainty level", "pairs": [{ "dari": "می‌دانم که رفت", "translit": "mēdānam ke raft", "en": "I know he went" }, { "dari": "فکر کردم که رفته باشد", "translit": "fikr kardam ke rafta bāshad", "en": "I thought he might have gone" }, { "dari": "باید رفته باشد", "translit": "bāyad rafta bāshad", "en": "he must have gone" }, { "dari": "شاید رفته باشد", "translit": "shāyad rafta bāshad", "en": "maybe he has gone" }] }
+            {
+              "id": "ge-74-1",
+              "type": "fillBlank",
+              "target": "فکر کردم که او ___",
+              "translit": "fikr kardam ke ō ___",
+              "en": "I thought he might have gone.",
+              "answer": {
+                "target": "رفته باشد",
+                "translit": "rafta bāshad"
+              },
+              "distractors": [
+                {
+                  "target": "رفت",
+                  "translit": "raft"
+                },
+                {
+                  "target": "می‌رود",
+                  "translit": "mērawad"
+                }
+              ]
+            },
+            {
+              "id": "ge-74-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "گمان کردم که نان خورده باشد",
+              "translit": "gumān kardam ke nān khurda bāshad",
+              "en": "I supposed he might have eaten.",
+              "distractorsEn": [
+                "I know he ate.",
+                "I thought he would eat."
+              ]
+            },
+            {
+              "id": "ge-74-3",
+              "type": "spotError",
+              "target": "فکر کردم که او رفت باشد",
+              "translit": "fikr kardam ke ō raft bāshad",
+              "en": "I thought he might have gone.",
+              "errorWord": {
+                "target": "رفت",
+                "translit": "raft"
+              },
+              "correction": {
+                "target": "رفته",
+                "translit": "rafta"
+              },
+              "hint": "The past subjunctive needs the participle: rafta bāshad."
+            },
+            {
+              "id": "ge-74-4",
+              "type": "buildSentence",
+              "en": "I thought that you might have come.",
+              "words": [
+                {
+                  "target": "فکر کردم",
+                  "translit": "fikr kardam"
+                },
+                {
+                  "target": "که",
+                  "translit": "ke"
+                },
+                {
+                  "target": "تو",
+                  "translit": "tu"
+                },
+                {
+                  "target": "آمده باشی",
+                  "translit": "āmada bāshi"
+                }
+              ],
+              "translit": "fikr kardam ke tu āmada bāshi",
+              "extraWords": [
+                {
+                  "target": "آمدی",
+                  "translit": "āmadi"
+                }
+              ]
+            },
+            {
+              "id": "ge-74-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "گمان کردم که او را دیده باشی",
+              "translit": "gumān kardam ke ō rā dīda bāshi",
+              "en": "I supposed you might have seen him.",
+              "distractorsTarget": [
+                {
+                  "target": "گمان کردم که او را دیدی",
+                  "translit": "gumān kardam ke ō rā dīdi"
+                },
+                {
+                  "target": "فکر کردم که او را ببینی",
+                  "translit": "fikr kardam ke ō rā bubīni"
+                }
+              ]
+            },
+            {
+              "id": "ge-74-6",
+              "type": "matchPairs",
+              "prompt": "Match the certainty level",
+              "pairs": [
+                {
+                  "target": "می‌دانم که رفت",
+                  "translit": "mēdānam ke raft",
+                  "en": "I know he went"
+                },
+                {
+                  "target": "فکر کردم که رفته باشد",
+                  "translit": "fikr kardam ke rafta bāshad",
+                  "en": "I thought he might have gone"
+                },
+                {
+                  "target": "باید رفته باشد",
+                  "translit": "bāyad rafta bāshad",
+                  "en": "he must have gone"
+                },
+                {
+                  "target": "شاید رفته باشد",
+                  "translit": "shāyad rafta bāshad",
+                  "en": "maybe he has gone"
+                }
+              ]
+            }
           ]
         },
         {
@@ -319,17 +1705,145 @@
               "title": "gōyā - as if",
               "body": "gōyā ('as if') introduces an unreal comparison, usually with a past-tense verb: 'he spoke as if he knew everything'.",
               "examples": [
-                { "dari": "گویا همه چیز را می‌دانست", "translit": "gōyā hama chīz rā mēdānist", "en": "As if he knew everything.", "highlight": "گویا" }
+                {
+                  "target": "گویا همه چیز را می‌دانست",
+                  "translit": "gōyā hama chīz rā mēdānist",
+                  "en": "As if he knew everything.",
+                  "highlight": "گویا"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-75-1", "type": "fillBlank", "dari": "___ همه چیز را می‌دانست", "translit": "___ hama chīz rā mēdānist", "en": "As if he knew everything.", "answer": { "dari": "گویا", "translit": "gōyā" }, "distractors": [{ "dari": "چون", "translit": "chun" }, { "dari": "اگر", "translit": "agar" }] },
-            { "id": "ge-75-2", "type": "chooseTranslation", "direction": "toEn", "dari": "گویا مرا ندیده بود", "translit": "gōyā marā nadīda būd", "en": "As if he hadn't seen me.", "distractorsEn": ["Because he hadn't seen me.", "He definitely hadn't seen me."] },
-            { "id": "ge-75-3", "type": "buildSentence", "en": "He spoke as if he were the teacher.", "words": [{ "dari": "گپ زد", "translit": "gap zad" }, { "dari": "گویا", "translit": "gōyā" }, { "dari": "معلم", "translit": "mu'allem" }, { "dari": "بود", "translit": "būd" }], "translit": "gap zad gōyā mu'allem būd", "extraWords": [{ "dari": "چون", "translit": "chun" }] },
-            { "id": "ge-75-4", "type": "chooseTranslation", "direction": "toDari", "dari": "گویا هیچ نشنیده بود", "translit": "gōyā hēch nashunīda būd", "en": "As if he had heard nothing.", "distractorsDari": [{ "dari": "چون هیچ نشنیده بود", "translit": "chun hēch nashunīda būd" }, { "dari": "گویا همه را شنیده بود", "translit": "gōyā hama rā shunīda būd" }] },
-            { "id": "ge-75-5", "type": "matchPairs", "prompt": "Match the comparison words", "pairs": [{ "dari": "گویا", "translit": "gōyā", "en": "as if" }, { "dari": "مثل", "translit": "mesl", "en": "like" }, { "dari": "مانند", "translit": "mānand", "en": "similar to" }, { "dari": "همچنین", "translit": "hamchunīn", "en": "likewise" }] },
-            { "id": "ge-75-6", "type": "fillBlank", "dari": "گویا او را قبلاً ___", "translit": "gōyā ō rā qablan ___", "en": "As if she had seen him before.", "answer": { "dari": "دیده بود", "translit": "dīda būd" }, "distractors": [{ "dari": "می‌بیند", "translit": "mēbīnad" }, { "dari": "ببیند", "translit": "bubīnad" }] }
+            {
+              "id": "ge-75-1",
+              "type": "fillBlank",
+              "target": "___ همه چیز را می‌دانست",
+              "translit": "___ hama chīz rā mēdānist",
+              "en": "As if he knew everything.",
+              "answer": {
+                "target": "گویا",
+                "translit": "gōyā"
+              },
+              "distractors": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                },
+                {
+                  "target": "اگر",
+                  "translit": "agar"
+                }
+              ]
+            },
+            {
+              "id": "ge-75-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "گویا مرا ندیده بود",
+              "translit": "gōyā marā nadīda būd",
+              "en": "As if he hadn't seen me.",
+              "distractorsEn": [
+                "Because he hadn't seen me.",
+                "He definitely hadn't seen me."
+              ]
+            },
+            {
+              "id": "ge-75-3",
+              "type": "buildSentence",
+              "en": "He spoke as if he were the teacher.",
+              "words": [
+                {
+                  "target": "گپ زد",
+                  "translit": "gap zad"
+                },
+                {
+                  "target": "گویا",
+                  "translit": "gōyā"
+                },
+                {
+                  "target": "معلم",
+                  "translit": "mu'allem"
+                },
+                {
+                  "target": "بود",
+                  "translit": "būd"
+                }
+              ],
+              "translit": "gap zad gōyā mu'allem būd",
+              "extraWords": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                }
+              ]
+            },
+            {
+              "id": "ge-75-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "گویا هیچ نشنیده بود",
+              "translit": "gōyā hēch nashunīda būd",
+              "en": "As if he had heard nothing.",
+              "distractorsTarget": [
+                {
+                  "target": "چون هیچ نشنیده بود",
+                  "translit": "chun hēch nashunīda būd"
+                },
+                {
+                  "target": "گویا همه را شنیده بود",
+                  "translit": "gōyā hama rā shunīda būd"
+                }
+              ]
+            },
+            {
+              "id": "ge-75-5",
+              "type": "matchPairs",
+              "prompt": "Match the comparison words",
+              "pairs": [
+                {
+                  "target": "گویا",
+                  "translit": "gōyā",
+                  "en": "as if"
+                },
+                {
+                  "target": "مثل",
+                  "translit": "mesl",
+                  "en": "like"
+                },
+                {
+                  "target": "مانند",
+                  "translit": "mānand",
+                  "en": "similar to"
+                },
+                {
+                  "target": "همچنین",
+                  "translit": "hamchunīn",
+                  "en": "likewise"
+                }
+              ]
+            },
+            {
+              "id": "ge-75-6",
+              "type": "fillBlank",
+              "target": "گویا او را قبلاً ___",
+              "translit": "gōyā ō rā qablan ___",
+              "en": "As if she had seen him before.",
+              "answer": {
+                "target": "دیده بود",
+                "translit": "dīda būd"
+              },
+              "distractors": [
+                {
+                  "target": "می‌بیند",
+                  "translit": "mēbīnad"
+                },
+                {
+                  "target": "ببیند",
+                  "translit": "bubīnad"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -351,18 +1865,137 @@
               "title": "Elevated equivalents",
               "body": "In formal writing, namūdan stands in for kardan, and gardīdan for shudan. Same meaning, higher register - you'll meet them in letters and news.",
               "examples": [
-                { "dari": "او کار را تمام نمود", "translit": "ō kār rā tamām namūd", "en": "He completed the work. (formal)", "highlight": "نمود" },
-                { "dari": "هوا سرد گردید", "translit": "hawā sard gardīd", "en": "The weather turned cold. (formal)", "highlight": "گردید" }
+                {
+                  "target": "او کار را تمام نمود",
+                  "translit": "ō kār rā tamām namūd",
+                  "en": "He completed the work. (formal)",
+                  "highlight": "نمود"
+                },
+                {
+                  "target": "هوا سرد گردید",
+                  "translit": "hawā sard gardīd",
+                  "en": "The weather turned cold. (formal)",
+                  "highlight": "گردید"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-76-1", "type": "matchPairs", "prompt": "Match everyday and formal", "pairs": [{ "dari": "کرد", "translit": "kard", "en": "did (everyday)" }, { "dari": "نمود", "translit": "namūd", "en": "did (formal)" }, { "dari": "شد", "translit": "shud", "en": "became (everyday)" }, { "dari": "گردید", "translit": "gardīd", "en": "became (formal)" }] },
-            { "id": "ge-76-2", "type": "chooseTranslation", "direction": "toEn", "dari": "او کار را تمام نمود", "translit": "ō kār rā tamām namūd", "en": "He completed the work.", "distractorsEn": ["He will complete the work.", "He showed the work."] },
-            { "id": "ge-76-3", "type": "fillBlank", "dari": "هوا سرد ___", "translit": "hawā sard ___", "en": "The weather turned cold. (formal)", "answer": { "dari": "گردید", "translit": "gardīd" }, "distractors": [{ "dari": "کرد", "translit": "kard" }, { "dari": "نمود", "translit": "namūd" }] },
-            { "id": "ge-76-4", "type": "chooseTranslation", "direction": "toDari", "dari": "معلم درس را شروع نمود", "translit": "mu'allem dars rā shurū' namūd", "en": "The teacher began the lesson. (formal)", "distractorsDari": [{ "dari": "معلم درس را شروع کرد", "translit": "mu'allem dars rā shurū' kard" }, { "dari": "معلم درس را شروع گردید", "translit": "mu'allem dars rā shurū' gardīd" }] },
-            { "id": "ge-76-5", "type": "spotError", "dari": "او خوش گردید و کار نمود", "translit": "ō khush gardīd wa kār namūd", "en": "He became happy and worked. (but check the register mix)", "errorWord": { "dari": "گردید", "translit": "gardīd" }, "correction": { "dari": "شد", "translit": "shud" }, "hint": "For a simple everyday statement, shud fits better than the formal gardīd." },
-            { "id": "ge-76-6", "type": "fillBlank", "dari": "رئیس نامه را امضا ___", "translit": "ra'īs nāma rā emzā ___", "en": "The chief signed the letter. (formal)", "answer": { "dari": "نمود", "translit": "namūd" }, "distractors": [{ "dari": "شد", "translit": "shud" }, { "dari": "گردید", "translit": "gardīd" }] }
+            {
+              "id": "ge-76-1",
+              "type": "matchPairs",
+              "prompt": "Match everyday and formal",
+              "pairs": [
+                {
+                  "target": "کرد",
+                  "translit": "kard",
+                  "en": "did (everyday)"
+                },
+                {
+                  "target": "نمود",
+                  "translit": "namūd",
+                  "en": "did (formal)"
+                },
+                {
+                  "target": "شد",
+                  "translit": "shud",
+                  "en": "became (everyday)"
+                },
+                {
+                  "target": "گردید",
+                  "translit": "gardīd",
+                  "en": "became (formal)"
+                }
+              ]
+            },
+            {
+              "id": "ge-76-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او کار را تمام نمود",
+              "translit": "ō kār rā tamām namūd",
+              "en": "He completed the work.",
+              "distractorsEn": [
+                "He will complete the work.",
+                "He showed the work."
+              ]
+            },
+            {
+              "id": "ge-76-3",
+              "type": "fillBlank",
+              "target": "هوا سرد ___",
+              "translit": "hawā sard ___",
+              "en": "The weather turned cold. (formal)",
+              "answer": {
+                "target": "گردید",
+                "translit": "gardīd"
+              },
+              "distractors": [
+                {
+                  "target": "کرد",
+                  "translit": "kard"
+                },
+                {
+                  "target": "نمود",
+                  "translit": "namūd"
+                }
+              ]
+            },
+            {
+              "id": "ge-76-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "معلم درس را شروع نمود",
+              "translit": "mu'allem dars rā shurū' namūd",
+              "en": "The teacher began the lesson. (formal)",
+              "distractorsTarget": [
+                {
+                  "target": "معلم درس را شروع کرد",
+                  "translit": "mu'allem dars rā shurū' kard"
+                },
+                {
+                  "target": "معلم درس را شروع گردید",
+                  "translit": "mu'allem dars rā shurū' gardīd"
+                }
+              ]
+            },
+            {
+              "id": "ge-76-5",
+              "type": "spotError",
+              "target": "او خوش گردید و کار نمود",
+              "translit": "ō khush gardīd wa kār namūd",
+              "en": "He became happy and worked. (but check the register mix)",
+              "errorWord": {
+                "target": "گردید",
+                "translit": "gardīd"
+              },
+              "correction": {
+                "target": "شد",
+                "translit": "shud"
+              },
+              "hint": "For a simple everyday statement, shud fits better than the formal gardīd."
+            },
+            {
+              "id": "ge-76-6",
+              "type": "fillBlank",
+              "target": "رئیس نامه را امضا ___",
+              "translit": "ra'īs nāma rā emzā ___",
+              "en": "The chief signed the letter. (formal)",
+              "answer": {
+                "target": "نمود",
+                "translit": "namūd"
+              },
+              "distractors": [
+                {
+                  "target": "شد",
+                  "translit": "shud"
+                },
+                {
+                  "target": "گردید",
+                  "translit": "gardīd"
+                }
+              ]
+            }
           ]
         },
         {
@@ -377,18 +2010,138 @@
               "title": "Fixed expressions",
               "body": "Many everyday meanings are idioms with a noun + light verb. ba yād āwardan - 'to bring to mind, remember'; az dast dādan - 'to give from the hand, lose'.",
               "examples": [
-                { "dari": "نام او را به یاد آوردم", "translit": "nām-e ō rā ba yād āwardam", "en": "I remembered his name.", "highlight": "به یاد آوردم" },
-                { "dari": "پول خود را از دست داد", "translit": "pūl-e khud rā az dast dād", "en": "He lost his money.", "highlight": "از دست داد" }
+                {
+                  "target": "نام او را به یاد آوردم",
+                  "translit": "nām-e ō rā ba yād āwardam",
+                  "en": "I remembered his name.",
+                  "highlight": "به یاد آوردم"
+                },
+                {
+                  "target": "پول خود را از دست داد",
+                  "translit": "pūl-e khud rā az dast dād",
+                  "en": "He lost his money.",
+                  "highlight": "از دست داد"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-77-1", "type": "chooseTranslation", "direction": "toEn", "dari": "نام او را به یاد آوردم", "translit": "nām-e ō rā ba yād āwardam", "en": "I remembered his name.", "distractorsEn": ["I forgot his name.", "I wrote his name."] },
-            { "id": "ge-77-2", "type": "chooseTranslation", "direction": "toEn", "dari": "پول خود را از دست داد", "translit": "pūl-e khud rā az dast dād", "en": "He lost his money.", "distractorsEn": ["He gave money by hand.", "He found his money."] },
-            { "id": "ge-77-3", "type": "matchPairs", "prompt": "Match the idioms", "pairs": [{ "dari": "به یاد آوردن", "translit": "ba yād āwardan", "en": "to remember" }, { "dari": "از دست دادن", "translit": "az dast dādan", "en": "to lose" }, { "dari": "به دست آوردن", "translit": "ba dast āwardan", "en": "to obtain" }, { "dari": "به کار بردن", "translit": "ba kār burdan", "en": "to use" }] },
-            { "id": "ge-77-4", "type": "fillBlank", "dari": "کتاب خوب را به دست ___", "translit": "ketāb-e khōb rā ba dast ___", "en": "He obtained a good book.", "answer": { "dari": "آورد", "translit": "āward" }, "distractors": [{ "dari": "داد", "translit": "dād" }, { "dari": "دید", "translit": "dīd" }] },
-            { "id": "ge-77-5", "type": "buildSentence", "en": "I remembered my friend.", "words": [{ "dari": "دوست خود را", "translit": "dōst-e khud rā" }, { "dari": "به یاد", "translit": "ba yād" }, { "dari": "آوردم", "translit": "āwardam" }], "translit": "dōst-e khud rā ba yād āwardam", "extraWords": [{ "dari": "دادم", "translit": "dādam" }] },
-            { "id": "ge-77-6", "type": "chooseTranslation", "direction": "toDari", "dari": "او وقت خود را از دست داد", "translit": "ō waqt-e khud rā az dast dād", "en": "He wasted his time.", "distractorsDari": [{ "dari": "او وقت خود را به دست آورد", "translit": "ō waqt-e khud rā ba dast āward" }, { "dari": "او وقت خود را به یاد آورد", "translit": "ō waqt-e khud rā ba yād āward" }] }
+            {
+              "id": "ge-77-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "نام او را به یاد آوردم",
+              "translit": "nām-e ō rā ba yād āwardam",
+              "en": "I remembered his name.",
+              "distractorsEn": [
+                "I forgot his name.",
+                "I wrote his name."
+              ]
+            },
+            {
+              "id": "ge-77-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "پول خود را از دست داد",
+              "translit": "pūl-e khud rā az dast dād",
+              "en": "He lost his money.",
+              "distractorsEn": [
+                "He gave money by hand.",
+                "He found his money."
+              ]
+            },
+            {
+              "id": "ge-77-3",
+              "type": "matchPairs",
+              "prompt": "Match the idioms",
+              "pairs": [
+                {
+                  "target": "به یاد آوردن",
+                  "translit": "ba yād āwardan",
+                  "en": "to remember"
+                },
+                {
+                  "target": "از دست دادن",
+                  "translit": "az dast dādan",
+                  "en": "to lose"
+                },
+                {
+                  "target": "به دست آوردن",
+                  "translit": "ba dast āwardan",
+                  "en": "to obtain"
+                },
+                {
+                  "target": "به کار بردن",
+                  "translit": "ba kār burdan",
+                  "en": "to use"
+                }
+              ]
+            },
+            {
+              "id": "ge-77-4",
+              "type": "fillBlank",
+              "target": "کتاب خوب را به دست ___",
+              "translit": "ketāb-e khōb rā ba dast ___",
+              "en": "He obtained a good book.",
+              "answer": {
+                "target": "آورد",
+                "translit": "āward"
+              },
+              "distractors": [
+                {
+                  "target": "داد",
+                  "translit": "dād"
+                },
+                {
+                  "target": "دید",
+                  "translit": "dīd"
+                }
+              ]
+            },
+            {
+              "id": "ge-77-5",
+              "type": "buildSentence",
+              "en": "I remembered my friend.",
+              "words": [
+                {
+                  "target": "دوست خود را",
+                  "translit": "dōst-e khud rā"
+                },
+                {
+                  "target": "به یاد",
+                  "translit": "ba yād"
+                },
+                {
+                  "target": "آوردم",
+                  "translit": "āwardam"
+                }
+              ],
+              "translit": "dōst-e khud rā ba yād āwardam",
+              "extraWords": [
+                {
+                  "target": "دادم",
+                  "translit": "dādam"
+                }
+              ]
+            },
+            {
+              "id": "ge-77-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "او وقت خود را از دست داد",
+              "translit": "ō waqt-e khud rā az dast dād",
+              "en": "He wasted his time.",
+              "distractorsTarget": [
+                {
+                  "target": "او وقت خود را به دست آورد",
+                  "translit": "ō waqt-e khud rā ba dast āward"
+                },
+                {
+                  "target": "او وقت خود را به یاد آورد",
+                  "translit": "ō waqt-e khud rā ba yād āward"
+                }
+              ]
+            }
           ]
         },
         {
@@ -403,19 +2156,181 @@
               "title": "You're near fluent",
               "body": "You can now concede and stipulate, hedge and report impersonally, express regret and unreal comparison, and switch into a formal register. This set draws on all of it.",
               "examples": [
-                { "dari": "گفته می‌شود که اگرچه سخت بود، باز هم کار کرد", "translit": "gufta mēshawad ke agarche sakht būd, bāz ham kār kard", "en": "It is said that although it was hard, he still worked." }
+                {
+                  "target": "گفته می‌شود که اگرچه سخت بود، باز هم کار کرد",
+                  "translit": "gufta mēshawad ke agarche sakht būd, bāz ham kār kard",
+                  "en": "It is said that although it was hard, he still worked."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-78-1", "type": "spotError", "dari": "چون مانده بود، باز هم کار کرد", "translit": "chun mānda būd, bāz ham kār kard", "en": "Although he was tired, he still worked.", "errorWord": { "dari": "چون", "translit": "chun" }, "correction": { "dari": "اگرچه", "translit": "agarche" }, "hint": "'Although' concedes; chun means 'because'." },
-            { "id": "ge-78-2", "type": "fillBlank", "dari": "قبل از اینکه ___، نان خوردم", "translit": "qabl az īnke ___, nān khurdam", "en": "Before I went, I ate.", "answer": { "dari": "بروم", "translit": "burawam" }, "distractors": [{ "dari": "رفتم", "translit": "raftam" }, { "dari": "می‌روم", "translit": "mērawam" }] },
-            { "id": "ge-78-3", "type": "chooseTranslation", "direction": "toEn", "dari": "به نظر می‌رسد که او رفته باشد", "translit": "be nazar mērasad ke ō rafta bāshad", "en": "It seems that he might have gone.", "distractorsEn": ["It is certain that he went.", "It seems he will go."] },
-            { "id": "ge-78-4", "type": "fillBlank", "dari": "کاش او را ___", "translit": "kāsh ō rā ___", "en": "I wish I had seen him.", "answer": { "dari": "دیده بودم", "translit": "dīda būdam" }, "distractors": [{ "dari": "دیدم", "translit": "dīdam" }, { "dari": "ببینم", "translit": "bubīnam" }] },
-            { "id": "ge-78-5", "type": "buildSentence", "en": "I won't go unless you come.", "words": [{ "dari": "نمی‌روم", "translit": "namērawam" }, { "dari": "مگر", "translit": "magar" }, { "dari": "تو", "translit": "tu" }, { "dari": "بیایی", "translit": "biāyi" }], "translit": "namērawam magar tu biāyi", "extraWords": [{ "dari": "می‌آیی", "translit": "mēāyi" }] },
-            { "id": "ge-78-6", "type": "chooseTranslation", "direction": "toDari", "dari": "او نه تنها آمد، بلکه کمک هم کرد", "translit": "ō na tanhā āmad, balke kumak ham kard", "en": "He not only came, but also helped.", "distractorsDari": [{ "dari": "او آمد اما کمک نکرد", "translit": "ō āmad amā kumak nakard" }, { "dari": "او آمد چون کمک کرد", "translit": "ō āmad chun kumak kard" }] },
-            { "id": "ge-78-7", "type": "matchPairs", "prompt": "Match the C1 structures", "pairs": [{ "dari": "اگرچه", "translit": "agarche", "en": "although" }, { "dari": "مگر", "translit": "magar", "en": "unless" }, { "dari": "گویا", "translit": "gōyā", "en": "as if" }, { "dari": "گفته می‌شود", "translit": "gufta mēshawad", "en": "it is said" }] },
-            { "id": "ge-78-8", "type": "fillBlank", "dari": "او کار را تمام ___", "translit": "ō kār rā tamām ___", "en": "He completed the work. (formal)", "answer": { "dari": "نمود", "translit": "namūd" }, "distractors": [{ "dari": "شد", "translit": "shud" }, { "dari": "دید", "translit": "dīd" }] }
+            {
+              "id": "ge-78-1",
+              "type": "spotError",
+              "target": "چون مانده بود، باز هم کار کرد",
+              "translit": "chun mānda būd, bāz ham kār kard",
+              "en": "Although he was tired, he still worked.",
+              "errorWord": {
+                "target": "چون",
+                "translit": "chun"
+              },
+              "correction": {
+                "target": "اگرچه",
+                "translit": "agarche"
+              },
+              "hint": "'Although' concedes; chun means 'because'."
+            },
+            {
+              "id": "ge-78-2",
+              "type": "fillBlank",
+              "target": "قبل از اینکه ___، نان خوردم",
+              "translit": "qabl az īnke ___, nān khurdam",
+              "en": "Before I went, I ate.",
+              "answer": {
+                "target": "بروم",
+                "translit": "burawam"
+              },
+              "distractors": [
+                {
+                  "target": "رفتم",
+                  "translit": "raftam"
+                },
+                {
+                  "target": "می‌روم",
+                  "translit": "mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-78-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "به نظر می‌رسد که او رفته باشد",
+              "translit": "be nazar mērasad ke ō rafta bāshad",
+              "en": "It seems that he might have gone.",
+              "distractorsEn": [
+                "It is certain that he went.",
+                "It seems he will go."
+              ]
+            },
+            {
+              "id": "ge-78-4",
+              "type": "fillBlank",
+              "target": "کاش او را ___",
+              "translit": "kāsh ō rā ___",
+              "en": "I wish I had seen him.",
+              "answer": {
+                "target": "دیده بودم",
+                "translit": "dīda būdam"
+              },
+              "distractors": [
+                {
+                  "target": "دیدم",
+                  "translit": "dīdam"
+                },
+                {
+                  "target": "ببینم",
+                  "translit": "bubīnam"
+                }
+              ]
+            },
+            {
+              "id": "ge-78-5",
+              "type": "buildSentence",
+              "en": "I won't go unless you come.",
+              "words": [
+                {
+                  "target": "نمی‌روم",
+                  "translit": "namērawam"
+                },
+                {
+                  "target": "مگر",
+                  "translit": "magar"
+                },
+                {
+                  "target": "تو",
+                  "translit": "tu"
+                },
+                {
+                  "target": "بیایی",
+                  "translit": "biāyi"
+                }
+              ],
+              "translit": "namērawam magar tu biāyi",
+              "extraWords": [
+                {
+                  "target": "می‌آیی",
+                  "translit": "mēāyi"
+                }
+              ]
+            },
+            {
+              "id": "ge-78-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "او نه تنها آمد، بلکه کمک هم کرد",
+              "translit": "ō na tanhā āmad, balke kumak ham kard",
+              "en": "He not only came, but also helped.",
+              "distractorsTarget": [
+                {
+                  "target": "او آمد اما کمک نکرد",
+                  "translit": "ō āmad amā kumak nakard"
+                },
+                {
+                  "target": "او آمد چون کمک کرد",
+                  "translit": "ō āmad chun kumak kard"
+                }
+              ]
+            },
+            {
+              "id": "ge-78-7",
+              "type": "matchPairs",
+              "prompt": "Match the C1 structures",
+              "pairs": [
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche",
+                  "en": "although"
+                },
+                {
+                  "target": "مگر",
+                  "translit": "magar",
+                  "en": "unless"
+                },
+                {
+                  "target": "گویا",
+                  "translit": "gōyā",
+                  "en": "as if"
+                },
+                {
+                  "target": "گفته می‌شود",
+                  "translit": "gufta mēshawad",
+                  "en": "it is said"
+                }
+              ]
+            },
+            {
+              "id": "ge-78-8",
+              "type": "fillBlank",
+              "target": "او کار را تمام ___",
+              "translit": "ō kār rā tamām ___",
+              "en": "He completed the work. (formal)",
+              "answer": {
+                "target": "نمود",
+                "translit": "namūd"
+              },
+              "distractors": [
+                {
+                  "target": "شد",
+                  "translit": "shud"
+                },
+                {
+                  "target": "دید",
+                  "translit": "dīd"
+                }
+              ]
+            }
           ]
         }
       ]

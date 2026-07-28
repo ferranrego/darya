@@ -2,12 +2,12 @@
   "id": "tx-seed-l1-002",
   "formatVersion": "1.3.0",
   "level": "L1",
-  "titleDari": "روز من",
+  "titleTarget": "روز من",
   "titleTranslit": "rōz-e man",
   "titleEn": "My day",
   "sentences": [
     {
-      "dari": "صبح چای می‌خورم.",
+      "target": "صبح چای می‌خورم.",
       "translit": "subh chāy mēkhuram.",
       "en": "In the morning I drink tea.",
       "tokens": [
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "dari": "به کار می‌روم.",
+      "target": "به کار می‌روم.",
       "translit": "ba kār mērawam.",
       "en": "I go to work.",
       "tokens": [
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "dari": "شب به خانه می‌آیم.",
+      "target": "شب به خانه می‌آیم.",
       "translit": "shab ba khāna mēāyam.",
       "en": "At night I come home.",
       "tokens": [
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "dari": "نان می‌خورم.",
+      "target": "نان می‌خورم.",
       "translit": "nān mēkhuram.",
       "en": "I eat food.",
       "tokens": [
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "dari": "شب خوب است.",
+      "target": "شب خوب است.",
       "translit": "shab khōb ast.",
       "en": "The night is good.",
       "tokens": [

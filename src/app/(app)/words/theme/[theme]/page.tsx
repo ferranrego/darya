@@ -48,7 +48,7 @@ export default async function ThemePage({
               <div className="flex items-start justify-between">
                 <div className="flex flex-col">
                   <p lang="prs" className="text-[26px] leading-snug text-ink mb-1">
-                    {word.dari}
+                    {word.target}
                   </p>
                   <p className="text-[13px] text-ink-soft font-medium tracking-wide">
                     {word.translit}
@@ -70,7 +70,7 @@ export default async function ThemePage({
                 {word.glossEn}
               </div>
 
-              {(word.exampleDari || word.exampleEn) && (
+              {(word.exampleTarget || word.exampleEn) && (
                 <details className="mt-3 group/details">
                   <summary className="inline-flex cursor-pointer select-none items-center gap-1.5 text-[13px] font-semibold text-lapis hover:text-lapis-deep transition-colors list-none">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-open/details:rotate-90">
@@ -80,7 +80,7 @@ export default async function ThemePage({
                   </summary>
                   <div className="mt-2.5 flex flex-col gap-1.5 rounded-xl bg-paper p-3.5 border border-line/50 animate-in fade-in slide-in-from-top-2 duration-200">
                     <p lang="prs" className="text-[18px] leading-relaxed text-ink">
-                      {word.exampleDari}
+                      {word.exampleTarget}
                     </p>
                     {word.exampleTranslit && (
                       <p className="text-[13px] text-ink-soft mb-0.5">

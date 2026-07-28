@@ -2,15 +2,15 @@ import type { GrammarExample, GrammarSlide } from "@/lib/content/schema";
 
 /** Dari example with the taught pattern highlighted in lapis. */
 function ExampleLine({ example }: { example: GrammarExample }) {
-  const { dari, highlight } = example;
-  let parts: React.ReactNode = dari;
-  if (highlight && dari.includes(highlight)) {
-    const at = dari.indexOf(highlight);
+  const { target, highlight } = example;
+  let parts: React.ReactNode = target;
+  if (highlight && target.includes(highlight)) {
+    const at = target.indexOf(highlight);
     parts = (
       <>
-        {dari.slice(0, at)}
+        {target.slice(0, at)}
         <span className="text-lapis">{highlight}</span>
-        {dari.slice(at + highlight.length)}
+        {target.slice(at + highlight.length)}
       </>
     );
   }
@@ -56,7 +56,7 @@ export function SlideCard({ slide }: { slide: GrammarSlide }) {
 
       <div className="flex flex-col gap-3">
         {slide.examples.map((example) => (
-          <ExampleLine key={example.dari} example={example} />
+          <ExampleLine key={example.target} example={example} />
         ))}
       </div>
     </div>

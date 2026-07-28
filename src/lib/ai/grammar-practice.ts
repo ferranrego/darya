@@ -36,16 +36,16 @@ const outputSchema = z.object({ exercises: z.array(rawItemSchema).min(1) });
 
 function checkItem(item: z.infer<typeof rawItemSchema>) {
   if (item.type === "fillBlank") {
-    const answerKey = normalizeDari(item.answer.dari);
+    const answerKey = normalizeDari(item.answer.target);
     for (const d of item.distractors) {
-      if (normalizeDari(d.dari) === answerKey) throw new Error("Distractor equals answer");
+      if (normalizeDari(d.target) === answerKey) throw new Error("Distractor equals answer");
     }
-    assertKnownVocab(item.dari.replace("___", item.answer.dari), MAX_SENTENCE_WORDS);
+    assertKnownVocab(item.target.replace("___", item.answer.target), MAX_SENTENCE_WORDS);
   } else {
     if (item.direction !== "toEn") throw new Error("Only toEn is generated");
     if (item.distractorsEn.length < 2) throw new Error("Need 2 English distractors");
     if (item.distractorsEn.includes(item.en)) throw new Error("Distractor equals answer");
-    assertKnownVocab(item.dari, MAX_SENTENCE_WORDS);
+    assertKnownVocab(item.target, MAX_SENTENCE_WORDS);
   }
 }
 
@@ -64,7 +64,7 @@ function buildPrompt(lesson: GrammarLesson): string {
   const level = grammarLessonLevel(lesson.id) ?? "A1";
   const anchors = lesson.slides
     .flatMap((s) => s.examples)
-    .map((e) => `${e.dari} - ${e.translit} - "${e.en}"`)
+    .map((e) => `${e.target} - ${e.translit} - "${e.en}"`)
     .join("\n");
 
   // Most frequent vocabulary up to this level's frequency-band cap.
@@ -72,7 +72,7 @@ function buildPrompt(lesson: GrammarLesson): string {
     .filter((e) => e.freqBand <= BAND_CAP[level])
     .sort((a, b) => a.freqRank - b.freqRank)
     .slice(0, 80)
-    .map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`)
+    .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
     .join("، ");
 
   return `You are a Dari (Afghan Persian, NOT Iranian Persian) teacher writing practice exercises for an ${LEVEL_LABEL[level]} learner.
@@ -87,9 +87,9 @@ ${vocab}
 
 Write ${PRACTICE_BATCH_SIZE} NEW exercises drilling this grammar point. Mix two types:
 
-Type "fillBlank" (about 4 of them): a short Dari sentence (max 7 words) with exactly one blank written as ___ in BOTH dari and translit. The blank must test the grammar point. Give the answer and 2-3 wrong options of the same kind (e.g. wrong person endings).
+Type "fillBlank" (about 4 of them): a short Dari sentence (max 7 words) with exactly one blank written as ___ in BOTH target and translit. The blank must test the grammar point. Give the answer and 2-3 wrong options of the same kind (e.g. wrong person endings).
 
-Type "chooseTranslation" (about 2 of them): a short Dari sentence, its transliteration, its correct English meaning in "en", and 2 wrong English meanings in "distractorsEn" that differ ONLY by the grammar point (wrong person, wrong tense, plural vs singular...). Set "direction": "toEn", "distractorsDari": [].
+Type "chooseTranslation" (about 2 of them): a short Dari sentence, its transliteration, its correct English meaning in "en", and 2 wrong English meanings in "distractorsEn" that differ ONLY by the grammar point (wrong person, wrong tense, plural vs singular...). Set "direction": "toEn", "distractorsTarget": [].
 
 STRICT RULES:
 - Afghan Dari (Kabuli) usage and spelling. Transliteration: long vowels ā ē ī ō ū, mē- for the present prefix, w for و.
@@ -99,8 +99,8 @@ STRICT RULES:
 
 Return ONLY JSON:
 {"exercises": [
-  {"type": "fillBlank", "dari": "... ___ ...", "translit": "... ___ ...", "en": "...", "answer": {"dari": "...", "translit": "..."}, "distractors": [{"dari": "...", "translit": "..."}]},
-  {"type": "chooseTranslation", "direction": "toEn", "dari": "...", "translit": "...", "en": "...", "distractorsEn": ["...", "..."], "distractorsDari": []}
+  {"type": "fillBlank", "target": "... ___ ...", "translit": "... ___ ...", "en": "...", "answer": {"target": "...", "translit": "..."}, "distractors": [{"target": "...", "translit": "..."}]},
+  {"type": "chooseTranslation", "direction": "toEn", "target": "...", "translit": "...", "en": "...", "distractorsEn": ["...", "..."], "distractorsTarget": []}
 ]}`;
 }
 

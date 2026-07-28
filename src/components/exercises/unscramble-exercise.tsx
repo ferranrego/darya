@@ -6,7 +6,7 @@ import { Check, X } from "lucide-react";
 
 interface UnscrambleExerciseProps {
   words: string[];
-  sentenceDari: string;
+  sentenceTarget: string;
   sentenceTranslit?: string;
   sentenceEn: string;
   onComplete: (isCorrect: boolean) => void;
@@ -14,14 +14,14 @@ interface UnscrambleExerciseProps {
 
 export function UnscrambleExercise({
   words,
-  sentenceDari,
+  sentenceTarget,
   sentenceTranslit,
   sentenceEn,
   onComplete,
 }: UnscrambleExerciseProps) {
   const [availableWords, setAvailableWords] = useState(() => {
     const scrambled = [...words].map((text, i) => ({ id: `${i}-${text}`, text })).sort(() => Math.random() - 0.5);
-    if (scrambled.map(s => s.text).join(" ") === sentenceDari && words.length > 1) {
+    if (scrambled.map(s => s.text).join(" ") === sentenceTarget && words.length > 1) {
       scrambled.reverse();
     }
     return scrambled;
@@ -38,7 +38,7 @@ export function UnscrambleExercise({
         const nextSelected = [...prevSelected, word];
         if (nextAvailable.length === 0) {
           const attempt = nextSelected.map(s => s.text).join(" ");
-          if (attempt.replace(/\s+/g, "") === sentenceDari.replace(/\s+/g, "")) {
+          if (attempt.replace(/\s+/g, "") === sentenceTarget.replace(/\s+/g, "")) {
             setStatus("correct");
           }
         }
@@ -56,7 +56,7 @@ export function UnscrambleExercise({
 
   const checkAnswer = () => {
     const attempt = selectedWords.map(s => s.text).join(" ");
-    if (attempt.replace(/\s+/g, "") === sentenceDari.replace(/\s+/g, "")) {
+    if (attempt.replace(/\s+/g, "") === sentenceTarget.replace(/\s+/g, "")) {
       setStatus("correct");
     } else {
       setStatus("incorrect");

@@ -7,7 +7,7 @@ const MAX_SENTENCE_WORDS = 12;
 const contextSentencesSchema = z.object({
   sentences: z.array(
     z.object({
-      dari: z.string(),
+      target: z.string(),
       translit: z.string(),
       en: z.string(),
     })
@@ -16,8 +16,8 @@ const contextSentencesSchema = z.object({
 
 export type GeneratedContextSentence = z.infer<typeof contextSentencesSchema>["sentences"][number];
 
-function buildPrompt(wordDari: string, wordTranslit: string, wordEn: string): string {
-  return `You are a Dari language teacher in Kabul. Provide 3 short, natural context sentences that use the word "${wordDari}" (${wordTranslit} - ${wordEn}).
+function buildPrompt(wordTarget: string, wordTranslit: string, wordEn: string): string {
+  return `You are a Dari language teacher in Kabul. Provide 3 short, natural context sentences that use the word "${wordTarget}" (${wordTranslit} - ${wordEn}).
 
 STRICT VOCABULARY AND NATURALNESS CONSTRAINT:
 - Ensure the sentence sounds 100% natural and idiomatic in Dari.
@@ -30,20 +30,20 @@ Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū.
 Return ONLY JSON with this exact shape:
 {
   "sentences": [
-    { "dari": "...", "translit": "...", "en": "..." },
-    { "dari": "...", "translit": "...", "en": "..." },
-    { "dari": "...", "translit": "...", "en": "..." }
+    { "target": "...", "translit": "...", "en": "..." },
+    { "target": "...", "translit": "...", "en": "..." },
+    { "target": "...", "translit": "...", "en": "..." }
   ]
 }`;
 }
 
 export async function generateContextSentences(
-  wordDari: string,
+  wordTarget: string,
   wordTranslit: string,
   wordEn: string,
   count = 3
 ): Promise<GeneratedContextSentence[]> {
-  return completeJson(buildPrompt(wordDari, wordTranslit, wordEn), {
+  return completeJson(buildPrompt(wordTarget, wordTranslit, wordEn), {
     temperature: 0.7,
     validate: (raw) => {
       const parsed = contextSentencesSchema.parse(JSON.parse(raw));
@@ -55,7 +55,7 @@ export async function generateContextSentences(
         try {
           // Relaxed validation: we no longer strictly require the exact infinitive form
           // to be present in the sentence, as verbs will naturally be conjugated.
-          assertKnownVocab(sentence.dari, MAX_SENTENCE_WORDS);
+          assertKnownVocab(sentence.target, MAX_SENTENCE_WORDS);
           good.push(sentence);
         } catch (e) {
           problems.push(e instanceof Error ? e.message : String(e));

@@ -199,7 +199,7 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
                   >
                     <div className="flex flex-col gap-1 max-w-[65%]">
                       <p lang="prs" className="text-[22px] leading-snug text-left text-ink">
-                        {lexeme.dari}
+                        {lexeme.target}
                       </p>
                       <p className="text-[13px] text-ink-soft font-medium">{lexeme.translit}</p>
                       <p className="mt-1 text-[15px] font-semibold leading-tight text-ink">

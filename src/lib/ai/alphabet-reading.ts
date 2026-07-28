@@ -19,7 +19,7 @@ import { completeJson } from "./providers";
 const ALLOWED_PUNCT = new Set([" ", ZWNJ, "،", "؟", "؛", ".", "!", "؟", "?", "‏"]);
 
 const outputSchema = z.object({
-  dari: z.string().min(1),
+  target: z.string().min(1),
   translit: z.string().min(1),
   en: z.string().min(1),
 });
@@ -27,7 +27,7 @@ const outputSchema = z.object({
 export interface ReadingSentence {
   id: string;
   type: "readSentence";
-  dari: string;
+  target: string;
   translit: string;
   en: string;
 }
@@ -37,14 +37,14 @@ export function spellableWords(knownLetters: string[]) {
   const known = new Set(knownLetters);
   return lexicon.entries
     .filter((entry) => {
-      const chars = Array.from(normalizeDari(entry.dariNormalized || entry.dari));
+      const chars = Array.from(normalizeDari(entry.targetNormalized || entry.target));
       return chars.every((c) => known.has(c) || ALLOWED_PUNCT.has(c));
     })
     .sort((a, b) => a.freqRank - b.freqRank);
 }
 
-function buildPrompt(words: { dari: string; translit: string; glossEn: string }[]): string {
-  const list = words.map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`).join("، ");
+function buildPrompt(words: { target: string; translit: string; glossEn: string }[]): string {
+  const list = words.map((w) => `${w.target} (${w.translit} = ${w.glossEn})`).join("، ");
 
   return `You are a Dari (Afghan Persian, NOT Iranian Persian) teacher helping an absolute beginner who has only learned a few letters.
 
@@ -61,7 +61,7 @@ STRICT RULES:
 
 Transliteration: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū (kh/gh/ch/sh/zh/q, w for و).
 
-Return ONLY JSON: {"dari": "...", "translit": "...", "en": "..."}`;
+Return ONLY JSON: {"target": "...", "translit": "...", "en": "..."}`;
 }
 
 export async function generateReadingSentence(knownLetters: string[]): Promise<ReadingSentence> {
@@ -79,7 +79,7 @@ export async function generateReadingSentence(knownLetters: string[]): Promise<R
     temperature: 0.7,
     validate: (raw) => {
       const parsed = outputSchema.parse(JSON.parse(raw));
-      const chars = Array.from(normalizeDari(parsed.dari));
+      const chars = Array.from(normalizeDari(parsed.target));
 
       // Hard constraint: the learner must be able to read every character.
       const unknown = chars.find((c) => !known.has(c) && !ALLOWED_PUNCT.has(c));
@@ -87,7 +87,7 @@ export async function generateReadingSentence(knownLetters: string[]): Promise<R
         throw new Error(`Sentence uses unknown character "${unknown}"`);
       }
 
-      const wordCount = parsed.dari.trim().split(/\s+/).filter(Boolean).length;
+      const wordCount = parsed.target.trim().split(/\s+/).filter(Boolean).length;
       if (wordCount < 2) {
         throw new Error("Sentence too short");
       }
@@ -95,7 +95,7 @@ export async function generateReadingSentence(knownLetters: string[]): Promise<R
       return {
         id: "gen-" + Date.now(),
         type: "readSentence" as const,
-        dari: parsed.dari.trim(),
+        target: parsed.target.trim(),
         translit: parsed.translit.trim(),
         en: parsed.en.trim(),
       };

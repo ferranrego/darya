@@ -2,12 +2,12 @@
   "id": "tx-seed-l2-003",
   "formatVersion": "1.3.0",
   "level": "L2",
-  "titleDari": "فامیل من",
+  "titleTarget": "فامیل من",
   "titleTranslit": "fāmīl-e man",
   "titleEn": "My family",
   "sentences": [
     {
-      "dari": "فامیل ما کلان است.",
+      "target": "فامیل ما کلان است.",
       "translit": "fāmīl-e mā kalān ast.",
       "en": "Our family is big.",
       "tokens": [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "dari": "پدرکلانم قصه می‌گوید.",
+      "target": "پدرکلانم قصه می‌گوید.",
       "translit": "padarkalānam qessa mēgōyad.",
       "en": "My grandfather tells stories.",
       "tokens": [
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "dari": "مادرکلانم چای می‌آورد.",
+      "target": "مادرکلانم چای می‌آورد.",
       "translit": "mādarkalānam chāy mēāwarad.",
       "en": "My grandmother brings tea.",
       "tokens": [
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "dari": "خاله من در مزار زندگی می‌کند.",
+      "target": "خاله من در مزار زندگی می‌کند.",
       "translit": "khāla-ye man dar mazār zendagī mēkunad.",
       "en": "My aunt lives in Mazar.",
       "tokens": [
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "dari": "ما با هم نان می‌خوریم.",
+      "target": "ما با هم نان می‌خوریم.",
       "translit": "mā bā ham nān mēkhurēm.",
       "en": "We eat together.",
       "tokens": [

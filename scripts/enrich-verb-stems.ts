@@ -90,7 +90,7 @@ const STEM_TABLE: Record<string, string | null> = {
 
 interface RawEntry {
   id: string;
-  dari: string;
+  target: string;
   translit: string;
   glossEn: string;
   pos: string;
@@ -147,7 +147,7 @@ function extractStem(entry: RawEntry, pastStem: string): string | null {
 }
 
 const llmResponseSchema = z.object({
-  stems: z.array(z.object({ dari: z.string(), presentStem: z.string() })),
+  stems: z.array(z.object({ target: z.string(), presentStem: z.string() })),
 });
 
 async function callLlm(prompt: string): Promise<string> {
@@ -183,19 +183,19 @@ async function callLlm(prompt: string): Promise<string> {
 }
 
 async function llmStems(batch: RawEntry[]): Promise<Map<string, string>> {
-  const list = batch.map((e) => `- ${e.dari} (${e.translit}, "${e.glossEn}")`).join("\n");
+  const list = batch.map((e) => `- ${e.target} (${e.translit}, "${e.glossEn}")`).join("\n");
   const prompt = `You are an expert Persian (Dari/Farsi) linguist. For each infinitive verb below, give its PRESENT STEM (بن مضارع) in Persian script only - the stem used in present-tense conjugation. Examples: کردن → کن، رفتن → رو، گفتن → گو، خریدن → خر، پرسیدن → پرس، فهمیدن → فهم.
 
 Verbs:
 ${list}
 
-Return ONLY JSON: {"stems": [{"dari": "<infinitive exactly as given>", "presentStem": "<present stem in Persian script>"}]}`;
+Return ONLY JSON: {"stems": [{"target": "<infinitive exactly as given>", "presentStem": "<present stem in Persian script>"}]}`;
   const raw = await callLlm(prompt);
   const parsed = llmResponseSchema.parse(JSON.parse(raw));
   const out = new Map<string, string>();
   for (const s of parsed.stems) {
     const stem = normalizeDari(s.presentStem);
-    if (PERSIAN.test(stem) && stem.length > 0) out.set(matchKey(s.dari), stem);
+    if (PERSIAN.test(stem) && stem.length > 0) out.set(matchKey(s.target), stem);
   }
   return out;
 }
@@ -206,8 +206,8 @@ async function main() {
 
   const simpleVerbKeys = new Set(
     entries
-      .filter((e) => e.pos === "verb" && !e.dari.includes(" ") && /(دن|تن)$/.test(e.dari))
-      .map((e) => matchKey(normalizeDari(e.dari)))
+      .filter((e) => e.pos === "verb" && !e.target.includes(" ") && /(دن|تن)$/.test(e.target))
+      .map((e) => matchKey(normalizeDari(e.target)))
   );
 
   const bySource = { override: 0, table: 0, regex: 0, llm: 0, compound: 0 };
@@ -226,13 +226,13 @@ async function main() {
 
   // Pass 2: simple verbs.
   for (const e of entries) {
-    if (e.pos !== "verb" || e.dari.includes(" ")) continue;
-    if (!/(دن|تن)$/.test(e.dari)) {
-      skipped.push(`${e.id} ${e.dari}`);
+    if (e.pos !== "verb" || e.target.includes(" ")) continue;
+    if (!/(دن|تن)$/.test(e.target)) {
+      skipped.push(`${e.id} ${e.target}`);
       continue;
     }
     if (processed++ >= limit) break;
-    const inf = normalizeDari(e.dari);
+    const inf = normalizeDari(e.target);
     const override = VERB_OVERRIDES[matchKey(inf)];
     if (override?.skip) continue;
     if (override?.presentStem) {
@@ -265,18 +265,18 @@ async function main() {
       try {
         const stems = await llmStems(batch);
         for (const e of batch) {
-          const stem = stems.get(matchKey(normalizeDari(e.dari)));
+          const stem = stems.get(matchKey(normalizeDari(e.target)));
           if (stem) {
             e.presentStem = stem;
             bySource.llm++;
           } else {
-            skipped.push(`${e.id} ${e.dari} (LLM returned nothing)`);
+            skipped.push(`${e.id} ${e.target} (LLM returned nothing)`);
           }
         }
         console.log(`LLM batch ${i / 20 + 1}: ${stems.size}/${batch.length} stems`);
       } catch (err) {
         console.error(`LLM batch failed: ${err}`);
-        for (const e of batch) skipped.push(`${e.id} ${e.dari} (LLM batch failed)`);
+        for (const e of batch) skipped.push(`${e.id} ${e.target} (LLM batch failed)`);
       }
     }
   }
@@ -286,8 +286,8 @@ async function main() {
   // conjugate the light verb under that entry's id.
   const lightVerbCarrier = new Map<string, RawEntry>();
   for (const e of entries) {
-    if (e.pos !== "verb" || !e.dari.includes(" ")) continue;
-    const light = normalizeDari(e.dari.split(" ").at(-1)!);
+    if (e.pos !== "verb" || !e.target.includes(" ")) continue;
+    const light = normalizeDari(e.target.split(" ").at(-1)!);
     if (!/(دن|تن)$/.test(light) || simpleVerbKeys.has(matchKey(light))) continue;
     const cur = lightVerbCarrier.get(matchKey(light));
     if (!cur || e.freqRank < cur.freqRank) lightVerbCarrier.set(matchKey(light), e);
@@ -298,14 +298,14 @@ async function main() {
       carrier.presentStem = override.presentStem;
       bySource.compound++;
     } else {
-      skipped.push(`${carrier.id} ${carrier.dari} (light verb has no override stem)`);
+      skipped.push(`${carrier.id} ${carrier.target} (light verb has no override stem)`);
     }
   }
 
   // Flag possible separable prefixes for manual review.
   for (const e of entries) {
-    if (e.presentStem && /^(بر|در|باز|فرو|وا)/.test(e.dari) && !VERB_OVERRIDES[matchKey(normalizeDari(e.dari))]) {
-      flagged.push(`${e.id} ${e.dari} → ${e.presentStem}`);
+    if (e.presentStem && /^(بر|در|باز|فرو|وا)/.test(e.target) && !VERB_OVERRIDES[matchKey(normalizeDari(e.target))]) {
+      flagged.push(`${e.id} ${e.target} → ${e.presentStem}`);
     }
   }
 
@@ -317,8 +317,8 @@ async function main() {
   if (flagged.length) console.log(`\nPossible prefix verbs - review stems manually:\n  ${flagged.join("\n  ")}`);
   if (needLlm.length && dryRun) console.log(`\n[dry-run] would query LLM for ${needLlm.length} verbs`);
 
-  const regexDerived = entries.filter((e) => e.presentStem && !VERB_OVERRIDES[matchKey(normalizeDari(e.dari))] && e.pos === "verb" && !e.dari.includes(" "));
-  console.log(`\nDerived stems for review:\n  ${regexDerived.map((e) => `${e.dari} → ${e.presentStem}`).join("\n  ")}`);
+  const regexDerived = entries.filter((e) => e.presentStem && !VERB_OVERRIDES[matchKey(normalizeDari(e.target))] && e.pos === "verb" && !e.target.includes(" "));
+  console.log(`\nDerived stems for review:\n  ${regexDerived.map((e) => `${e.target} → ${e.presentStem}`).join("\n  ")}`);
 
   if (dryRun) {
     console.log("\n[dry-run] no changes written");

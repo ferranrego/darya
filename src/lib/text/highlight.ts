@@ -40,7 +40,7 @@ export function segmentForHighlight(sentence: string, lexemeId: string): Highlig
   const entry = index.byId.get(lexemeId);
   if (entry) {
     const key = matchKey(normalized);
-    const headKey = matchKey(entry.dariNormalized);
+    const headKey = matchKey(entry.targetNormalized);
     // matchKey only strips/folds codepoints 1:1 for the text we generate, so
     // key offsets line up with `normalized` in practice; guard just in case.
     const at = key.indexOf(headKey);

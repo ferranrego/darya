@@ -4,18 +4,18 @@ import { useState } from "react";
 import { Check, X } from "lucide-react";
 
 interface GrammarDetectiveProps {
-  correctSentenceDari: string;
+  correctSentenceTarget: string;
   correctSentenceTranslit: string;
-  incorrectSentenceDari: string;
+  incorrectSentenceTarget: string;
   incorrectSentenceTranslit: string;
   explanationEn: string;
   onComplete: (isCorrect: boolean) => void;
 }
 
 export function GrammarDetective({
-  correctSentenceDari,
+  correctSentenceTarget,
   correctSentenceTranslit,
-  incorrectSentenceDari,
+  incorrectSentenceTarget,
   incorrectSentenceTranslit,
   explanationEn,
   onComplete,
@@ -26,8 +26,8 @@ export function GrammarDetective({
   const [status, setStatus] = useState<"idle" | "evaluating">("idle");
 
   const sentences = [
-    { dari: correctSentenceDari, translit: correctSentenceTranslit, isCorrect: true },
-    { dari: incorrectSentenceDari, translit: incorrectSentenceTranslit, isCorrect: false }
+    { target: correctSentenceTarget, translit: correctSentenceTranslit, isCorrect: true },
+    { target: incorrectSentenceTarget, translit: incorrectSentenceTranslit, isCorrect: false }
   ];
 
   const handleSelect = (isCorrect: boolean, idx: number) => {
@@ -66,7 +66,7 @@ export function GrammarDetective({
               disabled={status !== "idle"}
               className={`w-full flex flex-col items-center justify-center p-6 rounded-2xl border transition-all ${btnClass}`}
             >
-              <span className="font-dari text-2xl text-center leading-relaxed" dir="rtl">{sent.dari}</span>
+              <span className="font-dari text-2xl text-center leading-relaxed" dir="rtl">{sent.target}</span>
               <span className="text-sm opacity-60 mt-2">{sent.translit}</span>
             </button>
           );

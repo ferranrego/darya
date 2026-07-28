@@ -129,7 +129,7 @@ function FillBlank({
   const filled = feedback === "correct";
   // Split around the placeholder; never render the underscores themselves,
   // raw "___" inside RTL text triggers bidi reordering glitches.
-  const [dariBefore, dariAfter] = exercise.dari.split("___");
+  const [targetBefore, targetAfter] = exercise.target.split("___");
   const [translitBefore, translitAfter] = exercise.translit.split("___");
   const options = useMemo(
     () => shuffled([exercise.answer, ...exercise.distractors], exercise.id),
@@ -141,7 +141,7 @@ function FillBlank({
       <Prompt hint={exercise.hint}>Complete the sentence</Prompt>
       <div className="my-auto py-6 text-center">
         <p lang="prs" dir="rtl" className="text-[30px] leading-[2]">
-          {dariBefore}
+          {targetBefore}
           <span
             className={`mx-1 inline-flex min-w-16 items-center justify-center rounded-xl border-2 px-2 align-middle transition-colors duration-200 ${
               filled ? "border-sabz bg-sabz-soft text-sabz" : "border-dashed border-line text-transparent"
@@ -149,13 +149,13 @@ function FillBlank({
           >
             {filled ? (
               <motion.span initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}>
-                {exercise.answer.dari}
+                {exercise.answer.target}
               </motion.span>
             ) : (
               "-"
             )}
           </span>
-          {dariAfter}
+          {targetAfter}
         </p>
         <p className="mt-2 text-[15px] text-ink-soft">
           {translitBefore}
@@ -169,14 +169,14 @@ function FillBlank({
         <div className="mx-auto mt-10 grid max-w-sm grid-cols-2 gap-3">
           {options.map((option) => (
             <FeedbackButton
-              key={option.dari}
-              correct={normalizeDari(option.dari) === normalizeDari(exercise.answer.dari)}
+              key={option.target}
+              correct={normalizeDari(option.target) === normalizeDari(exercise.answer.target)}
               feedback={feedback}
               onAnswer={onAnswer}
               className="rounded-2xl border border-line bg-surface px-3 py-4 hover:border-ink-faint"
             >
               <span lang="prs" className="block text-[24px] leading-snug">
-                {option.dari}
+                {option.target}
               </span>
               <span className="mt-0.5 block text-[12px] text-ink-faint">{option.translit}</span>
             </FeedbackButton>
@@ -224,11 +224,11 @@ function BuildSentence({
     // Compare the logical tap sequence against `words` by index, or any of the
     // `altOrders` alternates. Visual order is RTL but the arrays are in logical
     // (first spoken word first) order.
-    const seq = placed.map((tile) => normalizeDari(tile.option.dari));
+    const seq = placed.map((tile) => normalizeDari(tile.option.target));
     const matches = (order: string[]) =>
       order.length === seq.length && order.every((w, i) => normalizeDari(w) === seq[i]);
     const ok =
-      matches(exercise.words.map((w) => w.dari)) || exercise.altOrders.some(matches);
+      matches(exercise.words.map((w) => w.target)) || exercise.altOrders.some(matches);
     onAnswer(ok);
   }
 
@@ -263,7 +263,7 @@ function BuildSentence({
               }`}
               lang="prs"
             >
-              {tile.option.dari}
+              {tile.option.target}
             </motion.button>
           ))}
         </motion.div>
@@ -289,7 +289,7 @@ function BuildSentence({
                   className="rounded-xl border border-line bg-surface px-3 py-1.5 transition-colors hover:border-ink-faint"
                 >
                   <span lang="prs" className="block text-[22px] leading-snug">
-                    {tile.option.dari}
+                    {tile.option.target}
                   </span>
                   <span className="block text-[11px] text-ink-faint" dir="ltr">
                     {tile.option.translit}
@@ -331,7 +331,7 @@ function ChooseTranslation({
         <Prompt hint={exercise.hint}>What does this mean?</Prompt>
         <div className="my-auto py-6 text-center">
           <p lang="prs" dir="rtl" className="text-[32px] leading-[1.9]">
-            {exercise.dari}
+            {exercise.target}
           </p>
           <p className="mt-2 text-[15px] text-ink-soft">{exercise.translit}</p>
           <div className="mx-auto mt-10 flex max-w-sm flex-col gap-3">
@@ -352,8 +352,8 @@ function ChooseTranslation({
     );
   }
 
-  const answer: GrammarOption = { dari: exercise.dari, translit: exercise.translit };
-  const options = shuffled([answer, ...exercise.distractorsDari], exercise.id);
+  const answer: GrammarOption = { target: exercise.target, translit: exercise.translit };
+  const options = shuffled([answer, ...exercise.distractorsTarget], exercise.id);
   return (
     <div className="flex flex-1 flex-col">
       <Prompt hint={exercise.hint}>How do you say it in Dari?</Prompt>
@@ -362,14 +362,14 @@ function ChooseTranslation({
         <div className="mx-auto mt-10 flex max-w-sm flex-col gap-3">
           {options.map((option) => (
             <FeedbackButton
-              key={option.dari}
-              correct={normalizeDari(option.dari) === normalizeDari(exercise.dari)}
+              key={option.target}
+              correct={normalizeDari(option.target) === normalizeDari(exercise.target)}
               feedback={feedback}
               onAnswer={onAnswer}
               className="rounded-xl border border-line bg-surface px-4 py-3 hover:border-ink-faint"
             >
               <span lang="prs" dir="rtl" className="block text-[22px] leading-snug">
-                {option.dari}
+                {option.target}
               </span>
               <span className="mt-0.5 block text-[12px] text-ink-faint">{option.translit}</span>
             </FeedbackButton>
@@ -391,7 +391,7 @@ function MatchPairs({
   exercise: Extract<GrammarExercise, { type: "matchPairs" }>;
   onAnswer: (correct: boolean) => void;
 }) {
-  const dariSide = useMemo(
+  const targetSide = useMemo(
     () => shuffled(exercise.pairs, exercise.id + "-d"),
     [exercise],
   );
@@ -399,24 +399,24 @@ function MatchPairs({
     () => shuffled(exercise.pairs, exercise.id + "-e"),
     [exercise],
   );
-  const [selectedDari, setSelectedDari] = useState<string | null>(null);
+  const [selectedTarget, setSelectedTarget] = useState<string | null>(null);
   const [selectedEn, setSelectedEn] = useState<string | null>(null);
   const [matched, setMatched] = useState<Set<string>>(new Set());
   const [wrongPair, setWrongPair] = useState<[string, string] | null>(null);
 
-  function trySelect(dari: string | null, en: string | null) {
-    if (dari !== null) setSelectedDari(dari);
+  function trySelect(target: string | null, en: string | null) {
+    if (target !== null) setSelectedTarget(target);
     if (en !== null) setSelectedEn(en);
-    const d = dari ?? selectedDari;
+    const d = target ?? selectedTarget;
     const e = en ?? selectedEn;
     if (d === null || e === null) return;
 
-    const pair = exercise.pairs.find((p) => p.dari === d);
+    const pair = exercise.pairs.find((p) => p.target === d);
     if (pair && pair.en === e) {
       const next = new Set(matched);
       next.add(d);
       setMatched(next);
-      setSelectedDari(null);
+      setSelectedTarget(null);
       setSelectedEn(null);
       if (next.size === exercise.pairs.length) onAnswer(true);
     } else {
@@ -424,7 +424,7 @@ function MatchPairs({
       onAnswer(false);
       setTimeout(() => {
         setWrongPair(null);
-        setSelectedDari(null);
+        setSelectedTarget(null);
         setSelectedEn(null);
       }, 450);
     }
@@ -447,7 +447,7 @@ function MatchPairs({
       <div className="my-auto grid grid-cols-2 gap-3 py-8">
         <div className="flex flex-col gap-2.5">
           {enSide.map((p) => {
-            const isMatched = matched.has(p.dari);
+            const isMatched = matched.has(p.target);
             const state = isMatched
               ? "matched"
               : wrongPair?.[1] === p.en
@@ -471,27 +471,27 @@ function MatchPairs({
           })}
         </div>
         <div className="flex flex-col gap-2.5">
-          {dariSide.map((p) => {
-            const isMatched = matched.has(p.dari);
+          {targetSide.map((p) => {
+            const isMatched = matched.has(p.target);
             const state = isMatched
               ? "matched"
-              : wrongPair?.[0] === p.dari
+              : wrongPair?.[0] === p.target
                 ? "wrong"
-                : selectedDari === p.dari
+                : selectedTarget === p.target
                   ? "selected"
                   : "idle";
             return (
               <motion.button
-                key={p.dari}
+                key={p.target}
                 type="button"
                 disabled={isMatched}
                 animate={state === "wrong" ? { x: [0, -6, 6, -3, 3, 0] } : { x: 0 }}
                 transition={{ duration: 0.4 }}
-                onClick={() => trySelect(p.dari, null)}
+                onClick={() => trySelect(p.target, null)}
                 className={tileClass(state)}
               >
                 <span lang="prs" dir="rtl" className="block text-[20px] leading-snug">
-                  {p.dari}
+                  {p.target}
                 </span>
                 <span className="block text-[11px] text-ink-faint">{p.translit}</span>
               </motion.button>
@@ -517,8 +517,8 @@ function SpotError({
   onAnswer: (correct: boolean) => void;
 }) {
   const solved = feedback === "correct";
-  const words = exercise.dari.split(/\s+/).filter(Boolean);
-  const errorKey = normalizeDari(exercise.errorWord.dari);
+  const words = exercise.target.split(/\s+/).filter(Boolean);
+  const errorKey = normalizeDari(exercise.errorWord.target);
 
   return (
     <div className="flex flex-1 flex-col">
@@ -537,7 +537,7 @@ function SpotError({
                   lang="prs"
                   className="rounded-lg bg-sabz-soft px-2 py-1 text-[26px] leading-snug text-sabz"
                 >
-                  {exercise.correction.dari}
+                  {exercise.correction.target}
                 </motion.span>
               );
             }
@@ -557,7 +557,7 @@ function SpotError({
           <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-6">
             <p className="text-[15px] font-medium text-sabz">{exercise.translit}</p>
             <p className="mt-1 text-[13px] text-ink-faint">
-              <span lang="prs">{exercise.errorWord.dari}</span> → <span lang="prs">{exercise.correction.dari}</span>
+              <span lang="prs">{exercise.errorWord.target}</span> → <span lang="prs">{exercise.correction.target}</span>
             </p>
           </motion.div>
         )}

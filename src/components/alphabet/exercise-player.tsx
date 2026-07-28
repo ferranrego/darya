@@ -276,7 +276,7 @@ function ReadSentence({
       <Prompt hint={exercise.hint}>Read this sentence out loud</Prompt>
       <div className="my-auto py-8 text-center">
         <p lang="prs" className="text-[38px] leading-[1.9]">
-          {exercise.dari}
+          {exercise.target}
         </p>
         {checked && (
           <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mt-6">

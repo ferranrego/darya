@@ -2,12 +2,12 @@
   "id": "tx-seed-l2-002",
   "formatVersion": "1.3.0",
   "level": "L2",
-  "titleDari": "زمستان کابل",
+  "titleTarget": "زمستان کابل",
   "titleTranslit": "zemestān-e kābul",
   "titleEn": "Kabul's winter",
   "sentences": [
     {
-      "dari": "زمستان کابل سرد است.",
+      "target": "زمستان کابل سرد است.",
       "translit": "zemestān-e kābul sard ast.",
       "en": "Kabul's winter is cold.",
       "tokens": [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "dari": "برف می‌بارد.",
+      "target": "برف می‌بارد.",
       "translit": "barf mēbārad.",
       "en": "It snows.",
       "tokens": [
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "dari": "مردم لباس گرم می‌پوشند.",
+      "target": "مردم لباس گرم می‌پوشند.",
       "translit": "mardum lebās-e garm mēpōshand.",
       "en": "People wear warm clothes.",
       "tokens": [
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "dari": "بچه‌ها در برف بازی می‌کنند.",
+      "target": "بچه‌ها در برف بازی می‌کنند.",
       "translit": "bacha-hā dar barf bāzī mēkunand.",
       "en": "The children play in the snow.",
       "tokens": [
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "dari": "چای گرم می‌خوریم.",
+      "target": "چای گرم می‌خوریم.",
       "translit": "chāy-e garm mēkhurēm.",
       "en": "We drink hot tea.",
       "tokens": [

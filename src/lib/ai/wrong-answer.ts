@@ -14,7 +14,7 @@ export async function explainWrongAnswer(
 Explain in ONE short, encouraging sentence (in English) why the answer they chose is incorrect. Do NOT give away the correct answer if you can avoid it, just explain the mistake.
 
 Exercise Type: ${exercise.type}
-${exercise.type === "cloze" ? `Sentence: ${exercise.sentenceDari}
+${exercise.type === "cloze" ? `Sentence: ${exercise.sentenceTarget}
 Missing Word (Correct Answer): ${exercise.missingWord}
 Student's Chosen Wrong Answer: ${chosenAnswer}` : ""}
 

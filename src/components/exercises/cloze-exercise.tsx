@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Check, X } from "lucide-react";
 
 interface ClozeExerciseProps {
-  sentenceDari: string;
+  sentenceTarget: string;
   sentenceTranslit?: string;
   sentenceEn: string;
   missingWord: string;
@@ -16,7 +16,7 @@ interface ClozeExerciseProps {
 }
 
 export function ClozeExercise({
-  sentenceDari,
+  sentenceTarget,
   sentenceTranslit,
   sentenceEn,
   missingWord,
@@ -36,19 +36,19 @@ export function ClozeExercise({
   // The AI sometimes returns the sentence with a literal blank (e.g. "____" or
   // tatweel "ـــ") instead of containing the missing word. Render our
   // interactive blank at that spot, so we never show two underlines.
-  const placeholderMatch = sentenceDari.match(/_{2,}|ـ{2,}|…|\.{3,}/);
+  const placeholderMatch = sentenceTarget.match(/_{2,}|ـ{2,}|…|\.{3,}/);
   let before: string;
   let after: string;
   if (placeholderMatch?.index !== undefined) {
-    before = sentenceDari.slice(0, placeholderMatch.index).trim();
-    after = sentenceDari.slice(placeholderMatch.index + placeholderMatch[0].length).trim();
-  } else if (sentenceDari.includes(missingWord)) {
-    const idx = sentenceDari.indexOf(missingWord);
-    before = sentenceDari.slice(0, idx).trim();
-    after = sentenceDari.slice(idx + missingWord.length).trim();
+    before = sentenceTarget.slice(0, placeholderMatch.index).trim();
+    after = sentenceTarget.slice(placeholderMatch.index + placeholderMatch[0].length).trim();
+  } else if (sentenceTarget.includes(missingWord)) {
+    const idx = sentenceTarget.indexOf(missingWord);
+    before = sentenceTarget.slice(0, idx).trim();
+    after = sentenceTarget.slice(idx + missingWord.length).trim();
   } else {
     // Missing word not found at all: show the sentence with the blank at the end
-    before = sentenceDari.trim();
+    before = sentenceTarget.trim();
     after = "";
   }
 

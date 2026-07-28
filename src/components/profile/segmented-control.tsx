@@ -8,7 +8,7 @@ export interface SegmentedControlOption<T> {
   value: T;
   label: string;
   detail?: string;
-  dariPreview?: boolean;
+  targetPreview?: boolean;
 }
 
 interface SegmentedControlProps<T> {
@@ -68,7 +68,7 @@ export function SegmentedControl<T extends string | number>({
                   {option.detail}
                 </span>
               )}
-              {option.dariPreview && (
+              {option.targetPreview && (
                 <span
                   className={`mt-1 text-[24px] transition-colors duration-200 ${
                     isActive ? "text-lapis" : "text-ink-soft"

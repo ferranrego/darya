@@ -31,8 +31,11 @@ Version history:
   `L2` (level), `tx-seed-l1-001` / `tx-gen-<hash>` (text). All cross-references and all
   per-user data use these IDs.
 - **Normalization** (`src/lib/text/normalize.ts`): NFC, Arabic ي/ك folded to Persian
-  ی/ک, ZWNJ (U+200C) preserved, Arabic-Indic digits kept. `dariNormalized` is the
+  ی/ک, ZWNJ (U+200C) preserved, Arabic-Indic digits kept. `targetNormalized` is the
   matching key for tokenization.
+- **`target` is the text in the language being learned.** The field is deliberately
+  not called `dari`: the schema is language-neutral, and only the normalization rules
+  above are Dari-specific.
 - **Tokens** link every word of every sentence to a lexeme ID (or `null` for proper
   names/unmatched), so any consumer can compute coverage, difficulty, or highlighting
   without re-tokenizing.

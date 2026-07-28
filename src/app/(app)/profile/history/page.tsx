@@ -44,7 +44,7 @@ export default function HistoryPage() {
               >
                 <div className="flex items-start justify-between gap-4">
                   <h2 className="text-right text-[20px] font-medium leading-normal text-ink" lang="prs" dir="rtl">
-                    {doc.titleDari}
+                    {doc.titleTarget}
                   </h2>
                   <span className="shrink-0 text-[12px] text-ink-soft">
                     {new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' }).format(new Date(row.read_at))}

@@ -2,12 +2,12 @@
   "id": "tx-seed-l1-003",
   "formatVersion": "1.3.0",
   "level": "L1",
-  "titleDari": "دوست من",
+  "titleTarget": "دوست من",
   "titleTranslit": "dōst-e man",
   "titleEn": "My friend",
   "sentences": [
     {
-      "dari": "دوست من شاگرد است.",
+      "target": "دوست من شاگرد است.",
       "translit": "dōst-e man shāgerd ast.",
       "en": "My friend is a student.",
       "tokens": [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "dari": "او به پوهنتون می‌رود.",
+      "target": "او به پوهنتون می‌رود.",
       "translit": "ō ba pohantūn mērawad.",
       "en": "He goes to the university.",
       "tokens": [
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "dari": "ما با هم چای می‌خوریم.",
+      "target": "ما با هم چای می‌خوریم.",
       "translit": "mā bā ham chāy mēkhurēm.",
       "en": "We drink tea together.",
       "tokens": [
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "dari": "او کتاب می‌خواند.",
+      "target": "او کتاب می‌خواند.",
       "translit": "ō ketāb mēkhānad.",
       "en": "He reads a book.",
       "tokens": [

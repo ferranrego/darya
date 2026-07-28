@@ -1,5 +1,6 @@
 import type { LexiconEntry } from "../content/schema.ts";
 import { conjugationSurfaces, derivePastStem, VERB_OVERRIDES, type VerbStems } from "./conjugate.ts";
+import { SUPPLETIVE_FORMS } from "./dari-forms.ts";
 import { matchKey, ZWNJ } from "./normalize.ts";
 
 /**
@@ -23,7 +24,7 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
 
   for (const entry of entries) {
     byId.set(entry.id, entry);
-    headwords.set(matchKey(entry.dariNormalized), entry);
+    headwords.set(matchKey(entry.targetNormalized), entry);
     for (const v of entry.variants) {
       const key = matchKey(v);
       if (!variants.has(key)) variants.set(key, entry);
@@ -36,14 +37,14 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
   // at token level the light verb's forms are what get tapped.
   const simpleVerbKeys = new Set(
     entries
-      .filter((e) => e.pos === "verb" && !e.dariNormalized.includes(" ") && /(دن|تن)$/.test(e.dariNormalized))
-      .map((e) => matchKey(e.dariNormalized))
+      .filter((e) => e.pos === "verb" && !e.targetNormalized.includes(" ") && /(دن|تن)$/.test(e.targetNormalized))
+      .map((e) => matchKey(e.targetNormalized))
   );
   for (const entry of entries) {
     if (entry.pos !== "verb") continue;
-    const infinitive = entry.dariNormalized.split(" ").at(-1)!;
+    const infinitive = entry.targetNormalized.split(" ").at(-1)!;
     if (!/(دن|تن)$/.test(infinitive)) continue;
-    const isCompound = entry.dariNormalized.includes(" ");
+    const isCompound = entry.targetNormalized.includes(" ");
     if (isCompound && simpleVerbKeys.has(matchKey(infinitive))) continue;
     if (isCompound && !entry.presentStem) continue; // carrier entries only
 
@@ -60,6 +61,17 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
       const key = matchKey(surface);
       if (!conjugations.has(key)) conjugations.set(key, entry);
     }
+  }
+
+  // Pass 3: suppletive forms (بودن's هست/باشم, impersonal می‌توان) - not
+  // derivable from any stem pair, so they are authored in SUPPLETIVE_FORMS.
+  // Registered last and into the same lowest-precedence bucket, so a generated
+  // conjugation or an authored headword always wins over them.
+  for (const [form, infinitive] of Object.entries(SUPPLETIVE_FORMS)) {
+    const owner = headwords.get(matchKey(infinitive));
+    if (!owner) continue;
+    const key = matchKey(form);
+    if (!conjugations.has(key)) conjugations.set(key, owner);
   }
 
   const lookup = (key: string) =>

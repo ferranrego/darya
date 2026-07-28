@@ -2,12 +2,12 @@
   "id": "tx-seed-l2-001",
   "formatVersion": "1.3.0",
   "level": "L2",
-  "titleDari": "بازار",
+  "titleTarget": "بازار",
   "titleTranslit": "bāzār",
   "titleEn": "The market",
   "sentences": [
     {
-      "dari": "امروز به بازار می‌روم.",
+      "target": "امروز به بازار می‌روم.",
       "translit": "emrōz ba bāzār mērawam.",
       "en": "Today I am going to the market.",
       "tokens": [
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "dari": "از دکان نان می‌خرم.",
+      "target": "از دکان نان می‌خرم.",
       "translit": "az dukān nān mēkharam.",
       "en": "I buy bread from the shop.",
       "tokens": [
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "dari": "سیب سرخ می‌خرم.",
+      "target": "سیب سرخ می‌خرم.",
       "translit": "sēb-e surkh mēkharam.",
       "en": "I buy red apples.",
       "tokens": [
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "dari": "در بازار مردم زیاد است.",
+      "target": "در بازار مردم زیاد است.",
       "translit": "dar bāzār mardum-e ziyād ast.",
       "en": "There are many people at the market.",
       "tokens": [
@@ -99,7 +99,7 @@
       ]
     },
     {
-      "dari": "شب به خانه می‌آیم.",
+      "target": "شب به خانه می‌آیم.",
       "translit": "shab ba khāna mēāyam.",
       "en": "At night I come home.",
       "tokens": [

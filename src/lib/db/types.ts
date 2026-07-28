@@ -28,7 +28,7 @@ export interface UserWordRow {
   status: WordStatus;
   due: string | null;
   fsrs: Card | null;
-  context_dari: string | null;
+  context_target: string | null;
   context_translit: string | null;
   context_en: string | null;
   created_at: string;

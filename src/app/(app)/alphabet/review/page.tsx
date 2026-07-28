@@ -6,13 +6,11 @@ import Link from "next/link";
 import { useState, useMemo, useEffect, useRef } from "react";
 import { AnimatePresence, motion, useMotionValue, useTransform, animate } from "motion/react";
 import { alphabetCourse } from "@/lib/content/load";
-import { useSupabase, useUser } from "@/lib/queries/hooks";
+import { useInvalidateLearning, useSupabase, useUser } from "@/lib/queries/hooks";
 import { getUserLetters, updateUserLetter } from "@/lib/db/letters";
 import { Button } from "@/components/ui/button";
-import { FSRS, Rating, createEmptyCard, type Card } from "ts-fsrs";
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const fsrs = new FSRS({});
+import { newCard, reviewCard, reviveCard, type TwoButtonGrade } from "@/lib/srs/scheduler";
+import type { Card } from "ts-fsrs";
 
 export default function AlphabetReviewPage() {
   const db = useSupabase();
@@ -99,22 +97,13 @@ export default function AlphabetReviewPage() {
   }, [letterData]);
 
   const reviewMutation = useMutation({
-    mutationFn: async ({ rating, card }: { rating: Rating; card: Card }) => {
+    mutationFn: async ({ grade, card }: { grade: TwoButtonGrade; card: Card }) => {
       if (!user || !currentDue) return;
-      const f = new FSRS({});
-      // Ensure the card has valid dates
-      const validCard = {
-        ...card,
-        due: new Date(card.due),
-        last_review: card.last_review ? new Date(card.last_review) : undefined
-      };
-      
-      const scheduling = f.repeat(validCard, new Date());
-      const nextCard = (scheduling as Record<number, {card: Card}>)[rating].card;
-      
-      await updateUserLetter(db, user.id, currentDue.letter_char, nextCard);
+      const { card: next } = reviewCard(reviveCard(card), grade, new Date());
+      await updateUserLetter(db, user.id, currentDue.letter_char, next);
     },
     onSuccess: () => {
+      hasReviewed.current = true;
       if (currentIndex < activeLetters.length - 1) {
         setCurrentIndex(i => i + 1);
         setShowAnswer(false);
@@ -127,11 +116,11 @@ export default function AlphabetReviewPage() {
     }
   });
 
-  const handleRate = (rating: Rating, dir: 1 | -1) => {
+  const handleRate = (grade: TwoButtonGrade, dir: 1 | -1) => {
     if (!currentDue) return;
     setExitDir(dir);
-    const card = currentDue.fsrs || createEmptyCard(new Date());
-    reviewMutation.mutate({ rating, card: card as Card });
+    const card = (currentDue.fsrs as Card | null) ?? newCard(new Date());
+    reviewMutation.mutate({ grade, card });
   };
 
   return (
@@ -179,9 +168,9 @@ export default function AlphabetReviewPage() {
                 onDragEnd={(e, { offset, velocity }) => {
                   const swipePower = Math.abs(offset.x) * velocity.x;
                   if (offset.x > 100 || swipePower > 500) {
-                    handleRate(Rating.Good, 1);
+                    handleRate("got_it", 1);
                   } else if (offset.x < -100 || swipePower < -500) {
-                    handleRate(Rating.Again, -1);
+                    handleRate("forgot", -1);
                   } else {
                     animate(x, 0, { type: "spring", stiffness: 300, damping: 20 });
                   }
@@ -231,10 +220,10 @@ export default function AlphabetReviewPage() {
               </Button>
             ) : (
               <div className="w-full flex gap-3">
-                <Button variant="secondary" size="lg" className="flex-1 border-red-500/20 text-red-600 hover:bg-red-50" onClick={() => handleRate(Rating.Again, -1)}>
+                <Button variant="secondary" size="lg" className="flex-1 border-red-500/20 text-red-600 hover:bg-red-50" onClick={() => handleRate("forgot", -1)}>
                   Forgot
                 </Button>
-                <Button size="lg" className="flex-1" onClick={() => handleRate(Rating.Good, 1)}>
+                <Button size="lg" className="flex-1" onClick={() => handleRate("got_it", 1)}>
                   Got it
                 </Button>
               </div>

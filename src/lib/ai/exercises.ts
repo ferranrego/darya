@@ -13,7 +13,7 @@ const exerciseOutputSchema = z.object({
     z.discriminatedUnion("type", [
       z.object({
         type: z.literal("cloze"),
-        sentenceDari: z.string(),
+        sentenceTarget: z.string(),
         sentenceTranslit: z.string(),
         sentenceEn: z.string(),
         missingWord: z.string(),
@@ -24,7 +24,7 @@ const exerciseOutputSchema = z.object({
       }),
       z.object({
         type: z.literal("unscramble"),
-        sentenceDari: z.string(),
+        sentenceTarget: z.string(),
         sentenceTranslit: z.string(),
         sentenceEn: z.string(),
         words: z.array(z.string()),
@@ -39,9 +39,9 @@ const exerciseOutputSchema = z.object({
       }),
       z.object({
         type: z.literal("grammar_detective"),
-        correctSentenceDari: z.string(),
+        correctSentenceTarget: z.string(),
         correctSentenceTranslit: z.string(),
-        incorrectSentenceDari: z.string(),
+        incorrectSentenceTarget: z.string(),
         incorrectSentenceTranslit: z.string(),
         explanationEn: z.string(),
       }),
@@ -92,12 +92,12 @@ function randomTypeMix(count: number): Record<"cloze" | "realia" | "grammar_dete
 }
 
 function buildPrompt(req: ExerciseGenerationRequest): string {
-  const known = shuffle(req.knownWords).map((w) => `${w.dari} (${w.translit})`).join("، ");
+  const known = shuffle(req.knownWords).map((w) => `${w.target} (${w.translit})`).join("، ");
   const learning = req.learningTargets
-    .map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`)
+    .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
     .join("، ");
   const fresh = req.newTargets
-    .map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`)
+    .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
     .join("، ");
 
   const mix = randomTypeMix(req.count);
@@ -113,7 +113,7 @@ Generate exactly ${req.count} exercises for a student at level ${req.level}: ${m
 ${req.theme ? `Set the exercises in this scenario/theme where it fits naturally: ${req.theme}.` : ""}
 
 Types of exercises:
-1. "cloze": A SHORT fill-in-the-blank sentence (3-6 words maximum). "sentenceDari" MUST be the COMPLETE sentence containing the missing word - do NOT replace it with blanks, underscores, or dots (the UI renders the blank itself). "missingWord" must appear verbatim in "sentenceDari". Provide the missing word, its English translation ("missingEn"), and 3 wrong distractors (must be valid Dari words but wrong for the context).
+1. "cloze": A SHORT fill-in-the-blank sentence (3-6 words maximum). "sentenceTarget" MUST be the COMPLETE sentence containing the missing word - do NOT replace it with blanks, underscores, or dots (the UI renders the blank itself). "missingWord" must appear verbatim in "sentenceTarget". Provide the missing word, its English translation ("missingEn"), and 3 wrong distractors (must be valid Dari words but wrong for the context).
 2. "realia": A short Markdown document (like a menu or sign in Dari) and a multiple-choice question in English about it.
 3. "grammar_detective": Two sentences: one grammatically correct and one with a common error. Provide an English explanation.
 
@@ -131,9 +131,9 @@ Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū.
 Return ONLY JSON with this exact shape:
 {
   "exercises": [
-    { "type": "cloze", "sentenceDari": "...", "sentenceTranslit": "...", "sentenceEn": "...", "missingWord": "...", "missingTranslit": "...", "missingEn": "...", "distractors": ["...", "..."] },
+    { "type": "cloze", "sentenceTarget": "...", "sentenceTranslit": "...", "sentenceEn": "...", "missingWord": "...", "missingTranslit": "...", "missingEn": "...", "distractors": ["...", "..."] },
     { "type": "realia", "documentType": "Menu", "markdown": "...", "questionEn": "...", "optionsEn": ["..."], "correctOptionIndex": 0 },
-    { "type": "grammar_detective", "correctSentenceDari": "...", "correctSentenceTranslit": "...", "incorrectSentenceDari": "...", "incorrectSentenceTranslit": "...", "explanationEn": "..." }
+    { "type": "grammar_detective", "correctSentenceTarget": "...", "correctSentenceTranslit": "...", "incorrectSentenceTarget": "...", "incorrectSentenceTranslit": "...", "explanationEn": "..." }
   ]
 }`;
 }
@@ -142,19 +142,19 @@ Return ONLY JSON with this exact shape:
 function checkItem(ex: ExerciseData) {
   switch (ex.type) {
     case "cloze": {
-      if (!ex.sentenceDari.includes(ex.missingWord)) {
-        throw new Error(`Missing word "${ex.missingWord}" not in "${ex.sentenceDari}"`);
+      if (!ex.sentenceTarget.includes(ex.missingWord)) {
+        throw new Error(`Missing word "${ex.missingWord}" not in "${ex.sentenceTarget}"`);
       }
       const answerKey = normalizeDari(ex.missingWord);
       for (const d of ex.distractors) {
         if (normalizeDari(d) === answerKey) throw new Error("Distractor equals answer");
       }
-      assertKnownVocab(ex.sentenceDari, MAX_SENTENCE_WORDS);
+      assertKnownVocab(ex.sentenceTarget, MAX_SENTENCE_WORDS);
       break;
     }
     case "unscramble": {
-      assertKnownVocab(ex.sentenceDari, MAX_SENTENCE_WORDS);
-      const sentenceKeys = new Set(tokenizeDari(ex.sentenceDari).map(normalizeDari));
+      assertKnownVocab(ex.sentenceTarget, MAX_SENTENCE_WORDS);
+      const sentenceKeys = new Set(tokenizeDari(ex.sentenceTarget).map(normalizeDari));
       for (const w of ex.words) {
         if (!sentenceKeys.has(normalizeDari(w))) {
           throw new Error(`Unscramble word "${w}" not in sentence`);
@@ -164,7 +164,7 @@ function checkItem(ex: ExerciseData) {
     }
     case "grammar_detective":
       // Only the correct sentence is validated; the incorrect one is wrong on purpose.
-      assertKnownVocab(ex.correctSentenceDari, MAX_SENTENCE_WORDS);
+      assertKnownVocab(ex.correctSentenceTarget, MAX_SENTENCE_WORDS);
       break;
     case "realia":
       if (ex.correctOptionIndex < 0 || ex.correctOptionIndex >= ex.optionsEn.length) {
@@ -183,13 +183,13 @@ export function taggedLexemes(ex: ExerciseData, targetIds: Set<string>): string[
   const texts: string[] = [];
   switch (ex.type) {
     case "cloze":
-      texts.push(ex.sentenceDari, ex.missingWord);
+      texts.push(ex.sentenceTarget, ex.missingWord);
       break;
     case "unscramble":
-      texts.push(ex.sentenceDari);
+      texts.push(ex.sentenceTarget);
       break;
     case "grammar_detective":
-      texts.push(ex.correctSentenceDari);
+      texts.push(ex.correctSentenceTarget);
       break;
     case "realia":
       texts.push(ex.markdown);

@@ -226,7 +226,7 @@ export default function GrammarLessonPage() {
                 dir="rtl"
                 className="mt-6 rounded-full bg-lapis-soft px-5 py-2 text-[20px] text-lapis"
               >
-                {keyExample.dari}
+                {keyExample.target}
               </p>
             )}
 

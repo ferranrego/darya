@@ -18,12 +18,12 @@ const lexiconJsonPath = join(import.meta.dirname, "..", "content", "lexicon", "l
 // Define schema for structured output
 const batchResponseSchema = z.object({
   entries: z.array(z.object({
-    dari: z.string(),
+    target: z.string(),
     translit: z.string(),
     pos: z.enum(["noun", "verb", "adjective", "adverb", "pronoun", "preposition", "conjunction", "particle", "numeral", "interjection", "determiner", "phrase"]),
     register: z.enum(["neutral", "spoken", "formal", "literary"]),
     glossEn: z.string(),
-    exampleDari: z.string(),
+    exampleTarget: z.string(),
     exampleTranslit: z.string(),
     exampleEn: z.string(),
     tags: z.array(z.string()),
@@ -69,7 +69,7 @@ async function main() {
   const knownKeys = new Set<string>();
   let maxRank = 0;
   for (const entry of lexiconParsed.entries) {
-    knownKeys.add(matchKey(entry.dari));
+    knownKeys.add(matchKey(entry.target));
     for (const v of entry.variants) knownKeys.add(matchKey(v));
     if (entry.freqRank > maxRank) maxRank = entry.freqRank;
   }
@@ -133,12 +133,12 @@ Schema:
 {
   "entries": [
     {
-      "dari": "string (the primary Dari word in Perso-Arabic script)",
+      "target": "string (the primary Dari word in Perso-Arabic script)",
       "translit": "string (Kabuli transliteration)",
       "pos": "noun|verb|adjective|adverb|pronoun|preposition|conjunction|particle|numeral|interjection|determiner|phrase",
       "register": "neutral|spoken|formal|literary",
       "glossEn": "string (short English meaning)",
-      "exampleDari": "string (a very simple everyday sentence using the word)",
+      "exampleTarget": "string (a very simple everyday sentence using the word)",
       "exampleTranslit": "string (transliteration of the example)",
       "exampleEn": "string (English translation of the example)",
       "tags": ["string (e.g. 'dari-specific', 'loanword')"],
@@ -173,7 +173,7 @@ Schema:
   const parsed = batchResponseSchema.parse(JSON.parse(rawText));
   
   if (!existsSync(outPath)) {
-    appendFileSync(outPath, "# Darya core lexicon - expanded batch\n# rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants\n");
+    appendFileSync(outPath, "# Darya core lexicon - expanded batch\n# rank|target|translit|pos|register|glossEn|exampleTarget|exampleTranslit|exampleEn|tags|variants\n");
   }
 
   let rank = nextRank;
@@ -181,12 +181,12 @@ Schema:
   for (const entry of parsed.entries) {
     const parts = [
       rank++,
-      entry.dari,
+      entry.target,
       entry.translit,
       entry.pos,
       entry.register,
       entry.glossEn,
-      entry.exampleDari,
+      entry.exampleTarget,
       entry.exampleTranslit,
       entry.exampleEn,
       entry.tags.join(","),

@@ -5,7 +5,7 @@ import { completeJson } from "@/lib/ai/providers";
 
 const conjugationRowSchema = z.object({
   person: z.string(),
-  dari: z.string(),
+  target: z.string(),
   translit: z.string(),
   en: z.string(),
 });
@@ -36,7 +36,7 @@ Please analyze this inflected word and provide:
 
 For the conjugation table, output the following fields for each of the 6 persons:
 - "person": The person (e.g., "1st sg (I)", "2nd sg (You)", "3rd sg (He/She)", "1st pl (We)", "2nd pl (You all)", "3rd pl (They)").
-- "dari": The conjugated verb in Persian script.
+- "target": The conjugated verb in Persian script.
 - "translit": The Latin transliteration of the conjugated verb.
 - "en": The English meaning of this specific conjugated form.
 
@@ -45,7 +45,7 @@ Return ONLY JSON matching this exact schema:
   "tense": "...",
   "person": "...",
   "conjugation": [
-    { "person": "...", "dari": "...", "translit": "...", "en": "..." },
+    { "person": "...", "target": "...", "translit": "...", "en": "..." },
     ... (6 rows total)
   ]
 }

@@ -84,7 +84,7 @@ export function TextReader({
         status: "learning",
         due: card.due.toISOString(),
         fsrs: card,
-        context_dari: sentence?.dari ?? null,
+        context_target: sentence?.target ?? null,
         context_translit: sentence?.translit ?? null,
         context_en: sentence?.en ?? null,
       });
@@ -103,7 +103,7 @@ export function TextReader({
         status: "known",
         due: null,
         fsrs: null,
-        context_dari: sentence?.dari ?? null,
+        context_target: sentence?.target ?? null,
         context_translit: sentence?.translit ?? null,
         context_en: sentence?.en ?? null,
       });
@@ -170,17 +170,17 @@ export function TextReader({
   // A smarter dynamic font calculation:
   // We want sentences to ideally fit on a single line on mobile (if they are short).
   // Container width is ~100vw - 48px. An Arabic character takes ~0.45em width.
-  // fontSize * maxDariLength * 0.45 = containerWidth => fontSize = containerWidth / (maxDariLength * 0.45)
+  // fontSize * maxTargetLength * 0.45 = containerWidth => fontSize = containerWidth / (maxTargetLength * 0.45)
   // We clamp it between 22px (for readability on long B2/C1 texts) and 32px.
-  const maxDariLength = Math.max(...doc.sentences.map(s => s.dari.length));
-  const optimalFontSize = `clamp(22px, calc((100vw - 48px) / ${Math.max(1, maxDariLength * 0.45)}), 32px)`;
+  const maxTargetLength = Math.max(...doc.sentences.map(s => s.target.length));
+  const optimalFontSize = `clamp(22px, calc((100vw - 48px) / ${Math.max(1, maxTargetLength * 0.45)}), 32px)`;
 
   return (
     <article className="flex flex-col relative pb-32">
       {/* Compact Editorial Header */}
       <header className="mb-8 mt-4 flex flex-col items-center text-center">
         <h1 lang="prs" className="text-[30px] font-bold leading-[1.35] text-ink max-w-[300px] mx-auto">
-          {doc.titleDari}
+          {doc.titleTarget}
         </h1>
         <div className="mt-2.5 flex flex-col items-center gap-0.5 px-4">
           <span className="text-[12px] uppercase tracking-widest text-ink-faint font-semibold">
@@ -276,7 +276,7 @@ export function TextReader({
                             type="button"
                             onClick={() => {
                               hapticTap();
-                              setTappedSentence(sentence.dari);
+                              setTappedSentence(sentence.target);
                             }}
                             className="inline-flex w-fit items-center gap-1.5 rounded-full bg-surface py-1.5 px-3 text-[12px] font-medium text-lapis shadow-sm ring-1 ring-inset ring-line/50 transition-transform active:scale-95"
                           >

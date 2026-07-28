@@ -31,9 +31,9 @@ const failures: string[] = [];
 for (const source of seedTexts) {
   const vocab = new Set<string>();
   const sentences = source.sentences.map((s) => {
-    const tokens = tokenizeDari(s.dari).map((surface) => {
+    const tokens = tokenizeDari(s.target).map((surface) => {
       const entry = index.resolve(surface);
-      if (!entry) failures.push(`${source.slug}: unresolved word "${surface}" in "${s.dari}"`);
+      if (!entry) failures.push(`${source.slug}: unresolved word "${surface}" in "${s.target}"`);
       else vocab.add(entry.id);
       return { surface, lexemeId: entry?.id ?? null };
     });
@@ -44,7 +44,7 @@ for (const source of seedTexts) {
     id: `tx-seed-${source.slug}`,
     formatVersion: CONTENT_FORMAT_VERSION,
     level: source.level,
-    titleDari: source.titleDari,
+    titleTarget: source.titleTarget,
     titleTranslit: source.titleTranslit,
     titleEn: source.titleEn,
     sentences,

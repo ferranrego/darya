@@ -14,7 +14,7 @@ const TATWEEL = /ـ/g;
 
 export const ZWNJ = "‌";
 
-/** Canonical form stored in `dariNormalized`; display-safe (keeps آ). */
+/** Canonical form stored in `targetNormalized`; display-safe (keeps آ). */
 export function normalizeDari(input: string): string {
   return input
     .normalize("NFC")

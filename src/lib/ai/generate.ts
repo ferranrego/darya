@@ -14,13 +14,13 @@ import { completeJson } from "./providers";
  */
 
 const outputSchema = z.object({
-  titleDari: z.string().min(1),
+  titleTarget: z.string().min(1),
   titleTranslit: z.string().min(1),
   titleEn: z.string().min(1),
   sentences: z
     .array(
       z.object({
-        dari: z.string().min(1),
+        target: z.string().min(1),
         translit: z.string().min(1),
         en: z.string().min(1),
       }),
@@ -32,7 +32,7 @@ type RawText = z.infer<typeof outputSchema>;
 
 export interface GenerationRequest {
   level: Level;
-  /** Words the learner knows (dari + translit shown to the model). */
+  /** Words the learner knows (target + translit shown to the model). */
   knownWords: LexiconEntry[];
   /** New words the text should introduce. */
   targetWords: LexiconEntry[];
@@ -44,9 +44,9 @@ export interface GenerationRequest {
 const MAX_OOV_RATE = 0.25;
 
 function buildPrompt(req: GenerationRequest): string {
-  const known = req.knownWords.map((w) => `${w.dari} (${w.translit})`).join("، ");
+  const known = req.knownWords.map((w) => `${w.target} (${w.translit})`).join("، ");
   const target = req.targetWords
-    .map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`)
+    .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
     .join("، ");
   const [minS, maxS] = req.level.sentenceRange;
   const themeInstructions = req.theme ? `\n- Set the text in this scenario/theme where it fits naturally: ${req.theme}` : "";
@@ -69,7 +69,7 @@ Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū, use kh/gh/ch/sh/zh/q/', w for و. Example: "می‌روم" → "mērawam".
 
 Return ONLY JSON with this exact shape:
-{"titleDari": "...", "titleTranslit": "...", "titleEn": "...", "sentences": [{"dari": "...", "translit": "...", "en": "..."}]}`;
+{"titleTarget": "...", "titleTranslit": "...", "titleEn": "...", "sentences": [{"target": "...", "translit": "...", "en": "..."}]}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -85,7 +85,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
   let total = 0;
 
   const sentences = raw.sentences.map((s) => {
-    const tokens = tokenizeDari(s.dari).map((surface) => {
+    const tokens = tokenizeDari(s.target).map((surface) => {
       total++;
       const entry = index.resolve(surface);
       if (entry) vocab.add(entry.id);
@@ -93,7 +93,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       
       return { surface, lexemeId: entry?.id ?? null };
     });
-    return { dari: s.dari, translit: s.translit, en: s.en, tokens };
+    return { target: s.target, translit: s.translit, en: s.en, tokens };
   });
 
   const oovRate = total > 0 ? oov / total : 1;
@@ -107,7 +107,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       id: `tx-gen-${hash}-${randomUUID().slice(0, 8)}`,
       formatVersion: CONTENT_FORMAT_VERSION,
       level: req.level.id,
-      titleDari: raw.titleDari,
+      titleTarget: raw.titleTarget,
       titleTranslit: raw.titleTranslit,
       titleEn: raw.titleEn,
       sentences,
@@ -140,10 +140,10 @@ export async function repairText(
   
   if (badSentenceIndices.length === 0) return doc;
   
-  const known = req.knownWords.map((w) => `${w.dari} (${w.translit})`).join("، ");
-  const target = req.targetWords.map((w) => `${w.dari} (${w.translit} = ${w.glossEn})`).join("، ");
+  const known = req.knownWords.map((w) => `${w.target} (${w.translit})`).join("، ");
+  const target = req.targetWords.map((w) => `${w.target} (${w.translit} = ${w.glossEn})`).join("، ");
   
-  const badSentencesText = badSentenceIndices.map(i => `${i}: ${doc.sentences[i].dari}`).join('\n');
+  const badSentencesText = badSentenceIndices.map(i => `${i}: ${doc.sentences[i].target}`).join('\n');
   
   const repairPrompt = `You are a Dari language teacher. The following sentences have vocabulary that is too difficult for the student.
 Rewrite ONLY these specific sentences using ONLY allowed words. Keep the meaning as close to the original as possible.
@@ -156,13 +156,13 @@ SENTENCES TO REPAIR:
 ${badSentencesText}
 
 Return JSON strictly in this format:
-{"repairs": [{"index": 0, "dari": "...", "translit": "...", "en": "..."}]}
+{"repairs": [{"index": 0, "target": "...", "translit": "...", "en": "..."}]}
 where "index" is the number provided above for the sentence.`;
 
   const repairSchema = z.object({
     repairs: z.array(z.object({
       index: z.number(),
-      dari: z.string(),
+      target: z.string(),
       translit: z.string(),
       en: z.string()
     }))
@@ -174,12 +174,12 @@ where "index" is the number provided above for the sentence.`;
   });
   
   const raw: RawText = {
-    titleDari: doc.titleDari,
+    titleTarget: doc.titleTarget,
     titleTranslit: doc.titleTranslit,
     titleEn: doc.titleEn,
     sentences: doc.sentences.map((s, i) => {
       const repair = repairs.find(r => r.index === i);
-      return repair ? { dari: repair.dari, translit: repair.translit, en: repair.en } : { dari: s.dari, translit: s.translit, en: s.en };
+      return repair ? { target: repair.target, translit: repair.translit, en: repair.en } : { target: s.target, translit: s.translit, en: s.en };
     })
   };
   

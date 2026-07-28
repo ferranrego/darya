@@ -4,9 +4,9 @@ import { createHash } from "crypto";
 import { generateSentenceExplanation, type SentenceExplanation } from "@/lib/ai/explain";
 import { supabaseService } from "@/lib/supabase/server";
 
-export async function explainSentence(dari: string): Promise<SentenceExplanation | { error: string }> {
+export async function explainSentence(target: string): Promise<SentenceExplanation | { error: string }> {
   try {
-    const normalized = dari.trim();
+    const normalized = target.trim();
     if (!normalized) return { error: "Empty sentence" };
 
     const hash = createHash("sha256").update(normalized).digest("hex");

@@ -21,7 +21,7 @@ export const CONTENT_FORMAT_VERSION = "1.3.0";
 // ---------------------------------------------------------------------------
 
 /** Dari text in Perso-Arabic script (may contain ZWNJ U+200C). */
-const dariText = z.string().min(1);
+const targetText = z.string().min(1);
 
 /** Latin transliteration, European-friendly (e.g. "khāna", "salām"). */
 const translitText = z.string().min(1);
@@ -55,9 +55,9 @@ export const registerSchema = z.enum(["neutral", "spoken", "formal", "literary"]
 export const lexiconEntrySchema = z.object({
   /** Stable ID, never reused: "lx-0001". Per-user data references this. */
   id: z.string().regex(/^lx-\d{4,}$/),
-  dari: dariText,
+  target: targetText,
   /** NFC-normalized, ZWNJ preserved, Arabic ي/ك folded to Persian ی/ک. */
-  dariNormalized: dariText,
+  targetNormalized: targetText,
   translit: translitText,
   glossEn: z.string().min(1),
   pos: posSchema,
@@ -66,15 +66,15 @@ export const lexiconEntrySchema = z.object({
   freqBand: freqBandSchema,
   register: registerSchema,
   /** Surface variants that should resolve to this lexeme when tokenizing. */
-  variants: z.array(dariText).default([]),
+  variants: z.array(targetText).default([]),
   /**
    * Present stem in Persian script for pos=verb entries (کردن → کن). Drives
    * runtime conjugation in lexicon-index. For compound verbs whose light verb
    * has no simple entry of its own, this is the light verb's stem. Absent =
    * no present-tense forms are generated for this entry.
    */
-  presentStem: dariText.optional(),
-  exampleDari: dariText,
+  presentStem: targetText.optional(),
+  exampleTarget: targetText,
   exampleTranslit: translitText,
   exampleEn: z.string().min(1),
   audioUrl: z.string().optional(),
@@ -139,7 +139,7 @@ export const pickFormExercise = z.object({
   ...exerciseBase,
   type: z.literal("pickForm"),
   targetChar: z.string(),
-  word: dariText,
+  word: targetText,
   translit: translitText,
   glossEn: z.string(),
   /** 0-based index of the target letter within the word's characters. */
@@ -159,7 +159,7 @@ export const matchSoundExercise = z.object({
 export const readWordExercise = z.object({
   ...exerciseBase,
   type: z.literal("readWord"),
-  word: dariText,
+  word: targetText,
   translit: translitText,
   glossEn: z.string(),
   /** Multiple-choice transliterations; correct one must equal `translit`. */
@@ -170,7 +170,7 @@ export const readWordExercise = z.object({
 export const readSentenceExercise = z.object({
   ...exerciseBase,
   type: z.literal("readSentence"),
-  dari: dariText,
+  target: targetText,
   translit: translitText,
   en: z.string(),
 });
@@ -234,15 +234,15 @@ export type AlphabetCourse = z.infer<typeof alphabetCourseSchema>;
 
 /** A Dari word or phrase paired with its transliteration (chips, tiles…). */
 export const grammarOptionSchema = z.object({
-  dari: dariText,
+  target: targetText,
   translit: translitText,
 });
 
 export const grammarExampleSchema = z.object({
-  dari: dariText,
+  target: targetText,
   translit: translitText,
   en: z.string().min(1),
-  /** Optional substring of `dari` to visually highlight (e.g. "می‌" or "را"). */
+  /** Optional substring of `target` to visually highlight (e.g. "می‌" or "را"). */
   highlight: z.string().optional(),
 });
 
@@ -267,7 +267,7 @@ export const fillBlankExercise = z.object({
   ...grammarExerciseBase,
   type: z.literal("fillBlank"),
   /** Dari sentence with exactly one "___" placeholder. */
-  dari: z.string().regex(/^[^_]*___[^_]*$/),
+  target: z.string().regex(/^[^_]*___[^_]*$/),
   /** Transliteration with exactly one "___" placeholder. */
   translit: z.string().regex(/^[^_]*___[^_]*$/),
   en: z.string().min(1),
@@ -286,7 +286,7 @@ export const buildSentenceExercise = z.object({
   translit: translitText,
   /** Wrong tiles mixed into the bank. */
   extraWords: z.array(grammarOptionSchema).default([]),
-  /** Extra accepted orderings; each is a permutation of the `words` dari forms. */
+  /** Extra accepted orderings; each is a permutation of the `words` target forms. */
   altOrders: z.array(z.array(z.string()).min(2)).default([]),
 });
 
@@ -294,16 +294,16 @@ export const buildSentenceExercise = z.object({
 export const chooseTranslationExercise = z.object({
   ...grammarExerciseBase,
   type: z.literal("chooseTranslation"),
-  direction: z.enum(["toEn", "toDari"]),
-  /** toEn: the stimulus. toDari: the correct answer. */
-  dari: dariText,
+  direction: z.enum(["toEn", "toTarget"]),
+  /** toEn: the stimulus. toTarget: the correct answer. */
+  target: targetText,
   translit: translitText,
-  /** toEn: the correct answer. toDari: the stimulus. */
+  /** toEn: the correct answer. toTarget: the stimulus. */
   en: z.string().min(1),
   /** English distractors (required when direction = toEn). */
   distractorsEn: z.array(z.string()).default([]),
-  /** Dari distractors (required when direction = toDari). */
-  distractorsDari: z.array(grammarOptionSchema).default([]),
+  /** Dari distractors (required when direction = toTarget). */
+  distractorsTarget: z.array(grammarOptionSchema).default([]),
 });
 
 /** Tap matching Dari ↔ English pairs until the board clears. */
@@ -312,7 +312,7 @@ export const matchPairsExercise = z.object({
   type: z.literal("matchPairs"),
   prompt: z.string().min(1),
   pairs: z
-    .array(z.object({ dari: dariText, translit: translitText, en: z.string().min(1) }))
+    .array(z.object({ target: targetText, translit: translitText, en: z.string().min(1) }))
     .min(3)
     .max(5),
 });
@@ -322,11 +322,11 @@ export const spotErrorExercise = z.object({
   ...grammarExerciseBase,
   type: z.literal("spotError"),
   /** Sentence containing exactly one wrong word (the `errorWord`). */
-  dari: dariText,
+  target: targetText,
   translit: translitText,
   /** The intended meaning. */
   en: z.string().min(1),
-  /** The wrong token, exactly as it appears in `dari`. */
+  /** The wrong token, exactly as it appears in `target`. */
   errorWord: grammarOptionSchema,
   /** What it should have been. */
   correction: grammarOptionSchema,
@@ -438,7 +438,7 @@ export const tokenSchema = z.object({
 });
 
 export const sentenceSchema = z.object({
-  dari: dariText,
+  target: targetText,
   translit: translitText,
   en: z.string().min(1),
   /** Word tokens in reading order (RTL); punctuation excluded. */
@@ -450,7 +450,7 @@ export const textDocumentSchema = z.object({
   id: z.string().min(1),
   formatVersion: z.string(),
   level: z.string().regex(/^L\d$/),
-  titleDari: dariText,
+  titleTarget: targetText,
   titleTranslit: translitText,
   titleEn: z.string().min(1),
   sentences: z.array(sentenceSchema).min(1),

@@ -76,8 +76,8 @@ export async function POST() {
   const targets = [...learningTargets, ...newTargets];
   const targetIds = new Set(targets.map((t) => t.id));
   console.log(
-    "Targets - learning:", learningTargets.map((w) => w.dari),
-    "new:", newTargets.map((w) => w.dari),
+    "Targets - learning:", learningTargets.map((w) => w.target),
+    "new:", newTargets.map((w) => w.target),
   );
 
   // Sentence fabric: a rotating sample of consolidated words (fall back to
@@ -106,8 +106,8 @@ export async function POST() {
   const avoidSentences = [...poolPick, ...pool.slice(0, 10)]
     .map((row) => {
       const d = row.data;
-      if ("sentenceDari" in d) return d.sentenceDari;
-      if ("correctSentenceDari" in d) return d.correctSentenceDari;
+      if ("sentenceTarget" in d) return d.sentenceTarget;
+      if ("correctSentenceTarget" in d) return d.correctSentenceTarget;
       return null;
     })
     .filter((s): s is string => !!s)

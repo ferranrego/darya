@@ -3,7 +3,7 @@
  * in scripts/data/core-lexicon-*.txt.
  *
  * Line format:
- * rank|dari|translit|pos|register|glossEn|exampleDari|exampleTranslit|exampleEn|tags|variants
+ * rank|target|translit|pos|register|glossEn|exampleTarget|exampleTranslit|exampleEn|tags|variants
  *
  * Run: pnpm build:lexicon
  *
@@ -47,12 +47,12 @@ for (const file of files) {
     if (parts.length !== 11) {
       throw new Error(`${file}:${lineNo + 1}: expected 11 fields, got ${parts.length}`);
     }
-    const [rank, dari, translit, pos, register, glossEn, exampleDari, exampleTranslit, exampleEn, tags, variants] = parts;
+    const [rank, target, translit, pos, register, glossEn, exampleTarget, exampleTranslit, exampleEn, tags, variants] = parts;
     n++;
     entries.push({
       id: `lx-${String(n).padStart(4, "0")}`,
-      dari: normalizeDari(dari),
-      dariNormalized: normalizeDari(dari),
+      target: normalizeDari(target),
+      targetNormalized: normalizeDari(target),
       translit,
       glossEn,
       pos: pos as LexiconEntry["pos"],
@@ -60,7 +60,7 @@ for (const file of files) {
       freqBand: bandForRank(Number(rank)),
       register: register as LexiconEntry["register"],
       variants: variants ? variants.split(",").map((v) => normalizeDari(v)) : [],
-      exampleDari,
+      exampleTarget,
       exampleTranslit,
       exampleEn,
       tags: tags ? tags.split(",") : [],

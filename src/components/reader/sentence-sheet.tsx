@@ -57,7 +57,7 @@ export function SentenceSheet({
 
   return (
     <AnimatePresence>
-      {open && (
+      {open && sentence && (
         <>
           <motion.div
             key="scrim"
@@ -124,7 +124,7 @@ export function SentenceSheet({
                           )}
                         </div>
                         <div className="flex flex-col items-end text-right">
-                          <span lang="prs" className="text-[20px] leading-tight">{word.dari}</span>
+                          <span lang="prs" className="text-[20px] leading-tight">{word.target}</span>
                           <span className="text-[12px] text-ink-soft">{word.translit}</span>
                         </div>
                       </div>

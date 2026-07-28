@@ -49,7 +49,7 @@ export function WordSheet({
   const handleAnalyze = async () => {
     if (!surface || !entry) return;
     setIsAnalyzing(true);
-    const result = await analyzeConjugation(surface, entry.dari, entry.glossEn);
+    const result = await analyzeConjugation(surface, entry.target, entry.glossEn);
     if ("error" in result) {
       alert(result.error);
     } else {
@@ -89,7 +89,7 @@ export function WordSheet({
                   <div>
                     <div className="flex items-center gap-3">
                       <p lang="prs" className="text-[35px] leading-snug">
-                        {entry.dari}
+                        {entry.target}
                       </p>
                     </div>
                     <p className="mt-0.5 text-[15px] text-ink-soft">{entry.translit}</p>
@@ -102,7 +102,7 @@ export function WordSheet({
                 <p className="text-[13px] text-ink-faint">{entry.pos}</p>
                 <div className="mt-5 rounded-2xl bg-paper p-4">
                   <p lang="prs" className="text-[19px] leading-loose">
-                    {entry.exampleDari}
+                    {entry.exampleTarget}
                   </p>
                   <p className="mt-1 text-[13px] text-ink-soft">{entry.exampleTranslit}</p>
                   <p className="mt-0.5 text-[13px] text-ink-faint">{entry.exampleEn}</p>
@@ -129,7 +129,7 @@ export function WordSheet({
                                 <span className="text-[12px] text-ink-soft mt-0.5">{row.en}</span>
                               </div>
                               <div className="flex flex-col items-end text-right">
-                                <span lang="prs" className="text-[18px]">{row.dari}</span>
+                                <span lang="prs" className="text-[18px]">{row.target}</span>
                                 <span className="text-[12px] text-ink-soft">{row.translit}</span>
                               </div>
                             </div>

@@ -19,9 +19,31 @@
               "id": "gs-15-1",
               "title": "Add -tar",
               "body": "To compare, add -tar to the adjective: kalān → kalāntar (bigger), khōb → khōbtar (better in speech; bihtar is more common). The thing you compare against comes after az.",
-              "table": [["kalān → kalāntar", "bigger"], ["khurd → khurdtar", "smaller"], ["garm → garmtar", "warmer"], ["naw → nawtar", "newer"]],
+              "table": [
+                [
+                  "kalān → kalāntar",
+                  "bigger"
+                ],
+                [
+                  "khurd → khurdtar",
+                  "smaller"
+                ],
+                [
+                  "garm → garmtar",
+                  "warmer"
+                ],
+                [
+                  "naw → nawtar",
+                  "newer"
+                ]
+              ],
               "examples": [
-                { "dari": "خانه او از خانه من کلان‌تر است", "translit": "khāna-ye ō az khāna-ye man kalāntar ast", "en": "His house is bigger than my house.", "highlight": "کلان‌تر" }
+                {
+                  "target": "خانه او از خانه من کلان‌تر است",
+                  "translit": "khāna-ye ō az khāna-ye man kalāntar ast",
+                  "en": "His house is bigger than my house.",
+                  "highlight": "کلان‌تر"
+                }
               ]
             },
             {
@@ -29,19 +51,190 @@
               "title": "The order",
               "body": "First the two things, joined by az, then the -tar adjective, then ast. Literally: 'X, from Y, bigger is.'",
               "examples": [
-                { "dari": "چای از آب گرم‌تر است", "translit": "chāy az āb garmtar ast", "en": "Tea is warmer than water.", "highlight": "گرم‌تر" },
-                { "dari": "کابل از شهر ما کلان‌تر است", "translit": "kābul az shahr-e mā kalāntar ast", "en": "Kabul is bigger than our city.", "highlight": "از" }
+                {
+                  "target": "چای از آب گرم‌تر است",
+                  "translit": "chāy az āb garmtar ast",
+                  "en": "Tea is warmer than water.",
+                  "highlight": "گرم‌تر"
+                },
+                {
+                  "target": "کابل از شهر ما کلان‌تر است",
+                  "translit": "kābul az shahr-e mā kalāntar ast",
+                  "en": "Kabul is bigger than our city.",
+                  "highlight": "از"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-15-1", "type": "fillBlank", "dari": "این کتاب از آن کتاب ___ است", "translit": "īn ketāb az ān ketāb ___ ast", "en": "This book is newer than that book.", "answer": { "dari": "نو‌تر", "translit": "nawtar" }, "distractors": [{ "dari": "نو", "translit": "naw" }, { "dari": "کلان", "translit": "kalān" }] },
-            { "id": "ge-15-2", "type": "fillBlank", "dari": "خانه او ___ خانه من کلان‌تر است", "translit": "khāna-ye ō ___ khāna-ye man kalāntar ast", "en": "His house is bigger than my house.", "answer": { "dari": "از", "translit": "az" }, "distractors": [{ "dari": "به", "translit": "ba" }, { "dari": "با", "translit": "bā" }] },
-            { "id": "ge-15-3", "type": "chooseTranslation", "direction": "toEn", "dari": "چای از آب گرم‌تر است", "translit": "chāy az āb garmtar ast", "en": "Tea is warmer than water.", "distractorsEn": ["Water is warmer than tea.", "Tea is as warm as water."] },
-            { "id": "ge-15-4", "type": "buildSentence", "en": "Kabul is bigger than our city.", "words": [{ "dari": "کابل", "translit": "kābul" }, { "dari": "از", "translit": "az" }, { "dari": "شهر", "translit": "shahr-e" }, { "dari": "ما", "translit": "mā" }, { "dari": "کلان‌تر", "translit": "kalāntar" }, { "dari": "است", "translit": "ast" }], "translit": "kābul az shahr-e mā kalāntar ast", "extraWords": [{ "dari": "خورد", "translit": "khurd" }], "altOrders": [["کابل", "کلان‌تر", "از", "شهر", "ما", "است"]] },
-            { "id": "ge-15-5", "type": "matchPairs", "prompt": "Match plain and comparative", "pairs": [{ "dari": "کلان", "translit": "kalān", "en": "big" }, { "dari": "کلان‌تر", "translit": "kalāntar", "en": "bigger" }, { "dari": "گرم", "translit": "garm", "en": "warm" }, { "dari": "گرم‌تر", "translit": "garmtar", "en": "warmer" }] },
-            { "id": "ge-15-6", "type": "chooseTranslation", "direction": "toDari", "dari": "برادر من از تو کلان‌تر است", "translit": "barādar-e man az tu kalāntar ast", "en": "My brother is bigger than you.", "distractorsDari": [{ "dari": "برادر من از تو خوردتر است", "translit": "barādar-e man az tu khurdtar ast" }, { "dari": "برادر تو از من کلان‌تر است", "translit": "barādar-e tu az man kalāntar ast" }] },
-            { "id": "ge-15-7", "type": "fillBlank", "dari": "آب از چای ___ است", "translit": "āb az chāy ___ ast", "en": "Water is colder than tea.", "answer": { "dari": "سردتر", "translit": "sardtar" }, "distractors": [{ "dari": "سرد", "translit": "sard" }, { "dari": "گرم‌تر", "translit": "garmtar" }] }
+            {
+              "id": "ge-15-1",
+              "type": "fillBlank",
+              "target": "این کتاب از آن کتاب ___ است",
+              "translit": "īn ketāb az ān ketāb ___ ast",
+              "en": "This book is newer than that book.",
+              "answer": {
+                "target": "نو‌تر",
+                "translit": "nawtar"
+              },
+              "distractors": [
+                {
+                  "target": "نو",
+                  "translit": "naw"
+                },
+                {
+                  "target": "کلان",
+                  "translit": "kalān"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-2",
+              "type": "fillBlank",
+              "target": "خانه او ___ خانه من کلان‌تر است",
+              "translit": "khāna-ye ō ___ khāna-ye man kalāntar ast",
+              "en": "His house is bigger than my house.",
+              "answer": {
+                "target": "از",
+                "translit": "az"
+              },
+              "distractors": [
+                {
+                  "target": "به",
+                  "translit": "ba"
+                },
+                {
+                  "target": "با",
+                  "translit": "bā"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "چای از آب گرم‌تر است",
+              "translit": "chāy az āb garmtar ast",
+              "en": "Tea is warmer than water.",
+              "distractorsEn": [
+                "Water is warmer than tea.",
+                "Tea is as warm as water."
+              ]
+            },
+            {
+              "id": "ge-15-4",
+              "type": "buildSentence",
+              "en": "Kabul is bigger than our city.",
+              "words": [
+                {
+                  "target": "کابل",
+                  "translit": "kābul"
+                },
+                {
+                  "target": "از",
+                  "translit": "az"
+                },
+                {
+                  "target": "شهر",
+                  "translit": "shahr-e"
+                },
+                {
+                  "target": "ما",
+                  "translit": "mā"
+                },
+                {
+                  "target": "کلان‌تر",
+                  "translit": "kalāntar"
+                },
+                {
+                  "target": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "kābul az shahr-e mā kalāntar ast",
+              "extraWords": [
+                {
+                  "target": "خورد",
+                  "translit": "khurd"
+                }
+              ],
+              "altOrders": [
+                [
+                  "کابل",
+                  "کلان‌تر",
+                  "از",
+                  "شهر",
+                  "ما",
+                  "است"
+                ]
+              ]
+            },
+            {
+              "id": "ge-15-5",
+              "type": "matchPairs",
+              "prompt": "Match plain and comparative",
+              "pairs": [
+                {
+                  "target": "کلان",
+                  "translit": "kalān",
+                  "en": "big"
+                },
+                {
+                  "target": "کلان‌تر",
+                  "translit": "kalāntar",
+                  "en": "bigger"
+                },
+                {
+                  "target": "گرم",
+                  "translit": "garm",
+                  "en": "warm"
+                },
+                {
+                  "target": "گرم‌تر",
+                  "translit": "garmtar",
+                  "en": "warmer"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "برادر من از تو کلان‌تر است",
+              "translit": "barādar-e man az tu kalāntar ast",
+              "en": "My brother is bigger than you.",
+              "distractorsTarget": [
+                {
+                  "target": "برادر من از تو خوردتر است",
+                  "translit": "barādar-e man az tu khurdtar ast"
+                },
+                {
+                  "target": "برادر تو از من کلان‌تر است",
+                  "translit": "barādar-e tu az man kalāntar ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-7",
+              "type": "fillBlank",
+              "target": "آب از چای ___ است",
+              "translit": "āb az chāy ___ ast",
+              "en": "Water is colder than tea.",
+              "answer": {
+                "target": "سردتر",
+                "translit": "sardtar"
+              },
+              "distractors": [
+                {
+                  "target": "سرد",
+                  "translit": "sard"
+                },
+                {
+                  "target": "گرم‌تر",
+                  "translit": "garmtar"
+                }
+              ]
+            }
           ]
         },
         {
@@ -56,19 +249,171 @@
               "title": "Add -tarīn, move it front",
               "body": "The superlative adds -tarīn - and unlike the adjective, it goes BEFORE the noun. bihtarīn is the special word for 'best'.",
               "examples": [
-                { "dari": "او بهترین دوست من است", "translit": "ō bihtarīn dōst-e man ast", "en": "He is my best friend.", "highlight": "بهترین" },
-                { "dari": "کابل کلان‌ترین شهر است", "translit": "kābul kalāntarīn shahr ast", "en": "Kabul is the biggest city.", "highlight": "کلان‌ترین" }
+                {
+                  "target": "او بهترین دوست من است",
+                  "translit": "ō bihtarīn dōst-e man ast",
+                  "en": "He is my best friend.",
+                  "highlight": "بهترین"
+                },
+                {
+                  "target": "کابل کلان‌ترین شهر است",
+                  "translit": "kābul kalāntarīn shahr ast",
+                  "en": "Kabul is the biggest city.",
+                  "highlight": "کلان‌ترین"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-16-1", "type": "chooseTranslation", "direction": "toEn", "dari": "او بهترین دوست من است", "translit": "ō bihtarīn dōst-e man ast", "en": "He is my best friend.", "distractorsEn": ["He is a better friend than me.", "He is my good friend."] },
-            { "id": "ge-16-2", "type": "fillBlank", "dari": "کابل ___ شهر است", "translit": "kābul ___ shahr ast", "en": "Kabul is the biggest city.", "answer": { "dari": "کلان‌ترین", "translit": "kalāntarīn" }, "distractors": [{ "dari": "کلان‌تر", "translit": "kalāntar" }, { "dari": "کلان", "translit": "kalān" }] },
-            { "id": "ge-16-3", "type": "buildSentence", "en": "This is the newest book.", "words": [{ "dari": "این", "translit": "īn" }, { "dari": "نو‌ترین", "translit": "nawtarīn" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "است", "translit": "ast" }], "translit": "īn nawtarīn ketāb ast", "extraWords": [{ "dari": "نو‌تر", "translit": "nawtar" }], "altOrders": [["این", "کتاب", "نو‌ترین", "است"]] },
-            { "id": "ge-16-4", "type": "matchPairs", "prompt": "Match comparative and superlative", "pairs": [{ "dari": "کلان‌تر", "translit": "kalāntar", "en": "bigger" }, { "dari": "کلان‌ترین", "translit": "kalāntarīn", "en": "biggest" }, { "dari": "بهتر", "translit": "bihtar", "en": "better" }, { "dari": "بهترین", "translit": "bihtarīn", "en": "best" }] },
-            { "id": "ge-16-5", "type": "chooseTranslation", "direction": "toDari", "dari": "او بهترین شاگرد است", "translit": "ō bihtarīn shāgerd ast", "en": "She is the best student.", "distractorsDari": [{ "dari": "او بهتر شاگرد است", "translit": "ō bihtar shāgerd ast" }, { "dari": "او بهترین معلم است", "translit": "ō bihtarīn mu'allem ast" }] },
-            { "id": "ge-16-6", "type": "fillBlank", "dari": "او ___ دوست من است", "translit": "ō ___ dōst-e man ast", "en": "He is my best friend.", "answer": { "dari": "بهترین", "translit": "bihtarīn" }, "distractors": [{ "dari": "بهتر", "translit": "bihtar" }, { "dari": "خوب", "translit": "khōb" }] },
-            { "id": "ge-16-7", "type": "chooseTranslation", "direction": "toEn", "dari": "این کلان‌ترین خانه است", "translit": "īn kalāntarīn khāna ast", "en": "This is the biggest house.", "distractorsEn": ["This is a bigger house.", "This house is big."] }
+            {
+              "id": "ge-16-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او بهترین دوست من است",
+              "translit": "ō bihtarīn dōst-e man ast",
+              "en": "He is my best friend.",
+              "distractorsEn": [
+                "He is a better friend than me.",
+                "He is my good friend."
+              ]
+            },
+            {
+              "id": "ge-16-2",
+              "type": "fillBlank",
+              "target": "کابل ___ شهر است",
+              "translit": "kābul ___ shahr ast",
+              "en": "Kabul is the biggest city.",
+              "answer": {
+                "target": "کلان‌ترین",
+                "translit": "kalāntarīn"
+              },
+              "distractors": [
+                {
+                  "target": "کلان‌تر",
+                  "translit": "kalāntar"
+                },
+                {
+                  "target": "کلان",
+                  "translit": "kalān"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-3",
+              "type": "buildSentence",
+              "en": "This is the newest book.",
+              "words": [
+                {
+                  "target": "این",
+                  "translit": "īn"
+                },
+                {
+                  "target": "نو‌ترین",
+                  "translit": "nawtarīn"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "īn nawtarīn ketāb ast",
+              "extraWords": [
+                {
+                  "target": "نو‌تر",
+                  "translit": "nawtar"
+                }
+              ],
+              "altOrders": [
+                [
+                  "این",
+                  "کتاب",
+                  "نو‌ترین",
+                  "است"
+                ]
+              ]
+            },
+            {
+              "id": "ge-16-4",
+              "type": "matchPairs",
+              "prompt": "Match comparative and superlative",
+              "pairs": [
+                {
+                  "target": "کلان‌تر",
+                  "translit": "kalāntar",
+                  "en": "bigger"
+                },
+                {
+                  "target": "کلان‌ترین",
+                  "translit": "kalāntarīn",
+                  "en": "biggest"
+                },
+                {
+                  "target": "بهتر",
+                  "translit": "bihtar",
+                  "en": "better"
+                },
+                {
+                  "target": "بهترین",
+                  "translit": "bihtarīn",
+                  "en": "best"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "او بهترین شاگرد است",
+              "translit": "ō bihtarīn shāgerd ast",
+              "en": "She is the best student.",
+              "distractorsTarget": [
+                {
+                  "target": "او بهتر شاگرد است",
+                  "translit": "ō bihtar shāgerd ast"
+                },
+                {
+                  "target": "او بهترین معلم است",
+                  "translit": "ō bihtarīn mu'allem ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-6",
+              "type": "fillBlank",
+              "target": "او ___ دوست من است",
+              "translit": "ō ___ dōst-e man ast",
+              "en": "He is my best friend.",
+              "answer": {
+                "target": "بهترین",
+                "translit": "bihtarīn"
+              },
+              "distractors": [
+                {
+                  "target": "بهتر",
+                  "translit": "bihtar"
+                },
+                {
+                  "target": "خوب",
+                  "translit": "khōb"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-7",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "این کلان‌ترین خانه است",
+              "translit": "īn kalāntarīn khāna ast",
+              "en": "This is the biggest house.",
+              "distractorsEn": [
+                "This is a bigger house.",
+                "This house is big."
+              ]
+            }
           ]
         },
         {
@@ -82,10 +427,45 @@
               "id": "gs-17-1",
               "title": "Stick it on the end",
               "body": "Instead of ketāb-e man you can say ketābam - 'my book' - by attaching a short ending. Both are correct; the ending is quicker.",
-              "table": [["-am", "my"], ["-at", "your"], ["-ash", "his / her"], ["-emā", "our"], ["-etān", "your (pl)"], ["-eshān", "their"]],
+              "table": [
+                [
+                  "-am",
+                  "my"
+                ],
+                [
+                  "-at",
+                  "your"
+                ],
+                [
+                  "-ash",
+                  "his / her"
+                ],
+                [
+                  "-emā",
+                  "our"
+                ],
+                [
+                  "-etān",
+                  "your (pl)"
+                ],
+                [
+                  "-eshān",
+                  "their"
+                ]
+              ],
               "examples": [
-                { "dari": "کتابم اینجا است", "translit": "ketābam īnjā ast", "en": "My book is here.", "highlight": "کتابم" },
-                { "dari": "نامش احمد است", "translit": "nāmash Ahmad ast", "en": "His name is Ahmad.", "highlight": "نامش" }
+                {
+                  "target": "کتابم اینجا است",
+                  "translit": "ketābam īnjā ast",
+                  "en": "My book is here.",
+                  "highlight": "کتابم"
+                },
+                {
+                  "target": "نامش احمد است",
+                  "translit": "nāmash Ahmad ast",
+                  "en": "His name is Ahmad.",
+                  "highlight": "نامش"
+                }
               ]
             },
             {
@@ -93,18 +473,161 @@
               "title": "khud - one's own",
               "body": "khud means 'own' and works for any person: kār-e khud, 'one's own work'.",
               "examples": [
-                { "dari": "من کار خود را می‌کنم", "translit": "man kār-e khud rā mēkunam", "en": "I do my own work.", "highlight": "خود" }
+                {
+                  "target": "من کار خود را می‌کنم",
+                  "translit": "man kār-e khud rā mēkunam",
+                  "en": "I do my own work.",
+                  "highlight": "خود"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-17-1", "type": "matchPairs", "prompt": "Match the two ways to say it", "pairs": [{ "dari": "کتابم", "translit": "ketābam", "en": "my book" }, { "dari": "کتابت", "translit": "ketābat", "en": "your book" }, { "dari": "کتابش", "translit": "ketābash", "en": "his book" }, { "dari": "نامم", "translit": "nāmam", "en": "my name" }] },
-            { "id": "ge-17-2", "type": "chooseTranslation", "direction": "toEn", "dari": "نامش احمد است", "translit": "nāmash Ahmad ast", "en": "His name is Ahmad.", "distractorsEn": ["My name is Ahmad.", "Your name is Ahmad."] },
-            { "id": "ge-17-3", "type": "fillBlank", "dari": "___ اینجا است", "translit": "___ īnjā ast", "en": "My book is here.", "answer": { "dari": "کتابم", "translit": "ketābam" }, "distractors": [{ "dari": "کتابت", "translit": "ketābat" }, { "dari": "کتابش", "translit": "ketābash" }] },
-            { "id": "ge-17-4", "type": "buildSentence", "en": "I do my own work.", "words": [{ "dari": "من", "translit": "man" }, { "dari": "کار", "translit": "kār-e" }, { "dari": "خود", "translit": "khud" }, { "dari": "را", "translit": "rā" }, { "dari": "می‌کنم", "translit": "mēkunam" }], "translit": "man kār-e khud rā mēkunam", "extraWords": [{ "dari": "او", "translit": "ō" }] },
-            { "id": "ge-17-5", "type": "chooseTranslation", "direction": "toDari", "dari": "کتابت نو است", "translit": "ketābat naw ast", "en": "Your book is new.", "distractorsDari": [{ "dari": "کتابم نو است", "translit": "ketābam naw ast" }, { "dari": "کتابش نو است", "translit": "ketābash naw ast" }] },
-            { "id": "ge-17-6", "type": "fillBlank", "dari": "نام ___ چیست؟", "translit": "nām-e ___ chīst?", "en": "What is your name?", "answer": { "dari": "تو", "translit": "tu" }, "distractors": [{ "dari": "من", "translit": "man" }, { "dari": "او", "translit": "ō" }] },
-            { "id": "ge-17-7", "type": "chooseTranslation", "direction": "toEn", "dari": "دوستش اینجا است", "translit": "dōstash īnjā ast", "en": "His friend is here.", "distractorsEn": ["My friend is here.", "Their friend is here."] }
+            {
+              "id": "ge-17-1",
+              "type": "matchPairs",
+              "prompt": "Match the two ways to say it",
+              "pairs": [
+                {
+                  "target": "کتابم",
+                  "translit": "ketābam",
+                  "en": "my book"
+                },
+                {
+                  "target": "کتابت",
+                  "translit": "ketābat",
+                  "en": "your book"
+                },
+                {
+                  "target": "کتابش",
+                  "translit": "ketābash",
+                  "en": "his book"
+                },
+                {
+                  "target": "نامم",
+                  "translit": "nāmam",
+                  "en": "my name"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "نامش احمد است",
+              "translit": "nāmash Ahmad ast",
+              "en": "His name is Ahmad.",
+              "distractorsEn": [
+                "My name is Ahmad.",
+                "Your name is Ahmad."
+              ]
+            },
+            {
+              "id": "ge-17-3",
+              "type": "fillBlank",
+              "target": "___ اینجا است",
+              "translit": "___ īnjā ast",
+              "en": "My book is here.",
+              "answer": {
+                "target": "کتابم",
+                "translit": "ketābam"
+              },
+              "distractors": [
+                {
+                  "target": "کتابت",
+                  "translit": "ketābat"
+                },
+                {
+                  "target": "کتابش",
+                  "translit": "ketābash"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-4",
+              "type": "buildSentence",
+              "en": "I do my own work.",
+              "words": [
+                {
+                  "target": "من",
+                  "translit": "man"
+                },
+                {
+                  "target": "کار",
+                  "translit": "kār-e"
+                },
+                {
+                  "target": "خود",
+                  "translit": "khud"
+                },
+                {
+                  "target": "را",
+                  "translit": "rā"
+                },
+                {
+                  "target": "می‌کنم",
+                  "translit": "mēkunam"
+                }
+              ],
+              "translit": "man kār-e khud rā mēkunam",
+              "extraWords": [
+                {
+                  "target": "او",
+                  "translit": "ō"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "کتابت نو است",
+              "translit": "ketābat naw ast",
+              "en": "Your book is new.",
+              "distractorsTarget": [
+                {
+                  "target": "کتابم نو است",
+                  "translit": "ketābam naw ast"
+                },
+                {
+                  "target": "کتابش نو است",
+                  "translit": "ketābash naw ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-6",
+              "type": "fillBlank",
+              "target": "نام ___ چیست؟",
+              "translit": "nām-e ___ chīst?",
+              "en": "What is your name?",
+              "answer": {
+                "target": "تو",
+                "translit": "tu"
+              },
+              "distractors": [
+                {
+                  "target": "من",
+                  "translit": "man"
+                },
+                {
+                  "target": "او",
+                  "translit": "ō"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-7",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "دوستش اینجا است",
+              "translit": "dōstash īnjā ast",
+              "en": "His friend is here.",
+              "distractorsEn": [
+                "My friend is here.",
+                "Their friend is here."
+              ]
+            }
           ]
         }
       ]
@@ -126,18 +649,147 @@
               "title": "sā'at + number",
               "body": "sā'at means 'hour' or 'o'clock'. Ask sā'at chand ast? and answer with sā'at plus a number.",
               "examples": [
-                { "dari": "ساعت چند است؟", "translit": "sā'at chand ast?", "en": "What time is it?", "highlight": "ساعت" },
-                { "dari": "ساعت دو است", "translit": "sā'at dū ast", "en": "It is two o'clock.", "highlight": "دو" }
+                {
+                  "target": "ساعت چند است؟",
+                  "translit": "sā'at chand ast?",
+                  "en": "What time is it?",
+                  "highlight": "ساعت"
+                },
+                {
+                  "target": "ساعت دو است",
+                  "translit": "sā'at dū ast",
+                  "en": "It is two o'clock.",
+                  "highlight": "دو"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-18-1", "type": "fillBlank", "dari": "ساعت ___ است؟", "translit": "sā'at ___ ast?", "en": "What time is it? (how many)", "answer": { "dari": "چند", "translit": "chand" }, "distractors": [{ "dari": "چی", "translit": "che" }, { "dari": "کجا", "translit": "kujā" }] },
-            { "id": "ge-18-2", "type": "chooseTranslation", "direction": "toEn", "dari": "ساعت سه است", "translit": "sā'at se ast", "en": "It is three o'clock.", "distractorsEn": ["It is two o'clock.", "There are three hours."] },
-            { "id": "ge-18-3", "type": "buildSentence", "en": "It is five o'clock.", "words": [{ "dari": "ساعت", "translit": "sā'at" }, { "dari": "پنج", "translit": "panj" }, { "dari": "است", "translit": "ast" }], "translit": "sā'at panj ast", "extraWords": [{ "dari": "چند", "translit": "chand" }] },
-            { "id": "ge-18-4", "type": "fillBlank", "dari": "ساعت ___ است", "translit": "sā'at ___ ast", "en": "It is ten o'clock.", "answer": { "dari": "ده", "translit": "dah" }, "distractors": [{ "dari": "دو", "translit": "dū" }, { "dari": "چند", "translit": "chand" }] },
-            { "id": "ge-18-5", "type": "matchPairs", "prompt": "Match the times", "pairs": [{ "dari": "ساعت یک", "translit": "sā'at yak", "en": "one o'clock" }, { "dari": "ساعت دو", "translit": "sā'at dū", "en": "two o'clock" }, { "dari": "ساعت سه", "translit": "sā'at se", "en": "three o'clock" }, { "dari": "ساعت چهار", "translit": "sā'at chār", "en": "four o'clock" }] },
-            { "id": "ge-18-6", "type": "chooseTranslation", "direction": "toDari", "dari": "ساعت نه است", "translit": "sā'at nuh ast", "en": "It is nine o'clock.", "distractorsDari": [{ "dari": "ساعت ده است", "translit": "sā'at dah ast" }, { "dari": "ساعت چند است", "translit": "sā'at chand ast" }] }
+            {
+              "id": "ge-18-1",
+              "type": "fillBlank",
+              "target": "ساعت ___ است؟",
+              "translit": "sā'at ___ ast?",
+              "en": "What time is it? (how many)",
+              "answer": {
+                "target": "چند",
+                "translit": "chand"
+              },
+              "distractors": [
+                {
+                  "target": "چی",
+                  "translit": "che"
+                },
+                {
+                  "target": "کجا",
+                  "translit": "kujā"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "ساعت سه است",
+              "translit": "sā'at se ast",
+              "en": "It is three o'clock.",
+              "distractorsEn": [
+                "It is two o'clock.",
+                "There are three hours."
+              ]
+            },
+            {
+              "id": "ge-18-3",
+              "type": "buildSentence",
+              "en": "It is five o'clock.",
+              "words": [
+                {
+                  "target": "ساعت",
+                  "translit": "sā'at"
+                },
+                {
+                  "target": "پنج",
+                  "translit": "panj"
+                },
+                {
+                  "target": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "sā'at panj ast",
+              "extraWords": [
+                {
+                  "target": "چند",
+                  "translit": "chand"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-4",
+              "type": "fillBlank",
+              "target": "ساعت ___ است",
+              "translit": "sā'at ___ ast",
+              "en": "It is ten o'clock.",
+              "answer": {
+                "target": "ده",
+                "translit": "dah"
+              },
+              "distractors": [
+                {
+                  "target": "دو",
+                  "translit": "dū"
+                },
+                {
+                  "target": "چند",
+                  "translit": "chand"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-5",
+              "type": "matchPairs",
+              "prompt": "Match the times",
+              "pairs": [
+                {
+                  "target": "ساعت یک",
+                  "translit": "sā'at yak",
+                  "en": "one o'clock"
+                },
+                {
+                  "target": "ساعت دو",
+                  "translit": "sā'at dū",
+                  "en": "two o'clock"
+                },
+                {
+                  "target": "ساعت سه",
+                  "translit": "sā'at se",
+                  "en": "three o'clock"
+                },
+                {
+                  "target": "ساعت چهار",
+                  "translit": "sā'at chār",
+                  "en": "four o'clock"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "ساعت نه است",
+              "translit": "sā'at nuh ast",
+              "en": "It is nine o'clock.",
+              "distractorsTarget": [
+                {
+                  "target": "ساعت ده است",
+                  "translit": "sā'at dah ast"
+                },
+                {
+                  "target": "ساعت چند است",
+                  "translit": "sā'at chand ast"
+                }
+              ]
+            }
           ]
         },
         {
@@ -151,20 +803,178 @@
               "id": "gs-19-1",
               "title": "Where they go",
               "body": "Frequency words sit before the verb: hamēsha (always), har rōz (every day), gāhē (sometimes). hargez means 'never' and pairs with a negative verb.",
-              "table": [["hamēsha", "always"], ["har rōz", "every day"], ["gāhē", "sometimes"], ["hargez … na-", "never"]],
+              "table": [
+                [
+                  "hamēsha",
+                  "always"
+                ],
+                [
+                  "har rōz",
+                  "every day"
+                ],
+                [
+                  "gāhē",
+                  "sometimes"
+                ],
+                [
+                  "hargez … na-",
+                  "never"
+                ]
+              ],
               "examples": [
-                { "dari": "من همیشه چای می‌خورم", "translit": "man hamēsha chāy mēkhuram", "en": "I always drink tea.", "highlight": "همیشه" },
-                { "dari": "او هرگز نان نمی‌خورد", "translit": "ō hargez nān namēkhurad", "en": "He never eats bread.", "highlight": "هرگز" }
+                {
+                  "target": "من همیشه چای می‌خورم",
+                  "translit": "man hamēsha chāy mēkhuram",
+                  "en": "I always drink tea.",
+                  "highlight": "همیشه"
+                },
+                {
+                  "target": "او هرگز نان نمی‌خورد",
+                  "translit": "ō hargez nān namēkhurad",
+                  "en": "He never eats bread.",
+                  "highlight": "هرگز"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-19-1", "type": "fillBlank", "dari": "من ___ چای می‌خورم", "translit": "man ___ chāy mēkhuram", "en": "I always drink tea.", "answer": { "dari": "همیشه", "translit": "hamēsha" }, "distractors": [{ "dari": "هرگز", "translit": "hargez" }, { "dari": "گاهی", "translit": "gāhē" }] },
-            { "id": "ge-19-2", "type": "chooseTranslation", "direction": "toEn", "dari": "او هرگز نان نمی‌خورد", "translit": "ō hargez nān namēkhurad", "en": "He never eats bread.", "distractorsEn": ["He always eats bread.", "He sometimes eats bread."] },
-            { "id": "ge-19-3", "type": "fillBlank", "dari": "ما ___ روز کار می‌کنیم", "translit": "mā ___ rōz kār mēkunēm", "en": "We work every day.", "answer": { "dari": "هر", "translit": "har" }, "distractors": [{ "dari": "هیچ", "translit": "hēch" }, { "dari": "همه", "translit": "hama" }] },
-            { "id": "ge-19-4", "type": "buildSentence", "en": "I sometimes read a book.", "words": [{ "dari": "من", "translit": "man" }, { "dari": "گاهی", "translit": "gāhē" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "می‌خوانم", "translit": "mēkhānam" }], "translit": "man gāhē ketāb mēkhānam", "extraWords": [{ "dari": "همیشه", "translit": "hamēsha" }], "altOrders": [["گاهی", "من", "کتاب", "می‌خوانم"]] },
-            { "id": "ge-19-5", "type": "matchPairs", "prompt": "Match the frequency words", "pairs": [{ "dari": "همیشه", "translit": "hamēsha", "en": "always" }, { "dari": "گاهی", "translit": "gāhē", "en": "sometimes" }, { "dari": "هرگز", "translit": "hargez", "en": "never" }, { "dari": "هر روز", "translit": "har rōz", "en": "every day" }] },
-            { "id": "ge-19-6", "type": "chooseTranslation", "direction": "toDari", "dari": "او همیشه کار می‌کند", "translit": "ō hamēsha kār mēkunad", "en": "He always works.", "distractorsDari": [{ "dari": "او گاهی کار می‌کند", "translit": "ō gāhē kār mēkunad" }, { "dari": "او هرگز کار نمی‌کند", "translit": "ō hargez kār namēkunad" }] }
+            {
+              "id": "ge-19-1",
+              "type": "fillBlank",
+              "target": "من ___ چای می‌خورم",
+              "translit": "man ___ chāy mēkhuram",
+              "en": "I always drink tea.",
+              "answer": {
+                "target": "همیشه",
+                "translit": "hamēsha"
+              },
+              "distractors": [
+                {
+                  "target": "هرگز",
+                  "translit": "hargez"
+                },
+                {
+                  "target": "گاهی",
+                  "translit": "gāhē"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او هرگز نان نمی‌خورد",
+              "translit": "ō hargez nān namēkhurad",
+              "en": "He never eats bread.",
+              "distractorsEn": [
+                "He always eats bread.",
+                "He sometimes eats bread."
+              ]
+            },
+            {
+              "id": "ge-19-3",
+              "type": "fillBlank",
+              "target": "ما ___ روز کار می‌کنیم",
+              "translit": "mā ___ rōz kār mēkunēm",
+              "en": "We work every day.",
+              "answer": {
+                "target": "هر",
+                "translit": "har"
+              },
+              "distractors": [
+                {
+                  "target": "هیچ",
+                  "translit": "hēch"
+                },
+                {
+                  "target": "همه",
+                  "translit": "hama"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-4",
+              "type": "buildSentence",
+              "en": "I sometimes read a book.",
+              "words": [
+                {
+                  "target": "من",
+                  "translit": "man"
+                },
+                {
+                  "target": "گاهی",
+                  "translit": "gāhē"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "می‌خوانم",
+                  "translit": "mēkhānam"
+                }
+              ],
+              "translit": "man gāhē ketāb mēkhānam",
+              "extraWords": [
+                {
+                  "target": "همیشه",
+                  "translit": "hamēsha"
+                }
+              ],
+              "altOrders": [
+                [
+                  "گاهی",
+                  "من",
+                  "کتاب",
+                  "می‌خوانم"
+                ]
+              ]
+            },
+            {
+              "id": "ge-19-5",
+              "type": "matchPairs",
+              "prompt": "Match the frequency words",
+              "pairs": [
+                {
+                  "target": "همیشه",
+                  "translit": "hamēsha",
+                  "en": "always"
+                },
+                {
+                  "target": "گاهی",
+                  "translit": "gāhē",
+                  "en": "sometimes"
+                },
+                {
+                  "target": "هرگز",
+                  "translit": "hargez",
+                  "en": "never"
+                },
+                {
+                  "target": "هر روز",
+                  "translit": "har rōz",
+                  "en": "every day"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "او همیشه کار می‌کند",
+              "translit": "ō hamēsha kār mēkunad",
+              "en": "He always works.",
+              "distractorsTarget": [
+                {
+                  "target": "او گاهی کار می‌کند",
+                  "translit": "ō gāhē kār mēkunad"
+                },
+                {
+                  "target": "او هرگز کار نمی‌کند",
+                  "translit": "ō hargez kār namēkunad"
+                }
+              ]
+            }
           ]
         },
         {
@@ -179,18 +989,159 @@
               "title": "Present + time word",
               "body": "For everyday plans, Dari uses the present tense with a future time word like fardā (tomorrow). No new verb form needed.",
               "examples": [
-                { "dari": "فردا به کابل می‌روم", "translit": "fardā ba kābul mērawam", "en": "Tomorrow I will go to Kabul.", "highlight": "فردا" },
-                { "dari": "فردا او می‌آید", "translit": "fardā ō mēāyad", "en": "Tomorrow he will come.", "highlight": "می‌آید" }
+                {
+                  "target": "فردا به کابل می‌روم",
+                  "translit": "fardā ba kābul mērawam",
+                  "en": "Tomorrow I will go to Kabul.",
+                  "highlight": "فردا"
+                },
+                {
+                  "target": "فردا او می‌آید",
+                  "translit": "fardā ō mēāyad",
+                  "en": "Tomorrow he will come.",
+                  "highlight": "می‌آید"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-20-1", "type": "fillBlank", "dari": "___ به کابل می‌روم", "translit": "___ ba kābul mērawam", "en": "Tomorrow I will go to Kabul.", "answer": { "dari": "فردا", "translit": "fardā" }, "distractors": [{ "dari": "دیروز", "translit": "dīrōz" }, { "dari": "اینجا", "translit": "īnjā" }] },
-            { "id": "ge-20-2", "type": "chooseTranslation", "direction": "toEn", "dari": "فردا او می‌آید", "translit": "fardā ō mēāyad", "en": "Tomorrow he will come.", "distractorsEn": ["Yesterday he came.", "He is coming now."] },
-            { "id": "ge-20-3", "type": "buildSentence", "en": "Tomorrow we will read a book.", "words": [{ "dari": "فردا", "translit": "fardā" }, { "dari": "ما", "translit": "mā" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "می‌خوانیم", "translit": "mēkhānēm" }], "translit": "fardā mā ketāb mēkhānēm", "extraWords": [{ "dari": "خواندیم", "translit": "khāndēm" }], "altOrders": [["ما", "فردا", "کتاب", "می‌خوانیم"]] },
-            { "id": "ge-20-4", "type": "chooseTranslation", "direction": "toDari", "dari": "فردا کار می‌کنم", "translit": "fardā kār mēkunam", "en": "Tomorrow I will work.", "distractorsDari": [{ "dari": "دیروز کار کردم", "translit": "dīrōz kār kardam" }, { "dari": "فردا کار می‌کنی", "translit": "fardā kār mēkuni" }] },
-            { "id": "ge-20-5", "type": "fillBlank", "dari": "فردا تو به مکتب ___", "translit": "fardā tu ba maktab ___", "en": "Tomorrow you will go to school.", "answer": { "dari": "می‌روی", "translit": "mērawi" }, "distractors": [{ "dari": "رفتی", "translit": "rafti" }, { "dari": "می‌روم", "translit": "mērawam" }] },
-            { "id": "ge-20-6", "type": "matchPairs", "prompt": "Match the time words", "pairs": [{ "dari": "دیروز", "translit": "dīrōz", "en": "yesterday" }, { "dari": "امروز", "translit": "emrōz", "en": "today" }, { "dari": "فردا", "translit": "fardā", "en": "tomorrow" }, { "dari": "همیشه", "translit": "hamēsha", "en": "always" }] }
+            {
+              "id": "ge-20-1",
+              "type": "fillBlank",
+              "target": "___ به کابل می‌روم",
+              "translit": "___ ba kābul mērawam",
+              "en": "Tomorrow I will go to Kabul.",
+              "answer": {
+                "target": "فردا",
+                "translit": "fardā"
+              },
+              "distractors": [
+                {
+                  "target": "دیروز",
+                  "translit": "dīrōz"
+                },
+                {
+                  "target": "اینجا",
+                  "translit": "īnjā"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "فردا او می‌آید",
+              "translit": "fardā ō mēāyad",
+              "en": "Tomorrow he will come.",
+              "distractorsEn": [
+                "Yesterday he came.",
+                "He is coming now."
+              ]
+            },
+            {
+              "id": "ge-20-3",
+              "type": "buildSentence",
+              "en": "Tomorrow we will read a book.",
+              "words": [
+                {
+                  "target": "فردا",
+                  "translit": "fardā"
+                },
+                {
+                  "target": "ما",
+                  "translit": "mā"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "می‌خوانیم",
+                  "translit": "mēkhānēm"
+                }
+              ],
+              "translit": "fardā mā ketāb mēkhānēm",
+              "extraWords": [
+                {
+                  "target": "خواندیم",
+                  "translit": "khāndēm"
+                }
+              ],
+              "altOrders": [
+                [
+                  "ما",
+                  "فردا",
+                  "کتاب",
+                  "می‌خوانیم"
+                ]
+              ]
+            },
+            {
+              "id": "ge-20-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "فردا کار می‌کنم",
+              "translit": "fardā kār mēkunam",
+              "en": "Tomorrow I will work.",
+              "distractorsTarget": [
+                {
+                  "target": "دیروز کار کردم",
+                  "translit": "dīrōz kār kardam"
+                },
+                {
+                  "target": "فردا کار می‌کنی",
+                  "translit": "fardā kār mēkuni"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-5",
+              "type": "fillBlank",
+              "target": "فردا تو به مکتب ___",
+              "translit": "fardā tu ba maktab ___",
+              "en": "Tomorrow you will go to school.",
+              "answer": {
+                "target": "می‌روی",
+                "translit": "mērawi"
+              },
+              "distractors": [
+                {
+                  "target": "رفتی",
+                  "translit": "rafti"
+                },
+                {
+                  "target": "می‌روم",
+                  "translit": "mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-6",
+              "type": "matchPairs",
+              "prompt": "Match the time words",
+              "pairs": [
+                {
+                  "target": "دیروز",
+                  "translit": "dīrōz",
+                  "en": "yesterday"
+                },
+                {
+                  "target": "امروز",
+                  "translit": "emrōz",
+                  "en": "today"
+                },
+                {
+                  "target": "فردا",
+                  "translit": "fardā",
+                  "en": "tomorrow"
+                },
+                {
+                  "target": "همیشه",
+                  "translit": "hamēsha",
+                  "en": "always"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -211,10 +1162,37 @@
               "id": "gs-21-1",
               "title": "be- + stem",
               "body": "To give a command to one person, put be- on the present stem: raw → bura (go!), khān → bukhān (read!). For 'don't', use na-: naraw (don't go).",
-              "table": [["raftan → bura", "go!"], ["khāndan → bukhān", "read!"], ["khurdan → bukhur", "eat!"], ["kardan → bukun", "do!"]],
+              "table": [
+                [
+                  "raftan → bura",
+                  "go!"
+                ],
+                [
+                  "khāndan → bukhān",
+                  "read!"
+                ],
+                [
+                  "khurdan → bukhur",
+                  "eat!"
+                ],
+                [
+                  "kardan → bukun",
+                  "do!"
+                ]
+              ],
               "examples": [
-                { "dari": "به مکتب برو", "translit": "ba maktab bura", "en": "Go to school.", "highlight": "برو" },
-                { "dari": "نان بخور", "translit": "nān bukhur", "en": "Eat bread.", "highlight": "بخور" }
+                {
+                  "target": "به مکتب برو",
+                  "translit": "ba maktab bura",
+                  "en": "Go to school.",
+                  "highlight": "برو"
+                },
+                {
+                  "target": "نان بخور",
+                  "translit": "nān bukhur",
+                  "en": "Eat bread.",
+                  "highlight": "بخور"
+                }
               ]
             },
             {
@@ -222,17 +1200,141 @@
               "title": "Saying don't",
               "body": "Swap be- for na- to forbid: naraw (don't go), nakhur (don't eat).",
               "examples": [
-                { "dari": "آنجا نرو", "translit": "ānjā naraw", "en": "Don't go there.", "highlight": "نرو" }
+                {
+                  "target": "آنجا نرو",
+                  "translit": "ānjā naraw",
+                  "en": "Don't go there.",
+                  "highlight": "نرو"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-21-1", "type": "fillBlank", "dari": "به مکتب ___", "translit": "ba maktab ___", "en": "Go to school!", "answer": { "dari": "برو", "translit": "bura" }, "distractors": [{ "dari": "می‌روی", "translit": "mērawi" }, { "dari": "رفتی", "translit": "rafti" }] },
-            { "id": "ge-21-2", "type": "chooseTranslation", "direction": "toEn", "dari": "نان بخور", "translit": "nān bukhur", "en": "Eat bread!", "distractorsEn": ["You eat bread.", "I eat bread."] },
-            { "id": "ge-21-3", "type": "fillBlank", "dari": "آنجا ___", "translit": "ānjā ___", "en": "Don't go there!", "answer": { "dari": "نرو", "translit": "naraw" }, "distractors": [{ "dari": "برو", "translit": "bura" }, { "dari": "می‌روی", "translit": "mērawi" }] },
-            { "id": "ge-21-4", "type": "buildSentence", "en": "Read the book!", "words": [{ "dari": "کتاب", "translit": "ketāb" }, { "dari": "را", "translit": "rā" }, { "dari": "بخوان", "translit": "bukhān" }], "translit": "ketāb rā bukhān", "extraWords": [{ "dari": "می‌خوانی", "translit": "mēkhāni" }] },
-            { "id": "ge-21-5", "type": "matchPairs", "prompt": "Match the commands", "pairs": [{ "dari": "برو", "translit": "bura", "en": "go!" }, { "dari": "بخوان", "translit": "bukhān", "en": "read!" }, { "dari": "بخور", "translit": "bukhur", "en": "eat!" }, { "dari": "نرو", "translit": "naraw", "en": "don't go!" }] },
-            { "id": "ge-21-6", "type": "chooseTranslation", "direction": "toDari", "dari": "کار بکن", "translit": "kār bukun", "en": "Do the work!", "distractorsDari": [{ "dari": "کار می‌کنی", "translit": "kār mēkuni" }, { "dari": "کار نکن", "translit": "kār nakun" }] }
+            {
+              "id": "ge-21-1",
+              "type": "fillBlank",
+              "target": "به مکتب ___",
+              "translit": "ba maktab ___",
+              "en": "Go to school!",
+              "answer": {
+                "target": "برو",
+                "translit": "bura"
+              },
+              "distractors": [
+                {
+                  "target": "می‌روی",
+                  "translit": "mērawi"
+                },
+                {
+                  "target": "رفتی",
+                  "translit": "rafti"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "نان بخور",
+              "translit": "nān bukhur",
+              "en": "Eat bread!",
+              "distractorsEn": [
+                "You eat bread.",
+                "I eat bread."
+              ]
+            },
+            {
+              "id": "ge-21-3",
+              "type": "fillBlank",
+              "target": "آنجا ___",
+              "translit": "ānjā ___",
+              "en": "Don't go there!",
+              "answer": {
+                "target": "نرو",
+                "translit": "naraw"
+              },
+              "distractors": [
+                {
+                  "target": "برو",
+                  "translit": "bura"
+                },
+                {
+                  "target": "می‌روی",
+                  "translit": "mērawi"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-4",
+              "type": "buildSentence",
+              "en": "Read the book!",
+              "words": [
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "را",
+                  "translit": "rā"
+                },
+                {
+                  "target": "بخوان",
+                  "translit": "bukhān"
+                }
+              ],
+              "translit": "ketāb rā bukhān",
+              "extraWords": [
+                {
+                  "target": "می‌خوانی",
+                  "translit": "mēkhāni"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-5",
+              "type": "matchPairs",
+              "prompt": "Match the commands",
+              "pairs": [
+                {
+                  "target": "برو",
+                  "translit": "bura",
+                  "en": "go!"
+                },
+                {
+                  "target": "بخوان",
+                  "translit": "bukhān",
+                  "en": "read!"
+                },
+                {
+                  "target": "بخور",
+                  "translit": "bukhur",
+                  "en": "eat!"
+                },
+                {
+                  "target": "نرو",
+                  "translit": "naraw",
+                  "en": "don't go!"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "کار بکن",
+              "translit": "kār bukun",
+              "en": "Do the work!",
+              "distractorsTarget": [
+                {
+                  "target": "کار می‌کنی",
+                  "translit": "kār mēkuni"
+                },
+                {
+                  "target": "کار نکن",
+                  "translit": "kār nakun"
+                }
+              ]
+            }
           ]
         },
         {
@@ -247,18 +1349,147 @@
               "title": "Add -ēd, add lutfan",
               "body": "To be polite, use the plural command (be- + stem + -ēd) and start with lutfan (please). It is polite even when speaking to one person.",
               "examples": [
-                { "dari": "لطفاً بنشینید", "translit": "lutfan bunshinēd", "en": "Please sit down.", "highlight": "لطفاً" },
-                { "dari": "لطفاً کتاب را بخوانید", "translit": "lutfan ketāb rā bukhānēd", "en": "Please read the book.", "highlight": "بخوانید" }
+                {
+                  "target": "لطفاً بنشینید",
+                  "translit": "lutfan bunshinēd",
+                  "en": "Please sit down.",
+                  "highlight": "لطفاً"
+                },
+                {
+                  "target": "لطفاً کتاب را بخوانید",
+                  "translit": "lutfan ketāb rā bukhānēd",
+                  "en": "Please read the book.",
+                  "highlight": "بخوانید"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-22-1", "type": "fillBlank", "dari": "___ بنشینید", "translit": "___ bunshinēd", "en": "Please sit down.", "answer": { "dari": "لطفاً", "translit": "lutfan" }, "distractors": [{ "dari": "تشکر", "translit": "tashakur" }, { "dari": "بلی", "translit": "balē" }] },
-            { "id": "ge-22-2", "type": "chooseTranslation", "direction": "toEn", "dari": "لطفاً کتاب را بخوانید", "translit": "lutfan ketāb rā bukhānēd", "en": "Please read the book.", "distractorsEn": ["Read the book! (to a friend)", "Please write the book."] },
-            { "id": "ge-22-3", "type": "buildSentence", "en": "Please come here.", "words": [{ "dari": "لطفاً", "translit": "lutfan" }, { "dari": "اینجا", "translit": "īnjā" }, { "dari": "بیایید", "translit": "biāyēd" }], "translit": "lutfan īnjā biāyēd", "extraWords": [{ "dari": "بیا", "translit": "biā" }] },
-            { "id": "ge-22-4", "type": "matchPairs", "prompt": "Match singular and polite plural", "pairs": [{ "dari": "برو", "translit": "bura", "en": "go! (to a friend)" }, { "dari": "بروید", "translit": "burawēd", "en": "please go" }, { "dari": "بخوان", "translit": "bukhān", "en": "read! (to a friend)" }, { "dari": "بخوانید", "translit": "bukhānēd", "en": "please read" }] },
-            { "id": "ge-22-5", "type": "chooseTranslation", "direction": "toDari", "dari": "لطفاً نان بخورید", "translit": "lutfan nān bukhurēd", "en": "Please eat bread.", "distractorsDari": [{ "dari": "نان بخور", "translit": "nān bukhur" }, { "dari": "لطفاً چای بخورید", "translit": "lutfan chāy bukhurēd" }] },
-            { "id": "ge-22-6", "type": "fillBlank", "dari": "لطفاً اینجا ___", "translit": "lutfan īnjā ___", "en": "Please sit here.", "answer": { "dari": "بنشینید", "translit": "bunshinēd" }, "distractors": [{ "dari": "بنشین", "translit": "bunshin" }, { "dari": "می‌نشینید", "translit": "mēnishinēd" }] }
+            {
+              "id": "ge-22-1",
+              "type": "fillBlank",
+              "target": "___ بنشینید",
+              "translit": "___ bunshinēd",
+              "en": "Please sit down.",
+              "answer": {
+                "target": "لطفاً",
+                "translit": "lutfan"
+              },
+              "distractors": [
+                {
+                  "target": "تشکر",
+                  "translit": "tashakur"
+                },
+                {
+                  "target": "بلی",
+                  "translit": "balē"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "لطفاً کتاب را بخوانید",
+              "translit": "lutfan ketāb rā bukhānēd",
+              "en": "Please read the book.",
+              "distractorsEn": [
+                "Read the book! (to a friend)",
+                "Please write the book."
+              ]
+            },
+            {
+              "id": "ge-22-3",
+              "type": "buildSentence",
+              "en": "Please come here.",
+              "words": [
+                {
+                  "target": "لطفاً",
+                  "translit": "lutfan"
+                },
+                {
+                  "target": "اینجا",
+                  "translit": "īnjā"
+                },
+                {
+                  "target": "بیایید",
+                  "translit": "biāyēd"
+                }
+              ],
+              "translit": "lutfan īnjā biāyēd",
+              "extraWords": [
+                {
+                  "target": "بیا",
+                  "translit": "biā"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-4",
+              "type": "matchPairs",
+              "prompt": "Match singular and polite plural",
+              "pairs": [
+                {
+                  "target": "برو",
+                  "translit": "bura",
+                  "en": "go! (to a friend)"
+                },
+                {
+                  "target": "بروید",
+                  "translit": "burawēd",
+                  "en": "please go"
+                },
+                {
+                  "target": "بخوان",
+                  "translit": "bukhān",
+                  "en": "read! (to a friend)"
+                },
+                {
+                  "target": "بخوانید",
+                  "translit": "bukhānēd",
+                  "en": "please read"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "لطفاً نان بخورید",
+              "translit": "lutfan nān bukhurēd",
+              "en": "Please eat bread.",
+              "distractorsTarget": [
+                {
+                  "target": "نان بخور",
+                  "translit": "nān bukhur"
+                },
+                {
+                  "target": "لطفاً چای بخورید",
+                  "translit": "lutfan chāy bukhurēd"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-6",
+              "type": "fillBlank",
+              "target": "لطفاً اینجا ___",
+              "translit": "lutfan īnjā ___",
+              "en": "Please sit here.",
+              "answer": {
+                "target": "بنشینید",
+                "translit": "bunshinēd"
+              },
+              "distractors": [
+                {
+                  "target": "بنشین",
+                  "translit": "bunshin"
+                },
+                {
+                  "target": "می‌نشینید",
+                  "translit": "mēnishinēd"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -280,18 +1511,147 @@
               "title": "Want + a second verb",
               "body": "'I want to go' uses two verbs: mēkhāham (I want) + burawam (go). This second form - be- + stem + ending - is the 'want-form' (subjunctive). It never takes mē-.",
               "examples": [
-                { "dari": "می‌خواهم بروم", "translit": "mēkhāham burawam", "en": "I want to go.", "highlight": "بروم" },
-                { "dari": "او می‌خواهد نان بخورد", "translit": "ō mēkhāhad nān bukhurad", "en": "He wants to eat bread.", "highlight": "بخورد" }
+                {
+                  "target": "می‌خواهم بروم",
+                  "translit": "mēkhāham burawam",
+                  "en": "I want to go.",
+                  "highlight": "بروم"
+                },
+                {
+                  "target": "او می‌خواهد نان بخورد",
+                  "translit": "ō mēkhāhad nān bukhurad",
+                  "en": "He wants to eat bread.",
+                  "highlight": "بخورد"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-23-1", "type": "fillBlank", "dari": "می‌خواهم ___", "translit": "mēkhāham ___", "en": "I want to go.", "answer": { "dari": "بروم", "translit": "burawam" }, "distractors": [{ "dari": "می‌روم", "translit": "mērawam" }, { "dari": "رفتم", "translit": "raftam" }] },
-            { "id": "ge-23-2", "type": "chooseTranslation", "direction": "toEn", "dari": "او می‌خواهد نان بخورد", "translit": "ō mēkhāhad nān bukhurad", "en": "He wants to eat bread.", "distractorsEn": ["He eats bread.", "He wanted to eat bread."] },
-            { "id": "ge-23-3", "type": "buildSentence", "en": "I want to read a book.", "words": [{ "dari": "می‌خواهم", "translit": "mēkhāham" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "بخوانم", "translit": "bukhānam" }], "translit": "mēkhāham ketāb bukhānam", "extraWords": [{ "dari": "می‌خوانم", "translit": "mēkhānam" }] },
-            { "id": "ge-23-4", "type": "fillBlank", "dari": "ما می‌خواهیم به بازار ___", "translit": "mā mēkhāhēm ba bāzār ___", "en": "We want to go to the bazaar.", "answer": { "dari": "برویم", "translit": "burawēm" }, "distractors": [{ "dari": "می‌رویم", "translit": "mērawēm" }, { "dari": "رفتیم", "translit": "raftēm" }] },
-            { "id": "ge-23-5", "type": "chooseTranslation", "direction": "toDari", "dari": "می‌خواهم دری بخوانم", "translit": "mēkhāham darī bukhānam", "en": "I want to study Dari.", "distractorsDari": [{ "dari": "دری می‌خوانم", "translit": "darī mēkhānam" }, { "dari": "می‌خواهی دری بخوانی", "translit": "mēkhāhi darī bukhāni" }] },
-            { "id": "ge-23-6", "type": "matchPairs", "prompt": "Match want-forms", "pairs": [{ "dari": "بروم", "translit": "burawam", "en": "(that) I go" }, { "dari": "بخورم", "translit": "bukhuram", "en": "(that) I eat" }, { "dari": "بخوانم", "translit": "bukhānam", "en": "(that) I read" }, { "dari": "ببینم", "translit": "bubīnam", "en": "(that) I see" }] }
+            {
+              "id": "ge-23-1",
+              "type": "fillBlank",
+              "target": "می‌خواهم ___",
+              "translit": "mēkhāham ___",
+              "en": "I want to go.",
+              "answer": {
+                "target": "بروم",
+                "translit": "burawam"
+              },
+              "distractors": [
+                {
+                  "target": "می‌روم",
+                  "translit": "mērawam"
+                },
+                {
+                  "target": "رفتم",
+                  "translit": "raftam"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او می‌خواهد نان بخورد",
+              "translit": "ō mēkhāhad nān bukhurad",
+              "en": "He wants to eat bread.",
+              "distractorsEn": [
+                "He eats bread.",
+                "He wanted to eat bread."
+              ]
+            },
+            {
+              "id": "ge-23-3",
+              "type": "buildSentence",
+              "en": "I want to read a book.",
+              "words": [
+                {
+                  "target": "می‌خواهم",
+                  "translit": "mēkhāham"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "بخوانم",
+                  "translit": "bukhānam"
+                }
+              ],
+              "translit": "mēkhāham ketāb bukhānam",
+              "extraWords": [
+                {
+                  "target": "می‌خوانم",
+                  "translit": "mēkhānam"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-4",
+              "type": "fillBlank",
+              "target": "ما می‌خواهیم به بازار ___",
+              "translit": "mā mēkhāhēm ba bāzār ___",
+              "en": "We want to go to the bazaar.",
+              "answer": {
+                "target": "برویم",
+                "translit": "burawēm"
+              },
+              "distractors": [
+                {
+                  "target": "می‌رویم",
+                  "translit": "mērawēm"
+                },
+                {
+                  "target": "رفتیم",
+                  "translit": "raftēm"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "می‌خواهم دری بخوانم",
+              "translit": "mēkhāham darī bukhānam",
+              "en": "I want to study Dari.",
+              "distractorsTarget": [
+                {
+                  "target": "دری می‌خوانم",
+                  "translit": "darī mēkhānam"
+                },
+                {
+                  "target": "می‌خواهی دری بخوانی",
+                  "translit": "mēkhāhi darī bukhāni"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-6",
+              "type": "matchPairs",
+              "prompt": "Match want-forms",
+              "pairs": [
+                {
+                  "target": "بروم",
+                  "translit": "burawam",
+                  "en": "(that) I go"
+                },
+                {
+                  "target": "بخورم",
+                  "translit": "bukhuram",
+                  "en": "(that) I eat"
+                },
+                {
+                  "target": "بخوانم",
+                  "translit": "bukhānam",
+                  "en": "(that) I read"
+                },
+                {
+                  "target": "ببینم",
+                  "translit": "bubīnam",
+                  "en": "(that) I see"
+                }
+              ]
+            }
           ]
         },
         {
@@ -306,18 +1666,151 @@
               "title": "Can + a second verb",
               "body": "'Can' works just like 'want': mētawānam (I can) + the be- form. mētawānam bukhānam - 'I can read'.",
               "examples": [
-                { "dari": "می‌توانم دری بخوانم", "translit": "mētawānam darī bukhānam", "en": "I can read Dari.", "highlight": "می‌توانم" },
-                { "dari": "او می‌تواند بیاید", "translit": "ō mētawānad biāyad", "en": "He can come.", "highlight": "بیاید" }
+                {
+                  "target": "می‌توانم دری بخوانم",
+                  "translit": "mētawānam darī bukhānam",
+                  "en": "I can read Dari.",
+                  "highlight": "می‌توانم"
+                },
+                {
+                  "target": "او می‌تواند بیاید",
+                  "translit": "ō mētawānad biāyad",
+                  "en": "He can come.",
+                  "highlight": "بیاید"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-24-1", "type": "fillBlank", "dari": "می‌توانم دری ___", "translit": "mētawānam darī ___", "en": "I can read Dari.", "answer": { "dari": "بخوانم", "translit": "bukhānam" }, "distractors": [{ "dari": "می‌خوانم", "translit": "mēkhānam" }, { "dari": "خواندم", "translit": "khāndam" }] },
-            { "id": "ge-24-2", "type": "chooseTranslation", "direction": "toEn", "dari": "او می‌تواند بیاید", "translit": "ō mētawānad biāyad", "en": "He can come.", "distractorsEn": ["He comes.", "He wants to come."] },
-            { "id": "ge-24-3", "type": "buildSentence", "en": "We can work.", "words": [{ "dari": "ما", "translit": "mā" }, { "dari": "می‌توانیم", "translit": "mētawānēm" }, { "dari": "کار", "translit": "kār" }, { "dari": "کنیم", "translit": "kunēm" }], "translit": "mā mētawānēm kār kunēm", "extraWords": [{ "dari": "می‌کنیم", "translit": "mēkunēm" }] },
-            { "id": "ge-24-4", "type": "fillBlank", "dari": "تو ___ نان بخوری", "translit": "tu ___ nān bukhuri", "en": "You can eat bread.", "answer": { "dari": "می‌توانی", "translit": "mētawāni" }, "distractors": [{ "dari": "می‌خواهی", "translit": "mēkhāhi" }, { "dari": "می‌خوری", "translit": "mēkhuri" }] },
-            { "id": "ge-24-5", "type": "chooseTranslation", "direction": "toDari", "dari": "می‌توانم بروم", "translit": "mētawānam burawam", "en": "I can go.", "distractorsDari": [{ "dari": "می‌خواهم بروم", "translit": "mēkhāham burawam" }, { "dari": "می‌روم", "translit": "mērawam" }] },
-            { "id": "ge-24-6", "type": "matchPairs", "prompt": "Match can-phrases", "pairs": [{ "dari": "می‌توانم", "translit": "mētawānam", "en": "I can" }, { "dari": "می‌توانی", "translit": "mētawāni", "en": "you can" }, { "dari": "می‌تواند", "translit": "mētawānad", "en": "he can" }, { "dari": "می‌توانیم", "translit": "mētawānēm", "en": "we can" }] }
+            {
+              "id": "ge-24-1",
+              "type": "fillBlank",
+              "target": "می‌توانم دری ___",
+              "translit": "mētawānam darī ___",
+              "en": "I can read Dari.",
+              "answer": {
+                "target": "بخوانم",
+                "translit": "bukhānam"
+              },
+              "distractors": [
+                {
+                  "target": "می‌خوانم",
+                  "translit": "mēkhānam"
+                },
+                {
+                  "target": "خواندم",
+                  "translit": "khāndam"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او می‌تواند بیاید",
+              "translit": "ō mētawānad biāyad",
+              "en": "He can come.",
+              "distractorsEn": [
+                "He comes.",
+                "He wants to come."
+              ]
+            },
+            {
+              "id": "ge-24-3",
+              "type": "buildSentence",
+              "en": "We can work.",
+              "words": [
+                {
+                  "target": "ما",
+                  "translit": "mā"
+                },
+                {
+                  "target": "می‌توانیم",
+                  "translit": "mētawānēm"
+                },
+                {
+                  "target": "کار",
+                  "translit": "kār"
+                },
+                {
+                  "target": "کنیم",
+                  "translit": "kunēm"
+                }
+              ],
+              "translit": "mā mētawānēm kār kunēm",
+              "extraWords": [
+                {
+                  "target": "می‌کنیم",
+                  "translit": "mēkunēm"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-4",
+              "type": "fillBlank",
+              "target": "تو ___ نان بخوری",
+              "translit": "tu ___ nān bukhuri",
+              "en": "You can eat bread.",
+              "answer": {
+                "target": "می‌توانی",
+                "translit": "mētawāni"
+              },
+              "distractors": [
+                {
+                  "target": "می‌خواهی",
+                  "translit": "mēkhāhi"
+                },
+                {
+                  "target": "می‌خوری",
+                  "translit": "mēkhuri"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "می‌توانم بروم",
+              "translit": "mētawānam burawam",
+              "en": "I can go.",
+              "distractorsTarget": [
+                {
+                  "target": "می‌خواهم بروم",
+                  "translit": "mēkhāham burawam"
+                },
+                {
+                  "target": "می‌روم",
+                  "translit": "mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-6",
+              "type": "matchPairs",
+              "prompt": "Match can-phrases",
+              "pairs": [
+                {
+                  "target": "می‌توانم",
+                  "translit": "mētawānam",
+                  "en": "I can"
+                },
+                {
+                  "target": "می‌توانی",
+                  "translit": "mētawāni",
+                  "en": "you can"
+                },
+                {
+                  "target": "می‌تواند",
+                  "translit": "mētawānad",
+                  "en": "he can"
+                },
+                {
+                  "target": "می‌توانیم",
+                  "translit": "mētawānēm",
+                  "en": "we can"
+                }
+              ]
+            }
           ]
         },
         {
@@ -332,18 +1825,159 @@
               "title": "bāyad never changes",
               "body": "bāyad means 'must'. Unlike other verbs it stays the same for everyone - only the second verb (the be- form) changes for person.",
               "examples": [
-                { "dari": "باید بروم", "translit": "bāyad burawam", "en": "I must go.", "highlight": "باید" },
-                { "dari": "تو باید کار کنی", "translit": "tu bāyad kār kuni", "en": "You must work.", "highlight": "کنی" }
+                {
+                  "target": "باید بروم",
+                  "translit": "bāyad burawam",
+                  "en": "I must go.",
+                  "highlight": "باید"
+                },
+                {
+                  "target": "تو باید کار کنی",
+                  "translit": "tu bāyad kār kuni",
+                  "en": "You must work.",
+                  "highlight": "کنی"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-25-1", "type": "fillBlank", "dari": "___ بروم", "translit": "___ burawam", "en": "I must go.", "answer": { "dari": "باید", "translit": "bāyad" }, "distractors": [{ "dari": "شاید", "translit": "shāyad" }, { "dari": "می‌خواهم", "translit": "mēkhāham" }] },
-            { "id": "ge-25-2", "type": "chooseTranslation", "direction": "toEn", "dari": "تو باید کار کنی", "translit": "tu bāyad kār kuni", "en": "You must work.", "distractorsEn": ["You can work.", "You want to work."] },
-            { "id": "ge-25-3", "type": "buildSentence", "en": "We must read the book.", "words": [{ "dari": "باید", "translit": "bāyad" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "را", "translit": "rā" }, { "dari": "بخوانیم", "translit": "bukhānēm" }], "translit": "bāyad ketāb rā bukhānēm", "extraWords": [{ "dari": "می‌خوانیم", "translit": "mēkhānēm" }], "altOrders": [["کتاب", "را", "باید", "بخوانیم"]] },
-            { "id": "ge-25-4", "type": "fillBlank", "dari": "او باید به خانه ___", "translit": "ō bāyad ba khāna ___", "en": "He must go home.", "answer": { "dari": "برود", "translit": "burawad" }, "distractors": [{ "dari": "می‌رود", "translit": "mērawad" }, { "dari": "رفت", "translit": "raft" }] },
-            { "id": "ge-25-5", "type": "chooseTranslation", "direction": "toDari", "dari": "باید نان بخورم", "translit": "bāyad nān bukhuram", "en": "I must eat bread.", "distractorsDari": [{ "dari": "می‌خواهم نان بخورم", "translit": "mēkhāham nān bukhuram" }, { "dari": "نان می‌خورم", "translit": "nān mēkhuram" }] },
-            { "id": "ge-25-6", "type": "matchPairs", "prompt": "Match the modal + verb", "pairs": [{ "dari": "باید بروم", "translit": "bāyad burawam", "en": "I must go" }, { "dari": "می‌توانم بروم", "translit": "mētawānam burawam", "en": "I can go" }, { "dari": "می‌خواهم بروم", "translit": "mēkhāham burawam", "en": "I want to go" }, { "dari": "شاید بروم", "translit": "shāyad burawam", "en": "maybe I'll go" }] }
+            {
+              "id": "ge-25-1",
+              "type": "fillBlank",
+              "target": "___ بروم",
+              "translit": "___ burawam",
+              "en": "I must go.",
+              "answer": {
+                "target": "باید",
+                "translit": "bāyad"
+              },
+              "distractors": [
+                {
+                  "target": "شاید",
+                  "translit": "shāyad"
+                },
+                {
+                  "target": "می‌خواهم",
+                  "translit": "mēkhāham"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "تو باید کار کنی",
+              "translit": "tu bāyad kār kuni",
+              "en": "You must work.",
+              "distractorsEn": [
+                "You can work.",
+                "You want to work."
+              ]
+            },
+            {
+              "id": "ge-25-3",
+              "type": "buildSentence",
+              "en": "We must read the book.",
+              "words": [
+                {
+                  "target": "باید",
+                  "translit": "bāyad"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "را",
+                  "translit": "rā"
+                },
+                {
+                  "target": "بخوانیم",
+                  "translit": "bukhānēm"
+                }
+              ],
+              "translit": "bāyad ketāb rā bukhānēm",
+              "extraWords": [
+                {
+                  "target": "می‌خوانیم",
+                  "translit": "mēkhānēm"
+                }
+              ],
+              "altOrders": [
+                [
+                  "کتاب",
+                  "را",
+                  "باید",
+                  "بخوانیم"
+                ]
+              ]
+            },
+            {
+              "id": "ge-25-4",
+              "type": "fillBlank",
+              "target": "او باید به خانه ___",
+              "translit": "ō bāyad ba khāna ___",
+              "en": "He must go home.",
+              "answer": {
+                "target": "برود",
+                "translit": "burawad"
+              },
+              "distractors": [
+                {
+                  "target": "می‌رود",
+                  "translit": "mērawad"
+                },
+                {
+                  "target": "رفت",
+                  "translit": "raft"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "باید نان بخورم",
+              "translit": "bāyad nān bukhuram",
+              "en": "I must eat bread.",
+              "distractorsTarget": [
+                {
+                  "target": "می‌خواهم نان بخورم",
+                  "translit": "mēkhāham nān bukhuram"
+                },
+                {
+                  "target": "نان می‌خورم",
+                  "translit": "nān mēkhuram"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-6",
+              "type": "matchPairs",
+              "prompt": "Match the modal + verb",
+              "pairs": [
+                {
+                  "target": "باید بروم",
+                  "translit": "bāyad burawam",
+                  "en": "I must go"
+                },
+                {
+                  "target": "می‌توانم بروم",
+                  "translit": "mētawānam burawam",
+                  "en": "I can go"
+                },
+                {
+                  "target": "می‌خواهم بروم",
+                  "translit": "mēkhāham burawam",
+                  "en": "I want to go"
+                },
+                {
+                  "target": "شاید بروم",
+                  "translit": "shāyad burawam",
+                  "en": "maybe I'll go"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -365,18 +1999,147 @@
               "title": "mē- on the past",
               "body": "Put mē- on a past-tense verb to say you 'used to' do it, or 'were' doing it: raftam (I went) → mēraftam (I used to go).",
               "examples": [
-                { "dari": "هر روز به مکتب می‌رفتم", "translit": "har rōz ba maktab mēraftam", "en": "I used to go to school every day.", "highlight": "می‌رفتم" },
-                { "dari": "او همیشه چای می‌خورد", "translit": "ō hamēsha chāy mēkhurd", "en": "He always used to drink tea.", "highlight": "می‌خورد" }
+                {
+                  "target": "هر روز به مکتب می‌رفتم",
+                  "translit": "har rōz ba maktab mēraftam",
+                  "en": "I used to go to school every day.",
+                  "highlight": "می‌رفتم"
+                },
+                {
+                  "target": "او همیشه چای می‌خورد",
+                  "translit": "ō hamēsha chāy mēkhurd",
+                  "en": "He always used to drink tea.",
+                  "highlight": "می‌خورد"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-26-1", "type": "fillBlank", "dari": "هر روز به مکتب ___", "translit": "har rōz ba maktab ___", "en": "I used to go to school every day.", "answer": { "dari": "می‌رفتم", "translit": "mēraftam" }, "distractors": [{ "dari": "رفتم", "translit": "raftam" }, { "dari": "می‌روم", "translit": "mērawam" }] },
-            { "id": "ge-26-2", "type": "chooseTranslation", "direction": "toEn", "dari": "او همیشه نان می‌خورد", "translit": "ō hamēsha nān mēkhurd", "en": "He always used to eat bread.", "distractorsEn": ["He ate bread once.", "He always eats bread."] },
-            { "id": "ge-26-3", "type": "buildSentence", "en": "We used to read books.", "words": [{ "dari": "ما", "translit": "mā" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "می‌خواندیم", "translit": "mēkhāndēm" }], "translit": "mā ketāb mēkhāndēm", "extraWords": [{ "dari": "خواندیم", "translit": "khāndēm" }] },
-            { "id": "ge-26-4", "type": "chooseTranslation", "direction": "toDari", "dari": "من گاهی به بازار می‌رفتم", "translit": "man gāhē ba bāzār mēraftam", "en": "I sometimes used to go to the bazaar.", "distractorsDari": [{ "dari": "من گاهی به بازار رفتم", "translit": "man gāhē ba bāzār raftam" }, { "dari": "من گاهی به بازار می‌روم", "translit": "man gāhē ba bāzār mērawam" }] },
-            { "id": "ge-26-5", "type": "fillBlank", "dari": "تو هر روز کار ___", "translit": "tu har rōz kār ___", "en": "You used to work every day.", "answer": { "dari": "می‌کردی", "translit": "mēkardi" }, "distractors": [{ "dari": "کردی", "translit": "kardi" }, { "dari": "می‌کنی", "translit": "mēkuni" }] },
-            { "id": "ge-26-6", "type": "matchPairs", "prompt": "Match past and past-habitual", "pairs": [{ "dari": "رفتم", "translit": "raftam", "en": "I went" }, { "dari": "می‌رفتم", "translit": "mēraftam", "en": "I used to go" }, { "dari": "خوردم", "translit": "khurdam", "en": "I ate" }, { "dari": "می‌خوردم", "translit": "mēkhurdam", "en": "I used to eat" }] }
+            {
+              "id": "ge-26-1",
+              "type": "fillBlank",
+              "target": "هر روز به مکتب ___",
+              "translit": "har rōz ba maktab ___",
+              "en": "I used to go to school every day.",
+              "answer": {
+                "target": "می‌رفتم",
+                "translit": "mēraftam"
+              },
+              "distractors": [
+                {
+                  "target": "رفتم",
+                  "translit": "raftam"
+                },
+                {
+                  "target": "می‌روم",
+                  "translit": "mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-26-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او همیشه نان می‌خورد",
+              "translit": "ō hamēsha nān mēkhurd",
+              "en": "He always used to eat bread.",
+              "distractorsEn": [
+                "He ate bread once.",
+                "He always eats bread."
+              ]
+            },
+            {
+              "id": "ge-26-3",
+              "type": "buildSentence",
+              "en": "We used to read books.",
+              "words": [
+                {
+                  "target": "ما",
+                  "translit": "mā"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "می‌خواندیم",
+                  "translit": "mēkhāndēm"
+                }
+              ],
+              "translit": "mā ketāb mēkhāndēm",
+              "extraWords": [
+                {
+                  "target": "خواندیم",
+                  "translit": "khāndēm"
+                }
+              ]
+            },
+            {
+              "id": "ge-26-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "من گاهی به بازار می‌رفتم",
+              "translit": "man gāhē ba bāzār mēraftam",
+              "en": "I sometimes used to go to the bazaar.",
+              "distractorsTarget": [
+                {
+                  "target": "من گاهی به بازار رفتم",
+                  "translit": "man gāhē ba bāzār raftam"
+                },
+                {
+                  "target": "من گاهی به بازار می‌روم",
+                  "translit": "man gāhē ba bāzār mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-26-5",
+              "type": "fillBlank",
+              "target": "تو هر روز کار ___",
+              "translit": "tu har rōz kār ___",
+              "en": "You used to work every day.",
+              "answer": {
+                "target": "می‌کردی",
+                "translit": "mēkardi"
+              },
+              "distractors": [
+                {
+                  "target": "کردی",
+                  "translit": "kardi"
+                },
+                {
+                  "target": "می‌کنی",
+                  "translit": "mēkuni"
+                }
+              ]
+            },
+            {
+              "id": "ge-26-6",
+              "type": "matchPairs",
+              "prompt": "Match past and past-habitual",
+              "pairs": [
+                {
+                  "target": "رفتم",
+                  "translit": "raftam",
+                  "en": "I went"
+                },
+                {
+                  "target": "می‌رفتم",
+                  "translit": "mēraftam",
+                  "en": "I used to go"
+                },
+                {
+                  "target": "خوردم",
+                  "translit": "khurdam",
+                  "en": "I ate"
+                },
+                {
+                  "target": "می‌خوردم",
+                  "translit": "mēkhurdam",
+                  "en": "I used to eat"
+                }
+              ]
+            }
           ]
         },
         {
@@ -390,20 +2153,178 @@
               "id": "gs-27-1",
               "title": "Participle + ending",
               "body": "For 'I have done' something, take the participle (rafta, khurda) and add a short ending. For 'he has', it is participle + ast.",
-              "table": [["man", "rafta-am"], ["tu", "rafta-ī"], ["ō", "rafta ast"], ["mā", "rafta-ēm"], ["shumā", "rafta-ēd"], ["ānhā", "rafta-and"]],
+              "table": [
+                [
+                  "man",
+                  "rafta-am"
+                ],
+                [
+                  "tu",
+                  "rafta-ī"
+                ],
+                [
+                  "ō",
+                  "rafta ast"
+                ],
+                [
+                  "mā",
+                  "rafta-ēm"
+                ],
+                [
+                  "shumā",
+                  "rafta-ēd"
+                ],
+                [
+                  "ānhā",
+                  "rafta-and"
+                ]
+              ],
               "examples": [
-                { "dari": "من به کابل رفته‌ام", "translit": "man ba kābul rafta-am", "en": "I have gone to Kabul.", "highlight": "رفته‌ام" },
-                { "dari": "او نان خورده است", "translit": "ō nān khurda ast", "en": "He has eaten bread.", "highlight": "خورده است" }
+                {
+                  "target": "من به کابل رفته‌ام",
+                  "translit": "man ba kābul rafta-am",
+                  "en": "I have gone to Kabul.",
+                  "highlight": "رفته‌ام"
+                },
+                {
+                  "target": "او نان خورده است",
+                  "translit": "ō nān khurda ast",
+                  "en": "He has eaten bread.",
+                  "highlight": "خورده است"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-27-1", "type": "fillBlank", "dari": "من به کابل ___", "translit": "man ba kābul ___", "en": "I have gone to Kabul.", "answer": { "dari": "رفته‌ام", "translit": "rafta-am" }, "distractors": [{ "dari": "رفتم", "translit": "raftam" }, { "dari": "می‌روم", "translit": "mērawam" }] },
-            { "id": "ge-27-2", "type": "chooseTranslation", "direction": "toEn", "dari": "او نان خورده است", "translit": "ō nān khurda ast", "en": "He has eaten bread.", "distractorsEn": ["He eats bread.", "He will eat bread."] },
-            { "id": "ge-27-3", "type": "buildSentence", "en": "We have read the book.", "words": [{ "dari": "ما", "translit": "mā" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "را", "translit": "rā" }, { "dari": "خوانده‌ایم", "translit": "khānda-ēm" }], "translit": "mā ketāb rā khānda-ēm", "extraWords": [{ "dari": "خواندیم", "translit": "khāndēm" }] },
-            { "id": "ge-27-4", "type": "fillBlank", "dari": "تو او را ___", "translit": "tu ō rā ___", "en": "You have seen him.", "answer": { "dari": "دیده‌ای", "translit": "dīda-ī" }, "distractors": [{ "dari": "دیدی", "translit": "dīdi" }, { "dari": "می‌بینی", "translit": "mēbīni" }] },
-            { "id": "ge-27-5", "type": "chooseTranslation", "direction": "toDari", "dari": "من دری خوانده‌ام", "translit": "man darī khānda-am", "en": "I have studied Dari.", "distractorsDari": [{ "dari": "من دری خواندم", "translit": "man darī khāndam" }, { "dari": "من دری می‌خوانم", "translit": "man darī mēkhānam" }] },
-            { "id": "ge-27-6", "type": "matchPairs", "prompt": "Match past and present perfect", "pairs": [{ "dari": "رفتم", "translit": "raftam", "en": "I went" }, { "dari": "رفته‌ام", "translit": "rafta-am", "en": "I have gone" }, { "dari": "خوردم", "translit": "khurdam", "en": "I ate" }, { "dari": "خورده‌ام", "translit": "khurda-am", "en": "I have eaten" }] }
+            {
+              "id": "ge-27-1",
+              "type": "fillBlank",
+              "target": "من به کابل ___",
+              "translit": "man ba kābul ___",
+              "en": "I have gone to Kabul.",
+              "answer": {
+                "target": "رفته‌ام",
+                "translit": "rafta-am"
+              },
+              "distractors": [
+                {
+                  "target": "رفتم",
+                  "translit": "raftam"
+                },
+                {
+                  "target": "می‌روم",
+                  "translit": "mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-27-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او نان خورده است",
+              "translit": "ō nān khurda ast",
+              "en": "He has eaten bread.",
+              "distractorsEn": [
+                "He eats bread.",
+                "He will eat bread."
+              ]
+            },
+            {
+              "id": "ge-27-3",
+              "type": "buildSentence",
+              "en": "We have read the book.",
+              "words": [
+                {
+                  "target": "ما",
+                  "translit": "mā"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "را",
+                  "translit": "rā"
+                },
+                {
+                  "target": "خوانده‌ایم",
+                  "translit": "khānda-ēm"
+                }
+              ],
+              "translit": "mā ketāb rā khānda-ēm",
+              "extraWords": [
+                {
+                  "target": "خواندیم",
+                  "translit": "khāndēm"
+                }
+              ]
+            },
+            {
+              "id": "ge-27-4",
+              "type": "fillBlank",
+              "target": "تو او را ___",
+              "translit": "tu ō rā ___",
+              "en": "You have seen him.",
+              "answer": {
+                "target": "دیده‌ای",
+                "translit": "dīda-ī"
+              },
+              "distractors": [
+                {
+                  "target": "دیدی",
+                  "translit": "dīdi"
+                },
+                {
+                  "target": "می‌بینی",
+                  "translit": "mēbīni"
+                }
+              ]
+            },
+            {
+              "id": "ge-27-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "من دری خوانده‌ام",
+              "translit": "man darī khānda-am",
+              "en": "I have studied Dari.",
+              "distractorsTarget": [
+                {
+                  "target": "من دری خواندم",
+                  "translit": "man darī khāndam"
+                },
+                {
+                  "target": "من دری می‌خوانم",
+                  "translit": "man darī mēkhānam"
+                }
+              ]
+            },
+            {
+              "id": "ge-27-6",
+              "type": "matchPairs",
+              "prompt": "Match past and present perfect",
+              "pairs": [
+                {
+                  "target": "رفتم",
+                  "translit": "raftam",
+                  "en": "I went"
+                },
+                {
+                  "target": "رفته‌ام",
+                  "translit": "rafta-am",
+                  "en": "I have gone"
+                },
+                {
+                  "target": "خوردم",
+                  "translit": "khurdam",
+                  "en": "I ate"
+                },
+                {
+                  "target": "خورده‌ام",
+                  "translit": "khurda-am",
+                  "en": "I have eaten"
+                }
+              ]
+            }
           ]
         },
         {
@@ -418,18 +2339,151 @@
               "title": "Noun + kardan",
               "body": "Many Dari verbs are a noun plus kardan. Only kardan changes; the noun stays put. kār kardan (work), fikr kardan (think), kumak kardan (help).",
               "examples": [
-                { "dari": "من در کابل زندگی می‌کنم", "translit": "man dar kābul zendagī mēkunam", "en": "I live in Kabul.", "highlight": "زندگی می‌کنم" },
-                { "dari": "او به من کمک کرد", "translit": "ō ba man kumak kard", "en": "He helped me.", "highlight": "کمک کرد" }
+                {
+                  "target": "من در کابل زندگی می‌کنم",
+                  "translit": "man dar kābul zendagī mēkunam",
+                  "en": "I live in Kabul.",
+                  "highlight": "زندگی می‌کنم"
+                },
+                {
+                  "target": "او به من کمک کرد",
+                  "translit": "ō ba man kumak kard",
+                  "en": "He helped me.",
+                  "highlight": "کمک کرد"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-28-1", "type": "fillBlank", "dari": "من در کابل زندگی ___", "translit": "man dar kābul zendagī ___", "en": "I live in Kabul.", "answer": { "dari": "می‌کنم", "translit": "mēkunam" }, "distractors": [{ "dari": "می‌کنی", "translit": "mēkuni" }, { "dari": "کردم", "translit": "kardam" }] },
-            { "id": "ge-28-2", "type": "chooseTranslation", "direction": "toEn", "dari": "او به من کمک کرد", "translit": "ō ba man kumak kard", "en": "He helped me.", "distractorsEn": ["He helps me.", "I helped him."] },
-            { "id": "ge-28-3", "type": "buildSentence", "en": "I think a lot.", "words": [{ "dari": "من", "translit": "man" }, { "dari": "بسیار", "translit": "besyār" }, { "dari": "فکر", "translit": "fikr" }, { "dari": "می‌کنم", "translit": "mēkunam" }], "translit": "man besyār fikr mēkunam", "extraWords": [{ "dari": "کردم", "translit": "kardam" }] },
-            { "id": "ge-28-4", "type": "matchPairs", "prompt": "Match the compound verbs", "pairs": [{ "dari": "کار کردن", "translit": "kār kardan", "en": "to work" }, { "dari": "زندگی کردن", "translit": "zendagī kardan", "en": "to live" }, { "dari": "فکر کردن", "translit": "fikr kardan", "en": "to think" }, { "dari": "کمک کردن", "translit": "kumak kardan", "en": "to help" }] },
-            { "id": "ge-28-5", "type": "chooseTranslation", "direction": "toDari", "dari": "ما با هم کار می‌کنیم", "translit": "mā bā ham kār mēkunēm", "en": "We work together.", "distractorsDari": [{ "dari": "ما با هم کار کردیم", "translit": "mā bā ham kār kardēm" }, { "dari": "آنها با هم کار می‌کنند", "translit": "ānhā bā ham kār mēkunand" }] },
-            { "id": "ge-28-6", "type": "fillBlank", "dari": "او به ما ___ کرد", "translit": "ō ba mā ___ kard", "en": "He helped us.", "answer": { "dari": "کمک", "translit": "kumak" }, "distractors": [{ "dari": "فکر", "translit": "fikr" }, { "dari": "کار", "translit": "kār" }] }
+            {
+              "id": "ge-28-1",
+              "type": "fillBlank",
+              "target": "من در کابل زندگی ___",
+              "translit": "man dar kābul zendagī ___",
+              "en": "I live in Kabul.",
+              "answer": {
+                "target": "می‌کنم",
+                "translit": "mēkunam"
+              },
+              "distractors": [
+                {
+                  "target": "می‌کنی",
+                  "translit": "mēkuni"
+                },
+                {
+                  "target": "کردم",
+                  "translit": "kardam"
+                }
+              ]
+            },
+            {
+              "id": "ge-28-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او به من کمک کرد",
+              "translit": "ō ba man kumak kard",
+              "en": "He helped me.",
+              "distractorsEn": [
+                "He helps me.",
+                "I helped him."
+              ]
+            },
+            {
+              "id": "ge-28-3",
+              "type": "buildSentence",
+              "en": "I think a lot.",
+              "words": [
+                {
+                  "target": "من",
+                  "translit": "man"
+                },
+                {
+                  "target": "بسیار",
+                  "translit": "besyār"
+                },
+                {
+                  "target": "فکر",
+                  "translit": "fikr"
+                },
+                {
+                  "target": "می‌کنم",
+                  "translit": "mēkunam"
+                }
+              ],
+              "translit": "man besyār fikr mēkunam",
+              "extraWords": [
+                {
+                  "target": "کردم",
+                  "translit": "kardam"
+                }
+              ]
+            },
+            {
+              "id": "ge-28-4",
+              "type": "matchPairs",
+              "prompt": "Match the compound verbs",
+              "pairs": [
+                {
+                  "target": "کار کردن",
+                  "translit": "kār kardan",
+                  "en": "to work"
+                },
+                {
+                  "target": "زندگی کردن",
+                  "translit": "zendagī kardan",
+                  "en": "to live"
+                },
+                {
+                  "target": "فکر کردن",
+                  "translit": "fikr kardan",
+                  "en": "to think"
+                },
+                {
+                  "target": "کمک کردن",
+                  "translit": "kumak kardan",
+                  "en": "to help"
+                }
+              ]
+            },
+            {
+              "id": "ge-28-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "ما با هم کار می‌کنیم",
+              "translit": "mā bā ham kār mēkunēm",
+              "en": "We work together.",
+              "distractorsTarget": [
+                {
+                  "target": "ما با هم کار کردیم",
+                  "translit": "mā bā ham kār kardēm"
+                },
+                {
+                  "target": "آنها با هم کار می‌کنند",
+                  "translit": "ānhā bā ham kār mēkunand"
+                }
+              ]
+            },
+            {
+              "id": "ge-28-6",
+              "type": "fillBlank",
+              "target": "او به ما ___ کرد",
+              "translit": "ō ba mā ___ kard",
+              "en": "He helped us.",
+              "answer": {
+                "target": "کمک",
+                "translit": "kumak"
+              },
+              "distractors": [
+                {
+                  "target": "فکر",
+                  "translit": "fikr"
+                },
+                {
+                  "target": "کار",
+                  "translit": "kār"
+                }
+              ]
+            }
           ]
         },
         {
@@ -444,18 +2498,159 @@
               "title": "ke links two ideas",
               "body": "Use ke (that) after verbs like 'know', 'say', 'think' to attach a whole sentence: guftam ke mērawam - 'I said that I am going'.",
               "examples": [
-                { "dari": "می‌دانم که او آمد", "translit": "mēdānam ke ō āmad", "en": "I know that he came.", "highlight": "که" },
-                { "dari": "گفتم که به بازار می‌روم", "translit": "guftam ke ba bāzār mērawam", "en": "I said that I am going to the bazaar.", "highlight": "که" }
+                {
+                  "target": "می‌دانم که او آمد",
+                  "translit": "mēdānam ke ō āmad",
+                  "en": "I know that he came.",
+                  "highlight": "که"
+                },
+                {
+                  "target": "گفتم که به بازار می‌روم",
+                  "translit": "guftam ke ba bāzār mērawam",
+                  "en": "I said that I am going to the bazaar.",
+                  "highlight": "که"
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-29-1", "type": "fillBlank", "dari": "می‌دانم ___ او آمد", "translit": "mēdānam ___ ō āmad", "en": "I know that he came.", "answer": { "dari": "که", "translit": "ke" }, "distractors": [{ "dari": "و", "translit": "wa" }, { "dari": "اما", "translit": "amā" }] },
-            { "id": "ge-29-2", "type": "chooseTranslation", "direction": "toEn", "dari": "گفتم که به بازار می‌روم", "translit": "guftam ke ba bāzār mērawam", "en": "I said that I am going to the bazaar.", "distractorsEn": ["I go to the bazaar.", "He said that he is going to the bazaar."] },
-            { "id": "ge-29-3", "type": "buildSentence", "en": "I think that he is a teacher.", "words": [{ "dari": "فکر", "translit": "fikr" }, { "dari": "می‌کنم", "translit": "mēkunam" }, { "dari": "که", "translit": "ke" }, { "dari": "او", "translit": "ō" }, { "dari": "معلم", "translit": "mu'allem" }, { "dari": "است", "translit": "ast" }], "translit": "fikr mēkunam ke ō mu'allem ast", "extraWords": [{ "dari": "و", "translit": "wa" }] },
-            { "id": "ge-29-4", "type": "chooseTranslation", "direction": "toDari", "dari": "او گفت که نان خورد", "translit": "ō guft ke nān khurd", "en": "He said that he ate bread.", "distractorsDari": [{ "dari": "او گفت که نان می‌خورد", "translit": "ō guft ke nān mēkhurad" }, { "dari": "من گفتم که نان خوردم", "translit": "man guftam ke nān khurdam" }] },
-            { "id": "ge-29-5", "type": "fillBlank", "dari": "او می‌داند ___ من اینجا هستم", "translit": "ō mēdānad ___ man īnjā hastam", "en": "He knows that I am here.", "answer": { "dari": "که", "translit": "ke" }, "distractors": [{ "dari": "را", "translit": "rā" }, { "dari": "با", "translit": "bā" }] },
-            { "id": "ge-29-6", "type": "matchPairs", "prompt": "Match the joining words", "pairs": [{ "dari": "که", "translit": "ke", "en": "that" }, { "dari": "و", "translit": "wa", "en": "and" }, { "dari": "اما", "translit": "amā", "en": "but" }, { "dari": "چون", "translit": "chun", "en": "because" }] }
+            {
+              "id": "ge-29-1",
+              "type": "fillBlank",
+              "target": "می‌دانم ___ او آمد",
+              "translit": "mēdānam ___ ō āmad",
+              "en": "I know that he came.",
+              "answer": {
+                "target": "که",
+                "translit": "ke"
+              },
+              "distractors": [
+                {
+                  "target": "و",
+                  "translit": "wa"
+                },
+                {
+                  "target": "اما",
+                  "translit": "amā"
+                }
+              ]
+            },
+            {
+              "id": "ge-29-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "گفتم که به بازار می‌روم",
+              "translit": "guftam ke ba bāzār mērawam",
+              "en": "I said that I am going to the bazaar.",
+              "distractorsEn": [
+                "I go to the bazaar.",
+                "He said that he is going to the bazaar."
+              ]
+            },
+            {
+              "id": "ge-29-3",
+              "type": "buildSentence",
+              "en": "I think that he is a teacher.",
+              "words": [
+                {
+                  "target": "فکر",
+                  "translit": "fikr"
+                },
+                {
+                  "target": "می‌کنم",
+                  "translit": "mēkunam"
+                },
+                {
+                  "target": "که",
+                  "translit": "ke"
+                },
+                {
+                  "target": "او",
+                  "translit": "ō"
+                },
+                {
+                  "target": "معلم",
+                  "translit": "mu'allem"
+                },
+                {
+                  "target": "است",
+                  "translit": "ast"
+                }
+              ],
+              "translit": "fikr mēkunam ke ō mu'allem ast",
+              "extraWords": [
+                {
+                  "target": "و",
+                  "translit": "wa"
+                }
+              ]
+            },
+            {
+              "id": "ge-29-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "او گفت که نان خورد",
+              "translit": "ō guft ke nān khurd",
+              "en": "He said that he ate bread.",
+              "distractorsTarget": [
+                {
+                  "target": "او گفت که نان می‌خورد",
+                  "translit": "ō guft ke nān mēkhurad"
+                },
+                {
+                  "target": "من گفتم که نان خوردم",
+                  "translit": "man guftam ke nān khurdam"
+                }
+              ]
+            },
+            {
+              "id": "ge-29-5",
+              "type": "fillBlank",
+              "target": "او می‌داند ___ من اینجا هستم",
+              "translit": "ō mēdānad ___ man īnjā hastam",
+              "en": "He knows that I am here.",
+              "answer": {
+                "target": "که",
+                "translit": "ke"
+              },
+              "distractors": [
+                {
+                  "target": "را",
+                  "translit": "rā"
+                },
+                {
+                  "target": "با",
+                  "translit": "bā"
+                }
+              ]
+            },
+            {
+              "id": "ge-29-6",
+              "type": "matchPairs",
+              "prompt": "Match the joining words",
+              "pairs": [
+                {
+                  "target": "که",
+                  "translit": "ke",
+                  "en": "that"
+                },
+                {
+                  "target": "و",
+                  "translit": "wa",
+                  "en": "and"
+                },
+                {
+                  "target": "اما",
+                  "translit": "amā",
+                  "en": "but"
+                },
+                {
+                  "target": "چون",
+                  "translit": "chun",
+                  "en": "because"
+                }
+              ]
+            }
           ]
         },
         {
@@ -470,19 +2665,177 @@
               "title": "You've come far",
               "body": "You can now compare things, give commands, say what you want and must do, talk about habits and experiences, and join ideas with ke. These exercises mix it all.",
               "examples": [
-                { "dari": "می‌خواهم به بهترین شهر بروم", "translit": "mēkhāham ba bihtarīn shahr burawam", "en": "I want to go to the best city." }
+                {
+                  "target": "می‌خواهم به بهترین شهر بروم",
+                  "translit": "mēkhāham ba bihtarīn shahr burawam",
+                  "en": "I want to go to the best city."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-30-1", "type": "fillBlank", "dari": "خانه او از خانه من ___ است", "translit": "khāna-ye ō az khāna-ye man ___ ast", "en": "His house is bigger than my house.", "answer": { "dari": "کلان‌تر", "translit": "kalāntar" }, "distractors": [{ "dari": "کلان", "translit": "kalān" }, { "dari": "کلان‌ترین", "translit": "kalāntarīn" }] },
-            { "id": "ge-30-2", "type": "chooseTranslation", "direction": "toEn", "dari": "باید به مکتب بروم", "translit": "bāyad ba maktab burawam", "en": "I must go to school.", "distractorsEn": ["I can go to school.", "I went to school."] },
-            { "id": "ge-30-3", "type": "fillBlank", "dari": "من به کابل ___", "translit": "man ba kābul ___", "en": "I have gone to Kabul.", "answer": { "dari": "رفته‌ام", "translit": "rafta-am" }, "distractors": [{ "dari": "رفتم", "translit": "raftam" }, { "dari": "می‌روم", "translit": "mērawam" }] },
-            { "id": "ge-30-4", "type": "buildSentence", "en": "Please read the book.", "words": [{ "dari": "لطفاً", "translit": "lutfan" }, { "dari": "کتاب", "translit": "ketāb" }, { "dari": "را", "translit": "rā" }, { "dari": "بخوانید", "translit": "bukhānēd" }], "translit": "lutfan ketāb rā bukhānēd", "extraWords": [{ "dari": "می‌خوانید", "translit": "mēkhānēd" }] },
-            { "id": "ge-30-5", "type": "chooseTranslation", "direction": "toDari", "dari": "می‌دانم که او بهترین دوست من است", "translit": "mēdānam ke ō bihtarīn dōst-e man ast", "en": "I know that he is my best friend.", "distractorsDari": [{ "dari": "می‌دانم که او دوست من است", "translit": "mēdānam ke ō dōst-e man ast" }, { "dari": "فکر می‌کنم که او بهترین دوست من است", "translit": "fikr mēkunam ke ō bihtarīn dōst-e man ast" }] },
-            { "id": "ge-30-6", "type": "fillBlank", "dari": "می‌توانم دری ___", "translit": "mētawānam darī ___", "en": "I can read Dari.", "answer": { "dari": "بخوانم", "translit": "bukhānam" }, "distractors": [{ "dari": "می‌خوانم", "translit": "mēkhānam" }, { "dari": "خواندم", "translit": "khāndam" }] },
-            { "id": "ge-30-7", "type": "matchPairs", "prompt": "Match the meanings", "pairs": [{ "dari": "باید بروم", "translit": "bāyad burawam", "en": "I must go" }, { "dari": "می‌خواهم بروم", "translit": "mēkhāham burawam", "en": "I want to go" }, { "dari": "رفته‌ام", "translit": "rafta-am", "en": "I have gone" }, { "dari": "می‌رفتم", "translit": "mēraftam", "en": "I used to go" }] },
-            { "id": "ge-30-8", "type": "chooseTranslation", "direction": "toEn", "dari": "او هرگز دروغ نمی‌گوید", "translit": "ō hargez durōgh namēgōyad", "en": "He never tells a lie.", "distractorsEn": ["He always tells the truth.", "He sometimes lies."] }
+            {
+              "id": "ge-30-1",
+              "type": "fillBlank",
+              "target": "خانه او از خانه من ___ است",
+              "translit": "khāna-ye ō az khāna-ye man ___ ast",
+              "en": "His house is bigger than my house.",
+              "answer": {
+                "target": "کلان‌تر",
+                "translit": "kalāntar"
+              },
+              "distractors": [
+                {
+                  "target": "کلان",
+                  "translit": "kalān"
+                },
+                {
+                  "target": "کلان‌ترین",
+                  "translit": "kalāntarīn"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "باید به مکتب بروم",
+              "translit": "bāyad ba maktab burawam",
+              "en": "I must go to school.",
+              "distractorsEn": [
+                "I can go to school.",
+                "I went to school."
+              ]
+            },
+            {
+              "id": "ge-30-3",
+              "type": "fillBlank",
+              "target": "من به کابل ___",
+              "translit": "man ba kābul ___",
+              "en": "I have gone to Kabul.",
+              "answer": {
+                "target": "رفته‌ام",
+                "translit": "rafta-am"
+              },
+              "distractors": [
+                {
+                  "target": "رفتم",
+                  "translit": "raftam"
+                },
+                {
+                  "target": "می‌روم",
+                  "translit": "mērawam"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-4",
+              "type": "buildSentence",
+              "en": "Please read the book.",
+              "words": [
+                {
+                  "target": "لطفاً",
+                  "translit": "lutfan"
+                },
+                {
+                  "target": "کتاب",
+                  "translit": "ketāb"
+                },
+                {
+                  "target": "را",
+                  "translit": "rā"
+                },
+                {
+                  "target": "بخوانید",
+                  "translit": "bukhānēd"
+                }
+              ],
+              "translit": "lutfan ketāb rā bukhānēd",
+              "extraWords": [
+                {
+                  "target": "می‌خوانید",
+                  "translit": "mēkhānēd"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "می‌دانم که او بهترین دوست من است",
+              "translit": "mēdānam ke ō bihtarīn dōst-e man ast",
+              "en": "I know that he is my best friend.",
+              "distractorsTarget": [
+                {
+                  "target": "می‌دانم که او دوست من است",
+                  "translit": "mēdānam ke ō dōst-e man ast"
+                },
+                {
+                  "target": "فکر می‌کنم که او بهترین دوست من است",
+                  "translit": "fikr mēkunam ke ō bihtarīn dōst-e man ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-6",
+              "type": "fillBlank",
+              "target": "می‌توانم دری ___",
+              "translit": "mētawānam darī ___",
+              "en": "I can read Dari.",
+              "answer": {
+                "target": "بخوانم",
+                "translit": "bukhānam"
+              },
+              "distractors": [
+                {
+                  "target": "می‌خوانم",
+                  "translit": "mēkhānam"
+                },
+                {
+                  "target": "خواندم",
+                  "translit": "khāndam"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-7",
+              "type": "matchPairs",
+              "prompt": "Match the meanings",
+              "pairs": [
+                {
+                  "target": "باید بروم",
+                  "translit": "bāyad burawam",
+                  "en": "I must go"
+                },
+                {
+                  "target": "می‌خواهم بروم",
+                  "translit": "mēkhāham burawam",
+                  "en": "I want to go"
+                },
+                {
+                  "target": "رفته‌ام",
+                  "translit": "rafta-am",
+                  "en": "I have gone"
+                },
+                {
+                  "target": "می‌رفتم",
+                  "translit": "mēraftam",
+                  "en": "I used to go"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "او هرگز دروغ نمی‌گوید",
+              "translit": "ō hargez durōgh namēgōyad",
+              "en": "He never tells a lie.",
+              "distractorsEn": [
+                "He always tells the truth.",
+                "He sometimes lies."
+              ]
+            }
           ]
         }
       ]
