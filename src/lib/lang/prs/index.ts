@@ -38,6 +38,14 @@ export const prs: LanguageProfile = {
     buildIndex: buildLexiconIndex,
   },
 
+  brand: {
+    appName: "Darya",
+    tagline: "Learn Dari",
+    description:
+      "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
+    mascotName: "Poncha",
+  },
+
   prompts: {
     teacher: TEACHER,
     orthography: ORTHOGRAPHY,

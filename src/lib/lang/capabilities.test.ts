@@ -28,6 +28,11 @@ describe("language profiles", () => {
       }
       expect(p.prompts.teacher.length, `${code}: prompts.teacher`).toBeGreaterThan(0);
       expect(p.prompts.scenarios.length, `${code}: prompts.scenarios`).toBeGreaterThan(0);
+      // Brand is what a deployment ships under; a missing field would render as
+      // "undefined" in the title bar and the install manifest.
+      for (const f of ["appName", "tagline", "description", "mascotName"] as const) {
+        expect(p.brand[f]?.length, `${code}: brand.${f}`).toBeGreaterThan(0);
+      }
     }
   });
 
@@ -38,6 +43,21 @@ describe("language profiles", () => {
       fontPicker: true,
     });
     expect(PROFILES.prs.dir).toBe("rtl");
+  });
+
+  it("Catalan turns off exactly the script-specific features", () => {
+    expect(PROFILES.ca.capabilities).toEqual({
+      transliteration: false,
+      scriptCourse: false,
+      fontPicker: false,
+    });
+    expect(PROFILES.ca.dir).toBe("ltr");
+    expect(PROFILES.ca.ttsLocale).toBe("ca");
+  });
+
+  it("each profile ships a distinct brand", () => {
+    const names = Object.values(PROFILES).map((p) => p.brand.appName);
+    expect(new Set(names).size, "two deployments must not share a name").toBe(names.length);
   });
 
   it("resolves a profile for the active build", () => {

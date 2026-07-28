@@ -35,28 +35,28 @@ const lateef = Lateef({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://darya-app.vercel.app"),
-  title: "Darya · Learn Dari",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000"),
+  title: `${profile.brand.appName} · ${profile.brand.tagline}`,
   description:
-    "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
-  applicationName: "Darya",
+    profile.brand.description,
+  applicationName: profile.brand.appName,
   icons: { apple: "/icons/apple-touch-icon.png" },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Darya",
+    title: profile.brand.appName,
   },
   openGraph: {
-    title: "Darya · Learn Dari",
-    description: "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
-    url: "https://darya-app.vercel.app", 
-    siteName: "Darya",
+    title: `${profile.brand.appName} · ${profile.brand.tagline}`,
+    description: profile.brand.description,
+    url: process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
+    siteName: profile.brand.appName,
     images: [
       {
         url: "/icons/apple-touch-icon.png", 
         width: 180,
         height: 180,
-        alt: "Darya Logo",
+        alt: `${profile.brand.appName} Logo`,
       },
     ],
     locale: "en_US",
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Darya · Learn Dari",
-    description: "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
+    title: `${profile.brand.appName} · ${profile.brand.tagline}`,
+    description: profile.brand.description,
     images: ["/icons/apple-touch-icon.png"],
   },
 };

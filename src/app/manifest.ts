@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
+import { profile } from "@/lib/lang";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Darya · Learn Dari",
-    short_name: "Darya",
+    name: `${profile.brand.appName} · ${profile.brand.tagline}`,
+    short_name: profile.brand.appName,
     description:
-      "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
+      profile.brand.description,
     start_url: "/",
     display: "standalone",
     background_color: "#faf7f2",

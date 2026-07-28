@@ -62,6 +62,18 @@ export interface LanguagePrompts {
   scenarios: string[];
 }
 
+/** Product identity. One deployment, one brand. */
+export interface LanguageBrand {
+  /** Product name: "Darya", "Riera". */
+  appName: string;
+  /** Shown after the name in the title bar: "Learn Dari". */
+  tagline: string;
+  /** One-line description for metadata and the install manifest. */
+  description: string;
+  /** The mascot's name, used in guide copy and notifications. */
+  mascotName: string;
+}
+
 export interface LanguageProfile {
   /** BCP-47 / ISO code used for the `lang` attribute and content namespacing. */
   code: string;
@@ -83,4 +95,5 @@ export interface LanguageProfile {
   capabilities: LanguageCapabilities;
   text: LanguageText;
   prompts: LanguagePrompts;
+  brand: LanguageBrand;
 }
