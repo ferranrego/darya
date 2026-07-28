@@ -1,5 +1,5 @@
 import { lexiconIndex } from "../content/load";
-import { matchKey, normalizeDari, tokenizeDari } from "./normalize";
+import { matchKey, normalize, tokenize } from "./index.ts";
 
 export interface HighlightSegment {
   text: string;
@@ -14,15 +14,15 @@ export interface HighlightSegment {
  * so callers can fall back to showing the word in isolation.
  */
 export function segmentForHighlight(sentence: string, lexemeId: string): HighlightSegment[] | null {
-  const normalized = normalizeDari(sentence);
+  const normalized = normalize(sentence);
   const index = lexiconIndex();
 
   // Re-interleave word tokens with the punctuation/whitespace between them
-  // (tokenizeDari drops separators), same cursor pattern as segmentSentence.
+  // (tokenize drops separators), same cursor pattern as segmentSentence.
   const segments: HighlightSegment[] = [];
   let cursor = 0;
   let anyHit = false;
-  for (const token of tokenizeDari(normalized)) {
+  for (const token of tokenize(normalized)) {
     const at = normalized.indexOf(token, cursor);
     if (at === -1) continue;
     if (at > cursor) segments.push({ text: normalized.slice(cursor, at), hit: false });

@@ -1,6 +1,6 @@
-import type { LexiconEntry } from "../content/schema.ts";
+import type { LexiconEntry } from "../../content/schema.ts";
 import { conjugationSurfaces, derivePastStem, VERB_OVERRIDES, type VerbStems } from "./conjugate.ts";
-import { SUPPLETIVE_FORMS } from "./dari-forms.ts";
+import { SUPPLETIVE_FORMS } from "./suppletive.ts";
 import { matchKey, ZWNJ } from "./normalize.ts";
 
 /**

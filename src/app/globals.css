@@ -62,22 +62,30 @@ input, textarea {
   -webkit-touch-callout: default;
 }
 
-/* Dari script rendering. Never letterspace Arabic script. */
-[lang="prs"] {
-  font-family: var(--font-dari);
-  letter-spacing: 0 !important;
-  direction: rtl;
+/*
+ * Target-language text rendering.
+ *
+ * The document is lang="en"; any element carrying a different `lang` is text in
+ * the language being learned. Selecting on that rather than on a hardcoded
+ * `[lang="prs"]` keeps this rule language-neutral, so no markup changes when the
+ * target language does. The three custom properties are set on <html> from the
+ * active LanguageProfile in layout.tsx.
+ */
+[lang]:not([lang="en"]) {
+  font-family: var(--font-target);
+  letter-spacing: var(--target-tracking) !important;
+  direction: var(--target-dir);
 }
 
-.use-scheherazade [lang="prs"] {
+.use-scheherazade [lang]:not([lang="en"]) {
   font-family: var(--font-scheherazade), "Noto Naskh Arabic", serif;
 }
 
-.use-amiri [lang="prs"] {
+.use-amiri [lang]:not([lang="en"]) {
   font-family: var(--font-amiri), "Noto Naskh Arabic", serif;
 }
 
-.use-lateef [lang="prs"] {
+.use-lateef [lang]:not([lang="en"]) {
   font-family: var(--font-lateef), "Noto Naskh Arabic", serif;
 }
 

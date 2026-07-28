@@ -10,7 +10,7 @@ import { z } from "zod";
 
 // We'll import the loader for the existing lexicon
 import { lexiconFileSchema } from "../src/lib/content/schema.ts";
-import { matchKey } from "../src/lib/text/normalize.ts";
+import { matchKey } from "../src/lib/text/index.ts";
 
 const outPath = join(import.meta.dirname, "data", "core-lexicon-4.txt");
 const lexiconJsonPath = join(import.meta.dirname, "..", "content", "lexicon", "lexicon.json");

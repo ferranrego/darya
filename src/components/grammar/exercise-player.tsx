@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import type { GrammarExercise, GrammarOption } from "@/lib/content/schema";
-import { normalizeDari } from "@/lib/text/normalize";
+import { normalize } from "@/lib/text";
 
 /** Deterministic shuffle so options don't reshuffle on re-render. */
 function shuffled<T>(items: T[], seed: string): T[] {
@@ -170,7 +170,7 @@ function FillBlank({
           {options.map((option) => (
             <FeedbackButton
               key={option.target}
-              correct={normalizeDari(option.target) === normalizeDari(exercise.answer.target)}
+              correct={normalize(option.target) === normalize(exercise.answer.target)}
               feedback={feedback}
               onAnswer={onAnswer}
               className="rounded-2xl border border-line bg-surface px-3 py-4 hover:border-ink-faint"
@@ -224,9 +224,9 @@ function BuildSentence({
     // Compare the logical tap sequence against `words` by index, or any of the
     // `altOrders` alternates. Visual order is RTL but the arrays are in logical
     // (first spoken word first) order.
-    const seq = placed.map((tile) => normalizeDari(tile.option.target));
+    const seq = placed.map((tile) => normalize(tile.option.target));
     const matches = (order: string[]) =>
-      order.length === seq.length && order.every((w, i) => normalizeDari(w) === seq[i]);
+      order.length === seq.length && order.every((w, i) => normalize(w) === seq[i]);
     const ok =
       matches(exercise.words.map((w) => w.target)) || exercise.altOrders.some(matches);
     onAnswer(ok);
@@ -363,7 +363,7 @@ function ChooseTranslation({
           {options.map((option) => (
             <FeedbackButton
               key={option.target}
-              correct={normalizeDari(option.target) === normalizeDari(exercise.target)}
+              correct={normalize(option.target) === normalize(exercise.target)}
               feedback={feedback}
               onAnswer={onAnswer}
               className="rounded-xl border border-line bg-surface px-4 py-3 hover:border-ink-faint"
@@ -518,7 +518,7 @@ function SpotError({
 }) {
   const solved = feedback === "correct";
   const words = exercise.target.split(/\s+/).filter(Boolean);
-  const errorKey = normalizeDari(exercise.errorWord.target);
+  const errorKey = normalize(exercise.errorWord.target);
 
   return (
     <div className="flex flex-1 flex-col">
@@ -527,7 +527,7 @@ function SpotError({
         <p className="mb-6 text-[15px] text-ink-soft">{exercise.en}</p>
         <div dir="rtl" className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2">
           {words.map((word, i) => {
-            const isError = normalizeDari(word) === errorKey;
+            const isError = normalize(word) === errorKey;
             if (solved && isError) {
               return (
                 <motion.span

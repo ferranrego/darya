@@ -1,7 +1,11 @@
 import "server-only";
 import { z } from "zod";
 import { lexicon } from "../content/load";
-import { normalizeDari, ZWNJ } from "../text/normalize";
+import { normalize } from "../text";
+// The alphabet course teaches the Perso-Arabic script specifically, so this
+// module is Dari-only by construction (Phase 4 gates it on the profile's
+// scriptCourse capability). ZWNJ therefore comes straight from prs.
+import { ZWNJ } from "../lang/prs/normalize.ts";
 import { completeJson } from "./providers";
 
 /**
@@ -37,7 +41,7 @@ export function spellableWords(knownLetters: string[]) {
   const known = new Set(knownLetters);
   return lexicon.entries
     .filter((entry) => {
-      const chars = Array.from(normalizeDari(entry.targetNormalized || entry.target));
+      const chars = Array.from(normalize(entry.targetNormalized || entry.target));
       return chars.every((c) => known.has(c) || ALLOWED_PUNCT.has(c));
     })
     .sort((a, b) => a.freqRank - b.freqRank);
@@ -79,7 +83,7 @@ export async function generateReadingSentence(knownLetters: string[]): Promise<R
     temperature: 0.7,
     validate: (raw) => {
       const parsed = outputSchema.parse(JSON.parse(raw));
-      const chars = Array.from(normalizeDari(parsed.target));
+      const chars = Array.from(normalize(parsed.target));
 
       // Hard constraint: the learner must be able to read every character.
       const unknown = chars.find((c) => !known.has(c) && !ALLOWED_PUNCT.has(c));

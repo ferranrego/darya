@@ -2,10 +2,11 @@ import "server-only";
 import { createHash, randomUUID } from "node:crypto";
 import { z } from "zod";
 import { CONTENT_FORMAT_VERSION, type LexiconEntry, type Level, type TextDocument } from "../content/schema";
-import { buildLexiconIndex } from "../text/lexicon-index";
+import { buildIndex } from "../text";
 import { lexicon } from "../content/load";
-import { tokenizeDari } from "../text/normalize";
+import { tokenize } from "../text";
 import { completeJson } from "./providers";
+import { profile } from "../lang/index.ts";
 
 /**
  * AI text generation: one entry point over the shared free-tier provider
@@ -51,9 +52,10 @@ function buildPrompt(req: GenerationRequest): string {
   const [minS, maxS] = req.level.sentenceRange;
   const themeInstructions = req.theme ? `\n- Set the text in this scenario/theme where it fits naturally: ${req.theme}` : "";
 
-  return `You are a Dari language teacher in Kabul writing a graded reader text in standard Afghan Dari (NOT Iranian Persian, use Dari vocabulary like مکتب، موتر، کلان and Kabuli usage).
+  return `You are ${profile.prompts.teacher} writing a graded reader text.
+${profile.prompts.orthography}
 
-Write a short, warm, concrete text (${minS}-${maxS} sentences, ${req.level.sentenceLengthHint}) about everyday Afghan life.
+Write a short, warm, concrete text (${minS}-${maxS} sentences, ${req.level.sentenceLengthHint}) about ${profile.prompts.culturalSetting}.
 CRITICAL NARRATIVE RULES:
 - The text must tell a coherent story or explain something clearly.
 - Every sentence MUST be a logical continuation of the previous one. 
@@ -66,7 +68,6 @@ STRICT VOCABULARY CONSTRAINT:
 
 Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 
-Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū, use kh/gh/ch/sh/zh/q/', w for و. Example: "می‌روم" → "mērawam".
 
 Return ONLY JSON with this exact shape:
 {"titleTarget": "...", "titleTranslit": "...", "titleEn": "...", "sentences": [{"target": "...", "translit": "...", "en": "..."}]}`;
@@ -76,7 +77,7 @@ Return ONLY JSON with this exact shape:
 // Verification + assembly
 // ---------------------------------------------------------------------------
 
-const index = buildLexiconIndex(lexicon.entries);
+const index = buildIndex(lexicon.entries);
 
 function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: TextDocument; oovRate: number } {
   const allowed = new Set([...req.knownWords, ...req.targetWords].map((w) => w.id));
@@ -85,7 +86,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
   let total = 0;
 
   const sentences = raw.sentences.map((s) => {
-    const tokens = tokenizeDari(s.target).map((surface) => {
+    const tokens = tokenize(s.target).map((surface) => {
       total++;
       const entry = index.resolve(surface);
       if (entry) vocab.add(entry.id);
@@ -145,7 +146,7 @@ export async function repairText(
   
   const badSentencesText = badSentenceIndices.map(i => `${i}: ${doc.sentences[i].target}`).join('\n');
   
-  const repairPrompt = `You are a Dari language teacher. The following sentences have vocabulary that is too difficult for the student.
+  const repairPrompt = `You are ${profile.prompts.teacher}. The following sentences have vocabulary that is too difficult for the student.
 Rewrite ONLY these specific sentences using ONLY allowed words. Keep the meaning as close to the original as possible.
 
 ALLOWED WORDS:

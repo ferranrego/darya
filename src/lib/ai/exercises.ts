@@ -1,10 +1,11 @@
 import { z } from "zod";
 import { lexiconIndex } from "../content/load";
 import type { LexiconEntry } from "../content/schema";
-import { normalizeDari, tokenizeDari } from "../text/normalize";
+import { normalize, tokenize } from "../text";
 import { shuffle } from "../util/shuffle";
 import { completeJson } from "./providers";
 import { assertKnownVocab } from "./vocab-check";
+import { profile } from "../lang/index.ts";
 
 const MAX_SENTENCE_WORDS = 10;
 
@@ -66,15 +67,11 @@ export interface ExerciseGenerationRequest {
   avoidSentences?: string[];
 }
 
-/** Fallback scenarios when the sampled vocabulary has no usable tags. */
-export const FALLBACK_THEMES = [
-  "at the bazaar",
-  "at home with family",
-  "traveling in Afghanistan",
-  "with friends over tea",
-  "at work",
-  "at a restaurant",
-];
+/**
+ * Fallback scenarios when the sampled vocabulary has no usable tags. Culturally
+ * specific ("traveling in Afghanistan"), so it comes from the language profile.
+ */
+export const FALLBACK_THEMES = profile.prompts.scenarios;
 
 /**
  * Randomly split `count` across the three generated exercise types, always
@@ -108,7 +105,8 @@ function buildPrompt(req: ExerciseGenerationRequest): string {
 
   const avoid = (req.avoidSentences ?? []).filter(Boolean);
 
-  return `You are a Dari language teacher in Kabul creating interactive exercises.
+  return `You are ${profile.prompts.teacher} creating interactive exercises.
+${profile.prompts.orthography}
 Generate exactly ${req.count} exercises for a student at level ${req.level}: ${mixLine}.
 ${req.theme ? `Set the exercises in this scenario/theme where it fits naturally: ${req.theme}.` : ""}
 
@@ -126,7 +124,6 @@ ${fresh ? `- Brand-new words to introduce gently in one or two exercises: ${fres
 - Do NOT use proper names (people or places) in cloze or grammar_detective sentences; they are fine inside realia documents.
 ${avoid.length > 0 ? `\nDo NOT reuse or closely paraphrase any of these previously used sentences:\n${avoid.map((s) => `- ${s}`).join("\n")}` : ""}
 
-Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū.
 
 Return ONLY JSON with this exact shape:
 {
@@ -145,18 +142,18 @@ function checkItem(ex: ExerciseData) {
       if (!ex.sentenceTarget.includes(ex.missingWord)) {
         throw new Error(`Missing word "${ex.missingWord}" not in "${ex.sentenceTarget}"`);
       }
-      const answerKey = normalizeDari(ex.missingWord);
+      const answerKey = normalize(ex.missingWord);
       for (const d of ex.distractors) {
-        if (normalizeDari(d) === answerKey) throw new Error("Distractor equals answer");
+        if (normalize(d) === answerKey) throw new Error("Distractor equals answer");
       }
       assertKnownVocab(ex.sentenceTarget, MAX_SENTENCE_WORDS);
       break;
     }
     case "unscramble": {
       assertKnownVocab(ex.sentenceTarget, MAX_SENTENCE_WORDS);
-      const sentenceKeys = new Set(tokenizeDari(ex.sentenceTarget).map(normalizeDari));
+      const sentenceKeys = new Set(tokenize(ex.sentenceTarget).map(normalize));
       for (const w of ex.words) {
-        if (!sentenceKeys.has(normalizeDari(w))) {
+        if (!sentenceKeys.has(normalize(w))) {
           throw new Error(`Unscramble word "${w}" not in sentence`);
         }
       }
@@ -197,7 +194,7 @@ export function taggedLexemes(ex: ExerciseData, targetIds: Set<string>): string[
   }
   const found = new Set<string>();
   for (const text of texts) {
-    for (const token of tokenizeDari(text)) {
+    for (const token of tokenize(text)) {
       const entry = lexiconIndex().resolve(token);
       if (entry && targetIds.has(entry.id)) found.add(entry.id);
     }

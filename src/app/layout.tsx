@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { MotionSetup } from "@/components/motion-config";
 import { SwRegister } from "@/components/sw-register";
+import { profile } from "@/lib/lang";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -84,7 +85,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${vazirmatn.variable} ${scheherazade.variable} ${amiri.variable} ${lateef.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${vazirmatn.variable} ${scheherazade.variable} ${amiri.variable} ${lateef.variable} h-full antialiased`}
+      // Feeds the language-neutral `[lang]:not([lang="en"])` rule in globals.css,
+      // so target-language text picks up its script's direction, font stack and
+      // tracking without any selector naming the language.
+      style={
+        {
+          "--font-target": profile.fontStack,
+          "--target-dir": profile.dir,
+          "--target-tracking": profile.letterSpacing,
+        } as React.CSSProperties
+      }
+    >
       <body className="min-h-full flex flex-col">
         <Providers>{children}</Providers>
         <SwRegister />

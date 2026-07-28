@@ -13,15 +13,15 @@ import {
   textDocumentSchema,
   type TextDocument,
 } from "../src/lib/content/schema.ts";
-import { buildLexiconIndex } from "../src/lib/text/lexicon-index.ts";
-import { tokenizeDari } from "../src/lib/text/normalize.ts";
+import { buildIndex } from "../src/lib/text/index.ts";
+import { tokenize } from "../src/lib/text/index.ts";
 import { seedTexts } from "./data/seed-texts.ts";
 
 const root = join(import.meta.dirname, "..");
 const lexicon = lexiconFileSchema.parse(
   JSON.parse(readFileSync(join(root, "content", "lexicon", "lexicon.json"), "utf8")),
 );
-const index = buildLexiconIndex(lexicon.entries);
+const index = buildIndex(lexicon.entries);
 
 const outDir = join(root, "content", "texts", "seed");
 mkdirSync(outDir, { recursive: true });
@@ -31,7 +31,7 @@ const failures: string[] = [];
 for (const source of seedTexts) {
   const vocab = new Set<string>();
   const sentences = source.sentences.map((s) => {
-    const tokens = tokenizeDari(s.target).map((surface) => {
+    const tokens = tokenize(s.target).map((surface) => {
       const entry = index.resolve(surface);
       if (!entry) failures.push(`${source.slug}: unresolved word "${surface}" in "${s.target}"`);
       else vocab.add(entry.id);

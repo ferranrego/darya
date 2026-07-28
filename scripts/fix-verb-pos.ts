@@ -30,7 +30,7 @@
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { normalizeDari } from "../src/lib/text/normalize.ts";
+import { normalizeDari } from "../src/lib/lang/prs/normalize.ts";
 
 const dryRun = process.argv.includes("--dry-run");
 const lexiconPath = join(import.meta.dirname, "..", "content", "lexicon", "lexicon.json");

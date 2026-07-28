@@ -8,9 +8,10 @@ import {
   type GrammarExercise,
   type GrammarLesson,
 } from "../content/schema";
-import { normalizeDari } from "../text/normalize";
+import { normalize } from "../text";
 import { completeJson } from "./providers";
 import { assertKnownVocab } from "./vocab-check";
+import { profile } from "../lang/index.ts";
 
 /**
  * Extra-practice generation for grammar lessons.
@@ -36,9 +37,9 @@ const outputSchema = z.object({ exercises: z.array(rawItemSchema).min(1) });
 
 function checkItem(item: z.infer<typeof rawItemSchema>) {
   if (item.type === "fillBlank") {
-    const answerKey = normalizeDari(item.answer.target);
+    const answerKey = normalize(item.answer.target);
     for (const d of item.distractors) {
-      if (normalizeDari(d.target) === answerKey) throw new Error("Distractor equals answer");
+      if (normalize(d.target) === answerKey) throw new Error("Distractor equals answer");
     }
     assertKnownVocab(item.target.replace("___", item.answer.target), MAX_SENTENCE_WORDS);
   } else {
@@ -75,7 +76,7 @@ function buildPrompt(lesson: GrammarLesson): string {
     .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
     .join("، ");
 
-  return `You are a Dari (Afghan Persian, NOT Iranian Persian) teacher writing practice exercises for an ${LEVEL_LABEL[level]} learner.
+  return `You are ${profile.prompts.teacher} writing practice exercises for an ${LEVEL_LABEL[level]} learner.
 
 THE GRAMMAR POINT to drill: ${lesson.grammarPointEn}
 
@@ -92,7 +93,7 @@ Type "fillBlank" (about 4 of them): a short Dari sentence (max 7 words) with exa
 Type "chooseTranslation" (about 2 of them): a short Dari sentence, its transliteration, its correct English meaning in "en", and 2 wrong English meanings in "distractorsEn" that differ ONLY by the grammar point (wrong person, wrong tense, plural vs singular...). Set "direction": "toEn", "distractorsTarget": [].
 
 STRICT RULES:
-- Afghan Dari (Kabuli) usage and spelling. Transliteration: long vowels ā ē ī ō ū, mē- for the present prefix, w for و.
+${profile.prompts.orthography}
 - Use ZWNJ in می‌ verb forms (می‌روم).
 - Every sentence must be natural and meaningful, never a random pile of words.
 - Do not copy the anchor sentences - write new ones.

@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import type { LexiconEntry } from "../content/schema.ts";
+import type { LexiconEntry } from "../../content/schema.ts";
 import { conjugationSurfaces, derivePastStem, VERB_OVERRIDES } from "./conjugate.ts";
 import { buildLexiconIndex } from "./lexicon-index.ts";
 import { matchKey, ZWNJ } from "./normalize.ts";
@@ -65,7 +65,7 @@ describe("resolve precedence (synthetic)", () => {
 
 describe("resolve against the real lexicon", () => {
   const file = JSON.parse(
-    readFileSync(join(import.meta.dirname, "../../../content/lexicon/lexicon.json"), "utf8")
+    readFileSync(join(import.meta.dirname, "../../../../content/lexicon/lexicon.json"), "utf8")
   );
   const entries: LexiconEntry[] = file.entries;
   const idx = buildLexiconIndex(entries);

@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { completeJson } from "./providers";
 import type { ExerciseData } from "./exercises";
+import { profile } from "../lang/index.ts";
 
 const wrongAnswerOutputSchema = z.object({
   explanationEn: z.string(),
@@ -10,7 +11,7 @@ export async function explainWrongAnswer(
   exercise: ExerciseData,
   chosenAnswer: string,
 ): Promise<string> {
-  const prompt = `You are a Dari language teacher in Kabul. A student is doing a language exercise and has selected an incorrect answer.
+  const prompt = `You are ${profile.prompts.teacher}. A student is doing a language exercise and has selected an incorrect answer.
 Explain in ONE short, encouraging sentence (in English) why the answer they chose is incorrect. Do NOT give away the correct answer if you can avoid it, just explain the mistake.
 
 Exercise Type: ${exercise.type}

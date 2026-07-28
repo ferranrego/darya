@@ -1,5 +1,5 @@
 import { lexiconIndex } from "../content/load";
-import { tokenizeDari } from "../text/normalize";
+import { tokenize } from "../text";
 
 /**
  * Token-level vocabulary validation for AI-generated Dari sentences. Checks
@@ -24,7 +24,7 @@ export function isKnownToken(token: string): boolean {
 
 /** Throw unless every token of `target` is lexicon vocabulary or a taught form. */
 export function assertKnownVocab(target: string, maxWords: number) {
-  const tokens = tokenizeDari(target);
+  const tokens = tokenize(target);
   if (tokens.length > maxWords) throw new Error(`Sentence too long: "${target}"`);
   for (const token of tokens) {
     if (!isKnownToken(token)) throw new Error(`Unknown word "${token}" in "${target}"`);

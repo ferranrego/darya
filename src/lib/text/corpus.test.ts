@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { isKnownToken } from "../ai/vocab-check.ts";
-import { tokenizeDari } from "./normalize.ts";
+import { tokenize } from "./index.ts";
 
 /**
  * Corpus-level guard on the verb morphology.
@@ -50,7 +50,7 @@ function corpus(): string[] {
 describe("shipped content is recognised by the runtime acceptance rule", () => {
   const strings = corpus();
   const tokens = strings
-    .flatMap((s) => tokenizeDari(s))
+    .flatMap((s) => tokenize(s))
     .filter((t) => t !== "___" && PERSIAN.test(t));
 
   it("reads a non-trivial corpus", () => {

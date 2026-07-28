@@ -12,7 +12,7 @@ import grammarC2Json from "../../../content/grammar/c2.json";
 import lexiconJson from "../../../content/lexicon/lexicon.json";
 import themesJson from "../../../content/lexicon/themes.json";
 import levelsJson from "../../../content/levels/levels.json";
-import { buildLexiconIndex, type LexiconIndex } from "../text/lexicon-index";
+import { buildIndex, type LexiconIndex } from "../text";
 import {
   alphabetCourseSchema,
   grammarCourseSchema,
@@ -106,7 +106,7 @@ export const levels: Level[] = levelsFile.levels;
 
 let index: LexiconIndex | null = null;
 export function lexiconIndex(): LexiconIndex {
-  index ??= buildLexiconIndex(lexicon.entries);
+  index ??= buildIndex(lexicon.entries);
   return index;
 }
 

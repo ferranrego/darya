@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { completeJson } from "./providers";
 import { assertKnownVocab } from "./vocab-check";
+import { profile } from "../lang/index.ts";
 
 const MAX_SENTENCE_WORDS = 12;
 
@@ -17,7 +18,9 @@ const contextSentencesSchema = z.object({
 export type GeneratedContextSentence = z.infer<typeof contextSentencesSchema>["sentences"][number];
 
 function buildPrompt(wordTarget: string, wordTranslit: string, wordEn: string): string {
-  return `You are a Dari language teacher in Kabul. Provide 3 short, natural context sentences that use the word "${wordTarget}" (${wordTranslit} - ${wordEn}).
+  return `You are ${profile.prompts.teacher}.
+${profile.prompts.orthography}
+Provide 3 short, natural context sentences that use the word "${wordTarget}" (${wordTranslit} - ${wordEn}).
 
 STRICT VOCABULARY AND NATURALNESS CONSTRAINT:
 - Ensure the sentence sounds 100% natural and idiomatic in Dari.
@@ -25,7 +28,6 @@ STRICT VOCABULARY AND NATURALNESS CONSTRAINT:
 - Use very simple, common vocabulary for the rest of the sentence, suitable for a beginner/intermediate learner.
 - Do NOT use proper names (people or places).
 
-Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū.
 
 Return ONLY JSON with this exact shape:
 {

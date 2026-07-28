@@ -22,8 +22,8 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import { CONTENT_FORMAT_VERSION } from "../src/lib/content/schema.ts";
-import { VERB_OVERRIDES, derivePastStem } from "../src/lib/text/conjugate.ts";
-import { matchKey, normalizeDari } from "../src/lib/text/normalize.ts";
+import { VERB_OVERRIDES, derivePastStem } from "../src/lib/lang/prs/conjugate.ts";
+import { matchKey, normalizeDari } from "../src/lib/lang/prs/normalize.ts";
 
 const lexiconPath = join(import.meta.dirname, "..", "content", "lexicon", "lexicon.json");
 const dryRun = process.argv.includes("--dry-run");

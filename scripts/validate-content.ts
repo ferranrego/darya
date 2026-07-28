@@ -16,8 +16,12 @@ import {
   type LevelsFile,
   type TextDocument,
 } from "../src/lib/content/schema.ts";
-import { buildLexiconIndex } from "../src/lib/text/lexicon-index.ts";
-import { matchKey, normalizeDari, tokenizeDari, ZWNJ } from "../src/lib/text/normalize.ts";
+import { buildIndex } from "../src/lib/text/index.ts";
+import { matchKey, normalize, tokenize } from "../src/lib/text/index.ts";
+// ZWNJ is a Perso-Arabic concept, and the compound-spelling check below is a
+// Dari orthography rule - both come from the language module, not the neutral
+// text façade. Phase 3 gives this script a --lang argument.
+import { ZWNJ } from "../src/lib/lang/prs/normalize.ts";
 
 const root = join(import.meta.dirname, "..", "content");
 
@@ -52,7 +56,7 @@ if (existsSync(lexiconPath)) {
     for (const e of lexicon.entries) {
       if (ids.has(e.id)) fail(`lexicon: duplicate id ${e.id}`);
       ids.add(e.id);
-      if (e.targetNormalized !== normalizeDari(e.targetNormalized)) {
+      if (e.targetNormalized !== normalize(e.targetNormalized)) {
         fail(`lexicon ${e.id}: targetNormalized not normalized (${e.targetNormalized})`);
       }
       const key = matchKey(e.targetNormalized);
@@ -63,7 +67,7 @@ if (existsSync(lexiconPath)) {
         if (!/^[؀-ۿ‌]+$/.test(e.presentStem)) {
           fail(`lexicon ${e.id}: presentStem not Persian script (${e.presentStem})`);
         }
-        if (e.presentStem !== normalizeDari(e.presentStem)) {
+        if (e.presentStem !== normalize(e.presentStem)) {
           fail(`lexicon ${e.id}: presentStem not normalized (${e.presentStem})`);
         }
       }
@@ -147,7 +151,7 @@ if (existsSync(coursePath)) {
 
 // --- Grammar courses (one file per CEFR level) -----------------------------
 {
-  const index = lexicon ? buildLexiconIndex(lexicon.entries) : null;
+  const index = lexicon ? buildIndex(lexicon.entries) : null;
 
   // ids must be globally unique across every level file.
   const blockIds = new Set<string>();
@@ -156,7 +160,7 @@ if (existsSync(coursePath)) {
 
   function checkVocab(where: string, target: string, warn: () => void) {
     if (!index) return;
-    for (const token of tokenizeDari(target)) {
+    for (const token of tokenize(target)) {
       if (token === "___") continue;
       if (index.resolve(token)) continue;
       warn();
@@ -165,7 +169,7 @@ if (existsSync(coursePath)) {
   }
 
   function checkNormalized(where: string, target: string) {
-    if (target !== normalizeDari(target)) fail(`grammar ${where}: Dari not normalized ("${target}")`);
+    if (target !== normalize(target)) fail(`grammar ${where}: Dari not normalized ("${target}")`);
   }
 
   function checkExercise(where: string, ex: GrammarExercise, warn: () => void) {
@@ -173,24 +177,24 @@ if (existsSync(coursePath)) {
       case "fillBlank": {
         checkNormalized(where, ex.target);
         checkNormalized(`${where} answer`, ex.answer.target);
-        const answerKey = normalizeDari(ex.answer.target);
+        const answerKey = normalize(ex.answer.target);
         for (const d of ex.distractors) {
           checkNormalized(`${where} distractor`, d.target);
-          if (normalizeDari(d.target) === answerKey) fail(`${where}: distractor equals answer ("${d.target}")`);
+          if (normalize(d.target) === answerKey) fail(`${where}: distractor equals answer ("${d.target}")`);
         }
         checkVocab(where, ex.target.replace("___", ex.answer.target), warn);
         break;
       }
       case "buildSentence": {
-        const wordKeys = new Set(ex.words.map((w) => normalizeDari(w.target)));
+        const wordKeys = new Set(ex.words.map((w) => normalize(w.target)));
         for (const w of [...ex.words, ...ex.extraWords]) checkNormalized(where, w.target);
         for (const x of ex.extraWords) {
-          if (wordKeys.has(normalizeDari(x.target))) fail(`${where}: extraWord duplicates a sentence word ("${x.target}")`);
+          if (wordKeys.has(normalize(x.target))) fail(`${where}: extraWord duplicates a sentence word ("${x.target}")`);
         }
         // Every alternate ordering must be a permutation of the sentence words.
-        const sortedWords = ex.words.map((w) => normalizeDari(w.target)).sort();
+        const sortedWords = ex.words.map((w) => normalize(w.target)).sort();
         for (const order of ex.altOrders) {
-          const sortedOrder = order.map((d) => normalizeDari(d)).sort();
+          const sortedOrder = order.map((d) => normalize(d)).sort();
           const isPermutation =
             sortedOrder.length === sortedWords.length &&
             sortedOrder.every((d, i) => d === sortedWords[i]);
@@ -208,10 +212,10 @@ if (existsSync(coursePath)) {
           fail(`${where}: toTarget needs at least 2 distractorsTarget`);
         }
         if (ex.distractorsEn.includes(ex.en)) fail(`${where}: distractorsEn contains the answer`);
-        const targetKey = normalizeDari(ex.target);
+        const targetKey = normalize(ex.target);
         for (const d of ex.distractorsTarget) {
           checkNormalized(`${where} distractor`, d.target);
-          if (normalizeDari(d.target) === targetKey) fail(`${where}: distractorsTarget contains the answer`);
+          if (normalize(d.target) === targetKey) fail(`${where}: distractorsTarget contains the answer`);
         }
         checkVocab(where, ex.target, warn);
         break;
@@ -221,7 +225,7 @@ if (existsSync(coursePath)) {
         const enSeen = new Set<string>();
         for (const p of ex.pairs) {
           checkNormalized(where, p.target);
-          const dk = normalizeDari(p.target);
+          const dk = normalize(p.target);
           if (targetSeen.has(dk)) fail(`${where}: duplicate pair Dari "${p.target}"`);
           if (enSeen.has(p.en)) fail(`${where}: duplicate pair English "${p.en}"`);
           targetSeen.add(dk);
@@ -233,11 +237,11 @@ if (existsSync(coursePath)) {
       case "spotError": {
         checkNormalized(where, ex.target);
         checkNormalized(`${where} correction`, ex.correction.target);
-        const tokens = tokenizeDari(ex.target).map((t) => normalizeDari(t));
-        if (!tokens.includes(normalizeDari(ex.errorWord.target))) {
+        const tokens = tokenize(ex.target).map((t) => normalize(t));
+        if (!tokens.includes(normalize(ex.errorWord.target))) {
           fail(`${where}: errorWord "${ex.errorWord.target}" is not a token of the sentence`);
         }
-        if (normalizeDari(ex.errorWord.target) === normalizeDari(ex.correction.target)) {
+        if (normalize(ex.errorWord.target) === normalize(ex.correction.target)) {
           fail(`${where}: correction equals errorWord`);
         }
         // Vocab-check the corrected sentence, not the (deliberately wrong) one.

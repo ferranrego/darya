@@ -1,8 +1,8 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import type { LexiconEntry } from "../content/schema.ts";
-import { SUPPLETIVE_FORMS } from "./dari-forms.ts";
+import type { LexiconEntry } from "../../content/schema.ts";
+import { SUPPLETIVE_FORMS } from "./suppletive.ts";
 import { buildLexiconIndex } from "./lexicon-index.ts";
 import { matchKey, ZWNJ } from "./normalize.ts";
 
@@ -106,7 +106,7 @@ describe("verb forms resolve through the single engine", () => {
 describe("SUPPLETIVE_FORMS integrity", () => {
   const lexicon = JSON.parse(
     readFileSync(
-      join(import.meta.dirname, "..", "..", "..", "content", "lexicon", "lexicon.json"),
+      join(import.meta.dirname, "..", "..", "..", "..", "content", "lexicon", "lexicon.json"),
       "utf8",
     ),
   ) as { entries: LexiconEntry[] };

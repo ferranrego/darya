@@ -20,7 +20,7 @@ import {
   lexiconFileSchema,
   type LexiconEntry,
 } from "../src/lib/content/schema.ts";
-import { normalizeDari } from "../src/lib/text/normalize.ts";
+import { normalize } from "../src/lib/text/index.ts";
 
 const dataDir = join(import.meta.dirname, "data");
 const outDir = join(import.meta.dirname, "..", "content", "lexicon");
@@ -51,15 +51,15 @@ for (const file of files) {
     n++;
     entries.push({
       id: `lx-${String(n).padStart(4, "0")}`,
-      target: normalizeDari(target),
-      targetNormalized: normalizeDari(target),
+      target: normalize(target),
+      targetNormalized: normalize(target),
       translit,
       glossEn,
       pos: pos as LexiconEntry["pos"],
       freqRank: Number(rank),
       freqBand: bandForRank(Number(rank)),
       register: register as LexiconEntry["register"],
-      variants: variants ? variants.split(",").map((v) => normalizeDari(v)) : [],
+      variants: variants ? variants.split(",").map((v) => normalize(v)) : [],
       exampleTarget,
       exampleTranslit,
       exampleEn,
