@@ -12,8 +12,9 @@ import {
   levelsFileSchema,
   textDocumentSchema,
 } from "../src/lib/content/schema.ts";
+import { schemaRoot } from "./content-path.ts";
 
-const outDir = join(import.meta.dirname, "..", "content", "schema");
+const outDir = schemaRoot();
 mkdirSync(outDir, { recursive: true });
 
 const targets: Array<[string, z.ZodType]> = [

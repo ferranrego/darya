@@ -176,7 +176,7 @@ where "index" is the number provided above for the sentence.`;
   
   const raw: RawText = {
     titleTarget: doc.titleTarget,
-    titleTranslit: doc.titleTranslit,
+    titleTranslit: doc.titleTranslit ?? "",
     titleEn: doc.titleEn,
     sentences: doc.sentences.map((s, i) => {
       const repair = repairs.find(r => r.index === i);

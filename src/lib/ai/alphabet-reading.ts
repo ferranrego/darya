@@ -77,7 +77,10 @@ export async function generateReadingSentence(knownLetters: string[]): Promise<R
   }
 
   // Cap the pool so the prompt stays small; most-frequent words first.
-  const offered = pool.slice(0, 150);
+  // Transliteration is optional in the schema (a Latin-script language has
+  // none), but this course only exists for non-Latin scripts, so entries here
+  // always carry one.
+  const offered = pool.slice(0, 150).map((e) => ({ ...e, translit: e.translit ?? "" }));
 
   return completeJson(buildPrompt(offered), {
     temperature: 0.7,

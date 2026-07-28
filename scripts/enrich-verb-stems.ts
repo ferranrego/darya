@@ -24,8 +24,9 @@ import { z } from "zod";
 import { CONTENT_FORMAT_VERSION } from "../src/lib/content/schema.ts";
 import { VERB_OVERRIDES, derivePastStem } from "../src/lib/lang/prs/conjugate.ts";
 import { matchKey, normalizeDari } from "../src/lib/lang/prs/normalize.ts";
+import { contentRoot } from "./content-path.ts";
 
-const lexiconPath = join(import.meta.dirname, "..", "content", "lexicon", "lexicon.json");
+const lexiconPath = join(contentRoot(), "lexicon", "lexicon.json");
 const dryRun = process.argv.includes("--dry-run");
 const limitArg = process.argv.indexOf("--limit");
 const limit = limitArg !== -1 ? Number(process.argv[limitArg + 1]) : Infinity;

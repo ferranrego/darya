@@ -1,0 +1,2242 @@
+{
+  "formatVersion": "1.3.0",
+  "language": "prs",
+  "level": "C2",
+  "blocks": [
+    {
+      "id": "gb-26",
+      "title": "Elevated Register",
+      "subtitle": "Formal address and diction",
+      "lessons": [
+        {
+          "id": "gl-79",
+          "title": "With respect",
+          "subtitle": "Formal address",
+          "grammarPoint": "formal-address",
+          "grammarPointEn": "Formal address and honorifics: mohtaram (respected), jenāb (sir/His Excellency), and the polite plural shumā for a single addressee in official settings.",
+          "slides": [
+            {
+              "id": "gs-79-1",
+              "title": "Speaking with deference",
+              "body": "In official Dari you address people with honorifics: mohtaram (respected) before a title, jenāb (sir) for high standing, and always the polite plural shumā.",
+              "examples": [
+                {
+                  "target": "معلم محترم، خوش آمدید",
+                  "translit": "mu'allem-e mohtaram, khush āmadēd",
+                  "en": "Respected teacher, welcome.",
+                  "highlight": "محترم"
+                },
+                {
+                  "target": "جناب رئیس تشریف آوردند",
+                  "translit": "jenāb-e ra'īs tashrīf āwardand",
+                  "en": "His Excellency the chief arrived.",
+                  "highlight": "جناب"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-79-1",
+              "type": "fillBlank",
+              "target": "معلم ___، خوش آمدید",
+              "translit": "mu'allem-e ___, khush āmadēd",
+              "en": "Respected teacher, welcome.",
+              "answer": {
+                "target": "محترم",
+                "translit": "mohtaram"
+              },
+              "distractors": [
+                {
+                  "target": "خورد",
+                  "translit": "khurd"
+                },
+                {
+                  "target": "مانده",
+                  "translit": "mānda"
+                }
+              ]
+            },
+            {
+              "id": "ge-79-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "جناب رئیس آمدند",
+              "translit": "jenāb-e ra'īs āmadand",
+              "en": "His Excellency the chief came.",
+              "distractorsEn": [
+                "The chief's friend came.",
+                "The chief will come."
+              ]
+            },
+            {
+              "id": "ge-79-3",
+              "type": "matchPairs",
+              "prompt": "Match register",
+              "pairs": [
+                {
+                  "target": "محترم",
+                  "translit": "mohtaram",
+                  "en": "respected"
+                },
+                {
+                  "target": "جناب",
+                  "translit": "jenāb",
+                  "en": "sir / Excellency"
+                },
+                {
+                  "target": "شما",
+                  "translit": "shumā",
+                  "en": "you (polite)"
+                },
+                {
+                  "target": "تو",
+                  "translit": "tu",
+                  "en": "you (familiar)"
+                }
+              ]
+            },
+            {
+              "id": "ge-79-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "دوست محترم، تشکر",
+              "translit": "dōst-e mohtaram, tashakur",
+              "en": "Respected friend, thank you.",
+              "distractorsTarget": [
+                {
+                  "target": "دوست خوب، تشکر",
+                  "translit": "dōst-e khōb, tashakur"
+                },
+                {
+                  "target": "دوست محترم، سلام",
+                  "translit": "dōst-e mohtaram, salām"
+                }
+              ]
+            },
+            {
+              "id": "ge-79-5",
+              "type": "spotError",
+              "target": "جناب رئیس، تو کجا می‌روی؟",
+              "translit": "jenāb-e ra'īs, tu kujā mērawi?",
+              "en": "Your Excellency, where are you going?",
+              "errorWord": {
+                "target": "می‌روی",
+                "translit": "mērawi"
+              },
+              "correction": {
+                "target": "می‌روید",
+                "translit": "mērawēd"
+              },
+              "hint": "An honorific address takes the polite plural form."
+            },
+            {
+              "id": "ge-79-6",
+              "type": "fillBlank",
+              "target": "___ رئیس، خوش آمدید",
+              "translit": "___ ra'īs, khush āmadēd",
+              "en": "Your Excellency the chief, welcome.",
+              "answer": {
+                "target": "جناب",
+                "translit": "jenāb"
+              },
+              "distractors": [
+                {
+                  "target": "دوست",
+                  "translit": "dōst"
+                },
+                {
+                  "target": "برادر",
+                  "translit": "barādar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-80",
+          "title": "The bureaucratic voice",
+          "subtitle": "Official verbs and passives",
+          "grammarPoint": "official-style",
+          "grammarPointEn": "Bureaucratic/official style: heavy use of the passive and formal verbs (namūdan, gardīdan) to sound impersonal and authoritative.",
+          "slides": [
+            {
+              "id": "gs-80-1",
+              "title": "Impersonal authority",
+              "body": "Official writing prefers the passive and the formal verbs, hiding the doer: 'the letter was signed', 'the decision was made'. It sounds neutral and authoritative.",
+              "examples": [
+                {
+                  "target": "تصمیم گرفته شد",
+                  "translit": "tasmīm gerefta shud",
+                  "en": "The decision was made.",
+                  "highlight": "گرفته شد"
+                },
+                {
+                  "target": "کار تمام گردید",
+                  "translit": "kār tamām gardīd",
+                  "en": "The work was completed. (formal)",
+                  "highlight": "گردید"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-80-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "تصمیم گرفته شد",
+              "translit": "tasmīm gerefta shud",
+              "en": "The decision was made.",
+              "distractorsEn": [
+                "He made a decision.",
+                "The decision will be made."
+              ]
+            },
+            {
+              "id": "ge-80-2",
+              "type": "fillBlank",
+              "target": "کار تمام ___",
+              "translit": "kār tamām ___",
+              "en": "The work was completed. (formal)",
+              "answer": {
+                "target": "گردید",
+                "translit": "gardīd"
+              },
+              "distractors": [
+                {
+                  "target": "کرد",
+                  "translit": "kard"
+                },
+                {
+                  "target": "دید",
+                  "translit": "dīd"
+                }
+              ]
+            },
+            {
+              "id": "ge-80-3",
+              "type": "matchPairs",
+              "prompt": "Match plain and official",
+              "pairs": [
+                {
+                  "target": "تصمیم گرفت",
+                  "translit": "tasmīm gereft",
+                  "en": "he decided"
+                },
+                {
+                  "target": "تصمیم گرفته شد",
+                  "translit": "tasmīm gerefta shud",
+                  "en": "the decision was made"
+                },
+                {
+                  "target": "تمام کرد",
+                  "translit": "tamām kard",
+                  "en": "he finished"
+                },
+                {
+                  "target": "تمام گردید",
+                  "translit": "tamām gardīd",
+                  "en": "it was finished"
+                }
+              ]
+            },
+            {
+              "id": "ge-80-4",
+              "type": "buildSentence",
+              "en": "The letter was written. (formal)",
+              "words": [
+                {
+                  "target": "نامه",
+                  "translit": "nāma"
+                },
+                {
+                  "target": "نوشته",
+                  "translit": "neweshta"
+                },
+                {
+                  "target": "گردید",
+                  "translit": "gardīd"
+                }
+              ],
+              "translit": "nāma neweshta gardīd",
+              "extraWords": [
+                {
+                  "target": "کرد",
+                  "translit": "kard"
+                }
+              ]
+            },
+            {
+              "id": "ge-80-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "این کار انجام داده شد",
+              "translit": "īn kār anjām dāda shud",
+              "en": "This task was carried out.",
+              "distractorsTarget": [
+                {
+                  "target": "این کار را کردم",
+                  "translit": "īn kār rā kardam"
+                },
+                {
+                  "target": "این کار انجام می‌شود",
+                  "translit": "īn kār anjām mēshawad"
+                }
+              ]
+            },
+            {
+              "id": "ge-80-6",
+              "type": "spotError",
+              "target": "نامه امضا کرده شد توسط رئیس",
+              "translit": "nāma emzā karda shud tawassot-e ra'īs",
+              "en": "The letter was signed by the chief.",
+              "errorWord": {
+                "target": "کرده",
+                "translit": "karda"
+              },
+              "correction": {
+                "target": "شده",
+                "translit": "shuda"
+              },
+              "hint": "'was signed' pairs the participle with shudan, not kardan."
+            }
+          ]
+        },
+        {
+          "id": "gl-81",
+          "title": "Precision in meaning",
+          "subtitle": "manzūr, qasd, ma'nā",
+          "grammarPoint": "meaning-nuance",
+          "grammarPointEn": "Talking about meaning and intent precisely: manzūr (what one means), qasd (intention), ma'nā (the meaning of a word) - distinguishing subtle senses.",
+          "slides": [
+            {
+              "id": "gs-81-1",
+              "title": "Meaning vs intention",
+              "body": "ma'nā is the meaning of a word or phrase; manzūr is what a speaker means; qasd is intention (what one plans). Precise speakers keep them apart.",
+              "examples": [
+                {
+                  "target": "منظور من این بود",
+                  "translit": "manzūr-e man īn būd",
+                  "en": "What I meant was this.",
+                  "highlight": "منظور"
+                },
+                {
+                  "target": "معنی این کلمه چیست؟",
+                  "translit": "ma'nā-ye īn kalema chīst?",
+                  "en": "What is the meaning of this word?",
+                  "highlight": "معنی"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-81-1",
+              "type": "fillBlank",
+              "target": "___ من این بود",
+              "translit": "___ man īn būd",
+              "en": "What I meant was this.",
+              "answer": {
+                "target": "منظور",
+                "translit": "manzūr"
+              },
+              "distractors": [
+                {
+                  "target": "معنی",
+                  "translit": "ma'nā"
+                },
+                {
+                  "target": "قصد",
+                  "translit": "qasd"
+                }
+              ]
+            },
+            {
+              "id": "ge-81-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "معنی این کلمه چیست؟",
+              "translit": "ma'nā-ye īn kalema chīst?",
+              "en": "What is the meaning of this word?",
+              "distractorsEn": [
+                "What is your intention?",
+                "What is this word's name?"
+              ]
+            },
+            {
+              "id": "ge-81-3",
+              "type": "matchPairs",
+              "prompt": "Match the fine senses",
+              "pairs": [
+                {
+                  "target": "معنی",
+                  "translit": "ma'nā",
+                  "en": "meaning (of a word)"
+                },
+                {
+                  "target": "منظور",
+                  "translit": "manzūr",
+                  "en": "what one means"
+                },
+                {
+                  "target": "قصد",
+                  "translit": "qasd",
+                  "en": "intention"
+                },
+                {
+                  "target": "کلمه",
+                  "translit": "kalema",
+                  "en": "word"
+                }
+              ]
+            },
+            {
+              "id": "ge-81-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "قصد رفتن داشتم",
+              "translit": "qasd-e raftan dāshtam",
+              "en": "I intended to go.",
+              "distractorsTarget": [
+                {
+                  "target": "معنی رفتن را دانستم",
+                  "translit": "ma'nā-ye raftan rā dānistam"
+                },
+                {
+                  "target": "منظور رفتن بود",
+                  "translit": "manzūr raftan būd"
+                }
+              ]
+            },
+            {
+              "id": "ge-81-5",
+              "type": "fillBlank",
+              "target": "___ این کلمه را نمی‌دانم",
+              "translit": "___ īn kalema rā namēdānam",
+              "en": "I don't know the meaning of this word.",
+              "answer": {
+                "target": "معنی",
+                "translit": "ma'nā"
+              },
+              "distractors": [
+                {
+                  "target": "قصد",
+                  "translit": "qasd"
+                },
+                {
+                  "target": "خیال",
+                  "translit": "khayāl"
+                }
+              ]
+            },
+            {
+              "id": "ge-81-6",
+              "type": "spotError",
+              "target": "قصد این کلمه چیست؟",
+              "translit": "qasd-e īn kalema chīst?",
+              "en": "What is the meaning of this word?",
+              "errorWord": {
+                "target": "قصد",
+                "translit": "qasd"
+              },
+              "correction": {
+                "target": "معنی",
+                "translit": "ma'nā"
+              },
+              "hint": "A word has a ma'nā (meaning); qasd is a person's intention."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-27",
+      "title": "Literary Shapes",
+      "subtitle": "Emphasis, inversion, heavy phrases",
+      "lessons": [
+        {
+          "id": "gl-82",
+          "title": "The emphatic self",
+          "subtitle": "khud and its weight",
+          "grammarPoint": "emphatic-khud",
+          "grammarPointEn": "Emphatic and reflexive khud: khudam āmadam (I myself came), khud-e ra'īs (the chief himself); doubling for strong emphasis.",
+          "slides": [
+            {
+              "id": "gs-82-1",
+              "title": "…himself, …myself",
+              "body": "khud plus a possessive gives emphasis: khudam (myself), khud-e ō (himself). Placed by the subject, it stresses 'that very one, in person'.",
+              "examples": [
+                {
+                  "target": "خودم او را دیدم",
+                  "translit": "khudam ō rā dīdam",
+                  "en": "I myself saw him.",
+                  "highlight": "خودم"
+                },
+                {
+                  "target": "خود رئیس آمد",
+                  "translit": "khud-e ra'īs āmad",
+                  "en": "The chief himself came.",
+                  "highlight": "خود رئیس"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-82-1",
+              "type": "fillBlank",
+              "target": "___ او را دیدم",
+              "translit": "___ ō rā dīdam",
+              "en": "I myself saw him.",
+              "answer": {
+                "target": "خودم",
+                "translit": "khudam"
+              },
+              "distractors": [
+                {
+                  "target": "خودت",
+                  "translit": "khudat"
+                },
+                {
+                  "target": "خودش",
+                  "translit": "khudash"
+                }
+              ]
+            },
+            {
+              "id": "ge-82-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "خود رئیس آمد",
+              "translit": "khud-e ra'īs āmad",
+              "en": "The chief himself came.",
+              "distractorsEn": [
+                "The chief's friend came.",
+                "The chief came for himself."
+              ]
+            },
+            {
+              "id": "ge-82-3",
+              "type": "matchPairs",
+              "prompt": "Match the emphatic forms",
+              "pairs": [
+                {
+                  "target": "خودم",
+                  "translit": "khudam",
+                  "en": "myself"
+                },
+                {
+                  "target": "خودت",
+                  "translit": "khudat",
+                  "en": "yourself"
+                },
+                {
+                  "target": "خودش",
+                  "translit": "khudash",
+                  "en": "himself"
+                },
+                {
+                  "target": "خود ما",
+                  "translit": "khud-e mā",
+                  "en": "ourselves"
+                }
+              ]
+            },
+            {
+              "id": "ge-82-4",
+              "type": "buildSentence",
+              "en": "I did the work myself.",
+              "words": [
+                {
+                  "target": "کار را",
+                  "translit": "kār rā"
+                },
+                {
+                  "target": "خودم",
+                  "translit": "khudam"
+                },
+                {
+                  "target": "کردم",
+                  "translit": "kardam"
+                }
+              ],
+              "translit": "kār rā khudam kardam",
+              "extraWords": [
+                {
+                  "target": "خودش",
+                  "translit": "khudash"
+                }
+              ],
+              "altOrders": [
+                [
+                  "خودم",
+                  "کار را",
+                  "کردم"
+                ]
+              ]
+            },
+            {
+              "id": "ge-82-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "خودت این را نوشتی؟",
+              "translit": "khudat īn rā neweshti?",
+              "en": "Did you write this yourself?",
+              "distractorsTarget": [
+                {
+                  "target": "خودم این را نوشتم؟",
+                  "translit": "khudam īn rā neweshtam?"
+                },
+                {
+                  "target": "این را نوشتی؟",
+                  "translit": "īn rā neweshti?"
+                }
+              ]
+            },
+            {
+              "id": "ge-82-6",
+              "type": "fillBlank",
+              "target": "___ رئیس نامه را امضا کرد",
+              "translit": "___ ra'īs nāma rā emzā kard",
+              "en": "The chief himself signed the letter.",
+              "answer": {
+                "target": "خود",
+                "translit": "khud-e"
+              },
+              "distractors": [
+                {
+                  "target": "خودم",
+                  "translit": "khudam"
+                },
+                {
+                  "target": "برای",
+                  "translit": "barāye"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-83",
+          "title": "Fronting for effect",
+          "subtitle": "Marked word order",
+          "grammarPoint": "fronting",
+          "grammarPointEn": "Marked word order: moving an object or adverb to the front for emphasis, keeping the verb final: īn ketāb rā man khāndam (THIS book, I read).",
+          "slides": [
+            {
+              "id": "gs-83-1",
+              "title": "Put the focus first",
+              "body": "Dari usually runs subject–object–verb, but you can front the element you want to stress. 'This book, I read' puts the spotlight on the book.",
+              "examples": [
+                {
+                  "target": "این کتاب را من خواندم",
+                  "translit": "īn ketāb rā man khāndam",
+                  "en": "This book, I read (it).",
+                  "highlight": "این کتاب را"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-83-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "این کتاب را من خواندم",
+              "translit": "īn ketāb rā man khāndam",
+              "en": "This book, I read.",
+              "distractorsEn": [
+                "I read a book.",
+                "This is the book I write."
+              ]
+            },
+            {
+              "id": "ge-83-2",
+              "type": "buildSentence",
+              "en": "That letter, he wrote (it).",
+              "words": [
+                {
+                  "target": "آن نامه را",
+                  "translit": "ān nāma rā"
+                },
+                {
+                  "target": "او",
+                  "translit": "ō"
+                },
+                {
+                  "target": "نوشت",
+                  "translit": "newesht"
+                }
+              ],
+              "translit": "ān nāma rā ō newesht",
+              "extraWords": [
+                {
+                  "target": "نوشتم",
+                  "translit": "neweshtam"
+                }
+              ],
+              "altOrders": [
+                [
+                  "او",
+                  "آن نامه را",
+                  "نوشت"
+                ]
+              ]
+            },
+            {
+              "id": "ge-83-3",
+              "type": "spotError",
+              "target": "این کار را من می‌کند",
+              "translit": "īn kār rā man mēkunad",
+              "en": "This work, I do (it).",
+              "errorWord": {
+                "target": "می‌کند",
+                "translit": "mēkunad"
+              },
+              "correction": {
+                "target": "می‌کنم",
+                "translit": "mēkunam"
+              },
+              "hint": "Even when fronted, the verb agrees with the subject 'I'."
+            },
+            {
+              "id": "ge-83-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "امروز به کابل می‌رویم",
+              "translit": "emrōz ba kābul mērawēm",
+              "en": "Today, we go to Kabul.",
+              "distractorsTarget": [
+                {
+                  "target": "به کابل امروز می‌رویم",
+                  "translit": "ba kābul emrōz mērawēm"
+                },
+                {
+                  "target": "امروز کابل را می‌بینیم",
+                  "translit": "emrōz kābul rā mēbīnēm"
+                }
+              ]
+            },
+            {
+              "id": "ge-83-5",
+              "type": "matchPairs",
+              "prompt": "Match neutral and fronted",
+              "pairs": [
+                {
+                  "target": "من کتاب را خواندم",
+                  "translit": "man ketāb rā khāndam",
+                  "en": "I read the book"
+                },
+                {
+                  "target": "کتاب را من خواندم",
+                  "translit": "ketāb rā man khāndam",
+                  "en": "the book, I read"
+                },
+                {
+                  "target": "او نامه نوشت",
+                  "translit": "ō nāma newesht",
+                  "en": "he wrote a letter"
+                },
+                {
+                  "target": "نامه را او نوشت",
+                  "translit": "nāma rā ō newesht",
+                  "en": "the letter, he wrote"
+                }
+              ]
+            },
+            {
+              "id": "ge-83-6",
+              "type": "fillBlank",
+              "target": "این نان را ___ خوردم",
+              "translit": "īn nān rā ___ khurdam",
+              "en": "This bread, I ate.",
+              "answer": {
+                "target": "من",
+                "translit": "man"
+              },
+              "distractors": [
+                {
+                  "target": "او",
+                  "translit": "ō"
+                },
+                {
+                  "target": "آنها",
+                  "translit": "ānhā"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-84",
+          "title": "Heavy noun phrases",
+          "subtitle": "Long ezafe chains",
+          "grammarPoint": "ezafe-chains",
+          "grammarPointEn": "Reading long ezāfa chains that stack modifiers and possessors: ketāb-e naw-e mu'allem-e mektab-e mā (our school's teacher's new book).",
+          "slides": [
+            {
+              "id": "gs-84-1",
+              "title": "Following the chain",
+              "body": "Formal Dari builds long ezāfa chains, each -e linking to the next. Read them from the head noun outward: 'book - new - of the teacher - of our school'.",
+              "examples": [
+                {
+                  "target": "کتاب نو معلم مکتب ما",
+                  "translit": "ketāb-e naw-e mu'allem-e maktab-e mā",
+                  "en": "The new book of our school's teacher.",
+                  "highlight": "معلم مکتب ما"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-84-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "کتاب نو معلم مکتب ما",
+              "translit": "ketāb-e naw-e mu'allem-e maktab-e mā",
+              "en": "The new book of our school's teacher.",
+              "distractorsEn": [
+                "Our teacher's new school book.",
+                "The teacher of our new book's school."
+              ]
+            },
+            {
+              "id": "ge-84-2",
+              "type": "buildSentence",
+              "en": "The door of my father's house.",
+              "words": [
+                {
+                  "target": "دروازه",
+                  "translit": "darwāza-ye"
+                },
+                {
+                  "target": "خانه",
+                  "translit": "khāna-ye"
+                },
+                {
+                  "target": "پدر",
+                  "translit": "padar-e"
+                },
+                {
+                  "target": "من",
+                  "translit": "man"
+                }
+              ],
+              "translit": "darwāza-ye khāna-ye padar-e man",
+              "extraWords": [
+                {
+                  "target": "را",
+                  "translit": "rā"
+                }
+              ]
+            },
+            {
+              "id": "ge-84-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "نام دوست خوب برادر من",
+              "translit": "nām-e dōst-e khōb-e barādar-e man",
+              "en": "The name of my brother's good friend.",
+              "distractorsEn": [
+                "My good friend's brother's name.",
+                "The good name of my brother's friend."
+              ]
+            },
+            {
+              "id": "ge-84-4",
+              "type": "matchPairs",
+              "prompt": "Match phrase and meaning",
+              "pairs": [
+                {
+                  "target": "خانه پدر من",
+                  "translit": "khāna-ye padar-e man",
+                  "en": "my father's house"
+                },
+                {
+                  "target": "کتاب معلم",
+                  "translit": "ketāb-e mu'allem",
+                  "en": "the teacher's book"
+                },
+                {
+                  "target": "دوست خوب من",
+                  "translit": "dōst-e khōb-e man",
+                  "en": "my good friend"
+                },
+                {
+                  "target": "شهر کلان ما",
+                  "translit": "shahr-e kalān-e mā",
+                  "en": "our big city"
+                }
+              ]
+            },
+            {
+              "id": "ge-84-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "قلم نو دختر معلم",
+              "translit": "qalam-e naw-e dukhtar-e mu'allem",
+              "en": "The teacher's daughter's new pen.",
+              "distractorsTarget": [
+                {
+                  "target": "قلم نو معلم دختر",
+                  "translit": "qalam-e naw-e mu'allem-e dukhtar"
+                },
+                {
+                  "target": "دختر معلم قلم نو",
+                  "translit": "dukhtar-e mu'allem-e qalam-e naw"
+                }
+              ]
+            },
+            {
+              "id": "ge-84-6",
+              "type": "fillBlank",
+              "target": "کتاب ___ برادر من مقبول است",
+              "translit": "ketāb-e ___ barādar-e man maqbūl ast",
+              "en": "My brother's new book is beautiful.",
+              "answer": {
+                "target": "نو",
+                "translit": "naw-e"
+              },
+              "distractors": [
+                {
+                  "target": "را",
+                  "translit": "rā"
+                },
+                {
+                  "target": "با",
+                  "translit": "bā"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-28",
+      "title": "Idiom & Image",
+      "subtitle": "Sayings and figurative language",
+      "lessons": [
+        {
+          "id": "gl-85",
+          "title": "Words of wisdom",
+          "subtitle": "Proverbs",
+          "grammarPoint": "proverbs",
+          "grammarPointEn": "Understanding common proverbs (zarb-ul-masal) whose meaning is figurative rather than literal.",
+          "slides": [
+            {
+              "id": "gs-85-1",
+              "title": "Meaning beyond the words",
+              "body": "Proverbs carry a lesson under a literal picture. Learn a few common ones and their intended sense.",
+              "examples": [
+                {
+                  "target": "قطره قطره دریا می‌شود",
+                  "translit": "qatra qatra daryā mēshawad",
+                  "en": "Drop by drop it becomes a river. (small efforts add up)",
+                  "highlight": "قطره قطره"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-85-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "قطره قطره دریا می‌شود",
+              "translit": "qatra qatra daryā mēshawad",
+              "en": "Small efforts add up over time.",
+              "distractorsEn": [
+                "Rivers are made of water.",
+                "A drop cannot fill a river."
+              ]
+            },
+            {
+              "id": "ge-85-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "کار امروز را به فردا نکن",
+              "translit": "kār-e emrōz rā ba fardā nakun",
+              "en": "Don't leave today's work for tomorrow.",
+              "distractorsEn": [
+                "Do tomorrow's work today.",
+                "Today's work is for tomorrow."
+              ]
+            },
+            {
+              "id": "ge-85-3",
+              "type": "matchPairs",
+              "prompt": "Match proverb and lesson",
+              "pairs": [
+                {
+                  "target": "قطره قطره دریا می‌شود",
+                  "translit": "qatra qatra daryā mēshawad",
+                  "en": "small efforts add up"
+                },
+                {
+                  "target": "وقت طلا است",
+                  "translit": "waqt talā ast",
+                  "en": "time is precious"
+                },
+                {
+                  "target": "کتاب بهترین دوست است",
+                  "translit": "ketāb bihtarīn dōst ast",
+                  "en": "a book is the best friend"
+                },
+                {
+                  "target": "وقت رفته باز نمی‌آید",
+                  "translit": "waqt-e rafta bāz namēāyad",
+                  "en": "lost time never returns"
+                }
+              ]
+            },
+            {
+              "id": "ge-85-4",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "وقت طلا است",
+              "translit": "waqt talā ast",
+              "en": "Time is precious.",
+              "distractorsEn": [
+                "Gold takes time.",
+                "Time is money to buy gold."
+              ]
+            },
+            {
+              "id": "ge-85-5",
+              "type": "fillBlank",
+              "target": "قطره قطره ___ می‌شود",
+              "translit": "qatra qatra ___ mēshawad",
+              "en": "Drop by drop it becomes a river.",
+              "answer": {
+                "target": "دریا",
+                "translit": "daryā"
+              },
+              "distractors": [
+                {
+                  "target": "کوه",
+                  "translit": "kōh"
+                },
+                {
+                  "target": "باران",
+                  "translit": "bārān"
+                }
+              ]
+            },
+            {
+              "id": "ge-85-6",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "دیر آی و درست آی",
+              "translit": "dēr āy wa durust āy",
+              "en": "Better to arrive late but do it right.",
+              "distractorsEn": [
+                "Come late and leave right.",
+                "Right people come late."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-86",
+          "title": "The language of the body",
+          "subtitle": "Idioms with dil, dast, sar",
+          "grammarPoint": "body-idioms",
+          "grammarPointEn": "Figurative idioms built on body parts: dil (heart) for feeling, dast (hand) for action/possession, sar (head) for mind/beginning.",
+          "slides": [
+            {
+              "id": "gs-86-1",
+              "title": "Body parts, big meanings",
+              "body": "dil (heart) carries emotion, dast (hand) carries action or having, sar (head) carries thought. dilam mēkhāhad - 'my heart wants', i.e. 'I feel like'.",
+              "examples": [
+                {
+                  "target": "دلم می‌خواهد بروم",
+                  "translit": "dilam mēkhāhad burawam",
+                  "en": "I feel like going.",
+                  "highlight": "دلم می‌خواهد"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-86-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "دلم می‌خواهد بروم",
+              "translit": "dilam mēkhāhad burawam",
+              "en": "I feel like going.",
+              "distractorsEn": [
+                "My heart is going.",
+                "I must go."
+              ]
+            },
+            {
+              "id": "ge-86-2",
+              "type": "matchPairs",
+              "prompt": "Match the body idioms",
+              "pairs": [
+                {
+                  "target": "دلم می‌خواهد",
+                  "translit": "dilam mēkhāhad",
+                  "en": "I feel like"
+                },
+                {
+                  "target": "از دست دادن",
+                  "translit": "az dast dādan",
+                  "en": "to lose"
+                },
+                {
+                  "target": "به سر بردن",
+                  "translit": "ba sar burdan",
+                  "en": "to spend (time)"
+                },
+                {
+                  "target": "به یاد داشتن",
+                  "translit": "ba yād dāshtan",
+                  "en": "to keep in mind"
+                }
+              ]
+            },
+            {
+              "id": "ge-86-3",
+              "type": "fillBlank",
+              "target": "___ می‌خواهد چای بخورم",
+              "translit": "___ mēkhāhad chāy bukhuram",
+              "en": "I feel like drinking tea.",
+              "answer": {
+                "target": "دلم",
+                "translit": "dilam"
+              },
+              "distractors": [
+                {
+                  "target": "سرم",
+                  "translit": "saram"
+                },
+                {
+                  "target": "دستم",
+                  "translit": "dastam"
+                }
+              ]
+            },
+            {
+              "id": "ge-86-4",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "روز را به کار به سر برد",
+              "translit": "rōz rā ba kār ba sar burd",
+              "en": "He spent the day working.",
+              "distractorsEn": [
+                "He carried work on his head.",
+                "He worked for a day's pay."
+              ]
+            },
+            {
+              "id": "ge-86-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "دلش نمی‌خواهد بیاید",
+              "translit": "dilash namēkhāhad biāyad",
+              "en": "He doesn't feel like coming.",
+              "distractorsTarget": [
+                {
+                  "target": "دلم نمی‌خواهد بیایم",
+                  "translit": "dilam namēkhāhad biāyam"
+                },
+                {
+                  "target": "او نمی‌خواهد بیاید",
+                  "translit": "ō namēkhāhad biāyad"
+                }
+              ]
+            },
+            {
+              "id": "ge-86-6",
+              "type": "spotError",
+              "target": "سرم می‌خواهد بخوابم",
+              "translit": "saram mēkhāhad bukhābam",
+              "en": "I feel like sleeping.",
+              "errorWord": {
+                "target": "سرم",
+                "translit": "saram"
+              },
+              "correction": {
+                "target": "دلم",
+                "translit": "dilam"
+              },
+              "hint": "'To feel like' uses dil (heart), not sar (head)."
+            }
+          ]
+        },
+        {
+          "id": "gl-87",
+          "title": "Figurative light verbs",
+          "subtitle": "Metaphor in everyday verbs",
+          "grammarPoint": "figurative-verbs",
+          "grammarPointEn": "Light-verb expressions with figurative meaning: ba dast āwardan (to gain), az dast dādan (to lose), ba kār burdan (to employ/use).",
+          "slides": [
+            {
+              "id": "gs-87-1",
+              "title": "Verbs that carry images",
+              "body": "Many abstract meanings ride on concrete verbs. ba dast āwardan (bring to hand) = 'gain'; ba kār burdan (carry to work) = 'use/apply'.",
+              "examples": [
+                {
+                  "target": "تجربه به دست آورد",
+                  "translit": "tajroba ba dast āward",
+                  "en": "He gained experience.",
+                  "highlight": "به دست آورد"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-87-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "تجربه به دست آورد",
+              "translit": "tajroba ba dast āward",
+              "en": "He gained experience.",
+              "distractorsEn": [
+                "He lost experience.",
+                "He gave experience by hand."
+              ]
+            },
+            {
+              "id": "ge-87-2",
+              "type": "matchPairs",
+              "prompt": "Match the figurative verbs",
+              "pairs": [
+                {
+                  "target": "به دست آوردن",
+                  "translit": "ba dast āwardan",
+                  "en": "to gain"
+                },
+                {
+                  "target": "از دست دادن",
+                  "translit": "az dast dādan",
+                  "en": "to lose"
+                },
+                {
+                  "target": "به کار بردن",
+                  "translit": "ba kār burdan",
+                  "en": "to use"
+                },
+                {
+                  "target": "به یاد آوردن",
+                  "translit": "ba yād āwardan",
+                  "en": "to recall"
+                }
+              ]
+            },
+            {
+              "id": "ge-87-3",
+              "type": "fillBlank",
+              "target": "این کلمه را در نوشته خود به کار ___",
+              "translit": "īn kalema rā dar neweshta-ye khud ba kār ___",
+              "en": "He used this word in his writing.",
+              "answer": {
+                "target": "برد",
+                "translit": "burd"
+              },
+              "distractors": [
+                {
+                  "target": "داد",
+                  "translit": "dād"
+                },
+                {
+                  "target": "آورد",
+                  "translit": "āward"
+                }
+              ]
+            },
+            {
+              "id": "ge-87-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "او فرصت خود را از دست داد",
+              "translit": "ō forsat-e khud rā az dast dād",
+              "en": "He lost his opportunity.",
+              "distractorsTarget": [
+                {
+                  "target": "او فرصت خود را به دست آورد",
+                  "translit": "ō forsat-e khud rā ba dast āward"
+                },
+                {
+                  "target": "او فرصت خود را به کار برد",
+                  "translit": "ō forsat-e khud rā ba kār burd"
+                }
+              ]
+            },
+            {
+              "id": "ge-87-5",
+              "type": "spotError",
+              "target": "تجربه از دست آورد",
+              "translit": "tajroba az dast āward",
+              "en": "He gained experience.",
+              "errorWord": {
+                "target": "از",
+                "translit": "az"
+              },
+              "correction": {
+                "target": "به",
+                "translit": "ba"
+              },
+              "hint": "'To gain' is ba dast (to hand), not az dast (from hand)."
+            },
+            {
+              "id": "ge-87-6",
+              "type": "buildSentence",
+              "en": "He used this idea.",
+              "words": [
+                {
+                  "target": "این خیال را",
+                  "translit": "īn khayāl rā"
+                },
+                {
+                  "target": "به کار",
+                  "translit": "ba kār"
+                },
+                {
+                  "target": "برد",
+                  "translit": "burd"
+                }
+              ],
+              "translit": "īn khayāl rā ba kār burd",
+              "extraWords": [
+                {
+                  "target": "داد",
+                  "translit": "dād"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-29",
+      "title": "Discourse Mastery",
+      "subtitle": "Structuring long argument",
+      "lessons": [
+        {
+          "id": "gl-88",
+          "title": "On one hand, on the other",
+          "subtitle": "Balancing two sides",
+          "grammarPoint": "balancing",
+          "grammarPointEn": "Weighing arguments with az yak sū / az yak taraf … az sū-ye dīgar / az taraf-e dīgar (on one hand … on the other).",
+          "slides": [
+            {
+              "id": "gs-88-1",
+              "title": "Two sides of a case",
+              "body": "To present balanced views, open with az yak sū (on one hand) and answer with az sū-ye dīgar (on the other). It signals fair, structured argument.",
+              "examples": [
+                {
+                  "target": "از یک سو خوب است، از سوی دیگر گران است",
+                  "translit": "az yak sū khōb ast, az sū-ye dīgar gerān ast",
+                  "en": "On one hand it's good, on the other it's expensive.",
+                  "highlight": "از یک سو"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-88-1",
+              "type": "fillBlank",
+              "target": "___ خوب است، از سوی دیگر گران است",
+              "translit": "___ khōb ast, az sū-ye dīgar gerān ast",
+              "en": "On one hand it's good, on the other it's expensive.",
+              "answer": {
+                "target": "از یک سو",
+                "translit": "az yak sū"
+              },
+              "distractors": [
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche"
+                },
+                {
+                  "target": "بنابراین",
+                  "translit": "binābar'īn"
+                }
+              ]
+            },
+            {
+              "id": "ge-88-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "از یک طرف آسان، از طرف دیگر خطرناک است",
+              "translit": "az yak taraf āsān, az taraf-e dīgar khatarnāk ast",
+              "en": "On one hand easy, on the other dangerous.",
+              "distractorsEn": [
+                "It is easy and safe.",
+                "One way is dangerous and hard."
+              ]
+            },
+            {
+              "id": "ge-88-3",
+              "type": "buildSentence",
+              "en": "On one hand he is tired, on the other he is happy.",
+              "words": [
+                {
+                  "target": "از یک سو",
+                  "translit": "az yak sū"
+                },
+                {
+                  "target": "مانده است",
+                  "translit": "mānda ast"
+                },
+                {
+                  "target": "از سوی دیگر",
+                  "translit": "az sū-ye dīgar"
+                },
+                {
+                  "target": "خوش است",
+                  "translit": "khush ast"
+                }
+              ],
+              "translit": "az yak sū mānda ast, az sū-ye dīgar khush ast",
+              "extraWords": [
+                {
+                  "target": "بنابراین",
+                  "translit": "binābar'īn"
+                }
+              ]
+            },
+            {
+              "id": "ge-88-4",
+              "type": "matchPairs",
+              "prompt": "Match the balancing phrases",
+              "pairs": [
+                {
+                  "target": "از یک سو",
+                  "translit": "az yak sū",
+                  "en": "on one hand"
+                },
+                {
+                  "target": "از سوی دیگر",
+                  "translit": "az sū-ye dīgar",
+                  "en": "on the other hand"
+                },
+                {
+                  "target": "به هر حال",
+                  "translit": "ba har hāl",
+                  "en": "in any case"
+                },
+                {
+                  "target": "بنابراین",
+                  "translit": "binābar'īn",
+                  "en": "therefore"
+                }
+              ]
+            },
+            {
+              "id": "ge-88-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "به هر حال، ما می‌رویم",
+              "translit": "ba har hāl, mā mērawēm",
+              "en": "In any case, we are going.",
+              "distractorsTarget": [
+                {
+                  "target": "از یک سو، ما می‌رویم",
+                  "translit": "az yak sū, mā mērawēm"
+                },
+                {
+                  "target": "بنابراین ما می‌رویم",
+                  "translit": "binābar'īn mā mērawēm"
+                }
+              ]
+            },
+            {
+              "id": "ge-88-6",
+              "type": "fillBlank",
+              "target": "از یک سو ارزان، ___ خراب است",
+              "translit": "az yak sū arzān, ___ kharāb ast",
+              "en": "On one hand cheap, on the other broken.",
+              "answer": {
+                "target": "از سوی دیگر",
+                "translit": "az sū-ye dīgar"
+              },
+              "distractors": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                },
+                {
+                  "target": "وگرنه",
+                  "translit": "wa gar na"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-89",
+          "title": "Hedging your claim",
+          "subtitle": "ehtemālan, ba gumān-e man",
+          "grammarPoint": "hedging-stance",
+          "grammarPointEn": "Marking stance and probability: ehtemālan (probably), ba gumān-e man (in my opinion), ba har hāl (in any case).",
+          "slides": [
+            {
+              "id": "gs-89-1",
+              "title": "How sure are you?",
+              "body": "Careful writers mark how strongly they claim something: ehtemālan (probably), ba gumān-e man (in my view). These soften or frame an assertion.",
+              "examples": [
+                {
+                  "target": "احتمالاً فردا می‌آید",
+                  "translit": "ehtemālan fardā mēāyad",
+                  "en": "He'll probably come tomorrow.",
+                  "highlight": "احتمالاً"
+                },
+                {
+                  "target": "به گمان من، این درست است",
+                  "translit": "ba gumān-e man, īn durust ast",
+                  "en": "In my opinion, this is right.",
+                  "highlight": "به گمان من"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-89-1",
+              "type": "fillBlank",
+              "target": "___ فردا می‌آید",
+              "translit": "___ fardā mēāyad",
+              "en": "He'll probably come tomorrow.",
+              "answer": {
+                "target": "احتمالاً",
+                "translit": "ehtemālan"
+              },
+              "distractors": [
+                {
+                  "target": "حتماً",
+                  "translit": "hatman"
+                },
+                {
+                  "target": "هرگز",
+                  "translit": "hargez"
+                }
+              ]
+            },
+            {
+              "id": "ge-89-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "به گمان من، این درست است",
+              "translit": "ba gumān-e man, īn durust ast",
+              "en": "In my opinion, this is right.",
+              "distractorsEn": [
+                "I am sure this is wrong.",
+                "In his opinion, this is right."
+              ]
+            },
+            {
+              "id": "ge-89-3",
+              "type": "matchPairs",
+              "prompt": "Match the stance markers",
+              "pairs": [
+                {
+                  "target": "احتمالاً",
+                  "translit": "ehtemālan",
+                  "en": "probably"
+                },
+                {
+                  "target": "حتماً",
+                  "translit": "hatman",
+                  "en": "certainly"
+                },
+                {
+                  "target": "به گمان من",
+                  "translit": "ba gumān-e man",
+                  "en": "in my opinion"
+                },
+                {
+                  "target": "شاید",
+                  "translit": "shāyad",
+                  "en": "maybe"
+                }
+              ]
+            },
+            {
+              "id": "ge-89-4",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "احتمالاً او رفته است",
+              "translit": "ehtemālan ō rafta ast",
+              "en": "He has probably gone.",
+              "distractorsTarget": [
+                {
+                  "target": "حتماً او رفته است",
+                  "translit": "hatman ō rafta ast"
+                },
+                {
+                  "target": "او هرگز نرفته است",
+                  "translit": "ō hargez narafta ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-89-5",
+              "type": "spotError",
+              "target": "هرگز فردا می‌آید",
+              "translit": "hargez fardā mēāyad",
+              "en": "He'll probably come tomorrow.",
+              "errorWord": {
+                "target": "هرگز",
+                "translit": "hargez"
+              },
+              "correction": {
+                "target": "احتمالاً",
+                "translit": "ehtemālan"
+              },
+              "hint": "'Probably' is ehtemālan; hargez means 'never'."
+            },
+            {
+              "id": "ge-89-6",
+              "type": "fillBlank",
+              "target": "به ___ من، کار سخت است",
+              "translit": "ba ___ man, kār sakht ast",
+              "en": "In my opinion, the work is hard.",
+              "answer": {
+                "target": "گمان",
+                "translit": "gumān"
+              },
+              "distractors": [
+                {
+                  "target": "دست",
+                  "translit": "dast"
+                },
+                {
+                  "target": "یاد",
+                  "translit": "yād"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-90",
+          "title": "Layered concession",
+          "subtitle": "Stacking counter-arguments",
+          "grammarPoint": "layered-concession",
+          "grammarPointEn": "Building a nuanced argument by stacking concession and result: agarche … amā … bā īn ham … (although … but … even so …).",
+          "slides": [
+            {
+              "id": "gs-90-1",
+              "title": "Grant, counter, conclude",
+              "body": "A sophisticated argument concedes a point (agarche), counters it (amā), and still concludes (bā īn ham / bāz ham). Layering these shows control.",
+              "examples": [
+                {
+                  "target": "اگرچه سخت بود، اما با این هم موفق شد",
+                  "translit": "agarche sakht būd, amā bā īn ham muwaffaq shud",
+                  "en": "Although it was hard, but even so he succeeded.",
+                  "highlight": "با این هم"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-90-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "اگرچه سخت بود، اما با این هم کرد",
+              "translit": "agarche sakht būd, amā bā īn ham kard",
+              "en": "Although it was hard, even so he did it.",
+              "distractorsEn": [
+                "Because it was hard, he did it.",
+                "It was hard, so he didn't do it."
+              ]
+            },
+            {
+              "id": "ge-90-2",
+              "type": "fillBlank",
+              "target": "اگرچه مانده بود، اما ___ کار کرد",
+              "translit": "agarche mānda būd, amā ___ kār kard",
+              "en": "Although he was tired, even so he worked.",
+              "answer": {
+                "target": "با این هم",
+                "translit": "bā īn ham"
+              },
+              "distractors": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                },
+                {
+                  "target": "وگرنه",
+                  "translit": "wa gar na"
+                }
+              ]
+            },
+            {
+              "id": "ge-90-3",
+              "type": "buildSentence",
+              "en": "Although he was sick, even so he came.",
+              "words": [
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche"
+                },
+                {
+                  "target": "مریض بود",
+                  "translit": "marīz būd"
+                },
+                {
+                  "target": "با این هم",
+                  "translit": "bā īn ham"
+                },
+                {
+                  "target": "آمد",
+                  "translit": "āmad"
+                }
+              ],
+              "translit": "agarche marīz būd, bā īn ham āmad",
+              "extraWords": [
+                {
+                  "target": "چون",
+                  "translit": "chun"
+                }
+              ]
+            },
+            {
+              "id": "ge-90-4",
+              "type": "matchPairs",
+              "prompt": "Match the argument moves",
+              "pairs": [
+                {
+                  "target": "اگرچه",
+                  "translit": "agarche",
+                  "en": "although (concede)"
+                },
+                {
+                  "target": "اما",
+                  "translit": "amā",
+                  "en": "but (counter)"
+                },
+                {
+                  "target": "با این هم",
+                  "translit": "bā īn ham",
+                  "en": "even so (conclude)"
+                },
+                {
+                  "target": "بنابراین",
+                  "translit": "binābar'īn",
+                  "en": "therefore"
+                }
+              ]
+            },
+            {
+              "id": "ge-90-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "اگرچه پول نداشت، با این هم کتاب خرید",
+              "translit": "agarche pūl nadāsht, bā īn ham ketāb kharīd",
+              "en": "Although he had no money, even so he bought a book.",
+              "distractorsTarget": [
+                {
+                  "target": "چون پول نداشت، کتاب نخرید",
+                  "translit": "chun pūl nadāsht, ketāb nakharīd"
+                },
+                {
+                  "target": "پول نداشت بنابراین کتاب نخرید",
+                  "translit": "pūl nadāsht binābar'īn ketāb nakharīd"
+                }
+              ]
+            },
+            {
+              "id": "ge-90-6",
+              "type": "spotError",
+              "target": "اگرچه سرد بود، بنابراین رفتیم",
+              "translit": "agarche sard būd, binābar'īn raftēm",
+              "en": "Although it was cold, even so we went.",
+              "errorWord": {
+                "target": "بنابراین",
+                "translit": "binābar'īn"
+              },
+              "correction": {
+                "target": "با این هم",
+                "translit": "bā īn ham"
+              },
+              "hint": "After 'although', the answer is 'even so', not 'therefore'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-30",
+      "title": "Near-Native",
+      "subtitle": "The finishing touches",
+      "lessons": [
+        {
+          "id": "gl-91",
+          "title": "Precise time reference",
+          "subtitle": "hanōz, tā ba hāl, dēgar",
+          "grammarPoint": "precise-time",
+          "grammarPointEn": "Fine time reference: hanōz (still / not yet), tā ba hāl (until now, with the perfect), and dēgar in the sense of 'no longer'.",
+          "slides": [
+            {
+              "id": "gs-91-1",
+              "title": "Still, yet, no longer",
+              "body": "hanōz + negative = 'not yet'; tā ba hāl + perfect = 'until now'; dēgar + negative = 'no longer'. Small words, precise meanings.",
+              "examples": [
+                {
+                  "target": "او هنوز نیامده است",
+                  "translit": "ō hanōz nayāmada ast",
+                  "en": "He hasn't come yet.",
+                  "highlight": "هنوز"
+                },
+                {
+                  "target": "دیگر آنجا نمی‌روم",
+                  "translit": "dēgar ānjā namērawam",
+                  "en": "I no longer go there.",
+                  "highlight": "دیگر"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-91-1",
+              "type": "fillBlank",
+              "target": "او ___ نیامده است",
+              "translit": "ō ___ nayāmada ast",
+              "en": "He hasn't come yet.",
+              "answer": {
+                "target": "هنوز",
+                "translit": "hanōz"
+              },
+              "distractors": [
+                {
+                  "target": "دیگر",
+                  "translit": "dēgar"
+                },
+                {
+                  "target": "همیشه",
+                  "translit": "hamēsha"
+                }
+              ]
+            },
+            {
+              "id": "ge-91-2",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "دیگر آنجا نمی‌روم",
+              "translit": "dēgar ānjā namērawam",
+              "en": "I no longer go there.",
+              "distractorsEn": [
+                "I still go there.",
+                "I never went there."
+              ]
+            },
+            {
+              "id": "ge-91-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "تا به حال او را ندیده‌ام",
+              "translit": "tā ba hāl ō rā nadīda-am",
+              "en": "Until now I haven't seen him.",
+              "distractorsEn": [
+                "I saw him just now.",
+                "I will see him soon."
+              ]
+            },
+            {
+              "id": "ge-91-4",
+              "type": "spotError",
+              "target": "او دیگر نیامده است",
+              "translit": "ō dēgar nayāmada ast",
+              "en": "He hasn't come yet.",
+              "errorWord": {
+                "target": "دیگر",
+                "translit": "dēgar"
+              },
+              "correction": {
+                "target": "هنوز",
+                "translit": "hanōz"
+              },
+              "hint": "'Not yet' is hanōz; dēgar means 'no longer'."
+            },
+            {
+              "id": "ge-91-5",
+              "type": "buildSentence",
+              "en": "I still don't understand.",
+              "words": [
+                {
+                  "target": "هنوز",
+                  "translit": "hanōz"
+                },
+                {
+                  "target": "نمی‌فهمم",
+                  "translit": "namēfahmam"
+                }
+              ],
+              "translit": "hanōz namēfahmam",
+              "extraWords": [
+                {
+                  "target": "دیگر",
+                  "translit": "dēgar"
+                }
+              ]
+            },
+            {
+              "id": "ge-91-6",
+              "type": "matchPairs",
+              "prompt": "Match the time words",
+              "pairs": [
+                {
+                  "target": "هنوز",
+                  "translit": "hanōz",
+                  "en": "still / not yet"
+                },
+                {
+                  "target": "دیگر",
+                  "translit": "dēgar",
+                  "en": "no longer"
+                },
+                {
+                  "target": "تا به حال",
+                  "translit": "tā ba hāl",
+                  "en": "until now"
+                },
+                {
+                  "target": "همیشه",
+                  "translit": "hamēsha",
+                  "en": "always"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-92",
+          "title": "Switching register in context",
+          "subtitle": "Reading the situation",
+          "grammarPoint": "register-switching",
+          "grammarPointEn": "Choosing register by situation: familiar tu and simple verbs with friends; polite shumā, honorifics and formal verbs in official or written contexts.",
+          "slides": [
+            {
+              "id": "gs-92-1",
+              "title": "Match your words to the room",
+              "body": "Near-native command means switching register smoothly: casual with friends (tu, kardan), formal with officials or in writing (shumā, namūdan, honorifics). Reading which fits is the final skill.",
+              "examples": [
+                {
+                  "target": "به دوست: بیا برویم",
+                  "translit": "ba dōst: biā burawēm",
+                  "en": "To a friend: come, let's go.",
+                  "highlight": "بیا"
+                },
+                {
+                  "target": "به رئیس: لطفاً تشریف بیاورید",
+                  "translit": "ba ra'īs: lutfan tashrīf biāwarēd",
+                  "en": "To an official: please come.",
+                  "highlight": "تشریف"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-92-1",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "لطفاً تشریف بیاورید",
+              "translit": "lutfan tashrīf biāwarēd",
+              "en": "Please come. (formal)",
+              "distractorsEn": [
+                "Come here! (to a friend)",
+                "I will come, please."
+              ]
+            },
+            {
+              "id": "ge-92-2",
+              "type": "fillBlank",
+              "target": "به دوست خود بگو: ___ برویم",
+              "translit": "ba dōst-e khud bugō: ___ burawēm",
+              "en": "Tell your friend: come, let's go.",
+              "answer": {
+                "target": "بیا",
+                "translit": "biā"
+              },
+              "distractors": [
+                {
+                  "target": "تشریف بیاورید",
+                  "translit": "tashrīf biāwarēd"
+                },
+                {
+                  "target": "بیایید",
+                  "translit": "biāyēd"
+                }
+              ]
+            },
+            {
+              "id": "ge-92-3",
+              "type": "matchPairs",
+              "prompt": "Match casual and formal",
+              "pairs": [
+                {
+                  "target": "بیا",
+                  "translit": "biā",
+                  "en": "come (to a friend)"
+                },
+                {
+                  "target": "تشریف بیاورید",
+                  "translit": "tashrīf biāwarēd",
+                  "en": "come (to an official)"
+                },
+                {
+                  "target": "کرد",
+                  "translit": "kard",
+                  "en": "did (everyday)"
+                },
+                {
+                  "target": "نمود",
+                  "translit": "namūd",
+                  "en": "did (formal)"
+                }
+              ]
+            },
+            {
+              "id": "ge-92-4",
+              "type": "spotError",
+              "target": "جناب رئیس، بیا اینجا",
+              "translit": "jenāb-e ra'īs, biā īnjā",
+              "en": "Your Excellency, please come here.",
+              "errorWord": {
+                "target": "بیا",
+                "translit": "biā"
+              },
+              "correction": {
+                "target": "تشریف بیاورید",
+                "translit": "tashrīf biāwarēd"
+              },
+              "hint": "An honorific address needs the formal 'please come'."
+            },
+            {
+              "id": "ge-92-5",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "به معلم محترم: لطفاً بنشینید",
+              "translit": "ba mu'allem-e mohtaram: lutfan bunshinēd",
+              "en": "To the respected teacher: please sit.",
+              "distractorsTarget": [
+                {
+                  "target": "به معلم: بشین",
+                  "translit": "ba mu'allem: bushin"
+                },
+                {
+                  "target": "به دوست: بنشینید",
+                  "translit": "ba dōst: bunshinēd"
+                }
+              ]
+            },
+            {
+              "id": "ge-92-6",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "رئیس تصمیم را اتخاذ نمود",
+              "translit": "ra'īs tasmīm rā etekhāz namūd",
+              "en": "The chief made the decision. (formal)",
+              "distractorsEn": [
+                "The chief will decide.",
+                "The friend made a decision."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-93",
+          "title": "C2 review",
+          "subtitle": "The whole language, mixed",
+          "grammarPoint": "c2-capstone",
+          "grammarPointEn": "Mixed review of C2: formal address and register, official style, meaning nuance, emphatic and fronted structures, ezāfa chains, proverbs and idioms, balanced argument, hedging, layered concession, and precise time reference.",
+          "slides": [
+            {
+              "id": "gs-93-1",
+              "title": "You've done it",
+              "body": "From your first pronoun to layered argument and register-switching - you now command the whole ladder. This final set mixes the C2 toolkit. تبریک!",
+              "examples": [
+                {
+                  "target": "اگرچه سخت بود، اما با این هم به هدف خود رسید",
+                  "translit": "agarche sakht būd, amā bā īn ham ba hadaf-e khud rasīd",
+                  "en": "Although it was hard, even so he reached his goal."
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-93-1",
+              "type": "spotError",
+              "target": "جناب رئیس، تو کجا می‌روی؟",
+              "translit": "jenāb-e ra'īs, tu kujā mērawi?",
+              "en": "Your Excellency, where are you going?",
+              "errorWord": {
+                "target": "می‌روی",
+                "translit": "mērawi"
+              },
+              "correction": {
+                "target": "می‌روید",
+                "translit": "mērawēd"
+              },
+              "hint": "An honorific address takes the polite plural."
+            },
+            {
+              "id": "ge-93-2",
+              "type": "fillBlank",
+              "target": "___ می‌خواهد چای بخورم",
+              "translit": "___ mēkhāhad chāy bukhuram",
+              "en": "I feel like drinking tea.",
+              "answer": {
+                "target": "دلم",
+                "translit": "dilam"
+              },
+              "distractors": [
+                {
+                  "target": "سرم",
+                  "translit": "saram"
+                },
+                {
+                  "target": "دستم",
+                  "translit": "dastam"
+                }
+              ]
+            },
+            {
+              "id": "ge-93-3",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "از یک سو ارزان، از سوی دیگر خراب است",
+              "translit": "az yak sū arzān, az sū-ye dīgar kharāb ast",
+              "en": "On one hand cheap, on the other broken.",
+              "distractorsEn": [
+                "It is cheap and good.",
+                "One side is broken and dear."
+              ]
+            },
+            {
+              "id": "ge-93-4",
+              "type": "fillBlank",
+              "target": "او کار را تمام ___",
+              "translit": "ō kār rā tamām ___",
+              "en": "He completed the work. (formal)",
+              "answer": {
+                "target": "نمود",
+                "translit": "namūd"
+              },
+              "distractors": [
+                {
+                  "target": "دید",
+                  "translit": "dīd"
+                },
+                {
+                  "target": "شد",
+                  "translit": "shud"
+                }
+              ]
+            },
+            {
+              "id": "ge-93-5",
+              "type": "buildSentence",
+              "en": "This book, I read myself.",
+              "words": [
+                {
+                  "target": "این کتاب را",
+                  "translit": "īn ketāb rā"
+                },
+                {
+                  "target": "خودم",
+                  "translit": "khudam"
+                },
+                {
+                  "target": "خواندم",
+                  "translit": "khāndam"
+                }
+              ],
+              "translit": "īn ketāb rā khudam khāndam",
+              "extraWords": [
+                {
+                  "target": "خودش",
+                  "translit": "khudash"
+                }
+              ],
+              "altOrders": [
+                [
+                  "خودم",
+                  "این کتاب را",
+                  "خواندم"
+                ]
+              ]
+            },
+            {
+              "id": "ge-93-6",
+              "type": "chooseTranslation",
+              "direction": "toTarget",
+              "target": "احتمالاً او هنوز نیامده است",
+              "translit": "ehtemālan ō hanōz nayāmada ast",
+              "en": "He has probably not come yet.",
+              "distractorsTarget": [
+                {
+                  "target": "حتماً او آمده است",
+                  "translit": "hatman ō āmada ast"
+                },
+                {
+                  "target": "او دیگر نیامده است",
+                  "translit": "ō dēgar nayāmada ast"
+                }
+              ]
+            },
+            {
+              "id": "ge-93-7",
+              "type": "spotError",
+              "target": "اگرچه سرد بود، بنابراین رفتیم",
+              "translit": "agarche sard būd, binābar'īn raftēm",
+              "en": "Although it was cold, even so we went.",
+              "errorWord": {
+                "target": "بنابراین",
+                "translit": "binābar'īn"
+              },
+              "correction": {
+                "target": "با این هم",
+                "translit": "bā īn ham"
+              },
+              "hint": "'Although' pairs with 'even so', not 'therefore'."
+            },
+            {
+              "id": "ge-93-8",
+              "type": "matchPairs",
+              "prompt": "Match - the final board",
+              "pairs": [
+                {
+                  "target": "دلم می‌خواهد",
+                  "translit": "dilam mēkhāhad",
+                  "en": "I feel like"
+                },
+                {
+                  "target": "به دست آوردن",
+                  "translit": "ba dast āwardan",
+                  "en": "to gain"
+                },
+                {
+                  "target": "نمود",
+                  "translit": "namūd",
+                  "en": "did (formal)"
+                },
+                {
+                  "target": "احتمالاً",
+                  "translit": "ehtemālan",
+                  "en": "probably"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -11,13 +11,14 @@ import {
   lexiconFileSchema,
   textDocumentSchema,
 } from "../src/lib/content/schema.ts";
+import { contentRoot } from "./content-path.ts";
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const secret = process.env.SUPABASE_SECRET_KEY;
 if (!url || !secret) throw new Error("Missing NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SECRET_KEY");
 
 const db = createClient(url, secret, { auth: { persistSession: false } });
-const root = join(import.meta.dirname, "..", "content");
+const root = contentRoot();
 
 // --- lexemes ---------------------------------------------------------------
 const lexicon = lexiconFileSchema.parse(

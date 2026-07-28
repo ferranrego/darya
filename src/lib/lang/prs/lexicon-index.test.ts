@@ -65,7 +65,7 @@ describe("resolve precedence (synthetic)", () => {
 
 describe("resolve against the real lexicon", () => {
   const file = JSON.parse(
-    readFileSync(join(import.meta.dirname, "../../../../content/lexicon/lexicon.json"), "utf8")
+    readFileSync(join(import.meta.dirname, "../../../../content/prs/lexicon/lexicon.json"), "utf8")
   );
   const entries: LexiconEntry[] = file.entries;
   const idx = buildLexiconIndex(entries);

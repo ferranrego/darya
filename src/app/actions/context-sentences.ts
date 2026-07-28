@@ -29,7 +29,7 @@ export async function getContextSentences(lexemeId: string) {
   }
 
   try {
-    const generated = await generateContextSentences(entry.target, entry.translit, entry.glossEn, 3);
+    const generated = await generateContextSentences(entry.target, entry.translit ?? "", entry.glossEn, 3);
     
     // 3. Insert into shared cache
     const rowsToInsert = generated.map((s) => ({

@@ -31,9 +31,10 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { normalizeDari } from "../src/lib/lang/prs/normalize.ts";
+import { contentRoot } from "./content-path.ts";
 
 const dryRun = process.argv.includes("--dry-run");
-const lexiconPath = join(import.meta.dirname, "..", "content", "lexicon", "lexicon.json");
+const lexiconPath = join(contentRoot(), "lexicon", "lexicon.json");
 
 /** Hand-classified. Single-word adverbials → adverb; multi-word → phrase. */
 const POS_FIXES: Record<string, string> = {

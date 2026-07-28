@@ -21,9 +21,10 @@ import {
   type LexiconEntry,
 } from "../src/lib/content/schema.ts";
 import { normalize } from "../src/lib/text/index.ts";
+import { contentRoot } from "./content-path.ts";
 
 const dataDir = join(import.meta.dirname, "data");
-const outDir = join(import.meta.dirname, "..", "content", "lexicon");
+const outDir = join(contentRoot(), "lexicon");
 
 const BAND_BOUNDS = [100, 250, 500, 800, 1200, 1700, 2400] as const;
 function bandForRank(rank: number): number {

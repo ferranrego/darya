@@ -18,7 +18,7 @@ import { tokenize } from "./index.ts";
  * not morphology bugs.
  */
 
-const CONTENT = join(import.meta.dirname, "..", "..", "..", "content");
+const CONTENT = join(import.meta.dirname, "..", "..", "..", "content", "prs");
 const PERSIAN = /[؀-ۿ]/;
 
 /** Every Dari string in a content file, wherever it is nested. */

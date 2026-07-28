@@ -14,17 +14,37 @@ import { z } from "zod";
  * note in docs/CONTENT-SCHEMA.md.
  */
 
-export const CONTENT_FORMAT_VERSION = "1.3.0";
+export const CONTENT_FORMAT_VERSION = "1.4.0";
 
 // ---------------------------------------------------------------------------
 // Shared
 // ---------------------------------------------------------------------------
 
-/** Dari text in Perso-Arabic script (may contain ZWNJ U+200C). */
+/** Text in the language being learned. */
 const targetText = z.string().min(1);
 
 /** Latin transliteration, European-friendly (e.g. "khāna", "salām"). */
 const translitText = z.string().min(1);
+
+/**
+ * Transliteration where the language may not need one.
+ *
+ * A language already written in Latin script has nothing to transliterate, so
+ * the schema permits absence. Presence is enforced per-language instead:
+ * `validate-content.ts` requires it whenever the active profile declares
+ * `capabilities.transliteration`. Schema stays permissive, the language-aware
+ * validator stays strict - the same split used for the verb POS invariant.
+ *
+ * The alphabet course keeps the required `translitText`: it exists only to
+ * teach a non-Latin script, so a transliteration is structural there.
+ */
+const optionalTranslit = translitText.optional();
+
+/**
+ * Languages this content format can describe. Kept in step with the profile
+ * registry in `src/lib/lang/`; a build resolves exactly one of them.
+ */
+export const contentLanguageSchema = z.enum(["prs", "ca"]);
 
 export const FREQ_BAND_COUNT = 8;
 
@@ -58,7 +78,7 @@ export const lexiconEntrySchema = z.object({
   target: targetText,
   /** NFC-normalized, ZWNJ preserved, Arabic ي/ك folded to Persian ی/ک. */
   targetNormalized: targetText,
-  translit: translitText,
+  translit: optionalTranslit,
   glossEn: z.string().min(1),
   pos: posSchema,
   /** 1-based rank in the adapted Dari frequency list. */
@@ -75,7 +95,7 @@ export const lexiconEntrySchema = z.object({
    */
   presentStem: targetText.optional(),
   exampleTarget: targetText,
-  exampleTranslit: translitText,
+  exampleTranslit: optionalTranslit,
   exampleEn: z.string().min(1),
   audioUrl: z.string().optional(),
   /** Free-form facets: "dari-specific", "loanword", "kabuli", topic tags… */
@@ -84,7 +104,7 @@ export const lexiconEntrySchema = z.object({
 
 export const lexiconFileSchema = z.object({
   formatVersion: z.string(),
-  language: z.literal("prs"),
+  language: contentLanguageSchema,
   glossLanguage: z.literal("en"),
   license: z.string(),
   entries: z.array(lexiconEntrySchema),
@@ -219,7 +239,7 @@ export const alphabetUnitSchema = z.object({
 
 export const alphabetCourseSchema = z.object({
   formatVersion: z.string(),
-  language: z.literal("prs"),
+  language: contentLanguageSchema,
   units: z.array(alphabetUnitSchema).min(1),
 });
 
@@ -366,7 +386,7 @@ export const grammarLevelSchema = z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]);
 
 export const grammarCourseSchema = z.object({
   formatVersion: z.string(),
-  language: z.literal("prs"),
+  language: contentLanguageSchema,
   /** CEFR level this course teaches. */
   level: grammarLevelSchema,
   blocks: z.array(grammarBlockSchema).min(1),
@@ -451,7 +471,7 @@ export const textDocumentSchema = z.object({
   formatVersion: z.string(),
   level: z.string().regex(/^L\d$/),
   titleTarget: targetText,
-  titleTranslit: translitText,
+  titleTranslit: optionalTranslit,
   titleEn: z.string().min(1),
   sentences: z.array(sentenceSchema).min(1),
   /** Distinct lexeme IDs used (for cache keying and stats). */

@@ -16,14 +16,15 @@ import {
 import { buildIndex } from "../src/lib/text/index.ts";
 import { tokenize } from "../src/lib/text/index.ts";
 import { seedTexts } from "./data/seed-texts.ts";
+import { contentRoot } from "./content-path.ts";
 
 const root = join(import.meta.dirname, "..");
 const lexicon = lexiconFileSchema.parse(
-  JSON.parse(readFileSync(join(root, "content", "lexicon", "lexicon.json"), "utf8")),
+  JSON.parse(readFileSync(join(contentRoot(), "lexicon", "lexicon.json"), "utf8")),
 );
 const index = buildIndex(lexicon.entries);
 
-const outDir = join(root, "content", "texts", "seed");
+const outDir = join(contentRoot(), "texts", "seed");
 mkdirSync(outDir, { recursive: true });
 
 const failures: string[] = [];

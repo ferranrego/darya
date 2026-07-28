@@ -106,7 +106,7 @@ describe("verb forms resolve through the single engine", () => {
 describe("SUPPLETIVE_FORMS integrity", () => {
   const lexicon = JSON.parse(
     readFileSync(
-      join(import.meta.dirname, "..", "..", "..", "..", "content", "lexicon", "lexicon.json"),
+      join(import.meta.dirname, "..", "..", "..", "..", "content", "prs", "lexicon", "lexicon.json"),
       "utf8",
     ),
   ) as { entries: LexiconEntry[] };

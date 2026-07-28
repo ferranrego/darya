@@ -1,15 +1,35 @@
 # Open Content Schema
 
-All learnable content is open, versioned JSON under `content/`, decoupled from the app
-so it can be reused, remixed, and consulted by other tools. The normative definitions
-live in [`src/lib/content/schema.ts`](../src/lib/content/schema.ts) (Zod); machine-readable
-JSON Schemas are exported to `content/schema/*.schema.json` by `pnpm export:schemas`.
+All learnable content is open, versioned JSON under `content/<language>/`, decoupled from
+the app so it can be reused, remixed, and consulted by other tools. The normative
+definitions live in [`src/lib/content/schema.ts`](../src/lib/content/schema.ts) (Zod);
+machine-readable JSON Schemas are exported to `content/schema/*.schema.json` by
+`pnpm export:schemas`.
 
-Current `formatVersion`: **1.2.0** - additive changes bump minor, breaking changes bump
+Content is namespaced per target language (`content/prs/…`); `content/schema/` is not,
+because the schemas are exactly what makes languages interchangeable. Code reaches
+content through the `@content` alias, which resolves to the active language's directory
+from `NEXT_PUBLIC_TARGET_LANG` (see `next.config.ts`, `vitest.config.ts`). Scripts take
+`--lang <code>` and default to the same variable, so a validation run and a build can
+never disagree about which content they are looking at.
+
+Current `formatVersion`: **1.4.0** - additive changes bump minor, breaking changes bump
 major and get a migration note here.
 
 Version history:
 
+- **1.4.0** - content becomes language-namespaced. `language` widens from the literal
+  `"prs"` to an enum, and `translit` / `exampleTranslit` / `titleTranslit` become
+  optional, because a language already written in Latin script has nothing to
+  transliterate. No migration needed: existing 1.3.0 files remain valid, since both
+  changes only relax constraints. Whether transliteration is *required* is now a
+  property of the language rather than of the format - `validate-content.ts` enforces
+  it whenever the active profile declares `capabilities.transliteration`. The alphabet
+  course keeps transliteration mandatory: it exists only to teach a non-Latin script.
+- **1.3.0** - `dari*` fields renamed to `target*` (`dari` → `target`, `dariNormalized` →
+  `targetNormalized`, `exampleDari` → `exampleTarget`, `titleDari` → `titleTarget`), and
+  the translation-direction value `toDari` → `toTarget`. The field holds "text in the
+  language being learned", which is not a Dari-specific concept.
 - **1.2.0** - lexicon entries gain optional `presentStem` (present stem in Persian
   script for verbs, e.g. کردن → کن). Together with the past stem derived from the
   infinitive, it lets consumers generate the full regular conjugation paradigm; the
@@ -20,17 +40,17 @@ Version history:
 
 | File | Schema | Contents |
 |---|---|---|
-| `content/lexicon/lexicon.json` | `lexicon.schema.json` | Dari lexemes: script, normalized form, transliteration, English gloss, POS, frequency rank + band (1–8), register, variants, present stem (verbs), example sentence, tags |
-| `content/alphabet/course.json` | `alphabet-course.schema.json` | Ordered units teaching the 32-letter Dari alphabet: letters with all four positional forms, plus exercises (tagged union: `recognizeLetter`, `pickForm`, `matchSound`, `readWord`, `readSentence`) |
-| `content/levels/levels.json` | `levels.schema.json` | Level definitions (L1–L6): frequency bands allowed, entry known-word counts, text length ranges, permitted grammar (drives both assessment and the generation prompt) |
-| `content/texts/seed/*.json` | `text-document.schema.json` | Texts in `TextDocument` format - identical for hand-authored seed texts and AI-generated ones (which are cached in DB and exportable back to this format) |
+| `content/<lang>/lexicon/lexicon.json` | `lexicon.schema.json` | Dari lexemes: script, normalized form, transliteration, English gloss, POS, frequency rank + band (1–8), register, variants, present stem (verbs), example sentence, tags |
+| `content/<lang>/alphabet/course.json` | `alphabet-course.schema.json` | Ordered units teaching the 32-letter Dari alphabet: letters with all four positional forms, plus exercises (tagged union: `recognizeLetter`, `pickForm`, `matchSound`, `readWord`, `readSentence`) |
+| `content/<lang>/levels/levels.json` | `levels.schema.json` | Level definitions (L1–L6): frequency bands allowed, entry known-word counts, text length ranges, permitted grammar (drives both assessment and the generation prompt) |
+| `content/<lang>/texts/seed/*.json` | `text-document.schema.json` | Texts in `TextDocument` format - identical for hand-authored seed texts and AI-generated ones (which are cached in DB and exportable back to this format) |
 
 ## Conventions
 
 - **IDs are stable and never reused**: `lx-0042` (lexeme), `au-03` (alphabet unit),
   `L2` (level), `tx-seed-l1-001` / `tx-gen-<hash>` (text). All cross-references and all
   per-user data use these IDs.
-- **Normalization** (`src/lib/text/normalize.ts`): NFC, Arabic ي/ك folded to Persian
+- **Normalization** (`src/lib/lang/<lang>/normalize.ts`): NFC, Arabic ي/ك folded to Persian
   ی/ک, ZWNJ (U+200C) preserved, Arabic-Indic digits kept. `targetNormalized` is the
   matching key for tokenization.
 - **`target` is the text in the language being learned.** The field is deliberately
@@ -43,4 +63,4 @@ Version history:
   cross-file integrity (token lexeme IDs exist, exercise targets exist in taught
   letters, level references resolve).
 - **License**: content files are CC BY-SA 4.0 (they adapt open Persian frequency
-  corpora); see `content/lexicon/README.md` for sources.
+  corpora); see `content/<lang>/lexicon/README.md` for sources.

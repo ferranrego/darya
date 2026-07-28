@@ -2,16 +2,16 @@
  * Typed, build-time loaders for the open content files. Content ships in the
  * app bundle, so no network round-trip for lexicon/course/levels.
  */
-import alphabetJson from "../../../content/alphabet/course.json";
-import grammarA1Json from "../../../content/grammar/a1.json";
-import grammarA2Json from "../../../content/grammar/a2.json";
-import grammarB1Json from "../../../content/grammar/b1.json";
-import grammarB2Json from "../../../content/grammar/b2.json";
-import grammarC1Json from "../../../content/grammar/c1.json";
-import grammarC2Json from "../../../content/grammar/c2.json";
-import lexiconJson from "../../../content/lexicon/lexicon.json";
-import themesJson from "../../../content/lexicon/themes.json";
-import levelsJson from "../../../content/levels/levels.json";
+import alphabetJson from "@content/alphabet/course.json";
+import grammarA1Json from "@content/grammar/a1.json";
+import grammarA2Json from "@content/grammar/a2.json";
+import grammarB1Json from "@content/grammar/b1.json";
+import grammarB2Json from "@content/grammar/b2.json";
+import grammarC1Json from "@content/grammar/c1.json";
+import grammarC2Json from "@content/grammar/c2.json";
+import lexiconJson from "@content/lexicon/lexicon.json";
+import themesJson from "@content/lexicon/themes.json";
+import levelsJson from "@content/levels/levels.json";
 import { buildIndex, type LexiconIndex } from "../text";
 import {
   alphabetCourseSchema,

@@ -22,8 +22,13 @@ import { matchKey, normalize, tokenize } from "../src/lib/text/index.ts";
 // Dari orthography rule - both come from the language module, not the neutral
 // text façade. Phase 3 gives this script a --lang argument.
 import { ZWNJ } from "../src/lib/lang/prs/normalize.ts";
+import { PROFILES } from "../src/lib/lang/index.ts";
+import { contentRoot, targetLang } from "./content-path.ts";
 
-const root = join(import.meta.dirname, "..", "content");
+const lang = targetLang();
+const root = contentRoot();
+const profile = PROFILES[lang as keyof typeof PROFILES];
+if (!profile) throw new Error(`No language profile for "${lang}"`);
 
 /**
  * Verb entries that are legitimately not infinitives: high-frequency finite
@@ -63,6 +68,13 @@ if (existsSync(lexiconPath)) {
       const clash = keys.get(key);
       if (clash) fail(`lexicon: ${e.id} and ${clash} share match key "${key}"`);
       keys.set(key, e.id);
+      // The schema allows transliteration to be absent (a Latin-script
+      // language has none). Whether it must be present is a property of the
+      // language, so it is enforced here rather than in the schema.
+      if (profile.capabilities.transliteration) {
+        if (!e.translit) fail(`lexicon ${e.id}: missing translit`);
+        if (!e.exampleTranslit) fail(`lexicon ${e.id}: missing exampleTranslit`);
+      }
       if (e.presentStem !== undefined) {
         if (!/^[؀-ۿ‌]+$/.test(e.presentStem)) {
           fail(`lexicon ${e.id}: presentStem not Persian script (${e.presentStem})`);
@@ -76,7 +88,7 @@ if (existsSync(lexiconPath)) {
       // once shipped tagged pos="verb" - which colours them as verbs in the
       // reader and strips context off their SRS cards. The exemptions are
       // genuine high-frequency finite forms kept as standalone entries.
-      if (e.pos === "verb" && !VERB_POS_EXEMPT.has(e.id)) {
+      if (lang === "prs" && e.pos === "verb" && !VERB_POS_EXEMPT.has(e.id)) {
         const head = e.targetNormalized.split(" ").at(-1)!;
         if (!/(دن|تن)$/.test(head)) {
           fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" is not an infinitive`);
@@ -87,6 +99,7 @@ if (existsSync(lexiconPath)) {
       // that. A ZWNJ *inside* a part is fine (هیجان‌زده شدن), so only flag
       // entries that have no space at all.
       if (
+        lang === "prs" &&
         e.pos === "verb" &&
         !e.targetNormalized.includes(" ") &&
         e.targetNormalized.includes(ZWNJ) &&
