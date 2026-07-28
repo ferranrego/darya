@@ -34,6 +34,7 @@ import { timeOfDay, type TimeOfDay } from "@/lib/util/time-of-day";
 import type { PonchaPose } from "@/components/poncha";
 import { useQuery } from "@tanstack/react-query";
 import { hapticFeedback } from "@/lib/util/haptics";
+import { profile as lang } from "@/lib/lang";
 
 function useTodayXp() {
   const db = useSupabase();
@@ -78,7 +79,10 @@ export default function HomePage() {
 
   const completedUnits = alphaProgress?.filter((u) => u.completed_at).length ?? 0;
   const totalUnits = alphabetCourse.units.length;
-  const showAlphabet = profile?.can_read_script === false && completedUnits < totalUnits;
+  const showAlphabet =
+    lang.capabilities.scriptCourse &&
+    profile?.can_read_script === false &&
+    completedUnits < totalUnits;
 
   // Grammar levels the learner tested past are skipped; count only active ones.
   const startIdx = GRAMMAR_LEVEL_ORDER.indexOf(grammarStartLevel(profile?.level_estimate));

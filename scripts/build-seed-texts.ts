@@ -18,7 +18,6 @@ import { tokenize } from "../src/lib/text/index.ts";
 import { seedTexts } from "./data/seed-texts.ts";
 import { contentRoot } from "./content-path.ts";
 
-const root = join(import.meta.dirname, "..");
 const lexicon = lexiconFileSchema.parse(
   JSON.parse(readFileSync(join(contentRoot(), "lexicon", "lexicon.json"), "utf8")),
 );

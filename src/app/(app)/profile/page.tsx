@@ -15,6 +15,7 @@ import { SleekSelector } from "@/components/profile/sleek-selector";
 import { FontCarousel } from "@/components/profile/font-carousel";
 import { ToggleSwitch } from "@/components/profile/toggle-switch";
 import { hapticTap } from "@/lib/util/haptics";
+import { profile as lang } from "@/lib/lang";
 
 const RATIOS = [
   { value: 0.02, label: "Gentle", detail: "~2% new words" },
@@ -164,20 +165,26 @@ export default function ProfilePage() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-3 border-t border-line/60 px-4 py-4">
-            <div>
-              <div className="mb-2 flex items-center gap-2">
-                <BookType size={16} className="text-[#3e7c59]" />
-                <span className="text-[15px] font-medium text-ink">Reading Font</span>
+          {/* Naskh/nastaliq preferences are an Arabic-script concern; a Latin
+              -script language ships one font and needs no picker. */}
+          {lang.capabilities.fontPicker && (
+            <div className="flex flex-col gap-3 border-t border-line/60 px-4 py-4">
+              <div>
+                <div className="mb-2 flex items-center gap-2">
+                  <BookType size={16} className="text-[#3e7c59]" />
+                  <span className="text-[15px] font-medium text-ink">Reading Font</span>
+                </div>
+                <p className="mb-3 text-[13px] text-ink-soft">
+                  Choose the font for reading {lang.name} texts.
+                </p>
+                <FontCarousel
+                  options={FONTS}
+                  value={readingFont || "vazirmatn"}
+                  onChange={(val) => setReadingFont(val)}
+                />
               </div>
-              <p className="mb-3 text-[13px] text-ink-soft">Choose the font for reading Dari texts.</p>
-              <FontCarousel
-                options={FONTS}
-                value={readingFont || "vazirmatn"}
-                onChange={(val) => setReadingFont(val)}
-              />
             </div>
-          </div>
+          )}
         </SettingsGroup>
       </motion.section>
 

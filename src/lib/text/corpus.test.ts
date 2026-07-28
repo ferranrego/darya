@@ -13,9 +13,8 @@ import { tokenize } from "./index.ts";
  * rather than to a private copy of the logic, so refactors of the morphology
  * engine are measured against real content instead of against themselves.
  *
- * The budget is a ratchet: it may fall, never rise. The 192 remaining failures
- * are genuine out-of-lexicon vocabulary in the C1/C2 lessons (تشریف، جناب…),
- * not morphology bugs.
+ * The budget is a ratchet: it may fall, never rise. The handful of remaining
+ * failures are genuine out-of-lexicon vocabulary, not morphology bugs.
  */
 
 const CONTENT = join(import.meta.dirname, "..", "..", "..", "content", "prs");
@@ -61,6 +60,9 @@ describe("shipped content is recognised by the runtime acceptance rule", () => {
   it("does not regress the count of unrecognised tokens", () => {
     const unknown = tokens.filter((t) => !isKnownToken(t));
     // Ratchet. If this drops, lower the budget in the same commit.
-    expect(unknown.length).toBeLessThanOrEqual(192);
+    //
+    // Was 192 until 36 lexemes that existed only in the database were restored
+    // to content/ - they were the vocabulary the C1/C2 lessons actually use.
+    expect(unknown.length).toBeLessThanOrEqual(5);
   });
 });

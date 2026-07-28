@@ -4,6 +4,7 @@ import { Check, Lock, SpellCheck, Blocks, BookOpen } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { profile as lang } from "@/lib/lang";
 import {
   GRAMMAR_LEVEL_ORDER,
   grammarCourses,
@@ -48,7 +49,9 @@ export function JourneyMap({
   const alphabetDone = alphabetCompletedUnits >= totalAlphabetUnits;
   const alphabetNeeded = canReadScript === false && !alphabetDone;
 
-  nodes.push({
+  // A Latin-script language has no alphabet course, so the node is not merely
+  // completed - it never existed.
+  if (lang.capabilities.scriptCourse) nodes.push({
     id: "alphabet",
     type: "alphabet",
     title: "Alphabet",

@@ -3,8 +3,6 @@ import { z } from "zod";
 import { grammarLessonLevel, lexicon } from "../content/load";
 import type { GrammarLevel } from "../content/schema";
 import {
-  fillBlankExercise,
-  chooseTranslationExercise,
   type GrammarExercise,
   type GrammarLesson,
 } from "../content/schema";

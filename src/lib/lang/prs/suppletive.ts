@@ -62,6 +62,19 @@ export const SUPPLETIVE_FORMS: Record<string, string> = withZwnjVariants({
   نباشید: BUDAN,
   نباشند: BUDAN,
 
+  // budan - formal present (mē-bāsh-). Common in written and polite Dari, and
+  // built on the same suppletive باش- stem as the subjunctive above, so it is
+  // no more derivable from بود than باشم is.
+  [`می${ZWNJ}باشم`]: BUDAN,
+  [`می${ZWNJ}باشی`]: BUDAN,
+  [`می${ZWNJ}باشد`]: BUDAN,
+  [`می${ZWNJ}باشیم`]: BUDAN,
+  [`می${ZWNJ}باشید`]: BUDAN,
+  [`می${ZWNJ}باشند`]: BUDAN,
+  [`نمی${ZWNJ}باشم`]: BUDAN,
+  [`نمی${ZWNJ}باشد`]: BUDAN,
+  [`نمی${ZWNJ}باشند`]: BUDAN,
+
   // Impersonal "one can" - a fixed form with no personal ending, so the
   // derived توان- paradigm does not cover it.
   [`می${ZWNJ}توان`]: "توانستن",

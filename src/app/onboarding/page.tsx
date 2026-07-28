@@ -10,6 +10,7 @@ import { lexicon, levelLabel } from "@/lib/content/load";
 import { updateProfile } from "@/lib/db/profiles";
 import { seedKnownWords } from "@/lib/db/words";
 import { useSupabase } from "@/lib/queries/hooks";
+import { profile as lang } from "@/lib/lang";
 
 type Step = "hello" | "install" | "script" | "assessment" | "result";
 
@@ -38,7 +39,7 @@ export default function OnboardingPage() {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (window.matchMedia("(display-mode: standalone)").matches || (window.navigator as any).standalone)
     ) {
-      setStep("script");
+      setStep(lang.capabilities.scriptCourse ? "script" : "assessment");
     } else {
       setStep("install");
     }
@@ -147,7 +148,7 @@ export default function OnboardingPage() {
               </p>
             </div>
             <div className="mt-10 flex flex-col items-center gap-3">
-              <Button size="lg" onClick={() => setStep("script")}>
+              <Button size="lg" onClick={() => setStep(lang.capabilities.scriptCourse ? "script" : "assessment")}>
                 Continue
               </Button>
             </div>
