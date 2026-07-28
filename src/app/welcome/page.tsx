@@ -7,6 +7,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { supabaseBrowser } from "@/lib/supabase/client";
+import { profile as lang } from "@/lib/lang";
 
 export default function WelcomePage() {
   const router = useRouter();
@@ -69,12 +70,12 @@ export default function WelcomePage() {
           <div className="mb-4 flex justify-center">
             <Poncha pose="wave" size={160} priority animated />
           </div>
-          <p lang="prs" className="text-[44px] leading-tight text-lapis">
-            دریا
+          <p lang={lang.code} className="text-[44px] leading-tight text-lapis">
+            {lang.brand.nativeName}
           </p>
-          <h1 className="mt-1 text-[22px] font-semibold tracking-tight">Darya</h1>
+          <h1 className="mt-1 text-[22px] font-semibold tracking-tight">{lang.brand.appName}</h1>
           <p className="mt-2 text-[15px] text-ink-soft">
-            Learn Dari by reading, one word at a time.
+            {lang.brand.tagline} by reading, one word at a time.
           </p>
         </div>
 

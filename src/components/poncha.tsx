@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 /**
- * Poncha (پونچا) - Darya's mascot, a golden Kabul street puppy who accompanies
+ * Poncha (پونچا) - the app's mascot, a golden Kabul street puppy who accompanies
  * the learner through the app. One flat-vector sticker per mood; render her at
  * moments that deserve a friendly face (welcome, empty states, celebration).
  */

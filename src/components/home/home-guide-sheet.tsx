@@ -13,6 +13,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { levelLabel, levels } from "@/lib/content/load";
+import { profile as lang } from "@/lib/lang";
 
 /**
  * One-time (and on-demand) welcome tour for the home page, shown the first
@@ -71,7 +72,7 @@ export function HomeGuideSheet({
             key="home-guide-sheet"
             role="dialog"
             aria-modal="true"
-            aria-label="Welcome to Darya"
+            aria-label={`Welcome to ${lang.brand.appName}`}
             className="fixed inset-x-0 bottom-0 z-50 mx-auto max-h-[85dvh] w-full max-w-2xl overflow-y-auto rounded-t-3xl border border-b-0 border-line bg-surface px-6 pt-3 shadow-[0_-8px_40px_rgba(31,26,23,0.12)]"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}

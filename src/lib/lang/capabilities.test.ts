@@ -30,7 +30,7 @@ describe("language profiles", () => {
       expect(p.prompts.scenarios.length, `${code}: prompts.scenarios`).toBeGreaterThan(0);
       // Brand is what a deployment ships under; a missing field would render as
       // "undefined" in the title bar and the install manifest.
-      for (const f of ["appName", "tagline", "description", "mascotName"] as const) {
+      for (const f of ["appName", "nativeName", "tagline", "description", "mascotName"] as const) {
         expect(p.brand[f]?.length, `${code}: brand.${f}`).toBeGreaterThan(0);
       }
     }
@@ -53,6 +53,42 @@ describe("language profiles", () => {
     });
     expect(PROFILES.ca.dir).toBe("ltr");
     expect(PROFILES.ca.ttsLocale).toBe("ca");
+  });
+
+  it("no UI file hardcodes a brand name", async () => {
+    // The Catalan app shipped with "Darya" on its welcome screen because the
+    // name was written inline. Brand text must come from the profile.
+    const { readdirSync, readFileSync, statSync } = await import("node:fs");
+    const { join } = await import("node:path");
+    const root = join(import.meta.dirname, "..", "..");
+    const brands = Object.values(PROFILES).map((x) => x.brand.appName);
+    const offenders: string[] = [];
+
+    const walk = (dir: string) => {
+      for (const name of readdirSync(dir)) {
+        const full = join(dir, name);
+        if (statSync(full).isDirectory()) {
+          if (name !== "lang") walk(full);
+          continue;
+        }
+        if (!/\.tsx?$/.test(name) || name.includes(".test.")) continue;
+        readFileSync(full, "utf8")
+          .split("\n")
+          .forEach((line, i) => {
+            const code = line.trim();
+            // Comments may name a brand; rendered text may not.
+            if (code.startsWith("*") || code.startsWith("//") || code.startsWith("/*")) return;
+            for (const brand of brands) {
+              if (new RegExp(`\\b${brand}\\b`).test(code)) {
+                offenders.push(`${full.slice(root.length + 1)}:${i + 1} (${brand})`);
+              }
+            }
+          });
+      }
+    };
+    walk(join(root, "app"));
+    walk(join(root, "components"));
+    expect(offenders, "brand text must come from profile.brand").toEqual([]);
   });
 
   it("each profile ships a distinct brand", () => {

@@ -5,6 +5,7 @@ import { useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 import { TrendingUp } from "lucide-react";
 import type { LevelForecast } from "@/lib/util/level-forecast";
+import { profile as lang } from "@/lib/lang";
 
 /**
  * "You're on pace for A2 in ~34 days." Turns the known-word forecast into a
@@ -53,7 +54,7 @@ export function LevelForecastCard({ forecast }: { forecast: LevelForecast }) {
         ? "Learn a few more words to forecast your pace"
         : forecast.status === "ready"
           ? "You've hit the word target - level up soon"
-          : "You're at the highest level Darya tracks";
+          : `You're at the highest level ${lang.brand.appName} tracks`;
 
   return (
     <section className="rounded-2xl border border-line bg-surface p-4">

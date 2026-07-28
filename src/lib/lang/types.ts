@@ -66,6 +66,12 @@ export interface LanguagePrompts {
 export interface LanguageBrand {
   /** Product name: "Darya", "Riera". */
   appName: string;
+  /**
+   * The product name in the target language's own script, shown above the
+   * wordmark on the welcome screen. Identical to `appName` for a Latin-script
+   * language; دریا for Dari.
+   */
+  nativeName: string;
   /** Shown after the name in the title bar: "Learn Dari". */
   tagline: string;
   /** One-line description for metadata and the install manifest. */

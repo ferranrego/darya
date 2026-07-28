@@ -4,6 +4,7 @@ import { ArrowDown, Highlighter, Languages } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
+import { profile as lang } from "@/lib/lang";
 
 /**
  * One-time (and on-demand) explainer for the reader. Replaces the old
@@ -60,7 +61,7 @@ export function ReaderGuideSheet({
                 sample="کتاب"
                 sampleCls="bg-new-tint rounded-md"
                 label="New"
-                description="Softly highlighted. Tap it to reveal the meaning - Darya starts tracking it for you."
+                description={`Softly highlighted. Tap it to reveal the meaning - ${lang.brand.appName} starts tracking it for you.`}
               />
               <GuideArrow hint="you tap it" />
               <GuideRow

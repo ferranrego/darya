@@ -40,6 +40,7 @@ export const prs: LanguageProfile = {
 
   brand: {
     appName: "Darya",
+    nativeName: "دریا",
     tagline: "Learn Dari",
     description:
       "Learn Dari by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",

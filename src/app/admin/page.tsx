@@ -1,6 +1,7 @@
 import { supabaseService } from "@/lib/supabase/server";
 import { Users, Settings, Database, Download, Activity, Award } from "lucide-react";
 import Link from "next/link";
+import { profile as lang } from "@/lib/lang";
 
 export const dynamic = "force-dynamic";
 
@@ -38,7 +39,7 @@ export default async function AdminDashboard() {
           <div className="bg-lapis/10 p-2 rounded-lg">
             <Database className="w-5 h-5 text-lapis" />
           </div>
-          <h1 className="text-xl font-semibold">Darya Admin</h1>
+          <h1 className="text-xl font-semibold">{lang.brand.appName} Admin</h1>
         </div>
         <div className="flex gap-4">
           <Link

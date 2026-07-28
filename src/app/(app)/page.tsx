@@ -183,7 +183,7 @@ export default function HomePage() {
             type="button"
             onClick={() => setShowGuide(true)}
             className="flex size-9 items-center justify-center rounded-full border border-line bg-paper text-ink-soft transition-colors hover:bg-surface hover:text-ink"
-            title="How Darya works"
+            title={`How ${lang.brand.appName} works`}
           >
             <CircleHelp size={18} />
           </button>

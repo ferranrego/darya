@@ -113,7 +113,7 @@ export default function OnboardingPage() {
               You&apos;ll learn Dari by reading it.
             </h1>
             <p className="mx-auto mt-3 max-w-sm text-[15px] leading-relaxed text-ink-soft">
-              Darya gives you short texts where you already know almost every word,
+              {lang.brand.appName} gives you short texts where you already know almost every word,
               plus just enough new ones to grow. Tap any word to see what it means.
             </p>
             <Button size="lg" className="mt-10" onClick={startWizard}>
@@ -135,7 +135,7 @@ export default function OnboardingPage() {
               Add to Home Screen
             </h1>
             <p className="mx-auto mt-4 max-w-sm text-[15px] leading-relaxed text-ink-soft">
-              For the best experience, install Darya as an app on your phone.
+              For the best experience, install {lang.brand.appName} as an app on your phone.
             </p>
             <div className="mx-auto mt-8 flex max-w-xs flex-col gap-4 rounded-2xl border border-line bg-surface p-5 text-left text-[14.5px] text-ink-soft">
               <p className="flex items-center gap-3.5">

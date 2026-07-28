@@ -42,6 +42,7 @@ export const ca: LanguageProfile = {
     // "Riera" is a Catalan seasonal watercourse - the same idea as Darya
     // (Dari for river/sea), so the two apps are siblings by name.
     appName: "Riera",
+    nativeName: "Riera",
     tagline: "Learn Catalan",
     description:
       "Learn Catalan by reading: adaptive texts, tap-to-learn vocabulary, and spaced repetition.",
