@@ -27,7 +27,7 @@
         "./src/*"
       ],
       "@content/*": [
-        "./content/prs/*"
+        "./content/active/*"
       ]
     },
     "allowImportingTsExtensions": true

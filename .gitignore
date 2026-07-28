@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Local scratch: reference photos, never commit
 /temp/
+
+# Points at the active language's content; written by scripts/link-content.ts
+content/active

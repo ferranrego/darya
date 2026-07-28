@@ -9,14 +9,12 @@ import { defineConfig } from "vitest/config";
  * test run and a build can never disagree about which language they are
  * exercising.
  */
-const TARGET_LANG = process.env.NEXT_PUBLIC_TARGET_LANG ?? "prs";
-
 const r = (p: string) => fileURLToPath(new URL(p, import.meta.url));
 
 export default defineConfig({
   resolve: {
     alias: {
-      "@content": r(`./content/${TARGET_LANG}`),
+      "@content": r("./content/active"),
       "@": r("./src"),
     },
   },
