@@ -240,7 +240,13 @@ export const alphabetUnitSchema = z.object({
 export const alphabetCourseSchema = z.object({
   formatVersion: z.string(),
   language: contentLanguageSchema,
-  units: z.array(alphabetUnitSchema).min(1),
+  /**
+   * Empty for a language written in Latin script: there is no alphabet to
+   * teach. The routes are gated on `capabilities.scriptCourse` anyway, so an
+   * empty course is never rendered - this just lets such a language ship an
+   * honest file instead of a fabricated one.
+   */
+  units: z.array(alphabetUnitSchema),
 });
 
 export type Letter = z.infer<typeof letterSchema>;
@@ -255,12 +261,12 @@ export type AlphabetCourse = z.infer<typeof alphabetCourseSchema>;
 /** A Dari word or phrase paired with its transliteration (chips, tiles…). */
 export const grammarOptionSchema = z.object({
   target: targetText,
-  translit: translitText,
+  translit: optionalTranslit,
 });
 
 export const grammarExampleSchema = z.object({
   target: targetText,
-  translit: translitText,
+  translit: optionalTranslit,
   en: z.string().min(1),
   /** Optional substring of `target` to visually highlight (e.g. "می‌" or "را"). */
   highlight: z.string().optional(),
@@ -288,8 +294,9 @@ export const fillBlankExercise = z.object({
   type: z.literal("fillBlank"),
   /** Dari sentence with exactly one "___" placeholder. */
   target: z.string().regex(/^[^_]*___[^_]*$/),
-  /** Transliteration with exactly one "___" placeholder. */
-  translit: z.string().regex(/^[^_]*___[^_]*$/),
+  /** Transliteration with exactly one "___" placeholder. Absent for a
+   * Latin-script language, which has nothing to transliterate. */
+  translit: z.string().regex(/^[^_]*___[^_]*$/).optional(),
   en: z.string().min(1),
   answer: grammarOptionSchema,
   distractors: z.array(grammarOptionSchema).min(2).max(4),
@@ -303,7 +310,7 @@ export const buildSentenceExercise = z.object({
   /** Correct tiles in logical reading order (first spoken word first). */
   words: z.array(grammarOptionSchema).min(2).max(8),
   /** Transliteration of the full correct sentence. */
-  translit: translitText,
+  translit: optionalTranslit,
   /** Wrong tiles mixed into the bank. */
   extraWords: z.array(grammarOptionSchema).default([]),
   /** Extra accepted orderings; each is a permutation of the `words` target forms. */
@@ -317,7 +324,7 @@ export const chooseTranslationExercise = z.object({
   direction: z.enum(["toEn", "toTarget"]),
   /** toEn: the stimulus. toTarget: the correct answer. */
   target: targetText,
-  translit: translitText,
+  translit: optionalTranslit,
   /** toEn: the correct answer. toTarget: the stimulus. */
   en: z.string().min(1),
   /** English distractors (required when direction = toEn). */
@@ -332,7 +339,7 @@ export const matchPairsExercise = z.object({
   type: z.literal("matchPairs"),
   prompt: z.string().min(1),
   pairs: z
-    .array(z.object({ target: targetText, translit: translitText, en: z.string().min(1) }))
+    .array(z.object({ target: targetText, translit: optionalTranslit, en: z.string().min(1) }))
     .min(3)
     .max(5),
 });
@@ -343,7 +350,7 @@ export const spotErrorExercise = z.object({
   type: z.literal("spotError"),
   /** Sentence containing exactly one wrong word (the `errorWord`). */
   target: targetText,
-  translit: translitText,
+  translit: optionalTranslit,
   /** The intended meaning. */
   en: z.string().min(1),
   /** The wrong token, exactly as it appears in `target`. */
@@ -399,6 +406,17 @@ export type GrammarExercise = z.infer<typeof grammarExerciseSchema>;
 export type GrammarLesson = z.infer<typeof grammarLessonSchema>;
 export type GrammarBlock = z.infer<typeof grammarBlockSchema>;
 export type GrammarCourse = z.infer<typeof grammarCourseSchema>;
+
+/**
+ * All of a language's grammar courses in one file (`grammar/all.json`).
+ * Languages ship different numbers of CEFR levels, so the app loads the set a
+ * language actually has rather than a hardcoded a1..c2 list.
+ */
+export const grammarCoursesFileSchema = z.object({
+  formatVersion: z.string(),
+  courses: z.array(grammarCourseSchema).min(1),
+});
+export type GrammarCoursesFile = z.infer<typeof grammarCoursesFileSchema>;
 export type GrammarLevel = z.infer<typeof grammarLevelSchema>;
 
 // ---------------------------------------------------------------------------
@@ -459,7 +477,7 @@ export const tokenSchema = z.object({
 
 export const sentenceSchema = z.object({
   target: targetText,
-  translit: translitText,
+  translit: optionalTranslit,
   en: z.string().min(1),
   /** Word tokens in reading order (RTL); punctuation excluded. */
   tokens: z.array(tokenSchema).min(1),

@@ -1,0 +1,221 @@
+{
+  "formatVersion": "1.4.0",
+  "courses": [
+    {
+      "formatVersion": "1.4.0",
+      "language": "ca",
+      "level": "A1",
+      "blocks": [
+        {
+          "id": "gb-01",
+          "title": "Being and having",
+          "subtitle": "The two verbs Catalan uses where English uses one.",
+          "lessons": [
+            {
+              "id": "gl-01",
+              "title": "ser vs estar",
+              "subtitle": "Say what something is, and where or how it is.",
+              "grammarPoint": "ser-vs-estar",
+              "grammarPointEn": "ser for identity and inherent qualities; estar for location and changeable states",
+              "slides": [
+                {
+                  "id": "gs-01-1",
+                  "title": "English has one verb. Catalan has two.",
+                  "body": "Use ser for what something IS: identity, origin, profession, permanent qualities. Use estar for WHERE it is and for a state that can change.",
+                  "examples": [
+                    { "target": "Sóc de Barcelona.", "en": "I'm from Barcelona." },
+                    { "target": "Estic a casa.", "en": "I'm at home." },
+                    { "target": "La sopa és bona.", "en": "The soup is good (it's a good soup)." },
+                    { "target": "La sopa està calenta.", "en": "The soup is hot (right now)." }
+                  ]
+                },
+                {
+                  "id": "gs-01-2",
+                  "title": "The forms",
+                  "body": "Both verbs are irregular, and both are worth memorising now - you will use them in almost every sentence.",
+                  "examples": [
+                    { "target": "Ets estudiant?", "en": "Are you a student?" },
+                    { "target": "Estem cansats.", "en": "We're tired." }
+                  ],
+                  "table": [
+                    ["jo", "sóc / estic"],
+                    ["tu", "ets / estàs"],
+                    ["ell, ella", "és / està"],
+                    ["nosaltres", "som / estem"],
+                    ["vosaltres", "sou / esteu"],
+                    ["ells, elles", "són / estan"]
+                  ]
+                },
+                {
+                  "id": "gs-01-3",
+                  "title": "Location is always estar",
+                  "body": "Even for something that never moves, Catalan uses estar for position. A mountain is still estar.",
+                  "examples": [
+                    { "target": "Girona està al nord.", "en": "Girona is in the north." },
+                    { "target": "El llibre està a la taula.", "en": "The book is on the table." }
+                  ]
+                }
+              ],
+              "exercises": [
+                {
+                  "id": "ge-01-1",
+                  "type": "fillBlank",
+                  "target": "Jo ___ de Girona.",
+                  "en": "I'm from Girona.",
+                  "answer": { "target": "sóc" },
+                  "distractors": [{ "target": "estic" }, { "target": "és" }, { "target": "està" }]
+                },
+                {
+                  "id": "ge-01-2",
+                  "type": "fillBlank",
+                  "target": "La Marta ___ a la feina.",
+                  "en": "Marta is at work.",
+                  "answer": { "target": "està" },
+                  "distractors": [{ "target": "és" }, { "target": "sóc" }, { "target": "són" }]
+                },
+                {
+                  "id": "ge-01-3",
+                  "type": "fillBlank",
+                  "target": "Nosaltres ___ estudiants.",
+                  "en": "We are students.",
+                  "answer": { "target": "som" },
+                  "distractors": [{ "target": "estem" }, { "target": "sou" }, { "target": "són" }]
+                },
+                {
+                  "id": "ge-01-4",
+                  "type": "fillBlank",
+                  "target": "El cafè ___ molt calent.",
+                  "en": "The coffee is very hot.",
+                  "answer": { "target": "està" },
+                  "distractors": [{ "target": "és" }, { "target": "estan" }, { "target": "sóc" }]
+                },
+                {
+                  "id": "ge-01-5",
+                  "type": "chooseTranslation",
+                  "direction": "toEn",
+                  "target": "Estic cansat.",
+                  "en": "I'm tired.",
+                  "distractorsEn": ["I'm tall.", "I'm a teacher.", "I'm from here."],
+                  "distractorsTarget": []
+                },
+                {
+                  "id": "ge-01-6",
+                  "type": "chooseTranslation",
+                  "direction": "toEn",
+                  "target": "La casa és gran.",
+                  "en": "The house is big.",
+                  "distractorsEn": ["The house is far.", "The house is open.", "The house is mine."],
+                  "distractorsTarget": []
+                },
+                {
+                  "id": "ge-01-7",
+                  "type": "fillBlank",
+                  "target": "Vosaltres ___ a casa?",
+                  "en": "Are you (plural) at home?",
+                  "answer": { "target": "esteu" },
+                  "distractors": [{ "target": "sou" }, { "target": "estem" }, { "target": "són" }]
+                },
+                {
+                  "id": "ge-01-8",
+                  "type": "fillBlank",
+                  "target": "Els meus amics ___ de Lleida.",
+                  "en": "My friends are from Lleida.",
+                  "answer": { "target": "són" },
+                  "distractors": [{ "target": "estan" }, { "target": "som" }, { "target": "és" }]
+                }
+              ]
+            },
+            {
+              "id": "gl-02",
+              "title": "The definite article",
+              "subtitle": "el, la, els, les - and when they shrink to l'.",
+              "grammarPoint": "definite-article-apostrophe",
+              "grammarPointEn": "definite articles el/la/els/les, with el and la becoming l' before a vowel or h",
+              "slides": [
+                {
+                  "id": "gs-02-1",
+                  "title": "Four forms",
+                  "body": "Catalan marks gender and number on the article. Nouns are masculine or feminine, and you learn the gender with the word.",
+                  "examples": [
+                    { "target": "el llibre", "en": "the book" },
+                    { "target": "la casa", "en": "the house" },
+                    { "target": "els llibres", "en": "the books" },
+                    { "target": "les cases", "en": "the houses" }
+                  ],
+                  "table": [
+                    ["masculine singular", "el"],
+                    ["feminine singular", "la"],
+                    ["masculine plural", "els"],
+                    ["feminine plural", "les"]
+                  ]
+                },
+                {
+                  "id": "gs-02-2",
+                  "title": "Before a vowel, el and la become l'",
+                  "body": "This is not optional - writing 'el home' is an error. The apostrophe attaches directly to the noun, with no space.",
+                  "examples": [
+                    { "target": "l'home", "en": "the man" },
+                    { "target": "l'aigua", "en": "the water" },
+                    { "target": "l'hospital", "en": "the hospital (silent h)" },
+                    { "target": "els homes", "en": "the men (plurals never elide)" }
+                  ]
+                }
+              ],
+              "exercises": [
+                {
+                  "id": "ge-02-1",
+                  "type": "fillBlank",
+                  "target": "___ home llegeix.",
+                  "en": "The man is reading.",
+                  "answer": { "target": "L'" },
+                  "distractors": [{ "target": "El" }, { "target": "La" }, { "target": "Els" }]
+                },
+                {
+                  "id": "ge-02-2",
+                  "type": "fillBlank",
+                  "target": "___ casa és gran.",
+                  "en": "The house is big.",
+                  "answer": { "target": "La" },
+                  "distractors": [{ "target": "El" }, { "target": "L'" }, { "target": "Les" }]
+                },
+                {
+                  "id": "ge-02-3",
+                  "type": "fillBlank",
+                  "target": "___ nens juguen.",
+                  "en": "The children are playing.",
+                  "answer": { "target": "Els" },
+                  "distractors": [{ "target": "El" }, { "target": "Les" }, { "target": "La" }]
+                },
+                {
+                  "id": "ge-02-4",
+                  "type": "fillBlank",
+                  "target": "Bec ___ aigua freda.",
+                  "en": "I drink the cold water.",
+                  "answer": { "target": "l'" },
+                  "distractors": [{ "target": "la" }, { "target": "el" }, { "target": "les" }]
+                },
+                {
+                  "id": "ge-02-5",
+                  "type": "fillBlank",
+                  "target": "___ flors són boniques.",
+                  "en": "The flowers are beautiful.",
+                  "answer": { "target": "Les" },
+                  "distractors": [{ "target": "Els" }, { "target": "La" }, { "target": "L'" }]
+                },
+                {
+                  "id": "ge-02-6",
+                  "type": "chooseTranslation",
+                  "direction": "toEn",
+                  "target": "L'escola és a prop.",
+                  "en": "The school is nearby.",
+                  "distractorsEn": ["The school is big.", "The school is closed.", "The school is new."],
+                  "distractorsTarget": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+import type { LexiconEntry } from "../../content/schema.ts";
+import type { LexiconIndex } from "../types.ts";
+import { conjugationSurfaces, type Conjugation, type CatalanVerbStems } from "./conjugate.ts";
+import { IRREGULAR_VERBS, PURE_IR_VERBS } from "./irregulars.ts";
+import { matchKey, normalizeCatalan } from "./normalize.ts";
+
+/**
+ * Surface-form → lexeme lookup for Catalan.
+ *
+ * Same precedence policy as Dari: authored headwords beat authored variants,
+ * which beat generated inflections, and among generated forms the first writer
+ * wins - entries are frequency-ordered, so a contested key goes to the more
+ * common word. That matters more in Catalan than in Dari because accent folding
+ * in `matchKey` deliberately merges pairs like `es`/`és` and `si`/`sí`.
+ *
+ * Beyond verbs, Catalan inflects nouns and adjectives for gender and number,
+ * and those forms are far more predictable than the verb paradigm, so they are
+ * generated too - otherwise a learner tapping `bones` would get nothing.
+ */
+
+/** Which conjugation an infinitive belongs to, or null if it is not one. */
+export function conjugationOf(infinitive: string): Conjugation | null {
+  if (/ar$/.test(infinitive)) return 1;
+  if (/(re|er)$/.test(infinitive)) return 2;
+  if (/ir$/.test(infinitive)) return 3;
+  return null;
+}
+
+/** Build the conjugation spec for a lexicon verb entry. */
+export function verbSpec(infinitive: string): CatalanVerbStems | null {
+  const irregular = IRREGULAR_VERBS[infinitive];
+  if (irregular) return irregular;
+  const conjugation = conjugationOf(infinitive);
+  if (!conjugation) return null;
+  return {
+    infinitive,
+    conjugation,
+    // The -eix- present is the majority for -ir verbs; PURE_IR_VERBS is the
+    // exception list.
+    incoative: conjugation === 3 && !PURE_IR_VERBS.has(infinitive),
+  };
+}
+
+/**
+ * Gender/number forms of a noun or adjective.
+ *
+ * Covers the productive patterns a reader actually meets:
+ *   bo -> bona/bons/bones,  alt -> alta/alts/altes,
+ *   feliç -> feliços/felices,  gran -> grans,  gos -> gossos,
+ *   noi -> nois,  vowel-final -> -ns (mà -> mans is irregular and authored).
+ */
+export function nominalForms(word: string, pos: string): string[] {
+  if (pos !== "noun" && pos !== "adjective") return [];
+  const w = normalizeCatalan(word);
+  if (w.includes(" ")) return [];
+  const out: string[] = [];
+
+  const plural = (base: string): string => {
+    if (/[aeiouàèéíòóú]$/.test(base)) {
+      // -a feminines pluralize in -es with the usual spelling shifts.
+      if (/a$/.test(base)) {
+        const s = base.slice(0, -1);
+        if (/c$/.test(s)) return s.slice(0, -1) + "ques";
+        if (/g$/.test(s)) return s.slice(0, -1) + "gues";
+        if (/ç$/.test(s)) return s.slice(0, -1) + "ces";
+        if (/j$/.test(s)) return s.slice(0, -1) + "ges";
+        return s + "es";
+      }
+      return base + "ns"; // stressed vowel: pi -> pins, ple -> plens
+    }
+    if (/ç$/.test(base)) return base.slice(0, -1) + "ços";
+    if (/s$/.test(base)) return base + "os"; // gos -> gossos handled below
+    if (/(sc|st|xt|ig)$/.test(base)) return base + "os";
+    return base + "s";
+  };
+
+  out.push(plural(w));
+
+  if (pos === "adjective") {
+    // Feminine: consonant-final adds -a, -e/-o often alternates to -a.
+    if (/[^aeiou]$/.test(w)) {
+      const fem = /ç$/.test(w) ? w.slice(0, -1) + "ça" : w + "a";
+      out.push(fem, plural(fem));
+    } else if (/[eo]$/.test(w)) {
+      const fem = w.slice(0, -1) + "a";
+      out.push(fem, plural(fem));
+    }
+  }
+  return out.filter((f) => f && f !== w);
+}
+
+export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
+  const byId = new Map<string, LexiconEntry>();
+  const headwords = new Map<string, LexiconEntry>();
+  const variants = new Map<string, LexiconEntry>();
+  const generated = new Map<string, LexiconEntry>();
+
+  for (const entry of entries) {
+    byId.set(entry.id, entry);
+    const key = matchKey(entry.targetNormalized);
+    if (!headwords.has(key)) headwords.set(key, entry);
+    for (const v of entry.variants) {
+      const k = matchKey(v);
+      if (!variants.has(k)) variants.set(k, entry);
+    }
+  }
+
+  for (const entry of entries) {
+    const word = entry.targetNormalized;
+    const surfaces: string[] =
+      entry.pos === "verb"
+        ? (() => {
+            // A compound/reflexive entry ("anar-se'n") conjugates its verb.
+            const head = word.split(/[\s-]/)[0];
+            const spec = verbSpec(head) ?? verbSpec(word);
+            return spec ? conjugationSurfaces(spec) : [];
+          })()
+        : nominalForms(word, entry.pos);
+
+    for (const surface of surfaces) {
+      const key = matchKey(surface);
+      if (!generated.has(key)) generated.set(key, entry);
+    }
+  }
+
+  const lookup = (key: string) => headwords.get(key) ?? variants.get(key) ?? generated.get(key);
+
+  return {
+    byId,
+    resolve(surface: string) {
+      const key = matchKey(surface);
+      const direct = lookup(key);
+      if (direct) return direct;
+
+      // An enclitic pronoun token ('m, 'n, -se, -hi…) is a real lexical item and
+      // should be authored; if it is not, do not guess.
+      if (/^'/.test(key)) return null;
+
+      // Last resort: strip a plural -s / -os / -es so an unlisted regular plural
+      // still lands on its singular.
+      for (const suffix of ["ns", "os", "es", "s"]) {
+        if (key.endsWith(suffix) && key.length > suffix.length + 1) {
+          const hit = lookup(key.slice(0, -suffix.length));
+          if (hit) return hit;
+        }
+      }
+      return null;
+    },
+  };
+}

@@ -6,7 +6,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import {
   alphabetCourseSchema,
-  grammarCourseSchema,
+  grammarCoursesFileSchema,
   lexiconFileSchema,
   levelsFileSchema,
   textDocumentSchema,
@@ -16,8 +16,7 @@ import {
   type LevelsFile,
   type TextDocument,
 } from "../src/lib/content/schema.ts";
-import { buildIndex } from "../src/lib/text/index.ts";
-import { matchKey, normalize, tokenize } from "../src/lib/text/index.ts";
+
 // ZWNJ is a Perso-Arabic concept, and the compound-spelling check below is a
 // Dari orthography rule - both come from the language module, not the neutral
 // text façade. Phase 3 gives this script a --lang argument.
@@ -29,6 +28,15 @@ const lang = targetLang();
 const root = contentRoot();
 const profile = PROFILES[lang as keyof typeof PROFILES];
 if (!profile) throw new Error(`No language profile for "${lang}"`);
+
+/**
+ * Text operations for the language being validated, NOT for the build's
+ * language. `src/lib/text` resolves from NEXT_PUBLIC_TARGET_LANG, so importing
+ * it here would tokenize Catalan content with the Dari tokenizer whenever
+ * --lang disagrees with the environment - which silently reported every
+ * apostrophised Catalan word as out-of-lexicon.
+ */
+const { matchKey, normalize, tokenize, buildIndex } = profile.text;
 
 /**
  * Verb entries that are legitimately not infinitives: high-frequency finite
@@ -130,7 +138,9 @@ const levelIds = new Set(levels?.levels.map((l) => l.id) ?? []);
 
 // --- Alphabet course -------------------------------------------------------
 const coursePath = join(root, "alphabet", "course.json");
-if (existsSync(coursePath)) {
+if (!profile.capabilities.scriptCourse) {
+  console.log("• alphabet course skipped (language has no script course)");
+} else if (existsSync(coursePath)) {
   const parsed = alphabetCourseSchema.safeParse(loadJson(coursePath));
   if (!parsed.success) {
     fail(`course.json: ${parsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`);
@@ -265,22 +275,21 @@ if (existsSync(coursePath)) {
     }
   }
 
-  for (const level of ["a1", "a2", "b1", "b2", "c1", "c2"]) {
-    const path = join(root, "grammar", `${level}.json`);
-    if (!existsSync(path)) {
-      // A1 must exist; higher levels are optional until authored.
-      if (level === "a1") fail(`grammar/${level}.json missing`);
-      continue;
-    }
-    const parsed = grammarCourseSchema.safeParse(loadJson(path));
-    if (!parsed.success) {
-      fail(`grammar/${level}.json: ${parsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`);
-      continue;
-    }
-    const course = parsed.data;
-    if (course.level.toLowerCase() !== level) {
-      fail(`grammar/${level}.json: level field is "${course.level}", expected ${level.toUpperCase()}`);
-    }
+  // All of a language's grammar courses live in one barrel, because languages
+  // ship different numbers of CEFR levels.
+  const grammarPath = join(root, "grammar", "all.json");
+  const grammarParsed = existsSync(grammarPath)
+    ? grammarCoursesFileSchema.safeParse(loadJson(grammarPath))
+    : null;
+  if (!grammarParsed) fail("grammar/all.json missing");
+  else if (!grammarParsed.success) {
+    fail(
+      `grammar/all.json: ${grammarParsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`,
+    );
+  }
+
+  for (const course of grammarParsed?.success ? grammarParsed.data.courses : []) {
+    const level = course.level.toLowerCase();
     let warnings = 0;
     const warn = () => {
       warnings++;

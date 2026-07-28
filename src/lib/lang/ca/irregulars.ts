@@ -1,0 +1,337 @@
+import type { CatalanVerbStems } from "./conjugate.ts";
+
+/**
+ * Irregular Catalan verbs, by infinitive.
+ *
+ * Every entry lists the slots that cannot be derived; anything omitted falls
+ * back to the regular paradigm. Slots are in the fixed person order
+ * jo / tu / ell / nosaltres / vosaltres / ells, and participles are
+ * masc.sg, fem.sg, masc.pl, fem.pl.
+ *
+ * This covers the verbs a beginner meets in almost every sentence. They are
+ * also the ones a rule-based generator gets *confidently wrong*: `ser` and
+ * `anar` are suppletive, and the velar-insertion verbs (tenir -> tinc, venir ->
+ * vinc, prendre -> prenc) build their whole subjunctive on a stem that never
+ * appears in the infinitive.
+ *
+ * Central Catalan is used throughout, with the accepted `soc`/`sóc` style
+ * variants both listed so either spelling resolves.
+ */
+export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
+  ser: {
+    infinitive: "ser",
+    conjugation: 2,
+    overrides: {
+      present: ["soc", "sóc", "ets", "és", "som", "sou", "són"],
+      imperfect: ["era", "eres", "era", "érem", "éreu", "eren"],
+      future: ["seré", "seràs", "serà", "serem", "sereu", "seran"],
+      conditional: ["seria", "series", "seríem", "seríeu", "serien"],
+      presentSubjunctive: ["sigui", "siguis", "siguem", "sigueu", "siguin"],
+      imperfectSubjunctive: ["fos", "fossis", "fóssim", "fóssiu", "fossin"],
+      participle: ["estat", "estada", "estats", "estades", "sigut", "siguda"],
+      gerund: ["sent"],
+      imperative: ["sigues", "sigui", "siguem", "sigueu", "siguin"],
+    },
+  },
+  estar: {
+    infinitive: "estar",
+    conjugation: 1,
+    overrides: {
+      present: ["estic", "estàs", "està", "estem", "esteu", "estan"],
+      presentSubjunctive: ["estigui", "estiguis", "estiguem", "estigueu", "estiguin"],
+      imperfectSubjunctive: ["estigués", "estiguessis", "estiguéssim", "estiguéssiu", "estiguessin"],
+      imperative: ["estigues", "estigui", "estiguem", "estigueu", "estiguin"],
+    },
+  },
+  haver: {
+    infinitive: "haver",
+    conjugation: 2,
+    overrides: {
+      present: ["he", "has", "ha", "hem", "heu", "han"],
+      imperfect: ["havia", "havies", "havíem", "havíeu", "havien"],
+      future: ["hauré", "hauràs", "haurà", "haurem", "haureu", "hauran"],
+      conditional: ["hauria", "hauries", "hauríem", "hauríeu", "haurien"],
+      presentSubjunctive: ["hagi", "hagis", "hàgim", "hàgiu", "hagin"],
+      imperfectSubjunctive: ["hagués", "haguessis", "haguéssim", "haguéssiu", "haguessin"],
+      participle: ["hagut", "haguda", "haguts", "hagudes"],
+      gerund: ["havent"],
+    },
+  },
+  anar: {
+    infinitive: "anar",
+    conjugation: 1,
+    overrides: {
+      // Suppletive present (vaig/vas/va) - also the auxiliary of the
+      // periphrastic past, which is how Catalan normally expresses "I went".
+      present: ["vaig", "vas", "va", "anem", "aneu", "van"],
+      future: ["aniré", "aniràs", "anirà", "anirem", "anireu", "aniran"],
+      conditional: ["aniria", "aniries", "aniríem", "aniríeu", "anirien"],
+      presentSubjunctive: ["vagi", "vagis", "anem", "aneu", "vagin"],
+      imperative: ["ves", "vagi", "anem", "aneu", "vagin"],
+    },
+  },
+  fer: {
+    infinitive: "fer",
+    conjugation: 2,
+    overrides: {
+      present: ["faig", "fas", "fa", "fem", "feu", "fan"],
+      imperfect: ["feia", "feies", "fèiem", "fèieu", "feien"],
+      future: ["faré", "faràs", "farà", "farem", "fareu", "faran"],
+      conditional: ["faria", "faries", "faríem", "faríeu", "farien"],
+      presentSubjunctive: ["faci", "facis", "fem", "feu", "facin"],
+      imperfectSubjunctive: ["fes", "fessis", "féssim", "féssiu", "fessin"],
+      participle: ["fet", "feta", "fets", "fetes"],
+      gerund: ["fent"],
+      imperative: ["fes", "faci", "fem", "feu", "facin"],
+    },
+  },
+  dir: {
+    infinitive: "dir",
+    conjugation: 3,
+    overrides: {
+      present: ["dic", "dius", "diu", "diem", "dieu", "diuen"],
+      imperfect: ["deia", "deies", "dèiem", "dèieu", "deien"],
+      future: ["diré", "diràs", "dirà", "direm", "direu", "diran"],
+      presentSubjunctive: ["digui", "diguis", "diguem", "digueu", "diguin"],
+      imperfectSubjunctive: ["digués", "diguessis", "diguéssim", "diguéssiu", "diguessin"],
+      participle: ["dit", "dita", "dits", "dites"],
+      gerund: ["dient"],
+      imperative: ["digues", "digui", "diguem", "digueu", "diguin"],
+    },
+  },
+  poder: {
+    infinitive: "poder",
+    conjugation: 2,
+    overrides: {
+      present: ["puc", "pots", "pot", "podem", "podeu", "poden"],
+      future: ["podré", "podràs", "podrà", "podrem", "podreu", "podran"],
+      conditional: ["podria", "podries", "podríem", "podríeu", "podrien"],
+      presentSubjunctive: ["pugui", "puguis", "puguem", "pugueu", "puguin"],
+      imperfectSubjunctive: ["pogués", "poguessis", "poguéssim", "poguéssiu", "poguessin"],
+      participle: ["pogut", "poguda", "poguts", "pogudes"],
+    },
+  },
+  voler: {
+    infinitive: "voler",
+    conjugation: 2,
+    overrides: {
+      present: ["vull", "vols", "vol", "volem", "voleu", "volen"],
+      future: ["voldré", "voldràs", "voldrà", "voldrem", "voldreu", "voldran"],
+      conditional: ["voldria", "voldries", "voldríem", "voldríeu", "voldrien"],
+      presentSubjunctive: ["vulgui", "vulguis", "vulguem", "vulgueu", "vulguin"],
+      imperfectSubjunctive: ["volgués", "volguessis", "volguéssim", "volguéssiu", "volguessin"],
+      participle: ["volgut", "volguda", "volguts", "volgudes"],
+    },
+  },
+  saber: {
+    infinitive: "saber",
+    conjugation: 2,
+    overrides: {
+      present: ["sé", "saps", "sap", "sabem", "sabeu", "saben"],
+      future: ["sabré", "sabràs", "sabrà", "sabrem", "sabreu", "sabran"],
+      presentSubjunctive: ["sàpiga", "sàpigues", "sapiguem", "sapigueu", "sàpiguen"],
+      imperfectSubjunctive: ["sabés", "sabessis", "sabéssim", "sabéssiu", "sabessin"],
+      participle: ["sabut", "sabuda", "sabuts", "sabudes"],
+    },
+  },
+  tenir: {
+    infinitive: "tenir",
+    conjugation: 3,
+    overrides: {
+      present: ["tinc", "tens", "té", "tenim", "teniu", "tenen"],
+      future: ["tindré", "tindràs", "tindrà", "tindrem", "tindreu", "tindran"],
+      conditional: ["tindria", "tindries", "tindríem", "tindríeu", "tindrien"],
+      presentSubjunctive: ["tingui", "tinguis", "tinguem", "tingueu", "tinguin"],
+      imperfectSubjunctive: ["tingués", "tinguessis", "tinguéssim", "tinguéssiu", "tinguessin"],
+      participle: ["tingut", "tinguda", "tinguts", "tingudes"],
+      gerund: ["tenint"],
+      imperative: ["té", "tingues", "tingui", "tinguem", "tingueu", "tinguin"],
+    },
+  },
+  venir: {
+    infinitive: "venir",
+    conjugation: 3,
+    overrides: {
+      present: ["vinc", "véns", "vens", "ve", "venim", "veniu", "vénen", "venen"],
+      future: ["vindré", "vindràs", "vindrà", "vindrem", "vindreu", "vindran"],
+      conditional: ["vindria", "vindries", "vindríem", "vindríeu", "vindrien"],
+      presentSubjunctive: ["vingui", "vinguis", "vinguem", "vingueu", "vinguin"],
+      imperfectSubjunctive: ["vingués", "vinguessis", "vinguéssim", "vinguéssiu", "vinguessin"],
+      participle: ["vingut", "vinguda", "vinguts", "vingudes"],
+      gerund: ["venint"],
+    },
+  },
+  veure: {
+    infinitive: "veure",
+    conjugation: 2,
+    overrides: {
+      present: ["veig", "veus", "veu", "veiem", "veieu", "veuen"],
+      imperfect: ["veia", "veies", "vèiem", "vèieu", "veien"],
+      future: ["veuré", "veuràs", "veurà", "veurem", "veureu", "veuran"],
+      presentSubjunctive: ["vegi", "vegis", "vegem", "vegeu", "vegin"],
+      imperfectSubjunctive: ["veiés", "veiessis", "veiéssim", "veiéssiu", "veiessin"],
+      participle: ["vist", "vista", "vistos", "vistes"],
+      gerund: ["veient"],
+    },
+  },
+  prendre: {
+    infinitive: "prendre",
+    conjugation: 2,
+    overrides: {
+      present: ["prenc", "prens", "pren", "prenem", "preneu", "prenen"],
+      presentSubjunctive: ["prengui", "prenguis", "prenguem", "prengueu", "prenguin"],
+      imperfectSubjunctive: ["prengués", "prenguessis", "prenguéssim", "prenguéssiu", "prenguessin"],
+      participle: ["pres", "presa", "presos", "preses"],
+      gerund: ["prenent"],
+    },
+  },
+  aprendre: {
+    infinitive: "aprendre",
+    conjugation: 2,
+    overrides: {
+      present: ["aprenc", "aprens", "aprèn", "aprenem", "apreneu", "aprenen"],
+      presentSubjunctive: ["aprengui", "aprenguis", "aprenguem", "aprengueu", "aprenguin"],
+      imperfectSubjunctive: ["aprengués", "aprenguessis", "aprenguéssim", "aprenguéssiu", "aprenguessin"],
+      participle: ["après", "apresa", "apresos", "apreses"],
+      gerund: ["aprenent"],
+    },
+  },
+  comprendre: {
+    infinitive: "comprendre",
+    conjugation: 2,
+    overrides: {
+      present: ["comprenc", "comprens", "comprèn", "comprenem", "compreneu", "comprenen"],
+      presentSubjunctive: ["comprengui", "comprenguis", "comprenguem", "comprengueu", "comprenguin"],
+      participle: ["comprès", "compresa", "compresos", "compreses"],
+      gerund: ["comprenent"],
+    },
+  },
+  entendre: {
+    infinitive: "entendre",
+    conjugation: 2,
+    overrides: {
+      present: ["entenc", "entens", "entén", "entenem", "enteneu", "entenen"],
+      presentSubjunctive: ["entengui", "entenguis", "entenguem", "entengueu", "entenguin"],
+      participle: ["entès", "entesa", "entesos", "enteses"],
+      gerund: ["entenent"],
+    },
+  },
+  respondre: {
+    infinitive: "respondre",
+    conjugation: 2,
+    overrides: {
+      present: ["responc", "respons", "respon", "responem", "responeu", "responen"],
+      presentSubjunctive: ["respongui", "responguis", "responguem", "respongueu", "responguin"],
+      participle: ["respost", "resposta", "respostos", "respostes"],
+      gerund: ["responent"],
+    },
+  },
+  viure: {
+    infinitive: "viure",
+    conjugation: 2,
+    overrides: {
+      present: ["visc", "vius", "viu", "vivim", "viviu", "viuen"],
+      imperfect: ["vivia", "vivies", "vivíem", "vivíeu", "vivien"],
+      presentSubjunctive: ["visqui", "visquis", "visquem", "visqueu", "visquin"],
+      imperfectSubjunctive: ["visqués", "visquessis", "visquéssim", "visquéssiu", "visquessin"],
+      participle: ["viscut", "viscuda", "viscuts", "viscudes"],
+      gerund: ["vivint"],
+    },
+  },
+  beure: {
+    infinitive: "beure",
+    conjugation: 2,
+    overrides: {
+      present: ["bec", "beus", "beu", "bevem", "beveu", "beuen"],
+      imperfect: ["bevia", "bevies", "bevíem", "bevíeu", "bevien"],
+      presentSubjunctive: ["begui", "beguis", "beguem", "begueu", "beguin"],
+      imperfectSubjunctive: ["begués", "beguessis", "beguéssim", "beguéssiu", "beguessin"],
+      participle: ["begut", "beguda", "beguts", "begudes"],
+      gerund: ["bevent"],
+    },
+  },
+  creure: {
+    infinitive: "creure",
+    conjugation: 2,
+    overrides: {
+      present: ["crec", "creus", "creu", "creiem", "creieu", "creuen"],
+      imperfect: ["creia", "creies", "crèiem", "crèieu", "creien"],
+      presentSubjunctive: ["cregui", "creguis", "creguem", "cregueu", "creguin"],
+      participle: ["cregut", "creguda", "creguts", "cregudes"],
+      gerund: ["creient"],
+    },
+  },
+  sortir: {
+    infinitive: "sortir",
+    conjugation: 3,
+    // Stressed forms raise the stem vowel o -> u (surto, surts, surt, surten)
+    // while the unstressed 1pl/2pl keep it (sortim, sortiu).
+    overrides: {
+      present: ["surto", "surts", "surt", "sortim", "sortiu", "surten"],
+      presentSubjunctive: ["surti", "surtis", "sortim", "sortiu", "surtin"],
+      imperative: ["surt", "surti", "sortim", "sortiu", "surtin"],
+    },
+  },
+  escriure: {
+    infinitive: "escriure",
+    conjugation: 2,
+    overrides: {
+      present: ["escric", "escrius", "escriu", "escrivim", "escriviu", "escriuen"],
+      imperfect: ["escrivia", "escrivies", "escrivíem", "escrivíeu", "escrivien"],
+      presentSubjunctive: ["escrigui", "escriguis", "escriguem", "escrigueu", "escriguin"],
+      participle: ["escrit", "escrita", "escrits", "escrites"],
+      gerund: ["escrivint"],
+    },
+  },
+  conèixer: {
+    infinitive: "conèixer",
+    conjugation: 2,
+    overrides: {
+      present: ["conec", "coneixes", "coneix", "coneixem", "coneixeu", "coneixen"],
+      imperfect: ["coneixia", "coneixies", "coneixíem", "coneixíeu", "coneixien"],
+      presentSubjunctive: ["conegui", "coneguis", "coneguem", "conegueu", "coneguin"],
+      participle: ["conegut", "coneguda", "coneguts", "conegudes"],
+      gerund: ["coneixent"],
+    },
+  },
+  obrir: {
+    infinitive: "obrir",
+    conjugation: 3,
+    overrides: { participle: ["obert", "oberta", "oberts", "obertes"] },
+  },
+  morir: {
+    infinitive: "morir",
+    conjugation: 3,
+    overrides: { participle: ["mort", "morta", "morts", "mortes"] },
+  },
+  córrer: {
+    infinitive: "córrer",
+    conjugation: 2,
+    overrides: {
+      present: ["corro", "corres", "corre", "correm", "correu", "corren"],
+      participle: ["corregut", "correguda", "correguts", "corregudes"],
+    },
+  },
+  dur: {
+    infinitive: "dur",
+    conjugation: 2,
+    overrides: {
+      present: ["duc", "dus", "du", "duem", "dueu", "duen"],
+      imperfect: ["duia", "duies", "dúiem", "dúieu", "duien"],
+      presentSubjunctive: ["dugui", "duguis", "duguem", "dugueu", "duguin"],
+      participle: ["dut", "duta", "duts", "dutes"],
+      gerund: ["duent"],
+    },
+  },
+};
+
+/**
+ * Verbs whose infinitive ends in -ir but take the *pure* present (dormo, not
+ * *dormeixo*). The incoative -eix- type is the large majority, so this is the
+ * exception list rather than the rule.
+ */
+export const PURE_IR_VERBS = new Set([
+  "dormir", "obrir", "morir", "sortir", "collir", "cosir", "tossir",
+  "omplir", "sentir", "consentir", "mentir", "bullir", "escopir",
+  "fugir", "pudir", "acudir", "ajupir", "esmunyir", "grunyir",
+]);

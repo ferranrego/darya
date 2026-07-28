@@ -1,3 +1,4 @@
+import { ca } from "./ca/index.ts";
 import { prs } from "./prs/index.ts";
 import type { LanguageProfile } from "./types.ts";
 
@@ -14,7 +15,7 @@ export type {
  * profile, add it here, add `content/<code>/`, and point a second deployment at
  * it with NEXT_PUBLIC_TARGET_LANG.
  */
-export const PROFILES = { prs } satisfies Record<string, LanguageProfile>;
+export const PROFILES = { prs, ca } satisfies Record<string, LanguageProfile>;
 
 export type TargetLang = keyof typeof PROFILES;
 

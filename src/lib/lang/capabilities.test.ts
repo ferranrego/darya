@@ -20,8 +20,9 @@ describe("language profiles", () => {
       expect(p.ttsLocale.length, `${code}: ttsLocale`).toBeGreaterThan(0);
       expect(p.ttsVoicePrefixes.length, `${code}: ttsVoicePrefixes`).toBeGreaterThan(0);
       // letter-spacing goes through a CSS var, where a bare `0` is dropped as
-      // invalid; it must carry a unit.
-      expect(p.letterSpacing, `${code}: letterSpacing needs a unit`).toMatch(/^-?[\d.]+[a-z%]+$/);
+      // invalid at computed-value time. A keyword is fine; a bare number is not.
+      expect(p.letterSpacing, `${code}: letterSpacing must be a keyword or carry a unit`)
+        .toMatch(/^(normal|-?[\d.]+[a-z%]+)$/);
       for (const fn of ["normalize", "matchKey", "tokenize", "buildIndex"] as const) {
         expect(typeof p.text[fn], `${code}: text.${fn}`).toBe("function");
       }

@@ -130,7 +130,9 @@ function FillBlank({
   // Split around the placeholder; never render the underscores themselves,
   // raw "___" inside RTL text triggers bidi reordering glitches.
   const [targetBefore, targetAfter] = exercise.target.split("___");
-  const [translitBefore, translitAfter] = exercise.translit.split("___");
+  // A Latin-script language ships no transliteration, so this row is absent
+  // rather than empty; splitting "" still yields a usable pair.
+  const [translitBefore, translitAfter] = (exercise.translit ?? "").split("___");
   const options = useMemo(
     () => shuffled([exercise.answer, ...exercise.distractors], exercise.id),
     [exercise],

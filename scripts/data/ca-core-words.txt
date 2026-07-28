@@ -1,0 +1,262 @@
+# Catalan core lexicon, frequency-ordered. Central Catalan.
+# Format: rank|word|pos|glossEn|example|exampleEn
+#
+# Hand-curated end to end. The headword, POS and gloss are the keys everything
+# hangs off, and the examples are what a learner actually reads on an SRS card,
+# so neither is generated: a plausible-but-wrong example is worse than none.
+# build-ca-lexicon.ts verifies that each example really contains an inflected
+# form of its own headword before writing it.
+#
+# Headwords are unique by match key (accent- and case-folded), because the
+# lexicon index gives one key to one lexeme. Genuine homographs merge their
+# senses into a single gloss rather than appearing twice.
+1|de|preposition|of, from|Vinc de casa.|I'm coming from home.
+2|el|determiner|the (masculine singular)|El llibre és nou.|The book is new.
+3|la|determiner|the (feminine singular)|La casa és gran.|The house is big.
+4|i|conjunction|and|Menjo pa i formatge.|I eat bread and cheese.
+5|a|preposition|to, at|Anem a l'escola.|We're going to school.
+6|que|conjunction|that|Crec que té raó.|I think he's right.
+7|en|preposition|in|Visc en un poble.|I live in a village.
+8|un|determiner|a, one|Tinc un germà.|I have one brother.
+9|ser|verb|to be (essential quality)|Sóc de Barcelona.|I'm from Barcelona.
+10|no|adverb|no, not|No tinc temps.|I don't have time.
+11|per|preposition|for, by, through|Ho faig per tu.|I do it for you.
+12|amb|preposition|with|Vaig amb la meva germana.|I go with my sister.
+13|una|determiner|a, one (feminine)|Vull una poma.|I want an apple.
+14|els|determiner|the (masculine plural)|Els nens juguen.|The children are playing.
+15|les|determiner|the (feminine plural)|Les flors són boniques.|The flowers are beautiful.
+16|com|adverb|how, as, like|Com estàs avui?|How are you today?
+17|més|adverb|more|Vull més aigua.|I want more water.
+18|o|conjunction|or|Cafè o te?|Coffee or tea?
+19|si|conjunction|if|Si plou, no sortim.|If it rains, we don't go out.
+20|ja|adverb|already|Ja he menjat.|I've already eaten.
+21|tot|determiner|all, everything|Ho entenc tot.|I understand everything.
+22|però|conjunction|but|És car, però bo.|It's expensive, but good.
+23|molt|adverb|very, much|Estic molt cansat.|I'm very tired.
+24|quan|conjunction|when|Quan arribes?|When do you arrive?
+25|fer|verb|to do, to make|Faig el sopar.|I'm making dinner.
+26|tenir|verb|to have|Tinc dos gats.|I have two cats.
+27|poder|verb|to be able, can|No puc venir avui.|I can't come today.
+28|dir|verb|to say, to tell|Què has dit?|What did you say?
+29|anar|verb|to go|Vaig a la platja.|I'm going to the beach.
+30|veure|verb|to see|Veig la muntanya.|I see the mountain.
+31|saber|verb|to know (a fact)|No sé la resposta.|I don't know the answer.
+32|voler|verb|to want|Vull aprendre català.|I want to learn Catalan.
+33|donar|verb|to give|Em dona un llibre cada dia.|He gives me a book every day.
+34|haver|verb|to have (auxiliary)|Hem arribat tard.|We arrived late.
+35|estar|verb|to be (state, location)|Estic a casa.|I'm at home.
+36|aquest|determiner|this|Aquest cotxe és meu.|This car is mine.
+37|també|adverb|also, too|Jo també vinc.|I'm coming too.
+38|què|pronoun|what|Què vols menjar?|What do you want to eat?
+39|on|adverb|where|On vius?|Where do you live?
+40|bé|adverb|well|Dorms bé?|Do you sleep well?
+41|any|noun|year|Tinc trenta anys.|I'm thirty years old.
+42|dia|noun|day|Fa un dia bonic.|It's a beautiful day.
+43|casa|noun|house, home|La casa té un jardí.|The house has a garden.
+44|home|noun|man|L'home llegeix el diari.|The man reads the newspaper.
+45|dona|noun|woman|La dona treballa aquí.|The woman works here.
+46|vida|noun|life|La vida és curta.|Life is short.
+47|temps|noun|time, weather|No tinc temps ara.|I don't have time now.
+48|món|noun|world|El món és gran.|The world is big.
+49|part|noun|part|Una part és meva.|One part is mine.
+50|cosa|noun|thing|És una cosa fàcil.|It's an easy thing.
+51|gent|noun|people|Hi ha molta gent.|There are a lot of people.
+52|nen|noun|child, boy|El nen dorm.|The child is sleeping.
+53|aigua|noun|water|L'aigua és freda.|The water is cold.
+54|feina|noun|work, job|Tinc molta feina.|I have a lot of work.
+55|mà|noun|hand|Em fa mal la mà.|My hand hurts.
+56|ull|noun|eye|Té els ulls verds.|She has green eyes.
+57|cap|noun|head|Em fa mal el cap.|I have a headache.
+58|nit|noun|night|La nit és tranquil·la.|The night is quiet.
+59|matí|noun|morning|Treballo al matí.|I work in the morning.
+60|tarda|noun|afternoon|Ens veiem a la tarda.|See you in the afternoon.
+61|nom|noun|name|Com et dius de nom?|What's your name?
+62|amic|noun|friend|El meu amic viu aquí.|My friend lives here.
+63|pare|noun|father|El pare cuina molt bé.|Dad cooks very well.
+64|mare|noun|mother|La mare llegeix un llibre.|Mum is reading a book.
+65|fill|noun|son, child|El seu fill té sis anys.|Their son is six.
+66|germà|noun|brother|El meu germà estudia.|My brother studies.
+67|ciutat|noun|city|Barcelona és una ciutat gran.|Barcelona is a big city.
+68|carrer|noun|street|El carrer és estret.|The street is narrow.
+69|país|noun|country|És un país petit.|It's a small country.
+70|llibre|noun|book|Aquest llibre és interessant.|This book is interesting.
+71|taula|noun|table|El pa és a la taula.|The bread is on the table.
+72|porta|noun|door|Obre la porta, si us plau.|Open the door, please.
+73|escola|noun|school|Els nens van a l'escola.|The children go to school.
+74|cotxe|noun|car|El cotxe és vermell.|The car is red.
+75|menjar|verb|to eat|Menjo una poma.|I'm eating an apple.
+76|beure|verb|to drink|Bec aigua cada dia.|I drink water every day.
+77|parlar|verb|to speak, to talk|Parlo català a casa.|I speak Catalan at home.
+78|viure|verb|to live|Visc a Girona.|I live in Girona.
+79|treballar|verb|to work|Treballo en una botiga.|I work in a shop.
+80|arribar|verb|to arrive|El tren arriba tard.|The train arrives late.
+81|passar|verb|to pass, to happen|Què ha passat?|What happened?
+82|quedar|verb|to stay, to remain|Em quedo a casa.|I'm staying home.
+83|deixar|verb|to leave, to let|Deixa el llibre aquí.|Leave the book here.
+84|trobar|verb|to find|No trobo les claus.|I can't find the keys.
+85|pensar|verb|to think|Penso molt en tu.|I think about you a lot.
+86|creure|verb|to believe|No m'ho crec.|I don't believe it.
+87|sentir|verb|to feel, to hear|Sento el vent.|I hear the wind.
+88|mirar|verb|to look at|Mira aquesta foto.|Look at this photo.
+89|escoltar|verb|to listen|Escolto música cada dia.|I listen to music every day.
+90|llegir|verb|to read|Llegeixo un llibre.|I'm reading a book.
+91|escriure|verb|to write|Escric una carta.|I'm writing a letter.
+92|comprar|verb|to buy|Compro pa al matí.|I buy bread in the morning.
+93|pagar|verb|to pay|Paguem amb targeta.|We pay by card.
+94|obrir|verb|to open|La botiga obre a les nou.|The shop opens at nine.
+95|tancar|verb|to close|Tanquem la porta.|We close the door.
+96|començar|verb|to begin|La classe comença ara.|The class starts now.
+97|acabar|verb|to finish|Acabo la feina aviat.|I finish work soon.
+98|portar|verb|to carry, to wear|Porto una jaqueta.|I'm wearing a jacket.
+99|posar|verb|to put|Poso el got a la taula.|I put the glass on the table.
+100|prendre|verb|to take|Prenc un cafè.|I'm having a coffee.
+101|venir|verb|to come|Véns amb nosaltres?|Are you coming with us?
+102|sortir|verb|to go out, to leave|Surto a les vuit.|I leave at eight.
+103|entrar|verb|to enter|Entra, si us plau.|Come in, please.
+104|dormir|verb|to sleep|Dormo vuit hores.|I sleep eight hours.
+105|jugar|verb|to play|Els nens juguen al parc.|The children play in the park.
+106|caminar|verb|to walk|Camino fins a la feina.|I walk to work.
+107|córrer|verb|to run|Corro cada matí.|I run every morning.
+108|cantar|verb|to sing|Canta molt bé.|She sings very well.
+109|ballar|verb|to dance|Ballem a la festa.|We dance at the party.
+110|estudiar|verb|to study|Estudio català.|I study Catalan.
+111|aprendre|verb|to learn|Aprenc paraules noves.|I learn new words.
+112|ensenyar|verb|to teach, to show|M'ensenya la ciutat.|She shows me the city.
+113|ajudar|verb|to help|M'ajudes, si us plau?|Can you help me, please?
+114|estimar|verb|to love|Estimo la meva família.|I love my family.
+115|agradar|verb|to please, to like|M'agrada el cafè.|I like coffee.
+116|necessitar|verb|to need|Necessito més temps.|I need more time.
+117|esperar|verb|to wait, to hope|T'espero a la porta.|I'll wait for you at the door.
+118|buscar|verb|to look for|Busco la meva jaqueta.|I'm looking for my jacket.
+119|preguntar|verb|to ask|Li pregunto on viu.|I ask him where he lives.
+120|respondre|verb|to answer|No respon el telèfon.|He doesn't answer the phone.
+121|bo|adjective|good|El pa és molt bo.|The bread is very good.
+122|dolent|adjective|bad|Fa un temps dolent.|The weather is bad.
+123|gran|adjective|big, large|Tenen una casa gran.|They have a big house.
+124|petit|adjective|small|És un gos petit.|It's a small dog.
+125|nou|adjective|new|Tinc un cotxe nou.|I have a new car.
+126|vell|adjective|old|Aquest llibre és vell.|This book is old.
+127|jove|adjective|young|És massa jove.|He's too young.
+128|alt|adjective|tall, high|El meu germà és alt.|My brother is tall.
+129|baix|adjective|short, low|La taula és baixa.|The table is low.
+130|llarg|adjective|long|El camí és llarg.|The road is long.
+131|curt|adjective|short|Té el cabell curt.|She has short hair.
+132|fàcil|adjective|easy|És una pregunta fàcil.|It's an easy question.
+133|difícil|adjective|difficult|El català no és difícil.|Catalan isn't difficult.
+134|bonic|adjective|beautiful, pretty|Quin dia més bonic!|What a beautiful day!
+135|lleig|adjective|ugly|Aquest edifici és lleig.|This building is ugly.
+136|content|adjective|happy, glad|Estic molt content.|I'm very happy.
+137|trist|adjective|sad|Per què estàs trist?|Why are you sad?
+138|cansat|adjective|tired|Estem cansats.|We're tired.
+139|calent|adjective|hot|El cafè és calent.|The coffee is hot.
+140|fred|adjective|cold|Fa fred a fora.|It's cold outside.
+141|blanc|adjective|white|La camisa és blanca.|The shirt is white.
+142|negre|adjective|black|Tinc un gat negre.|I have a black cat.
+143|vermell|adjective|red|La poma és vermella.|The apple is red.
+144|blau|adjective|blue|El cel és blau.|The sky is blue.
+145|verd|adjective|green|Els arbres són verds.|The trees are green.
+146|groc|adjective|yellow|El sol és groc.|The sun is yellow.
+147|jo|pronoun|I|Jo visc aquí.|I live here.
+148|tu|pronoun|you (informal singular)|Tu què vols?|What do you want?
+149|ell|pronoun|he|Ell treballa a Girona.|He works in Girona.
+150|ella|pronoun|she|Ella parla tres llengües.|She speaks three languages.
+151|nosaltres|pronoun|we|Nosaltres anem a peu.|We're walking.
+152|vosaltres|pronoun|you (plural)|Vosaltres veniu després.|You're coming later.
+153|ells|pronoun|they|Ells viuen al camp.|They live in the countryside.
+154|vostè|pronoun|you (formal)|Vostè és el professor?|Are you the teacher?
+155|meu|determiner|my, mine|El meu gos és petit.|My dog is small.
+156|teu|determiner|your, yours|Aquest és el teu llibre.|This is your book.
+157|seu|determiner|his, her, their|El seu fill estudia aquí.|Their son studies here.
+158|nostre|determiner|our, ours|El nostre poble és petit.|Our village is small.
+159|aquí|adverb|here|Seu aquí, si us plau.|Sit here, please.
+160|allà|adverb|there|El mercat és allà.|The market is over there.
+161|ara|adverb|now|Ara no puc parlar.|I can't talk now.
+162|abans|adverb|before|Truca abans de venir.|Call before coming.
+163|després|adverb|after, afterwards|Estudio després de sopar.|I study after dinner.
+164|sempre|adverb|always|Sempre bec cafè.|I always drink coffee.
+165|mai|adverb|never|No hi vaig mai.|I never go there.
+166|avui|adverb|today|Avui fa sol.|It's sunny today.
+167|ahir|adverb|yesterday|Ahir vaig treballar molt.|I worked a lot yesterday.
+168|demà|adverb|tomorrow|Demà anem a la platja.|Tomorrow we're going to the beach.
+169|aviat|adverb|soon, early|Arribarem aviat.|We'll arrive soon.
+170|tard|adverb|late|Sempre arribes tard.|You always arrive late.
+171|potser|adverb|maybe, perhaps|Potser plou demà.|Maybe it'll rain tomorrow.
+172|només|adverb|only|Només tinc cinc minuts.|I only have five minutes.
+173|encara|adverb|still, yet|Encara no he sopat.|I haven't had dinner yet.
+174|gairebé|adverb|almost|Gairebé hem acabat.|We've almost finished.
+175|massa|adverb|too, too much|Fa massa calor.|It's too hot.
+176|poc|adverb|little, few|Menjo poc al matí.|I eat little in the morning.
+177|prou|adverb|enough|Ja en tinc prou.|That's enough for me.
+178|dos|numeral|two|Tinc dos germans.|I have two brothers.
+179|tres|numeral|three|Són les tres.|It's three o'clock.
+180|quatre|numeral|four|Hi ha quatre cadires.|There are four chairs.
+181|cinc|numeral|five|Vull cinc pomes.|I want five apples.
+182|sis|numeral|six|Treballo sis hores.|I work six hours.
+183|set|numeral|seven|Té set anys.|He's seven years old.
+184|vuit|numeral|eight|Dormo vuit hores.|I sleep eight hours.
+185|deu|numeral|ten|Costa deu euros.|It costs ten euros.
+186|hola|interjection|hello|Hola, com va?|Hello, how's it going?
+187|adéu|interjection|goodbye|Adéu, fins demà!|Goodbye, see you tomorrow!
+188|sí|adverb|yes|Sí, és clar.|Yes, of course.
+189|gràcies|interjection|thank you|Moltes gràcies per tot.|Thank you very much for everything.
+190|perdó|interjection|sorry, excuse me|Perdó, no t'he sentit.|Sorry, I didn't hear you.
+191|si us plau|phrase|please|Un cafè, si us plau.|A coffee, please.
+192|bon dia|phrase|good morning|Bon dia! Com estàs?|Good morning! How are you?
+193|bona nit|phrase|good night|Bona nit, dorm bé.|Good night, sleep well.
+194|molt de gust|phrase|pleased to meet you|Molt de gust, sóc l'Anna.|Pleased to meet you, I'm Anna.
+195|fins després|phrase|see you later|Fins després, doncs!|See you later, then!
+196|de res|phrase|you're welcome|De res, home!|You're welcome!
+197|pa|noun|bread|El pa és calent.|The bread is hot.
+198|llet|noun|milk|Bec llet cada matí.|I drink milk every morning.
+199|cafè|noun|coffee|Un cafè amb llet, si us plau.|A coffee with milk, please.
+200|vi|noun|wine|El vi és molt bo.|The wine is very good.
+201|fruita|noun|fruit|Menjo fruita cada dia.|I eat fruit every day.
+202|poma|noun|apple|La poma és verda.|The apple is green.
+203|carn|noun|meat|No menjo carn.|I don't eat meat.
+204|peix|noun|fish|El peix és fresc.|The fish is fresh.
+205|arròs|noun|rice|Fem arròs per dinar.|We're making rice for lunch.
+206|sopa|noun|soup|La sopa està calenta.|The soup is hot.
+207|amanida|noun|salad|Vull una amanida.|I want a salad.
+208|formatge|noun|cheese|M'agrada el formatge.|I like cheese.
+209|ou|noun|egg|Menjo un ou.|I'm eating an egg.
+210|sucre|noun|sugar|Sense sucre, gràcies.|Without sugar, thanks.
+211|sal|noun|salt|Passa'm la sal.|Pass me the salt.
+212|taronja|noun|orange|Vull un suc de taronja.|I want an orange juice.
+213|plàtan|noun|banana|El plàtan és groc.|The banana is yellow.
+214|verdura|noun|vegetable|Cuino verdura al vapor.|I steam vegetables.
+215|postres|noun|dessert|Què hi ha de postres?|What's for dessert?
+216|universitat|noun|university|Estudia a la universitat.|She studies at university.
+217|professor|noun|teacher|El professor explica bé.|The teacher explains well.
+218|estudiant|noun|student|Sóc estudiant de català.|I'm a Catalan student.
+219|classe|noun|class|La classe és a les deu.|The class is at ten.
+220|paraula|noun|word|No entenc aquesta paraula.|I don't understand this word.
+221|llengua|noun|language, tongue|El català és una llengua romànica.|Catalan is a Romance language.
+222|pregunta|noun|question|Tinc una pregunta.|I have a question.
+223|resposta|noun|answer|No sé la resposta.|I don't know the answer.
+224|història|noun|story, history|M'agrada aquesta història.|I like this story.
+225|música|noun|music|Escolto música clàssica.|I listen to classical music.
+226|pel·lícula|noun|film, movie|La pel·lícula és llarga.|The film is long.
+227|joc|noun|game|És un joc fàcil.|It's an easy game.
+228|festa|noun|party, festival|Demà hi ha festa al poble.|Tomorrow there's a festival in the village.
+229|platja|noun|beach|Anem a la platja.|We're going to the beach.
+230|muntanya|noun|mountain|La muntanya és alta.|The mountain is high.
+231|mar|noun|sea|El mar està tranquil.|The sea is calm.
+232|cel|noun|sky|El cel és blau.|The sky is blue.
+233|sol|noun|sun|Avui fa sol.|It's sunny today.
+234|pluja|noun|rain|La pluja no para.|The rain doesn't stop.
+235|vent|noun|wind|Fa molt de vent.|It's very windy.
+236|arbre|noun|tree|L'arbre és molt vell.|The tree is very old.
+237|flor|noun|flower|Les flors són boniques.|The flowers are beautiful.
+238|gos|noun|dog|El gos dorm al sofà.|The dog sleeps on the sofa.
+239|gat|noun|cat|El gat és negre.|The cat is black.
+240|ocell|noun|bird|L'ocell canta al matí.|The bird sings in the morning.
+241|diner|noun|money|No tinc diners.|I don't have money.
+242|botiga|noun|shop|La botiga és tancada.|The shop is closed.
+243|mercat|noun|market|Compro fruita al mercat.|I buy fruit at the market.
+244|preu|noun|price|El preu és molt alt.|The price is very high.
+245|col·legi|noun|school (primary)|El col·legi és a prop.|The school is nearby.
+246|hora|noun|hour, time|Quina hora és?|What time is it?
+247|setmana|noun|week|La setmana passa ràpid.|The week goes by fast.
+248|mes|noun|month|El mes de maig és bonic.|The month of May is lovely.
+249|família|noun|family|La meva família és petita.|My family is small.
+250|poble|noun|village, town|Visc en un poble petit.|I live in a small village.

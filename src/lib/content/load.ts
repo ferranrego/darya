@@ -3,19 +3,14 @@
  * app bundle, so no network round-trip for lexicon/course/levels.
  */
 import alphabetJson from "@content/alphabet/course.json";
-import grammarA1Json from "@content/grammar/a1.json";
-import grammarA2Json from "@content/grammar/a2.json";
-import grammarB1Json from "@content/grammar/b1.json";
-import grammarB2Json from "@content/grammar/b2.json";
-import grammarC1Json from "@content/grammar/c1.json";
-import grammarC2Json from "@content/grammar/c2.json";
+import grammarJson from "@content/grammar/all.json";
 import lexiconJson from "@content/lexicon/lexicon.json";
 import themesJson from "@content/lexicon/themes.json";
 import levelsJson from "@content/levels/levels.json";
 import { buildIndex, type LexiconIndex } from "../text";
 import {
   alphabetCourseSchema,
-  grammarCourseSchema,
+  grammarCoursesFileSchema,
   levelsFileSchema,
   lexiconFileSchema,
   type AlphabetCourse,
@@ -35,21 +30,22 @@ export const themes: Theme[] = themesFileSchema.parse(themesJson);
 export const alphabetCourse: AlphabetCourse = alphabetCourseSchema.parse(alphabetJson);
 export const levelsFile: LevelsFile = levelsFileSchema.parse(levelsJson);
 
-/**
- * The grammar courses that ship today, ordered by CEFR level. B1/B2 are
- * authored but not yet wired in; add their imports here when ready.
- */
-export const grammarCourses: GrammarCourse[] = [
-  grammarCourseSchema.parse(grammarA1Json),
-  grammarCourseSchema.parse(grammarA2Json),
-  grammarCourseSchema.parse(grammarB1Json),
-  grammarCourseSchema.parse(grammarB2Json),
-  grammarCourseSchema.parse(grammarC1Json),
-  grammarCourseSchema.parse(grammarC2Json),
-];
-
 /** Canonical CEFR order, used for indexing even before every level ships. */
 export const GRAMMAR_LEVEL_ORDER: GrammarLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+
+/**
+ * Every grammar course this language ships, ordered by CEFR level.
+ *
+ * One barrel file rather than a static import per level: languages start at
+ * different points. Dari ships all six; Catalan starts with A1. A hardcoded
+ * a1..c2 import list would fail the build on the missing files instead of
+ * simply offering fewer levels.
+ */
+export const grammarCourses: GrammarCourse[] = grammarCoursesFileSchema
+  .parse(grammarJson)
+  .courses.sort(
+    (a, b) => GRAMMAR_LEVEL_ORDER.indexOf(a.level) - GRAMMAR_LEVEL_ORDER.indexOf(b.level),
+  );
 
 /** All grammar lessons in course order, flattened across every level and block. */
 export const grammarLessons: GrammarLesson[] = grammarCourses.flatMap((c) =>

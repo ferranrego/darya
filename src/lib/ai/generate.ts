@@ -180,7 +180,9 @@ where "index" is the number provided above for the sentence.`;
     titleEn: doc.titleEn,
     sentences: doc.sentences.map((s, i) => {
       const repair = repairs.find(r => r.index === i);
-      return repair ? { target: repair.target, translit: repair.translit, en: repair.en } : { target: s.target, translit: s.translit, en: s.en };
+      return repair
+        ? { target: repair.target, translit: repair.translit, en: repair.en }
+        : { target: s.target, translit: s.translit ?? "", en: s.en };
     })
   };
   
