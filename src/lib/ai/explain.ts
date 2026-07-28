@@ -1,20 +1,8 @@
-import { z } from "zod";
 import { completeJson } from "./providers";
+import { sentenceExplanationSchema, type SentenceExplanation } from "./schemas";
 import { isKnownToken } from "./vocab-check";
 
-export const sentenceExplanationSchema = z.object({
-  words: z.array(
-    z.object({
-      target: z.string(),
-      translit: z.string(),
-      gloss: z.string(),
-      role: z.string().optional(),
-    })
-  ),
-  structureEn: z.string(),
-});
-
-export type SentenceExplanation = z.infer<typeof sentenceExplanationSchema>;
+export { sentenceExplanationSchema, type SentenceExplanation };
 
 export async function generateSentenceExplanation(target: string): Promise<SentenceExplanation> {
   const prompt = `You are an expert Persian (Dari) linguist.

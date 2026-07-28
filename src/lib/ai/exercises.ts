@@ -1,4 +1,9 @@
 import { z } from "zod";
+import { exerciseItemSchema, type ExerciseData, type GeneratedExercises } from "./schemas.ts";
+
+const exerciseOutputSchema = z.object({ exercises: z.array(exerciseItemSchema) });
+
+export type { ExerciseData, GeneratedExercises };
 import { lexiconIndex } from "../content/load";
 import type { LexiconEntry } from "../content/schema";
 import { normalize, tokenize } from "../text";
@@ -9,49 +14,6 @@ import { profile } from "../lang/index.ts";
 
 const MAX_SENTENCE_WORDS = 10;
 
-const exerciseOutputSchema = z.object({
-  exercises: z.array(
-    z.discriminatedUnion("type", [
-      z.object({
-        type: z.literal("cloze"),
-        sentenceTarget: z.string(),
-        sentenceTranslit: z.string(),
-        sentenceEn: z.string(),
-        missingWord: z.string(),
-        missingTranslit: z.string(),
-        missingEn: z.string().optional(),
-        distractors: z.array(z.string()).min(2),
-        lexemeId: z.string().optional(),
-      }),
-      z.object({
-        type: z.literal("unscramble"),
-        sentenceTarget: z.string(),
-        sentenceTranslit: z.string(),
-        sentenceEn: z.string(),
-        words: z.array(z.string()),
-      }),
-      z.object({
-        type: z.literal("realia"),
-        documentType: z.string(),
-        markdown: z.string(),
-        questionEn: z.string(),
-        optionsEn: z.array(z.string()).min(2),
-        correctOptionIndex: z.number(),
-      }),
-      z.object({
-        type: z.literal("grammar_detective"),
-        correctSentenceTarget: z.string(),
-        correctSentenceTranslit: z.string(),
-        incorrectSentenceTarget: z.string(),
-        incorrectSentenceTranslit: z.string(),
-        explanationEn: z.string(),
-      }),
-    ])
-  )
-});
-
-export type GeneratedExercises = z.infer<typeof exerciseOutputSchema>;
-export type ExerciseData = GeneratedExercises["exercises"][number];
 
 export interface ExerciseGenerationRequest {
   level: string;

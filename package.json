@@ -14,7 +14,7 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "seed": "node --env-file=.env.local scripts/seed.ts",
-    "diagnose:texts": "node --env-file=.env.local scripts/diagnose-texts.ts"
+    "validate:db": "node --env-file=.env.local scripts/validate-db.ts"
   },
   "dependencies": {
     "@number-flow/react": "^0.6.2",

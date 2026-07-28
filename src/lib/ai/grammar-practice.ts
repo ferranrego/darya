@@ -27,11 +27,7 @@ import { profile } from "../lang/index.ts";
 export const PRACTICE_BATCH_SIZE = 6;
 const MAX_SENTENCE_WORDS = 8;
 
-/** Raw model output: exercises without ids, direction fixed to toEn. */
-const rawItemSchema = z.union([
-  fillBlankExercise.omit({ id: true }),
-  chooseTranslationExercise.omit({ id: true }),
-]);
+import { rawItemSchema } from "./schemas.ts";
 
 const outputSchema = z.object({ exercises: z.array(rawItemSchema).min(1) });
 
