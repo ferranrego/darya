@@ -15,7 +15,7 @@
         },
         {
           "surface": "meu",
-          "lexemeId": "lx-0247"
+          "lexemeId": "lx-0248"
         },
         {
           "surface": "amic",
@@ -57,7 +57,7 @@
         },
         {
           "surface": "platja",
-          "lexemeId": "lx-0320"
+          "lexemeId": "lx-0321"
         }
       ]
     },
@@ -71,7 +71,7 @@
         },
         {
           "surface": "sol",
-          "lexemeId": "lx-0324"
+          "lexemeId": "lx-0325"
         },
         {
           "surface": "és",
@@ -83,7 +83,7 @@
         },
         {
           "surface": "bo",
-          "lexemeId": "lx-0214"
+          "lexemeId": "lx-0215"
         }
       ]
     },
@@ -97,7 +97,7 @@
         },
         {
           "surface": "contents",
-          "lexemeId": "lx-0229"
+          "lexemeId": "lx-0230"
         }
       ]
     }
@@ -113,11 +113,11 @@
     "lx-0088",
     "lx-0093",
     "lx-0104",
-    "lx-0214",
-    "lx-0229",
-    "lx-0247",
-    "lx-0320",
-    "lx-0324"
+    "lx-0215",
+    "lx-0230",
+    "lx-0248",
+    "lx-0321",
+    "lx-0325"
   ],
   "newWordRatio": 0,
   "source": "seed",

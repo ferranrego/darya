@@ -6,12 +6,12 @@
   "titleEn": "The morning",
   "sentences": [
     {
-      "target": "El matí bec cafè.",
+      "target": "Al matí bec cafè.",
       "en": "In the morning I drink coffee.",
       "tokens": [
         {
-          "surface": "El",
-          "lexemeId": "lx-0031"
+          "surface": "Al",
+          "lexemeId": "lx-0022"
         },
         {
           "surface": "matí",
@@ -23,7 +23,7 @@
         },
         {
           "surface": "cafè",
-          "lexemeId": "lx-0290"
+          "lexemeId": "lx-0291"
         }
       ]
     },
@@ -37,7 +37,7 @@
         },
         {
           "surface": "pa",
-          "lexemeId": "lx-0288"
+          "lexemeId": "lx-0289"
         },
         {
           "surface": "amb",
@@ -45,7 +45,7 @@
         },
         {
           "surface": "llet",
-          "lexemeId": "lx-0289"
+          "lexemeId": "lx-0290"
         }
       ]
     },
@@ -55,7 +55,7 @@
       "tokens": [
         {
           "surface": "Després",
-          "lexemeId": "lx-0255"
+          "lexemeId": "lx-0256"
         },
         {
           "surface": "vaig",
@@ -91,7 +91,7 @@
     }
   ],
   "vocabUsed": [
-    "lx-0031",
+    "lx-0022",
     "lx-0032",
     "lx-0034",
     "lx-0041",
@@ -102,10 +102,10 @@
     "lx-0101",
     "lx-0102",
     "lx-0105",
-    "lx-0255",
-    "lx-0288",
+    "lx-0256",
     "lx-0289",
-    "lx-0290"
+    "lx-0290",
+    "lx-0291"
   ],
   "newWordRatio": 0,
   "source": "seed",

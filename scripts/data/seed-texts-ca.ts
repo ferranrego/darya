@@ -30,7 +30,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTarget: "El matí",
     titleEn: "The morning",
     sentences: [
-      { target: "El matí bec cafè.", en: "In the morning I drink coffee." },
+      { target: "Al matí bec cafè.", en: "In the morning I drink coffee." },
       { target: "Menjo pa amb llet.", en: "I eat bread with milk." },
       { target: "Després vaig a la feina.", en: "Afterwards I go to work." },
       { target: "Treballo molt.", en: "I work a lot." },

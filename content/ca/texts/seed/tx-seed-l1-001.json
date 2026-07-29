@@ -23,7 +23,7 @@
         },
         {
           "surface": "gran",
-          "lexemeId": "lx-0216"
+          "lexemeId": "lx-0217"
         }
       ]
     },
@@ -79,7 +79,7 @@
         },
         {
           "surface": "dorm",
-          "lexemeId": "lx-0198"
+          "lexemeId": "lx-0199"
         }
       ]
     },
@@ -93,7 +93,7 @@
         },
         {
           "surface": "gos",
-          "lexemeId": "lx-0329"
+          "lexemeId": "lx-0330"
         },
         {
           "surface": "és",
@@ -101,7 +101,7 @@
         },
         {
           "surface": "petit",
-          "lexemeId": "lx-0217"
+          "lexemeId": "lx-0218"
         }
       ]
     }
@@ -116,10 +116,10 @@
     "lx-0078",
     "lx-0089",
     "lx-0090",
-    "lx-0198",
-    "lx-0216",
+    "lx-0199",
     "lx-0217",
-    "lx-0329"
+    "lx-0218",
+    "lx-0330"
   ],
   "newWordRatio": 0,
   "source": "seed",

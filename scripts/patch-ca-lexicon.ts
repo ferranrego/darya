@@ -28,11 +28,14 @@ import { verifyEntry, type CandidateEntry } from "./verify-ca-entries.ts";
 const write = process.argv.includes("--write");
 const root = join(import.meta.dirname, "..");
 const lexPath = join(root, "content", "ca", "lexicon", "lexicon.json");
-// Two authored sources, applied in order: the closed-class core, then the
-// vocabulary the grammar course turned out to need.
-const patchPaths = ["ca-closed-class.json", "ca-grammar-vocab.json"].map((f) =>
-  join(root, "scripts", "data", f),
-);
+// Three authored sources, applied in order: the closed-class core, the
+// vocabulary the grammar course turned out to need, and the philologist
+// audit's corrections.
+const patchPaths = [
+  "ca-closed-class.json",
+  "ca-grammar-vocab.json",
+  "ca-lexicon-corrections.json",
+].map((f) => join(root, "scripts", "data", f));
 
 interface Entry {
   id: string;
@@ -53,7 +56,17 @@ interface Entry {
 interface PatchFile {
   delete: { target: string; why: string }[];
   rename: { from: string; to: string; why: string }[];
-  patch: { target: string; glossEn?: string; addVariants: string[] }[];
+  patch: {
+    target: string;
+    /** Rename the headword, keeping the entry's id and its user data. */
+    newTarget?: string;
+    glossEn?: string;
+    addVariants: string[];
+    exampleTarget?: string;
+    exampleEn?: string;
+    /** Why the old version was wrong. Documentation only. */
+    why?: string;
+  }[];
   add: {
     target: string;
     pos: string;
@@ -110,7 +123,15 @@ for (const p of patch.patch) {
     log.push(`patch: "${p.target}" not present`);
     continue;
   }
+  if (p.newTarget && p.newTarget !== e.target) {
+    // The old spelling stays reachable, so existing text still resolves.
+    if (!e.variants.includes(e.target)) e.variants.push(e.target);
+    e.target = p.newTarget;
+    e.targetNormalized = normalizeCatalan(p.newTarget);
+  }
   if (p.glossEn) e.glossEn = p.glossEn;
+  if (p.exampleTarget) e.exampleTarget = p.exampleTarget;
+  if (p.exampleEn) e.exampleEn = p.exampleEn;
   for (const v of p.addVariants) if (!e.variants.includes(v)) e.variants.push(v);
 }
 

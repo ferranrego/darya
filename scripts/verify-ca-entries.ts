@@ -58,11 +58,11 @@ const DEFECTIVE_VERBS = new Set(["ploure", "caldre", "nevar"]);
  * banned is displaying the old form as the model.
  */
 const OBSOLETE_DIACRITICS: [RegExp, string][] = [
-  [/\bsóc\b/i, "soc"],
-  [/\bdóna\b/i, "dona"],
-  [/\bdóno\b/i, "dono"],
-  [/\bvéns\b/i, "vens"],
-  [/\bvénen\b/i, "venen"],
+  [/(?<!\p{L})sóc(?!\p{L})/iu, "soc"],
+  [/(?<!\p{L})dóna(?!\p{L})/iu, "dona"],
+  [/(?<!\p{L})dóno(?!\p{L})/iu, "dono"],
+  [/(?<!\p{L})véns(?!\p{L})/iu, "vens"],
+  [/(?<!\p{L})vénen(?!\p{L})/iu, "venen"],
 ];
 
 /** Post-2017 spelling check for any Catalan string the app displays. */
@@ -164,6 +164,19 @@ export function verifyEntry(
     problems.push(...obsoleteSpellings(c.example));
     if (tokens.length > 12) problems.push(`example too long (${tokens.length} tokens)`);
     if (tokens.length < 3) problems.push("example is too short to be a sentence");
+    /**
+     * A word sheet shows `exampleTarget` as *the* model sentence for the word,
+     * so a fragment is worse than unhelpful. "Vaig anar-hi perquè." and "No
+     * vaig anar sinó." are not merely incomplete, they are ungrammatical -
+     * both conjunctions demand a following clause - and they were the only
+     * Catalan a learner ever saw for those two words.
+     */
+    // Unicode-aware boundaries: JS \b is ASCII-only, so it fires inside
+    // "dolça." - ç counts as a non-word character and the following a looks
+    // like a word start.
+    if (/(?<!\p{L})(perquè|però|sinó|que|mentre|quan|si|ni|i|o|amb|sense|de|a|en|per|com)[.!?]$/iu.test(c.example)) {
+      problems.push("example stops on a word that needs a complement");
+    }
     problems.push(...apostropheProblems(c.example));
   }
 

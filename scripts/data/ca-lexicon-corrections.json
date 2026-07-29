@@ -1,0 +1,486 @@
+{
+  "note": "Corrections from the catalan-philologist audit. Each one was a word, gloss or example sentence that taught a learner something false. Applied by scripts/patch-ca-lexicon.ts alongside the other authored sources. 'why' cites what makes the old version wrong, so a later reader can check the judgement rather than trust it.",
+  "delete": [
+    {
+      "target": "sorra",
+      "why": "glossed 'floor'; sorra is sand. The floor is 'el terra', which already has an entry"
+    },
+    {
+      "target": "llàmpada",
+      "why": "not a DIEC2 form; reads as a blend of làmpada with the castellanisme llàmpara"
+    },
+    {
+      "target": "sender",
+      "why": "glossed 'hike' with the invented idiom 'anar de sender'; sender is a path"
+    },
+    {
+      "target": "raciocini",
+      "why": "literary, far outside A1-A2"
+    },
+    {
+      "target": "sòl",
+      "why": "third entry glossed 'floor', after sorra and terra; the everyday word is terra"
+    }
+  ],
+  "rename": [
+    {
+      "from": "col·ze",
+      "to": "colze",
+      "why": "no geminate l here"
+    }
+  ],
+  "patch": [
+    {
+      "target": "muscle",
+      "glossEn": "shoulder (NOT muscle - that is múscul)",
+      "addVariants": [],
+      "exampleTarget": "Em fa mal el muscle dret.",
+      "exampleEn": "My right shoulder hurts.",
+      "why": "DIEC2: muscle is the top of the shoulder where the arm joins. It was glossed 'muscle', so the example read 'I have an injured shoulder' under an English gloss about muscles."
+    },
+    {
+      "target": "terra",
+      "glossEn": "floor, ground (el terra); earth, soil (la terra)",
+      "addVariants": [],
+      "exampleTarget": "El terra és fred.",
+      "exampleEn": "The floor is cold.",
+      "why": "el terra is the floor of a room, la terra is soil - a gender trap Spanish (el suelo / la tierra) gives no warning about. The example said 'the soil is cold'."
+    },
+    {
+      "target": "colze",
+      "glossEn": "elbow",
+      "addVariants": [],
+      "exampleTarget": "Tinc el colze inflamat.",
+      "exampleEn": "My elbow is swollen.",
+      "why": "spelling only"
+    },
+    {
+      "target": "rentadora",
+      "glossEn": "washing machine",
+      "addVariants": [],
+      "exampleTarget": "La rentadora és molt pràctica.",
+      "exampleEn": "The washing machine is very handy.",
+      "why": "was glossed 'dishwasher'; that is rentaplats"
+    },
+    {
+      "target": "mitja",
+      "glossEn": "stocking",
+      "addVariants": [],
+      "exampleTarget": "Em poso les mitges.",
+      "exampleEn": "I put my stockings on.",
+      "why": "was glossed 'sock'; DIEC2 separates mitja from mitjó by how far up the leg it goes"
+    },
+    {
+      "target": "oblidar",
+      "glossEn": "to forget",
+      "addVariants": [],
+      "exampleTarget": "He oblidat el paraigua a casa.",
+      "exampleEn": "I've left my umbrella at home.",
+      "why": "the example wrote 'paràguas', Spanish paraguas with a Catalan-looking accent bolted on"
+    },
+    {
+      "target": "reparar",
+      "glossEn": "to repair, to fix",
+      "addVariants": [],
+      "exampleTarget": "He de reparar el llum de la cuina.",
+      "exampleEn": "I have to fix the kitchen light.",
+      "why": "the example wrote 'llàmpada', which is not a word"
+    },
+    {
+      "target": "besàvia",
+      "glossEn": "great-grandmother",
+      "addVariants": [],
+      "exampleTarget": "La besàvia era molt sàvia.",
+      "exampleEn": "My great-grandmother was very wise.",
+      "why": "'savia' without the accent is not a word; the masculine savi was already spelt correctly"
+    },
+    {
+      "target": "igualtat",
+      "glossEn": "equality",
+      "addVariants": [],
+      "exampleTarget": "Lluito per la igualtat.",
+      "exampleEn": "I fight for equality.",
+      "why": "wrote l'igualtat; la does not elide before an unstressed i-, which is what gl-02 teaches"
+    },
+    {
+      "target": "cadira",
+      "glossEn": "chair",
+      "addVariants": [],
+      "exampleTarget": "Sec a la cadira.",
+      "exampleEn": "I sit on the chair.",
+      "why": "'Em seiem' is the 1st person plural of a non-pronominal verb; seure has no em"
+    },
+    {
+      "target": "butaca",
+      "glossEn": "armchair",
+      "addVariants": [],
+      "exampleTarget": "M'assec a la butaca.",
+      "exampleEn": "I sit down in the armchair.",
+      "why": "same; asseure's is the pronominal verb"
+    },
+    {
+      "target": "u",
+      "glossEn": "one (counting; before a noun it is 'un')",
+      "addVariants": [],
+      "exampleTarget": "El número guanyador és el vint-i-u.",
+      "exampleEn": "The winning number is twenty-one.",
+      "why": "'Tinc u gos' - u is the arithmetic cardinal, never a determiner"
+    },
+    {
+      "target": "ràdio",
+      "glossEn": "radio",
+      "addVariants": [],
+      "exampleTarget": "Porto la ràdio a la cuina.",
+      "exampleEn": "I carry the radio into the kitchen.",
+      "why": "'Llevo la ràdio' is the Spanish llevar; Catalan llevar means to remove or to get up"
+    },
+    {
+      "target": "internet",
+      "glossEn": "internet",
+      "addVariants": [],
+      "exampleTarget": "Hi ha internet a l'hotel.",
+      "exampleEn": "There is internet at the hotel.",
+      "why": "'N'hi ha d'internet' - en cannot co-occur with the noun it stands for"
+    },
+    {
+      "target": "imatge",
+      "glossEn": "image, picture",
+      "addVariants": [],
+      "exampleTarget": "He desat la imatge al telèfon.",
+      "exampleEn": "I saved the image on my phone.",
+      "why": "the example wrote 'telefon' without its accent"
+    },
+    {
+      "target": "darrera",
+      "newTarget": "darrere",
+      "glossEn": "behind",
+      "addVariants": [
+        "darrera"
+      ],
+      "exampleTarget": "El sofà és darrere la taula.",
+      "exampleEn": "The sofa is behind the table.",
+      "why": "as preposition and adverb the form is darrere; darrera is only the feminine adjective 'last' (Optimot)"
+    },
+    {
+      "target": "pebrot",
+      "glossEn": "pepper (the vegetable)",
+      "addVariants": [],
+      "exampleTarget": "Poso pebrot vermell a l'amanida.",
+      "exampleEn": "I put red pepper in the salad.",
+      "why": "was glossed 'pepper' in a spice list; the spice is pebre, pebrot is the bell pepper"
+    },
+    {
+      "target": "sanitat",
+      "glossEn": "public health, the health service",
+      "addVariants": [],
+      "exampleTarget": "La sanitat pública és bona.",
+      "exampleEn": "The public health service is good.",
+      "why": "was glossed 'sanitation', which is sanejament"
+    },
+    {
+      "target": "reclamar",
+      "glossEn": "to claim, to demand",
+      "addVariants": [],
+      "exampleTarget": "Vaig reclamar els diners.",
+      "exampleEn": "I claimed the money back.",
+      "why": "was glossed 'to complain', which is queixar-se"
+    },
+    {
+      "target": "dolor",
+      "glossEn": "pain",
+      "addVariants": [],
+      "exampleTarget": "Sento un dolor a l'esquena.",
+      "exampleEn": "I feel a pain in my back.",
+      "why": "'Tinc dolor de cap' is the Spanish dolor de cabeza; Catalan says mal de cap"
+    },
+    {
+      "target": "metge",
+      "glossEn": "doctor",
+      "addVariants": [
+        "metgessa",
+        "metgesses"
+      ],
+      "exampleTarget": "Vaig al metge cada any.",
+      "exampleEn": "I go to the doctor every year.",
+      "why": "'Vinc al metge' means 'I come to the doctor' - the opposite of its own gloss"
+    },
+    {
+      "target": "enviudar",
+      "glossEn": "to be widowed",
+      "addVariants": [],
+      "exampleTarget": "La meva àvia va enviudar molt jove.",
+      "exampleEn": "My grandmother was widowed very young.",
+      "why": "DIEC2 lists it as intransitive, not pronominal"
+    },
+    {
+      "target": "tassa",
+      "glossEn": "cup",
+      "addVariants": [],
+      "exampleTarget": "Serveix-me una tassa de cafè.",
+      "exampleEn": "Serve me a cup of coffee.",
+      "why": "the Catalan was 3rd person indicative against an English imperative, teaching the indicative as an imperative"
+    },
+    {
+      "target": "explicar",
+      "glossEn": "to explain",
+      "addVariants": [],
+      "exampleTarget": "Explica'm la idea, si us plau.",
+      "exampleEn": "Explain the idea to me, please.",
+      "why": "same: 'M'explica la idea' is 'he explains the idea to me'"
+    },
+    {
+      "target": "abric",
+      "glossEn": "coat",
+      "addVariants": [],
+      "exampleTarget": "A l'hivern porto un abric gros.",
+      "exampleEn": "In winter I wear a thick coat.",
+      "why": "'Du un abric gros' glossed as 'you wear'; du is 3rd person"
+    },
+    {
+      "target": "així",
+      "glossEn": "like this, so",
+      "addVariants": [],
+      "exampleTarget": "Ho vaig fer així.",
+      "exampleEn": "I did it like this.",
+      "why": "'Així que ho vaig veure' glossed 'Thus I saw it'; així que means 'as soon as' or 'so'"
+    },
+    {
+      "target": "llar",
+      "glossEn": "home",
+      "addVariants": [],
+      "exampleTarget": "La meva llar és petita.",
+      "exampleEn": "My home is small.",
+      "why": "was glossed 'hearth'"
+    },
+    {
+      "target": "llibreria",
+      "glossEn": "bookshop; bookcase",
+      "addVariants": [],
+      "exampleTarget": "Compro llibres a la llibreria.",
+      "exampleEn": "I buy books at the bookshop.",
+      "why": "was glossed only 'bookshelf'"
+    },
+    {
+      "target": "els",
+      "glossEn": "the (masc. pl.); them, to them",
+      "addVariants": [],
+      "why": "was glossed 'to him/her', which is li"
+    },
+    {
+      "target": "sabata",
+      "glossEn": "shoe",
+      "addVariants": [],
+      "why": "singular headword had a plural gloss"
+    },
+    {
+      "target": "guant",
+      "glossEn": "glove",
+      "addVariants": [],
+      "why": "same"
+    },
+    {
+      "target": "os",
+      "glossEn": "bone",
+      "addVariants": [],
+      "why": "same"
+    },
+    {
+      "target": "llavi",
+      "glossEn": "lip",
+      "addVariants": [],
+      "why": "same"
+    },
+    {
+      "target": "camp",
+      "glossEn": "field",
+      "addVariants": [],
+      "why": "same"
+    },
+    {
+      "target": "perquè",
+      "addVariants": [],
+      "exampleTarget": "No vaig sortir perquè plovia.",
+      "exampleEn": "I didn't go out because it was raining.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "sinó",
+      "addVariants": [],
+      "exampleTarget": "No vull te, sinó cafè.",
+      "exampleEn": "I don't want tea, but coffee.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "dansa",
+      "addVariants": [],
+      "exampleTarget": "Aprenem una dansa tradicional.",
+      "exampleEn": "We're learning a traditional dance.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "mitjà",
+      "addVariants": [],
+      "exampleTarget": "El preu mitjà és molt alt.",
+      "exampleEn": "The average price is very high.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "a sobre",
+      "addVariants": [],
+      "exampleTarget": "El llibre és a sobre de la taula.",
+      "exampleEn": "The book is on top of the table.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "comprendre",
+      "addVariants": [],
+      "exampleTarget": "Vull comprendre la situació.",
+      "exampleEn": "I want to understand the situation.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "conversa",
+      "addVariants": [],
+      "exampleTarget": "Vam tenir una conversa llarga.",
+      "exampleEn": "We had a long conversation.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "monòleg",
+      "addVariants": [],
+      "exampleTarget": "L'actor fa un monòleg llarg.",
+      "exampleEn": "The actor performs a long monologue.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "reflexió",
+      "addVariants": [],
+      "exampleTarget": "Aquesta reflexió és molt profunda.",
+      "exampleEn": "This reflection is very deep.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "síntesi",
+      "addVariants": [],
+      "exampleTarget": "Necessito una síntesi clara.",
+      "exampleEn": "I need a clear summary.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "crítica",
+      "addVariants": [],
+      "exampleTarget": "Va fer una crítica constructiva.",
+      "exampleEn": "He made a constructive criticism.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "elogi",
+      "addVariants": [],
+      "exampleTarget": "Li vaig fer un elogi sincer.",
+      "exampleEn": "I paid him a sincere compliment.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "suggeriment",
+      "addVariants": [],
+      "exampleTarget": "Tinc un suggeriment per a tu.",
+      "exampleEn": "I have a suggestion for you.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "recomanació",
+      "addVariants": [],
+      "exampleTarget": "Segueixo la teva recomanació.",
+      "exampleEn": "I'm following your recommendation.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "cultural",
+      "addVariants": [],
+      "exampleTarget": "Anem a un acte cultural.",
+      "exampleEn": "We're going to a cultural event.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "equip",
+      "addVariants": [],
+      "exampleTarget": "El meu equip va guanyar.",
+      "exampleEn": "My team won.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    },
+    {
+      "target": "tan",
+      "addVariants": [],
+      "exampleTarget": "No és tan fàcil com sembla.",
+      "exampleEn": "It's not as easy as it seems.",
+      "why": "the example was a fragment, not a sentence; the word sheet shows it as the model"
+    }
+  ],
+  "add": [
+    {
+      "target": "múscul",
+      "pos": "noun",
+      "band": 3,
+      "glossEn": "muscle",
+      "variants": [],
+      "exampleTarget": "Tinc un múscul lesionat.",
+      "exampleEn": "I have a strained muscle."
+    },
+    {
+      "target": "paraigua",
+      "pos": "noun",
+      "band": 3,
+      "glossEn": "umbrella",
+      "variants": [
+        "paraigües"
+      ],
+      "exampleTarget": "Agafo el paraigua quan plou.",
+      "exampleEn": "I take the umbrella when it rains."
+    },
+    {
+      "target": "mitjó",
+      "pos": "noun",
+      "band": 3,
+      "glossEn": "sock",
+      "variants": [],
+      "exampleTarget": "Em poso els mitjons.",
+      "exampleEn": "I put my socks on."
+    },
+    {
+      "target": "pebre",
+      "pos": "noun",
+      "band": 3,
+      "glossEn": "pepper (the spice)",
+      "variants": [],
+      "exampleTarget": "Poso sal i pebre a la sopa.",
+      "exampleEn": "I put salt and pepper in the soup."
+    },
+    {
+      "target": "queixar",
+      "pos": "verb",
+      "band": 3,
+      "glossEn": "to complain (reflexive: queixar-se de)",
+      "variants": [],
+      "exampleTarget": "Em queixo del servei.",
+      "exampleEn": "I'm complaining about the service."
+    },
+    {
+      "target": "camí",
+      "pos": "noun",
+      "band": 2,
+      "glossEn": "path, way",
+      "variants": [],
+      "exampleTarget": "Aquest camí va a la platja.",
+      "exampleEn": "This path goes to the beach."
+    },
+    {
+      "target": "llapis",
+      "pos": "noun",
+      "band": 3,
+      "glossEn": "pencil (invariable: el llapis, els llapis)",
+      "variants": [],
+      "exampleTarget": "Escric amb un llapis.",
+      "exampleEn": "I write with a pencil."
+    }
+  ]
+}
