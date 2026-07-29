@@ -10,17 +10,6 @@
  * test rather than discovered in production.
  */
 
-/**
- * Below this many tracked words, a learner's word list is too thin to measure a
- * text against: the placement credits them with hundreds, but only the handful
- * the assessment showed them exist as rows. The generator applies the same floor
- * when it chooses what vocabulary to write with. It lives here rather than in
- * `ai/generate.ts` because that module is server-only and this rule runs in the
- * browser - importing across that line fails the production build, though not
- * typecheck.
- */
-export const ASSUMED_KNOWN_FLOOR = 15;
-
 export interface PoolText {
   id: string;
   source: string;
@@ -48,18 +37,23 @@ export interface PoolInput {
 /**
  * The vocabulary a text is measured against.
  *
- * A learner placed above the first level has only the handful of words the
- * assessment happened to show them, not the several hundred the placement
- * credits them with. Under the floor, the level's prior words count as known -
- * the same fallback the generator makes when it chooses what to write.
+ * Tracked words, plus the words below the learner's level. The second part is
+ * not a guess: being placed at a level *means* the vocabulary of the levels
+ * beneath it is already known - that is what `entryKnownWords` says. Only the
+ * few dozen words the assessment happened to show ever become rows, so counting
+ * rows alone would treat a learner credited with 700 words as knowing 17, mark
+ * ordinary level-appropriate text as too hard, and leave the reader with
+ * nothing to show.
+ *
+ * PriorWordsSheet is what later turns the assumption into real rows, so the
+ * words also enter the review queue. This decides difficulty; that decides
+ * scheduling.
  */
 export function assumedKnown(
   trackedIds: readonly string[],
   priorIds: readonly string[],
 ): Set<string> {
-  const known = new Set(trackedIds);
-  if (known.size < ASSUMED_KNOWN_FLOOR) for (const id of priorIds) known.add(id);
-  return known;
+  return new Set([...trackedIds, ...priorIds]);
 }
 
 export function selectUnread(input: PoolInput): PoolText[] {

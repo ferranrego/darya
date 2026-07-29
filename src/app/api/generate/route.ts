@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { generateText, vocabHash } from "@/lib/ai/generate";
 import { lexicon, levelById } from "@/lib/content/load";
-import { ASSUMED_KNOWN_FLOOR } from "@/lib/content/text-pool";
 import { insertGeneratedText } from "@/lib/db/texts";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
 
@@ -70,8 +69,7 @@ export async function POST(req: Request) {
 
   // For brand-new learners the "known" set is empty, so fall back to the most
   // frequent words of the level so generation still works.
-  const effectiveKnown =
-    knownWords.length >= ASSUMED_KNOWN_FLOOR ? knownWords : inBand.slice(0, 40);
+  const effectiveKnown = knownWords.length >= 15 ? knownWords : inBand.slice(0, 40);
 
   const ratio = profile.new_word_ratio ?? 0.05;
   const avgSentenceWords = 7;

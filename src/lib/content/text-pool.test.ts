@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ASSUMED_KNOWN_FLOOR, selectUnread, type PoolText } from "./text-pool.ts";
+import { selectUnread, type PoolText } from "./text-pool.ts";
 
 /** A generated text using the given lexeme ids. */
 function generated(id: string, vocabUsed: string[]): PoolText {
@@ -42,31 +42,32 @@ describe("which texts a learner is offered", () => {
     expect(out).toEqual([]);
   });
 
-  it("credits the placement when the learner has barely any tracked words", () => {
-    // The regression this file exists for. A learner placed at A2 has only the
-    // words the assessment showed them, but the generator wrote against the
-    // whole level band. Measuring against the handful rejects everything, and
-    // the reader spins on "Writing your next text…" forever.
-    const tracked = band.slice(0, ASSUMED_KNOWN_FLOOR - 1);
+  it("counts the words the placement credits the learner with", () => {
+    // The regression this file exists for. Being placed at A2 means the levels
+    // below are already known, but only the handful of words the assessment
+    // happened to show ever become rows. Measuring against the rows alone
+    // rejects every text the generator wrote, the pool looks empty, and the
+    // reader spins on "Writing your next text…" forever.
+    // 5 rows, but the placement credits the whole band.
+    const tracked = band.slice(0, 5);
     const text = generated("t1", [...band.slice(0, 18), "lx-9001", "lx-9002"]);
     const args = { texts: [text], readIds: new Set<string>(), trackedIds: tracked };
 
-    expect(selectUnread({ ...args, priorIds: [] }), "without the placement").toEqual([]);
+    expect(selectUnread({ ...args, priorIds: [] }), "rows only").toEqual([]);
     expect(
       selectUnread({ ...args, priorIds: band }).map((t) => t.id),
-      "with the placement",
+      "rows plus the placement",
     ).toEqual(["t1"]);
   });
 
-  it("stops crediting the placement once the learner has a real word list", () => {
-    // Past the floor the learner's own words are the honest measure; the
-    // placement must not keep propping up texts that are too hard.
-    const tracked = band.slice(0, ASSUMED_KNOWN_FLOOR);
+  it("still rejects a text that is too hard for the placement", () => {
+    // Crediting the prior levels must not turn into accepting anything: words
+    // above the learner's level are still new.
     const text = generated("t1", ["lx-9001", "lx-9002", "lx-9003", "lx-9004"]);
     const out = selectUnread({
       texts: [text],
       readIds: new Set(),
-      trackedIds: tracked,
+      trackedIds: band.slice(0, 5),
       priorIds: band,
     });
     expect(out).toEqual([]);
