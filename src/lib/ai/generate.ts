@@ -14,15 +14,29 @@ import { profile } from "../lang/index.ts";
  * Callers cache results in Postgres, so this module never bills.
  */
 
+/**
+ * Whether this language is transliterated at all.
+ *
+ * A Latin-script language has nothing to transliterate, and asking for one
+ * anyway is not harmless: the model obliges, and invents. Catalan texts came
+ * back with a "transliteration" of `família` as `famil·lia` - a misspelling
+ * printed directly under the correct title, teaching an error that the reader
+ * has no way to flag.
+ */
+const TRANSLITERATED = profile.capabilities.transliteration;
+
+/** The model is only asked for a field the language actually has. */
+const translitField = TRANSLITERATED ? z.string().min(1) : z.string().optional();
+
 const outputSchema = z.object({
   titleTarget: z.string().min(1),
-  titleTranslit: z.string().min(1),
+  titleTranslit: translitField,
   titleEn: z.string().min(1),
   sentences: z
     .array(
       z.object({
         target: z.string().min(1),
-        translit: z.string().min(1),
+        translit: translitField,
         en: z.string().min(1),
       }),
     )
@@ -44,11 +58,30 @@ export interface GenerationRequest {
 /** Tokens that resolve to lexemes outside known+target, or not at all. */
 const MAX_OOV_RATE = 0.25;
 
+/** Word separator for the prompt, in the punctuation the language uses. */
+const LIST_SEP = TRANSLITERATED ? "، " : ", ";
+
+/**
+ * Render a vocabulary list for the prompt.
+ *
+ * The transliteration is only included when the language has one. Without this
+ * guard every Catalan word reached the model as `casa (undefined)`, which both
+ * wasted the context and taught the model that the parenthesis is meaningful.
+ */
+function wordList(words: LexiconEntry[], withGloss = false): string {
+  return words
+    .map((w) => {
+      const parts = [w.target];
+      if (TRANSLITERATED && w.translit) parts.push(withGloss ? `(${w.translit} = ${w.glossEn})` : `(${w.translit})`);
+      else if (withGloss) parts.push(`(${w.glossEn})`);
+      return parts.join(" ");
+    })
+    .join(LIST_SEP);
+}
+
 function buildPrompt(req: GenerationRequest): string {
-  const known = req.knownWords.map((w) => `${w.target} (${w.translit})`).join("، ");
-  const target = req.targetWords
-    .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
-    .join("، ");
+  const known = wordList(req.knownWords);
+  const target = wordList(req.targetWords, true);
   const [minS, maxS] = req.level.sentenceRange;
   const themeInstructions = req.theme ? `\n- Set the text in this scenario/theme where it fits naturally: ${req.theme}` : "";
 
@@ -70,7 +103,11 @@ Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 
 
 Return ONLY JSON with this exact shape:
-{"titleTarget": "...", "titleTranslit": "...", "titleEn": "...", "sentences": [{"target": "...", "translit": "...", "en": "..."}]}`;
+${
+  TRANSLITERATED
+    ? '{"titleTarget": "...", "titleTranslit": "...", "titleEn": "...", "sentences": [{"target": "...", "translit": "...", "en": "..."}]}'
+    : '{"titleTarget": "...", "titleEn": "...", "sentences": [{"target": "...", "en": "..."}]}'
+}`;
 }
 
 // ---------------------------------------------------------------------------
@@ -94,7 +131,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       
       return { surface, lexemeId: entry?.id ?? null };
     });
-    return { target: s.target, translit: s.translit, en: s.en, tokens };
+    return { target: s.target, translit: TRANSLITERATED ? s.translit : undefined, en: s.en, tokens };
   });
 
   const oovRate = total > 0 ? oov / total : 1;
@@ -109,7 +146,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       formatVersion: CONTENT_FORMAT_VERSION,
       level: req.level.id,
       titleTarget: raw.titleTarget,
-      titleTranslit: raw.titleTranslit,
+      titleTranslit: TRANSLITERATED ? raw.titleTranslit : undefined,
       titleEn: raw.titleEn,
       sentences,
       vocabUsed: [...vocab].sort(),
@@ -141,8 +178,8 @@ export async function repairText(
   
   if (badSentenceIndices.length === 0) return doc;
   
-  const known = req.knownWords.map((w) => `${w.target} (${w.translit})`).join("، ");
-  const target = req.targetWords.map((w) => `${w.target} (${w.translit} = ${w.glossEn})`).join("، ");
+  const known = wordList(req.knownWords);
+  const target = wordList(req.targetWords, true);
   
   const badSentencesText = badSentenceIndices.map(i => `${i}: ${doc.sentences[i].target}`).join('\n');
   
@@ -157,14 +194,18 @@ SENTENCES TO REPAIR:
 ${badSentencesText}
 
 Return JSON strictly in this format:
-{"repairs": [{"index": 0, "target": "...", "translit": "...", "en": "..."}]}
+${
+  TRANSLITERATED
+    ? '{"repairs": [{"index": 0, "target": "...", "translit": "...", "en": "..."}]}'
+    : '{"repairs": [{"index": 0, "target": "...", "en": "..."}]}'
+}
 where "index" is the number provided above for the sentence.`;
 
   const repairSchema = z.object({
     repairs: z.array(z.object({
       index: z.number(),
       target: z.string(),
-      translit: z.string(),
+      translit: z.string().optional(),
       en: z.string()
     }))
   });
@@ -176,13 +217,13 @@ where "index" is the number provided above for the sentence.`;
   
   const raw: RawText = {
     titleTarget: doc.titleTarget,
-    titleTranslit: doc.titleTranslit ?? "",
+    titleTranslit: doc.titleTranslit,
     titleEn: doc.titleEn,
     sentences: doc.sentences.map((s, i) => {
       const repair = repairs.find(r => r.index === i);
       return repair
         ? { target: repair.target, translit: repair.translit, en: repair.en }
-        : { target: s.target, translit: s.translit ?? "", en: s.en };
+        : { target: s.target, translit: s.translit, en: s.en };
     })
   };
   

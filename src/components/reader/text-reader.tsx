@@ -10,6 +10,7 @@ import type { TextDocument } from "@/lib/content/schema";
 import { markTextRead } from "@/lib/db/texts";
 import { upsertUserWord } from "@/lib/db/words";
 import { XP, recordActivity } from "@/lib/gamification";
+import { profile as langProfile } from "@/lib/lang";
 import { useInvalidateLearning, useProfile, useSupabase, useUser, useWordStatusMap } from "@/lib/queries/hooks";
 import { newCard } from "@/lib/srs/scheduler";
 import { hapticTap, hapticSuccess } from "@/lib/util/haptics";
@@ -179,13 +180,17 @@ export function TextReader({
     <article className="flex flex-col relative pb-32">
       {/* Compact Editorial Header */}
       <header className="mb-8 mt-4 flex flex-col items-center text-center">
-        <h1 lang="prs" className="text-[30px] font-bold leading-[1.35] text-ink max-w-[300px] mx-auto">
+        <h1 lang={langProfile.code} className="text-[30px] font-bold leading-[1.35] text-ink max-w-[300px] mx-auto">
           {doc.titleTarget}
         </h1>
         <div className="mt-2.5 flex flex-col items-center gap-0.5 px-4">
-          <span className="text-[12px] uppercase tracking-widest text-ink-faint font-semibold">
-            {doc.titleTranslit}
-          </span>
+          {/* A Latin-script language has no transliteration; rendering the
+              field anyway printed whatever the model invented for it. */}
+          {langProfile.capabilities.transliteration && doc.titleTranslit ? (
+            <span className="text-[12px] uppercase tracking-widest text-ink-faint font-semibold">
+              {doc.titleTranslit}
+            </span>
+          ) : null}
           <span className="text-[14px] text-ink-soft font-medium">
             {doc.titleEn}
           </span>
