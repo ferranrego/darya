@@ -287,14 +287,30 @@ if (!profile.capabilities.scriptCourse) {
         checkNormalized(where, ex.target);
         checkNormalized(`${where} correction`, ex.correction.target);
         const tokens = tokenize(ex.target).map((t) => normalize(t));
-        if (!tokens.includes(normalize(ex.errorWord.target))) {
-          fail(`${where}: errorWord "${ex.errorWord.target}" is not a token of the sentence`);
+        /**
+         * The player renders one tappable chip per whitespace-separated word
+         * (`exercise-player.tsx`), so solvability is decided by that split, not
+         * by the language tokenizer. The two disagree: the tokenizer splits
+         * `M'agrada` into `m'` + `agrada`, and checking against it accepted an
+         * errorWord of "agrada" for a sentence whose only chip was "M'agrada" -
+         * an exercise no tap could ever solve.
+         */
+        // ZWNJ is *inside* a Dari word (می‌رود), so it survives the strip; only
+        // surrounding punctuation comes off.
+        const chips = ex.target
+          .split(/\s+/)
+          .map((w) => normalize(w.replace(/^[^\p{L}]+|[^\p{L}\u200c]+$/gu, "")));
+        if (!chips.includes(normalize(ex.errorWord.target))) {
+          fail(`${where}: errorWord "${ex.errorWord.target}" is not one of the tappable words`);
         }
         if (normalize(ex.errorWord.target) === normalize(ex.correction.target)) {
           fail(`${where}: correction equals errorWord`);
         }
         // Vocab-check the corrected sentence, not the (deliberately wrong) one.
-        const corrected = ex.target.replace(ex.errorWord.target, ex.correction.target);
+        // Substitution only reconstructs it when the fix is a one-token swap,
+        // so prefer the authored version whenever there is one.
+        const corrected =
+          ex.correctedTarget ?? ex.target.replace(ex.errorWord.target, ex.correction.target);
         checkVocab(where, corrected, warn);
         break;
       }

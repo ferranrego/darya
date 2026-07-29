@@ -20,9 +20,18 @@
               "title": "Two pasts, two jobs",
               "body": "The periphrastic past says what happened once. The imperfect describes how things were, or what used to happen again and again.",
               "examples": [
-                { "target": "Vaig menjar pa.", "en": "I ate bread (once)." },
-                { "target": "Menjava pa cada dia.", "en": "I used to eat bread every day." },
-                { "target": "La casa era gran.", "en": "The house was big." }
+                {
+                  "target": "Vaig menjar pa.",
+                  "en": "I ate bread (once)."
+                },
+                {
+                  "target": "Menjava pa cada dia.",
+                  "en": "I used to eat bread every day."
+                },
+                {
+                  "target": "La casa era gran.",
+                  "en": "The house was big."
+                }
               ]
             },
             {
@@ -30,16 +39,40 @@
               "title": "The endings are very regular",
               "body": "-ar verbs take -ava; -er, -re and -ir verbs take -ia. Only three verbs are truly irregular here.",
               "examples": [
-                { "target": "De petit parlava català.", "en": "As a child I spoke Catalan." },
-                { "target": "Tenia molta feina.", "en": "I had a lot of work." }
+                {
+                  "target": "De petit parlava català.",
+                  "en": "As a child I spoke Catalan."
+                },
+                {
+                  "target": "Tenia molta feina.",
+                  "en": "I had a lot of work."
+                }
               ],
               "table": [
-                ["parlar", "parlava, parlaves, parlava"],
-                ["parlar (pl.)", "parlàvem, parlàveu, parlaven"],
-                ["tenir", "tenia, tenies, tenia"],
-                ["ser", "era, eres, era"],
-                ["fer", "feia, feies, feia"],
-                ["veure", "veia, veies, veia"]
+                [
+                  "parlar",
+                  "parlava, parlaves, parlava"
+                ],
+                [
+                  "parlar (pl.)",
+                  "parlàvem, parlàveu, parlaven"
+                ],
+                [
+                  "tenir",
+                  "tenia, tenies, tenia"
+                ],
+                [
+                  "ser",
+                  "era, eres, era"
+                ],
+                [
+                  "fer",
+                  "feia, feies, feia"
+                ],
+                [
+                  "veure",
+                  "veia, veies, veia"
+                ]
               ]
             },
             {
@@ -47,20 +80,168 @@
               "title": "Use it to set the scene",
               "body": "The imperfect paints the background; the periphrastic past drops the event into it.",
               "examples": [
-                { "target": "Plovia i vaig tornar a casa.", "en": "It was raining and I went back home." },
-                { "target": "Eren les vuit quan va arribar.", "en": "It was eight o'clock when he arrived." }
+                {
+                  "target": "Plovia i vaig tornar a casa.",
+                  "en": "It was raining and I went back home."
+                },
+                {
+                  "target": "Eren les vuit quan va arribar.",
+                  "en": "It was eight o'clock when he arrived."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-13-1", "type": "fillBlank", "target": "De petit ___ molt.", "en": "As a child I used to read a lot.", "answer": { "target": "llegia" }, "distractors": [{ "target": "llegeixo" }, { "target": "llegiré" }, { "target": "llegit" }] },
-            { "id": "ge-13-2", "type": "fillBlank", "target": "La casa ___ molt gran.", "en": "The house was very big.", "answer": { "target": "era" }, "distractors": [{ "target": "és" }, { "target": "serà" }, { "target": "seria" }] },
-            { "id": "ge-13-3", "type": "fillBlank", "target": "Ell ___ el sopar cada nit.", "en": "He used to make dinner every night.", "answer": { "target": "feia" }, "distractors": [{ "target": "fa" }, { "target": "farà" }, { "target": "fet" }] },
-            { "id": "ge-13-4", "type": "fillBlank", "target": "Nosaltres ___ a la platja cada estiu.", "en": "We used to go to the beach every summer.", "answer": { "target": "anàvem" }, "distractors": [{ "target": "anem" }, { "target": "anirem" }, { "target": "aniríem" }] },
-            { "id": "ge-13-5", "type": "fillBlank", "target": "Jo ___ un gos petit.", "en": "I had a small dog.", "answer": { "target": "tenia" }, "distractors": [{ "target": "tinc" }, { "target": "tindré" }, { "target": "tingut" }] },
-            { "id": "ge-13-6", "type": "spotError", "target": "Cada dia vaig menjar a casa.", "en": "Every day I used to eat at home.", "errorWord": { "target": "vaig" }, "correction": { "target": "menjava" }, "hint": "A repeated habit takes the imperfect." },
-            { "id": "ge-13-7", "type": "matchPairs", "prompt": "Match each verb with its imperfect.", "pairs": [{ "target": "ser", "en": "era" }, { "target": "fer", "en": "feia" }, { "target": "veure", "en": "veia" }, { "target": "tenir", "en": "tenia" }] },
-            { "id": "ge-13-8", "type": "chooseTranslation", "direction": "toEn", "target": "Treballava a la ciutat.", "en": "I used to work in the city.", "distractorsEn": ["I worked in the city once.", "I work in the city.", "I will work in the city."], "distractorsTarget": [] }
+            {
+              "id": "ge-13-1",
+              "type": "fillBlank",
+              "target": "De petit ___ molt.",
+              "en": "As a child I used to read a lot.",
+              "answer": {
+                "target": "llegia"
+              },
+              "distractors": [
+                {
+                  "target": "llegeixo"
+                },
+                {
+                  "target": "llegiré"
+                },
+                {
+                  "target": "llegit"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-2",
+              "type": "fillBlank",
+              "target": "La casa ___ molt gran.",
+              "en": "The house was very big.",
+              "answer": {
+                "target": "era"
+              },
+              "distractors": [
+                {
+                  "target": "és"
+                },
+                {
+                  "target": "serà"
+                },
+                {
+                  "target": "seria"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-3",
+              "type": "fillBlank",
+              "target": "Ell ___ el sopar cada nit.",
+              "en": "He used to make dinner every night.",
+              "answer": {
+                "target": "feia"
+              },
+              "distractors": [
+                {
+                  "target": "fa"
+                },
+                {
+                  "target": "farà"
+                },
+                {
+                  "target": "fet"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-4",
+              "type": "fillBlank",
+              "target": "Nosaltres ___ a la platja cada estiu.",
+              "en": "We used to go to the beach every summer.",
+              "answer": {
+                "target": "anàvem"
+              },
+              "distractors": [
+                {
+                  "target": "anem"
+                },
+                {
+                  "target": "anirem"
+                },
+                {
+                  "target": "aniríem"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-5",
+              "type": "fillBlank",
+              "target": "Jo ___ un gos petit.",
+              "en": "I had a small dog.",
+              "answer": {
+                "target": "tenia"
+              },
+              "distractors": [
+                {
+                  "target": "tinc"
+                },
+                {
+                  "target": "tindré"
+                },
+                {
+                  "target": "tingut"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-6",
+              "type": "spotError",
+              "target": "Cada dia vaig menjar a casa.",
+              "en": "Every day I used to eat at home.",
+              "errorWord": {
+                "target": "vaig"
+              },
+              "correction": {
+                "target": "menjava"
+              },
+              "hint": "A repeated habit takes the imperfect.",
+              "correctedTarget": "Cada dia menjava a casa."
+            },
+            {
+              "id": "ge-13-7",
+              "type": "matchPairs",
+              "prompt": "Match each verb with its imperfect.",
+              "pairs": [
+                {
+                  "target": "ser",
+                  "en": "era"
+                },
+                {
+                  "target": "fer",
+                  "en": "feia"
+                },
+                {
+                  "target": "veure",
+                  "en": "veia"
+                },
+                {
+                  "target": "tenir",
+                  "en": "tenia"
+                }
+              ]
+            },
+            {
+              "id": "ge-13-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Treballava a la ciutat.",
+              "en": "I used to work in the city.",
+              "distractorsEn": [
+                "I worked in the city once.",
+                "I work in the city.",
+                "I will work in the city."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -75,17 +256,44 @@
               "title": "haver plus the participle",
               "body": "Use it for something that happened inside a stretch of time that is still going, above all today. For yesterday, use the periphrastic past.",
               "examples": [
-                { "target": "He menjat.", "en": "I have eaten." },
-                { "target": "Avui hem treballat molt.", "en": "Today we have worked a lot." },
-                { "target": "Ahir vaig treballar molt.", "en": "Yesterday I worked a lot." }
+                {
+                  "target": "He menjat.",
+                  "en": "I have eaten."
+                },
+                {
+                  "target": "Avui hem treballat molt.",
+                  "en": "Today we have worked a lot."
+                },
+                {
+                  "target": "Ahir vaig treballar molt.",
+                  "en": "Yesterday I worked a lot."
+                }
               ],
               "table": [
-                ["jo", "he"],
-                ["tu", "has"],
-                ["ell, ella", "ha"],
-                ["nosaltres", "hem"],
-                ["vosaltres", "heu"],
-                ["ells, elles", "han"]
+                [
+                  "jo",
+                  "he"
+                ],
+                [
+                  "tu",
+                  "has"
+                ],
+                [
+                  "ell, ella",
+                  "ha"
+                ],
+                [
+                  "nosaltres",
+                  "hem"
+                ],
+                [
+                  "vosaltres",
+                  "heu"
+                ],
+                [
+                  "ells, elles",
+                  "han"
+                ]
               ]
             },
             {
@@ -93,18 +301,48 @@
               "title": "Participles, regular and not",
               "body": "-ar gives -at, -er and -re give -ut, -ir gives -it. A handful are irregular and worth memorising outright.",
               "examples": [
-                { "target": "He parlat amb ella.", "en": "I have spoken with her." },
-                { "target": "Has vist la casa?", "en": "Have you seen the house?" }
+                {
+                  "target": "He parlat amb ella.",
+                  "en": "I have spoken with her."
+                },
+                {
+                  "target": "Has vist la casa?",
+                  "en": "Have you seen the house?"
+                }
               ],
               "table": [
-                ["parlar", "parlat"],
-                ["perdre", "perdut"],
-                ["dormir", "dormit"],
-                ["fer", "fet"],
-                ["dir", "dit"],
-                ["veure", "vist"],
-                ["obrir", "obert"],
-                ["escriure", "escrit"]
+                [
+                  "parlar",
+                  "parlat"
+                ],
+                [
+                  "perdre",
+                  "perdut"
+                ],
+                [
+                  "dormir",
+                  "dormit"
+                ],
+                [
+                  "fer",
+                  "fet"
+                ],
+                [
+                  "dir",
+                  "dit"
+                ],
+                [
+                  "veure",
+                  "vist"
+                ],
+                [
+                  "obrir",
+                  "obert"
+                ],
+                [
+                  "escriure",
+                  "escrit"
+                ]
               ]
             },
             {
@@ -112,20 +350,168 @@
               "title": "Never split haver from its participle",
               "body": "Nothing goes between them. Adverbs come after the participle, or before haver.",
               "examples": [
-                { "target": "He menjat molt bé.", "en": "I have eaten very well." },
-                { "target": "Encara no he menjat.", "en": "I haven't eaten yet." }
+                {
+                  "target": "He menjat molt bé.",
+                  "en": "I have eaten very well."
+                },
+                {
+                  "target": "Encara no he menjat.",
+                  "en": "I haven't eaten yet."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-14-1", "type": "fillBlank", "target": "Avui ___ menjat molt.", "en": "Today I have eaten a lot.", "answer": { "target": "he" }, "distractors": [{ "target": "has" }, { "target": "ha" }, { "target": "hem" }] },
-            { "id": "ge-14-2", "type": "fillBlank", "target": "Ella ha ___ la porta.", "en": "She has opened the door.", "answer": { "target": "obert" }, "distractors": [{ "target": "obrit" }, { "target": "obrat" }, { "target": "obrut" }] },
-            { "id": "ge-14-3", "type": "fillBlank", "target": "Nosaltres ___ arribat tard.", "en": "We have arrived late.", "answer": { "target": "hem" }, "distractors": [{ "target": "han" }, { "target": "heu" }, { "target": "he" }] },
-            { "id": "ge-14-4", "type": "fillBlank", "target": "Has ___ el llibre?", "en": "Have you seen the book?", "answer": { "target": "vist" }, "distractors": [{ "target": "veut" }, { "target": "vegut" }, { "target": "veure" }] },
-            { "id": "ge-14-5", "type": "fillBlank", "target": "Ells han ___ el sopar.", "en": "They have made dinner.", "answer": { "target": "fet" }, "distractors": [{ "target": "fat" }, { "target": "fut" }, { "target": "fent" }] },
-            { "id": "ge-14-6", "type": "spotError", "target": "Ahir he menjat peix.", "en": "Yesterday I ate fish.", "errorWord": { "target": "he" }, "correction": { "target": "vaig" }, "hint": "Yesterday is over, so use the periphrastic past." },
-            { "id": "ge-14-7", "type": "matchPairs", "prompt": "Match each verb with its participle.", "pairs": [{ "target": "fer", "en": "fet" }, { "target": "dir", "en": "dit" }, { "target": "veure", "en": "vist" }, { "target": "obrir", "en": "obert" }] },
-            { "id": "ge-14-8", "type": "chooseTranslation", "direction": "toEn", "target": "He parlat amb el metge.", "en": "I have spoken with the doctor.", "distractorsEn": ["I speak with the doctor.", "I will speak with the doctor.", "I used to speak with the doctor."], "distractorsTarget": [] }
+            {
+              "id": "ge-14-1",
+              "type": "fillBlank",
+              "target": "Avui ___ menjat molt.",
+              "en": "Today I have eaten a lot.",
+              "answer": {
+                "target": "he"
+              },
+              "distractors": [
+                {
+                  "target": "has"
+                },
+                {
+                  "target": "ha"
+                },
+                {
+                  "target": "hem"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-2",
+              "type": "fillBlank",
+              "target": "Ella ha ___ la porta.",
+              "en": "She has opened the door.",
+              "answer": {
+                "target": "obert"
+              },
+              "distractors": [
+                {
+                  "target": "obrit"
+                },
+                {
+                  "target": "obrat"
+                },
+                {
+                  "target": "obrut"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-3",
+              "type": "fillBlank",
+              "target": "Nosaltres ___ arribat tard.",
+              "en": "We have arrived late.",
+              "answer": {
+                "target": "hem"
+              },
+              "distractors": [
+                {
+                  "target": "han"
+                },
+                {
+                  "target": "heu"
+                },
+                {
+                  "target": "he"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-4",
+              "type": "fillBlank",
+              "target": "Has ___ el llibre?",
+              "en": "Have you seen the book?",
+              "answer": {
+                "target": "vist"
+              },
+              "distractors": [
+                {
+                  "target": "veut"
+                },
+                {
+                  "target": "vegut"
+                },
+                {
+                  "target": "veure"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-5",
+              "type": "fillBlank",
+              "target": "Ells han ___ el sopar.",
+              "en": "They have made dinner.",
+              "answer": {
+                "target": "fet"
+              },
+              "distractors": [
+                {
+                  "target": "fat"
+                },
+                {
+                  "target": "fut"
+                },
+                {
+                  "target": "fent"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-6",
+              "type": "spotError",
+              "target": "Ahir he menjat peix.",
+              "en": "Yesterday I ate fish.",
+              "errorWord": {
+                "target": "he"
+              },
+              "correction": {
+                "target": "vaig"
+              },
+              "hint": "Yesterday is over, so use the periphrastic past.",
+              "correctedTarget": "Ahir vaig menjar peix."
+            },
+            {
+              "id": "ge-14-7",
+              "type": "matchPairs",
+              "prompt": "Match each verb with its participle.",
+              "pairs": [
+                {
+                  "target": "fer",
+                  "en": "fet"
+                },
+                {
+                  "target": "dir",
+                  "en": "dit"
+                },
+                {
+                  "target": "veure",
+                  "en": "vist"
+                },
+                {
+                  "target": "obrir",
+                  "en": "obert"
+                }
+              ]
+            },
+            {
+              "id": "ge-14-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "He parlat amb el metge.",
+              "en": "I have spoken with the doctor.",
+              "distractorsEn": [
+                "I speak with the doctor.",
+                "I will speak with the doctor.",
+                "I used to speak with the doctor."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -140,17 +526,44 @@
               "title": "The pronoun changes with the person",
               "body": "The dictionary lists the verb with -se on the end. In use, that -se becomes em, et, es, ens or us, and moves in front of the verb.",
               "examples": [
-                { "target": "Em dic Anna.", "en": "My name is Anna." },
-                { "target": "Et lleves aviat?", "en": "Do you get up early?" },
-                { "target": "Es renta les mans.", "en": "He washes his hands." }
+                {
+                  "target": "Em dic Anna.",
+                  "en": "My name is Anna."
+                },
+                {
+                  "target": "Et lleves aviat?",
+                  "en": "Do you get up early?"
+                },
+                {
+                  "target": "Es renta les mans.",
+                  "en": "He washes his hands."
+                }
               ],
               "table": [
-                ["jo", "em llevo"],
-                ["tu", "et lleves"],
-                ["ell, ella", "es lleva"],
-                ["nosaltres", "ens llevem"],
-                ["vosaltres", "us lleveu"],
-                ["ells, elles", "es lleven"]
+                [
+                  "jo",
+                  "em llevo"
+                ],
+                [
+                  "tu",
+                  "et lleves"
+                ],
+                [
+                  "ell, ella",
+                  "es lleva"
+                ],
+                [
+                  "nosaltres",
+                  "ens llevem"
+                ],
+                [
+                  "vosaltres",
+                  "us lleveu"
+                ],
+                [
+                  "ells, elles",
+                  "es lleven"
+                ]
               ]
             },
             {
@@ -158,16 +571,40 @@
               "title": "The daily routine is built from them",
               "body": "Most of what you do in a morning is a reflexive verb in Catalan.",
               "examples": [
-                { "target": "Em llevo a les set.", "en": "I get up at seven." },
-                { "target": "Em dutxo cada matí.", "en": "I shower every morning." }
+                {
+                  "target": "Em llevo a les set.",
+                  "en": "I get up at seven."
+                },
+                {
+                  "target": "Em dutxo cada matí.",
+                  "en": "I shower every morning."
+                }
               ],
               "table": [
-                ["dir-se", "to be called"],
-                ["llevar-se", "to get up"],
-                ["dutxar-se", "to shower"],
-                ["rentar-se", "to wash"],
-                ["vestir-se", "to get dressed"],
-                ["despertar-se", "to wake up"]
+                [
+                  "dir-se",
+                  "to be called"
+                ],
+                [
+                  "llevar-se",
+                  "to get up"
+                ],
+                [
+                  "dutxar-se",
+                  "to shower"
+                ],
+                [
+                  "rentar-se",
+                  "to wash"
+                ],
+                [
+                  "vestir-se",
+                  "to get dressed"
+                ],
+                [
+                  "despertar-se",
+                  "to wake up"
+                ]
               ]
             },
             {
@@ -175,20 +612,183 @@
               "title": "The same forms say \"each other\"",
               "body": "In the plural, the reflexive often means the action goes both ways.",
               "examples": [
-                { "target": "Ens veiem cada dia.", "en": "We see each other every day." },
-                { "target": "Es coneixen molt bé.", "en": "They know each other very well." }
+                {
+                  "target": "Ens veiem cada dia.",
+                  "en": "We see each other every day."
+                },
+                {
+                  "target": "Es coneixen molt bé.",
+                  "en": "They know each other very well."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-15-1", "type": "fillBlank", "target": "___ dic Marta.", "en": "My name is Marta.", "answer": { "target": "Em" }, "distractors": [{ "target": "Et" }, { "target": "Es" }, { "target": "Ens" }] },
-            { "id": "ge-15-2", "type": "fillBlank", "target": "Ell ___ diu Joan.", "en": "His name is Joan.", "answer": { "target": "es" }, "distractors": [{ "target": "em" }, { "target": "et" }, { "target": "us" }] },
-            { "id": "ge-15-3", "type": "fillBlank", "target": "___ llevem a les set.", "en": "We get up at seven.", "answer": { "target": "Ens" }, "distractors": [{ "target": "Em" }, { "target": "Es" }, { "target": "Us" }] },
-            { "id": "ge-15-4", "type": "fillBlank", "target": "Cada matí ___ dutxo.", "en": "Every morning I shower.", "answer": { "target": "em" }, "distractors": [{ "target": "es" }, { "target": "et" }, { "target": "ens" }] },
-            { "id": "ge-15-5", "type": "spotError", "target": "Jo dic Anna.", "en": "My name is Anna.", "errorWord": { "target": "dic" }, "correction": { "target": "em dic" } },
-            { "id": "ge-15-6", "type": "matchPairs", "prompt": "Match the reflexive verb with its meaning.", "pairs": [{ "target": "dir-se", "en": "to be called" }, { "target": "llevar-se", "en": "to get up" }, { "target": "rentar-se", "en": "to wash" }, { "target": "vestir-se", "en": "to get dressed" }] },
-            { "id": "ge-15-7", "type": "buildSentence", "en": "I get up at seven every day.", "words": [{ "target": "Em" }, { "target": "llevo" }, { "target": "a" }, { "target": "les" }, { "target": "set" }, { "target": "cada" }, { "target": "dia" }], "extraWords": [{ "target": "es" }, { "target": "lleva" }] },
-            { "id": "ge-15-8", "type": "chooseTranslation", "direction": "toEn", "target": "Ens veiem cada dissabte.", "en": "We see each other every Saturday.", "distractorsEn": ["I see them every Saturday.", "They see us every Saturday.", "We saw each other on Saturday."], "distractorsTarget": [] }
+            {
+              "id": "ge-15-1",
+              "type": "fillBlank",
+              "target": "___ dic Marta.",
+              "en": "My name is Marta.",
+              "answer": {
+                "target": "Em"
+              },
+              "distractors": [
+                {
+                  "target": "Et"
+                },
+                {
+                  "target": "Es"
+                },
+                {
+                  "target": "Ens"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-2",
+              "type": "fillBlank",
+              "target": "Ell ___ diu Joan.",
+              "en": "His name is Joan.",
+              "answer": {
+                "target": "es"
+              },
+              "distractors": [
+                {
+                  "target": "em"
+                },
+                {
+                  "target": "et"
+                },
+                {
+                  "target": "us"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-3",
+              "type": "fillBlank",
+              "target": "___ llevem a les set.",
+              "en": "We get up at seven.",
+              "answer": {
+                "target": "Ens"
+              },
+              "distractors": [
+                {
+                  "target": "Em"
+                },
+                {
+                  "target": "Es"
+                },
+                {
+                  "target": "Us"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-4",
+              "type": "fillBlank",
+              "target": "Cada matí ___ dutxo.",
+              "en": "Every morning I shower.",
+              "answer": {
+                "target": "em"
+              },
+              "distractors": [
+                {
+                  "target": "es"
+                },
+                {
+                  "target": "et"
+                },
+                {
+                  "target": "ens"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-5",
+              "type": "spotError",
+              "target": "Jo dic Anna.",
+              "en": "My name is Anna.",
+              "errorWord": {
+                "target": "dic"
+              },
+              "correction": {
+                "target": "em dic"
+              },
+              "correctedTarget": "Jo em dic Anna."
+            },
+            {
+              "id": "ge-15-6",
+              "type": "matchPairs",
+              "prompt": "Match the reflexive verb with its meaning.",
+              "pairs": [
+                {
+                  "target": "dir-se",
+                  "en": "to be called"
+                },
+                {
+                  "target": "llevar-se",
+                  "en": "to get up"
+                },
+                {
+                  "target": "rentar-se",
+                  "en": "to wash"
+                },
+                {
+                  "target": "vestir-se",
+                  "en": "to get dressed"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-7",
+              "type": "buildSentence",
+              "en": "I get up at seven every day.",
+              "words": [
+                {
+                  "target": "Em"
+                },
+                {
+                  "target": "llevo"
+                },
+                {
+                  "target": "a"
+                },
+                {
+                  "target": "les"
+                },
+                {
+                  "target": "set"
+                },
+                {
+                  "target": "cada"
+                },
+                {
+                  "target": "dia"
+                }
+              ],
+              "extraWords": [
+                {
+                  "target": "es"
+                },
+                {
+                  "target": "lleva"
+                }
+              ]
+            },
+            {
+              "id": "ge-15-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Ens veiem cada dissabte.",
+              "en": "We see each other every Saturday.",
+              "distractorsEn": [
+                "I see them every Saturday.",
+                "They see us every Saturday.",
+                "We saw each other on Saturday."
+              ],
+              "distractorsTarget": []
+            }
           ]
         }
       ]
@@ -210,17 +810,44 @@
               "title": "They go before the verb",
               "body": "Unlike English, the object pronoun comes in front of the conjugated verb, not after it.",
               "examples": [
-                { "target": "El veig cada dia.", "en": "I see him every day." },
-                { "target": "La compro demà.", "en": "I'll buy it tomorrow." },
-                { "target": "Els conec molt bé.", "en": "I know them very well." }
+                {
+                  "target": "El veig cada dia.",
+                  "en": "I see him every day."
+                },
+                {
+                  "target": "La compro demà.",
+                  "en": "I'll buy it tomorrow."
+                },
+                {
+                  "target": "Els conec molt bé.",
+                  "en": "I know them very well."
+                }
               ],
               "table": [
-                ["el", "him, it (masc.)"],
-                ["la", "her, it (fem.)"],
-                ["els", "them (masc.)"],
-                ["les", "them (fem.)"],
-                ["li", "to him, to her"],
-                ["els", "to them"]
+                [
+                  "el",
+                  "him, it (masc.)"
+                ],
+                [
+                  "la",
+                  "her, it (fem.)"
+                ],
+                [
+                  "els",
+                  "them (masc.)"
+                ],
+                [
+                  "les",
+                  "them (fem.)"
+                ],
+                [
+                  "li",
+                  "to him, to her"
+                ],
+                [
+                  "els",
+                  "to them"
+                ]
               ]
             },
             {
@@ -228,8 +855,14 @@
               "title": "el and la shrink to l' before a vowel",
               "body": "Exactly like the article. la stays whole before an unstressed i- or u-.",
               "examples": [
-                { "target": "L'he vist avui.", "en": "I have seen him today." },
-                { "target": "L'escolto cada matí.", "en": "I listen to it every morning." }
+                {
+                  "target": "L'he vist avui.",
+                  "en": "I have seen him today."
+                },
+                {
+                  "target": "L'escolto cada matí.",
+                  "en": "I listen to it every morning."
+                }
               ]
             },
             {
@@ -237,8 +870,14 @@
               "title": "li is for the person you give something to",
               "body": "Use li when English would say \"to him\" or \"to her\", even when English leaves the \"to\" out.",
               "examples": [
-                { "target": "Li dono el llibre.", "en": "I give him the book." },
-                { "target": "Li escric cada setmana.", "en": "I write to her every week." }
+                {
+                  "target": "Li dono el llibre.",
+                  "en": "I give him the book."
+                },
+                {
+                  "target": "Li escric cada setmana.",
+                  "en": "I write to her every week."
+                }
               ]
             },
             {
@@ -246,21 +885,172 @@
               "title": "After an infinitive they hook on with a hyphen",
               "body": "When the verb is an infinitive or an imperative, the pronoun goes on the end instead.",
               "examples": [
-                { "target": "Vull veure'l.", "en": "I want to see it." },
-                { "target": "Compra-la!", "en": "Buy it!" },
-                { "target": "Cal ajudar-lo.", "en": "He needs to be helped." }
+                {
+                  "target": "Vull veure'l.",
+                  "en": "I want to see it."
+                },
+                {
+                  "target": "Compra-la!",
+                  "en": "Buy it!"
+                },
+                {
+                  "target": "Cal ajudar-lo.",
+                  "en": "He needs to be helped."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-16-1", "type": "fillBlank", "target": "___ veig cada dia.", "en": "I see him every day.", "answer": { "target": "El" }, "distractors": [{ "target": "La" }, { "target": "Li" }, { "target": "Es" }] },
-            { "id": "ge-16-2", "type": "fillBlank", "target": "___ dono el llibre a la Marta.", "en": "I give the book to Marta.", "answer": { "target": "Li" }, "distractors": [{ "target": "El" }, { "target": "La" }, { "target": "Es" }] },
-            { "id": "ge-16-3", "type": "fillBlank", "target": "___ he vist avui.", "en": "I have seen him today.", "answer": { "target": "L'" }, "distractors": [{ "target": "El" }, { "target": "La" }, { "target": "Li" }] },
-            { "id": "ge-16-4", "type": "fillBlank", "target": "Vull ___ demà.", "en": "I want to see it tomorrow.", "answer": { "target": "veure'l" }, "distractors": [{ "target": "el veure" }, { "target": "veure el" }, { "target": "el veig" }] },
-            { "id": "ge-16-5", "type": "fillBlank", "target": "Les pomes? ___ compro al mercat.", "en": "The apples? I buy them at the market.", "answer": { "target": "Les" }, "distractors": [{ "target": "Els" }, { "target": "La" }, { "target": "Li" }] },
-            { "id": "ge-16-6", "type": "spotError", "target": "Veig el cada dia.", "en": "I see him every day.", "errorWord": { "target": "Veig" }, "correction": { "target": "El veig" }, "hint": "The pronoun comes first." },
-            { "id": "ge-16-7", "type": "matchPairs", "prompt": "Match each pronoun with what it stands for.", "pairs": [{ "target": "el", "en": "him, it (masc.)" }, { "target": "la", "en": "her, it (fem.)" }, { "target": "les", "en": "them (fem.)" }, { "target": "li", "en": "to him, to her" }] },
-            { "id": "ge-16-8", "type": "chooseTranslation", "direction": "toEn", "target": "Li escric cada setmana.", "en": "I write to her every week.", "distractorsEn": ["She writes to me every week.", "I read it every week.", "I see her every week."], "distractorsTarget": [] }
+            {
+              "id": "ge-16-1",
+              "type": "fillBlank",
+              "target": "___ veig cada dia.",
+              "en": "I see him every day.",
+              "answer": {
+                "target": "El"
+              },
+              "distractors": [
+                {
+                  "target": "La"
+                },
+                {
+                  "target": "Li"
+                },
+                {
+                  "target": "Es"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-2",
+              "type": "fillBlank",
+              "target": "___ dono el llibre a la Marta.",
+              "en": "I give the book to Marta.",
+              "answer": {
+                "target": "Li"
+              },
+              "distractors": [
+                {
+                  "target": "El"
+                },
+                {
+                  "target": "La"
+                },
+                {
+                  "target": "Es"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-3",
+              "type": "fillBlank",
+              "target": "___ he vist avui.",
+              "en": "I have seen him today.",
+              "answer": {
+                "target": "L'"
+              },
+              "distractors": [
+                {
+                  "target": "El"
+                },
+                {
+                  "target": "La"
+                },
+                {
+                  "target": "Li"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-4",
+              "type": "fillBlank",
+              "target": "Vull ___ demà.",
+              "en": "I want to see it tomorrow.",
+              "answer": {
+                "target": "veure'l"
+              },
+              "distractors": [
+                {
+                  "target": "el veure"
+                },
+                {
+                  "target": "veure el"
+                },
+                {
+                  "target": "el veig"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-5",
+              "type": "fillBlank",
+              "target": "Les pomes? ___ compro al mercat.",
+              "en": "The apples? I buy them at the market.",
+              "answer": {
+                "target": "Les"
+              },
+              "distractors": [
+                {
+                  "target": "Els"
+                },
+                {
+                  "target": "La"
+                },
+                {
+                  "target": "Li"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-6",
+              "type": "spotError",
+              "target": "Veig el cada dia.",
+              "en": "I see him every day.",
+              "errorWord": {
+                "target": "Veig"
+              },
+              "correction": {
+                "target": "El veig"
+              },
+              "hint": "The pronoun comes first.",
+              "correctedTarget": "El veig cada dia."
+            },
+            {
+              "id": "ge-16-7",
+              "type": "matchPairs",
+              "prompt": "Match each pronoun with what it stands for.",
+              "pairs": [
+                {
+                  "target": "el",
+                  "en": "him, it (masc.)"
+                },
+                {
+                  "target": "la",
+                  "en": "her, it (fem.)"
+                },
+                {
+                  "target": "les",
+                  "en": "them (fem.)"
+                },
+                {
+                  "target": "li",
+                  "en": "to him, to her"
+                }
+              ]
+            },
+            {
+              "id": "ge-16-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Li escric cada setmana.",
+              "en": "I write to her every week.",
+              "distractorsEn": [
+                "She writes to me every week.",
+                "I read it every week.",
+                "I see her every week."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -275,9 +1065,18 @@
               "title": "hi stands for a place",
               "body": "Where English repeats the place, or just says \"there\", Catalan uses hi. It is also the hi inside hi ha.",
               "examples": [
-                { "target": "Vas a la platja? Sí, hi vaig.", "en": "Are you going to the beach? Yes, I'm going." },
-                { "target": "Hi ha molta gent.", "en": "There are a lot of people." },
-                { "target": "No hi he estat mai.", "en": "I have never been there." }
+                {
+                  "target": "Vas a la platja? Sí, hi vaig.",
+                  "en": "Are you going to the beach? Yes, I'm going."
+                },
+                {
+                  "target": "Hi ha molta gent.",
+                  "en": "There are a lot of people."
+                },
+                {
+                  "target": "No hi he estat mai.",
+                  "en": "I have never been there."
+                }
               ]
             },
             {
@@ -285,9 +1084,18 @@
               "title": "en stands for a quantity or a de-phrase",
               "body": "When you say how many, Catalan keeps en in the sentence. English drops it entirely, which is why it is easy to forget.",
               "examples": [
-                { "target": "Vols pa? Sí, en vull.", "en": "Do you want bread? Yes, I want some." },
-                { "target": "En tinc dos.", "en": "I have two." },
-                { "target": "En parlem demà.", "en": "We'll talk about it tomorrow." }
+                {
+                  "target": "Vols pa? Sí, en vull.",
+                  "en": "Do you want bread? Yes, I want some."
+                },
+                {
+                  "target": "En tinc dos.",
+                  "en": "I have two."
+                },
+                {
+                  "target": "En parlem demà.",
+                  "en": "We'll talk about it tomorrow."
+                }
               ]
             },
             {
@@ -295,20 +1103,158 @@
               "title": "They shorten too",
               "body": "en becomes n' before a vowel, and 'n after one.",
               "examples": [
-                { "target": "N'hi ha tres.", "en": "There are three of them." },
-                { "target": "Vull anar-me'n.", "en": "I want to leave." }
+                {
+                  "target": "N'hi ha tres.",
+                  "en": "There are three of them."
+                },
+                {
+                  "target": "Vull anar-me'n.",
+                  "en": "I want to leave."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-17-1", "type": "fillBlank", "target": "___ ha molta gent al carrer.", "en": "There are a lot of people in the street.", "answer": { "target": "Hi" }, "distractors": [{ "target": "En" }, { "target": "El" }, { "target": "Es" }] },
-            { "id": "ge-17-2", "type": "fillBlank", "target": "Vols aigua? Sí, ___ vull.", "en": "Do you want water? Yes, I want some.", "answer": { "target": "en" }, "distractors": [{ "target": "hi" }, { "target": "la" }, { "target": "el" }] },
-            { "id": "ge-17-3", "type": "fillBlank", "target": "Vas a l'escola? Sí, ___ vaig.", "en": "Are you going to school? Yes, I'm going.", "answer": { "target": "hi" }, "distractors": [{ "target": "en" }, { "target": "el" }, { "target": "la" }] },
-            { "id": "ge-17-4", "type": "fillBlank", "target": "___ tinc tres.", "en": "I have three of them.", "answer": { "target": "En" }, "distractors": [{ "target": "Hi" }, { "target": "El" }, { "target": "Li" }] },
-            { "id": "ge-17-5", "type": "fillBlank", "target": "___ hi ha quatre.", "en": "There are four of them.", "answer": { "target": "N'" }, "distractors": [{ "target": "En" }, { "target": "Hi" }, { "target": "El" }] },
-            { "id": "ge-17-6", "type": "spotError", "target": "Vols pa? Sí, vull.", "en": "Do you want bread? Yes, I want some.", "errorWord": { "target": "vull" }, "correction": { "target": "en vull" }, "hint": "Catalan keeps en even though English drops it." },
-            { "id": "ge-17-7", "type": "chooseTranslation", "direction": "toEn", "target": "Hi ha un gos al parc.", "en": "There is a dog in the park.", "distractorsEn": ["The dog is in the park.", "He has a dog in the park.", "There was a dog in the park."], "distractorsTarget": [] },
-            { "id": "ge-17-8", "type": "chooseTranslation", "direction": "toEn", "target": "En vull dos.", "en": "I want two of them.", "distractorsEn": ["I want it twice.", "There are two.", "I have two."], "distractorsTarget": [] }
+            {
+              "id": "ge-17-1",
+              "type": "fillBlank",
+              "target": "___ ha molta gent al carrer.",
+              "en": "There are a lot of people in the street.",
+              "answer": {
+                "target": "Hi"
+              },
+              "distractors": [
+                {
+                  "target": "En"
+                },
+                {
+                  "target": "El"
+                },
+                {
+                  "target": "Es"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-2",
+              "type": "fillBlank",
+              "target": "Vols aigua? Sí, ___ vull.",
+              "en": "Do you want water? Yes, I want some.",
+              "answer": {
+                "target": "en"
+              },
+              "distractors": [
+                {
+                  "target": "hi"
+                },
+                {
+                  "target": "la"
+                },
+                {
+                  "target": "el"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-3",
+              "type": "fillBlank",
+              "target": "Vas a l'escola? Sí, ___ vaig.",
+              "en": "Are you going to school? Yes, I'm going.",
+              "answer": {
+                "target": "hi"
+              },
+              "distractors": [
+                {
+                  "target": "en"
+                },
+                {
+                  "target": "el"
+                },
+                {
+                  "target": "la"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-4",
+              "type": "fillBlank",
+              "target": "___ tinc tres.",
+              "en": "I have three of them.",
+              "answer": {
+                "target": "En"
+              },
+              "distractors": [
+                {
+                  "target": "Hi"
+                },
+                {
+                  "target": "El"
+                },
+                {
+                  "target": "Li"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-5",
+              "type": "fillBlank",
+              "target": "___ hi ha quatre.",
+              "en": "There are four of them.",
+              "answer": {
+                "target": "N'"
+              },
+              "distractors": [
+                {
+                  "target": "En"
+                },
+                {
+                  "target": "Hi"
+                },
+                {
+                  "target": "El"
+                }
+              ]
+            },
+            {
+              "id": "ge-17-6",
+              "type": "spotError",
+              "target": "Vols pa? Sí, vull.",
+              "en": "Do you want bread? Yes, I want some.",
+              "errorWord": {
+                "target": "vull"
+              },
+              "correction": {
+                "target": "en vull"
+              },
+              "hint": "Catalan keeps en even though English drops it.",
+              "correctedTarget": "Vols pa? Sí, en vull."
+            },
+            {
+              "id": "ge-17-7",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Hi ha un gos al parc.",
+              "en": "There is a dog in the park.",
+              "distractorsEn": [
+                "The dog is in the park.",
+                "He has a dog in the park.",
+                "There was a dog in the park."
+              ],
+              "distractorsTarget": []
+            },
+            {
+              "id": "ge-17-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "En vull dos.",
+              "en": "I want two of them.",
+              "distractorsEn": [
+                "I want it twice.",
+                "There are two.",
+                "I have two."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -323,9 +1269,19 @@
               "title": "The thing you like is the subject",
               "body": "Catalan says something closer to \"coffee pleases me\". So the verb agrees with the thing, not with you.",
               "examples": [
-                { "target": "M'agrada el cafè.", "en": "I like coffee." },
-                { "target": "M'agraden els llibres.", "en": "I like books.", "highlight": "agraden" },
-                { "target": "T'agrada la música?", "en": "Do you like music?" }
+                {
+                  "target": "M'agrada el cafè.",
+                  "en": "I like coffee."
+                },
+                {
+                  "target": "M'agraden els llibres.",
+                  "en": "I like books.",
+                  "highlight": "agraden"
+                },
+                {
+                  "target": "T'agrada la música?",
+                  "en": "Do you like music?"
+                }
               ]
             },
             {
@@ -333,16 +1289,40 @@
               "title": "Only the pronoun changes for the person",
               "body": "em, et, li, ens, us, els - the same weak pronouns, with the vowel forms m' and t' before agrada.",
               "examples": [
-                { "target": "Li agrada llegir.", "en": "She likes reading." },
-                { "target": "Ens agrada aquesta casa.", "en": "We like this house." }
+                {
+                  "target": "Li agrada llegir.",
+                  "en": "She likes reading."
+                },
+                {
+                  "target": "Ens agrada aquesta casa.",
+                  "en": "We like this house."
+                }
               ],
               "table": [
-                ["jo", "m'agrada"],
-                ["tu", "t'agrada"],
-                ["ell, ella", "li agrada"],
-                ["nosaltres", "ens agrada"],
-                ["vosaltres", "us agrada"],
-                ["ells, elles", "els agrada"]
+                [
+                  "jo",
+                  "m'agrada"
+                ],
+                [
+                  "tu",
+                  "t'agrada"
+                ],
+                [
+                  "ell, ella",
+                  "li agrada"
+                ],
+                [
+                  "nosaltres",
+                  "ens agrada"
+                ],
+                [
+                  "vosaltres",
+                  "us agrada"
+                ],
+                [
+                  "ells, elles",
+                  "els agrada"
+                ]
               ]
             },
             {
@@ -350,27 +1330,197 @@
               "title": "A few more verbs work the same way",
               "body": "Once you have agradar, these come free.",
               "examples": [
-                { "target": "M'encanta la platja.", "en": "I love the beach." },
-                { "target": "Em fa mal el cap.", "en": "My head hurts." }
+                {
+                  "target": "M'encanta la platja.",
+                  "en": "I love the beach."
+                },
+                {
+                  "target": "Em fa mal el cap.",
+                  "en": "My head hurts."
+                }
               ],
               "table": [
-                ["agradar", "to like"],
-                ["encantar", "to love"],
-                ["interessar", "to interest"],
-                ["fer mal", "to hurt"],
-                ["faltar", "to be missing"]
+                [
+                  "agradar",
+                  "to like"
+                ],
+                [
+                  "encantar",
+                  "to love"
+                ],
+                [
+                  "interessar",
+                  "to interest"
+                ],
+                [
+                  "fer mal",
+                  "to hurt"
+                ],
+                [
+                  "faltar",
+                  "to be missing"
+                ]
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-18-1", "type": "fillBlank", "target": "___ agrada el cafè.", "en": "I like coffee.", "answer": { "target": "M'" }, "distractors": [{ "target": "Em" }, { "target": "Jo" }, { "target": "Me" }] },
-            { "id": "ge-18-2", "type": "fillBlank", "target": "M'___ els llibres.", "en": "I like books.", "answer": { "target": "agraden" }, "distractors": [{ "target": "agrada" }, { "target": "agradar" }, { "target": "agradava" }] },
-            { "id": "ge-18-3", "type": "fillBlank", "target": "A la Marta ___ agrada llegir.", "en": "Marta likes reading.", "answer": { "target": "li" }, "distractors": [{ "target": "el" }, { "target": "la" }, { "target": "es" }] },
-            { "id": "ge-18-4", "type": "fillBlank", "target": "___ agrada aquesta casa.", "en": "We like this house.", "answer": { "target": "Ens" }, "distractors": [{ "target": "Em" }, { "target": "Us" }, { "target": "Els" }] },
-            { "id": "ge-18-5", "type": "fillBlank", "target": "Em fa ___ el cap.", "en": "My head hurts.", "answer": { "target": "mal" }, "distractors": [{ "target": "dolor" }, { "target": "malalt" }, { "target": "mala" }] },
-            { "id": "ge-18-6", "type": "spotError", "target": "M'agrada els llibres.", "en": "I like books.", "errorWord": { "target": "agrada" }, "correction": { "target": "agraden" }, "hint": "The verb agrees with the books." },
-            { "id": "ge-18-7", "type": "buildSentence", "en": "I like this house a lot.", "words": [{ "target": "M'" }, { "target": "agrada" }, { "target": "molt" }, { "target": "aquesta" }, { "target": "casa" }], "extraWords": [{ "target": "agraden" }, { "target": "jo" }] },
-            { "id": "ge-18-8", "type": "chooseTranslation", "direction": "toEn", "target": "T'agraden les pel·lícules?", "en": "Do you like films?", "distractorsEn": ["Do you like the film?", "Did you like the films?", "Do the films please you today?"], "distractorsTarget": [] }
+            {
+              "id": "ge-18-1",
+              "type": "fillBlank",
+              "target": "___ agrada el cafè.",
+              "en": "I like coffee.",
+              "answer": {
+                "target": "M'"
+              },
+              "distractors": [
+                {
+                  "target": "Em"
+                },
+                {
+                  "target": "Jo"
+                },
+                {
+                  "target": "Me"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-2",
+              "type": "fillBlank",
+              "target": "M'___ els llibres.",
+              "en": "I like books.",
+              "answer": {
+                "target": "agraden"
+              },
+              "distractors": [
+                {
+                  "target": "agrada"
+                },
+                {
+                  "target": "agradar"
+                },
+                {
+                  "target": "agradava"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-3",
+              "type": "fillBlank",
+              "target": "A la Marta ___ agrada llegir.",
+              "en": "Marta likes reading.",
+              "answer": {
+                "target": "li"
+              },
+              "distractors": [
+                {
+                  "target": "el"
+                },
+                {
+                  "target": "la"
+                },
+                {
+                  "target": "es"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-4",
+              "type": "fillBlank",
+              "target": "___ agrada aquesta casa.",
+              "en": "We like this house.",
+              "answer": {
+                "target": "Ens"
+              },
+              "distractors": [
+                {
+                  "target": "Em"
+                },
+                {
+                  "target": "Us"
+                },
+                {
+                  "target": "Els"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-5",
+              "type": "fillBlank",
+              "target": "Em fa ___ el cap.",
+              "en": "My head hurts.",
+              "answer": {
+                "target": "mal"
+              },
+              "distractors": [
+                {
+                  "target": "dolor"
+                },
+                {
+                  "target": "malalt"
+                },
+                {
+                  "target": "mala"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-6",
+              "type": "spotError",
+              "target": "M'agrada els llibres.",
+              "en": "I like books.",
+              "errorWord": {
+                "target": "M'agrada"
+              },
+              "correction": {
+                "target": "M'agraden"
+              },
+              "hint": "The verb agrees with the books.",
+              "correctedTarget": "M'agraden els llibres."
+            },
+            {
+              "id": "ge-18-7",
+              "type": "buildSentence",
+              "en": "I like this house a lot.",
+              "words": [
+                {
+                  "target": "M'"
+                },
+                {
+                  "target": "agrada"
+                },
+                {
+                  "target": "molt"
+                },
+                {
+                  "target": "aquesta"
+                },
+                {
+                  "target": "casa"
+                }
+              ],
+              "extraWords": [
+                {
+                  "target": "agraden"
+                },
+                {
+                  "target": "jo"
+                }
+              ]
+            },
+            {
+              "id": "ge-18-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "T'agraden les pel·lícules?",
+              "en": "Do you like films?",
+              "distractorsEn": [
+                "Do you like the film?",
+                "Did you like the films?",
+                "Do the films please you today?"
+              ],
+              "distractorsTarget": []
+            }
           ]
         }
       ]
@@ -392,16 +1542,40 @@
               "title": "Add the endings to the whole infinitive",
               "body": "The endings are the same for all three conjugations, so there is only one set to learn.",
               "examples": [
-                { "target": "Demà parlaré amb ella.", "en": "Tomorrow I'll speak with her." },
-                { "target": "Arribaran a les vuit.", "en": "They'll arrive at eight." }
+                {
+                  "target": "Demà parlaré amb ella.",
+                  "en": "Tomorrow I'll speak with her."
+                },
+                {
+                  "target": "Arribaran a les vuit.",
+                  "en": "They'll arrive at eight."
+                }
               ],
               "table": [
-                ["jo", "parlaré"],
-                ["tu", "parlaràs"],
-                ["ell, ella", "parlarà"],
-                ["nosaltres", "parlarem"],
-                ["vosaltres", "parlareu"],
-                ["ells, elles", "parlaran"]
+                [
+                  "jo",
+                  "parlaré"
+                ],
+                [
+                  "tu",
+                  "parlaràs"
+                ],
+                [
+                  "ell, ella",
+                  "parlarà"
+                ],
+                [
+                  "nosaltres",
+                  "parlarem"
+                ],
+                [
+                  "vosaltres",
+                  "parlareu"
+                ],
+                [
+                  "ells, elles",
+                  "parlaran"
+                ]
               ]
             },
             {
@@ -409,18 +1583,48 @@
               "title": "A few stems shorten",
               "body": "The most common verbs lose a syllable, but the endings never change.",
               "examples": [
-                { "target": "Tindré temps demà.", "en": "I'll have time tomorrow." },
-                { "target": "Farem el sopar junts.", "en": "We'll make dinner together." }
+                {
+                  "target": "Tindré temps demà.",
+                  "en": "I'll have time tomorrow."
+                },
+                {
+                  "target": "Farem el sopar junts.",
+                  "en": "We'll make dinner together."
+                }
               ],
               "table": [
-                ["tenir", "tindré"],
-                ["venir", "vindré"],
-                ["fer", "faré"],
-                ["poder", "podré"],
-                ["voler", "voldré"],
-                ["saber", "sabré"],
-                ["anar", "aniré"],
-                ["ser", "seré"]
+                [
+                  "tenir",
+                  "tindré"
+                ],
+                [
+                  "venir",
+                  "vindré"
+                ],
+                [
+                  "fer",
+                  "faré"
+                ],
+                [
+                  "poder",
+                  "podré"
+                ],
+                [
+                  "voler",
+                  "voldré"
+                ],
+                [
+                  "saber",
+                  "sabré"
+                ],
+                [
+                  "anar",
+                  "aniré"
+                ],
+                [
+                  "ser",
+                  "seré"
+                ]
               ]
             },
             {
@@ -428,20 +1632,167 @@
               "title": "For something imminent, anar a is common too",
               "body": "Both are correct; the future tense is the more neutral choice in writing.",
               "examples": [
-                { "target": "Ara vaig a menjar.", "en": "I'm about to eat." },
-                { "target": "Demà menjaré a casa.", "en": "Tomorrow I'll eat at home." }
+                {
+                  "target": "Ara vaig a menjar.",
+                  "en": "I'm about to eat."
+                },
+                {
+                  "target": "Demà menjaré a casa.",
+                  "en": "Tomorrow I'll eat at home."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-19-1", "type": "fillBlank", "target": "Demà ___ a la platja.", "en": "Tomorrow I'll go to the beach.", "answer": { "target": "aniré" }, "distractors": [{ "target": "vaig" }, { "target": "anava" }, { "target": "aniria" }] },
-            { "id": "ge-19-2", "type": "fillBlank", "target": "___ temps la setmana que ve.", "en": "I'll have time next week.", "answer": { "target": "Tindré" }, "distractors": [{ "target": "Tinc" }, { "target": "Tenia" }, { "target": "Tindria" }] },
-            { "id": "ge-19-3", "type": "fillBlank", "target": "Ells ___ demà al matí.", "en": "They will arrive tomorrow morning.", "answer": { "target": "arribaran" }, "distractors": [{ "target": "arriben" }, { "target": "arribaven" }, { "target": "arribarien" }] },
-            { "id": "ge-19-4", "type": "fillBlank", "target": "Nosaltres ___ el sopar.", "en": "We will make dinner.", "answer": { "target": "farem" }, "distractors": [{ "target": "fem" }, { "target": "fèiem" }, { "target": "faríem" }] },
-            { "id": "ge-19-5", "type": "fillBlank", "target": "Ella ___ venir dissabte.", "en": "She will be able to come on Saturday.", "answer": { "target": "podrà" }, "distractors": [{ "target": "pot" }, { "target": "podia" }, { "target": "podria" }] },
-            { "id": "ge-19-6", "type": "spotError", "target": "Demà teniré molta feina.", "en": "Tomorrow I'll have a lot of work.", "errorWord": { "target": "teniré" }, "correction": { "target": "tindré" } },
-            { "id": "ge-19-7", "type": "matchPairs", "prompt": "Match each verb with its future stem.", "pairs": [{ "target": "tenir", "en": "tindré" }, { "target": "venir", "en": "vindré" }, { "target": "fer", "en": "faré" }, { "target": "voler", "en": "voldré" }] },
-            { "id": "ge-19-8", "type": "chooseTranslation", "direction": "toEn", "target": "Aniré a Girona el dilluns.", "en": "I will go to Girona on Monday.", "distractorsEn": ["I go to Girona on Mondays.", "I went to Girona on Monday.", "I would go to Girona on Monday."], "distractorsTarget": [] }
+            {
+              "id": "ge-19-1",
+              "type": "fillBlank",
+              "target": "Demà ___ a la platja.",
+              "en": "Tomorrow I'll go to the beach.",
+              "answer": {
+                "target": "aniré"
+              },
+              "distractors": [
+                {
+                  "target": "vaig"
+                },
+                {
+                  "target": "anava"
+                },
+                {
+                  "target": "aniria"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-2",
+              "type": "fillBlank",
+              "target": "___ temps la setmana que ve.",
+              "en": "I'll have time next week.",
+              "answer": {
+                "target": "Tindré"
+              },
+              "distractors": [
+                {
+                  "target": "Tinc"
+                },
+                {
+                  "target": "Tenia"
+                },
+                {
+                  "target": "Tindria"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-3",
+              "type": "fillBlank",
+              "target": "Ells ___ demà al matí.",
+              "en": "They will arrive tomorrow morning.",
+              "answer": {
+                "target": "arribaran"
+              },
+              "distractors": [
+                {
+                  "target": "arriben"
+                },
+                {
+                  "target": "arribaven"
+                },
+                {
+                  "target": "arribarien"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-4",
+              "type": "fillBlank",
+              "target": "Nosaltres ___ el sopar.",
+              "en": "We will make dinner.",
+              "answer": {
+                "target": "farem"
+              },
+              "distractors": [
+                {
+                  "target": "fem"
+                },
+                {
+                  "target": "fèiem"
+                },
+                {
+                  "target": "faríem"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-5",
+              "type": "fillBlank",
+              "target": "Ella ___ venir dissabte.",
+              "en": "She will be able to come on Saturday.",
+              "answer": {
+                "target": "podrà"
+              },
+              "distractors": [
+                {
+                  "target": "pot"
+                },
+                {
+                  "target": "podia"
+                },
+                {
+                  "target": "podria"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-6",
+              "type": "spotError",
+              "target": "Demà teniré molta feina.",
+              "en": "Tomorrow I'll have a lot of work.",
+              "errorWord": {
+                "target": "teniré"
+              },
+              "correction": {
+                "target": "tindré"
+              },
+              "correctedTarget": "Demà tindré molta feina."
+            },
+            {
+              "id": "ge-19-7",
+              "type": "matchPairs",
+              "prompt": "Match each verb with its future stem.",
+              "pairs": [
+                {
+                  "target": "tenir",
+                  "en": "tindré"
+                },
+                {
+                  "target": "venir",
+                  "en": "vindré"
+                },
+                {
+                  "target": "fer",
+                  "en": "faré"
+                },
+                {
+                  "target": "voler",
+                  "en": "voldré"
+                }
+              ]
+            },
+            {
+              "id": "ge-19-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Aniré a Girona el dilluns.",
+              "en": "I will go to Girona on Monday.",
+              "distractorsEn": [
+                "I go to Girona on Mondays.",
+                "I went to Girona on Monday.",
+                "I would go to Girona on Monday."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -456,16 +1807,40 @@
               "title": "Same stem as the future, imperfect endings",
               "body": "If you know the future, the conditional costs you nothing new.",
               "examples": [
-                { "target": "M'agradaria un cafè.", "en": "I would like a coffee." },
-                { "target": "Podries ajudar-me?", "en": "Could you help me?" }
+                {
+                  "target": "M'agradaria un cafè.",
+                  "en": "I would like a coffee."
+                },
+                {
+                  "target": "Podries ajudar-me?",
+                  "en": "Could you help me?"
+                }
               ],
               "table": [
-                ["jo", "parlaria"],
-                ["tu", "parlaries"],
-                ["ell, ella", "parlaria"],
-                ["nosaltres", "parlaríem"],
-                ["vosaltres", "parlaríeu"],
-                ["ells, elles", "parlarien"]
+                [
+                  "jo",
+                  "parlaria"
+                ],
+                [
+                  "tu",
+                  "parlaries"
+                ],
+                [
+                  "ell, ella",
+                  "parlaria"
+                ],
+                [
+                  "nosaltres",
+                  "parlaríem"
+                ],
+                [
+                  "vosaltres",
+                  "parlaríeu"
+                ],
+                [
+                  "ells, elles",
+                  "parlarien"
+                ]
               ]
             },
             {
@@ -473,8 +1848,14 @@
               "title": "This is how you are polite in a shop",
               "body": "vull sounds abrupt. voldria and m'agradaria are what people actually say.",
               "examples": [
-                { "target": "Voldria un got d'aigua.", "en": "I would like a glass of water." },
-                { "target": "Em podria dir l'hora?", "en": "Could you tell me the time?" }
+                {
+                  "target": "Voldria un got d'aigua.",
+                  "en": "I would like a glass of water."
+                },
+                {
+                  "target": "Em podria dir l'hora?",
+                  "en": "Could you tell me the time?"
+                }
               ]
             },
             {
@@ -482,20 +1863,168 @@
               "title": "And for what you would do",
               "body": "Use it for a situation that is imagined rather than real.",
               "examples": [
-                { "target": "Jo aniria a la platja.", "en": "I would go to the beach." },
-                { "target": "Seria millor demà.", "en": "It would be better tomorrow." }
+                {
+                  "target": "Jo aniria a la platja.",
+                  "en": "I would go to the beach."
+                },
+                {
+                  "target": "Seria millor demà.",
+                  "en": "It would be better tomorrow."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-20-1", "type": "fillBlank", "target": "___ un cafè, si us plau.", "en": "I would like a coffee, please.", "answer": { "target": "Voldria" }, "distractors": [{ "target": "Vull" }, { "target": "Voldré" }, { "target": "Volia" }] },
-            { "id": "ge-20-2", "type": "fillBlank", "target": "___ ajudar-me?", "en": "Could you help me?", "answer": { "target": "Podries" }, "distractors": [{ "target": "Pots" }, { "target": "Podràs" }, { "target": "Podies" }] },
-            { "id": "ge-20-3", "type": "fillBlank", "target": "M'___ anar a la platja.", "en": "I would like to go to the beach.", "answer": { "target": "agradaria" }, "distractors": [{ "target": "agrada" }, { "target": "agradarà" }, { "target": "agradava" }] },
-            { "id": "ge-20-4", "type": "fillBlank", "target": "___ millor demà al matí.", "en": "It would be better tomorrow morning.", "answer": { "target": "Seria" }, "distractors": [{ "target": "És" }, { "target": "Serà" }, { "target": "Era" }] },
-            { "id": "ge-20-5", "type": "fillBlank", "target": "Nosaltres ___ a casa.", "en": "We would eat at home.", "answer": { "target": "menjaríem" }, "distractors": [{ "target": "mengem" }, { "target": "menjarem" }, { "target": "menjàvem" }] },
-            { "id": "ge-20-6", "type": "spotError", "target": "Vull un got d'aigua, si us plau.", "en": "I would like a glass of water, please.", "errorWord": { "target": "Vull" }, "correction": { "target": "Voldria" }, "hint": "The conditional is what makes it polite." },
-            { "id": "ge-20-7", "type": "matchPairs", "prompt": "Match the future with its conditional.", "pairs": [{ "target": "tindré", "en": "tindria" }, { "target": "faré", "en": "faria" }, { "target": "podré", "en": "podria" }, { "target": "voldré", "en": "voldria" }] },
-            { "id": "ge-20-8", "type": "chooseTranslation", "direction": "toEn", "target": "M'agradaria parlar amb el metge.", "en": "I would like to speak with the doctor.", "distractorsEn": ["I like speaking with the doctor.", "I will speak with the doctor.", "I liked speaking with the doctor."], "distractorsTarget": [] }
+            {
+              "id": "ge-20-1",
+              "type": "fillBlank",
+              "target": "___ un cafè, si us plau.",
+              "en": "I would like a coffee, please.",
+              "answer": {
+                "target": "Voldria"
+              },
+              "distractors": [
+                {
+                  "target": "Vull"
+                },
+                {
+                  "target": "Voldré"
+                },
+                {
+                  "target": "Volia"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-2",
+              "type": "fillBlank",
+              "target": "___ ajudar-me?",
+              "en": "Could you help me?",
+              "answer": {
+                "target": "Podries"
+              },
+              "distractors": [
+                {
+                  "target": "Pots"
+                },
+                {
+                  "target": "Podràs"
+                },
+                {
+                  "target": "Podies"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-3",
+              "type": "fillBlank",
+              "target": "M'___ anar a la platja.",
+              "en": "I would like to go to the beach.",
+              "answer": {
+                "target": "agradaria"
+              },
+              "distractors": [
+                {
+                  "target": "agrada"
+                },
+                {
+                  "target": "agradarà"
+                },
+                {
+                  "target": "agradava"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-4",
+              "type": "fillBlank",
+              "target": "___ millor demà al matí.",
+              "en": "It would be better tomorrow morning.",
+              "answer": {
+                "target": "Seria"
+              },
+              "distractors": [
+                {
+                  "target": "És"
+                },
+                {
+                  "target": "Serà"
+                },
+                {
+                  "target": "Era"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-5",
+              "type": "fillBlank",
+              "target": "Nosaltres ___ a casa.",
+              "en": "We would eat at home.",
+              "answer": {
+                "target": "menjaríem"
+              },
+              "distractors": [
+                {
+                  "target": "mengem"
+                },
+                {
+                  "target": "menjarem"
+                },
+                {
+                  "target": "menjàvem"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-6",
+              "type": "spotError",
+              "target": "Vull un got d'aigua, si us plau.",
+              "en": "I would like a glass of water, please.",
+              "errorWord": {
+                "target": "Vull"
+              },
+              "correction": {
+                "target": "Voldria"
+              },
+              "hint": "The conditional is what makes it polite.",
+              "correctedTarget": "Voldria un got d'aigua, si us plau."
+            },
+            {
+              "id": "ge-20-7",
+              "type": "matchPairs",
+              "prompt": "Match the future with its conditional.",
+              "pairs": [
+                {
+                  "target": "tindré",
+                  "en": "tindria"
+                },
+                {
+                  "target": "faré",
+                  "en": "faria"
+                },
+                {
+                  "target": "podré",
+                  "en": "podria"
+                },
+                {
+                  "target": "voldré",
+                  "en": "voldria"
+                }
+              ]
+            },
+            {
+              "id": "ge-20-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "M'agradaria parlar amb el metge.",
+              "en": "I would like to speak with the doctor.",
+              "distractorsEn": [
+                "I like speaking with the doctor.",
+                "I will speak with the doctor.",
+                "I liked speaking with the doctor."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -510,9 +2039,18 @@
               "title": "More, less, as",
               "body": "Catalan builds comparisons with separate words. There is nothing like the English -er ending.",
               "examples": [
-                { "target": "La casa és més gran que l'escola.", "en": "The house is bigger than the school." },
-                { "target": "Aquest llibre és menys car.", "en": "This book is less expensive." },
-                { "target": "És tan alt com el seu pare.", "en": "He is as tall as his father." }
+                {
+                  "target": "La casa és més gran que l'escola.",
+                  "en": "The house is bigger than the school."
+                },
+                {
+                  "target": "Aquest llibre és menys car.",
+                  "en": "This book is less expensive."
+                },
+                {
+                  "target": "És tan alt com el seu pare.",
+                  "en": "He is as tall as his father."
+                }
               ]
             },
             {
@@ -520,8 +2058,14 @@
               "title": "tan before an adjective, tant with a noun or verb",
               "body": "One letter apart, and it is the commonest slip at this level.",
               "examples": [
-                { "target": "És tan gran com jo.", "en": "He is as big as me." },
-                { "target": "Treballo tant com tu.", "en": "I work as much as you." }
+                {
+                  "target": "És tan gran com jo.",
+                  "en": "He is as big as me."
+                },
+                {
+                  "target": "Treballo tant com tu.",
+                  "en": "I work as much as you."
+                }
               ]
             },
             {
@@ -529,8 +2073,14 @@
               "title": "The superlative just adds the article",
               "body": "Put el, la, els or les in front of més, and use de where English says \"in\".",
               "examples": [
-                { "target": "És el més gran de la família.", "en": "He is the oldest in the family." },
-                { "target": "La ciutat més bonica del país.", "en": "The most beautiful city in the country." }
+                {
+                  "target": "És el més gran de la família.",
+                  "en": "He is the oldest in the family."
+                },
+                {
+                  "target": "La ciutat més bonica del país.",
+                  "en": "The most beautiful city in the country."
+                }
               ]
             },
             {
@@ -538,26 +2088,202 @@
               "title": "Two irregulars",
               "body": "bo and dolent have their own comparative forms, exactly like English good and bad.",
               "examples": [
-                { "target": "Aquest cafè és millor.", "en": "This coffee is better." },
-                { "target": "El temps és pitjor avui.", "en": "The weather is worse today." }
+                {
+                  "target": "Aquest cafè és millor.",
+                  "en": "This coffee is better."
+                },
+                {
+                  "target": "El temps és pitjor avui.",
+                  "en": "The weather is worse today."
+                }
               ],
               "table": [
-                ["bo", "millor"],
-                ["dolent", "pitjor"],
-                ["bé", "millor"],
-                ["malament", "pitjor"]
+                [
+                  "bo",
+                  "millor"
+                ],
+                [
+                  "dolent",
+                  "pitjor"
+                ],
+                [
+                  "bé",
+                  "millor"
+                ],
+                [
+                  "malament",
+                  "pitjor"
+                ]
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-21-1", "type": "fillBlank", "target": "La casa és ___ gran que l'escola.", "en": "The house is bigger than the school.", "answer": { "target": "més" }, "distractors": [{ "target": "menys" }, { "target": "tan" }, { "target": "tant" }] },
-            { "id": "ge-21-2", "type": "fillBlank", "target": "És tan alt ___ el seu pare.", "en": "He is as tall as his father.", "answer": { "target": "com" }, "distractors": [{ "target": "que" }, { "target": "de" }, { "target": "més" }] },
-            { "id": "ge-21-3", "type": "fillBlank", "target": "Aquest cafè és ___ que l'altre.", "en": "This coffee is better than the other.", "answer": { "target": "millor" }, "distractors": [{ "target": "més bo" }, { "target": "pitjor" }, { "target": "tan bo" }] },
-            { "id": "ge-21-4", "type": "fillBlank", "target": "És el ___ gran de tots.", "en": "He is the biggest of all.", "answer": { "target": "més" }, "distractors": [{ "target": "menys" }, { "target": "tan" }, { "target": "molt" }] },
-            { "id": "ge-21-5", "type": "fillBlank", "target": "Treballo ___ com tu.", "en": "I work as much as you.", "answer": { "target": "tant" }, "distractors": [{ "target": "tan" }, { "target": "més" }, { "target": "menys" }] },
-            { "id": "ge-21-6", "type": "spotError", "target": "És tant alt com jo.", "en": "He is as tall as me.", "errorWord": { "target": "tant" }, "correction": { "target": "tan" }, "hint": "Before an adjective it loses the -t." },
-            { "id": "ge-21-7", "type": "buildSentence", "en": "My house is smaller than yours.", "words": [{ "target": "La" }, { "target": "meva" }, { "target": "casa" }, { "target": "és" }, { "target": "més" }, { "target": "petita" }, { "target": "que" }, { "target": "la teva" }], "extraWords": [{ "target": "menys" }, { "target": "com" }] },
-            { "id": "ge-21-8", "type": "chooseTranslation", "direction": "toEn", "target": "És la ciutat més bonica del país.", "en": "It is the most beautiful city in the country.", "distractorsEn": ["It is a beautiful city in the country.", "The city is more beautiful than the country.", "It is as beautiful as the country."], "distractorsTarget": [] }
+            {
+              "id": "ge-21-1",
+              "type": "fillBlank",
+              "target": "La casa és ___ gran que l'escola.",
+              "en": "The house is bigger than the school.",
+              "answer": {
+                "target": "més"
+              },
+              "distractors": [
+                {
+                  "target": "menys"
+                },
+                {
+                  "target": "tan"
+                },
+                {
+                  "target": "tant"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-2",
+              "type": "fillBlank",
+              "target": "És tan alt ___ el seu pare.",
+              "en": "He is as tall as his father.",
+              "answer": {
+                "target": "com"
+              },
+              "distractors": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "de"
+                },
+                {
+                  "target": "més"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-3",
+              "type": "fillBlank",
+              "target": "Aquest cafè és ___ que l'altre.",
+              "en": "This coffee is better than the other.",
+              "answer": {
+                "target": "millor"
+              },
+              "distractors": [
+                {
+                  "target": "més bo"
+                },
+                {
+                  "target": "pitjor"
+                },
+                {
+                  "target": "tan bo"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-4",
+              "type": "fillBlank",
+              "target": "És el ___ gran de tots.",
+              "en": "He is the biggest of all.",
+              "answer": {
+                "target": "més"
+              },
+              "distractors": [
+                {
+                  "target": "menys"
+                },
+                {
+                  "target": "tan"
+                },
+                {
+                  "target": "molt"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-5",
+              "type": "fillBlank",
+              "target": "Treballo ___ com tu.",
+              "en": "I work as much as you.",
+              "answer": {
+                "target": "tant"
+              },
+              "distractors": [
+                {
+                  "target": "tan"
+                },
+                {
+                  "target": "més"
+                },
+                {
+                  "target": "menys"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-6",
+              "type": "spotError",
+              "target": "És tant alt com jo.",
+              "en": "He is as tall as me.",
+              "errorWord": {
+                "target": "tant"
+              },
+              "correction": {
+                "target": "tan"
+              },
+              "hint": "Before an adjective it loses the -t.",
+              "correctedTarget": "És tan alt com jo."
+            },
+            {
+              "id": "ge-21-7",
+              "type": "buildSentence",
+              "en": "My house is smaller than yours.",
+              "words": [
+                {
+                  "target": "La"
+                },
+                {
+                  "target": "meva"
+                },
+                {
+                  "target": "casa"
+                },
+                {
+                  "target": "és"
+                },
+                {
+                  "target": "més"
+                },
+                {
+                  "target": "petita"
+                },
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "la teva"
+                }
+              ],
+              "extraWords": [
+                {
+                  "target": "menys"
+                },
+                {
+                  "target": "com"
+                }
+              ]
+            },
+            {
+              "id": "ge-21-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "És la ciutat més bonica del país.",
+              "en": "It is the most beautiful city in the country.",
+              "distractorsEn": [
+                "It is a beautiful city in the country.",
+                "The city is more beautiful than the country.",
+                "It is as beautiful as the country."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -572,17 +2298,44 @@
               "title": "The connectors you will use every day",
               "body": "Catalan writes perquè as one word both for \"because\" and for \"so that\"; the question word per què is two.",
               "examples": [
-                { "target": "Vull sortir, però plou.", "en": "I want to go out, but it's raining." },
-                { "target": "No vinc perquè estic cansat.", "en": "I'm not coming because I'm tired." },
-                { "target": "Quan arribi, et truco.", "en": "When I arrive, I'll call you." }
+                {
+                  "target": "Vull sortir, però plou.",
+                  "en": "I want to go out, but it's raining."
+                },
+                {
+                  "target": "No vinc perquè estic cansat.",
+                  "en": "I'm not coming because I'm tired."
+                },
+                {
+                  "target": "Quan arribi, et truco.",
+                  "en": "When I arrive, I'll call you."
+                }
               ],
               "table": [
-                ["però", "but"],
-                ["perquè", "because"],
-                ["quan", "when"],
-                ["mentre", "while"],
-                ["si", "if"],
-                ["doncs", "so, then"]
+                [
+                  "però",
+                  "but"
+                ],
+                [
+                  "perquè",
+                  "because"
+                ],
+                [
+                  "quan",
+                  "when"
+                ],
+                [
+                  "mentre",
+                  "while"
+                ],
+                [
+                  "si",
+                  "if"
+                ],
+                [
+                  "doncs",
+                  "so, then"
+                ]
               ]
             },
             {
@@ -590,8 +2343,14 @@
               "title": "que links a clause to a noun",
               "body": "Where English can drop \"that\", Catalan never does.",
               "examples": [
-                { "target": "El llibre que llegeixo és bo.", "en": "The book I'm reading is good." },
-                { "target": "La casa on visc és petita.", "en": "The house where I live is small." }
+                {
+                  "target": "El llibre que llegeixo és bo.",
+                  "en": "The book I'm reading is good."
+                },
+                {
+                  "target": "La casa on visc és petita.",
+                  "en": "The house where I live is small."
+                }
               ]
             },
             {
@@ -599,20 +2358,168 @@
               "title": "qui only for people, after a preposition",
               "body": "For a person as the plain subject or object, que is still the normal choice.",
               "examples": [
-                { "target": "L'amic amb qui parlo.", "en": "The friend I'm talking to." },
-                { "target": "La dona que treballa aquí.", "en": "The woman who works here." }
+                {
+                  "target": "L'amic amb qui parlo.",
+                  "en": "The friend I'm talking to."
+                },
+                {
+                  "target": "La dona que treballa aquí.",
+                  "en": "The woman who works here."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-22-1", "type": "fillBlank", "target": "Vull sortir, ___ plou.", "en": "I want to go out, but it's raining.", "answer": { "target": "però" }, "distractors": [{ "target": "perquè" }, { "target": "quan" }, { "target": "mentre" }] },
-            { "id": "ge-22-2", "type": "fillBlank", "target": "No vinc ___ estic cansat.", "en": "I'm not coming because I'm tired.", "answer": { "target": "perquè" }, "distractors": [{ "target": "però" }, { "target": "quan" }, { "target": "si" }] },
-            { "id": "ge-22-3", "type": "fillBlank", "target": "Escolto música ___ treballo.", "en": "I listen to music while I work.", "answer": { "target": "mentre" }, "distractors": [{ "target": "quan" }, { "target": "però" }, { "target": "perquè" }] },
-            { "id": "ge-22-4", "type": "fillBlank", "target": "El llibre ___ llegeixo és molt bo.", "en": "The book I'm reading is very good.", "answer": { "target": "que" }, "distractors": [{ "target": "qui" }, { "target": "on" }, { "target": "què" }] },
-            { "id": "ge-22-5", "type": "fillBlank", "target": "La casa ___ visc és petita.", "en": "The house where I live is small.", "answer": { "target": "on" }, "distractors": [{ "target": "que" }, { "target": "qui" }, { "target": "quan" }] },
-            { "id": "ge-22-6", "type": "spotError", "target": "La dona qui treballa aquí és la Marta.", "en": "The woman who works here is Marta.", "errorWord": { "target": "qui" }, "correction": { "target": "que" }, "hint": "qui needs a preposition in front of it." },
-            { "id": "ge-22-7", "type": "matchPairs", "prompt": "Match the connector with its meaning.", "pairs": [{ "target": "però", "en": "but" }, { "target": "perquè", "en": "because" }, { "target": "mentre", "en": "while" }, { "target": "doncs", "en": "so, then" }] },
-            { "id": "ge-22-8", "type": "chooseTranslation", "direction": "toEn", "target": "No surto perquè fa molt fred.", "en": "I'm not going out because it's very cold.", "distractorsEn": ["I go out although it's very cold.", "I'm not going out, but it's very cold.", "Why am I not going out in the cold?"], "distractorsTarget": [] }
+            {
+              "id": "ge-22-1",
+              "type": "fillBlank",
+              "target": "Vull sortir, ___ plou.",
+              "en": "I want to go out, but it's raining.",
+              "answer": {
+                "target": "però"
+              },
+              "distractors": [
+                {
+                  "target": "perquè"
+                },
+                {
+                  "target": "quan"
+                },
+                {
+                  "target": "mentre"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-2",
+              "type": "fillBlank",
+              "target": "No vinc ___ estic cansat.",
+              "en": "I'm not coming because I'm tired.",
+              "answer": {
+                "target": "perquè"
+              },
+              "distractors": [
+                {
+                  "target": "però"
+                },
+                {
+                  "target": "quan"
+                },
+                {
+                  "target": "si"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-3",
+              "type": "fillBlank",
+              "target": "Escolto música ___ treballo.",
+              "en": "I listen to music while I work.",
+              "answer": {
+                "target": "mentre"
+              },
+              "distractors": [
+                {
+                  "target": "quan"
+                },
+                {
+                  "target": "però"
+                },
+                {
+                  "target": "perquè"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-4",
+              "type": "fillBlank",
+              "target": "El llibre ___ llegeixo és molt bo.",
+              "en": "The book I'm reading is very good.",
+              "answer": {
+                "target": "que"
+              },
+              "distractors": [
+                {
+                  "target": "qui"
+                },
+                {
+                  "target": "on"
+                },
+                {
+                  "target": "què"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-5",
+              "type": "fillBlank",
+              "target": "La casa ___ visc és petita.",
+              "en": "The house where I live is small.",
+              "answer": {
+                "target": "on"
+              },
+              "distractors": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "qui"
+                },
+                {
+                  "target": "quan"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-6",
+              "type": "spotError",
+              "target": "La dona qui treballa aquí és la Marta.",
+              "en": "The woman who works here is Marta.",
+              "errorWord": {
+                "target": "qui"
+              },
+              "correction": {
+                "target": "que"
+              },
+              "hint": "qui needs a preposition in front of it.",
+              "correctedTarget": "La dona que treballa aquí és la Marta."
+            },
+            {
+              "id": "ge-22-7",
+              "type": "matchPairs",
+              "prompt": "Match the connector with its meaning.",
+              "pairs": [
+                {
+                  "target": "però",
+                  "en": "but"
+                },
+                {
+                  "target": "perquè",
+                  "en": "because"
+                },
+                {
+                  "target": "mentre",
+                  "en": "while"
+                },
+                {
+                  "target": "doncs",
+                  "en": "so, then"
+                }
+              ]
+            },
+            {
+              "id": "ge-22-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "No surto perquè fa molt fred.",
+              "en": "I'm not going out because it's very cold.",
+              "distractorsEn": [
+                "I go out although it's very cold.",
+                "I'm not going out, but it's very cold.",
+                "Why am I not going out in the cold?"
+              ],
+              "distractorsTarget": []
+            }
           ]
         }
       ]
@@ -634,14 +2541,32 @@
               "title": "The endings swap over",
               "body": "-ar verbs take the -i endings; -er, -re and -ir verbs take them too. The vowel that marked the conjugation simply changes.",
               "examples": [
-                { "target": "Vull que parlis català.", "en": "I want you to speak Catalan." },
-                { "target": "Espero que arribi aviat.", "en": "I hope he arrives soon." }
+                {
+                  "target": "Vull que parlis català.",
+                  "en": "I want you to speak Catalan."
+                },
+                {
+                  "target": "Espero que arribi aviat.",
+                  "en": "I hope he arrives soon."
+                }
               ],
               "table": [
-                ["parlar", "parli, parlis, parli, parlem, parleu, parlin"],
-                ["perdre", "perdi, perdis, perdi, perdem, perdeu, perdin"],
-                ["dormir", "dormi, dormis, dormi, dormim, dormiu, dormin"],
-                ["servir", "serveixi, serveixis, serveixi, servim, serviu, serveixin"]
+                [
+                  "parlar",
+                  "parli, parlis, parli, parlem, parleu, parlin"
+                ],
+                [
+                  "perdre",
+                  "perdi, perdis, perdi, perdem, perdeu, perdin"
+                ],
+                [
+                  "dormir",
+                  "dormi, dormis, dormi, dormim, dormiu, dormin"
+                ],
+                [
+                  "servir",
+                  "serveixi, serveixis, serveixi, servim, serviu, serveixin"
+                ]
               ]
             },
             {
@@ -649,18 +2574,48 @@
               "title": "The irregulars build on the -c stem",
               "body": "If you remember tinc, vinc and puc, you already have the subjunctive: add -gui.",
               "examples": [
-                { "target": "Vull que tinguis temps.", "en": "I want you to have time." },
-                { "target": "Cal que vinguis demà.", "en": "You need to come tomorrow." }
+                {
+                  "target": "Vull que tinguis temps.",
+                  "en": "I want you to have time."
+                },
+                {
+                  "target": "Cal que vinguis demà.",
+                  "en": "You need to come tomorrow."
+                }
               ],
               "table": [
-                ["ser", "sigui"],
-                ["estar", "estigui"],
-                ["tenir", "tingui"],
-                ["venir", "vingui"],
-                ["fer", "faci"],
-                ["poder", "pugui"],
-                ["anar", "vagi"],
-                ["saber", "sàpiga"]
+                [
+                  "ser",
+                  "sigui"
+                ],
+                [
+                  "estar",
+                  "estigui"
+                ],
+                [
+                  "tenir",
+                  "tingui"
+                ],
+                [
+                  "venir",
+                  "vingui"
+                ],
+                [
+                  "fer",
+                  "faci"
+                ],
+                [
+                  "poder",
+                  "pugui"
+                ],
+                [
+                  "anar",
+                  "vagi"
+                ],
+                [
+                  "saber",
+                  "sàpiga"
+                ]
               ]
             },
             {
@@ -668,20 +2623,167 @@
               "title": "What triggers it",
               "body": "A wish, a need, an emotion - and quan when it points at the future, where English keeps the present.",
               "examples": [
-                { "target": "Cal que estudiïs més.", "en": "You need to study more." },
-                { "target": "Quan arribis, truca'm.", "en": "When you arrive, call me." }
+                {
+                  "target": "Cal que estudiïs més.",
+                  "en": "You need to study more."
+                },
+                {
+                  "target": "Quan arribis, truca'm.",
+                  "en": "When you arrive, call me."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-23-1", "type": "fillBlank", "target": "Vull que ___ català.", "en": "I want you to speak Catalan.", "answer": { "target": "parlis" }, "distractors": [{ "target": "parles" }, { "target": "parlaràs" }, { "target": "parlaves" }] },
-            { "id": "ge-23-2", "type": "fillBlank", "target": "Espero que ___ aviat.", "en": "I hope he arrives soon.", "answer": { "target": "arribi" }, "distractors": [{ "target": "arriba" }, { "target": "arribarà" }, { "target": "arribava" }] },
-            { "id": "ge-23-3", "type": "fillBlank", "target": "Cal que ___ demà al matí.", "en": "You need to come tomorrow morning.", "answer": { "target": "vinguis" }, "distractors": [{ "target": "vens" }, { "target": "vindràs" }, { "target": "venies" }] },
-            { "id": "ge-23-4", "type": "fillBlank", "target": "Vull que ___ temps per a tu.", "en": "I want you to have time for yourself.", "answer": { "target": "tinguis" }, "distractors": [{ "target": "tens" }, { "target": "tindràs" }, { "target": "tenies" }] },
-            { "id": "ge-23-5", "type": "fillBlank", "target": "Espero que ___ una bona nit.", "en": "I hope you have a good night.", "answer": { "target": "sigui" }, "distractors": [{ "target": "és" }, { "target": "serà" }, { "target": "era" }] },
-            { "id": "ge-23-6", "type": "spotError", "target": "Vull que véns demà.", "en": "I want you to come tomorrow.", "errorWord": { "target": "véns" }, "correction": { "target": "vinguis" } },
-            { "id": "ge-23-7", "type": "matchPairs", "prompt": "Match each verb with its subjunctive.", "pairs": [{ "target": "ser", "en": "sigui" }, { "target": "tenir", "en": "tingui" }, { "target": "fer", "en": "faci" }, { "target": "anar", "en": "vagi" }] },
-            { "id": "ge-23-8", "type": "chooseTranslation", "direction": "toEn", "target": "Cal que estudiïs cada dia.", "en": "You need to study every day.", "distractorsEn": ["You study every day.", "You will study every day.", "You used to study every day."], "distractorsTarget": [] }
+            {
+              "id": "ge-23-1",
+              "type": "fillBlank",
+              "target": "Vull que ___ català.",
+              "en": "I want you to speak Catalan.",
+              "answer": {
+                "target": "parlis"
+              },
+              "distractors": [
+                {
+                  "target": "parles"
+                },
+                {
+                  "target": "parlaràs"
+                },
+                {
+                  "target": "parlaves"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-2",
+              "type": "fillBlank",
+              "target": "Espero que ___ aviat.",
+              "en": "I hope he arrives soon.",
+              "answer": {
+                "target": "arribi"
+              },
+              "distractors": [
+                {
+                  "target": "arriba"
+                },
+                {
+                  "target": "arribarà"
+                },
+                {
+                  "target": "arribava"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-3",
+              "type": "fillBlank",
+              "target": "Cal que ___ demà al matí.",
+              "en": "You need to come tomorrow morning.",
+              "answer": {
+                "target": "vinguis"
+              },
+              "distractors": [
+                {
+                  "target": "vens"
+                },
+                {
+                  "target": "vindràs"
+                },
+                {
+                  "target": "venies"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-4",
+              "type": "fillBlank",
+              "target": "Vull que ___ temps per a tu.",
+              "en": "I want you to have time for yourself.",
+              "answer": {
+                "target": "tinguis"
+              },
+              "distractors": [
+                {
+                  "target": "tens"
+                },
+                {
+                  "target": "tindràs"
+                },
+                {
+                  "target": "tenies"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-5",
+              "type": "fillBlank",
+              "target": "Espero que ___ una bona nit.",
+              "en": "I hope you have a good night.",
+              "answer": {
+                "target": "sigui"
+              },
+              "distractors": [
+                {
+                  "target": "és"
+                },
+                {
+                  "target": "serà"
+                },
+                {
+                  "target": "era"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-6",
+              "type": "spotError",
+              "target": "Vull que véns demà.",
+              "en": "I want you to come tomorrow.",
+              "errorWord": {
+                "target": "véns"
+              },
+              "correction": {
+                "target": "vinguis"
+              },
+              "correctedTarget": "Vull que vinguis demà."
+            },
+            {
+              "id": "ge-23-7",
+              "type": "matchPairs",
+              "prompt": "Match each verb with its subjunctive.",
+              "pairs": [
+                {
+                  "target": "ser",
+                  "en": "sigui"
+                },
+                {
+                  "target": "tenir",
+                  "en": "tingui"
+                },
+                {
+                  "target": "fer",
+                  "en": "faci"
+                },
+                {
+                  "target": "anar",
+                  "en": "vagi"
+                }
+              ]
+            },
+            {
+              "id": "ge-23-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Cal que estudiïs cada dia.",
+              "en": "You need to study every day.",
+              "distractorsEn": [
+                "You study every day.",
+                "You will study every day.",
+                "You used to study every day."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -696,17 +2798,44 @@
               "title": "The gerund is for two things at once",
               "body": "-ar gives -ant, -er and -re give -ent, -ir gives -int. Use it only when the two actions overlap - never for one thing after another.",
               "examples": [
-                { "target": "Estic menjant.", "en": "I'm eating." },
-                { "target": "Escolto música treballant.", "en": "I listen to music while working." },
-                { "target": "Va caure i es va trencar el braç.", "en": "He fell and broke his arm." }
+                {
+                  "target": "Estic menjant.",
+                  "en": "I'm eating."
+                },
+                {
+                  "target": "Escolto música treballant.",
+                  "en": "I listen to music while working."
+                },
+                {
+                  "target": "Va caure i es va trencar el braç.",
+                  "en": "He fell and broke his arm."
+                }
               ],
               "table": [
-                ["parlar", "parlant"],
-                ["perdre", "perdent"],
-                ["dormir", "dormint"],
-                ["fer", "fent"],
-                ["dir", "dient"],
-                ["veure", "veient"]
+                [
+                  "parlar",
+                  "parlant"
+                ],
+                [
+                  "perdre",
+                  "perdent"
+                ],
+                [
+                  "dormir",
+                  "dormint"
+                ],
+                [
+                  "fer",
+                  "fent"
+                ],
+                [
+                  "dir",
+                  "dient"
+                ],
+                [
+                  "veure",
+                  "veient"
+                ]
               ]
             },
             {
@@ -714,8 +2843,14 @@
               "title": "es for when nobody in particular does it",
               "body": "This is how Catalan says \"one\", \"people\" or a passive. The verb agrees with the thing.",
               "examples": [
-                { "target": "Aquí es parla català.", "en": "Catalan is spoken here." },
-                { "target": "Es venen pisos.", "en": "Flats for sale." }
+                {
+                  "target": "Aquí es parla català.",
+                  "en": "Catalan is spoken here."
+                },
+                {
+                  "target": "Es venen pisos.",
+                  "en": "Flats for sale."
+                }
               ]
             },
             {
@@ -723,29 +2858,198 @@
               "title": "Verb plus verb",
               "body": "These carry a lot of everyday meaning that English packs into single words like \"must\" or \"just\".",
               "examples": [
-                { "target": "He de treballar demà.", "en": "I have to work tomorrow." },
-                { "target": "Acabo d'arribar.", "en": "I have just arrived." },
-                { "target": "Torno a llegir el llibre.", "en": "I'm reading the book again." }
+                {
+                  "target": "He de treballar demà.",
+                  "en": "I have to work tomorrow."
+                },
+                {
+                  "target": "Acabo d'arribar.",
+                  "en": "I have just arrived."
+                },
+                {
+                  "target": "Torno a llegir el llibre.",
+                  "en": "I'm reading the book again."
+                }
               ],
               "table": [
-                ["haver de + inf.", "to have to"],
-                ["poder + inf.", "to be able to"],
-                ["tornar a + inf.", "to do again"],
-                ["acabar de + inf.", "to have just"],
-                ["començar a + inf.", "to start to"],
-                ["deixar de + inf.", "to stop"]
+                [
+                  "haver de + inf.",
+                  "to have to"
+                ],
+                [
+                  "poder + inf.",
+                  "to be able to"
+                ],
+                [
+                  "tornar a + inf.",
+                  "to do again"
+                ],
+                [
+                  "acabar de + inf.",
+                  "to have just"
+                ],
+                [
+                  "començar a + inf.",
+                  "to start to"
+                ],
+                [
+                  "deixar de + inf.",
+                  "to stop"
+                ]
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-24-1", "type": "fillBlank", "target": "Ara estic ___ el sopar.", "en": "I'm making dinner now.", "answer": { "target": "fent" }, "distractors": [{ "target": "fant" }, { "target": "faent" }, { "target": "fet" }] },
-            { "id": "ge-24-2", "type": "fillBlank", "target": "Aquí ___ parla català.", "en": "Catalan is spoken here.", "answer": { "target": "es" }, "distractors": [{ "target": "hi" }, { "target": "en" }, { "target": "el" }] },
-            { "id": "ge-24-3", "type": "fillBlank", "target": "___ de treballar demà.", "en": "I have to work tomorrow.", "answer": { "target": "He" }, "distractors": [{ "target": "Tinc" }, { "target": "Vaig" }, { "target": "Soc" }] },
-            { "id": "ge-24-4", "type": "fillBlank", "target": "Acabo ___ arribar a casa.", "en": "I have just arrived home.", "answer": { "target": "d'" }, "distractors": [{ "target": "de" }, { "target": "a" }, { "target": "per" }] },
-            { "id": "ge-24-5", "type": "fillBlank", "target": "Torno ___ llegir el llibre.", "en": "I'm reading the book again.", "answer": { "target": "a" }, "distractors": [{ "target": "de" }, { "target": "per" }, { "target": "amb" }] },
-            { "id": "ge-24-6", "type": "spotError", "target": "Tinc de treballar demà.", "en": "I have to work tomorrow.", "errorWord": { "target": "Tinc" }, "correction": { "target": "He" }, "hint": "Obligation uses haver de, not tenir." },
-            { "id": "ge-24-7", "type": "matchPairs", "prompt": "Match the periphrasis with its meaning.", "pairs": [{ "target": "haver de", "en": "to have to" }, { "target": "acabar de", "en": "to have just" }, { "target": "tornar a", "en": "to do again" }, { "target": "deixar de", "en": "to stop" }] },
-            { "id": "ge-24-8", "type": "chooseTranslation", "direction": "toEn", "target": "Acabo de veure la Marta.", "en": "I have just seen Marta.", "distractorsEn": ["I finish watching Marta.", "I am going to see Marta.", "I saw Marta a long time ago."], "distractorsTarget": [] }
+            {
+              "id": "ge-24-1",
+              "type": "fillBlank",
+              "target": "Ara estic ___ el sopar.",
+              "en": "I'm making dinner now.",
+              "answer": {
+                "target": "fent"
+              },
+              "distractors": [
+                {
+                  "target": "fant"
+                },
+                {
+                  "target": "faent"
+                },
+                {
+                  "target": "fet"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-2",
+              "type": "fillBlank",
+              "target": "Aquí ___ parla català.",
+              "en": "Catalan is spoken here.",
+              "answer": {
+                "target": "es"
+              },
+              "distractors": [
+                {
+                  "target": "hi"
+                },
+                {
+                  "target": "en"
+                },
+                {
+                  "target": "el"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-3",
+              "type": "fillBlank",
+              "target": "___ de treballar demà.",
+              "en": "I have to work tomorrow.",
+              "answer": {
+                "target": "He"
+              },
+              "distractors": [
+                {
+                  "target": "Tinc"
+                },
+                {
+                  "target": "Vaig"
+                },
+                {
+                  "target": "Soc"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-4",
+              "type": "fillBlank",
+              "target": "Acabo ___ arribar a casa.",
+              "en": "I have just arrived home.",
+              "answer": {
+                "target": "d'"
+              },
+              "distractors": [
+                {
+                  "target": "de"
+                },
+                {
+                  "target": "a"
+                },
+                {
+                  "target": "per"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-5",
+              "type": "fillBlank",
+              "target": "Torno ___ llegir el llibre.",
+              "en": "I'm reading the book again.",
+              "answer": {
+                "target": "a"
+              },
+              "distractors": [
+                {
+                  "target": "de"
+                },
+                {
+                  "target": "per"
+                },
+                {
+                  "target": "amb"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-6",
+              "type": "spotError",
+              "target": "Tinc de treballar demà.",
+              "en": "I have to work tomorrow.",
+              "errorWord": {
+                "target": "Tinc"
+              },
+              "correction": {
+                "target": "He"
+              },
+              "hint": "Obligation uses haver de, not tenir.",
+              "correctedTarget": "He de treballar demà."
+            },
+            {
+              "id": "ge-24-7",
+              "type": "matchPairs",
+              "prompt": "Match the periphrasis with its meaning.",
+              "pairs": [
+                {
+                  "target": "haver de",
+                  "en": "to have to"
+                },
+                {
+                  "target": "acabar de",
+                  "en": "to have just"
+                },
+                {
+                  "target": "tornar a",
+                  "en": "to do again"
+                },
+                {
+                  "target": "deixar de",
+                  "en": "to stop"
+                }
+              ]
+            },
+            {
+              "id": "ge-24-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Acabo de veure la Marta.",
+              "en": "I have just seen Marta.",
+              "distractorsEn": [
+                "I finish watching Marta.",
+                "I am going to see Marta.",
+                "I saw Marta a long time ago."
+              ],
+              "distractorsTarget": []
+            }
           ]
         },
         {
@@ -760,15 +3064,36 @@
               "title": "Every weak pronoun has four shapes",
               "body": "Which one you write depends on what is next to it: a consonant, a vowel, or another pronoun. em is the model for et and es.",
               "examples": [
-                { "target": "Em dona el llibre.", "en": "He gives me the book." },
-                { "target": "M'ajuda molt.", "en": "He helps me a lot." },
-                { "target": "Vol ajudar-me.", "en": "He wants to help me." }
+                {
+                  "target": "Em dona el llibre.",
+                  "en": "He gives me the book."
+                },
+                {
+                  "target": "M'ajuda molt.",
+                  "en": "He helps me a lot."
+                },
+                {
+                  "target": "Vol ajudar-me.",
+                  "en": "He wants to help me."
+                }
               ],
               "table": [
-                ["before a consonant", "em, et, es"],
-                ["before a vowel", "m', t', s'"],
-                ["after a consonant", "-me, -te, -se"],
-                ["after a vowel", "-'m, -'t, -'s"]
+                [
+                  "before a consonant",
+                  "em, et, es"
+                ],
+                [
+                  "before a vowel",
+                  "m', t', s'"
+                ],
+                [
+                  "after a consonant",
+                  "-me, -te, -se"
+                ],
+                [
+                  "after a vowel",
+                  "-'m, -'t, -'s"
+                ]
               ]
             },
             {
@@ -776,17 +3101,44 @@
               "title": "Two pronouns together",
               "body": "The indirect one comes first. me'l is \"it to me\"; se'n is the one inside anar-se'n, to go away.",
               "examples": [
-                { "target": "Me'l dona demà.", "en": "He'll give it to me tomorrow." },
-                { "target": "Te'n parlo després.", "en": "I'll talk to you about it later." },
-                { "target": "Se'n va a casa.", "en": "He's going off home." }
+                {
+                  "target": "Me'l dona demà.",
+                  "en": "He'll give it to me tomorrow."
+                },
+                {
+                  "target": "Te'n parlo després.",
+                  "en": "I'll talk to you about it later."
+                },
+                {
+                  "target": "Se'n va a casa.",
+                  "en": "He's going off home."
+                }
               ],
               "table": [
-                ["em + el", "me'l"],
-                ["em + en", "me'n"],
-                ["em + ho", "m'ho"],
-                ["et + el", "te'l"],
-                ["es + en", "se'n"],
-                ["li + ho", "l'hi"]
+                [
+                  "em + el",
+                  "me'l"
+                ],
+                [
+                  "em + en",
+                  "me'n"
+                ],
+                [
+                  "em + ho",
+                  "m'ho"
+                ],
+                [
+                  "et + el",
+                  "te'l"
+                ],
+                [
+                  "es + en",
+                  "se'n"
+                ],
+                [
+                  "li + ho",
+                  "l'hi"
+                ]
               ]
             },
             {
@@ -794,21 +3146,172 @@
               "title": "After the verb they hook on with a hyphen",
               "body": "With an infinitive or an imperative the pronouns move to the end and keep the same order.",
               "examples": [
-                { "target": "Vull dir-t'ho ara.", "en": "I want to tell you now." },
-                { "target": "Dona-me'l, si us plau.", "en": "Give it to me, please." },
-                { "target": "Vaig anar-me'n aviat.", "en": "I left early." }
+                {
+                  "target": "Vull dir-t'ho ara.",
+                  "en": "I want to tell you now."
+                },
+                {
+                  "target": "Dona-me'l, si us plau.",
+                  "en": "Give it to me, please."
+                },
+                {
+                  "target": "Vaig anar-me'n aviat.",
+                  "en": "I left early."
+                }
               ]
             }
           ],
           "exercises": [
-            { "id": "ge-25-1", "type": "fillBlank", "target": "El llibre? ___ dona demà.", "en": "The book? He'll give it to me tomorrow.", "answer": { "target": "Me'l" }, "distractors": [{ "target": "Em el" }, { "target": "M'el" }, { "target": "Me el" }] },
-            { "id": "ge-25-2", "type": "fillBlank", "target": "___ va a casa aviat.", "en": "He goes off home early.", "answer": { "target": "Se'n" }, "distractors": [{ "target": "Es en" }, { "target": "S'en" }, { "target": "Se en" }] },
-            { "id": "ge-25-3", "type": "fillBlank", "target": "Vull dir-___ ara mateix.", "en": "I want to tell you right now.", "answer": { "target": "t'ho" }, "distractors": [{ "target": "te ho" }, { "target": "et ho" }, { "target": "t'o" }] },
-            { "id": "ge-25-4", "type": "fillBlank", "target": "___ ajuda molt cada dia.", "en": "He helps me a lot every day.", "answer": { "target": "M'" }, "distractors": [{ "target": "Em" }, { "target": "Me" }, { "target": "Mi" }] },
-            { "id": "ge-25-5", "type": "fillBlank", "target": "Vol ajudar-___ amb la feina.", "en": "He wants to help me with the work.", "answer": { "target": "me" }, "distractors": [{ "target": "em" }, { "target": "m'" }, { "target": "mi" }] },
-            { "id": "ge-25-6", "type": "spotError", "target": "Vol ajudar em amb la feina.", "en": "He wants to help me with the work.", "errorWord": { "target": "em" }, "correction": { "target": "ajudar-me" }, "hint": "After an infinitive the pronoun hooks on." },
-            { "id": "ge-25-7", "type": "matchPairs", "prompt": "Match the combination with its written form.", "pairs": [{ "target": "me'l", "en": "em + el" }, { "target": "me'n", "en": "em + en" }, { "target": "se'n", "en": "es + en" }, { "target": "m'ho", "en": "em + ho" }] },
-            { "id": "ge-25-8", "type": "chooseTranslation", "direction": "toEn", "target": "Vaig anar-me'n molt aviat.", "en": "I left very early.", "distractorsEn": ["I arrived very early.", "I want to go very early.", "He left me very early."], "distractorsTarget": [] }
+            {
+              "id": "ge-25-1",
+              "type": "fillBlank",
+              "target": "El llibre? ___ dona demà.",
+              "en": "The book? He'll give it to me tomorrow.",
+              "answer": {
+                "target": "Me'l"
+              },
+              "distractors": [
+                {
+                  "target": "Em el"
+                },
+                {
+                  "target": "M'el"
+                },
+                {
+                  "target": "Me el"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-2",
+              "type": "fillBlank",
+              "target": "___ va a casa aviat.",
+              "en": "He goes off home early.",
+              "answer": {
+                "target": "Se'n"
+              },
+              "distractors": [
+                {
+                  "target": "Es en"
+                },
+                {
+                  "target": "S'en"
+                },
+                {
+                  "target": "Se en"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-3",
+              "type": "fillBlank",
+              "target": "Vull dir-___ ara mateix.",
+              "en": "I want to tell you right now.",
+              "answer": {
+                "target": "t'ho"
+              },
+              "distractors": [
+                {
+                  "target": "te ho"
+                },
+                {
+                  "target": "et ho"
+                },
+                {
+                  "target": "t'o"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-4",
+              "type": "fillBlank",
+              "target": "___ ajuda molt cada dia.",
+              "en": "He helps me a lot every day.",
+              "answer": {
+                "target": "M'"
+              },
+              "distractors": [
+                {
+                  "target": "Em"
+                },
+                {
+                  "target": "Me"
+                },
+                {
+                  "target": "Mi"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-5",
+              "type": "fillBlank",
+              "target": "Vol ajudar-___ amb la feina.",
+              "en": "He wants to help me with the work.",
+              "answer": {
+                "target": "me"
+              },
+              "distractors": [
+                {
+                  "target": "em"
+                },
+                {
+                  "target": "m'"
+                },
+                {
+                  "target": "mi"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-6",
+              "type": "spotError",
+              "target": "Vol ajudar em amb la feina.",
+              "en": "He wants to help me with the work.",
+              "errorWord": {
+                "target": "em"
+              },
+              "correction": {
+                "target": "ajudar-me"
+              },
+              "hint": "After an infinitive the pronoun hooks on.",
+              "correctedTarget": "Vol ajudar-me amb la feina."
+            },
+            {
+              "id": "ge-25-7",
+              "type": "matchPairs",
+              "prompt": "Match the combination with its written form.",
+              "pairs": [
+                {
+                  "target": "me'l",
+                  "en": "em + el"
+                },
+                {
+                  "target": "me'n",
+                  "en": "em + en"
+                },
+                {
+                  "target": "se'n",
+                  "en": "es + en"
+                },
+                {
+                  "target": "m'ho",
+                  "en": "em + ho"
+                }
+              ]
+            },
+            {
+              "id": "ge-25-8",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Vaig anar-me'n molt aviat.",
+              "en": "I left very early.",
+              "distractorsEn": [
+                "I arrived very early.",
+                "I want to go very early.",
+                "He left me very early."
+              ],
+              "distractorsTarget": []
+            }
           ]
         }
       ]

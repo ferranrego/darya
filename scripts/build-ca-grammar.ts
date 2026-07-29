@@ -58,9 +58,31 @@ for (const course of parsed.data.courses) {
         if (!ex.id.startsWith(`ge-${lesson.id.slice(3)}-`)) {
           problems.push(`${ex.id}: id does not belong to ${lesson.id}`);
         }
-        // The player highlights errorWord inside target, so it must be there.
-        if (ex.type === "spotError" && !ex.target.includes(ex.errorWord.target)) {
-          problems.push(`${ex.id}: errorWord "${ex.errorWord.target}" is not in the sentence`);
+        if (ex.type === "spotError") {
+          /**
+           * The learner taps a *word*, so errorWord has to be one of the tokens
+           * the player splits `target` into - not a substring of one. Authoring
+           * "agrada" for the token "M'agrada" made the exercise unsolvable:
+           * no tap ever matched, every answer was marked wrong, and the
+           * correction was never reached.
+           */
+          const words = ex.target.split(/\s+/).map((w) => w.replace(/[^\p{L}'·]/gu, "").toLowerCase());
+          if (!words.includes(ex.errorWord.target.toLowerCase())) {
+            problems.push(
+              `${ex.id}: errorWord "${ex.errorWord.target}" is not a word of "${ex.target}"`,
+            );
+          }
+          /**
+           * And the fix has to be authored in full. Substituting the correction
+           * for the error only yields Catalan when the change is a clean
+           * one-token swap; six of these needed a word dropped or moved, and
+           * the app was showing "Parles parlar català tu?" as the model answer.
+           */
+          if (!ex.correctedTarget) {
+            problems.push(`${ex.id}: spotError needs correctedTarget, the whole corrected sentence`);
+          } else if (ex.correctedTarget === ex.target) {
+            problems.push(`${ex.id}: correctedTarget is identical to the faulty sentence`);
+          }
         }
         // A board with the same word twice has two right answers.
         if (ex.type === "matchPairs") {

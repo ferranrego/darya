@@ -243,7 +243,8 @@
                   "correction": {
                     "target": "és"
                   },
-                  "hint": "Where something simply is."
+                  "hint": "Where something simply is.",
+                  "correctedTarget": "El llibre és a la taula."
                 },
                 {
                   "id": "ge-01-7",
@@ -518,7 +519,8 @@
                   },
                   "correction": {
                     "target": "L'"
-                  }
+                  },
+                  "correctedTarget": "L'escola és gran."
                 },
                 {
                   "id": "ge-02-7",
@@ -772,7 +774,8 @@
                   },
                   "correction": {
                     "target": "blanques"
-                  }
+                  },
+                  "correctedTarget": "Les cases són blanques."
                 },
                 {
                   "id": "ge-03-6",
@@ -1009,7 +1012,8 @@
                   "correction": {
                     "target": "no ve"
                   },
-                  "hint": "Catalan keeps no as well."
+                  "hint": "Catalan keeps no as well.",
+                  "correctedTarget": "Ella no ve mai a casa."
                 },
                 {
                   "id": "ge-04-6",
@@ -1276,7 +1280,8 @@
                   "correction": {
                     "target": "dormo"
                   },
-                  "hint": "dormir is one of the -ir verbs without -eix-."
+                  "hint": "dormir is one of the -ir verbs without -eix-.",
+                  "correctedTarget": "Jo dormo molt bé."
                 },
                 {
                   "id": "ge-05-6",
@@ -1539,7 +1544,8 @@
                   },
                   "correction": {
                     "target": "tinc"
-                  }
+                  },
+                  "correctedTarget": "Jo tinc molta feina."
                 },
                 {
                   "id": "ge-06-7",
@@ -1753,7 +1759,8 @@
                   },
                   "correction": {
                     "target": "Tinc"
-                  }
+                  },
+                  "correctedTarget": "Tinc vint anys."
                 },
                 {
                   "id": "ge-07-6",
@@ -2033,7 +2040,8 @@
                   "correction": {
                     "target": "Parles"
                   },
-                  "hint": "Catalan has no do-support."
+                  "hint": "Catalan has no do-support.",
+                  "correctedTarget": "Parles català?"
                 },
                 {
                   "id": "ge-08-7",
@@ -2260,7 +2268,8 @@
                   },
                   "correction": {
                     "target": "El meu"
-                  }
+                  },
+                  "correctedTarget": "El meu pare treballa aquí."
                 },
                 {
                   "id": "ge-09-6",
@@ -2536,9 +2545,10 @@
                     "target": "a"
                   },
                   "correction": {
-                    "target": "Veig"
+                    "target": "la"
                   },
-                  "hint": "Catalan has no personal a: just Veig la Maria."
+                  "hint": "Catalan has no personal a: just Veig la Maria.",
+                  "correctedTarget": "Veig la Maria cada dia."
                 },
                 {
                   "id": "ge-10-6",
@@ -2832,7 +2842,8 @@
                   },
                   "correction": {
                     "target": "dues"
-                  }
+                  },
+                  "correctedTarget": "Tinc dues germanes petites."
                 },
                 {
                   "id": "ge-11-7",
@@ -3047,7 +3058,8 @@
                   },
                   "correction": {
                     "target": "menjar"
-                  }
+                  },
+                  "correctedTarget": "Ahir vaig menjar peix."
                 },
                 {
                   "id": "ge-12-6",
@@ -3319,7 +3331,8 @@
                   "correction": {
                     "target": "menjava"
                   },
-                  "hint": "A repeated habit takes the imperfect."
+                  "hint": "A repeated habit takes the imperfect.",
+                  "correctedTarget": "Cada dia menjava a casa."
                 },
                 {
                   "id": "ge-13-7",
@@ -3588,7 +3601,8 @@
                   "correction": {
                     "target": "vaig"
                   },
-                  "hint": "Yesterday is over, so use the periphrastic past."
+                  "hint": "Yesterday is over, so use the periphrastic past.",
+                  "correctedTarget": "Ahir vaig menjar peix."
                 },
                 {
                   "id": "ge-14-7",
@@ -3828,7 +3842,8 @@
                   },
                   "correction": {
                     "target": "em dic"
-                  }
+                  },
+                  "correctedTarget": "Jo em dic Anna."
                 },
                 {
                   "id": "ge-15-6",
@@ -4125,7 +4140,8 @@
                   "correction": {
                     "target": "El veig"
                   },
-                  "hint": "The pronoun comes first."
+                  "hint": "The pronoun comes first.",
+                  "correctedTarget": "El veig cada dia."
                 },
                 {
                   "id": "ge-16-7",
@@ -4338,7 +4354,8 @@
                   "correction": {
                     "target": "en vull"
                   },
-                  "hint": "Catalan keeps en even though English drops it."
+                  "hint": "Catalan keeps en even though English drops it.",
+                  "correctedTarget": "Vols pa? Sí, en vull."
                 },
                 {
                   "id": "ge-17-7",
@@ -4581,12 +4598,13 @@
                   "target": "M'agrada els llibres.",
                   "en": "I like books.",
                   "errorWord": {
-                    "target": "agrada"
+                    "target": "M'agrada"
                   },
                   "correction": {
-                    "target": "agraden"
+                    "target": "M'agraden"
                   },
-                  "hint": "The verb agrees with the books."
+                  "hint": "The verb agrees with the books.",
+                  "correctedTarget": "M'agraden els llibres."
                 },
                 {
                   "id": "ge-18-7",
@@ -4864,7 +4882,8 @@
                   },
                   "correction": {
                     "target": "tindré"
-                  }
+                  },
+                  "correctedTarget": "Demà tindré molta feina."
                 },
                 {
                   "id": "ge-19-7",
@@ -5095,7 +5114,8 @@
                   "correction": {
                     "target": "Voldria"
                   },
-                  "hint": "The conditional is what makes it polite."
+                  "hint": "The conditional is what makes it polite.",
+                  "correctedTarget": "Voldria un got d'aigua, si us plau."
                 },
                 {
                   "id": "ge-20-7",
@@ -5337,7 +5357,8 @@
                   "correction": {
                     "target": "tan"
                   },
-                  "hint": "Before an adjective it loses the -t."
+                  "hint": "Before an adjective it loses the -t.",
+                  "correctedTarget": "És tan alt com jo."
                 },
                 {
                   "id": "ge-21-7",
@@ -5588,7 +5609,8 @@
                   "correction": {
                     "target": "que"
                   },
-                  "hint": "qui needs a preposition in front of it."
+                  "hint": "qui needs a preposition in front of it.",
+                  "correctedTarget": "La dona que treballa aquí és la Marta."
                 },
                 {
                   "id": "ge-22-7",
@@ -5851,7 +5873,8 @@
                   },
                   "correction": {
                     "target": "vinguis"
-                  }
+                  },
+                  "correctedTarget": "Vull que vinguis demà."
                 },
                 {
                   "id": "ge-23-7",
@@ -6116,7 +6139,8 @@
                   "correction": {
                     "target": "He"
                   },
-                  "hint": "Obligation uses haver de, not tenir."
+                  "hint": "Obligation uses haver de, not tenir.",
+                  "correctedTarget": "He de treballar demà."
                 },
                 {
                   "id": "ge-24-7",
@@ -6377,7 +6401,8 @@
                   "correction": {
                     "target": "ajudar-me"
                   },
-                  "hint": "After an infinitive the pronoun hooks on."
+                  "hint": "After an infinitive the pronoun hooks on.",
+                  "correctedTarget": "Vol ajudar-me amb la feina."
                 },
                 {
                   "id": "ge-25-7",

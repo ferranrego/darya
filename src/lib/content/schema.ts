@@ -357,6 +357,18 @@ export const spotErrorExercise = z.object({
   errorWord: grammarOptionSchema,
   /** What it should have been. */
   correction: grammarOptionSchema,
+  /**
+   * The whole corrected sentence.
+   *
+   * Swapping `correction` in for `errorWord` only yields real language when the
+   * fix is a clean one-token substitution, and often it is not: correcting
+   * "Fas parlar català?" to "Parles català?" also has to drop a word, and
+   * correcting "Veig a la Maria" removes one without replacing it. Doing it by
+   * substitution displayed "Parles parlar català tu?" and "Veig Veig la Maria"
+   * to the learner as the model answer. When this is present the player shows
+   * it verbatim instead of patching the sentence.
+   */
+  correctedTarget: targetText.optional(),
 });
 
 export const grammarExerciseSchema = z.discriminatedUnion("type", [

@@ -130,7 +130,18 @@ function FillBlank({
   const filled = feedback === "correct";
   // Split around the placeholder; never render the underscores themselves,
   // raw "___" inside RTL text triggers bidi reordering glitches.
-  const [targetBefore, targetAfter] = exercise.target.split("___");
+  const [rawBefore, rawAfter] = exercise.target.split("___");
+  /**
+   * An answer that is an eliding clitic joins the next word with no space:
+   * `l'home`, `m'agrada`, `d'arribar`. The sentence is written with the usual
+   * space around the blank, so filling it in naively produced "L' home és
+   * alt." - inside the very lesson that teaches apostrophation as obligatory.
+   * The same applies in reverse to an enclitic answer (`-'m`, `-'n`).
+   */
+  const answerText = exercise.answer.target;
+  const targetBefore = /^'/.test(answerText) ? rawBefore.replace(/\s+$/, "") : rawBefore;
+  const targetAfter = /'$/.test(answerText) ? rawAfter.replace(/^\s+/, "") : rawAfter;
+  const hugs = /'$/.test(answerText) || /^'/.test(answerText);
   // A Latin-script language ships no transliteration, so this row is absent
   // rather than empty; splitting "" still yields a usable pair.
   const [translitBefore, translitAfter] = (exercise.translit ?? "").split("___");
@@ -146,7 +157,7 @@ function FillBlank({
         <p lang={lang.code} dir={lang.dir} className="text-[30px] leading-[2]">
           {targetBefore}
           <span
-            className={`mx-1 inline-flex min-w-16 items-center justify-center rounded-xl border-2 px-2 align-middle transition-colors duration-200 ${
+            className={`${hugs ? "" : "mx-1"} inline-flex min-w-16 items-center justify-center rounded-xl border-2 px-2 align-middle transition-colors duration-200 ${
               filled ? "border-sabz bg-sabz-soft text-sabz" : "border-dashed border-line text-transparent"
             }`}
           >
@@ -532,7 +543,19 @@ function SpotError({
           {words.map((word, i) => {
             const isError = normalize(word) === errorKey;
             if (solved && isError) {
-              return (
+              // With a full corrected sentence below, patching the word in
+              // place would contradict it; mark the mistake instead.
+              return exercise.correctedTarget ? (
+                <motion.span
+                  key={i}
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  lang={lang.code}
+                  className="rounded-lg bg-saffron-soft px-2 py-1 text-[26px] leading-snug text-danger line-through"
+                >
+                  {word}
+                </motion.span>
+              ) : (
                 <motion.span
                   key={i}
                   initial={{ scale: 0.8, opacity: 0 }}
@@ -558,10 +581,23 @@ function SpotError({
         </div>
         {solved && (
           <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-6">
+            {/* The authored sentence, when the fix is more than a word swap. */}
+            {exercise.correctedTarget && (
+              <p
+                lang={lang.code}
+                dir={lang.dir}
+                className="mb-3 text-[22px] leading-snug font-medium text-sabz"
+              >
+                {exercise.correctedTarget}
+              </p>
+            )}
             <p className="text-[15px] font-medium text-sabz">{exercise.translit}</p>
-            <p className="mt-1 text-[13px] text-ink-faint">
-              <span lang={lang.code}>{exercise.errorWord.target}</span> → <span lang={lang.code}>{exercise.correction.target}</span>
-            </p>
+            {/* Redundant once the whole corrected sentence is on screen. */}
+            {!exercise.correctedTarget && (
+              <p className="mt-1 text-[13px] text-ink-faint">
+                <span lang={lang.code}>{exercise.errorWord.target}</span> → <span lang={lang.code}>{exercise.correction.target}</span>
+              </p>
+            )}
           </motion.div>
         )}
       </div>

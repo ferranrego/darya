@@ -30,7 +30,10 @@ export default function WelcomePage() {
         : await db.auth.signUp({
             email,
             password,
-            options: { data: { display_name: name.trim() || email.split("@")[0] } },
+            options: {
+              data: { display_name: name.trim() || email.split("@")[0] },
+              emailRedirectTo: location.origin,
+            },
           });
     if (result.error) {
       setError(result.error.message);
