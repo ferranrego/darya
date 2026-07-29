@@ -31,16 +31,6 @@ const outputSchema = z.object({
 
 type RawText = z.infer<typeof outputSchema>;
 
-/**
- * Below this many tracked words, a learner's word list is too thin to measure a
- * text against: the placement says they know hundreds, but only the handful the
- * assessment showed them exist as rows. Both the generator and the reader's
- * acceptance rule fall back to the level's frequency band under this floor, and
- * they must use the same number or the reader rejects the texts the generator
- * wrote for it.
- */
-export const ASSUMED_KNOWN_FLOOR = 15;
-
 export interface GenerationRequest {
   level: Level;
   /** Words the learner knows (target + translit shown to the model). */

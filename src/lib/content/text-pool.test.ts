@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ASSUMED_KNOWN_FLOOR } from "../ai/generate.ts";
-import { selectUnread, type PoolText } from "./text-pool.ts";
+import { ASSUMED_KNOWN_FLOOR, selectUnread, type PoolText } from "./text-pool.ts";
 
 /** A generated text using the given lexeme ids. */
 function generated(id: string, vocabUsed: string[]): PoolText {

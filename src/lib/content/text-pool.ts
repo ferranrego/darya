@@ -1,5 +1,3 @@
-import { ASSUMED_KNOWN_FLOOR } from "../ai/generate.ts";
-
 /**
  * Which texts a learner should be offered next.
  *
@@ -11,6 +9,17 @@ import { ASSUMED_KNOWN_FLOOR } from "../ai/generate.ts";
  * visit. It is pulled out of the page so the agreement can be asserted in a
  * test rather than discovered in production.
  */
+
+/**
+ * Below this many tracked words, a learner's word list is too thin to measure a
+ * text against: the placement credits them with hundreds, but only the handful
+ * the assessment showed them exist as rows. The generator applies the same floor
+ * when it chooses what vocabulary to write with. It lives here rather than in
+ * `ai/generate.ts` because that module is server-only and this rule runs in the
+ * browser - importing across that line fails the production build, though not
+ * typecheck.
+ */
+export const ASSUMED_KNOWN_FLOOR = 15;
 
 export interface PoolText {
   id: string;

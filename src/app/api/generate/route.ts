@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import { ASSUMED_KNOWN_FLOOR, generateText, vocabHash } from "@/lib/ai/generate";
+import { generateText, vocabHash } from "@/lib/ai/generate";
 import { lexicon, levelById } from "@/lib/content/load";
+import { ASSUMED_KNOWN_FLOOR } from "@/lib/content/text-pool";
 import { insertGeneratedText } from "@/lib/db/texts";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
 
