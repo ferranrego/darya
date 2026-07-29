@@ -22,7 +22,7 @@ describe("core loop: generate a text in the active language", () => {
       newWordRatio: 0.05,
     });
 
-    console.log(`\n${doc.titleTarget} — ${doc.titleEn}`);
+    console.log(`\n${doc.titleTarget} - ${doc.titleEn}`);
     for (const s of doc.sentences) {
       const resolved = s.tokens.filter((t) => t.lexemeId).length;
       console.log(`  ${s.target}\n     ${s.en}  [${resolved}/${s.tokens.length}]`);
