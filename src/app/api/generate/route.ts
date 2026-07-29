@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { generateText, vocabHash } from "@/lib/ai/generate";
-import { lexicon, levelById } from "@/lib/content/load";
+import { levels, lexicon, levelById } from "@/lib/content/load";
+import { assumedKnown } from "@/lib/content/text-pool";
 import { insertGeneratedText } from "@/lib/db/texts";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
 
@@ -59,17 +60,30 @@ export async function POST(req: Request) {
     }
   }
 
-  // Build the vocabulary constraint from the learner's actual words.
-  const statusById = new Map((words ?? []).map((w) => [w.lexeme_id, w.status]));
+  // Build the vocabulary constraint the same way the reader measures a text
+  // against it - `assumedKnown` is the single definition of "words this learner
+  // has". Counting only the rows the assessment created meant an A2 learner was
+  // treated as knowing 17 words, and being told to write five sentences with 17
+  // words is what produced "faig una aplicació al jardí": the model has to
+  // break the constraint to say anything at all.
+  const levelIdx = levels.findIndex((l) => l.id === level.id);
+  const priorMaxRank = levelIdx >= 1 ? levels[levelIdx - 1].entryKnownWords : 0;
+  const knownIds = assumedKnown(
+    (words ?? [])
+      .filter((w) => w.status === "known" || w.status === "learning")
+      .map((w) => w.lexeme_id),
+    lexicon.entries.filter((e) => e.freqRank <= priorMaxRank).map((e) => e.id),
+  );
+
   const inBand = lexicon.entries.filter((e) => level.freqBands.includes(e.freqBand));
-  const knownWords = inBand.filter((e) => statusById.has(e.id));
+  const knownWords = inBand.filter((e) => knownIds.has(e.id));
   const newWords = inBand
-    .filter((e) => !statusById.has(e.id))
+    .filter((e) => !knownIds.has(e.id))
     .sort((a, b) => a.freqRank - b.freqRank);
 
-  // For brand-new learners the "known" set is empty, so fall back to the most
-  // frequent words of the level so generation still works.
-  const effectiveKnown = knownWords.length >= 15 ? knownWords : inBand.slice(0, 40);
+  // A brand-new learner at the first level has nothing yet, so fall back to the
+  // most frequent words of the level rather than an empty constraint.
+  const effectiveKnown = knownWords.length >= 40 ? knownWords : inBand.slice(0, 60);
 
   const ratio = profile.new_word_ratio ?? 0.05;
   const avgSentenceWords = 7;
@@ -84,7 +98,7 @@ export async function POST(req: Request) {
   try {
     const doc = await generateText({
       level,
-      knownWords: effectiveKnown.slice(0, 120),
+      knownWords: effectiveKnown.slice(0, 160),
       targetWords,
       newWordRatio: ratio,
       theme,
