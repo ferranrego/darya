@@ -49,10 +49,18 @@ export const ca: LanguageProfile = {
     mascotName: "Poncha",
   },
 
+  samples: {
+    // No transliteration: Catalan is already Latin script.
+    greeting: { target: "Benvingut", en: "welcome" },
+    sentence: { target: "Hola, com estàs?", en: "Hello, how are you?" },
+    words: ["llibre", "casa", "jo"],
+  },
+
   prompts: {
     teacher: TEACHER,
     orthography: ORTHOGRAPHY,
     culturalSetting: CULTURAL_SETTING,
     scenarios: SCENARIOS,
+    inflectionExample: "som bons = we are good",
   },
 };

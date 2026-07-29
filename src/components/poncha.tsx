@@ -29,7 +29,6 @@ const ANIMATED: Partial<Record<PonchaPose, { src: string; w: number; h: number }
 };
 
 /** Poncha's name in Dari script - handy for captions and speech bubbles. */
-export const PONCHA_DARI = "پونچا";
 
 export function Poncha({
   pose,

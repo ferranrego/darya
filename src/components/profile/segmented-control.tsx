@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { useId } from "react";
 import { hapticTap } from "@/lib/util/haptics";
+import { profile as lang } from "@/lib/lang";
 
 export interface SegmentedControlOption<T> {
   value: T;
@@ -76,7 +77,7 @@ export function SegmentedControl<T extends string | number>({
                   lang="prs"
                   dir="rtl"
                 >
-                  زبان دری
+                  {lang.name}
                 </span>
               )}
             </div>

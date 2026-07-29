@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import webPush from "web-push";
 import { supabaseService } from "@/lib/supabase/server";
+import { profile as lang } from "@/lib/lang";
 
 export async function GET(req: Request) {
   // Verify Vercel Cron authentication
@@ -59,7 +60,7 @@ export async function GET(req: Request) {
             },
             JSON.stringify({
               title: "Keep your streak alive! 🔥",
-              body: "You haven't practiced Dari today. Do a quick review now to keep your streak going!",
+              body: `You haven't practiced ${lang.name} today. Do a quick review now to keep your streak going!`,
               data: { url: "/" },
             })
           );

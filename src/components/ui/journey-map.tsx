@@ -59,7 +59,7 @@ export function JourneyMap({
       ? `${alphabetCompletedUnits} / ${totalAlphabetUnits} units`
       : alphabetDone
         ? `${totalAlphabetUnits} / ${totalAlphabetUnits} units`
-        : "You already read Dari",
+        : `You already read ${lang.name}`,
     route: "/alphabet",
     state: alphabetNeeded ? "current" : "completed",
     icon: <SpellCheck size={24} />,

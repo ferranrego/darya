@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import type { GrammarExercise, GrammarOption } from "@/lib/content/schema";
 import { normalize } from "@/lib/text";
+import { profile as lang } from "@/lib/lang";
 
 /** Deterministic shuffle so options don't reshuffle on re-render. */
 function shuffled<T>(items: T[], seed: string): T[] {
@@ -358,7 +359,7 @@ function ChooseTranslation({
   const options = shuffled([answer, ...exercise.distractorsTarget], exercise.id);
   return (
     <div className="flex flex-1 flex-col">
-      <Prompt hint={exercise.hint}>How do you say it in Dari?</Prompt>
+      <Prompt hint={exercise.hint}>How do you say it in {lang.name}?</Prompt>
       <div className="my-auto py-6 text-center">
         <p className="text-[20px] font-medium">{exercise.en}</p>
         <div className="mx-auto mt-10 flex max-w-sm flex-col gap-3">

@@ -58,14 +58,14 @@ export function ReaderGuideSheet({
 
             <div className="mt-6 flex flex-col">
               <GuideRow
-                sample="کتاب"
+                sample={lang.samples.words[0]}
                 sampleCls="bg-new-tint rounded-md"
                 label="New"
                 description={`Softly highlighted. Tap it to reveal the meaning - ${lang.brand.appName} starts tracking it for you.`}
               />
               <GuideArrow hint="you tap it" />
               <GuideRow
-                sample="خانه"
+                sample={lang.samples.words[1]}
                 sampleCls="underline decoration-lapis decoration-2 underline-offset-8 font-medium"
                 label="Learning"
                 labelCls="text-lapis"
@@ -73,7 +73,7 @@ export function ReaderGuideSheet({
               />
               <GuideArrow hint="after reviews" />
               <GuideRow
-                sample="من"
+                sample={lang.samples.words[2]}
                 sampleCls=""
                 label="Known"
                 labelCls="text-sabz"

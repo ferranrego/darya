@@ -55,13 +55,21 @@ describe("language profiles", () => {
     expect(PROFILES.ca.ttsLocale).toBe("ca");
   });
 
-  it("no UI file hardcodes a brand name", async () => {
-    // The Catalan app shipped with "Darya" on its welcome screen because the
-    // name was written inline. Brand text must come from the profile.
+  it("no UI file hardcodes brand, language name or target-language text", async () => {
+    // Three separate leaks reached production, each caught by a user rather
+    // than by a test:
+    //   1. brand      - Riera's welcome screen said "Darya"
+    //   2. language   - "You'll learn Dari by reading it." in the Catalan app
+    //   3. script     - خوش آمدید greeted Catalan learners
+    // All three must come from the profile, so all three are checked here.
     const { readdirSync, readFileSync, statSync } = await import("node:fs");
-    const { join } = await import("node:path");
+    const { join, sep } = await import("node:path");
     const root = join(import.meta.dirname, "..", "..");
-    const brands = Object.values(PROFILES).map((x) => x.brand.appName);
+
+    const brands = Object.values(PROFILES).map((p) => p.brand.appName);
+    const languages = Object.values(PROFILES).map((p) => p.name);
+    // Any script that is not the Latin alphabet the UI itself is written in.
+    const NON_LATIN = /[\u0600-\u06FF\u0750-\u077F\u0400-\u04FF\u4E00-\u9FFF]/;
     const offenders: string[] = [];
 
     const walk = (dir: string) => {
@@ -76,19 +84,32 @@ describe("language profiles", () => {
           .split("\n")
           .forEach((line, i) => {
             const code = line.trim();
-            // Comments may name a brand; rendered text may not.
             if (code.startsWith("*") || code.startsWith("//") || code.startsWith("/*")) return;
-            for (const brand of brands) {
-              if (new RegExp(`\\b${brand}\\b`).test(code)) {
-                offenders.push(`${full.slice(root.length + 1)}:${i + 1} (${brand})`);
-              }
+            const where = `${full.slice(root.length + 1)}:${i + 1}`;
+
+            // Two narrow, justified exemptions:
+            //  - the alphabet route tree exists only to teach a non-Latin
+            //    script and 404s wholesale when capabilities.scriptCourse is
+            //    off, so a glyph there can never reach a Catalan learner;
+            //  - a regex literal is a *matcher*, not rendered text. The cloze
+            //    placeholder pattern includes a tatweel so it can strip one if
+            //    the model emits it; it simply never matches Latin input.
+            const inGatedAlphabetRoute = full.includes(`${sep}alphabet${sep}`);
+            const isRegexLiteral = /=\s*\/|\.match\(\/|\.test\(\/|\.replace\(\//.test(code);
+            if (inGatedAlphabetRoute || isRegexLiteral) return;
+            for (const b of brands) {
+              if (new RegExp(`\\b${b}\\b`).test(code)) offenders.push(`${where} brand "${b}"`);
             }
+            for (const l of languages) {
+              if (new RegExp(`\\b${l}\\b`).test(code)) offenders.push(`${where} language "${l}"`);
+            }
+            if (NON_LATIN.test(code)) offenders.push(`${where} target-language text`);
           });
       }
     };
     walk(join(root, "app"));
     walk(join(root, "components"));
-    expect(offenders, "brand text must come from profile.brand").toEqual([]);
+    expect(offenders, "must come from the language profile").toEqual([]);
   });
 
   it("each profile ships a distinct brand", () => {

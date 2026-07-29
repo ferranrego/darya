@@ -4,6 +4,7 @@ import { Check, Lock } from "lucide-react";
 import Link from "next/link";
 import { alphabetCourse } from "@/lib/content/load";
 import { useAlphabetProgress } from "@/lib/queries/hooks";
+import { profile as lang } from "@/lib/lang";
 
 export default function AlphabetMapPage() {
   const { data: progress } = useAlphabetProgress();
@@ -24,7 +25,7 @@ export default function AlphabetMapPage() {
       <header className="pt-2">
         <h1 className="text-[26px] font-semibold tracking-tight">Alphabet</h1>
         <p className="mt-1 text-[14px] text-ink-soft">
-          {completed.size} of {alphabetCourse.units.length} units · learn to read Dari, letter by letter
+          {completed.size} of {alphabetCourse.units.length} units · learn to read {lang.name}, letter by letter
         </p>
       </header>
 

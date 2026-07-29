@@ -60,6 +60,11 @@ export interface LanguagePrompts {
   culturalSetting: string;
   /** Culturally appropriate settings for generated exercises. */
   scenarios: string[];
+  /**
+   * A worked example of a non-verb taking personal endings, for the
+   * conjugation-analysis prompt. Language-specific by construction.
+   */
+  inflectionExample: string;
 }
 
 /** Product identity. One deployment, one brand. */
@@ -78,6 +83,21 @@ export interface LanguageBrand {
   description: string;
   /** The mascot's name, used in guide copy and notifications. */
   mascotName: string;
+}
+
+/**
+ * Short pieces of the target language the UI renders directly: a greeting on
+ * the onboarding screen, a demo sentence, and words the reader guide uses to
+ * show tap-to-reveal. These were hardcoded Dari, so the Catalan app greeted
+ * users with خوش آمدید.
+ */
+export interface LanguageSamples {
+  /** Greeting on the onboarding welcome step. */
+  greeting: { target: string; translit?: string; en: string };
+  /** A short natural sentence, used as the chat placeholder. */
+  sentence: { target: string; translit?: string; en: string };
+  /** Three everyday words for the reader guide's tap-to-reveal demo. */
+  words: [string, string, string];
 }
 
 export interface LanguageProfile {
@@ -102,4 +122,5 @@ export interface LanguageProfile {
   text: LanguageText;
   prompts: LanguagePrompts;
   brand: LanguageBrand;
+  samples: LanguageSamples;
 }

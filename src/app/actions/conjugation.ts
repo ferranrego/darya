@@ -2,6 +2,7 @@
 
 import { z } from "zod";
 import { completeJson } from "@/lib/ai/providers";
+import { profile } from "@/lib/lang";
 
 const conjugationRowSchema = z.object({
   person: z.string(),
@@ -23,8 +24,8 @@ export async function analyzeConjugation(
   root: string,
   glossEn: string
 ): Promise<ConjugationResponse | { error: string }> {
-  const prompt = `You are an expert Persian (Dari) linguist.
-I will give you an inflected Persian word as it appears in a text, and its dictionary root form. This could be a verb, or it could be a noun/adjective acting as a verb with personal endings (e.g. خوبیم = we are good), or even a plural noun.
+  const prompt = `You are ${profile.prompts.teacher} and an expert linguist.
+I will give you an inflected ${profile.name} word as it appears in a text, and its dictionary root form. This could be a verb, or it could be a noun/adjective acting as a verb with personal endings (e.g. ${profile.prompts.inflectionExample}), or even a plural noun.
 
 Inflected form: "${surface}"
 Dictionary root: "${root}" (meaning: "${glossEn}")

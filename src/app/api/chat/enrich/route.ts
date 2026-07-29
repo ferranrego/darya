@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { enrichChatMessage } from "@/lib/ai/enrich";
-import { DARI_SCRIPT } from "@/lib/chat/shared";
+import { looksLikeTarget } from "@/lib/chat/shared";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
 
 export const maxDuration = 30;
@@ -37,8 +37,8 @@ export async function POST(req: Request) {
   const cached = message[mode];
   if (cached) return NextResponse.json({ value: cached, cached: true });
 
-  if (!DARI_SCRIPT.test(message.body)) {
-    return NextResponse.json({ error: "message is not in Dari script" }, { status: 422 });
+  if (!looksLikeTarget(message.body)) {
+    return NextResponse.json({ error: "message is not in the target language" }, { status: 422 });
   }
 
   try {

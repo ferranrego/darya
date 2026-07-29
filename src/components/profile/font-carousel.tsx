@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { hapticTap } from "@/lib/util/haptics";
 import type { ReadingFont } from "@/lib/settings-store";
+import { profile as lang } from "@/lib/lang";
 
 export interface FontCarouselOption {
   value: ReadingFont;
@@ -66,7 +67,7 @@ export function FontCarousel({
                     lang="prs"
                     dir="rtl"
                   >
-                    دری
+                    {lang.samples.words[0]}
                   </motion.span>
                 </div>
 

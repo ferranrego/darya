@@ -14,6 +14,7 @@ import {
 } from "@/lib/content/load";
 import type { GrammarLevel } from "@/lib/content/schema";
 import { useGrammarProgress, useProfile } from "@/lib/queries/hooks";
+import { profile as lang } from "@/lib/lang";
 
 const LEVEL_TITLE: Record<GrammarLevel, string> = {
   A1: "First sentences",
@@ -90,7 +91,7 @@ export default function GrammarMapPage() {
         <div className="flex items-center gap-4 rounded-2xl border border-line bg-surface p-5">
           <Poncha pose="read" size={92} />
           <p className="text-[15px] leading-relaxed text-ink-soft">
-            Learn how Dari sentences work, one small step at a time. Each lesson teaches one idea,
+            Learn how {lang.name} sentences work, one small step at a time. Each lesson teaches one idea,
             then lets you practise it.
           </p>
         </div>

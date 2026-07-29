@@ -7,6 +7,7 @@ import { Poncha } from "@/components/poncha";
 import { MAX_MESSAGE_LENGTH, startsGroup } from "@/lib/chat/shared";
 import { useUser } from "@/lib/queries/hooks";
 import { useChatMessages, useSendMessage } from "@/lib/queries/use-chat";
+import { profile as lang } from "@/lib/lang";
 
 export default function ChatPage() {
   const { data: user } = useUser();
@@ -68,13 +69,13 @@ export default function ChatPage() {
               dir="rtl"
               className="absolute -right-3 -top-2 rounded-2xl rounded-br-sm border border-line bg-paper px-3 py-1 text-[20px] text-lapis shadow-[0_2px_8px_rgba(31,26,23,0.06)]"
             >
-              سلام
+              {lang.samples.greeting.target}
             </span>
             <Poncha pose="greet" size={150} />
           </div>
           <p className="mt-3 text-[15px] text-ink-soft">
             Nobody has written yet. Say salaam! Nothing here lasts more than 48 hours, so write
-            freely, in Dari script, Latin letters, or English.
+            freely, in {lang.name}, Latin letters, or English.
           </p>
         </div>
       )}

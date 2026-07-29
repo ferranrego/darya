@@ -1,9 +1,21 @@
+import { profile } from "../lang/index.ts";
 /** Bits the chat UI and the enrichment API both need. No server-only imports. */
 
 export type EnrichMode = "translit" | "translation" | "correction";
 
 /** Dari is written in Arabic script; Latin-only messages need no help. */
-export const DARI_SCRIPT = /[؀-ۿ]/;
+/**
+ * Does this text look like the target language rather than English?
+ *
+ * For a non-Latin script that is a cheap codepoint test. For a Latin-script
+ * language the two alphabets overlap completely, so no such test exists - we
+ * assume anything the learner types is an attempt at the target language, which
+ * is the right default for a chat practice room.
+ */
+export function looksLikeTarget(text: string): boolean {
+  if (!profile.capabilities.transliteration) return true;
+  return /[\u0600-\u06FF]/.test(text);
+}
 
 export const MAX_MESSAGE_LENGTH = 500;
 

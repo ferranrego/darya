@@ -47,10 +47,17 @@ export const prs: LanguageProfile = {
     mascotName: "Poncha",
   },
 
+  samples: {
+    greeting: { target: "خوش آمدید", translit: "khush āmadēd", en: "welcome" },
+    sentence: { target: "سلام، چطور هستید؟", translit: "salām, chetōr hastēd?", en: "Hello, how are you?" },
+    words: ["کتاب", "خانه", "من"],
+  },
+
   prompts: {
     teacher: TEACHER,
     orthography: ORTHOGRAPHY,
     culturalSetting: CULTURAL_SETTING,
     scenarios: SCENARIOS,
+    inflectionExample: "خوبیم = we are good",
   },
 };

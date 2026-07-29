@@ -127,7 +127,7 @@ export default function HomePage() {
   const CTAS: Record<ActionKey, HeroCta> = {
     alphabet: {
       href: "/alphabet",
-      label: "Learn to read Dari",
+      label: `Learn to read ${lang.name}`,
       hint: `Alphabet · ${completedUnits} of ${totalUnits} units`,
     },
     review: {
@@ -234,7 +234,7 @@ export default function HomePage() {
                   href="/alphabet"
                   icon={<SpellCheck size={18} />}
                   title="Alphabet"
-                  detail="Learn to read Dari"
+                  detail={`Learn to read ${lang.name}`}
                   badge={<TileBadge>{`${completedUnits}/${totalUnits}`}</TileBadge>}
                   progress={totalUnits > 0 ? completedUnits / totalUnits : 0}
                 />

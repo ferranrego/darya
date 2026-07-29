@@ -105,12 +105,16 @@ export default function OnboardingPage() {
             >
               <Poncha pose="greet" size={180} priority />
             </motion.div>
-            <p lang="prs" className="text-[56px] text-lapis">
-              خوش آمدید
+            <p lang={lang.code} className="text-[56px] text-lapis">
+              {lang.samples.greeting.target}
             </p>
-            <p className="mt-1 text-[14px] text-ink-faint">khush āmadēd · welcome</p>
+            <p className="mt-1 text-[14px] text-ink-faint">
+              {[lang.samples.greeting.translit, lang.samples.greeting.en]
+                .filter(Boolean)
+                .join(" · ")}
+            </p>
             <h1 className="mt-8 text-[24px] font-semibold tracking-tight">
-              You&apos;ll learn Dari by reading it.
+              You&apos;ll learn {lang.name} by reading it.
             </h1>
             <p className="mx-auto mt-3 max-w-sm text-[15px] leading-relaxed text-ink-soft">
               {lang.brand.appName} gives you short texts where you already know almost every word,
@@ -158,16 +162,18 @@ export default function OnboardingPage() {
         {step === "script" && (
           <motion.div key="script" {...stepMotion} className="my-auto text-center">
             <h1 className="text-[22px] font-semibold tracking-tight">
-              Can you read the Dari script?
+              Can you read the {lang.name} script?
             </h1>
             <p className="mx-auto mt-3 max-w-sm text-[15px] leading-relaxed text-ink-soft">
-              Dari is written in the Perso-Arabic script. Can you read this sentence
-              in it, without looking at the Latin spelling below?
+              {lang.name} is written in a script you may not know yet. Can you read
+              this sentence, without looking at the Latin spelling below?
             </p>
-            <p lang="prs" className="mt-8 text-[40px] leading-relaxed">
-              سلام، چطور هستید؟
+            <p lang={lang.code} className="mt-8 text-[40px] leading-relaxed">
+              {lang.samples.sentence.target}
             </p>
-            <p className="mt-2 text-[14px] text-ink-faint">salām, chetōr hastēd?</p>
+            {lang.samples.sentence.translit && (
+              <p className="mt-2 text-[14px] text-ink-faint">{lang.samples.sentence.translit}</p>
+            )}
             <div className="mt-10 flex flex-col items-center gap-3">
               <Button size="lg" onClick={() => startAssessment(true)}>
                 Yes, I can read it
@@ -273,7 +279,7 @@ export default function OnboardingPage() {
             {!canRead && (
               <p className="mx-auto mt-6 max-w-sm text-[15px] leading-relaxed text-ink-soft">
                 {result.estimatedVocab > 0
-                  ? "You already know plenty of Dari. Now let's teach you to read the script, so you can put those words on the page."
+                  ? `You already know plenty of ${lang.name}. Now let's teach you to read the script, so you can put those words on the page.`
                   : "Let's start at the very beginning and teach you to read the script, letter by letter."}
               </p>
             )}

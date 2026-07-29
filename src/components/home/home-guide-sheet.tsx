@@ -44,11 +44,11 @@ export function HomeGuideSheet({
     ? beyondBeginner
       ? {
           title: `You tested at ${level} - impressive!`,
-          body: "But the Dari script comes first: start with the Alphabet course, and everything else opens up once you can read.",
+          body: `But the ${lang.name} script comes first: start with the Alphabet course, and everything else opens up once you can read.`,
         }
       : {
           title: "First stop: the Alphabet course",
-          body: "Learn to read the Dari script and every word in the app opens up.",
+          body: `Learn to read the ${lang.name} script and every word in the app opens up.`,
         }
     : {
         title: `You tested at ${level}`,
@@ -102,14 +102,14 @@ export function HomeGuideSheet({
                 <TourRow
                   icon={SpellCheck}
                   label="Alphabet"
-                  description="Short units that teach you to read the Dari script."
+                  description={`Short units that teach you to read the ${lang.name} script.`}
                   startHere
                 />
               )}
               <TourRow
                 icon={Blocks}
                 label="Grammar"
-                description="Bite-size lessons on how Dari fits together, from your level up."
+                description={`Bite-size lessons on how ${lang.name} fits together, from your level up.`}
                 startHere={!needsAlphabet}
               />
               <TourRow

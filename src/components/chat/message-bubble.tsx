@@ -2,9 +2,10 @@
 
 import { Languages, Loader2, Trash2, SpellCheck } from "lucide-react";
 import { useState } from "react";
-import { DARI_SCRIPT, type EnrichMode } from "@/lib/chat/shared";
+import { looksLikeTarget, type EnrichMode } from "@/lib/chat/shared";
 import type { ChatMessageRow } from "@/lib/db/types";
 import { useEnrichMessage, useDeleteMessage } from "@/lib/queries/use-chat";
+import { profile as lang } from "@/lib/lang";
 
 function timeOf(iso: string): string {
   return new Date(iso).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -30,7 +31,7 @@ export function MessageBubble({
   const enrich = useEnrichMessage();
   const deleteMsg = useDeleteMessage();
 
-  const isDari = DARI_SCRIPT.test(message.body);
+  const isTarget = looksLikeTarget(message.body);
   const pending = enrich.isPending && enrich.variables?.id === message.id;
   const shown = open ? message[open] : null;
 
@@ -41,7 +42,7 @@ export function MessageBubble({
   }
 
   const failed = enrich.isError && enrich.variables?.id === message.id && open && !shown;
-  const showFooter = showTime || isDari;
+  const showFooter = showTime || isTarget;
 
   return (
     <div
@@ -60,10 +61,10 @@ export function MessageBubble({
           }`}
         >
           <p
-            lang={isDari ? "prs" : undefined}
+            lang={isTarget ? "prs" : undefined}
             dir="auto"
             className={`whitespace-pre-wrap text-[16px] leading-relaxed ${
-              isDari ? "text-[19px] break-normal" : "break-words"
+              isTarget ? "text-[19px] break-normal" : "break-words"
             }`}
           >
             {message.body}
@@ -128,7 +129,7 @@ export function MessageBubble({
             <span className="text-[11px] text-ink-faint">{timeOf(message.created_at)}</span>
           )}
 
-          {isDari && (
+          {isTarget && (
             <>
               <button
                 type="button"
@@ -165,7 +166,7 @@ export function MessageBubble({
                 <button
                   type="button"
                   onClick={() => toggle("correction")}
-                  aria-label="Check my Dari"
+                  aria-label={`Check my ${lang.name}`}
                   aria-pressed={open === "correction"}
                   className={`rounded-full p-1 transition-colors ${
                     open === "correction"
