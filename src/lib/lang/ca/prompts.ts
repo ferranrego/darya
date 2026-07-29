@@ -14,7 +14,7 @@ export const ORTHOGRAPHY = [
   "Write standard Central Catalan (the Barcelona standard), NOT Valencian or Balearic forms, and never Spanish.",
   "Spelling must be exact: accents (à è é í ò ó ú), dieresi (ï ü), ce trencada (ç), and ela geminada written with the interpunct (col·legi, paral·lel - never 'colegi' or 'col.legi').",
   "Apostrophise correctly: l'home, l'aigua, d'un, s'ha, n'hi ha. Use the periphrastic past (vaig menjar) rather than the simple past (mengí), which is literary.",
-  "Weak pronouns take their standard written forms: em, et, es, ens, us, el, la, els, les, li, hi, en - with apostrophes and hyphens as required (me'n vaig, dóna-me'l).",
+  "Weak pronouns take their standard written forms: em, et, es, ens, us, el, la, els, les, li, hi, en - with apostrophes and hyphens as required (me'n vaig, dona-me'l).",
 ].join("\n");
 
 /** What generated reader texts should be about. */

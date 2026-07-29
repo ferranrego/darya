@@ -37,7 +37,7 @@
             {
               "id": "gs-13-2",
               "title": "The endings are very regular",
-              "body": "-ar verbs take -ava; -er, -re and -ir verbs take -ia. Only three verbs are truly irregular here.",
+              "body": "-ar verbs take -ava; -er, -re and -ir verbs take -ia. A handful build the imperfect on an older stem and simply have to be learnt: ser, fer, veure, dir and dur.",
               "examples": [
                 {
                   "target": "De petit parlava català.",
@@ -70,8 +70,8 @@
                   "feia, feies, feia"
                 ],
                 [
-                  "veure",
-                  "veia, veies, veia"
+                  "veure / dir",
+                  "veia / deia"
                 ]
               ]
             },
@@ -1629,11 +1629,11 @@
             },
             {
               "id": "gs-19-3",
-              "title": "For something imminent, anar a is common too",
-              "body": "Both are correct; the future tense is the more neutral choice in writing.",
+              "title": "For something about to happen",
+              "body": "Catalan does not use anar a + infinitive for the future the way Spanish uses ir a - that is a calque, and va menjar already means \"he ate\". Use the future tense, or estar a punt de for imminence.",
               "examples": [
                 {
-                  "target": "Ara vaig a menjar.",
+                  "target": "Ara estic a punt de menjar.",
                   "en": "I'm about to eat."
                 },
                 {
@@ -2719,7 +2719,7 @@
               "id": "ge-23-5",
               "type": "fillBlank",
               "target": "Espero que ___ una bona nit.",
-              "en": "I hope you have a good night.",
+              "en": "I hope it's a good night.",
               "answer": {
                 "target": "sigui"
               },
@@ -2738,10 +2738,10 @@
             {
               "id": "ge-23-6",
               "type": "spotError",
-              "target": "Vull que véns demà.",
+              "target": "Vull que vens demà.",
               "en": "I want you to come tomorrow.",
               "errorWord": {
-                "target": "véns"
+                "target": "vens"
               },
               "correction": {
                 "target": "vinguis"
@@ -3099,7 +3099,7 @@
             {
               "id": "gs-25-2",
               "title": "Two pronouns together",
-              "body": "The indirect one comes first. me'l is \"it to me\"; se'n is the one inside anar-se'n, to go away.",
+              "body": "The order is fixed by form, not by meaning: a 1st or 2nd person pronoun comes before a 3rd person one (me'l, te'n), and en and ho come last. With li the two fuse into l'hi.",
               "examples": [
                 {
                   "target": "Me'l dona demà.",

@@ -549,20 +549,21 @@
                   "id": "ge-02-8",
                   "type": "chooseTranslation",
                   "direction": "toTarget",
-                  "target": "L'hora és tard.",
-                  "en": "The hour is late.",
+                  "target": "L'illa és petita.",
+                  "en": "The island is small.",
                   "distractorsTarget": [
                     {
-                      "target": "La hora és tard."
+                      "target": "La illa és petita."
                     },
                     {
-                      "target": "El hora és tard."
+                      "target": "El illa és petita."
                     },
                     {
-                      "target": "Les hora és tard."
+                      "target": "Les illa és petita."
                     }
                   ],
-                  "distractorsEn": []
+                  "distractorsEn": [],
+                  "hint": "A stressed i- does elide, unlike the i- in la idea."
                 }
               ]
             },
@@ -640,7 +641,7 @@
                 {
                   "id": "gs-03-3",
                   "title": "Plurals: -s, -es, -os",
-                  "body": "Most words add -s. Feminines in -a switch to -es. Words ending in -s, -ç, -x or -ig add -os.",
+                  "body": "Most words add -s, and feminines in -a switch to -es. A word ending in a stressed -s, -ç, -x or -ig takes -os instead, doubling a single s (gos -> gossos). A word whose final -s is unstressed does not change at all: el dilluns, els dilluns.",
                   "examples": [
                     {
                       "target": "dos llibres",
@@ -677,8 +678,8 @@
                       "feliços"
                     ],
                     [
-                      "pa",
-                      "pans"
+                      "el dilluns",
+                      "els dilluns"
                     ]
                   ]
                 }
@@ -1416,7 +1417,7 @@
                   "table": [
                     [
                       "venir",
-                      "vinc, véns, ve, venim, veniu, vénen"
+                      "vinc, vens, ve, venim, veniu, venen"
                     ],
                     [
                       "dir",
@@ -2442,15 +2443,19 @@
                 {
                   "id": "gs-10-3",
                   "title": "No a before a person",
-                  "body": "If you know Spanish, drop the personal a. Catalan does not use it.",
+                  "body": "If you know Spanish, drop the personal a before a plain object. Catalan does not use it. Keep it, though, where the verb itself asks for a - trucar a algú is the ordinary way to say it.",
                   "examples": [
                     {
                       "target": "Veig la Maria.",
                       "en": "I see Maria."
                     },
                     {
-                      "target": "Truco el meu germà.",
-                      "en": "I'm calling my brother."
+                      "target": "Conec el teu pare.",
+                      "en": "I know your father."
+                    },
+                    {
+                      "target": "Truco a la meva mare.",
+                      "en": "I'm calling my mother."
                     }
                   ]
                 }
@@ -3165,7 +3170,7 @@
                 {
                   "id": "gs-13-2",
                   "title": "The endings are very regular",
-                  "body": "-ar verbs take -ava; -er, -re and -ir verbs take -ia. Only three verbs are truly irregular here.",
+                  "body": "-ar verbs take -ava; -er, -re and -ir verbs take -ia. A handful build the imperfect on an older stem and simply have to be learnt: ser, fer, veure, dir and dur.",
                   "examples": [
                     {
                       "target": "De petit parlava català.",
@@ -3198,8 +3203,8 @@
                       "feia, feies, feia"
                     ],
                     [
-                      "veure",
-                      "veia, veies, veia"
+                      "veure / dir",
+                      "veia / deia"
                     ]
                   ]
                 },
@@ -4757,11 +4762,11 @@
                 },
                 {
                   "id": "gs-19-3",
-                  "title": "For something imminent, anar a is common too",
-                  "body": "Both are correct; the future tense is the more neutral choice in writing.",
+                  "title": "For something about to happen",
+                  "body": "Catalan does not use anar a + infinitive for the future the way Spanish uses ir a - that is a calque, and va menjar already means \"he ate\". Use the future tense, or estar a punt de for imminence.",
                   "examples": [
                     {
-                      "target": "Ara vaig a menjar.",
+                      "target": "Ara estic a punt de menjar.",
                       "en": "I'm about to eat."
                     },
                     {
@@ -5847,7 +5852,7 @@
                   "id": "ge-23-5",
                   "type": "fillBlank",
                   "target": "Espero que ___ una bona nit.",
-                  "en": "I hope you have a good night.",
+                  "en": "I hope it's a good night.",
                   "answer": {
                     "target": "sigui"
                   },
@@ -5866,10 +5871,10 @@
                 {
                   "id": "ge-23-6",
                   "type": "spotError",
-                  "target": "Vull que véns demà.",
+                  "target": "Vull que vens demà.",
                   "en": "I want you to come tomorrow.",
                   "errorWord": {
-                    "target": "véns"
+                    "target": "vens"
                   },
                   "correction": {
                     "target": "vinguis"
@@ -6227,7 +6232,7 @@
                 {
                   "id": "gs-25-2",
                   "title": "Two pronouns together",
-                  "body": "The indirect one comes first. me'l is \"it to me\"; se'n is the one inside anar-se'n, to go away.",
+                  "body": "The order is fixed by form, not by meaning: a 1st or 2nd person pronoun comes before a 3rd person one (me'l, te'n), and en and ho come last. With li the two fuse into l'hi.",
                   "examples": [
                     {
                       "target": "Me'l dona demà.",

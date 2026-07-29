@@ -16,8 +16,8 @@
       "sentenceLengthHint": "strictly max 7 words per sentence, simple subject-verb-object",
       "grammarAllowed": [
         "present of ser and estar (soc, ets, és, estic, està)",
-        "definite and indefinite articles (el, la, els, les, un, una), always apostrophised before a vowel or h (l'home, l'aigua) - never 'el home'",
-        "regular plurals (-s, -es, -os after s/ç/x) and adjective agreement in gender and number",
+        "definite and indefinite articles (el, la, els, les, un, una). el and la elide to l' before a vowel or h (l'home, l'aigua, l'hora) - never 'el home'. The one exception: la does NOT elide before an unstressed i- or u- (la idea, la universitat, la humitat), though it does before a stressed one (l'illa)",
+        "plurals: -s by default; feminines in -a take -es (casa/cases); a word ending in a STRESSED -s, -ç, -x or -ig takes -os and doubles a single s after the stressed vowel (gos/gossos, peix/peixos, feliç/feliços, mes/mesos). A word ending in an UNSTRESSED -s is invariable (el llapis/els llapis, el dilluns/els dilluns, el temps/els temps) - never 'dillunsos'. Adjectives agree in gender and number",
         "present indicative of first-conjugation -ar verbs (parlo, parles, parla)",
         "simple questions with què, qui, on, com, quan",
         "negation with no"
@@ -45,7 +45,7 @@
         "the periphrastic past (vaig menjar, vas anar) - this, not the simple past, is how Catalan speaks about the past",
         "cardinal numbers, days, months, telling the time",
         "prepositions a, de, en, amb, per, sense, fins",
-        "Catalan has NO personal a: write 'veig la Maria', never 'veig a la Maria'"
+        "Catalan has no Spanish-style personal a with a plain direct object: write 'veig la Maria', never 'veig a la Maria'. But do keep the a where the verb governs it (trucar a algú, telefonar a algú) and before a strong personal pronoun ('et veig a tu')"
       ]
     },
     {

@@ -19,7 +19,7 @@ import { join } from "node:path";
 import { lexiconFileSchema, grammarCoursesFileSchema } from "../src/lib/content/schema.ts";
 import { buildLexiconIndex } from "../src/lib/lang/ca/lexicon-index.ts";
 import { matchKey, tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
-import { apostropheProblems } from "./verify-ca-entries.ts";
+import { apostropheProblems, obsoleteSpellings } from "./verify-ca-entries.ts";
 
 const root = join(import.meta.dirname, "..", "content", "ca");
 const lexicon = lexiconFileSchema.parse(
@@ -93,6 +93,7 @@ for (const course of courses) {
   for (const [text, where] of strings) {
     sentences++;
     for (const p of apostropheProblems(text)) problems.push(`${where}: ${p}`);
+    for (const p of obsoleteSpellings(text)) problems.push(`${where}: ${p}`);
     if (/ñ|ê|â|î|ô|û|ã|õ/i.test(text)) problems.push(`${where}: non-Catalan characters in "${text}"`);
     const names = properNouns(text);
     for (const token of tokenizeCatalan(text)) {

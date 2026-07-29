@@ -546,20 +546,21 @@
               "id": "ge-02-8",
               "type": "chooseTranslation",
               "direction": "toTarget",
-              "target": "L'hora és tard.",
-              "en": "The hour is late.",
+              "target": "L'illa és petita.",
+              "en": "The island is small.",
               "distractorsTarget": [
                 {
-                  "target": "La hora és tard."
+                  "target": "La illa és petita."
                 },
                 {
-                  "target": "El hora és tard."
+                  "target": "El illa és petita."
                 },
                 {
-                  "target": "Les hora és tard."
+                  "target": "Les illa és petita."
                 }
               ],
-              "distractorsEn": []
+              "distractorsEn": [],
+              "hint": "A stressed i- does elide, unlike the i- in la idea."
             }
           ]
         },
@@ -637,7 +638,7 @@
             {
               "id": "gs-03-3",
               "title": "Plurals: -s, -es, -os",
-              "body": "Most words add -s. Feminines in -a switch to -es. Words ending in -s, -ç, -x or -ig add -os.",
+              "body": "Most words add -s, and feminines in -a switch to -es. A word ending in a stressed -s, -ç, -x or -ig takes -os instead, doubling a single s (gos -> gossos). A word whose final -s is unstressed does not change at all: el dilluns, els dilluns.",
               "examples": [
                 {
                   "target": "dos llibres",
@@ -674,8 +675,8 @@
                   "feliços"
                 ],
                 [
-                  "pa",
-                  "pans"
+                  "el dilluns",
+                  "els dilluns"
                 ]
               ]
             }
@@ -1413,7 +1414,7 @@
               "table": [
                 [
                   "venir",
-                  "vinc, véns, ve, venim, veniu, vénen"
+                  "vinc, vens, ve, venim, veniu, venen"
                 ],
                 [
                   "dir",
@@ -2439,15 +2440,19 @@
             {
               "id": "gs-10-3",
               "title": "No a before a person",
-              "body": "If you know Spanish, drop the personal a. Catalan does not use it.",
+              "body": "If you know Spanish, drop the personal a before a plain object. Catalan does not use it. Keep it, though, where the verb itself asks for a - trucar a algú is the ordinary way to say it.",
               "examples": [
                 {
                   "target": "Veig la Maria.",
                   "en": "I see Maria."
                 },
                 {
-                  "target": "Truco el meu germà.",
-                  "en": "I'm calling my brother."
+                  "target": "Conec el teu pare.",
+                  "en": "I know your father."
+                },
+                {
+                  "target": "Truco a la meva mare.",
+                  "en": "I'm calling my mother."
                 }
               ]
             }

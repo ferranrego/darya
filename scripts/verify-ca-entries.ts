@@ -44,6 +44,37 @@ const INFINITIVE_EXCEPTIONS = new Set(["dur"]);
  */
 const DEFECTIVE_VERBS = new Set(["ploure", "caldre", "nevar"]);
 
+/**
+ * Diacritics the 2017 *Ortografia catalana* abolished.
+ *
+ * The reform kept the accent on ~15 minimal pairs (`bé/be`, `és/es`, `sí/si`,
+ * `té/te`, `sòl/sol`, `ús/us`…) and removed it everywhere else. These are the
+ * survivors a model still produces, because most of the Catalan it was trained
+ * on predates the reform. Shipping them teaches a spelling that has been wrong
+ * for nine years - and it appeared in the lexicon entry for `ser` itself.
+ *
+ * `irregulars.ts` deliberately still *resolves* both spellings: a learner
+ * meeting an older book should get an answer when they tap the word. What is
+ * banned is displaying the old form as the model.
+ */
+const OBSOLETE_DIACRITICS: [RegExp, string][] = [
+  [/\bsóc\b/i, "soc"],
+  [/\bdóna\b/i, "dona"],
+  [/\bdóno\b/i, "dono"],
+  [/\bvéns\b/i, "vens"],
+  [/\bvénen\b/i, "venen"],
+];
+
+/** Post-2017 spelling check for any Catalan string the app displays. */
+export function obsoleteSpellings(text: string): string[] {
+  const out: string[] = [];
+  for (const [re, modern] of OBSOLETE_DIACRITICS) {
+    const m = text.match(re);
+    if (m) out.push(`"${m[0]}" is pre-2017 spelling; write "${modern}"`);
+  }
+  return out;
+}
+
 const POS_VALUES = new Set([
   "noun", "verb", "adjective", "adverb", "pronoun", "preposition",
   "conjunction", "particle", "numeral", "interjection", "determiner", "phrase",
@@ -67,6 +98,7 @@ export function verifyEntry(
   // Reject anything that is not written in Catalan orthography. This is the
   // check that catches a model drifting into Spanish (ñ), French (ê) or worse.
   if (!CATALAN_ONLY.test(word)) problems.push(`non-Catalan characters in "${word}"`);
+  problems.push(...obsoleteSpellings(word));
   if (/ñ|ê|â|î|ô|û|ã|õ|ø|ß/i.test(word + c.example)) {
     problems.push("characters from another language");
   }
@@ -129,6 +161,7 @@ export function verifyEntry(
         ? tokens.some((_, i) => headTokens.every((h, j) => tokens[i + j] === h))
         : tokens.some((t) => surfaces.has(t));
     if (!contained) problems.push(`example does not contain "${word}"`);
+    problems.push(...obsoleteSpellings(c.example));
     if (tokens.length > 12) problems.push(`example too long (${tokens.length} tokens)`);
     if (tokens.length < 3) problems.push("example is too short to be a sentence");
     problems.push(...apostropheProblems(c.example));
