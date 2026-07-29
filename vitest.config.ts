@@ -12,8 +12,11 @@ import { defineConfig } from "vitest/config";
 const r = (p: string) => fileURLToPath(new URL(p, import.meta.url));
 
 export default defineConfig({
+  // The live-provider smoke check is opt-in; it costs API quota.
+  test: { exclude: ["**/node_modules/**", "scripts/generate-smoke.test.ts"] },
   resolve: {
     alias: {
+      "server-only": r("./test/server-only-stub.ts"),
       "@content": r("./content/active"),
       "@": r("./src"),
     },
