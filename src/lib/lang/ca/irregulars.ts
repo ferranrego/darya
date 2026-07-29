@@ -226,6 +226,43 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       gerund: ["responent"],
     },
   },
+  vendre: {
+    infinitive: "vendre",
+    conjugation: 2,
+    // -ndre verbs take a velar stem in the 1sg and the whole subjunctive
+    // (venc, vengui), which nothing in the infinitive predicts.
+    overrides: {
+      present: ["venc", "vens", "ven", "venem", "veneu", "venen"],
+      presentSubjunctive: ["vengui", "venguis", "venguem", "vengueu", "venguin"],
+      imperfectSubjunctive: ["vengués", "venguessis", "venguéssim", "venguéssiu", "venguessin"],
+      participle: ["venut", "venuda", "venuts", "venudes"],
+      gerund: ["venent"],
+    },
+  },
+  riure: {
+    infinitive: "riure",
+    conjugation: 2,
+    overrides: {
+      present: ["ric", "rius", "riu", "riem", "rieu", "riuen"],
+      imperfect: ["reia", "reies", "rèiem", "rèieu", "reien"],
+      presentSubjunctive: ["rigui", "riguis", "riguem", "rigueu", "riguin"],
+      imperfectSubjunctive: ["rigués", "riguessis", "riguéssim", "riguéssiu", "riguessin"],
+      participle: ["rigut", "riguda", "riguts", "rigudes"],
+      gerund: ["rient"],
+    },
+  },
+  somriure: {
+    infinitive: "somriure",
+    conjugation: 2,
+    // Prefixed riure: same paradigm throughout.
+    overrides: {
+      present: ["somric", "somrius", "somriu", "somriem", "somrieu", "somriuen"],
+      imperfect: ["somreia", "somreies", "somrèiem", "somrèieu", "somreien"],
+      presentSubjunctive: ["somrigui", "somriguis", "somriguem", "somrigueu", "somriguin"],
+      participle: ["somrigut", "somriguda", "somriguts", "somrigudes"],
+      gerund: ["somrient"],
+    },
+  },
   viure: {
     infinitive: "viure",
     conjugation: 2,

@@ -130,6 +130,21 @@ describe("irregular verbs", () => {
     expect(forms("prendre").has("pres")).toBe(true);
   });
 
+  it("-ndre and -ure verbs take their velar stem", () => {
+    // These are the patterns no rule can derive from the infinitive: the 1sg
+    // and the whole subjunctive are built on a stem that never appears in it.
+    expect(forms("vendre").has("venc")).toBe(true);
+    expect(forms("vendre").has("vengui")).toBe(true);
+    expect(forms("vendre").has("venut")).toBe(true);
+    expect(forms("riure").has("ric")).toBe(true);
+    expect(forms("riure").has("rigui")).toBe(true);
+    expect(forms("somriure").has("somric")).toBe(true);
+    expect(forms("somriure").has("somrient")).toBe(true);
+    // …and the regular paradigm must not survive alongside them.
+    expect(forms("vendre").has("vendo"), "invented regular form").toBe(false);
+    expect(forms("riure").has("riuo"), "invented regular form").toBe(false);
+  });
+
   it("every irregular entry declares a conjugation its infinitive supports", () => {
     for (const [inf, spec] of Object.entries(IRREGULAR_VERBS)) {
       expect(spec.infinitive, `${inf}: infinitive must match its key`).toBe(inf);

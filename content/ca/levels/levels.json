@@ -11,10 +11,10 @@
       "sentenceLengthHint": "strictly max 7 words per sentence, simple subject-verb-object",
       "grammarAllowed": [
         "present of ser and estar (soc, ets, és, estic, està)",
-        "definite and indefinite articles (el, la, els, les, un, una) with correct apostrophation before a vowel (l'home, l'aigua)",
-        "regular plurals (-s, -es) and adjective agreement in gender and number",
+        "definite and indefinite articles (el, la, els, les, un, una), always apostrophised before a vowel or h (l'home, l'aigua) - never 'el home'",
+        "regular plurals (-s, -es, -os after s/ç/x) and adjective agreement in gender and number",
         "present indicative of first-conjugation -ar verbs (parlo, parles, parla)",
-        "simple questions with què, qui, on, com",
+        "simple questions with què, qui, on, com, quan",
         "negation with no"
       ]
     },
@@ -23,18 +23,56 @@
       "name": "Daily life",
       "cefrHint": "A1",
       "freqBands": [1, 2],
-      "entryKnownWords": 100,
+      "entryKnownWords": 90,
       "sentenceRange": [2, 4],
-      "sentenceLengthHint": "strictly max 8 words per sentence",
+      "sentenceLengthHint": "strictly max 9 words per sentence",
       "grammarAllowed": [
         "present indicative of all three conjugations, including the incoative -eix- type (serveixo, prefereixes)",
-        "tenir, haver, anar, fer, poder, voler in the present",
+        "the irregular presents a beginner needs: tenir (tinc), fer (faig), anar (vaig), poder (puc), voler (vull), venir (vinc), dir (dic), saber (sé), veure (veig)",
         "possessives (el meu, la teva, els seus)",
-        "hi ha for existence",
-        "the periphrastic past (vaig menjar, vas anar) - the normal way to speak about the past in Catalan",
-        "cardinal numbers one to ten, days, telling the time",
-        "common prepositions a, de, en, amb, per and the contractions al, del",
-        "the personal a is NOT used in Catalan - never write 'veig a la Maria'"
+        "hi ha for existence, and the contractions al, del, pel",
+        "the periphrastic past (vaig menjar, vas anar) - this, not the simple past, is how Catalan speaks about the past",
+        "cardinal numbers, days, months, telling the time",
+        "prepositions a, de, en, amb, per, sense, fins",
+        "Catalan has NO personal a: write 'veig la Maria', never 'veig a la Maria'"
+      ]
+    },
+    {
+      "id": "L3",
+      "name": "Short stories",
+      "cefrHint": "A2",
+      "freqBands": [1, 2, 3],
+      "entryKnownWords": 450,
+      "sentenceRange": [3, 5],
+      "sentenceLengthHint": "max 12 words per sentence; at most one subordinate clause",
+      "grammarAllowed": [
+        "imperfect indicative (parlava, tenia, era, feia) for description and habit, contrasted with the periphrastic past for completed events",
+        "the perfect with haver (he menjat, hem arribat) for events within today",
+        "singular weak pronouns em, et, es, el, la, li, and reflexive verbs (llevar-se, dir-se, rentar-se)",
+        "the pronouns hi and en, including en for partitives (en vull dos)",
+        "future indicative (parlaré, tindré, faré)",
+        "comparatives and superlatives (més ... que, menys ... que, tan ... com, el més)",
+        "connectors però, perquè, quan, mentre, també, tampoc",
+        "verbs with a velar stem must use it: tinc/tingui, vinc/vingui, venc/vengui, ric/rigui"
+      ]
+    },
+    {
+      "id": "L4",
+      "name": "Everyday texts",
+      "cefrHint": "A2+",
+      "freqBands": [1, 2, 3, 4],
+      "entryKnownWords": 640,
+      "sentenceRange": [4, 6],
+      "sentenceLengthHint": "max 14 words per sentence; subordinate clauses allowed",
+      "grammarAllowed": [
+        "conditional (parlaria, voldria, m'agradaria) for politeness and hypothesis",
+        "present subjunctive after voler que, esperar que, caldre que, and after quan with future reference",
+        "plural weak pronouns ens, us, els, les, and combined pronouns (me'l, l'hi, se'n) with correct apostrophes and hyphens",
+        "relative clauses with que, qui, on",
+        "the gerund for simultaneity (tot caminant) - never for consecutive actions",
+        "impersonal es (es parla català, es ven pa)",
+        "verbal periphrases haver de, poder, voler, tornar a, acabar de",
+        "ela geminada is written with the interpunct: col·legi, intel·ligent - never 'colegi' or 'col.legi'"
       ]
     }
   ]
