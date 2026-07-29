@@ -7,7 +7,7 @@ import { PriorWordsSheet } from "@/components/reader/prior-words-sheet";
 import { TextReader } from "@/components/reader/text-reader";
 import { Button } from "@/components/ui/button";
 import { levels, lexicon } from "@/lib/content/load";
-import { selectUnread } from "@/lib/content/text-pool";
+import { placementCredit, selectUnread } from "@/lib/content/text-pool";
 import { updateProfile } from "@/lib/db/profiles";
 import { seedKnownWords } from "@/lib/db/words";
 import {
@@ -32,17 +32,27 @@ export default function ReadPage() {
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
 
-  // Words from levels below the assessed level that the learner isn't
-  // tracking yet - offered as a one-time bulk "mark as known" before the
-  // second text (see PriorWordsSheet).
+  /**
+   * The words the placement credits this learner with but which have no row
+   * yet - offered as a one-time bulk "mark as known" (see PriorWordsSheet), and
+   * counted as known when judging whether a text is too hard.
+   *
+   * The threshold is the learner's *own* level's `entryKnownWords`, which is
+   * exactly what that field means: how many words you need in order to be at
+   * this level. Reading it off the level below instead credited an L2 learner
+   * with L1's entry figure - zero - so the placement gave them nothing, every
+   * generated text scored an unknown-word rate of 1.00, and the reader sat on
+   * "Writing your next text…" for ever. It only looked fixed at L3, where the
+   * under-credit of 110 instead of 500 still happened to clear the bar.
+   */
   const priorWordIds = useMemo(() => {
-    const levelIdx = levels.findIndex((l) => l.id === profile?.level_estimate);
-    if (levelIdx < 1 || !userWords) return [];
-    const maxRank = levels[levelIdx - 1].entryKnownWords;
-    const tracked = new Set(userWords.map((w) => w.lexeme_id));
-    return lexicon.entries
-      .filter((e) => e.freqRank <= maxRank && !tracked.has(e.id))
-      .map((e) => e.id);
+    const level = levels.find((l) => l.id === profile?.level_estimate);
+    if (!level || !userWords) return [];
+    return placementCredit(
+      level.entryKnownWords,
+      lexicon.entries,
+      userWords.map((w) => w.lexeme_id),
+    );
   }, [profile?.level_estimate, userWords]);
 
   const [priorDismissed, setPriorDismissed] = useState(false);

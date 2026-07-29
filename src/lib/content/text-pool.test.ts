@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { selectUnread, type PoolText } from "./text-pool.ts";
+import { placementCredit, selectUnread, type PoolText } from "./text-pool.ts";
 
 /** A generated text using the given lexeme ids. */
 function generated(id: string, vocabUsed: string[]): PoolText {
@@ -102,5 +102,56 @@ describe("which texts a learner is offered", () => {
       activeTextId: "t1",
     });
     expect(out.map((t) => t.id)).toEqual(["t1"]);
+  });
+});
+
+describe("the placement credit, against the shipped levels", () => {
+  /**
+   * Twice now the reader has stranded a learner on "Writing your next text…"
+   * because the vocabulary it measured a text against was smaller than the one
+   * the generator wrote with. The first time the threshold was a magic number;
+   * the second it was read off the wrong level, which gave an L2 learner
+   * L1's entry figure of zero and rejected every text at a rate of 1.00.
+   *
+   * So this asserts the property that actually matters, against the real
+   * levels file: at every level a learner can reach, the placement credits
+   * them with something.
+   */
+  it("gives every level above the first a non-empty credit", async () => {
+    const { readFileSync } = await import("node:fs");
+    const { join } = await import("node:path");
+    const root = join(import.meta.dirname, "..", "..", "..", "content");
+
+    for (const lang of ["ca", "prs"]) {
+      const levels = JSON.parse(
+        readFileSync(join(root, lang, "levels", "levels.json"), "utf8"),
+      ).levels as { id: string; entryKnownWords: number }[];
+      const lexemes = JSON.parse(
+        readFileSync(join(root, lang, "lexicon", "lexicon.json"), "utf8"),
+      ).entries as { id: string; freqRank: number }[];
+
+      for (const level of levels.slice(1)) {
+        const credit = placementCredit(level.entryKnownWords, lexemes, []);
+        expect(
+          credit.length,
+          `${lang} ${level.id}: entryKnownWords=${level.entryKnownWords} credits nothing`,
+        ).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  it("credits nothing at the first level, which lives on seed texts", async () => {
+    // L1 entry is 0 by definition: a beginner is credited with no vocabulary,
+    // and the hand-checked seed texts are what carry them, since those bypass
+    // the difficulty rule entirely.
+    expect(placementCredit(0, [{ id: "lx-0001", freqRank: 1 }], [])).toEqual([]);
+  });
+
+  it("does not re-offer a word the learner already tracks", () => {
+    const lexemes = [
+      { id: "lx-0001", freqRank: 1 },
+      { id: "lx-0002", freqRank: 2 },
+    ];
+    expect(placementCredit(10, lexemes, ["lx-0001"])).toEqual(["lx-0002"]);
   });
 });

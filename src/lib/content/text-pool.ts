@@ -10,6 +10,26 @@
  * test rather than discovered in production.
  */
 
+/**
+ * The lexemes a placement credits a learner with, minus the ones they already
+ * track.
+ *
+ * `entryKnownWords` is the number of words needed to *be* at a level, so the
+ * learner's own level is the right threshold. Reading it off the level below
+ * credited an L2 learner with L1's figure - zero - which left the reader with
+ * nothing it would show and no way out of "Writing your next text…".
+ */
+export function placementCredit(
+  entryKnownWords: number,
+  lexemes: readonly { id: string; freqRank: number }[],
+  trackedIds: readonly string[],
+): string[] {
+  const tracked = new Set(trackedIds);
+  return lexemes
+    .filter((e) => e.freqRank <= entryKnownWords && !tracked.has(e.id))
+    .map((e) => e.id);
+}
+
 export interface PoolText {
   id: string;
   source: string;
