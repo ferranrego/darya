@@ -82,10 +82,12 @@ export function ReaderGuideSheet({
             </div>
 
             <div className="mt-6 flex flex-col gap-2 rounded-2xl bg-paper p-4 text-[13px] text-ink-soft">
-              <div className="flex items-center gap-2.5">
-                <span className="shrink-0 text-[12px] font-medium text-ink-faint">abc</span>
-                <span>Show pronunciation under each sentence</span>
-              </div>
+              {lang.capabilities.transliteration ? (
+                <div className="flex items-center gap-2.5">
+                  <span className="shrink-0 text-[12px] font-medium text-ink-faint">abc</span>
+                  <span>Show pronunciation under each sentence</span>
+                </div>
+              ) : null}
               <div className="flex items-center gap-2.5">
                 <Languages size={15} className="shrink-0 text-ink-faint" />
                 <span>Show the English translation of a sentence</span>

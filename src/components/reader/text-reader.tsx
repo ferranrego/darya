@@ -331,19 +331,21 @@ export function TextReader({
             >
               <Highlighter size={18} />
             </button>
-            <button
-              type="button"
-              onClick={() => {
-                hapticTap();
-                setShowTranslit((v) => !v);
-              }}
-              aria-pressed={showTranslit}
-              className={`flex h-10 w-10 items-center justify-center rounded-full text-[13px] font-semibold transition-colors ${
-                showTranslit ? "bg-lapis-soft text-lapis" : "text-ink-soft hover:bg-surface hover:text-ink"
-              }`}
-            >
-              abc
-            </button>
+            {langProfile.capabilities.transliteration ? (
+              <button
+                type="button"
+                onClick={() => {
+                  hapticTap();
+                  setShowTranslit((v) => !v);
+                }}
+                aria-pressed={showTranslit}
+                className={`flex h-10 w-10 items-center justify-center rounded-full text-[13px] font-semibold transition-colors ${
+                  showTranslit ? "bg-lapis-soft text-lapis" : "text-ink-soft hover:bg-surface hover:text-ink"
+                }`}
+              >
+                abc
+              </button>
+            ) : null}
             <button
               type="button"
               onClick={() => {

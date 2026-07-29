@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { Languages, Sparkles } from "lucide-react";
+import { profile } from "@/lib/lang";
 import { hapticTap } from "@/lib/util/haptics";
 
 interface SentenceToolbarProps {
@@ -25,22 +26,26 @@ export function SentenceToolbar({
       animate={{ opacity: 1, y: 0 }}
       className="mt-2 inline-flex items-center gap-0.5"
     >
-      <button
-        type="button"
-        onClick={() => {
-          hapticTap();
-          onToggleTranslit();
-        }}
-        aria-pressed={showTranslit}
-        aria-label="Toggle transliteration"
-        className={`flex h-7 w-9 items-center justify-center rounded-full text-[11px] font-semibold transition-colors ${
-          showTranslit
-            ? "bg-lapis-soft text-lapis"
-            : "text-ink-faint hover:bg-surface hover:text-lapis"
-        }`}
-      >
-        abc
-      </button>
+      {/* A Latin-script language has nothing to transliterate, so the toggle
+          would switch on an empty line. */}
+      {profile.capabilities.transliteration ? (
+        <button
+          type="button"
+          onClick={() => {
+            hapticTap();
+            onToggleTranslit();
+          }}
+          aria-pressed={showTranslit}
+          aria-label="Toggle transliteration"
+          className={`flex h-7 w-9 items-center justify-center rounded-full text-[11px] font-semibold transition-colors ${
+            showTranslit
+              ? "bg-lapis-soft text-lapis"
+              : "text-ink-faint hover:bg-surface hover:text-lapis"
+          }`}
+        >
+          abc
+        </button>
+      ) : null}
       <button
         type="button"
         onClick={() => {
