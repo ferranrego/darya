@@ -1,0 +1,113 @@
+{
+  "id": "tx-seed-l1-002",
+  "formatVersion": "1.4.0",
+  "level": "L1",
+  "titleTarget": "El matí",
+  "titleEn": "The morning",
+  "sentences": [
+    {
+      "target": "El matí bec cafè.",
+      "en": "In the morning I drink coffee.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "matí",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "bec",
+          "lexemeId": "lx-0076"
+        },
+        {
+          "surface": "cafè",
+          "lexemeId": "lx-0199"
+        }
+      ]
+    },
+    {
+      "target": "Menjo pa amb llet.",
+      "en": "I eat bread with milk.",
+      "tokens": [
+        {
+          "surface": "Menjo",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "pa",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "llet",
+          "lexemeId": "lx-0198"
+        }
+      ]
+    },
+    {
+      "target": "Després vaig a la feina.",
+      "en": "Afterwards I go to work.",
+      "tokens": [
+        {
+          "surface": "Després",
+          "lexemeId": "lx-0163"
+        },
+        {
+          "surface": "vaig",
+          "lexemeId": "lx-0029"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0054"
+        }
+      ]
+    },
+    {
+      "target": "Treballo molt.",
+      "en": "I work a lot.",
+      "tokens": [
+        {
+          "surface": "Treballo",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0023"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0005",
+    "lx-0012",
+    "lx-0023",
+    "lx-0029",
+    "lx-0054",
+    "lx-0059",
+    "lx-0075",
+    "lx-0076",
+    "lx-0079",
+    "lx-0163",
+    "lx-0197",
+    "lx-0198",
+    "lx-0199"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

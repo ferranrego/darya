@@ -1,0 +1,125 @@
+{
+  "id": "tx-seed-l1-003",
+  "formatVersion": "1.4.0",
+  "level": "L1",
+  "titleTarget": "El meu amic",
+  "titleEn": "My friend",
+  "sentences": [
+    {
+      "target": "El meu amic viu a la ciutat.",
+      "en": "My friend lives in the city.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0155"
+        },
+        {
+          "surface": "amic",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "viu",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0067"
+        }
+      ]
+    },
+    {
+      "target": "Anem a la platja.",
+      "en": "We go to the beach.",
+      "tokens": [
+        {
+          "surface": "Anem",
+          "lexemeId": "lx-0029"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "platja",
+          "lexemeId": "lx-0229"
+        }
+      ]
+    },
+    {
+      "target": "El sol és molt bo.",
+      "en": "The sun is very good.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "sol",
+          "lexemeId": "lx-0233"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "bo",
+          "lexemeId": "lx-0121"
+        }
+      ]
+    },
+    {
+      "target": "Estem contents.",
+      "en": "We are happy.",
+      "tokens": [
+        {
+          "surface": "Estem",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "contents",
+          "lexemeId": "lx-0136"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0005",
+    "lx-0009",
+    "lx-0023",
+    "lx-0029",
+    "lx-0035",
+    "lx-0062",
+    "lx-0067",
+    "lx-0078",
+    "lx-0121",
+    "lx-0136",
+    "lx-0155",
+    "lx-0229",
+    "lx-0233"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

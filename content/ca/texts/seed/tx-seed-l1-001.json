@@ -1,0 +1,127 @@
+{
+  "id": "tx-seed-l1-001",
+  "formatVersion": "1.4.0",
+  "level": "L1",
+  "titleTarget": "La casa",
+  "titleEn": "The house",
+  "sentences": [
+    {
+      "target": "La casa és gran.",
+      "en": "The house is big.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0123"
+        }
+      ]
+    },
+    {
+      "target": "El pare i la mare són a casa.",
+      "en": "Father and mother are at home.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "són",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0043"
+        }
+      ]
+    },
+    {
+      "target": "El nen dorm.",
+      "en": "The child is sleeping.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "dorm",
+          "lexemeId": "lx-0104"
+        }
+      ]
+    },
+    {
+      "target": "El gos és petit.",
+      "en": "The dog is small.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "gos",
+          "lexemeId": "lx-0238"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "petit",
+          "lexemeId": "lx-0124"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0005",
+    "lx-0009",
+    "lx-0043",
+    "lx-0052",
+    "lx-0063",
+    "lx-0064",
+    "lx-0104",
+    "lx-0123",
+    "lx-0124",
+    "lx-0238"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

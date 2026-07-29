@@ -13,10 +13,18 @@ import {
   textDocumentSchema,
   type TextDocument,
 } from "../src/lib/content/schema.ts";
-import { buildIndex } from "../src/lib/text/index.ts";
-import { tokenize } from "../src/lib/text/index.ts";
-import { seedTexts } from "./data/seed-texts.ts";
-import { contentRoot } from "./content-path.ts";
+import { PROFILES } from "../src/lib/lang/index.ts";
+import { contentRoot, targetLang } from "./content-path.ts";
+
+const lang = targetLang();
+const langProfile = PROFILES[lang as keyof typeof PROFILES];
+if (!langProfile) throw new Error(`No language profile for "${lang}"`);
+// The selected language's engine, not the environment's - see validate-content.
+const { buildIndex, tokenize } = langProfile.text;
+
+const { seedTexts } = (await import(`./data/seed-texts-${lang}.ts`)) as {
+  seedTexts: import("./data/seed-texts-prs.ts").SeedTextSource[];
+};
 
 const lexicon = lexiconFileSchema.parse(
   JSON.parse(readFileSync(join(contentRoot(), "lexicon", "lexicon.json"), "utf8")),

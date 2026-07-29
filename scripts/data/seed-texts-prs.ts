@@ -8,9 +8,9 @@ export interface SeedTextSource {
   slug: string;
   level: string;
   titleTarget: string;
-  titleTranslit: string;
+  titleTranslit?: string;
   titleEn: string;
-  sentences: Array<{ target: string; translit: string; en: string }>;
+  sentences: Array<{ target: string; translit?: string; en: string }>;
 }
 
 export const seedTexts: SeedTextSource[] = [

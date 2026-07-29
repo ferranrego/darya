@@ -23,8 +23,8 @@
       "name": "Daily life",
       "cefrHint": "A1",
       "freqBands": [1, 2],
-      "entryKnownWords": 500,
-      "sentenceRange": [2, 3],
+      "entryKnownWords": 100,
+      "sentenceRange": [2, 4],
       "sentenceLengthHint": "strictly max 8 words per sentence",
       "grammarAllowed": [
         "present indicative of all three conjugations, including the incoative -eix- type (serveixo, prefereixes)",
@@ -32,79 +32,9 @@
         "possessives (el meu, la teva, els seus)",
         "hi ha for existence",
         "the periphrastic past (vaig menjar, vas anar) - the normal way to speak about the past in Catalan",
-        "cardinal numbers, days, telling the time",
-        "common prepositions a, de, en, amb, per, per a and the contractions al, del, pel"
-      ]
-    },
-    {
-      "id": "L3",
-      "name": "Short stories",
-      "cefrHint": "A2",
-      "freqBands": [1, 2, 3],
-      "entryKnownWords": 1200,
-      "sentenceRange": [3, 4],
-      "sentenceLengthHint": "max 10 words per sentence; at most one subordinate clause",
-      "grammarAllowed": [
-        "imperfect indicative (parlava, tenia, era) for description and habit, contrasted with the periphrastic past for completed events",
-        "the perfect with haver (he menjat, hem arribat) for today's events",
-        "singular weak pronouns em, et, es, el, la, li and reflexive verbs (llevar-se, dir-se)",
-        "future indicative (parlaré, tindré)",
-        "comparatives and superlatives (més ... que, tan ... com, el més)",
-        "connectors però, perquè, quan, mentre",
+        "cardinal numbers one to ten, days, telling the time",
+        "common prepositions a, de, en, amb, per and the contractions al, del",
         "the personal a is NOT used in Catalan - never write 'veig a la Maria'"
-      ]
-    },
-    {
-      "id": "L4",
-      "name": "Real texts",
-      "cefrHint": "B1",
-      "freqBands": [1, 2, 3, 4],
-      "entryKnownWords": 2200,
-      "sentenceRange": [4, 5],
-      "sentenceLengthHint": "max 14 words per sentence; subordinate clauses allowed",
-      "grammarAllowed": [
-        "present subjunctive after voler que, esperar que, caldre que, quan + future reference",
-        "conditional (parlaria, voldria, m'agradaria) for politeness and hypothesis",
-        "plural and adverbial weak pronouns ens, us, els, hi, en - including en for partitives (en vull dos)",
-        "combined weak pronouns (me'l, l'hi, se'n) with correct apostrophes and hyphens",
-        "relative clauses with que, qui, on, el qual",
-        "the gerund for simultaneity (tot caminant) - never for consecutive actions",
-        "impersonal es (es parla català)"
-      ]
-    },
-    {
-      "id": "L5",
-      "name": "Fluent reading",
-      "cefrHint": "B2",
-      "freqBands": [1, 2, 3, 4, 5, 6],
-      "entryKnownWords": 3500,
-      "sentenceRange": [5, 7],
-      "sentenceLengthHint": "max 18 words per sentence; multiple clauses allowed",
-      "grammarAllowed": [
-        "imperfect subjunctive (parlés, tingués) and conditional sentences (si tingués temps, aniria)",
-        "pluperfect (havia arribat) and future perfect (haurà acabat)",
-        "passive with ser and the more idiomatic impersonal/pronominal alternatives",
-        "verbal periphrases (haver de, deure, estar a punt de, tornar a, acabar de)",
-        "discourse connectors (tanmateix, per tant, tot i que, malgrat que, en canvi)",
-        "nominalisation and more abstract vocabulary",
-        "register: distinguishing tu, vostè and vosaltres consistently"
-      ]
-    },
-    {
-      "id": "L6",
-      "name": "Native texts",
-      "cefrHint": "C1",
-      "freqBands": [1, 2, 3, 4, 5, 6, 7, 8],
-      "entryKnownWords": 5000,
-      "sentenceRange": [6, 8],
-      "sentenceLengthHint": "natural length; complex subordination allowed",
-      "grammarAllowed": [
-        "the full subjunctive system, including concessive and final clauses",
-        "the simple past (parlà, digué) as a literary register, alongside the everyday periphrastic past",
-        "fronting and other marked word orders for emphasis",
-        "idioms, phrasal expressions and figurative usage",
-        "formal and journalistic register, including impersonal constructions",
-        "regional awareness: Central Catalan is the standard here, but a reader may meet Valencian or Balearic forms"
       ]
     }
   ]
