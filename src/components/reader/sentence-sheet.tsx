@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { explainSentence } from "@/app/actions/explain";
 import type { SentenceExplanation } from "@/lib/ai/explain";
 import { Skeleton } from "@/components/ui/skeleton";
+import { profile as langProfile } from "@/lib/lang";
 
 export function SentenceSheet({
   sentence,
@@ -88,7 +89,7 @@ export function SentenceSheet({
               </div>
             </div>
 
-            <p lang="prs" className="mb-6 leading-snug [text-wrap:balance]" style={{ 
+            <p lang={langProfile.code} className="mb-6 leading-snug [text-wrap:balance]" style={{ 
               fontSize: `clamp(20px, calc((100vw - 48px) / ${Math.max(1, sentence.length * 0.45)}), 28px)` 
             }}>
               {sentence}
@@ -124,7 +125,7 @@ export function SentenceSheet({
                           )}
                         </div>
                         <div className="flex flex-col items-end text-right">
-                          <span lang="prs" className="text-[20px] leading-tight">{word.target}</span>
+                          <span lang={langProfile.code} className="text-[20px] leading-tight">{word.target}</span>
                           <span className="text-[12px] text-ink-soft">{word.translit}</span>
                         </div>
                       </div>

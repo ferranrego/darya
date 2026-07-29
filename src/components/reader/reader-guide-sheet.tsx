@@ -124,7 +124,7 @@ function GuideRow({
   return (
     <div className="flex items-center gap-4">
       <div className="flex w-[76px] shrink-0 items-center justify-center rounded-xl border border-line bg-surface py-2.5">
-        <span lang="prs" className={`px-1 text-[22px] leading-normal ${sampleCls}`}>
+        <span lang={lang.code} className={`px-1 text-[22px] leading-normal ${sampleCls}`}>
           {sample}
         </span>
       </div>

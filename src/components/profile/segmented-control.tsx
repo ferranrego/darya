@@ -74,8 +74,8 @@ export function SegmentedControl<T extends string | number>({
                   className={`mt-1 text-[24px] transition-colors duration-200 ${
                     isActive ? "text-lapis" : "text-ink-soft"
                   } font-${String(option.value)}`}
-                  lang="prs"
-                  dir="rtl"
+                  lang={lang.code}
+                  dir={lang.dir}
                 >
                   {lang.name}
                 </span>

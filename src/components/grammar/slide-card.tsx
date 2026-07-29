@@ -1,4 +1,5 @@
 import type { GrammarExample, GrammarSlide } from "@/lib/content/schema";
+import { profile as langProfile } from "@/lib/lang";
 
 /** Dari example with the taught pattern highlighted in lapis. */
 function ExampleLine({ example }: { example: GrammarExample }) {
@@ -16,7 +17,7 @@ function ExampleLine({ example }: { example: GrammarExample }) {
   }
   return (
     <div className="rounded-2xl border border-line bg-surface px-5 py-4">
-      <p lang="prs" dir="rtl" className="text-[28px] leading-[1.8]">
+      <p lang={langProfile.code} dir={langProfile.dir} className="text-[28px] leading-[1.8]">
         {parts}
       </p>
       <p className="mt-1.5 text-[15px] text-ink-soft">{example.translit}</p>

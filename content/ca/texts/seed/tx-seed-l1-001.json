@@ -11,19 +11,19 @@
       "tokens": [
         {
           "surface": "La",
-          "lexemeId": "lx-0003"
+          "lexemeId": "lx-0032"
         },
         {
           "surface": "casa",
-          "lexemeId": "lx-0043"
+          "lexemeId": "lx-0069"
         },
         {
           "surface": "és",
-          "lexemeId": "lx-0009"
+          "lexemeId": "lx-0038"
         },
         {
           "surface": "gran",
-          "lexemeId": "lx-0123"
+          "lexemeId": "lx-0216"
         }
       ]
     },
@@ -33,35 +33,35 @@
       "tokens": [
         {
           "surface": "El",
-          "lexemeId": "lx-0002"
+          "lexemeId": "lx-0031"
         },
         {
           "surface": "pare",
-          "lexemeId": "lx-0063"
+          "lexemeId": "lx-0089"
         },
         {
           "surface": "i",
-          "lexemeId": "lx-0004"
+          "lexemeId": "lx-0033"
         },
         {
           "surface": "la",
-          "lexemeId": "lx-0003"
+          "lexemeId": "lx-0032"
         },
         {
           "surface": "mare",
-          "lexemeId": "lx-0064"
+          "lexemeId": "lx-0090"
         },
         {
           "surface": "són",
-          "lexemeId": "lx-0009"
+          "lexemeId": "lx-0038"
         },
         {
           "surface": "a",
-          "lexemeId": "lx-0005"
+          "lexemeId": "lx-0034"
         },
         {
           "surface": "casa",
-          "lexemeId": "lx-0043"
+          "lexemeId": "lx-0069"
         }
       ]
     },
@@ -71,15 +71,15 @@
       "tokens": [
         {
           "surface": "El",
-          "lexemeId": "lx-0002"
+          "lexemeId": "lx-0031"
         },
         {
           "surface": "nen",
-          "lexemeId": "lx-0052"
+          "lexemeId": "lx-0078"
         },
         {
           "surface": "dorm",
-          "lexemeId": "lx-0104"
+          "lexemeId": "lx-0198"
         }
       ]
     },
@@ -89,37 +89,37 @@
       "tokens": [
         {
           "surface": "El",
-          "lexemeId": "lx-0002"
+          "lexemeId": "lx-0031"
         },
         {
           "surface": "gos",
-          "lexemeId": "lx-0238"
+          "lexemeId": "lx-0329"
         },
         {
           "surface": "és",
-          "lexemeId": "lx-0009"
+          "lexemeId": "lx-0038"
         },
         {
           "surface": "petit",
-          "lexemeId": "lx-0124"
+          "lexemeId": "lx-0217"
         }
       ]
     }
   ],
   "vocabUsed": [
-    "lx-0002",
-    "lx-0003",
-    "lx-0004",
-    "lx-0005",
-    "lx-0009",
-    "lx-0043",
-    "lx-0052",
-    "lx-0063",
-    "lx-0064",
-    "lx-0104",
-    "lx-0123",
-    "lx-0124",
-    "lx-0238"
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0038",
+    "lx-0069",
+    "lx-0078",
+    "lx-0089",
+    "lx-0090",
+    "lx-0198",
+    "lx-0216",
+    "lx-0217",
+    "lx-0329"
   ],
   "newWordRatio": 0,
   "source": "seed",

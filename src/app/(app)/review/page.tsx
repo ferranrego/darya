@@ -25,6 +25,7 @@ import { PracticeSession } from "@/components/exercises/practice-session";
 import { useQuery } from "@tanstack/react-query";
 import { getContextSentences } from "@/app/actions/context-sentences";
 import { hapticFeedback } from "@/lib/util/haptics";
+import { profile as langProfile } from "@/lib/lang";
 
 const SESSION_CAP = 40;
 
@@ -322,7 +323,7 @@ export default function ReviewPage() {
 
             <div className="relative z-10">
               {showContext ? (
-                <p lang="prs" className="text-[28px] leading-[2.1] cursor-default select-none">
+                <p lang={langProfile.code} className="text-[28px] leading-[2.1] cursor-default select-none">
                   {contextSegments!.map((seg, i) =>
                     seg.hit ? (
                       <span key={i} className="text-lapis font-semibold">{seg.text}</span>
@@ -332,7 +333,7 @@ export default function ReviewPage() {
                   )}
                 </p>
               ) : (
-                <p lang="prs" className="text-[52px] leading-snug cursor-default select-none">
+                <p lang={langProfile.code} className="text-[52px] leading-snug cursor-default select-none">
                   {entry.target}
                 </p>
               )}
@@ -355,7 +356,7 @@ export default function ReviewPage() {
                   {/* If we showed context, still show the dictionary definition to clarify the exact word */}
                   {showContext && (
                     <div className="mt-6 flex flex-col items-center rounded-2xl bg-lapis-soft/30 px-6 py-3 border border-lapis/20">
-                      <span lang="prs" className="text-[40px] font-bold text-lapis-dark mb-1">{entry.target}</span>
+                      <span lang={langProfile.code} className="text-[40px] font-bold text-lapis-dark mb-1">{entry.target}</span>
                       <div className="flex items-center gap-2 text-[16px] text-lapis-dark/80">
                         <span>{entry.translit}</span>
                         <span className="opacity-40">•</span>
@@ -366,7 +367,7 @@ export default function ReviewPage() {
 
                   {!showContext && (
                     <div className="mt-6 rounded-2xl bg-paper px-4 py-3">
-                      <p lang="prs" className="text-[18px] leading-loose">
+                      <p lang={langProfile.code} className="text-[18px] leading-loose">
                         {entry.exampleTarget}
                       </p>
                       <p className="mt-0.5 text-[12px] text-ink-faint">{entry.exampleEn}</p>
@@ -483,7 +484,7 @@ function SessionDone({
             {graduatedIds.map((id) => {
               const e = lexemeById(id);
               return e ? (
-                <span key={id} lang="prs" className="rounded-full bg-sabz-soft px-3.5 py-1 text-[18px] text-sabz">
+                <span key={id} lang={langProfile.code} className="rounded-full bg-sabz-soft px-3.5 py-1 text-[18px] text-sabz">
                   {e.target}
                 </span>
               ) : null;

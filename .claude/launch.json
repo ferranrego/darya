@@ -1,7 +1,36 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "dev", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3000, "autoPort": true },
-    { "name": "attach", "url": "http://localhost:3000", "port": 3000 }
+    {
+      "name": "dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "dev-ca",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "--no-install",
+        "dotenv",
+        "-e",
+        ".env.ca.local",
+        "--",
+        "npm",
+        "run",
+        "dev"
+      ],
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "attach",
+      "url": "http://localhost:3000",
+      "port": 3000
+    }
   ]
 }

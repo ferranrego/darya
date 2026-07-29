@@ -64,8 +64,8 @@ export function FontCarousel({
                     className={`text-[52px] leading-none transition-colors duration-300 ${
                       isActive ? "text-ink" : "text-ink-soft"
                     } font-${option.value}`}
-                    lang="prs"
-                    dir="rtl"
+                    lang={lang.code}
+                    dir={lang.dir}
                   >
                     {lang.samples.words[0]}
                   </motion.span>

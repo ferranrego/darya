@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getWordsByThemeOnly } from "@/lib/content/load";
+import { profile as langProfile } from "@/lib/lang";
 
 export default async function ThemePage({
   params,
@@ -47,7 +48,7 @@ export default async function ThemePage({
             <div className="relative z-10 flex flex-col gap-1.5">
               <div className="flex items-start justify-between">
                 <div className="flex flex-col">
-                  <p lang="prs" className="text-[26px] leading-snug text-ink mb-1">
+                  <p lang={langProfile.code} className="text-[26px] leading-snug text-ink mb-1">
                     {word.target}
                   </p>
                   <p className="text-[13px] text-ink-soft font-medium tracking-wide">
@@ -79,7 +80,7 @@ export default async function ThemePage({
                     Example
                   </summary>
                   <div className="mt-2.5 flex flex-col gap-1.5 rounded-xl bg-paper p-3.5 border border-line/50 animate-in fade-in slide-in-from-top-2 duration-200">
-                    <p lang="prs" className="text-[18px] leading-relaxed text-ink">
+                    <p lang={langProfile.code} className="text-[18px] leading-relaxed text-ink">
                       {word.exampleTarget}
                     </p>
                     {word.exampleTranslit && (

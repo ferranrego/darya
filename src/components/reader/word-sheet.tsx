@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "motion/react";
 import type { LexiconEntry } from "@/lib/content/schema";
 import type { WordStatus } from "@/lib/db/types";
 import { analyzeConjugation, type ConjugationResponse } from "@/app/actions/conjugation";
+import { profile as langProfile } from "@/lib/lang";
 
 const statusLabel: Record<WordStatus | "new", { text: string; cls: string }> = {
   new: { text: "New word", cls: "bg-new-tint text-ink-soft" },
@@ -88,7 +89,7 @@ export function WordSheet({
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <div className="flex items-center gap-3">
-                      <p lang="prs" className="text-[35px] leading-snug">
+                      <p lang={langProfile.code} className="text-[35px] leading-snug">
                         {entry.target}
                       </p>
                     </div>
@@ -101,7 +102,7 @@ export function WordSheet({
                 <p className="mt-3 text-[18px] font-medium">{entry.glossEn}</p>
                 <p className="text-[13px] text-ink-faint">{entry.pos}</p>
                 <div className="mt-5 rounded-2xl bg-paper p-4">
-                  <p lang="prs" className="text-[19px] leading-loose">
+                  <p lang={langProfile.code} className="text-[19px] leading-loose">
                     {entry.exampleTarget}
                   </p>
                   <p className="mt-1 text-[13px] text-ink-soft">{entry.exampleTranslit}</p>
@@ -129,7 +130,7 @@ export function WordSheet({
                                 <span className="text-[12px] text-ink-soft mt-0.5">{row.en}</span>
                               </div>
                               <div className="flex flex-col items-end text-right">
-                                <span lang="prs" className="text-[18px]">{row.target}</span>
+                                <span lang={langProfile.code} className="text-[18px]">{row.target}</span>
                                 <span className="text-[12px] text-ink-soft">{row.translit}</span>
                               </div>
                             </div>
@@ -169,7 +170,7 @@ export function WordSheet({
             ) : (
               <div>
                 <div className="flex items-center gap-3">
-                  <p lang="prs" className="text-[35px] leading-snug">
+                  <p lang={langProfile.code} className="text-[35px] leading-snug">
                     {surface}
                   </p>
                 </div>

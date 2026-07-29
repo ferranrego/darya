@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, X } from "lucide-react";
+import { profile as langProfile } from "@/lib/lang";
 
 interface ClozeExerciseProps {
   sentenceTarget: string;
@@ -72,7 +73,7 @@ export function ClozeExercise({
       <h3 className="text-lg font-semibold mb-1 text-center">Fill in the blank</h3>
       <div className="w-full bg-surface border border-line rounded-3xl p-6 shadow-sm mb-8 mt-2">
         <div
-          dir="rtl" 
+          dir={langProfile.dir} 
           className="text-2xl leading-relaxed text-center font-dari flex flex-wrap items-center justify-center gap-2"
         >
           <span>{before}</span>

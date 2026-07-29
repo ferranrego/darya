@@ -5,6 +5,7 @@ import { BookOpen } from "lucide-react";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Link from "next/link";
 import { useSupabase, useUser } from "@/lib/queries/hooks";
+import { profile as langProfile } from "@/lib/lang";
 
 export default function HistoryPage() {
   const db = useSupabase();
@@ -68,7 +69,7 @@ export default function HistoryPage() {
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <h3 lang="prs" className="text-[20px] font-medium leading-snug">
+                    <h3 lang={langProfile.code} className="text-[20px] font-medium leading-snug">
                       {doc.titleTarget}
                     </h3>
                     <p className="text-[14px] text-ink-soft mt-0.5">

@@ -5,6 +5,7 @@ import { Check } from "lucide-react";
 import { lexemeById, levels, themes } from "@/lib/content/load";
 import { useUserWords } from "@/lib/queries/hooks";
 import { KNOWN_STABILITY_DAYS } from "@/lib/srs/scheduler";
+import { profile as langProfile } from "@/lib/lang";
 
 type Filter = "categories" | "learning" | "known";
 
@@ -198,7 +199,7 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
                     className="flex items-center justify-between rounded-2xl border border-line bg-surface p-4 shadow-sm"
                   >
                     <div className="flex flex-col gap-1 max-w-[65%]">
-                      <p lang="prs" className="text-[22px] leading-snug text-left text-ink">
+                      <p lang={langProfile.code} className="text-[22px] leading-snug text-left text-ink">
                         {lexeme.target}
                       </p>
                       <p className="text-[13px] text-ink-soft font-medium">{lexeme.translit}</p>

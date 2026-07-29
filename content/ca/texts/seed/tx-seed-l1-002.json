@@ -11,19 +11,19 @@
       "tokens": [
         {
           "surface": "El",
-          "lexemeId": "lx-0002"
+          "lexemeId": "lx-0031"
         },
         {
           "surface": "matí",
-          "lexemeId": "lx-0059"
+          "lexemeId": "lx-0085"
         },
         {
           "surface": "bec",
-          "lexemeId": "lx-0076"
+          "lexemeId": "lx-0102"
         },
         {
           "surface": "cafè",
-          "lexemeId": "lx-0199"
+          "lexemeId": "lx-0290"
         }
       ]
     },
@@ -33,19 +33,19 @@
       "tokens": [
         {
           "surface": "Menjo",
-          "lexemeId": "lx-0075"
+          "lexemeId": "lx-0101"
         },
         {
           "surface": "pa",
-          "lexemeId": "lx-0197"
+          "lexemeId": "lx-0288"
         },
         {
           "surface": "amb",
-          "lexemeId": "lx-0012"
+          "lexemeId": "lx-0041"
         },
         {
           "surface": "llet",
-          "lexemeId": "lx-0198"
+          "lexemeId": "lx-0289"
         }
       ]
     },
@@ -55,23 +55,23 @@
       "tokens": [
         {
           "surface": "Després",
-          "lexemeId": "lx-0163"
+          "lexemeId": "lx-0255"
         },
         {
           "surface": "vaig",
-          "lexemeId": "lx-0029"
+          "lexemeId": "lx-0057"
         },
         {
           "surface": "a",
-          "lexemeId": "lx-0005"
+          "lexemeId": "lx-0034"
         },
         {
           "surface": "la",
-          "lexemeId": "lx-0003"
+          "lexemeId": "lx-0032"
         },
         {
           "surface": "feina",
-          "lexemeId": "lx-0054"
+          "lexemeId": "lx-0080"
         }
       ]
     },
@@ -81,31 +81,31 @@
       "tokens": [
         {
           "surface": "Treballo",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-0105"
         },
         {
           "surface": "molt",
-          "lexemeId": "lx-0023"
+          "lexemeId": "lx-0052"
         }
       ]
     }
   ],
   "vocabUsed": [
-    "lx-0002",
-    "lx-0003",
-    "lx-0005",
-    "lx-0012",
-    "lx-0023",
-    "lx-0029",
-    "lx-0054",
-    "lx-0059",
-    "lx-0075",
-    "lx-0076",
-    "lx-0079",
-    "lx-0163",
-    "lx-0197",
-    "lx-0198",
-    "lx-0199"
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0041",
+    "lx-0052",
+    "lx-0057",
+    "lx-0080",
+    "lx-0085",
+    "lx-0101",
+    "lx-0102",
+    "lx-0105",
+    "lx-0255",
+    "lx-0288",
+    "lx-0289",
+    "lx-0290"
   ],
   "newWordRatio": 0,
   "source": "seed",

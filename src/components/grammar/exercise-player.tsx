@@ -143,7 +143,7 @@ function FillBlank({
     <div className="flex flex-1 flex-col">
       <Prompt hint={exercise.hint}>Complete the sentence</Prompt>
       <div className="my-auto py-6 text-center">
-        <p lang="prs" dir="rtl" className="text-[30px] leading-[2]">
+        <p lang={lang.code} dir={lang.dir} className="text-[30px] leading-[2]">
           {targetBefore}
           <span
             className={`mx-1 inline-flex min-w-16 items-center justify-center rounded-xl border-2 px-2 align-middle transition-colors duration-200 ${
@@ -178,7 +178,7 @@ function FillBlank({
               onAnswer={onAnswer}
               className="rounded-2xl border border-line bg-surface px-3 py-4 hover:border-ink-faint"
             >
-              <span lang="prs" className="block text-[24px] leading-snug">
+              <span lang={lang.code} className="block text-[24px] leading-snug">
                 {option.target}
               </span>
               <span className="mt-0.5 block text-[12px] text-ink-faint">{option.translit}</span>
@@ -242,7 +242,7 @@ function BuildSentence({
         <p className="text-center text-[18px] font-medium">{exercise.en}</p>
 
         <motion.div
-          dir="rtl"
+          dir={lang.dir}
           animate={feedback === "wrong" ? { x: [0, -7, 7, -4, 4, 0] } : { x: 0 }}
           transition={{ duration: 0.4 }}
           className={`mx-auto mt-8 flex min-h-16 max-w-md flex-wrap items-center justify-center gap-2 rounded-2xl border-2 px-3 py-3 transition-colors duration-200 ${
@@ -264,7 +264,7 @@ function BuildSentence({
               className={`rounded-xl border px-3 py-1.5 text-[22px] leading-snug ${
                 done ? "border-sabz/40 bg-surface text-sabz" : "border-line bg-surface"
               }`}
-              lang="prs"
+              lang={lang.code}
             >
               {tile.option.target}
             </motion.button>
@@ -280,7 +280,7 @@ function BuildSentence({
             {exercise.translit}
           </motion.p>
         ) : (
-          <div dir="rtl" className="mx-auto mt-6 flex max-w-md flex-wrap justify-center gap-2">
+          <div dir={lang.dir} className="mx-auto mt-6 flex max-w-md flex-wrap justify-center gap-2">
             {bank
               .filter((tile) => !placedKeys.includes(tile.key))
               .map((tile) => (
@@ -291,7 +291,7 @@ function BuildSentence({
                   onClick={() => setPlacedKeys((ks) => [...ks, tile.key])}
                   className="rounded-xl border border-line bg-surface px-3 py-1.5 transition-colors hover:border-ink-faint"
                 >
-                  <span lang="prs" className="block text-[22px] leading-snug">
+                  <span lang={lang.code} className="block text-[22px] leading-snug">
                     {tile.option.target}
                   </span>
                   <span className="block text-[11px] text-ink-faint" dir="ltr">
@@ -333,7 +333,7 @@ function ChooseTranslation({
       <div className="flex flex-1 flex-col">
         <Prompt hint={exercise.hint}>What does this mean?</Prompt>
         <div className="my-auto py-6 text-center">
-          <p lang="prs" dir="rtl" className="text-[32px] leading-[1.9]">
+          <p lang={lang.code} dir={lang.dir} className="text-[32px] leading-[1.9]">
             {exercise.target}
           </p>
           <p className="mt-2 text-[15px] text-ink-soft">{exercise.translit}</p>
@@ -371,7 +371,7 @@ function ChooseTranslation({
               onAnswer={onAnswer}
               className="rounded-xl border border-line bg-surface px-4 py-3 hover:border-ink-faint"
             >
-              <span lang="prs" dir="rtl" className="block text-[22px] leading-snug">
+              <span lang={lang.code} dir={lang.dir} className="block text-[22px] leading-snug">
                 {option.target}
               </span>
               <span className="mt-0.5 block text-[12px] text-ink-faint">{option.translit}</span>
@@ -493,7 +493,7 @@ function MatchPairs({
                 onClick={() => trySelect(p.target, null)}
                 className={tileClass(state)}
               >
-                <span lang="prs" dir="rtl" className="block text-[20px] leading-snug">
+                <span lang={lang.code} dir={lang.dir} className="block text-[20px] leading-snug">
                   {p.target}
                 </span>
                 <span className="block text-[11px] text-ink-faint">{p.translit}</span>
@@ -528,7 +528,7 @@ function SpotError({
       <Prompt hint={exercise.hint}>Tap the mistake</Prompt>
       <div className="my-auto py-6 text-center">
         <p className="mb-6 text-[15px] text-ink-soft">{exercise.en}</p>
-        <div dir="rtl" className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2">
+        <div dir={lang.dir} className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2">
           {words.map((word, i) => {
             const isError = normalize(word) === errorKey;
             if (solved && isError) {
@@ -537,7 +537,7 @@ function SpotError({
                   key={i}
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
-                  lang="prs"
+                  lang={lang.code}
                   className="rounded-lg bg-sabz-soft px-2 py-1 text-[26px] leading-snug text-sabz"
                 >
                   {exercise.correction.target}
@@ -560,7 +560,7 @@ function SpotError({
           <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="mt-6">
             <p className="text-[15px] font-medium text-sabz">{exercise.translit}</p>
             <p className="mt-1 text-[13px] text-ink-faint">
-              <span lang="prs">{exercise.errorWord.target}</span> → <span lang="prs">{exercise.correction.target}</span>
+              <span lang={lang.code}>{exercise.errorWord.target}</span> → <span lang={lang.code}>{exercise.correction.target}</span>
             </p>
           </motion.div>
         )}
@@ -589,7 +589,7 @@ function SpotErrorWord({
   return (
     <motion.button
       type="button"
-      lang="prs"
+      lang={lang.code}
       disabled={disabled}
       animate={showWrong ? { x: [0, -6, 6, -3, 3, 0] } : { x: 0 }}
       transition={{ duration: 0.4 }}

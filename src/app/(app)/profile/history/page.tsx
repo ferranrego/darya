@@ -3,6 +3,7 @@
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { useReadTextsWithDocs } from "@/lib/queries/hooks";
+import { profile as langProfile } from "@/lib/lang";
 
 export default function HistoryPage() {
   const { data: rows, isLoading } = useReadTextsWithDocs();
@@ -43,7 +44,7 @@ export default function HistoryPage() {
                 className="flex flex-col gap-1 rounded-2xl border border-line bg-surface p-4 transition-colors hover:border-lapis/50"
               >
                 <div className="flex items-start justify-between gap-4">
-                  <h2 className="text-right text-[20px] font-medium leading-normal text-ink" lang="prs" dir="rtl">
+                  <h2 className="text-right text-[20px] font-medium leading-normal text-ink" lang={langProfile.code} dir={langProfile.dir}>
                     {doc.titleTarget}
                   </h2>
                   <span className="shrink-0 text-[12px] text-ink-soft">

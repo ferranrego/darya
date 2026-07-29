@@ -213,7 +213,7 @@ export function TextReader({
               className="flex flex-col relative"
             >
               <div className="relative">
-                <p lang="prs" className="leading-[1.85] [text-wrap:balance]" style={{ fontSize: optimalFontSize }}>
+                <p lang={langProfile.code} className="leading-[1.85] [text-wrap:balance]" style={{ fontSize: optimalFontSize }}>
                   {(() => {
                     const lastWordIdx = segments[i].map(s => s.kind).lastIndexOf("word");
                     const splitIdx = lastWordIdx >= 0 ? lastWordIdx : 0;

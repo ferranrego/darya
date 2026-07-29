@@ -353,6 +353,7 @@ if (!profile.capabilities.scriptCourse) {
 
 // --- Seed texts ------------------------------------------------------------
 const seedDir = join(root, "texts", "seed");
+const seedIndex = lexicon ? buildIndex(lexicon.entries) : null;
 if (existsSync(seedDir)) {
   const files = readdirSync(seedDir).filter((f) => f.endsWith(".json"));
   let ok = 0;
@@ -366,8 +367,28 @@ if (existsSync(seedDir)) {
     if (!levelIds.has(doc.level)) fail(`${f}: unknown level ${doc.level}`);
     for (const s of doc.sentences) {
       for (const t of s.tokens) {
-        if (t.lexemeId && !lexemeIds.has(t.lexemeId)) {
+        if (!t.lexemeId) continue;
+        if (!lexemeIds.has(t.lexemeId)) {
           fail(`${f}: token "${t.surface}" references missing lexeme ${t.lexemeId}`);
+          continue;
+        }
+        /**
+         * The id must be the lexeme the *surface* resolves to, not merely some
+         * lexeme that exists.
+         *
+         * `lexemeId` is a denormalisation of `resolve(surface)`, and it drifts:
+         * renumbering the lexicon once left all 52 tokens in these files
+         * pointing at unrelated words, and every check here passed because the
+         * ids were all still valid. The reader prefers the stored id over
+         * resolving, so a learner tapping "casa" saw the entry for "els" and
+         * got that word written into their review deck.
+         */
+        const resolved = seedIndex?.resolve(t.surface);
+        if (resolved && resolved.id !== t.lexemeId) {
+          fail(
+            `${f}: token "${t.surface}" is linked to ${t.lexemeId} but resolves to ` +
+              `${resolved.id} ("${resolved.targetNormalized}")`,
+          );
         }
       }
     }

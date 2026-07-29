@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, X } from "lucide-react";
+import { profile as langProfile } from "@/lib/lang";
 
 interface RealiaExerciseProps {
   documentType: string;
@@ -46,7 +47,7 @@ export function RealiaExercise({
       {/* Realia Document Container */}
       <div 
         className="w-full bg-yellow-50 dark:bg-stone-800 border-2 border-stone-200 dark:border-stone-700 rounded-lg p-6 mb-8 shadow-sm font-dari text-lg text-right text-stone-800 dark:text-stone-200 whitespace-pre-wrap"
-        dir="rtl"
+        dir={langProfile.dir}
       >
         {markdown}
       </div>

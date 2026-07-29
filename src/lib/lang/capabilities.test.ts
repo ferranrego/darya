@@ -148,3 +148,35 @@ describe("alphabet route guard", () => {
     expect(notFound).not.toHaveBeenCalled();
   });
 });
+
+describe("no component hardcodes a language's script direction", () => {
+  /**
+   * `dir` and `lang` must come from the active profile, never from a literal.
+   *
+   * A hardcoded `dir="rtl"` around Catalan does not merely look odd: on a flex
+   * row it reverses the visual order of the words outright, and inside a
+   * paragraph it moves the segments and trailing punctuation. Measured in a
+   * browser, the spotError row rendered "El llibre està a la taula." as
+   * "taula. la a està llibre El", and the fillBlank paragraph put the tail of
+   * the sentence in front of its own blank. 153 of the 201 Catalan grammar
+   * exercises were affected, and nothing failed - typecheck, tests, the content
+   * validators and the Perso-Arabic leak guard are all blind to an attribute.
+   *
+   * The alphabet tree is exempt: it exists only to teach a non-Latin script and
+   * is 404'd wholesale for a language without one (see the guard above).
+   */
+  it("has no literal dir=rtl or lang=prs outside the alphabet route", async () => {
+    const { execSync } = await import("node:child_process");
+    const { join } = await import("node:path");
+    const src = join(import.meta.dirname, "..", "..");
+
+    const hits = execSync(
+      `grep -rn 'dir="rtl"\\|lang="prs"' ${JSON.stringify(src)} --include='*.tsx' || true`,
+      { encoding: "utf8" },
+    )
+      .split("\n")
+      .filter((l) => l.trim() && !l.includes("/alphabet/"));
+
+    expect(hits, `use dir={profile.dir} / lang={profile.code}:\n${hits.join("\n")}`).toEqual([]);
+  });
+});

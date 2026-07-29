@@ -65,8 +65,8 @@ export default function ChatPage() {
         <div className="flex flex-col items-center rounded-2xl border border-line bg-surface p-6 text-center">
           <div className="relative">
             <span
-              lang="prs"
-              dir="rtl"
+              lang={lang.code}
+              dir={lang.dir}
               className="absolute -right-3 -top-2 rounded-2xl rounded-br-sm border border-line bg-paper px-3 py-1 text-[20px] text-lapis shadow-[0_2px_8px_rgba(31,26,23,0.06)]"
             >
               {lang.samples.greeting.target}

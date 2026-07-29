@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, X } from "lucide-react";
+import { profile as langProfile } from "@/lib/lang";
 
 interface UnscrambleExerciseProps {
   words: string[];
@@ -74,7 +75,7 @@ export function UnscrambleExercise({
       <motion.div 
         animate={status === "incorrect" ? { x: [-10, 10, -10, 10, 0] } : {}}
         transition={{ duration: 0.4 }}
-        dir="rtl"
+        dir={langProfile.dir}
         className={`relative min-h-[140px] w-full rounded-3xl p-5 flex flex-wrap gap-3 items-start content-start mb-8 transition-colors ${
           status === "incorrect" 
             ? "bg-danger/10 border-2 border-danger" 
@@ -131,7 +132,7 @@ export function UnscrambleExercise({
 
       {/* Word Pool */}
       <div 
-        dir="rtl"
+        dir={langProfile.dir}
         className="w-full flex flex-wrap gap-3 justify-center min-h-[140px]"
       >
         {availableWords.map((word) => (

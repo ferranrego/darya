@@ -16,6 +16,7 @@ import type { GrammarExercise } from "@/lib/content/schema";
 import { completeGrammarLesson } from "@/lib/db/grammar";
 import { XP, recordActivity } from "@/lib/gamification";
 import { useAlphabetProgress, useGrammarProgress, useInvalidateLearning, useSupabase, useUser } from "@/lib/queries/hooks";
+import { profile as langProfile } from "@/lib/lang";
 
 type Phase =
   | { kind: "slides"; index: number }
@@ -222,8 +223,8 @@ export default function GrammarLessonPage() {
 
             {phase.kind === "done" && keyExample && (
               <p
-                lang="prs"
-                dir="rtl"
+                lang={langProfile.code}
+                dir={langProfile.dir}
                 className="mt-6 rounded-full bg-lapis-soft px-5 py-2 text-[20px] text-lapis"
               >
                 {keyExample.target}

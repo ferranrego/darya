@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, X } from "lucide-react";
+import { profile as langProfile } from "@/lib/lang";
 
 interface GrammarDetectiveProps {
   correctSentenceTarget: string;
@@ -66,7 +67,7 @@ export function GrammarDetective({
               disabled={status !== "idle"}
               className={`w-full flex flex-col items-center justify-center p-6 rounded-2xl border transition-all ${btnClass}`}
             >
-              <span className="font-dari text-2xl text-center leading-relaxed" dir="rtl">{sent.target}</span>
+              <span className="font-dari text-2xl text-center leading-relaxed" dir={langProfile.dir}>{sent.target}</span>
               <span className="text-sm opacity-60 mt-2">{sent.translit}</span>
             </button>
           );

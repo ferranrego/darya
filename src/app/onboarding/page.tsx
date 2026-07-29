@@ -215,7 +215,7 @@ export default function OnboardingPage() {
                   >
                     {canRead ? (
                       <>
-                        <span lang="prs" className="text-[22px] leading-snug">
+                        <span lang={lang.code} className="text-[22px] leading-snug">
                           {w.entry.target}
                         </span>
                         <span className={`text-[12px] ${active ? "text-white/75" : "text-ink-faint"}`}>
@@ -228,7 +228,7 @@ export default function OnboardingPage() {
                           {w.entry.translit}
                         </span>
                         <span
-                          lang="prs"
+                          lang={lang.code}
                           className={`text-[15px] ${active ? "text-white/70" : "text-ink-faint"}`}
                         >
                           {w.entry.target}
