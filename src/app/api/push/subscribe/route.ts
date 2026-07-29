@@ -34,6 +34,16 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Failed to save subscription" }, { status: 500 });
     }
 
+    // Auto-enable notifications in profile
+    const { error: profileError } = await supabase
+      .from("profiles")
+      .update({ reminder_notifications: true, chat_notifications: true })
+      .eq("id", userData.user.id);
+
+    if (profileError) {
+      console.error("Error updating profile notifications:", profileError);
+    }
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Error processing push subscription:", error);

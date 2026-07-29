@@ -19,13 +19,12 @@ export async function GET(req: Request) {
       process.env.VAPID_PRIVATE_KEY!
     );
 
-    // Get users with an active streak but no activity today
+    // Get users with notifications enabled but no activity today
     const today = new Date().toISOString().split("T")[0];
     const { data: usersToRemind } = await supabaseAdmin
       .from("profiles")
       .select("id, streak_current, last_active_date")
       .eq("reminder_notifications", true)
-      .gt("streak_current", 0)
       .neq("last_active_date", today);
 
     if (!usersToRemind || usersToRemind.length === 0) {
@@ -50,6 +49,14 @@ export async function GET(req: Request) {
     await Promise.all(
       subscriptions.map(async (sub) => {
         try {
+          const userProfile = usersToRemind.find((u) => u.id === sub.user_id);
+          const hasStreak = userProfile && userProfile.streak_current > 0;
+          
+          const title = hasStreak ? "Keep your streak alive! 🔥" : "Time for your daily review! 🚀";
+          const body = hasStreak 
+            ? `You haven't practiced ${lang.name} today. Do a quick review now to keep your streak going!`
+            : `Start a new streak today by doing a quick ${lang.name} review!`;
+
           await webPush.sendNotification(
             {
               endpoint: sub.endpoint,
@@ -59,8 +66,8 @@ export async function GET(req: Request) {
               },
             },
             JSON.stringify({
-              title: "Keep your streak alive! 🔥",
-              body: `You haven't practiced ${lang.name} today. Do a quick review now to keep your streak going!`,
+              title,
+              body,
               data: { url: "/" },
             })
           );
@@ -71,7 +78,12 @@ export async function GET(req: Request) {
             // Subscription has expired or is no longer valid
             await supabaseAdmin.from("push_subscriptions").delete().eq("id", sub.id);
           } else {
-            errors.push(e);
+            console.error(`Web push error for user ${sub.user_id}:`, e);
+            errors.push({
+              user_id: sub.user_id,
+              error: e.message || e.toString(),
+              statusCode: e.statusCode
+            });
           }
         }
       })
