@@ -181,10 +181,36 @@ if (!profile.capabilities.scriptCourse) {
   const lessonIds = new Set<string>();
   const exerciseIds = new Set<string>();
 
+  /**
+   * Mid-sentence capitalised words in a Latin-script language are proper nouns
+   * (Barcelona, Marta), and a lexicon should not carry them - a "Barcelona"
+   * SRS card glossed "Barcelona" teaches nothing. Sentence-initial words are
+   * capitalised for position, not because they are names, so those are still
+   * checked. A script without letter case (Perso-Arabic) is unaffected: no
+   * token ever differs from its lowercase form.
+   */
+  function properNouns(text: string): Set<string> {
+    const names = new Set<string>();
+    // Each sentence's first word is capitalised by convention; skip it.
+    for (const sentence of text.split(/(?<=[.!?])\s+/)) {
+      const words = sentence.trim().split(/\s+/);
+      // The first word is capitalised by position, but it may be a clitic
+      // glued to a name ("L'Anna"), in which case the name still counts.
+      const first = words[0]?.split("'").slice(1).join("'");
+      for (const w of [...(first ? [first] : []), ...words.slice(1)]) {
+        const bare = w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, "");
+        if (bare && bare[0] !== bare[0].toLowerCase()) names.add(bare.toLowerCase());
+      }
+    }
+    return names;
+  }
+
   function checkVocab(where: string, target: string, warn: () => void) {
     if (!index) return;
+    const names = properNouns(target);
     for (const token of tokenize(target)) {
       if (token === "___") continue;
+      if (names.has(token.toLowerCase())) continue;
       if (index.resolve(token)) continue;
       warn();
       console.warn(`⚠ grammar ${where}: "${token}" not in lexicon`);

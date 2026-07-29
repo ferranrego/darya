@@ -63,7 +63,13 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
     overrides: {
       // Suppletive present (vaig/vas/va) - also the auxiliary of the
       // periphrastic past, which is how Catalan normally expresses "I went".
-      present: ["vaig", "vas", "va", "anem", "aneu", "van"],
+      // The past auxiliary has its own 1pl/2pl (vam/vau, or the fuller
+      // vàrem/vàreu), which differ from the plain present anem/aneu: "vam anar"
+      // is "we went", "anem" is "we go". Both sets must resolve.
+      present: [
+        "vaig", "vas", "vares", "va", "anem", "aneu", "van",
+        "vam", "vau", "vàrem", "vàreu", "varen",
+      ],
       future: ["aniré", "aniràs", "anirà", "anirem", "anireu", "aniran"],
       conditional: ["aniria", "aniries", "aniríem", "aniríeu", "anirien"],
       presentSubjunctive: ["vagi", "vagis", "anem", "aneu", "vagin"],
@@ -347,6 +353,110 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
     overrides: {
       present: ["corro", "corres", "corre", "correm", "correu", "corren"],
       participle: ["corregut", "correguda", "correguts", "corregudes"],
+    },
+  },
+  caure: {
+    infinitive: "caure",
+    conjugation: 2,
+    overrides: {
+      present: ["caic", "caus", "cau", "caiem", "caieu", "cauen"],
+      imperfect: ["queia", "queies", "quèiem", "quèieu", "queien"],
+      future: ["cauré", "cauràs", "caurà", "caurem", "caureu", "cauran"],
+      conditional: ["cauria", "cauries", "cauríem", "cauríeu", "caurien"],
+      presentSubjunctive: ["caigui", "caiguis", "caiguem", "caigueu", "caiguin"],
+      imperfectSubjunctive: ["caigués", "caiguessis", "caiguéssim", "caiguéssiu", "caiguessin"],
+      participle: ["caigut", "caiguda", "caiguts", "caigudes"],
+      gerund: ["caient"],
+    },
+  },
+  treure: {
+    infinitive: "treure",
+    conjugation: 2,
+    // Two stems that alternate with stress: tre- when stressed (trec, treu),
+    // tra- when not (traiem, traguem, trauré).
+    overrides: {
+      present: ["trec", "treus", "treu", "traiem", "traieu", "treuen"],
+      imperfect: ["treia", "treies", "trèiem", "trèieu", "treien"],
+      future: ["trauré", "trauràs", "traurà", "traurem", "traureu", "trauran"],
+      conditional: ["trauria", "trauries", "trauríem", "trauríeu", "traurien"],
+      presentSubjunctive: ["tregui", "treguis", "traguem", "tragueu", "treguin"],
+      imperfectSubjunctive: ["tragués", "traguessis", "traguéssim", "traguéssiu", "traguessin"],
+      participle: ["tret", "treta", "trets", "tretes"],
+      gerund: ["traient"],
+      imperative: ["treu", "tregui", "traguem", "tragueu", "treguin"],
+    },
+  },
+  seure: {
+    infinitive: "seure",
+    conjugation: 2,
+    overrides: {
+      present: ["sec", "seus", "seu", "seiem", "seieu", "seuen"],
+      imperfect: ["seia", "seies", "sèiem", "sèieu", "seien"],
+      presentSubjunctive: ["segui", "seguis", "seguem", "segueu", "seguin"],
+      imperfectSubjunctive: ["segués", "seguessis", "seguéssim", "seguéssiu", "seguessin"],
+      participle: ["segut", "seguda", "seguts", "segudes"],
+      gerund: ["seient"],
+      imperative: ["seu", "segui", "seguem", "segueu", "seguin"],
+    },
+  },
+  moure: {
+    infinitive: "moure",
+    conjugation: 2,
+    overrides: {
+      present: ["moc", "mous", "mou", "movem", "moveu", "mouen"],
+      imperfect: ["movia", "movies", "movíem", "movíeu", "movien"],
+      presentSubjunctive: ["mogui", "moguis", "moguem", "mogueu", "moguin"],
+      imperfectSubjunctive: ["mogués", "moguessis", "moguéssim", "moguéssiu", "moguessin"],
+      participle: ["mogut", "moguda", "moguts", "mogudes"],
+      gerund: ["movent"],
+    },
+  },
+  néixer: {
+    infinitive: "néixer",
+    conjugation: 2,
+    // Stressed forms keep nei-, unstressed ones lower it to nai-; the
+    // participle is suppletive (nascut), which is the form learners meet first
+    // in "vaig néixer" / "he nascut".
+    overrides: {
+      present: ["neixo", "neixes", "neix", "naixem", "naixeu", "neixen"],
+      imperfect: ["naixia", "naixies", "naixíem", "naixíeu", "naixien"],
+      future: ["naixeré", "naixeràs", "naixerà", "naixerem", "naixereu", "naixeran"],
+      conditional: ["naixeria", "naixeries", "naixeríem", "naixeríeu", "naixerien"],
+      presentSubjunctive: ["neixi", "neixis", "naixem", "naixeu", "neixin"],
+      participle: ["nascut", "nascuda", "nascuts", "nascudes"],
+      gerund: ["naixent"],
+    },
+  },
+  caldre: {
+    infinitive: "caldre",
+    conjugation: 2,
+    // Defective: only the third person exists ("cal estudiar", "calen diners").
+    // Listing just those forms is deliberate - generating *calc/*cals would
+    // teach a form no Catalan speaker uses.
+    overrides: {
+      present: ["cal", "calen"],
+      imperfect: ["calia", "calien"],
+      future: ["caldrà", "caldran"],
+      conditional: ["caldria", "caldrien"],
+      presentSubjunctive: ["calgui", "calguin"],
+      imperfectSubjunctive: ["calgués", "calguessin"],
+      participle: ["calgut", "calguda", "calguts", "calgudes"],
+      gerund: ["calent"],
+    },
+  },
+  ploure: {
+    infinitive: "ploure",
+    conjugation: 2,
+    // Impersonal: third person singular only.
+    overrides: {
+      present: ["plou"],
+      imperfect: ["plovia"],
+      future: ["plourà"],
+      conditional: ["plouria"],
+      presentSubjunctive: ["plogui"],
+      imperfectSubjunctive: ["plogués"],
+      participle: ["plogut", "ploguda"],
+      gerund: ["plovent"],
     },
   },
   dur: {

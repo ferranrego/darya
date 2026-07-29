@@ -32,6 +32,18 @@ export interface CandidateEntry {
  */
 const INFINITIVE_EXCEPTIONS = new Set(["dur"]);
 
+/**
+ * Verbs that legitimately lack most of their paradigm.
+ *
+ * `ploure` is impersonal and `caldre` exists only in the third person, so their
+ * irregulars entries deliberately list a handful of forms. The usual "a verb
+ * must yield at least 20 surfaces" floor is a check against a broken stem, and
+ * would otherwise reject exactly the verbs whose paradigm is correctly small.
+ * Generating *plovem or *calc to satisfy a threshold would teach forms no
+ * Catalan speaker uses.
+ */
+const DEFECTIVE_VERBS = new Set(["ploure", "caldre", "nevar"]);
+
 const POS_VALUES = new Set([
   "noun", "verb", "adjective", "adverb", "pronoun", "preposition",
   "conjunction", "particle", "numeral", "interjection", "determiner", "phrase",
@@ -76,7 +88,8 @@ export function verifyEntry(
       if (!spec) problems.push(`verb "${word}" has no conjugation spec`);
       else {
         const forms = conjugationSurfaces(spec);
-        if (forms.length < 20) problems.push(`verb "${word}" yields only ${forms.length} forms`);
+        const floor = DEFECTIVE_VERBS.has(word) ? 6 : 20;
+        if (forms.length < floor) problems.push(`verb "${word}" yields only ${forms.length} forms`);
         // A regular paradigm built on a wrong stem shows up as forms that do
         // not start with the stem.
         if (!forms.includes(word)) problems.push(`verb "${word}" missing its own infinitive`);

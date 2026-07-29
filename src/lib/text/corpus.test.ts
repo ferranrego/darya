@@ -27,6 +27,17 @@ const CONTENT = join(import.meta.dirname, "..", "..", "..", "content", "active")
 // discarded every Catalan token, leaving nothing to assert on.
 const HAS_LETTER = /\p{L}/u;
 
+/**
+ * Branches that hold deliberately wrong language: distractor chips, the decoy
+ * tiles in a word bank, and the error a spotError exercise exists to teach.
+ *
+ * Counting those as "unresolved vocabulary" measures the wrong thing - they are
+ * *supposed* to be unresolvable, and a lexicon that resolved `dormeixo` or
+ * `teno` would be the actual defect. Skipping them is what makes the budget
+ * below mean "correct content the engine cannot explain".
+ */
+const WRONG_BY_DESIGN = new Set(["distractors", "distractorsTarget", "extraWords", "errorWord"]);
+
 /** Every target-language string in a content file, wherever it is nested. */
 function collectTarget(node: unknown, out: string[]): void {
   if (Array.isArray(node)) {
@@ -34,13 +45,36 @@ function collectTarget(node: unknown, out: string[]): void {
     return;
   }
   if (!node || typeof node !== "object") return;
+  const isSpotError = "type" in node && (node as { type: string }).type === "spotError";
   for (const [key, value] of Object.entries(node)) {
+    if (WRONG_BY_DESIGN.has(key)) continue;
+    if (isSpotError && key === "target") continue;
     if (typeof value === "string") {
       if (key === "target" || key === "answer" || key === "titleTarget") out.push(value);
     } else {
       collectTarget(value, out);
     }
   }
+}
+
+/**
+ * Mid-sentence capitalised words in a cased script are proper nouns, which a
+ * lexicon should not carry. Perso-Arabic has no case, so nothing is skipped
+ * there and the Dari budget is unaffected.
+ */
+function properNouns(text: string): Set<string> {
+  const names = new Set<string>();
+  for (const sentence of text.split(/(?<=[.!?])\s+/)) {
+    const words = sentence.trim().split(/\s+/);
+    // A sentence-initial word is capitalised by position, but may be a clitic
+    // glued to a name ("L'Anna"), in which case the name still counts.
+    const first = words[0]?.split("'").slice(1).join("'");
+    for (const w of [...(first ? [first] : []), ...words.slice(1)]) {
+      const bare = w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, "");
+      if (bare && bare[0] !== bare[0].toLowerCase()) names.add(bare.toLowerCase());
+    }
+  }
+  return names;
 }
 
 function corpus(): string[] {
@@ -55,9 +89,12 @@ function corpus(): string[] {
 
 describe("shipped content is recognised by the runtime acceptance rule", () => {
   const strings = corpus();
-  const tokens = strings
-    .flatMap((s) => tokenize(s))
-    .filter((t) => t !== "___" && HAS_LETTER.test(t));
+  const tokens = strings.flatMap((s) => {
+    const names = properNouns(s);
+    return tokenize(s).filter(
+      (t) => t !== "___" && HAS_LETTER.test(t) && !names.has(t.toLowerCase()),
+    );
+  });
 
   it("reads a non-trivial corpus", () => {
     expect(strings.length).toBeGreaterThan(0);
@@ -71,9 +108,9 @@ describe("shipped content is recognised by the runtime acceptance rule", () => {
     //
     // prs was 192 until 36 lexemes that existed only in the database were
     // restored to content/ - they were the vocabulary the C1/C2 lessons use.
-    // ca is higher *as a share* simply because its lexicon is 250 words against
-    // Dari's 6000; it tightens as the lexicon grows.
-    const BUDGET: Record<string, number> = { prs: 5, ca: 40 };
+    // ca is 0: every word of correct Catalan in the A1-A2 course and the seed
+    // texts resolves, which is the standard a tap-to-reveal reader has to meet.
+    const BUDGET: Record<string, number> = { prs: 5, ca: 0 };
     const budget = BUDGET[profile.code] ?? 0;
     expect(unknown.length, `unresolved tokens for "${profile.code}"`).toBeLessThanOrEqual(budget);
   });

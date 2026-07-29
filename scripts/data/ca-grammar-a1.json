@@ -1,0 +1,726 @@
+{
+  "formatVersion": "1.4.0",
+  "language": "ca",
+  "level": "A1",
+  "blocks": [
+    {
+      "id": "gb-01",
+      "title": "Saying what things are",
+      "subtitle": "Two verbs for \"to be\", articles, and how words agree.",
+      "lessons": [
+        {
+          "id": "gl-01",
+          "title": "ser and estar",
+          "subtitle": "Catalan has two verbs for \"to be\", and they divide the work differently from Spanish.",
+          "grammarPoint": "ser-estar",
+          "grammarPointEn": "ser for identity, origin, quality, time and plain location; estar for a state or a temporary stay",
+          "slides": [
+            {
+              "id": "gs-01-1",
+              "title": "ser says what something is",
+              "body": "Identity, origin, job, a lasting quality, the time. This is the verb to reach for first.",
+              "examples": [
+                { "target": "Soc de Barcelona.", "en": "I'm from Barcelona.", "highlight": "Soc" },
+                { "target": "És metge.", "en": "He is a doctor." },
+                { "target": "La casa és gran.", "en": "The house is big." }
+              ],
+              "table": [
+                ["jo", "soc"],
+                ["tu", "ets"],
+                ["ell, ella", "és"],
+                ["nosaltres", "som"],
+                ["vosaltres", "sou"],
+                ["ells, elles", "són"]
+              ]
+            },
+            {
+              "id": "gs-01-2",
+              "title": "ser also says where something is",
+              "body": "Here Catalan and Spanish part company. To simply locate something, Catalan uses ser, not estar.",
+              "examples": [
+                { "target": "On és el llibre?", "en": "Where is the book?" },
+                { "target": "La Marta és a casa.", "en": "Marta is at home." },
+                { "target": "El gat és sota la taula.", "en": "The cat is under the table." }
+              ]
+            },
+            {
+              "id": "gs-01-3",
+              "title": "estar says how something is right now",
+              "body": "Use estar for a state that came about, and for staying somewhere for a while.",
+              "examples": [
+                { "target": "Estic molt cansat.", "en": "I'm very tired.", "highlight": "Estic" },
+                { "target": "Com estàs avui?", "en": "How are you today?" },
+                { "target": "Aquesta setmana estic a Girona.", "en": "This week I'm staying in Girona." }
+              ],
+              "table": [
+                ["jo", "estic"],
+                ["tu", "estàs"],
+                ["ell, ella", "està"],
+                ["nosaltres", "estem"],
+                ["vosaltres", "esteu"],
+                ["ells, elles", "estan"]
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-01-1", "type": "fillBlank", "target": "Jo ___ de Girona.", "en": "I'm from Girona.", "answer": { "target": "soc" }, "distractors": [{ "target": "estic" }, { "target": "és" }, { "target": "som" }] },
+            { "id": "ge-01-2", "type": "fillBlank", "target": "La Marta ___ professora.", "en": "Marta is a teacher.", "answer": { "target": "és" }, "distractors": [{ "target": "està" }, { "target": "soc" }, { "target": "són" }] },
+            { "id": "ge-01-3", "type": "fillBlank", "target": "Avui ___ molt cansat.", "en": "Today I'm very tired.", "answer": { "target": "estic" }, "distractors": [{ "target": "soc" }, { "target": "és" }, { "target": "està" }] },
+            { "id": "ge-01-4", "type": "fillBlank", "target": "On ___ el meu llibre?", "en": "Where is my book?", "answer": { "target": "és" }, "distractors": [{ "target": "està" }, { "target": "soc" }, { "target": "sou" }], "hint": "Plain location takes ser in Catalan." },
+            { "id": "ge-01-5", "type": "fillBlank", "target": "Nosaltres ___ estudiants.", "en": "We are students.", "answer": { "target": "som" }, "distractors": [{ "target": "estem" }, { "target": "són" }, { "target": "sou" }] },
+            { "id": "ge-01-6", "type": "spotError", "target": "El llibre està a la taula.", "en": "The book is on the table.", "errorWord": { "target": "està" }, "correction": { "target": "és" }, "hint": "Where something simply is." },
+            { "id": "ge-01-7", "type": "buildSentence", "en": "The house is very big.", "words": [{ "target": "La" }, { "target": "casa" }, { "target": "és" }, { "target": "molt" }, { "target": "gran" }], "extraWords": [{ "target": "està" }, { "target": "són" }] },
+            { "id": "ge-01-8", "type": "matchPairs", "prompt": "Match each form of ser with its person.", "pairs": [{ "target": "soc", "en": "I am" }, { "target": "ets", "en": "you are" }, { "target": "som", "en": "we are" }, { "target": "són", "en": "they are" }] },
+            { "id": "ge-01-9", "type": "chooseTranslation", "direction": "toEn", "target": "Aquesta setmana estic a Barcelona.", "en": "This week I'm staying in Barcelona.", "distractorsEn": ["I am from Barcelona.", "Barcelona is a big city.", "I was in Barcelona this week."], "distractorsTarget": [] }
+          ]
+        },
+        {
+          "id": "gl-02",
+          "title": "The article and the apostrophe",
+          "subtitle": "el, la, els, les - and when they shrink to l'.",
+          "grammarPoint": "definite-article-elision",
+          "grammarPointEn": "the definite article el/la/els/les, obligatory elision to l' before a vowel or h, and the exception before unstressed i- and u-",
+          "slides": [
+            {
+              "id": "gs-02-1",
+              "title": "Four forms, by gender and number",
+              "body": "Catalan marks the noun's gender on the article, so learn every noun together with its article.",
+              "examples": [
+                { "target": "el llibre", "en": "the book" },
+                { "target": "la casa", "en": "the house" },
+                { "target": "els llibres", "en": "the books" },
+                { "target": "les cases", "en": "the houses" }
+              ]
+            },
+            {
+              "id": "gs-02-2",
+              "title": "Before a vowel or h, el and la become l'",
+              "body": "This is not a style choice. Writing \"el home\" is an error the way \"a apple\" is in English.",
+              "examples": [
+                { "target": "l'home", "en": "the man", "highlight": "l'" },
+                { "target": "l'aigua", "en": "the water" },
+                { "target": "l'hora", "en": "the hour" },
+                { "target": "l'escola", "en": "the school" }
+              ]
+            },
+            {
+              "id": "gs-02-3",
+              "title": "One exception worth knowing",
+              "body": "la keeps its shape before an unstressed i- or u-, because that vowel behaves like a consonant: la idea, la universitat. When the i is stressed it elides again: l'illa.",
+              "examples": [
+                { "target": "la idea", "en": "the idea" },
+                { "target": "la universitat", "en": "the university" },
+                { "target": "l'illa", "en": "the island" }
+              ]
+            },
+            {
+              "id": "gs-02-4",
+              "title": "Names take an article too",
+              "body": "In everyday Catalan a person's name normally carries el or la. It sounds bare without one.",
+              "examples": [
+                { "target": "la Marta", "en": "Marta" },
+                { "target": "el Joan", "en": "Joan" },
+                { "target": "L'Anna és a casa.", "en": "Anna is at home." }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-02-1", "type": "fillBlank", "target": "___ home és alt.", "en": "The man is tall.", "answer": { "target": "L'" }, "distractors": [{ "target": "El" }, { "target": "La" }, { "target": "Els" }] },
+            { "id": "ge-02-2", "type": "fillBlank", "target": "___ casa és petita.", "en": "The house is small.", "answer": { "target": "La" }, "distractors": [{ "target": "L'" }, { "target": "El" }, { "target": "Les" }] },
+            { "id": "ge-02-3", "type": "fillBlank", "target": "Vull ___ aigua freda.", "en": "I want the cold water.", "answer": { "target": "l'" }, "distractors": [{ "target": "la" }, { "target": "el" }, { "target": "les" }] },
+            { "id": "ge-02-4", "type": "fillBlank", "target": "___ idea és bona.", "en": "The idea is good.", "answer": { "target": "La" }, "distractors": [{ "target": "L'" }, { "target": "El" }, { "target": "Els" }], "hint": "An unstressed i- blocks the apostrophe." },
+            { "id": "ge-02-5", "type": "fillBlank", "target": "___ llibres són a casa.", "en": "The books are at home.", "answer": { "target": "Els" }, "distractors": [{ "target": "Les" }, { "target": "El" }, { "target": "L'" }] },
+            { "id": "ge-02-6", "type": "spotError", "target": "El escola és gran.", "en": "The school is big.", "errorWord": { "target": "El" }, "correction": { "target": "L'" } },
+            { "id": "ge-02-7", "type": "matchPairs", "prompt": "Match each noun with the article it takes.", "pairs": [{ "target": "l'home", "en": "the man" }, { "target": "la dona", "en": "the woman" }, { "target": "els nens", "en": "the children" }, { "target": "l'aigua", "en": "the water" }] },
+            { "id": "ge-02-8", "type": "chooseTranslation", "direction": "toTarget", "target": "L'hora és tard.", "en": "The hour is late.", "distractorsTarget": [{ "target": "La hora és tard." }, { "target": "El hora és tard." }, { "target": "Les hora és tard." }], "distractorsEn": [] }
+          ]
+        },
+        {
+          "id": "gl-03",
+          "title": "Gender, number and agreement",
+          "subtitle": "Everything in the phrase has to match.",
+          "grammarPoint": "gender-number-agreement",
+          "grammarPointEn": "noun and adjective agreement in gender and number, plural formation, and adjective position after the noun",
+          "slides": [
+            {
+              "id": "gs-03-1",
+              "title": "The adjective follows the noun and copies it",
+              "body": "Unlike English, the adjective normally comes after the noun, and it changes to match.",
+              "examples": [
+                { "target": "un noi alt", "en": "a tall boy" },
+                { "target": "una noia alta", "en": "a tall girl" },
+                { "target": "uns nois alts", "en": "tall boys" },
+                { "target": "unes noies altes", "en": "tall girls" }
+              ]
+            },
+            {
+              "id": "gs-03-2",
+              "title": "Feminines are mostly -a, with a few twists",
+              "body": "Add -a to the masculine. Some endings change more than that, and a few adjectives never change at all.",
+              "examples": [
+                { "target": "Aquesta poma és bona.", "en": "This apple is good." },
+                { "target": "La camisa és blava.", "en": "The shirt is blue." }
+              ],
+              "table": [
+                ["petit", "petita"],
+                ["bo", "bona"],
+                ["blau", "blava"],
+                ["cansat", "cansada"],
+                ["pobre", "pobra"],
+                ["gran", "gran"]
+              ]
+            },
+            {
+              "id": "gs-03-3",
+              "title": "Plurals: -s, -es, -os",
+              "body": "Most words add -s. Feminines in -a switch to -es. Words ending in -s, -ç, -x or -ig add -os.",
+              "examples": [
+                { "target": "dos llibres", "en": "two books" },
+                { "target": "les cases blanques", "en": "the white houses" },
+                { "target": "els gossos petits", "en": "the small dogs" }
+              ],
+              "table": [
+                ["llibre", "llibres"],
+                ["casa", "cases"],
+                ["gos", "gossos"],
+                ["peix", "peixos"],
+                ["feliç", "feliços"],
+                ["pa", "pans"]
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-03-1", "type": "fillBlank", "target": "La casa és ___.", "en": "The house is small.", "answer": { "target": "petita" }, "distractors": [{ "target": "petit" }, { "target": "petits" }, { "target": "petites" }] },
+            { "id": "ge-03-2", "type": "fillBlank", "target": "Les pomes són ___.", "en": "The apples are good.", "answer": { "target": "bones" }, "distractors": [{ "target": "bons" }, { "target": "bona" }, { "target": "bo" }] },
+            { "id": "ge-03-3", "type": "fillBlank", "target": "Tinc dos ___ petits.", "en": "I have two small dogs.", "answer": { "target": "gossos" }, "distractors": [{ "target": "gos" }, { "target": "gosos" }, { "target": "gossa" }] },
+            { "id": "ge-03-4", "type": "fillBlank", "target": "La camisa és ___.", "en": "The shirt is blue.", "answer": { "target": "blava" }, "distractors": [{ "target": "blau" }, { "target": "blaus" }, { "target": "blaves" }] },
+            { "id": "ge-03-5", "type": "spotError", "target": "Les cases són blanc.", "en": "The houses are white.", "errorWord": { "target": "blanc" }, "correction": { "target": "blanques" } },
+            { "id": "ge-03-6", "type": "buildSentence", "en": "I have a small white house.", "words": [{ "target": "Tinc" }, { "target": "una" }, { "target": "casa" }, { "target": "blanca" }, { "target": "petita" }], "extraWords": [{ "target": "blanc" }, { "target": "petit" }], "altOrders": [["Tinc", "una", "casa", "petita", "blanca"]] },
+            { "id": "ge-03-7", "type": "matchPairs", "prompt": "Match the masculine adjective with its feminine.", "pairs": [{ "target": "bo", "en": "bona" }, { "target": "blau", "en": "blava" }, { "target": "cansat", "en": "cansada" }, { "target": "pobre", "en": "pobra" }] },
+            { "id": "ge-03-8", "type": "chooseTranslation", "direction": "toEn", "target": "Els peixos són petits.", "en": "The fish are small.", "distractorsEn": ["The fish is small.", "The small fish is here.", "The birds are small."], "distractorsTarget": [] }
+          ]
+        },
+        {
+          "id": "gl-04",
+          "title": "Saying no",
+          "subtitle": "no before the verb, and the double negatives Catalan insists on.",
+          "grammarPoint": "negation",
+          "grammarPointEn": "negation with no before the verb, and obligatory double negation with res, ningú, mai and cap",
+          "slides": [
+            {
+              "id": "gs-04-1",
+              "title": "no goes straight before the verb",
+              "body": "There is no equivalent of English \"don't\" - just put no in front of the verb.",
+              "examples": [
+                { "target": "No parlo català.", "en": "I don't speak Catalan.", "highlight": "No" },
+                { "target": "No és a casa.", "en": "He isn't at home." },
+                { "target": "Avui no treballo.", "en": "I'm not working today." }
+              ]
+            },
+            {
+              "id": "gs-04-2",
+              "title": "Two negatives are correct here",
+              "body": "Catalan keeps no even when another negative word is present. Dropping it is the mistake, not the reverse.",
+              "examples": [
+                { "target": "No hi ha res.", "en": "There is nothing." },
+                { "target": "No ve ningú.", "en": "Nobody is coming." },
+                { "target": "No hi vaig mai.", "en": "I never go there." },
+                { "target": "No tinc cap llibre.", "en": "I don't have any book." }
+              ]
+            },
+            {
+              "id": "gs-04-3",
+              "title": "tampoc for \"neither\"",
+              "body": "Use tampoc when a negative applies to you as well.",
+              "examples": [
+                { "target": "Jo tampoc ho sé.", "en": "I don't know either." },
+                { "target": "Ella tampoc ve.", "en": "She isn't coming either." }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-04-1", "type": "fillBlank", "target": "Avui ___ treballo.", "en": "Today I'm not working.", "answer": { "target": "no" }, "distractors": [{ "target": "ni" }, { "target": "res" }, { "target": "mai" }] },
+            { "id": "ge-04-2", "type": "fillBlank", "target": "No hi ha ___ a la taula.", "en": "There is nothing on the table.", "answer": { "target": "res" }, "distractors": [{ "target": "ningú" }, { "target": "cap" }, { "target": "mai" }] },
+            { "id": "ge-04-3", "type": "fillBlank", "target": "No ve ___ a la festa.", "en": "Nobody is coming to the party.", "answer": { "target": "ningú" }, "distractors": [{ "target": "res" }, { "target": "mai" }, { "target": "cap" }] },
+            { "id": "ge-04-4", "type": "fillBlank", "target": "No tinc ___ llibre.", "en": "I don't have any book.", "answer": { "target": "cap" }, "distractors": [{ "target": "res" }, { "target": "ningú" }, { "target": "gens" }] },
+            { "id": "ge-04-5", "type": "spotError", "target": "Ella ve mai a casa.", "en": "She never comes home.", "errorWord": { "target": "ve" }, "correction": { "target": "no ve" }, "hint": "Catalan keeps no as well." },
+            { "id": "ge-04-6", "type": "buildSentence", "en": "I never eat fish.", "words": [{ "target": "No" }, { "target": "menjo" }, { "target": "mai" }, { "target": "peix" }], "extraWords": [{ "target": "res" }, { "target": "ningú" }], "altOrders": [["No", "menjo", "peix", "mai"]] },
+            { "id": "ge-04-7", "type": "chooseTranslation", "direction": "toEn", "target": "Jo tampoc parlo alemany.", "en": "I don't speak German either.", "distractorsEn": ["I also speak German.", "I never speak German.", "I don't speak German at all."], "distractorsTarget": [] },
+            { "id": "ge-04-8", "type": "chooseTranslation", "direction": "toTarget", "target": "No hi ha ningú aquí.", "en": "There is nobody here.", "distractorsTarget": [{ "target": "Hi ha ningú aquí." }, { "target": "No hi ha res aquí." }, { "target": "No hi ha ningú mai." }], "distractorsEn": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-02",
+      "title": "Everyday verbs",
+      "subtitle": "The present tense, the irregulars you cannot avoid, and asking questions.",
+      "lessons": [
+        {
+          "id": "gl-05",
+          "title": "The present tense",
+          "subtitle": "Three conjugations, and one of them splits in two.",
+          "grammarPoint": "present-indicative",
+          "grammarPointEn": "present indicative of the three conjugations, including the incoative -eix- type used by most -ir verbs",
+          "slides": [
+            {
+              "id": "gs-05-1",
+              "title": "Verbs come in three families",
+              "body": "The infinitive ending tells you which endings to use: -ar, -er and -re, or -ir.",
+              "examples": [
+                { "target": "Parlo català a casa.", "en": "I speak Catalan at home." },
+                { "target": "Perdem molt de temps.", "en": "We waste a lot of time." },
+                { "target": "Dormo vuit hores.", "en": "I sleep eight hours." }
+              ],
+              "table": [
+                ["parlar", "parlo, parles, parla, parlem, parleu, parlen"],
+                ["perdre", "perdo, perds, perd, perdem, perdeu, perden"],
+                ["dormir", "dormo, dorms, dorm, dormim, dormiu, dormen"]
+              ]
+            },
+            {
+              "id": "gs-05-2",
+              "title": "Most -ir verbs insert -eix-",
+              "body": "This is the majority pattern, so treat it as the default for -ir and learn the short list that skips it: dormir, sortir, obrir, sentir, morir.",
+              "examples": [
+                { "target": "Serveixen el dinar a la una.", "en": "They serve lunch at one." },
+                { "target": "Prefereixo el te.", "en": "I prefer tea." }
+              ],
+              "table": [
+                ["jo", "serveixo"],
+                ["tu", "serveixes"],
+                ["ell, ella", "serveix"],
+                ["nosaltres", "servim"],
+                ["vosaltres", "serviu"],
+                ["ells, elles", "serveixen"]
+              ]
+            },
+            {
+              "id": "gs-05-3",
+              "title": "The subject pronoun is usually left out",
+              "body": "The ending already says who, so jo, tu and ella appear only for emphasis or contrast.",
+              "examples": [
+                { "target": "Treballo a Girona.", "en": "I work in Girona." },
+                { "target": "Jo treballo, ell no.", "en": "I work, he doesn't." }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-05-1", "type": "fillBlank", "target": "Jo ___ català cada dia.", "en": "I speak Catalan every day.", "answer": { "target": "parlo" }, "distractors": [{ "target": "parles" }, { "target": "parla" }, { "target": "parlem" }] },
+            { "id": "ge-05-2", "type": "fillBlank", "target": "Ella ___ vuit hores.", "en": "She sleeps eight hours.", "answer": { "target": "dorm" }, "distractors": [{ "target": "dormo" }, { "target": "dorms" }, { "target": "dormim" }] },
+            { "id": "ge-05-3", "type": "fillBlank", "target": "Nosaltres ___ a Barcelona.", "en": "We work in Barcelona.", "answer": { "target": "treballem" }, "distractors": [{ "target": "treballo" }, { "target": "treballa" }, { "target": "treballen" }] },
+            { "id": "ge-05-4", "type": "fillBlank", "target": "Jo ___ el te al cafè.", "en": "I prefer tea to coffee.", "answer": { "target": "prefereixo" }, "distractors": [{ "target": "prefereix" }, { "target": "preferim" }, { "target": "preferiu" }] },
+            { "id": "ge-05-5", "type": "spotError", "target": "Jo dormeixo molt bé.", "en": "I sleep very well.", "errorWord": { "target": "dormeixo" }, "correction": { "target": "dormo" }, "hint": "dormir is one of the -ir verbs without -eix-." },
+            { "id": "ge-05-6", "type": "matchPairs", "prompt": "Match each verb with its \"we\" form.", "pairs": [{ "target": "parlem", "en": "we speak" }, { "target": "perdem", "en": "we lose" }, { "target": "dormim", "en": "we sleep" }, { "target": "servim", "en": "we serve" }] },
+            { "id": "ge-05-7", "type": "buildSentence", "en": "We eat at home every day.", "words": [{ "target": "Mengem" }, { "target": "a" }, { "target": "casa" }, { "target": "cada" }, { "target": "dia" }], "extraWords": [{ "target": "menjo" }, { "target": "mengen" }] },
+            { "id": "ge-05-8", "type": "chooseTranslation", "direction": "toEn", "target": "Els nens llegeixen molt.", "en": "The children read a lot.", "distractorsEn": ["The child reads a lot.", "The children write a lot.", "The children read little."], "distractorsTarget": [] }
+          ]
+        },
+        {
+          "id": "gl-06",
+          "title": "The irregular verbs you need first",
+          "subtitle": "Nine verbs that carry half of everyday Catalan.",
+          "grammarPoint": "irregular-present",
+          "grammarPointEn": "the present indicative of the high-frequency irregular verbs tenir, fer, anar, poder, voler, venir, dir, saber and veure",
+          "slides": [
+            {
+              "id": "gs-06-1",
+              "title": "The \"I\" form is where the surprise is",
+              "body": "For most of these, once you know the jo form the rest follows a steady pattern. Notice the -c ending: tinc, vinc, puc, dic.",
+              "examples": [
+                { "target": "Tinc dos germans.", "en": "I have two brothers." },
+                { "target": "Faig el sopar.", "en": "I'm making dinner." },
+                { "target": "No puc venir avui.", "en": "I can't come today." }
+              ],
+              "table": [
+                ["tenir", "tinc, tens, té, tenim, teniu, tenen"],
+                ["fer", "faig, fas, fa, fem, feu, fan"],
+                ["anar", "vaig, vas, va, anem, aneu, van"],
+                ["poder", "puc, pots, pot, podem, podeu, poden"],
+                ["voler", "vull, vols, vol, volem, voleu, volen"]
+              ]
+            },
+            {
+              "id": "gs-06-2",
+              "title": "Four more, just as common",
+              "body": "venir and dir take the same -c ending; saber and veure are one-offs worth memorising as they are.",
+              "examples": [
+                { "target": "No sé on és.", "en": "I don't know where he is." },
+                { "target": "Et veig demà.", "en": "I'll see you tomorrow." }
+              ],
+              "table": [
+                ["venir", "vinc, véns, ve, venim, veniu, vénen"],
+                ["dir", "dic, dius, diu, diem, dieu, diuen"],
+                ["saber", "sé, saps, sap, sabem, sabeu, saben"],
+                ["veure", "veig, veus, veu, veiem, veieu, veuen"]
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-06-1", "type": "fillBlank", "target": "Jo ___ dos germans.", "en": "I have two brothers.", "answer": { "target": "tinc" }, "distractors": [{ "target": "tens" }, { "target": "té" }, { "target": "tenim" }] },
+            { "id": "ge-06-2", "type": "fillBlank", "target": "Avui ___ el sopar jo.", "en": "Today I'm making dinner.", "answer": { "target": "faig" }, "distractors": [{ "target": "fas" }, { "target": "fa" }, { "target": "fem" }] },
+            { "id": "ge-06-3", "type": "fillBlank", "target": "No ___ venir demà.", "en": "I can't come tomorrow.", "answer": { "target": "puc" }, "distractors": [{ "target": "pots" }, { "target": "pot" }, { "target": "podem" }] },
+            { "id": "ge-06-4", "type": "fillBlank", "target": "No ___ on és la casa.", "en": "I don't know where the house is.", "answer": { "target": "sé" }, "distractors": [{ "target": "saps" }, { "target": "sap" }, { "target": "sabem" }] },
+            { "id": "ge-06-5", "type": "fillBlank", "target": "Ell ___ a l'escola cada dia.", "en": "He goes to school every day.", "answer": { "target": "va" }, "distractors": [{ "target": "vaig" }, { "target": "vas" }, { "target": "van" }] },
+            { "id": "ge-06-6", "type": "spotError", "target": "Jo teno molta feina.", "en": "I have a lot of work.", "errorWord": { "target": "teno" }, "correction": { "target": "tinc" } },
+            { "id": "ge-06-7", "type": "matchPairs", "prompt": "Match each \"I\" form with its verb.", "pairs": [{ "target": "tinc", "en": "tenir - to have" }, { "target": "faig", "en": "fer - to do, to make" }, { "target": "vull", "en": "voler - to want" }, { "target": "veig", "en": "veure - to see" }, { "target": "dic", "en": "dir - to say" }] },
+            { "id": "ge-06-8", "type": "chooseTranslation", "direction": "toTarget", "target": "Vull un cafè amb llet.", "en": "I want a coffee with milk.", "distractorsTarget": [{ "target": "Volo un cafè amb llet." }, { "target": "Vol un cafè amb llet." }, { "target": "Volem un cafè amb llet." }], "distractorsEn": [] }
+          ]
+        },
+        {
+          "id": "gl-07",
+          "title": "tenir and hi ha",
+          "subtitle": "Having things, feeling things, and saying that something exists.",
+          "grammarPoint": "tenir-hi-ha",
+          "grammarPointEn": "tenir for possession, age and physical states, and the invariable existential hi ha",
+          "slides": [
+            {
+              "id": "gs-07-1",
+              "title": "Catalan has states that English is",
+              "body": "Where English says \"I am hungry\", Catalan says \"I have hunger\". Age works the same way.",
+              "examples": [
+                { "target": "Tinc gana.", "en": "I'm hungry." },
+                { "target": "Tinc vint anys.", "en": "I'm twenty years old." },
+                { "target": "Tens fred?", "en": "Are you cold?" }
+              ],
+              "table": [
+                ["tenir gana", "to be hungry"],
+                ["tenir set", "to be thirsty"],
+                ["tenir son", "to be sleepy"],
+                ["tenir fred", "to be cold"],
+                ["tenir calor", "to be hot"],
+                ["tenir raó", "to be right"]
+              ]
+            },
+            {
+              "id": "gs-07-2",
+              "title": "hi ha never changes",
+              "body": "It covers both \"there is\" and \"there are\", singular and plural alike.",
+              "examples": [
+                { "target": "Hi ha un gat a la cuina.", "en": "There is a cat in the kitchen." },
+                { "target": "Hi ha molts nens al parc.", "en": "There are a lot of children in the park." },
+                { "target": "No hi ha pa.", "en": "There is no bread." }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-07-1", "type": "fillBlank", "target": "___ gana, vull menjar.", "en": "I'm hungry, I want to eat.", "answer": { "target": "Tinc" }, "distractors": [{ "target": "Soc" }, { "target": "Estic" }, { "target": "Hi ha" }] },
+            { "id": "ge-07-2", "type": "fillBlank", "target": "El meu fill ___ deu anys.", "en": "My son is ten years old.", "answer": { "target": "té" }, "distractors": [{ "target": "és" }, { "target": "està" }, { "target": "tinc" }] },
+            { "id": "ge-07-3", "type": "fillBlank", "target": "___ un gat a la cuina.", "en": "There is a cat in the kitchen.", "answer": { "target": "Hi ha" }, "distractors": [{ "target": "És" }, { "target": "Té" }, { "target": "Està" }] },
+            { "id": "ge-07-4", "type": "fillBlank", "target": "Hi ___ molts llibres a casa.", "en": "There are a lot of books at home.", "answer": { "target": "ha" }, "distractors": [{ "target": "han" }, { "target": "són" }, { "target": "tenen" }], "hint": "hi ha never becomes plural." },
+            { "id": "ge-07-5", "type": "spotError", "target": "Soc vint anys.", "en": "I am twenty years old.", "errorWord": { "target": "Soc" }, "correction": { "target": "Tinc" } },
+            { "id": "ge-07-6", "type": "matchPairs", "prompt": "Match the Catalan expression with its meaning.", "pairs": [{ "target": "tinc gana", "en": "I'm hungry" }, { "target": "tinc set", "en": "I'm thirsty" }, { "target": "tinc fred", "en": "I'm cold" }, { "target": "tinc son", "en": "I'm sleepy" }] },
+            { "id": "ge-07-7", "type": "buildSentence", "en": "There are two dogs at home.", "words": [{ "target": "Hi" }, { "target": "ha" }, { "target": "dos" }, { "target": "gossos" }, { "target": "a" }, { "target": "casa" }], "extraWords": [{ "target": "han" }, { "target": "són" }] },
+            { "id": "ge-07-8", "type": "chooseTranslation", "direction": "toEn", "target": "No hi ha pa a casa.", "en": "There is no bread at home.", "distractorsEn": ["I don't have bread at home.", "There is bread at home.", "The bread is not at home."], "distractorsTarget": [] }
+          ]
+        },
+        {
+          "id": "gl-08",
+          "title": "Asking questions",
+          "subtitle": "No extra machinery - just the right question word.",
+          "grammarPoint": "questions",
+          "grammarPointEn": "yes/no questions by intonation with no do-support, and the question words què, qui, on, quan, com, quant, quin and per què",
+          "slides": [
+            {
+              "id": "gs-08-1",
+              "title": "A statement becomes a question by tone alone",
+              "body": "There is nothing like English \"do\". Keep the sentence as it is and raise your voice at the end.",
+              "examples": [
+                { "target": "Parles català.", "en": "You speak Catalan." },
+                { "target": "Parles català?", "en": "Do you speak Catalan?" },
+                { "target": "Vols un cafè?", "en": "Do you want a coffee?" }
+              ]
+            },
+            {
+              "id": "gs-08-2",
+              "title": "The question words",
+              "body": "They go at the front. quin agrees with the noun that follows it.",
+              "examples": [
+                { "target": "On vius?", "en": "Where do you live?" },
+                { "target": "Quina hora és?", "en": "What time is it?" },
+                { "target": "Per què no menges?", "en": "Why aren't you eating?" }
+              ],
+              "table": [
+                ["què", "what"],
+                ["qui", "who"],
+                ["on", "where"],
+                ["quan", "when"],
+                ["com", "how"],
+                ["quant", "how much"],
+                ["quin, quina", "which, what"],
+                ["per què", "why"]
+              ]
+            },
+            {
+              "id": "gs-08-3",
+              "title": "The preposition comes first",
+              "body": "Catalan never leaves a preposition stranded at the end the way English does.",
+              "examples": [
+                { "target": "Amb qui parles?", "en": "Who are you talking to?" },
+                { "target": "De què parleu?", "en": "What are you talking about?" }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-08-1", "type": "fillBlank", "target": "___ vius ara?", "en": "Where do you live now?", "answer": { "target": "On" }, "distractors": [{ "target": "Què" }, { "target": "Qui" }, { "target": "Com" }] },
+            { "id": "ge-08-2", "type": "fillBlank", "target": "___ és aquell home?", "en": "Who is that man?", "answer": { "target": "Qui" }, "distractors": [{ "target": "Què" }, { "target": "On" }, { "target": "Quin" }] },
+            { "id": "ge-08-3", "type": "fillBlank", "target": "___ hora és?", "en": "What time is it?", "answer": { "target": "Quina" }, "distractors": [{ "target": "Quin" }, { "target": "Què" }, { "target": "Quant" }] },
+            { "id": "ge-08-4", "type": "fillBlank", "target": "___ costa el pa?", "en": "How much does the bread cost?", "answer": { "target": "Quant" }, "distractors": [{ "target": "Quin" }, { "target": "Com" }, { "target": "Què" }] },
+            { "id": "ge-08-5", "type": "fillBlank", "target": "___ qui parles?", "en": "Who are you talking to?", "answer": { "target": "Amb" }, "distractors": [{ "target": "De" }, { "target": "Per" }, { "target": "A" }] },
+            { "id": "ge-08-6", "type": "spotError", "target": "Fas parlar català tu?", "en": "Do you speak Catalan?", "errorWord": { "target": "Fas" }, "correction": { "target": "Parles" }, "hint": "Catalan has no do-support." },
+            { "id": "ge-08-7", "type": "matchPairs", "prompt": "Match the question word with its meaning.", "pairs": [{ "target": "on", "en": "where" }, { "target": "quan", "en": "when" }, { "target": "com", "en": "how" }, { "target": "per què", "en": "why" }] },
+            { "id": "ge-08-8", "type": "chooseTranslation", "direction": "toTarget", "target": "Vols un cafè?", "en": "Do you want a coffee?", "distractorsTarget": [{ "target": "Fas voler un cafè?" }, { "target": "Vols tu fer un cafè?" }, { "target": "Un cafè fas voler?" }], "distractorsEn": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-03",
+      "title": "Pointing at the world",
+      "subtitle": "Whose it is, where it is, when it is, and what already happened.",
+      "lessons": [
+        {
+          "id": "gl-09",
+          "title": "Possessives",
+          "subtitle": "el meu, la meva - and the article that comes with them.",
+          "grammarPoint": "possessives",
+          "grammarPointEn": "possessive adjectives with their obligatory definite article, agreeing with the thing owned rather than the owner",
+          "slides": [
+            {
+              "id": "gs-09-1",
+              "title": "The article is part of the possessive",
+              "body": "Catalan says \"the my brother\". Leaving the article out is the commonest mistake here.",
+              "examples": [
+                { "target": "el meu germà", "en": "my brother" },
+                { "target": "la meva germana", "en": "my sister" },
+                { "target": "els meus amics", "en": "my friends" }
+              ]
+            },
+            {
+              "id": "gs-09-2",
+              "title": "It agrees with what is owned, not with the owner",
+              "body": "la seva casa is \"his house\" or \"her house\" - the -a comes from casa, not from the person.",
+              "examples": [
+                { "target": "La seva casa és gran.", "en": "His house is big." },
+                { "target": "Els seus fills són petits.", "en": "Her children are small." }
+              ],
+              "table": [
+                ["jo", "el meu, la meva"],
+                ["tu", "el teu, la teva"],
+                ["ell, ella", "el seu, la seva"],
+                ["nosaltres", "el nostre, la nostra"],
+                ["vosaltres", "el vostre, la vostra"],
+                ["ells, elles", "el seu, la seva"]
+              ]
+            },
+            {
+              "id": "gs-09-3",
+              "title": "de for whose it is",
+              "body": "For a named owner, Catalan uses de. There is nothing like the English apostrophe-s.",
+              "examples": [
+                { "target": "el llibre de la Marta", "en": "Marta's book" },
+                { "target": "la casa del meu pare", "en": "my father's house" }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-09-1", "type": "fillBlank", "target": "Aquest és ___ meu germà.", "en": "This is my brother.", "answer": { "target": "el" }, "distractors": [{ "target": "la" }, { "target": "els" }, { "target": "un" }] },
+            { "id": "ge-09-2", "type": "fillBlank", "target": "La ___ germana viu a Girona.", "en": "My sister lives in Girona.", "answer": { "target": "meva" }, "distractors": [{ "target": "meu" }, { "target": "meus" }, { "target": "meves" }] },
+            { "id": "ge-09-3", "type": "fillBlank", "target": "___ seus fills són petits.", "en": "Her children are small.", "answer": { "target": "Els" }, "distractors": [{ "target": "Les" }, { "target": "El" }, { "target": "La" }] },
+            { "id": "ge-09-4", "type": "fillBlank", "target": "És el llibre ___ la Marta.", "en": "It's Marta's book.", "answer": { "target": "de" }, "distractors": [{ "target": "a" }, { "target": "per" }, { "target": "amb" }] },
+            { "id": "ge-09-5", "type": "spotError", "target": "Meu pare treballa aquí.", "en": "My father works here.", "errorWord": { "target": "Meu" }, "correction": { "target": "El meu" } },
+            { "id": "ge-09-6", "type": "matchPairs", "prompt": "Match the possessive with its meaning.", "pairs": [{ "target": "el meu", "en": "my" }, { "target": "el teu", "en": "your" }, { "target": "el seu", "en": "his, her" }, { "target": "el nostre", "en": "our" }] },
+            { "id": "ge-09-7", "type": "buildSentence", "en": "My house is very small.", "words": [{ "target": "La" }, { "target": "meva" }, { "target": "casa" }, { "target": "és" }, { "target": "molt" }, { "target": "petita" }], "extraWords": [{ "target": "meu" }, { "target": "petit" }] },
+            { "id": "ge-09-8", "type": "chooseTranslation", "direction": "toEn", "target": "La seva casa és a la platja.", "en": "Her house is at the beach.", "distractorsEn": ["My house is at the beach.", "Her house is big.", "She is at the beach house."], "distractorsTarget": [] }
+          ]
+        },
+        {
+          "id": "gl-10",
+          "title": "This, that, and the little words in between",
+          "subtitle": "Demonstratives, prepositions, and the contractions al and del.",
+          "grammarPoint": "demonstratives-prepositions",
+          "grammarPointEn": "demonstratives aquest and aquell, the basic prepositions, the contractions al/del/pel, and the absence of a personal a",
+          "slides": [
+            {
+              "id": "gs-10-1",
+              "title": "aquest is near you, aquell is over there",
+              "body": "Both agree in gender and number with the noun. això and allò stand for a whole idea instead of a noun.",
+              "examples": [
+                { "target": "aquest llibre", "en": "this book" },
+                { "target": "aquesta casa", "en": "this house" },
+                { "target": "aquells nens", "en": "those children" }
+              ],
+              "table": [
+                ["aquest", "aquesta"],
+                ["aquests", "aquestes"],
+                ["aquell", "aquella"],
+                ["aquells", "aquelles"],
+                ["això", "this (idea)"],
+                ["allò", "that (idea)"]
+              ]
+            },
+            {
+              "id": "gs-10-2",
+              "title": "a and de merge with the article",
+              "body": "a + el makes al, de + el makes del, per + el makes pel. Before l' there is no merging: a l'escola.",
+              "examples": [
+                { "target": "Vaig al mercat.", "en": "I'm going to the market." },
+                { "target": "La porta del cotxe.", "en": "The car door." },
+                { "target": "Vaig a l'escola.", "en": "I'm going to school." }
+              ],
+              "table": [
+                ["a + el", "al"],
+                ["a + els", "als"],
+                ["de + el", "del"],
+                ["de + els", "dels"],
+                ["per + el", "pel"],
+                ["per + els", "pels"]
+              ]
+            },
+            {
+              "id": "gs-10-3",
+              "title": "No a before a person",
+              "body": "If you know Spanish, drop the personal a. Catalan does not use it.",
+              "examples": [
+                { "target": "Veig la Maria.", "en": "I see Maria." },
+                { "target": "Truco el meu germà.", "en": "I'm calling my brother." }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-10-1", "type": "fillBlank", "target": "___ casa és molt gran.", "en": "This house is very big.", "answer": { "target": "Aquesta" }, "distractors": [{ "target": "Aquest" }, { "target": "Aquests" }, { "target": "Aquelles" }] },
+            { "id": "ge-10-2", "type": "fillBlank", "target": "Vaig ___ mercat cada dia.", "en": "I go to the market every day.", "answer": { "target": "al" }, "distractors": [{ "target": "a el" }, { "target": "del" }, { "target": "pel" }] },
+            { "id": "ge-10-3", "type": "fillBlank", "target": "La porta ___ cotxe és oberta.", "en": "The car door is open.", "answer": { "target": "del" }, "distractors": [{ "target": "de el" }, { "target": "al" }, { "target": "pel" }] },
+            { "id": "ge-10-4", "type": "fillBlank", "target": "Vaig ___ escola a peu.", "en": "I go to school on foot.", "answer": { "target": "a l'" }, "distractors": [{ "target": "al" }, { "target": "als" }, { "target": "del" }] },
+            { "id": "ge-10-5", "type": "spotError", "target": "Veig a la Maria cada dia.", "en": "I see Maria every day.", "errorWord": { "target": "a" }, "correction": { "target": "Veig" }, "hint": "Catalan has no personal a: just Veig la Maria." },
+            { "id": "ge-10-6", "type": "matchPairs", "prompt": "Match the contraction with what it stands for.", "pairs": [{ "target": "al", "en": "a + el" }, { "target": "del", "en": "de + el" }, { "target": "pels", "en": "per + els" }, { "target": "dels", "en": "de + els" }] },
+            { "id": "ge-10-7", "type": "buildSentence", "en": "Those children go to the beach.", "words": [{ "target": "Aquells" }, { "target": "nens" }, { "target": "van" }, { "target": "a" }, { "target": "la" }, { "target": "platja" }], "extraWords": [{ "target": "aquelles" }, { "target": "al" }] },
+            { "id": "ge-10-8", "type": "chooseTranslation", "direction": "toEn", "target": "Aquest llibre és del meu pare.", "en": "This book is my father's.", "distractorsEn": ["This book is for my father.", "That book is my father's.", "My father is reading this book."], "distractorsTarget": [] }
+          ]
+        },
+        {
+          "id": "gl-11",
+          "title": "Numbers, days and the time",
+          "subtitle": "Including the quarters, which are unmistakably Catalan.",
+          "grammarPoint": "numbers-time",
+          "grammarPointEn": "cardinal numbers with the feminine dues, days and months, and telling the time including the traditional quarter system",
+          "slides": [
+            {
+              "id": "gs-11-1",
+              "title": "Only one and two have a feminine",
+              "body": "un/una and dos/dues change; every other number is the same for both genders.",
+              "examples": [
+                { "target": "dos llibres", "en": "two books" },
+                { "target": "dues cases", "en": "two houses" },
+                { "target": "Tinc vint anys.", "en": "I'm twenty years old." }
+              ],
+              "table": [
+                ["1, 2", "un/una, dos/dues"],
+                ["3, 4, 5", "tres, quatre, cinc"],
+                ["6, 7, 8", "sis, set, vuit"],
+                ["9, 10, 11", "nou, deu, onze"],
+                ["20, 21", "vint, vint-i-un"],
+                ["100, 1000", "cent, mil"]
+              ]
+            },
+            {
+              "id": "gs-11-2",
+              "title": "Days and months are not capitalised",
+              "body": "Use el before a day to mean \"on\", and els for a repeated habit.",
+              "examples": [
+                { "target": "Ens veiem el dilluns.", "en": "We're meeting on Monday." },
+                { "target": "Treballo els dissabtes.", "en": "I work on Saturdays." },
+                { "target": "Al maig fa bon temps.", "en": "In May the weather is good." }
+              ]
+            },
+            {
+              "id": "gs-11-3",
+              "title": "The hour is feminine and plural",
+              "body": "Són les tres, because hores is understood. One o'clock is the only singular: és la una.",
+              "examples": [
+                { "target": "Quina hora és?", "en": "What time is it?" },
+                { "target": "És la una.", "en": "It's one o'clock." },
+                { "target": "Són les vuit del matí.", "en": "It's eight in the morning." }
+              ]
+            },
+            {
+              "id": "gs-11-4",
+              "title": "Catalan counts quarters towards the next hour",
+              "body": "This is the traditional system and you will hear it constantly. Two quarters of five means half past four - the quarters count up to the hour ahead, not from the one behind.",
+              "examples": [
+                { "target": "un quart de cinc", "en": "quarter past four" },
+                { "target": "dos quarts de cinc", "en": "half past four" },
+                { "target": "tres quarts de cinc", "en": "quarter to five" }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-11-1", "type": "fillBlank", "target": "Tinc ___ germanes.", "en": "I have two sisters.", "answer": { "target": "dues" }, "distractors": [{ "target": "dos" }, { "target": "duos" }, { "target": "does" }] },
+            { "id": "ge-11-2", "type": "fillBlank", "target": "___ les tres de la tarda.", "en": "It's three in the afternoon.", "answer": { "target": "Són" }, "distractors": [{ "target": "És" }, { "target": "Està" }, { "target": "Hi ha" }] },
+            { "id": "ge-11-3", "type": "fillBlank", "target": "___ la una en punt.", "en": "It's one o'clock sharp.", "answer": { "target": "És" }, "distractors": [{ "target": "Són" }, { "target": "Està" }, { "target": "Hi ha" }] },
+            { "id": "ge-11-4", "type": "fillBlank", "target": "Treballo ___ dissabtes.", "en": "I work on Saturdays.", "answer": { "target": "els" }, "distractors": [{ "target": "les" }, { "target": "el" }, { "target": "al" }] },
+            { "id": "ge-11-5", "type": "fillBlank", "target": "El llibre té ___ pàgines.", "en": "The book has a hundred pages.", "answer": { "target": "cent" }, "distractors": [{ "target": "mil" }, { "target": "vint" }, { "target": "deu" }] },
+            { "id": "ge-11-6", "type": "spotError", "target": "Tinc dos germanes petites.", "en": "I have two little sisters.", "errorWord": { "target": "dos" }, "correction": { "target": "dues" } },
+            { "id": "ge-11-7", "type": "matchPairs", "prompt": "Match the Catalan time with the clock.", "pairs": [{ "target": "un quart de cinc", "en": "4:15" }, { "target": "dos quarts de cinc", "en": "4:30" }, { "target": "tres quarts de cinc", "en": "4:45" }, { "target": "les cinc en punt", "en": "5:00" }] },
+            { "id": "ge-11-8", "type": "chooseTranslation", "direction": "toEn", "target": "Són dos quarts de nou.", "en": "It's half past eight.", "distractorsEn": ["It's two o'clock.", "It's a quarter past nine.", "It's nine o'clock."], "distractorsTarget": [] }
+          ]
+        },
+        {
+          "id": "gl-12",
+          "title": "The past, the Catalan way",
+          "subtitle": "anar plus an infinitive - and it does not mean \"going to\".",
+          "grammarPoint": "periphrastic-past",
+          "grammarPointEn": "the periphrastic past: present of anar plus the infinitive, the ordinary way to speak about completed past events",
+          "slides": [
+            {
+              "id": "gs-12-1",
+              "title": "vaig menjar means \"I ate\"",
+              "body": "It looks like \"I go to eat\", but it is the normal past tense in Catalan. It catches out every learner once.",
+              "examples": [
+                { "target": "Ahir vaig menjar peix.", "en": "Yesterday I ate fish.", "highlight": "vaig" },
+                { "target": "Va arribar molt tard.", "en": "He arrived very late." },
+                { "target": "Vam anar a la platja.", "en": "We went to the beach." }
+              ],
+              "table": [
+                ["jo", "vaig"],
+                ["tu", "vas"],
+                ["ell, ella", "va"],
+                ["nosaltres", "vam"],
+                ["vosaltres", "vau"],
+                ["ells, elles", "van"]
+              ]
+            },
+            {
+              "id": "gs-12-2",
+              "title": "The second verb never changes",
+              "body": "Only the auxiliary carries the person; the main verb stays in the infinitive.",
+              "examples": [
+                { "target": "Vaig veure la Marta.", "en": "I saw Marta." },
+                { "target": "Van sortir a les vuit.", "en": "They left at eight." }
+              ]
+            },
+            {
+              "id": "gs-12-3",
+              "title": "Telling it apart from the present",
+              "body": "va followed by an infinitive is past. va on its own, or with a place, is the present of anar.",
+              "examples": [
+                { "target": "Va a l'escola.", "en": "He goes to school." },
+                { "target": "Va anar a l'escola.", "en": "He went to school." }
+              ]
+            }
+          ],
+          "exercises": [
+            { "id": "ge-12-1", "type": "fillBlank", "target": "Ahir ___ menjar peix.", "en": "Yesterday I ate fish.", "answer": { "target": "vaig" }, "distractors": [{ "target": "vas" }, { "target": "va" }, { "target": "van" }] },
+            { "id": "ge-12-2", "type": "fillBlank", "target": "Ells ___ arribar molt tard.", "en": "They arrived very late.", "answer": { "target": "van" }, "distractors": [{ "target": "vam" }, { "target": "vau" }, { "target": "va" }] },
+            { "id": "ge-12-3", "type": "fillBlank", "target": "Nosaltres ___ anar a la platja.", "en": "We went to the beach.", "answer": { "target": "vam" }, "distractors": [{ "target": "van" }, { "target": "vau" }, { "target": "vaig" }] },
+            { "id": "ge-12-4", "type": "fillBlank", "target": "La Marta va ___ un llibre.", "en": "Marta read a book.", "answer": { "target": "llegir" }, "distractors": [{ "target": "llegeix" }, { "target": "llegia" }, { "target": "llegit" }] },
+            { "id": "ge-12-5", "type": "spotError", "target": "Ahir vaig menjava peix.", "en": "Yesterday I ate fish.", "errorWord": { "target": "menjava" }, "correction": { "target": "menjar" } },
+            { "id": "ge-12-6", "type": "buildSentence", "en": "Yesterday we went to the beach.", "words": [{ "target": "Ahir" }, { "target": "vam" }, { "target": "anar" }, { "target": "a" }, { "target": "la" }, { "target": "platja" }], "extraWords": [{ "target": "van" }, { "target": "anem" }] },
+            { "id": "ge-12-7", "type": "chooseTranslation", "direction": "toEn", "target": "Vaig veure la Marta al mercat.", "en": "I saw Marta at the market.", "distractorsEn": ["I'm going to see Marta at the market.", "I see Marta at the market.", "Marta saw me at the market."], "distractorsTarget": [] },
+            { "id": "ge-12-8", "type": "chooseTranslation", "direction": "toEn", "target": "Va anar a l'escola a peu.", "en": "He went to school on foot.", "distractorsEn": ["He goes to school on foot.", "He is going to school on foot.", "He will go to school on foot."], "distractorsTarget": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

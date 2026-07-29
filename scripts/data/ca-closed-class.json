@@ -1,0 +1,545 @@
+{
+  "note": "Closed-class Catalan vocabulary: pronouns, contractions, prepositions, connectors, quantifiers and numerals. These are the most frequent words in the language and the ones a learner taps first, but they cannot be generated reliably - a model asked for '150 common Catalan words' returns nouns. They are authored here, with the surface variants (m', 'l, se, als, meva…) the tokenizer actually produces, so tap-to-reveal works on real running text.",
+  "delete": [
+    { "target": "equipo", "why": "Spanish; Catalan is 'equip', already in the lexicon" },
+    { "target": "fruta", "why": "Spanish; Catalan is 'fruita', already in the lexicon" },
+    { "target": "debate", "why": "Spanish; Catalan is 'debat'" },
+    { "target": "telefon", "why": "misspelling of 'telèfon', which is already in the lexicon" },
+    { "target": "rabia", "why": "Spanish; 'ràbia' is already in the lexicon" },
+    { "target": "irresponsible", "why": "English/Spanish; Catalan is 'irresponsable'" },
+    { "target": "taça", "why": "not standard; 'tassa' is already in the lexicon" },
+    { "target": "llàmpada", "why": "not standard Catalan (làmpada / llum)" },
+    { "target": "peuatge", "why": "misspelling of 'peatge', and off-register for A2" },
+    { "target": "imatger", "why": "not a Catalan verb" },
+    { "target": "yogar", "why": "not a Catalan verb" },
+    { "target": "peixar", "why": "not a Catalan verb" },
+    { "target": "pellar", "why": "not standard Catalan" },
+    { "target": "bresa", "why": "not standard (bresca)" },
+    { "target": "fornal", "why": "a forge; wrong sense in a kitchen list" },
+    { "target": "estriu", "why": "stirrup; wrong sense in an appliance list" },
+    { "target": "fregidor", "why": "not standard (fregidora)" },
+    { "target": "festes", "why": "plural headword; 'festa' is already in the lexicon" },
+    { "target": "viuda", "why": "misspelling of 'vídua'" },
+    { "target": "infús", "why": "an adjective, glossed as a noun" },
+    { "target": "recompensació", "why": "not standard (recompensa)" },
+    { "target": "raciocini", "why": "literary; far outside A1-A2" },
+    { "target": "atrinxerar", "why": "military register, far outside A1-A2" },
+    { "target": "revisitar", "why": "marginal calque" },
+    { "target": "cuitar", "why": "archaic" }
+  ],
+  "rename": [
+    { "from": "ossos", "to": "os", "why": "plural headword; dictionary form is the singular" },
+    { "from": "camps", "to": "camp", "why": "plural headword" },
+    { "from": "sabates", "to": "sabata", "why": "plural headword" },
+    { "from": "guants", "to": "guant", "why": "plural headword" },
+    { "from": "llavis", "to": "llavi", "why": "plural headword" }
+  ],
+  "patch": [
+    { "target": "el", "glossEn": "the (masc.); him, it", "addVariants": ["l'", "lo", "'l"] },
+    { "target": "la", "glossEn": "the (fem.); her, it", "addVariants": ["-la"] },
+    { "target": "els", "glossEn": "the (masc. pl.); them, to him/her", "addVariants": ["los", "'ls"] },
+    { "target": "les", "glossEn": "the (fem. pl.); them", "addVariants": [] },
+    { "target": "en", "glossEn": "in, on; of it, of them", "addVariants": ["n'", "ne", "'n"] },
+    { "target": "de", "glossEn": "of, from", "addVariants": ["d'"] },
+    { "target": "un", "glossEn": "a, one", "addVariants": ["uns"] },
+    { "target": "una", "glossEn": "a, one (fem.)", "addVariants": ["unes"] },
+    { "target": "aquest", "glossEn": "this", "addVariants": ["aquesta", "aquests", "aquestes"] },
+    { "target": "aquell", "glossEn": "that (over there)", "addVariants": ["aquella", "aquells", "aquelles"] },
+    { "target": "meu", "glossEn": "my, mine", "addVariants": ["meva", "meus", "meves"] },
+    { "target": "teu", "glossEn": "your, yours", "addVariants": ["teva", "teus", "teves"] },
+    { "target": "seu", "glossEn": "his, her, their", "addVariants": ["seva", "seus", "seves"] },
+    { "target": "nostre", "glossEn": "our, ours", "addVariants": ["nostra", "nostres"] },
+    { "target": "tot", "glossEn": "all, every, whole", "addVariants": ["tota", "tots", "totes"] },
+    { "target": "molt", "glossEn": "very, a lot, much", "addVariants": ["molta", "molts", "moltes"] },
+    { "target": "poc", "glossEn": "little, few", "addVariants": ["poca", "pocs", "poques"] },
+    { "target": "algun", "glossEn": "some, any", "addVariants": ["alguna", "alguns", "algunes"] },
+    { "target": "tant", "glossEn": "so much, so many", "addVariants": ["tanta", "tants", "tantes"] },
+    { "target": "cap", "glossEn": "head; no, any (with a negative)", "addVariants": [] },
+    { "target": "nou", "glossEn": "new; nine", "addVariants": ["nova", "nous", "noves"] },
+    { "target": "vostè", "glossEn": "you (polite)", "addVariants": ["vostès"] },
+    { "target": "què", "glossEn": "what", "addVariants": [] }
+  ],
+  "add": [
+    {
+      "target": "em", "pos": "pronoun", "band": 1,
+      "glossEn": "me, to me (before the verb)",
+      "variants": ["m'", "me", "'m"],
+      "exampleTarget": "Em dic Anna.", "exampleEn": "My name is Anna."
+    },
+    {
+      "target": "et", "pos": "pronoun", "band": 1,
+      "glossEn": "you, to you (before the verb)",
+      "variants": ["t'", "te", "'t"],
+      "exampleTarget": "Et veig demà.", "exampleEn": "I'll see you tomorrow."
+    },
+    {
+      "target": "es", "pos": "pronoun", "band": 1,
+      "glossEn": "himself, herself, oneself; also the impersonal 'one'",
+      "variants": ["s'", "se", "'s"],
+      "exampleTarget": "Es diu Pere.", "exampleEn": "His name is Pere."
+    },
+    {
+      "target": "ens", "pos": "pronoun", "band": 1,
+      "glossEn": "us, to us",
+      "variants": ["nos", "'ns"],
+      "exampleTarget": "Ens veiem cada dia.", "exampleEn": "We see each other every day."
+    },
+    {
+      "target": "us", "pos": "pronoun", "band": 1,
+      "glossEn": "you, to you (plural)",
+      "variants": ["vos"],
+      "exampleTarget": "Us espero a casa.", "exampleEn": "I'm waiting for you at home."
+    },
+    {
+      "target": "li", "pos": "pronoun", "band": 1,
+      "glossEn": "to him, to her",
+      "variants": [],
+      "exampleTarget": "Li dono el llibre.", "exampleEn": "I give him the book."
+    },
+    {
+      "target": "hi", "pos": "pronoun", "band": 1,
+      "glossEn": "there, to it (replaces a place or a prepositional phrase)",
+      "variants": [],
+      "exampleTarget": "Hi ha molta gent.", "exampleEn": "There are a lot of people."
+    },
+    {
+      "target": "ho", "pos": "pronoun", "band": 1,
+      "glossEn": "it (refers to a whole idea, not a noun)",
+      "variants": [],
+      "exampleTarget": "Això no ho sé.", "exampleEn": "I don't know that."
+    },
+    {
+      "target": "qui", "pos": "pronoun", "band": 1,
+      "glossEn": "who",
+      "variants": [],
+      "exampleTarget": "Qui és aquell home?", "exampleEn": "Who is that man?"
+    },
+    {
+      "target": "res", "pos": "pronoun", "band": 1,
+      "glossEn": "nothing, anything",
+      "variants": [],
+      "exampleTarget": "No hi ha res aquí.", "exampleEn": "There is nothing here."
+    },
+    {
+      "target": "ningú", "pos": "pronoun", "band": 1,
+      "glossEn": "nobody, anybody",
+      "variants": [],
+      "exampleTarget": "No hi ha ningú a casa.", "exampleEn": "There is nobody at home."
+    },
+    {
+      "target": "algú", "pos": "pronoun", "band": 2,
+      "glossEn": "somebody, anybody",
+      "variants": [],
+      "exampleTarget": "Algú em pot ajudar?", "exampleEn": "Can somebody help me?"
+    },
+    {
+      "target": "tothom", "pos": "pronoun", "band": 2,
+      "glossEn": "everybody",
+      "variants": [],
+      "exampleTarget": "Tothom parla català aquí.", "exampleEn": "Everybody speaks Catalan here."
+    },
+    {
+      "target": "on", "pos": "adverb", "band": 1,
+      "glossEn": "where",
+      "variants": [],
+      "exampleTarget": "On vius ara?", "exampleEn": "Where do you live now?"
+    },
+    {
+      "target": "per què", "pos": "adverb", "band": 1,
+      "glossEn": "why",
+      "variants": [],
+      "exampleTarget": "Per què no menges?", "exampleEn": "Why aren't you eating?"
+    },
+    {
+      "target": "quan", "pos": "conjunction", "band": 1,
+      "glossEn": "when",
+      "variants": [],
+      "exampleTarget": "Quan arribes a casa?", "exampleEn": "When do you get home?"
+    },
+    {
+      "target": "quin", "pos": "determiner", "band": 1,
+      "glossEn": "which, what",
+      "variants": ["quina", "quins", "quines"],
+      "exampleTarget": "Quin dia és avui?", "exampleEn": "What day is it today?"
+    },
+    {
+      "target": "quant", "pos": "determiner", "band": 2,
+      "glossEn": "how much, how many",
+      "variants": ["quanta", "quants", "quantes"],
+      "exampleTarget": "Quant costa el pa?", "exampleEn": "How much does the bread cost?"
+    },
+    {
+      "target": "al", "pos": "determiner", "band": 1,
+      "glossEn": "to the, at the (a + el)",
+      "variants": ["als"],
+      "exampleTarget": "Vaig al mercat cada dia.", "exampleEn": "I go to the market every day."
+    },
+    {
+      "target": "del", "pos": "determiner", "band": 1,
+      "glossEn": "of the, from the (de + el)",
+      "variants": ["dels"],
+      "exampleTarget": "La porta del cotxe és oberta.", "exampleEn": "The car door is open."
+    },
+    {
+      "target": "pel", "pos": "determiner", "band": 2,
+      "glossEn": "by the, through the (per + el)",
+      "variants": ["pels"],
+      "exampleTarget": "Camino pel carrer cada matí.", "exampleEn": "I walk along the street every morning."
+    },
+    {
+      "target": "sense", "pos": "preposition", "band": 1,
+      "glossEn": "without",
+      "variants": [],
+      "exampleTarget": "Vaig a casa sense tu.", "exampleEn": "I'm going home without you."
+    },
+    {
+      "target": "fins", "pos": "preposition", "band": 1,
+      "glossEn": "until, as far as",
+      "variants": [],
+      "exampleTarget": "Treballo fins a les cinc.", "exampleEn": "I work until five."
+    },
+    {
+      "target": "entre", "pos": "preposition", "band": 2,
+      "glossEn": "between, among",
+      "variants": [],
+      "exampleTarget": "La casa és entre el mar i la muntanya.", "exampleEn": "The house is between the sea and the mountain."
+    },
+    {
+      "target": "sota", "pos": "preposition", "band": 2,
+      "glossEn": "under, below",
+      "variants": [],
+      "exampleTarget": "El gat és sota la taula.", "exampleEn": "The cat is under the table."
+    },
+    {
+      "target": "dins", "pos": "preposition", "band": 2,
+      "glossEn": "inside, within",
+      "variants": [],
+      "exampleTarget": "El gos és dins la casa.", "exampleEn": "The dog is inside the house."
+    },
+    {
+      "target": "durant", "pos": "preposition", "band": 2,
+      "glossEn": "during, for",
+      "variants": [],
+      "exampleTarget": "Durant la nit no dormo bé.", "exampleEn": "During the night I don't sleep well."
+    },
+    {
+      "target": "contra", "pos": "preposition", "band": 3,
+      "glossEn": "against",
+      "variants": [],
+      "exampleTarget": "No tinc res contra ell.", "exampleEn": "I have nothing against him."
+    },
+    {
+      "target": "segons", "pos": "preposition", "band": 3,
+      "glossEn": "according to",
+      "variants": [],
+      "exampleTarget": "Segons ell, la casa és gran.", "exampleEn": "According to him, the house is big."
+    },
+    {
+      "target": "cap a", "pos": "preposition", "band": 2,
+      "glossEn": "towards",
+      "variants": [],
+      "exampleTarget": "Anem cap a la platja.", "exampleEn": "We are going towards the beach."
+    },
+    {
+      "target": "des de", "pos": "preposition", "band": 2,
+      "glossEn": "since, from",
+      "variants": [],
+      "exampleTarget": "Treballo aquí des de gener.", "exampleEn": "I have worked here since January."
+    },
+    {
+      "target": "mentre", "pos": "conjunction", "band": 2,
+      "glossEn": "while",
+      "variants": [],
+      "exampleTarget": "Escolto música mentre treballo.", "exampleEn": "I listen to music while I work."
+    },
+    {
+      "target": "doncs", "pos": "conjunction", "band": 2,
+      "glossEn": "so, then",
+      "variants": [],
+      "exampleTarget": "Doncs anem a casa.", "exampleEn": "Then let's go home."
+    },
+    {
+      "target": "encara que", "pos": "conjunction", "band": 3,
+      "glossEn": "although, even though",
+      "variants": [],
+      "exampleTarget": "Encara que és tard, treballo.", "exampleEn": "Even though it's late, I'm working."
+    },
+    {
+      "target": "per això", "pos": "conjunction", "band": 2,
+      "glossEn": "that's why, so",
+      "variants": [],
+      "exampleTarget": "Estic cansat, per això no surto.", "exampleEn": "I'm tired, so I'm not going out."
+    },
+    {
+      "target": "tampoc", "pos": "adverb", "band": 2,
+      "glossEn": "neither, not either",
+      "variants": [],
+      "exampleTarget": "Jo tampoc ho sé.", "exampleEn": "I don't know either."
+    },
+    {
+      "target": "sovint", "pos": "adverb", "band": 2,
+      "glossEn": "often",
+      "variants": [],
+      "exampleTarget": "Sovint menjo a casa.", "exampleEn": "I often eat at home."
+    },
+    {
+      "target": "aviat", "pos": "adverb", "band": 2,
+      "glossEn": "soon, early",
+      "variants": [],
+      "exampleTarget": "Demà em llevo aviat.", "exampleEn": "Tomorrow I'll get up early."
+    },
+    {
+      "target": "fora", "pos": "adverb", "band": 2,
+      "glossEn": "outside, out",
+      "variants": [],
+      "exampleTarget": "Avui fa fred a fora.", "exampleEn": "It's cold outside today."
+    },
+    {
+      "target": "prop", "pos": "adverb", "band": 2,
+      "glossEn": "near, close by",
+      "variants": [],
+      "exampleTarget": "L'escola és molt a prop.", "exampleEn": "The school is very close."
+    },
+    {
+      "target": "lluny", "pos": "adverb", "band": 2,
+      "glossEn": "far, far away",
+      "variants": [],
+      "exampleTarget": "La platja és molt lluny.", "exampleEn": "The beach is very far away."
+    },
+    {
+      "target": "menys", "pos": "adverb", "band": 1,
+      "glossEn": "less, fewer",
+      "variants": [],
+      "exampleTarget": "Avui treballo menys hores.", "exampleEn": "Today I'm working fewer hours."
+    },
+    {
+      "target": "bastant", "pos": "adverb", "band": 3,
+      "glossEn": "quite, fairly, enough",
+      "variants": ["bastants"],
+      "exampleTarget": "La casa és bastant gran.", "exampleEn": "The house is quite big."
+    },
+    {
+      "target": "de vegades", "pos": "adverb", "band": 2,
+      "glossEn": "sometimes",
+      "variants": [],
+      "exampleTarget": "De vegades sopo al restaurant.", "exampleEn": "Sometimes I have dinner at the restaurant."
+    },
+    {
+      "target": "altre", "pos": "determiner", "band": 1,
+      "glossEn": "other, another",
+      "variants": ["altra", "altres"],
+      "exampleTarget": "Vull un altre cafè.", "exampleEn": "I want another coffee."
+    },
+    {
+      "target": "mateix", "pos": "determiner", "band": 2,
+      "glossEn": "same; -self",
+      "variants": ["mateixa", "mateixos", "mateixes"],
+      "exampleTarget": "Vivim al mateix carrer.", "exampleEn": "We live on the same street."
+    },
+    {
+      "target": "cada", "pos": "determiner", "band": 1,
+      "glossEn": "each, every",
+      "variants": [],
+      "exampleTarget": "Treballo cada dia.", "exampleEn": "I work every day."
+    },
+    {
+      "target": "qualsevol", "pos": "determiner", "band": 3,
+      "glossEn": "any, whichever",
+      "variants": [],
+      "exampleTarget": "Vine qualsevol dia.", "exampleEn": "Come any day."
+    },
+    {
+      "target": "vostre", "pos": "determiner", "band": 2,
+      "glossEn": "your, yours (plural)",
+      "variants": ["vostra", "vostres"],
+      "exampleTarget": "Aquest és el vostre llibre.", "exampleEn": "This is your book."
+    },
+    {
+      "target": "zero", "pos": "numeral", "band": 2,
+      "glossEn": "zero",
+      "variants": [],
+      "exampleTarget": "El resultat és zero.", "exampleEn": "The result is zero."
+    },
+    { "target": "onze", "pos": "numeral", "band": 2, "glossEn": "eleven", "variants": [], "exampleTarget": "Tinc onze llibres nous.", "exampleEn": "I have eleven new books." },
+    { "target": "dotze", "pos": "numeral", "band": 2, "glossEn": "twelve", "variants": [], "exampleTarget": "L'any té dotze mesos.", "exampleEn": "The year has twelve months." },
+    { "target": "tretze", "pos": "numeral", "band": 3, "glossEn": "thirteen", "variants": [], "exampleTarget": "El meu fill té tretze anys.", "exampleEn": "My son is thirteen." },
+    { "target": "catorze", "pos": "numeral", "band": 3, "glossEn": "fourteen", "variants": [], "exampleTarget": "Som catorze a la classe.", "exampleEn": "There are fourteen of us in the class." },
+    { "target": "quinze", "pos": "numeral", "band": 2, "glossEn": "fifteen", "variants": [], "exampleTarget": "Espero quinze minuts.", "exampleEn": "I'll wait fifteen minutes." },
+    { "target": "setze", "pos": "numeral", "band": 3, "glossEn": "sixteen", "variants": [], "exampleTarget": "La meva filla té setze anys.", "exampleEn": "My daughter is sixteen." },
+    { "target": "disset", "pos": "numeral", "band": 3, "glossEn": "seventeen", "variants": [], "exampleTarget": "Hi ha disset persones aquí.", "exampleEn": "There are seventeen people here." },
+    { "target": "divuit", "pos": "numeral", "band": 3, "glossEn": "eighteen", "variants": [], "exampleTarget": "Als divuit anys vaig marxar.", "exampleEn": "At eighteen I left." },
+    { "target": "dinou", "pos": "numeral", "band": 3, "glossEn": "nineteen", "variants": [], "exampleTarget": "El llibre té dinou pàgines.", "exampleEn": "The book has nineteen pages." },
+    { "target": "vint", "pos": "numeral", "band": 2, "glossEn": "twenty", "variants": [], "exampleTarget": "Tinc vint anys.", "exampleEn": "I am twenty years old." },
+    { "target": "trenta", "pos": "numeral", "band": 2, "glossEn": "thirty", "variants": [], "exampleTarget": "El mes té trenta dies.", "exampleEn": "The month has thirty days." },
+    { "target": "quaranta", "pos": "numeral", "band": 3, "glossEn": "forty", "variants": [], "exampleTarget": "El meu pare té quaranta anys.", "exampleEn": "My father is forty." },
+    { "target": "cinquanta", "pos": "numeral", "band": 3, "glossEn": "fifty", "variants": [], "exampleTarget": "El bitllet costa cinquanta euros.", "exampleEn": "The ticket costs fifty euros." },
+    { "target": "seixanta", "pos": "numeral", "band": 3, "glossEn": "sixty", "variants": [], "exampleTarget": "L'hora té seixanta minuts.", "exampleEn": "The hour has sixty minutes." },
+    { "target": "setanta", "pos": "numeral", "band": 4, "glossEn": "seventy", "variants": [], "exampleTarget": "La meva àvia té setanta anys.", "exampleEn": "My grandmother is seventy." },
+    { "target": "vuitanta", "pos": "numeral", "band": 4, "glossEn": "eighty", "variants": [], "exampleTarget": "El meu avi té vuitanta anys.", "exampleEn": "My grandfather is eighty." },
+    { "target": "noranta", "pos": "numeral", "band": 4, "glossEn": "ninety", "variants": [], "exampleTarget": "El film dura noranta minuts.", "exampleEn": "The film lasts ninety minutes." },
+    { "target": "cent", "pos": "numeral", "band": 2, "glossEn": "a hundred", "variants": ["cents", "centes"], "exampleTarget": "El llibre té cent pàgines.", "exampleEn": "The book has a hundred pages." },
+    { "target": "mil", "pos": "numeral", "band": 2, "glossEn": "a thousand", "variants": [], "exampleTarget": "La ciutat té mil carrers.", "exampleEn": "The city has a thousand streets." },
+    {
+      "target": "primer", "pos": "adjective", "band": 2,
+      "glossEn": "first",
+      "variants": ["primera", "primers", "primeres"],
+      "exampleTarget": "És el primer dia de classe.", "exampleEn": "It's the first day of class."
+    },
+    {
+      "target": "últim", "pos": "adjective", "band": 2,
+      "glossEn": "last, final",
+      "variants": ["última", "últims", "últimes"],
+      "exampleTarget": "És l'últim dia de l'any.", "exampleEn": "It's the last day of the year."
+    },
+    {
+      "target": "irresponsable", "pos": "adjective", "band": 4,
+      "glossEn": "irresponsible",
+      "variants": ["irresponsables"],
+      "exampleTarget": "És una persona irresponsable.", "exampleEn": "He is an irresponsible person."
+    },
+    {
+      "target": "debat", "pos": "noun", "band": 4,
+      "glossEn": "debate",
+      "variants": [],
+      "exampleTarget": "El debat va durar dues hores.", "exampleEn": "The debate lasted two hours."
+    },
+    {
+      "target": "persona", "pos": "noun", "band": 1,
+      "glossEn": "person",
+      "variants": [],
+      "exampleTarget": "És una persona molt simpàtica.", "exampleEn": "She is a very nice person."
+    },
+    {
+      "target": "restaurant", "pos": "noun", "band": 2,
+      "glossEn": "restaurant",
+      "variants": [],
+      "exampleTarget": "Sopem en un restaurant petit.", "exampleEn": "We are having dinner in a small restaurant."
+    },
+    {
+      "target": "euro", "pos": "noun", "band": 2,
+      "glossEn": "euro",
+      "variants": [],
+      "exampleTarget": "El cafè costa un euro.", "exampleEn": "The coffee costs one euro."
+    },
+    {
+      "target": "pàgina", "pos": "noun", "band": 2,
+      "glossEn": "page",
+      "variants": [],
+      "exampleTarget": "Llegeixo la primera pàgina.", "exampleEn": "I'm reading the first page."
+    },
+    {
+      "target": "perdre", "pos": "verb", "band": 2,
+      "glossEn": "to lose",
+      "variants": [],
+      "exampleTarget": "No vull perdre el tren.", "exampleEn": "I don't want to miss the train."
+    },
+    {
+      "target": "pujar", "pos": "verb", "band": 2,
+      "glossEn": "to go up, to get on",
+      "variants": [],
+      "exampleTarget": "Pujo a casa ara mateix.", "exampleEn": "I'm going up home right now."
+    },
+    {
+      "target": "baixar", "pos": "verb", "band": 2,
+      "glossEn": "to go down, to get off",
+      "variants": [],
+      "exampleTarget": "Baixo al carrer un moment.", "exampleEn": "I'm going down to the street for a moment."
+    },
+    {
+      "target": "llevar", "pos": "verb", "band": 2,
+      "glossEn": "to get up (reflexive: llevar-se)",
+      "variants": [],
+      "exampleTarget": "Em llevo a les set.", "exampleEn": "I get up at seven."
+    },
+    {
+      "target": "dutxar", "pos": "verb", "band": 3,
+      "glossEn": "to shower (reflexive: dutxar-se)",
+      "variants": [],
+      "exampleTarget": "Em dutxo cada matí.", "exampleEn": "I shower every morning."
+    },
+    {
+      "target": "trucar", "pos": "verb", "band": 2,
+      "glossEn": "to call, to phone",
+      "variants": [],
+      "exampleTarget": "Truco a la meva mare.", "exampleEn": "I'm calling my mother."
+    },
+    {
+      "target": "canviar", "pos": "verb", "band": 2,
+      "glossEn": "to change",
+      "variants": [],
+      "exampleTarget": "Vull canviar de feina.", "exampleEn": "I want to change jobs."
+    },
+    {
+      "target": "guanyar", "pos": "verb", "band": 2,
+      "glossEn": "to win, to earn",
+      "variants": [],
+      "exampleTarget": "El meu equip sempre guanya.", "exampleEn": "My team always wins."
+    },
+    {
+      "target": "preparar", "pos": "verb", "band": 2,
+      "glossEn": "to prepare",
+      "variants": [],
+      "exampleTarget": "Preparo el sopar cada nit.", "exampleEn": "I prepare dinner every night."
+    },
+    {
+      "target": "preferir", "pos": "verb", "band": 2,
+      "glossEn": "to prefer",
+      "variants": [],
+      "exampleTarget": "Prefereixo el te al cafè.", "exampleEn": "I prefer tea to coffee."
+    },
+    {
+      "target": "servir", "pos": "verb", "band": 2,
+      "glossEn": "to serve, to be useful",
+      "variants": [],
+      "exampleTarget": "Serveixen el dinar a la una.", "exampleEn": "They serve lunch at one."
+    },
+    {
+      "target": "afegir", "pos": "verb", "band": 3,
+      "glossEn": "to add",
+      "variants": [],
+      "exampleTarget": "Afegeixo sal a la sopa.", "exampleEn": "I add salt to the soup."
+    },
+    {
+      "target": "utilitzar", "pos": "verb", "band": 3,
+      "glossEn": "to use",
+      "variants": [],
+      "exampleTarget": "Utilitzo l'ordinador cada dia.", "exampleEn": "I use the computer every day."
+    },
+    {
+      "target": "caldre", "pos": "verb", "band": 2,
+      "glossEn": "to be necessary (cal = it is necessary)",
+      "variants": [],
+      "exampleTarget": "Cal estudiar cada dia.", "exampleEn": "It is necessary to study every day."
+    },
+    {
+      "target": "ploure", "pos": "verb", "band": 2,
+      "glossEn": "to rain",
+      "variants": [],
+      "exampleTarget": "Avui plou molt.", "exampleEn": "It's raining a lot today."
+    },
+    {
+      "target": "treure", "pos": "verb", "band": 2,
+      "glossEn": "to take out, to remove",
+      "variants": [],
+      "exampleTarget": "Trec el pa del forn.", "exampleEn": "I take the bread out of the oven."
+    },
+    {
+      "target": "néixer", "pos": "verb", "band": 3,
+      "glossEn": "to be born",
+      "variants": [],
+      "exampleTarget": "Vaig néixer a Barcelona.", "exampleEn": "I was born in Barcelona."
+    },
+    {
+      "target": "seure", "pos": "verb", "band": 3,
+      "glossEn": "to sit, to be seated",
+      "variants": [],
+      "exampleTarget": "Sec a la cadira.", "exampleEn": "I sit on the chair."
+    },
+    {
+      "target": "moure", "pos": "verb", "band": 3,
+      "glossEn": "to move",
+      "variants": [],
+      "exampleTarget": "Moc la taula a la cuina.", "exampleEn": "I move the table into the kitchen."
+    }
+  ]
+}

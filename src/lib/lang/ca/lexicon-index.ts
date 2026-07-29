@@ -49,44 +49,93 @@ export function verbSpec(infinitive: string): CatalanVerbStems | null {
  *   feliç -> feliços/felices,  gran -> grans,  gos -> gossos,
  *   noi -> nois,  vowel-final -> -ns (mà -> mans is irregular and authored).
  */
+const FINAL_ACCENT: Record<string, string> = {
+  à: "a", è: "e", é: "e", í: "i", ï: "i", ò: "o", ó: "o", ú: "u", ü: "u",
+};
+
+/** germà -> germa, raó -> rao. Used to build the -ns plural. */
+function dropFinalAccent(word: string): string {
+  const last = word.slice(-1);
+  return FINAL_ACCENT[last] ? word.slice(0, -1) + FINAL_ACCENT[last] : word;
+}
+
 export function nominalForms(word: string, pos: string): string[] {
   if (pos !== "noun" && pos !== "adjective") return [];
   const w = normalizeCatalan(word);
   if (w.includes(" ")) return [];
-  const out: string[] = [];
+  const out = new Set<string>();
 
-  const plural = (base: string): string => {
-    if (/[aeiouàèéíòóú]$/.test(base)) {
-      // -a feminines pluralize in -es with the usual spelling shifts.
-      if (/a$/.test(base)) {
-        const s = base.slice(0, -1);
-        if (/c$/.test(s)) return s.slice(0, -1) + "ques";
-        if (/g$/.test(s)) return s.slice(0, -1) + "gues";
-        if (/ç$/.test(s)) return s.slice(0, -1) + "ces";
-        if (/j$/.test(s)) return s.slice(0, -1) + "ges";
-        return s + "es";
-      }
-      return base + "ns"; // stressed vowel: pi -> pins, ple -> plens
+  const plural = (base: string): string[] => {
+    if (/a$/.test(base)) {
+      // -a feminines take -es, with the usual consonant respelling.
+      const s = base.slice(0, -1);
+      if (/c$/.test(s)) return [s.slice(0, -1) + "ques"];
+      if (/g$/.test(s)) return [s.slice(0, -1) + "gues"];
+      if (/ç$/.test(s)) return [s.slice(0, -1) + "ces"];
+      if (/j$/.test(s)) return [s.slice(0, -1) + "ges"];
+      return [s + "es"];
     }
-    if (/ç$/.test(base)) return base.slice(0, -1) + "ços";
-    if (/s$/.test(base)) return base + "os"; // gos -> gossos handled below
-    if (/(sc|st|xt|ig)$/.test(base)) return base + "os";
-    return base + "s";
+    // A stressed final vowel takes -ns: pa -> pans, bo -> bons, camí -> camins.
+    // In a monosyllable the final vowel is stressed by definition.
+    //
+    // The written accent goes away in the -ns plural but survives in the -s one:
+    // germà -> germans, raó -> raons, but cafè -> cafès. That is not a quirk of
+    // this table, it falls out of Catalan accent rules - an oxytone ending in
+    // -ns needs no accent, while one ending in a vowel or vowel+s does. Getting
+    // it wrong makes every plural of a common kinship or abstract noun
+    // (germans, raons, camins) unresolvable in the reader.
+    const monosyllable = base.length <= 3;
+    if (/[àéíóúè]$/.test(base) || (monosyllable && /[aeiou]$/.test(base))) {
+      const bare = dropFinalAccent(base);
+      // Whether the accent survives is a matter of vowel quality (béns keeps it,
+      // germans does not), which spelling alone cannot decide. Both spellings
+      // are emitted: these are resolution keys only, so a spurious one is inert
+      // while a missing one leaves a common plural unresolvable.
+      return [bare + "ns", base + "ns", bare + "s", base + "s"];
+    }
+    if (/[eiou]$/.test(base)) return [base + "s"];
+    if (/ç$/.test(base)) return [base.slice(0, -1) + "ços"];
+    // A monosyllable ending in -s doubles it: gos -> gossos, pas -> passos.
+    if (/[aeiou]s$/.test(base) && base.length <= 4) return [base + "sos", base + "os"];
+    if (/(s|ç|x|sc|st|xt|ig)$/.test(base)) return [base + "os", base + "s"];
+    return [base + "s"];
   };
 
-  out.push(plural(w));
+  for (const p of plural(w)) out.add(p);
 
   if (pos === "adjective") {
-    // Feminine: consonant-final adds -a, -e/-o often alternates to -a.
-    if (/[^aeiou]$/.test(w)) {
-      const fem = /ç$/.test(w) ? w.slice(0, -1) + "ça" : w + "a";
-      out.push(fem, plural(fem));
-    } else if (/[eo]$/.test(w)) {
-      const fem = w.slice(0, -1) + "a";
-      out.push(fem, plural(fem));
+    /**
+     * Catalan feminines, where spelling alone cannot always decide:
+     *
+     *   petit -> petita   but   cansat -> cansada
+     *
+     * Both end in -t; the second is a participle, which voices. Which one a
+     * word is cannot be read off the letters, so ambiguous endings emit BOTH
+     * candidates. Over-generating is the right trade here: these forms are only
+     * ever used to resolve a surface back to its lexeme, so a spurious key is
+     * inert, while a missing one means the reader cannot explain a real word.
+     */
+    const feminines: string[] = [];
+    if (/o$/.test(w)) feminines.push(w + "na", w.slice(0, -1) + "a"); // bo -> bona
+    else if (/e$/.test(w)) feminines.push(w.slice(0, -1) + "a"); // pobre -> pobra
+    else if (/[àíúè]$/.test(w)) feminines.push(w + "na"); // sa -> sana, comú -> comuna
+    else if (/u$/.test(w)) feminines.push(w.slice(0, -1) + "va"); // blau -> blava
+    else if (/ig$/.test(w)) feminines.push(w.slice(0, -2) + "ja"); // roig -> roja
+    else if (/ós$/.test(w)) feminines.push(w.slice(0, -2) + "osa"); // gustós -> gustosa
+    else if (/t$/.test(w)) feminines.push(w + "a", w.slice(0, -1) + "da"); // petita / cansada
+    else if (/c$/.test(w)) feminines.push(w + "a", w.slice(0, -1) + "ga"); // rica / groga
+    else if (/ç$/.test(w)) feminines.push(w.slice(0, -1) + "ça");
+    else if (/[^aeiou]$/.test(w)) feminines.push(w + "a");
+
+    for (const f of feminines) {
+      if (!f || f === w) continue;
+      out.add(f);
+      for (const p of plural(f)) out.add(p);
     }
   }
-  return out.filter((f) => f && f !== w);
+
+  out.delete(w);
+  return [...out].filter(Boolean);
 }
 
 export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {

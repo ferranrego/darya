@@ -1,0 +1,219 @@
+{
+  "note": "Vocabulary the A1-A2 grammar course needs but the generated lexicon lacks. Every word here was found by running scripts/verify-ca-grammar.ts and taking the tokens the reader could not resolve: if a learner can tap a word inside a lesson, that word has to be in the lexicon. Same format as ca-closed-class.json, applied by the same script.",
+  "delete": [],
+  "rename": [],
+  "patch": [
+    { "target": "dos", "glossEn": "two", "addVariants": ["dues"] },
+    { "target": "bo", "glossEn": "good", "addVariants": ["bon"] },
+    { "target": "germà", "glossEn": "brother", "addVariants": ["germana", "germanes"] },
+    { "target": "professor", "glossEn": "teacher", "addVariants": ["professora", "professores"] },
+    { "target": "si us plau", "glossEn": "please", "addVariants": ["plau"] },
+    { "target": "amic", "glossEn": "friend", "addVariants": ["amiga", "amigues"] },
+    { "target": "fill", "glossEn": "son, child", "addVariants": ["filla", "filles"] },
+    { "target": "nen", "glossEn": "child, boy", "addVariants": ["nena", "nenes"] },
+    { "target": "gat", "glossEn": "cat", "addVariants": ["gata", "gates"] },
+    { "target": "gos", "glossEn": "dog", "addVariants": ["gossa", "gosses"] },
+    { "target": "cosí", "glossEn": "cousin", "addVariants": ["cosina", "cosines"] },
+    { "target": "metge", "glossEn": "doctor", "addVariants": ["metgessa", "metgesses"] }
+  ],
+  "add": [
+    {
+      "target": "català", "pos": "noun", "band": 1,
+      "glossEn": "Catalan (the language); a Catalan person",
+      "variants": ["catalana", "catalanes"],
+      "exampleTarget": "Parlo català cada dia.", "exampleEn": "I speak Catalan every day."
+    },
+    {
+      "target": "bé", "pos": "adverb", "band": 1,
+      "glossEn": "well",
+      "variants": [],
+      "exampleTarget": "Avui dormo molt bé.", "exampleEn": "Today I'm sleeping very well."
+    },
+    {
+      "target": "malament", "pos": "adverb", "band": 2,
+      "glossEn": "badly",
+      "variants": [],
+      "exampleTarget": "Aquesta nit dormo malament.", "exampleEn": "Tonight I'm sleeping badly."
+    },
+    {
+      "target": "cansat", "pos": "adjective", "band": 1,
+      "glossEn": "tired",
+      "variants": [],
+      "exampleTarget": "Avui estic molt cansat.", "exampleEn": "Today I'm very tired."
+    },
+    {
+      "target": "pobre", "pos": "adjective", "band": 2,
+      "glossEn": "poor",
+      "variants": [],
+      "exampleTarget": "És una família pobra.", "exampleEn": "It's a poor family."
+    },
+    {
+      "target": "millor", "pos": "adjective", "band": 1,
+      "glossEn": "better, best (comparative of bo)",
+      "variants": ["millors"],
+      "exampleTarget": "Aquest cafè és millor.", "exampleEn": "This coffee is better."
+    },
+    {
+      "target": "pitjor", "pos": "adjective", "band": 2,
+      "glossEn": "worse, worst (comparative of dolent)",
+      "variants": ["pitjors"],
+      "exampleTarget": "El temps és pitjor avui.", "exampleEn": "The weather is worse today."
+    },
+    {
+      "target": "junt", "pos": "adjective", "band": 2,
+      "glossEn": "together",
+      "variants": [],
+      "exampleTarget": "Sopem junts cada nit.", "exampleEn": "We have dinner together every night."
+    },
+    {
+      "target": "gana", "pos": "noun", "band": 1,
+      "glossEn": "hunger (tenir gana = to be hungry)",
+      "variants": [],
+      "exampleTarget": "Tinc molta gana ara.", "exampleEn": "I'm very hungry now."
+    },
+    {
+      "target": "son", "pos": "noun", "band": 2,
+      "glossEn": "sleepiness (tenir son = to be sleepy)",
+      "variants": [],
+      "exampleTarget": "Tinc son, vaig al llit.", "exampleEn": "I'm sleepy, I'm going to bed."
+    },
+    {
+      "target": "quart", "pos": "noun", "band": 2,
+      "glossEn": "quarter (of an hour)",
+      "variants": [],
+      "exampleTarget": "Són tres quarts de cinc.", "exampleEn": "It's a quarter to five."
+    },
+    {
+      "target": "punt", "pos": "noun", "band": 2,
+      "glossEn": "point, dot (en punt = on the dot)",
+      "variants": [],
+      "exampleTarget": "Són les cinc en punt.", "exampleEn": "It's five o'clock on the dot."
+    },
+    {
+      "target": "mal", "pos": "noun", "band": 2,
+      "glossEn": "harm, ache (fer mal = to hurt)",
+      "variants": [],
+      "exampleTarget": "Em fa mal el cap.", "exampleEn": "My head hurts."
+    },
+    {
+      "target": "noi", "pos": "noun", "band": 1,
+      "glossEn": "boy, young man",
+      "variants": ["noia", "noies"],
+      "exampleTarget": "Aquell noi és el meu germà.", "exampleEn": "That boy is my brother."
+    },
+    {
+      "target": "got", "pos": "noun", "band": 2,
+      "glossEn": "glass (for drinking)",
+      "variants": [],
+      "exampleTarget": "Vull un got d'aigua.", "exampleEn": "I want a glass of water."
+    },
+    {
+      "target": "pis", "pos": "noun", "band": 2,
+      "glossEn": "flat, apartment; floor",
+      "variants": [],
+      "exampleTarget": "Visc en un pis petit.", "exampleEn": "I live in a small flat."
+    },
+    {
+      "target": "braç", "pos": "noun", "band": 2,
+      "glossEn": "arm",
+      "variants": [],
+      "exampleTarget": "Em fa mal el braç.", "exampleEn": "My arm hurts."
+    },
+    {
+      "target": "estiu", "pos": "noun", "band": 2,
+      "glossEn": "summer",
+      "variants": [],
+      "exampleTarget": "A l'estiu anem a la platja.", "exampleEn": "In summer we go to the beach."
+    },
+    {
+      "target": "hivern", "pos": "noun", "band": 2,
+      "glossEn": "winter",
+      "variants": [],
+      "exampleTarget": "A l'hivern fa molt fred.", "exampleEn": "In winter it's very cold."
+    },
+    {
+      "target": "primavera", "pos": "noun", "band": 3,
+      "glossEn": "spring",
+      "variants": [],
+      "exampleTarget": "A la primavera hi ha flors.", "exampleEn": "In spring there are flowers."
+    },
+    {
+      "target": "tardor", "pos": "noun", "band": 3,
+      "glossEn": "autumn",
+      "variants": [],
+      "exampleTarget": "A la tardor plou molt.", "exampleEn": "In autumn it rains a lot."
+    },
+    {
+      "target": "alemany", "pos": "noun", "band": 3,
+      "glossEn": "German (the language); a German person",
+      "variants": ["alemanya", "alemanyes"],
+      "exampleTarget": "No parlo alemany gens.", "exampleEn": "I don't speak German at all."
+    },
+    {
+      "target": "anglès", "pos": "noun", "band": 2,
+      "glossEn": "English (the language); an English person",
+      "variants": ["anglesa", "angleses"],
+      "exampleTarget": "Parlo anglès a la feina.", "exampleEn": "I speak English at work."
+    },
+    {
+      "target": "francès", "pos": "noun", "band": 3,
+      "glossEn": "French (the language); a French person",
+      "variants": ["francesa", "franceses"],
+      "exampleTarget": "El meu amic parla francès.", "exampleEn": "My friend speaks French."
+    },
+    {
+      "target": "castellà", "pos": "noun", "band": 2,
+      "glossEn": "Spanish, Castilian (the language)",
+      "variants": ["castellana", "castellanes"],
+      "exampleTarget": "Aquí es parla castellà i català.", "exampleEn": "Spanish and Catalan are spoken here."
+    },
+    {
+      "target": "encantar", "pos": "verb", "band": 2,
+      "glossEn": "to love, to delight (m'encanta = I love it)",
+      "variants": [],
+      "exampleTarget": "M'encanta aquesta ciutat.", "exampleEn": "I love this city."
+    },
+    {
+      "target": "interessar", "pos": "verb", "band": 3,
+      "glossEn": "to interest",
+      "variants": [],
+      "exampleTarget": "M'interessa molt la història.", "exampleEn": "I'm very interested in history."
+    },
+    {
+      "target": "faltar", "pos": "verb", "band": 3,
+      "glossEn": "to be missing, to be lacking",
+      "variants": [],
+      "exampleTarget": "Falta sal a la sopa.", "exampleEn": "The soup needs salt."
+    },
+    {
+      "target": "trencar", "pos": "verb", "band": 2,
+      "glossEn": "to break",
+      "variants": [],
+      "exampleTarget": "No vull trencar el got.", "exampleEn": "I don't want to break the glass."
+    },
+    {
+      "target": "caure", "pos": "verb", "band": 2,
+      "glossEn": "to fall",
+      "variants": [],
+      "exampleTarget": "El llibre va caure a terra.", "exampleEn": "The book fell on the floor."
+    },
+    {
+      "target": "marxar", "pos": "verb", "band": 2,
+      "glossEn": "to leave, to go away",
+      "variants": [],
+      "exampleTarget": "Vaig marxar molt aviat.", "exampleEn": "I left very early."
+    },
+    {
+      "target": "durar", "pos": "verb", "band": 3,
+      "glossEn": "to last",
+      "variants": [],
+      "exampleTarget": "La pel·lícula dura dues hores.", "exampleEn": "The film lasts two hours."
+    },
+    {
+      "target": "costar", "pos": "verb", "band": 2,
+      "glossEn": "to cost",
+      "variants": [],
+      "exampleTarget": "Quant costa aquest llibre?", "exampleEn": "How much does this book cost?"
+    }
+  ]
+}

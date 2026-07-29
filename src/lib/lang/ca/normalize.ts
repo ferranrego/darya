@@ -80,25 +80,40 @@ export function tokenizeCatalan(text: string): string[] {
   for (const raw of normalized.split(/[\s ]+/)) {
     if (!raw) continue;
     // Strip surrounding punctuation but keep internal apostrophes/hyphens.
-    let chunk = raw.replace(/^[^\p{L}\p{M}]+/u, "").replace(/[^\p{L}\p{M}'·-]+$/u, "");
-    if (!chunk) continue;
-
-    // Leading eliding clitics can stack: "d'l'" is not real, but "l'" + rest is.
-    let guard = 0;
-    while (guard++ < 4) {
-      const m = chunk.match(ELIDING_CLITIC);
-      if (!m || chunk.length <= m[0].length) break;
-      out.push(m[0]);
-      chunk = chunk.slice(m[0].length);
-    }
+    const chunk = raw.replace(/^[^\p{L}\p{M}]+/u, "").replace(/[^\p{L}\p{M}'·-]+$/u, "");
     if (!chunk) continue;
 
     // Split enclitics that follow the stem: hyphen, or apostrophe not at
     // index 0. Every hyphen part is checked, not just the first - `anar-se'n`
     // carries a pronoun on each side of the hyphen.
-    const parts = chunk.split(/-/).flatMap(splitTrailingApostrophe);
+    //
+    // Each part is re-examined for a *leading* clitic before the trailing
+    // apostrophe is split off, because `dir-t'ho` is dir + t' + ho, not
+    // dir + t + 'ho. The two cases are told apart by the letter before the
+    // apostrophe: a single l/d/s/n/m/t is an eliding clitic, while `me'l` and
+    // `se'n` have a full pronoun there and split the other way.
+    const parts: string[] = [];
+    for (const segment of chunk.split(/-/)) {
+      let rest = segment;
+      let guard = 0;
+      // Leading eliding clitics can stack: "d'l'" is not real, but "l'" + rest is.
+      while (guard++ < 4) {
+        const m = rest.match(ELIDING_CLITIC);
+        if (!m || rest.length <= m[0].length) break;
+        parts.push(m[0]);
+        rest = rest.slice(m[0].length);
+      }
+      if (rest) parts.push(...splitTrailingApostrophe(rest));
+    }
 
     for (const p of parts) {
+      // An eliding clitic keeps its apostrophe: `l'` is a word, `l` is not.
+      // Everything else loses a stray trailing one while keeping a leading
+      // apostrophe, which is what marks an enclitic (`'m`, `'n`).
+      if (ELIDING_CLITIC.test(p) && p.length === 2) {
+        out.push(p);
+        continue;
+      }
       const cleaned = p.replace(/^'+|'+$/g, (m, ...a) => (a[a.length - 2] === 0 ? m : ""));
       const token = cleaned || p;
       if (token && WORD_CHAR.test(token)) out.push(token);

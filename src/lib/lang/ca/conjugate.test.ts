@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { attach, conjugationSurfaces, stemOf } from "./conjugate.ts";
 import { IRREGULAR_VERBS } from "./irregulars.ts";
-import { verbSpec } from "./lexicon-index.ts";
+import { nominalForms, verbSpec } from "./lexicon-index.ts";
 
 /** Every surface form of a verb, as a Set for membership assertions. */
 function forms(infinitive: string): Set<string> {
@@ -154,6 +154,76 @@ describe("irregular verbs", () => {
         expect(list.length, `${inf}.${slot}`).toBeGreaterThan(0);
         for (const form of list) expect(form.trim(), `${inf}.${slot}`).not.toBe("");
       }
+    }
+  });
+});
+
+describe("noun and adjective inflection", () => {
+  const has = (w: string, pos: string, f: string) => nominalForms(w, pos).includes(f);
+
+  it("forms the feminine of the patterns Catalan actually uses", () => {
+    // The pairs an English speaker meets constantly, and the ones a naive
+    // "add -a" rule gets wrong.
+    expect(has("bo", "adjective", "bona"), "bo -> bona").toBe(true);
+    expect(has("cansat", "adjective", "cansada"), "participle voices").toBe(true);
+    expect(has("petit", "adjective", "petita"), "plain adjective does not").toBe(true);
+    expect(has("blau", "adjective", "blava"), "blau -> blava").toBe(true);
+    expect(has("pobre", "adjective", "pobra"), "pobre -> pobra").toBe(true);
+    expect(has("feliç", "adjective", "felices"), "feliç -> felices").toBe(true);
+  });
+
+  it("forms plurals including the irregular shapes", () => {
+    expect(has("bo", "adjective", "bons"), "stressed vowel takes -ns").toBe(true);
+    expect(has("gos", "noun", "gossos"), "monosyllable in -s doubles it").toBe(true);
+    expect(has("casa", "noun", "cases")).toBe(true);
+    expect(has("gran", "adjective", "grans")).toBe(true);
+    expect(has("feliç", "adjective", "feliços")).toBe(true);
+  });
+
+  it("drops the written accent in the -ns plural", () => {
+    // germà -> germans, not *germàns. Getting this wrong left the plural of
+    // every kinship and abstract noun unresolvable in the reader.
+    expect(has("germà", "noun", "germans"), "germà -> germans").toBe(true);
+    expect(has("mà", "noun", "mans"), "mà -> mans").toBe(true);
+    expect(has("camí", "noun", "camins"), "camí -> camins").toBe(true);
+    expect(has("raó", "noun", "raons"), "raó -> raons").toBe(true);
+    // The -s plural keeps it, since an oxytone in vowel+s still needs the mark.
+    expect(has("cafè", "noun", "cafès"), "cafè -> cafès").toBe(true);
+  });
+});
+
+describe("verbs the grammar course leans on", () => {
+  it("gives anar the periphrastic-past auxiliary as well as the present", () => {
+    // "vam anar" is "we went"; "anem" is "we go". Both have to resolve, and
+    // vam/vau are not derivable from anem/aneu.
+    const anar = forms("anar");
+    for (const f of ["vaig", "vas", "va", "vam", "vau", "van", "vàrem", "vàreu", "anem"]) {
+      expect(anar.has(f), `anar: ${f}`).toBe(true);
+    }
+  });
+
+  it("keeps defective verbs defective", () => {
+    // caldre exists only in the third person and ploure only in the third
+    // singular. Generating *calc or *plovem would teach a form nobody uses.
+    const caldre = forms("caldre");
+    expect(caldre.has("cal")).toBe(true);
+    expect(caldre.has("calgui")).toBe(true);
+    expect(caldre.has("calc"), "no invented first person").toBe(false);
+    const ploure = forms("ploure");
+    expect(ploure.has("plou")).toBe(true);
+    expect(ploure.has("plovem"), "no invented plural").toBe(false);
+  });
+
+  it("handles the two-stem verbs", () => {
+    for (const [inf, expected] of [
+      ["treure", ["trec", "traiem", "tret"]],
+      ["néixer", ["neix", "naixem", "nascut"]],
+      ["caure", ["caic", "caiem", "caigut"]],
+      ["seure", ["sec", "seiem", "segut"]],
+      ["moure", ["moc", "movem", "mogut"]],
+    ] as const) {
+      const set = forms(inf);
+      for (const f of expected) expect(set.has(f), `${inf}: ${f}`).toBe(true);
     }
   });
 });

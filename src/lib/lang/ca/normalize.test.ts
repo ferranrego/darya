@@ -67,3 +67,33 @@ describe("tokenizeCatalan", () => {
     expect(tokenizeCatalan("")).toEqual([]);
   });
 });
+
+describe("clitics and enclitics", () => {
+  it("keeps a standalone clitic whole", () => {
+    // A grammar drill answer is often just the clitic. Stripping the
+    // apostrophe left a bare "l" that resolves to nothing.
+    expect(tokenizeCatalan("L'")).toEqual(["L'"]);
+    expect(tokenizeCatalan("M'")).toEqual(["M'"]);
+    expect(tokenizeCatalan("a l'")).toEqual(["a", "l'"]);
+  });
+
+  it("splits an eliding clitic from the word it leans on", () => {
+    expect(tokenizeCatalan("l'home")).toEqual(["l'", "home"]);
+    expect(tokenizeCatalan("d'aigua")).toEqual(["d'", "aigua"]);
+    expect(tokenizeCatalan("N'hi ha tres")).toEqual(["N'", "hi", "ha", "tres"]);
+  });
+
+  it("tells a leading clitic apart from a trailing enclitic", () => {
+    // dir-t'ho is dir + t' + ho, but me'l is me + 'l. The difference is
+    // whether a single l/d/s/n/m/t sits before the apostrophe.
+    expect(tokenizeCatalan("dir-t'ho")).toEqual(["dir", "t'", "ho"]);
+    expect(tokenizeCatalan("me'l")).toEqual(["me", "'l"]);
+    expect(tokenizeCatalan("se'n")).toEqual(["se", "'n"]);
+    expect(tokenizeCatalan("anar-se'n")).toEqual(["anar", "se", "'n"]);
+    expect(tokenizeCatalan("dona-me'l")).toEqual(["dona", "me", "'l"]);
+  });
+
+  it("never splits the interpunct", () => {
+    expect(tokenizeCatalan("un col·legi paral·lel")).toEqual(["un", "col·legi", "paral·lel"]);
+  });
+});

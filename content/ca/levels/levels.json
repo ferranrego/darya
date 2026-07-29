@@ -5,9 +5,14 @@
       "id": "L1",
       "name": "First words",
       "cefrHint": "pre-A1",
-      "freqBands": [1],
+      "freqBands": [
+        1
+      ],
       "entryKnownWords": 0,
-      "sentenceRange": [2, 3],
+      "sentenceRange": [
+        2,
+        3
+      ],
       "sentenceLengthHint": "strictly max 7 words per sentence, simple subject-verb-object",
       "grammarAllowed": [
         "present of ser and estar (soc, ets, és, estic, està)",
@@ -22,9 +27,15 @@
       "id": "L2",
       "name": "Daily life",
       "cefrHint": "A1",
-      "freqBands": [1, 2],
-      "entryKnownWords": 90,
-      "sentenceRange": [2, 4],
+      "freqBands": [
+        1,
+        2
+      ],
+      "entryKnownWords": 110,
+      "sentenceRange": [
+        2,
+        4
+      ],
       "sentenceLengthHint": "strictly max 9 words per sentence",
       "grammarAllowed": [
         "present indicative of all three conjugations, including the incoative -eix- type (serveixo, prefereixes)",
@@ -41,9 +52,16 @@
       "id": "L3",
       "name": "Short stories",
       "cefrHint": "A2",
-      "freqBands": [1, 2, 3],
-      "entryKnownWords": 450,
-      "sentenceRange": [3, 5],
+      "freqBands": [
+        1,
+        2,
+        3
+      ],
+      "entryKnownWords": 500,
+      "sentenceRange": [
+        3,
+        5
+      ],
       "sentenceLengthHint": "max 12 words per sentence; at most one subordinate clause",
       "grammarAllowed": [
         "imperfect indicative (parlava, tenia, era, feia) for description and habit, contrasted with the periphrastic past for completed events",
@@ -60,9 +78,17 @@
       "id": "L4",
       "name": "Everyday texts",
       "cefrHint": "A2+",
-      "freqBands": [1, 2, 3, 4],
-      "entryKnownWords": 640,
-      "sentenceRange": [4, 6],
+      "freqBands": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "entryKnownWords": 720,
+      "sentenceRange": [
+        4,
+        6
+      ],
       "sentenceLengthHint": "max 14 words per sentence; subordinate clauses allowed",
       "grammarAllowed": [
         "conditional (parlaria, voldria, m'agradaria) for politeness and hypothesis",
