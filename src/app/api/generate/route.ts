@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { generateText, vocabHash } from "@/lib/ai/generate";
 import { lexicon, levelById } from "@/lib/content/load";
 import { assumedKnown, placementCredit } from "@/lib/content/text-pool";
+import { isTeachable } from "@/lib/content/teachability";
 import { selectKnown, selectTargets, targetCountFor } from "@/lib/content/word-selection";
 import { insertGeneratedText } from "@/lib/db/texts";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
@@ -77,7 +78,10 @@ export async function POST(req: Request) {
 
   const inBand = lexicon.entries.filter((e) => level.freqBands.includes(e.freqBand));
   const knownWords = lexicon.entries.filter((e) => knownIds.has(e.id));
-  const candidates = inBand.filter((e) => !knownIds.has(e.id));
+  // An entry whose gloss is "[C2 auto-fill]" can be read, but it cannot be
+  // taught: the prompt would ask for it by that name and the review card would
+  // answer with it. 366 such entries sit inside the Catalan B2 envelope.
+  const candidates = inBand.filter((e) => !knownIds.has(e.id) && isTeachable(e));
 
   // A brand-new learner at the first level has nothing yet, so fall back to the
   // most frequent words of the level rather than an empty constraint.

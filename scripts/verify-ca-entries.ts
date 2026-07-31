@@ -2,6 +2,11 @@ import { conjugationSurfaces } from "../src/lib/lang/ca/conjugate.ts";
 import { IRREGULAR_VERBS } from "../src/lib/lang/ca/irregulars.ts";
 import { nominalForms, verbSpec } from "../src/lib/lang/ca/lexicon-index.ts";
 import { matchKey, normalizeCatalan, tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
+import type { LexiconEntry } from "../src/lib/content/schema.ts";
+import {
+  teachabilityDefects,
+  type TeachabilityDefect,
+} from "../src/lib/content/teachability.ts";
 import type { LexiconIndex } from "../src/lib/lang/types.ts";
 
 /**
@@ -311,4 +316,65 @@ export function strayInfinitive(
     `filling the blank leaves a stray infinitive: "${filled}" ` +
       `(answer "${answer}" is followed by the infinitive "${next}")`,
   ];
+}
+
+// ---------------------------------------------------------------------------
+// Shipped-entry defects
+// ---------------------------------------------------------------------------
+
+/**
+ * Entries that exist but cannot teach anything.
+ *
+ * `verifyEntry` judges a *candidate* before it is written. These judge an entry
+ * already in the lexicon, and they describe damage done by earlier bulk
+ * generation passes rather than anything a model got subtly wrong:
+ *
+ *   - 290 entries whose gloss is the literal string `[C2 auto-fill]`, with the
+ *     headword echoed back as its own example sentence. All are tagged
+ *     `pos: noun` regardless of what they are, and 52 of them are infinitives.
+ *   - 155 whose `exampleEn` is `"Translated: "` followed by the *Catalan*
+ *     sentence, so the example has no English at all. The gloss and the Catalan
+ *     are fine in these, which makes them the cheapest to repair.
+ *
+ * The two sets do not overlap. They are separated rather than lumped together
+ * because the repairs are different jobs: one needs a gloss, a part of speech
+ * and an example written from scratch; the other needs one sentence translated.
+ */
+export interface ShippedEntry {
+  id: string;
+  target: string;
+  glossEn: string;
+  pos: string;
+  freqRank: number;
+  exampleTarget?: string;
+  exampleEn?: string;
+  tags?: string[];
+}
+
+export type EntryDefect = TeachabilityDefect | "noun-tagged-infinitive";
+
+/** A gloss that is really an editorial note rather than a meaning. */
+export function entryDefects(e: ShippedEntry): EntryDefect[] {
+  // The data-hygiene checks are shared with the app, which uses them to decide
+  // what it may teach; only the Catalan-specific one lives here.
+  const out: EntryDefect[] = [...teachabilityDefects(e as unknown as LexiconEntry)];
+
+  // A noun that inflects like a verb is almost always a misfiled infinitive,
+  // but the ending alone is not enough - "pare", "llibre" and "carrer" are
+  // genuine nouns. The placeholder gloss is what makes it near-certain, since
+  // those entries never had a part of speech decided at all.
+  if (
+    e.pos === "noun" &&
+    /(ar|er|re|ir)$/i.test(e.target) &&
+    /\[|auto-fill/i.test(e.glossEn) &&
+    verbSpec(normalizeCatalan(e.target)) !== null
+  ) {
+    out.push("noun-tagged-infinitive");
+  }
+  return out;
+}
+
+/** Whether an entry is fit to be taught as a new word. */
+export function isTeachable(e: ShippedEntry): boolean {
+  return entryDefects(e).length === 0;
 }
