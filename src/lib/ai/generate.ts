@@ -5,7 +5,7 @@ import { CONTENT_FORMAT_VERSION, type LexiconEntry, type Level, type TextDocumen
 import { buildIndex } from "../text";
 import { lexicon } from "../content/load";
 import { tokenize } from "../text";
-import { completeJson } from "./providers";
+import { completeJson, deadlineIn } from "./providers";
 import { profile } from "../lang/index.ts";
 import { TRANSLITERATED, translitField, wordList } from "./lang-format.ts";
 import { MAX_OOV_TOKEN_RATE, MAX_OOV_TYPE_RATE } from "../content/difficulty.ts";
@@ -163,7 +163,8 @@ export function vocabHash(doc: TextDocument): string {
 export async function repairText(
   doc: TextDocument,
   req: GenerationRequest,
-  strict = true
+  strict = true,
+  deadline?: number,
 ): Promise<{ doc: TextDocument; oovRate: number }> {
   const allowed = new Set<string>([...req.knownIds, ...req.targetWords.map((w) => w.id)]);
 
@@ -225,6 +226,7 @@ where "index" is the number provided above for the sentence.`;
 
   const repairs = await completeJson(repairPrompt, {
     temperature: 0.2,
+    deadline,
     validate: (raw) => repairSchema.parse(JSON.parse(raw)).repairs
   });
   
@@ -259,8 +261,14 @@ where "index" is the number provided above for the sentence.`;
  * Dari used 0 of 5 requested words at B2 and 0 of 7 at C1 - so every text at
  * those levels was unusable, and the reader regenerated forever.
  *
- * Half rather than all: the model sometimes cannot place a word naturally, and
- * demanding all of them buys a contorted sentence.
+ * Currently all of them. That is a deliberate tightening, and it has a cost
+ * worth knowing: at L1 a text is two or three sentences of at most six words
+ * with no conjunctions, and only two target words, so failing to place one is
+ * failing to place half - the generation then fails outright rather than
+ * returning a text that teaches one new word. Measured: L1 failed all three
+ * attempts with "teaches 1 of 2", while L7 and L8 comfortably reached 8 of 8.
+ * If beginner levels keep failing, this is the number to revisit, not the
+ * prompt.
  */
 const MIN_TARGET_USE = 1.0;
 
@@ -281,6 +289,7 @@ async function addMissingTargets(
   doc: TextDocument,
   req: GenerationRequest,
   model: string,
+  deadline?: number,
 ): Promise<{ doc: TextDocument; oovRate: number }> {
   const used = new Set(doc.newWords);
   const missing = req.targetWords.filter((w) => !used.has(w.id));
@@ -317,6 +326,7 @@ where "index" is the number of the sentence above that you rewrote.`;
 
   const repairs = await completeJson(prompt, {
     temperature: 0.4,
+    deadline,
     validate: (raw) => repairSchema.parse(JSON.parse(raw)).repairs,
   });
 
@@ -334,15 +344,29 @@ where "index" is the number of the sentence above that you rewrote.`;
   return assemble(raw, req, model);
 }
 
+/**
+ * Wall-clock budget for a whole generation, including repairs.
+ *
+ * The route is killed at 60s (`maxDuration`), and a killed function has spent
+ * its tokens, cached nothing and returned a body the client cannot parse. This
+ * leaves room to persist the result and answer properly.
+ */
+const GENERATION_BUDGET_MS = 45_000;
+
 export async function generateText(req: GenerationRequest): Promise<TextDocument> {
   let lastError: unknown;
   const needed = requiredTargets(req);
+  // One deadline for the run, not per call: an attempt is up to three
+  // sequential completions, and three attempts of those against a per-call
+  // budget is several times the route's whole allowance.
+  const deadline = deadlineIn(GENERATION_BUDGET_MS);
 
   // Try up to 3 times to get a good text (including repairs)
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       let result = await completeJson(buildPrompt(req), {
         temperature: 0.8,
+        deadline,
         validate: (raw, model) => {
           const parsed = outputSchema.parse(JSON.parse(raw));
           return assemble(parsed, req, model);
@@ -352,7 +376,7 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
       if (result.oovRate > MAX_OOV_TOKEN_RATE) {
         const strict = attempt < 2; // Strict on attempts 0 and 1, lenient on attempt 2
         try {
-          result = await repairText(result.doc, req, strict);
+          result = await repairText(result.doc, req, strict, deadline);
         } catch (repairError) {
           // If repair fails, we throw to trigger the outer generation retry
           throw new Error(
@@ -363,7 +387,12 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
 
       // The text is readable. Now check it actually teaches something.
       if (result.doc.newWords.length < needed) {
-        const retried = await addMissingTargets(result.doc, req, result.doc.model ?? "unknown-repair");
+        const retried = await addMissingTargets(
+          result.doc,
+          req,
+          result.doc.model ?? "unknown-repair",
+          deadline,
+        );
         // Only keep the rewrite if it helped and did not make the text harder.
         if (
           retried.doc.newWords.length > result.doc.newWords.length &&
@@ -401,6 +430,7 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
     } catch (e) {
       lastError = e;
       console.warn(`Generation attempt ${attempt + 1} failed:`, e);
+      if (Date.now() >= deadline) break;
     }
   }
 

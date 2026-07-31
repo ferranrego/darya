@@ -60,12 +60,27 @@ Each of these shipped, reached a learner, and was invisible until measured.
   lexeme, and it is now a permanent check in `validate-content.ts`. A finding
   you only fix will come back.
 
-## Cost
+## Cost and time
 
-The app must never bill. Free-tier Groq → OpenRouter, and the daily token quota
-is shared by every user of the deployment. Before adding or enlarging a model
-call, **count calls per user action and estimate tokens**. Raising the known-word
-prompt slice from 160 to 600 words exhausted a whole day's quota in one session.
+The app must never bill. The chain is five free-tier providers deep - Hugging
+Face (Qwen) first, then Groq, OpenRouter, and smaller fallbacks - and **every
+one of those quotas is shared by every user of the deployment**, so one active
+learner can exhaust a day for everybody. Raising the known-word prompt slice
+from 160 to 600 words did exactly that in a single session.
+
+Before adding or enlarging a model call, **count the calls per user action and
+estimate the tokens**. One generation is up to three sequential calls
+(generate → repair → add missing targets), and up to three attempts of those.
+
+**Time is the other budget, and it is easy to miss.** Vercel kills the route at
+`maxDuration` - 60s for generation, 30s for the chat routes. A per-provider
+timeout multiplied by five providers and two attempts is minutes, so the later
+providers in the chain could never actually run: the function died first,
+having spent the tokens, with nothing cached and a 504 body the client cannot
+parse. `completeJson` therefore takes a **shared deadline** and gives each
+attempt what is left of it. A caller making several completions must create one
+deadline (`deadlineIn`) and pass it to all of them - a per-call budget is how
+the problem comes back.
 
 Model output is untrusted input: Zod-parse it, and validate the assembled result
 before it reaches a cache other learners read.

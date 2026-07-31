@@ -8,23 +8,43 @@
 interface Provider {
   name: string;
   available: () => boolean;
-  call: (prompt: string, temperature: number) => Promise<string>;
+  call: (prompt: string, temperature: number, timeoutMs: number) => Promise<string>;
 }
 
 /**
- * Per-provider request timeout.
+ * Timeouts are a *shared deadline*, not a per-provider constant.
  *
- * A single 20s budget for the whole chain meant the fallback could never
- * actually take over. Groq answers in a couple of seconds, so 20s is generous
- * there; OpenRouter's free tier *queues* requests and routinely takes longer
- * than that, so every failover ended in "This operation was aborted" - observed
- * on both attempts the day Groq's daily token limit ran out, which is precisely
- * the day the fallback was supposed to earn its place.
+ * The chain is five providers deep and each was tried twice with its own 30s
+ * budget, which is 300 seconds of provider time inside a route that Vercel
+ * kills at 60 (`maxDuration`), and at 30 on the chat routes - where a single
+ * provider timeout is already the whole invocation. The later providers could
+ * therefore never run: the function died first, having spent the tokens, with
+ * nothing cached and a non-JSON 504 the client cannot parse.
  *
- * The route allows 60s (`maxDuration`), so the slower budget still fits.
+ * So the caller says how long the whole operation may take, and each attempt
+ * gets what is left of it. That keeps the ordering meaningful - a fast provider
+ * failing early leaves plenty for the next - and it degrades honestly, giving
+ * "all providers failed" with real errors instead of a killed process.
+ *
+ * The per-call cap still matters on top of the deadline: OpenRouter's free tier
+ * *queues*, so without a ceiling one slow provider would eat a budget that four
+ * others could have used.
  */
-const TIMEOUT_MS: Record<string, number> = { huggingface: 30_000, groq: 30_000, "groq-fallback": 30_000, openrouter: 30_000, "huggingface-fallback": 30_000 };
-const DEFAULT_TIMEOUT_MS = 30_000;
+const PER_CALL_CAP_MS = 25_000;
+
+/**
+ * Below this there is no point starting another request; the response would
+ * arrive after the deadline anyway. Stopping here leaves room to return a real
+ * error rather than being killed mid-flight.
+ */
+const MIN_USEFUL_MS = 3_000;
+
+/**
+ * Default when a caller does not set one. Sized for the *smallest* route that
+ * reaches this code (`maxDuration = 30` on the chat routes), because being
+ * killed by the platform is worse than giving up a few seconds early.
+ */
+const DEFAULT_BUDGET_MS = 24_000;
 
 function openAiCompatible(
   name: string,
@@ -36,12 +56,9 @@ function openAiCompatible(
   return {
     name,
     available: () => !!process.env[keyEnv],
-    async call(prompt, temperature) {
+    async call(prompt, temperature, timeoutMs) {
       const controller = new AbortController();
-      const timeout = setTimeout(
-        () => controller.abort(),
-        TIMEOUT_MS[name] ?? DEFAULT_TIMEOUT_MS,
-      );
+      const timeout = setTimeout(() => controller.abort(), timeoutMs);
       
       try {
         const res = await fetch(`${baseUrl}/chat/completions`, {
@@ -71,18 +88,34 @@ function openAiCompatible(
   };
 }
 
+/**
+ * Ordered by preference, not by cost - every one of these is free.
+ *
+ * The defaults must name a model the account can actually reach.
+ * `Qwen/Qwen2.5-32B-Instruct` sat at the head of this list and does not exist
+ * on the router ("not supported by any provider you have enabled"), so every
+ * generation spent two failed requests before falling through to Groq, and the
+ * head of the chain was dead weight. Verify a new default with a real call
+ * before shipping it; a 400 here is silent, because the chain recovers.
+ */
 const providers: Provider[] = [
-  openAiCompatible("huggingface", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL", "Qwen/Qwen2.5-32B-Instruct"),
+  openAiCompatible("huggingface", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL", "Qwen/Qwen2.5-72B-Instruct"),
   openAiCompatible("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "llama-3.3-70b-versatile"),
   openAiCompatible("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", "OPENROUTER_MODEL", "openrouter/free"),
   openAiCompatible("groq-fallback", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL_FALLBACK", "llama-3.1-8b-instant"),
-  openAiCompatible("huggingface-fallback", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL_FALLBACK", "Qwen/Qwen2.5-72B-Instruct"),
+  openAiCompatible("huggingface-fallback", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL_FALLBACK", "Qwen/Qwen3-32B"),
 ];
 
 interface CompleteOptions<T> {
   temperature?: number;
   /** Parse and check one raw response. Throwing rejects that attempt. */
   validate: (raw: string, providerName: string) => T;
+  /**
+   * Absolute time by which the whole chain must be done. Callers that make
+   * several sequential completions should create one deadline and pass it to
+   * all of them, so the budget covers the operation rather than each step.
+   */
+  deadline?: number;
 }
 
 /**
@@ -91,12 +124,22 @@ interface CompleteOptions<T> {
  */
 export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>): Promise<T> {
   const errors: string[] = [];
+  const deadline = opts.deadline ?? Date.now() + DEFAULT_BUDGET_MS;
 
   for (const provider of providers) {
     if (!provider.available()) continue;
     for (let attempt = 0; attempt < 2; attempt++) {
+      const remaining = deadline - Date.now();
+      if (remaining < MIN_USEFUL_MS) {
+        errors.push(`${provider.name}#${attempt}: skipped, ${remaining}ms left`);
+        return failed(errors);
+      }
       try {
-        let raw = await provider.call(prompt, opts.temperature ?? 0.8);
+        let raw = await provider.call(
+          prompt,
+          opts.temperature ?? 0.8,
+          Math.min(PER_CALL_CAP_MS, remaining),
+        );
         // Strip markdown backticks if present
         if (raw.startsWith("```json")) {
           raw = raw.replace(/^```json\s*/, "").replace(/\s*```$/, "");
@@ -107,14 +150,30 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e);
         errors.push(`${provider.name}#${attempt}: ${message}`);
-        // A rate limit is the one failure a second identical request cannot
-        // fix, and on a daily quota it is not going to clear this minute
-        // either. Retrying spends another request against the same limit, so
-        // hand over to the next provider immediately - which is the situation
-        // the chain exists for.
-        if (/\b429\b|rate limit|quota/i.test(message)) break;
+        // Some failures a second identical request cannot fix, and retrying
+        // them spends budget the rest of the chain needs. Hand over at once:
+        //
+        //   429 / quota   the limit will not clear this minute, and on a daily
+        //                 quota not today either.
+        //   402           out of credits; nothing about a retry buys more.
+        //   aborted       our own timeout fired. OpenRouter's free tier queues,
+        //                 so a retry is another full budget slice spent waiting
+        //                 for the same queue. Observed: two aborted OpenRouter
+        //                 attempts consumed everything left and the fast Groq
+        //                 fallback behind them was skipped with -8ms to spare.
+        //   400 / 404     the model name is wrong; it will still be wrong.
+        if (/\b(429|402|400|404)\b|rate limit|quota|credits|abort/i.test(message)) break;
       }
     }
   }
+  return failed(errors);
+}
+
+function failed(errors: string[]): never {
   throw new Error(`All providers failed: ${errors.join(" | ")}`);
+}
+
+/** A deadline `budgetMs` from now, for a caller making several completions. */
+export function deadlineIn(budgetMs: number): number {
+  return Date.now() + budgetMs;
 }

@@ -22,6 +22,10 @@ import type { LexiconEntry } from "../content/schema.ts";
 const canned = vi.hoisted(() => ({ sentences: [] as { target: string; en: string }[] }));
 
 vi.mock("./providers.ts", () => ({
+  // The chain shares one wall-clock deadline across the several calls a single
+  // generation makes; these tests do not exercise timing, so it is far enough
+  // out never to expire mid-test.
+  deadlineIn: (ms: number) => Date.now() + ms,
   completeJson: vi.fn(
     async (prompt: string, opts: { validate: (raw: string, model: string) => unknown }) => {
       // The module makes two different kinds of call. A repair asks for a
