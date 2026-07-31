@@ -214,7 +214,7 @@ export default function ReadPage() {
             </p>
             {showRetry && (
               <Button
-                variant="outline"
+                variant="secondary"
                 className="mt-8"
                 onClick={() => {
                   setEmptyGenerations(0);
