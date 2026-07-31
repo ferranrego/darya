@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import { profile as lang } from "@/lib/lang";
 import {
   GRAMMAR_LEVEL_ORDER,
+  buildJourneyNodes,
   grammarCourses,
   grammarStartLevel,
   levels,
@@ -65,26 +66,21 @@ export function JourneyMap({
     icon: <SpellCheck size={24} />,
   });
 
-  // Interleave L1, A1, L2, A2...
-  const order = [
-    { read: "L1", grammar: "A1" },
-    { read: "L2", grammar: "A2" },
-    { read: "L3", grammar: "B1" },
-    { read: "L4", grammar: "B2" },
-    { read: "L5", grammar: "C1" },
-    { read: "L6", grammar: "C2" },
-  ];
+  // The path is derived from the levels this language actually ships, not a
+  // literal. The literal was shaped like neither ladder - it paired L2 with A2
+  // and L3 with B1, which is off by one for both languages, and it stopped at
+  // L6, so Catalan's L7 and L8 rendered no node at all.
+  const journey = buildJourneyNodes(levels);
 
   const userLevelNum = parseInt(userLevelEstimate?.replace("L", "") || "1", 10);
   // Grammar courses below the assessed start level count as passed.
   const grammarStartIdx = GRAMMAR_LEVEL_ORDER.indexOf(grammarStartLevel(userLevelEstimate));
   let grammarCurrentFound = false;
 
-  order.forEach(({ read, grammar }) => {
+  journey.forEach(({ levelId, cefrHint, name, grammar, ownsGrammar }) => {
     // Reading Node: levels below the assessment are done, the assessed level
     // is where the learner reads today, everything above is locked.
-    const readLevelInfo = levels.find((l) => l.id === read);
-    const readLevelNum = parseInt(read.replace("L", ""), 10);
+    const readLevelNum = parseInt(levelId.replace("L", ""), 10);
     const readState: MapNodeState =
       readLevelNum < userLevelNum
         ? "completed"
@@ -92,20 +88,21 @@ export function JourneyMap({
           ? "current"
           : "locked";
 
-    if (readLevelInfo) {
-      nodes.push({
-        id: `read-${read}`,
-        type: "reading",
-        title: readLevelInfo.name,
-        subtitle: readLevelInfo.cefrHint.replace(/^pre/, "Pre") + " reading",
-        route: "/read",
-        state: readState,
-        icon: <BookOpen size={24} />,
-      });
-    }
+    nodes.push({
+      id: `read-${levelId}`,
+      type: "reading",
+      title: name,
+      subtitle: cefrHint.replace(/^pre/, "Pre") + " reading",
+      route: "/read",
+      state: readState,
+      icon: <BookOpen size={24} />,
+    });
 
     // Grammar Node: passed by assessment, finished lesson by lesson, or the
-    // first open course (current); later courses stay locked.
+    // first open course (current); later courses stay locked. Two reading
+    // levels can share one course (Catalan A2 and A2+), and showing it twice
+    // reads as duplicated work, so only the first level owns it.
+    if (!ownsGrammar) return;
     const course = grammarCourses.find((c) => c.level === grammar);
     if (course) {
       const courseLessons = course.blocks.flatMap((b) => b.lessons.map((l) => l.id));

@@ -7,23 +7,36 @@ import { levels } from "./content/load";
  * which words to seed as known.
  */
 
+/** How many words the placement shows before the dynamic spawner takes over. */
+const INITIAL_SEED_SIZE = 32;
+
 /**
- * How many words to seed initially for the dynamic spawner.
+ * Which band each seeded word is drawn from, weighted toward the common end.
+ *
+ * Derived from `FREQ_BAND_COUNT` rather than written out. The literal it
+ * replaces listed bands 11 and 12, which do not exist in a ten-band lexicon:
+ * those four slots silently produced nothing, so the placement asked 31
+ * questions instead of 35 *and* the surviving weights were the ones written for
+ * a twelve-band scale, over-sampling band 1. Both errors pushed the estimate
+ * down, and a learner placed below their level is shown texts they find
+ * trivial.
+ *
+ * More samples at the common end is deliberate and not a bug: that is where the
+ * level boundaries are packed together, so that is where a wrong answer moves
+ * the estimate most.
  */
-const INITIAL_SEED_BANDS = [
-  1, 1, 1, 1, 1, 1,
-  2, 2, 2, 2,
-  3, 3, 3, 3,
-  4, 4, 4,
-  5, 5, 5,
-  6, 6, 6,
-  7, 7, 7,
-  8, 8, 8,
-  9, 9,
-  10, 10,
-  11, 11,
-  12
-];
+function seedBandSchedule(): number[] {
+  const weights = Array.from({ length: FREQ_BAND_COUNT }, (_, i) => 1 / Math.sqrt(i + 1));
+  const total = weights.reduce((n, w) => n + w, 0);
+  const out: number[] = [];
+  weights.forEach((w, i) => {
+    const count = Math.max(1, Math.round((w / total) * INITIAL_SEED_SIZE));
+    for (let n = 0; n < count; n++) out.push(i + 1);
+  });
+  return out;
+}
+
+const INITIAL_SEED_BANDS = seedBandSchedule();
 
 /** Bands with recognition at or above this seed every core word as known. */
 const BAND_KNOWN_THRESHOLD = 0.8;

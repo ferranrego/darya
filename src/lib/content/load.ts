@@ -8,6 +8,7 @@ import lexiconJson from "@content/lexicon/lexicon.json";
 import themesJson from "@content/lexicon/themes.json";
 import levelsJson from "@content/levels/levels.json";
 import { buildIndex, type LexiconIndex } from "../text";
+import { GRAMMAR_LEVEL_ORDER, cefrOf } from "./cefr";
 import {
   alphabetCourseSchema,
   grammarCoursesFileSchema,
@@ -30,8 +31,7 @@ export const themes: Theme[] = themesFileSchema.parse(themesJson);
 export const alphabetCourse: AlphabetCourse = alphabetCourseSchema.parse(alphabetJson);
 export const levelsFile: LevelsFile = levelsFileSchema.parse(levelsJson);
 
-/** Canonical CEFR order, used for indexing even before every level ships. */
-export const GRAMMAR_LEVEL_ORDER: GrammarLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+export { GRAMMAR_LEVEL_ORDER, cefrOf, buildJourneyNodes, type JourneyNode } from "./cefr";
 
 /**
  * Every grammar course this language ships, ordered by CEFR level.
@@ -68,30 +68,19 @@ export function grammarLessonLevel(id: string): GrammarLevel | undefined {
 }
 
 /**
- * The grammar level a learner starts at, from their assessed level_estimate
- * (L1…L6). Levels below this are treated as already completed and hidden, so a
- * learner who tested into A2 begins at A2 with A1 marked done. Clamped to the
- * highest level that actually has content, so a B1/B2 learner starts at the
- * top available course (A2 today) instead of an empty screen.
+ * The grammar level a learner starts at, from their assessed level_estimate.
+ * Levels below this are treated as already completed and hidden, so a learner
+ * who tested into A2 begins at A2 with A1 marked done. Clamped to the highest
+ * level that actually has content, so a learner never lands on an empty screen.
+ *
+ * The mapping comes from the level's own `cefrHint` via `cefrOf`. It used to be
+ * a hardcoded switch shaped like the Dari ladder, which meant a Catalan learner
+ * assessed at L6 — which is B2 in Catalan, not C1 — was started on C1 and never
+ * saw the B2 course at all.
  */
 export function grammarStartLevel(levelEstimate: string | null | undefined): GrammarLevel {
-  let desired: GrammarLevel;
-  switch (levelEstimate) {
-    case "L3":
-      desired = "A2";
-      break;
-    case "L4":
-      desired = "B1";
-      break;
-    case "L5":
-      desired = "B2";
-      break;
-    case "L6":
-      desired = "C1"; // C1 is the top assessed level; C2 is only earned by progressing
-      break;
-    default:
-      desired = "A1"; // L1 (pre-A1), L2 (A1), or unknown
-  }
+  const level = levels.find((l) => l.id === levelEstimate);
+  const desired: GrammarLevel = level ? cefrOf(level) : "A1";
   const available = grammarCourses.map((c) => c.level);
   const maxAvailableIdx = Math.max(...available.map((l) => GRAMMAR_LEVEL_ORDER.indexOf(l)));
   const desiredIdx = GRAMMAR_LEVEL_ORDER.indexOf(desired);
@@ -123,43 +112,6 @@ export function levelById(id: string): Level {
 export function levelLabel(levelId: string | null | undefined): string {
   const level = levels.find((l) => l.id === levelId) ?? levels[0];
   return `${level.cefrHint.replace(/^pre/, "Pre")} · ${level.name}`;
-}
-
-export function getWordsByLevel(cefrHint: string): LexiconEntry[] {
-  const levelIndex = levels.findIndex((l) => l.cefrHint === cefrHint);
-  if (levelIndex === -1) return [];
-
-  const maxRank = levels[levelIndex].entryKnownWords;
-  const minRank = levelIndex > 0 ? levels[levelIndex - 1].entryKnownWords : 0;
-
-  return lexicon.entries.filter((entry) => {
-    return entry.freqRank > minRank && entry.freqRank <= maxRank;
-  });
-}
-
-export function getThemesForLevel(cefrHint: string): string[] {
-  const words = getWordsByLevel(cefrHint);
-  const themes = new Set<string>();
-  
-  words.forEach((word) => {
-    if (word.tags && word.tags.length > 0) {
-      word.tags.forEach((tag) => themes.add(tag));
-    } else {
-      themes.add("Core Vocabulary");
-    }
-  });
-
-  return Array.from(themes).sort();
-}
-
-export function getWordsByTheme(cefrHint: string, theme: string): LexiconEntry[] {
-  const words = getWordsByLevel(cefrHint);
-  return words.filter((word) => {
-    if (theme === "Core Vocabulary") {
-      return !word.tags || word.tags.length === 0;
-    }
-    return word.tags?.includes(theme);
-  });
 }
 
 export function getWordsByThemeOnly(theme: string): LexiconEntry[] {

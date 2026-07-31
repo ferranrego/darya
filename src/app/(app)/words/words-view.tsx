@@ -13,8 +13,14 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
   const { data: words } = useUserWords();
   const [filter, setFilter] = useState<Filter>(initialFilter);
 
+  // Every level with a vocabulary target, not a list of CEFR literals. Matching
+  // on the exact string dropped Catalan's pre-A1 and A2+ tiers - 1,300 words
+  // the learner could never see on this screen - and would drop any level a
+  // language adds later. The progress bar divides by `entryKnownWords`, so the
+  // first level (0) is excluded because dividing by it is meaningless, which is
+  // the real reason rather than a coincidence of naming.
   const cefrLevels = useMemo(() => {
-    return levels.filter((l) => ["A1", "A2", "B1", "B2"].includes(l.cefrHint));
+    return levels.filter((l) => l.entryKnownWords > 0);
   }, []);
 
   const knownCount = useMemo(() => {
