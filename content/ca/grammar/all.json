@@ -6625,7 +6625,7 @@
                 {
                   "id": "gl-26_ex_1",
                   "type": "fillBlank",
-                  "target": "És necessari que ella ___ treballar avui",
+                  "target": "És necessari que ella ___ (treballar) avui",
                   "en": "It is necessary that she works today.",
                   "answer": {
                     "target": "treballi"
@@ -6788,7 +6788,7 @@
                 {
                   "id": "gl-27_ex_1",
                   "type": "fillBlank",
-                  "target": "Espero que en Joan ___ aprovar l'examen",
+                  "target": "Espero que en Joan ___ (aprovar) l'examen",
                   "en": "I hope Joan passes the exam.",
                   "answer": {
                     "target": "aprovi"
@@ -6958,7 +6958,7 @@
                 {
                   "id": "gl-28_ex_1",
                   "type": "fillBlank",
-                  "target": "Pot ser que la botiga ___ estar tancada",
+                  "target": "Pot ser que la botiga ___ (estar) tancada",
                   "en": "The shop might be closed.",
                   "answer": {
                     "target": "estigui"
@@ -7267,7 +7267,7 @@
                 {
                   "id": "gl-30_ex_1",
                   "type": "fillBlank",
-                  "target": "L'any que ve nosaltres ___ viatjar al Japó",
+                  "target": "L'any que ve nosaltres ___ (viatjar) al Japó",
                   "en": "Next year, we will travel to Japan.",
                   "answer": {
                     "target": "viatjarem"
@@ -7284,7 +7284,7 @@
                 {
                   "id": "gl-30_ex_2",
                   "type": "fillBlank",
-                  "target": "Demà jo ___ fer una truita de patates",
+                  "target": "Demà jo ___ (fer) una truita de patates",
                   "en": "Tomorrow, I will make a Spanish omelette.",
                   "answer": {
                     "target": "faré"
@@ -7318,7 +7318,7 @@
                 {
                   "id": "gl-30_ex_4",
                   "type": "fillBlank",
-                  "target": "Aquesta tarda ells ___ venir a casa nostra",
+                  "target": "Aquesta tarda ells ___ (venir) a casa nostra",
                   "en": "This afternoon they will come to our house.",
                   "answer": {
                     "target": "vindran"
@@ -7335,7 +7335,7 @@
                 {
                   "id": "gl-30_ex_5",
                   "type": "fillBlank",
-                  "target": "M'ha dit que ella ___ saber la resposta aviat",
+                  "target": "M'ha dit que ella ___ (saber) la resposta aviat",
                   "en": "She told me that she will know the answer soon.",
                   "answer": {
                     "target": "sabrà"
@@ -7352,7 +7352,7 @@
                 {
                   "id": "gl-30_ex_6",
                   "type": "fillBlank",
-                  "target": "M'ha dit que ella ___ saber la resposta aviat",
+                  "target": "M'ha dit que ella ___ (saber) la resposta aviat",
                   "en": "She told me that she will know the answer soon.",
                   "answer": {
                     "target": "sabrà"
@@ -7408,7 +7408,7 @@
                 {
                   "id": "gl-31_ex_1",
                   "type": "fillBlank",
-                  "target": "T'importaria si jo ___ obrir la finestra",
+                  "target": "T'importaria si jo ___ (obrir) la finestra",
                   "en": "Would you mind if I opened the window?",
                   "answer": {
                     "target": "obriria"
@@ -7459,7 +7459,7 @@
                 {
                   "id": "gl-31_ex_4",
                   "type": "fillBlank",
-                  "target": "Jo en el teu lloc no ho ___ fer",
+                  "target": "Jo en el teu lloc no ho ___ (fer)",
                   "en": "I wouldn't do it in your place.",
                   "answer": {
                     "target": "faria"
@@ -7535,7 +7535,7 @@
                 {
                   "id": "gl-32_ex_1",
                   "type": "fillBlank",
-                  "target": "Si trigues molt nosaltres ___ marxar",
+                  "target": "Si trigues molt nosaltres ___ (marxar)",
                   "en": "If you take a long time, we will leave.",
                   "answer": {
                     "target": "marxarem"
@@ -7569,7 +7569,7 @@
                 {
                   "id": "gl-32_ex_3",
                   "type": "fillBlank",
-                  "target": "Aprovareu l'examen si ___ estudiar cada dia",
+                  "target": "Aprovareu l'examen si ___ (estudiar) cada dia",
                   "en": "You will pass the exam if you study every day.",
                   "answer": {
                     "target": "estudieu"
@@ -7586,7 +7586,7 @@
                 {
                   "id": "gl-32_ex_4",
                   "type": "fillBlank",
-                  "target": "Si ___ tenir temps et vindré a veure",
+                  "target": "Si ___ (tenir) temps et vindré a veure",
                   "en": "If I have time, I will come to see you.",
                   "answer": {
                     "target": "tinc"
@@ -7662,7 +7662,7 @@
                 {
                   "id": "gl-33_ex_1",
                   "type": "fillBlank",
-                  "target": "Si jo ___ ser ric viatjaria per tot el món",
+                  "target": "Si jo ___ (ser) ric viatjaria per tot el món",
                   "en": "If I were rich, I would travel all over the world.",
                   "answer": {
                     "target": "fos"
@@ -7679,7 +7679,7 @@
                 {
                   "id": "gl-33_ex_2",
                   "type": "fillBlank",
-                  "target": "Ells vindrien a la festa si els ___ convidar",
+                  "target": "Ells vindrien a la festa si els ___ (convidar)",
                   "en": "They would come to the party if you invited them.",
                   "answer": {
                     "target": "convidessis"
@@ -7713,7 +7713,7 @@
                 {
                   "id": "gl-33_ex_4",
                   "type": "fillBlank",
-                  "target": "Què diries si et ___ proposar un canvi de feina",
+                  "target": "Què diries si et ___ (proposar) un canvi de feina",
                   "en": "What would you say if they proposed a job change to you?",
                   "answer": {
                     "target": "proposessin"
@@ -7730,7 +7730,7 @@
                 {
                   "id": "gl-33_ex_5",
                   "type": "fillBlank",
-                  "target": "Jo no ho faria si no ___ creure que és necessari",
+                  "target": "Jo no ho faria si no ___ (creure) que és necessari",
                   "en": "I wouldn't do it if I didn't believe it's necessary.",
                   "answer": {
                     "target": "cregués"
@@ -7747,7 +7747,7 @@
                 {
                   "id": "gl-33_ex_6",
                   "type": "fillBlank",
-                  "target": "Jo no ho faria si no ___ creure que és necessari",
+                  "target": "Jo no ho faria si no ___ (creure) que és necessari",
                   "en": "I wouldn't do it if I didn't believe it's necessary.",
                   "answer": {
                     "target": "cregués"
@@ -8086,7 +8086,7 @@
                 {
                   "id": "gl-36_ex_1",
                   "type": "fillBlank",
-                  "target": "Quan van arribar nosaltres ja ___ sopar",
+                  "target": "Quan van arribar nosaltres ja ___ (sopar)",
                   "en": "When they arrived, we had already had dinner.",
                   "answer": {
                     "target": "havíem sopat"
@@ -8103,7 +8103,7 @@
                 {
                   "id": "gl-36_ex_2",
                   "type": "fillBlank",
-                  "target": "Em va dir que mai no hi ___ anar",
+                  "target": "Em va dir que mai no hi ___ (anar)",
                   "en": "He told me that he had never gone there.",
                   "answer": {
                     "target": "havia anat"
@@ -8120,7 +8120,7 @@
                 {
                   "id": "gl-36_ex_3",
                   "type": "fillBlank",
-                  "target": "No vas poder entrar perquè ___ perdre les claus",
+                  "target": "No vas poder entrar perquè ___ (perdre) les claus",
                   "en": "You couldn't get in because you had lost the keys.",
                   "answer": {
                     "target": "havies perdut"
@@ -8137,7 +8137,7 @@
                 {
                   "id": "gl-36_ex_4",
                   "type": "fillBlank",
-                  "target": "Ahir va ploure molt però el dia abans no ___ ploure gens",
+                  "target": "Ahir va ploure molt però el dia abans no ___ (ploure) gens",
                   "en": "Yesterday it rained a lot, but the day before it hadn't rained at all.",
                   "answer": {
                     "target": "havia plogut"
@@ -8154,7 +8154,7 @@
                 {
                   "id": "gl-36_ex_5",
                   "type": "fillBlank",
-                  "target": "Els meus amics ja ___ preparar la festa sorpresa",
+                  "target": "Els meus amics ja ___ (preparar) la festa sorpresa",
                   "en": "My friends had already prepared the surprise party.",
                   "answer": {
                     "target": "havien preparat"
@@ -8171,7 +8171,7 @@
                 {
                   "id": "gl-36_ex_6",
                   "type": "fillBlank",
-                  "target": "Els meus amics ja ___ preparar la festa sorpresa",
+                  "target": "Els meus amics ja ___ (preparar) la festa sorpresa",
                   "en": "My friends had already prepared the surprise party.",
                   "answer": {
                     "target": "havien preparat"
@@ -9093,7 +9093,7 @@
                 {
                   "id": "gl-43_ex_1",
                   "type": "fillBlank",
-                  "target": "Vull que tu ___ venir amb mi",
+                  "target": "Vull que tu ___ (venir) amb mi",
                   "en": "I want you to come with me.",
                   "answer": {
                     "target": "vinguis"
@@ -9110,7 +9110,7 @@
                 {
                   "id": "gl-43_ex_2",
                   "type": "fillBlank",
-                  "target": "Em sap greu que ___ estar malalt",
+                  "target": "Em sap greu que ___ (estar) malalt",
                   "en": "I'm sorry that you are sick.",
                   "answer": {
                     "target": "estiguis"
@@ -9127,7 +9127,7 @@
                 {
                   "id": "gl-43_ex_3",
                   "type": "fillBlank",
-                  "target": "Ells demanen que nosaltres ___ tenir paciència",
+                  "target": "Ells demanen que nosaltres ___ (tenir) paciència",
                   "en": "They ask that we have patience.",
                   "answer": {
                     "target": "tinguem"
@@ -9144,7 +9144,7 @@
                 {
                   "id": "gl-43_ex_4",
                   "type": "fillBlank",
-                  "target": "Recomano que ___ llegir aquest article",
+                  "target": "Recomano que ___ (llegir) aquest article",
                   "en": "I recommend that they read this article.",
                   "answer": {
                     "target": "llegeixin"
@@ -9240,7 +9240,7 @@
                 {
                   "id": "gl-44_ex_1",
                   "type": "fillBlank",
-                  "target": "Si jo ___ ser tu no ho faria",
+                  "target": "Si jo ___ (ser) tu no ho faria",
                   "en": "If I were you, I wouldn't do it.",
                   "answer": {
                     "target": "fos"
@@ -9257,7 +9257,7 @@
                 {
                   "id": "gl-44_ex_2",
                   "type": "fillBlank",
-                  "target": "Tant de bo ___ tenir més diners",
+                  "target": "Tant de bo ___ (tenir) més diners",
                   "en": "I wish we had more money.",
                   "answer": {
                     "target": "tinguéssim"
@@ -9274,7 +9274,7 @@
                 {
                   "id": "gl-44_ex_3",
                   "type": "fillBlank",
-                  "target": "Em va demanar que hi ___ anar jo",
+                  "target": "Em va demanar que hi ___ (anar) jo",
                   "en": "He asked that I go there.",
                   "answer": {
                     "target": "anés"
@@ -9291,7 +9291,7 @@
                 {
                   "id": "gl-44_ex_4",
                   "type": "fillBlank",
-                  "target": "Si ell m'ho ___ explicar bé ho entendria",
+                  "target": "Si ell m'ho ___ (explicar) bé ho entendria",
                   "en": "If he explained it well to me, I would understand.",
                   "answer": {
                     "target": "expliqués"
@@ -9308,7 +9308,7 @@
                 {
                   "id": "gl-44_ex_5",
                   "type": "fillBlank",
-                  "target": "M'agradaria que em ___ dir la veritat",
+                  "target": "M'agradaria que em ___ (dir) la veritat",
                   "en": "I would like you to tell me the truth.",
                   "answer": {
                     "target": "diguessis"
@@ -9387,7 +9387,7 @@
                 {
                   "id": "gl-45_ex_1",
                   "type": "fillBlank",
-                  "target": "Si tingués diners ___ comprar un cotxe nou",
+                  "target": "Si tingués diners ___ (comprar) un cotxe nou",
                   "en": "If I had money, I would buy a new car.",
                   "answer": {
                     "target": "compraria"
@@ -9404,7 +9404,7 @@
                 {
                   "id": "gl-45_ex_2",
                   "type": "fillBlank",
-                  "target": "Nosaltres ___ anar de viatge si tinguéssim vacances",
+                  "target": "Nosaltres ___ (anar) de viatge si tinguéssim vacances",
                   "en": "We would go on a trip if we had holidays.",
                   "answer": {
                     "target": "aniríem"
@@ -9421,7 +9421,7 @@
                 {
                   "id": "gl-45_ex_3",
                   "type": "fillBlank",
-                  "target": "Si ell ___ saber conduir no agafaria el tren",
+                  "target": "Si ell ___ (saber) conduir no agafaria el tren",
                   "en": "If he knew how to drive, he wouldn't take the train.",
                   "answer": {
                     "target": "sabés"
@@ -9438,7 +9438,7 @@
                 {
                   "id": "gl-45_ex_4",
                   "type": "fillBlank",
-                  "target": "Què ___ dir els teus pares si ho sabessin",
+                  "target": "Què ___ (dir) els teus pares si ho sabessin",
                   "en": "What would your parents say if they knew?",
                   "answer": {
                     "target": "dirien"
@@ -9534,7 +9534,7 @@
                 {
                   "id": "gl-46_ex_1",
                   "type": "fillBlank",
-                  "target": "Quan l'autobús ___ arribar pujarem",
+                  "target": "Quan l'autobús ___ (arribar) pujarem",
                   "en": "When the bus arrives, we will get on.",
                   "answer": {
                     "target": "arribi"
@@ -9568,7 +9568,7 @@
                 {
                   "id": "gl-46_ex_3",
                   "type": "fillBlank",
-                  "target": "Mentre tu ___ treballar aquí faràs el que et digui",
+                  "target": "Mentre tu ___ (treballar) aquí faràs el que et digui",
                   "en": "As long as you work here, you will do what I tell you.",
                   "answer": {
                     "target": "treballis"
@@ -9602,7 +9602,7 @@
                 {
                   "id": "gl-46_ex_5",
                   "type": "fillBlank",
-                  "target": "Ens veurem quan ___ acabar la classe",
+                  "target": "Ens veurem quan ___ (acabar) la classe",
                   "en": "We will see each other when the class finishes.",
                   "answer": {
                     "target": "acabi"

@@ -19,7 +19,7 @@ import { join } from "node:path";
 import { lexiconFileSchema, grammarCoursesFileSchema } from "../src/lib/content/schema.ts";
 import { buildLexiconIndex } from "../src/lib/lang/ca/lexicon-index.ts";
 import { matchKey, tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
-import { apostropheProblems, obsoleteSpellings } from "./verify-ca-entries.ts";
+import { apostropheProblems, obsoleteSpellings, strayInfinitive } from "./verify-ca-entries.ts";
 
 const root = join(import.meta.dirname, "..", "content", "ca");
 const lexicon = lexiconFileSchema.parse(
@@ -114,6 +114,9 @@ for (const course of courses) {
           const answer = matchKey(ex.answer.target);
           for (const d of ex.distractors) {
             if (matchKey(d.target) === answer) problems.push(`${ex.id}: distractor equals answer`);
+          }
+          for (const p of strayInfinitive(ex.target, ex.answer.target, index)) {
+            problems.push(`${ex.id}: ${p}`);
           }
         }
         if (ex.type === "chooseTranslation") {

@@ -2,6 +2,7 @@ import { conjugationSurfaces } from "../src/lib/lang/ca/conjugate.ts";
 import { IRREGULAR_VERBS } from "../src/lib/lang/ca/irregulars.ts";
 import { nominalForms, verbSpec } from "../src/lib/lang/ca/lexicon-index.ts";
 import { matchKey, normalizeCatalan, tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
+import type { LexiconIndex } from "../src/lib/lang/types.ts";
 
 /**
  * Verification harness for Catalan lexicon entries.
@@ -234,4 +235,80 @@ export function verifyIrregulars(): string[] {
     }
   }
   return problems;
+}
+
+/**
+ * Verbs that legally govern a bare infinitive, so `vull venir` is Catalan and
+ * `vinguis venir` is not. Modals and the aspectual periphrases; anything else
+ * followed by an infinitive is a mistake.
+ */
+const GOVERNS_INFINITIVE = new Set(
+  (
+    "poder puc pots pot podem podeu poden pugui puguis puguem pugueu puguin podia podies podíem podíeu podien podré podràs podrà podrem podreu podran podria podries podríem podríeu podrien " +
+    "voler vull vols vol volem voleu volen vulgui vulguis vulguem vulgueu vulguin volia volies volíem volíeu volien voldria voldries voldríem voldríeu voldrien " +
+    "saber sé saps sap sabem sabeu saben sàpiga sàpigues sapiguem sapigueu sàpiguen sabia sabies sabíem sabíeu sabien " +
+    "haver he has ha hem heu han hagi hagis hàgim hàgiu hagin havia havies havíem havíeu havien hauré hauràs haurà haurem haureu hauran hauria hauries hauríem hauríeu haurien hagués haguessis haguéssim haguéssiu haguessin " +
+    "anar vaig vas va vam vau van vagi vagis anem aneu vagin anava anaves anàvem anàveu anaven aniré aniràs anirà anirem anireu aniran " +
+    "caldre cal calia caldrà caldria calgui " +
+    "soler solc sols sol solem soleu solen solia solies solíem solíeu solien " +
+    "deure dec deus deu devem deveu deuen " +
+    "gosar gosa goso gosen fer feu fa faig"
+  ).split(/\s+/),
+);
+
+/** A Catalan infinitive, by ending. */
+const INFINITIVE = /^[a-zàèéíòóúïüç·'-]+(?:ar|er|re|ir)$/i;
+
+/**
+ * The blank was filled with a finite verb, but the infinitive it replaced was
+ * left in the sentence.
+ *
+ * Found live in 25 of 82 B1 and 20 of 80 B2 fillBlanks. Rendered to a learner,
+ * `"Vull que tu ___ venir amb mi"` answered `vinguis` reads
+ * `"Vull que tu vinguis venir amb mi"` - which is not Catalan, and is the only
+ * model of the subjunctive those lessons ever show. Nothing caught it because
+ * every check ran on the template, which is well-formed, rather than on the
+ * sentence the learner ends up reading.
+ */
+export function strayInfinitive(
+  target: string,
+  answer: string,
+  index: LexiconIndex,
+): string[] {
+  const filled = target.replace("___", answer);
+  const raw = filled.split(/\s+/);
+  const words = raw.map((w) => w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, ""));
+  const answerHead = answer.trim().split(/\s+/).pop() ?? answer;
+
+  const at = words.findIndex((w) => matchKey(w) === matchKey(answerHead));
+  if (at === -1 || at + 1 >= words.length) return [];
+
+  // A parenthesised infinitive is the lemma hint the exercise is built around -
+  // "que ella ___ (treballar) avui" asks for the right form of *treballar* and
+  // is how the YAML sources write it. It is only a defect when the parentheses
+  // are missing, which is what the YAML-to-JSON conversion did to 30 of them.
+  if (/^[(\[]/.test(raw[at + 1])) return [];
+
+  const next = words[at + 1];
+  if (!INFINITIVE.test(next)) return [];
+
+  // The ending alone is not enough: `llibre`, `carrer` and `pare` all look like
+  // infinitives. Ask the lexicon whether it is one.
+  const entry = index.resolve(next);
+  if (!entry || entry.pos !== "verb") return [];
+  if (matchKey(entry.targetNormalized) !== matchKey(next)) return [];
+
+  // The legal cases: a modal or aspectual verb governing the infinitive
+  // ("vull venir"), or the linking preposition of a periphrasis
+  // ("torno a llegir", "acabo de sortir").
+  if (GOVERNS_INFINITIVE.has(matchKey(answerHead))) return [];
+  if (/^(a|de|d'|que|per|sense|en)$/i.test(matchKey(answerHead))) return [];
+
+  // A finite verb of its own immediately before an infinitive with nothing
+  // linking them is the defect: the blank replaced the finite form and the
+  // infinitive it replaced was never removed.
+  return [
+    `filling the blank leaves a stray infinitive: "${filled}" ` +
+      `(answer "${answer}" is followed by the infinitive "${next}")`,
+  ];
 }

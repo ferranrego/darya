@@ -11,6 +11,21 @@ interface Provider {
   call: (prompt: string, temperature: number) => Promise<string>;
 }
 
+/**
+ * Per-provider request timeout.
+ *
+ * A single 20s budget for the whole chain meant the fallback could never
+ * actually take over. Groq answers in a couple of seconds, so 20s is generous
+ * there; OpenRouter's free tier *queues* requests and routinely takes longer
+ * than that, so every failover ended in "This operation was aborted" - observed
+ * on both attempts the day Groq's daily token limit ran out, which is precisely
+ * the day the fallback was supposed to earn its place.
+ *
+ * The route allows 60s (`maxDuration`), so the slower budget still fits.
+ */
+const TIMEOUT_MS: Record<string, number> = { groq: 20_000, openrouter: 45_000 };
+const DEFAULT_TIMEOUT_MS = 20_000;
+
 function openAiCompatible(
   name: string,
   baseUrl: string,
@@ -23,7 +38,10 @@ function openAiCompatible(
     available: () => !!process.env[keyEnv],
     async call(prompt, temperature) {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 20000); // 20s timeout
+      const timeout = setTimeout(
+        () => controller.abort(),
+        TIMEOUT_MS[name] ?? DEFAULT_TIMEOUT_MS,
+      );
       
       try {
         const res = await fetch(`${baseUrl}/chat/completions`, {
@@ -84,7 +102,14 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
         }
         return opts.validate(raw, provider.name);
       } catch (e) {
-        errors.push(`${provider.name}#${attempt}: ${e instanceof Error ? e.message : String(e)}`);
+        const message = e instanceof Error ? e.message : String(e);
+        errors.push(`${provider.name}#${attempt}: ${message}`);
+        // A rate limit is the one failure a second identical request cannot
+        // fix, and on a daily quota it is not going to clear this minute
+        // either. Retrying spends another request against the same limit, so
+        // hand over to the next provider immediately - which is the situation
+        // the chain exists for.
+        if (/\b429\b|rate limit|quota/i.test(message)) break;
       }
     }
   }
