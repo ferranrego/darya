@@ -1,0 +1,153 @@
+id: gl-10
+title: This, that, and the little words in between
+subtitle: Demonstratives, prepositions, and the contractions al and del.
+grammarPoint: demonstratives-prepositions
+grammarPointEn: demonstratives aquest and aquell, the basic prepositions, the
+  contractions al/del/pel, and the absence of a personal a
+slides:
+  - id: gs-10-1
+    title: aquest is near you, aquell is over there
+    body: Both agree in gender and number with the noun. això and allò stand for a
+      whole idea instead of a noun.
+    examples:
+      - target: aquest llibre
+        en: this book
+      - target: aquesta casa
+        en: this house
+      - target: aquells nens
+        en: those children
+    table:
+      - - aquest
+        - aquesta
+      - - aquests
+        - aquestes
+      - - aquell
+        - aquella
+      - - aquells
+        - aquelles
+      - - això
+        - this (idea)
+      - - allò
+        - that (idea)
+  - id: gs-10-2
+    title: a and de merge with the article
+    body: "a + el makes al, de + el makes del, per + el makes pel. Before l' there
+      is no merging: a l'escola."
+    examples:
+      - target: Vaig al mercat.
+        en: I'm going to the market.
+      - target: La porta del cotxe.
+        en: The car door.
+      - target: Vaig a l'escola.
+        en: I'm going to school.
+    table:
+      - - a + el
+        - al
+      - - a + els
+        - als
+      - - de + el
+        - del
+      - - de + els
+        - dels
+      - - per + el
+        - pel
+      - - per + els
+        - pels
+  - id: gs-10-3
+    title: No a before a person
+    body: If you know Spanish, drop the personal a before a plain object. Catalan
+      does not use it. Keep it, though, where the verb itself asks for a -
+      trucar a algú is the ordinary way to say it.
+    examples:
+      - target: Veig la Maria.
+        en: I see Maria.
+      - target: Conec el teu pare.
+        en: I know your father.
+      - target: Truco a la meva mare.
+        en: I'm calling my mother.
+exercises:
+  - id: ge-10-1
+    type: fillBlank
+    target: ___ casa és molt gran.
+    en: This house is very big.
+    answer:
+      target: Aquesta
+    distractors:
+      - target: Aquest
+      - target: Aquests
+      - target: Aquelles
+  - id: ge-10-2
+    type: fillBlank
+    target: Vaig ___ mercat cada dia.
+    en: I go to the market every day.
+    answer:
+      target: al
+    distractors:
+      - target: a el
+      - target: del
+      - target: pel
+  - id: ge-10-3
+    type: fillBlank
+    target: La porta ___ cotxe és oberta.
+    en: The car door is open.
+    answer:
+      target: del
+    distractors:
+      - target: de el
+      - target: al
+      - target: pel
+  - id: ge-10-4
+    type: fillBlank
+    target: Vaig ___ escola a peu.
+    en: I go to school on foot.
+    answer:
+      target: a l'
+    distractors:
+      - target: al
+      - target: als
+      - target: del
+  - id: ge-10-5
+    type: spotError
+    target: Veig a la Maria cada dia.
+    en: I see Maria every day.
+    errorWord:
+      target: a
+    correction:
+      target: la
+    hint: "Catalan has no personal a: just Veig la Maria."
+    correctedTarget: Veig la Maria cada dia.
+  - id: ge-10-6
+    type: matchPairs
+    prompt: Match the contraction with what it stands for.
+    pairs:
+      - target: al
+        en: a + el
+      - target: del
+        en: de + el
+      - target: pels
+        en: per + els
+      - target: dels
+        en: de + els
+  - id: ge-10-7
+    type: buildSentence
+    en: Those children go to the beach.
+    words:
+      - target: Aquells
+      - target: nens
+      - target: van
+      - target: a
+      - target: la
+      - target: platja
+    extraWords:
+      - target: aquelles
+      - target: al
+  - id: ge-10-8
+    type: chooseTranslation
+    direction: toEn
+    target: Aquest llibre és del meu pare.
+    en: This book is my father's.
+    distractorsEn:
+      - This book is for my father.
+      - That book is my father's.
+      - My father is reading this book.
+    distractorsTarget: []

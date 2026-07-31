@@ -7,26 +7,17 @@ import { lexicon } from "../content/load";
 import { tokenize } from "../text";
 import { completeJson } from "./providers";
 import { profile } from "../lang/index.ts";
+import { TRANSLITERATED, translitField, wordList } from "./lang-format.ts";
+import { MAX_OOV_TOKEN_RATE } from "../content/difficulty.ts";
 
 /**
  * AI text generation: one entry point over the shared free-tier provider
  * chain (see ./providers), strict validation, and a vocabulary verifier.
  * Callers cache results in Postgres, so this module never bills.
- */
-
-/**
- * Whether this language is transliterated at all.
  *
- * A Latin-script language has nothing to transliterate, and asking for one
- * anyway is not harmless: the model obliges, and invents. Catalan texts came
- * back with a "transliteration" of `família` as `famil·lia` - a misspelling
- * printed directly under the correct title, teaching an error that the reader
- * has no way to flag.
+ * Transliteration handling and vocabulary rendering live in ./lang-format,
+ * shared with every other prompt in this directory.
  */
-const TRANSLITERATED = profile.capabilities.transliteration;
-
-/** The model is only asked for a field the language actually has. */
-const translitField = TRANSLITERATED ? z.string().min(1) : z.string().optional();
 
 const outputSchema = z.object({
   titleTarget: z.string().min(1),
@@ -53,30 +44,6 @@ export interface GenerationRequest {
   targetWords: LexiconEntry[];
   newWordRatio: number;
   theme?: string;
-}
-
-/** Tokens that resolve to lexemes outside known+target, or not at all. */
-const MAX_OOV_RATE = 0.25;
-
-/** Word separator for the prompt, in the punctuation the language uses. */
-const LIST_SEP = TRANSLITERATED ? "، " : ", ";
-
-/**
- * Render a vocabulary list for the prompt.
- *
- * The transliteration is only included when the language has one. Without this
- * guard every Catalan word reached the model as `casa (undefined)`, which both
- * wasted the context and taught the model that the parenthesis is meaningful.
- */
-function wordList(words: LexiconEntry[], withGloss = false): string {
-  return words
-    .map((w) => {
-      const parts = [w.target];
-      if (TRANSLITERATED && w.translit) parts.push(withGloss ? `(${w.translit} = ${w.glossEn})` : `(${w.translit})`);
-      else if (withGloss) parts.push(`(${w.glossEn})`);
-      return parts.join(" ");
-    })
-    .join(LIST_SEP);
 }
 
 function buildPrompt(req: GenerationRequest): string {
@@ -228,7 +195,7 @@ where "index" is the number provided above for the sentence.`;
   };
   
   const { doc: finalDoc, oovRate } = assemble(raw, req, doc.model ?? "unknown-repair");
-  if (strict && oovRate > MAX_OOV_RATE) {
+  if (strict && oovRate > MAX_OOV_TOKEN_RATE) {
     throw new Error(`Repair failed: OOV rate still ${(oovRate * 100).toFixed(0)}%`);
   }
   return finalDoc;
@@ -248,7 +215,7 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
         },
       });
       
-      if (result.oovRate <= MAX_OOV_RATE) {
+      if (result.oovRate <= MAX_OOV_TOKEN_RATE) {
         return result.doc;
       }
       

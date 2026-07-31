@@ -1,0 +1,146 @@
+id: gl-15
+title: Reflexive verbs
+subtitle: The everyday verbs that carry a pronoun with them.
+grammarPoint: reflexive-verbs
+grammarPointEn: reflexive verbs with em/et/es/ens/us/es, their daily-routine
+  vocabulary, and the reciprocal use
+slides:
+  - id: gs-15-1
+    title: The pronoun changes with the person
+    body: The dictionary lists the verb with -se on the end. In use, that -se
+      becomes em, et, es, ens or us, and moves in front of the verb.
+    examples:
+      - target: Em dic Anna.
+        en: My name is Anna.
+      - target: Et lleves aviat?
+        en: Do you get up early?
+      - target: Es renta les mans.
+        en: He washes his hands.
+    table:
+      - - jo
+        - em llevo
+      - - tu
+        - et lleves
+      - - ell, ella
+        - es lleva
+      - - nosaltres
+        - ens llevem
+      - - vosaltres
+        - us lleveu
+      - - ells, elles
+        - es lleven
+  - id: gs-15-2
+    title: The daily routine is built from them
+    body: Most of what you do in a morning is a reflexive verb in Catalan.
+    examples:
+      - target: Em llevo a les set.
+        en: I get up at seven.
+      - target: Em dutxo cada matí.
+        en: I shower every morning.
+    table:
+      - - dir-se
+        - to be called
+      - - llevar-se
+        - to get up
+      - - dutxar-se
+        - to shower
+      - - rentar-se
+        - to wash
+      - - vestir-se
+        - to get dressed
+      - - despertar-se
+        - to wake up
+  - id: gs-15-3
+    title: The same forms say "each other"
+    body: In the plural, the reflexive often means the action goes both ways.
+    examples:
+      - target: Ens veiem cada dia.
+        en: We see each other every day.
+      - target: Es coneixen molt bé.
+        en: They know each other very well.
+exercises:
+  - id: ge-15-1
+    type: fillBlank
+    target: ___ dic Marta.
+    en: My name is Marta.
+    answer:
+      target: Em
+    distractors:
+      - target: Et
+      - target: Es
+      - target: Ens
+  - id: ge-15-2
+    type: fillBlank
+    target: Ell ___ diu Joan.
+    en: His name is Joan.
+    answer:
+      target: es
+    distractors:
+      - target: em
+      - target: et
+      - target: us
+  - id: ge-15-3
+    type: fillBlank
+    target: ___ llevem a les set.
+    en: We get up at seven.
+    answer:
+      target: Ens
+    distractors:
+      - target: Em
+      - target: Es
+      - target: Us
+  - id: ge-15-4
+    type: fillBlank
+    target: Cada matí ___ dutxo.
+    en: Every morning I shower.
+    answer:
+      target: em
+    distractors:
+      - target: es
+      - target: et
+      - target: ens
+  - id: ge-15-5
+    type: spotError
+    target: Jo dic Anna.
+    en: My name is Anna.
+    errorWord:
+      target: dic
+    correction:
+      target: em dic
+    correctedTarget: Jo em dic Anna.
+  - id: ge-15-6
+    type: matchPairs
+    prompt: Match the reflexive verb with its meaning.
+    pairs:
+      - target: dir-se
+        en: to be called
+      - target: llevar-se
+        en: to get up
+      - target: rentar-se
+        en: to wash
+      - target: vestir-se
+        en: to get dressed
+  - id: ge-15-7
+    type: buildSentence
+    en: I get up at seven every day.
+    words:
+      - target: Em
+      - target: llevo
+      - target: a
+      - target: les
+      - target: set
+      - target: cada
+      - target: dia
+    extraWords:
+      - target: es
+      - target: lleva
+  - id: ge-15-8
+    type: chooseTranslation
+    direction: toEn
+    target: Ens veiem cada dissabte.
+    en: We see each other every Saturday.
+    distractorsEn:
+      - I see them every Saturday.
+      - They see us every Saturday.
+      - We saw each other on Saturday.
+    distractorsTarget: []

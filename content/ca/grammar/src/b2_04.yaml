@@ -1,0 +1,108 @@
+id: b2_04
+title: La projecció al futur
+subtitle: Time Clauses Referring to the Future
+grammarPoint: Ús del present de subjuntiu en oracions temporals referides al futur (quan, mentre, fins que...).
+grammarPointEn: Use of the present subjunctive in time clauses referring to the future (quan, mentre, fins que...).
+slides:
+  - id: b2_04_s1
+    title: Quan + Subjunctive
+    body: In Catalan, when we use time conjunctions like *quan* (when) to refer to an action that hasn't happened yet (the future), we must use the present subjunctive.
+    examples:
+      - target: Quan arribis, truca'm.
+        translit: \kwan ə\ri.βis, \tɾu.kəm\
+        en: When you arrive, call me.
+        highlight: arribis
+      - target: Et donaré el regal quan sigui el teu aniversari.
+        translit: \ət du.nə\ɾe əl rə\ɣal \kwan \si.ɣi əl \tɛw ə.ni.βəɾ\sa.ɾi\
+        en: I will give you the gift when it is your birthday.
+        highlight: sigui
+  - id: b2_04_s2
+    title: Mentre and Fins Que + Subjunctive
+    body: We also use the subjunctive with *mentre* (as long as / while) and *fins que* (until) when talking about future events.
+    examples:
+      - target: Mentre visquis aquí, ajudaràs a casa.
+        translit: \men.tɾə \vis.kiz ə\ki, ə.ʒu.ðə\ɾas ə \ka.zə\
+        en: As long as you live here, you will help at home.
+        highlight: visquis
+      - target: No sortirem fins que pari de ploure.
+        translit: \no suɾ.ti\ɾɛm \fins kə \pa.ɾi ðə \plɔw.ɾə\
+        en: We won't leave until it stops raining.
+        highlight: pari
+  - id: b2_04_s3
+    title: Tan Aviat Com + Subjunctive
+    body: Expressions like *tan aviat com* (as soon as) or *així que* (as soon as) follow the same rule when projecting into the future.
+    examples:
+      - target: T'escriuré tan aviat com pugui.
+        translit: \təs.kɾiw\ɾe \tan ə.βi\at \kum \pu.ɣi\
+        en: I will write to you as soon as I can.
+        highlight: pugui
+      - target: Així que acabeu, podeu marxar.
+        translit: \əj\ʃi kə ə.kə\βɛw, pu\ðɛw məɾ\tʃa\
+        en: As soon as you finish, you can leave.
+        highlight: acabeu
+exercises:
+  - id: b2_04_e1
+    type: fillBlank
+    target: Quan l'autobús ___ (arribar), pujarem.
+    translit: \kwan ləw.tu\βuz ___, pu.ʒə\ɾɛm\
+    en: When the bus arrives, we will get on.
+    answer:
+      target: arribi
+      translit: \ə\ri.βi\
+    distractors:
+      - target: arriba
+        translit: \ə\ri.βə\
+      - target: arribarà
+        translit: \ə.ri.βə\ɾa\
+  - id: b2_04_e2
+    type: fillBlank
+    target: No et perdonaré fins que em ___ (demanar) perdó.
+    translit: \no ət pəɾ.du.nə\ɾe \fins kə əm ___ pəɾ\do\
+    en: I won't forgive you until you ask for my forgiveness.
+    answer:
+      target: demanis
+      translit: \də\ma.nis\
+    distractors:
+      - target: demanes
+        translit: \də\ma.nəs\
+      - target: demanaràs
+        translit: \də.mə.nə\ɾas\
+  - id: b2_04_e3
+    type: fillBlank
+    target: Mentre tu ___ (treballar) aquí, faràs el que et digui.
+    translit: \men.tɾə \tu ___ ə\ki, fə\ɾaz əl kə ət \di.ɣi\
+    en: As long as you work here, you will do what I tell you.
+    answer:
+      target: treballis
+      translit: \tɾə\βa.ʎis\
+    distractors:
+      - target: treballes
+        translit: \tɾə\βa.ʎəs\
+      - target: treballaràs
+        translit: \tɾə.βə.ʎə\ɾas\
+  - id: b2_04_e4
+    type: fillBlank
+    target: Avisa'm tan aviat com ho ___ (saber).
+    translit: \ə\vi.zəm \tan ə.βi\at \kum u ___\
+    en: Let me know as soon as you know it.
+    answer:
+      target: sàpigues
+      translit: \sa.pi.ɣəs\
+    distractors:
+      - target: saps
+        translit: \saps\
+      - target: sabràs
+        translit: \sə\βɾas\
+  - id: b2_04_e5
+    type: fillBlank
+    target: Ens veurem quan ___ (acabar) la classe.
+    translit: \ənz βəw\ɾɛm \kwan ___ lə \kla.sə\
+    en: We will see each other when the class finishes.
+    answer:
+      target: acabi
+      translit: \ə\ka.βi\
+    distractors:
+      - target: acaba
+        translit: \ə\ka.βə\
+      - target: acabarà
+        translit: \ə.kə.βə\ɾa\

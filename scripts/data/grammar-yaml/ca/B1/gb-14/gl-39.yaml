@@ -1,0 +1,78 @@
+id: gl-39
+title: Combinació de Pronoms (CD + CI)
+subtitle: Domini dels Pronoms Febles
+grammarPoint: Combinació de pronoms de complement directe i indirecte
+grammarPointEn: Combining direct and indirect object pronouns
+slides:
+  - title: Combinació 'li' + 'el/la'
+    content: "Quan combinem el pronom de CI 'li' amb els de CD 'el/la/els/les', 'li'
+      es transforma en 'hi'. Exemple: li + el = l'hi, li + la = la hi, li + els
+      = els hi, li + les = les hi."
+    id: gs-39-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - title: Combinació 'els' + 'ho'
+    content: La combinació del pronom de CI plural 'els' amb el pronom neutre 'ho'
+      forma 'els ho'.
+    id: gs-39-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-39-1
+    type: fillBlank
+    target: Dona el llibre a la Maria. Dona'___.
+    en: Give the book to Maria. Give it to her.
+    answer:
+      target: l'hi
+    distractors:
+      - target: li'l
+      - target: el hi
+  - id: ge-39-2
+    type: fillBlank
+    target: Explica això als nens. Explica'___.
+    en: Explain this to the children. Explain it to them.
+    answer:
+      target: ls-ho
+    distractors:
+      - target: les-ho
+      - target: los-ho
+  - id: ge-39-3
+    type: fillBlank
+    target: Has portat les claus al Joan? Sí, ja ___ he portat.
+    en: Have you brought the keys to Joan? Yes, I have already brought them to him.
+    answer:
+      target: les hi
+    distractors:
+      - target: les li
+      - target: l'hi
+  - id: ge-39-4
+    type: fillBlank
+    target: He comprat la revista per a la teva mare. ___ he comprat aquest matí.
+    en: I bought the magazine for your mother. I bought it for her this morning.
+    answer:
+      target: La hi
+    distractors:
+      - target: Li la
+      - target: L'hi
+  - id: ge-39-5
+    type: fillBlank
+    target: Qui ha dit això als teus pares? Ningú ___ ha dit.
+    en: Who said this to your parents? Nobody told them.
+    answer:
+      target: els ho
+    distractors:
+      - target: els hi
+      - target: ho els
+  - id: ge-39-6
+    type: fillBlank
+    target: Qui ha dit això als teus pares? Ningú ___ ha dit.
+    en: Who said this to your parents? Nobody told them.
+    answer:
+      target: els ho
+    distractors:
+      - target: els hi
+      - target: ho els

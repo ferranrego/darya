@@ -1,0 +1,120 @@
+id: b2_16
+title: El gran dilema
+subtitle: Per vs Per a
+grammarPoint: Per vs Per a (segons l'IEC)
+grammarPointEn: Per vs Per a (according to the IEC)
+slides:
+  - id: b2_16_1
+    title: Ús de "Per"
+    body: |
+      According to the IEC, "per" indicates cause, motive, means, substitution, or transit through space or time.
+    examples:
+      - target: Ho faig per tu.
+        translit: /ˈu ˈfat͡ʃ pəɾ ˈtu/
+        en: I do it for you (because of you / for your sake).
+        highlight: per tu
+      - target: Passem per Barcelona.
+        translit: /pəˈsɛm pəɾ βəɾsəˈlonə/
+        en: We are passing through Barcelona.
+        highlight: per Barcelona
+      - target: T'ho envio per correu.
+        translit: /ˈt w əmˈbi.u pəɾ kuˈrɛw/
+        en: I send it to you by mail.
+        highlight: per correu
+  - id: b2_16_2
+    title: Ús de "Per a"
+    body: |
+      "Per a" indicates destination, recipient, or purpose (often with noun phrases or pronouns). 
+    examples:
+      - target: Aquest regal és per a la Maria.
+        translit: /əˈkɛt rəˈɣal ˈes pəɾ ə lə məˈɾi.ə/
+        en: This gift is for Maria (recipient).
+        highlight: per a la
+      - target: Ho vull per a demà.
+        translit: /ˈu ˈβuʎ pəɾ ə ðəˈma/
+        en: I want it for tomorrow (destination in time).
+        highlight: per a demà
+      - target: Són unes ulleres per a llegir.
+        translit: /ˈson ˈunəz uˈʎeɾəs pəɾ ə ʎəˈʒi/
+        en: They are reading glasses (purpose).
+        highlight: per a llegir
+  - id: b2_16_3
+    title: El conflicte davant d'infinitiu
+    body: |
+      Before an infinitive expressing purpose, traditional grammar used "per a". However, in many spoken dialects, people just say "per". 
+      The current GIEC (Gramàtica de la llengua catalana) accepts BOTH "per" and "per a" before infinitives expressing purpose, although "per a" is often preferred in formal writing in some dialects to avoid ambiguity with cause.
+    examples:
+      - target: Treballa per a viure.
+        translit: /tɾəˈβaʎə pəɾ ə ˈβiwɾə/
+        en: He works to live.
+        highlight: per a viure
+      - target: Ha estat castigat per parlar a classe.
+        translit: /ˈa əsˈtat kəstiˈɣat pəɾ pəɾˈla ə ˈklasə/
+        en: He was punished for talking in class (cause - only "per").
+        highlight: per parlar
+exercises:
+  - id: b2_16_ex1
+    type: fillBlank
+    target: Aquest paquet és ___ tu.
+    translit: əˈkɛt pəˈkɛt ˈes ___ ˈtu.
+    en: This package is for you (recipient).
+    answer:
+      target: per a
+      translit: /pəɾ ə/
+    distractors:
+      - target: per
+        translit: /pəɾ/
+      - target: a
+        translit: /ə/
+  - id: b2_16_ex2
+    type: fillBlank
+    target: Hem passejat ___ la platja.
+    translit: ˈɛm pəsəˈʒat ___ lə ˈplat͡ʃə.
+    en: We walked along/through the beach.
+    answer:
+      target: per
+      translit: /pəɾ/
+    distractors:
+      - target: per a
+        translit: /pəɾ ə/
+      - target: a
+        translit: /ə/
+  - id: b2_16_ex3
+    type: fillBlank
+    target: He vingut ___ parlar amb el director.
+    translit: ˈe βiŋˈɡut ___ pəɾˈla əmb əl diɾəkˈto.
+    en: I have come to speak with the director (purpose).
+    answer:
+      target: per a
+      translit: /pəɾ ə/
+    distractors:
+      - target: de
+        translit: /də/
+      - target: cap a
+        translit: /ˈkap ə/
+  - id: b2_16_ex4
+    type: fillBlank
+    target: Ho van suspendre ___ la pluja.
+    translit: /ˈu ˈβan susˈpɛndɾə ___ lə ˈpluʒə./
+    en: They suspended it because of the rain.
+    answer:
+      target: per
+      translit: /pəɾ/
+    distractors:
+      - target: per a
+        translit: /pəɾ ə/
+      - target: a
+        translit: /ə/
+  - id: b2_16_ex5
+    type: fillBlank
+    target: Necessito el document ___ divendres.
+    translit: nəsəˈsitu l dukuˈmen ___ ðiˈβɛndɾəs.
+    en: I need the document for Friday (deadline/time destination).
+    answer:
+      target: per a
+      translit: /pəɾ ə/
+    distractors:
+      - target: per
+        translit: /pəɾ/
+      - target: a
+        translit: /ə/

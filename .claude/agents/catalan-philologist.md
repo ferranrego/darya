@@ -44,8 +44,8 @@ apostrophation edge cases, and anything involving `l·l`.
 
 | Area | Where |
 |---|---|
-| Lexicon, 878 entries: headword, gloss, POS, example | `content/ca/lexicon/lexicon.json` |
-| Grammar course, 25 lessons / 201 exercises | `content/ca/grammar/all.json` |
+| Lexicon, 4,343 entries: headword, gloss, POS, example | `content/ca/lexicon/lexicon.json` |
+| Grammar course, 88 lessons across A1–C2 | `content/ca/grammar/all.json` |
 | Level definitions and their `grammarAllowed` prose | `content/ca/levels/levels.json` |
 | Seed texts | `content/ca/texts/seed/*.json` |
 | Irregular verb paradigms, 36 verbs | `src/lib/lang/ca/irregulars.ts` |

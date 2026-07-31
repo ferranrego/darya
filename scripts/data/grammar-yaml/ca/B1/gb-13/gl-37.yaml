@@ -1,0 +1,97 @@
+id: gl-37
+title: Expressions de temps
+subtitle: "Time expressions: des de, fa, feia, des que"
+grammarPoint: Preposicions i locucions de temps
+grammarPointEn: Time prepositions and locutions
+slides:
+  - slideId: gl-37-s1
+    title: Fa i Feia
+    content: >-
+      **Fa** indica el temps transcorregut des d'una acció passada fins al
+      moment present. S'usa amb verbs en passat (perifràstic o indefinit).
+
+      - Vam arribar **fa** dues hores.
+
+
+      **Feia** indica el temps transcorregut fins a un moment del passat. S'usa
+      amb verbs en imperfet o plusquamperfet.
+
+      - **Feia** molt de temps que no ens vèiem.
+    id: gs-37-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - slideId: gl-37-s2
+    title: Des de i Des que
+    content: >-
+      **Des de** indica el punt d'inici d'una acció i va seguit d'un substantiu
+      (una data, un dia, un any).
+
+      - Visc aquí **des de** 2015.
+
+
+      **Des que** indica també el punt d'inici, però va seguit d'una oració amb
+      un verb conjugat.
+
+      - No l'he vist **des que** vam acabar l'escola.
+    id: gs-37-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-37-1
+    type: fillBlank
+    target: Estic estudiant català ___ l'any passat.
+    en: I am studying Catalan since last year.
+    answer:
+      target: des de
+    distractors:
+      - target: des que
+      - target: fa
+  - id: ge-37-2
+    type: fillBlank
+    target: Ens vam conèixer ___ cinc anys.
+    en: We met five years ago.
+    answer:
+      target: fa
+    distractors:
+      - target: feia
+      - target: des de
+  - id: ge-37-3
+    type: fillBlank
+    target: No he menjat res ___ em vaig llevar.
+    en: I haven't eaten anything since I got up.
+    answer:
+      target: des que
+    distractors:
+      - target: des de
+      - target: fa
+  - id: ge-37-4
+    type: fillBlank
+    target: Quan em va trucar, ___ tres hores que l'esperava.
+    en: When he called me, I had been waiting for him for three hours.
+    answer:
+      target: feia
+    distractors:
+      - target: fa
+      - target: des de
+  - id: ge-37-5
+    type: fillBlank
+    target: Treballa en aquesta empresa ___ el març.
+    en: He has been working in this company since March.
+    answer:
+      target: des de
+    distractors:
+      - target: des que
+      - target: fa
+  - id: ge-37-6
+    type: fillBlank
+    target: Treballa en aquesta empresa ___ el març.
+    en: He has been working in this company since March.
+    answer:
+      target: des de
+    distractors:
+      - target: des que
+      - target: fa

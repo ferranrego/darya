@@ -85,7 +85,7 @@ export function HomeGuideSheet({
             <div className="flex items-center gap-4">
               <Poncha pose="wave" size={72} animated />
               <div>
-                <h2 className="text-[20px] font-semibold tracking-tight">Salām, {firstName}!</h2>
+                <h2 className="text-[20px] font-semibold tracking-tight">{lang.samples.phaseGreetings.day}, {firstName}!</h2>
                 <p className="mt-0.5 text-[14px] text-ink-soft">
                   Poncha here - let me show you around.
                 </p>

@@ -1,0 +1,111 @@
+id: c2_02
+title: "Pronoms pleonàstics i usos estilístics"
+subtitle: "Datiu ètic i datiu d'interès"
+grammarPoint: "Usos estilístics dels pronoms"
+grammarPointEn: "Stylistic uses of pronouns"
+slides:
+  - id: c2_02_s1
+    title: "El datiu ètic"
+    body: |
+      El datiu ètic és un pronom feble (normalment *em*, *et*, *ens*, *us*) que expressa la implicació afectiva o l'interès subjectiu del parlant en l'acció. No és gramaticalment necessari.
+    examples:
+      - target: "No m'arribis tard, si us plau."
+        translit: ""
+        en: "Don't arrive late (for my sake), please."
+        highlight: "m'"
+      - target: "Aquest nen no ens menja res."
+        translit: ""
+        en: "This child doesn't eat anything (and it worries us)."
+        highlight: "ens"
+  - id: c2_02_s2
+    title: "El datiu d'interès o simpatia"
+    body: |
+      Indica la persona que rep el dany o el profit de l'acció, però que no és pròpiament l'objecte indirecte de la frase. Pot acompanyar possessius.
+    examples:
+      - target: "Se li ha mort el gos."
+        translit: ""
+        en: "His dog died (on him)."
+        highlight: "li"
+      - target: "T'he rentat la roba."
+        translit: ""
+        en: "I washed your clothes (for you)."
+        highlight: "T'"
+  - id: c2_02_s3
+    title: "Repetició pleonàstica"
+    body: |
+      Sovint es repeteix el pronom de complement indirecte encara que el referent explícit ja sigui a la frase, per donar-hi més èmfasi.
+    examples:
+      - target: "A la Maria li agrada molt llegir."
+        translit: ""
+        en: "Maria likes reading a lot."
+        highlight: "li"
+      - target: "Els he donat el llibre als alumnes."
+        translit: ""
+        en: "I gave the book to the students."
+        highlight: "Els"
+exercises:
+  - id: c2_02_e1
+    type: fillBlank
+    target: "No ___ caiguis d'aquí dalt, que em faràs patir!"
+    translit: ""
+    en: "Don't fall from up there, you'll make me suffer!"
+    answer:
+      target: "em"
+      translit: ""
+    distractors:
+      - target: "et"
+        translit: ""
+      - target: "es"
+        translit: ""
+  - id: c2_02_e2
+    type: fillBlank
+    target: "A la teva germana ___ vaig veure ahir al supermercat."
+    translit: ""
+    en: "I saw your sister yesterday at the supermarket."
+    answer:
+      target: "la"
+      translit: ""
+    distractors:
+      - target: "li"
+        translit: ""
+      - target: "hi"
+        translit: ""
+  - id: c2_02_e3
+    type: fillBlank
+    target: "Als meus pares ___ he comprat un regal fantàstic."
+    translit: ""
+    en: "I bought a fantastic gift for my parents."
+    answer:
+      target: "els"
+      translit: ""
+    distractors:
+      - target: "lis"
+        translit: ""
+      - target: "ens"
+        translit: ""
+  - id: c2_02_e4
+    type: fillBlank
+    target: "S'___ ha espatllat la rentadora, quina mala sort que té."
+    translit: ""
+    en: "Her washing machine broke down, what bad luck she has."
+    answer:
+      target: "li"
+      translit: ""
+    distractors:
+      - target: "hi"
+        translit: ""
+      - target: "la"
+        translit: ""
+  - id: c2_02_e5
+    type: fillBlank
+    target: "Aquest gos no ___ fa cas quan el cridem."
+    translit: ""
+    en: "This dog doesn't listen to us when we call him."
+    answer:
+      target: "ens"
+      translit: ""
+    distractors:
+      - target: "em"
+        translit: ""
+      - target: "us"
+        translit: ""

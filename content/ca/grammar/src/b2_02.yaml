@@ -1,0 +1,108 @@
+id: b2_02
+title: La irrealitat en el present
+subtitle: Imperfect Subjunctive
+grammarPoint: Ús de l'imperfet de subjuntiu per expressar situacions hipotètiques o irrealitat en el present.
+grammarPointEn: Using the imperfect subjunctive to express hypothetical situations or unreality in the present.
+slides:
+  - id: b2_02_s1
+    title: The Imperfect Subjunctive
+    body: The imperfect subjunctive is used to talk about hypothetical, unlikely, or impossible situations in the present or future. It is formed with the endings -és, -essis, -és, -éssim, -éssiu, -essin (or -às, -assis, etc. for first conjugation verbs).
+    examples:
+      - target: Si tingués temps, ho faria.
+        translit: \si tin\gɛs \tems, u fə\ɾi.ə\
+        en: If I had time, I would do it.
+        highlight: tingués
+      - target: Tant de bo vinguessis amb nosaltres.
+        translit: \tan də \βɔ \vin\gɛ.sis əm nu\zal.tɾəs\
+        en: I wish you would come with us.
+        highlight: vinguessis
+  - id: b2_02_s2
+    title: Unlikely Conditions (Si + Imperfect Subjunctive)
+    body: We use *si* followed by the imperfect subjunctive to express a condition that is unlikely or contrary to fact in the present. The main clause uses the conditional.
+    examples:
+      - target: Si fos ric, viatjaria per tot el món.
+        translit: \si \fos \rik, bi.ə.dʒə\ɾi.ə pəɾ \tot əl \mon\
+        en: If I were rich, I would travel all over the world.
+        highlight: fos
+      - target: Si cantessis millor, t'agafarien al cor.
+        translit: \si kən\te.siz mi\ʎo, tə.ɣə.fə\ɾi.ən əl \kɔɾ\
+        en: If you sang better, they would take you in the choir.
+        highlight: cantessis
+  - id: b2_02_s3
+    title: Expressing Wishes (Tant de bo / M'agradaria que)
+    body: The imperfect subjunctive is used after expressions like *tant de bo* or *m'agradaria que* to express a strong wish that is difficult or impossible to fulfill right now.
+    examples:
+      - target: M'agradaria que plogués.
+        translit: \mə.ɣɾə.ðə\ɾi.ə kə plu\ɣɛs\
+        en: I wish it would rain.
+        highlight: plogués
+      - target: Tant de bo fossis aquí.
+        translit: \tan də \βɔ \fo.siz ə\ki\
+        en: I wish you were here.
+        highlight: fossis
+exercises:
+  - id: b2_02_e1
+    type: fillBlank
+    target: Si jo ___ (ser) tu, no ho faria.
+    translit: \si \ʒo ___ \tu, \no u fə\ɾi.ə\
+    en: If I were you, I wouldn't do it.
+    answer:
+      target: fos
+      translit: \fos\
+    distractors:
+      - target: soc
+        translit: \sok\
+      - target: seria
+        translit: \sə\ɾi.ə\
+  - id: b2_02_e2
+    type: fillBlank
+    target: Tant de bo ___ (tenir) més diners.
+    translit: \tan də \βɔ ___ \mez ði\nes\
+    en: I wish we had more money.
+    answer:
+      target: tinguéssim
+      translit: \tin\gɛ.sim\
+    distractors:
+      - target: tenim
+        translit: \tə\nim\
+      - target: tinguem
+        translit: \tin\gɛm\
+  - id: b2_02_e3
+    type: fillBlank
+    target: Em va demanar que hi ___ (anar) jo.
+    translit: \əm \ba ðə.mə\na kə i ___ \ʒo\
+    en: He asked that I go there.
+    answer:
+      target: anés
+      translit: \ə\nɛs\
+    distractors:
+      - target: vaig
+        translit: \batʃ\
+      - target: vagi
+        translit: \ba.ʒi\
+  - id: b2_02_e4
+    type: fillBlank
+    target: Si ell m'ho ___ (explicar) bé, ho entendria.
+    translit: \si \eʎ mu ___ \be, u ən.tən\dɾi.ə\
+    en: If he explained it well to me, I would understand.
+    answer:
+      target: expliqués
+      translit: \əks.pli\kɛs\
+    distractors:
+      - target: explica
+        translit: \əks\pli.kə\
+      - target: expliqui
+        translit: \əks\pli.ki\
+  - id: b2_02_e5
+    type: fillBlank
+    target: M'agradaria que em ___ (dir) la veritat.
+    translit: \mə.ɣɾə.ðə\ɾi.ə kə əm ___ lə βə.ɾi\tat\
+    en: I would like you to tell me the truth.
+    answer:
+      target: diguessis
+      translit: \di\ɣɛ.sis\
+    distractors:
+      - target: dius
+        translit: \diws\
+      - target: diguis
+        translit: \di.ɣis\

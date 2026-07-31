@@ -1,0 +1,146 @@
+id: gl-25
+title: Pronouns that combine
+subtitle: me'l, se'n, l'hi - the apostrophes finally make sense.
+grammarPoint: combined-pronouns
+grammarPointEn: combining two weak pronouns, their four written shapes, and
+  enclitic attachment to infinitives and imperatives
+slides:
+  - id: gs-25-1
+    title: Every weak pronoun has four shapes
+    body: "Which one you write depends on what is next to it: a consonant, a vowel,
+      or another pronoun. em is the model for et and es."
+    examples:
+      - target: Em dona el llibre.
+        en: He gives me the book.
+      - target: M'ajuda molt.
+        en: He helps me a lot.
+      - target: Vol ajudar-me.
+        en: He wants to help me.
+    table:
+      - - before a consonant
+        - em, et, es
+      - - before a vowel
+        - m', t', s'
+      - - after a consonant
+        - -me, -te, -se
+      - - after a vowel
+        - -'m, -'t, -'s
+  - id: gs-25-2
+    title: Two pronouns together
+    body: "The order is fixed by form, not by meaning: a 1st or 2nd person pronoun
+      comes before a 3rd person one (me'l, te'n), and en and ho come last. With
+      li the two fuse into l'hi."
+    examples:
+      - target: Me'l dona demà.
+        en: He'll give it to me tomorrow.
+      - target: Te'n parlo després.
+        en: I'll talk to you about it later.
+      - target: Se'n va a casa.
+        en: He's going off home.
+    table:
+      - - em + el
+        - me'l
+      - - em + en
+        - me'n
+      - - em + ho
+        - m'ho
+      - - et + el
+        - te'l
+      - - es + en
+        - se'n
+      - - li + ho
+        - l'hi
+  - id: gs-25-3
+    title: After the verb they hook on with a hyphen
+    body: With an infinitive or an imperative the pronouns move to the end and keep
+      the same order.
+    examples:
+      - target: Vull dir-t'ho ara.
+        en: I want to tell you now.
+      - target: Dona-me'l, si us plau.
+        en: Give it to me, please.
+      - target: Vaig anar-me'n aviat.
+        en: I left early.
+exercises:
+  - id: ge-25-1
+    type: fillBlank
+    target: El llibre? ___ dona demà.
+    en: The book? He'll give it to me tomorrow.
+    answer:
+      target: Me'l
+    distractors:
+      - target: Em el
+      - target: M'el
+      - target: Me el
+  - id: ge-25-2
+    type: fillBlank
+    target: ___ va a casa aviat.
+    en: He goes off home early.
+    answer:
+      target: Se'n
+    distractors:
+      - target: Es en
+      - target: S'en
+      - target: Se en
+  - id: ge-25-3
+    type: fillBlank
+    target: Vull dir-___ ara mateix.
+    en: I want to tell you right now.
+    answer:
+      target: t'ho
+    distractors:
+      - target: te ho
+      - target: et ho
+      - target: t'o
+  - id: ge-25-4
+    type: fillBlank
+    target: ___ ajuda molt cada dia.
+    en: He helps me a lot every day.
+    answer:
+      target: M'
+    distractors:
+      - target: Em
+      - target: Me
+      - target: Mi
+  - id: ge-25-5
+    type: fillBlank
+    target: Vol ajudar-___ amb la feina.
+    en: He wants to help me with the work.
+    answer:
+      target: me
+    distractors:
+      - target: em
+      - target: m'
+      - target: mi
+  - id: ge-25-6
+    type: spotError
+    target: Vol ajudar em amb la feina.
+    en: He wants to help me with the work.
+    errorWord:
+      target: em
+    correction:
+      target: ajudar-me
+    hint: After an infinitive the pronoun hooks on.
+    correctedTarget: Vol ajudar-me amb la feina.
+  - id: ge-25-7
+    type: matchPairs
+    prompt: Match the combination with its written form.
+    pairs:
+      - target: me'l
+        en: em + el
+      - target: me'n
+        en: em + en
+      - target: se'n
+        en: es + en
+      - target: m'ho
+        en: em + ho
+  - id: ge-25-8
+    type: chooseTranslation
+    direction: toEn
+    target: Vaig anar-me'n molt aviat.
+    en: I left very early.
+    distractorsEn:
+      - I arrived very early.
+      - I want to go very early.
+      - He left me very early.
+    distractorsTarget: []

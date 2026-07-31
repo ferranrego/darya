@@ -65,6 +65,23 @@ export interface LanguagePrompts {
    * conjugation-analysis prompt. Language-specific by construction.
    */
   inflectionExample: string;
+  /**
+   * The grammatical features worth pointing out when breaking a sentence down
+   * word by word: "ezafe chains" is illuminating in Dari and meaningless in
+   * Catalan, where the equivalent is weak-pronoun combination. Without this the
+   * explainer told Catalan learners about ezafe.
+   */
+  explanationFocus: string;
+  /**
+   * Grammatical roles the word-by-word breakdown may label, as a prompt hint.
+   * Shared roles plus whatever the language actually has.
+   */
+  wordRoles: string;
+  /** Chat enrichment instructions */
+  chat: {
+    /** The instruction given for the "translit" mode (e.g. phonetic guide or actual transliteration) */
+    translitTask: string;
+  };
 }
 
 /** Product identity. One deployment, one brand. */
@@ -98,6 +115,8 @@ export interface LanguageSamples {
   sentence: { target: string; translit?: string; en: string };
   /** Three everyday words for the reader guide's tap-to-reveal demo. */
   words: [string, string, string];
+  /** Greetings for the home screen by time of day */
+  phaseGreetings: Record<"morning" | "day" | "evening" | "night", string>;
 }
 
 export interface LanguageProfile {
@@ -106,14 +125,12 @@ export interface LanguageProfile {
   /** Human-readable name of the language being learned. */
   name: string;
   dir: "ltr" | "rtl";
-  /** Locale passed to the network TTS endpoint. */
-  ttsLocale: string;
   /**
-   * Voice-language prefixes acceptable for the offline `speechSynthesis`
-   * fallback, best first. Separate from `ttsLocale` because the closest
-   * available system voice is often not the language itself.
+   * No TTS fields here on purpose. Both apps are text-only by design, so the
+   * `useAudio` hook and the `ttsLocale`/`ttsVoicePrefixes` it read were deleted
+   * rather than wired up - the hook had been written but never imported by any
+   * component. Re-adding them is a product decision, not a gap to fill in.
    */
-  ttsVoicePrefixes: readonly string[];
   /** CSS custom-property value for the target-text font stack. */
   fontStack: string;
   /** Arabic script must never be letterspaced; Latin can be. */

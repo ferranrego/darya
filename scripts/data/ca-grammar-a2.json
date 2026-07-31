@@ -1956,26 +1956,6 @@
               ]
             },
             {
-              "id": "ge-20-5",
-              "type": "fillBlank",
-              "target": "Nosaltres ___ a casa.",
-              "en": "We would eat at home.",
-              "answer": {
-                "target": "menjaríem"
-              },
-              "distractors": [
-                {
-                  "target": "mengem"
-                },
-                {
-                  "target": "menjarem"
-                },
-                {
-                  "target": "menjàvem"
-                }
-              ]
-            },
-            {
               "id": "ge-20-6",
               "type": "spotError",
               "target": "Vull un got d'aigua, si us plau.",

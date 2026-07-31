@@ -1,0 +1,158 @@
+id: gl-03
+title: Gender, number and agreement
+subtitle: Everything in the phrase has to match.
+grammarPoint: gender-number-agreement
+grammarPointEn: noun and adjective agreement in gender and number, plural
+  formation, and adjective position after the noun
+slides:
+  - id: gs-03-1
+    title: The adjective follows the noun and copies it
+    body: Unlike English, the adjective normally comes after the noun, and it
+      changes to match.
+    examples:
+      - target: un noi alt
+        en: a tall boy
+      - target: una noia alta
+        en: a tall girl
+      - target: uns nois alts
+        en: tall boys
+      - target: unes noies altes
+        en: tall girls
+  - id: gs-03-2
+    title: Feminines are mostly -a, with a few twists
+    body: Add -a to the masculine. Some endings change more than that, and a few
+      adjectives never change at all.
+    examples:
+      - target: Aquesta poma és bona.
+        en: This apple is good.
+      - target: La camisa és blava.
+        en: The shirt is blue.
+    table:
+      - - petit
+        - petita
+      - - bo
+        - bona
+      - - blau
+        - blava
+      - - cansat
+        - cansada
+      - - pobre
+        - pobra
+      - - gran
+        - gran
+  - id: gs-03-3
+    title: "Plurals: -s, -es, -os"
+    body: "Most words add -s, and feminines in -a switch to -es. A word ending in a
+      stressed -s, -ç, -x or -ig takes -os instead, doubling a single s (gos ->
+      gossos). A word whose final -s is unstressed does not change at all: el
+      dilluns, els dilluns."
+    examples:
+      - target: dos llibres
+        en: two books
+      - target: les cases blanques
+        en: the white houses
+      - target: els gossos petits
+        en: the small dogs
+    table:
+      - - llibre
+        - llibres
+      - - casa
+        - cases
+      - - gos
+        - gossos
+      - - peix
+        - peixos
+      - - feliç
+        - feliços
+      - - el dilluns
+        - els dilluns
+exercises:
+  - id: ge-03-1
+    type: fillBlank
+    target: La casa és ___.
+    en: The house is small.
+    answer:
+      target: petita
+    distractors:
+      - target: petit
+      - target: petits
+      - target: petites
+  - id: ge-03-2
+    type: fillBlank
+    target: Les pomes són ___.
+    en: The apples are good.
+    answer:
+      target: bones
+    distractors:
+      - target: bons
+      - target: bona
+      - target: bo
+  - id: ge-03-3
+    type: fillBlank
+    target: Tinc dos ___ petits.
+    en: I have two small dogs.
+    answer:
+      target: gossos
+    distractors:
+      - target: gos
+      - target: gosos
+      - target: gossa
+  - id: ge-03-4
+    type: fillBlank
+    target: La camisa és ___.
+    en: The shirt is blue.
+    answer:
+      target: blava
+    distractors:
+      - target: blau
+      - target: blaus
+      - target: blaves
+  - id: ge-03-5
+    type: spotError
+    target: Les cases són blanc.
+    en: The houses are white.
+    errorWord:
+      target: blanc
+    correction:
+      target: blanques
+    correctedTarget: Les cases són blanques.
+  - id: ge-03-6
+    type: buildSentence
+    en: I have a small white house.
+    words:
+      - target: Tinc
+      - target: una
+      - target: casa
+      - target: blanca
+      - target: petita
+    extraWords:
+      - target: blanc
+      - target: petit
+    altOrders:
+      - - Tinc
+        - una
+        - casa
+        - petita
+        - blanca
+  - id: ge-03-7
+    type: matchPairs
+    prompt: Match the masculine adjective with its feminine.
+    pairs:
+      - target: bo
+        en: bona
+      - target: blau
+        en: blava
+      - target: cansat
+        en: cansada
+      - target: pobre
+        en: pobra
+  - id: ge-03-8
+    type: chooseTranslation
+    direction: toEn
+    target: Els peixos són petits.
+    en: The fish are small.
+    distractorsEn:
+      - The fish is small.
+      - The small fish is here.
+      - The birds are small.
+    distractorsTarget: []

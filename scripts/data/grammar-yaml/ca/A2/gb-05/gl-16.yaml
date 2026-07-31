@@ -1,0 +1,143 @@
+id: gl-16
+title: Object pronouns
+subtitle: el, la, els, les, li - and where they sit.
+grammarPoint: object-pronouns
+grammarPointEn: direct object pronouns el/la/els/les and indirect li/els, their
+  position before the conjugated verb, and enclitic attachment to infinitives
+  and imperatives
+slides:
+  - id: gs-16-1
+    title: They go before the verb
+    body: Unlike English, the object pronoun comes in front of the conjugated verb,
+      not after it.
+    examples:
+      - target: El veig cada dia.
+        en: I see him every day.
+      - target: La compro demà.
+        en: I'll buy it tomorrow.
+      - target: Els conec molt bé.
+        en: I know them very well.
+    table:
+      - - el
+        - him, it (masc.)
+      - - la
+        - her, it (fem.)
+      - - els
+        - them (masc.)
+      - - les
+        - them (fem.)
+      - - li
+        - to him, to her
+      - - els
+        - to them
+  - id: gs-16-2
+    title: el and la shrink to l' before a vowel
+    body: Exactly like the article. la stays whole before an unstressed i- or u-.
+    examples:
+      - target: L'he vist avui.
+        en: I have seen him today.
+      - target: L'escolto cada matí.
+        en: I listen to it every morning.
+  - id: gs-16-3
+    title: li is for the person you give something to
+    body: Use li when English would say "to him" or "to her", even when English
+      leaves the "to" out.
+    examples:
+      - target: Li dono el llibre.
+        en: I give him the book.
+      - target: Li escric cada setmana.
+        en: I write to her every week.
+  - id: gs-16-4
+    title: After an infinitive they hook on with a hyphen
+    body: When the verb is an infinitive or an imperative, the pronoun goes on the
+      end instead.
+    examples:
+      - target: Vull veure'l.
+        en: I want to see it.
+      - target: Compra-la!
+        en: Buy it!
+      - target: Cal ajudar-lo.
+        en: He needs to be helped.
+exercises:
+  - id: ge-16-1
+    type: fillBlank
+    target: ___ veig cada dia.
+    en: I see him every day.
+    answer:
+      target: El
+    distractors:
+      - target: La
+      - target: Li
+      - target: Es
+  - id: ge-16-2
+    type: fillBlank
+    target: ___ dono el llibre a la Marta.
+    en: I give the book to Marta.
+    answer:
+      target: Li
+    distractors:
+      - target: El
+      - target: La
+      - target: Es
+  - id: ge-16-3
+    type: fillBlank
+    target: ___ he vist avui.
+    en: I have seen him today.
+    answer:
+      target: L'
+    distractors:
+      - target: El
+      - target: La
+      - target: Li
+  - id: ge-16-4
+    type: fillBlank
+    target: Vull ___ demà.
+    en: I want to see it tomorrow.
+    answer:
+      target: veure'l
+    distractors:
+      - target: el veure
+      - target: veure el
+      - target: el veig
+  - id: ge-16-5
+    type: fillBlank
+    target: Les pomes? ___ compro al mercat.
+    en: The apples? I buy them at the market.
+    answer:
+      target: Les
+    distractors:
+      - target: Els
+      - target: La
+      - target: Li
+  - id: ge-16-6
+    type: spotError
+    target: Veig el cada dia.
+    en: I see him every day.
+    errorWord:
+      target: Veig
+    correction:
+      target: El veig
+    hint: The pronoun comes first.
+    correctedTarget: El veig cada dia.
+  - id: ge-16-7
+    type: matchPairs
+    prompt: Match each pronoun with what it stands for.
+    pairs:
+      - target: el
+        en: him, it (masc.)
+      - target: la
+        en: her, it (fem.)
+      - target: les
+        en: them (fem.)
+      - target: li
+        en: to him, to her
+  - id: ge-16-8
+    type: chooseTranslation
+    direction: toEn
+    target: Li escric cada setmana.
+    en: I write to her every week.
+    distractorsEn:
+      - She writes to me every week.
+      - I read it every week.
+      - I see her every week.
+    distractorsTarget: []

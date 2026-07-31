@@ -3,7 +3,6 @@ import { profile } from "../lang/index.ts";
 
 export type EnrichMode = "translit" | "translation" | "correction";
 
-/** Dari is written in Arabic script; Latin-only messages need no help. */
 /**
  * Does this text look like the target language rather than English?
  *

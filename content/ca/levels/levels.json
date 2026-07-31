@@ -6,7 +6,10 @@
       "name": "First words",
       "cefrHint": "pre-A1",
       "freqBands": [
-        1
+        1,
+        2,
+        3,
+        4
       ],
       "entryKnownWords": 0,
       "sentenceRange": [
@@ -21,7 +24,8 @@
         "present indicative of first-conjugation -ar verbs (parlo, parles, parla)",
         "simple questions with què, qui, on, com, quan",
         "negation with no"
-      ]
+      ],
+      "avgSentenceWords": 5
     },
     {
       "id": "L2",
@@ -29,9 +33,13 @@
       "cefrHint": "A1",
       "freqBands": [
         1,
-        2
+        2,
+        3,
+        4,
+        5,
+        6
       ],
-      "entryKnownWords": 110,
+      "entryKnownWords": 500,
       "sentenceRange": [
         2,
         4
@@ -46,7 +54,8 @@
         "cardinal numbers, days, months, telling the time",
         "prepositions a, de, en, amb, per, sense, fins",
         "Catalan has no Spanish-style personal a with a plain direct object: write 'veig la Maria', never 'veig a la Maria'. But do keep the a where the verb governs it (trucar a algú, telefonar a algú) and before a strong personal pronoun ('et veig a tu')"
-      ]
+      ],
+      "avgSentenceWords": 7
     },
     {
       "id": "L3",
@@ -55,9 +64,12 @@
       "freqBands": [
         1,
         2,
-        3
+        3,
+        4,
+        5,
+        6
       ],
-      "entryKnownWords": 500,
+      "entryKnownWords": 1200,
       "sentenceRange": [
         3,
         5
@@ -72,7 +84,8 @@
         "comparatives and superlatives (més ... que, menys ... que, tan ... com, el més)",
         "connectors però, perquè, quan, mentre, també, tampoc",
         "verbs with a velar stem must use it: tinc/tingui, vinc/vingui, venc/vengui, ric/rigui"
-      ]
+      ],
+      "avgSentenceWords": 9
     },
     {
       "id": "L4",
@@ -82,9 +95,13 @@
         1,
         2,
         3,
-        4
+        4,
+        5,
+        6,
+        7,
+        8
       ],
-      "entryKnownWords": 720,
+      "entryKnownWords": 1700,
       "sentenceRange": [
         4,
         6
@@ -99,7 +116,121 @@
         "impersonal es (es parla català, es ven pa)",
         "verbal periphrases haver de, poder, voler, tornar a, acabar de",
         "ela geminada is written with the interpunct: col·legi, intel·ligent - never 'colegi' or 'col.legi'"
-      ]
+      ],
+      "avgSentenceWords": 11
+    },
+    {
+      "id": "L5",
+      "name": "Conversations",
+      "cefrHint": "B1",
+      "freqBands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "entryKnownWords": 2500,
+      "sentenceRange": [
+        5,
+        8
+      ],
+      "sentenceLengthHint": "max 18 words per sentence; multiple clauses",
+      "grammarAllowed": [
+        "all previous grammar",
+        "imperfect subjunctive",
+        "conditional clauses"
+      ],
+      "avgSentenceWords": 14
+    },
+    {
+      "id": "L6",
+      "name": "Advanced discussions",
+      "cefrHint": "B2",
+      "freqBands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "entryKnownWords": 2941,
+      "sentenceRange": [
+        6,
+        9
+      ],
+      "sentenceLengthHint": "max 22 words per sentence; rich vocabulary and subordination",
+      "grammarAllowed": [
+        "all previous grammar",
+        "present subjunctive for influence/emotion",
+        "hypothetical and unreal conditionals",
+        "advanced pronoun combinations (l'hi, els les, n'hi, s'hi)",
+        "passive voice and pronominal passive"
+      ],
+      "avgSentenceWords": 17
+    },
+    {
+      "id": "L7",
+      "name": "Complex texts",
+      "cefrHint": "C1",
+      "freqBands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "entryKnownWords": 3381,
+      "sentenceRange": [
+        7,
+        10
+      ],
+      "sentenceLengthHint": "max 25 words per sentence; formal register and nuances",
+      "grammarAllowed": [
+        "all previous grammar",
+        "concessive clauses (malgrat que, per bé que)",
+        "compound relative pronouns (el qual, la qual)"
+      ],
+      "avgSentenceWords": 19
+    },
+    {
+      "id": "L8",
+      "name": "Mastery",
+      "cefrHint": "C2",
+      "freqBands": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "entryKnownWords": 3822,
+      "sentenceRange": [
+        8,
+        12
+      ],
+      "sentenceLengthHint": "max 30 words per sentence; academic and literary style",
+      "grammarAllowed": [
+        "all Catalan grammar",
+        "literary tenses if applicable"
+      ],
+      "avgSentenceWords": 23
     }
   ]
 }

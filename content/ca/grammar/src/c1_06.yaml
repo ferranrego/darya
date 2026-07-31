@@ -1,0 +1,108 @@
+id: c1_06
+title: Oracions escindides
+subtitle: Vaig ser jo qui ho va dir
+grammarPoint: Construccions focalitzadores amb el verb ser i pronoms relatius.
+grammarPointEn: Cleft sentences with the verb "to be" and relative pronouns for emphasis.
+slides:
+  - id: s1
+    title: Oracions escindides de primer tipus (Subjecte / CD)
+    body: "Destaquem el subjecte o el complement directe (CD) utilitzant el verb 'ser' seguit de l'element destacat i un relatiu ('qui' o 'que')."
+    examples:
+      - target: Vaig ser jo qui ho va dir.
+        translit: Vaig ser jo qui ho va dir.
+        en: It was me who said it.
+        highlight: Vaig ser jo qui
+      - target: És la veritat el que vull saber.
+        translit: És la veritat el que vull saber.
+        en: It is the truth what I want to know.
+        highlight: És la veritat el que
+  - id: s2
+    title: Oracions escindides amb preposicions
+    body: "Si l'element destacat porta preposició, la preposició s'ha de mantenir al davant del verb 'ser' o just després, i usar el relatiu adequat."
+    examples:
+      - target: És a tu a qui parlo.
+        translit: És a tu a qui parlo.
+        en: It is to you who I am speaking.
+        highlight: És a tu a qui
+      - target: Va ser amb ells amb qui vam sortir.
+        translit: Va ser amb ells amb qui vam sortir.
+        en: It was with them who we went out.
+        highlight: Va ser amb ells amb qui
+  - id: s3
+    title: Oracions pseudoescindides
+    body: "Una altra forma d'emfasitzar és usar 'El que... és...' o estructures similars per introduir la informació clau al final."
+    examples:
+      - target: El que necessitem és més temps.
+        translit: El que necessitem és més temps.
+        en: What we need is more time.
+        highlight: El que necessitem és
+      - target: Qui va trucar ahir va ser el director.
+        translit: Qui va trucar ahir va ser el director.
+        en: The one who called yesterday was the director.
+        highlight: Qui va trucar ahir va ser
+exercises:
+  - id: e1
+    type: fillBlank
+    target: "Vaig ser jo ___ ho va arreglar."
+    translit: "Vaig ser jo qui ho va arreglar."
+    en: "It was me who fixed it."
+    answer:
+      target: qui
+      translit: qui
+    distractors:
+      - target: que
+        translit: que
+      - target: on
+        translit: on
+  - id: e2
+    type: fillBlank
+    target: "És amb ell ___ vull parlar."
+    translit: "És amb ell amb qui vull parlar."
+    en: "It is with him who I want to speak."
+    answer:
+      target: amb qui
+      translit: amb qui
+    distractors:
+      - target: qui
+        translit: qui
+      - target: a qui
+        translit: a qui
+  - id: e3
+    type: fillBlank
+    target: "___ que importa és que estiguis bé."
+    translit: "El que importa és que estiguis bé."
+    en: "What matters is that you are well."
+    answer:
+      target: El
+      translit: El
+    distractors:
+      - target: Lo
+        translit: Lo
+      - target: Allò
+        translit: Allò
+  - id: e4
+    type: fillBlank
+    target: "És aquí ___ vam trobar les claus."
+    translit: "És aquí on vam trobar les claus."
+    en: "It is here where we found the keys."
+    answer:
+      target: on
+      translit: on
+    distractors:
+      - target: que
+        translit: que
+      - target: on hi
+        translit: on hi
+  - id: e5
+    type: fillBlank
+    target: "No va ser ahir ___ hi vam anar, sinó abans-d'ahir."
+    translit: "No va ser ahir quan hi vam anar, sinó abans-d'ahir."
+    en: "It was not yesterday when we went there, but the day before yesterday."
+    answer:
+      target: quan
+      translit: quan
+    distractors:
+      - target: que
+        translit: que
+      - target: on
+        translit: on

@@ -1,0 +1,131 @@
+id: gl-22
+title: Joining sentences
+subtitle: però, perquè, quan, mentre - and the que that does everything.
+grammarPoint: connectors-relatives
+grammarPointEn: coordinating and subordinating connectors, and relative clauses
+  with que, qui and on
+slides:
+  - id: gs-22-1
+    title: The connectors you will use every day
+    body: Catalan writes perquè as one word both for "because" and for "so that";
+      the question word per què is two.
+    examples:
+      - target: Vull sortir, però plou.
+        en: I want to go out, but it's raining.
+      - target: No vinc perquè estic cansat.
+        en: I'm not coming because I'm tired.
+      - target: Quan arribi, et truco.
+        en: When I arrive, I'll call you.
+    table:
+      - - però
+        - but
+      - - perquè
+        - because
+      - - quan
+        - when
+      - - mentre
+        - while
+      - - si
+        - if
+      - - doncs
+        - so, then
+  - id: gs-22-2
+    title: que links a clause to a noun
+    body: Where English can drop "that", Catalan never does.
+    examples:
+      - target: El llibre que llegeixo és bo.
+        en: The book I'm reading is good.
+      - target: La casa on visc és petita.
+        en: The house where I live is small.
+  - id: gs-22-3
+    title: qui only for people, after a preposition
+    body: For a person as the plain subject or object, que is still the normal
+      choice.
+    examples:
+      - target: L'amic amb qui parlo.
+        en: The friend I'm talking to.
+      - target: La dona que treballa aquí.
+        en: The woman who works here.
+exercises:
+  - id: ge-22-1
+    type: fillBlank
+    target: Vull sortir, ___ plou.
+    en: I want to go out, but it's raining.
+    answer:
+      target: però
+    distractors:
+      - target: perquè
+      - target: quan
+      - target: mentre
+  - id: ge-22-2
+    type: fillBlank
+    target: No vinc ___ estic cansat.
+    en: I'm not coming because I'm tired.
+    answer:
+      target: perquè
+    distractors:
+      - target: però
+      - target: quan
+      - target: si
+  - id: ge-22-3
+    type: fillBlank
+    target: Escolto música ___ treballo.
+    en: I listen to music while I work.
+    answer:
+      target: mentre
+    distractors:
+      - target: quan
+      - target: però
+      - target: perquè
+  - id: ge-22-4
+    type: fillBlank
+    target: El llibre ___ llegeixo és molt bo.
+    en: The book I'm reading is very good.
+    answer:
+      target: que
+    distractors:
+      - target: qui
+      - target: on
+      - target: què
+  - id: ge-22-5
+    type: fillBlank
+    target: La casa ___ visc és petita.
+    en: The house where I live is small.
+    answer:
+      target: on
+    distractors:
+      - target: que
+      - target: qui
+      - target: quan
+  - id: ge-22-6
+    type: spotError
+    target: La dona qui treballa aquí és la Marta.
+    en: The woman who works here is Marta.
+    errorWord:
+      target: qui
+    correction:
+      target: que
+    hint: qui needs a preposition in front of it.
+    correctedTarget: La dona que treballa aquí és la Marta.
+  - id: ge-22-7
+    type: matchPairs
+    prompt: Match the connector with its meaning.
+    pairs:
+      - target: però
+        en: but
+      - target: perquè
+        en: because
+      - target: mentre
+        en: while
+      - target: doncs
+        en: so, then
+  - id: ge-22-8
+    type: chooseTranslation
+    direction: toEn
+    target: No surto perquè fa molt fred.
+    en: I'm not going out because it's very cold.
+    distractorsEn:
+      - I go out although it's very cold.
+      - I'm not going out, but it's very cold.
+      - Why am I not going out in the cold?
+    distractorsTarget: []

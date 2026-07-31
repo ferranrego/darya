@@ -1,0 +1,115 @@
+id: b2_13
+title: La concessió
+subtitle: Expressing contrast and concession
+grammarPoint: Concessive conjunctions (encara que, malgrat que, per bé que)
+grammarPointEn: Concessive conjunctions
+slides:
+  - id: b2_13_1
+    title: Encara que
+    body: |
+      "Encara que" is the most common concessive conjunction (although, even though).
+      It takes the indicative when referring to an actual, factual situation in the present or past.
+      It takes the subjunctive when referring to a hypothetical, future, or unlikely situation.
+    examples:
+      - target: Encara que plou, sortiré.
+        translit: /ənˈkaɾə kə ˈplɔu suɾtiˈɾe/
+        en: Even though it is raining, I will go out.
+        highlight: plou
+      - target: Encara que plogui, sortiré.
+        translit: /ənˈkaɾə kə ˈplɔɣi suɾtiˈɾe/
+        en: Even if it rains, I will go out.
+        highlight: plogui
+  - id: b2_13_2
+    title: Malgrat que
+    body: |
+      "Malgrat que" (despite the fact that) belongs to a slightly more formal register than "encara que".
+      It almost always takes the indicative, although occasionally it can be found with the subjunctive in some registers. According to normative grammar, with factual events, it takes indicative.
+    examples:
+      - target: Malgrat que no tinc temps, t'ajudaré.
+        translit: /məlˈɣɾat kə ˈno ˈtiŋ ˈtems təʒuðəˈɾe/
+        en: Even though I don't have time, I will help you.
+        highlight: no tinc temps
+      - target: Van guanyar el partit malgrat que jugaven malament.
+        translit: /bam ɡwəˈɲa l pəɾˈtit məlˈɣɾat kə ʒuˈɣaβəm mələˈmen/
+        en: They won the match despite playing badly.
+        highlight: jugaven
+  - id: b2_13_3
+    title: Per bé que
+    body: |
+      "Per bé que" (even though, albeit) is used in formal or literary contexts.
+      It usually takes the indicative, similar to "malgrat que".
+    examples:
+      - target: La decisió, per bé que impopular, era necessària.
+        translit: /lə dəziziˈo pəɾ ˈβe kə impupuˈlaɾ ˈeɾə nəsəˈsaɾi.ə/
+        en: The decision, although unpopular, was necessary.
+        highlight: per bé que
+      - target: Ho va acceptar, per bé que no hi estava d'acord.
+        translit: /ˈu ˈβə əksəpˈta pəɾ ˈβe kə ˈno j əsˈtaβə ðəˈkɔɾ/
+        en: He accepted it, even though he didn't agree with it.
+        highlight: estava
+exercises:
+  - id: b2_13_ex1
+    type: fillBlank
+    target: ___ fa fred, anirem a la platja.
+    translit: ___ ˈfa ˈfɾɛt, əniˈɾɛm a lə ˈplat͡ʃə.
+    en: Even though it's cold, we will go to the beach.
+    answer:
+      target: Encara que
+      translit: /ənˈkaɾə kə/
+    distractors:
+      - target: Perquè
+        translit: /pəɾˈkɛ/
+      - target: A fi que
+        translit: /ə ˈfi kə/
+  - id: b2_13_ex2
+    type: fillBlank
+    target: ___ no estudiï gaire, sempre aprova.
+    translit: ___ ˈno əstuˈði.i ˈɣajɾə, ˈsempɾə əˈpɾɔβə.
+    en: Even if he doesn't study much, he always passes.
+    answer:
+      target: Encara que
+      translit: /ənˈkaɾə kə/
+    distractors:
+      - target: Com que
+        translit: /ˈkɔm kə/
+      - target: Ja que
+        translit: /ˈʒa kə/
+  - id: b2_13_ex3
+    type: fillBlank
+    target: ___ no hi ha diners, farem el viatge.
+    translit: ___ ˈno j a ðiˈnes, fəˈɾem əl ˈbjat͡ʃə.
+    en: Despite the fact that there is no money, we will make the trip.
+    answer:
+      target: Malgrat que
+      translit: /məlˈɣɾat kə/
+    distractors:
+      - target: Per bé de
+        translit: /pəɾ ˈβe ðə/
+      - target: Donat que
+        translit: /duˈnat kə/
+  - id: b2_13_ex4
+    type: fillBlank
+    target: El llibre, ___ és llarg, és molt interessant.
+    translit: əl ˈʎiβɾə, ___ ˈez ˈʎaɾk, ˈez ˈmolt intəɾəˈsan.
+    en: The book, even though it is long, is very interesting.
+    answer:
+      target: per bé que
+      translit: /pəɾ ˈβe kə/
+    distractors:
+      - target: per a que
+        translit: /pəɾ ə kə/
+      - target: de manera que
+        translit: /də məˈneɾə kə/
+  - id: b2_13_ex5
+    type: fillBlank
+    target: ___ plogui demà, hi anirem.
+    translit: ___ ˈplɔɣi ðəˈma, j əniˈɾem.
+    en: Even if it rains tomorrow, we will go there.
+    answer:
+      target: Encara que
+      translit: /ənˈkaɾə kə/
+    distractors:
+      - target: Malgrat que
+        translit: /məlˈɣɾat kə/
+      - target: Així que
+        translit: /əˈʃi kə/

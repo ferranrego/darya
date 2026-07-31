@@ -1,0 +1,133 @@
+id: gl-13
+title: The imperfect
+subtitle: How things used to be, and what was going on.
+grammarPoint: imperfect-indicative
+grammarPointEn: imperfect indicative for description, habit and background,
+  contrasted with the periphrastic past for completed events
+slides:
+  - id: gs-13-1
+    title: Two pasts, two jobs
+    body: The periphrastic past says what happened once. The imperfect describes how
+      things were, or what used to happen again and again.
+    examples:
+      - target: Vaig menjar pa.
+        en: I ate bread (once).
+      - target: Menjava pa cada dia.
+        en: I used to eat bread every day.
+      - target: La casa era gran.
+        en: The house was big.
+  - id: gs-13-2
+    title: The endings are very regular
+    body: "-ar verbs take -ava; -er, -re and -ir verbs take -ia. A handful build the
+      imperfect on an older stem and simply have to be learnt: ser, fer, veure,
+      dir and dur."
+    examples:
+      - target: De petit parlava català.
+        en: As a child I spoke Catalan.
+      - target: Tenia molta feina.
+        en: I had a lot of work.
+    table:
+      - - parlar
+        - parlava, parlaves, parlava
+      - - parlar (pl.)
+        - parlàvem, parlàveu, parlaven
+      - - tenir
+        - tenia, tenies, tenia
+      - - ser
+        - era, eres, era
+      - - fer
+        - feia, feies, feia
+      - - veure / dir
+        - veia / deia
+  - id: gs-13-3
+    title: Use it to set the scene
+    body: The imperfect paints the background; the periphrastic past drops the event
+      into it.
+    examples:
+      - target: Plovia i vaig tornar a casa.
+        en: It was raining and I went back home.
+      - target: Eren les vuit quan va arribar.
+        en: It was eight o'clock when he arrived.
+exercises:
+  - id: ge-13-1
+    type: fillBlank
+    target: De petit ___ molt.
+    en: As a child I used to read a lot.
+    answer:
+      target: llegia
+    distractors:
+      - target: llegeixo
+      - target: llegiré
+      - target: llegit
+  - id: ge-13-2
+    type: fillBlank
+    target: La casa ___ molt gran.
+    en: The house was very big.
+    answer:
+      target: era
+    distractors:
+      - target: és
+      - target: serà
+      - target: seria
+  - id: ge-13-3
+    type: fillBlank
+    target: Ell ___ el sopar cada nit.
+    en: He used to make dinner every night.
+    answer:
+      target: feia
+    distractors:
+      - target: fa
+      - target: farà
+      - target: fet
+  - id: ge-13-4
+    type: fillBlank
+    target: Nosaltres ___ a la platja cada estiu.
+    en: We used to go to the beach every summer.
+    answer:
+      target: anàvem
+    distractors:
+      - target: anem
+      - target: anirem
+      - target: aniríem
+  - id: ge-13-5
+    type: fillBlank
+    target: Jo ___ un gos petit.
+    en: I had a small dog.
+    answer:
+      target: tenia
+    distractors:
+      - target: tinc
+      - target: tindré
+      - target: tingut
+  - id: ge-13-6
+    type: spotError
+    target: Cada dia vaig menjar a casa.
+    en: Every day I used to eat at home.
+    errorWord:
+      target: vaig
+    correction:
+      target: menjava
+    hint: A repeated habit takes the imperfect.
+    correctedTarget: Cada dia menjava a casa.
+  - id: ge-13-7
+    type: matchPairs
+    prompt: Match each verb with its imperfect.
+    pairs:
+      - target: ser
+        en: era
+      - target: fer
+        en: feia
+      - target: veure
+        en: veia
+      - target: tenir
+        en: tenia
+  - id: ge-13-8
+    type: chooseTranslation
+    direction: toEn
+    target: Treballava a la ciutat.
+    en: I used to work in the city.
+    distractorsEn:
+      - I worked in the city once.
+      - I work in the city.
+      - I will work in the city.
+    distractorsTarget: []

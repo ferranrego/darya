@@ -1,0 +1,105 @@
+id: gl-31
+title: El Condicional
+subtitle: Formació i irregulars
+grammarPoint: El condicional simple s'utilitza per expressar desitjos,
+  probabilitats, consells o accions que depenen d'una condició. Es forma afegint
+  les terminacions -ia, -ies, -ia, -íem, -íeu, -ien a l'infinitiu del verb. Els
+  verbs que són irregulars en el futur (com fer, poder) comparteixen la mateixa
+  arrel irregular en el condicional.
+grammarPointEn: The simple conditional is used to express wishes, probabilities,
+  advice, or actions that depend on a condition. It is formed by adding the
+  endings -ia, -ies, -ia, -íem, -íeu, -ien to the infinitive of the verb. Verbs
+  that are irregular in the future (like fer, poder) share the same irregular
+  stem in the conditional.
+slides:
+  - slideId: gl-31-s-1
+    content: |
+      **El Condicional Simple: Formació Regular**
+      Per als verbs regulars, afegim les terminacions a l'infinitiu:
+      - **Jo:** -ia (cantaria, perdria, dormiria)
+      - **Tu:** -ies (cantaries, perdries, dormiries)
+      - **Ell/Ella:** -ia (cantaria, perdria, dormiria)
+      - **Nosaltres:** -íem (cantaríem, perdríem, dormiríem)
+      - **Vosaltres:** -íeu (cantaríeu, perdríeu, dormiríeu)
+      - **Ells/Elles:** -ien (cantarien, perdrien, dormirien)
+    contentEn: For regular verbs, we add the endings to the infinitive.
+    id: gs-31-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    title: Concept 1
+    examples:
+      - target: Exemple
+        en: Example
+  - slideId: gl-31-s-2
+    content: |
+      **Verbs Irregulars al Condicional**
+      Comparteixen l'arrel irregular del futur. Només canvien les terminacions:
+      - **Anar:** aniria, aniries...
+      - **Fer:** faria, faries...
+      - **Haver:** hauria, hauries...
+      - **Poder:** podria, podries...
+      - **Saber:** sabria, sabries...
+      - **Tenir:** tindria, tindries...
+      - **Venir:** vindria, vindries...
+      - **Voler:** voldria, voldries...
+    contentEn: They share the irregular stem of the future. Only the endings change.
+    id: gs-31-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    title: Concept 2
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-31-1
+    type: fillBlank
+    target: T'importaria si jo ___ (obrir) la finestra?
+    en: Would you mind if I opened the window?
+    answer:
+      target: obriria
+    distractors:
+      - target: obria
+      - target: obriré
+  - id: ge-31-2
+    type: fillBlank
+    target: A mi m'___ (agradar) viure a prop del mar.
+    en: I would like to live near the sea.
+    answer:
+      target: agradaria
+    distractors:
+      - target: agrada
+      - target: agradarà
+  - id: ge-31-3
+    type: fillBlank
+    target: Nosaltres ___ (poder) ajudar-vos amb el trasllat demà.
+    en: We could help you with the move tomorrow.
+    answer:
+      target: podríem
+    distractors:
+      - target: podem
+      - target: poderíem
+  - id: ge-31-4
+    type: fillBlank
+    target: Jo en el teu lloc no ho ___ (fer).
+    en: I wouldn't do it in your place.
+    answer:
+      target: faria
+    distractors:
+      - target: feria
+      - target: faig
+  - id: ge-31-5
+    type: fillBlank
+    target: Ells ___ (voler) venir, però tenen molta feina.
+    en: They would want to come, but they have a lot of work.
+    answer:
+      target: voldrien
+    distractors:
+      - target: volerien
+      - target: volien
+  - id: ge-31-6
+    type: fillBlank
+    target: Ells ___ (voler) venir, però tenen molta feina.
+    en: They would want to come, but they have a lot of work.
+    answer:
+      target: voldrien
+    distractors:
+      - target: volerien
+      - target: volien

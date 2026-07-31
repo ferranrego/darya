@@ -1,0 +1,93 @@
+id: gl-27
+title: Desitjos i voluntats
+subtitle: vull que, espero que
+grammarPoint: Ús del subjuntiu per expressar desig
+grammarPointEn: Using the subjunctive to express desires
+slides:
+  - title: Expressar voluntat o desig
+    examples:
+      - target: Vull que vinguis a la meva festa.
+        en: I want you to come to my party.
+        highlight: vinguis
+      - target: Espero que faci bon temps.
+        en: I hope the weather is nice.
+        highlight: faci
+    table:
+      - - Expressió
+        - Exemple
+      - - Vull que...
+        - Vull que truquis
+      - - Espero que...
+        - Espero que plogui
+      - - Desitjo que...
+        - Desitjo que tinguis sort
+    id: gs-27-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+  - title: Canvi de subjecte
+    examples:
+      - target: (Jo) Vull que (tu) compris pa.
+        en: I want you to buy bread.
+        highlight: compris
+      - target: (Nosaltres) Esperem que (ells) arribin d'hora.
+        en: We hope they arrive early.
+        highlight: arribin
+    id: gs-27-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+exercises:
+  - id: ge-27-1
+    type: fillBlank
+    target: Espero que en Joan ___ (aprovar) l'examen.
+    en: I hope Joan passes the exam.
+    answer:
+      target: aprovi
+    distractors:
+      - target: aprova
+      - target: aprovarà
+  - id: ge-27-2
+    type: spotError
+    target: Vull que tu fas els deures ara mateix.
+    en: I want you to do the homework right now.
+    errorWord:
+      target: fas
+    correction:
+      target: facis
+    correctedTarget: Vull que tu facis els deures ara mateix.
+  - id: ge-27-3
+    type: buildSentence
+    en: I hope they arrive soon.
+    words:
+      - target: que
+      - target: aviat
+      - target: Espero
+      - target: arribin
+    extraWords: []
+  - id: ge-27-4
+    type: matchPairs
+    prompt: Match the pairs
+    pairs:
+      - target: Vull que vinguis
+        en: I want you to come
+      - target: Espero que plogui
+        en: I hope it rains
+      - target: Desitjo que guanyis
+        en: I wish that you win
+      - target: Volem que sortiu
+        en: We want you to go out
+  - id: ge-27-5
+    type: chooseTranslation
+    direction: toEn
+    target: Desitgem que tinguis un bon viatge.
+    en: We wish you have a good trip.
+    distractorsEn:
+      - They wish you a good trip.
+      - We want to travel.
+    distractorsTarget: []
+  - id: ge-27-6
+    type: chooseTranslation
+    direction: toEn
+    target: Desitgem que tinguis un bon viatge.
+    en: We wish you have a good trip.
+    distractorsEn:
+      - They wish you a good trip.
+      - We want to travel.
+    distractorsTarget: []

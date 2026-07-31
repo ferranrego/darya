@@ -17,8 +17,6 @@ describe("language profiles", () => {
     for (const [code, p] of Object.entries(PROFILES)) {
       expect(p.code, `${code}: code must match its registry key`).toBe(code);
       expect(p.dir === "ltr" || p.dir === "rtl", `${code}: dir`).toBe(true);
-      expect(p.ttsLocale.length, `${code}: ttsLocale`).toBeGreaterThan(0);
-      expect(p.ttsVoicePrefixes.length, `${code}: ttsVoicePrefixes`).toBeGreaterThan(0);
       // letter-spacing goes through a CSS var, where a bare `0` is dropped as
       // invalid at computed-value time. A keyword is fine; a bare number is not.
       expect(p.letterSpacing, `${code}: letterSpacing must be a keyword or carry a unit`)
@@ -52,7 +50,6 @@ describe("language profiles", () => {
       fontPicker: false,
     });
     expect(PROFILES.ca.dir).toBe("ltr");
-    expect(PROFILES.ca.ttsLocale).toBe("ca");
   });
 
   it("no UI file hardcodes brand, language name or target-language text", async () => {

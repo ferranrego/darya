@@ -1,0 +1,131 @@
+id: gl-26
+title: El Present de Subjuntiu
+subtitle: Formació dels verbs regulars
+grammarPoint: Introducció al present de subjuntiu
+grammarPointEn: Introduction to the present subjunctive
+slides:
+  - title: Verbs en -ar
+    table:
+      - - Pronom
+        - Cantar
+      - - Jo
+        - canti
+      - - Tu
+        - cantis
+      - - Ell/Ella
+        - canti
+      - - Nosaltres
+        - cantem
+      - - Vosaltres
+        - canteu
+      - - Ells/Elles
+        - cantin
+    examples:
+      - target: És important que tu cantis bé.
+        en: It's important that you sing well.
+        highlight: cantis
+    id: gs-26-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+  - title: Verbs en -er / -re
+    table:
+      - - Pronom
+        - Témer / Perdre
+      - - Jo
+        - temi / perdi
+      - - Tu
+        - temis / perdis
+      - - Ell/Ella
+        - temi / perdi
+      - - Nosaltres
+        - temem / perdem
+      - - Vosaltres
+        - temeu / perdeu
+      - - Ells/Elles
+        - temin / perdin
+    examples:
+      - target: Vull que no perdis les claus.
+        en: I want you not to lose the keys.
+        highlight: perdis
+    id: gs-26-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+  - title: Verbs en -ir
+    table:
+      - - Pronom
+        - Dormir / Servir
+      - - Jo
+        - dormi / serveixi
+      - - Tu
+        - dormis / serveixis
+      - - Ell/Ella
+        - dormi / serveixi
+      - - Nosaltres
+        - dormim / servim
+      - - Vosaltres
+        - dormiu / serviu
+      - - Ells/Elles
+        - dormin / serveixin
+    examples:
+      - target: Prefereixo que dormis aquí.
+        en: I prefer that you sleep here.
+        highlight: dormis
+    id: gs-26-3
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+exercises:
+  - id: ge-26-1
+    type: fillBlank
+    target: És necessari que ella ___ (treballar) avui.
+    en: It is necessary that she works today.
+    answer:
+      target: treballi
+    distractors:
+      - target: treballa
+      - target: treballem
+  - id: ge-26-2
+    type: spotError
+    target: És necessari que tu llegeixes el llibre.
+    en: It is necessary that you read the book.
+    errorWord:
+      target: llegeixes
+    correction:
+      target: llegeixis
+    correctedTarget: És necessari que tu llegeixis el llibre.
+  - id: ge-26-3
+    type: buildSentence
+    en: I want you to eat more fruit.
+    words:
+      - target: que
+      - target: mengeu
+      - target: Vull
+      - target: més
+      - target: fruita
+    extraWords: []
+  - id: ge-26-4
+    type: matchPairs
+    prompt: Match the pairs
+    pairs:
+      - target: Jo canti
+        en: I sing (subj)
+      - target: Tu perdis
+        en: You lose (subj)
+      - target: Ell serveixi
+        en: He serves (subj)
+      - target: Nosaltres dormim
+        en: We sleep (subj)
+  - id: ge-26-5
+    type: chooseTranslation
+    direction: toEn
+    target: Cal que parlin amb mi.
+    en: They need to talk to me.
+    distractorsEn:
+      - They talked to me.
+      - I talk to them.
+    distractorsTarget: []
+  - id: ge-26-6
+    type: chooseTranslation
+    direction: toEn
+    target: Cal que parlin amb mi.
+    en: They need to talk to me.
+    distractorsEn:
+      - They talked to me.
+      - I talk to them.
+    distractorsTarget: []

@@ -1,0 +1,122 @@
+id: b2_05
+title: "Combinacions de pronoms de 3a persona"
+subtitle: "L'hi, la hi, els hi, les hi"
+grammarPoint: "Combinacions de CD i CI de 3a persona"
+grammarPointEn: "3rd person direct and indirect object pronoun combinations"
+slides:
+  - id: b2_05_1
+    title: "El, la, els, les + li (l'hi, la hi, els hi, les hi)"
+    body: "Quan s'ajunten un pronom de complement directe (CD) de 3a persona (el, la, els, les) i un de complement indirecte (CI) de 3a persona singular (li), el pronom 'li' adopta la forma 'hi' i es col·loca darrere del CD."
+    examples:
+      - target: "Dona el llibre al nen. -> Dona-l'hi."
+        translit: ""
+        en: "Give the book to the boy. -> Give it to him."
+        highlight: "l'hi"
+      - target: "Ja he donat la carta a la Maria. -> Ja la hi he donada."
+        translit: ""
+        en: "I have already given the letter to Maria. -> I have already given it to her."
+        highlight: "la hi"
+      - target: "Porta els paquets al client. -> Porta-els-hi."
+        translit: ""
+        en: "Take the packages to the client. -> Take them to him/her."
+        highlight: "els-hi"
+  - id: b2_05_2
+    title: "El, la, els, les + els (els el, els la, els els, els les)"
+    body: "Quan el CI és plural ('els'), aquest es col·loca al davant, i el CD al darrere. Recordeu que actualment en llengua col·loquial sovint s'utilitza 'els hi' de manera generalitzada, però en la llengua formal s'ha de mantenir aquesta estructura."
+    examples:
+      - target: "He donat el premi als guanyadors. -> Els l'he donat."
+        translit: ""
+        en: "I have given the prize to the winners. -> I have given it to them."
+        highlight: "Els l'"
+      - target: "Vaig comprar les flors per a elles. -> Els les vaig comprar."
+        translit: ""
+        en: "I bought the flowers for them. -> I bought them for them."
+        highlight: "Els les"
+  - id: b2_05_3
+    title: "Col·locació dels pronoms respecte al verb"
+    body: "Els pronoms es col·loquen al davant del verb (proclítics) en temps personals, i al darrere del verb (enclítics) en infinitiu, gerundi o imperatiu. S'uneixen amb guionet o apòstrof segons les normes generals."
+    examples:
+      - target: "Vull donar-l'hi demà."
+        translit: ""
+        en: "I want to give it to him/her tomorrow."
+        highlight: "donar-l'hi"
+      - target: "La hi vaig enviar ahir."
+        translit: ""
+        en: "I sent it to him/her yesterday."
+        highlight: "La hi"
+exercises:
+  - id: b2_05_ex1
+    type: fillBlank
+    target: "He comprat el llibre per al Joan. ___ donaré demà."
+    translit: ""
+    en: "I bought the book for Joan. I will give it to him tomorrow."
+    answer:
+      target: "L'hi"
+      translit: ""
+    distractors:
+      - target: "La hi"
+        translit: ""
+      - target: "Li ho"
+        translit: ""
+      - target: "El li"
+        translit: ""
+  - id: b2_05_ex2
+    type: fillBlank
+    target: "Si vols la pilota per al nen, dona-___ ara mateix."
+    translit: ""
+    en: "If you want the ball for the boy, give it to him right now."
+    answer:
+      target: "la hi"
+      translit: ""
+    distractors:
+      - target: "l'hi"
+        translit: ""
+      - target: "li la"
+        translit: ""
+      - target: "les hi"
+        translit: ""
+  - id: b2_05_ex3
+    type: fillBlank
+    target: "Tinc les notes dels alumnes. ___ enviaré per correu."
+    translit: ""
+    en: "I have the students' grades. I will send them to them by email."
+    answer:
+      target: "Els les"
+      translit: ""
+    distractors:
+      - target: "Els hi"
+        translit: ""
+      - target: "Les els"
+        translit: ""
+      - target: "Les hi"
+        translit: ""
+  - id: b2_05_ex4
+    type: fillBlank
+    target: "He portat els documents al director. ___ he deixat a la taula."
+    translit: ""
+    en: "I brought the documents to the director. I left them for him on the table."
+    answer:
+      target: "Els hi"
+      translit: ""
+    distractors:
+      - target: "Els l'"
+        translit: ""
+      - target: "L'hi"
+        translit: ""
+      - target: "Els els"
+        translit: ""
+  - id: b2_05_ex5
+    type: fillBlank
+    target: "Tens el cotxe dels teus pares? Sí, ___ tornaré demà."
+    translit: ""
+    en: "Do you have your parents' car? Yes, I will return it to them tomorrow."
+    answer:
+      target: "els el"
+      translit: ""
+    distractors:
+      - target: "l'hi"
+        translit: ""
+      - target: "el els"
+        translit: ""
+      - target: "els hi"
+        translit: ""

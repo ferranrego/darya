@@ -1,0 +1,116 @@
+id: c1_09
+title: L'acusatiu preposicional
+subtitle: Ús i omissió de la preposició 'a' davant el complement directe
+grammarPoint: In Catalan, the direct object (CD) generally does not take the preposition "a", unlike Spanish. However, there are specific cases where it is required.
+grammarPointEn: In Catalan, the direct object (CD) generally does not take the preposition "a", unlike Spanish. However, there are specific cases where it is required.
+slides:
+  - id: slide_1
+    title: General Rule
+    body: As a general rule, the direct object is not preceded by the preposition "a", even if it refers to a person.
+    examples:
+      - target: Veig el meu amic.
+        translit: I see my friend.
+        en: I see my friend.
+        highlight: el meu amic
+      - target: Hem saludat la professora.
+        translit: We have greeted the teacher.
+        en: We have greeted the teacher.
+        highlight: la professora
+  - id: slide_2
+    title: Strong Personal Pronouns
+    body: The preposition "a" must be used before a direct object when it is a strong personal pronoun (mi, tu, ell, nosaltres, vosaltres, ells).
+    examples:
+      - target: M'han vist a mi.
+        translit: They have seen me.
+        en: They have seen me.
+        highlight: a mi
+      - target: Us esperem a vosaltres.
+        translit: We are waiting for you.
+        en: We are waiting for you.
+        highlight: a vosaltres
+  - id: slide_3
+    title: Indefinite and Interrogative Pronouns
+    body: The preposition "a" is also used with indefinite pronouns like "tothom", "ningú", "cadascú", and the interrogative pronoun "qui".
+    examples:
+      - target: No he vist a ningú.
+        translit: I have not seen anyone.
+        en: I haven't seen anyone.
+        highlight: a ningú
+      - target: A qui has convidat?
+        translit: Whom have you invited?
+        en: Who did you invite?
+        highlight: A qui
+  - id: slide_4
+    title: Disambiguation
+    body: Sometimes "a" is used before the direct object to avoid confusion with the subject, especially when it is not clear from the context.
+    examples:
+      - target: El gos mossega al gat.
+        translit: The dog bites the cat.
+        en: The dog bites the cat.
+        highlight: al gat
+exercises:
+  - id: ex_1
+    type: fillBlank
+    target: Ahir vam visitar ___ Maria.
+    translit: Yesterday we visited Maria.
+    en: Yesterday we visited Maria.
+    answer:
+      target: la
+      translit: the
+    distractors:
+      - target: a la
+        translit: to the
+      - target: a
+        translit: to
+  - id: ex_2
+    type: fillBlank
+    target: Ens han escollit ___ nosaltres.
+    translit: They have chosen us.
+    en: They have chosen us.
+    answer:
+      target: a
+      translit: to
+    distractors:
+      - target: per
+        translit: for
+      - target: de
+        translit: of
+  - id: ex_3
+    type: fillBlank
+    target: No conec ___ ningú aquí.
+    translit: I do not know anyone here.
+    en: I don't know anyone here.
+    answer:
+      target: a
+      translit: to
+    distractors:
+      - target: en
+        translit: in
+      - target: cap
+        translit: any
+  - id: ex_4
+    type: fillBlank
+    target: ___ qui busques?
+    translit: Whom are you looking for?
+    en: Who are you looking for?
+    answer:
+      target: A
+      translit: To
+    distractors:
+      - target: De
+        translit: Of
+      - target: Per
+        translit: For
+  - id: ex_5
+    type: fillBlank
+    target: He saludat ___ teus pares.
+    translit: I have greeted your parents.
+    en: I greeted your parents.
+    answer:
+      target: els
+      translit: the
+    distractors:
+      - target: als
+        translit: to the
+      - target: a els
+        translit: to the

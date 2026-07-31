@@ -1,0 +1,85 @@
+id: gl-32
+title: El Primer Condicional
+subtitle: Probable o Real
+grammarPoint: "Les oracions condicionals de primer tipus expressen accions
+  probables o possibles. L'estructura més comuna és: Si + Present d'indicatiu,
+  Futur simple (o Present o Imperatiu). La partícula 'si' introdueix la condició
+  i mai va seguida de futur."
+grammarPointEn: "First type conditional sentences express probable or possible
+  actions. The most common structure is: Si + Present indicative, Future simple
+  (or Present or Imperative). The particle 'si' introduces the condition and is
+  never followed by the future tense."
+slides:
+  - slideId: gl-32-s-1
+    content: |
+      **Estructura del Primer Condicional**
+      - **Condició:** *Si + Present d'Indicatiu*
+      - **Conseqüència:** *Futur Simple* / *Present* / *Imperatiu*
+
+      **Exemples:**
+      - Si plou, **ens quedarem** a casa. (Futur)
+      - Si tens gana, **menja** una poma. (Imperatiu)
+      - Si fa bon temps, normalment **anem** a la platja. (Present)
+    contentEn: "Structure of the First Conditional: If + Present Indicative ->
+      Future Simple / Present / Imperative."
+    id: gs-32-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    title: Concept 1
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-32-1
+    type: fillBlank
+    target: Si trigues molt, nosaltres ___ (marxar).
+    en: If you take a long time, we will leave.
+    answer:
+      target: marxarem
+    distractors:
+      - target: marxem
+      - target: marxaria
+  - id: ge-32-2
+    type: fillBlank
+    target: Si veus en Joan, ___ (dir)-li que em truqui.
+    en: If you see Joan, tell him to call me.
+    answer:
+      target: digues
+    distractors:
+      - target: diràs
+      - target: dius
+  - id: ge-32-3
+    type: fillBlank
+    target: Aprovareu l'examen si ___ (estudiar) cada dia.
+    en: You will pass the exam if you study every day.
+    answer:
+      target: estudieu
+    distractors:
+      - target: estudiareu
+      - target: estudies
+  - id: ge-32-4
+    type: fillBlank
+    target: Si ___ (tenir) temps, et vindré a veure.
+    en: If I have time, I will come to see you.
+    answer:
+      target: tinc
+    distractors:
+      - target: tindré
+      - target: tindria
+  - id: ge-32-5
+    type: fillBlank
+    target: Si plou demà, el partit se ___ (suspendre).
+    en: If it rains tomorrow, the match will be suspended.
+    answer:
+      target: suspendrà
+    distractors:
+      - target: suspèn
+      - target: suspendria
+  - id: ge-32-6
+    type: fillBlank
+    target: Si plou demà, el partit se ___ (suspendre).
+    en: If it rains tomorrow, the match will be suspended.
+    answer:
+      target: suspendrà
+    distractors:
+      - target: suspèn
+      - target: suspendria

@@ -1,0 +1,113 @@
+id: gl-30
+title: El Futur
+subtitle: Formació i irregulars
+grammarPoint: El futur simple s'utilitza per expressar accions que passaran en
+  un moment posterior al present. Es forma afegint les terminacions -é, -às, -à,
+  -em, -eu, -an a l'infinitiu del verb, amb algunes excepcions irregulars com
+  fer (faré), poder (podré) o tenir (tindré).
+grammarPointEn: The future simple tense is used to express actions that will
+  happen at a later time. It is formed by adding the endings -é, -às, -à, -em,
+  -eu, -an to the infinitive of the verb, with some irregular exceptions like
+  fer (faré), poder (podré), or tenir (tindré).
+slides:
+  - slideId: gl-30-s-1
+    content: |
+      **El Futur Simple: Formació Regular**
+      Per als verbs regulars, afegim les terminacions a l'infinitiu:
+      - **Jo:** -é (cantaré, perdré, dormiré)
+      - **Tu:** -às (cantaràs, perdràs, dormiràs)
+      - **Ell/Ella:** -à (cantarà, perdrà, dormirà)
+      - **Nosaltres:** -em (cantarem, perdrem, dormirem)
+      - **Vosaltres:** -eu (cantareu, perdreu, dormireu)
+      - **Ells/Elles:** -an (cantaran, perdran, dormiran)
+    contentEn: For regular verbs, we add the endings to the infinitive.
+    id: gs-30-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    title: Concept 1
+    examples:
+      - target: Exemple
+        en: Example
+  - slideId: gl-30-s-2
+    content: >
+      **Verbs Irregulars al Futur**
+
+      Alguns verbs modifiquen l'arrel abans d'afegir les terminacions regulars
+      del futur:
+
+      - **Anar:** aniré, aniràs, anirà...
+
+      - **Fer:** faré, faràs, farà...
+
+      - **Haver:** hauré, hauràs, haurà...
+
+      - **Poder:** podré, podràs, podrà...
+
+      - **Saber:** sabré, sabràs, sabrà...
+
+      - **Tenir:** tindré, tindràs, tindrà...
+
+      - **Venir:** vindré, vindràs, vindrà...
+
+      - **Voler:** voldré, voldràs, voldrà...
+    contentEn: Some verbs modify the stem before adding the regular future endings.
+    id: gs-30-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    title: Concept 2
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-30-1
+    type: fillBlank
+    target: L'any que ve, nosaltres ___ (viatjar) al Japó.
+    en: Next year, we will travel to Japan.
+    answer:
+      target: viatjarem
+    distractors:
+      - target: viatgem
+      - target: viatjareu
+  - id: ge-30-2
+    type: fillBlank
+    target: Demà, jo ___ (fer) una truita de patates.
+    en: Tomorrow, I will make a Spanish omelette.
+    answer:
+      target: faré
+    distractors:
+      - target: feré
+      - target: faig
+  - id: ge-30-3
+    type: fillBlank
+    target: Quan tinguis divuit anys, ___ (poder) conduir.
+    en: When you are eighteen, you will be able to drive.
+    answer:
+      target: podràs
+    distractors:
+      - target: podeu
+      - target: podrè
+  - id: ge-30-4
+    type: fillBlank
+    target: Aquesta tarda ells ___ (venir) a casa nostra.
+    en: This afternoon they will come to our house.
+    answer:
+      target: vindran
+    distractors:
+      - target: veniran
+      - target: vinden
+  - id: ge-30-5
+    type: fillBlank
+    target: M'ha dit que ella ___ (saber) la resposta aviat.
+    en: She told me that she will know the answer soon.
+    answer:
+      target: sabrà
+    distractors:
+      - target: saberà
+      - target: sap
+  - id: ge-30-6
+    type: fillBlank
+    target: M'ha dit que ella ___ (saber) la resposta aviat.
+    en: She told me that she will know the answer soon.
+    answer:
+      target: sabrà
+    distractors:
+      - target: saberà
+      - target: sap

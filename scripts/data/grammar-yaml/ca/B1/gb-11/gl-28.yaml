@@ -1,0 +1,99 @@
+id: gl-28
+title: Dubtes i probabilitat
+subtitle: dubto que, pot ser que
+grammarPoint: El subjuntiu per a expressar probabilitat
+grammarPointEn: Subjunctive to express doubt and probability
+slides:
+  - title: Expressar dubte
+    examples:
+      - target: Dubto que ell sàpiga la veritat.
+        en: I doubt he knows the truth.
+        highlight: sàpiga
+      - target: No crec que tinguin temps.
+        en: I don't think they have time.
+        highlight: tinguin
+    table:
+      - - Expressió
+        - Exemple
+      - - Dubto que...
+        - Dubto que funcioni
+      - - No crec que...
+        - No crec que vingui
+    id: gs-28-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+  - title: Expressar probabilitat
+    examples:
+      - target: Pot ser que plogui aquesta tarda.
+        en: It may rain this afternoon.
+        highlight: plogui
+      - target: És possible que arribem tard.
+        en: It's possible that we arrive late.
+        highlight: arribem
+    table:
+      - - Expressió
+        - Exemple
+      - - Pot ser que...
+        - Pot ser que truquin
+      - - És possible que...
+        - És possible que surti
+    id: gs-28-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+exercises:
+  - id: ge-28-1
+    type: fillBlank
+    target: Pot ser que la botiga ___ (estar) tancada.
+    en: The shop might be closed.
+    answer:
+      target: estigui
+    distractors:
+      - target: està
+      - target: estarà
+  - id: ge-28-2
+    type: spotError
+    target: Dubto que tu tens raó.
+    en: I doubt that you are right.
+    errorWord:
+      target: tens
+    correction:
+      target: tinguis
+    correctedTarget: Dubto que tu tinguis raó.
+  - id: ge-28-3
+    type: buildSentence
+    en: It is possible that it rains tomorrow.
+    words:
+      - target: possible
+      - target: que
+      - target: demà
+      - target: És
+      - target: plogui
+    extraWords: []
+  - id: ge-28-4
+    type: matchPairs
+    prompt: Match the pairs
+    pairs:
+      - target: Dubto que funcioni
+        en: I doubt it works
+      - target: Pot ser que vingui
+        en: He might come
+      - target: No crec que sigui cert
+        en: I don't think it's true
+      - target: És probable que surtin
+        en: It's probable they go out
+  - id: ge-28-5
+    type: chooseTranslation
+    direction: toEn
+    target: No crec que hagin arribat.
+    en: I don't think they have arrived.
+    distractorsEn:
+      - I believe they will arrive.
+      - I don't think they will go.
+    distractorsTarget: []
+  - id: ge-28-6
+    type: chooseTranslation
+    direction: toEn
+    target: No crec que hagin arribat.
+    en: I don't think they have arrived.
+    distractorsEn:
+      - I believe they will arrive.
+      - I don't think they will go.
+    distractorsTarget: []

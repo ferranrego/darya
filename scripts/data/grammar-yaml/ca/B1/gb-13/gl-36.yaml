@@ -1,0 +1,98 @@
+id: gl-36
+title: El Plusquamperfet
+subtitle: The Plusquamperfect Tense
+grammarPoint: Havia + participi
+grammarPointEn: Havia + participle
+slides:
+  - slideId: gl-36-s1
+    title: Formació del plusquamperfet
+    content: >-
+      Es forma amb l'imperfet d'indicatiu del verb *haver* i el participi del
+      verb principal.
+
+
+      *Haver*: havia, havies, havia, havíem, havíeu, havien.
+
+
+      Exemple:
+
+      - Jo **havia cantat**.
+
+      - Ells **havien sortit**.
+    id: gs-36-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - slideId: gl-36-s2
+    title: Ús del plusquamperfet
+    content: >-
+      S'utilitza per expressar una acció passada anterior a una altra acció
+      també passada.
+
+
+      Exemples:
+
+      - Quan vaig arribar a l'estació, el tren ja **havia sortit**.
+
+      - No volia menjar perquè ja **havia dinat**.
+    id: gs-36-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-36-1
+    type: fillBlank
+    target: Quan van arribar, nosaltres ja ___ (sopar).
+    en: When they arrived, we had already had dinner.
+    answer:
+      target: havíem sopat
+    distractors:
+      - target: havien sopat
+      - target: vam sopar
+  - id: ge-36-2
+    type: fillBlank
+    target: Em va dir que mai no hi ___ (anar).
+    en: He told me that he had never gone there.
+    answer:
+      target: havia anat
+    distractors:
+      - target: havies anat
+      - target: vaig anar
+  - id: ge-36-3
+    type: fillBlank
+    target: No vas poder entrar perquè ___ (perdre) les claus.
+    en: You couldn't get in because you had lost the keys.
+    answer:
+      target: havies perdut
+    distractors:
+      - target: havia perdut
+      - target: vas perdre
+  - id: ge-36-4
+    type: fillBlank
+    target: Ahir va ploure molt, però el dia abans no ___ (ploure) gens.
+    en: Yesterday it rained a lot, but the day before it hadn't rained at all.
+    answer:
+      target: havia plogut
+    distractors:
+      - target: havien plogut
+      - target: va ploure
+  - id: ge-36-5
+    type: fillBlank
+    target: Els meus amics ja ___ (preparar) la festa sorpresa.
+    en: My friends had already prepared the surprise party.
+    answer:
+      target: havien preparat
+    distractors:
+      - target: havíem preparat
+      - target: van preparar
+  - id: ge-36-6
+    type: fillBlank
+    target: Els meus amics ja ___ (preparar) la festa sorpresa.
+    en: My friends had already prepared the surprise party.
+    answer:
+      target: havien preparat
+    distractors:
+      - target: havíem preparat
+      - target: van preparar

@@ -1,0 +1,142 @@
+id: gl-23
+title: The present subjunctive
+subtitle: For what you want, hope or need to happen.
+grammarPoint: present-subjunctive
+grammarPointEn: the present subjunctive after voler que, esperar que and cal
+  que, and after quan with future reference
+slides:
+  - id: gs-23-1
+    title: The endings swap over
+    body: -ar verbs take the -i endings; -er, -re and -ir verbs take them too. The
+      vowel that marked the conjugation simply changes.
+    examples:
+      - target: Vull que parlis català.
+        en: I want you to speak Catalan.
+      - target: Espero que arribi aviat.
+        en: I hope he arrives soon.
+    table:
+      - - parlar
+        - parli, parlis, parli, parlem, parleu, parlin
+      - - perdre
+        - perdi, perdis, perdi, perdem, perdeu, perdin
+      - - dormir
+        - dormi, dormis, dormi, dormim, dormiu, dormin
+      - - servir
+        - serveixi, serveixis, serveixi, servim, serviu, serveixin
+  - id: gs-23-2
+    title: The irregulars build on the -c stem
+    body: "If you remember tinc, vinc and puc, you already have the subjunctive: add
+      -gui."
+    examples:
+      - target: Vull que tinguis temps.
+        en: I want you to have time.
+      - target: Cal que vinguis demà.
+        en: You need to come tomorrow.
+    table:
+      - - ser
+        - sigui
+      - - estar
+        - estigui
+      - - tenir
+        - tingui
+      - - venir
+        - vingui
+      - - fer
+        - faci
+      - - poder
+        - pugui
+      - - anar
+        - vagi
+      - - saber
+        - sàpiga
+  - id: gs-23-3
+    title: What triggers it
+    body: A wish, a need, an emotion - and quan when it points at the future, where
+      English keeps the present.
+    examples:
+      - target: Cal que estudiïs més.
+        en: You need to study more.
+      - target: Quan arribis, truca'm.
+        en: When you arrive, call me.
+exercises:
+  - id: ge-23-1
+    type: fillBlank
+    target: Vull que ___ català.
+    en: I want you to speak Catalan.
+    answer:
+      target: parlis
+    distractors:
+      - target: parles
+      - target: parlaràs
+      - target: parlaves
+  - id: ge-23-2
+    type: fillBlank
+    target: Espero que ___ aviat.
+    en: I hope he arrives soon.
+    answer:
+      target: arribi
+    distractors:
+      - target: arriba
+      - target: arribarà
+      - target: arribava
+  - id: ge-23-3
+    type: fillBlank
+    target: Cal que ___ demà al matí.
+    en: You need to come tomorrow morning.
+    answer:
+      target: vinguis
+    distractors:
+      - target: vens
+      - target: vindràs
+      - target: venies
+  - id: ge-23-4
+    type: fillBlank
+    target: Vull que ___ temps per a tu.
+    en: I want you to have time for yourself.
+    answer:
+      target: tinguis
+    distractors:
+      - target: tens
+      - target: tindràs
+      - target: tenies
+  - id: ge-23-5
+    type: fillBlank
+    target: Espero que ___ una bona nit.
+    en: I hope it's a good night.
+    answer:
+      target: sigui
+    distractors:
+      - target: és
+      - target: serà
+      - target: era
+  - id: ge-23-6
+    type: spotError
+    target: Vull que vens demà.
+    en: I want you to come tomorrow.
+    errorWord:
+      target: vens
+    correction:
+      target: vinguis
+    correctedTarget: Vull que vinguis demà.
+  - id: ge-23-7
+    type: matchPairs
+    prompt: Match each verb with its subjunctive.
+    pairs:
+      - target: ser
+        en: sigui
+      - target: tenir
+        en: tingui
+      - target: fer
+        en: faci
+      - target: anar
+        en: vagi
+  - id: ge-23-8
+    type: chooseTranslation
+    direction: toEn
+    target: Cal que estudiïs cada dia.
+    en: You need to study every day.
+    distractorsEn:
+      - You study every day.
+      - You will study every day.
+      - You used to study every day.
+    distractorsTarget: []

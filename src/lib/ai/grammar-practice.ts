@@ -10,16 +10,18 @@ import { normalize } from "../text";
 import { completeJson } from "./providers";
 import { assertKnownVocab } from "./vocab-check";
 import { profile } from "../lang/index.ts";
+import { LANGUAGE_NAME, TRANSLITERATED, wordList } from "./lang-format.ts";
 
 /**
  * Extra-practice generation for grammar lessons.
  *
  * Only the two machine-verifiable exercise types are generated (fillBlank and
- * chooseTranslation); buildSentence/matchPairs stay hand-authored. Every Dari
- * sentence is checked token-by-token against the lexicon plus the taught verb
- * forms, so a hallucinated word or Iranian-Persian spelling rejects the item.
- * Callers cache results in Postgres (grammar_practice, shared across users),
- * so generation only runs when the pool for a lesson is dry.
+ * chooseTranslation); buildSentence/matchPairs stay hand-authored. Every
+ * generated sentence is checked token-by-token against the lexicon plus the
+ * taught verb forms, so a hallucinated word - or, in Dari, an Iranian-Persian
+ * spelling - rejects the item. Callers cache results in Postgres
+ * (grammar_practice, shared across users), so generation only runs when the
+ * pool for a lesson is dry.
  */
 
 export const PRACTICE_BATCH_SIZE = 6;
@@ -59,16 +61,23 @@ function buildPrompt(lesson: GrammarLesson): string {
   const level = grammarLessonLevel(lesson.id) ?? "A1";
   const anchors = lesson.slides
     .flatMap((s) => s.examples)
-    .map((e) => `${e.target} - ${e.translit} - "${e.en}"`)
+    .map((e) =>
+      TRANSLITERATED && e.translit
+        ? `${e.target} - ${e.translit} - "${e.en}"`
+        : `${e.target} - "${e.en}"`,
+    )
     .join("\n");
 
   // Most frequent vocabulary up to this level's frequency-band cap.
-  const vocab = lexicon.entries
-    .filter((e) => e.freqBand <= BAND_CAP[level])
-    .sort((a, b) => a.freqRank - b.freqRank)
-    .slice(0, 80)
-    .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
-    .join("، ");
+  const vocab = wordList(
+    lexicon.entries
+      .filter((e) => e.freqBand <= BAND_CAP[level])
+      .sort((a, b) => a.freqRank - b.freqRank)
+      .slice(0, 80),
+    true,
+  );
+
+  const translitKey = TRANSLITERATED ? `"translit": "...", ` : "";
 
   return `You are ${profile.prompts.teacher} writing practice exercises for an ${LEVEL_LABEL[level]} learner.
 
@@ -82,20 +91,19 @@ ${vocab}
 
 Write ${PRACTICE_BATCH_SIZE} NEW exercises drilling this grammar point. Mix two types:
 
-Type "fillBlank" (about 4 of them): a short Dari sentence (max 7 words) with exactly one blank written as ___ in BOTH target and translit. The blank must test the grammar point. Give the answer and 2-3 wrong options of the same kind (e.g. wrong person endings).
+Type "fillBlank" (about 4 of them): a short ${LANGUAGE_NAME} sentence (max 7 words) with exactly one blank written as ___${TRANSLITERATED ? " in BOTH target and translit" : ""}. The blank must test the grammar point. Give the answer and 2-3 wrong options of the same kind (e.g. wrong person endings).
 
-Type "chooseTranslation" (about 2 of them): a short Dari sentence, its transliteration, its correct English meaning in "en", and 2 wrong English meanings in "distractorsEn" that differ ONLY by the grammar point (wrong person, wrong tense, plural vs singular...). Set "direction": "toEn", "distractorsTarget": [].
+Type "chooseTranslation" (about 2 of them): a short ${LANGUAGE_NAME} sentence, ${TRANSLITERATED ? "its transliteration, " : ""}its correct English meaning in "en", and 2 wrong English meanings in "distractorsEn" that differ ONLY by the grammar point (wrong person, wrong tense, plural vs singular...). Set "direction": "toEn", "distractorsTarget": [].
 
 STRICT RULES:
 ${profile.prompts.orthography}
-- Use ZWNJ in می‌ verb forms (می‌روم).
 - Every sentence must be natural and meaningful, never a random pile of words.
 - Do not copy the anchor sentences - write new ones.
 
 Return ONLY JSON:
 {"exercises": [
-  {"type": "fillBlank", "target": "... ___ ...", "translit": "... ___ ...", "en": "...", "answer": {"target": "...", "translit": "..."}, "distractors": [{"target": "...", "translit": "..."}]},
-  {"type": "chooseTranslation", "direction": "toEn", "target": "...", "translit": "...", "en": "...", "distractorsEn": ["...", "..."], "distractorsTarget": []}
+  {"type": "fillBlank", "target": "... ___ ...", ${translitKey}"en": "...", "answer": {"target": "..."${TRANSLITERATED ? ', "translit": "..."' : ""}}, "distractors": [{"target": "..."${TRANSLITERATED ? ', "translit": "..."' : ""}}]},
+  {"type": "chooseTranslation", "direction": "toEn", "target": "...", ${translitKey}"en": "...", "distractorsEn": ["...", "..."], "distractorsTarget": []}
 ]}`;
 }
 

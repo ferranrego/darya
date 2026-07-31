@@ -1,0 +1,108 @@
+id: b2_03
+title: El condicional irreal
+subtitle: Hypothetical Conditions (Si + Imperfect Subjunctive + Conditional)
+grammarPoint: Ús de l'oració condicional irreal o hipotètica en present/futur.
+grammarPointEn: Use of the unreal or hypothetical conditional sentence in the present/future.
+slides:
+  - id: b2_03_s1
+    title: Structuring Hypothetical Conditions
+    body: To form a hypothetical condition in the present or future, we use an if-clause (si + imperfect subjunctive) and a main clause (conditional). This expresses something that is unlikely to happen.
+    examples:
+      - target: Si estudiessis més, aprovaries.
+        translit: \si əs.tu.ði\e.siz \mes, ə.pɾu.βə\ɾi.əs\
+        en: If you studied more, you would pass.
+        highlight: estudiessis
+      - target: Compraríem la casa si fos més barata.
+        translit: \kum.pɾə\ɾi.əm lə \ka.zə si \fos \mez βə\ɾa.tə\
+        en: We would buy the house if it were cheaper.
+        highlight: Compraríem
+  - id: b2_03_s2
+    title: The Order of Clauses
+    body: The order of the clauses can be swapped without changing the meaning. If the *si* clause comes first, we usually separate it with a comma.
+    examples:
+      - target: Si sabés la resposta, te la diria.
+        translit: \si sə\βɛz lə rəs\pɔs.tə, tə lə ði\ɾi.ə\
+        en: If I knew the answer, I would tell you.
+        highlight: diria
+      - target: Te la diria si sabés la resposta.
+        translit: \tə lə ði\ɾi.ə si sə\βɛz lə rəs\pɔs.tə\
+        en: I would tell you if I knew the answer.
+        highlight: sabés
+  - id: b2_03_s3
+    title: Asking Hypothetical Questions
+    body: We often use this structure to ask hypothetical questions about what someone would do in a specific unlikely situation.
+    examples:
+      - target: Què faries si guanyessis la loteria?
+        translit: \kɛ fə\ɾi.əs si gwə\ɲe.siz lə lu.tə\ɾi.ə\
+        en: What would you do if you won the lottery?
+        highlight: guanyessis
+      - target: Si et perdessis, a qui trucaries?
+        translit: \si ət pəɾ\dɛ.sis, ə \ki tɾu.kə\ɾi.əs\
+        en: If you got lost, who would you call?
+        highlight: trucaries
+exercises:
+  - id: b2_03_e1
+    type: fillBlank
+    target: Si tingués diners, ___ (comprar) un cotxe nou.
+    translit: \si tin\gɛz ði\nes, ___ un \ko.tʃə \nɔw\
+    en: If I had money, I would buy a new car.
+    answer:
+      target: compraria
+      translit: \kum.pɾə\ɾi.ə\
+    distractors:
+      - target: compraré
+        translit: \kum.pɾə\ɾe\
+      - target: compro
+        translit: \kom.pɾu\
+  - id: b2_03_e2
+    type: fillBlank
+    target: Nosaltres ___ (anar) de viatge si tinguéssim vacances.
+    translit: \nu\zal.tɾəs ___ də βi\ad.ʒə si tin\gɛ.sim bə\kan.səs\
+    en: We would go on a trip if we had holidays.
+    answer:
+      target: aniríem
+      translit: \ə.ni\ɾi.əm\
+    distractors:
+      - target: anirem
+        translit: \ə.ni\ɾɛm\
+      - target: anem
+        translit: \ə\nɛm\
+  - id: b2_03_e3
+    type: fillBlank
+    target: Si ell ___ (saber) conduir, no agafaria el tren.
+    translit: \si \eʎ ___ kun.du\i, \no ə.ɣə.fə\ɾi.ə əl \tɾɛn\
+    en: If he knew how to drive, he wouldn't take the train.
+    answer:
+      target: sabés
+      translit: \sə\βɛs\
+    distractors:
+      - target: sap
+        translit: \sap\
+      - target: sabria
+        translit: \sə\βɾi.ə\
+  - id: b2_03_e4
+    type: fillBlank
+    target: Què ___ (dir) els teus pares si ho sabessin?
+    translit: \kɛ ___ əls \tɛws \pa.ɾəs si u sə\βɛ.sin\
+    en: What would your parents say if they knew?
+    answer:
+      target: dirien
+      translit: \di\ɾi.ən\
+    distractors:
+      - target: diran
+        translit: \di\ɾan\
+      - target: diuen
+        translit: \di.wən\
+  - id: b2_03_e5
+    type: fillBlank
+    target: Si hi ___ (haver) més llum, llegiria millor.
+    translit: \si i ___ \mez \ʎum, ʎə.ʒi\ɾi.ə mi\ʎo\
+    en: If there was more light, I would read better.
+    answer:
+      target: hagués
+      translit: \ə\ɣɛs\
+    distractors:
+      - target: hi ha
+        translit: \i a\
+      - target: hi haurà
+        translit: \i əw\ɾa\

@@ -1,0 +1,141 @@
+id: gl-02
+title: The article and the apostrophe
+subtitle: el, la, els, les - and when they shrink to l'.
+grammarPoint: definite-article-elision
+grammarPointEn: the definite article el/la/els/les, obligatory elision to l'
+  before a vowel or h, and the exception before unstressed i- and u-
+slides:
+  - id: gs-02-1
+    title: Four forms, by gender and number
+    body: Catalan marks the noun's gender on the article, so learn every noun
+      together with its article.
+    examples:
+      - target: el llibre
+        en: the book
+      - target: la casa
+        en: the house
+      - target: els llibres
+        en: the books
+      - target: les cases
+        en: the houses
+  - id: gs-02-2
+    title: Before a vowel or h, el and la become l'
+    body: This is not a style choice. Writing "el home" is an error the way "a
+      apple" is in English.
+    examples:
+      - target: l'home
+        en: the man
+        highlight: l'
+      - target: l'aigua
+        en: the water
+      - target: l'hora
+        en: the hour
+      - target: l'escola
+        en: the school
+  - id: gs-02-3
+    title: One exception worth knowing
+    body: "la keeps its shape before an unstressed i- or u-, because that vowel
+      behaves like a consonant: la idea, la universitat. When the i is stressed
+      it elides again: l'illa."
+    examples:
+      - target: la idea
+        en: the idea
+      - target: la universitat
+        en: the university
+      - target: l'illa
+        en: the island
+  - id: gs-02-4
+    title: Names take an article too
+    body: In everyday Catalan a person's name normally carries el or la. It sounds
+      bare without one.
+    examples:
+      - target: la Marta
+        en: Marta
+      - target: el Joan
+        en: Joan
+      - target: L'Anna és a casa.
+        en: Anna is at home.
+exercises:
+  - id: ge-02-1
+    type: fillBlank
+    target: ___ home és alt.
+    en: The man is tall.
+    answer:
+      target: L'
+    distractors:
+      - target: El
+      - target: La
+      - target: Els
+  - id: ge-02-2
+    type: fillBlank
+    target: ___ casa és petita.
+    en: The house is small.
+    answer:
+      target: La
+    distractors:
+      - target: L'
+      - target: El
+      - target: Les
+  - id: ge-02-3
+    type: fillBlank
+    target: Vull ___ aigua freda.
+    en: I want the cold water.
+    answer:
+      target: l'
+    distractors:
+      - target: la
+      - target: el
+      - target: les
+  - id: ge-02-4
+    type: fillBlank
+    target: ___ idea és bona.
+    en: The idea is good.
+    answer:
+      target: La
+    distractors:
+      - target: L'
+      - target: El
+      - target: Els
+    hint: An unstressed i- blocks the apostrophe.
+  - id: ge-02-5
+    type: fillBlank
+    target: ___ llibres són a casa.
+    en: The books are at home.
+    answer:
+      target: Els
+    distractors:
+      - target: Les
+      - target: El
+      - target: L'
+  - id: ge-02-6
+    type: spotError
+    target: El escola és gran.
+    en: The school is big.
+    errorWord:
+      target: El
+    correction:
+      target: L'
+    correctedTarget: L'escola és gran.
+  - id: ge-02-7
+    type: matchPairs
+    prompt: Match each noun with the article it takes.
+    pairs:
+      - target: l'home
+        en: the man
+      - target: la dona
+        en: the woman
+      - target: els nens
+        en: the children
+      - target: l'aigua
+        en: the water
+  - id: ge-02-8
+    type: chooseTranslation
+    direction: toTarget
+    target: L'illa és petita.
+    en: The island is small.
+    distractorsTarget:
+      - target: La illa és petita.
+      - target: El illa és petita.
+      - target: Les illa és petita.
+    distractorsEn: []
+    hint: A stressed i- does elide, unlike the i- in la idea.

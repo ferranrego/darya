@@ -308,6 +308,52 @@
                 "I was in Barcelona this week."
               ],
               "distractorsTarget": []
+            },
+            {
+              "id": "ge-01-10",
+              "type": "fillBlank",
+              "target": "Nosaltres ___ a casa.",
+              "en": "We are at home.",
+              "answer": {
+                "target": "som"
+              },
+              "distractors": [
+                {
+                  "target": "estan"
+                },
+                {
+                  "target": "és"
+                },
+                {
+                  "target": "són"
+                }
+              ]
+            },
+            {
+              "id": "ge-01-11",
+              "type": "spotError",
+              "target": "El llibre està aquí.",
+              "en": "The book is here.",
+              "errorWord": {
+                "target": "està"
+              },
+              "correction": {
+                "target": "és"
+              },
+              "correctedTarget": "El llibre és aquí."
+            },
+            {
+              "id": "ge-01-12",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "La casa és gran.",
+              "en": "The house is big.",
+              "distractorsEn": [
+                "The house is small.",
+                "The car is big.",
+                "The house was big."
+              ],
+              "distractorsTarget": []
             }
           ]
         },

@@ -1,0 +1,112 @@
+id: b2_15
+title: Causa i conseqüència
+subtitle: Cause and consequence
+grammarPoint: Com que, ja que, de manera que
+grammarPointEn: Connectors of cause and consequence
+slides:
+  - id: b2_15_1
+    title: Com que (Cause)
+    body: |
+      "Com que" (since / as) is used to introduce a cause that is placed at the beginning of the sentence. 
+      It is the most natural way in Catalan to express "since [cause], [consequence]" at the start of a sentence.
+    examples:
+      - target: Com que plou, no sortirem.
+        translit: /ˈkɔm kə ˈplɔw, ˈno suɾtiˈɾem/
+        en: Since it is raining, we won't go out.
+        highlight: Com que
+      - target: Com que no tinc diners, no puc comprar-ho.
+        translit: /ˈkɔm kə ˈno ˈtiŋ ðiˈnes, ˈno ˈpuk kumˈpɾaɾu/
+        en: As I don't have money, I can't buy it.
+        highlight: Com que
+  - id: b2_15_2
+    title: Ja que (Cause)
+    body: |
+      "Ja que" (since / because) introduces a cause, but it is typically placed in the middle of the sentence. It can sometimes start a sentence in more formal contexts, but usually comes after the main clause.
+    examples:
+      - target: No sortirem, ja que plou.
+        translit: /ˈno suɾtiˈɾem, ˈʒa kə ˈplɔw/
+        en: We won't go out, since it is raining.
+        highlight: ja que
+      - target: Ho ha comprat ell, ja que jo no tenia efectiu.
+        translit: /ˈw a kumˈpɾat ˈeʎ, ˈʒa kə ˈʒɔ ˈno təˈni.ə əfəkˈtiw/
+        en: He bought it, since I didn't have cash.
+        highlight: ja que
+  - id: b2_15_3
+    title: De manera que (Consequence)
+    body: |
+      "De manera que" (so / in such a way that) introduces a consequence. It is placed between the cause and the consequence.
+    examples:
+      - target: Plou molt, de manera que ens quedarem a casa.
+        translit: /ˈplɔw ˈmolt, də məˈneɾə kə əns kəðəˈɾɛm ə ˈkazə/
+        en: It's raining a lot, so we will stay at home.
+        highlight: de manera que
+      - target: L'examen era difícil, de manera que pocs van aprovar.
+        translit: /ləɡˈzamən ˈeɾə ðiˈfisil, də məˈneɾə kə ˈpɔks ˈban əpɾuˈβa/
+        en: The exam was difficult, so few passed.
+        highlight: de manera que
+exercises:
+  - id: b2_15_ex1
+    type: fillBlank
+    target: ___ era tard, vam decidir anar a dormir.
+    translit: ___ ˈeɾə ˈtaɾt, ˈbam dəsiˈði əˈna ə ðuɾˈmi.
+    en: Since it was late, we decided to go to sleep.
+    answer:
+      target: Com que
+      translit: /ˈkɔm kə/
+    distractors:
+      - target: Ja que
+        translit: /ˈʒa kə/
+      - target: De manera que
+        translit: /də məˈneɾə kə/
+  - id: b2_15_ex2
+    type: fillBlank
+    target: Ho farem nosaltres, ___ ells no poden.
+    translit: /ˈu fəˈɾem nuˈzaltɾəs, ___ ˈeʎs ˈno ˈpɔðən./
+    en: We will do it, since they can't.
+    answer:
+      target: ja que
+      translit: /ˈʒa kə/
+    distractors:
+      - target: de manera que
+        translit: /də məˈneɾə kə/
+      - target: encara que
+        translit: /ənˈkaɾə kə/
+  - id: b2_15_ex3
+    type: fillBlank
+    target: Has estudiat molt, ___ aprovaràs segur.
+    translit: ˈaz əstuˈðjat ˈmolt, ___ əpɾuβəˈɾas səˈɣu.
+    en: You have studied a lot, so you will pass for sure.
+    answer:
+      target: de manera que
+      translit: /də məˈneɾə kə/
+    distractors:
+      - target: com que
+        translit: /ˈkɔm kə/
+      - target: ja que
+        translit: /ˈʒa kə/
+  - id: b2_15_ex4
+    type: fillBlank
+    target: ___ no m'agrada el peix, demanaré carn.
+    translit: ___ ˈno məˈɣɾaðə l ˈpeʃ, dəmənəˈɾe ˈkaɾn.
+    en: As I don't like fish, I will order meat.
+    answer:
+      target: Com que
+      translit: /ˈkɔm kə/
+    distractors:
+      - target: Perquè
+        translit: /pəɾˈkɛ/
+      - target: Malgrat que
+        translit: /məlˈɣɾat kə/
+  - id: b2_15_ex5
+    type: fillBlank
+    target: Tenim poc temps, ___ hem de començar ja.
+    translit: təˈnim ˈpɔk ˈtems, ___ ˈɛm də kumənˈsa ˈʒa.
+    en: We have little time, so we must start now.
+    answer:
+      target: de manera que
+      translit: /də məˈneɾə kə/
+    distractors:
+      - target: com que
+        translit: /ˈkɔm kə/
+      - target: malgrat que
+        translit: /məlˈɣɾat kə/

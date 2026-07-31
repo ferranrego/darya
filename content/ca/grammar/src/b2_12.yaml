@@ -1,0 +1,118 @@
+id: b2_12
+title: La veu passiva i passiva reflexa
+subtitle: ser + participi vs pronom es
+grammarPoint: "Diferències entre la passiva perifràstica i la passiva pronominal."
+grammarPointEn: "Differences between periphrastic passive and pronominal (reflexive) passive."
+slides:
+  - id: b2_12_s1
+    title: Passiva perifràstica (ser + participi)
+    body: "Es forma amb el verb *ser* seguit d'un participi, que concorda en gènere i nombre amb el subjecte pacient. Generalment s'utilitza en contextos formals, en la llengua escrita o als mitjans de comunicació."
+    examples:
+      - target: "L'edifici va ser construït l'any 1990."
+        translit: ""
+        en: "The building was built in 1990."
+        highlight: "va ser construït"
+      - target: "Aquestes lleis han estat aprovades recentment."
+        translit: ""
+        en: "These laws have been recently approved."
+        highlight: "han estat aprovades"
+  - id: b2_12_s2
+    title: La passiva pronominal o reflexa (amb 'es')
+    body: "En català corrent s'utilitza preferentment la passiva pronominal en comptes de la perifràstica quan no s'esmenta qui fa l'acció. Es forma amb el pronom *es* i el verb en tercera persona."
+    examples:
+      - target: "Es ven pis amb vista al mar."
+        translit: ""
+        en: "Apartment with sea view is sold."
+        highlight: "Es ven"
+      - target: "S'han publicat les notes de l'examen."
+        translit: ""
+        en: "The exam grades have been published."
+        highlight: "S'han publicat"
+  - id: b2_12_s3
+    title: Concordances
+    body: "En la passiva pronominal, el verb concorda amb l'element que rep l'acció (el subjecte gramatical). Si és plural, el verb va en plural."
+    examples:
+      - target: "S'espera un augment de temperatures."
+        translit: ""
+        en: "An increase in temperatures is expected."
+        highlight: "S'espera"
+      - target: "S'esperen pluges abundants per a demà."
+        translit: ""
+        en: "Heavy rains are expected for tomorrow."
+        highlight: "S'esperen"
+exercises:
+  - id: b2_12_e1
+    type: fillBlank
+    target: "La porta ha ___ tancada pel vent."
+    translit: ""
+    en: "The door has been closed by the wind."
+    answer:
+      target: "estat"
+      translit: ""
+    distractors:
+      - target: "ser"
+        translit: ""
+      - target: "es"
+        translit: ""
+      - target: "s'"
+        translit: ""
+  - id: b2_12_e2
+    type: fillBlank
+    target: "A la reunió d'ahir ___ van debatre molts temes."
+    translit: ""
+    en: "At yesterday's meeting many topics were discussed."
+    answer:
+      target: "es"
+      translit: ""
+    distractors:
+      - target: "ser"
+        translit: ""
+      - target: "han estat"
+        translit: ""
+      - target: "s'"
+        translit: ""
+  - id: b2_12_e3
+    type: fillBlank
+    target: "___ lloguen habitacions a estudiants."
+    translit: ""
+    en: "Rooms are rented to students."
+    answer:
+      target: "Es"
+      translit: ""
+    distractors:
+      - target: "S'"
+        translit: ""
+      - target: "Ser"
+        translit: ""
+      - target: "Han estat"
+        translit: ""
+  - id: b2_12_e4
+    type: fillBlank
+    target: "Els delinqüents van ___ detinguts per la policia."
+    translit: ""
+    en: "The criminals were arrested by the police."
+    answer:
+      target: "ser"
+      translit: ""
+    distractors:
+      - target: "es"
+        translit: ""
+      - target: "estats"
+        translit: ""
+      - target: "s'"
+        translit: ""
+  - id: b2_12_e5
+    type: fillBlank
+    target: "Ja ___ ha anunciat la data del festival."
+    translit: ""
+    en: "The date of the festival has already been announced."
+    answer:
+      target: "s'"
+      translit: ""
+    distractors:
+      - target: "es"
+        translit: ""
+      - target: "ser"
+        translit: ""
+      - target: "ha estat"
+        translit: ""

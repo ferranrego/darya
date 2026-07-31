@@ -1,0 +1,78 @@
+id: gl-42
+title: L'Impersonal 'Es' i la Passiva Reflexa
+subtitle: Domini dels Pronoms Febles
+grammarPoint: Ús de 'es' impersonal i la passiva reflexa
+grammarPointEn: Using impersonal 'es' and reflexive passive
+slides:
+  - title: Passiva reflexa
+    content: "S'utilitza 'es' més el verb en 3a persona per indicar que una acció es
+      fa sobre un subjecte pacient (que concorda amb el verb). Exemple: Es ven
+      un pis / Es venen pisos."
+    id: gs-42-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - title: L'impersonal 'es'
+    content: "S'utilitza 'es' més el verb en 3a persona del singular per indicar una
+      acció sense un subjecte específic. Exemple: Es diu que plourà."
+    id: gs-42-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-42-1
+    type: fillBlank
+    target: Aquí ___ parla català.
+    en: Catalan is spoken here.
+    answer:
+      target: es
+    distractors:
+      - target: se
+      - target: s'
+  - id: ge-42-2
+    type: fillBlank
+    target: ___ venen bicicletes de segona mà.
+    en: Second-hand bicycles are sold.
+    answer:
+      target: Es
+    distractors:
+      - target: Se
+      - target: S'
+  - id: ge-42-3
+    type: fillBlank
+    target: A l'estiu ___ dorm poc.
+    en: In summer people sleep little.
+    answer:
+      target: es
+    distractors:
+      - target: se
+      - target: s'
+  - id: ge-42-4
+    type: fillBlank
+    target: Com ___ diu 'gràcies' en anglès?
+    en: How do you say 'thank you' in English?
+    answer:
+      target: es
+    distractors:
+      - target: se
+      - target: s'
+  - id: ge-42-5
+    type: fillBlank
+    target: ___ espera una resposta ràpida.
+    en: A quick reply is expected.
+    answer:
+      target: S'
+    distractors:
+      - target: Es
+      - target: Se
+  - id: ge-42-6
+    type: fillBlank
+    target: ___ espera una resposta ràpida.
+    en: A quick reply is expected.
+    answer:
+      target: S'
+    distractors:
+      - target: Es
+      - target: Se

@@ -1,0 +1,127 @@
+id: gl-07
+title: tenir and hi ha
+subtitle: Having things, feeling things, and saying that something exists.
+grammarPoint: tenir-hi-ha
+grammarPointEn: tenir for possession, age and physical states, and the
+  invariable existential hi ha
+slides:
+  - id: gs-07-1
+    title: Catalan has states that English is
+    body: Where English says "I am hungry", Catalan says "I have hunger". Age works
+      the same way.
+    examples:
+      - target: Tinc gana.
+        en: I'm hungry.
+      - target: Tinc vint anys.
+        en: I'm twenty years old.
+      - target: Tens fred?
+        en: Are you cold?
+    table:
+      - - tenir gana
+        - to be hungry
+      - - tenir set
+        - to be thirsty
+      - - tenir son
+        - to be sleepy
+      - - tenir fred
+        - to be cold
+      - - tenir calor
+        - to be hot
+      - - tenir raó
+        - to be right
+  - id: gs-07-2
+    title: hi ha never changes
+    body: It covers both "there is" and "there are", singular and plural alike.
+    examples:
+      - target: Hi ha un gat a la cuina.
+        en: There is a cat in the kitchen.
+      - target: Hi ha molts nens al parc.
+        en: There are a lot of children in the park.
+      - target: No hi ha pa.
+        en: There is no bread.
+exercises:
+  - id: ge-07-1
+    type: fillBlank
+    target: ___ gana, vull menjar.
+    en: I'm hungry, I want to eat.
+    answer:
+      target: Tinc
+    distractors:
+      - target: Soc
+      - target: Estic
+      - target: Hi ha
+  - id: ge-07-2
+    type: fillBlank
+    target: El meu fill ___ deu anys.
+    en: My son is ten years old.
+    answer:
+      target: té
+    distractors:
+      - target: és
+      - target: està
+      - target: tinc
+  - id: ge-07-3
+    type: fillBlank
+    target: ___ un gat a la cuina.
+    en: There is a cat in the kitchen.
+    answer:
+      target: Hi ha
+    distractors:
+      - target: És
+      - target: Té
+      - target: Està
+  - id: ge-07-4
+    type: fillBlank
+    target: Hi ___ molts llibres a casa.
+    en: There are a lot of books at home.
+    answer:
+      target: ha
+    distractors:
+      - target: han
+      - target: són
+      - target: tenen
+    hint: hi ha never becomes plural.
+  - id: ge-07-5
+    type: spotError
+    target: Soc vint anys.
+    en: I am twenty years old.
+    errorWord:
+      target: Soc
+    correction:
+      target: Tinc
+    correctedTarget: Tinc vint anys.
+  - id: ge-07-6
+    type: matchPairs
+    prompt: Match the Catalan expression with its meaning.
+    pairs:
+      - target: tinc gana
+        en: I'm hungry
+      - target: tinc set
+        en: I'm thirsty
+      - target: tinc fred
+        en: I'm cold
+      - target: tinc son
+        en: I'm sleepy
+  - id: ge-07-7
+    type: buildSentence
+    en: There are two dogs at home.
+    words:
+      - target: Hi
+      - target: ha
+      - target: dos
+      - target: gossos
+      - target: a
+      - target: casa
+    extraWords:
+      - target: han
+      - target: són
+  - id: ge-07-8
+    type: chooseTranslation
+    direction: toEn
+    target: No hi ha pa a casa.
+    en: There is no bread at home.
+    distractorsEn:
+      - I don't have bread at home.
+      - There is bread at home.
+      - The bread is not at home.
+    distractorsTarget: []

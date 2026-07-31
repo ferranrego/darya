@@ -1,0 +1,122 @@
+id: b2_07
+title: "Combinacions amb en i hi"
+subtitle: "N'hi, s'hi, us en, ens en"
+grammarPoint: "Combinacions de pronoms amb en i hi"
+grammarPointEn: "Pronoun combinations with en and hi"
+slides:
+  - id: b2_07_1
+    title: "Combinació dels pronoms EN i HI"
+    body: "Quan cal utilitzar els pronoms 'en' i 'hi' alhora referint-se a dos complements diferents, sempre es combinen en l'ordre 'hi' + 'en' i s'escriuen 'n'hi'."
+    examples:
+      - target: "Hi ha pa a la cuina? Sí que n'hi ha."
+        translit: ""
+        en: "Is there bread in the kitchen? Yes, there is (some there)."
+        highlight: "n'hi"
+      - target: "Portes llibres a l'escola? Sí que n'hi porto."
+        translit: ""
+        en: "Are you taking books to school? Yes, I am taking (some of them) there."
+        highlight: "n'hi"
+  - id: b2_07_2
+    title: "Pronoms reflexius i personals amb EN i HI"
+    body: "Els pronoms 'em, et, es, ens, us' es poden unir amb els pronoms 'en' o 'hi'. Recordeu seguir les formes d'apostrofació i separació pertinents en l'escriptura."
+    examples:
+      - target: "Us en recordeu, d'allò que vam parlar?"
+        translit: ""
+        en: "Do you remember that which we talked about?"
+        highlight: "Us en"
+      - target: "El problema és difícil, però ell s'hi enfronta bé."
+        translit: ""
+        en: "The problem is difficult, but he faces it well."
+        highlight: "s'hi"
+      - target: "Marxem d'aquí. Ens en anem ara mateix."
+        translit: ""
+        en: "Let's leave here. We are leaving right now."
+        highlight: "Ens en"
+  - id: b2_07_3
+    title: "Canvis ortogràfics en la unió de pronoms"
+    body: "Quan s'uneixen dos pronoms, l'apòstrof es col·loca al més a la dreta possible (ex: se n'adona, ens n'anem). Si el segon comença per vocal o h es pot apostrofar amb el verb (ex: se m'endú, te n'has anat)."
+    examples:
+      - target: "Ella se n'ha anat d'hora per agafar el tren."
+        translit: ""
+        en: "She left early to catch the train."
+        highlight: "se n'ha"
+      - target: "Sempre se m'hi fica sorra a les sabates."
+        translit: ""
+        en: "Sand always gets into them (my shoes)."
+        highlight: "se m'hi"
+exercises:
+  - id: b2_07_ex1
+    type: fillBlank
+    target: "Vols posar més sal a la sopa? No, ja ___ he posat prou."
+    translit: ""
+    en: "Do you want to put more salt in the soup? No, I've already put enough (of it in it)."
+    answer:
+      target: "n'hi"
+      translit: ""
+    distractors:
+      - target: "l'hi"
+        translit: ""
+      - target: "n'ho"
+        translit: ""
+      - target: "hi en"
+        translit: ""
+  - id: b2_07_ex2
+    type: fillBlank
+    target: "Anem cap a casa. ___ anem ja?"
+    translit: ""
+    en: "Let's go home. Are we leaving (going from here) now?"
+    answer:
+      target: "Ens n'"
+      translit: ""
+    distractors:
+      - target: "Se n'"
+        translit: ""
+      - target: "Us n'"
+        translit: ""
+      - target: "En ens"
+        translit: ""
+  - id: b2_07_ex3
+    type: fillBlank
+    target: "Ell no es va adonar de l'error, però jo sí que me ___ vaig adonar."
+    translit: ""
+    en: "He didn't realize the mistake, but I did realize it."
+    answer:
+      target: "n'"
+      translit: ""
+    distractors:
+      - target: "hi"
+        translit: ""
+      - target: "ho"
+        translit: ""
+      - target: "en m'"
+        translit: ""
+  - id: b2_07_ex4
+    type: fillBlank
+    target: "Heu posat les llibretes al calaix? Sí, ja ___ hem posades."
+    translit: ""
+    en: "Have you put the notebooks in the drawer? Yes, we have already put them there."
+    answer:
+      target: "les hi"
+      translit: ""
+    distractors:
+      - target: "les n'"
+        translit: ""
+      - target: "n'hi"
+        translit: ""
+      - target: "els hi"
+        translit: ""
+  - id: b2_07_ex5
+    type: fillBlank
+    target: "La Maria no va participar en el projecte, no va voler involucrar-___."
+    translit: ""
+    en: "Maria didn't participate in the project, she didn't want to get involved in it."
+    answer:
+      target: "s'hi"
+      translit: ""
+    distractors:
+      - target: "s'en"
+        translit: ""
+      - target: "s'ho"
+        translit: ""
+      - target: "hi es"
+        translit: ""

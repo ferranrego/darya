@@ -1,0 +1,87 @@
+id: gl-33
+title: El Segon Condicional
+subtitle: Improbable o Irreal
+grammarPoint: "Les oracions condicionals de segon tipus expressen situacions poc
+  probables, hipotètiques o contràries a la realitat en el present o futur.
+  L'estructura és: Si + Pretèrit Imperfet de Subjuntiu, Condicional Simple.
+  Fixa't que, a diferència d'altres llengües, en català utilitzem l'imperfet de
+  subjuntiu després del 'si' condicional irreal."
+grammarPointEn: "Second type conditional sentences express unlikely,
+  hypothetical, or contrary-to-reality situations in the present or future. The
+  structure is: Si + Imperfect Subjunctive, Simple Conditional. Note that in
+  Catalan, we use the imperfect subjunctive after the hypothetical conditional
+  'si'."
+slides:
+  - slideId: gl-33-s-1
+    content: |
+      **Estructura del Segon Condicional**
+      - **Condició:** *Si + Pretèrit Imperfet de Subjuntiu*
+      - **Conseqüència:** *Condicional Simple*
+
+      **Exemples:**
+      - Si **tingués** més diners, em **compraria** un cotxe nou.
+      - Si **fossis** més amable, la gent et **tractaria** millor.
+      - Què **faries** si et **toqués** la loteria?
+    contentEn: "Structure of the Second Conditional: If + Imperfect Subjunctive ->
+      Simple Conditional."
+    id: gs-33-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    title: Concept 1
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-33-1
+    type: fillBlank
+    target: Si jo ___ (ser) ric, viatjaria per tot el món.
+    en: If I were rich, I would travel all over the world.
+    answer:
+      target: fos
+    distractors:
+      - target: seria
+      - target: soc
+  - id: ge-33-2
+    type: fillBlank
+    target: Ells vindrien a la festa si els ___ (convidar).
+    en: They would come to the party if you invited them.
+    answer:
+      target: convidessis
+    distractors:
+      - target: convidaries
+      - target: convidaves
+  - id: ge-33-3
+    type: fillBlank
+    target: Si tinguéssim més temps, ___ (visitar) més museus.
+    en: If we had more time, we would visit more museums.
+    answer:
+      target: visitaríem
+    distractors:
+      - target: visitarem
+      - target: visitàvem
+  - id: ge-33-4
+    type: fillBlank
+    target: Què diries si et ___ (proposar) un canvi de feina?
+    en: What would you say if they proposed a job change to you?
+    answer:
+      target: proposessin
+    distractors:
+      - target: proposaven
+      - target: proposarien
+  - id: ge-33-5
+    type: fillBlank
+    target: Jo no ho faria si no ___ (creure) que és necessari.
+    en: I wouldn't do it if I didn't believe it's necessary.
+    answer:
+      target: cregués
+    distractors:
+      - target: creuria
+      - target: creia
+  - id: ge-33-6
+    type: fillBlank
+    target: Jo no ho faria si no ___ (creure) que és necessari.
+    en: I wouldn't do it if I didn't believe it's necessary.
+    answer:
+      target: cregués
+    distractors:
+      - target: creuria
+      - target: creia

@@ -14,9 +14,14 @@
  * language. Next, Turbopack, vitest, tsc and any script all resolve it the same
  * way, because there is nothing left to resolve.
  *
- * Runs automatically via the `prebuild` / `predev` / `pretest` hooks.
+ * Runs automatically via the `prebuild` / `predev` hooks.
+ *
+ * One symlink means one language per working tree at a time. Re-pointing it
+ * while a dev server is running in the *other* language leaves that server with
+ * its own branding, layout direction and prompts but the wrong content, and
+ * nothing errors - so this warns loudly when it changes an existing link.
  */
-import { existsSync, lstatSync, readdirSync, rmSync, symlinkSync } from "node:fs";
+import { existsSync, lstatSync, readdirSync, readlinkSync, rmSync, symlinkSync } from "node:fs";
 import { join } from "node:path";
 
 const DEFAULT_LANG = "prs";
@@ -37,9 +42,22 @@ if (!existsSync(target)) {
 }
 
 // lstat, not exists: a symlink to a since-removed directory reports as missing.
+let previous: string | null = null;
 if (existsSync(link) || (() => { try { lstatSync(link); return true; } catch { return false; } })()) {
+  try {
+    previous = readlinkSync(link);
+  } catch {
+    // Not a symlink (a stray real directory); nothing to preserve.
+  }
   rmSync(link, { recursive: true, force: true });
 }
 symlinkSync(lang, link, "dir");
 
-console.log(`content/active -> content/${lang}`);
+if (previous && previous !== lang) {
+  console.warn(
+    `content/active: ${previous} -> ${lang}. Any dev server still running in ` +
+      `"${previous}" is now serving ${lang} content - restart it.`,
+  );
+} else {
+  console.log(`content/active -> content/${lang}`);
+}

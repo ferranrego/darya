@@ -1,0 +1,77 @@
+id: gl-41
+title: La Veu Passiva (Ser + Participi)
+subtitle: Domini dels Pronoms Febles
+grammarPoint: Ús de la veu passiva amb el verb ser i el participi
+grammarPointEn: Using the passive voice with the verb 'ser' and participle
+slides:
+  - title: Estructura de la passiva
+    content: La veu passiva es forma amb el verb 'ser' conjugat i el participi del
+      verb principal, que concorda en gènere i nombre amb el subjecte pacient.
+    id: gs-41-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - title: El complement agent
+    content: L'executor de l'acció s'introdueix amb la preposició 'per', formant el
+      complement agent.
+    id: gs-41-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-41-1
+    type: fillBlank
+    target: El llibre va ___ escrit per un autor famós.
+    en: The book was written by a famous author.
+    answer:
+      target: ser
+    distractors:
+      - target: estar
+      - target: haver
+  - id: ge-41-2
+    type: fillBlank
+    target: Les cartes seran ___ demà.
+    en: The letters will be sent tomorrow.
+    answer:
+      target: enviades
+    distractors:
+      - target: enviats
+      - target: enviada
+  - id: ge-41-3
+    type: fillBlank
+    target: El pastís va ser preparat ___ la meva àvia.
+    en: The cake was prepared by my grandmother.
+    answer:
+      target: per
+    distractors:
+      - target: de
+      - target: a
+  - id: ge-41-4
+    type: fillBlank
+    target: Els lladres van ser ___ per la policia.
+    en: The thieves were arrested by the police.
+    answer:
+      target: detinguts
+    distractors:
+      - target: detingut
+      - target: detingudes
+  - id: ge-41-5
+    type: fillBlank
+    target: Aquesta casa ha estat ___ recentment.
+    en: This house has been built recently.
+    answer:
+      target: construïda
+    distractors:
+      - target: construït
+      - target: construïdes
+  - id: ge-41-6
+    type: fillBlank
+    target: Aquesta casa ha estat ___ recentment.
+    en: This house has been built recently.
+    answer:
+      target: construïda
+    distractors:
+      - target: construït
+      - target: construïdes

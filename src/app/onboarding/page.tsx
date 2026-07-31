@@ -2,10 +2,10 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
-import { sampleAssessmentWords, scoreAssessment } from "@/lib/assessment";
+import { getInitialSeed, spawnRelatedWords, scoreAssessment, type AssessmentWord } from "@/lib/assessment";
 import { lexicon, levelLabel } from "@/lib/content/load";
 import { updateProfile } from "@/lib/db/profiles";
 import { seedKnownWords } from "@/lib/db/words";
@@ -30,8 +30,22 @@ export default function OnboardingPage() {
   const [result, setResult] = useState<{ estimatedVocab: number; levelId: string } | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  
+  const [sampledWords, setSampledWords] = useState<AssessmentWord[]>([]);
+  const [displayedWords, setDisplayedWords] = useState<AssessmentWord[]>([]);
 
-  const words = useMemo(() => sampleAssessmentWords(lexicon.entries), []);
+  useEffect(() => {
+    const seed = getInitialSeed(lexicon.entries);
+    setSampledWords(seed);
+    setDisplayedWords(seed);
+  }, []);
+
+  function reshuffle() {
+    const excludeIds = new Set(sampledWords.map((w) => w.entry.id));
+    const seed = getInitialSeed(lexicon.entries, excludeIds);
+    setSampledWords((prev) => [...prev, ...seed]);
+    setDisplayedWords(seed);
+  }
 
   function startWizard() {
     if (
@@ -50,6 +64,16 @@ export default function OnboardingPage() {
     setStep("assessment");
   }
 
+  function goBack() {
+    if (step === "assessment") {
+      setStep(lang.capabilities.scriptCourse ? "script" : "install");
+    } else if (step === "script") {
+      setStep("install");
+    } else if (step === "install") {
+      setStep("hello");
+    }
+  }
+
   /**
    * Everyone takes the vocabulary assessment, whether or not they can read the
    * script: a heritage speaker may know hundreds of words yet not read a letter.
@@ -59,7 +83,7 @@ export default function OnboardingPage() {
   async function finishAssessment() {
     setBusy(true);
     setError(null);
-    const scored = scoreAssessment(words, selected, lexicon.entries);
+    const scored = scoreAssessment(sampledWords, selected, lexicon.entries);
     try {
       const { data, error: authError } = await db.auth.getUser();
       if (authError || !data.user) {
@@ -83,17 +107,43 @@ export default function OnboardingPage() {
     setStep("result");
   }
 
-  function toggle(id: string) {
-    setSelected((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
+  function handleTap(word: AssessmentWord) {
+    if (selected.has(word.entry.id)) {
+      setSelected((prev) => {
+        const next = new Set(prev);
+        next.delete(word.entry.id);
+        return next;
+      });
+      return;
+    }
+
+    setSelected((prev) => new Set(prev).add(word.entry.id));
+
+    if (sampledWords.length >= 200) return;
+
+    const excludeIds = new Set(sampledWords.map((w) => w.entry.id));
+    const newWords = spawnRelatedWords(word.band, lexicon.entries, excludeIds);
+    setSampledWords((prev) => [...prev, ...newWords]);
+    setDisplayedWords((prev) => {
+      const idx = prev.findIndex((w) => w.entry.id === word.entry.id);
+      if (idx === -1) return [...prev, ...newWords];
+      return [...prev.slice(0, idx + 1), ...newWords, ...prev.slice(idx + 1)];
     });
   }
 
   return (
-    <div className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-6 py-10">
+    <div className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-6 py-10 relative">
+      {step !== "hello" && step !== "result" && (
+        <button 
+          onClick={goBack} 
+          className="absolute top-8 left-6 p-2 -ml-2 text-ink-soft hover:text-ink transition-colors"
+          aria-label="Go back"
+        >
+          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+      )}
       <AnimatePresence mode="wait">
         {step === "hello" && (
           <motion.div key="hello" {...stepMotion} className="my-auto text-center">
@@ -196,16 +246,13 @@ export default function OnboardingPage() {
                 : "Read the Latin spelling out loud. Tap the ones you already know, even if you can't read the script yet."}
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-2.5 pb-28">
-              {words.map((w, i) => {
+              {displayedWords.map((w) => {
                 const active = selected.has(w.entry.id);
                 return (
-                  <motion.button
+                  <button
                     key={w.entry.id}
                     type="button"
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: Math.min(i * 0.03, 1.2), duration: 0.3 }}
-                    onClick={() => toggle(w.entry.id)}
+                    onClick={() => handleTap(w)}
                     aria-pressed={active}
                     className={`flex flex-col items-center rounded-2xl border px-4 py-2.5 transition-all duration-200 ${
                       active
@@ -235,20 +282,37 @@ export default function OnboardingPage() {
                         </span>
                       </>
                     )}
-                  </motion.button>
+                  </button>
                 );
               })}
             </div>
             <div className="fixed inset-x-0 bottom-0 border-t border-line/70 bg-paper/85 backdrop-blur-xl">
+              {/* Progress bar */}
+              <div 
+                className="absolute top-0 left-0 h-[2px] bg-lapis transition-all duration-500 ease-out" 
+                style={{ width: `${Math.min(100, (sampledWords.length / 200) * 100)}%` }} 
+              />
               <div className="mx-auto max-w-xl px-6 py-4">
                 {error && <p className="mb-2 text-[13px] text-danger">{error}</p>}
                 <div className="flex items-center justify-between">
-                  <span className="text-[14px] text-ink-soft">
-                    {selected.size} word{selected.size === 1 ? "" : "s"}
-                  </span>
-                  <Button disabled={busy} onClick={finishAssessment}>
-                    {busy ? "Working it out…" : "I'm done"}
-                  </Button>
+                  <div className="flex flex-col">
+                    <span className="text-[14px] text-ink-soft">
+                      {selected.size} word{selected.size === 1 ? "" : "s"} selected
+                    </span>
+                    <span className="text-[12px] text-ink-faint mt-0.5">
+                      {Math.min(sampledWords.length, 200)} / 200 probed
+                    </span>
+                  </div>
+                  <div className="flex gap-2">
+                    {selected.size === 0 && (
+                      <Button disabled={busy} variant="secondary" onClick={reshuffle}>
+                        Shuffle
+                      </Button>
+                    )}
+                    <Button disabled={busy} onClick={finishAssessment}>
+                      {busy ? "Working it out…" : (sampledWords.length >= 200 ? "Finish" : "I'm done")}
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>

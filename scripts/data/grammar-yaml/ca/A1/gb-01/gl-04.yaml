@@ -1,0 +1,127 @@
+id: gl-04
+title: Saying no
+subtitle: no before the verb, and the double negatives Catalan insists on.
+grammarPoint: negation
+grammarPointEn: negation with no before the verb, and obligatory double negation
+  with res, ningú, mai and cap
+slides:
+  - id: gs-04-1
+    title: no goes straight before the verb
+    body: There is no equivalent of English "don't" - just put no in front of the
+      verb.
+    examples:
+      - target: No parlo català.
+        en: I don't speak Catalan.
+        highlight: No
+      - target: No és a casa.
+        en: He isn't at home.
+      - target: Avui no treballo.
+        en: I'm not working today.
+  - id: gs-04-2
+    title: Two negatives are correct here
+    body: Catalan keeps no even when another negative word is present. Dropping it
+      is the mistake, not the reverse.
+    examples:
+      - target: No hi ha res.
+        en: There is nothing.
+      - target: No ve ningú.
+        en: Nobody is coming.
+      - target: No hi vaig mai.
+        en: I never go there.
+      - target: No tinc cap llibre.
+        en: I don't have any book.
+  - id: gs-04-3
+    title: tampoc for "neither"
+    body: Use tampoc when a negative applies to you as well.
+    examples:
+      - target: Jo tampoc ho sé.
+        en: I don't know either.
+      - target: Ella tampoc ve.
+        en: She isn't coming either.
+exercises:
+  - id: ge-04-1
+    type: fillBlank
+    target: Avui ___ treballo.
+    en: Today I'm not working.
+    answer:
+      target: no
+    distractors:
+      - target: ni
+      - target: res
+      - target: mai
+  - id: ge-04-2
+    type: fillBlank
+    target: No hi ha ___ a la taula.
+    en: There is nothing on the table.
+    answer:
+      target: res
+    distractors:
+      - target: ningú
+      - target: cap
+      - target: mai
+  - id: ge-04-3
+    type: fillBlank
+    target: No ve ___ a la festa.
+    en: Nobody is coming to the party.
+    answer:
+      target: ningú
+    distractors:
+      - target: res
+      - target: mai
+      - target: cap
+  - id: ge-04-4
+    type: fillBlank
+    target: No tinc ___ llibre.
+    en: I don't have any book.
+    answer:
+      target: cap
+    distractors:
+      - target: res
+      - target: ningú
+      - target: gens
+  - id: ge-04-5
+    type: spotError
+    target: Ella ve mai a casa.
+    en: She never comes home.
+    errorWord:
+      target: ve
+    correction:
+      target: no ve
+    hint: Catalan keeps no as well.
+    correctedTarget: Ella no ve mai a casa.
+  - id: ge-04-6
+    type: buildSentence
+    en: I never eat fish.
+    words:
+      - target: No
+      - target: menjo
+      - target: mai
+      - target: peix
+    extraWords:
+      - target: res
+      - target: ningú
+    altOrders:
+      - - No
+        - menjo
+        - peix
+        - mai
+  - id: ge-04-7
+    type: chooseTranslation
+    direction: toEn
+    target: Jo tampoc parlo alemany.
+    en: I don't speak German either.
+    distractorsEn:
+      - I also speak German.
+      - I never speak German.
+      - I don't speak German at all.
+    distractorsTarget: []
+  - id: ge-04-8
+    type: chooseTranslation
+    direction: toTarget
+    target: No hi ha ningú aquí.
+    en: There is nobody here.
+    distractorsTarget:
+      - target: Hi ha ningú aquí.
+      - target: No hi ha res aquí.
+      - target: No hi ha ningú mai.
+    distractorsEn: []

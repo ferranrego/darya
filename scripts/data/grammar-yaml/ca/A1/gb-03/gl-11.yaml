@@ -1,0 +1,146 @@
+id: gl-11
+title: Numbers, days and the time
+subtitle: Including the quarters, which are unmistakably Catalan.
+grammarPoint: numbers-time
+grammarPointEn: cardinal numbers with the feminine dues, days and months, and
+  telling the time including the traditional quarter system
+slides:
+  - id: gs-11-1
+    title: Only one and two have a feminine
+    body: un/una and dos/dues change; every other number is the same for both
+      genders.
+    examples:
+      - target: dos llibres
+        en: two books
+      - target: dues cases
+        en: two houses
+      - target: Tinc vint anys.
+        en: I'm twenty years old.
+    table:
+      - - 1, 2
+        - un/una, dos/dues
+      - - 3, 4, 5
+        - tres, quatre, cinc
+      - - 6, 7, 8
+        - sis, set, vuit
+      - - 9, 10, 11
+        - nou, deu, onze
+      - - 20, 21
+        - vint, vint-i-un
+      - - 100, 1000
+        - cent, mil
+  - id: gs-11-2
+    title: Days and months are not capitalised
+    body: Use el before a day to mean "on", and els for a repeated habit.
+    examples:
+      - target: Ens veiem el dilluns.
+        en: We're meeting on Monday.
+      - target: Treballo els dissabtes.
+        en: I work on Saturdays.
+      - target: Al maig fa bon temps.
+        en: In May the weather is good.
+  - id: gs-11-3
+    title: The hour is feminine and plural
+    body: "Són les tres, because hores is understood. One o'clock is the only
+      singular: és la una."
+    examples:
+      - target: Quina hora és?
+        en: What time is it?
+      - target: És la una.
+        en: It's one o'clock.
+      - target: Són les vuit del matí.
+        en: It's eight in the morning.
+  - id: gs-11-4
+    title: Catalan counts quarters towards the next hour
+    body: This is the traditional system and you will hear it constantly. Two
+      quarters of five means half past four - the quarters count up to the hour
+      ahead, not from the one behind.
+    examples:
+      - target: un quart de cinc
+        en: quarter past four
+      - target: dos quarts de cinc
+        en: half past four
+      - target: tres quarts de cinc
+        en: quarter to five
+exercises:
+  - id: ge-11-1
+    type: fillBlank
+    target: Tinc ___ germanes.
+    en: I have two sisters.
+    answer:
+      target: dues
+    distractors:
+      - target: dos
+      - target: duos
+      - target: does
+  - id: ge-11-2
+    type: fillBlank
+    target: ___ les tres de la tarda.
+    en: It's three in the afternoon.
+    answer:
+      target: Són
+    distractors:
+      - target: És
+      - target: Està
+      - target: Hi ha
+  - id: ge-11-3
+    type: fillBlank
+    target: ___ la una en punt.
+    en: It's one o'clock sharp.
+    answer:
+      target: És
+    distractors:
+      - target: Són
+      - target: Està
+      - target: Hi ha
+  - id: ge-11-4
+    type: fillBlank
+    target: Treballo ___ dissabtes.
+    en: I work on Saturdays.
+    answer:
+      target: els
+    distractors:
+      - target: les
+      - target: el
+      - target: al
+  - id: ge-11-5
+    type: fillBlank
+    target: El llibre té ___ pàgines.
+    en: The book has a hundred pages.
+    answer:
+      target: cent
+    distractors:
+      - target: mil
+      - target: vint
+      - target: deu
+  - id: ge-11-6
+    type: spotError
+    target: Tinc dos germanes petites.
+    en: I have two little sisters.
+    errorWord:
+      target: dos
+    correction:
+      target: dues
+    correctedTarget: Tinc dues germanes petites.
+  - id: ge-11-7
+    type: matchPairs
+    prompt: Match the Catalan time with the clock.
+    pairs:
+      - target: un quart de cinc
+        en: 4:15
+      - target: dos quarts de cinc
+        en: 4:30
+      - target: tres quarts de cinc
+        en: 4:45
+      - target: les cinc en punt
+        en: 5:00
+  - id: ge-11-8
+    type: chooseTranslation
+    direction: toEn
+    target: Són dos quarts de nou.
+    en: It's half past eight.
+    distractorsEn:
+      - It's two o'clock.
+      - It's a quarter past nine.
+      - It's nine o'clock.
+    distractorsTarget: []

@@ -1,0 +1,131 @@
+id: gl-06
+title: The irregular verbs you need first
+subtitle: Nine verbs that carry half of everyday Catalan.
+grammarPoint: irregular-present
+grammarPointEn: the present indicative of the high-frequency irregular verbs
+  tenir, fer, anar, poder, voler, venir, dir, saber and veure
+slides:
+  - id: gs-06-1
+    title: The "I" form is where the surprise is
+    body: "For most of these, once you know the jo form the rest follows a steady
+      pattern. Notice the -c ending: tinc, vinc, puc, dic."
+    examples:
+      - target: Tinc dos germans.
+        en: I have two brothers.
+      - target: Faig el sopar.
+        en: I'm making dinner.
+      - target: No puc venir avui.
+        en: I can't come today.
+    table:
+      - - tenir
+        - tinc, tens, té, tenim, teniu, tenen
+      - - fer
+        - faig, fas, fa, fem, feu, fan
+      - - anar
+        - vaig, vas, va, anem, aneu, van
+      - - poder
+        - puc, pots, pot, podem, podeu, poden
+      - - voler
+        - vull, vols, vol, volem, voleu, volen
+  - id: gs-06-2
+    title: Four more, just as common
+    body: venir and dir take the same -c ending; saber and veure are one-offs worth
+      memorising as they are.
+    examples:
+      - target: No sé on és.
+        en: I don't know where he is.
+      - target: Et veig demà.
+        en: I'll see you tomorrow.
+    table:
+      - - venir
+        - vinc, vens, ve, venim, veniu, venen
+      - - dir
+        - dic, dius, diu, diem, dieu, diuen
+      - - saber
+        - sé, saps, sap, sabem, sabeu, saben
+      - - veure
+        - veig, veus, veu, veiem, veieu, veuen
+exercises:
+  - id: ge-06-1
+    type: fillBlank
+    target: Jo ___ dos germans.
+    en: I have two brothers.
+    answer:
+      target: tinc
+    distractors:
+      - target: tens
+      - target: té
+      - target: tenim
+  - id: ge-06-2
+    type: fillBlank
+    target: Avui ___ el sopar jo.
+    en: Today I'm making dinner.
+    answer:
+      target: faig
+    distractors:
+      - target: fas
+      - target: fa
+      - target: fem
+  - id: ge-06-3
+    type: fillBlank
+    target: No ___ venir demà.
+    en: I can't come tomorrow.
+    answer:
+      target: puc
+    distractors:
+      - target: pots
+      - target: pot
+      - target: podem
+  - id: ge-06-4
+    type: fillBlank
+    target: No ___ on és la casa.
+    en: I don't know where the house is.
+    answer:
+      target: sé
+    distractors:
+      - target: saps
+      - target: sap
+      - target: sabem
+  - id: ge-06-5
+    type: fillBlank
+    target: Ell ___ a l'escola cada dia.
+    en: He goes to school every day.
+    answer:
+      target: va
+    distractors:
+      - target: vaig
+      - target: vas
+      - target: van
+  - id: ge-06-6
+    type: spotError
+    target: Jo teno molta feina.
+    en: I have a lot of work.
+    errorWord:
+      target: teno
+    correction:
+      target: tinc
+    correctedTarget: Jo tinc molta feina.
+  - id: ge-06-7
+    type: matchPairs
+    prompt: Match each "I" form with its verb.
+    pairs:
+      - target: tinc
+        en: tenir - to have
+      - target: faig
+        en: fer - to do, to make
+      - target: vull
+        en: voler - to want
+      - target: veig
+        en: veure - to see
+      - target: dic
+        en: dir - to say
+  - id: ge-06-8
+    type: chooseTranslation
+    direction: toTarget
+    target: Vull un cafè amb llet.
+    en: I want a coffee with milk.
+    distractorsTarget:
+      - target: Volo un cafè amb llet.
+      - target: Vol un cafè amb llet.
+      - target: Volem un cafè amb llet.
+    distractorsEn: []

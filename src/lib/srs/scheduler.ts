@@ -14,8 +14,8 @@ import {
  */
 export const FSRS_PARAMETERS = generatorParameters({ 
   enable_fuzz: true, 
-  enable_short_term: false,
-  request_retention: 0.85,
+  enable_short_term: true,
+  request_retention: 0.90,
   maximum_interval: 365
 });
 const scheduler = fsrs(FSRS_PARAMETERS);

@@ -13,16 +13,10 @@
     },
     {
       "name": "dev-ca",
-      "runtimeExecutable": "npx",
+      "runtimeExecutable": "npm",
       "runtimeArgs": [
-        "--no-install",
-        "dotenv",
-        "-e",
-        ".env.ca.local",
-        "--",
-        "npm",
         "run",
-        "dev"
+        "dev:ca"
       ],
       "port": 3000,
       "autoPort": true

@@ -1,0 +1,108 @@
+id: c1_08
+title: Clàusules absolutes
+subtitle: Havent dinat, vist el problema
+grammarPoint: Construccions subordinades abreujades formades amb gerundis o participis per expressar temps o causa.
+grammarPointEn: Absolute clauses formed with gerunds or participles to express time or cause.
+slides:
+  - id: s1
+    title: Clàusules absolutes de participi
+    body: "Estan formades per un participi passat seguit d'un substantiu. S'utilitzen per indicar una acció ja finalitzada abans de l'acció principal."
+    examples:
+      - target: Vist el problema, vam decidir canviar de pla.
+        translit: Vist el problema, vam decidir canviar de pla.
+        en: Given the problem, we decided to change the plan.
+        highlight: Vist el problema
+      - target: Acabada la reunió, tothom va marxar.
+        translit: Acabada la reunió, tothom va marxar.
+        en: The meeting finished, everyone left.
+        highlight: Acabada la reunió
+  - id: s2
+    title: Clàusules de gerundi compost
+    body: "Es formen amb 'havent' més un participi. S'usen per indicar accions immediatament anteriors a l'acció del verb principal."
+    examples:
+      - target: Havent dinat, farem una passejada.
+        translit: Havent dinat, farem una passejada.
+        en: Having had lunch, we will take a walk.
+        highlight: Havent dinat
+      - target: Havent arribat a casa, es va posar a ploure.
+        translit: Havent arribat a casa, es va posar a ploure.
+        en: Having arrived home, it started to rain.
+        highlight: Havent arribat
+  - id: s3
+    title: Concordances
+    body: "En les clàusules de participi, el participi concorda en gènere i nombre amb el nom que l'acompanya. En les de gerundi, el participi és invariable."
+    examples:
+      - target: Solucionades les avaries, vam reprendre el viatge.
+        translit: Solucionades les avaries, vam reprendre el viatge.
+        en: The breakdowns solved, we resumed the journey.
+        highlight: Solucionades les avaries
+      - target: Havent vist les pel·lícules, vam comentar-les.
+        translit: Havent vist les pel·lícules, vam comentar-les.
+        en: Having seen the movies, we discussed them.
+        highlight: Havent vist les pel·lícules
+exercises:
+  - id: e1
+    type: fillBlank
+    target: "___ la feina, van anar a fer un beure."
+    translit: "Acabada la feina, van anar a fer un beure."
+    en: "The work finished, they went for a drink."
+    answer:
+      target: Acabada
+      translit: Acabada
+    distractors:
+      - target: Acabat
+        translit: Acabat
+      - target: Havent acabada
+        translit: Havent acabada
+  - id: e2
+    type: fillBlank
+    target: "___ llegit el llibre, el vaig retornar a la biblioteca."
+    translit: "Havent llegit el llibre, el vaig retornar a la biblioteca."
+    en: "Having read the book, I returned it to the library."
+    answer:
+      target: Havent
+      translit: Havent
+    distractors:
+      - target: Havent-hi
+        translit: Havent-hi
+      - target: Vist
+        translit: Vist
+  - id: e3
+    type: fillBlank
+    target: "___ el cas, el jutge va dictar sentència."
+    translit: "Estudiat el cas, el jutge va dictar sentència."
+    en: "The case studied, the judge delivered a sentence."
+    answer:
+      target: Estudiat
+      translit: Estudiat
+    distractors:
+      - target: Estudiada
+        translit: Estudiada
+      - target: Havent estudiada
+        translit: Havent estudiada
+  - id: e4
+    type: fillBlank
+    target: "___ arribat tard, ens vam perdre el principi de la pel·lícula."
+    translit: "Havent arribat tard, ens vam perdre el principi de la pel·lícula."
+    en: "Having arrived late, we missed the beginning of the movie."
+    answer:
+      target: Havent
+      translit: Havent
+    distractors:
+      - target: Havia
+        translit: Havia
+      - target: Haviem
+        translit: Haviem
+  - id: e5
+    type: fillBlank
+    target: "Tancades ___ portes, ja no es pot entrar a l'edifici."
+    translit: "Tancades les portes, ja no es pot entrar a l'edifici."
+    en: "The doors closed, you can no longer enter the building."
+    answer:
+      target: les
+      translit: les
+    distractors:
+      - target: els
+        translit: els
+      - target: la
+        translit: la

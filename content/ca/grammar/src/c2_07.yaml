@@ -1,0 +1,104 @@
+id: c2_07
+title: "Correcció del gerundi: posterioritat i copulatiu"
+subtitle: "Evitant calcs del castellà en l'ús del gerundi"
+grammarPoint: "El gerundi de posterioritat i copulatiu"
+grammarPointEn: "The gerund of posteriority and copulative gerund"
+slides:
+  - id: c2_07_slide_1
+    title: "Què és el gerundi de posterioritat?"
+    body: "En català, el gerundi sempre ha d'expressar una acció simultània o anterior a la del verb principal. No s'ha d'usar per expressar una acció posterior o una conseqüència (un ús freqüent en castellà, l'anomenat 'gerundi de posterioritat'). En lloc d'això, s'usen conjuncions com 'i' o estructures de relatiu."
+    examples:
+      - target: "El lladre va fugir, i va ser detingut hores més tard."
+        translit: "El lladre va fugir, i va ser detingut hores més tard."
+        en: "The thief fled and was arrested hours later."
+        highlight: "i va ser detingut"
+      - target: "La llei es va aprovar el 2010 i va entrar en vigor l'any següent."
+        translit: "La llei es va aprovar el 2010 i va entrar en vigor l'any següent."
+        en: "The law was passed in 2010 and came into effect the following year."
+        highlight: "i va entrar"
+  - id: c2_07_slide_2
+    title: "El gerundi copulatiu (o d'addició)"
+    body: "Tampoc és correcte usar el gerundi com a equivalent de la conjunció copulativa 'i' per afegir informació que no és simultània. Sovint ho corregim amb oracions de relatiu ('que') o simplement canviant el gerundi per un verb conjugat unit per 'i'."
+    examples:
+      - target: "S'ha publicat un decret que regula aquestes activitats."
+        translit: "S'ha publicat un decret que regula aquestes activitats."
+        en: "A decree has been published that regulates these activities."
+        highlight: "que regula"
+      - target: "He rebut una capsa que conté llibres."
+        translit: "He rebut una capsa que conté llibres."
+        en: "I have received a box containing books."
+        highlight: "que conté"
+  - id: c2_07_slide_3
+    title: "Més alternatives al gerundi incorrecte"
+    body: "A part de la coordinació ('i') o la subordinació ('que'), podem recórrer a d'altres connectors temporals i causals per evitar el calc de gerundis espuris."
+    examples:
+      - target: "Va caure per les escales, de manera que es va trencar la cama."
+        translit: "Va caure per les escales, de manera que es va trencar la cama."
+        en: "He fell down the stairs, breaking his leg (so he broke his leg)."
+        highlight: "de manera que es va trencar"
+exercises:
+  - id: c2_07_ex_1
+    type: fillBlank
+    target: "El vaixell va salpar a les cinc, i ___ al port a la nit."
+    translit: "El vaixell va salpar a les cinc, i ___ al port a la nit."
+    en: "The ship set sail at five, arriving at port at night."
+    answer:
+      target: "va arribar"
+      translit: "va arribar"
+    distractors:
+      - target: "arribant"
+        translit: "arribant"
+      - target: "arribar"
+        translit: "arribar"
+  - id: c2_07_ex_2
+    type: fillBlank
+    target: "Van publicar la llista de guanyadors, ___ la sorpresa de tots."
+    translit: "Van publicar la llista de guanyadors, ___ la sorpresa de tots."
+    en: "They published the list of winners, causing everyone's surprise."
+    answer:
+      target: "i va causar"
+      translit: "i va causar"
+    distractors:
+      - target: "causant"
+        translit: "causant"
+      - target: "que causa"
+        translit: "que causa"
+  - id: c2_07_ex_3
+    type: fillBlank
+    target: "Vam veure un avís ___ del perill d'allaus."
+    translit: "Vam veure un avís ___ del perill d'allaus."
+    en: "We saw a notice warning of the danger of avalanches."
+    answer:
+      target: "que advertia"
+      translit: "que advertia"
+    distractors:
+      - target: "advertint"
+        translit: "advertint"
+      - target: "i advertia"
+        translit: "i advertia"
+  - id: c2_07_ex_4
+    type: fillBlank
+    target: "Va entrar a la universitat el 2015, ___ el 2019."
+    translit: "Va entrar a la universitat el 2015, ___ el 2019."
+    en: "He entered university in 2015, graduating in 2019."
+    answer:
+      target: "i es va graduar"
+      translit: "i es va graduar"
+    distractors:
+      - target: "graduant-se"
+        translit: "graduant-se"
+      - target: "que es va graduar"
+        translit: "que es va graduar"
+  - id: c2_07_ex_5
+    type: fillBlank
+    target: "M'han portat un paquet ___ el nou ordinador."
+    translit: "M'han portat un paquet ___ el nou ordinador."
+    en: "They brought me a package containing the new computer."
+    answer:
+      target: "que conté"
+      translit: "que conté"
+    distractors:
+      - target: "contenint"
+        translit: "contenint"
+      - target: "i conté"
+        translit: "i conté"

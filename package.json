@@ -3,23 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "export:schemas": "node scripts/export-schemas.ts",
-    "validate:content": "node scripts/validate-content.ts",
     "build:lexicon": "node scripts/build-lexicon.ts",
     "build:texts": "node scripts/build-seed-texts.ts",
-    "test": "vitest run",
-    "typecheck": "tsc --noEmit",
-    "seed": "node --env-file=.env.local scripts/seed.ts",
-    "validate:db": "node --env-file=.env.local scripts/validate-db.ts",
-    "smoke": "node --env-file=.env.local scripts/smoke-prod.ts",
+    "dev": "next dev",
+    "dev:ca": "sh -c 'set -a; . ./.env.ca.local; set +a; NEXT_PUBLIC_TARGET_LANG=ca exec next dev'",
+    "export:schemas": "node scripts/export-schemas.ts",
     "link:content": "node scripts/link-content.ts",
+    "lint": "eslint",
     "prebuild": "node scripts/link-content.ts",
     "predev": "node scripts/link-content.ts",
-    "pretest": "node scripts/link-content.ts"
+    "predev:ca": "NEXT_PUBLIC_TARGET_LANG=ca node scripts/link-content.ts",
+    "seed": "node --env-file=.env.local scripts/seed.ts",
+    "smoke": "node --env-file=.env.local scripts/smoke-prod.ts",
+    "start": "next start",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "validate:content": "node scripts/validate-content.ts",
+    "validate:db": "node --env-file=.env.local scripts/validate-db.ts"
   },
   "dependencies": {
     "@number-flow/react": "^0.6.2",
@@ -53,7 +54,8 @@
     "sharp": "^0.35.3",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "yaml": "^2.9.0"
   },
   "type": "module"
 }

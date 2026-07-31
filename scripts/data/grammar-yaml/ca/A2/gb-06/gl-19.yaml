@@ -1,0 +1,146 @@
+id: gl-19
+title: The future
+subtitle: Built on the infinitive, so it is almost free.
+grammarPoint: future-indicative
+grammarPointEn: the future built on the full infinitive, with the shortened
+  stems of the common irregular verbs
+slides:
+  - id: gs-19-1
+    title: Add the endings to the whole infinitive
+    body: The endings are the same for all three conjugations, so there is only one
+      set to learn.
+    examples:
+      - target: Demà parlaré amb ella.
+        en: Tomorrow I'll speak with her.
+      - target: Arribaran a les vuit.
+        en: They'll arrive at eight.
+    table:
+      - - jo
+        - parlaré
+      - - tu
+        - parlaràs
+      - - ell, ella
+        - parlarà
+      - - nosaltres
+        - parlarem
+      - - vosaltres
+        - parlareu
+      - - ells, elles
+        - parlaran
+  - id: gs-19-2
+    title: A few stems shorten
+    body: The most common verbs lose a syllable, but the endings never change.
+    examples:
+      - target: Tindré temps demà.
+        en: I'll have time tomorrow.
+      - target: Farem el sopar junts.
+        en: We'll make dinner together.
+    table:
+      - - tenir
+        - tindré
+      - - venir
+        - vindré
+      - - fer
+        - faré
+      - - poder
+        - podré
+      - - voler
+        - voldré
+      - - saber
+        - sabré
+      - - anar
+        - aniré
+      - - ser
+        - seré
+  - id: gs-19-3
+    title: For something about to happen
+    body: Catalan does not use anar a + infinitive for the future the way Spanish
+      uses ir a - that is a calque, and va menjar already means "he ate". Use
+      the future tense, or estar a punt de for imminence.
+    examples:
+      - target: Ara estic a punt de menjar.
+        en: I'm about to eat.
+      - target: Demà menjaré a casa.
+        en: Tomorrow I'll eat at home.
+exercises:
+  - id: ge-19-1
+    type: fillBlank
+    target: Demà ___ a la platja.
+    en: Tomorrow I'll go to the beach.
+    answer:
+      target: aniré
+    distractors:
+      - target: vaig
+      - target: anava
+      - target: aniria
+  - id: ge-19-2
+    type: fillBlank
+    target: ___ temps la setmana que ve.
+    en: I'll have time next week.
+    answer:
+      target: Tindré
+    distractors:
+      - target: Tinc
+      - target: Tenia
+      - target: Tindria
+  - id: ge-19-3
+    type: fillBlank
+    target: Ells ___ demà al matí.
+    en: They will arrive tomorrow morning.
+    answer:
+      target: arribaran
+    distractors:
+      - target: arriben
+      - target: arribaven
+      - target: arribarien
+  - id: ge-19-4
+    type: fillBlank
+    target: Nosaltres ___ el sopar.
+    en: We will make dinner.
+    answer:
+      target: farem
+    distractors:
+      - target: fem
+      - target: fèiem
+      - target: faríem
+  - id: ge-19-5
+    type: fillBlank
+    target: Ella ___ venir dissabte.
+    en: She will be able to come on Saturday.
+    answer:
+      target: podrà
+    distractors:
+      - target: pot
+      - target: podia
+      - target: podria
+  - id: ge-19-6
+    type: spotError
+    target: Demà teniré molta feina.
+    en: Tomorrow I'll have a lot of work.
+    errorWord:
+      target: teniré
+    correction:
+      target: tindré
+    correctedTarget: Demà tindré molta feina.
+  - id: ge-19-7
+    type: matchPairs
+    prompt: Match each verb with its future stem.
+    pairs:
+      - target: tenir
+        en: tindré
+      - target: venir
+        en: vindré
+      - target: fer
+        en: faré
+      - target: voler
+        en: voldré
+  - id: ge-19-8
+    type: chooseTranslation
+    direction: toEn
+    target: Aniré a Girona el dilluns.
+    en: I will go to Girona on Monday.
+    distractorsEn:
+      - I go to Girona on Mondays.
+      - I went to Girona on Monday.
+      - I would go to Girona on Monday.
+    distractorsTarget: []

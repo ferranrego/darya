@@ -45,3 +45,7 @@ next-env.d.ts
 
 # Points at the active language's content; written by scripts/link-content.ts
 content/active
+
+# Raw corpora for scripts/build-frequency.ts (tens of MB, re-fetch with --download).
+# The derived ranking in scripts/data/freq-*.tsv IS committed.
+/scripts/data/corpus/

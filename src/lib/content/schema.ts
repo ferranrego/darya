@@ -46,7 +46,7 @@ const optionalTranslit = translitText.optional();
  */
 export const contentLanguageSchema = z.enum(["prs", "ca"]);
 
-export const FREQ_BAND_COUNT = 8;
+export const FREQ_BAND_COUNT = 10;
 
 /** 1 = ~100 most frequent words … 8 = rare/literary. */
 export const freqBandSchema = z.number().int().min(1).max(FREQ_BAND_COUNT);
@@ -390,7 +390,7 @@ export const grammarLessonSchema = z.object({
   /** One-line English description of the point; reused verbatim in AI prompts. */
   grammarPointEn: z.string().min(1),
   slides: z.array(grammarSlideSchema).min(1).max(5),
-  exercises: z.array(grammarExerciseSchema).min(6).max(12),
+  exercises: z.array(grammarExerciseSchema).min(5).max(12),
 });
 
 export const grammarBlockSchema = z.object({
@@ -442,12 +442,30 @@ export const levelSchema = z.object({
   cefrHint: z.string().min(1),
   /** Frequency bands a text at this level may draw from. */
   freqBands: z.array(freqBandSchema).min(1),
-  /** Known-word count at which a learner typically enters this level. */
+  /**
+   * Known-word count at which a learner typically enters this level.
+   *
+   * Read as a `freqRank` cutoff: entering a level means knowing every lexeme
+   * ranked at or below this. It is kept equal to the top rank of the highest
+   * band the *previous* level could draw from, so a learner arrives knowing
+   * exactly what the level below was able to teach them. `levels.test.ts`
+   * asserts that, because when the two drift the reader silently runs out of
+   * showable texts.
+   */
   entryKnownWords: z.number().int().min(0),
   /** Sentence count range for generated texts. */
   sentenceRange: z.tuple([z.number().int().positive(), z.number().int().positive()]),
   /** Words per sentence guidance for the generator. */
   sentenceLengthHint: z.string().min(1),
+  /**
+   * Typical words per sentence at this level, used to size a text in tokens.
+   *
+   * The new-word count is a share of running words, so it needs a token
+   * estimate. That estimate used to be a hardcoded 7 for every level, which is
+   * roughly right at L1 and wrong by four times at L8, where the same level's
+   * own hint allows 30 words per sentence.
+   */
+  avgSentenceWords: z.number().int().positive(),
   /** Grammar the generator may use at this level (prompt constraints). */
   grammarAllowed: z.array(z.string()),
 });

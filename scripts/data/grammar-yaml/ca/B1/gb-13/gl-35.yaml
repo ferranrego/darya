@@ -1,0 +1,97 @@
+id: gl-35
+title: "Pronoms relatius: on i el qual"
+subtitle: "Relative pronouns: on, el qual, la qual..."
+grammarPoint: Ús d'on i el qual
+grammarPointEn: Usage of on and el qual
+slides:
+  - slideId: gl-35-s1
+    title: El pronom relatiu 'on'
+    content: >-
+      S'utilitza per indicar lloc (equivaleix a 'en el qual', 'a la qual',
+      etc.). Pot anar acompanyat de preposicions com *a*, *cap a*, *de*, *des
+      de*, *per*.
+
+
+      Exemples:
+
+      - El poble **on** vaig néixer és petit.
+
+      - La ciutat **d'on** vinc és molt bonica.
+    id: gs-35-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - slideId: gl-35-s2
+    title: Els pronoms 'el qual', 'la qual', 'els quals', 'les quals'
+    content: >-
+      Generalment s'utilitzen darrere de preposició forta (damunt, sota, contra,
+      durant...) o preposicions compostes. També s'usen per evitar ambigüitats
+      en oracions explicatives.
+
+
+      Exemples:
+
+      - L'edifici davant **del qual** ens vam trobar.
+
+      - La raó per **la qual** no vinc és que estic malalt.
+    id: gs-35-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-35-1
+    type: fillBlank
+    target: Aquesta és la casa ___ vaig viure d'infant.
+    en: This is the house where I lived as a child.
+    answer:
+      target: on
+    distractors:
+      - target: la qual
+      - target: que
+  - id: ge-35-2
+    type: fillBlank
+    target: Les condicions sota ___ treballem són dures.
+    en: The conditions under which we work are hard.
+    answer:
+      target: les quals
+    distractors:
+      - target: que
+      - target: on
+  - id: ge-35-3
+    type: fillBlank
+    target: El carrer ___ visc és estret.
+    en: The street where I live is narrow.
+    answer:
+      target: on
+    distractors:
+      - target: el qual
+      - target: que
+  - id: ge-35-4
+    type: fillBlank
+    target: És el motiu per ___ no volia venir.
+    en: It's the reason for which he didn't want to come.
+    answer:
+      target: el qual
+    distractors:
+      - target: que
+      - target: qui
+  - id: ge-35-5
+    type: fillBlank
+    target: La reunió, durant ___, no vaig dir res, va ser molt llarga.
+    en: The meeting, during which I said nothing, was very long.
+    answer:
+      target: la qual
+    distractors:
+      - target: que
+      - target: on
+  - id: ge-35-6
+    type: fillBlank
+    target: La reunió, durant ___, no vaig dir res, va ser molt llarga.
+    en: The meeting, during which I said nothing, was very long.
+    answer:
+      target: la qual
+    distractors:
+      - target: que
+      - target: on

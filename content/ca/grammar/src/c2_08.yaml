@@ -1,0 +1,108 @@
+id: c2_08
+title: "El 'que' gal·licat i oracions relatives"
+subtitle: "Poliment d'estructures subestàndard"
+grammarPoint: "El que gal·licat i oracions de relatiu partitives"
+grammarPointEn: "The gallicized 'que' and partitive relative clauses"
+slides:
+  - id: c2_08_slide_1
+    title: "El 'que' gal·licat"
+    body: "En català genuí, s'ha d'evitar la construcció gal·licada 'ser + el qui / el que' (calc de *c'est ... qui/que*). Normalment es resol destacant l'element enfàtic al principi o al final sense el verb 'ser', o bé amb l'estructura pronominal corresponent, però evitant els circumloquis excessius."
+    examples:
+      - target: "Soc jo qui ho ha de fer."
+        translit: "Soc jo qui ho ha de fer."
+        en: "I am the one who has to do it."
+        highlight: "Soc jo qui"
+      - target: "Ho he comprat avui. (Millor que: És avui que ho he comprat)."
+        translit: "Ho he comprat avui."
+        en: "I bought it today."
+        highlight: "Ho he comprat"
+  - id: c2_08_slide_2
+    title: "Estructures de relleu"
+    body: "Per emfatitzar, en lloc del 'que' gal·licat ('És aquí on visc'), és més tradicional i recomanable utilitzar l'oració simple posant èmfasi, o recórrer a expressions adients ('Aquí és on visc')."
+    examples:
+      - target: "Aquí és on vaig néixer."
+        translit: "Aquí és on vaig néixer."
+        en: "This is where I was born."
+        highlight: "Aquí és on"
+      - target: "D'això ens queixem!"
+        translit: "D'això ens queixem!"
+        en: "That is what we complain about!"
+        highlight: "D'això"
+  - id: c2_08_slide_3
+    title: "Oracions de relatiu partitives"
+    body: "Quan el relatiu substitueix un complement introduït per la preposició 'de' (són de partitius, quantificadors, etc.), és correcte usar 'del qual', 'dels quals', etc., o bé la conjunció 'que' combinada amb el pronom feble 'en'."
+    examples:
+      - target: "Són llibres dels quals he llegit la meitat."
+        translit: "Són llibres dels quals he llegit la meitat."
+        en: "They are books of which I have read half."
+        highlight: "dels quals"
+      - target: "Són llibres que n'he llegit la meitat."
+        translit: "Són llibres que n'he llegit la meitat."
+        en: "They are books that I have read half of."
+        highlight: "que n'"
+exercises:
+  - id: c2_08_ex_1
+    type: fillBlank
+    target: "___ que ho he de decidir."
+    translit: "___ que ho he de decidir."
+    en: "I am the one who has to decide it."
+    answer:
+      target: "Soc jo"
+      translit: "Soc jo"
+    distractors:
+      - target: "És a mi"
+        translit: "És a mi"
+      - target: "És jo"
+        translit: "És jo"
+  - id: c2_08_ex_2
+    type: fillBlank
+    target: "L'estiu ___ hi ha més turistes."
+    translit: "L'estiu ___ hi ha més turistes."
+    en: "Summer is when there are more tourists."
+    answer:
+      target: "és quan"
+      translit: "és quan"
+    distractors:
+      - target: "és que"
+        translit: "és que"
+      - target: "que"
+        translit: "que"
+  - id: c2_08_ex_3
+    type: fillBlank
+    target: "He comprat pomes, ___ algunes són verdes."
+    translit: "He comprat pomes, ___ algunes són verdes."
+    en: "I bought apples, of which some are green."
+    answer:
+      target: "de les quals"
+      translit: "de les quals"
+    distractors:
+      - target: "de les que"
+        translit: "de les que"
+      - target: "que d'elles"
+        translit: "que d'elles"
+  - id: c2_08_ex_4
+    type: fillBlank
+    target: "Aquesta és la casa ___ vam parlar ahir."
+    translit: "Aquesta és la casa ___ vam parlar ahir."
+    en: "This is the house of which we spoke yesterday."
+    answer:
+      target: "de la qual"
+      translit: "de la qual"
+    distractors:
+      - target: "de la que"
+        translit: "de la que"
+      - target: "que"
+        translit: "que"
+  - id: c2_08_ex_5
+    type: fillBlank
+    target: "___ ens preocupem de debò!"
+    translit: "___ ens preocupem de debò!"
+    en: "This is what we really worry about!"
+    answer:
+      target: "Per això"
+      translit: "Per això"
+    distractors:
+      - target: "És per això que"
+        translit: "És per això que"
+      - target: "Per allò que"
+        translit: "Per allò que"

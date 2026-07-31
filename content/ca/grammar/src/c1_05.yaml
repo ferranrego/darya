@@ -1,0 +1,108 @@
+id: c1_05
+title: Dislocació i topicalització
+subtitle: El llibre, el llegiré demà
+grammarPoint: L'ús de la dislocació a la dreta i a l'esquerra per emfasitzar elements de l'oració.
+grammarPointEn: Using left and right dislocation to emphasize sentence elements.
+slides:
+  - id: s1
+    title: Topicalització (Dislocació a l'esquerra)
+    body: "La dislocació a l'esquerra s'utilitza per destacar un element avançant-lo al principi de l'oració. Aquest element es reprèn amb un pronom feble."
+    examples:
+      - target: El llibre, el llegiré demà.
+        translit: El llibre, el llegiré demà.
+        en: The book, I will read it tomorrow.
+        highlight: El llibre, el
+      - target: A la Maria, li he comprat un regal.
+        translit: A la Maria, li he comprat un regal.
+        en: To Maria, I bought her a gift.
+        highlight: A la Maria, li
+  - id: s2
+    title: Dislocació a la dreta
+    body: "La dislocació a la dreta s'usa per aclarir el referent d'un pronom feble col·locant l'element al final de l'oració, separat per una coma."
+    examples:
+      - target: El llegiré demà, el llibre.
+        translit: El llegiré demà, el llibre.
+        en: I will read it tomorrow, the book.
+        highlight: el, el llibre
+      - target: Li he comprat un regal, a la Maria.
+        translit: Li he comprat un regal, a la Maria.
+        en: I bought her a gift, to Maria.
+        highlight: Li, a la Maria
+  - id: s3
+    title: La coma en la dislocació
+    body: "L'element dislocat sempre va separat de la resta de l'oració per una coma. Sense el pronom feble corresponent, l'oració seria incorrecta."
+    examples:
+      - target: Les claus, les he deixat sobre la taula.
+        translit: Les claus, les he deixat sobre la taula.
+        en: The keys, I left them on the table.
+        highlight: Les claus, les
+      - target: D'això, no en vull parlar.
+        translit: D'això, no en vull parlar.
+        en: About that, I don't want to talk.
+        highlight: D'això, no en
+exercises:
+  - id: e1
+    type: fillBlank
+    target: "La carpeta, ___ portaré demà."
+    translit: "La carpeta, la portaré demà."
+    en: "The folder, I will bring it tomorrow."
+    answer:
+      target: la
+      translit: la
+    distractors:
+      - target: el
+        translit: el
+      - target: li
+        translit: li
+  - id: e2
+    type: fillBlank
+    target: "Als meus pares, ___ agrada viatjar."
+    translit: "Als meus pares, els agrada viatjar."
+    en: "My parents, they like to travel."
+    answer:
+      target: els
+      translit: els
+    distractors:
+      - target: les
+        translit: les
+      - target: l'
+        translit: l'
+  - id: e3
+    type: fillBlank
+    target: "De pomes, no ___ queden."
+    translit: "De pomes, no en queden."
+    en: "Apples, there are none left."
+    answer:
+      target: en
+      translit: en
+    distractors:
+      - target: ho
+        translit: ho
+      - target: hi
+        translit: hi
+  - id: e4
+    type: fillBlank
+    target: "Això, no ___ sabia pas."
+    translit: "Això, no ho sabia pas."
+    en: "This, I did not know it."
+    answer:
+      target: ho
+      translit: ho
+    distractors:
+      - target: el
+        translit: el
+      - target: en
+        translit: en
+  - id: e5
+    type: fillBlank
+    target: "A la platja, ___ anirem el cap de setmana."
+    translit: "A la platja, hi anirem el cap de setmana."
+    en: "To the beach, we will go there on the weekend."
+    answer:
+      target: hi
+      translit: hi
+    distractors:
+      - target: en
+        translit: en
+      - target: ho
+        translit: ho

@@ -1,0 +1,141 @@
+id: gl-05
+title: The present tense
+subtitle: Three conjugations, and one of them splits in two.
+grammarPoint: present-indicative
+grammarPointEn: present indicative of the three conjugations, including the
+  incoative -eix- type used by most -ir verbs
+slides:
+  - id: gs-05-1
+    title: Verbs come in three families
+    body: "The infinitive ending tells you which endings to use: -ar, -er and -re,
+      or -ir."
+    examples:
+      - target: Parlo català a casa.
+        en: I speak Catalan at home.
+      - target: Perdem molt de temps.
+        en: We waste a lot of time.
+      - target: Dormo vuit hores.
+        en: I sleep eight hours.
+    table:
+      - - parlar
+        - parlo, parles, parla, parlem, parleu, parlen
+      - - perdre
+        - perdo, perds, perd, perdem, perdeu, perden
+      - - dormir
+        - dormo, dorms, dorm, dormim, dormiu, dormen
+  - id: gs-05-2
+    title: Most -ir verbs insert -eix-
+    body: "This is the majority pattern, so treat it as the default for -ir and
+      learn the short list that skips it: dormir, sortir, obrir, sentir, morir."
+    examples:
+      - target: Serveixen el dinar a la una.
+        en: They serve lunch at one.
+      - target: Prefereixo el te.
+        en: I prefer tea.
+    table:
+      - - jo
+        - serveixo
+      - - tu
+        - serveixes
+      - - ell, ella
+        - serveix
+      - - nosaltres
+        - servim
+      - - vosaltres
+        - serviu
+      - - ells, elles
+        - serveixen
+  - id: gs-05-3
+    title: The subject pronoun is usually left out
+    body: The ending already says who, so jo, tu and ella appear only for emphasis
+      or contrast.
+    examples:
+      - target: Treballo a Girona.
+        en: I work in Girona.
+      - target: Jo treballo, ell no.
+        en: I work, he doesn't.
+exercises:
+  - id: ge-05-1
+    type: fillBlank
+    target: Jo ___ català cada dia.
+    en: I speak Catalan every day.
+    answer:
+      target: parlo
+    distractors:
+      - target: parles
+      - target: parla
+      - target: parlem
+  - id: ge-05-2
+    type: fillBlank
+    target: Ella ___ vuit hores.
+    en: She sleeps eight hours.
+    answer:
+      target: dorm
+    distractors:
+      - target: dormo
+      - target: dorms
+      - target: dormim
+  - id: ge-05-3
+    type: fillBlank
+    target: Nosaltres ___ a Barcelona.
+    en: We work in Barcelona.
+    answer:
+      target: treballem
+    distractors:
+      - target: treballo
+      - target: treballa
+      - target: treballen
+  - id: ge-05-4
+    type: fillBlank
+    target: Jo ___ el te al cafè.
+    en: I prefer tea to coffee.
+    answer:
+      target: prefereixo
+    distractors:
+      - target: prefereix
+      - target: preferim
+      - target: preferiu
+  - id: ge-05-5
+    type: spotError
+    target: Jo dormeixo molt bé.
+    en: I sleep very well.
+    errorWord:
+      target: dormeixo
+    correction:
+      target: dormo
+    hint: dormir is one of the -ir verbs without -eix-.
+    correctedTarget: Jo dormo molt bé.
+  - id: ge-05-6
+    type: matchPairs
+    prompt: Match each verb with its "we" form.
+    pairs:
+      - target: parlem
+        en: we speak
+      - target: perdem
+        en: we lose
+      - target: dormim
+        en: we sleep
+      - target: servim
+        en: we serve
+  - id: ge-05-7
+    type: buildSentence
+    en: We eat at home every day.
+    words:
+      - target: Mengem
+      - target: a
+      - target: casa
+      - target: cada
+      - target: dia
+    extraWords:
+      - target: menjo
+      - target: mengen
+  - id: ge-05-8
+    type: chooseTranslation
+    direction: toEn
+    target: Els nens llegeixen molt.
+    en: The children read a lot.
+    distractorsEn:
+      - The child reads a lot.
+      - The children write a lot.
+      - The children read little.
+    distractorsTarget: []

@@ -1,11 +1,35 @@
 import { NextResponse } from "next/server";
 import { generateText, vocabHash } from "@/lib/ai/generate";
 import { levels, lexicon, levelById } from "@/lib/content/load";
+import type { LexiconEntry, Level } from "@/lib/content/schema";
 import { assumedKnown } from "@/lib/content/text-pool";
 import { insertGeneratedText } from "@/lib/db/texts";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
 
 export const maxDuration = 60;
+
+/**
+ * How many known words the model is shown, by level.
+ *
+ * This was a flat `.slice(0, 160)` taken in lexicon order, which is two bugs at
+ * once. A learner who knows three thousand words was described to the model as
+ * knowing an arbitrary hundred and sixty of them, so upper-level texts came out
+ * unnaturally impoverished - and, worse, the model had to reach outside the
+ * list to say anything at all, which inflated the out-of-vocabulary rate that
+ * the pool then measures the text against. Loosening the OOV gate was the old
+ * workaround; giving the model the vocabulary the learner actually has is the
+ * fix.
+ *
+ * The cap is not unbounded: the list is prompt context on a free tier, and past
+ * a few hundred words the model stops reading it carefully. Words are taken in
+ * frequency order so the ones it does read are the ones worth reusing.
+ */
+function knownWordBudget(known: LexiconEntry[], level: Level): LexiconEntry[] {
+  // Roughly the level's own vocabulary size, floored so early levels still get
+  // enough to write with and ceilinged so the prompt stays affordable.
+  const budget = Math.max(160, Math.min(600, Math.round(level.entryKnownWords * 0.5) || 160));
+  return known.slice(0, budget);
+}
 
 /**
  * Ensure the signed-in user has at least `want` unread texts at their level.
@@ -76,7 +100,9 @@ export async function POST(req: Request) {
   );
 
   const inBand = lexicon.entries.filter((e) => level.freqBands.includes(e.freqBand));
-  const knownWords = inBand.filter((e) => knownIds.has(e.id));
+  const knownWords = inBand
+    .filter((e) => knownIds.has(e.id))
+    .sort((a, b) => a.freqRank - b.freqRank);
   const newWords = inBand
     .filter((e) => !knownIds.has(e.id))
     .sort((a, b) => a.freqRank - b.freqRank);
@@ -86,10 +112,14 @@ export async function POST(req: Request) {
   const effectiveKnown = knownWords.length >= 40 ? knownWords : inBand.slice(0, 60);
 
   const ratio = profile.new_word_ratio ?? 0.05;
-  const avgSentenceWords = 7;
+  // Sentences get longer with level, so a fixed 7 under-counted the token
+  // budget at the top and over-counted it at the bottom. `sentenceLengthHint`
+  // carries the real cap in prose; its midpoint is close enough and moves in
+  // the right direction.
+  const avgSentenceWords = Math.round((level.sentenceRange[0] + level.sentenceRange[1]) / 2) + 4;
   const expectedTokens = ((level.sentenceRange[0] + level.sentenceRange[1]) / 2) * avgSentenceWords;
   const targetCount = Math.max(2, Math.min(15, Math.round(expectedTokens * ratio)));
-  
+
   const candidateTargetWords = newWords.slice(0, targetCount * 3);
   const targetWords = candidateTargetWords
     .sort(() => Math.random() - 0.5)
@@ -98,7 +128,7 @@ export async function POST(req: Request) {
   try {
     const doc = await generateText({
       level,
-      knownWords: effectiveKnown.slice(0, 160),
+      knownWords: knownWordBudget(effectiveKnown, level),
       targetWords,
       newWordRatio: ratio,
       theme,

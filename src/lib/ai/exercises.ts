@@ -11,6 +11,7 @@ import { shuffle } from "../util/shuffle";
 import { completeJson } from "./providers";
 import { assertKnownVocab } from "./vocab-check";
 import { profile } from "../lang/index.ts";
+import { LANGUAGE_NAME, TRANSLITERATED, wordList } from "./lang-format.ts";
 
 const MAX_SENTENCE_WORDS = 10;
 
@@ -25,7 +26,7 @@ export interface ExerciseGenerationRequest {
   count: number;
   /** Scenario/theme to set the exercises in, e.g. "at the bazaar". */
   theme?: string;
-  /** Dari sentences from recent exercises the model must not reuse. */
+  /** Target-language sentences from recent exercises the model must not reuse. */
   avoidSentences?: string[];
 }
 
@@ -51,13 +52,9 @@ function randomTypeMix(count: number): Record<"cloze" | "realia" | "grammar_dete
 }
 
 function buildPrompt(req: ExerciseGenerationRequest): string {
-  const known = shuffle(req.knownWords).map((w) => `${w.target} (${w.translit})`).join("، ");
-  const learning = req.learningTargets
-    .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
-    .join("، ");
-  const fresh = req.newTargets
-    .map((w) => `${w.target} (${w.translit} = ${w.glossEn})`)
-    .join("، ");
+  const known = wordList(shuffle(req.knownWords));
+  const learning = wordList(req.learningTargets, true);
+  const fresh = wordList(req.newTargets, true);
 
   const mix = randomTypeMix(req.count);
   const mixLine = Object.entries(mix)
@@ -73,12 +70,12 @@ Generate exactly ${req.count} exercises for a student at level ${req.level}: ${m
 ${req.theme ? `Set the exercises in this scenario/theme where it fits naturally: ${req.theme}.` : ""}
 
 Types of exercises:
-1. "cloze": A SHORT fill-in-the-blank sentence (3-6 words maximum). "sentenceTarget" MUST be the COMPLETE sentence containing the missing word - do NOT replace it with blanks, underscores, or dots (the UI renders the blank itself). "missingWord" must appear verbatim in "sentenceTarget". Provide the missing word, its English translation ("missingEn"), and 3 wrong distractors (must be valid Dari words but wrong for the context).
-2. "realia": A short Markdown document (like a menu or sign in Dari) and a multiple-choice question in English about it.
+1. "cloze": A SHORT fill-in-the-blank sentence (3-6 words maximum). "sentenceTarget" MUST be the COMPLETE sentence containing the missing word - do NOT replace it with blanks, underscores, or dots (the UI renders the blank itself). "missingWord" must appear verbatim in "sentenceTarget". Provide the missing word, its English translation ("missingEn"), and 3 wrong distractors (must be valid ${LANGUAGE_NAME} words but wrong for the context).
+2. "realia": A short Markdown document (like a menu or sign in ${LANGUAGE_NAME}) and a multiple-choice question in English about it.
 3. "grammar_detective": Two sentences: one grammatically correct and one with a common error. Provide an English explanation.
 
 STRICT VOCABULARY AND NATURALNESS CONSTRAINT:
-- MAKE SURE ALL SENTENCES ARE 100% NATURAL AND IDIOMATIC IN DARI. Do NOT generate awkward or word-for-word translated sentences (e.g. do not literally translate "I go to him at home").
+- MAKE SURE ALL SENTENCES ARE 100% NATURAL AND IDIOMATIC IN ${LANGUAGE_NAME.toUpperCase()}. Do NOT generate awkward or word-for-word translated sentences (e.g. do not literally translate "I go to him at home").
 ${learning ? `- WORDS THE STUDENT IS CURRENTLY STUDYING - each exercise must test one of these as its focus (e.g. as the cloze missing word): ${learning}` : ""}
 ${fresh ? `- Brand-new words to introduce gently in one or two exercises: ${fresh}` : ""}
 - You should primarily use these words the learner already knows: ${known}
@@ -90,9 +87,9 @@ ${avoid.length > 0 ? `\nDo NOT reuse or closely paraphrase any of these previous
 Return ONLY JSON with this exact shape:
 {
   "exercises": [
-    { "type": "cloze", "sentenceTarget": "...", "sentenceTranslit": "...", "sentenceEn": "...", "missingWord": "...", "missingTranslit": "...", "missingEn": "...", "distractors": ["...", "..."] },
+    { "type": "cloze", "sentenceTarget": "...", ${TRANSLITERATED ? '"sentenceTranslit": "...", ' : ""}"sentenceEn": "...", "missingWord": "...", ${TRANSLITERATED ? '"missingTranslit": "...", ' : ""}"missingEn": "...", "distractors": ["...", "..."] },
     { "type": "realia", "documentType": "Menu", "markdown": "...", "questionEn": "...", "optionsEn": ["..."], "correctOptionIndex": 0 },
-    { "type": "grammar_detective", "correctSentenceTarget": "...", "correctSentenceTranslit": "...", "incorrectSentenceTarget": "...", "incorrectSentenceTranslit": "...", "explanationEn": "..." }
+    { "type": "grammar_detective", "correctSentenceTarget": "...", ${TRANSLITERATED ? '"correctSentenceTranslit": "...", ' : ""}"incorrectSentenceTarget": "...", ${TRANSLITERATED ? '"incorrectSentenceTranslit": "...", ' : ""}"explanationEn": "..." }
   ]
 }`;
 }
@@ -134,9 +131,9 @@ function checkItem(ex: ExerciseData) {
 }
 
 /**
- * The target lexemes an exercise actually practices: tokenize its Dari text,
- * resolve through the lexicon index (robust to inflected forms), and keep the
- * ids that are in `targetIds`.
+ * The target lexemes an exercise actually practices: tokenize its target-language
+ * text, resolve through the lexicon index (robust to inflected forms), and keep
+ * the ids that are in `targetIds`.
  */
 export function taggedLexemes(ex: ExerciseData, targetIds: Set<string>): string[] {
   const texts: string[] = [];

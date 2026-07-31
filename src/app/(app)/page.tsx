@@ -50,9 +50,22 @@ function useTodayXp() {
 }
 
 /** Deterministic first paint (avoids a clock-based hydration mismatch). */
-const TOD_DEFAULT: TimeOfDay = { phase: "day", greeting: "Salām", restPose: "greet", isNight: false };
+const TOD_DEFAULT: TimeOfDay = { phase: "day", greeting: lang.samples.phaseGreetings.day, restPose: "greet", isNight: false };
 
 type ActionKey = "alphabet" | "grammar" | "read" | "review" | "journey" | "practice";
+
+/**
+ * The keys `heroKey` can actually take, and therefore the only ones `CTAS`
+ * needs an entry for.
+ *
+ * `CTAS` used to be keyed by the full `ActionKey`, which quietly required two
+ * entries that nothing could ever render - and one of them pointed at
+ * `/practice`, a route that does not exist. Nobody saw a 404, because the
+ * Practice tile in the shelf carries its own hardcoded `/review?mode=practice`,
+ * but the unreachable entry read like a live link. Narrowing the key makes the
+ * dead entry a type error instead of a plausible-looking one.
+ */
+type HeroKey = Extract<ActionKey, "alphabet" | "grammar" | "read" | "review">;
 
 export default function HomePage() {
   const { data: profile } = useProfile();
@@ -117,14 +130,14 @@ export default function HomePage() {
   const grammarHint = grammarComplete
     ? `All ${activeLessons.length} lessons done`
     : `${currentGrammarLevel} · ${completedLessons} of ${activeLessons.length} lessons`;
-  const heroKey: ActionKey = showAlphabet
+  const heroKey: HeroKey = showAlphabet
     ? "alphabet"
     : dueCount > 0
       ? "review"
       : !grammarComplete
         ? "grammar"
         : "read";
-  const CTAS: Record<ActionKey, HeroCta> = {
+  const CTAS: Record<HeroKey, HeroCta> = {
     alphabet: {
       href: "/alphabet",
       label: `Learn to read ${lang.name}`,
@@ -137,8 +150,6 @@ export default function HomePage() {
     },
     grammar: { href: "/grammar", label: "Continue Grammar", hint: grammarHint },
     read: { href: "/read", label: "Start today's reading", hint: `${levelLabel(profile?.level_estimate)} · tuned to you` },
-    practice: { href: "/practice", label: "AI Practice", hint: "Converse and practice" },
-    journey: { href: "/journey", label: "Journey Map", hint: "Your path" },
   };
   const heroPose: PonchaPose = goalMet ? "celebrate" : tod.restPose;
 

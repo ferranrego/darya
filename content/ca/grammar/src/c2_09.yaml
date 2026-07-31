@@ -1,0 +1,108 @@
+id: c2_09
+title: "Verbs de règim fix i pronominalització"
+subtitle: "Canvis de règim i selecció de pronoms"
+grammarPoint: "Verbs de règim fix i canvis de pronominalització"
+grammarPointEn: "Fixed-regimen verbs and pronominalization changes"
+slides:
+  - id: c2_09_slide_1
+    title: "Verbs amb canvi de règim respecte al castellà"
+    body: "Hi ha verbs que en català tenen un règim de complement diferent. Un dels casos més clars és 'trucar'. En català estàndard, 'trucar' es pot utilitzar com a transitiu (trucar algú) i també com a intransitiu (trucar a algú), però cal parar atenció en la pronominalització: 'la truco' (CD) o 'li truco' (CI)."
+    examples:
+      - target: "He de trucar la Maria i explicar-li-ho."
+        translit: "He de trucar la Maria i explicar-li-ho."
+        en: "I have to call Maria and explain it to her."
+        highlight: "trucar la Maria"
+      - target: "Ja la trucaré demà."
+        translit: "Ja la trucaré demà."
+        en: "I'll call her tomorrow."
+        highlight: "la trucaré"
+  - id: c2_09_slide_2
+    title: "Altres verbs de règim divergent"
+    body: "Molts verbs regeixen preposicions específiques (en, a, de, amb). Per exemple: 'pensar en', 'adonar-se de', 'acostumar-se a', 'interessar-se per', 'rient de'."
+    examples:
+      - target: "No m'havia adonat d'aquest detall."
+        translit: "No m'havia adonat d'aquest detall."
+        en: "I hadn't noticed this detail."
+        highlight: "adonat d'"
+      - target: "Pensa en mi quan siguis lluny."
+        translit: "Pensa en mi quan siguis lluny."
+        en: "Think of me when you are far away."
+        highlight: "en mi"
+  - id: c2_09_slide_3
+    title: "Pronominalització de complements de règim verbal"
+    body: "El complement de règim introduït per 'de' se substitueix pel pronom feble 'en'. El complement introduït per 'a', 'en', 'amb' o 'per' generalment se substitueix pel pronom 'hi'."
+    examples:
+      - target: "T'has adonat de l'error? Sí, que me n'he adonat."
+        translit: "T'has adonat de l'error? Sí, que me n'he adonat."
+        en: "Did you notice the error? Yes, I noticed it."
+        highlight: "me n'"
+      - target: "T'has acostumat a l'horari? Sí, ja m'hi he acostumat."
+        translit: "T'has acostumat a l'horari? Sí, ja m'hi he acostumat."
+        en: "Have you gotten used to the schedule? Yes, I have already gotten used to it."
+        highlight: "m'hi"
+exercises:
+  - id: c2_09_ex_1
+    type: fillBlank
+    target: "Aquest matí he vist la meva tieta i ___ he trucat a la tarda."
+    translit: "Aquest matí he vist la meva tieta i ___ he trucat a la tarda."
+    en: "This morning I saw my aunt and I called her in the afternoon."
+    answer:
+      target: "l'"
+      translit: "l'"
+    distractors:
+      - target: "hi"
+        translit: "hi"
+      - target: "en"
+        translit: "en"
+  - id: c2_09_ex_2
+    type: fillBlank
+    target: "Sempre pensa ___ les seves vacances a la platja."
+    translit: "Sempre pensa ___ les seves vacances a la platja."
+    en: "She always thinks about her beach vacations."
+    answer:
+      target: "en"
+      translit: "en"
+    distractors:
+      - target: "sobre"
+        translit: "sobre"
+      - target: "a"
+        translit: "a"
+  - id: c2_09_ex_3
+    type: fillBlank
+    target: "S'ha adonat ___ perill quan ja era massa tard."
+    translit: "S'ha adonat ___ perill quan ja era massa tard."
+    en: "He realized the danger when it was already too late."
+    answer:
+      target: "del"
+      translit: "del"
+    distractors:
+      - target: "el"
+        translit: "el"
+      - target: "al"
+        translit: "al"
+  - id: c2_09_ex_4
+    type: fillBlank
+    target: "¿T'has recordat de comprar el pa? Sí, ja me ___ he recordat."
+    translit: "¿T'has recordat de comprar el pa? Sí, ja me ___ he recordat."
+    en: "Did you remember to buy the bread? Yes, I remembered it."
+    answer:
+      target: "n'"
+      translit: "n'"
+    distractors:
+      - target: "l'"
+        translit: "l'"
+      - target: "ho"
+        translit: "ho"
+  - id: c2_09_ex_5
+    type: fillBlank
+    target: "Estic acostumat a treballar de nit. Sí, jo també m'___ estic acostumat."
+    translit: "Estic acostumat a treballar de nit. Sí, jo també m'___ estic acostumat."
+    en: "I'm used to working at night. Yes, I'm used to it too."
+    answer:
+      target: "hi"
+      translit: "hi"
+    distractors:
+      - target: "ho"
+        translit: "ho"
+      - target: "en"
+        translit: "en"

@@ -1,0 +1,108 @@
+id: c2_04
+title: "Contacte de preposicions complexes"
+subtitle: "En oracions de relatiu amb què/qui"
+grammarPoint: "Contacte de preposicions en relatius"
+grammarPointEn: "Preposition contact in relative clauses"
+slides:
+  - id: slide1
+    title: "Preposicions fortes i febles"
+    body: "En català, quan una preposició feble (a, de, en, amb) entra en contacte amb una preposició forta (sobre, sota, davant, darrere) o amb el relatiu 'què' o 'qui', hi ha regles estrictes. Davant dels relatius tònics 'què' i 'qui', no podem fer servir preposicions tòniques compostes directament sense la preposició 'de'."
+    examples:
+      - target: "La taula a sobre de la qual vam deixar les claus."
+        translit: "The table on top of the which we left the keys."
+        en: "The table on which we left the keys."
+        highlight: "a sobre de la qual"
+      - target: "El pont a sota del qual passa el riu."
+        translit: "The bridge at under of the which passes the river."
+        en: "The bridge under which the river passes."
+        highlight: "a sota del qual"
+  - id: slide2
+    title: "Ús amb què i qui"
+    body: "Les preposicions febles 'a', 'de', 'en', 'amb' poden precedir 'què' i 'qui'. Les preposicions fortes (sobre, sota, cap a) no poden precedir directament 'què' ni 'qui'. Cal fer servir 'el qual', 'la qual', 'els quals', 'les quals' o afegir la preposició 'de' abans del relatiu (ex. 'davant de qui', però generalment es prefereix 'davant del qual')."
+    examples:
+      - target: "El problema de què parlàvem és greu."
+        translit: "The problem of what we talked is serious."
+        en: "The problem we were talking about is serious."
+        highlight: "de què"
+      - target: "La persona amb qui treballo."
+        translit: "The person with who I work."
+        en: "The person I work with."
+        highlight: "amb qui"
+  - id: slide3
+    title: "Evitar calcs"
+    body: "És un calc de l'espanyol fer servir 'sobre què', 'sota què', 'contra què'. En el seu lloc, hem de dir 'sobre el qual', 'sota el qual', 'contra el qual'."
+    examples:
+      - target: "És un argument contra el qual no podem lluitar."
+        translit: "Is an argument against the which not we can fight."
+        en: "It's an argument against which we cannot fight."
+        highlight: "contra el qual"
+      - target: "L'objectiu cap al qual ens dirigim."
+        translit: "The objective towards to the which ourselves we direct."
+        en: "The goal towards which we are heading."
+        highlight: "cap al qual"
+exercises:
+  - id: ex1
+    type: fillBlank
+    target: "El motiu ___ vam venir ja no és vàlid."
+    translit: "The reason for what we came already not is valid."
+    en: "The reason for which we came is no longer valid."
+    answer:
+      target: "pel qual"
+      translit: "for the which"
+    distractors:
+      - target: "per què"
+        translit: "for what"
+      - target: "pel què"
+        translit: "for the what"
+  - id: ex2
+    type: fillBlank
+    target: "La qüestió ___ discutíem és complexa."
+    translit: "The issue about what we discussed is complex."
+    en: "The issue we were discussing is complex."
+    answer:
+      target: "sobre la qual"
+      translit: "about the which"
+    distractors:
+      - target: "sobre què"
+        translit: "about what"
+      - target: "a sobre de què"
+        translit: "on top of what"
+  - id: ex3
+    type: fillBlank
+    target: "La cadira ___ seia es va trencar."
+    translit: "The chair in which I sat itself broke."
+    en: "The chair I was sitting in broke."
+    answer:
+      target: "en què"
+      translit: "in what"
+    distractors:
+      - target: "a què"
+        translit: "to what"
+      - target: "on què"
+        translit: "where what"
+  - id: ex4
+    type: fillBlank
+    target: "L'amic ___ confiava m'ha traït."
+    translit: "The friend in who I trusted me has betrayed."
+    en: "The friend I trusted has betrayed me."
+    answer:
+      target: "en qui"
+      translit: "in who"
+    distractors:
+      - target: "de qui"
+        translit: "of who"
+      - target: "amb qui"
+        translit: "with who"
+  - id: ex5
+    type: fillBlank
+    target: "Les condicions ___ treballem són pèssimes."
+    translit: "The conditions under the which we work are terrible."
+    en: "The conditions under which we work are terrible."
+    answer:
+      target: "sota les quals"
+      translit: "under the which"
+    distractors:
+      - target: "sota què"
+        translit: "under what"
+      - target: "en què"
+        translit: "in what"

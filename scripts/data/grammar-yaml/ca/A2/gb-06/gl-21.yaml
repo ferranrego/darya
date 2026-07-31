@@ -1,0 +1,138 @@
+id: gl-21
+title: Comparing things
+subtitle: més, menys, tan - and the two irregulars.
+grammarPoint: comparatives
+grammarPointEn: comparatives with més/menys ... que, equality with tan/tant ...
+  com, superlatives with the article, and the irregulars millor and pitjor
+slides:
+  - id: gs-21-1
+    title: More, less, as
+    body: Catalan builds comparisons with separate words. There is nothing like the
+      English -er ending.
+    examples:
+      - target: La casa és més gran que l'escola.
+        en: The house is bigger than the school.
+      - target: Aquest llibre és menys car.
+        en: This book is less expensive.
+      - target: És tan alt com el seu pare.
+        en: He is as tall as his father.
+  - id: gs-21-2
+    title: tan before an adjective, tant with a noun or verb
+    body: One letter apart, and it is the commonest slip at this level.
+    examples:
+      - target: És tan gran com jo.
+        en: He is as big as me.
+      - target: Treballo tant com tu.
+        en: I work as much as you.
+  - id: gs-21-3
+    title: The superlative just adds the article
+    body: Put el, la, els or les in front of més, and use de where English says "in".
+    examples:
+      - target: És el més gran de la família.
+        en: He is the oldest in the family.
+      - target: La ciutat més bonica del país.
+        en: The most beautiful city in the country.
+  - id: gs-21-4
+    title: Two irregulars
+    body: bo and dolent have their own comparative forms, exactly like English good
+      and bad.
+    examples:
+      - target: Aquest cafè és millor.
+        en: This coffee is better.
+      - target: El temps és pitjor avui.
+        en: The weather is worse today.
+    table:
+      - - bo
+        - millor
+      - - dolent
+        - pitjor
+      - - bé
+        - millor
+      - - malament
+        - pitjor
+exercises:
+  - id: ge-21-1
+    type: fillBlank
+    target: La casa és ___ gran que l'escola.
+    en: The house is bigger than the school.
+    answer:
+      target: més
+    distractors:
+      - target: menys
+      - target: tan
+      - target: tant
+  - id: ge-21-2
+    type: fillBlank
+    target: És tan alt ___ el seu pare.
+    en: He is as tall as his father.
+    answer:
+      target: com
+    distractors:
+      - target: que
+      - target: de
+      - target: més
+  - id: ge-21-3
+    type: fillBlank
+    target: Aquest cafè és ___ que l'altre.
+    en: This coffee is better than the other.
+    answer:
+      target: millor
+    distractors:
+      - target: més bo
+      - target: pitjor
+      - target: tan bo
+  - id: ge-21-4
+    type: fillBlank
+    target: És el ___ gran de tots.
+    en: He is the biggest of all.
+    answer:
+      target: més
+    distractors:
+      - target: menys
+      - target: tan
+      - target: molt
+  - id: ge-21-5
+    type: fillBlank
+    target: Treballo ___ com tu.
+    en: I work as much as you.
+    answer:
+      target: tant
+    distractors:
+      - target: tan
+      - target: més
+      - target: menys
+  - id: ge-21-6
+    type: spotError
+    target: És tant alt com jo.
+    en: He is as tall as me.
+    errorWord:
+      target: tant
+    correction:
+      target: tan
+    hint: Before an adjective it loses the -t.
+    correctedTarget: És tan alt com jo.
+  - id: ge-21-7
+    type: buildSentence
+    en: My house is smaller than yours.
+    words:
+      - target: La
+      - target: meva
+      - target: casa
+      - target: és
+      - target: més
+      - target: petita
+      - target: que
+      - target: la teva
+    extraWords:
+      - target: menys
+      - target: com
+  - id: ge-21-8
+    type: chooseTranslation
+    direction: toEn
+    target: És la ciutat més bonica del país.
+    en: It is the most beautiful city in the country.
+    distractorsEn:
+      - It is a beautiful city in the country.
+      - The city is more beautiful than the country.
+      - It is as beautiful as the country.
+    distractorsTarget: []

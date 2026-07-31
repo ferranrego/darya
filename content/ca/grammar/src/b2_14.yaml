@@ -1,0 +1,113 @@
+id: b2_14
+title: La finalitat
+subtitle: Expressing purpose
+grammarPoint: Perquè + subj vs per a + inf
+grammarPointEn: Expressing purpose with perquè and per a
+slides:
+  - id: b2_14_1
+    title: Finalitat amb verbs (Mateix subjecte)
+    body: |
+      When expressing purpose and the subject of the main clause is the same as the subordinate clause, we use "per a" (or simply "per" in colloquial speech, but normative IEC strictly dictates "per a" before infinitives expressing purpose in many contexts, though "per" is also accepted by IEC depending on dialect, let's stick to the clear contrast: preposition + infinitive). 
+      Actually, the IEC (GIEC) accepts both "per" and "per a" before an infinitive indicating purpose. For clarity, we teach that with infinitive we use a preposition.
+    examples:
+      - target: Treballo per guanyar diners.
+        translit: /tɾəˈβaʎu pəɾ ɡwəˈɲa ðiˈnes/
+        en: I work to earn money.
+        highlight: per guanyar
+      - target: Estalvia per a poder viatjar.
+        translit: /əstəlˈβi.ə pəɾ ə puˈðɛ ˈβjat͡ʃa/
+        en: He saves in order to be able to travel.
+        highlight: per a poder
+  - id: b2_14_2
+    title: Finalitat amb verbs (Diferent subjecte)
+    body: |
+      When the subject of the main clause is different from the subject of the subordinate clause, we must use "perquè" (in order that / so that) followed by the subjunctive.
+    examples:
+      - target: Et dono les claus perquè obris la porta.
+        translit: /əd ˈdonu ləs ˈklaws pəɾˈkɛ ˈɔβɾiz lə ˈpɔɾtə/
+        en: I give you the keys so you open the door.
+        highlight: perquè obris
+      - target: Ho explico a poc a poc perquè ho entengueu.
+        translit: /ˈu əksˈpliku ə ˈpɔk ə ˈpɔk pəɾˈkɛ ˈw əntəŋˈɡɛw/
+        en: I explain it slowly so that you all understand it.
+        highlight: perquè ho entengueu
+  - id: b2_14_3
+    title: A fi de / A fi que
+    body: |
+      "A fi de" (in order to) is followed by an infinitive (same subject).
+      "A fi que" (in order that) is followed by the subjunctive (different subject). These are more formal than per/perquè.
+    examples:
+      - target: T'escric a fi que em donis una resposta.
+        translit: /təsˈkɾik ə ˈfi kə m ˈdoniz ˈunə rəsˈpɔstə/
+        en: I am writing to you so that you give me an answer.
+        highlight: a fi que
+      - target: Ens hem reunit a fi de trobar una solució.
+        translit: /ənz ˈɛm rə.uˈnit ə ˈfi ðə tɾuˈβa ˈunə sulusiˈo/
+        en: We have met in order to find a solution.
+        highlight: a fi de
+exercises:
+  - id: b2_14_ex1
+    type: fillBlank
+    target: Vaig a la botiga ___ comprar pa.
+    translit: ˈbat͡ʃ a lə βuˈtiɣə ___ kumˈpɾa ˈpa.
+    en: I'm going to the store to buy bread.
+    answer:
+      target: per
+      translit: /pəɾ/
+    distractors:
+      - target: perquè
+        translit: /pəɾˈkɛ/
+      - target: per a que
+        translit: /pəɾ ə kə/
+  - id: b2_14_ex2
+    type: fillBlank
+    target: Et porto el llibre ___ el llegeixis.
+    translit: ət ˈpɔɾtu l ˈʎiβɾə ___ əl ʎəˈʒɛʃis.
+    en: I bring you the book so you read it.
+    answer:
+      target: perquè
+      translit: /pəɾˈkɛ/
+    distractors:
+      - target: per a
+        translit: /pəɾ ə/
+      - target: a fi de
+        translit: /ə ˈfi ðə/
+  - id: b2_14_ex3
+    type: fillBlank
+    target: Parla més fort ___ et puguem sentir.
+    translit: ˈpaɾlə ˈmes ˈfɔɾt ___ ət puˈɣɛm sənˈti.
+    en: Speak louder so that we can hear you.
+    answer:
+      target: perquè
+      translit: /pəɾˈkɛ/
+    distractors:
+      - target: per a
+        translit: /pəɾ ə/
+      - target: a fi de
+        translit: /ə ˈfi ðə/
+  - id: b2_14_ex4
+    type: fillBlank
+    target: Ho fem tot a fi ___ tothom estigui content.
+    translit: ˈu ˈfem ˈtot ə ˈfi ___ tuˈtɔm əsˈtiɣi kunˈten.
+    en: We do everything in order that everyone is happy.
+    answer:
+      target: que
+      translit: /kə/
+    distractors:
+      - target: de
+        translit: /də/
+      - target: a
+        translit: /ə/
+  - id: b2_14_ex5
+    type: fillBlank
+    target: Estudio molt ___ aprovar l'examen.
+    translit: əstuˈði.u ˈmolt ___ əpɾuˈβa ləɡˈzamən.
+    en: I study a lot to pass the exam.
+    answer:
+      target: per a
+      translit: /pəɾ ə/
+    distractors:
+      - target: perquè
+        translit: /pəɾˈkɛ/
+      - target: donat que
+        translit: /duˈnat kə/

@@ -1,0 +1,111 @@
+id: c2_03
+title: "Excepcions pronominals i dialectalismes"
+subtitle: "Se'ls vs els se i balear/valencià"
+grammarPoint: "Variants dialectals dels pronoms"
+grammarPointEn: "Dialectal pronoun variants"
+slides:
+  - id: c2_03_s1
+    title: "Ordre dels pronoms: SE + CI/CD"
+    body: |
+      Segons la normativa i la varietat central, el pronom reflexiu o passiu *es/se* va davant dels altres pronoms (excepte *em*, *et*). Per exemple: *se'ls*. En balear i valencià, sovint l'ordre s'inverteix: *els se*.
+    examples:
+      - target: "Aquests llibres, se'ls hauran de llegir. (Central)"
+        translit: ""
+        en: "These books, they will have to read them."
+        highlight: "se'ls"
+      - target: "Aquests llibres, els se hauran de llegir. (Valencià/Balear)"
+        translit: ""
+        en: "These books, they will have to read them."
+        highlight: "els se"
+  - id: c2_03_s2
+    title: "L'ús col·loquial de 'lis' i 'els hi'"
+    body: |
+      En registres informals i col·loquials de català central, s'utilitza sovint *els hi* o *lis* per al complement indirecte plural en lloc del normatiu *els*. Cal recordar que la forma escrita formal és *els*.
+    examples:
+      - target: "Els he portat el pastís. (Normatiu)"
+        translit: ""
+        en: "I brought them the cake."
+        highlight: "Els"
+      - target: "Els hi he portat el pastís. (Col·loquial)"
+        translit: ""
+        en: "I brought them the cake."
+        highlight: "Els hi"
+  - id: c2_03_s3
+    title: "El fenomen de la caiguda de la D"
+    body: |
+      En alguns dialectes, en la combinació de pronoms amb verbs imperatius o gerundis, es pot observar la pèrdua de certes consonants, però a nivell escrit cal respectar la norma. A més, combinacions com *l'hi* (CD + CI) es pronuncien a vegades com a *li* en certs territoris.
+    examples:
+      - target: "Dona-l'hi ara mateix!"
+        translit: ""
+        en: "Give it to him right now!"
+        highlight: "l'hi"
+      - target: "Porta'ns-el quan vulguis."
+        translit: ""
+        en: "Bring it to us whenever you want."
+        highlight: "Porta'ns-el"
+exercises:
+  - id: c2_03_e1
+    type: fillBlank
+    target: "Segons l'estàndard, els nens ___ van menjar tot (el pastís)."
+    translit: ""
+    en: "According to the standard, the kids ate it all (the cake)."
+    answer:
+      target: "se'l"
+      translit: ""
+    distractors:
+      - target: "el se"
+        translit: ""
+      - target: "se l'hi"
+        translit: ""
+  - id: c2_03_e2
+    type: fillBlank
+    target: "En un registre formal, has de dir: «Ja ___ ho he donat» (a ells)."
+    translit: ""
+    en: "In a formal register, you must say: 'I have already given it to them'."
+    answer:
+      target: "els"
+      translit: ""
+    distractors:
+      - target: "lis"
+        translit: ""
+      - target: "els hi"
+        translit: ""
+  - id: c2_03_e3
+    type: fillBlank
+    target: "En mallorquí o valencià col·loquial, és freqüent dir «___ va endur» en comptes de «se la va endur»."
+    translit: ""
+    en: "In colloquial Mallorcan or Valencian, it is common to say 'la se va endur' instead of 'se la va endur'."
+    answer:
+      target: "la se"
+      translit: ""
+    distractors:
+      - target: "se la"
+        translit: ""
+      - target: "es la"
+        translit: ""
+  - id: c2_03_e4
+    type: fillBlank
+    target: "Si vols donar el llibre (el) a ell (li), l'imperatiu normatiu és: Dona-___!"
+    translit: ""
+    en: "If you want to give the book to him, the normative imperative is: Give it to him!"
+    answer:
+      target: "l'hi"
+      translit: ""
+    distractors:
+      - target: "li'l"
+        translit: ""
+      - target: "el li"
+        translit: ""
+  - id: c2_03_e5
+    type: fillBlank
+    target: "No cal que (a elles) ___ expliquis el final de la pel·lícula, ja el saben."
+    translit: ""
+    en: "There's no need to explain the end of the movie to them, they already know it."
+    answer:
+      target: "els"
+      translit: ""
+    distractors:
+      - target: "les"
+        translit: ""
+      - target: "els hi"
+        translit: ""

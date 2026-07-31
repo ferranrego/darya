@@ -1,0 +1,95 @@
+id: gl-34
+title: "Pronoms relatius: que i qui"
+subtitle: "Relative pronouns: que and qui"
+grammarPoint: Ús de que i qui
+grammarPointEn: Usage of que and qui
+slides:
+  - slideId: gl-34-s1
+    title: El pronom 'que'
+    content: >-
+      El pronom relatiu **que** és el més freqüent. Es refereix a persones,
+      animals o coses i fa de subjecte o de complement directe.
+
+
+      Exemples:
+
+      - El noi **que** canta és el meu germà.
+
+      - La pel·lícula **que** vam veure era molt bona.
+    id: gs-34-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - slideId: gl-34-s2
+    title: El pronom 'qui'
+    content: >-
+      El pronom relatiu **qui** es refereix exclusivament a persones i sempre va
+      precedit d'una preposició (a, de, amb, per...).
+
+
+      Exemples:
+
+      - La noia amb **qui** parlo és d'Alacant.
+
+      - Aquest és l'home a **qui** vaig donar el llibre.
+    id: gs-34-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-34-1
+    type: fillBlank
+    target: El cotxe ___ he comprat és de segona mà.
+    en: The car that I bought is second-hand.
+    answer:
+      target: que
+    distractors:
+      - target: qui
+      - target: el qual
+  - id: ge-34-2
+    type: fillBlank
+    target: La professora amb ___ treballo és excel·lent.
+    en: The teacher with whom I work is excellent.
+    answer:
+      target: qui
+    distractors:
+      - target: que
+      - target: la que
+  - id: ge-34-3
+    type: fillBlank
+    target: Els llibres ___ són sobre la taula són teus.
+    en: The books that are on the table are yours.
+    answer:
+      target: que
+    distractors:
+      - target: qui
+      - target: els quals
+  - id: ge-34-4
+    type: fillBlank
+    target: L'amic de ___ et parlava ha arribat avui.
+    en: The friend of whom I was speaking to you has arrived today.
+    answer:
+      target: qui
+    distractors:
+      - target: que
+      - target: el qui
+  - id: ge-34-5
+    type: fillBlank
+    target: És una història ___ no m'agrada gens.
+    en: It's a story that I don't like at all.
+    answer:
+      target: que
+    distractors:
+      - target: qui
+      - target: la qual
+  - id: ge-34-6
+    type: fillBlank
+    target: És una història ___ no m'agrada gens.
+    en: It's a story that I don't like at all.
+    answer:
+      target: que
+    distractors:
+      - target: qui
+      - target: la qual

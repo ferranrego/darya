@@ -30,3 +30,19 @@ export const SCENARIOS = [
   "at the beach",
   "during a local festa major",
 ];
+
+export const CHAT = {
+  translitTask: "Provide a phonetic pronunciation guide so an English speaker knows how to pronounce it. Example: \"com estàs\" -> \"kohm eh-stahs\".",
+};
+
+/**
+ * What is worth highlighting when a sentence is broken down word by word.
+ * The Catalan equivalents of the features a Dari breakdown would name: weak
+ * pronouns rather than ezafe, periphrastic past rather than compound verbs.
+ */
+export const EXPLANATION_FOCUS =
+  "tenses used, weak pronoun combinations (me'n, l'hi, els hi), the periphrastic past, ser vs estar, apostrophation and contractions";
+
+/** Grammatical roles the word-by-word breakdown may use. */
+export const WORD_ROLES = "Subject, Verb, Direct object, Indirect object, Weak pronoun, Preposition, Article, Conjunction";
+

@@ -1,0 +1,108 @@
+id: c2_06
+title: "L'infinitiu preposicional"
+subtitle: "al + infinitiu vs en + infinitiu, tot + gerundi"
+grammarPoint: "Construccions d'infinitiu temporal"
+grammarPointEn: "Temporal infinitive constructions"
+slides:
+  - id: slide1
+    title: "Expressar simultaneïtat"
+    body: "Per expressar una acció que passa al mateix temps o immediatament abans que una altra, en català s'utilitza principalment la construcció 'en + infinitiu'. És una estructura genuïna molt pròpia dels registres formals i literaris."
+    examples:
+      - target: "En sortir de casa, va començar a ploure."
+        translit: "In to leave of house, started to rain."
+        en: "Upon leaving the house, it started to rain."
+        highlight: "En sortir"
+      - target: "Ens vam trobar l'alcalde en arribar al poble."
+        translit: "Us we found the mayor in to arrive to the village."
+        en: "We met the mayor upon arriving at the village."
+        highlight: "en arribar"
+  - id: slide2
+    title: "Al + infinitiu (Calc a evitar)"
+    body: "En el llenguatge col·loquial és molt freqüent sentir la construcció 'al + infinitiu' (ex. 'al sortir', 'a l'arribar'). Això és considerat un calc del castellà ('al salir', 'al llegar') que cal evitar en els registres formals o acadèmics (C2), on sempre s'ha de prioritzar 'en + infinitiu'."
+    examples:
+      - target: "En veure'l, el vaig saludar. (Correcte)"
+        translit: "In to see him, him I greeted."
+        en: "Upon seeing him, I greeted him."
+        highlight: "En veure'l"
+      - target: "Al veure'l, el vaig saludar. (Calc)"
+        translit: "At the to see him, him I greeted."
+        en: "Upon seeing him, I greeted him."
+        highlight: "Al veure'l"
+  - id: slide3
+    title: "Tot + gerundi"
+    body: "Una altra manera molt idiomàtica i correcta d'expressar simultaneïtat és fer servir 'tot + gerundi'. Aquesta construcció temporal indica que dues accions es produeixen de manera simultània."
+    examples:
+      - target: "Tot passejant pel bosc, vam trobar uns bolets."
+        translit: "All walking through the forest, we found some mushrooms."
+        en: "While walking through the forest, we found some mushrooms."
+        highlight: "Tot passejant"
+      - target: "Va explicar la història tot rient."
+        translit: "He explained the story all laughing."
+        en: "He told the story while laughing."
+        highlight: "tot rient"
+exercises:
+  - id: ex1
+    type: fillBlank
+    target: "___ la notícia, es va posar a plorar."
+    translit: "In to know the news, herself started to cry."
+    en: "Upon hearing the news, she started to cry."
+    answer:
+      target: "En saber"
+      translit: "In to know"
+    distractors:
+      - target: "Al saber"
+        translit: "At the know"
+      - target: "Pel saber"
+        translit: "For the know"
+  - id: ex2
+    type: fillBlank
+    target: "Ho vam descobrir ___ uns documents antics."
+    translit: "It we discovered all revising some documents ancient."
+    en: "We discovered it while revising some old documents."
+    answer:
+      target: "tot revisant"
+      translit: "all revising"
+    distractors:
+      - target: "al revisar"
+        translit: "at the to revise"
+      - target: "el revisar"
+        translit: "the to revise"
+  - id: ex3
+    type: fillBlank
+    target: "___ de l'oficina, recorda't de tancar el llum."
+    translit: "In to leave of the office, remember yourself of to close the light."
+    en: "Upon leaving the office, remember to turn off the light."
+    answer:
+      target: "En sortir"
+      translit: "In to leave"
+    distractors:
+      - target: "Al sortir"
+        translit: "At the leave"
+      - target: "A la sortida"
+        translit: "At the leaving"
+  - id: ex4
+    type: fillBlank
+    target: "Ens vam fer amics ___ junts durant mesos."
+    translit: "Us we made friends all working together during months."
+    en: "We became friends while working together for months."
+    answer:
+      target: "tot treballant"
+      translit: "all working"
+    distractors:
+      - target: "al treballant"
+        translit: "at the working"
+      - target: "a treballar"
+        translit: "to work"
+  - id: ex5
+    type: fillBlank
+    target: "___ a casa, ens va explicar totes les anècdotes."
+    translit: "In to arrive to house, us he explained all the anecdotes."
+    en: "Upon arriving home, he told us all the anecdotes."
+    answer:
+      target: "En arribar"
+      translit: "In to arrive"
+    distractors:
+      - target: "A l'arribar"
+        translit: "At the arrive"
+      - target: "A l'arribat"
+        translit: "At the arrived"

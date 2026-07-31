@@ -1,0 +1,108 @@
+id: c1_14
+title: Subordinades de relatiu
+subtitle: Antecedent inespecífic
+grammarPoint: Subordinades de relatiu amb antecedent inespecífic (alternança indicatiu/subjuntiu)
+grammarPointEn: Relative subordinate clauses with non-specific antecedent (indicative/subjunctive alternation)
+slides:
+  - id: c1_14_s1
+    title: Antecedent específic vs inespecífic
+    body: Fem servir l'indicatiu quan l'antecedent és conegut o específic, i el subjuntiu quan és desconegut o inespecífic.
+    examples:
+      - target: Busco la persona que parla català.
+        translit: ""
+        en: I am looking for the person who speaks Catalan.
+        highlight: parla
+      - target: Busco una persona que parli català.
+        translit: ""
+        en: I am looking for a person who speaks Catalan.
+        highlight: parli
+  - id: c1_14_s2
+    title: Oracions negatives i subjuntiu
+    body: Quan l'antecedent es nega i, per tant, no existeix, sempre utilitzem el subjuntiu.
+    examples:
+      - target: No hi ha ningú que ho sàpiga fer millor.
+        translit: ""
+        en: There is no one who knows how to do it better.
+        highlight: sàpiga
+      - target: No conec cap metge que visiti a aquesta hora.
+        translit: ""
+        en: I don't know any doctor who visits at this time.
+        highlight: visiti
+  - id: c1_14_s3
+    title: Pronoms relatius amb subjuntiu
+    body: Estructures amb 'qualsevol que', 'qui' o 'on' amb sentit hipotètic requereixen subjuntiu.
+    examples:
+      - target: Qualsevol que vulgui participar ha d'inscriure's.
+        translit: ""
+        en: Anyone who wants to participate must register.
+        highlight: vulgui
+      - target: Anirem on tu prefereixis.
+        translit: ""
+        en: We will go wherever you prefer.
+        highlight: prefereixis
+exercises:
+  - id: c1_14_e1
+    type: fillBlank
+    target: Vull contractar un advocat que ___ especialitzat en dret penal.
+    translit: ""
+    en: I want to hire a lawyer who is specialized in criminal law.
+    answer:
+      target: estigui
+      translit: ""
+    distractors:
+      - target: està
+        translit: ""
+      - target: estava
+        translit: ""
+  - id: c1_14_e2
+    type: fillBlank
+    target: No hi ha cap llibre a la biblioteca que ___ d'aquest tema tan específic.
+    translit: ""
+    en: There is no book in the library that deals with this very specific topic.
+    answer:
+      target: tracti
+      translit: ""
+    distractors:
+      - target: tracta
+        translit: ""
+      - target: tractarà
+        translit: ""
+  - id: c1_14_e3
+    type: fillBlank
+    target: Ens acompanyarà la guia que ___ millor la ciutat.
+    translit: ""
+    en: We will be accompanied by the guide who knows the city best.
+    answer:
+      target: coneix
+      translit: ""
+    distractors:
+      - target: conegui
+        translit: ""
+      - target: conegués
+        translit: ""
+  - id: c1_14_e4
+    type: fillBlank
+    target: Comprarem la casa que ens ___ més de totes les que visitem demà.
+    translit: ""
+    en: We will buy the house that pleases us the most of all the ones we visit tomorrow.
+    answer:
+      target: agradi
+      translit: ""
+    distractors:
+      - target: agrada
+        translit: ""
+      - target: agradava
+        translit: ""
+  - id: c1_14_e5
+    type: fillBlank
+    target: Et donaré suport en tot allò que ___.
+    translit: ""
+    en: I will support you in whatever you decide.
+    answer:
+      target: decideixis
+      translit: ""
+    distractors:
+      - target: decideixes
+        translit: ""
+      - target: decidies
+        translit: ""

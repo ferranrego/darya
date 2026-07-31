@@ -1,0 +1,117 @@
+id: gl-20
+title: The conditional
+subtitle: How to ask for things without sounding blunt.
+grammarPoint: conditional
+grammarPointEn: the conditional on the future stem, used for politeness,
+  hypothesis and softened requests
+slides:
+  - id: gs-20-1
+    title: Same stem as the future, imperfect endings
+    body: If you know the future, the conditional costs you nothing new.
+    examples:
+      - target: M'agradaria un cafè.
+        en: I would like a coffee.
+      - target: Podries ajudar-me?
+        en: Could you help me?
+    table:
+      - - jo
+        - parlaria
+      - - tu
+        - parlaries
+      - - ell, ella
+        - parlaria
+      - - nosaltres
+        - parlaríem
+      - - vosaltres
+        - parlaríeu
+      - - ells, elles
+        - parlarien
+  - id: gs-20-2
+    title: This is how you are polite in a shop
+    body: vull sounds abrupt. voldria and m'agradaria are what people actually say.
+    examples:
+      - target: Voldria un got d'aigua.
+        en: I would like a glass of water.
+      - target: Em podria dir l'hora?
+        en: Could you tell me the time?
+  - id: gs-20-3
+    title: And for what you would do
+    body: Use it for a situation that is imagined rather than real.
+    examples:
+      - target: Jo aniria a la platja.
+        en: I would go to the beach.
+      - target: Seria millor demà.
+        en: It would be better tomorrow.
+exercises:
+  - id: ge-20-1
+    type: fillBlank
+    target: ___ un cafè, si us plau.
+    en: I would like a coffee, please.
+    answer:
+      target: Voldria
+    distractors:
+      - target: Vull
+      - target: Voldré
+      - target: Volia
+  - id: ge-20-2
+    type: fillBlank
+    target: ___ ajudar-me?
+    en: Could you help me?
+    answer:
+      target: Podries
+    distractors:
+      - target: Pots
+      - target: Podràs
+      - target: Podies
+  - id: ge-20-3
+    type: fillBlank
+    target: M'___ anar a la platja.
+    en: I would like to go to the beach.
+    answer:
+      target: agradaria
+    distractors:
+      - target: agrada
+      - target: agradarà
+      - target: agradava
+  - id: ge-20-4
+    type: fillBlank
+    target: ___ millor demà al matí.
+    en: It would be better tomorrow morning.
+    answer:
+      target: Seria
+    distractors:
+      - target: És
+      - target: Serà
+      - target: Era
+  - id: ge-20-6
+    type: spotError
+    target: Vull un got d'aigua, si us plau.
+    en: I would like a glass of water, please.
+    errorWord:
+      target: Vull
+    correction:
+      target: Voldria
+    hint: The conditional is what makes it polite.
+    correctedTarget: Voldria un got d'aigua, si us plau.
+  - id: ge-20-7
+    type: matchPairs
+    prompt: Match the future with its conditional.
+    pairs:
+      - target: tindré
+        en: tindria
+      - target: faré
+        en: faria
+      - target: podré
+        en: podria
+      - target: voldré
+        en: voldria
+  - id: ge-20-8
+    type: chooseTranslation
+    direction: toEn
+    target: M'agradaria parlar amb el metge.
+    en: I would like to speak with the doctor.
+    distractorsEn:
+      - I like speaking with the doctor.
+      - I will speak with the doctor.
+      - I liked speaking with the doctor.
+    distractorsTarget: []

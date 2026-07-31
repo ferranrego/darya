@@ -24,15 +24,17 @@ const schemas = {
   }),
 } as const;
 
+import { profile } from "../lang";
+
 function buildPrompt(body: string, mode: EnrichMode): string {
-  const shared = `A learner wrote this message in a Dari (Afghan Persian) chat room. It may mix Dari script with Latin letters or English; leave any non-Dari spans exactly as they are.
+  const shared = `A learner wrote this message in a ${profile.name} chat room. It may mix ${profile.name} with English; leave any non-${profile.name} spans exactly as they are.
 
 Message: ${body}`;
 
   if (mode === "translit") {
     return `${shared}
 
-Transliterate it. Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū, use kh/gh/ch/sh/zh/q/', w for و. Example: "می‌روم" → "mērawam".
+${profile.prompts.chat.translitTask}
 
 Return ONLY JSON: {"translit": "..."}`;
   }
@@ -40,8 +42,8 @@ Return ONLY JSON: {"translit": "..."}`;
   if (mode === "correction") {
     return `${shared}
 
-Check the Dari for any grammatical or spelling mistakes, and correct them. Keep it encouraging and gentle.
-Return the fully corrected string in Dari, and a list of issues found.
+Check the ${profile.name} for any grammatical or spelling mistakes, and correct them. Keep it encouraging and gentle.
+Return the fully corrected string in ${profile.name}, and a list of issues found.
 For each issue, show the 'before' text (the mistake), the 'after' text (the correction), and 'whyEn' (a short explanation in English).
 
 Return ONLY JSON: {"corrected": "...", "issues": [{"before": "...", "after": "...", "whyEn": "..."}]}`;

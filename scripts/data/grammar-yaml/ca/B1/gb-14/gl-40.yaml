@@ -1,0 +1,79 @@
+id: gl-40
+title: Combinació de Pronoms amb 'en' i 'hi'
+subtitle: Domini dels Pronoms Febles
+grammarPoint: Combinació de pronoms amb 'en' i 'hi'
+grammarPointEn: Combining pronouns with 'en' and 'hi'
+slides:
+  - title: Combinació amb 'en'
+    content: "Podem combinar el pronom 'en' amb altres pronoms. Exemples: et + en =
+      te'n, ens + en = ens en, us + en = us en, es + en = se'n, el + en = l'en,
+      la + en = la'n."
+    id: gs-40-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - title: Combinació 'n'hi'
+    content: La combinació de 'en' i 'hi' sempre escriu la forma apostrofada de 'en'
+      més 'hi', resultant en 'n'hi'.
+    id: gs-40-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-40-1
+    type: fillBlank
+    target: Vols treure el cotxe del garatge? Sí, ___ vull treure.
+    en: Do you want to take the car out of the garage? Yes, I want to take it out
+      (from there).
+    answer:
+      target: l'en
+    distractors:
+      - target: el'n
+      - target: l'hi
+  - id: ge-40-2
+    type: fillBlank
+    target: Hi ha pomes a la nevera? Sí que ___ ha.
+    en: Are there apples in the fridge? Yes, there are (some).
+    answer:
+      target: n'hi
+    distractors:
+      - target: en hi
+      - target: hi n'
+  - id: ge-40-3
+    type: fillBlank
+    target: Es menja molta fruita aquí? Sí que ___ menja molta.
+    en: Do people eat a lot of fruit here? Yes, people eat a lot (of it).
+    answer:
+      target: se'n
+    distractors:
+      - target: s'en
+      - target: en se
+  - id: ge-40-4
+    type: fillBlank
+    target: Necessites paciència per a l'examen? Sí que ___ necessitaré.
+    en: Do you need patience for the exam? Yes I will need some for it.
+    answer:
+      target: n'hi
+    distractors:
+      - target: hi'n
+      - target: la'n
+  - id: ge-40-5
+    type: fillBlank
+    target: No ___ recordo (de la reunió).
+    en: I don't remember it (the meeting).
+    answer:
+      target: me'n
+    distractors:
+      - target: m'en
+      - target: en me
+  - id: ge-40-6
+    type: fillBlank
+    target: No ___ recordo (de la reunió).
+    en: I don't remember it (the meeting).
+    answer:
+      target: me'n
+    distractors:
+      - target: m'en
+      - target: en me

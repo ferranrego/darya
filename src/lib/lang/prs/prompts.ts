@@ -18,6 +18,8 @@ export const TEACHER = "a Dari language teacher in Kabul";
 export const ORTHOGRAPHY = [
   "Write standard Afghan Dari, NOT Iranian Persian: use Dari vocabulary (مکتب، موتر، کلان) and Kabuli usage.",
   "Transliteration is Latin with Kabuli pronunciation: long vowels ā ē ī ō ū; kh/gh/ch/sh/zh/q; w for و; mē- for the present prefix.",
+  "Use European-friendly digraphs rather than academic notation: kh for خ (never x - khordan, not xordan), gh for غ, sh for ش, ch for چ, zh for ژ. Apply this consistently in every field.",
+  "Use ZWNJ in می‌ verb forms (می‌روم).",
 ].join("\n");
 
 /** What generated reader texts should be about, culturally. */
@@ -32,3 +34,13 @@ export const SCENARIOS = [
   "at work",
   "at a restaurant",
 ];
+
+export const CHAT = {
+  translitTask: "Transliterate it. Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū, use kh/gh/ch/sh/zh/q/', w for و. Example: \"می‌روم\" → \"mērawam\".",
+};
+
+/** What is worth highlighting when a sentence is broken down word by word. */
+export const EXPLANATION_FOCUS = "tenses used, ezafe chains, compound verbs, the object marker rā";
+
+/** Grammatical roles the word-by-word breakdown may use. */
+export const WORD_ROLES = "Subject, Verb, Object, Ezafe, Postposition, Particle";

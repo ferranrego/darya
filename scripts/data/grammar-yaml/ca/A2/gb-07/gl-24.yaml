@@ -1,0 +1,147 @@
+id: gl-24
+title: The gerund, impersonal es, and periphrases
+subtitle: Three structures that make you sound fluent.
+grammarPoint: gerund-impersonal-periphrases
+grammarPointEn: the gerund for simultaneity only, the impersonal es, and the
+  verbal periphrases haver de, tornar a and acabar de
+slides:
+  - id: gs-24-1
+    title: The gerund is for two things at once
+    body: -ar gives -ant, -er and -re give -ent, -ir gives -int. Use it only when
+      the two actions overlap - never for one thing after another.
+    examples:
+      - target: Estic menjant.
+        en: I'm eating.
+      - target: Escolto música treballant.
+        en: I listen to music while working.
+      - target: Va caure i es va trencar el braç.
+        en: He fell and broke his arm.
+    table:
+      - - parlar
+        - parlant
+      - - perdre
+        - perdent
+      - - dormir
+        - dormint
+      - - fer
+        - fent
+      - - dir
+        - dient
+      - - veure
+        - veient
+  - id: gs-24-2
+    title: es for when nobody in particular does it
+    body: This is how Catalan says "one", "people" or a passive. The verb agrees
+      with the thing.
+    examples:
+      - target: Aquí es parla català.
+        en: Catalan is spoken here.
+      - target: Es venen pisos.
+        en: Flats for sale.
+  - id: gs-24-3
+    title: Verb plus verb
+    body: These carry a lot of everyday meaning that English packs into single words
+      like "must" or "just".
+    examples:
+      - target: He de treballar demà.
+        en: I have to work tomorrow.
+      - target: Acabo d'arribar.
+        en: I have just arrived.
+      - target: Torno a llegir el llibre.
+        en: I'm reading the book again.
+    table:
+      - - haver de + inf.
+        - to have to
+      - - poder + inf.
+        - to be able to
+      - - tornar a + inf.
+        - to do again
+      - - acabar de + inf.
+        - to have just
+      - - començar a + inf.
+        - to start to
+      - - deixar de + inf.
+        - to stop
+exercises:
+  - id: ge-24-1
+    type: fillBlank
+    target: Ara estic ___ el sopar.
+    en: I'm making dinner now.
+    answer:
+      target: fent
+    distractors:
+      - target: fant
+      - target: faent
+      - target: fet
+  - id: ge-24-2
+    type: fillBlank
+    target: Aquí ___ parla català.
+    en: Catalan is spoken here.
+    answer:
+      target: es
+    distractors:
+      - target: hi
+      - target: en
+      - target: el
+  - id: ge-24-3
+    type: fillBlank
+    target: ___ de treballar demà.
+    en: I have to work tomorrow.
+    answer:
+      target: He
+    distractors:
+      - target: Tinc
+      - target: Vaig
+      - target: Soc
+  - id: ge-24-4
+    type: fillBlank
+    target: Acabo ___ arribar a casa.
+    en: I have just arrived home.
+    answer:
+      target: d'
+    distractors:
+      - target: de
+      - target: a
+      - target: per
+  - id: ge-24-5
+    type: fillBlank
+    target: Torno ___ llegir el llibre.
+    en: I'm reading the book again.
+    answer:
+      target: a
+    distractors:
+      - target: de
+      - target: per
+      - target: amb
+  - id: ge-24-6
+    type: spotError
+    target: Tinc de treballar demà.
+    en: I have to work tomorrow.
+    errorWord:
+      target: Tinc
+    correction:
+      target: He
+    hint: Obligation uses haver de, not tenir.
+    correctedTarget: He de treballar demà.
+  - id: ge-24-7
+    type: matchPairs
+    prompt: Match the periphrasis with its meaning.
+    pairs:
+      - target: haver de
+        en: to have to
+      - target: acabar de
+        en: to have just
+      - target: tornar a
+        en: to do again
+      - target: deixar de
+        en: to stop
+  - id: ge-24-8
+    type: chooseTranslation
+    direction: toEn
+    target: Acabo de veure la Marta.
+    en: I have just seen Marta.
+    distractorsEn:
+      - I finish watching Marta.
+      - I am going to see Marta.
+      - I saw Marta a long time ago.
+    distractorsTarget: []

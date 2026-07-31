@@ -1,0 +1,78 @@
+id: gl-38
+title: Pronoms 'en' i 'hi' (Avançat)
+subtitle: Domini dels Pronoms Febles
+grammarPoint: Ús avançat dels pronoms febles 'en' i 'hi'
+grammarPointEn: Advanced use of the weak pronouns 'en' and 'hi'
+slides:
+  - title: El pronom 'en'
+    content: El pronom 'en' substitueix complements introduïts per la preposició
+      'de'. També substitueix el complement directe quan és indefinit.
+    id: gs-38-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+  - title: El pronom 'hi'
+    content: El pronom 'hi' substitueix complements de lloc, així com altres
+      complements introduïts per preposicions com 'a', 'en', 'amb' (excepte
+      'de').
+    id: gs-38-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+    examples:
+      - target: Exemple
+        en: Example
+exercises:
+  - id: ge-38-1
+    type: fillBlank
+    target: Vens del cinema? Sí, ___ vinc.
+    en: Are you coming from the cinema? Yes, I am coming from there.
+    answer:
+      target: en
+    distractors:
+      - target: hi
+      - target: ho
+  - id: ge-38-2
+    type: fillBlank
+    target: Vas al teatre? Sí, ___ vaig.
+    en: Are you going to the theater? Yes, I am going there.
+    answer:
+      target: hi
+    distractors:
+      - target: en
+      - target: el
+  - id: ge-38-3
+    type: fillBlank
+    target: Tens pomes? Sí, ___ tinc dues.
+    en: Do you have apples? Yes, I have two (of them).
+    answer:
+      target: en
+    distractors:
+      - target: hi
+      - target: les
+  - id: ge-38-4
+    type: fillBlank
+    target: Penses en les teves vacances? Sí, ___ penso molt.
+    en: Do you think about your holidays? Yes, I think about them a lot.
+    answer:
+      target: hi
+    distractors:
+      - target: en
+      - target: ho
+  - id: ge-38-5
+    type: fillBlank
+    target: Estàs d'acord amb aquesta decisió? Sí, ___ estic d'acord.
+    en: Do you agree with this decision? Yes, I agree with it.
+    answer:
+      target: hi
+    distractors:
+      - target: en
+      - target: ho
+  - id: ge-38-6
+    type: fillBlank
+    target: Estàs d'acord amb aquesta decisió? Sí, ___ estic d'acord.
+    en: Do you agree with this decision? Yes, I agree with it.
+    answer:
+      target: hi
+    distractors:
+      - target: en
+      - target: ho

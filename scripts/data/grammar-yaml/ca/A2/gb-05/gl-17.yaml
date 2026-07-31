@@ -1,0 +1,118 @@
+id: gl-17
+title: hi and en
+subtitle: Two pronouns English simply does not have.
+grammarPoint: pronouns-hi-en
+grammarPointEn: hi replaces a place or a prepositional phrase; en replaces a
+  quantity or a de-phrase and is obligatory where English drops it
+slides:
+  - id: gs-17-1
+    title: hi stands for a place
+    body: Where English repeats the place, or just says "there", Catalan uses hi. It
+      is also the hi inside hi ha.
+    examples:
+      - target: Vas a la platja? Sí, hi vaig.
+        en: Are you going to the beach? Yes, I'm going.
+      - target: Hi ha molta gent.
+        en: There are a lot of people.
+      - target: No hi he estat mai.
+        en: I have never been there.
+  - id: gs-17-2
+    title: en stands for a quantity or a de-phrase
+    body: When you say how many, Catalan keeps en in the sentence. English drops it
+      entirely, which is why it is easy to forget.
+    examples:
+      - target: Vols pa? Sí, en vull.
+        en: Do you want bread? Yes, I want some.
+      - target: En tinc dos.
+        en: I have two.
+      - target: En parlem demà.
+        en: We'll talk about it tomorrow.
+  - id: gs-17-3
+    title: They shorten too
+    body: en becomes n' before a vowel, and 'n after one.
+    examples:
+      - target: N'hi ha tres.
+        en: There are three of them.
+      - target: Vull anar-me'n.
+        en: I want to leave.
+exercises:
+  - id: ge-17-1
+    type: fillBlank
+    target: ___ ha molta gent al carrer.
+    en: There are a lot of people in the street.
+    answer:
+      target: Hi
+    distractors:
+      - target: En
+      - target: El
+      - target: Es
+  - id: ge-17-2
+    type: fillBlank
+    target: Vols aigua? Sí, ___ vull.
+    en: Do you want water? Yes, I want some.
+    answer:
+      target: en
+    distractors:
+      - target: hi
+      - target: la
+      - target: el
+  - id: ge-17-3
+    type: fillBlank
+    target: Vas a l'escola? Sí, ___ vaig.
+    en: Are you going to school? Yes, I'm going.
+    answer:
+      target: hi
+    distractors:
+      - target: en
+      - target: el
+      - target: la
+  - id: ge-17-4
+    type: fillBlank
+    target: ___ tinc tres.
+    en: I have three of them.
+    answer:
+      target: En
+    distractors:
+      - target: Hi
+      - target: El
+      - target: Li
+  - id: ge-17-5
+    type: fillBlank
+    target: ___ hi ha quatre.
+    en: There are four of them.
+    answer:
+      target: N'
+    distractors:
+      - target: En
+      - target: Hi
+      - target: El
+  - id: ge-17-6
+    type: spotError
+    target: Vols pa? Sí, vull.
+    en: Do you want bread? Yes, I want some.
+    errorWord:
+      target: vull
+    correction:
+      target: en vull
+    hint: Catalan keeps en even though English drops it.
+    correctedTarget: Vols pa? Sí, en vull.
+  - id: ge-17-7
+    type: chooseTranslation
+    direction: toEn
+    target: Hi ha un gos al parc.
+    en: There is a dog in the park.
+    distractorsEn:
+      - The dog is in the park.
+      - He has a dog in the park.
+      - There was a dog in the park.
+    distractorsTarget: []
+  - id: ge-17-8
+    type: chooseTranslation
+    direction: toEn
+    target: En vull dos.
+    en: I want two of them.
+    distractorsEn:
+      - I want it twice.
+      - There are two.
+      - I have two.
+    distractorsTarget: []

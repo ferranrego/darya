@@ -1,0 +1,133 @@
+id: gl-12
+title: The past, the Catalan way
+subtitle: anar plus an infinitive - and it does not mean "going to".
+grammarPoint: periphrastic-past
+grammarPointEn: "the periphrastic past: present of anar plus the infinitive, the
+  ordinary way to speak about completed past events"
+slides:
+  - id: gs-12-1
+    title: vaig menjar means "I ate"
+    body: It looks like "I go to eat", but it is the normal past tense in Catalan.
+      It catches out every learner once.
+    examples:
+      - target: Ahir vaig menjar peix.
+        en: Yesterday I ate fish.
+        highlight: vaig
+      - target: Va arribar molt tard.
+        en: He arrived very late.
+      - target: Vam anar a la platja.
+        en: We went to the beach.
+    table:
+      - - jo
+        - vaig
+      - - tu
+        - vas
+      - - ell, ella
+        - va
+      - - nosaltres
+        - vam
+      - - vosaltres
+        - vau
+      - - ells, elles
+        - van
+  - id: gs-12-2
+    title: The second verb never changes
+    body: Only the auxiliary carries the person; the main verb stays in the
+      infinitive.
+    examples:
+      - target: Vaig veure la Marta.
+        en: I saw Marta.
+      - target: Van sortir a les vuit.
+        en: They left at eight.
+  - id: gs-12-3
+    title: Telling it apart from the present
+    body: va followed by an infinitive is past. va on its own, or with a place, is
+      the present of anar.
+    examples:
+      - target: Va a l'escola.
+        en: He goes to school.
+      - target: Va anar a l'escola.
+        en: He went to school.
+exercises:
+  - id: ge-12-1
+    type: fillBlank
+    target: Ahir ___ menjar peix.
+    en: Yesterday I ate fish.
+    answer:
+      target: vaig
+    distractors:
+      - target: vas
+      - target: va
+      - target: van
+  - id: ge-12-2
+    type: fillBlank
+    target: Ells ___ arribar molt tard.
+    en: They arrived very late.
+    answer:
+      target: van
+    distractors:
+      - target: vam
+      - target: vau
+      - target: va
+  - id: ge-12-3
+    type: fillBlank
+    target: Nosaltres ___ anar a la platja.
+    en: We went to the beach.
+    answer:
+      target: vam
+    distractors:
+      - target: van
+      - target: vau
+      - target: vaig
+  - id: ge-12-4
+    type: fillBlank
+    target: La Marta va ___ un llibre.
+    en: Marta read a book.
+    answer:
+      target: llegir
+    distractors:
+      - target: llegeix
+      - target: llegia
+      - target: llegit
+  - id: ge-12-5
+    type: spotError
+    target: Ahir vaig menjava peix.
+    en: Yesterday I ate fish.
+    errorWord:
+      target: menjava
+    correction:
+      target: menjar
+    correctedTarget: Ahir vaig menjar peix.
+  - id: ge-12-6
+    type: buildSentence
+    en: Yesterday we went to the beach.
+    words:
+      - target: Ahir
+      - target: vam
+      - target: anar
+      - target: a
+      - target: la
+      - target: platja
+    extraWords:
+      - target: van
+      - target: anem
+  - id: ge-12-7
+    type: chooseTranslation
+    direction: toEn
+    target: Vaig veure la Marta al mercat.
+    en: I saw Marta at the market.
+    distractorsEn:
+      - I'm going to see Marta at the market.
+      - I see Marta at the market.
+      - Marta saw me at the market.
+    distractorsTarget: []
+  - id: ge-12-8
+    type: chooseTranslation
+    direction: toEn
+    target: Va anar a l'escola a peu.
+    en: He went to school on foot.
+    distractorsEn:
+      - He goes to school on foot.
+      - He is going to school on foot.
+      - He will go to school on foot.
+    distractorsTarget: []

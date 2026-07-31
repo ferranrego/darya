@@ -119,8 +119,11 @@ export default function ReadPage() {
   }, [poolEmpty]);
 
   useEffect(() => {
-    if (unread.length > 0 && unread[0].id !== activeTextId) {
-      queueMicrotask(() => setActiveTextId(unread[0].id));
+    if (unread.length > 0) {
+      const activeStillUnread = activeTextId != null && unread.some((t) => t.id === activeTextId);
+      if (!activeStillUnread && unread[0].id !== activeTextId) {
+        queueMicrotask(() => setActiveTextId(unread[0].id));
+      }
     }
   }, [unread, activeTextId]);
 

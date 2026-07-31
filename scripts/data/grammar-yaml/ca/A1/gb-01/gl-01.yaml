@@ -1,0 +1,194 @@
+id: gl-01
+title: ser and estar
+subtitle: Catalan has two verbs for "to be", and they divide the work
+  differently from Spanish.
+grammarPoint: ser-estar
+grammarPointEn: ser for identity, origin, quality, time and plain location;
+  estar for a state or a temporary stay
+slides:
+  - id: gs-01-1
+    title: ser says what something is
+    body: Identity, origin, job, a lasting quality, the time. This is the verb to
+      reach for first.
+    examples:
+      - target: Soc de Barcelona.
+        en: I'm from Barcelona.
+        highlight: Soc
+      - target: És metge.
+        en: He is a doctor.
+      - target: La casa és gran.
+        en: The house is big.
+    table:
+      - - jo
+        - soc
+      - - tu
+        - ets
+      - - ell, ella
+        - és
+      - - nosaltres
+        - som
+      - - vosaltres
+        - sou
+      - - ells, elles
+        - són
+  - id: gs-01-2
+    title: ser also says where something is
+    body: Here Catalan and Spanish part company. To simply locate something, Catalan
+      uses ser, not estar.
+    examples:
+      - target: On és el llibre?
+        en: Where is the book?
+      - target: La Marta és a casa.
+        en: Marta is at home.
+      - target: El gat és sota la taula.
+        en: The cat is under the table.
+  - id: gs-01-3
+    title: estar says how something is right now
+    body: Use estar for a state that came about, and for staying somewhere for a
+      while.
+    examples:
+      - target: Estic molt cansat.
+        en: I'm very tired.
+        highlight: Estic
+      - target: Com estàs avui?
+        en: How are you today?
+      - target: Aquesta setmana estic a Girona.
+        en: This week I'm staying in Girona.
+    table:
+      - - jo
+        - estic
+      - - tu
+        - estàs
+      - - ell, ella
+        - està
+      - - nosaltres
+        - estem
+      - - vosaltres
+        - esteu
+      - - ells, elles
+        - estan
+exercises:
+  - id: ge-01-1
+    type: fillBlank
+    target: Jo ___ de Girona.
+    en: I'm from Girona.
+    answer:
+      target: soc
+    distractors:
+      - target: estic
+      - target: és
+      - target: som
+  - id: ge-01-2
+    type: fillBlank
+    target: La Marta ___ professora.
+    en: Marta is a teacher.
+    answer:
+      target: és
+    distractors:
+      - target: està
+      - target: soc
+      - target: són
+  - id: ge-01-3
+    type: fillBlank
+    target: Avui ___ molt cansat.
+    en: Today I'm very tired.
+    answer:
+      target: estic
+    distractors:
+      - target: soc
+      - target: és
+      - target: està
+  - id: ge-01-4
+    type: fillBlank
+    target: On ___ el meu llibre?
+    en: Where is my book?
+    answer:
+      target: és
+    distractors:
+      - target: està
+      - target: soc
+      - target: sou
+    hint: Plain location takes ser in Catalan.
+  - id: ge-01-5
+    type: fillBlank
+    target: Nosaltres ___ estudiants.
+    en: We are students.
+    answer:
+      target: som
+    distractors:
+      - target: estem
+      - target: són
+      - target: sou
+  - id: ge-01-6
+    type: spotError
+    target: El llibre està a la taula.
+    en: The book is on the table.
+    errorWord:
+      target: està
+    correction:
+      target: és
+    hint: Where something simply is.
+    correctedTarget: El llibre és a la taula.
+  - id: ge-01-7
+    type: buildSentence
+    en: The house is very big.
+    words:
+      - target: La
+      - target: casa
+      - target: és
+      - target: molt
+      - target: gran
+    extraWords:
+      - target: està
+      - target: són
+  - id: ge-01-8
+    type: matchPairs
+    prompt: Match each form of ser with its person.
+    pairs:
+      - target: soc
+        en: I am
+      - target: ets
+        en: you are
+      - target: som
+        en: we are
+      - target: són
+        en: they are
+  - id: ge-01-9
+    type: chooseTranslation
+    direction: toEn
+    target: Aquesta setmana estic a Barcelona.
+    en: This week I'm staying in Barcelona.
+    distractorsEn:
+      - I am from Barcelona.
+      - Barcelona is a big city.
+      - I was in Barcelona this week.
+    distractorsTarget: []
+  - id: ge-01-10
+    type: fillBlank
+    target: Nosaltres ___ a casa.
+    en: We are at home.
+    answer:
+      target: som
+    distractors:
+      - target: estan
+      - target: és
+      - target: són
+  - id: ge-01-11
+    type: spotError
+    target: El llibre està aquí.
+    en: The book is here.
+    errorWord:
+      target: està
+    correction:
+      target: és
+    correctedTarget: El llibre és aquí.
+  - id: ge-01-12
+    type: chooseTranslation
+    direction: toEn
+    target: La casa és gran.
+    en: The house is big.
+    distractorsEn:
+      - The house is small.
+      - The car is big.
+      - The house was big.
+    distractorsTarget: []

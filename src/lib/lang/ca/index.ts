@@ -1,7 +1,15 @@
 import type { LanguageProfile } from "../types.ts";
 import { buildLexiconIndex } from "./lexicon-index.ts";
 import { matchKey, normalizeCatalan, tokenizeCatalan } from "./normalize.ts";
-import { CULTURAL_SETTING, ORTHOGRAPHY, SCENARIOS, TEACHER } from "./prompts.ts";
+import {
+  CULTURAL_SETTING,
+  EXPLANATION_FOCUS,
+  ORTHOGRAPHY,
+  SCENARIOS,
+  TEACHER,
+  WORD_ROLES,
+  CHAT,
+} from "./prompts.ts";
 
 /**
  * Catalan (Central / Barcelona standard). ISO 639-1 `ca`.
@@ -16,10 +24,6 @@ export const ca: LanguageProfile = {
   code: "ca",
   name: "Catalan",
   dir: "ltr",
-  ttsLocale: "ca",
-  // Google and most systems ship a real Catalan voice; Spanish is an
-  // intelligible last resort rather than a good one.
-  ttsVoicePrefixes: ["ca", "es"],
   fontStack: "var(--font-inter)",
   // Latin script takes normal tracking; unlike Arabic there is nothing to
   // break. Still needs a unit - a bare 0 is dropped when read through var().
@@ -54,6 +58,12 @@ export const ca: LanguageProfile = {
     greeting: { target: "Benvingut", en: "welcome" },
     sentence: { target: "Hola, com estàs?", en: "Hello, how are you?" },
     words: ["llibre", "casa", "jo"],
+    phaseGreetings: {
+      morning: "Bon dia",
+      day: "Hola",
+      evening: "Bona tarda",
+      night: "Bona nit",
+    },
   },
 
   prompts: {
@@ -62,5 +72,8 @@ export const ca: LanguageProfile = {
     culturalSetting: CULTURAL_SETTING,
     scenarios: SCENARIOS,
     inflectionExample: "som bons = we are good",
+    explanationFocus: EXPLANATION_FOCUS,
+    wordRoles: WORD_ROLES,
+    chat: CHAT,
   },
 };

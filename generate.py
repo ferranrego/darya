@@ -1,0 +1,138 @@
+import os
+import json
+
+os.makedirs('temp/lexicon_domains', exist_ok=True)
+
+astrophysics = [
+    ("forat negre", "black hole", "L'horitzó d'esdeveniments d'un forat negre és la frontera a partir de la qual res no pot escapar.", "The event horizon of a black hole is the boundary from which nothing can escape."),
+    ("quàsar", "quasar", "Els quàsars són els nuclis galàctics actius més lluminosos i energètics de l'univers conegut.", "Quasars are the most luminous and energetic active galactic nuclei in the known universe."),
+    ("púlsar", "pulsar", "Un púlsar és una estrella de neutrons altament magnetitzada que emet feixos de radiació electromagnètica.", "A pulsar is a highly magnetized neutron star that emits beams of electromagnetic radiation."),
+    ("nana blanca", "white dwarf", "Després d'esgotar el seu combustible nuclear, el Sol es convertirà en una nana blanca.", "After exhausting its nuclear fuel, the Sun will become a white dwarf."),
+    ("supernova", "supernova", "L'explosió d'una supernova pot alliberar tanta energia com el Sol durant tota la seva vida.", "The explosion of a supernova can release as much energy as the Sun during its entire lifetime."),
+    ("matèria fosca", "dark matter", "La matèria fosca no interacciona amb la llum, però la seva presència es dedueix pels seus efectes gravitatoris.", "Dark matter does not interact with light, but its presence is inferred by its gravitational effects."),
+    ("energia fosca", "dark energy", "S'hipotetitza que l'energia fosca és la responsable de l'acceleració en l'expansió de l'univers.", "Dark energy is hypothesized to be responsible for the accelerating expansion of the universe."),
+    ("singularitat", "singularity", "Al centre d'un forat negre, s'espera que hi hagi una singularitat on la densitat és infinita.", "At the center of a black hole, a singularity where density is infinite is expected to exist."),
+    ("horitzó d'esdeveniments", "event horizon", "Un cop travesseu l'horitzó d'esdeveniments, no hi ha retorn possible.", "Once you cross the event horizon, there is no possible return."),
+    ("espai-temps", "spacetime", "La teoria general de la relativitat descriu la gravetat com la curvatura de l'espai-temps.", "The general theory of relativity describes gravity as the curvature of spacetime."),
+    ("relativitat", "relativity", "La relativitat general ha superat nombroses proves experimentals des que Einstein la va formular.", "General relativity has passed numerous experimental tests since Einstein formulated it."),
+    ("mecànica quàntica", "quantum mechanics", "La mecànica quàntica descriu el comportament de la matèria a escales subatòmiques.", "Quantum mechanics describes the behavior of matter at subatomic scales."),
+    ("bosó", "boson", "El bosó de Higgs atorga massa a la resta de partícules elementals segons el model estàndard.", "The Higgs boson gives mass to the rest of the elementary particles according to the standard model."),
+    ("fermió", "fermion", "Els electrons i els quarks són exemples de fermions, que constitueixen la matèria ordinària.", "Electrons and quarks are examples of fermions, which constitute ordinary matter."),
+    ("neutrí", "neutrino", "Un neutrí travessa la matèria gairebé sense interactuar-hi, fet que en dificulta enormement la detecció.", "A neutrino passes through matter almost without interacting, which makes its detection enormously difficult."),
+    ("antimatèria", "antimatter", "Quan l'antimatèria i la matèria col·lideixen, s'aniquilen mútuament alliberant fotons d'alta energia.", "When antimatter and matter collide, they annihilate each other releasing high-energy photons."),
+    ("paral·laxi", "parallax", "El mètode de la paral·laxi s'utilitza per mesurar la distància de les estrelles més properes a la Terra.", "The parallax method is used to measure the distance of the stars closest to Earth."),
+    ("decalatge cap al roig", "redshift", "El decalatge cap al roig de les galàxies llunyanes és una prova fonamental de l'expansió de l'univers.", "The redshift of distant galaxies is fundamental proof of the expansion of the universe."),
+    ("fons còsmic de microones", "cosmic microwave background", "El fons còsmic de microones és la radiació romanent de les primeres etapes del Big Bang.", "The cosmic microwave background is the remnant radiation from the early stages of the Big Bang."),
+    ("constant cosmològica", "cosmological constant", "Einstein va introduir la constant cosmològica originalment per aconseguir un model d'univers estàtic.", "Einstein originally introduced the cosmological constant to achieve a static universe model."),
+    ("multivers", "multiverse", "La hipòtesi del multivers postula l'existència de múltiples universos a banda del nostre.", "The multiverse hypothesis postulates the existence of multiple universes apart from our own."),
+    ("teoria de cordes", "string theory", "La teoria de cordes intenta unificar la mecànica quàntica amb la relativitat general mitjançant vibracions unidimensionals.", "String theory attempts to unify quantum mechanics with general relativity through one-dimensional vibrations."),
+    ("expansió mètrica", "metric expansion", "L'expansió mètrica de l'espai explica com la distància entre galàxies augmenta amb el temps.", "The metric expansion of space explains how the distance between galaxies increases over time."),
+    ("lent gravitatòria", "gravitational lens", "Una lent gravitatòria pot distorsionar i magnificar la llum d'una galàxia situada darrere d'un cúmul massiu.", "A gravitational lens can distort and magnify the light of a galaxy located behind a massive cluster."),
+    ("ona gravitacional", "gravitational wave", "El descobriment d'una ona gravitacional procedent de la fusió de forats negres va merèixer el premi Nobel.", "The discovery of a gravitational wave from merging black holes merited the Nobel prize."),
+    ("fotó", "photon", "El fotó és la partícula elemental responsable de les interaccions electromagnètiques.", "The photon is the elementary particle responsible for electromagnetic interactions."),
+    ("nucleosíntesi", "nucleosynthesis", "La nucleosíntesi primordial va determinar l'abundància inicial d'hidrogen i heli a l'univers.", "Primordial nucleosynthesis determined the initial abundance of hydrogen and helium in the universe."),
+    ("plasma", "plasma", "El plasma és el quart estat de la matèria, format per un gas altament ionitzat.", "Plasma is the fourth state of matter, formed by a highly ionized gas."),
+    ("magnetosfera", "magnetosphere", "La magnetosfera terrestre ens protegeix de la letalitat del vent solar i els raigs còsmics.", "The Earth's magnetosphere protects us from the lethality of solar wind and cosmic rays."),
+    ("heliosfera", "heliosphere", "La sonda Voyager 1 va esdevenir el primer objecte humà en travessar els límits de l'heliosfera.", "The Voyager 1 probe became the first human object to cross the boundaries of the heliosphere."),
+    ("raig còsmic", "cosmic ray", "Un raig còsmic és una partícula subatòmica de gran energia que viatja per l'espai a velocitats properes a la de la llum.", "A cosmic ray is a highly energetic subatomic particle that travels through space at speeds close to that of light."),
+    ("exoplaneta", "exoplanet", "La recerca de vida extraterrestre se centra actualment en l'anàlisi de l'atmosfera de qualsevol exoplaneta prometedor.", "The search for extraterrestrial life is currently focused on analyzing the atmosphere of any promising exoplanet."),
+    ("nana marró", "brown dwarf", "Una nana marró no té prou massa per sostenir la fusió de l'hidrogen al seu nucli.", "A brown dwarf does not have enough mass to sustain hydrogen fusion in its core."),
+    ("gegant roja", "red giant", "Quan el Sol esdevingui una gegant roja, engolirà Mercuri, Venus i, possiblement, la Terra.", "When the Sun becomes a red giant, it will engulf Mercury, Venus, and possibly Earth."),
+    ("disc d'acreció", "accretion disk", "El disc d'acreció al voltant del forat negre supermassiu emet radiació X intensa per la fricció.", "The accretion disk around the supermassive black hole emits intense X-radiation due to friction."),
+    ("espin", "spin", "L'espin és una propietat quàntica intrínseca de les partícules que sovint es compara erròniament amb la rotació.", "Spin is an intrinsic quantum property of particles that is often erroneously compared to rotation."),
+    ("esfericitat", "sphericity", "La gravetat empeny els cossos massius cap a l'esfericitat superant la rigidesa dels materials.", "Gravity pulls massive bodies toward sphericity overcoming the rigidity of the materials."),
+    ("anomalia", "anomaly", "L'anomalia de les Pioneer segueix sent un dels fenòmens inexplicats de la dinàmica de l'espai profund.", "The Pioneer anomaly remains one of the unexplained phenomena of deep space dynamics."),
+    ("periheli", "perihelion", "La velocitat orbital de la Terra és màxima quan assoleix el seu periheli al gener.", "Earth's orbital speed is highest when it reaches its perihelion in January."),
+    ("afeli", "aphelion", "A l'afeli, el planeta es troba en el punt més allunyat de la seva òrbita respecte a l'estrella principal.", "At aphelion, the planet is at the furthest point of its orbit with respect to the main star."),
+    ("translació", "translation", "El moviment de translació planetària obeeix rigorosament les lleis de Kepler.", "Planetary translation movement rigorously obeys Kepler's laws."),
+    ("nutació", "nutation", "La nutació és un moviment d'oscil·lació de l'eix de rotació de la Terra superposat a la precessió.", "Nutation is an oscillatory motion of the Earth's axis of rotation superimposed on precession."),
+    ("precessió", "precession", "La precessió dels equinoccis altera lentament la posició aparent dels pols celestes al llarg dels mil·lennis.", "The precession of the equinoxes slowly alters the apparent position of the celestial poles over millennia."),
+    ("astrometria", "astrometry", "L'astrometria de precisió del satèl·lit Gaia ha revolucionat el nostre mapa tridimensional de la Via Làctia.", "The precision astrometry of the Gaia satellite has revolutionized our three-dimensional map of the Milky Way."),
+    ("espectroscòpia", "spectroscopy", "A través de l'espectroscòpia podem esbrinar la composició química de galàxies llunyanes.", "Through spectroscopy we can determine the chemical composition of distant galaxies."),
+    ("radiotelescopi", "radio telescope", "Aquest enorme radiotelescopi ha recollit senyals febles procedents de quàsars molt allunyats.", "This enormous radio telescope has collected faint signals coming from highly distant quasars."),
+    ("fotometria", "photometry", "La fotometria de trànsits és vital per detectar l'enfosquiment temporal que causa un planeta en creuar per davant del seu astre.", "Transit photometry is vital to detect the temporary dimming caused by a planet crossing in front of its star."),
+    ("interferometria", "interferometry", "La interferometria d'escala de base molt llarga va permetre capturar la primera imatge d'un forat negre.", "Very-long-baseline interferometry allowed the capture of the first image of a black hole."),
+    ("barió", "baryon", "El protó i el neutró són el tipus de barió més comú en el nostre entorn observable.", "The proton and neutron are the most common type of baryon in our observable environment."),
+    ("mesó", "meson", "Un mesó és una partícula subatòmica inestable composta per un quark i un antiquark.", "A meson is an unstable subatomic particle composed of a quark and an antiquark.")
+]
+
+emotions = [
+    ("melangia", "melancholy", "Sentia una melangia profunda en contemplar els paisatges de la seva infantesa.", "He felt a deep melancholy when contemplating the landscapes of his childhood."),
+    ("eufòria", "euphoria", "Després d'aprovar les oposicions, una onada d'eufòria li va recórrer tot el cos.", "After passing the civil service exams, a wave of euphoria rushed through his body."),
+    ("angoixa", "anguish", "L'angoixa de no saber on era el seu fill el consumia per dins.", "The anguish of not knowing where his son was consumed him inside."),
+    ("empatia", "empathy", "El terapeuta va demostrar una gran empatia en comprendre el patiment silenciós del pacient.", "The therapist demonstrated great empathy in understanding the patient's silent suffering."),
+    ("apatia", "apathy", "La constant monotonia de la feina havia degenerat en una apatia crònica vers qualsevol novetat.", "The constant monotony of the job had degenerated into chronic apathy towards any novelty."),
+    ("resiliència", "resilience", "La seva resiliència davant les adversitats és un exemple inspirador per a tothom.", "Her resilience in the face of adversities is an inspiring example for everyone."),
+    ("astorament", "amazement", "L'astorament del públic fou majúscul quan el mag va fer desaparèixer un elefant a l'escenari.", "The amazement of the audience was capital when the magician made an elephant disappear on stage."),
+    ("recança", "regret", "Ho va vendre tot amb molta recança, ja que eren els objectes personals dels seus avis.", "He sold everything with a lot of regret, since they were his grandparents' personal items."),
+    ("nostàlgia", "nostalgia", "Mirar les fotografies en blanc i negre sempre li despertava una intense nostàlgia.", "Looking at the black-and-white photographs always awakened an intense nostalgia in him."),
+    ("enyorança", "longing", "L'enyorança per la seva terra natal es feia més dura durant les festes de Nadal.", "The longing for his homeland became harder during the Christmas holidays."),
+    ("desídia", "laziness", "La deixadesa del govern reflecteix una desídia institucional inacceptable per part dels responsables.", "The government's negligence reflects an unacceptable institutional laziness on the part of those in charge."),
+    ("ràbia", "rage", "L'actitud prepotent del cap va encendre una ràbia incontenible entre els treballadors.", "The boss's arrogant attitude ignited an uncontainable rage among the workers."),
+    ("indignació", "indignation", "La notícia del frau va generar una onada d'indignació als carrers de la capital.", "The news of the fraud generated a wave of indignation in the streets of the capital."),
+    ("desesguard", "defenselessness", "L'orfandat prematura la va deixar en un desesguard que l'obligà a madurar ràpidament.", "Her premature orphanhood left her in a defenselessness that forced her to mature quickly."),
+    ("trasbals", "upheaval", "El divorci va suposar un trasbals enorme en la rutina de tots els membres de la família.", "The divorce meant a huge upheaval in the routine of all family members."),
+    ("anhel", "yearning", "Té l'anhel secret de recórrer el món amb veler abans de jubilar-se.", "She has the secret yearning to travel the world on a sailboat before retiring."),
+    ("neguit", "restlessness", "L'espera dels resultats mèdics li provocava un neguit que no el deixava dormir.", "Waiting for the medical results caused him a restlessness that wouldn't let him sleep."),
+    ("delit", "delight", "Degustar aquell pastís de xocolata va ser un delit absolut per als sentits.", "Tasting that chocolate cake was an absolute delight for the senses."),
+    ("efervescència", "effervescence", "L'ambient al festival era pura efervescència de colors, música i alegria desbordada.", "The atmosphere at the festival was pure effervescence of colors, music, and overflowing joy."),
+    ("aflicció", "affliction", "Les llàgrimes mostraven la fonda aflicció que sentia per la pèrdua de la seva parella.", "The tears showed the deep affliction she felt for the loss of her partner."),
+    ("consternació", "consternation", "Les autoritats van expressar la seva consternació pels terribles estralls del terratrèmol.", "The authorities expressed their consternation over the terrible ravages of the earthquake."),
+    ("esglai", "fright", "Quin esglai m'has donat amagant-te darrere la porta en plena nit!", "What a fright you gave me hiding behind the door in the middle of the night!"),
+    ("feredat", "dread", "M'entomava una autèntica feredat només de pensar que m'hauria d'enfrontar a aquell monstre de nou.", "A true dread took hold of me just thinking that I'd have to face that monster again."),
+    ("basarda", "apprehension", "Travessar el bosc a les fosques li feia tanta basarda que va preferir esperar-se fins a l'alba.", "Crossing the forest in the dark gave him such apprehension that he preferred to wait until dawn."),
+    ("esverament", "alarm", "El so sobtat de la sirena antiaèria va causar un esverament generalitzat a la plaça.", "The sudden sound of the air raid siren caused a widespread alarm in the square."),
+    ("gaubança", "joy", "Veure els nens jugar feliços enmig del prat transmetia una profunda gaubança.", "Seeing the children playing happily in the middle of the meadow transmitted a profound joy."),
+    ("complaença", "complacency", "Va acceptar la crítica amb una complaença inesperada, demostrant una gran maduresa professional.", "He accepted the criticism with unexpected complacency, demonstrating great professional maturity."),
+    ("desencís", "disillusionment", "Després d'anys de militància, el desencís amb el projecte polític el va abocar a donar-se de baixa.", "After years of militancy, disillusionment with the political project drove him to cancel his membership."),
+    ("despit", "spite", "Va esquinçar les cartes només per despit, penedint-se'n a l'instant.", "She tore the letters solely out of spite, regretting it instantly."),
+    ("rancúnia", "grudge", "Abrigava una vella rancúnia cap al seu germà a causa de l'herència familiar.", "He harbored an old grudge against his brother due to the family inheritance."),
+    ("recel", "suspicion", "Les mesures governamentals foren acollides amb recel per part del sector empresarial.", "The governmental measures were met with suspicion by the business sector."),
+    ("suspicàcia", "suspiciousness", "El seu silenci excessiu va despertar la suspicàcia dels investigadors durant l'interrogatori.", "His excessive silence awakened the suspiciousness of the investigators during the interrogation."),
+    ("escepticisme", "skepticism", "L'anunci d'una fusió freda va ser rebut amb enorme escepticisme per la comunitat científica.", "The announcement of cold fusion was received with enormous skepticism by the scientific community."),
+    ("certesa", "certainty", "Va parlar amb tanta certesa que ningú no va gosar qüestionar-li els arguments.", "She spoke with such certainty that no one dared to question her arguments."),
+    ("estupefacció", "stupefaction", "La revelació final de la novel·la em va deixar en estat de total estupefacció.", "The novel's final revelation left me in a state of total stupefaction."),
+    ("esbalaïment", "bewilderment", "Es mirava els trucs d'il·lusionisme amb un esbalaïment gairebé infantil.", "He watched the illusionism tricks with an almost childish bewilderment."),
+    ("passió", "passion", "Pintava cada tela amb una passió desmesurada, com si li anés la vida en cada pinzellada.", "He painted each canvas with an excessive passion, as if his life depended on every brushstroke."),
+    ("frenesí", "frenzy", "La rebaixa va desencadenar un frenesí de compres irreflexives entre els clients que esperaven fora.", "The sale triggered a frenzy of thoughtless purchases among the customers waiting outside."),
+    ("deliri", "delirium", "Les altes febres el sumien en un deliri ple de visions incomprensibles.", "The high fevers plunged him into a delirium full of incomprehensible visions."),
+    ("èxtasi", "ecstasy", "Els devots assolien un estat d'èxtasi místic mitjançant càntics que duraven hores.", "The devotees achieved a state of mystical ecstasy through chants that lasted hours."),
+    ("penediment", "remorse", "L'acusat no va mostrar cap signe de penediment durant la lectura de la sentència.", "The accused showed no sign of remorse during the reading of the sentence."),
+    ("remordiment", "regret", "Un fosc remordiment no el deixava perdonar-se a si mateix pel dany causat anys enrere.", "A dark regret would not let him forgive himself for the damage caused years ago."),
+    ("compunció", "compunction", "S'acostà a l'altar amb compunció per expiar els seus pecats inconfessables.", "He approached the altar with compunction to expiate his unconfessable sins."),
+    ("contrició", "contrition", "L'acte de contrició exigeix una reflexió interior i un desig genuí de millora personal.", "The act of contrition demands an interior reflection and a genuine desire for personal improvement."),
+    ("alleujament", "relief", "Quan va saber que l'avió havia aterrat sa i estalvi, va sentir un alleujament incommensurable.", "When he learned that the plane had landed safely, he felt an immeasurable relief."),
+    ("assossec", "peace", "La vida al camp li va aportar l'assossec que l'estrès de la gran ciutat li havia arrabassat.", "Life in the country brought him the peace that the stress of the big city had snatched from him."),
+    ("serenor", "serenity", "Afrontava les pitjors tempestes amb una serenor que infonia coratge a la resta de la tripulació.", "She faced the worst storms with a serenity that instilled courage in the rest of the crew."),
+    ("placidesa", "placidity", "L'estany reflectia una placidesa absoluta, sense que ni un sol bri d'aire n'arrissés la superfície.", "The pond reflected absolute placidity, without a single breath of air ruffling its surface."),
+    ("equanimitat", "equanimity", "El jutge va abordar un cas tan mediàtic mantenint una equanimitat lloable fins al darrer moment.", "The judge tackled such a media-heavy case maintaining a laudable equanimity until the very last moment."),
+    ("tedi", "tedium", "El llarg discurs presidencial va induir un tedi asfixiant entre el públic assistent.", "The long presidential speech induced a suffocating tedium among the attending audience.")
+]
+
+def make_json(domain_name, word_list, tags):
+    entries = []
+    for i, (word, gloss, ex_t, ex_en) in enumerate(word_list):
+        entries.append({
+            "id": f"lx-TEMP-{domain_name}-{i+1}",
+            "target": word,
+            "targetNormalized": word,
+            "glossEn": gloss,
+            "pos": "noun",
+            "freqRank": 999,
+            "freqBand": 9 if i % 2 == 0 else 10,
+            "register": "academic" if domain_name == 'astro' else "literary",
+            "variants": [word + "s" if not word.endswith('s') else word], 
+            "exampleTarget": ex_t,
+            "exampleEn": ex_en,
+            "tags": tags,
+            "word": word,
+            "gloss": gloss,
+            "example": ex_t
+        })
+    return {"entries": entries}
+
+with open('temp/lexicon_domains/c1_astrophysics.json', 'w', encoding='utf-8') as f:
+    json.dump(make_json('astro', astrophysics, ["astrophysics", "science", "C1"]), f, indent=2, ensure_ascii=False)
+
+with open('temp/lexicon_domains/c1_emotions.json', 'w', encoding='utf-8') as f:
+    json.dump(make_json('emot', emotions, ["emotions", "psychology", "C1"]), f, indent=2, ensure_ascii=False)

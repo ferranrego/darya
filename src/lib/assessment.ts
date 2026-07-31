@@ -8,11 +8,22 @@ import { levels } from "./content/load";
  */
 
 /**
- * How many words to show from each frequency band (50 total). Every band is
- * sampled - including 7 and 8 - so the estimate can span the whole lexicon;
- * otherwise the upper levels are mathematically unreachable.
+ * How many words to seed initially for the dynamic spawner.
  */
-const SAMPLE_PER_BAND = [8, 7, 7, 6, 6, 6, 5, 5];
+const INITIAL_SEED_BANDS = [
+  1, 1, 1, 1, 1, 1,
+  2, 2, 2, 2,
+  3, 3, 3, 3,
+  4, 4, 4,
+  5, 5, 5,
+  6, 6, 6,
+  7, 7, 7,
+  8, 8, 8,
+  9, 9,
+  10, 10,
+  11, 11,
+  12
+];
 
 /** Bands with recognition at or above this seed every core word as known. */
 const BAND_KNOWN_THRESHOLD = 0.8;
@@ -22,25 +33,45 @@ export interface AssessmentWord {
   band: number;
 }
 
-export function sampleAssessmentWords(entries: LexiconEntry[]): AssessmentWord[] {
-  const byBand = new Map<number, LexiconEntry[]>();
-  for (const e of entries) {
-    // Function words make poor assessment items; prefer content words.
-    if (e.pos === "particle" || e.pos === "conjunction" || e.pos === "preposition") continue;
-    const list = byBand.get(e.freqBand) ?? [];
-    list.push(e);
-    byBand.set(e.freqBand, list);
-  }
-
+export function getInitialSeed(entries: LexiconEntry[], excludeIds?: Set<string>): AssessmentWord[] {
   const out: AssessmentWord[] = [];
-  for (let band = 1; band <= FREQ_BAND_COUNT; band++) {
-    const pool = [...(byBand.get(band) ?? [])];
-    const want = SAMPLE_PER_BAND[band - 1] ?? 0;
-    // Deterministic-ish spread: sort by rank, take evenly spaced items.
-    pool.sort((a, b) => a.freqRank - b.freqRank);
-    const step = Math.max(1, Math.floor(pool.length / Math.max(want, 1)));
-    for (let i = 0; i < pool.length && out.filter((w) => w.band === band).length < want; i += step) {
-      out.push({ entry: pool[i], band });
+  for (const band of INITIAL_SEED_BANDS) {
+    const candidates = entries.filter(e => 
+      e.freqBand === band && 
+      e.pos !== "particle" && e.pos !== "conjunction" && e.pos !== "preposition" &&
+      (!excludeIds || !excludeIds.has(e.id))
+    );
+    if (candidates.length > 0) {
+      const idx = Math.floor(Math.random() * candidates.length);
+      out.push({ entry: candidates[idx], band });
+    }
+  }
+  return out;
+}
+
+export function spawnRelatedWords(
+  tappedBand: number,
+  entries: LexiconEntry[],
+  excludeIds: Set<string>
+): AssessmentWord[] {
+  const out: AssessmentWord[] = [];
+  // Spawn 3 words. To probe higher levels, we pick from band, band+1, band+2 (capped at max band).
+  const targetBands = [
+    tappedBand,
+    Math.min(tappedBand + 1, FREQ_BAND_COUNT),
+    Math.min(tappedBand + 2, FREQ_BAND_COUNT)
+  ];
+  
+  for (const band of targetBands) {
+    const candidates = entries.filter(e => 
+      e.freqBand === band && 
+      e.pos !== "particle" && e.pos !== "conjunction" && e.pos !== "preposition" &&
+      !excludeIds.has(e.id)
+    );
+    if (candidates.length > 0) {
+      const idx = Math.floor(Math.random() * candidates.length);
+      out.push({ entry: candidates[idx], band });
+      excludeIds.add(candidates[idx].id); // prevent picking same word twice in this spawn loop
     }
   }
   return out;

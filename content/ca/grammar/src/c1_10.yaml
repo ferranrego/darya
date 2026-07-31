@@ -1,0 +1,104 @@
+id: c1_10
+title: Caiguda i canvi de preposicions
+subtitle: Comportament de les preposicions febles davant 'que' o infinitiu
+grammarPoint: In Catalan, weak prepositions (a, de, en, amb) must be dropped before the conjunction 'que'. Before an infinitive, 'en' and 'amb' change to 'a' or 'de'.
+grammarPointEn: In Catalan, weak prepositions (a, de, en, amb) must be dropped before the conjunction 'que'. Before an infinitive, 'en' and 'amb' change to 'a' or 'de'.
+slides:
+  - id: slide_1
+    title: Dropping Prepositions before 'que'
+    body: The weak prepositions (a, de, en, amb) disappear entirely when followed by the conjunction "que".
+    examples:
+      - target: M'adono que has vingut.
+        translit: I realize that you have come.
+        en: I realize that you have come.
+        highlight: que
+      - target: Confio que aprovaràs.
+        translit: I trust that you will pass.
+        en: I trust that you will pass.
+        highlight: que
+  - id: slide_2
+    title: Changing Prepositions before an Infinitive
+    body: When followed by an infinitive, the prepositions "en" and "amb" generally change to "a" or "de".
+    examples:
+      - target: Confio d'aprovar l'examen.
+        translit: I trust to pass the exam.
+        en: I hope to pass the exam.
+        highlight: d'aprovar
+      - target: L'amenacen d'acomiadar-lo.
+        translit: They threaten him with firing him.
+        en: They threaten to fire him.
+        highlight: d'acomiadar
+  - id: slide_3
+    title: Exceptions and Nuances
+    body: Remember that this rule only applies to weak prepositions. Strong prepositions (contra, sense, per, etc.) are maintained.
+    examples:
+      - target: Ho ha fet sense que ningú ho sàpiga.
+        translit: He has done it without that anyone it knows.
+        en: He did it without anyone knowing.
+        highlight: sense que
+exercises:
+  - id: ex_1
+    type: fillBlank
+    target: Estic segur ___ vindrà.
+    translit: I am sure that he will come.
+    en: I am sure that he will come.
+    answer:
+      target: que
+      translit: that
+    distractors:
+      - target: de que
+        translit: of that
+      - target: a que
+        translit: to that
+  - id: ex_2
+    type: fillBlank
+    target: Tarda molt ___ preparar-se.
+    translit: He takes long to get ready.
+    en: He takes a long time to get ready.
+    answer:
+      target: a
+      translit: to
+    distractors:
+      - target: en
+        translit: in
+      - target: amb
+        translit: with
+  - id: ex_3
+    type: fillBlank
+    target: M'adono ___ ho he fet malament.
+    translit: I realize that I have done it wrong.
+    en: I realize that I have done it wrong.
+    answer:
+      target: que
+      translit: that
+    distractors:
+      - target: de que
+        translit: of that
+      - target: a que
+        translit: to that
+  - id: ex_4
+    type: fillBlank
+    target: Confio ___ guanyarem el partit.
+    translit: I trust that we will win the match.
+    en: I am confident that we will win the match.
+    answer:
+      target: que
+      translit: that
+    distractors:
+      - target: en que
+        translit: in that
+      - target: amb que
+        translit: with that
+  - id: ex_5
+    type: fillBlank
+    target: L'han amenaçat ___ expulsar-lo.
+    translit: They have threatened him to expel him.
+    en: They threatened to expel him.
+    answer:
+      target: d'
+      translit: of
+    distractors:
+      - target: amb
+        translit: with
+      - target: en
+        translit: in

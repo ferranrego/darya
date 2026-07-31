@@ -1,0 +1,118 @@
+id: b2_11
+title: Verbs pronominals
+subtitle: adonar-se, queixar-se, penedir-se
+grammarPoint: "Verbs que exigeixen o admeten l'ús de pronoms febles."
+grammarPointEn: "Pronominal verbs."
+slides:
+  - id: b2_11_s1
+    title: Què són els verbs pronominals?
+    body: "Alguns verbs s'han de conjugar necessàriament amb un pronom feble que concorda amb el subjecte (em, et, es, ens, us, es). Exemples típics: *queixar-se, penedir-se, adonar-se, atrevir-se*."
+    examples:
+      - target: "Ell sempre es queixa del fred."
+        translit: ""
+        en: "He always complains about the cold."
+        highlight: "es queixa"
+      - target: "Ens penedim d'haver arribat tard."
+        translit: ""
+        en: "We regret having arrived late."
+        highlight: "Ens penedim"
+  - id: b2_11_s2
+    title: Adonar-se
+    body: "El verb *adonar-se* (notar, percebre alguna cosa) sempre va acompanyat d'un pronom, i porta la preposició *de* davant del seu complement."
+    examples:
+      - target: "M'he adonat de la meva errada."
+        translit: ""
+        en: "I have realized my mistake."
+        highlight: "M'he adonat de"
+      - target: "No s'adonen del perill."
+        translit: ""
+        en: "They don't realize the danger."
+        highlight: "s'adonen de"
+  - id: b2_11_s3
+    title: Queixar-se i penedir-se
+    body: "Aquests verbs també demanen la preposició *de* pel seu complement de règim."
+    examples:
+      - target: "T'has queixat del soroll?"
+        translit: ""
+        en: "Did you complain about the noise?"
+        highlight: "T'has queixat de"
+      - target: "Em penedeixo d'haver dit això."
+        translit: ""
+        en: "I regret having said that."
+        highlight: "Em penedeixo de"
+exercises:
+  - id: b2_11_e1
+    type: fillBlank
+    target: "No ___ he adonat que estaves aquí."
+    translit: ""
+    en: "I didn't realize you were here."
+    answer:
+      target: "m'"
+      translit: ""
+    distractors:
+      - target: "em"
+        translit: ""
+      - target: "es"
+        translit: ""
+      - target: "ens"
+        translit: ""
+  - id: b2_11_e2
+    type: fillBlank
+    target: "Ell sempre ___ queixa per tot."
+    translit: ""
+    en: "He always complains about everything."
+    answer:
+      target: "es"
+      translit: ""
+    distractors:
+      - target: "s'"
+        translit: ""
+      - target: "em"
+        translit: ""
+      - target: "es va"
+        translit: ""
+  - id: b2_11_e3
+    type: fillBlank
+    target: "Vostès ___ penediran d'aquesta decisió."
+    translit: ""
+    en: "You (formal plural) will regret this decision."
+    answer:
+      target: "es"
+      translit: ""
+    distractors:
+      - target: "us"
+        translit: ""
+      - target: "ens"
+        translit: ""
+      - target: "se"
+        translit: ""
+  - id: b2_11_e4
+    type: fillBlank
+    target: "Nosaltres ___ atrevim a dir la veritat."
+    translit: ""
+    en: "We dare to tell the truth."
+    answer:
+      target: "ens"
+      translit: ""
+    distractors:
+      - target: "us"
+        translit: ""
+      - target: "es"
+        translit: ""
+      - target: "m'"
+        translit: ""
+  - id: b2_11_e5
+    type: fillBlank
+    target: "Per què ___ queixeu tant?"
+    translit: ""
+    en: "Why do you (plural) complain so much?"
+    answer:
+      target: "us"
+      translit: ""
+    distractors:
+      - target: "es"
+        translit: ""
+      - target: "ens"
+        translit: ""
+      - target: "t'"
+        translit: ""

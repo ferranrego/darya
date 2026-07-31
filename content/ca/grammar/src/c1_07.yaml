@@ -1,0 +1,108 @@
+id: c1_07
+title: L'impersonalitat
+subtitle: Hom, es, 3a persona plural
+grammarPoint: Com expressar impersonalitat mitjançant 'hom', 'es' o la tercera persona del plural.
+grammarPointEn: How to express impersonality using 'hom', 'es', or the 3rd person plural.
+slides:
+  - id: s1
+    title: El pronom "hom"
+    body: "El pronom indefinit 'hom' s'utilitza en registres formals i escrits per expressar impersonalitat. Va acompanyat del verb en tercera persona del singular."
+    examples:
+      - target: Hom creu que la situació millorarà.
+        translit: Hom creu que la situació millorarà.
+        en: One believes that the situation will improve.
+        highlight: Hom creu
+      - target: En aquest país, hom viu molt bé.
+        translit: En aquest país, hom viu molt bé.
+        en: In this country, one lives very well.
+        highlight: hom viu
+  - id: s2
+    title: Les impersonals amb "es"
+    body: "L'estructura més habitual en tots els registres per expressar impersonalitat és el pronom 'es' amb el verb en tercera persona del singular."
+    examples:
+      - target: Aquí es menja d'allò més bé.
+        translit: Aquí es menja d'allò més bé.
+        en: Here one eats exceedingly well.
+        highlight: es menja
+      - target: Es diu que plourà demà.
+        translit: Es diu que plourà demà.
+        en: It is said that it will rain tomorrow.
+        highlight: Es diu
+  - id: s3
+    title: La tercera persona del plural
+    body: "Per expressar accions en què no es coneix o no s'especifica qui fa l'acció, podem usar la tercera persona del plural, especialment en el llenguatge oral."
+    examples:
+      - target: Han trucat a la porta.
+        translit: Han trucat a la porta.
+        en: Someone knocked at the door. (lit. They have knocked)
+        highlight: Han trucat
+      - target: M'han robat la cartera!
+        translit: M'han robat la cartera!
+        en: Someone stole my wallet! (lit. They have stolen)
+        highlight: M'han robat
+exercises:
+  - id: e1
+    type: fillBlank
+    target: "___ dedueix de l'informe que l'empresa creix."
+    translit: "Es dedueix de l'informe que l'empresa creix."
+    en: "It is deduced from the report that the company is growing."
+    answer:
+      target: Es
+      translit: Es
+    distractors:
+      - target: Hom
+        translit: Hom
+      - target: Se
+        translit: Se
+  - id: e2
+    type: fillBlank
+    target: "___ espera que arribin a un acord aviat."
+    translit: "Hom espera que arribin a un acord aviat."
+    en: "One expects that they will reach an agreement soon."
+    answer:
+      target: Hom
+      translit: Hom
+    distractors:
+      - target: Un
+        translit: Un
+      - target: Ens
+        translit: Ens
+  - id: e3
+    type: fillBlank
+    target: "A la meva ciutat, ___ parla diferent."
+    translit: "A la meva ciutat, es parla diferent."
+    en: "In my city, people speak differently."
+    answer:
+      target: es
+      translit: es
+    distractors:
+      - target: se
+        translit: se
+      - target: hom
+        translit: hom
+  - id: e4
+    type: fillBlank
+    target: "Ja ___ portat el paquet del correu."
+    translit: "Ja han portat el paquet del correu."
+    en: "They already brought the mail package."
+    answer:
+      target: han
+      translit: han
+    distractors:
+      - target: ha
+        translit: ha
+      - target: es
+        translit: es
+  - id: e5
+    type: fillBlank
+    target: "No ___ sap mai com reaccionarà."
+    translit: "No se sap mai com reaccionarà."
+    en: "One never knows how he will react."
+    answer:
+      target: se
+      translit: se
+    distractors:
+      - target: es
+        translit: es
+      - target: ho
+        translit: ho

@@ -1,7 +1,15 @@
 import type { LanguageProfile } from "../types.ts";
 import { buildLexiconIndex } from "./lexicon-index.ts";
 import { matchKey, normalizeDari, tokenizeDari } from "./normalize.ts";
-import { CULTURAL_SETTING, ORTHOGRAPHY, SCENARIOS, TEACHER } from "./prompts.ts";
+import {
+  CULTURAL_SETTING,
+  EXPLANATION_FOCUS,
+  ORTHOGRAPHY,
+  SCENARIOS,
+  TEACHER,
+  WORD_ROLES,
+  CHAT,
+} from "./prompts.ts";
 
 /**
  * Dari (Afghan Persian, Kabul standard). ISO 639-3 `prs`.
@@ -14,11 +22,6 @@ export const prs: LanguageProfile = {
   code: "prs",
   name: "Dari",
   dir: "rtl",
-  // Google TTS has no Dari voice; Persian is the closest usable match.
-  ttsLocale: "fa",
-  // System voices for Persian are scarce and often broken, so accept Dari and
-  // Arabic voices before giving up.
-  ttsVoicePrefixes: ["fa", "prs", "ar"],
   fontStack: "var(--font-dari)",
   // Arabic script must never be letterspaced - it breaks the joining forms.
   // Must carry a unit: a bare `0` is valid inline but is dropped as invalid
@@ -51,6 +54,12 @@ export const prs: LanguageProfile = {
     greeting: { target: "خوش آمدید", translit: "khush āmadēd", en: "welcome" },
     sentence: { target: "سلام، چطور هستید؟", translit: "salām, chetōr hastēd?", en: "Hello, how are you?" },
     words: ["کتاب", "خانه", "من"],
+    phaseGreetings: {
+      morning: "Sobh bekheir",
+      day: "Salām",
+      evening: "Shab bekheir",
+      night: "Shab bekheir",
+    },
   },
 
   prompts: {
@@ -59,5 +68,8 @@ export const prs: LanguageProfile = {
     culturalSetting: CULTURAL_SETTING,
     scenarios: SCENARIOS,
     inflectionExample: "خوبیم = we are good",
+    explanationFocus: EXPLANATION_FOCUS,
+    wordRoles: WORD_ROLES,
+    chat: CHAT,
   },
 };

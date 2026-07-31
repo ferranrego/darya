@@ -1,0 +1,108 @@
+id: c1_12
+title: El partitiu en contextos negatius i indefinits
+subtitle: Ús de la preposició 'de' i el pronom 'en'
+grammarPoint: In negative contexts and with indefinite quantifiers, Catalan often uses the partitive construction with the pronoun 'en' and the preposition 'de' introducing the dislocated noun.
+grammarPointEn: In negative contexts and with indefinite quantifiers, Catalan often uses the partitive construction with the pronoun 'en' and the preposition 'de' introducing the dislocated noun.
+slides:
+  - id: slide_1
+    title: Negative Contexts
+    body: When denying the existence or possession of a noun, Catalan uses the partitive pronoun "en" and often adds the noun at the end preceded by "de".
+    examples:
+      - target: No en tinc pas, de llibres.
+        translit: I do not of them have at all, of books.
+        en: I don't have any books.
+        highlight: en tinc pas, de
+      - target: No n'ha portat, de fruita.
+        translit: He hasn't of it brought, of fruit.
+        en: He hasn't brought any fruit.
+        highlight: n'ha portat, de
+  - id: slide_2
+    title: Indefinite Quantifiers
+    body: Indefinite pronouns like "res", "poc", "molt", or "què" are followed by "de" when modifying an adjective or noun in partitive constructions.
+    examples:
+      - target: No hi ha res de nou.
+        translit: There is nothing of new.
+        en: There is nothing new.
+        highlight: res de nou
+      - target: Han portat molt de menjar.
+        translit: They have brought a lot of food.
+        en: They have brought a lot of food.
+        highlight: molt de menjar
+  - id: slide_3
+    title: Partitive Pronoun 'en'
+    body: The pronoun "en" is essential when a quantified or indefinite noun is omitted from the sentence but understood from context.
+    examples:
+      - target: Tens germans? Sí, en tinc dos.
+        translit: Do you have brothers? Yes, of them I have two.
+        en: Do you have brothers? Yes, I have two.
+        highlight: en tinc
+      - target: Vols aigua? No, no en vull.
+        translit: Do you want water? No, I don't of it want.
+        en: Do you want water? No, I don't want any.
+        highlight: no en vull
+exercises:
+  - id: ex_1
+    type: fillBlank
+    target: No ___ vull pas, de problemes.
+    translit: I do not want of them, of problems.
+    en: I don't want any problems.
+    answer:
+      target: en
+      translit: of them
+    distractors:
+      - target: els
+        translit: them
+      - target: hi
+        translit: there
+  - id: ex_2
+    type: fillBlank
+    target: No en tenim cap, ___ cotxe.
+    translit: We don't have any, of car.
+    en: We don't have a car.
+    answer:
+      target: de
+      translit: of
+    distractors:
+      - target: per
+        translit: for
+      - target: amb
+        translit: with
+  - id: ex_3
+    type: fillBlank
+    target: Què hi ha ___ bo per sopar?
+    translit: What is there of good for dinner?
+    en: What good is there for dinner?
+    answer:
+      target: de
+      translit: of
+    distractors:
+      - target: a
+        translit: to
+      - target: per
+        translit: for
+  - id: ex_4
+    type: fillBlank
+    target: Necessites cadires? Sí, ___ necessito tres.
+    translit: Do you need chairs? Yes, of them I need three.
+    en: Do you need chairs? Yes, I need three.
+    answer:
+      target: en
+      translit: of them
+    distractors:
+      - target: els
+        translit: them
+      - target: les
+        translit: them
+  - id: ex_5
+    type: fillBlank
+    target: No ha dit res ___ interessant.
+    translit: Nothing of interesting has been said.
+    en: He hasn't said anything interesting.
+    answer:
+      target: d'
+      translit: of
+    distractors:
+      - target: a
+        translit: to
+      - target: en
+        translit: in

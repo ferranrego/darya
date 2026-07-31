@@ -1,0 +1,134 @@
+id: gl-09
+title: Possessives
+subtitle: el meu, la meva - and the article that comes with them.
+grammarPoint: possessives
+grammarPointEn: possessive adjectives with their obligatory definite article,
+  agreeing with the thing owned rather than the owner
+slides:
+  - id: gs-09-1
+    title: The article is part of the possessive
+    body: Catalan says "the my brother". Leaving the article out is the commonest
+      mistake here.
+    examples:
+      - target: el meu germà
+        en: my brother
+      - target: la meva germana
+        en: my sister
+      - target: els meus amics
+        en: my friends
+  - id: gs-09-2
+    title: It agrees with what is owned, not with the owner
+    body: la seva casa is "his house" or "her house" - the -a comes from casa, not
+      from the person.
+    examples:
+      - target: La seva casa és gran.
+        en: His house is big.
+      - target: Els seus fills són petits.
+        en: Her children are small.
+    table:
+      - - jo
+        - el meu, la meva
+      - - tu
+        - el teu, la teva
+      - - ell, ella
+        - el seu, la seva
+      - - nosaltres
+        - el nostre, la nostra
+      - - vosaltres
+        - el vostre, la vostra
+      - - ells, elles
+        - el seu, la seva
+  - id: gs-09-3
+    title: de for whose it is
+    body: For a named owner, Catalan uses de. There is nothing like the English
+      apostrophe-s.
+    examples:
+      - target: el llibre de la Marta
+        en: Marta's book
+      - target: la casa del meu pare
+        en: my father's house
+exercises:
+  - id: ge-09-1
+    type: fillBlank
+    target: Aquest és ___ meu germà.
+    en: This is my brother.
+    answer:
+      target: el
+    distractors:
+      - target: la
+      - target: els
+      - target: un
+  - id: ge-09-2
+    type: fillBlank
+    target: La ___ germana viu a Girona.
+    en: My sister lives in Girona.
+    answer:
+      target: meva
+    distractors:
+      - target: meu
+      - target: meus
+      - target: meves
+  - id: ge-09-3
+    type: fillBlank
+    target: ___ seus fills són petits.
+    en: Her children are small.
+    answer:
+      target: Els
+    distractors:
+      - target: Les
+      - target: El
+      - target: La
+  - id: ge-09-4
+    type: fillBlank
+    target: És el llibre ___ la Marta.
+    en: It's Marta's book.
+    answer:
+      target: de
+    distractors:
+      - target: a
+      - target: per
+      - target: amb
+  - id: ge-09-5
+    type: spotError
+    target: Meu pare treballa aquí.
+    en: My father works here.
+    errorWord:
+      target: Meu
+    correction:
+      target: El meu
+    correctedTarget: El meu pare treballa aquí.
+  - id: ge-09-6
+    type: matchPairs
+    prompt: Match the possessive with its meaning.
+    pairs:
+      - target: el meu
+        en: my
+      - target: el teu
+        en: your
+      - target: el seu
+        en: his, her
+      - target: el nostre
+        en: our
+  - id: ge-09-7
+    type: buildSentence
+    en: My house is very small.
+    words:
+      - target: La
+      - target: meva
+      - target: casa
+      - target: és
+      - target: molt
+      - target: petita
+    extraWords:
+      - target: meu
+      - target: petit
+  - id: ge-09-8
+    type: chooseTranslation
+    direction: toEn
+    target: La seva casa és a la platja.
+    en: Her house is at the beach.
+    distractorsEn:
+      - My house is at the beach.
+      - Her house is big.
+      - She is at the beach house.
+    distractorsTarget: []

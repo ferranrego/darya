@@ -1,0 +1,118 @@
+id: b2_10
+title: Relatius amb preposició
+subtitle: la casa en què / en la qual visc
+grammarPoint: "Ús de pronoms relatius darrere d'una preposició."
+grammarPointEn: "Use of relative pronouns following a preposition."
+slides:
+  - id: b2_10_s1
+    title: Relatius per a coses amb preposició (què)
+    body: "Quan l'antecedent és una cosa i el pronom relatiu va introduït per una preposició (a, en, de, amb, per...), s'utilitza principalment *què*."
+    examples:
+      - target: "El projecte en què treballo és molt llarg."
+        translit: ""
+        en: "The project in which I work is very long."
+        highlight: "en què"
+      - target: "El cotxe amb què viatgem és híbrid."
+        translit: ""
+        en: "The car with which we travel is hybrid."
+        highlight: "amb què"
+  - id: b2_10_s2
+    title: Relatius per a persones amb preposició (qui)
+    body: "Si l'antecedent és una persona, darrere de preposició s'utilitza *qui* (i no *què* ni pas *que*)."
+    examples:
+      - target: "L'amic en qui més confio viu fora."
+        translit: ""
+        en: "The friend in whom I trust the most lives abroad."
+        highlight: "en qui"
+      - target: "La gent per a qui treballem és exigent."
+        translit: ""
+        en: "The people for whom we work are demanding."
+        highlight: "per a qui"
+  - id: b2_10_s3
+    title: Alternativa amb els relatius compostos
+    body: "Tant *què* com *qui* poden ser substituïts pel relatiu compost corresponent (*el qual, la qual, els quals, les quals*) precedit per la preposició. Això aporta un to més culte o formal."
+    examples:
+      - target: "La ciutat en la qual visc té molts parcs."
+        translit: ""
+        en: "The city in which I live has many parks."
+        highlight: "en la qual"
+      - target: "Els professors amb els quals vam parlar eren molt amables."
+        translit: ""
+        en: "The teachers with whom we spoke were very kind."
+        highlight: "amb els quals"
+exercises:
+  - id: b2_10_e1
+    type: fillBlank
+    target: "L'empresa per ___ treballo farà suspensió de pagaments."
+    translit: ""
+    en: "The company for which I work will go bankrupt."
+    answer:
+      target: "què"
+      translit: ""
+    distractors:
+      - target: "que"
+        translit: ""
+      - target: "el qual"
+        translit: ""
+      - target: "qui"
+        translit: ""
+  - id: b2_10_e2
+    type: fillBlank
+    target: "La dona a ___ he demanat l'adreça no ho sabia."
+    translit: ""
+    en: "The woman to whom I asked for the address didn't know it."
+    answer:
+      target: "qui"
+      translit: ""
+    distractors:
+      - target: "què"
+        translit: ""
+      - target: "que"
+        translit: ""
+      - target: "el qual"
+        translit: ""
+  - id: b2_10_e3
+    type: fillBlank
+    target: "Els assumptes de ___ tracta el llibre són filosòfics."
+    translit: ""
+    en: "The subjects the book deals with are philosophical."
+    answer:
+      target: "què"
+      translit: ""
+    distractors:
+      - target: "que"
+        translit: ""
+      - target: "qui"
+        translit: ""
+      - target: "les quals"
+        translit: ""
+  - id: b2_10_e4
+    type: fillBlank
+    target: "Les condicions sota ___ treballem han de millorar."
+    translit: ""
+    en: "The conditions under which we work must improve."
+    answer:
+      target: "les quals"
+      translit: ""
+    distractors:
+      - target: "que"
+        translit: ""
+      - target: "la qual"
+        translit: ""
+      - target: "qui"
+        translit: ""
+  - id: b2_10_e5
+    type: fillBlank
+    target: "El bar on vam anar (en ___ ens vam conèixer) ja no existeix."
+    translit: ""
+    en: "The bar where we went (in which we met) no longer exists."
+    answer:
+      target: "el qual"
+      translit: ""
+    distractors:
+      - target: "qui"
+        translit: ""
+      - target: "que"
+        translit: ""
+      - target: "la qual"
+        translit: ""

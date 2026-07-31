@@ -4,8 +4,8 @@ import type { ProfileRow } from "./db/types";
 
 /** XP awards: the only place point values live. */
 export const XP = {
-  textRead: 10,
-  review: 2,
+  textRead: 5,
+  review: 10,
   wordLearned: 5,
   alphabetUnit: 15,
   grammarLesson: 15,

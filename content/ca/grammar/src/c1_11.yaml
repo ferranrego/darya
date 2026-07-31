@@ -1,0 +1,108 @@
+id: c1_11
+title: Falsos amics sintàctics
+subtitle: Haver de vs. Tindre que, i l'expressió de la probabilitat
+grammarPoint: Catalan has specific structures for obligation and probability that are often confused with Spanish calques. Use 'haver de' for obligation and 'deure' for probability.
+grammarPointEn: Catalan has specific structures for obligation and probability that are often confused with Spanish calques. Use 'haver de' for obligation and 'deure' for probability.
+slides:
+  - id: slide_1
+    title: Obligation (Haver de)
+    body: To express obligation, standard Catalan uses "haver de" followed by an infinitive. "Tindre que" is an incorrect calque from Spanish.
+    examples:
+      - target: Hem de marxar ara.
+        translit: We have to leave now.
+        en: We have to leave now.
+        highlight: Hem de
+      - target: Has d'estudiar més.
+        translit: You have to study more.
+        en: You must study more.
+        highlight: Has d'
+  - id: slide_2
+    title: Probability (Deure)
+    body: To express probability, Catalan uses the verb "deure" followed directly by an infinitive, without the preposition "de".
+    examples:
+      - target: Deuen ser les tres.
+        translit: They must be the three.
+        en: It must be three o'clock.
+        highlight: Deuen ser
+      - target: Deu ploure perquè el terra està mullat.
+        translit: It must rain because the ground is wet.
+        en: It must have rained because the ground is wet.
+        highlight: Deu ploure
+  - id: slide_3
+    title: Adonar-se (To realize)
+    body: The verb "adonar-se" (or "adonar-se'n") means "to realize". The expression "donar-se compte" is an incorrect calque in Catalan.
+    examples:
+      - target: M'he adonat del meu error.
+        translit: I have realized of my error.
+        en: I realized my mistake.
+        highlight: M'he adonat
+      - target: No se n'ha adonat.
+        translit: He has not realized of it.
+        en: He didn't realize it.
+        highlight: adonat
+exercises:
+  - id: ex_1
+    type: fillBlank
+    target: ___ estudiar per a l'examen de demà.
+    translit: I have to study for the exam of tomorrow.
+    en: I have to study for tomorrow's exam.
+    answer:
+      target: He d'
+      translit: I have to
+    distractors:
+      - target: Tinc que
+        translit: I have to
+      - target: Tinc de
+        translit: I have to
+  - id: ex_2
+    type: fillBlank
+    target: On és el Joan? No ho sé, ___ ser a casa.
+    translit: Where is Joan? I do not know, he must be at home.
+    en: Where is Joan? I don't know, he must be at home.
+    answer:
+      target: deu
+      translit: must
+    distractors:
+      - target: deu de
+        translit: must of
+      - target: té de
+        translit: has to
+  - id: ex_3
+    type: fillBlank
+    target: Ens ___ marxar immediatament.
+    translit: We have to leave immediately.
+    en: We have to leave immediately.
+    answer:
+      target: hem de
+      translit: have to
+    distractors:
+      - target: tenim que
+        translit: have to
+      - target: deure
+        translit: must
+  - id: ex_4
+    type: fillBlank
+    target: Ahir ___ que ens havíem equivocat.
+    translit: Yesterday we realized that we had made a mistake.
+    en: Yesterday we realized we made a mistake.
+    answer:
+      target: ens vam adonar
+      translit: we realized
+    distractors:
+      - target: ens vam donar compte
+        translit: we realized
+      - target: vam fer compte
+        translit: we made account
+  - id: ex_5
+    type: fillBlank
+    target: No ___ fer soroll a la biblioteca.
+    translit: You must not make noise in the library.
+    en: You must not make noise in the library.
+    answer:
+      target: s'ha de
+      translit: one has to
+    distractors:
+      - target: s'hi té que
+        translit: one has to
+      - target: es deu de
+        translit: one must

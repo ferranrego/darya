@@ -1,0 +1,118 @@
+id: b2_09
+title: Pronoms relatius simples i compostos
+subtitle: que, què, qui vs el qual
+grammarPoint: "Ús dels pronoms relatius simples i compostos."
+grammarPointEn: "Use of simple and compound relative pronouns."
+slides:
+  - id: b2_09_s1
+    title: Pronoms relatius simples (que, qui)
+    body: "El pronom relatiu *que* és invariable i s'usa per referir-se a persones o coses. *Qui* s'usa només per a persones, sovint després de preposició."
+    examples:
+      - target: "El llibre que llegeixo és interessant."
+        translit: ""
+        en: "The book that I am reading is interesting."
+        highlight: "que"
+      - target: "La dona a qui vaig donar el paquet és la meva tia."
+        translit: ""
+        en: "The woman to whom I gave the package is my aunt."
+        highlight: "a qui"
+  - id: b2_09_s2
+    title: El relatiu "què"
+    body: "S'usa *què* per referir-se a coses quan va precedit d'una preposició (a, de, en, amb, per, etc.)."
+    examples:
+      - target: "El problema de què parles és greu."
+        translit: ""
+        en: "The problem about which you speak is serious."
+        highlight: "de què"
+      - target: "L'eina amb què treballo és nova."
+        translit: ""
+        en: "The tool with which I work is new."
+        highlight: "amb què"
+  - id: b2_09_s3
+    title: Pronoms relatius compostos (el qual, la qual...)
+    body: "Els relatius compostos (*el qual*, *la qual*, *els quals*, *les quals*) es poden fer servir en lloc de preposició + *què/qui*, sentant més formals, o bé en oracions explicatives."
+    examples:
+      - target: "La casa en la qual visc té molts anys."
+        translit: ""
+        en: "The house in which I live is many years old."
+        highlight: "en la qual"
+      - target: "El meu germà, el qual viu a Londres, vindrà demà."
+        translit: ""
+        en: "My brother, who lives in London, will come tomorrow."
+        highlight: "el qual"
+exercises:
+  - id: b2_09_e1
+    type: fillBlank
+    target: "La pel·lícula ___ vam veure ahir era avorrida."
+    translit: ""
+    en: "The movie that we saw yesterday was boring."
+    answer:
+      target: "que"
+      translit: ""
+    distractors:
+      - target: "què"
+        translit: ""
+      - target: "qui"
+        translit: ""
+      - target: "el qual"
+        translit: ""
+  - id: b2_09_e2
+    type: fillBlank
+    target: "El noi amb ___ anaves a classe és ara metge."
+    translit: ""
+    en: "The boy with whom you went to class is now a doctor."
+    answer:
+      target: "qui"
+      translit: ""
+    distractors:
+      - target: "que"
+        translit: ""
+      - target: "què"
+        translit: ""
+      - target: "el qual"
+        translit: ""
+  - id: b2_09_e3
+    type: fillBlank
+    target: "La ciutat en ___ he nascut és preciosa."
+    translit: ""
+    en: "The city in which I was born is beautiful."
+    answer:
+      target: "què"
+      translit: ""
+    distractors:
+      - target: "qui"
+        translit: ""
+      - target: "que"
+        translit: ""
+      - target: "les quals"
+        translit: ""
+  - id: b2_09_e4
+    type: fillBlank
+    target: "Els llibres dels ___ et vaig parlar són a la biblioteca."
+    translit: ""
+    en: "The books about which I spoke to you are in the library."
+    answer:
+      target: "quals"
+      translit: ""
+    distractors:
+      - target: "que"
+        translit: ""
+      - target: "què"
+        translit: ""
+      - target: "qual"
+        translit: ""
+  - id: b2_09_e5
+    type: fillBlank
+    target: "La senyora, ___ portava un abric vermell, caminava de pressa."
+    translit: ""
+    en: "The lady, who was wearing a red coat, was walking fast."
+    answer:
+      target: "la qual"
+      translit: ""
+    distractors:
+      - target: "les quals"
+        translit: ""
+      - target: "el qual"
+        translit: ""
+      - target: "què"
+        translit: ""

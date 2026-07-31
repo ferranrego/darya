@@ -1,4 +1,5 @@
 import type { PonchaPose } from "@/components/poncha";
+import { profile as lang } from "@/lib/lang";
 
 /**
  * Time-of-day phases that drive the Home hero's mood: the greeting, Poncha's
@@ -25,12 +26,7 @@ export function phaseForHour(hour: number): DayPhase {
   return "night";
 }
 
-const GREETING: Record<DayPhase, string> = {
-  morning: "Sobh bekheir",
-  day: "Salām",
-  evening: "Shab bekheir",
-  night: "Shab bekheir",
-};
+
 
 const REST_POSE: Record<DayPhase, PonchaPose> = {
   morning: "home",
@@ -43,7 +39,7 @@ export function timeOfDay(now = new Date()): TimeOfDay {
   const phase = phaseForHour(now.getHours());
   return {
     phase,
-    greeting: GREETING[phase],
+    greeting: lang.samples.phaseGreetings[phase],
     restPose: REST_POSE[phase],
     isNight: phase === "night",
   };

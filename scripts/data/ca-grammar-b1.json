@@ -1,0 +1,2545 @@
+{
+  "formatVersion": "1.3.0",
+  "language": "ca",
+  "level": "B1",
+  "blocks": [
+    {
+      "id": "gb-11",
+      "title": "El Món del Subjuntiu",
+      "subtitle": "Learn to express desires, doubts, and emotions using the Present Subjunctive.",
+      "lessons": [
+        {
+          "id": "gl-26",
+          "title": "El Present de Subjuntiu",
+          "subtitle": "Formació dels verbs regulars",
+          "grammarPoint": "Introducció al present de subjuntiu",
+          "grammarPointEn": "Introduction to the present subjunctive",
+          "slides": [
+            {
+              "title": "Verbs en -ar",
+              "table": [
+                [
+                  "Pronom",
+                  "Cantar"
+                ],
+                [
+                  "Jo",
+                  "canti"
+                ],
+                [
+                  "Tu",
+                  "cantis"
+                ],
+                [
+                  "Ell/Ella",
+                  "canti"
+                ],
+                [
+                  "Nosaltres",
+                  "cantem"
+                ],
+                [
+                  "Vosaltres",
+                  "canteu"
+                ],
+                [
+                  "Ells/Elles",
+                  "cantin"
+                ]
+              ],
+              "examples": [
+                {
+                  "target": "És important que tu cantis bé.",
+                  "en": "It's important that you sing well.",
+                  "highlight": "cantis"
+                }
+              ],
+              "id": "gs-26-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            },
+            {
+              "title": "Verbs en -er / -re",
+              "table": [
+                [
+                  "Pronom",
+                  "Témer / Perdre"
+                ],
+                [
+                  "Jo",
+                  "temi / perdi"
+                ],
+                [
+                  "Tu",
+                  "temis / perdis"
+                ],
+                [
+                  "Ell/Ella",
+                  "temi / perdi"
+                ],
+                [
+                  "Nosaltres",
+                  "temem / perdem"
+                ],
+                [
+                  "Vosaltres",
+                  "temeu / perdeu"
+                ],
+                [
+                  "Ells/Elles",
+                  "temin / perdin"
+                ]
+              ],
+              "examples": [
+                {
+                  "target": "Vull que no perdis les claus.",
+                  "en": "I want you not to lose the keys.",
+                  "highlight": "perdis"
+                }
+              ],
+              "id": "gs-26-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            },
+            {
+              "title": "Verbs en -ir",
+              "table": [
+                [
+                  "Pronom",
+                  "Dormir / Servir"
+                ],
+                [
+                  "Jo",
+                  "dormi / serveixi"
+                ],
+                [
+                  "Tu",
+                  "dormis / serveixis"
+                ],
+                [
+                  "Ell/Ella",
+                  "dormi / serveixi"
+                ],
+                [
+                  "Nosaltres",
+                  "dormim / servim"
+                ],
+                [
+                  "Vosaltres",
+                  "dormiu / serviu"
+                ],
+                [
+                  "Ells/Elles",
+                  "dormin / serveixin"
+                ]
+              ],
+              "examples": [
+                {
+                  "target": "Prefereixo que dormis aquí.",
+                  "en": "I prefer that you sleep here.",
+                  "highlight": "dormis"
+                }
+              ],
+              "id": "gs-26-3",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-26-1",
+              "type": "fillBlank",
+              "target": "És necessari que ella ___ (treballar) avui.",
+              "en": "It is necessary that she works today.",
+              "answer": {
+                "target": "treballi"
+              },
+              "distractors": [
+                {
+                  "target": "treballa"
+                },
+                {
+                  "target": "treballem"
+                }
+              ]
+            },
+            {
+              "id": "ge-26-2",
+              "type": "spotError",
+              "target": "És necessari que tu llegeixes el llibre.",
+              "en": "It is necessary that you read the book.",
+              "errorWord": {
+                "target": "llegeixes"
+              },
+              "correction": {
+                "target": "llegeixis"
+              },
+              "correctedTarget": "És necessari que tu llegeixis el llibre."
+            },
+            {
+              "id": "ge-26-3",
+              "type": "buildSentence",
+              "en": "I want you to eat more fruit.",
+              "words": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "mengeu"
+                },
+                {
+                  "target": "Vull"
+                },
+                {
+                  "target": "més"
+                },
+                {
+                  "target": "fruita"
+                }
+              ],
+              "extraWords": []
+            },
+            {
+              "id": "ge-26-4",
+              "type": "matchPairs",
+              "prompt": "Match the pairs",
+              "pairs": [
+                {
+                  "target": "Jo canti",
+                  "en": "I sing (subj)"
+                },
+                {
+                  "target": "Tu perdis",
+                  "en": "You lose (subj)"
+                },
+                {
+                  "target": "Ell serveixi",
+                  "en": "He serves (subj)"
+                },
+                {
+                  "target": "Nosaltres dormim",
+                  "en": "We sleep (subj)"
+                }
+              ]
+            },
+            {
+              "id": "ge-26-5",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Cal que parlin amb mi.",
+              "en": "They need to talk to me.",
+              "distractorsEn": [
+                "They talked to me.",
+                "I talk to them."
+              ],
+              "distractorsTarget": []
+            },
+            {
+              "id": "ge-26-6",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Cal que parlin amb mi.",
+              "en": "They need to talk to me.",
+              "distractorsEn": [
+                "They talked to me.",
+                "I talk to them."
+              ],
+              "distractorsTarget": []
+            }
+          ]
+        },
+        {
+          "id": "gl-27",
+          "title": "Desitjos i voluntats",
+          "subtitle": "vull que, espero que",
+          "grammarPoint": "Ús del subjuntiu per expressar desig",
+          "grammarPointEn": "Using the subjunctive to express desires",
+          "slides": [
+            {
+              "title": "Expressar voluntat o desig",
+              "examples": [
+                {
+                  "target": "Vull que vinguis a la meva festa.",
+                  "en": "I want you to come to my party.",
+                  "highlight": "vinguis"
+                },
+                {
+                  "target": "Espero que faci bon temps.",
+                  "en": "I hope the weather is nice.",
+                  "highlight": "faci"
+                }
+              ],
+              "table": [
+                [
+                  "Expressió",
+                  "Exemple"
+                ],
+                [
+                  "Vull que...",
+                  "Vull que truquis"
+                ],
+                [
+                  "Espero que...",
+                  "Espero que plogui"
+                ],
+                [
+                  "Desitjo que...",
+                  "Desitjo que tinguis sort"
+                ]
+              ],
+              "id": "gs-27-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            },
+            {
+              "title": "Canvi de subjecte",
+              "examples": [
+                {
+                  "target": "(Jo) Vull que (tu) compris pa.",
+                  "en": "I want you to buy bread.",
+                  "highlight": "compris"
+                },
+                {
+                  "target": "(Nosaltres) Esperem que (ells) arribin d'hora.",
+                  "en": "We hope they arrive early.",
+                  "highlight": "arribin"
+                }
+              ],
+              "id": "gs-27-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-27-1",
+              "type": "fillBlank",
+              "target": "Espero que en Joan ___ (aprovar) l'examen.",
+              "en": "I hope Joan passes the exam.",
+              "answer": {
+                "target": "aprovi"
+              },
+              "distractors": [
+                {
+                  "target": "aprova"
+                },
+                {
+                  "target": "aprovarà"
+                }
+              ]
+            },
+            {
+              "id": "ge-27-2",
+              "type": "spotError",
+              "target": "Vull que tu fas els deures ara mateix.",
+              "en": "I want you to do the homework right now.",
+              "errorWord": {
+                "target": "fas"
+              },
+              "correction": {
+                "target": "facis"
+              },
+              "correctedTarget": "Vull que tu facis els deures ara mateix."
+            },
+            {
+              "id": "ge-27-3",
+              "type": "buildSentence",
+              "en": "I hope they arrive soon.",
+              "words": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "aviat"
+                },
+                {
+                  "target": "Espero"
+                },
+                {
+                  "target": "arribin"
+                }
+              ],
+              "extraWords": []
+            },
+            {
+              "id": "ge-27-4",
+              "type": "matchPairs",
+              "prompt": "Match the pairs",
+              "pairs": [
+                {
+                  "target": "Vull que vinguis",
+                  "en": "I want you to come"
+                },
+                {
+                  "target": "Espero que plogui",
+                  "en": "I hope it rains"
+                },
+                {
+                  "target": "Desitjo que guanyis",
+                  "en": "I wish that you win"
+                },
+                {
+                  "target": "Volem que sortiu",
+                  "en": "We want you to go out"
+                }
+              ]
+            },
+            {
+              "id": "ge-27-5",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Desitgem que tinguis un bon viatge.",
+              "en": "We wish you have a good trip.",
+              "distractorsEn": [
+                "They wish you a good trip.",
+                "We want to travel."
+              ],
+              "distractorsTarget": []
+            },
+            {
+              "id": "ge-27-6",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Desitgem que tinguis un bon viatge.",
+              "en": "We wish you have a good trip.",
+              "distractorsEn": [
+                "They wish you a good trip.",
+                "We want to travel."
+              ],
+              "distractorsTarget": []
+            }
+          ]
+        },
+        {
+          "id": "gl-28",
+          "title": "Dubtes i probabilitat",
+          "subtitle": "dubto que, pot ser que",
+          "grammarPoint": "El subjuntiu per a expressar probabilitat",
+          "grammarPointEn": "Subjunctive to express doubt and probability",
+          "slides": [
+            {
+              "title": "Expressar dubte",
+              "examples": [
+                {
+                  "target": "Dubto que ell sàpiga la veritat.",
+                  "en": "I doubt he knows the truth.",
+                  "highlight": "sàpiga"
+                },
+                {
+                  "target": "No crec que tinguin temps.",
+                  "en": "I don't think they have time.",
+                  "highlight": "tinguin"
+                }
+              ],
+              "table": [
+                [
+                  "Expressió",
+                  "Exemple"
+                ],
+                [
+                  "Dubto que...",
+                  "Dubto que funcioni"
+                ],
+                [
+                  "No crec que...",
+                  "No crec que vingui"
+                ]
+              ],
+              "id": "gs-28-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            },
+            {
+              "title": "Expressar probabilitat",
+              "examples": [
+                {
+                  "target": "Pot ser que plogui aquesta tarda.",
+                  "en": "It may rain this afternoon.",
+                  "highlight": "plogui"
+                },
+                {
+                  "target": "És possible que arribem tard.",
+                  "en": "It's possible that we arrive late.",
+                  "highlight": "arribem"
+                }
+              ],
+              "table": [
+                [
+                  "Expressió",
+                  "Exemple"
+                ],
+                [
+                  "Pot ser que...",
+                  "Pot ser que truquin"
+                ],
+                [
+                  "És possible que...",
+                  "És possible que surti"
+                ]
+              ],
+              "id": "gs-28-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-28-1",
+              "type": "fillBlank",
+              "target": "Pot ser que la botiga ___ (estar) tancada.",
+              "en": "The shop might be closed.",
+              "answer": {
+                "target": "estigui"
+              },
+              "distractors": [
+                {
+                  "target": "està"
+                },
+                {
+                  "target": "estarà"
+                }
+              ]
+            },
+            {
+              "id": "ge-28-2",
+              "type": "spotError",
+              "target": "Dubto que tu tens raó.",
+              "en": "I doubt that you are right.",
+              "errorWord": {
+                "target": "tens"
+              },
+              "correction": {
+                "target": "tinguis"
+              },
+              "correctedTarget": "Dubto que tu tinguis raó."
+            },
+            {
+              "id": "ge-28-3",
+              "type": "buildSentence",
+              "en": "It is possible that it rains tomorrow.",
+              "words": [
+                {
+                  "target": "possible"
+                },
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "demà"
+                },
+                {
+                  "target": "És"
+                },
+                {
+                  "target": "plogui"
+                }
+              ],
+              "extraWords": []
+            },
+            {
+              "id": "ge-28-4",
+              "type": "matchPairs",
+              "prompt": "Match the pairs",
+              "pairs": [
+                {
+                  "target": "Dubto que funcioni",
+                  "en": "I doubt it works"
+                },
+                {
+                  "target": "Pot ser que vingui",
+                  "en": "He might come"
+                },
+                {
+                  "target": "No crec que sigui cert",
+                  "en": "I don't think it's true"
+                },
+                {
+                  "target": "És probable que surtin",
+                  "en": "It's probable they go out"
+                }
+              ]
+            },
+            {
+              "id": "ge-28-5",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "No crec que hagin arribat.",
+              "en": "I don't think they have arrived.",
+              "distractorsEn": [
+                "I believe they will arrive.",
+                "I don't think they will go."
+              ],
+              "distractorsTarget": []
+            },
+            {
+              "id": "ge-28-6",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "No crec que hagin arribat.",
+              "en": "I don't think they have arrived.",
+              "distractorsEn": [
+                "I believe they will arrive.",
+                "I don't think they will go."
+              ],
+              "distractorsTarget": []
+            }
+          ]
+        },
+        {
+          "id": "gl-29",
+          "title": "Emocions i sentiments",
+          "subtitle": "m'agrada que, em molesta que",
+          "grammarPoint": "El subjuntiu amb verbs de sentiment",
+          "grammarPointEn": "Subjunctive with verbs of emotion and feeling",
+          "slides": [
+            {
+              "title": "Verbs de sentiment",
+              "examples": [
+                {
+                  "target": "M'agrada que em truquis.",
+                  "en": "I like that you call me.",
+                  "highlight": "truquis"
+                },
+                {
+                  "target": "Em molesta que facin soroll.",
+                  "en": "It bothers me that they make noise.",
+                  "highlight": "facin"
+                }
+              ],
+              "table": [
+                [
+                  "Expressió",
+                  "Exemple"
+                ],
+                [
+                  "M'agrada que...",
+                  "M'agrada que riguis"
+                ],
+                [
+                  "Em molesta que...",
+                  "Em molesta que cridis"
+                ],
+                [
+                  "Em sorprèn que...",
+                  "Em sorprèn que ho sàpiga"
+                ]
+              ],
+              "id": "gs-29-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            },
+            {
+              "title": "Més expressions emocionals",
+              "examples": [
+                {
+                  "target": "Em fa pena que no puguis venir.",
+                  "en": "It makes me sad that you can't come.",
+                  "highlight": "puguis"
+                },
+                {
+                  "target": "Ens alegra que estigueu bé.",
+                  "en": "It makes us glad that you are well.",
+                  "highlight": "estigueu"
+                }
+              ],
+              "id": "gs-29-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica."
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-29-1",
+              "type": "fillBlank",
+              "target": "Em sorprèn que ella ___ (saber) la resposta.",
+              "en": "It surprises me that she knows the answer.",
+              "answer": {
+                "target": "sàpiga"
+              },
+              "distractors": [
+                {
+                  "target": "sap"
+                },
+                {
+                  "target": "saberà"
+                }
+              ]
+            },
+            {
+              "id": "ge-29-2",
+              "type": "spotError",
+              "target": "Ens agrada que vosaltres veniu a casa.",
+              "en": "We like that you come home.",
+              "errorWord": {
+                "target": "veniu"
+              },
+              "correction": {
+                "target": "vingueu"
+              },
+              "correctedTarget": "Ens agrada que vosaltres vingueu a casa."
+            },
+            {
+              "id": "ge-29-3",
+              "type": "buildSentence",
+              "en": "It bothers me that you make noise.",
+              "words": [
+                {
+                  "target": "molesta"
+                },
+                {
+                  "target": "Em"
+                },
+                {
+                  "target": "facis"
+                },
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "soroll"
+                }
+              ],
+              "extraWords": []
+            },
+            {
+              "id": "ge-29-4",
+              "type": "matchPairs",
+              "prompt": "Match the pairs",
+              "pairs": [
+                {
+                  "target": "M'agrada que vinguis",
+                  "en": "I like that you come"
+                },
+                {
+                  "target": "Em molesta que cridi",
+                  "en": "It bothers me that he yells"
+                },
+                {
+                  "target": "Ens sorprèn que sàpiguen això",
+                  "en": "It surprises us that they know this"
+                },
+                {
+                  "target": "Em fa pena que marxis",
+                  "en": "It makes me sad that you leave"
+                }
+              ]
+            },
+            {
+              "id": "ge-29-5",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Els alegra que tinguis feina.",
+              "en": "It makes them glad that you have a job.",
+              "distractorsEn": [
+                "They are happy to work.",
+                "It makes us glad that you have a job."
+              ],
+              "distractorsTarget": []
+            },
+            {
+              "id": "ge-29-6",
+              "type": "chooseTranslation",
+              "direction": "toEn",
+              "target": "Els alegra que tinguis feina.",
+              "en": "It makes them glad that you have a job.",
+              "distractorsEn": [
+                "They are happy to work.",
+                "It makes us glad that you have a job."
+              ],
+              "distractorsTarget": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-12",
+      "title": "Condicionals i Futur",
+      "subtitle": "Formulate hypotheses, talk about the future, and use 'Si' clauses.",
+      "lessons": [
+        {
+          "id": "gl-30",
+          "title": "El Futur",
+          "subtitle": "Formació i irregulars",
+          "grammarPoint": "El futur simple s'utilitza per expressar accions que passaran en un moment posterior al present. Es forma afegint les terminacions -é, -às, -à, -em, -eu, -an a l'infinitiu del verb, amb algunes excepcions irregulars com fer (faré), poder (podré) o tenir (tindré).",
+          "grammarPointEn": "The future simple tense is used to express actions that will happen at a later time. It is formed by adding the endings -é, -às, -à, -em, -eu, -an to the infinitive of the verb, with some irregular exceptions like fer (faré), poder (podré), or tenir (tindré).",
+          "slides": [
+            {
+              "slideId": "gl-30-s-1",
+              "content": "**El Futur Simple: Formació Regular**\nPer als verbs regulars, afegim les terminacions a l'infinitiu:\n- **Jo:** -é (cantaré, perdré, dormiré)\n- **Tu:** -às (cantaràs, perdràs, dormiràs)\n- **Ell/Ella:** -à (cantarà, perdrà, dormirà)\n- **Nosaltres:** -em (cantarem, perdrem, dormirem)\n- **Vosaltres:** -eu (cantareu, perdreu, dormireu)\n- **Ells/Elles:** -an (cantaran, perdran, dormiran)\n",
+              "contentEn": "For regular verbs, we add the endings to the infinitive.",
+              "id": "gs-30-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "title": "Concept 1",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "slideId": "gl-30-s-2",
+              "content": "**Verbs Irregulars al Futur**\nAlguns verbs modifiquen l'arrel abans d'afegir les terminacions regulars del futur:\n- **Anar:** aniré, aniràs, anirà...\n- **Fer:** faré, faràs, farà...\n- **Haver:** hauré, hauràs, haurà...\n- **Poder:** podré, podràs, podrà...\n- **Saber:** sabré, sabràs, sabrà...\n- **Tenir:** tindré, tindràs, tindrà...\n- **Venir:** vindré, vindràs, vindrà...\n- **Voler:** voldré, voldràs, voldrà...\n",
+              "contentEn": "Some verbs modify the stem before adding the regular future endings.",
+              "id": "gs-30-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "title": "Concept 2",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-30-1",
+              "type": "fillBlank",
+              "target": "L'any que ve, nosaltres ___ (viatjar) al Japó.",
+              "en": "Next year, we will travel to Japan.",
+              "answer": {
+                "target": "viatjarem"
+              },
+              "distractors": [
+                {
+                  "target": "viatgem"
+                },
+                {
+                  "target": "viatjareu"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-2",
+              "type": "fillBlank",
+              "target": "Demà, jo ___ (fer) una truita de patates.",
+              "en": "Tomorrow, I will make a Spanish omelette.",
+              "answer": {
+                "target": "faré"
+              },
+              "distractors": [
+                {
+                  "target": "feré"
+                },
+                {
+                  "target": "faig"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-3",
+              "type": "fillBlank",
+              "target": "Quan tinguis divuit anys, ___ (poder) conduir.",
+              "en": "When you are eighteen, you will be able to drive.",
+              "answer": {
+                "target": "podràs"
+              },
+              "distractors": [
+                {
+                  "target": "podeu"
+                },
+                {
+                  "target": "podrè"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-4",
+              "type": "fillBlank",
+              "target": "Aquesta tarda ells ___ (venir) a casa nostra.",
+              "en": "This afternoon they will come to our house.",
+              "answer": {
+                "target": "vindran"
+              },
+              "distractors": [
+                {
+                  "target": "veniran"
+                },
+                {
+                  "target": "vinden"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-5",
+              "type": "fillBlank",
+              "target": "M'ha dit que ella ___ (saber) la resposta aviat.",
+              "en": "She told me that she will know the answer soon.",
+              "answer": {
+                "target": "sabrà"
+              },
+              "distractors": [
+                {
+                  "target": "saberà"
+                },
+                {
+                  "target": "sap"
+                }
+              ]
+            },
+            {
+              "id": "ge-30-6",
+              "type": "fillBlank",
+              "target": "M'ha dit que ella ___ (saber) la resposta aviat.",
+              "en": "She told me that she will know the answer soon.",
+              "answer": {
+                "target": "sabrà"
+              },
+              "distractors": [
+                {
+                  "target": "saberà"
+                },
+                {
+                  "target": "sap"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-31",
+          "title": "El Condicional",
+          "subtitle": "Formació i irregulars",
+          "grammarPoint": "El condicional simple s'utilitza per expressar desitjos, probabilitats, consells o accions que depenen d'una condició. Es forma afegint les terminacions -ia, -ies, -ia, -íem, -íeu, -ien a l'infinitiu del verb. Els verbs que són irregulars en el futur (com fer, poder) comparteixen la mateixa arrel irregular en el condicional.",
+          "grammarPointEn": "The simple conditional is used to express wishes, probabilities, advice, or actions that depend on a condition. It is formed by adding the endings -ia, -ies, -ia, -íem, -íeu, -ien to the infinitive of the verb. Verbs that are irregular in the future (like fer, poder) share the same irregular stem in the conditional.",
+          "slides": [
+            {
+              "slideId": "gl-31-s-1",
+              "content": "**El Condicional Simple: Formació Regular**\nPer als verbs regulars, afegim les terminacions a l'infinitiu:\n- **Jo:** -ia (cantaria, perdria, dormiria)\n- **Tu:** -ies (cantaries, perdries, dormiries)\n- **Ell/Ella:** -ia (cantaria, perdria, dormiria)\n- **Nosaltres:** -íem (cantaríem, perdríem, dormiríem)\n- **Vosaltres:** -íeu (cantaríeu, perdríeu, dormiríeu)\n- **Ells/Elles:** -ien (cantarien, perdrien, dormirien)\n",
+              "contentEn": "For regular verbs, we add the endings to the infinitive.",
+              "id": "gs-31-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "title": "Concept 1",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "slideId": "gl-31-s-2",
+              "content": "**Verbs Irregulars al Condicional**\nComparteixen l'arrel irregular del futur. Només canvien les terminacions:\n- **Anar:** aniria, aniries...\n- **Fer:** faria, faries...\n- **Haver:** hauria, hauries...\n- **Poder:** podria, podries...\n- **Saber:** sabria, sabries...\n- **Tenir:** tindria, tindries...\n- **Venir:** vindria, vindries...\n- **Voler:** voldria, voldries...\n",
+              "contentEn": "They share the irregular stem of the future. Only the endings change.",
+              "id": "gs-31-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "title": "Concept 2",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-31-1",
+              "type": "fillBlank",
+              "target": "T'importaria si jo ___ (obrir) la finestra?",
+              "en": "Would you mind if I opened the window?",
+              "answer": {
+                "target": "obriria"
+              },
+              "distractors": [
+                {
+                  "target": "obria"
+                },
+                {
+                  "target": "obriré"
+                }
+              ]
+            },
+            {
+              "id": "ge-31-2",
+              "type": "fillBlank",
+              "target": "A mi m'___ (agradar) viure a prop del mar.",
+              "en": "I would like to live near the sea.",
+              "answer": {
+                "target": "agradaria"
+              },
+              "distractors": [
+                {
+                  "target": "agrada"
+                },
+                {
+                  "target": "agradarà"
+                }
+              ]
+            },
+            {
+              "id": "ge-31-3",
+              "type": "fillBlank",
+              "target": "Nosaltres ___ (poder) ajudar-vos amb el trasllat demà.",
+              "en": "We could help you with the move tomorrow.",
+              "answer": {
+                "target": "podríem"
+              },
+              "distractors": [
+                {
+                  "target": "podem"
+                },
+                {
+                  "target": "poderíem"
+                }
+              ]
+            },
+            {
+              "id": "ge-31-4",
+              "type": "fillBlank",
+              "target": "Jo en el teu lloc no ho ___ (fer).",
+              "en": "I wouldn't do it in your place.",
+              "answer": {
+                "target": "faria"
+              },
+              "distractors": [
+                {
+                  "target": "feria"
+                },
+                {
+                  "target": "faig"
+                }
+              ]
+            },
+            {
+              "id": "ge-31-5",
+              "type": "fillBlank",
+              "target": "Ells ___ (voler) venir, però tenen molta feina.",
+              "en": "They would want to come, but they have a lot of work.",
+              "answer": {
+                "target": "voldrien"
+              },
+              "distractors": [
+                {
+                  "target": "volerien"
+                },
+                {
+                  "target": "volien"
+                }
+              ]
+            },
+            {
+              "id": "ge-31-6",
+              "type": "fillBlank",
+              "target": "Ells ___ (voler) venir, però tenen molta feina.",
+              "en": "They would want to come, but they have a lot of work.",
+              "answer": {
+                "target": "voldrien"
+              },
+              "distractors": [
+                {
+                  "target": "volerien"
+                },
+                {
+                  "target": "volien"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-32",
+          "title": "El Primer Condicional",
+          "subtitle": "Probable o Real",
+          "grammarPoint": "Les oracions condicionals de primer tipus expressen accions probables o possibles. L'estructura més comuna és: Si + Present d'indicatiu, Futur simple (o Present o Imperatiu). La partícula 'si' introdueix la condició i mai va seguida de futur.",
+          "grammarPointEn": "First type conditional sentences express probable or possible actions. The most common structure is: Si + Present indicative, Future simple (or Present or Imperative). The particle 'si' introduces the condition and is never followed by the future tense.",
+          "slides": [
+            {
+              "slideId": "gl-32-s-1",
+              "content": "**Estructura del Primer Condicional**\n- **Condició:** *Si + Present d'Indicatiu*\n- **Conseqüència:** *Futur Simple* / *Present* / *Imperatiu*\n\n**Exemples:**\n- Si plou, **ens quedarem** a casa. (Futur)\n- Si tens gana, **menja** una poma. (Imperatiu)\n- Si fa bon temps, normalment **anem** a la platja. (Present)\n",
+              "contentEn": "Structure of the First Conditional: If + Present Indicative -> Future Simple / Present / Imperative.",
+              "id": "gs-32-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "title": "Concept 1",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-32-1",
+              "type": "fillBlank",
+              "target": "Si trigues molt, nosaltres ___ (marxar).",
+              "en": "If you take a long time, we will leave.",
+              "answer": {
+                "target": "marxarem"
+              },
+              "distractors": [
+                {
+                  "target": "marxem"
+                },
+                {
+                  "target": "marxaria"
+                }
+              ]
+            },
+            {
+              "id": "ge-32-2",
+              "type": "fillBlank",
+              "target": "Si veus en Joan, ___ (dir)-li que em truqui.",
+              "en": "If you see Joan, tell him to call me.",
+              "answer": {
+                "target": "digues"
+              },
+              "distractors": [
+                {
+                  "target": "diràs"
+                },
+                {
+                  "target": "dius"
+                }
+              ]
+            },
+            {
+              "id": "ge-32-3",
+              "type": "fillBlank",
+              "target": "Aprovareu l'examen si ___ (estudiar) cada dia.",
+              "en": "You will pass the exam if you study every day.",
+              "answer": {
+                "target": "estudieu"
+              },
+              "distractors": [
+                {
+                  "target": "estudiareu"
+                },
+                {
+                  "target": "estudies"
+                }
+              ]
+            },
+            {
+              "id": "ge-32-4",
+              "type": "fillBlank",
+              "target": "Si ___ (tenir) temps, et vindré a veure.",
+              "en": "If I have time, I will come to see you.",
+              "answer": {
+                "target": "tinc"
+              },
+              "distractors": [
+                {
+                  "target": "tindré"
+                },
+                {
+                  "target": "tindria"
+                }
+              ]
+            },
+            {
+              "id": "ge-32-5",
+              "type": "fillBlank",
+              "target": "Si plou demà, el partit se ___ (suspendre).",
+              "en": "If it rains tomorrow, the match will be suspended.",
+              "answer": {
+                "target": "suspendrà"
+              },
+              "distractors": [
+                {
+                  "target": "suspèn"
+                },
+                {
+                  "target": "suspendria"
+                }
+              ]
+            },
+            {
+              "id": "ge-32-6",
+              "type": "fillBlank",
+              "target": "Si plou demà, el partit se ___ (suspendre).",
+              "en": "If it rains tomorrow, the match will be suspended.",
+              "answer": {
+                "target": "suspendrà"
+              },
+              "distractors": [
+                {
+                  "target": "suspèn"
+                },
+                {
+                  "target": "suspendria"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-33",
+          "title": "El Segon Condicional",
+          "subtitle": "Improbable o Irreal",
+          "grammarPoint": "Les oracions condicionals de segon tipus expressen situacions poc probables, hipotètiques o contràries a la realitat en el present o futur. L'estructura és: Si + Pretèrit Imperfet de Subjuntiu, Condicional Simple. Fixa't que, a diferència d'altres llengües, en català utilitzem l'imperfet de subjuntiu després del 'si' condicional irreal.",
+          "grammarPointEn": "Second type conditional sentences express unlikely, hypothetical, or contrary-to-reality situations in the present or future. The structure is: Si + Imperfect Subjunctive, Simple Conditional. Note that in Catalan, we use the imperfect subjunctive after the hypothetical conditional 'si'.",
+          "slides": [
+            {
+              "slideId": "gl-33-s-1",
+              "content": "**Estructura del Segon Condicional**\n- **Condició:** *Si + Pretèrit Imperfet de Subjuntiu*\n- **Conseqüència:** *Condicional Simple*\n\n**Exemples:**\n- Si **tingués** més diners, em **compraria** un cotxe nou.\n- Si **fossis** més amable, la gent et **tractaria** millor.\n- Què **faries** si et **toqués** la loteria?\n",
+              "contentEn": "Structure of the Second Conditional: If + Imperfect Subjunctive -> Simple Conditional.",
+              "id": "gs-33-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "title": "Concept 1",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-33-1",
+              "type": "fillBlank",
+              "target": "Si jo ___ (ser) ric, viatjaria per tot el món.",
+              "en": "If I were rich, I would travel all over the world.",
+              "answer": {
+                "target": "fos"
+              },
+              "distractors": [
+                {
+                  "target": "seria"
+                },
+                {
+                  "target": "soc"
+                }
+              ]
+            },
+            {
+              "id": "ge-33-2",
+              "type": "fillBlank",
+              "target": "Ells vindrien a la festa si els ___ (convidar).",
+              "en": "They would come to the party if you invited them.",
+              "answer": {
+                "target": "convidessis"
+              },
+              "distractors": [
+                {
+                  "target": "convidaries"
+                },
+                {
+                  "target": "convidaves"
+                }
+              ]
+            },
+            {
+              "id": "ge-33-3",
+              "type": "fillBlank",
+              "target": "Si tinguéssim més temps, ___ (visitar) més museus.",
+              "en": "If we had more time, we would visit more museums.",
+              "answer": {
+                "target": "visitaríem"
+              },
+              "distractors": [
+                {
+                  "target": "visitarem"
+                },
+                {
+                  "target": "visitàvem"
+                }
+              ]
+            },
+            {
+              "id": "ge-33-4",
+              "type": "fillBlank",
+              "target": "Què diries si et ___ (proposar) un canvi de feina?",
+              "en": "What would you say if they proposed a job change to you?",
+              "answer": {
+                "target": "proposessin"
+              },
+              "distractors": [
+                {
+                  "target": "proposaven"
+                },
+                {
+                  "target": "proposarien"
+                }
+              ]
+            },
+            {
+              "id": "ge-33-5",
+              "type": "fillBlank",
+              "target": "Jo no ho faria si no ___ (creure) que és necessari.",
+              "en": "I wouldn't do it if I didn't believe it's necessary.",
+              "answer": {
+                "target": "cregués"
+              },
+              "distractors": [
+                {
+                  "target": "creuria"
+                },
+                {
+                  "target": "creia"
+                }
+              ]
+            },
+            {
+              "id": "ge-33-6",
+              "type": "fillBlank",
+              "target": "Jo no ho faria si no ___ (creure) que és necessari.",
+              "en": "I wouldn't do it if I didn't believe it's necessary.",
+              "answer": {
+                "target": "cregués"
+              },
+              "distractors": [
+                {
+                  "target": "creuria"
+                },
+                {
+                  "target": "creia"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-13",
+      "title": "Relatius i Passat Profund",
+      "subtitle": "Connect sentences smoothly and master the Plusquamperfect.",
+      "lessons": [
+        {
+          "id": "gl-34",
+          "title": "Pronoms relatius: que i qui",
+          "subtitle": "Relative pronouns: que and qui",
+          "grammarPoint": "Ús de que i qui",
+          "grammarPointEn": "Usage of que and qui",
+          "slides": [
+            {
+              "slideId": "gl-34-s1",
+              "title": "El pronom 'que'",
+              "content": "El pronom relatiu **que** és el més freqüent. Es refereix a persones, animals o coses i fa de subjecte o de complement directe.\n\nExemples:\n- El noi **que** canta és el meu germà.\n- La pel·lícula **que** vam veure era molt bona.",
+              "id": "gs-34-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "slideId": "gl-34-s2",
+              "title": "El pronom 'qui'",
+              "content": "El pronom relatiu **qui** es refereix exclusivament a persones i sempre va precedit d'una preposició (a, de, amb, per...).\n\nExemples:\n- La noia amb **qui** parlo és d'Alacant.\n- Aquest és l'home a **qui** vaig donar el llibre.",
+              "id": "gs-34-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-34-1",
+              "type": "fillBlank",
+              "target": "El cotxe ___ he comprat és de segona mà.",
+              "en": "The car that I bought is second-hand.",
+              "answer": {
+                "target": "que"
+              },
+              "distractors": [
+                {
+                  "target": "qui"
+                },
+                {
+                  "target": "el qual"
+                }
+              ]
+            },
+            {
+              "id": "ge-34-2",
+              "type": "fillBlank",
+              "target": "La professora amb ___ treballo és excel·lent.",
+              "en": "The teacher with whom I work is excellent.",
+              "answer": {
+                "target": "qui"
+              },
+              "distractors": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "la que"
+                }
+              ]
+            },
+            {
+              "id": "ge-34-3",
+              "type": "fillBlank",
+              "target": "Els llibres ___ són sobre la taula són teus.",
+              "en": "The books that are on the table are yours.",
+              "answer": {
+                "target": "que"
+              },
+              "distractors": [
+                {
+                  "target": "qui"
+                },
+                {
+                  "target": "els quals"
+                }
+              ]
+            },
+            {
+              "id": "ge-34-4",
+              "type": "fillBlank",
+              "target": "L'amic de ___ et parlava ha arribat avui.",
+              "en": "The friend of whom I was speaking to you has arrived today.",
+              "answer": {
+                "target": "qui"
+              },
+              "distractors": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "el qui"
+                }
+              ]
+            },
+            {
+              "id": "ge-34-5",
+              "type": "fillBlank",
+              "target": "És una història ___ no m'agrada gens.",
+              "en": "It's a story that I don't like at all.",
+              "answer": {
+                "target": "que"
+              },
+              "distractors": [
+                {
+                  "target": "qui"
+                },
+                {
+                  "target": "la qual"
+                }
+              ]
+            },
+            {
+              "id": "ge-34-6",
+              "type": "fillBlank",
+              "target": "És una història ___ no m'agrada gens.",
+              "en": "It's a story that I don't like at all.",
+              "answer": {
+                "target": "que"
+              },
+              "distractors": [
+                {
+                  "target": "qui"
+                },
+                {
+                  "target": "la qual"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-35",
+          "title": "Pronoms relatius: on i el qual",
+          "subtitle": "Relative pronouns: on, el qual, la qual...",
+          "grammarPoint": "Ús d'on i el qual",
+          "grammarPointEn": "Usage of on and el qual",
+          "slides": [
+            {
+              "slideId": "gl-35-s1",
+              "title": "El pronom relatiu 'on'",
+              "content": "S'utilitza per indicar lloc (equivaleix a 'en el qual', 'a la qual', etc.). Pot anar acompanyat de preposicions com *a*, *cap a*, *de*, *des de*, *per*.\n\nExemples:\n- El poble **on** vaig néixer és petit.\n- La ciutat **d'on** vinc és molt bonica.",
+              "id": "gs-35-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "slideId": "gl-35-s2",
+              "title": "Els pronoms 'el qual', 'la qual', 'els quals', 'les quals'",
+              "content": "Generalment s'utilitzen darrere de preposició forta (damunt, sota, contra, durant...) o preposicions compostes. També s'usen per evitar ambigüitats en oracions explicatives.\n\nExemples:\n- L'edifici davant **del qual** ens vam trobar.\n- La raó per **la qual** no vinc és que estic malalt.",
+              "id": "gs-35-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-35-1",
+              "type": "fillBlank",
+              "target": "Aquesta és la casa ___ vaig viure d'infant.",
+              "en": "This is the house where I lived as a child.",
+              "answer": {
+                "target": "on"
+              },
+              "distractors": [
+                {
+                  "target": "la qual"
+                },
+                {
+                  "target": "que"
+                }
+              ]
+            },
+            {
+              "id": "ge-35-2",
+              "type": "fillBlank",
+              "target": "Les condicions sota ___ treballem són dures.",
+              "en": "The conditions under which we work are hard.",
+              "answer": {
+                "target": "les quals"
+              },
+              "distractors": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "on"
+                }
+              ]
+            },
+            {
+              "id": "ge-35-3",
+              "type": "fillBlank",
+              "target": "El carrer ___ visc és estret.",
+              "en": "The street where I live is narrow.",
+              "answer": {
+                "target": "on"
+              },
+              "distractors": [
+                {
+                  "target": "el qual"
+                },
+                {
+                  "target": "que"
+                }
+              ]
+            },
+            {
+              "id": "ge-35-4",
+              "type": "fillBlank",
+              "target": "És el motiu per ___ no volia venir.",
+              "en": "It's the reason for which he didn't want to come.",
+              "answer": {
+                "target": "el qual"
+              },
+              "distractors": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "qui"
+                }
+              ]
+            },
+            {
+              "id": "ge-35-5",
+              "type": "fillBlank",
+              "target": "La reunió, durant ___, no vaig dir res, va ser molt llarga.",
+              "en": "The meeting, during which I said nothing, was very long.",
+              "answer": {
+                "target": "la qual"
+              },
+              "distractors": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "on"
+                }
+              ]
+            },
+            {
+              "id": "ge-35-6",
+              "type": "fillBlank",
+              "target": "La reunió, durant ___, no vaig dir res, va ser molt llarga.",
+              "en": "The meeting, during which I said nothing, was very long.",
+              "answer": {
+                "target": "la qual"
+              },
+              "distractors": [
+                {
+                  "target": "que"
+                },
+                {
+                  "target": "on"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-36",
+          "title": "El Plusquamperfet",
+          "subtitle": "The Plusquamperfect Tense",
+          "grammarPoint": "Havia + participi",
+          "grammarPointEn": "Havia + participle",
+          "slides": [
+            {
+              "slideId": "gl-36-s1",
+              "title": "Formació del plusquamperfet",
+              "content": "Es forma amb l'imperfet d'indicatiu del verb *haver* i el participi del verb principal.\n\n*Haver*: havia, havies, havia, havíem, havíeu, havien.\n\nExemple:\n- Jo **havia cantat**.\n- Ells **havien sortit**.",
+              "id": "gs-36-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "slideId": "gl-36-s2",
+              "title": "Ús del plusquamperfet",
+              "content": "S'utilitza per expressar una acció passada anterior a una altra acció també passada.\n\nExemples:\n- Quan vaig arribar a l'estació, el tren ja **havia sortit**.\n- No volia menjar perquè ja **havia dinat**.",
+              "id": "gs-36-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-36-1",
+              "type": "fillBlank",
+              "target": "Quan van arribar, nosaltres ja ___ (sopar).",
+              "en": "When they arrived, we had already had dinner.",
+              "answer": {
+                "target": "havíem sopat"
+              },
+              "distractors": [
+                {
+                  "target": "havien sopat"
+                },
+                {
+                  "target": "vam sopar"
+                }
+              ]
+            },
+            {
+              "id": "ge-36-2",
+              "type": "fillBlank",
+              "target": "Em va dir que mai no hi ___ (anar).",
+              "en": "He told me that he had never gone there.",
+              "answer": {
+                "target": "havia anat"
+              },
+              "distractors": [
+                {
+                  "target": "havies anat"
+                },
+                {
+                  "target": "vaig anar"
+                }
+              ]
+            },
+            {
+              "id": "ge-36-3",
+              "type": "fillBlank",
+              "target": "No vas poder entrar perquè ___ (perdre) les claus.",
+              "en": "You couldn't get in because you had lost the keys.",
+              "answer": {
+                "target": "havies perdut"
+              },
+              "distractors": [
+                {
+                  "target": "havia perdut"
+                },
+                {
+                  "target": "vas perdre"
+                }
+              ]
+            },
+            {
+              "id": "ge-36-4",
+              "type": "fillBlank",
+              "target": "Ahir va ploure molt, però el dia abans no ___ (ploure) gens.",
+              "en": "Yesterday it rained a lot, but the day before it hadn't rained at all.",
+              "answer": {
+                "target": "havia plogut"
+              },
+              "distractors": [
+                {
+                  "target": "havien plogut"
+                },
+                {
+                  "target": "va ploure"
+                }
+              ]
+            },
+            {
+              "id": "ge-36-5",
+              "type": "fillBlank",
+              "target": "Els meus amics ja ___ (preparar) la festa sorpresa.",
+              "en": "My friends had already prepared the surprise party.",
+              "answer": {
+                "target": "havien preparat"
+              },
+              "distractors": [
+                {
+                  "target": "havíem preparat"
+                },
+                {
+                  "target": "van preparar"
+                }
+              ]
+            },
+            {
+              "id": "ge-36-6",
+              "type": "fillBlank",
+              "target": "Els meus amics ja ___ (preparar) la festa sorpresa.",
+              "en": "My friends had already prepared the surprise party.",
+              "answer": {
+                "target": "havien preparat"
+              },
+              "distractors": [
+                {
+                  "target": "havíem preparat"
+                },
+                {
+                  "target": "van preparar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-37",
+          "title": "Expressions de temps",
+          "subtitle": "Time expressions: des de, fa, feia, des que",
+          "grammarPoint": "Preposicions i locucions de temps",
+          "grammarPointEn": "Time prepositions and locutions",
+          "slides": [
+            {
+              "slideId": "gl-37-s1",
+              "title": "Fa i Feia",
+              "content": "**Fa** indica el temps transcorregut des d'una acció passada fins al moment present. S'usa amb verbs en passat (perifràstic o indefinit).\n- Vam arribar **fa** dues hores.\n\n**Feia** indica el temps transcorregut fins a un moment del passat. S'usa amb verbs en imperfet o plusquamperfet.\n- **Feia** molt de temps que no ens vèiem.",
+              "id": "gs-37-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "slideId": "gl-37-s2",
+              "title": "Des de i Des que",
+              "content": "**Des de** indica el punt d'inici d'una acció i va seguit d'un substantiu (una data, un dia, un any).\n- Visc aquí **des de** 2015.\n\n**Des que** indica també el punt d'inici, però va seguit d'una oració amb un verb conjugat.\n- No l'he vist **des que** vam acabar l'escola.",
+              "id": "gs-37-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-37-1",
+              "type": "fillBlank",
+              "target": "Estic estudiant català ___ l'any passat.",
+              "en": "I am studying Catalan since last year.",
+              "answer": {
+                "target": "des de"
+              },
+              "distractors": [
+                {
+                  "target": "des que"
+                },
+                {
+                  "target": "fa"
+                }
+              ]
+            },
+            {
+              "id": "ge-37-2",
+              "type": "fillBlank",
+              "target": "Ens vam conèixer ___ cinc anys.",
+              "en": "We met five years ago.",
+              "answer": {
+                "target": "fa"
+              },
+              "distractors": [
+                {
+                  "target": "feia"
+                },
+                {
+                  "target": "des de"
+                }
+              ]
+            },
+            {
+              "id": "ge-37-3",
+              "type": "fillBlank",
+              "target": "No he menjat res ___ em vaig llevar.",
+              "en": "I haven't eaten anything since I got up.",
+              "answer": {
+                "target": "des que"
+              },
+              "distractors": [
+                {
+                  "target": "des de"
+                },
+                {
+                  "target": "fa"
+                }
+              ]
+            },
+            {
+              "id": "ge-37-4",
+              "type": "fillBlank",
+              "target": "Quan em va trucar, ___ tres hores que l'esperava.",
+              "en": "When he called me, I had been waiting for him for three hours.",
+              "answer": {
+                "target": "feia"
+              },
+              "distractors": [
+                {
+                  "target": "fa"
+                },
+                {
+                  "target": "des de"
+                }
+              ]
+            },
+            {
+              "id": "ge-37-5",
+              "type": "fillBlank",
+              "target": "Treballa en aquesta empresa ___ el març.",
+              "en": "He has been working in this company since March.",
+              "answer": {
+                "target": "des de"
+              },
+              "distractors": [
+                {
+                  "target": "des que"
+                },
+                {
+                  "target": "fa"
+                }
+              ]
+            },
+            {
+              "id": "ge-37-6",
+              "type": "fillBlank",
+              "target": "Treballa en aquesta empresa ___ el març.",
+              "en": "He has been working in this company since March.",
+              "answer": {
+                "target": "des de"
+              },
+              "distractors": [
+                {
+                  "target": "des que"
+                },
+                {
+                  "target": "fa"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-14",
+      "title": "Domini dels Pronoms Febles",
+      "subtitle": "Combine weak pronouns flawlessly and explore the passive voice.",
+      "lessons": [
+        {
+          "id": "gl-38",
+          "title": "Pronoms 'en' i 'hi' (Avançat)",
+          "subtitle": "Domini dels Pronoms Febles",
+          "grammarPoint": "Ús avançat dels pronoms febles 'en' i 'hi'",
+          "grammarPointEn": "Advanced use of the weak pronouns 'en' and 'hi'",
+          "slides": [
+            {
+              "title": "El pronom 'en'",
+              "content": "El pronom 'en' substitueix complements introduïts per la preposició 'de'. També substitueix el complement directe quan és indefinit.",
+              "id": "gs-38-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "title": "El pronom 'hi'",
+              "content": "El pronom 'hi' substitueix complements de lloc, així com altres complements introduïts per preposicions com 'a', 'en', 'amb' (excepte 'de').",
+              "id": "gs-38-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-38-1",
+              "type": "fillBlank",
+              "target": "Vens del cinema? Sí, ___ vinc.",
+              "en": "Are you coming from the cinema? Yes, I am coming from there.",
+              "answer": {
+                "target": "en"
+              },
+              "distractors": [
+                {
+                  "target": "hi"
+                },
+                {
+                  "target": "ho"
+                }
+              ]
+            },
+            {
+              "id": "ge-38-2",
+              "type": "fillBlank",
+              "target": "Vas al teatre? Sí, ___ vaig.",
+              "en": "Are you going to the theater? Yes, I am going there.",
+              "answer": {
+                "target": "hi"
+              },
+              "distractors": [
+                {
+                  "target": "en"
+                },
+                {
+                  "target": "el"
+                }
+              ]
+            },
+            {
+              "id": "ge-38-3",
+              "type": "fillBlank",
+              "target": "Tens pomes? Sí, ___ tinc dues.",
+              "en": "Do you have apples? Yes, I have two (of them).",
+              "answer": {
+                "target": "en"
+              },
+              "distractors": [
+                {
+                  "target": "hi"
+                },
+                {
+                  "target": "les"
+                }
+              ]
+            },
+            {
+              "id": "ge-38-4",
+              "type": "fillBlank",
+              "target": "Penses en les teves vacances? Sí, ___ penso molt.",
+              "en": "Do you think about your holidays? Yes, I think about them a lot.",
+              "answer": {
+                "target": "hi"
+              },
+              "distractors": [
+                {
+                  "target": "en"
+                },
+                {
+                  "target": "ho"
+                }
+              ]
+            },
+            {
+              "id": "ge-38-5",
+              "type": "fillBlank",
+              "target": "Estàs d'acord amb aquesta decisió? Sí, ___ estic d'acord.",
+              "en": "Do you agree with this decision? Yes, I agree with it.",
+              "answer": {
+                "target": "hi"
+              },
+              "distractors": [
+                {
+                  "target": "en"
+                },
+                {
+                  "target": "ho"
+                }
+              ]
+            },
+            {
+              "id": "ge-38-6",
+              "type": "fillBlank",
+              "target": "Estàs d'acord amb aquesta decisió? Sí, ___ estic d'acord.",
+              "en": "Do you agree with this decision? Yes, I agree with it.",
+              "answer": {
+                "target": "hi"
+              },
+              "distractors": [
+                {
+                  "target": "en"
+                },
+                {
+                  "target": "ho"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-39",
+          "title": "Combinació de Pronoms (CD + CI)",
+          "subtitle": "Domini dels Pronoms Febles",
+          "grammarPoint": "Combinació de pronoms de complement directe i indirecte",
+          "grammarPointEn": "Combining direct and indirect object pronouns",
+          "slides": [
+            {
+              "title": "Combinació 'li' + 'el/la'",
+              "content": "Quan combinem el pronom de CI 'li' amb els de CD 'el/la/els/les', 'li' es transforma en 'hi'. Exemple: li + el = l'hi, li + la = la hi, li + els = els hi, li + les = les hi.",
+              "id": "gs-39-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "title": "Combinació 'els' + 'ho'",
+              "content": "La combinació del pronom de CI plural 'els' amb el pronom neutre 'ho' forma 'els ho'.",
+              "id": "gs-39-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-39-1",
+              "type": "fillBlank",
+              "target": "Dona el llibre a la Maria. Dona'___.",
+              "en": "Give the book to Maria. Give it to her.",
+              "answer": {
+                "target": "l'hi"
+              },
+              "distractors": [
+                {
+                  "target": "li'l"
+                },
+                {
+                  "target": "el hi"
+                }
+              ]
+            },
+            {
+              "id": "ge-39-2",
+              "type": "fillBlank",
+              "target": "Explica això als nens. Explica'___.",
+              "en": "Explain this to the children. Explain it to them.",
+              "answer": {
+                "target": "ls-ho"
+              },
+              "distractors": [
+                {
+                  "target": "les-ho"
+                },
+                {
+                  "target": "los-ho"
+                }
+              ]
+            },
+            {
+              "id": "ge-39-3",
+              "type": "fillBlank",
+              "target": "Has portat les claus al Joan? Sí, ja ___ he portat.",
+              "en": "Have you brought the keys to Joan? Yes, I have already brought them to him.",
+              "answer": {
+                "target": "les hi"
+              },
+              "distractors": [
+                {
+                  "target": "les li"
+                },
+                {
+                  "target": "l'hi"
+                }
+              ]
+            },
+            {
+              "id": "ge-39-4",
+              "type": "fillBlank",
+              "target": "He comprat la revista per a la teva mare. ___ he comprat aquest matí.",
+              "en": "I bought the magazine for your mother. I bought it for her this morning.",
+              "answer": {
+                "target": "La hi"
+              },
+              "distractors": [
+                {
+                  "target": "Li la"
+                },
+                {
+                  "target": "L'hi"
+                }
+              ]
+            },
+            {
+              "id": "ge-39-5",
+              "type": "fillBlank",
+              "target": "Qui ha dit això als teus pares? Ningú ___ ha dit.",
+              "en": "Who said this to your parents? Nobody told them.",
+              "answer": {
+                "target": "els ho"
+              },
+              "distractors": [
+                {
+                  "target": "els hi"
+                },
+                {
+                  "target": "ho els"
+                }
+              ]
+            },
+            {
+              "id": "ge-39-6",
+              "type": "fillBlank",
+              "target": "Qui ha dit això als teus pares? Ningú ___ ha dit.",
+              "en": "Who said this to your parents? Nobody told them.",
+              "answer": {
+                "target": "els ho"
+              },
+              "distractors": [
+                {
+                  "target": "els hi"
+                },
+                {
+                  "target": "ho els"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-40",
+          "title": "Combinació de Pronoms amb 'en' i 'hi'",
+          "subtitle": "Domini dels Pronoms Febles",
+          "grammarPoint": "Combinació de pronoms amb 'en' i 'hi'",
+          "grammarPointEn": "Combining pronouns with 'en' and 'hi'",
+          "slides": [
+            {
+              "title": "Combinació amb 'en'",
+              "content": "Podem combinar el pronom 'en' amb altres pronoms. Exemples: et + en = te'n, ens + en = ens en, us + en = us en, es + en = se'n, el + en = l'en, la + en = la'n.",
+              "id": "gs-40-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "title": "Combinació 'n'hi'",
+              "content": "La combinació de 'en' i 'hi' sempre escriu la forma apostrofada de 'en' més 'hi', resultant en 'n'hi'.",
+              "id": "gs-40-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-40-1",
+              "type": "fillBlank",
+              "target": "Vols treure el cotxe del garatge? Sí, ___ vull treure.",
+              "en": "Do you want to take the car out of the garage? Yes, I want to take it out (from there).",
+              "answer": {
+                "target": "l'en"
+              },
+              "distractors": [
+                {
+                  "target": "el'n"
+                },
+                {
+                  "target": "l'hi"
+                }
+              ]
+            },
+            {
+              "id": "ge-40-2",
+              "type": "fillBlank",
+              "target": "Hi ha pomes a la nevera? Sí que ___ ha.",
+              "en": "Are there apples in the fridge? Yes, there are (some).",
+              "answer": {
+                "target": "n'hi"
+              },
+              "distractors": [
+                {
+                  "target": "en hi"
+                },
+                {
+                  "target": "hi n'"
+                }
+              ]
+            },
+            {
+              "id": "ge-40-3",
+              "type": "fillBlank",
+              "target": "Es menja molta fruita aquí? Sí que ___ menja molta.",
+              "en": "Do people eat a lot of fruit here? Yes, people eat a lot (of it).",
+              "answer": {
+                "target": "se'n"
+              },
+              "distractors": [
+                {
+                  "target": "s'en"
+                },
+                {
+                  "target": "en se"
+                }
+              ]
+            },
+            {
+              "id": "ge-40-4",
+              "type": "fillBlank",
+              "target": "Necessites paciència per a l'examen? Sí que ___ necessitaré.",
+              "en": "Do you need patience for the exam? Yes I will need some for it.",
+              "answer": {
+                "target": "n'hi"
+              },
+              "distractors": [
+                {
+                  "target": "hi'n"
+                },
+                {
+                  "target": "la'n"
+                }
+              ]
+            },
+            {
+              "id": "ge-40-5",
+              "type": "fillBlank",
+              "target": "No ___ recordo (de la reunió).",
+              "en": "I don't remember it (the meeting).",
+              "answer": {
+                "target": "me'n"
+              },
+              "distractors": [
+                {
+                  "target": "m'en"
+                },
+                {
+                  "target": "en me"
+                }
+              ]
+            },
+            {
+              "id": "ge-40-6",
+              "type": "fillBlank",
+              "target": "No ___ recordo (de la reunió).",
+              "en": "I don't remember it (the meeting).",
+              "answer": {
+                "target": "me'n"
+              },
+              "distractors": [
+                {
+                  "target": "m'en"
+                },
+                {
+                  "target": "en me"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-41",
+          "title": "La Veu Passiva (Ser + Participi)",
+          "subtitle": "Domini dels Pronoms Febles",
+          "grammarPoint": "Ús de la veu passiva amb el verb ser i el participi",
+          "grammarPointEn": "Using the passive voice with the verb 'ser' and participle",
+          "slides": [
+            {
+              "title": "Estructura de la passiva",
+              "content": "La veu passiva es forma amb el verb 'ser' conjugat i el participi del verb principal, que concorda en gènere i nombre amb el subjecte pacient.",
+              "id": "gs-41-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "title": "El complement agent",
+              "content": "L'executor de l'acció s'introdueix amb la preposició 'per', formant el complement agent.",
+              "id": "gs-41-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-41-1",
+              "type": "fillBlank",
+              "target": "El llibre va ___ escrit per un autor famós.",
+              "en": "The book was written by a famous author.",
+              "answer": {
+                "target": "ser"
+              },
+              "distractors": [
+                {
+                  "target": "estar"
+                },
+                {
+                  "target": "haver"
+                }
+              ]
+            },
+            {
+              "id": "ge-41-2",
+              "type": "fillBlank",
+              "target": "Les cartes seran ___ demà.",
+              "en": "The letters will be sent tomorrow.",
+              "answer": {
+                "target": "enviades"
+              },
+              "distractors": [
+                {
+                  "target": "enviats"
+                },
+                {
+                  "target": "enviada"
+                }
+              ]
+            },
+            {
+              "id": "ge-41-3",
+              "type": "fillBlank",
+              "target": "El pastís va ser preparat ___ la meva àvia.",
+              "en": "The cake was prepared by my grandmother.",
+              "answer": {
+                "target": "per"
+              },
+              "distractors": [
+                {
+                  "target": "de"
+                },
+                {
+                  "target": "a"
+                }
+              ]
+            },
+            {
+              "id": "ge-41-4",
+              "type": "fillBlank",
+              "target": "Els lladres van ser ___ per la policia.",
+              "en": "The thieves were arrested by the police.",
+              "answer": {
+                "target": "detinguts"
+              },
+              "distractors": [
+                {
+                  "target": "detingut"
+                },
+                {
+                  "target": "detingudes"
+                }
+              ]
+            },
+            {
+              "id": "ge-41-5",
+              "type": "fillBlank",
+              "target": "Aquesta casa ha estat ___ recentment.",
+              "en": "This house has been built recently.",
+              "answer": {
+                "target": "construïda"
+              },
+              "distractors": [
+                {
+                  "target": "construït"
+                },
+                {
+                  "target": "construïdes"
+                }
+              ]
+            },
+            {
+              "id": "ge-41-6",
+              "type": "fillBlank",
+              "target": "Aquesta casa ha estat ___ recentment.",
+              "en": "This house has been built recently.",
+              "answer": {
+                "target": "construïda"
+              },
+              "distractors": [
+                {
+                  "target": "construït"
+                },
+                {
+                  "target": "construïdes"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gl-42",
+          "title": "L'Impersonal 'Es' i la Passiva Reflexa",
+          "subtitle": "Domini dels Pronoms Febles",
+          "grammarPoint": "Ús de 'es' impersonal i la passiva reflexa",
+          "grammarPointEn": "Using impersonal 'es' and reflexive passive",
+          "slides": [
+            {
+              "title": "Passiva reflexa",
+              "content": "S'utilitza 'es' més el verb en 3a persona per indicar que una acció es fa sobre un subjecte pacient (que concorda amb el verb). Exemple: Es ven un pis / Es venen pisos.",
+              "id": "gs-42-1",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            },
+            {
+              "title": "L'impersonal 'es'",
+              "content": "S'utilitza 'es' més el verb en 3a persona del singular per indicar una acció sense un subjecte específic. Exemple: Es diu que plourà.",
+              "id": "gs-42-2",
+              "body": "Aquesta lliçó ensenya conceptes claus de gramàtica.",
+              "examples": [
+                {
+                  "target": "Exemple",
+                  "en": "Example"
+                }
+              ]
+            }
+          ],
+          "exercises": [
+            {
+              "id": "ge-42-1",
+              "type": "fillBlank",
+              "target": "Aquí ___ parla català.",
+              "en": "Catalan is spoken here.",
+              "answer": {
+                "target": "es"
+              },
+              "distractors": [
+                {
+                  "target": "se"
+                },
+                {
+                  "target": "s'"
+                }
+              ]
+            },
+            {
+              "id": "ge-42-2",
+              "type": "fillBlank",
+              "target": "___ venen bicicletes de segona mà.",
+              "en": "Second-hand bicycles are sold.",
+              "answer": {
+                "target": "Es"
+              },
+              "distractors": [
+                {
+                  "target": "Se"
+                },
+                {
+                  "target": "S'"
+                }
+              ]
+            },
+            {
+              "id": "ge-42-3",
+              "type": "fillBlank",
+              "target": "A l'estiu ___ dorm poc.",
+              "en": "In summer people sleep little.",
+              "answer": {
+                "target": "es"
+              },
+              "distractors": [
+                {
+                  "target": "se"
+                },
+                {
+                  "target": "s'"
+                }
+              ]
+            },
+            {
+              "id": "ge-42-4",
+              "type": "fillBlank",
+              "target": "Com ___ diu 'gràcies' en anglès?",
+              "en": "How do you say 'thank you' in English?",
+              "answer": {
+                "target": "es"
+              },
+              "distractors": [
+                {
+                  "target": "se"
+                },
+                {
+                  "target": "s'"
+                }
+              ]
+            },
+            {
+              "id": "ge-42-5",
+              "type": "fillBlank",
+              "target": "___ espera una resposta ràpida.",
+              "en": "A quick reply is expected.",
+              "answer": {
+                "target": "S'"
+              },
+              "distractors": [
+                {
+                  "target": "Es"
+                },
+                {
+                  "target": "Se"
+                }
+              ]
+            },
+            {
+              "id": "ge-42-6",
+              "type": "fillBlank",
+              "target": "___ espera una resposta ràpida.",
+              "en": "A quick reply is expected.",
+              "answer": {
+                "target": "S'"
+              },
+              "distractors": [
+                {
+                  "target": "Es"
+                },
+                {
+                  "target": "Se"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

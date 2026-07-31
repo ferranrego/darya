@@ -2,16 +2,17 @@ import { lexiconIndex } from "../content/load";
 import { tokenize } from "../text";
 
 /**
- * Token-level vocabulary validation for AI-generated Dari sentences. Checks
- * against the whole lexicon plus derivable verb forms, so unseen-but-real
- * words pass while hallucinated words and Iranian-Persian spellings reject.
+ * Token-level vocabulary validation for AI-generated sentences in whatever
+ * language this build teaches. Checks against the whole lexicon plus derivable
+ * inflected forms, so unseen-but-real words pass while hallucinated words
+ * reject - and in Dari, so do Iranian-Persian spellings.
  */
 
 /**
- * The single acceptance rule for "is this a real Dari word form?". Everything
- * that validates Dari text - AI output, shipped content - goes through here, so
- * the corpus regression test in text/corpus.test.ts exercises exactly what
- * production does.
+ * The single acceptance rule for "is this a real word form in the target
+ * language?". Everything that validates target-language text - AI output,
+ * shipped content - goes through here, so the corpus regression test in
+ * text/corpus.test.ts exercises exactly what production does.
  *
  * This is deliberately the same resolver the reader uses for tap-to-lookup:
  * accepting a form the reader cannot explain is what let malformed verbs

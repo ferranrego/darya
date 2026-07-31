@@ -1,0 +1,94 @@
+id: gl-29
+title: Emocions i sentiments
+subtitle: m'agrada que, em molesta que
+grammarPoint: El subjuntiu amb verbs de sentiment
+grammarPointEn: Subjunctive with verbs of emotion and feeling
+slides:
+  - title: Verbs de sentiment
+    examples:
+      - target: M'agrada que em truquis.
+        en: I like that you call me.
+        highlight: truquis
+      - target: Em molesta que facin soroll.
+        en: It bothers me that they make noise.
+        highlight: facin
+    table:
+      - - Expressió
+        - Exemple
+      - - M'agrada que...
+        - M'agrada que riguis
+      - - Em molesta que...
+        - Em molesta que cridis
+      - - Em sorprèn que...
+        - Em sorprèn que ho sàpiga
+    id: gs-29-1
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+  - title: Més expressions emocionals
+    examples:
+      - target: Em fa pena que no puguis venir.
+        en: It makes me sad that you can't come.
+        highlight: puguis
+      - target: Ens alegra que estigueu bé.
+        en: It makes us glad that you are well.
+        highlight: estigueu
+    id: gs-29-2
+    body: Aquesta lliçó ensenya conceptes claus de gramàtica.
+exercises:
+  - id: ge-29-1
+    type: fillBlank
+    target: Em sorprèn que ella ___ (saber) la resposta.
+    en: It surprises me that she knows the answer.
+    answer:
+      target: sàpiga
+    distractors:
+      - target: sap
+      - target: saberà
+  - id: ge-29-2
+    type: spotError
+    target: Ens agrada que vosaltres veniu a casa.
+    en: We like that you come home.
+    errorWord:
+      target: veniu
+    correction:
+      target: vingueu
+    correctedTarget: Ens agrada que vosaltres vingueu a casa.
+  - id: ge-29-3
+    type: buildSentence
+    en: It bothers me that you make noise.
+    words:
+      - target: molesta
+      - target: Em
+      - target: facis
+      - target: que
+      - target: soroll
+    extraWords: []
+  - id: ge-29-4
+    type: matchPairs
+    prompt: Match the pairs
+    pairs:
+      - target: M'agrada que vinguis
+        en: I like that you come
+      - target: Em molesta que cridi
+        en: It bothers me that he yells
+      - target: Ens sorprèn que sàpiguen això
+        en: It surprises us that they know this
+      - target: Em fa pena que marxis
+        en: It makes me sad that you leave
+  - id: ge-29-5
+    type: chooseTranslation
+    direction: toEn
+    target: Els alegra que tinguis feina.
+    en: It makes them glad that you have a job.
+    distractorsEn:
+      - They are happy to work.
+      - It makes us glad that you have a job.
+    distractorsTarget: []
+  - id: ge-29-6
+    type: chooseTranslation
+    direction: toEn
+    target: Els alegra que tinguis feina.
+    en: It makes them glad that you have a job.
+    distractorsEn:
+      - They are happy to work.
+      - It makes us glad that you have a job.
+    distractorsTarget: []

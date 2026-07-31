@@ -1,0 +1,149 @@
+id: gl-14
+title: The perfect with haver
+subtitle: For what has happened today.
+grammarPoint: perfect-haver
+grammarPointEn: "the perfect: present of haver plus the past participle, used
+  for events inside a period that is still running"
+slides:
+  - id: gs-14-1
+    title: haver plus the participle
+    body: Use it for something that happened inside a stretch of time that is still
+      going, above all today. For yesterday, use the periphrastic past.
+    examples:
+      - target: He menjat.
+        en: I have eaten.
+      - target: Avui hem treballat molt.
+        en: Today we have worked a lot.
+      - target: Ahir vaig treballar molt.
+        en: Yesterday I worked a lot.
+    table:
+      - - jo
+        - he
+      - - tu
+        - has
+      - - ell, ella
+        - ha
+      - - nosaltres
+        - hem
+      - - vosaltres
+        - heu
+      - - ells, elles
+        - han
+  - id: gs-14-2
+    title: Participles, regular and not
+    body: -ar gives -at, -er and -re give -ut, -ir gives -it. A handful are
+      irregular and worth memorising outright.
+    examples:
+      - target: He parlat amb ella.
+        en: I have spoken with her.
+      - target: Has vist la casa?
+        en: Have you seen the house?
+    table:
+      - - parlar
+        - parlat
+      - - perdre
+        - perdut
+      - - dormir
+        - dormit
+      - - fer
+        - fet
+      - - dir
+        - dit
+      - - veure
+        - vist
+      - - obrir
+        - obert
+      - - escriure
+        - escrit
+  - id: gs-14-3
+    title: Never split haver from its participle
+    body: Nothing goes between them. Adverbs come after the participle, or before
+      haver.
+    examples:
+      - target: He menjat molt bé.
+        en: I have eaten very well.
+      - target: Encara no he menjat.
+        en: I haven't eaten yet.
+exercises:
+  - id: ge-14-1
+    type: fillBlank
+    target: Avui ___ menjat molt.
+    en: Today I have eaten a lot.
+    answer:
+      target: he
+    distractors:
+      - target: has
+      - target: ha
+      - target: hem
+  - id: ge-14-2
+    type: fillBlank
+    target: Ella ha ___ la porta.
+    en: She has opened the door.
+    answer:
+      target: obert
+    distractors:
+      - target: obrit
+      - target: obrat
+      - target: obrut
+  - id: ge-14-3
+    type: fillBlank
+    target: Nosaltres ___ arribat tard.
+    en: We have arrived late.
+    answer:
+      target: hem
+    distractors:
+      - target: han
+      - target: heu
+      - target: he
+  - id: ge-14-4
+    type: fillBlank
+    target: Has ___ el llibre?
+    en: Have you seen the book?
+    answer:
+      target: vist
+    distractors:
+      - target: veut
+      - target: vegut
+      - target: veure
+  - id: ge-14-5
+    type: fillBlank
+    target: Ells han ___ el sopar.
+    en: They have made dinner.
+    answer:
+      target: fet
+    distractors:
+      - target: fat
+      - target: fut
+      - target: fent
+  - id: ge-14-6
+    type: spotError
+    target: Ahir he menjat peix.
+    en: Yesterday I ate fish.
+    errorWord:
+      target: he
+    correction:
+      target: vaig
+    hint: Yesterday is over, so use the periphrastic past.
+    correctedTarget: Ahir vaig menjar peix.
+  - id: ge-14-7
+    type: matchPairs
+    prompt: Match each verb with its participle.
+    pairs:
+      - target: fer
+        en: fet
+      - target: dir
+        en: dit
+      - target: veure
+        en: vist
+      - target: obrir
+        en: obert
+  - id: ge-14-8
+    type: chooseTranslation
+    direction: toEn
+    target: He parlat amb el metge.
+    en: I have spoken with the doctor.
+    distractorsEn:
+      - I speak with the doctor.
+      - I will speak with the doctor.
+      - I used to speak with the doctor.
+    distractorsTarget: []

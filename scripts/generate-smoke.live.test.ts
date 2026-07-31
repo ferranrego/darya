@@ -29,9 +29,21 @@ describe("core loop: generate a text in the active language", () => {
     }
 
     expect(doc.sentences.length).toBeGreaterThan(0);
+
+    // "Foreign" depends on the language under test. This asserted "no
+    // Perso-Arabic" unconditionally, which is right for Catalan and precisely
+    // backwards for Dari - it passed only because the file was excluded from
+    // every run, so nobody had executed it against Dari.
+    //
+    // The failure it is really guarding is script bleed: the model drifting
+    // into the other language's alphabet mid-text. So each language forbids the
+    // script it should never contain. Transliteration lives in `translit`, not
+    // `target`, so Latin letters in a Dari sentence are a genuine defect.
     const PERSO_ARABIC = /[؀-ۿ]/;
+    const LATIN = /[a-z]/i;
+    const forbidden = profile.capabilities.transliteration ? LATIN : PERSO_ARABIC;
     for (const s of doc.sentences) {
-      expect(PERSO_ARABIC.test(s.target), `foreign script in "${s.target}"`).toBe(false);
+      expect(forbidden.test(s.target), `foreign script in "${s.target}"`).toBe(false);
     }
     if (profile.code === "ca") {
       expect(doc.sentences.some((s) => /[a-zàèéíòóúïüç]/i.test(s.target))).toBe(true);

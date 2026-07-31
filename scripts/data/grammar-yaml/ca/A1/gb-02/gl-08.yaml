@@ -1,0 +1,137 @@
+id: gl-08
+title: Asking questions
+subtitle: No extra machinery - just the right question word.
+grammarPoint: questions
+grammarPointEn: yes/no questions by intonation with no do-support, and the
+  question words què, qui, on, quan, com, quant, quin and per què
+slides:
+  - id: gs-08-1
+    title: A statement becomes a question by tone alone
+    body: There is nothing like English "do". Keep the sentence as it is and raise
+      your voice at the end.
+    examples:
+      - target: Parles català.
+        en: You speak Catalan.
+      - target: Parles català?
+        en: Do you speak Catalan?
+      - target: Vols un cafè?
+        en: Do you want a coffee?
+  - id: gs-08-2
+    title: The question words
+    body: They go at the front. quin agrees with the noun that follows it.
+    examples:
+      - target: On vius?
+        en: Where do you live?
+      - target: Quina hora és?
+        en: What time is it?
+      - target: Per què no menges?
+        en: Why aren't you eating?
+    table:
+      - - què
+        - what
+      - - qui
+        - who
+      - - on
+        - where
+      - - quan
+        - when
+      - - com
+        - how
+      - - quant
+        - how much
+      - - quin, quina
+        - which, what
+      - - per què
+        - why
+  - id: gs-08-3
+    title: The preposition comes first
+    body: Catalan never leaves a preposition stranded at the end the way English
+      does.
+    examples:
+      - target: Amb qui parles?
+        en: Who are you talking to?
+      - target: De què parleu?
+        en: What are you talking about?
+exercises:
+  - id: ge-08-1
+    type: fillBlank
+    target: ___ vius ara?
+    en: Where do you live now?
+    answer:
+      target: On
+    distractors:
+      - target: Què
+      - target: Qui
+      - target: Com
+  - id: ge-08-2
+    type: fillBlank
+    target: ___ és aquell home?
+    en: Who is that man?
+    answer:
+      target: Qui
+    distractors:
+      - target: Què
+      - target: On
+      - target: Quin
+  - id: ge-08-3
+    type: fillBlank
+    target: ___ hora és?
+    en: What time is it?
+    answer:
+      target: Quina
+    distractors:
+      - target: Quin
+      - target: Què
+      - target: Quant
+  - id: ge-08-4
+    type: fillBlank
+    target: ___ costa el pa?
+    en: How much does the bread cost?
+    answer:
+      target: Quant
+    distractors:
+      - target: Quin
+      - target: Com
+      - target: Què
+  - id: ge-08-5
+    type: fillBlank
+    target: ___ qui parles?
+    en: Who are you talking to?
+    answer:
+      target: Amb
+    distractors:
+      - target: De
+      - target: Per
+      - target: A
+  - id: ge-08-6
+    type: spotError
+    target: Fas parlar català tu?
+    en: Do you speak Catalan?
+    errorWord:
+      target: Fas
+    correction:
+      target: Parles
+    hint: Catalan has no do-support.
+    correctedTarget: Parles català?
+  - id: ge-08-7
+    type: matchPairs
+    prompt: Match the question word with its meaning.
+    pairs:
+      - target: on
+        en: where
+      - target: quan
+        en: when
+      - target: com
+        en: how
+      - target: per què
+        en: why
+  - id: ge-08-8
+    type: chooseTranslation
+    direction: toTarget
+    target: Vols un cafè?
+    en: Do you want a coffee?
+    distractorsTarget:
+      - target: Fas voler un cafè?
+      - target: Vols tu fer un cafè?
+      - target: Un cafè fas voler?
+    distractorsEn: []

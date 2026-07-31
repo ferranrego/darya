@@ -1,0 +1,122 @@
+id: b2_08
+title: "Els pronoms en posició enclítica"
+subtitle: "Donar-li-ho, donant-l'hi"
+grammarPoint: "Els pronoms en posició enclítica (darrere del verb)"
+grammarPointEn: "Pronouns in enclitic position (after the verb)"
+slides:
+  - id: b2_08_1
+    title: "Posició dels pronoms"
+    body: "Els pronoms febles es posen obligatòriament darrere del verb (enclítics) quan el verb està en infinitiu, gerundi o imperatiu positiu. Si n'hi ha més d'un, també s'uneixen entre si al darrere del verb."
+    examples:
+      - target: "Vull explicar-li la veritat. -> Vull explicar-li-la."
+        translit: ""
+        en: "I want to explain the truth to him. -> I want to explain it to him."
+        highlight: "explicar-li-la"
+      - target: "Està explicant el problema al cap. -> Està explicant-l'hi."
+        translit: ""
+        en: "He is explaining the problem to the boss. -> He is explaining it to him."
+        highlight: "explicant-l'hi"
+  - id: b2_08_2
+    title: "Ús del guionet o apòstrof"
+    body: "S'utilitza l'apòstrof si és possible segons les regles generals d'apostrofació dels pronoms, i si no s'utilitza un guionet. Es llegeix de forma consecutiva d'esquerra a dreta per saber on col·locar el guionet o apòstrof."
+    examples:
+      - target: "Porta el llibre aquí. -> Porta'l aquí."
+        translit: ""
+        en: "Bring the book here. -> Bring it here."
+        highlight: "Porta'l"
+      - target: "Dona el regal al noi. -> Dona-l'hi."
+        translit: ""
+        en: "Give the gift to the boy. -> Give it to him."
+        highlight: "Dona-l'hi"
+      - target: "Digueu això a la mare. -> Digueu-li-ho."
+        translit: ""
+        en: "Say this to mother. -> Say it to her."
+        highlight: "Digueu-li-ho"
+  - id: b2_08_3
+    title: "Ordre dels pronoms enclítics"
+    body: "L'ordre és: Pronom reflexiu/impersonal (es) + Pronom de CI (em, et, li, ens, us, els) + Pronom de CD (el, la, els, les, ho) + Pronom 'en' + Pronom 'hi'. Els elements s'uneixen combinant el guionet i apòstrof on sigui normativament aplicable."
+    examples:
+      - target: "No te n'oblidis de portar-se'n el llibre (emportar-se el llibre)."
+        translit: ""
+        en: "Don't forget to take the book away."
+        highlight: "portar-se'n"
+      - target: "És difícil al principi, però és qüestió d'acostumar-s'hi."
+        translit: ""
+        en: "It is difficult at first, but it's a matter of getting used to it."
+        highlight: "acostumar-s'hi"
+exercises:
+  - id: b2_08_ex1
+    type: fillBlank
+    target: "Pots donar els papers al director? Sí, vaig a ___ ara mateix."
+    translit: ""
+    en: "Can you give the papers to the director? Yes, I'm going to give them to him right now."
+    answer:
+      target: "donar-los-hi"
+      translit: ""
+    distractors:
+      - target: "donar-els-hi"
+        translit: ""
+      - target: "donar-l'hi"
+        translit: ""
+      - target: "donar-los-ho"
+        translit: ""
+  - id: b2_08_ex2
+    type: fillBlank
+    target: "Has de dir la veritat a la teva amiga. Has de ___ avui."
+    translit: ""
+    en: "You have to tell the truth to your friend. You have to tell it to her today."
+    answer:
+      target: "dir-la-hi"
+      translit: ""
+    distractors:
+      - target: "dir-li-la"
+        translit: ""
+      - target: "dir-se-la"
+        translit: ""
+      - target: "dir-l'hi"
+        translit: ""
+  - id: b2_08_ex3
+    type: fillBlank
+    target: "No puc donar aquestes caixes als clients. Vull ___ demà."
+    translit: ""
+    en: "I cannot give these boxes to the clients. I want to give them to them tomorrow."
+    answer:
+      target: "donar-los-les"
+      translit: ""
+    distractors:
+      - target: "donar-les-hi"
+        translit: ""
+      - target: "donar-los-hi"
+        translit: ""
+      - target: "donar-les-les"
+        translit: ""
+  - id: b2_08_ex4
+    type: fillBlank
+    target: "Compra'm el diari, si us plau. Sí, vaig a ___."
+    translit: ""
+    en: "Buy me the newspaper, please. Yes, I'm going to buy it for you."
+    answer:
+      target: "comprar-te'l"
+      translit: ""
+    distractors:
+      - target: "comprar-t'el"
+        translit: ""
+      - target: "comprar-te-lo"
+        translit: ""
+      - target: "comprar-tel"
+        translit: ""
+  - id: b2_08_ex5
+    type: fillBlank
+    target: "El nen plora, posa-li la jaqueta. Estic ___ ara."
+    translit: ""
+    en: "The boy is crying, put the jacket on him. I'm putting it on him now."
+    answer:
+      target: "posant-la-hi"
+      translit: ""
+    distractors:
+      - target: "posant-li-la"
+        translit: ""
+      - target: "posant-l'hi"
+        translit: ""
+      - target: "posant-les-hi"
+        translit: ""

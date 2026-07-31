@@ -1,0 +1,108 @@
+id: c2_05
+title: "Oracions de relatiu neutres i resumptives"
+subtitle: "cosa que, fet que, la qual cosa"
+grammarPoint: "Relatius neutres i resumptius"
+grammarPointEn: "Neutral and resumptive relative pronouns"
+slides:
+  - id: slide1
+    title: "Relatius neutres"
+    body: "Per fer referència a tota una oració anterior o a un concepte abstracte ja esmentat, el català utilitza formes neutres. Les més recomanables en registres formals són 'la qual cosa', 'cosa que' i 'fet que'."
+    examples:
+      - target: "Va ploure molt, la qual cosa va arruïnar la collita."
+        translit: "Rained a lot, the which thing ruined the harvest."
+        en: "It rained a lot, which ruined the harvest."
+        highlight: "la qual cosa"
+      - target: "S'ha negat a declarar, fet que complica la situació."
+        translit: "It has denied to declare, fact that complicates the situation."
+        en: "He refused to testify, which complicates the situation."
+        highlight: "fet que"
+  - id: slide2
+    title: "'cosa que' vs 'el que'"
+    body: "L'ús de 'el que' o 'lo que' amb valor resumptiu ('Va aprovar, el que em va alegrar') és considerat poc genuí o propi de registres molt col·loquials i interferits pel castellà. Cal fer servir 'cosa que' o 'la qual cosa'."
+    examples:
+      - target: "Van arribar tard, cosa que ens va enfadar."
+        translit: "They arrived late, thing that us angered."
+        en: "They arrived late, which made us angry."
+        highlight: "cosa que"
+      - target: "Han apujat els impostos, la qual cosa afectarà el consum."
+        translit: "Have raised the taxes, the which thing will affect the consumption."
+        en: "They have raised taxes, which will affect consumption."
+        highlight: "la qual cosa"
+  - id: slide3
+    title: "Diferents preposicions"
+    body: "Aquests relatius neutres poden anar precedits de preposicions si la funció sintàctica ho requereix (ex. 'de la qual cosa', 'amb la qual cosa'). Amb 'cosa que' o 'fet que', la preposició s'afegeix davant de la construcció sencera: 'amb cosa que', 'del fet que'."
+    examples:
+      - target: "No hi havia fons suficients, de la qual cosa vam deduir que hi havia frau."
+        translit: "Not there were funds sufficient, of the which thing we deduced that there was fraud."
+        en: "There were not enough funds, from which we deduced there was fraud."
+        highlight: "de la qual cosa"
+      - target: "Va dimitir ahir, amb la qual cosa s'obre una nova crisi."
+        translit: "He resigned yesterday, with the which thing itself opens a new crisis."
+        en: "He resigned yesterday, which opens a new crisis."
+        highlight: "amb la qual cosa"
+exercises:
+  - id: ex1
+    type: fillBlank
+    target: "No va dir res, ___ em va sorprendre."
+    translit: "Not he said nothing, thing that me surprised."
+    en: "He didn't say anything, which surprised me."
+    answer:
+      target: "cosa que"
+      translit: "thing that"
+    distractors:
+      - target: "el que"
+        translit: "the what"
+      - target: "lo que"
+        translit: "the what"
+  - id: ex2
+    type: fillBlank
+    target: "L'empresa ha tancat, ___ ha deixat molta gent a l'atur."
+    translit: "The company has closed, the which thing has left many people to the unemployment."
+    en: "The company has closed, which has left many people unemployed."
+    answer:
+      target: "la qual cosa"
+      translit: "the which thing"
+    distractors:
+      - target: "la que"
+        translit: "the that"
+      - target: "el què"
+        translit: "the what"
+  - id: ex3
+    type: fillBlank
+    target: "S'ha publicat l'informe, ___ demostra les nostres sospites."
+    translit: "Itself has published the report, fact that demonstrates the our suspicions."
+    en: "The report has been published, which demonstrates our suspicions."
+    answer:
+      target: "fet que"
+      translit: "fact that"
+    distractors:
+      - target: "quin"
+        translit: "which"
+      - target: "el fet de què"
+        translit: "the fact of what"
+  - id: ex4
+    type: fillBlank
+    target: "Han cancel·lat el vol, a causa ___ haurem d'agafar el tren."
+    translit: "Have cancelled the flight, to cause of the which thing we will have to catch the train."
+    en: "They have cancelled the flight, because of which we will have to take the train."
+    answer:
+      target: "de la qual cosa"
+      translit: "of the which thing"
+    distractors:
+      - target: "del que"
+        translit: "of the what"
+      - target: "que"
+        translit: "that"
+  - id: ex5
+    type: fillBlank
+    target: "No tenien proves, ___ els va obligar a retirar l'acusació."
+    translit: "Not they had proofs, thing that them forced to withdraw the accusation."
+    en: "They had no evidence, which forced them to withdraw the accusation."
+    answer:
+      target: "cosa que"
+      translit: "thing that"
+    distractors:
+      - target: "el que"
+        translit: "the what"
+      - target: "lo qual"
+        translit: "the which"

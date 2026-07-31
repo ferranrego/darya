@@ -1,0 +1,111 @@
+id: c2_01
+title: "El pronom 'ho' com a comodí oracional"
+subtitle: "Substitució d'oracions senceres i atributs"
+grammarPoint: "El pronom ho"
+grammarPointEn: "The pronoun 'ho'"
+slides:
+  - id: c2_01_s1
+    title: "Substitució d'oracions"
+    body: |
+      El pronom **ho** pot substituir tota una oració subordinada substantiva que fa de complement directe.
+    examples:
+      - target: "M'ha dit que vindrà tard, però no m'ho crec."
+        translit: ""
+        en: "He told me he will come late, but I don't believe it."
+        highlight: "ho"
+      - target: "Sabien que era perillós? Sí, ho sabien."
+        translit: ""
+        en: "Did they know it was dangerous? Yes, they knew it."
+        highlight: "ho"
+  - id: c2_01_s2
+    title: "L'atribut indeterminat"
+    body: |
+      S'utilitza **ho** per substituir un atribut quan aquest està format per un adjectiu, un sintagma preposicional o un substantiu sense determinant.
+    examples:
+      - target: "Són metges? Sí que ho són."
+        translit: ""
+        en: "Are they doctors? Yes, they are."
+        highlight: "ho"
+      - target: "Sembla cansat. Realment ho sembla."
+        translit: ""
+        en: "He seems tired. He really seems it."
+        highlight: "ho"
+  - id: c2_01_s3
+    title: "Atributs determinats vs. indeterminats"
+    body: |
+      Si l'atribut és determinat (porta article definit o demostratiu), es substitueix pels pronoms **el, la, els, les**. Si és indeterminat, per **ho**.
+    examples:
+      - target: "És el director? Sí, l'és."
+        translit: ""
+        en: "Is he the director? Yes, he is."
+        highlight: "l'"
+      - target: "És director? Sí, ho és."
+        translit: ""
+        en: "Is he a director? Yes, he is."
+        highlight: "ho"
+exercises:
+  - id: c2_01_e1
+    type: fillBlank
+    target: "Vas prometre que m'ajudaries i ara no ___ fas."
+    translit: ""
+    en: "You promised you would help me and now you don't do it."
+    answer:
+      target: "ho"
+      translit: ""
+    distractors:
+      - target: "el"
+        translit: ""
+      - target: "hi"
+        translit: ""
+  - id: c2_01_e2
+    type: fillBlank
+    target: "Són els teus amics? Sí que ___ són."
+    translit: ""
+    en: "Are they your friends? Yes, they are."
+    answer:
+      target: "els"
+      translit: ""
+    distractors:
+      - target: "ho"
+        translit: ""
+      - target: "les"
+        translit: ""
+  - id: c2_01_e3
+    type: fillBlank
+    target: "Pensava que plouria, però al final no ___ ha fet."
+    translit: ""
+    en: "I thought it would rain, but in the end it didn't do it."
+    answer:
+      target: "ho"
+      translit: ""
+    distractors:
+      - target: "en"
+        translit: ""
+      - target: "l'"
+        translit: ""
+  - id: c2_01_e4
+    type: fillBlank
+    target: "Aquesta noia és la presidenta? Sí, ___ és."
+    translit: ""
+    en: "Is this girl the president? Yes, she is."
+    answer:
+      target: "la"
+      translit: ""
+    distractors:
+      - target: "ho"
+        translit: ""
+      - target: "l'"
+        translit: ""
+  - id: c2_01_e5
+    type: fillBlank
+    target: "Aquesta noia és presidenta? Sí, ___ és."
+    translit: ""
+    en: "Is this girl a president? Yes, she is."
+    answer:
+      target: "ho"
+      translit: ""
+    distractors:
+      - target: "la"
+        translit: ""
+      - target: "l'"
+        translit: ""

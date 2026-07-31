@@ -1,0 +1,108 @@
+id: c1_15
+title: Perífrasis verbals d'aspecte
+subtitle: Incoatives, duratives i terminatives
+grammarPoint: Perífrasis verbals d'aspecte (posar-se a, estar + gerundi correcte, acabar de)
+grammarPointEn: Aspectual verbal periphrases (start to, be + gerund, just finished)
+slides:
+  - id: c1_15_s1
+    title: Perífrasi incoativa (inici)
+    body: "'Posar-se a + infinitiu' indica l'inici d'una acció. És un equivalent més col·loquial o dinàmic a 'començar a'."
+    examples:
+      - target: En sentir la notícia, es va posar a plorar.
+        translit: ""
+        en: Upon hearing the news, he started crying.
+        highlight: es va posar a plorar
+      - target: Ens posarem a estudiar de seguida.
+        translit: ""
+        en: We will start studying right away.
+        highlight: Ens posarem a estudiar
+  - id: c1_15_s2
+    title: Perífrasi durativa (desenvolupament)
+    body: "'Estar + gerundi' expressa una acció en el seu desenvolupament. En català no pot anar amb verbs d'estat ni per indicar accions habituals o de posició com 'estar assegut'."
+    examples:
+      - target: Ara mateix estic preparant el sopar.
+        translit: ""
+        en: Right now I am preparing dinner.
+        highlight: estic preparant
+      - target: Quan vas trucar, estàvem mirant una pel·lícula.
+        translit: ""
+        en: When you called, we were watching a movie.
+        highlight: estàvem mirant
+  - id: c1_15_s3
+    title: Perífrasi terminativa (final)
+    body: "'Acabar de + infinitiu' indica que una acció ha finalitzat molt recentment, just abans del moment en què es parla."
+    examples:
+      - target: Acaben d'arribar de viatge.
+        translit: ""
+        en: They have just arrived from their trip.
+        highlight: Acaben d'arribar
+      - target: El tren acabava de sortir quan vam arribar a l'estació.
+        translit: ""
+        en: The train had just left when we arrived at the station.
+        highlight: acabava de sortir
+exercises:
+  - id: c1_15_e1
+    type: fillBlank
+    target: No vinguis ara, perquè ___ la reunió.
+    translit: ""
+    en: Don't come now, because I am having a meeting.
+    answer:
+      target: estic fent
+      translit: ""
+    distractors:
+      - target: em poso a fer
+        translit: ""
+      - target: acabo de fer
+        translit: ""
+  - id: c1_15_e2
+    type: fillBlank
+    target: Va dir una broma i tothom es ___ riure.
+    translit: ""
+    en: He told a joke and everyone started laughing.
+    answer:
+      target: va posar a
+      translit: ""
+    distractors:
+      - target: va estar
+        translit: ""
+      - target: va acabar de
+        translit: ""
+  - id: c1_15_e3
+    type: fillBlank
+    target: On és la Marta? ___ sortir cap a la feina.
+    translit: ""
+    en: Where is Marta? She just left for work.
+    answer:
+      target: Acaba de
+      translit: ""
+    distractors:
+      - target: Es posa a
+        translit: ""
+      - target: Està a
+        translit: ""
+  - id: c1_15_e4
+    type: fillBlank
+    target: Quan va començar a ploure, ells ___ jugant a tennis.
+    translit: ""
+    en: When it started raining, they were playing tennis.
+    answer:
+      target: estaven
+      translit: ""
+    distractors:
+      - target: acabaven de
+        translit: ""
+      - target: es posaven a
+        translit: ""
+  - id: c1_15_e5
+    type: fillBlank
+    target: Després de dinar, sempre ___ llegir una estona.
+    translit: ""
+    en: After lunch, I always start reading for a while.
+    answer:
+      target: em poso a
+      translit: ""
+    distractors:
+      - target: estic per
+        translit: ""
+      - target: acabo de
+        translit: ""

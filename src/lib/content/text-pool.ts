@@ -10,6 +10,8 @@
  * test rather than discovered in production.
  */
 
+import { MAX_OOV_TYPE_RATE, MIN_NEW_LEXEMES } from "./difficulty.ts";
+
 /**
  * The lexemes a placement credits a learner with, minus the ones they already
  * track.
@@ -35,9 +37,6 @@ export interface PoolText {
   source: string;
   doc: { vocabUsed: string[] };
 }
-
-/** Share of a text's vocabulary that may be new before it is too hard. */
-const MAX_OOV_RATE = 0.25;
 
 export interface PoolInput {
   texts: PoolText[];
@@ -89,8 +88,10 @@ export function selectUnread(input: PoolInput): PoolText[] {
       const vocab = t.doc.vocabUsed;
       const oov = vocab.reduce((n, w) => n + (known.has(w) ? 0 : 1), 0);
       const rate = vocab.length > 0 ? oov / vocab.length : 0;
+      // This counts distinct lexemes, not running words, so it is measured
+      // against the type threshold - see content/difficulty.ts.
       // At least one new word, or there is nothing to learn from it.
-      return rate <= MAX_OOV_RATE && oov >= 1;
+      return rate <= MAX_OOV_TYPE_RATE && oov >= MIN_NEW_LEXEMES;
     })
     .sort((a, b) => (a.source === b.source ? 0 : a.source === "seed" ? -1 : 1));
 }

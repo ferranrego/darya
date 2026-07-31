@@ -1,0 +1,122 @@
+id: b2_06
+title: "Els pronoms de lloc i partitius"
+subtitle: "En i hi (usos avançats)"
+grammarPoint: "Els pronoms en i hi (avançat)"
+grammarPointEn: "The pronouns en and hi (advanced usage)"
+slides:
+  - id: b2_06_1
+    title: "El pronom EN: partitiu i lloc"
+    body: "El pronom 'en' substitueix complements introduïts per 'de', com complements del nom, complements de l'adjectiu o complements de lloc de procedència (d'on)."
+    examples:
+      - target: "Vens de la biblioteca? Sí, n'acabo de sortir."
+        translit: ""
+        en: "Are you coming from the library? Yes, I just came out of there."
+        highlight: "n'"
+      - target: "És un tema complex, no en vull parlar més."
+        translit: ""
+        en: "It's a complex topic, I don't want to talk about it anymore."
+        highlight: "en"
+      - target: "Tens molts amics aquí? Sí, en tinc molts."
+        translit: ""
+        en: "Do you have many friends here? Yes, I have many (of them)."
+        highlight: "en"
+  - id: b2_06_2
+    title: "El pronom HI: lloc i preposicions"
+    body: "El pronom 'hi' substitueix complements circumstancials de lloc (a on, on, per on), i complements introduïts per preposicions com 'a', 'en', 'amb' o 'per'."
+    examples:
+      - target: "Vas a la platja aquest estiu? Sí, hi vaig cada dia."
+        translit: ""
+        en: "Are you going to the beach this summer? Yes, I go there every day."
+        highlight: "hi"
+      - target: "Estàs d'acord amb la proposta? Sí, hi estic d'acord."
+        translit: ""
+        en: "Do you agree with the proposal? Yes, I agree with it."
+        highlight: "hi"
+  - id: b2_06_3
+    title: "Confusions comunes entre EN i HI"
+    body: "Recordeu: 'en' per a procedència (d'on) o relació (de què); 'hi' per a destinació (a on), ubicació (on) o d'altres relacions (a, en, amb, per). Atenció als verbs que canvien de preposició."
+    examples:
+      - target: "Penses en el viatge? Sí, hi penso molt."
+        translit: ""
+        en: "Are you thinking about the trip? Yes, I think about it a lot."
+        highlight: "hi penso"
+      - target: "Té por de la foscor. També en té el seu germà."
+        translit: ""
+        en: "He is afraid of the dark. His brother is afraid of it too."
+        highlight: "en té"
+exercises:
+  - id: b2_06_ex1
+    type: fillBlank
+    target: "Ahir vaig anar al teatre, feia temps que no ___ anava."
+    translit: ""
+    en: "Yesterday I went to the theater, it had been a while since I went there."
+    answer:
+      target: "hi"
+      translit: ""
+    distractors:
+      - target: "en"
+        translit: ""
+      - target: "l'hi"
+        translit: ""
+      - target: "n'hi"
+        translit: ""
+  - id: b2_06_ex2
+    type: fillBlank
+    target: "Tens més sucre per al pastís? Només ___ queda una mica."
+    translit: ""
+    en: "Do you have more sugar for the cake? There's only a little bit left (of it)."
+    answer:
+      target: "en"
+      translit: ""
+    distractors:
+      - target: "hi"
+        translit: ""
+      - target: "el"
+        translit: ""
+      - target: "ho"
+        translit: ""
+  - id: b2_06_ex3
+    type: fillBlank
+    target: "Pots confiar en la meva paraula, pots confiar-___ plenament."
+    translit: ""
+    en: "You can trust my word, you can trust it fully."
+    answer:
+      target: "hi"
+      translit: ""
+    distractors:
+      - target: "en"
+        translit: ""
+      - target: "ho"
+        translit: ""
+      - target: "la"
+        translit: ""
+  - id: b2_06_ex4
+    type: fillBlank
+    target: "Aquest llibre és molt interessant, n'estic molt satisfet. I tu, què ___ penses?"
+    translit: ""
+    en: "This book is very interesting, I am very satisfied with it. And you, what do you think of it?"
+    answer:
+      target: "en"
+      translit: ""
+    distractors:
+      - target: "hi"
+        translit: ""
+      - target: "ho"
+        translit: ""
+      - target: "el"
+        translit: ""
+  - id: b2_06_ex5
+    type: fillBlank
+    target: "Vens de la reunió ara mateix? Sí, ___ vinc precisament ara."
+    translit: ""
+    en: "Are you coming from the meeting right now? Yes, I'm coming from it right now."
+    answer:
+      target: "en"
+      translit: ""
+    distractors:
+      - target: "hi"
+        translit: ""
+      - target: "la"
+        translit: ""
+      - target: "ho"
+        translit: ""

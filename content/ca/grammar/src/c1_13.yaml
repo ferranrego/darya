@@ -1,0 +1,108 @@
+id: c1_13
+title: Connectors concessius i adversatius
+subtitle: Registre alt
+grammarPoint: Connectors concessius i adversatius de registre alt (Si bé, tot i que, tanmateix)
+grammarPointEn: High register concessive and adversative connectors
+slides:
+  - id: c1_13_s1
+    title: Concessius introductoris
+    body: Els connectors 'si bé' i 'tot i que' introdueixen una concessió.
+    examples:
+      - target: Si bé l'economia ha millorat, encara hi ha atur.
+        translit: ""
+        en: Although the economy has improved, there is still unemployment.
+        highlight: Si bé
+      - target: Tot i que plovia, vam sortir a passejar.
+        translit: ""
+        en: Even though it was raining, we went for a walk.
+        highlight: Tot i que
+  - id: c1_13_s2
+    title: Adversatius i contrast
+    body: "'Tanmateix' i 'això no obstant' s'utilitzen per expressar oposició."
+    examples:
+      - target: És un projecte arriscat; tanmateix, hi invertirem.
+        translit: ""
+        en: It is a risky project; nevertheless, we will invest in it.
+        highlight: tanmateix
+      - target: Ho tenia tot en contra. Això no obstant, va guanyar.
+        translit: ""
+        en: He had everything against him. However, he won.
+        highlight: Això no obstant
+  - id: c1_13_s3
+    title: "'Malgrat' i 'malgrat que'"
+    body: "'Malgrat' va seguit d'un sintagma nominal, i 'malgrat que' d'una oració."
+    examples:
+      - target: Malgrat les dificultats, van arribar al cim.
+        translit: ""
+        en: Despite the difficulties, they reached the summit.
+        highlight: Malgrat
+      - target: Malgrat que era tard, ens van atendre molt bé.
+        translit: ""
+        en: Even though it was late, they served us very well.
+        highlight: Malgrat que
+exercises:
+  - id: c1_13_e1
+    type: fillBlank
+    target: ___ era un dia feiner, hi havia molta gent a la platja.
+    translit: ""
+    en: Even though it was a working day, there were many people at the beach.
+    answer:
+      target: Tot i que
+      translit: ""
+    distractors:
+      - target: Tanmateix
+        translit: ""
+      - target: Això no obstant
+        translit: ""
+  - id: c1_13_e2
+    type: fillBlank
+    target: No tenien gaire pressupost; ___, van fer una gran pel·lícula.
+    translit: ""
+    en: They didn't have much of a budget; however, they made a great movie.
+    answer:
+      target: tanmateix
+      translit: ""
+    distractors:
+      - target: si bé
+        translit: ""
+      - target: malgrat
+        translit: ""
+  - id: c1_13_e3
+    type: fillBlank
+    target: ___ la calor sufocant, van continuar treballant.
+    translit: ""
+    en: Despite the suffocating heat, they continued working.
+    answer:
+      target: Malgrat
+      translit: ""
+    distractors:
+      - target: Encara que
+        translit: ""
+      - target: Tot i que
+        translit: ""
+  - id: c1_13_e4
+    type: fillBlank
+    target: ___ no comparteixo la teva opinió, la respecto.
+    translit: ""
+    en: Although I don't share your opinion, I respect it.
+    answer:
+      target: Si bé
+      translit: ""
+    distractors:
+      - target: Tanmateix
+        translit: ""
+      - target: Malgrat
+        translit: ""
+  - id: c1_13_e5
+    type: fillBlank
+    target: Era una tasca complexa. ___, l'equip la va resoldre ràpidament.
+    translit: ""
+    en: It was a complex task. Nevertheless, the team solved it quickly.
+    answer:
+      target: Això no obstant
+      translit: ""
+    distractors:
+      - target: Malgrat que
+        translit: ""
+      - target: Si bé
+        translit: ""

@@ -2,6 +2,7 @@ import { z } from "zod";
 import { completeJson } from "./providers";
 import { assertKnownVocab } from "./vocab-check";
 import { profile } from "../lang/index.ts";
+import { LANGUAGE_NAME, requiredTranslitField, sentenceShape, wordWithGloss } from "./lang-format.ts";
 
 const MAX_SENTENCE_WORDS = 12;
 
@@ -9,7 +10,7 @@ const contextSentencesSchema = z.object({
   sentences: z.array(
     z.object({
       target: z.string(),
-      translit: z.string(),
+      translit: requiredTranslitField,
       en: z.string(),
     })
   ),
@@ -18,12 +19,13 @@ const contextSentencesSchema = z.object({
 export type GeneratedContextSentence = z.infer<typeof contextSentencesSchema>["sentences"][number];
 
 function buildPrompt(wordTarget: string, wordTranslit: string, wordEn: string): string {
+  const shape = sentenceShape();
   return `You are ${profile.prompts.teacher}.
 ${profile.prompts.orthography}
-Provide 3 short, natural context sentences that use the word "${wordTarget}" (${wordTranslit} - ${wordEn}).
+Provide 3 short, natural context sentences that use the word ${wordWithGloss(wordTarget, wordTranslit, wordEn)}.
 
 STRICT VOCABULARY AND NATURALNESS CONSTRAINT:
-- Ensure the sentence sounds 100% natural and idiomatic in Dari.
+- Ensure the sentence sounds 100% natural and idiomatic in ${LANGUAGE_NAME}.
 - Keep the sentences short (maximum ${MAX_SENTENCE_WORDS} words).
 - Use very simple, common vocabulary for the rest of the sentence, suitable for a beginner/intermediate learner.
 - Do NOT use proper names (people or places).
@@ -32,9 +34,9 @@ STRICT VOCABULARY AND NATURALNESS CONSTRAINT:
 Return ONLY JSON with this exact shape:
 {
   "sentences": [
-    { "target": "...", "translit": "...", "en": "..." },
-    { "target": "...", "translit": "...", "en": "..." },
-    { "target": "...", "translit": "...", "en": "..." }
+    ${shape},
+    ${shape},
+    ${shape}
   ]
 }`;
 }

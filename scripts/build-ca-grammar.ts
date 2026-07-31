@@ -19,7 +19,7 @@ import { CONTENT_FORMAT_VERSION, grammarCoursesFileSchema } from "../src/lib/con
 
 const write = process.argv.includes("--write");
 const root = join(import.meta.dirname, "..");
-const sources = ["ca-grammar-a1.json", "ca-grammar-a2.json"];
+const sources = ["ca-grammar-a1.json", "ca-grammar-a2.json", "ca-grammar-b1.json"];
 
 const courses = sources.map((f) =>
   JSON.parse(readFileSync(join(root, "scripts", "data", f), "utf8")),

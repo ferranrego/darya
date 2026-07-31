@@ -1,0 +1,550 @@
+$ node scripts/validate-content.ts
+✗ lexicon: lx-1073 and lx-0725 share match key "os"
+✗ lexicon: lx-1814 and lx-0497 share match key "net"
+✓ lexicon.json (4055 entries)
+✓ levels.json (8 levels)
+• alphabet course skipped (language has no script course)
+✓ grammar/a1.json (3 blocks, 12 lessons, 100 exercises)
+✓ grammar/a2.json (4 blocks, 13 lessons, 103 exercises)
+⚠ grammar gl-26/ge-26-1: "necessari" not in lexicon
+⚠ grammar gl-26/ge-26-2: "necessari" not in lexicon
+⚠ grammar gl-26/ge-26-5: "mi" not in lexicon
+⚠ grammar gl-26/ge-26-6: "mi" not in lexicon
+⚠ grammar gl-28/gs-28-2: "possible" not in lexicon
+⚠ grammar gl-28/ge-28-3: "possible" not in lexicon
+⚠ grammar gl-28/ge-28-4: "funcioni" not in lexicon
+⚠ grammar gl-28/ge-28-4: "cert" not in lexicon
+⚠ grammar gl-28/ge-28-4: "probable" not in lexicon
+⚠ grammar gl-29/gs-29-1: "molesta" not in lexicon
+⚠ grammar gl-29/gs-29-1: "soroll" not in lexicon
+⚠ grammar gl-29/ge-29-1: "sorprèn" not in lexicon
+⚠ grammar gl-29/ge-29-3: "molesta" not in lexicon
+⚠ grammar gl-29/ge-29-3: "soroll" not in lexicon
+⚠ grammar gl-29/ge-29-4: "molesta" not in lexicon
+⚠ grammar gl-29/ge-29-4: "sorprèn" not in lexicon
+⚠ grammar gl-30/gs-30-1: "Exemple" not in lexicon
+⚠ grammar gl-30/gs-30-2: "Exemple" not in lexicon
+⚠ grammar gl-30/ge-30-2: "truita" not in lexicon
+⚠ grammar gl-30/ge-30-3: "conduir" not in lexicon
+⚠ grammar gl-31/gs-31-1: "Exemple" not in lexicon
+⚠ grammar gl-31/gs-31-2: "Exemple" not in lexicon
+⚠ grammar gl-31/ge-31-2: "mi" not in lexicon
+⚠ grammar gl-31/ge-31-3: "trasllat" not in lexicon
+⚠ grammar gl-31/ge-31-4: "lloc" not in lexicon
+⚠ grammar gl-32/gs-32-1: "Exemple" not in lexicon
+⚠ grammar gl-32/ge-32-1: "trigues" not in lexicon
+⚠ grammar gl-32/ge-32-2: "dir)" not in lexicon
+⚠ grammar gl-32/ge-32-5: "suspendrà" not in lexicon
+⚠ grammar gl-32/ge-32-5: "suspendre" not in lexicon
+⚠ grammar gl-32/ge-32-6: "suspendrà" not in lexicon
+⚠ grammar gl-32/ge-32-6: "suspendre" not in lexicon
+⚠ grammar gl-33/gs-33-1: "Exemple" not in lexicon
+⚠ grammar gl-33/ge-33-1: "ric" not in lexicon
+⚠ grammar gl-33/ge-33-3: "visitaríem" not in lexicon
+⚠ grammar gl-33/ge-33-3: "visitar" not in lexicon
+⚠ grammar gl-33/ge-33-5: "cregués" not in lexicon
+⚠ grammar gl-33/ge-33-5: "necessari" not in lexicon
+⚠ grammar gl-33/ge-33-6: "cregués" not in lexicon
+⚠ grammar gl-33/ge-33-6: "necessari" not in lexicon
+⚠ grammar gl-34/gs-34-1: "Exemple" not in lexicon
+⚠ grammar gl-34/gs-34-2: "Exemple" not in lexicon
+⚠ grammar gl-34/ge-34-1: "segona" not in lexicon
+⚠ grammar gl-34/ge-34-2: "excel·lent" not in lexicon
+⚠ grammar gl-35/gs-35-1: "Exemple" not in lexicon
+⚠ grammar gl-35/gs-35-2: "Exemple" not in lexicon
+⚠ grammar gl-35/ge-35-1: "infant" not in lexicon
+⚠ grammar gl-35/ge-35-2: "quals" not in lexicon
+⚠ grammar gl-35/ge-35-4: "qual" not in lexicon
+⚠ grammar gl-35/ge-35-5: "qual" not in lexicon
+⚠ grammar gl-35/ge-35-6: "qual" not in lexicon
+⚠ grammar gl-36/gs-36-1: "Exemple" not in lexicon
+⚠ grammar gl-36/gs-36-2: "Exemple" not in lexicon
+⚠ grammar gl-37/gs-37-1: "Exemple" not in lexicon
+⚠ grammar gl-37/gs-37-2: "Exemple" not in lexicon
+⚠ grammar gl-38/gs-38-1: "Exemple" not in lexicon
+⚠ grammar gl-38/gs-38-2: "Exemple" not in lexicon
+⚠ grammar gl-39/gs-39-1: "Exemple" not in lexicon
+⚠ grammar gl-39/gs-39-2: "Exemple" not in lexicon
+⚠ grammar gl-39/ge-39-1: "'l'hi" not in lexicon
+⚠ grammar gl-40/gs-40-1: "Exemple" not in lexicon
+⚠ grammar gl-40/gs-40-2: "Exemple" not in lexicon
+⚠ grammar gl-40/ge-40-4: "paciència" not in lexicon
+⚠ grammar gl-41/gs-41-1: "Exemple" not in lexicon
+⚠ grammar gl-41/gs-41-2: "Exemple" not in lexicon
+⚠ grammar gl-41/ge-41-1: "famós" not in lexicon
+⚠ grammar gl-41/ge-41-2: "cartes" not in lexicon
+⚠ grammar gl-41/ge-41-4: "detinguts" not in lexicon
+⚠ grammar gl-41/ge-41-5: "construïda" not in lexicon
+⚠ grammar gl-41/ge-41-5: "recentment" not in lexicon
+⚠ grammar gl-41/ge-41-6: "construïda" not in lexicon
+⚠ grammar gl-41/ge-41-6: "recentment" not in lexicon
+⚠ grammar gl-42/gs-42-1: "Exemple" not in lexicon
+⚠ grammar gl-42/gs-42-2: "Exemple" not in lexicon
+⚠ grammar gl-42/ge-42-2: "segona" not in lexicon
+✓ grammar/b1.json (4 blocks, 17 lessons, 102 exercises, 75 vocab warning(s))
+⚠ grammar gl-43/b2_01_s2: "sorprèn" not in lexicon
+⚠ grammar gl-43/b2_01_s3: "demano" not in lexicon
+⚠ grammar gl-43/b2_01_s3: "aconsello" not in lexicon
+⚠ grammar gl-43/b2_01_e1: "mi" not in lexicon
+⚠ grammar gl-43/b2_01_e2: "greu" not in lexicon
+⚠ grammar gl-43/b2_01_e3: "demanen" not in lexicon
+⚠ grammar gl-43/b2_01_e3: "paciència" not in lexicon
+⚠ grammar gl-43/b2_01_e5: "sorprèn" not in lexicon
+⚠ grammar gl-44/b2_02_s2: "ric" not in lexicon
+⚠ grammar gl-44/b2_02_e3: "demanar" not in lexicon
+⚠ grammar gl-44/b2_02_e4: "expliqués" not in lexicon
+⚠ grammar gl-45/b2_03_s3: "loteria" not in lexicon
+⚠ grammar gl-45/b2_03_e3: "conduir" not in lexicon
+⚠ grammar gl-46/b2_04_s1: "regal" not in lexicon
+⚠ grammar gl-46/b2_04_s1: "aniversari" not in lexicon
+⚠ grammar gl-46/b2_04_s2: "pari" not in lexicon
+⚠ grammar gl-46/b2_04_e2: "perdonaré" not in lexicon
+⚠ grammar gl-46/b2_04_e2: "demanis" not in lexicon
+⚠ grammar gl-46/b2_04_e2: "demanar" not in lexicon
+⚠ grammar gl-47/b2_05_1: "carta" not in lexicon
+⚠ grammar gl-47/b2_05_2: "premi" not in lexicon
+⚠ grammar gl-47/b2_05_2: "guanyadors" not in lexicon
+⚠ grammar gl-48/b2_06_1: "tema" not in lexicon
+⚠ grammar gl-48/b2_06_3: "foscor" not in lexicon
+⚠ grammar gl-48/b2_06_ex2: "mica" not in lexicon
+⚠ grammar gl-48/b2_06_ex3: "plenament" not in lexicon
+⚠ grammar gl-49/b2_07_2: "enfronta" not in lexicon
+⚠ grammar gl-49/b2_07_3: "fica" not in lexicon
+⚠ grammar gl-49/b2_07_ex3: "adonar" not in lexicon
+⚠ grammar gl-49/b2_07_ex3: "error" not in lexicon
+⚠ grammar gl-49/b2_07_ex3: "adonar" not in lexicon
+⚠ grammar gl-49/b2_07_ex4: "calaix" not in lexicon
+⚠ grammar gl-49/b2_07_ex5: "participar" not in lexicon
+⚠ grammar gl-49/b2_07_ex5: "involucrar" not in lexicon
+⚠ grammar gl-50/b2_08_2: "regal" not in lexicon
+⚠ grammar gl-50/b2_08_3: "emportar" not in lexicon
+⚠ grammar gl-50/b2_08_3: "qüestió" not in lexicon
+⚠ grammar gl-50/b2_08_3: "acostumar" not in lexicon
+⚠ grammar gl-51/b2_09_s2: "greu" not in lexicon
+⚠ grammar gl-51/b2_09_s3: "qual" not in lexicon
+⚠ grammar gl-51/b2_09_s3: "qual" not in lexicon
+⚠ grammar gl-51/b2_09_e3: "preciosa" not in lexicon
+⚠ grammar gl-51/b2_09_e4: "quals" not in lexicon
+⚠ grammar gl-51/b2_09_e5: "senyora" not in lexicon
+⚠ grammar gl-51/b2_09_e5: "qual" not in lexicon
+⚠ grammar gl-51/b2_09_e5: "pressa" not in lexicon
+⚠ grammar gl-52/b2_10_s1: "híbrid" not in lexicon
+⚠ grammar gl-52/b2_10_s3: "qual" not in lexicon
+⚠ grammar gl-52/b2_10_s3: "quals" not in lexicon
+⚠ grammar gl-52/b2_10_e1: "suspensió" not in lexicon
+⚠ grammar gl-52/b2_10_e2: "demanat" not in lexicon
+⚠ grammar gl-52/b2_10_e3: "assumptes" not in lexicon
+⚠ grammar gl-52/b2_10_e3: "tracta" not in lexicon
+⚠ grammar gl-52/b2_10_e3: "filosòfics" not in lexicon
+⚠ grammar gl-52/b2_10_e4: "quals" not in lexicon
+⚠ grammar gl-52/b2_10_e5: "qual" not in lexicon
+⚠ grammar gl-52/b2_10_e5: "existeix" not in lexicon
+⚠ grammar gl-53/b2_11_s1: "penedim" not in lexicon
+⚠ grammar gl-53/b2_11_s2: "adonat" not in lexicon
+⚠ grammar gl-53/b2_11_s2: "errada" not in lexicon
+⚠ grammar gl-53/b2_11_s2: "adonen" not in lexicon
+⚠ grammar gl-53/b2_11_s3: "soroll" not in lexicon
+✗ grammar gl-53/b2_11_s3: highlight "Em penedeixo de" not in "Em penedeixo d'haver dit això."
+⚠ grammar gl-53/b2_11_s3: "penedeixo" not in lexicon
+⚠ grammar gl-53/b2_11_e1: "adonat" not in lexicon
+⚠ grammar gl-53/b2_11_e3: "penediran" not in lexicon
+⚠ grammar gl-53/b2_11_e4: "atrevim" not in lexicon
+⚠ grammar gl-54/b2_12_s1: "construït" not in lexicon
+⚠ grammar gl-54/b2_12_s1: "recentment" not in lexicon
+⚠ grammar gl-54/b2_12_s2: "publicat" not in lexicon
+⚠ grammar gl-54/b2_12_s3: "abundants" not in lexicon
+⚠ grammar gl-54/b2_12_e2: "temes" not in lexicon
+⚠ grammar gl-54/b2_12_e3: "lloguen" not in lexicon
+⚠ grammar gl-54/b2_12_e4: "detinguts" not in lexicon
+⚠ grammar gl-54/b2_12_e5: "anunciat" not in lexicon
+⚠ grammar gl-54/b2_12_e5: "data" not in lexicon
+⚠ grammar gl-55/b2_13_3: "impopular" not in lexicon
+⚠ grammar gl-55/b2_13_3: "necessària" not in lexicon
+⚠ grammar gl-55/b2_13_3: "acceptar" not in lexicon
+⚠ grammar gl-56/b2_14_3: "fi" not in lexicon
+⚠ grammar gl-56/b2_14_3: "fi" not in lexicon
+⚠ grammar gl-56/b2_14_ex4: "fi" not in lexicon
+⚠ grammar gl-57/b2_15_3: "manera" not in lexicon
+⚠ grammar gl-57/b2_15_3: "manera" not in lexicon
+⚠ grammar gl-57/b2_15_ex3: "manera" not in lexicon
+⚠ grammar gl-57/b2_15_ex4: "demanaré" not in lexicon
+⚠ grammar gl-57/b2_15_ex5: "manera" not in lexicon
+⚠ grammar gl-58/b2_16_2: "regal" not in lexicon
+⚠ grammar gl-58/b2_16_3: "castigat" not in lexicon
+⚠ grammar gl-58/b2_16_ex4: "suspendre" not in lexicon
+✓ grammar/b2.json (4 blocks, 16 lessons, 80 exercises, 89 vocab warning(s))
+⚠ grammar gl-59/s2: "estranyar" not in lexicon
+⚠ grammar gl-59/e2: "entrenador" not in lexicon
+⚠ grammar gl-59/e3: "propòsit" not in lexicon
+⚠ grammar gl-59/e5: "alegro" not in lexicon
+⚠ grammar gl-59/e5: "carta" not in lexicon
+⚠ grammar gl-60/s2: "tranquil·lament" not in lexicon
+✗ grammar: duplicate exercise id e1
+⚠ grammar gl-60/e1: "demanat" not in lexicon
+✗ grammar: duplicate exercise id e2
+✗ grammar: duplicate exercise id e3
+✗ grammar: duplicate exercise id e4
+⚠ grammar gl-60/e4: "moment" not in lexicon
+✗ grammar: duplicate exercise id e5
+⚠ grammar gl-61/s1: "carrera" not in lexicon
+⚠ grammar gl-61/s1: "demanat" not in lexicon
+⚠ grammar gl-61/s2: "demanis" not in lexicon
+⚠ grammar gl-61/s2: "personalment" not in lexicon
+⚠ grammar gl-61/s3: "loteria" not in lexicon
+⚠ grammar gl-61/s3: "cas" not in lexicon
+✗ grammar: duplicate exercise id e1
+✗ grammar: duplicate exercise id e2
+✗ grammar: duplicate exercise id e3
+✗ grammar: duplicate exercise id e4
+⚠ grammar gl-61/e4: "comès" not in lexicon
+⚠ grammar gl-61/e4: "error" not in lexicon
+✗ grammar: duplicate exercise id e5
+⚠ grammar gl-61/e5: "cas" not in lexicon
+⚠ grammar gl-61/e5: "instal·lació" not in lexicon
+⚠ grammar gl-62/s1: "mica" not in lexicon
+⚠ grammar gl-62/s2: "Tal" not in lexicon
+⚠ grammar gl-62/s2: "vegada" not in lexicon
+⚠ grammar gl-62/s2: "correcta" not in lexicon
+⚠ grammar gl-62/s3: "llamp" not in lexicon
+⚠ grammar gl-62/s3: "mati" not in lexicon
+✗ grammar: duplicate exercise id e1
+⚠ grammar gl-62/e1: "premi" not in lexicon
+⚠ grammar gl-62/e1: "sorteig" not in lexicon
+✗ grammar: duplicate exercise id e2
+⚠ grammar gl-62/e2: "instruccions" not in lexicon
+✗ grammar: duplicate exercise id e3
+⚠ grammar gl-62/e3: "aprofiti" not in lexicon
+✗ grammar: duplicate exercise id e4
+⚠ grammar gl-62/e4: "Tal" not in lexicon
+⚠ grammar gl-62/e4: "vegada" not in lexicon
+✗ grammar: duplicate exercise id e5
+⚠ grammar gl-63/s1: "regal" not in lexicon
+✗ grammar gl-63/s2: highlight "el, el llibre" not in "El llegiré demà, el llibre."
+✗ grammar gl-63/s2: highlight "Li, a la Maria" not in "Li he comprat un regal, a la Maria."
+⚠ grammar gl-63/s2: "regal" not in lexicon
+✗ grammar: duplicate exercise id e1
+✗ grammar: duplicate exercise id e2
+✗ grammar: duplicate exercise id e3
+✗ grammar: duplicate exercise id e4
+✗ grammar: duplicate exercise id e5
+✗ grammar: duplicate exercise id e1
+✗ grammar: duplicate exercise id e2
+✗ grammar: duplicate exercise id e3
+✗ grammar: duplicate exercise id e4
+✗ grammar: duplicate exercise id e5
+⚠ grammar gl-65/s1: "Hom" not in lexicon
+⚠ grammar gl-65/s1: "hom" not in lexicon
+⚠ grammar gl-65/s3: "cartera" not in lexicon
+✗ grammar: duplicate exercise id e1
+⚠ grammar gl-65/e1: "creix" not in lexicon
+✗ grammar: duplicate exercise id e2
+⚠ grammar gl-65/e2: "Hom" not in lexicon
+✗ grammar: duplicate exercise id e3
+⚠ grammar gl-65/e3: "diferent" not in lexicon
+✗ grammar: duplicate exercise id e4
+✗ grammar: duplicate exercise id e5
+⚠ grammar gl-65/e5: "reaccionarà" not in lexicon
+⚠ grammar gl-66/s3: "Solucionades" not in lexicon
+⚠ grammar gl-66/s3: "avaries" not in lexicon
+⚠ grammar gl-66/s3: "reprendre" not in lexicon
+✗ grammar: duplicate exercise id e1
+✗ grammar: duplicate exercise id e2
+⚠ grammar gl-66/e2: "retornar" not in lexicon
+✗ grammar: duplicate exercise id e3
+⚠ grammar gl-66/e3: "cas" not in lexicon
+⚠ grammar gl-66/e3: "dictar" not in lexicon
+✗ grammar: duplicate exercise id e4
+✗ grammar: duplicate exercise id e5
+⚠ grammar gl-67/slide_1: "saludat" not in lexicon
+⚠ grammar gl-67/slide_2: "mi" not in lexicon
+⚠ grammar gl-67/slide_4: "mossega" not in lexicon
+⚠ grammar gl-67/ex_1: "visitar" not in lexicon
+⚠ grammar gl-67/ex_2: "escollit" not in lexicon
+⚠ grammar gl-67/ex_5: "saludat" not in lexicon
+⚠ grammar gl-68/slide_1: "adono" not in lexicon
+✗ grammar: duplicate exercise id ex_1
+✗ grammar: duplicate exercise id ex_2
+✗ grammar: duplicate exercise id ex_3
+⚠ grammar gl-68/ex_3: "adono" not in lexicon
+✗ grammar: duplicate exercise id ex_4
+✗ grammar: duplicate exercise id ex_5
+⚠ grammar gl-68/ex_5: "expulsar" not in lexicon
+⚠ grammar gl-69/slide_2: "mullat" not in lexicon
+⚠ grammar gl-69/slide_3: "adonat" not in lexicon
+⚠ grammar gl-69/slide_3: "error" not in lexicon
+⚠ grammar gl-69/slide_3: "adonat" not in lexicon
+✗ grammar: duplicate exercise id ex_1
+✗ grammar: duplicate exercise id ex_2
+✗ grammar: duplicate exercise id ex_3
+✗ grammar: duplicate exercise id ex_4
+⚠ grammar gl-69/ex_4: "adonar" not in lexicon
+⚠ grammar gl-69/ex_4: "equivocat" not in lexicon
+✗ grammar: duplicate exercise id ex_5
+⚠ grammar gl-69/ex_5: "soroll" not in lexicon
+✗ grammar: duplicate exercise id ex_1
+✗ grammar: duplicate exercise id ex_2
+✗ grammar: duplicate exercise id ex_3
+✗ grammar: duplicate exercise id ex_4
+✗ grammar: duplicate exercise id ex_5
+⚠ grammar gl-71/c1_13_s2: "arriscat" not in lexicon
+⚠ grammar gl-71/c1_13_s2: "obstant" not in lexicon
+⚠ grammar gl-71/c1_13_s3: "dificultats" not in lexicon
+⚠ grammar gl-71/c1_13_s3: "atendre" not in lexicon
+⚠ grammar gl-71/c1_13_e1: "feiner" not in lexicon
+⚠ grammar gl-71/c1_13_e3: "sufocant" not in lexicon
+⚠ grammar gl-71/c1_13_e3: "continuar" not in lexicon
+⚠ grammar gl-71/c1_13_e4: "respecto" not in lexicon
+⚠ grammar gl-71/c1_13_e5: "complexa" not in lexicon
+⚠ grammar gl-71/c1_13_e5: "obstant" not in lexicon
+⚠ grammar gl-71/c1_13_e5: "resoldre" not in lexicon
+⚠ grammar gl-72/c1_14_s2: "visiti" not in lexicon
+⚠ grammar gl-72/c1_14_s3: "participar" not in lexicon
+⚠ grammar gl-72/c1_14_s3: "inscriure" not in lexicon
+⚠ grammar gl-72/c1_14_e1: "especialitzat" not in lexicon
+⚠ grammar gl-72/c1_14_e1: "penal" not in lexicon
+⚠ grammar gl-72/c1_14_e2: "tracti" not in lexicon
+⚠ grammar gl-72/c1_14_e2: "tema" not in lexicon
+⚠ grammar gl-72/c1_14_e2: "específic" not in lexicon
+⚠ grammar gl-72/c1_14_e3: "acompanyarà" not in lexicon
+⚠ grammar gl-72/c1_14_e4: "visitem" not in lexicon
+⚠ grammar gl-73/c1_15_e2: "riure" not in lexicon
+⚠ grammar gl-73/c1_15_e5: "estona" not in lexicon
+✓ grammar/c1.json (4 blocks, 15 lessons, 75 exercises, 84 vocab warning(s))
+⚠ grammar gl-74/c2_01_s1: "perillós" not in lexicon
+⚠ grammar gl-74/c2_01_s2: "Realment" not in lexicon
+⚠ grammar gl-74/c2_01_e3: "final" not in lexicon
+⚠ grammar gl-74/c2_01_e4: "presidenta" not in lexicon
+⚠ grammar gl-74/c2_01_e5: "presidenta" not in lexicon
+⚠ grammar gl-75/c2_02_s2: "mort" not in lexicon
+⚠ grammar gl-75/c2_02_e1: "dalt" not in lexicon
+⚠ grammar gl-75/c2_02_e1: "patir" not in lexicon
+⚠ grammar gl-75/c2_02_e3: "regal" not in lexicon
+⚠ grammar gl-75/c2_02_e3: "fantàstic" not in lexicon
+⚠ grammar gl-75/c2_02_e4: "espatllat" not in lexicon
+⚠ grammar gl-75/c2_02_e4: "mala" not in lexicon
+⚠ grammar gl-75/c2_02_e4: "sort" not in lexicon
+⚠ grammar gl-75/c2_02_e5: "cas" not in lexicon
+⚠ grammar gl-76/c2_03_s1: "Central" not in lexicon
+⚠ grammar gl-76/c2_03_s1: "Valencià/Balear" not in lexicon
+⚠ grammar gl-76/c2_03_s2: "Normatiu" not in lexicon
+⚠ grammar gl-76/c2_03_s2: "Col·loquial" not in lexicon
+⚠ grammar gl-76/c2_03_e1: "estàndard" not in lexicon
+⚠ grammar gl-76/c2_03_e2: "registre" not in lexicon
+⚠ grammar gl-76/c2_03_e2: "formal" not in lexicon
+⚠ grammar gl-76/c2_03_e3: "mallorquí" not in lexicon
+⚠ grammar gl-76/c2_03_e3: "valencià" not in lexicon
+⚠ grammar gl-76/c2_03_e3: "col·loquial" not in lexicon
+⚠ grammar gl-76/c2_03_e3: "freqüent" not in lexicon
+⚠ grammar gl-76/c2_03_e3: "endur" not in lexicon
+⚠ grammar gl-76/c2_03_e3: "endur" not in lexicon
+⚠ grammar gl-76/c2_03_e4: "normatiu" not in lexicon
+⚠ grammar gl-76/c2_03_e5: "final" not in lexicon
+⚠ grammar gl-77/slide1: "qual" not in lexicon
+⚠ grammar gl-77/slide1: "qual" not in lexicon
+⚠ grammar gl-77/slide2: "greu" not in lexicon
+⚠ grammar gl-77/slide3: "qual" not in lexicon
+⚠ grammar gl-77/slide3: "lluitar" not in lexicon
+⚠ grammar gl-77/slide3: "qual" not in lexicon
+⚠ grammar gl-77/slide3: "dirigim" not in lexicon
+⚠ grammar gl-77/ex1: "qual" not in lexicon
+⚠ grammar gl-77/ex1: "vàlid" not in lexicon
+⚠ grammar gl-77/ex2: "qüestió" not in lexicon
+⚠ grammar gl-77/ex2: "qual" not in lexicon
+⚠ grammar gl-77/ex2: "complexa" not in lexicon
+⚠ grammar gl-77/ex4: "traït" not in lexicon
+⚠ grammar gl-77/ex5: "quals" not in lexicon
+⚠ grammar gl-77/ex5: "pèssimes" not in lexicon
+⚠ grammar gl-78/slide1: "qual" not in lexicon
+⚠ grammar gl-78/slide1: "arruïnar" not in lexicon
+⚠ grammar gl-78/slide2: "enfadar" not in lexicon
+⚠ grammar gl-78/slide2: "apujat" not in lexicon
+⚠ grammar gl-78/slide2: "qual" not in lexicon
+⚠ grammar gl-78/slide2: "afectarà" not in lexicon
+⚠ grammar gl-78/slide3: "suficients" not in lexicon
+⚠ grammar gl-78/slide3: "qual" not in lexicon
+⚠ grammar gl-78/slide3: "qual" not in lexicon
+✗ grammar: duplicate exercise id ex1
+⚠ grammar gl-78/ex1: "sorprendre" not in lexicon
+✗ grammar: duplicate exercise id ex2
+⚠ grammar gl-78/ex2: "qual" not in lexicon
+✗ grammar: duplicate exercise id ex3
+⚠ grammar gl-78/ex3: "publicat" not in lexicon
+⚠ grammar gl-78/ex3: "demostra" not in lexicon
+✗ grammar: duplicate exercise id ex4
+⚠ grammar gl-78/ex4: "cancel·lat" not in lexicon
+⚠ grammar gl-78/ex4: "qual" not in lexicon
+✗ grammar: duplicate exercise id ex5
+⚠ grammar gl-78/ex5: "obligar" not in lexicon
+⚠ grammar gl-78/ex5: "acusació" not in lexicon
+⚠ grammar gl-79/slide2: "saludar" not in lexicon
+⚠ grammar gl-79/slide2: "Correcte" not in lexicon
+⚠ grammar gl-79/slide2: "saludar" not in lexicon
+⚠ grammar gl-79/slide3: "bolets" not in lexicon
+⚠ grammar gl-79/slide3: "rient" not in lexicon
+✗ grammar: duplicate exercise id ex1
+✗ grammar: duplicate exercise id ex2
+✗ grammar: duplicate exercise id ex3
+✗ grammar: duplicate exercise id ex4
+✗ grammar: duplicate exercise id ex5
+⚠ grammar gl-79/ex5: "anècdotes" not in lexicon
+⚠ grammar gl-80/c2_07_slide_1: "detingut" not in lexicon
+⚠ grammar gl-80/c2_07_slide_1: "vigor" not in lexicon
+⚠ grammar gl-80/c2_07_slide_1: "següent" not in lexicon
+⚠ grammar gl-80/c2_07_slide_2: "publicat" not in lexicon
+⚠ grammar gl-80/c2_07_slide_2: "regula" not in lexicon
+⚠ grammar gl-80/c2_07_slide_2: "activitats" not in lexicon
+⚠ grammar gl-80/c2_07_slide_2: "capsa" not in lexicon
+⚠ grammar gl-80/c2_07_slide_2: "conté" not in lexicon
+⚠ grammar gl-80/c2_07_slide_3: "manera" not in lexicon
+⚠ grammar gl-80/c2_07_ex_1: "salpar" not in lexicon
+⚠ grammar gl-80/c2_07_ex_2: "publicar" not in lexicon
+⚠ grammar gl-80/c2_07_ex_2: "llista" not in lexicon
+⚠ grammar gl-80/c2_07_ex_2: "guanyadors" not in lexicon
+⚠ grammar gl-80/c2_07_ex_2: "causar" not in lexicon
+⚠ grammar gl-80/c2_07_ex_3: "avís" not in lexicon
+⚠ grammar gl-80/c2_07_ex_3: "advertia" not in lexicon
+⚠ grammar gl-80/c2_07_ex_3: "allaus" not in lexicon
+⚠ grammar gl-80/c2_07_ex_5: "conté" not in lexicon
+⚠ grammar gl-81/c2_08_slide_3: "quals" not in lexicon
+⚠ grammar gl-81/c2_08_slide_3: "meitat" not in lexicon
+⚠ grammar gl-81/c2_08_slide_3: "meitat" not in lexicon
+⚠ grammar gl-81/c2_08_ex_3: "quals" not in lexicon
+⚠ grammar gl-81/c2_08_ex_4: "qual" not in lexicon
+⚠ grammar gl-81/c2_08_ex_5: "preocupem" not in lexicon
+⚠ grammar gl-81/c2_08_ex_5: "debò" not in lexicon
+⚠ grammar gl-82/c2_09_slide_2: "adonat" not in lexicon
+⚠ grammar gl-82/c2_09_slide_2: "detall" not in lexicon
+⚠ grammar gl-82/c2_09_slide_2: "mi" not in lexicon
+⚠ grammar gl-82/c2_09_slide_3: "adonat" not in lexicon
+⚠ grammar gl-82/c2_09_slide_3: "error" not in lexicon
+⚠ grammar gl-82/c2_09_slide_3: "adonat" not in lexicon
+⚠ grammar gl-82/c2_09_slide_3: "acostumat" not in lexicon
+⚠ grammar gl-82/c2_09_slide_3: "acostumat" not in lexicon
+⚠ grammar gl-82/c2_09_ex_1: "tieta" not in lexicon
+⚠ grammar gl-82/c2_09_ex_3: "adonat" not in lexicon
+⚠ grammar gl-82/c2_09_ex_5: "acostumat" not in lexicon
+⚠ grammar gl-82/c2_09_ex_5: "acostumat" not in lexicon
+⚠ grammar gl-83/c2_10_slide1: "despit" not in lexicon
+⚠ grammar gl-83/c2_10_slide1: "dificultats" not in lexicon
+⚠ grammar gl-83/c2_10_slide1: "continuar" not in lexicon
+⚠ grammar gl-83/c2_10_slide1: "endavant" not in lexicon
+⚠ grammar gl-83/c2_10_slide1: "despit" not in lexicon
+⚠ grammar gl-83/c2_10_slide2: "afavorit" not in lexicon
+⚠ grammar gl-83/c2_10_slide2: "detriment" not in lexicon
+⚠ grammar gl-83/c2_10_slide2: "ambient" not in lexicon
+⚠ grammar gl-83/c2_10_slide2: "detriment" not in lexicon
+⚠ grammar gl-83/c2_10_slide3: "recer" not in lexicon
+⚠ grammar gl-83/c2_10_slide3: "recer" not in lexicon
+⚠ grammar gl-83/c2_10_slide3: "actuar" not in lexicon
+⚠ grammar gl-83/c2_10_slide3: "impunitat" not in lexicon
+⚠ grammar gl-83/c2_10_ex1: "despit" not in lexicon
+⚠ grammar gl-83/c2_10_ex1: "mèdiques" not in lexicon
+⚠ grammar gl-83/c2_10_ex1: "continuar" not in lexicon
+⚠ grammar gl-83/c2_10_ex2: "urbanístic" not in lexicon
+⚠ grammar gl-83/c2_10_ex2: "detriment" not in lexicon
+⚠ grammar gl-83/c2_10_ex2: "zones" not in lexicon
+⚠ grammar gl-83/c2_10_ex3: "construir" not in lexicon
+⚠ grammar gl-83/c2_10_ex3: "recer" not in lexicon
+⚠ grammar gl-83/c2_10_ex3: "nord" not in lexicon
+⚠ grammar gl-83/c2_10_ex4: "pública" not in lexicon
+⚠ grammar gl-83/c2_10_ex4: "detriment" not in lexicon
+⚠ grammar gl-83/c2_10_ex4: "socials" not in lexicon
+⚠ grammar gl-83/c2_10_ex4: "bàsics" not in lexicon
+⚠ grammar gl-83/c2_10_ex5: "despit" not in lexicon
+⚠ grammar gl-83/c2_10_ex5: "suspendre" not in lexicon
+⚠ grammar gl-84/c2_11_slide1: "adverteixo" not in lexicon
+⚠ grammar gl-84/c2_11_slide1: "antuvi" not in lexicon
+⚠ grammar gl-84/c2_11_slide1: "bestreta" not in lexicon
+⚠ grammar gl-84/c2_11_slide2: "automobilístic" not in lexicon
+⚠ grammar gl-84/c2_11_slide2: "afectat" not in lexicon
+⚠ grammar gl-84/c2_11_slide2: "retruc" not in lexicon
+⚠ grammar gl-84/c2_11_slide2: "retruc" not in lexicon
+⚠ grammar gl-84/c2_11_slide2: "informació" not in lexicon
+⚠ grammar gl-84/c2_11_slide3: "ras" not in lexicon
+⚠ grammar gl-84/c2_11_slide3: "continuar" not in lexicon
+⚠ grammar gl-84/c2_11_slide3: "Ras" not in lexicon
+⚠ grammar gl-84/c2_11_slide3: "absolut" not in lexicon
+⚠ grammar gl-84/c2_11_ex1: "antuvi" not in lexicon
+⚠ grammar gl-84/c2_11_ex1: "funcionaria" not in lexicon
+⚠ grammar gl-84/c2_11_ex2: "bestreta" not in lexicon
+⚠ grammar gl-84/c2_11_ex3: "petroli" not in lexicon
+⚠ grammar gl-84/c2_11_ex3: "encarirà" not in lexicon
+⚠ grammar gl-84/c2_11_ex3: "retruc" not in lexicon
+⚠ grammar gl-84/c2_11_ex4: "ras" not in lexicon
+⚠ grammar gl-84/c2_11_ex4: "amagar" not in lexicon
+⚠ grammar gl-84/c2_11_ex5: "antuvi" not in lexicon
+⚠ grammar gl-85/c2_12_slide1: "formulat" not in lexicon
+⚠ grammar gl-85/c2_12_slide1: "cometre" not in lexicon
+⚠ grammar gl-85/c2_12_slide1: "errada" not in lexicon
+⚠ grammar gl-85/c2_12_slide1: "greu" not in lexicon
+⚠ grammar gl-85/c2_12_slide2: "exerceix" not in lexicon
+⚠ grammar gl-85/c2_12_slide2: "influència" not in lexicon
+⚠ grammar gl-85/c2_12_slide2: "local" not in lexicon
+⚠ grammar gl-85/c2_12_slide2: "notable" not in lexicon
+⚠ grammar gl-85/c2_12_slide2: "endemà" not in lexicon
+⚠ grammar gl-85/c2_12_slide3: "apujarien" not in lexicon
+⚠ grammar gl-85/c2_12_slide3: "establert" not in lexicon
+⚠ grammar gl-85/c2_12_slide3: "accedir" not in lexicon
+⚠ grammar gl-85/c2_12_ex1: "cometre" not in lexicon
+⚠ grammar gl-85/c2_12_ex1: "greu" not in lexicon
+⚠ grammar gl-85/c2_12_ex2: "prestigi" not in lexicon
+⚠ grammar gl-85/c2_12_ex2: "internacional" not in lexicon
+⚠ grammar gl-85/c2_12_ex4: "establir" not in lexicon
+⚠ grammar gl-85/c2_12_ex4: "clars" not in lexicon
+⚠ grammar gl-85/c2_12_ex4: "evitar" not in lexicon
+⚠ grammar gl-85/c2_12_ex5: "investigadors" not in lexicon
+⚠ grammar gl-85/c2_12_ex5: "formular" not in lexicon
+⚠ grammar gl-85/c2_12_ex5: "trencadora" not in lexicon
+⚠ grammar gl-86/c2_13_s1: "assistir" not in lexicon
+⚠ grammar gl-86/c2_13_s2: "solament" not in lexicon
+⚠ grammar gl-86/c2_13_s2: "solament" not in lexicon
+⚠ grammar gl-86/c2_13_s2: "apagar" not in lexicon
+⚠ grammar gl-86/c2_13_e1: "fonamentals" not in lexicon
+⚠ grammar gl-86/c2_13_e2: "solament" not in lexicon
+⚠ grammar gl-86/c2_13_e2: "resum" not in lexicon
+⚠ grammar gl-86/c2_13_e3: "afecta" not in lexicon
+⚠ grammar gl-86/c2_13_e3: "adults" not in lexicon
+⚠ grammar gl-86/c2_13_e4: "acceptarem" not in lexicon
+⚠ grammar gl-86/c2_13_e4: "excusa" not in lexicon
+⚠ grammar gl-86/c2_13_e4: "neva" not in lexicon
+⚠ grammar gl-86/c2_13_e5: "presentes" not in lexicon
+⚠ grammar gl-87/c2_14_s1: "resolt" not in lexicon
+⚠ grammar gl-87/c2_14_s2: "demanar" not in lexicon
+⚠ grammar gl-87/c2_14_s2: "tanqués" not in lexicon
+⚠ grammar gl-87/c2_14_s2: "pregar" not in lexicon
+⚠ grammar gl-87/c2_14_s3: "assegurar" not in lexicon
+⚠ grammar gl-87/c2_14_s3: "endemà" not in lexicon
+⚠ grammar gl-87/c2_14_e1: "cansat." not in lexicon
+⚠ grammar gl-87/c2_14_e2: "ordenar" not in lexicon
+⚠ grammar gl-87/c2_14_e2: "aquí!" not in lexicon
+⚠ grammar gl-87/c2_14_e2: "ordenar" not in lexicon
+⚠ grammar gl-87/c2_14_e3: "demà?" not in lexicon
+⚠ grammar gl-87/c2_14_e3: "endemà" not in lexicon
+⚠ grammar gl-87/c2_14_e5: "ara." not in lexicon
+⚠ grammar gl-88/c2_15_s1: "dràstiques" not in lexicon
+⚠ grammar gl-88/c2_15_s1: "prometedors" not in lexicon
+⚠ grammar gl-88/c2_15_s1: "obstant" not in lexicon
+⚠ grammar gl-88/c2_15_s2: "darrer" not in lexicon
+⚠ grammar gl-88/c2_15_s2: "terme" not in lexicon
+⚠ grammar gl-88/c2_15_s2: "recau" not in lexicon
+⚠ grammar gl-88/c2_15_s2: "comitè" not in lexicon
+⚠ grammar gl-88/c2_15_s2: "col·legiada" not in lexicon
+⚠ grammar gl-88/c2_15_s3: "tall" not in lexicon
+⚠ grammar gl-88/c2_15_e1: "complir" not in lexicon
+⚠ grammar gl-88/c2_15_e1: "sancionats" not in lexicon
+⚠ grammar gl-88/c2_15_e2: "tall" not in lexicon
+⚠ grammar gl-88/c2_15_e2: "agrair" not in lexicon
+⚠ grammar gl-88/c2_15_e3: "darrer" not in lexicon
+⚠ grammar gl-88/c2_15_e3: "terme" not in lexicon
+⚠ grammar gl-88/c2_15_e4: "estudis" not in lexicon
+⚠ grammar gl-88/c2_15_e4: "inicials" not in lexicon
+⚠ grammar gl-88/c2_15_e4: "positius" not in lexicon
+⚠ grammar gl-88/c2_15_e4: "obstant" not in lexicon
+⚠ grammar gl-88/c2_15_e4: "preocupants" not in lexicon
+⚠ grammar gl-88/c2_15_e5: "final" not in lexicon
+⚠ grammar gl-88/c2_15_e5: "àrbitre" not in lexicon
+✓ grammar/c2.json (5 blocks, 15 lessons, 75 exercises, 223 vocab warning(s))
+✓ seed texts (3/3 valid)
+
+65 content error(s)
+[ELIFECYCLE] Command failed with exit code 1.

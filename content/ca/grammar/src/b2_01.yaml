@@ -1,0 +1,108 @@
+id: b2_01
+title: L'expressió de la influència i l'emoció
+subtitle: Present Subjunctive in Noun Clauses
+grammarPoint: Ús del present de subjuntiu per expressar influència, voluntat, i emocions (que + subjuntiu).
+grammarPointEn: Using the present subjunctive to express influence, will, and emotions (que + subjunctive).
+slides:
+  - id: b2_01_s1
+    title: Expressing Influence and Will
+    body: We use the subjunctive after verbs expressing influence, will, or desire (e.g., *voler que*, *exigir que*, *recomanar que*) when there is a change of subject.
+    examples:
+      - target: Vull que vinguis a la festa.
+        translit: \vuʎ kə \vin.gis ə lə \fɛs.tə\
+        en: I want you to come to the party.
+        highlight: vinguis
+      - target: Et recomano que llegeixis aquest llibre.
+        translit: \ət rə.ku\ma.nu kə ʎə\ʒɛ.ʃis ə\kɛst \ʎi.βɾə\
+        en: I recommend that you read this book.
+        highlight: llegeixis
+  - id: b2_01_s2
+    title: Expressing Emotions
+    body: The subjunctive is also used after verbs expressing emotion (e.g., *m'agrada que*, *em sorprèn que*, *em fa por que*) when the subjects are different.
+    examples:
+      - target: M'agrada que siguis tan sincer.
+        translit: \mə\ɣɾa.ðə kə \si.ɣis tan sin\se\
+        en: I like that you are so sincere.
+        highlight: siguis
+      - target: Ens sorprèn que no ho sàpiguen.
+        translit: \əns suɾ\pɾɛn kə \no u \sa.pi.ɣən\
+        en: It surprises us that they don't know it.
+        highlight: sàpiguen
+  - id: b2_01_s3
+    title: Expressing Advice and Requests
+    body: Verbs like *demanar* (to ask) or *aconsellar* (to advise) followed by *que* require the subjunctive.
+    examples:
+      - target: Et demano que m'ajudis.
+        translit: \ət də\ma.nu kə mə\ʒu.ðis\
+        en: I ask that you help me.
+        highlight: ajudis
+      - target: Us aconsello que arribeu d'hora.
+        translit: \uz ə.kun\sɛ.ʎu kə ə.ri\βɛw \dɔ.ɾə\
+        en: I advise you to arrive early.
+        highlight: arribeu
+exercises:
+  - id: b2_01_e1
+    type: fillBlank
+    target: Vull que tu ___ (venir) amb mi.
+    translit: \vuʎ kə tu ___ əm \mi\
+    en: I want you to come with me.
+    answer:
+      target: vinguis
+      translit: \vin.gis\
+    distractors:
+      - target: vens
+        translit: \bɛns\
+      - target: vindràs
+        translit: \bin\dɾas\
+  - id: b2_01_e2
+    type: fillBlank
+    target: Em sap greu que ___ (estar) malalt.
+    translit: \əm sab \gɾɛw kə ___ mə\lal\
+    en: I'm sorry that you are sick.
+    answer:
+      target: estiguis
+      translit: \əs\ti.ɣis\
+    distractors:
+      - target: estàs
+        translit: \əs\tas\
+      - target: estaves
+        translit: \əs\ta.βəs\
+  - id: b2_01_e3
+    type: fillBlank
+    target: Ells demanen que nosaltres ___ (tenir) paciència.
+    translit: \eʎz də\ma.nən kə nu\zal.tɾəs ___ pə.si\ɛn.si.ə\
+    en: They ask that we have patience.
+    answer:
+      target: tinguem
+      translit: \tin\gɛm\
+    distractors:
+      - target: tenim
+        translit: \tə\nim\
+      - target: tindrem
+        translit: \tin\dɾɛm\
+  - id: b2_01_e4
+    type: fillBlank
+    target: Recomano que ___ (llegir) aquest article.
+    translit: \rə.ku\ma.nu kə ___ ə\kɛst əɾ\ti.klə\
+    en: I recommend that they read this article.
+    answer:
+      target: llegeixin
+      translit: \ʎə\ʒɛ.ʃin\
+    distractors:
+      - target: llegeixen
+        translit: \ʎə\ʒɛ.ʃən\
+      - target: llegiran
+        translit: \ʎə.ʒi\ɾan\
+  - id: b2_01_e5
+    type: fillBlank
+    target: Em sorprèn que en Joan no ho ___ (saber).
+    translit: \əm suɾ\pɾɛn kə ən ʒu\an \no u ___\
+    en: It surprises me that Joan doesn't know it.
+    answer:
+      target: sàpiga
+      translit: \sa.pi.ɣə\
+    distractors:
+      - target: sap
+        translit: \sap\
+      - target: sabrà
+        translit: \sə\βɾa\
