@@ -47,7 +47,7 @@ export const MAX_OOV_TYPE_RATE = 0.12;
  * A text with nothing new in it has nothing to teach, so the pool requires at
  * least this many unknown lexemes as well as at most `MAX_OOV_TYPE_RATE`.
  */
-export const MIN_NEW_LEXEMES = 1;
+export const MIN_NEW_LEXEMES = 2;
 
 /**
  * The type rate texts cached before `newWords` existed are judged by.

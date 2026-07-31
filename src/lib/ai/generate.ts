@@ -69,7 +69,7 @@ function buildPrompt(req: GenerationRequest): string {
   const [minS, maxS] = req.level.sentenceRange;
   const themeInstructions = req.theme ? `\n- Set the text in this scenario/theme where it fits naturally: ${req.theme}` : "";
   const beginnerInstructions = req.level.id === "L1" || req.level.id === "L2"
-    ? `\n- Keep it highly practical for a beginner. Focus on everyday conversational phrases (e.g. 'How are you?', ordering food), W-questions, numbers, days of the week, and basic adjectives.\n- MAXIMUM 11 words per sentence.`
+    ? `\n- Keep it highly practical for a beginner. Focus on everyday conversational phrases (e.g. 'How are you?', ordering food), W-questions, numbers, days of the week, and basic adjectives.`
     : "";
 
   return `You are ${profile.prompts.teacher} writing a graded reader text.
@@ -262,7 +262,7 @@ where "index" is the number provided above for the sentence.`;
  * Half rather than all: the model sometimes cannot place a word naturally, and
  * demanding all of them buys a contorted sentence.
  */
-const MIN_TARGET_USE = 0.5;
+const MIN_TARGET_USE = 1.0;
 
 function requiredTargets(req: GenerationRequest): number {
   if (req.targetWords.length === 0) return 0;

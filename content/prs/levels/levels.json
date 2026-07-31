@@ -15,7 +15,7 @@
         2,
         3
       ],
-      "sentenceLengthHint": "strictly max 11 words per sentence, simple subject-object-verb",
+      "sentenceLengthHint": "strictly max 6 words per sentence, simple subject-object-verb, NO conjunctions (no 'and', 'but')",
       "grammarAllowed": [
         "present tense of budan (ast, hastam, hastēm)",
         "simple SOV sentences",
@@ -40,7 +40,7 @@
         2,
         3
       ],
-      "sentenceLengthHint": "strictly max 11 words per sentence",
+      "sentenceLengthHint": "strictly max 8 words per sentence, can use simple conjunctions but no complex clauses",
       "grammarAllowed": [
         "present tense mē- verbs",
         "object marker rā",

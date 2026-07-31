@@ -16,7 +16,7 @@
         2,
         3
       ],
-      "sentenceLengthHint": "strictly max 11 words per sentence, simple subject-verb-object",
+      "sentenceLengthHint": "strictly max 6 words per sentence, simple subject-verb-object, NO conjunctions (no 'and', 'but')",
       "grammarAllowed": [
         "present of ser and estar (soc, ets, és, estic, està)",
         "definite and indefinite articles (el, la, els, les, un, una). el and la elide to l' before a vowel or h (l'home, l'aigua, l'hora) - never 'el home'. The one exception: la does NOT elide before an unstressed i- or u- (la idea, la universitat, la humitat), though it does before a stressed one (l'illa)",
@@ -44,7 +44,7 @@
         2,
         3
       ],
-      "sentenceLengthHint": "strictly max 11 words per sentence",
+      "sentenceLengthHint": "strictly max 8 words per sentence, can use simple conjunctions but no complex clauses",
       "grammarAllowed": [
         "present indicative of all three conjugations, including the incoative -eix- type (serveixo, prefereixes)",
         "the irregular presents a beginner needs: tenir (tinc), fer (faig), anar (vaig), poder (puc), voler (vull), venir (vinc), dir (dic), saber (sé), veure (veig)",
