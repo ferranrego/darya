@@ -1,3 +1,13 @@
+/**
+ * End-to-end generation against the live provider chain.
+ *
+ * Opt-in via LIVE_AI=1 (see vitest.config.ts), because it spends free-tier
+ * quota and fails with "All providers failed" when no API key is loaded - which
+ * is every ordinary `pnpm test` run.
+ *
+ *   set -a; . ./.env.ca.local; set +a
+ *   LIVE_AI=1 NEXT_PUBLIC_TARGET_LANG=ca pnpm exec vitest run src/lib/ai/generate.e2e.live.test.ts
+ */
 import { describe, it, expect } from "vitest";
 import { generateText } from "./generate.ts";
 import { levels, lexicon } from "../content/load.ts";
