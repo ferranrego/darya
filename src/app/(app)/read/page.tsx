@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Loader2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { PriorWordsSheet } from "@/components/reader/prior-words-sheet";
 import { TextReader } from "@/components/reader/text-reader";
@@ -208,7 +208,8 @@ export default function ReadPage() {
           </>
         ) : (
           <>
-            <h1 className="mt-6 text-[20px] font-semibold">Writing your next text…</h1>
+            <Loader2 className="mx-auto mt-6 h-8 w-8 animate-spin text-ink-soft" />
+            <h1 className="mt-4 text-[20px] font-semibold">Writing your next text…</h1>
             <p className="mt-2 text-[14px] text-ink-soft">
               A fresh story with just the right new words.
             </p>

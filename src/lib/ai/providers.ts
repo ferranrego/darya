@@ -23,8 +23,8 @@ interface Provider {
  *
  * The route allows 60s (`maxDuration`), so the slower budget still fits.
  */
-const TIMEOUT_MS: Record<string, number> = { groq: 20_000, "groq-fallback": 20_000, openrouter: 45_000, huggingface: 45_000 };
-const DEFAULT_TIMEOUT_MS = 20_000;
+const TIMEOUT_MS: Record<string, number> = { huggingface: 30_000, groq: 30_000, "groq-fallback": 30_000, openrouter: 30_000, "huggingface-fallback": 30_000 };
+const DEFAULT_TIMEOUT_MS = 30_000;
 
 function openAiCompatible(
   name: string,
@@ -72,10 +72,11 @@ function openAiCompatible(
 }
 
 const providers: Provider[] = [
-  openAiCompatible("huggingface", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL", "Qwen/Qwen2.5-72B-Instruct"),
+  openAiCompatible("huggingface", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL", "Qwen/Qwen2.5-32B-Instruct"),
   openAiCompatible("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "llama-3.3-70b-versatile"),
   openAiCompatible("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", "OPENROUTER_MODEL", "openrouter/free"),
   openAiCompatible("groq-fallback", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL_FALLBACK", "llama-3.1-8b-instant"),
+  openAiCompatible("huggingface-fallback", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL_FALLBACK", "Qwen/Qwen2.5-72B-Instruct"),
 ];
 
 interface CompleteOptions<T> {
