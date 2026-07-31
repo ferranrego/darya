@@ -9,26 +9,40 @@ import { supabaseServer, supabaseService } from "@/lib/supabase/server";
 
 export const maxDuration = 60;
 
+/** The themes the reader can ask for. Also the allow-list for the request body. */
+const THEMES = [
+  "Daily Life",
+  "Food",
+  "Travel",
+  "Work",
+  "Folktales",
+  "Family",
+  "Shopping",
+  "Friendship",
+] as const;
+
 /**
  * Ensure the signed-in user has at least `want` unread texts at their level.
  * Generates (and caches, shared across users) only when the pool runs dry.
  */
 export async function POST(req: Request) {
-  let theme: string | undefined = undefined;
-  let force: boolean = false;
+  let theme: string | undefined;
+  let force = false;
   try {
     const body = await req.json();
-    theme = body?.theme;
+    // The theme is interpolated straight into the prompt and then stored on a
+    // row other learners read, so it is checked against the list the UI can
+    // actually send rather than trusted. Unvalidated, one request could carry
+    // an arbitrarily long string into three model calls and exhaust the shared
+    // free-tier quota for every user of the deployment.
+    if (typeof body?.theme === "string" && THEMES.includes(body.theme)) theme = body.theme;
     force = body?.force === true;
   } catch {
-    // ignore
+    // A malformed body is not worth failing on; the defaults below apply.
   }
 
-  // If no theme is provided, pick a random one so "Surprise Me!" gives diverse texts
-  if (!theme) {
-    const defaultThemes = ["Daily Life", "Food", "Travel", "Work", "Folktales", "Family", "Shopping", "Friendship"];
-    theme = defaultThemes[Math.floor(Math.random() * defaultThemes.length)];
-  }
+  // No theme means "surprise me", so pick one rather than leaving it open.
+  theme ??= THEMES[Math.floor(Math.random() * THEMES.length)];
 
   const db = await supabaseServer();
   const {
@@ -49,16 +63,11 @@ export async function POST(req: Request) {
   const { data: pool } = await db.from("texts").select("id, theme").eq("level", level.id);
   const unread = (pool ?? []).filter((t) => !readIds.has(t.id));
   
+  // `theme` is always set by this point, so there is no unthemed branch.
   if (!force) {
-    if (theme) {
-      const unreadThemed = unread.filter((t) => t.theme === theme);
-      if (unreadThemed.length > 0) {
-        return NextResponse.json({ created: false, unread: unreadThemed.length });
-      }
-    } else {
-      if (unread.length > 0) {
-        return NextResponse.json({ created: false, unread: unread.length });
-      }
+    const unreadThemed = unread.filter((t) => t.theme === theme);
+    if (unreadThemed.length > 0) {
+      return NextResponse.json({ created: false, unread: unreadThemed.length });
     }
   }
 
@@ -93,6 +102,10 @@ export async function POST(req: Request) {
     count: targetCountFor(level, ratio),
   });
 
+  if (targetWords.length === 0) {
+    return NextResponse.json({ error: "no teachable words left at this level" }, { status: 409 });
+  }
+
   const dueIds = new Set(
     (words ?? []).filter((w) => w.status === "learning").map((w) => w.lexeme_id),
   );
@@ -116,10 +129,10 @@ export async function POST(req: Request) {
     await insertGeneratedText(supabaseService(), doc, vocabHash(doc), theme);
     return NextResponse.json({ created: true, id: doc.id });
   } catch (e: unknown) {
+    // Logged in full, reported in brief: the message can carry provider names,
+    // model ids and a slice of the upstream response body, and the reader
+    // renders it verbatim to the learner.
     console.error("API /generate error:", e);
-    return NextResponse.json(
-      { error: (e as Error)?.message || String(e) || "generation failed" },
-      { status: 502 },
-    );
+    return NextResponse.json({ error: "Could not write a new text right now." }, { status: 502 });
   }
 }

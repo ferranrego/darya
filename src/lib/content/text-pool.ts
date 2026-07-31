@@ -10,7 +10,11 @@
  * test rather than discovered in production.
  */
 
-import { MAX_OOV_TYPE_RATE, MIN_NEW_LEXEMES } from "./difficulty.ts";
+import {
+  LEGACY_MAX_OOV_TYPE_RATE,
+  MAX_OOV_TYPE_RATE,
+  MIN_NEW_LEXEMES,
+} from "./difficulty.ts";
 
 /**
  * The lexemes a placement credits a learner with, minus the ones they already
@@ -111,8 +115,9 @@ export function selectUnread(input: PoolInput): PoolText[] {
       const untaught = declared ? unknown.filter((w) => !declared.includes(w)) : unknown;
 
       const rate = vocab.length > 0 ? untaught.length / vocab.length : 0;
+      const limit = declared ? MAX_OOV_TYPE_RATE : LEGACY_MAX_OOV_TYPE_RATE;
       // It must teach something, or there is nothing to read it for.
-      return rate <= MAX_OOV_TYPE_RATE && taught.length >= MIN_NEW_LEXEMES;
+      return rate <= limit && taught.length >= MIN_NEW_LEXEMES;
     })
     .sort((a, b) => (a.source === b.source ? 0 : a.source === "seed" ? -1 : 1));
 }

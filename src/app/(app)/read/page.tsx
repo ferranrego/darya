@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BookOpen, Loader2 } from "lucide-react";
+import { BookOpen } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { PriorWordsSheet } from "@/components/reader/prior-words-sheet";
 import { TextReader } from "@/components/reader/text-reader";
@@ -30,6 +30,8 @@ export default function ReadPage() {
   
   const [activeTextId, setActiveTextId] = useState<string | null>(null);
   const [emptyGenerations, setEmptyGenerations] = useState(0);
+  /** Previous "a text was showable" value, for the render-time reset below. */
+  const [sawText, setSawText] = useState(false);
   const [showRetry, setShowRetry] = useState(false);
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
@@ -122,12 +124,18 @@ export default function ReadPage() {
       if (!res.ok) throw new Error((await res.json()).error ?? "generation failed");
       return res.json();
     },
+    onMutate: () => {
+      // Reset from the callback that starts the run, not from an effect
+      // watching `isPending` - the effect fired a synchronous setState on every
+      // transition and cascaded a render.
+      setProgress(0);
+      setShowRetry(false);
+    },
     onSuccess: () => refetch(),
-    // Counts rounds that ended with the pool still empty. The server writing a
-    // text is not the same as the reader being able to show one - they measure
-    // difficulty differently, one over running words and one over distinct
-    // lexemes - and when they disagree the server reports success, nothing
-    // errors, and the learner waits on "Writing your next text…" forever.
+    // Counts generation rounds. Whether a round was *useful* cannot be known
+    // here - the server writing a text is not the same as the reader being able
+    // to show one, and the refetch has not been reflected in `unread` yet - so
+    // the counter is cleared below the moment a text becomes available.
     onSettled: () => setEmptyGenerations((n) => n + 1),
   });
 
@@ -135,7 +143,6 @@ export default function ReadPage() {
 
   useEffect(() => {
     if (generate.isPending) {
-      setProgress(0);
       const interval = setInterval(() => {
         setProgress((prev) => {
           if (prev < 85) return prev + 2;
@@ -162,9 +169,29 @@ export default function ReadPage() {
 
   // Pool empty → ask the server to write a new text.
   const poolEmpty = !isLoading && !!readRows && unread.length === 0;
-  // The count is bumped in the mutation's own callback and cleared by the two
-  // events that mean "this run is over" - finishing a text, and Try again - so
-  // it never needs to be written from an effect or read during render.
+
+  /**
+   * Clear the counter the moment a text is showable.
+   *
+   * Counting in the mutation callback and clearing on "finish a text" looked
+   * equivalent and is not: the callback cannot see whether the round helped,
+   * and the finish path is unreachable in exactly the case that matters. When
+   * the text just read was the last unread one, `finish` awaits the refetch
+   * before switching to the done screen, so the reader unmounts and `onFinished`
+   * never runs. Three successful texts in a row therefore latched "we wrote a
+   * few and none were the right level for you" - a false failure, after the
+   * feature had worked three times.
+   *
+   * Adjusting state during render against the previous value is React's own
+   * pattern for this, and unlike an effect it takes effect before the browser
+   * paints the message.
+   */
+  const hasText = unread.length > 0;
+  if (hasText !== sawText) {
+    setSawText(hasText);
+    if (hasText) setEmptyGenerations(0);
+  }
+
   const gaveUp = poolEmpty && !generate.isPending && emptyGenerations >= MAX_EMPTY_GENERATIONS;
 
   useEffect(() => {
@@ -175,12 +202,9 @@ export default function ReadPage() {
   }, [poolEmpty, generate.isPending, generate.isError, emptyGenerations]);
 
   useEffect(() => {
-    if (generate.isPending) {
-      const timer = setTimeout(() => setShowRetry(true), 15000);
-      return () => clearTimeout(timer);
-    } else {
-      setShowRetry(false);
-    }
+    if (!generate.isPending) return;
+    const timer = setTimeout(() => setShowRetry(true), 15000);
+    return () => clearTimeout(timer);
   }, [generate.isPending]);
 
   useEffect(() => {
@@ -252,7 +276,16 @@ export default function ReadPage() {
     );
   }
 
-  const current = unread[0];
+  // Honour the pin. `selectUnread` keeps `activeTextId` in the pool so the text
+  // being read cannot vanish mid-read, and the effect above deliberately leaves
+  // the pin alone while that text is still available - but rendering `unread[0]`
+  // regardless meant the pin and the rendered text could name different texts.
+  // Tapping words grows the known set, which can make an older, previously
+  // rejected text acceptable again; it sorts ahead, the reader swaps to it
+  // mid-read and loses the tap count, and since that text is not the pinned one
+  // it can drop straight back out. Reading through the pin makes the guard mean
+  // what it says.
+  const current = unread.find((t) => t.id === activeTextId) ?? unread[0];
   return (
     <>
       <TextReader

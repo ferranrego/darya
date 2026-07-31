@@ -70,7 +70,7 @@ export function JourneyMap({
   // literal. The literal was shaped like neither ladder - it paired L2 with A2
   // and L3 with B1, which is off by one for both languages, and it stopped at
   // L6, so Catalan's L7 and L8 rendered no node at all.
-  const journey = buildJourneyNodes(levels);
+  const journey = buildJourneyNodes(levels, grammarCourses.map((c) => c.level));
 
   const userLevelNum = parseInt(userLevelEstimate?.replace("L", "") || "1", 10);
   // Grammar courses below the assessed start level count as passed.
@@ -79,24 +79,27 @@ export function JourneyMap({
 
   journey.forEach(({ levelId, cefrHint, name, grammar, ownsGrammar }) => {
     // Reading Node: levels below the assessment are done, the assessed level
-    // is where the learner reads today, everything above is locked.
-    const readLevelNum = parseInt(levelId.replace("L", ""), 10);
-    const readState: MapNodeState =
-      readLevelNum < userLevelNum
-        ? "completed"
-        : readLevelNum === userLevelNum
-          ? "current"
-          : "locked";
+    // is where the learner reads today, everything above is locked. A trailing
+    // grammar course above the top reading level has no node of its own.
+    if (levelId !== null) {
+      const readLevelNum = parseInt(levelId.replace("L", ""), 10);
+      const readState: MapNodeState =
+        readLevelNum < userLevelNum
+          ? "completed"
+          : readLevelNum === userLevelNum
+            ? "current"
+            : "locked";
 
-    nodes.push({
-      id: `read-${levelId}`,
-      type: "reading",
-      title: name,
-      subtitle: cefrHint.replace(/^pre/, "Pre") + " reading",
-      route: "/read",
-      state: readState,
-      icon: <BookOpen size={24} />,
-    });
+      nodes.push({
+        id: `read-${levelId}`,
+        type: "reading",
+        title: name,
+        subtitle: cefrHint.replace(/^pre/, "Pre") + " reading",
+        route: "/read",
+        state: readState,
+        icon: <BookOpen size={24} />,
+      });
+    }
 
     // Grammar Node: passed by assessment, finished lesson by lesson, or the
     // first open course (current); later courses stay locked. Two reading

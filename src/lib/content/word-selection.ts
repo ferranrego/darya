@@ -167,7 +167,15 @@ export interface SelectKnownInput {
  * only path back the other way.
  */
 export function selectKnown({ known, level, dueIds }: SelectKnownInput): LexiconEntry[] {
-  const budget = Math.max(160, Math.min(600, Math.round(level.entryKnownWords * 0.5) || 160));
+  // Scaled to the level, but capped far below its vocabulary. Once `knownIds`
+  // took over measurement the prompt no longer has to be exhaustive - it only
+  // has to give the model enough to write with - and the list is the dominant
+  // cost in every call. At 600 words it is 4.5k characters of Catalan and 9k of
+  // Dari, sent again on every repair; three sequential calls per attempt put a
+  // single active learner within reach of the whole daily free-tier quota, and
+  // the Dari build exhausted it. Past a few hundred words the model stops
+  // reading the list carefully anyway, so the tokens bought nothing.
+  const budget = Math.max(120, Math.min(250, Math.round(level.entryKnownWords * 0.25) || 120));
   const byRank = [...known].sort((a, b) => a.freqRank - b.freqRank);
   if (!dueIds || dueIds.size === 0) return byRank.slice(0, budget);
 

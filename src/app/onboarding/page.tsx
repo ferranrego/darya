@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/navigation";
-import { useMemo, useState, useEffect } from "react";
+import { useState } from "react";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { getInitialSeed, spawnRelatedWords, scoreAssessment, type AssessmentWord } from "@/lib/assessment";
@@ -31,14 +31,13 @@ export default function OnboardingPage() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   
-  const [sampledWords, setSampledWords] = useState<AssessmentWord[]>([]);
-  const [displayedWords, setDisplayedWords] = useState<AssessmentWord[]>([]);
-
-  useEffect(() => {
-    const seed = getInitialSeed(lexicon.entries);
-    setSampledWords(seed);
-    setDisplayedWords(seed);
-  }, []);
+  // Lazy initial state, not an effect. Seeding from an effect left the first
+  // paint showing an empty word grid, and it is initialisation rather than
+  // synchronisation - there is nothing outside React to keep in step with.
+  const [sampledWords, setSampledWords] = useState<AssessmentWord[]>(() =>
+    getInitialSeed(lexicon.entries),
+  );
+  const [displayedWords, setDisplayedWords] = useState<AssessmentWord[]>(sampledWords);
 
   function reshuffle() {
     const excludeIds = new Set(sampledWords.map((w) => w.entry.id));

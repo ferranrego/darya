@@ -48,3 +48,19 @@ export const MAX_OOV_TYPE_RATE = 0.12;
  * least this many unknown lexemes as well as at most `MAX_OOV_TYPE_RATE`.
  */
 export const MIN_NEW_LEXEMES = 1;
+
+/**
+ * The type rate texts cached before `newWords` existed are judged by.
+ *
+ * Those texts have no record of which words they meant to teach, so every
+ * unknown lexeme counts as difficulty - which is exactly what the old single
+ * `MAX_OOV_RATE = 0.25` measured, and the rule they were accepted under.
+ * Judging them by the new, tighter type rate instead would silently drop every
+ * cached text between 12% and 25% from every learner's pool, while the
+ * generate route still counted them as unread: the stuck reader, arriving by a
+ * different door.
+ *
+ * It is deliberately the old number and not a tuned one. It should fall out of
+ * use as those texts are read.
+ */
+export const LEGACY_MAX_OOV_TYPE_RATE = 0.25;

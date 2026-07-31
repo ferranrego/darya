@@ -46,7 +46,8 @@ export function cefrOf(level: Level): GrammarLevel {
 }
 
 export interface JourneyNode {
-  levelId: string;
+  /** null for a grammar course that sits above every reading level. */
+  levelId: string | null;
   /** Shown on the node, e.g. "A2+". The reading level's own label. */
   cefrHint: string;
   name: string;
@@ -66,10 +67,20 @@ export interface JourneyNode {
  *
  * Pure and language-agnostic so both ladders can be asserted in a test; the
  * component only renders what this returns.
+ *
+ * `shippedCourses` is not optional in practice. Deriving the path from levels
+ * alone drops any grammar course no level claims, and Dari ships a 15-lesson C2
+ * course while its levels stop at C1 - so the journey map ended at C1 while
+ * /grammar still offered C2, two screens in one build disagreeing about whether
+ * a course exists. Courses above the last level are returned as trailing nodes
+ * with no reading level attached.
  */
-export function buildJourneyNodes(levels: readonly Level[]): JourneyNode[] {
+export function buildJourneyNodes(
+  levels: readonly Level[],
+  shippedCourses: readonly GrammarLevel[] = [],
+): JourneyNode[] {
   const seen = new Set<GrammarLevel>();
-  return levels.map((level) => {
+  const nodes: JourneyNode[] = levels.map((level) => {
     const grammar = cefrOf(level);
     const ownsGrammar = !seen.has(grammar);
     seen.add(grammar);
@@ -82,4 +93,21 @@ export function buildJourneyNodes(levels: readonly Level[]): JourneyNode[] {
       entryKnownWords: level.entryKnownWords,
     };
   });
+
+  const top = levels.at(-1);
+  for (const course of [...shippedCourses].sort(
+    (a, b) => GRAMMAR_LEVEL_ORDER.indexOf(a) - GRAMMAR_LEVEL_ORDER.indexOf(b),
+  )) {
+    if (seen.has(course)) continue;
+    seen.add(course);
+    nodes.push({
+      levelId: null,
+      cefrHint: course,
+      name: `${course} Grammar`,
+      grammar: course,
+      ownsGrammar: true,
+      entryKnownWords: top?.entryKnownWords ?? 0,
+    });
+  }
+  return nodes;
 }

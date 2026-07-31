@@ -286,7 +286,6 @@ if (!profile.capabilities.scriptCourse) {
       case "spotError": {
         checkNormalized(where, ex.target);
         checkNormalized(`${where} correction`, ex.correction.target);
-        const tokens = tokenize(ex.target).map((t) => normalize(t));
         /**
          * The player renders one tappable chip per whitespace-separated word
          * (`exercise-player.tsx`), so solvability is decided by that split, not

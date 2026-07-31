@@ -12,6 +12,16 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // One-off content-repair scripts, run once and kept only as a record of
+    // what was done to the data. They are not application code and they were
+    // holding `pnpm lint` red, which made the whole gate useless - a lint run
+    // nobody can get to zero is a lint run nobody reads.
+    "**/*.cjs",
+    "temp/**",
+    "test-db.js",
+    "scripts/migrate-grammar-to-yaml.js",
+    "scripts/migrate-grammar-to-yaml.ts",
+    "scripts/fix-b1-yaml.ts",
   ]),
   {
     rules: {

@@ -13,7 +13,6 @@
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { matchKey } from "../src/lib/lang/ca/normalize.ts";
 import { verifyEntry, type CandidateEntry } from "./verify-ca-entries.ts";
 
 const fix = process.argv.includes("--fix");

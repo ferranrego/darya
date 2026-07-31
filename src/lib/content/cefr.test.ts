@@ -65,6 +65,18 @@ describe.each(LANGS)("%s journey", (lang) => {
     expect(owned).toEqual([...new Set(owned)]);
   });
 
+  it("gives every shipped grammar course a place on the path", () => {
+    // The converse of the test above, and the one that was missing. Deriving
+    // the path from levels alone silently dropped Dari's 15-lesson C2 course,
+    // because no Dari reading level is labelled C2 - so the journey map ended
+    // at C1 while /grammar still listed C2.
+    const withCourses = buildJourneyNodes(levels, courses.map((c) => c.level));
+    const owned = new Set(withCourses.filter((n) => n.ownsGrammar).map((n) => n.grammar));
+    for (const course of courses) {
+      expect(owned.has(course.level), `${course.level} ships but no node owns it`).toBe(true);
+    }
+  });
+
   it("advances through the CEFR courses without going backwards", () => {
     const idx = nodes.map((n) => GRAMMAR_LEVEL_ORDER.indexOf(n.grammar));
     for (let i = 1; i < idx.length; i++) {
