@@ -41,6 +41,11 @@
     "**/*.mts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    // Throwaway probes people leave at the repo root while debugging. They are
+    // untracked and often import dev-only packages, so type-checking them
+    // fails the build for everyone else.
+    "test-*.ts",
+    "temp/**"
   ]
 }

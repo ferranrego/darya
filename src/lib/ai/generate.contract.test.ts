@@ -87,7 +87,7 @@ describe("generation contract", () => {
     const targets = pickWords(4, 80);
 
     canned.sentences = [
-      { target: [...known.slice(0, 4), targets[0], targets[1]].map((e) => e.target).join(" "), en: "a" },
+      { target: [...known.slice(0, 4), targets[0], targets[1], targets[2], targets[3]].map((e) => e.target).join(" "), en: "a" },
       { target: known.slice(4, 8).map((e) => e.target).join(" "), en: "b" },
     ];
 
@@ -99,9 +99,8 @@ describe("generation contract", () => {
       newWordRatio: 0.05,
     });
 
-    // Two of four is exactly the minimum, so this is accepted and records the
-    // two it used - not the four it was asked for.
-    expect(doc.newWords).toEqual([targets[0].id, targets[1].id].sort());
+    // All four must be used because MIN_TARGET_USE is now 1.0.
+    expect(doc.newWords).toEqual([targets[0].id, targets[1].id, targets[2].id, targets[3].id].sort());
   });
 
   it("refuses a text that teaches nothing", async () => {

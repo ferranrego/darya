@@ -25,7 +25,7 @@ content/            ← open, versioned content (source of truth, see CONTENT-SC
   levels/           ← levels.json
   texts/seed/       ← hand-authored seed texts (TextDocument format)
   schema/           ← exported JSON Schemas (generated, committed)
-docs/               ← this documentation
+docs/               ← this documentation (PEDAGOGY.md = what may be taught)
 scripts/            ← seed, validate-content, export-schemas, lexicon build
 supabase/           ← config + SQL migrations
 src/
@@ -39,6 +39,9 @@ src/
     text/           ← tokenizer, ZWNJ normalization, level estimation
 public/             ← manifest, sw.js, icons, self-hosted fonts
 ```
+
+See `docs/PEDAGOGY.md` for the rules that decide what a learner is taught, and
+`CLAUDE.md` for the ones that have caused incidents.
 
 ## Key invariants
 

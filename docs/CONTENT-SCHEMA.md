@@ -6,6 +6,9 @@ definitions live in [`src/lib/content/schema.ts`](../src/lib/content/schema.ts) 
 machine-readable JSON Schemas are exported to `content/schema/*.schema.json` by
 `pnpm export:schemas`.
 
+> Schema says what a field *is*. `docs/PEDAGOGY.md` says what a value may be:
+> coverage thresholds, level vocabulary targets, and the language-specific traps.
+
 Content is namespaced per target language (`content/prs/…`); `content/schema/` is not,
 because the schemas are exactly what makes languages interchangeable. Code reaches
 content through the `@content` alias, which resolves to the active language's directory
