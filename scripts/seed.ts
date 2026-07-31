@@ -43,8 +43,23 @@ const lexemeRows = lexicon.entries.map((e) => ({
 }));
 
 {
-  const { error } = await db.from("lexemes").upsert(lexemeRows);
-  if (error) throw new Error(`lexemes upsert: ${error.message}`);
+  // Chunked, so a rejected row costs one batch rather than the whole seed.
+  // As one statement, a single constraint violation anywhere in six thousand
+  // rows aborted everything and left the table holding the previous
+  // vocabulary - which reads as "the seed did nothing" rather than as an
+  // error about one row, and is how a stale lexicon can outlive a content
+  // rebuild.
+  const CHUNK = 500;
+  for (let i = 0; i < lexemeRows.length; i += CHUNK) {
+    const batch = lexemeRows.slice(i, i + CHUNK);
+    const { error } = await db.from("lexemes").upsert(batch);
+    if (error) {
+      throw new Error(
+        `lexemes upsert failed on rows ${i}-${i + batch.length - 1} ` +
+          `(${batch[0]?.id}…${batch.at(-1)?.id}): ${error.message}`,
+      );
+    }
+  }
   console.log(`seeded ${lexemeRows.length} lexemes`);
 }
 
