@@ -8,7 +8,7 @@ import { tokenize } from "../text";
 import { completeJson } from "./providers";
 import { profile } from "../lang/index.ts";
 import { TRANSLITERATED, translitField, wordList } from "./lang-format.ts";
-import { MAX_OOV_TOKEN_RATE } from "../content/difficulty.ts";
+import { MAX_OOV_TOKEN_RATE, MAX_OOV_TYPE_RATE } from "../content/difficulty.ts";
 
 /**
  * AI text generation: one entry point over the shared free-tier provider
@@ -69,7 +69,7 @@ function buildPrompt(req: GenerationRequest): string {
   const [minS, maxS] = req.level.sentenceRange;
   const themeInstructions = req.theme ? `\n- Set the text in this scenario/theme where it fits naturally: ${req.theme}` : "";
   const beginnerInstructions = req.level.id === "L1" || req.level.id === "L2"
-    ? `\n- Keep it highly practical for a beginner. Focus on everyday conversational phrases (e.g. 'How are you?', ordering food), W-questions, numbers, days of the week, and basic adjectives.`
+    ? `\n- Keep it highly practical for a beginner. Focus on everyday conversational phrases (e.g. 'How are you?', ordering food), W-questions, numbers, days of the week, and basic adjectives.\n- MAXIMUM 11 words per sentence.`
     : "";
 
   return `You are ${profile.prompts.teacher} writing a graded reader text.
@@ -164,7 +164,7 @@ export async function repairText(
   doc: TextDocument,
   req: GenerationRequest,
   strict = true
-): Promise<TextDocument> {
+): Promise<{ doc: TextDocument; oovRate: number }> {
   const allowed = new Set<string>([...req.knownIds, ...req.targetWords.map((w) => w.id)]);
 
   const badSentenceIndices: number[] = [];
@@ -173,11 +173,14 @@ export async function repairText(
     if (hasOov) badSentenceIndices.push(idx);
   });
   
-  if (badSentenceIndices.length === 0) return doc;
+  if (badSentenceIndices.length === 0) return { doc, oovRate: 0 };
   
-  const known = wordList(req.knownWords);
+  // A trimmed known list. The repair prompt names the exact words to replace,
+  // so the model does not need the full vocabulary to find a substitute - and
+  // repeating the whole list doubled the cost of every text that needed fixing.
+  const known = wordList(req.knownWords.slice(0, 120));
   const target = wordList(req.targetWords, true);
-  
+
   // Name the offending words. `assemble` already knows exactly which tokens
   // failed and used to discard that, leaving the model to guess which word in
   // the sentence was the problem - so it often rewrote the wrong one.
@@ -241,7 +244,10 @@ where "index" is the number provided above for the sentence.`;
   if (strict && oovRate > MAX_OOV_TOKEN_RATE) {
     throw new Error(`Repair failed: OOV rate still ${(oovRate * 100).toFixed(0)}%`);
   }
-  return finalDoc;
+  // The measured rate, not an assumption. A lenient repair returns whatever the
+  // model produced, and reporting that as 0 let a text the reader will always
+  // reject be written to the shared cache, where it counts as unread forever.
+  return { doc: finalDoc, oovRate };
 }
 
 /**
@@ -346,8 +352,7 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
       if (result.oovRate > MAX_OOV_TOKEN_RATE) {
         const strict = attempt < 2; // Strict on attempts 0 and 1, lenient on attempt 2
         try {
-          const repaired = await repairText(result.doc, req, strict);
-          result = { doc: repaired, oovRate: 0 };
+          result = await repairText(result.doc, req, strict);
         } catch (repairError) {
           // If repair fails, we throw to trigger the outer generation retry
           throw new Error(
@@ -371,6 +376,24 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
       if (result.doc.newWords.length < needed) {
         throw new Error(
           `Text teaches ${result.doc.newWords.length} of ${req.targetWords.length} requested words, needs ${needed}`,
+        );
+      }
+
+      // Last gate: would the reader show this? The caller writes what comes
+      // back to a cache shared by every learner at this level, and a text the
+      // pool rejects can never be deleted from there - it just keeps counting
+      // as unread while never appearing, which is the stuck reader again. The
+      // lenient third attempt is what makes this reachable: it returns whatever
+      // the model produced, so its measured rate has to be checked here.
+      const untaught = result.doc.vocabUsed.filter(
+        (id) => !req.knownIds.has(id) && !result.doc.newWords.includes(id),
+      );
+      const typeRate = result.doc.vocabUsed.length
+        ? untaught.length / result.doc.vocabUsed.length
+        : 0;
+      if (typeRate > MAX_OOV_TYPE_RATE) {
+        throw new Error(
+          `Text has ${(typeRate * 100).toFixed(0)}% untaught vocabulary; the reader would reject it`,
         );
       }
 
