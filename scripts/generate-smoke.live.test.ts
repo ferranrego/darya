@@ -15,9 +15,11 @@ describe("core loop: generate a text in the active language", () => {
   it("produces a level-appropriate text with no foreign script", { timeout: 120_000 }, async () => {
     const level = levels[0];
     const band1 = lexicon.entries.filter((e) => e.freqBand === 1);
+    const knownWords = band1.slice(0, 60);
     const doc = await generateText({
       level,
-      knownWords: band1.slice(0, 60),
+      knownWords,
+      knownIds: new Set(knownWords.map((e) => e.id)),
       targetWords: band1.slice(60, 63),
       newWordRatio: 0.05,
     });

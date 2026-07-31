@@ -14,7 +14,7 @@ import { z } from "zod";
  * note in docs/CONTENT-SCHEMA.md.
  */
 
-export const CONTENT_FORMAT_VERSION = "1.4.0";
+export const CONTENT_FORMAT_VERSION = "1.5.0";
 
 // ---------------------------------------------------------------------------
 // Shared
@@ -524,6 +524,16 @@ export const textDocumentSchema = z.object({
   sentences: z.array(sentenceSchema).min(1),
   /** Distinct lexeme IDs used (for cache keying and stats). */
   vocabUsed: z.array(z.string()),
+  /**
+   * The lexemes this text was written to teach, and that it actually contains.
+   *
+   * Without this the reader cannot tell an unknown word the text is teaching
+   * from an unknown word that leaked in, so it counted both as difficulty and
+   * rejected texts that were doing their job. Defaulted rather than required
+   * because texts generated before this field existed are cached in Postgres
+   * and are still perfectly readable.
+   */
+  newWords: z.array(z.string()).default([]),
   /** Share of tokens whose lexeme the target learner did not know at creation. */
   newWordRatio: z.number().min(0).max(1),
   source: z.enum(["seed", "generated"]),

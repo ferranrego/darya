@@ -19,6 +19,8 @@ import { describe, expect, it } from "vitest";
 
 import { generateText } from "../src/lib/ai/generate.ts";
 import { levels, lexicon } from "../src/lib/content/load.ts";
+import { selectKnown, selectTargets, targetCountFor } from "../src/lib/content/word-selection.ts";
+import { MAX_OOV_TOKEN_RATE } from "../src/lib/content/difficulty.ts";
 import { profile } from "../src/lib/lang/index.ts";
 import { buildIndex, tokenize } from "../src/lib/text/index.ts";
 
@@ -26,11 +28,14 @@ const index = buildIndex(lexicon.entries);
 
 interface Row {
   level: string;
+  cefrHint: string;
   ok: boolean;
   tokenCoverage: number;
   untaughtTypes: number;
   newWordsUsed: number;
   newWordsAsked: number;
+  /** Parts of speech of the requested new words, one entry per word. */
+  posList: string[];
   posMix: string;
   title: string;
   note?: string;
@@ -44,28 +49,28 @@ async function audit() {
   for (const level of levels) {
     if (wanted && level.id !== wanted) continue;
 
-    // Mirror what the route does: everything at or below the level's entry rank
-    // counts as known, and new words come from the level's own bands.
+    // Call the same selection the route calls. This used to re-implement it,
+    // which is how the audit could report healthy texts while the route was
+    // building its prompt from a different vocabulary entirely.
     const known = lexicon.entries.filter((e) => e.freqRank <= level.entryKnownWords);
     const inBand = lexicon.entries.filter((e) => level.freqBands.includes(e.freqBand));
-    const candidates = inBand
-      .filter((e) => e.freqRank > level.entryKnownWords)
-      .sort((a, b) => a.freqRank - b.freqRank);
-
-    const expectedTokens =
-      ((level.sentenceRange[0] + level.sentenceRange[1]) / 2) * level.avgSentenceWords;
-    const targetCount = Math.max(2, Math.min(15, Math.round(expectedTokens * 0.05)));
+    const candidates = inBand.filter((e) => e.freqRank > level.entryKnownWords);
+    const targetCount = targetCountFor(level, 0.05);
 
     for (let n = 0; n < perLevel; n++) {
-      const targetWords = candidates.slice(n * targetCount, (n + 1) * targetCount);
-      const knownWords = known.length >= 40 ? known : inBand.slice(0, 60);
-      const allowed = new Set([...knownWords, ...targetWords].map((w) => w.id));
+      const effectiveKnown = known.length >= 40 ? known : inBand.slice(0, 60);
+      // Seeded per run so consecutive texts at one level differ but the audit
+      // stays reproducible.
+      const targetWords = selectTargets({ candidates, count: targetCount, seed: n + 1 });
+      const knownIds = new Set([...known.map((e) => e.id), ...effectiveKnown.map((e) => e.id)]);
+      const allowed = new Set<string>([...knownIds, ...targetWords.map((w) => w.id)]);
       const targetIds = new Set(targetWords.map((w) => w.id));
 
       try {
         const doc = await generateText({
           level,
-          knownWords: knownWords.slice(0, 160),
+          knownWords: selectKnown({ known: effectiveKnown, level }),
+          knownIds,
           targetWords,
           newWordRatio: 0.05,
         });
@@ -89,26 +94,30 @@ async function audit() {
 
         rows.push({
           level: level.id,
+          cefrHint: level.cefrHint,
           ok: true,
           tokenCoverage: total ? covered / total : 0,
           untaughtTypes: untaught.size,
           newWordsUsed: usedNew.size,
           newWordsAsked: targetWords.length,
+          posList: targetWords.map((w) => w.pos),
           posMix: Object.entries(posCount)
             .map(([p, c]) => `${p.slice(0, 4)}:${c}`)
             .join(" "),
           title: doc.titleTarget,
         });
-        console.log(`\n── ${level.id} · ${doc.titleTarget} — ${doc.titleEn}`);
+        console.log(`\n── ${level.id} · ${doc.titleTarget} - ${doc.titleEn}`);
         for (const s of doc.sentences) console.log(`   ${s.target}\n     ${s.en}`);
       } catch (e) {
         rows.push({
           level: level.id,
+          cefrHint: level.cefrHint,
           ok: false,
           tokenCoverage: 0,
           untaughtTypes: 0,
           newWordsUsed: 0,
           newWordsAsked: targetWords.length,
+          posList: [],
           posMix: "",
           title: "",
           note: e instanceof Error ? e.message.slice(0, 120) : String(e),
@@ -140,15 +149,48 @@ async function audit() {
   return rows;
 }
 
+/**
+ * Levels up to and including B2 are held to the thresholds; C1 and C2 stay
+ * reporting-only, because the upper levels are limited by how much vocabulary
+ * the lexicon has rather than by the pipeline, and failing on that would be
+ * failing on a known content gap on every run.
+ */
+const GATED_CEFR = new Set(["pre-A1", "A1", "A2", "A2+", "B1", "B2"]);
+
 describe("generation audit (live provider)", () => {
   it(
-    "generates a text at every level and reports its measurements",
+    "generates a usable text at every level up to B2",
     { timeout: 900_000 },
     async () => {
       const rows = await audit();
-      // The report is the point; the only hard assertion is that the pipeline
-      // still produces something at all, so a total outage fails loudly.
-      expect(rows.some((r) => r.ok)).toBe(true);
+      expect(rows.length, "no levels were audited").toBeGreaterThan(0);
+
+      const gated = rows.filter((r) => GATED_CEFR.has(r.cefrHint));
+      for (const r of gated) {
+        const where = `${r.level} (${r.cefrHint})`;
+        expect(r.ok, `${where} failed to generate: ${r.note ?? ""}`).toBe(true);
+
+        // Comprehensible input needs the learner to already know almost every
+        // running word; below this they are decoding, not acquiring.
+        expect(
+          r.tokenCoverage,
+          `${where} token coverage ${(r.tokenCoverage * 100).toFixed(1)}%`,
+        ).toBeGreaterThanOrEqual(1 - MAX_OOV_TOKEN_RATE);
+
+        // The failure this audit exists to catch: a fluent, level-correct text
+        // that teaches none of the words it was written for.
+        expect(
+          r.newWordsUsed / Math.max(1, r.newWordsAsked),
+          `${where} taught ${r.newWordsUsed} of ${r.newWordsAsked} requested words`,
+        ).toBeGreaterThanOrEqual(0.5);
+
+        // Both lexicons are ~three-quarters nouns, so an unquota'd selection is
+        // all nouns and the level's verb and adjective morphology never appears.
+        expect(
+          new Set(r.posList).size,
+          `${where} new words are all ${r.posList[0] ?? "?"}`,
+        ).toBeGreaterThanOrEqual(2);
+      }
     },
   );
 });

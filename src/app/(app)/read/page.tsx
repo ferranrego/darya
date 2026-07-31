@@ -29,6 +29,7 @@ export default function ReadPage() {
   const { data: readRows, refetch: refetchRead } = useReadTexts();
   
   const [activeTextId, setActiveTextId] = useState<string | null>(null);
+  const [emptyGenerations, setEmptyGenerations] = useState(0);
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
 
@@ -107,16 +108,40 @@ export default function ReadPage() {
       return res.json();
     },
     onSuccess: () => refetch(),
+    // Counts rounds that ended with the pool still empty. The server writing a
+    // text is not the same as the reader being able to show one - they measure
+    // difficulty differently, one over running words and one over distinct
+    // lexemes - and when they disagree the server reports success, nothing
+    // errors, and the learner waits on "Writing your next text…" forever.
+    onSettled: () => setEmptyGenerations((n) => n + 1),
   });
+
+  /**
+   * How many times to accept "written, but still nothing to show" before
+   * giving up.
+   *
+   * The server and the reader measure difficulty differently on purpose - one
+   * counts running words as it writes, the other counts distinct lexemes as it
+   * chooses. When they disagree the server reports success and the pool stays
+   * empty, so `poolEmpty` never changes, no error is ever set, and the learner
+   * is left on "Writing your next text…" indefinitely with nothing to act on.
+   * Counting the attempts turns that silence into a message.
+   */
+  const MAX_EMPTY_GENERATIONS = 3;
 
   // Pool empty → ask the server to write a new text.
   const poolEmpty = !isLoading && !!readRows && unread.length === 0;
+  // The count is bumped in the mutation's own callback and cleared by the two
+  // events that mean "this run is over" - finishing a text, and Try again - so
+  // it never needs to be written from an effect or read during render.
+  const gaveUp = poolEmpty && !generate.isPending && emptyGenerations >= MAX_EMPTY_GENERATIONS;
+
   useEffect(() => {
-    if (poolEmpty && !generate.isPending && !generate.isError) {
-      generate.mutate();
-    }
+    if (!poolEmpty || generate.isPending || generate.isError) return;
+    if (emptyGenerations >= MAX_EMPTY_GENERATIONS) return;
+    generate.mutate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [poolEmpty]);
+  }, [poolEmpty, generate.isPending, generate.isError, emptyGenerations]);
 
   useEffect(() => {
     if (unread.length > 0) {
@@ -137,13 +162,23 @@ export default function ReadPage() {
         <div className="flex size-14 items-center justify-center rounded-full bg-lapis-soft text-lapis">
           <BookOpen size={24} />
         </div>
-        {generate.isError ? (
+        {generate.isError || gaveUp ? (
           <>
             <h1 className="mt-6 text-[20px] font-semibold">Couldn&apos;t write a new text</h1>
             <p className="mx-auto mt-2 max-w-xs text-[14px] text-ink-soft">
-              {generate.error instanceof Error ? generate.error.message : "The AI writer is unavailable."}
+              {generate.isError
+                ? generate.error instanceof Error
+                  ? generate.error.message
+                  : "The AI writer is unavailable."
+                : "We wrote a few and none were the right level for you. Marking a few more words as known usually fixes it."}
             </p>
-            <Button className="mt-8" onClick={() => generate.mutate()}>
+            <Button
+              className="mt-8"
+              onClick={() => {
+                setEmptyGenerations(0);
+                generate.mutate();
+              }}
+            >
               Try again
             </Button>
           </>
@@ -167,8 +202,11 @@ export default function ReadPage() {
         doc={current.doc}
         onFinished={() => {
           void refetchRead();
+          // A finished text means the pipeline is working, so the previous run
+          // of empty results is history and the next one starts fresh.
+          setEmptyGenerations(0);
           // Keep the pool warm for next time (fire-and-forget).
-          void fetch("/api/generate", { 
+          void fetch("/api/generate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ force: true })

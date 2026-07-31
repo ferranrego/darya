@@ -57,6 +57,10 @@ for (const source of seedTexts) {
     titleEn: source.titleEn,
     sentences,
     vocabUsed: [...vocab].sort(),
+    // A seed text is hand-written for a level rather than generated against one
+    // learner's vocabulary, so there is no "the words this teaches" to record.
+    // The pool short-circuits seed texts anyway (see text-pool.selectUnread).
+    newWords: [],
     newWordRatio: 0,
     source: "seed",
     createdAt: "2026-07-20T00:00:00.000Z",

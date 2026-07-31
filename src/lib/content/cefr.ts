@@ -8,7 +8,7 @@ import type { GrammarLevel, Level } from "./schema.ts";
  *
  *   - `grammarStartLevel` mapped L3→A2, L4→B1, L5→B2, L6→C1. That is the *Dari*
  *     level ladder. Catalan has an extra A2+ step, so its L5 is B1 and its L6 is
- *     B2 — a Catalan learner assessed at B2 was started on the C1 course and
+ *     B2 - a Catalan learner assessed at B2 was started on the C1 course and
  *     skipped the entire B2 grammar course.
  *   - `journey-map.tsx` mapped L1→A1, L2→A2, L3→B1 … off by one for *both*
  *     languages from L2 up, and it enumerated only L1..L6, so Catalan's L7 and
@@ -28,7 +28,7 @@ export const GRAMMAR_LEVEL_ORDER: GrammarLevel[] = ["A1", "A2", "B1", "B2", "C1"
  * `cefrHint` is a description of the *reading* level and is finer-grained than
  * the grammar courses: Catalan distinguishes a pre-A1 warm-up and an A2+ step
  * that consolidates A2 rather than introducing B1 grammar. Both collapse onto
- * the nearest course that exists, so two levels can legitimately share one —
+ * the nearest course that exists, so two levels can legitimately share one -
  * callers that build a course list must de-duplicate.
  */
 export function cefrOf(level: Level): GrammarLevel {

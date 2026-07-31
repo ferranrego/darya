@@ -35,7 +35,8 @@ export function placementCredit(
 export interface PoolText {
   id: string;
   source: string;
-  doc: { vocabUsed: string[] };
+  /** `newWords` is absent on texts cached before the field existed. */
+  doc: { vocabUsed: string[]; newWords?: string[] };
 }
 
 export interface PoolInput {
@@ -86,12 +87,25 @@ export function selectUnread(input: PoolInput): PoolText[] {
       if (t.id === input.activeTextId) return true;
 
       const vocab = t.doc.vocabUsed;
-      const oov = vocab.reduce((n, w) => n + (known.has(w) ? 0 : 1), 0);
-      const rate = vocab.length > 0 ? oov / vocab.length : 0;
-      // This counts distinct lexemes, not running words, so it is measured
-      // against the type threshold - see content/difficulty.ts.
-      // At least one new word, or there is nothing to learn from it.
-      return rate <= MAX_OOV_TYPE_RATE && oov >= MIN_NEW_LEXEMES;
+      const unknown = vocab.filter((w) => !known.has(w));
+
+      // A word the text was written to teach is not what makes it hard - it is
+      // the point of the text. Both counts below are over distinct lexemes, not
+      // running words, so they use the type threshold - see content/difficulty.ts.
+      //
+      // `newWords` is absent on texts cached before the field existed. Those
+      // keep the original measure, where an unknown word counts as difficulty
+      // *and* as something learned. It is cruder - it cannot tell a word the
+      // text meant to teach from one that leaked in - but it is the rule those
+      // texts were accepted under, and re-judging them by a rule they were
+      // never written to satisfy would empty the pool for existing learners.
+      const declared = t.doc.newWords;
+      const taught = declared ? unknown.filter((w) => declared.includes(w)) : unknown;
+      const untaught = declared ? unknown.filter((w) => !declared.includes(w)) : unknown;
+
+      const rate = vocab.length > 0 ? untaught.length / vocab.length : 0;
+      // It must teach something, or there is nothing to read it for.
+      return rate <= MAX_OOV_TYPE_RATE && taught.length >= MIN_NEW_LEXEMES;
     })
     .sort((a, b) => (a.source === b.source ? 0 : a.source === "seed" ? -1 : 1));
 }

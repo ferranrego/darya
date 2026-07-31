@@ -38,8 +38,25 @@ type RawText = z.infer<typeof outputSchema>;
 
 export interface GenerationRequest {
   level: Level;
-  /** Words the learner knows (target + translit shown to the model). */
+  /**
+   * The known words *shown to the model* - a prompt slice, capped by budget.
+   *
+   * Not the same thing as what the learner knows, which is why `knownIds`
+   * exists separately.
+   */
   knownWords: LexiconEntry[];
+  /**
+   * Every lexeme the learner knows, used only to *measure* the result.
+   *
+   * These were once the same set, and conflating them made the coverage gate
+   * meaningless. The prompt slice is a few hundred words; a B2 learner knows
+   * several thousand. Measuring the text against the slice counted every
+   * legitimate word the learner knew but that did not fit the prompt as
+   * out-of-vocabulary, so the 5% gate was being applied to a vocabulary five
+   * times smaller than the learner's - failing good texts, and triggering
+   * repairs that made them worse.
+   */
+  knownIds: ReadonlySet<string>;
   /** New words the text should introduce. */
   targetWords: LexiconEntry[];
   newWordRatio: number;
@@ -84,8 +101,12 @@ ${
 const index = buildIndex(lexicon.entries);
 
 function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: TextDocument; oovRate: number } {
-  const allowed = new Set([...req.knownWords, ...req.targetWords].map((w) => w.id));
+  const targetIds = new Set(req.targetWords.map((w) => w.id));
+  // Measured against everything the learner knows, plus what this text is
+  // teaching - NOT against the prompt slice. See `knownIds` on GenerationRequest.
+  const allowed = new Set<string>([...req.knownIds, ...targetIds]);
   const vocab = new Set<string>();
+  const taught = new Set<string>();
   let oov = 0;
   let total = 0;
 
@@ -93,9 +114,12 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
     const tokens = tokenize(s.target).map((surface) => {
       total++;
       const entry = index.resolve(surface);
-      if (entry) vocab.add(entry.id);
+      if (entry) {
+        vocab.add(entry.id);
+        if (targetIds.has(entry.id)) taught.add(entry.id);
+      }
       if (!entry || !allowed.has(entry.id)) oov++;
-      
+
       return { surface, lexemeId: entry?.id ?? null };
     });
     return { target: s.target, translit: TRANSLITERATED ? s.translit : undefined, en: s.en, tokens };
@@ -117,6 +141,9 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       titleEn: raw.titleEn,
       sentences,
       vocabUsed: [...vocab].sort(),
+      // Only the targets the text actually contains. Asking for eight and
+      // delivering none was invisible before this was recorded.
+      newWords: [...taught].sort(),
       newWordRatio: req.newWordRatio,
       source: "generated",
       model,
@@ -135,8 +162,8 @@ export async function repairText(
   req: GenerationRequest,
   strict = true
 ): Promise<TextDocument> {
-  const allowed = new Set([...req.knownWords, ...req.targetWords].map((w) => w.id));
-  
+  const allowed = new Set<string>([...req.knownIds, ...req.targetWords.map((w) => w.id)]);
+
   const badSentenceIndices: number[] = [];
   doc.sentences.forEach((s, idx) => {
     const hasOov = s.tokens.some((t) => !t.lexemeId || !allowed.has(t.lexemeId));
@@ -148,10 +175,23 @@ export async function repairText(
   const known = wordList(req.knownWords);
   const target = wordList(req.targetWords, true);
   
-  const badSentencesText = badSentenceIndices.map(i => `${i}: ${doc.sentences[i].target}`).join('\n');
-  
+  // Name the offending words. `assemble` already knows exactly which tokens
+  // failed and used to discard that, leaving the model to guess which word in
+  // the sentence was the problem - so it often rewrote the wrong one.
+  const badSentencesText = badSentenceIndices
+    .map((i) => {
+      const offenders = doc.sentences[i].tokens
+        .filter((t) => !t.lexemeId || !allowed.has(t.lexemeId))
+        .map((t) => t.surface);
+      const note = offenders.length ? `   [replace: ${offenders.join(", ")}]` : "";
+      return `${i}: ${doc.sentences[i].target}${note}`;
+    })
+    .join("\n");
+
   const repairPrompt = `You are ${profile.prompts.teacher}. The following sentences have vocabulary that is too difficult for the student.
-Rewrite ONLY these specific sentences using ONLY allowed words. Keep the meaning as close to the original as possible.
+Rewrite ONLY these specific sentences, replacing the marked words with allowed ones. Keep the meaning as close to the original as possible, and keep each sentence a logical continuation of the one before it.
+
+Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 
 ALLOWED WORDS:
 ${known}
@@ -201,37 +241,142 @@ where "index" is the number provided above for the sentence.`;
   return finalDoc;
 }
 
+/**
+ * How many of the requested new words a text must actually contain.
+ *
+ * A graded reader that introduces nothing is not a mild disappointment, it is a
+ * text the pool will reject (`MIN_NEW_LEXEMES`), which empties the pool, which
+ * makes the reader ask for another one. Measured before this contract existed,
+ * Dari used 0 of 5 requested words at B2 and 0 of 7 at C1 - so every text at
+ * those levels was unusable, and the reader regenerated forever.
+ *
+ * Half rather than all: the model sometimes cannot place a word naturally, and
+ * demanding all of them buys a contorted sentence.
+ */
+const MIN_TARGET_USE = 0.5;
+
+function requiredTargets(req: GenerationRequest): number {
+  if (req.targetWords.length === 0) return 0;
+  return Math.max(1, Math.ceil(req.targetWords.length * MIN_TARGET_USE));
+}
+
+/**
+ * Ask again for the words the text left out.
+ *
+ * Distinct from `repairText`, which fixes vocabulary that was too *hard*. This
+ * fixes vocabulary that is *missing*, and the two need opposite instructions -
+ * pointing the OOV repair at this problem asked the model to simplify a text
+ * whose fault was that it was already too simple.
+ */
+async function addMissingTargets(
+  doc: TextDocument,
+  req: GenerationRequest,
+  model: string,
+): Promise<{ doc: TextDocument; oovRate: number }> {
+  const used = new Set(doc.newWords);
+  const missing = req.targetWords.filter((w) => !used.has(w.id));
+
+  const prompt = `You are ${profile.prompts.teacher}. This graded reader text is correct, but it fails to teach the words it was written for.
+
+TEXT:
+${doc.sentences.map((s, i) => `${i}: ${s.target}`).join("\n")}
+
+These words MUST appear in the text and currently do not: ${wordList(missing, true)}
+
+Rewrite the sentences that need to change so every missing word appears naturally, keeping the story, its length, and the rest of the vocabulary the same. Any inflection of a required word counts. Do not introduce any other unfamiliar word.
+
+Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
+
+Return JSON strictly in this format:
+${
+  TRANSLITERATED
+    ? '{"repairs": [{"index": 0, "target": "...", "translit": "...", "en": "..."}]}'
+    : '{"repairs": [{"index": 0, "target": "...", "en": "..."}]}'
+}
+where "index" is the number of the sentence above that you rewrote.`;
+
+  const repairSchema = z.object({
+    repairs: z.array(
+      z.object({
+        index: z.number(),
+        target: z.string(),
+        translit: z.string().optional(),
+        en: z.string(),
+      }),
+    ),
+  });
+
+  const repairs = await completeJson(prompt, {
+    temperature: 0.4,
+    validate: (raw) => repairSchema.parse(JSON.parse(raw)).repairs,
+  });
+
+  const raw: RawText = {
+    titleTarget: doc.titleTarget,
+    titleTranslit: doc.titleTranslit,
+    titleEn: doc.titleEn,
+    sentences: doc.sentences.map((s, i) => {
+      const repair = repairs.find((r) => r.index === i);
+      return repair
+        ? { target: repair.target, translit: repair.translit, en: repair.en }
+        : { target: s.target, translit: s.translit, en: s.en };
+    }),
+  };
+  return assemble(raw, req, model);
+}
+
 export async function generateText(req: GenerationRequest): Promise<TextDocument> {
   let lastError: unknown;
-  
+  const needed = requiredTargets(req);
+
   // Try up to 3 times to get a good text (including repairs)
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const result = await completeJson(buildPrompt(req), {
+      let result = await completeJson(buildPrompt(req), {
         temperature: 0.8,
         validate: (raw, model) => {
           const parsed = outputSchema.parse(JSON.parse(raw));
           return assemble(parsed, req, model);
         },
       });
-      
-      if (result.oovRate <= MAX_OOV_TOKEN_RATE) {
-        return result.doc;
-      }
-      
-      // Attempt repair
-      try {
+
+      if (result.oovRate > MAX_OOV_TOKEN_RATE) {
         const strict = attempt < 2; // Strict on attempts 0 and 1, lenient on attempt 2
-        return await repairText(result.doc, req, strict);
-      } catch (repairError) {
-        // If repair fails, we throw to trigger the outer generation retry
-        throw new Error(`Repair failed: ${repairError instanceof Error ? repairError.message : String(repairError)}`);
+        try {
+          const repaired = await repairText(result.doc, req, strict);
+          result = { doc: repaired, oovRate: 0 };
+        } catch (repairError) {
+          // If repair fails, we throw to trigger the outer generation retry
+          throw new Error(
+            `Repair failed: ${repairError instanceof Error ? repairError.message : String(repairError)}`,
+          );
+        }
       }
+
+      // The text is readable. Now check it actually teaches something.
+      if (result.doc.newWords.length < needed) {
+        const retried = await addMissingTargets(result.doc, req, result.doc.model ?? "unknown-repair");
+        // Only keep the rewrite if it helped and did not make the text harder.
+        if (
+          retried.doc.newWords.length > result.doc.newWords.length &&
+          retried.oovRate <= MAX_OOV_TOKEN_RATE
+        ) {
+          result = retried;
+        }
+      }
+
+      if (result.doc.newWords.length < needed) {
+        throw new Error(
+          `Text teaches ${result.doc.newWords.length} of ${req.targetWords.length} requested words, needs ${needed}`,
+        );
+      }
+
+      return result.doc;
     } catch (e) {
       lastError = e;
       console.warn(`Generation attempt ${attempt + 1} failed:`, e);
     }
   }
-  
+
   throw lastError;
 }
