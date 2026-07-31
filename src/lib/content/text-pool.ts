@@ -52,6 +52,12 @@ export interface PoolInput {
   priorIds: readonly string[];
   /** The text open right now, which must not vanish mid-read. */
   activeTextId?: string | null;
+  /**
+   * For brand-new learners, the server assumes knowledge of the most frequent
+   * words in their level band to bootstrap generation. The client must mirror
+   * these to avoid rejecting the text as completely unknown.
+   */
+  fallbackIds?: readonly string[];
 }
 
 /**
@@ -72,12 +78,13 @@ export interface PoolInput {
 export function assumedKnown(
   trackedIds: readonly string[],
   priorIds: readonly string[],
+  fallbackIds?: readonly string[],
 ): Set<string> {
-  return new Set([...trackedIds, ...priorIds]);
+  return new Set([...trackedIds, ...priorIds, ...(fallbackIds ?? [])]);
 }
 
 export function selectUnread(input: PoolInput): PoolText[] {
-  const known = assumedKnown(input.trackedIds, input.priorIds);
+  const known = assumedKnown(input.trackedIds, input.priorIds, input.fallbackIds);
 
   return input.texts
     .filter((t) => !input.readIds.has(t.id))

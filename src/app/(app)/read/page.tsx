@@ -30,6 +30,7 @@ export default function ReadPage() {
   
   const [activeTextId, setActiveTextId] = useState<string | null>(null);
   const [emptyGenerations, setEmptyGenerations] = useState(0);
+  const [showRetry, setShowRetry] = useState(false);
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
 
@@ -86,6 +87,19 @@ export default function ReadPage() {
 
   const unread = useMemo(() => {
     if (!texts || !userWords) return [];
+
+    const trackedCount = userWords.filter((w) => w.status === "known" || w.status === "learning").length;
+    const knownCount = trackedCount + priorWordIds.length;
+    let fallbackIds: string[] | undefined = undefined;
+
+    if (knownCount < 40) {
+      const level = levels.find((l) => l.id === profile?.level_estimate);
+      if (level) {
+        const inBand = lexicon.entries.filter((e) => level.freqBands.includes(e.freqBand));
+        fallbackIds = inBand.slice(0, 60).map((e) => e.id);
+      }
+    }
+
     return selectUnread({
       texts,
       readIds,
@@ -93,9 +107,10 @@ export default function ReadPage() {
         .filter((w) => w.status === "known" || w.status === "learning")
         .map((w) => w.lexeme_id),
       priorIds: priorWordIds,
+      fallbackIds,
       activeTextId,
     }) as typeof texts;
-  }, [texts, readIds, userWords, activeTextId, priorWordIds]);
+  }, [texts, readIds, userWords, activeTextId, priorWordIds, profile?.level_estimate]);
 
   const generate = useMutation({
     mutationFn: async () => {
@@ -144,6 +159,15 @@ export default function ReadPage() {
   }, [poolEmpty, generate.isPending, generate.isError, emptyGenerations]);
 
   useEffect(() => {
+    if (generate.isPending) {
+      const timer = setTimeout(() => setShowRetry(true), 15000);
+      return () => clearTimeout(timer);
+    } else {
+      setShowRetry(false);
+    }
+  }, [generate.isPending]);
+
+  useEffect(() => {
     if (unread.length > 0) {
       const activeStillUnread = activeTextId != null && unread.some((t) => t.id === activeTextId);
       if (!activeStillUnread && unread[0].id !== activeTextId) {
@@ -188,6 +212,18 @@ export default function ReadPage() {
             <p className="mt-2 text-[14px] text-ink-soft">
               A fresh story with just the right new words.
             </p>
+            {showRetry && (
+              <Button
+                variant="outline"
+                className="mt-8"
+                onClick={() => {
+                  setEmptyGenerations(0);
+                  generate.mutate();
+                }}
+              >
+                Taking too long? Try again
+              </Button>
+            )}
           </>
         )}
       </div>

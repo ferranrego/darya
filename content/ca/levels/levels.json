@@ -42,9 +42,9 @@
       "entryKnownWords": 500,
       "sentenceRange": [
         2,
-        4
+        3
       ],
-      "sentenceLengthHint": "strictly max 9 words per sentence",
+      "sentenceLengthHint": "strictly max 7 words per sentence",
       "grammarAllowed": [
         "present indicative of all three conjugations, including the incoative -eix- type (serveixo, prefereixes)",
         "the irregular presents a beginner needs: tenir (tinc), fer (faig), anar (vaig), poder (puc), voler (vull), venir (vinc), dir (dic), saber (sé), veure (veig)",
@@ -55,7 +55,7 @@
         "prepositions a, de, en, amb, per, sense, fins",
         "Catalan has no Spanish-style personal a with a plain direct object: write 'veig la Maria', never 'veig a la Maria'. But do keep the a where the verb governs it (trucar a algú, telefonar a algú) and before a strong personal pronoun ('et veig a tu')"
       ],
-      "avgSentenceWords": 7
+      "avgSentenceWords": 5
     },
     {
       "id": "L3",

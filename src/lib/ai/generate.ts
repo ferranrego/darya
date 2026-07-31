@@ -68,6 +68,9 @@ function buildPrompt(req: GenerationRequest): string {
   const target = wordList(req.targetWords, true);
   const [minS, maxS] = req.level.sentenceRange;
   const themeInstructions = req.theme ? `\n- Set the text in this scenario/theme where it fits naturally: ${req.theme}` : "";
+  const beginnerInstructions = req.level.id === "L1" || req.level.id === "L2"
+    ? `\n- Keep it highly practical for a beginner. Focus on everyday conversational phrases (e.g. 'How are you?', ordering food), W-questions, numbers, days of the week, and basic adjectives.`
+    : "";
 
   return `You are ${profile.prompts.teacher} writing a graded reader text.
 ${profile.prompts.orthography}
@@ -76,7 +79,7 @@ Write a short, warm, concrete text (${minS}-${maxS} sentences, ${req.level.sente
 CRITICAL NARRATIVE RULES:
 - The text must tell a coherent story or explain something clearly.
 - Every sentence MUST be a logical continuation of the previous one. 
-- Ensure a natural flow that makes sense to the reader; do NOT just write a list of disconnected sentences.${themeInstructions}
+- Ensure a natural flow that makes sense to the reader; do NOT just write a list of disconnected sentences.${themeInstructions}${beginnerInstructions}
 
 STRICT VOCABULARY CONSTRAINT:
 - You may ONLY use these words the learner already knows (any inflection of them is fine): ${known}
