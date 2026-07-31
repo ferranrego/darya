@@ -19,7 +19,12 @@ import { join } from "node:path";
 import { lexiconFileSchema, grammarCoursesFileSchema } from "../src/lib/content/schema.ts";
 import { buildLexiconIndex } from "../src/lib/lang/ca/lexicon-index.ts";
 import { matchKey, tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
-import { apostropheProblems, obsoleteSpellings, strayInfinitive } from "./verify-ca-entries.ts";
+import {
+  apostropheProblems,
+  missingApostrophe,
+  obsoleteSpellings,
+  strayInfinitive,
+} from "./verify-ca-entries.ts";
 
 const root = join(import.meta.dirname, "..", "content", "ca");
 const lexicon = lexiconFileSchema.parse(
@@ -85,7 +90,21 @@ function properNouns(text: string): Set<string> {
   return names;
 }
 
+/**
+ * Optionally stop after a given CEFR level.
+ *
+ * `--max-level B2` gates the levels currently being brought up to standard
+ * without being held hostage by known damage further up - C2's gl-76_ex_4 is a
+ * corrupted string ("donar el llibre el a ell li l'imperatiu...") that needs
+ * rewriting rather than a mechanical repair. Without the flag every level is
+ * checked, which is what a full audit should do.
+ */
+const ORDER = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const maxAt = process.argv.indexOf("--max-level");
+const maxIdx = maxAt !== -1 ? ORDER.indexOf(process.argv[maxAt + 1]) : ORDER.length - 1;
+
 for (const course of courses) {
+  if (ORDER.indexOf(course.level) > maxIdx) continue;
   if (course.language !== "ca") problems.push(`${course.level}: language is "${course.language}"`);
   const strings: [string, string][] = [];
   walk(course, course.level, strings);
@@ -100,7 +119,12 @@ for (const course of courses) {
       if (token === "___" || /^_+$/.test(token)) continue;
       if (names.has(token.toLowerCase())) continue;
       if (!index.resolve(token)) {
-        unresolved.set(token, (unresolved.get(token) ?? 0) + 1);
+        // A token that becomes a real word by putting an apostrophe back is a
+        // defect, not an unknown word: it is not Catalan as written, and a
+        // learner tapping it gets nothing.
+        const restored = missingApostrophe(token, index);
+        if (restored) problems.push(`${where}: "${token}" is missing an apostrophe; write "${restored}"`);
+        else unresolved.set(token, (unresolved.get(token) ?? 0) + 1);
       }
     }
   }

@@ -6462,7 +6462,7 @@
                   "id": "gl-25_ex_8",
                   "type": "chooseTranslation",
                   "direction": "toEn",
-                  "target": "Vaig anar-men molt aviat",
+                  "target": "Vaig anar-me'n molt aviat",
                   "en": "I left very early.",
                   "distractorsEn": [
                     "I arrived very early.",
@@ -7603,7 +7603,7 @@
                 {
                   "id": "gl-32_ex_5",
                   "type": "fillBlank",
-                  "target": "Si plou demà el partit se ___ suspendre",
+                  "target": "Si plou demà el partit se ___ (suspendre)",
                   "en": "If it rains tomorrow, the match will be suspended.",
                   "answer": {
                     "target": "suspendrà"
@@ -7620,7 +7620,7 @@
                 {
                   "id": "gl-32_ex_6",
                   "type": "fillBlank",
-                  "target": "Si plou demà el partit se ___ suspendre",
+                  "target": "Si plou demà el partit se ___ (suspendre)",
                   "en": "If it rains tomorrow, the match will be suspended.",
                   "answer": {
                     "target": "suspendrà"
@@ -7696,7 +7696,7 @@
                 {
                   "id": "gl-33_ex_3",
                   "type": "fillBlank",
-                  "target": "Si tinguéssim més temps ___ visitar més museus",
+                  "target": "Si tinguéssim més temps ___ (visitar) més museus",
                   "en": "If we had more time, we would visit more museums.",
                   "answer": {
                     "target": "visitaríem"
@@ -9551,7 +9551,7 @@
                 {
                   "id": "gl-46_ex_2",
                   "type": "fillBlank",
-                  "target": "No et perdonaré fins que em ___ demanar perdó",
+                  "target": "No et perdonaré fins que em ___ (demanar) perdó",
                   "en": "I won't forgive you until you ask for my forgiveness.",
                   "answer": {
                     "target": "demanis"
@@ -9585,7 +9585,7 @@
                 {
                   "id": "gl-46_ex_4",
                   "type": "fillBlank",
-                  "target": "Avisam tan aviat com ho ___ saber",
+                  "target": "Avisa'm tan aviat com ho ___ saber",
                   "en": "Let me know as soon as you know it.",
                   "answer": {
                     "target": "sàpigues"
@@ -10254,7 +10254,7 @@
                 {
                   "id": "gl-50_ex_4",
                   "type": "fillBlank",
-                  "target": "Compram el diari si us plau Sí vaig a ___",
+                  "target": "Compra'm el diari si us plau Sí vaig a ___",
                   "en": "Buy me the newspaper, please. Yes, I'm going to buy it for you.",
                   "answer": {
                     "target": "comprar-te'l"
@@ -11974,7 +11974,7 @@
                 {
                   "id": "gl-61_ex_5",
                   "type": "fillBlank",
-                  "target": "Trucam en cas que ___ ajuda amb la instal·lació de l'ordinador",
+                  "target": "Truca'm en cas que ___ ajuda amb la instal·lació de l'ordinador",
                   "en": "Call me in case you need help installing the computer.",
                   "answer": {
                     "target": "necessitis"

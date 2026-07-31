@@ -378,3 +378,51 @@ export function entryDefects(e: ShippedEntry): EntryDefect[] {
 export function isTeachable(e: ShippedEntry): boolean {
   return entryDefects(e).length === 0;
 }
+
+/**
+ * Catalan clitics that attach with an apostrophe.
+ *
+ * Enclitic (after the verb): `Avisa'm`, `Dona'ls`, `Porta'n`, `Renta't`.
+ * Proclitic (before a vowel): `M'agrada`, `L'home`, `D'aigua`, `S'ha`.
+ */
+const ENCLITICS = ["m", "n", "s", "t", "l", "ls", "ns", "hi", "ho"];
+const PROCLITICS = ["m", "t", "s", "l", "n", "d"];
+
+/**
+ * A token that is only unresolvable because an apostrophe was dropped.
+ *
+ * `apostropheProblems` catches the opposite mistake - writing `el aigua` where
+ * Catalan requires `l'aigua`. This catches the one that produced `Avisam`,
+ * `Trucam`, `Compram`, `Magradaria` and `men`: a conversion stripped the
+ * apostrophe, gluing the clitic to its verb. The result is not a rare word the
+ * lexicon happens to lack, it is not a word at all, and a learner tapping it
+ * gets nothing.
+ *
+ * Returns the restored spelling, or null when the token is simply unknown.
+ * Only a split whose *both* halves resolve is offered, so an ordinary missing
+ * word is never "corrected" into two other words by coincidence.
+ */
+export function missingApostrophe(token: string, index: LexiconIndex): string | null {
+  if (index.resolve(token)) return null;
+  const lower = token.toLowerCase();
+
+  // Enclitic: the clitic is the tail. Longest first, so `-ls` beats `-s`.
+  for (const clitic of [...ENCLITICS].sort((a, b) => b.length - a.length)) {
+    if (!lower.endsWith(clitic) || lower.length <= clitic.length + 1) continue;
+    const stem = token.slice(0, token.length - clitic.length);
+    if (index.resolve(stem) && index.resolve(`'${clitic}`)) return `${stem}'${clitic}`;
+  }
+
+  // Proclitic: the clitic is a single letter at the head.
+  for (const clitic of PROCLITICS) {
+    if (lower.length <= clitic.length + 1) continue;
+    if (!lower.startsWith(clitic)) continue;
+    const rest = token.slice(clitic.length);
+    // Only before a vowel or a silent h, which is the whole point of eliding.
+    if (!/^[aeiouàèéíòóúïüh]/i.test(rest)) continue;
+    if (index.resolve(rest) && index.resolve(`${token.slice(0, clitic.length)}'`)) {
+      return `${token.slice(0, clitic.length)}'${rest}`;
+    }
+  }
+  return null;
+}
