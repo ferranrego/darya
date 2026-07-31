@@ -131,6 +131,22 @@ export default function ReadPage() {
     onSettled: () => setEmptyGenerations((n) => n + 1),
   });
 
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    if (generate.isPending) {
+      setProgress(0);
+      const interval = setInterval(() => {
+        setProgress((prev) => {
+          if (prev < 85) return prev + 2;
+          if (prev < 98) return prev + 0.5;
+          return prev;
+        });
+      }, 500);
+      return () => clearInterval(interval);
+    }
+  }, [generate.isPending]);
+
   /**
    * How many times to accept "written, but still nothing to show" before
    * giving up.
@@ -208,10 +224,15 @@ export default function ReadPage() {
           </>
         ) : (
           <>
-            <Loader2 className="mx-auto mt-6 h-8 w-8 animate-spin text-ink-soft" />
+            <div className="mx-auto mt-6 w-full max-w-xs rounded-full bg-ink-soft/20 h-2 overflow-hidden">
+              <div 
+                className="h-full bg-ink transition-all duration-500 ease-out" 
+                style={{ width: `${progress}%` }} 
+              />
+            </div>
             <h1 className="mt-4 text-[20px] font-semibold">Writing your next text…</h1>
             <p className="mt-2 text-[14px] text-ink-soft">
-              A fresh story with just the right new words.
+              A fresh story with just the right new words. ({Math.floor(progress)}%)
             </p>
             {showRetry && (
               <Button
