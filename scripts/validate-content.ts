@@ -20,6 +20,7 @@ import {
 // ZWNJ is a Perso-Arabic concept, and the compound-spelling check below is a
 // Dari orthography rule - both come from the language module, not the neutral
 // text façade. Phase 3 gives this script a --lang argument.
+import { verbSpec as caVerbSpec } from "../src/lib/lang/ca/lexicon-index.ts";
 import { ZWNJ } from "../src/lib/lang/prs/normalize.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
@@ -114,6 +115,46 @@ if (existsSync(lexiconPath)) {
         /(دن|تن)$/.test(e.targetNormalized)
       ) {
         fail(`lexicon ${e.id}: compound verb joined with ZWNJ, use a space (${e.targetNormalized})`);
+      }
+
+      /**
+       * Part of speech, in the one direction that can be decided mechanically.
+       *
+       * The gloss is written in English and an English gloss beginning "to "
+       * is a verb; nothing else is glossed that way. The reverse is not
+       * checkable and must not be attempted - `casa`/`casar`, `porta`/`portar`,
+       * `dona`/`donar`, `veu`/`veure` are genuine homographs, so "this noun is
+       * also a verb form" flags 92 Catalan entries of which almost none are
+       * wrong. Judging those is the philologist's job; this only removes the
+       * cases where no judgement is required.
+       *
+       * Worth having because the field was never decided for 290 entries - the
+       * bulk pass that wrote them stamped `pos: "noun"` on all of them, which
+       * is how `demanar`, `construir` and `evitar` shipped as nouns.
+       *
+       * "to" is also an English preposition, so a gloss may open with it
+       * without naming an infinitive: `al` is "to the" and `li` is "to him".
+       * Those are excluded by what follows the "to", not by an id list, so a
+       * new entry glossed that way needs no maintenance here.
+       */
+      const TO_NOT_INFINITIVE = /^to\s+(the|a|an|him|her|it|them|us|me|you|my|your|his|their|our|this|that|these|those|which|whom|where|one|both|each)\b/i;
+      if (
+        /^to\s+\p{L}/iu.test(e.glossEn) &&
+        !TO_NOT_INFINITIVE.test(e.glossEn) &&
+        e.pos !== "verb" &&
+        e.pos !== "phrase"
+      ) {
+        fail(`lexicon ${e.id}: glossed "${e.glossEn}" but pos="${e.pos}" (a "to …" gloss is a verb)`);
+      }
+
+      /**
+       * A Catalan verb must be conjugable, or the reader can resolve none of
+       * its forms. `endur` had to be given an irregular spec for exactly this
+       * reason; without one it would have shipped as a verb whose every
+       * inflection was invisible to the engine.
+       */
+      if (lang === "ca" && e.pos === "verb" && !caVerbSpec(e.targetNormalized)) {
+        fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" has no conjugation spec`);
       }
     }
     console.log(`✓ lexicon.json (${lexicon.entries.length} entries)`);

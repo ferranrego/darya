@@ -45,6 +45,34 @@ Each of these shipped, reached a learner, and was invisible until measured.
    its code is a defect: two of them were found asserting the opposite of what
    the code did.
 
+## Before content reaches a reviewer
+
+The cost of a defect is set by how late it is caught, and that is the one thing
+you control. Write the check *before* the change, not after the review finds it.
+
+Authoring vocabulary, examples or texts, in order:
+
+1. **Author into a reviewed file**, never straight into `lexicon.json`. A 1.8 MB
+   JSON diff is not legible, so nothing in it gets read - which is how
+   `registre` shipped glossed as a verb.
+2. **`node scripts/review-batch.ts --lang ca --repairs <file>`** renders the
+   batch as learner-facing cards. Read them. This is the step that catches what
+   no validator can express: a card reading *registre · verb · record* is
+   obviously wrong to anyone, in any language. It is also how the `register`
+   field turned out to be `formal` on every everyday word.
+3. **`--apply`, which prints `lexicon-diff.ts` automatically** - counts by part
+   of speech and register, before and after, plus a sample of the actual edits.
+   "142 repaired" is not checkable; "noun 290 → 63, verb 0 → 43" is.
+4. **`pnpm validate:content --lang <lang>`**, then the language gates.
+5. **Only then a philologist**, on one batch at a time. Running three batches
+   back to back put 142 entries into a single review, which is not a review.
+
+Two habits that cost real defects here: never report a gate as green without
+its exit code (a grep for your own filenames is not `pnpm lint`), and when a
+heuristic looks sound, test the direction you did *not* think of - the
+corpus-attestation check was probed for fake evidence and not for real evidence
+belonging to a different word, which is exactly `registre`/`registrar`.
+
 ## Content rules
 
 - **A wrong entry is worse than a missing one.** Everything generated is guilty

@@ -142,4 +142,15 @@ if (!apply) {
   lexiconFileSchema.parse(file);
   writeFileSync(path, JSON.stringify(file, null, 2) + "\n");
   console.log(`rewrote ${path}`);
+
+  // Print the change in the terms it is about. "142 repaired" is not
+  // checkable; "noun 290 -> 63, verb 0 -> 43" is, and it is the view in which
+  // one wrong label stands out.
+  const { execFileSync } = await import("node:child_process");
+  execFileSync(
+    process.execPath,
+    [join(import.meta.dirname, "lexicon-diff.ts"), "--lang", "ca"],
+    { stdio: "inherit" },
+  );
+
 }

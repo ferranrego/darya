@@ -36,6 +36,12 @@ interface Repair {
   glossEn?: string;
   exampleTarget?: string;
   exampleEn?: string;
+  /**
+   * Register was never decided for these entries either: "formal" was stamped
+   * across the whole bulk pass, exactly as `pos: noun` was, so `lloc`, `premi`
+   * and `truita` were all marked formal. Authoring it is part of the repair.
+   */
+  register?: string;
   drop?: string;
 }
 
@@ -80,6 +86,7 @@ for (const e of file.entries) {
 
   const next = {
     pos: r.pos ?? e.pos,
+    register: r.register ?? e.register,
     glossEn: r.glossEn ?? e.glossEn,
     exampleTarget: r.exampleTarget ?? e.exampleTarget,
     exampleEn: r.exampleEn ?? e.exampleEn,
@@ -121,4 +128,15 @@ if (!apply) {
   lexiconFileSchema.parse(file);
   writeFileSync(path, JSON.stringify(file, null, 2) + "\n");
   console.log(`rewrote ${path}`);
+
+  // Print the change in the terms it is about. "142 repaired" is not
+  // checkable; "noun 290 -> 63, verb 0 -> 43" is, and it is the view in which
+  // one wrong label stands out.
+  const { execFileSync } = await import("node:child_process");
+  execFileSync(
+    process.execPath,
+    [join(import.meta.dirname, "lexicon-diff.ts"), "--lang", "ca"],
+    { stdio: "inherit" },
+  );
+
 }
