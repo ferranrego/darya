@@ -470,6 +470,105 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       gerund: ["duent"],
     },
   },
+  /**
+   * The -endre / -oldre / -etre / -iure families.
+   *
+   * `prendre`, `aprendre`, `comprendre`, `entendre`, `respondre` and `escriure`
+   * were already here; their morphological siblings were not, so the engine
+   * treated them as regular and invented whole paradigms - `*resoldo`,
+   * `*sorprendut`, `*cometut`, `*inscriuüt`. Nothing displayed those, but the
+   * real forms (`resolt`, `comès`, `sorprèn`, `atès`, `suspès`, `inscrit`) then
+   * resolved to nothing, so a learner tapping them got no entry and a text
+   * teaching them could not be seen to have taught them. Worse, verifyEntry's
+   * "the example contains the headword" check inverts: it would accept
+   * "Ha cometut un error" and reject the correct "Ha comès un error".
+   *
+   * Forms from the IEC conjugation tables reached through DIEC2, central column.
+   */
+  resoldre: {
+    infinitive: "resoldre",
+    conjugation: 2,
+    overrides: {
+      present: ["resolc", "resols", "resol", "resolem", "resoleu", "resolen"],
+      presentSubjunctive: ["resolgui", "resolguis", "resolguem", "resolgueu", "resolguin"],
+      imperfectSubjunctive: ["resolgués", "resolguessis", "resolguéssim", "resolguéssiu", "resolguessin"],
+      participle: ["resolt", "resolta", "resolts", "resoltes"],
+      gerund: ["resolent"],
+    },
+  },
+  sorprendre: {
+    infinitive: "sorprendre",
+    conjugation: 2,
+    overrides: {
+      present: ["sorprenc", "sorprens", "sorprèn", "sorprenem", "sorpreneu", "sorprenen"],
+      presentSubjunctive: ["sorprengui", "sorprenguis", "sorprenguem", "sorprengueu", "sorprenguin"],
+      imperfectSubjunctive: ["sorprengués", "sorprenguessis", "sorprenguéssim", "sorprenguéssiu", "sorprenguessin"],
+      participle: ["sorprès", "sorpresa", "sorpresos", "sorpreses"],
+      gerund: ["sorprenent"],
+    },
+  },
+  reprendre: {
+    infinitive: "reprendre",
+    conjugation: 2,
+    overrides: {
+      present: ["reprenc", "reprens", "reprèn", "reprenem", "repreneu", "reprenen"],
+      presentSubjunctive: ["reprengui", "reprenguis", "reprenguem", "reprengueu", "reprenguin"],
+      imperfectSubjunctive: ["reprengués", "reprenguessis", "reprenguéssim", "reprenguéssiu", "reprenguessin"],
+      participle: ["reprès", "represa", "represos", "represes"],
+      gerund: ["reprenent"],
+    },
+  },
+  atendre: {
+    infinitive: "atendre",
+    conjugation: 2,
+    overrides: {
+      present: ["atenc", "atens", "atén", "atenem", "ateneu", "atenen"],
+      presentSubjunctive: ["atengui", "atenguis", "atenguem", "atengueu", "atenguin"],
+      imperfectSubjunctive: ["atengués", "atenguessis", "atenguéssim", "atenguéssiu", "atenguessin"],
+      participle: ["atès", "atesa", "atesos", "ateses"],
+      gerund: ["atenent"],
+    },
+  },
+  suspendre: {
+    infinitive: "suspendre",
+    conjugation: 2,
+    overrides: {
+      present: ["suspenc", "suspens", "suspèn", "suspenem", "suspeneu", "suspenen"],
+      presentSubjunctive: ["suspengui", "suspenguis", "suspenguem", "suspengueu", "suspenguin"],
+      imperfectSubjunctive: ["suspengués", "suspenguessis", "suspenguéssim", "suspenguéssiu", "suspenguessin"],
+      participle: ["suspès", "suspesa", "suspesos", "suspeses"],
+      gerund: ["suspenent"],
+    },
+  },
+  cometre: {
+    infinitive: "cometre",
+    conjugation: 2,
+    overrides: {
+      participle: ["comès", "comesa", "comesos", "comeses"],
+    },
+  },
+  inscriure: {
+    infinitive: "inscriure",
+    conjugation: 2,
+    overrides: {
+      present: ["inscric", "inscrius", "inscriu", "inscrivim", "inscriviu", "inscriuen"],
+      presentSubjunctive: ["inscrigui", "inscriguis", "inscriguem", "inscrigueu", "inscriguin"],
+      imperfectSubjunctive: ["inscrigués", "inscriguessis", "inscriguéssim", "inscriguéssiu", "inscriguessin"],
+      participle: ["inscrit", "inscrita", "inscrits", "inscrites"],
+      gerund: ["inscrivint"],
+    },
+  },
+  detenir: {
+    infinitive: "detenir",
+    conjugation: 3,
+    overrides: {
+      present: ["detinc", "detens", "deté", "detenim", "deteniu", "detenen"],
+      presentSubjunctive: ["detingui", "detinguis", "detinguem", "detingueu", "detinguin"],
+      imperfectSubjunctive: ["detingués", "detinguessis", "detinguéssim", "detinguéssiu", "detinguessin"],
+      participle: ["detingut", "detinguda", "detinguts", "detingudes"],
+      gerund: ["detenint"],
+    },
+  },
   // `endur-se` is `dur` with a prefix and inflects identically. It is far more
   // common than the bare verb in everyday Catalan ("emporta-t'ho" aside,
   // "endur-se" is what a learner meets), and without a spec here the engine
@@ -478,7 +577,9 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
     infinitive: "endur",
     conjugation: 2,
     overrides: {
-      present: ["enduc", "endus", "endu", "enduem", "endueu", "enduen"],
+      // IEC gives "enduus o endús" and "enduu o endú"; `s'endú` is the everyday
+      // central form, so the unaccented *endus / *endu were the wrong pick.
+      present: ["enduc", "endús", "enduus", "endú", "enduu", "enduem", "endueu", "enduen"],
       imperfect: ["enduia", "enduies", "endúiem", "endúieu", "enduien"],
       presentSubjunctive: ["endugui", "enduguis", "enduguem", "endugueu", "enduguin"],
       participle: ["endut", "enduta", "enduts", "endutes"],

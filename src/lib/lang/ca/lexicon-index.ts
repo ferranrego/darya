@@ -103,7 +103,16 @@ export function nominalForms(word: string, pos: string): string[] {
 
   for (const p of plural(w)) out.add(p);
 
-  if (pos === "adjective") {
+  /**
+   * Feminines are generated for nouns too, not only adjectives.
+   *
+   * Catalan nouns denoting people inflect for gender - president/presidenta,
+   * professor/professora, noi/noia - and without this the feminine of every one
+   * of them resolves to nothing. Over-generation is the established trade here
+   * (see the note below): a spurious key is inert, a missing one means the
+   * reader cannot explain a word the learner is looking at.
+   */
+  if (pos === "adjective" || pos === "noun") {
     /**
      * Catalan feminines, where spelling alone cannot always decide:
      *
@@ -125,6 +134,17 @@ export function nominalForms(word: string, pos: string): string[] {
     else if (/t$/.test(w)) feminines.push(w + "a", w.slice(0, -1) + "da"); // petita / cansada
     else if (/c$/.test(w)) feminines.push(w + "a", w.slice(0, -1) + "ga"); // rica / groga
     else if (/ç$/.test(w)) feminines.push(w.slice(0, -1) + "ça");
+    // An unstressed final -i takes -ia, and the stem vowel then needs its
+    // written accent because the result is esdrúixola: necessari ->
+    // necessària, propi -> pròpia, previ -> prèvia.
+    else if (/[^aeiou]i$/.test(w)) {
+      const stem = w.slice(0, -1);
+      const at = stem.search(/[aeiou](?=[^aeiou]*$)/);
+      const ACCENT: Record<string, string> = { a: "à", e: "è", i: "í", o: "ò", u: "ú" };
+      const accented =
+        at === -1 ? stem : stem.slice(0, at) + (ACCENT[stem[at]] ?? stem[at]) + stem.slice(at + 1);
+      feminines.push(accented + "ia", stem + "ia");
+    }
     else if (/[^aeiou]$/.test(w)) feminines.push(w + "a");
 
     for (const f of feminines) {

@@ -79,8 +79,16 @@ export function attach(stem: string, ending: string, conjugation: Conjugation = 
   // Diaeresis: unstressed i/u opening an ending, straight after a stem vowel.
   if (/^[iu]/.test(ending) && VOWEL.test(s.slice(-1)) && !/[gq]u$/.test(s)) {
     const rest = ending.slice(1);
-    // Only when the i/u is not already carrying its own accent.
-    if (!/^[íú]/.test(ending)) {
+    // Only when the i/u is not already carrying its own accent, and never in
+    // the gerund. *Ortografia catalana* (2017) exempts the infinitive, gerund,
+    // future and conditional of a verb whose stem ends in a vowel: the gerund
+    // is `conduint`, `construint`, `agraint`, `traint`, while the participle
+    // does take it (`conduït`, `construït`). Without the exception the engine
+    // produced `conduïnt` for seven verbs in the lexicon - forms no Catalan
+    // text contains, so the learner tapping the real word got nothing back.
+    // The other three exempted forms never reach here: they are built on the
+    // whole infinitive, so no ending opens with i/u.
+    if (!/^[íú]/.test(ending) && ending !== "int") {
       return s + (ending[0] === "i" ? "ï" : "ü") + rest;
     }
   }
