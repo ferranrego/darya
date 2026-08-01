@@ -46,6 +46,23 @@ const MIN_USEFUL_MS = 3_000;
  */
 const DEFAULT_BUDGET_MS = 24_000;
 
+/**
+ * Providers that have failed in a way that will not clear on its own.
+ *
+ * An exhausted monthly allowance (402) or a bad key (401/403) is the same
+ * answer every time, but the chain re-tries the provider on every call - and a
+ * single generation is three calls, each spending the per-call cap discovering
+ * the same thing. Observed with Hugging Face out of credits at the head of the
+ * chain: it consumed the whole 45s budget across the run and the working
+ * providers behind it were skipped with milliseconds left.
+ *
+ * Held for the life of the process, not persisted: a redeploy or a topped-up
+ * account should get a clean try, and a serverless instance is short-lived
+ * anyway. A timeout is deliberately not included - that is transient, and a
+ * provider that is merely slow now may be fine on the next request.
+ */
+const disabled = new Map<string, string>();
+
 function openAiCompatible(
   name: string,
   baseUrl: string,
@@ -128,6 +145,11 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
 
   for (const provider of providers) {
     if (!provider.available()) continue;
+    const why = disabled.get(provider.name);
+    if (why) {
+      errors.push(`${provider.name}: skipped, ${why}`);
+      continue;
+    }
     for (let attempt = 0; attempt < 2; attempt++) {
       const remaining = deadline - Date.now();
       if (remaining < MIN_USEFUL_MS) {
@@ -162,7 +184,13 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
         //                 attempts consumed everything left and the fast Groq
         //                 fallback behind them was skipped with -8ms to spare.
         //   400 / 404     the model name is wrong; it will still be wrong.
-        if (/\b(429|402|400|404)\b|rate limit|quota|credits|abort/i.test(message)) break;
+        // A key or billing problem is settled: stop asking this provider at all
+        // for the rest of the process, not just for this call.
+        if (/\b(401|402|403)\b|credits|unauthorized|invalid.*key/i.test(message)) {
+          disabled.set(provider.name, message.slice(0, 80));
+          break;
+        }
+        if (/\b(429|400|404)\b|rate limit|quota|abort/i.test(message)) break;
       }
     }
   }

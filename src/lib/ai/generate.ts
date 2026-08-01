@@ -61,33 +61,101 @@ export interface GenerationRequest {
   targetWords: LexiconEntry[];
   newWordRatio: number;
   theme?: string;
+  /**
+   * Titles already cached at this level.
+   *
+   * Nothing told the model what the pool already contains, so at a given level
+   * it converged on the same few stories. The route has them from the query it
+   * already makes to decide whether to generate at all.
+   */
+  avoidTitles?: string[];
 }
 
-function buildPrompt(req: GenerationRequest): string {
+/**
+ * The kinds of text a graded reader should contain.
+ *
+ * Every generated text used to be "a short, warm, concrete text about everyday
+ * life", which is one voice, and a learner reading twenty of them has met one
+ * register. These are all things a learner genuinely needs to read, and they
+ * exercise different grammar: a dialogue needs questions and second person, a
+ * notice needs the impersonal, instructions need the imperative.
+ */
+const TEXT_TYPES = [
+  "a short story with a beginning and an end",
+  "a conversation between two people, written as alternating lines",
+  "a description of a place or a person",
+  "a set of simple instructions for doing something",
+  "a short personal letter or message to a friend",
+  "a notice or announcement of the kind you would see in public",
+] as const;
+
+/**
+ * How many of those a level can actually carry.
+ *
+ * A form needs room. Asked for "instructions" at pre-A1 - two or three
+ * sentences of at most six words, no conjunctions - the model produced
+ * "Soc l'home / No estic / Seré el que serà" under the title "Work
+ * Instructions": three disconnected fragments and an idiom, because there is no
+ * way to write instructions in that space. The first three types work at any
+ * length; a letter, a notice and a procedure need somewhere to put an opening,
+ * a purpose and a close, so they start once sentences can run past a clause.
+ */
+function textTypesFor(level: Level): readonly string[] {
+  return level.avgSentenceWords >= 9 ? TEXT_TYPES : TEXT_TYPES.slice(0, 3);
+}
+
+/**
+ * Closed-class words are always permitted.
+ *
+ * "Do not use any other content words" is followable; "use only these 250
+ * words" is not, because no sentence can be built without articles,
+ * prepositions and pronouns, and a frequency-ordered slice does not reliably
+ * contain the ones a given sentence needs. Saying so explicitly is what lets
+ * the rest of the constraint be taken literally.
+ */
+const FUNCTION_WORDS_ARE_FREE =
+  "Articles, prepositions, pronouns, conjunctions, auxiliary and copular verbs are always allowed, whether or not they appear below.";
+
+function buildPrompt(req: GenerationRequest, attempt = 0): string {
   const known = wordList(req.knownWords);
   const target = wordList(req.targetWords, true);
   const [minS, maxS] = req.level.sentenceRange;
-  const themeInstructions = req.theme ? `\n- Set the text in this scenario/theme where it fits naturally: ${req.theme}` : "";
-  const beginnerInstructions = req.level.id === "L1" || req.level.id === "L2"
-    ? `\n- Keep it highly practical for a beginner. Focus on everyday conversational phrases (e.g. 'How are you?', ordering food), W-questions, numbers, days of the week, and basic adjectives.`
+
+  // Rotate the text type and the setting per attempt, so a retry is a genuinely
+  // different request rather than the same one at the same temperature.
+  const types = textTypesFor(req.level);
+  const textType = types[(attempt + Math.floor(Math.random() * types.length)) % types.length];
+  const scenarios = profile.prompts.scenarios;
+  const setting = req.theme ?? scenarios[Math.floor(Math.random() * scenarios.length)];
+
+  const recent = req.avoidTitles?.length
+    ? `\n- The learner has already read texts called: ${req.avoidTitles.join("; ")}. Write about something else.`
     : "";
+
+  const beginner =
+    req.level.id === "L1" || req.level.id === "L2"
+      ? "\n- Keep it practical: greetings, asking and answering, numbers, days, food, basic descriptions."
+      : "";
 
   return `You are ${profile.prompts.teacher} writing a graded reader text.
 ${profile.prompts.orthography}
 
-Write a short, warm, concrete text (${minS}-${maxS} sentences, ${req.level.sentenceLengthHint}) about ${profile.prompts.culturalSetting}.
-CRITICAL NARRATIVE RULES:
-- The text must tell a coherent story or explain something clearly.
-- Every sentence MUST be a logical continuation of the previous one. 
-- Ensure a natural flow that makes sense to the reader; do NOT just write a list of disconnected sentences.${themeInstructions}${beginnerInstructions}
+${profile.prompts.interference}
 
-STRICT VOCABULARY CONSTRAINT:
-- You may ONLY use these words the learner already knows (any inflection of them is fine): ${known}
-- You MUST naturally weave in ALL of these new words: ${target}
-- Do not use any other content words. Proper names of people are allowed sparingly.
+Write ${textType}, ${minS}-${maxS} sentences, ${req.level.sentenceLengthHint}.
+Set it in this situation: ${setting}, in the context of ${profile.prompts.culturalSetting}.
+
+WHAT MAKES IT READABLE:
+- It must hold together: every sentence follows from the one before it, and the whole says something.
+- Write what a person would actually say or write in this situation, not a sentence built to contain a word.${recent}${beginner}
+
+VOCABULARY:
+- ${FUNCTION_WORDS_ARE_FREE}
+- Build the text from these words the learner knows. Any inflected form is fine: ${known}
+- These are the words the text exists to teach. Every one must appear, and each should appear twice if the length allows: ${target}
+- At least 19 of every 20 words must come from the two lists above. A proper name is allowed, sparingly.
 
 Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
-
 
 Return ONLY JSON with this exact shape:
 ${
@@ -261,20 +329,31 @@ where "index" is the number provided above for the sentence.`;
  * Dari used 0 of 5 requested words at B2 and 0 of 7 at C1 - so every text at
  * those levels was unusable, and the reader regenerated forever.
  *
- * Currently all of them. That is a deliberate tightening, and it has a cost
- * worth knowing: at L1 a text is two or three sentences of at most six words
- * with no conjunctions, and only two target words, so failing to place one is
- * failing to place half - the generation then fails outright rather than
- * returning a text that teaches one new word. Measured: L1 failed all three
- * attempts with "teaches 1 of 2", while L7 and L8 comfortably reached 8 of 8.
- * If beginner levels keep failing, this is the number to revisit, not the
- * prompt.
+ * All of them, on the attempts that can afford to be strict.
  */
 const MIN_TARGET_USE = 1.0;
 
-function requiredTargets(req: GenerationRequest): number {
-  if (req.targetWords.length === 0) return 0;
-  return Math.max(1, Math.ceil(req.targetWords.length * MIN_TARGET_USE));
+/**
+ * The bar relaxes by one word on the final attempt.
+ *
+ * Asking for every word is right, and it is reachable: L5 through L8 hit 8 of 8
+ * comfortably. It is not reachable at L1, where a text is two or three
+ * sentences of at most six words with no conjunctions and there are only two
+ * target words - so failing to place one is failing half, and the generation
+ * failed outright three times rather than returning a text that teaches one new
+ * word. Measured: L1 failed every attempt with "teaches 1 of 2" while every
+ * other level passed.
+ *
+ * A text teaching one of two words is worth having; no text at all is not, and
+ * an empty pool is the failure this whole contract exists to prevent. So the
+ * first attempts hold the line and the last one takes what it can get, which is
+ * the same shape as the lenient final repair directly below.
+ */
+function requiredTargets(req: GenerationRequest, lastAttempt: boolean): number {
+  const asked = req.targetWords.length;
+  if (asked === 0) return 0;
+  const strict = Math.max(1, Math.ceil(asked * MIN_TARGET_USE));
+  return lastAttempt ? Math.max(1, strict - 1) : strict;
 }
 
 /**
@@ -355,7 +434,6 @@ const GENERATION_BUDGET_MS = 45_000;
 
 export async function generateText(req: GenerationRequest): Promise<TextDocument> {
   let lastError: unknown;
-  const needed = requiredTargets(req);
   // One deadline for the run, not per call: an attempt is up to three
   // sequential completions, and three attempts of those against a per-call
   // budget is several times the route's whole allowance.
@@ -363,8 +441,9 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
 
   // Try up to 3 times to get a good text (including repairs)
   for (let attempt = 0; attempt < 3; attempt++) {
+    const needed = requiredTargets(req, attempt === 2);
     try {
-      let result = await completeJson(buildPrompt(req), {
+      let result = await completeJson(buildPrompt(req, attempt), {
         temperature: 0.8,
         deadline,
         validate: (raw, model) => {

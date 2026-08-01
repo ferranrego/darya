@@ -9,6 +9,7 @@ import {
   TEACHER,
   WORD_ROLES,
   CHAT,
+  INTERFERENCE,
 } from "./prompts.ts";
 
 /**
@@ -65,6 +66,7 @@ export const prs: LanguageProfile = {
   prompts: {
     teacher: TEACHER,
     orthography: ORTHOGRAPHY,
+    interference: INTERFERENCE,
     culturalSetting: CULTURAL_SETTING,
     scenarios: SCENARIOS,
     inflectionExample: "خوبیم = we are good",

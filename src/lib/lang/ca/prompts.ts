@@ -17,6 +17,28 @@ export const ORTHOGRAPHY = [
   "Weak pronouns take their standard written forms: em, et, es, ens, us, el, la, els, les, li, hi, en - with apostrophes and hyphens as required (me'n vaig, dona-me'l).",
 ].join("\n");
 
+/**
+ * Castilianisms, which are the failure mode for Catalan specifically.
+ *
+ * Every pair here is a construction a model trained mostly on Spanish reaches
+ * for, and each is wrong in a way that reads as fluent. They are stated as
+ * substitutions rather than prohibitions because "avoid castellanismes" is
+ * advice the model cannot act on.
+ */
+export const INTERFERENCE = [
+  "Never use these Spanish-influenced forms. The correct Catalan is on the right:",
+  "  tenir que -> haver de (he d'anar, not tinc que anar)",
+  "  donar-se compte -> adonar-se (me n'adono, not em dono compte)",
+  "  hi han -> hi ha (hi ha is invariable, always singular)",
+  "  lo + adjective -> el que / allò (el que és important, not lo important)",
+  "  degut a -> a causa de, per culpa de",
+  "  al + infinitive -> quan + verb (quan arribo, not al arribar)",
+  "  estranyar meaning 'to miss' -> enyorar, trobar a faltar (estranyar is 'to find odd')",
+  "  buscar/trobar a algú with personal a -> no personal a in Catalan (veig la Maria, not veig a la Maria)",
+  "  the gerund for a following action -> a finite verb (va caure i es va trencar, not caient es va trencar)",
+  "Adjectives normally follow the noun (la parada següent, un problema greu).",
+].join("\n");
+
 /** What generated reader texts should be about. */
 export const CULTURAL_SETTING = "everyday life in Catalonia";
 

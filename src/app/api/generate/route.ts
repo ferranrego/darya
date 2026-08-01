@@ -60,7 +60,7 @@ export async function POST(req: Request) {
   const level = levelById(profile.level_estimate);
   const readIds = new Set((readRows ?? []).map((r) => r.text_id));
 
-  const { data: pool } = await db.from("texts").select("id, theme").eq("level", level.id);
+  const { data: pool } = await db.from("texts").select("id, theme, doc").eq("level", level.id);
   const unread = (pool ?? []).filter((t) => !readIds.has(t.id));
   
   // `theme` is always set by this point, so there is no unthemed branch.
@@ -118,6 +118,12 @@ export async function POST(req: Request) {
       targetWords,
       newWordRatio: ratio,
       theme,
+      // What this level already has, so the pool stops converging on the same
+      // few stories.
+      avoidTitles: (pool ?? [])
+        .map((t) => (t.doc as { titleEn?: string } | null)?.titleEn)
+        .filter((t): t is string => !!t)
+        .slice(-8),
     });
     // A text that teaches nothing is one the pool will reject on every future
     // visit, so caching it means the learner asks for another one forever and

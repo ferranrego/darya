@@ -22,6 +22,27 @@ export const ORTHOGRAPHY = [
   "Use ZWNJ in می‌ verb forms (می‌روم).",
 ].join("\n");
 
+/**
+ * Iranian Persian, which is the failure mode for Dari specifically.
+ *
+ * The written record is overwhelmingly Iranian, so a model asked for Persian
+ * produces Tehran usage and calls it Dari. The orthography block names three
+ * words; this names the constructions, which is where the drift actually shows.
+ */
+export const INTERFERENCE = [
+  "Never use these Iranian Persian forms. The Dari is on the right:",
+  "  مدرسه -> مکتب (school)",
+  "  دانشگاه -> پوهنتون (university)",
+  "  بیمارستان -> شفاخانه (hospital)",
+  "  ماشین -> موتر (car)",
+  "  خیابان -> سرک (street)",
+  "  بزرگ -> کلان where 'big' is meant in the everyday sense",
+  "  پول -> پیسه (money)",
+  "  هواپیما -> طیاره (aeroplane)",
+  "  استان -> ولایت (province)",
+  "Keep the majhul vowels in transliteration: dōst not dust, shēr not shir. They are the clearest marker of Dari and Iranian Persian has lost them.",
+].join("\n");
+
 /** What generated reader texts should be about, culturally. */
 export const CULTURAL_SETTING = "everyday Afghan life";
 

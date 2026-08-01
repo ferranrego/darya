@@ -56,6 +56,18 @@ export interface LanguagePrompts {
   teacher: string;
   /** Orthography and transliteration rules the model must follow. */
   orthography: string;
+  /**
+   * The mistakes a model makes *in this language specifically*, as explicit
+   * "never X, write Y" pairs.
+   *
+   * Orthography covers spelling; this covers the sentence. Both languages sit
+   * next to a dominant relative that supplies most of the training data - the
+   * model reaches for Spanish syntax when writing Catalan and for Iranian
+   * Persian when writing Dari - and the result is fluent, confident and wrong,
+   * which no validator can detect. A false friend shipped in the lexicon this
+   * way: `estranyar` glossed "to miss", which is Spanish *extrañar*.
+   */
+  interference: string;
   /** What generated reader texts should be about, e.g. "everyday Afghan life". */
   culturalSetting: string;
   /** Culturally appropriate settings for generated exercises. */
