@@ -10,6 +10,7 @@ import {
   WORD_ROLES,
   CHAT,
   INTERFERENCE,
+  BEGINNER_PATTERNS,
 } from "./prompts.ts";
 
 /**
@@ -67,6 +68,7 @@ export const prs: LanguageProfile = {
     teacher: TEACHER,
     orthography: ORTHOGRAPHY,
     interference: INTERFERENCE,
+    beginnerPatterns: BEGINNER_PATTERNS,
     culturalSetting: CULTURAL_SETTING,
     scenarios: SCENARIOS,
     inflectionExample: "خوبیم = we are good",

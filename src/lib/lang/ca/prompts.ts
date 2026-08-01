@@ -39,6 +39,29 @@ export const INTERFERENCE = [
   "Adjectives normally follow the noun (la parada següent, un problema greu).",
 ].join("\n");
 
+/**
+ * The sentence shapes a Catalan beginner should meet first, as examples.
+ *
+ * Each one is worth knowing on its own and reusable with different words, which
+ * is what a first-week learner actually needs from a text.
+ */
+export const BEGINNER_PATTERNS = [
+  "El riu és blau.",
+  "La casa era gran.",
+  "El meu pare és intel·ligent.",
+  "El gos menja carn.",
+  "Els plats són a taula.",
+  "Avui fa sol.",
+  "Els dilluns treballo molt.",
+  "Quant costa la poma?",
+  "Quin és el teu nom?",
+  "On és el bany?",
+  "M'agrada el cafè amb llet.",
+  "Hi ha pa a la cuina.",
+  "No tinc temps avui.",
+  "Vull comprar una taula nova.",
+].join("\n");
+
 /** What generated reader texts should be about. */
 export const CULTURAL_SETTING = "everyday life in Catalonia";
 

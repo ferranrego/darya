@@ -1,0 +1,260 @@
+# Catalan beginner core
+#
+# The words a learner needs on day one, which corpus frequency does not
+# surface. The ranking in lexicon.json is blended from subtitles and
+# Wikipedia and is correct as frequency - but the head of it is abstract
+# discourse vocabulary (estat, cosa, part, vegada, manera, guerra, punt,
+# acord, sistema, empresa), because concrete nouns are simply rarer in
+# written text than abstract ones. Measured: of these words 138 are in the
+# lexicon and 80 of them rank past L1, so "El gos menja carn" and
+# "Quant costa la poma?" were not expressible at the level they belong to.
+#
+# So this is additive and explicit. Tagging a word `beginner-core` lets the
+# first two levels teach it whatever its rank; it does not change freqRank,
+# which every level above depends on, and it does not make the word count as
+# already known.
+#
+# One headword per line. Anything the lexicon lacks is reported by
+# scripts/tag-beginner-core.ts rather than silently skipped.
+
+# --- food and drink
+pa
+llet
+cafè
+te
+aigua
+suc
+formatge
+ou
+carn
+peix
+pollastre
+arròs
+sopa
+fruita
+poma
+plàtan
+taronja
+raïm
+verdura
+patata
+tomàquet
+ceba
+sucre
+sal
+oli
+pastís
+xocolata
+esmorzar
+dinar
+sopar
+
+# --- the table
+plat
+got
+tassa
+forquilla
+ganivet
+cullera
+ampolla
+
+# --- the house
+taula
+cadira
+llit
+sofà
+armari
+porta
+finestra
+paret
+cuina
+bany
+habitació
+jardí
+clau
+llum
+casa
+pis
+
+# --- family and people
+pare
+mare
+fill
+filla
+germà
+germana
+avi
+àvia
+oncle
+tia
+cosí
+marit
+dona
+amic
+amiga
+nen
+nena
+home
+noi
+noia
+
+# --- animals
+gos
+gat
+ocell
+cavall
+vaca
+porc
+ovella
+conill
+ratolí
+
+# --- the body
+cap
+ull
+nas
+boca
+orella
+dent
+mà
+braç
+cama
+peu
+esquena
+cor
+
+# --- clothes
+camisa
+pantalons
+vestit
+faldilla
+sabata
+mitjó
+jaqueta
+abric
+barret
+
+# --- colours
+vermell
+blau
+verd
+groc
+negre
+blanc
+gris
+marró
+
+# --- days and time
+dilluns
+dimarts
+dimecres
+dijous
+divendres
+dissabte
+diumenge
+dia
+setmana
+mes
+any
+matí
+tarda
+nit
+avui
+demà
+ahir
+hora
+minut
+
+# --- weather
+sol
+pluja
+neu
+vent
+núvol
+calor
+fred
+temps
+
+# --- everyday verbs
+menjar
+beure
+dormir
+córrer
+caminar
+parlar
+escoltar
+mirar
+veure
+llegir
+escriure
+comprar
+vendre
+obrir
+tancar
+entrar
+sortir
+pujar
+baixar
+agafar
+donar
+rentar
+cuinar
+viure
+treballar
+estudiar
+jugar
+anar
+venir
+tenir
+ser
+estar
+fer
+voler
+poder
+saber
+dir
+agradar
+costar
+
+# --- describing things
+gran
+petit
+bo
+dolent
+nou
+vell
+alt
+baix
+llarg
+curt
+calent
+fred
+net
+brut
+bonic
+lleig
+fàcil
+difícil
+ràpid
+lent
+content
+trist
+cansat
+molt
+poc
+
+# --- asking
+qui
+què
+quan
+on
+com
+quant
+quin
+per què
+sí
+no
+gràcies
+si us plau
+hola
+adeu

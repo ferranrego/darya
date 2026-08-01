@@ -9,6 +9,7 @@ import { completeJson, deadlineIn } from "./providers";
 import { profile } from "../lang/index.ts";
 import { TRANSLITERATED, translitField, wordList } from "./lang-format.ts";
 import { MAX_OOV_TOKEN_RATE, MAX_OOV_TYPE_RATE } from "../content/difficulty.ts";
+import { isBeginnerLevel } from "../content/word-selection.ts";
 
 /**
  * AI text generation: one entry point over the shared free-tier provider
@@ -116,43 +117,67 @@ function textTypesFor(level: Level): readonly string[] {
 const FUNCTION_WORDS_ARE_FREE =
   "Articles, prepositions, pronouns, conjunctions, auxiliary and copular verbs are always allowed, whether or not they appear below.";
 
-function buildPrompt(req: GenerationRequest, attempt = 0): string {
-  const known = wordList(req.knownWords);
-  const target = wordList(req.targetWords, true);
+/**
+ * What the text should be, which is not the same question at every level.
+ *
+ * A beginner needs sentences they can reuse tomorrow, and the hand-authored
+ * seed texts already look like that: four or five independent predications
+ * sharing a setting. Demanding a narrative there forces filler, because there
+ * is no room for one - two or three sentences of at most six words, with no
+ * conjunctions. From L3 the sentences are long enough to connect, and a text
+ * that holds together is worth more than a list.
+ */
+function taskFor(req: GenerationRequest, attempt: number): string {
   const [minS, maxS] = req.level.sentenceRange;
 
-  // Rotate the text type and the setting per attempt, so a retry is a genuinely
-  // different request rather than the same one at the same temperature.
+  if (isBeginnerLevel(req.level)) {
+    return `Write ${minS}-${maxS} short sentences of the kind shown below - ${req.level.sentenceLengthHint}.
+Set them around: ${settingFor(req)}.
+
+WHAT MAKES THEM WORTH READING:
+- Each sentence must be useful on its own: something the learner could say tomorrow.
+- They do NOT need to tell a story or follow on from each other. A set of clear, separate sentences about one situation is exactly right.
+- Keep them concrete and picturable. Talk about things you can point at: food, the house, family, animals, colours, the weather, days, prices.
+- Vary the shape across the set: a statement, a question, a negative, something in the past.
+
+Sentences of the right kind:
+${profile.prompts.beginnerPatterns}`;
+  }
+
   const types = textTypesFor(req.level);
   const textType = types[(attempt + Math.floor(Math.random() * types.length)) % types.length];
+  return `Write ${textType}, ${minS}-${maxS} sentences, ${req.level.sentenceLengthHint}.
+Set it in this situation: ${settingFor(req)}, in the context of ${profile.prompts.culturalSetting}.
+
+WHAT MAKES IT READABLE:
+- It must hold together: every sentence follows from the one before it, and the whole says something.
+- Write what a person would actually say or write in this situation, not a sentence built to contain a word.`;
+}
+
+function settingFor(req: GenerationRequest): string {
   const scenarios = profile.prompts.scenarios;
-  const setting = req.theme ?? scenarios[Math.floor(Math.random() * scenarios.length)];
+  return req.theme ?? scenarios[Math.floor(Math.random() * scenarios.length)];
+}
+
+export function buildPrompt(req: GenerationRequest, attempt = 0): string {
+  const known = wordList(req.knownWords);
+  const target = wordList(req.targetWords, true);
 
   const recent = req.avoidTitles?.length
     ? `\n- The learner has already read texts called: ${req.avoidTitles.join("; ")}. Write about something else.`
     : "";
 
-  const beginner =
-    req.level.id === "L1" || req.level.id === "L2"
-      ? "\n- Keep it practical: greetings, asking and answering, numbers, days, food, basic descriptions."
-      : "";
-
-  return `You are ${profile.prompts.teacher} writing a graded reader text.
+  return `You are ${profile.prompts.teacher} writing for a learner at this level.
 ${profile.prompts.orthography}
 
 ${profile.prompts.interference}
 
-Write ${textType}, ${minS}-${maxS} sentences, ${req.level.sentenceLengthHint}.
-Set it in this situation: ${setting}, in the context of ${profile.prompts.culturalSetting}.
-
-WHAT MAKES IT READABLE:
-- It must hold together: every sentence follows from the one before it, and the whole says something.
-- Write what a person would actually say or write in this situation, not a sentence built to contain a word.${recent}${beginner}
+${taskFor(req, attempt)}${recent}
 
 VOCABULARY:
 - ${FUNCTION_WORDS_ARE_FREE}
 - Build the text from these words the learner knows. Any inflected form is fine: ${known}
-- These are the words the text exists to teach. Every one must appear, and each should appear twice if the length allows: ${target}
+- These are the words the text exists to teach. Every one must appear: ${target}
 - At least 19 of every 20 words must come from the two lists above. A proper name is allowed, sparingly.
 
 Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
@@ -264,7 +289,7 @@ export async function repairText(
     .join("\n");
 
   const repairPrompt = `You are ${profile.prompts.teacher}. The following sentences have vocabulary that is too difficult for the student.
-Rewrite ONLY these specific sentences, replacing the marked words with allowed ones. Keep the meaning as close to the original as possible, and keep each sentence a logical continuation of the one before it.
+Rewrite ONLY these specific sentences, replacing the marked words with allowed ones. Keep the meaning as close to the original as possible.${req.level.avgSentenceWords > 8 ? " Keep each sentence a logical continuation of the one before it." : " The sentences stand on their own; they do not need to connect."}
 
 Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 
@@ -380,7 +405,7 @@ ${doc.sentences.map((s, i) => `${i}: ${s.target}`).join("\n")}
 
 These words MUST appear in the text and currently do not: ${wordList(missing, true)}
 
-Rewrite the sentences that need to change so every missing word appears naturally, keeping the story, its length, and the rest of the vocabulary the same. Any inflection of a required word counts. Do not introduce any other unfamiliar word.
+Rewrite the sentences that need to change so every missing word appears naturally, keeping ${req.level.avgSentenceWords > 8 ? "the story, its length" : "the length"} and the rest of the vocabulary the same. Any inflection of a required word counts. Do not introduce any other unfamiliar word.
 
 Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 

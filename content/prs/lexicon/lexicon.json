@@ -291,7 +291,8 @@
       "exampleTranslit": "che mēkhāhī?",
       "exampleEn": "What do you want?",
       "tags": [
-        "Grammar & Connectors"
+        "Grammar & Connectors",
+        "beginner-core"
       ]
     },
     {
@@ -365,7 +366,8 @@
       "exampleTranslit": "na, tashakur.",
       "exampleEn": "No, thank you.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -401,7 +403,8 @@
       "exampleTranslit": "cherā mānda hastī?",
       "exampleEn": "Why are you tired?",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -419,7 +422,8 @@
       "exampleTranslit": "īn mard kī ast?",
       "exampleEn": "Who is this man?",
       "tags": [
-        "Grammar & Connectors"
+        "Grammar & Connectors",
+        "beginner-core"
       ]
     },
     {
@@ -455,7 +459,8 @@
       "exampleTranslit": "khāna-ye shumā kujā ast?",
       "exampleEn": "Where is your house?",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -488,7 +493,8 @@
       "exampleTranslit": "har rōz kār mēkunam.",
       "exampleEn": "I work every day.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "کن"
     },
@@ -507,7 +513,8 @@
       "exampleTranslit": "chetōr hastēd?",
       "exampleEn": "How are you?",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -543,7 +550,8 @@
       "exampleTranslit": "sāl-e naw mubārak!",
       "exampleEn": "Happy New Year!",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -561,7 +569,8 @@
       "exampleTranslit": "emrōz rōz-e khōb ast.",
       "exampleEn": "Today is a good day.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -598,7 +607,8 @@
       "exampleTranslit": "pārsāl dar herāt būdam.",
       "exampleEn": "Last year I was in Herat.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ]
     },
     {
@@ -634,7 +644,8 @@
       "exampleTranslit": "yak gīlās āb mēkhāham.",
       "exampleEn": "I want a glass of water.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -700,7 +711,8 @@
       "exampleTranslit": "dū khāhar dāram.",
       "exampleEn": "I have two sisters.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "دار"
     },
@@ -773,7 +785,8 @@
       "exampleTranslit": "khāna-ye mā kalān ast.",
       "exampleEn": "Our house is big.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -809,7 +822,8 @@
       "exampleTranslit": "shab hawā sard mēshawad.",
       "exampleEn": "At night the weather gets cold.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -827,7 +841,8 @@
       "exampleTranslit": "balē, man gushna hastam.",
       "exampleEn": "Yes, I am hungry.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -845,7 +860,8 @@
       "exampleTranslit": "padaram dar dukān kār mēkunad.",
       "exampleEn": "My father works in the shop.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ]
     },
     {
@@ -881,7 +897,8 @@
       "exampleTranslit": "emrōz ba bāzār mērawam.",
       "exampleEn": "Today I am going to the market.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -914,7 +931,8 @@
       "exampleTranslit": "har rōz ba kār mērawam.",
       "exampleEn": "Every day I go to work.",
       "tags": [
-        "Travel & Transportation"
+        "Travel & Transportation",
+        "beginner-core"
       ],
       "presentStem": "رو"
     },
@@ -933,7 +951,8 @@
       "exampleTranslit": "waqt-e kam dārēm.",
       "exampleEn": "We have little time.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -951,7 +970,8 @@
       "exampleTranslit": "māh-e āyenda safar mēkunam.",
       "exampleEn": "Next month I will travel.",
       "tags": [
-        "Nature & Environment"
+        "Nature & Environment",
+        "beginner-core"
       ]
     },
     {
@@ -982,7 +1002,8 @@
       "exampleTranslit": "ketāb rā ba man bedeh.",
       "exampleEn": "Give me the book.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "ده"
     },
@@ -1001,7 +1022,8 @@
       "exampleTranslit": "mādaram nān pukhta mēkunad.",
       "exampleEn": "My mother bakes bread.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ]
     },
     {
@@ -1055,7 +1077,8 @@
       "exampleTranslit": "pesar-e ō dar maktab ast.",
       "exampleEn": "His son is at school.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -1073,7 +1096,8 @@
       "exampleTranslit": "dōst-e man az herāt ast.",
       "exampleEn": "My friend is from Herat.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -1091,7 +1115,8 @@
       "exampleTranslit": "hāl-e man khōb ast.",
       "exampleEn": "I am well.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -1127,7 +1152,8 @@
       "exampleTranslit": "ān mard dukāndār ast.",
       "exampleEn": "That man is a shopkeeper.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -1145,7 +1171,8 @@
       "exampleTranslit": "dukhtar-e mā darī mēkhānad.",
       "exampleEn": "Our daughter studies Dari.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -1176,7 +1203,8 @@
       "exampleTranslit": "hawā sard mēshawad.",
       "exampleEn": "The weather is getting cold.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "شو"
     },
@@ -1195,7 +1223,8 @@
       "exampleTranslit": "īn zan dāktar ast.",
       "exampleEn": "This woman is a doctor.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -1226,7 +1255,8 @@
       "exampleTranslit": "mu'allem guft ke fardā emtehān ast.",
       "exampleEn": "The teacher said that tomorrow is the exam.",
       "tags": [
-        "Communication & Media"
+        "Communication & Media",
+        "beginner-core"
       ],
       "presentStem": "گو"
     },
@@ -1245,7 +1275,8 @@
       "exampleTranslit": "subh chāy mēkhuram.",
       "exampleEn": "In the morning I drink tea.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -1263,7 +1294,8 @@
       "exampleTranslit": "dar bāzār mardum-e ziyād būd.",
       "exampleEn": "There were many people at the market.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -1294,7 +1326,8 @@
       "exampleTranslit": "dīrōz dōstam rā dīdam.",
       "exampleEn": "Yesterday I saw my friend.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "بین"
     },
@@ -1313,7 +1346,8 @@
       "exampleTranslit": "barādaram shāgerd-e pohantūn ast.",
       "exampleEn": "My brother is a university student.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ]
     },
     {
@@ -1331,7 +1365,8 @@
       "exampleTranslit": "hafta haft rōz dārad.",
       "exampleEn": "A week has seven days.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -1362,7 +1397,8 @@
       "exampleTranslit": "fardā ba khāna-ye mā biyā.",
       "exampleEn": "Come to our house tomorrow.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "آ"
     },
@@ -1383,7 +1419,8 @@
       "exampleTranslit": "bacha-hā dar sarak bāzī mēkunand.",
       "exampleEn": "The children play in the street.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -1401,7 +1438,8 @@
       "exampleTranslit": "waqt kam ast.",
       "exampleEn": "There is little time.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -1437,7 +1475,8 @@
       "exampleTranslit": "chāy-e sabz mēkhurī?",
       "exampleEn": "Do you drink green tea?",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -1455,7 +1494,8 @@
       "exampleTranslit": "hawā emrōz bad nēst.",
       "exampleEn": "The weather today is not bad.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -1473,7 +1513,8 @@
       "exampleTranslit": "fardā ba maktab mērawam.",
       "exampleEn": "Tomorrow I go to school.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -1537,7 +1578,8 @@
       "exampleTranslit": "nān-e garm besyār khushmaza ast.",
       "exampleEn": "Warm bread is very tasty.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -1555,7 +1597,8 @@
       "exampleTranslit": "khāharam ketāb mēkhānad.",
       "exampleEn": "My sister reads a book.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ]
     },
     {
@@ -1573,7 +1616,8 @@
       "exampleTranslit": "dīrōz bārān bārīd.",
       "exampleEn": "Yesterday it rained.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -1594,7 +1638,8 @@
       "exampleTranslit": "dast-hāyat rā bushōy.",
       "exampleEn": "Wash your hands.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -1624,7 +1669,8 @@
       "exampleTranslit": "az bāzār mēwa gereftam.",
       "exampleEn": "I got fruit from the market.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "گیر"
     },
@@ -1656,7 +1702,8 @@
       "exampleTranslit": "nān-e chāsht rā bā fāmīl mēkhurēm.",
       "exampleEn": "We eat lunch with the family.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ],
       "presentStem": "خور"
     },
@@ -1675,7 +1722,8 @@
       "exampleTranslit": "chāy-e garm mēkhāham.",
       "exampleEn": "I want hot tea.",
       "tags": [
-        "Weather & Climate"
+        "Weather & Climate",
+        "beginner-core"
       ]
     },
     {
@@ -1732,7 +1780,8 @@
       "exampleTranslit": "mōtar-e naw kharīdēm.",
       "exampleEn": "We bought a new car.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -1778,7 +1827,8 @@
       "exampleTranslit": "khāna-ye mā khurd ast.",
       "exampleEn": "Our house is small.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -1819,7 +1869,8 @@
       "exampleTranslit": "saram dard mēkunad.",
       "exampleEn": "My head hurts.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -1940,7 +1991,8 @@
       "exampleTranslit": "zemestān-e kābul sard ast.",
       "exampleEn": "Kabul's winter is cold.",
       "tags": [
-        "Weather & Climate"
+        "Weather & Climate",
+        "beginner-core"
       ]
     },
     {
@@ -1958,7 +2010,8 @@
       "exampleTranslit": "salām, chetōr hastēd?",
       "exampleEn": "Hello, how are you?",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -1976,7 +2029,8 @@
       "exampleTranslit": "kābul shahr-e kalān ast.",
       "exampleEn": "Kabul is a big city.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -2064,7 +2118,8 @@
       "exampleTranslit": "shab-hā ketāb mēkhānam.",
       "exampleEn": "In the evenings I read books.",
       "tags": [
-        "Arts & Entertainment"
+        "Arts & Entertainment",
+        "beginner-core"
       ],
       "presentStem": "خوان"
     },
@@ -2083,7 +2138,8 @@
       "exampleTranslit": "mu'allem-e mā besyār khōb ast.",
       "exampleEn": "Our teacher is very good.",
       "tags": [
-        "Education & Learning"
+        "Education & Learning",
+        "beginner-core"
       ]
     },
     {
@@ -2103,7 +2159,8 @@
       "exampleTranslit": "piyāda bā pāy-e khud raftam.",
       "exampleEn": "I went on foot.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -2159,7 +2216,8 @@
       "exampleTranslit": "az dīdan-e shumā khush shudam.",
       "exampleEn": "I am glad to see you.",
       "tags": [
-        "Emotions & Feelings"
+        "Emotions & Feelings",
+        "beginner-core"
       ]
     },
     {
@@ -2208,7 +2266,8 @@
       "exampleTranslit": "shāgerdān dar senf hastand.",
       "exampleEn": "The students are in the classroom.",
       "tags": [
-        "Education & Learning"
+        "Education & Learning",
+        "beginner-core"
       ]
     },
     {
@@ -2228,7 +2287,8 @@
       "exampleTranslit": "hawā-ye emrōz āftābī ast.",
       "exampleEn": "Today's weather is sunny.",
       "tags": [
-        "Nature & Environment"
+        "Nature & Environment",
+        "beginner-core"
       ]
     },
     {
@@ -2282,7 +2342,8 @@
       "exampleTranslit": "īn bāyskel kuhna ast.",
       "exampleEn": "This bicycle is old.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -2339,7 +2400,8 @@
       "exampleTranslit": "chashm-hā-ye ō siyāh ast.",
       "exampleEn": "Her eyes are black.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -2405,7 +2467,8 @@
       "exampleTranslit": "nāmat rā īnjā benewīs.",
       "exampleEn": "Write your name here.",
       "tags": [
-        "Arts & Entertainment"
+        "Arts & Entertainment",
+        "beginner-core"
       ],
       "presentStem": "نویس"
     },
@@ -2430,7 +2493,8 @@
       "exampleTranslit": "bacha rā ba maktab burdam.",
       "exampleEn": "I took the child to school.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "بر"
     },
@@ -2449,7 +2513,8 @@
       "exampleTranslit": "chand barādar dārī?",
       "exampleEn": "How many brothers do you have?",
       "tags": [
-        "Grammar & Connectors"
+        "Grammar & Connectors",
+        "beginner-core"
       ]
     },
     {
@@ -2505,7 +2570,8 @@
       "exampleTranslit": "lutfan yak chāy biyāwar.",
       "exampleEn": "Please bring a tea.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -2615,7 +2681,8 @@
       "exampleTranslit": "delam barāye watan tang shuda ast.",
       "exampleEn": "I miss my homeland.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -2725,7 +2792,8 @@
       "exampleTranslit": "gōsht-e gōsfand khushmaza ast.",
       "exampleEn": "Lamb meat is tasty.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -2743,7 +2811,8 @@
       "exampleTranslit": "subh shīr-e garm mēkhuram.",
       "exampleEn": "In the morning I drink warm milk.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -2815,7 +2884,8 @@
       "exampleTranslit": "īn qarya besyār maqbūl ast.",
       "exampleEn": "This village is very beautiful.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -2869,7 +2939,8 @@
       "exampleTranslit": "tashakur, hāl-e man khōb ast.",
       "exampleEn": "Thank you, I am well.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -2905,7 +2976,8 @@
       "exampleTranslit": "chāy-e siyāh mēkhuram.",
       "exampleEn": "I drink black tea.",
       "tags": [
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -2953,7 +3025,8 @@
       "exampleTranslit": "āhang-e afghānī mēshunawam.",
       "exampleEn": "I listen to Afghan music.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "شنو"
     },
@@ -2972,7 +3045,8 @@
       "exampleTranslit": "ba'd az kār mānda hastam.",
       "exampleEn": "After work I am tired.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -3038,7 +3112,8 @@
       "exampleTranslit": "barf safēd ast.",
       "exampleEn": "Snow is white.",
       "tags": [
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -3079,7 +3154,8 @@
       "exampleTranslit": "khudā hāfez, fardā mēbīnamet.",
       "exampleEn": "Goodbye, see you tomorrow.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -3141,7 +3217,8 @@
       "exampleTranslit": "shab-hā waqt khāb mēkunam.",
       "exampleEn": "At night I sleep early.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "خواب"
     },
@@ -3160,7 +3237,8 @@
       "exampleTranslit": "yak sā'at sabr kardam.",
       "exampleEn": "I waited for an hour.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -3185,7 +3263,8 @@
       "exampleTranslit": "chāy biyāwar lutfan.",
       "exampleEn": "Bring tea, please.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "آور"
     },
@@ -3204,7 +3283,8 @@
       "exampleTranslit": "mēwa-ye tāza az bāzār kharīdam.",
       "exampleEn": "I bought fresh fruit from the market.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -3222,7 +3302,8 @@
       "exampleTranslit": "āsmān ābī ast.",
       "exampleEn": "The sky is blue.",
       "tags": [
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -3258,7 +3339,8 @@
       "exampleTranslit": "sēb-e surkh shīrīn ast.",
       "exampleEn": "The red apple is sweet.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -3301,7 +3383,8 @@
       "exampleTranslit": "lutfan īnjā benshīn.",
       "exampleEn": "Please sit here.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "نشین"
     },
@@ -3394,7 +3477,8 @@
       "exampleTranslit": "chāy-e sabz dōst dāram.",
       "exampleEn": "I like green tea.",
       "tags": [
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -3450,7 +3534,8 @@
       "exampleTranslit": "berenj bā gōsht mēkhurēm.",
       "exampleEn": "We eat rice with meat.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -3576,7 +3661,8 @@
       "exampleTranslit": "zemestān dar kābul barf mēbārad.",
       "exampleEn": "In winter it snows in Kabul.",
       "tags": [
-        "Nature & Environment"
+        "Nature & Environment",
+        "beginner-core"
       ]
     },
     {
@@ -3596,7 +3682,8 @@
       "exampleTranslit": "āftāb garm ast.",
       "exampleEn": "The sun is warm.",
       "tags": [
-        "Nature & Environment"
+        "Nature & Environment",
+        "beginner-core"
       ]
     },
     {
@@ -3632,7 +3719,8 @@
       "exampleTranslit": "dar bahār bārān-e ziyād mēbārad.",
       "exampleEn": "In spring it rains a lot.",
       "tags": [
-        "Nature & Environment"
+        "Nature & Environment",
+        "beginner-core"
       ]
     },
     {
@@ -3668,7 +3756,8 @@
       "exampleTranslit": "anār surkh ast.",
       "exampleEn": "The pomegranate is red.",
       "tags": [
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -3785,7 +3874,8 @@
       "exampleTranslit": "angūr-e herāt mash'hūr ast.",
       "exampleEn": "Herat's grapes are famous.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -3893,7 +3983,8 @@
       "exampleTranslit": "utāq-e man khurd ast.",
       "exampleEn": "My room is small.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -4180,7 +4271,8 @@
       "exampleTranslit": "az bāzār sēb kharīdam.",
       "exampleEn": "I bought apples from the market.",
       "tags": [
-        "Work & Business"
+        "Work & Business",
+        "beginner-core"
       ],
       "presentStem": "خر"
     },
@@ -4379,7 +4471,8 @@
       "exampleTranslit": "kōh-hā-ye afghānestān buland ast.",
       "exampleEn": "Afghanistan's mountains are high.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -4926,7 +5019,8 @@
       "exampleTranslit": "darwāza rā bāz kun.",
       "exampleEn": "Open the door.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -5369,7 +5463,8 @@
       "exampleTranslit": "ō zūd mēdawad.",
       "exampleEn": "He runs fast.",
       "tags": [
-        "Travel & Transportation"
+        "Travel & Transportation",
+        "beginner-core"
       ],
       "presentStem": "دو"
     },
@@ -5406,7 +5501,8 @@
       "exampleTranslit": "khāla-am dar mazār zendagī mēkunad.",
       "exampleEn": "My aunt lives in Mazar.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ]
     },
     {
@@ -5481,7 +5577,8 @@
       "exampleTranslit": "gōsh kun.",
       "exampleEn": "Listen.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -5673,7 +5770,8 @@
       "exampleTranslit": "darī khāndan āsān ast.",
       "exampleEn": "Reading Dari is easy.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -5883,7 +5981,8 @@
       "exampleTranslit": "mōtar rā furōkht.",
       "exampleEn": "He sold the car.",
       "tags": [
-        "Work & Business"
+        "Work & Business",
+        "beginner-core"
       ],
       "presentStem": "فروش"
     },
@@ -5958,7 +6057,8 @@
       "exampleTranslit": "kākāyam dukān dārad.",
       "exampleEn": "My uncle has a shop.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ]
     },
     {
@@ -6539,7 +6639,8 @@
       "exampleTranslit": "nān-e chāsht āmāda ast.",
       "exampleEn": "Lunch is ready.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -6672,7 +6773,8 @@
       "exampleTranslit": "az kelkīn kōh rā mēbīnam.",
       "exampleEn": "From the window I see the mountain.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -7204,7 +7306,8 @@
       "exampleTranslit": "āb āshāmīd.",
       "exampleEn": "He drank water.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ],
       "presentStem": "آشام"
     },
@@ -7400,7 +7503,8 @@
       "exampleTranslit": "mō-yi ō dirāz ast.",
       "exampleEn": "Her hair is long.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -7568,7 +7672,8 @@
       "exampleTranslit": "bād mēwazad.",
       "exampleEn": "The wind is blowing.",
       "tags": [
-        "Nature & Environment"
+        "Nature & Environment",
+        "beginner-core"
       ]
     },
     {
@@ -7660,7 +7765,8 @@
       "exampleTranslit": "sag wafādār ast.",
       "exampleEn": "The dog is loyal.",
       "tags": [
-        "Animals & Pets"
+        "Animals & Pets",
+        "beginner-core"
       ]
     },
     {
@@ -7735,7 +7841,8 @@
       "exampleTranslit": "māhī dar āb ast.",
       "exampleEn": "The fish is in the water.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -7815,7 +7922,8 @@
       "exampleTranslit": "bīnī-yi ō buzurg ast.",
       "exampleEn": "His nose is big.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -8389,7 +8497,8 @@
       "exampleTranslit": "murgh tukhm mēdihad.",
       "exampleEn": "The chicken gives eggs.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -8566,7 +8675,8 @@
       "exampleTranslit": "gāw shīr mēdihad.",
       "exampleEn": "The cow gives milk.",
       "tags": [
-        "Animals & Pets"
+        "Animals & Pets",
+        "beginner-core"
       ]
     },
     {
@@ -9632,7 +9742,8 @@
       "exampleTranslit": "dandān safēd ast.",
       "exampleEn": "The tooth is white.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ]
     },
     {
@@ -9672,7 +9783,8 @@
       "exampleTranslit": "gōsfand mēcharad.",
       "exampleEn": "The sheep grazes.",
       "tags": [
-        "Animals & Pets"
+        "Animals & Pets",
+        "beginner-core"
       ]
     },
     {
@@ -10508,7 +10620,8 @@
       "exampleTranslit": "asp tund mēdawad.",
       "exampleEn": "The horse runs fast.",
       "tags": [
-        "Animals & Pets"
+        "Animals & Pets",
+        "beginner-core"
       ]
     },
     {
@@ -12216,7 +12329,8 @@
       "exampleTranslit": "pishak shīr mēkhurad.",
       "exampleEn": "The cat drinks milk.",
       "tags": [
-        "Animals & Pets"
+        "Animals & Pets",
+        "beginner-core"
       ]
     },
     {
@@ -12478,7 +12592,8 @@
       "exampleTranslit": "kārd bisyār tēz ast.",
       "exampleEn": "The knife is very sharp.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -13362,7 +13477,8 @@
       "exampleTranslit": "īn mushkil ba zūdī hal mēshawad.",
       "exampleEn": "This problem will be solved soon.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -15768,7 +15884,8 @@
       "exampleTranslit": "barāye khōrdan-e sōp qāshuq zarūrat ast.",
       "exampleEn": "A spoon is needed to eat soup.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -15822,7 +15939,8 @@
       "exampleTranslit": "ghazā rā dar bushqāb kashīdam.",
       "exampleEn": "I served the food on the plate.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -16496,7 +16614,8 @@
       "exampleTranslit": "yak jūra jurāb-e pashmī kharīdam.",
       "exampleEn": "I bought a pair of wool socks.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -18680,7 +18799,8 @@
       "exampleTranslit": "rō-yi sandalī nishast.",
       "exampleEn": "He sat on the chair.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -20123,7 +20243,8 @@
       "exampleTranslit": "yak lēwān āb bidi.",
       "exampleEn": "Give me a glass of water.",
       "tags": [
-        "Clothing & Fashion"
+        "Clothing & Fashion",
+        "beginner-core"
       ]
     },
     {
@@ -20616,7 +20737,8 @@
       "exampleTranslit": "qīmat-i kālā-hā-yi asāsī bālā rafta ast.",
       "exampleEn": "The price of basic goods has gone up.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -24404,7 +24526,8 @@
       "exampleTranslit": "yak finjān chāy.",
       "exampleEn": "A cup of tea.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -26240,7 +26363,8 @@
       "exampleTranslit": "maraz-i shakar dar khānawāda-yi ō irsī ast.",
       "exampleEn": "Diabetes is hereditary in his family.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -38108,7 +38232,8 @@
       "exampleTranslit": "istifāda az inirzhī-i pāk ba kāhish-i ālūdagī kumak mēkunad.",
       "exampleEn": "Using clean energy helps reduce pollution.",
       "tags": [
-        "Science & Technology"
+        "Science & Technology",
+        "beginner-core"
       ]
     },
     {
@@ -40589,7 +40714,8 @@
       "exampleTranslit": "shakk sarāghāz-i yaqīn ast.",
       "exampleEn": "Doubt is the beginning of certainty.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -110773,6 +110899,672 @@
       "tags": [
         "People"
       ]
+    },
+    {
+      "target": "کچالو",
+      "translit": "kachālū",
+      "glossEn": "potato",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "کچالو را پخته می‌کنم.",
+      "exampleTranslit": "kachālū rā pukhta mēkunam.",
+      "exampleEn": "I am cooking the potatoes.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6037",
+      "targetNormalized": "کچالو",
+      "freqRank": 6034,
+      "freqBand": 10
+    },
+    {
+      "target": "پیاز",
+      "translit": "piyāz",
+      "glossEn": "onion",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "پیاز را ریزه می‌کنم.",
+      "exampleTranslit": "piyāz rā rēza mēkunam.",
+      "exampleEn": "I am chopping the onion.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6038",
+      "targetNormalized": "پیاز",
+      "freqRank": 6035,
+      "freqBand": 10
+    },
+    {
+      "target": "نمک",
+      "translit": "namak",
+      "glossEn": "salt",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "نمک در غذا کم است.",
+      "exampleTranslit": "namak dar ghazā kam ast.",
+      "exampleEn": "There is not enough salt in the food.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6039",
+      "targetNormalized": "نمک",
+      "freqRank": 6036,
+      "freqBand": 10
+    },
+    {
+      "target": "روغن",
+      "translit": "rōghan",
+      "glossEn": "oil, fat",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "روغن در دیگ گرم است.",
+      "exampleTranslit": "rōghan dar dēg garm ast.",
+      "exampleEn": "The oil in the pot is hot.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6040",
+      "targetNormalized": "روغن",
+      "freqRank": 6037,
+      "freqBand": 10
+    },
+    {
+      "target": "تخم",
+      "translit": "tukhm",
+      "glossEn": "egg",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "صبح دو تخم می‌خورم.",
+      "exampleTranslit": "subh dō tukhm mēkhuram.",
+      "exampleEn": "In the morning I eat two eggs.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6041",
+      "targetNormalized": "تخم",
+      "freqRank": 6038,
+      "freqBand": 10
+    },
+    {
+      "target": "ناشتا",
+      "translit": "nāshtā",
+      "glossEn": "breakfast",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "ناشتا با چای می‌خوریم.",
+      "exampleTranslit": "nāshtā bā chāy mēkhurēm.",
+      "exampleEn": "We have breakfast with tea.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6042",
+      "targetNormalized": "ناشتا",
+      "freqRank": 6039,
+      "freqBand": 10
+    },
+    {
+      "target": "میز",
+      "translit": "mēz",
+      "glossEn": "table",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "کتاب بالای میز است.",
+      "exampleTranslit": "kitāb bālā-ye mēz ast.",
+      "exampleEn": "The book is on the table.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6043",
+      "targetNormalized": "میز",
+      "freqRank": 6040,
+      "freqBand": 10
+    },
+    {
+      "target": "الماری",
+      "translit": "almārī",
+      "glossEn": "cupboard, wardrobe",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "کالا در الماری است.",
+      "exampleTranslit": "kālā dar almārī ast.",
+      "exampleEn": "The clothes are in the wardrobe.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6044",
+      "targetNormalized": "الماری",
+      "freqRank": 6041,
+      "freqBand": 10
+    },
+    {
+      "target": "دیوار",
+      "translit": "dēwār",
+      "glossEn": "wall",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "دیوار خانه سفید است.",
+      "exampleTranslit": "dēwār-i khāna safēd ast.",
+      "exampleEn": "The wall of the house is white.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6045",
+      "targetNormalized": "دیوار",
+      "freqRank": 6042,
+      "freqBand": 10
+    },
+    {
+      "target": "آشپزخانه",
+      "translit": "āshpazkhāna",
+      "glossEn": "kitchen",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "مادرم در آشپزخانه است.",
+      "exampleTranslit": "mādaram dar āshpazkhāna ast.",
+      "exampleEn": "My mother is in the kitchen.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6046",
+      "targetNormalized": "آشپزخانه",
+      "freqRank": 6043,
+      "freqBand": 10
+    },
+    {
+      "target": "تشناب",
+      "translit": "tashnāb",
+      "glossEn": "bathroom, toilet",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "تشناب در آخر دهلیز است.",
+      "exampleTranslit": "tashnāb dar ākhir-i dahlēz ast.",
+      "exampleEn": "The bathroom is at the end of the corridor.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6047",
+      "targetNormalized": "تشناب",
+      "freqRank": 6044,
+      "freqBand": 10
+    },
+    {
+      "target": "حویلی",
+      "translit": "haweli",
+      "glossEn": "courtyard, compound",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بچه‌ها در حویلی بازی می‌کنند.",
+      "exampleTranslit": "bacha-hā dar haweli bāzī mēkunand.",
+      "exampleEn": "The children are playing in the courtyard.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6048",
+      "targetNormalized": "حویلی",
+      "freqRank": 6045,
+      "freqBand": 10
+    },
+    {
+      "target": "بابا",
+      "translit": "bābā",
+      "glossEn": "grandfather; dad",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بابا قصه می‌گوید.",
+      "exampleTranslit": "bābā qissa mēgōyad.",
+      "exampleEn": "Grandfather tells a story.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6049",
+      "targetNormalized": "بابا",
+      "freqRank": 6046,
+      "freqBand": 10
+    },
+    {
+      "target": "بی‌بی",
+      "translit": "bībī",
+      "glossEn": "grandmother",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بی‌بی چای می‌آورد.",
+      "exampleTranslit": "bībī chāy mēāwarad.",
+      "exampleEn": "Grandmother brings tea.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6050",
+      "targetNormalized": "بی‌بی",
+      "freqRank": 6047,
+      "freqBand": 10
+    },
+    {
+      "target": "عمه",
+      "translit": "ama",
+      "glossEn": "paternal aunt",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "عمه‌ام در مزار زندگی می‌کند.",
+      "exampleTranslit": "ama-am dar Mazār zindagī mēkunad.",
+      "exampleEn": "My aunt lives in Mazar.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6051",
+      "targetNormalized": "عمه",
+      "freqRank": 6048,
+      "freqBand": 10
+    },
+    {
+      "target": "شوهر",
+      "translit": "shawhar",
+      "glossEn": "husband",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "شوهر او معلم است.",
+      "exampleTranslit": "shawhar-i ō mu'allim ast.",
+      "exampleEn": "Her husband is a teacher.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6052",
+      "targetNormalized": "شوهر",
+      "freqRank": 6049,
+      "freqBand": 10
+    },
+    {
+      "target": "بز",
+      "translit": "buz",
+      "glossEn": "goat",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بز در کوه است.",
+      "exampleTranslit": "buz dar kōh ast.",
+      "exampleEn": "The goat is on the mountain.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6053",
+      "targetNormalized": "بز",
+      "freqRank": 6050,
+      "freqBand": 10
+    },
+    {
+      "target": "دهن",
+      "translit": "dahan",
+      "glossEn": "mouth",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "دهن خود را باز کن.",
+      "exampleTranslit": "dahan-i khud rā bāz kun.",
+      "exampleEn": "Open your mouth.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6054",
+      "targetNormalized": "دهن",
+      "freqRank": 6051,
+      "freqBand": 10
+    },
+    {
+      "target": "بازو",
+      "translit": "bāzū",
+      "glossEn": "arm",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بازوی من درد می‌کند.",
+      "exampleTranslit": "bāzū-ye man dard mēkunad.",
+      "exampleEn": "My arm hurts.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6055",
+      "targetNormalized": "بازو",
+      "freqRank": 6052,
+      "freqBand": 10
+    },
+    {
+      "target": "پیراهن",
+      "translit": "pērāhan",
+      "glossEn": "shirt",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "پیراهن او آبی است.",
+      "exampleTranslit": "pērāhan-i ō ābī ast.",
+      "exampleEn": "His shirt is blue.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6056",
+      "targetNormalized": "پیراهن",
+      "freqRank": 6053,
+      "freqBand": 10
+    },
+    {
+      "target": "پتلون",
+      "translit": "patlūn",
+      "glossEn": "trousers",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "پتلون نو خریدم.",
+      "exampleTranslit": "patlūn-i nau kharīdam.",
+      "exampleEn": "I bought new trousers.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6057",
+      "targetNormalized": "پتلون",
+      "freqRank": 6054,
+      "freqBand": 10
+    },
+    {
+      "target": "بوت",
+      "translit": "būt",
+      "glossEn": "shoe",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بوت‌های من سیاه است.",
+      "exampleTranslit": "būt-hā-ye man siyāh ast.",
+      "exampleEn": "My shoes are black.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6058",
+      "targetNormalized": "بوت",
+      "freqRank": 6055,
+      "freqBand": 10
+    },
+    {
+      "target": "کلاه",
+      "translit": "kulāh",
+      "glossEn": "hat, cap",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "کلاه خود را بگیر.",
+      "exampleTranslit": "kulāh-i khud rā bigīr.",
+      "exampleEn": "Take your hat.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6059",
+      "targetNormalized": "کلاه",
+      "freqRank": 6056,
+      "freqBand": 10
+    },
+    {
+      "target": "زرد",
+      "translit": "zard",
+      "glossEn": "yellow",
+      "pos": "adjective",
+      "register": "neutral",
+      "exampleTarget": "گل زرد مقبول است.",
+      "exampleTranslit": "gul-i zard maqbūl ast.",
+      "exampleEn": "The yellow flower is beautiful.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6060",
+      "targetNormalized": "زرد",
+      "freqRank": 6057,
+      "freqBand": 10
+    },
+    {
+      "target": "ابر",
+      "translit": "abr",
+      "glossEn": "cloud",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "ابر سیاه در آسمان است.",
+      "exampleTranslit": "abr-i siyāh dar āsmān ast.",
+      "exampleEn": "There is a black cloud in the sky.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6061",
+      "targetNormalized": "ابر",
+      "freqRank": 6058,
+      "freqBand": 10
+    },
+    {
+      "target": "شنبه",
+      "translit": "shanbē",
+      "glossEn": "Saturday",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "شنبه به کار می‌روم.",
+      "exampleTranslit": "shanbē ba kār mērawam.",
+      "exampleEn": "On Saturday I go to work.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6062",
+      "targetNormalized": "شنبه",
+      "freqRank": 6059,
+      "freqBand": 10
+    },
+    {
+      "target": "یکشنبه",
+      "translit": "yakshanbē",
+      "glossEn": "Sunday",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "یکشنبه رخصت است.",
+      "exampleTranslit": "yakshanbē rukhsat ast.",
+      "exampleEn": "Sunday is a holiday.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6063",
+      "targetNormalized": "یکشنبه",
+      "freqRank": 6060,
+      "freqBand": 10
+    },
+    {
+      "target": "دوشنبه",
+      "translit": "dōshanbē",
+      "glossEn": "Monday",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "دوشنبه مکتب شروع می‌شود.",
+      "exampleTranslit": "dōshanbē maktab shurū' mēshawad.",
+      "exampleEn": "School starts on Monday.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6064",
+      "targetNormalized": "دوشنبه",
+      "freqRank": 6061,
+      "freqBand": 10
+    },
+    {
+      "target": "سه‌شنبه",
+      "translit": "sēshanbē",
+      "glossEn": "Tuesday",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "سه‌شنبه به بازار می‌رویم.",
+      "exampleTranslit": "sēshanbē ba bāzār mērawēm.",
+      "exampleEn": "On Tuesday we go to the market.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6065",
+      "targetNormalized": "سه‌شنبه",
+      "freqRank": 6062,
+      "freqBand": 10
+    },
+    {
+      "target": "چهارشنبه",
+      "translit": "chahārshanbē",
+      "glossEn": "Wednesday",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "چهارشنبه امتحان داریم.",
+      "exampleTranslit": "chahārshanbē imtihān dārēm.",
+      "exampleEn": "We have an exam on Wednesday.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6066",
+      "targetNormalized": "چهارشنبه",
+      "freqRank": 6063,
+      "freqBand": 10
+    },
+    {
+      "target": "پنجشنبه",
+      "translit": "panjshanbē",
+      "glossEn": "Thursday",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "پنجشنبه کار کم است.",
+      "exampleTranslit": "panjshanbē kār kam ast.",
+      "exampleEn": "There is little work on Thursday.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6067",
+      "targetNormalized": "پنجشنبه",
+      "freqRank": 6064,
+      "freqBand": 10
+    },
+    {
+      "target": "جمعه",
+      "translit": "jum'a",
+      "glossEn": "Friday",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "جمعه همه در خانه استند.",
+      "exampleTranslit": "jum'a hama dar khāna astand.",
+      "exampleEn": "On Friday everyone is at home.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6068",
+      "targetNormalized": "جمعه",
+      "freqRank": 6065,
+      "freqBand": 10
+    },
+    {
+      "target": "ایستادن",
+      "translit": "ēstādan",
+      "glossEn": "to stand",
+      "pos": "verb",
+      "register": "neutral",
+      "exampleTarget": "او پیش دروازه ایستاده است.",
+      "exampleTranslit": "ō pēsh-i darwāza ēstāda ast.",
+      "exampleEn": "He is standing in front of the door.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6069",
+      "targetNormalized": "ایستادن",
+      "freqRank": 6066,
+      "freqBand": 10
+    },
+    {
+      "target": "کوتاه",
+      "translit": "kōtāh",
+      "glossEn": "short",
+      "pos": "adjective",
+      "register": "neutral",
+      "exampleTarget": "این راه کوتاه است.",
+      "exampleTranslit": "īn rāh kōtāh ast.",
+      "exampleEn": "This road is short.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6070",
+      "targetNormalized": "کوتاه",
+      "freqRank": 6067,
+      "freqBand": 10
+    },
+    {
+      "target": "تیز",
+      "translit": "tēz",
+      "glossEn": "fast; sharp",
+      "pos": "adjective",
+      "register": "neutral",
+      "exampleTarget": "موتر بسیار تیز می‌رود.",
+      "exampleTranslit": "mōtar bisyār tēz mērawad.",
+      "exampleEn": "The car goes very fast.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6071",
+      "targetNormalized": "تیز",
+      "freqRank": 6068,
+      "freqBand": 10
+    },
+    {
+      "target": "آهسته",
+      "translit": "āhista",
+      "glossEn": "slow, slowly",
+      "pos": "adverb",
+      "register": "neutral",
+      "exampleTarget": "آهسته گپ بزن.",
+      "exampleTranslit": "āhista gap bizan.",
+      "exampleEn": "Speak slowly.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6072",
+      "targetNormalized": "آهسته",
+      "freqRank": 6069,
+      "freqBand": 10
+    },
+    {
+      "target": "کدام",
+      "translit": "kudām",
+      "glossEn": "which",
+      "pos": "determiner",
+      "register": "neutral",
+      "exampleTarget": "کدام کتاب را می‌خواهی؟",
+      "exampleTranslit": "kudām kitāb rā mēkhwāhī?",
+      "exampleEn": "Which book do you want?",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6073",
+      "targetNormalized": "کدام",
+      "freqRank": 6070,
+      "freqBand": 10
     }
   ]
 }

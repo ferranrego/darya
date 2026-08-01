@@ -3,7 +3,13 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { levelsFileSchema, lexiconFileSchema, type LexiconEntry } from "./schema.ts";
-import { selectKnown, selectTargets, shuffle, targetCountFor } from "./word-selection.ts";
+import {
+  isBeginnerLevel,
+  selectKnown,
+  selectTargets,
+  shuffle,
+  targetCountFor,
+} from "./word-selection.ts";
 
 /**
  * These run against the real shipped content for both languages, because the
@@ -55,14 +61,27 @@ describe.each(LANGS)("%s word selection", (lang) => {
 
   describe("targetCountFor", () => {
     it("scales with the level's own sentence length and stays teachable", () => {
-      let previous = 0;
       for (const level of levels) {
         const n = targetCountFor(level, 0.05);
         expect(n, `${level.id} asks for ${n} new words`).toBeGreaterThanOrEqual(2);
         // The old ceiling of 15 produced texts the model simply ignored.
         expect(n, `${level.id} asks for ${n} new words`).toBeLessThanOrEqual(8);
-        expect(n).toBeGreaterThanOrEqual(previous - 1);
-        previous = n;
+      }
+    });
+
+    it("gives beginner levels one new word per sentence", () => {
+      // Deliberately more than A2 asks for, and deliberately not derived from
+      // the ratio. A beginner text is a set of independent useful sentences, so
+      // one new word per sentence is both the most a short sentence can carry
+      // and a natural unit to absorb - while the ratio's whole 0.02-0.25 range
+      // collapsed to two words there, making the setting inert at exactly the
+      // levels where new vocabulary matters most.
+      for (const level of levels.filter(isBeginnerLevel)) {
+        const mid = (level.sentenceRange[0] + level.sentenceRange[1]) / 2;
+        expect(targetCountFor(level, 0.05), `${level.id}`).toBe(Math.round(mid));
+        expect(targetCountFor(level, 0.25), `${level.id} must ignore the ratio`).toBe(
+          Math.round(mid),
+        );
       }
     });
 

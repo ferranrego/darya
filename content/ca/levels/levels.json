@@ -13,8 +13,8 @@
       ],
       "entryKnownWords": 0,
       "sentenceRange": [
-        2,
-        3
+        4,
+        6
       ],
       "sentenceLengthHint": "strictly max 6 words per sentence, simple subject-verb-object, NO conjunctions (no 'and', 'but')",
       "grammarAllowed": [
@@ -42,8 +42,8 @@
       ],
       "entryKnownWords": 500,
       "sentenceRange": [
-        2,
-        3
+        4,
+        6
       ],
       "sentenceLengthHint": "strictly max 8 words per sentence, can use simple conjunctions but no complex clauses",
       "grammarAllowed": [

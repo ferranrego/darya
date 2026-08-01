@@ -43,6 +43,29 @@ export const INTERFERENCE = [
   "Keep the majhul vowels in transliteration: dōst not dust, shēr not shir. They are the clearest marker of Dari and Iranian Persian has lost them.",
 ].join("\n");
 
+/**
+ * The sentence shapes a Dari beginner should meet first, as examples.
+ *
+ * Kabul standard, and deliberately concrete: each is reusable with different
+ * words and worth knowing on its own.
+ */
+export const BEGINNER_PATTERNS = [
+  "دریا آبی است.",
+  "خانه ما کلان است.",
+  "پدر من معلم است.",
+  "سگ گوشت می‌خورد.",
+  "بشقاب‌ها بالای میز است.",
+  "امروز آفتاب است.",
+  "دوشنبه به مکتب می‌روم.",
+  "سیب چند است؟",
+  "نام تو چیست؟",
+  "تشناب کجا است؟",
+  "چای گرم را دوست دارم.",
+  "در آشپزخانه نان است.",
+  "امروز وقت ندارم.",
+  "یک چوکی نو می‌خرم.",
+].join("\n");
+
 /** What generated reader texts should be about, culturally. */
 export const CULTURAL_SETTING = "everyday Afghan life";
 

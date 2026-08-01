@@ -68,6 +68,22 @@ export interface LanguagePrompts {
    * way: `estranyar` glossed "to miss", which is Spanish *extrañar*.
    */
   interference: string;
+  /**
+   * Model sentences for the first two levels.
+   *
+   * A beginner does not need a story, they need sentences they can say
+   * tomorrow: "El riu és blau", "Quant costa la poma?", "Avui fa sol". The
+   * hand-authored seed texts are already like this - four or five independent
+   * predications sharing a setting, not a chained narrative - while the prompt
+   * demanded "a short story with a beginning and an end" inside two or three
+   * sentences of at most six words. That is not writable, and it produced
+   * "Soc l'home / No estic / Seré el que serà".
+   *
+   * Shown as real sentences rather than described as patterns, because a
+   * pattern is an abstraction the model has to instantiate and a sentence is
+   * one it can imitate.
+   */
+  beginnerPatterns: string;
   /** What generated reader texts should be about, e.g. "everyday Afghan life". */
   culturalSetting: string;
   /** Culturally appropriate settings for generated exercises. */

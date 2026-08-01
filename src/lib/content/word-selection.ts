@@ -69,8 +69,68 @@ export function shuffle<T>(items: readonly T[], rand: () => number): T[] {
  */
 export function targetCountFor(level: Level, newWordRatio: number): number {
   const midSentences = (level.sentenceRange[0] + level.sentenceRange[1]) / 2;
+
+  // At a beginner level the text is a set of independent useful sentences, so
+  // the natural unit is one new word per sentence - which is both the most a
+  // short sentence can carry and the most a beginner can absorb from it.
+  //
+  // The ratio is the wrong instrument there. Its whole 0.02-0.25 range collapsed
+  // to two or three words at L1 and L2, because `expectedTokens` is 12.5, so the
+  // setting was inert at exactly the levels where new vocabulary matters most.
+  if (isBeginnerLevel(level)) return Math.round(midSentences);
+
   const expectedTokens = midSentences * level.avgSentenceWords;
   return Math.max(MIN_TARGETS, Math.min(MAX_TARGETS, Math.round(expectedTokens * newWordRatio)));
+}
+
+/**
+ * The tag that makes a word teachable early regardless of its rank.
+ *
+ * Frequency decides teaching order and does not decide what a beginner needs
+ * on day one - no corpus does, because concrete nouns are rarer in text than
+ * abstract ones. Catalan's L1 head is `estat`, `cosa`, `part`, `manera`,
+ * `sistema`, while `poma` ranks 1468 and `carn` 818, so half the sentences a
+ * first-week learner should be reading were not expressible at their level.
+ * See content/<lang>/lexicon/beginner-core.txt.
+ */
+export const BEGINNER_CORE_TAG = "beginner-core";
+
+/**
+ * The levels that get useful sentences rather than a text.
+ *
+ * Keyed off the CEFR label, not the sentence length. Length looked like the
+ * more robust signal and is not: Dari A2 averages seven words and Catalan A2
+ * nine, so a threshold on it silently made A2 a beginner level in one language
+ * and not the other. Above A1 a learner can hold a text together, and should.
+ */
+const BEGINNER_HINTS = new Set(["pre-A1", "A1"]);
+
+export function isBeginnerLevel(level: Level): boolean {
+  return BEGINNER_HINTS.has(level.cefrHint.trim());
+}
+
+/**
+ * The words a level may teach.
+ *
+ * In-band by frequency, plus the curated beginner core at the first levels.
+ * The core is additive: it never removes a word, never changes `freqRank`, and
+ * never makes a word count as *known* - `placementCredit` is untouched, so
+ * these are words the learner is taught, not words assumed.
+ */
+export function teachablePool(
+  entries: readonly LexiconEntry[],
+  level: Level,
+  isKnown: (e: LexiconEntry) => boolean,
+  isUsable: (e: LexiconEntry) => boolean,
+): LexiconEntry[] {
+  const beginner = isBeginnerLevel(level);
+  return entries.filter(
+    (e) =>
+      !isKnown(e) &&
+      isUsable(e) &&
+      (level.freqBands.includes(e.freqBand) ||
+        (beginner && e.tags.includes(BEGINNER_CORE_TAG))),
+  );
 }
 
 const isNoun = (e: LexiconEntry) => e.pos === "noun";
@@ -83,6 +143,17 @@ export interface SelectTargetsInput {
   count: number;
   /** Seed for a reproducible pick; omit for a random one. */
   seed?: number;
+  /**
+   * Take the curated beginner core first.
+   *
+   * Putting those words in the pool is not enough: selection is
+   * frequency-first, and they rank low precisely because concrete words are
+   * rare in text. Without this, a pre-A1 text was still built from `aturar`,
+   * `fora`, `canvi`, `país`, `potser` - grammatically fine at rank 200 and
+   * useless as a first week's vocabulary, when `poma`, `gos` and `taula` were
+   * sitting in the same pool unreachable.
+   */
+  preferBeginnerCore?: boolean;
 }
 
 /**
@@ -93,11 +164,18 @@ export interface SelectTargetsInput {
  * still produce a text, just a noun-heavy one. Refusing to generate would trade
  * a mediocre text for no text at all.
  */
-export function selectTargets({ candidates, count, seed }: SelectTargetsInput): LexiconEntry[] {
+export function selectTargets({
+  candidates,
+  count,
+  seed,
+  preferBeginnerCore,
+}: SelectTargetsInput): LexiconEntry[] {
   if (count <= 0 || candidates.length === 0) return [];
   const rand = mulberry32(seed ?? (Math.random() * 2 ** 32) >>> 0);
 
-  const byRank = [...candidates].sort((a, b) => a.freqRank - b.freqRank);
+  const rank = (e: LexiconEntry) =>
+    preferBeginnerCore && e.tags.includes(BEGINNER_CORE_TAG) ? e.freqRank - 1e6 : e.freqRank;
+  const byRank = [...candidates].sort((a, b) => rank(a) - rank(b));
   // Draw the bulk from a frequency-ordered head rather than the whole tail, so
   // the words taught stay the most useful ones available, then shuffle inside
   // that head so consecutive texts at one level do not repeat.

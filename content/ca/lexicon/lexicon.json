@@ -32,7 +32,9 @@
       "variants": [],
       "exampleTarget": "Soc de Barcelona.",
       "exampleEn": "I'm from Barcelona.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0031",
@@ -122,7 +124,9 @@
       "variants": [],
       "exampleTarget": "Vaig a la platja.",
       "exampleEn": "I'm going to the beach.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0039",
@@ -136,7 +140,9 @@
       "variants": [],
       "exampleTarget": "No tinc temps.",
       "exampleEn": "I don't have time.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0036",
@@ -263,7 +269,9 @@
       "variants": [],
       "exampleTarget": "Estic a casa.",
       "exampleEn": "I'm at home.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0041",
@@ -311,7 +319,9 @@
       "variants": [],
       "exampleTarget": "Faig el sopar.",
       "exampleEn": "I'm making dinner.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0044",
@@ -357,7 +367,9 @@
       "variants": [],
       "exampleTarget": "Tinc dos gats.",
       "exampleEn": "I have two cats.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0055",
@@ -371,7 +383,9 @@
       "variants": [],
       "exampleTarget": "No puc venir avui.",
       "exampleEn": "I can't come today.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0022",
@@ -403,7 +417,9 @@
       "variants": [],
       "exampleTarget": "Com estàs avui?",
       "exampleEn": "How are you today?",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0250",
@@ -501,7 +517,9 @@
       ],
       "exampleTarget": "Estic molt cansat.",
       "exampleEn": "I'm very tired.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0683",
@@ -578,7 +596,9 @@
       "variants": [],
       "exampleTarget": "Què has dit?",
       "exampleEn": "What did you say?",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0083",
@@ -592,7 +612,9 @@
       "variants": [],
       "exampleTarget": "Em fa mal el cap.",
       "exampleEn": "I have a headache.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0066",
@@ -606,7 +628,9 @@
       "variants": [],
       "exampleTarget": "Què vols menjar?",
       "exampleEn": "What do you want to eat?",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0014",
@@ -682,7 +706,9 @@
       "variants": [],
       "exampleTarget": "Tinc trenta anys.",
       "exampleEn": "I'm thirty years old.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0020",
@@ -697,7 +723,8 @@
       "exampleTarget": "Quan arribes a casa?",
       "exampleEn": "When do you get home?",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -731,7 +758,8 @@
       "exampleTarget": "On vius ara?",
       "exampleEn": "Where do you live now?",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -746,7 +774,9 @@
       "variants": [],
       "exampleTarget": "Em dona un llibre cada dia.",
       "exampleEn": "He gives me a book every day.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0856",
@@ -781,7 +811,9 @@
       "variants": [],
       "exampleTarget": "L'home llegeix el diari.",
       "exampleEn": "The man reads the newspaper.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0065",
@@ -839,7 +871,9 @@
       "variants": [],
       "exampleTarget": "Veig la muntanya.",
       "exampleEn": "I see the mountain.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1257",
@@ -929,7 +963,9 @@
       "variants": [],
       "exampleTarget": "Tenen una casa gran.",
       "exampleEn": "They have a big house.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0168",
@@ -998,7 +1034,9 @@
       ],
       "exampleTarget": "El seu fill té sis anys.",
       "exampleEn": "Their son is six.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0219",
@@ -1016,7 +1054,9 @@
       ],
       "exampleTarget": "Tinc un cotxe nou.",
       "exampleEn": "I have a new car.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0059",
@@ -1030,7 +1070,9 @@
       "variants": [],
       "exampleTarget": "No sé la resposta.",
       "exampleEn": "I don't know the answer.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0477",
@@ -1060,7 +1102,9 @@
       "variants": [],
       "exampleTarget": "La casa té un jardí.",
       "exampleEn": "The house has a garden.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0068",
@@ -1074,7 +1118,9 @@
       "variants": [],
       "exampleTarget": "Fa un dia bonic.",
       "exampleEn": "It's a beautiful day.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0076",
@@ -1116,7 +1162,9 @@
       "variants": [],
       "exampleTarget": "No tinc temps ara.",
       "exampleEn": "I don't have time now.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0029",
@@ -1190,7 +1238,9 @@
       "variants": [],
       "exampleTarget": "Visc a Girona.",
       "exampleEn": "I live in Girona.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0341",
@@ -1368,7 +1418,9 @@
       "variants": [],
       "exampleTarget": "Avui fa sol.",
       "exampleEn": "It's sunny today.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0687",
@@ -1402,7 +1454,9 @@
       "variants": [],
       "exampleTarget": "Vull aprendre català.",
       "exampleEn": "I want to learn Catalan.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0072",
@@ -1432,7 +1486,9 @@
       ],
       "exampleTarget": "El pa és molt bo.",
       "exampleEn": "The bread is very good.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0155",
@@ -1462,7 +1518,9 @@
       "variants": [],
       "exampleTarget": "El pare cuina molt bé.",
       "exampleEn": "Dad cooks very well.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0271",
@@ -1505,7 +1563,8 @@
       "exampleTarget": "Qui és aquell home?",
       "exampleEn": "Who is that man?",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -1596,7 +1655,9 @@
       "variants": [],
       "exampleTarget": "Parlo català a casa.",
       "exampleEn": "I speak Catalan at home.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0361",
@@ -1641,7 +1702,9 @@
       "variants": [],
       "exampleTarget": "És un gos petit.",
       "exampleEn": "It's a small dog.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0007",
@@ -1703,7 +1766,9 @@
       "variants": [],
       "exampleTarget": "Treballo en una botiga.",
       "exampleEn": "I work in a shop.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0108",
@@ -1801,7 +1866,9 @@
       ],
       "exampleTarget": "Menjo poc al matí.",
       "exampleEn": "I eat little in the morning.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0124",
@@ -1937,7 +2004,9 @@
       "variants": [],
       "exampleTarget": "La mare llegeix un llibre.",
       "exampleEn": "Mum is reading a book.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0252",
@@ -2076,7 +2145,9 @@
       "variants": [],
       "exampleTarget": "Obre la porta, si us plau.",
       "exampleEn": "Open the door, please.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2053",
@@ -2319,7 +2390,9 @@
       "variants": [],
       "exampleTarget": "Vens amb nosaltres?",
       "exampleEn": "Are you coming with us?",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0197",
@@ -2333,7 +2406,9 @@
       "variants": [],
       "exampleTarget": "Surto a les vuit.",
       "exampleEn": "I leave at eight.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4282",
@@ -2395,7 +2470,9 @@
       "variants": [],
       "exampleTarget": "Em fa mal la mà.",
       "exampleEn": "My hand hurts.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0280",
@@ -2409,7 +2486,9 @@
       "variants": [],
       "exampleTarget": "Sí, és clar.",
       "exampleEn": "Yes, of course.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1625",
@@ -2453,7 +2532,9 @@
       "variants": [],
       "exampleTarget": "Moltes gràcies per tot.",
       "exampleEn": "Thank you very much for everything.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0179",
@@ -2503,7 +2584,9 @@
       "variants": [],
       "exampleTarget": "Escric una carta.",
       "exampleEn": "I'm writing a letter.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0071",
@@ -2517,7 +2600,9 @@
       "variants": [],
       "exampleTarget": "La dona treballa aquí.",
       "exampleEn": "The woman works here.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0342",
@@ -2546,7 +2631,8 @@
       "exampleTarget": "Quant costa aquest llibre?",
       "exampleEn": "How much does this book cost?",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -2624,7 +2710,9 @@
       ],
       "exampleTarget": "El meu germà estudia.",
       "exampleEn": "My brother studies.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0514",
@@ -2763,7 +2851,9 @@
       "variants": [],
       "exampleTarget": "El camí és llarg.",
       "exampleEn": "The road is long.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0246",
@@ -2853,7 +2943,9 @@
       "variants": [],
       "exampleTarget": "El mes de maig és bonic.",
       "exampleEn": "The month of May is lovely.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0789",
@@ -2884,7 +2976,9 @@
       "variants": [],
       "exampleTarget": "El meu germà és alt.",
       "exampleEn": "My brother is tall.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0198",
@@ -2898,7 +2992,9 @@
       "variants": [],
       "exampleTarget": "Entra, si us plau.",
       "exampleEn": "Come in, please.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0077",
@@ -2926,7 +3022,9 @@
       "variants": [],
       "exampleTarget": "La nit és tranquil·la.",
       "exampleEn": "The night is quiet.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0262",
@@ -3003,7 +3101,9 @@
       "variants": [],
       "exampleTarget": "L'aigua és freda.",
       "exampleEn": "The water is cold.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4160",
@@ -3049,7 +3149,9 @@
       "variants": [],
       "exampleTarget": "Quina hora és?",
       "exampleEn": "What time is it?",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4077",
@@ -3154,7 +3256,9 @@
       ],
       "exampleTarget": "El meu amic viu aquí.",
       "exampleEn": "My friend lives here.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1061",
@@ -3294,7 +3398,9 @@
       ],
       "exampleTarget": "El nen dorm.",
       "exampleEn": "The child is sleeping.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0099",
@@ -3322,7 +3428,9 @@
       "variants": [],
       "exampleTarget": "Avui fa sol.",
       "exampleEn": "It's sunny today.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0188",
@@ -3523,7 +3631,9 @@
       "variants": [],
       "exampleTarget": "La botiga obre a les nou.",
       "exampleEn": "The shop opens at nine.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0263",
@@ -3567,7 +3677,9 @@
       "variants": [],
       "exampleTarget": "Mira aquesta foto.",
       "exampleEn": "Look at this photo.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0249",
@@ -3695,7 +3807,8 @@
       "exampleTarget": "Quin dia és avui?",
       "exampleEn": "What day is it today?",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -3805,7 +3918,9 @@
       "variants": [],
       "exampleTarget": "Tinc un gat negre.",
       "exampleEn": "I have a black cat.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0312",
@@ -4099,7 +4214,8 @@
       "exampleTarget": "Quant costa el pa?",
       "exampleEn": "How much does the bread cost?",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -4130,7 +4246,9 @@
       "variants": [],
       "exampleTarget": "La camisa és blanca.",
       "exampleEn": "The shirt is white.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0814",
@@ -4224,7 +4342,9 @@
       "variants": [],
       "exampleTarget": "La seva filla estudia aquí.",
       "exampleEn": "His daughter studies here.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0988",
@@ -4269,7 +4389,9 @@
       "variants": [],
       "exampleTarget": "Els nens juguen al parc.",
       "exampleEn": "The children play in the park.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4058",
@@ -4347,7 +4469,9 @@
       "variants": [],
       "exampleTarget": "La setmana passa ràpid.",
       "exampleEn": "The week goes by fast.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0006",
@@ -4365,7 +4489,8 @@
       "exampleTarget": "Aquell noi és el meu germà.",
       "exampleEn": "That boy is my brother.",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -4438,7 +4563,9 @@
       "variants": [],
       "exampleTarget": "M'agrada el cafè.",
       "exampleEn": "I like coffee.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0973",
@@ -4510,7 +4637,9 @@
       "variants": [],
       "exampleTarget": "Menjo una poma.",
       "exampleEn": "I'm eating an apple.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4337",
@@ -4635,7 +4764,9 @@
       "variants": [],
       "exampleTarget": "Aquest llibre és vell.",
       "exampleEn": "This book is old.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1616",
@@ -4649,7 +4780,9 @@
       "variants": [],
       "exampleTarget": "Pots agafar el llibre que hi ha allà?",
       "exampleEn": "Can you grab the book that's over there?",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0308",
@@ -4802,7 +4935,8 @@
       "exampleTarget": "Encenc la llum.",
       "exampleEn": "I turn on the light.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -4817,7 +4951,9 @@
       "variants": [],
       "exampleTarget": "Tanquem la porta.",
       "exampleEn": "We close the door.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4125",
@@ -4861,7 +4997,9 @@
       "variants": [],
       "exampleTarget": "Escolto música cada dia.",
       "exampleEn": "I listen to music every day.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0740",
@@ -4877,7 +5015,8 @@
       "exampleEn": "I have heart problems.",
       "tags": [
         "Body & Anatomy",
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -4996,7 +5135,9 @@
       "variants": [],
       "exampleTarget": "La taula és baixa.",
       "exampleEn": "The table is low.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0575",
@@ -5229,7 +5370,9 @@
       "variants": [],
       "exampleTarget": "Té els ulls verds.",
       "exampleEn": "She has green eyes.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0689",
@@ -5365,7 +5508,8 @@
       "exampleTarget": "Visc en un pis petit.",
       "exampleEn": "I live in a small flat.",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -5412,7 +5556,8 @@
       "exampleEn": "A minute is short.",
       "tags": [
         "Time & Calendar",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -5563,7 +5708,8 @@
       "exampleTarget": "Ell corre ràpid.",
       "exampleEn": "He runs fast.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -5715,7 +5861,9 @@
       "variants": [],
       "exampleTarget": "El català no és difícil.",
       "exampleEn": "Catalan isn't difficult.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0632",
@@ -6010,7 +6158,8 @@
       "exampleTarget": "Obro la finestra.",
       "exampleEn": "I open the window.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -6053,7 +6202,9 @@
       "variants": [],
       "exampleTarget": "Compro pa al matí.",
       "exampleEn": "I buy bread in the morning.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1596",
@@ -6178,7 +6329,8 @@
       "exampleEn": "I have a swollen foot.",
       "tags": [
         "Body & Anatomy",
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -6285,7 +6437,9 @@
       "variants": [],
       "exampleTarget": "El seu marit és cuiner.",
       "exampleEn": "Her husband is a chef.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4093",
@@ -6331,7 +6485,8 @@
       "exampleEn": "They want to sell it.",
       "tags": [
         "Money & Finance",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -6380,7 +6535,8 @@
       "exampleTarget": "Baixo al carrer un moment.",
       "exampleEn": "I'm going down to the street for a moment.",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -6409,7 +6565,9 @@
       "variants": [],
       "exampleTarget": "Llegeixo un llibre.",
       "exampleEn": "I'm reading a book.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1040",
@@ -6467,7 +6625,9 @@
       "variants": [],
       "exampleTarget": "Bec aigua cada dia.",
       "exampleEn": "I drink water every day.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0955",
@@ -6481,7 +6641,9 @@
       "variants": [],
       "exampleTarget": "Munto a cavall.",
       "exampleEn": "I ride a horse.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0967",
@@ -6572,7 +6734,9 @@
       "variants": [],
       "exampleTarget": "La noia escolta música.",
       "exampleEn": "The young woman listens to music.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0711",
@@ -6587,7 +6751,8 @@
       "exampleTarget": "Em faig una tassa de te.",
       "exampleEn": "I make a cup of tea.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -6754,7 +6919,9 @@
       "variants": [],
       "exampleTarget": "He perdut la clau.",
       "exampleEn": "I have lost the key.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0322",
@@ -6885,7 +7052,8 @@
       "exampleTarget": "Pujo a casa ara mateix.",
       "exampleEn": "I'm going up home right now.",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -6900,7 +7068,9 @@
       "variants": [],
       "exampleTarget": "La poma és vermella.",
       "exampleEn": "The apple is red.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1141",
@@ -7042,7 +7212,9 @@
       "variants": [],
       "exampleTarget": "La germana gran és metgessa.",
       "exampleEn": "The older sister is a doctor.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0149",
@@ -7212,7 +7384,9 @@
       "variants": [],
       "exampleTarget": "Treballo al matí.",
       "exampleEn": "I work in the morning.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1285",
@@ -7305,7 +7479,9 @@
       "variants": [],
       "exampleTarget": "L'habitació té molta llum.",
       "exampleEn": "The room has a lot of light.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2908",
@@ -7444,7 +7620,8 @@
       "exampleEn": "I need to study a lot.",
       "tags": [
         "Education & Learning",
-        "Work & Business"
+        "Work & Business",
+        "beginner-core"
       ]
     },
     {
@@ -7459,7 +7636,9 @@
       "variants": [],
       "exampleTarget": "El pa és a la taula.",
       "exampleEn": "The bread is on the table.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0780",
@@ -7652,7 +7831,9 @@
       ],
       "exampleTarget": "El gos dorm al sofà.",
       "exampleEn": "The dog sleeps on the sofa.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4311",
@@ -7757,7 +7938,9 @@
       "variants": [],
       "exampleTarget": "És una pregunta fàcil.",
       "exampleEn": "It's an easy question.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1011",
@@ -7892,7 +8075,9 @@
       "variants": [],
       "exampleTarget": "Dormo vuit hores.",
       "exampleEn": "I sleep eight hours.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0177",
@@ -8046,7 +8231,9 @@
       "variants": [],
       "exampleTarget": "Hola, com va?",
       "exampleEn": "Hello, how's it going?",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2092",
@@ -8140,7 +8327,9 @@
       "variants": [],
       "exampleTarget": "Corro cada matí.",
       "exampleEn": "I run every morning.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0767",
@@ -8372,7 +8561,9 @@
       "variants": [],
       "exampleTarget": "Té el cabell curt.",
       "exampleEn": "She has short hair.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0927",
@@ -8476,7 +8667,9 @@
       "variants": [],
       "exampleTarget": "El cel és blau.",
       "exampleEn": "The sky is blue.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2932",
@@ -8729,7 +8922,9 @@
       "variants": [],
       "exampleTarget": "Fa fred a fora.",
       "exampleEn": "It's cold outside.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0328",
@@ -8880,7 +9075,9 @@
       "variants": [],
       "exampleTarget": "Els arbres són verds.",
       "exampleEn": "The trees are green.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0643",
@@ -8972,7 +9169,8 @@
       "exampleTarget": "La paret és blanca.",
       "exampleEn": "The wall is white.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -9292,7 +9490,8 @@
       "exampleEn": "I make a dress.",
       "tags": [
         "Clothing & Fashion",
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -9371,7 +9570,8 @@
       "exampleTarget": "Em fa mal el braç.",
       "exampleEn": "My arm hurts.",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -9533,7 +9733,8 @@
       "exampleTarget": "Em faig el llit.",
       "exampleEn": "I make my bed.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -10135,7 +10336,9 @@
       "variants": [],
       "exampleTarget": "Camino fins a la feina.",
       "exampleEn": "I walk to work.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0538",
@@ -10350,7 +10553,9 @@
       "variants": [],
       "exampleTarget": "Quin dia més bonic!",
       "exampleEn": "What a beautiful day!",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1413",
@@ -10379,7 +10584,8 @@
       "exampleTarget": "Jo camino lent.",
       "exampleEn": "I walk slowly.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -10438,7 +10644,9 @@
       "variants": [],
       "exampleTarget": "Fa un temps dolent.",
       "exampleEn": "The weather is bad.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1154",
@@ -10747,7 +10955,9 @@
       "variants": [],
       "exampleTarget": "La nena llegeix un llibre.",
       "exampleEn": "The girl reads a book.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4056",
@@ -10793,7 +11003,9 @@
       "variants": [],
       "exampleTarget": "Obre la boca, si us plau.",
       "exampleEn": "Open your mouth, please.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4267",
@@ -10942,7 +11154,9 @@
       ],
       "exampleTarget": "Un cafè, si us plau.",
       "exampleEn": "A coffee, please.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1547",
@@ -11427,7 +11641,8 @@
       "exampleEn": "My uncle is fun.",
       "tags": [
         "Family & Relationships",
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -11594,7 +11809,8 @@
       "exampleEn": "We have a garden.",
       "tags": [
         "Sports & Recreation",
-        "Arts & Entertainment"
+        "Arts & Entertainment",
+        "beginner-core"
       ]
     },
     {
@@ -11673,7 +11889,9 @@
       "variants": [],
       "exampleTarget": "Menjo un ou.",
       "exampleEn": "I'm eating an egg.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0815",
@@ -11704,7 +11922,9 @@
       "variants": [],
       "exampleTarget": "Fa molt de vent.",
       "exampleEn": "It's very windy.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0182",
@@ -11842,7 +12062,8 @@
       "exampleTarget": "Sopem a les 9.",
       "exampleEn": "We have supper at 9.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ]
     },
     {
@@ -12198,7 +12419,9 @@
       "variants": [],
       "exampleTarget": "El peix és fresc.",
       "exampleEn": "The fish is fresh.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1160",
@@ -12559,7 +12782,9 @@
       "variants": [],
       "exampleTarget": "No menjo carn.",
       "exampleEn": "I don't eat meat.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0993",
@@ -13005,7 +13230,9 @@
       "variants": [],
       "exampleTarget": "Un cafè amb llet, si us plau.",
       "exampleEn": "A coffee with milk, please.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4258",
@@ -13049,7 +13276,9 @@
       "variants": [],
       "exampleTarget": "Demà anem a la platja.",
       "exampleEn": "Tomorrow we're going to the beach.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0891",
@@ -13063,7 +13292,9 @@
       "variants": [],
       "exampleTarget": "La cama em fa mal.",
       "exampleEn": "My leg hurts.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0883",
@@ -13167,7 +13398,9 @@
       "variants": [],
       "exampleTarget": "Ens veiem a la tarda.",
       "exampleEn": "See you in the afternoon.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0375",
@@ -13408,7 +13641,8 @@
       "exampleEn": "The snow falls.",
       "tags": [
         "Weather & Climate",
-        "Animals & Pets"
+        "Animals & Pets",
+        "beginner-core"
       ]
     },
     {
@@ -13514,7 +13748,8 @@
       "exampleEn": "My grandfather is wise.",
       "tags": [
         "Family & Relationships",
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -13884,7 +14119,8 @@
       "exampleTarget": "La cuina és petita.",
       "exampleEn": "The kitchen is small.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -14151,7 +14387,9 @@
       "variants": [],
       "exampleTarget": "La meva amiga és metgessa.",
       "exampleEn": "My friend is a doctor.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0818",
@@ -14584,7 +14822,8 @@
       "exampleTarget": "Vaig al bany.",
       "exampleEn": "I go to the bathroom.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -14969,7 +15208,9 @@
       "variants": [],
       "exampleTarget": "El sol és groc.",
       "exampleEn": "The sun is yellow.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0655",
@@ -15137,7 +15378,9 @@
       "variants": [],
       "exampleTarget": "El cafè és calent.",
       "exampleEn": "The coffee is hot.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0633",
@@ -15215,7 +15458,9 @@
       ],
       "exampleTarget": "El gat és negre.",
       "exampleEn": "The cat is black.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0892",
@@ -15398,7 +15643,8 @@
       "exampleEn": "My back hurts.",
       "tags": [
         "Body & Anatomy",
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -15476,7 +15722,9 @@
       "variants": [],
       "exampleTarget": "La pluja no para.",
       "exampleEn": "The rain doesn't stop.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2889",
@@ -15506,7 +15754,9 @@
       "variants": [],
       "exampleTarget": "Ahir vaig treballar molt.",
       "exampleEn": "I worked a lot yesterday.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2502",
@@ -15536,7 +15786,9 @@
       "variants": [],
       "exampleTarget": "El pa és calent.",
       "exampleEn": "The bread is hot.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4339",
@@ -15906,7 +16158,8 @@
       "exampleEn": "I have a toothache.",
       "tags": [
         "Body & Anatomy",
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -15965,7 +16218,9 @@
       "variants": [],
       "exampleTarget": "Fa molta calor.",
       "exampleEn": "It is very hot.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0332",
@@ -15979,7 +16234,9 @@
       "variants": [],
       "exampleTarget": "L'ocell canta al matí.",
       "exampleEn": "The bird sings in the morning.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1391",
@@ -16036,7 +16293,8 @@
       "exampleTarget": "La casa està neta.",
       "exampleEn": "The house is clean.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -16387,7 +16645,8 @@
       "exampleTarget": "Utilitzem oli d'oliva.",
       "exampleEn": "We use olive oil.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -16549,7 +16808,9 @@
       "variants": [],
       "exampleTarget": "El porc menja.",
       "exampleEn": "The pig eats.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4206",
@@ -16824,7 +17085,9 @@
       "variants": [],
       "exampleTarget": "Estic molt content.",
       "exampleEn": "I'm very happy.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1960",
@@ -17104,7 +17367,8 @@
       "exampleEn": "I have ear problems.",
       "tags": [
         "Body & Anatomy",
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -17133,7 +17397,9 @@
       "variants": [],
       "exampleTarget": "Bec llet cada matí.",
       "exampleEn": "I drink milk every morning.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2248",
@@ -17331,7 +17597,8 @@
       "exampleEn": "My nose is bleeding.",
       "tags": [
         "Body & Anatomy",
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -17565,7 +17832,8 @@
       "exampleTarget": "Em passes el ganivet si us plau.",
       "exampleEn": "Pass me the knife please.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -17689,7 +17957,8 @@
       "exampleEn": "Today is Sunday.",
       "tags": [
         "Time & Calendar",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -17735,7 +18004,9 @@
       "variants": [],
       "exampleTarget": "Passa'm la sal.",
       "exampleEn": "Pass me the salt.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1113",
@@ -17793,7 +18064,9 @@
       "variants": [],
       "exampleTarget": "El plat és net.",
       "exampleEn": "The plate is clean.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4295",
@@ -17840,7 +18113,8 @@
       "exampleTarget": "Avui estic molt cansat.",
       "exampleEn": "Today I'm very tired.",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -17902,7 +18176,9 @@
       "variants": [],
       "exampleTarget": "Per què estàs trist?",
       "exampleEn": "Why are you sad?",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1074",
@@ -18485,7 +18761,8 @@
       "exampleTarget": "Dinem al restaurant.",
       "exampleEn": "We have lunch at the restaurant.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ]
     },
     {
@@ -18607,7 +18884,8 @@
       "exampleEn": "The sky is grey.",
       "tags": [
         "Clothing & Fashion",
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -18989,7 +19267,8 @@
       "exampleEn": "My grandmother cooks well.",
       "tags": [
         "Family & Relationships",
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -19006,7 +19285,8 @@
       "exampleEn": "My aunt is nice.",
       "tags": [
         "Family & Relationships",
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -19111,7 +19391,8 @@
       "exampleEn": "Today is Friday.",
       "tags": [
         "Time & Calendar",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -19339,7 +19620,8 @@
       "exampleEn": "The cloud is gray.",
       "tags": [
         "Weather & Climate",
-        "Animals & Pets"
+        "Animals & Pets",
+        "beginner-core"
       ]
     },
     {
@@ -19528,7 +19810,8 @@
       "exampleTarget": "El carrer està brut.",
       "exampleEn": "The street is dirty.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -19740,7 +20023,8 @@
       "exampleTarget": "Vaig rentar els plats.",
       "exampleEn": "I washed the dishes.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -19770,7 +20054,8 @@
       "exampleTarget": "Sec a la cadira.",
       "exampleEn": "I sit on the chair.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -19937,7 +20222,8 @@
       "exampleEn": "I put on the hat.",
       "tags": [
         "Clothing & Fashion",
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -20224,7 +20510,8 @@
       "exampleEn": "Tomorrow is Saturday.",
       "tags": [
         "Time & Calendar",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -20288,7 +20575,9 @@
       "variants": [],
       "exampleTarget": "Té els ulls de color marró.",
       "exampleEn": "He has brown eyes.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-3129",
@@ -20551,7 +20840,8 @@
       "exampleEn": "My cousin is tall.",
       "tags": [
         "Family & Relationships",
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ]
     },
     {
@@ -20567,7 +20857,8 @@
       "exampleTarget": "Vull un got d'aigua.",
       "exampleEn": "I want a glass of water.",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -20786,7 +21077,9 @@
       "variants": [],
       "exampleTarget": "Sense sucre, gràcies.",
       "exampleEn": "Without sugar, thanks.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1887",
@@ -20951,7 +21244,9 @@
       "variants": [],
       "exampleTarget": "Menjo fruita cada dia.",
       "exampleEn": "I eat fruit every day.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0427",
@@ -21286,7 +21581,9 @@
       "variants": [],
       "exampleTarget": "M'agrada el formatge.",
       "exampleEn": "I like cheese.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1991",
@@ -21649,7 +21946,9 @@
       "variants": [],
       "exampleTarget": "Vull un suc de taronja.",
       "exampleEn": "I want an orange juice.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1282",
@@ -21820,7 +22119,8 @@
       "exampleTarget": "M'agrada cuinar cada dia.",
       "exampleEn": "I like cooking every day.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -21929,7 +22229,8 @@
       "exampleEn": "I put on the trousers.",
       "tags": [
         "Clothing & Fashion",
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -22286,7 +22587,8 @@
       "exampleEn": "Tomorrow is Monday.",
       "tags": [
         "Time & Calendar",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -22482,7 +22784,9 @@
       "variants": [],
       "exampleTarget": "La poma és verda.",
       "exampleEn": "The apple is green.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1876",
@@ -22636,7 +22940,9 @@
       "variants": [],
       "exampleTarget": "M'agraden les patates fregides.",
       "exampleEn": "I like french fries.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1995",
@@ -23030,7 +23336,8 @@
       "exampleTarget": "Hem esmorzat a casa.",
       "exampleEn": "We had breakfast at home.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ]
     },
     {
@@ -23127,7 +23434,9 @@
       "variants": [],
       "exampleTarget": "Hem cuinat arròs amb conill per dinar.",
       "exampleEn": "We cooked rice with rabbit for lunch.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1581",
@@ -23733,7 +24042,8 @@
       "exampleTarget": "M'agrada menjar xocolata.",
       "exampleEn": "I like to eat chocolate.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -23900,7 +24210,8 @@
       "exampleEn": "I put on the shirt.",
       "tags": [
         "Clothing & Fashion",
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -24123,7 +24434,8 @@
       "exampleTarget": "He après a fer un pastís.",
       "exampleEn": "I have learned to make a cake.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -24300,7 +24612,9 @@
       "variants": [],
       "exampleTarget": "El pollastre està al forn.",
       "exampleEn": "The chicken is in the oven.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-4177",
@@ -24488,7 +24802,8 @@
       "exampleEn": "Tomorrow is Thursday.",
       "tags": [
         "Time & Calendar",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -25260,7 +25575,8 @@
       "exampleEn": "In winter I wear a thick coat.",
       "tags": [
         "Clothing & Fashion",
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -25816,7 +26132,8 @@
       "exampleTarget": "Serveix-me una tassa de cafè.",
       "exampleEn": "Serve me a cup of coffee.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -26583,7 +26900,9 @@
       "variants": [],
       "exampleTarget": "L'ovella és blanca.",
       "exampleEn": "The sheep is white.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1482",
@@ -26819,7 +27138,8 @@
       "exampleEn": "Today is Tuesday.",
       "tags": [
         "Time & Calendar",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -27270,7 +27590,9 @@
       "variants": [],
       "exampleTarget": "La jaqueta és a l'armari.",
       "exampleEn": "The jacket is in the closet.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0367",
@@ -27285,7 +27607,8 @@
       "exampleTarget": "Obro l'armari.",
       "exampleEn": "I open the wardrobe.",
       "tags": [
-        "Home & Furniture"
+        "Home & Furniture",
+        "beginner-core"
       ]
     },
     {
@@ -28255,7 +28578,9 @@
       "variants": [],
       "exampleTarget": "La sopa està calenta.",
       "exampleEn": "The soup is hot.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2393",
@@ -28692,7 +29017,8 @@
       "exampleEn": "Yesterday was Wednesday.",
       "tags": [
         "Time & Calendar",
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ]
     },
     {
@@ -29424,7 +29750,8 @@
       "exampleTarget": "Vull un got de suc de taronja.",
       "exampleEn": "I want a glass of orange juice.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -29542,7 +29869,8 @@
       "exampleTarget": "El ratolí del meu ordinador no funciona.",
       "exampleEn": "My computer mouse does not work.",
       "tags": [
-        "Science & Technology"
+        "Science & Technology",
+        "beginner-core"
       ]
     },
     {
@@ -30468,7 +30796,9 @@
       "variants": [],
       "exampleTarget": "Fem arròs per dinar.",
       "exampleEn": "We're making rice for lunch.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2515",
@@ -31970,7 +32300,8 @@
       "exampleTarget": "He collit raïm a la vinya.",
       "exampleEn": "I have harvested grapes in the vineyard.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -32090,7 +32421,9 @@
       "variants": [],
       "exampleTarget": "Cuino verdura al vapor.",
       "exampleEn": "I steam vegetables.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1980",
@@ -33142,7 +33475,9 @@
       "variants": [],
       "exampleTarget": "El sofà és al menjador.",
       "exampleEn": "The sofa is in the dining room.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1781",
@@ -33948,7 +34283,9 @@
       "variants": [],
       "exampleTarget": "Aquesta recepta porta ceba.",
       "exampleEn": "This recipe has onion.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1490",
@@ -34374,7 +34711,9 @@
       "variants": [],
       "exampleTarget": "Aquest edifici és lleig.",
       "exampleEn": "This building is ugly.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1603",
@@ -35832,7 +36171,8 @@
       "exampleEn": "I need shoes.",
       "tags": [
         "Clothing & Fashion",
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ]
     },
     {
@@ -36067,7 +36407,9 @@
       "variants": [],
       "exampleTarget": "La faldilla és llarga.",
       "exampleEn": "The skirt is long.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-3391",
@@ -37007,7 +37349,9 @@
       "variants": [],
       "exampleTarget": "El plàtan és groc.",
       "exampleEn": "The banana is yellow.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2040",
@@ -37951,7 +38295,8 @@
       "exampleTarget": "Necessito una cullera per menjar.",
       "exampleEn": "I need a spoon to eat.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ]
     },
     {
@@ -40086,7 +40431,9 @@
       "variants": [],
       "exampleTarget": "Talla el tomàquet per l'amanida.",
       "exampleEn": "Cut the tomato for the salad.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2262",
@@ -40722,7 +41069,9 @@
       "variants": [],
       "exampleTarget": "Necessito una forquilla.",
       "exampleEn": "I need a fork.",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-0714",
@@ -44015,7 +44364,9 @@
       "variants": [],
       "exampleTarget": "Adeu, fins demà!",
       "exampleEn": "Goodbye, see you tomorrow!",
-      "tags": []
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2861",
@@ -47836,7 +48187,8 @@
       "exampleTarget": "Em poso els mitjons.",
       "exampleEn": "I put my socks on.",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -62644,7 +62996,8 @@
       "exampleTarget": "Per què no menges?",
       "exampleEn": "Why aren't you eating?",
       "tags": [
-        "closed-class"
+        "closed-class",
+        "beginner-core"
       ]
     },
     {
@@ -67081,6 +67434,38 @@
       ],
       "exampleTarget": "apujarien",
       "exampleEn": "[C2 auto-fill]"
+    },
+    {
+      "target": "ampolla",
+      "glossEn": "bottle",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "Hi ha una ampolla d'aigua a taula.",
+      "exampleEn": "There is a bottle of water on the table.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-4350",
+      "targetNormalized": "ampolla",
+      "freqRank": 4344,
+      "freqBand": 10
+    },
+    {
+      "target": "vaca",
+      "glossEn": "cow",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "La vaca menja herba al camp.",
+      "exampleEn": "The cow eats grass in the field.",
+      "variants": [],
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-4351",
+      "targetNormalized": "vaca",
+      "freqRank": 4345,
+      "freqBand": 10
     }
   ]
 }

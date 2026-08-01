@@ -1,0 +1,8 @@
+[
+  { "target": "ampolla", "glossEn": "bottle", "pos": "noun", "register": "neutral",
+    "exampleTarget": "Hi ha una ampolla d'aigua a taula.", "exampleEn": "There is a bottle of water on the table.",
+    "variants": [], "tags": ["beginner-core"] },
+  { "target": "vaca", "glossEn": "cow", "pos": "noun", "register": "neutral",
+    "exampleTarget": "La vaca menja herba al camp.", "exampleEn": "The cow eats grass in the field.",
+    "variants": [], "tags": ["beginner-core"] }
+]
