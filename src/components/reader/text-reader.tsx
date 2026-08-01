@@ -5,7 +5,7 @@ import { Check, CircleHelp, Highlighter, Trophy, ArrowRight, Languages, Sparkles
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { lexemeById, lexiconIndex, levels } from "@/lib/content/load";
+import { availableLevels, lexemeById, lexiconIndex } from "@/lib/content/load";
 import type { TextDocument } from "@/lib/content/schema";
 import { markTextRead } from "@/lib/db/texts";
 import { upsertUserWord } from "@/lib/db/words";
@@ -123,9 +123,11 @@ export function TextReader({
         .select("*", { count: "exact", head: true })
         .eq("user_id", user.id)
         .eq("status", "known");
-      const eligible = levels.filter((l) => (count ?? 0) >= l.entryKnownWords).at(-1);
-      const currentIdx = levels.findIndex((l) => l.id === profile.level_estimate);
-      const eligibleIdx = eligible ? levels.findIndex((l) => l.id === eligible.id) : -1;
+      // availableLevels, not levels: a learner must not be promoted into a level
+      // whose content is not finished yet.
+      const eligible = availableLevels.filter((l) => (count ?? 0) >= l.entryKnownWords).at(-1);
+      const currentIdx = availableLevels.findIndex((l) => l.id === profile.level_estimate);
+      const eligibleIdx = eligible ? availableLevels.findIndex((l) => l.id === eligible.id) : -1;
       if (eligible && eligibleIdx > currentIdx) {
         await db.from("profiles").update({ level_estimate: eligible.id }).eq("id", user.id);
       }

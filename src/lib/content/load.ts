@@ -89,6 +89,17 @@ export function grammarStartLevel(levelEstimate: string | null | undefined): Gra
 
 export const levels: Level[] = levelsFile.levels;
 
+/**
+ * The levels a learner can actually reach.
+ *
+ * `levels` is every level the content defines; this is the ladder the product
+ * offers. Catalan ships C1 and C2 content that is not finished - 65 entries in
+ * their vocabulary still have no gloss - so they are marked unavailable rather
+ * than deleted. Everything that decides where a learner can go reads this:
+ * the journey map, the level-up check and the placement.
+ */
+export const availableLevels: Level[] = levels.filter((l) => l.available);
+
 let index: LexiconIndex | null = null;
 export function lexiconIndex(): LexiconIndex {
   index ??= buildIndex(lexicon.entries);

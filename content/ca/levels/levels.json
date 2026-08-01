@@ -25,7 +25,8 @@
         "simple questions with què, qui, on, com, quan",
         "negation with no"
       ],
-      "avgSentenceWords": 5
+      "avgSentenceWords": 5,
+      "available": true
     },
     {
       "id": "L2",
@@ -55,7 +56,8 @@
         "prepositions a, de, en, amb, per, sense, fins",
         "Catalan has no Spanish-style personal a with a plain direct object: write 'veig la Maria', never 'veig a la Maria'. But do keep the a where the verb governs it (trucar a algú, telefonar a algú) and before a strong personal pronoun ('et veig a tu')"
       ],
-      "avgSentenceWords": 5
+      "avgSentenceWords": 5,
+      "available": true
     },
     {
       "id": "L3",
@@ -85,7 +87,8 @@
         "connectors però, perquè, quan, mentre, també, tampoc",
         "verbs with a velar stem must use it: tinc/tingui, vinc/vingui, venc/vengui, ric/rigui"
       ],
-      "avgSentenceWords": 9
+      "avgSentenceWords": 9,
+      "available": true
     },
     {
       "id": "L4",
@@ -117,7 +120,8 @@
         "verbal periphrases haver de, poder, voler, tornar a, acabar de",
         "ela geminada is written with the interpunct: col·legi, intel·ligent - never 'colegi' or 'col.legi'"
       ],
-      "avgSentenceWords": 11
+      "avgSentenceWords": 11,
+      "available": true
     },
     {
       "id": "L5",
@@ -144,7 +148,8 @@
         "imperfect subjunctive",
         "conditional clauses"
       ],
-      "avgSentenceWords": 14
+      "avgSentenceWords": 14,
+      "available": true
     },
     {
       "id": "L6",
@@ -174,7 +179,8 @@
         "advanced pronoun combinations (l'hi, els les, n'hi, s'hi)",
         "passive voice and pronominal passive"
       ],
-      "avgSentenceWords": 17
+      "avgSentenceWords": 17,
+      "available": true
     },
     {
       "id": "L7",
@@ -202,7 +208,8 @@
         "concessive clauses (malgrat que, per bé que)",
         "compound relative pronouns (el qual, la qual)"
       ],
-      "avgSentenceWords": 19
+      "avgSentenceWords": 19,
+      "available": false
     },
     {
       "id": "L8",
@@ -230,7 +237,8 @@
         "all Catalan grammar",
         "literary tenses if applicable"
       ],
-      "avgSentenceWords": 23
+      "avgSentenceWords": 23,
+      "available": false
     }
   ]
 }

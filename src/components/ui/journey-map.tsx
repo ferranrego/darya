@@ -7,10 +7,11 @@ import { useEffect, useRef } from "react";
 import { profile as lang } from "@/lib/lang";
 import {
   GRAMMAR_LEVEL_ORDER,
+  availableLevels,
   buildJourneyNodes,
   grammarCourses,
+  cefrOf,
   grammarStartLevel,
-  levels,
 } from "@/lib/content/load";
 
 export type MapNodeState = "locked" | "current" | "completed";
@@ -70,7 +71,15 @@ export function JourneyMap({
   // literal. The literal was shaped like neither ladder - it paired L2 with A2
   // and L3 with B1, which is off by one for both languages, and it stopped at
   // L6, so Catalan's L7 and L8 rendered no node at all.
-  const journey = buildJourneyNodes(levels, grammarCourses.map((c) => c.level));
+  // Only the grammar courses the reachable levels study. Without this the map
+  // would still trail a C1 and C2 node after the last reading level, which is
+  // the very thing being kept out of the product.
+  const reachableGrammar = new Set(availableLevels.map((l) => cefrOf(l)));
+  const availableCourses = grammarCourses
+    .map((c) => c.level)
+    .filter((l) => reachableGrammar.has(l));
+
+  const journey = buildJourneyNodes(availableLevels, availableCourses);
 
   const userLevelNum = parseInt(userLevelEstimate?.replace("L", "") || "1", 10);
   // Grammar courses below the assessed start level count as passed.

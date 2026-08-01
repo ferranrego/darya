@@ -22,7 +22,8 @@
         "possessive ezafe (khāna-ye man)",
         "yes/no and chetōr/kujā questions"
       ],
-      "avgSentenceWords": 5
+      "avgSentenceWords": 5,
+      "available": true
     },
     {
       "id": "L2",
@@ -46,7 +47,8 @@
         "object marker rā",
         "ham, besyār, negation with na-/namē-"
       ],
-      "avgSentenceWords": 5
+      "avgSentenceWords": 5,
+      "available": true
     },
     {
       "id": "L3",
@@ -74,7 +76,8 @@
         "subjunctive (bāyad berawad)",
         "comparatives (-tar)"
       ],
-      "avgSentenceWords": 7
+      "avgSentenceWords": 7,
+      "available": true
     },
     {
       "id": "L4",
@@ -102,7 +105,8 @@
         "passive with shudan",
         "relative clauses"
       ],
-      "avgSentenceWords": 11
+      "avgSentenceWords": 11,
+      "available": true
     },
     {
       "id": "L5",
@@ -130,7 +134,8 @@
         "formal register",
         "idiomatic compounds"
       ],
-      "avgSentenceWords": 14
+      "avgSentenceWords": 14,
+      "available": true
     },
     {
       "id": "L6",
@@ -157,7 +162,8 @@
       "grammarAllowed": [
         "unrestricted, including literary forms and poetry excerpts"
       ],
-      "avgSentenceWords": 17
+      "avgSentenceWords": 17,
+      "available": true
     }
   ]
 }

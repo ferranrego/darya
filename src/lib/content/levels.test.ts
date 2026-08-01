@@ -90,6 +90,22 @@ describe.each(LANGS)("%s levels", (lang) => {
     }
   });
 
+  it("only offers levels whose content is finished", () => {
+    // Catalan ships C1 and C2 content that is not ready - 65 entries in their
+    // vocabulary still have no gloss - so they are marked unavailable rather
+    // than deleted. The available levels must still be a prefix of the ladder:
+    // a gap would let a learner be promoted past a level they never saw.
+    const flags = levels.map((l) => l.available);
+    const firstUnavailable = flags.indexOf(false);
+    if (firstUnavailable !== -1) {
+      expect(
+        flags.slice(firstUnavailable).every((f) => !f),
+        `${lang}: available levels must be a prefix, got ${flags.join(",")}`,
+      ).toBe(true);
+    }
+    expect(flags[0], `${lang}: the first level must be reachable`).toBe(true);
+  });
+
   it("keeps the top level's threshold inside the lexicon", () => {
     const top = levels.at(-1)!;
     expect(

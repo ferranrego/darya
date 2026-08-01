@@ -30,7 +30,7 @@ describe("cefrOf", () => {
   const at = (cefrHint: string): Level =>
     ({ id: "L1", name: "x", cefrHint, freqBands: [1], entryKnownWords: 0,
        sentenceRange: [2, 3], sentenceLengthHint: "max 7 words", avgSentenceWords: 5,
-       grammarAllowed: [] }) as Level;
+       grammarAllowed: [], available: true }) as Level;
 
   it("collapses the finer reading labels onto the course that exists", () => {
     expect(cefrOf(at("pre-A1"))).toBe("A1");

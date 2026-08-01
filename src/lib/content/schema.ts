@@ -468,6 +468,16 @@ export const levelSchema = z.object({
   avgSentenceWords: z.number().int().positive(),
   /** Grammar the generator may use at this level (prompt constraints). */
   grammarAllowed: z.array(z.string()),
+  /**
+   * Whether learners can reach this level yet.
+   *
+   * A level whose content is not finished should not be reachable, but its
+   * content must not be deleted either - Catalan C1 and C2 are written and
+   * partly repaired, and will be turned on when their vocabulary is. Marking
+   * them here keeps the work in the repository and out of the product, and
+   * turning them back on is one boolean.
+   */
+  available: z.boolean().default(true),
 });
 
 export const levelsFileSchema = z.object({
