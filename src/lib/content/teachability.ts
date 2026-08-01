@@ -28,6 +28,20 @@ import type { LexiconEntry } from "./schema.ts";
 /** Bracketed meta text standing in for a real gloss: "[C2 auto-fill]", "[TODO]". */
 const PLACEHOLDER_GLOSS = /\[|auto-fill/i;
 
+/**
+ * An entry someone has deliberately ruled out as a headword.
+ *
+ * Written in the same bracketed shape, so it is excluded from teaching by the
+ * check above without needing a schema field - but it is a decision that has
+ * been made, not work still owed, and the two must not be counted together or
+ * the repair burndown can never reach zero.
+ */
+const RULED_OUT = /^\[not a headword:/i;
+
+export function isRuledOut(e: Pick<LexiconEntry, "glossEn">): boolean {
+  return RULED_OUT.test(e.glossEn.trim());
+}
+
 export type TeachabilityDefect =
   | "placeholder-gloss"
   | "example-is-headword"

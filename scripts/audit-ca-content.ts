@@ -18,6 +18,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { levelsFileSchema, lexiconFileSchema } from "../src/lib/content/schema.ts";
+import { isRuledOut } from "../src/lib/content/teachability.ts";
 import { entryDefects, type EntryDefect } from "./verify-ca-entries.ts";
 
 const root = join(import.meta.dirname, "..", "content", "ca");
@@ -32,7 +33,9 @@ const levels = levelsFileSchema.parse(
 const b2 = levels.find((l) => l.cefrHint === "B2");
 const envelope = b2?.entryKnownWords ?? entries.length;
 
+const ruledOut = entries.filter(isRuledOut);
 const flagged = entries
+  .filter((e) => !isRuledOut(e))
   .map((e) => ({ entry: e, defects: entryDefects(e) }))
   .filter((r) => r.defects.length > 0);
 
@@ -85,6 +88,9 @@ for (const kind of KINDS) {
 const distinct = flagged.filter((r) => r.entry.freqRank <= envelope);
 console.log(
   `\n${flagged.length} distinct entries affected, ${distinct.length} inside the B2 envelope.`,
+);
+console.log(
+  `${ruledOut.length} more were ruled out as not headwords, which is a decision rather than outstanding work.`,
 );
 
 console.log("\nby level:");

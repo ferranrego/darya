@@ -1,55 +1,612 @@
 {
   "_comment": "Authored replacements for entries whose gloss was the literal '[C2 auto-fill]' and whose example was the headword echoed back. Every one also needs its part of speech decided, since the pass that created them tagged all 290 as nouns regardless of what they are. Applied by scripts/apply-ca-glosses.ts, which re-checks each result with verifyEntry. Entries listed with \"drop\": a reason are artifacts rather than words - they keep their id so nothing is orphaned, but they are marked so they can never be taught.",
-
-  "lx-4069": { "pos": "noun", "glossEn": "place, spot", "exampleTarget": "Aquest és un lloc molt tranquil.", "exampleEn": "This is a very quiet place." },
-  "lx-4161": { "pos": "noun", "glossEn": "time, occasion", "exampleTarget": "L'he vist una altra vegada.", "exampleEn": "I have seen him another time." },
-  "lx-4210": { "pos": "noun", "glossEn": "death", "exampleTarget": "La mort del rei va sorprendre tothom.", "exampleEn": "The king's death surprised everyone." },
-  "lx-4146": { "pos": "noun", "glossEn": "way, manner", "exampleTarget": "Ho ha fet a la seva manera.", "exampleEn": "He has done it his own way." },
-  "lx-4154": { "pos": "noun", "glossEn": "moment", "exampleTarget": "Espera un moment, si us plau.", "exampleEn": "Wait a moment, please." },
-  "lx-4081": { "pos": "pronoun", "glossEn": "which (relative, after an article: el qual, la qual)", "exampleTarget": "El llibre del qual parlem és aquest.", "exampleEn": "The book we are talking about is this one." },
-  "lx-4172": { "pos": "adjective", "glossEn": "different", "exampleTarget": "Aquest cas és diferent.", "exampleEn": "This case is different." },
-  "lx-4157": { "pos": "noun", "glossEn": "case, instance", "exampleTarget": "En aquest cas no puc ajudar-te.", "exampleEn": "In this case I cannot help you." },
-  "lx-4282": { "pos": "noun", "glossEn": "north", "exampleTarget": "Viuen al nord del país.", "exampleEn": "They live in the north of the country." },
-  "lx-4208": { "pos": "noun", "glossEn": "end, ending", "exampleTarget": "El final de la pel·lícula és trist.", "exampleEn": "The end of the film is sad." },
-  "lx-4160": { "drop": "Capitalised fragment of the connector 'tal com' / 'tal vegada'; not a headword." },
-  "lx-4077": { "drop": "Feminine of 'segon', which the morphology engine already generates." },
-  "lx-4057": { "pos": "pronoun", "glossEn": "me (after a preposition: a mi, per mi)", "exampleTarget": "Aquest regal és per a mi.", "exampleEn": "This present is for me." },
-  "lx-4106": { "pos": "noun", "glossEn": "a bit, a little", "exampleTarget": "Vols una mica de pa?", "exampleEn": "Do you want a bit of bread?" },
-  "lx-4080": { "drop": "Plural of 'qual', which the morphology engine already generates." },
-  "lx-4058": { "pos": "adjective", "glossEn": "possible", "exampleTarget": "No és possible arribar a temps.", "exampleEn": "It is not possible to arrive on time." },
-  "lx-4060": { "pos": "adjective", "glossEn": "certain, sure", "exampleTarget": "És cert que ha plogut molt.", "exampleEn": "It is true that it has rained a lot." },
-  "lx-4337": { "pos": "noun", "glossEn": "term, word", "exampleTarget": "No entenc aquest terme tècnic.", "exampleEn": "I do not understand this technical term." },
-  "lx-4252": { "pos": "adjective", "glossEn": "next, following", "exampleTarget": "Baixo a la següent parada.", "exampleEn": "I am getting off at the next stop." },
-  "lx-4125": { "drop": "Third-person singular of 'tractar'; the engine generates it." },
-  "lx-4065": { "drop": "Capitalised duplicate of 'exemple'." },
-  "lx-4292": { "pos": "noun", "glossEn": "information", "exampleTarget": "Necessito més informació sobre el curs.", "exampleEn": "I need more information about the course." },
-  "lx-4217": { "drop": "Capitalised adjective from a proper name ('Central'); not a headword." },
-  "lx-4102": { "pos": "noun", "glossEn": "prize, award", "exampleTarget": "Ha guanyat el primer premi.", "exampleEn": "She has won first prize." },
-  "lx-4259": { "pos": "noun", "glossEn": "list", "exampleTarget": "Escriu la llista de la compra.", "exampleEn": "Write the shopping list." },
-  "lx-4271": { "pos": "adverb", "glossEn": "forward, onward", "exampleTarget": "Hem de mirar endavant.", "exampleEn": "We have to look forward." },
-  "lx-4145": { "pos": "noun", "glossEn": "end, purpose", "exampleTarget": "Al cap i a la fi, tots hi guanyem.", "exampleEn": "In the end, we all gain from it." },
-  "lx-4304": { "pos": "adjective", "glossEn": "local", "exampleTarget": "Compro fruita al mercat local.", "exampleEn": "I buy fruit at the local market." },
-  "lx-4091": { "pos": "adjective", "glossEn": "serious, grave", "exampleTarget": "El problema és més greu del que sembla.", "exampleEn": "The problem is more serious than it seems." },
-  "lx-4093": { "pos": "verb", "glossEn": "to ask for, to request", "exampleTarget": "Vaig demanar un cafè amb llet.", "exampleEn": "I asked for a coffee with milk." },
-  "lx-4187": { "drop": "Fragment of the connector 'no obstant això'; not a headword on its own." },
-  "lx-4207": { "drop": "Capitalised duplicate of the adverb 'realment'." },
-  "lx-4155": { "pos": "noun", "glossEn": "career; race", "exampleTarget": "Ha fet una carrera brillant.", "exampleEn": "She has had a brilliant career." },
-  "lx-4281": { "pos": "verb", "glossEn": "to build, to construct", "exampleTarget": "Volen construir una escola nova.", "exampleEn": "They want to build a new school." },
-  "lx-4264": { "pos": "noun", "glossEn": "half", "exampleTarget": "Me'n dones la meitat?", "exampleEn": "Will you give me half of it?" },
-  "lx-4311": { "pos": "adjective", "glossEn": "international", "exampleTarget": "És un acord internacional.", "exampleEn": "It is an international agreement." },
-  "lx-4111": { "pos": "noun", "glossEn": "mistake, error", "exampleTarget": "He comès un error greu.", "exampleEn": "I have made a serious mistake." },
-  "lx-4104": { "pos": "noun", "glossEn": "topic, subject", "exampleTarget": "Canviem de tema, si us plau.", "exampleEn": "Let's change the subject, please." },
-  "lx-4141": { "pos": "noun", "glossEn": "date", "exampleTarget": "Quina és la data de la reunió?", "exampleEn": "What is the date of the meeting?" },
-  "lx-4192": { "pos": "verb", "glossEn": "to continue, to carry on", "exampleTarget": "Vull continuar estudiant català.", "exampleEn": "I want to carry on studying Catalan." },
-  "lx-4119": { "pos": "noun", "glossEn": "lady, madam; Mrs", "exampleTarget": "La senyora Puig ens espera.", "exampleEn": "Mrs Puig is waiting for us." },
-  "lx-4216": { "pos": "noun", "glossEn": "luck", "exampleTarget": "Bona sort a l'examen!", "exampleEn": "Good luck in the exam!" },
-  "lx-4336": { "pos": "adjective", "glossEn": "last, latest", "exampleTarget": "Aquest és el darrer tren.", "exampleEn": "This is the last train." },
-  "lx-4314": { "pos": "verb", "glossEn": "to avoid, to prevent", "exampleTarget": "Volem evitar més problemes.", "exampleEn": "We want to avoid more problems." },
-  "lx-4116": { "pos": "noun", "glossEn": "question, matter", "exampleTarget": "És una qüestió de temps.", "exampleEn": "It is a matter of time." },
-  "lx-4230": { "pos": "verb", "glossEn": "to fight, to struggle", "exampleTarget": "Van lluitar per la llibertat.", "exampleEn": "They fought for freedom." },
-  "lx-4211": { "pos": "adverb", "glossEn": "up, above, upstairs", "exampleTarget": "El llibre és a dalt de tot.", "exampleEn": "The book is right at the top." },
-  "lx-4345": { "drop": "Plural of 'estudi', which the morphology engine already generates." },
-  "lx-4283": { "drop": "Feminine of 'públic', which the morphology engine already generates." },
-  "lx-4101": { "pos": "noun", "glossEn": "letter; menu", "exampleTarget": "He rebut una carta del banc.", "exampleEn": "I have received a letter from the bank." },
-  "lx-4215": { "drop": "Feminine of 'mal', which the morphology engine already generates." }
+  "lx-4069": {
+    "pos": "noun",
+    "glossEn": "place, spot",
+    "exampleTarget": "Aquest és un lloc molt tranquil.",
+    "exampleEn": "This is a very quiet place."
+  },
+  "lx-4161": {
+    "pos": "noun",
+    "glossEn": "time, occasion",
+    "exampleTarget": "L'he vist una altra vegada.",
+    "exampleEn": "I have seen him another time."
+  },
+  "lx-4210": {
+    "pos": "noun",
+    "glossEn": "death",
+    "exampleTarget": "La mort del rei va sorprendre tothom.",
+    "exampleEn": "The king's death surprised everyone."
+  },
+  "lx-4146": {
+    "pos": "noun",
+    "glossEn": "way, manner",
+    "exampleTarget": "Ho ha fet a la seva manera.",
+    "exampleEn": "He has done it his own way."
+  },
+  "lx-4154": {
+    "pos": "noun",
+    "glossEn": "moment",
+    "exampleTarget": "Espera un moment, si us plau.",
+    "exampleEn": "Wait a moment, please."
+  },
+  "lx-4081": {
+    "pos": "pronoun",
+    "glossEn": "which (relative, after an article: el qual, la qual)",
+    "exampleTarget": "El llibre del qual parlem és aquest.",
+    "exampleEn": "The book we are talking about is this one."
+  },
+  "lx-4172": {
+    "pos": "adjective",
+    "glossEn": "different",
+    "exampleTarget": "Aquest cas és diferent.",
+    "exampleEn": "This case is different."
+  },
+  "lx-4157": {
+    "pos": "noun",
+    "glossEn": "case, instance",
+    "exampleTarget": "En aquest cas no puc ajudar-te.",
+    "exampleEn": "In this case I cannot help you."
+  },
+  "lx-4282": {
+    "pos": "noun",
+    "glossEn": "north",
+    "exampleTarget": "Viuen al nord del país.",
+    "exampleEn": "They live in the north of the country."
+  },
+  "lx-4208": {
+    "pos": "noun",
+    "glossEn": "end, ending",
+    "exampleTarget": "El final de la pel·lícula és trist.",
+    "exampleEn": "The end of the film is sad."
+  },
+  "lx-4160": {
+    "drop": "Capitalised fragment of the connector 'tal com' / 'tal vegada'; not a headword."
+  },
+  "lx-4077": {
+    "drop": "Feminine of 'segon', which the morphology engine already generates."
+  },
+  "lx-4057": {
+    "pos": "pronoun",
+    "glossEn": "me (after a preposition: a mi, per mi)",
+    "exampleTarget": "Aquest regal és per a mi.",
+    "exampleEn": "This present is for me."
+  },
+  "lx-4106": {
+    "pos": "noun",
+    "glossEn": "a bit, a little",
+    "exampleTarget": "Vols una mica de pa?",
+    "exampleEn": "Do you want a bit of bread?"
+  },
+  "lx-4080": {
+    "drop": "Plural of 'qual', which the morphology engine already generates."
+  },
+  "lx-4058": {
+    "pos": "adjective",
+    "glossEn": "possible",
+    "exampleTarget": "No és possible arribar a temps.",
+    "exampleEn": "It is not possible to arrive on time."
+  },
+  "lx-4060": {
+    "pos": "adjective",
+    "glossEn": "certain, sure",
+    "exampleTarget": "És cert que ha plogut molt.",
+    "exampleEn": "It is true that it has rained a lot."
+  },
+  "lx-4337": {
+    "pos": "noun",
+    "glossEn": "term, word",
+    "exampleTarget": "No entenc aquest terme tècnic.",
+    "exampleEn": "I do not understand this technical term."
+  },
+  "lx-4252": {
+    "pos": "adjective",
+    "glossEn": "next, following",
+    "exampleTarget": "Baixo a la següent parada.",
+    "exampleEn": "I am getting off at the next stop."
+  },
+  "lx-4125": {
+    "drop": "Third-person singular of 'tractar'; the engine generates it."
+  },
+  "lx-4065": {
+    "drop": "Capitalised duplicate of 'exemple'."
+  },
+  "lx-4292": {
+    "pos": "noun",
+    "glossEn": "information",
+    "exampleTarget": "Necessito més informació sobre el curs.",
+    "exampleEn": "I need more information about the course."
+  },
+  "lx-4217": {
+    "drop": "Capitalised adjective from a proper name ('Central'); not a headword."
+  },
+  "lx-4102": {
+    "pos": "noun",
+    "glossEn": "prize, award",
+    "exampleTarget": "Ha guanyat el primer premi.",
+    "exampleEn": "She has won first prize."
+  },
+  "lx-4259": {
+    "pos": "noun",
+    "glossEn": "list",
+    "exampleTarget": "Escriu la llista de la compra.",
+    "exampleEn": "Write the shopping list."
+  },
+  "lx-4271": {
+    "pos": "adverb",
+    "glossEn": "forward, onward",
+    "exampleTarget": "Hem de mirar endavant.",
+    "exampleEn": "We have to look forward."
+  },
+  "lx-4145": {
+    "pos": "noun",
+    "glossEn": "end, purpose",
+    "exampleTarget": "Al cap i a la fi, tots hi guanyem.",
+    "exampleEn": "In the end, we all gain from it."
+  },
+  "lx-4304": {
+    "pos": "adjective",
+    "glossEn": "local",
+    "exampleTarget": "Compro fruita al mercat local.",
+    "exampleEn": "I buy fruit at the local market."
+  },
+  "lx-4091": {
+    "pos": "adjective",
+    "glossEn": "serious, grave",
+    "exampleTarget": "El problema és més greu del que sembla.",
+    "exampleEn": "The problem is more serious than it seems."
+  },
+  "lx-4093": {
+    "pos": "verb",
+    "glossEn": "to ask for, to request",
+    "exampleTarget": "Vaig demanar un cafè amb llet.",
+    "exampleEn": "I asked for a coffee with milk."
+  },
+  "lx-4187": {
+    "drop": "Fragment of the connector 'no obstant això'; not a headword on its own."
+  },
+  "lx-4207": {
+    "drop": "Capitalised duplicate of the adverb 'realment'."
+  },
+  "lx-4155": {
+    "pos": "noun",
+    "glossEn": "career; race",
+    "exampleTarget": "Ha fet una carrera brillant.",
+    "exampleEn": "She has had a brilliant career."
+  },
+  "lx-4281": {
+    "pos": "verb",
+    "glossEn": "to build, to construct",
+    "exampleTarget": "Volen construir una escola nova.",
+    "exampleEn": "They want to build a new school."
+  },
+  "lx-4264": {
+    "pos": "noun",
+    "glossEn": "half",
+    "exampleTarget": "Me'n dones la meitat?",
+    "exampleEn": "Will you give me half of it?"
+  },
+  "lx-4311": {
+    "pos": "adjective",
+    "glossEn": "international",
+    "exampleTarget": "És un acord internacional.",
+    "exampleEn": "It is an international agreement."
+  },
+  "lx-4111": {
+    "pos": "noun",
+    "glossEn": "mistake, error",
+    "exampleTarget": "He comès un error greu.",
+    "exampleEn": "I have made a serious mistake."
+  },
+  "lx-4104": {
+    "pos": "noun",
+    "glossEn": "topic, subject",
+    "exampleTarget": "Canviem de tema, si us plau.",
+    "exampleEn": "Let's change the subject, please."
+  },
+  "lx-4141": {
+    "pos": "noun",
+    "glossEn": "date",
+    "exampleTarget": "Quina és la data de la reunió?",
+    "exampleEn": "What is the date of the meeting?"
+  },
+  "lx-4192": {
+    "pos": "verb",
+    "glossEn": "to continue, to carry on",
+    "exampleTarget": "Vull continuar estudiant català.",
+    "exampleEn": "I want to carry on studying Catalan."
+  },
+  "lx-4119": {
+    "pos": "noun",
+    "glossEn": "lady, madam; Mrs",
+    "exampleTarget": "La senyora Puig ens espera.",
+    "exampleEn": "Mrs Puig is waiting for us."
+  },
+  "lx-4216": {
+    "pos": "noun",
+    "glossEn": "luck",
+    "exampleTarget": "Bona sort a l'examen!",
+    "exampleEn": "Good luck in the exam!"
+  },
+  "lx-4336": {
+    "pos": "adjective",
+    "glossEn": "last, latest",
+    "exampleTarget": "Aquest és el darrer tren.",
+    "exampleEn": "This is the last train."
+  },
+  "lx-4314": {
+    "pos": "verb",
+    "glossEn": "to avoid, to prevent",
+    "exampleTarget": "Volem evitar més problemes.",
+    "exampleEn": "We want to avoid more problems."
+  },
+  "lx-4116": {
+    "pos": "noun",
+    "glossEn": "question, matter",
+    "exampleTarget": "És una qüestió de temps.",
+    "exampleEn": "It is a matter of time."
+  },
+  "lx-4230": {
+    "pos": "verb",
+    "glossEn": "to fight, to struggle",
+    "exampleTarget": "Van lluitar per la llibertat.",
+    "exampleEn": "They fought for freedom."
+  },
+  "lx-4211": {
+    "pos": "adverb",
+    "glossEn": "up, above, upstairs",
+    "exampleTarget": "El llibre és a dalt de tot.",
+    "exampleEn": "The book is right at the top."
+  },
+  "lx-4345": {
+    "drop": "Plural of 'estudi', which the morphology engine already generates."
+  },
+  "lx-4283": {
+    "drop": "Feminine of 'públic', which the morphology engine already generates."
+  },
+  "lx-4101": {
+    "pos": "noun",
+    "glossEn": "letter; menu",
+    "exampleTarget": "He rebut una carta del banc.",
+    "exampleEn": "I have received a letter from the bank."
+  },
+  "lx-4215": {
+    "drop": "Feminine of 'mal', which the morphology engine already generates."
+  },
+  "lx-4056": {
+    "pos": "adjective",
+    "glossEn": "necessary",
+    "exampleTarget": "És necessari portar el passaport.",
+    "exampleEn": "It is necessary to bring your passport."
+  },
+  "lx-4267": {
+    "pos": "noun",
+    "glossEn": "detail",
+    "exampleTarget": "No recordo aquest detall.",
+    "exampleEn": "I do not remember this detail."
+  },
+  "lx-4127": {
+    "drop": "Third-person singular of 'existir'; the engine generates it."
+  },
+  "lx-4222": {
+    "pos": "noun",
+    "glossEn": "record, register",
+    "exampleTarget": "Han obert un registre nou.",
+    "exampleEn": "They have opened a new register."
+  },
+  "lx-4312": {
+    "pos": "verb",
+    "glossEn": "to establish",
+    "exampleTarget": "Volen establir una nova regla.",
+    "exampleEn": "They want to establish a new rule."
+  },
+  "lx-4266": {
+    "drop": "Fragment of the adverbial phrase 'de debò'; not a headword."
+  },
+  "lx-4303": {
+    "pos": "noun",
+    "glossEn": "influence",
+    "exampleTarget": "Té molta influència a la ciutat.",
+    "exampleEn": "He has a lot of influence in the city."
+  },
+  "lx-4144": {
+    "pos": "verb",
+    "glossEn": "to accept",
+    "exampleTarget": "No puc acceptar aquesta oferta.",
+    "exampleEn": "I cannot accept this offer."
+  },
+  "lx-4073": {
+    "pos": "adjective",
+    "glossEn": "rich",
+    "exampleTarget": "És una família molt rica.",
+    "exampleEn": "It is a very rich family."
+  },
+  "lx-4113": {
+    "pos": "verb",
+    "glossEn": "to take part",
+    "exampleTarget": "Vull participar en el concurs.",
+    "exampleEn": "I want to take part in the competition."
+  },
+  "lx-4319": {
+    "pos": "adverb",
+    "glossEn": "only, merely",
+    "exampleTarget": "Solament vull parlar amb tu.",
+    "exampleEn": "I only want to talk to you."
+  },
+  "lx-4258": {
+    "pos": "verb",
+    "glossEn": "to publish",
+    "exampleTarget": "Han publicat el llibre aquest any.",
+    "exampleEn": "They have published the book this year."
+  },
+  "lx-4246": {
+    "drop": "Capitalised duplicate of the adjective 'correcte'."
+  },
+  "lx-4254": {
+    "drop": "Plural of 'activitat', which the morphology engine generates."
+  },
+  "lx-4096": {
+    "pos": "noun",
+    "glossEn": "present, gift",
+    "exampleTarget": "Li he comprat un regal.",
+    "exampleEn": "I have bought her a present."
+  },
+  "lx-4212": {
+    "pos": "verb",
+    "glossEn": "to suffer",
+    "exampleTarget": "No vull que pateixi més.",
+    "exampleEn": "I do not want him to suffer any more."
+  },
+  "lx-4135": {
+    "drop": "Past participle of 'construir'; the engine generates it."
+  },
+  "lx-4276": {
+    "pos": "verb",
+    "glossEn": "to act",
+    "exampleTarget": "Cal actuar amb calma.",
+    "exampleEn": "One must act calmly."
+  },
+  "lx-4097": {
+    "pos": "noun",
+    "glossEn": "birthday, anniversary",
+    "exampleTarget": "Demà és el meu aniversari.",
+    "exampleEn": "Tomorrow is my birthday."
+  },
+  "lx-4138": {
+    "drop": "Plural of 'tema', which the morphology engine generates."
+  },
+  "lx-4256": {
+    "drop": "Third-person singular of 'contenir'; the engine generates it."
+  },
+  "lx-4274": {
+    "pos": "noun",
+    "glossEn": "atmosphere, environment",
+    "exampleTarget": "L'ambient de la festa era alegre.",
+    "exampleEn": "The atmosphere of the party was cheerful."
+  },
+  "lx-4085": {
+    "drop": "Plural of 'carta', which the morphology engine generates."
+  },
+  "lx-4284": {
+    "drop": "Plural of 'social', which the morphology engine generates."
+  },
+  "lx-4280": {
+    "drop": "Plural of 'zona', which the morphology engine generates."
+  },
+  "lx-4151": {
+    "pos": "noun",
+    "glossEn": "purpose",
+    "exampleTarget": "Quin és el propòsit d'aquesta reunió?",
+    "exampleEn": "What is the purpose of this meeting?"
+  },
+  "lx-4061": {
+    "pos": "adjective",
+    "glossEn": "likely, probable",
+    "exampleTarget": "És probable que arribin tard.",
+    "exampleEn": "It is likely that they will arrive late."
+  },
+  "lx-4123": {
+    "drop": "Past participle of 'demanar'; the engine generates it."
+  },
+  "lx-4195": {
+    "pos": "verb",
+    "glossEn": "to solve, to resolve",
+    "exampleTarget": "Hem de resoldre aquest problema.",
+    "exampleEn": "We have to solve this problem."
+  },
+  "lx-4120": {
+    "pos": "noun",
+    "glossEn": "hurry, haste",
+    "exampleTarget": "Tinc molta pressa.",
+    "exampleEn": "I am in a great hurry."
+  },
+  "lx-4205": {
+    "pos": "noun",
+    "glossEn": "a while",
+    "exampleTarget": "Hem esperat una bona estona.",
+    "exampleEn": "We waited quite a while."
+  },
+  "lx-4332": {
+    "pos": "verb",
+    "glossEn": "to assure, to secure",
+    "exampleTarget": "Et puc assegurar que és cert.",
+    "exampleEn": "I can assure you it is true."
+  },
+  "lx-4339": {
+    "pos": "noun",
+    "glossEn": "committee",
+    "exampleTarget": "El comitè es reuneix cada mes.",
+    "exampleEn": "The committee meets every month."
+  },
+  "lx-4136": {
+    "drop": "Past participle of 'publicar'; the engine generates it."
+  },
+  "lx-4067": {
+    "pos": "verb",
+    "glossEn": "to drive",
+    "exampleTarget": "No sap conduir encara.",
+    "exampleEn": "He does not know how to drive yet."
+  },
+  "lx-4213": {
+    "pos": "adjective",
+    "glossEn": "fantastic",
+    "exampleTarget": "Ha estat un viatge fantàstic.",
+    "exampleEn": "It has been a fantastic trip."
+  },
+  "lx-4206": {
+    "pos": "adjective",
+    "glossEn": "dangerous",
+    "exampleTarget": "Aquest camí és perillós.",
+    "exampleEn": "This path is dangerous."
+  },
+  "lx-4110": {
+    "pos": "verb",
+    "glossEn": "to realise, to notice",
+    "exampleTarget": "No em vaig adonar de res.",
+    "exampleEn": "I did not notice anything."
+  },
+  "lx-4063": {
+    "pos": "noun",
+    "glossEn": "noise",
+    "exampleTarget": "Hi ha massa soroll aquí.",
+    "exampleEn": "There is too much noise here."
+  },
+  "lx-4181": {
+    "drop": "Past participle of 'escollir'; the engine generates it."
+  },
+  "lx-4084": {
+    "pos": "adjective",
+    "glossEn": "famous",
+    "exampleTarget": "És un pintor molt famós.",
+    "exampleEn": "He is a very famous painter."
+  },
+  "lx-4342": {
+    "pos": "verb",
+    "glossEn": "to fulfil, to comply with",
+    "exampleTarget": "Cal complir les normes.",
+    "exampleEn": "One must comply with the rules."
+  },
+  "lx-4333": {
+    "pos": "verb",
+    "glossEn": "to order, to arrange",
+    "exampleTarget": "Va ordenar els llibres per data.",
+    "exampleEn": "She arranged the books by date."
+  },
+  "lx-4075": {
+    "pos": "verb",
+    "glossEn": "to visit",
+    "exampleTarget": "Vull visitar els meus avis.",
+    "exampleEn": "I want to visit my grandparents."
+  },
+  "lx-4295": {
+    "pos": "adjective",
+    "glossEn": "absolute",
+    "exampleTarget": "Va guardar un silenci absolut.",
+    "exampleEn": "He kept an absolute silence."
+  },
+  "lx-4221": {
+    "pos": "noun",
+    "glossEn": "standard",
+    "exampleTarget": "Aquest model és l'estàndard actual.",
+    "exampleEn": "This model is the current standard."
+  },
+  "lx-4098": {
+    "drop": "Present subjunctive of 'parar'; the engine generates it."
+  },
+  "lx-4260": {
+    "pos": "verb",
+    "glossEn": "to cause",
+    "exampleTarget": "La pluja pot causar problemes.",
+    "exampleEn": "The rain can cause problems."
+  },
+  "lx-4309": {
+    "pos": "verb",
+    "glossEn": "to access, to gain entry",
+    "exampleTarget": "No puc accedir al compte.",
+    "exampleEn": "I cannot access the account."
+  },
+  "lx-4118": {
+    "drop": "Feminine of 'preciós', which the morphology engine generates."
+  },
+  "lx-4088": {
+    "pos": "adverb",
+    "glossEn": "recently",
+    "exampleTarget": "Ha canviat de feina recentment.",
+    "exampleEn": "She has recently changed jobs."
+  },
+  "lx-4143": {
+    "drop": "Feminine of 'necessari', which the morphology engine generates."
+  },
+  "lx-4341": {
+    "pos": "noun",
+    "glossEn": "cut, slice",
+    "exampleTarget": "S'ha fet un tall al dit.",
+    "exampleEn": "He has cut his finger."
+  },
+  "lx-4306": {
+    "pos": "noun",
+    "glossEn": "the next day",
+    "exampleTarget": "L'endemà va tornar a ploure.",
+    "exampleEn": "The next day it rained again."
+  },
+  "lx-4185": {
+    "pos": "adjective",
+    "glossEn": "wrong, mistaken",
+    "exampleTarget": "Aquest resultat és equivocat.",
+    "exampleEn": "This result is wrong."
+  },
+  "lx-4299": {
+    "pos": "verb",
+    "glossEn": "to hide",
+    "exampleTarget": "Vol amagar la veritat.",
+    "exampleEn": "He wants to hide the truth."
+  },
+  "lx-4308": {
+    "drop": "Past participle of 'establir'; the engine generates it."
+  },
+  "lx-4162": {
+    "drop": "Feminine of 'correcte', which the morphology engine generates."
+  },
+  "lx-4105": {
+    "pos": "noun",
+    "glossEn": "darkness",
+    "exampleTarget": "La foscor del bosc feia por.",
+    "exampleEn": "The darkness of the forest was frightening."
+  },
+  "lx-4305": {
+    "pos": "adjective",
+    "glossEn": "notable, remarkable",
+    "exampleTarget": "Ha fet un progrés notable.",
+    "exampleEn": "She has made remarkable progress."
+  },
+  "lx-4087": {
+    "drop": "Feminine past participle of 'construir'; the engine generates it."
+  },
+  "lx-4124": {
+    "drop": "Plural of 'assumpte', which the morphology engine generates."
+  },
+  "lx-4250": {
+    "drop": "Past participle of 'detenir'; the engine generates it."
+  },
+  "lx-4166": {
+    "drop": "Plural of 'instrucció', which the morphology engine generates."
+  },
+  "lx-4241": {
+    "drop": "Third-person singular of 'demostrar'; the engine generates it."
+  },
+  "lx-4168": {
+    "drop": "Capitalised impersonal pronoun 'hom'; literary and out of level."
+  },
+  "lx-4201": {
+    "pos": "adjective",
+    "glossEn": "specific",
+    "exampleTarget": "Necessito un exemple específic.",
+    "exampleEn": "I need a specific example."
+  },
+  "lx-4297": {
+    "pos": "noun",
+    "glossEn": "oil, petroleum",
+    "exampleTarget": "El preu del petroli ha pujat.",
+    "exampleEn": "The price of oil has risen."
+  }
 }
