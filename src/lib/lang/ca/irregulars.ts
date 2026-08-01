@@ -470,6 +470,21 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       gerund: ["duent"],
     },
   },
+  // `endur-se` is `dur` with a prefix and inflects identically. It is far more
+  // common than the bare verb in everyday Catalan ("emporta-t'ho" aside,
+  // "endur-se" is what a learner meets), and without a spec here the engine
+  // generates none of its forms, so `se'n va endur` resolves to nothing.
+  endur: {
+    infinitive: "endur",
+    conjugation: 2,
+    overrides: {
+      present: ["enduc", "endus", "endu", "enduem", "endueu", "enduen"],
+      imperfect: ["enduia", "enduies", "endúiem", "endúieu", "enduien"],
+      presentSubjunctive: ["endugui", "enduguis", "enduguem", "endugueu", "enduguin"],
+      participle: ["endut", "enduta", "enduts", "endutes"],
+      gerund: ["enduent"],
+    },
+  },
 };
 
 /**

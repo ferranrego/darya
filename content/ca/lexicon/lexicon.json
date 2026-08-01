@@ -21504,7 +21504,7 @@
       "id": "lx-4188",
       "target": "dificultats",
       "targetNormalized": "dificultats",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'dificultat', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 1405,
       "freqBand": 6,
@@ -21514,7 +21514,7 @@
         "auto-added"
       ],
       "exampleTarget": "dificultats",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'dificultat', which the morphology engine generates.]"
     },
     {
       "id": "lx-1433",
@@ -21701,7 +21701,7 @@
       "id": "lx-4318",
       "target": "assistir",
       "targetNormalized": "assistir",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to attend",
       "pos": "verb",
       "freqRank": 1418,
       "freqBand": 6,
@@ -21710,14 +21710,14 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "assistir",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Vaig assistir a la conferència.",
+      "exampleEn": "I attended the lecture."
     },
     {
       "id": "lx-4079",
       "target": "infant",
       "targetNormalized": "infant",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "child",
       "pos": "noun",
       "freqRank": 1419,
       "freqBand": 6,
@@ -21726,8 +21726,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "infant",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "L'infant dormia tranquil.",
+      "exampleEn": "The child was sleeping peacefully."
     },
     {
       "id": "lx-1359",
@@ -22140,7 +22140,7 @@
       "id": "lx-4244",
       "target": "acusació",
       "targetNormalized": "acusació",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "accusation",
       "pos": "noun",
       "freqRank": 1446,
       "freqBand": 6,
@@ -22149,8 +22149,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "acusació",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "L'acusació no té cap prova.",
+      "exampleEn": "The accusation has no evidence."
     },
     {
       "id": "lx-2459",
@@ -22230,7 +22230,7 @@
       "id": "lx-4204",
       "target": "riure",
       "targetNormalized": "riure",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to laugh",
       "pos": "verb",
       "freqRank": 1452,
       "freqBand": 6,
@@ -22239,8 +22239,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "riure",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "No puc parar de riure.",
+      "exampleEn": "I cannot stop laughing."
     },
     {
       "id": "lx-1381",
@@ -22386,8 +22386,8 @@
       "id": "lx-4156",
       "target": "personalment",
       "targetNormalized": "personalment",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "personally",
+      "pos": "adverb",
       "freqRank": 1462,
       "freqBand": 6,
       "register": "formal",
@@ -22395,8 +22395,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "personalment",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Personalment, no hi estic d'acord.",
+      "exampleEn": "Personally, I do not agree."
     },
     {
       "id": "lx-1264",
@@ -22416,7 +22416,7 @@
       "id": "lx-4323",
       "target": "afecta",
       "targetNormalized": "afecta",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'afectar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1464,
       "freqBand": 6,
@@ -22426,7 +22426,7 @@
         "auto-added"
       ],
       "exampleTarget": "afecta",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'afectar'; the engine generates it.]"
     },
     {
       "id": "lx-1744",
@@ -22516,7 +22516,7 @@
       "id": "lx-4171",
       "target": "creix",
       "targetNormalized": "creix",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'créixer'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1471,
       "freqBand": 6,
@@ -22526,7 +22526,7 @@
         "auto-added"
       ],
       "exampleTarget": "creix",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'créixer'; the engine generates it.]"
     },
     {
       "id": "lx-0649",
@@ -22808,7 +22808,7 @@
       "id": "lx-4243",
       "target": "obligar",
       "targetNormalized": "obligar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to force, to oblige",
       "pos": "verb",
       "freqRank": 1490,
       "freqBand": 6,
@@ -22817,8 +22817,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "obligar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "No et vull obligar a venir.",
+      "exampleEn": "I do not want to force you to come."
     },
     {
       "id": "lx-3969",
@@ -22888,7 +22888,7 @@
       "id": "lx-4150",
       "target": "entrenador",
       "targetNormalized": "entrenador",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "coach, trainer",
       "pos": "noun",
       "freqRank": 1495,
       "freqBand": 6,
@@ -22897,8 +22897,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "entrenador",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "L'entrenador va canviar la tàctica.",
+      "exampleEn": "The coach changed the tactics."
     },
     {
       "id": "lx-1415",
@@ -23070,7 +23070,7 @@
       "id": "lx-4301",
       "target": "cometre",
       "targetNormalized": "cometre",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to commit (an error, a crime)",
       "pos": "verb",
       "freqRank": 1507,
       "freqBand": 6,
@@ -23079,8 +23079,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "cometre",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "No vull cometre el mateix error.",
+      "exampleEn": "I do not want to commit the same mistake."
     },
     {
       "id": "lx-3744",
@@ -23253,7 +23253,7 @@
       "id": "lx-4324",
       "target": "adults",
       "targetNormalized": "adults",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'adult', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 1519,
       "freqBand": 6,
@@ -23263,7 +23263,7 @@
         "auto-added"
       ],
       "exampleTarget": "adults",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'adult', which the morphology engine generates.]"
     },
     {
       "id": "lx-1941",
@@ -23356,7 +23356,7 @@
       "id": "lx-4290",
       "target": "afectat",
       "targetNormalized": "afectat",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'afectar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1526,
       "freqBand": 6,
@@ -23366,7 +23366,7 @@
         "auto-added"
       ],
       "exampleTarget": "afectat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'afectar'; the engine generates it.]"
     },
     {
       "id": "lx-0801",
@@ -23430,7 +23430,7 @@
       "id": "lx-4089",
       "target": "demano",
       "targetNormalized": "demano",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: First-person singular of 'demanar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1531,
       "freqBand": 6,
@@ -23440,7 +23440,7 @@
         "auto-added"
       ],
       "exampleTarget": "demano",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: First-person singular of 'demanar'; the engine generates it.]"
     },
     {
       "id": "lx-2505",
@@ -23568,8 +23568,8 @@
       "id": "lx-4227",
       "target": "freqüent",
       "targetNormalized": "freqüent",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "frequent",
+      "pos": "adjective",
       "freqRank": 1540,
       "freqBand": 6,
       "register": "formal",
@@ -23577,8 +23577,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "freqüent",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "És un problema molt freqüent.",
+      "exampleEn": "It is a very frequent problem."
     },
     {
       "id": "lx-2864",
@@ -23814,8 +23814,8 @@
       "id": "lx-4223",
       "target": "formal",
       "targetNormalized": "formal",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "formal",
+      "pos": "adjective",
       "freqRank": 1556,
       "freqBand": 6,
       "register": "formal",
@@ -23823,8 +23823,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "formal",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Cal fer una petició formal.",
+      "exampleEn": "A formal request must be made."
     },
     {
       "id": "lx-1234",
@@ -24306,7 +24306,7 @@
       "id": "lx-4177",
       "target": "retornar",
       "targetNormalized": "retornar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to return, to give back",
       "pos": "verb",
       "freqRank": 1588,
       "freqBand": 6,
@@ -24315,14 +24315,14 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "retornar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Has de retornar el llibre demà.",
+      "exampleEn": "You have to return the book tomorrow."
     },
     {
       "id": "lx-4326",
       "target": "excusa",
       "targetNormalized": "excusa",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "excuse",
       "pos": "noun",
       "freqRank": 1589,
       "freqBand": 6,
@@ -24331,8 +24331,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "excusa",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Sempre té alguna excusa.",
+      "exampleEn": "He always has some excuse."
     },
     {
       "id": "lx-1410",
@@ -24574,7 +24574,7 @@
       "id": "lx-4152",
       "target": "alegro",
       "targetNormalized": "alegro",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: First-person singular of 'alegrar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1605,
       "freqBand": 6,
@@ -24584,7 +24584,7 @@
         "auto-added"
       ],
       "exampleTarget": "alegro",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: First-person singular of 'alegrar'; the engine generates it.]"
     },
     {
       "id": "lx-0524",
@@ -24714,7 +24714,7 @@
       "id": "lx-4315",
       "target": "investigadors",
       "targetNormalized": "investigadors",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'investigador', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 1614,
       "freqBand": 6,
@@ -24724,7 +24724,7 @@
         "auto-added"
       ],
       "exampleTarget": "investigadors",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'investigador', which the morphology engine generates.]"
     },
     {
       "id": "lx-1017",
@@ -24744,7 +24744,7 @@
       "id": "lx-4159",
       "target": "instal·lació",
       "targetNormalized": "instal·lació",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "installation, facility",
       "pos": "noun",
       "freqRank": 1616,
       "freqBand": 6,
@@ -24753,8 +24753,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "instal·lació",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "La instal·lació ha durat dos dies.",
+      "exampleEn": "The installation took two days."
     },
     {
       "id": "lx-1140",
@@ -25052,7 +25052,7 @@
       "id": "lx-4329",
       "target": "resolt",
       "targetNormalized": "resolt",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'resoldre'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1636,
       "freqBand": 6,
@@ -25062,7 +25062,7 @@
         "auto-added"
       ],
       "exampleTarget": "resolt",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'resoldre'; the engine generates it.]"
     },
     {
       "id": "lx-2514",
@@ -25186,7 +25186,7 @@
       "id": "lx-4194",
       "target": "complexa",
       "targetNormalized": "complexa",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Feminine of 'complex', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 1645,
       "freqBand": 6,
@@ -25196,7 +25196,7 @@
         "auto-added"
       ],
       "exampleTarget": "complexa",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Feminine of 'complex', which the morphology engine generates.]"
     },
     {
       "id": "lx-1681",
@@ -25675,8 +25675,8 @@
       "id": "lx-4228",
       "target": "endur",
       "targetNormalized": "endur",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "to take away, to carry off",
+      "pos": "verb",
       "freqRank": 1677,
       "freqBand": 6,
       "register": "formal",
@@ -25684,8 +25684,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "endur",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Es va endur totes les maletes.",
+      "exampleEn": "He took away all the suitcases."
     },
     {
       "id": "lx-1364",
@@ -25837,7 +25837,7 @@
       "id": "lx-4129",
       "target": "adonat",
       "targetNormalized": "adonat",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'adonar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1688,
       "freqBand": 6,
@@ -25847,7 +25847,7 @@
         "auto-added"
       ],
       "exampleTarget": "adonat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'adonar'; the engine generates it.]"
     },
     {
       "id": "lx-3944",
@@ -26038,7 +26038,7 @@
       "id": "lx-4346",
       "target": "inicials",
       "targetNormalized": "inicials",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'inicial', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 1701,
       "freqBand": 6,
@@ -26048,7 +26048,7 @@
         "auto-added"
       ],
       "exampleTarget": "inicials",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'inicial', which the morphology engine generates.]"
     },
     {
       "id": "lx-1939",
@@ -26793,8 +26793,8 @@
       "id": "lx-4199",
       "target": "penal",
       "targetNormalized": "penal",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "criminal, penal",
+      "pos": "adjective",
       "freqRank": 1752,
       "freqBand": 7,
       "register": "formal",
@@ -26802,8 +26802,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "penal",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "És una qüestió de dret penal.",
+      "exampleEn": "It is a matter of criminal law."
     },
     {
       "id": "lx-0450",
@@ -26933,7 +26933,7 @@
       "id": "lx-4062",
       "target": "molesta",
       "targetNormalized": "molesta",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'molestar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1761,
       "freqBand": 7,
@@ -26943,7 +26943,7 @@
         "auto-added"
       ],
       "exampleTarget": "molesta",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'molestar'; the engine generates it.]"
     },
     {
       "id": "lx-0897",
@@ -26994,7 +26994,7 @@
       "id": "lx-4064",
       "target": "sorprèn",
       "targetNormalized": "sorprèn",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'sorprendre'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1765,
       "freqBand": 7,
@@ -27004,7 +27004,7 @@
         "auto-added"
       ],
       "exampleTarget": "sorprèn",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'sorprendre'; the engine generates it.]"
     },
     {
       "id": "lx-3975",
@@ -27088,7 +27088,7 @@
       "id": "lx-4239",
       "target": "suficients",
       "targetNormalized": "suficients",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'suficient', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 1771,
       "freqBand": 7,
@@ -27098,7 +27098,7 @@
         "auto-added"
       ],
       "exampleTarget": "suficients",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'suficient', which the morphology engine generates.]"
     },
     {
       "id": "lx-1650",
@@ -27118,7 +27118,7 @@
       "id": "lx-4158",
       "target": "comès",
       "targetNormalized": "comès",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'cometre'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1773,
       "freqBand": 7,
@@ -27128,7 +27128,7 @@
         "auto-added"
       ],
       "exampleTarget": "comès",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'cometre'; the engine generates it.]"
     },
     {
       "id": "lx-2944",
@@ -27230,7 +27230,7 @@
       "id": "lx-4269",
       "target": "tieta",
       "targetNormalized": "tieta",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "aunt",
       "pos": "noun",
       "freqRank": 1780,
       "freqBand": 7,
@@ -27239,14 +27239,14 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "tieta",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "La meva tieta viu a Girona.",
+      "exampleEn": "My aunt lives in Girona."
     },
     {
       "id": "lx-4083",
       "target": "paciència",
       "targetNormalized": "paciència",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "patience",
       "pos": "noun",
       "freqRank": 1781,
       "freqBand": 7,
@@ -27255,8 +27255,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "paciència",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Cal molta paciència amb els nens.",
+      "exampleEn": "You need a lot of patience with children."
     },
     {
       "id": "lx-0899",
@@ -27366,7 +27366,7 @@
       "id": "lx-4121",
       "target": "híbrid",
       "targetNormalized": "híbrid",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "hybrid",
       "pos": "noun",
       "freqRank": 1789,
       "freqBand": 7,
@@ -27375,8 +27375,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "híbrid",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Aquest cotxe és un híbrid.",
+      "exampleEn": "This car is a hybrid."
     },
     {
       "id": "lx-2909",
@@ -27398,7 +27398,7 @@
       "id": "lx-4240",
       "target": "sorprendre",
       "targetNormalized": "sorprendre",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to surprise",
       "pos": "verb",
       "freqRank": 1791,
       "freqBand": 7,
@@ -27407,8 +27407,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "sorprendre",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "No em vol sorprendre mai.",
+      "exampleEn": "He never wants to surprise me."
     },
     {
       "id": "lx-1060",
@@ -27476,8 +27476,8 @@
       "id": "lx-4225",
       "target": "valencià",
       "targetNormalized": "valencià",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "Valencian",
+      "pos": "adjective",
       "freqRank": 1796,
       "freqBand": 7,
       "register": "formal",
@@ -27485,8 +27485,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "valencià",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Parla el dialecte valencià.",
+      "exampleEn": "He speaks the Valencian dialect."
     },
     {
       "id": "lx-1693",
@@ -27731,7 +27731,7 @@
       "id": "lx-4261",
       "target": "avís",
       "targetNormalized": "avís",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "warning, notice",
       "pos": "noun",
       "freqRank": 1813,
       "freqBand": 7,
@@ -27740,14 +27740,14 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "avís",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Han penjat un avís a la porta.",
+      "exampleEn": "They have put a notice on the door."
     },
     {
       "id": "lx-4164",
       "target": "mati",
       "targetNormalized": "mati",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Misspelling of 'matí' without its accent; not a headword.]",
       "pos": "noun",
       "freqRank": 1814,
       "freqBand": 7,
@@ -27757,7 +27757,7 @@
         "auto-added"
       ],
       "exampleTarget": "mati",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Misspelling of 'matí' without its accent; not a headword.]"
     },
     {
       "id": "lx-1752",
@@ -28947,7 +28947,7 @@
       "id": "lx-4115",
       "target": "emportar",
       "targetNormalized": "emportar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to take away, to bring along",
       "pos": "verb",
       "freqRank": 1892,
       "freqBand": 7,
@@ -28956,8 +28956,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "emportar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Em vaig emportar un bon record.",
+      "exampleEn": "I took away a good memory."
     },
     {
       "id": "lx-1106",
@@ -29094,7 +29094,7 @@
       "id": "lx-4310",
       "target": "prestigi",
       "targetNormalized": "prestigi",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "prestige",
       "pos": "noun",
       "freqRank": 1902,
       "freqBand": 7,
@@ -29103,14 +29103,14 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "prestigi",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "La universitat té molt prestigi.",
+      "exampleEn": "The university has great prestige."
     },
     {
       "id": "lx-4189",
       "target": "atendre",
       "targetNormalized": "atendre",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to attend to, to serve",
       "pos": "verb",
       "freqRank": 1903,
       "freqBand": 7,
@@ -29119,8 +29119,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "atendre",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Ens van atendre molt bé.",
+      "exampleEn": "They served us very well."
     },
     {
       "id": "lx-0931",
@@ -29140,7 +29140,7 @@
       "id": "lx-4092",
       "target": "demanen",
       "targetNormalized": "demanen",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person plural of 'demanar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1905,
       "freqBand": 7,
@@ -29150,7 +29150,7 @@
         "auto-added"
       ],
       "exampleTarget": "demanen",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person plural of 'demanar'; the engine generates it.]"
     },
     {
       "id": "lx-3942",
@@ -29207,7 +29207,7 @@
       "id": "lx-4068",
       "target": "trasllat",
       "targetNormalized": "trasllat",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "transfer, move",
       "pos": "noun",
       "freqRank": 1909,
       "freqBand": 7,
@@ -29216,8 +29216,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "trasllat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "El trasllat serà al mes de maig.",
+      "exampleEn": "The transfer will be in May."
     },
     {
       "id": "lx-0896",
@@ -29323,7 +29323,7 @@
       "id": "lx-4109",
       "target": "fica",
       "targetNormalized": "fica",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'ficar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1917,
       "freqBand": 7,
@@ -29333,7 +29333,7 @@
         "auto-added"
       ],
       "exampleTarget": "fica",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'ficar'; the engine generates it.]"
     },
     {
       "id": "lx-2222",
@@ -29684,7 +29684,7 @@
       "id": "lx-4170",
       "target": "cartera",
       "targetNormalized": "cartera",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "wallet; briefcase",
       "pos": "noun",
       "freqRank": 1941,
       "freqBand": 7,
@@ -29693,8 +29693,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "cartera",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "He perdut la cartera al metro.",
+      "exampleEn": "I have lost my wallet on the metro."
     },
     {
       "id": "lx-2806",
@@ -30179,7 +30179,7 @@
       "id": "lx-4322",
       "target": "resum",
       "targetNormalized": "resum",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "summary",
       "pos": "noun",
       "freqRank": 1974,
       "freqBand": 7,
@@ -30188,8 +30188,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "resum",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Fes un resum del text.",
+      "exampleEn": "Write a summary of the text."
     },
     {
       "id": "lx-3996",
@@ -30245,7 +30245,7 @@
       "id": "lx-4268",
       "target": "acostumat",
       "targetNormalized": "acostumat",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'acostumar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1978,
       "freqBand": 7,
@@ -30255,7 +30255,7 @@
         "auto-added"
       ],
       "exampleTarget": "acostumat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'acostumar'; the engine generates it.]"
     },
     {
       "id": "lx-3828",
@@ -30278,7 +30278,7 @@
       "id": "lx-4183",
       "target": "expulsar",
       "targetNormalized": "expulsar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to expel",
       "pos": "verb",
       "freqRank": 1980,
       "freqBand": 7,
@@ -30287,8 +30287,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "expulsar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "El van expulsar de la classe.",
+      "exampleEn": "They expelled him from the class."
     },
     {
       "id": "lx-3322",
@@ -30340,7 +30340,7 @@
       "id": "lx-4233",
       "target": "traït",
       "targetNormalized": "traït",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'trair'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 1984,
       "freqBand": 7,
@@ -30350,7 +30350,7 @@
         "auto-added"
       ],
       "exampleTarget": "traït",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'trair'; the engine generates it.]"
     },
     {
       "id": "lx-2334",
@@ -30414,7 +30414,7 @@
       "id": "lx-4122",
       "target": "suspensió",
       "targetNormalized": "suspensió",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "suspension",
       "pos": "noun",
       "freqRank": 1989,
       "freqBand": 7,
@@ -30423,8 +30423,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "suspensió",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "La suspensió del partit és definitiva.",
+      "exampleEn": "The suspension of the match is final."
     },
     {
       "id": "lx-2315",
@@ -30550,7 +30550,7 @@
       "id": "lx-4320",
       "target": "apagar",
       "targetNormalized": "apagar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to turn off, to switch off",
       "pos": "verb",
       "freqRank": 1998,
       "freqBand": 7,
@@ -30559,8 +30559,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "apagar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Vols apagar el llum?",
+      "exampleEn": "Will you turn off the light?"
     },
     {
       "id": "lx-2445",
@@ -30707,7 +30707,7 @@
       "id": "lx-4163",
       "target": "llamp",
       "targetNormalized": "llamp",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "lightning, thunderbolt",
       "pos": "noun",
       "freqRank": 2008,
       "freqBand": 7,
@@ -30716,8 +30716,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "llamp",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Un llamp va caure a prop.",
+      "exampleEn": "A bolt of lightning struck nearby."
     },
     {
       "id": "lx-3117",
@@ -30851,7 +30851,7 @@
       "id": "lx-4148",
       "target": "castigat",
       "targetNormalized": "castigat",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'castigar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2017,
       "freqBand": 7,
@@ -30861,7 +30861,7 @@
         "auto-added"
       ],
       "exampleTarget": "castigat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'castigar'; the engine generates it.]"
     },
     {
       "id": "lx-1078",
@@ -30911,8 +30911,8 @@
       "id": "lx-4078",
       "target": "excel·lent",
       "targetNormalized": "excel·lent",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "excellent",
+      "pos": "adjective",
       "freqRank": 2021,
       "freqBand": 7,
       "register": "formal",
@@ -30920,14 +30920,14 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "excel·lent",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Ha fet un treball excel·lent.",
+      "exampleEn": "She has done an excellent job."
     },
     {
       "id": "lx-4108",
       "target": "enfronta",
       "targetNormalized": "enfronta",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'enfrontar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2022,
       "freqBand": 7,
@@ -30937,7 +30937,7 @@
         "auto-added"
       ],
       "exampleTarget": "enfronta",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'enfrontar'; the engine generates it.]"
     },
     {
       "id": "lx-3732",
@@ -31120,8 +31120,8 @@
       "id": "lx-4107",
       "target": "plenament",
       "targetNormalized": "plenament",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "fully, completely",
+      "pos": "adverb",
       "freqRank": 2034,
       "freqBand": 7,
       "register": "formal",
@@ -31129,8 +31129,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "plenament",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Estic plenament d'acord amb tu.",
+      "exampleEn": "I fully agree with you."
     },
     {
       "id": "lx-2786",
@@ -31597,7 +31597,7 @@
       "id": "lx-4344",
       "target": "agrair",
       "targetNormalized": "agrair",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to thank, to be grateful for",
       "pos": "verb",
       "freqRank": 2065,
       "freqBand": 7,
@@ -31606,8 +31606,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "agrair",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Vull agrair la vostra ajuda.",
+      "exampleEn": "I want to thank you for your help."
     },
     {
       "id": "lx-2707",
@@ -31703,7 +31703,7 @@
       "id": "lx-4313",
       "target": "clars",
       "targetNormalized": "clars",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'clar', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 2072,
       "freqBand": 7,
@@ -31713,14 +31713,14 @@
         "auto-added"
       ],
       "exampleTarget": "clars",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'clar', which the morphology engine generates.]"
     },
     {
       "id": "lx-4198",
       "target": "especialitzat",
       "targetNormalized": "especialitzat",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "specialised",
+      "pos": "adjective",
       "freqRank": 2073,
       "freqBand": 7,
       "register": "formal",
@@ -31728,8 +31728,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "especialitzat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "És un metge especialitzat.",
+      "exampleEn": "He is a specialised doctor."
     },
     {
       "id": "lx-1920",
@@ -31777,7 +31777,7 @@
       "id": "lx-4285",
       "target": "bàsics",
       "targetNormalized": "bàsics",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'bàsic', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 2077,
       "freqBand": 7,
@@ -31787,7 +31787,7 @@
         "auto-added"
       ],
       "exampleTarget": "bàsics",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'bàsic', which the morphology engine generates.]"
     },
     {
       "id": "lx-1499",
@@ -31887,7 +31887,7 @@
       "id": "lx-4321",
       "target": "fonamentals",
       "targetNormalized": "fonamentals",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'fonamental', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 2084,
       "freqBand": 7,
@@ -31897,7 +31897,7 @@
         "auto-added"
       ],
       "exampleTarget": "fonamentals",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'fonamental', which the morphology engine generates.]"
     },
     {
       "id": "lx-2026",
@@ -32615,7 +32615,7 @@
       "id": "lx-4140",
       "target": "anunciat",
       "targetNormalized": "anunciat",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'anunciar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2132,
       "freqBand": 7,
@@ -32625,7 +32625,7 @@
         "auto-added"
       ],
       "exampleTarget": "anunciat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'anunciar'; the engine generates it.]"
     },
     {
       "id": "lx-1653",
@@ -32939,7 +32939,7 @@
       "id": "lx-4209",
       "target": "presidenta",
       "targetNormalized": "presidenta",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Feminine of 'president', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 2153,
       "freqBand": 7,
@@ -32949,7 +32949,7 @@
         "auto-added"
       ],
       "exampleTarget": "presidenta",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Feminine of 'president', which the morphology engine generates.]"
     },
     {
       "id": "lx-0722",
@@ -33331,7 +33331,7 @@
       "id": "lx-4176",
       "target": "reprendre",
       "targetNormalized": "reprendre",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to resume, to take up again",
       "pos": "verb",
       "freqRank": 2179,
       "freqBand": 7,
@@ -33340,8 +33340,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "reprendre",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Volen reprendre les obres al setembre.",
+      "exampleEn": "They want to resume the works in September."
     },
     {
       "id": "lx-2179",
@@ -33877,7 +33877,7 @@
       "id": "lx-4112",
       "target": "calaix",
       "targetNormalized": "calaix",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "drawer",
       "pos": "noun",
       "freqRank": 2215,
       "freqBand": 7,
@@ -33886,8 +33886,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "calaix",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Els papers són al calaix.",
+      "exampleEn": "The papers are in the drawer."
     },
     {
       "id": "lx-1375",
@@ -34195,7 +34195,7 @@
       "id": "lx-4255",
       "target": "capsa",
       "targetNormalized": "capsa",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "box",
       "pos": "noun",
       "freqRank": 2236,
       "freqBand": 7,
@@ -34204,8 +34204,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "capsa",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Guarda les fotos en una capsa.",
+      "exampleEn": "She keeps the photos in a box."
     },
     {
       "id": "lx-1245",
@@ -34302,7 +34302,7 @@
       "id": "lx-4086",
       "target": "detinguts",
       "targetNormalized": "detinguts",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural past participle of 'detenir'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2243,
       "freqBand": 7,
@@ -34312,7 +34312,7 @@
         "auto-added"
       ],
       "exampleTarget": "detinguts",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural past participle of 'detenir'; the engine generates it.]"
     },
     {
       "id": "lx-0721",
@@ -34334,7 +34334,7 @@
       "id": "lx-4095",
       "target": "loteria",
       "targetNormalized": "loteria",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "lottery",
       "pos": "noun",
       "freqRank": 2245,
       "freqBand": 7,
@@ -34343,14 +34343,14 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "loteria",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Ha guanyat la loteria de Nadal.",
+      "exampleEn": "He has won the Christmas lottery."
     },
     {
       "id": "lx-4331",
       "target": "pregar",
       "targetNormalized": "pregar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to pray; to beg",
       "pos": "verb",
       "freqRank": 2246,
       "freqBand": 7,
@@ -34359,8 +34359,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "pregar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Li va pregar que es quedés.",
+      "exampleEn": "She begged him to stay."
     },
     {
       "id": "lx-0229",
@@ -34394,8 +34394,8 @@
       "id": "lx-4232",
       "target": "vàlid",
       "targetNormalized": "vàlid",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "valid",
+      "pos": "adjective",
       "freqRank": 2249,
       "freqBand": 7,
       "register": "formal",
@@ -34403,8 +34403,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "vàlid",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "El bitllet ja no és vàlid.",
+      "exampleEn": "The ticket is no longer valid."
     },
     {
       "id": "lx-1570",
@@ -34716,7 +34716,7 @@
       "id": "lx-4072",
       "target": "suspendre",
       "targetNormalized": "suspendre",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to suspend; to fail (an exam)",
       "pos": "verb",
       "freqRank": 2270,
       "freqBand": 7,
@@ -34725,8 +34725,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "suspendre",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Van suspendre el partit per la pluja.",
+      "exampleEn": "They suspended the match because of the rain."
     },
     {
       "id": "lx-1426",
@@ -35070,8 +35070,8 @@
       "id": "lx-4186",
       "target": "arriscat",
       "targetNormalized": "arriscat",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "risky",
+      "pos": "adjective",
       "freqRank": 2293,
       "freqBand": 7,
       "register": "formal",
@@ -35079,8 +35079,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "arriscat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "És una decisió arriscada.",
+      "exampleEn": "It is a risky decision."
     },
     {
       "id": "lx-2783",
@@ -35238,7 +35238,7 @@
       "id": "lx-4059",
       "target": "funcioni",
       "targetNormalized": "funcioni",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Present subjunctive of 'funcionar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2304,
       "freqBand": 7,
@@ -35248,7 +35248,7 @@
         "auto-added"
       ],
       "exampleTarget": "funcioni",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Present subjunctive of 'funcionar'; the engine generates it.]"
     },
     {
       "id": "lx-3188",
@@ -35573,7 +35573,7 @@
       "id": "lx-4103",
       "target": "guanyadors",
       "targetNormalized": "guanyadors",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'guanyador', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 2326,
       "freqBand": 7,
@@ -35583,7 +35583,7 @@
         "auto-added"
       ],
       "exampleTarget": "guanyadors",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'guanyador', which the morphology engine generates.]"
     },
     {
       "id": "lx-2381",
@@ -35756,7 +35756,7 @@
       "id": "lx-4349",
       "target": "àrbitre",
       "targetNormalized": "àrbitre",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "referee",
       "pos": "noun",
       "freqRank": 2338,
       "freqBand": 7,
@@ -35765,8 +35765,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "àrbitre",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "L'àrbitre va xiular una falta.",
+      "exampleEn": "The referee whistled a foul."
     },
     {
       "id": "lx-2489",
@@ -35920,7 +35920,7 @@
       "id": "lx-4114",
       "target": "involucrar",
       "targetNormalized": "involucrar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to involve",
       "pos": "verb",
       "freqRank": 2348,
       "freqBand": 7,
@@ -35929,8 +35929,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "involucrar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "No vull involucrar ningú més.",
+      "exampleEn": "I do not want to involve anyone else."
     },
     {
       "id": "lx-3088",
@@ -36103,7 +36103,7 @@
       "id": "lx-4245",
       "target": "saludar",
       "targetNormalized": "saludar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to greet",
       "pos": "verb",
       "freqRank": 2360,
       "freqBand": 7,
@@ -36112,8 +36112,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "saludar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Em va saludar des de lluny.",
+      "exampleEn": "He greeted me from a distance."
     },
     {
       "id": "lx-2161",
@@ -36343,7 +36343,7 @@
       "id": "lx-4235",
       "target": "arruïnar",
       "targetNormalized": "arruïnar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to ruin",
       "pos": "verb",
       "freqRank": 2376,
       "freqBand": 7,
@@ -36352,8 +36352,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "arruïnar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "La pluja va arruïnar la festa.",
+      "exampleEn": "The rain ruined the party."
     },
     {
       "id": "lx-2446",
@@ -36514,7 +36514,7 @@
       "id": "lx-4130",
       "target": "errada",
       "targetNormalized": "errada",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "mistake, error",
       "pos": "noun",
       "freqRank": 2387,
       "freqBand": 7,
@@ -36523,8 +36523,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "errada",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Ha estat una errada meva.",
+      "exampleEn": "It has been a mistake of mine."
     },
     {
       "id": "lx-1174",
@@ -36544,7 +36544,7 @@
       "id": "lx-4236",
       "target": "enfadar",
       "targetNormalized": "enfadar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to anger, to annoy",
       "pos": "verb",
       "freqRank": 2389,
       "freqBand": 7,
@@ -36553,8 +36553,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "enfadar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "No et vull enfadar.",
+      "exampleEn": "I do not want to make you angry."
     },
     {
       "id": "lx-3943",
@@ -36815,7 +36815,7 @@
       "id": "lx-4197",
       "target": "inscriure",
       "targetNormalized": "inscriure",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to enrol, to register",
       "pos": "verb",
       "freqRank": 2406,
       "freqBand": 8,
@@ -36824,8 +36824,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "inscriure",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Em vull inscriure al curs.",
+      "exampleEn": "I want to enrol on the course."
     },
     {
       "id": "lx-3830",
@@ -36906,7 +36906,7 @@
       "id": "lx-4147",
       "target": "demanaré",
       "targetNormalized": "demanaré",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Future of 'demanar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2412,
       "freqBand": 8,
@@ -36916,7 +36916,7 @@
         "auto-added"
       ],
       "exampleTarget": "demanaré",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Future of 'demanar'; the engine generates it.]"
     },
     {
       "id": "lx-1611",
@@ -37146,7 +37146,7 @@
       "id": "lx-4248",
       "target": "rient",
       "targetNormalized": "rient",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Gerund of 'riure'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2428,
       "freqBand": 8,
@@ -37156,7 +37156,7 @@
         "auto-added"
       ],
       "exampleTarget": "rient",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Gerund of 'riure'; the engine generates it.]"
     },
     {
       "id": "lx-2330",
@@ -37224,7 +37224,7 @@
       "id": "lx-4251",
       "target": "vigor",
       "targetNormalized": "vigor",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "force, effect (of a law)",
       "pos": "noun",
       "freqRank": 2433,
       "freqBand": 8,
@@ -37233,8 +37233,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "vigor",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "La llei entra en vigor demà.",
+      "exampleEn": "The law comes into force tomorrow."
     },
     {
       "id": "lx-3810",
@@ -37547,7 +37547,7 @@
       "id": "lx-4200",
       "target": "tracti",
       "targetNormalized": "tracti",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Present subjunctive of 'tractar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2454,
       "freqBand": 8,
@@ -37557,7 +37557,7 @@
         "auto-added"
       ],
       "exampleTarget": "tracti",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Present subjunctive of 'tractar'; the engine generates it.]"
     },
     {
       "id": "lx-2536",
@@ -37624,7 +37624,7 @@
       "id": "lx-4347",
       "target": "positius",
       "targetNormalized": "positius",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'positiu', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 2459,
       "freqBand": 8,
@@ -37634,13 +37634,13 @@
         "auto-added"
       ],
       "exampleTarget": "positius",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'positiu', which the morphology engine generates.]"
     },
     {
       "id": "lx-4278",
       "target": "mèdiques",
       "targetNormalized": "mèdiques",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Feminine plural of 'mèdic', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 2460,
       "freqBand": 8,
@@ -37650,7 +37650,7 @@
         "auto-added"
       ],
       "exampleTarget": "mèdiques",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Feminine plural of 'mèdic', which the morphology engine generates.]"
     },
     {
       "id": "lx-1667",
@@ -38427,7 +38427,7 @@
       "id": "lx-4137",
       "target": "abundants",
       "targetNormalized": "abundants",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Plural of 'abundant', which the morphology engine generates.]",
       "pos": "noun",
       "freqRank": 2512,
       "freqBand": 8,
@@ -38437,7 +38437,7 @@
         "auto-added"
       ],
       "exampleTarget": "abundants",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Plural of 'abundant', which the morphology engine generates.]"
     },
     {
       "id": "lx-1024",
@@ -39265,8 +39265,8 @@
       "id": "lx-4293",
       "target": "ras",
       "targetNormalized": "ras",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "flat, level; open (sky)",
+      "pos": "adjective",
       "freqRank": 2566,
       "freqBand": 8,
       "register": "formal",
@@ -39274,8 +39274,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "ras",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Vam dormir al ras.",
+      "exampleEn": "We slept in the open air."
     },
     {
       "id": "lx-1376",
@@ -39341,7 +39341,7 @@
       "id": "lx-4302",
       "target": "exerceix",
       "targetNormalized": "exerceix",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'exercir'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2571,
       "freqBand": 8,
@@ -39351,13 +39351,13 @@
         "auto-added"
       ],
       "exampleTarget": "exerceix",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'exercir'; the engine generates it.]"
     },
     {
       "id": "lx-4247",
       "target": "bolets",
       "targetNormalized": "bolets",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "mushroom",
       "pos": "noun",
       "freqRank": 2572,
       "freqBand": 8,
@@ -39366,8 +39366,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "bolets",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "A la tardor busquem bolets.",
+      "exampleEn": "In autumn we look for mushrooms."
     },
     {
       "id": "lx-1349",
@@ -39892,7 +39892,7 @@
       "id": "lx-4182",
       "target": "adono",
       "targetNormalized": "adono",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: First-person singular of 'adonar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2607,
       "freqBand": 8,
@@ -39902,7 +39902,7 @@
         "auto-added"
       ],
       "exampleTarget": "adono",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: First-person singular of 'adonar'; the engine generates it.]"
     },
     {
       "id": "lx-1114",
@@ -39999,7 +39999,7 @@
       "id": "lx-4066",
       "target": "truita",
       "targetNormalized": "truita",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "omelette",
       "pos": "noun",
       "freqRank": 2614,
       "freqBand": 8,
@@ -40008,8 +40008,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "truita",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "He fet una truita de patates.",
+      "exampleEn": "I have made a potato omelette."
     },
     {
       "id": "lx-0861",
@@ -41799,7 +41799,7 @@
       "id": "lx-4202",
       "target": "acompanyarà",
       "targetNormalized": "acompanyarà",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Future of 'acompanyar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2731,
       "freqBand": 8,
@@ -41809,7 +41809,7 @@
         "auto-added"
       ],
       "exampleTarget": "acompanyarà",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Future of 'acompanyar'; the engine generates it.]"
     },
     {
       "id": "lx-3980",
@@ -41944,7 +41944,7 @@
       "id": "lx-4178",
       "target": "dictar",
       "targetNormalized": "dictar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to dictate",
       "pos": "verb",
       "freqRank": 2740,
       "freqBand": 8,
@@ -41953,8 +41953,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "dictar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "La mestra va dictar la frase.",
+      "exampleEn": "The teacher dictated the sentence."
     },
     {
       "id": "lx-0726",
@@ -42306,7 +42306,7 @@
       "id": "lx-4214",
       "target": "espatllat",
       "targetNormalized": "espatllat",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Past participle of 'espatllar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2763,
       "freqBand": 8,
@@ -42316,7 +42316,7 @@
         "auto-added"
       ],
       "exampleTarget": "espatllat",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Past participle of 'espatllar'; the engine generates it.]"
     },
     {
       "id": "lx-1915",
@@ -42582,7 +42582,7 @@
       "id": "lx-4180",
       "target": "mossega",
       "targetNormalized": "mossega",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'mossegar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2781,
       "freqBand": 8,
@@ -42592,7 +42592,7 @@
         "auto-added"
       ],
       "exampleTarget": "mossega",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'mossegar'; the engine generates it.]"
     },
     {
       "id": "lx-2609",
@@ -42918,7 +42918,7 @@
       "id": "lx-4238",
       "target": "afectarà",
       "targetNormalized": "afectarà",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Future of 'afectar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2803,
       "freqBand": 8,
@@ -42928,7 +42928,7 @@
         "auto-added"
       ],
       "exampleTarget": "afectarà",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Future of 'afectar'; the engine generates it.]"
     },
     {
       "id": "lx-2884",
@@ -43136,7 +43136,7 @@
       "id": "lx-4338",
       "target": "recau",
       "targetNormalized": "recau",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'recaure'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2817,
       "freqBand": 8,
@@ -43146,7 +43146,7 @@
         "auto-added"
       ],
       "exampleTarget": "recau",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'recaure'; the engine generates it.]"
     },
     {
       "id": "lx-3367",
@@ -43229,7 +43229,7 @@
       "id": "lx-4131",
       "target": "adonen",
       "targetNormalized": "adonen",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person plural of 'adonar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2823,
       "freqBand": 8,
@@ -43239,7 +43239,7 @@
         "auto-added"
       ],
       "exampleTarget": "adonen",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person plural of 'adonar'; the engine generates it.]"
     },
     {
       "id": "lx-2925",
@@ -43508,7 +43508,7 @@
       "id": "lx-4149",
       "target": "estranyar",
       "targetNormalized": "estranyar",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "to find strange, to miss",
       "pos": "verb",
       "freqRank": 2841,
       "freqBand": 8,
@@ -43517,8 +43517,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "estranyar",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "M'estranya que no hagi vingut.",
+      "exampleEn": "I find it strange that he has not come."
     },
     {
       "id": "lx-1353",
@@ -43665,7 +43665,7 @@
       "id": "lx-4193",
       "target": "respecto",
       "targetNormalized": "respecto",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: First-person singular of 'respectar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2851,
       "freqBand": 8,
@@ -43675,7 +43675,7 @@
         "auto-added"
       ],
       "exampleTarget": "respecto",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: First-person singular of 'respectar'; the engine generates it.]"
     },
     {
       "id": "lx-2191",
@@ -43807,7 +43807,7 @@
       "id": "lx-4253",
       "target": "regula",
       "targetNormalized": "regula",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Third-person singular of 'regular'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2860,
       "freqBand": 8,
@@ -43817,7 +43817,7 @@
         "auto-added"
       ],
       "exampleTarget": "regula",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Third-person singular of 'regular'; the engine generates it.]"
     },
     {
       "id": "lx-3881",
@@ -44280,7 +44280,7 @@
       "id": "lx-4100",
       "target": "demanis",
       "targetNormalized": "demanis",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "[not a headword: Present subjunctive of 'demanar'; the engine generates it.]",
       "pos": "noun",
       "freqRank": 2891,
       "freqBand": 8,
@@ -44290,7 +44290,7 @@
         "auto-added"
       ],
       "exampleTarget": "demanis",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleEn": "[not a headword: Present subjunctive of 'demanar'; the engine generates it.]"
     },
     {
       "id": "lx-2802",
@@ -44342,7 +44342,7 @@
       "id": "lx-4165",
       "target": "sorteig",
       "targetNormalized": "sorteig",
-      "glossEn": "[C2 auto-fill]",
+      "glossEn": "draw, raffle",
       "pos": "noun",
       "freqRank": 2895,
       "freqBand": 8,
@@ -44351,8 +44351,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "sorteig",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "El sorteig serà diumenge.",
+      "exampleEn": "The draw will be on Sunday."
     },
     {
       "id": "lx-2183",
@@ -44653,8 +44653,8 @@
       "id": "lx-4224",
       "target": "mallorquí",
       "targetNormalized": "mallorquí",
-      "glossEn": "[C2 auto-fill]",
-      "pos": "noun",
+      "glossEn": "Majorcan",
+      "pos": "adjective",
       "freqRank": 2915,
       "freqBand": 8,
       "register": "formal",
@@ -44662,8 +44662,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "mallorquí",
-      "exampleEn": "[C2 auto-fill]"
+      "exampleTarget": "Té accent mallorquí.",
+      "exampleEn": "He has a Majorcan accent."
     },
     {
       "id": "lx-3497",

@@ -34,9 +34,10 @@ export interface CandidateEntry {
 /**
  * Catalan infinitives end in -ar/-er/-re/-ir, with a tiny closed set of
  * exceptions. `dur` (to carry) is the common one: it belongs to the second
- * conjugation but its infinitive shows none of the usual endings.
+ * conjugation but its infinitive shows none of the usual endings. Its prefixed
+ * forms inherit that - `endur-se` (to take away) is the one a learner meets.
  */
-const INFINITIVE_EXCEPTIONS = new Set(["dur"]);
+const INFINITIVE_EXCEPTIONS = new Set(["dur", "endur", "endur-se"]);
 
 /**
  * Verbs that legitimately lack most of their paradigm.
