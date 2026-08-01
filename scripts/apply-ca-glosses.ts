@@ -32,6 +32,18 @@ import { matchKey, normalizeCatalan } from "../src/lib/lang/ca/normalize.ts";
 import { verifyEntry } from "./verify-ca-entries.ts";
 
 interface Repair {
+  /**
+   * Replace the headword itself.
+   *
+   * 56 entries were ruled out as "an inflected form of X, which the engine
+   * generates" where X was not in the lexicon at all - so the word was not made
+   * redundant, it was deleted. The repair is to make the entry *be* the lemma:
+   * `tracta` becomes `tractar`, `estudis` becomes `estudi`. That keeps the id,
+   * so `user_words.lexeme_id` and the lexemeIds stored inside cached texts
+   * still point at a real word, and the inflected form the entry used to hold
+   * is then generated from the lemma as it always should have been.
+   */
+  target?: string;
   pos?: string;
   glossEn?: string;
   exampleTarget?: string;
@@ -84,13 +96,15 @@ for (const e of file.entries) {
     continue;
   }
 
+  const target = r.target ?? e.target;
   const next = {
+    target,
     pos: r.pos ?? e.pos,
     register: r.register ?? e.register,
     glossEn: r.glossEn ?? e.glossEn,
     exampleTarget: r.exampleTarget ?? e.exampleTarget,
     exampleEn: r.exampleEn ?? e.exampleEn,
-    targetNormalized: normalizeCatalan(e.target),
+    targetNormalized: normalizeCatalan(target),
   };
 
   // The same gate the generator uses: charset, obsolete spellings, verb
@@ -99,7 +113,7 @@ for (const e of file.entries) {
   // shape, which names the fields differently from the shipped one.
   const found = verifyEntry(
     {
-      word: e.target,
+      word: target,
       pos: next.pos,
       gloss: next.glossEn,
       example: next.exampleTarget,
@@ -108,7 +122,7 @@ for (const e of file.entries) {
     seenKeys,
   );
   if (found.length) {
-    problems.push(`${e.id} ${e.target}: ${found.join("; ")}`);
+    problems.push(`${e.id} ${target}: ${found.join("; ")}`);
     continue;
   }
 

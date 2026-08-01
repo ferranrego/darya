@@ -68,8 +68,20 @@ for (const e of entries) {
   // redundancy claim, so there is nothing to execute. It still must not hide a
   // word the lexicon lacks entirely.
   if (!lemma) {
-    const twin = byKey.get(matchKey(e.target));
-    if (!twin || twin.id === e.id) {
+    // A judgement drop is covered if some *other* entry accounts for the word:
+    // the multi-word phrase it is a fragment of (`obstant` inside
+    // `no obstant això`), or the correctly spelled form it is a typo of
+    // (`mati` for `matí`, which matchKey keeps distinct because Catalan
+    // accents are meaningful and are deliberately not folded).
+    const stripped = (w: string) => matchKey(w).normalize("NFD").replace(/\p{M}/gu, "");
+    const covered = entries.some(
+      (o) =>
+        o.id !== e.id &&
+        !isRuledOut(o) &&
+        (stripped(o.target) === stripped(e.target) ||
+          o.target.split(/[\s']+/).some((part) => matchKey(part) === matchKey(e.target))),
+    );
+    if (!covered) {
       problems.push(
         `${e.id} ${e.target} (rank ${e.freqRank}): ruled out as "${reason.slice(0, 60)}…" ` +
           `but no other entry covers it - the word is simply gone`,

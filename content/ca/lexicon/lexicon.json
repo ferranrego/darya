@@ -3007,19 +3007,19 @@
     },
     {
       "id": "lx-4160",
-      "target": "Tal",
+      "target": "tal",
       "targetNormalized": "tal",
-      "glossEn": "[not a headword: Capitalised fragment of the connector 'tal com' / 'tal vegada'; not a headword.]",
-      "pos": "noun",
+      "glossEn": "such, of this kind",
+      "pos": "adjective",
       "freqRank": 197,
       "freqBand": 2,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Tal",
-      "exampleEn": "[not a headword: Capitalised fragment of the connector 'tal com' / 'tal vegada'; not a headword.]"
+      "exampleTarget": "No he vist mai una cosa tal.",
+      "exampleEn": "I have never seen such a thing."
     },
     {
       "id": "lx-0189",
@@ -4821,19 +4821,19 @@
     },
     {
       "id": "lx-4125",
-      "target": "tracta",
-      "targetNormalized": "tracta",
-      "glossEn": "[not a headword: Third-person singular of 'tractar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "tractar",
+      "targetNormalized": "tractar",
+      "glossEn": "to treat; to deal with",
+      "pos": "verb",
       "freqRank": 315,
       "freqBand": 3,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "tracta",
-      "exampleEn": "[not a headword: Third-person singular of 'tractar'; the engine generates it.]"
+      "exampleTarget": "El llibre tracta de la guerra.",
+      "exampleEn": "The book deals with the war."
     },
     {
       "id": "lx-0266",
@@ -4926,19 +4926,19 @@
     },
     {
       "id": "lx-4065",
-      "target": "Exemple",
+      "target": "exemple",
       "targetNormalized": "exemple",
-      "glossEn": "[not a headword: Capitalised duplicate of 'exemple'.]",
+      "glossEn": "example",
       "pos": "noun",
       "freqRank": 322,
       "freqBand": 3,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Exemple",
-      "exampleEn": "[not a headword: Capitalised duplicate of 'exemple'.]"
+      "exampleTarget": "Posa'm un exemple, si us plau.",
+      "exampleEn": "Give me an example, please."
     },
     {
       "id": "lx-1041",
@@ -5628,19 +5628,19 @@
     },
     {
       "id": "lx-4217",
-      "target": "Central",
+      "target": "central",
       "targetNormalized": "central",
-      "glossEn": "[not a headword: Capitalised adjective from a proper name ('Central'); not a headword.]",
-      "pos": "noun",
+      "glossEn": "central",
+      "pos": "adjective",
       "freqRank": 368,
       "freqBand": 3,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Central",
-      "exampleEn": "[not a headword: Capitalised adjective from a proper name ('Central'); not a headword.]"
+      "exampleTarget": "Viu al barri central de la ciutat.",
+      "exampleEn": "She lives in the central district of the city."
     },
     {
       "id": "lx-0310",
@@ -6501,7 +6501,7 @@
       "id": "lx-4187",
       "target": "obstant",
       "targetNormalized": "obstant",
-      "glossEn": "[not a headword: Fragment of the connector 'no obstant això'; not a headword on its own.]",
+      "glossEn": "[not a headword: Fragment of the connector no obstant això; never stands alone.]",
       "pos": "noun",
       "freqRank": 425,
       "freqBand": 3,
@@ -6511,7 +6511,7 @@
         "auto-added"
       ],
       "exampleTarget": "obstant",
-      "exampleEn": "[not a headword: Fragment of the connector 'no obstant això'; not a headword on its own.]"
+      "exampleEn": "[not a headword: Fragment of the connector no obstant això; never stands alone.]"
     },
     {
       "id": "lx-0511",
@@ -6842,19 +6842,19 @@
     },
     {
       "id": "lx-4207",
-      "target": "Realment",
+      "target": "realment",
       "targetNormalized": "realment",
-      "glossEn": "[not a headword: Capitalised duplicate of the adverb 'realment'.]",
-      "pos": "noun",
+      "glossEn": "really, actually",
+      "pos": "adverb",
       "freqRank": 448,
       "freqBand": 4,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Realment",
-      "exampleEn": "[not a headword: Capitalised duplicate of the adverb 'realment'.]"
+      "exampleTarget": "Realment no sé què dir.",
+      "exampleEn": "I really do not know what to say."
     },
     {
       "id": "lx-0604",
@@ -9767,19 +9767,19 @@
     },
     {
       "id": "lx-4345",
-      "target": "estudis",
-      "targetNormalized": "estudis",
-      "glossEn": "[not a headword: Plural of 'estudi', which the morphology engine already generates.]",
+      "target": "estudi",
+      "targetNormalized": "estudi",
+      "glossEn": "study; studio",
       "pos": "noun",
       "freqRank": 637,
       "freqBand": 4,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "estudis",
-      "exampleEn": "[not a headword: Plural of 'estudi', which the morphology engine already generates.]"
+      "exampleTarget": "Ha acabat l'estudi sobre el clima.",
+      "exampleEn": "He has finished the study on the climate."
     },
     {
       "id": "lx-4283",
@@ -11225,19 +11225,19 @@
     },
     {
       "id": "lx-4127",
-      "target": "existeix",
-      "targetNormalized": "existeix",
-      "glossEn": "[not a headword: Third-person singular of 'existir'; the engine generates it.]",
-      "pos": "noun",
+      "target": "existir",
+      "targetNormalized": "existir",
+      "glossEn": "to exist",
+      "pos": "verb",
       "freqRank": 732,
       "freqBand": 4,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "existeix",
-      "exampleEn": "[not a headword: Third-person singular of 'existir'; the engine generates it.]"
+      "exampleTarget": "Aquest problema ja no existeix.",
+      "exampleEn": "This problem no longer exists."
     },
     {
       "id": "lx-0839",
@@ -12332,19 +12332,19 @@
     },
     {
       "id": "lx-4266",
-      "target": "debò",
-      "targetNormalized": "debò",
-      "glossEn": "[not a headword: Fragment of the adverbial phrase 'de debò'; not a headword.]",
-      "pos": "noun",
+      "target": "de debò",
+      "targetNormalized": "de debò",
+      "glossEn": "really, seriously",
+      "pos": "phrase",
       "freqRank": 804,
       "freqBand": 5,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "debò",
-      "exampleEn": "[not a headword: Fragment of the adverbial phrase 'de debò'; not a headword.]"
+      "exampleTarget": "Ho dius de debò?",
+      "exampleEn": "Do you really mean it?"
     },
     {
       "id": "lx-2087",
@@ -13281,19 +13281,19 @@
     },
     {
       "id": "lx-4246",
-      "target": "Correcte",
+      "target": "correcte",
       "targetNormalized": "correcte",
-      "glossEn": "[not a headword: Capitalised duplicate of the adjective 'correcte'.]",
-      "pos": "noun",
+      "glossEn": "correct",
+      "pos": "adjective",
       "freqRank": 866,
       "freqBand": 5,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Correcte",
-      "exampleEn": "[not a headword: Capitalised duplicate of the adjective 'correcte'.]"
+      "exampleTarget": "La resposta és correcta.",
+      "exampleEn": "The answer is correct."
     },
     {
       "id": "lx-2362",
@@ -13313,19 +13313,19 @@
     },
     {
       "id": "lx-4254",
-      "target": "activitats",
-      "targetNormalized": "activitats",
-      "glossEn": "[not a headword: Plural of 'activitat', which the morphology engine generates.]",
+      "target": "activitat",
+      "targetNormalized": "activitat",
+      "glossEn": "activity",
       "pos": "noun",
       "freqRank": 868,
       "freqBand": 5,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "activitats",
-      "exampleEn": "[not a headword: Plural of 'activitat', which the morphology engine generates.]"
+      "exampleTarget": "Hi ha molta activitat al carrer.",
+      "exampleEn": "There is a lot of activity in the street."
     },
     {
       "id": "lx-4096",
@@ -14368,19 +14368,19 @@
     },
     {
       "id": "lx-4256",
-      "target": "conté",
-      "targetNormalized": "conté",
-      "glossEn": "[not a headword: Third-person singular of 'contenir'; the engine generates it.]",
-      "pos": "noun",
+      "target": "contenir",
+      "targetNormalized": "contenir",
+      "glossEn": "to contain",
+      "pos": "verb",
       "freqRank": 937,
       "freqBand": 5,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "conté",
-      "exampleEn": "[not a headword: Third-person singular of 'contenir'; the engine generates it.]"
+      "exampleTarget": "La capsa conté vuit llibres.",
+      "exampleEn": "The box contains eight books."
     },
     {
       "id": "lx-0774",
@@ -14493,19 +14493,19 @@
     },
     {
       "id": "lx-4284",
-      "target": "socials",
-      "targetNormalized": "socials",
-      "glossEn": "[not a headword: Plural of 'social', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "social",
+      "targetNormalized": "social",
+      "glossEn": "social",
+      "pos": "adjective",
       "freqRank": 945,
       "freqBand": 5,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "socials",
-      "exampleEn": "[not a headword: Plural of 'social', which the morphology engine generates.]"
+      "exampleTarget": "És un problema social greu.",
+      "exampleEn": "It is a serious social problem."
     },
     {
       "id": "lx-3923",
@@ -14631,19 +14631,19 @@
     },
     {
       "id": "lx-4280",
-      "target": "zones",
-      "targetNormalized": "zones",
-      "glossEn": "[not a headword: Plural of 'zona', which the morphology engine generates.]",
+      "target": "zona",
+      "targetNormalized": "zona",
+      "glossEn": "area, zone",
       "pos": "noun",
       "freqRank": 954,
       "freqBand": 5,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "zones",
-      "exampleEn": "[not a headword: Plural of 'zona', which the morphology engine generates.]"
+      "exampleTarget": "Aquesta zona és molt tranquil·la.",
+      "exampleEn": "This area is very quiet."
     },
     {
       "id": "lx-3759",
@@ -16842,19 +16842,19 @@
     },
     {
       "id": "lx-4181",
-      "target": "escollit",
-      "targetNormalized": "escollit",
-      "glossEn": "[not a headword: Past participle of 'escollir'; the engine generates it.]",
-      "pos": "noun",
+      "target": "escollir",
+      "targetNormalized": "escollir",
+      "glossEn": "to choose",
+      "pos": "verb",
       "freqRank": 1099,
       "freqBand": 5,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "escollit",
-      "exampleEn": "[not a headword: Past participle of 'escollir'; the engine generates it.]"
+      "exampleTarget": "Has d'escollir un color.",
+      "exampleEn": "You have to choose a colour."
     },
     {
       "id": "lx-4084",
@@ -18372,19 +18372,19 @@
     },
     {
       "id": "lx-4098",
-      "target": "pari",
-      "targetNormalized": "pari",
-      "glossEn": "[not a headword: Present subjunctive of 'parar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "parar",
+      "targetNormalized": "parar",
+      "glossEn": "to stop; to set (the table)",
+      "pos": "verb",
       "freqRank": 1200,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "pari",
-      "exampleEn": "[not a headword: Present subjunctive of 'parar'; the engine generates it.]"
+      "exampleTarget": "Vols parar la taula?",
+      "exampleEn": "Will you set the table?"
     },
     {
       "id": "lx-3035",
@@ -18767,19 +18767,19 @@
     },
     {
       "id": "lx-4118",
-      "target": "preciosa",
-      "targetNormalized": "preciosa",
-      "glossEn": "[not a headword: Feminine of 'preciós', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "preciós",
+      "targetNormalized": "preciós",
+      "glossEn": "lovely, beautiful",
+      "pos": "adjective",
       "freqRank": 1226,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "preciosa",
-      "exampleEn": "[not a headword: Feminine of 'preciós', which the morphology engine generates.]"
+      "exampleTarget": "Portava un vestit preciós.",
+      "exampleEn": "She was wearing a lovely dress."
     },
     {
       "id": "lx-1521",
@@ -20490,19 +20490,19 @@
     },
     {
       "id": "lx-4124",
-      "target": "assumptes",
-      "targetNormalized": "assumptes",
-      "glossEn": "[not a headword: Plural of 'assumpte', which the morphology engine generates.]",
+      "target": "assumpte",
+      "targetNormalized": "assumpte",
+      "glossEn": "matter, affair",
       "pos": "noun",
       "freqRank": 1339,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "assumptes",
-      "exampleEn": "[not a headword: Plural of 'assumpte', which the morphology engine generates.]"
+      "exampleTarget": "És un assumpte delicat.",
+      "exampleEn": "It is a delicate matter."
     },
     {
       "id": "lx-1488",
@@ -20925,19 +20925,19 @@
     },
     {
       "id": "lx-4166",
-      "target": "instruccions",
-      "targetNormalized": "instruccions",
-      "glossEn": "[not a headword: Plural of 'instrucció', which the morphology engine generates.]",
+      "target": "instrucció",
+      "targetNormalized": "instrucció",
+      "glossEn": "instruction",
       "pos": "noun",
       "freqRank": 1367,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "instruccions",
-      "exampleEn": "[not a headword: Plural of 'instrucció', which the morphology engine generates.]"
+      "exampleTarget": "Segueix la instrucció del manual.",
+      "exampleEn": "Follow the instruction in the manual."
     },
     {
       "id": "lx-0293",
@@ -21032,19 +21032,19 @@
     },
     {
       "id": "lx-4241",
-      "target": "demostra",
-      "targetNormalized": "demostra",
-      "glossEn": "[not a headword: Third-person singular of 'demostrar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "demostrar",
+      "targetNormalized": "demostrar",
+      "glossEn": "to show, to prove",
+      "pos": "verb",
       "freqRank": 1374,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "demostra",
-      "exampleEn": "[not a headword: Third-person singular of 'demostrar'; the engine generates it.]"
+      "exampleTarget": "Vol demostrar que té raó.",
+      "exampleEn": "He wants to prove that he is right."
     },
     {
       "id": "lx-0349",
@@ -21107,19 +21107,19 @@
     },
     {
       "id": "lx-4168",
-      "target": "Hom",
+      "target": "hom",
       "targetNormalized": "hom",
-      "glossEn": "[not a headword: Capitalised impersonal pronoun 'hom'; literary and out of level.]",
-      "pos": "noun",
+      "glossEn": "one, people (impersonal; literary)",
+      "pos": "pronoun",
       "freqRank": 1379,
       "freqBand": 6,
-      "register": "formal",
+      "register": "literary",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Hom",
-      "exampleEn": "[not a headword: Capitalised impersonal pronoun 'hom'; literary and out of level.]"
+      "exampleTarget": "Hom diu que el temps ho cura tot.",
+      "exampleEn": "People say that time heals everything."
     },
     {
       "id": "lx-2516",
@@ -21502,19 +21502,19 @@
     },
     {
       "id": "lx-4188",
-      "target": "dificultats",
-      "targetNormalized": "dificultats",
-      "glossEn": "[not a headword: Plural of 'dificultat', which the morphology engine generates.]",
+      "target": "dificultat",
+      "targetNormalized": "dificultat",
+      "glossEn": "difficulty",
       "pos": "noun",
       "freqRank": 1405,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "dificultats",
-      "exampleEn": "[not a headword: Plural of 'dificultat', which the morphology engine generates.]"
+      "exampleTarget": "Ha superat una gran dificultat.",
+      "exampleEn": "She has overcome a great difficulty."
     },
     {
       "id": "lx-1433",
@@ -22414,19 +22414,19 @@
     },
     {
       "id": "lx-4323",
-      "target": "afecta",
-      "targetNormalized": "afecta",
-      "glossEn": "[not a headword: Third-person singular of 'afectar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "afectar",
+      "targetNormalized": "afectar",
+      "glossEn": "to affect",
+      "pos": "verb",
       "freqRank": 1464,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "afecta",
-      "exampleEn": "[not a headword: Third-person singular of 'afectar'; the engine generates it.]"
+      "exampleTarget": "La sequera afecta tot el país.",
+      "exampleEn": "The drought affects the whole country."
     },
     {
       "id": "lx-1744",
@@ -22514,19 +22514,19 @@
     },
     {
       "id": "lx-4171",
-      "target": "creix",
-      "targetNormalized": "creix",
-      "glossEn": "[not a headword: Third-person singular of 'créixer'; the engine generates it.]",
-      "pos": "noun",
+      "target": "créixer",
+      "targetNormalized": "créixer",
+      "glossEn": "to grow",
+      "pos": "verb",
       "freqRank": 1471,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "creix",
-      "exampleEn": "[not a headword: Third-person singular of 'créixer'; the engine generates it.]"
+      "exampleTarget": "Els arbres creixen molt de pressa.",
+      "exampleEn": "The trees grow very fast."
     },
     {
       "id": "lx-0649",
@@ -23251,19 +23251,19 @@
     },
     {
       "id": "lx-4324",
-      "target": "adults",
-      "targetNormalized": "adults",
-      "glossEn": "[not a headword: Plural of 'adult', which the morphology engine generates.]",
+      "target": "adult",
+      "targetNormalized": "adult",
+      "glossEn": "adult",
       "pos": "noun",
       "freqRank": 1519,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "adults",
-      "exampleEn": "[not a headword: Plural of 'adult', which the morphology engine generates.]"
+      "exampleTarget": "És una pel·lícula per a adults.",
+      "exampleEn": "It is a film for adults."
     },
     {
       "id": "lx-1941",
@@ -24572,19 +24572,19 @@
     },
     {
       "id": "lx-4152",
-      "target": "alegro",
-      "targetNormalized": "alegro",
-      "glossEn": "[not a headword: First-person singular of 'alegrar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "alegrar",
+      "targetNormalized": "alegrar",
+      "glossEn": "to gladden, to make happy",
+      "pos": "verb",
       "freqRank": 1605,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "alegro",
-      "exampleEn": "[not a headword: First-person singular of 'alegrar'; the engine generates it.]"
+      "exampleTarget": "M'alegro de veure't.",
+      "exampleEn": "I am glad to see you."
     },
     {
       "id": "lx-0524",
@@ -24712,19 +24712,19 @@
     },
     {
       "id": "lx-4315",
-      "target": "investigadors",
-      "targetNormalized": "investigadors",
-      "glossEn": "[not a headword: Plural of 'investigador', which the morphology engine generates.]",
+      "target": "investigador",
+      "targetNormalized": "investigador",
+      "glossEn": "researcher",
       "pos": "noun",
       "freqRank": 1614,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "investigadors",
-      "exampleEn": "[not a headword: Plural of 'investigador', which the morphology engine generates.]"
+      "exampleTarget": "La investigadora ha publicat l'estudi.",
+      "exampleEn": "The researcher has published the study."
     },
     {
       "id": "lx-1017",
@@ -26036,19 +26036,19 @@
     },
     {
       "id": "lx-4346",
-      "target": "inicials",
-      "targetNormalized": "inicials",
-      "glossEn": "[not a headword: Plural of 'inicial', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "inicial",
+      "targetNormalized": "inicial",
+      "glossEn": "initial",
+      "pos": "adjective",
       "freqRank": 1701,
       "freqBand": 6,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "inicials",
-      "exampleEn": "[not a headword: Plural of 'inicial', which the morphology engine generates.]"
+      "exampleTarget": "El pressupost inicial era més baix.",
+      "exampleEn": "The initial budget was lower."
     },
     {
       "id": "lx-1939",
@@ -26931,19 +26931,19 @@
     },
     {
       "id": "lx-4062",
-      "target": "molesta",
-      "targetNormalized": "molesta",
-      "glossEn": "[not a headword: Third-person singular of 'molestar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "molestar",
+      "targetNormalized": "molestar",
+      "glossEn": "to bother, to disturb",
+      "pos": "verb",
       "freqRank": 1761,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "molesta",
-      "exampleEn": "[not a headword: Third-person singular of 'molestar'; the engine generates it.]"
+      "exampleTarget": "No vull molestar ningú.",
+      "exampleEn": "I do not want to bother anyone."
     },
     {
       "id": "lx-0897",
@@ -27086,19 +27086,19 @@
     },
     {
       "id": "lx-4239",
-      "target": "suficients",
-      "targetNormalized": "suficients",
-      "glossEn": "[not a headword: Plural of 'suficient', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "suficient",
+      "targetNormalized": "suficient",
+      "glossEn": "enough, sufficient",
+      "pos": "adjective",
       "freqRank": 1771,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "suficients",
-      "exampleEn": "[not a headword: Plural of 'suficient', which the morphology engine generates.]"
+      "exampleTarget": "No tenim temps suficient.",
+      "exampleEn": "We do not have enough time."
     },
     {
       "id": "lx-1650",
@@ -27747,7 +27747,7 @@
       "id": "lx-4164",
       "target": "mati",
       "targetNormalized": "mati",
-      "glossEn": "[not a headword: Misspelling of 'matí' without its accent; not a headword.]",
+      "glossEn": "[not a headword: Misspelling of matí without its accent.]",
       "pos": "noun",
       "freqRank": 1814,
       "freqBand": 7,
@@ -27757,7 +27757,7 @@
         "auto-added"
       ],
       "exampleTarget": "mati",
-      "exampleEn": "[not a headword: Misspelling of 'matí' without its accent; not a headword.]"
+      "exampleEn": "[not a headword: Misspelling of matí without its accent.]"
     },
     {
       "id": "lx-1752",
@@ -29321,19 +29321,19 @@
     },
     {
       "id": "lx-4109",
-      "target": "fica",
-      "targetNormalized": "fica",
-      "glossEn": "[not a headword: Third-person singular of 'ficar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "ficar",
+      "targetNormalized": "ficar",
+      "glossEn": "to put (in)",
+      "pos": "verb",
       "freqRank": 1917,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "fica",
-      "exampleEn": "[not a headword: Third-person singular of 'ficar'; the engine generates it.]"
+      "exampleTarget": "Fica la roba a l'armari.",
+      "exampleEn": "Put the clothes in the wardrobe."
     },
     {
       "id": "lx-2222",
@@ -30338,19 +30338,19 @@
     },
     {
       "id": "lx-4233",
-      "target": "traït",
-      "targetNormalized": "traït",
-      "glossEn": "[not a headword: Past participle of 'trair'; the engine generates it.]",
-      "pos": "noun",
+      "target": "trair",
+      "targetNormalized": "trair",
+      "glossEn": "to betray",
+      "pos": "verb",
       "freqRank": 1984,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "traït",
-      "exampleEn": "[not a headword: Past participle of 'trair'; the engine generates it.]"
+      "exampleTarget": "No vull trair la seva confiança.",
+      "exampleEn": "I do not want to betray his trust."
     },
     {
       "id": "lx-2334",
@@ -30849,19 +30849,19 @@
     },
     {
       "id": "lx-4148",
-      "target": "castigat",
-      "targetNormalized": "castigat",
-      "glossEn": "[not a headword: Past participle of 'castigar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "castigar",
+      "targetNormalized": "castigar",
+      "glossEn": "to punish",
+      "pos": "verb",
       "freqRank": 2017,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "castigat",
-      "exampleEn": "[not a headword: Past participle of 'castigar'; the engine generates it.]"
+      "exampleTarget": "No cal castigar els nens així.",
+      "exampleEn": "There is no need to punish the children like that."
     },
     {
       "id": "lx-1078",
@@ -30925,19 +30925,19 @@
     },
     {
       "id": "lx-4108",
-      "target": "enfronta",
-      "targetNormalized": "enfronta",
-      "glossEn": "[not a headword: Third-person singular of 'enfrontar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "enfrontar",
+      "targetNormalized": "enfrontar",
+      "glossEn": "to face, to confront",
+      "pos": "verb",
       "freqRank": 2022,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "enfronta",
-      "exampleEn": "[not a headword: Third-person singular of 'enfrontar'; the engine generates it.]"
+      "exampleTarget": "Hem d'enfrontar el problema.",
+      "exampleEn": "We have to face the problem."
     },
     {
       "id": "lx-3732",
@@ -31701,19 +31701,19 @@
     },
     {
       "id": "lx-4313",
-      "target": "clars",
-      "targetNormalized": "clars",
-      "glossEn": "[not a headword: Plural of 'clar', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "clar",
+      "targetNormalized": "clar",
+      "glossEn": "clear; light (colour)",
+      "pos": "adjective",
       "freqRank": 2072,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "clars",
-      "exampleEn": "[not a headword: Plural of 'clar', which the morphology engine generates.]"
+      "exampleTarget": "El cel és clar aquest matí.",
+      "exampleEn": "The sky is clear this morning."
     },
     {
       "id": "lx-4198",
@@ -31775,19 +31775,19 @@
     },
     {
       "id": "lx-4285",
-      "target": "bàsics",
-      "targetNormalized": "bàsics",
-      "glossEn": "[not a headword: Plural of 'bàsic', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "bàsic",
+      "targetNormalized": "bàsic",
+      "glossEn": "basic",
+      "pos": "adjective",
       "freqRank": 2077,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "bàsics",
-      "exampleEn": "[not a headword: Plural of 'bàsic', which the morphology engine generates.]"
+      "exampleTarget": "És un concepte bàsic.",
+      "exampleEn": "It is a basic concept."
     },
     {
       "id": "lx-1499",
@@ -31885,19 +31885,19 @@
     },
     {
       "id": "lx-4321",
-      "target": "fonamentals",
-      "targetNormalized": "fonamentals",
-      "glossEn": "[not a headword: Plural of 'fonamental', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "fonamental",
+      "targetNormalized": "fonamental",
+      "glossEn": "fundamental, essential",
+      "pos": "adjective",
       "freqRank": 2084,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "fonamentals",
-      "exampleEn": "[not a headword: Plural of 'fonamental', which the morphology engine generates.]"
+      "exampleTarget": "La confiança és fonamental.",
+      "exampleEn": "Trust is fundamental."
     },
     {
       "id": "lx-2026",
@@ -32613,19 +32613,19 @@
     },
     {
       "id": "lx-4140",
-      "target": "anunciat",
-      "targetNormalized": "anunciat",
-      "glossEn": "[not a headword: Past participle of 'anunciar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "anunciar",
+      "targetNormalized": "anunciar",
+      "glossEn": "to announce",
+      "pos": "verb",
       "freqRank": 2132,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "anunciat",
-      "exampleEn": "[not a headword: Past participle of 'anunciar'; the engine generates it.]"
+      "exampleTarget": "Han anunciat la data del concert.",
+      "exampleEn": "They have announced the date of the concert."
     },
     {
       "id": "lx-1653",
@@ -35236,19 +35236,19 @@
     },
     {
       "id": "lx-4059",
-      "target": "funcioni",
-      "targetNormalized": "funcioni",
-      "glossEn": "[not a headword: Present subjunctive of 'funcionar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "funcionar",
+      "targetNormalized": "funcionar",
+      "glossEn": "to work, to function",
+      "pos": "verb",
       "freqRank": 2304,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "funcioni",
-      "exampleEn": "[not a headword: Present subjunctive of 'funcionar'; the engine generates it.]"
+      "exampleTarget": "L'ascensor no funciona.",
+      "exampleEn": "The lift is not working."
     },
     {
       "id": "lx-3188",
@@ -35571,19 +35571,19 @@
     },
     {
       "id": "lx-4103",
-      "target": "guanyadors",
-      "targetNormalized": "guanyadors",
-      "glossEn": "[not a headword: Plural of 'guanyador', which the morphology engine generates.]",
+      "target": "guanyador",
+      "targetNormalized": "guanyador",
+      "glossEn": "winner",
       "pos": "noun",
       "freqRank": 2326,
       "freqBand": 7,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "guanyadors",
-      "exampleEn": "[not a headword: Plural of 'guanyador', which the morphology engine generates.]"
+      "exampleTarget": "El guanyador rebrà un premi.",
+      "exampleEn": "The winner will receive a prize."
     },
     {
       "id": "lx-2381",
@@ -37622,35 +37622,35 @@
     },
     {
       "id": "lx-4347",
-      "target": "positius",
-      "targetNormalized": "positius",
-      "glossEn": "[not a headword: Plural of 'positiu', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "positiu",
+      "targetNormalized": "positiu",
+      "glossEn": "positive",
+      "pos": "adjective",
       "freqRank": 2459,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "positius",
-      "exampleEn": "[not a headword: Plural of 'positiu', which the morphology engine generates.]"
+      "exampleTarget": "El resultat ha estat positiu.",
+      "exampleEn": "The result has been positive."
     },
     {
       "id": "lx-4278",
-      "target": "mèdiques",
-      "targetNormalized": "mèdiques",
-      "glossEn": "[not a headword: Feminine plural of 'mèdic', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "mèdic",
+      "targetNormalized": "mèdic",
+      "glossEn": "medical",
+      "pos": "adjective",
       "freqRank": 2460,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "mèdiques",
-      "exampleEn": "[not a headword: Feminine plural of 'mèdic', which the morphology engine generates.]"
+      "exampleTarget": "Necessita atenció mèdica urgent.",
+      "exampleEn": "She needs urgent medical attention."
     },
     {
       "id": "lx-1667",
@@ -38425,19 +38425,19 @@
     },
     {
       "id": "lx-4137",
-      "target": "abundants",
-      "targetNormalized": "abundants",
-      "glossEn": "[not a headword: Plural of 'abundant', which the morphology engine generates.]",
-      "pos": "noun",
+      "target": "abundant",
+      "targetNormalized": "abundant",
+      "glossEn": "abundant, plentiful",
+      "pos": "adjective",
       "freqRank": 2512,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "abundants",
-      "exampleEn": "[not a headword: Plural of 'abundant', which the morphology engine generates.]"
+      "exampleTarget": "Enguany la collita és abundant.",
+      "exampleEn": "This year the harvest is abundant."
     },
     {
       "id": "lx-1024",
@@ -39339,19 +39339,19 @@
     },
     {
       "id": "lx-4302",
-      "target": "exerceix",
-      "targetNormalized": "exerceix",
-      "glossEn": "[not a headword: Third-person singular of 'exercir'; the engine generates it.]",
-      "pos": "noun",
+      "target": "exercir",
+      "targetNormalized": "exercir",
+      "glossEn": "to practise (a profession); to exert",
+      "pos": "verb",
       "freqRank": 2571,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "exerceix",
-      "exampleEn": "[not a headword: Third-person singular of 'exercir'; the engine generates it.]"
+      "exampleTarget": "Exerceix de metge des del 2010.",
+      "exampleEn": "He has practised as a doctor since 2010."
     },
     {
       "id": "lx-4247",
@@ -41797,19 +41797,19 @@
     },
     {
       "id": "lx-4202",
-      "target": "acompanyarà",
-      "targetNormalized": "acompanyarà",
-      "glossEn": "[not a headword: Future of 'acompanyar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "acompanyar",
+      "targetNormalized": "acompanyar",
+      "glossEn": "to accompany, to go with",
+      "pos": "verb",
       "freqRank": 2731,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "acompanyarà",
-      "exampleEn": "[not a headword: Future of 'acompanyar'; the engine generates it.]"
+      "exampleTarget": "Vols que t'acompanyi a casa?",
+      "exampleEn": "Would you like me to walk you home?"
     },
     {
       "id": "lx-3980",
@@ -42304,19 +42304,19 @@
     },
     {
       "id": "lx-4214",
-      "target": "espatllat",
-      "targetNormalized": "espatllat",
-      "glossEn": "[not a headword: Past participle of 'espatllar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "espatllar",
+      "targetNormalized": "espatllar",
+      "glossEn": "to break, to spoil",
+      "pos": "verb",
       "freqRank": 2763,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "espatllat",
-      "exampleEn": "[not a headword: Past participle of 'espatllar'; the engine generates it.]"
+      "exampleTarget": "S'ha espatllat la rentadora.",
+      "exampleEn": "The washing machine has broken down."
     },
     {
       "id": "lx-1915",
@@ -42580,19 +42580,19 @@
     },
     {
       "id": "lx-4180",
-      "target": "mossega",
-      "targetNormalized": "mossega",
-      "glossEn": "[not a headword: Third-person singular of 'mossegar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "mossegar",
+      "targetNormalized": "mossegar",
+      "glossEn": "to bite",
+      "pos": "verb",
       "freqRank": 2781,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "mossega",
-      "exampleEn": "[not a headword: Third-person singular of 'mossegar'; the engine generates it.]"
+      "exampleTarget": "El gos no mossega mai.",
+      "exampleEn": "The dog never bites."
     },
     {
       "id": "lx-2609",
@@ -43134,19 +43134,19 @@
     },
     {
       "id": "lx-4338",
-      "target": "recau",
-      "targetNormalized": "recau",
-      "glossEn": "[not a headword: Third-person singular of 'recaure'; the engine generates it.]",
-      "pos": "noun",
+      "target": "recaure",
+      "targetNormalized": "recaure",
+      "glossEn": "to relapse; to fall (on someone)",
+      "pos": "verb",
       "freqRank": 2817,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "recau",
-      "exampleEn": "[not a headword: Third-person singular of 'recaure'; the engine generates it.]"
+      "exampleTarget": "La responsabilitat recau en tu.",
+      "exampleEn": "The responsibility falls on you."
     },
     {
       "id": "lx-3367",
@@ -43663,19 +43663,19 @@
     },
     {
       "id": "lx-4193",
-      "target": "respecto",
-      "targetNormalized": "respecto",
-      "glossEn": "[not a headword: First-person singular of 'respectar'; the engine generates it.]",
-      "pos": "noun",
+      "target": "respectar",
+      "targetNormalized": "respectar",
+      "glossEn": "to respect",
+      "pos": "verb",
       "freqRank": 2851,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "respecto",
-      "exampleEn": "[not a headword: First-person singular of 'respectar'; the engine generates it.]"
+      "exampleTarget": "Cal respectar les opinions dels altres.",
+      "exampleEn": "One must respect other people's opinions."
     },
     {
       "id": "lx-2191",
@@ -43805,19 +43805,19 @@
     },
     {
       "id": "lx-4253",
-      "target": "regula",
-      "targetNormalized": "regula",
-      "glossEn": "[not a headword: Third-person singular of 'regular'; the engine generates it.]",
-      "pos": "noun",
+      "target": "regular",
+      "targetNormalized": "regular",
+      "glossEn": "to regulate",
+      "pos": "verb",
       "freqRank": 2860,
       "freqBand": 8,
-      "register": "formal",
+      "register": "neutral",
       "variants": [],
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "regula",
-      "exampleEn": "[not a headword: Third-person singular of 'regular'; the engine generates it.]"
+      "exampleTarget": "La llei regula aquesta activitat.",
+      "exampleEn": "The law regulates this activity."
     },
     {
       "id": "lx-3881",

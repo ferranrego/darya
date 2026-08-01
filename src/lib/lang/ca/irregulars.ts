@@ -569,6 +569,91 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       gerund: ["detenint"],
     },
   },
+  /**
+   * `establir` has an irregular participle (`establert`, not *establit*), and
+   * `créixer` and `recaure` are irregular throughout. All three were being
+   * inflected as regular, so their commonest forms resolved to nothing.
+   */
+  establir: {
+    infinitive: "establir",
+    conjugation: 3,
+    incoative: true,
+    overrides: {
+      participle: ["establert", "establerta", "establerts", "establertes"],
+    },
+  },
+  créixer: {
+    infinitive: "créixer",
+    conjugation: 2,
+    overrides: {
+      present: ["creixo", "creixes", "creix", "creixem", "creixeu", "creixen"],
+      presentSubjunctive: ["creixi", "creixis", "creixem", "creixeu", "creixin"],
+      imperfectSubjunctive: ["cresqués", "cresquessis", "cresquéssim", "cresquéssiu", "cresquessin"],
+      participle: ["crescut", "crescuda", "crescuts", "crescudes"],
+      gerund: ["creixent"],
+    },
+  },
+  recaure: {
+    infinitive: "recaure",
+    conjugation: 2,
+    overrides: {
+      present: ["recaic", "recaus", "recau", "recaiem", "recaieu", "recauen"],
+      presentSubjunctive: ["recaigui", "recaiguis", "recaiguem", "recaigueu", "recaiguin"],
+      imperfectSubjunctive: ["recaigués", "recaiguessis", "recaiguéssim", "recaiguéssiu", "recaiguessin"],
+      participle: ["recaigut", "recaiguda", "recaiguts", "recaigudes"],
+      gerund: ["recaient"],
+    },
+  },
+  /**
+   * The `tenir` family. All are irregular in the same way and none were
+   * covered, so `conté`, `manté`, `obté` and `reté` - the forms a learner
+   * actually meets - resolved to nothing while the engine offered
+   * *conteneix.
+   */
+  contenir: {
+    infinitive: "contenir",
+    conjugation: 3,
+    overrides: {
+      present: ["continc", "contens", "conté", "contenim", "conteniu", "contenen"],
+      presentSubjunctive: ["contingui", "continguis", "continguem", "contingueu", "continguin"],
+      imperfectSubjunctive: ["contingués", "continguessis", "continguéssim", "continguéssiu", "continguessin"],
+      participle: ["contingut", "continguda", "continguts", "contingudes"],
+      gerund: ["contenint"],
+    },
+  },
+  mantenir: {
+    infinitive: "mantenir",
+    conjugation: 3,
+    overrides: {
+      present: ["mantinc", "mantens", "manté", "mantenim", "manteniu", "mantenen"],
+      presentSubjunctive: ["mantingui", "mantinguis", "mantinguem", "mantingueu", "mantinguin"],
+      imperfectSubjunctive: ["mantingués", "mantinguessis", "mantinguéssim", "mantinguéssiu", "mantinguessin"],
+      participle: ["mantingut", "mantinguda", "mantinguts", "mantingudes"],
+      gerund: ["mantenint"],
+    },
+  },
+  obtenir: {
+    infinitive: "obtenir",
+    conjugation: 3,
+    overrides: {
+      present: ["obtinc", "obtens", "obté", "obtenim", "obteniu", "obtenen"],
+      presentSubjunctive: ["obtingui", "obtinguis", "obtinguem", "obtingueu", "obtinguin"],
+      imperfectSubjunctive: ["obtingués", "obtinguessis", "obtinguéssim", "obtinguéssiu", "obtinguessin"],
+      participle: ["obtingut", "obtinguda", "obtinguts", "obtingudes"],
+      gerund: ["obtenint"],
+    },
+  },
+  retenir: {
+    infinitive: "retenir",
+    conjugation: 3,
+    overrides: {
+      present: ["retinc", "retens", "reté", "retenim", "reteniu", "retenen"],
+      presentSubjunctive: ["retingui", "retinguis", "retinguem", "retingueu", "retinguin"],
+      imperfectSubjunctive: ["retingués", "retinguessis", "retinguéssim", "retinguéssiu", "retinguessin"],
+      participle: ["retingut", "retinguda", "retinguts", "retingudes"],
+      gerund: ["retenint"],
+    },
+  },
   // `endur-se` is `dur` with a prefix and inflects identically. It is far more
   // common than the bare verb in everyday Catalan ("emporta-t'ho" aside,
   // "endur-se" is what a learner meets), and without a spec here the engine

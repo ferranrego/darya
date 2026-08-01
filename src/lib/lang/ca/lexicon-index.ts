@@ -60,7 +60,11 @@ function dropFinalAccent(word: string): string {
 }
 
 export function nominalForms(word: string, pos: string): string[] {
-  if (pos !== "noun" && pos !== "adjective") return [];
+  // Determiners and pronouns inflect as well - qual/quals, aquest/aquesta -
+  // and without them the plural of a relative pronoun resolves to nothing.
+  if (pos !== "noun" && pos !== "adjective" && pos !== "pronoun" && pos !== "determiner") {
+    return [];
+  }
   const w = normalizeCatalan(word);
   if (w.includes(" ")) return [];
   const out = new Set<string>();
@@ -112,7 +116,7 @@ export function nominalForms(word: string, pos: string): string[] {
    * (see the note below): a spurious key is inert, a missing one means the
    * reader cannot explain a word the learner is looking at.
    */
-  if (pos === "adjective" || pos === "noun") {
+  if (pos === "adjective" || pos === "noun" || pos === "determiner") {
     /**
      * Catalan feminines, where spelling alone cannot always decide:
      *
