@@ -20,6 +20,7 @@ import {
 // ZWNJ is a Perso-Arabic concept, and the compound-spelling check below is a
 // Dari orthography rule - both come from the language module, not the neutral
 // text façade. Phase 3 gives this script a --lang argument.
+import { isRuledOut } from "../src/lib/content/teachability.ts";
 import { verbSpec as caVerbSpec } from "../src/lib/lang/ca/lexicon-index.ts";
 import { ZWNJ } from "../src/lib/lang/prs/normalize.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
@@ -67,6 +68,9 @@ if (existsSync(lexiconPath)) {
     lexicon = parsed.data;
     const ids = new Set<string>();
     const keys = new Map<string, string>();
+    const glosses = new Map<string, string>();
+    const glossClashes: string[] = [];
+    const PLACEHOLDER = /\[|auto-fill/i;
     for (const e of lexicon.entries) {
       if (ids.has(e.id)) fail(`lexicon: duplicate id ${e.id}`);
       ids.add(e.id);
@@ -148,6 +152,28 @@ if (existsSync(lexiconPath)) {
       }
 
       /**
+       * Entries sharing a gloss, reported rather than rejected.
+       *
+       * An SRS production card asks for the English and expects one answer, so
+       * `tia` and `tieta` both glossed "aunt" is a card the learner cannot get
+       * right - they answer `tia` and the `tieta` card marks them wrong.
+       *
+       * It is a warning because it is not a defect. 156 Catalan and 369 Dari
+       * pairs collide, and nearly all are honest synonyms a language simply
+       * has: two words for "this", "old", "but", "reason". Failing on those
+       * would block every run for a condition nobody intends to fix. What the
+       * count is good for is spotting when a *repair batch* introduces a new
+       * collision, which is how it was found - so read the delta, not the
+       * total.
+       */
+      if (!isRuledOut(e) && !PLACEHOLDER.test(e.glossEn)) {
+        const g = e.glossEn.trim().toLowerCase();
+        const clash = glosses.get(g);
+        if (clash) glossClashes.push(`${e.id} and ${clash}: "${e.glossEn}"`);
+        else glosses.set(g, e.id);
+      }
+
+      /**
        * A Catalan verb must be conjugable, or the reader can resolve none of
        * its forms. `endur` had to be given an irregular spec for exactly this
        * reason; without one it would have shipped as a verb whose every
@@ -157,7 +183,11 @@ if (existsSync(lexiconPath)) {
         fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" has no conjugation spec`);
       }
     }
-    console.log(`✓ lexicon.json (${lexicon.entries.length} entries)`);
+    console.log(
+      `✓ lexicon.json (${lexicon.entries.length} entries` +
+        (glossClashes.length ? `, ${glossClashes.length} shared glosses` : "") +
+        `)`,
+    );
   }
 } else {
   fail("lexicon.json missing");

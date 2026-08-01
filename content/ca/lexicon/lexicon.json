@@ -3749,7 +3749,7 @@
       "id": "lx-4057",
       "target": "mi",
       "targetNormalized": "mi",
-      "glossEn": "me (after a preposition: a mi, per mi)",
+      "glossEn": "me (after a preposition: a mi, per a mi)",
       "pos": "pronoun",
       "freqRank": 245,
       "freqBand": 3,
@@ -4472,7 +4472,7 @@
       "id": "lx-4060",
       "target": "cert",
       "targetNormalized": "cert",
-      "glossEn": "certain, sure",
+      "glossEn": "true; certain",
       "pos": "adjective",
       "freqRank": 292,
       "freqBand": 3,
@@ -4754,7 +4754,7 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Baixo a la següent parada.",
+      "exampleTarget": "Baixo a la parada següent.",
       "exampleEn": "I am getting off at the next stop."
     },
     {
@@ -5920,7 +5920,7 @@
       "id": "lx-4145",
       "target": "fi",
       "targetNormalized": "fi",
-      "glossEn": "end, purpose",
+      "glossEn": "la fi = end; el fi = aim, purpose",
       "pos": "noun",
       "freqRank": 387,
       "freqBand": 3,
@@ -5929,8 +5929,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Al cap i a la fi, tots hi guanyem.",
-      "exampleEn": "In the end, we all gain from it."
+      "exampleTarget": "La fi del curs s'acosta.",
+      "exampleEn": "The end of the course is approaching."
     },
     {
       "id": "lx-0144",
@@ -7064,7 +7064,7 @@
       "id": "lx-4155",
       "target": "carrera",
       "targetNormalized": "carrera",
-      "glossEn": "career; race",
+      "glossEn": "career; university degree course; race",
       "pos": "noun",
       "freqRank": 462,
       "freqBand": 4,
@@ -8281,7 +8281,7 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Bona sort a l'examen!",
+      "exampleTarget": "Molta sort a l'examen!",
       "exampleEn": "Good luck in the exam!"
     },
     {
@@ -12939,7 +12939,7 @@
       "pos": "adverb",
       "freqRank": 843,
       "freqBand": 5,
-      "register": "neutral",
+      "register": "formal",
       "variants": [],
       "tags": [
         "auto-added"
@@ -14419,7 +14419,7 @@
       "id": "lx-4274",
       "target": "ambient",
       "targetNormalized": "ambient",
-      "glossEn": "atmosphere, environment",
+      "glossEn": "atmosphere, feel, surroundings (the ecological environment is medi ambient)",
       "pos": "noun",
       "freqRank": 940,
       "freqBand": 5,
@@ -16448,7 +16448,7 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "No sap conduir encara.",
+      "exampleTarget": "Encara no sap conduir.",
       "exampleEn": "He does not know how to drive yet."
     },
     {
@@ -16648,7 +16648,7 @@
       "id": "lx-4110",
       "target": "adonar",
       "targetNormalized": "adonar",
-      "glossEn": "to realise, to notice",
+      "glossEn": "adonar-se (de): to realise, to notice",
       "pos": "verb",
       "freqRank": 1086,
       "freqBand": 5,
@@ -21424,7 +21424,7 @@
       "id": "lx-4297",
       "target": "petroli",
       "targetNormalized": "petroli",
-      "glossEn": "oil, petroleum",
+      "glossEn": "crude oil, petroleum",
       "pos": "noun",
       "freqRank": 1400,
       "freqBand": 6,
@@ -21721,7 +21721,7 @@
       "pos": "noun",
       "freqRank": 1419,
       "freqBand": 6,
-      "register": "neutral",
+      "register": "formal",
       "variants": [],
       "tags": [
         "auto-added"
@@ -24310,7 +24310,7 @@
       "pos": "verb",
       "freqRank": 1588,
       "freqBand": 6,
-      "register": "neutral",
+      "register": "formal",
       "variants": [],
       "tags": [
         "auto-added"
@@ -25675,7 +25675,7 @@
       "id": "lx-4228",
       "target": "endur",
       "targetNormalized": "endur",
-      "glossEn": "to take away, to carry off",
+      "glossEn": "endur-se: to take away, to carry off",
       "pos": "verb",
       "freqRank": 1677,
       "freqBand": 6,
@@ -27230,7 +27230,7 @@
       "id": "lx-4269",
       "target": "tieta",
       "targetNormalized": "tieta",
-      "glossEn": "aunt",
+      "glossEn": "auntie (affectionate; the plain word is tia)",
       "pos": "noun",
       "freqRank": 1780,
       "freqBand": 7,
@@ -27407,8 +27407,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "No em vol sorprendre mai.",
-      "exampleEn": "He never wants to surprise me."
+      "exampleTarget": "La notícia ens va sorprendre a tots.",
+      "exampleEn": "The news surprised us all."
     },
     {
       "id": "lx-1060",
@@ -27485,8 +27485,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Parla el dialecte valencià.",
-      "exampleEn": "He speaks the Valencian dialect."
+      "exampleTarget": "El meu veí és valencià.",
+      "exampleEn": "My neighbour is Valencian."
     },
     {
       "id": "lx-1693",
@@ -28947,7 +28947,7 @@
       "id": "lx-4115",
       "target": "emportar",
       "targetNormalized": "emportar",
-      "glossEn": "to take away, to bring along",
+      "glossEn": "emportar-se: to take away, to bring along",
       "pos": "verb",
       "freqRank": 1892,
       "freqBand": 7,
@@ -31728,8 +31728,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "És un metge especialitzat.",
-      "exampleEn": "He is a specialised doctor."
+      "exampleTarget": "És un centre especialitzat en oncologia.",
+      "exampleEn": "It is a centre specialising in oncology."
     },
     {
       "id": "lx-1920",
@@ -36514,7 +36514,7 @@
       "id": "lx-4130",
       "target": "errada",
       "targetNormalized": "errada",
-      "glossEn": "mistake, error",
+      "glossEn": "slip, mistake (esp. a typo or a slip in doing something)",
       "pos": "noun",
       "freqRank": 2387,
       "freqBand": 7,
@@ -37224,7 +37224,7 @@
       "id": "lx-4251",
       "target": "vigor",
       "targetNormalized": "vigor",
-      "glossEn": "force, effect (of a law)",
+      "glossEn": "vigour, strength; (en vigor) in force",
       "pos": "noun",
       "freqRank": 2433,
       "freqBand": 8,
@@ -39265,7 +39265,7 @@
       "id": "lx-4293",
       "target": "ras",
       "targetNormalized": "ras",
-      "glossEn": "flat, level; open (sky)",
+      "glossEn": "clear, cloudless; flat, level",
       "pos": "adjective",
       "freqRank": 2566,
       "freqBand": 8,
@@ -39274,8 +39274,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "Vam dormir al ras.",
-      "exampleEn": "We slept in the open air."
+      "exampleTarget": "Aquesta nit el cel és ras.",
+      "exampleEn": "Tonight the sky is clear."
     },
     {
       "id": "lx-1376",
@@ -39355,8 +39355,8 @@
     },
     {
       "id": "lx-4247",
-      "target": "bolets",
-      "targetNormalized": "bolets",
+      "target": "bolet",
+      "targetNormalized": "bolet",
       "glossEn": "mushroom",
       "pos": "noun",
       "freqRank": 2572,
@@ -39366,8 +39366,8 @@
       "tags": [
         "auto-added"
       ],
-      "exampleTarget": "A la tardor busquem bolets.",
-      "exampleEn": "In autumn we look for mushrooms."
+      "exampleTarget": "A la tardor anem a buscar bolets.",
+      "exampleEn": "In autumn we go looking for mushrooms."
     },
     {
       "id": "lx-1349",
@@ -39999,7 +39999,7 @@
       "id": "lx-4066",
       "target": "truita",
       "targetNormalized": "truita",
-      "glossEn": "omelette",
+      "glossEn": "omelette; trout",
       "pos": "noun",
       "freqRank": 2614,
       "freqBand": 8,
@@ -43508,7 +43508,7 @@
       "id": "lx-4149",
       "target": "estranyar",
       "targetNormalized": "estranyar",
-      "glossEn": "to find strange, to miss",
+      "glossEn": "to surprise, to strike as odd (m'estranya que…)",
       "pos": "verb",
       "freqRank": 2841,
       "freqBand": 8,
@@ -43518,7 +43518,7 @@
         "auto-added"
       ],
       "exampleTarget": "M'estranya que no hagi vingut.",
-      "exampleEn": "I find it strange that he has not come."
+      "exampleEn": "I am surprised that he has not come."
     },
     {
       "id": "lx-1353",

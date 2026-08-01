@@ -83,7 +83,7 @@
   },
   "lx-4057": {
     "pos": "pronoun",
-    "glossEn": "me (after a preposition: a mi, per mi)",
+    "glossEn": "me (after a preposition: a mi, per a mi)",
     "exampleTarget": "Aquest regal és per a mi.",
     "exampleEn": "This present is for me.",
     "register": "neutral"
@@ -107,7 +107,7 @@
   },
   "lx-4060": {
     "pos": "adjective",
-    "glossEn": "certain, sure",
+    "glossEn": "true; certain",
     "exampleTarget": "És cert que ha plogut molt.",
     "exampleEn": "It is true that it has rained a lot.",
     "register": "neutral"
@@ -122,7 +122,7 @@
   "lx-4252": {
     "pos": "adjective",
     "glossEn": "next, following",
-    "exampleTarget": "Baixo a la següent parada.",
+    "exampleTarget": "Baixo a la parada següent.",
     "exampleEn": "I am getting off at the next stop.",
     "register": "neutral"
   },
@@ -180,9 +180,9 @@
   },
   "lx-4145": {
     "pos": "noun",
-    "glossEn": "end, purpose",
-    "exampleTarget": "Al cap i a la fi, tots hi guanyem.",
-    "exampleEn": "In the end, we all gain from it.",
+    "glossEn": "la fi = end; el fi = aim, purpose",
+    "exampleTarget": "La fi del curs s'acosta.",
+    "exampleEn": "The end of the course is approaching.",
     "register": "neutral"
   },
   "lx-4304": {
@@ -219,7 +219,7 @@
   },
   "lx-4155": {
     "pos": "noun",
-    "glossEn": "career; race",
+    "glossEn": "career; university degree course; race",
     "exampleTarget": "Ha fet una carrera brillant.",
     "exampleEn": "She has had a brilliant career.",
     "register": "neutral"
@@ -283,7 +283,7 @@
   "lx-4216": {
     "pos": "noun",
     "glossEn": "luck",
-    "exampleTarget": "Bona sort a l'examen!",
+    "exampleTarget": "Molta sort a l'examen!",
     "exampleEn": "Good luck in the exam!",
     "register": "neutral"
   },
@@ -420,7 +420,7 @@
     "glossEn": "only, merely",
     "exampleTarget": "Solament vull parlar amb tu.",
     "exampleEn": "I only want to talk to you.",
-    "register": "neutral"
+    "register": "formal"
   },
   "lx-4258": {
     "pos": "verb",
@@ -489,7 +489,7 @@
   },
   "lx-4274": {
     "pos": "noun",
-    "glossEn": "atmosphere, environment",
+    "glossEn": "atmosphere, feel, surroundings (the ecological environment is medi ambient)",
     "exampleTarget": "L'ambient de la festa era alegre.",
     "exampleEn": "The atmosphere of the party was cheerful.",
     "register": "neutral"
@@ -571,7 +571,7 @@
   "lx-4067": {
     "pos": "verb",
     "glossEn": "to drive",
-    "exampleTarget": "No sap conduir encara.",
+    "exampleTarget": "Encara no sap conduir.",
     "exampleEn": "He does not know how to drive yet.",
     "register": "neutral"
   },
@@ -591,7 +591,7 @@
   },
   "lx-4110": {
     "pos": "verb",
-    "glossEn": "to realise, to notice",
+    "glossEn": "adonar-se (de): to realise, to notice",
     "exampleTarget": "No em vaig adonar de res.",
     "exampleEn": "I did not notice anything.",
     "register": "neutral"
@@ -788,7 +788,7 @@
   },
   "lx-4297": {
     "pos": "noun",
-    "glossEn": "oil, petroleum",
+    "glossEn": "crude oil, petroleum",
     "exampleTarget": "El preu del petroli ha pujat.",
     "exampleEn": "The price of oil has risen.",
     "register": "neutral"
@@ -805,7 +805,7 @@
     "glossEn": "child",
     "exampleTarget": "L'infant dormia tranquil.",
     "exampleEn": "The child was sleeping peacefully.",
-    "register": "neutral"
+    "register": "formal"
   },
   "lx-4244": {
     "pos": "noun",
@@ -868,7 +868,7 @@
     "glossEn": "to return, to give back",
     "exampleTarget": "Has de retornar el llibre demà.",
     "exampleEn": "You have to return the book tomorrow.",
-    "register": "neutral"
+    "register": "formal"
   },
   "lx-4326": {
     "pos": "noun",
@@ -886,7 +886,7 @@
   },
   "lx-4228": {
     "pos": "verb",
-    "glossEn": "to take away, to carry off",
+    "glossEn": "endur-se: to take away, to carry off",
     "exampleTarget": "Es va endur totes les maletes.",
     "exampleEn": "He took away all the suitcases.",
     "register": "neutral"
@@ -900,7 +900,7 @@
   },
   "lx-4269": {
     "pos": "noun",
-    "glossEn": "aunt",
+    "glossEn": "auntie (affectionate; the plain word is tia)",
     "exampleTarget": "La meva tieta viu a Girona.",
     "exampleEn": "My aunt lives in Girona.",
     "register": "neutral"
@@ -922,15 +922,15 @@
   "lx-4240": {
     "pos": "verb",
     "glossEn": "to surprise",
-    "exampleTarget": "No em vol sorprendre mai.",
-    "exampleEn": "He never wants to surprise me.",
+    "exampleTarget": "La notícia ens va sorprendre a tots.",
+    "exampleEn": "The news surprised us all.",
     "register": "neutral"
   },
   "lx-4225": {
     "pos": "adjective",
     "glossEn": "Valencian",
-    "exampleTarget": "Parla el dialecte valencià.",
-    "exampleEn": "He speaks the Valencian dialect.",
+    "exampleTarget": "El meu veí és valencià.",
+    "exampleEn": "My neighbour is Valencian.",
     "register": "neutral"
   },
   "lx-4261": {
@@ -942,7 +942,7 @@
   },
   "lx-4115": {
     "pos": "verb",
-    "glossEn": "to take away, to bring along",
+    "glossEn": "emportar-se: to take away, to bring along",
     "exampleTarget": "Em vaig emportar un bon record.",
     "exampleEn": "I took away a good memory.",
     "register": "neutral"
@@ -1034,8 +1034,8 @@
   "lx-4198": {
     "pos": "adjective",
     "glossEn": "specialised",
-    "exampleTarget": "És un metge especialitzat.",
-    "exampleEn": "He is a specialised doctor.",
+    "exampleTarget": "És un centre especialitzat en oncologia.",
+    "exampleEn": "It is a centre specialising in oncology.",
     "register": "formal"
   },
   "lx-4176": {
@@ -1124,7 +1124,7 @@
   },
   "lx-4130": {
     "pos": "noun",
-    "glossEn": "mistake, error",
+    "glossEn": "slip, mistake (esp. a typo or a slip in doing something)",
     "exampleTarget": "Ha estat una errada meva.",
     "exampleEn": "It has been a mistake of mine.",
     "register": "neutral"
@@ -1145,28 +1145,29 @@
   },
   "lx-4251": {
     "pos": "noun",
-    "glossEn": "force, effect (of a law)",
+    "glossEn": "vigour, strength; (en vigor) in force",
     "exampleTarget": "La llei entra en vigor demà.",
     "exampleEn": "The law comes into force tomorrow.",
     "register": "formal"
   },
   "lx-4293": {
     "pos": "adjective",
-    "glossEn": "flat, level; open (sky)",
-    "exampleTarget": "Vam dormir al ras.",
-    "exampleEn": "We slept in the open air.",
+    "glossEn": "clear, cloudless; flat, level",
+    "exampleTarget": "Aquesta nit el cel és ras.",
+    "exampleEn": "Tonight the sky is clear.",
     "register": "neutral"
   },
   "lx-4247": {
     "pos": "noun",
     "glossEn": "mushroom",
-    "exampleTarget": "A la tardor busquem bolets.",
-    "exampleEn": "In autumn we look for mushrooms.",
-    "register": "neutral"
+    "exampleTarget": "A la tardor anem a buscar bolets.",
+    "exampleEn": "In autumn we go looking for mushrooms.",
+    "register": "neutral",
+    "target": "bolet"
   },
   "lx-4066": {
     "pos": "noun",
-    "glossEn": "omelette",
+    "glossEn": "omelette; trout",
     "exampleTarget": "He fet una truita de patates.",
     "exampleEn": "I have made a potato omelette.",
     "register": "neutral"
@@ -1180,9 +1181,9 @@
   },
   "lx-4149": {
     "pos": "verb",
-    "glossEn": "to find strange, to miss",
+    "glossEn": "to surprise, to strike as odd (m'estranya que…)",
     "exampleTarget": "M'estranya que no hagi vingut.",
-    "exampleEn": "I find it strange that he has not come.",
+    "exampleEn": "I am surprised that he has not come.",
     "register": "neutral"
   },
   "lx-4165": {
