@@ -1,6 +1,6 @@
 {
   "id": "tx-seed-l1-002",
-  "formatVersion": "1.4.0",
+  "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "El matí",
   "titleEn": "The morning",
@@ -107,6 +107,7 @@
     "lx-0290",
     "lx-0291"
   ],
+  "newWords": [],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z"

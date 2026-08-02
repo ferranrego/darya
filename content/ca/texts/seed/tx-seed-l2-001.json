@@ -1,0 +1,185 @@
+{
+  "id": "tx-seed-l2-001",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "La meva família",
+  "titleEn": "My family",
+  "sentences": [
+    {
+      "target": "La meva família és gran.",
+      "en": "My family is big.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "família",
+          "lexemeId": "lx-0341"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "El meu pare treballa molt.",
+      "en": "My father works a lot.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "treballa",
+          "lexemeId": "lx-0105"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        }
+      ]
+    },
+    {
+      "target": "La meva mare cuina molt bé.",
+      "en": "My mother cooks very well.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        },
+        {
+          "surface": "cuina",
+          "lexemeId": "lx-0372"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        }
+      ]
+    },
+    {
+      "target": "Tinc dos germans i una germana.",
+      "en": "I have two brothers and one sister.",
+      "tokens": [
+        {
+          "surface": "Tinc",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "dos",
+          "lexemeId": "lx-0270"
+        },
+        {
+          "surface": "germans",
+          "lexemeId": "lx-0092"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "germana",
+          "lexemeId": "lx-0904"
+        }
+      ]
+    },
+    {
+      "target": "Els diumenges anem junts a la platja.",
+      "en": "On Sundays we go to the beach together.",
+      "tokens": [
+        {
+          "surface": "Els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "diumenges",
+          "lexemeId": "lx-0455"
+        },
+        {
+          "surface": "anem",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "junts",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "platja",
+          "lexemeId": "lx-0321"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0038",
+    "lx-0042",
+    "lx-0043",
+    "lx-0052",
+    "lx-0054",
+    "lx-0057",
+    "lx-0089",
+    "lx-0090",
+    "lx-0092",
+    "lx-0105",
+    "lx-0131",
+    "lx-0217",
+    "lx-0248",
+    "lx-0270",
+    "lx-0321",
+    "lx-0341",
+    "lx-0372",
+    "lx-0455",
+    "lx-0904"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

@@ -1,0 +1,655 @@
+{
+  "id": "tx-seed-l6-002",
+  "formatVersion": "1.5.0",
+  "level": "L6",
+  "titleTarget": "Una decisió difícil",
+  "titleEn": "A difficult decision",
+  "sentences": [
+    {
+      "target": "Al meu cap li fa por que jo deixi la feina abans que acabi el projecte que estem fent junts.",
+      "en": "My boss is afraid that I'll leave the job before finishing the project we're working on together.",
+      "tokens": [
+        {
+          "surface": "Al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "cap",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "li",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "por",
+          "lexemeId": "lx-0604"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "deixi",
+          "lexemeId": "lx-0109"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "abans",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "acabi",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "projecte",
+          "lexemeId": "lx-0535"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "estem",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "fent",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "junts",
+          "lexemeId": "lx-0131"
+        }
+      ]
+    },
+    {
+      "target": "Als meus pares els fa il·lusió que torni a viure a prop d'ells, però jo encara no ho tinc clar del tot.",
+      "en": "My parents are excited that I'm moving back near them, but I still haven't fully made up my mind.",
+      "tokens": [
+        {
+          "surface": "Als",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "meus",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "pares",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "il·lusió",
+          "lexemeId": "lx-0861"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "torni",
+          "lexemeId": "lx-0477"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "viure",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "prop",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "ells",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "encara",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "ho",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "tinc",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "clar",
+          "lexemeId": "lx-4313"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        }
+      ]
+    },
+    {
+      "target": "Si no hagués trobat aquesta nova feina, ara mateix encara viuria a l'altra ciutat, lluny de tots ells.",
+      "en": "If I hadn't found this new job, right now I would still be living in the other city, far from all of them.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "hagués",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "trobat",
+          "lexemeId": "lx-0110"
+        },
+        {
+          "surface": "aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "nova",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "mateix",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "encara",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "viuria",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "altra",
+          "lexemeId": "lx-0027"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "lluny",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "tots",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "ells",
+          "lexemeId": "lx-0246"
+        }
+      ]
+    },
+    {
+      "target": "La decisió no és fàcil, però crec que, al final, serà la millor per a tots.",
+      "en": "The decision isn't easy, but I believe that, in the end, it will be the best one for everyone.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "decisió",
+          "lexemeId": "lx-0867"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fàcil",
+          "lexemeId": "lx-0226"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "crec",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "final",
+          "lexemeId": "lx-4208"
+        },
+        {
+          "surface": "serà",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "millor",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "tots",
+          "lexemeId": "lx-0050"
+        }
+      ]
+    },
+    {
+      "target": "Als amics els explico la notícia; els sap greu, però m'entenen i em donen tot el seu suport.",
+      "en": "I tell my friends the news; they're sorry, but they understand me and give me all their support.",
+      "tokens": [
+        {
+          "surface": "Als",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "amics",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "explico",
+          "lexemeId": "lx-0813"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "notícia",
+          "lexemeId": "lx-1573"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "sap",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "greu",
+          "lexemeId": "lx-4091"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "m'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "entenen",
+          "lexemeId": "lx-0814"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "em",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "donen",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "seu",
+          "lexemeId": "lx-0250"
+        },
+        {
+          "surface": "suport",
+          "lexemeId": "lx-1820"
+        }
+      ]
+    },
+    {
+      "target": "Si pogués, els portaria a tots amb mi, perquè si hi vaig sol, sé que els trobaré molt a faltar.",
+      "en": "If I could, I would take them all with me, because if I go there alone, I know I will miss them a lot.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "pogués",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "portaria",
+          "lexemeId": "lx-0124"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "tots",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "mi",
+          "lexemeId": "lx-4057"
+        },
+        {
+          "surface": "perquè",
+          "lexemeId": "lx-0869"
+        },
+        {
+          "surface": "si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "vaig",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "sol",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "sé",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "trobaré",
+          "lexemeId": "lx-0110"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "faltar",
+          "lexemeId": "lx-0511"
+        }
+      ]
+    },
+    {
+      "target": "Espero que, quan hi vagi, tot els vagi tan bé com fins ara.",
+      "en": "I hope that, when I go, everything goes as well for them as it has until now.",
+      "tokens": [
+        {
+          "surface": "Espero",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "vagi",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "vagi",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "tan",
+          "lexemeId": "lx-0879"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "com",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "fins",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "ara",
+          "lexemeId": "lx-0254"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0004",
+    "lx-0007",
+    "lx-0012",
+    "lx-0013",
+    "lx-0014",
+    "lx-0020",
+    "lx-0022",
+    "lx-0023",
+    "lx-0025",
+    "lx-0027",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0035",
+    "lx-0038",
+    "lx-0039",
+    "lx-0040",
+    "lx-0041",
+    "lx-0043",
+    "lx-0045",
+    "lx-0048",
+    "lx-0050",
+    "lx-0051",
+    "lx-0052",
+    "lx-0053",
+    "lx-0054",
+    "lx-0055",
+    "lx-0057",
+    "lx-0059",
+    "lx-0061",
+    "lx-0062",
+    "lx-0063",
+    "lx-0064",
+    "lx-0080",
+    "lx-0083",
+    "lx-0088",
+    "lx-0089",
+    "lx-0093",
+    "lx-0104",
+    "lx-0109",
+    "lx-0110",
+    "lx-0112",
+    "lx-0123",
+    "lx-0124",
+    "lx-0131",
+    "lx-0165",
+    "lx-0166",
+    "lx-0168",
+    "lx-0211",
+    "lx-0219",
+    "lx-0226",
+    "lx-0240",
+    "lx-0246",
+    "lx-0248",
+    "lx-0250",
+    "lx-0254",
+    "lx-0255",
+    "lx-0265",
+    "lx-0325",
+    "lx-0477",
+    "lx-0511",
+    "lx-0535",
+    "lx-0604",
+    "lx-0813",
+    "lx-0814",
+    "lx-0861",
+    "lx-0867",
+    "lx-0869",
+    "lx-0879",
+    "lx-1573",
+    "lx-1820",
+    "lx-4057",
+    "lx-4091",
+    "lx-4208",
+    "lx-4313"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

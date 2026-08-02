@@ -1,0 +1,374 @@
+{
+  "id": "tx-seed-l4-002",
+  "formatVersion": "1.5.0",
+  "level": "L4",
+  "titleTarget": "A la feina",
+  "titleEn": "At work",
+  "sentences": [
+    {
+      "target": "Aquest any vull que em pugin una mica el sou a la feina.",
+      "en": "This year I want them to raise my salary a bit at work.",
+      "tokens": [
+        {
+          "surface": "Aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "em",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "pugin",
+          "lexemeId": "lx-0184"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "mica",
+          "lexemeId": "lx-4106"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "sou",
+          "lexemeId": "lx-0968"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        }
+      ]
+    },
+    {
+      "target": "El meu cap espera que acabem el projecte abans que arribi l'estiu.",
+      "en": "My boss hopes we finish the project before summer arrives.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "cap",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "espera",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "acabem",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "projecte",
+          "lexemeId": "lx-0535"
+        },
+        {
+          "surface": "abans",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "arribi",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        }
+      ]
+    },
+    {
+      "target": "Caldria organitzar una reunió amb tot l'equip abans de dinar.",
+      "en": "We should organize a meeting with the whole team before lunch.",
+      "tokens": [
+        {
+          "surface": "Caldria",
+          "lexemeId": "lx-0193"
+        },
+        {
+          "surface": "organitzar",
+          "lexemeId": "lx-0377"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "reunió",
+          "lexemeId": "lx-0546"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "equip",
+          "lexemeId": "lx-0832"
+        },
+        {
+          "surface": "abans",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "dinar",
+          "lexemeId": "lx-0475"
+        }
+      ]
+    },
+    {
+      "target": "Hem d'enviar el correu al client abans que se'n vagi.",
+      "en": "We have to send the email to the client before he leaves.",
+      "tokens": [
+        {
+          "surface": "Hem",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "enviar",
+          "lexemeId": "lx-0638"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "correu",
+          "lexemeId": "lx-0545"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "client",
+          "lexemeId": "lx-0766"
+        },
+        {
+          "surface": "abans",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "se",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "'n",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "vagi",
+          "lexemeId": "lx-0057"
+        }
+      ]
+    },
+    {
+      "target": "Torno a revisar el document que hem escrit tots junts.",
+      "en": "I'm reviewing the document we all wrote together again.",
+      "tokens": [
+        {
+          "surface": "Torno",
+          "lexemeId": "lx-0477"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "revisar",
+          "lexemeId": "lx-0536"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "document",
+          "lexemeId": "lx-1052"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "hem",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "escrit",
+          "lexemeId": "lx-0117"
+        },
+        {
+          "surface": "tots",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "junts",
+          "lexemeId": "lx-0131"
+        }
+      ]
+    },
+    {
+      "target": "Acabo de parlar amb un client que sembla molt content.",
+      "en": "I've just spoken with a client who seems very happy.",
+      "tokens": [
+        {
+          "surface": "Acabo",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "parlar",
+          "lexemeId": "lx-0103"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "client",
+          "lexemeId": "lx-0766"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "sembla",
+          "lexemeId": "lx-1063"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "content",
+          "lexemeId": "lx-0230"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0009",
+    "lx-0022",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0035",
+    "lx-0036",
+    "lx-0037",
+    "lx-0041",
+    "lx-0042",
+    "lx-0050",
+    "lx-0052",
+    "lx-0057",
+    "lx-0060",
+    "lx-0062",
+    "lx-0064",
+    "lx-0067",
+    "lx-0080",
+    "lx-0083",
+    "lx-0103",
+    "lx-0106",
+    "lx-0117",
+    "lx-0123",
+    "lx-0131",
+    "lx-0139",
+    "lx-0184",
+    "lx-0193",
+    "lx-0211",
+    "lx-0230",
+    "lx-0248",
+    "lx-0255",
+    "lx-0377",
+    "lx-0475",
+    "lx-0477",
+    "lx-0535",
+    "lx-0536",
+    "lx-0545",
+    "lx-0546",
+    "lx-0638",
+    "lx-0766",
+    "lx-0832",
+    "lx-0968",
+    "lx-1052",
+    "lx-1063",
+    "lx-4106"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

@@ -1,0 +1,298 @@
+{
+  "id": "tx-seed-l3-003",
+  "formatVersion": "1.5.0",
+  "level": "L3",
+  "titleTarget": "La meva amiga",
+  "titleEn": "My friend",
+  "sentences": [
+    {
+      "target": "La meva amiga vivia al costat de casa quan érem petites.",
+      "en": "My friend used to live next to my house when we were little girls.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "amiga",
+          "lexemeId": "lx-0909"
+        },
+        {
+          "surface": "vivia",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "costat",
+          "lexemeId": "lx-0147"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "érem",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petites",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "Quan érem petites, jugàvem juntes al carrer cada tarda.",
+      "en": "When we were little, we used to play together in the street every afternoon.",
+      "tokens": [
+        {
+          "surface": "Quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "érem",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petites",
+          "lexemeId": "lx-0218"
+        },
+        {
+          "surface": "jugàvem",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "juntes",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "carrer",
+          "lexemeId": "lx-0094"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "tarda",
+          "lexemeId": "lx-0086"
+        }
+      ]
+    },
+    {
+      "target": "L'any passat es va casar amb un home molt simpàtic.",
+      "en": "Last year she married a very nice man.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "passat",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "es",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "casar",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "home",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "simpàtic",
+          "lexemeId": "lx-0495"
+        }
+      ]
+    },
+    {
+      "target": "Vam anar totes juntes a la festa i vam ballar molt.",
+      "en": "We all went to the party together and danced a lot.",
+      "tokens": [
+        {
+          "surface": "Vam",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "anar",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "totes",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "juntes",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "festa",
+          "lexemeId": "lx-0320"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "vam",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "ballar",
+          "lexemeId": "lx-0204"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        }
+      ]
+    },
+    {
+      "target": "Aquesta setmana l'he trucat per telèfon per parlar una estona.",
+      "en": "This week I called her on the phone to talk for a while.",
+      "tokens": [
+        {
+          "surface": "Aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "setmana",
+          "lexemeId": "lx-0339"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "he",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "trucat",
+          "lexemeId": "lx-0187"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "telèfon",
+          "lexemeId": "lx-0778"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "parlar",
+          "lexemeId": "lx-0103"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "estona",
+          "lexemeId": "lx-4205"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0009",
+    "lx-0020",
+    "lx-0022",
+    "lx-0028",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0037",
+    "lx-0038",
+    "lx-0040",
+    "lx-0041",
+    "lx-0042",
+    "lx-0050",
+    "lx-0052",
+    "lx-0057",
+    "lx-0062",
+    "lx-0064",
+    "lx-0067",
+    "lx-0069",
+    "lx-0070",
+    "lx-0086",
+    "lx-0094",
+    "lx-0103",
+    "lx-0104",
+    "lx-0107",
+    "lx-0131",
+    "lx-0147",
+    "lx-0187",
+    "lx-0200",
+    "lx-0204",
+    "lx-0218",
+    "lx-0248",
+    "lx-0320",
+    "lx-0339",
+    "lx-0354",
+    "lx-0495",
+    "lx-0778",
+    "lx-0909",
+    "lx-4205"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

@@ -1,0 +1,207 @@
+{
+  "id": "tx-seed-l2-003",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El meu poble",
+  "titleEn": "My town",
+  "sentences": [
+    {
+      "target": "Visc en un poble petit.",
+      "en": "I live in a small town.",
+      "tokens": [
+        {
+          "surface": "Visc",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "poble",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "petit",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "Fa sol gairebé cada dia.",
+      "en": "It's sunny almost every day.",
+      "tokens": [
+        {
+          "surface": "Fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "sol",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "gairebé",
+          "lexemeId": "lx-0266"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "dia",
+          "lexemeId": "lx-0068"
+        }
+      ]
+    },
+    {
+      "target": "A la tarda de vegades plou.",
+      "en": "In the afternoon it sometimes rains.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "tarda",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "vegades",
+          "lexemeId": "lx-4161"
+        },
+        {
+          "surface": "plou",
+          "lexemeId": "lx-0194"
+        }
+      ]
+    },
+    {
+      "target": "El veí és molt amable.",
+      "en": "The neighbor is very kind.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "veí",
+          "lexemeId": "lx-1877"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "amable",
+          "lexemeId": "lx-2184"
+        }
+      ]
+    },
+    {
+      "target": "Sé el nom de tothom.",
+      "en": "I know everyone's name.",
+      "tokens": [
+        {
+          "surface": "Sé",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nom",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "tothom",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "Puc caminar fins a la plaça.",
+      "en": "I can walk to the square.",
+      "tokens": [
+        {
+          "surface": "Puc",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "caminar",
+          "lexemeId": "lx-0201"
+        },
+        {
+          "surface": "fins",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "plaça",
+          "lexemeId": "lx-0985"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0025",
+    "lx-0028",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0036",
+    "lx-0037",
+    "lx-0038",
+    "lx-0052",
+    "lx-0053",
+    "lx-0055",
+    "lx-0059",
+    "lx-0068",
+    "lx-0086",
+    "lx-0087",
+    "lx-0104",
+    "lx-0149",
+    "lx-0194",
+    "lx-0201",
+    "lx-0218",
+    "lx-0266",
+    "lx-0325",
+    "lx-0342",
+    "lx-0985",
+    "lx-1877",
+    "lx-2184",
+    "lx-4161"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

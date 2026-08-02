@@ -1,0 +1,662 @@
+[
+  {
+    "target": "forma",
+    "glossEn": "shape, form",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta caixa té forma rodona.",
+    "exampleEn": "This box has a round shape.",
+    "tags": []
+  },
+  {
+    "target": "rei",
+    "glossEn": "king",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El rei va visitar la ciutat ahir.",
+    "exampleEn": "The king visited the city yesterday.",
+    "tags": ["Society & Politics"]
+  },
+  {
+    "target": "morir",
+    "glossEn": "to die",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'avi va morir l'any passat.",
+    "exampleEn": "Grandpa died last year.",
+    "tags": []
+  },
+  {
+    "target": "cop",
+    "glossEn": "blow, hit",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El cotxe va rebre un cop fort.",
+    "exampleEn": "The car got hit hard.",
+    "tags": []
+  },
+  {
+    "target": "general",
+    "glossEn": "general",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta és la norma general.",
+    "exampleEn": "This is the general rule.",
+    "tags": []
+  },
+  {
+    "target": "principal",
+    "glossEn": "main, principal",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El carrer principal està ple de botigues.",
+    "exampleEn": "The main street is full of shops.",
+    "tags": []
+  },
+  {
+    "target": "major",
+    "glossEn": "older, elder",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La meva germana major viu a Girona.",
+    "exampleEn": "My older sister lives in Girona.",
+    "tags": []
+  },
+  {
+    "target": "resta",
+    "glossEn": "the rest, remainder",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Menja't la poma; guarda la resta.",
+    "exampleEn": "Eat the apple; keep the rest.",
+    "tags": []
+  },
+  {
+    "target": "centre",
+    "glossEn": "center",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vivim al centre de la ciutat.",
+    "exampleEn": "We live in the center of the city.",
+    "tags": ["Geography & Places"]
+  },
+  {
+    "target": "únic",
+    "glossEn": "only, unique",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest és l'únic exemplar que queda.",
+    "exampleEn": "This is the only copy left.",
+    "tags": []
+  },
+  {
+    "target": "aleshores",
+    "glossEn": "then, at that time",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vam arribar tard; aleshores ja havia començat.",
+    "exampleEn": "We arrived late; by then it had already started.",
+    "tags": []
+  },
+  {
+    "target": "a través de",
+    "glossEn": "through, across",
+    "pos": "phrase",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vam passejar a través de la ciutat.",
+    "exampleEn": "We walked through the city.",
+    "tags": []
+  },
+  {
+    "target": "partir",
+    "glossEn": "to leave, to depart",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El tren partirà a les cinc.",
+    "exampleEn": "The train will leave at five.",
+    "tags": []
+  },
+  {
+    "target": "matar",
+    "glossEn": "to kill",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "No es pot matar cap animal aquí.",
+    "exampleEn": "You cannot kill any animal here.",
+    "tags": []
+  },
+  {
+    "target": "sèrie",
+    "glossEn": "series",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "M'agrada molt aquesta sèrie de televisió.",
+    "exampleEn": "I really like this TV series.",
+    "tags": ["Arts & Entertainment"]
+  },
+  {
+    "target": "mig",
+    "glossEn": "half",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Voldria mig quilo de pomes.",
+    "exampleEn": "I would like half a kilo of apples.",
+    "tags": []
+  },
+  {
+    "target": "total",
+    "glossEn": "total, sum",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El total de la factura és cent euros.",
+    "exampleEn": "The total of the bill is a hundred euros.",
+    "tags": []
+  },
+  {
+    "target": "ordre",
+    "glossEn": "order, sequence",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Cal posar els llibres en ordre alfabètic.",
+    "exampleEn": "You must put the books in alphabetical order.",
+    "tags": []
+  },
+  {
+    "target": "nacional",
+    "glossEn": "national",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Avui és festa nacional.",
+    "exampleEn": "Today is a national holiday.",
+    "tags": ["Society & Politics"]
+  },
+  {
+    "target": "al voltant de",
+    "glossEn": "around, about",
+    "pos": "phrase",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Hi havia gent asseguda al voltant de la taula.",
+    "exampleEn": "There were people sitting around the table.",
+    "tags": []
+  },
+  {
+    "target": "línia",
+    "glossEn": "line",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Dibuixa una línia recta.",
+    "exampleEn": "Draw a straight line.",
+    "tags": []
+  },
+  {
+    "target": "club",
+    "glossEn": "club",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Ell és soci d'un club de futbol.",
+    "exampleEn": "He is a member of a football club.",
+    "tags": ["Sports & Recreation"]
+  },
+  {
+    "target": "igual",
+    "glossEn": "equal, the same",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El resultat és igual per a tothom.",
+    "exampleEn": "The result is the same for everyone.",
+    "tags": []
+  },
+  {
+    "target": "càrrec",
+    "glossEn": "position, post",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Ocupa un càrrec important a l'empresa.",
+    "exampleEn": "He holds an important position at the company.",
+    "tags": ["Work & Business"]
+  },
+  {
+    "target": "número",
+    "glossEn": "number (numeral)",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Quin és el teu número de telèfon?",
+    "exampleEn": "What is your phone number?",
+    "tags": ["Numbers & Quantities"]
+  },
+  {
+    "target": "probablement",
+    "glossEn": "probably",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Probablement plourà demà.",
+    "exampleEn": "It will probably rain tomorrow.",
+    "tags": []
+  },
+  {
+    "target": "just",
+    "glossEn": "just, fair",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El jutge va ser just amb tothom.",
+    "exampleEn": "The judge was fair to everyone.",
+    "tags": []
+  },
+  {
+    "target": "interior",
+    "glossEn": "inner, interior",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El pati interior de la casa és molt tranquil.",
+    "exampleEn": "The inner courtyard of the house is very quiet.",
+    "tags": []
+  },
+  {
+    "target": "crear",
+    "glossEn": "to create",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Volem crear una empresa nova.",
+    "exampleEn": "We want to create a new company.",
+    "tags": []
+  },
+  {
+    "target": "base",
+    "glossEn": "base, basis",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta idea és la base del projecte.",
+    "exampleEn": "This idea is the basis of the project.",
+    "tags": []
+  },
+  {
+    "target": "posició",
+    "glossEn": "position",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Ha canviat de posició diverses vegades.",
+    "exampleEn": "He has changed position several times.",
+    "tags": []
+  },
+  {
+    "target": "nombre",
+    "glossEn": "number, quantity",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Hi ha un gran nombre de visitants avui.",
+    "exampleEn": "There is a large number of visitors today.",
+    "tags": ["Numbers & Quantities"]
+  },
+  {
+    "target": "oficial",
+    "glossEn": "official",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta és la versió oficial dels fets.",
+    "exampleEn": "This is the official version of events.",
+    "tags": []
+  },
+  {
+    "target": "est",
+    "glossEn": "east",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El sol surt per l'est.",
+    "exampleEn": "The sun rises in the east.",
+    "tags": ["Geography & Places"]
+  },
+  {
+    "target": "regne",
+    "glossEn": "kingdom",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Anglaterra va ser un regne durant segles.",
+    "exampleEn": "England was a kingdom for centuries.",
+    "tags": ["Society & Politics"]
+  },
+  {
+    "target": "lliure",
+    "glossEn": "free",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Tothom té dret a ser lliure.",
+    "exampleEn": "Everyone has the right to be free.",
+    "tags": []
+  },
+  {
+    "target": "favor",
+    "glossEn": "favor",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Em pots fer un favor?",
+    "exampleEn": "Can you do me a favor?",
+    "tags": []
+  },
+  {
+    "target": "moviment",
+    "glossEn": "movement",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El moviment de les onades és constant.",
+    "exampleEn": "The movement of the waves is constant.",
+    "tags": []
+  },
+  {
+    "target": "mena",
+    "glossEn": "kind, sort",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Quina mena de música t'agrada?",
+    "exampleEn": "What kind of music do you like?",
+    "tags": []
+  },
+  {
+    "target": "especial",
+    "glossEn": "special",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Avui és un dia especial per a mi.",
+    "exampleEn": "Today is a special day for me.",
+    "tags": []
+  },
+  {
+    "target": "capità",
+    "glossEn": "captain",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El capità del vaixell va donar l'ordre.",
+    "exampleEn": "The ship's captain gave the order.",
+    "tags": []
+  },
+  {
+    "target": "real",
+    "glossEn": "real (not imaginary)",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Els nombres reals inclouen els decimals.",
+    "exampleEn": "Real numbers include decimals.",
+    "tags": []
+  },
+  {
+    "target": "arma",
+    "glossEn": "weapon",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La policia li va requisar l'arma.",
+    "exampleEn": "The police confiscated his weapon.",
+    "tags": ["War & Conflict"]
+  },
+  {
+    "target": "anomenar",
+    "glossEn": "to call, to name",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Els seus amics l'anomenen Nil.",
+    "exampleEn": "His friends call him Nil.",
+    "tags": []
+  },
+  {
+    "target": "propi",
+    "glossEn": "own",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Té el seu propi cotxe.",
+    "exampleEn": "He has his own car.",
+    "tags": []
+  },
+  {
+    "target": "divers",
+    "glossEn": "diverse, various",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Hi ha diversos motius per no venir.",
+    "exampleEn": "There are several reasons not to come.",
+    "tags": []
+  },
+  {
+    "target": "atac",
+    "glossEn": "attack",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Van patir un atac inesperat.",
+    "exampleEn": "They suffered an unexpected attack.",
+    "tags": ["War & Conflict"]
+  },
+  {
+    "target": "reial",
+    "glossEn": "royal",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La família reial va visitar el museu.",
+    "exampleEn": "The royal family visited the museum.",
+    "tags": ["Society & Politics"]
+  },
+  {
+    "target": "membre",
+    "glossEn": "member",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Soc membre d'aquest club des de fa anys.",
+    "exampleEn": "I have been a member of this club for years.",
+    "tags": []
+  },
+  {
+    "target": "reina",
+    "glossEn": "queen",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La reina va parlar a la televisió.",
+    "exampleEn": "The queen spoke on television.",
+    "tags": ["Society & Politics"]
+  },
+  {
+    "target": "direcció",
+    "glossEn": "direction",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vam seguir la direcció correcta.",
+    "exampleEn": "We followed the right direction.",
+    "tags": []
+  },
+  {
+    "target": "significar",
+    "glossEn": "to mean, to signify",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Això no significa res de dolent.",
+    "exampleEn": "That does not mean anything bad.",
+    "tags": []
+  },
+  {
+    "target": "procés",
+    "glossEn": "process",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El procés de fabricació és molt llarg.",
+    "exampleEn": "The manufacturing process is very long.",
+    "tags": []
+  },
+  {
+    "target": "segle",
+    "glossEn": "century",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest edifici té més de tres segles.",
+    "exampleEn": "This building is more than three centuries old.",
+    "tags": ["Time & Calendar"]
+  },
+  {
+    "target": "superior",
+    "glossEn": "superior, upper",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Viuen al pis superior.",
+    "exampleEn": "They live on the upper floor.",
+    "tags": []
+  },
+  {
+    "target": "construcció",
+    "glossEn": "construction",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La construcció del pont va durar dos anys.",
+    "exampleEn": "The construction of the bridge took two years.",
+    "tags": []
+  },
+  {
+    "target": "accés",
+    "glossEn": "access",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta porta dona accés al jardí.",
+    "exampleEn": "This door gives access to the garden.",
+    "tags": []
+  },
+  {
+    "target": "torre",
+    "glossEn": "tower",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Van pujar dalt de la torre.",
+    "exampleEn": "They climbed to the top of the tower.",
+    "tags": []
+  },
+  {
+    "target": "honor",
+    "glossEn": "honor",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "És un honor conèixer-vos.",
+    "exampleEn": "It is an honor to meet you.",
+    "tags": []
+  },
+  {
+    "target": "permetre",
+    "glossEn": "to allow, to permit",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Els meus pares no em permeten sortir tard.",
+    "exampleEn": "My parents do not allow me to go out late.",
+    "tags": []
+  },
+  {
+    "target": "futur",
+    "glossEn": "future",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Ningú sap què portarà el futur.",
+    "exampleEn": "Nobody knows what the future will bring.",
+    "tags": []
+  },
+  {
+    "target": "humà",
+    "glossEn": "human",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Tots els humans necessiten aigua per viure.",
+    "exampleEn": "All humans need water to live.",
+    "tags": []
+  },
+  {
+    "target": "militar",
+    "glossEn": "military",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El govern va enviar tropes militars a la zona.",
+    "exampleEn": "The government sent military troops to the area.",
+    "tags": ["War & Conflict"]
+  },
+  {
+    "target": "missió",
+    "glossEn": "mission",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La seva missió és ajudar els refugiats.",
+    "exampleEn": "Their mission is to help refugees.",
+    "tags": []
+  },
+  {
+    "target": "capaç",
+    "glossEn": "capable",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Ets capaç de fer-ho tot sol.",
+    "exampleEn": "You are capable of doing it alone.",
+    "tags": []
+  },
+  {
+    "target": "doctor",
+    "glossEn": "doctor",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El doctor em va receptar un xarop.",
+    "exampleEn": "The doctor prescribed me a syrup.",
+    "tags": ["Health & Medicine"]
+  }
+]

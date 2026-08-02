@@ -4661,7 +4661,8 @@
       "exampleTranslit": "saram dard dārad.",
       "exampleEn": "My head aches.",
       "tags": [
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -7112,7 +7113,8 @@
       "exampleTranslit": "ba dāktar raftam.",
       "exampleEn": "I went to the doctor.",
       "tags": [
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -11128,7 +11130,8 @@
       "exampleTranslit": "dawā rā az dawākhāna gereftam.",
       "exampleEn": "I got the medicine from the pharmacy.",
       "tags": [
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -12279,7 +12282,8 @@
       "exampleTranslit": "tifl tab-e bālāyī dārad.",
       "exampleEn": "The child has a high fever.",
       "tags": [
-        "Health & Medicine"
+        "Health & Medicine",
+        "beginner-core"
       ]
     },
     {
@@ -18947,19 +18951,19 @@
     },
     {
       "id": "lx-1181",
-      "target": "صندلی",
-      "targetNormalized": "صندلی",
-      "translit": "sandalī",
+      "target": "چوکی",
+      "targetNormalized": "چوکی",
+      "translit": "chawkī",
       "glossEn": "chair",
       "pos": "noun",
       "freqRank": 985,
       "freqBand": 4,
       "register": "neutral",
       "variants": [
-        "چوکی"
+        "صندلی"
       ],
-      "exampleTarget": "روی صندلی نشست.",
-      "exampleTranslit": "rō-yi sandalī nishast.",
+      "exampleTarget": "روی چوکی نشست.",
+      "exampleTranslit": "rō-yi chawkī nishast.",
       "exampleEn": "He sat on the chair.",
       "tags": [
         "Home & Furniture",
@@ -113128,6 +113132,100 @@
       "id": "lx-6148",
       "targetNormalized": "بهادر",
       "freqRank": 6145,
+      "freqBand": 10
+    },
+    {
+      "target": "مربع",
+      "translit": "murabba",
+      "glossEn": "square",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "میز مربع است.",
+      "exampleTranslit": "mez murabba ast.",
+      "exampleEn": "The table is square.",
+      "tags": [
+        "Colors & Shapes",
+        "beginner-core"
+      ],
+      "id": "lx-6149",
+      "targetNormalized": "مربع",
+      "freqRank": 6146,
+      "freqBand": 10
+    },
+    {
+      "target": "مثلث",
+      "translit": "musallas",
+      "glossEn": "triangle",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "این شکل مثلث است.",
+      "exampleTranslit": "in shakl musallas ast.",
+      "exampleEn": "This shape is a triangle.",
+      "tags": [
+        "Colors & Shapes",
+        "beginner-core"
+      ],
+      "id": "lx-6150",
+      "targetNormalized": "مثلث",
+      "freqRank": 6147,
+      "freqBand": 10
+    },
+    {
+      "target": "فلز",
+      "translit": "filiz",
+      "glossEn": "metal",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "کلید از فلز است.",
+      "exampleTranslit": "kilid az filiz ast.",
+      "exampleEn": "The key is made of metal.",
+      "tags": [
+        "Materials & Substances"
+      ],
+      "id": "lx-6151",
+      "targetNormalized": "فلز",
+      "freqRank": 6148,
+      "freqBand": 10
+    },
+    {
+      "target": "عصبانی",
+      "translit": "asabāni",
+      "glossEn": "nervous, angry",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "او عصبانی است.",
+      "exampleTranslit": "u asabāni ast.",
+      "exampleEn": "He is nervous/angry.",
+      "tags": [
+        "Emotions & Feelings",
+        "beginner-core"
+      ],
+      "id": "lx-6152",
+      "targetNormalized": "عصبانی",
+      "freqRank": 6149,
+      "freqBand": 10
+    },
+    {
+      "target": "نادان",
+      "translit": "nādān",
+      "glossEn": "foolish, ignorant",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "او نادان نیست.",
+      "exampleTranslit": "u nādān nist.",
+      "exampleEn": "He is not foolish.",
+      "tags": [
+        "Descriptions & Qualities",
+        "beginner-core"
+      ],
+      "id": "lx-6153",
+      "targetNormalized": "نادان",
+      "freqRank": 6150,
       "freqBand": 10
     }
   ]

@@ -1,0 +1,419 @@
+{
+  "id": "tx-seed-l4-003",
+  "formatVersion": "1.5.0",
+  "level": "L4",
+  "titleTarget": "Un viatge en tren",
+  "titleEn": "A train journey",
+  "sentences": [
+    {
+      "target": "Vull agafar el tren que surt a les nou del matí cap a la muntanya.",
+      "en": "I want to catch the train that leaves at nine in the morning towards the mountains.",
+      "tokens": [
+        {
+          "surface": "Vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "agafar",
+          "lexemeId": "lx-1616"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "tren",
+          "lexemeId": "lx-0559"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "surt",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "les",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "nou",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "matí",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "cap",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "muntanya",
+          "lexemeId": "lx-0322"
+        }
+      ]
+    },
+    {
+      "target": "És una ciutat petita on viuen els meus cosins des de sempre.",
+      "en": "It's a small city where my cousins have always lived.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "petita",
+          "lexemeId": "lx-0218"
+        },
+        {
+          "surface": "on",
+          "lexemeId": "lx-0018"
+        },
+        {
+          "surface": "viuen",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "meus",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "cosins",
+          "lexemeId": "lx-0345"
+        },
+        {
+          "surface": "des",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        }
+      ]
+    },
+    {
+      "target": "Aquí es parla una llengua que és una mica diferent de la meva.",
+      "en": "Here they speak a language that's a bit different from mine.",
+      "tokens": [
+        {
+          "surface": "Aquí",
+          "lexemeId": "lx-0252"
+        },
+        {
+          "surface": "es",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "parla",
+          "lexemeId": "lx-0103"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "llengua",
+          "lexemeId": "lx-0313"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "mica",
+          "lexemeId": "lx-4106"
+        },
+        {
+          "surface": "diferent",
+          "lexemeId": "lx-4172"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        }
+      ]
+    },
+    {
+      "target": "Caldria comprar el bitllet amb temps per no perdre'l al darrer moment.",
+      "en": "We should buy the ticket in advance so as not to miss it at the last moment.",
+      "tokens": [
+        {
+          "surface": "Caldria",
+          "lexemeId": "lx-0193"
+        },
+        {
+          "surface": "comprar",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "bitllet",
+          "lexemeId": "lx-0567"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "temps",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "perdre",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "'l",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "darrer",
+          "lexemeId": "lx-4336"
+        },
+        {
+          "surface": "moment",
+          "lexemeId": "lx-4154"
+        }
+      ]
+    },
+    {
+      "target": "Tot mirant per la finestra, veig les muntanyes que queden molt lluny.",
+      "en": "While looking out the window, I see the mountains that are far away.",
+      "tokens": [
+        {
+          "surface": "Tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "mirant",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "finestra",
+          "lexemeId": "lx-0369"
+        },
+        {
+          "surface": "veig",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "les",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "muntanyes",
+          "lexemeId": "lx-0322"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "queden",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "lluny",
+          "lexemeId": "lx-0166"
+        }
+      ]
+    },
+    {
+      "target": "M'agradaria tornar-hi l'any que ve amb tota la meva família.",
+      "en": "I would like to go back there next year with all my family.",
+      "tokens": [
+        {
+          "surface": "M'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agradaria",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "tornar",
+          "lexemeId": "lx-0477"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "tota",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "família",
+          "lexemeId": "lx-0341"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0009",
+    "lx-0013",
+    "lx-0018",
+    "lx-0022",
+    "lx-0023",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0035",
+    "lx-0038",
+    "lx-0039",
+    "lx-0040",
+    "lx-0041",
+    "lx-0042",
+    "lx-0043",
+    "lx-0044",
+    "lx-0050",
+    "lx-0052",
+    "lx-0058",
+    "lx-0060",
+    "lx-0067",
+    "lx-0073",
+    "lx-0083",
+    "lx-0085",
+    "lx-0093",
+    "lx-0103",
+    "lx-0104",
+    "lx-0108",
+    "lx-0114",
+    "lx-0118",
+    "lx-0166",
+    "lx-0183",
+    "lx-0193",
+    "lx-0196",
+    "lx-0197",
+    "lx-0209",
+    "lx-0218",
+    "lx-0219",
+    "lx-0248",
+    "lx-0252",
+    "lx-0257",
+    "lx-0313",
+    "lx-0322",
+    "lx-0341",
+    "lx-0345",
+    "lx-0369",
+    "lx-0477",
+    "lx-0559",
+    "lx-0567",
+    "lx-1616",
+    "lx-4106",
+    "lx-4154",
+    "lx-4172",
+    "lx-4336"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

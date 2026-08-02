@@ -1,0 +1,250 @@
+{
+  "id": "tx-seed-l3-001",
+  "formatVersion": "1.5.0",
+  "level": "L3",
+  "titleTarget": "Quan era petit",
+  "titleEn": "When I was little",
+  "sentences": [
+    {
+      "target": "Quan era petit, vivia a la muntanya amb els avis.",
+      "en": "When I was little, I lived in the mountains with my grandparents.",
+      "tokens": [
+        {
+          "surface": "Quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "era",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petit",
+          "lexemeId": "lx-0218"
+        },
+        {
+          "surface": "vivia",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "muntanya",
+          "lexemeId": "lx-0322"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "avis",
+          "lexemeId": "lx-0343"
+        }
+      ]
+    },
+    {
+      "target": "Cada estiu anàvem junts a la platja.",
+      "en": "Every summer we went to the beach together.",
+      "tokens": [
+        {
+          "surface": "Cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "anàvem",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "junts",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "platja",
+          "lexemeId": "lx-0321"
+        }
+      ]
+    },
+    {
+      "target": "L'estiu passat vam anar a una ciutat nova.",
+      "en": "Last summer we went to a new city.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "passat",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "vam",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "anar",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "nova",
+          "lexemeId": "lx-0219"
+        }
+      ]
+    },
+    {
+      "target": "Vam visitar un museu molt bonic.",
+      "en": "We visited a very beautiful museum.",
+      "tokens": [
+        {
+          "surface": "Vam",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "visitar",
+          "lexemeId": "lx-4075"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "museu",
+          "lexemeId": "lx-0994"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "bonic",
+          "lexemeId": "lx-0228"
+        }
+      ]
+    },
+    {
+      "target": "Aquest matí he trucat als avis per explicar-los el viatge.",
+      "en": "This morning I called my grandparents to tell them about the trip.",
+      "tokens": [
+        {
+          "surface": "Aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "matí",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "he",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "trucat",
+          "lexemeId": "lx-0187"
+        },
+        {
+          "surface": "als",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "avis",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "explicar",
+          "lexemeId": "lx-0813"
+        },
+        {
+          "surface": "los",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "viatge",
+          "lexemeId": "lx-0556"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0020",
+    "lx-0022",
+    "lx-0028",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0037",
+    "lx-0038",
+    "lx-0040",
+    "lx-0041",
+    "lx-0042",
+    "lx-0043",
+    "lx-0052",
+    "lx-0057",
+    "lx-0062",
+    "lx-0064",
+    "lx-0085",
+    "lx-0093",
+    "lx-0104",
+    "lx-0107",
+    "lx-0131",
+    "lx-0139",
+    "lx-0187",
+    "lx-0218",
+    "lx-0219",
+    "lx-0228",
+    "lx-0321",
+    "lx-0322",
+    "lx-0343",
+    "lx-0556",
+    "lx-0813",
+    "lx-0994",
+    "lx-4075"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

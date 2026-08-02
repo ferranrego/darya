@@ -1,0 +1,307 @@
+{
+  "id": "tx-seed-l3-002",
+  "formatVersion": "1.5.0",
+  "level": "L3",
+  "titleTarget": "Un dia de feina",
+  "titleEn": "A workday",
+  "sentences": [
+    {
+      "target": "Abans treballava en una oficina petita al costat de casa.",
+      "en": "Before, I used to work in a small office next to home.",
+      "tokens": [
+        {
+          "surface": "Abans",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "treballava",
+          "lexemeId": "lx-0105"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "oficina",
+          "lexemeId": "lx-0966"
+        },
+        {
+          "surface": "petita",
+          "lexemeId": "lx-0218"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "costat",
+          "lexemeId": "lx-0147"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    },
+    {
+      "target": "Cada dia agafava el tren de les vuit per anar a la feina.",
+      "en": "Every day I used to take the eight o'clock train to go to work.",
+      "tokens": [
+        {
+          "surface": "Cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "dia",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "agafava",
+          "lexemeId": "lx-1616"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "tren",
+          "lexemeId": "lx-0559"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "les",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "vuit",
+          "lexemeId": "lx-0276"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "anar",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        }
+      ]
+    },
+    {
+      "target": "Ahir vaig arribar tard perquè el tren no va sortir a temps.",
+      "en": "Yesterday I arrived late because the train didn't leave on time.",
+      "tokens": [
+        {
+          "surface": "Ahir",
+          "lexemeId": "lx-0260"
+        },
+        {
+          "surface": "vaig",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "arribar",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "tard",
+          "lexemeId": "lx-0262"
+        },
+        {
+          "surface": "perquè",
+          "lexemeId": "lx-0869"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "tren",
+          "lexemeId": "lx-0559"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "sortir",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "temps",
+          "lexemeId": "lx-0073"
+        }
+      ]
+    },
+    {
+      "target": "El meu cap es va enfadar molt amb tothom.",
+      "en": "My boss got very angry with everyone.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "cap",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "es",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "enfadar",
+          "lexemeId": "lx-4236"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "tothom",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "Avui, en canvi, he acabat la feina molt més d'hora.",
+      "en": "Today, however, I finished work much earlier.",
+      "tokens": [
+        {
+          "surface": "Avui",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "canvi",
+          "lexemeId": "lx-0656"
+        },
+        {
+          "surface": "he",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "acabat",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "hora",
+          "lexemeId": "lx-0338"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0009",
+    "lx-0022",
+    "lx-0028",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0036",
+    "lx-0039",
+    "lx-0040",
+    "lx-0041",
+    "lx-0042",
+    "lx-0044",
+    "lx-0046",
+    "lx-0052",
+    "lx-0057",
+    "lx-0062",
+    "lx-0068",
+    "lx-0069",
+    "lx-0073",
+    "lx-0080",
+    "lx-0083",
+    "lx-0105",
+    "lx-0106",
+    "lx-0123",
+    "lx-0147",
+    "lx-0149",
+    "lx-0197",
+    "lx-0218",
+    "lx-0248",
+    "lx-0255",
+    "lx-0259",
+    "lx-0260",
+    "lx-0262",
+    "lx-0276",
+    "lx-0338",
+    "lx-0559",
+    "lx-0656",
+    "lx-0869",
+    "lx-0966",
+    "lx-1616",
+    "lx-4236"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

@@ -1,0 +1,614 @@
+{
+  "id": "tx-seed-l6-001",
+  "formatVersion": "1.5.0",
+  "level": "L6",
+  "titleTarget": "Un poble que canvia",
+  "titleEn": "A town that is changing",
+  "sentences": [
+    {
+      "target": "Fa deu anys, aquest poble era molt més tranquil que ara, quan gairebé no hi havia turistes.",
+      "en": "Ten years ago, this town was much quieter than now, when there were almost no tourists.",
+      "tokens": [
+        {
+          "surface": "Fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "deu",
+          "lexemeId": "lx-0277"
+        },
+        {
+          "surface": "anys",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "poble",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "era",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "tranquil",
+          "lexemeId": "lx-2181"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "gairebé",
+          "lexemeId": "lx-0266"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "havia",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "turistes",
+          "lexemeId": "lx-0557"
+        }
+      ]
+    },
+    {
+      "target": "Moltes cases velles s'han venut a gent que ve de la ciutat i hi passa només l'estiu.",
+      "en": "Many old houses have been sold to people who come from the city and only spend the summer there.",
+      "tokens": [
+        {
+          "surface": "Moltes",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "cases",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "velles",
+          "lexemeId": "lx-0220"
+        },
+        {
+          "surface": "s'",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "han",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "venut",
+          "lexemeId": "lx-0650"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "gent",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "passa",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "només",
+          "lexemeId": "lx-0264"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        }
+      ]
+    },
+    {
+      "target": "Al veí de sempre li sap greu que el poble hagi canviat tant en tan poc temps.",
+      "en": "The longtime neighbor is sorry that the town has changed so much in such a short time.",
+      "tokens": [
+        {
+          "surface": "Al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "veí",
+          "lexemeId": "lx-1877"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "li",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "sap",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "greu",
+          "lexemeId": "lx-4091"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "poble",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "hagi",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "canviat",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "tant",
+          "lexemeId": "lx-0687"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "tan",
+          "lexemeId": "lx-0879"
+        },
+        {
+          "surface": "poc",
+          "lexemeId": "lx-0268"
+        },
+        {
+          "surface": "temps",
+          "lexemeId": "lx-0073"
+        }
+      ]
+    },
+    {
+      "target": "Si els preus no haguessin pujat tant, potser més joves s'hi haurien quedat a viure.",
+      "en": "If prices hadn't risen so much, perhaps more young people would have stayed to live there.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "preus",
+          "lexemeId": "lx-0336"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "haguessin",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "pujat",
+          "lexemeId": "lx-0184"
+        },
+        {
+          "surface": "tant",
+          "lexemeId": "lx-0687"
+        },
+        {
+          "surface": "potser",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "joves",
+          "lexemeId": "lx-0221"
+        },
+        {
+          "surface": "s'",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "haurien",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "quedat",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "viure",
+          "lexemeId": "lx-0104"
+        }
+      ]
+    },
+    {
+      "target": "Ara, quan es ven una casa vella al poble, sempre la compra algú que no és d'aquí.",
+      "en": "Now, when an old house is sold in the town, it's always bought by someone who isn't from here.",
+      "tokens": [
+        {
+          "surface": "Ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "es",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "ven",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "vella",
+          "lexemeId": "lx-0220"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "poble",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "compra",
+          "lexemeId": "lx-0853"
+        },
+        {
+          "surface": "algú",
+          "lexemeId": "lx-0148"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "aquí",
+          "lexemeId": "lx-0252"
+        }
+      ]
+    },
+    {
+      "target": "M'agradaria que el poble no perdés mai el que sempre l'ha fet diferent dels altres.",
+      "en": "I would like the town to never lose what has always made it different from the others.",
+      "tokens": [
+        {
+          "surface": "M'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agradaria",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "poble",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "perdés",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "mai",
+          "lexemeId": "lx-0258"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "fet",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "diferent",
+          "lexemeId": "lx-4172"
+        },
+        {
+          "surface": "dels",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "altres",
+          "lexemeId": "lx-0027"
+        }
+      ]
+    },
+    {
+      "target": "Si ho pogués decidir ara mateix, hi tornaria a viure demà, sense pensar-m'ho dues vegades.",
+      "en": "If I could decide right now, I would move back there tomorrow, without thinking twice.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "ho",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "pogués",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "decidir",
+          "lexemeId": "lx-0783"
+        },
+        {
+          "surface": "ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "mateix",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "tornaria",
+          "lexemeId": "lx-0477"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "viure",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "demà",
+          "lexemeId": "lx-0261"
+        },
+        {
+          "surface": "sense",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "pensar",
+          "lexemeId": "lx-0111"
+        },
+        {
+          "surface": "m'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "ho",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "dues",
+          "lexemeId": "lx-0270"
+        },
+        {
+          "surface": "vegades",
+          "lexemeId": "lx-4161"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0009",
+    "lx-0012",
+    "lx-0013",
+    "lx-0014",
+    "lx-0020",
+    "lx-0022",
+    "lx-0023",
+    "lx-0024",
+    "lx-0027",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0035",
+    "lx-0036",
+    "lx-0038",
+    "lx-0039",
+    "lx-0042",
+    "lx-0043",
+    "lx-0046",
+    "lx-0048",
+    "lx-0052",
+    "lx-0053",
+    "lx-0055",
+    "lx-0059",
+    "lx-0062",
+    "lx-0064",
+    "lx-0067",
+    "lx-0069",
+    "lx-0073",
+    "lx-0077",
+    "lx-0093",
+    "lx-0104",
+    "lx-0107",
+    "lx-0108",
+    "lx-0111",
+    "lx-0139",
+    "lx-0148",
+    "lx-0168",
+    "lx-0183",
+    "lx-0184",
+    "lx-0188",
+    "lx-0196",
+    "lx-0209",
+    "lx-0220",
+    "lx-0221",
+    "lx-0252",
+    "lx-0254",
+    "lx-0257",
+    "lx-0258",
+    "lx-0261",
+    "lx-0263",
+    "lx-0264",
+    "lx-0266",
+    "lx-0268",
+    "lx-0270",
+    "lx-0277",
+    "lx-0336",
+    "lx-0342",
+    "lx-0477",
+    "lx-0557",
+    "lx-0650",
+    "lx-0687",
+    "lx-0783",
+    "lx-0853",
+    "lx-0879",
+    "lx-1877",
+    "lx-2181",
+    "lx-4091",
+    "lx-4161",
+    "lx-4172"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

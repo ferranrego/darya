@@ -1,0 +1,630 @@
+{
+  "id": "tx-seed-l6-003",
+  "formatVersion": "1.5.0",
+  "level": "L6",
+  "titleTarget": "Un regal per a tothom",
+  "titleEn": "A gift for everyone",
+  "sentences": [
+    {
+      "target": "Cada any, quan arriba l'aniversari del meu avi, tota la família es reuneix per passar el dia junts.",
+      "en": "Every year, when my grandfather's birthday arrives, the whole family gets together to spend the day together.",
+      "tokens": [
+        {
+          "surface": "Cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "arriba",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "aniversari",
+          "lexemeId": "lx-4097"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "avi",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "tota",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "família",
+          "lexemeId": "lx-0341"
+        },
+        {
+          "surface": "es",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "reuneix",
+          "lexemeId": "lx-0360"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "passar",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "dia",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "junts",
+          "lexemeId": "lx-0131"
+        }
+      ]
+    },
+    {
+      "target": "Aquest any he comprat un llibre per al meu avi, i l'hi donaré abans de dinar.",
+      "en": "This year I've bought a book for my grandfather, and I'll give it to him before lunch.",
+      "tokens": [
+        {
+          "surface": "Aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "he",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "comprat",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "llibre",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "avi",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "donaré",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "abans",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "dinar",
+          "lexemeId": "lx-0475"
+        }
+      ]
+    },
+    {
+      "target": "A les meves cosines els he comprat unes sabates noves, i els les donaré aquesta tarda.",
+      "en": "For my cousins I've bought some new shoes, and I'll give them to them this afternoon.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "les",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "meves",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "cosines",
+          "lexemeId": "lx-0345"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "he",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "comprat",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "unes",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "sabates",
+          "lexemeId": "lx-1088"
+        },
+        {
+          "surface": "noves",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "les",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "donaré",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "tarda",
+          "lexemeId": "lx-0086"
+        }
+      ]
+    },
+    {
+      "target": "Al poble no hi ha gaires botigues, però n'hi ha una que sempre té coses boniques.",
+      "en": "There aren't many shops in the town, but there is one that always has nice things.",
+      "tokens": [
+        {
+          "surface": "Al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "poble",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "gaires",
+          "lexemeId": "lx-1040"
+        },
+        {
+          "surface": "botigues",
+          "lexemeId": "lx-0334"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "n'",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "coses",
+          "lexemeId": "lx-0076"
+        },
+        {
+          "surface": "boniques",
+          "lexemeId": "lx-0228"
+        }
+      ]
+    },
+    {
+      "target": "Si el meu avi no hagués après a cuinar de jove, avui no podríem fer aquest plat tan bo.",
+      "en": "If my grandfather hadn't learned to cook when he was young, today we wouldn't be able to make this dish so good.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "avi",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "hagués",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "après",
+          "lexemeId": "lx-0205"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "cuinar",
+          "lexemeId": "lx-0391"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "jove",
+          "lexemeId": "lx-0221"
+        },
+        {
+          "surface": "avui",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "podríem",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "fer",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "plat",
+          "lexemeId": "lx-0921"
+        },
+        {
+          "surface": "tan",
+          "lexemeId": "lx-0879"
+        },
+        {
+          "surface": "bo",
+          "lexemeId": "lx-0215"
+        }
+      ]
+    },
+    {
+      "target": "Als meus cosins els agradaria que, quan siguem grans, encara ens hi trobem tots junts cada any.",
+      "en": "My cousins would like it if, when we're grown up, we still meet all together there every year.",
+      "tokens": [
+        {
+          "surface": "Als",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "meus",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "cosins",
+          "lexemeId": "lx-0345"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "agradaria",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "siguem",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "grans",
+          "lexemeId": "lx-0217"
+        },
+        {
+          "surface": "encara",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "ens",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "trobem",
+          "lexemeId": "lx-0110"
+        },
+        {
+          "surface": "tots",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "junts",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        }
+      ]
+    },
+    {
+      "target": "Si tot surt bé, l'any que ve tornarem a fer la mateixa festa, però en un lloc més gran.",
+      "en": "If all goes well, next year we'll have the same celebration again, but in a bigger place.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "surt",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "tornarem",
+          "lexemeId": "lx-0477"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "fer",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mateixa",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "festa",
+          "lexemeId": "lx-0320"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "lloc",
+          "lexemeId": "lx-4069"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0009",
+    "lx-0010",
+    "lx-0013",
+    "lx-0020",
+    "lx-0022",
+    "lx-0023",
+    "lx-0028",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0035",
+    "lx-0036",
+    "lx-0037",
+    "lx-0038",
+    "lx-0039",
+    "lx-0040",
+    "lx-0042",
+    "lx-0043",
+    "lx-0044",
+    "lx-0046",
+    "lx-0048",
+    "lx-0050",
+    "lx-0051",
+    "lx-0053",
+    "lx-0054",
+    "lx-0055",
+    "lx-0061",
+    "lx-0062",
+    "lx-0064",
+    "lx-0067",
+    "lx-0068",
+    "lx-0076",
+    "lx-0086",
+    "lx-0096",
+    "lx-0106",
+    "lx-0107",
+    "lx-0110",
+    "lx-0118",
+    "lx-0131",
+    "lx-0168",
+    "lx-0196",
+    "lx-0197",
+    "lx-0205",
+    "lx-0209",
+    "lx-0215",
+    "lx-0217",
+    "lx-0219",
+    "lx-0221",
+    "lx-0228",
+    "lx-0248",
+    "lx-0255",
+    "lx-0257",
+    "lx-0259",
+    "lx-0265",
+    "lx-0320",
+    "lx-0334",
+    "lx-0341",
+    "lx-0342",
+    "lx-0343",
+    "lx-0345",
+    "lx-0360",
+    "lx-0391",
+    "lx-0475",
+    "lx-0477",
+    "lx-0879",
+    "lx-0921",
+    "lx-1040",
+    "lx-1088",
+    "lx-4069",
+    "lx-4097"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

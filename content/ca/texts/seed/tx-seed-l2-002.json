@@ -1,0 +1,186 @@
+{
+  "id": "tx-seed-l2-002",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Al mercat",
+  "titleEn": "At the market",
+  "sentences": [
+    {
+      "target": "Vaig al mercat cada dissabte.",
+      "en": "I go to the market every Saturday.",
+      "tokens": [
+        {
+          "surface": "Vaig",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "mercat",
+          "lexemeId": "lx-0335"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "dissabte",
+          "lexemeId": "lx-0454"
+        }
+      ]
+    },
+    {
+      "target": "Vull comprar peix i fruita fresca.",
+      "en": "I want to buy fish and fresh fruit.",
+      "tokens": [
+        {
+          "surface": "Vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "comprar",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "peix",
+          "lexemeId": "lx-0296"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "fruita",
+          "lexemeId": "lx-0293"
+        },
+        {
+          "surface": "fresca",
+          "lexemeId": "lx-2459"
+        }
+      ]
+    },
+    {
+      "target": "El venedor em serveix ràpid.",
+      "en": "The seller serves me quickly.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "venedor",
+          "lexemeId": "lx-0652"
+        },
+        {
+          "surface": "em",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "serveix",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "ràpid",
+          "lexemeId": "lx-0488"
+        }
+      ]
+    },
+    {
+      "target": "Prefereixo la fruita a la carn.",
+      "en": "I prefer fruit to meat.",
+      "tokens": [
+        {
+          "surface": "Prefereixo",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "fruita",
+          "lexemeId": "lx-0293"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "carn",
+          "lexemeId": "lx-0295"
+        }
+      ]
+    },
+    {
+      "target": "Pago amb diners i torno a casa.",
+      "en": "I pay with cash and go home.",
+      "tokens": [
+        {
+          "surface": "Pago",
+          "lexemeId": "lx-0119"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "diners",
+          "lexemeId": "lx-1041"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "torno",
+          "lexemeId": "lx-0477"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0022",
+    "lx-0028",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0041",
+    "lx-0057",
+    "lx-0060",
+    "lx-0069",
+    "lx-0118",
+    "lx-0119",
+    "lx-0191",
+    "lx-0192",
+    "lx-0293",
+    "lx-0295",
+    "lx-0296",
+    "lx-0335",
+    "lx-0454",
+    "lx-0477",
+    "lx-0488",
+    "lx-0652",
+    "lx-1041",
+    "lx-2459"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

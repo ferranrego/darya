@@ -1,0 +1,656 @@
+[
+  {
+    "target": "mur",
+    "glossEn": "wall",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El mur separa els dos jardins.",
+    "exampleEn": "The wall separates the two gardens.",
+    "tags": []
+  },
+  {
+    "target": "comte",
+    "glossEn": "count, earl",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El comte vivia al castell.",
+    "exampleEn": "The count lived in the castle.",
+    "tags": []
+  },
+  {
+    "target": "popular",
+    "glossEn": "popular",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "És un cantant molt popular.",
+    "exampleEn": "He is a very popular singer.",
+    "tags": []
+  },
+  {
+    "target": "papa",
+    "glossEn": "the Pope",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El papa va visitar Roma.",
+    "exampleEn": "The Pope visited Rome.",
+    "tags": [
+      "Religion & Beliefs"
+    ]
+  },
+  {
+    "target": "simplement",
+    "glossEn": "simply",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Simplement no ho sabia.",
+    "exampleEn": "I simply did not know it.",
+    "tags": []
+  },
+  {
+    "target": "milió",
+    "glossEn": "million",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La ciutat té més d'un milió d'habitants.",
+    "exampleEn": "The city has more than a million inhabitants.",
+    "tags": [
+      "Numbers & Quantities"
+    ]
+  },
+  {
+    "target": "contacte",
+    "glossEn": "contact",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vull mantenir el contacte amb els meus amics.",
+    "exampleEn": "I want to keep in contact with my friends.",
+    "tags": []
+  },
+  {
+    "target": "obtenir",
+    "glossEn": "to obtain, to get",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vol obtenir més informació sobre el curs.",
+    "exampleEn": "He wants to obtain more information about the course.",
+    "tags": []
+  },
+  {
+    "target": "comandant",
+    "glossEn": "commander",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El comandant va donar l'ordre d'atacar.",
+    "exampleEn": "The commander gave the order to attack.",
+    "tags": [
+      "War & Conflict"
+    ]
+  },
+  {
+    "target": "parell",
+    "glossEn": "pair, couple",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Necessito un parell de sabates noves.",
+    "exampleEn": "I need a pair of new shoes.",
+    "tags": []
+  },
+  {
+    "target": "totalment",
+    "glossEn": "totally, completely",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Estic totalment d'acord amb tu.",
+    "exampleEn": "I totally agree with you.",
+    "tags": []
+  },
+  {
+    "target": "original",
+    "glossEn": "original",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta idea és molt original.",
+    "exampleEn": "This idea is very original.",
+    "tags": []
+  },
+  {
+    "target": "oportunitat",
+    "glossEn": "opportunity",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta és una bona oportunitat de feina.",
+    "exampleEn": "This is a good job opportunity.",
+    "tags": []
+  },
+  {
+    "target": "natural",
+    "glossEn": "natural",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Prefereixo el suc natural sense sucre afegit.",
+    "exampleEn": "I prefer natural juice without added sugar.",
+    "tags": []
+  },
+  {
+    "target": "ocupar",
+    "glossEn": "to occupy, to take up",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta taula ocupa massa espai.",
+    "exampleEn": "This table takes up too much space.",
+    "tags": []
+  },
+  {
+    "target": "unitat",
+    "glossEn": "unit",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Cada unitat costa deu euros.",
+    "exampleEn": "Each unit costs ten euros.",
+    "tags": []
+  },
+  {
+    "target": "príncep",
+    "glossEn": "prince",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El príncep va néixer al palau.",
+    "exampleEn": "The prince was born in the palace.",
+    "tags": []
+  },
+  {
+    "target": "mundial",
+    "glossEn": "world, global",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Va guanyar el campionat mundial.",
+    "exampleEn": "He won the world championship.",
+    "tags": []
+  },
+  {
+    "target": "període",
+    "glossEn": "period",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vivim un període de canvis constants.",
+    "exampleEn": "We are living through a period of constant change.",
+    "tags": []
+  },
+  {
+    "target": "material",
+    "glossEn": "material, equipment",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Els soldats necessiten material nou per lluitar.",
+    "exampleEn": "The soldiers need new equipment to fight.",
+    "tags": [
+      "Materials & Substances"
+    ]
+  },
+  {
+    "target": "front",
+    "glossEn": "front (of a war, weather system)",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Els soldats van marxar cap al front.",
+    "exampleEn": "The soldiers marched off to the front.",
+    "tags": [
+      "War & Conflict"
+    ]
+  },
+  {
+    "target": "presència",
+    "glossEn": "presence",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La seva presència allà em va sorprendre.",
+    "exampleEn": "His presence there surprised me.",
+    "tags": []
+  },
+  {
+    "target": "temporada",
+    "glossEn": "season (of a show, sport)",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "M'agrada molt la nova temporada d'aquesta sèrie.",
+    "exampleEn": "I really like this show's new season.",
+    "tags": [
+      "Arts & Entertainment"
+    ]
+  },
+  {
+    "target": "presentar",
+    "glossEn": "to present, to introduce",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vull presentar el meu projecte nou.",
+    "exampleEn": "I want to present my new project.",
+    "tags": []
+  },
+  {
+    "target": "arreu",
+    "glossEn": "everywhere",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Hi ha neu arreu del país.",
+    "exampleEn": "There is snow all over the country.",
+    "tags": []
+  },
+  {
+    "target": "normal",
+    "glossEn": "normal",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Tot sembla normal avui.",
+    "exampleEn": "Everything seems normal today.",
+    "tags": []
+  },
+  {
+    "target": "secret",
+    "glossEn": "secret",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Guardava un secret des de feia anys.",
+    "exampleEn": "She had been keeping a secret for years.",
+    "tags": []
+  },
+  {
+    "target": "actual",
+    "glossEn": "current, present-day",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La situació actual és molt complicada.",
+    "exampleEn": "The current situation is very complicated.",
+    "tags": []
+  },
+  {
+    "target": "mitjançant",
+    "glossEn": "by means of, through",
+    "pos": "preposition",
+    "register": "formal",
+    "variants": [],
+    "exampleTarget": "Es van comunicar mitjançant cartes antigues.",
+    "exampleEn": "They communicated by means of old letters.",
+    "tags": []
+  },
+  {
+    "target": "esposa",
+    "glossEn": "wife",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La seva esposa treballa a l'hospital.",
+    "exampleEn": "His wife works at the hospital.",
+    "tags": [
+      "Family & Relationships"
+    ]
+  },
+  {
+    "target": "palau",
+    "glossEn": "palace",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El palau reial és molt gran.",
+    "exampleEn": "The royal palace is very big.",
+    "tags": []
+  },
+  {
+    "target": "corrent",
+    "glossEn": "common, usual",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest error és molt corrent avui en dia.",
+    "exampleEn": "This mistake is very common nowadays.",
+    "tags": []
+  },
+  {
+    "target": "tocar",
+    "glossEn": "to touch; to play (an instrument)",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "M'agrada molt tocar la guitarra clàssica.",
+    "exampleEn": "I really like playing classical guitar.",
+    "tags": []
+  },
+  {
+    "target": "origen",
+    "glossEn": "origin",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest costum té un origen molt antic.",
+    "exampleEn": "This custom has a very old origin.",
+    "tags": []
+  },
+  {
+    "target": "tropa",
+    "glossEn": "troop",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Les tropes van arribar al front de batalla.",
+    "exampleEn": "The troops arrived at the battlefront.",
+    "tags": [
+      "War & Conflict"
+    ]
+  },
+  {
+    "target": "comú",
+    "glossEn": "common, shared",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Tenim un objectiu comú per a tots.",
+    "exampleEn": "We have a common goal for everyone.",
+    "tags": []
+  },
+  {
+    "target": "dòlar",
+    "glossEn": "dollar",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Un dòlar val menys que fa anys.",
+    "exampleEn": "A dollar is worth less than it was years ago.",
+    "tags": [
+      "Money & Finance"
+    ]
+  },
+  {
+    "target": "quasi",
+    "glossEn": "almost, nearly",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Ja és quasi la una del migdia.",
+    "exampleEn": "It is almost one o'clock at noon.",
+    "tags": []
+  },
+  {
+    "target": "unió",
+    "glossEn": "union",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La unió fa la força.",
+    "exampleEn": "Union makes strength.",
+    "tags": [
+      "Society & Politics"
+    ]
+  },
+  {
+    "target": "directament",
+    "glossEn": "directly",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vine directament a casa quan surtis.",
+    "exampleEn": "Come straight home when you leave.",
+    "tags": []
+  },
+  {
+    "target": "damunt",
+    "glossEn": "on top of, above",
+    "pos": "preposition",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El llibre és damunt la taula gran.",
+    "exampleEn": "The book is on top of the big table.",
+    "tags": []
+  },
+  {
+    "target": "aspecte",
+    "glossEn": "aspect, appearance",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Té un aspecte cansat després de la feina.",
+    "exampleEn": "He looks tired after work.",
+    "tags": []
+  },
+  {
+    "target": "velocitat",
+    "glossEn": "speed",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El cotxe anava a gran velocitat per l'autopista.",
+    "exampleEn": "The car was going at high speed on the motorway.",
+    "tags": []
+  },
+  {
+    "target": "simple",
+    "glossEn": "simple",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "És una solució molt simple i eficaç.",
+    "exampleEn": "It is a very simple and effective solution.",
+    "tags": []
+  },
+  {
+    "target": "doble",
+    "glossEn": "double",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vull reservar una habitació doble per dues nits.",
+    "exampleEn": "I want to book a double room for two nights.",
+    "tags": []
+  },
+  {
+    "target": "capacitat",
+    "glossEn": "capacity, ability",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Té una gran capacitat de treball i concentració.",
+    "exampleEn": "He has a great capacity for work and concentration.",
+    "tags": []
+  },
+  {
+    "target": "premsa",
+    "glossEn": "the press (media)",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La premsa va informar de la notícia important.",
+    "exampleEn": "The press reported the important news.",
+    "tags": [
+      "Communication & Media"
+    ]
+  },
+  {
+    "target": "victòria",
+    "glossEn": "victory",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'equip va aconseguir una gran victòria ahir.",
+    "exampleEn": "The team achieved a great victory yesterday.",
+    "tags": []
+  },
+  {
+    "target": "abandonar",
+    "glossEn": "to abandon",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "No pots abandonar els teus amics ara.",
+    "exampleEn": "You cannot abandon your friends now.",
+    "tags": []
+  },
+  {
+    "target": "territori",
+    "glossEn": "territory",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Van conquerir un nou territori a l'est.",
+    "exampleEn": "They conquered new territory to the east.",
+    "tags": [
+      "Geography & Places"
+    ]
+  },
+  {
+    "target": "formar",
+    "glossEn": "to form",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Van decidir formar un grup nou de música.",
+    "exampleEn": "They decided to form a new music group.",
+    "tags": []
+  },
+  {
+    "target": "anterior",
+    "glossEn": "previous, earlier",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'any anterior vaig viatjar molt per Europa.",
+    "exampleEn": "The previous year I traveled a lot around Europe.",
+    "tags": []
+  },
+  {
+    "target": "conjunt",
+    "glossEn": "set, whole; ensemble",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El conjunt de dades és molt gran.",
+    "exampleEn": "The data set is very large.",
+    "tags": []
+  },
+  {
+    "target": "atacar",
+    "glossEn": "to attack",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'exèrcit va decidir atacar de nit.",
+    "exampleEn": "The army decided to attack at night.",
+    "tags": [
+      "War & Conflict"
+    ]
+  },
+  {
+    "target": "renda",
+    "glossEn": "income, rent",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Paga una renda mensual pel seu pis.",
+    "exampleEn": "He pays a monthly rent for his flat.",
+    "tags": [
+      "Money & Finance"
+    ]
+  },
+  {
+    "target": "enllà",
+    "glossEn": "beyond, further on",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Viu una mica més enllà del poble petit.",
+    "exampleEn": "He lives a bit further beyond the small village.",
+    "tags": []
+  },
+  {
+    "target": "exactament",
+    "glossEn": "exactly",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "No sé exactament on és casa teva.",
+    "exampleEn": "I do not know exactly where your house is.",
+    "tags": []
+  },
+  {
+    "target": "enemic",
+    "glossEn": "enemy",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'enemic ataca sempre de nit.",
+    "exampleEn": "The enemy always attacks at night.",
+    "tags": [
+      "War & Conflict"
+    ]
+  },
+  {
+    "target": "allí",
+    "glossEn": "there",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vam quedar allí fins molt tard.",
+    "exampleEn": "We stayed there until very late.",
+    "tags": []
+  },
+  {
+    "target": "excepte",
+    "glossEn": "except",
+    "pos": "preposition",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Van venir tots excepte ell.",
+    "exampleEn": "Everyone came except him.",
+    "tags": []
+  },
+  {
+    "target": "combat",
+    "glossEn": "combat, fight",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El combat va durar més d'una hora.",
+    "exampleEn": "The combat lasted more than an hour.",
+    "tags": [
+      "War & Conflict"
+    ]
+  },
+  {
+    "target": "educació",
+    "glossEn": "education",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'educació és un dret fonamental per a tots.",
+    "exampleEn": "Education is a fundamental right for everyone.",
+    "tags": [
+      "Education & Learning"
+    ]
+  }
+]

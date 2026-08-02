@@ -44,7 +44,7 @@ import { contentRoot, targetLang } from "./content-path.ts";
 
 export interface BeginnerSpec {
   closedClasses: Record<string, string[]>;
-  semanticFields: Record<string, { min: number; seed: string[] }>;
+  semanticFields: Record<string, { min: number; seed: string[]; tag?: string }>;
   verbFunctions: Record<string, string[]>;
   descriptiveDimensions: Record<string, string[]>;
 }
@@ -151,16 +151,31 @@ function main() {
 
   // --- semantic fields: seeds present, and the field big enough ---------------
   const thin: string[] = [];
-  for (const [field, { min, seed }] of Object.entries(spec.semanticFields)) {
+  const allTags = new Set(entries.flatMap((e) => e.tags));
+  for (const [field, { min, seed, tag }] of Object.entries(spec.semanticFields)) {
     const missing = seed.filter((w) => !usable(w));
     required += seed.length;
     met += seed.length - missing.length;
     if (missing.length) gaps.push({ where: `field ${field}`, missing });
 
-    // Beyond the named seeds, the field has to have some breadth.
-    const inField = entries.filter((e) => e.tags.includes(field) && isTeachable(e)).length;
-    const covered = Math.max(inField, seed.length - missing.length);
-    if (covered < min) thin.push(`${field}: ${covered} of ${min}`);
+    // Beyond the named seeds, the field has to have some breadth - but only
+    // where a real lexicon tag exists to measure it against. `field` names a
+    // spec category, `tag` (when different) is the actual tag content was
+    // themed with; for `Body & Health` those differ (`Body & Anatomy`).
+    //
+    // Checking `entries.tags.includes(field)` directly made this a dead check
+    // for 7 of 17 fields, in both languages: min was set equal to seed.length
+    // everywhere, so it could never fail, and the field-name mismatch meant
+    // `inField` was silently 0 regardless. Rather than invent a tag for fields
+    // no tagging pass has ever touched (Objects & Tools, Nature & Environment,
+    // Leisure & Culture), those fall back to seed-only verification, which is
+    // the honest state: nothing broader has been asserted about them yet.
+    const lookupTag = tag ?? field;
+    if (allTags.has(lookupTag)) {
+      const inField = entries.filter((e) => e.tags.includes(lookupTag) && isTeachable(e)).length;
+      const covered = Math.max(inField, seed.length - missing.length);
+      if (covered < min) thin.push(`${field}: ${covered} of ${min}`);
+    }
   }
   if (thin.length) gaps.push({ where: "fields below their minimum", missing: thin });
 

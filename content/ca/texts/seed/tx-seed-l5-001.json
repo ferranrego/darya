@@ -1,0 +1,549 @@
+{
+  "id": "tx-seed-l5-001",
+  "formatVersion": "1.5.0",
+  "level": "L5",
+  "titleTarget": "Si tingués més temps",
+  "titleEn": "If I had more time",
+  "sentences": [
+    {
+      "target": "Si tingués més temps, aquest estiu viatjaria per tot el país sense cap pressa.",
+      "en": "If I had more time, this summer I would travel around the whole country without any hurry.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "tingués",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "temps",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "viatjaria",
+          "lexemeId": "lx-0572"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "país",
+          "lexemeId": "lx-0095"
+        },
+        {
+          "surface": "sense",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "cap",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "pressa",
+          "lexemeId": "lx-4120"
+        }
+      ]
+    },
+    {
+      "target": "M'agradaria conèixer gent nova, aprendre coses diferents i veure llocs que no conec.",
+      "en": "I would like to meet new people, learn different things and see places I don't know.",
+      "tokens": [
+        {
+          "surface": "M'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agradaria",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "conèixer",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "gent",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "nova",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "aprendre",
+          "lexemeId": "lx-0205"
+        },
+        {
+          "surface": "coses",
+          "lexemeId": "lx-0076"
+        },
+        {
+          "surface": "diferents",
+          "lexemeId": "lx-4172"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "veure",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "llocs",
+          "lexemeId": "lx-4069"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "conec",
+          "lexemeId": "lx-0361"
+        }
+      ]
+    },
+    {
+      "target": "Quan era jove, no tenia prou diners per viatjar gaire lluny de casa.",
+      "en": "When I was young, I didn't have enough money to travel very far from home.",
+      "tokens": [
+        {
+          "surface": "Quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "era",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "jove",
+          "lexemeId": "lx-0221"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "tenia",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "prou",
+          "lexemeId": "lx-0269"
+        },
+        {
+          "surface": "diners",
+          "lexemeId": "lx-1041"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "viatjar",
+          "lexemeId": "lx-0572"
+        },
+        {
+          "surface": "gaire",
+          "lexemeId": "lx-1040"
+        },
+        {
+          "surface": "lluny",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    },
+    {
+      "target": "L'any passat, per fi, vaig estalviar prou per anar una setmana llarga a la muntanya.",
+      "en": "Last year, at last, I saved enough to go to the mountains for a long week.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "passat",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "fi",
+          "lexemeId": "lx-4145"
+        },
+        {
+          "surface": "vaig",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "estalviar",
+          "lexemeId": "lx-1048"
+        },
+        {
+          "surface": "prou",
+          "lexemeId": "lx-0269"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "anar",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "setmana",
+          "lexemeId": "lx-0339"
+        },
+        {
+          "surface": "llarga",
+          "lexemeId": "lx-0224"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "muntanya",
+          "lexemeId": "lx-0322"
+        }
+      ]
+    },
+    {
+      "target": "Si pogués decidir el lloc jo mateix, aniria a un poble tranquil molt a prop del mar.",
+      "en": "If I could decide the place myself, I would go to a quiet town very close to the sea.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "pogués",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "decidir",
+          "lexemeId": "lx-0783"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "lloc",
+          "lexemeId": "lx-4069"
+        },
+        {
+          "surface": "jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "mateix",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "aniria",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "poble",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "tranquil",
+          "lexemeId": "lx-2181"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "prop",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "mar",
+          "lexemeId": "lx-0323"
+        }
+      ]
+    },
+    {
+      "target": "Espero que l'any que ve, si tot va bé, pugui fer per fi aquest viatge tan esperat.",
+      "en": "I hope that next year, if all goes well, I can finally take this long-awaited trip.",
+      "tokens": [
+        {
+          "surface": "Espero",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "pugui",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "fer",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "fi",
+          "lexemeId": "lx-4145"
+        },
+        {
+          "surface": "aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "viatge",
+          "lexemeId": "lx-0556"
+        },
+        {
+          "surface": "tan",
+          "lexemeId": "lx-0879"
+        },
+        {
+          "surface": "esperat",
+          "lexemeId": "lx-0211"
+        }
+      ]
+    },
+    {
+      "target": "Quan hi vagi, penso quedar-m'hi més d'una setmana per descansar bé.",
+      "en": "When I go there, I plan to stay more than a week to rest well.",
+      "tokens": [
+        {
+          "surface": "Quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "vagi",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "penso",
+          "lexemeId": "lx-0111"
+        },
+        {
+          "surface": "quedar",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "m'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "setmana",
+          "lexemeId": "lx-0339"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "descansar",
+          "lexemeId": "lx-0753"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0007",
+    "lx-0013",
+    "lx-0020",
+    "lx-0023",
+    "lx-0024",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0035",
+    "lx-0037",
+    "lx-0038",
+    "lx-0039",
+    "lx-0040",
+    "lx-0042",
+    "lx-0046",
+    "lx-0048",
+    "lx-0050",
+    "lx-0052",
+    "lx-0053",
+    "lx-0054",
+    "lx-0055",
+    "lx-0057",
+    "lx-0058",
+    "lx-0064",
+    "lx-0067",
+    "lx-0069",
+    "lx-0073",
+    "lx-0076",
+    "lx-0077",
+    "lx-0083",
+    "lx-0095",
+    "lx-0107",
+    "lx-0108",
+    "lx-0111",
+    "lx-0139",
+    "lx-0165",
+    "lx-0166",
+    "lx-0168",
+    "lx-0196",
+    "lx-0205",
+    "lx-0209",
+    "lx-0211",
+    "lx-0219",
+    "lx-0221",
+    "lx-0224",
+    "lx-0240",
+    "lx-0269",
+    "lx-0322",
+    "lx-0323",
+    "lx-0339",
+    "lx-0342",
+    "lx-0361",
+    "lx-0556",
+    "lx-0572",
+    "lx-0753",
+    "lx-0783",
+    "lx-0879",
+    "lx-1040",
+    "lx-1041",
+    "lx-1048",
+    "lx-2181",
+    "lx-4069",
+    "lx-4120",
+    "lx-4145",
+    "lx-4172"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

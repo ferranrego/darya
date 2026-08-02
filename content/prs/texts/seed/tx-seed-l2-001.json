@@ -1,6 +1,6 @@
 {
   "id": "tx-seed-l2-001",
-  "formatVersion": "1.3.0",
+  "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "بازار",
   "titleTranslit": "bāzār",
@@ -141,6 +141,7 @@
     "lx-0142",
     "lx-0205"
   ],
+  "newWords": [],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z"

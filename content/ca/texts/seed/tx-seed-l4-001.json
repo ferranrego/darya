@@ -1,0 +1,361 @@
+{
+  "id": "tx-seed-l4-001",
+  "formatVersion": "1.5.0",
+  "level": "L4",
+  "titleTarget": "El meu somni de viatjar",
+  "titleEn": "My dream of traveling",
+  "sentences": [
+    {
+      "target": "M'agradaria viatjar més i conèixer llocs nous cada any.",
+      "en": "I would like to travel more and get to know new places every year.",
+      "tokens": [
+        {
+          "surface": "M'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agradaria",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "viatjar",
+          "lexemeId": "lx-0572"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "conèixer",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "llocs",
+          "lexemeId": "lx-4069"
+        },
+        {
+          "surface": "nous",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        }
+      ]
+    },
+    {
+      "target": "Vull que la meva família vingui amb mi al viatge que ve.",
+      "en": "I want my family to come with me on the next trip.",
+      "tokens": [
+        {
+          "surface": "Vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "família",
+          "lexemeId": "lx-0341"
+        },
+        {
+          "surface": "vingui",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "mi",
+          "lexemeId": "lx-4057"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "viatge",
+          "lexemeId": "lx-0556"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        }
+      ]
+    },
+    {
+      "target": "Caldria estalviar una mica de diners cada mes per fer-ho.",
+      "en": "I would need to save a bit of money each month to do it.",
+      "tokens": [
+        {
+          "surface": "Caldria",
+          "lexemeId": "lx-0193"
+        },
+        {
+          "surface": "estalviar",
+          "lexemeId": "lx-1048"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "mica",
+          "lexemeId": "lx-4106"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "diners",
+          "lexemeId": "lx-1041"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "mes",
+          "lexemeId": "lx-0340"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "fer",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "ho",
+          "lexemeId": "lx-0014"
+        }
+      ]
+    },
+    {
+      "target": "El meu fill espera que arribin aviat les vacances d'estiu.",
+      "en": "My son hopes the summer holidays arrive soon.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "fill",
+          "lexemeId": "lx-0091"
+        },
+        {
+          "surface": "espera",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "arribin",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "aviat",
+          "lexemeId": "lx-0163"
+        },
+        {
+          "surface": "les",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "vacances",
+          "lexemeId": "lx-1002"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        }
+      ]
+    },
+    {
+      "target": "Tot caminant per la platja, penso en tots els llocs que voldria veure.",
+      "en": "While walking along the beach, I think about all the places I would like to see.",
+      "tokens": [
+        {
+          "surface": "Tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "caminant",
+          "lexemeId": "lx-0201"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "platja",
+          "lexemeId": "lx-0321"
+        },
+        {
+          "surface": "penso",
+          "lexemeId": "lx-0111"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "tots",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "llocs",
+          "lexemeId": "lx-4069"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "voldria",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "veure",
+          "lexemeId": "lx-0058"
+        }
+      ]
+    },
+    {
+      "target": "Voldria conèixer una ciutat nova l'any que ve.",
+      "en": "I would like to get to know a new city next year.",
+      "tokens": [
+        {
+          "surface": "Voldria",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "conèixer",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "nova",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0014",
+    "lx-0022",
+    "lx-0028",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0035",
+    "lx-0036",
+    "lx-0040",
+    "lx-0041",
+    "lx-0042",
+    "lx-0043",
+    "lx-0044",
+    "lx-0046",
+    "lx-0050",
+    "lx-0053",
+    "lx-0058",
+    "lx-0060",
+    "lx-0067",
+    "lx-0091",
+    "lx-0093",
+    "lx-0106",
+    "lx-0111",
+    "lx-0139",
+    "lx-0163",
+    "lx-0193",
+    "lx-0196",
+    "lx-0201",
+    "lx-0209",
+    "lx-0211",
+    "lx-0219",
+    "lx-0248",
+    "lx-0321",
+    "lx-0340",
+    "lx-0341",
+    "lx-0361",
+    "lx-0556",
+    "lx-0572",
+    "lx-1002",
+    "lx-1041",
+    "lx-1048",
+    "lx-4057",
+    "lx-4069",
+    "lx-4106"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

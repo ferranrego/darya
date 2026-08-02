@@ -1,6 +1,6 @@
 {
   "id": "tx-seed-l1-001",
-  "formatVersion": "1.4.0",
+  "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "La casa",
   "titleEn": "The house",
@@ -121,6 +121,7 @@
     "lx-0218",
     "lx-0330"
   ],
+  "newWords": [],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z"

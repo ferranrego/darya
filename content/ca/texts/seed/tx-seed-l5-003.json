@@ -1,0 +1,410 @@
+{
+  "id": "tx-seed-l5-003",
+  "formatVersion": "1.5.0",
+  "level": "L5",
+  "titleTarget": "La feina que voldria tenir",
+  "titleEn": "The job I would like to have",
+  "sentences": [
+    {
+      "target": "Si pogués decidir la meva feina, treballaria en un lloc tranquil vora el mar.",
+      "en": "If I could choose my job, I would work in a quiet place by the sea.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "pogués",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "decidir",
+          "lexemeId": "lx-0783"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "treballaria",
+          "lexemeId": "lx-0105"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "lloc",
+          "lexemeId": "lx-4069"
+        },
+        {
+          "surface": "tranquil",
+          "lexemeId": "lx-2181"
+        },
+        {
+          "surface": "vora",
+          "lexemeId": "lx-1938"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "mar",
+          "lexemeId": "lx-0323"
+        }
+      ]
+    },
+    {
+      "target": "M'agradaria tenir un cap que escoltés les idees de tothom a l'equip.",
+      "en": "I would like to have a boss who listened to everyone's ideas on the team.",
+      "tokens": [
+        {
+          "surface": "M'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agradaria",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "tenir",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "cap",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "escoltés",
+          "lexemeId": "lx-0115"
+        },
+        {
+          "surface": "les",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "idees",
+          "lexemeId": "lx-0662"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "tothom",
+          "lexemeId": "lx-0149"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "equip",
+          "lexemeId": "lx-0832"
+        }
+      ]
+    },
+    {
+      "target": "Quan era estudiant, pensava que seria fàcil trobar una feina bona.",
+      "en": "When I was a student, I thought it would be easy to find a good job.",
+      "tokens": [
+        {
+          "surface": "Quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "era",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "estudiant",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "pensava",
+          "lexemeId": "lx-0111"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "seria",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fàcil",
+          "lexemeId": "lx-0226"
+        },
+        {
+          "surface": "trobar",
+          "lexemeId": "lx-0110"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "bona",
+          "lexemeId": "lx-0215"
+        }
+      ]
+    },
+    {
+      "target": "Ara sé que cal treballar molt per aconseguir allò que es vol.",
+      "en": "Now I know you have to work hard to get what you want.",
+      "tokens": [
+        {
+          "surface": "Ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "sé",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "cal",
+          "lexemeId": "lx-0193"
+        },
+        {
+          "surface": "treballar",
+          "lexemeId": "lx-0105"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "aconseguir",
+          "lexemeId": "lx-0756"
+        },
+        {
+          "surface": "allò",
+          "lexemeId": "lx-0872"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "es",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "vol",
+          "lexemeId": "lx-1007"
+        }
+      ]
+    },
+    {
+      "target": "Si tingués una altra opció, canviaria de feina l'any que ve.",
+      "en": "If I had another option, I would change jobs next year.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "tingués",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "altra",
+          "lexemeId": "lx-0027"
+        },
+        {
+          "surface": "opció",
+          "lexemeId": "lx-2030"
+        },
+        {
+          "surface": "canviaria",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        }
+      ]
+    },
+    {
+      "target": "Espero que la feina següent sigui millor que aquesta i que arribi aviat.",
+      "en": "I hope the next job is better than this one and that it comes soon.",
+      "tokens": [
+        {
+          "surface": "Espero",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "següent",
+          "lexemeId": "lx-4252"
+        },
+        {
+          "surface": "sigui",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "millor",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "arribi",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "aviat",
+          "lexemeId": "lx-0163"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0007",
+    "lx-0009",
+    "lx-0020",
+    "lx-0027",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0035",
+    "lx-0036",
+    "lx-0037",
+    "lx-0038",
+    "lx-0040",
+    "lx-0042",
+    "lx-0044",
+    "lx-0048",
+    "lx-0052",
+    "lx-0054",
+    "lx-0055",
+    "lx-0059",
+    "lx-0064",
+    "lx-0067",
+    "lx-0080",
+    "lx-0083",
+    "lx-0105",
+    "lx-0106",
+    "lx-0110",
+    "lx-0111",
+    "lx-0115",
+    "lx-0149",
+    "lx-0163",
+    "lx-0188",
+    "lx-0193",
+    "lx-0196",
+    "lx-0209",
+    "lx-0211",
+    "lx-0215",
+    "lx-0226",
+    "lx-0248",
+    "lx-0254",
+    "lx-0310",
+    "lx-0323",
+    "lx-0662",
+    "lx-0756",
+    "lx-0783",
+    "lx-0832",
+    "lx-0872",
+    "lx-1007",
+    "lx-1938",
+    "lx-2030",
+    "lx-2181",
+    "lx-4069",
+    "lx-4252"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

@@ -37,8 +37,7 @@
         2,
         3,
         4,
-        5,
-        6
+        5
       ],
       "entryKnownWords": 500,
       "sentenceRange": [
@@ -56,7 +55,7 @@
         "prepositions a, de, en, amb, per, sense, fins",
         "Catalan has no Spanish-style personal a with a plain direct object: write 'veig la Maria', never 'veig a la Maria'. But do keep the a where the verb governs it (trucar a algú, telefonar a algú) and before a strong personal pronoun ('et veig a tu')"
       ],
-      "avgSentenceWords": 5,
+      "avgSentenceWords": 6,
       "available": true
     },
     {
@@ -166,7 +165,7 @@
         8,
         9
       ],
-      "entryKnownWords": 2941,
+      "entryKnownWords": 2986,
       "sentenceRange": [
         6,
         9
@@ -197,7 +196,7 @@
         8,
         9
       ],
-      "entryKnownWords": 3381,
+      "entryKnownWords": 3471,
       "sentenceRange": [
         7,
         10
@@ -227,7 +226,7 @@
         9,
         10
       ],
-      "entryKnownWords": 3822,
+      "entryKnownWords": 3957,
       "sentenceRange": [
         8,
         12

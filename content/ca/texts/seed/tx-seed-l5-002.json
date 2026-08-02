@@ -1,0 +1,510 @@
+{
+  "id": "tx-seed-l5-002",
+  "formatVersion": "1.5.0",
+  "level": "L5",
+  "titleTarget": "Una amistat de tota la vida",
+  "titleEn": "A lifelong friendship",
+  "sentences": [
+    {
+      "target": "Fa més de vint anys que conec la meva millor amiga.",
+      "en": "I've known my best friend for more than twenty years.",
+      "tokens": [
+        {
+          "surface": "Fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "vint",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "anys",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "conec",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "millor",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "amiga",
+          "lexemeId": "lx-0909"
+        }
+      ]
+    },
+    {
+      "target": "Quan érem petites, vivíem al mateix carrer i jugàvem juntes cada tarda després de l'escola.",
+      "en": "When we were little, we lived on the same street and played together every afternoon after school.",
+      "tokens": [
+        {
+          "surface": "Quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "érem",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petites",
+          "lexemeId": "lx-0218"
+        },
+        {
+          "surface": "vivíem",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "mateix",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "carrer",
+          "lexemeId": "lx-0094"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "jugàvem",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "juntes",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "tarda",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "després",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "escola",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "Si no ens haguéssim conegut de petites, la meva vida seria avui molt diferent.",
+      "en": "If we hadn't met as children, my life would be very different today.",
+      "tokens": [
+        {
+          "surface": "Si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "ens",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "haguéssim",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "conegut",
+          "lexemeId": "lx-3824"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "petites",
+          "lexemeId": "lx-0218"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "vida",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "seria",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "avui",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "diferent",
+          "lexemeId": "lx-4172"
+        }
+      ]
+    },
+    {
+      "target": "Ella sempre deia que volia viure a la ciutat, i finalment, fa uns anys, ho va fer.",
+      "en": "She always said she wanted to live in the city, and finally, a few years ago, she did it.",
+      "tokens": [
+        {
+          "surface": "Ella",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "deia",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "volia",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "viure",
+          "lexemeId": "lx-0104"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "finalment",
+          "lexemeId": "lx-0689"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "uns",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "anys",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "ho",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "fer",
+          "lexemeId": "lx-0053"
+        }
+      ]
+    },
+    {
+      "target": "Ara, si tinguéssim algun problema greu, sé que em trucaria de seguida.",
+      "en": "Now, if we had any serious problem, I know she would call me right away.",
+      "tokens": [
+        {
+          "surface": "Ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "tinguéssim",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "algun",
+          "lexemeId": "lx-0856"
+        },
+        {
+          "surface": "problema",
+          "lexemeId": "lx-1019"
+        },
+        {
+          "surface": "greu",
+          "lexemeId": "lx-4091"
+        },
+        {
+          "surface": "sé",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "em",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "trucaria",
+          "lexemeId": "lx-0187"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "seguida",
+          "lexemeId": "lx-1225"
+        }
+      ]
+    },
+    {
+      "target": "M'agradaria que passéssim més temps juntes, com quan totes dues érem joves.",
+      "en": "I would like us to spend more time together, like when we were both young.",
+      "tokens": [
+        {
+          "surface": "M'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agradaria",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "passéssim",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "temps",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "juntes",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "com",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "totes",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "dues",
+          "lexemeId": "lx-0270"
+        },
+        {
+          "surface": "érem",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "joves",
+          "lexemeId": "lx-0221"
+        }
+      ]
+    },
+    {
+      "target": "L'estiu que ve, espero que vinguem juntes a la muntanya com cada any.",
+      "en": "Next summer, I hope we come together to the mountains like every year.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "espero",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "vinguem",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "juntes",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "muntanya",
+          "lexemeId": "lx-0322"
+        },
+        {
+          "surface": "com",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0020",
+    "lx-0022",
+    "lx-0028",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0035",
+    "lx-0037",
+    "lx-0038",
+    "lx-0039",
+    "lx-0045",
+    "lx-0046",
+    "lx-0048",
+    "lx-0050",
+    "lx-0052",
+    "lx-0053",
+    "lx-0054",
+    "lx-0056",
+    "lx-0057",
+    "lx-0059",
+    "lx-0060",
+    "lx-0062",
+    "lx-0067",
+    "lx-0072",
+    "lx-0073",
+    "lx-0086",
+    "lx-0093",
+    "lx-0094",
+    "lx-0099",
+    "lx-0104",
+    "lx-0107",
+    "lx-0131",
+    "lx-0139",
+    "lx-0168",
+    "lx-0174",
+    "lx-0187",
+    "lx-0196",
+    "lx-0200",
+    "lx-0209",
+    "lx-0211",
+    "lx-0218",
+    "lx-0221",
+    "lx-0243",
+    "lx-0248",
+    "lx-0254",
+    "lx-0256",
+    "lx-0257",
+    "lx-0259",
+    "lx-0270",
+    "lx-0322",
+    "lx-0361",
+    "lx-0689",
+    "lx-0856",
+    "lx-0909",
+    "lx-1019",
+    "lx-1225",
+    "lx-3824",
+    "lx-4091",
+    "lx-4172"
+  ],
+  "newWords": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z"
+}

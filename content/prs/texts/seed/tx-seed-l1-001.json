@@ -1,6 +1,6 @@
 {
   "id": "tx-seed-l1-001",
-  "formatVersion": "1.3.0",
+  "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "خانه ما",
   "titleTranslit": "khāna-ye mā",
@@ -140,6 +140,7 @@
     "lx-0089",
     "lx-0096"
   ],
+  "newWords": [],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z"
