@@ -11,11 +11,19 @@
  * "El gos menja carn" and "Quant costa la poma?" could not be written at the
  * level they belong to.
  *
- * The fix is additive rather than a re-ranking: this tags the curated list in
- * `content/<lang>/lexicon/beginner-core.txt`, and the generator lets the first
- * two levels teach anything so tagged. `freqRank` is untouched, because it is
- * correct and every level above L2 depends on it, and the tag does not make a
- * word count as already known - it makes it *teachable early*.
+ * The fix is additive rather than a re-ranking: this tags what
+ * `content/<lang>/lexicon/beginner-spec.json` requires, and the generator lets
+ * the first two levels teach anything so tagged. `freqRank` is untouched,
+ * because it is correct and every level above L2 depends on it, and the tag
+ * does not make a word count as already known - it makes it *teachable early*.
+ *
+ * The source is the spec rather than the old hand-written `beginner-core.txt`,
+ * so the tag is a *consequence* of the requirements instead of a second list
+ * kept in step with them by hand. The two had already drifted: the list was
+ * missing every subject pronoun, every possessive, every demonstrative, ten of
+ * twelve position words and fifteen numbers, because a list written from
+ * memory has holes shaped like whatever the writer forgot. The spec states
+ * what coverage *means*, and `verify-beginner-core.ts` can falsify it.
  *
  * Usage: node scripts/tag-beginner-core.ts --lang ca [--apply]
  */
@@ -28,11 +36,21 @@ import { isTeachable } from "../src/lib/content/teachability.ts";
 import { buildLexiconIndex as buildCa } from "../src/lib/lang/ca/lexicon-index.ts";
 import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
+import { readSpec, specWords } from "./verify-beginner-core.ts";
 
 export const BEGINNER_CORE_TAG = "beginner-core";
 
-/** Headwords from the curated list, comments and blanks dropped. */
+/**
+ * Every requirement the spec states, verbatim.
+ *
+ * Multi-word requirements (`hi ha`, Dari compound verbs like `گپ زدن`) are left
+ * whole here; the caller decides whether they resolve as one entry or have to
+ * be split into components. Falls back to the superseded `beginner-core.txt`
+ * only if no spec exists for the language.
+ */
 export function readBeginnerCore(root: string): string[] {
+  const spec = readSpec(root);
+  if (spec) return [...new Set(specWords(spec))];
   const path = join(root, "lexicon", "beginner-core.txt");
   if (!existsSync(path)) return [];
   return readFileSync(path, "utf8")
@@ -52,10 +70,18 @@ function main() {
   const entries: LexiconEntry[] = file.entries;
   const index = lang === "ca" ? buildCa(entries) : buildPrs(entries);
 
-  const wanted = readBeginnerCore(root);
   const missing: string[] = [];
   const unteachable: string[] = [];
   const hit = new Set<string>();
+
+  // Resolve the whole requirement before splitting it. `خدا حافظ` and
+  // `فریاد زدن` are single lexicon entries, so splitting first reported their
+  // second halves as absent words that never needed to exist.
+  const wanted: string[] = [];
+  for (const req of readBeginnerCore(root)) {
+    if (index.resolve(req) || !req.includes(" ")) wanted.push(req);
+    else wanted.push(...req.split(/\s+/).filter(Boolean));
+  }
 
   for (const word of wanted) {
     const entry = index.resolve(word);

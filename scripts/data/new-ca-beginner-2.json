@@ -1,0 +1,172 @@
+[
+  {
+    "target": "amunt",
+    "glossEn": "up, upwards",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El gat va pujar amunt.",
+    "exampleEn": "The cat climbed up.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "avall",
+    "glossEn": "down, downwards",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Va mirar avall des de la finestra.",
+    "exampleEn": "They looked down from the window.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "enrere",
+    "glossEn": "back, backwards",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Va fer un pas enrere.",
+    "exampleEn": "They took a step back.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "dreta",
+    "glossEn": "right, right-hand side",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La botiga és a la dreta.",
+    "exampleEn": "The shop is on the right.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "tercer",
+    "glossEn": "third",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Viuen al tercer pis.",
+    "exampleEn": "They live on the third floor.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "gras",
+    "glossEn": "fat",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El gat és molt gras.",
+    "exampleEn": "The cat is very fat.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "pesat",
+    "glossEn": "heavy",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest llibre és molt pesat.",
+    "exampleEn": "This book is very heavy.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "lleuger",
+    "glossEn": "light, not heavy",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El meu paquet és lleuger.",
+    "exampleEn": "My package is light.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "tebi",
+    "glossEn": "lukewarm",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El cafè està tebi.",
+    "exampleEn": "The coffee is lukewarm.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "dur",
+    "glossEn": "hard, tough",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest pa és molt dur.",
+    "exampleEn": "This bread is very hard.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "tou",
+    "glossEn": "soft",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El llit és molt tou.",
+    "exampleEn": "The bed is very soft.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "buit",
+    "glossEn": "empty",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El got és buit.",
+    "exampleEn": "The glass is empty.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "fosc",
+    "glossEn": "dark",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El carrer és fosc a la nit.",
+    "exampleEn": "The street is dark at night.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "dolç",
+    "glossEn": "sweet",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest pastís és molt dolç.",
+    "exampleEn": "This cake is very sweet.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "amarg",
+    "glossEn": "bitter",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest cafè és amarg.",
+    "exampleEn": "This coffee is bitter.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "fals",
+    "glossEn": "false, fake",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El document és fals.",
+    "exampleEn": "The document is fake.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "roig",
+    "glossEn": "red (Western and Valencian variant of vermell)",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El cel és roig al capvespre.",
+    "exampleEn": "The sky is red at dusk.",
+    "tags": ["beginner-core", "Colors & Shapes"]
+  }
+]

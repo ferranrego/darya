@@ -63,6 +63,36 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
     }
   }
 
+  // Pass 2b: variant infinitives conjugate too.
+  //
+  // `نوشیدن` is listed as a variant of the headword `آشامیدن`, so it resolved
+  // as a bare infinitive and nothing else: a text saying `می‌نوشم` - the
+  // ordinary way to say "I drink" - left the learner tapping a word the reader
+  // could not gloss. The paradigm was only ever built from `targetNormalized`.
+  //
+  // The present stem cannot be taken from the headword (آشام is not نوش), but
+  // `-یدن` verbs form it by dropping that suffix, which is regular: نوشیدن→نوش,
+  // خریدن→خر, رسیدن→رس, پرسیدن→پرس. Anything else contributes past-tense forms
+  // only, which is still better than none. Lowest precedence and first-write-
+  // wins, as in pass 2, so this can never displace an authored headword.
+  for (const entry of entries) {
+    if (entry.pos !== "verb") continue;
+    for (const variant of entry.variants) {
+      const inf = variant.trim().split(" ").at(-1)!;
+      if (!/(دن|تن)$/.test(inf) || simpleVerbKeys.has(matchKey(inf))) continue;
+      const pastStem = derivePastStem(inf);
+      if (!pastStem) continue;
+      const stems: VerbStems = {
+        pastStem,
+        presentStem: inf.endsWith("یدن") ? inf.slice(0, -3) : null,
+      };
+      for (const surface of conjugationSurfaces(stems)) {
+        const key = matchKey(surface);
+        if (!conjugations.has(key)) conjugations.set(key, entry);
+      }
+    }
+  }
+
   // Pass 3: suppletive forms (بودن's هست/باشم, impersonal می‌توان) - not
   // derivable from any stem pair, so they are authored in SUPPLETIVE_FORMS.
   // Registered last and into the same lowest-precedence bucket, so a generated

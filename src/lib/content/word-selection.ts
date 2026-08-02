@@ -32,6 +32,14 @@ const MAX_NOUN_SHARE = 0.55;
 const MAX_TARGETS = 8;
 const MIN_TARGETS = 2;
 
+/**
+ * Beginner levels get a higher ceiling than everyone else, which sounds
+ * backwards and is not: their new words are `gos`, `poma`, `blau`, `taula`, and
+ * a sentence built entirely from picturable words carries more of them than a
+ * B2 sentence carries abstractions.
+ */
+const BEGINNER_MAX_TARGETS = 10;
+
 /** Deterministic PRNG so a seeded selection can be asserted in a test. */
 function mulberry32(seed: number): () => number {
   let a = seed >>> 0;
@@ -71,13 +79,18 @@ export function targetCountFor(level: Level, newWordRatio: number): number {
   const midSentences = (level.sentenceRange[0] + level.sentenceRange[1]) / 2;
 
   // At a beginner level the text is a set of independent useful sentences, so
-  // the natural unit is one new word per sentence - which is both the most a
-  // short sentence can carry and the most a beginner can absorb from it.
+  // the unit is the sentence rather than the token ratio. Two new words per
+  // sentence, because at this level every one of them is concrete: *El gos
+  // menja molta carn* teaches four at once and is **easier** than a sentence
+  // teaching one, since all of it is picturable. Difficulty at A1 comes from
+  // abstraction and syntax, not from the count.
   //
-  // The ratio is the wrong instrument there. Its whole 0.02-0.25 range collapsed
+  // The ratio is the wrong instrument here. Its whole 0.02-0.25 range collapsed
   // to two or three words at L1 and L2, because `expectedTokens` is 12.5, so the
   // setting was inert at exactly the levels where new vocabulary matters most.
-  if (isBeginnerLevel(level)) return Math.round(midSentences);
+  if (isBeginnerLevel(level)) {
+    return Math.max(MIN_TARGETS, Math.min(BEGINNER_MAX_TARGETS, Math.round(midSentences * 2)));
+  }
 
   const expectedTokens = midSentences * level.avgSentenceWords;
   return Math.max(MIN_TARGETS, Math.min(MAX_TARGETS, Math.round(expectedTokens * newWordRatio)));
@@ -133,6 +146,14 @@ export function teachablePool(
   );
 }
 
+/**
+ * Words that carry meaning, as opposed to the closed classes that hold a
+ * sentence together. A learner is *taught* these; they absorb `de` and `el`
+ * from every sentence that uses one.
+ */
+const CONTENT_POS = new Set(["noun", "verb", "adjective", "adverb"]);
+const isContentWord = (e: LexiconEntry) => CONTENT_POS.has(e.pos);
+
 const isNoun = (e: LexiconEntry) => e.pos === "noun";
 const isVerb = (e: LexiconEntry) => e.pos === "verb";
 const isModifier = (e: LexiconEntry) => e.pos === "adjective" || e.pos === "adverb";
@@ -173,13 +194,37 @@ export function selectTargets({
   if (count <= 0 || candidates.length === 0) return [];
   const rand = mulberry32(seed ?? (Math.random() * 2 ** 32) >>> 0);
 
-  const rank = (e: LexiconEntry) =>
-    preferBeginnerCore && e.tags.includes(BEGINNER_CORE_TAG) ? e.freqRank - 1e6 : e.freqRank;
+  // Within the beginner core, prefer words worth *teaching*.
+  //
+  // The core covers closed classes too, because a beginner needs `el`, `de`,
+  // `amb` and `que` - but it needs them as the mortar of a sentence, not as
+  // vocabulary cards. Ranking the whole core equally made pre-A1 teach
+  // `ser, la, no, amb, es, què, pel`: seven of ten slots spent on function
+  // words at rank 1-40, crowding out `gos`, `poma` and `casa`, which is the
+  // exact failure the core was introduced to fix. Closed-class members are
+  // still boosted over non-core words, just behind the content words.
+  const rank = (e: LexiconEntry) => {
+    if (!preferBeginnerCore || !e.tags.includes(BEGINNER_CORE_TAG)) return e.freqRank;
+    return e.freqRank - (isContentWord(e) ? 2e6 : 1e6);
+  };
   const byRank = [...candidates].sort((a, b) => rank(a) - rank(b));
+
   // Draw the bulk from a frequency-ordered head rather than the whole tail, so
   // the words taught stay the most useful ones available, then shuffle inside
   // that head so consecutive texts at one level do not repeat.
-  const pool = shuffle(byRank.slice(0, Math.max(count * 6, 40)), rand);
+  //
+  // At a beginner level the head is the wrong pool. Ordering the core by corpus
+  // frequency and taking the top 60 reaches `home, parlar, pensar, moment,
+  // també` and never `gos` (rank 1546), `poma` (1468) or `taula` (1161) - which
+  // is the premise of the core restated as a bug: frequency in text is not what
+  // a beginner needs first, so it must not decide the order *inside* the core
+  // either. The whole core is the pool, shuffled, so texts draw from all of it.
+  const core = byRank.filter((e) => e.tags.includes(BEGINNER_CORE_TAG) && isContentWord(e));
+  const coreIds = new Set(core.map((e) => e.id));
+  const beginnerPool = preferBeginnerCore && core.length >= count;
+  const pool = beginnerPool
+    ? [...shuffle(core, rand), ...byRank.filter((e) => !coreIds.has(e.id))]
+    : shuffle(byRank.slice(0, Math.max(count * 6, 40)), rand);
 
   const picked: LexiconEntry[] = [];
   const taken = new Set<string>();
@@ -199,10 +244,16 @@ export function selectTargets({
   // head: at the upper levels the most frequent unknown words are all nouns
   // (Dari band 9 is 962 nouns out of 965), so a head-only search found no verb
   // and the quota silently did nothing at exactly the levels that needed it.
+  //
+  // The search order is the pool's, not `byRank`'s, wherever the pool is
+  // already the right shape: `byRank.find(isVerb)` returns the single lowest-
+  // ranked verb every time, so at a beginner level every text opened by
+  // teaching `ser` / `است` and never anything else.
   const nounCap = Math.max(1, Math.floor(count * MAX_NOUN_SHARE));
+  const search = beginnerPool ? pool : byRank;
   for (const wanted of [isVerb, isModifier]) {
     if (picked.length >= count) break;
-    const hit = byRank.find((e) => wanted(e) && !taken.has(e.id));
+    const hit = search.find((e) => wanted(e) && !taken.has(e.id)) ?? byRank.find(wanted);
     if (hit) add(hit);
   }
 
@@ -231,6 +282,40 @@ export interface SelectKnownInput {
 }
 
 /**
+ * The vocabulary a brand-new learner is given to build from.
+ *
+ * A learner with no history used to fall back to the sixty commonest words in
+ * the language, which for Catalan is `de, ser, el, la, que, a, i, no, en, per`
+ * and for Dari the equivalent. That is the worst possible starting vocabulary -
+ * function words and abstractions, nothing picturable - and it is what every
+ * new user got. The beginner core is the same size and is `gos, casa, poma,
+ * taula, aigua, menjar`, so the first text a learner ever sees can be about
+ * something.
+ */
+export function coldStartKnown(
+  entries: readonly LexiconEntry[],
+  level: Level,
+  isUsable: (e: LexiconEntry) => boolean,
+  size = 60,
+): LexiconEntry[] {
+  const core = entries.filter((e) => e.tags.includes(BEGINNER_CORE_TAG) && isUsable(e));
+  const inBand = entries.filter((e) => level.freqBands.includes(e.freqBand) && isUsable(e));
+  const byRank = (a: LexiconEntry, b: LexiconEntry) => a.freqRank - b.freqRank;
+  // Above A1 the core is still a better opening than the raw frequency head,
+  // but the level's own band has to lead or the text will not read at level.
+  const head = isBeginnerLevel(level) ? [...core, ...inBand] : [...inBand, ...core];
+  const seen = new Set<string>();
+  const out: LexiconEntry[] = [];
+  for (const e of head) {
+    if (out.length >= size) break;
+    if (seen.has(e.id)) continue;
+    seen.add(e.id);
+    out.push(e);
+  }
+  return out.sort(byRank);
+}
+
+/**
  * The known-word list shown to the model.
  *
  * This is a *prompt* slice, not a statement about what the learner knows - see
@@ -254,7 +339,16 @@ export function selectKnown({ known, level, dueIds }: SelectKnownInput): Lexicon
   // the Dari build exhausted it. Past a few hundred words the model stops
   // reading the list carefully anyway, so the tokens bought nothing.
   const budget = Math.max(120, Math.min(250, Math.round(level.entryKnownWords * 0.25) || 120));
-  const byRank = [...known].sort((a, b) => a.freqRank - b.freqRank);
+
+  // At a beginner level the core comes first. Until this existed, only
+  // `selectTargets` preferred it, so the model was told to *teach* `poma` and
+  // `gos` while the vocabulary it could *build* from was headed by `de, ser,
+  // el, la, que, estat, cosa, part, manera` - and the sentences came out
+  // abstract no matter what was being taught. Both halves have to come from the
+  // same pool. Sorting is stable, so within each group frequency still decides.
+  const rank = (e: LexiconEntry) =>
+    isBeginnerLevel(level) && e.tags.includes(BEGINNER_CORE_TAG) ? e.freqRank - 1e6 : e.freqRank;
+  const byRank = [...known].sort((a, b) => rank(a) - rank(b));
   if (!dueIds || dueIds.size === 0) return byRank.slice(0, budget);
 
   const due = byRank.filter((e) => dueIds.has(e.id));

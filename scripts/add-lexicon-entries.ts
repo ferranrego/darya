@@ -103,11 +103,16 @@ if (problems.length) {
   process.exit(1);
 }
 
+// Validate the *assembled* file in both modes. Checking only on `--apply` made
+// the dry run untrustworthy in the one way that matters: a batch of numerals
+// authored with `pos: "number"` reported "67 to add, 0 rejected" and then threw
+// on the schema. A dry run that passes has to mean the apply will pass.
+file.entries = [...entries, ...added];
+lexiconFileSchema.parse(file);
+
 if (!process.argv.includes("--apply")) {
   console.log("\n(dry run - pass --apply to write them)");
 } else {
-  file.entries = [...entries, ...added];
-  lexiconFileSchema.parse(file);
   writeFileSync(path, JSON.stringify(file, null, 2) + "\n");
   console.log(`\nrewrote ${path} (${entries.length} -> ${file.entries.length})`);
 }

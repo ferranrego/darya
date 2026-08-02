@@ -106,7 +106,72 @@ deliberate:
   weighted 0.75 and the corpora refine it. Catalan curation gets weight 0,
   because it carried no signal.
 
-## 5. Balance the parts of speech, or you will only teach nouns
+## 5. Frequency is not what a beginner needs first
+
+Frequency decides teaching *order*. It does not decide what a learner needs on
+day one, and no corpus will, because abstract nouns are far commoner in written
+text than concrete ones. Catalan's L1 head is `estat, cosa, part, manera,
+sistema`, while `poma` ranks 1468, `plat` 1161 and `carn` 818. Measured, 80 of
+the 138 concrete beginner words in the lexicon ranked past L1, so *El gos menja
+carn* and *Quant costa la poma?* could not be written at the level they belong
+to.
+
+The fix is additive and never touches `freqRank`: `content/<lang>/lexicon/
+beginner-spec.json` states what beginner coverage *means*, and the
+`beginner-core` tag is derived from it by `scripts/tag-beginner-core.ts`. The
+tag makes a word **teachable early**; it does not make it count as known.
+
+**Specify requirements, not a word list.** The first version was a list written
+from memory, and measuring it showed exactly what that costs: every subject
+pronoun, every possessive, every demonstrative, ten of twelve position words and
+fifteen numbers were present in the lexicon and unreachable. A learner could not
+say `jo`, `aquest`, `sota` or `tres` in their first week. A list cannot be
+falsified; requirements can. Four kinds, because the vocabulary behaves
+differently:
+
+- **Closed classes** are finite, so completeness is checkable and any absence is
+  a failure. There is no judgement in "a beginner needs `tu`".
+- **Semantic fields** are open, so they declare a minimum and a seed.
+- **Verb functions** specify verbs by what they let a learner *do*. This is what
+  catches `pagar`, `esperar` and `ajudar` - words no frequency list puts near
+  the top and every beginner needs in week one.
+- **Descriptive dimensions** group adjectives by what they describe - size,
+  build, age, temperature, price, taste, colour. This started as a list of
+  antonym pairs and that list was missing `gras/prim` and `roig`, for the same
+  reason the original list was missing pronouns. Enumerating the *dimensions* is
+  a small, nearly closed problem; enumerating pairs from memory is not.
+
+**The gate is a sentence, not a count.** `beginner-expressible.test.ts` holds
+~65 canonical A1 sentences per language and asserts every token resolves to a
+teachable, tagged entry. A word count said the 4,345-entry Catalan lexicon was
+fine while a beginner could not write *el gat dorm sota la taula*. Only asking
+"can this sentence be built?" said otherwise. It found, in one run: no Nature
+field at all (`riu`, the user's own example), `fer` missing from every verb
+function, no intensifiers, Dari's object marker `را` untagged, and `نوشیدن`
+listed as a variant whose paradigm was never generated, so `می‌نوشم` glossed to
+nothing.
+
+**Predominance has to apply to both halves of the prompt.** Tagging only affects
+what is *taught*. While the known-word slice was still ordered by raw corpus
+frequency, the model was told to teach `poma` and `gos` and to build sentences
+from `de, ser, el, la, que, estat, cosa, manera` - so the text stayed abstract
+whatever was being taught. Both `selectKnown` and the cold-start fallback now
+lead with the core.
+
+**The core includes closed classes, so it cannot order teaching targets on its
+own.** A beginner needs `el`, `de` and `amb`, but as the mortar of a sentence,
+not as vocabulary cards. Ranking the whole core equally made pre-A1 teach
+`ser, la, no, amb, es, què, pel`. Content words are preferred, and *inside* the
+core the order is shuffled rather than frequency-ordered - sorting the core by
+corpus frequency reaches `home, parlar, pensar, moment` and never `gos`, which
+is the premise of the core restated as a bug.
+
+**More new words, not fewer.** Beginner levels get two per sentence, capped at
+ten, against eight everywhere else. *El gos menja molta carn* teaches four at
+once and is easier than a sentence teaching one, because every word in it is
+picturable. Difficulty at A1 comes from abstraction and syntax, not from count.
+
+## 6. Balance the parts of speech, or you will only teach nouns
 
 Both lexicons are roughly three-quarters nouns (ca 74%, prs 78%). A frequency
 slice of unknown words is therefore almost all nouns **by construction** - the
@@ -123,7 +188,7 @@ finds no verb and the quota silently does nothing exactly where it is needed.
 Quotas degrade rather than throw. A level whose remaining vocabulary genuinely
 holds no verbs should still produce a text.
 
-## 6. Words need to be met again
+## 7. Words need to be met again
 
 Incidental acquisition needs roughly 6-12 meaningful encounters. The reader
 feeds the review queue; `selectKnown` weights words that are due back into the
@@ -131,7 +196,7 @@ text so the loop runs both ways. Due words are *known*, so this changes which
 known words a text reuses, not what it teaches, and they never take more than
 half the prompt slice.
 
-## 7. Measurement set ≠ prompt slice
+## 8. Measurement set ≠ prompt slice
 
 The clearest engineering consequence of the coverage rule, and the subtlest bug
 in the pipeline.
@@ -147,7 +212,7 @@ legitimate word that did not fit as out-of-vocabulary. The 5% gate was applied
 to a vocabulary five times too small, failing good texts and triggering repairs
 that made them worse.
 
-## 8. Language-specific traps
+## 9. Language-specific traps
 
 Neither language is a generic "target language", and the failure mode in both is
 a fluent, confident, wrong sentence.
@@ -178,7 +243,7 @@ DIEC2), central/Barcelona standard.
   frequently irregular and **not derivable**. A guessed stem produces a form the
   learner will internalise as correct.
 
-## 9. Prompts must not name a language
+## 10. Prompts must not name a language
 
 Enforced by `src/lib/ai/prompt-leak.test.ts`. Anything language-specific belongs
 in `src/lib/lang/<code>/prompts.ts` and reaches the prompt through `profile`.
@@ -186,7 +251,7 @@ in `src/lib/lang/<code>/prompts.ts` and reaches the prompt through `profile`.
 The Catalan build was asking a model to be "an expert Persian (Dari) linguist"
 about Catalan sentences, and for text "100% natural and idiomatic in Dari".
 
-## 10. Placement should not skew low
+## 11. Placement should not skew low
 
 A learner placed below their level is shown texts they find trivial, and the
 error is comfortable enough that nobody reports it. The band schedule is derived

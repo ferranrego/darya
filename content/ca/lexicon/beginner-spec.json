@@ -1,0 +1,728 @@
+{
+  "_comment": "What 'ready for a beginner' means for Catalan, as requirements rather than as a list of words. The previous beginner-core.txt was whatever occurred to whoever wrote it, and measuring it showed the cost: every subject pronoun, every possessive, every demonstrative, ten of twelve position words and fifteen numbers were present in the lexicon and unreachable at the level that needs them. A learner could not say 'jo', 'aquest', 'sota' or 'tres' in their first week. Requirements can be checked; a list cannot. scripts/verify-beginner-core.ts reports the gap and scripts/tag-beginner-core.ts derives the tag from this file, so the tag is a consequence of the specification and cannot drift from it.",
+  "closedClasses": {
+    "_comment": "Finite sets. A beginner needs essentially every member, so absence is a failure rather than a judgement call. Listed in full: there is nothing to sample.",
+    "subjectPronouns": [
+      "jo",
+      "tu",
+      "ell",
+      "ella",
+      "nosaltres",
+      "vosaltres",
+      "ells",
+      "elles",
+      "vostè"
+    ],
+    "weakPronouns": [
+      "em",
+      "et",
+      "es",
+      "ens",
+      "us",
+      "el",
+      "la",
+      "els",
+      "les",
+      "li",
+      "hi",
+      "en"
+    ],
+    "possessives": [
+      "meu",
+      "teu",
+      "seu",
+      "nostre",
+      "vostre"
+    ],
+    "demonstratives": [
+      "aquest",
+      "aquell",
+      "això",
+      "allò",
+      "aquí",
+      "allà"
+    ],
+    "questionWords": [
+      "què",
+      "qui",
+      "on",
+      "quan",
+      "com",
+      "quant",
+      "quin",
+      "per què"
+    ],
+    "articles": [
+      "el",
+      "la",
+      "els",
+      "les",
+      "un",
+      "una",
+      "uns",
+      "unes"
+    ],
+    "prepositionsPlace": [
+      "a",
+      "de",
+      "en",
+      "amb",
+      "sobre",
+      "sota",
+      "davant",
+      "darrere",
+      "dins",
+      "fora",
+      "entre",
+      "prop",
+      "lluny",
+      "cap"
+    ],
+    "prepositionsOther": [
+      "per",
+      "sense",
+      "fins",
+      "des de",
+      "durant",
+      "abans",
+      "després"
+    ],
+    "conjunctions": [
+      "i",
+      "o",
+      "però",
+      "perquè",
+      "que",
+      "si",
+      "quan",
+      "mentre",
+      "també",
+      "tampoc"
+    ],
+    "quantifiers": [
+      "molt",
+      "poc",
+      "tot",
+      "algun",
+      "cap",
+      "cada",
+      "altre",
+      "mateix",
+      "més",
+      "menys",
+      "res",
+      "ningú",
+      "gaire",
+      "prou",
+      "massa"
+    ],
+    "numbers": [
+      "zero",
+      "un",
+      "dos",
+      "tres",
+      "quatre",
+      "cinc",
+      "sis",
+      "set",
+      "vuit",
+      "nou",
+      "deu",
+      "onze",
+      "dotze",
+      "tretze",
+      "catorze",
+      "quinze",
+      "setze",
+      "disset",
+      "divuit",
+      "dinou",
+      "vint",
+      "trenta",
+      "quaranta",
+      "cinquanta",
+      "seixanta",
+      "setanta",
+      "vuitanta",
+      "noranta",
+      "cent",
+      "mil"
+    ],
+    "ordinals": [
+      "primer",
+      "segon",
+      "tercer",
+      "últim"
+    ],
+    "days": [
+      "dilluns",
+      "dimarts",
+      "dimecres",
+      "dijous",
+      "divendres",
+      "dissabte",
+      "diumenge"
+    ],
+    "months": [
+      "gener",
+      "febrer",
+      "març",
+      "abril",
+      "maig",
+      "juny",
+      "juliol",
+      "agost",
+      "setembre",
+      "octubre",
+      "novembre",
+      "desembre"
+    ],
+    "seasons": [
+      "primavera",
+      "estiu",
+      "tardor",
+      "hivern"
+    ],
+    "politeness": [
+      "hola",
+      "adeu",
+      "gràcies",
+      "si us plau",
+      "perdó",
+      "sí",
+      "no",
+      "bon dia",
+      "bona nit"
+    ],
+    "timeAdverbs": [
+      "avui",
+      "demà",
+      "ahir",
+      "ara",
+      "després",
+      "abans",
+      "sempre",
+      "mai",
+      "sovint",
+      "aviat",
+      "tard",
+      "encara",
+      "ja"
+    ],
+    "placeAdverbs": [
+      "esquerra",
+      "dreta",
+      "amunt",
+      "avall",
+      "endavant",
+      "enrere",
+      "junts"
+    ],
+    "contractions": [
+      "al",
+      "del",
+      "pel"
+    ],
+    "intensifiers": [
+      "molt",
+      "bastant",
+      "massa",
+      "gaire",
+      "prou",
+      "més",
+      "menys"
+    ]
+  },
+  "semanticFields": {
+    "_comment": "Open classes, so a minimum rather than an enumeration. `seed` names words a beginner course would be strange without; `min` is the total the field needs. Themes match content/ca/lexicon/themes.json so this reuses the tagging that already exists.",
+    "Family & Relationships": {
+      "min": 14,
+      "seed": [
+        "pare",
+        "mare",
+        "fill",
+        "filla",
+        "germà",
+        "germana",
+        "avi",
+        "àvia",
+        "amic",
+        "home",
+        "dona",
+        "nen",
+        "nena",
+        "família"
+      ]
+    },
+    "Body & Health": {
+      "min": 12,
+      "seed": [
+        "cap",
+        "ull",
+        "boca",
+        "nas",
+        "orella",
+        "mà",
+        "peu",
+        "cama",
+        "braç",
+        "dent",
+        "esquena",
+        "cor"
+      ]
+    },
+    "Food & Drink": {
+      "min": 23,
+      "seed": [
+        "pa",
+        "aigua",
+        "llet",
+        "cafè",
+        "te",
+        "carn",
+        "peix",
+        "ou",
+        "arròs",
+        "fruita",
+        "poma",
+        "sucre",
+        "sal",
+        "oli",
+        "formatge",
+        "pollastre",
+        "patata",
+        "verdura",
+        "sopa",
+        "menjar",
+        "esmorzar",
+        "dinar",
+        "sopar"
+      ]
+    },
+    "Home & Furniture": {
+      "min": 16,
+      "seed": [
+        "casa",
+        "porta",
+        "finestra",
+        "taula",
+        "cadira",
+        "llit",
+        "cuina",
+        "bany",
+        "habitació",
+        "paret",
+        "sofà",
+        "armari",
+        "clau",
+        "llum",
+        "jardí",
+        "pis"
+      ]
+    },
+    "Clothing & Fashion": {
+      "min": 8,
+      "seed": [
+        "camisa",
+        "pantalons",
+        "vestit",
+        "sabata",
+        "jaqueta",
+        "barret",
+        "faldilla",
+        "mitjó"
+      ]
+    },
+    "Animals & Pets": {
+      "min": 8,
+      "seed": [
+        "gos",
+        "gat",
+        "ocell",
+        "cavall",
+        "vaca",
+        "porc",
+        "peix",
+        "conill"
+      ]
+    },
+    "Colors & Shapes": {
+      "min": 8,
+      "seed": [
+        "vermell",
+        "blau",
+        "verd",
+        "groc",
+        "negre",
+        "blanc",
+        "gris",
+        "marró"
+      ]
+    },
+    "Weather & Climate": {
+      "min": 8,
+      "seed": [
+        "sol",
+        "pluja",
+        "neu",
+        "vent",
+        "núvol",
+        "calor",
+        "fred",
+        "temps"
+      ]
+    },
+    "Time & Calendar": {
+      "min": 10,
+      "seed": [
+        "dia",
+        "setmana",
+        "mes",
+        "any",
+        "hora",
+        "minut",
+        "matí",
+        "tarda",
+        "nit",
+        "moment"
+      ]
+    },
+    "Places & Buildings": {
+      "min": 12,
+      "seed": [
+        "ciutat",
+        "carrer",
+        "escola",
+        "botiga",
+        "mercat",
+        "restaurant",
+        "hospital",
+        "parc",
+        "platja",
+        "estació",
+        "poble",
+        "plaça"
+      ]
+    },
+    "Travel & Transport": {
+      "min": 6,
+      "seed": [
+        "cotxe",
+        "tren",
+        "autobús",
+        "avió",
+        "bicicleta",
+        "camí"
+      ]
+    },
+    "Work & Education": {
+      "min": 8,
+      "seed": [
+        "feina",
+        "treball",
+        "escola",
+        "llibre",
+        "paper",
+        "professor",
+        "estudiant",
+        "classe"
+      ]
+    },
+    "Objects & Tools": {
+      "min": 11,
+      "seed": [
+        "diner",
+        "telèfon",
+        "bossa",
+        "got",
+        "plat",
+        "cullera",
+        "ganivet",
+        "forquilla",
+        "ampolla",
+        "rellotge",
+        "diners"
+      ]
+    },
+    "Emotions & Feelings": {
+      "min": 8,
+      "seed": [
+        "content",
+        "trist",
+        "cansat",
+        "por",
+        "amor",
+        "gana",
+        "set",
+        "son"
+      ]
+    },
+    "Nature & Environment": {
+      "seed": [
+        "riu",
+        "muntanya",
+        "arbre",
+        "flor",
+        "mar",
+        "cel",
+        "terra",
+        "pedra",
+        "bosc",
+        "camp",
+        "sol",
+        "lluna",
+        "estrella",
+        "núvol",
+        "vent",
+        "foc",
+        "aire",
+        "animal",
+        "planta",
+        "costa"
+      ],
+      "min": 20
+    },
+    "People & Identity": {
+      "seed": [
+        "nom",
+        "persona",
+        "gent",
+        "senyora",
+        "veí",
+        "català"
+      ],
+      "min": 6
+    },
+    "Leisure & Culture": {
+      "seed": [
+        "música",
+        "esport",
+        "festa",
+        "joc"
+      ],
+      "min": 4
+    }
+  },
+  "verbFunctions": {
+    "_comment": "Verbs specified by what they let a learner do, not by frequency. This is what catches `pagar`, `esperar` and `ajudar` - words no corpus puts near the top and every beginner needs in week one.",
+    "existence and state": [
+      "ser",
+      "estar",
+      "hi ha"
+    ],
+    "possession": [
+      "tenir",
+      "portar"
+    ],
+    "motion": [
+      "anar",
+      "venir",
+      "entrar",
+      "sortir",
+      "pujar",
+      "baixar",
+      "arribar",
+      "tornar",
+      "caminar",
+      "córrer",
+      "viatjar"
+    ],
+    "transaction": [
+      "comprar",
+      "vendre",
+      "pagar",
+      "costar",
+      "donar",
+      "agafar",
+      "portar"
+    ],
+    "perception": [
+      "veure",
+      "mirar",
+      "sentir",
+      "escoltar"
+    ],
+    "communication": [
+      "dir",
+      "parlar",
+      "preguntar",
+      "respondre",
+      "cridar",
+      "cantar",
+      "escriure",
+      "llegir",
+      "explicar"
+    ],
+    "daily routine": [
+      "menjar",
+      "beure",
+      "dormir",
+      "rentar",
+      "cuinar",
+      "treballar",
+      "estudiar",
+      "jugar",
+      "descansar",
+      "viure"
+    ],
+    "manipulation": [
+      "obrir",
+      "tancar",
+      "posar",
+      "treure",
+      "trencar",
+      "netejar",
+      "buscar",
+      "trobar",
+      "perdre"
+    ],
+    "cognition and volition": [
+      "voler",
+      "poder",
+      "saber",
+      "conèixer",
+      "pensar",
+      "creure",
+      "entendre",
+      "recordar",
+      "necessitar",
+      "agradar",
+      "ajudar",
+      "esperar"
+    ],
+    "weather and impersonal": [
+      "fer",
+      "ploure"
+    ]
+  },
+  "descriptiveDimensions": {
+    "_comment": "Adjectives enumerated by the DIMENSION they describe, not as a list of pairs someone thought of. Dimensions are a small, well-known, nearly closed set; pairs are not, which is how gras/prim and roig came to be missing from a list written from memory. Where a dimension is a contrast, both poles are required - teaching gran without petit is half a lesson.",
+    "size": [
+      "gran",
+      "petit",
+      "llarg",
+      "curt",
+      "ample",
+      "estret"
+    ],
+    "height": [
+      "alt",
+      "baix"
+    ],
+    "build": [
+      "gras",
+      "prim"
+    ],
+    "weight": [
+      "pesat",
+      "lleuger"
+    ],
+    "age": [
+      "nou",
+      "vell",
+      "jove"
+    ],
+    "evaluation": [
+      "bo",
+      "dolent",
+      "bonic",
+      "lleig"
+    ],
+    "temperature": [
+      "calent",
+      "fred",
+      "tebi"
+    ],
+    "cleanliness": [
+      "net",
+      "brut"
+    ],
+    "moisture": [
+      "sec",
+      "mullat"
+    ],
+    "hardness": [
+      "dur",
+      "tou"
+    ],
+    "fullness": [
+      "ple",
+      "buit"
+    ],
+    "openness": [
+      "obert",
+      "tancat"
+    ],
+    "speed": [
+      "ràpid",
+      "lent"
+    ],
+    "strength": [
+      "fort",
+      "feble"
+    ],
+    "difficulty": [
+      "fàcil",
+      "difícil"
+    ],
+    "price": [
+      "car",
+      "barat"
+    ],
+    "brightness": [
+      "clar",
+      "fosc"
+    ],
+    "taste": [
+      "dolç",
+      "salat",
+      "amarg"
+    ],
+    "emotion": [
+      "content",
+      "trist",
+      "cansat",
+      "enfadat",
+      "tranquil",
+      "nerviós"
+    ],
+    "correctness": [
+      "cert",
+      "fals",
+      "correcte",
+      "equivocat"
+    ],
+    "distance": [
+      "prop",
+      "lluny"
+    ],
+    "order": [
+      "primer",
+      "segon",
+      "últim"
+    ],
+    "colour": [
+      "vermell",
+      "roig",
+      "blau",
+      "verd",
+      "groc",
+      "negre",
+      "blanc",
+      "gris",
+      "marró",
+      "rosa",
+      "taronja",
+      "lila"
+    ],
+    "mind": [
+      "intel·ligent",
+      "ximple",
+      "llest"
+    ],
+    "courage": [
+      "valent",
+      "covard"
+    ]
+  }
+}

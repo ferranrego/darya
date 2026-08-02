@@ -3,12 +3,16 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { levelsFileSchema, lexiconFileSchema, type LexiconEntry } from "./schema.ts";
+import { isTeachable } from "./teachability.ts";
 import {
+  BEGINNER_CORE_TAG,
+  coldStartKnown,
   isBeginnerLevel,
   selectKnown,
   selectTargets,
   shuffle,
   targetCountFor,
+  teachablePool,
 } from "./word-selection.ts";
 
 /**
@@ -65,23 +69,27 @@ describe.each(LANGS)("%s word selection", (lang) => {
         const n = targetCountFor(level, 0.05);
         expect(n, `${level.id} asks for ${n} new words`).toBeGreaterThanOrEqual(2);
         // The old ceiling of 15 produced texts the model simply ignored.
-        expect(n, `${level.id} asks for ${n} new words`).toBeLessThanOrEqual(8);
+        // Beginner levels get a higher one because their words are concrete.
+        const ceiling = isBeginnerLevel(level) ? 10 : 8;
+        expect(n, `${level.id} asks for ${n} new words`).toBeLessThanOrEqual(ceiling);
       }
     });
 
-    it("gives beginner levels one new word per sentence", () => {
+    it("gives beginner levels two new words per sentence", () => {
       // Deliberately more than A2 asks for, and deliberately not derived from
-      // the ratio. A beginner text is a set of independent useful sentences, so
-      // one new word per sentence is both the most a short sentence can carry
-      // and a natural unit to absorb - while the ratio's whole 0.02-0.25 range
-      // collapsed to two words there, making the setting inert at exactly the
-      // levels where new vocabulary matters most.
+      // the ratio. A beginner text is a set of independent useful sentences and
+      // every word in one is picturable, so *El gos menja molta carn* teaches
+      // four at once and is easier than a sentence teaching one. Difficulty at
+      // A1 comes from abstraction and syntax, not from the count.
+      //
+      // The ratio is inert here by design: its whole 0.02-0.25 range collapsed
+      // to two or three words at these levels, so it could not express the
+      // difference at exactly the levels where new vocabulary matters most.
       for (const level of levels.filter(isBeginnerLevel)) {
         const mid = (level.sentenceRange[0] + level.sentenceRange[1]) / 2;
-        expect(targetCountFor(level, 0.05), `${level.id}`).toBe(Math.round(mid));
-        expect(targetCountFor(level, 0.25), `${level.id} must ignore the ratio`).toBe(
-          Math.round(mid),
-        );
+        const want = Math.max(2, Math.min(10, Math.round(mid * 2)));
+        expect(targetCountFor(level, 0.05), `${level.id}`).toBe(want);
+        expect(targetCountFor(level, 0.25), `${level.id} must ignore the ratio`).toBe(want);
       }
     });
 
@@ -184,4 +192,93 @@ describe.each(LANGS)("%s word selection", (lang) => {
       );
     });
   });
+});
+
+describe.each(LANGS)("%s beginner predominance", (lang) => {
+  const { levels, entries } = load(lang);
+  const beginner = levels.filter(isBeginnerLevel);
+  const upper = levels.at(-1)!;
+
+  it("has beginner levels to test", () => {
+    expect(beginner.length, `${lang} declares no pre-A1/A1 level`).toBeGreaterThan(0);
+  });
+
+  it("cold start hands a new learner concrete words, not de/ser/el/la", () => {
+    // The fallback used to be the sixty commonest words in the language, which
+    // is the worst possible opening vocabulary and was what every new user got.
+    for (const level of beginner) {
+      const out = coldStartKnown(entries, level, isTeachable, 60);
+      expect(out.length, `${level.id} cold start is empty`).toBeGreaterThan(0);
+      const core = out.filter((e) => e.tags.includes(BEGINNER_CORE_TAG)).length;
+      expect(
+        core / out.length,
+        `${level.id} cold start is only ${core}/${out.length} beginner-core`,
+      ).toBeGreaterThan(0.8);
+    }
+  });
+
+  it("selectKnown leads with the core at beginner levels and not above them", () => {
+    // Both halves of the prompt have to come from the same pool. While only
+    // selectTargets preferred the core, the model was told to teach `poma` and
+    // `gos` while building from `de, ser, el, la, que, estat, cosa, manera`.
+    const known = entries.filter(isTeachable).slice(0, 3000);
+    const head = (level: (typeof levels)[number]) =>
+      selectKnown({ known, level })
+        .slice(0, 20)
+        .filter((e) => e.tags.includes(BEGINNER_CORE_TAG)).length;
+
+    for (const level of beginner) {
+      expect(head(level), `${level.id} head is not core-led`).toBeGreaterThanOrEqual(18);
+    }
+    // Above A1 frequency decides again, or the text stops reading at level.
+    const upperHead = selectKnown({ known, level: upper }).slice(0, 20);
+    expect(upperHead.every((e, i, a) => i === 0 || a[i - 1].freqRank <= e.freqRank)).toBe(true);
+  });
+});
+
+describe.each(LANGS)("%s beginner targets are worth teaching", (lang) => {
+  const { levels, entries } = load(lang);
+
+  for (const level of levels.filter(isBeginnerLevel)) {
+    const candidates = teachablePool(entries, level, () => false, isTeachable);
+    const count = targetCountFor(level, 0.05);
+    const draws = [3, 11, 29, 47].map((seed) =>
+      selectTargets({ candidates, count, preferBeginnerCore: true, seed }),
+    );
+
+    it(`${level.id}: teaches content words, not the article and the copula`, () => {
+      // Tagging the closed classes beginner-core made the tag mean two things
+      // at once, and pre-A1 started teaching `ser, la, no, amb, es, què, pel` -
+      // seven of ten slots on function words. A beginner absorbs those from
+      // every sentence that uses one; the cards should hold `gos` and `poma`.
+      for (const picked of draws) {
+        const content = picked.filter((e) =>
+          ["noun", "verb", "adjective", "adverb"].includes(e.pos),
+        );
+        expect(
+          content.length,
+          `${level.id} taught ${picked.length - content.length} function words: ` +
+            picked.map((e) => `${e.target}/${e.pos}`).join(" "),
+        ).toBe(picked.length);
+      }
+    });
+
+    it(`${level.id}: reaches beyond the frequency head`, () => {
+      // Ordering the core by corpus frequency and slicing the top 60 reached
+      // `home, parlar, pensar, moment` and never `gos` (ca rank 1546), `poma`
+      // (1468) or `taula` (1161) - the premise of the core restated as a bug.
+      const ranks = draws.flat().map((e) => e.freqRank);
+      expect(
+        Math.max(...ranks),
+        `${level.id} never left the frequency head`,
+      ).toBeGreaterThan(700);
+    });
+
+    it(`${level.id}: does not open every text with the same word`, () => {
+      // `byRank.find(isVerb)` returned the single lowest-ranked verb every
+      // time, so every beginner text began by teaching `ser` / `است`.
+      const firsts = new Set(draws.map((d) => d[0]?.id));
+      expect(firsts.size, `every draw started with the same word`).toBeGreaterThan(1);
+    });
+  }
 });

@@ -18,8 +18,14 @@
  *
  * Usage:
  *   node scripts/review-batch.ts --lang ca --repairs scripts/data/ca-gloss-repairs.json
+ *   node scripts/review-batch.ts --lang ca --new scripts/data/new-ca-beginner.json
  *   node scripts/review-batch.ts --lang ca --ids lx-4222,lx-4105
  *   node scripts/review-batch.ts --lang ca --rank-max 700 --sample 20
+ *
+ * `--new` reads an authored file in `add-lexicon-entries.ts` format, so a batch
+ * can be read *before* it is written. Without it the only way to see the cards
+ * was to apply first and review after, which inverts the order the whole point
+ * of this script depends on.
  */
 
 import { readFileSync } from "node:fs";
@@ -43,10 +49,26 @@ const entries = lexiconFileSchema.parse(
 
 let selected: LexiconEntry[];
 const repairsPath = arg("repairs");
+const newPath = arg("new");
 const ids = arg("ids");
 const rankMax = arg("rank-max");
 
-if (repairsPath) {
+if (newPath) {
+  // Not yet in the lexicon, so rank and band do not exist yet; everything a
+  // reviewer actually judges - headword, part of speech, gloss, example - does.
+  selected = (JSON.parse(readFileSync(newPath, "utf8")) as Partial<LexiconEntry>[]).map(
+    (a, i) =>
+      ({
+        ...a,
+        id: `new-${i}`,
+        targetNormalized: a.target ?? "",
+        freqRank: 0,
+        freqBand: 0,
+        variants: a.variants ?? [],
+        tags: a.tags ?? [],
+      }) as LexiconEntry,
+  );
+} else if (repairsPath) {
   const repairs: Record<string, { pos?: string; drop?: string }> = JSON.parse(
     readFileSync(repairsPath, "utf8"),
   );

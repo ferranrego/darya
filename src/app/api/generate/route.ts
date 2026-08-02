@@ -4,6 +4,7 @@ import { lexicon, levelById } from "@/lib/content/load";
 import { assumedKnown, placementCredit } from "@/lib/content/text-pool";
 import { isTeachable } from "@/lib/content/teachability";
 import {
+  coldStartKnown,
   isBeginnerLevel,
   selectKnown,
   selectTargets,
@@ -91,7 +92,6 @@ export async function POST(req: Request) {
     placementCredit(level.entryKnownWords, lexicon.entries, trackedIds),
   );
 
-  const inBand = lexicon.entries.filter((e) => level.freqBands.includes(e.freqBand));
   const knownWords = lexicon.entries.filter((e) => knownIds.has(e.id));
   // In-band by frequency, plus the curated beginner core at the first levels.
   // An entry whose gloss is "[C2 auto-fill]" is excluded either way: it can be
@@ -104,9 +104,13 @@ export async function POST(req: Request) {
     isTeachable,
   );
 
-  // A brand-new learner at the first level has nothing yet, so fall back to the
-  // most frequent words of the level rather than an empty constraint.
-  const effectiveKnown = knownWords.length >= 40 ? knownWords : inBand.slice(0, 60);
+  // A brand-new learner has nothing yet, so fall back to a starting vocabulary
+  // rather than an empty constraint. It used to be `inBand.slice(0, 60)` - the
+  // sixty commonest words in the language, `de, ser, el, la, que, a, i, no` -
+  // which is the worst possible opening vocabulary and was what every new user
+  // got. `coldStartKnown` leads with the beginner core instead.
+  const effectiveKnown =
+    knownWords.length >= 40 ? knownWords : coldStartKnown(lexicon.entries, level, isTeachable);
 
   const ratio = profile.new_word_ratio ?? 0.05;
   const targetWords = selectTargets({
