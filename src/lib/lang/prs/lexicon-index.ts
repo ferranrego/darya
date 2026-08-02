@@ -22,6 +22,28 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
   // so frequent verbs claim contested keys.
   const conjugations = new Map<string, LexiconEntry>();
 
+  // Surfaces that the paradigm generator produces but that must never win a
+  // resolution, because the identical spelling is a far more common
+  // construction of a different kind: a bare present stem plus the ordinary
+  // ی-ye-nakira (indefinite article) that attaches to ANY noun (کتابی "a
+  // book", خانه‌ای "a house"...). کاری is کار ("work/task", lx-0079) + that
+  // ی, read by essentially every learner as "a task" (کاری داری؟ "do you have
+  // something to do?"); but ک‌ا‌شتن ("to plant") also happens to generate a
+  // bare, ب-less 2nd-person-singular subjunctive form spelled identically
+  // (see conjugate.ts's `out.push(p + base + e)`), and with no sentence
+  // context available at this word-level resolve() this is unrecoverable by
+  // a plausibility check the way the -ان/-م stemmer guards are (see the
+  // میزان/مهم fixes above this file's history). Blocking the single
+  // colliding surface lets resolve()'s stemmer take over instead, which
+  // already knows to strip a bare ی and land on the headword کار - the
+  // correct answer for the overwhelmingly common case.
+  //
+  // This is deliberately a one-entry denylist, not a general rule: widening
+  // it to "never register a bare 2nd-singular subjunctive" would break
+  // legitimate resolution of that form for every other verb (see the "Pass
+  // 2" comment below for why this map exists at all).
+  const GENERATED_SURFACE_BLOCKLIST = new Set([matchKey("کاری")]);
+
   for (const entry of entries) {
     byId.set(entry.id, entry);
     headwords.set(matchKey(entry.targetNormalized), entry);
@@ -59,6 +81,7 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
     };
     for (const surface of conjugationSurfaces(stems)) {
       const key = matchKey(surface);
+      if (GENERATED_SURFACE_BLOCKLIST.has(key)) continue;
       if (!conjugations.has(key)) conjugations.set(key, entry);
     }
   }
@@ -88,6 +111,7 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
       };
       for (const surface of conjugationSurfaces(stems)) {
         const key = matchKey(surface);
+        if (GENERATED_SURFACE_BLOCKLIST.has(key)) continue;
         if (!conjugations.has(key)) conjugations.set(key, entry);
       }
     }

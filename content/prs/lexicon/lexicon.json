@@ -1123,9 +1123,9 @@
       "freqBand": 1,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "دوست من از هرات است.",
-      "exampleTranslit": "dōst-e man az herāt ast.",
-      "exampleEn": "My friend is from Herat.",
+      "exampleTarget": "او این کتاب را دوست دارد.",
+      "exampleTranslit": "ō īn kitāb rā dōst dārad.",
+      "exampleEn": "He likes this book.",
       "tags": [
         "People & Identity",
         "beginner-core"
@@ -4436,9 +4436,9 @@
       "freqBand": 2,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "فکر خوب است.",
-      "exampleTranslit": "fikr-i khōb ast.",
-      "exampleEn": "It is a good idea.",
+      "exampleTarget": "من فکر می‌کنم.",
+      "exampleTranslit": "man fikr mēkunam.",
+      "exampleEn": "I think.",
       "tags": [
         "Abstract Concepts",
         "beginner-core"
@@ -4923,9 +4923,9 @@
       "freqBand": 2,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "جواب سوال را می‌دانم.",
-      "exampleTranslit": "jawāb-e sawāl rā mēdānam.",
-      "exampleEn": "I know the answer to the question.",
+      "exampleTarget": "او جواب سوال را داد.",
+      "exampleTranslit": "ō jawāb-e sawāl rā dād.",
+      "exampleEn": "He gave the answer to the question.",
       "tags": [
         "Abstract Concepts",
         "beginner-core"
@@ -113226,6 +113226,80 @@
       "id": "lx-6153",
       "targetNormalized": "نادان",
       "freqRank": 6150,
+      "freqBand": 10
+    },
+    {
+      "target": "میزان",
+      "translit": "mīzān",
+      "glossEn": "amount, rate, proportion",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "میزان آب کم است.",
+      "exampleTranslit": "mīzān-e āb kam ast.",
+      "exampleEn": "The amount of water is low.",
+      "tags": [
+        "Numbers & Quantities"
+      ],
+      "id": "lx-6154",
+      "targetNormalized": "میزان",
+      "freqRank": 6151,
+      "freqBand": 10
+    },
+    {
+      "target": "مهم",
+      "translit": "muhim",
+      "glossEn": "important",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "این کار خیلی مهم است.",
+      "exampleTranslit": "īn kār khayli muhim ast.",
+      "exampleEn": "This job is very important.",
+      "tags": [
+        "Descriptions & Qualities",
+        "beginner-core"
+      ],
+      "id": "lx-6155",
+      "targetNormalized": "مهم",
+      "freqRank": 6152,
+      "freqBand": 10
+    },
+    {
+      "target": "ارزان",
+      "translit": "arzān",
+      "glossEn": "cheap, inexpensive",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "این بوت ارزان است.",
+      "exampleTranslit": "īn būt arzān ast.",
+      "exampleEn": "These shoes are cheap.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6156",
+      "targetNormalized": "ارزان",
+      "freqRank": 6153,
+      "freqBand": 10
+    },
+    {
+      "target": "چیدن",
+      "translit": "chīdan",
+      "glossEn": "to pick, to pluck, to arrange, to set out (e.g. a table)",
+      "pos": "verb",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "او میز را چید.",
+      "exampleTranslit": "ō mēz rā chīd.",
+      "exampleEn": "He set the table.",
+      "tags": [
+        "Actions & Movement"
+      ],
+      "presentStem": "چین",
+      "id": "lx-6157",
+      "targetNormalized": "چیدن",
+      "freqRank": 6154,
       "freqBand": 10
     }
   ]
