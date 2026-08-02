@@ -141,6 +141,41 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
             match = lookup(cleanRoot.slice(0, -1));
             if (match) return match;
           }
+
+          // Stacked suffixes: standard Dari only stacks plural -ها/-ان
+          // *underneath* an ezafe -ی or a possessive enclitic - never the
+          // reverse. Having just stripped that outer layer above, peel a
+          // plural marker off what's left before giving up, e.g.
+          // میوه‌های (میوه‌ها + ezafe ی) needs both layers stripped to reach
+          // میوه, and دوستانش (دوستان + ش) needs both to reach دوست. Do not
+          // re-enter this for suffix itself being a plural marker - that
+          // would accept possessive-then-plural stacking, which is not
+          // standard Dari and would widen this into guessing at arbitrary
+          // suffix soup.
+          //
+          // Three layers is also standard and has to be tried explicitly:
+          // خانه‌هایش (خانه + ها + ezafe ی + possessive ش) strips only ش here,
+          // leaving خانه‌های - which ends in "ای", not "ها", so the plural
+          // check below never fires unless an ezafe ی is peeled first too.
+          // (کتاب‌هایم works today without this because "یم" happens to be
+          // its own entry in `suffixes`, consuming ezafe+possessive in one
+          // step - that is a coincidence of the array, not a general rule.)
+          if (suffix !== "ها" && suffix !== "ان") {
+            const rootsToTry = [cleanRoot];
+            if (cleanRoot.endsWith("ی")) rootsToTry.push(cleanRoot.slice(0, -1));
+            for (const candidate of rootsToTry) {
+              for (const pluralSuffix of ["ها", "ان"]) {
+                if (candidate.endsWith(pluralSuffix) && candidate.length > pluralSuffix.length + 1) {
+                  const pluralRoot = candidate.slice(0, -pluralSuffix.length);
+                  const cleanPluralRoot = pluralRoot.endsWith(ZWNJ)
+                    ? pluralRoot.slice(0, -1)
+                    : pluralRoot;
+                  match = lookup(cleanPluralRoot);
+                  if (match) return match;
+                }
+              }
+            }
+          }
         }
       }
 

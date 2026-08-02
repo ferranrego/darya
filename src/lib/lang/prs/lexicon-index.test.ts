@@ -97,6 +97,20 @@ describe("resolve against the real lexicon", () => {
     ["نباشند", "بودن"],
     ["هست", "بودن"],
     ["می‌توان", "توانستن"], // impersonal, no personal ending
+
+    // Stacked suffixes (plural underneath an ezafe or possessive enclitic) -
+    // resolve() used to strip only one suffix layer and then do an exact
+    // lookup on what was left, so a plural root like میوه‌ها or دوستان (which
+    // is itself only reachable by stripping its own plural suffix) never got
+    // a second pass and the whole surface fell through to null.
+    ["میوه‌های", "میوه"], // plural میوه‌ها + ezafe ی
+    ["دکان‌های", "دکان"], // plural دکان‌ها + ezafe ی
+    ["دوستانش", "دوست"], // plural دوستان + possessive ش
+    ["خانه‌هایش", "خانه"], // three layers: plural ها + ezafه ی + possessive ش -
+    // "کتاب‌هایم" resolved before this fix only because "یم" is its own entry
+    // in the suffix list, consuming ezafه+possessive together by coincidence.
+    // A possessive other than م (ش here) exposes that the general case - an
+    // ezafه sitting between the plural and the outer suffix - was unhandled.
   ];
   it.each(cases)("%s → %s", (surface, infinitive) => {
     expect(idx.resolve(surface)?.target).toBe(infinitive);
