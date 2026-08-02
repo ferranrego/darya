@@ -69,7 +69,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "Vaig al mercat cada dissabte.", en: "I go to the market every Saturday." },
       { target: "Vull comprar peix i fruita fresca.", en: "I want to buy fish and fresh fruit." },
-      { target: "El venedor em serveix ràpid.", en: "The seller serves me quickly." },
+      { target: "El venedor és molt ràpid i amable.", en: "The seller is very quick and friendly." },
       { target: "Prefereixo la fruita a la carn.", en: "I prefer fruit to meat." },
       { target: "Pago amb diners i torno a casa.", en: "I pay with cash and go home." },
     ],
@@ -102,7 +102,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "L'estiu passat vam anar a una ciutat nova.", en: "Last summer we went to a new city." },
       { target: "Vam visitar un museu molt bonic.", en: "We visited a very beautiful museum." },
       {
-        target: "Aquest matí he trucat als avis per explicar-los el viatge.",
+        target: "Aquest matí he trucat als avis per explicar el viatge.",
         en: "This morning I called my grandparents to tell them about the trip.",
       },
     ],
@@ -155,7 +155,7 @@ export const seedTexts: SeedTextSource[] = [
         en: "We all went to the party together and danced a lot.",
       },
       {
-        target: "Aquesta setmana l'he trucat per telèfon per parlar una estona.",
+        target: "Aquesta setmana li he trucat per telèfon per parlar una estona.",
         en: "This week I called her on the phone to talk for a while.",
       },
     ],
@@ -307,8 +307,8 @@ export const seedTexts: SeedTextSource[] = [
         en: "When we were little, we lived on the same street and played together every afternoon after school.",
       },
       {
-        target: "Si no ens haguéssim conegut de petites, la meva vida seria avui molt diferent.",
-        en: "If we hadn't met as children, my life would be very different today.",
+        target: "Si ens veiéssim més sovint, la nostra amistat seria encara més forta.",
+        en: "If we saw each other more often, our friendship would be even stronger.",
       },
       {
         target: "Ella sempre deia que volia viure a la ciutat, i finalment, fa uns anys, ho va fer.",
@@ -347,8 +347,8 @@ export const seedTexts: SeedTextSource[] = [
         en: "When I was a student, I thought it would be easy to find a good job.",
       },
       {
-        target: "Ara sé que cal treballar molt per aconseguir allò que es vol.",
-        en: "Now I know you have to work hard to get what you want.",
+        target: "Ara sé que cal treballar molt per aconseguir els somnis que tenim.",
+        en: "Now I know you have to work hard to achieve the dreams you have.",
       },
       {
         target: "Si tingués una altra opció, canviaria de feina l'any que ve.",

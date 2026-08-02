@@ -126,64 +126,56 @@
       ]
     },
     {
-      "target": "Si no ens haguéssim conegut de petites, la meva vida seria avui molt diferent.",
-      "en": "If we hadn't met as children, my life would be very different today.",
+      "target": "Si ens veiéssim més sovint, la nostra amistat seria encara més forta.",
+      "en": "If we saw each other more often, our friendship would be even stronger.",
       "tokens": [
         {
           "surface": "Si",
           "lexemeId": "lx-0048"
         },
         {
-          "surface": "no",
-          "lexemeId": "lx-0039"
-        },
-        {
           "surface": "ens",
           "lexemeId": "lx-0010"
         },
         {
-          "surface": "haguéssim",
-          "lexemeId": "lx-0062"
+          "surface": "veiéssim",
+          "lexemeId": "lx-0058"
         },
         {
-          "surface": "conegut",
-          "lexemeId": "lx-3824"
+          "surface": "més",
+          "lexemeId": "lx-0046"
         },
         {
-          "surface": "de",
-          "lexemeId": "lx-0030"
-        },
-        {
-          "surface": "petites",
-          "lexemeId": "lx-0218"
+          "surface": "sovint",
+          "lexemeId": "lx-0162"
         },
         {
           "surface": "la",
           "lexemeId": "lx-0032"
         },
         {
-          "surface": "meva",
-          "lexemeId": "lx-0248"
+          "surface": "nostra",
+          "lexemeId": "lx-0251"
         },
         {
-          "surface": "vida",
-          "lexemeId": "lx-0072"
+          "surface": "amistat",
+          "lexemeId": "lx-3815"
         },
         {
           "surface": "seria",
           "lexemeId": "lx-0038"
         },
         {
-          "surface": "avui",
-          "lexemeId": "lx-0259"
+          "surface": "encara",
+          "lexemeId": "lx-0265"
         },
         {
-          "surface": "molt",
-          "lexemeId": "lx-0052"
+          "surface": "més",
+          "lexemeId": "lx-0046"
         },
         {
-          "surface": "diferent",
-          "lexemeId": "lx-4172"
+          "surface": "forta",
+          "lexemeId": "lx-0486"
         }
       ]
     },
@@ -452,21 +444,18 @@
     "lx-0035",
     "lx-0037",
     "lx-0038",
-    "lx-0039",
     "lx-0045",
     "lx-0046",
     "lx-0048",
     "lx-0050",
-    "lx-0052",
     "lx-0053",
     "lx-0054",
     "lx-0056",
     "lx-0057",
+    "lx-0058",
     "lx-0059",
     "lx-0060",
-    "lx-0062",
     "lx-0067",
-    "lx-0072",
     "lx-0073",
     "lx-0086",
     "lx-0093",
@@ -476,6 +465,7 @@
     "lx-0107",
     "lx-0131",
     "lx-0139",
+    "lx-0162",
     "lx-0168",
     "lx-0174",
     "lx-0187",
@@ -487,21 +477,22 @@
     "lx-0221",
     "lx-0243",
     "lx-0248",
+    "lx-0251",
     "lx-0254",
     "lx-0256",
     "lx-0257",
-    "lx-0259",
+    "lx-0265",
     "lx-0270",
     "lx-0322",
     "lx-0361",
+    "lx-0486",
     "lx-0689",
     "lx-0856",
     "lx-0909",
     "lx-1019",
     "lx-1225",
-    "lx-3824",
-    "lx-4091",
-    "lx-4172"
+    "lx-3815",
+    "lx-4091"
   ],
   "newWords": [],
   "newWordRatio": 0,

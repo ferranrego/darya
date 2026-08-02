@@ -198,7 +198,7 @@
       ]
     },
     {
-      "target": "Aquesta setmana l'he trucat per telèfon per parlar una estona.",
+      "target": "Aquesta setmana li he trucat per telèfon per parlar una estona.",
       "en": "This week I called her on the phone to talk for a while.",
       "tokens": [
         {
@@ -210,8 +210,8 @@
           "lexemeId": "lx-0339"
         },
         {
-          "surface": "l'",
-          "lexemeId": "lx-0031"
+          "surface": "li",
+          "lexemeId": "lx-0012"
         },
         {
           "surface": "he",
@@ -250,6 +250,7 @@
   ],
   "vocabUsed": [
     "lx-0009",
+    "lx-0012",
     "lx-0020",
     "lx-0022",
     "lx-0028",

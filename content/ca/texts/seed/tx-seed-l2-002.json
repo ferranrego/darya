@@ -62,8 +62,8 @@
       ]
     },
     {
-      "target": "El venedor em serveix ràpid.",
-      "en": "The seller serves me quickly.",
+      "target": "El venedor és molt ràpid i amable.",
+      "en": "The seller is very quick and friendly.",
       "tokens": [
         {
           "surface": "El",
@@ -74,16 +74,24 @@
           "lexemeId": "lx-0652"
         },
         {
-          "surface": "em",
-          "lexemeId": "lx-0007"
+          "surface": "és",
+          "lexemeId": "lx-0038"
         },
         {
-          "surface": "serveix",
-          "lexemeId": "lx-0192"
+          "surface": "molt",
+          "lexemeId": "lx-0052"
         },
         {
           "surface": "ràpid",
           "lexemeId": "lx-0488"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "amable",
+          "lexemeId": "lx-2184"
         }
       ]
     },
@@ -153,21 +161,21 @@
     }
   ],
   "vocabUsed": [
-    "lx-0007",
     "lx-0022",
     "lx-0028",
     "lx-0031",
     "lx-0032",
     "lx-0033",
     "lx-0034",
+    "lx-0038",
     "lx-0041",
+    "lx-0052",
     "lx-0057",
     "lx-0060",
     "lx-0069",
     "lx-0118",
     "lx-0119",
     "lx-0191",
-    "lx-0192",
     "lx-0293",
     "lx-0295",
     "lx-0296",
@@ -177,6 +185,7 @@
     "lx-0488",
     "lx-0652",
     "lx-1041",
+    "lx-2184",
     "lx-2459"
   ],
   "newWords": [],

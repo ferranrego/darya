@@ -165,6 +165,14 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       imperfectSubjunctive: ["vingués", "vinguessis", "vinguéssim", "vinguéssiu", "vinguessin"],
       participle: ["vingut", "vinguda", "vinguts", "vingudes"],
       gerund: ["venint"],
+      // Without this override the generator falls back to the *regular*
+      // 3rd-conjugation imperative, computed from the bare stem "ven-" as if
+      // venir conjugated normally. That produced the non-word "ven" as
+      // venir's imperative - which is also vendre's genuine 3rd-person
+      // present ("es ven una casa" = "a house is sold") - so every text
+      // using that form of vendre got glossed as venir instead. Two shipped
+      // B1/B2 seed texts hit this before it was caught.
+      imperative: ["vine", "vingui", "vinguem", "veniu", "vinguin"],
     },
   },
   veure: {

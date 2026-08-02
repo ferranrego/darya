@@ -180,8 +180,8 @@
       ]
     },
     {
-      "target": "Ara sé que cal treballar molt per aconseguir allò que es vol.",
-      "en": "Now I know you have to work hard to get what you want.",
+      "target": "Ara sé que cal treballar molt per aconseguir els somnis que tenim.",
+      "en": "Now I know you have to work hard to achieve the dreams you have.",
       "tokens": [
         {
           "surface": "Ara",
@@ -216,20 +216,20 @@
           "lexemeId": "lx-0756"
         },
         {
-          "surface": "allò",
-          "lexemeId": "lx-0872"
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "somnis",
+          "lexemeId": "lx-0863"
         },
         {
           "surface": "que",
           "lexemeId": "lx-0035"
         },
         {
-          "surface": "es",
-          "lexemeId": "lx-0009"
-        },
-        {
-          "surface": "vol",
-          "lexemeId": "lx-1007"
+          "surface": "tenim",
+          "lexemeId": "lx-0054"
         }
       ]
     },
@@ -349,7 +349,6 @@
   "vocabUsed": [
     "lx-0004",
     "lx-0007",
-    "lx-0009",
     "lx-0020",
     "lx-0027",
     "lx-0030",
@@ -363,6 +362,7 @@
     "lx-0038",
     "lx-0040",
     "lx-0042",
+    "lx-0043",
     "lx-0044",
     "lx-0048",
     "lx-0052",
@@ -395,8 +395,7 @@
     "lx-0756",
     "lx-0783",
     "lx-0832",
-    "lx-0872",
-    "lx-1007",
+    "lx-0863",
     "lx-1938",
     "lx-2030",
     "lx-2181",
