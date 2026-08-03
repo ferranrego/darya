@@ -120,6 +120,25 @@ const CA_SENTENCES = [
   "Moltes gràcies.",
   "Perdó, no entenc.",
   "Adeu, fins demà.",
+  // pragmatic functions: requesting, permission, offering/inviting,
+  // accepting/declining, agreeing/disagreeing, suggesting, repair,
+  // apologising - the first-conversation moves the sentences above never
+  // exercised. See `content/ca/lexicon/beginner-spec.json`'s
+  // `pragmaticFunctions` block for why this group exists.
+  "Voldria un cafè, si us plau.",
+  "Em pots ajudar, si us plau?",
+  "Puc seure aquí?",
+  "Es pot entrar?",
+  "Vols venir a la festa?",
+  "T'agradaria menjar amb nosaltres?",
+  "D'acord, anem-hi.",
+  "No puc, ho sento.",
+  "Estic d'acord amb tu.",
+  "No estic d'acord.",
+  "Què et sembla anar al parc?",
+  "Pots repetir, si us plau?",
+  "No entenc. Què vol dir això?",
+  "Perdona, arribo tard. No passa res.",
 ];
 
 const PRS_SENTENCES = [
@@ -197,6 +216,25 @@ const PRS_SENTENCES = [
   "بسیار تشکر.",
   "ببخشید، نمی‌فهمم.",
   "تا فردا.",
+  // pragmatic functions: requesting, permission, offering/inviting,
+  // accepting/declining, agreeing/disagreeing, suggesting, repair,
+  // apologising - the first-conversation moves the sentences above never
+  // exercised. See `content/prs/lexicon/beginner-spec.json`'s
+  // `pragmaticFunctions` block for why this group exists.
+  "لطفاً یک چای می‌خواهم.",
+  "خواهش می‌کنم، یک لحظه.",
+  "می‌توانم اینجا بمانم؟",
+  "اجازه است بیایم؟",
+  "می‌خواهی با ما بیایی؟",
+  "بیا با ما نان بخور.",
+  "خوب است، می‌آیم.",
+  "امکان ندارد، ببخشید. چیزی نیست.",
+  "من با تو موافق هستم.",
+  "من موافق نیستم.",
+  "چطور است اگر برویم؟",
+  "لطفاً تکرار کنید.",
+  "لطفاً آهسته گپ بزن.",
+  "من نمی‌فهمم. معنی این چی است؟",
 ];
 
 const LANGS = [

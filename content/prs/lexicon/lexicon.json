@@ -2242,7 +2242,8 @@
       "exampleTranslit": "yak chīz mēkhāham bugōyam.",
       "exampleEn": "I want to say one thing.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -5373,7 +5374,8 @@
       "exampleTranslit": "shāyad fardā biyāyam.",
       "exampleEn": "Maybe I'll come tomorrow.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -6160,7 +6162,8 @@
       "exampleTranslit": "īn bihtar ast.",
       "exampleEn": "This is better.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -6924,7 +6927,8 @@
       "exampleTranslit": "yak khāhish dāram.",
       "exampleEn": "I have a request.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -7040,7 +7044,8 @@
       "exampleTranslit": "muta'assifam ki nāwaqt kardam.",
       "exampleEn": "I am sorry that I am late.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -8170,8 +8175,7 @@
       "exampleTranslit": "īn kār mēarzad.",
       "exampleEn": "This job is worth it.",
       "tags": [
-        "Actions & Movement",
-        "beginner-core"
+        "Actions & Movement"
       ],
       "presentStem": "ارز"
     },
@@ -16250,7 +16254,8 @@
       "exampleTranslit": "hatman fardā mēāyam.",
       "exampleEn": "I will definitely come tomorrow.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ]
     },
     {
@@ -28740,7 +28745,8 @@
       "exampleTranslit": "man dawat-i ō rā pazīruftam.",
       "exampleEn": "I accepted his invitation.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -36064,7 +36070,8 @@
       "exampleTranslit": "āyā imkān dārad īn nazariya ishtibāh bāshad?",
       "exampleEn": "Is there a possibility that this theory is wrong?",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -56878,7 +56885,8 @@
       "exampleTranslit": "tekrār-e wāzhagān-e kelidi yaki az rāh-hā-ye ijād-e ensejām dar matn ast.",
       "exampleEn": "The repetition of key words is one of the ways to create cohesion in the text.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -57637,7 +57645,8 @@
       "exampleTranslit": "ma’nā-ye īn kalema chīst?",
       "exampleEn": "What is the meaning of this word?",
       "tags": [
-        "Advanced"
+        "Advanced",
+        "beginner-core"
       ]
     },
     {
@@ -113239,7 +113248,8 @@
       "exampleTranslit": "mīzān-e āb kam ast.",
       "exampleEn": "The amount of water is low.",
       "tags": [
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ],
       "id": "lx-6154",
       "targetNormalized": "میزان",
@@ -113257,8 +113267,7 @@
       "exampleTranslit": "īn kār khayli muhim ast.",
       "exampleEn": "This job is very important.",
       "tags": [
-        "Descriptions & Qualities",
-        "beginner-core"
+        "Descriptions & Qualities"
       ],
       "id": "lx-6155",
       "targetNormalized": "مهم",
@@ -113300,6 +113309,61 @@
       "id": "lx-6157",
       "targetNormalized": "چیدن",
       "freqRank": 6154,
+      "freqBand": 10
+    },
+    {
+      "target": "لحظه",
+      "translit": "lahza",
+      "glossEn": "moment, instant",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "لطفاً یک لحظه صبر کنید.",
+      "exampleTranslit": "lutfan yak lahza sabr kunēd.",
+      "exampleEn": "Please wait a moment.",
+      "tags": [
+        "beginner-core",
+        "Time & Calendar"
+      ],
+      "id": "lx-6158",
+      "targetNormalized": "لحظه",
+      "freqRank": 6155,
+      "freqBand": 10
+    },
+    {
+      "target": "اجازه",
+      "translit": "ijāza",
+      "glossEn": "permission",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "او از من اجازه گرفت.",
+      "exampleTranslit": "ō az man ijāza girift.",
+      "exampleEn": "He got permission from me.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6159",
+      "targetNormalized": "اجازه",
+      "freqRank": 6156,
+      "freqBand": 10
+    },
+    {
+      "target": "موافق",
+      "translit": "muwāfiq",
+      "glossEn": "in agreement, agreeing",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "من با تو موافق هستم.",
+      "exampleTranslit": "man bā tu muwāfiq hastam.",
+      "exampleEn": "I agree with you.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6160",
+      "targetNormalized": "موافق",
+      "freqRank": 6157,
       "freqBand": 10
     }
   ]

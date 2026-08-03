@@ -688,5 +688,55 @@
       "مربع",
       "مثلث"
     ]
+  },
+  "pragmaticFunctions": {
+    "_comment": "Same gap as the Catalan spec, found the same way: beginner-expressible.test.ts held ~65 canonical sentences and not one was a request, a permission question, an invitation, an agree/disagree exchange, or a repair strategy beyond ببخشید. closedClasses.politeness stops at greeting/farewell/thanks/one apology token. These are the Council of Europe Threshold / PCIC A1-A2 functions, grouped by speech act rather than semantic domain for the same reason verbFunctions is not. Afghan register matters here specifically: قبول and موافقم are what people actually say to agree, نمی‌توانم to decline, and اجازه (not a calque of a European 'permission') is the ordinary Kabul word for asking or granting it.",
+    "requestingFavour": [
+      "می‌خواهم",
+      "خواهش می‌کنم",
+      "یک لحظه",
+      "بدهید"
+    ],
+    "permission": [
+      "می‌توانم",
+      "اجازه",
+      "اجازه است",
+      "اجازه بدهید"
+    ],
+    "offeringInviting": [
+      "می‌خواهی",
+      "بیا",
+      "می‌خواهی بیایی",
+      "دعوت"
+    ],
+    "acceptingDeclining": [
+      "چرا که نه",
+      "حتماً می‌آیم",
+      "خوب است",
+      "امکان ندارد"
+    ],
+    "agreeingDisagreeing": [
+      "موافق",
+      "موافق هستم",
+      "موافق نیستم",
+      "درست است"
+    ],
+    "suggesting": [
+      "چطور است اگر",
+      "شاید",
+      "بهتر است",
+      "برویم"
+    ],
+    "repair": [
+      "لطفاً تکرار کنید",
+      "آهسته",
+      "نمی‌فهمم",
+      "معنی این چی است"
+    ],
+    "apologising": [
+      "ببخشید",
+      "متأسفم",
+      "چیزی نیست"
+    ]
   }
 }

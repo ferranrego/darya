@@ -34,7 +34,9 @@ import { join } from "node:path";
 import { lexiconFileSchema, type LexiconEntry } from "../src/lib/content/schema.ts";
 import { isTeachable } from "../src/lib/content/teachability.ts";
 import { buildLexiconIndex as buildCa } from "../src/lib/lang/ca/lexicon-index.ts";
+import { tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
 import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
+import { tokenizeDari } from "../src/lib/lang/prs/normalize.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { readSpec, specWords } from "./verify-beginner-core.ts";
 
@@ -69,6 +71,7 @@ function main() {
   lexiconFileSchema.parse(file);
   const entries: LexiconEntry[] = file.entries;
   const index = lang === "ca" ? buildCa(entries) : buildPrs(entries);
+  const tokenize = lang === "ca" ? tokenizeCatalan : tokenizeDari;
 
   const missing: string[] = [];
   const unteachable: string[] = [];
@@ -77,10 +80,22 @@ function main() {
   // Resolve the whole requirement before splitting it. `خدا حافظ` and
   // `فریاد زدن` are single lexicon entries, so splitting first reported their
   // second halves as absent words that never needed to exist.
+  //
+  // Split with the production tokenizer, not "has a space" as the test for
+  // whether there is anything to split. Catalan apostrophation (`d'acord`,
+  // `t'agradaria`) makes a phrase multi-word with no space at all, so
+  // `!req.includes(" ")` treated them as atomic and reported both as entirely
+  // missing from the lexicon instead of tagging the `acord` and `agradaria`
+  // they decompose to - the same defect verify-beginner-core.ts's `usable()`
+  // had, caught here because tagging ran against the same spec.
   const wanted: string[] = [];
   for (const req of readBeginnerCore(root)) {
-    if (index.resolve(req) || !req.includes(" ")) wanted.push(req);
-    else wanted.push(...req.split(/\s+/).filter(Boolean));
+    if (index.resolve(req)) {
+      wanted.push(req);
+      continue;
+    }
+    const parts = tokenize(req);
+    wanted.push(...(parts.length > 1 ? parts : [req]));
   }
 
   for (const word of wanted) {
