@@ -91,3 +91,4 @@ export const EXPLANATION_FOCUS =
 /** Grammatical roles the word-by-word breakdown may use. */
 export const WORD_ROLES = "Subject, Verb, Direct object, Indirect object, Weak pronoun, Preposition, Article, Conjunction";
 
+export const SYNTAX = "Ensure strictly correct Catalan syntax without Spanish interference (Castilianisms). Crucially: do NOT use the personal 'a' for direct objects (e.g., write 'Veig la Maria', never 'Veig a la Maria'), and use weak pronouns correctly.";

@@ -56,7 +56,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "La meva família és gran.", en: "My family is big." },
       { target: "El meu pare treballa molt.", en: "My father works a lot." },
-      { target: "La meva mare cuina molt bé.", en: "My mother cooks very well." },
+      { target: "La meva mare sap cuinar molt bé.", en: "My mother knows how to cook very well." },
       { target: "Tinc dos germans i una germana.", en: "I have two brothers and one sister." },
       { target: "Els diumenges anem junts a la platja.", en: "On Sundays we go to the beach together." },
     ],
@@ -383,8 +383,8 @@ export const seedTexts: SeedTextSource[] = [
         en: "If prices hadn't risen so much, perhaps more young people would have stayed to live there.",
       },
       {
-        target: "Ara, quan es ven una casa vella al poble, sempre la compra algú que no és d'aquí.",
-        en: "Now, when an old house is sold in the town, it's always bought by someone who isn't from here.",
+        target: "Ara, quan es ven una casa vella al poble, algú que no és d'aquí sempre acaba comprant-la.",
+        en: "Now, when an old house is sold in the town, someone who isn't from here always ends up buying it.",
       },
       {
         target: "M'agradaria que el poble no perdés mai el que sempre l'ha fet diferent dels altres.",

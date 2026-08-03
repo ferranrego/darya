@@ -13,10 +13,19 @@ export interface LexiconIndex {
   resolve: (surface: string) => LexiconEntry | null;
 }
 
-export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
-  const byId = new Map<string, LexiconEntry>();
-  const headwords = new Map<string, LexiconEntry>();
-  const variants = new Map<string, LexiconEntry>();
+/**
+ * Build the generated-verb-paradigm map (پاس 2/2b/3 below): every conjugated
+ * surface a verb entry produces, keyed to whichever entry claims it first.
+ *
+ * Exported, not inlined in `buildLexiconIndex`, so `scripts/audit-homographs.ts`
+ * can enumerate exactly the forms production resolution generates rather than
+ * reimplementing this and risking the two silently drifting apart - the same
+ * reasoning as `generatedSurfacesOf` in the Catalan module.
+ */
+export function buildGeneratedForms(
+  entries: LexiconEntry[],
+  headwords: Map<string, LexiconEntry>,
+): Map<string, LexiconEntry> {
   // Generated verb paradigms (کرده‌ام، نمی‌روم، بخوانید…). Lowest precedence;
   // first write wins, and entries are freqRank-ordered in the lexicon file,
   // so frequent verbs claim contested keys.
@@ -43,15 +52,6 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
   // legitimate resolution of that form for every other verb (see the "Pass
   // 2" comment below for why this map exists at all).
   const GENERATED_SURFACE_BLOCKLIST = new Set([matchKey("کاری")]);
-
-  for (const entry of entries) {
-    byId.set(entry.id, entry);
-    headwords.set(matchKey(entry.targetNormalized), entry);
-    for (const v of entry.variants) {
-      const key = matchKey(v);
-      if (!variants.has(key)) variants.set(key, entry);
-    }
-  }
 
   // Pass 2: expand verb paradigms. Simple verbs conjugate their own
   // infinitive; compound verbs (کار کردن) conjugate their light verb, but
@@ -127,6 +127,25 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
     const key = matchKey(form);
     if (!conjugations.has(key)) conjugations.set(key, owner);
   }
+
+  return conjugations;
+}
+
+export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
+  const byId = new Map<string, LexiconEntry>();
+  const headwords = new Map<string, LexiconEntry>();
+  const variants = new Map<string, LexiconEntry>();
+
+  for (const entry of entries) {
+    byId.set(entry.id, entry);
+    headwords.set(matchKey(entry.targetNormalized), entry);
+    for (const v of entry.variants) {
+      const key = matchKey(v);
+      if (!variants.has(key)) variants.set(key, entry);
+    }
+  }
+
+  const conjugations = buildGeneratedForms(entries, headwords);
 
   const lookup = (key: string) =>
     headwords.get(key) ?? variants.get(key) ?? conjugations.get(key);

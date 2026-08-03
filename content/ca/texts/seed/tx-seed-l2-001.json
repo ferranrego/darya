@@ -58,8 +58,8 @@
       ]
     },
     {
-      "target": "La meva mare cuina molt bé.",
-      "en": "My mother cooks very well.",
+      "target": "La meva mare sap cuinar molt bé.",
+      "en": "My mother knows how to cook very well.",
       "tokens": [
         {
           "surface": "La",
@@ -74,8 +74,12 @@
           "lexemeId": "lx-0090"
         },
         {
-          "surface": "cuina",
-          "lexemeId": "lx-0372"
+          "surface": "sap",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "cuinar",
+          "lexemeId": "lx-0391"
         },
         {
           "surface": "molt",
@@ -164,6 +168,7 @@
     "lx-0052",
     "lx-0054",
     "lx-0057",
+    "lx-0059",
     "lx-0089",
     "lx-0090",
     "lx-0092",
@@ -174,7 +179,7 @@
     "lx-0270",
     "lx-0321",
     "lx-0341",
-    "lx-0372",
+    "lx-0391",
     "lx-0455",
     "lx-0904"
   ],

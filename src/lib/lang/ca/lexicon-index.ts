@@ -208,6 +208,23 @@ export function nominalForms(word: string, pos: string): string[] {
   return [...out].filter(Boolean);
 }
 
+/**
+ * Every surface an entry's morphology generates: conjugations for a verb,
+ * gender/number forms otherwise. Exported so `scripts/audit-homographs.ts` can
+ * enumerate the same forms `buildLexiconIndex` does below, rather than
+ * reimplementing this and risking the two silently drifting apart.
+ */
+export function generatedSurfacesOf(entry: LexiconEntry): string[] {
+  const word = entry.targetNormalized;
+  if (entry.pos === "verb") {
+    // A compound/reflexive entry ("anar-se'n") conjugates its verb.
+    const head = word.split(/[\s-]/)[0];
+    const spec = verbSpec(head) ?? verbSpec(word);
+    return spec ? conjugationSurfaces(spec) : [];
+  }
+  return nominalForms(word, entry.pos);
+}
+
 export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
   const byId = new Map<string, LexiconEntry>();
   const headwords = new Map<string, LexiconEntry>();
@@ -225,18 +242,7 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
   }
 
   for (const entry of entries) {
-    const word = entry.targetNormalized;
-    const surfaces: string[] =
-      entry.pos === "verb"
-        ? (() => {
-            // A compound/reflexive entry ("anar-se'n") conjugates its verb.
-            const head = word.split(/[\s-]/)[0];
-            const spec = verbSpec(head) ?? verbSpec(word);
-            return spec ? conjugationSurfaces(spec) : [];
-          })()
-        : nominalForms(word, entry.pos);
-
-    for (const surface of surfaces) {
+    for (const surface of generatedSurfacesOf(entry)) {
       const key = matchKey(surface);
       if (!generated.has(key)) generated.set(key, entry);
     }

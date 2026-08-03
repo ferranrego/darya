@@ -6,6 +6,7 @@ import { buildIndex } from "../text";
 import { lexicon } from "../content/load";
 import { tokenize } from "../text";
 import { completeJson, deadlineIn } from "./providers";
+import { checkGrammar } from "./grammar-check";
 import { profile } from "../lang/index.ts";
 import { TRANSLITERATED, translitField, wordList } from "./lang-format.ts";
 import { MAX_OOV_TOKEN_RATE, MAX_OOV_TYPE_RATE } from "../content/difficulty.ts";
@@ -173,12 +174,12 @@ ${profile.prompts.orthography}
 ${profile.prompts.interference}
 
 ${taskFor(req, attempt)}${recent}
-
+${profile.prompts.syntax ? "\nSYNTAX RULES:\n- " + profile.prompts.syntax + "\n" : ""}
 VOCABULARY:
 - ${FUNCTION_WORDS_ARE_FREE}
 - Build the text from these words the learner knows. Any inflected form is fine: ${known}
 - These are the words the text exists to teach. Every one must appear: ${target}
-- At least 19 of every 20 words must come from the two lists above. A proper name is allowed, sparingly.
+- Do not use out-of-level nouns, adjectives, or verbs. You may freely use any necessary grammatical glue words (prepositions, conjunctions, ezafe) to ensure completely natural phrasing and correct syntax.
 
 Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 
@@ -487,6 +488,11 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
             `Repair failed: ${repairError instanceof Error ? repairError.message : String(repairError)}`,
           );
         }
+      }
+
+      const isGrammarValid = await checkGrammar(result.doc, req, deadline);
+      if (!isGrammarValid) {
+        throw new Error("Grammar validation failed for the target language. Regenerating...");
       }
 
       // The text is readable. Now check it actually teaches something.

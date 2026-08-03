@@ -11,6 +11,7 @@ import {
   CHAT,
   INTERFERENCE,
   BEGINNER_PATTERNS,
+  SYNTAX,
 } from "./prompts.ts";
 
 /**
@@ -75,5 +76,6 @@ export const prs: LanguageProfile = {
     explanationFocus: EXPLANATION_FOCUS,
     wordRoles: WORD_ROLES,
     chat: CHAT,
+    syntax: SYNTAX,
   },
 };

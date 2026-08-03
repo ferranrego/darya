@@ -24,6 +24,7 @@ import { isRuledOut } from "../src/lib/content/teachability.ts";
 import { verbSpec as caVerbSpec } from "../src/lib/lang/ca/lexicon-index.ts";
 import { ZWNJ } from "../src/lib/lang/prs/normalize.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
+import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 
 const lang = targetLang();
@@ -486,6 +487,35 @@ if (existsSync(seedDir)) {
   console.log(`✓ seed texts (${ok}/${files.length} valid)`);
 } else {
   fail("content/texts/seed missing");
+}
+
+// --- Homographs --------------------------------------------------------------
+//
+// A generated form (a verb's conjugation, a noun's plural/feminine) can spell
+// identically to a *different* entry's authored headword - resolve() always
+// prefers the headword, silently, so the check above (stored id agrees with
+// resolve()) passes even when resolve() picked the wrong word: cuina (kitchen)
+// shadowed cuinar's "cuina" (cooks) this way for months. See
+// scripts/audit-homographs.ts for the full incident and the reviewed-allowlist
+// design (content/<lang>/lexicon/homograph-review.json).
+if (lexicon) {
+  const { ambiguities, usages } = auditHomographs(lang, root, lexicon.entries, matchKey);
+  for (const u of usages) {
+    if (u.ok) continue;
+    if (!u.review) {
+      fail(
+        `${u.file}: "${u.surface}" in "${u.sentence}" is bound to ${u.storedLexemeId}, ambiguous with ` +
+          `${u.ambiguity.generator.id} ${u.ambiguity.generator.target} [${u.ambiguity.generator.pos}] - ` +
+          `no reviewed decision in content/${lang}/lexicon/homograph-review.json`,
+      );
+      continue;
+    }
+    fail(
+      `${u.file}: "${u.surface}" in "${u.sentence}" is bound to ${u.storedLexemeId}, but the reviewed decision ` +
+        `in homograph-review.json says the correct lexeme is ${u.review.correctLexemeId} (${u.review.reason})`,
+    );
+  }
+  console.log(`✓ homographs (${ambiguities.size} ambiguous surface(s), ${usages.length} used in seed texts)`);
 }
 
 if (errors > 0) {

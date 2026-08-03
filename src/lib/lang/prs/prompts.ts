@@ -88,3 +88,6 @@ export const EXPLANATION_FOCUS = "tenses used, ezafe chains, compound verbs, the
 
 /** Grammatical roles the word-by-word breakdown may use. */
 export const WORD_ROLES = "Subject, Verb, Object, Ezafe, Postposition, Particle";
+
+/** Syntactic guardrails for the language. */
+export const SYNTAX = "Persian is strictly SOV (Subject-Object-Verb). The verb MUST always appear at the very end of the sentence. Use proper prepositions (like از) and ezafe (ـِ) where grammatically required; do not omit them to save words.";

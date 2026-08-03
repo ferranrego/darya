@@ -1,0 +1,86 @@
+{
+  "formatVersion": "1.0.0",
+  "language": "ca",
+  "reviewed": [
+    {
+      "surface": "una",
+      "correctLexemeId": "lx-0042",
+      "reason": "Feminine indefinite article 'una' is its own authored headword; the collision is with 'un' (lx-0037)'s generated feminine, which is the same word, not a different one - harmless duplication, not a real homograph."
+    },
+    {
+      "surface": "els",
+      "correctLexemeId": "lx-0043",
+      "reason": "Masculine plural article/pronoun 'els' is its own authored headword; the collision is with 'el' (lx-0031)'s generated plural, again the same word - harmless duplication."
+    },
+    {
+      "surface": "un",
+      "correctLexemeId": "lx-0037",
+      "reason": "Indefinite article 'un' is the far more common reading than any conjugated form of 'unir' (to unite, lx-0358) that happens to spell the same."
+    },
+    {
+      "surface": "les",
+      "correctLexemeId": "lx-0044",
+      "reason": "Feminine plural article/pronoun 'les' is its own authored headword; the collision is with 'la' (lx-0032)'s generated plural, again the same word - harmless duplication."
+    },
+    {
+      "surface": "casa",
+      "correctLexemeId": "lx-0069",
+      "reason": "'casa' (house/home) is the intended noun in every seed sentence that uses it; the collision is with 'cas' (case/instance, lx-4157)'s over-generated feminine, which is not a real Catalan word."
+    },
+    {
+      "surface": "diners",
+      "correctLexemeId": "lx-1041",
+      "reason": "'diners' (money, plural) is its own authored headword and the idiomatic way to say money; the collision is with 'diner' (lx-0333)'s regular plural, same meaning either way."
+    },
+    {
+      "surface": "fins",
+      "correctLexemeId": "lx-0025",
+      "reason": "Preposition 'fins' (until/as far as) is the intended reading in every seed sentence; the collision is with 'fi' (end/aim, lx-4145)'s generated plural 'fins', which is far rarer in running text."
+    },
+    {
+      "surface": "amiga",
+      "correctLexemeId": "lx-0909",
+      "reason": "'amiga' (female friend) is its own authored headword; the collision is with 'amic' (lx-0088)'s generated feminine, same word."
+    },
+    {
+      "surface": "mica",
+      "correctLexemeId": "lx-4106",
+      "reason": "'una mica' (a bit) is the intended reading in every seed sentence; the collision is with 'mico' (monkey, lx-1072)'s over-generated feminine 'mica', which nobody means here."
+    },
+    {
+      "surface": "sou",
+      "correctLexemeId": "lx-0968",
+      "reason": "'el sou' (salary) is the intended noun; the collision is with 'ser' (to be, lx-0038)'s 2nd-person-plural present 'sou' (vosaltres sou), which does not fit any of these sentences."
+    },
+    {
+      "surface": "correu",
+      "correctLexemeId": "lx-0545",
+      "reason": "'el correu' (email/mail) is the intended noun; the collision is with 'córrer' (to run, lx-0202)'s 2nd-person-plural present 'correu' (vosaltres correu), which does not fit this sentence."
+    },
+    {
+      "surface": "estudiant",
+      "correctLexemeId": "lx-0310",
+      "reason": "'estudiant' (a student) is the intended noun in \"Quan era estudiant...\"; the collision is with 'estudiar' (to study, lx-0779)'s gerund 'estudiant' (studying), which does not fit after 'era'."
+    },
+    {
+      "surface": "deu",
+      "correctLexemeId": "lx-0277",
+      "reason": "'deu anys' (ten years) is the intended numeral; the collision is with 'deure' (to owe/must, lx-1062)'s 3rd-person present 'deu', which does not fit before a noun."
+    },
+    {
+      "surface": "ells",
+      "correctLexemeId": "lx-0246",
+      "reason": "'ells' (they, masc. pl.) is its own authored headword; the collision is with 'ell' (he, lx-0242)'s generated plural, same word."
+    },
+    {
+      "surface": "seu",
+      "correctLexemeId": "lx-0250",
+      "reason": "'el seu suport' (his/her support) is the intended possessive determiner; the collision is with 'seure' (to sit, lx-0531)'s imperative 'seu' (sit!), which does not fit after 'el'."
+    },
+    {
+      "surface": "sabates",
+      "correctLexemeId": "lx-1088",
+      "reason": "'sabates' (shoes, plural) is its own authored headword; the collision is with 'sabata' (lx-0432)'s regular plural, same word."
+    }
+  ]
+}

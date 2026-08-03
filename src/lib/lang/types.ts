@@ -110,6 +110,8 @@ export interface LanguagePrompts {
     /** The instruction given for the "translit" mode (e.g. phonetic guide or actual transliteration) */
     translitTask: string;
   };
+  /** Syntax guardrails specific to the language */
+  syntax?: string;
 }
 
 /** Product identity. One deployment, one brand. */

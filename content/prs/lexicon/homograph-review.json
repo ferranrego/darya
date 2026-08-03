@@ -1,0 +1,21 @@
+{
+  "formatVersion": "1.0.0",
+  "language": "prs",
+  "reviewed": [
+    {
+      "surface": "بازی",
+      "correctLexemeId": "lx-0191",
+      "reason": "'بازی می‌کنند' (they play) uses بازی as the noun half of the light-verb compound 'بازی کردن' (to play); the collision is with باختن (to lose, lx-0474)'s 2nd-person-singular present 'بازی' (تو می‌بازی), which does not fit before 'می‌کنند'."
+    },
+    {
+      "surface": "گذشته",
+      "correctLexemeId": "lx-1051",
+      "reason": "'سال گذشته' (last year) uses گذشته attributively for 'past/last' - the same word as گذشتن (to pass, lx-0621)'s participle, so the noun entry's gloss already covers this reading; not a different-meaning collision like cuina/cuinar."
+    },
+    {
+      "surface": "خورد",
+      "correctLexemeId": "lx-0066",
+      "reason": "'... خورد است' (... is small) is the adjective; the collision is with خوردن (to eat/drink, lx-0091)'s 3rd-person-singular past 'خورد' (he ate), which does not fit as a predicate after 'برای همه شاگردان'."
+    }
+  ]
+}

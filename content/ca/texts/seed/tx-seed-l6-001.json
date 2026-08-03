@@ -306,8 +306,8 @@
       ]
     },
     {
-      "target": "Ara, quan es ven una casa vella al poble, sempre la compra algú que no és d'aquí.",
-      "en": "Now, when an old house is sold in the town, it's always bought by someone who isn't from here.",
+      "target": "Ara, quan es ven una casa vella al poble, algú que no és d'aquí sempre acaba comprant-la.",
+      "en": "Now, when an old house is sold in the town, someone who isn't from here always ends up buying it.",
       "tokens": [
         {
           "surface": "Ara",
@@ -346,18 +346,6 @@
           "lexemeId": "lx-0342"
         },
         {
-          "surface": "sempre",
-          "lexemeId": "lx-0257"
-        },
-        {
-          "surface": "la",
-          "lexemeId": "lx-0032"
-        },
-        {
-          "surface": "compra",
-          "lexemeId": "lx-0853"
-        },
-        {
           "surface": "algú",
           "lexemeId": "lx-0148"
         },
@@ -380,6 +368,22 @@
         {
           "surface": "aquí",
           "lexemeId": "lx-0252"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "acaba",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "comprant",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
         }
       ]
     },
@@ -571,6 +575,8 @@
     "lx-0107",
     "lx-0108",
     "lx-0111",
+    "lx-0118",
+    "lx-0123",
     "lx-0139",
     "lx-0148",
     "lx-0168",
@@ -599,7 +605,6 @@
     "lx-0650",
     "lx-0687",
     "lx-0783",
-    "lx-0853",
     "lx-0879",
     "lx-1877",
     "lx-2181",
