@@ -231,6 +231,16 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
     overrides: {
       present: ["comprenc", "comprens", "comprèn", "comprenem", "compreneu", "comprenen"],
       presentSubjunctive: ["comprengui", "comprenguis", "comprenguem", "comprengueu", "comprenguin"],
+      // Same "comprengu-" stem as the present subjunctive; missing here fell
+      // back to the regular guess "comprenés", found by the same audit that
+      // caught creure/rebre/venir's identical gaps this session.
+      imperfectSubjunctive: [
+        "comprengués",
+        "comprenguessis",
+        "comprenguéssim",
+        "comprenguéssiu",
+        "comprenguessin",
+      ],
       participle: ["comprès", "compresa", "compresos", "compreses"],
       gerund: ["comprenent"],
     },
@@ -241,6 +251,13 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
     overrides: {
       present: ["entenc", "entens", "entén", "entenem", "enteneu", "entenen"],
       presentSubjunctive: ["entengui", "entenguis", "entenguem", "entengueu", "entenguin"],
+      imperfectSubjunctive: [
+        "entengués",
+        "entenguessis",
+        "entenguéssim",
+        "entenguéssiu",
+        "entenguessin",
+      ],
       participle: ["entès", "entesa", "entesos", "enteses"],
       gerund: ["entenent"],
     },
@@ -251,6 +268,13 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
     overrides: {
       present: ["responc", "respons", "respon", "responem", "responeu", "responen"],
       presentSubjunctive: ["respongui", "responguis", "responguem", "respongueu", "responguin"],
+      imperfectSubjunctive: [
+        "respongués",
+        "responguessis",
+        "responguéssim",
+        "responguéssiu",
+        "responguessin",
+      ],
       participle: ["respost", "resposta", "respostos", "respostes"],
       gerund: ["responent"],
     },
@@ -288,6 +312,7 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       present: ["somric", "somrius", "somriu", "somriem", "somrieu", "somriuen"],
       imperfect: ["somreia", "somreies", "somrèiem", "somrèieu", "somreien"],
       presentSubjunctive: ["somrigui", "somriguis", "somriguem", "somrigueu", "somriguin"],
+      imperfectSubjunctive: ["somrigués", "somriguessis", "somriguéssim", "somriguéssiu", "somriguessin"],
       participle: ["somrigut", "somriguda", "somriguts", "somrigudes"],
       gerund: ["somrient"],
     },
@@ -351,6 +376,7 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       present: ["escric", "escrius", "escriu", "escrivim", "escriviu", "escriuen"],
       imperfect: ["escrivia", "escrivies", "escrivíem", "escrivíeu", "escrivien"],
       presentSubjunctive: ["escrigui", "escriguis", "escriguem", "escrigueu", "escriguin"],
+      imperfectSubjunctive: ["escrigués", "escriguessis", "escriguéssim", "escriguéssiu", "escriguessin"],
       participle: ["escrit", "escrita", "escrits", "escrites"],
       gerund: ["escrivint"],
     },
@@ -362,6 +388,7 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       present: ["conec", "coneixes", "coneix", "coneixem", "coneixeu", "coneixen"],
       imperfect: ["coneixia", "coneixies", "coneixíem", "coneixíeu", "coneixien"],
       presentSubjunctive: ["conegui", "coneguis", "coneguem", "conegueu", "coneguin"],
+      imperfectSubjunctive: ["conegués", "coneguessis", "coneguéssim", "coneguéssiu", "coneguessin"],
       participle: ["conegut", "coneguda", "coneguts", "conegudes"],
       gerund: ["coneixent"],
     },
@@ -452,6 +479,11 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       future: ["naixeré", "naixeràs", "naixerà", "naixerem", "naixereu", "naixeran"],
       conditional: ["naixeria", "naixeries", "naixeríem", "naixeríeu", "naixerien"],
       presentSubjunctive: ["neixi", "neixis", "naixem", "naixeu", "neixin"],
+      // Not the "naix-" stem above: the imperfect subjunctive keeps the
+      // historic "nasqu-" root visible in the participle "nascut", not the
+      // incoative present-tense stem. Missing this fell back to "néixés",
+      // which is not a word.
+      imperfectSubjunctive: ["nasqués", "nasquessis", "nasquéssim", "nasquéssiu", "nasquessin"],
       participle: ["nascut", "nascuda", "nascuts", "nascudes"],
       gerund: ["naixent"],
     },
@@ -495,6 +527,7 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       present: ["duc", "dus", "du", "duem", "dueu", "duen"],
       imperfect: ["duia", "duies", "dúiem", "dúieu", "duien"],
       presentSubjunctive: ["dugui", "duguis", "duguem", "dugueu", "duguin"],
+      imperfectSubjunctive: ["dugués", "duguessis", "duguéssim", "duguéssiu", "duguessin"],
       participle: ["dut", "duta", "duts", "dutes"],
       gerund: ["duent"],
     },
@@ -696,6 +729,7 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       present: ["enduc", "endús", "enduus", "endú", "enduu", "enduem", "endueu", "enduen"],
       imperfect: ["enduia", "enduies", "endúiem", "endúieu", "enduien"],
       presentSubjunctive: ["endugui", "enduguis", "enduguem", "endugueu", "enduguin"],
+      imperfectSubjunctive: ["endugués", "enduguessis", "enduguéssim", "enduguéssiu", "enduguessin"],
       participle: ["endut", "enduta", "enduts", "endutes"],
       gerund: ["enduent"],
     },

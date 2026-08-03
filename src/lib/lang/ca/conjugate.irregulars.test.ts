@@ -28,7 +28,22 @@ const CASES: [string, string[], string[]][] = [
   ["cometre", ["comès", "comesa", "comesos"], ["cometut", "cometuda"]],
   ["inscriure", ["inscric", "inscriu", "inscrit", "inscrivint"], ["inscriuo", "inscriuüt"]],
   ["detenir", ["detinc", "deté", "detingut", "detenint"], ["deteneixo", "deteneix"]],
-  ["endur", ["enduc", "endú", "enduu", "endut", "enduent"], ["endus", "endu"]],
+  ["endur", ["enduc", "endú", "enduu", "endut", "enduent", "endugués"], ["endus", "endu"]],
+  // Imperfect subjunctive specifically: a table that gets every other tense
+  // right can still fall back to the regular paradigm for just this one,
+  // because it is a separate override slot. `creure`/`venir`/`rebre` each
+  // shipped that way earlier and were only caught by trying to use the real
+  // word in a sentence; this sweeps the rest of the table for the same gap -
+  // every verb whose present subjunctive already uses an irregular stem
+  // (velar insertion, a suppletive root) needs that same stem here, not the
+  // bare-infinitive stem the generic conjugator would otherwise guess.
+  ["comprendre", ["comprengués"], ["comprendés"]],
+  ["entendre", ["entengués"], ["entendés"]],
+  ["respondre", ["respongués"], ["respondés"]],
+  ["somriure", ["somrigués"], ["somriués"]],
+  ["escriure", ["escrigués"], ["escriués"]],
+  ["conèixer", ["conegués"], ["conèixés"]],
+  ["néixer", ["nasqués"], ["néixés"]],
 ];
 
 describe.each(CASES)("%s", (infinitive, required, forbidden) => {
