@@ -172,6 +172,25 @@ describe("noun and adjective inflection", () => {
     expect(has("feliç", "adjective", "felices"), "feliç -> felices").toBe(true);
   });
 
+  it("does not devoice the -nt cluster like a vowel-final participle", () => {
+    // The t -> d devoicing candidate (cansat -> cansada) is a participial
+    // pattern that only fires after a vowel. Applied blindly to any word
+    // ending in "t", it also fired after the -nt cluster of present,
+    // important, valent - producing "presenda"/"importanda"/"valenda", which
+    // are not words under any reading. The plain -a candidate is still
+    // generated (valent -> valenta is real; a few -nt adjectives being
+    // invariant, like present/important, is the harmless over-generation
+    // this file's own docstring accepts - inventing a form nobody uses is not).
+    expect(has("present", "adjective", "presenda"), "presenda is not a word").toBe(false);
+    expect(has("important", "adjective", "importanda"), "importanda is not a word").toBe(false);
+    expect(has("valent", "adjective", "valenda"), "valenda is not a word").toBe(false);
+    expect(has("present", "adjective", "presenta"), "the plain -a candidate still fires").toBe(true);
+    expect(has("valent", "adjective", "valenta"), "valent -> valenta is real").toBe(true);
+    // The devoicing candidate must still fire for genuine participles, where
+    // the t follows a vowel rather than a consonant cluster.
+    expect(has("cansat", "adjective", "cansada"), "vowel+t still devoices").toBe(true);
+  });
+
   it("forms plurals including the irregular shapes", () => {
     expect(has("bo", "adjective", "bons"), "stressed vowel takes -ns").toBe(true);
     expect(has("gos", "noun", "gossos"), "monosyllable in -s doubles it").toBe(true);

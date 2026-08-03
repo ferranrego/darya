@@ -135,7 +135,17 @@ export function nominalForms(word: string, pos: string): string[] {
     else if (/u$/.test(w)) feminines.push(w.slice(0, -1) + "va"); // blau -> blava
     else if (/ig$/.test(w)) feminines.push(w.slice(0, -2) + "ja"); // roig -> roja
     else if (/ós$/.test(w)) feminines.push(w.slice(0, -2) + "osa"); // gustós -> gustosa
-    else if (/t$/.test(w)) feminines.push(w + "a", w.slice(0, -1) + "da"); // petita / cansada
+    else if (/t$/.test(w)) {
+      // petit -> petita, cansat -> cansada: the devoicing candidate (t -> d)
+      // is a participial pattern and only fires after a vowel. After a
+      // consonant - the -nt cluster of present, important, valent - it does
+      // not apply at all: there is no Catalan word "presenda"/"importanda".
+      // The plain "-a" candidate still is (valent -> valenta is real; that a
+      // few -nt adjectives are in fact invariant - present, important - is
+      // the harmless over-generation this file's own docstring accepts).
+      feminines.push(w + "a");
+      if (/[aeiouàèéíòóúü]t$/.test(w)) feminines.push(w.slice(0, -1) + "da");
+    }
     else if (/c$/.test(w)) feminines.push(w + "a", w.slice(0, -1) + "ga"); // rica / groga
     else if (/ç$/.test(w)) feminines.push(w.slice(0, -1) + "ça");
     // An unstressed final -i takes -ia, and the stem vowel then needs its
