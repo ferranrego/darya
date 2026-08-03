@@ -25,6 +25,7 @@ import {
   useDueCount,
   useGrammarProgress,
   useProfile,
+  useReadTexts,
   useSupabase,
   useUser,
   useUserWords,
@@ -74,6 +75,8 @@ export default function HomePage() {
   const { data: alphaProgress } = useAlphabetProgress();
   const { data: grammarProgress } = useGrammarProgress();
   const dueCount = useDueCount();
+  const { data: readRows } = useReadTexts();
+  const hasReadAnything = (readRows?.length ?? 0) > 0;
   const reduce = useReducedMotion();
 
   // Time-of-day drives the hero; set after mount so SSR and client agree.
@@ -126,7 +129,13 @@ export default function HomePage() {
   }, [goalMet, todayXp, profile?.daily_goal]);
 
   // The single next best action → hero CTA. SRS-first: after the alphabet
-  // gate, due reviews take priority, then grammar, then reading.
+  // gate, due reviews take priority. Reading comes before grammar for a
+  // learner who has never read a single text - the onboarding's own pitch is
+  // "you'll learn by reading," so a brand-new user whose first hero CTA
+  // pushed them into a 93-lesson grammar tree instead (dueCount is always 0
+  // and grammarComplete is always false on day one) contradicted the product
+  // before they had used it once. Once a learner has read anything at all,
+  // the original grammar-then-reading order resumes.
   const grammarHint = grammarComplete
     ? `All ${activeLessons.length} lessons done`
     : `${currentGrammarLevel} · ${completedLessons} of ${activeLessons.length} lessons`;
@@ -134,9 +143,11 @@ export default function HomePage() {
     ? "alphabet"
     : dueCount > 0
       ? "review"
-      : !grammarComplete
-        ? "grammar"
-        : "read";
+      : !hasReadAnything
+        ? "read"
+        : !grammarComplete
+          ? "grammar"
+          : "read";
   const CTAS: Record<HeroKey, HeroCta> = {
     alphabet: {
       href: "/alphabet",

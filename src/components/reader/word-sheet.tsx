@@ -34,11 +34,13 @@ export function WordSheet({
 }) {
   const [conjugation, setConjugation] = useState<ConjugationResponse | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [analyzeError, setAnalyzeError] = useState<string | null>(null);
 
   useEffect(() => {
     setTimeout(() => {
       setConjugation(null);
       setIsAnalyzing(false);
+      setAnalyzeError(null);
     }, 0);
   }, [surface]);
 
@@ -50,9 +52,13 @@ export function WordSheet({
   const handleAnalyze = async () => {
     if (!surface || !entry) return;
     setIsAnalyzing(true);
+    setAnalyzeError(null);
     const result = await analyzeConjugation(surface, entry.target, entry.glossEn);
     if ("error" in result) {
-      alert(result.error);
+      // In-sheet, not a native alert() - the sheet already has an error
+      // pattern (see sentence-sheet.tsx) and a native dialog breaks the
+      // whole visual language, jarringly so on mobile.
+      setAnalyzeError(result.error);
     } else {
       setConjugation(result);
     }
@@ -111,7 +117,22 @@ export function WordSheet({
 
                 {isVerb && (
                   <div className="mt-5 border-t border-line pt-5">
-                    {conjugation ? (
+                    {analyzeError ? (
+                      <div className="flex flex-col gap-3">
+                        <div className="rounded-2xl border border-red-500/20 bg-red-500/5 p-4 text-[14px] text-red-600">
+                          {analyzeError}
+                        </div>
+                        <button
+                          type="button"
+                          onClick={handleAnalyze}
+                          disabled={isAnalyzing}
+                          className="flex w-full items-center justify-center gap-2 rounded-xl bg-lapis-soft/50 py-3 text-[14px] font-medium text-lapis transition-colors hover:bg-lapis-soft disabled:opacity-50"
+                        >
+                          {isAnalyzing ? <Loader2 size={16} className="animate-spin" /> : <Wand2 size={16} />}
+                          {isAnalyzing ? "Analyzing tense..." : "Try again"}
+                        </button>
+                      </div>
+                    ) : conjugation ? (
                       <div className="rounded-2xl border border-line bg-paper/50 p-4">
                         <div className="mb-3 flex items-center justify-between">
                           <h4 className="text-[14px] font-medium text-ink-soft">Conjugation Analysis</h4>

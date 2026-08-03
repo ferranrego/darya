@@ -4,6 +4,7 @@ import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { useAlphabetProgress, useProfile, useUserWords } from "@/lib/queries/hooks";
 import { levelLabel, levels } from "@/lib/content/load";
+import { profile as lang } from "@/lib/lang";
 import { VocabChart } from "./vocab-chart";
 import { ActivityHeatmap } from "./heatmap";
 
@@ -76,10 +77,12 @@ export default function StatsPage() {
           <h2 className="text-[14px] font-medium text-ink-soft mb-1">Total Experience</h2>
           <p className="text-[24px] font-bold">{profile.xp} <span className="text-[14px] font-normal text-ink-soft">XP</span></p>
         </div>
-        <div className="rounded-2xl border border-line bg-surface p-5">
-          <h2 className="text-[14px] font-medium text-ink-soft mb-1">Alphabet Mastery</h2>
-          <p className="text-[24px] font-bold">{completedAlphabetUnits} <span className="text-[14px] font-normal text-ink-soft">units</span></p>
-        </div>
+        {lang.capabilities.scriptCourse && (
+          <div className="rounded-2xl border border-line bg-surface p-5">
+            <h2 className="text-[14px] font-medium text-ink-soft mb-1">Alphabet Mastery</h2>
+            <p className="text-[24px] font-bold">{completedAlphabetUnits} <span className="text-[14px] font-normal text-ink-soft">units</span></p>
+          </div>
+        )}
       </section>
 
       <section className="rounded-2xl border border-line bg-surface p-5">

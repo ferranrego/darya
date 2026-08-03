@@ -1,5 +1,5 @@
 import { FREQ_BAND_COUNT, type LexiconEntry } from "./content/schema";
-import { levels } from "./content/load";
+import { availableLevels } from "./content/load";
 
 /**
  * Level assessment: sample words across frequency bands, estimate vocabulary
@@ -135,9 +135,16 @@ export function scoreAssessment(
     prefixKnown = prefixKnown && rate >= BAND_KNOWN_THRESHOLD;
   }
 
-  // Highest level whose entry threshold the learner clears.
-  let levelId = levels[0].id;
-  for (const level of levels) {
+  // Highest level whose entry threshold the learner clears - restricted to
+  // availableLevels, the same list the reading level-up check and journey map
+  // use. Scanning every level content defines let an over-confident or
+  // fluent learner be placed at C1/C2 while those are unavailable (their
+  // vocabulary isn't finished), and nothing downstream can promote a learner
+  // out of an unavailable level, so `/api/generate` had no teachable words
+  // left to draw from - a permanent dead end on the very first "Start
+  // reading" tap, with no retake-assessment path to recover from it.
+  let levelId = availableLevels[0].id;
+  for (const level of availableLevels) {
     if (estimatedVocab >= level.entryKnownWords) levelId = level.id;
   }
 

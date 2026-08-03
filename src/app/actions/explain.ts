@@ -41,7 +41,11 @@ export async function explainSentence(target: string): Promise<SentenceExplanati
 
     return explanation;
   } catch (err) {
+    // Logged in full for debugging; the client only ever sees a friendly
+    // message - `err.message` here can carry every provider's own error text
+    // (rate limits, status codes, response fragments), which used to render
+    // verbatim in the sheet's error box.
     console.error("Sentence explanation error:", err);
-    return { error: err instanceof Error ? err.message : "Failed to explain sentence" };
+    return { error: "Couldn't explain this sentence right now. Please try again in a moment." };
   }
 }

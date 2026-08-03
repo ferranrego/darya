@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { lexicon } from "./content/load.ts";
+import { availableLevels, lexicon } from "./content/load.ts";
 import { getInitialSeed, scoreAssessment } from "./assessment.ts";
 
 describe("assessment", () => {
@@ -25,5 +25,19 @@ describe("assessment", () => {
     expect(all.estimatedVocab).toBeGreaterThan(none.estimatedVocab);
     expect(all.knownLexemeIds.length).toBeGreaterThan(none.knownLexemeIds.length);
     expect(none.levelId).toBe("L1");
+  });
+
+  it("never places a learner at a level the product cannot serve", () => {
+    // scoreAssessment used to scan every level content defines, not just the
+    // ones marked available. A fluent or over-confident learner selecting
+    // every sampled word as known could be placed at Catalan's C1/C2, which
+    // are unavailable because their vocabulary isn't finished - and nothing
+    // downstream can promote a learner out of an unavailable level, so
+    // /api/generate had no teachable words left and the learner's very first
+    // "Start reading" tap was a dead end with no way back.
+    const words = getInitialSeed(lexicon.entries);
+    const all = scoreAssessment(words, new Set(words.map((w) => w.entry.id)), lexicon.entries);
+    const availableIds = new Set(availableLevels.map((l) => l.id));
+    expect(availableIds.has(all.levelId), `${all.levelId} is not in availableLevels`).toBe(true);
   });
 });

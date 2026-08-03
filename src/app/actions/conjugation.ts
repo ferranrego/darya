@@ -62,7 +62,12 @@ Return ONLY JSON matching this exact schema:
     });
     return data;
   } catch (err) {
+    // Logged in full for debugging; the client only ever sees a friendly
+    // message. `completeJson`'s failure carries every provider's own error
+    // text (rate limits, status codes, response fragments) - a learner
+    // tapping a verb to understand its conjugation was shown that raw string
+    // verbatim in a native `alert()`.
     console.error("Conjugation error:", err);
-    return { error: err instanceof Error ? err.message : "Failed to analyze conjugation" };
+    return { error: "Couldn't analyze this word right now. Please try again in a moment." };
   }
 }
