@@ -129,7 +129,43 @@ export function nominalForms(word: string, pos: string): string[] {
      * inert, while a missing one means the reader cannot explain a real word.
      */
     const feminines: string[] = [];
-    if (/o$/.test(w)) feminines.push(w + "na", w.slice(0, -1) + "a"); // bo -> bona
+
+    /**
+     * Whole classes of Catalan adjective are gender-invariant - "una decisió
+     * important", never "importanta" - and the generic rules below assumed
+     * every consonant-final adjective takes "+a", inventing "possibla",
+     * "fàcila", "importanta", "populara". A catalan-philologist review,
+     * sourced against DIEC2-derived tables, found these suffixes exception-
+     * free or near enough to enumerate: -ble (any -able/-eble/-ible/-oble/
+     * -uble) and -erior have none at all; -ar, -al, -nt and -il each have a
+     * small closed list of words that look like they belong but actually
+     * inflect. Scoped to adjectives only - a noun on the same ending can be a
+     * person and still need its feminine (general the military rank ->
+     * generala), which is the over-generation this file's docstring already
+     * accepts for nouns and is unaffected here.
+     */
+    const AR_EXCEPTIONS = new Set([
+      "car", "clar", "rar", "avar", "bàrbar", "búlgar", "ignar", "ovípar", "tàrtar", "zíngar",
+    ]);
+    const AL_EXCEPTIONS = new Set(["mal", "anòmal", "col·legial", "provençal"]);
+    const NT_EXCEPTIONS = new Set([
+      "content", "calent", "valent", "dolent", "lent", "sant", "tant", "quant", "atent",
+      "violent", "virulent", "comboiant", "corpulent", "cruent", "fraudulent", "incruent",
+      "opulent", "pulverulent", "purulent", "somnolent", "suculent",
+    ]);
+    const invariantAdjective =
+      pos === "adjective" &&
+      ((/[aeiou]ble$/.test(w) || /erior$/.test(w)) ||
+        (/ar$/.test(w) && !AR_EXCEPTIONS.has(w)) ||
+        (/al$/.test(w) && !AL_EXCEPTIONS.has(w)) ||
+        (/nt$/.test(w) && !NT_EXCEPTIONS.has(w)) ||
+        (/il$/.test(w) && !/òfil$/.test(w) && w !== "tranquil"));
+
+    if (invariantAdjective) {
+      // No feminine candidate at all - matched, not omitted by accident.
+    } else if (w === "tranquil") {
+      feminines.push("tranquil·la"); // the one common -il word with a real, irregular feminine
+    } else if (/o$/.test(w)) feminines.push(w + "na", w.slice(0, -1) + "a"); // bo -> bona
     else if (/e$/.test(w)) feminines.push(w.slice(0, -1) + "a"); // pobre -> pobra
     else if (/[àíúè]$/.test(w)) feminines.push(w + "na"); // sa -> sana, comú -> comuna
     else if (/u$/.test(w)) feminines.push(w.slice(0, -1) + "va"); // blau -> blava

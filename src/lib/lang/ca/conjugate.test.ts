@@ -1,7 +1,9 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { attach, conjugationSurfaces, stemOf } from "./conjugate.ts";
 import { IRREGULAR_VERBS } from "./irregulars.ts";
-import { nominalForms, verbSpec } from "./lexicon-index.ts";
+import { buildLexiconIndex, nominalForms, verbSpec } from "./lexicon-index.ts";
 
 /** Every surface form of a verb, as a Set for membership assertions. */
 function forms(infinitive: string): Set<string> {
@@ -177,18 +179,53 @@ describe("noun and adjective inflection", () => {
     // pattern that only fires after a vowel. Applied blindly to any word
     // ending in "t", it also fired after the -nt cluster of present,
     // important, valent - producing "presenda"/"importanda"/"valenda", which
-    // are not words under any reading. The plain -a candidate is still
-    // generated (valent -> valenta is real; a few -nt adjectives being
-    // invariant, like present/important, is the harmless over-generation
-    // this file's own docstring accepts - inventing a form nobody uses is not).
+    // are not words under any reading.
+    //
+    // present/important are also invariant adjectives (no feminine at all -
+    // see the invariant-class test below), so their plain "-a" candidate is
+    // gone too now; valent is a named exception to that class and keeps its
+    // real feminine.
     expect(has("present", "adjective", "presenda"), "presenda is not a word").toBe(false);
     expect(has("important", "adjective", "importanda"), "importanda is not a word").toBe(false);
     expect(has("valent", "adjective", "valenda"), "valenda is not a word").toBe(false);
-    expect(has("present", "adjective", "presenta"), "the plain -a candidate still fires").toBe(true);
     expect(has("valent", "adjective", "valenta"), "valent -> valenta is real").toBe(true);
     // The devoicing candidate must still fire for genuine participles, where
     // the t follows a vowel rather than a consonant cluster.
     expect(has("cansat", "adjective", "cansada"), "vowel+t still devoices").toBe(true);
+  });
+
+  it("does not invent a feminine for gender-invariant adjective classes", () => {
+    // "una decisió important", never "importanta" - a catalan-philologist
+    // review sourced these suffixes as exception-free or near enough to
+    // enumerate. Scoped to pos "adjective" only: the same endings on a noun
+    // (general the military rank -> generala) still need the feminine, which
+    // the over-generation policy already covers and this must not disturb.
+    for (const w of [
+      "popular", "impopular", "particular", "familiar", "similar", // -ar
+      "normal", "final", "social", "natural", "legal", // -al
+      "possible", "terrible", "amable", // -ble
+      "superior", "inferior", "anterior", // -erior
+      "important", "present", "urgent", "eficient", // -nt (productive class)
+      "fàcil", "difícil", "civil", // -il
+    ]) {
+      expect(nominalForms(w, "adjective"), `${w} should have no feminine`).not.toContain(w + "a");
+    }
+    // The over-generation policy is unaffected for nouns on the same endings.
+    expect(has("general", "noun", "generala"), "general (rank, noun) still inflects").toBe(true);
+  });
+
+  it("still inflects the named exceptions within each invariant class", () => {
+    expect(has("car", "adjective", "cara"), "car -> cara is a named -ar exception").toBe(true);
+    expect(has("clar", "adjective", "clara")).toBe(true);
+    expect(has("mal", "adjective", "mala"), "mal -> mala is a named -al exception").toBe(true);
+    expect(has("content", "adjective", "contenta"), "content -> contenta is a named -nt exception").toBe(true);
+    expect(has("valent", "adjective", "valenta")).toBe(true);
+    expect(has("calent", "adjective", "calenta")).toBe(true);
+    expect(has("anglòfil", "adjective", "anglòfila"), "-òfil compounds still inflect").toBe(true);
+    // tranquil is irregular, not invariant: the real feminine has l·l, not
+    // the "tranquila" the generic rule used to invent.
+    expect(has("tranquil", "adjective", "tranquil·la")).toBe(true);
+    expect(has("tranquil", "adjective", "tranquila"), "tranquila is not a word").toBe(false);
   });
 
   it("forms plurals including the irregular shapes", () => {
@@ -244,5 +281,26 @@ describe("verbs the grammar course leans on", () => {
       const set = forms(inf);
       for (const f of expected) expect(set.has(f), `${inf}: ${f}`).toBe(true);
     }
+  });
+});
+
+describe("darrer/darrere - a real lexicon mis-tagging, not a generator bug", () => {
+  // "darrera" was authored as a variant spelling of "darrere" (behind), but
+  // Optimot is explicit that darrera is only ever the feminine of the
+  // adjective darrer (last) - the 1995 IEC dictionary rejects it for the
+  // preposition entirely. The mistagged variant let the resolver's authored-
+  // beats-generated precedence shadow the adjective's own real feminine.
+  const root = join(import.meta.dirname, "..", "..", "..", "..", "content", "ca");
+  const entries = JSON.parse(readFileSync(join(root, "lexicon", "lexicon.json"), "utf8")).entries;
+  const index = buildLexiconIndex(entries);
+
+  it("resolves darrera to the adjective, not the preposition", () => {
+    const hit = index.resolve("darrera");
+    expect(hit?.pos, "darrera should be darrer (last), fem.").toBe("adjective");
+  });
+
+  it("still resolves darrere to the preposition", () => {
+    const hit = index.resolve("darrere");
+    expect(hit?.pos).toBe("preposition");
   });
 });
