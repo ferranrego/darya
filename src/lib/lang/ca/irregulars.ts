@@ -140,6 +140,21 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       participle: ["sabut", "sabuda", "sabuts", "sabudes"],
     },
   },
+  rebre: {
+    infinitive: "rebre",
+    conjugation: 2,
+    overrides: {
+      // Everything except the present is fully regular (future rebré,
+      // participle rebut...). The present alone needs the same b->p
+      // devoicing as saber (saps/sap, not sabs/sab): without this override
+      // the generic conjugator produced "reb" for the bare 3rd-singular
+      // form, which is not a word, and it silently outranked the real form
+      // "rep" - a B2 batch's own example sentence needed "rep" and it did
+      // not resolve. Found the same way venir's missing imperative was:
+      // by trying to use the word in a sentence.
+      present: ["rebo", "reps", "rep", "rebem", "rebeu", "reben"],
+    },
+  },
   tenir: {
     infinitive: "tenir",
     conjugation: 3,
