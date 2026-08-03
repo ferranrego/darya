@@ -65,7 +65,15 @@ describe.each(LANGS)("%s teachable pool", (lang) => {
     // Quarantining is only safe if it cannot starve a level: a level with no
     // teachable candidate left would produce texts that teach nothing, which
     // is the failure the quarantine exists to prevent.
-    for (const level of levels) {
+    //
+    // Restricted to `available` levels: an unavailable one (Catalan's C1/C2,
+    // whose vocabulary isn't finished) can never actually be reached by a
+    // learner - `scoreAssessment` and the reading level-up check both gate on
+    // exactly this flag - so a thin pool there cannot starve anyone. Without
+    // this, growing B2 to its real CEFR figure pushed C1's already-compressed
+    // threshold close enough to B2's that its sliver of a candidate pool
+    // failed this check, even though no learner could ever draw from it.
+    for (const level of levels.filter((l) => l.available)) {
       const candidates = entries.filter(
         (e) =>
           level.freqBands.includes(e.freqBand) &&

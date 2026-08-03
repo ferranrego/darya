@@ -1,0 +1,512 @@
+[
+  {
+    "target": "accident",
+    "glossEn": "accident",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Va tenir un accident de cotxe ahir.",
+    "exampleEn": "He had a car accident yesterday.",
+    "tags": []
+  },
+  {
+    "target": "líder",
+    "glossEn": "leader",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El líder del grup va prendre la decisió.",
+    "exampleEn": "The group's leader made the decision.",
+    "tags": []
+  },
+  {
+    "target": "marc",
+    "glossEn": "framework, frame; context",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta decisió es pren en el marc de la nova llei.",
+    "exampleEn": "This decision is made within the framework of the new law.",
+    "tags": []
+  },
+  {
+    "target": "civil",
+    "glossEn": "civil, civilian",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Va treballar per a l'administració civil de la ciutat.",
+    "exampleEn": "He worked for the city's civil administration.",
+    "tags": []
+  },
+  {
+    "target": "vila",
+    "glossEn": "town",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La vila té una plaça major molt bonica.",
+    "exampleEn": "The town has a very pretty main square.",
+    "tags": []
+  },
+  {
+    "target": "governador",
+    "glossEn": "governor",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El governador va visitar la ciutat aquell dia.",
+    "exampleEn": "The governor visited the city that day.",
+    "tags": []
+  },
+  {
+    "target": "miler",
+    "glossEn": "a thousand (of); thousands",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Un miler de persones van assistir a l'acte.",
+    "exampleEn": "A thousand people attended the event.",
+    "tags": []
+  },
+  {
+    "target": "impossible",
+    "glossEn": "impossible",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "És impossible acabar la feina avui mateix.",
+    "exampleEn": "It is impossible to finish the work today.",
+    "tags": []
+  },
+  {
+    "target": "habitatge",
+    "glossEn": "housing, dwelling",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El govern vol construir més habitatge social.",
+    "exampleEn": "The government wants to build more social housing.",
+    "tags": []
+  },
+  {
+    "target": "distància",
+    "glossEn": "distance",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La distància entre les dues ciutats és curta.",
+    "exampleEn": "The distance between the two cities is short.",
+    "tags": []
+  },
+  {
+    "target": "comandament",
+    "glossEn": "command, authority (military or organizational)",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El general tenia el comandament de l'exèrcit.",
+    "exampleEn": "The general had command of the army.",
+    "tags": []
+  },
+  {
+    "target": "escapar",
+    "glossEn": "to escape",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El pres va escapar de la presó de nit.",
+    "exampleEn": "The prisoner escaped from jail at night.",
+    "tags": []
+  },
+  {
+    "target": "veritable",
+    "glossEn": "true, genuine, real",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Això és un veritable problema per a tots.",
+    "exampleEn": "This is a real problem for everyone.",
+    "tags": []
+  },
+  {
+    "target": "mínim",
+    "glossEn": "minimum, minimal",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Cal un esforç mínim per aprovar l'examen.",
+    "exampleEn": "A minimal effort is needed to pass the exam.",
+    "tags": []
+  },
+  {
+    "target": "coberta",
+    "glossEn": "deck (of a ship); cover",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Els mariners van pujar a la coberta del vaixell.",
+    "exampleEn": "The sailors went up onto the ship's deck.",
+    "tags": []
+  },
+  {
+    "target": "organització",
+    "glossEn": "organization",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta organització ajuda els refugiats de guerra.",
+    "exampleEn": "This organization helps war refugees.",
+    "tags": []
+  },
+  {
+    "target": "exterior",
+    "glossEn": "exterior, outer, external",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La paret exterior de la casa és blanca.",
+    "exampleEn": "The house's exterior wall is white.",
+    "tags": []
+  },
+  {
+    "target": "caràcter",
+    "glossEn": "character, personality",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Té un caràcter molt fort i decidit.",
+    "exampleEn": "She has a very strong, determined character.",
+    "tags": []
+  },
+  {
+    "target": "intenció",
+    "glossEn": "intention",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "No tenia cap intenció d'ofendre ningú.",
+    "exampleEn": "He had no intention of offending anyone.",
+    "tags": []
+  },
+  {
+    "target": "començament",
+    "glossEn": "beginning, start",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Al començament no ho vaig entendre gens.",
+    "exampleEn": "At the beginning I didn't understand it at all.",
+    "tags": []
+  },
+  {
+    "target": "mostrar",
+    "glossEn": "to show",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Et vull mostrar les fotos del viatge.",
+    "exampleEn": "I want to show you the photos from the trip.",
+    "tags": []
+  },
+  {
+    "target": "tinent",
+    "glossEn": "lieutenant",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El tinent va donar l'ordre als soldats.",
+    "exampleEn": "The lieutenant gave the order to the soldiers.",
+    "tags": []
+  },
+  {
+    "target": "quilòmetre",
+    "glossEn": "kilometer",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquell poble és a un quilòmetre de la costa.",
+    "exampleEn": "That village is one kilometer from the coast.",
+    "tags": []
+  },
+  {
+    "target": "mida",
+    "glossEn": "size",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Quina mida tens de sabates?",
+    "exampleEn": "What shoe size do you take?",
+    "tags": []
+  },
+  {
+    "target": "emperador",
+    "glossEn": "emperor",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'emperador va conquerir noves terres.",
+    "exampleEn": "The emperor conquered new lands.",
+    "tags": []
+  },
+  {
+    "target": "esclau",
+    "glossEn": "slave",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'esclau treballava al camp tot el dia.",
+    "exampleEn": "The slave worked in the field all day.",
+    "tags": []
+  },
+  {
+    "target": "espasa",
+    "glossEn": "sword",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El cavaller portava una espasa a la cintura.",
+    "exampleEn": "The knight wore a sword at his waist.",
+    "tags": []
+  },
+  {
+    "target": "destruir",
+    "glossEn": "to destroy",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "L'incendi va destruir mig bosc.",
+    "exampleEn": "The fire destroyed half the forest.",
+    "tags": []
+  },
+  {
+    "target": "corona",
+    "glossEn": "crown",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El rei portava la corona d'or.",
+    "exampleEn": "The king wore the gold crown.",
+    "tags": []
+  },
+  {
+    "target": "quelcom",
+    "glossEn": "something",
+    "pos": "pronoun",
+    "register": "literary",
+    "variants": [],
+    "exampleTarget": "Vull dir-te quelcom molt important.",
+    "exampleEn": "I want to tell you something very important.",
+    "tags": []
+  },
+  {
+    "target": "peça",
+    "glossEn": "piece, part",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta peça del motor està trencada.",
+    "exampleEn": "This engine part is broken.",
+    "tags": []
+  },
+  {
+    "target": "cort",
+    "glossEn": "royal court",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El rei vivia envoltat de la seva cort.",
+    "exampleEn": "The king lived surrounded by his court.",
+    "tags": []
+  },
+  {
+    "target": "present",
+    "glossEn": "present, in attendance",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Tots els convidats eren presents a la festa.",
+    "exampleEn": "All the guests were present at the party.",
+    "tags": []
+  },
+  {
+    "target": "directe",
+    "glossEn": "direct",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vull una resposta directa a la meva pregunta.",
+    "exampleEn": "I want a direct answer to my question.",
+    "tags": []
+  },
+  {
+    "target": "creació",
+    "glossEn": "creation",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La creació d'aquest projecte va costar anys.",
+    "exampleEn": "The creation of this project took years.",
+    "tags": []
+  },
+  {
+    "target": "dècada",
+    "glossEn": "decade",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquella dècada va portar molts canvis.",
+    "exampleEn": "That decade brought many changes.",
+    "tags": []
+  },
+  {
+    "target": "segurament",
+    "glossEn": "probably, surely",
+    "pos": "adverb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Segurament arribarem tard a la reunió.",
+    "exampleEn": "We will probably arrive late to the meeting.",
+    "tags": []
+  },
+  {
+    "target": "comunicació",
+    "glossEn": "communication",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La comunicació entre els equips és essencial.",
+    "exampleEn": "Communication between the teams is essential.",
+    "tags": []
+  },
+  {
+    "target": "produir",
+    "glossEn": "to produce",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquesta fàbrica produeix cotxes elèctrics.",
+    "exampleEn": "This factory produces electric cars.",
+    "tags": []
+  },
+  {
+    "target": "familiar",
+    "glossEn": "family (adjective), domestic",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Vam passar un vespre familiar a casa.",
+    "exampleEn": "We spent a family evening at home.",
+    "tags": []
+  },
+  {
+    "target": "dirigir",
+    "glossEn": "to direct, to manage, to lead",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Ella dirigeix una empresa important.",
+    "exampleEn": "She runs an important company.",
+    "tags": []
+  },
+  {
+    "target": "bellesa",
+    "glossEn": "beauty",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La bellesa del paisatge em va sorprendre.",
+    "exampleEn": "The beauty of the landscape surprised me.",
+    "tags": []
+  },
+  {
+    "target": "contrari",
+    "glossEn": "contrary, opposite",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Va caminar en sentit contrari a la resta.",
+    "exampleEn": "He walked in the opposite direction from the rest.",
+    "tags": []
+  },
+  {
+    "target": "voluntat",
+    "glossEn": "will, willingness",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Ho va fer per pròpia voluntat.",
+    "exampleEn": "He did it of his own will.",
+    "tags": []
+  },
+  {
+    "target": "gas",
+    "glossEn": "gas",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "La cuina funciona amb gas natural.",
+    "exampleEn": "The kitchen runs on natural gas.",
+    "tags": []
+  },
+  {
+    "target": "tron",
+    "glossEn": "throne",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El príncep va pujar al tron després de la guerra.",
+    "exampleEn": "The prince ascended to the throne after the war.",
+    "tags": []
+  },
+  {
+    "target": "menor",
+    "glossEn": "lesser, minor; younger",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest problema és molt menor que l'altre.",
+    "exampleEn": "This problem is much smaller than the other one.",
+    "tags": []
+  },
+  {
+    "target": "màxim",
+    "glossEn": "maximum, greatest",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Cal fer el màxim esforç possible.",
+    "exampleEn": "One must make the greatest possible effort.",
+    "tags": []
+  },
+  {
+    "target": "senzill",
+    "glossEn": "simple, easy",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Aquest exercici és molt senzill i ràpid.",
+    "exampleEn": "This exercise is very simple and quick.",
+    "tags": []
+  },
+  {
+    "target": "coronel",
+    "glossEn": "colonel",
+    "pos": "noun",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "El coronel comandava el regiment amb fermesa.",
+    "exampleEn": "The colonel commanded the regiment firmly.",
+    "tags": []
+  },
+  {
+    "target": "salvar",
+    "glossEn": "to save, to rescue",
+    "pos": "verb",
+    "register": "neutral",
+    "variants": [],
+    "exampleTarget": "Els bombers van salvar tres persones de l'incendi.",
+    "exampleEn": "The firefighters rescued three people from the fire.",
+    "tags": []
+  }
+]

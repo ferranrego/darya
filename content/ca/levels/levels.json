@@ -100,8 +100,7 @@
         4,
         5,
         6,
-        7,
-        8
+        7
       ],
       "entryKnownWords": 1700,
       "sentenceRange": [
@@ -134,7 +133,8 @@
         5,
         6,
         7,
-        8
+        8,
+        9
       ],
       "entryKnownWords": 2500,
       "sentenceRange": [
@@ -165,7 +165,7 @@
         8,
         9
       ],
-      "entryKnownWords": 2986,
+      "entryKnownWords": 4000,
       "sentenceRange": [
         6,
         9
@@ -196,7 +196,7 @@
         8,
         9
       ],
-      "entryKnownWords": 3471,
+      "entryKnownWords": 4028,
       "sentenceRange": [
         7,
         10
@@ -226,7 +226,7 @@
         9,
         10
       ],
-      "entryKnownWords": 3957,
+      "entryKnownWords": 4055,
       "sentenceRange": [
         8,
         12

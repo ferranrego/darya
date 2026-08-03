@@ -323,6 +323,12 @@ export const IRREGULAR_VERBS: Record<string, CatalanVerbStems> = {
       present: ["crec", "creus", "creu", "creiem", "creieu", "creuen"],
       imperfect: ["creia", "creies", "crèiem", "crèieu", "creien"],
       presentSubjunctive: ["cregui", "creguis", "creguem", "cregueu", "creguin"],
+      // Same velar-insertion stem ("cregu-") as the present subjunctive,
+      // parallel to voler's volgués/volguessis... Missing here meant the
+      // generic conjugator fell back to a wrong regular guess ("creués"),
+      // caught when a batch's own ruled-out entry cited "cregués" as a form
+      // creure generates and verify-ca-drops.ts actually executed the claim.
+      imperfectSubjunctive: ["cregués", "creguessis", "creguéssim", "creguéssiu", "creguessin"],
       participle: ["cregut", "creguda", "creguts", "cregudes"],
       gerund: ["creient"],
     },

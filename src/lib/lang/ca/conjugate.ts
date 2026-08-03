@@ -38,7 +38,15 @@ const P6 = 6;
 // Orthography
 // ---------------------------------------------------------------------------
 
-const FRONT = /^[eií]/;
+// Includes the accented é/è: the imperfect-subjunctive endings ("-és",
+// "-éssim", "-éssiu") open with an accented front vowel, and without it here
+// a -car/-gar/-çar/-jar verb got a paradigm split down the middle - only the
+// plain-e endings ("-essis", "-essin") were respelled, so `explicar` produced
+// the real `expliquessis` next to a non-word `explicés` (should be
+// `expliqués`, confirmed against Softcatalà's conjugator). Found while
+// retargeting placeholder-gloss lexicon entries that were themselves these
+// exact inflected forms authored as headwords.
+const FRONT = /^[eéèií]/;
 const VOWEL = /[aeiouàèéíòóúï]/i;
 
 /**

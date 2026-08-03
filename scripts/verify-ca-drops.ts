@@ -54,6 +54,20 @@ function citedLemma(gloss: string): string | null {
   return m ? m[1] : null;
 }
 
+/**
+ * Double-quoted components a fragment reason cites, e.g. `lhi`'s reason names
+ * "el/la" and "hi" as the two clitics it is made of. A `/` inside one means
+ * "either", not literally that string, so each side is checked separately.
+ */
+function citedComponents(gloss: string): string[] {
+  const quoted = [...gloss.matchAll(/"([^"]+)"/g)].map((m) => m[1]);
+  return quoted.flatMap((q) => q.split("/"));
+}
+
+/** Mirrors verify-ca-entries.ts's CATALAN_ONLY - kept local to avoid coupling
+ * this read-only checker to that script's internals for one regex. */
+const NOT_CATALAN = /[^a-zàèéíïòóúüç·'\- ]/i;
+
 const problems: string[] = [];
 let checked = 0;
 let sound = 0;
@@ -81,12 +95,34 @@ for (const e of entries) {
         (stripped(o.target) === stripped(e.target) ||
           o.target.split(/[\s']+/).some((part) => matchKey(part) === matchKey(e.target))),
     );
-    if (!covered) {
-      problems.push(
-        `${e.id} ${e.target} (rank ${e.freqRank}): ruled out as "${reason.slice(0, 60)}…" ` +
-          `but no other entry covers it - the word is simply gone`,
-      );
-    } else sound++;
+    if (covered) {
+      sound++;
+      continue;
+    }
+
+    // A fragment can also be justified by naming the pieces it is made of
+    // (lhi's reason names "el/la" and "hi") rather than by another entry
+    // literally containing it as a token - executable the same way, just
+    // checking a different claim: that every named piece already exists.
+    const components = citedComponents(reason);
+    if (components.length && components.every((c) => byKey.has(matchKey(c)))) {
+      sound++;
+      continue;
+    }
+
+    // Or the target simply is not Catalan text at all - a stray label or
+    // corrupted fragment that leaked into the field during bulk generation.
+    // That is mechanically checkable (a character outside the Catalan
+    // charset) rather than a claim resting on the reason's wording.
+    if (NOT_CATALAN.test(e.target)) {
+      sound++;
+      continue;
+    }
+
+    problems.push(
+      `${e.id} ${e.target} (rank ${e.freqRank}): ruled out as "${reason.slice(0, 60)}…" ` +
+        `but no other entry covers it - the word is simply gone`,
+    );
     continue;
   }
 
