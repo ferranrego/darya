@@ -116,8 +116,15 @@
     "lx-0091",
     "lx-0098"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-0058",
+    "lx-0074",
+    "lx-0076",
+    "lx-0077",
+    "lx-0098"
+  ],
   "newWordRatio": 0,
   "source": "seed",
-  "createdAt": "2026-07-20T00:00:00.000Z"
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 3
 }

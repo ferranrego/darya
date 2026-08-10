@@ -59,6 +59,12 @@ export function readBeginnerCore(root: string): string[] {
     .filter((l) => l && !l.startsWith("#"));
 }
 
+export function readVerbFunctions(root: string): string[] {
+  const spec = readSpec(root);
+  if (spec) return [...new Set(Object.values(spec.verbFunctions).flat())];
+  return [];
+}
+
 function main() {
   const lang = targetLang();
   const root = contentRoot();
@@ -82,6 +88,12 @@ function main() {
     if (index.resolve(req) || !req.includes(" ")) wanted.push(req);
     else wanted.push(...req.split(/\s+/).filter(Boolean));
   }
+  
+  const super7Wanted: string[] = [];
+  for (const req of readVerbFunctions(root)) {
+    if (index.resolve(req) || !req.includes(" ")) super7Wanted.push(req);
+    else super7Wanted.push(...req.split(/\s+/).filter(Boolean));
+  }
 
   for (const word of wanted) {
     const entry = index.resolve(word);
@@ -94,9 +106,16 @@ function main() {
     if (!isTeachable(entry)) unteachable.push(`${word} (${entry.id})`);
     hit.add(entry.id);
   }
+  
+  const super7Hit = new Set<string>();
+  for (const word of super7Wanted) {
+    const entry = index.resolve(word);
+    if (entry) super7Hit.add(entry.id);
+  }
 
   let added = 0;
   let removed = 0;
+  let super7Added = 0;
   for (const e of entries) {
     const tags = new Set(e.tags);
     if (hit.has(e.id) && !tags.has(BEGINNER_CORE_TAG)) {
@@ -107,6 +126,14 @@ function main() {
       tags.delete(BEGINNER_CORE_TAG);
       removed++;
     }
+    
+    if (super7Hit.has(e.id) && !tags.has("super-7")) {
+      tags.add("super-7");
+      super7Added++;
+    } else if (!super7Hit.has(e.id) && tags.has("super-7")) {
+      tags.delete("super-7");
+    }
+    
     e.tags = [...tags];
   }
 

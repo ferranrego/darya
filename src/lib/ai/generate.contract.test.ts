@@ -73,6 +73,8 @@ describe("generation contract", () => {
     canned.sentences = [
       { target: [...inPrompt.slice(0, 3), ...knownButNotShown.slice(0, 3)].map((e) => e.target).join(" "), en: "a" },
       { target: [...targets, ...inPrompt.slice(3, 5)].map((e) => e.target).join(" "), en: "b" },
+      { target: knownButNotShown.slice(3, 7).map((e) => e.target).join(" "), en: "c" },
+      { target: inPrompt.slice(5, 9).map((e) => e.target).join(" "), en: "d" },
     ];
 
     const doc = await generateText({
@@ -91,8 +93,10 @@ describe("generation contract", () => {
     const targets = pickWords(4, 80);
 
     canned.sentences = [
-      { target: [...known.slice(0, 4), targets[0], targets[1], targets[2], targets[3]].map((e) => e.target).join(" "), en: "a" },
-      { target: known.slice(4, 8).map((e) => e.target).join(" "), en: "b" },
+      { target: [...known.slice(0, 2), targets[0], targets[1]].map((e) => e.target).join(" "), en: "a" },
+      { target: [...known.slice(2, 4), targets[2], targets[3]].map((e) => e.target).join(" "), en: "b" },
+      { target: known.slice(4, 8).map((e) => e.target).join(" "), en: "c" },
+      { target: known.slice(8, 12).map((e) => e.target).join(" "), en: "d" },
     ];
 
     const doc = await generateText({
@@ -115,8 +119,10 @@ describe("generation contract", () => {
     // contains none of the words it was written for. This is the text that
     // emptied the pool and made the reader regenerate forever.
     canned.sentences = [
-      { target: known.slice(0, 5).map((e) => e.target).join(" "), en: "a" },
-      { target: known.slice(5, 10).map((e) => e.target).join(" "), en: "b" },
+      { target: known.slice(0, 4).map((e) => e.target).join(" "), en: "a" },
+      { target: known.slice(4, 8).map((e) => e.target).join(" "), en: "b" },
+      { target: known.slice(8, 12).map((e) => e.target).join(" "), en: "c" },
+      { target: known.slice(12, 16).map((e) => e.target).join(" "), en: "d" },
     ];
 
     await expect(
@@ -128,5 +134,36 @@ describe("generation contract", () => {
         newWordRatio: 0.05,
       }),
     ).rejects.toThrow(/teaches 0 of 4/);
+  });
+
+  /**
+   * The third regression, and the one that produced the reported nonsense.
+   *
+   * `outputSchema` requires two sentences and says nothing about their length,
+   * so a pre-A1 text of two thirty-word sentences satisfied every gate in the
+   * pipeline - coverage, grammar, targets - and was cached for every learner at
+   * that level. The levels have always declared both numbers and nothing ever
+   * read them.
+   */
+  it("refuses a text that is not the shape its level asked for", async () => {
+    const known = pickWords(30);
+    const targets = pickWords(4, 80);
+
+    // Two sentences where the level wants four to six, and each one far past
+    // its eight-word ceiling. Perfectly in-vocabulary, and unreadable at A1.
+    canned.sentences = [
+      { target: [...known.slice(0, 12), targets[0], targets[1]].map((e) => e.target).join(" "), en: "a" },
+      { target: [...known.slice(12, 24), targets[2], targets[3]].map((e) => e.target).join(" "), en: "b" },
+    ];
+
+    await expect(
+      generateText({
+        level,
+        knownWords: known,
+        knownIds: new Set(known.map((e) => e.id)),
+        targetWords: targets,
+        newWordRatio: 0.05,
+      }),
+    ).rejects.toThrow(/sentences?, L2 asks for 4-6|over 8 words/);
   });
 });

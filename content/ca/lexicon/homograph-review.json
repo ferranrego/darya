@@ -3,6 +3,41 @@
   "language": "ca",
   "reviewed": [
     {
+      "surface": "forma",
+      "correctLexemeId": "lx-4369",
+      "reason": "'forma' (shape, way, manner) is the intended noun in 'la seva forma de parlar' (his way of speaking), the object of a possessive; the collision is with 'formar' (to form, lx-4485)'s 3rd-person present 'forma' (he/she forms), which does not fit after a possessive determiner."
+    },
+    {
+      "surface": "àvia",
+      "correctLexemeId": "lx-0344",
+      "reason": "'àvia' (grandmother) is its own authored headword; the collision is with 'avi' (grandfather, lx-0343)'s generated feminine, same word - harmless duplication, the same class as 'amiga'/'amic' above."
+    },
+    {
+      "surface": "força",
+      "correctLexemeId": "lx-2150",
+      "reason": "'força' (strength) is the intended noun in 'necessito força per caminar' (I need strength to walk), the object of 'necessitar'; the collision is with 'forçar' (to force, lx-0691)'s 3rd-person present 'força' (he/she forces), which does not fit as the object of another verb."
+    },
+    {
+      "surface": "llavors",
+      "correctLexemeId": "lx-0680",
+      "reason": "'llavors' (then) is the intended temporal adverb opening the sentence ('Llavors, arribem a...'); the collision is with 'llavor' (seed, lx-1370)'s regular plural 'llavors', which does not fit as a sentence-initial adverb followed by a comma."
+    },
+    {
+      "surface": "porta",
+      "correctLexemeId": "lx-0098",
+      "reason": "'porta' (door) is the intended noun in every L1 seed sentence using it ('té una porta', 'obre la porta'), always as the object of tenir/obrir/mirar; the collision is with 'portar' (to carry, lx-0124)'s 3rd-person present 'porta' (he/she carries), which does not fit any of these subject-verb-object sentences."
+    },
+    {
+      "surface": "vestit",
+      "correctLexemeId": "lx-0430",
+      "reason": "'vestit' (dress/garment) is the intended noun in every seed sentence using it ('un vestit negre', 'el vestit blanc'), always following an article and an adjective; the collision is with 'vestir' (to dress, lx-0471)'s past participle 'vestit' (dressed), which would need an auxiliary ('he vestit') to appear, not an article."
+    },
+    {
+      "surface": "música",
+      "correctLexemeId": "lx-0317",
+      "reason": "'música' (music) is the intended noun in every seed sentence using it ('sento la música', 'escolta la música'), the ordinary object of sentir/escoltar; the collision is with 'músic' (musician, lx-3794)'s generated feminine 'música' (female musician), which grammatically parses but is not what a beginner text about hearing/listening means here."
+    },
+    {
       "surface": "una",
       "correctLexemeId": "lx-0042",
       "reason": "Feminine indefinite article 'una' is its own authored headword; the collision is with 'un' (lx-0037)'s generated feminine, which is the same word, not a different one - harmless duplication, not a real homograph."

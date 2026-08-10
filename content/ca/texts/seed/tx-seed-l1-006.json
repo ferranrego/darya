@@ -1,0 +1,178 @@
+{
+  "id": "tx-seed-l1-006",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "La meva casa",
+  "titleEn": "My home",
+  "sentences": [
+    {
+      "target": "Vull tornar a casa.",
+      "en": "I want to go back home.",
+      "tokens": [
+        {
+          "surface": "Vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "tornar",
+          "lexemeId": "lx-0477"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    },
+    {
+      "target": "Vaig a casa amb el meu amic.",
+      "en": "I go home with my friend.",
+      "tokens": [
+        {
+          "surface": "Vaig",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "amic",
+          "lexemeId": "lx-0088"
+        }
+      ]
+    },
+    {
+      "target": "Arribem a casa.",
+      "en": "We arrive home.",
+      "tokens": [
+        {
+          "surface": "Arribem",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    },
+    {
+      "target": "A casa sento la música.",
+      "en": "At home I hear the music.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "sento",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "música",
+          "lexemeId": "lx-0317"
+        }
+      ]
+    },
+    {
+      "target": "El meu amic ve cada dia a casa.",
+      "en": "My friend comes home every day.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "amic",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "ve",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "dia",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0028",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0041",
+    "lx-0057",
+    "lx-0060",
+    "lx-0068",
+    "lx-0069",
+    "lx-0088",
+    "lx-0106",
+    "lx-0113",
+    "lx-0196",
+    "lx-0248",
+    "lx-0317",
+    "lx-0477"
+  ],
+  "newWords": [
+    "lx-0060",
+    "lx-0068",
+    "lx-0106",
+    "lx-0113",
+    "lx-0196",
+    "lx-0317",
+    "lx-0477"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 6
+}

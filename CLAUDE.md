@@ -113,14 +113,46 @@ the problem comes back.
 Model output is untrusted input: Zod-parse it, and validate the assembled result
 before it reaches a cache other learners read.
 
+**An agent must never call the provider chain itself.** `completeJson`
+(`src/lib/ai/providers.ts`) and everything built on it - `generateText`, any
+`*.live.test.ts` file, any script gated on `LIVE_AI=1` - draws on the exact
+same shared Groq/OpenRouter/HuggingFace budget a real learner's next request
+needs. This is not a hypothetical: in one session an agent ran
+`author-texts.live.test.ts` (an offline content-drafting tool built the same
+session) to author seed texts, and separately, by mistake, an unrelated
+verification command (see the flag-order note below) fired three more
+`*.live.test.ts` files alongside it - between them, Groq's daily token cap,
+OpenRouter's daily free-model cap, and HuggingFace's monthly credits were all
+exhausted in one sitting, for every learner using the deployment, not just a
+test account. **The chain exists only for a live user's own request.**
+Content is authored directly - by a person, or by an agent writing the
+target-language sentences itself - never by asking the app's own model chain
+to draft them. Verify a change by reading its output against real content and
+running the offline suite (`pnpm test`); do not generate live text to look
+at, and do not run a `.live.test.ts` file or anything gated on `LIVE_AI=1` -
+those are for a human maintainer to run deliberately, occasionally, never as
+a matter of routine verification, and never by an agent.
+
 ## Verification
 
-`pnpm test` is offline. Live-provider checks are opt-in:
+`pnpm test` is offline; this is what an agent runs. Live-provider checks are
+opt-in, human-only (see above), and even then only when nothing else can
+answer the question:
 
 ```
 LIVE_AI=1 NEXT_PUBLIC_TARGET_LANG=ca AUDIT_PER_LEVEL=2 \
-  pnpm exec vitest run --disable-console-intercept scripts/audit-generation.live.test.ts
+  pnpm exec vitest run scripts/audit-generation.live.test.ts --disable-console-intercept
 ```
+
+The file path must come **before** `--disable-console-intercept`. Vitest does
+not recognize that flag, and (confirmed by testing both orders) treats an
+unrecognized flag as taking the next token as its value when the flag comes
+first - so the flag-first order silently drops the file filter and runs the
+*entire* suite, live-provider tests included (34 files instead of 1, four
+`.live.test.ts` files hitting the shared free-tier chain instead of the one
+you meant to run). This order was wrong in this file for some time; if you
+copy a verification command from an older comment or an agent's output,
+check the order before running it.
 
 That audit is the only thing that measures whether generated texts actually
 teach. It prints coverage, new-words-used and part-of-speech mix per level, and

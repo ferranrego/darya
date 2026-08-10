@@ -12,7 +12,7 @@
 
 import {
   LEGACY_MAX_OOV_TYPE_RATE,
-  MAX_OOV_TYPE_RATE,
+  MAX_OOV_TYPE_RATE_POOL,
   MIN_NEW_LEXEMES,
 } from "./difficulty.ts";
 
@@ -39,8 +39,13 @@ export function placementCredit(
 export interface PoolText {
   id: string;
   source: string;
-  /** `newWords` is absent on texts cached before the field existed. */
-  doc: { vocabUsed: string[]; newWords?: string[] };
+  /**
+   * `newWords` is absent on texts cached before the field existed. `seq` is
+   * the curriculum order within a level - present on seed texts built after
+   * the 20260808000000 migration, absent on everything else (generated
+   * texts, and seed texts cached before it).
+   */
+  doc: { vocabUsed: string[]; newWords?: string[]; seq?: number };
 }
 
 export interface PoolInput {
@@ -115,9 +120,20 @@ export function selectUnread(input: PoolInput): PoolText[] {
       const untaught = declared ? unknown.filter((w) => !declared.includes(w)) : unknown;
 
       const rate = vocab.length > 0 ? untaught.length / vocab.length : 0;
-      const limit = declared ? MAX_OOV_TYPE_RATE : LEGACY_MAX_OOV_TYPE_RATE;
+      const limit = declared ? MAX_OOV_TYPE_RATE_POOL : LEGACY_MAX_OOV_TYPE_RATE;
       // It must teach something, or there is nothing to read it for.
       return rate <= limit && taught.length >= MIN_NEW_LEXEMES;
     })
-    .sort((a, b) => (a.source === b.source ? 0 : a.source === "seed" ? -1 : 1));
+    .sort((a, b) => {
+      if (a.source !== b.source) return a.source === "seed" ? -1 : 1;
+      if (a.source !== "seed") return 0;
+      // Within the authored corpus, curriculum order: ascending `seq`, with
+      // anything missing one (seeded before the corpus had an order) sorted
+      // after everything that has one.
+      const seqA = a.doc.seq;
+      const seqB = b.doc.seq;
+      if (seqA == null) return seqB == null ? 0 : 1;
+      if (seqB == null) return -1;
+      return seqA - seqB;
+    });
 }

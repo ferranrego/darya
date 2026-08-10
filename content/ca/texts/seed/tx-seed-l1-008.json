@@ -1,0 +1,156 @@
+{
+  "id": "tx-seed-l1-008",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El temps",
+  "titleEn": "The weather",
+  "sentences": [
+    {
+      "target": "Avui fa bon temps.",
+      "en": "Today the weather is good.",
+      "tokens": [
+        {
+          "surface": "Avui",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "bon",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "temps",
+          "lexemeId": "lx-0073"
+        }
+      ]
+    },
+    {
+      "target": "El sol és fort.",
+      "en": "The sun is strong.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "sol",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fort",
+          "lexemeId": "lx-0486"
+        }
+      ]
+    },
+    {
+      "target": "El sol fa molta calor.",
+      "en": "The sun makes a lot of heat.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "sol",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "molta",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "calor",
+          "lexemeId": "lx-0953"
+        }
+      ]
+    },
+    {
+      "target": "Amb la calor, bec aigua.",
+      "en": "With the heat, I drink water.",
+      "tokens": [
+        {
+          "surface": "Amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "calor",
+          "lexemeId": "lx-0953"
+        },
+        {
+          "surface": "bec",
+          "lexemeId": "lx-0102"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        }
+      ]
+    },
+    {
+      "target": "L'aigua és freda.",
+      "en": "The water is cold.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "freda",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0041",
+    "lx-0052",
+    "lx-0053",
+    "lx-0073",
+    "lx-0079",
+    "lx-0102",
+    "lx-0215",
+    "lx-0233",
+    "lx-0259",
+    "lx-0325",
+    "lx-0486",
+    "lx-0953"
+  ],
+  "newWords": [
+    "lx-0053",
+    "lx-0073",
+    "lx-0079",
+    "lx-0233",
+    "lx-0486",
+    "lx-0953"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 8
+}

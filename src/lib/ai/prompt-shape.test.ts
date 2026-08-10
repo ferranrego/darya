@@ -49,9 +49,6 @@ function promptFor(levelIndex: number): string {
   });
 }
 
-/** Phrases that only belong in a text long enough to sustain one. */
-const NARRATIVE = ["follows from the one before it", "a short story with a beginning"];
-
 describe(`${profile.code} prompt shape`, () => {
   it.each(levels.map((l, i) => [l.id, l.cefrHint, i] as const))(
     "%s (%s) asks for the right kind of text",
@@ -60,23 +57,47 @@ describe(`${profile.code} prompt shape`, () => {
       const prompt = promptFor(i);
 
       if (isBeginnerLevel(level)) {
-        expect(prompt, "beginner levels need model sentences to imitate").toContain(
-          profile.prompts.beginnerPatterns.split("\n")[0],
-        );
-        expect(prompt).toContain("useful on its own");
-        expect(prompt).toContain("do NOT need to tell a story");
-        for (const phrase of NARRATIVE) {
-          expect(prompt, `a beginner text cannot sustain "${phrase}"`).not.toContain(phrase);
-        }
+        // A scene, not a story. A narrative needs anaphora to track who is
+        // being talked about and a way to sequence events, and neither is
+        // taught at pre-A1 - so asking for one produced filler. See the note on
+        // `taskFor`.
+        expect(prompt, "beginner levels get a scene").toContain("STRICT SCENE RULES");
+        expect(prompt).toContain("coherent scene");
+        // The prompt does mention a story - to forbid one - so this checks the
+        // instruction, not the noun: the `Write <TEXT_TYPE>, <n>-<m> sentences`
+        // form belongs to the non-beginner branch and must not appear here.
+        expect(
+          prompt,
+          "a beginner text must not be asked for a plot it has no machinery for",
+        ).not.toMatch(/^Write (.+?), \d/m);
+        // Meeting a word once does not teach it.
+        expect(prompt).toContain("Meeting a word twice is what teaches it");
       } else {
         expect(prompt, "an A2+ text should hold together").toContain(
           "follows from the one before it",
         );
         expect(
           prompt,
-          "model sentences are a beginner scaffold and should not persist upward",
-        ).not.toContain(profile.prompts.beginnerPatterns.split("\n")[0]);
+          "the beginner scene scaffold should not persist upward",
+        ).not.toContain("STRICT SCENE RULES");
       }
+    },
+  );
+
+  /**
+   * The prompt used to argue with the level it was built from.
+   *
+   * `taskFor` told the model to "use natural beginner conjunctions" while the
+   * `sentenceLengthHint` it interpolated two lines earlier said `NO conjunctions
+   * (no 'and', 'but')`. Both went to the model in the same request. The rule now
+   * lives in the level, in that language's own words, and the task defers to it.
+   */
+  it.each(levels.filter(isBeginnerLevel).map((l) => [l.id, levels.indexOf(l)] as const))(
+    "%s does not contradict its own level about conjunctions",
+    (_id, i) => {
+      const prompt = promptFor(i);
+      expect(prompt).toContain(levels[i].sentenceLengthHint);
+      expect(prompt).not.toContain("Use natural beginner conjunctions");
     },
   );
 
@@ -89,8 +110,6 @@ describe(`${profile.code} prompt shape`, () => {
     expect(prompt).toContain(profile.prompts.orthography.split("\n")[0]);
     // "Use only these 250 words" is not followable without this licence.
     expect(prompt).toContain("Articles, prepositions, pronouns");
-    // The coverage contract, stated as something countable.
-    expect(prompt).toContain("19 of every 20");
     expect(prompt).toContain("JSON");
     // The words it exists to teach, and the level's own grammar.
     expect(prompt).toContain("gos");

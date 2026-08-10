@@ -1,0 +1,252 @@
+{
+  "id": "tx-seed-l2-008",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Cap al nord",
+  "titleEn": "Towards the north",
+  "sentences": [
+    {
+      "target": "Vull anar al nord aquest estiu.",
+      "en": "I want to go north this summer.",
+      "tokens": [
+        {
+          "surface": "Vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "anar",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "nord",
+          "lexemeId": "lx-4282"
+        },
+        {
+          "surface": "aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        }
+      ]
+    },
+    {
+      "target": "En el nostre cas, seguim el mateix camí.",
+      "en": "In our case, we follow the same route.",
+      "tokens": [
+        {
+          "surface": "En",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nostre",
+          "lexemeId": "lx-0251"
+        },
+        {
+          "surface": "cas",
+          "lexemeId": "lx-4157"
+        },
+        {
+          "surface": "seguim",
+          "lexemeId": "lx-1225"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "mateix",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "camí",
+          "lexemeId": "lx-0127"
+        }
+      ]
+    },
+    {
+      "target": "Necessito força per caminar tant.",
+      "en": "I need strength to walk so much.",
+      "tokens": [
+        {
+          "surface": "Necessito",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "força",
+          "lexemeId": "lx-2150"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "caminar",
+          "lexemeId": "lx-0201"
+        },
+        {
+          "surface": "tant",
+          "lexemeId": "lx-0687"
+        }
+      ]
+    },
+    {
+      "target": "Llavors, arribem a un lloc fred.",
+      "en": "Then, we arrive at a cold place.",
+      "tokens": [
+        {
+          "surface": "Llavors",
+          "lexemeId": "lx-0680"
+        },
+        {
+          "surface": "arribem",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "lloc",
+          "lexemeId": "lx-4069"
+        },
+        {
+          "surface": "fred",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    },
+    {
+      "target": "No m'importa el fred del nord.",
+      "en": "I don't mind the cold of the north.",
+      "tokens": [
+        {
+          "surface": "No",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "m'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "importa",
+          "lexemeId": "lx-1540"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "fred",
+          "lexemeId": "lx-0233"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "nord",
+          "lexemeId": "lx-4282"
+        }
+      ]
+    },
+    {
+      "target": "És una manera tan bonica de viatjar.",
+      "en": "It's such a beautiful way to travel.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "manera",
+          "lexemeId": "lx-4146"
+        },
+        {
+          "surface": "tan",
+          "lexemeId": "lx-0879"
+        },
+        {
+          "surface": "bonica",
+          "lexemeId": "lx-0228"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "viatjar",
+          "lexemeId": "lx-0572"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0022",
+    "lx-0023",
+    "lx-0030",
+    "lx-0031",
+    "lx-0034",
+    "lx-0036",
+    "lx-0037",
+    "lx-0038",
+    "lx-0039",
+    "lx-0040",
+    "lx-0042",
+    "lx-0057",
+    "lx-0060",
+    "lx-0064",
+    "lx-0106",
+    "lx-0127",
+    "lx-0139",
+    "lx-0168",
+    "lx-0201",
+    "lx-0210",
+    "lx-0228",
+    "lx-0233",
+    "lx-0251",
+    "lx-0572",
+    "lx-0680",
+    "lx-0687",
+    "lx-0879",
+    "lx-1225",
+    "lx-1540",
+    "lx-2150",
+    "lx-4069",
+    "lx-4146",
+    "lx-4157",
+    "lx-4282"
+  ],
+  "newWords": [
+    "lx-0106",
+    "lx-0210",
+    "lx-0572",
+    "lx-0680",
+    "lx-0879",
+    "lx-2150",
+    "lx-4157",
+    "lx-4282"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 8
+}

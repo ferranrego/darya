@@ -24,6 +24,21 @@ import type { LexiconEntry, Level } from "./schema.ts";
 const MAX_NOUN_SHARE = 0.55;
 
 /**
+ * The opposite failure, caught the same way: a candidate pool can be
+ * verb-heavy instead of noun-heavy, and nothing before this capped that
+ * direction. Measured live - Dari C1's candidate pool, once `entryKnownWords`
+ * was corrected to the vocabulary the lexicon actually supports, is 88 verbs
+ * against 65 nouns and zero adjectives/adverbs at all (a small pool at the
+ * very tail of the lexicon, where rare specialised verbs happen to cluster).
+ * `selectTargets` seeds one verb deliberately and would otherwise fill the
+ * rest of the count from whichever part of speech the pool has more of - a
+ * text that teaches eight verb conjugations and no vocabulary to hang them on
+ * is exactly the "nine nouns in a row" failure this module exists to prevent,
+ * with the part of speech swapped.
+ */
+const MAX_VERB_SHARE = 0.55;
+
+/**
  * A text that teaches four words well beats one listing fifteen.
  *
  * The old ceiling was 15, and at the top levels the model simply ignored the
@@ -31,14 +46,6 @@ const MAX_NOUN_SHARE = 0.55;
  */
 const MAX_TARGETS = 8;
 const MIN_TARGETS = 2;
-
-/**
- * Beginner levels get a higher ceiling than everyone else, which sounds
- * backwards and is not: their new words are `gos`, `poma`, `blau`, `taula`, and
- * a sentence built entirely from picturable words carries more of them than a
- * B2 sentence carries abstractions.
- */
-const BEGINNER_MAX_TARGETS = 10;
 
 /** Deterministic PRNG so a seeded selection can be asserted in a test. */
 function mulberry32(seed: number): () => number {
@@ -78,18 +85,12 @@ export function shuffle<T>(items: readonly T[], rand: () => number): T[] {
 export function targetCountFor(level: Level, newWordRatio: number): number {
   const midSentences = (level.sentenceRange[0] + level.sentenceRange[1]) / 2;
 
-  // At a beginner level the text is a set of independent useful sentences, so
-  // the unit is the sentence rather than the token ratio. Two new words per
-  // sentence, because at this level every one of them is concrete: *El gos
-  // menja molta carn* teaches four at once and is **easier** than a sentence
-  // teaching one, since all of it is picturable. Difficulty at A1 comes from
-  // abstraction and syntax, not from the count.
-  //
-  // The ratio is the wrong instrument here. Its whole 0.02-0.25 range collapsed
-  // to two or three words at L1 and L2, because `expectedTokens` is 12.5, so the
-  // setting was inert at exactly the levels where new vocabulary matters most.
+  // At a beginner level, the text is now a cohesive micro-narrative.
+  // Previously we asked for 2 new words per sentence (e.g. 8 words for a 4 sentence text),
+  // which works for disjointed sentences but is impossible to weave into a continuous
+  // story without hallucinating outside vocabulary. We reduce this to 1 word per sentence.
   if (isBeginnerLevel(level)) {
-    return Math.max(MIN_TARGETS, Math.min(BEGINNER_MAX_TARGETS, Math.round(midSentences * 2)));
+    return Math.max(MIN_TARGETS, Math.min(4, Math.round(midSentences * 1)));
   }
 
   const expectedTokens = midSentences * level.avgSentenceWords;
@@ -250,20 +251,26 @@ export function selectTargets({
   // ranked verb every time, so at a beginner level every text opened by
   // teaching `ser` / `است` and never anything else.
   const nounCap = Math.max(1, Math.floor(count * MAX_NOUN_SHARE));
+  const verbCap = Math.max(1, Math.floor(count * MAX_VERB_SHARE));
   const search = beginnerPool ? pool : byRank;
   for (const wanted of [isVerb, isModifier]) {
     if (picked.length >= count) break;
-    const hit = search.find((e) => wanted(e) && !taken.has(e.id)) ?? byRank.find(wanted);
+    let hit: LexiconEntry | undefined;
+    if (wanted === isVerb && beginnerPool) {
+      hit = search.find((e) => e.tags.includes("super-7") && !taken.has(e.id));
+    }
+    hit = hit ?? search.find((e) => wanted(e) && !taken.has(e.id)) ?? byRank.find(wanted);
     if (hit) add(hit);
   }
 
   for (const entry of pool) {
     if (picked.length >= count) break;
     if (isNoun(entry) && picked.filter(isNoun).length >= nounCap) continue;
+    if (isVerb(entry) && picked.filter(isVerb).length >= verbCap) continue;
     add(entry);
   }
 
-  // The noun cap is a preference, not a hard limit: if honouring it would
+  // Both caps are a preference, not a hard limit: if honouring them would
   // return fewer words than asked for, fill the remainder with what is left.
   for (const entry of pool) {
     if (picked.length >= count) break;
@@ -296,14 +303,14 @@ export function coldStartKnown(
   entries: readonly LexiconEntry[],
   level: Level,
   isUsable: (e: LexiconEntry) => boolean,
-  size = 60,
+  size = 120,
 ): LexiconEntry[] {
   const core = entries.filter((e) => e.tags.includes(BEGINNER_CORE_TAG) && isUsable(e));
   const inBand = entries.filter((e) => level.freqBands.includes(e.freqBand) && isUsable(e));
   const byRank = (a: LexiconEntry, b: LexiconEntry) => a.freqRank - b.freqRank;
   // Above A1 the core is still a better opening than the raw frequency head,
   // but the level's own band has to lead or the text will not read at level.
-  const head = isBeginnerLevel(level) ? [...core, ...inBand] : [...inBand, ...core];
+  const head = isBeginnerLevel(level) ? [...core.sort(byRank), ...inBand.sort(byRank)] : [...inBand.sort(byRank), ...core.sort(byRank)];
   const seen = new Set<string>();
   const out: LexiconEntry[] = [];
   for (const e of head) {
@@ -346,8 +353,12 @@ export function selectKnown({ known, level, dueIds }: SelectKnownInput): Lexicon
   // el, la, que, estat, cosa, part, manera` - and the sentences came out
   // abstract no matter what was being taught. Both halves have to come from the
   // same pool. Sorting is stable, so within each group frequency still decides.
-  const rank = (e: LexiconEntry) =>
-    isBeginnerLevel(level) && e.tags.includes(BEGINNER_CORE_TAG) ? e.freqRank - 1e6 : e.freqRank;
+  const rank = (e: LexiconEntry) => {
+    if (isBeginnerLevel(level) && e.tags.includes(BEGINNER_CORE_TAG)) {
+      return e.freqRank - 1e6;
+    }
+    return e.freqRank;
+  };
   const byRank = [...known].sort((a, b) => rank(a) - rank(b));
   if (!dueIds || dueIds.size === 0) return byRank.slice(0, budget);
 

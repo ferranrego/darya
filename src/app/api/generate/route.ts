@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { generateText, vocabHash } from "@/lib/ai/generate";
 import { lexicon, levelById } from "@/lib/content/load";
+import { levelVocabulary } from "@/lib/content/level-vocabulary";
+import { scenesFor, type Scene } from "@/lib/content/scene";
 import { assumedKnown, placementCredit } from "@/lib/content/text-pool";
 import { isTeachable } from "@/lib/content/teachability";
 import {
@@ -15,6 +17,17 @@ import { insertGeneratedText } from "@/lib/db/texts";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
 
 export const maxDuration = 60;
+
+/**
+ * Scene ids handed out recently, per level, so a learner reading several
+ * texts in a row at the same level doesn't get the same scene back to back.
+ * In-memory only (per serverless instance, so it resets on cold start) - the
+ * freshness check this replaces compared the LLM-authored title
+ * (`langProfile.frames.titleFor`) against `avoidTitles`, but that filler is
+ * gone (see `ai/generate.ts`) and there is no title to compute for a scene
+ * without a model call, so this tracks scene ids directly instead.
+ */
+const recentSceneIdsByLevel = new Map<string, string[]>();
 
 /** The themes the reader can ask for. Also the allow-list for the request body. */
 const THEMES = [
@@ -127,20 +140,87 @@ export async function POST(req: Request) {
     (words ?? []).filter((w) => w.status === "learning").map((w) => w.lexeme_id),
   );
 
+  const avoidTitles = (pool ?? [])
+    .map((t) => (t.doc as { titleEn?: string } | null)?.titleEn)
+    .filter((t): t is string => !!t)
+    .slice(-8);
+
+  // A scene, at the levels that have one - see `content/scene.ts`. Picked
+  // independently of `theme`: the UI's eight theme labels ("Shopping",
+  // "Folktales"...) predate scenes and do not correspond to
+  // `beginner-spec.json`'s 18 fields, so lining them up is future work.
+  // Below, when one is selected, its vocabulary replaces the frequency slice
+  // for both `knownWords` and `targetWords` - a scene is coherent by
+  // construction, where the frequency slice is whichever words happen to
+  // rank highest with no guarantee they share a topic.
+  //
+  // Sequenced, not random: `scenesFor` yields scenes in `beginner-spec.json`'s
+  // own field order (Family, Body, Food, Home, ...), and a new learner's Nth
+  // text at this level picks the Nth scene in that order, wrapping once every
+  // field has been used. A random draw can repeat "Food & Drink" three times
+  // before ever reaching "Nature & Environment"; walking the list in order is
+  // what actually guarantees the learner meets their whole level's lexicon
+  // rather than whichever few fields the dice favoured. Skips forward past a
+  // scene handed out too recently (`recentSceneIdsByLevel`) - the same
+  // freshness rule an LLM-written text already gets from `avoidTitles`, but
+  // keyed on the scene's own id rather than a model-authored title, since no
+  // title exists for a scene without calling a model.
+  let scene: Scene | undefined;
+  if (isBeginnerLevel(level)) {
+    const candidates = scenesFor(level, lexicon.entries, isTeachable);
+    if (candidates.length > 0) {
+      const readAtLevel = (pool ?? []).filter((t) => readIds.has(t.id)).length;
+      const recentIds = new Set(recentSceneIdsByLevel.get(level.id) ?? []);
+      for (let i = 0; i < candidates.length; i++) {
+        const candidate = candidates[(readAtLevel + i) % candidates.length];
+        if (!recentIds.has(candidate.id)) {
+          scene = candidate;
+          break;
+        }
+      }
+      scene ??= candidates[readAtLevel % candidates.length];
+
+      const history = [...(recentSceneIdsByLevel.get(level.id) ?? []), scene.id].slice(-8);
+      recentSceneIdsByLevel.set(level.id, history);
+    }
+  }
+
+  // `scene.words` is already drawn from `levelVocabulary(level) ∪
+  // teachablePool(level)` (see `buildScene`), so splitting it by level
+  // vocabulary membership is enough to recover which of its words this
+  // learner already has and which are new - no re-filtering against the
+  // learner's own `knownIds` needed on the known side, since the level's
+  // assumed-known vocabulary is the same set `effectiveKnown` is built from.
+  // Falls back to the frequency-based pools when no scene applies, or when
+  // the scene has nothing left to teach this learner (rare - `buildScene`
+  // already requires 25-45 reachable words, but not guaranteed unteachable-free).
+  let finalTargetWords = targetWords;
+  let finalKnownPool = effectiveKnown;
+  if (scene) {
+    const levelVocabIds = new Set(levelVocabulary(level, lexicon.entries, isTeachable).map((e) => e.id));
+    const sceneKnown = scene.words.filter((e) => levelVocabIds.has(e.id));
+    const sceneTeachable = scene.words.filter((e) => !knownIds.has(e.id));
+    const sceneTargets = selectTargets({
+      candidates: sceneTeachable,
+      count: targetCountFor(level, ratio),
+      preferBeginnerCore: isBeginnerLevel(level),
+    });
+    if (sceneTargets.length > 0) finalTargetWords = sceneTargets;
+    if (sceneKnown.length > 0) finalKnownPool = sceneKnown;
+  }
+
   try {
     const doc = await generateText({
       level,
-      knownWords: selectKnown({ known: effectiveKnown, level, dueIds }),
+      knownWords: selectKnown({ known: finalKnownPool, level, dueIds }),
       knownIds: new Set([...knownIds, ...effectiveKnown.map((e) => e.id)]),
-      targetWords,
+      targetWords: finalTargetWords,
       newWordRatio: ratio,
       theme,
+      scene,
       // What this level already has, so the pool stops converging on the same
       // few stories.
-      avoidTitles: (pool ?? [])
-        .map((t) => (t.doc as { titleEn?: string } | null)?.titleEn)
-        .filter((t): t is string => !!t)
-        .slice(-8),
+      avoidTitles,
     });
     // A text that teaches nothing is one the pool will reject on every future
     // visit, so caching it means the learner asks for another one forever and

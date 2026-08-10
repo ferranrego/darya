@@ -59,15 +59,30 @@ const CEFR_VOCABULARY: Record<string, number> = {
  * Fit the CEFR targets to a lexicon that may be too small for them.
  *
  * A threshold at the very end of the lexicon leaves its level nothing to teach,
- * so nothing may exceed `ceiling` (the last band boundary). Catalan has 4,343
- * lemmas against a C2 figure of 8,000, so its top levels genuinely do not have
- * the vocabulary behind them - clamping each one independently would pile B2,
- * C1 and C2 onto the same number and make three levels indistinguishable.
+ * so nothing may exceed `ceiling` (the full lexicon). Catalan has 4,609 lemmas
+ * against a C2 figure of 8,000, so its top levels genuinely do not have the
+ * vocabulary behind them - clamping each one independently would pile B2, C1
+ * and C2 onto the same number and make three levels indistinguishable.
  *
  * Instead the targets stay true while they fit, and the levels that do not fit
  * are spread evenly across what remains. Those levels are then vocabulary-
  * limited by the content rather than by the learner, which the caller reports:
  * the fix is a bigger lexicon, not a smaller number.
+ *
+ * Dividing by `remaining + 1` rather than `remaining` is the fix for a defect
+ * this function used to have. Linear interpolation from `floor` to `ceiling`
+ * over `remaining` steps necessarily lands the *last* one exactly on
+ * `ceiling` - by construction, `floor + step * remaining == ceiling`. For
+ * every level except the last that is fine; for the last it means the top
+ * level's own `entryKnownWords` lands exactly at the top of everything the
+ * lexicon has, leaving it nothing left to teach - the generator finds no
+ * target words there either, the same dead end this whole script exists to
+ * catch. Measured before this fix: Catalan's B2 (2500→4000, uncompressed)
+ * sat one band-width from a C1 compressed to 4028 and a C2 compressed to
+ * 4055 - three levels sharing a ~55-word margin at the very point the
+ * generator most needs room to pick target words from. Reserving one extra
+ * step's worth of headroom below `ceiling` fixes the top level the same way
+ * it fixes every other compressed one.
  */
 function fitTargets(raw: number[], ceiling: number): { targets: number[]; compressed: number } {
   const firstOver = raw.findIndex((t) => t > ceiling);
@@ -76,7 +91,7 @@ function fitTargets(raw: number[], ceiling: number): { targets: number[]; compre
   const targets = raw.slice(0, firstOver);
   const floor = targets.at(-1) ?? 0;
   const remaining = raw.length - firstOver;
-  const step = (ceiling - floor) / remaining;
+  const step = (ceiling - floor) / (remaining + 1);
   for (let i = 0; i < remaining; i++) targets.push(Math.round(floor + step * (i + 1)));
   return { targets, compressed: remaining };
 }
@@ -133,8 +148,15 @@ function main() {
     return raw;
   });
 
-  // The last band boundary, so the top level always has a band left to teach.
-  const ceiling = bandTop.get(bands.at(-2) ?? bands.at(-1)!) ?? lexiconSize;
+  // The whole lexicon. Reserving less than this - the previous version used
+  // the *second-to-last* band's top, on paper "so the top level always has a
+  // band left to teach" - is now redundant with `fitTargets`'s own
+  // `remaining + 1` reservation, and it was redundant in the wrong direction:
+  // Catalan's second-to-last band tops out at 4055, a hair above B2's
+  // uncompressed 4000, so C1 and C2 were being interpolated into a ~55-word
+  // gap regardless of how that gap was divided. The ceiling needs to be
+  // generous; the *reservation* is what `fitTargets` now does.
+  const ceiling = bandTop.get(bands.at(-1)!) ?? lexiconSize;
   const { targets, compressed } = fitTargets(rawTargets, ceiling);
   for (let i = 0; i < targets.length; i++) {
     if (targets[i] !== rawTargets[i]) {

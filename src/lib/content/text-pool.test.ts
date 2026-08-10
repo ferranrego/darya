@@ -92,6 +92,23 @@ describe("which texts a learner is offered", () => {
     expect(afterReading).toEqual([]);
   });
 
+  it("orders seed texts by curriculum seq, missing seq last", () => {
+    // The corpus is a curriculum, not a pile - see build-seed-texts.ts. A
+    // learner reads a level's seed texts in the order they were written to
+    // introduce vocabulary, not in whatever order they were cached.
+    const seedNoSeq: PoolText = { id: "s-none", source: "seed", doc: { vocabUsed: ["lx-9001"] } };
+    const seed3: PoolText = { id: "s3", source: "seed", doc: { vocabUsed: ["lx-9001"], seq: 3 } };
+    const seed1: PoolText = { id: "s1", source: "seed", doc: { vocabUsed: ["lx-9001"], seq: 1 } };
+    const seed2: PoolText = { id: "s2", source: "seed", doc: { vocabUsed: ["lx-9001"], seq: 2 } };
+    const out = selectUnread({
+      texts: [seed3, seedNoSeq, seed1, seed2],
+      readIds: new Set(),
+      trackedIds: [],
+      priorIds: [],
+    });
+    expect(out.map((t) => t.id)).toEqual(["s1", "s2", "s3", "s-none"]);
+  });
+
   it("keeps the open text in the list so it cannot vanish mid-read", () => {
     const text = generated("t1", ["lx-9001", "lx-9002", "lx-9003", "lx-9004"]);
     const out = selectUnread({
@@ -153,5 +170,84 @@ describe("the placement credit, against the shipped levels", () => {
       { id: "lx-0002", freqRank: 2 },
     ];
     expect(placementCredit(10, lexemes, ["lx-0001"])).toEqual(["lx-0002"]);
+  });
+});
+
+/**
+ * The cold start, which is the same contract failing a third time.
+ *
+ * A learner on their first visit has no tracked words and, at L1, no placement
+ * credit either - `entryKnownWords` is 0 - so both halves fall back to an
+ * assumed starting vocabulary. They fell back to *different* ones: the route
+ * used `coldStartKnown` (120 entries, beginner core first, teachability
+ * filtered) while the reader used `lexicon.entries.filter(inBand).slice(0, 60)`
+ * (60 entries, file order, unfiltered). Measured on the shipped lexicons, only
+ * 56 of 60 (ca) and 60 of 60 (prs) overlapped, so 64 and 60 of the words the
+ * server had *built the text out of* were scored here as untaught difficulty.
+ *
+ * The failure was silent and total: `/api/generate` answered `created: true`,
+ * `selectUnread` returned nothing, and after three rounds the learner was told
+ * the texts were the wrong level for them.
+ *
+ * It was also self-aggravating, which is the part worth remembering. The
+ * beginner core exists precisely because `gos` and `poma` rank far below the
+ * frequency head - so every core word the generator correctly reached for was a
+ * word the reader's list did not have. Improving the content made the reader
+ * reject more of it.
+ */
+describe("the cold start agrees between the writer and the reader", () => {
+  it.each(["ca", "prs"])("%s: a text built from the starting vocabulary is offered", async (lang) => {
+    const { readFileSync } = await import("node:fs");
+    const { join } = await import("node:path");
+    const { coldStartKnown } = await import("./word-selection.ts");
+    const { isTeachable } = await import("./teachability.ts");
+    const { lexiconFileSchema, levelsFileSchema } = await import("./schema.ts");
+
+    const root = join(import.meta.dirname, "..", "..", "..", "content", lang);
+    const entries = lexiconFileSchema.parse(
+      JSON.parse(readFileSync(join(root, "lexicon", "lexicon.json"), "utf8")),
+    ).entries;
+    const level = levelsFileSchema.parse(
+      JSON.parse(readFileSync(join(root, "levels", "levels.json"), "utf8")),
+    ).levels[0];
+
+    // What the server writes against, and what it teaches: words from the same
+    // starting vocabulary plus a handful of new ones it declares.
+    const start = coldStartKnown(entries, level, isTeachable);
+    const taught = ["lx-9001", "lx-9002", "lx-9003"];
+    // The tail of the slice, not the head: those are the picturable core words
+    // a beginner text is actually built from, and the ones the old reader list
+    // lacked. Taking the head would pass under either rule and prove nothing.
+    const text = generated("t1", [...start.slice(-20).map((e) => e.id), ...taught]);
+
+    const offered = selectUnread({
+      texts: [text],
+      readIds: new Set(),
+      trackedIds: [],
+      priorIds: [],
+      fallbackIds: start.map((e) => e.id),
+    });
+    expect(
+      offered.map((t) => t.id),
+      `${lang}: the reader rejected a text written from its own starting vocabulary`,
+    ).toEqual(["t1"]);
+
+    // And the rule it replaced would have thrown the same text away. If this
+    // ever stops holding, the two lists have converged and the guard above has
+    // become vacuous rather than satisfied.
+    const oldReaderList = entries
+      .filter((e) => level.freqBands.includes(e.freqBand))
+      .slice(0, 60)
+      .map((e) => e.id);
+    expect(
+      selectUnread({
+        texts: [text],
+        readIds: new Set(),
+        trackedIds: [],
+        priorIds: [],
+        fallbackIds: oldReaderList,
+      }),
+      `${lang}: the old 60-word frequency head no longer rejects this, so the test proves nothing`,
+    ).toEqual([]);
   });
 });

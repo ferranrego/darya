@@ -75,19 +75,24 @@ describe.each(LANGS)("%s word selection", (lang) => {
       }
     });
 
-    it("gives beginner levels two new words per sentence", () => {
-      // Deliberately more than A2 asks for, and deliberately not derived from
-      // the ratio. A beginner text is a set of independent useful sentences and
-      // every word in one is picturable, so *El gos menja molta carn* teaches
-      // four at once and is easier than a sentence teaching one. Difficulty at
-      // A1 comes from abstraction and syntax, not from the count.
+    it("gives beginner levels one new word per sentence, capped low", () => {
+      // Deliberately not derived from the ratio, and deliberately LOW.
       //
-      // The ratio is inert here by design: its whole 0.02-0.25 range collapsed
-      // to two or three words at these levels, so it could not express the
-      // difference at exactly the levels where new vocabulary matters most.
+      // This was two new words per sentence (cap 10) while a beginner text was
+      // a set of independent useful sentences - each one picturable, so *El gos
+      // menja molta carn* could teach four at once. Once the beginner prompt
+      // became a cohesive micro-narrative, that stopped working: a continuous
+      // story cannot absorb eight mandatory new words without inventing
+      // vocabulary outside the allowed list, which is the one thing the prompt
+      // forbids. One per sentence, capped at 4, is what a narrative can carry.
+      //
+      // The ratio stays inert here by design: its whole 0.02-0.25 range
+      // collapsed to two or three words at these levels, so it could not
+      // express the difference at exactly the levels where new vocabulary
+      // matters most.
       for (const level of levels.filter(isBeginnerLevel)) {
         const mid = (level.sentenceRange[0] + level.sentenceRange[1]) / 2;
-        const want = Math.max(2, Math.min(10, Math.round(mid * 2)));
+        const want = Math.max(2, Math.min(4, Math.round(mid)));
         expect(targetCountFor(level, 0.05), `${level.id}`).toBe(want);
         expect(targetCountFor(level, 0.25), `${level.id} must ignore the ratio`).toBe(want);
       }

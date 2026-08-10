@@ -29,7 +29,8 @@ function load(lang: string) {
 describe("cefrOf", () => {
   const at = (cefrHint: string): Level =>
     ({ id: "L1", name: "x", cefrHint, freqBands: [1], entryKnownWords: 0,
-       sentenceRange: [2, 3], sentenceLengthHint: "max 7 words", avgSentenceWords: 5,
+       sentenceRange: [2, 3], sentenceLengthHint: "max 7 words per sentence",
+       maxSentenceWords: 7, avgSentenceWords: 5,
        grammarAllowed: [], available: true }) as Level;
 
   it("collapses the finer reading labels onto the course that exists", () => {

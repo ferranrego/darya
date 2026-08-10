@@ -1,13 +1,16 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BookOpen } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { BookOpen, WifiOff } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { PriorWordsSheet } from "@/components/reader/prior-words-sheet";
 import { TextReader } from "@/components/reader/text-reader";
 import { Button } from "@/components/ui/button";
 import { levels, lexicon } from "@/lib/content/load";
+import { isTeachable } from "@/lib/content/teachability";
 import { placementCredit, selectUnread } from "@/lib/content/text-pool";
+import { coldStartKnown } from "@/lib/content/word-selection";
 import { updateProfile } from "@/lib/db/profiles";
 import { seedKnownWords } from "@/lib/db/words";
 import {
@@ -19,20 +22,40 @@ import {
   useUserWords,
 } from "@/lib/queries/hooks";
 
+/** Tracks the browser's online/offline state, reactively. */
+function useOnline(): boolean {
+  // Lazy initializer, not an effect: `navigator` is unavailable during SSR,
+  // and setting the real value in an effect body after mount is exactly the
+  // synchronous-setState-in-an-effect pattern that cascades an extra render.
+  const [online, setOnline] = useState(() => typeof navigator === "undefined" || navigator.onLine);
+  useEffect(() => {
+    const goOnline = () => setOnline(true);
+    const goOffline = () => setOnline(false);
+    window.addEventListener("online", goOnline);
+    window.addEventListener("offline", goOffline);
+    return () => {
+      window.removeEventListener("online", goOnline);
+      window.removeEventListener("offline", goOffline);
+    };
+  }, []);
+  return online;
+}
+
 export default function ReadPage() {
   const db = useSupabase();
   const qc = useQueryClient();
+  const router = useRouter();
+  const online = useOnline();
   const { data: user } = useUser();
   const { data: profile } = useProfile();
   const { data: userWords } = useUserWords();
-  const { data: texts, isLoading, refetch } = useTextsForLevel(profile?.level_estimate);
-  const { data: readRows, refetch: refetchRead } = useReadTexts();
+  const { data: texts, isLoading: isLoadingTexts, isFetching: isFetchingTexts, refetch } = useTextsForLevel(profile?.level_estimate);
+  const { data: readRows, isLoading: isLoadingRead, isFetching: isFetchingRead, refetch: refetchRead } = useReadTexts();
   
   const [activeTextId, setActiveTextId] = useState<string | null>(null);
   const [emptyGenerations, setEmptyGenerations] = useState(0);
   /** Previous "a text was showable" value, for the render-time reset below. */
   const [sawText, setSawText] = useState(false);
-  const [showRetry, setShowRetry] = useState(false);
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
 
@@ -94,11 +117,29 @@ export default function ReadPage() {
     const knownCount = trackedCount + priorWordIds.length;
     let fallbackIds: string[] | undefined = undefined;
 
+    /**
+     * The same starting vocabulary the server wrote the text against.
+     *
+     * This used to be `inBand.slice(0, 60)` - the sixty commonest words in the
+     * level's bands, in file order - while `/api/generate` built its cold start
+     * with `coldStartKnown`: 120 entries, beginner core first, teachability
+     * filtered. Measured, only 56 of 60 (ca) and 60 of 60 (prs) overlapped, so
+     * 64 and 60 of the words the server had *built the text from* were scored
+     * here as untaught. A five-sentence text has 25-30 distinct lexemes and the
+     * gate is 25%, so a handful of core words failed it: the server answered
+     * `created: true`, the reader showed nothing, and after three rounds the
+     * learner was told the texts were the wrong level for them.
+     *
+     * Worse, it got worse as the content improved. The beginner core exists
+     * precisely because `gos` and `poma` rank far below the frequency head, so
+     * every core word the server correctly reached for was a word this list
+     * lacked. Both halves must call the same function - that is the whole point
+     * of the contract this module's header describes.
+     */
     if (knownCount < 40) {
       const level = levels.find((l) => l.id === profile?.level_estimate);
       if (level) {
-        const inBand = lexicon.entries.filter((e) => level.freqBands.includes(e.freqBand));
-        fallbackIds = inBand.slice(0, 60).map((e) => e.id);
+        fallbackIds = coldStartKnown(lexicon.entries, level, isTeachable).map((e) => e.id);
       }
     }
 
@@ -116,20 +157,13 @@ export default function ReadPage() {
 
   const generate = useMutation({
     mutationFn: async () => {
-      const res = await fetch("/api/generate", { 
+      const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ force: true })
       });
       if (!res.ok) throw new Error((await res.json()).error ?? "generation failed");
       return res.json();
-    },
-    onMutate: () => {
-      // Reset from the callback that starts the run, not from an effect
-      // watching `isPending` - the effect fired a synchronous setState on every
-      // transition and cascaded a render.
-      setProgress(0);
-      setShowRetry(false);
     },
     onSuccess: () => refetch(),
     // Counts generation rounds. Whether a round was *useful* cannot be known
@@ -138,21 +172,6 @@ export default function ReadPage() {
     // the counter is cleared below the moment a text becomes available.
     onSettled: () => setEmptyGenerations((n) => n + 1),
   });
-
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    if (generate.isPending) {
-      const interval = setInterval(() => {
-        setProgress((prev) => {
-          if (prev < 85) return prev + 2;
-          if (prev < 98) return prev + 0.5;
-          return prev;
-        });
-      }, 500);
-      return () => clearInterval(interval);
-    }
-  }, [generate.isPending]);
 
   /**
    * How many times to accept "written, but still nothing to show" before
@@ -168,7 +187,8 @@ export default function ReadPage() {
   const MAX_EMPTY_GENERATIONS = 3;
 
   // Pool empty → ask the server to write a new text.
-  const poolEmpty = !isLoading && !!readRows && unread.length === 0;
+  const isSyncing = isFetchingTexts || isFetchingRead;
+  const poolEmpty = !isLoadingTexts && !isSyncing && !!readRows && unread.length === 0;
 
   /**
    * Clear the counter the moment a text is showable.
@@ -195,17 +215,12 @@ export default function ReadPage() {
   const gaveUp = poolEmpty && !generate.isPending && emptyGenerations >= MAX_EMPTY_GENERATIONS;
 
   useEffect(() => {
+    if (!online) return; // no point spending an attempt against a dead connection
     if (!poolEmpty || generate.isPending || generate.isError) return;
     if (emptyGenerations >= MAX_EMPTY_GENERATIONS) return;
     generate.mutate();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [poolEmpty, generate.isPending, generate.isError, emptyGenerations]);
-
-  useEffect(() => {
-    if (!generate.isPending) return;
-    const timer = setTimeout(() => setShowRetry(true), 15000);
-    return () => clearTimeout(timer);
-  }, [generate.isPending]);
+  }, [online, poolEmpty, generate.isPending, generate.isError, emptyGenerations]);
 
   useEffect(() => {
     if (unread.length > 0) {
@@ -216,63 +231,91 @@ export default function ReadPage() {
     }
   }, [unread, activeTextId]);
 
-  if (isLoading || !profile || !readRows || !userWords) {
+  if (isLoadingTexts || isLoadingRead || !profile || !readRows || !userWords || (isSyncing && unread.length === 0)) {
     return <ReaderSkeleton />;
   }
 
   if (unread.length === 0) {
-    return (
-      <div className="flex flex-1 flex-col items-center justify-center py-32 text-center">
-        <div className="flex size-14 items-center justify-center rounded-full bg-lapis-soft text-lapis">
-          <BookOpen size={24} />
-        </div>
-        {generate.isError || gaveUp ? (
-          <>
-            <h1 className="mt-6 text-[20px] font-semibold">Couldn&apos;t write a new text</h1>
-            <p className="mx-auto mt-2 max-w-xs text-[14px] text-ink-soft">
-              {generate.isError
-                ? generate.error instanceof Error
-                  ? generate.error.message
-                  : "The AI writer is unavailable."
-                : "We wrote a few and none were the right level for you. Marking a few more words as known usually fixes it."}
-            </p>
-            <Button
-              className="mt-8"
-              onClick={() => {
-                setEmptyGenerations(0);
-                generate.mutate();
-              }}
-            >
-              Try again
-            </Button>
-          </>
-        ) : (
-          <>
-            <div className="mx-auto mt-6 w-full max-w-xs rounded-full bg-ink-soft/20 h-2 overflow-hidden">
-              <div 
-                className="h-full bg-ink transition-all duration-500 ease-out" 
-                style={{ width: `${progress}%` }} 
-              />
-            </div>
-            <h1 className="mt-4 text-[20px] font-semibold">Writing your next text…</h1>
-            <p className="mt-2 text-[14px] text-ink-soft">
-              A fresh story with just the right new words. ({Math.floor(progress)}%)
-            </p>
-            {showRetry && (
-              <Button
-                variant="secondary"
-                className="mt-8"
-                onClick={() => {
-                  setEmptyGenerations(0);
-                  generate.mutate();
-                }}
-              >
-                Taking too long? Try again
+    const retry = () => {
+      setEmptyGenerations(0);
+      generate.mutate();
+    };
+
+    // Offline first: every other state below assumes the request it describes
+    // was actually sent, which is not true here, and "Our writer is down"
+    // blames the wrong thing when the real problem is the learner's own
+    // connection.
+    if (!online) {
+      return (
+        <EmptyState icon={<WifiOff size={24} />} title="You're offline">
+          <p className="mx-auto mt-2 max-w-xs text-[14px] text-ink-soft">
+            Your progress is saved. We&apos;ll write your next text as soon as
+            you&apos;re back online.
+          </p>
+          <Button variant="secondary" className="mt-8" onClick={() => router.push("/history")}>
+            See what you&apos;ve read
+          </Button>
+        </EmptyState>
+      );
+    }
+
+    // A real infrastructure failure - the free-tier provider chain
+    // exhausted, or every provider rejected the request. `route.ts`
+    // deliberately scrubs this message before it reaches the client (see its
+    // own comment), so showing it verbatim is safe and specific rather than
+    // generic.
+    if (generate.isError) {
+      return (
+        <EmptyState icon={<BookOpen size={24} />} title="Our writer is down right now">
+          <p className="mx-auto mt-2 max-w-xs text-[14px] text-ink-soft">
+            {generate.error instanceof Error ? generate.error.message : "Try again in a moment."}
+          </p>
+          <Button className="mt-8" onClick={retry}>
+            Try again
+          </Button>
+        </EmptyState>
+      );
+    }
+
+    // The server wrote texts and the reader rejected all of them - a real
+    // outcome, not one to explain away. "Marking a few more words as known
+    // usually fixes it" used to stand in here for a diagnosis nobody ran;
+    // Review and Grammar are actual next steps rather than a repeat of the
+    // same request.
+    if (gaveUp) {
+      return (
+        <EmptyState icon={<BookOpen size={24} />} title="Nothing new to read yet">
+          <p className="mx-auto mt-2 max-w-xs text-[14px] text-ink-soft">
+            We wrote a few texts and none matched your level well enough to
+            show. Try again, or spend a few minutes on review or grammar
+            first.
+          </p>
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <Button onClick={retry}>Try again</Button>
+            <div className="flex gap-3">
+              <Button variant="secondary" onClick={() => router.push("/review")}>
+                Review
               </Button>
-            )}
-          </>
-        )}
-      </div>
+              <Button variant="secondary" onClick={() => router.push("/grammar")}>
+                Grammar
+              </Button>
+            </div>
+          </div>
+        </EmptyState>
+      );
+    }
+
+    // In flight, or about to be - the auto-generate effect above starts the
+    // request; this only has to say something true while it runs. No
+    // percentage: nothing here can actually measure progress through a model
+    // call, and a bar climbing toward a number that never quite means
+    // anything is the thing this replaced.
+    return (
+      <EmptyState icon={<BookOpen size={24} />} title="Writing your next text…">
+        <p className="mt-2 text-[14px] text-ink-soft">
+          A fresh text with just the right new words.
+        </p>
+      </EmptyState>
     );
   }
 
@@ -314,6 +357,26 @@ export default function ReadPage() {
         onClose={() => setPriorDismissed(true)}
       />
     </>
+  );
+}
+
+function EmptyState({
+  icon,
+  title,
+  children,
+}: {
+  icon: ReactNode;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="flex flex-1 flex-col items-center justify-center py-32 text-center">
+      <div className="flex size-14 items-center justify-center rounded-full bg-lapis-soft text-lapis">
+        {icon}
+      </div>
+      <h1 className="mt-6 text-[20px] font-semibold">{title}</h1>
+      {children}
+    </div>
   );
 }
 

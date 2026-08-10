@@ -16,14 +16,17 @@
         4,
         6
       ],
-      "sentenceLengthHint": "strictly max 6 words per sentence, simple subject-verb-object, NO conjunctions (no 'and', 'but')",
+      "sentenceLengthHint": "strictly max 6 words per sentence, simple subject-verb-object. The only conjunctions allowed are 'i' and 'o' joining two nouns or two adjectives (el pare i la mare, petit i negre); never join two clauses, and never use a subordinator (que, perquè, quan)",
+      "maxSentenceWords": 6,
       "grammarAllowed": [
         "present of ser and estar (soc, ets, és, estic, està)",
         "definite and indefinite articles (el, la, els, les, un, una). el and la elide to l' before a vowel or h (l'home, l'aigua, l'hora) - never 'el home'. The one exception: la does NOT elide before an unstressed i- or u- (la idea, la universitat, la humitat), though it does before a stressed one (l'illa)",
         "plurals: -s by default; feminines in -a take -es (casa/cases); a word ending in a STRESSED -s, -ç, -x or -ig takes -os and doubles a single s after the stressed vowel (gos/gossos, peix/peixos, feliç/feliços, mes/mesos). A word ending in an UNSTRESSED -s is invariable (el llapis/els llapis, el dilluns/els dilluns, el temps/els temps) - never 'dillunsos'. Adjectives agree in gender and number",
         "present indicative of first-conjugation -ar verbs (parlo, parles, parla)",
         "simple questions with què, qui, on, com, quan",
-        "negation with no"
+        "negation with no",
+        "adjectives normally follow the noun (la casa gran, un gos petit), not the English default before it",
+        "subject pronouns (jo, tu, ell, ella...) are normally dropped - the verb ending already marks the person, so 'soc alt' not 'jo soc alt' unless the subject needs emphasis or contrast"
       ],
       "avgSentenceWords": 5,
       "available": true
@@ -45,11 +48,12 @@
         6
       ],
       "sentenceLengthHint": "strictly max 8 words per sentence, can use simple conjunctions but no complex clauses",
+      "maxSentenceWords": 8,
       "grammarAllowed": [
         "present indicative of all three conjugations, including the incoative -eix- type (serveixo, prefereixes)",
         "the irregular presents a beginner needs: tenir (tinc), fer (faig), anar (vaig), poder (puc), voler (vull), venir (vinc), dir (dic), saber (sé), veure (veig)",
-        "possessives (el meu, la teva, els seus)",
-        "hi ha for existence, and the contractions al, del, pel",
+        "possessives (el meu, la teva, els seus) agree with the noun they modify, never with the possessor: 'la meva mare' (my mother) is feminine because mare is, not because the speaker is - never 'el meu mare'",
+        "hi ha for existence, and the contractions al, del, pel (plural als, dels, pels) - but a, de, per never contract with la/les: a la casa, de la casa, per la finestra",
         "the periphrastic past (vaig menjar, vas anar) - this, not the simple past, is how Catalan speaks about the past",
         "cardinal numbers, days, months, telling the time",
         "prepositions a, de, en, amb, per, sense, fins",
@@ -76,6 +80,7 @@
         5
       ],
       "sentenceLengthHint": "max 12 words per sentence; at most one subordinate clause",
+      "maxSentenceWords": 12,
       "grammarAllowed": [
         "imperfect indicative (parlava, tenia, era, feia) for description and habit, contrasted with the periphrastic past for completed events",
         "the perfect with haver (he menjat, hem arribat) for events within today",
@@ -108,6 +113,7 @@
         6
       ],
       "sentenceLengthHint": "max 14 words per sentence; subordinate clauses allowed",
+      "maxSentenceWords": 14,
       "grammarAllowed": [
         "conditional (parlaria, voldria, m'agradaria) for politeness and hypothesis",
         "present subjunctive after voler que, esperar que, caldre que, and after quan with future reference",
@@ -142,6 +148,7 @@
         8
       ],
       "sentenceLengthHint": "max 18 words per sentence; multiple clauses",
+      "maxSentenceWords": 18,
       "grammarAllowed": [
         "all previous grammar",
         "imperfect subjunctive",
@@ -163,7 +170,8 @@
         6,
         7,
         8,
-        9
+        9,
+        10
       ],
       "entryKnownWords": 4000,
       "sentenceRange": [
@@ -171,6 +179,7 @@
         9
       ],
       "sentenceLengthHint": "max 22 words per sentence; rich vocabulary and subordination",
+      "maxSentenceWords": 22,
       "grammarAllowed": [
         "all previous grammar",
         "present subjunctive for influence/emotion",
@@ -194,14 +203,16 @@
         6,
         7,
         8,
-        9
+        9,
+        10
       ],
-      "entryKnownWords": 4028,
+      "entryKnownWords": 4203,
       "sentenceRange": [
         7,
         10
       ],
       "sentenceLengthHint": "max 25 words per sentence; formal register and nuances",
+      "maxSentenceWords": 25,
       "grammarAllowed": [
         "all previous grammar",
         "concessive clauses (malgrat que, per bé que)",
@@ -226,12 +237,13 @@
         9,
         10
       ],
-      "entryKnownWords": 4055,
+      "entryKnownWords": 4406,
       "sentenceRange": [
         8,
         12
       ],
       "sentenceLengthHint": "max 30 words per sentence; academic and literary style",
+      "maxSentenceWords": 30,
       "grammarAllowed": [
         "all Catalan grammar",
         "literary tenses if applicable"

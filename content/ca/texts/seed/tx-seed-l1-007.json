@@ -1,0 +1,185 @@
+{
+  "id": "tx-seed-l1-007",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "Una casa clara",
+  "titleEn": "A bright house",
+  "sentences": [
+    {
+      "target": "La casa és clara.",
+      "en": "The house is bright.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "clara",
+          "lexemeId": "lx-4313"
+        }
+      ]
+    },
+    {
+      "target": "El nen juga a casa.",
+      "en": "The child plays at home.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "juga",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    },
+    {
+      "target": "El nen mira la porta.",
+      "en": "The child looks at the door.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "mira",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "El nen menja pa.",
+      "en": "The child eats bread.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "menja",
+          "lexemeId": "lx-0101"
+        },
+        {
+          "surface": "pa",
+          "lexemeId": "lx-0289"
+        }
+      ]
+    },
+    {
+      "target": "El nen escolta la música.",
+      "en": "The child listens to the music.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "escolta",
+          "lexemeId": "lx-0115"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "música",
+          "lexemeId": "lx-0317"
+        }
+      ]
+    },
+    {
+      "target": "La casa clara és bonica.",
+      "en": "The bright house is pretty.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "clara",
+          "lexemeId": "lx-4313"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "bonica",
+          "lexemeId": "lx-0228"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0069",
+    "lx-0078",
+    "lx-0098",
+    "lx-0101",
+    "lx-0114",
+    "lx-0115",
+    "lx-0200",
+    "lx-0228",
+    "lx-0289",
+    "lx-0317",
+    "lx-4313"
+  ],
+  "newWords": [
+    "lx-0114",
+    "lx-0115",
+    "lx-0200",
+    "lx-0228",
+    "lx-4313"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 7
+}

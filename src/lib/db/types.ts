@@ -51,6 +51,8 @@ export interface TextRow {
   theme: string | null;
   source: "seed" | "generated";
   doc: TextDocument;
+  /** Curriculum order within `level`, mirrored from `doc.seq` so getTextsForLevel can sort in SQL without parsing the JSONB doc. Null for anything cached before it existed. */
+  seq: number | null;
 
   created_at: string;
 }
