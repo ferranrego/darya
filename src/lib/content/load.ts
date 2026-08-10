@@ -6,15 +6,18 @@ import alphabetJson from "@content/alphabet/course.json";
 import grammarJson from "@content/grammar/all.json";
 import lexiconJson from "@content/lexicon/lexicon.json";
 import themesJson from "@content/lexicon/themes.json";
+import beginnerSpecJson from "@content/lexicon/beginner-spec.json";
 import levelsJson from "@content/levels/levels.json";
 import { buildIndex, type LexiconIndex } from "../text";
 import { GRAMMAR_LEVEL_ORDER, cefrOf } from "./cefr";
 import {
   alphabetCourseSchema,
+  beginnerSpecSchema,
   grammarCoursesFileSchema,
   levelsFileSchema,
   lexiconFileSchema,
   type AlphabetCourse,
+  type BeginnerSpec,
   type GrammarCourse,
   type GrammarLesson,
   type GrammarLevel,
@@ -28,6 +31,7 @@ import {
 
 export const lexicon: LexiconFile = lexiconFileSchema.parse(lexiconJson);
 export const themes: Theme[] = themesFileSchema.parse(themesJson);
+export const beginnerSpec: BeginnerSpec = beginnerSpecSchema.parse(beginnerSpecJson);
 export const alphabetCourse: AlphabetCourse = alphabetCourseSchema.parse(alphabetJson);
 export const levelsFile: LevelsFile = levelsFileSchema.parse(levelsJson);
 

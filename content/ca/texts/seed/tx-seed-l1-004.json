@@ -1,0 +1,202 @@
+{
+  "id": "tx-seed-l1-004",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "La casa petita",
+  "titleEn": "The small house",
+  "sentences": [
+    {
+      "target": "La casa és petita.",
+      "en": "The house is small.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petita",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "La casa té una porta.",
+      "en": "The house has a door.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "A casa hi ha una taula llarga.",
+      "en": "At home there is a long table.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "taula",
+          "lexemeId": "lx-0097"
+        },
+        {
+          "surface": "llarga",
+          "lexemeId": "lx-0224"
+        }
+      ]
+    },
+    {
+      "target": "A casa hi ha un noi.",
+      "en": "At home there is a boy.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "noi",
+          "lexemeId": "lx-0006"
+        }
+      ]
+    },
+    {
+      "target": "El noi és jove.",
+      "en": "The boy is young.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "noi",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "jove",
+          "lexemeId": "lx-0221"
+        }
+      ]
+    },
+    {
+      "target": "El noi obre la porta.",
+      "en": "The boy opens the door.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "noi",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "obre",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0006",
+    "lx-0013",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0037",
+    "lx-0038",
+    "lx-0042",
+    "lx-0054",
+    "lx-0062",
+    "lx-0069",
+    "lx-0097",
+    "lx-0098",
+    "lx-0120",
+    "lx-0218",
+    "lx-0221",
+    "lx-0224"
+  ],
+  "newWords": [
+    "lx-0006",
+    "lx-0054",
+    "lx-0062",
+    "lx-0097",
+    "lx-0098",
+    "lx-0120",
+    "lx-0221",
+    "lx-0224"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 4
+}

@@ -7,9 +7,17 @@
 export interface SeedTextSource {
   slug: string;
   level: string;
+  /** Curriculum order within the level. Must be unique per level. */
+  seq: number;
   titleTarget: string;
   titleTranslit?: string;
   titleEn: string;
+  /**
+   * Lexeme ids this text was written to introduce, from the schedule slot.
+   * Optional; when present the build asserts the computed newWords match, so
+   * a drafted text that quietly failed to use its assigned words fails loudly.
+   */
+  introduces?: string[];
   sentences: Array<{ target: string; translit?: string; en: string }>;
 }
 
@@ -17,6 +25,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-001",
     level: "L1",
+    seq: 1,
     titleTarget: "خانه ما",
     titleTranslit: "khāna-ye mā",
     titleEn: "Our house",
@@ -31,6 +40,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-002",
     level: "L1",
+    seq: 2,
     titleTarget: "روز من",
     titleTranslit: "rōz-e man",
     titleEn: "My day",
@@ -45,6 +55,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-003",
     level: "L1",
+    seq: 3,
     titleTarget: "دوست من",
     titleTranslit: "dōst-e man",
     titleEn: "My friend",
@@ -56,8 +67,160 @@ export const seedTexts: SeedTextSource[] = [
     ],
   },
   {
+    slug: "l1-004",
+    level: "L1",
+    seq: 4,
+    titleTarget: "خانه نو",
+    titleTranslit: "khāna-ye naw",
+    titleEn: "The new house",
+    sentences: [
+      { target: "خانه ما نو است.", translit: "khāna-ye mā naw ast.", en: "Our house is new." },
+      { target: "خانه خورد است.", translit: "khāna khurd ast.", en: "The house is small." },
+      { target: "ما در خانه بازی می‌کنیم.", translit: "mā dar khāna bāzī mēkunēm.", en: "We play at home." },
+      { target: "من در خانه کتاب می‌خوانم.", translit: "man dar khāna ketāb mēkhānam.", en: "I read a book at home." },
+      { target: "خانه ما خوب است.", translit: "khāna-ye mā khōb ast.", en: "Our house is good." },
+    ],
+  },
+  {
+    slug: "l1-005",
+    level: "L1",
+    seq: 5,
+    titleTarget: "کار من",
+    titleTranslit: "kār-e man",
+    titleEn: "My job",
+    sentences: [
+      { target: "من کار کلان دارم.", translit: "man kār-e kalān dāram.", en: "I have a big job." },
+      { target: "من کار را به خانه می‌آورم.", translit: "man kār rā ba khāna mēāwaram.", en: "I bring the work home." },
+      { target: "من در خانه می‌مانم.", translit: "man dar khāna mēmānam.", en: "I stay home." },
+      { target: "چای سیاه می‌خورم.", translit: "chāy-e siyāh mēkhuram.", en: "I drink black tea." },
+      { target: "من زود می‌خوابم.", translit: "man zūd mēkhābam.", en: "I sleep early." },
+    ],
+  },
+  {
+    slug: "l1-006",
+    level: "L1",
+    seq: 6,
+    titleTarget: "رفتن به خانه",
+    titleTranslit: "raftan ba khāna",
+    titleEn: "Going home",
+    sentences: [
+      { target: "من به خانه می‌روم.", translit: "man ba khāna mērawam.", en: "I go home." },
+      { target: "من به خانه می‌رسم.", translit: "man ba khāna mērasam.", en: "I arrive home." },
+      { target: "خانه ما سفید است.", translit: "khāna-ye mā safēd ast.", en: "Our house is white." },
+      { target: "مادر به خانه می‌آید.", translit: "mādar ba khāna mēāyad.", en: "Mother comes home." },
+      { target: "من آهنگ می‌شنوم.", translit: "man āhang mēshunawam.", en: "I listen to a song." },
+    ],
+  },
+  {
+    slug: "l1-007",
+    level: "L1",
+    seq: 7,
+    titleTarget: "خانه آبی",
+    titleTranslit: "khāna-ye ābī",
+    titleEn: "The blue house",
+    sentences: [
+      { target: "خانه ما آبی است.", translit: "khāna-ye mā ābī ast.", en: "Our house is blue." },
+      { target: "من به خانه نگاه می‌کنم.", translit: "man ba khāna nigāh mēkunam.", en: "I look at the house." },
+      { target: "خانه روشن است.", translit: "khāna rōshan ast.", en: "The house is bright." },
+      { target: "خانه سبز نیست.", translit: "khāna sabz nēst.", en: "The house isn't green." },
+      { target: "خانه سرخ نیست.", translit: "khāna surkh nēst.", en: "The house isn't red." },
+    ],
+  },
+  {
+    slug: "l1-008",
+    level: "L1",
+    seq: 8,
+    titleTarget: "هوای سرد",
+    titleTranslit: "hawā-ye sard",
+    titleEn: "Cold weather",
+    sentences: [
+      { target: "امروز هوا سرد است.", translit: "emrōz hawā sard ast.", en: "Today the weather is cold." },
+      { target: "برف می‌بارد.", translit: "barf mēbārad.", en: "It's snowing." },
+      { target: "دست من تر است.", translit: "dast-e man tar ast.", en: "My hand is wet." },
+      { target: "من آب گرم می‌آورم.", translit: "man āb-e garm mēāwaram.", en: "I bring warm water." },
+      { target: "برف زیاد است.", translit: "barf ziyād ast.", en: "There's a lot of snow." },
+    ],
+  },
+  {
+    slug: "l2-004",
+    level: "L2",
+    seq: 4,
+    titleTarget: "مکتب ما",
+    titleTranslit: "maktab-e mā",
+    titleEn: "Our school",
+    sentences: [
+      { target: "بچه من در مکتب کلان می‌خواند.", translit: "bacha-ye man dar maktab-e kalān mēkhānad.", en: "My child studies at a big school." },
+      { target: "مکتب ما شروع می‌شود.", translit: "maktab-e mā shurū' mēshawad.", en: "Our school is starting." },
+      { target: "او در مکتب زمان زیاد دارد.", translit: "ō dar maktab zamān-e ziyād dārad.", en: "He has a lot of time at school." },
+      { target: "به نظر من، مکتب خوب است.", translit: "ba nazar-e man, maktab khōb ast.", en: "In my opinion, the school is good." },
+      { target: "در شهر ما مکتب خوب وجود دارد.", translit: "dar shahr-e mā maktab-e khōb wujūd dārad.", en: "In our city there is a good school." },
+    ],
+  },
+  {
+    slug: "l2-005",
+    level: "L2",
+    seq: 5,
+    titleTarget: "بچه در خانه",
+    titleTranslit: "bacha dar khāna",
+    titleEn: "The child at home",
+    sentences: [
+      { target: "الان بچه تنها در خانه است.", translit: "al'ān bacha tanhā dar khāna ast.", en: "Right now the child is alone at home." },
+      { target: "برف گل‌های ما را می‌کشد.", translit: "barf gul-hā-ye mā rā mēkushad.", en: "The snow kills our flowers." },
+      { target: "او از برف خانه می‌سازد.", translit: "ō az barf khāna mēsāzad.", en: "He builds a house out of snow." },
+      { target: "او تمام کار را تنها می‌کند.", translit: "ō tamām-e kār rā tanhā mēkunad.", en: "He does all the work by himself." },
+      { target: "پس، او تنها می‌ماند.", translit: "pas, ō tanhā mēmānad.", en: "Then, he remains alone." },
+    ],
+  },
+  {
+    slug: "l2-006",
+    level: "L2",
+    seq: 6,
+    titleTarget: "پدرم",
+    titleTranslit: "padaram",
+    titleEn: "My father",
+    sentences: [
+      { target: "پدرم در خانه می‌نشیند.", translit: "padaram dar khāna mēneshīnad.", en: "My father sits at home." },
+      { target: "او جنگ گذشته را به یاد دارد.", translit: "ō jang-e guzashta rā ba yād dārad.", en: "He remembers the past war." },
+      { target: "حالا پدرم جور است.", translit: "hālā padaram jōr ast.", en: "Now my father is well." },
+      { target: "من به پدرم کمک می‌کنم.", translit: "man ba padaram kumak mēkunam.", en: "I help my father." },
+      { target: "این بار، همه چیز خوب است.", translit: "īn bār, hama chīz khōb ast.", en: "This time, everything is good." },
+    ],
+  },
+  {
+    slug: "l2-007",
+    level: "L2",
+    seq: 7,
+    titleTarget: "کمک دولت",
+    titleTranslit: "kumak-e dawlat",
+    titleEn: "Government help",
+    sentences: [
+      { target: "دولت به مردم کمک می‌کند.", translit: "dawlat ba mardum kumak mēkunad.", en: "The government helps the people." },
+      { target: "دولت به مردم زمین می‌بخشد.", translit: "dawlat ba mardum zamīn mēbakhshad.", en: "The government grants land to the people." },
+      { target: "مردم از این زمین استفاده می‌کنند.", translit: "mardum az īn zamīn istifāda mēkunand.", en: "The people make use of this land." },
+      { target: "آنها خانه‌ها را رنگ می‌کنند.", translit: "ānhā khāna-hā rā rang mēkunand.", en: "They paint the houses." },
+      { target: "کسی تنها نمی‌ماند.", translit: "kasē tanhā namēmānad.", en: "No one is left alone." },
+      { target: "این کار مبارک باشد!", translit: "īn kār mubārak bāshad!", en: "May this work be blessed!" },
+    ],
+  },
+  {
+    slug: "l2-008",
+    level: "L2",
+    seq: 8,
+    titleTarget: "آهنگ جدید",
+    titleTranslit: "āhang-e jadīd",
+    titleEn: "The new song",
+    sentences: [
+      { target: "من کتاب را می‌گذارم.", translit: "man ketāb rā mēguzāram.", en: "I put down the book." },
+      { target: "من آماده هستم.", translit: "man āmāda hastam.", en: "I am ready." },
+      { target: "من یک آهنگ جدید می‌شنوم.", translit: "man yak āhang-e jadīd mēshunawam.", en: "I listen to a new song." },
+      { target: "به نظر من، این آهنگ خوب است.", translit: "ba nazar-e man, īn āhang khōb ast.", en: "In my opinion, this song is good." },
+      { target: "حتی بچه‌ها این آهنگ را می‌شنوند.", translit: "hattā bacha-hā īn āhang rā mēshunawand.", en: "Even the children hear this song." },
+    ],
+  },
+  {
     slug: "l2-001",
     level: "L2",
+    seq: 1,
     titleTarget: "بازار",
     titleTranslit: "bāzār",
     titleEn: "The market",
@@ -72,6 +235,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-002",
     level: "L2",
+    seq: 2,
     titleTarget: "زمستان کابل",
     titleTranslit: "zemestān-e kābul",
     titleEn: "Kabul's winter",
@@ -86,6 +250,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-003",
     level: "L2",
+    seq: 3,
     titleTarget: "فامیل من",
     titleTranslit: "fāmīl-e man",
     titleEn: "My family",
@@ -100,6 +265,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l3-001",
     level: "L3",
+    seq: 1,
     titleTarget: "سفر به هرات",
     titleTranslit: "safar ba herāt",
     titleEn: "A trip to Herat",
@@ -114,6 +280,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l3-002",
     level: "L3",
+    seq: 2,
     titleTarget: "نوروز",
     titleTranslit: "nawrōz",
     titleEn: "Nawroz",
@@ -128,6 +295,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l4-001",
     level: "L4",
+    seq: 1,
     titleTarget: "دوستم در کابل",
     titleTranslit: "dōstam dar kābul",
     titleEn: "My friend in Kabul",
@@ -143,6 +311,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l4-002",
     level: "L4",
+    seq: 2,
     titleTarget: "باغ در تابستان",
     titleTranslit: "bāgh dar tābestān",
     titleEn: "The garden in summer",
@@ -158,6 +327,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l4-003",
     level: "L4",
+    seq: 3,
     titleTarget: "کار نو",
     titleTranslit: "kār-e naw",
     titleEn: "New work",
@@ -173,6 +343,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l5-001",
     level: "L5",
+    seq: 1,
     titleTarget: "مکتب نو در قریه",
     titleTranslit: "maktab-e naw dar qarya",
     titleEn: "The new school in the village",
@@ -188,6 +359,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l5-002",
     level: "L5",
+    seq: 2,
     titleTarget: "کمک مردم",
     titleTranslit: "kumak-e mardum",
     titleEn: "The people's help",
@@ -203,6 +375,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l5-003",
     level: "L5",
+    seq: 3,
     titleTarget: "تصمیم تاجر",
     titleTranslit: "tasmīm-e tājir",
     titleEn: "The trader's decision",

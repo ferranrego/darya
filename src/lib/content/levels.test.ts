@@ -113,4 +113,34 @@ describe.each(LANGS)("%s levels", (lang) => {
       `${top.id} requires more words than the ${lang} lexicon contains (${entries.length})`,
     ).toBeLessThan(entries.length);
   });
+
+  /**
+   * The prose the model is told and the number the result is measured against
+   * must be the same number.
+   *
+   * `sentenceLengthHint` has always carried a words-per-sentence ceiling and
+   * nothing ever read it, so a pre-A1 text of two thirty-word sentences passed
+   * every gate. `maxSentenceWords` is now the machine-readable copy - and a
+   * second copy is a chance to drift, which is what this closes. If a hint is
+   * reworded so this regex stops matching, that is a failure worth having:
+   * the hint is the model's only statement of the rule.
+   */
+  it("tells the model the same sentence ceiling it measures against", () => {
+    for (const level of levels) {
+      const stated = level.sentenceLengthHint.match(/max (\d+) words per sentence/);
+      expect(
+        stated,
+        `${lang} ${level.id}: sentenceLengthHint must state "max N words per sentence"`,
+      ).not.toBeNull();
+      expect(
+        level.maxSentenceWords,
+        `${lang} ${level.id}: hint says ${stated?.[1]}, maxSentenceWords says ${level.maxSentenceWords}`,
+      ).toBe(Number(stated![1]));
+      // A ceiling below the level's own typical length is unsatisfiable.
+      expect(
+        level.maxSentenceWords,
+        `${lang} ${level.id}: ceiling ${level.maxSentenceWords} is below avgSentenceWords ${level.avgSentenceWords}`,
+      ).toBeGreaterThanOrEqual(level.avgSentenceWords);
+    }
+  });
 });

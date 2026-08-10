@@ -10,6 +10,11 @@ export async function getTextsForLevel(
     .from("texts")
     .select("*")
     .eq("level", level)
+    // Curriculum order first: authored seed texts carry a `seq` and read in
+    // that order, ahead of everything without one (generated texts, and seed
+    // texts cached before `seq` existed) - see the 20260808000000 migration.
+    // `created_at` breaks ties among texts that share (or lack) a `seq`.
+    .order("seq", { ascending: true, nullsFirst: false })
     .order("created_at", { ascending: true });
   if (error) throw error;
   return data as TextRow[];

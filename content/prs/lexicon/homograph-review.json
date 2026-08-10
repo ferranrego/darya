@@ -3,6 +3,11 @@
   "language": "prs",
   "reviewed": [
     {
+      "surface": "باشد",
+      "correctLexemeId": "lx-0287",
+      "reason": "'این کار مبارک باشد' (may this work be blessed) uses باشد as the fixed optative expression its own entry is authored for - lx-0287's own example, 'سال نو مبارک باشد', is the identical construction; the collision is with بودن (to be, lx-0096)'s generated 3rd-person subjunctive 'باشد', the same word under a different entry, not a different one."
+    },
+    {
       "surface": "بازی",
       "correctLexemeId": "lx-0191",
       "reason": "'بازی می‌کنند' (they play) uses بازی as the noun half of the light-verb compound 'بازی کردن' (to play); the collision is with باختن (to lose, lx-0474)'s 2nd-person-singular present 'بازی' (تو می‌بازی), which does not fit before 'می‌کنند'."

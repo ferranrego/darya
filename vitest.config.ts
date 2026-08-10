@@ -29,11 +29,30 @@ const lang = process.env.NEXT_PUBLIC_TARGET_LANG || DEFAULT_LANG;
  * explicitly, so the command in generate-smoke.test.ts's own header answered
  * "No test files found". Gating on an env var keeps them off the default run and
  * lets `LIVE_AI=1` ask for them by name.
+ *
+ * CLAUDE.md is explicit and non-negotiable: an agent must never set `LIVE_AI=1`
+ * itself - that budget is a real learner's, not a development tool's, and one
+ * session already exhausted a full day of it this way.
  */
 const liveExclusions = process.env.LIVE_AI ? [] : ["**/*.live.test.ts"];
 
+/**
+ * `*.manual.test.ts` - a different reason to exclude, not cost. These are
+ * content-authoring utilities (write a file, print a brief) that need `@content`
+ * and so have to run through vitest the same way a live check does, but never
+ * call a model. They are for a person (or an agent, since they cost nothing -
+ * see CLAUDE.md, only `LIVE_AI` guards a real budget) to invoke deliberately
+ * by full path, never for `pnpm test` to pick up as a behavioural test.
+ *
+ * Same exclude-applies-even-when-named quirk `LIVE_AI` above exists to solve:
+ * vitest applies `exclude` even when the file is passed explicitly, so
+ * without an unlock these would answer "No test files found" for the exact
+ * command their own header tells you to run.
+ */
+const manualExclusions = process.env.MANUAL ? [] : ["**/*.manual.test.ts"];
+
 export default defineConfig({
-  test: { exclude: ["**/node_modules/**", ...liveExclusions] },
+  test: { exclude: ["**/node_modules/**", ...liveExclusions, ...manualExclusions] },
   resolve: {
     alias: {
       "server-only": r("./test/server-only-stub.ts"),

@@ -15,6 +15,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-001",
     level: "L1",
+    seq: 1,
     titleTarget: "La casa",
     titleEn: "The house",
     sentences: [
@@ -27,6 +28,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-002",
     level: "L1",
+    seq: 2,
     titleTarget: "El matí",
     titleEn: "The morning",
     sentences: [
@@ -39,6 +41,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-003",
     level: "L1",
+    seq: 3,
     titleTarget: "El meu amic",
     titleEn: "My friend",
     sentences: [
@@ -49,8 +52,82 @@ export const seedTexts: SeedTextSource[] = [
     ],
   },
   {
+    slug: "l1-004",
+    level: "L1",
+    seq: 4,
+    titleTarget: "La casa petita",
+    titleEn: "The small house",
+    sentences: [
+      { target: "La casa és petita.", en: "The house is small." },
+      { target: "La casa té una porta.", en: "The house has a door." },
+      { target: "A casa hi ha una taula llarga.", en: "At home there is a long table." },
+      { target: "A casa hi ha un noi.", en: "At home there is a boy." },
+      { target: "El noi és jove.", en: "The boy is young." },
+      { target: "El noi obre la porta.", en: "The boy opens the door." },
+    ],
+  },
+  {
+    slug: "l1-005",
+    level: "L1",
+    seq: 5,
+    titleTarget: "El meu armari",
+    titleEn: "My wardrobe",
+    sentences: [
+      { target: "El meu armari és gran.", en: "My wardrobe is big." },
+      { target: "Obro la porta de l'armari.", en: "I open the wardrobe door." },
+      { target: "Busco un vestit negre.", en: "I am looking for a black dress." },
+      { target: "Trobo un vestit blanc.", en: "I find a white dress." },
+      { target: "Trec el vestit blanc.", en: "I take out the white dress." },
+      { target: "El vestit blanc és nou.", en: "The white dress is new." },
+    ],
+  },
+  {
+    slug: "l1-006",
+    level: "L1",
+    seq: 6,
+    titleTarget: "La meva casa",
+    titleEn: "My home",
+    sentences: [
+      { target: "Vull tornar a casa.", en: "I want to go back home." },
+      { target: "Vaig a casa amb el meu amic.", en: "I go home with my friend." },
+      { target: "Arribem a casa.", en: "We arrive home." },
+      { target: "A casa sento la música.", en: "At home I hear the music." },
+      { target: "El meu amic ve cada dia a casa.", en: "My friend comes home every day." },
+    ],
+  },
+  {
+    slug: "l1-007",
+    level: "L1",
+    seq: 7,
+    titleTarget: "Una casa clara",
+    titleEn: "A bright house",
+    sentences: [
+      { target: "La casa és clara.", en: "The house is bright." },
+      { target: "El nen juga a casa.", en: "The child plays at home." },
+      { target: "El nen mira la porta.", en: "The child looks at the door." },
+      { target: "El nen menja pa.", en: "The child eats bread." },
+      { target: "El nen escolta la música.", en: "The child listens to the music." },
+      { target: "La casa clara és bonica.", en: "The bright house is pretty." },
+    ],
+  },
+  {
+    slug: "l1-008",
+    level: "L1",
+    seq: 8,
+    titleTarget: "El temps",
+    titleEn: "The weather",
+    sentences: [
+      { target: "Avui fa bon temps.", en: "Today the weather is good." },
+      { target: "El sol és fort.", en: "The sun is strong." },
+      { target: "El sol fa molta calor.", en: "The sun makes a lot of heat." },
+      { target: "Amb la calor, bec aigua.", en: "With the heat, I drink water." },
+      { target: "L'aigua és freda.", en: "The water is cold." },
+    ],
+  },
+  {
     slug: "l2-001",
     level: "L2",
+    seq: 1,
     titleTarget: "La meva família",
     titleEn: "My family",
     sentences: [
@@ -64,6 +141,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-002",
     level: "L2",
+    seq: 2,
     titleTarget: "Al mercat",
     titleEn: "At the market",
     sentences: [
@@ -77,6 +155,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-003",
     level: "L2",
+    seq: 3,
     titleTarget: "El meu poble",
     titleEn: "My town",
     sentences: [
@@ -89,8 +168,84 @@ export const seedTexts: SeedTextSource[] = [
     ],
   },
   {
+    slug: "l2-004",
+    level: "L2",
+    seq: 4,
+    titleTarget: "El meu camí",
+    titleEn: "My route",
+    sentences: [
+      { target: "Cada matí segueixo el mateix camí.", en: "Every morning I follow the same route." },
+      { target: "Passo per un parc petit.", en: "I pass by a small park." },
+      { target: "Allà, quedo amb la meva amiga.", en: "There, I meet up with my friend." },
+      { target: "Ella sempre sembla contenta.", en: "She always seems happy." },
+      { target: "A ella no li importa el fred.", en: "She doesn't mind the cold." },
+      { target: "Només ens quedem deu minuts junts.", en: "We only stay together ten minutes." },
+    ],
+  },
+  {
+    slug: "l2-005",
+    level: "L2",
+    seq: 5,
+    titleTarget: "El meu avi",
+    titleEn: "My grandfather",
+    sentences: [
+      { target: "El meu avi parla de la guerra.", en: "My grandfather talks about the war." },
+      { target: "Diu que la vida és difícil.", en: "He says life is hard." },
+      { target: "Sempre busca la millor manera de viure.", en: "He always looks for the best way to live." },
+      { target: "I sempre aconsegueix quedar content.", en: "And he always manages to end up happy." },
+      { target: "Ara estem a punt de sopar.", en: "Now we're about to have dinner." },
+      { target: "La seva forma de parlar és bonica.", en: "His way of speaking is nice." },
+    ],
+  },
+  {
+    slug: "l2-006",
+    level: "L2",
+    seq: 6,
+    titleTarget: "El cotxe del meu avi",
+    titleEn: "My grandfather's car",
+    sentences: [
+      { target: "Utilitzo aquest cotxe cada dia.", en: "I use this car every day." },
+      { target: "És el cotxe del meu avi.", en: "It's my grandfather's car." },
+      { target: "El meu avi va morir.", en: "My grandfather died." },
+      { target: "El cotxe és vell i ocupa poc lloc.", en: "The car is old and takes up little space." },
+      { target: "Al món hi ha molts cotxes així.", en: "In the world there are many cars like that." },
+      { target: "És diferent, però m'agrada.", en: "It's different, but I like it." },
+    ],
+  },
+  {
+    slug: "l2-007",
+    level: "L2",
+    seq: 7,
+    titleTarget: "La història de la família",
+    titleEn: "The family story",
+    sentences: [
+      { target: "La meva àvia explica una història cada nit.", en: "My grandmother tells a story every night." },
+      { target: "De cop, tota la família escolta.", en: "Suddenly, the whole family listens." },
+      { target: "La història ens uneix a tots.", en: "The story unites us all." },
+      { target: "Gràcies a Déu, tenim una vida bonica.", en: "Thank God, we have a beautiful life." },
+      { target: "Tots estem d'acord amb ella.", en: "We all agree with her." },
+      { target: "M'agrada tant aquesta història de la família.", en: "I like this family story so much." },
+    ],
+  },
+  {
+    slug: "l2-008",
+    level: "L2",
+    seq: 8,
+    titleTarget: "Cap al nord",
+    titleEn: "Towards the north",
+    sentences: [
+      { target: "Vull anar al nord aquest estiu.", en: "I want to go north this summer." },
+      { target: "En el nostre cas, seguim el mateix camí.", en: "In our case, we follow the same route." },
+      { target: "Necessito força per caminar tant.", en: "I need strength to walk so much." },
+      { target: "Llavors, arribem a un lloc fred.", en: "Then, we arrive at a cold place." },
+      { target: "No m'importa el fred del nord.", en: "I don't mind the cold of the north." },
+      { target: "És una manera tan bonica de viatjar.", en: "It's such a beautiful way to travel." },
+    ],
+  },
+  {
     slug: "l3-001",
     level: "L3",
+    seq: 1,
     titleTarget: "Quan era petit",
     titleEn: "When I was little",
     sentences: [
@@ -110,6 +265,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l3-002",
     level: "L3",
+    seq: 2,
     titleTarget: "Un dia de feina",
     titleEn: "A workday",
     sentences: [
@@ -135,6 +291,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l3-003",
     level: "L3",
+    seq: 3,
     titleTarget: "La meva amiga",
     titleEn: "My friend",
     sentences: [
@@ -163,6 +320,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l4-001",
     level: "L4",
+    seq: 1,
     titleTarget: "El meu somni de viatjar",
     titleEn: "My dream of traveling",
     sentences: [
@@ -195,6 +353,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l4-002",
     level: "L4",
+    seq: 2,
     titleTarget: "A la feina",
     titleEn: "At work",
     sentences: [
@@ -227,6 +386,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l4-003",
     level: "L4",
+    seq: 3,
     titleTarget: "Un viatge en tren",
     titleEn: "A train journey",
     sentences: [
@@ -259,6 +419,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l5-001",
     level: "L5",
+    seq: 1,
     titleTarget: "Si tingués més temps",
     titleEn: "If I had more time",
     sentences: [
@@ -295,6 +456,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l5-002",
     level: "L5",
+    seq: 2,
     titleTarget: "Una amistat de tota la vida",
     titleEn: "A lifelong friendship",
     sentences: [
@@ -331,6 +493,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l5-003",
     level: "L5",
+    seq: 3,
     titleTarget: "La feina que voldria tenir",
     titleEn: "The job I would like to have",
     sentences: [
@@ -363,6 +526,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l6-001",
     level: "L6",
+    seq: 1,
     titleTarget: "Un poble que canvia",
     titleEn: "A town that is changing",
     sentences: [
@@ -399,6 +563,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l6-002",
     level: "L6",
+    seq: 2,
     titleTarget: "Una decisió difícil",
     titleEn: "A difficult decision",
     sentences: [
@@ -436,6 +601,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l6-003",
     level: "L6",
+    seq: 3,
     titleTarget: "Un regal per a tothom",
     titleEn: "A gift for everyone",
     sentences: [

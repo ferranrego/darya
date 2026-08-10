@@ -1,0 +1,235 @@
+{
+  "id": "tx-seed-l2-006",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El cotxe del meu avi",
+  "titleEn": "My grandfather's car",
+  "sentences": [
+    {
+      "target": "Utilitzo aquest cotxe cada dia.",
+      "en": "I use this car every day.",
+      "tokens": [
+        {
+          "surface": "Utilitzo",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "dia",
+          "lexemeId": "lx-0068"
+        }
+      ]
+    },
+    {
+      "target": "És el cotxe del meu avi.",
+      "en": "It's my grandfather's car.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "avi",
+          "lexemeId": "lx-0343"
+        }
+      ]
+    },
+    {
+      "target": "El meu avi va morir.",
+      "en": "My grandfather died.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "avi",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "morir",
+          "lexemeId": "lx-4371"
+        }
+      ]
+    },
+    {
+      "target": "El cotxe és vell i ocupa poc lloc.",
+      "en": "The car is old and takes up little space.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "vell",
+          "lexemeId": "lx-0220"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "ocupa",
+          "lexemeId": "lx-4449"
+        },
+        {
+          "surface": "poc",
+          "lexemeId": "lx-0268"
+        },
+        {
+          "surface": "lloc",
+          "lexemeId": "lx-4069"
+        }
+      ]
+    },
+    {
+      "target": "Al món hi ha molts cotxes així.",
+      "en": "In the world there are many cars like that.",
+      "tokens": [
+        {
+          "surface": "Al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "món",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "molts",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "cotxes",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "així",
+          "lexemeId": "lx-0681"
+        }
+      ]
+    },
+    {
+      "target": "És diferent, però m'agrada.",
+      "en": "It's different, but I like it.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "diferent",
+          "lexemeId": "lx-4172"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "m'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agrada",
+          "lexemeId": "lx-0209"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0013",
+    "lx-0022",
+    "lx-0023",
+    "lx-0028",
+    "lx-0031",
+    "lx-0033",
+    "lx-0038",
+    "lx-0051",
+    "lx-0052",
+    "lx-0057",
+    "lx-0062",
+    "lx-0064",
+    "lx-0068",
+    "lx-0074",
+    "lx-0100",
+    "lx-0209",
+    "lx-0220",
+    "lx-0248",
+    "lx-0268",
+    "lx-0343",
+    "lx-0529",
+    "lx-0681",
+    "lx-4069",
+    "lx-4172",
+    "lx-4371",
+    "lx-4449"
+  ],
+  "newWords": [
+    "lx-0062",
+    "lx-0074",
+    "lx-0100",
+    "lx-0209",
+    "lx-0220",
+    "lx-0529",
+    "lx-0681",
+    "lx-4069",
+    "lx-4172",
+    "lx-4371",
+    "lx-4449"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 6
+}

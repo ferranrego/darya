@@ -9,8 +9,10 @@ import { completeJson, deadlineIn } from "./providers";
 import { checkGrammar } from "./grammar-check";
 import { profile } from "../lang/index.ts";
 import { TRANSLITERATED, translitField, wordList } from "./lang-format.ts";
-import { MAX_OOV_TOKEN_RATE, MAX_OOV_TYPE_RATE } from "../content/difficulty.ts";
+import { maxOovRateFor, maxOovTypeRateFor } from "../content/difficulty.ts";
 import { isBeginnerLevel } from "../content/word-selection.ts";
+import { checkShape } from "../content/text-checks.ts";
+import type { Scene } from "../content/scene.ts";
 
 /**
  * AI text generation: one entry point over the shared free-tier provider
@@ -71,6 +73,19 @@ export interface GenerationRequest {
    * already makes to decide whether to generate at all.
    */
   avoidTitles?: string[];
+  /**
+   * A coherent, level-appropriate word set - see `content/scene.ts`.
+   *
+   * Not read by `generateText` yet. It used to feed a deterministic
+   * sentence-frame filler that assembled a text from the scene with no model
+   * call; that filler is gone (selectional restrictions turned out to be
+   * lexical, not categorical - "my flower is cold" parses and means nothing),
+   * and generation above pre-A1/A1 is being replaced by an authored corpus
+   * instead. Kept on the request shape because the route still selects a
+   * scene per generation and a later pass wires it into `buildPrompt`'s
+   * vocabulary instead of the frequency slice.
+   */
+  scene?: Scene;
 }
 
 /**
@@ -123,26 +138,43 @@ const FUNCTION_WORDS_ARE_FREE =
  *
  * A beginner needs sentences they can reuse tomorrow, and the hand-authored
  * seed texts already look like that: four or five independent predications
- * sharing a setting. Demanding a narrative there forces filler, because there
- * is no room for one - two or three sentences of at most six words, with no
- * conjunctions. From L3 the sentences are long enough to connect, and a text
- * that holds together is worth more than a list.
+ * sharing a setting. This asked for "a cohesive micro-narrative" instead, and
+ * that is the wrong artifact at pre-A1 for a reason that is not about length: a
+ * narrative needs anaphora to track who is being talked about and a way to
+ * sequence events, and neither is taught at this level. Demanding one is not
+ * i+1, it is i+3, and what comes back is filler - `Soc l'home / No estic / Seré
+ * el que serà`, under the title "Work Instructions".
+ *
+ * The same prompt also told the model to "use natural beginner conjunctions"
+ * while the level it interpolated said `NO conjunctions (no 'and', 'but')`, and
+ * gave the Catalan examples `i, però, perquè, després` and `ell, ella` to *both*
+ * language builds. So it contradicted itself and leaked a language, which is
+ * what PEDAGOGY §10 exists to prevent. The conjunction rule now lives in the
+ * level, in that language's own words, and this defers to it.
+ *
+ * From L3 the sentences are long enough to connect and a pronoun can carry a
+ * referent across them, so that is where a text that holds together becomes
+ * worth more than a list.
  */
 function taskFor(req: GenerationRequest, attempt: number): string {
   const [minS, maxS] = req.level.sentenceRange;
 
   if (isBeginnerLevel(req.level)) {
-    return `Write ${minS}-${maxS} short sentences of the kind shown below - ${req.level.sentenceLengthHint}.
-Set them around: ${settingFor(req)}.
+    return `Write a coherent scene of ${minS}-${maxS} sentences - ${req.level.sentenceLengthHint}.
+Choose a simple, everyday setting that perfectly matches the vocabulary you are given. Do NOT invent a setting that requires words you don't have.
 
-WHAT MAKES THEM WORTH READING:
-- Each sentence must be useful on its own: something the learner could say tomorrow.
-- They do NOT need to tell a story or follow on from each other. A set of clear, separate sentences about one situation is exactly right.
-- Keep them concrete and picturable. Talk about things you can point at: food, the house, family, animals, colours, the weather, days, prices.
-- Vary the shape across the set: a statement, a question, a negative, something in the past.
+STRICT SCENE RULES:
+- Describe ONE setting. Every sentence is about the same place, the same people and the same things.
+- Each sentence stands on its own and can be understood without the ones around it. Do NOT tell a story with a beginning, a complication and an end - there is no room for one at this length, and forcing one produces filler.
+- You MUST include every word from the list of words to teach below. This is your primary goal.
+- NEVER invent new nouns, adjectives or verbs. The scene must be built strictly out of the allowed words list. If you need a noun or verb, reuse one from the list.
+- Reuse the same few nouns across sentences rather than naming a new thing each time. Meeting a word twice is what teaches it.
+- Conjunctions and subordination: obey the sentence rule above exactly. Do not connect clauses beyond what it permits.
+- You may use any pronoun that appears in the allowed word list, so the scene does not repeat the same noun awkwardly.
 
-Sentences of the right kind:
-${profile.prompts.beginnerPatterns}`;
+STRUCTURE:
+- Keep the content concrete and picturable, using the nouns you are given.
+- State simple facts about the scene - what something is, where it is, what it is like, what someone does there.`;
   }
 
   const types = textTypesFor(req.level);
@@ -177,9 +209,10 @@ ${taskFor(req, attempt)}${recent}
 ${profile.prompts.syntax ? "\nSYNTAX RULES:\n- " + profile.prompts.syntax + "\n" : ""}
 VOCABULARY:
 - ${FUNCTION_WORDS_ARE_FREE}
-- Build the text from these words the learner knows. Any inflected form is fine: ${known}
-- These are the words the text exists to teach. Every one must appear: ${target}
-- Do not use out-of-level nouns, adjectives, or verbs. You may freely use any necessary grammatical glue words (prepositions, conjunctions, ezafe) to ensure completely natural phrasing and correct syntax.
+- You MUST build the entire text using ONLY the words provided below. Any inflected form is fine: ${known}
+- WORDS TO TEACH - these are what the text exists for, and every one must appear: ${target}
+- STRICT RULE: Do NOT use ANY nouns, adjectives, or verbs that are not in the allowed list above. You may freely use grammatical glue words (prepositions, conjunctions, particles) to connect the words you are given.
+- Do NOT use proper nouns (names of people, cities, or countries) unless they appear in the allowed list.
 
 Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 
@@ -290,7 +323,7 @@ export async function repairText(
     .join("\n");
 
   const repairPrompt = `You are ${profile.prompts.teacher}. The following sentences have vocabulary that is too difficult for the student.
-Rewrite ONLY these specific sentences, replacing the marked words with allowed ones. Keep the meaning as close to the original as possible.${req.level.avgSentenceWords > 8 ? " Keep each sentence a logical continuation of the one before it." : " The sentences stand on their own; they do not need to connect."}
+Rewrite ONLY these specific sentences, replacing the marked words with allowed ones. Keep the meaning as close to the original as possible. When rewriting these sentences, ensure they remain logically connected to the surrounding text so the narrative flow is not broken.
 
 Grammar allowed at this level: ${req.level.grammarAllowed.join("; ")}.
 
@@ -337,7 +370,7 @@ where "index" is the number provided above for the sentence.`;
   };
   
   const { doc: finalDoc, oovRate } = assemble(raw, req, doc.model ?? "unknown-repair");
-  if (strict && oovRate > MAX_OOV_TOKEN_RATE) {
+  if (strict && oovRate > maxOovRateFor(req.level)) {
     throw new Error(`Repair failed: OOV rate still ${(oovRate * 100).toFixed(0)}%`);
   }
   // The measured rate, not an assumption. A lenient repair returns whatever the
@@ -478,7 +511,10 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
         },
       });
 
-      if (result.oovRate > MAX_OOV_TOKEN_RATE) {
+      if (result.oovRate > maxOovRateFor(req.level)) {
+        console.warn(
+          `OOV ${(result.oovRate * 100).toFixed(0)}% > ${(maxOovRateFor(req.level) * 100).toFixed(0)}% at ${req.level.id}, repairing`,
+        );
         const strict = attempt < 2; // Strict on attempts 0 and 1, lenient on attempt 2
         try {
           result = await repairText(result.doc, req, strict, deadline);
@@ -490,6 +526,13 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
         }
       }
 
+      // Shape first: it is free, and a text of the wrong length is not worth
+      // spending a grammar call or a repair call on.
+      const shapeDefects = checkShape(result.doc, req.level, attempt === 2 ? 1 : 0);
+      if (shapeDefects.length > 0) {
+        throw new Error(shapeDefects.map((d) => d.message).join("; "));
+      }
+
       const isGrammarValid = await checkGrammar(result.doc, req, deadline);
       if (!isGrammarValid) {
         throw new Error("Grammar validation failed for the target language. Regenerating...");
@@ -497,6 +540,13 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
 
       // The text is readable. Now check it actually teaches something.
       if (result.doc.newWords.length < needed) {
+        // One line, not a JSON dump of every sentence. These run on a
+        // serverless log where the text itself is not the useful part - the
+        // audit prints texts, this only has to say which contract was missed.
+        console.warn(
+          `${req.level.id} taught ${result.doc.newWords.length}/${req.targetWords.length}, needs ${needed}; adding missing`,
+        );
+
         const retried = await addMissingTargets(
           result.doc,
           req,
@@ -506,7 +556,7 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
         // Only keep the rewrite if it helped and did not make the text harder.
         if (
           retried.doc.newWords.length > result.doc.newWords.length &&
-          retried.oovRate <= MAX_OOV_TOKEN_RATE
+          retried.oovRate <= maxOovRateFor(req.level)
         ) {
           result = retried;
         }
@@ -530,7 +580,7 @@ export async function generateText(req: GenerationRequest): Promise<TextDocument
       const typeRate = result.doc.vocabUsed.length
         ? untaught.length / result.doc.vocabUsed.length
         : 0;
-      if (typeRate > MAX_OOV_TYPE_RATE) {
+      if (typeRate > maxOovTypeRateFor(req.level)) {
         throw new Error(
           `Text has ${(typeRate * 100).toFixed(0)}% untaught vocabulary; the reader would reject it`,
         );

@@ -18,13 +18,15 @@ reading. Below that the learner is decoding, not acquiring, and **the failure is
 silent**: the text looks fine and simply does not teach.
 
 This is the single number the whole product rests on. It lives in
-`src/lib/content/difficulty.ts`.
+`src/lib/content/difficulty.ts`, as `maxOovRateFor(level)` /
+`maxOovTypeRateFor(level)` rather than a single constant - see the beginner
+note below for why.
 
-| constant | value | counts |
-|---|---|---|
-| `MAX_OOV_TOKEN_RATE` | 0.05 | **running words** - every occurrence. The rate the research is stated in, checked by the generator. |
-| `MAX_OOV_TYPE_RATE` | 0.12 | **distinct lexemes** - a word counts once however often it appears. Checked by the reader when choosing a text. |
-| `LEGACY_MAX_OOV_TYPE_RATE` | 0.25 | the old single threshold, applied only to texts cached before the two were separated. |
+| function | non-beginner | pre-A1/A1 | counts |
+|---|---|---|---|
+| `maxOovRateFor` | 0.05 | 0.10 | **running words** - every occurrence. The rate the research is stated in, checked by the generator. |
+| `maxOovTypeRateFor` | 0.12 | 0.25 | **distinct lexemes** - a word counts once however often it appears. Checked by the reader when choosing a text. |
+| `LEGACY_MAX_OOV_TYPE_RATE` | 0.25 | 0.25 | the old single threshold, applied only to texts cached before the two were separated. |
 
 **The two rates are not interchangeable.** Known words repeat and new words
 usually do not, so a given text's type rate is always the higher of the two.
@@ -36,6 +38,19 @@ Both were once a single `MAX_OOV_RATE = 0.25`, duplicated in two files. That is
 wrong twice over: 25% unknown is far past the point where reading works, and the
 two copies were not measuring the same thing.
 
+**Both rates are loosened for pre-A1/A1, and this is a real compromise, not a
+research figure.** 95% coverage assumes a learner who already knows something to
+be 95% of; a learner with zero tracked words cannot satisfy it against any text
+at all, which is exactly the contract failure that used to strand the reader on
+"Writing your next text…" forever at the very first level. The loosened rate
+above is what every text at these levels is measured against - still tolerant
+enough to admit texts a strict 95% would reject as unreadable at a level with
+almost nothing assumed known. See §12: pre-A1/A1 is now an authored corpus, not
+generated, so this gate applies to it only through `build-seed-texts.ts`'s own
+resolution check (every word must resolve to a lexeme) rather than a measured
+OOV rate - an authored text cannot contain an unknown word by construction, the
+same property a frame filler once claimed and did not actually have.
+
 ## 2. A text that teaches nothing is worse than no text
 
 A graded reader exists to introduce words. Measured before this was enforced,
@@ -46,11 +61,21 @@ Two things then compound. The reader requires at least one new lexeme
 (`MIN_NEW_LEXEMES`), so it rejects the text; the pool looks empty; the reader
 asks the server for another one, forever, caching an unusable row each time.
 
-So: the generator requires at least **half** the requested target words to
-actually appear (`MIN_TARGET_USE`), retries with a prompt naming the missing
-ones, and refuses to return a text that teaches nothing. The route refuses to
-cache one. Half rather than all, because demanding all of them buys a contorted
-sentence.
+So: the generator requires **every** requested target word to actually appear
+(`MIN_TARGET_USE = 1.0` in `src/lib/ai/generate.ts`), retries with a prompt
+naming the missing ones, and refuses to return a text that teaches nothing. The
+route refuses to cache one. All rather than half, and this is deliberately
+stricter than an earlier version of this document said: measured, L5 through L8
+hit 8 of 8 comfortably, so the compromise the "half" figure was hedging against
+did not actually cost anything at the levels that use the free-form path. The
+one level where "all" is not reachable is L1, where a text is two or three
+sentences of at most six words and only two target words are asked for - so
+missing one is missing half, not a rounding error. `requiredTargets` relaxes the
+bar by exactly one word on the last of the three attempts, for that case alone.
+**This whole section is moot at pre-A1/A1**, which is authored, not generated
+(see §12) - a hand-authored text either uses its assigned words or a
+philologist notices and fixes it before it ships, so there is no "requested but
+missing" case for a retry loop to catch.
 
 **Ask for fewer words.** The cap is 8 per text, down from 15. A text that
 teaches four words well beats one listing fifteen, and at the higher levels the
@@ -81,9 +106,27 @@ does this and refuses to write a level that can teach nothing.
 `src/lib/content/levels.test.ts` guards both directions.
 
 Where a lexicon is too small for the real figure, the affected levels are
-compressed evenly and reported as content-limited. Catalan's B2 currently sits
-at 2,941 rather than 4,000 for this reason: **growing the lexicon is the fix,
-not lowering the number.**
+compressed evenly and reported as content-limited. Catalan's C1 currently sits
+at 4,203 rather than 6,000, and C2 at 4,406 rather than 8,000, for this reason:
+**growing the lexicon is the fix, not lowering the number.** (Below C1, every
+Catalan level hits its real published target - the 4,609-entry lexicon reaches
+B2's 4,000 with no compression at all.)
+
+`fitTargets`'s compression itself had a bug worth naming, because it is the
+kind that looks correct in every unit test and only shows up against real data.
+Interpolating linearly from the last uncompressed level's target to `ceiling`
+across `remaining` compressed levels necessarily lands the *last* one exactly on
+`ceiling`, by construction - `floor + step * remaining == ceiling`. For every
+compressed level except the last that is fine; for the last it means the top
+level's own `entryKnownWords` sits exactly at the top of everything the lexicon
+has, leaving it nothing left to teach - the same dead end §2 exists to prevent,
+reached through the level table instead of the generator. Measured before the
+fix: Catalan's C1 and C2 were compressed into a **55-word** margin above B2 (band
+9's own top sat at rank 4,055, a hair past B2's uncompressed 4,000), so three
+consecutive CEFR levels shared what was functionally one teachable envelope.
+Dividing by `remaining + 1` instead of `remaining` reserves one extra step of
+headroom below `ceiling` for the true top level, the same way every other
+compressed level already gets headroom below the one above it.
 
 ## 4. Frequency ordering is the highest-leverage curriculum decision
 
@@ -166,10 +209,27 @@ core the order is shuffled rather than frequency-ordered - sorting the core by
 corpus frequency reaches `home, parlar, pensar, moment` and never `gos`, which
 is the premise of the core restated as a bug.
 
-**More new words, not fewer.** Beginner levels get two per sentence, capped at
-ten, against eight everywhere else. *El gos menja molta carn* teaches four at
-once and is easier than a sentence teaching one, because every word in it is
-picturable. Difficulty at A1 comes from abstraction and syntax, not from count.
+**New words per sentence, revised down from an earlier figure in this
+document.** `targetCountFor` gives beginner levels **one new word per
+sentence, capped at 4** (`src/lib/content/word-selection.ts`), not the "two
+per sentence, capped at ten" an earlier version of this section argued for.
+The argument for *more* new words at A1 is still right in principle - *El gos
+menja molta carn* teaching four concrete words at once is easier than a
+sentence teaching one abstract one - but the number this document originally
+proposed was never reachable in practice: `MIN_TARGET_USE = 1.0` (§2) requires
+every requested word to actually land in a handful of six-word sentences with
+no subordination, and asking for ten made that impossible before a single
+sentence was written. The count that shipped is the one measured to actually
+fit the form, not the one the research argument alone would prefer.
+**At pre-A1/A1, this is the fallback path, not the primary one.** A learner
+is served the authored corpus (§12) first - `text-pool.ts` puts seed texts
+ahead of anything generated - and `targetCountFor`'s beginner case only
+governs live generation once that corpus runs dry for a given learner
+(currently 15-20 texts per language, split L1/L2; §12 covers what still needs
+authoring to reach full coverage). When it does apply, it now draws its
+vocabulary from a selected `Scene` rather than the raw frequency slice (see
+`src/app/api/generate/route.ts`) - coherent by construction the same way the
+authored corpus is, just generated instead of reviewed.
 
 ## 6. Balance the parts of speech, or you will only teach nouns
 
@@ -185,8 +245,19 @@ searching the whole candidate list rather than the frequent head - at the upper
 levels the most frequent unknown words are *all* nouns, so a head-only search
 finds no verb and the quota silently does nothing exactly where it is needed.
 
+**The cap runs both directions.** A candidate pool can be verb-heavy instead of
+noun-heavy, and for a while nothing capped that direction either. Measured live:
+correcting Dari C1's `entryKnownWords` to the vocabulary the lexicon actually
+supports (§3) shrank its candidate pool to the tail of the lexicon, which turned
+out to hold 88 verbs against 65 nouns and zero adjectives or adverbs - a small
+pool where rare, specialised verbs happen to cluster. Without a matching
+`MAX_VERB_SHARE`, `selectTargets` could return eight verb conjugations and no
+concrete vocabulary to hang them on: the "nine nouns in a row" failure this
+section exists to prevent, with the part of speech swapped. Capped at the same
+~55% as nouns, by the same degrade-rather-than-throw rule below.
+
 Quotas degrade rather than throw. A level whose remaining vocabulary genuinely
-holds no verbs should still produce a text.
+holds no verbs (or no nouns) should still produce a text.
 
 ## 7. Words need to be met again
 
@@ -251,6 +322,20 @@ in `src/lib/lang/<code>/prompts.ts` and reaches the prompt through `profile`.
 The Catalan build was asking a model to be "an expert Persian (Dari) linguist"
 about Catalan sentences, and for text "100% natural and idiomatic in Dari".
 
+**The test only catches a language being named, not a language leaking in.**
+The shared beginner-level prompt in `ai/generate.ts` once hardcoded the Catalan
+conjunctions `i, però, perquè, després` and the pronouns `ell, ella` as worked
+examples, and the Catalan-only grammar checker hardcoded a Catalan personal-*a*
+example - both shipped straight into the Dari build, and `prompt-leak.test.ts`
+found nothing wrong because neither snippet names a language, it just *is* one.
+Fixed by moving the example words out of the shared template entirely: the
+conjunction rule now lives in each level's own `sentenceLengthHint`, stated in
+that language's own words, and the shared prompt only ever refers to it by
+reference. The lesson generalises past this one instance: a leak-detector that
+matches language *names* cannot catch language *content*, and the fix for that
+is architectural (nothing language-specific in the shared file to leak) rather
+than a longer blocklist.
+
 ## 11. Placement should not skew low
 
 A learner placed below their level is shown texts they find trivial, and the
@@ -262,3 +347,120 @@ weights over-sampling band 1, skewing every estimate downward.
 More samples at the common end is deliberate - that is where the level
 boundaries are packed together, so that is where a wrong answer moves the
 estimate most.
+
+## 12. Author the beginner corpus; generate only above it
+
+Pre-A1/A1 was generated by a deterministic sentence-frame engine for one
+release. It shipped this:
+
+> دریا گرم است. — The river is warm, hot.
+> گل من سرد است. — My flower is cold.
+> من یک زمین دارم. — I have a land, ground, earth.
+
+Grammatical, meaningless, and reproducible byte-for-byte from committed data -
+no model call, no bad luck. **Selectional restrictions are lexical, not
+categorical.** *Cold* applies to weather, water, tea, hands, rooms, nights -
+not flowers, trees or land. No semantic field contains exactly that set; it
+can only be enumerated per word, and enumerating which adjective may modify
+which noun *is* authoring, at which point the frame machinery had bought
+nothing. Measured on the shipped content: 16 of 18 scene recipes hit a
+multi-sense gloss (`glossEn`, a dictionary entry like "land, ground, earth")
+inside their first four nouns, 13 of 18 inside the first two - so the title
+too - and in the vocabulary a frame could reach, roughly 30% of entries had a
+multi-sense gloss against 4-10% corpus-wide. That output was the median of
+the design, not an unlucky tail, and it is why frames were removed rather
+than tuned - `src/lib/content/frames.ts` and `src/lib/lang/<code>/frames.ts`
+no longer exist.
+
+**Generation is hardest exactly where vocabulary is tightest** (pre-A1, a few
+hundred usable words) **and easiest where it is loosest** (B2+, where a
+natural sentence is already in-vocabulary). So: author where generation is
+hard, generate where it is easy. Pre-A1/A1 is now a hand-authored, reviewed
+corpus - `scripts/data/seed-texts-<lang>.ts` → `build-seed-texts.ts`, which
+tokenizes every sentence against the lexicon and fails the build on any
+unresolvable word, the strongest gate in the repo. `text-pool.ts` serves seed
+texts ahead of anything generated and in curriculum order (`seq`). A2 and
+above is unchanged: free-form LLM generation, measured by §1's coverage gate
+and §2's `MIN_TARGET_USE` like every other level - there is no separate,
+weaker path for it to fall back to anymore, and no `oovRate: 0` shortcut.
+
+**The curriculum, not just the sentences, is authored data now.**
+`src/lib/content/schedule.ts` turns a level's new vocabulary into an ordered
+sequence of `Slot`s - which words a text should introduce, grouped by the
+`beginner-spec.json` semantic field they belong to, and which recent words it
+should reuse (PEDAGOGY §7's 6-12 encounters, spent across slots rather than
+within one). `scripts/author-texts.live.test.ts` drafts offline against this
+schedule: eight candidates per slot, each scored against `text-checks.ts`'s
+gates (coverage, teaching, gloss, interference, cohesion, shape), the best
+kept and staged to a review file - never written directly into
+`seed-texts-<lang>.ts`. A philologist reviews the staged batch
+(`review-batch.ts --texts`) before anything merges, one batch at a time
+(CLAUDE.md: "running three batches back to back put 142 entries into a single
+review, which is not a review"). This is slower than a frame filler and
+correct in a way a frame filler could not be even in principle: an author (a
+model under review, or a person) can judge whether a sentence is true and
+natural, and no categorical rule over word classes can.
+
+**The scene taxonomy only covers the beginner core, and that is a real, open
+limit, not an oversight to paper over.** `beginner-spec.json`'s semantic
+fields are seed lists sized to size the beginner-core tag - nothing above it
+is tagged into any field, verb function or dimension, in either language.
+Measured: `schedule.ts`'s L1 schedule is 0% `scene: null` after two schedule
+bugs were fixed (a closed-class leak, and `scene.ts` using only 3 of the
+spec's 10 verb-function categories for every field); every level above L1 is
+100% `scene: null`, because there is nothing left in the spec to classify
+into. A slot with no scene falls back to an explicit instruction to invent
+one ordinary, concrete moment - not history, war or mythology, all measured
+failure modes of the bare fallback this replaced - but even that cannot save
+a slot whose *assigned* words are themselves abstract or culturally loaded at
+that frequency band (`déu`, `mort`, `antic` - "god", "death", "ancient" -
+produced a text about a stone god holding life and death, prompt notwithstanding).
+Extending the taxonomy past the beginner core, or adding a
+concreteness/abstractness signal to `noun-features.ts` so `schedule.ts` can
+route around the words no prompt can rescue, is real future work, not solved
+here.
+
+## 13. Some agreement features cannot be derived, so they are authored once
+
+A learner-facing text needs a Catalan noun's gender before an article or
+adjective can agree with it, and nothing in the lexicon recorded it.
+`scripts/derive-ca-gender.ts` recovers it from each entry's own
+`exampleTarget` - a determiner immediately before the headword (`la casa`) is
+sound evidence and resolved 134 of 194 spec-typed nouns mechanically. A second,
+weaker pass (`l'`-elision disambiguated by a same-sentence predicate adjective)
+was tried and retired: a philologist review found it wrong 5 times in the 10
+entries it fired on, because it could not tell a real predicate adjective from
+an unrelated `-a`-ending noun or a 3rd-person `-ar` verb in the same sentence.
+The remaining ~60 words - articleless mass nouns, the days of the week, two
+genuinely epicene nouns (`estudiant`, `català`, marked `"common"` rather than
+guessed into one gender) - are hand-resolved and were still reviewed before
+shipping, the same one-batch-at-a-time discipline every other content change
+in this repository goes through.
+
+`src/lib/lang/<code>/surface.ts` is where that gender (and Dari's suppletive
+presents and irregular plurals) becomes an actual inflected form: a
+*generator*, built to emit exactly one correct surface, as distinct from
+`lexicon-index.ts`, a *resolver* built to over-generate every plausible
+surface a learner might tap. It no longer feeds a frame filler (§12) - its
+consumer now is `scripts/author-texts.live.test.ts`'s drafting prompt, which
+shows the model a word's correctly-inflected example form (`petit -> petita`,
+a Dari verb's authored present stem) rather than trusting it to invent
+morphology, PEDAGOGY's own named failure mode for exactly this. **A wrong
+form is worse than a missing one, so it refuses rather than guesses**:
+Catalan's `-t` adjective feminine is genuinely ambiguous from spelling alone -
+`petit` → `petita` is the productive case, `cansat` → `cansada` (a participle
+used as an adjective) devoices - and rather than pick the more common answer
+silently, `surface.ts` requires the devoicing class in an authored
+`IRREGULAR_FEMININE` table and defaults everything else to the productive
+rule, throwing for anything neither covers. Both hazard lists came from a
+philologist review, and each hazard is a test in `surface.test.ts`.
+
+Three other features the authoring prompt uses - place, human, edible - cost
+nothing new to add: they are pure functions over `beginner-spec.ts`'s existing
+semantic-field resolution (`src/lib/content/noun-features.ts`), not a new
+tagging pass. Countability and container-hood remain genuinely untagged;
+`beginner-spec.json` says so itself for Objects & Tools. Concreteness/
+abstractness is untagged too, and is what §12 names as the open gap behind
+`scene: null` slots still producing occasionally wrong-in-kind content at
+A1 and above - a real candidate for a fourth derived feature here, not solved
+in this pass.

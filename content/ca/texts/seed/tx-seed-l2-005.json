@@ -1,0 +1,249 @@
+{
+  "id": "tx-seed-l2-005",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El meu avi",
+  "titleEn": "My grandfather",
+  "sentences": [
+    {
+      "target": "El meu avi parla de la guerra.",
+      "en": "My grandfather talks about the war.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "avi",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "parla",
+          "lexemeId": "lx-0103"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "guerra",
+          "lexemeId": "lx-1902"
+        }
+      ]
+    },
+    {
+      "target": "Diu que la vida és difícil.",
+      "en": "He says life is hard.",
+      "tokens": [
+        {
+          "surface": "Diu",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "vida",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "difícil",
+          "lexemeId": "lx-0227"
+        }
+      ]
+    },
+    {
+      "target": "Sempre busca la millor manera de viure.",
+      "en": "He always looks for the best way to live.",
+      "tokens": [
+        {
+          "surface": "Sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "busca",
+          "lexemeId": "lx-0212"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "millor",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "manera",
+          "lexemeId": "lx-4146"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "viure",
+          "lexemeId": "lx-0104"
+        }
+      ]
+    },
+    {
+      "target": "I sempre aconsegueix quedar content.",
+      "en": "And he always manages to end up happy.",
+      "tokens": [
+        {
+          "surface": "I",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "aconsegueix",
+          "lexemeId": "lx-0756"
+        },
+        {
+          "surface": "quedar",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "content",
+          "lexemeId": "lx-0230"
+        }
+      ]
+    },
+    {
+      "target": "Ara estem a punt de sopar.",
+      "en": "Now we're about to have dinner.",
+      "tokens": [
+        {
+          "surface": "Ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "estem",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "punt",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "sopar",
+          "lexemeId": "lx-0473"
+        }
+      ]
+    },
+    {
+      "target": "La seva forma de parlar és bonica.",
+      "en": "His way of speaking is nice.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "seva",
+          "lexemeId": "lx-0250"
+        },
+        {
+          "surface": "forma",
+          "lexemeId": "lx-4369"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "parlar",
+          "lexemeId": "lx-0103"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "bonica",
+          "lexemeId": "lx-0228"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0035",
+    "lx-0038",
+    "lx-0056",
+    "lx-0063",
+    "lx-0072",
+    "lx-0103",
+    "lx-0104",
+    "lx-0108",
+    "lx-0134",
+    "lx-0212",
+    "lx-0227",
+    "lx-0228",
+    "lx-0230",
+    "lx-0248",
+    "lx-0250",
+    "lx-0254",
+    "lx-0257",
+    "lx-0343",
+    "lx-0473",
+    "lx-0756",
+    "lx-1902",
+    "lx-4146",
+    "lx-4369"
+  ],
+  "newWords": [
+    "lx-0004",
+    "lx-0056",
+    "lx-0063",
+    "lx-0072",
+    "lx-0103",
+    "lx-0134",
+    "lx-0212",
+    "lx-0227",
+    "lx-0228",
+    "lx-0343",
+    "lx-0473",
+    "lx-0756",
+    "lx-1902",
+    "lx-4146",
+    "lx-4369"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 5
+}

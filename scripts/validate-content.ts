@@ -26,6 +26,7 @@ import { ZWNJ } from "../src/lib/lang/prs/normalize.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
+import { insertionOrderSuffix } from "./freq-integrity.ts";
 
 const lang = targetLang();
 const root = contentRoot();
@@ -184,6 +185,29 @@ if (existsSync(lexiconPath)) {
         fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" has no conjugation spec`);
       }
     }
+
+    /**
+     * `freqRank` must be a frequency, not an arrival time.
+     *
+     * A batch of 121 Dari entries once shipped with `freqRank` tracking their
+     * own lexeme id one-for-one - the authoring tool's "one past the current
+     * maximum", stamped once and never revisited by `build-frequency.ts`. All
+     * 121 sat in `freqBand` 10 despite being ordinary words (`نمک` salt, `میز`
+     * table, `آشپزخانه` kitchen), so they could never enter a beginner text:
+     * every selector in `word-selection.ts` sorts by `freqRank`. See
+     * `scripts/freq-integrity.ts` for the detector and `build-frequency.ts`
+     * for the repair. This is the check that stops it coming back with the
+     * next batch of hand-added entries.
+     */
+    const unranked = insertionOrderSuffix(lexicon.entries);
+    if (unranked.length > 0) {
+      fail(
+        `lexicon: ${unranked.length} entries were never independently frequency-ranked ` +
+          `(freqRank tracks insertion order) - run 'node scripts/build-frequency.ts --lang ${lang} --apply'. ` +
+          `First few: ${unranked.slice(0, 5).map((e) => `${e.id} ${e.target}`).join(", ")}`,
+      );
+    }
+
     console.log(
       `✓ lexicon.json (${lexicon.entries.length} entries` +
         (glossClashes.length ? `, ${glossClashes.length} shared glosses` : "") +

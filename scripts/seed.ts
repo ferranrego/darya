@@ -74,6 +74,9 @@ const textRows = readdirSync(seedDir)
     vocab_hash: null,
     source: doc.source,
     doc,
+    // Mirrored onto its own column so getTextsForLevel can sort in SQL
+    // without parsing the JSONB doc - see the 20260808000000 migration.
+    seq: doc.seq ?? null,
   }));
 
 {

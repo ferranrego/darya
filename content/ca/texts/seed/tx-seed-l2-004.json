@@ -1,0 +1,233 @@
+{
+  "id": "tx-seed-l2-004",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El meu camí",
+  "titleEn": "My route",
+  "sentences": [
+    {
+      "target": "Cada matí segueixo el mateix camí.",
+      "en": "Every morning I follow the same route.",
+      "tokens": [
+        {
+          "surface": "Cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "matí",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "segueixo",
+          "lexemeId": "lx-1225"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "mateix",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "camí",
+          "lexemeId": "lx-0127"
+        }
+      ]
+    },
+    {
+      "target": "Passo per un parc petit.",
+      "en": "I pass by a small park.",
+      "tokens": [
+        {
+          "surface": "Passo",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "parc",
+          "lexemeId": "lx-0620"
+        },
+        {
+          "surface": "petit",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "Allà, quedo amb la meva amiga.",
+      "en": "There, I meet up with my friend.",
+      "tokens": [
+        {
+          "surface": "Allà",
+          "lexemeId": "lx-0253"
+        },
+        {
+          "surface": "quedo",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "amiga",
+          "lexemeId": "lx-0909"
+        }
+      ]
+    },
+    {
+      "target": "Ella sempre sembla contenta.",
+      "en": "She always seems happy.",
+      "tokens": [
+        {
+          "surface": "Ella",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "sembla",
+          "lexemeId": "lx-1063"
+        },
+        {
+          "surface": "contenta",
+          "lexemeId": "lx-0230"
+        }
+      ]
+    },
+    {
+      "target": "A ella no li importa el fred.",
+      "en": "She doesn't mind the cold.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "ella",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "li",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "importa",
+          "lexemeId": "lx-1540"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "fred",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    },
+    {
+      "target": "Només ens quedem deu minuts junts.",
+      "en": "We only stay together ten minutes.",
+      "tokens": [
+        {
+          "surface": "Només",
+          "lexemeId": "lx-0264"
+        },
+        {
+          "surface": "ens",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "quedem",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "deu",
+          "lexemeId": "lx-0277"
+        },
+        {
+          "surface": "minuts",
+          "lexemeId": "lx-0749"
+        },
+        {
+          "surface": "junts",
+          "lexemeId": "lx-0131"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0012",
+    "lx-0028",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0037",
+    "lx-0039",
+    "lx-0040",
+    "lx-0041",
+    "lx-0085",
+    "lx-0107",
+    "lx-0108",
+    "lx-0127",
+    "lx-0131",
+    "lx-0168",
+    "lx-0218",
+    "lx-0230",
+    "lx-0233",
+    "lx-0243",
+    "lx-0248",
+    "lx-0253",
+    "lx-0257",
+    "lx-0264",
+    "lx-0277",
+    "lx-0620",
+    "lx-0749",
+    "lx-0909",
+    "lx-1063",
+    "lx-1225",
+    "lx-1540"
+  ],
+  "newWords": [
+    "lx-0085",
+    "lx-0107",
+    "lx-0108",
+    "lx-0127",
+    "lx-0230",
+    "lx-0233",
+    "lx-0264",
+    "lx-0620",
+    "lx-0749",
+    "lx-0909",
+    "lx-1063",
+    "lx-1225",
+    "lx-1540"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 4
+}

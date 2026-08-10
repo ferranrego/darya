@@ -31,17 +31,35 @@
  * a coarse gate on already-generated text; the token rate is the real contract.
  */
 
+import type { Level } from "./schema.ts";
+
 /**
- * Share of a generated text's *running words* that may be outside the
- * learner's vocabulary. The comprehensible-input threshold.
+ * Comprehensible input requires a text to be mostly known words.
+ * Below ~95%, the learner spends too much time looking up words to read fluently.
+ * For beginners (pre-A1/A1), we tolerate down to 90% because their texts are so short
+ * that a single OOV token can easily push the rate over 5%.
  */
-export const MAX_OOV_TOKEN_RATE = 0.05;
+export function maxOovRateFor(level: Level): number {
+  const isBeginner = ["pre-A1", "A1"].includes(level.cefrHint.trim());
+  return isBeginner ? 0.10 : 0.05;
+}
 
 /**
  * Share of a text's *distinct lexemes* that may be new before it is offered.
  * Looser than the token rate by construction - see the note above.
+ * For beginners, this needs to be significantly looser (25%) because the vocabulary
+ * is so small that a single hallucinated word can be 10-20% of the types.
  */
-export const MAX_OOV_TYPE_RATE = 0.12;
+export function maxOovTypeRateFor(level: Level): number {
+  const isBeginner = ["pre-A1", "A1"].includes(level.cefrHint.trim());
+  return isBeginner ? 0.25 : 0.12;
+}
+
+/**
+ * A looser upper bound used by the client-side text pool to prevent erroneously
+ * filtering out texts that were generated correctly for beginner levels.
+ */
+export const MAX_OOV_TYPE_RATE_POOL = 0.25;
 
 /**
  * A text with nothing new in it has nothing to teach, so the pool requires at

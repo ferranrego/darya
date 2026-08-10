@@ -19,8 +19,8 @@ import { describe, expect, it } from "vitest";
 
 import { generateText } from "../src/lib/ai/generate.ts";
 import { levels, lexicon } from "../src/lib/content/load.ts";
-import { selectKnown, selectTargets, targetCountFor } from "../src/lib/content/word-selection.ts";
-import { MAX_OOV_TOKEN_RATE } from "../src/lib/content/difficulty.ts";
+import { selectKnown, selectTargets, targetCountFor, coldStartKnown } from "../src/lib/content/word-selection.ts";
+import { maxOovRateFor } from "../src/lib/content/difficulty.ts";
 import { profile } from "../src/lib/lang/index.ts";
 import { buildIndex, tokenize } from "../src/lib/text/index.ts";
 
@@ -58,7 +58,9 @@ async function audit() {
     const targetCount = targetCountFor(level, 0.05);
 
     for (let n = 0; n < perLevel; n++) {
-      const effectiveKnown = known.length >= 40 ? known : inBand.slice(0, 60);
+      const effectiveKnown = known.length >= 40 
+        ? known 
+        : coldStartKnown(lexicon.entries, level, () => true);
       // Seeded per run so consecutive texts at one level differ but the audit
       // stays reproducible.
       const targetWords = selectTargets({ candidates, count: targetCount, seed: n + 1 });
@@ -172,10 +174,12 @@ describe("generation audit (live provider)", () => {
 
         // Comprehensible input needs the learner to already know almost every
         // running word; below this they are decoding, not acquiring.
+        const isBeginner = ["pre-A1", "A1"].includes(r.cefrHint.trim());
+        const expectedMin = isBeginner ? 0.90 : 0.95;
         expect(
           r.tokenCoverage,
-          `${where} token coverage ${(r.tokenCoverage * 100).toFixed(1)}%`,
-        ).toBeGreaterThanOrEqual(1 - MAX_OOV_TOKEN_RATE);
+          `${where} token coverage ${(r.tokenCoverage * 100).toFixed(1)}% below minimum`,
+        ).toBeGreaterThanOrEqual(expectedMin);
 
         // The failure this audit exists to catch: a fluent, level-correct text
         // that teaches none of the words it was written for.

@@ -100,6 +100,16 @@ export const lexiconEntrySchema = z.object({
   audioUrl: z.string().optional(),
   /** Free-form facets: "dari-specific", "loanword", "kabuli", topic tags… */
   tags: z.array(z.string()).default([]),
+  /**
+   * Grammatical gender, for Catalan nouns and the adjectives/determiners that
+   * must agree with them. `"common"` (epicene) marks a noun whose form does
+   * not change with the referent's gender - `estudiant`, `català` - so a
+   * filler agrees the rest of the sentence with whichever gender it picked
+   * for the referent, not with a gender the word itself does not have.
+   * Absent for Dari, which has no grammatical gender, and for parts of speech
+   * gender agreement does not apply to.
+   */
+  gender: z.enum(["m", "f", "common"]).optional(),
 });
 
 export const lexiconFileSchema = z.object({
@@ -458,6 +468,17 @@ export const levelSchema = z.object({
   /** Words per sentence guidance for the generator. */
   sentenceLengthHint: z.string().min(1),
   /**
+   * The hard ceiling on words in one sentence, as a number rather than prose.
+   *
+   * `sentenceLengthHint` has always carried this figure ("max 6 words per
+   * sentence") and nothing has ever checked it: the output schema requires two
+   * sentences and says nothing about their length, so a pre-A1 text of two
+   * forty-word sentences passed every gate. The hint is what the model is told;
+   * this is what the result is measured against, and `levels.test.ts` asserts
+   * the two agree so they cannot drift.
+   */
+  maxSentenceWords: z.number().int().positive(),
+  /**
    * Typical words per sentence at this level, used to size a text in tokens.
    *
    * The new-word count is a share of running words, so it needs a token
@@ -501,6 +522,45 @@ export const themeSchema = z.object({
 export const themesFileSchema = z.array(themeSchema);
 
 export type Theme = z.infer<typeof themeSchema>;
+
+// ---------------------------------------------------------------------------
+// Beginner spec: content/lexicon/beginner-spec.json
+// ---------------------------------------------------------------------------
+
+/**
+ * What "ready for a beginner" means, as requirements rather than a word list -
+ * see the file's own `_comment` and `docs/PEDAGOGY.md` §5. `_comment`/`_note`
+ * keys document the file for a reader and are dropped by `beginnerSpecSchema`
+ * so they are never mistaken for a requirement.
+ */
+const stripAnnotations = <T extends z.ZodTypeAny>(valueSchema: T) =>
+  z.preprocess(
+    (raw) =>
+      Object.fromEntries(
+        Object.entries(raw as Record<string, unknown>).filter(([k]) => !k.startsWith("_")),
+      ),
+    z.record(z.string(), valueSchema),
+  );
+
+export const beginnerSpecSchema = z.object({
+  /** Finite vocabulary - pronouns, articles, question words. Every member required. */
+  closedClasses: stripAnnotations(z.array(z.string().min(1))),
+  /** Open vocabulary - a minimum count and a seed list per field, not an enumeration. */
+  semanticFields: stripAnnotations(
+    z.object({
+      min: z.number().int().positive(),
+      seed: z.array(z.string().min(1)),
+      /** The `lexicon.json` theme tag this field corresponds to, if one exists. */
+      tag: z.string().optional(),
+    }),
+  ),
+  /** Verbs grouped by what they let a learner do, not by frequency. */
+  verbFunctions: stripAnnotations(z.array(z.string().min(1))),
+  /** Adjectives grouped by the dimension they describe; both poles of a contrast required. */
+  descriptiveDimensions: stripAnnotations(z.array(z.string().min(1))),
+});
+
+export type BeginnerSpec = z.infer<typeof beginnerSpecSchema>;
 
 // ---------------------------------------------------------------------------
 // Texts: content/texts/seed/*.json and AI-generated (same format)
@@ -550,6 +610,12 @@ export const textDocumentSchema = z.object({
   /** Model identifier when source = "generated". */
   model: z.string().optional(),
   createdAt: z.string(),
+  /**
+   * Curriculum order within a level. Authored texts are read in this order;
+   * generated ones have none and sort after. Optional because every text
+   * cached before the corpus existed has none.
+   */
+  seq: z.number().int().positive().optional(),
 });
 
 export type TextDocument = z.infer<typeof textDocumentSchema>;

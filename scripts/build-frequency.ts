@@ -41,6 +41,7 @@ import { tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
 import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
 import { tokenizeDari } from "../src/lib/lang/prs/normalize.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
+import { insertionOrderSuffix } from "./freq-integrity.ts";
 
 /**
  * How much each source of evidence counts, per language. Weights are normalized,
@@ -289,7 +290,24 @@ async function main() {
 
   const weights = WEIGHTS[lang];
   const active = Object.entries(weights).filter(([, w]) => w > 0);
-  const weightSum = active.reduce((n, [, w]) => n + w, 0);
+
+  /**
+   * Entries whose `freqRank` has never been independently ranked - it is a
+   * fixed offset from their own id, i.e. insertion order wearing a frequency
+   * column. See freq-integrity.ts. Their `curated` term is not weak evidence,
+   * it is noise: at prs's curated weight of 0.75 it would anchor a word near
+   * the tail regardless of what the corpora say, which is exactly how کچالو,
+   * میز and آشپزخانه stayed unreachable the first time this ran. Excluded from
+   * the blend for those entries only, so real corpus evidence decides them
+   * instead - the same treatment a corpus gives a word it never saw.
+   */
+  const untrustedCurated = new Set(insertionOrderSuffix(entries).map((e) => e.id));
+  if (untrustedCurated.size > 0) {
+    console.log(
+      `\n${untrustedCurated.size} entries have never been independently ranked ` +
+        `(freqRank tracks insertion order) - excluding their curated weight from the blend`,
+    );
+  }
 
   /**
    * Blend in log space, not rank space.
@@ -304,10 +322,20 @@ async function main() {
    * of the way rather than an unbounded number of places.
    */
   const scored: Scored[] = entries.map((entry) => {
+    // Drop `curated` for an entry whose curated rank is noise, and
+    // renormalize over what is left. Falls back to the full list if that
+    // would leave nothing to blend from (a language with curated as its only
+    // weighted source, say), since an untrustworthy signal still beats none.
+    const entryActive = untrustedCurated.has(entry.id)
+      ? active.filter(([id]) => id !== "curated")
+      : active;
+    const sources = entryActive.length > 0 ? entryActive : active;
+    const entryWeightSum = sources.reduce((n, [, w]) => n + w, 0);
+
     const perSource: Record<string, number> = {};
     let seen = false;
     let logScore = 0;
-    for (const [id, w] of active) {
+    for (const [id, w] of sources) {
       let rank: number;
       if (id === "curated") {
         rank = entry.freqRank;
@@ -319,7 +347,7 @@ async function main() {
       perSource[id] = rank;
       logScore += w * Math.log(rank);
     }
-    return { entry, score: Math.exp(logScore / weightSum), seen, perSource };
+    return { entry, score: Math.exp(logScore / entryWeightSum), seen, perSource };
   });
 
   // Ties are broken by the curated rank, so words no corpus saw keep their
@@ -339,8 +367,14 @@ async function main() {
 
   // Audit artifact: small, reviewable, and the thing to read when a rank looks
   // wrong. Committed, unlike the multi-megabyte corpora it came from.
+  //
+  // Columns come from `active`, not from one entry's `perSource` - an entry
+  // whose curated term was excluded (see `untrustedCurated` above) has no
+  // "curated" key, and deriving the header from such a row would silently
+  // drop the column from the whole file rather than just that row.
+  const sourceIds = active.map(([id]) => id);
   const tsv = [
-    ["rank", "band", "lexemeId", "target", "pos", "blendedScore", ...Object.keys(scored[0].perSource)].join("\t"),
+    ["rank", "band", "lexemeId", "target", "pos", "blendedScore", ...sourceIds].join("\t"),
     ...scored.map((s, i) =>
       [
         i + 1,
@@ -349,7 +383,7 @@ async function main() {
         s.entry.target,
         s.entry.pos,
         Math.round(s.score),
-        ...Object.keys(scored[0].perSource).map((k) => s.perSource[k] || ""),
+        ...sourceIds.map((k) => s.perSource[k] ?? ""),
       ].join("\t"),
     ),
   ].join("\n");

@@ -1,0 +1,256 @@
+{
+  "id": "tx-seed-l2-007",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "La història de la família",
+  "titleEn": "The family story",
+  "sentences": [
+    {
+      "target": "La meva àvia explica una història cada nit.",
+      "en": "My grandmother tells a story every night.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "àvia",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "explica",
+          "lexemeId": "lx-0813"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "història",
+          "lexemeId": "lx-0316"
+        },
+        {
+          "surface": "cada",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "nit",
+          "lexemeId": "lx-0084"
+        }
+      ]
+    },
+    {
+      "target": "De cop, tota la família escolta.",
+      "en": "Suddenly, the whole family listens.",
+      "tokens": [
+        {
+          "surface": "De",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "cop",
+          "lexemeId": "lx-4372"
+        },
+        {
+          "surface": "tota",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "família",
+          "lexemeId": "lx-0341"
+        },
+        {
+          "surface": "escolta",
+          "lexemeId": "lx-0115"
+        }
+      ]
+    },
+    {
+      "target": "La història ens uneix a tots.",
+      "en": "The story unites us all.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "història",
+          "lexemeId": "lx-0316"
+        },
+        {
+          "surface": "ens",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "uneix",
+          "lexemeId": "lx-0358"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "tots",
+          "lexemeId": "lx-0050"
+        }
+      ]
+    },
+    {
+      "target": "Gràcies a Déu, tenim una vida bonica.",
+      "en": "Thank God, we have a beautiful life.",
+      "tokens": [
+        {
+          "surface": "Gràcies",
+          "lexemeId": "lx-0281"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "Déu",
+          "lexemeId": "lx-2053"
+        },
+        {
+          "surface": "tenim",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "vida",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "bonica",
+          "lexemeId": "lx-0228"
+        }
+      ]
+    },
+    {
+      "target": "Tots estem d'acord amb ella.",
+      "en": "We all agree with her.",
+      "tokens": [
+        {
+          "surface": "Tots",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "estem",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "acord",
+          "lexemeId": "lx-1555"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "ella",
+          "lexemeId": "lx-0243"
+        }
+      ]
+    },
+    {
+      "target": "M'agrada tant aquesta història de la família.",
+      "en": "I like this family story so much.",
+      "tokens": [
+        {
+          "surface": "M'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agrada",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "tant",
+          "lexemeId": "lx-0687"
+        },
+        {
+          "surface": "aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "història",
+          "lexemeId": "lx-0316"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "família",
+          "lexemeId": "lx-0341"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0010",
+    "lx-0028",
+    "lx-0030",
+    "lx-0032",
+    "lx-0034",
+    "lx-0041",
+    "lx-0042",
+    "lx-0050",
+    "lx-0054",
+    "lx-0063",
+    "lx-0064",
+    "lx-0072",
+    "lx-0084",
+    "lx-0115",
+    "lx-0209",
+    "lx-0228",
+    "lx-0243",
+    "lx-0248",
+    "lx-0281",
+    "lx-0316",
+    "lx-0341",
+    "lx-0344",
+    "lx-0358",
+    "lx-0687",
+    "lx-0813",
+    "lx-1555",
+    "lx-2053",
+    "lx-4372"
+  ],
+  "newWords": [
+    "lx-0084",
+    "lx-0115",
+    "lx-0316",
+    "lx-0344",
+    "lx-0358",
+    "lx-0687",
+    "lx-0813",
+    "lx-1555",
+    "lx-2053",
+    "lx-4372"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 7
+}

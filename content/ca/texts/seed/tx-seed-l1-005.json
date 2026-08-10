@@ -1,0 +1,189 @@
+{
+  "id": "tx-seed-l1-005",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El meu armari",
+  "titleEn": "My wardrobe",
+  "sentences": [
+    {
+      "target": "El meu armari és gran.",
+      "en": "My wardrobe is big.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "armari",
+          "lexemeId": "lx-0367"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "Obro la porta de l'armari.",
+      "en": "I open the wardrobe door.",
+      "tokens": [
+        {
+          "surface": "Obro",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "armari",
+          "lexemeId": "lx-0367"
+        }
+      ]
+    },
+    {
+      "target": "Busco un vestit negre.",
+      "en": "I am looking for a black dress.",
+      "tokens": [
+        {
+          "surface": "Busco",
+          "lexemeId": "lx-0212"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "vestit",
+          "lexemeId": "lx-0430"
+        },
+        {
+          "surface": "negre",
+          "lexemeId": "lx-0235"
+        }
+      ]
+    },
+    {
+      "target": "Trobo un vestit blanc.",
+      "en": "I find a white dress.",
+      "tokens": [
+        {
+          "surface": "Trobo",
+          "lexemeId": "lx-0110"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "vestit",
+          "lexemeId": "lx-0430"
+        },
+        {
+          "surface": "blanc",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "Trec el vestit blanc.",
+      "en": "I take out the white dress.",
+      "tokens": [
+        {
+          "surface": "Trec",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "vestit",
+          "lexemeId": "lx-0430"
+        },
+        {
+          "surface": "blanc",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "El vestit blanc és nou.",
+      "en": "The white dress is new.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "vestit",
+          "lexemeId": "lx-0430"
+        },
+        {
+          "surface": "blanc",
+          "lexemeId": "lx-0234"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "nou",
+          "lexemeId": "lx-0219"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0098",
+    "lx-0110",
+    "lx-0120",
+    "lx-0195",
+    "lx-0212",
+    "lx-0217",
+    "lx-0219",
+    "lx-0234",
+    "lx-0235",
+    "lx-0248",
+    "lx-0367",
+    "lx-0430"
+  ],
+  "newWords": [
+    "lx-0110",
+    "lx-0195",
+    "lx-0212",
+    "lx-0234",
+    "lx-0235",
+    "lx-0367",
+    "lx-0430"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 5
+}
