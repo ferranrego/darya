@@ -67,6 +67,11 @@ export const ca: LanguageProfile = {
       evening: "Bona tarda",
       night: "Bona nit",
     },
+    starters: [
+      { target: "Hola, com estàs?", en: "Hello, how are you?" },
+      { target: "Em dic ...", en: "My name is ..." },
+      { target: "Quin temps fa avui?", en: "What's the weather like today?" },
+    ],
   },
 
   prompts: {

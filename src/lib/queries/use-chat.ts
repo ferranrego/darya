@@ -100,22 +100,40 @@ export function useDeleteMessage() {
   });
 }
 
+/** Which thread a message belongs to. Selects the table server-side. */
+export type EnrichSource = "room" | "tutor";
+
+const SOURCE_KEY: Record<EnrichSource, readonly string[]> = {
+  room: KEY,
+  tutor: ["tutor_messages"],
+};
+
 export function useEnrichMessage() {
   const qc = useQueryClient();
 
   return useMutation({
-    mutationFn: async ({ id, mode }: { id: string; mode: EnrichMode }) => {
+    mutationFn: async ({
+      id,
+      mode,
+      source = "room",
+    }: {
+      id: string;
+      mode: EnrichMode;
+      source?: EnrichSource;
+    }) => {
       const res = await fetch("/api/chat/enrich", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id, mode }),
+        body: JSON.stringify({ id, mode, source }),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? "enrichment failed");
-      return { id, mode, value: json.value as string };
+      return { id, mode, source, value: json.value as string };
     },
-    onSuccess: ({ id, mode, value }) => {
-      qc.setQueryData<ChatMessageRow[]>(KEY, (old) =>
+    onSuccess: ({ id, mode, source, value }) => {
+      // Both threads cache the result on the row itself, so the write is the
+      // same shape; only the query key differs.
+      qc.setQueryData<{ id: string }[]>(SOURCE_KEY[source], (old) =>
         old?.map((m) => (m.id === id ? { ...m, [mode]: value } : m)),
       );
     },

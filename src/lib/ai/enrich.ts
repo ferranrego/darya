@@ -56,9 +56,27 @@ Translate it into natural, everyday English. Keep the tone casual, as chat.
 Return ONLY JSON: {"translation": "..."}`;
 }
 
+/**
+ * Which provider each mode wants at the head of the chain.
+ *
+ * Correction and transliteration are the two calls whose output the learner
+ * takes as authoritative: a bad "correction" teaches the wrong form, and a bad
+ * transliteration teaches the wrong pronunciation. Both go to Qwen on the HF
+ * router first, which is the stronger morphologist and much better on
+ * Perso-Arabic script, and both are deliberate taps where three seconds is
+ * fine. Translation is target -> English, the easy direction, so it takes Groq
+ * and the sub-second answer instead.
+ */
+const PREFER: Record<EnrichMode, string[]> = {
+  translit: ["huggingface"],
+  correction: ["huggingface"],
+  translation: ["groq"],
+};
+
 export async function enrichChatMessage(body: string, mode: EnrichMode): Promise<unknown> {
   return completeJson(buildPrompt(body, mode), {
     temperature: 0.2,
+    prefer: PREFER[mode],
     validate: (raw) => {
       const parsed = schemas[mode].parse(JSON.parse(raw));
       if (mode === "translit") return (parsed as { translit: string }).translit;

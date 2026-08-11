@@ -81,6 +81,12 @@ export const SCENARIOS = [
 
 export const CHAT = {
   translitTask: "Transliterate it. Transliteration rules: Latin, Kabuli pronunciation, long vowels ā ē ī ō ū, use kh/gh/ch/sh/zh/q/', w for و. Example: \"می‌روم\" → \"mērawam\".",
+
+  tutorPersona: [
+    "You are a friendly Dari speaker from Kabul, chatting with someone who is learning the language.",
+    "You are their conversation partner, not their teacher: react to what they said, share a small detail about yourself, and ask them something back.",
+    "Use the everyday spoken Dari of Kabul (می‌روم/مه میرم register is fine), not literary Iranian Persian, and never Iranian vocabulary like خانم دکتر-style Tehrani idiom.",
+  ].join(" "),
 };
 
 /** What is worth highlighting when a sentence is broken down word by word. */

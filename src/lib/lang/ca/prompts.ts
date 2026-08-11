@@ -78,6 +78,12 @@ export const SCENARIOS = [
 
 export const CHAT = {
   translitTask: "Provide a phonetic pronunciation guide so an English speaker knows how to pronounce it. Example: \"com estàs\" -> \"kohm eh-stahs\".",
+
+  tutorPersona: [
+    "You are a friendly Catalan speaker from Barcelona, chatting with someone who is learning the language.",
+    "You are their conversation partner, not their teacher: react to what they said, share a small detail about yourself, and ask them something back.",
+    "Write natural spoken Central Catalan, the way someone actually texts a friend, and never Spanish.",
+  ].join(" "),
 };
 
 /**

@@ -3,13 +3,24 @@
 import { Languages, Loader2, Trash2, SpellCheck } from "lucide-react";
 import { useState } from "react";
 import { looksLikeTarget, type EnrichMode } from "@/lib/chat/shared";
-import type { ChatMessageRow } from "@/lib/db/types";
-import { useEnrichMessage, useDeleteMessage } from "@/lib/queries/use-chat";
+import type { ChatMessageRow, TutorMessageRow } from "@/lib/db/types";
+import { useEnrichMessage, useDeleteMessage, type EnrichSource } from "@/lib/queries/use-chat";
 import { profile as lang } from "@/lib/lang";
+import { TypingDots } from "./typing-dots";
 
 function timeOf(iso: string): string {
   return new Date(iso).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 }
+
+/**
+ * What this bubble needs from a row. Both threads store the same four columns,
+ * which is what lets one component (and one set of tool buttons) serve the
+ * community room and the tutor thread.
+ */
+type EnrichableMessage = Pick<
+  ChatMessageRow & TutorMessageRow,
+  "id" | "body" | "translit" | "translation" | "correction" | "created_at"
+>;
 
 export function MessageBubble({
   message,
@@ -17,8 +28,11 @@ export function MessageBubble({
   showName,
   showTime,
   groupStart,
+  source = "room",
+  displayName,
+  canDelete = own && source === "room",
 }: {
-  message: ChatMessageRow;
+  message: EnrichableMessage;
   own: boolean;
   /** First message in a run from this sender: show their name above it. */
   showName: boolean;
@@ -26,6 +40,12 @@ export function MessageBubble({
   showTime: boolean;
   /** First message in a run: space it apart from the group above. */
   groupStart: boolean;
+  /** Which thread this row lives in; picks the table server-side. */
+  source?: EnrichSource;
+  /** Sender's name, for the room. The tutor thread has only two participants. */
+  displayName?: string;
+  /** The tutor thread is server-written, so nothing in it can be deleted. */
+  canDelete?: boolean;
 }) {
   const [open, setOpen] = useState<EnrichMode | null>(null);
   const enrich = useEnrichMessage();
@@ -38,7 +58,7 @@ export function MessageBubble({
   function toggle(mode: EnrichMode) {
     if (open === mode) return setOpen(null);
     setOpen(mode);
-    if (!message[mode]) enrich.mutate({ id: message.id, mode });
+    if (!message[mode]) enrich.mutate({ id: message.id, mode, source });
   }
 
   const failed = enrich.isError && enrich.variables?.id === message.id && open && !shown;
@@ -50,8 +70,8 @@ export function MessageBubble({
         groupStart ? "mt-3" : "mt-0.5"
       }`}
     >
-      {showName && !own && (
-        <span className="px-1 text-[13px] text-ink-soft">{message.display_name || "Anonymous"}</span>
+      {showName && !own && displayName !== undefined && (
+        <span className="px-1 text-[13px] text-ink-soft">{displayName || "Anonymous"}</span>
       )}
 
       <div className={`flex w-full items-center gap-2 ${own ? "flex-row-reverse" : ""}`}>
@@ -61,7 +81,10 @@ export function MessageBubble({
           }`}
         >
           <p
-            lang={isTarget ? "prs" : undefined}
+            // `lang.code`, not a hardcoded "prs": the CSS rule that applies the
+            // target font and direction keys off any non-English `lang`, so a
+            // literal here rendered Catalan messages right-to-left in Vazirmatn.
+            lang={isTarget ? lang.code : undefined}
             dir="auto"
             className={`whitespace-pre-wrap text-[16px] leading-relaxed ${
               isTarget ? "text-[19px] break-normal" : "break-words"
@@ -97,16 +120,22 @@ export function MessageBubble({
                     </ul>
                   )}
                 </div>
+              ) : shown ? (
+                <p dir="auto" className="italic">
+                  {shown as string}
+                </p>
+              ) : pending ? (
+                <TypingDots label="Working on it…" />
               ) : (
                 <p dir="auto" className="italic">
-                  {(shown as string) ?? (pending ? "Thinking..." : "Could not do that right now.")}
+                  Could not do that right now.
                 </p>
               )}
             </div>
           )}
         </div>
 
-        {own && (
+        {canDelete && (
           <button
             type="button"
             onClick={() => deleteMsg.mutate(message.id)}
