@@ -1,0 +1,151 @@
+{
+  "id": "tx-seed-l2-012",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Marxar i caure",
+  "titleEn": "To leave and to fall",
+  "sentences": [
+    {
+      "target": "El pare ha de marxar ara.",
+      "en": "The father has to leave now.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "marxar",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "ara",
+          "lexemeId": "lx-0254"
+        }
+      ]
+    },
+    {
+      "target": "El got cau a terra i es trenca.",
+      "en": "The glass falls to the floor and breaks.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "got",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "cau",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "terra",
+          "lexemeId": "lx-0382"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "es",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "trenca",
+          "lexemeId": "lx-0144"
+        }
+      ]
+    },
+    {
+      "target": "Quan marxem, plou.",
+      "en": "When we leave, it rains.",
+      "tokens": [
+        {
+          "surface": "Quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "marxem",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "plou",
+          "lexemeId": "lx-0194"
+        }
+      ]
+    },
+    {
+      "target": "Hem de marxar molt aviat.",
+      "en": "We have to leave very early.",
+      "tokens": [
+        {
+          "surface": "Hem",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "marxar",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "aviat",
+          "lexemeId": "lx-0163"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0009",
+    "lx-0020",
+    "lx-0030",
+    "lx-0031",
+    "lx-0033",
+    "lx-0034",
+    "lx-0052",
+    "lx-0062",
+    "lx-0089",
+    "lx-0136",
+    "lx-0144",
+    "lx-0145",
+    "lx-0146",
+    "lx-0163",
+    "lx-0194",
+    "lx-0254",
+    "lx-0382"
+  ],
+  "newWords": [
+    "lx-0136",
+    "lx-0144",
+    "lx-0145",
+    "lx-0146",
+    "lx-0382"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 12
+}

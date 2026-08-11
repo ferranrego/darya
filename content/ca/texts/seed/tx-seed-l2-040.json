@@ -1,0 +1,98 @@
+{
+  "id": "tx-seed-l2-040",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El següent nivell de la sèrie és segur.",
+      "en": "The next level of the series is safe.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "següent",
+          "lexemeId": "lx-4252"
+        },
+        {
+          "surface": "nivell",
+          "lexemeId": "lx-2310"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "sèrie",
+          "lexemeId": "lx-4383"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "segur",
+          "lexemeId": "lx-0575"
+        }
+      ]
+    },
+    {
+      "target": "Ell dirigeix l'obra nova.",
+      "en": "He directs the new work.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "dirigeix",
+          "lexemeId": "lx-4605"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "obra",
+          "lexemeId": "lx-2047"
+        },
+        {
+          "surface": "nova",
+          "lexemeId": "lx-0219"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0219",
+    "lx-0242",
+    "lx-0575",
+    "lx-2047",
+    "lx-2310",
+    "lx-4252",
+    "lx-4383",
+    "lx-4605"
+  ],
+  "newWords": [
+    "lx-0575",
+    "lx-2310",
+    "lx-4252",
+    "lx-4383",
+    "lx-4605"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 40
+}

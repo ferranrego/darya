@@ -1,0 +1,132 @@
+{
+  "id": "tx-seed-l1-036",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El poble és petit.",
+      "en": "The town is small.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "poble",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petit",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "La plaça és gran.",
+      "en": "The square is big.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "plaça",
+          "lexemeId": "lx-0985"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "Jo vaig a l'estació.",
+      "en": "I go to the station.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "vaig",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estació",
+          "lexemeId": "lx-0795"
+        }
+      ]
+    },
+    {
+      "target": "El mercat és al parc.",
+      "en": "The market is in the park.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "mercat",
+          "lexemeId": "lx-0335"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "parc",
+          "lexemeId": "lx-0620"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0057",
+    "lx-0217",
+    "lx-0218",
+    "lx-0240",
+    "lx-0335",
+    "lx-0342",
+    "lx-0620",
+    "lx-0795",
+    "lx-0985"
+  ],
+  "newWords": [
+    "lx-0335",
+    "lx-0342",
+    "lx-0620",
+    "lx-0795",
+    "lx-0985"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 36
+}

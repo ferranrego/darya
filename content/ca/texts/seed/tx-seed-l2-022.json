@@ -1,0 +1,153 @@
+{
+  "id": "tx-seed-l2-022",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El vol",
+  "titleEn": "The flight",
+  "sentences": [
+    {
+      "target": "Un ocell pren el vol al bosc.",
+      "en": "A bird takes flight in the forest.",
+      "tokens": [
+        {
+          "surface": "Un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "ocell",
+          "lexemeId": "lx-0332"
+        },
+        {
+          "surface": "pren",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "vol",
+          "lexemeId": "lx-1007"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "bosc",
+          "lexemeId": "lx-0588"
+        }
+      ]
+    },
+    {
+      "target": "A l'altra banda, cau un cos.",
+      "en": "On the other side, a body falls.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "altra",
+          "lexemeId": "lx-0027"
+        },
+        {
+          "surface": "banda",
+          "lexemeId": "lx-3162"
+        },
+        {
+          "surface": "cau",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "cos",
+          "lexemeId": "lx-0405"
+        }
+      ]
+    },
+    {
+      "target": "Aquest cos és la part principal de l'arbre.",
+      "en": "This body is the main part of the tree.",
+      "tokens": [
+        {
+          "surface": "Aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "cos",
+          "lexemeId": "lx-0405"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "part",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "principal",
+          "lexemeId": "lx-4374"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "arbre",
+          "lexemeId": "lx-0328"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0027",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0037",
+    "lx-0038",
+    "lx-0064",
+    "lx-0075",
+    "lx-0126",
+    "lx-0145",
+    "lx-0328",
+    "lx-0332",
+    "lx-0405",
+    "lx-0588",
+    "lx-1007",
+    "lx-3162",
+    "lx-4374"
+  ],
+  "newWords": [
+    "lx-0328",
+    "lx-0332",
+    "lx-0405",
+    "lx-0588",
+    "lx-1007",
+    "lx-3162",
+    "lx-4374"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 22
+}

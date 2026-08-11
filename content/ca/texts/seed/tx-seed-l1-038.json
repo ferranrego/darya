@@ -1,0 +1,128 @@
+{
+  "id": "tx-seed-l1-038",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El meu treball és bo.",
+      "en": "My work is good.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "treball",
+          "lexemeId": "lx-0533"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "bo",
+          "lexemeId": "lx-0215"
+        }
+      ]
+    },
+    {
+      "target": "Això és cert.",
+      "en": "This is true.",
+      "tokens": [
+        {
+          "surface": "Això",
+          "lexemeId": "lx-0683"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "cert",
+          "lexemeId": "lx-4060"
+        }
+      ]
+    },
+    {
+      "target": "Jo explico això bé.",
+      "en": "I explain this well.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "explico",
+          "lexemeId": "lx-0813"
+        },
+        {
+          "surface": "això",
+          "lexemeId": "lx-0683"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        }
+      ]
+    },
+    {
+      "target": "Jo recordo el paper blanc.",
+      "en": "I remember the white paper.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "recordo",
+          "lexemeId": "lx-0362"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "paper",
+          "lexemeId": "lx-0542"
+        },
+        {
+          "surface": "blanc",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0031",
+    "lx-0038",
+    "lx-0215",
+    "lx-0234",
+    "lx-0240",
+    "lx-0248",
+    "lx-0362",
+    "lx-0533",
+    "lx-0542",
+    "lx-0683",
+    "lx-0813",
+    "lx-4060"
+  ],
+  "newWords": [
+    "lx-0002",
+    "lx-0362",
+    "lx-0533",
+    "lx-0542",
+    "lx-0813",
+    "lx-4060"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 38
+}

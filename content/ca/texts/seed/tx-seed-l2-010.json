@@ -1,0 +1,180 @@
+{
+  "id": "tx-seed-l2-010",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Començar i acabar",
+  "titleEn": "To begin and to finish",
+  "sentences": [
+    {
+      "target": "El nen comença l'escola avui.",
+      "en": "The boy begins school today.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "comença",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "escola",
+          "lexemeId": "lx-0099"
+        },
+        {
+          "surface": "avui",
+          "lexemeId": "lx-0259"
+        }
+      ]
+    },
+    {
+      "target": "Ells volen acabar d'hora perquè estan cansats.",
+      "en": "They want to finish early because they are tired.",
+      "tokens": [
+        {
+          "surface": "Ells",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "volen",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "acabar",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "hora",
+          "lexemeId": "lx-0338"
+        },
+        {
+          "surface": "perquè",
+          "lexemeId": "lx-0869"
+        },
+        {
+          "surface": "estan",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "cansats",
+          "lexemeId": "lx-0003"
+        }
+      ]
+    },
+    {
+      "target": "La mare acaba la feina al vespre.",
+      "en": "The mother finishes work in the evening.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        },
+        {
+          "surface": "acaba",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "feina",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "vespre",
+          "lexemeId": "lx-1522"
+        }
+      ]
+    },
+    {
+      "target": "Quan ella acaba, va a casa.",
+      "en": "When she finishes, she goes home.",
+      "tokens": [
+        {
+          "surface": "Quan",
+          "lexemeId": "lx-0020"
+        },
+        {
+          "surface": "ella",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "acaba",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0020",
+    "lx-0022",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0057",
+    "lx-0060",
+    "lx-0063",
+    "lx-0069",
+    "lx-0078",
+    "lx-0080",
+    "lx-0090",
+    "lx-0099",
+    "lx-0122",
+    "lx-0123",
+    "lx-0243",
+    "lx-0246",
+    "lx-0259",
+    "lx-0338",
+    "lx-0869",
+    "lx-1522"
+  ],
+  "newWords": [
+    "lx-0003",
+    "lx-0078",
+    "lx-0080",
+    "lx-0099",
+    "lx-0122",
+    "lx-0123",
+    "lx-0338",
+    "lx-1522"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 10
+}

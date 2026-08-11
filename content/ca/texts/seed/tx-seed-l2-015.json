@@ -1,0 +1,159 @@
+{
+  "id": "tx-seed-l2-015",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Coses",
+  "titleEn": "Things",
+  "sentences": [
+    {
+      "target": "Una part de la casa és vella.",
+      "en": "A part of the house is old.",
+      "tokens": [
+        {
+          "surface": "Una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "part",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "vella",
+          "lexemeId": "lx-0220"
+        }
+      ]
+    },
+    {
+      "target": "La cama em fa molt mal.",
+      "en": "My leg hurts a lot.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "cama",
+          "lexemeId": "lx-0891"
+        },
+        {
+          "surface": "em",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "mal",
+          "lexemeId": "lx-0135"
+        }
+      ]
+    },
+    {
+      "target": "Quina cosa més estranya!",
+      "en": "What a strange thing!",
+      "tokens": [
+        {
+          "surface": "Quina",
+          "lexemeId": "lx-0021"
+        },
+        {
+          "surface": "cosa",
+          "lexemeId": "lx-0076"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "estranya",
+          "lexemeId": "lx-4149"
+        }
+      ]
+    },
+    {
+      "target": "Veig una cosa a la paret.",
+      "en": "I see a thing on the wall.",
+      "tokens": [
+        {
+          "surface": "Veig",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "cosa",
+          "lexemeId": "lx-0076"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "paret",
+          "lexemeId": "lx-0370"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0021",
+    "lx-0030",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0042",
+    "lx-0046",
+    "lx-0052",
+    "lx-0053",
+    "lx-0058",
+    "lx-0069",
+    "lx-0075",
+    "lx-0076",
+    "lx-0135",
+    "lx-0220",
+    "lx-0370",
+    "lx-0891",
+    "lx-4149"
+  ],
+  "newWords": [
+    "lx-0058",
+    "lx-0075",
+    "lx-0076",
+    "lx-0135",
+    "lx-0370",
+    "lx-0891",
+    "lx-4149"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 15
+}

@@ -1,0 +1,127 @@
+{
+  "id": "tx-seed-l1-025",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "Tard",
+  "titleEn": "Late",
+  "sentences": [
+    {
+      "target": "El nen arriba tard.",
+      "en": "The boy arrives late.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "arriba",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "tard",
+          "lexemeId": "lx-0262"
+        }
+      ]
+    },
+    {
+      "target": "A la mare li agrada.",
+      "en": "The mother likes it.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        },
+        {
+          "surface": "li",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "agrada",
+          "lexemeId": "lx-0209"
+        }
+      ]
+    },
+    {
+      "target": "El nen necessita dormir.",
+      "en": "The boy needs to sleep.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "necessita",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "dormir",
+          "lexemeId": "lx-0199"
+        }
+      ]
+    },
+    {
+      "target": "El nen dorm molt tard.",
+      "en": "The boy sleeps very late.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "dorm",
+          "lexemeId": "lx-0199"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "tard",
+          "lexemeId": "lx-0262"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0012",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0052",
+    "lx-0078",
+    "lx-0090",
+    "lx-0106",
+    "lx-0199",
+    "lx-0209",
+    "lx-0210",
+    "lx-0262"
+  ],
+  "newWords": [
+    "lx-0209",
+    "lx-0210"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 25
+}

@@ -1,0 +1,151 @@
+{
+  "id": "tx-seed-l2-018",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Comptar",
+  "titleEn": "To count",
+  "sentences": [
+    {
+      "target": "El nen sap comptar fins a deu.",
+      "en": "The boy knows how to count to ten.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "sap",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "comptar",
+          "lexemeId": "lx-0854"
+        },
+        {
+          "surface": "fins",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "deu",
+          "lexemeId": "lx-0277"
+        }
+      ]
+    },
+    {
+      "target": "Jo sempre puc comptar amb tu.",
+      "en": "I can always count on you.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "puc",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "comptar",
+          "lexemeId": "lx-0854"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "tu",
+          "lexemeId": "lx-0241"
+        }
+      ]
+    },
+    {
+      "target": "La mare compta els diners.",
+      "en": "The mother counts the money.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        },
+        {
+          "surface": "compta",
+          "lexemeId": "lx-0854"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "diners",
+          "lexemeId": "lx-1041"
+        }
+      ]
+    },
+    {
+      "target": "Compto amb la teva mare.",
+      "en": "I count on your mother.",
+      "tokens": [
+        {
+          "surface": "Compto",
+          "lexemeId": "lx-0854"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "teva",
+          "lexemeId": "lx-0249"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0025",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0041",
+    "lx-0043",
+    "lx-0055",
+    "lx-0059",
+    "lx-0078",
+    "lx-0090",
+    "lx-0240",
+    "lx-0241",
+    "lx-0249",
+    "lx-0257",
+    "lx-0277",
+    "lx-0854",
+    "lx-1041"
+  ],
+  "newWords": [
+    "lx-0854"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 18
+}

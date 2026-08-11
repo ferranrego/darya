@@ -1,0 +1,169 @@
+{
+  "id": "tx-seed-l2-029",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "L'equip",
+  "titleEn": "The team",
+  "sentences": [
+    {
+      "target": "La meva parella és del centre.",
+      "en": "My partner is from the center.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "parella",
+          "lexemeId": "lx-0912"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "centre",
+          "lexemeId": "lx-4377"
+        }
+      ]
+    },
+    {
+      "target": "Ella juga en un equip gran.",
+      "en": "She plays in a big team.",
+      "tokens": [
+        {
+          "surface": "Ella",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "juga",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "equip",
+          "lexemeId": "lx-0832"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "Fa un gran pas per jugar.",
+      "en": "She takes a great step to play.",
+      "tokens": [
+        {
+          "surface": "Fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        },
+        {
+          "surface": "pas",
+          "lexemeId": "lx-1929"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "jugar",
+          "lexemeId": "lx-0200"
+        }
+      ]
+    },
+    {
+      "target": "Ara és la germana major de l'equip.",
+      "en": "Now she is the older sister of the team.",
+      "tokens": [
+        {
+          "surface": "Ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "germana",
+          "lexemeId": "lx-0904"
+        },
+        {
+          "surface": "major",
+          "lexemeId": "lx-4375"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "equip",
+          "lexemeId": "lx-0832"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0036",
+    "lx-0037",
+    "lx-0038",
+    "lx-0040",
+    "lx-0053",
+    "lx-0200",
+    "lx-0217",
+    "lx-0243",
+    "lx-0248",
+    "lx-0254",
+    "lx-0832",
+    "lx-0904",
+    "lx-0912",
+    "lx-1929",
+    "lx-4375",
+    "lx-4377"
+  ],
+  "newWords": [
+    "lx-0912",
+    "lx-1929",
+    "lx-4375",
+    "lx-4377"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 29
+}

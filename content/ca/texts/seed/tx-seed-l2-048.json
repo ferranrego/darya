@@ -1,0 +1,93 @@
+{
+  "id": "tx-seed-l2-048",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La veritat de l'assassinat en aquella època.",
+      "en": "The truth of the murder in that epoch.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "veritat",
+          "lexemeId": "lx-1030"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "assassinat",
+          "lexemeId": "lx-1127"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "aquella",
+          "lexemeId": "lx-0873"
+        },
+        {
+          "surface": "època",
+          "lexemeId": "lx-2957"
+        }
+      ]
+    },
+    {
+      "target": "Ells accepten la imatge.",
+      "en": "They accept the image.",
+      "tokens": [
+        {
+          "surface": "Ells",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "accepten",
+          "lexemeId": "lx-4144"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "imatge",
+          "lexemeId": "lx-0631"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0036",
+    "lx-0246",
+    "lx-0631",
+    "lx-0873",
+    "lx-1030",
+    "lx-1127",
+    "lx-2957",
+    "lx-4144"
+  ],
+  "newWords": [
+    "lx-0631",
+    "lx-1030",
+    "lx-1127",
+    "lx-2957",
+    "lx-4144"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 48
+}

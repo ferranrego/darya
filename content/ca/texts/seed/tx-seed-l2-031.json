@@ -1,0 +1,98 @@
+{
+  "id": "tx-seed-l2-031",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El membre del partit demana la paraula.",
+      "en": "The party member asks for the word.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "membre",
+          "lexemeId": "lx-4417"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "partit",
+          "lexemeId": "lx-0973"
+        },
+        {
+          "surface": "demana",
+          "lexemeId": "lx-4093"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "paraula",
+          "lexemeId": "lx-0312"
+        }
+      ]
+    },
+    {
+      "target": "Ell camina cap a l'est.",
+      "en": "He walks towards the east.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "camina",
+          "lexemeId": "lx-0201"
+        },
+        {
+          "surface": "cap",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "est",
+          "lexemeId": "lx-4402"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0083",
+    "lx-0201",
+    "lx-0242",
+    "lx-0312",
+    "lx-0973",
+    "lx-4093",
+    "lx-4402",
+    "lx-4417"
+  ],
+  "newWords": [
+    "lx-0312",
+    "lx-0973",
+    "lx-4093",
+    "lx-4402",
+    "lx-4417"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 31
+}

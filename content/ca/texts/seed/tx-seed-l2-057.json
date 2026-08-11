@@ -1,0 +1,87 @@
+{
+  "id": "tx-seed-l2-057",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El company salva el local.",
+      "en": "The colleague saves the local.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "company",
+          "lexemeId": "lx-0967"
+        },
+        {
+          "surface": "salva",
+          "lexemeId": "lx-4615"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "local",
+          "lexemeId": "lx-4304"
+        }
+      ]
+    },
+    {
+      "target": "El resultat és a favor seu.",
+      "en": "The result is in his favor.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "resultat",
+          "lexemeId": "lx-0782"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "favor",
+          "lexemeId": "lx-4405"
+        },
+        {
+          "surface": "seu",
+          "lexemeId": "lx-0250"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0034",
+    "lx-0038",
+    "lx-0250",
+    "lx-0782",
+    "lx-0967",
+    "lx-4304",
+    "lx-4405",
+    "lx-4615"
+  ],
+  "newWords": [
+    "lx-0782",
+    "lx-0967",
+    "lx-4304",
+    "lx-4405",
+    "lx-4615"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 57
+}

@@ -1,0 +1,552 @@
+[
+  {
+    "slug": "l2-009",
+    "level": "L2",
+    "seq": 9,
+    "titleTarget": "El país",
+    "titleEn": "The country",
+    "sentences": [
+      {
+        "target": "El meu país és gran.",
+        "en": "My country is big."
+      },
+      {
+        "target": "Hi ha un canvi al país.",
+        "en": "There is a change in the country."
+      },
+      {
+        "target": "El canvi és molt bo, però és difícil.",
+        "en": "The change is very good, but it is difficult."
+      },
+      {
+        "target": "M'agrada molt el meu país.",
+        "en": "I like my country a lot."
+      }
+    ]
+  },
+  {
+    "slug": "l2-010",
+    "level": "L2",
+    "seq": 10,
+    "titleTarget": "Començar i acabar",
+    "titleEn": "To begin and to finish",
+    "sentences": [
+      {
+        "target": "El nen comença l'escola avui.",
+        "en": "The boy begins school today."
+      },
+      {
+        "target": "Ell vol acabar d'hora perquè està cansat.",
+        "en": "He wants to finish early because he is tired."
+      },
+      {
+        "target": "La mare acaba la feina al vespre.",
+        "en": "The mother finishes work in the evening."
+      },
+      {
+        "target": "Quan ella acaba, va a casa.",
+        "en": "When she finishes, she goes home."
+      }
+    ]
+  },
+  {
+    "slug": "l2-011",
+    "level": "L2",
+    "seq": 11,
+    "titleTarget": "L'espai",
+    "titleEn": "The space",
+    "sentences": [
+      {
+        "target": "Aquesta casa té molt espai.",
+        "en": "This house has a lot of space."
+      },
+      {
+        "target": "L'espai és necessari per jugar.",
+        "en": "Space is necessary to play."
+      },
+      {
+        "target": "El nen juga en un espai petit.",
+        "en": "The boy plays in a small space."
+      },
+      {
+        "target": "L'espai és molt gran.",
+        "en": "The space is very big."
+      }
+    ]
+  },
+  {
+    "slug": "l2-012",
+    "level": "L2",
+    "seq": 12,
+    "titleTarget": "Marxar i caure",
+    "titleEn": "To leave and to fall",
+    "sentences": [
+      {
+        "target": "El pare ha de marxar ara.",
+        "en": "The father has to leave now."
+      },
+      {
+        "target": "El got cau a terra i es trenca.",
+        "en": "The glass falls to the floor and breaks."
+      },
+      {
+        "target": "Quan marxem, plou.",
+        "en": "When we leave, it rains."
+      },
+      {
+        "target": "Hem de marxar molt aviat.",
+        "en": "We have to leave very early."
+      }
+    ]
+  },
+  {
+    "slug": "l2-013",
+    "level": "L2",
+    "seq": 13,
+    "titleTarget": "El so",
+    "titleEn": "The sound",
+    "sentences": [
+      {
+        "target": "Sento un so al carrer.",
+        "en": "I hear a sound in the street."
+      },
+      {
+        "target": "El so és fort, però no tinc por.",
+        "en": "The sound is strong, but I am not afraid."
+      },
+      {
+        "target": "Aquest so no m'agrada gens.",
+        "en": "I don't like this sound at all."
+      },
+      {
+        "target": "És un so de la ciutat.",
+        "en": "It is a sound of the city."
+      }
+    ]
+  },
+  {
+    "slug": "l2-014",
+    "level": "L2",
+    "seq": 14,
+    "titleTarget": "Prendre",
+    "titleEn": "To take",
+    "sentences": [
+      {
+        "target": "Vull prendre un cafè amb llet.",
+        "en": "I want to take a coffee with milk."
+      },
+      {
+        "target": "Ell pren aigua perquè fa calor.",
+        "en": "He takes water because it is hot."
+      },
+      {
+        "target": "El meu germà pren el tren al matí.",
+        "en": "My brother takes the train in the morning."
+      },
+      {
+        "target": "Jo prenc aigua i tu prens te.",
+        "en": "I take water and you take tea."
+      }
+    ]
+  },
+  {
+    "slug": "l2-015",
+    "level": "L2",
+    "seq": 15,
+    "titleTarget": "Coses",
+    "titleEn": "Things",
+    "sentences": [
+      {
+        "target": "Una part de la casa és vella.",
+        "en": "A part of the house is old."
+      },
+      {
+        "target": "La cama em fa molt mal.",
+        "en": "My leg hurts a lot."
+      },
+      {
+        "target": "Quina cosa més estranya!",
+        "en": "What a strange thing!"
+      },
+      {
+        "target": "Veig una cosa a la paret.",
+        "en": "I see a thing on the wall."
+      }
+    ]
+  },
+  {
+    "slug": "l2-016",
+    "level": "L2",
+    "seq": 16,
+    "titleTarget": "La majoria",
+    "titleEn": "The majority",
+    "sentences": [
+      {
+        "target": "La majoria de la gent no ho sap.",
+        "en": "The majority of the people don't know it."
+      },
+      {
+        "target": "A l'escola, la majoria juga al pati.",
+        "en": "At school, the majority play in the yard."
+      },
+      {
+        "target": "La majoria vol tornar aviat.",
+        "en": "The majority want to return early."
+      },
+      {
+        "target": "La majoria va a la ciutat.",
+        "en": "The majority goes to the beach."
+      }
+    ]
+  },
+  {
+    "slug": "l2-017",
+    "level": "L2",
+    "seq": 17,
+    "titleTarget": "Deixar",
+    "titleEn": "To leave",
+    "sentences": [
+      {
+        "target": "Deixa el llibre a la taula.",
+        "en": "Leave the book on the table."
+      },
+      {
+        "target": "Ell no em deixa sortir de nit.",
+        "en": "He does not let me go out at night."
+      },
+      {
+        "target": "He deixat el cotxe al carrer.",
+        "en": "I have left the car in the street."
+      },
+      {
+        "target": "Sempre ho deixo a casa.",
+        "en": "I always leave it here."
+      }
+    ]
+  },
+  {
+    "slug": "l2-018",
+    "level": "L2",
+    "seq": 18,
+    "titleTarget": "Comptar",
+    "titleEn": "To count",
+    "sentences": [
+      {
+        "target": "El nen sap comptar fins a deu.",
+        "en": "The boy knows how to count to ten."
+      },
+      {
+        "target": "Jo sempre puc comptar amb tu.",
+        "en": "I can always count on you."
+      },
+      {
+        "target": "La mare compta els diners.",
+        "en": "The mother counts the money."
+      },
+      {
+        "target": "Compto amb la teva mare.",
+        "en": "I count on your mother."
+      }
+    ]
+  },
+  {
+    "slug": "l2-019",
+    "level": "L2",
+    "seq": 19,
+    "titleTarget": "Potser",
+    "titleEn": "Maybe",
+    "sentences": [
+      {
+        "target": "Potser demà plourà.",
+        "en": "Maybe tomorrow it will rain."
+      },
+      {
+        "target": "El pare potser arribarà tard.",
+        "en": "The father will perhaps arrive late."
+      },
+      {
+        "target": "Potser no és una bona idea.",
+        "en": "Maybe it is not a good idea."
+      },
+      {
+        "target": "Potser plou a la tarda.",
+        "en": "Maybe it rains in the afternoon."
+      }
+    ]
+  },
+  {
+    "slug": "l2-020",
+    "level": "L2",
+    "seq": 20,
+    "titleTarget": "El rei",
+    "titleEn": "The king",
+    "sentences": [
+      {
+        "target": "L'estat té un rei.",
+        "en": "The state has a king."
+      },
+      {
+        "target": "Al final, el rei cau.",
+        "en": "At the end, the king falls."
+      },
+      {
+        "target": "L'home s'anomena rei.",
+        "en": "The man is called king."
+      },
+      {
+        "target": "La mort del rei és el final.",
+        "en": "The death of the king is the end."
+      }
+    ]
+  },
+  {
+    "slug": "l2-021",
+    "level": "L2",
+    "seq": 21,
+    "titleTarget": "El grup",
+    "titleEn": "The group",
+    "sentences": [
+      {
+        "target": "Aquest grup tracta un tema general.",
+        "en": "This group deals with a general topic."
+      },
+      {
+        "target": "Ell és l'únic que pot servir aigua.",
+        "en": "He is the only one who can serve water."
+      },
+      {
+        "target": "El general serveix a l'estat.",
+        "en": "The general serves the state."
+      },
+      {
+        "target": "El grup tracta de ser fort.",
+        "en": "The group tries to be strong."
+      }
+    ]
+  },
+  {
+    "slug": "l2-022",
+    "level": "L2",
+    "seq": 22,
+    "titleTarget": "El vol",
+    "titleEn": "The flight",
+    "sentences": [
+      {
+        "target": "Cal trobar el cos al bosc.",
+        "en": "It is necessary to find the body in the forest."
+      },
+      {
+        "target": "El vol principal surt aviat.",
+        "en": "The main flight leaves early."
+      },
+      {
+        "target": "La banda toca al final del carrer.",
+        "en": "The band plays at the end of the street."
+      },
+      {
+        "target": "Cal anar a la banda principal.",
+        "en": "We must go to the main band."
+      }
+    ]
+  },
+  {
+    "slug": "l2-023",
+    "level": "L2",
+    "seq": 23,
+    "titleTarget": "El problema",
+    "titleEn": "The problem",
+    "sentences": [
+      {
+        "target": "Quin tipus de problema tenim?",
+        "en": "What type of problem do we have?"
+      },
+      {
+        "target": "El professor presenta un problema difícil.",
+        "en": "The teacher presents a difficult problem."
+      },
+      {
+        "target": "No em permeten rebre visites a l'hospital.",
+        "en": "They don't allow me to receive visits at the hospital."
+      },
+      {
+        "target": "Rebo un tipus de carta especial.",
+        "en": "I receive a special type of letter."
+      }
+    ]
+  },
+  {
+    "slug": "l2-024",
+    "level": "L2",
+    "seq": 24,
+    "titleTarget": "L'obra",
+    "titleEn": "The construction work",
+    "sentences": [
+      {
+        "target": "El meu propi germà vol matar l'animal.",
+        "en": "My own brother wants to kill the animal."
+      },
+      {
+        "target": "Aquesta obra canvia tot el sistema.",
+        "en": "This construction changes the whole system."
+      },
+      {
+        "target": "Considerem que l'obra és bona.",
+        "en": "We consider that the work is good."
+      },
+      {
+        "target": "El sistema propi funciona bé.",
+        "en": "The own system works well."
+      }
+    ]
+  },
+  {
+    "slug": "l2-025",
+    "level": "L2",
+    "seq": 25,
+    "titleTarget": "La resta",
+    "titleEn": "The rest",
+    "sentences": [
+      {
+        "target": "El cotxe antic guanya la cursa.",
+        "en": "The old car wins the race."
+      },
+      {
+        "target": "No m'agrada un cotxe tal.",
+        "en": "I don't like such a car."
+      },
+      {
+        "target": "La resta pot convertir aigua en vi.",
+        "en": "The rest can convert water into wine."
+      },
+      {
+        "target": "Vull guanyar tota la resta.",
+        "en": "I want to win all the rest."
+      }
+    ]
+  },
+  {
+    "slug": "l2-026",
+    "level": "L2",
+    "seq": 26,
+    "titleTarget": "L'edifici",
+    "titleEn": "The building",
+    "sentences": [
+      {
+        "target": "L'home ha de crear un edifici alt.",
+        "en": "The man has to create a tall building."
+      },
+      {
+        "target": "La segona porta ens fa aturar aquí.",
+        "en": "The second door makes us stop here."
+      },
+      {
+        "target": "Mantenim l'edifici obert tot l'any.",
+        "en": "We keep the building open all year."
+      },
+      {
+        "target": "Atura la segona persona.",
+        "en": "Stop the second person."
+      }
+    ]
+  },
+  {
+    "slug": "l2-027",
+    "level": "L2",
+    "seq": 27,
+    "titleTarget": "El servei",
+    "titleEn": "The service",
+    "sentences": [
+      {
+        "target": "La dona continua amb el servei.",
+        "en": "The woman continues with the service."
+      },
+      {
+        "target": "Formar un equip no és fàcil.",
+        "en": "To form a team is not easy."
+      },
+      {
+        "target": "Hem d'intentar canviar la ciutat aviat.",
+        "en": "We must try to change the city soon."
+      },
+      {
+        "target": "Canviar no és fàcil, però ho intento.",
+        "en": "Changing is not easy, but I try."
+      }
+    ]
+  },
+  {
+    "slug": "l2-028",
+    "level": "L2",
+    "seq": 28,
+    "titleTarget": "L'empresa",
+    "titleEn": "The company",
+    "sentences": [
+      {
+        "target": "L'empresa del sud té una zona oberta.",
+        "en": "The company from the south has an open area."
+      },
+      {
+        "target": "Puc enviar un missatge divers.",
+        "en": "I can send a diverse message."
+      },
+      {
+        "target": "La zona del sud és molt gran.",
+        "en": "The southern area is very big."
+      },
+      {
+        "target": "L'empresa enviarà el paquet.",
+        "en": "The company will send the package."
+      }
+    ]
+  },
+  {
+    "slug": "l2-029",
+    "level": "L2",
+    "seq": 29,
+    "titleTarget": "L'equip",
+    "titleEn": "The team",
+    "sentences": [
+      {
+        "target": "El germà major juga en un equip gran.",
+        "en": "The older brother plays in a big team."
+      },
+      {
+        "target": "La parella arriba al centre del pas.",
+        "en": "The couple arrives at the center of the crossing."
+      },
+      {
+        "target": "L'equip dona un gran pas endavant.",
+        "en": "The team takes a great step forward."
+      },
+      {
+        "target": "La meva parella és major que jo.",
+        "en": "My partner is older than me."
+      }
+    ]
+  },
+  {
+    "slug": "l2-030",
+    "level": "L2",
+    "seq": 30,
+    "titleTarget": "El govern",
+    "titleEn": "The government",
+    "sentences": [
+      {
+        "target": "La relació amb el govern és clau.",
+        "en": "The relationship with the government is key."
+      },
+      {
+        "target": "El dret de lluitar és bo.",
+        "en": "The right to fight is good."
+      },
+      {
+        "target": "Tinc una idea dreta sobre la relació.",
+        "en": "I have a straight idea about the relationship."
+      },
+      {
+        "target": "El govern lluita per tenir una bona relació.",
+        "en": "The government fights to have a good relationship."
+      }
+    ]
+  }
+]

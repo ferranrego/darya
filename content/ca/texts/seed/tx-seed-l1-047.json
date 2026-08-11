@@ -1,0 +1,135 @@
+{
+  "id": "tx-seed-l1-047",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El got és ple.",
+      "en": "The glass is full.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "got",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "ple",
+          "lexemeId": "lx-1867"
+        }
+      ]
+    },
+    {
+      "target": "Nosaltres volem sopar avui.",
+      "en": "We want to have supper today.",
+      "tokens": [
+        {
+          "surface": "Nosaltres",
+          "lexemeId": "lx-0244"
+        },
+        {
+          "surface": "volem",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "sopar",
+          "lexemeId": "lx-0473"
+        },
+        {
+          "surface": "avui",
+          "lexemeId": "lx-0259"
+        }
+      ]
+    },
+    {
+      "target": "El plat està buit.",
+      "en": "The plate is empty.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "plat",
+          "lexemeId": "lx-0921"
+        },
+        {
+          "surface": "està",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "buit",
+          "lexemeId": "lx-4363"
+        }
+      ]
+    },
+    {
+      "target": "Jo vull un ou i peix.",
+      "en": "I want an egg and fish.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "ou",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "peix",
+          "lexemeId": "lx-0296"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0033",
+    "lx-0037",
+    "lx-0038",
+    "lx-0060",
+    "lx-0063",
+    "lx-0136",
+    "lx-0240",
+    "lx-0244",
+    "lx-0259",
+    "lx-0296",
+    "lx-0301",
+    "lx-0473",
+    "lx-0921",
+    "lx-1867",
+    "lx-4363"
+  ],
+  "newWords": [
+    "lx-0296",
+    "lx-0301",
+    "lx-0473",
+    "lx-0921",
+    "lx-1867",
+    "lx-4363"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 47
+}

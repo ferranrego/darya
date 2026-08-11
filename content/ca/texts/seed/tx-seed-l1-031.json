@@ -1,0 +1,134 @@
+{
+  "id": "tx-seed-l1-031",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Jo compro un cotxe roig.",
+      "en": "I buy a red car.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "compro",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "roig",
+          "lexemeId": "lx-4368"
+        }
+      ]
+    },
+    {
+      "target": "La dona neteja la casa.",
+      "en": "The woman cleans the house.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "dona",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "neteja",
+          "lexemeId": "lx-0375"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    },
+    {
+      "target": "El carrer és estret.",
+      "en": "The street is narrow.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "carrer",
+          "lexemeId": "lx-0094"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "estret",
+          "lexemeId": "lx-2827"
+        }
+      ]
+    },
+    {
+      "target": "Aquest llibre és car.",
+      "en": "This book is expensive.",
+      "tokens": [
+        {
+          "surface": "Aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "llibre",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "car",
+          "lexemeId": "lx-0648"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0064",
+    "lx-0069",
+    "lx-0071",
+    "lx-0094",
+    "lx-0096",
+    "lx-0100",
+    "lx-0118",
+    "lx-0240",
+    "lx-0375",
+    "lx-0648",
+    "lx-2827",
+    "lx-4368"
+  ],
+  "newWords": [
+    "lx-0118",
+    "lx-0375",
+    "lx-0648",
+    "lx-2827",
+    "lx-4368"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 31
+}

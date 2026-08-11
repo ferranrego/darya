@@ -1,0 +1,150 @@
+{
+  "id": "tx-seed-l2-020",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El rei",
+  "titleEn": "The king",
+  "sentences": [
+    {
+      "target": "L'estat té un rei.",
+      "en": "The state has a king.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estat",
+          "lexemeId": "lx-1257"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "rei",
+          "lexemeId": "lx-4370"
+        }
+      ]
+    },
+    {
+      "target": "Al final, el rei cau.",
+      "en": "At the end, the king falls.",
+      "tokens": [
+        {
+          "surface": "Al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "final",
+          "lexemeId": "lx-4208"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "rei",
+          "lexemeId": "lx-4370"
+        },
+        {
+          "surface": "cau",
+          "lexemeId": "lx-0145"
+        }
+      ]
+    },
+    {
+      "target": "L'home s'anomena rei.",
+      "en": "The man is called king.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "home",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "s'",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "anomena",
+          "lexemeId": "lx-4412"
+        },
+        {
+          "surface": "rei",
+          "lexemeId": "lx-4370"
+        }
+      ]
+    },
+    {
+      "target": "La mort del rei és el final.",
+      "en": "The death of the king is the end.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mort",
+          "lexemeId": "lx-4210"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "rei",
+          "lexemeId": "lx-4370"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "final",
+          "lexemeId": "lx-4208"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0009",
+    "lx-0022",
+    "lx-0023",
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0054",
+    "lx-0070",
+    "lx-0145",
+    "lx-1257",
+    "lx-4208",
+    "lx-4210",
+    "lx-4370",
+    "lx-4412"
+  ],
+  "newWords": [
+    "lx-0070",
+    "lx-1257",
+    "lx-4208",
+    "lx-4210",
+    "lx-4370",
+    "lx-4412"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 20
+}

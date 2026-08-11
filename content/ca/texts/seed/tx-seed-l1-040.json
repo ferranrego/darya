@@ -1,0 +1,142 @@
+{
+  "id": "tx-seed-l1-040",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "L'amor és bo.",
+      "en": "Love is good.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "amor",
+          "lexemeId": "lx-0600"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "bo",
+          "lexemeId": "lx-0215"
+        }
+      ]
+    },
+    {
+      "target": "Jo tinc molta son.",
+      "en": "I am very sleepy.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "tinc",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "molta",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "son",
+          "lexemeId": "lx-0132"
+        }
+      ]
+    },
+    {
+      "target": "Jo no tinc por.",
+      "en": "I have no fear.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "tinc",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "por",
+          "lexemeId": "lx-0604"
+        }
+      ]
+    },
+    {
+      "target": "El gos és tranquil.",
+      "en": "The dog is calm.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gos",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "tranquil",
+          "lexemeId": "lx-2181"
+        }
+      ]
+    },
+    {
+      "target": "Ell té gana.",
+      "en": "He is hungry.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "gana",
+          "lexemeId": "lx-0005"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0005",
+    "lx-0031",
+    "lx-0038",
+    "lx-0039",
+    "lx-0052",
+    "lx-0054",
+    "lx-0132",
+    "lx-0215",
+    "lx-0240",
+    "lx-0242",
+    "lx-0330",
+    "lx-0600",
+    "lx-0604",
+    "lx-2181"
+  ],
+  "newWords": [
+    "lx-0005",
+    "lx-0132",
+    "lx-0600",
+    "lx-0604",
+    "lx-2181"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 40
+}

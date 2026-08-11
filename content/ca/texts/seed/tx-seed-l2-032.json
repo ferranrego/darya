@@ -1,0 +1,105 @@
+{
+  "id": "tx-seed-l2-032",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El pla suposa que la població vol casar-se.",
+      "en": "The plan supposes that the population wants to marry.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pla",
+          "lexemeId": "lx-0864"
+        },
+        {
+          "surface": "suposa",
+          "lexemeId": "lx-0819"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "població",
+          "lexemeId": "lx-1438"
+        },
+        {
+          "surface": "vol",
+          "lexemeId": "lx-1007"
+        },
+        {
+          "surface": "casar",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "se",
+          "lexemeId": "lx-0009"
+        }
+      ]
+    },
+    {
+      "target": "Falta una mica d'aigua.",
+      "en": "A little water is missing.",
+      "tokens": [
+        {
+          "surface": "Falta",
+          "lexemeId": "lx-0511"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "mica",
+          "lexemeId": "lx-4106"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0009",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0035",
+    "lx-0042",
+    "lx-0079",
+    "lx-0354",
+    "lx-0511",
+    "lx-0819",
+    "lx-0864",
+    "lx-1007",
+    "lx-1438",
+    "lx-4106"
+  ],
+  "newWords": [
+    "lx-0354",
+    "lx-0511",
+    "lx-0819",
+    "lx-0864",
+    "lx-1438",
+    "lx-4106"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 32
+}

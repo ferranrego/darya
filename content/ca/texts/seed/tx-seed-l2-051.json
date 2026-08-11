@@ -1,0 +1,67 @@
+{
+  "id": "tx-seed-l2-051",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La sala especial estableix una posició de seguretat.",
+      "en": "The special room establishes a position of security.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "sala",
+          "lexemeId": "lx-0701"
+        },
+        {
+          "surface": "especial",
+          "lexemeId": "lx-4408"
+        },
+        {
+          "surface": "estableix",
+          "lexemeId": "lx-4312"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "posició",
+          "lexemeId": "lx-4399"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "seguretat",
+          "lexemeId": "lx-0808"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0032",
+    "lx-0042",
+    "lx-0701",
+    "lx-0808",
+    "lx-4312",
+    "lx-4399",
+    "lx-4408"
+  ],
+  "newWords": [
+    "lx-0701",
+    "lx-0808",
+    "lx-4312",
+    "lx-4399"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 51
+}

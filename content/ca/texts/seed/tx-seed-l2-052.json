@@ -1,0 +1,125 @@
+{
+  "id": "tx-seed-l2-052",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El metge veu sang a l'interior.",
+      "en": "The doctor sees blood on the inside.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "metge",
+          "lexemeId": "lx-0407"
+        },
+        {
+          "surface": "veu",
+          "lexemeId": "lx-2948"
+        },
+        {
+          "surface": "sang",
+          "lexemeId": "lx-0724"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "interior",
+          "lexemeId": "lx-4396"
+        }
+      ]
+    },
+    {
+      "target": "Ell vol realitzar un bon treball.",
+      "en": "He wants to carry out a good work.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "vol",
+          "lexemeId": "lx-1007"
+        },
+        {
+          "surface": "realitzar",
+          "lexemeId": "lx-0781"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "bon",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "treball",
+          "lexemeId": "lx-0533"
+        }
+      ]
+    },
+    {
+      "target": "Agafa una eina petita.",
+      "en": "He takes a small tool.",
+      "tokens": [
+        {
+          "surface": "Agafa",
+          "lexemeId": "lx-1616"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "eina",
+          "lexemeId": "lx-1562"
+        },
+        {
+          "surface": "petita",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0034",
+    "lx-0037",
+    "lx-0042",
+    "lx-0215",
+    "lx-0218",
+    "lx-0242",
+    "lx-0407",
+    "lx-0533",
+    "lx-0724",
+    "lx-0781",
+    "lx-1007",
+    "lx-1562",
+    "lx-1616",
+    "lx-2948",
+    "lx-4396"
+  ],
+  "newWords": [
+    "lx-0407",
+    "lx-0533",
+    "lx-0724",
+    "lx-0781",
+    "lx-1562",
+    "lx-4396"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 52
+}

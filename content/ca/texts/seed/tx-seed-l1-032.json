@@ -1,0 +1,130 @@
+{
+  "id": "tx-seed-l1-032",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Jo vull sortir avui.",
+      "en": "I want to go out today.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "sortir",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "avui",
+          "lexemeId": "lx-0259"
+        }
+      ]
+    },
+    {
+      "target": "Ell entra a la casa.",
+      "en": "He enters the house.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "entra",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    },
+    {
+      "target": "El cavall és gran.",
+      "en": "The horse is big.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cavall",
+          "lexemeId": "lx-0955"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "Jo pujo i camino.",
+      "en": "I go up and walk.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "pujo",
+          "lexemeId": "lx-0184"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "camino",
+          "lexemeId": "lx-0201"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0038",
+    "lx-0060",
+    "lx-0069",
+    "lx-0184",
+    "lx-0197",
+    "lx-0198",
+    "lx-0201",
+    "lx-0217",
+    "lx-0240",
+    "lx-0242",
+    "lx-0259",
+    "lx-0955"
+  ],
+  "newWords": [
+    "lx-0184",
+    "lx-0197",
+    "lx-0198",
+    "lx-0201",
+    "lx-0955"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 32
+}

@@ -1,0 +1,160 @@
+{
+  "id": "tx-seed-l2-017",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Deixar",
+  "titleEn": "To leave",
+  "sentences": [
+    {
+      "target": "Deixa el llibre a la taula.",
+      "en": "Leave the book on the table.",
+      "tokens": [
+        {
+          "surface": "Deixa",
+          "lexemeId": "lx-0109"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "llibre",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "taula",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "Ell no em deixa sortir de nit.",
+      "en": "He does not let me go out at night.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "em",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "deixa",
+          "lexemeId": "lx-0109"
+        },
+        {
+          "surface": "sortir",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "nit",
+          "lexemeId": "lx-0084"
+        }
+      ]
+    },
+    {
+      "target": "He deixat el cotxe al carrer.",
+      "en": "I have left the car in the street.",
+      "tokens": [
+        {
+          "surface": "He",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "deixat",
+          "lexemeId": "lx-0109"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "carrer",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "Sempre ho deixo a casa.",
+      "en": "I always leave it here.",
+      "tokens": [
+        {
+          "surface": "Sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "ho",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "deixo",
+          "lexemeId": "lx-0109"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0014",
+    "lx-0022",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0039",
+    "lx-0062",
+    "lx-0069",
+    "lx-0084",
+    "lx-0094",
+    "lx-0096",
+    "lx-0097",
+    "lx-0100",
+    "lx-0109",
+    "lx-0197",
+    "lx-0242",
+    "lx-0257"
+  ],
+  "newWords": [
+    "lx-0096",
+    "lx-0097",
+    "lx-0109",
+    "lx-0197"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 17
+}

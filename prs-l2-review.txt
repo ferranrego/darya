@@ -1,0 +1,354 @@
+26 texts, prs
+
+[l2-009  seq 9  scene (unclassified)]
+  این جای خوبی است.
+  This is a good place.
+  زبان این کشور دری است.
+  The language of this country is Dari.
+  من باید در این مورد بدانم.
+  I must know about this case.
+  او باید به این جای برود.
+  He must go to this place.
+  introduces: است (is), خوب (good, well), دری (Dari (language)), زبان (language; tongue), رفتن (to go), دانستن (to know), کشور (country), جای (place), باید (must, should), مورد (case, subject)
+  reuses:     (none)
+
+[l2-010  seq 10  scene (unclassified)]
+  من قبل از تو به قرار می‌رسم.
+  I arrive at the appointment before you.
+  حال او بسیار مهم است.
+  His condition is very important.
+  او فقط یک قرار دارد.
+  He only has one appointment.
+  قبل از این، حال او بد بود.
+  Before this, his condition was bad.
+  introduces: بد (bad), داشتن (to have), بودن (to be), فقط (only, just), قبل (before), قرار (appointment, agreement), حال (condition, state), رسیدن (to arrive), مهم (important)
+  reuses:     است
+
+[l2-011  seq 11  scene "People & Identity"]
+  یک خبر تازه در راه است.
+  Fresh news is on the way.
+  مرد دوباره حرف می‌زند.
+  The man talks again.
+  ما در شهر می‌گردیم.
+  We stroll in the city.
+  این حرف دوباره تازه می‌شود.
+  This word becomes fresh again.
+  introduces: مرد (man), شهر (city), شدن (to become), تازه (fresh; new), خبر (news), حرف (word, talk), دوباره (again), گشتن (to turn, to stroll), راه (way/path)
+  reuses:     است
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1, #3
+
+[l2-012  seq 12  scene (unclassified)]
+  شاید او فوتبال بازی کند.
+  Maybe he plays football.
+  البته این عکس خوب است.
+  Of course, this photo is good.
+  من یک عکس به خاطر تو می‌گیرم.
+  I take a photo for your sake.
+  البته این عکس قدیمی است.
+  Of course, this photo is old.
+  البته این عکس کلان است.
+  Of course, this photo is big.
+  introduces: کلان (big, large), کردن (to do, to make), گرفتن (to take, to get), بازی (game, play), فوتبال (football, soccer), عکس (photo, picture), قدیمی (ancient, old), شاید (maybe, perhaps), خاطر (sake, mind), البته (of course, certainly)
+  reuses:     است, خوب
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1
+
+[l2-013  seq 13  scene "Nature & Environment"]
+  آقای احمد صحبت می‌کند.
+  Mr. Ahmad talks.
+  باد می‌دمد و هوا سرد است.
+  The wind blows and the weather is cold.
+  باد می‌دمد.
+  The wind blows.
+  اسم او در تاریخ می‌ماند.
+  His name remains in history.
+  اسم او در تاریخ است.
+  His name is in history.
+  این صحبت برای آقای احمد است.
+  This conversation is for Mr. Ahmad.
+  introduces: سرد (cold), هوا (weather; air), ماندن (to stay, to remain), تاریخ (history; date), صحبت (conversation, talk), آقای (Mr., gentleman), اسم (name), دمیدن (to blow, to breathe into), باد (wind), احمد (Ahmad (name))
+  reuses:     است, کردن
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1
+
+[l2-014  seq 14  scene "People & Identity"]
+  واقعاً این آدم کوچک است.
+  Really, this person is small.
+  آدم زنده باید کار کند.
+  An alive person must work.
+  این برای او بهتر است.
+  This is better for him.
+  واقعاً کار بهتر است.
+  Really, work is better.
+  introduces: کار (work, job), واقعاً (really), آدم (person, human), زنده (alive), بهتر (better), کوچک (small)
+  reuses:     است, کردن, باید
+
+[l2-015  seq 15  scene "Family & Relationships"]
+  یک اتفاق کلان می‌افتد.
+  A big event happens.
+  اتفاق خوبی بود.
+  It was a good event.
+  خانم یک نامه می‌فرستد.
+  The lady sends a letter.
+  خانم آن را می‌فرستد.
+  The lady sends it.
+  او از خانم مشهور می‌آموزد.
+  He learns from the famous lady.
+  این خانم بسیار مشهور است.
+  This lady is very famous.
+  introduces: مشهور (famous), خانم (lady, Ms., wife), اتفاق (event, occurrence), فرستادن (to send), آموختن (to learn, to teach), نامه (letter (written))
+  reuses:     است, خوب, کلان, بودن
+  ✗ unresolved word(s): می‌افتد - build:texts will fail on these
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+[l2-016  seq 16  scene "Nature & Environment"]
+  رئیس در کشتی است.
+  The boss is on the ship.
+  او قند را می‌اندازد.
+  He throws the sugar.
+  مرد درخت می‌کارد.
+  The man plants a tree.
+  رئیس کشتی کلان است.
+  The ship's boss is big.
+  introduces: قند (sugar (lump)), درخت (tree), انداختن (to throw), کاشتن (to plant), رئیس (boss/president), کشتی (ship/boat)
+  reuses:     است, مرد, کلان
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2, #3
+
+[l2-017  seq 17  scene "Food & Drink"]
+  او امشب این مود را می‌پذیرد.
+  He accepts this fashion tonight.
+  خون در دست او است.
+  Blood is on his hand.
+  خون او سرخ است.
+  His blood is red.
+  این نان خوش‌مزه است.
+  This bread is tasty.
+  امشب این را می‌پذیرم.
+  Tonight I accept this.
+  introduces: نان (bread; food, meal), خوش‌مزه (tasty, delicious), دست (hand; arm), سرخ (red), امشب (tonight), پذیرفتن (to accept), خون (blood), مود (fashion)
+  reuses:     است
+
+[l2-018  seq 18  scene (unclassified)]
+  او در شمال امتحان دارد.
+  He has an exam in the north.
+  او یک شهر قدیمی را می‌نماید.
+  He shows an old city.
+  من پیاده به امتحان می‌روم.
+  I go to the exam on foot.
+  شهر در شمال قدیمی است.
+  The city in the north is old.
+  introduces: پیاده (on foot, walking), امتحان (exam, test), نمودن (to show, to do), شمال (north)
+  reuses:     است, شهر, رفتن, داشتن, قدیمی
+
+[l2-019  seq 19  scene "Food & Drink"]
+  در جنوب، قانون زیبا است.
+  In the south, the law is beautiful.
+  او آب را می‌ریزد.
+  He pours the water.
+  مرد به هوش می‌آید.
+  The man regains consciousness.
+  قانون جنوب خوب است.
+  The law of the south is good.
+  introduces: آب (water), آمدن (to come), قانون (law), زیبا (beautiful), ریختن (to pour), جنوب (south), هوش (intelligence)
+  reuses:     است, مرد, خوب
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2, #3
+
+[l2-020  seq 20  scene "Emotions & Feelings"]
+  ما به صبر و صلح می‌رسیم.
+  We arrive at patience and peace.
+  ما با صبر به صلح می‌رویم.
+  We go to peace with patience.
+  او یک اپلیکیشن را می‌نامد.
+  He names an application.
+  او از دست آنها می‌رهد.
+  He escapes from their hands.
+  او با اپلیکیشن صلح می‌کند.
+  He makes peace with the application.
+  introduces: صلح (peace), صبر (patience), رستن (to escape, to be saved), نامیدن (to name), اپلیکیشن (application)
+  reuses:     رفتن, کردن, دست, رسیدن
+
+[l2-021  seq 21  scene "Clothing & Fashion"]
+  چقدر در جشن سوال است؟
+  How many questions are in the celebration?
+  زنگ می‌زند.
+  The bell rings.
+  یک چیز می‌سوزد.
+  A thing burns.
+  آن در جشن می‌سوزد.
+  It burns in the celebration.
+  چقدر زنگ می‌زند؟
+  How much does it ring?
+  introduces: چیز (thing), سوال (question), جشن (celebration, festival), چقدر (how much), زنگ (bell, ring), سوختن (to burn)
+  reuses:     است
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1, #2, #4
+
+[l2-022  seq 22  scene "Emotions & Feelings"]
+  مهمان عشق خود را می‌بازد.
+  The guest loses his love.
+  او یک موتر می‌دزدد.
+  He steals a car.
+  من او را به شهر می‌رسانم.
+  I deliver him to the city.
+  مهمان موتر را می‌دزدد.
+  The guest steals the car.
+  introduces: موتر (car), مهمان (guest), دزدیدن (to steal), رساندن (to cause to arrive, to deliver), باختن (to lose (game/money)), عشق (love)
+  reuses:     شهر
+
+[l2-023  seq 23  scene (unclassified)]
+  من موی او را می‌شمارم.
+  I count his hair.
+  غرب یک دلیل دارد.
+  The west has a reason.
+  وطن من در غرب است.
+  My homeland is in the west.
+  به این دلیل، وطن مهم است.
+  For this reason, homeland is important.
+  introduces: وطن (homeland), شمردن (to count), مو (hair), غرب (west), دلیل (reason)
+  reuses:     است, داشتن, مهم
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1
+
+[l2-024  seq 24  scene (unclassified)]
+  کارمند در شرق نیاز به متر دارد.
+  The employee in the east needs a tape measure.
+  چوب می‌پوسد.
+  The wood rots.
+  این درخت می‌پوسد.
+  This tree rots.
+  کارمند در شرق کار می‌کند.
+  The employee works in the east.
+  introduces: کارمند (employee, worker), پوسیدن (to rot), شرق (east), متر (tape measure), نیاز (need)
+  reuses:     کار, داشتن, کردن, درخت
+  ✗ unresolved word(s): چوب - build:texts will fail on these
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1
+
+[l2-025  seq 25  scene (unclassified)]
+  مسیر پایتخت کلان است.
+  The capital route is big.
+  عزیزم، فرهنگ ما خوب است.
+  My dear, our culture is good.
+  او کار را به من می‌سپارد.
+  He entrusts the work to me.
+  مسیر پایتخت زیبا است.
+  The capital route is beautiful.
+  introduces: پایتخت (capital city), فرهنگ (culture), عزیزم (my dear), سپردن (to entrust), مسیر (route)
+  reuses:     است, خوب, کلان, کار, زیبا
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #3
+
+[l2-026  seq 26  scene (unclassified)]
+  این قسمت از عملیات مهم است.
+  This episode of the surgery is important.
+  من یک انار می‌خواهم.
+  I want a pomegranate.
+  از شرکت یک خواهش دارم.
+  I have a request from the company.
+  شرکت انار می‌خرد.
+  The company buys pomegranate.
+  introduces: خواستن (to want), انار (pomegranate), خریدن (to buy), خواهش (request), عملیات (surgery), قسمت (episode), شرکت (company)
+  reuses:     است, داشتن, مهم
+
+[l2-027  seq 27  scene (unclassified)]
+  محافظ تغییر را می‌جوید.
+  The guard seeks the change.
+  مامان به پرواز می‌رود.
+  Mom goes to the flight.
+  محافظ مامان را می‌جوید.
+  The guard seeks mom.
+  پرواز تغییر می‌کند.
+  The flight changes.
+  introduces: مامان (mom), جستن (to seek, to search), محافظ (guard), پرواز (flight), تغییر (change)
+  reuses:     رفتن, کردن
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #3
+
+[l2-028  seq 28  scene "Home & Furniture"]
+  مدیر یک انتخاب لعنتی می‌کند.
+  The manager makes a damn choice.
+  مامور به ساختمان می‌رود.
+  The official goes to the building.
+  انتخاب مدیر ساختمان مهم است.
+  The building manager's choice is important.
+  ساختمان کلان است.
+  The building is big.
+  introduces: لعنتی (damn, cursed), مامور (official/employee), مدیر (manager/principal), ساختمان (building), انتخاب (choice)
+  reuses:     است, کلان, رفتن, کردن, مهم
+
+[l2-029  seq 29  scene (unclassified)]
+  بانک چند کیلومتر دور است؟
+  How many kilometers away is the bank?
+  روی پل نقشه را می‌بینم.
+  On the bridge I see the map.
+  او یک مرض دارد.
+  He has a disease.
+  پل تا بانک یک کیلومتر است.
+  The bridge to the bank is one kilometer.
+  introduces: دیدن (to see), بانک (bank), پل (bridge), نقشه (map), کیلومتر (kilometer), مرض (disease)
+  reuses:     است, رفتن, داشتن
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1
+
+[l2-030  seq 30  scene "Emotions & Feelings"]
+  در این فصل، فاصله کم است.
+  In this season, the distance is short.
+  مرد با اره کار می‌کند.
+  The man works with the saw.
+  در مه، او می‌گرید.
+  In the fog, he cries.
+  این فصل مه دارد.
+  This season has fog.
+  introduces: گریستن (to cry), فاصله (distance), مه (fog), فصل (season), اره (saw)
+  reuses:     است, مرد, کار, داشتن, کردن
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1
+
+[l2-031  seq 31  scene "Colors & Shapes"]
+  دستگاه خراب در میدان است.
+  The broken device is in the square.
+  او یک گزارش می‌دهد.
+  He gives a report.
+  درجه هوا در میدان بلند است.
+  The degree of weather in the square is high.
+  دستگاه بسیار خراب است.
+  The device is very broken.
+  introduces: دادن (to give), بلند (high, tall; loud), خراب (broken, ruined, bad), میدان (field/square), درجه (degree), دستگاه (device), گزارش (report)
+  reuses:     است, هوا
+  ✗ interference: interference pattern(s) found: می without ZWNJ
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+[l2-032  seq 32  scene "People & Identity"]
+  در عروسی، شعر می‌خوانند.
+  In the wedding, they read poetry.
+  مردم در سینما هستند.
+  The people are in the cinema.
+  او از کار داخلی می‌رنجد.
+  He is offended by domestic work.
+  سینما کار داخلی دارد.
+  The cinema has domestic work.
+  introduces: مردم (people), خواندن (to read; to study; to sing), عروسی (wedding), شعر (poem, poetry), رنجیدن (to be offended), سینما (cinema), داخلی (domestic/internal)
+  reuses:     کار, داشتن, بودن
+
+[l2-033  seq 33  scene (unclassified)]
+  او برای آزادی به ماموریت می‌رود.
+  He goes to the precinct for freedom.
+  مرد خارجی مستقیم راه می‌رود.
+  The foreign man walks straight.
+  رخسار او سرخ است.
+  His cheek is red.
+  ماموریت آزادی مستقیم است.
+  The precinct of freedom is straight.
+  introduces: آزادی (freedom), ماموریت (police station/precinct), خارجی (foreigner/foreign), مستقیم (straight), رخسار (cheek)
+  reuses:     است, مرد, رفتن, سرخ, راه
+
+[l2-034  seq 34  scene "Emotions & Feelings"]
+  شکست همسایه شدید بود.
+  The neighbor's defeat was severe.
+  او هدف را می‌درد.
+  He tears the goal.
+  هدف او شکست همسایه است.
+  His goal is the neighbor's defeat.
+  شکست او شدید است.
+  His defeat is severe.
+  introduces: همسایه (neighbor), دریدن (to tear), شدید (severe), شکست (defeat), هدف (goal)
+  reuses:     است, بودن
+
+new words by part of speech:
+  noun          103
+  verb           39
+  adjective      18
+  adverb          9
+
+3 reject-level defect(s), 14 flagged for review

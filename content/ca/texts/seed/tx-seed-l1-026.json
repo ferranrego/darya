@@ -1,0 +1,127 @@
+{
+  "id": "tx-seed-l1-026",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "La filla",
+  "titleEn": "The daughter",
+  "sentences": [
+    {
+      "target": "El pare diu hola.",
+      "en": "The father says hello.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "diu",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "hola",
+          "lexemeId": "lx-0278"
+        }
+      ]
+    },
+    {
+      "target": "La mare perd la nena.",
+      "en": "The mother loses the girl.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        },
+        {
+          "surface": "perd",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "nena",
+          "lexemeId": "lx-0907"
+        }
+      ]
+    },
+    {
+      "target": "El pare porta aigua.",
+      "en": "The father brings water.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        }
+      ]
+    },
+    {
+      "target": "Jo baixo al carrer.",
+      "en": "I go down to the street.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "baixo",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "carrer",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0031",
+    "lx-0032",
+    "lx-0056",
+    "lx-0079",
+    "lx-0089",
+    "lx-0090",
+    "lx-0094",
+    "lx-0098",
+    "lx-0183",
+    "lx-0185",
+    "lx-0240",
+    "lx-0278",
+    "lx-0907"
+  ],
+  "newWords": [
+    "lx-0056",
+    "lx-0183",
+    "lx-0185",
+    "lx-0907"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 26
+}

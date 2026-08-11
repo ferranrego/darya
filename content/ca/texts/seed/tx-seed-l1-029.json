@@ -1,0 +1,136 @@
+{
+  "id": "tx-seed-l1-029",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Elles donen menjar al nen.",
+      "en": "They give food to the boy.",
+      "tokens": [
+        {
+          "surface": "Elles",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "donen",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "menjar",
+          "lexemeId": "lx-0101"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        }
+      ]
+    },
+    {
+      "target": "Aquests costen molts diners.",
+      "en": "These cost a lot of money.",
+      "tokens": [
+        {
+          "surface": "Aquests",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "costen",
+          "lexemeId": "lx-0147"
+        },
+        {
+          "surface": "molts",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "diners",
+          "lexemeId": "lx-1041"
+        }
+      ]
+    },
+    {
+      "target": "Jo agafo el got.",
+      "en": "I grab the glass.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "agafo",
+          "lexemeId": "lx-1616"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "got",
+          "lexemeId": "lx-0136"
+        }
+      ]
+    },
+    {
+      "target": "Jo pago i ell ven.",
+      "en": "I pay and he sells.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "pago",
+          "lexemeId": "lx-0119"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "ven",
+          "lexemeId": "lx-0650"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0031",
+    "lx-0033",
+    "lx-0052",
+    "lx-0061",
+    "lx-0064",
+    "lx-0078",
+    "lx-0101",
+    "lx-0119",
+    "lx-0136",
+    "lx-0147",
+    "lx-0240",
+    "lx-0242",
+    "lx-0246",
+    "lx-0650",
+    "lx-1041",
+    "lx-1616"
+  ],
+  "newWords": [
+    "lx-0061",
+    "lx-0119",
+    "lx-0147",
+    "lx-0650",
+    "lx-1041",
+    "lx-1616"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 29
+}

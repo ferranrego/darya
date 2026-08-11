@@ -1,0 +1,169 @@
+{
+  "id": "tx-seed-l2-021",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El grup",
+  "titleEn": "The group",
+  "sentences": [
+    {
+      "target": "Aquest grup tracta un tema general.",
+      "en": "This group deals with a general topic.",
+      "tokens": [
+        {
+          "surface": "Aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "grup",
+          "lexemeId": "lx-1625"
+        },
+        {
+          "surface": "tracta",
+          "lexemeId": "lx-4125"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "tema",
+          "lexemeId": "lx-4104"
+        },
+        {
+          "surface": "general",
+          "lexemeId": "lx-4373"
+        }
+      ]
+    },
+    {
+      "target": "Ell és l'únic que pot servir aigua.",
+      "en": "He is the only one who can serve water.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "únic",
+          "lexemeId": "lx-4378"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "pot",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "servir",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        }
+      ]
+    },
+    {
+      "target": "El general serveix a l'estat.",
+      "en": "The general serves the state.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "general",
+          "lexemeId": "lx-4373"
+        },
+        {
+          "surface": "serveix",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estat",
+          "lexemeId": "lx-1257"
+        }
+      ]
+    },
+    {
+      "target": "El grup tracta de ser fort.",
+      "en": "The group tries to be strong.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "grup",
+          "lexemeId": "lx-1625"
+        },
+        {
+          "surface": "tracta",
+          "lexemeId": "lx-4125"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "ser",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fort",
+          "lexemeId": "lx-0486"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0034",
+    "lx-0035",
+    "lx-0037",
+    "lx-0038",
+    "lx-0055",
+    "lx-0064",
+    "lx-0079",
+    "lx-0192",
+    "lx-0242",
+    "lx-0486",
+    "lx-1257",
+    "lx-1625",
+    "lx-4104",
+    "lx-4125",
+    "lx-4373",
+    "lx-4378"
+  ],
+  "newWords": [
+    "lx-0192",
+    "lx-1625",
+    "lx-4104",
+    "lx-4125",
+    "lx-4373",
+    "lx-4378"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 21
+}

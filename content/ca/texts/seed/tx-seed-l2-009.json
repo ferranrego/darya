@@ -1,0 +1,160 @@
+{
+  "id": "tx-seed-l2-009",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El país",
+  "titleEn": "The country",
+  "sentences": [
+    {
+      "target": "El meu país és gran.",
+      "en": "My country is big.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "país",
+          "lexemeId": "lx-0095"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "Hi ha un canvi al país.",
+      "en": "There is a change in the country.",
+      "tokens": [
+        {
+          "surface": "Hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "canvi",
+          "lexemeId": "lx-0656"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "país",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "El canvi és molt bo, però és difícil.",
+      "en": "The change is very good, but it is difficult.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "canvi",
+          "lexemeId": "lx-0656"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "bo",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "difícil",
+          "lexemeId": "lx-0227"
+        }
+      ]
+    },
+    {
+      "target": "M'agrada molt el meu país.",
+      "en": "I like my country a lot.",
+      "tokens": [
+        {
+          "surface": "M'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agrada",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "país",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0013",
+    "lx-0022",
+    "lx-0031",
+    "lx-0037",
+    "lx-0038",
+    "lx-0051",
+    "lx-0052",
+    "lx-0062",
+    "lx-0095",
+    "lx-0209",
+    "lx-0215",
+    "lx-0217",
+    "lx-0227",
+    "lx-0248",
+    "lx-0656"
+  ],
+  "newWords": [
+    "lx-0095",
+    "lx-0215",
+    "lx-0656"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 9
+}

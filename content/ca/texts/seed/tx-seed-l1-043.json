@@ -1,0 +1,124 @@
+{
+  "id": "tx-seed-l1-043",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El joc és difícil.",
+      "en": "The game is difficult.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "joc",
+          "lexemeId": "lx-0319"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "difícil",
+          "lexemeId": "lx-0227"
+        }
+      ]
+    },
+    {
+      "target": "La festa és avui.",
+      "en": "The party is today.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "festa",
+          "lexemeId": "lx-0320"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "avui",
+          "lexemeId": "lx-0259"
+        }
+      ]
+    },
+    {
+      "target": "Ell canta molt bé.",
+      "en": "He sings very well.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "canta",
+          "lexemeId": "lx-0203"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        }
+      ]
+    },
+    {
+      "target": "El nen està cansat.",
+      "en": "The boy is tired.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "està",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "cansat",
+          "lexemeId": "lx-0003"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0052",
+    "lx-0063",
+    "lx-0078",
+    "lx-0203",
+    "lx-0227",
+    "lx-0242",
+    "lx-0259",
+    "lx-0319",
+    "lx-0320"
+  ],
+  "newWords": [
+    "lx-0003",
+    "lx-0203",
+    "lx-0227",
+    "lx-0319",
+    "lx-0320"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 43
+}

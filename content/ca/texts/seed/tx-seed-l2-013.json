@@ -1,0 +1,167 @@
+{
+  "id": "tx-seed-l2-013",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El so",
+  "titleEn": "The sound",
+  "sentences": [
+    {
+      "target": "Sento un so al carrer.",
+      "en": "I hear a sound in the street.",
+      "tokens": [
+        {
+          "surface": "Sento",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "so",
+          "lexemeId": "lx-0635"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "carrer",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "El so és fort, però no tinc por.",
+      "en": "The sound is strong, but I am not afraid.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "so",
+          "lexemeId": "lx-0635"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fort",
+          "lexemeId": "lx-0486"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "tinc",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "por",
+          "lexemeId": "lx-0604"
+        }
+      ]
+    },
+    {
+      "target": "Aquest so no m'agrada gens.",
+      "en": "I don't like this sound at all.",
+      "tokens": [
+        {
+          "surface": "Aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "so",
+          "lexemeId": "lx-0635"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "m'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agrada",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "gens",
+          "lexemeId": "lx-0855"
+        }
+      ]
+    },
+    {
+      "target": "És un so de la ciutat.",
+      "en": "It is a sound of the city.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "so",
+          "lexemeId": "lx-0635"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0022",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0039",
+    "lx-0051",
+    "lx-0054",
+    "lx-0064",
+    "lx-0093",
+    "lx-0094",
+    "lx-0113",
+    "lx-0209",
+    "lx-0486",
+    "lx-0604",
+    "lx-0635",
+    "lx-0855"
+  ],
+  "newWords": [
+    "lx-0093",
+    "lx-0094",
+    "lx-0113",
+    "lx-0486",
+    "lx-0604",
+    "lx-0635",
+    "lx-0855"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 13
+}

@@ -1,0 +1,73 @@
+{
+  "id": "tx-seed-l2-059",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Probablement trien el motiu del fons de la cambra.",
+      "en": "They probably choose the reason from the back of the room.",
+      "tokens": [
+        {
+          "surface": "Probablement",
+          "lexemeId": "lx-4394"
+        },
+        {
+          "surface": "trien",
+          "lexemeId": "lx-4520"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "motiu",
+          "lexemeId": "lx-0671"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "fons",
+          "lexemeId": "lx-1946"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "cambra",
+          "lexemeId": "lx-0383"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0383",
+    "lx-0671",
+    "lx-1946",
+    "lx-4394",
+    "lx-4520"
+  ],
+  "newWords": [
+    "lx-0383",
+    "lx-0671",
+    "lx-1946",
+    "lx-4394",
+    "lx-4520"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 59
+}

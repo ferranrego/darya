@@ -1,0 +1,97 @@
+{
+  "id": "tx-seed-l2-035",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "És possible que la veu tingui la raó.",
+      "en": "It is possible that the voice is right.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "possible",
+          "lexemeId": "lx-4058"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "veu",
+          "lexemeId": "lx-2948"
+        },
+        {
+          "surface": "tingui",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "raó",
+          "lexemeId": "lx-1018"
+        }
+      ]
+    },
+    {
+      "target": "L'església té molta edat.",
+      "en": "The church is very old (has a lot of age).",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "església",
+          "lexemeId": "lx-0988"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "molta",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "edat",
+          "lexemeId": "lx-1884"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0035",
+    "lx-0038",
+    "lx-0052",
+    "lx-0054",
+    "lx-0988",
+    "lx-1018",
+    "lx-1884",
+    "lx-2948",
+    "lx-4058"
+  ],
+  "newWords": [
+    "lx-0988",
+    "lx-1018",
+    "lx-1884",
+    "lx-2948",
+    "lx-4058"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 35
+}

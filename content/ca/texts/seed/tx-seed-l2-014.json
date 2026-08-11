@@ -1,0 +1,177 @@
+{
+  "id": "tx-seed-l2-014",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Prendre",
+  "titleEn": "To take",
+  "sentences": [
+    {
+      "target": "Vull prendre un cafè amb llet.",
+      "en": "I want to take a coffee with milk.",
+      "tokens": [
+        {
+          "surface": "Vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "prendre",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "cafè",
+          "lexemeId": "lx-0291"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "llet",
+          "lexemeId": "lx-0290"
+        }
+      ]
+    },
+    {
+      "target": "Ell pren aigua perquè fa calor.",
+      "en": "He takes water because it is hot.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "pren",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "perquè",
+          "lexemeId": "lx-0869"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "calor",
+          "lexemeId": "lx-0953"
+        }
+      ]
+    },
+    {
+      "target": "El meu germà pren el tren al matí.",
+      "en": "My brother takes the train in the morning.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "germà",
+          "lexemeId": "lx-0092"
+        },
+        {
+          "surface": "pren",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "tren",
+          "lexemeId": "lx-0559"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "matí",
+          "lexemeId": "lx-0085"
+        }
+      ]
+    },
+    {
+      "target": "Jo prenc aigua i tu prens te.",
+      "en": "I take water and you take tea.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "prenc",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "tu",
+          "lexemeId": "lx-0241"
+        },
+        {
+          "surface": "prens",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "te",
+          "lexemeId": "lx-0711"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0031",
+    "lx-0033",
+    "lx-0037",
+    "lx-0041",
+    "lx-0053",
+    "lx-0060",
+    "lx-0079",
+    "lx-0085",
+    "lx-0092",
+    "lx-0126",
+    "lx-0240",
+    "lx-0241",
+    "lx-0242",
+    "lx-0248",
+    "lx-0290",
+    "lx-0291",
+    "lx-0559",
+    "lx-0711",
+    "lx-0869",
+    "lx-0953"
+  ],
+  "newWords": [
+    "lx-0079",
+    "lx-0126",
+    "lx-0290",
+    "lx-0291",
+    "lx-0559",
+    "lx-0711",
+    "lx-0953"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 14
+}

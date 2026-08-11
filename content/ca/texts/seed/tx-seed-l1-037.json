@@ -1,0 +1,117 @@
+{
+  "id": "tx-seed-l1-037",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El cotxe és ràpid.",
+      "en": "The car is fast.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "ràpid",
+          "lexemeId": "lx-0488"
+        }
+      ]
+    },
+    {
+      "target": "L'avió és gran.",
+      "en": "The plane is big.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "avió",
+          "lexemeId": "lx-0558"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "El tren és lent.",
+      "en": "The train is slow.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "tren",
+          "lexemeId": "lx-0559"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "lent",
+          "lexemeId": "lx-0489"
+        }
+      ]
+    },
+    {
+      "target": "Nosaltres volem viatjar.",
+      "en": "We want to travel.",
+      "tokens": [
+        {
+          "surface": "Nosaltres",
+          "lexemeId": "lx-0244"
+        },
+        {
+          "surface": "volem",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "viatjar",
+          "lexemeId": "lx-0572"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0038",
+    "lx-0060",
+    "lx-0100",
+    "lx-0217",
+    "lx-0244",
+    "lx-0488",
+    "lx-0489",
+    "lx-0558",
+    "lx-0559",
+    "lx-0572"
+  ],
+  "newWords": [
+    "lx-0488",
+    "lx-0489",
+    "lx-0558",
+    "lx-0559",
+    "lx-0572"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 37
+}

@@ -1,0 +1,172 @@
+{
+  "id": "tx-seed-l2-027",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El servei",
+  "titleEn": "The service",
+  "sentences": [
+    {
+      "target": "La dona continua amb el servei.",
+      "en": "The woman continues with the service.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "dona",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "continua",
+          "lexemeId": "lx-4192"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "servei",
+          "lexemeId": "lx-0765"
+        }
+      ]
+    },
+    {
+      "target": "Formar un equip no és fàcil.",
+      "en": "To form a team is not easy.",
+      "tokens": [
+        {
+          "surface": "Formar",
+          "lexemeId": "lx-4485"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "equip",
+          "lexemeId": "lx-0832"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fàcil",
+          "lexemeId": "lx-0226"
+        }
+      ]
+    },
+    {
+      "target": "Hem d'intentar canviar la ciutat aviat.",
+      "en": "We must try to change the city soon.",
+      "tokens": [
+        {
+          "surface": "Hem",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "intentar",
+          "lexemeId": "lx-1061"
+        },
+        {
+          "surface": "canviar",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "aviat",
+          "lexemeId": "lx-0163"
+        }
+      ]
+    },
+    {
+      "target": "Canviar no és fàcil, però ho intento.",
+      "en": "Changing is not easy, but I try.",
+      "tokens": [
+        {
+          "surface": "Canviar",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fàcil",
+          "lexemeId": "lx-0226"
+        },
+        {
+          "surface": "però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "ho",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "intento",
+          "lexemeId": "lx-1061"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0014",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0039",
+    "lx-0041",
+    "lx-0051",
+    "lx-0062",
+    "lx-0071",
+    "lx-0093",
+    "lx-0163",
+    "lx-0188",
+    "lx-0226",
+    "lx-0765",
+    "lx-0832",
+    "lx-1061",
+    "lx-4192",
+    "lx-4485"
+  ],
+  "newWords": [
+    "lx-0071",
+    "lx-0226",
+    "lx-0765",
+    "lx-0832",
+    "lx-1061",
+    "lx-4192",
+    "lx-4485"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 27
+}

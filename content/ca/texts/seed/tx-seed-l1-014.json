@@ -1,0 +1,133 @@
+{
+  "id": "tx-seed-l1-014",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El gos net",
+  "titleEn": "The clean dog",
+  "sentences": [
+    {
+      "target": "La paret és blanca.",
+      "en": "The wall is white.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "paret",
+          "lexemeId": "lx-0370"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "blanca",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "La paret sempre és neta.",
+      "en": "The wall is always clean.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "paret",
+          "lexemeId": "lx-0370"
+        },
+        {
+          "surface": "sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "neta",
+          "lexemeId": "lx-0906"
+        }
+      ]
+    },
+    {
+      "target": "El gos mai és net.",
+      "en": "The dog is never clean.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gos",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "mai",
+          "lexemeId": "lx-0258"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "net",
+          "lexemeId": "lx-0497"
+        }
+      ]
+    },
+    {
+      "target": "Però el gos és intel·ligent.",
+      "en": "But the dog is intelligent.",
+      "tokens": [
+        {
+          "surface": "Però",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gos",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "intel·ligent",
+          "lexemeId": "lx-0943"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0051",
+    "lx-0234",
+    "lx-0257",
+    "lx-0258",
+    "lx-0330",
+    "lx-0370",
+    "lx-0497",
+    "lx-0906",
+    "lx-0943"
+  ],
+  "newWords": [
+    "lx-0370",
+    "lx-0497",
+    "lx-0906",
+    "lx-0943"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 14
+}

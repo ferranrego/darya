@@ -1,0 +1,129 @@
+{
+  "id": "tx-seed-l1-050",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El gat és petit.",
+      "en": "The cat is small.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gat",
+          "lexemeId": "lx-0331"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petit",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "El porc i l'ocell.",
+      "en": "The pig and the bird.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "porc",
+          "lexemeId": "lx-0956"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "ocell",
+          "lexemeId": "lx-0332"
+        }
+      ]
+    },
+    {
+      "target": "L'home és valent.",
+      "en": "The man is brave.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "home",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "valent",
+          "lexemeId": "lx-0948"
+        }
+      ]
+    },
+    {
+      "target": "El cotxe és molt pesat.",
+      "en": "The car is very heavy.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "pesat",
+          "lexemeId": "lx-4358"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0033",
+    "lx-0038",
+    "lx-0052",
+    "lx-0070",
+    "lx-0100",
+    "lx-0218",
+    "lx-0331",
+    "lx-0332",
+    "lx-0948",
+    "lx-0956",
+    "lx-4358"
+  ],
+  "newWords": [
+    "lx-0332",
+    "lx-0948",
+    "lx-0956",
+    "lx-4358"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 50
+}

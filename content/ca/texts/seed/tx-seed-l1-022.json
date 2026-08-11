@@ -1,0 +1,134 @@
+{
+  "id": "tx-seed-l1-022",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "La cadira",
+  "titleEn": "The chair",
+  "sentences": [
+    {
+      "target": "La cadira és vella.",
+      "en": "The chair is old.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "cadira",
+          "lexemeId": "lx-0366"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "vella",
+          "lexemeId": "lx-0220"
+        }
+      ]
+    },
+    {
+      "target": "El nen seu a la cadira.",
+      "en": "The boy sits on the chair.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "seu",
+          "lexemeId": "lx-0250"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "cadira",
+          "lexemeId": "lx-0366"
+        }
+      ]
+    },
+    {
+      "target": "El nen respon la mare.",
+      "en": "The boy answers the mother.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "respon",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "La mare respon el nen.",
+      "en": "The mother answers the boy.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        },
+        {
+          "surface": "respon",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0078",
+    "lx-0090",
+    "lx-0214",
+    "lx-0220",
+    "lx-0250",
+    "lx-0366"
+  ],
+  "newWords": [
+    "lx-0214",
+    "lx-0220",
+    "lx-0366"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 22
+}

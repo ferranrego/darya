@@ -1,0 +1,166 @@
+{
+  "id": "tx-seed-l2-034",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Un alemany va a l'illa.",
+      "en": "A German goes to the island.",
+      "tokens": [
+        {
+          "surface": "Un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "alemany",
+          "lexemeId": "lx-0508"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "illa",
+          "lexemeId": "lx-0595"
+        }
+      ]
+    },
+    {
+      "target": "Ell fa una línia a la terra.",
+      "en": "He makes a line in the dirt.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "línia",
+          "lexemeId": "lx-4389"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "terra",
+          "lexemeId": "lx-0382"
+        }
+      ]
+    },
+    {
+      "target": "Dona una ordre a la gent.",
+      "en": "He gives an order to the people.",
+      "tokens": [
+        {
+          "surface": "Dona",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "ordre",
+          "lexemeId": "lx-4386"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "gent",
+          "lexemeId": "lx-0077"
+        }
+      ]
+    },
+    {
+      "target": "Aquesta és la causa del problema.",
+      "en": "This is the cause of the problem.",
+      "tokens": [
+        {
+          "surface": "Aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "causa",
+          "lexemeId": "lx-1357"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "problema",
+          "lexemeId": "lx-1019"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0037",
+    "lx-0038",
+    "lx-0042",
+    "lx-0053",
+    "lx-0057",
+    "lx-0064",
+    "lx-0071",
+    "lx-0077",
+    "lx-0242",
+    "lx-0382",
+    "lx-0508",
+    "lx-0595",
+    "lx-1019",
+    "lx-1357",
+    "lx-4386",
+    "lx-4389"
+  ],
+  "newWords": [
+    "lx-0508",
+    "lx-0595",
+    "lx-1357",
+    "lx-4386",
+    "lx-4389"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 34
+}

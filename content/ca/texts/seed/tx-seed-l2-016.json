@@ -1,0 +1,168 @@
+{
+  "id": "tx-seed-l2-016",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "La majoria",
+  "titleEn": "The majority",
+  "sentences": [
+    {
+      "target": "La majoria de la gent no ho sap.",
+      "en": "The majority of the people don't know it.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "majoria",
+          "lexemeId": "lx-1276"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "gent",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "ho",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "sap",
+          "lexemeId": "lx-0059"
+        }
+      ]
+    },
+    {
+      "target": "A l'escola, la majoria juga al pati.",
+      "en": "At school, the majority play in the yard.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "escola",
+          "lexemeId": "lx-0099"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "majoria",
+          "lexemeId": "lx-1276"
+        },
+        {
+          "surface": "juga",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "pati",
+          "lexemeId": "lx-4527"
+        }
+      ]
+    },
+    {
+      "target": "Nosaltres volem tornar aviat.",
+      "en": "The majority want to return early.",
+      "tokens": [
+        {
+          "surface": "Nosaltres",
+          "lexemeId": "lx-0244"
+        },
+        {
+          "surface": "volem",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "tornar",
+          "lexemeId": "lx-0477"
+        },
+        {
+          "surface": "aviat",
+          "lexemeId": "lx-0163"
+        }
+      ]
+    },
+    {
+      "target": "La majoria va a la ciutat.",
+      "en": "The majority goes to the beach.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "majoria",
+          "lexemeId": "lx-1276"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "ciutat",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0014",
+    "lx-0022",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0039",
+    "lx-0057",
+    "lx-0059",
+    "lx-0060",
+    "lx-0077",
+    "lx-0093",
+    "lx-0099",
+    "lx-0163",
+    "lx-0200",
+    "lx-0244",
+    "lx-0477",
+    "lx-1276",
+    "lx-4527"
+  ],
+  "newWords": [
+    "lx-0014",
+    "lx-0077",
+    "lx-1276",
+    "lx-4527"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 16
+}

@@ -1,0 +1,129 @@
+{
+  "id": "tx-seed-l1-048",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El jardí és gran.",
+      "en": "The garden is big.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "jardí",
+          "lexemeId": "lx-0621"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "Jo vaig al bany.",
+      "en": "I go to the bathroom.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "vaig",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "bany",
+          "lexemeId": "lx-0371"
+        }
+      ]
+    },
+    {
+      "target": "Jo sóc a la cuina.",
+      "en": "I am in the kitchen.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "sóc",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "cuina",
+          "lexemeId": "lx-0372"
+        }
+      ]
+    },
+    {
+      "target": "Ells cuinen una taronja.",
+      "en": "They cook an orange.",
+      "tokens": [
+        {
+          "surface": "Ells",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "cuinen",
+          "lexemeId": "lx-0391"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "taronja",
+          "lexemeId": "lx-0304"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0042",
+    "lx-0057",
+    "lx-0217",
+    "lx-0240",
+    "lx-0246",
+    "lx-0304",
+    "lx-0371",
+    "lx-0372",
+    "lx-0391",
+    "lx-0621"
+  ],
+  "newWords": [
+    "lx-0304",
+    "lx-0371",
+    "lx-0372",
+    "lx-0391",
+    "lx-0621"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 48
+}

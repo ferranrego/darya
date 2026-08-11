@@ -1,0 +1,141 @@
+{
+  "id": "tx-seed-l1-020",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "La gent",
+  "titleEn": "The people",
+  "sentences": [
+    {
+      "target": "La gent pregunta molt.",
+      "en": "People ask a lot.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "gent",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "pregunta",
+          "lexemeId": "lx-0314"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        }
+      ]
+    },
+    {
+      "target": "L'home alt menja sucre.",
+      "en": "The tall man eats sugar.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "home",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "alt",
+          "lexemeId": "lx-0222"
+        },
+        {
+          "surface": "menja",
+          "lexemeId": "lx-0101"
+        },
+        {
+          "surface": "sucre",
+          "lexemeId": "lx-0302"
+        }
+      ]
+    },
+    {
+      "target": "El cotxe groc és gran.",
+      "en": "The yellow car is big.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "groc",
+          "lexemeId": "lx-0239"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "La gent mira el cotxe groc.",
+      "en": "The people look at the yellow car.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "gent",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "mira",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "groc",
+          "lexemeId": "lx-0239"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0052",
+    "lx-0070",
+    "lx-0077",
+    "lx-0100",
+    "lx-0101",
+    "lx-0114",
+    "lx-0217",
+    "lx-0222",
+    "lx-0239",
+    "lx-0302",
+    "lx-0314"
+  ],
+  "newWords": [
+    "lx-0070",
+    "lx-0077",
+    "lx-0222",
+    "lx-0239",
+    "lx-0302",
+    "lx-0314"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 20
+}

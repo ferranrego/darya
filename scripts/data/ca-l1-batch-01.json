@@ -1,0 +1,237 @@
+[
+  {
+    "slug": "l1-009",
+    "level": "L1",
+    "seq": 9,
+    "titleTarget": "El llibre",
+    "titleEn": "The book",
+    "sentences": [
+      { "target": "Jo veig el llibre.", "en": "I see the book." },
+      { "target": "El llibre és molt bo.", "en": "The book is very good." },
+      { "target": "El pare pot veure el cotxe.", "en": "Father can see the car." },
+      { "target": "El cotxe és gran.", "en": "The car is big." }
+    ]
+  },
+  {
+    "slug": "l1-010",
+    "level": "L1",
+    "seq": 10,
+    "titleTarget": "El germà",
+    "titleEn": "The brother",
+    "sentences": [
+      { "target": "El germà té un any.", "en": "The brother is one year old." },
+      { "target": "El germà tanca la porta.", "en": "The brother closes the door." },
+      { "target": "El fill obre la porta.", "en": "The son opens the door." },
+      { "target": "El fill posa el llibre.", "en": "The son puts the book." }
+    ]
+  },
+  {
+    "slug": "l1-011",
+    "level": "L1",
+    "seq": 11,
+    "titleTarget": "La dona",
+    "titleEn": "The woman",
+    "sentences": [
+      { "target": "La dona no dorm.", "en": "The woman does not sleep." },
+      { "target": "La dona creu el pare.", "en": "The woman believes the father." },
+      { "target": "El pare escriu un llibre.", "en": "The father writes a book." },
+      { "target": "El pare fa un te calent.", "en": "The father makes a hot tea." }
+    ]
+  },
+  {
+    "slug": "l1-012",
+    "level": "L1",
+    "seq": 12,
+    "titleTarget": "L'estiu",
+    "titleEn": "The summer",
+    "sentences": [
+      { "target": "A l'estiu fa sol.", "en": "In the summer it is sunny." },
+      { "target": "El nen renta el cotxe.", "en": "The boy washes the car." },
+      { "target": "El nen també trenca la porta.", "en": "The boy also breaks the door." },
+      { "target": "La porta és al terra.", "en": "The door is on the ground." }
+    ]
+  },
+  {
+    "slug": "l1-013",
+    "level": "L1",
+    "seq": 13,
+    "titleTarget": "L'hospital",
+    "titleEn": "The hospital",
+    "sentences": [
+      { "target": "L'hospital és molt gran.", "en": "The hospital is very big." },
+      { "target": "La mare va a l'hospital.", "en": "The mother goes to the hospital." },
+      { "target": "L'hospital no és dolent.", "en": "The hospital is not bad." },
+      { "target": "L'hospital té bona llum.", "en": "The hospital has good light." }
+    ]
+  },
+  {
+    "slug": "l1-014",
+    "level": "L1",
+    "seq": 14,
+    "titleTarget": "El gos net",
+    "titleEn": "The clean dog",
+    "sentences": [
+      { "target": "La paret és blanca.", "en": "The wall is white." },
+      { "target": "La paret sempre és neta.", "en": "The wall is always clean." },
+      { "target": "El gos mai és net.", "en": "The dog is never clean." },
+      { "target": "Però el gos és intel·ligent.", "en": "But the dog is intelligent." }
+    ]
+  },
+  {
+    "slug": "l1-015",
+    "level": "L1",
+    "seq": 15,
+    "titleTarget": "Plou",
+    "titleEn": "It rains",
+    "sentences": [
+      { "target": "Ara plou molt.", "en": "Now it rains a lot." },
+      { "target": "Sempre plou molt.", "en": "It always rains a lot." },
+      { "target": "La dona no veu el gos.", "en": "The woman does not see the dog." },
+      { "target": "El gos dorm a la casa.", "en": "The dog sleeps in the house." }
+    ]
+  },
+  {
+    "slug": "l1-016",
+    "level": "L1",
+    "seq": 16,
+    "titleTarget": "El camí",
+    "titleEn": "The path",
+    "sentences": [
+      { "target": "Veig el camí.", "en": "I see the path." },
+      { "target": "El camí és molt llarg.", "en": "The path is very long." },
+      { "target": "El nen va al camí.", "en": "The boy goes to the path." },
+      { "target": "El gos corre al camí.", "en": "The dog runs on the path." }
+    ]
+  },
+  {
+    "slug": "l1-017",
+    "level": "L1",
+    "seq": 17,
+    "titleTarget": "L'escola",
+    "titleEn": "The school",
+    "sentences": [
+      { "target": "El nen va a l'escola.", "en": "The boy goes to school." },
+      { "target": "L'escola és gran.", "en": "The school is big." },
+      { "target": "El nen ja corre.", "en": "The boy already runs." },
+      { "target": "El nen corre al carrer.", "en": "The boy runs in the street." }
+    ]
+  },
+  {
+    "slug": "l1-018",
+    "level": "L1",
+    "seq": 18,
+    "titleTarget": "La mà",
+    "titleEn": "The hand",
+    "sentences": [
+      { "target": "Veig amb un ull.", "en": "I see with one eye." },
+      { "target": "L'ull és obert.", "en": "The eye is open." },
+      { "target": "Toco amb la mà.", "en": "I touch with the hand." },
+      { "target": "Això és molt fàcil.", "en": "This is very easy." },
+      { "target": "Espero la mare.", "en": "I wait for the mother." }
+    ]
+  },
+  {
+    "slug": "l1-019",
+    "level": "L1",
+    "seq": 19,
+    "titleTarget": "La nit",
+    "titleEn": "The night",
+    "sentences": [
+      { "target": "Ja és de nit.", "en": "It is already night." },
+      { "target": "La nit és freda.", "en": "The night is cold." },
+      { "target": "No veig cap gos.", "en": "I don't see any dog." },
+      { "target": "El nen dorm a la nit.", "en": "The boy sleeps at night." }
+    ]
+  },
+  {
+    "slug": "l1-020",
+    "level": "L1",
+    "seq": 20,
+    "titleTarget": "La gent",
+    "titleEn": "The people",
+    "sentences": [
+      { "target": "La gent pregunta molt.", "en": "People ask a lot." },
+      { "target": "L'home alt menja sucre.", "en": "The tall man eats sugar." },
+      { "target": "El cotxe groc és gran.", "en": "The yellow car is big." },
+      { "target": "La gent mira el cotxe groc.", "en": "The people look at the yellow car." }
+    ]
+  },
+  {
+    "slug": "l1-021",
+    "level": "L1",
+    "seq": 21,
+    "titleTarget": "El bosc",
+    "titleEn": "The forest",
+    "sentences": [
+      { "target": "El bosc és verd.", "en": "The forest is green." },
+      { "target": "El pare descansa al bosc.", "en": "The father rests in the forest." },
+      { "target": "Jo salo la carn.", "en": "I salt the meat." },
+      { "target": "La mare menja al bosc.", "en": "The mother eats in the forest." }
+    ]
+  },
+  {
+    "slug": "l1-022",
+    "level": "L1",
+    "seq": 22,
+    "titleTarget": "La cadira",
+    "titleEn": "The chair",
+    "sentences": [
+      { "target": "La cadira és vella.", "en": "The chair is old." },
+      { "target": "El nen seu a la cadira.", "en": "The boy sits on the chair." },
+      { "target": "El nen respon la mare.", "en": "The boy answers the mother." },
+      { "target": "La mare respon el nen.", "en": "The mother answers the boy." }
+    ]
+  },
+  {
+    "slug": "l1-023",
+    "level": "L1",
+    "seq": 23,
+    "titleTarget": "L'hivern",
+    "titleEn": "The winter",
+    "sentences": [
+      { "target": "A l'hivern fa fred.", "en": "In the winter it is cold." },
+      { "target": "El pis és calent.", "en": "The apartment is warm." },
+      { "target": "El got és blau.", "en": "The glass is blue." },
+      { "target": "El got blau cau al pis.", "en": "The blue glass falls on the floor." }
+    ]
+  },
+  {
+    "slug": "l1-024",
+    "level": "L1",
+    "seq": 24,
+    "titleTarget": "L'arbre",
+    "titleEn": "The tree",
+    "sentences": [
+      { "target": "L'arbre té una flor.", "en": "The tree has a flower." },
+      { "target": "A la tarda veig l'arbre.", "en": "In the afternoon I see the tree." },
+      { "target": "L'arbre té un nom.", "en": "The tree has a name." },
+      { "target": "Jo vull saber el nom.", "en": "I want to know the name." }
+    ]
+  },
+  {
+    "slug": "l1-025",
+    "level": "L1",
+    "seq": 25,
+    "titleTarget": "Tard",
+    "titleEn": "Late",
+    "sentences": [
+      { "target": "El nen arriba tard.", "en": "The boy arrives late." },
+      { "target": "A la mare li agrada.", "en": "The mother likes it." },
+      { "target": "El nen necessita dormir.", "en": "The boy needs to sleep." },
+      { "target": "El nen dorm molt tard.", "en": "The boy sleeps very late." }
+    ]
+  },
+  {
+    "slug": "l1-026",
+    "level": "L1",
+    "seq": 26,
+    "titleTarget": "La filla",
+    "titleEn": "The daughter",
+    "sentences": [
+      { "target": "El pare diu hola.", "en": "The father says hello." },
+      { "target": "La mare perd la nena.", "en": "The mother loses the girl." },
+      { "target": "El pare dona aigua.", "en": "The father gives water." },
+      { "target": "Jo baixo al carrer.", "en": "I go down to the street." }
+    ]
+  }
+]

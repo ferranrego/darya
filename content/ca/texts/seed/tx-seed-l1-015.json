@@ -1,0 +1,118 @@
+{
+  "id": "tx-seed-l1-015",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "Plou",
+  "titleEn": "It rains",
+  "sentences": [
+    {
+      "target": "Ara plou molt.",
+      "en": "Now it rains a lot.",
+      "tokens": [
+        {
+          "surface": "Ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "plou",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        }
+      ]
+    },
+    {
+      "target": "Sempre plou molt.",
+      "en": "It always rains a lot.",
+      "tokens": [
+        {
+          "surface": "Sempre",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "plou",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        }
+      ]
+    },
+    {
+      "target": "Ells veuen el gos.",
+      "en": "They see the dog.",
+      "tokens": [
+        {
+          "surface": "Ells",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "veuen",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gos",
+          "lexemeId": "lx-0330"
+        }
+      ]
+    },
+    {
+      "target": "El gos dorm a la casa.",
+      "en": "The dog sleeps in the house.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gos",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "dorm",
+          "lexemeId": "lx-0199"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0052",
+    "lx-0058",
+    "lx-0069",
+    "lx-0194",
+    "lx-0199",
+    "lx-0246",
+    "lx-0254",
+    "lx-0257",
+    "lx-0330"
+  ],
+  "newWords": [
+    "lx-0194"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 15
+}

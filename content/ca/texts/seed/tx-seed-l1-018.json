@@ -1,0 +1,144 @@
+{
+  "id": "tx-seed-l1-018",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "La mà",
+  "titleEn": "The hand",
+  "sentences": [
+    {
+      "target": "Veig amb un ull.",
+      "en": "I see with one eye.",
+      "tokens": [
+        {
+          "surface": "Veig",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "ull",
+          "lexemeId": "lx-0082"
+        }
+      ]
+    },
+    {
+      "target": "L'ull és obert.",
+      "en": "The eye is open.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "ull",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "obert",
+          "lexemeId": "lx-0883"
+        }
+      ]
+    },
+    {
+      "target": "Toco amb la mà.",
+      "en": "I touch with the hand.",
+      "tokens": [
+        {
+          "surface": "Toco",
+          "lexemeId": "lx-4467"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mà",
+          "lexemeId": "lx-0081"
+        }
+      ]
+    },
+    {
+      "target": "Això és molt fàcil.",
+      "en": "This is very easy.",
+      "tokens": [
+        {
+          "surface": "Això",
+          "lexemeId": "lx-0683"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "fàcil",
+          "lexemeId": "lx-0226"
+        }
+      ]
+    },
+    {
+      "target": "Espero la mare.",
+      "en": "I wait for the mother.",
+      "tokens": [
+        {
+          "surface": "Espero",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0041",
+    "lx-0052",
+    "lx-0058",
+    "lx-0081",
+    "lx-0082",
+    "lx-0090",
+    "lx-0211",
+    "lx-0226",
+    "lx-0683",
+    "lx-0883",
+    "lx-4467"
+  ],
+  "newWords": [
+    "lx-0081",
+    "lx-0082",
+    "lx-0211",
+    "lx-0226",
+    "lx-0883",
+    "lx-4467"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 18
+}

@@ -1,0 +1,137 @@
+{
+  "id": "tx-seed-l1-033",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El lloc és fosc i quadrat.",
+      "en": "The place is dark and square.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "lloc",
+          "lexemeId": "lx-4069"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fosc",
+          "lexemeId": "lx-4364"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "quadrat",
+          "lexemeId": "lx-4500"
+        }
+      ]
+    },
+    {
+      "target": "El camí és molt ample.",
+      "en": "The path is very wide.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "camí",
+          "lexemeId": "lx-0127"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "ample",
+          "lexemeId": "lx-3151"
+        }
+      ]
+    },
+    {
+      "target": "El gos és gris.",
+      "en": "The dog is grey.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gos",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gris",
+          "lexemeId": "lx-0435"
+        }
+      ]
+    },
+    {
+      "target": "El gat és marró.",
+      "en": "The cat is brown.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gat",
+          "lexemeId": "lx-0331"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "marró",
+          "lexemeId": "lx-0902"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0033",
+    "lx-0038",
+    "lx-0052",
+    "lx-0127",
+    "lx-0330",
+    "lx-0331",
+    "lx-0435",
+    "lx-0902",
+    "lx-3151",
+    "lx-4069",
+    "lx-4364",
+    "lx-4500"
+  ],
+  "newWords": [
+    "lx-0331",
+    "lx-0435",
+    "lx-0902",
+    "lx-3151",
+    "lx-4069",
+    "lx-4364",
+    "lx-4500"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 33
+}

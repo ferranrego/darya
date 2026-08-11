@@ -1,0 +1,72 @@
+{
+  "id": "tx-seed-l2-045",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El públic humà és igual que el regne conegut.",
+      "en": "The human audience is the same as the known kingdom.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "públic",
+          "lexemeId": "lx-1398"
+        },
+        {
+          "surface": "humà",
+          "lexemeId": "lx-4430"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "igual",
+          "lexemeId": "lx-4391"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "regne",
+          "lexemeId": "lx-4403"
+        },
+        {
+          "surface": "conegut",
+          "lexemeId": "lx-3824"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0035",
+    "lx-0038",
+    "lx-1398",
+    "lx-3824",
+    "lx-4391",
+    "lx-4403",
+    "lx-4430"
+  ],
+  "newWords": [
+    "lx-1398",
+    "lx-3824",
+    "lx-4391",
+    "lx-4403",
+    "lx-4430"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 45
+}

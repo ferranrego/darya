@@ -1,0 +1,142 @@
+{
+  "id": "tx-seed-l1-013",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "L'hospital",
+  "titleEn": "The hospital",
+  "sentences": [
+    {
+      "target": "L'hospital és molt gran.",
+      "en": "The hospital is very big.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "hospital",
+          "lexemeId": "lx-0408"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "La mare va a l'hospital.",
+      "en": "The mother goes to the hospital.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "hospital",
+          "lexemeId": "lx-0408"
+        }
+      ]
+    },
+    {
+      "target": "L'hospital no és dolent.",
+      "en": "The hospital is not bad.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "hospital",
+          "lexemeId": "lx-0408"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "dolent",
+          "lexemeId": "lx-0216"
+        }
+      ]
+    },
+    {
+      "target": "L'hospital té bona llum.",
+      "en": "The hospital has good light.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "hospital",
+          "lexemeId": "lx-0408"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "bona",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "llum",
+          "lexemeId": "lx-0368"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0039",
+    "lx-0052",
+    "lx-0054",
+    "lx-0057",
+    "lx-0090",
+    "lx-0215",
+    "lx-0216",
+    "lx-0217",
+    "lx-0368",
+    "lx-0408"
+  ],
+  "newWords": [
+    "lx-0216",
+    "lx-0368",
+    "lx-0408"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 13
+}

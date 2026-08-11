@@ -1,0 +1,134 @@
+{
+  "id": "tx-seed-l1-042",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Aquesta persona és bona.",
+      "en": "This person is good.",
+      "tokens": [
+        {
+          "surface": "Aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "persona",
+          "lexemeId": "lx-0029"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "bona",
+          "lexemeId": "lx-0215"
+        }
+      ]
+    },
+    {
+      "target": "La dona crida molt.",
+      "en": "The woman shouts a lot.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "dona",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "crida",
+          "lexemeId": "lx-0937"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        }
+      ]
+    },
+    {
+      "target": "Jo llegeixo el llibre.",
+      "en": "I read the book.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "llegeixo",
+          "lexemeId": "lx-0116"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "llibre",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "Jo pregunto si ell és català.",
+      "en": "I ask if he is Catalan.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "pregunto",
+          "lexemeId": "lx-0213"
+        },
+        {
+          "surface": "si",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "català",
+          "lexemeId": "lx-0001"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0029",
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0048",
+    "lx-0052",
+    "lx-0064",
+    "lx-0071",
+    "lx-0096",
+    "lx-0116",
+    "lx-0213",
+    "lx-0215",
+    "lx-0240",
+    "lx-0242",
+    "lx-0937"
+  ],
+  "newWords": [
+    "lx-0001",
+    "lx-0029",
+    "lx-0116",
+    "lx-0213",
+    "lx-0937"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 42
+}

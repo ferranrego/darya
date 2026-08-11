@@ -1,0 +1,167 @@
+{
+  "id": "tx-seed-l2-024",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "L'obra",
+  "titleEn": "The construction work",
+  "sentences": [
+    {
+      "target": "El meu propi germà va matar l'animal.",
+      "en": "My own brother killed the animal.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "propi",
+          "lexemeId": "lx-4413"
+        },
+        {
+          "surface": "germà",
+          "lexemeId": "lx-0092"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "matar",
+          "lexemeId": "lx-4382"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "animal",
+          "lexemeId": "lx-0580"
+        }
+      ]
+    },
+    {
+      "target": "Aquesta obra canvia tot el sistema.",
+      "en": "This construction changes the whole system.",
+      "tokens": [
+        {
+          "surface": "Aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "obra",
+          "lexemeId": "lx-2047"
+        },
+        {
+          "surface": "canvia",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "sistema",
+          "lexemeId": "lx-0789"
+        }
+      ]
+    },
+    {
+      "target": "Considerem que l'obra és bona.",
+      "en": "We consider that the work is good.",
+      "tokens": [
+        {
+          "surface": "Considerem",
+          "lexemeId": "lx-0820"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "obra",
+          "lexemeId": "lx-2047"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "bona",
+          "lexemeId": "lx-0215"
+        }
+      ]
+    },
+    {
+      "target": "El sistema propi funciona bé.",
+      "en": "The own system works well.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "sistema",
+          "lexemeId": "lx-0789"
+        },
+        {
+          "surface": "propi",
+          "lexemeId": "lx-4413"
+        },
+        {
+          "surface": "funciona",
+          "lexemeId": "lx-4059"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0031",
+    "lx-0035",
+    "lx-0038",
+    "lx-0050",
+    "lx-0057",
+    "lx-0064",
+    "lx-0092",
+    "lx-0188",
+    "lx-0215",
+    "lx-0248",
+    "lx-0580",
+    "lx-0789",
+    "lx-0820",
+    "lx-2047",
+    "lx-4059",
+    "lx-4382",
+    "lx-4413"
+  ],
+  "newWords": [
+    "lx-0188",
+    "lx-0580",
+    "lx-0789",
+    "lx-0820",
+    "lx-2047",
+    "lx-4059",
+    "lx-4382",
+    "lx-4413"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 24
+}

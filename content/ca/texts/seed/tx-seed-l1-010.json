@@ -1,0 +1,138 @@
+{
+  "id": "tx-seed-l1-010",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El germà",
+  "titleEn": "The brother",
+  "sentences": [
+    {
+      "target": "El germà té un any.",
+      "en": "The brother is one year old.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "germà",
+          "lexemeId": "lx-0092"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "any",
+          "lexemeId": "lx-0067"
+        }
+      ]
+    },
+    {
+      "target": "El germà tanca la porta.",
+      "en": "The brother closes the door.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "germà",
+          "lexemeId": "lx-0092"
+        },
+        {
+          "surface": "tanca",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "El fill obre la porta.",
+      "en": "The son opens the door.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "fill",
+          "lexemeId": "lx-0091"
+        },
+        {
+          "surface": "obre",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "El fill posa el llibre.",
+      "en": "The son puts the book.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "fill",
+          "lexemeId": "lx-0091"
+        },
+        {
+          "surface": "posa",
+          "lexemeId": "lx-0125"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "llibre",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0054",
+    "lx-0067",
+    "lx-0091",
+    "lx-0092",
+    "lx-0096",
+    "lx-0098",
+    "lx-0120",
+    "lx-0121",
+    "lx-0125"
+  ],
+  "newWords": [
+    "lx-0067",
+    "lx-0091",
+    "lx-0092",
+    "lx-0121",
+    "lx-0125"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 10
+}

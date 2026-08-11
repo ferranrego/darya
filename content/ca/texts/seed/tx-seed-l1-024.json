@@ -1,0 +1,144 @@
+{
+  "id": "tx-seed-l1-024",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "L'arbre",
+  "titleEn": "The tree",
+  "sentences": [
+    {
+      "target": "L'arbre té una flor.",
+      "en": "The tree has a flower.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "arbre",
+          "lexemeId": "lx-0328"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "flor",
+          "lexemeId": "lx-0329"
+        }
+      ]
+    },
+    {
+      "target": "A la tarda veig l'arbre.",
+      "en": "In the afternoon I see the tree.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "tarda",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "veig",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "arbre",
+          "lexemeId": "lx-0328"
+        }
+      ]
+    },
+    {
+      "target": "L'arbre té un nom.",
+      "en": "The tree has a name.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "arbre",
+          "lexemeId": "lx-0328"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "nom",
+          "lexemeId": "lx-0087"
+        }
+      ]
+    },
+    {
+      "target": "Jo vull saber el nom.",
+      "en": "I want to know the name.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "saber",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nom",
+          "lexemeId": "lx-0087"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0037",
+    "lx-0042",
+    "lx-0054",
+    "lx-0058",
+    "lx-0059",
+    "lx-0060",
+    "lx-0086",
+    "lx-0087",
+    "lx-0240",
+    "lx-0328",
+    "lx-0329"
+  ],
+  "newWords": [
+    "lx-0059",
+    "lx-0086",
+    "lx-0087",
+    "lx-0328",
+    "lx-0329"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 24
+}

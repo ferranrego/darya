@@ -1,0 +1,68 @@
+{
+  "id": "tx-seed-l2-053",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Obtenen el premi central per la cançó greu.",
+      "en": "They obtain the central prize for the serious song.",
+      "tokens": [
+        {
+          "surface": "Obtenen",
+          "lexemeId": "lx-4442"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "premi",
+          "lexemeId": "lx-4102"
+        },
+        {
+          "surface": "central",
+          "lexemeId": "lx-4217"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "cançó",
+          "lexemeId": "lx-0977"
+        },
+        {
+          "surface": "greu",
+          "lexemeId": "lx-4091"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0040",
+    "lx-0977",
+    "lx-4091",
+    "lx-4102",
+    "lx-4217",
+    "lx-4442"
+  ],
+  "newWords": [
+    "lx-0977",
+    "lx-4091",
+    "lx-4102",
+    "lx-4217",
+    "lx-4442"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 53
+}

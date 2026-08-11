@@ -1,0 +1,145 @@
+{
+  "id": "tx-seed-l1-046",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El meu braç és llarg.",
+      "en": "My arm is long.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "braç",
+          "lexemeId": "lx-0138"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "llarg",
+          "lexemeId": "lx-0224"
+        }
+      ]
+    },
+    {
+      "target": "Ell obre la boca.",
+      "en": "He opens the mouth.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "obre",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "boca",
+          "lexemeId": "lx-0886"
+        }
+      ]
+    },
+    {
+      "target": "La seva cama és forta.",
+      "en": "His leg is strong.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "seva",
+          "lexemeId": "lx-0250"
+        },
+        {
+          "surface": "cama",
+          "lexemeId": "lx-0891"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "forta",
+          "lexemeId": "lx-0486"
+        }
+      ]
+    },
+    {
+      "target": "El meu nas i la meva esquena.",
+      "en": "My nose and my back.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "meu",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "nas",
+          "lexemeId": "lx-0732"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "esquena",
+          "lexemeId": "lx-0738"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0038",
+    "lx-0120",
+    "lx-0138",
+    "lx-0224",
+    "lx-0242",
+    "lx-0248",
+    "lx-0250",
+    "lx-0486",
+    "lx-0732",
+    "lx-0738",
+    "lx-0886",
+    "lx-0891"
+  ],
+  "newWords": [
+    "lx-0138",
+    "lx-0732",
+    "lx-0738",
+    "lx-0886",
+    "lx-0891"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 46
+}

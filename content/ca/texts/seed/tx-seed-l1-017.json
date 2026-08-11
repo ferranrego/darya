@@ -1,0 +1,130 @@
+{
+  "id": "tx-seed-l1-017",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "L'escola",
+  "titleEn": "The school",
+  "sentences": [
+    {
+      "target": "El nen va a l'escola.",
+      "en": "The boy goes to school.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "va",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "escola",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "L'escola és gran.",
+      "en": "The school is big.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "escola",
+          "lexemeId": "lx-0099"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "El nen ja corre.",
+      "en": "The boy already runs.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "ja",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "corre",
+          "lexemeId": "lx-0202"
+        }
+      ]
+    },
+    {
+      "target": "El nen corre al carrer.",
+      "en": "The boy runs in the street.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "corre",
+          "lexemeId": "lx-0202"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "carrer",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0031",
+    "lx-0034",
+    "lx-0038",
+    "lx-0049",
+    "lx-0057",
+    "lx-0078",
+    "lx-0094",
+    "lx-0099",
+    "lx-0202",
+    "lx-0217"
+  ],
+  "newWords": [
+    "lx-0094",
+    "lx-0099"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 17
+}

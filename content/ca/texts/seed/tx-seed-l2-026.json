@@ -1,0 +1,167 @@
+{
+  "id": "tx-seed-l2-026",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "L'edifici",
+  "titleEn": "The building",
+  "sentences": [
+    {
+      "target": "L'home vol crear un edifici.",
+      "en": "The man wants to create a building.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "home",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "vol",
+          "lexemeId": "lx-1007"
+        },
+        {
+          "surface": "crear",
+          "lexemeId": "lx-4397"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "edifici",
+          "lexemeId": "lx-2039"
+        }
+      ]
+    },
+    {
+      "target": "Aquest és el segon edifici que fa.",
+      "en": "This is the second building he makes.",
+      "tokens": [
+        {
+          "surface": "Aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "segon",
+          "lexemeId": "lx-0932"
+        },
+        {
+          "surface": "edifici",
+          "lexemeId": "lx-2039"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        }
+      ]
+    },
+    {
+      "target": "Ell vol mantenir la casa oberta.",
+      "en": "He wants to keep the house open.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "vol",
+          "lexemeId": "lx-1007"
+        },
+        {
+          "surface": "mantenir",
+          "lexemeId": "lx-3946"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "oberta",
+          "lexemeId": "lx-0120"
+        }
+      ]
+    },
+    {
+      "target": "Ell atura el cotxe per mirar.",
+      "en": "He stops the car to look.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "atura",
+          "lexemeId": "lx-1617"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "mirar",
+          "lexemeId": "lx-0114"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0035",
+    "lx-0037",
+    "lx-0038",
+    "lx-0040",
+    "lx-0053",
+    "lx-0064",
+    "lx-0069",
+    "lx-0070",
+    "lx-0100",
+    "lx-0114",
+    "lx-0120",
+    "lx-0242",
+    "lx-0932",
+    "lx-1007",
+    "lx-1617",
+    "lx-2039",
+    "lx-3946",
+    "lx-4397"
+  ],
+  "newWords": [
+    "lx-0114",
+    "lx-0120",
+    "lx-1617",
+    "lx-2039",
+    "lx-3946",
+    "lx-4397"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 26
+}

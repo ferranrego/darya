@@ -1,0 +1,135 @@
+{
+  "id": "tx-seed-l1-035",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Jo ajudo en aquest moment.",
+      "en": "I help in this moment.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "ajudo",
+          "lexemeId": "lx-0207"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "aquest",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "moment",
+          "lexemeId": "lx-4154"
+        }
+      ]
+    },
+    {
+      "target": "Un mes té trenta dies.",
+      "en": "A month has thirty days.",
+      "tokens": [
+        {
+          "surface": "Un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "mes",
+          "lexemeId": "lx-0340"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "trenta",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "dies",
+          "lexemeId": "lx-0068"
+        }
+      ]
+    },
+    {
+      "target": "És l'hora de menjar.",
+      "en": "It is the hour to eat.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "hora",
+          "lexemeId": "lx-0338"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "menjar",
+          "lexemeId": "lx-0101"
+        }
+      ]
+    },
+    {
+      "target": "Jo entenc això.",
+      "en": "I understand this.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "entenc",
+          "lexemeId": "lx-0814"
+        },
+        {
+          "surface": "això",
+          "lexemeId": "lx-0683"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0036",
+    "lx-0037",
+    "lx-0038",
+    "lx-0054",
+    "lx-0064",
+    "lx-0068",
+    "lx-0101",
+    "lx-0175",
+    "lx-0207",
+    "lx-0240",
+    "lx-0338",
+    "lx-0340",
+    "lx-0683",
+    "lx-0814",
+    "lx-4154"
+  ],
+  "newWords": [
+    "lx-0207",
+    "lx-0338",
+    "lx-0340",
+    "lx-0814",
+    "lx-4154"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 35
+}

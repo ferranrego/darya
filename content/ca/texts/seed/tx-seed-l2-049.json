@@ -1,0 +1,73 @@
+{
+  "id": "tx-seed-l2-049",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El director del club pateix la situació amb èxit.",
+      "en": "The director of the club suffers the situation with success.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "director",
+          "lexemeId": "lx-1394"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "club",
+          "lexemeId": "lx-4390"
+        },
+        {
+          "surface": "pateix",
+          "lexemeId": "lx-4212"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "situació",
+          "lexemeId": "lx-1026"
+        },
+        {
+          "surface": "amb",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "èxit",
+          "lexemeId": "lx-3873"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0031",
+    "lx-0032",
+    "lx-0041",
+    "lx-1026",
+    "lx-1394",
+    "lx-3873",
+    "lx-4212",
+    "lx-4390"
+  ],
+  "newWords": [
+    "lx-1026",
+    "lx-1394",
+    "lx-3873",
+    "lx-4212",
+    "lx-4390"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 49
+}

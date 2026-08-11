@@ -1,0 +1,232 @@
+18 texts, ca
+
+[l1-009  seq 9  scene (unclassified)]
+  Jo veig el llibre.
+  I see the book.
+  El llibre és molt bo.
+  The book is very good.
+  El pare pot veure el cotxe.
+  Father can see the car.
+  El cotxe és gran.
+  The car is big.
+  introduces: ser (to be (essential quality)), poder (to be able, can), veure (to see), pare (father), llibre (book), cotxe (car), bo (good), gran (big, large)
+  reuses:     (none)
+
+[l1-010  seq 10  scene (unclassified)]
+  El germà té un any.
+  The brother is one year old.
+  El germà tanca la porta.
+  The brother closes the door.
+  El fill obre la porta.
+  The son opens the door.
+  El fill posa el llibre.
+  The son puts the book.
+  introduces: tenir (to have), any (year), fill (son, child), germà (brother), porta (door), obrir (to open), tancar (to close), posar (to put)
+  reuses:     llibre
+
+[l1-011  seq 11  scene "Food & Drink"]
+  La dona no dorm.
+  The woman does not sleep.
+  La dona creu el pare.
+  The woman believes the father.
+  El pare escriu un llibre.
+  The father writes a book.
+  El pare fa un te calent.
+  The father makes a hot tea.
+  introduces: fer (to do, to make), dona (woman), creure (to believe), escriure (to write), dormir (to sleep), calent (hot), te (tea)
+  reuses:     pare, llibre
+
+[l1-012  seq 12  scene "Home & Furniture"]
+  A l'estiu fa sol.
+  In the summer it is sunny.
+  El nen renta el cotxe.
+  The boy washes the car.
+  El nen també trenca la porta.
+  The boy also breaks the door.
+  La porta és al terra.
+  The door is on the ground.
+  introduces: nen (child, boy), trencar (to break), sol (sun), rentar (to wash), terra (floor, ground (el terra); earth, soil (la terra))
+  reuses:     ser, fer, porta, cotxe
+
+[l1-013  seq 13  scene "Home & Furniture"]
+  L'hospital és molt gran.
+  The hospital is very big.
+  La mare va a l'hospital.
+  The mother goes to the hospital.
+  L'hospital no és dolent.
+  The hospital is not bad.
+  L'hospital té bona llum.
+  The hospital has good light.
+  introduces: anar (to go), mare (mother), dolent (bad), llum (light), hospital (hospital)
+  reuses:     ser, tenir, bo, gran
+
+[l1-014  seq 14  scene "Home & Furniture"]
+  La paret és blanca.
+  The wall is white.
+  La paret sempre és neta.
+  The wall is always clean.
+  El gos mai és net.
+  The dog is never clean.
+  Però el gos és intel·ligent.
+  But the dog is intelligent.
+  introduces: blanc (white), gos (dog), paret (wall), net (clean), neta (granddaughter), intel·ligent (intelligent)
+  reuses:     ser
+
+[l1-015  seq 15  scene (unclassified)]
+  Ara plou molt.
+  Now it rains a lot.
+  Sempre plou molt.
+  It always rains a lot.
+  La dona no veu el gos.
+  The woman does not see the dog.
+  El gos dorm a la casa.
+  The dog sleeps in the house.
+  introduces: casa (house, home), ploure (to rain), veu (voice)
+  reuses:     dona, dormir, gos
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+[l1-016  seq 16  scene (unclassified)]
+  Veig el camí.
+  I see the path.
+  El camí és molt llarg.
+  The path is very long.
+  El nen va al camí.
+  The boy goes to the path.
+  El gos corre al camí.
+  The dog runs on the path.
+  introduces: camí (path, way), córrer (to run), llarg (long)
+  reuses:     ser, anar, veure, nen, gos
+
+[l1-017  seq 17  scene (unclassified)]
+  El nen va a l'escola.
+  The boy goes to school.
+  L'escola és gran.
+  The school is big.
+  El nen ja corre.
+  The boy already runs.
+  El nen corre al carrer.
+  The boy runs in the street.
+  introduces: carrer (street), escola (school)
+  reuses:     ser, anar, nen, córrer, gran
+
+[l1-018  seq 18  scene (unclassified)]
+  Veig amb un ull.
+  I see with one eye.
+  L'ull és obert.
+  The eye is open.
+  Toco amb la mà.
+  I touch with the hand.
+  Això és molt fàcil.
+  This is very easy.
+  Espero la mare.
+  I wait for the mother.
+  introduces: mà (hand), ull (eye), esperar (to wait, to hope), fàcil (easy), obert (open), tocar (to touch; to play (an instrument))
+  reuses:     ser, veure, mare
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2, #3, #4
+
+[l1-019  seq 19  scene (unclassified)]
+  Ja és de nit.
+  It is already night.
+  La nit és freda.
+  The night is cold.
+  No veig cap gos.
+  I don't see any dog.
+  El nen dorm a la nit.
+  The boy sleeps at night.
+  introduces: nit (night), fred (cold)
+  reuses:     ser, veure, nen, dormir, gos
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2, #3
+
+[l1-020  seq 20  scene (unclassified)]
+  La gent pregunta molt.
+  People ask a lot.
+  L'home alt menja sucre.
+  The tall man eats sugar.
+  El cotxe groc és gran.
+  The yellow car is big.
+  La gent mira el cotxe groc.
+  The people look at the yellow car.
+  introduces: home (man), gent (people), menjar (to eat), mirar (to look at), alt (tall, high), groc (yellow), sucre (sugar), pregunta (question)
+  reuses:     ser, cotxe, gran
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1
+
+[l1-021  seq 21  scene "Weather & Climate"]
+  El bosc és verd.
+  The forest is green.
+  El pare descansa al bosc.
+  The father rests in the forest.
+  Jo salo la carn.
+  I salt the meat.
+  La mare menja al bosc.
+  The mother eats in the forest.
+  introduces: verd (green), carn (meat), bosc (forest), salar (to salt), descansar (to rest)
+  reuses:     ser, pare, mare, menjar
+
+[l1-022  seq 22  scene "Home & Furniture"]
+  La cadira és vella.
+  The chair is old.
+  El nen seu a la cadira.
+  The boy sits on the chair.
+  El nen respon la mare.
+  The boy answers the mother.
+  La mare respon el nen.
+  The mother answers the boy.
+  introduces: respondre (to answer), vell (old), cadira (chair)
+  reuses:     ser, nen, mare
+
+[l1-023  seq 23  scene (unclassified)]
+  A l'hivern fa fred.
+  In the winter it is cold.
+  El pis és calent.
+  The apartment is warm.
+  El got és blau.
+  The glass is blue.
+  El got blau cau al pis.
+  The blue glass falls on the floor.
+  introduces: got (glass (for drinking)), pis (flat, apartment; floor), caure (to fall), blau (blue)
+  reuses:     ser, fer, calent, fred
+
+[l1-024  seq 24  scene (unclassified)]
+  L'arbre té una flor.
+  The tree has a flower.
+  A la tarda veig l'arbre.
+  In the afternoon I see the tree.
+  L'arbre té un nom.
+  The tree has a name.
+  Jo vull saber el nom.
+  I want to know the name.
+  introduces: saber (to know (a fact)), voler (to want), tarda (afternoon), nom (name), arbre (tree), flor (flower)
+  reuses:     tenir, veure
+
+[l1-025  seq 25  scene (unclassified)]
+  El nen arriba tard.
+  The boy arrives late.
+  A la mare li agrada.
+  The mother likes it.
+  El nen necessita dormir.
+  The boy needs to sleep.
+  El nen dorm molt tard.
+  The boy sleeps very late.
+  introduces: arribar (to arrive), agradar (to please, to like), necessitar (to need)
+  reuses:     nen, mare, dormir
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+[l1-026  seq 26  scene (unclassified)]
+  El pare diu hola.
+  The father says hello.
+  La mare perd la nena.
+  The mother loses the girl.
+  El pare dona aigua.
+  The father gives water.
+  Jo baixo al carrer.
+  I go down to the street.
+  introduces: dir (to say, to tell), aigua (water), perdre (to lose), baixar (to go down, to get off), nena (girl)
+  reuses:     dona, pare, mare, carrer
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1, #2
+
+new words by part of speech:
+  noun           41
+  verb           32
+  adjective      16
+
+0 reject-level defect(s), 6 flagged for review

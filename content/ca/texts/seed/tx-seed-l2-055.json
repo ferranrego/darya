@@ -1,0 +1,67 @@
+{
+  "id": "tx-seed-l2-055",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La llista del programa conté la font real.",
+      "en": "The program list contains the real source.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "llista",
+          "lexemeId": "lx-4259"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "programa",
+          "lexemeId": "lx-0632"
+        },
+        {
+          "surface": "conté",
+          "lexemeId": "lx-4256"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "font",
+          "lexemeId": "lx-1596"
+        },
+        {
+          "surface": "real",
+          "lexemeId": "lx-4410"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0032",
+    "lx-0632",
+    "lx-1596",
+    "lx-4256",
+    "lx-4259",
+    "lx-4410"
+  ],
+  "newWords": [
+    "lx-0632",
+    "lx-1596",
+    "lx-4256",
+    "lx-4259",
+    "lx-4410"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 55
+}

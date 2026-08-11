@@ -1,0 +1,98 @@
+{
+  "id": "tx-seed-l2-041",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "L'oficial dona informació sobre la llei.",
+      "en": "The officer gives information about the law.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "oficial",
+          "lexemeId": "lx-4401"
+        },
+        {
+          "surface": "dona",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "informació",
+          "lexemeId": "lx-4292"
+        },
+        {
+          "surface": "sobre",
+          "lexemeId": "lx-0707"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "llei",
+          "lexemeId": "lx-1260"
+        }
+      ]
+    },
+    {
+      "target": "El càrrec té una cara nova.",
+      "en": "The position has a new face.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "càrrec",
+          "lexemeId": "lx-4392"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "cara",
+          "lexemeId": "lx-0887"
+        },
+        {
+          "surface": "nova",
+          "lexemeId": "lx-0219"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0042",
+    "lx-0054",
+    "lx-0071",
+    "lx-0219",
+    "lx-0707",
+    "lx-0887",
+    "lx-1260",
+    "lx-4292",
+    "lx-4392",
+    "lx-4401"
+  ],
+  "newWords": [
+    "lx-0887",
+    "lx-1260",
+    "lx-4292",
+    "lx-4392",
+    "lx-4401"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 41
+}

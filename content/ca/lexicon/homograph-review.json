@@ -116,6 +116,176 @@
       "surface": "sabates",
       "correctLexemeId": "lx-1088",
       "reason": "'sabates' (shoes, plural) is its own authored headword; the collision is with 'sabata' (lx-0432)'s regular plural, same word."
+    },
+    {
+      "surface": "dona",
+      "correctLexemeId": "lx-0071",
+      "reason": "Used as the noun 'woman'."
+    },
+    {
+      "surface": "calent",
+      "correctLexemeId": "lx-0232",
+      "reason": "Used as the adjective 'hot'."
+    },
+    {
+      "surface": "neta",
+      "correctLexemeId": "lx-0906",
+      "reason": "Used as the adjective 'clean'."
+    },
+    {
+      "surface": "obert",
+      "correctLexemeId": "lx-0883",
+      "reason": "Used as the adjective 'open'."
+    },
+    {
+      "surface": "pregunta",
+      "correctLexemeId": "lx-0314",
+      "reason": "Used as the noun 'question'."
+    },
+    {
+      "surface": "nena",
+      "correctLexemeId": "lx-0907",
+      "reason": "Used as the noun 'girl'."
+    },
+    {
+      "surface": "tancat",
+      "correctLexemeId": "lx-0884",
+      "reason": "Used as the adjective 'closed'."
+    },
+    {
+      "surface": "riu",
+      "correctLexemeId": "lx-0577",
+      "reason": "Used as the noun 'river'."
+    },
+    {
+      "surface": "filla",
+      "correctLexemeId": "lx-0903",
+      "reason": "Used as the noun 'daughter'."
+    },
+    {
+      "surface": "cuina",
+      "correctLexemeId": "lx-0372",
+      "reason": "Used as the noun 'kitchen'."
+    },
+    {
+      "surface": "pantalons",
+      "correctLexemeId": "lx-0431",
+      "reason": "Used as the noun 'trousers'."
+    },
+    {
+      "surface": "rosa",
+      "correctLexemeId": "lx-4620",
+      "reason": "Used as the noun/adjective 'pink'."
+    },
+    {
+      "surface": "sec",
+      "correctLexemeId": "lx-4617",
+      "reason": "Used as the adjective 'dry'."
+    },
+    {
+      "surface": "part",
+      "correctLexemeId": "lx-0075",
+      "reason": "Used as the noun 'part'."
+    },
+    {
+      "surface": "cosa",
+      "correctLexemeId": "lx-0076",
+      "reason": "Used as the noun 'thing'."
+    },
+    {
+      "surface": "estat",
+      "correctLexemeId": "lx-1257",
+      "reason": "Used as the noun 'state'."
+    },
+    {
+      "surface": "mort",
+      "correctLexemeId": "lx-4210",
+      "reason": "Used as the noun 'death'."
+    },
+    {
+      "surface": "cos",
+      "correctLexemeId": "lx-0405",
+      "reason": "Used as the noun 'body'."
+    },
+    {
+      "surface": "cursa",
+      "correctLexemeId": "lx-3954",
+      "reason": "Used as the noun 'race'."
+    },
+    {
+      "surface": "parella",
+      "correctLexemeId": "lx-0912",
+      "reason": "Used as the noun 'couple'."
+    },
+    {
+      "surface": "vol",
+      "correctLexemeId": "lx-1007",
+      "reason": "Used as the noun 'flight'."
+    },
+    {
+      "surface": "partit",
+      "correctLexemeId": "lx-0973",
+      "reason": "Used as the noun 'match/party'."
+    },
+    {
+      "surface": "pla",
+      "correctLexemeId": "lx-0864",
+      "reason": "Used as the noun 'plan'."
+    },
+    {
+      "surface": "dit",
+      "correctLexemeId": "lx-0890",
+      "reason": "Used as the noun 'finger'."
+    },
+    {
+      "surface": "causa",
+      "correctLexemeId": "lx-1357",
+      "reason": "Used as the noun 'cause'."
+    },
+    {
+      "surface": "veu",
+      "correctLexemeId": "lx-2948",
+      "reason": "Used as the noun 'voice'."
+    },
+    {
+      "surface": "prova",
+      "correctLexemeId": "lx-1135",
+      "reason": "Used as the noun 'evidence'."
+    },
+    {
+      "surface": "cara",
+      "correctLexemeId": "lx-0887",
+      "reason": "Used as the noun 'face'."
+    },
+    {
+      "surface": "baixa",
+      "correctLexemeId": "lx-2374",
+      "reason": "Used as the noun 'sick leave'."
+    },
+    {
+      "surface": "conegut",
+      "correctLexemeId": "lx-3824",
+      "reason": "Used as the noun 'acquaintance'."
+    },
+    {
+      "surface": "assassinat",
+      "correctLexemeId": "lx-1127",
+      "reason": "Used as the noun 'murder'."
+    },
+    {
+      "surface": "política",
+      "correctLexemeId": "lx-1280",
+      "reason": "Used as the noun 'politics'."
+    },
+    {
+      "surface": "sala",
+      "correctLexemeId": "lx-0701",
+      "reason": "Used as the noun 'room'."
+    },
+    {
+      "surface": "resultat",
+      "correctLexemeId": "lx-0782",
+      "reason": "Used as the noun 'result'."
     }
   ]
 }

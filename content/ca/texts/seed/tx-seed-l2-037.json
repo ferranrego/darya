@@ -1,0 +1,98 @@
+{
+  "id": "tx-seed-l2-037",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La policia parteix de l'estudi del consell.",
+      "en": "The police depart from the council's study.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "policia",
+          "lexemeId": "lx-1136"
+        },
+        {
+          "surface": "parteix",
+          "lexemeId": "lx-4381"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estudi",
+          "lexemeId": "lx-4345"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "consell",
+          "lexemeId": "lx-1883"
+        }
+      ]
+    },
+    {
+      "target": "Ells representen el grup fort.",
+      "en": "They represent the strong group.",
+      "tokens": [
+        {
+          "surface": "Ells",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "representen",
+          "lexemeId": "lx-4514"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "grup",
+          "lexemeId": "lx-1625"
+        },
+        {
+          "surface": "fort",
+          "lexemeId": "lx-0486"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0246",
+    "lx-0486",
+    "lx-1136",
+    "lx-1625",
+    "lx-1883",
+    "lx-4345",
+    "lx-4381",
+    "lx-4514"
+  ],
+  "newWords": [
+    "lx-1136",
+    "lx-1883",
+    "lx-4345",
+    "lx-4381",
+    "lx-4514"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 37
+}

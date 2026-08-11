@@ -1,0 +1,69 @@
+{
+  "id": "tx-seed-l2-060",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "L'agent i el capità fan el projecte bonic.",
+      "en": "The officer and the captain make the beautiful project.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "agent",
+          "lexemeId": "lx-1137"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "capità",
+          "lexemeId": "lx-4409"
+        },
+        {
+          "surface": "fan",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "projecte",
+          "lexemeId": "lx-0535"
+        },
+        {
+          "surface": "bonic",
+          "lexemeId": "lx-0228"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0033",
+    "lx-0053",
+    "lx-0228",
+    "lx-0535",
+    "lx-1137",
+    "lx-4409"
+  ],
+  "newWords": [
+    "lx-0535",
+    "lx-1137",
+    "lx-4409"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 60
+}

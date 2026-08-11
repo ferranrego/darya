@@ -1,0 +1,163 @@
+{
+  "id": "tx-seed-l2-025",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "La resta",
+  "titleEn": "The rest",
+  "sentences": [
+    {
+      "target": "El cotxe antic guanya la cursa.",
+      "en": "The old car wins the race.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "antic",
+          "lexemeId": "lx-0705"
+        },
+        {
+          "surface": "guanya",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "cursa",
+          "lexemeId": "lx-3954"
+        }
+      ]
+    },
+    {
+      "target": "No m'agrada un cotxe tal.",
+      "en": "I don't like such a car.",
+      "tokens": [
+        {
+          "surface": "No",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "m'",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "agrada",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        },
+        {
+          "surface": "tal",
+          "lexemeId": "lx-4160"
+        }
+      ]
+    },
+    {
+      "target": "La resta pot convertir aigua en vi.",
+      "en": "The rest can convert water into wine.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "resta",
+          "lexemeId": "lx-4376"
+        },
+        {
+          "surface": "pot",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "convertir",
+          "lexemeId": "lx-3173"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "vi",
+          "lexemeId": "lx-0292"
+        }
+      ]
+    },
+    {
+      "target": "Vull guanyar tota la resta.",
+      "en": "I want to win all the rest.",
+      "tokens": [
+        {
+          "surface": "Vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "guanyar",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "tota",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "resta",
+          "lexemeId": "lx-4376"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0031",
+    "lx-0032",
+    "lx-0036",
+    "lx-0037",
+    "lx-0039",
+    "lx-0050",
+    "lx-0055",
+    "lx-0060",
+    "lx-0079",
+    "lx-0100",
+    "lx-0189",
+    "lx-0209",
+    "lx-0292",
+    "lx-0705",
+    "lx-3173",
+    "lx-3954",
+    "lx-4160",
+    "lx-4376"
+  ],
+  "newWords": [
+    "lx-0189",
+    "lx-0292",
+    "lx-0705",
+    "lx-3173",
+    "lx-3954",
+    "lx-4160",
+    "lx-4376"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 25
+}

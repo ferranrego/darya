@@ -1,0 +1,73 @@
+{
+  "id": "tx-seed-l2-043",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Aleshores preparen la nau per tenir un control total.",
+      "en": "Then they prepare the ship to have total control.",
+      "tokens": [
+        {
+          "surface": "Aleshores",
+          "lexemeId": "lx-4379"
+        },
+        {
+          "surface": "preparen",
+          "lexemeId": "lx-0190"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "nau",
+          "lexemeId": "lx-1695"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "tenir",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "control",
+          "lexemeId": "lx-1546"
+        },
+        {
+          "surface": "total",
+          "lexemeId": "lx-4385"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0032",
+    "lx-0037",
+    "lx-0040",
+    "lx-0054",
+    "lx-0190",
+    "lx-1546",
+    "lx-1695",
+    "lx-4379",
+    "lx-4385"
+  ],
+  "newWords": [
+    "lx-0190",
+    "lx-1546",
+    "lx-1695",
+    "lx-4379",
+    "lx-4385"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 43
+}

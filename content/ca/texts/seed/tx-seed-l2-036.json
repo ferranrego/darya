@@ -1,0 +1,151 @@
+{
+  "id": "tx-seed-l2-036",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Quin color t'agrada més?",
+      "en": "What color do you like more?",
+      "tokens": [
+        {
+          "surface": "Quin",
+          "lexemeId": "lx-0021"
+        },
+        {
+          "surface": "color",
+          "lexemeId": "lx-0443"
+        },
+        {
+          "surface": "t'",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "agrada",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "més",
+          "lexemeId": "lx-0046"
+        }
+      ]
+    },
+    {
+      "target": "El nen mitjà llegeix bé.",
+      "en": "The middle child reads well.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "mitjà",
+          "lexemeId": "lx-0660"
+        },
+        {
+          "surface": "llegeix",
+          "lexemeId": "lx-0116"
+        },
+        {
+          "surface": "bé",
+          "lexemeId": "lx-0002"
+        }
+      ]
+    },
+    {
+      "target": "Aquesta és una prova fàcil.",
+      "en": "This is an easy test.",
+      "tokens": [
+        {
+          "surface": "Aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "prova",
+          "lexemeId": "lx-1135"
+        },
+        {
+          "surface": "fàcil",
+          "lexemeId": "lx-0226"
+        }
+      ]
+    },
+    {
+      "target": "Al final del terme, estem contents.",
+      "en": "At the end of the term, we are happy.",
+      "tokens": [
+        {
+          "surface": "Al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "final",
+          "lexemeId": "lx-4208"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "terme",
+          "lexemeId": "lx-4337"
+        },
+        {
+          "surface": "estem",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "contents",
+          "lexemeId": "lx-0230"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0008",
+    "lx-0021",
+    "lx-0022",
+    "lx-0023",
+    "lx-0031",
+    "lx-0038",
+    "lx-0042",
+    "lx-0046",
+    "lx-0063",
+    "lx-0064",
+    "lx-0078",
+    "lx-0116",
+    "lx-0209",
+    "lx-0226",
+    "lx-0230",
+    "lx-0443",
+    "lx-0660",
+    "lx-1135",
+    "lx-4208",
+    "lx-4337"
+  ],
+  "newWords": [
+    "lx-0116",
+    "lx-0443",
+    "lx-0660",
+    "lx-1135",
+    "lx-4337"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 36
+}

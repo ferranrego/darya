@@ -1,0 +1,132 @@
+{
+  "id": "tx-seed-l1-030",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La finestra és gran.",
+      "en": "The window is big.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "finestra",
+          "lexemeId": "lx-0369"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "Jo tinc la clau vermella.",
+      "en": "I have the red key.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "tinc",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "clau",
+          "lexemeId": "lx-0928"
+        },
+        {
+          "surface": "vermella",
+          "lexemeId": "lx-0236"
+        }
+      ]
+    },
+    {
+      "target": "La meva habitació és nova.",
+      "en": "My room is new.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "habitació",
+          "lexemeId": "lx-0923"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "nova",
+          "lexemeId": "lx-0219"
+        }
+      ]
+    },
+    {
+      "target": "El llit és aquí.",
+      "en": "The bed is here.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "llit",
+          "lexemeId": "lx-0365"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "aquí",
+          "lexemeId": "lx-0252"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0054",
+    "lx-0217",
+    "lx-0219",
+    "lx-0236",
+    "lx-0240",
+    "lx-0248",
+    "lx-0252",
+    "lx-0365",
+    "lx-0369",
+    "lx-0923",
+    "lx-0928"
+  ],
+  "newWords": [
+    "lx-0236",
+    "lx-0365",
+    "lx-0369",
+    "lx-0923",
+    "lx-0928"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 30
+}

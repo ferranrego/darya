@@ -1,0 +1,284 @@
+22 texts, ca
+
+[l2-009  seq 9  scene (unclassified)]
+  El meu país és gran.
+  My country is big.
+  Hi ha un canvi al país.
+  There is a change in the country.
+  El canvi és molt bo, però és difícil.
+  The change is very good, but it is difficult.
+  M'agrada molt el meu país.
+  I like my country a lot.
+  introduces: ser (to be (essential quality)), haver (to have (auxiliary)), país (country), agradar (to please, to like), bo (good), gran (big, large), difícil (difficult), canvi (change)
+  reuses:     (none)
+
+[l2-010  seq 10  scene (unclassified)]
+  El nen comença l'escola avui.
+  The boy begins school today.
+  Ell vol acabar d'hora perquè està cansat.
+  He wants to finish early because he is tired.
+  La mare acaba la feina al vespre.
+  The mother finishes work in the evening.
+  Quan ella acaba, va a casa.
+  When she finishes, she goes home.
+  introduces: cansat (tired), anar (to go), estar (to be (state, location)), casa (house, home), nen (child, boy), feina (work, job), mare (mother), escola (school), començar (to begin), acabar (to finish), hora (hour, time), vol (flight), vespre (evening)
+  reuses:     (none)
+
+[l2-011  seq 11  scene "Home & Furniture"]
+  Aquesta casa té molt espai.
+  This house has a lot of space.
+  L'espai és necessari per jugar.
+  Space is necessary to play.
+  El nen juga en un espai petit.
+  The boy plays in a small space.
+  L'espai és molt gran.
+  The space is very big.
+  introduces: tenir (to have), jugar (to play), petit (small), espai (space), necessari (necessary)
+  reuses:     ser, casa, nen, gran
+
+[l2-012  seq 12  scene "Home & Furniture"]
+  El pare ha de marxar ara.
+  The father has to leave now.
+  El got cau a terra i es trenca.
+  The glass falls to the floor and breaks.
+  Quan marxem, plou.
+  When we leave, it rains.
+  Hem de marxar molt aviat.
+  We have to leave very early.
+  introduces: pare (father), got (glass (for drinking)), trencar (to break), caure (to fall), marxar (to leave, to go away), ploure (to rain), terra (floor, ground (el terra); earth, soil (la terra))
+  reuses:     haver
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+[l2-013  seq 13  scene "Emotions & Feelings"]
+  Sento un so al carrer.
+  I hear a sound in the street.
+  El so és molt fort, però no tinc por.
+  The sound is very strong, but I am not afraid.
+  Aquest so no m'agrada gens.
+  I don't like this sound at all.
+  És un so de la ciutat.
+  It is a sound of the city.
+  introduces: ciutat (city), carrer (street), sentir (to feel, to hear), fort (strong), por (fear), so (sound), gens (not at all)
+  reuses:     ser, tenir, agradar
+  ✗ sentence-length: 1 sentence(s) over 8 words at L2: #1 (9)
+
+[l2-014  seq 14  scene "Food & Drink"]
+  Vull prendre un cafè amb llet.
+  I want to take a coffee with milk.
+  Ell pren aigua perquè fa calor.
+  He takes water because it is hot.
+  El meu germà pren el tren al matí.
+  My brother takes the train in the morning.
+  Jo prenc aigua i tu prens te.
+  I take water and you take tea.
+  introduces: fer (to do, to make), voler (to want), aigua (water), matí (morning), germà (brother), prendre (to take), llet (milk), cafè (coffee), tren (train), te (tea), calor (heat)
+  reuses:     (none)
+
+[l2-015  seq 15  scene "Home & Furniture"]
+  Una part de la casa és vella.
+  A part of the house is old.
+  La cama em fa molt mal.
+  My leg hurts a lot.
+  Quina cosa més estranya!
+  What a strange thing!
+  Veig una cosa a la paret.
+  I see a thing on the wall.
+  introduces: veure (to see), part (part), cosa (thing), mal (harm, ache (fer mal = to hurt)), vell (old), paret (wall), cama (leg), estranyar (to surprise, to strike as odd (m'estranya que…))
+  reuses:     ser, fer, casa
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+[l2-016  seq 16  scene (unclassified)]
+  La majoria de la gent no ho sap.
+  The majority of the people don't know it.
+  A l'escola, la majoria juga al pati.
+  At school, the majority play in the yard.
+  La majoria vol tornar aviat.
+  The majority want to return early.
+  La majoria va a la ciutat.
+  The majority goes to the beach.
+  introduces: ho (it (refers to a whole idea, not a noun)), saber (to know (a fact)), gent (people), tornar (to return), majoria (majority), pati (courtyard, playground)
+  reuses:     anar, ciutat, escola, jugar, vol
+
+[l2-017  seq 17  scene (unclassified)]
+  Deixa el llibre a la taula.
+  Leave the book on the table.
+  Ell no em deixa sortir de nit.
+  He does not let me go out at night.
+  He deixat el cotxe al carrer.
+  I have left the car in the street.
+  Sempre ho deixo a casa.
+  I always leave it here.
+  introduces: nit (night), llibre (book), taula (table), cotxe (car), deixar (to leave, to let), sortir (to go out, to leave)
+  reuses:     haver, casa, carrer
+
+[l2-018  seq 18  scene (unclassified)]
+  El nen sap comptar fins a deu.
+  The boy knows how to count to ten.
+  Jo sempre puc comptar amb tu.
+  I can always count on you.
+  La mare compta els diners.
+  The mother counts the money.
+  Compto amb la teva mare.
+  I count on your mother.
+  introduces: poder (to be able, can), comptar (to count), diners (money)
+  reuses:     saber, nen, mare
+
+[l2-019  seq 19  scene (unclassified)]
+  Potser demà plourà.
+  Maybe tomorrow it will rain.
+  El pare potser arribarà tard.
+  The father will perhaps arrive late.
+  Potser no és una bona idea.
+  Maybe it is not a good idea.
+  Potser plou a la tarda.
+  Maybe it rains in the afternoon.
+  introduces: tarda (afternoon), arribar (to arrive), potser (maybe, perhaps), idea (idea)
+  reuses:     ser, pare, ploure, bo
+
+[l2-020  seq 20  scene (unclassified)]
+  L'estat té un rei.
+  The state has a king.
+  Al final, el rei cau.
+  At the end, the king falls.
+  L'home s'anomena rei.
+  The man is called king.
+  La mort del rei és el final.
+  The death of the king is the end.
+  introduces: home (man), estat (state), final (end, ending), mort (death), rei (king), anomenar (to call, to name)
+  reuses:     ser, tenir, caure
+
+[l2-021  seq 21  scene (unclassified)]
+  Aquest grup tracta un tema general.
+  This group deals with a general topic.
+  Ell és l'únic que pot servir aigua.
+  He is the only one who can serve water.
+  El general serveix a l'estat.
+  The general serves the state.
+  El grup tracta de ser fort.
+  The group tries to be strong.
+  introduces: servir (to serve, to be useful), grup (group), tema (topic, subject), tractar (to treat; to deal with), general (general), únic (only, unique)
+  reuses:     ser, poder, aigua, fort, estat
+
+[l2-022  seq 22  scene "Weather & Climate"]
+  Cal trobar el cos al bosc.
+  It is necessary to find the body in the forest.
+  El vol principal surt aviat.
+  The main flight leaves early.
+  La banda toca al final del carrer.
+  The band plays at the end of the street.
+  Cal anar a la banda principal.
+  We must go to the main band.
+  introduces: trobar (to find), caldre (to be necessary (cal = it is necessary)), cos (body), bosc (forest), banda (band), principal (main, principal), tocar (to touch; to play (an instrument))
+  reuses:     anar, carrer, sortir, vol, final
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+[l2-023  seq 23  scene (unclassified)]
+  Quin tipus de problema tenim?
+  What type of problem do we have?
+  El professor presenta un problema difícil.
+  The teacher presents a difficult problem.
+  No em permeten rebre visites a l'hospital.
+  They don't allow me to receive visits at the hospital.
+  Rebo un tipus de carta especial.
+  I receive a special type of letter.
+  introduces: professor (teacher), hospital (hospital), problema (problem), rebre (to receive), tipus (rate), visitar (to visit), carta (letter; menu), especial (special), permetre (to allow, to permit), presentar (to present, to introduce)
+  reuses:     tenir, difícil
+
+[l2-024  seq 24  scene "Weather & Climate"]
+  El meu propi germà vol matar l'animal.
+  My own brother wants to kill the animal.
+  Aquesta obra canvia tot el sistema.
+  This construction changes the whole system.
+  Considerem que l'obra és bona.
+  We consider that the work is good.
+  El sistema propi funciona bé.
+  The own system works well.
+  introduces: bé (well), canviar (to change), animal (animal), sistema (system), considerar (to consider), obra (construction work), funcionar (to work, to function), matar (to kill), propi (own)
+  reuses:     ser, germà, bo, vol
+
+[l2-025  seq 25  scene "Food & Drink"]
+  El cotxe antic guanya la cursa.
+  The old car wins the race.
+  No m'agrada un cotxe tal.
+  I don't like such a car.
+  La resta pot convertir aigua en vi.
+  The rest can convert water into wine.
+  Vull guanyar tota la resta.
+  I want to win all the rest.
+  introduces: guanyar (to win, to earn), vi (wine), antic (old), convertir (to convert), cursa (race), tal (such, of this kind), resta (the rest, remainder)
+  reuses:     poder, voler, aigua, cotxe, agradar
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+[l2-026  seq 26  scene (unclassified)]
+  L'home ha de crear un edifici alt.
+  The man has to create a tall building.
+  La segona porta ens fa aturar aquí.
+  The second door makes us stop here.
+  Mantenim l'edifici obert tot l'any.
+  We keep the building open all year.
+  Atura la segona persona.
+  Stop the second person.
+  introduces: persona (person), any (year), porta (door), alt (tall, high), obert (open), aturar (to stop), edifici (building), mantenir (to maintain), segona ([not a headword: Feminine of 'segon', which the morphology engine already generates.]), crear (to create)
+  reuses:     fer, haver, home
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2, #3
+
+[l2-027  seq 27  scene (unclassified)]
+  La dona continua amb el servei.
+  The woman continues with the service.
+  Formar un equip no és fàcil.
+  To form a team is not easy.
+  Hem d'intentar canviar la ciutat aviat.
+  We must try to change the city soon.
+  Canviar no és fàcil, però ho intento.
+  Changing is not easy, but I try.
+  introduces: dona (woman), fàcil (easy), servei (service), equip (team), intentar (to try), continuar (to continue, to carry on), formar (to form)
+  reuses:     ser, haver, ciutat, canviar
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1, #2
+
+[l2-028  seq 28  scene (unclassified)]
+  L'empresa del sud té una zona oberta.
+  The company from the south has an open area.
+  Puc enviar un missatge divers.
+  I can send a diverse message.
+  La zona del sud és molt gran.
+  The southern area is very big.
+  L'empresa enviarà el paquet.
+  The company will send the package.
+  introduces: obrir (to open), enviar (to send), missatge (message), empresa (company), paquet (package), sud (south), zona (area, zone), divers (diverse, various)
+  reuses:     ser, tenir, poder, gran
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1, #2, #3
+
+[l2-029  seq 29  scene (unclassified)]
+  El germà major juga en un equip gran.
+  The older brother plays in a big team.
+  La parella arriba al centre del pas.
+  The couple arrives at the center of the crossing.
+  L'equip dona un gran pas endavant.
+  The team takes a great step forward.
+  La meva parella és major que jo.
+  My partner is older than me.
+  introduces: parella (partner/couple), pas (crossing), major (older, elder), centre (center)
+  reuses:     ser, dona, germà, arribar, jugar, gran, equip
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #1
+
+[l2-030  seq 30  scene "Home & Furniture"]
+  La relació amb el govern és clau.
+  The relationship with the government is key.
+  El dret de lluitar és bo.
+  The right to fight is good.
+  Tinc una idea dreta sobre la relació.
+  I have a straight idea about the relationship.
+  El govern lluita per tenir una bona relació.
+  The government fights to have a good relationship.
+  introduces: dret (straight), clau (key), govern (government), relació (relationship), lluitar (to fight, to struggle)
+  reuses:     ser, tenir, bo, idea
+  ⚠ cohesion: sentence(s) sharing no lexeme and no anaphor with the previous one: #2
+
+new words by part of speech:
+  noun           81
+  verb           51
+  adjective      20
+  adverb          4
+  pronoun         1
+
+1 reject-level defect(s), 9 flagged for review

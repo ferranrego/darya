@@ -1,0 +1,122 @@
+{
+  "id": "tx-seed-l1-049",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El barret és barat.",
+      "en": "The hat is cheap.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "barret",
+          "lexemeId": "lx-0434"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "barat",
+          "lexemeId": "lx-0649"
+        }
+      ]
+    },
+    {
+      "target": "Els pantalons són blaus.",
+      "en": "The trousers are blue.",
+      "tokens": [
+        {
+          "surface": "Els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "pantalons",
+          "lexemeId": "lx-0431"
+        },
+        {
+          "surface": "són",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "blaus",
+          "lexemeId": "lx-0237"
+        }
+      ]
+    },
+    {
+      "target": "La camisa és blanca.",
+      "en": "The shirt is white.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "camisa",
+          "lexemeId": "lx-0433"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "blanca",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "La jaqueta és gran.",
+      "en": "The jacket is big.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "jaqueta",
+          "lexemeId": "lx-0899"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0043",
+    "lx-0217",
+    "lx-0234",
+    "lx-0237",
+    "lx-0431",
+    "lx-0433",
+    "lx-0434",
+    "lx-0649",
+    "lx-0899"
+  ],
+  "newWords": [
+    "lx-0431",
+    "lx-0433",
+    "lx-0434",
+    "lx-0649",
+    "lx-0899"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 49
+}

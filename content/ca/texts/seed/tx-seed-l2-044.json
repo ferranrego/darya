@@ -1,0 +1,186 @@
+{
+  "id": "tx-seed-l2-044",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El seu objectiu és ajudar.",
+      "en": "His objective is to help.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "seu",
+          "lexemeId": "lx-0250"
+        },
+        {
+          "surface": "objectiu",
+          "lexemeId": "lx-0549"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "ajudar",
+          "lexemeId": "lx-0207"
+        }
+      ]
+    },
+    {
+      "target": "Ell dona suport a la mare.",
+      "en": "He gives support to the mother.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "dona",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "suport",
+          "lexemeId": "lx-1820"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "mare",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "Això és un exemple d'amor.",
+      "en": "This is an example of love.",
+      "tokens": [
+        {
+          "surface": "Això",
+          "lexemeId": "lx-0683"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "exemple",
+          "lexemeId": "lx-4065"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "amor",
+          "lexemeId": "lx-0600"
+        }
+      ]
+    },
+    {
+      "target": "Ella agafa la baixa avui.",
+      "en": "She takes sick leave today.",
+      "tokens": [
+        {
+          "surface": "Ella",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "agafa",
+          "lexemeId": "lx-1616"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "baixa",
+          "lexemeId": "lx-2374"
+        },
+        {
+          "surface": "avui",
+          "lexemeId": "lx-0259"
+        }
+      ]
+    },
+    {
+      "target": "Ella és el número u.",
+      "en": "She is number one.",
+      "tokens": [
+        {
+          "surface": "Ella",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "número",
+          "lexemeId": "lx-4393"
+        },
+        {
+          "surface": "u",
+          "lexemeId": "lx-0448"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0037",
+    "lx-0038",
+    "lx-0071",
+    "lx-0090",
+    "lx-0207",
+    "lx-0242",
+    "lx-0243",
+    "lx-0250",
+    "lx-0259",
+    "lx-0448",
+    "lx-0549",
+    "lx-0600",
+    "lx-0683",
+    "lx-1616",
+    "lx-1820",
+    "lx-2374",
+    "lx-4065",
+    "lx-4393"
+  ],
+  "newWords": [
+    "lx-0207",
+    "lx-0448",
+    "lx-0549",
+    "lx-0600",
+    "lx-1616",
+    "lx-1820",
+    "lx-2374",
+    "lx-4065",
+    "lx-4393"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 44
+}

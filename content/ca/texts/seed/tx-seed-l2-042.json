@@ -1,0 +1,98 @@
+{
+  "id": "tx-seed-l2-042",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El castell existeix i interessa a la gent.",
+      "en": "The castle exists and interests the people.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "castell",
+          "lexemeId": "lx-0982"
+        },
+        {
+          "surface": "existeix",
+          "lexemeId": "lx-4127"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "interessa",
+          "lexemeId": "lx-0510"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "gent",
+          "lexemeId": "lx-0077"
+        }
+      ]
+    },
+    {
+      "target": "El nombre significa alguna cosa.",
+      "en": "The number means something.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nombre",
+          "lexemeId": "lx-4400"
+        },
+        {
+          "surface": "significa",
+          "lexemeId": "lx-4420"
+        },
+        {
+          "surface": "alguna",
+          "lexemeId": "lx-0856"
+        },
+        {
+          "surface": "cosa",
+          "lexemeId": "lx-0076"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0034",
+    "lx-0076",
+    "lx-0077",
+    "lx-0510",
+    "lx-0856",
+    "lx-0982",
+    "lx-4127",
+    "lx-4400",
+    "lx-4420"
+  ],
+  "newWords": [
+    "lx-0510",
+    "lx-0982",
+    "lx-4127",
+    "lx-4400",
+    "lx-4420"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 42
+}

@@ -1,0 +1,145 @@
+{
+  "id": "tx-seed-l1-045",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La meva filla és petita.",
+      "en": "My daughter is small.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meva",
+          "lexemeId": "lx-0248"
+        },
+        {
+          "surface": "filla",
+          "lexemeId": "lx-0903"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petita",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "El seu marit és alt.",
+      "en": "Her husband is tall.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "seu",
+          "lexemeId": "lx-0250"
+        },
+        {
+          "surface": "marit",
+          "lexemeId": "lx-0910"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "alt",
+          "lexemeId": "lx-0222"
+        }
+      ]
+    },
+    {
+      "target": "La seva germana és aquí.",
+      "en": "Her sister is here.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "seva",
+          "lexemeId": "lx-0250"
+        },
+        {
+          "surface": "germana",
+          "lexemeId": "lx-0904"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "aquí",
+          "lexemeId": "lx-0252"
+        }
+      ]
+    },
+    {
+      "target": "L'avi i l'àvia mengen.",
+      "en": "The grandfather and the grandmother eat.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "avi",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "àvia",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "mengen",
+          "lexemeId": "lx-0101"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0033",
+    "lx-0038",
+    "lx-0101",
+    "lx-0218",
+    "lx-0222",
+    "lx-0248",
+    "lx-0250",
+    "lx-0252",
+    "lx-0343",
+    "lx-0344",
+    "lx-0903",
+    "lx-0904",
+    "lx-0910"
+  ],
+  "newWords": [
+    "lx-0343",
+    "lx-0344",
+    "lx-0903",
+    "lx-0904",
+    "lx-0910"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 45
+}

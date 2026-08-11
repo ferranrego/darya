@@ -1,0 +1,143 @@
+{
+  "id": "tx-seed-l1-012",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "L'estiu",
+  "titleEn": "The summer",
+  "sentences": [
+    {
+      "target": "A l'estiu fa sol.",
+      "en": "In the summer it is sunny.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "estiu",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "sol",
+          "lexemeId": "lx-0325"
+        }
+      ]
+    },
+    {
+      "target": "El nen renta el cotxe.",
+      "en": "The boy washes the car.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "renta",
+          "lexemeId": "lx-0373"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "cotxe",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "El nen també trenca la porta.",
+      "en": "The boy also breaks the door.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "també",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "trenca",
+          "lexemeId": "lx-0144"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "La porta és al terra.",
+      "en": "The door is on the ground.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "terra",
+          "lexemeId": "lx-0382"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0053",
+    "lx-0065",
+    "lx-0078",
+    "lx-0098",
+    "lx-0100",
+    "lx-0139",
+    "lx-0144",
+    "lx-0325",
+    "lx-0373",
+    "lx-0382"
+  ],
+  "newWords": [
+    "lx-0144",
+    "lx-0373",
+    "lx-0382"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 12
+}

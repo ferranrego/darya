@@ -1,0 +1,153 @@
+{
+  "id": "tx-seed-l2-038",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El president és un home lliure.",
+      "en": "The president is a free man.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "president",
+          "lexemeId": "lx-1268"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "home",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "lliure",
+          "lexemeId": "lx-4404"
+        }
+      ]
+    },
+    {
+      "target": "Ell mira molt d'art.",
+      "en": "He looks at a lot of art.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "mira",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "d'",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "art",
+          "lexemeId": "lx-0978"
+        }
+      ]
+    },
+    {
+      "target": "No vol tenir cap arma.",
+      "en": "He doesn't want to have any weapon.",
+      "tokens": [
+        {
+          "surface": "No",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "vol",
+          "lexemeId": "lx-1007"
+        },
+        {
+          "surface": "tenir",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "cap",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "arma",
+          "lexemeId": "lx-4411"
+        }
+      ]
+    },
+    {
+      "target": "És molt actiu tot el dia.",
+      "en": "He is very active all day.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "actiu",
+          "lexemeId": "lx-2253"
+        },
+        {
+          "surface": "tot",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "dia",
+          "lexemeId": "lx-0068"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0037",
+    "lx-0038",
+    "lx-0039",
+    "lx-0050",
+    "lx-0052",
+    "lx-0054",
+    "lx-0068",
+    "lx-0070",
+    "lx-0083",
+    "lx-0114",
+    "lx-0242",
+    "lx-0978",
+    "lx-1007",
+    "lx-1268",
+    "lx-2253",
+    "lx-4404",
+    "lx-4411"
+  ],
+  "newWords": [
+    "lx-0978",
+    "lx-1268",
+    "lx-2253",
+    "lx-4404",
+    "lx-4411"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 38
+}

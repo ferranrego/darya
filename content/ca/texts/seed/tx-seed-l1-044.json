@@ -1,0 +1,129 @@
+{
+  "id": "tx-seed-l1-044",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El metge és aquí.",
+      "en": "The doctor is here.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "metge",
+          "lexemeId": "lx-0407"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "aquí",
+          "lexemeId": "lx-0252"
+        }
+      ]
+    },
+    {
+      "target": "Ell té un dolor.",
+      "en": "He has a pain.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "dolor",
+          "lexemeId": "lx-0410"
+        }
+      ]
+    },
+    {
+      "target": "L'home està malalt.",
+      "en": "The man is sick.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "home",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "està",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "malalt",
+          "lexemeId": "lx-0895"
+        }
+      ]
+    },
+    {
+      "target": "La medicina és molt lleugera.",
+      "en": "The medicine is very light.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "medicina",
+          "lexemeId": "lx-4498"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "lleugera",
+          "lexemeId": "lx-4359"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0052",
+    "lx-0054",
+    "lx-0063",
+    "lx-0070",
+    "lx-0242",
+    "lx-0252",
+    "lx-0407",
+    "lx-0410",
+    "lx-0895",
+    "lx-4359",
+    "lx-4498"
+  ],
+  "newWords": [
+    "lx-0407",
+    "lx-0410",
+    "lx-0895",
+    "lx-4359",
+    "lx-4498"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 44
+}

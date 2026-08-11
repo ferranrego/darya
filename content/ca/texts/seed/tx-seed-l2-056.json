@@ -1,0 +1,78 @@
+{
+  "id": "tx-seed-l2-056",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Els militars superiors ataquen i mostren la fi del camí.",
+      "en": "The superior militaries attack and show the end of the path.",
+      "tokens": [
+        {
+          "surface": "Els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "militars",
+          "lexemeId": "lx-4431"
+        },
+        {
+          "surface": "superiors",
+          "lexemeId": "lx-4423"
+        },
+        {
+          "surface": "ataquen",
+          "lexemeId": "lx-4488"
+        },
+        {
+          "surface": "i",
+          "lexemeId": "lx-0033"
+        },
+        {
+          "surface": "mostren",
+          "lexemeId": "lx-4585"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "fi",
+          "lexemeId": "lx-4145"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "camí",
+          "lexemeId": "lx-0127"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0032",
+    "lx-0033",
+    "lx-0043",
+    "lx-0127",
+    "lx-4145",
+    "lx-4423",
+    "lx-4431",
+    "lx-4488",
+    "lx-4585"
+  ],
+  "newWords": [
+    "lx-4145",
+    "lx-4423",
+    "lx-4431",
+    "lx-4488",
+    "lx-4585"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 56
+}

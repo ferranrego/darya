@@ -1,0 +1,170 @@
+{
+  "id": "tx-seed-l2-023",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El problema",
+  "titleEn": "The problem",
+  "sentences": [
+    {
+      "target": "Quin tipus de problema tenim?",
+      "en": "What type of problem do we have?",
+      "tokens": [
+        {
+          "surface": "Quin",
+          "lexemeId": "lx-0021"
+        },
+        {
+          "surface": "tipus",
+          "lexemeId": "lx-2418"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "problema",
+          "lexemeId": "lx-1019"
+        },
+        {
+          "surface": "tenim",
+          "lexemeId": "lx-0054"
+        }
+      ]
+    },
+    {
+      "target": "El professor presenta un problema difícil.",
+      "en": "The teacher presents a difficult problem.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "professor",
+          "lexemeId": "lx-0309"
+        },
+        {
+          "surface": "presenta",
+          "lexemeId": "lx-4458"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "problema",
+          "lexemeId": "lx-1019"
+        },
+        {
+          "surface": "difícil",
+          "lexemeId": "lx-0227"
+        }
+      ]
+    },
+    {
+      "target": "No em permeten rebre visites a l'hospital.",
+      "en": "They don't allow me to receive visits at the hospital.",
+      "tokens": [
+        {
+          "surface": "No",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "em",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "permeten",
+          "lexemeId": "lx-4428"
+        },
+        {
+          "surface": "rebre",
+          "lexemeId": "lx-1064"
+        },
+        {
+          "surface": "visites",
+          "lexemeId": "lx-4075"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "hospital",
+          "lexemeId": "lx-0408"
+        }
+      ]
+    },
+    {
+      "target": "Rebo un tipus de carta especial.",
+      "en": "I receive a special type of letter.",
+      "tokens": [
+        {
+          "surface": "Rebo",
+          "lexemeId": "lx-1064"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "tipus",
+          "lexemeId": "lx-2418"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "carta",
+          "lexemeId": "lx-4101"
+        },
+        {
+          "surface": "especial",
+          "lexemeId": "lx-4408"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0021",
+    "lx-0030",
+    "lx-0031",
+    "lx-0034",
+    "lx-0037",
+    "lx-0039",
+    "lx-0054",
+    "lx-0227",
+    "lx-0309",
+    "lx-0408",
+    "lx-1019",
+    "lx-1064",
+    "lx-2418",
+    "lx-4075",
+    "lx-4101",
+    "lx-4408",
+    "lx-4428",
+    "lx-4458"
+  ],
+  "newWords": [
+    "lx-0309",
+    "lx-0408",
+    "lx-1019",
+    "lx-1064",
+    "lx-2418",
+    "lx-4075",
+    "lx-4101",
+    "lx-4408",
+    "lx-4428",
+    "lx-4458"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 23
+}

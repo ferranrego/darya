@@ -1,0 +1,104 @@
+{
+  "id": "tx-seed-l2-033",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Ells decideixen estimar els quals són de l'exèrcit.",
+      "en": "They decide to love those who are from the army.",
+      "tokens": [
+        {
+          "surface": "Ells",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "decideixen",
+          "lexemeId": "lx-0783"
+        },
+        {
+          "surface": "estimar",
+          "lexemeId": "lx-0208"
+        },
+        {
+          "surface": "els",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "quals",
+          "lexemeId": "lx-4080"
+        },
+        {
+          "surface": "són",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "exèrcit",
+          "lexemeId": "lx-1905"
+        }
+      ]
+    },
+    {
+      "target": "Jo tinc un dit aquí.",
+      "en": "I have a finger here.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "tinc",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "dit",
+          "lexemeId": "lx-0890"
+        },
+        {
+          "surface": "aquí",
+          "lexemeId": "lx-0252"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0037",
+    "lx-0038",
+    "lx-0043",
+    "lx-0054",
+    "lx-0208",
+    "lx-0240",
+    "lx-0246",
+    "lx-0252",
+    "lx-0783",
+    "lx-0890",
+    "lx-1905",
+    "lx-4080"
+  ],
+  "newWords": [
+    "lx-0208",
+    "lx-0783",
+    "lx-0890",
+    "lx-1905",
+    "lx-4080"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 33
+}

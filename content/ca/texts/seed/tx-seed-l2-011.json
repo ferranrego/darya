@@ -1,0 +1,151 @@
+{
+  "id": "tx-seed-l2-011",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "L'espai",
+  "titleEn": "The space",
+  "sentences": [
+    {
+      "target": "Aquesta casa té molt espai.",
+      "en": "This house has a lot of space.",
+      "tokens": [
+        {
+          "surface": "Aquesta",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "casa",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "espai",
+          "lexemeId": "lx-0378"
+        }
+      ]
+    },
+    {
+      "target": "L'espai és necessari per jugar.",
+      "en": "Space is necessary to play.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "espai",
+          "lexemeId": "lx-0378"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "necessari",
+          "lexemeId": "lx-4056"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "jugar",
+          "lexemeId": "lx-0200"
+        }
+      ]
+    },
+    {
+      "target": "El nen juga en un espai petit.",
+      "en": "The boy plays in a small space.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "nen",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "juga",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "en",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "espai",
+          "lexemeId": "lx-0378"
+        },
+        {
+          "surface": "petit",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "L'espai és molt gran.",
+      "en": "The space is very big.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "espai",
+          "lexemeId": "lx-0378"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0036",
+    "lx-0037",
+    "lx-0038",
+    "lx-0040",
+    "lx-0052",
+    "lx-0054",
+    "lx-0064",
+    "lx-0069",
+    "lx-0078",
+    "lx-0200",
+    "lx-0217",
+    "lx-0218",
+    "lx-0378",
+    "lx-4056"
+  ],
+  "newWords": [
+    "lx-0200",
+    "lx-0378",
+    "lx-4056"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 11
+}

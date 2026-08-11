@@ -1,0 +1,72 @@
+{
+  "id": "tx-seed-l2-039",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La universitat nacional produeix la base de l'habitatge.",
+      "en": "The national university produces the basis of housing.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "universitat",
+          "lexemeId": "lx-0308"
+        },
+        {
+          "surface": "nacional",
+          "lexemeId": "lx-4387"
+        },
+        {
+          "surface": "produeix",
+          "lexemeId": "lx-4603"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "base",
+          "lexemeId": "lx-4398"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "habitatge",
+          "lexemeId": "lx-4573"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0030",
+    "lx-0031",
+    "lx-0032",
+    "lx-0308",
+    "lx-4387",
+    "lx-4398",
+    "lx-4573",
+    "lx-4603"
+  ],
+  "newWords": [
+    "lx-0308",
+    "lx-4387",
+    "lx-4398",
+    "lx-4573",
+    "lx-4603"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 39
+}

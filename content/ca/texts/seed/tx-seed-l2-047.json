@@ -1,0 +1,126 @@
+{
+  "id": "tx-seed-l2-047",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Hi ha pau al país finalment.",
+      "en": "There is peace in the country finally.",
+      "tokens": [
+        {
+          "surface": "Hi",
+          "lexemeId": "lx-0013"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "pau",
+          "lexemeId": "lx-1033"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "país",
+          "lexemeId": "lx-0095"
+        },
+        {
+          "surface": "finalment",
+          "lexemeId": "lx-0689"
+        }
+      ]
+    },
+    {
+      "target": "L'atac ha fet molt mal.",
+      "en": "The attack has done a lot of harm.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "atac",
+          "lexemeId": "lx-4415"
+        },
+        {
+          "surface": "ha",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "fet",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "mal",
+          "lexemeId": "lx-0135"
+        }
+      ]
+    },
+    {
+      "target": "Ara hem de pagar el compte.",
+      "en": "Now we have to pay the bill.",
+      "tokens": [
+        {
+          "surface": "Ara",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "hem",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "de",
+          "lexemeId": "lx-0030"
+        },
+        {
+          "surface": "pagar",
+          "lexemeId": "lx-0119"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "compte",
+          "lexemeId": "lx-1042"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0013",
+    "lx-0022",
+    "lx-0030",
+    "lx-0031",
+    "lx-0052",
+    "lx-0053",
+    "lx-0062",
+    "lx-0095",
+    "lx-0119",
+    "lx-0135",
+    "lx-0254",
+    "lx-0689",
+    "lx-1033",
+    "lx-1042",
+    "lx-4415"
+  ],
+  "newWords": [
+    "lx-0689",
+    "lx-1033",
+    "lx-1042",
+    "lx-4415"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 47
+}

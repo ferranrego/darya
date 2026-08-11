@@ -1,0 +1,166 @@
+{
+  "id": "tx-seed-l2-028",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "L'empresa",
+  "titleEn": "The company",
+  "sentences": [
+    {
+      "target": "L'empresa del sud té una zona oberta.",
+      "en": "The company from the south has an open area.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "empresa",
+          "lexemeId": "lx-1330"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "sud",
+          "lexemeId": "lx-3978"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "zona",
+          "lexemeId": "lx-4280"
+        },
+        {
+          "surface": "oberta",
+          "lexemeId": "lx-0120"
+        }
+      ]
+    },
+    {
+      "target": "Puc enviar un missatge divers.",
+      "en": "I can send a diverse message.",
+      "tokens": [
+        {
+          "surface": "Puc",
+          "lexemeId": "lx-0055"
+        },
+        {
+          "surface": "enviar",
+          "lexemeId": "lx-0638"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "missatge",
+          "lexemeId": "lx-0847"
+        },
+        {
+          "surface": "divers",
+          "lexemeId": "lx-4414"
+        }
+      ]
+    },
+    {
+      "target": "La zona del sud és molt gran.",
+      "en": "The southern area is very big.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "zona",
+          "lexemeId": "lx-4280"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "sud",
+          "lexemeId": "lx-3978"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "L'empresa enviarà el paquet.",
+      "en": "The company will send the package.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "empresa",
+          "lexemeId": "lx-1330"
+        },
+        {
+          "surface": "enviarà",
+          "lexemeId": "lx-0638"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "paquet",
+          "lexemeId": "lx-3132"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0023",
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0042",
+    "lx-0052",
+    "lx-0054",
+    "lx-0055",
+    "lx-0120",
+    "lx-0217",
+    "lx-0638",
+    "lx-0847",
+    "lx-1330",
+    "lx-3132",
+    "lx-3978",
+    "lx-4280",
+    "lx-4414"
+  ],
+  "newWords": [
+    "lx-0638",
+    "lx-0847",
+    "lx-1330",
+    "lx-3132",
+    "lx-3978",
+    "lx-4280",
+    "lx-4414"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 28
+}

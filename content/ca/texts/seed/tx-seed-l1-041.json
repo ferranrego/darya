@@ -1,0 +1,153 @@
+{
+  "id": "tx-seed-l1-041",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El camp és verd.",
+      "en": "The field is green.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "camp",
+          "lexemeId": "lx-0587"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "verd",
+          "lexemeId": "lx-0238"
+        }
+      ]
+    },
+    {
+      "target": "La planta és petita.",
+      "en": "The plant is small.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "planta",
+          "lexemeId": "lx-0579"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "petita",
+          "lexemeId": "lx-0218"
+        }
+      ]
+    },
+    {
+      "target": "El riu té aigua.",
+      "en": "The river has water.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "riu",
+          "lexemeId": "lx-0577"
+        },
+        {
+          "surface": "té",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        }
+      ]
+    },
+    {
+      "target": "Jo veig una pedra gran.",
+      "en": "I see a big stone.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "veig",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "pedra",
+          "lexemeId": "lx-1981"
+        },
+        {
+          "surface": "gran",
+          "lexemeId": "lx-0217"
+        }
+      ]
+    },
+    {
+      "target": "El mar és blau.",
+      "en": "The sea is blue.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "mar",
+          "lexemeId": "lx-0323"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "blau",
+          "lexemeId": "lx-0237"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0042",
+    "lx-0054",
+    "lx-0058",
+    "lx-0079",
+    "lx-0217",
+    "lx-0218",
+    "lx-0237",
+    "lx-0238",
+    "lx-0240",
+    "lx-0323",
+    "lx-0577",
+    "lx-0579",
+    "lx-0587",
+    "lx-1981"
+  ],
+  "newWords": [
+    "lx-0323",
+    "lx-0577",
+    "lx-0579",
+    "lx-0587",
+    "lx-1981"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 41
+}

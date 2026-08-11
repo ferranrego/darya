@@ -21,6 +21,56 @@
       "surface": "خورد",
       "correctLexemeId": "lx-0066",
       "reason": "'... خورد است' (... is small) is the adjective; the collision is with خوردن (to eat/drink, lx-0091)'s 3rd-person-singular past 'خورد' (he ate), which does not fit as a predicate after 'برای همه شاگردان'."
+    },
+    {
+      "surface": "چشم",
+      "correctLexemeId": "lx-0123",
+      "reason": "Used as the noun 'eye'. The collision is with چشیدن (to taste, lx-0433)'s imperative form."
+    },
+    {
+      "surface": "درد",
+      "correctLexemeId": "lx-0209",
+      "reason": "Used as the noun 'pain'. The collision is with دریدن (to tear, lx-0440)'s imperative form."
+    },
+    {
+      "surface": "بسته",
+      "correctLexemeId": "lx-0200",
+      "reason": "Used as the adjective 'closed'. The collision is with بستن (to close, lx-0373)'s participle."
+    },
+    {
+      "surface": "مانده",
+      "correctLexemeId": "lx-0108",
+      "reason": "Used as the adjective 'tired'. The collision is with ماندن (to remain, lx-0234)'s participle."
+    },
+    {
+      "surface": "بینی",
+      "correctLexemeId": "lx-0500",
+      "reason": "Used as the noun 'nose'. The collision is with دیدن (to see, lx-0092)'s 2nd-person-singular present 'می‌بینی' or subjunctive 'ببینی' ending."
+    },
+    {
+      "surface": "دری",
+      "correctLexemeId": "lx-0087",
+      "reason": "Used as the noun 'Dari'. The collision is with دریدن (to tear, lx-0440)'s 2nd-person-singular present ending."
+    },
+    {
+      "surface": "شاید",
+      "correctLexemeId": "lx-0313",
+      "reason": "Used as the adverb 'maybe'. The collision is with شایستن (to be worthy, lx-0405)'s 3rd-person-singular present."
+    },
+    {
+      "surface": "کشتی",
+      "correctLexemeId": "lx-0560",
+      "reason": "Used as the noun 'ship'. The collision is with کشتن (to kill, lx-0388)'s 2nd-person-singular past."
+    },
+    {
+      "surface": "شکست",
+      "correctLexemeId": "lx-1043",
+      "reason": "Used as the noun 'defeat'. The collision is with شکستن (to break, lx-0374)'s 3rd-person-singular past."
+    },
+    {
+      "surface": "شدید",
+      "correctLexemeId": "lx-0681",
+      "reason": "Used as the adjective 'severe'. The collision is with شدن (to become, lx-0149)'s 2nd-person-plural past."
     }
   ]
 }

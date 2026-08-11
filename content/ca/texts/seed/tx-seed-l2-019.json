@@ -1,0 +1,134 @@
+{
+  "id": "tx-seed-l2-019",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "Potser",
+  "titleEn": "Maybe",
+  "sentences": [
+    {
+      "target": "Potser demà plourà.",
+      "en": "Maybe tomorrow it will rain.",
+      "tokens": [
+        {
+          "surface": "Potser",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "demà",
+          "lexemeId": "lx-0261"
+        },
+        {
+          "surface": "plourà",
+          "lexemeId": "lx-0194"
+        }
+      ]
+    },
+    {
+      "target": "El pare potser arribarà tard.",
+      "en": "The father will perhaps arrive late.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "potser",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "arribarà",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "tard",
+          "lexemeId": "lx-0262"
+        }
+      ]
+    },
+    {
+      "target": "Potser no és una bona idea.",
+      "en": "Maybe it is not a good idea.",
+      "tokens": [
+        {
+          "surface": "Potser",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "una",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "bona",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "idea",
+          "lexemeId": "lx-0662"
+        }
+      ]
+    },
+    {
+      "target": "Potser plou a la tarda.",
+      "en": "Maybe it rains in the afternoon.",
+      "tokens": [
+        {
+          "surface": "Potser",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "plou",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "tarda",
+          "lexemeId": "lx-0086"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0039",
+    "lx-0042",
+    "lx-0086",
+    "lx-0089",
+    "lx-0106",
+    "lx-0194",
+    "lx-0215",
+    "lx-0261",
+    "lx-0262",
+    "lx-0263",
+    "lx-0662"
+  ],
+  "newWords": [
+    "lx-0263",
+    "lx-0662"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 19
+}

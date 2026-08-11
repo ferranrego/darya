@@ -1,0 +1,94 @@
+{
+  "id": "tx-seed-l1-052",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El carrer està mullat.",
+      "en": "The street is wet.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "carrer",
+          "lexemeId": "lx-0094"
+        },
+        {
+          "surface": "està",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "mullat",
+          "lexemeId": "lx-4184"
+        }
+      ]
+    },
+    {
+      "target": "L'aigua està tèbia.",
+      "en": "The water is lukewarm.",
+      "tokens": [
+        {
+          "surface": "L'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "està",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "tèbia",
+          "lexemeId": "lx-4360"
+        }
+      ]
+    },
+    {
+      "target": "El gos està sec.",
+      "en": "The dog is dry.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "gos",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "està",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "sec",
+          "lexemeId": "lx-4617"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0063",
+    "lx-0079",
+    "lx-0094",
+    "lx-0330",
+    "lx-4184",
+    "lx-4360",
+    "lx-4617"
+  ],
+  "newWords": [
+    "lx-4184",
+    "lx-4360",
+    "lx-4617"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 52
+}

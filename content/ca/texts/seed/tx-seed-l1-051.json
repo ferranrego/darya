@@ -1,0 +1,95 @@
+{
+  "id": "tx-seed-l1-051",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El rellotge és rodó.",
+      "en": "The watch is round.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "rellotge",
+          "lexemeId": "lx-1104"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "rodó",
+          "lexemeId": "lx-4499"
+        }
+      ]
+    },
+    {
+      "target": "La flor és lila.",
+      "en": "The flower is purple.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "flor",
+          "lexemeId": "lx-0329"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "lila",
+          "lexemeId": "lx-0438"
+        }
+      ]
+    },
+    {
+      "target": "La porta és rosa.",
+      "en": "The door is pink.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "rosa",
+          "lexemeId": "lx-4620"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0098",
+    "lx-0329",
+    "lx-0438",
+    "lx-1104",
+    "lx-4499",
+    "lx-4620"
+  ],
+  "newWords": [
+    "lx-0438",
+    "lx-4499",
+    "lx-4620"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 51
+}

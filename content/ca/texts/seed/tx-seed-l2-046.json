@@ -1,0 +1,72 @@
+{
+  "id": "tx-seed-l2-046",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Al principi del segle neix el moviment del vaixell.",
+      "en": "At the beginning of the century the boat's movement is born.",
+      "tokens": [
+        {
+          "surface": "Al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "principi",
+          "lexemeId": "lx-1350"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "segle",
+          "lexemeId": "lx-4422"
+        },
+        {
+          "surface": "neix",
+          "lexemeId": "lx-0530"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "moviment",
+          "lexemeId": "lx-4406"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "vaixell",
+          "lexemeId": "lx-1009"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0023",
+    "lx-0031",
+    "lx-0530",
+    "lx-1009",
+    "lx-1350",
+    "lx-4406",
+    "lx-4422"
+  ],
+  "newWords": [
+    "lx-0530",
+    "lx-1009",
+    "lx-1350",
+    "lx-4406",
+    "lx-4422"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 46
+}

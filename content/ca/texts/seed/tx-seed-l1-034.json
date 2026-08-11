@@ -1,0 +1,133 @@
+{
+  "id": "tx-seed-l1-034",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "El vent és fort avui.",
+      "en": "The wind is strong today.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "vent",
+          "lexemeId": "lx-0327"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "fort",
+          "lexemeId": "lx-0486"
+        },
+        {
+          "surface": "avui",
+          "lexemeId": "lx-0259"
+        }
+      ]
+    },
+    {
+      "target": "La neu és blanca.",
+      "en": "The snow is white.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "neu",
+          "lexemeId": "lx-0584"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "blanca",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "La pluja és feble ara.",
+      "en": "The rain is weak now.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "pluja",
+          "lexemeId": "lx-0326"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "feble",
+          "lexemeId": "lx-0885"
+        },
+        {
+          "surface": "ara",
+          "lexemeId": "lx-0254"
+        }
+      ]
+    },
+    {
+      "target": "Jo veig un núvol.",
+      "en": "I see a cloud.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "veig",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "núvol",
+          "lexemeId": "lx-0583"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0038",
+    "lx-0058",
+    "lx-0234",
+    "lx-0240",
+    "lx-0254",
+    "lx-0259",
+    "lx-0326",
+    "lx-0327",
+    "lx-0486",
+    "lx-0583",
+    "lx-0584",
+    "lx-0885"
+  ],
+  "newWords": [
+    "lx-0326",
+    "lx-0327",
+    "lx-0583",
+    "lx-0584",
+    "lx-0885"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 34
+}

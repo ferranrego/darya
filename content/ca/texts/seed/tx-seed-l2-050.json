@@ -1,0 +1,100 @@
+{
+  "id": "tx-seed-l2-050",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La meitat abandona la política justa.",
+      "en": "Half abandons fair politics.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "meitat",
+          "lexemeId": "lx-4264"
+        },
+        {
+          "surface": "abandona",
+          "lexemeId": "lx-4483"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "política",
+          "lexemeId": "lx-1280"
+        },
+        {
+          "surface": "justa",
+          "lexemeId": "lx-4395"
+        }
+      ]
+    },
+    {
+      "target": "El títol és al mig del paper.",
+      "en": "The title is in the middle of the paper.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "títol",
+          "lexemeId": "lx-1168"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "mig",
+          "lexemeId": "lx-4384"
+        },
+        {
+          "surface": "del",
+          "lexemeId": "lx-0023"
+        },
+        {
+          "surface": "paper",
+          "lexemeId": "lx-0542"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0023",
+    "lx-0031",
+    "lx-0032",
+    "lx-0038",
+    "lx-0542",
+    "lx-1168",
+    "lx-1280",
+    "lx-4264",
+    "lx-4384",
+    "lx-4395",
+    "lx-4483"
+  ],
+  "newWords": [
+    "lx-0542",
+    "lx-1168",
+    "lx-1280",
+    "lx-4264",
+    "lx-4384",
+    "lx-4395",
+    "lx-4483"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 50
+}

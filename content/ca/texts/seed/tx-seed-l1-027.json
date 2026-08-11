@@ -1,0 +1,148 @@
+{
+  "id": "tx-seed-l1-027",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "Jo vull conèixer la teva família.",
+      "en": "I want to meet your family.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "vull",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "conèixer",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "teva",
+          "lexemeId": "lx-0249"
+        },
+        {
+          "surface": "família",
+          "lexemeId": "lx-0341"
+        }
+      ]
+    },
+    {
+      "target": "Ell porta aigua per a ells.",
+      "en": "He carries water for them.",
+      "tokens": [
+        {
+          "surface": "Ell",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "porta",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "aigua",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "per",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "ells",
+          "lexemeId": "lx-0246"
+        }
+      ]
+    },
+    {
+      "target": "Ells parlen molt ara.",
+      "en": "They speak a lot now.",
+      "tokens": [
+        {
+          "surface": "Ells",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "parlen",
+          "lexemeId": "lx-0103"
+        },
+        {
+          "surface": "molt",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "ara",
+          "lexemeId": "lx-0254"
+        }
+      ]
+    },
+    {
+      "target": "Jo penso que és bo.",
+      "en": "I think it is good.",
+      "tokens": [
+        {
+          "surface": "Jo",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "penso",
+          "lexemeId": "lx-0111"
+        },
+        {
+          "surface": "que",
+          "lexemeId": "lx-0035"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "bo",
+          "lexemeId": "lx-0215"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0032",
+    "lx-0034",
+    "lx-0035",
+    "lx-0038",
+    "lx-0040",
+    "lx-0052",
+    "lx-0060",
+    "lx-0079",
+    "lx-0098",
+    "lx-0103",
+    "lx-0111",
+    "lx-0215",
+    "lx-0240",
+    "lx-0242",
+    "lx-0246",
+    "lx-0249",
+    "lx-0254",
+    "lx-0341",
+    "lx-0361"
+  ],
+  "newWords": [
+    "lx-0103",
+    "lx-0111",
+    "lx-0341",
+    "lx-0361"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 27
+}

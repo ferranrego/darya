@@ -1,0 +1,139 @@
+{
+  "id": "tx-seed-l1-011",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "La dona",
+  "titleEn": "The woman",
+  "sentences": [
+    {
+      "target": "La dona no dorm.",
+      "en": "The woman does not sleep.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "dona",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "no",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "dorm",
+          "lexemeId": "lx-0199"
+        }
+      ]
+    },
+    {
+      "target": "La dona creu el pare.",
+      "en": "The woman believes the father.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "dona",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "creu",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "el",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "El pare escriu un llibre.",
+      "en": "The father writes a book.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "escriu",
+          "lexemeId": "lx-0117"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "llibre",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "El pare fa un te calent.",
+      "en": "The father makes a hot tea.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pare",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "un",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "te",
+          "lexemeId": "lx-0711"
+        },
+        {
+          "surface": "calent",
+          "lexemeId": "lx-0232"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0037",
+    "lx-0039",
+    "lx-0053",
+    "lx-0071",
+    "lx-0089",
+    "lx-0096",
+    "lx-0112",
+    "lx-0117",
+    "lx-0199",
+    "lx-0232",
+    "lx-0711"
+  ],
+  "newWords": [
+    "lx-0071",
+    "lx-0112",
+    "lx-0117",
+    "lx-0232",
+    "lx-0711"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 11
+}

@@ -1,0 +1,133 @@
+{
+  "id": "tx-seed-l1-023",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "L'hivern",
+  "titleEn": "The winter",
+  "sentences": [
+    {
+      "target": "A l'hivern fa fred.",
+      "en": "In the winter it is cold.",
+      "tokens": [
+        {
+          "surface": "A",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "hivern",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "fa",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "fred",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    },
+    {
+      "target": "El pis és calent.",
+      "en": "The apartment is warm.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "pis",
+          "lexemeId": "lx-0137"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "calent",
+          "lexemeId": "lx-0232"
+        }
+      ]
+    },
+    {
+      "target": "El got és blau.",
+      "en": "The glass is blue.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "got",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "és",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "blau",
+          "lexemeId": "lx-0237"
+        }
+      ]
+    },
+    {
+      "target": "El got blau cau al pis.",
+      "en": "The blue glass falls on the floor.",
+      "tokens": [
+        {
+          "surface": "El",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "got",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "blau",
+          "lexemeId": "lx-0237"
+        },
+        {
+          "surface": "cau",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "al",
+          "lexemeId": "lx-0022"
+        },
+        {
+          "surface": "pis",
+          "lexemeId": "lx-0137"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0022",
+    "lx-0031",
+    "lx-0034",
+    "lx-0038",
+    "lx-0053",
+    "lx-0136",
+    "lx-0137",
+    "lx-0140",
+    "lx-0145",
+    "lx-0232",
+    "lx-0233",
+    "lx-0237"
+  ],
+  "newWords": [
+    "lx-0136",
+    "lx-0137",
+    "lx-0145",
+    "lx-0237"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 23
+}

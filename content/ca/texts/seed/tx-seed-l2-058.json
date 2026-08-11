@@ -1,0 +1,97 @@
+{
+  "id": "tx-seed-l2-058",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "El text",
+  "titleEn": "The text",
+  "sentences": [
+    {
+      "target": "La noia veu la construcció nova.",
+      "en": "The young woman sees the new construction.",
+      "tokens": [
+        {
+          "surface": "La",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "noia",
+          "lexemeId": "lx-0908"
+        },
+        {
+          "surface": "veu",
+          "lexemeId": "lx-2948"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "construcció",
+          "lexemeId": "lx-4424"
+        },
+        {
+          "surface": "nova",
+          "lexemeId": "lx-0219"
+        }
+      ]
+    },
+    {
+      "target": "És l'acció anterior a la batalla.",
+      "en": "It is the action prior to the battle.",
+      "tokens": [
+        {
+          "surface": "És",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "l'",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "acció",
+          "lexemeId": "lx-1944"
+        },
+        {
+          "surface": "anterior",
+          "lexemeId": "lx-4486"
+        },
+        {
+          "surface": "a",
+          "lexemeId": "lx-0034"
+        },
+        {
+          "surface": "la",
+          "lexemeId": "lx-0032"
+        },
+        {
+          "surface": "batalla",
+          "lexemeId": "lx-1903"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0031",
+    "lx-0032",
+    "lx-0034",
+    "lx-0038",
+    "lx-0219",
+    "lx-0908",
+    "lx-1903",
+    "lx-1944",
+    "lx-2948",
+    "lx-4424",
+    "lx-4486"
+  ],
+  "newWords": [
+    "lx-0908",
+    "lx-1903",
+    "lx-1944",
+    "lx-4424",
+    "lx-4486"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 58
+}
