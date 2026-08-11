@@ -126,13 +126,9 @@ export function TodayHero({
           <RingXp xp={todayXp} goal={dailyGoal} dark={dark} />
         </ProgressRing>
 
-        <motion.div
-          animate={reduce ? undefined : { y: [0, -6, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
-          className="shrink-0"
-        >
+        <div className="shrink-0">
           <Poncha pose={pose} size={122} priority />
-        </motion.div>
+        </div>
       </div>
 
       <p className={`relative mt-4 text-[14px] ${dark ? "text-white/75" : "text-ink-soft"}`}>{status}</p>

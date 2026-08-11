@@ -51,6 +51,8 @@ export function TextReader({
   const [showSyntax, setShowSyntax] = useState(false);
   const [phase, setPhase] = useState<"reading" | "done">("reading");
   const [showGuide, setShowGuide] = useState(false);
+  const [highlightNewWords, setHighlightNewWords] = useState(false);
+  const [showRequirementMessage, setShowRequirementMessage] = useState(false);
 
   useEffect(() => {
     if (localStorage.getItem("hasSeenReaderGuide")) return;
@@ -77,6 +79,19 @@ export function TextReader({
       });
     });
   }, [doc]);
+
+  const remainingNewWords = useMemo(() => {
+    if (!statusMap) return 0;
+    const newWordIds = new Set<string>();
+    for (const sentence of segments) {
+      for (const seg of sentence) {
+        if (seg.kind === "word" && seg.resolvedId && !statusMap.has(seg.resolvedId)) {
+          newWordIds.add(seg.resolvedId);
+        }
+      }
+    }
+    return newWordIds.size;
+  }, [segments, statusMap]);
 
   const startLearning = useMutation({
     mutationFn: async ({ lexemeId, sentenceIndex }: { lexemeId: string; sentenceIndex?: number }) => {
@@ -275,6 +290,7 @@ export function TextReader({
                           status={seg.resolvedId ? (statusMap?.get(seg.resolvedId) ?? "new") : "name"}
                           onTap={() => handleTap(seg.token.surface, seg.resolvedId, i)}
                           pos={showSyntax ? seg.pos : undefined}
+                          pulse={highlightNewWords}
                         />
                       )
                     );
@@ -348,6 +364,19 @@ export function TextReader({
 
       {/* Floating Global Action Pill */}
       <div className="fixed bottom-[calc(var(--tab-bar-h)+24px)] left-1/2 z-40 -translate-x-1/2">
+        <AnimatePresence>
+          {showRequirementMessage && (
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.9, x: "-50%" }}
+              animate={{ opacity: 1, y: 0, scale: 1, x: "-50%" }}
+              exit={{ opacity: 0, y: 5, scale: 0.9, x: "-50%" }}
+              className="absolute bottom-full left-1/2 mb-4 w-max max-w-[280px] text-center rounded-xl bg-ink/95 backdrop-blur text-surface px-4 py-2.5 text-[14px] font-medium shadow-xl pointer-events-none"
+            >
+              Tap all new words before finishing
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -407,18 +436,47 @@ export function TextReader({
 
           <div className="mx-0.5 h-6 w-px bg-line/80" />
 
-          <button
+          <motion.button
+            layout
             type="button"
             onClick={() => {
-              hapticTap();
-              finish.mutate();
+              if (remainingNewWords > 0) {
+                hapticTap();
+                const firstNewWord = document.querySelector('[data-status="new"]');
+                if (firstNewWord) {
+                  firstNewWord.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                setHighlightNewWords(true);
+                setShowRequirementMessage(true);
+                setTimeout(() => setHighlightNewWords(false), 1500);
+                setTimeout(() => setShowRequirementMessage(false), 3000);
+              } else {
+                hapticTap();
+                finish.mutate();
+              }
             }}
             disabled={finish.isPending}
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-lapis-soft text-lapis transition-all active:scale-95 disabled:opacity-50"
-            title="Finish text"
+            className={`flex h-10 items-center justify-center rounded-full transition-all active:scale-95 disabled:opacity-50 ${
+              remainingNewWords > 0
+                ? "bg-surface px-4 text-ink-soft ring-1 ring-inset ring-line/50 hover:bg-surface hover:text-ink"
+                : "w-10 bg-lapis-soft text-lapis"
+            }`}
+            title={remainingNewWords > 0 ? "Find new words" : "Finish text"}
           >
-            <ChevronRight size={20} strokeWidth={2.5} className={finish.isPending ? "animate-pulse" : ""} />
-          </button>
+            {remainingNewWords > 0 ? (
+              <motion.span
+                layout="position"
+                className="text-[13px] font-semibold whitespace-nowrap flex items-center"
+              >
+                <span className="bg-lapis-soft text-lapis rounded-full px-1.5 py-0.5 text-[11px] mr-1.5 leading-none font-bold">
+                  {remainingNewWords}
+                </span>
+                new
+              </motion.span>
+            ) : (
+              <ChevronRight size={20} strokeWidth={2.5} className={finish.isPending ? "animate-pulse" : ""} />
+            )}
+          </motion.button>
         </motion.div>
       </div>
 
@@ -569,18 +627,20 @@ function WordSpan({
   status,
   onTap,
   pos,
+  pulse,
 }: {
   surface: string;
   status: "new" | "learning" | "known" | "name";
   onTap: () => void;
   pos?: string;
+  pulse?: boolean;
 }) {
   const isSyntax = pos !== undefined;
 
   // Elevated Word styling for native feel
   const statusCls =
     status === "new"
-      ? `bg-ink/5 ring-1 ring-inset ring-ink/10 rounded-md px-1 ${isSyntax ? "" : "text-ink"}`
+      ? `bg-ink/5 ring-1 ring-inset ring-ink/10 rounded-md px-1 ${isSyntax ? "" : "text-ink"} transition-all duration-300 ${pulse ? "ring-lapis bg-lapis/10 text-lapis-deep" : ""}`
       : status === "learning"
         ? `underline decoration-lapis/40 decoration-[3px] underline-offset-[6px] font-medium ${isSyntax ? "" : "text-lapis-deep"}`
         : "";
@@ -601,6 +661,7 @@ function WordSpan({
     <motion.button
       type="button"
       layout="position"
+      data-status={status}
       onClick={() => {
         hapticTap();
         onTap();

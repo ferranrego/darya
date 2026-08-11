@@ -93,7 +93,7 @@ export default function GrammarLessonPage() {
   const completePractice = useMutation({
     mutationFn: async (total: number) => {
       if (!user) return 0;
-      const xp = XP.review * total;
+      const xp = XP.practice * total;
       await recordActivity(db, user.id, { xp });
       return xp;
     },
