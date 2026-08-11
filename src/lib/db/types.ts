@@ -94,6 +94,27 @@ export interface ChatMessageRow {
   created_at: string;
 }
 
+/**
+ * One turn in a learner's private thread with the conversation partner.
+ *
+ * Deliberately shares `body`/`translit`/`translation`/`correction` with
+ * `ChatMessageRow`: the three enrichment tools and the bubble that renders them
+ * are the same code for both threads, and diverging the shapes would fork it.
+ */
+export interface TutorMessageRow {
+  id: string;
+  user_id: string;
+  role: "user" | "tutor";
+  body: string;
+  translit: string | null;
+  translation: string | null;
+  correction: {
+    corrected: string;
+    issues: { before: string; after: string; whyEn: string }[];
+  } | null;
+  created_at: string;
+}
+
 export interface DailyActivityRow {
   user_id: string;
   date: string;

@@ -63,6 +63,11 @@ export const prs: LanguageProfile = {
       evening: "Shab bekheir",
       night: "Shab bekheir",
     },
+    starters: [
+      { target: "سلام، چطور استی؟", en: "Hello, how are you?" },
+      { target: "نام من ... است.", en: "My name is ..." },
+      { target: "امروز هوا چطور است؟", en: "How is the weather today?" },
+    ],
   },
 
   prompts: {

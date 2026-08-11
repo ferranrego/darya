@@ -109,6 +109,16 @@ export interface LanguagePrompts {
   chat: {
     /** The instruction given for the "translit" mode (e.g. phonetic guide or actual transliteration) */
     translitTask: string;
+    /**
+     * Who the conversation partner is, in this language's own world.
+     *
+     * Not the same as `teacher`: that persona explains and corrects, which is
+     * what a generation prompt wants. This one is a *speaker* the learner is
+     * talking to, and its job is to keep the conversation going - a teacher
+     * persona in a chat produces graded exercises with question marks on the
+     * end, not a conversation.
+     */
+    tutorPersona: string;
   };
   /** Syntax guardrails specific to the language */
   syntax?: string;
@@ -147,6 +157,17 @@ export interface LanguageSamples {
   words: [string, string, string];
   /** Greetings for the home screen by time of day */
   phaseGreetings: Record<"morning" | "day" | "evening" | "night", string>;
+  /**
+   * Openers for a blank conversation thread, tappable as the learner's first
+   * message.
+   *
+   * Written in the target language rather than described in English, because
+   * tapping one *is* the message that gets sent - an English label would have
+   * to be translated for them, which defeats the point of the exercise. Kept
+   * to things a first-week learner could plausibly have said themselves, and
+   * short enough that a reply at any level can follow.
+   */
+  starters: { target: string; en: string }[];
 }
 
 export interface LanguageProfile {

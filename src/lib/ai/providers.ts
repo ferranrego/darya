@@ -8,7 +8,12 @@
 interface Provider {
   name: string;
   available: () => boolean;
-  call: (prompt: string, temperature: number, timeoutMs: number) => Promise<string>;
+  call: (
+    prompt: string,
+    temperature: number,
+    timeoutMs: number,
+    maxTokens?: number,
+  ) => Promise<string>;
 }
 
 /**
@@ -73,10 +78,10 @@ function openAiCompatible(
   return {
     name,
     available: () => !!process.env[keyEnv],
-    async call(prompt, temperature, timeoutMs) {
+    async call(prompt, temperature, timeoutMs, maxTokens) {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), timeoutMs);
-      
+
       try {
         const res = await fetch(`${baseUrl}/chat/completions`, {
           method: "POST",
@@ -89,6 +94,11 @@ function openAiCompatible(
             messages: [{ role: "user", content: prompt }],
             temperature,
             response_format: { type: "json_object" },
+            // Omitted unless asked for: every other caller wants JSON of a known
+            // shape, where a cap can only truncate it into a parse failure that
+            // costs a retry. It exists for free-form prose (the tutor reply),
+            // where nothing else bounds the response.
+            ...(maxTokens ? { max_tokens: maxTokens } : {}),
           }),
           signal: controller.signal,
         });
@@ -133,6 +143,33 @@ interface CompleteOptions<T> {
    * all of them, so the budget covers the operation rather than each step.
    */
   deadline?: number;
+  /**
+   * Provider names to try first, in this order.
+   *
+   * Different features want different heads: a chat reply the learner is
+   * watching wants Groq, which answers in about a second, while a grammar
+   * correction wants Qwen on the HF router, which is the better morphologist
+   * and worth three seconds for a deliberate tap.
+   *
+   * A *reordering*, never a filter: everything unnamed keeps its relative
+   * position behind the preferred names, so the chain stays five deep and no
+   * amount of preferring can strand a caller with one dead provider.
+   */
+  prefer?: string[];
+  /** Cap on response length. Only meaningful for free-form prose; see `call`. */
+  maxTokens?: number;
+}
+
+/** `providers`, with `prefer` names hoisted to the front, order preserved. */
+function ordered(prefer?: string[]): Provider[] {
+  if (!prefer?.length) return providers;
+  const rank = (p: Provider) => {
+    const i = prefer.indexOf(p.name);
+    return i === -1 ? prefer.length : i;
+  };
+  // Stable, so providers sharing a rank (i.e. every unpreferred one) keep the
+  // chain's own ordering, which encodes the quality/latency trade already made.
+  return [...providers].sort((a, b) => rank(a) - rank(b));
 }
 
 /**
@@ -143,7 +180,7 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
   const errors: string[] = [];
   const deadline = opts.deadline ?? Date.now() + DEFAULT_BUDGET_MS;
 
-  for (const provider of providers) {
+  for (const provider of ordered(opts.prefer)) {
     if (!provider.available()) continue;
     const why = disabled.get(provider.name);
     if (why) {
@@ -161,6 +198,7 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
           prompt,
           opts.temperature ?? 0.8,
           Math.min(PER_CALL_CAP_MS, remaining),
+          opts.maxTokens,
         );
         // Strip markdown backticks if present
         if (raw.startsWith("```json")) {
@@ -199,6 +237,15 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
 
 function failed(errors: string[]): never {
   throw new Error(`All providers failed: ${errors.join(" | ")}`);
+}
+
+/**
+ * The chain's names in the order `prefer` would try them. Exported so a test
+ * can assert a reordering never drops a provider - the one way `prefer` could
+ * quietly turn a five-deep fallback into a single point of failure.
+ */
+export function providerOrder(prefer?: string[]): string[] {
+  return ordered(prefer).map((p) => p.name);
 }
 
 /** A deadline `budgetMs` from now, for a caller making several completions. */
