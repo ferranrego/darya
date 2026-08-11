@@ -29,17 +29,41 @@ export const ORTHOGRAPHY = [
  * produces Tehran usage and calls it Dari. The orthography block names three
  * words; this names the constructions, which is where the drift actually shows.
  */
+/**
+ * The word-for-word half of the drift, as data.
+ *
+ * These were prompt prose, which meant they could only ever be *advice to a
+ * model*. As a table they are also a mechanical check: the composer matches a
+ * learner's draft against them and names the Dari word before anything is
+ * sent, at no provider cost. That is this repo's usual direction of travel - a
+ * finding that is only fixed comes back, a finding that becomes a check does
+ * not.
+ *
+ * `wrong` is matched against single normalized tokens, so only whole-word
+ * substitutions belong here. Anything needing context (بزرگ, which is correct
+ * in the literary sense and merely unidiomatic for everyday "big") stays in
+ * the prose lines below, where a model can weigh it and a regex cannot.
+ */
+export const INTERFERENCE_RULES = [
+  { wrong: "مدرسه", right: "مکتب", whyEn: "“school” is مکتب in Dari; مدرسه is Iranian." },
+  { wrong: "دانشگاه", right: "پوهنتون", whyEn: "“university” is پوهنتون in Dari." },
+  { wrong: "بیمارستان", right: "شفاخانه", whyEn: "“hospital” is شفاخانه in Dari." },
+  { wrong: "ماشین", right: "موتر", whyEn: "“car” is موتر in Dari." },
+  { wrong: "خیابان", right: "سرک", whyEn: "“street” is سرک in Dari." },
+  { wrong: "هواپیما", right: "طیاره", whyEn: "“aeroplane” is طیاره in Dari." },
+  { wrong: "استان", right: "ولایت", whyEn: "“province” is ولایت in Afghanistan." },
+];
+
 export const INTERFERENCE = [
   "Never use these Iranian Persian forms. The Dari is on the right:",
-  "  مدرسه -> مکتب (school)",
-  "  دانشگاه -> پوهنتون (university)",
-  "  بیمارستان -> شفاخانه (hospital)",
-  "  ماشین -> موتر (car)",
-  "  خیابان -> سرک (street)",
+  ...INTERFERENCE_RULES.map((r) => `  ${r.wrong} -> ${r.right} (${r.whyEn})`),
+  // Below the line: still worth telling the model, but NOT mechanically
+  // checkable. Both are ordinary Dari that the shipped seed texts use - پیسه
+  // and کلان are simply the more colloquial choice. The corpus test caught
+  // پول firing on a philologist-reviewed text, which would have meant telling
+  // a learner off for a word the app's own reader had just taught them.
   "  بزرگ -> کلان where 'big' is meant in the everyday sense",
-  "  پول -> پیسه (money)",
-  "  هواپیما -> طیاره (aeroplane)",
-  "  استان -> ولایت (province)",
+  "  پول -> پیسه for everyday 'money', though پول is not wrong",
   "Keep the majhul vowels in transliteration: dōst not dust, shēr not shir. They are the clearest marker of Dari and Iranian Persian has lost them.",
 ].join("\n");
 

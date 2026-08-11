@@ -2,6 +2,7 @@
 
 import { Send } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { DraftHints } from "@/components/chat/draft-hints";
 import { MessageBubble } from "@/components/chat/message-bubble";
 import { TutorThread } from "@/components/chat/tutor-thread";
 import { Poncha } from "@/components/poncha";
@@ -148,6 +149,11 @@ export default function ChatPage() {
               {sendToRoom.error instanceof Error ? sendToRoom.error.message : "Could not send that."}
             </p>
           )}
+
+          {/* Free, instant, provider-free. Shown in both threads: the room is
+              somewhere learners write the target language too. */}
+          <DraftHints draft={draft} />
+
           <div className="flex items-end gap-2">
             <textarea
               dir="auto"

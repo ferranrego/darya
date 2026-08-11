@@ -63,7 +63,21 @@ describe("buildTutorPrompt", () => {
       .split("\n")
       .reduce((n, line) => Math.max(n, line.split(",").length), 0);
     expect(longest).toBeLessThan(8);
-    expect(prompt.length).toBeLessThan(2500);
+    expect(prompt.length).toBeLessThan(4000);
+  });
+
+  it("asks for the correction in the same call as the reply", () => {
+    // This is what keeps automatic correction at one model call per turn. If
+    // the correction ever moves to its own request, per-turn spend doubles.
+    const prompt = buildTutorPrompt(turns(4), "B1");
+    expect(prompt).toContain('"correction"');
+    expect(prompt).toContain('"reply"');
+  });
+
+  it("tells the model not to invent a mistake", () => {
+    // A model asked for a correction every turn will manufacture one, and a
+    // learner corrected when they were right stops trusting all of them.
+    expect(buildTutorPrompt(turns(4), "A1")).toMatch(/null if the message is already correct/i);
   });
 
   it("handles an empty thread without inventing a transcript", () => {

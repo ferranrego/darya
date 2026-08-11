@@ -35,13 +35,46 @@ export interface TutorTurn {
  */
 const HISTORY_TURNS = 10;
 
-/** Two short sentences plus a question, with room for RTL punctuation. */
-const MAX_REPLY_TOKENS = 200;
+/**
+ * Two short sentences plus a question, plus the correction.
+ *
+ * Raised from 200 when the correction moved into this call. That is the entire
+ * marginal cost of making correction automatic rather than tap-to-request: no
+ * second request, no second round trip, no second provider, just a longer
+ * response on a call that was already being made. A separate correction call
+ * would have doubled the per-turn spend against a quota every learner shares.
+ */
+const MAX_REPLY_TOKENS = 350;
 
-// Matches the column's own check constraint. Rejecting here costs a retry, so
-// the bound is the storage limit rather than a style preference - "two short
-// sentences" is enforced by the prompt and by `max_tokens`, not by parsing.
-const replySchema = z.object({ reply: z.string().min(1).max(800) });
+/**
+ * The correction of the learner's own last message.
+ *
+ * Same shape as the tap-to-request correction in `enrich.ts`, so one renderer
+ * serves both and an older message corrected by tapping is indistinguishable
+ * from a new one corrected automatically.
+ */
+const correctionSchema = z.object({
+  corrected: z.string(),
+  issues: z.array(
+    z.object({ before: z.string(), after: z.string(), whyEn: z.string() }),
+  ),
+});
+
+// `reply` is bounded by the column's own check constraint; rejecting here costs
+// a retry, so the bound is the storage limit rather than a style preference.
+// `correction` is nullable because most turns do not need one, and a model
+// forced to always produce one will invent a mistake to have something to say.
+const replySchema = z.object({
+  reply: z.string().min(1).max(800),
+  correction: correctionSchema.nullish(),
+});
+
+export type TutorCorrection = z.infer<typeof correctionSchema>;
+
+export interface TutorReply {
+  reply: string;
+  correction: TutorCorrection | null;
+}
 
 /**
  * The prompt for one reply. Pure, and exported for tests: the guarantees that
@@ -64,15 +97,23 @@ export function buildTutorPrompt(history: TutorTurn[], cefr: string): string {
     `- Reply in ${profile.name} only. Do not translate yourself into English, and do not add a transliteration - the app provides both on demand.`,
     "- At most two short sentences.",
     "- End with a question, so there is something for the learner to answer.",
-    "- Do not correct the learner's mistakes. Understand what they meant and reply to that; a separate button handles corrections, and interrupting a conversation to correct it is how people stop talking.",
+    "- Never correct the learner inside the reply itself. Understand what they meant and answer that; correcting someone mid-conversation is how people stop talking. The correction goes in its own field, which the app shows quietly and separately.",
     `- If the learner writes in English, reply in ${profile.name} anyway, but keep it very simple.`,
     profile.prompts.syntax ? `- ${profile.prompts.syntax}` : "",
+    "",
+    "Separately, correct the learner's LAST message:",
+    `- Set "correction" to null if the message is already correct, if it is only a greeting, or if it is in English. Do not invent a mistake to have something to report - a learner who is corrected when they were right stops believing the corrections.`,
+    "- Otherwise give the whole message rewritten correctly, and one entry per real mistake: what they wrote, what it should be, and a short English reason.",
+    profile.prompts.interference
+      ? `- Watch especially for these:\n${profile.prompts.interference}`
+      : "",
     "",
     transcript
       ? `The conversation so far:\n${transcript}`
       : "The learner has just opened the chat and said nothing yet. Greet them.",
     "",
-    'Return ONLY JSON: {"reply": "..."}',
+    'Return ONLY JSON: {"reply": "...", "correction": null}',
+    'or {"reply": "...", "correction": {"corrected": "...", "issues": [{"before": "...", "after": "...", "whyEn": "..."}]}}',
   ]
     .filter(Boolean)
     .join("\n");
@@ -82,7 +123,7 @@ export async function generateTutorReply(
   history: TutorTurn[],
   cefr: string,
   deadline: number,
-): Promise<string> {
+): Promise<TutorReply> {
   return completeJson(buildTutorPrompt(history, cefr), {
     // Groq first: the learner is watching three dots. Its LPU returns a reply
     // of this length in about a second where the HF router takes three to six,
@@ -90,9 +131,21 @@ export async function generateTutorReply(
     // The rest of the chain still sits behind it untouched.
     prefer: ["groq"],
     maxTokens: MAX_REPLY_TOKENS,
-    temperature: 0.7,
+    // Lower than the 0.8 default: this call now does two jobs, and the
+    // correction wants to be boring. The reply stays varied enough at 0.6
+    // because the conversation, not the sampler, supplies the variety.
+    temperature: 0.6,
     deadline,
-    validate: (raw) => replySchema.parse(JSON.parse(raw)).reply.trim(),
+    validate: (raw) => {
+      const parsed = replySchema.parse(JSON.parse(raw));
+      const correction = parsed.correction ?? null;
+      return {
+        reply: parsed.reply.trim(),
+        // A correction with no issues is the model saying "looks fine" in the
+        // long form; store it as nothing so the UI has one way to ask.
+        correction: correction && correction.issues.length > 0 ? correction : null,
+      };
+    },
   });
 }
 

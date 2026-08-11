@@ -51,6 +51,28 @@ export interface LanguageCapabilities {
 }
 
 /** Language-specific fragments spliced into the shared prompt templates. */
+/**
+ * One substitution the learner's own language pulls them into, in a form both
+ * the prompt and a client-side matcher can read.
+ *
+ * The prompt string is derived from these rather than written beside them: two
+ * copies of the same list is how one of them ends up stale, and the whole point
+ * is that the model and the composer disagree about nothing.
+ */
+export interface InterferenceRule {
+  /** The mistaken form, shown to the learner as what to replace. */
+  wrong: string;
+  /** What to write instead. */
+  right: string;
+  /** One sentence, in English, on why. Shown verbatim - no model involved. */
+  whyEn: string;
+  /**
+   * Other whole-word phrases that are the same mistake, typically inflected
+   * forms of `wrong`. Matched, but never shown; `wrong` stays the label.
+   */
+  alsoMatch?: string[];
+}
+
 export interface LanguagePrompts {
   /** e.g. "a Dari language teacher in Kabul". Used as the model's persona. */
   teacher: string;
@@ -68,6 +90,11 @@ export interface LanguagePrompts {
    * way: `estranyar` glossed "to miss", which is Spanish *extrañar*.
    */
   interference: string;
+  /**
+   * The subset of `interference` that can be recognised from the words alone,
+   * as data. `interference` is built from this, so they cannot drift.
+   */
+  interferenceRules: InterferenceRule[];
   /**
    * Model sentences for the first two levels.
    *

@@ -86,9 +86,13 @@ export async function POST(req: Request) {
     cefr = "A1";
   }
 
-  let reply: string;
+  let result: Awaited<ReturnType<typeof generateTutorReply>>;
   try {
-    reply = await generateTutorReply([...turns, { role: "user", body }], cefr, deadlineIn(REPLY_BUDGET_MS));
+    result = await generateTutorReply(
+      [...turns, { role: "user", body }],
+      cefr,
+      deadlineIn(REPLY_BUDGET_MS),
+    );
   } catch (e) {
     // The learner's own message is already stored and is returned here, so the
     // thread does not lose what they wrote when the provider chain is down.
@@ -99,22 +103,38 @@ export async function POST(req: Request) {
     );
   }
 
+  // The correction rides along on the same completion, so it costs nothing
+  // extra to store it. Written onto the learner's *own* row, which is both
+  // where the tap-to-correct button would have put it - so the two paths are
+  // indistinguishable afterwards - and what stops it being charged again.
+  let correctedRow = userRow as TutorMessageRow;
+  if (result.correction) {
+    const { data: updated } = await service
+      .from("tutor_messages")
+      .update({ correction: result.correction })
+      .eq("id", userRow.id)
+      .is("correction", null)
+      .select()
+      .maybeSingle();
+    if (updated) correctedRow = updated as TutorMessageRow;
+  }
+
   const { data: tutorRow, error: replyError } = await service
     .from("tutor_messages")
-    .insert({ user_id: user.id, role: "tutor", body: reply })
+    .insert({ user_id: user.id, role: "tutor", body: result.reply })
     .select()
     .single();
 
   if (replyError || !tutorRow) {
     const failure = tutorErrorReason(replyError);
     return NextResponse.json(
-      { reason: failure.reason, error: failure.message, userMessage: userRow as TutorMessageRow },
+      { reason: failure.reason, error: failure.message, userMessage: correctedRow },
       { status: failure.status },
     );
   }
 
   return NextResponse.json({
-    userMessage: userRow as TutorMessageRow,
+    userMessage: correctedRow,
     tutorMessage: tutorRow as TutorMessageRow,
   });
 }
