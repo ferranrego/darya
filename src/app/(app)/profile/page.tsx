@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BarChart3, BookOpen, Flame, Library, LogOut, Trophy, Bell, Settings2, BookType, Hash, Skull } from "lucide-react";
+import { BarChart3, BookOpen, Flame, Library, LogOut, Trophy, Bell, Settings2, BookType, Hash, Skull, Send } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { motion, useReducedMotion } from "motion/react";
 import { levelLabel } from "@/lib/content/load";
@@ -56,8 +56,24 @@ export default function ProfilePage() {
   const { data: words } = useUserWords();
   const signOut = useSignOut();
   const { readingFont, setReadingFont } = useSettingsStore();
-  const { isSupported, isSubscribed, isSubscribing, subscribe } = usePushSubscription();
+  const { isSupported, isSubscribed, isSubscribing, error: pushError, subscribe } =
+    usePushSubscription();
   const reduce = useReducedMotion();
+
+  // Push has no visible failure mode of its own: a notification that never
+  // arrives looks exactly like a quiet day. This reports what the push service
+  // actually answered, so a broken deployment is a one-tap discovery.
+  const testPush = useMutation({
+    mutationFn: async () => {
+      const res = await fetch("/api/push/test", { method: "POST" });
+      const json = await res.json();
+      if (!res.ok || json.sent === 0) {
+        const detail = json.error || json.results?.[0]?.error || `HTTP ${res.status}`;
+        throw new Error(String(detail).slice(0, 160));
+      }
+      return json as { sent: number };
+    },
+  });
 
   const patch = useMutation({
     mutationFn: async (p: {
@@ -190,7 +206,18 @@ export default function ProfilePage() {
 
       {isSupported && (
         <motion.section {...stagger(0.25)}>
-          <SettingsGroup title="Notifications" footer="Get daily streak reminders and updates.">
+          <SettingsGroup
+            title="Notifications"
+            footer={
+              pushError
+                ? pushError
+                : testPush.isError
+                  ? `Test failed: ${testPush.error.message}`
+                  : testPush.isSuccess
+                    ? "Test sent: it should appear on your lock screen."
+                    : "Get daily streak reminders and updates."
+            }
+          >
             {!isSubscribed ? (
               <SettingsItem
                 onClick={() => {
@@ -230,6 +257,17 @@ export default function ProfilePage() {
                       onChange={(checked) => patch.mutate({ reminder_notifications: checked })}
                     />
                   }
+                />
+                <SettingsItem
+                  onClick={() => {
+                    hapticTap();
+                    testPush.mutate();
+                  }}
+                  icon={<Send size={18} />}
+                  iconBgColor="bg-surface"
+                  iconColor="text-lapis"
+                  title={testPush.isPending ? "Sending..." : "Send a test notification"}
+                  subtitle="Check delivery works on this device"
                 />
               </>
             )}

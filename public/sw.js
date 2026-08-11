@@ -3,7 +3,7 @@
  * - navigations & API reads: network-first with cache fallback
  * Push handling arrives in Phase 3 (Declarative Web Push payloads). */
 
-const VERSION = "darya-v1.2";
+const VERSION = "darya-v1.3";
 const STATIC_CACHE = `${VERSION}-static`;
 const PAGE_CACHE = `${VERSION}-pages`;
 
@@ -94,6 +94,42 @@ self.addEventListener("push", (event) => {
   } catch (e) {
     console.error("Error parsing push payload", e);
   }
+});
+
+/* Push services rotate endpoints — Apple does so on its own schedule, without
+ * the app being opened. Without this handler the old endpoint stays in the
+ * database, every later send returns 410, and the user silently stops
+ * receiving anything forever. Re-subscribe with the same server key and tell
+ * the backend about the new endpoint. */
+self.addEventListener("pushsubscriptionchange", (event) => {
+  event.waitUntil(
+    (async () => {
+      try {
+        const applicationServerKey =
+          event.oldSubscription?.options?.applicationServerKey ||
+          (await self.registration.pushManager.getSubscription())?.options?.applicationServerKey;
+        if (!applicationServerKey) return;
+
+        const sub = await self.registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey,
+        });
+
+        const keys = sub.toJSON().keys;
+        await fetch("/api/push/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            endpoint: sub.endpoint,
+            keys: { p256dh: keys?.p256dh, auth: keys?.auth },
+            platform: "web",
+          }),
+        });
+      } catch (e) {
+        console.error("pushsubscriptionchange re-subscribe failed", e);
+      }
+    })(),
+  );
 });
 
 self.addEventListener("notificationclick", (event) => {
