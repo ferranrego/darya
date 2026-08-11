@@ -25,13 +25,51 @@ export const ORTHOGRAPHY = [
  * substitutions rather than prohibitions because "avoid castellanismes" is
  * advice the model cannot act on.
  */
+/**
+ * The mechanically checkable half of the castilianisms, as data.
+ *
+ * See the note on `INTERFERENCE_RULES` in the Dari profile: as prose these can
+ * only advise a model, as a table they also become a free check the composer
+ * runs on the learner's draft before anything is sent.
+ *
+ * Only substitutions that can be recognised from the words alone belong here.
+ * `estranyar` for "to miss" and the personal `a` need to know what the sentence
+ * means, so they stay in the prose lines below - a check that fires on correct
+ * Catalan is worse than no check, because the learner stops trusting it.
+ */
+export const INTERFERENCE_RULES = [
+  {
+    wrong: "hi han",
+    right: "hi ha",
+    whyEn: "“hi ha” is invariable: always singular, even with a plural noun.",
+  },
+  {
+    wrong: "tinc que",
+    right: "he de",
+    whyEn: "Obligation is “haver de”, not “tenir que” (he d'anar, not tinc que anar).",
+    alsoMatch: ["tens que", "té que", "tenim que", "teniu que", "tenen que", "tenir que"],
+  },
+  {
+    wrong: "em dono compte",
+    right: "me n'adono",
+    whyEn: "The verb is “adonar-se”, not “donar-se compte”.",
+    alsoMatch: ["et dones compte", "es dona compte", "donar-se compte", "donar compte"],
+  },
+  {
+    wrong: "degut a",
+    right: "a causa de",
+    whyEn: "“Degut a” is a castilianism; use “a causa de” or “per culpa de”.",
+  },
+  {
+    wrong: "lo",
+    right: "el / el que / allò",
+    whyEn: "Catalan has no neuter article “lo”: el que és important, not lo important.",
+  },
+];
+
 export const INTERFERENCE = [
   "Never use these Spanish-influenced forms. The correct Catalan is on the right:",
-  "  tenir que -> haver de (he d'anar, not tinc que anar)",
-  "  donar-se compte -> adonar-se (me n'adono, not em dono compte)",
-  "  hi han -> hi ha (hi ha is invariable, always singular)",
-  "  lo + adjective -> el que / allò (el que és important, not lo important)",
-  "  degut a -> a causa de, per culpa de",
+  ...INTERFERENCE_RULES.map((r) => `  ${r.wrong} -> ${r.right} (${r.whyEn})`),
   "  al + infinitive -> quan + verb (quan arribo, not al arribar)",
   "  estranyar meaning 'to miss' -> enyorar, trobar a faltar (estranyar is 'to find odd')",
   "  buscar/trobar a algú with personal a -> no personal a in Catalan (veig la Maria, not veig a la Maria)",

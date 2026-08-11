@@ -10,6 +10,7 @@ import {
   WORD_ROLES,
   CHAT,
   INTERFERENCE,
+  INTERFERENCE_RULES,
   BEGINNER_PATTERNS,
   SYNTAX,
 } from "./prompts.ts";
@@ -78,6 +79,7 @@ export const ca: LanguageProfile = {
     teacher: TEACHER,
     orthography: ORTHOGRAPHY,
     interference: INTERFERENCE,
+    interferenceRules: INTERFERENCE_RULES,
     beginnerPatterns: BEGINNER_PATTERNS,
     culturalSetting: CULTURAL_SETTING,
     scenarios: SCENARIOS,

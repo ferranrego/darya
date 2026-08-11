@@ -64,6 +64,19 @@ export function MessageBubble({
   const failed = enrich.isError && enrich.variables?.id === message.id && open && !shown;
   const showFooter = showTime || isTarget;
 
+  /**
+   * A correction that arrived without being asked for.
+   *
+   * On the tutor thread the reply call returns one alongside the reply, so it
+   * is already on the row before the learner has done anything. That changes
+   * what the UI owes them: an unrequested correction has to announce itself,
+   * or nobody will ever discover it - but it must not interrupt, because being
+   * corrected mid-conversation is what makes people stop writing. So it shows
+   * as a count they can ignore, and stays collapsed until tapped.
+   */
+  const autoIssues = own && message.correction ? message.correction.issues.length : 0;
+  const hasAutoCorrection = autoIssues > 0;
+
   return (
     <div
       className={`flex flex-col gap-1 w-full ${
@@ -88,6 +101,14 @@ export function MessageBubble({
             dir="auto"
             className={`whitespace-pre-wrap text-[16px] leading-relaxed ${
               isTarget ? "text-[19px] break-normal" : "break-words"
+            } ${
+              // The one visual cue on the message itself: a dotted underline,
+              // the convention every writing tool uses for "there is a note
+              // here". Not red, not a squiggle - this is a language learner,
+              // for whom mistakes are the expected case, not an error state.
+              hasAutoCorrection && open !== "correction"
+                ? "decoration-dotted decoration-from-font underline underline-offset-4 decoration-white/50"
+                : ""
             }`}
           >
             {message.body}
@@ -195,18 +216,34 @@ export function MessageBubble({
                 <button
                   type="button"
                   onClick={() => toggle("correction")}
-                  aria-label={`Check my ${lang.name}`}
+                  aria-label={
+                    hasAutoCorrection
+                      ? `${autoIssues} ${autoIssues === 1 ? "fix" : "fixes"} for this message`
+                      : `Check my ${lang.name}`
+                  }
                   aria-pressed={open === "correction"}
-                  className={`rounded-full p-1 transition-colors ${
+                  className={`flex items-center gap-1 rounded-full p-1 transition-colors ${
                     open === "correction"
                       ? "bg-lapis-soft text-lapis"
-                      : "text-ink-faint hover:text-lapis"
+                      : hasAutoCorrection
+                        ? // Already found something, and nobody asked. It has to
+                          // be findable without being an alarm, so it earns
+                          // colour and a count but no red and no badge dot.
+                          "px-2 bg-lapis-soft/60 text-lapis"
+                        : "text-ink-faint hover:text-lapis"
                   }`}
                 >
                   {pending && open === "correction" ? (
                     <Loader2 size={13} className="animate-spin" />
                   ) : (
-                    <SpellCheck size={13} />
+                    <>
+                      <SpellCheck size={13} />
+                      {hasAutoCorrection && (
+                        <span className="text-[11px] font-medium">
+                          {autoIssues} {autoIssues === 1 ? "fix" : "fixes"}
+                        </span>
+                      )}
+                    </>
                   )}
                 </button>
               )}
