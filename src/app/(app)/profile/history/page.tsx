@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, Sparkles, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { useReadTextsWithDocs } from "@/lib/queries/hooks";
 import { profile as langProfile } from "@/lib/lang";
@@ -52,11 +52,25 @@ export default function HistoryPage() {
                   </span>
                 </div>
                 <p className="text-[14px] text-ink-soft">{doc.titleEn}</p>
-                {row.texts?.theme && (
-                  <div className="mt-2 self-start rounded-full bg-lapis-soft/50 px-2 py-0.5 text-[11px] font-medium text-lapis">
-                    {row.texts.theme}
-                  </div>
-                )}
+                
+                <div className="mt-2 flex flex-wrap items-center gap-2">
+                  {row.texts?.theme && (
+                    <div className="rounded-full bg-lapis-soft/50 px-2 py-0.5 text-[11px] font-medium text-lapis">
+                      {row.texts.theme}
+                    </div>
+                  )}
+                  {row.texts?.source === "generated" ? (
+                    <div className="flex items-center gap-1 rounded-full bg-saffron-soft/50 px-2 py-0.5 text-[11px] font-medium text-saffron">
+                      <Sparkles size={12} />
+                      <span>On-Demand</span>
+                    </div>
+                  ) : row.texts?.source === "seed" ? (
+                    <div className="flex items-center gap-1 rounded-full bg-sabz-soft/50 px-2 py-0.5 text-[11px] font-medium text-sabz">
+                      <BookOpen size={12} />
+                      <span>Curated</span>
+                    </div>
+                  ) : null}
+                </div>
               </Link>
             );
           })}
