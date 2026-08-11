@@ -33,12 +33,11 @@ import { join } from "node:path";
 
 import { lexiconFileSchema, type LexiconEntry } from "../src/lib/content/schema.ts";
 import { isTeachable } from "../src/lib/content/teachability.ts";
+import { BEGINNER_CORE_TAG } from "../src/lib/content/word-selection.ts";
 import { buildLexiconIndex as buildCa } from "../src/lib/lang/ca/lexicon-index.ts";
 import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { readSpec, specWords } from "./verify-beginner-core.ts";
-
-export const BEGINNER_CORE_TAG = "beginner-core";
 
 /**
  * Every requirement the spec states, verbatim.

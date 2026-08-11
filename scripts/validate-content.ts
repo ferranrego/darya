@@ -20,7 +20,9 @@ import {
 // ZWNJ is a Perso-Arabic concept, and the compound-spelling check below is a
 // Dari orthography rule - both come from the language module, not the neutral
 // text façade. Phase 3 gives this script a --lang argument.
-import { isRuledOut } from "../src/lib/content/teachability.ts";
+import { levelVocabulary } from "../src/lib/content/level-vocabulary.ts";
+import { isRuledOut, isTeachable } from "../src/lib/content/teachability.ts";
+import { isContentWord } from "../src/lib/content/word-selection.ts";
 import { verbSpec as caVerbSpec } from "../src/lib/lang/ca/lexicon-index.ts";
 import { ZWNJ } from "../src/lib/lang/prs/normalize.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
@@ -540,6 +542,40 @@ if (lexicon) {
     );
   }
   console.log(`✓ homographs (${ambiguities.size} ambiguous surface(s), ${usages.length} used in seed texts)`);
+}
+
+// --- Level reachability ------------------------------------------------------
+//
+// `entryKnownWords` is a cumulative gate (PEDAGOGY §3): reaching level N+1 by
+// the global promotion rule means having learned
+// `entryKnownWords(N+1) - entryKnownWords(N)` words somewhere, and for a
+// beginner learner the only place those can come from is level N's own
+// teachable curriculum - nothing above it has been shown yet. This is a
+// warning, not a failure: it is EXPECTED to fire for L1 today (481 ca / 429
+// prs teachable content words against L2's 500-word gate) and the fix is
+// separate follow-up content authoring, not something to block this build on.
+// `nextLevelFor` (src/lib/content/promotion.ts) exists precisely because the
+// global rule alone cannot reach L2 from L1 - this check makes that gap
+// mechanically visible instead of only discoverable at runtime.
+if (lexicon && levels) {
+  let shortfalls = 0;
+  for (let i = 0; i < levels.levels.length - 1; i++) {
+    const level = levels.levels[i];
+    const nextLevel = levels.levels[i + 1];
+    const gap = nextLevel.entryKnownWords - level.entryKnownWords;
+    const teachableCount = levelVocabulary(level, lexicon.entries, isTeachable).filter(
+      isContentWord,
+    ).length;
+    if (teachableCount < gap) {
+      shortfalls++;
+      console.warn(
+        `⚠ ${lang} ${level.id}: teachable curriculum (${teachableCount} words) is smaller than the ${gap}-word gap to ${nextLevel.id} - promotion by content alone cannot reach it`,
+      );
+    }
+  }
+  if (shortfalls === 0) {
+    console.log(`✓ level reachability (every level's curriculum can reach the next)`);
+  }
 }
 
 if (errors > 0) {

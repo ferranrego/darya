@@ -20,21 +20,33 @@
  * information the other functions in this module need.
  */
 
+import { profile } from "../lang/index.ts";
 import { beginnerSpec, lexiconIndex } from "./load.ts";
 import { isTeachable } from "./teachability.ts";
 import type { LexiconEntry } from "./schema.ts";
 
 function resolveSpecWord(word: string): LexiconEntry[] {
   const index = lexiconIndex();
+  const wantedKey = profile.text.matchKey(word);
 
   const direct = index.resolve(word);
-  if (direct && isTeachable(direct)) return [direct];
+  if (direct && isTeachable(direct) && isLemmaMatch(direct, wantedKey)) return [direct];
 
   const parts = word.split(/\s+/).filter(Boolean);
   if (parts.length < 2) return [];
   const resolved = parts.map((p) => index.resolve(p));
-  if (resolved.some((e) => !e || !isTeachable(e))) return [];
+  if (
+    resolved.some(
+      (e, i) => !e || !isTeachable(e) || !isLemmaMatch(e, profile.text.matchKey(parts[i])),
+    )
+  )
+    return [];
   return resolved as LexiconEntry[];
+}
+
+function isLemmaMatch(entry: LexiconEntry, wantedKey: string): boolean {
+  if (profile.text.matchKey(entry.target) === wantedKey) return true;
+  return entry.variants.some((v) => profile.text.matchKey(v) === wantedKey);
 }
 
 /** Build one id -> group-name(s) map from a `word -> group` spec section. */

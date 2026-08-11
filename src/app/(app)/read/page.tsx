@@ -9,8 +9,8 @@ import { TextReader } from "@/components/reader/text-reader";
 import { Button } from "@/components/ui/button";
 import { levels, lexicon } from "@/lib/content/load";
 import { isTeachable } from "@/lib/content/teachability";
-import { placementCredit, selectUnread } from "@/lib/content/text-pool";
-import { coldStartKnown } from "@/lib/content/word-selection";
+import { beginnerPositionFor, knownSetsFor, selectUnread } from "@/lib/content/text-pool";
+import { isBeginnerLevel } from "@/lib/content/word-selection";
 import { updateProfile } from "@/lib/db/profiles";
 import { seedKnownWords } from "@/lib/db/words";
 import {
@@ -59,28 +59,33 @@ export default function ReadPage() {
 
   const readIds = useMemo(() => new Set((readRows ?? []).map((r) => r.text_id)), [readRows]);
 
+  const trackedIds = useMemo(() => (userWords ?? []).map((w) => w.lexeme_id), [userWords]);
+
   /**
-   * The words the placement credits this learner with but which have no row
-   * yet - offered as a one-time bulk "mark as known" (see PriorWordsSheet), and
-   * counted as known when judging whether a text is too hard.
-   *
-   * The threshold is the learner's *own* level's `entryKnownWords`, which is
-   * exactly what that field means: how many words you need in order to be at
-   * this level. Reading it off the level below instead credited an L2 learner
-   * with L1's entry figure - zero - so the placement gave them nothing, every
-   * generated text scored an unknown-word rate of 1.00, and the reader sat on
-   * "Writing your next text…" for ever. It only looked fixed at L3, where the
-   * under-credit of 110 instead of 500 still happened to clear the bar.
+   * What this learner knows, split into `coverage` (may appear without
+   * counting as difficulty) and `familiar` (this learner's own words) - see
+   * `KnownSets` in text-pool.ts. Two incidents live behind this one memo now.
+   * Reading the placement threshold off the level below an L2 learner instead
+   * of their own credited them with L1's entry figure - zero - so every
+   * generated text scored an unknown-word rate of 1.00 and the reader sat on
+   * "Writing your next text…" forever. And the reader's own cold-start
+   * fallback used to be a different sixty-word list than the one
+   * `/api/generate` built the text from, so only 56-60 of the 60 words the
+   * server had actually written against were recognised here, a five-sentence
+   * text's worth of core vocabulary failed the gate, and the learner was told
+   * after three rounds that the texts were the wrong level for them.
+   * `knownSetsFor`'s `coverage` folds in the level's whole curriculum
+   * vocabulary unconditionally - not just where the placement credit is thin
+   * - so both classes of bug are now closed by construction rather than by a
+   * threshold or a second list that can drift from the server's.
    */
-  const priorWordIds = useMemo(() => {
+  const known = useMemo(() => {
     const level = levels.find((l) => l.id === profile?.level_estimate);
-    if (!level || !userWords) return [];
-    return placementCredit(
-      level.entryKnownWords,
-      lexicon.entries,
-      userWords.map((w) => w.lexeme_id),
-    );
-  }, [profile?.level_estimate, userWords]);
+    if (!level) return null;
+    return knownSetsFor({ level, entries: lexicon.entries, isUsable: isTeachable, trackedIds });
+  }, [profile?.level_estimate, trackedIds]);
+
+  const priorWordIds = known?.placement ?? [];
 
   const [priorDismissed, setPriorDismissed] = useState(false);
   const [priorBusy, setPriorBusy] = useState(false);
@@ -111,49 +116,11 @@ export default function ReadPage() {
   }
 
   const unread = useMemo(() => {
-    if (!texts || !userWords) return [];
-
-    const trackedCount = userWords.filter((w) => w.status === "known" || w.status === "learning").length;
-    const knownCount = trackedCount + priorWordIds.length;
-    let fallbackIds: string[] | undefined = undefined;
-
-    /**
-     * The same starting vocabulary the server wrote the text against.
-     *
-     * This used to be `inBand.slice(0, 60)` - the sixty commonest words in the
-     * level's bands, in file order - while `/api/generate` built its cold start
-     * with `coldStartKnown`: 120 entries, beginner core first, teachability
-     * filtered. Measured, only 56 of 60 (ca) and 60 of 60 (prs) overlapped, so
-     * 64 and 60 of the words the server had *built the text from* were scored
-     * here as untaught. A five-sentence text has 25-30 distinct lexemes and the
-     * gate is 25%, so a handful of core words failed it: the server answered
-     * `created: true`, the reader showed nothing, and after three rounds the
-     * learner was told the texts were the wrong level for them.
-     *
-     * Worse, it got worse as the content improved. The beginner core exists
-     * precisely because `gos` and `poma` rank far below the frequency head, so
-     * every core word the server correctly reached for was a word this list
-     * lacked. Both halves must call the same function - that is the whole point
-     * of the contract this module's header describes.
-     */
-    if (knownCount < 40) {
-      const level = levels.find((l) => l.id === profile?.level_estimate);
-      if (level) {
-        fallbackIds = coldStartKnown(lexicon.entries, level, isTeachable).map((e) => e.id);
-      }
-    }
-
-    return selectUnread({
-      texts,
-      readIds,
-      trackedIds: userWords
-        .filter((w) => w.status === "known" || w.status === "learning")
-        .map((w) => w.lexeme_id),
-      priorIds: priorWordIds,
-      fallbackIds,
-      activeTextId,
-    }) as typeof texts;
-  }, [texts, readIds, userWords, activeTextId, priorWordIds, profile?.level_estimate]);
+    if (!texts || !userWords || !known) return [];
+    const level = levels.find((l) => l.id === profile?.level_estimate);
+    const beginnerPosition = level && isBeginnerLevel(level) ? beginnerPositionFor(texts, readIds) : undefined;
+    return selectUnread({ texts, readIds, known, activeTextId, beginnerPosition }) as typeof texts;
+  }, [texts, readIds, userWords, activeTextId, known, profile?.level_estimate]);
 
   const generate = useMutation({
     mutationFn: async () => {
@@ -396,4 +363,3 @@ function ReaderSkeleton() {
     </div>
   );
 }
-

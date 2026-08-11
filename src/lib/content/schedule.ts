@@ -21,6 +21,7 @@ import { defaultRecipes, type SceneRecipe } from "./scene.ts";
 import { closedClassOf, dimensionWords, fieldWords, verbFunctionWords } from "./beginner-spec.ts";
 import { levelVocabulary } from "./level-vocabulary.ts";
 import { PRS_IRANIAN_WORDS } from "./text-checks.ts";
+import { CONTENT_POS } from "./word-selection.ts";
 import { profile } from "../lang/index.ts";
 import type { LexiconEntry, Level } from "./schema.ts";
 
@@ -69,8 +70,10 @@ const DEFAULT_LOOKBACK = 5; // L4 and above
  * gap alone put a third of L1's schedule into scene-less trailing slots
  * (`gener`, `diumenge`, `on`, `massa`, ...), so `closedClassOf` is checked
  * too, matching the set `build-seed-texts.ts` already absorbs.
+ *
+ * `CONTENT_POS` itself is `word-selection.ts`'s - imported rather than
+ * redeclared, so the two files cannot silently drift onto different sets.
  */
-const CONTENT_POS = new Set(["noun", "verb", "adjective", "adverb"]);
 
 function levelIndexOf(level: Level): number {
   // Ids are "L1".."L8", assigned in curriculum order (schema comment on

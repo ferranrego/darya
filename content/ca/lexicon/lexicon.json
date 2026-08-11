@@ -187,7 +187,9 @@
       "freqRank": 11,
       "freqBand": 1,
       "register": "neutral",
-      "variants": [],
+      "variants": [
+        "ha"
+      ],
       "exampleTarget": "Hem arribat tard.",
       "exampleEn": "We arrived late.",
       "tags": [
@@ -3239,7 +3241,9 @@
       "freqRank": 194,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [],
+      "variants": [
+        "elles"
+      ],
       "exampleTarget": "Ells viuen al camp.",
       "exampleEn": "They live in the countryside.",
       "tags": [
@@ -4727,7 +4731,9 @@
       "freqRank": 286,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [],
+      "variants": [
+        "junts"
+      ],
       "exampleTarget": "Sopem junts cada nit.",
       "exampleEn": "We have dinner together every night.",
       "tags": [
@@ -71553,6 +71559,85 @@
       "exampleTarget": "Us ho adverteixo de bell antuvi perquè no hi hagi sorpreses.",
       "exampleEn": "I'm warning you beforehand so there are no surprises.",
       "tags": []
+    },
+    {
+      "target": "sec",
+      "glossEn": "dry",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [
+        "seca",
+        "secs",
+        "seques"
+      ],
+      "exampleTarget": "El clima d'aquesta regió és molt sec a l'estiu.",
+      "exampleEn": "The climate of this region is very dry in the summer.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-4617",
+      "targetNormalized": "sec",
+      "freqRank": 4610,
+      "freqBand": 10
+    },
+    {
+      "target": "salat",
+      "glossEn": "salty",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [
+        "salada",
+        "salats",
+        "salades"
+      ],
+      "exampleTarget": "El menjar estava massa salat.",
+      "exampleEn": "The food was too salty.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-4618",
+      "targetNormalized": "salat",
+      "freqRank": 4611,
+      "freqBand": 10
+    },
+    {
+      "target": "enfadat",
+      "glossEn": "angry",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [
+        "enfadada",
+        "enfadats",
+        "enfadades"
+      ],
+      "exampleTarget": "Està molt enfadat perquè ha perdut el tren.",
+      "exampleEn": "He is very angry because he missed the train.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-4619",
+      "targetNormalized": "enfadat",
+      "freqRank": 4612,
+      "freqBand": 10
+    },
+    {
+      "target": "rosa",
+      "glossEn": "pink",
+      "pos": "adjective",
+      "register": "neutral",
+      "gender": "common",
+      "variants": [
+        "roses"
+      ],
+      "exampleTarget": "M'agrada molt aquesta camisa rosa.",
+      "exampleEn": "I really like this pink shirt.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-4620",
+      "targetNormalized": "rosa",
+      "freqRank": 4613,
+      "freqBand": 10
     }
   ]
 }

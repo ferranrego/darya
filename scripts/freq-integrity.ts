@@ -55,3 +55,54 @@ export function insertionOrderSuffix(entries: readonly LexiconEntry[]): LexiconE
   const run = byId.slice(i);
   return run.length >= MIN_RUN ? run : [];
 }
+
+/**
+ * A row from `scripts/data/freq-<lang>.tsv` - `build-frequency.ts`'s audit
+ * artifact, committed alongside the lexicon it was derived from.
+ */
+export interface FreqTsvRow {
+  lexemeId: string;
+  rank: number;
+}
+
+/**
+ * Lexemes where the TSV's rank and the shipped lexicon's `freqRank` disagree
+ * by more than `tolerance`.
+ *
+ * The two are only guaranteed to agree immediately after a `build-frequency.ts
+ * --apply` run - both are written from the same `scored` array in that one
+ * pass. A dry run (or any later hand-edit of `freqRank`, e.g.
+ * `rederive-levels.ts`) can commit a TSV that no longer matches, silently: the
+ * TSV looks like a ranking but is actually the record of a proposal nobody
+ * applied. `tolerance` absorbs the ordinary noise of a corpus refresh (ties
+ * reordering by a handful of ranks); anything past it is evidence the two
+ * files describe different rankings, not the same one measured twice.
+ */
+export function tsvRankDrift(
+  entries: readonly LexiconEntry[],
+  tsvRows: readonly FreqTsvRow[],
+  tolerance: number,
+): { lexemeId: string; lexiconRank: number; tsvRank: number }[] {
+  const lexiconRankById = new Map(entries.map((e) => [e.id, e.freqRank]));
+  const out: { lexemeId: string; lexiconRank: number; tsvRank: number }[] = [];
+  for (const row of tsvRows) {
+    const lexiconRank = lexiconRankById.get(row.lexemeId);
+    if (lexiconRank === undefined) continue; // TSV row for an id no longer in the lexicon.
+    if (Math.abs(lexiconRank - row.rank) > tolerance) {
+      out.push({ lexemeId: row.lexemeId, lexiconRank, tsvRank: row.rank });
+    }
+  }
+  return out;
+}
+
+/** Parses `build-frequency.ts`'s TSV format: header row, then `rank \t band \t lexemeId \t ...`. */
+export function parseFreqTsv(raw: string): FreqTsvRow[] {
+  const lines = raw.trim().split("\n");
+  const header = lines[0].split("\t");
+  const rankCol = header.indexOf("rank");
+  const idCol = header.indexOf("lexemeId");
+  return lines.slice(1).map((line) => {
+    const cols = line.split("\t");
+    return { lexemeId: cols[idCol], rank: Number(cols[rankCol]) };
+  });
+}

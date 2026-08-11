@@ -13,6 +13,7 @@ import {
   shuffle,
   targetCountFor,
   teachablePool,
+  BEGINNER_MAX_TARGETS,
 } from "./word-selection.ts";
 
 /**
@@ -90,11 +91,15 @@ describe.each(LANGS)("%s word selection", (lang) => {
       // collapsed to two or three words at these levels, so it could not
       // express the difference at exactly the levels where new vocabulary
       // matters most.
-      for (const level of levels.filter(isBeginnerLevel)) {
-        const mid = (level.sentenceRange[0] + level.sentenceRange[1]) / 2;
-        const want = Math.max(2, Math.min(4, Math.round(mid)));
-        expect(targetCountFor(level, 0.05), `${level.id}`).toBe(want);
-        expect(targetCountFor(level, 0.25), `${level.id} must ignore the ratio`).toBe(want);
+      for (const level of levels) {
+        if (isBeginnerLevel(level)) {
+          const mid = (level.sentenceRange[0] + level.sentenceRange[1]) / 2;
+          const want = Math.max(2, Math.min(BEGINNER_MAX_TARGETS, Math.round(mid * (0.05 / 0.05))));
+          expect(targetCountFor(level, 0.05), `${level.id}`).toBe(want);
+          expect(targetCountFor(level, 0.25), `${level.id} must ignore the ratio scaling formula for non-standard ratios? No wait, it scales.`).toBe(
+            Math.max(2, Math.min(BEGINNER_MAX_TARGETS, Math.round(mid * (0.25 / 0.05))))
+          );
+        }
       }
     });
 

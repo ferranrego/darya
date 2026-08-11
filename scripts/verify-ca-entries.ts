@@ -139,7 +139,7 @@ export function verifyEntry(
   // Dictionary form for an adjective is masculine singular. A model asked for
   // "married" readily returns `casada`; the feminine endings -ada/-ida/-osa
   // are the reliable tell, since the masculine counterparts are -at/-it/-ós.
-  if (c.pos === "adjective" && /(ada|ida|osa|iva|ana|ina)$/.test(word)) {
+  if (c.pos === "adjective" && word !== "rosa" && /(ada|ida|osa|iva|ana|ina)$/.test(word)) {
     problems.push(`adjective "${word}" looks feminine; use the masculine singular`);
   }
 

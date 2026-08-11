@@ -5,8 +5,12 @@ import { Check, CircleHelp, Highlighter, Trophy, ArrowRight, Languages, Sparkles
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { availableLevels, lexemeById, lexiconIndex } from "@/lib/content/load";
+import { availableLevels, lexemeById, lexicon, lexiconIndex } from "@/lib/content/load";
+import { levelVocabulary } from "@/lib/content/level-vocabulary";
+import { nextLevelFor, type LevelCoverage } from "@/lib/content/promotion";
 import type { TextDocument } from "@/lib/content/schema";
+import { isTeachable } from "@/lib/content/teachability";
+import { isBeginnerLevel, isContentWord } from "@/lib/content/word-selection";
 import { markTextRead } from "@/lib/db/texts";
 import { upsertUserWord } from "@/lib/db/words";
 import { XP, recordActivity } from "@/lib/gamification";
@@ -123,12 +127,53 @@ export function TextReader({
         .select("*", { count: "exact", head: true })
         .eq("user_id", user.id)
         .eq("status", "known");
+
       // availableLevels, not levels: a learner must not be promoted into a level
       // whose content is not finished yet.
-      const eligible = availableLevels.filter((l) => (count ?? 0) >= l.entryKnownWords).at(-1);
-      const currentIdx = availableLevels.findIndex((l) => l.id === profile.level_estimate);
-      const eligibleIdx = eligible ? availableLevels.findIndex((l) => l.id === eligible.id) : -1;
-      if (eligible && eligibleIdx > currentIdx) {
+      const currentLevel = availableLevels.find((l) => l.id === profile.level_estimate);
+      if (!currentLevel) return;
+
+      let levelCoverage: LevelCoverage | undefined;
+      if (isBeginnerLevel(currentLevel)) {
+        // L1's entire authored curriculum (481 ca / 429 prs lexemes) sits below
+        // L2's entryKnownWords (500), so the global rule below can never fire from
+        // L1 alone - see nextLevelFor's own doc comment. This measures whether the
+        // learner has actually worked THIS level's own vocabulary instead.
+        const contentVocab = levelVocabulary(currentLevel, lexicon.entries, isTeachable).filter(isContentWord);
+        const contentIds = contentVocab.map((e) => e.id);
+
+        const [{ data: trackedRows }, { data: seedRows }] = await Promise.all([
+          contentIds.length > 0
+            ? db.from("user_words").select("status,fsrs").eq("user_id", user.id).in("lexeme_id", contentIds)
+            : Promise.resolve({ data: [] }),
+          db.from("texts").select("id").eq("level", currentLevel.id).eq("source", "seed"),
+        ]);
+
+        const met = (trackedRows ?? []).filter(
+          (w) => w.status === "known" || (w.status === "learning" && (w.fsrs?.reps ?? 0) >= 1),
+        ).length;
+
+        const seedIds = (seedRows ?? []).map((r) => r.id);
+        const { data: readSeedRows } =
+          seedIds.length > 0
+            ? await db.from("user_texts").select("text_id").eq("user_id", user.id).in("text_id", seedIds)
+            : { data: [] };
+        const readSeedCount = new Set((readSeedRows ?? []).map((r) => r.text_id)).size;
+
+        levelCoverage = {
+          met,
+          total: contentIds.length,
+          allSeedTextsRead: seedIds.length > 0 && readSeedCount >= seedIds.length,
+        };
+      }
+
+      const eligible = nextLevelFor({
+        current: currentLevel,
+        levels: availableLevels,
+        knownCount: count ?? 0,
+        levelCoverage,
+      });
+      if (eligible) {
         await db.from("profiles").update({ level_estimate: eligible.id }).eq("id", user.id);
       }
     },

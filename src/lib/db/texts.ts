@@ -69,6 +69,7 @@ export async function insertGeneratedText(
     vocab_hash: vocabHash,
     theme: theme ?? null,
     source: "generated",
+    seq: doc.seq ?? null,
     doc,
   });
   if (error) throw error;

@@ -46,6 +46,8 @@ const MAX_VERB_SHARE = 0.55;
  */
 const MAX_TARGETS = 8;
 const MIN_TARGETS = 2;
+export const MIN_TARGET_USE = 1.0;
+export const BEGINNER_MAX_TARGETS = 5;
 
 /** Deterministic PRNG so a seeded selection can be asserted in a test. */
 function mulberry32(seed: number): () => number {
@@ -90,7 +92,8 @@ export function targetCountFor(level: Level, newWordRatio: number): number {
   // which works for disjointed sentences but is impossible to weave into a continuous
   // story without hallucinating outside vocabulary. We reduce this to 1 word per sentence.
   if (isBeginnerLevel(level)) {
-    return Math.max(MIN_TARGETS, Math.min(4, Math.round(midSentences * 1)));
+    const scaledTargets = midSentences * 1 * (newWordRatio / 0.05);
+    return Math.max(MIN_TARGETS, Math.min(BEGINNER_MAX_TARGETS, Math.round(scaledTargets)));
   }
 
   const expectedTokens = midSentences * level.avgSentenceWords;
@@ -152,8 +155,8 @@ export function teachablePool(
  * sentence together. A learner is *taught* these; they absorb `de` and `el`
  * from every sentence that uses one.
  */
-const CONTENT_POS = new Set(["noun", "verb", "adjective", "adverb"]);
-const isContentWord = (e: LexiconEntry) => CONTENT_POS.has(e.pos);
+export const CONTENT_POS = new Set(["noun", "verb", "adjective", "adverb"]);
+export const isContentWord = (e: LexiconEntry) => CONTENT_POS.has(e.pos);
 
 const isNoun = (e: LexiconEntry) => e.pos === "noun";
 const isVerb = (e: LexiconEntry) => e.pos === "verb";

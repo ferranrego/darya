@@ -1692,7 +1692,9 @@
       "freqRank": 79,
       "freqBand": 1,
       "register": "neutral",
-      "variants": [],
+      "variants": [
+        "کمتر"
+      ],
       "exampleTarget": "وقت کم است.",
       "exampleTranslit": "waqt kam ast.",
       "exampleEn": "There is little time.",
@@ -2866,7 +2868,9 @@
       "freqRank": 136,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [],
+      "variants": [
+        "پیشتر"
+      ],
       "exampleTarget": "پیش از من آمد.",
       "exampleTranslit": "pēsh az man āmad.",
       "exampleEn": "He came before me.",
@@ -3424,7 +3428,9 @@
       "freqRank": 164,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [],
+      "variants": [
+        "بالای"
+      ],
       "exampleTarget": "به بالا نگاه کن.",
       "exampleTranslit": "ba bālā nigāh kun.",
       "exampleEn": "Look up.",
@@ -113366,6 +113372,114 @@
       "tags": [
         "People"
       ]
+    },
+    {
+      "target": "شکم",
+      "glossEn": "belly",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "شکم من درد می‌کند.",
+      "exampleEn": "My belly hurts.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6158",
+      "targetNormalized": "شکم",
+      "freqRank": 6155,
+      "freqBand": 10,
+      "translit": "shikam",
+      "exampleTranslit": "shikam-e man dard mēkunad."
+    },
+    {
+      "target": "کلید",
+      "glossEn": "key",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "کلید خانه کجاست؟",
+      "exampleEn": "Where is the house key?",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6159",
+      "targetNormalized": "کلید",
+      "freqRank": 6156,
+      "freqBand": 10,
+      "translit": "kilīd",
+      "exampleTranslit": "kilīd-e khāna kujāst?"
+    },
+    {
+      "target": "سبزی",
+      "glossEn": "vegetable",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "من سبزی دوست دارم.",
+      "exampleEn": "I like vegetables.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6160",
+      "targetNormalized": "سبزی",
+      "freqRank": 6157,
+      "freqBand": 10,
+      "translit": "sabzī",
+      "exampleTranslit": "man sabzī dōst dāram."
+    },
+    {
+      "target": "خزان",
+      "glossEn": "autumn",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "خزان فصل زیبایی است.",
+      "exampleEn": "Autumn is a beautiful season.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6161",
+      "targetNormalized": "خزان",
+      "freqRank": 6158,
+      "freqBand": 10,
+      "translit": "khazān",
+      "exampleTranslit": "khazān fasl-e zēbāyī ast."
+    },
+    {
+      "target": "دوم",
+      "glossEn": "second",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "او نفر دوم است.",
+      "exampleEn": "He is the second person.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6162",
+      "targetNormalized": "دوم",
+      "freqRank": 6159,
+      "freqBand": 10,
+      "translit": "duwum",
+      "exampleTranslit": "ō nafar-e duwum ast."
+    },
+    {
+      "target": "سوم",
+      "glossEn": "third",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "این روز سوم است.",
+      "exampleEn": "This is the third day.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6163",
+      "targetNormalized": "سوم",
+      "freqRank": 6160,
+      "freqBand": 10,
+      "translit": "suwum",
+      "exampleTranslit": "ēn rōz-e suwum ast."
     }
   ]
 }

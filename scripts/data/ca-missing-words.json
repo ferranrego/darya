@@ -1,0 +1,43 @@
+[
+  {
+    "target": "sec",
+    "glossEn": "dry",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": ["seca", "secs", "seques"],
+    "exampleTarget": "El clima d'aquesta regió és molt sec a l'estiu.",
+    "exampleEn": "The climate of this region is very dry in the summer.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "salat",
+    "glossEn": "salty",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": ["salada", "salats", "salades"],
+    "exampleTarget": "El menjar estava massa salat.",
+    "exampleEn": "The food was too salty.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "enfadat",
+    "glossEn": "angry",
+    "pos": "adjective",
+    "register": "neutral",
+    "variants": ["enfadada", "enfadats", "enfadades"],
+    "exampleTarget": "Està molt enfadat perquè ha perdut el tren.",
+    "exampleEn": "He is very angry because he missed the train.",
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "rosa",
+    "glossEn": "pink",
+    "pos": "adjective",
+    "register": "neutral",
+    "gender": "common",
+    "variants": ["roses"],
+    "exampleTarget": "M'agrada molt aquesta camisa rosa.",
+    "exampleEn": "I really like this pink shirt.",
+    "tags": ["beginner-core"]
+  }
+]

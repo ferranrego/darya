@@ -39,7 +39,9 @@ import { join } from "node:path";
 import { lexiconFileSchema, type LexiconEntry } from "../src/lib/content/schema.ts";
 import { isTeachable } from "../src/lib/content/teachability.ts";
 import { buildLexiconIndex as buildCa } from "../src/lib/lang/ca/lexicon-index.ts";
+import { matchKey as matchKeyCa } from "../src/lib/lang/ca/normalize.ts";
 import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
+import { matchKey as matchKeyPrs } from "../src/lib/lang/prs/normalize.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 
 export interface BeginnerSpec {
@@ -88,11 +90,21 @@ function main() {
     JSON.parse(readFileSync(join(root, "lexicon", "lexicon.json"), "utf8")),
   ).entries;
   const index = lang === "ca" ? buildCa(entries) : buildPrs(entries);
+  const matchKey = lang === "ca" ? matchKeyCa : matchKeyPrs;
 
-  /** Present *and* teachable, which is the only kind that helps a learner. */
+  /**
+   * Present, teachable, *and* the same word: the resolver's morphological
+   * fallback can land on an unrelated lexeme (`sec` "dry" -> `seure` "to
+   * sit"), which is exactly the `registre`/`registrar` class CLAUDE.md
+   * documents, one level removed. A lemma-identical hit is required.
+   */
   const direct = (word: string): LexiconEntry | null => {
     const e = index.resolve(word);
-    return e && isTeachable(e) ? e : null;
+    if (!e || !isTeachable(e)) return null;
+    const wantedKey = matchKey(word);
+    const isMatch =
+      matchKey(e.target) === wantedKey || e.variants.some((v) => matchKey(v) === wantedKey);
+    return isMatch ? e : null;
   };
 
   /**
