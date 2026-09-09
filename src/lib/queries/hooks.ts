@@ -8,8 +8,13 @@ import { getGrammarProgress } from "../db/grammar";
 import { getProfile } from "../db/profiles";
 import { getReadTexts, getReadTextsWithDocs, getText, getTextsForLevel } from "../db/texts";
 import { getUserWords } from "../db/words";
+import { asLexiconEntry, getUserLexemes } from "../db/user-lexemes";
+import { getImport, getImports } from "../db/imports";
+import type { LexiconEntry } from "../content/schema";
 import type { WordStatus } from "../db/types";
 import { supabaseBrowser } from "../supabase/client";
+import { buildIndex } from "../text";
+import type { LexiconIndex } from "../lang/types";
 
 export function useSupabase() {
   return useMemo(() => supabaseBrowser(), []);
@@ -54,6 +59,67 @@ export function useWordStatusMap(): Map<string, WordStatus> | undefined {
     if (!data) return undefined;
     return new Map(data.map((w) => [w.lexeme_id, w.status]));
   }, [data]);
+}
+
+/**
+ * The learner's personal dictionary - words glossed from imported articles.
+ *
+ * Kept separate from the shipped lexicon, which is a static import: these rows
+ * are per-user, arrive at runtime, and must never shadow curated content.
+ */
+export function useUserLexemes() {
+  const db = useSupabase();
+  const { data: user } = useUser();
+  return useQuery({
+    queryKey: ["user_lexemes", user?.id],
+    enabled: !!user,
+    queryFn: () => getUserLexemes(db, user!.id),
+  });
+}
+
+/** ux- id → entry, for rendering a personal word anywhere a lexicon word renders. */
+export function usePersonalLexemeMap(): Map<string, LexiconEntry> | undefined {
+  const { data } = useUserLexemes();
+  return useMemo(() => {
+    if (!data) return undefined;
+    return new Map(data.map((row) => [row.id, asLexiconEntry(row)]));
+  }, [data]);
+}
+
+/**
+ * The personal dictionary as a resolving index.
+ *
+ * Built with the same `buildIndex` the shipped lexicon uses, which is the whole
+ * point of storing personal words in LexiconEntry shape: a glossed Catalan verb
+ * resolves its conjugations and a glossed Dari noun its plural, with no code
+ * that knows these entries are personal. Consulted only after the lexicon, so a
+ * model's guess can never shadow curated content.
+ */
+export function usePersonalIndex(): LexiconIndex | undefined {
+  const { data } = useUserLexemes();
+  return useMemo(() => {
+    if (!data) return undefined;
+    return buildIndex(data.map(asLexiconEntry));
+  }, [data]);
+}
+
+export function useImports() {
+  const db = useSupabase();
+  const { data: user } = useUser();
+  return useQuery({
+    queryKey: ["imported_texts", user?.id],
+    enabled: !!user,
+    queryFn: () => getImports(db, user!.id),
+  });
+}
+
+export function useImport(id: string | undefined) {
+  const db = useSupabase();
+  return useQuery({
+    queryKey: ["imported_text", id],
+    enabled: !!id,
+    queryFn: () => getImport(db, id!),
+  });
 }
 
 /** Current time as reactive state, re-read every `intervalMs`. */
@@ -146,6 +212,7 @@ export function useInvalidateLearning() {
     Promise.all([
       qc.invalidateQueries({ queryKey: ["profile"] }),
       qc.invalidateQueries({ queryKey: ["user_words"] }),
+      qc.invalidateQueries({ queryKey: ["user_lexemes"] }),
       qc.invalidateQueries({ queryKey: ["user_texts"] }),
       qc.invalidateQueries({ queryKey: ["alphabet_progress"] }),
       qc.invalidateQueries({ queryKey: ["grammar_progress"] }),

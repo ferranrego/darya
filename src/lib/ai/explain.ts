@@ -2,6 +2,7 @@ import { completeJson } from "./providers";
 import { sentenceExplanationSchema, type SentenceExplanation } from "./schemas";
 import { isKnownToken } from "./vocab-check";
 import { profile } from "../lang/index.ts";
+import { matchKey } from "../text/index.ts";
 import { LANGUAGE_NAME, TRANSLITERATED } from "./lang-format.ts";
 
 export { sentenceExplanationSchema, type SentenceExplanation };
@@ -14,7 +15,10 @@ export { sentenceExplanationSchema, type SentenceExplanation };
  * transliteration scheme, and ask for "ezafe chains" - all of which the Catalan
  * build sent verbatim about Catalan sentences.
  */
-export async function generateSentenceExplanation(target: string): Promise<SentenceExplanation> {
+export async function generateSentenceExplanation(
+  target: string,
+  opts: { trustSource?: boolean } = {},
+): Promise<SentenceExplanation> {
   const translitLines = TRANSLITERATED
     ? `   - "translit": Latin transliteration, following the rules above, used consistently across every field.\n`
     : "";
@@ -48,12 +52,30 @@ Return ONLY JSON matching this exact schema:
       const parsed = JSON.parse(raw);
       const data = sentenceExplanationSchema.parse(parsed);
 
-      // Validate the token list against the lexicon to catch hallucinated glosses/words
+      // Validate the token list to catch hallucinated glosses/words.
+      //
+      // Two different premises, so two different checks. For a generated
+      // sentence, every word came from the lexicon by construction, so a word
+      // outside it means the model invented one. That premise is false for a
+      // sentence the learner imported: a real article is full of words the
+      // lexicon does not have, and the lexicon check would reject essentially
+      // every one - after the call had already been paid for.
+      //
+      // What actually needs catching either way is a breakdown that discusses
+      // words the sentence does not contain, and requiring each one to appear
+      // in the sentence catches that directly. It is language-neutral, and
+      // strictly stronger than the lexicon check for this purpose.
+      const haystack = opts.trustSource ? matchKey(target) : "";
       for (const word of data.words) {
         // Strip punctuation for matching if needed, though usually word-by-word break down should just be the words.
         // The tokenization might differ slightly from the AI, so we just check if it's in the lexicon or allowed forms.
         const token = word.target.replace(/[.,!?،؛:؟]/g, "").trim();
         if (!token) continue;
+
+        if (opts.trustSource) {
+          if (haystack.includes(matchKey(token))) continue;
+          throw new Error(`AI explained a word "${token}" that is not in the sentence`);
+        }
 
         if (isKnownToken(token)) continue;
 

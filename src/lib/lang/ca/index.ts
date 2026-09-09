@@ -14,6 +14,7 @@ import {
   BEGINNER_PATTERNS,
   SYNTAX,
 } from "./prompts.ts";
+import { splitSentencesCatalan } from "./sentences.ts";
 
 /**
  * Catalan (Central / Barcelona standard). ISO 639-1 `ca`.
@@ -42,6 +43,7 @@ export const ca: LanguageProfile = {
   text: {
     normalize: normalizeCatalan,
     matchKey,
+    splitSentences: splitSentencesCatalan,
     tokenize: tokenizeCatalan,
     buildIndex: buildLexiconIndex,
   },

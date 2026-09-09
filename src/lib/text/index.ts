@@ -21,6 +21,14 @@ export const matchKey = profile.text.matchKey;
 /** Split running text into word tokens, dropping punctuation and whitespace. */
 export const tokenize = profile.text.tokenize;
 
+/**
+ * Split running prose into sentences, keeping every character.
+ *
+ * Only imported articles need this - everything the app authors or generates
+ * arrives already split.
+ */
+export const splitSentences = profile.text.splitSentences;
+
 /** Build the surface→lexeme index for this language's morphology. */
 export const buildIndex = profile.text.buildIndex;
 

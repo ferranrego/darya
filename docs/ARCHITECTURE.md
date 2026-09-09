@@ -57,6 +57,29 @@ See `docs/PEDAGOGY.md` for the rules that decide what a learner is taught, and
    sufficient to re-derive/optimize parameters later.
 5. **Strong typing end to end.** DB row types, content types, and API payloads are all
    derived from Zod schemas or generated Supabase types - no `any`.
+6. **The shipped lexicon always wins.** Imported articles add a per-user dictionary
+   (`user_lexemes`, ids `ux-…`, glossed on demand by `/api/import/gloss`). It is a
+   second index consulted only *after* `lexiconIndex()`, everywhere, so a model's
+   guess at a lemma can never shadow reviewed content. Personal entries never enter
+   `content/lexicon.json` or the `lexemes` mirror - the mirror is readable by every
+   authenticated user, so writing there would both leak one learner's vocabulary to
+   all of them and put unreviewed model output into the shared dictionary.
+7. **Imports are not in `texts`.** `public.texts` feeds the pool every learner reads
+   from. Imports live in `imported_texts`, owner-only, with their own `read_at` -
+   `user_texts.text_id` is a foreign key to `texts`, which an import has no row in.
+   `textDocumentSchema` rejects `source: "imported"` outright, and a test asserts it.
+
+### The lexeme reference
+
+`user_words.lexeme_id` and `review_logs.lexeme_id` were foreign keys to
+`public.lexemes`. They cannot be, now that a personal word resolves through
+`user_lexemes` instead - but dropping the constraint outright would give up exactly
+the guarantee CLAUDE.md #4 names. The `20260909000001` migration replaces each FK
+with a CHECK on the id shape plus a trigger that resolves it to the right table, and
+additionally requires a `ux-` row to belong to the *same* user - an ownership rule no
+foreign key could express. A trigger only guards new writes, so `validate-db.ts`
+sweeps for rows orphaned by a later content edit, which is the incident the original
+rule was written about.
 
 ## Free-tier budget
 

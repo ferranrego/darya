@@ -5,17 +5,26 @@ import { Check, CircleHelp, Highlighter, Trophy, ArrowRight, Languages, Sparkles
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { availableLevels, lexemeById, lexicon, lexiconIndex } from "@/lib/content/load";
+import { availableLevels, lexicon, lexiconIndex } from "@/lib/content/load";
 import { levelVocabulary } from "@/lib/content/level-vocabulary";
 import { nextLevelFor, type LevelCoverage } from "@/lib/content/promotion";
-import type { TextDocument } from "@/lib/content/schema";
+import type { ReaderDocument } from "@/lib/content/schema";
 import { isTeachable } from "@/lib/content/teachability";
 import { isBeginnerLevel, isContentWord } from "@/lib/content/word-selection";
 import { markTextRead } from "@/lib/db/texts";
 import { upsertUserWord } from "@/lib/db/words";
 import { XP, recordActivity } from "@/lib/gamification";
 import { profile as langProfile } from "@/lib/lang";
-import { useInvalidateLearning, useProfile, useSupabase, useUser, useWordStatusMap } from "@/lib/queries/hooks";
+import { entryFor } from "@/lib/lexeme/lookup";
+import type { LexiconIndex } from "@/lib/lang/types";
+import {
+  useInvalidateLearning,
+  usePersonalLexemeMap,
+  useProfile,
+  useSupabase,
+  useUser,
+  useWordStatusMap,
+} from "@/lib/queries/hooks";
 import { newCard } from "@/lib/srs/scheduler";
 import { hapticTap, hapticSuccess } from "@/lib/util/haptics";
 
@@ -23,6 +32,12 @@ import { ReaderGuideSheet } from "./reader-guide-sheet";
 import { segmentSentence } from "./segments";
 import { WordSheet } from "./word-sheet";
 import { SentenceSheet } from "./sentence-sheet";
+
+export type GlossOutcome =
+  | { kind: "lexeme"; lexemeId: string; usedAsName?: boolean }
+  /** A proper noun: a real answer, and not vocabulary to learn. */
+  | { kind: "name" }
+  | { kind: "error"; message: string };
 
 interface TappedWord {
   surface: string;
@@ -33,14 +48,52 @@ interface TappedWord {
 export function TextReader({
   doc,
   onFinished,
+  personalIndex,
+  treatUnresolvedAsNew = false,
+  onGlossUnknown,
+  onRequestTranslation,
+  onFinish,
+  requireAllNewWordsTapped = true,
 }: {
-  doc: TextDocument;
+  doc: ReaderDocument;
   onFinished: () => void;
+  /**
+   * The learner's own dictionary, consulted only after the shipped lexicon so a
+   * glossed word can never shadow curated content. Imported readings only.
+   */
+  personalIndex?: LexiconIndex;
+  /**
+   * In a curriculum text an unresolved token really is a name - the generator
+   * refuses to write anything else. In an imported article it is usually an
+   * ordinary word the lexicon does not have, which is the whole point.
+   */
+  treatUnresolvedAsNew?: boolean;
+  /**
+   * Look up a word with no entry.
+   *
+   * Returns an outcome rather than an id-or-null: "this is a name" is a correct
+   * answer, not a failure, and collapsing the two made the reader tell a
+   * learner who tapped a person's name that the lookup had broken.
+   */
+  onGlossUnknown?: (surface: string, sentenceIndex: number) => Promise<GlossOutcome>;
+  /**
+   * Fetch the English for a sentence the learner just opened. Resolves to null
+   * on success, or to a message explaining why it could not be translated.
+   */
+  onRequestTranslation?: (sentenceIndex: number) => Promise<string | null>;
+  /** Replaces markTextRead and level promotion. Imported readings only. */
+  onFinish?: (tapCount: number) => Promise<void>;
+  /**
+   * A real article has dozens of unknown words; requiring every one to be
+   * tapped before finishing would make it unfinishable.
+   */
+  requireAllNewWordsTapped?: boolean;
 }) {
   const db = useSupabase();
   const { data: user } = useUser();
   const { data: profile } = useProfile();
   const statusMap = useWordStatusMap();
+  const personalEntries = usePersonalLexemeMap();
   const invalidate = useInvalidateLearning();
 
   const [tapped, setTapped] = useState<TappedWord | null>(null);
@@ -53,6 +106,12 @@ export function TextReader({
   const [showGuide, setShowGuide] = useState(false);
   const [highlightNewWords, setHighlightNewWords] = useState(false);
   const [showRequirementMessage, setShowRequirementMessage] = useState(false);
+  const [glossing, setGlossing] = useState(false);
+  const [glossOutcome, setGlossOutcome] = useState<GlossOutcome | null>(null);
+  // Sentences whose translation is already in flight. Without this, two taps on
+  // the same sentence in quick succession are two model calls.
+  const [translating, setTranslating] = useState<Set<number>>(new Set());
+  const [translationErrors, setTranslationErrors] = useState<Map<number, string>>(new Map());
 
   useEffect(() => {
     if (localStorage.getItem("hasSeenReaderGuide")) return;
@@ -69,29 +128,39 @@ export function TextReader({
         if (seg.kind === "word") {
           let id = seg.token.lexemeId;
           if (!id) {
-            const resolved = lexiconIndex().resolve(seg.token.surface);
+            // Shipped lexicon first, always: a personal entry is a model's
+            // guess at a lemma and must never shadow reviewed content.
+            const resolved =
+              lexiconIndex().resolve(seg.token.surface) ??
+              personalIndex?.resolve(seg.token.surface);
             if (resolved) id = resolved.id;
           }
-          const pos = id ? lexemeById(id)?.pos : undefined;
+          const pos = id ? entryFor(id, personalEntries)?.pos : undefined;
           return { ...seg, resolvedId: id, pos };
         }
         return seg;
       });
     });
-  }, [doc]);
+  }, [doc, personalIndex, personalEntries]);
 
   const remainingNewWords = useMemo(() => {
     if (!statusMap) return 0;
-    const newWordIds = new Set<string>();
+    const newWords = new Set<string>();
     for (const sentence of segments) {
       for (const seg of sentence) {
-        if (seg.kind === "word" && seg.resolvedId && !statusMap.has(seg.resolvedId)) {
-          newWordIds.add(seg.resolvedId);
+        if (seg.kind !== "word") continue;
+        if (seg.resolvedId) {
+          if (!statusMap.has(seg.resolvedId)) newWords.add(seg.resolvedId);
+        } else if (treatUnresolvedAsNew && seg.token.kind !== "name") {
+          // An imported article's unknown words have no lexeme id until they
+          // are tapped. Counting only resolved ones would report "0 new" on an
+          // article that is nothing but new words.
+          newWords.add(seg.token.surface);
         }
       }
     }
-    return newWordIds.size;
-  }, [segments, statusMap]);
+    return newWords.size;
+  }, [segments, statusMap, treatUnresolvedAsNew]);
 
   const startLearning = useMutation({
     mutationFn: async ({ lexemeId, sentenceIndex }: { lexemeId: string; sentenceIndex?: number }) => {
@@ -134,14 +203,27 @@ export function TextReader({
 
   const finish = useMutation({
     mutationFn: async () => {
-      if (!user || !profile) return;
+      if (!user) return;
+      // An imported article has no `texts` row - `user_texts.text_id` is a
+      // foreign key to that table - and says nothing about the learner's level,
+      // so it records its own progress and skips promotion entirely.
+      if (onFinish) {
+        await onFinish(tapCount);
+        return;
+      }
+      if (!profile) return;
       await markTextRead(db, user.id, doc.id, tapCount);
       await recordActivity(db, user.id, { xp: XP.textRead, texts_read: 1 });
       const { count } = await db
         .from("user_words")
         .select("*", { count: "exact", head: true })
         .eq("user_id", user.id)
-        .eq("status", "known");
+        .eq("status", "known")
+        // Personal words (ux-) come from articles the learner imported. Level
+        // thresholds are counts against the frequency-ordered lexicon
+        // (docs/PEDAGOGY.md), so counting a news article's vocabulary here would
+        // promote a learner several levels for importing two hard articles.
+        .not("lexeme_id", "like", "ux-%");
 
       // availableLevels, not levels: a learner must not be promoted into a level
       // whose content is not finished yet.
@@ -200,28 +282,89 @@ export function TextReader({
     },
   });
 
-  function handleTap(surface: string, lexemeId: string | null, sentenceIndex: number) {
+  async function handleTap(
+    surface: string,
+    lexemeId: string | null,
+    sentenceIndex: number,
+    kind?: "name",
+  ) {
+    // Already established as a name on a previous tap. Asking again would cost
+    // another model call to be told the same thing.
+    if (!lexemeId && kind === "name") {
+      setTapped({ surface, lexemeId: null, sentenceIndex });
+      setTapCount((c) => c + 1);
+      setGlossOutcome({ kind: "name" });
+      return;
+    }
     if (!lexemeId) {
-      const resolved = lexiconIndex().resolve(surface);
+      const resolved = lexiconIndex().resolve(surface) ?? personalIndex?.resolve(surface);
       if (resolved) lexemeId = resolved.id;
     }
     setTapped({ surface, lexemeId, sentenceIndex });
     setTapCount((c) => c + 1);
+    setGlossOutcome(null);
+
+    // Nothing in the dictionary knows this word yet. In an imported article
+    // that is the normal case, so look it up rather than calling it a name.
+    if (!lexemeId && onGlossUnknown) {
+      setGlossing(true);
+      try {
+        const outcome = await onGlossUnknown(surface, sentenceIndex);
+        setGlossOutcome(outcome);
+        if (outcome.kind === "lexeme") {
+          lexemeId = outcome.lexemeId;
+          const id = outcome.lexemeId;
+          setTapped((t) => (t && t.surface === surface ? { ...t, lexemeId: id } : t));
+        }
+      } catch (e) {
+        setGlossOutcome({
+          kind: "error",
+          message: e instanceof Error ? e.message : "Couldn't look this word up.",
+        });
+      } finally {
+        setGlossing(false);
+      }
+    }
+
     if (lexemeId && statusMap && !statusMap.has(lexemeId)) {
       startLearning.mutate({ lexemeId, sentenceIndex });
     }
   }
 
   function toggleSentence(i: number) {
+    const opening = !expandedSentences.has(i);
     setExpandedSentences((prev) => {
       const next = new Set(prev);
       if (next.has(i)) next.delete(i);
       else next.add(i);
       return next;
     });
+
+    // An imported sentence is translated the first time it is opened. Guarded
+    // against a double tap, which would otherwise be two model calls.
+    if (!opening || !onRequestTranslation) return;
+    if (doc.sentences[i].en || translating.has(i)) return;
+    setTranslating((prev) => new Set(prev).add(i));
+    setTranslationErrors((prev) => {
+      const next = new Map(prev);
+      next.delete(i);
+      return next;
+    });
+    void onRequestTranslation(i)
+      .then((message) => {
+        if (!message) return;
+        setTranslationErrors((prev) => new Map(prev).set(i, message));
+      })
+      .finally(() => {
+        setTranslating((prev) => {
+          const next = new Set(prev);
+          next.delete(i);
+          return next;
+        });
+      });
   }
 
-  const tappedEntry = tapped?.lexemeId ? (lexemeById(tapped.lexemeId) ?? null) : null;
+  const tappedEntry = tapped?.lexemeId ? (entryFor(tapped.lexemeId, personalEntries) ?? null) : null;
   const tappedStatus = tapped?.lexemeId
     ? (statusMap?.get(tapped.lexemeId) ?? "learning")
     : "new";
@@ -235,8 +378,11 @@ export function TextReader({
   // Container width is ~100vw - 48px. An Arabic character takes ~0.45em width.
   // fontSize * maxTargetLength * 0.45 = containerWidth => fontSize = containerWidth / (maxTargetLength * 0.45)
   // We clamp it between 22px (for readability on long B2/C1 texts) and 32px.
-  const maxTargetLength = Math.max(...doc.sentences.map(s => s.target.length));
-  const optimalFontSize = `clamp(22px, calc((100vw - 48px) / ${Math.max(1, maxTargetLength * 0.45)}), 32px)`;
+  // The 80th percentile, not the maximum: one long sentence in a 150-sentence
+  // imported article would otherwise pin the entire reading at the 22px floor.
+  const lengths = doc.sentences.map((s) => s.target.length).sort((a, b) => a - b);
+  const typicalTargetLength = lengths[Math.floor(lengths.length * 0.8)] ?? lengths[lengths.length - 1] ?? 1;
+  const optimalFontSize = `clamp(22px, calc((100vw - 48px) / ${Math.max(1, typicalTargetLength * 0.45)}), 32px)`;
 
   return (
     <article className="flex flex-col relative pb-32">
@@ -253,9 +399,11 @@ export function TextReader({
               {doc.titleTranslit}
             </span>
           ) : null}
-          <span className="text-[14px] text-ink-soft font-medium">
-            {doc.titleEn}
-          </span>
+          {doc.titleEn ? (
+            <span className="text-[14px] text-ink-soft font-medium">
+              {doc.titleEn}
+            </span>
+          ) : null}
         </div>
       </header>
 
@@ -287,8 +435,14 @@ export function TextReader({
                         <WordSpan
                           key={j}
                           surface={seg.token.surface}
-                          status={seg.resolvedId ? (statusMap?.get(seg.resolvedId) ?? "new") : "name"}
-                          onTap={() => handleTap(seg.token.surface, seg.resolvedId, i)}
+                          status={
+                            seg.resolvedId
+                              ? (statusMap?.get(seg.resolvedId) ?? "new")
+                              : seg.token.kind === "name" || !treatUnresolvedAsNew
+                                ? "name"
+                                : "new"
+                          }
+                          onTap={() => handleTap(seg.token.surface, seg.resolvedId, i, seg.token.kind)}
                           pos={showSyntax ? seg.pos : undefined}
                           pulse={highlightNewWords}
                         />
@@ -330,16 +484,33 @@ export function TextReader({
                     className="overflow-hidden flex flex-col gap-1.5"
                   >
                     <div className="pt-3 border-t border-line/40 mt-3 flex flex-col gap-1.5">
-                      {showLocalTranslit && (
+                      {showLocalTranslit && sentence.translit ? (
                         <p className="text-[15px] font-medium leading-relaxed text-ink-soft/90">
                           {sentence.translit}
                         </p>
-                      )}
+                      ) : null}
                       {isExpanded && (
                         <div className="flex flex-col gap-3">
-                          <p className="text-[15px] leading-relaxed text-ink-faint">
-                            {sentence.en}
-                          </p>
+                          {sentence.en ? (
+                            <p className="text-[15px] leading-relaxed text-ink-faint">
+                              {sentence.en}
+                            </p>
+                          ) : translating.has(i) ? (
+                            <div className="flex flex-col gap-1.5 py-0.5" aria-label="Translating">
+                              <div className="h-3 w-full animate-pulse rounded-full bg-line/60" />
+                              <div className="h-3 w-2/3 animate-pulse rounded-full bg-line/60" />
+                            </div>
+                          ) : (
+                            /* The reason matters: "the translator is out of
+                               quota for today" and "this sentence comes back
+                               garbled every time" call for different things
+                               from the learner, and both used to read as
+                               "try again". */
+                            <p className="rounded-xl bg-ink/5 px-3.5 py-2.5 text-[14px] leading-relaxed text-ink-soft">
+                              {translationErrors.get(i) ??
+                                "Not translated yet - open this sentence again to fetch it."}
+                            </p>
+                          )}
                           <button
                             type="button"
                             onClick={() => {
@@ -440,7 +611,7 @@ export function TextReader({
             layout
             type="button"
             onClick={() => {
-              if (remainingNewWords > 0) {
+              if (requireAllNewWordsTapped && remainingNewWords > 0) {
                 hapticTap();
                 const firstNewWord = document.querySelector('[data-status="new"]');
                 if (firstNewWord) {
@@ -457,13 +628,19 @@ export function TextReader({
             }}
             disabled={finish.isPending}
             className={`flex h-10 items-center justify-center rounded-full transition-all active:scale-95 disabled:opacity-50 ${
-              remainingNewWords > 0
+              requireAllNewWordsTapped && remainingNewWords > 0
                 ? "bg-surface px-4 text-ink-soft ring-1 ring-inset ring-line/50 hover:bg-surface hover:text-ink"
                 : "w-10 bg-lapis-soft text-lapis"
             }`}
-            title={remainingNewWords > 0 ? "Find new words" : "Finish text"}
+            title={
+              requireAllNewWordsTapped && remainingNewWords > 0
+                ? "Find new words"
+                : remainingNewWords > 0
+                  ? `Finish reading (${remainingNewWords} words not looked up)`
+                  : "Finish text"
+            }
           >
-            {remainingNewWords > 0 ? (
+            {requireAllNewWordsTapped && remainingNewWords > 0 ? (
               <motion.span
                 layout="position"
                 className="text-[13px] font-semibold whitespace-nowrap flex items-center"
@@ -509,12 +686,24 @@ export function TextReader({
           if (tapped?.lexemeId) markKnown.mutate({ lexemeId: tapped.lexemeId, sentenceIndex: tapped.sentenceIndex });
         }}
         onClose={() => setTapped(null)}
+        lookupState={
+          tappedEntry
+            ? "none"
+            : glossing
+              ? "loading"
+              : glossOutcome?.kind === "error"
+                ? "failed"
+                : "name"
+        }
+        lookupMessage={glossOutcome?.kind === "error" ? glossOutcome.message : undefined}
+        usedAsName={glossOutcome?.kind === "lexeme" ? glossOutcome.usedAsName : undefined}
       />
 
       <SentenceSheet
         sentence={tappedSentence}
         open={tappedSentence !== null}
         onClose={() => setTappedSentence(null)}
+        imported={treatUnresolvedAsNew}
       />
 
       <ReaderGuideSheet open={showGuide} onClose={() => setShowGuide(false)} />

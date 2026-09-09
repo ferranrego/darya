@@ -1,4 +1,5 @@
 import { lexiconIndex } from "../content/load";
+import type { LexiconEntry, LexiconIndexLike } from "./highlight-types.ts";
 import { matchKey, normalize, tokenize } from "./index.ts";
 
 export interface HighlightSegment {
@@ -12,10 +13,25 @@ export interface HighlightSegment {
  * resolved through the same lexicon index the reader uses for tap-to-lookup.
  * Returns null when no part of the sentence can be attributed to the lexeme,
  * so callers can fall back to showing the word in isolation.
+ *
+ * `extra` is the learner's personal dictionary index, consulted only when the
+ * shipped lexicon has nothing - without it a personal word's review card shows
+ * the word in isolation instead of highlighted in its sentence.
  */
-export function segmentForHighlight(sentence: string, lexemeId: string): HighlightSegment[] | null {
+export function segmentForHighlight(
+  sentence: string,
+  lexemeId: string,
+  extra?: LexiconIndexLike,
+): HighlightSegment[] | null {
   const normalized = normalize(sentence);
-  const index = lexiconIndex();
+  const lexicon = lexiconIndex();
+  const index = {
+    resolve: (t: string) => lexicon.resolve(t) ?? extra?.resolve(t) ?? null,
+    byId: {
+      get: (id: string): LexiconEntry | undefined =>
+        lexicon.byId.get(id) ?? extra?.byId.get(id),
+    },
+  };
 
   // Re-interleave word tokens with the punctuation/whitespace between them
   // (tokenize drops separators), same cursor pattern as segmentSentence.

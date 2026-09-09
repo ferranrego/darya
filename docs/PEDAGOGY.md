@@ -464,3 +464,39 @@ abstractness is untagged too, and is what §12 names as the open gap behind
 `scene: null` slots still producing occasionally wrong-in-kind content at
 A1 and above - a real candidate for a fourth derived feature here, not solved
 in this pass.
+
+## 14. Imported articles are real reading, but they are not the curriculum
+
+A learner can bring in an article from a URL or paste the text
+(`/read/import`). It reads like anything else in the app - tappable words, the
+dictionary sheet, not-known/learning/known, SRS - and that is the point: the
+strongest motivation in this whole product is wanting to read a particular
+thing.
+
+Two decisions keep it from corrupting everything else the app measures.
+
+**Its vocabulary is tracked but does not count toward level.** A real article
+is mostly outside the shipped lexicon. Those words are glossed on demand into a
+per-user dictionary (`user_lexemes`, ids `ux-…`) and get full SRS treatment,
+because a word you cared enough to look up is exactly the word worth
+scheduling. But every CEFR threshold in §3 is a count *against the
+frequency-ordered lexicon*: `entryKnownWords` means "you know the N most
+frequent words", not "you know N words". Counting a news article's vocabulary
+toward it would promote a learner several levels for reading two hard articles
+that taught them none of the course. So `curricularKnownCount`
+(`src/lib/lexeme/lookup.ts`) excludes `ux-` ids, and every level threshold,
+forecast and milestone uses it. `promotion.test.ts` asserts the behaviour, not
+the query.
+
+**Difficulty is reported, never enforced.** The import records what share of
+its running words the learner did not already know, and the library shows it
+("you know ~88% of the words"). §1's 95%/98% figures are what make that number
+meaningful - but they are shown to the learner, not used to refuse the import.
+Everything else in the app chooses texts *for* the learner; this is the one
+place they choose, and second-guessing that choice would remove the only reason
+the feature exists.
+
+There are no exercises, comprehension questions or level assignment on an
+imported text. Generated exercises are validated against the shipped lexicon
+(`assertKnownVocab`), which an article's vocabulary cannot satisfy, and a text
+nobody graded says nothing about what a learner is ready for.

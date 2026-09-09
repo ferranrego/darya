@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import confetti from "canvas-confetti";
 import { useProfile, useUserWords } from "@/lib/queries/hooks";
 import { levels } from "@/lib/content/load";
+import { curricularKnownCount } from "@/lib/lexeme/lookup";
 
 export function MilestoneObserver() {
   const { data: profile } = useProfile();
@@ -16,7 +17,9 @@ export function MilestoneObserver() {
   useEffect(() => {
     if (!words || !profile) return;
 
-    const knownCount = words.filter((w) => w.status === "known").length;
+    // Curricular only, so the "100 words" milestone keeps meaning the same
+    // thing it did before imported articles existed.
+    const knownCount = curricularKnownCount(words);
     const currentLevelIdx = levels.findIndex((l) => l.id === profile.level_estimate);
     const streak = profile.streak_current;
 

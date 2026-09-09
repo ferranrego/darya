@@ -2,8 +2,9 @@
 
 import { useMemo, useState } from "react";
 import { Check } from "lucide-react";
-import { lexemeById, levels, themes } from "@/lib/content/load";
-import { useUserWords } from "@/lib/queries/hooks";
+import { levels, themes } from "@/lib/content/load";
+import { curricularKnownCount, entryFor, isPersonalId } from "@/lib/lexeme/lookup";
+import { usePersonalLexemeMap, useUserWords } from "@/lib/queries/hooks";
 import { KNOWN_STABILITY_DAYS } from "@/lib/srs/scheduler";
 import { profile as langProfile } from "@/lib/lang";
 
@@ -11,6 +12,7 @@ type Filter = "categories" | "learning" | "known";
 
 export function WordsView({ initialFilter = "categories" }: { initialFilter?: Filter }) {
   const { data: words } = useUserWords();
+  const personal = usePersonalLexemeMap();
   const [filter, setFilter] = useState<Filter>(initialFilter);
 
   // Every level with a vocabulary target, not a list of CEFR literals. Matching
@@ -23,9 +25,11 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
     return levels.filter((l) => l.entryKnownWords > 0);
   }, []);
 
+  // The CEFR progress bar below divides by `entryKnownWords`, a count against
+  // the frequency-ordered lexicon, so imported vocabulary must not inflate it.
   const knownCount = useMemo(() => {
     if (!words) return 0;
-    return words.filter((w) => w.status === "known").length;
+    return curricularKnownCount(words);
   }, [words]);
 
   const filteredWords = useMemo(() => {
@@ -190,8 +194,12 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
               </div>
             ) : (
               filteredWords.map((word) => {
-                const lexeme = lexemeById(word.lexeme_id);
+                // entryFor: a `ux-` word came from an article the learner
+                // imported and resolves only through their own dictionary.
+                // Dropping those here used to disagree with the header count.
+                const lexeme = entryFor(word.lexeme_id, personal);
                 if (!lexeme) return null;
+                const isPersonal = isPersonalId(word.lexeme_id);
 
                 let srsProgress = 100;
                 if (word.status === "learning") {
@@ -212,6 +220,14 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
                       <p className="mt-1 text-[15px] font-semibold leading-tight text-ink">
                         {lexeme.glossEn}
                       </p>
+                      {/* Provenance matters here: a personal entry is a gloss
+                          produced on demand from an article, not reviewed
+                          content, so the learner should know to trust it less. */}
+                      {isPersonal ? (
+                        <span className="mt-1 w-fit rounded-full bg-ink/5 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-ink-faint">
+                          Imported
+                        </span>
+                      ) : null}
                     </div>
                     
                     <div className="flex flex-col items-end gap-2 shrink-0">

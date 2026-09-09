@@ -8,12 +8,19 @@ import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState, useEffect } from "react";
 import { Poncha, type PonchaPose } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
-import { lexemeById } from "@/lib/content/load";
+import { entryFor } from "@/lib/lexeme/lookup";
 import { segmentForHighlight } from "@/lib/text/highlight";
 import { logReview, upsertUserWord } from "@/lib/db/words";
 import type { UserWordRow } from "@/lib/db/types";
 import { XP, recordActivity } from "@/lib/gamification";
-import { useInvalidateLearning, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
+import {
+  useInvalidateLearning,
+  usePersonalIndex,
+  usePersonalLexemeMap,
+  useSupabase,
+  useUser,
+  useUserWords,
+} from "@/lib/queries/hooks";
 import {
   isGraduated,
   previewIntervals,
@@ -40,6 +47,8 @@ export default function ReviewPage() {
   const db = useSupabase();
   const { data: user } = useUser();
   const { data: words, isLoading } = useUserWords();
+  const personal = usePersonalLexemeMap();
+  const personalIndex = usePersonalIndex();
   const invalidate = useInvalidateLearning();
   const router = useRouter();
 
@@ -165,7 +174,9 @@ export default function ReviewPage() {
   }
 
   const row = queue?.[index];
-  const entry = row ? lexemeById(row.lexeme_id) : undefined;
+  // entryFor, not lexemeById: a `ux-` id is a word the learner glossed from an
+  // article they imported, and it resolves only through their own dictionary.
+  const entry = row ? entryFor(row.lexeme_id, personal) : undefined;
 
   const { data: generatedSentences = [] } = useQuery({
     queryKey: ["context-sentences", row?.lexeme_id],
@@ -205,9 +216,16 @@ export default function ReviewPage() {
   // merged by a content edit) must not strand the session. The queue only
   // advances through answer(), which is wired to the grade buttons rendered
   // below - so without this the user is stuck on that card forever.
+  //
+  // This skip is only correct for a genuinely missing entry. While `personal`
+  // is still loading, every `ux-` card looks missing, and skipping them here
+  // would silently empty the session for anyone with imported vocabulary - the
+  // badge would say "N due" and the screen would say "All caught up". So wait
+  // for the personal dictionary before deciding anything is missing.
+  const personalLoaded = personal !== undefined;
   useEffect(() => {
-    if (row && !entry) setIndex((i) => i + 1);
-  }, [row, entry]);
+    if (row && !entry && personalLoaded) setIndex((i) => i + 1);
+  }, [row, entry, personalLoaded]);
 
   if (isLoading || queue === null) {
     return <div className="flex flex-1 items-center justify-center py-32 text-ink-faint">Loading…</div>;
@@ -261,7 +279,7 @@ export default function ReviewPage() {
   // context sentence when we can actually highlight the word in it.
   const contextSegments =
     activeContext?.target && entry.pos !== "verb"
-      ? segmentForHighlight(activeContext.target, entry.id)
+      ? segmentForHighlight(activeContext.target, entry.id, personalIndex)
       : null;
   const showContext = contextSegments !== null;
 
@@ -436,6 +454,7 @@ function SessionDone({
   graduatedIds: string[];
   onExit: () => void;
 }) {
+  const personal = usePersonalLexemeMap();
   const stillLearning = uniqueCount - graduatedIds.length;
   return (
     <motion.div
@@ -482,7 +501,7 @@ function SessionDone({
           <p className="mb-2 text-[12px] font-medium uppercase tracking-widest text-ink-faint">Newly mastered</p>
           <div className="flex flex-wrap justify-center gap-2">
             {graduatedIds.map((id) => {
-              const e = lexemeById(id);
+              const e = entryFor(id, personal);
               return e ? (
                 <span key={id} lang={langProfile.code} className="rounded-full bg-sabz-soft px-3.5 py-1 text-[18px] text-sabz">
                   {e.target}

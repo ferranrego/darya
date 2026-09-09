@@ -254,11 +254,16 @@ export default function ReadPage() {
         <EmptyState icon={<BookOpen size={24} />} title="Nothing new to read yet">
           <p className="mx-auto mt-2 max-w-xs text-[14px] text-ink-soft">
             We wrote a few texts and none matched your level well enough to
-            show. Try again, or spend a few minutes on review or grammar
-            first.
+            show. Try again, bring in something you want to read, or spend a
+            few minutes on review or grammar first.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <Button onClick={retry}>Try again</Button>
+            {/* The one option here that does not depend on the provider chain
+                that just failed to produce anything. */}
+            <Button variant="secondary" onClick={() => router.push("/read/import")}>
+              Import an article
+            </Button>
             <div className="flex gap-3">
               <Button variant="secondary" onClick={() => router.push("/review")}>
                 Review

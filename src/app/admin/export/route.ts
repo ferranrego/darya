@@ -13,10 +13,15 @@ export async function GET() {
 
   const admin = supabaseService();
 
-  // Fetch profiles, we could fetch more tables if needed (e.g. daily_activity)
+  // Profiles, plus the two tables holding data the learner authored rather than
+  // the app: their personal dictionary and what they chose to import. Article
+  // bodies are left out deliberately - the export is about the account, and a
+  // learner's imported reading can run to megabytes of someone else's prose.
   const { data: profiles, error: profilesError } = await admin
     .from("profiles")
-    .select("*, daily_activity(*)");
+    // One string literal, not a concatenation: PostgREST's select is parsed at
+    // the type level and a computed string collapses the result to `unknown`.
+    .select("*, daily_activity(*), user_lexemes(*), imported_texts(id, source_url, title_en, read_at, words_tapped, sentence_count, char_count, new_word_ratio, created_at)");
 
   if (profilesError) {
     return new NextResponse(`Error fetching data: ${profilesError.message}`, { status: 500 });

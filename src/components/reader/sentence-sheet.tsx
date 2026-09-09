@@ -12,10 +12,16 @@ export function SentenceSheet({
   sentence,
   open,
   onClose,
+  imported = false,
 }: {
   sentence: string | null;
   open: boolean;
   onClose: () => void;
+  /**
+   * The sentence is from an article the learner brought in, not from generated
+   * content. See `explainSentence` for what changes.
+   */
+  imported?: boolean;
 }) {
   const [explanation, setExplanation] = useState<SentenceExplanation | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -35,7 +41,7 @@ export function SentenceSheet({
     setIsAnalyzing(true);
     setError(null);
 
-    explainSentence(sentence)
+    explainSentence(sentence, imported)
       .then((res) => {
         if (!active) return;
         if ("error" in res) {
@@ -54,7 +60,7 @@ export function SentenceSheet({
     return () => {
       active = false;
     };
-  }, [sentence, open]);
+  }, [sentence, open, imported]);
 
   return (
     <AnimatePresence>
