@@ -5,6 +5,14 @@ import { generateContextSentences } from "@/lib/ai/context-sentences";
 import { lexemeById } from "@/lib/content/load";
 
 export async function getContextSentences(lexemeId: string) {
+  // A personal word from an imported article has no shipped lexeme, and
+  // `lexeme_context_sentences` is a SHARED, service-role cache: generating here
+  // would spend the shared model budget writing one learner's vocabulary under
+  // an id nobody else can resolve. The review card falls back to
+  // `user_words.context_target`, which for an imported word is the actual
+  // article sentence it was met in - better context than a generated one.
+  if (lexemeId.startsWith("ux-")) return [];
+
   const db = supabaseService();
 
   // 1. Check shared cache

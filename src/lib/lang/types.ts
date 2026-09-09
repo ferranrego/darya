@@ -27,6 +27,19 @@ export interface LanguageText {
   /** Split running text into word tokens, dropping punctuation and whitespace. */
   tokenize(text: string): string[];
   /**
+   * Split running prose into sentences, keeping every character.
+   *
+   * Only imported articles need this: everything the app writes for itself
+   * arrives already split. Real prose is the hard case - abbreviations,
+   * decimals and initials all end in a full stop without ending a sentence,
+   * and the signals that disambiguate them are language-specific (Catalan has
+   * capitalisation to lean on; Dari has none, and its own terminators).
+   *
+   * Concatenating the result must reproduce the input: a splitter that drops
+   * text drops it from an article the learner chose to read.
+   */
+  splitSentences(text: string): string[];
+  /**
    * Build the surface→lexeme index. This is where morphology lives: Dari
    * generates paradigms from stem pairs, Catalan will look up a precomputed
    * form→lemma map. Callers only ever see `resolve`.

@@ -1,7 +1,7 @@
-import type { Sentence, Token } from "@/lib/content/schema";
+import type { ReaderSentence, ReaderToken } from "@/lib/content/schema";
 
 export type Segment =
-  | { kind: "word"; token: Token; tokenIndex: number }
+  | { kind: "word"; token: ReaderToken; tokenIndex: number }
   | { kind: "text"; text: string };
 
 /**
@@ -9,7 +9,7 @@ export type Segment =
  * the original string, so the reader renders exactly what was written while
  * keeping every word tappable.
  */
-export function segmentSentence(sentence: Sentence): Segment[] {
+export function segmentSentence(sentence: ReaderSentence): Segment[] {
   const { target, tokens } = sentence;
   const segments: Segment[] = [];
   let cursor = 0;

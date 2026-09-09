@@ -1,4 +1,4 @@
-import type { TextDocument } from "../content/schema";
+import type { ImportedDocument, TextDocument } from "../content/schema";
 import type { Card } from "ts-fsrs";
 
 export type WordStatus = "learning" | "known";
@@ -62,6 +62,47 @@ export interface UserTextRow {
   text_id: string;
   read_at: string;
   words_tapped: number;
+}
+
+/**
+ * An article the learner imported. Progress (`read_at`, `words_tapped`) lives on
+ * the row rather than in `user_texts`, whose `text_id` is a foreign key to
+ * `public.texts` - which imports deliberately are not in.
+ */
+export interface ImportedTextRow {
+  id: string;
+  user_id: string;
+  source_url: string | null;
+  title_en: string | null;
+  doc: ImportedDocument;
+  read_at: string | null;
+  words_tapped: number;
+  extractor: "readability" | "fallback" | "paste" | null;
+  truncated: boolean;
+  lang: string;
+  char_count: number;
+  sentence_count: number;
+  new_word_ratio: number | null;
+  created_at: string;
+}
+
+/** A word the learner glossed from an imported article. See user_lexemes. */
+export interface UserLexemeRow {
+  id: string;
+  user_id: string;
+  target: string;
+  target_normalized: string;
+  translit: string | null;
+  gloss_en: string;
+  pos: string;
+  present_stem: string | null;
+  variants: string[];
+  example_target: string | null;
+  example_translit: string | null;
+  example_en: string | null;
+  source_text_id: string | null;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface AlphabetProgressRow {

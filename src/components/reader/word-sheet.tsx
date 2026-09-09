@@ -25,12 +25,36 @@ export function WordSheet({
   status,
   onMarkKnown,
   onClose,
+  lookupState = "none",
+  lookupMessage,
+  usedAsName = false,
 }: {
   entry: LexiconEntry | null;
   surface: string | null;
   status: WordStatus | "new";
   onMarkKnown: () => void;
   onClose: () => void;
+  /**
+   * What is happening for a word with no entry. In a curriculum text an
+   * unresolved token really is a name; in an imported article it is usually an
+   * ordinary word being looked up, so "Probably a name" would be wrong for the
+   * common case.
+   */
+  lookupState?: "none" | "loading" | "failed" | "name";
+  /**
+   * What actually went wrong, from the server. The route classifies the failure
+   * - out of quota, too slow, or a request the models cannot handle - because
+   * "try again in a moment" is only true for some of those, and was shown for
+   * all of them.
+   */
+  lookupMessage?: string;
+  /**
+   * The word is part of a proper name in this sentence, but is an ordinary word
+   * in its own right - which is the usual case for the words personal and place
+   * names are built from. The meaning is still what the learner tapped for; this
+   * only explains why it looks odd here.
+   */
+  usedAsName?: boolean;
 }) {
   const [conjugation, setConjugation] = useState<ConjugationResponse | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -107,11 +131,24 @@ export function WordSheet({
                 </div>
                 <p className="mt-3 text-[18px] font-medium">{entry.glossEn}</p>
                 <p className="text-[13px] text-ink-faint">{entry.pos}</p>
+                {/* Names are very often built from ordinary words. Saying so is
+                    the difference between a learner thinking the app got it
+                    wrong and them understanding why a word for "king" is
+                    sitting in the middle of somebody's name. */}
+                {usedAsName ? (
+                  <p className="mt-2.5 rounded-xl bg-paper px-3.5 py-2.5 text-[13px] leading-relaxed text-ink-soft">
+                    Here it&apos;s part of a name - but this is what the word itself means.
+                  </p>
+                ) : null}
                 <div className="mt-5 rounded-2xl bg-paper p-4">
                   <p lang={langProfile.code} className="text-[19px] leading-loose">
                     {entry.exampleTarget}
                   </p>
-                  <p className="mt-1 text-[13px] text-ink-soft">{entry.exampleTranslit}</p>
+                  {/* A personal entry may carry no transliteration, and a
+                      Latin-script build never has one. */}
+                  {entry.exampleTranslit ? (
+                    <p className="mt-1 text-[13px] text-ink-soft">{entry.exampleTranslit}</p>
+                  ) : null}
                   <p className="mt-0.5 text-[13px] text-ink-faint">{entry.exampleEn}</p>
                 </div>
 
@@ -195,9 +232,27 @@ export function WordSheet({
                     {surface}
                   </p>
                 </div>
-                <p className="mt-3 text-[15px] text-ink-soft">
-                  Probably a name. It isn&apos;t in the dictionary yet.
-                </p>
+                {/* A name is an answer, not a failure. This branch used to say
+                    "couldn't look this word up" for a proper noun the model had
+                    identified perfectly well - so a learner who tapped the
+                    middle word of a three-part personal name in a news article
+                    was told the app was broken. */}
+                {lookupState === "loading" ? (
+                  <p className="mt-3 text-[15px] text-ink-soft">Looking this word up…</p>
+                ) : lookupState === "failed" ? (
+                  <p className="mt-3 rounded-xl bg-ink/5 px-4 py-3 text-[15px] leading-relaxed text-ink-soft">
+                    {lookupMessage ?? "Couldn't look this word up. Tap it again to retry."}
+                  </p>
+                ) : (
+                  <>
+                    <p className="mt-3 text-[15px] text-ink-soft">
+                      A name - a person, place or organisation.
+                    </p>
+                    <p className="mt-1.5 text-[14px] text-ink-faint">
+                      Nothing to learn here, so it won&apos;t be added to your words.
+                    </p>
+                  </>
+                )}
               </div>
             )}
           </motion.div>

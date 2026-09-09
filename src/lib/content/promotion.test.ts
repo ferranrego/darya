@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { curricularKnownCount } from "../lexeme/lookup.ts";
 import { nextLevelFor, type LevelCoverage } from "./promotion.ts";
 import type { Level } from "./schema.ts";
 
@@ -120,6 +121,28 @@ describe("nextLevelFor", () => {
 
   it("returns null when neither rule fires", () => {
     const result = nextLevelFor({ current: L1, levels, knownCount: 0 });
+    expect(result).toBeNull();
+  });
+
+  /**
+   * Imported articles put `ux-` ids into `user_words` alongside curriculum
+   * vocabulary. `entryKnownWords` is a count against the frequency-ordered
+   * lexicon (PEDAGOGY.md §3), so a learner who imports two hard articles and
+   * marks their vocabulary known would otherwise be promoted several levels for
+   * work that taught them none of the course. Stated as behaviour here rather
+   * than as a `.not("lexeme_id","like",...)` in one query, so the rule survives
+   * a rewrite of how the count is fetched.
+   */
+  it("does not promote on a known-count made only of imported words", () => {
+    const words = Array.from({ length: 900 }, (_, i) => ({
+      lexeme_id: `ux-${i.toString(16).padStart(12, "0")}`,
+      status: "known",
+    }));
+    const result = nextLevelFor({
+      current: L1,
+      levels,
+      knownCount: curricularKnownCount(words),
+    });
     expect(result).toBeNull();
   });
 });

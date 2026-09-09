@@ -1,6 +1,6 @@
 "use client";
 
-import { Blocks, BookOpen, CircleHelp, Flame, Map, RotateCcw, SpellCheck, BarChart2, Brain } from "lucide-react";
+import { Blocks, BookOpen, CircleHelp, Flame, Link2, Map, RotateCcw, SpellCheck, BarChart2, Brain } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
@@ -30,6 +30,7 @@ import {
   useUser,
   useUserWords,
 } from "@/lib/queries/hooks";
+import { curricularKnownCount } from "@/lib/lexeme/lookup";
 import { levelForecast } from "@/lib/util/level-forecast";
 import { timeOfDay, type TimeOfDay } from "@/lib/util/time-of-day";
 import type { PonchaPose } from "@/components/poncha";
@@ -89,7 +90,9 @@ export default function HomePage() {
   }, []);
   const tod = now ? timeOfDay(now) : TOD_DEFAULT;
 
-  const knownCount = words?.filter((w) => w.status === "known").length ?? 0;
+  // Curricular only - `levelForecast` projects progress through the lexicon,
+  // and words from imported articles are not on that path.
+  const knownCount = words ? curricularKnownCount(words) : 0;
   const learningCount = words?.filter((w) => w.status === "learning").length ?? 0;
   const forecast = levelForecast(profile, knownCount);
 
@@ -311,6 +314,14 @@ export default function HomePage() {
               />
             );
           })}
+          {/* Always present, unlike the rest of the shelf: importing is a thing
+              the learner initiates, not something the app schedules for them. */}
+          <QuickTile
+            href="/read/import"
+            icon={<Link2 size={18} />}
+            title="Import"
+            detail="Read your own article"
+          />
         </div>
         <ActionCard
           href="/journey"

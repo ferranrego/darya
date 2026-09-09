@@ -23,7 +23,7 @@ import {
   rawItemSchema,
   sentenceExplanationSchema,
 } from "../src/lib/ai/schemas.ts";
-import { textDocumentSchema } from "../src/lib/content/schema.ts";
+import { importedDocumentSchema, textDocumentSchema } from "../src/lib/content/schema.ts";
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const secret = process.env.SUPABASE_SECRET_KEY;
@@ -52,7 +52,31 @@ const CHECKS: Check[] = [
     schema: sentenceExplanationSchema,
   },
   { table: "grammar_practice", column: "exercise", key: "id", schema: rawItemSchema },
+  { table: "imported_texts", column: "doc", key: "id", schema: importedDocumentSchema },
 ];
+
+/**
+ * Read a whole table.
+ *
+ * PostgREST caps an unranged select at 1000 rows, silently - the request
+ * succeeds and returns a prefix. A check built on a prefix does not fail, it
+ * reports confident nonsense: reading the first 1000 of 6154 lexemes made this
+ * script announce 19 orphaned user_words that were all perfectly fine.
+ */
+async function selectAll(
+  table: string,
+  columns: string,
+): Promise<Record<string, unknown>[]> {
+  const PAGE = 1000;
+  const out: Record<string, unknown>[] = [];
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await db.from(table).select(columns).range(from, from + PAGE - 1);
+    if (error) throw error;
+    const page = (data ?? []) as unknown as Record<string, unknown>[];
+    out.push(...page);
+    if (page.length < PAGE) return out;
+  }
+}
 
 let failed = 0;
 
@@ -118,6 +142,45 @@ for (const check of CHECKS) {
     console.error(`\n✗ ${affected.size} user(s) have an unreadable text in their history:`);
     for (const uid of affected) console.error(`    ${uid}`);
     failed++;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Lexeme references.
+//
+// user_words.lexeme_id and review_logs.lexeme_id used to be foreign keys to
+// public.lexemes. They cannot be any more - a personal word from an imported
+// article lives in public.user_lexemes - so the 20260909000001 migration
+// replaced them with a CHECK plus a trigger. A trigger only guards new writes;
+// what it cannot catch is the incident CLAUDE.md #4 describes, where a lexicon
+// entry is removed out from under rows that already reference it. That is what
+// this sweep is for.
+// ---------------------------------------------------------------------------
+{
+  const lexemes = await selectAll("lexemes", "id");
+  const shipped = new Set(lexemes.map((l) => l.id as string));
+  const personal = await selectAll("user_lexemes", "id, user_id");
+  const owner = new Map(personal.map((p) => [p.id as string, p.user_id as string]));
+
+  for (const table of ["user_words", "review_logs"] as const) {
+    const rows = await selectAll(table, "user_id, lexeme_id");
+    const orphans = rows.filter((r) => {
+      const id = r.lexeme_id as string;
+      // A personal id must exist AND belong to the same learner: an entry owned
+      // by someone else is as broken as one that is missing.
+      if (id.startsWith("ux-")) return owner.get(id) !== r.user_id;
+      return !shipped.has(id);
+    });
+    if (orphans.length) {
+      failed++;
+      console.error(`\n✗ ${table}: ${orphans.length} row(s) reference a lexeme that does not exist`);
+      for (const o of orphans.slice(0, 8)) {
+        console.error(`    user ${o.user_id} → ${o.lexeme_id}`);
+      }
+      if (orphans.length > 8) console.error(`    … and ${orphans.length - 8} more`);
+    } else {
+      console.log(`✓ ${table}.lexeme_id (${rows.length} rows resolve)`);
+    }
   }
 }
 

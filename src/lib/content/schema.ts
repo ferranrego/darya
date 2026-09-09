@@ -621,3 +621,114 @@ export const textDocumentSchema = z.object({
 export type TextDocument = z.infer<typeof textDocumentSchema>;
 export type Sentence = z.infer<typeof sentenceSchema>;
 export type Token = z.infer<typeof tokenSchema>;
+
+// ---------------------------------------------------------------------------
+// Imported texts: articles a learner brings in from a URL or paste
+// ---------------------------------------------------------------------------
+
+/**
+ * The shape `<TextReader>` actually consumes.
+ *
+ * Deliberately narrower than `textDocumentSchema`: an imported article is not
+ * curriculum content and must never be writable into `public.texts`, so the two
+ * document types stay separate and meet only here, at the component boundary.
+ * Both `TextDocument` and `ImportedDocument` satisfy it structurally.
+ */
+export interface ReaderToken {
+  surface: string;
+  lexemeId: string | null;
+  syntaxRole?: "subject" | "object" | "verb";
+  /** Proper noun: never offered as vocabulary, however it renders. */
+  kind?: "name";
+}
+
+export interface ReaderSentence {
+  target: string;
+  translit?: string;
+  /** Empty means "not translated yet" - only imported documents do that. */
+  en: string;
+  tokens: ReaderToken[];
+}
+
+export interface ReaderDocument {
+  id: string;
+  titleTarget: string;
+  titleTranslit?: string;
+  titleEn: string;
+  sentences: ReaderSentence[];
+}
+
+export const importedTokenSchema = tokenSchema.extend({
+  /**
+   * Proper nouns. A news article is full of them, and without this every name
+   * would be offered to the learner as new vocabulary. Imported-only, so the
+   * shared token format - and CONTENT_FORMAT_VERSION with it - is untouched.
+   */
+  kind: z.literal("name").optional(),
+});
+
+export const importedSentenceSchema = z.object({
+  target: targetText,
+  translit: optionalTranslit,
+  /**
+   * Empty until translated. Imports translate the title and the first few
+   * sentences eagerly and the rest when the learner opens them, so an
+   * untranslated sentence is a normal state here, unlike in a generated text.
+   */
+  en: z.string(),
+  tokens: z.array(importedTokenSchema),
+});
+
+export const importedDocumentSchema = z.object({
+  /** "tx-imp-<uuid>". */
+  id: z.string().min(1),
+  formatVersion: z.string(),
+  titleTarget: targetText,
+  titleTranslit: optionalTranslit,
+  /** Empty until translated, for the same reason `sentence.en` can be. */
+  titleEn: z.string(),
+  sentences: z.array(importedSentenceSchema).min(1),
+  /** Distinct shipped-lexicon ids the article uses. */
+  vocabUsed: z.array(z.string()),
+  /**
+   * Distinct normalized surface forms that resolved to no lexicon entry. These
+   * are what the learner can look up; each one glossed becomes a personal
+   * lexeme. Stored rather than recomputed so the import's difficulty estimate
+   * stays stable even as the learner's own dictionary grows.
+   */
+  oovSurfaces: z.array(z.string()),
+  /**
+   * Share of running words the learner did not know at import time. Shown as a
+   * readability estimate, never a gate - the learner chose this article.
+   */
+  newWordRatio: z.number().min(0).max(1),
+  source: z.literal("imported"),
+  sourceUrl: z.string().nullable(),
+  createdAt: z.string(),
+});
+
+export type ImportedDocument = z.infer<typeof importedDocumentSchema>;
+export type ImportedSentence = z.infer<typeof importedSentenceSchema>;
+
+/**
+ * A word glossed on demand from an imported article.
+ *
+ * Field-for-field a `LexiconEntry` minus the curriculum metadata, because that
+ * is what lets `profile.text.buildIndex` accept these rows and give a personal
+ * word the same morphology as a curated one.
+ */
+export const userLexemeSchema = z.object({
+  id: z.string().regex(/^ux-[0-9a-f]{8,}$/),
+  target: targetText,
+  targetNormalized: z.string().min(1),
+  translit: optionalTranslit,
+  glossEn: z.string().min(1),
+  pos: posSchema,
+  presentStem: z.string().optional(),
+  variants: z.array(z.string()),
+  exampleTarget: z.string().optional(),
+  exampleTranslit: z.string().optional(),
+  exampleEn: z.string().optional(),
+});
+
+export type UserLexeme = z.infer<typeof userLexemeSchema>;

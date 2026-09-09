@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { profile } from "../lang";
+import { classifyAiFailure } from "./failure";
 import { completeJson } from "./providers";
 
 /**
@@ -188,26 +189,11 @@ const COPY: Record<TutorFailure, Omit<FailureCopy, "reason">> = {
  * may be forwarded to a client; it goes through here first.
  */
 export function tutorErrorReason(e: unknown): FailureCopy {
-  // Not just `e instanceof Error`: the trigger's exception arrives as a plain
-  // PostgrestError object from supabase-js, which stringifies to
-  // "[object Object]" and was therefore classified as a generic failure - the
-  // learner who hit their daily cap was told to "try again in a moment".
-  const raw =
-    typeof e === "object" && e !== null && "message" in e
-      ? String((e as { message: unknown }).message)
-      : String(e);
-
-  // The Postgres trigger's own exception text, surfaced by supabase-js.
-  if (/tutor_rate_limit/.test(raw)) return { reason: "limit", ...COPY.limit };
-
-  // Checked before "busy": an aborted attempt often *also* carries a 429 from
-  // an earlier provider in the same message, and running out of time is the
-  // more actionable thing to tell someone - the same message may work now.
-  if (/abort|timed? ?out|ms left/i.test(raw)) return { reason: "slow", ...COPY.slow };
-
-  if (/\b(429|402)\b|rate limit|quota|credits|skipped/i.test(raw)) {
-    return { reason: "busy", ...COPY.busy };
-  }
-
-  return { reason: "failed", ...COPY.failed };
+  // Classification lives in ./failure.ts so the import routes and this one
+  // cannot drift apart about what a provider failure looks like. The tutor has
+  // no "invalid" copy of its own - a chat turn that every model mangles is
+  // still, to the learner, the tutor failing to reply.
+  const kind = classifyAiFailure(e);
+  const reason: TutorFailure = kind === "invalid" ? "failed" : kind;
+  return { reason, ...COPY[reason] };
 }

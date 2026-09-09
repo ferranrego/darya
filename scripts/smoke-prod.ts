@@ -49,11 +49,27 @@ for (const user of profiles ?? []) {
   // 1. SRS deck: every user_word must resolve to a lexeme, and its FSRS card
   //    must revive. A missing lexeme used to strand the review queue forever.
   const { data: words } = await db.from("user_words").select("*").eq("user_id", user.id);
+  // Words this learner glossed from an article they imported. They resolve
+  // through their own dictionary, not the shipped lexicon - checking them
+  // against `byId` would report every one as missing and drown the signal this
+  // check exists for.
+  const { data: personalRows } = await db
+    .from("user_lexemes")
+    .select("id")
+    .eq("user_id", user.id);
+  const personalIds = new Set((personalRows ?? []).map((p) => p.id as string));
   let missingLexeme = 0;
+  let personalCount = 0;
   let badCard = 0;
   let due = 0;
   for (const w of words ?? []) {
-    if (!byId.get(w.lexeme_id)) {
+    if (w.lexeme_id.startsWith("ux-")) {
+      personalCount++;
+      if (!personalIds.has(w.lexeme_id)) {
+        missingLexeme++;
+        fail(`user_words -> personal lexeme ${w.lexeme_id} missing from user_lexemes`);
+      }
+    } else if (!byId.get(w.lexeme_id)) {
       missingLexeme++;
       fail(`user_words -> unknown lexeme ${w.lexeme_id}`);
     }
@@ -70,7 +86,7 @@ for (const user of profiles ?? []) {
     }
   }
   console.log(
-    `   deck: ${words?.length ?? 0} words, ${due} due` +
+    `   deck: ${words?.length ?? 0} words (${personalCount} imported), ${due} due` +
       (missingLexeme || badCard ? "" : "  ✓ all resolve, all cards revive"),
   );
 

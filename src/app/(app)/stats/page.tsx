@@ -3,6 +3,7 @@
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { useAlphabetProgress, useProfile, useUserWords } from "@/lib/queries/hooks";
+import { curricularKnownCount } from "@/lib/lexeme/lookup";
 import { levelLabel, levels } from "@/lib/content/load";
 import { profile as lang } from "@/lib/lang";
 import { VocabChart } from "./vocab-chart";
@@ -17,7 +18,9 @@ export default function StatsPage() {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const totalWords = words?.length ?? 0;
-  const knownCount = words?.filter((w) => w.status === "known").length ?? 0;
+  // Curricular only: the level forecast measures progress through the
+  // frequency-ordered lexicon, which an imported article is not part of.
+  const knownCount = words ? curricularKnownCount(words) : 0;
   const learningCount = words?.filter((w) => w.status === "learning").length ?? 0;
   
   const completedAlphabetUnits = alphabet?.filter(u => u.completed_at !== null).length ?? 0;

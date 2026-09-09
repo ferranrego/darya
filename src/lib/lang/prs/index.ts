@@ -14,6 +14,7 @@ import {
   BEGINNER_PATTERNS,
   SYNTAX,
 } from "./prompts.ts";
+import { splitSentencesDari } from "./sentences.ts";
 
 /**
  * Dari (Afghan Persian, Kabul standard). ISO 639-3 `prs`.
@@ -41,6 +42,7 @@ export const prs: LanguageProfile = {
   text: {
     normalize: normalizeDari,
     matchKey,
+    splitSentences: splitSentencesDari,
     tokenize: tokenizeDari,
     buildIndex: buildLexiconIndex,
   },
