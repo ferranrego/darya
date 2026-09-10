@@ -23,17 +23,23 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { lexiconFileSchema, type LexiconEntry } from "../src/lib/content/schema.ts";
-import { matchKey as caMatchKey, normalizeCatalan } from "../src/lib/lang/ca/normalize.ts";
-import { matchKey as prsMatchKey, normalizeDari } from "../src/lib/lang/prs/normalize.ts";
+import { PROFILES } from "../src/lib/lang/index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
+// The one place this shared tool still names a language: `verifyEntry` is
+// Catalan corpus attestation (the `registre` incident) and lives in a
+// Catalan-only script, called below under `lang === "ca"`. A Dari-only
+// deployment deletes verify-ca-entries.ts and must drop that block and this
+// import with it - there is no Dari equivalent to call, so hiding it behind a
+// profile hook would only move the emptiness somewhere less obvious.
 import { verifyEntry } from "./verify-ca-entries.ts";
 
 type NewEntry = Omit<LexiconEntry, "id" | "targetNormalized" | "freqRank" | "freqBand">;
 
 const lang = targetLang();
 const root = contentRoot();
-const normalize = lang === "ca" ? normalizeCatalan : normalizeDari;
-const matchKey = lang === "ca" ? caMatchKey : prsMatchKey;
+const profile = PROFILES[lang as keyof typeof PROFILES];
+if (!profile) throw new Error(`No language profile for "${lang}"`);
+const { normalize, matchKey } = profile.text;
 
 const fromAt = process.argv.indexOf("--from");
 if (fromAt === -1) throw new Error("--from <file> is required");
