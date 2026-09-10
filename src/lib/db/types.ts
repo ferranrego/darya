@@ -10,6 +10,8 @@ export interface ProfileRow {
   streak_current: number;
   streak_best: number;
   last_active_date: string | null;
+  /** IANA zone that decides when this learner's day rolls over. Null = the app default. */
+  timezone: string | null;
   daily_goal: number;
   new_word_ratio: number;
   can_read_script: boolean | null;

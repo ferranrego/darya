@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { logErrors } from "@/lib/db/errors";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { Loader2, Sparkles } from "lucide-react";
 import { ClozeExercise } from "./cloze-exercise";
@@ -50,14 +51,28 @@ export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
     staleTime: Infinity,
   });
 
+  // What the learner got wrong on the way to getting it right. Every exercise
+  // lets them retry, so `onComplete` always reports success - without this the
+  // only thing ever recorded is that they eventually passed.
+  const wrongRef = useRef<string[]>([]);
+
   const recordResult = useMutation({
     mutationFn: async ({ exId, isCorrect }: { exId: string; isCorrect: boolean }) => {
       if (!user) return;
+      const wrong = wrongRef.current;
+      wrongRef.current = [];
       await db.from("user_exercises").insert({
         user_id: user.id,
         exercise_id: exId,
-        is_correct: isCorrect,
+        is_correct: isCorrect && wrong.length === 0,
+        chosen_answer: wrong[0] ?? null,
+        attempt: wrong.length + 1,
       });
+      await logErrors(
+        db,
+        user.id,
+        wrong.map((given) => ({ kind: "exercise" as const, itemId: exId, given })),
+      );
     }
   });
 
@@ -150,24 +165,28 @@ export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
           {ex.type === "cloze" && (
             <ClozeExercise
               {...data}
+              onWrong={(chosen) => wrongRef.current.push(chosen)}
               onComplete={handleComplete}
             />
           )}
           {ex.type === "unscramble" && (
             <UnscrambleExercise
               {...data}
+              onWrong={(chosen) => wrongRef.current.push(chosen)}
               onComplete={handleComplete}
             />
           )}
           {ex.type === "realia" && (
             <RealiaExercise
               {...data}
+              onWrong={(chosen) => wrongRef.current.push(chosen)}
               onComplete={handleComplete}
             />
           )}
           {ex.type === "grammar_detective" && (
             <GrammarDetective
               {...data}
+              onWrong={(chosen) => wrongRef.current.push(chosen)}
               onComplete={handleComplete}
             />
           )}

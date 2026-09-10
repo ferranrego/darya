@@ -1,27 +1,37 @@
 import { describe, expect, it } from "vitest";
-import { localDate } from "./activity";
 
-describe("localDate", () => {
-  it("rolls over at Barcelona midnight, not UTC midnight (summer, UTC+2)", () => {
-    // 21:59 UTC on 15 July is still 23:59 on the 15th in Barcelona.
-    expect(localDate(new Date("2026-07-15T21:59:00Z"))).toBe("2026-07-15");
-    // 22:00 UTC is 00:00 on the 16th in Barcelona: a new day has started.
-    expect(localDate(new Date("2026-07-15T22:00:00Z"))).toBe("2026-07-16");
+import { APP_TIMEZONE, localDate } from "./activity.ts";
+
+/**
+ * The day boundary used to be Barcelona midnight for every learner on earth,
+ * so someone in Kabul lost their streak at half past two in the afternoon.
+ * These pin the behaviour that fixes it, and the fallback that keeps existing
+ * profiles exactly where they were.
+ */
+describe("the learner's own day", () => {
+  // 21:30 UTC. Already tomorrow in Kabul (+4:30), still today in Madrid (+2).
+  const evening = new Date("2026-09-11T21:30:00Z");
+
+  it("rolls over at the learner's midnight, not the server's", () => {
+    expect(localDate(evening, "Asia/Kabul")).toBe("2026-09-12");
+    expect(localDate(evening, "Europe/Madrid")).toBe("2026-09-11");
   });
 
-  it("rolls over at Barcelona midnight in winter (UTC+1)", () => {
-    expect(localDate(new Date("2026-01-15T22:59:00Z"))).toBe("2026-01-15");
-    expect(localDate(new Date("2026-01-15T23:00:00Z"))).toBe("2026-01-16");
+  it("puts a Kabul learner a day ahead of a Madrid one at that moment", () => {
+    expect(localDate(evening, "Asia/Kabul")).not.toBe(localDate(evening, "Europe/Madrid"));
   });
 
-  it("does not advance the day just because UTC did", () => {
-    // 00:30 UTC is still the previous evening in Barcelona? No: it is 01:30 or
-    // 02:30 the same UTC date. The day must match Barcelona's calendar.
-    expect(localDate(new Date("2026-07-16T00:30:00Z"))).toBe("2026-07-16");
+  it("falls back to the app default when a profile has no timezone", () => {
+    // Null is what every row predating the column holds, so this is the
+    // guarantee that nothing shifted under anyone already using the app.
+    expect(localDate(evening, null)).toBe(localDate(evening, APP_TIMEZONE));
   });
 
-  it("formats as YYYY-MM-DD with zero padding", () => {
-    expect(localDate(new Date("2026-03-05T12:00:00Z"))).toMatch(/^\d{4}-\d{2}-\d{2}$/);
-    expect(localDate(new Date("2026-03-05T12:00:00Z"))).toBe("2026-03-05");
+  it("survives a malformed timezone rather than breaking the daily counters", () => {
+    expect(localDate(evening, "Not/AZone")).toBe(localDate(evening, APP_TIMEZONE));
+  });
+
+  it("formats as YYYY-MM-DD, which is what a Postgres date column expects", () => {
+    expect(localDate(evening, "Asia/Kabul")).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 });

@@ -7,6 +7,7 @@ import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { getInitialSeed, spawnRelatedWords, scoreAssessment, type AssessmentWord } from "@/lib/assessment";
 import { lexicon, levelLabel } from "@/lib/content/load";
+import { detectTimezone } from "@/lib/db/activity";
 import { updateProfile } from "@/lib/db/profiles";
 import { seedKnownWords } from "@/lib/db/words";
 import { useSupabase } from "@/lib/queries/hooks";
@@ -95,6 +96,10 @@ export default function OnboardingPage() {
         can_read_script: canRead,
         level_estimate: scored.levelId,
         onboarded_at: new Date().toISOString(),
+        // When this learner's day rolls over. Without it everyone got
+        // Barcelona midnight, so a learner in Kabul lost their streak in the
+        // middle of the afternoon.
+        timezone: detectTimezone(),
       });
     } catch {
       setError("Couldn't save your results. Check your connection and try again.");

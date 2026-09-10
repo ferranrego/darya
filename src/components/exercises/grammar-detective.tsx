@@ -11,6 +11,16 @@ interface GrammarDetectiveProps {
   incorrectSentenceTranslit: string;
   explanationEn: string;
   onComplete: (isCorrect: boolean) => void;
+  /**
+   * Fired on each wrong selection, with what the learner chose.
+   *
+   * `onComplete` only ever fires with `true` - every exercise lets the learner
+   * retry until they are right - so before this existed the app recorded a
+   * successful attempt at every exercise and no failed one, ever. The wrong
+   * choice is the diagnostic half: which distractor someone reaches for says
+   * what they actually believe.
+   */
+  onWrong?: (chosen: string) => void;
 }
 
 export function GrammarDetective({
@@ -20,6 +30,7 @@ export function GrammarDetective({
   incorrectSentenceTranslit,
   explanationEn,
   onComplete,
+  onWrong,
 }: GrammarDetectiveProps) {
   // 0 is correct, 1 is incorrect
   const [order] = useState(() => Math.random() > 0.5 ? [0, 1] : [1, 0]);
@@ -37,6 +48,7 @@ export function GrammarDetective({
     setStatus("evaluating");
     
     if (!isCorrect) {
+      onWrong?.(sentences[idx].target);
       setTimeout(() => {
         setStatus("idle");
         setSelected(null);

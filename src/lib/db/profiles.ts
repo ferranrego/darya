@@ -26,6 +26,7 @@ export async function updateProfile(
       | "chat_notifications"
       | "reminder_notifications"
       | "prior_words_decision"
+      | "timezone"
     >
   >,
 ): Promise<void> {

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
+import { logErrors } from "@/lib/db/errors";
 import { generateTutorReply, tutorErrorReason, type TutorTurn } from "@/lib/ai/tutor";
 import { deadlineIn } from "@/lib/ai/providers";
 import { MAX_MESSAGE_LENGTH } from "@/lib/chat/shared";
@@ -117,6 +118,21 @@ export async function POST(req: Request) {
       .select()
       .maybeSingle();
     if (updated) correctedRow = updated as TutorMessageRow;
+
+    // Keep the teaching signal past the 48-hour purge, without keeping the
+    // message. `issues` is already token-level - {before, after, whyEn} - so
+    // storing those is what the app needs to re-teach, while the sentence the
+    // learner wrote still disappears with the row on schedule.
+    await logErrors(
+      service,
+      user.id,
+      result.correction.issues.map((i) => ({
+        kind: "chat" as const,
+        given: i.before,
+        expected: i.after,
+        whyEn: i.whyEn,
+      })),
+    );
   }
 
   const { data: tutorRow, error: replyError } = await service

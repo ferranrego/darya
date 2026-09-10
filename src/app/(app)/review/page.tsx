@@ -10,6 +10,7 @@ import { Poncha, type PonchaPose } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { entryFor } from "@/lib/lexeme/lookup";
 import { segmentForHighlight } from "@/lib/text/highlight";
+import { logErrors, resolveErrors } from "@/lib/db/errors";
 import { logReview, upsertUserWord } from "@/lib/db/words";
 import type { UserWordRow } from "@/lib/db/types";
 import { XP, recordActivity } from "@/lib/gamification";
@@ -138,6 +139,14 @@ export default function ReviewPage() {
         fsrs: card,
       });
       await logReview(db, user.id, row.lexeme_id, log.rating, log);
+      // Remember the miss, and clear it when the word comes back right.
+      // `review_logs` already stores the rating and nothing reads it; this is
+      // the same fact in a shape the app can act on.
+      if (g === "forgot") {
+        await logErrors(db, user.id, [{ kind: "srs", lexemeId: row.lexeme_id }]);
+      } else {
+        await resolveErrors(db, user.id, row.lexeme_id);
+      }
       await recordActivity(db, user.id, {
         xp: XP.review + (graduated ? XP.wordLearned : 0),
         reviews_done: 1,

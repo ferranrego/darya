@@ -11,6 +11,16 @@ interface UnscrambleExerciseProps {
   sentenceTranslit?: string;
   sentenceEn: string;
   onComplete: (isCorrect: boolean) => void;
+  /**
+   * Fired on each wrong selection, with what the learner chose.
+   *
+   * `onComplete` only ever fires with `true` - every exercise lets the learner
+   * retry until they are right - so before this existed the app recorded a
+   * successful attempt at every exercise and no failed one, ever. The wrong
+   * choice is the diagnostic half: which distractor someone reaches for says
+   * what they actually believe.
+   */
+  onWrong?: (chosen: string) => void;
 }
 
 export function UnscrambleExercise({
@@ -19,6 +29,7 @@ export function UnscrambleExercise({
   sentenceTranslit,
   sentenceEn,
   onComplete,
+  onWrong,
 }: UnscrambleExerciseProps) {
   const [availableWords, setAvailableWords] = useState(() => {
     const scrambled = [...words].map((text, i) => ({ id: `${i}-${text}`, text })).sort(() => Math.random() - 0.5);
@@ -61,6 +72,7 @@ export function UnscrambleExercise({
       setStatus("correct");
     } else {
       setStatus("incorrect");
+      onWrong?.(attempt);
       setTimeout(() => setStatus("idle"), 1500);
     }
   };

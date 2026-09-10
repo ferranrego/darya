@@ -14,6 +14,16 @@ interface ClozeExerciseProps {
   missingEn?: string;
   distractors: string[];
   onComplete: (isCorrect: boolean) => void;
+  /**
+   * Fired on each wrong selection, with what the learner chose.
+   *
+   * `onComplete` only ever fires with `true` - every exercise lets the learner
+   * retry until they are right - so before this existed the app recorded a
+   * successful attempt at every exercise and no failed one, ever. The wrong
+   * choice is the diagnostic half: which distractor someone reaches for says
+   * what they actually believe.
+   */
+  onWrong?: (chosen: string) => void;
 }
 
 export function ClozeExercise({
@@ -25,6 +35,7 @@ export function ClozeExercise({
   missingEn,
   distractors,
   onComplete,
+  onWrong,
 }: ClozeExerciseProps) {
   const [options] = useState(() => {
     // Shuffle options once on mount
@@ -61,6 +72,7 @@ export function ClozeExercise({
       setStatus("correct");
     } else {
       setStatus("incorrect");
+      onWrong?.(option);
       setTimeout(() => {
         setStatus("idle");
         setSelected(null);

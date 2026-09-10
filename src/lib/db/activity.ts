@@ -10,25 +10,51 @@ export interface ActivityDelta {
 }
 
 /**
- * The app's canonical timezone. The day boundary is Barcelona midnight for
- * every user (Berlin shares the same clock), so daily XP and streaks roll
- * over at the same instant for everyone. Writes get their date server-side
- * in the record_activity RPC; this client-side mirror is for reads and the
- * midnight rollover timer only.
+ * The fallback day boundary, for a learner whose profile has no timezone.
+ *
+ * This used to be the day boundary for everyone on earth, which meant a
+ * learner in Kabul lost their streak at half past two in the afternoon. The
+ * day is now a property of the learner: `profiles.timezone`, applied in the
+ * record_activity RPC for writes and here for reads and the rollover timer.
+ * Rows that predate the column keep this value, so nothing shifts under
+ * anyone who was already using the app.
  */
 export const APP_TIMEZONE = "Europe/Madrid";
 
 // en-CA formats as YYYY-MM-DD, which is what Postgres `date` columns expect.
-const dateFormatter = new Intl.DateTimeFormat("en-CA", {
-  timeZone: APP_TIMEZONE,
-  year: "numeric",
-  month: "2-digit",
-  day: "2-digit",
-});
+// Formatters are not free to construct, and this runs on every read, so keep
+// one per zone rather than one per call.
+const formatters = new Map<string, Intl.DateTimeFormat>();
+function formatterFor(timeZone: string): Intl.DateTimeFormat {
+  const cached = formatters.get(timeZone);
+  if (cached) return cached;
+  const made = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+  formatters.set(timeZone, made);
+  return made;
+}
 
-/** Calendar date as YYYY-MM-DD in Barcelona time. */
-export function localDate(d = new Date()): string {
-  return dateFormatter.format(d);
+/** Calendar date as YYYY-MM-DD in the learner's own timezone. */
+export function localDate(d = new Date(), timeZone: string | null = null): string {
+  try {
+    return formatterFor(timeZone ?? APP_TIMEZONE).format(d);
+  } catch {
+    // An unknown or malformed zone must not break the daily counters.
+    return formatterFor(APP_TIMEZONE).format(d);
+  }
+}
+
+/** The browser's own zone, or null when it cannot be determined. */
+export function detectTimezone(): string | null {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone || null;
+  } catch {
+    return null;
+  }
 }
 
 /** Today's activity row, or null when the user has not earned anything yet today. */
