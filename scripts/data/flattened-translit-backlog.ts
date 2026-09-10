@@ -12,7 +12,7 @@
  * Latin line is the only pronunciation a learner ever gets: they memorise an
  * Iranian accent, and nothing looks broken.
  *
- * Where they came from is the useful part: 1214 entries are affected, and
+ * Where they came from is the useful part: 1210 entries are affected, and
  * all but six sit in the single contiguous block lx-3000..lx-5999 - one bulk
  * generation pass, about 40% of it defective. That is CLAUDE.md's own rule
  * restated ("the 445 broken Catalan entries all came from bulk generation
@@ -24,9 +24,6 @@
  * list in the same commit as the batch that fixes them.
  */
 export const FLATTENED_TRANSLIT_BACKLOG: ReadonlySet<string> = new Set([
-  "lx-1577",
-  "lx-2252",
-  "lx-2437",
   "lx-3658",
   "lx-3659",
   "lx-3660",
@@ -1235,7 +1232,6 @@ export const FLATTENED_TRANSLIT_BACKLOG: ReadonlySet<string> = new Set([
   "lx-5918",
   "lx-5919",
   "lx-5920",
-  "lx-6084",
   "lx-6093",
   "lx-6122",
 ]);

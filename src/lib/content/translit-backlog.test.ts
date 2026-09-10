@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 
 import { FLATTENED_TRANSLIT_BACKLOG } from "../../../scripts/data/flattened-translit-backlog.ts";
 import { TRANSLIT_BACKLOG } from "../../../scripts/data/translit-backlog.ts";
+import { isFlattenedTranslit } from "../lang/prs/translit-check.ts";
 import { lexiconFileSchema } from "./schema.ts";
 
 /**
@@ -51,14 +52,14 @@ describe("transliteration backlog", () => {
 /**
  * The same treatment for the second, larger transliteration debt.
  *
- * 1,214 lexicon entries carry an example sentence written in Iranian Persian
+ * 1,210 lexicon entries carry an example sentence written in Iranian Persian
  * with every long vowel flattened out, and all but six sit in one contiguous
  * block of ids - a single bulk generation pass, roughly 40% defective. They
  * are rare B2/C1 words, so the damage lands on advanced learners and stayed
  * invisible. Same rule as above: the ceiling comes down as batches are
  * repaired, and never goes up.
  */
-const FLATTENED_CEILING = 1214;
+const FLATTENED_CEILING = 1210;
 
 describe("flattened transliteration backlog", () => {
   it("never grows", () => {
@@ -70,10 +71,13 @@ describe("flattened transliteration backlog", () => {
     const lexicon = lexiconFileSchema.parse(JSON.parse(readFileSync(file, "utf8")));
     // Mirrors checkDariTranslit's rule in validate-content.ts. A sentence of
     // real Kabuli Dari this long effectively cannot avoid every long vowel.
-    const flattened = (t?: string) => Boolean(t && t.length > 25 && !/[\u0101\u0113\u014d\u012b\u016b]/.test(t));
     const stillBad = new Set(
       lexicon.entries
-        .filter((e) => flattened(e.exampleTranslit) || flattened(e.translit))
+        .filter(
+          (e) =>
+            isFlattenedTranslit(e.exampleTranslit, e.exampleTarget) ||
+            isFlattenedTranslit(e.translit, e.target),
+        )
         .map((e) => e.id),
     );
     const repaired = [...FLATTENED_TRANSLIT_BACKLOG].filter((id) => !stillBad.has(id));
@@ -94,7 +98,7 @@ describe("flattened transliterations never reach a learner", () => {
   it("is stripped from every entry the app loads", async () => {
     const { lexicon } = await import("./load.ts");
     const leaked = lexicon.entries
-      .filter((e) => e.exampleTranslit && e.exampleTranslit.length > 25 && !/[āēōīū]/.test(e.exampleTranslit))
+      .filter((e) => isFlattenedTranslit(e.exampleTranslit, e.exampleTarget))
       .map((e) => e.id);
     expect(leaked).toEqual([]);
   });
@@ -104,8 +108,8 @@ describe("flattened transliterations never reach a learner", () => {
     // gate thinks is fine, or shows one the gate has flagged.
     const file = join(process.cwd(), "content", "prs", "lexicon", "lexicon.json");
     const raw = lexiconFileSchema.parse(JSON.parse(readFileSync(file, "utf8")));
-    const flaggedByRule = raw.entries.filter(
-      (e) => e.exampleTranslit && e.exampleTranslit.length > 25 && !/[āēōīū]/.test(e.exampleTranslit),
+    const flaggedByRule = raw.entries.filter((e) =>
+      isFlattenedTranslit(e.exampleTranslit, e.exampleTarget),
     ).length;
     expect(flaggedByRule).toBeGreaterThan(0);
     expect(flaggedByRule).toBeLessThanOrEqual(FLATTENED_TRANSLIT_BACKLOG.size);

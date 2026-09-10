@@ -8,6 +8,7 @@ import lexiconJson from "@content/lexicon/lexicon.json";
 import themesJson from "@content/lexicon/themes.json";
 import beginnerSpecJson from "@content/lexicon/beginner-spec.json";
 import levelsJson from "@content/levels/levels.json";
+import { isFlattenedTranslit } from "../lang/prs/translit-check";
 import { buildIndex, type LexiconIndex } from "../text";
 import { GRAMMAR_LEVEL_ORDER, cefrOf } from "./cefr";
 import {
@@ -30,46 +31,33 @@ import {
 } from "./schema";
 
 /**
- * Longer than this, a transliterated Dari sentence containing no long or
- * majhul vowel at all is not Dari. Same threshold and same rule as
- * `checkDariTranslit` in `scripts/validate-content.ts`; kept in sync by
- * `translit-backlog.test.ts`, which measures both against the same corpus.
- */
-const MIN_FLATTENING_LENGTH = 25;
-
-function isFlattenedTranslit(text: string | undefined): boolean {
-  return Boolean(text && text.length > MIN_FLATTENING_LENGTH && !/[āēōīū]/.test(text));
-}
-
-/**
  * Hide an example sentence's transliteration when it was written in Iranian
  * Persian rather than Dari.
  *
- * 1,214 entries (19%) carry one: every long ā and every majhul ē/ō flattened
- * away, so `anjām wa ghāyat-i insān rasēdan ba kamāl-i mutlaq ast` shipped as
- * `Anjam va ghayat-e ensan residan be kamal-e motlaq ast`. All but six came
+ * 1,208 entries carry one: every long ā and every majhul ē/ō flattened away,
+ * so `anjām wa ghāyat-i insān rasēdan ba kamāl-i mutlaq ast` reaches a learner
+ * as `Anjam va ghayat-e ensan residan be kamal-e motlaq ast`. All but six came
  * from one bulk generation pass over lx-3000..lx-5999. They surface in the
  * reader's word sheet and the vocabulary browser, and since the app has no
- * audio, that line is the only pronunciation a learner ever gets - so a
- * learner tapping one of these words memorises an Iranian accent, which
- * PEDAGOGY §9 calls the defect this product cares most about.
+ * audio that line is the only pronunciation anyone gets - so tapping one of
+ * these words teaches an Iranian accent, the defect PEDAGOGY §9 ranks first.
  *
- * Repairing 1,212 sentences is philology, not a script: measured, only 49% of
+ * Repairing 1,208 sentences is philology, not a script: measured, only 49% of
  * their tokens resolve to a lemma whose own transliteration can be trusted,
  * and *no* sentence is fully covered - 20% of tokens are inflected forms the
- * morphology engine has no transliteration for, and another 20% do not resolve
- * at all. So the repair is authored in reviewed batches, and until a given
+ * morphology engine carries no transliteration for, and another 20% do not
+ * resolve at all. So the repair is authored in reviewed batches, and until a
  * sentence is repaired the app shows none rather than a wrong one. CLAUDE.md:
  * a wrong entry is worse than a missing one.
  *
  * Deliberately a *rule* and not a list of ids: an entry starts displaying
- * again the moment its transliteration is fixed, with nothing to keep in sync
- * and no way for the exemption to outlive the defect.
+ * again the moment its transliteration is fixed, so the exemption cannot
+ * outlive the defect and there is nothing to keep in sync.
  */
 function withoutFlattenedExamples(file: LexiconFile): LexiconFile {
   let hidden = 0;
   const entries = file.entries.map((e) => {
-    if (!isFlattenedTranslit(e.exampleTranslit)) return e;
+    if (!isFlattenedTranslit(e.exampleTranslit, e.exampleTarget)) return e;
     hidden++;
     return { ...e, exampleTranslit: undefined };
   });

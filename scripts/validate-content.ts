@@ -21,6 +21,7 @@ import { levelVocabulary } from "../src/lib/content/level-vocabulary.ts";
 import { isRuledOut, isTeachable } from "../src/lib/content/teachability.ts";
 import { isContentWord } from "../src/lib/content/word-selection.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
+import { isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { insertionOrderSuffix } from "./freq-integrity.ts";
@@ -70,9 +71,13 @@ function loadJson(path: string): unknown {
  * already in the corpus. A rule that matches a list of words cannot catch a
  * whole language written the wrong way; this one can.
  */
-const MIN_FLATTENING_LENGTH = 25;
-
-function checkDariTranslit(text: string, subject: string, field: string, id?: string) {
+function checkDariTranslit(
+  text: string,
+  subject: string,
+  field: string,
+  id?: string,
+  script?: string,
+) {
   if (/\bmi-/i.test(text)) {
     fail(`${subject}: ${field} present prefix must be mē-, not mi- (${text})`);
   }
@@ -83,8 +88,8 @@ function checkDariTranslit(text: string, subject: string, field: string, id?: st
     fail(`${subject}: ${field} must use majhul vowel ō (dōst, not dust) (${text})`);
   }
   if (
-    text.length > MIN_FLATTENING_LENGTH &&
-    !/[āēōīū]/.test(text) &&
+    script &&
+    isFlattenedTranslit(text, script) &&
     !(id && FLATTENED_TRANSLIT_BACKLOG.has(id))
   ) {
     fail(
@@ -127,7 +132,13 @@ if (existsSync(lexiconPath)) {
         if (lang === "prs") {
           if (e.translit) checkDariTranslit(e.translit, `lexicon ${e.id}`, "translit", e.id);
           if (e.exampleTranslit) {
-            checkDariTranslit(e.exampleTranslit, `lexicon ${e.id}`, "exampleTranslit", e.id);
+            checkDariTranslit(
+              e.exampleTranslit,
+              `lexicon ${e.id}`,
+              "exampleTranslit",
+              e.id,
+              e.exampleTarget,
+            );
           }
         }
       }
@@ -508,9 +519,11 @@ if (existsSync(seedDir)) {
     const doc: TextDocument = parsed.data;
     if (!levelIds.has(doc.level)) fail(`${f}: unknown level ${doc.level}`);
     if (lang === "prs") {
-      if (doc.titleTranslit) checkDariTranslit(doc.titleTranslit, f, "titleTranslit");
+      if (doc.titleTranslit) {
+        checkDariTranslit(doc.titleTranslit, f, "titleTranslit", undefined, doc.titleTarget);
+      }
       for (const s of doc.sentences) {
-        if (s.translit) checkDariTranslit(s.translit, f, "translit");
+        if (s.translit) checkDariTranslit(s.translit, f, "translit", undefined, s.target);
       }
     }
     for (const s of doc.sentences) {
