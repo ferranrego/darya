@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "پل و بانک",
+  "titleTranslit": "pul wa bānk",
   "titleEn": "Bridge and bank",
   "sentences": [
     {
       "target": "بانک چند کیلومتر دور است؟",
+      "translit": "bānk chand kilōmetr dūr ast?",
       "en": "How many kilometers away is the bank?",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "روی پل نقشه را می‌بینم.",
+      "translit": "rō-ye pul naqsha rā mēbīnam.",
       "en": "On the bridge I see the map.",
       "tokens": [
         {
@@ -59,6 +62,7 @@
     },
     {
       "target": "او یک مرض دارد.",
+      "translit": "ō yak maraz dārad.",
       "en": "He has a disease.",
       "tokens": [
         {
@@ -81,6 +85,7 @@
     },
     {
       "target": "پل تا بانک یک کیلومتر است.",
+      "translit": "pul tā bānk yak kilōmetr ast.",
       "en": "The bridge to the bank is one kilometer.",
       "tokens": [
         {

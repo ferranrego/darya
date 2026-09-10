@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "خون و مود",
+  "titleTranslit": "khūn wa mōd",
   "titleEn": "Blood and fashion",
   "sentences": [
     {
       "target": "او امشب این مود را می‌پذیرد.",
+      "translit": "ō imshab īn mōd rā mēpazērad.",
       "en": "He accepts this fashion tonight.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "خون در دست او است.",
+      "translit": "khūn dar dast-e ō ast.",
       "en": "Blood is on his hand.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "خون او سرخ است.",
+      "translit": "khūn-e ō surkh ast.",
       "en": "His blood is red.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "این نان خوش‌مزه است.",
+      "translit": "īn nān khushmaza ast.",
       "en": "This bread is tasty.",
       "tokens": [
         {
@@ -107,6 +112,7 @@
     },
     {
       "target": "امشب این را می‌پذیرم.",
+      "translit": "imshab īn rā mēpazēram.",
       "en": "Tonight I accept this.",
       "tokens": [
         {

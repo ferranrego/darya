@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "شرق",
+  "titleTranslit": "sharq",
   "titleEn": "East",
   "sentences": [
     {
       "target": "کارمند در شرق جنگل کار می‌کند.",
+      "translit": "kārmand dar sharq-e jangal kār mēkunad.",
       "en": "The employee works in the east of the forest.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "او به متر نیاز دارد.",
+      "translit": "ō ba metr niyāz dārad.",
       "en": "He needs a tape measure.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "او می‌بیند که این درخت می‌پوسد.",
+      "translit": "ō mēbīnad ki īn derakht mēpōsad.",
       "en": "He sees that this tree rots.",
       "tokens": [
         {

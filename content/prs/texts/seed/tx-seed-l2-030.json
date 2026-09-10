@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "مه و فصل",
+  "titleTranslit": "mah wa fasl",
   "titleEn": "Fog and season",
   "sentences": [
     {
       "target": "در این فصل، فاصله کم است.",
+      "translit": "dar īn fasl, fāsila kam ast.",
       "en": "In this season, the distance is short.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "مرد با اره کار می‌کند.",
+      "translit": "mard bā arra kār mēkunad.",
       "en": "The man works with the saw.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "در مه، او می‌گرید.",
+      "translit": "dar mah, ō mēgiryad.",
       "en": "In the fog, he cries.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "این فصل مه دارد.",
+      "translit": "īn fasl mah dārad.",
       "en": "This season has fog.",
       "tokens": [
         {

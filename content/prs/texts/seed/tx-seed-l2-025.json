@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "فرهنگ پایتخت",
+  "titleTranslit": "farhang-e pāytakht",
   "titleEn": "Capital culture",
   "sentences": [
     {
       "target": "مسیر پایتخت کلان است.",
+      "translit": "masēr-e pāytakht kalān ast.",
       "en": "The capital route is big.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "عزیزم، فرهنگ ما خوب است.",
+      "translit": "azēz-am, farhang-e mā khōb ast.",
       "en": "My dear, our culture is good.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "او کار را به من می‌سپارد.",
+      "translit": "ō kār rā ba man mēsipārad.",
       "en": "He entrusts the work to me.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "مسیر پایتخت زیبا است.",
+      "translit": "masēr-e pāytakht zēbā ast.",
       "en": "The capital route is beautiful.",
       "tokens": [
         {

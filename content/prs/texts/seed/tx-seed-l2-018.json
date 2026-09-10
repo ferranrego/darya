@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "شمال",
+  "titleTranslit": "shamāl",
   "titleEn": "North",
   "sentences": [
     {
       "target": "او در شمال امتحان دارد.",
+      "translit": "ō dar shamāl imtihān dārad.",
       "en": "He has an exam in the north.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "او یک شهر قدیمی را می‌نماید.",
+      "translit": "ō yak shahr-e qadēmī rā mēnamāyad.",
       "en": "He shows an old city.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "من پیاده به امتحان می‌روم.",
+      "translit": "man piyāda ba imtihān mērawam.",
       "en": "I go to the exam on foot.",
       "tokens": [
         {
@@ -89,6 +93,7 @@
     },
     {
       "target": "شهر در شمال قدیمی است.",
+      "translit": "shahr dar shamāl qadēmī ast.",
       "en": "The city in the north is old.",
       "tokens": [
         {

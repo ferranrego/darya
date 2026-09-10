@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "جنوب زیبا",
+  "titleTranslit": "janūb-e zēbā",
   "titleEn": "Beautiful south",
   "sentences": [
     {
       "target": "در جنوب، قانون زیبا است.",
+      "translit": "dar janūb, qānūn zēbā ast.",
       "en": "In the south, the law is beautiful.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "او آب را می‌ریزد.",
+      "translit": "ō āb rā mērēzad.",
       "en": "He pours the water.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "مرد به هوش می‌آید.",
+      "translit": "mard ba hōsh mēāyad.",
       "en": "The man regains consciousness.",
       "tokens": [
         {
@@ -77,6 +81,7 @@
     },
     {
       "target": "قانون جنوب خوب است.",
+      "translit": "qānūn-e janūb khōb ast.",
       "en": "The law of the south is good.",
       "tokens": [
         {

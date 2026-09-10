@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "مدیر ساختمان",
+  "titleTranslit": "mudīr-e sākhtimān",
   "titleEn": "Building manager",
   "sentences": [
     {
       "target": "مدیر یک انتخاب لعنتی می‌کند.",
+      "translit": "mudīr yak intikhāb-e la'natī mēkunad.",
       "en": "The manager makes a damn choice.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "مامور به ساختمان می‌رود.",
+      "translit": "ma'mūr ba sākhtimān mērawad.",
       "en": "The official goes to the building.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "انتخاب مدیر ساختمان مهم است.",
+      "translit": "intikhāb-e mudīr-e sākhtimān muhim ast.",
       "en": "The building manager's choice is important.",
       "tokens": [
         {
@@ -81,6 +85,7 @@
     },
     {
       "target": "ساختمان کلان است.",
+      "translit": "sākhtimān kalān ast.",
       "en": "The building is big.",
       "tokens": [
         {

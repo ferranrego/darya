@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "مهمان",
+  "titleTranslit": "mihmān",
   "titleEn": "Guest",
   "sentences": [
     {
       "target": "مهمان عشق خود را می‌بازد.",
+      "translit": "mihmān ishq-e khud rā mēbāzad.",
       "en": "The guest loses his love.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "او یک موتر می‌دزدد.",
+      "translit": "ō yak mōtar mēduzdad.",
       "en": "He steals a car.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "من او را به شهر می‌رسانم.",
+      "translit": "man ō rā ba shahr mērasānam.",
       "en": "I deliver him to the city.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "مهمان موتر را می‌دزدد.",
+      "translit": "mihmān mōtar rā mēduzdad.",
       "en": "The guest steals the car.",
       "tokens": [
         {

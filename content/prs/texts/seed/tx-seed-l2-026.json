@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "عملیات شرکت",
+  "titleTranslit": "amaliyāt-e shirkat",
   "titleEn": "Company surgery",
   "sentences": [
     {
       "target": "این قسمت از عملیات مهم است.",
+      "translit": "īn qismat az amaliyāt muhim ast.",
       "en": "This episode of the surgery is important.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "من یک انار می‌خواهم.",
+      "translit": "man yak anār mēkhāham.",
       "en": "I want a pomegranate.",
       "tokens": [
         {
@@ -59,6 +62,7 @@
     },
     {
       "target": "از شرکت یک خواهش دارم.",
+      "translit": "az shirkat yak khwāhish dāram.",
       "en": "I have a request from the company.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "شرکت انار می‌خرد.",
+      "translit": "shirkat anār mēkharad.",
       "en": "The company buys pomegranate.",
       "tokens": [
         {

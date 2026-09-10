@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "پرواز",
+  "titleTranslit": "parwāz",
   "titleEn": "Flight",
   "sentences": [
     {
       "target": "محافظ تغییر را می‌جوید.",
+      "translit": "muhāfiz taghyēr rā mējōyad.",
       "en": "The guard seeks the change.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "مامان به پرواز می‌رود.",
+      "translit": "māmān ba parwāz mērawad.",
       "en": "Mom goes to the flight.",
       "tokens": [
         {
@@ -51,6 +54,7 @@
     },
     {
       "target": "محافظ مامان را می‌جوید.",
+      "translit": "muhāfiz māmān rā mējōyad.",
       "en": "The guard seeks mom.",
       "tokens": [
         {
@@ -73,6 +77,7 @@
     },
     {
       "target": "پرواز تغییر می‌کند.",
+      "translit": "parwāz taghyēr mēkunad.",
       "en": "The flight changes.",
       "tokens": [
         {

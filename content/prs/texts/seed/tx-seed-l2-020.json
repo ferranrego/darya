@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "صلح",
+  "titleTranslit": "sulh",
   "titleEn": "Peace",
   "sentences": [
     {
       "target": "ما به صبر و صلح می‌رسیم.",
+      "translit": "mā ba sabr wa sulh mērasēm.",
       "en": "We arrive at patience and peace.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "ما با صبر به صلح می‌رویم.",
+      "translit": "mā bā sabr ba sulh mērawēm.",
       "en": "We go to peace with patience.",
       "tokens": [
         {
@@ -67,6 +70,7 @@
     },
     {
       "target": "او یک اپلیکیشن را می‌نامد.",
+      "translit": "ō yak aplikēshan rā mēnāmad.",
       "en": "He names an application.",
       "tokens": [
         {
@@ -93,6 +97,7 @@
     },
     {
       "target": "او از دست آنها می‌رهد.",
+      "translit": "ō az dast-e ānhā mērahad.",
       "en": "He escapes from their hands.",
       "tokens": [
         {
@@ -119,6 +124,7 @@
     },
     {
       "target": "او با اپلیکیشن صلح می‌کند.",
+      "translit": "ō bā aplikēshan sulh mēkunad.",
       "en": "He makes peace with the application.",
       "tokens": [
         {

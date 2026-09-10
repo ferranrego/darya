@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "جشن",
+  "titleTranslit": "jashn",
   "titleEn": "Celebration",
   "sentences": [
     {
       "target": "زنگ مکتب می‌زند.",
+      "translit": "zang-e maktab mēzanad.",
       "en": "The school bell rings.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "جشن شروع می‌شود.",
+      "translit": "jashn shurū' mēshawad.",
       "en": "The celebration starts.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "چقدر سوال در امتحان است؟",
+      "translit": "chiqadar su'āl dar imtihān ast?",
       "en": "How many questions are in the exam?",
       "tokens": [
         {
@@ -69,6 +73,7 @@
     },
     {
       "target": "کتاب در آتش می‌سوزد.",
+      "translit": "ketāb dar ātash mēsōzad.",
       "en": "The book burns in the fire.",
       "tokens": [
         {

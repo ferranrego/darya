@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "وطن",
+  "titleTranslit": "watan",
   "titleEn": "Homeland",
   "sentences": [
     {
       "target": "من موی او را می‌شمارم.",
+      "translit": "man mōy-e ō rā mēshumāram.",
       "en": "I count his hair.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "غرب یک دلیل دارد.",
+      "translit": "gharb yak dalēl dārad.",
       "en": "The west has a reason.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "وطن من در غرب است.",
+      "translit": "watan-e man dar gharb ast.",
       "en": "My homeland is in the west.",
       "tokens": [
         {
@@ -81,6 +85,7 @@
     },
     {
       "target": "به این دلیل، وطن مهم است.",
+      "translit": "ba īn dalēl, watan muhim ast.",
       "en": "For this reason, homeland is important.",
       "tokens": [
         {

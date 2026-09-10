@@ -114,7 +114,9 @@ if (flag("--emit") !== null) {
       continue;
     }
 
-    const line = src[i].match(/^(\s*)\{ target: "(.*?)", en: (".*"),? \},$/);
+    // The last entry in a sentences array has no trailing comma, so both
+    // shapes have to match - one sentence was silently skipped before this.
+    const line = src[i].match(/^(\s*)\{ target: "(.*?)", en: (".*?"),? \},?$/);
     if (!line) continue;
     const fix = repair.sentences.find((s) => s.target === line[2]);
     if (!fix?.translit) continue;
@@ -122,7 +124,10 @@ if (flag("--emit") !== null) {
       problems.push(`${slug}: "${line[2]}" repair is Iranian-flattened`);
       continue;
     }
-    src[i] = `${line[1]}{ target: "${line[2]}", translit: "${escape(fix.translit)}", en: ${line[3]} },`;
+    const comma = src[i].trimEnd().endsWith("},") ? "," : "";
+    src[i] =
+      `${line[1]}{ target: "${line[2]}", translit: "${escape(fix.translit)}", ` +
+      `en: ${line[3]} }${comma}`;
     lines++;
   }
 
