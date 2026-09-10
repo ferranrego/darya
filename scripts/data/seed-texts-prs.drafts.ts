@@ -12,7 +12,7 @@ import type { SeedTextSource } from "./seed-text-source.ts";
  *  - **Unresolved vocabulary.** Ten of the fifteen use words that are not in
  *    the lexicon at all. Adding them is authoring work with a philologist at
  *    the end, not a mechanical fix - and several are Iranian rather than
- *    Afghan (کودکان for اطفال, شلوغ for بیروبار, which another text here
+ *    Afghan (اطفال for اطفال, بیروبار for بیروبار, which another text here
  *    already uses correctly).
  *  - **Iranian transliteration.** `l3-003` .. `l3-007` have every long ā and
  *    every majhul ē/ō flattened out: `emroz` for `emrōz`, `khob` for `khōb`,
@@ -22,10 +22,29 @@ import type { SeedTextSource } from "./seed-text-source.ts";
  *    `l3-008` .. `l3-012` look right; `l3-013` .. `l3-017` are mixed.
  *
  * Parked rather than deleted, and parked rather than shipped: this is the
- * "author into a reviewed file, never straight into the shipped content"
- * rule from CLAUDE.md applied to texts. Move an entry into
- * `seed-texts-prs.ts` only after `scripts/review-batch.ts` and a philologist
- * pass, one batch at a time.
+ * "author into a reviewed file, never straight into shipped content" rule from
+ * CLAUDE.md applied to texts.
+ *
+ * Progress since they were parked: five of the fourteen blocking words were
+ * Iranian ones the lexicon already had an Afghan equivalent for, so they are
+ * swapped - شلوغ to بیروبار, کودکان to اطفال, خسته to مانده, مطالعه to خواندن,
+ * جالب to مقبول. That improves the drafts on their own merits and leaves nine.
+ *
+ * What still blocks them, precisely:
+ *
+ *  1. Nine words are not in the lexicon at all: توپ, سالاد, کیلو, جمع, مزه‌دار,
+ *     تحفه, ناوقت, بوی, and the name محمود. Adding them is not a matter of
+ *     appending rows: `freqRank` has to be a real frequency, and
+ *     `validate-content.ts` fails a batch whose ranks track insertion order
+ *     (PEDAGOGY §4, and the 121-entry incident that rule was written from).
+ *     The route is `node scripts/build-frequency.ts --lang prs --apply` with
+ *     the corpora downloaded - a deliberate maintainer step, not something to
+ *     fake with plausible-looking numbers.
+ *  2. `l3-003` .. `l3-007` still carry Iranian transliteration throughout.
+ *     `l3-008` .. `l3-012` are clean; `l3-013` .. `l3-017` are mixed.
+ *
+ * Worth doing: L3 currently ships two texts, so these fifteen would be the
+ * difference between an empty level and a real one.
  */
 export const draftSeedTexts: SeedTextSource[] = [
   {
@@ -213,9 +232,9 @@ export const draftSeedTexts: SeedTextSource[] = [
     sentences: [
       { target: "من به بازار می‌روم.", translit: "man ba bāzār mērawam.", en: "I go to the market." },
       { target: "من میوه و نان می‌خرم.", translit: "man mēwa wa nān mēkharam.", en: "I buy fruit and bread." },
-      { target: "بازار بسیار شلوغ است.", translit: "bāzār bisyār shulōgh ast.", en: "The market is very busy." },
+      { target: "بازار بسیار بیروبار است.", translit: "bāzār bisyār bērūbār ast.", en: "The market is very busy." },
       { target: "هوا گرم است.", translit: "hawā garm ast.", en: "The weather is hot." },
-      { target: "من خسته هستم.", translit: "man khasta hastam.", en: "I am tired." },
+      { target: "من مانده هستم.", translit: "man mānda hastam.", en: "I am tired." },
       { target: "به خانه بر می‌گردم.", translit: "ba khāna bar mēgardam.", en: "I return home." },
     ],
   },
@@ -228,7 +247,7 @@ export const draftSeedTexts: SeedTextSource[] = [
     titleEn: "In the park",
     sentences: [
       { target: "ما در پارک هستیم.", translit: "mā dar pārk hastēm.", en: "We are in the park." },
-      { target: "کودکان بازی می‌کنند.", translit: "kōdakān bāzī mēkunand.", en: "The children are playing." },
+      { target: "اطفال بازی می‌کنند.", translit: "atfāl bāzī mēkunand.", en: "The children are playing." },
       { target: "درختان سبز هستند.", translit: "darakhtān sabz hastand.", en: "The trees are green." },
       { target: "یک پرنده روی درخت است.", translit: "yak paranda rōyē darakht ast.", en: "A bird is on the tree." },
       { target: "ما چای می‌نوشیم.", translit: "mā chāy mēnōshēm.", en: "We drink tea." },
@@ -244,10 +263,10 @@ export const draftSeedTexts: SeedTextSource[] = [
     titleEn: "Reading a book",
     sentences: [
       { target: "او یک کتاب می‌خواند.", translit: "ō yak kitāb mēkhwānad.", en: "He reads a book." },
-      { target: "کتاب جالب است.", translit: "kitāb jālib ast.", en: "The book is interesting." },
+      { target: "کتاب مقبول است.", translit: "kitāb maqbūl ast.", en: "The book is interesting." },
       { target: "او در کتابخانه نشسته است.", translit: "ō dar kitābkhāna nishasta ast.", en: "He is sitting in the library." },
       { target: "دوستانش هم آنجا هستند.", translit: "dōstānash ham ānjā hastand.", en: "His friends are also there." },
-      { target: "آنها آرام مطالعه می‌کنند.", translit: "ānhā ārām mutāla'a mēkunand.", en: "They study quietly." },
+      { target: "آنها آرام خواندن می‌کنند.", translit: "ānhā ārām khwāndan mēkunand.", en: "They study quietly." },
       { target: "وقت به سرعت می‌گذرد.", translit: "waqt ba sur'at mēguzarad.", en: "Time passes quickly." },
     ],
   },
