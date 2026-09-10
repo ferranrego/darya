@@ -71,7 +71,7 @@
     },
     {
       "target": "رئیس شورا گفت که مکتب قدیمی برای همه شاگردان خورد است.",
-      "translit": "ra'īs-e shōrā guft ke maktab-e qadīmī barāyi hama-ye shāgerdān khurd ast.",
+      "translit": "ra'īs-e shōrā guft ke maktab-e qadīmī barā-ye hama-ye shāgerdān khurd ast.",
       "en": "The council head said that the old school is too small for all the students.",
       "tokens": [
         {
@@ -165,7 +165,7 @@
     },
     {
       "target": "دهقانی که زمین کنار سرک داشت، آن را برای مکتب داد.",
-      "translit": "dehqānē ke zamīn kinār-e sarak dāsht, ān rā barāyi maktab dād.",
+      "translit": "dehqānē ke zamīn kinār-e sarak dāsht, ān rā barā-ye maktab dād.",
       "en": "A farmer who had land beside the road gave it for the school.",
       "tokens": [
         {
@@ -259,7 +259,7 @@
     },
     {
       "target": "سرانجام، بعد از چند ماه، مکتب نو برای شاگردان باز شد.",
-      "translit": "saranjām, ba'd az chand māh, maktab-e naw barāyi shāgerdān bāz shud.",
+      "translit": "saranjām, ba'd az chand māh, maktab-e naw barā-ye shāgerdān bāz shud.",
       "en": "Finally, after a few months, the new school opened for the students.",
       "tokens": [
         {

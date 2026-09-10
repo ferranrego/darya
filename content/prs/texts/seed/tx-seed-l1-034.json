@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "در باغ ما درخت سیب است.",
-      "translit": "dar bāgh-e mā derakht-e sēb ast.",
+      "translit": "dar bāgh-e mā darakht-e sēb ast.",
       "en": "In our garden there is an apple tree.",
       "tokens": [
         {
@@ -89,7 +89,7 @@
     },
     {
       "target": "ما زیر درخت می‌نشینیم.",
-      "translit": "mā zēr-e derakht mēnishīnēm.",
+      "translit": "mā zēr-e darakht mēnishīnēm.",
       "en": "We sit under the tree.",
       "tokens": [
         {

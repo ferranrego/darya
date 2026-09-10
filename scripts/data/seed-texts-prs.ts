@@ -291,7 +291,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او سال گذشته به آنجا رفته است.", translit: "ō sāl-e guzashta ba ānjā rafta ast.", en: "He went there last year." },
       { target: "اگر کارش خوب پیش برود، فامیلش را هم به کابل می‌آورد.", translit: "agar kārash khōb pēsh berawad, fāmīlash rā ham ba kābul mēāwarad.", en: "If his work goes well, he will bring his family to Kabul too." },
       { target: "خانه نو او در شهر ساخته شده است.", translit: "khāna-ye naw-e ō dar shahr sākhta shuda ast.", en: "His new house has been built in the city." },
-      { target: "هفته پیش او به ما زنگ زد و گفت که دلش برای قریه تنگ شده است.", translit: "hafta pēsh ō ba mā zang zad wa guft ke delash barāyi qarya tang shuda ast.", en: "Last week he called us and said that he has become homesick for the village." },
+      { target: "هفته پیش او به ما زنگ زد و گفت که دلش برای قریه تنگ شده است.", translit: "hafta pēsh ō ba mā zang zad wa guft ke delash barā-ye qarya tang shuda ast.", en: "Last week he called us and said that he has become homesick for the village." },
       { target: "ما هم منتظر هستیم که او دوباره به دیدن ما بیاید.", translit: "mā ham muntazir hastēm ke ō dōbāra ba dīdan-e mā biyāyad.", en: "We are also waiting for him to come see us again." },
     ],
   },
@@ -336,11 +336,11 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "The new school in the village",
     sentences: [
       { target: "سال گذشته بزرگان قریه یک جلسه گرفتند و درباره ساختن مکتب نو صحبت کردند.", translit: "sāl-e guzashta buzurgān-e qarya yak jalasa gereftand wa darbāra-ye sākhtan-e maktab-e naw suhbat kardand.", en: "Last year the village elders held a meeting and talked about building a new school." },
-      { target: "رئیس شورا گفت که مکتب قدیمی برای همه شاگردان خورد است.", translit: "ra'īs-e shōrā guft ke maktab-e qadīmī barāyi hama-ye shāgerdān khurd ast.", en: "The council head said that the old school is too small for all the students." },
+      { target: "رئیس شورا گفت که مکتب قدیمی برای همه شاگردان خورد است.", translit: "ra'īs-e shōrā guft ke maktab-e qadīmī barā-ye hama-ye shāgerdān khurd ast.", en: "The council head said that the old school is too small for all the students." },
       { target: "اگر مردم کمک کنند، مکتب نو زودتر ساخته می‌شود.", translit: "agar mardum kumak kunand, maktab-e naw zūdtar sākhta mēshawad.", en: "If people help, the new school will be built sooner." },
-      { target: "دهقانی که زمین کنار سرک داشت، آن را برای مکتب داد.", translit: "dehqānē ke zamīn kinār-e sarak dāsht, ān rā barāyi maktab dād.", en: "A farmer who had land beside the road gave it for the school." },
+      { target: "دهقانی که زمین کنار سرک داشت، آن را برای مکتب داد.", translit: "dehqānē ke zamīn kinār-e sarak dāsht, ān rā barā-ye maktab dād.", en: "A farmer who had land beside the road gave it for the school." },
       { target: "مردم گفتند که این تصمیم شورا بسیار خوب است.", translit: "mardum guftand ke īn tasmīm-e shōrā besyār khōb ast.", en: "People said that this decision of the council was very good." },
-      { target: "سرانجام، بعد از چند ماه، مکتب نو برای شاگردان باز شد.", translit: "saranjām, ba'd az chand māh, maktab-e naw barāyi shāgerdān bāz shud.", en: "Finally, after a few months, the new school opened for the students." },
+      { target: "سرانجام، بعد از چند ماه، مکتب نو برای شاگردان باز شد.", translit: "saranjām, ba'd az chand māh, maktab-e naw barā-ye shāgerdān bāz shud.", en: "Finally, after a few months, the new school opened for the students." },
     ],
   },
   {
@@ -586,7 +586,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "دریا کلان است.", translit: "daryā kalān ast.", en: "The river is big." },
       { target: "گل خوب است.", translit: "gul khōb ast.", en: "The flower is good." },
-      { target: "درخت سبز است.", translit: "derakht sabz ast.", en: "The tree is green." },
+      { target: "درخت سبز است.", translit: "darakht sabz ast.", en: "The tree is green." },
       { target: "زمین کلان است.", translit: "zamīn kalān ast.", en: "The ground is big." },
       { target: "کوه بلند است.", translit: "kōh buland ast.", en: "The mountain is tall." },
     ],
@@ -776,7 +776,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Ship",
     sentences: [
       { target: "رئیس کشتی در ساحل است.", translit: "ra'īs-e kishtī dar sāhil ast.", en: "The boss of the ship is on the beach." },
-      { target: "او یک درخت می‌کارد.", translit: "ō yak derakht mēkārad.", en: "He plants a tree." },
+      { target: "او یک درخت می‌کارد.", translit: "ō yak darakht mēkārad.", en: "He plants a tree." },
       { target: "او قند را در آب می‌اندازد.", translit: "ō qand rā dar āb mēandāzad.", en: "He throws sugar in the water." },
     ],
   },
@@ -890,7 +890,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "کارمند در شرق جنگل کار می‌کند.", translit: "kārmand dar sharq-e jangal kār mēkunad.", en: "The employee works in the east of the forest." },
       { target: "او به متر نیاز دارد.", translit: "ō ba metr niyāz dārad.", en: "He needs a tape measure." },
-      { target: "او می‌بیند که این درخت می‌پوسد.", translit: "ō mēbīnad ki īn derakht mēpōsad.", en: "He sees that this tree rots." }
+      { target: "او می‌بیند که این درخت می‌پوسد.", translit: "ō mēbīnad ki īn darakht mēpōsad.", en: "He sees that this tree rots." }
     ],
   },
   {
@@ -1055,10 +1055,10 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "bāgh-e mā",
     titleEn: "Our garden",
     sentences: [
-      { target: "در باغ ما درخت سیب است.", translit: "dar bāgh-e mā derakht-e sēb ast.", en: "In our garden there is an apple tree." },
+      { target: "در باغ ما درخت سیب است.", translit: "dar bāgh-e mā darakht-e sēb ast.", en: "In our garden there is an apple tree." },
       { target: "من یک سیب شیرین می‌خورم.", translit: "man yak sēb-e shīrīn mēkhuram.", en: "I eat a sweet apple." },
       { target: "برادر من آب می‌آورد.", translit: "barādar-e man āb mēāwarad.", en: "My brother brings water." },
-      { target: "ما زیر درخت می‌نشینیم.", translit: "mā zēr-e derakht mēnishīnēm.", en: "We sit under the tree." },
+      { target: "ما زیر درخت می‌نشینیم.", translit: "mā zēr-e darakht mēnishīnēm.", en: "We sit under the tree." },
     ],
   },
   {
