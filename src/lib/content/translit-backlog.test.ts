@@ -59,7 +59,7 @@ describe("transliteration backlog", () => {
  * invisible. Same rule as above: the ceiling comes down as batches are
  * repaired, and never goes up.
  */
-const FLATTENED_CEILING = 1170;
+const FLATTENED_CEILING = 1080;
 
 describe("flattened transliteration backlog", () => {
   it("never grows", () => {
