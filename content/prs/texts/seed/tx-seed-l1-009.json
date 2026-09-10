@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "پسر",
+  "titleTranslit": "pesar",
   "titleEn": "The boy",
   "sentences": [
     {
       "target": "پسر کلان می‌شود.",
+      "translit": "pesar kalān mēshawad.",
       "en": "The boy becomes big.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "پدر به پسر نان می‌دهد.",
+      "translit": "padar ba pesar nān mēdehad.",
       "en": "The father gives bread to the boy.",
       "tokens": [
         {
@@ -51,6 +54,7 @@
     },
     {
       "target": "مادر یک گپ می‌گوید.",
+      "translit": "mādar yak gap mēgōyad.",
       "en": "The mother says a word.",
       "tokens": [
         {
@@ -73,6 +77,7 @@
     },
     {
       "target": "پسر کتاب می‌گیرد.",
+      "translit": "pesar ketāb mēgīrad.",
       "en": "The boy takes the book.",
       "tokens": [
         {

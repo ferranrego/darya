@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "درس",
+  "titleTranslit": "dars",
   "titleEn": "The lesson",
   "sentences": [
     {
       "target": "من یک کتاب می‌یابم.",
+      "translit": "man yak ketāb mēyābam.",
       "en": "I find a book.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "او دروازه را می‌بندد.",
+      "translit": "ō darwāza rā mēbandad.",
       "en": "He closes the door.",
       "tokens": [
         {
@@ -51,6 +54,7 @@
     },
     {
       "target": "پدر چای می‌فروشد.",
+      "translit": "padar chāy mēfurōshad.",
       "en": "The father sells tea.",
       "tokens": [
         {
@@ -69,6 +73,7 @@
     },
     {
       "target": "پسر درس می‌خواند.",
+      "translit": "pesar dars mēkhānad.",
       "en": "The boy studies the lesson.",
       "tokens": [
         {
@@ -87,6 +92,7 @@
     },
     {
       "target": "او آب می‌خورد.",
+      "translit": "ō āb mēkhurad.",
       "en": "He drinks water.",
       "tokens": [
         {

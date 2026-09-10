@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "باران",
+  "titleTranslit": "bārān",
   "titleEn": "Rain",
   "sentences": [
     {
       "target": "آفتاب خوب است.",
+      "translit": "āftāb khōb ast.",
       "en": "The sun is good.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "باران می‌آید.",
+      "translit": "bārān mēāyad.",
       "en": "Rain comes.",
       "tokens": [
         {
@@ -39,6 +42,7 @@
     },
     {
       "target": "باد قوی است.",
+      "translit": "bād qawī ast.",
       "en": "The wind is strong.",
       "tokens": [
         {
@@ -57,6 +61,7 @@
     },
     {
       "target": "زمین خشک است.",
+      "translit": "zamīn khushk ast.",
       "en": "The ground is dry.",
       "tokens": [
         {

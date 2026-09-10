@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "موتر",
+  "titleTranslit": "mōtar",
   "titleEn": "The car",
   "sentences": [
     {
       "target": "راه دراز است.",
+      "translit": "rāh darāz ast.",
       "en": "The way is long.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "موتر سنگین است.",
+      "translit": "mōtar sangīn ast.",
       "en": "The car is heavy.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "پسر بایسکل دارد.",
+      "translit": "pesar bāysikl dārad.",
       "en": "The boy has a bicycle.",
       "tokens": [
         {
@@ -61,6 +65,7 @@
     },
     {
       "target": "پدر می‌پردازد.",
+      "translit": "padar mēpardāzad.",
       "en": "The father pays.",
       "tokens": [
         {

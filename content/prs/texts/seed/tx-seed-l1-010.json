@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "زندگی ما",
+  "titleTranslit": "zendagī-ye mā",
   "titleEn": "Our life",
   "sentences": [
     {
       "target": "من با چشم می‌بینم.",
+      "translit": "man bā chashm mēbīnam.",
       "en": "I see with the eye.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "سر من درد دارد.",
+      "translit": "sar-e man dard dārad.",
       "en": "My head has pain.",
       "tokens": [
         {
@@ -51,6 +54,7 @@
     },
     {
       "target": "زندگی خوب است.",
+      "translit": "zendagī khōb ast.",
       "en": "Life is good.",
       "tokens": [
         {
@@ -69,6 +73,7 @@
     },
     {
       "target": "او یک پای دارد.",
+      "translit": "ō yak pāy dārad.",
       "en": "He has one leg.",
       "tokens": [
         {

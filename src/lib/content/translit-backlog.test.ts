@@ -23,7 +23,7 @@ import { lexiconFileSchema } from "./schema.ts";
  * and may never be raised. When it reaches zero, delete the backlog, this
  * test, and the exemption in the build.
  */
-const CEILING = 65;
+const CEILING = 51;
 
 describe("transliteration backlog", () => {
   it("never grows", () => {

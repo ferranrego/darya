@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "باغ کلان",
+  "titleTranslit": "bāgh-e kalān",
   "titleEn": "The big garden",
   "sentences": [
     {
       "target": "دروازه اتاق باز است.",
+      "translit": "darwāza-ye utāq bāz ast.",
       "en": "The room door is open.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "این خانه کهنه است.",
+      "translit": "īn khāna kuhna ast.",
       "en": "This house is old.",
       "tokens": [
         {
@@ -51,6 +54,7 @@
     },
     {
       "target": "باغ بسته است.",
+      "translit": "bāgh basta ast.",
       "en": "The garden is closed.",
       "tokens": [
         {
@@ -69,6 +73,7 @@
     },
     {
       "target": "اتاق کلان است.",
+      "translit": "utāq kalān ast.",
       "en": "The room is big.",
       "tokens": [
         {

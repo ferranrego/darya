@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "گوشت و شیر",
+  "titleTranslit": "gōsht wa shīr",
   "titleEn": "Meat and milk",
   "sentences": [
     {
       "target": "مادر گوشت می‌خرد.",
+      "translit": "mādar gōsht mēkharad.",
       "en": "Mother buys meat.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "پسر شیر می‌برد.",
+      "translit": "pesar shīr mēbarad.",
       "en": "The boy carries milk.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "این شیرین است.",
+      "translit": "īn shīrīn ast.",
       "en": "This is sweet.",
       "tokens": [
         {
@@ -61,6 +65,7 @@
     },
     {
       "target": "گوشت خوب است.",
+      "translit": "gōsht khōb ast.",
       "en": "The meat is good.",
       "tokens": [
         {

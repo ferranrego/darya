@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "شهر",
+  "titleTranslit": "shahr",
   "titleEn": "The city",
   "sentences": [
     {
       "target": "شهر کلان است.",
+      "translit": "shahr kalān ast.",
       "en": "The city is big.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "او به بازار می‌رود.",
+      "translit": "ō ba bāzār mērawad.",
       "en": "He goes to the market.",
       "tokens": [
         {
@@ -47,6 +50,7 @@
     },
     {
       "target": "مسجد بلند است.",
+      "translit": "masjid buland ast.",
       "en": "The mosque is tall.",
       "tokens": [
         {
@@ -65,6 +69,7 @@
     },
     {
       "target": "سرک کلان است.",
+      "translit": "sarak kalān ast.",
       "en": "The street is big.",
       "tokens": [
         {

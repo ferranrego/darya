@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "سفر",
+  "titleTranslit": "safar",
   "titleEn": "The trip",
   "sentences": [
     {
       "target": "جوان به سفر می‌رود.",
+      "translit": "jawān ba safar mērawad.",
       "en": "The young person goes on a trip.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "پسر می‌دود.",
+      "translit": "pesar mēdawad.",
       "en": "The boy runs.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "پدر برمی‌گردد.",
+      "translit": "padar barmēgardad.",
       "en": "The father returns.",
       "tokens": [
         {
@@ -57,6 +61,7 @@
     },
     {
       "target": "او به دروازه می‌زند.",
+      "translit": "ō ba darwāza mēzanad.",
       "en": "He hits the door.",
       "tokens": [
         {

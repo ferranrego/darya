@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "معلم",
+  "titleTranslit": "mu'allem",
   "titleEn": "The teacher",
   "sentences": [
     {
       "target": "معلم می‌نویسد.",
+      "translit": "mu'allem mēnawīsad.",
       "en": "The teacher writes.",
       "tokens": [
         {
@@ -21,6 +23,7 @@
     },
     {
       "target": "او می‌داند.",
+      "translit": "ō mēdānad.",
       "en": "He knows.",
       "tokens": [
         {
@@ -35,6 +38,7 @@
     },
     {
       "target": "پسر یاد می‌گیرد.",
+      "translit": "pesar yād mēgīrad.",
       "en": "The boy learns.",
       "tokens": [
         {
@@ -53,6 +57,7 @@
     },
     {
       "target": "من می‌توانم.",
+      "translit": "man mētawānam.",
       "en": "I am able.",
       "tokens": [
         {

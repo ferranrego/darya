@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "ساعت",
+  "titleTranslit": "sā'at",
   "titleEn": "The watch",
   "sentences": [
     {
       "target": "این ساعت است.",
+      "translit": "īn sā'at ast.",
       "en": "This is a watch.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "کار سخت است.",
+      "translit": "kār sakht ast.",
       "en": "The work is hard.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "دروازه تنگ است.",
+      "translit": "darwāza tang ast.",
       "en": "The door is tight.",
       "tokens": [
         {
@@ -61,6 +65,7 @@
     },
     {
       "target": "شیشه می‌شکند.",
+      "translit": "shīsha mēshikanad.",
       "en": "The glass breaks.",
       "tokens": [
         {
@@ -75,6 +80,7 @@
     },
     {
       "target": "قیمت آن چیست؟",
+      "translit": "qīmat-e ān chēst?",
       "en": "What is its price?",
       "tokens": [
         {

@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "آب",
+  "titleTranslit": "āb",
   "titleEn": "Water",
   "sentences": [
     {
       "target": "شب تاریک است.",
+      "translit": "shab tārīk ast.",
       "en": "The night is dark.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "روز کوتاه است.",
+      "translit": "rōz kōtāh ast.",
       "en": "The day is short.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "پسر آب می‌آشامد.",
+      "translit": "pesar āb mēāshāmad.",
       "en": "The boy drinks water.",
       "tokens": [
         {
@@ -61,6 +65,7 @@
     },
     {
       "target": "مادر نان می‌پزد.",
+      "translit": "mādar nān mēpazad.",
       "en": "The mother cooks bread.",
       "tokens": [
         {
@@ -79,6 +84,7 @@
     },
     {
       "target": "او خانه را می‌شوید.",
+      "translit": "ō khāna rā mēshōyad.",
       "en": "He washes the house.",
       "tokens": [
         {

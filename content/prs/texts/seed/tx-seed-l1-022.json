@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "خوش",
+  "titleTranslit": "khush",
   "titleEn": "Happy",
   "sentences": [
     {
       "target": "پسر خوش است.",
+      "translit": "pesar khush ast.",
       "en": "The boy is happy.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "این روز بد است.",
+      "translit": "īn rōz bad ast.",
       "en": "This day is bad.",
       "tokens": [
         {
@@ -47,6 +50,7 @@
     },
     {
       "target": "من می‌فهمم.",
+      "translit": "man mēfahmam.",
       "en": "I understand.",
       "tokens": [
         {
@@ -61,6 +65,7 @@
     },
     {
       "target": "او فکر می‌کند.",
+      "translit": "ō fikr mēkunad.",
       "en": "He thinks.",
       "tokens": [
         {
@@ -79,6 +84,7 @@
     },
     {
       "target": "پدر او را می‌شناسد.",
+      "translit": "padar ō rā mēshināsad.",
       "en": "The father recognizes him.",
       "tokens": [
         {

@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "یک سال",
+  "titleTranslit": "yak sāl",
   "titleEn": "One year",
   "sentences": [
     {
       "target": "یک سال می‌رود.",
+      "translit": "yak sāl mērawad.",
       "en": "One year goes.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "این یک ماه است.",
+      "translit": "īn yak māh ast.",
       "en": "This is one month.",
       "tokens": [
         {
@@ -47,6 +50,7 @@
     },
     {
       "target": "یک روز خوب است.",
+      "translit": "yak rōz khōb ast.",
       "en": "A good day.",
       "tokens": [
         {
@@ -69,6 +73,7 @@
     },
     {
       "target": "من یک هفته می‌خواهم.",
+      "translit": "man yak hafta mēkhāham.",
       "en": "I want one week.",
       "tokens": [
         {
