@@ -70,6 +70,22 @@ export function scriptLongVowelCount(target: string): number {
   return n;
 }
 
+/**
+ * After a vowel the Dari ezafe is spelled `-ye`, never a bare `-e`:
+ * `naqsha-ye kābul`, not `naqsha-e kābul`. After a consonant it is `-e`.
+ *
+ * The seed texts and the grammar course always got this right; the lexicon
+ * carried 480 of the wrong form, inherited from an older `-i` spelling that a
+ * normalisation pass renamed rather than corrected. Safe to check
+ * mechanically because the hyphen means an ezafe has already been written as
+ * one, and the indefinite marker is spelled `-ē`, which never precedes it.
+ */
+export function bareEzafeAfterVowel(translit: string | undefined): string | null {
+  if (!translit) return null;
+  const m = translit.match(/[aāēīōū]-e(?=[\s.,?!:;)]|$)/);
+  return m ? m[0] : null;
+}
+
 /** True when `translit` dropped the long vowels its own script spells out. */
 export function isFlattenedTranslit(
   translit: string | undefined,

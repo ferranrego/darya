@@ -22,7 +22,7 @@ import { levelVocabulary } from "../src/lib/content/level-vocabulary.ts";
 import { isRuledOut, isTeachable } from "../src/lib/content/teachability.ts";
 import { isContentWord } from "../src/lib/content/word-selection.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
-import { isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
+import { bareEzafeAfterVowel, isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { insertionOrderSuffix } from "./freq-integrity.ts";
@@ -86,6 +86,13 @@ function checkDariTranslit(
   }
   if (/\bdust/i.test(text)) {
     fail(`${subject}: ${field} must use majhul vowel ō (dōst, not dust) (${text})`);
+  }
+  const bareEzafe = bareEzafeAfterVowel(text);
+  if (bareEzafe) {
+    fail(
+      `${subject}: ${field} writes the ezafe as "${bareEzafe}" - after a vowel ` +
+        `it is -ye, not a bare -e (${text})`,
+    );
   }
   if (script && isFlattenedTranslit(text, script, id)) {
     fail(

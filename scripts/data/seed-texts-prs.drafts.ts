@@ -61,7 +61,7 @@ export const draftSeedTexts: SeedTextSource[] = [
       { target: "مادرم چای درست می‌کند.", translit: "madaram chay dorost mekonad.", en: "My mother makes tea." },
       { target: "برادر کوچکم با توپ بازی می‌کند.", translit: "baradar-e kochakam ba top bazi mekonad.", en: "My little brother plays with a ball." },
       { target: "ما زیر یک درخت بزرگ می‌نشینیم.", translit: "ma zer-e yak derakht-e bozorg meneshinem.", en: "We sit under a big tree." },
-      { target: "همه ما خوشحال هستیم.", translit: "hama-e ma khoshhal hastem.", en: "We are all happy." },
+      { target: "همه ما خوشحال هستیم.", translit: "hama-ye ma khoshhal hastem.", en: "We are all happy." },
     ],
   },
   {
@@ -106,7 +106,7 @@ export const draftSeedTexts: SeedTextSource[] = [
     titleTranslit: "pokhtan-e nan-e shab",
     titleEn: "Cooking Dinner",
     sentences: [
-      { target: "امشب دوستانم به خانه ما می‌آیند.", translit: "emshab dostanam ba khana-e ma meayand.", en: "Tonight my friends are coming to our house." },
+      { target: "امشب دوستانم به خانه ما می‌آیند.", translit: "emshab dostanam ba khana-ye ma meayand.", en: "Tonight my friends are coming to our house." },
       { target: "من برای آن‌ها غذا می‌پزم.", translit: "man baray-e anha ghaza mepazam.", en: "I am cooking food for them." },
       { target: "برنج و گوشت در آشپزخانه داریم.", translit: "berenj wa gosht dar ashpazkhana darem.", en: "We have rice and meat in the kitchen." },
       { target: "من سالاد هم درست می‌کنم.", translit: "man salad ham dorost mekonam.", en: "I am making a salad too." },
@@ -129,7 +129,7 @@ export const draftSeedTexts: SeedTextSource[] = [
       { target: "یک پیاله چای گرم می‌نوشم.", translit: "yak pyala chay-e garm menusham.", en: "I drink a cup of warm tea." },
       { target: "از کلکین به بیرون نگاه می‌کنم.", translit: "az kelken ba beron negah mekonam.", en: "I look outside from the window." },
       { target: "سرک‌ها پر از آب هستند.", translit: "sarakha por az ab hastand.", en: "The streets are full of water." },
-      { target: "هوای بارانی را دوست دارم.", translit: "hawa-e barani ra dost daram.", en: "I like rainy weather." },
+      { target: "هوای بارانی را دوست دارم.", translit: "hawa-ye barani ra dost daram.", en: "I like rainy weather." },
     ],
   },
   {
