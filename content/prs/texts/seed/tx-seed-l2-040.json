@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "سگ همسایه",
+  "titleTranslit": "sag-e hamsāya",
   "titleEn": "The neighbor dog",
   "sentences": [
     {
       "target": "سگ همسایه بسیار غالمغال می‌کند.",
+      "translit": "sag-e hamsāya bisyār ghālmaghāl mēkunad.",
       "en": "The neighbor dog makes a lot of noise.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "آن سگ کلان و سیاه است.",
+      "translit": "ān sag kalān wa siyāh ast.",
       "en": "That dog is big and black.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "بچه‌ها از او می‌ترسند.",
+      "translit": "bacha-hā az ō mētarsand.",
       "en": "The children are afraid of him.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "صاحبش او را در حویلی بسته است.",
+      "translit": "sāhib-ash ō rā dar hawēlī basta ast.",
       "en": "His owner has tied him in the yard.",
       "tokens": [
         {

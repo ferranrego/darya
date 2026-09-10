@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "باغ ما",
+  "titleTranslit": "bāgh-e mā",
   "titleEn": "Our garden",
   "sentences": [
     {
       "target": "در باغ ما درخت سیب است.",
+      "translit": "dar bāgh-e mā derakht-e sēb ast.",
       "en": "In our garden there is an apple tree.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "من یک سیب شیرین می‌خورم.",
+      "translit": "man yak sēb-e shīrīn mēkhuram.",
       "en": "I eat a sweet apple.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "برادر من آب می‌آورد.",
+      "translit": "barādar-e man āb mēāwarad.",
       "en": "My brother brings water.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "ما زیر درخت می‌نشینیم.",
+      "translit": "mā zēr-e derakht mēnishīnēm.",
       "en": "We sit under the tree.",
       "tokens": [
         {

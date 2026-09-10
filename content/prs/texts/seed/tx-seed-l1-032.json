@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "قالین نو",
+  "titleTranslit": "qālīn-e naw",
   "titleEn": "The new carpet",
   "sentences": [
     {
       "target": "پدر یک قالین نو خرید.",
+      "translit": "padar yak qālīn-e naw kharēd.",
       "en": "Father bought a new carpet.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "قالین ما سرخ و کلان است.",
+      "translit": "qālīn-e mā surkh wa kalān ast.",
       "en": "Our carpet is red and big.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "ما روی قالین می‌نشینیم.",
+      "translit": "mā rō-ye qālīn mēnishīnēm.",
       "en": "We sit on the carpet.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "اتاق ما حالا مقبول است.",
+      "translit": "utāq-e mā hālā maqbūl ast.",
       "en": "Our room is now beautiful.",
       "tokens": [
         {

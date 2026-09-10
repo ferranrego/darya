@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "عروسی",
+  "titleTranslit": "arōsī",
   "titleEn": "The wedding",
   "sentences": [
     {
       "target": "دیشب ما در عروسی بودیم.",
+      "translit": "dēshab mā dar arōsī būdēm.",
       "en": "Last night we were at a wedding.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "موسیقی بسیار بلند بود.",
+      "translit": "mōsīqī bisyār buland būd.",
       "en": "The music was very loud.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "داماد و عروس خوشحال بودند.",
+      "translit": "dāmād wa arūs khushhāl būdand.",
       "en": "The groom and bride were happy.",
       "tokens": [
         {
@@ -81,6 +85,7 @@
     },
     {
       "target": "ما تا دیر شب آنجا ماندیم.",
+      "translit": "mā tā dēr-e shab ānjā māndēm.",
       "en": "We stayed there until late at night.",
       "tokens": [
         {

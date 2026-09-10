@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "یاد گرفتن زبان",
+  "titleTranslit": "yād giriftan-e zabān",
   "titleEn": "Learning a language",
   "sentences": [
     {
       "target": "برادرم کورس انگلیسی می‌خواند.",
+      "translit": "barādar-am kōrs-e inglīsī mēkhānad.",
       "en": "My brother studies an English course.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "او هر روز کتاب‌های نو می‌گیرد.",
+      "translit": "ō har rōz ketāb-hā-ye naw mēgīrad.",
       "en": "He gets new books every day.",
       "tokens": [
         {
@@ -59,6 +62,7 @@
     },
     {
       "target": "من هم می‌خواهم زبان یاد بگیرم.",
+      "translit": "man ham mēkhāham zabān yād bigīram.",
       "en": "I also want to learn a language.",
       "tokens": [
         {
@@ -89,6 +93,7 @@
     },
     {
       "target": "زبان خواندن برای آینده خوب است.",
+      "translit": "zabān khāndan barā-ye āyinda khōb ast.",
       "en": "Studying a language is good for the future.",
       "tokens": [
         {

@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "چای سبز",
+  "titleTranslit": "chāy-e sabz",
   "titleEn": "Green tea",
   "sentences": [
     {
       "target": "مادر در آشپزخانه است.",
+      "translit": "mādar dar āshpazkhāna ast.",
       "en": "Mother is in the kitchen.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "او آب را جوش می‌دهد.",
+      "translit": "ō āb rā jōsh mēdehad.",
       "en": "She boils the water.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "ما چای سبز می‌خوریم.",
+      "translit": "mā chāy-e sabz mēkhurēm.",
       "en": "We drink green tea.",
       "tokens": [
         {
@@ -77,6 +81,7 @@
     },
     {
       "target": "چای بسیار گرم است.",
+      "translit": "chāy bisyār garm ast.",
       "en": "The tea is very hot.",
       "tokens": [
         {

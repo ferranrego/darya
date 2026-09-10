@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "شفاخانه",
+  "titleTranslit": "shafākhāna",
   "titleEn": "The hospital",
   "sentences": [
     {
       "target": "پدرکلانم مریض است.",
+      "translit": "padar-kalān-am marēz ast.",
       "en": "My grandfather is sick.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "ما او را به شفاخانه می‌بریم.",
+      "translit": "mā ō rā ba shafākhāna mēbarēm.",
       "en": "We take him to the hospital.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "داکتر او را معاینه می‌کند.",
+      "translit": "dāktar ō rā mu'āyina mēkunad.",
       "en": "The doctor examines him.",
       "tokens": [
         {
@@ -81,6 +85,7 @@
     },
     {
       "target": "او باید دوا بخورد تا جور شود.",
+      "translit": "ō bāyad dawā bikhurad tā jōr shawad.",
       "en": "He must take medicine to get well.",
       "tokens": [
         {

@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "قریه ما",
+  "titleTranslit": "qariya-ye mā",
   "titleEn": "Our village",
   "sentences": [
     {
       "target": "قریه ما بسیار آرام است.",
+      "translit": "qariya-ye mā bisyār ārām ast.",
       "en": "Our village is very quiet.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "دهقان‌ها در زمین کار می‌کنند.",
+      "translit": "dihqān-hā dar zamīn kār mēkunand.",
       "en": "The farmers work in the land.",
       "tokens": [
         {
@@ -59,6 +62,7 @@
     },
     {
       "target": "آنها گندم می‌کارند.",
+      "translit": "ānhā gandum mēkārand.",
       "en": "They plant wheat.",
       "tokens": [
         {
@@ -77,6 +81,7 @@
     },
     {
       "target": "هوای قریه پاک و تازه است.",
+      "translit": "hawā-ye qariya pāk wa tāza ast.",
       "en": "The weather of the village is clean and fresh.",
       "tokens": [
         {

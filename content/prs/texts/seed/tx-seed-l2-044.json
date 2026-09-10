@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "رفتن به مسجد",
+  "titleTranslit": "raftan ba masjid",
   "titleEn": "Going to the mosque",
   "sentences": [
     {
       "target": "پدرم روز جمعه به مسجد می‌رود.",
+      "translit": "padar-am rōz-e jum'a ba masjid mērawad.",
       "en": "My father goes to the mosque on Friday.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "او با همسایه‌ها یکجا نماز می‌خواند.",
+      "translit": "ō bā hamsāya-hā yakjā namāz mēkhānad.",
       "en": "He prays together with the neighbors.",
       "tokens": [
         {
@@ -67,6 +70,7 @@
     },
     {
       "target": "مسجد قریه ما تازه رنگ شده است.",
+      "translit": "masjid-e qariya-ye mā tāza rang shuda ast.",
       "en": "The mosque of our village has been freshly painted.",
       "tokens": [
         {
@@ -101,6 +105,7 @@
     },
     {
       "target": "صدای اذان بسیار بلند است.",
+      "translit": "sadā-ye azān bisyār buland ast.",
       "en": "The sound of the call to prayer is very loud.",
       "tokens": [
         {

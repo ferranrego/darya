@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "مندوی",
+  "titleTranslit": "mandawī",
   "titleEn": "The market",
   "sentences": [
     {
       "target": "در مندوی کابل سودا ارزان است.",
+      "translit": "dar mandawī-ye kābul sawdā arzān ast.",
       "en": "In the Kabul Mandawi groceries are cheap.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "دکاندارها برنج و روغن می‌فروشند.",
+      "translit": "dukāndār-hā birinj wa rōghan mēfurōshand.",
       "en": "The shopkeepers sell rice and oil.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "مردم از هر طرف می‌آیند.",
+      "translit": "mardum az har taraf mēāyand.",
       "en": "People come from every side.",
       "tokens": [
         {
@@ -89,6 +93,7 @@
     },
     {
       "target": "روزانه پیسه زیاد تبادله می‌شود.",
+      "translit": "rōzāna paysa-ye ziyād tabādila mēshawad.",
       "en": "Daily a lot of money is exchanged.",
       "tokens": [
         {

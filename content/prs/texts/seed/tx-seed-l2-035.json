@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "دکان خیاط",
+  "titleTranslit": "dukān-e khayyāt",
   "titleEn": "The tailor's shop",
   "sentences": [
     {
       "target": "خیاط لباس‌های زمستانی می‌دوزد.",
+      "translit": "khayyāt libās-hā-ye zimistānī mēdōzad.",
       "en": "The tailor sews winter clothes.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "من برای خود یک کرتی فرمایش دادم.",
+      "translit": "man barā-ye khud yak kurtī farmāyish dādam.",
       "en": "I ordered a jacket for myself.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "رنگ آن سیاه و تاریک است.",
+      "translit": "rang-e ān siyāh wa tārīk ast.",
       "en": "Its color is dark black.",
       "tokens": [
         {
@@ -93,6 +97,7 @@
     },
     {
       "target": "هفته آینده آن را می‌پوشم.",
+      "translit": "hafta-ye āyinda ān rā mēpōsham.",
       "en": "Next week I will wear it.",
       "tokens": [
         {

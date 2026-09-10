@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "رانندگی در کابل",
+  "titleTranslit": "rānandagī dar kābul",
   "titleEn": "Driving in Kabul",
   "sentences": [
     {
       "target": "سرک‌های کابل بسیار بیروبار است.",
+      "translit": "sarak-hā-ye kābul bisyār bērūbār ast.",
       "en": "The streets of Kabul are very crowded.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "راننده‌ها هارن می‌زنند.",
+      "translit": "rānanda-hā hārn mēzanand.",
       "en": "The drivers honk.",
       "tokens": [
         {
@@ -51,6 +54,7 @@
     },
     {
       "target": "ترافیک موترها را ایستاد می‌کند.",
+      "translit": "trāfīk mōtar-hā rā īstād mēkunad.",
       "en": "The traffic police stops the cars.",
       "tokens": [
         {
@@ -77,6 +81,7 @@
     },
     {
       "target": "باید در رانندگی احتیاط کنیم.",
+      "translit": "bāyad dar rānandagī ihtiyāt kunēm.",
       "en": "We must be careful in driving.",
       "tokens": [
         {

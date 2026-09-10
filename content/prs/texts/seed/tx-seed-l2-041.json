@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "ترمیم خانه",
+  "titleTranslit": "tarmēm-e khāna",
   "titleEn": "Repairing the house",
   "sentences": [
     {
       "target": "سقف خانه ما آب می‌چکد.",
+      "translit": "saqf-e khāna-ye mā āb mēchakad.",
       "en": "The roof of our house leaks water.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "پدرم گلکار آورده است.",
+      "translit": "padar-am gilkār āwarda ast.",
       "en": "My father has brought a mud-worker.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "آنها بام را ترمیم می‌کنند.",
+      "translit": "ānhā bām rā tarmēm mēkunand.",
       "en": "They repair the roof.",
       "tokens": [
         {
@@ -81,6 +85,7 @@
     },
     {
       "target": "پیش از زمستان کار تمام می‌شود.",
+      "translit": "pēsh az zimistān kār tamām mēshawad.",
       "en": "The work will be finished before winter.",
       "tokens": [
         {

@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "کالای زمستانی",
+  "titleTranslit": "kālā-ye zimistānī",
   "titleEn": "Winter clothes",
   "sentences": [
     {
       "target": "زمستان است و برف می‌بارد.",
+      "translit": "zimistān ast wa barf mēbārad.",
       "en": "It is winter and it snows.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "من کرتی گرم می‌پوشم.",
+      "translit": "man kurtī-ye garm mēpōsham.",
       "en": "I wear a warm jacket.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "برادرم کلاه خود را می‌پالید.",
+      "translit": "barādar-am kulāh-e khud rā mēpālēd.",
       "en": "My brother was looking for his hat.",
       "tokens": [
         {
@@ -81,6 +85,7 @@
     },
     {
       "target": "ما به مکتب می‌رویم.",
+      "translit": "mā ba maktab mērawēm.",
       "en": "We go to school.",
       "tokens": [
         {

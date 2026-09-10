@@ -2,49 +2,35 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
-import { TRANSLIT_BACKLOG } from "../../../scripts/data/translit-backlog.ts";
 import { isFlattenedTranslit } from "../lang/prs/translit-check.ts";
 import { lexiconFileSchema } from "./schema.ts";
 
 /**
- * The pronunciation backlog is allowed to shrink and nothing else.
+ * Every beginner sentence has a pronunciation, and must keep one.
  *
- * Darya has no audio, so the Latin line under each sentence is the whole of
- * a learner's pronunciation. 273 of 400 beginner sentences shipped without
- * one, invisibly - the reader guards on the field and draws a blank where the
- * pronunciation should be, so the app looked fine and simply taught nothing
- * about how any of it sounds. Worse, the gap was *growing*: 231 of 358 a few
- * commits earlier. Every authoring batch made it bigger because no check
- * existed to notice.
+ * Darya has no audio, so the Latin line under each sentence is the whole of a
+ * learner's pronunciation - and onboarding asks new learners whether they can
+ * read the script, so the people worst affected by its absence are exactly the
+ * ones who answered "not yet". 273 of 400 sentences shipped without one. The
+ * reader guards on the field and draws blank space, so nothing looked broken.
  *
- * `build-seed-texts.ts` now requires the field, and exempts only the texts
- * that predate the rule. This test is what stops the exemption becoming a
- * permanent hiding place: the ceiling below can be lowered as batches land,
- * and may never be raised. When it reaches zero, delete the backlog, this
- * test, and the exemption in the build.
+ * Worse, the gap was *growing*: 231 of 358 a few commits before it was
+ * measured, because every authoring batch added sentences and no check was
+ * watching. `build-seed-texts.ts` now requires the field outright; the backlog
+ * that carried the unwritten texts is deleted, along with its exemption.
  */
-const CEILING = 23;
-
-describe("transliteration backlog", () => {
-  it("never grows", () => {
-    expect(TRANSLIT_BACKLOG.size).toBeLessThanOrEqual(CEILING);
-  });
-
-  it("lists only texts that really are missing a transliteration", () => {
-    // A slug that no longer needs the exemption is a slug quietly excusing a
-    // future regression, so an over-broad backlog fails just like a growing
-    // one. Reads the built corpus, which is what the app actually serves.
+describe("beginner pronunciation", () => {
+  it("is present on every sentence and every title", () => {
     const dir = join(process.cwd(), "content", "prs", "texts", "seed");
-    const stillMissing = new Set<string>();
+    const missing: string[] = [];
     for (const file of readdirSync(dir)) {
       const doc = JSON.parse(readFileSync(join(dir, file), "utf8"));
-      const slug = file.replace(/^tx-seed-/, "").replace(/\.json$/, "");
-      if (!doc.titleTranslit || doc.sentences.some((s: { translit?: string }) => !s.translit)) {
-        stillMissing.add(slug);
-      }
+      if (!doc.titleTranslit) missing.push(`${file}: title`);
+      doc.sentences.forEach((s: { target: string; translit?: string }, i: number) => {
+        if (!s.translit) missing.push(`${file}: sentence ${i + 1}`);
+      });
     }
-    const stale = [...TRANSLIT_BACKLOG].filter((slug) => !stillMissing.has(slug));
-    expect(stale).toEqual([]);
+    expect(missing).toEqual([]);
   });
 });
 

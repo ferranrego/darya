@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "خیاط",
+  "titleTranslit": "khayyāt",
   "titleEn": "The tailor",
   "sentences": [
     {
       "target": "دکان خیاطی نزدیک خانه ما است.",
+      "translit": "dukān-e khayyātī nazdēk-e khāna-ye mā ast.",
       "en": "The tailor shop is near our house.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "خیاط لباس نو می‌دوزد.",
+      "translit": "khayyāt libās-e naw mēdōzad.",
       "en": "The tailor sews new clothes.",
       "tokens": [
         {
@@ -59,6 +62,7 @@
     },
     {
       "target": "من یک جامه سفید می‌خواهم.",
+      "translit": "man yak jāma-ye safēd mēkhāham.",
       "en": "I want a white garment.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "لباس من مقبول است.",
+      "translit": "libās-e man maqbūl ast.",
       "en": "My clothes are beautiful.",
       "tokens": [
         {

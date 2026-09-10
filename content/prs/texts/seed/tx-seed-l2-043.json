@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "طفل نو",
+  "titleTranslit": "tifl-e naw",
   "titleEn": "The new baby",
   "sentences": [
     {
       "target": "خواهر من یک طفل نو دارد.",
+      "translit": "khwāhar-e man yak tifl-e naw dārad.",
       "en": "My sister has a new baby.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "طفل بسیار خرد و مقبول است.",
+      "translit": "tifl bisyār khurd wa maqbūl ast.",
       "en": "The baby is very small and beautiful.",
       "tokens": [
         {
@@ -67,6 +70,7 @@
     },
     {
       "target": "مادر من برای طفل کالا می‌دوزد.",
+      "translit": "mādar-e man barā-ye tifl kālā mēdōzad.",
       "en": "My mother sews clothes for the baby.",
       "tokens": [
         {
@@ -97,6 +101,7 @@
     },
     {
       "target": "همه فامیل خوشحال هستند.",
+      "translit": "hama-ye fāmīl khushhāl hastand.",
       "en": "The whole family is happy.",
       "tokens": [
         {

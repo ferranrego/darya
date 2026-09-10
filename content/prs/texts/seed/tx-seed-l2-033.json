@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "چکر مکتب",
+  "titleTranslit": "chakar-e maktab",
   "titleEn": "The school trip",
   "sentences": [
     {
       "target": "شاگردان مکتب به چکر می‌روند.",
+      "translit": "shāgirdān-e maktab ba chakar mērawand.",
       "en": "The school students go on a trip.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "معلم ما در بس نشسته است.",
+      "translit": "mu'allem-e mā dar bas nishasta ast.",
       "en": "Our teacher is sitting in the bus.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "ما به بند قرغه می‌رویم.",
+      "translit": "mā ba band-e qargha mērawēm.",
       "en": "We go to Qargha Dam.",
       "tokens": [
         {
@@ -89,6 +93,7 @@
     },
     {
       "target": "در آنجا آب و هوا خوب است.",
+      "translit": "dar ānjā āb wa hawā khōb ast.",
       "en": "There the weather is good.",
       "tokens": [
         {

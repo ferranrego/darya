@@ -17,7 +17,6 @@ import { PROFILES } from "../src/lib/lang/index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { readSpec } from "./verify-beginner-core.ts";
 import type { SeedTextSource } from "./data/seed-text-source.ts";
-import { TRANSLIT_BACKLOG } from "./data/translit-backlog.ts";
 
 const lang = targetLang();
 const langProfile = PROFILES[lang as keyof typeof PROFILES];
@@ -127,8 +126,10 @@ for (const levelTexts of byLevel.values()) {
     // renders nothing, so 273 of 400 beginner sentences shipped with no
     // pronunciation at all and no error anywhere - and with no audio in the
     // app, that line is the only pronunciation a learner ever gets. The gap
-    // was growing, not shrinking, the whole time it went unchecked.
-    if (langProfile.capabilities.transliteration && !TRANSLIT_BACKLOG.has(source.slug)) {
+    // was growing, not shrinking, the whole time it went unchecked. All 400
+    // are now written, so the backlog that carried the unwritten ones is gone
+    // and this applies to every text without exception.
+    if (langProfile.capabilities.transliteration) {
       if (!source.titleTranslit) failures.push(`${source.slug}: missing titleTranslit`);
       for (const s of source.sentences) {
         if (!s.translit) failures.push(`${source.slug}: missing translit for "${s.target}"`);

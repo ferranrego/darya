@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "خریدن نان",
+  "titleTranslit": "kharēdan-e nān",
   "titleEn": "Buying bread",
   "sentences": [
     {
       "target": "نانوای در تنور نان می‌پزد.",
+      "translit": "nānwāyi dar tanūr nān mēpazad.",
       "en": "The baker bakes bread in the tandoor.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "من دو نان گرم می‌خرم.",
+      "translit": "man dū nān-e garm mēkharam.",
       "en": "I buy two hot breads.",
       "tokens": [
         {
@@ -59,6 +62,7 @@
     },
     {
       "target": "نان با پنیر مزه دار است.",
+      "translit": "nān bā panēr mazadār ast.",
       "en": "Bread with cheese is tasty.",
       "tokens": [
         {
@@ -89,6 +93,7 @@
     },
     {
       "target": "ما ناشتا می‌خوریم.",
+      "translit": "mā nāshtā mēkhurēm.",
       "en": "We eat breakfast.",
       "tokens": [
         {

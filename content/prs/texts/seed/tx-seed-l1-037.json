@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "مهمان‌ها",
+  "titleTranslit": "mihmān-hā",
   "titleEn": "The guests",
   "sentences": [
     {
       "target": "امشب مهمان به خانه ما می‌آید.",
+      "translit": "imshab mihmān ba khāna-ye mā mēāyad.",
       "en": "Tonight guests come to our house.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "مادر قابلی پلو پخته است.",
+      "translit": "mādar qābilī palaw pukhta ast.",
       "en": "Mother has cooked Qabili Palaw.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "کاکایم از مزار آمده است.",
+      "translit": "kākā-yam az mazār āmada ast.",
       "en": "My uncle has come from Mazar.",
       "tokens": [
         {
@@ -89,6 +93,7 @@
     },
     {
       "target": "همه ما بسیار خوش هستیم.",
+      "translit": "hama-ye mā bisyār khush hastēm.",
       "en": "We are all very happy.",
       "tokens": [
         {
