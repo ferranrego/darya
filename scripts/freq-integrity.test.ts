@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 import { insertionOrderSuffix, parseFreqTsv, tsvRankDrift } from "./freq-integrity.ts";
 import { lexiconFileSchema } from "../src/lib/content/schema.ts";
 import type { LexiconEntry } from "../src/lib/content/schema.ts";
+import { REGISTERED_LANGS } from "../src/lib/lang/index.ts";
 
 function entry(id: string, freqRank: number, freqBand = 5): LexiconEntry {
   return {
@@ -132,12 +133,18 @@ describe("parseFreqTsv", () => {
  * happened the first time - pushes the count up and fails the test loudly,
  * instead of silently shipping a second stale artifact next to the first.
  */
+/**
+ * The two languages have genuinely different expectations - prs must match its
+ * TSV exactly, ca carries a measured, capped drift - so these stay separate
+ * assertions and simply stand down when their language is not in this build,
+ * rather than being folded into one loop that asserts the weaker of the two.
+ */
 describe("shipped freq TSV vs lexicon", () => {
   // A corpus refresh reorders ties by a handful of ranks; only a gap this
   // large is evidence the TSV and lexicon describe different rankings.
   const TOLERANCE = 50;
 
-  function driftFor(lang: "ca" | "prs") {
+  function driftFor(lang: string) {
     const root = join(import.meta.dirname, "..", "content", lang);
     const entries = lexiconFileSchema.parse(
       JSON.parse(readFileSync(join(root, "lexicon", "lexicon.json"), "utf8")),
@@ -146,11 +153,11 @@ describe("shipped freq TSV vs lexicon", () => {
     return tsvRankDrift(entries, tsv, TOLERANCE);
   }
 
-  it("prs: freq-prs.tsv matches the shipped lexicon exactly", () => {
+  it.skipIf(!(REGISTERED_LANGS as string[]).includes("prs"))("prs: freq-prs.tsv matches the shipped lexicon exactly", () => {
     expect(driftFor("prs")).toEqual([]);
   });
 
-  it("ca: freq-ca.tsv's known drift from the shipped lexicon does not grow", () => {
+  it.skipIf(!(REGISTERED_LANGS as string[]).includes("ca"))("ca: freq-ca.tsv's known drift from the shipped lexicon does not grow", () => {
     // Baseline is the measured count as of this test's introduction (38).
     // Small headroom, not a licence to add much more before this fails.
     const KNOWN_DRIFT_CEILING = 40;

@@ -19,6 +19,17 @@ export const PROFILES = { prs, ca } satisfies Record<string, LanguageProfile>;
 
 export type TargetLang = keyof typeof PROFILES;
 
+/**
+ * The languages this build carries, for the checks that have to run once per
+ * language over `content/<code>/`.
+ *
+ * Those used to write `const LANGS = ["ca", "prs"]` by hand, in six files. A
+ * literal list cannot be right in a deployment carrying one language: the tests
+ * went looking for a `content/` directory that is not there, and four whole
+ * test files failed to load rather than reporting anything useful.
+ */
+export const REGISTERED_LANGS = Object.keys(PROFILES) as TargetLang[];
+
 const DEFAULT_LANG: TargetLang = "prs";
 
 function resolveProfile(): LanguageProfile {

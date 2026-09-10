@@ -13,6 +13,7 @@ import { scenesFor } from "./scene.ts";
 import { coldStartKnown } from "./word-selection.ts";
 import { isTeachable } from "./teachability.ts";
 import { lexicon, levels } from "./load.ts";
+import { REGISTERED_LANGS } from "../lang/index.ts";
 
 /** A generated text using the given lexeme ids. */
 function generated(id: string, vocabUsed: string[]): PoolText {
@@ -211,7 +212,7 @@ describe("the placement credit, against the shipped levels", () => {
     const { join } = await import("node:path");
     const root = join(import.meta.dirname, "..", "..", "..", "content");
 
-    for (const lang of ["ca", "prs"]) {
+    for (const lang of REGISTERED_LANGS) {
       const levelsForLang = JSON.parse(
         readFileSync(join(root, lang, "levels", "levels.json"), "utf8"),
       ).levels as { id: string; entryKnownWords: number }[];
@@ -273,7 +274,7 @@ describe("the placement credit, against the shipped levels", () => {
  * about any more.
  */
 describe("the cold start agrees between the writer and the reader", () => {
-  it.each(["ca", "prs"])("%s: a text built from the starting vocabulary is offered", async (lang) => {
+  it.each(REGISTERED_LANGS)("%s: a text built from the starting vocabulary is offered", async (lang) => {
     const { readFileSync } = await import("node:fs");
     const { join } = await import("node:path");
     const { coldStartKnown: coldStartKnownFor } = await import("./word-selection.ts");

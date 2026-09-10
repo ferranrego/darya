@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 
 import { GRAMMAR_LEVEL_ORDER, buildJourneyNodes, cefrOf } from "./cefr.ts";
 import { grammarCoursesFileSchema, levelsFileSchema, type Level } from "./schema.ts";
+import { REGISTERED_LANGS } from "../lang/index.ts";
 
 /**
  * The reading level a learner is placed at decides which grammar course they
@@ -13,7 +14,7 @@ import { grammarCoursesFileSchema, levelsFileSchema, type Level } from "./schema
  * learner assessed at B2 was started on C1 and never saw the B2 course.
  */
 
-const LANGS = ["ca", "prs"] as const;
+const LANGS = REGISTERED_LANGS;
 
 function load(lang: string) {
   const root = join(import.meta.dirname, "..", "..", "..", "content", lang);

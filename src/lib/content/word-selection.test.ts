@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 
 import { levelsFileSchema, lexiconFileSchema, type LexiconEntry } from "./schema.ts";
 import { isTeachable } from "./teachability.ts";
+import { REGISTERED_LANGS } from "../lang/index.ts";
 import {
   BEGINNER_CORE_TAG,
   coldStartKnown,
@@ -23,7 +24,7 @@ import {
  * up teaching nine nouns in a row.
  */
 
-const LANGS = ["ca", "prs"] as const;
+const LANGS = REGISTERED_LANGS;
 
 function load(lang: string) {
   const root = join(import.meta.dirname, "..", "..", "..", "content", lang);

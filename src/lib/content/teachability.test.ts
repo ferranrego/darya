@@ -5,8 +5,9 @@ import { describe, expect, it } from "vitest";
 import { levelsFileSchema, lexiconFileSchema, type LexiconEntry } from "./schema.ts";
 import { isTeachable, teachabilityDefects } from "./teachability.ts";
 import { selectTargets, targetCountFor } from "./word-selection.ts";
+import { REGISTERED_LANGS } from "../lang/index.ts";
 
-const LANGS = ["ca", "prs"] as const;
+const LANGS = REGISTERED_LANGS;
 
 function load(lang: string) {
   const root = join(import.meta.dirname, "..", "..", "..", "content", lang);

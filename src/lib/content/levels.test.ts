@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 import { levelsFileSchema, lexiconFileSchema } from "./schema.ts";
+import { REGISTERED_LANGS } from "../lang/index.ts";
 
 /**
  * The level table makes two promises to the learner, and both have been broken
@@ -20,7 +21,7 @@ import { levelsFileSchema, lexiconFileSchema } from "./schema.ts";
  * target words, and the reader sits on "Writing your next text…" forever.
  */
 
-const LANGS = ["ca", "prs"] as const;
+const LANGS = REGISTERED_LANGS;
 
 function load(lang: string) {
   const root = join(import.meta.dirname, "..", "..", "..", "content", lang);
