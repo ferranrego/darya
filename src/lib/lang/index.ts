@@ -1,4 +1,3 @@
-import { ca } from "./ca/index.ts";
 import { prs } from "./prs/index.ts";
 import type { LanguageProfile } from "./types.ts";
 
@@ -11,11 +10,14 @@ export type {
 } from "./types.ts";
 
 /**
- * Every target language this codebase can build. Adding one is: implement the
- * profile, add it here, add `content/<code>/`, and point a second deployment at
- * it with NEXT_PUBLIC_TARGET_LANG.
+ * The language this repo teaches.
+ *
+ * This registry is deliberately kept - rather than inlining Dari everywhere -
+ * because the sibling repo (Riera, Catalan) has the identical file layout,
+ * which is what lets a shared change move between them with `git cherry-pick`
+ * instead of being rewritten. See CLAUDE.md, "Porting from Riera".
  */
-export const PROFILES = { prs, ca } satisfies Record<string, LanguageProfile>;
+export const PROFILES = { prs } satisfies Record<string, LanguageProfile>;
 
 export type TargetLang = keyof typeof PROFILES;
 

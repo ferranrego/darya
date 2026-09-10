@@ -25,13 +25,6 @@ import { join } from "node:path";
 import { lexiconFileSchema, type LexiconEntry } from "../src/lib/content/schema.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
-// The one place this shared tool still names a language: `verifyEntry` is
-// Catalan corpus attestation (the `registre` incident) and lives in a
-// Catalan-only script, called below under `lang === "ca"`. A Dari-only
-// deployment deletes verify-ca-entries.ts and must drop that block and this
-// import with it - there is no Dari equivalent to call, so hiding it behind a
-// profile hook would only move the emptiness somewhere less obvious.
-import { verifyEntry } from "./verify-ca-entries.ts";
 
 type NewEntry = Omit<LexiconEntry, "id" | "targetNormalized" | "freqRank" | "freqBand">;
 
@@ -69,22 +62,6 @@ for (const a of authored) {
     continue;
   }
 
-  if (lang === "ca") {
-    const found = verifyEntry(
-      {
-        word: a.target,
-        pos: a.pos,
-        gloss: a.glossEn,
-        example: a.exampleTarget,
-        exampleEn: a.exampleEn,
-      },
-      keys,
-    );
-    if (found.length) {
-      problems.push(`${a.target}: ${found.join("; ")}`);
-      continue;
-    }
-  }
 
   const entry: LexiconEntry = {
     ...a,
