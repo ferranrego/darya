@@ -17,6 +17,7 @@ import { PROFILES } from "../src/lib/lang/index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { readSpec } from "./verify-beginner-core.ts";
 import type { SeedTextSource } from "./data/seed-text-source.ts";
+import { TRANSLIT_BACKLOG } from "./data/translit-backlog.ts";
 
 const lang = targetLang();
 const langProfile = PROFILES[lang as keyof typeof PROFILES];
@@ -80,6 +81,32 @@ const docs: TextDocument[] = [];
 // start of each level (seeded only with the closed classes above): a level's
 // own texts are what teach its vocabulary, so a text's newWords should not
 // depend on texts belonging to a different level.
+// Two texts may not share a slug, and may not share a position in a level.
+//
+// The build writes one file per text, named from the slug, with no check that
+// the name was free - so a duplicate slug silently overwrote the earlier text
+// and the run still reported success. Measured when this guard was added:
+// `l2-031` through `l2-034` were each authored twice, so four finished,
+// reviewed texts (15 sentences) had never once reached a learner, and the
+// shadowed text's `newWords` had already polluted the level's running
+// `introduced` set on the way past. Nothing crashed and the output looked
+// correct - the failure mode this whole file is built to make loud.
+//
+// This belongs here rather than in validate-content.ts: by the time the JSON
+// exists on disk, the collision has already erased a file, so there is
+// nothing left for a validator to find.
+const seenSlugs = new Set<string>();
+const seenPositions = new Set<string>();
+for (const source of seedTexts) {
+  if (seenSlugs.has(source.slug)) failures.push(`duplicate slug "${source.slug}"`);
+  seenSlugs.add(source.slug);
+  const position = `${source.level}#${source.seq}`;
+  if (seenPositions.has(position)) {
+    failures.push(`${source.slug}: duplicate curriculum position ${position}`);
+  }
+  seenPositions.add(position);
+}
+
 const byLevel = new Map<string, SeedTextSource[]>();
 for (const source of seedTexts) {
   const list = byLevel.get(source.level) ?? [];
@@ -92,6 +119,22 @@ for (const levelTexts of byLevel.values()) {
   const introduced = new Set(closedClassIds);
 
   for (const source of ordered) {
+    // A language that declares `transliteration` must actually carry it.
+    //
+    // The schema leaves the field optional because a Latin-script language has
+    // nothing to transliterate, and for a long time nothing re-imposed it for
+    // a language that does. The reader guards on the field and silently
+    // renders nothing, so 273 of 400 beginner sentences shipped with no
+    // pronunciation at all and no error anywhere - and with no audio in the
+    // app, that line is the only pronunciation a learner ever gets. The gap
+    // was growing, not shrinking, the whole time it went unchecked.
+    if (langProfile.capabilities.transliteration && !TRANSLIT_BACKLOG.has(source.slug)) {
+      if (!source.titleTranslit) failures.push(`${source.slug}: missing titleTranslit`);
+      for (const s of source.sentences) {
+        if (!s.translit) failures.push(`${source.slug}: missing translit for "${s.target}"`);
+      }
+    }
+
     const vocab = new Set<string>();
     const sentences = source.sentences.map((s) => {
       const tokens = tokenize(s.target).map((surface) => {
@@ -148,4 +191,6 @@ if (failures.length > 0) {
 for (const doc of docs) {
   writeFileSync(join(outDir, `${doc.id}.json`), JSON.stringify(doc, null, 2) + "\n");
 }
-console.log(`wrote ${seedTexts.length} seed texts to content/texts/seed/`);
+// Report what was actually written, not what was read: the two differed
+// silently for as long as duplicate slugs went unchecked.
+console.log(`wrote ${docs.length} seed texts to content/texts/seed/`);

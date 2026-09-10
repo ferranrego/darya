@@ -936,60 +936,9 @@ export const seedTexts: SeedTextSource[] = [
     ],
   },
   {
-    slug: "l2-031",
-    level: "L2",
-    seq: 31,
-    titleTarget: "میدان",
-    titleEn: "Square",
-    sentences: [
-      { target: "دستگاه گزارش خراب است.", en: "The reporting device is broken." },
-      { target: "میدان گرم است.", en: "The field is warm." },
-      { target: "هوا چند درجه است؟", en: "How many degrees is the weather?" },
-    ],
-  },
-  {
-    slug: "l2-032",
-    level: "L2",
-    seq: 32,
-    titleTarget: "عروسی",
-    titleEn: "Wedding",
-    sentences: [
-      { target: "در عروسی، شعر می‌خوانند.", en: "In the wedding, they read poetry." },
-      { target: "مردم در سینما هستند.", en: "The people are in the cinema." },
-      { target: "او از کار داخلی می‌رنجد.", en: "He is offended by domestic work." },
-      { target: "سینما کار داخلی دارد.", en: "The cinema has domestic work." },
-    ],
-  },
-  {
-    slug: "l2-033",
-    level: "L2",
-    seq: 33,
-    titleTarget: "ماموریت",
-    titleEn: "Precinct",
-    sentences: [
-      { target: "او برای آزادی به ماموریت می‌رود.", en: "He goes to the precinct for freedom." },
-      { target: "مرد خارجی مستقیم راه می‌رود.", en: "The foreign man walks straight." },
-      { target: "رخسار او سرخ است.", en: "His cheek is red." },
-      { target: "ماموریت آزادی مستقیم است.", en: "The precinct of freedom is straight." },
-    ],
-  },
-  {
-    slug: "l2-034",
-    level: "L2",
-    seq: 34,
-    titleTarget: "هدف شدید",
-    titleEn: "Severe goal",
-    sentences: [
-      { target: "شکست همسایه شدید بود.", en: "The neighbor's defeat was severe." },
-      { target: "او هدف را می‌درد.", en: "He tears the goal." },
-      { target: "هدف او شکست همسایه است.", en: "His goal is the neighbor's defeat." },
-      { target: "شکست او شدید است.", en: "His defeat is severe." },
-    ],
-  },
-  {
     slug: "l1-029",
     level: "L1",
-    seq: parseInt("l1-029".split('-')[1], 10),
+    seq: 29,
     titleTarget: "خیاط",
     titleEn: "The tailor",
     sentences: [
@@ -1002,7 +951,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-030",
     level: "L1",
-    seq: parseInt("l1-030".split('-')[1], 10),
+    seq: 30,
     titleTarget: "چای سبز",
     titleEn: "Green tea",
     sentences: [
@@ -1015,7 +964,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-031",
     level: "L1",
-    seq: parseInt("l1-031".split('-')[1], 10),
+    seq: 31,
     titleTarget: "خریدن نان",
     titleEn: "Buying bread",
     sentences: [
@@ -1028,7 +977,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-032",
     level: "L1",
-    seq: parseInt("l1-032".split('-')[1], 10),
+    seq: 32,
     titleTarget: "قالین نو",
     titleEn: "The new carpet",
     sentences: [
@@ -1041,7 +990,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-033",
     level: "L1",
-    seq: parseInt("l1-033".split('-')[1], 10),
+    seq: 33,
     titleTarget: "باران کابل",
     titleEn: "Rain in Kabul",
     sentences: [
@@ -1054,7 +1003,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-034",
     level: "L1",
-    seq: parseInt("l1-034".split('-')[1], 10),
+    seq: 34,
     titleTarget: "باغ ما",
     titleEn: "Our garden",
     sentences: [
@@ -1067,7 +1016,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-035",
     level: "L1",
-    seq: parseInt("l1-035".split('-')[1], 10),
+    seq: 35,
     titleTarget: "کالای زمستانی",
     titleEn: "Winter clothes",
     sentences: [
@@ -1080,7 +1029,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-036",
     level: "L1",
-    seq: parseInt("l1-036".split('-')[1], 10),
+    seq: 36,
     titleTarget: "بازار",
     titleEn: "The bazaar",
     sentences: [
@@ -1093,7 +1042,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l1-037",
     level: "L1",
-    seq: parseInt("l1-037".split('-')[1], 10),
+    seq: 37,
     titleTarget: "مهمان‌ها",
     titleEn: "The guests",
     sentences: [
@@ -1106,7 +1055,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-031",
     level: "L2",
-    seq: parseInt("l2-031".split('-')[1], 10),
+    seq: 31,
     titleTarget: "شفاخانه",
     titleEn: "The hospital",
     sentences: [
@@ -1119,7 +1068,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-032",
     level: "L2",
-    seq: parseInt("l2-032".split('-')[1], 10),
+    seq: 32,
     titleTarget: "قریه ما",
     titleEn: "Our village",
     sentences: [
@@ -1132,7 +1081,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-033",
     level: "L2",
-    seq: parseInt("l2-033".split('-')[1], 10),
+    seq: 33,
     titleTarget: "چکر مکتب",
     titleEn: "The school trip",
     sentences: [
@@ -1145,7 +1094,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-034",
     level: "L2",
-    seq: parseInt("l2-034".split('-')[1], 10),
+    seq: 34,
     titleTarget: "یاد گرفتن زبان",
     titleEn: "Learning a language",
     sentences: [
@@ -1158,7 +1107,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-035",
     level: "L2",
-    seq: parseInt("l2-035".split('-')[1], 10),
+    seq: 35,
     titleTarget: "دکان خیاط",
     titleEn: "The tailor's shop",
     sentences: [
@@ -1171,7 +1120,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-036",
     level: "L2",
-    seq: parseInt("l2-036".split('-')[1], 10),
+    seq: 36,
     titleTarget: "مندوی",
     titleEn: "The market",
     sentences: [
@@ -1184,7 +1133,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-037",
     level: "L2",
-    seq: parseInt("l2-037".split('-')[1], 10),
+    seq: 37,
     titleTarget: "عروسی",
     titleEn: "The wedding",
     sentences: [
@@ -1197,7 +1146,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-038",
     level: "L2",
-    seq: parseInt("l2-038".split('-')[1], 10),
+    seq: 38,
     titleTarget: "رانندگی در کابل",
     titleEn: "Driving in Kabul",
     sentences: [
@@ -1210,7 +1159,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-039",
     level: "L2",
-    seq: parseInt("l2-039".split('-')[1], 10),
+    seq: 39,
     titleTarget: "چای و کلچه",
     titleEn: "Tea and cookies",
     sentences: [
@@ -1223,7 +1172,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-040",
     level: "L2",
-    seq: parseInt("l2-040".split('-')[1], 10),
+    seq: 40,
     titleTarget: "سگ همسایه",
     titleEn: "The neighbor dog",
     sentences: [
@@ -1236,7 +1185,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-041",
     level: "L2",
-    seq: parseInt("l2-041".split('-')[1], 10),
+    seq: 41,
     titleTarget: "ترمیم خانه",
     titleEn: "Repairing the house",
     sentences: [
@@ -1249,7 +1198,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-042",
     level: "L2",
-    seq: parseInt("l2-042".split('-')[1], 10),
+    seq: 42,
     titleTarget: "امتحان",
     titleEn: "Taking an exam",
     sentences: [
@@ -1262,7 +1211,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-043",
     level: "L2",
-    seq: parseInt("l2-043".split('-')[1], 10),
+    seq: 43,
     titleTarget: "طفل نو",
     titleEn: "The new baby",
     sentences: [
@@ -1275,7 +1224,7 @@ export const seedTexts: SeedTextSource[] = [
   {
     slug: "l2-044",
     level: "L2",
-    seq: parseInt("l2-044".split('-')[1], 10),
+    seq: 44,
     titleTarget: "رفتن به مسجد",
     titleEn: "Going to the mosque",
     sentences: [
@@ -1284,5 +1233,5 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مسجد قریه ما تازه رنگ شده است.", en: "The mosque of our village has been freshly painted." },
       { target: "صدای اذان بسیار بلند است.", en: "The sound of the call to prayer is very loud." },
     ],
-  }
+  },
 ];
