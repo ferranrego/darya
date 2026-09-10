@@ -1,4 +1,4 @@
-/* Darya service worker: offline shell + cached reading.
+/* Service worker: offline shell + cached reading.
  * - static assets (fonts, JS, icons): cache-first
  * - navigations & API reads: network-first with cache fallback
  * Push handling arrives in Phase 3 (Declarative Web Push payloads). */
@@ -76,12 +76,33 @@ async function networkFirst(request, cacheName) {
   }
 }
 
+/**
+ * The product name, read from the web manifest.
+ *
+ * This file is static and cannot import the language profile, so the app name
+ * used to be the literal "Darya" - shipped unchanged to the Catalan build,
+ * where the product is called Riera. It is only ever a fallback (every push
+ * this app sends sets its own title), which is exactly why it went unnoticed.
+ * Reading the manifest keeps one copy of this file correct for every brand.
+ */
+let cachedAppName = null;
+async function appName() {
+  if (cachedAppName) return cachedAppName;
+  try {
+    const res = await fetch("/manifest.webmanifest");
+    const m = await res.json();
+    cachedAppName = m.short_name || m.name || "Your course";
+  } catch {
+    cachedAppName = "Your course";
+  }
+  return cachedAppName;
+}
+
 self.addEventListener("push", (event) => {
   if (!event.data) return;
-  
+
   try {
     const data = event.data.json();
-    const title = data.title || "Darya";
     const options = {
       body: data.body || "It's time for your daily review!",
       icon: "/icons/icon-192.png",
@@ -90,7 +111,12 @@ self.addEventListener("push", (event) => {
       vibrate: [100, 50, 100],
     };
 
-    event.waitUntil(self.registration.showNotification(title, options));
+    event.waitUntil(
+      (async () => {
+        const title = data.title || (await appName());
+        return self.registration.showNotification(title, options);
+      })(),
+    );
   } catch (e) {
     console.error("Error parsing push payload", e);
   }
