@@ -69,16 +69,34 @@ if (flag("--emit") !== null) {
   console.log(`wrote ${batch.length} entries to ${out}`);
 } else if (flag("--apply") !== null) {
   const file = flag("--apply")!;
-  const repairs: Array<{ id: string; fixed: string }> = JSON.parse(readFileSync(file, "utf8"));
+  const repairs: Array<{ id: string; fixed?: string; fixedTranslit?: string }> = JSON.parse(
+    readFileSync(file, "utf8"),
+  );
   const byId = new Map(raw.entries.map((e: { id: string }) => [e.id, e]));
   const problems: string[] = [];
   let applied = 0;
   for (const r of repairs) {
-    if (!r.fixed) continue;
-    const entry = byId.get(r.id) as { exampleTranslit?: string; exampleTarget: string } | undefined;
+    if (!r.fixed && !r.fixedTranslit) continue;
+    const entry = byId.get(r.id) as
+      | { translit?: string; target: string; exampleTranslit?: string; exampleTarget: string }
+      | undefined;
     if (!entry) { problems.push(`${r.id}: not in lexicon`); continue; }
-    if (isFlattened(r.fixed, entry.exampleTarget, r.id)) { problems.push(`${r.id}: repair is still flattened (${r.fixed})`); continue; }
-    entry.exampleTranslit = r.fixed;
+    // `fixed` repairs the example sentence, `fixedTranslit` the headword's own
+    // transliteration - a handful of multi-word entries were flattened too.
+    if (r.fixed) {
+      if (isFlattened(r.fixed, entry.exampleTarget, r.id)) {
+        problems.push(`${r.id}: repair is still flattened (${r.fixed})`);
+        continue;
+      }
+      entry.exampleTranslit = r.fixed;
+    }
+    if (r.fixedTranslit) {
+      if (isFlattened(r.fixedTranslit, entry.target, r.id)) {
+        problems.push(`${r.id}: translit repair is still flattened (${r.fixedTranslit})`);
+        continue;
+      }
+      entry.translit = r.fixedTranslit;
+    }
     applied++;
   }
   if (problems.length) { console.error(problems.join("\n")); process.exit(1); }

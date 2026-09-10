@@ -36,9 +36,10 @@
  * because dropping it costs 21 real detections, but ی also spells the
  * diphthong in `bayn` and `tarafayn`, where no long vowel is missing and none
  * should appear. Those sentences cannot be told apart from the script alone,
- * so they are named. Add an id only after reading the sentence and confirming
- * the transliteration is right; it is an assertion about one sentence, not a
- * way to quiet the rule.
+ * so they are named. Add an id only after reading the entry and confirming the
+ * transliteration is right; it is an assertion about that entry, not a way to
+ * quiet the rule. Note it exempts the whole entry, headword and example alike,
+ * so check both before adding one.
  */
 
 /** Correct Dari that happens to contain no long vowel at all. Verified by hand. */
@@ -46,6 +47,9 @@ export const VERIFIED_SHORT_VOWEL: ReadonlySet<string> = new Set([
   // عقد بیع بین طرفین منعقد شد - aqd-i bay' bayn-i tarafayn mun'aqid shud.
   // Three ی, every one of them a diphthong or a consonant.
   "lx-4197",
+  // ابرنواختر نوع اول - abar-naw-akhtar-i naw'-i awwal. Same story with و:
+  // `naw`, `naw'` and the doubled w of `awwal`, no long vowel anywhere.
+  "lx-5054",
 ]);
 
 /** Below this a string is too short for the absence of a long vowel to mean anything. */

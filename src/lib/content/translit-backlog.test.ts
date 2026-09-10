@@ -2,7 +2,6 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
-import { FLATTENED_TRANSLIT_BACKLOG } from "../../../scripts/data/flattened-translit-backlog.ts";
 import { TRANSLIT_BACKLOG } from "../../../scripts/data/translit-backlog.ts";
 import { isFlattenedTranslit } from "../lang/prs/translit-check.ts";
 import { lexiconFileSchema } from "./schema.ts";
@@ -50,42 +49,6 @@ describe("transliteration backlog", () => {
 });
 
 /**
- * The same treatment for the second, larger transliteration debt.
- *
- * 1,210 lexicon entries carry an example sentence written in Iranian Persian
- * with every long vowel flattened out, and all but six sit in one contiguous
- * block of ids - a single bulk generation pass, roughly 40% defective. They
- * are rare B2/C1 words, so the damage lands on advanced learners and stayed
- * invisible. Same rule as above: the ceiling comes down as batches are
- * repaired, and never goes up.
- */
-const FLATTENED_CEILING = 105;
-
-describe("flattened transliteration backlog", () => {
-  it("never grows", () => {
-    expect(FLATTENED_TRANSLIT_BACKLOG.size).toBeLessThanOrEqual(FLATTENED_CEILING);
-  });
-
-  it("lists only entries that really are flattened", () => {
-    const file = join(process.cwd(), "content", "prs", "lexicon", "lexicon.json");
-    const lexicon = lexiconFileSchema.parse(JSON.parse(readFileSync(file, "utf8")));
-    // Mirrors checkDariTranslit's rule in validate-content.ts. A sentence of
-    // real Kabuli Dari this long effectively cannot avoid every long vowel.
-    const stillBad = new Set(
-      lexicon.entries
-        .filter(
-          (e) =>
-            isFlattenedTranslit(e.exampleTranslit, e.exampleTarget, e.id) ||
-            isFlattenedTranslit(e.translit, e.target, e.id),
-        )
-        .map((e) => e.id),
-    );
-    const repaired = [...FLATTENED_TRANSLIT_BACKLOG].filter((id) => !stillBad.has(id));
-    expect(repaired).toEqual([]);
-  });
-});
-
-/**
  * The runtime half of the same rule.
  *
  * `load.ts` hides an example sentence's transliteration when it was written
@@ -103,15 +66,19 @@ describe("flattened transliterations never reach a learner", () => {
     expect(leaked).toEqual([]);
   });
 
-  it("hides exactly the entries the validator backlogs, and no more", () => {
-    // Drift between the two would mean either the app hides a sentence the
-    // gate thinks is fine, or shows one the gate has flagged.
+  it("leaves nothing for the rule to hide, now that all 1,214 are repaired", () => {
+    // The backlog file and its exemption are gone; this is what replaces them.
+    // If a future entry is written the Iranian way, this fails rather than the
+    // app quietly blanking the line for learners.
     const file = join(process.cwd(), "content", "prs", "lexicon", "lexicon.json");
     const raw = lexiconFileSchema.parse(JSON.parse(readFileSync(file, "utf8")));
-    const flaggedByRule = raw.entries.filter((e) =>
-      isFlattenedTranslit(e.exampleTranslit, e.exampleTarget, e.id),
-    ).length;
-    expect(flaggedByRule).toBeGreaterThan(0);
-    expect(flaggedByRule).toBeLessThanOrEqual(FLATTENED_TRANSLIT_BACKLOG.size);
+    const flagged = raw.entries
+      .filter(
+        (e) =>
+          isFlattenedTranslit(e.exampleTranslit, e.exampleTarget, e.id) ||
+          isFlattenedTranslit(e.translit, e.target, e.id),
+      )
+      .map((e) => e.id);
+    expect(flagged).toEqual([]);
   });
 });

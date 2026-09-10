@@ -25,7 +25,6 @@ import { isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { insertionOrderSuffix } from "./freq-integrity.ts";
-import { FLATTENED_TRANSLIT_BACKLOG } from "./data/flattened-translit-backlog.ts";
 
 const lang = targetLang();
 const root = contentRoot();
@@ -87,11 +86,7 @@ function checkDariTranslit(
   if (/\bdust/i.test(text)) {
     fail(`${subject}: ${field} must use majhul vowel ō (dōst, not dust) (${text})`);
   }
-  if (
-    script &&
-    isFlattenedTranslit(text, script, id) &&
-    !(id && FLATTENED_TRANSLIT_BACKLOG.has(id))
-  ) {
+  if (script && isFlattenedTranslit(text, script, id)) {
     fail(
       `${subject}: ${field} has no long or majhul vowel anywhere - ` +
         `Iranian-flattened transliteration (${text})`,
