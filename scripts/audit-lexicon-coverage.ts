@@ -38,16 +38,20 @@
  */
 
 import { writeFileSync } from "node:fs";
+import { PROFILES } from "../src/lib/lang/index.ts";
 import { join } from "node:path";
 import { readFileSync } from "node:fs";
 
 import type { LexiconEntry } from "../src/lib/content/schema.ts";
-import { buildLexiconIndex as buildCa } from "../src/lib/lang/ca/lexicon-index.ts";
-import { tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
-import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
-import { tokenizeDari, ZWNJ } from "../src/lib/lang/prs/normalize.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { SOURCES, readCorpus } from "./corpus.ts";
+
+/** The profile for `lang`, or a clear error naming what is registered. */
+function langProfile(lang: string) {
+  const p = PROFILES[lang as keyof typeof PROFILES];
+  if (!p) throw new Error(`No language profile for "${lang}" (have: ${Object.keys(PROFILES).join(", ")})`);
+  return p;
+}
 
 interface Candidate {
   surface: string;
@@ -81,8 +85,8 @@ async function main() {
   const entries: LexiconEntry[] = JSON.parse(readFileSync(lexiconPath, "utf8")).entries;
   // The production index, so "unresolved here" means "unresolved when a learner
   // taps it". A lemmatiser written for this script would drift from the reader.
-  const index = lang === "ca" ? buildCa(entries) : buildPrs(entries);
-  const tokenize = lang === "ca" ? tokenizeCatalan : tokenizeDari;
+  const { buildIndex, tokenize } = langProfile(lang).text;
+  const index = buildIndex(entries);
 
   /**
    * Is this a form of something the lexicon already has?
@@ -93,7 +97,11 @@ async function main() {
    * their own, where they are a different and more urgent bug.
    */
   function isMorphology(surface: string): boolean {
-    const parts = surface.split(new RegExp(`[${ZWNJ}'’‐-]`)).filter(Boolean);
+    // Word-internal separators from both languages at once: U+200C is Dari's
+    // ZWNJ, the apostrophes and hyphen are Catalan's. Neither language's
+    // characters occur in the other's text, so one class serves both - it used
+    // to import ZWNJ from lang/prs/normalize.ts for this single regex.
+    const parts = surface.split(/[\u200c'’‐-]/).filter(Boolean);
     if (parts.length < 2) return false;
     return parts.every((p) => index.resolve(p) !== null);
   }

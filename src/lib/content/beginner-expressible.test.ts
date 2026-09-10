@@ -2,10 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
-import { buildLexiconIndex as buildCa } from "../lang/ca/lexicon-index.ts";
-import { tokenizeCatalan } from "../lang/ca/normalize.ts";
-import { buildLexiconIndex as buildPrs } from "../lang/prs/lexicon-index.ts";
-import { tokenizeDari } from "../lang/prs/normalize.ts";
+import { PROFILES } from "../lang/index.ts";
 import { lexiconFileSchema, type LexiconEntry } from "./schema.ts";
 import { isTeachable } from "./teachability.ts";
 import { BEGINNER_CORE_TAG } from "./word-selection.ts";
@@ -199,10 +196,23 @@ const PRS_SENTENCES = [
   "تا فردا.",
 ];
 
-const LANGS = [
-  { lang: "ca", sentences: CA_SENTENCES, tokenize: tokenizeCatalan, build: buildCa },
-  { lang: "prs", sentences: PRS_SENTENCES, tokenize: tokenizeDari, build: buildPrs },
-] as const;
+/**
+ * The sentences are keyed by language code and the tokenizer and index come
+ * from that language's own profile, so this runs whichever languages are
+ * registered. It used to import `lang/ca/*` and `lang/prs/*` by path, which
+ * made it - a test in the default suite - unable to run in a deployment that
+ * carries one language.
+ */
+const SENTENCES: Record<string, string[]> = { ca: CA_SENTENCES, prs: PRS_SENTENCES };
+
+const LANGS = Object.entries(PROFILES)
+  .filter(([lang]) => SENTENCES[lang])
+  .map(([lang, profile]) => ({
+    lang,
+    sentences: SENTENCES[lang],
+    tokenize: profile.text.tokenize,
+    build: profile.text.buildIndex,
+  }));
 
 function load(lang: string): LexiconEntry[] {
   const root = join(import.meta.dirname, "..", "..", "..", "content", lang);
@@ -249,12 +259,17 @@ describe.each(LANGS)("$lang: a beginner can say these", ({ lang, sentences, toke
  * language from the test.
  */
 describe("multi-word entries resolve as phrases", () => {
-  it.each([
-    ["ca", ["si us plau", "bon dia", "bona nit", "per què"]],
-    ["prs", ["خدا حافظ"]],
-  ])("%s", (lang, phrases) => {
+  const PHRASES: Record<string, string[]> = {
+    ca: ["si us plau", "bon dia", "bona nit", "per què"],
+    prs: ["خدا حافظ"],
+  };
+  const cases = Object.keys(PROFILES)
+    .filter((lang) => PHRASES[lang])
+    .map((lang) => [lang, PHRASES[lang]] as const);
+
+  it.each(cases)("%s", (lang, phrases) => {
     const entries = load(lang);
-    const index = lang === "ca" ? buildCa(entries) : buildPrs(entries);
+    const index = PROFILES[lang as keyof typeof PROFILES].text.buildIndex(entries);
     for (const phrase of phrases) {
       const entry = index.resolve(phrase);
       expect(entry, `${phrase} does not resolve`).toBeTruthy();

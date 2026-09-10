@@ -72,3 +72,42 @@ describe("verbHeadwordProblem", () => {
     }
   });
 });
+
+/**
+ * `inflectionHint` feeds the authoring brief and nothing the app renders, so
+ * no other test would notice it breaking - and a brief silently missing every
+ * hint still renders, which is the failure mode to fear. One real case per
+ * part of speech per language is enough to catch a wiring mistake.
+ */
+const HINT_CASES: Record<string, [{ target: string; pos: string; translit?: string }, RegExp | null][]> = {
+  ca: [
+    [{ target: "bonic", pos: "adjective" }, /bonic \(m\) \/ bonica \(f\)/],
+    [{ target: "cantar", pos: "verb" }, /cantar -> canta/],
+    [{ target: "llibre", pos: "noun" }, /llibre -> llibres/],
+    // Nothing sensible to say about a pronoun; must be null, not a throw.
+    [{ target: "jo", pos: "pronoun" }, null],
+  ],
+  prs: [
+    [{ target: "داشتن", pos: "verb" }, /داشتن ->/],
+    [{ target: "کردن", pos: "verb" }, /کردن ->/],
+    // A noun with no transliteration is skipped rather than half-rendered.
+    [{ target: "کتاب", pos: "noun" }, null],
+    [{ target: "کتاب", pos: "noun", translit: "kitāb" }, /کتاب ->/],
+  ],
+};
+
+describe("inflectionHint", () => {
+  for (const [code, profile] of Object.entries(PROFILES)) {
+    const cases = HINT_CASES[code];
+    if (!cases) continue;
+    describe(code, () => {
+      for (const [entry, expected] of cases) {
+        it(`${entry.pos}: ${entry.target}`, () => {
+          const hint = profile.text.inflectionHint(entry);
+          if (expected === null) expect(hint).toBeNull();
+          else expect(hint).toMatch(expected);
+        });
+      }
+    });
+  }
+});

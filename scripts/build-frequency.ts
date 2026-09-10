@@ -33,15 +33,19 @@
  */
 
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { PROFILES } from "../src/lib/lang/index.ts";
 import { join } from "node:path";
 
 import type { LexiconEntry } from "../src/lib/content/schema.ts";
-import { buildLexiconIndex as buildCa } from "../src/lib/lang/ca/lexicon-index.ts";
-import { tokenizeCatalan } from "../src/lib/lang/ca/normalize.ts";
-import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
-import { tokenizeDari } from "../src/lib/lang/prs/normalize.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { SOURCES, download, readCorpus } from "./corpus.ts";
+
+/** The profile for `lang`, or a clear error naming what is registered. */
+function langProfile(lang: string) {
+  const p = PROFILES[lang as keyof typeof PROFILES];
+  if (!p) throw new Error(`No language profile for "${lang}" (have: ${Object.keys(PROFILES).join(", ")})`);
+  return p;
+}
 
 /**
  * How much each source of evidence counts, per language. Weights are normalized,
@@ -163,8 +167,8 @@ async function main() {
   // Resolution uses the production index, so a corpus surface lands on the same
   // lexeme the reader would land on when the learner taps it. Building a
   // lemmatiser here instead would guarantee the two drift apart.
-  const index = lang === "ca" ? buildCa(entries) : buildPrs(entries);
-  const tokenizeSurface = lang === "ca" ? tokenizeCatalan : tokenizeDari;
+  const { buildIndex, tokenize: tokenizeSurface } = langProfile(lang).text;
+  const index = buildIndex(entries);
 
   const perSourceRank: Record<string, Map<string, number>> = {};
   const unresolvedTop: Record<string, [string, number][]> = {};

@@ -143,3 +143,35 @@ export function presentOfDashtan(person: Person): { target: string; translit: st
   const ending = PRESENT_ENDING[person];
   return { target: `دار${ending.target}`, translit: `dār${ending.translit}` };
 }
+
+/**
+ * A one-line inflection hint for an authoring brief. See the Catalan twin in
+ * `lang/ca/surface.ts` for why this lives beside the language rather than in
+ * the shared authoring script.
+ *
+ * Dari hints carry a transliteration, so a noun without one is skipped rather
+ * than rendered half-transliterated.
+ */
+export function inflectionHint(entry: {
+  target: string;
+  pos: string;
+  translit?: string | null;
+}): string | null {
+  try {
+    if (entry.pos === "verb" && entry.target === "داشتن") {
+      const form = presentOfDashtan("3sg");
+      return `${entry.target} -> ${form.target} (${form.translit})`;
+    }
+    if (entry.pos === "verb") {
+      const form = presentIndicative(entry.target, "3sg");
+      return `${entry.target} -> ${form.target} (${form.translit})`;
+    }
+    if (entry.pos === "noun" && entry.translit) {
+      const form = pluralOf(entry.target, entry.translit);
+      return `${entry.target} -> ${form.target} (${form.translit}, plural)`;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}

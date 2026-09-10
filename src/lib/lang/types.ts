@@ -85,6 +85,18 @@ export interface LanguageText {
     entries: LexiconEntry[],
     headwordByKey: Map<string, LexiconEntry>,
   ): Map<string, { entry: LexiconEntry; surface: string }>;
+  /**
+   * A one-line inflection hint for an authoring brief - the form a writer is
+   * most likely to need beside the headword - or null when these helpers
+   * cannot inflect the word.
+   *
+   * Authoring-only: nothing the app renders calls it. It is on the profile
+   * because `scripts/author-brief.manual.test.ts` is shared by every language
+   * and used to reach each implementation with a dynamic
+   * `import("lang/<code>/surface.ts")`. TypeScript resolves those, so the
+   * shared tool could not typecheck in a deployment carrying one language.
+   */
+  inflectionHint(entry: { target: string; pos: string; translit?: string | null }): string | null;
 }
 
 /**

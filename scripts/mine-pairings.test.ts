@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import type { LexiconEntry } from "../src/lib/content/schema.ts";
-import { ca } from "../src/lib/lang/ca/index.ts";
+import { PROFILES, type LanguageProfile } from "../src/lib/lang/index.ts";
 import {
   annotateAmbiguous,
   findHomographIds,
@@ -14,7 +14,16 @@ import {
  * (`ca.text.tokenize` / `ca.text.buildIndex`) rather than a stand-in, per the
  * file header's non-negotiable: resolution must stay production-accurate or
  * the test would not exercise the trap it is meant to catch.
+ *
+ * The fixtures are Catalan words, so this is a Catalan test and not a shared
+ * one pretending otherwise: it reads its profile from the registry and skips
+ * when Catalan is not registered, rather than importing `lang/ca/index.ts` by
+ * path - which would fail to resolve at all in a deployment carrying only the
+ * other language. `minePairings` itself is language-neutral; equivalent Dari
+ * fixtures have never been written, and that gap is why this skips instead of
+ * silently covering nothing.
  */
+const ca = (PROFILES as Record<string, LanguageProfile | undefined>).ca;
 function entry(id: string, target: string, pos: LexiconEntry["pos"], glossEn: string): LexiconEntry {
   return {
     id,
@@ -63,11 +72,11 @@ const sentences = [
 ];
 
 function mine(): PairCount[] {
-  const index = ca.text.buildIndex(entries);
-  return minePairings(sentences, ca.text.tokenize, index);
+  const index = ca!.text.buildIndex(entries);
+  return minePairings(sentences, ca!.text.tokenize, index);
 }
 
-describe("minePairings", () => {
+describe.skipIf(!ca)("minePairings", () => {
   it("finds a pair attested at or above the count threshold", () => {
     const pairs = mine();
     const pomaVermella = pairs.find((p) => p.lexemeA === "lx-0001" && p.lexemeB === "lx-0002");

@@ -29,15 +29,21 @@
  */
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { PROFILES } from "../src/lib/lang/index.ts";
 import { join } from "node:path";
 
 import { lexiconFileSchema, type LexiconEntry } from "../src/lib/content/schema.ts";
 import { isTeachable } from "../src/lib/content/teachability.ts";
 import { BEGINNER_CORE_TAG } from "../src/lib/content/word-selection.ts";
-import { buildLexiconIndex as buildCa } from "../src/lib/lang/ca/lexicon-index.ts";
-import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { readSpec, specWords } from "./verify-beginner-core.ts";
+
+/** The profile for `lang`, or a clear error naming what is registered. */
+function langProfile(lang: string) {
+  const p = PROFILES[lang as keyof typeof PROFILES];
+  if (!p) throw new Error(`No language profile for "${lang}" (have: ${Object.keys(PROFILES).join(", ")})`);
+  return p;
+}
 
 /**
  * Every requirement the spec states, verbatim.
@@ -73,7 +79,7 @@ function main() {
   const file = JSON.parse(readFileSync(path, "utf8"));
   lexiconFileSchema.parse(file);
   const entries: LexiconEntry[] = file.entries;
-  const index = lang === "ca" ? buildCa(entries) : buildPrs(entries);
+  const index = langProfile(lang).text.buildIndex(entries);
 
   const missing: string[] = [];
   const unteachable: string[] = [];

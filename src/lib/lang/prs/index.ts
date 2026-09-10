@@ -1,4 +1,5 @@
 import type { LanguageProfile } from "../types.ts";
+import { inflectionHint } from "./surface.ts";
 import { buildLexiconIndex, generatedFormsByKey, verbHeadwordProblem } from "./lexicon-index.ts";
 import { matchKey, normalizeDari, tokenizeDari } from "./normalize.ts";
 import {
@@ -47,6 +48,7 @@ export const prs: LanguageProfile = {
     buildIndex: buildLexiconIndex,
     verbHeadwordProblem,
     generatedFormsByKey,
+    inflectionHint,
   },
 
   brand: {

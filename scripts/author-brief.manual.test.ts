@@ -59,43 +59,13 @@ import type { LexiconEntry, Level } from "../src/lib/content/schema.ts";
 // Per-word inflection hints (surface.ts) - unchanged from the retired pipeline
 // ---------------------------------------------------------------------------
 
-async function inflectionHint(entry: LexiconEntry): Promise<string | null> {
-  if (profile.code === "ca") {
-    const surface = await import("../src/lib/lang/ca/surface.ts");
-    try {
-      if (entry.pos === "adjective") {
-        const fem = surface.feminineOf(entry.target);
-        return fem === entry.target ? null : `${entry.target} (m) / ${fem} (f)`;
-      }
-      if (entry.pos === "verb") {
-        return `${entry.target} -> ${surface.presentOf(entry.target, "3sg")} (he/she ___s)`;
-      }
-      if (entry.pos === "noun") {
-        return `${entry.target} -> ${surface.pluralOf(entry.target)} (plural)`;
-      }
-    } catch {
-      return null;
-    }
-  } else if (profile.code === "prs") {
-    const surface = await import("../src/lib/lang/prs/surface.ts");
-    try {
-      if (entry.pos === "verb" && entry.target === "داشتن") {
-        const form = surface.presentOfDashtan("3sg");
-        return `${entry.target} -> ${form.target} (${form.translit})`;
-      }
-      if (entry.pos === "verb") {
-        const form = surface.presentIndicative(entry.target, "3sg");
-        return `${entry.target} -> ${form.target} (${form.translit})`;
-      }
-      if (entry.pos === "noun" && entry.translit) {
-        const form = surface.pluralOf(entry.target, entry.translit);
-        return `${entry.target} -> ${form.target} (${form.translit}, plural)`;
-      }
-    } catch {
-      return null;
-    }
-  }
-  return null;
+/**
+ * The per-language branches that were here - each `await import`ing that
+ * language's surface.ts - now live on the profile as `text.inflectionHint`,
+ * so this shared authoring tool no longer names a language module.
+ */
+function inflectionHint(entry: LexiconEntry): string | null {
+  return profile.text.inflectionHint(entry);
 }
 
 // ---------------------------------------------------------------------------
@@ -162,7 +132,7 @@ async function printBrief(
   const reuseEntries = slot.reuses.map((id) => byId.get(id)).filter((e): e is LexiconEntry => !!e);
   const allowedIds = new Set<string>([...cumulativeIntroduced, ...closedClassIds, ...slot.introduces, ...slot.reuses]);
 
-  const hints = (await Promise.all(introduceEntries.map(inflectionHint))).filter((h): h is string => !!h);
+  const hints = introduceEntries.map(inflectionHint).filter((h): h is string => !!h);
   const semanticNotes = [...introduceEntries, ...reuseEntries].map(noteFor).filter((n): n is string => !!n);
   const attested = pairingsFor(allowedIds, pairings);
   const [minS, maxS] = level.sentenceRange;

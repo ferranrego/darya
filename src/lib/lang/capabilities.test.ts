@@ -21,7 +21,15 @@ describe("language profiles", () => {
       // invalid at computed-value time. A keyword is fine; a bare number is not.
       expect(p.letterSpacing, `${code}: letterSpacing must be a keyword or carry a unit`)
         .toMatch(/^(normal|-?[\d.]+[a-z%]+)$/);
-      for (const fn of ["normalize", "matchKey", "tokenize", "buildIndex"] as const) {
+      for (const fn of [
+        "normalize",
+        "matchKey",
+        "tokenize",
+        "buildIndex",
+        "verbHeadwordProblem",
+        "generatedFormsByKey",
+        "inflectionHint",
+      ] as const) {
         expect(typeof p.text[fn], `${code}: text.${fn}`).toBe("function");
       }
       expect(p.prompts.teacher.length, `${code}: prompts.teacher`).toBeGreaterThan(0);

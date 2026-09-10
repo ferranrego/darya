@@ -244,3 +244,37 @@ export function presentOf(infinitive: string, person: Person): string {
   }
   return attach(stemOf(infinitive, 1), REGULAR_AR_ENDING[person], 1);
 }
+
+/**
+ * A one-line inflection hint for an authoring brief: the form a writer is most
+ * likely to need beside the headword.
+ *
+ * Lives here rather than in the authoring script because the script is shared
+ * by every language and used to reach it with `await import("lang/ca/
+ * surface.ts")` - a dynamic import TypeScript still resolves, so a deployment
+ * carrying one language failed `tsc` on the other's path.
+ *
+ * Returns null rather than throwing on a word these helpers cannot inflect:
+ * a brief with a missing hint is useful, a brief that fails to render is not.
+ */
+export function inflectionHint(entry: {
+  target: string;
+  pos: string;
+  translit?: string | null;
+}): string | null {
+  try {
+    if (entry.pos === "adjective") {
+      const fem = feminineOf(entry.target);
+      return fem === entry.target ? null : `${entry.target} (m) / ${fem} (f)`;
+    }
+    if (entry.pos === "verb") {
+      return `${entry.target} -> ${presentOf(entry.target, "3sg")} (he/she ___s)`;
+    }
+    if (entry.pos === "noun") {
+      return `${entry.target} -> ${pluralOf(entry.target)} (plural)`;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}

@@ -34,15 +34,19 @@
  */
 
 import { existsSync, readFileSync, realpathSync } from "node:fs";
+import { PROFILES } from "../src/lib/lang/index.ts";
 import { join } from "node:path";
 
 import { lexiconFileSchema, type LexiconEntry } from "../src/lib/content/schema.ts";
 import { isTeachable } from "../src/lib/content/teachability.ts";
-import { buildLexiconIndex as buildCa } from "../src/lib/lang/ca/lexicon-index.ts";
-import { matchKey as matchKeyCa } from "../src/lib/lang/ca/normalize.ts";
-import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index.ts";
-import { matchKey as matchKeyPrs } from "../src/lib/lang/prs/normalize.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
+
+/** The profile for `lang`, or a clear error naming what is registered. */
+function langProfile(lang: string) {
+  const p = PROFILES[lang as keyof typeof PROFILES];
+  if (!p) throw new Error(`No language profile for "${lang}" (have: ${Object.keys(PROFILES).join(", ")})`);
+  return p;
+}
 
 export interface BeginnerSpec {
   closedClasses: Record<string, string[]>;
@@ -89,8 +93,8 @@ function main() {
   const entries: LexiconEntry[] = lexiconFileSchema.parse(
     JSON.parse(readFileSync(join(root, "lexicon", "lexicon.json"), "utf8")),
   ).entries;
-  const index = lang === "ca" ? buildCa(entries) : buildPrs(entries);
-  const matchKey = lang === "ca" ? matchKeyCa : matchKeyPrs;
+  const { buildIndex, matchKey } = langProfile(lang).text;
+  const index = buildIndex(entries);
 
   /**
    * Present, teachable, *and* the same word: the resolver's morphological
