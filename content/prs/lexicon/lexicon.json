@@ -119187,6 +119187,66 @@
       "tags": [
         "Abstract Concepts"
       ]
+    },
+    {
+      "id": "lx-9990",
+      "target": "نزده",
+      "targetNormalized": "نزده",
+      "translit": "nuzdah",
+      "glossEn": "nineteen",
+      "pos": "numeral",
+      "freqRank": 900,
+      "freqBand": 2,
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "من نزده سال دارم.",
+      "exampleTranslit": "man nuzdah sāl dāram.",
+      "exampleEn": "I am nineteen years old."
+    },
+    {
+      "id": "lx-9991",
+      "target": "خاکی",
+      "targetNormalized": "خاکی",
+      "translit": "khākī",
+      "glossEn": "khaki; dust-colored",
+      "pos": "adjective",
+      "freqRank": 901,
+      "freqBand": 2,
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "او یک پیراهن خاکی پوشیده است.",
+      "exampleTranslit": "ō yak pērāhan-e khākī pōshēda ast.",
+      "exampleEn": "He is wearing a khaki shirt."
+    },
+    {
+      "id": "lx-9992",
+      "target": "گرمی",
+      "targetNormalized": "گرمی",
+      "translit": "garmī",
+      "glossEn": "heat",
+      "pos": "noun",
+      "freqRank": 902,
+      "freqBand": 2,
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "گرمی هوا امروز زیاد است.",
+      "exampleTranslit": "garmī-ye hawā imrōz ziyād ast.",
+      "exampleEn": "The heat of the weather is high today."
+    },
+    {
+      "id": "lx-9993",
+      "target": "سردی",
+      "targetNormalized": "سردی",
+      "translit": "sardī",
+      "glossEn": "cold; coldness",
+      "pos": "noun",
+      "freqRank": 903,
+      "freqBand": 2,
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "سردی در زمستان طبیعی است.",
+      "exampleTranslit": "sardī dar zamistān tabīʿī ast.",
+      "exampleEn": "Coldness in winter is natural."
     }
   ]
 }
