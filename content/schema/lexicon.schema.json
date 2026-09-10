@@ -92,6 +92,13 @@
             "type": "string",
             "minLength": 1
           },
+          "presentStemTranslit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "concreteness": {
+            "type": "boolean"
+          },
           "exampleTarget": {
             "type": "string",
             "minLength": 1

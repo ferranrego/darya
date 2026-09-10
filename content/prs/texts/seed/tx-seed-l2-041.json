@@ -2,132 +2,141 @@
   "id": "tx-seed-l2-041",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "ترمیم خانه",
+  "titleEn": "Repairing the house",
   "sentences": [
     {
-      "target": "معمولاً زخم او درد دارد.",
-      "en": "Usually his wound has pain.",
+      "target": "سقف خانه ما آب می‌چکد.",
+      "en": "The roof of our house leaks water.",
       "tokens": [
         {
-          "surface": "معمولاً",
-          "lexemeId": "lx-1094"
+          "surface": "سقف",
+          "lexemeId": "lx-3986"
         },
         {
-          "surface": "زخم",
-          "lexemeId": "lx-0696"
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
         },
         {
-          "surface": "او",
-          "lexemeId": "lx-0012"
+          "surface": "ما",
+          "lexemeId": "lx-0014"
         },
         {
-          "surface": "درد",
-          "lexemeId": "lx-0209"
+          "surface": "آب",
+          "lexemeId": "lx-0037"
         },
         {
-          "surface": "دارد",
-          "lexemeId": "lx-0095"
+          "surface": "می‌چکد",
+          "lexemeId": "lx-6250"
         }
       ]
     },
     {
-      "target": "مادر او کلاه می‌بافد.",
-      "en": "His mother knits a hat.",
+      "target": "پدرم گلکار آورده است.",
+      "en": "My father has brought a mud-worker.",
       "tokens": [
         {
-          "surface": "مادر",
-          "lexemeId": "lx-0051"
+          "surface": "پدرم",
+          "lexemeId": "lx-0052"
         },
         {
-          "surface": "او",
-          "lexemeId": "lx-0012"
+          "surface": "گلکار",
+          "lexemeId": "lx-6251"
         },
         {
-          "surface": "کلاه",
-          "lexemeId": "lx-6059"
-        },
-        {
-          "surface": "می‌بافد",
-          "lexemeId": "lx-0395"
-        }
-      ]
-    },
-    {
-      "target": "مادر روی او را می‌بوسد.",
-      "en": "The mother kisses his face.",
-      "tokens": [
-        {
-          "surface": "مادر",
-          "lexemeId": "lx-0051"
-        },
-        {
-          "surface": "روی",
-          "lexemeId": "lx-0089"
-        },
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
-        },
-        {
-          "surface": "را",
-          "lexemeId": "lx-0007"
-        },
-        {
-          "surface": "می‌بوسد",
-          "lexemeId": "lx-0456"
-        }
-      ]
-    },
-    {
-      "target": "او شایسته محبت است.",
-      "en": "He is worthy of affection.",
-      "tokens": [
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
-        },
-        {
-          "surface": "شایسته",
-          "lexemeId": "lx-0405"
-        },
-        {
-          "surface": "محبت",
-          "lexemeId": "lx-2080"
+          "surface": "آورده",
+          "lexemeId": "lx-0232"
         },
         {
           "surface": "است",
           "lexemeId": "lx-0010"
         }
       ]
+    },
+    {
+      "target": "آنها بام را ترمیم می‌کنند.",
+      "en": "They repair the roof.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "بام",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "ترمیم",
+          "lexemeId": "lx-5489"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "پیش از زمستان کار تمام می‌شود.",
+      "en": "The work will be finished before winter.",
+      "tokens": [
+        {
+          "surface": "پیش",
+          "lexemeId": "lx-0311"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "تمام",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
     }
   ],
   "vocabUsed": [
+    "lx-0004",
     "lx-0007",
+    "lx-0008",
     "lx-0010",
-    "lx-0012",
-    "lx-0051",
-    "lx-0089",
-    "lx-0095",
-    "lx-0209",
-    "lx-0395",
-    "lx-0405",
-    "lx-0456",
-    "lx-0696",
-    "lx-1094",
-    "lx-2080",
-    "lx-6059"
+    "lx-0014",
+    "lx-0016",
+    "lx-0036",
+    "lx-0037",
+    "lx-0052",
+    "lx-0079",
+    "lx-0097",
+    "lx-0131",
+    "lx-0149",
+    "lx-0232",
+    "lx-0310",
+    "lx-0311",
+    "lx-3986",
+    "lx-5489",
+    "lx-6250",
+    "lx-6251"
   ],
   "newWords": [
-    "lx-0051",
-    "lx-0209",
-    "lx-0395",
-    "lx-0405",
-    "lx-0456",
-    "lx-0696",
-    "lx-1094",
-    "lx-2080",
-    "lx-6059"
+    "lx-3986",
+    "lx-5489",
+    "lx-6250",
+    "lx-6251"
   ],
   "newWordRatio": 0,
   "source": "seed",

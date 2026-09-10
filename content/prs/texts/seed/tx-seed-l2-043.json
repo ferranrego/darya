@@ -2,75 +2,150 @@
   "id": "tx-seed-l2-043",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "طفل نو",
+  "titleEn": "The new baby",
   "sentences": [
     {
-      "target": "مسافر تلاش می‌کند تا بگذرد.",
-      "en": "The passenger makes an effort to cross.",
+      "target": "خواهر من یک طفل نو دارد.",
+      "en": "My sister has a new baby.",
       "tokens": [
         {
-          "surface": "مسافر",
-          "lexemeId": "lx-0576"
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
         },
         {
-          "surface": "تلاش",
-          "lexemeId": "lx-1086"
+          "surface": "من",
+          "lexemeId": "lx-0011"
         },
         {
-          "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "surface": "یک",
+          "lexemeId": "lx-0025"
         },
         {
-          "surface": "تا",
-          "lexemeId": "lx-0288"
+          "surface": "طفل",
+          "lexemeId": "lx-6143"
         },
         {
-          "surface": "بگذرد",
-          "lexemeId": "lx-0621"
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
         }
       ]
     },
     {
-      "target": "ما در عید می‌کوشیم.",
-      "en": "We try during Eid.",
+      "target": "طفل بسیار خرد و مقبول است.",
+      "en": "The baby is very small and beautiful.",
       "tokens": [
         {
-          "surface": "ما",
-          "lexemeId": "lx-0014"
+          "surface": "طفل",
+          "lexemeId": "lx-6143"
         },
         {
-          "surface": "در",
-          "lexemeId": "lx-0002"
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
         },
         {
-          "surface": "عید",
-          "lexemeId": "lx-0250"
+          "surface": "خرد",
+          "lexemeId": "lx-3247"
         },
         {
-          "surface": "می‌کوشیم",
-          "lexemeId": "lx-0411"
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مادر من برای طفل کالا می‌دوزد.",
+      "en": "My mother sews clothes for the baby.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "برای",
+          "lexemeId": "lx-0299"
+        },
+        {
+          "surface": "طفل",
+          "lexemeId": "lx-6143"
+        },
+        {
+          "surface": "کالا",
+          "lexemeId": "lx-1310"
+        },
+        {
+          "surface": "می‌دوزد",
+          "lexemeId": "lx-0468"
+        }
+      ]
+    },
+    {
+      "target": "همه فامیل خوشحال هستند.",
+      "en": "The whole family is happy.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "فامیل",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "خوشحال",
+          "lexemeId": "lx-6243"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
         }
       ]
     }
   ],
   "vocabUsed": [
-    "lx-0002",
-    "lx-0014",
-    "lx-0097",
-    "lx-0250",
-    "lx-0288",
-    "lx-0411",
-    "lx-0576",
-    "lx-0621",
-    "lx-1086"
+    "lx-0001",
+    "lx-0010",
+    "lx-0011",
+    "lx-0025",
+    "lx-0051",
+    "lx-0054",
+    "lx-0067",
+    "lx-0073",
+    "lx-0095",
+    "lx-0096",
+    "lx-0165",
+    "lx-0167",
+    "lx-0183",
+    "lx-0299",
+    "lx-0468",
+    "lx-1310",
+    "lx-3247",
+    "lx-6143",
+    "lx-6243"
   ],
   "newWords": [
-    "lx-0250",
-    "lx-0411",
-    "lx-0576",
-    "lx-0621",
-    "lx-1086"
+    "lx-0051",
+    "lx-0054",
+    "lx-0073",
+    "lx-1310",
+    "lx-3247",
+    "lx-6143"
   ],
   "newWordRatio": 0,
   "source": "seed",

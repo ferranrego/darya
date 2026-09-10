@@ -2,24 +2,20 @@
   "id": "tx-seed-l2-031",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "شفاخانه",
+  "titleEn": "The hospital",
   "sentences": [
     {
-      "target": "گزارش دستگاه خراب است.",
-      "en": "The device's report is broken.",
+      "target": "پدرکلانم مریض است.",
+      "en": "My grandfather is sick.",
       "tokens": [
         {
-          "surface": "گزارش",
-          "lexemeId": "lx-0839"
+          "surface": "پدرکلانم",
+          "lexemeId": "lx-0186"
         },
         {
-          "surface": "دستگاه",
-          "lexemeId": "lx-0778"
-        },
-        {
-          "surface": "خراب",
-          "lexemeId": "lx-0265"
+          "surface": "مریض",
+          "lexemeId": "lx-0262"
         },
         {
           "surface": "است",
@@ -28,38 +24,124 @@
       ]
     },
     {
-      "target": "میدان چند درجه است؟",
-      "en": "How many degrees is the square?",
+      "target": "ما او را به شفاخانه می‌بریم.",
+      "en": "We take him to the hospital.",
       "tokens": [
         {
-          "surface": "میدان",
-          "lexemeId": "lx-0545"
+          "surface": "ما",
+          "lexemeId": "lx-0014"
         },
         {
-          "surface": "چند",
-          "lexemeId": "lx-0180"
+          "surface": "او",
+          "lexemeId": "lx-0012"
         },
         {
-          "surface": "درجه",
-          "lexemeId": "lx-0672"
+          "surface": "را",
+          "lexemeId": "lx-0007"
         },
         {
-          "surface": "است",
-          "lexemeId": "lx-0010"
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "شفاخانه",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "می‌بریم",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    },
+    {
+      "target": "داکتر او را معاینه می‌کند.",
+      "en": "The doctor examines him.",
+      "tokens": [
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "معاینه",
+          "lexemeId": "lx-1671"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او باید دوا بخورد تا جور شود.",
+      "en": "He must take medicine to get well.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "باید",
+          "lexemeId": "lx-0290"
+        },
+        {
+          "surface": "دوا",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "بخورد",
+          "lexemeId": "lx-0091"
+        },
+        {
+          "surface": "تا",
+          "lexemeId": "lx-0288"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "شود",
+          "lexemeId": "lx-0149"
         }
       ]
     }
   ],
   "vocabUsed": [
+    "lx-0003",
+    "lx-0007",
     "lx-0010",
-    "lx-0180",
-    "lx-0265",
-    "lx-0545",
-    "lx-0672",
-    "lx-0778",
-    "lx-0839"
+    "lx-0012",
+    "lx-0014",
+    "lx-0091",
+    "lx-0097",
+    "lx-0106",
+    "lx-0149",
+    "lx-0186",
+    "lx-0210",
+    "lx-0211",
+    "lx-0233",
+    "lx-0262",
+    "lx-0263",
+    "lx-0288",
+    "lx-0290",
+    "lx-1671"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-0210",
+    "lx-0211",
+    "lx-0233",
+    "lx-0262",
+    "lx-0263",
+    "lx-1671"
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

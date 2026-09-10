@@ -2,24 +2,58 @@
   "id": "tx-seed-l1-032",
   "formatVersion": "1.5.0",
   "level": "L1",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "قالین نو",
+  "titleEn": "The new carpet",
   "sentences": [
     {
-      "target": "بی‌بی در خانه است.",
-      "en": "Grandmother is in the house.",
+      "target": "پدر یک قالین نو خرید.",
+      "en": "Father bought a new carpet.",
       "tokens": [
         {
-          "surface": "بی‌بی",
-          "lexemeId": "lx-6050"
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
         },
         {
-          "surface": "در",
-          "lexemeId": "lx-0002"
+          "surface": "یک",
+          "lexemeId": "lx-0025"
         },
         {
-          "surface": "خانه",
-          "lexemeId": "lx-0036"
+          "surface": "قالین",
+          "lexemeId": "lx-0229"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "خرید",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "قالین ما سرخ و کلان است.",
+      "en": "Our carpet is red and big.",
+      "tokens": [
+        {
+          "surface": "قالین",
+          "lexemeId": "lx-0229"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
         },
         {
           "surface": "است",
@@ -28,20 +62,46 @@
       ]
     },
     {
-      "target": "بی‌بی من پیر است.",
-      "en": "My grandmother is old.",
+      "target": "ما روی قالین می‌نشینیم.",
+      "en": "We sit on the carpet.",
       "tokens": [
         {
-          "surface": "بی‌بی",
-          "lexemeId": "lx-6050"
+          "surface": "ما",
+          "lexemeId": "lx-0014"
         },
         {
-          "surface": "من",
-          "lexemeId": "lx-0011"
+          "surface": "روی",
+          "lexemeId": "lx-0089"
         },
         {
-          "surface": "پیر",
-          "lexemeId": "lx-0258"
+          "surface": "قالین",
+          "lexemeId": "lx-0229"
+        },
+        {
+          "surface": "می‌نشینیم",
+          "lexemeId": "lx-0160"
+        }
+      ]
+    },
+    {
+      "target": "اتاق ما حالا مقبول است.",
+      "en": "Our room is now beautiful.",
+      "tokens": [
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
         },
         {
           "surface": "است",
@@ -51,15 +111,25 @@
     }
   ],
   "vocabUsed": [
-    "lx-0002",
+    "lx-0001",
     "lx-0010",
-    "lx-0011",
-    "lx-0036",
-    "lx-0258",
-    "lx-6050"
+    "lx-0014",
+    "lx-0025",
+    "lx-0046",
+    "lx-0052",
+    "lx-0065",
+    "lx-0067",
+    "lx-0073",
+    "lx-0089",
+    "lx-0142",
+    "lx-0160",
+    "lx-0196",
+    "lx-0205",
+    "lx-0229"
   ],
   "newWords": [
-    "lx-6050"
+    "lx-0160",
+    "lx-0229"
   ],
   "newWordRatio": 0,
   "source": "seed",

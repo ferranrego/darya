@@ -52,6 +52,8 @@ export const INTERFERENCE_RULES = [
   { wrong: "خیابان", right: "سرک", whyEn: "“street” is سرک in Dari." },
   { wrong: "هواپیما", right: "طیاره", whyEn: "“aeroplane” is طیاره in Dari." },
   { wrong: "استان", right: "ولایت", whyEn: "“province” is ولایت in Afghanistan." },
+  { wrong: "خلیج فارس", right: "خلیج", whyEn: "“Persian Gulf” is often just referred to as خلیج in Dari." },
+  { wrong: "پیامک", right: "مسج", whyEn: "“text message” is مسج in Dari; پیامک is Iranian." },
 ];
 
 export const INTERFERENCE = [

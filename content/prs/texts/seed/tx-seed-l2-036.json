@@ -2,118 +2,152 @@
   "id": "tx-seed-l2-036",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "مندوی",
+  "titleEn": "The market",
   "sentences": [
     {
-      "target": "او شعر می‌سراید.",
-      "en": "He composes poetry.",
+      "target": "در مندوی کابل سودا ارزان است.",
+      "en": "In the Kabul Mandawi groceries are cheap.",
       "tokens": [
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
-        },
-        {
-          "surface": "شعر",
-          "lexemeId": "lx-0268"
-        },
-        {
-          "surface": "می‌سراید",
-          "lexemeId": "lx-0422"
-        }
-      ]
-    },
-    {
-      "target": "به شعر خود می‌نازد.",
-      "en": "He boasts about his poetry.",
-      "tokens": [
-        {
-          "surface": "به",
-          "lexemeId": "lx-0003"
-        },
-        {
-          "surface": "شعر",
-          "lexemeId": "lx-0268"
-        },
-        {
-          "surface": "خود",
-          "lexemeId": "lx-0178"
-        },
-        {
-          "surface": "می‌نازد",
-          "lexemeId": "lx-0444"
-        }
-      ]
-    },
-    {
-      "target": "برق در آسمان برخاست.",
-      "en": "Lightning rose in the sky.",
-      "tokens": [
-        {
-          "surface": "برق",
-          "lexemeId": "lx-0662"
-        },
         {
           "surface": "در",
           "lexemeId": "lx-0002"
         },
         {
-          "surface": "آسمان",
-          "lexemeId": "lx-0147"
+          "surface": "مندوی",
+          "lexemeId": "lx-6236"
         },
         {
-          "surface": "برخاست",
-          "lexemeId": "lx-0363"
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "سودا",
+          "lexemeId": "lx-6237"
+        },
+        {
+          "surface": "ارزان",
+          "lexemeId": "lx-6156"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     },
     {
-      "target": "این کار مرا آزرد.",
-      "en": "This act hurt me.",
+      "target": "دکاندارها برنج و روغن می‌فروشند.",
+      "en": "The shopkeepers sell rice and oil.",
       "tokens": [
         {
-          "surface": "این",
-          "lexemeId": "lx-0006"
+          "surface": "دکاندارها",
+          "lexemeId": "lx-0513"
         },
         {
-          "surface": "کار",
-          "lexemeId": "lx-0079"
+          "surface": "برنج",
+          "lexemeId": "lx-0111"
         },
         {
-          "surface": "مرا",
-          "lexemeId": "lx-6029"
+          "surface": "و",
+          "lexemeId": "lx-0001"
         },
         {
-          "surface": "آزرد",
-          "lexemeId": "lx-0417"
+          "surface": "روغن",
+          "lexemeId": "lx-6040"
+        },
+        {
+          "surface": "می‌فروشند",
+          "lexemeId": "lx-0368"
+        }
+      ]
+    },
+    {
+      "target": "مردم از هر طرف می‌آیند.",
+      "en": "People come from every side.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "طرف",
+          "lexemeId": "lx-0607"
+        },
+        {
+          "surface": "می‌آیند",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "روزانه پیسه زیاد تبادله می‌شود.",
+      "en": "Daily a lot of money is exchanged.",
+      "tokens": [
+        {
+          "surface": "روزانه",
+          "lexemeId": "lx-6238"
+        },
+        {
+          "surface": "پیسه",
+          "lexemeId": "lx-0206"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "تبادله",
+          "lexemeId": "lx-6239"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
         }
       ]
     }
   ],
   "vocabUsed": [
+    "lx-0001",
     "lx-0002",
-    "lx-0003",
-    "lx-0006",
-    "lx-0012",
-    "lx-0079",
-    "lx-0147",
-    "lx-0178",
-    "lx-0268",
-    "lx-0363",
-    "lx-0417",
-    "lx-0422",
-    "lx-0444",
-    "lx-0662",
-    "lx-6029"
+    "lx-0004",
+    "lx-0010",
+    "lx-0059",
+    "lx-0069",
+    "lx-0086",
+    "lx-0090",
+    "lx-0111",
+    "lx-0149",
+    "lx-0166",
+    "lx-0206",
+    "lx-0368",
+    "lx-0513",
+    "lx-0607",
+    "lx-6040",
+    "lx-6156",
+    "lx-6236",
+    "lx-6237",
+    "lx-6238",
+    "lx-6239"
   ],
   "newWords": [
-    "lx-0147",
-    "lx-0363",
-    "lx-0417",
-    "lx-0422",
-    "lx-0444",
-    "lx-0662",
-    "lx-6029"
+    "lx-0111",
+    "lx-0206",
+    "lx-0368",
+    "lx-0513",
+    "lx-6040",
+    "lx-6156",
+    "lx-6236",
+    "lx-6237",
+    "lx-6238",
+    "lx-6239"
   ],
   "newWordRatio": 0,
   "source": "seed",

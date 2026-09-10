@@ -2,70 +2,136 @@
   "id": "tx-seed-l2-039",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "چای و کلچه",
+  "titleEn": "Tea and cookies",
   "sentences": [
     {
-      "target": "استاد می‌خندد و می‌افزاید.",
-      "en": "The professor laughs and adds.",
+      "target": "مهمان‌ها در مهمانخانه نشسته‌اند.",
+      "en": "The guests are sitting in the guest room.",
       "tokens": [
         {
-          "surface": "استاد",
-          "lexemeId": "lx-0792"
+          "surface": "مهمان‌ها",
+          "lexemeId": "lx-0188"
         },
         {
-          "surface": "می‌خندد",
-          "lexemeId": "lx-0364"
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مهمانخانه",
+          "lexemeId": "lx-0591"
+        },
+        {
+          "surface": "نشسته‌اند",
+          "lexemeId": "lx-0160"
+        }
+      ]
+    },
+    {
+      "target": "من برایشان چای و کلچه می‌برم.",
+      "en": "I take tea and cookies to them.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "برایشان",
+          "lexemeId": "lx-6246"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
         },
         {
           "surface": "و",
           "lexemeId": "lx-0001"
         },
         {
-          "surface": "می‌افزاید",
-          "lexemeId": "lx-0398"
+          "surface": "کلچه",
+          "lexemeId": "lx-6247"
+        },
+        {
+          "surface": "می‌برم",
+          "lexemeId": "lx-0233"
         }
       ]
     },
     {
-      "target": "نتیجه امنیت خوب است.",
-      "en": "The result of security is good.",
+      "target": "آنها درباره کار قصه می‌کنند.",
+      "en": "They tell stories about work.",
       "tokens": [
         {
-          "surface": "نتیجه",
-          "lexemeId": "lx-1071"
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
         },
         {
-          "surface": "امنیت",
-          "lexemeId": "lx-1057"
+          "surface": "درباره",
+          "lexemeId": "lx-0334"
         },
         {
-          "surface": "خوب",
-          "lexemeId": "lx-0063"
+          "surface": "کار",
+          "lexemeId": "lx-0079"
         },
         {
-          "surface": "است",
-          "lexemeId": "lx-0010"
+          "surface": "قصه",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "پدرم با آنها می‌خندد.",
+      "en": "My father laughs with them.",
+      "tokens": [
+        {
+          "surface": "پدرم",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "می‌خندد",
+          "lexemeId": "lx-0364"
         }
       ]
     }
   ],
   "vocabUsed": [
     "lx-0001",
-    "lx-0010",
-    "lx-0063",
+    "lx-0002",
+    "lx-0008",
+    "lx-0011",
+    "lx-0016",
+    "lx-0039",
+    "lx-0052",
+    "lx-0079",
+    "lx-0097",
+    "lx-0160",
+    "lx-0188",
+    "lx-0189",
+    "lx-0233",
+    "lx-0334",
     "lx-0364",
-    "lx-0398",
-    "lx-0792",
-    "lx-1057",
-    "lx-1071"
+    "lx-0591",
+    "lx-6246",
+    "lx-6247"
   ],
   "newWords": [
+    "lx-0334",
     "lx-0364",
-    "lx-0398",
-    "lx-0792",
-    "lx-1057",
-    "lx-1071"
+    "lx-0591",
+    "lx-6246",
+    "lx-6247"
   ],
   "newWordRatio": 0,
   "source": "seed",

@@ -2,81 +2,147 @@
   "id": "tx-seed-l1-036",
   "formatVersion": "1.5.0",
   "level": "L1",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "بازار",
+  "titleEn": "The bazaar",
   "sentences": [
     {
-      "target": "طفل روی خاک می‌خزد.",
-      "en": "The child crawls on the dirt.",
+      "target": "روز جمعه بازار بیروبار است.",
+      "en": "On Friday the bazaar is crowded.",
       "tokens": [
         {
-          "surface": "طفل",
-          "lexemeId": "lx-6143"
+          "surface": "روز",
+          "lexemeId": "lx-0040"
         },
         {
-          "surface": "روی",
-          "lexemeId": "lx-0089"
+          "surface": "جمعه",
+          "lexemeId": "lx-6068"
         },
         {
-          "surface": "خاک",
-          "lexemeId": "lx-0490"
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
         },
         {
-          "surface": "می‌خزد",
-          "lexemeId": "lx-0439"
+          "surface": "بیروبار",
+          "lexemeId": "lx-6227"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     },
     {
-      "target": "کل مردم به یک سو می‌بالند.",
-      "en": "All the people grow in one direction.",
+      "target": "پدرم ترکاری و میوه می‌خرد.",
+      "en": "My father buys vegetables and fruits.",
       "tokens": [
         {
-          "surface": "کل",
-          "lexemeId": "lx-4038"
+          "surface": "پدرم",
+          "lexemeId": "lx-0052"
         },
         {
-          "surface": "مردم",
-          "lexemeId": "lx-0059"
+          "surface": "ترکاری",
+          "lexemeId": "lx-6228"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "می‌خرد",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "کچالو و پیاز ارزان است.",
+      "en": "Potatoes and onions are cheap.",
+      "tokens": [
+        {
+          "surface": "کچالو",
+          "lexemeId": "lx-6037"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "پیاز",
+          "lexemeId": "lx-6038"
+        },
+        {
+          "surface": "ارزان",
+          "lexemeId": "lx-6156"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما خریطه‌ها را به خانه می‌بریم.",
+      "en": "We take the bags home.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "خریطه‌ها",
+          "lexemeId": "lx-0589"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
         },
         {
           "surface": "به",
           "lexemeId": "lx-0003"
         },
         {
-          "surface": "یک",
-          "lexemeId": "lx-0025"
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
         },
         {
-          "surface": "سو",
-          "lexemeId": "lx-6025"
-        },
-        {
-          "surface": "می‌بالند",
-          "lexemeId": "lx-0415"
+          "surface": "می‌بریم",
+          "lexemeId": "lx-0233"
         }
       ]
     }
   ],
   "vocabUsed": [
+    "lx-0001",
     "lx-0003",
-    "lx-0025",
-    "lx-0059",
-    "lx-0089",
-    "lx-0415",
-    "lx-0439",
-    "lx-0490",
-    "lx-4038",
-    "lx-6025",
-    "lx-6143"
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0036",
+    "lx-0040",
+    "lx-0052",
+    "lx-0113",
+    "lx-0133",
+    "lx-0205",
+    "lx-0233",
+    "lx-0589",
+    "lx-6037",
+    "lx-6038",
+    "lx-6068",
+    "lx-6156",
+    "lx-6227",
+    "lx-6228"
   ],
   "newWords": [
-    "lx-0415",
-    "lx-0439",
-    "lx-0490",
-    "lx-4038",
-    "lx-6025",
-    "lx-6143"
+    "lx-0113",
+    "lx-0589",
+    "lx-6037",
+    "lx-6038",
+    "lx-6156",
+    "lx-6227",
+    "lx-6228"
   ],
   "newWordRatio": 0,
   "source": "seed",

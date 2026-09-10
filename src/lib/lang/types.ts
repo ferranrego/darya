@@ -96,7 +96,13 @@ export interface LanguageText {
    * `import("lang/<code>/surface.ts")`. TypeScript resolves those, so the
    * shared tool could not typecheck in a deployment carrying one language.
    */
-  inflectionHint(entry: { target: string; pos: string; translit?: string | null }): string | null;
+  inflectionHint(entry: {
+    target: string;
+    targetNormalized?: string;
+    pos: string;
+    translit?: string | null;
+    presentStemTranslit?: string;
+  }): string | null;
 }
 
 /**

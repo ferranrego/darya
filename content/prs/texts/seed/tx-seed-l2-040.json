@@ -2,75 +2,150 @@
   "id": "tx-seed-l2-040",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "سگ همسایه",
+  "titleEn": "The neighbor dog",
   "sentences": [
     {
-      "target": "باد می‌وزد و برگ می‌چسبد.",
-      "en": "The wind blows and the leaf sticks.",
+      "target": "سگ همسایه بسیار غالمغال می‌کند.",
+      "en": "The neighbor dog makes a lot of noise.",
       "tokens": [
         {
-          "surface": "باد",
-          "lexemeId": "lx-0492"
+          "surface": "سگ",
+          "lexemeId": "lx-0480"
         },
         {
-          "surface": "می‌وزد",
-          "lexemeId": "lx-0438"
+          "surface": "همسایه",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "غالمغال",
+          "lexemeId": "lx-6248"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "آن سگ کلان و سیاه است.",
+      "en": "That dog is big and black.",
+      "tokens": [
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "سگ",
+          "lexemeId": "lx-0480"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
         },
         {
           "surface": "و",
           "lexemeId": "lx-0001"
         },
         {
-          "surface": "برگ",
-          "lexemeId": "lx-0487"
+          "surface": "سیاه",
+          "lexemeId": "lx-0144"
         },
         {
-          "surface": "می‌چسبد",
-          "lexemeId": "lx-0454"
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     },
     {
-      "target": "مرد افغانی کاغذ می‌سوزاند.",
-      "en": "The Afghan man burns paper.",
+      "target": "بچه‌ها از او می‌ترسند.",
+      "en": "The children are afraid of him.",
       "tokens": [
         {
-          "surface": "مرد",
-          "lexemeId": "lx-0060"
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
         },
         {
-          "surface": "افغانی",
-          "lexemeId": "lx-0207"
+          "surface": "از",
+          "lexemeId": "lx-0004"
         },
         {
-          "surface": "کاغذ",
-          "lexemeId": "lx-0239"
+          "surface": "او",
+          "lexemeId": "lx-0012"
         },
         {
-          "surface": "می‌سوزاند",
-          "lexemeId": "lx-0429"
+          "surface": "می‌ترسند",
+          "lexemeId": "lx-0366"
+        }
+      ]
+    },
+    {
+      "target": "صاحبش او را در حویلی بسته است.",
+      "en": "His owner has tied him in the yard.",
+      "tokens": [
+        {
+          "surface": "صاحبش",
+          "lexemeId": "lx-6249"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "حویلی",
+          "lexemeId": "lx-6048"
+        },
+        {
+          "surface": "بسته",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     }
   ],
   "vocabUsed": [
     "lx-0001",
-    "lx-0060",
-    "lx-0207",
-    "lx-0239",
-    "lx-0429",
-    "lx-0438",
-    "lx-0454",
-    "lx-0487",
-    "lx-0492"
+    "lx-0002",
+    "lx-0004",
+    "lx-0007",
+    "lx-0009",
+    "lx-0010",
+    "lx-0012",
+    "lx-0057",
+    "lx-0065",
+    "lx-0097",
+    "lx-0144",
+    "lx-0167",
+    "lx-0200",
+    "lx-0255",
+    "lx-0366",
+    "lx-0480",
+    "lx-6048",
+    "lx-6248",
+    "lx-6249"
   ],
   "newWords": [
-    "lx-0207",
-    "lx-0429",
-    "lx-0438",
-    "lx-0454",
-    "lx-0487"
+    "lx-0200",
+    "lx-0366",
+    "lx-0480",
+    "lx-6048",
+    "lx-6248",
+    "lx-6249"
   ],
   "newWordRatio": 0,
   "source": "seed",

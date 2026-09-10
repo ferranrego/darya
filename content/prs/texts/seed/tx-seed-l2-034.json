@@ -2,71 +2,150 @@
   "id": "tx-seed-l2-034",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "یاد گرفتن زبان",
+  "titleEn": "Learning a language",
   "sentences": [
     {
-      "target": "همسایه در شکست شدید است.",
-      "en": "The neighbor is in a severe defeat.",
+      "target": "برادرم کورس انگلیسی می‌خواند.",
+      "en": "My brother studies an English course.",
       "tokens": [
         {
-          "surface": "همسایه",
-          "lexemeId": "lx-0255"
+          "surface": "برادرم",
+          "lexemeId": "lx-0053"
         },
         {
-          "surface": "در",
-          "lexemeId": "lx-0002"
+          "surface": "کورس",
+          "lexemeId": "lx-6233"
         },
         {
-          "surface": "شکست",
-          "lexemeId": "lx-1043"
+          "surface": "انگلیسی",
+          "lexemeId": "lx-6234"
         },
         {
-          "surface": "شدید",
-          "lexemeId": "lx-0681"
+          "surface": "می‌خواند",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "او هر روز کتاب‌های نو می‌گیرد.",
+      "en": "He gets new books every day.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "کتاب‌های",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌گیرد",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "من هم می‌خواهم زبان یاد بگیرم.",
+      "en": "I also want to learn a language.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "می‌خواهم",
+          "lexemeId": "lx-0099"
+        },
+        {
+          "surface": "زبان",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "یاد",
+          "lexemeId": "lx-0154"
+        },
+        {
+          "surface": "بگیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "زبان خواندن برای آینده خوب است.",
+      "en": "Studying a language is good for the future.",
+      "tokens": [
+        {
+          "surface": "زبان",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "خواندن",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "برای",
+          "lexemeId": "lx-0299"
+        },
+        {
+          "surface": "آینده",
+          "lexemeId": "lx-1050"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
         },
         {
           "surface": "است",
           "lexemeId": "lx-0010"
         }
       ]
-    },
-    {
-      "target": "هدف دریدن کاغذ بود.",
-      "en": "The goal was to tear the paper.",
-      "tokens": [
-        {
-          "surface": "هدف",
-          "lexemeId": "lx-1047"
-        },
-        {
-          "surface": "دریدن",
-          "lexemeId": "lx-0440"
-        },
-        {
-          "surface": "کاغذ",
-          "lexemeId": "lx-0239"
-        },
-        {
-          "surface": "بود",
-          "lexemeId": "lx-0096"
-        }
-      ]
     }
   ],
   "vocabUsed": [
-    "lx-0002",
     "lx-0010",
-    "lx-0096",
-    "lx-0239",
-    "lx-0255",
-    "lx-0440",
-    "lx-0681",
-    "lx-1043",
-    "lx-1047"
+    "lx-0011",
+    "lx-0012",
+    "lx-0024",
+    "lx-0040",
+    "lx-0053",
+    "lx-0063",
+    "lx-0067",
+    "lx-0074",
+    "lx-0088",
+    "lx-0098",
+    "lx-0099",
+    "lx-0153",
+    "lx-0154",
+    "lx-0166",
+    "lx-0299",
+    "lx-1050",
+    "lx-6233",
+    "lx-6234"
   ],
   "newWords": [
-    "lx-0239"
+    "lx-0040",
+    "lx-0053",
+    "lx-0067",
+    "lx-1050",
+    "lx-6233",
+    "lx-6234"
   ],
   "newWordRatio": 0,
   "source": "seed",

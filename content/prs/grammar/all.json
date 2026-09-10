@@ -3171,6 +3171,127 @@
                   ]
                 }
               ]
+            },
+            {
+              "id": "gl-94",
+              "title": "The Ezafe",
+              "subtitle": "Connecting words together",
+              "grammarPoint": "ezafe",
+              "grammarPointEn": "The Ezafe (-e) connects nouns to adjectives or possessors.",
+              "slides": [
+                {
+                  "id": "gs-94-1",
+                  "title": "What is the Ezafe?",
+                  "body": "In Dari, we connect a noun to its adjective or owner using a short 'e' sound called Ezafe. It is usually not written in the Dari script, but you pronounce it.",
+                  "examples": [
+                    {
+                      "target": "کتاب خوب",
+                      "translit": "ketāb-e khūb",
+                      "en": "good book",
+                      "highlight": "کتاب"
+                    }
+                  ]
+                }
+              ],
+              "exercises": [
+                {
+                  "id": "ge-94-1",
+                  "type": "fillBlank",
+                  "target": "موتر ___ کلان است",
+                  "translit": "motar-e ___ kalān ast",
+                  "en": "My car is big.",
+                  "answer": {
+                    "target": "من",
+                    "translit": "man"
+                  },
+                  "distractors": [
+                    {
+                      "target": "تو",
+                      "translit": "tu"
+                    },
+                    {
+                      "target": "او",
+                      "translit": "ō"
+                    }
+                  ]
+                },
+                {
+                  "id": "ge-94-2",
+                  "type": "chooseTranslation",
+                  "direction": "toEn",
+                  "target": "پدر من",
+                  "translit": "padar-e man",
+                  "en": "my father",
+                  "distractorsEn": [
+                    "your father",
+                    "his father"
+                  ]
+                },
+                {
+                  "id": "ge-94-3",
+                  "type": "buildSentence",
+                  "en": "my good book",
+                  "words": [
+                    {
+                      "target": "کتاب",
+                      "translit": "ketāb"
+                    },
+                    {
+                      "target": "خوب",
+                      "translit": "khūb"
+                    },
+                    {
+                      "target": "من",
+                      "translit": "man"
+                    }
+                  ],
+                  "translit": "ketāb-e khūb-e man",
+                  "extraWords": []
+                },
+                {
+                  "id": "ge-94-4",
+                  "type": "matchPairs",
+                  "prompt": "Match the phrases",
+                  "pairs": [
+                    {
+                      "target": "کتاب من",
+                      "translit": "ketāb-e man",
+                      "en": "my book"
+                    },
+                    {
+                      "target": "کتاب تو",
+                      "translit": "ketāb-e tu",
+                      "en": "your book"
+                    },
+                    {
+                      "target": "کتاب او",
+                      "translit": "ketāb-e ō",
+                      "en": "his book"
+                    }
+                  ]
+                },
+                {
+                  "id": "ge-94-5",
+                  "type": "fillBlank",
+                  "target": "خانه ___",
+                  "translit": "khāna-ye ___",
+                  "en": "my house",
+                  "answer": {
+                    "target": "من",
+                    "translit": "man"
+                  },
+                  "distractors": [
+                    {
+                      "target": "تو",
+                      "translit": "tu"
+                    },
+                    {
+                      "target": "او",
+                      "translit": "ō"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -6012,6 +6133,131 @@
                   "distractorsEn": [
                     "He always tells the truth.",
                     "He sometimes lies."
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gl-95",
+              "title": "The Object Marker Rā",
+              "subtitle": "Marking the specific object",
+              "grammarPoint": "object-marker-ra",
+              "grammarPointEn": "The particle 'rā' (را) marks the specific direct object of a sentence.",
+              "slides": [
+                {
+                  "id": "gs-95-1",
+                  "title": "Specific Objects",
+                  "body": "When an action is done to a specific person or thing (like 'the book' or 'Ali'), Dari marks that object with 'rā' (را).",
+                  "examples": [
+                    {
+                      "target": "من کتاب را می‌خوانم",
+                      "translit": "man ketāb rā mēkhānam",
+                      "en": "I read the book.",
+                      "highlight": "را"
+                    }
+                  ]
+                }
+              ],
+              "exercises": [
+                {
+                  "id": "ge-95-1",
+                  "type": "fillBlank",
+                  "target": "من سیب ___ می‌خورم",
+                  "translit": "man sēb ___ mēkhoram",
+                  "en": "I eat the apple.",
+                  "answer": {
+                    "target": "را",
+                    "translit": "rā"
+                  },
+                  "distractors": [
+                    {
+                      "target": "از",
+                      "translit": "az"
+                    },
+                    {
+                      "target": "در",
+                      "translit": "dar"
+                    }
+                  ]
+                },
+                {
+                  "id": "ge-95-2",
+                  "type": "chooseTranslation",
+                  "direction": "toEn",
+                  "target": "تو علی را می‌بینی",
+                  "translit": "tu alī rā mēbīnī",
+                  "en": "You see Ali.",
+                  "distractorsEn": [
+                    "Ali sees you.",
+                    "I see Ali."
+                  ]
+                },
+                {
+                  "id": "ge-95-3",
+                  "type": "buildSentence",
+                  "en": "I read the book.",
+                  "words": [
+                    {
+                      "target": "من",
+                      "translit": "man"
+                    },
+                    {
+                      "target": "کتاب",
+                      "translit": "ketāb"
+                    },
+                    {
+                      "target": "را",
+                      "translit": "rā"
+                    },
+                    {
+                      "target": "می‌خوانم",
+                      "translit": "mēkhānam"
+                    }
+                  ],
+                  "translit": "man ketāb rā mēkhānam",
+                  "extraWords": []
+                },
+                {
+                  "id": "ge-95-4",
+                  "type": "matchPairs",
+                  "prompt": "Match the sentences",
+                  "pairs": [
+                    {
+                      "target": "من تو را می‌بینم",
+                      "translit": "man tu rā mēbīnam",
+                      "en": "I see you."
+                    },
+                    {
+                      "target": "تو من را می‌بینی",
+                      "translit": "tu man rā mēbīnī",
+                      "en": "You see me."
+                    },
+                    {
+                      "target": "او من را می‌بیند",
+                      "translit": "ō man rā mēbīnad",
+                      "en": "He sees me."
+                    }
+                  ]
+                },
+                {
+                  "id": "ge-95-5",
+                  "type": "fillBlank",
+                  "target": "شما آب ___ می‌نوشید",
+                  "translit": "shumā āb ___ mēnōshēd",
+                  "en": "You drink the water.",
+                  "answer": {
+                    "target": "را",
+                    "translit": "rā"
+                  },
+                  "distractors": [
+                    {
+                      "target": "در",
+                      "translit": "dar"
+                    },
+                    {
+                      "target": "از",
+                      "translit": "az"
+                    }
                   ]
                 }
               ]

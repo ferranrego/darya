@@ -55,19 +55,19 @@ describe("pluralOf", () => {
 
 describe("presentIndicative", () => {
   it("matches the seed text's own attested form: پدر به کار می‌رود / padar ba kār mērawad", () => {
-    const v = presentIndicative("رفتن", "3sg");
+    const v = presentIndicative({ target: "رفتن", presentStem: "رو", presentStemTranslit: "raw" }, "3sg");
     expect(v.target).toBe("می‌رود");
     expect(v.translit).toBe("mērawad");
   });
 
   it("conjugates all three persons with the same stem", () => {
-    expect(presentIndicative("خوردن", "1sg")).toEqual({ target: "می‌خورم", translit: "mēkhoram" });
-    expect(presentIndicative("خوردن", "2sg")).toEqual({ target: "می‌خوری", translit: "mēkhorē" });
-    expect(presentIndicative("خوردن", "3sg")).toEqual({ target: "می‌خورد", translit: "mēkhorad" });
+    expect(presentIndicative({ target: "خوردن", presentStem: "خور", presentStemTranslit: "khor" }, "1sg")).toEqual({ target: "می‌خورم", translit: "mēkhoram" });
+    expect(presentIndicative({ target: "خوردن", presentStem: "خور", presentStemTranslit: "khor" }, "2sg")).toEqual({ target: "می‌خوری", translit: "mēkhorē" });
+    expect(presentIndicative({ target: "خوردن", presentStem: "خور", presentStemTranslit: "khor" }, "3sg")).toEqual({ target: "می‌خورد", translit: "mēkhorad" });
   });
 
   it("throws for a verb with no authored present stem, rather than guess", () => {
-    expect(() => presentIndicative("خندیدن", "3sg")).toThrow(/no presentStem\/translit authored/);
+    expect(() => presentIndicative({ target: "خندیدن" }, "3sg")).toThrow(/no presentStem\/translit authored/);
   });
 });
 

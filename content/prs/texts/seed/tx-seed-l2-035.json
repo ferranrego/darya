@@ -2,80 +2,154 @@
   "id": "tx-seed-l2-035",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "دکان خیاط",
+  "titleEn": "The tailor's shop",
   "sentences": [
     {
-      "target": "کارگر در شبکه طراحی می‌کند.",
-      "en": "The worker designs in the network.",
+      "target": "خیاط لباس‌های زمستانی می‌دوزد.",
+      "en": "The tailor sews winter clothes.",
       "tokens": [
         {
-          "surface": "کارگر",
-          "lexemeId": "lx-0522"
+          "surface": "خیاط",
+          "lexemeId": "lx-0504"
         },
         {
-          "surface": "در",
-          "lexemeId": "lx-0002"
+          "surface": "لباس‌های",
+          "lexemeId": "lx-0230"
         },
         {
-          "surface": "شبکه",
-          "lexemeId": "lx-0777"
+          "surface": "زمستانی",
+          "lexemeId": "lx-0131"
         },
         {
-          "surface": "طراحی",
-          "lexemeId": "lx-0820"
-        },
-        {
-          "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "surface": "می‌دوزد",
+          "lexemeId": "lx-0468"
         }
       ]
     },
     {
-      "target": "او برای مغز نسخه می‌گیرد.",
-      "en": "He takes a prescription for the brain.",
+      "target": "من برای خود یک کرتی فرمایش دادم.",
+      "en": "I ordered a jacket for myself.",
       "tokens": [
         {
-          "surface": "او",
-          "lexemeId": "lx-0012"
+          "surface": "من",
+          "lexemeId": "lx-0011"
         },
         {
           "surface": "برای",
           "lexemeId": "lx-0299"
         },
         {
-          "surface": "مغز",
-          "lexemeId": "lx-0741"
+          "surface": "خود",
+          "lexemeId": "lx-0178"
         },
         {
-          "surface": "نسخه",
-          "lexemeId": "lx-0691"
+          "surface": "یک",
+          "lexemeId": "lx-0025"
         },
         {
-          "surface": "می‌گیرد",
-          "lexemeId": "lx-0153"
+          "surface": "کرتی",
+          "lexemeId": "lx-6226"
+        },
+        {
+          "surface": "فرمایش",
+          "lexemeId": "lx-6235"
+        },
+        {
+          "surface": "دادم",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "رنگ آن سیاه و تاریک است.",
+      "en": "Its color is dark black.",
+      "tokens": [
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "سیاه",
+          "lexemeId": "lx-0144"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "تاریک",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "هفته آینده آن را می‌پوشم.",
+      "en": "Next week I will wear it.",
+      "tokens": [
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "آینده",
+          "lexemeId": "lx-1050"
+        },
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌پوشم",
+          "lexemeId": "lx-0231"
         }
       ]
     }
   ],
   "vocabUsed": [
-    "lx-0002",
-    "lx-0012",
-    "lx-0097",
-    "lx-0153",
+    "lx-0001",
+    "lx-0007",
+    "lx-0009",
+    "lx-0010",
+    "lx-0011",
+    "lx-0025",
+    "lx-0050",
+    "lx-0100",
+    "lx-0131",
+    "lx-0141",
+    "lx-0144",
+    "lx-0178",
+    "lx-0195",
+    "lx-0230",
+    "lx-0231",
     "lx-0299",
-    "lx-0522",
-    "lx-0691",
-    "lx-0741",
-    "lx-0777",
-    "lx-0820"
+    "lx-0468",
+    "lx-0504",
+    "lx-1050",
+    "lx-6226",
+    "lx-6235"
   ],
   "newWords": [
-    "lx-0522",
-    "lx-0691",
-    "lx-0741",
-    "lx-0777",
-    "lx-0820"
+    "lx-0050",
+    "lx-0100",
+    "lx-0144",
+    "lx-0195",
+    "lx-0468",
+    "lx-0504",
+    "lx-6226",
+    "lx-6235"
   ],
   "newWordRatio": 0,
   "source": "seed",

@@ -2,60 +2,146 @@
   "id": "tx-seed-l1-037",
   "formatVersion": "1.5.0",
   "level": "L1",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "مهمان‌ها",
+  "titleEn": "The guests",
   "sentences": [
     {
-      "target": "من شک ندارم.",
-      "en": "I have no doubt.",
+      "target": "امشب مهمان به خانه ما می‌آید.",
+      "en": "Tonight guests come to our house.",
       "tokens": [
         {
-          "surface": "من",
-          "lexemeId": "lx-0011"
+          "surface": "امشب",
+          "lexemeId": "lx-0201"
         },
         {
-          "surface": "شک",
-          "lexemeId": "lx-3260"
+          "surface": "مهمان",
+          "lexemeId": "lx-0188"
         },
         {
-          "surface": "ندارم",
-          "lexemeId": "lx-0095"
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
         }
       ]
     },
     {
-      "target": "شک شما بزرگ است.",
-      "en": "Your doubt is big.",
+      "target": "مادر قابلی پلو پخته است.",
+      "en": "Mother has cooked Qabili Palaw.",
       "tokens": [
         {
-          "surface": "شک",
-          "lexemeId": "lx-3260"
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
         },
         {
-          "surface": "شما",
-          "lexemeId": "lx-0015"
+          "surface": "قابلی",
+          "lexemeId": "lx-6229"
         },
         {
-          "surface": "بزرگ",
-          "lexemeId": "lx-0341"
+          "surface": "پلو",
+          "lexemeId": "lx-6230"
+        },
+        {
+          "surface": "پخته",
+          "lexemeId": "lx-0651"
         },
         {
           "surface": "است",
           "lexemeId": "lx-0010"
         }
       ]
+    },
+    {
+      "target": "کاکایم از مزار آمده است.",
+      "en": "My uncle has come from Mazar.",
+      "tokens": [
+        {
+          "surface": "کاکایم",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "مزار",
+          "lexemeId": "lx-0224"
+        },
+        {
+          "surface": "آمده",
+          "lexemeId": "lx-0090"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "همه ما بسیار خوش هستیم.",
+      "en": "We are all very happy.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
     }
   ],
   "vocabUsed": [
+    "lx-0003",
+    "lx-0004",
     "lx-0010",
-    "lx-0011",
-    "lx-0015",
-    "lx-0095",
-    "lx-0341",
-    "lx-3260"
+    "lx-0014",
+    "lx-0036",
+    "lx-0051",
+    "lx-0090",
+    "lx-0096",
+    "lx-0107",
+    "lx-0165",
+    "lx-0167",
+    "lx-0185",
+    "lx-0188",
+    "lx-0201",
+    "lx-0224",
+    "lx-0651",
+    "lx-6229",
+    "lx-6230"
   ],
   "newWords": [
-    "lx-3260"
+    "lx-0185",
+    "lx-0188",
+    "lx-0201",
+    "lx-0224",
+    "lx-0651",
+    "lx-6229",
+    "lx-6230"
   ],
   "newWordRatio": 0,
   "source": "seed",

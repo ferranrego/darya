@@ -80,6 +80,15 @@ if (existsSync(lexiconPath)) {
       if (profile.capabilities.transliteration) {
         if (!e.translit) fail(`lexicon ${e.id}: missing translit`);
         if (!e.exampleTranslit) fail(`lexicon ${e.id}: missing exampleTranslit`);
+        if (lang === "prs") {
+          const checkMajhul = (text: string, field: string) => {
+            if (/\bmi-/i.test(text)) fail(`lexicon ${e.id}: ${field} present prefix must be mē-, not mi- (${text})`);
+            if (/\bshir\b/i.test(text)) fail(`lexicon ${e.id}: ${field} must use majhul vowel ē (shēr, not shir) (${text})`);
+            if (/\bdust/i.test(text)) fail(`lexicon ${e.id}: ${field} must use majhul vowel ō (dōst, not dust) (${text})`);
+          };
+          if (e.translit) checkMajhul(e.translit, "translit");
+          if (e.exampleTranslit) checkMajhul(e.exampleTranslit, "exampleTranslit");
+        }
       }
       if (e.presentStem !== undefined) {
         if (!/^[؀-ۿ‌]+$/.test(e.presentStem)) {
@@ -157,6 +166,8 @@ if (existsSync(lexiconPath)) {
        * the shared content gate the one file that could not be shared.
        */
       if (e.pos === "verb") {
+      
+      
         const problem = verbHeadwordProblem(e.targetNormalized);
         if (problem) {
           fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" ${problem}`);

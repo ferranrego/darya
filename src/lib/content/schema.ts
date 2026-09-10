@@ -94,6 +94,12 @@ export const lexiconEntrySchema = z.object({
    * no present-tense forms are generated for this entry.
    */
   presentStem: targetText.optional(),
+  /**
+   * Present stem transliteration. Like presentStem, but in Latin script.
+   */
+  presentStemTranslit: translitText.optional(),
+  /** Whether a word represents a concrete, highly imageable concept. */
+  concreteness: z.boolean().optional(),
   exampleTarget: targetText,
   exampleTranslit: optionalTranslit,
   exampleEn: z.string().min(1),

@@ -2,28 +2,28 @@
   "id": "tx-seed-l2-038",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "رانندگی در کابل",
+  "titleEn": "Driving in Kabul",
   "sentences": [
     {
-      "target": "تولید فیلم برای تلویزیون است.",
-      "en": "The production of the film is for television.",
+      "target": "سرک‌های کابل بسیار بیروبار است.",
+      "en": "The streets of Kabul are very crowded.",
       "tokens": [
         {
-          "surface": "تولید",
-          "lexemeId": "lx-1206"
+          "surface": "سرک‌های",
+          "lexemeId": "lx-0082"
         },
         {
-          "surface": "فیلم",
-          "lexemeId": "lx-1806"
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
         },
         {
-          "surface": "برای",
-          "lexemeId": "lx-0299"
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
         },
         {
-          "surface": "تلویزیون",
-          "lexemeId": "lx-0835"
+          "surface": "بیروبار",
+          "lexemeId": "lx-6227"
         },
         {
           "surface": "است",
@@ -32,45 +32,104 @@
       ]
     },
     {
-      "target": "سرویس کاملاً نو است.",
-      "en": "The bus is completely new.",
+      "target": "راننده‌ها هارن می‌زنند.",
+      "en": "The drivers honk.",
       "tokens": [
         {
-          "surface": "سرویس",
-          "lexemeId": "lx-0553"
+          "surface": "راننده‌ها",
+          "lexemeId": "lx-5792"
         },
         {
-          "surface": "کاملاً",
-          "lexemeId": "lx-1100"
+          "surface": "هارن",
+          "lexemeId": "lx-0572"
         },
         {
-          "surface": "نو",
-          "lexemeId": "lx-0067"
+          "surface": "می‌زنند",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    },
+    {
+      "target": "ترافیک موترها را ایستاد می‌کند.",
+      "en": "The traffic police stops the cars.",
+      "tokens": [
+        {
+          "surface": "ترافیک",
+          "lexemeId": "lx-0578"
         },
         {
-          "surface": "است",
-          "lexemeId": "lx-0010"
+          "surface": "موترها",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "ایستاد",
+          "lexemeId": "lx-6069"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "باید در رانندگی احتیاط کنیم.",
+      "en": "We must be careful in driving.",
+      "tokens": [
+        {
+          "surface": "باید",
+          "lexemeId": "lx-0290"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "رانندگی",
+          "lexemeId": "lx-6244"
+        },
+        {
+          "surface": "احتیاط",
+          "lexemeId": "lx-6245"
+        },
+        {
+          "surface": "کنیم",
+          "lexemeId": "lx-0097"
         }
       ]
     }
   ],
   "vocabUsed": [
+    "lx-0002",
+    "lx-0007",
     "lx-0010",
-    "lx-0067",
-    "lx-0299",
-    "lx-0553",
-    "lx-0835",
-    "lx-1100",
-    "lx-1206",
-    "lx-1806"
+    "lx-0082",
+    "lx-0083",
+    "lx-0086",
+    "lx-0097",
+    "lx-0152",
+    "lx-0167",
+    "lx-0290",
+    "lx-0572",
+    "lx-0578",
+    "lx-5792",
+    "lx-6069",
+    "lx-6227",
+    "lx-6244",
+    "lx-6245"
   ],
   "newWords": [
-    "lx-0067",
-    "lx-0553",
-    "lx-0835",
-    "lx-1100",
-    "lx-1206",
-    "lx-1806"
+    "lx-0082",
+    "lx-0572",
+    "lx-0578",
+    "lx-5792",
+    "lx-6069",
+    "lx-6227",
+    "lx-6244",
+    "lx-6245"
   ],
   "newWordRatio": 0,
   "source": "seed",

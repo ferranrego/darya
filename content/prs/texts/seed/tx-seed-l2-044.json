@@ -2,24 +2,96 @@
   "id": "tx-seed-l2-044",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "رفتن به مسجد",
+  "titleEn": "Going to the mosque",
   "sentences": [
     {
-      "target": "دلیل مشخص واقعی است.",
-      "en": "The specific reason is real.",
+      "target": "پدرم روز جمعه به مسجد می‌رود.",
+      "en": "My father goes to the mosque on Friday.",
       "tokens": [
         {
-          "surface": "دلیل",
-          "lexemeId": "lx-1070"
+          "surface": "پدرم",
+          "lexemeId": "lx-0052"
         },
         {
-          "surface": "مشخص",
-          "lexemeId": "lx-1018"
+          "surface": "روز",
+          "lexemeId": "lx-0040"
         },
         {
-          "surface": "واقعی",
-          "lexemeId": "lx-1032"
+          "surface": "جمعه",
+          "lexemeId": "lx-6068"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مسجد",
+          "lexemeId": "lx-0135"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "او با همسایه‌ها یکجا نماز می‌خواند.",
+      "en": "He prays together with the neighbors.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "همسایه‌ها",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "یکجا",
+          "lexemeId": "lx-6105"
+        },
+        {
+          "surface": "نماز",
+          "lexemeId": "lx-6253"
+        },
+        {
+          "surface": "می‌خواند",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "مسجد قریه ما تازه رنگ شده است.",
+      "en": "The mosque of our village has been freshly painted.",
+      "tokens": [
+        {
+          "surface": "مسجد",
+          "lexemeId": "lx-0135"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "تازه",
+          "lexemeId": "lx-0204"
+        },
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "شده",
+          "lexemeId": "lx-0149"
         },
         {
           "surface": "است",
@@ -28,42 +100,60 @@
       ]
     },
     {
-      "target": "او مردم را می‌انگیزد.",
-      "en": "He rouses the people.",
+      "target": "صدای اذان بسیار بلند است.",
+      "en": "The sound of the call to prayer is very loud.",
       "tokens": [
         {
-          "surface": "او",
-          "lexemeId": "lx-0012"
+          "surface": "صدای",
+          "lexemeId": "lx-0034"
         },
         {
-          "surface": "مردم",
-          "lexemeId": "lx-0059"
+          "surface": "اذان",
+          "lexemeId": "lx-6254"
         },
         {
-          "surface": "را",
-          "lexemeId": "lx-0007"
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
         },
         {
-          "surface": "می‌انگیزد",
-          "lexemeId": "lx-0477"
+          "surface": "بلند",
+          "lexemeId": "lx-0226"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     }
   ],
   "vocabUsed": [
-    "lx-0007",
+    "lx-0003",
+    "lx-0008",
     "lx-0010",
     "lx-0012",
-    "lx-0059",
-    "lx-0477",
-    "lx-1018",
-    "lx-1032",
-    "lx-1070"
+    "lx-0014",
+    "lx-0034",
+    "lx-0040",
+    "lx-0052",
+    "lx-0081",
+    "lx-0089",
+    "lx-0098",
+    "lx-0135",
+    "lx-0141",
+    "lx-0149",
+    "lx-0167",
+    "lx-0204",
+    "lx-0226",
+    "lx-0255",
+    "lx-6068",
+    "lx-6105",
+    "lx-6253",
+    "lx-6254"
   ],
   "newWords": [
-    "lx-0477",
-    "lx-1018",
-    "lx-1032"
+    "lx-0135",
+    "lx-6253",
+    "lx-6254"
   ],
   "newWordRatio": 0,
   "source": "seed",

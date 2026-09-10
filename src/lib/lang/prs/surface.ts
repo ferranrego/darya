@@ -89,24 +89,6 @@ const PRESENT_ENDING: Record<Person, { target: string; translit: string }> = {
 };
 
 /**
- * Present-stem transliterations, keyed by the infinitive's `matchKey`-folded
- * form (same key `VERB_OVERRIDES` uses). Not derivable from the infinitive's
- * own transliteration: present stems are suppletive in the script
- * (`conjugate.ts`'s own header) and so is their pronunciation - رفتن
- * (raftan)'s present stem رو is "raw", not built from "raft" by any rule.
- * Populated only for the verbs the shipped frames actually use; a missing
- * entry fails loudly rather than mistransliterating.
- */
-const PRESENT_STEM_TRANSLIT: Record<string, string> = {
-  رفتن: "raw",
-  خوردن: "khor",
-  کردن: "kon",
-  دیدن: "bin",
-  آمدن: "ā",
-  خواستن: "khwāh",
-};
-
-/**
  * Present indicative (می‌X) for a regular verb, one person, affirmative only -
  * the form a beginner frame needs. Present stems are suppletive (see
  * `conjugate.ts`'s own header) so both the script form and its
@@ -114,17 +96,21 @@ const PRESENT_STEM_TRANSLIT: Record<string, string> = {
  * missing either throws, the same fail-loudly contract as the Catalan
  * module's unauthored forms.
  */
-export function presentIndicative(infinitive: string, person: Person): { target: string; translit: string } {
+export function presentIndicative(
+  entry: { target: string; targetNormalized?: string; presentStem?: string; presentStemTranslit?: string },
+  person: Person
+): { target: string; translit: string } {
+  const infinitive = entry.targetNormalized ?? entry.target;
   const key = infinitive.replace(/[آأإ]/g, "ا");
   const override = VERB_OVERRIDES[key];
-  const stemTranslit = PRESENT_STEM_TRANSLIT[infinitive];
-  if (!override?.presentStem || !stemTranslit) {
+  const stemTranslit = entry.presentStemTranslit;
+  if (!entry.presentStem || !stemTranslit) {
     throw new Error(`presentIndicative("${infinitive}"): no presentStem/translit authored for this verb`);
   }
   const past = derivePastStem(infinitive);
   if (!past) throw new Error(`presentIndicative("${infinitive}"): not a دن/تن infinitive`);
 
-  const stem = override.presentStem;
+  const stem = entry.presentStem;
   const ending = PRESENT_ENDING[person];
   return {
     target: `می${ZWNJ}${stem}${ending.target}`,
@@ -154,8 +140,10 @@ export function presentOfDashtan(person: Person): { target: string; translit: st
  */
 export function inflectionHint(entry: {
   target: string;
+  targetNormalized?: string;
   pos: string;
   translit?: string | null;
+  presentStemTranslit?: string;
 }): string | null {
   try {
     if (entry.pos === "verb" && entry.target === "داشتن") {
@@ -163,7 +151,7 @@ export function inflectionHint(entry: {
       return `${entry.target} -> ${form.target} (${form.translit})`;
     }
     if (entry.pos === "verb") {
-      const form = presentIndicative(entry.target, "3sg");
+      const form = presentIndicative(entry, "3sg");
       return `${entry.target} -> ${form.target} (${form.translit})`;
     }
     if (entry.pos === "noun" && entry.translit) {

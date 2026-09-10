@@ -2,70 +2,154 @@
   "id": "tx-seed-l2-033",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "چکر مکتب",
+  "titleEn": "The school trip",
   "sentences": [
     {
-      "target": "خارجی آزادی می‌خواهد.",
-      "en": "The foreigner wants freedom.",
+      "target": "شاگردان مکتب به چکر می‌روند.",
+      "en": "The school students go on a trip.",
       "tokens": [
         {
-          "surface": "خارجی",
-          "lexemeId": "lx-0604"
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
         },
         {
-          "surface": "آزادی",
-          "lexemeId": "lx-0270"
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
         },
         {
-          "surface": "می‌خواهد",
-          "lexemeId": "lx-0099"
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "چکر",
+          "lexemeId": "lx-0599"
+        },
+        {
+          "surface": "می‌روند",
+          "lexemeId": "lx-0089"
         }
       ]
     },
     {
-      "target": "رخسار او در ماموریت مستقیم بود.",
-      "en": "His cheek was straight in the precinct.",
+      "target": "معلم ما در بس نشسته است.",
+      "en": "Our teacher is sitting in the bus.",
       "tokens": [
         {
-          "surface": "رخسار",
-          "lexemeId": "lx-0728"
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
         },
         {
-          "surface": "او",
-          "lexemeId": "lx-0012"
+          "surface": "ما",
+          "lexemeId": "lx-0014"
         },
         {
           "surface": "در",
           "lexemeId": "lx-0002"
         },
         {
-          "surface": "ماموریت",
-          "lexemeId": "lx-0543"
+          "surface": "بس",
+          "lexemeId": "lx-6128"
         },
         {
-          "surface": "مستقیم",
-          "lexemeId": "lx-0610"
+          "surface": "نشسته",
+          "lexemeId": "lx-0160"
         },
         {
-          "surface": "بود",
-          "lexemeId": "lx-0096"
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما به بند قرغه می‌رویم.",
+      "en": "We go to Qargha Dam.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بند",
+          "lexemeId": "lx-0373"
+        },
+        {
+          "surface": "قرغه",
+          "lexemeId": "lx-6232"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "در آنجا آب و هوا خوب است.",
+      "en": "There the weather is good.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "آب",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     }
   ],
   "vocabUsed": [
+    "lx-0001",
     "lx-0002",
-    "lx-0012",
-    "lx-0096",
-    "lx-0099",
-    "lx-0270",
-    "lx-0543",
-    "lx-0604",
-    "lx-0610",
-    "lx-0728"
+    "lx-0003",
+    "lx-0010",
+    "lx-0014",
+    "lx-0037",
+    "lx-0063",
+    "lx-0075",
+    "lx-0077",
+    "lx-0078",
+    "lx-0089",
+    "lx-0126",
+    "lx-0160",
+    "lx-0175",
+    "lx-0373",
+    "lx-0599",
+    "lx-6128",
+    "lx-6232"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-0077",
+    "lx-0078",
+    "lx-0373",
+    "lx-0599",
+    "lx-6128",
+    "lx-6232"
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

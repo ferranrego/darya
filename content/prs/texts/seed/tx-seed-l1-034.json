@@ -2,28 +2,32 @@
   "id": "tx-seed-l1-034",
   "formatVersion": "1.5.0",
   "level": "L1",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "باغ ما",
+  "titleEn": "Our garden",
   "sentences": [
     {
-      "target": "الماری و تشناب بزرگ است.",
-      "en": "The cupboard and the bathroom are big.",
+      "target": "در باغ ما درخت سیب است.",
+      "en": "In our garden there is an apple tree.",
       "tokens": [
         {
-          "surface": "الماری",
-          "lexemeId": "lx-6044"
+          "surface": "در",
+          "lexemeId": "lx-0002"
         },
         {
-          "surface": "و",
-          "lexemeId": "lx-0001"
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
         },
         {
-          "surface": "تشناب",
-          "lexemeId": "lx-6047"
+          "surface": "ما",
+          "lexemeId": "lx-0014"
         },
         {
-          "surface": "بزرگ",
-          "lexemeId": "lx-0341"
+          "surface": "درخت",
+          "lexemeId": "lx-0138"
+        },
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
         },
         {
           "surface": "است",
@@ -32,37 +36,95 @@
       ]
     },
     {
-      "target": "کلید کجا است؟",
-      "en": "Where is the key?",
+      "target": "من یک سیب شیرین می‌خورم.",
+      "en": "I eat a sweet apple.",
       "tokens": [
         {
-          "surface": "کلید",
-          "lexemeId": "lx-6159"
+          "surface": "من",
+          "lexemeId": "lx-0011"
         },
         {
-          "surface": "کجا",
-          "lexemeId": "lx-0019"
+          "surface": "یک",
+          "lexemeId": "lx-0025"
         },
         {
-          "surface": "است",
-          "lexemeId": "lx-0010"
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "می‌خورم",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "برادر من آب می‌آورد.",
+      "en": "My brother brings water.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "آب",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "می‌آورد",
+          "lexemeId": "lx-0232"
+        }
+      ]
+    },
+    {
+      "target": "ما زیر درخت می‌نشینیم.",
+      "en": "We sit under the tree.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "زیر",
+          "lexemeId": "lx-6099"
+        },
+        {
+          "surface": "درخت",
+          "lexemeId": "lx-0138"
+        },
+        {
+          "surface": "می‌نشینیم",
+          "lexemeId": "lx-0160"
         }
       ]
     }
   ],
   "vocabUsed": [
-    "lx-0001",
+    "lx-0002",
     "lx-0010",
-    "lx-0019",
-    "lx-0341",
-    "lx-6044",
-    "lx-6047",
-    "lx-6159"
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0037",
+    "lx-0053",
+    "lx-0091",
+    "lx-0114",
+    "lx-0120",
+    "lx-0138",
+    "lx-0139",
+    "lx-0160",
+    "lx-0232",
+    "lx-6099"
   ],
   "newWords": [
-    "lx-6044",
-    "lx-6047",
-    "lx-6159"
+    "lx-0114"
   ],
   "newWordRatio": 0,
   "source": "seed",

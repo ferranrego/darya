@@ -71,6 +71,21 @@
       "surface": "شدید",
       "correctLexemeId": "lx-0681",
       "reason": "Used as the adjective 'severe'. The collision is with شدن (to become, lx-0149)'s 2nd-person-plural past."
+    },
+    {
+      "surface": "پخته",
+      "correctLexemeId": "lx-0651",
+      "reason": "پخته is the adjective 'cooked', not the verb پختن."
+    },
+    {
+      "surface": "برنج",
+      "correctLexemeId": "lx-0111",
+      "reason": "برنج is the noun 'rice', not the verb رنجیدن."
+    },
+    {
+      "surface": "خرد",
+      "correctLexemeId": "lx-3247",
+      "reason": "خرد is the adjective 'small', not the verb خریدن."
     }
   ]
 }

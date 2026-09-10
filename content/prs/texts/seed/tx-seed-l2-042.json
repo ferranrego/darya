@@ -2,80 +2,133 @@
   "id": "tx-seed-l2-042",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "متن",
-  "titleEn": "The text",
+  "titleTarget": "امتحان",
+  "titleEn": "Taking an exam",
   "sentences": [
     {
-      "target": "دهقان شرایط سازمان را می‌شکافد.",
-      "en": "The farmer splits the organization's conditions.",
+      "target": "امروز در پوهنتون امتحان داریم.",
+      "en": "Today we have an exam at the university.",
       "tokens": [
         {
-          "surface": "دهقان",
-          "lexemeId": "lx-0236"
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
         },
         {
-          "surface": "شرایط",
-          "lexemeId": "lx-1069"
+          "surface": "در",
+          "lexemeId": "lx-0002"
         },
         {
-          "surface": "سازمان",
-          "lexemeId": "lx-1240"
+          "surface": "پوهنتون",
+          "lexemeId": "lx-0076"
         },
         {
-          "surface": "را",
-          "lexemeId": "lx-0007"
+          "surface": "امتحان",
+          "lexemeId": "lx-0220"
         },
         {
-          "surface": "می‌شکافد",
-          "lexemeId": "lx-0459"
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
         }
       ]
     },
     {
-      "target": "او موی اسپ را می‌تابد.",
-      "en": "He twists the horse's hair.",
+      "target": "من دیشب بسیار درس خواندم.",
+      "en": "I studied a lot last night.",
       "tokens": [
         {
-          "surface": "او",
-          "lexemeId": "lx-0012"
+          "surface": "من",
+          "lexemeId": "lx-0011"
         },
         {
-          "surface": "موی",
-          "lexemeId": "lx-0494"
+          "surface": "دیشب",
+          "lexemeId": "lx-6240"
         },
         {
-          "surface": "اسپ",
-          "lexemeId": "lx-0482"
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
         },
         {
-          "surface": "را",
-          "lexemeId": "lx-0007"
+          "surface": "درس",
+          "lexemeId": "lx-0216"
         },
         {
-          "surface": "می‌تابد",
-          "lexemeId": "lx-0460"
+          "surface": "خواندم",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "سوال‌ها کمی مشکل بود.",
+      "en": "The questions were a bit difficult.",
+      "tokens": [
+        {
+          "surface": "سوال‌ها",
+          "lexemeId": "lx-0221"
+        },
+        {
+          "surface": "کمی",
+          "lexemeId": "lx-3933"
+        },
+        {
+          "surface": "مشکل",
+          "lexemeId": "lx-1276"
+        },
+        {
+          "surface": "بود",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "امیدوارم نمره خوب بگیرم.",
+      "en": "I hope to get a good grade.",
+      "tokens": [
+        {
+          "surface": "امیدوارم",
+          "lexemeId": "lx-6252"
+        },
+        {
+          "surface": "نمره",
+          "lexemeId": "lx-0793"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "بگیرم",
+          "lexemeId": "lx-0153"
         }
       ]
     }
   ],
   "vocabUsed": [
-    "lx-0007",
-    "lx-0012",
-    "lx-0236",
-    "lx-0459",
-    "lx-0460",
-    "lx-0482",
-    "lx-0494",
-    "lx-1069",
-    "lx-1240"
+    "lx-0002",
+    "lx-0011",
+    "lx-0043",
+    "lx-0063",
+    "lx-0076",
+    "lx-0095",
+    "lx-0096",
+    "lx-0098",
+    "lx-0153",
+    "lx-0167",
+    "lx-0216",
+    "lx-0220",
+    "lx-0221",
+    "lx-0793",
+    "lx-1276",
+    "lx-3933",
+    "lx-6240",
+    "lx-6252"
   ],
   "newWords": [
-    "lx-0236",
-    "lx-0459",
-    "lx-0460",
-    "lx-0482",
-    "lx-1069",
-    "lx-1240"
+    "lx-0076",
+    "lx-0216",
+    "lx-0793",
+    "lx-1276",
+    "lx-3933",
+    "lx-6252"
   ],
   "newWordRatio": 0,
   "source": "seed",

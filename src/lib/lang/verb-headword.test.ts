@@ -79,7 +79,7 @@ describe("verbHeadwordProblem", () => {
  * hint still renders, which is the failure mode to fear. One real case per
  * part of speech per language is enough to catch a wiring mistake.
  */
-const HINT_CASES: Record<string, [{ target: string; pos: string; translit?: string }, RegExp | null][]> = {
+const HINT_CASES: Record<string, [{ target: string; pos: string; translit?: string; presentStem?: string; presentStemTranslit?: string }, RegExp | null][]> = {
   ca: [
     [{ target: "bonic", pos: "adjective" }, /bonic \(m\) \/ bonica \(f\)/],
     [{ target: "cantar", pos: "verb" }, /cantar -> canta/],
@@ -89,7 +89,7 @@ const HINT_CASES: Record<string, [{ target: string; pos: string; translit?: stri
   ],
   prs: [
     [{ target: "داشتن", pos: "verb" }, /داشتن ->/],
-    [{ target: "کردن", pos: "verb" }, /کردن ->/],
+    [{ target: "کردن", pos: "verb", presentStem: "کن", presentStemTranslit: "kon" }, /کردن ->/],
     // A noun with no transliteration is skipped rather than half-rendered.
     [{ target: "کتاب", pos: "noun" }, null],
     [{ target: "کتاب", pos: "noun", translit: "kitāb" }, /کتاب ->/],
