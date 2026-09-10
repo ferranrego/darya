@@ -22,6 +22,44 @@ export interface LexiconIndex {
  * reimplementing this and risking the two silently drifting apart - the same
  * reasoning as `generatedSurfacesOf` in the Catalan module.
  */
+/**
+ * Why `normalized` cannot be a Dari verb headword, or null if it can.
+ *
+ * Two rules, in the order the content gate applied them before they moved here,
+ * plus the exemption list they always had: است، باشد and باید are finite forms
+ * and a modal, kept as standalone headwords because learners meet them
+ * constantly and look them up by themselves.
+ *
+ * That exemption used to live in `validate-content.ts` as a set of lexeme ids.
+ * All three ids also exist in the Catalan lexicon (`ens`, `fins després`,
+ * `llet`), so once the check stopped being gated on `lang === "prs"` the ids
+ * would have exempted Catalan entries too. They are not verbs today, so
+ * nothing changed - but that is an accident, not a guarantee. Keyed on the
+ * Dari word instead, it cannot reach another language at all.
+ *
+ * A headword must be an infinitive: compound verbs (کار کردن) conjugate their
+ * light verb, so it is the last space-separated part that has to end in دن/تن.
+ * `derivePastStem` is the same test - reused rather than re-written, so the
+ * validator and the conjugator cannot disagree about what an infinitive is.
+ *
+ * And a compound must be space-separated, because that space is how
+ * `buildLexiconIndex` finds the light verb. A ZWNJ standing in for it
+ * (استخدام‌کردن) silently defeats that - the entry looks fine and conjugates to
+ * nothing. A ZWNJ *inside* a part is legitimate (هیجان‌زده شدن), so only an
+ * entry with no space at all is wrong.
+ */
+const NON_INFINITIVE_HEADWORDS = new Set(["است", "باشد", "باید"]);
+
+export function verbHeadwordProblem(normalized: string): string | null {
+  if (NON_INFINITIVE_HEADWORDS.has(normalized)) return null;
+  const head = normalized.split(" ").at(-1)!;
+  if (!derivePastStem(head)) return "is not an infinitive";
+  if (!normalized.includes(" ") && normalized.includes(ZWNJ)) {
+    return "is a compound verb joined with ZWNJ, use a space";
+  }
+  return null;
+}
+
 export function buildGeneratedForms(
   entries: LexiconEntry[],
   headwords: Map<string, LexiconEntry>,

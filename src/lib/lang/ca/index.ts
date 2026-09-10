@@ -1,5 +1,5 @@
 import type { LanguageProfile } from "../types.ts";
-import { buildLexiconIndex } from "./lexicon-index.ts";
+import { buildLexiconIndex, verbHeadwordProblem } from "./lexicon-index.ts";
 import { matchKey, normalizeCatalan, tokenizeCatalan } from "./normalize.ts";
 import {
   CULTURAL_SETTING,
@@ -46,6 +46,7 @@ export const ca: LanguageProfile = {
     splitSentences: splitSentencesCatalan,
     tokenize: tokenizeCatalan,
     buildIndex: buildLexiconIndex,
+    verbHeadwordProblem,
   },
 
   brand: {

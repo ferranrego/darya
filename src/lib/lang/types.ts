@@ -45,6 +45,24 @@ export interface LanguageText {
    * form→lemma map. Callers only ever see `resolve`.
    */
   buildIndex(entries: LexiconEntry[]): LexiconIndex;
+  /**
+   * Why `normalized` cannot serve as a verb headword, as a clause that reads
+   * after `pos="verb" but "<word>" …`, or null if it can.
+   *
+   * The question is the same in both languages - can the engine actually
+   * resolve this entry's forms? - but the answer is entirely language-specific:
+   * Catalan asks whether the verb has a conjugation spec (`endur` had to be
+   * given an irregular one, or it would have shipped as a verb whose every
+   * inflection was invisible), Dari asks whether it is an infinitive and
+   * whether a compound was joined with a ZWNJ instead of a space.
+   *
+   * It lives here because `validate-content.ts` is the content gate for every
+   * language and must not import one. Those checks used to sit in the script
+   * behind `lang === "ca"` / `lang === "prs"`, reaching directly into
+   * `lang/ca/lexicon-index.ts` and `lang/prs/normalize.ts` - which made the
+   * shared gate the one file that could not survive a per-language repo.
+   */
+  verbHeadwordProblem(normalized: string): string | null;
 }
 
 /**

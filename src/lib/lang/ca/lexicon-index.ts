@@ -42,6 +42,17 @@ export function verbSpec(infinitive: string): CatalanVerbStems | null {
 }
 
 /**
+ * Why `normalized` cannot be a Catalan verb headword, or null if it can.
+ *
+ * A verb with no conjugation spec is one the reader can resolve no form of, so
+ * it is worse than a missing entry: it renders, and every inflection of it is
+ * invisible. `endur` was given an irregular spec for exactly this reason.
+ */
+export function verbHeadwordProblem(normalized: string): string | null {
+  return verbSpec(normalized) ? null : "has no conjugation spec";
+}
+
+/**
  * Gender/number forms of a noun or adjective.
  *
  * Covers the productive patterns a reader actually meets:

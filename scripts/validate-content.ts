@@ -17,14 +17,9 @@ import {
   type TextDocument,
 } from "../src/lib/content/schema.ts";
 
-// ZWNJ is a Perso-Arabic concept, and the compound-spelling check below is a
-// Dari orthography rule - both come from the language module, not the neutral
-// text façade. Phase 3 gives this script a --lang argument.
 import { levelVocabulary } from "../src/lib/content/level-vocabulary.ts";
 import { isRuledOut, isTeachable } from "../src/lib/content/teachability.ts";
 import { isContentWord } from "../src/lib/content/word-selection.ts";
-import { verbSpec as caVerbSpec } from "../src/lib/lang/ca/lexicon-index.ts";
-import { ZWNJ } from "../src/lib/lang/prs/normalize.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
@@ -42,14 +37,8 @@ if (!profile) throw new Error(`No language profile for "${lang}"`);
  * --lang disagrees with the environment - which silently reported every
  * apostrophised Catalan word as out-of-lexicon.
  */
-const { matchKey, normalize, tokenize, buildIndex } = profile.text;
+const { matchKey, normalize, tokenize, buildIndex, verbHeadwordProblem } = profile.text;
 
-/**
- * Verb entries that are legitimately not infinitives: high-frequency finite
- * forms (است، باشد) and a modal (باید) kept as standalone headwords because
- * learners meet them constantly and look them up by themselves.
- */
-const VERB_POS_EXEMPT = new Set(["lx-0010", "lx-0287", "lx-0290"]);
 let errors = 0;
 
 function fail(msg: string) {
@@ -105,25 +94,6 @@ if (existsSync(lexiconPath)) {
       // once shipped tagged pos="verb" - which colours them as verbs in the
       // reader and strips context off their SRS cards. The exemptions are
       // genuine high-frequency finite forms kept as standalone entries.
-      if (lang === "prs" && e.pos === "verb" && !VERB_POS_EXEMPT.has(e.id)) {
-        const head = e.targetNormalized.split(" ").at(-1)!;
-        if (!/(دن|تن)$/.test(head)) {
-          fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" is not an infinitive`);
-        }
-      }
-      // Compounds must be space-separated so lexicon-index can spot the light
-      // verb; a ZWNJ standing in for the space (استخدام‌کردن) silently defeats
-      // that. A ZWNJ *inside* a part is fine (هیجان‌زده شدن), so only flag
-      // entries that have no space at all.
-      if (
-        lang === "prs" &&
-        e.pos === "verb" &&
-        !e.targetNormalized.includes(" ") &&
-        e.targetNormalized.includes(ZWNJ) &&
-        /(دن|تن)$/.test(e.targetNormalized)
-      ) {
-        fail(`lexicon ${e.id}: compound verb joined with ZWNJ, use a space (${e.targetNormalized})`);
-      }
 
       /**
        * Part of speech, in the one direction that can be decided mechanically.
@@ -178,13 +148,19 @@ if (existsSync(lexiconPath)) {
       }
 
       /**
-       * A Catalan verb must be conjugable, or the reader can resolve none of
-       * its forms. `endur` had to be given an irregular spec for exactly this
-       * reason; without one it would have shipped as a verb whose every
-       * inflection was invisible to the engine.
+       * A verb headword the engine cannot resolve is worse than a missing one:
+       * it renders, and every inflection of it is invisible. What disqualifies
+       * one is language-specific, so the language answers - see
+       * `verbHeadwordProblem` in LanguageText. This replaced three branches
+       * here (two `lang === "prs"`, one `lang === "ca"`) that reached straight
+       * into `lang/prs/normalize.ts` and `lang/ca/lexicon-index.ts`, which made
+       * the shared content gate the one file that could not be shared.
        */
-      if (lang === "ca" && e.pos === "verb" && !caVerbSpec(e.targetNormalized)) {
-        fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" has no conjugation spec`);
+      if (e.pos === "verb") {
+        const problem = verbHeadwordProblem(e.targetNormalized);
+        if (problem) {
+          fail(`lexicon ${e.id}: pos="verb" but "${e.targetNormalized}" ${problem}`);
+        }
       }
     }
 
