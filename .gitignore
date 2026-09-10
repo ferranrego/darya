@@ -66,3 +66,18 @@ content/active
 /test-*.cjs
 /eslint-report.json
 /*.html
+
+# It happened again: a session left ~40 more probes at the repo root
+# (chunk_*.json, result_*.json, scratch_*.cjs, dump.py, new_l3_texts_*.json).
+# Same class as the batch above, so the same treatment - root-anchored so a
+# real content file of a similar name deeper in the tree is never hidden.
+/scratch_*.cjs
+/chunk_*.json
+/result_*.json
+/new_*.json
+/generate_*.cjs
+/generate_*.py
+/patch_*.cjs
+/dump.*
+/process.py
+/compact.txt

@@ -189,6 +189,25 @@ export interface SelectTargetsInput {
  * still produce a text, just a noun-heavy one. Refusing to generate would trade
  * a mediocre text for no text at all.
  */
+/**
+ * Ranking tiers for `selectTargets`, in units of the rank space itself.
+ *
+ * `freqRank` tops out around 6.5k, so an offset of one `TIER` (10x that) is
+ * not a preference - it is a partition. Ordering is therefore: beginner-core
+ * content words, then beginner-core closed-class words, then concrete words,
+ * then everything else, with corpus frequency deciding only inside a tier.
+ *
+ * Open question, deliberately not decided here: the concrete tier applies at
+ * every level, including L5 "Culture & ideas" and L6 "Near-native", whose
+ * whole point is abstract vocabulary. Preferring concrete words there may be
+ * exactly wrong. Measure before changing it - PEDAGOGY.md's own rule is that
+ * a number here must say why it was picked.
+ */
+const RANK_TIER = 1e6;
+const CORE_CONTENT_TIER = 2 * RANK_TIER;
+const CORE_CLOSED_CLASS_TIER = 1 * RANK_TIER;
+const CONCRETE_TIER = 0.5 * RANK_TIER;
+
 export function selectTargets({
   candidates,
   count,
@@ -207,9 +226,23 @@ export function selectTargets({
   // words at rank 1-40, crowding out `gos`, `poma` and `casa`, which is the
   // exact failure the core was introduced to fix. Closed-class members are
   // still boosted over non-core words, just behind the content words.
+  //
+  // These offsets are tiers, not nudges. The largest `freqRank` in either
+  // lexicon is ~6.5k, so any offset far above that partitions the candidates
+  // absolutely: every word in a higher tier outranks every word below it, and
+  // `freqRank` only ever breaks ties *within* a tier. `TIER` is written as a
+  // multiple of that ceiling so the property stays true if a lexicon grows,
+  // rather than resting on 2e6 happening to be a big number today.
   const rank = (e: LexiconEntry) => {
-    if (!preferBeginnerCore || !e.tags.includes(BEGINNER_CORE_TAG)) return e.freqRank;
-    return e.freqRank - (isContentWord(e) ? 2e6 : 1e6);
+    let score = e.freqRank;
+    // Concrete before abstract. A corpus makes `estat`, `cosa` and `manera`
+    // commoner than `poma` or `gos` (PEDAGOGY §5), so frequency alone teaches
+    // a learner to discuss systems before they can name food. Note this tier
+    // is inert *inside* the beginner core, where every entry is concrete
+    // already - its only live effect is on the words drawn beyond the core.
+    if (e.concreteness === true) score -= CONCRETE_TIER;
+    if (!preferBeginnerCore || !e.tags.includes(BEGINNER_CORE_TAG)) return score;
+    return score - (isContentWord(e) ? CORE_CONTENT_TIER : CORE_CLOSED_CLASS_TIER);
   };
   const byRank = [...candidates].sort((a, b) => rank(a) - rank(b));
 
