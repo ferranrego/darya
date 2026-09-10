@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "دریا",
+  "titleTranslit": "daryā",
   "titleEn": "The river",
   "sentences": [
     {
       "target": "دریا کلان است.",
+      "translit": "daryā kalān ast.",
       "en": "The river is big.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "گل خوب است.",
+      "translit": "gul khōb ast.",
       "en": "The flower is good.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "درخت سبز است.",
+      "translit": "derakht sabz ast.",
       "en": "The tree is green.",
       "tokens": [
         {
@@ -61,6 +65,7 @@
     },
     {
       "target": "زمین کلان است.",
+      "translit": "zamīn kalān ast.",
       "en": "The ground is big.",
       "tokens": [
         {
@@ -79,6 +84,7 @@
     },
     {
       "target": "کوه بلند است.",
+      "translit": "kōh buland ast.",
       "en": "The mountain is tall.",
       "tokens": [
         {

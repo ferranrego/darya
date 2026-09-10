@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "خانم مشهور",
+  "titleTranslit": "khānum-e mashhūr",
   "titleEn": "Famous lady",
   "sentences": [
     {
       "target": "یک اتفاق کلان است.",
+      "translit": "yak ittifāq-e kalān ast.",
       "en": "It is a big event.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "اتفاق خوبی بود.",
+      "translit": "ittifāq-e khōbē būd.",
       "en": "It was a good event.",
       "tokens": [
         {
@@ -47,6 +50,7 @@
     },
     {
       "target": "خانم یک نامه می‌فرستد.",
+      "translit": "khānum yak nāma mēfiristad.",
       "en": "The lady sends a letter.",
       "tokens": [
         {
@@ -69,6 +73,7 @@
     },
     {
       "target": "خانم آن را می‌فرستد.",
+      "translit": "khānum ān rā mēfiristad.",
       "en": "The lady sends it.",
       "tokens": [
         {
@@ -91,6 +96,7 @@
     },
     {
       "target": "او از خانم مشهور می‌آموزد.",
+      "translit": "ō az khānum-e mashhūr mēāmōzad.",
       "en": "He learns from the famous lady.",
       "tokens": [
         {
@@ -117,6 +123,7 @@
     },
     {
       "target": "این خانم بسیار مشهور است.",
+      "translit": "īn khānum bisyār mashhūr ast.",
       "en": "This lady is very famous.",
       "tokens": [
         {

@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "صحبت",
+  "titleTranslit": "suhbat",
   "titleEn": "Conversation",
   "sentences": [
     {
       "target": "آقای احمد صحبت می‌کند.",
+      "translit": "āqā-ye ahmad suhbat mēkunad.",
       "en": "Mr. Ahmad talks.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "باد می‌دمد و هوا سرد است.",
+      "translit": "bād mēdamad wa hawā sard ast.",
       "en": "The wind blows and the weather is cold.",
       "tokens": [
         {
@@ -59,6 +62,7 @@
     },
     {
       "target": "باد می‌دمد.",
+      "translit": "bād mēdamad.",
       "en": "The wind blows.",
       "tokens": [
         {
@@ -73,6 +77,7 @@
     },
     {
       "target": "اسم او در تاریخ می‌ماند.",
+      "translit": "ism-e ō dar tārīkh mēmānad.",
       "en": "His name remains in history.",
       "tokens": [
         {
@@ -99,6 +104,7 @@
     },
     {
       "target": "اسم او در تاریخ است.",
+      "translit": "ism-e ō dar tārīkh ast.",
       "en": "His name is in history.",
       "tokens": [
         {
@@ -125,6 +131,7 @@
     },
     {
       "target": "این صحبت برای آقای احمد است.",
+      "translit": "īn suhbat barā-ye āqā-ye ahmad ast.",
       "en": "This conversation is for Mr. Ahmad.",
       "tokens": [
         {

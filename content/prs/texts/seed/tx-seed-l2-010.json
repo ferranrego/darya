@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "حال مهم",
+  "titleTranslit": "hāl-e muhim",
   "titleEn": "Important condition",
   "sentences": [
     {
       "target": "من قبل از تو به قرار می‌رسم.",
+      "translit": "man qabl az tu ba qarār mērasam.",
       "en": "I arrive at the appointment before you.",
       "tokens": [
         {
@@ -41,6 +43,7 @@
     },
     {
       "target": "حال او بسیار مهم است.",
+      "translit": "hāl-e ō bisyār muhim ast.",
       "en": "His condition is very important.",
       "tokens": [
         {
@@ -67,6 +70,7 @@
     },
     {
       "target": "او فقط یک قرار دارد.",
+      "translit": "ō faqat yak qarār dārad.",
       "en": "He only has one appointment.",
       "tokens": [
         {
@@ -93,6 +97,7 @@
     },
     {
       "target": "قبل از این، حال او بد بود.",
+      "translit": "qabl az īn, hāl-e ō bad būd.",
       "en": "Before this, his condition was bad.",
       "tokens": [
         {

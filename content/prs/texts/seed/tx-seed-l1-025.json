@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "موسیقی",
+  "titleTranslit": "mōsīqī",
   "titleEn": "Music",
   "sentences": [
     {
       "target": "پسر مانده است.",
+      "translit": "pesar mānda ast.",
       "en": "The boy is tired.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "مادر جواب می‌دهد.",
+      "translit": "mādar jawāb mēdehad.",
       "en": "The mother answers.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "موسیقی مقبول است.",
+      "translit": "mōsīqī maqbūl ast.",
       "en": "The music is beautiful.",
       "tokens": [
         {
@@ -61,6 +65,7 @@
     },
     {
       "target": "معلم می‌پرسد.",
+      "translit": "mu'allem mēpursad.",
       "en": "The teacher asks.",
       "tokens": [
         {

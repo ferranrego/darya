@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "خبر تازه",
+  "titleTranslit": "khabar-e tāza",
   "titleEn": "Fresh news",
   "sentences": [
     {
       "target": "مرد دوباره در شهر گشت می‌زند.",
+      "translit": "mard dubāra dar shahr gasht mēzanad.",
       "en": "The man strolls in the city again.",
       "tokens": [
         {
@@ -37,6 +39,7 @@
     },
     {
       "target": "او یک خبر تازه دارد.",
+      "translit": "ō yak khabar-e tāza dārad.",
       "en": "He has fresh news.",
       "tokens": [
         {
@@ -63,6 +66,7 @@
     },
     {
       "target": "حرف او بسیار خوب است.",
+      "translit": "harf-e ō bisyār khōb ast.",
       "en": "His word is very good.",
       "tokens": [
         {

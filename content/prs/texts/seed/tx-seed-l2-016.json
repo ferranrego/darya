@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "کشتی",
+  "titleTranslit": "kishtī",
   "titleEn": "Ship",
   "sentences": [
     {
       "target": "رئیس کشتی در ساحل است.",
+      "translit": "ra'īs-e kishtī dar sāhil ast.",
       "en": "The boss of the ship is on the beach.",
       "tokens": [
         {
@@ -33,6 +35,7 @@
     },
     {
       "target": "او یک درخت می‌کارد.",
+      "translit": "ō yak derakht mēkārad.",
       "en": "He plants a tree.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "او قند را در آب می‌اندازد.",
+      "translit": "ō qand rā dar āb mēandāzad.",
       "en": "He throws sugar in the water.",
       "tokens": [
         {

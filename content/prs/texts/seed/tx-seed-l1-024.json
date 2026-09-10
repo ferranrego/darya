@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "مردم",
+  "titleTranslit": "mardum",
   "titleEn": "People",
   "sentences": [
     {
       "target": "مردم به بازار می‌روند.",
+      "translit": "mardum ba bāzār mērawand.",
       "en": "The people go to the market.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "این مرد جوان است.",
+      "translit": "īn mard jawān ast.",
       "en": "This man is young.",
       "tokens": [
         {
@@ -51,6 +54,7 @@
     },
     {
       "target": "نام او احمد است.",
+      "translit": "nām-e ō ahmad ast.",
       "en": "His name is Ahmad.",
       "tokens": [
         {
@@ -73,6 +77,7 @@
     },
     {
       "target": "یک نفر می‌آید.",
+      "translit": "yak nafar mēāyad.",
       "en": "One person comes.",
       "tokens": [
         {
@@ -91,6 +96,7 @@
     },
     {
       "target": "این افغانستان است.",
+      "translit": "īn afghānistān ast.",
       "en": "This is Afghanistan.",
       "tokens": [
         {

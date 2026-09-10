@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "داکتر",
+  "titleTranslit": "dāktar",
   "titleEn": "The doctor",
   "sentences": [
     {
       "target": "مرد مریض است.",
+      "translit": "mard marēz ast.",
       "en": "The man is sick.",
       "tokens": [
         {
@@ -25,6 +27,7 @@
     },
     {
       "target": "او درد دارد.",
+      "translit": "ō dard dārad.",
       "en": "He has pain.",
       "tokens": [
         {
@@ -43,6 +46,7 @@
     },
     {
       "target": "داکتر می‌آید.",
+      "translit": "dāktar mēāyad.",
       "en": "The doctor comes.",
       "tokens": [
         {
@@ -57,6 +61,7 @@
     },
     {
       "target": "پسر گم است.",
+      "translit": "pesar gum ast.",
       "en": "The boy is lost.",
       "tokens": [
         {
@@ -75,6 +80,7 @@
     },
     {
       "target": "مرد دروازه را می‌گشاید.",
+      "translit": "mard darwāza rā mēgushāyad.",
       "en": "The man opens the door.",
       "tokens": [
         {

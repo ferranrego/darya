@@ -25,12 +25,6 @@
  * here in the same commit.
  */
 export const TRANSLIT_BACKLOG: ReadonlySet<string> = new Set([
-  "l1-023",
-  "l1-024",
-  "l1-025",
-  "l1-026",
-  "l1-027",
-  "l1-028",
   "l1-029",
   "l1-030",
   "l1-031",
@@ -40,14 +34,6 @@ export const TRANSLIT_BACKLOG: ReadonlySet<string> = new Set([
   "l1-035",
   "l1-036",
   "l1-037",
-  "l2-009",
-  "l2-010",
-  "l2-011",
-  "l2-012",
-  "l2-013",
-  "l2-014",
-  "l2-015",
-  "l2-016",
   "l2-017",
   "l2-018",
   "l2-019",

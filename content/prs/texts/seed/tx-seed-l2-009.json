@@ -3,10 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "کشور",
+  "titleTranslit": "kishwar",
   "titleEn": "Country",
   "sentences": [
     {
       "target": "این جای خوبی است.",
+      "translit": "īn jāy-e khōbē ast.",
       "en": "This is a good place.",
       "tokens": [
         {
@@ -29,6 +31,7 @@
     },
     {
       "target": "زبان این کشور دری است.",
+      "translit": "zabān-e īn kishwar darī ast.",
       "en": "The language of this country is Dari.",
       "tokens": [
         {
@@ -55,6 +58,7 @@
     },
     {
       "target": "من باید در این مورد بدانم.",
+      "translit": "man bāyad dar īn mawrid bidānam.",
       "en": "I must know about this case.",
       "tokens": [
         {
@@ -85,6 +89,7 @@
     },
     {
       "target": "او باید به این جای برود.",
+      "translit": "ō bāyad ba īn jāy birawad.",
       "en": "He must go to this place.",
       "tokens": [
         {
