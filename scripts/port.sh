@@ -35,7 +35,7 @@ for sha in "$@"; do
     "src/lib/lang/$OTHER" "content/$OTHER" "scripts/data" 2>/dev/null \
     | grep -E "(^|/)($OTHER)(/|[.-])" || true)
   if [ -n "$removed" ]; then
-    echo "    dropping $SIBN-only files this repo does not carry:"
+    echo "    dropping Riera-only files this repo does not carry:"
     printf '      %s\n' $removed
     git rm -rq --ignore-unmatch $removed
   fi
