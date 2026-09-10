@@ -32,7 +32,7 @@
  *   node scripts/build-frequency.ts --lang ca --apply    # rewrite the lexicon
  */
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import type { LexiconEntry } from "../src/lib/content/schema.ts";
@@ -42,7 +42,6 @@ import { buildLexiconIndex as buildPrs } from "../src/lib/lang/prs/lexicon-index
 import { tokenizeDari } from "../src/lib/lang/prs/normalize.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { SOURCES, download, readCorpus } from "./corpus.ts";
-import { insertionOrderSuffix } from "./freq-integrity.ts";
 
 /**
  * How much each source of evidence counts, per language. Weights are normalized,
@@ -93,6 +92,41 @@ function bandForRank(rank: number, total: number): number {
     if (rank <= Math.round(BAND_FRACTIONS[i] * total)) return i + 1;
   }
   return BAND_FRACTIONS.length;
+}
+
+/**
+ * The hand-authored curated order.
+ *
+ * Read from `scripts/data/core-lexicon-*.txt`, NOT from the lexicon's own
+ * `freqRank`, and this is the whole point. Taking `curated` from `freqRank`
+ * made this script read its own previous output: each run blended the last
+ * run's answer with the corpora again, so the curated signal decayed
+ * geometrically and the script was not idempotent. Measured on an unchanged
+ * lexicon, three consecutive runs moved موتر 915 -> 1273 -> 1637 and پوهنتون
+ * 860 -> 1204 -> 1549 - the Afghan-specific words the 0.75 curated weight
+ * exists to protect, sliding toward their Iranian corpus rank a third of the
+ * way per run. `مکتب 75, موتر 83, کلان 65` in the header describes these
+ * files; the lexicon had long since stopped saying that.
+ *
+ * ONLY the rank column is read. `build-lexicon.ts` warns that these files are
+ * stale as *content* - later enrichment went into lexicon.json directly - and
+ * that warning stands. The authored ordering is the one thing in them that
+ * cannot go stale, because nothing else writes it.
+ */
+export function readCuratedRanks(): Map<string, number> {
+  const out = new Map<string, number>();
+  const dir = join(import.meta.dirname, "data");
+  for (const file of readdirSync(dir).filter((f) => /^core-lexicon-\d+\.txt$/.test(f))) {
+    for (const line of readFileSync(join(dir, file), "utf8").split("\n")) {
+      if (!line || line.startsWith("#")) continue;
+      const [rawRank, target] = line.split("|");
+      const rank = Number(rawRank);
+      if (!Number.isFinite(rank) || rank <= 0 || !target?.trim()) continue;
+      // First writer wins: a word listed twice keeps its earliest authored rank.
+      if (!out.has(target.trim())) out.set(target.trim(), rank);
+    }
+  }
+  return out;
 }
 
 // ---------------------------------------------------------------------------
@@ -194,11 +228,14 @@ async function main() {
    * the blend for those entries only, so real corpus evidence decides them
    * instead - the same treatment a corpus gives a word it never saw.
    */
-  const untrustedCurated = new Set(insertionOrderSuffix(entries).map((e) => e.id));
-  if (untrustedCurated.size > 0) {
+  const curatedRank = weights.curated > 0 ? readCuratedRanks() : new Map<string, number>();
+  const untrustedCurated = new Set(
+    entries.filter((e) => !curatedRank.has(e.target)).map((e) => e.id),
+  );
+  if (weights.curated > 0) {
     console.log(
-      `\n${untrustedCurated.size} entries have never been independently ranked ` +
-        `(freqRank tracks insertion order) - excluding their curated weight from the blend`,
+      `\n${curatedRank.size} hand-authored ranks; ${untrustedCurated.size} entries have none ` +
+        `- excluding their curated weight from the blend`,
     );
   }
 
@@ -231,7 +268,8 @@ async function main() {
     for (const [id, w] of sources) {
       let rank: number;
       if (id === "curated") {
-        rank = entry.freqRank;
+        // Never `entry.freqRank`: that is this script's own previous output.
+        rank = curatedRank.get(entry.target) ?? entry.freqRank;
       } else {
         const r = perSourceRank[id].get(entry.id);
         if (r !== undefined) seen = true;
@@ -245,9 +283,14 @@ async function main() {
 
   // Ties are broken by the curated rank, so words no corpus saw keep their
   // authored order at the tail rather than being shuffled arbitrarily.
-  scored.sort((a, b) =>
-    a.score !== b.score ? a.score - b.score : a.entry.freqRank - b.entry.freqRank,
-  );
+  scored.sort((a, b) => {
+    if (a.score !== b.score) return a.score - b.score;
+    // Ties break on the authored order too, for the same reason: breaking on
+    // the current freqRank would reintroduce the feedback loop at every tie.
+    const ca = curatedRank.get(a.entry.target) ?? a.entry.freqRank;
+    const cb = curatedRank.get(b.entry.target) ?? b.entry.freqRank;
+    return ca - cb;
+  });
 
   const total = scored.length;
   const unseen = scored.filter((s) => !s.seen).length;
@@ -306,4 +349,8 @@ async function main() {
   console.log(`\nrewrote ${lexiconPath}`);
 }
 
-await main();
+// Only when run directly, so a test can import `readCuratedRanks` without
+// rebuilding the lexicon as a side effect.
+if (process.argv[1] && import.meta.filename === process.argv[1]) {
+  await main();
+}
