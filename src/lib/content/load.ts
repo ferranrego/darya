@@ -57,7 +57,7 @@ import {
 function withoutFlattenedExamples(file: LexiconFile): LexiconFile {
   let hidden = 0;
   const entries = file.entries.map((e) => {
-    if (!isFlattenedTranslit(e.exampleTranslit, e.exampleTarget)) return e;
+    if (!isFlattenedTranslit(e.exampleTranslit, e.exampleTarget, e.id)) return e;
     hidden++;
     return { ...e, exampleTranslit: undefined };
   });

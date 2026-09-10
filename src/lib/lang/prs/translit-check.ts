@@ -31,7 +31,22 @@
  *    (`būdand`) uncaught, which is the right way round to be wrong: a missed
  *    entry stays on the repair list, whereas a false positive hides correct
  *    Dari from a learner who needed it.
+ *
+ * `VERIFIED_SHORT_VOWEL` is the last resort for what remains. ی is counted
+ * because dropping it costs 21 real detections, but ی also spells the
+ * diphthong in `bayn` and `tarafayn`, where no long vowel is missing and none
+ * should appear. Those sentences cannot be told apart from the script alone,
+ * so they are named. Add an id only after reading the sentence and confirming
+ * the transliteration is right; it is an assertion about one sentence, not a
+ * way to quiet the rule.
  */
+
+/** Correct Dari that happens to contain no long vowel at all. Verified by hand. */
+export const VERIFIED_SHORT_VOWEL: ReadonlySet<string> = new Set([
+  // عقد بیع بین طرفین منعقد شد - aqd-i bay' bayn-i tarafayn mun'aqid shud.
+  // Three ی, every one of them a diphthong or a consonant.
+  "lx-4197",
+]);
 
 /** Below this a string is too short for the absence of a long vowel to mean anything. */
 const MIN_LENGTH = 25;
@@ -52,8 +67,13 @@ export function scriptLongVowelCount(target: string): number {
 }
 
 /** True when `translit` dropped the long vowels its own script spells out. */
-export function isFlattenedTranslit(translit: string | undefined, target: string): boolean {
+export function isFlattenedTranslit(
+  translit: string | undefined,
+  target: string,
+  id?: string,
+): boolean {
   if (!translit || translit.length <= MIN_LENGTH) return false;
   if (/[āēōīū]/.test(translit)) return false;
+  if (id && VERIFIED_SHORT_VOWEL.has(id)) return false;
   return scriptLongVowelCount(target) >= MIN_SCRIPT_LONG_VOWELS;
 }

@@ -25,8 +25,8 @@ import { contentRoot } from "./content-path.ts";
 import { isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
 
 
-const isFlattened = (t: string | undefined, target: string) =>
-  isFlattenedTranslit(t, target);
+const isFlattened = (t: string | undefined, target: string, id?: string) =>
+  isFlattenedTranslit(t, target, id);
 
 const lexPath = join(contentRoot(), "lexicon", "lexicon.json");
 const raw = JSON.parse(readFileSync(lexPath, "utf8"));
@@ -44,7 +44,7 @@ if (flag("--emit") !== null) {
   const n = Number(flag("--emit")) || 40;
   const out = flag("--out") || "translit-batch.json";
   const batch = parsed.entries
-    .filter((e) => isFlattened(e.exampleTranslit, e.exampleTarget))
+    .filter((e) => isFlattened(e.exampleTranslit, e.exampleTarget, e.id))
     .slice(0, n)
     .map((e) => ({
       id: e.id,
@@ -77,15 +77,15 @@ if (flag("--emit") !== null) {
     if (!r.fixed) continue;
     const entry = byId.get(r.id) as { exampleTranslit?: string; exampleTarget: string } | undefined;
     if (!entry) { problems.push(`${r.id}: not in lexicon`); continue; }
-    if (isFlattened(r.fixed, entry.exampleTarget)) { problems.push(`${r.id}: repair is still flattened (${r.fixed})`); continue; }
+    if (isFlattened(r.fixed, entry.exampleTarget, r.id)) { problems.push(`${r.id}: repair is still flattened (${r.fixed})`); continue; }
     entry.exampleTranslit = r.fixed;
     applied++;
   }
   if (problems.length) { console.error(problems.join("\n")); process.exit(1); }
   lexiconFileSchema.parse(raw);
   writeFileSync(lexPath, JSON.stringify(raw, null, 2) + "\n");
-  const left = raw.entries.filter((e: { exampleTranslit?: string; exampleTarget: string }) =>
-    isFlattened(e.exampleTranslit, e.exampleTarget),
+  const left = raw.entries.filter((e: { id: string; exampleTranslit?: string; exampleTarget: string }) =>
+    isFlattened(e.exampleTranslit, e.exampleTarget, e.id),
   ).length;
   console.log(`applied ${applied} repairs; ${left} entries still flattened`);
 } else {

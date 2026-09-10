@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { isFlattenedTranslit, scriptLongVowelCount } from "./translit-check.ts";
+import { VERIFIED_SHORT_VOWEL, isFlattenedTranslit, scriptLongVowelCount } from "./translit-check.ts";
 
 /**
  * These four sentences are the whole reason this check is script-aware.
@@ -49,5 +49,29 @@ describe("Iranian-flattened transliteration", () => {
 
   it("says nothing about strings too short to judge", () => {
     expect(isFlattenedTranslit("ketab", "کتاب")).toBe(false);
+  });
+});
+
+/**
+ * The escape hatch, and why it has to exist.
+ *
+ * ی is counted as a written long vowel because not counting it costs 21 real
+ * detections. But ی also spells the diphthong in `bayn` and `tarafayn`, where
+ * nothing is missing - and the script cannot tell the two apart. Rather than
+ * blunt the rule, those sentences are named one at a time.
+ */
+describe("verified short-vowel sentences", () => {
+  it("is not flagged once verified by id", () => {
+    const target = "عقد بیع بین طرفین منعقد شد.";
+    const translit = "aqd-i bay' bayn-i tarafayn mun'aqid shud.";
+    // The rule alone cannot see that those three ی are diphthongs.
+    expect(isFlattenedTranslit(translit, target)).toBe(true);
+    expect(isFlattenedTranslit(translit, target, "lx-4197")).toBe(false);
+  });
+
+  it("does not excuse a genuinely flattened sentence that shares an id", () => {
+    // The exemption is about one sentence, so a real defect under a listed id
+    // would still be wrong - the point is that ids here are verified by hand.
+    expect(VERIFIED_SHORT_VOWEL.size).toBeLessThanOrEqual(5);
   });
 });

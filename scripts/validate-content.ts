@@ -89,7 +89,7 @@ function checkDariTranslit(
   }
   if (
     script &&
-    isFlattenedTranslit(text, script) &&
+    isFlattenedTranslit(text, script, id) &&
     !(id && FLATTENED_TRANSLIT_BACKLOG.has(id))
   ) {
     fail(

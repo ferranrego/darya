@@ -59,7 +59,7 @@ describe("transliteration backlog", () => {
  * invisible. Same rule as above: the ceiling comes down as batches are
  * repaired, and never goes up.
  */
-const FLATTENED_CEILING = 1080;
+const FLATTENED_CEILING = 975;
 
 describe("flattened transliteration backlog", () => {
   it("never grows", () => {
@@ -75,8 +75,8 @@ describe("flattened transliteration backlog", () => {
       lexicon.entries
         .filter(
           (e) =>
-            isFlattenedTranslit(e.exampleTranslit, e.exampleTarget) ||
-            isFlattenedTranslit(e.translit, e.target),
+            isFlattenedTranslit(e.exampleTranslit, e.exampleTarget, e.id) ||
+            isFlattenedTranslit(e.translit, e.target, e.id),
         )
         .map((e) => e.id),
     );
@@ -98,7 +98,7 @@ describe("flattened transliterations never reach a learner", () => {
   it("is stripped from every entry the app loads", async () => {
     const { lexicon } = await import("./load.ts");
     const leaked = lexicon.entries
-      .filter((e) => isFlattenedTranslit(e.exampleTranslit, e.exampleTarget))
+      .filter((e) => isFlattenedTranslit(e.exampleTranslit, e.exampleTarget, e.id))
       .map((e) => e.id);
     expect(leaked).toEqual([]);
   });
@@ -109,7 +109,7 @@ describe("flattened transliterations never reach a learner", () => {
     const file = join(process.cwd(), "content", "prs", "lexicon", "lexicon.json");
     const raw = lexiconFileSchema.parse(JSON.parse(readFileSync(file, "utf8")));
     const flaggedByRule = raw.entries.filter((e) =>
-      isFlattenedTranslit(e.exampleTranslit, e.exampleTarget),
+      isFlattenedTranslit(e.exampleTranslit, e.exampleTarget, e.id),
     ).length;
     expect(flaggedByRule).toBeGreaterThan(0);
     expect(flaggedByRule).toBeLessThanOrEqual(FLATTENED_TRANSLIT_BACKLOG.size);
