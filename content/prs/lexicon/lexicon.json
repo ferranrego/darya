@@ -2372,7 +2372,8 @@
       "exampleTranslit": "yak chīz mēkhāham bugōyam.",
       "exampleEn": "I want to say one thing.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -6105,7 +6106,8 @@
       "exampleTranslit": "shāyad fardā biyāyam.",
       "exampleEn": "Maybe I'll come tomorrow.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -6196,7 +6198,8 @@
       "exampleTranslit": "mu'allem ba mā ijāza dād.",
       "exampleEn": "The teacher gave us permission.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6181",
       "targetNormalized": "اجازه",
@@ -7088,7 +7091,8 @@
       "exampleTranslit": "īn bihtar ast.",
       "exampleEn": "This is better.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -7352,8 +7356,7 @@
       "exampleTranslit": "az yak sū khōb ast.",
       "exampleEn": "On one side it is good.",
       "tags": [
-        "Advanced",
-        "beginner-core"
+        "Advanced"
       ]
     },
     {
@@ -7451,7 +7454,8 @@
       "exampleTranslit": "ma’nā-ye īn kalema chīst?",
       "exampleEn": "What is the meaning of this word?",
       "tags": [
-        "Advanced"
+        "Advanced",
+        "beginner-core"
       ]
     },
     {
@@ -7969,7 +7973,8 @@
       "exampleTranslit": "yak khāhish dāram.",
       "exampleEn": "I have a request.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -8207,7 +8212,8 @@
       "exampleTranslit": "muta'assifam ki nāwaqt kardam.",
       "exampleEn": "I am sorry that I am late.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -9308,8 +9314,7 @@
       "exampleTranslit": "ba khud mēbālad.",
       "exampleEn": "He boasts about himself.",
       "tags": [
-        "Actions & Movement",
-        "beginner-core"
+        "Actions & Movement"
       ],
       "presentStem": "بال"
     },
@@ -11489,8 +11494,7 @@
       "exampleTranslit": "mār mēkhazad.",
       "exampleEn": "The snake crawls.",
       "tags": [
-        "Actions & Movement",
-        "beginner-core"
+        "Actions & Movement"
       ],
       "presentStem": "خز"
     },
@@ -18589,7 +18593,8 @@
       "exampleTranslit": "hatman fardā mēāyam.",
       "exampleEn": "I will definitely come tomorrow.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ]
     },
     {
@@ -32442,7 +32447,8 @@
       "exampleTranslit": "man dawat-i ō rā pazīruftam.",
       "exampleEn": "I accepted his invitation.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -37601,8 +37607,7 @@
       "exampleTranslit": "Rabete-ye joz' va koll az mabahes-e mohem-e metafizik ast.",
       "exampleEn": "The relationship between part and whole is an important topic in metaphysics.",
       "tags": [
-        "Abstract Concepts",
-        "beginner-core"
+        "Abstract Concepts"
       ]
     },
     {
@@ -40075,7 +40080,8 @@
       "exampleTranslit": "āyā imkān dārad īn nazariya ishtibāh bāshad?",
       "exampleEn": "Is there a possibility that this theory is wrong?",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -46908,8 +46914,7 @@
       "exampleTranslit": "shakk sarāghāz-i yaqīn ast.",
       "exampleEn": "Doubt is the beginning of certainty.",
       "tags": [
-        "Abstract Concepts",
-        "beginner-core"
+        "Abstract Concepts"
       ]
     },
     {
@@ -62081,7 +62086,8 @@
       "exampleTranslit": "tekrār-e wāzhagān-e kelidi yaki az rāh-hā-ye ijād-e ensejām dar matn ast.",
       "exampleEn": "The repetition of key words is one of the ways to create cohesion in the text.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ]
     },
     {
@@ -114529,6 +114535,43 @@
       "tags": [
         "Abstract Concepts"
       ]
+    },
+    {
+      "target": "لحظه",
+      "translit": "lahza",
+      "glossEn": "moment, instant",
+      "pos": "noun",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "لطفاً یک لحظه صبر کنید.",
+      "exampleTranslit": "lutfan yak lahza sabr kunēd.",
+      "exampleEn": "Please wait a moment.",
+      "tags": [
+        "beginner-core",
+        "Time & Calendar"
+      ],
+      "id": "lx-6222",
+      "targetNormalized": "لحظه",
+      "freqRank": 6219,
+      "freqBand": 10
+    },
+    {
+      "target": "موافق",
+      "translit": "muwāfiq",
+      "glossEn": "in agreement, agreeing",
+      "pos": "adjective",
+      "register": "neutral",
+      "variants": [],
+      "exampleTarget": "من با تو موافق هستم.",
+      "exampleTranslit": "man bā tu muwāfiq hastam.",
+      "exampleEn": "I agree with you.",
+      "tags": [
+        "beginner-core"
+      ],
+      "id": "lx-6223",
+      "targetNormalized": "موافق",
+      "freqRank": 6220,
+      "freqBand": 10
     }
   ]
 }
