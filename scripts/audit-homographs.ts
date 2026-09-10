@@ -51,9 +51,7 @@ import { join } from "node:path";
 
 import { lexiconFileSchema, textDocumentSchema, type LexiconEntry } from "../src/lib/content/schema.ts";
 import { isRuledOut } from "../src/lib/content/teachability.ts";
-import { PROFILES } from "../src/lib/lang/index.ts";
-import { generatedSurfacesOf } from "../src/lib/lang/ca/lexicon-index.ts";
-import { buildGeneratedForms } from "../src/lib/lang/prs/lexicon-index.ts";
+import { PROFILES, type LanguageText } from "../src/lib/lang/index.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 
 /** A generated surface that collides with a different entry's own headword. */
@@ -95,66 +93,35 @@ export interface HomographAudit {
 }
 
 /**
- * Every surface `generatedSurfacesOf` would emit for some entry that collides
- * with a *different*, non-ruled-out entry's headword - i.e. every case where
- * `resolve()`'s headwords-beat-generated-forms precedence silently picks the
- * headword's sense over the generated form's, with no way to tell from the
- * surface alone.
+ * Every generated surface that collides with a *different*, non-ruled-out
+ * entry's headword - i.e. every case where `resolve()`'s headwords-beat-
+ * generated-forms precedence silently picks the headword's sense over the
+ * generated form's, with no way to tell from the surface alone.
+ *
+ * This was two functions, `ambiguousSurfacesCa` and `ambiguousSurfacesPrs`,
+ * identical but for how each enumerated generated surfaces - which they did by
+ * importing `lang/ca/lexicon-index.ts` and `lang/prs/lexicon-index.ts`
+ * directly. That is now `text.generatedFormsByKey` on the profile, so this
+ * audit - which `validate-content.ts` runs as part of the shared content gate -
+ * no longer imports any language.
  */
-export function ambiguousSurfacesCa(entries: LexiconEntry[], matchKey: (s: string) => string): Map<string, Ambiguity> {
+export function ambiguousSurfaces(
+  entries: LexiconEntry[],
+  matchKey: (s: string) => string,
+  text: LanguageText,
+): Map<string, Ambiguity> {
   const headwordByKey = new Map<string, LexiconEntry>();
   for (const e of entries) {
     const key = matchKey(e.targetNormalized);
     if (!headwordByKey.has(key)) headwordByKey.set(key, e);
   }
 
-  // First-write-wins per key, mirroring buildLexiconIndex's `generated` map -
-  // entries are frequency-ordered, so a contested key goes to the entry that
-  // would actually win it in the real "generated" bucket.
-  const generatedByKey = new Map<string, { entry: LexiconEntry; surface: string }>();
-  for (const e of entries) {
-    for (const surface of generatedSurfacesOf(e)) {
-      const key = matchKey(surface);
-      if (!generatedByKey.has(key)) generatedByKey.set(key, { entry: e, surface });
-    }
-  }
-
   const out = new Map<string, Ambiguity>();
-  for (const [key, { entry: generator, surface }] of generatedByKey) {
+  for (const [key, { entry: generator, surface }] of text.generatedFormsByKey(entries, headwordByKey)) {
     const headword = headwordByKey.get(key);
     if (!headword || headword.id === generator.id) continue;
     if (isRuledOut(headword)) continue; // a documented, verified redundancy - not a live ambiguity
     out.set(key, { key, surface, generator, headword });
-  }
-  return out;
-}
-
-/**
- * Same question for Dari: does a verb's generated conjugation collide with a
- * different entry's headword? Dari does not generate nominal (plural/possessive)
- * forms into a static map - those are resolved by stripping suffixes at lookup
- * time instead (see `resolve()`'s stemmer) - so verb paradigms are the only
- * generated-form source to check here.
- */
-function ambiguousSurfacesPrs(entries: LexiconEntry[], matchKey: (s: string) => string): Map<string, Ambiguity> {
-  const headwordByKey = new Map<string, LexiconEntry>();
-  for (const e of entries) {
-    const key = matchKey(e.targetNormalized);
-    if (!headwordByKey.has(key)) headwordByKey.set(key, e);
-  }
-
-  const generated = buildGeneratedForms(entries, headwordByKey);
-
-  const out = new Map<string, Ambiguity>();
-  for (const [key, generator] of generated) {
-    const headword = headwordByKey.get(key);
-    if (!headword || headword.id === generator.id) continue;
-    if (isRuledOut(headword)) continue;
-    // buildGeneratedForms only returns the folded key, not the original
-    // spelling (it is built for lookup, not display) - the key itself is
-    // still legible Dari/Persian text (diacritics and alef variants folded),
-    // so it doubles as the display surface here.
-    out.set(key, { key, surface: key, generator, headword });
   }
   return out;
 }
@@ -182,12 +149,9 @@ export function auditHomographs(
   matchKey: (s: string) => string,
 ): HomographAudit {
   const byId = new Map(entries.map((e) => [e.id, e]));
-  const ambiguities =
-    lang === "ca"
-      ? ambiguousSurfacesCa(entries, matchKey)
-      : lang === "prs"
-        ? ambiguousSurfacesPrs(entries, matchKey)
-        : new Map<string, Ambiguity>();
+  const profile = PROFILES[lang as keyof typeof PROFILES];
+  if (!profile) throw new Error(`No language profile for "${lang}"`);
+  const ambiguities = ambiguousSurfaces(entries, matchKey, profile.text);
 
   const reviewByKey = new Map<string, ReviewedHomograph>();
   for (const r of loadReview(root)) {

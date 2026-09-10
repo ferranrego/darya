@@ -63,6 +63,28 @@ export interface LanguageText {
    * shared gate the one file that could not survive a per-language repo.
    */
   verbHeadwordProblem(normalized: string): string | null;
+  /**
+   * Every surface this language *generates* (as opposed to authoring), folded
+   * to `matchKey`, first-write-wins, with a spelling to display for each.
+   *
+   * Entries are frequency-ordered, so first-write-wins hands a contested key to
+   * the word that would actually win it in `buildIndex`'s generated bucket -
+   * the audit has to mirror that precedence or it reports collisions that never
+   * happen.
+   *
+   * `headwordByKey` is passed because some languages need it (Dari attaches
+   * suppletive forms to the headword that owns them); a language that does not
+   * may ignore it.
+   *
+   * Only `scripts/audit-homographs.ts` calls this, and only to ask which
+   * generated surfaces collide with a different entry's headword. It is here
+   * because that audit runs inside the shared content gate, so it must not
+   * import a language.
+   */
+  generatedFormsByKey(
+    entries: LexiconEntry[],
+    headwordByKey: Map<string, LexiconEntry>,
+  ): Map<string, { entry: LexiconEntry; surface: string }>;
 }
 
 /**

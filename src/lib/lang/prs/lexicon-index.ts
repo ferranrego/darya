@@ -48,6 +48,26 @@ export interface LexiconIndex {
  * nothing. A ZWNJ *inside* a part is legitimate (هیجان‌زده شدن), so only an
  * entry with no space at all is wrong.
  */
+/**
+ * Dari generates verb paradigms only - nominal plural/possessive forms are
+ * resolved by stripping suffixes at lookup time (see `resolve`'s stemmer)
+ * rather than expanded into a static map, so there is nothing else to enumerate.
+ *
+ * `buildGeneratedForms` returns the folded key without the original spelling
+ * (it is built for lookup, not display). The key is still legible Dari - only
+ * diacritics and alef variants are folded - so it doubles as the surface.
+ */
+export function generatedFormsByKey(
+  entries: LexiconEntry[],
+  headwordByKey: Map<string, LexiconEntry>,
+): Map<string, { entry: LexiconEntry; surface: string }> {
+  const out = new Map<string, { entry: LexiconEntry; surface: string }>();
+  for (const [key, entry] of buildGeneratedForms(entries, headwordByKey)) {
+    out.set(key, { entry, surface: key });
+  }
+  return out;
+}
+
 const NON_INFINITIVE_HEADWORDS = new Set(["است", "باشد", "باید"]);
 
 export function verbHeadwordProblem(normalized: string): string | null {

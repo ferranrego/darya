@@ -42,6 +42,24 @@ export function verbSpec(infinitive: string): CatalanVerbStems | null {
 }
 
 /**
+ * Catalan generates both verb paradigms and nominal gender/number forms, so
+ * every generated surface comes from `generatedSurfacesOf`. `headwordByKey` is
+ * unused: nothing here needs to be attached to an owning headword.
+ */
+export function generatedFormsByKey(
+  entries: LexiconEntry[],
+): Map<string, { entry: LexiconEntry; surface: string }> {
+  const out = new Map<string, { entry: LexiconEntry; surface: string }>();
+  for (const e of entries) {
+    for (const surface of generatedSurfacesOf(e)) {
+      const key = matchKey(surface);
+      if (!out.has(key)) out.set(key, { entry: e, surface });
+    }
+  }
+  return out;
+}
+
+/**
  * Why `normalized` cannot be a Catalan verb headword, or null if it can.
  *
  * A verb with no conjugation spec is one the reader can resolve no form of, so

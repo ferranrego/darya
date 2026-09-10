@@ -1,5 +1,5 @@
 import type { LanguageProfile } from "../types.ts";
-import { buildLexiconIndex, verbHeadwordProblem } from "./lexicon-index.ts";
+import { buildLexiconIndex, generatedFormsByKey, verbHeadwordProblem } from "./lexicon-index.ts";
 import { matchKey, normalizeDari, tokenizeDari } from "./normalize.ts";
 import {
   CULTURAL_SETTING,
@@ -46,6 +46,7 @@ export const prs: LanguageProfile = {
     tokenize: tokenizeDari,
     buildIndex: buildLexiconIndex,
     verbHeadwordProblem,
+    generatedFormsByKey,
   },
 
   brand: {
