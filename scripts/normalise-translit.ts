@@ -119,8 +119,18 @@ for (const s of sentences) {
     if (!want) return;
     const have = latin[i];
     if (bare(have) === want) return;
-    // Preserve whatever ezafe or enclitic the sentence had attached.
-    const tail = have.slice(bare(have).length);
+    // Preserve whatever ezafe or enclitic the sentence had attached - but an
+    // ezafe's spelling depends on what it attaches to, so it has to be
+    // re-derived rather than carried over. Shortening `barāy-e` to `barā-e`
+    // by copying the tail produced exactly the form `bareEzafeAfterVowel`
+    // exists to reject: after a vowel the ezafe is -ye.
+    const rawTail = have.slice(bare(have).length);
+    const tail =
+      rawTail === "-e" || rawTail === "-ye"
+        ? /[aāēīōū]$/u.test(want)
+          ? "-ye"
+          : "-e"
+        : rawTail;
     next = next.replace(new RegExp(`(^|[\\s,.?!;:(])${have.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=[\\s,.?!;:)]|$)`), `$1${want}${tail}`);
     changed = true;
     sentenceEdits++;
