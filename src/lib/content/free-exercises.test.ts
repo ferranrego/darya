@@ -97,6 +97,29 @@ describe("exercises built from seed text", () => {
     expect(new Set(seen).size).toBe(seen.length);
   });
 
+  it("builds word-order practice, not only blanks", () => {
+    // A cloze can be cut from almost any sentence and only one exercise is
+    // made per sentence, so without a reserved share the cloze pass eats the
+    // whole corpus: measured at 400 clozes and 0 unscrambles. That is how the
+    // fully-built `unscramble` type went unused for so long, and this is the
+    // assertion that stops it happening again.
+    let cloze = 0;
+    let unscramble = 0;
+    const ids = [...vocab];
+    const r = rand();
+    for (let i = 0; i + 5 <= ids.length; i += 5) {
+      const built = buildFreeExercises({ docs, targetLexemeIds: ids.slice(i, i + 8), known, count: 5, rand: r });
+      cloze += built.filter((b) => b.data.type === "cloze").length;
+      unscramble += built.filter((b) => b.data.type === "unscramble").length;
+    }
+    console.log(`over real sessions of five: ${cloze} cloze, ${unscramble} unscramble`);
+    expect(unscramble).toBeGreaterThan(0);
+    // Roughly a third by design; assert only that neither type is a token
+    // presence, so the exact share stays a tuning decision rather than a test.
+    expect(unscramble / (cloze + unscramble)).toBeGreaterThan(0.2);
+    expect(cloze / (cloze + unscramble)).toBeGreaterThan(0.4);
+  });
+
   it("returns nothing rather than something broken when there is no vocabulary", () => {
     expect(buildFreeExercises({ docs, targetLexemeIds: [], known: [], count: 5, rand: rand() })).toEqual([]);
   });
