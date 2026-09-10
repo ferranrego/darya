@@ -49,3 +49,15 @@ content/active
 # Raw corpora for scripts/build-frequency.ts (tens of MB, re-fetch with --download).
 # The derived ranking in scripts/data/freq-*.tsv IS committed.
 /scripts/data/corpus/
+
+# Throwaway probes and generated diagnostics. ~38 of these accumulated at the
+# repo root and were committed - four of them were the only thing failing
+# `pnpm lint`. They are regenerable output, never inputs; keep them untracked
+# so a stray probe cannot break the gate for everyone else.
+*.log
+/scratch/
+/test-*.ts
+/test-*.js
+/test-*.cjs
+/eslint-report.json
+/*.html
