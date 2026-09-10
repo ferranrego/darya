@@ -559,6 +559,48 @@ if (existsSync(seedDir)) {
   fail("content/texts/seed missing");
 }
 
+// --- Iranian vocabulary in the lexicon's own examples -------------------------
+//
+// `INTERFERENCE_RULES` lists the substitutions Dari learners actually reach
+// for, and `live-check.ts` flags them in a learner's draft on every keystroke.
+// Fourteen example sentences used those very words, so the app corrected a
+// learner for typing دانشگاه while showing them دانشگاه on the card next to
+// it. Now repaired to پوهنتون, مکتب, شفاخانه, سرک, موتر and طیاره.
+//
+// `MACHINE_SENSE` is the exception that has to be named. The rule about ماشین
+// is about the *car* sense, where Dari says موتر; as "machine" the word is
+// ordinary Dari, and the entries about machine learning, virtual machines and
+// washing machines are right as they stand.
+if (lexicon && lang === "prs") {
+  const MACHINE_SENSE = new Set([
+    "lx-6221", // ماشین itself, glossed "machine"
+    "lx-0660", // ماشین کالی‌شویی - washing machine
+    "lx-2058", // یادگیری ماشین - machine learning
+    "lx-2826", // یادگیری عمیق, example mentions machine learning
+    "lx-2827", // بینایی ماشین - machine vision
+    "lx-3948", // ماشین الکتریکی - electric machine
+    "lx-4590", // ماشین پروپاگاندا - propaganda machine
+    "lx-4634", // ماشین مجازی - virtual machine
+    "lx-4641", // ماشین بردار پشتیبان - support vector machine
+    "lx-4651", // example mentions machine learning
+    "lx-6420", // مدرسه itself: a madrassa is not a مکتب
+    "lx-5342", // بیمارستان itself, an entry in its own right
+  ]);
+  for (const rule of profile.prompts.interferenceRules) {
+    const key = matchKey(rule.wrong);
+    for (const e of lexicon.entries) {
+      if (MACHINE_SENSE.has(e.id)) continue;
+      if (!e.exampleTarget) continue;
+      if (!tokenize(e.exampleTarget).some((t) => matchKey(t) === key)) continue;
+      fail(
+        `lexicon ${e.id}: example uses "${rule.wrong}" where Dari says ` +
+          `"${rule.right}" - the same substitution live-check.ts flags in a ` +
+          `learner's own writing ("${e.exampleTarget}")`,
+      );
+    }
+  }
+}
+
 // --- Verbs that share a present stem -----------------------------------------
 //
 // Two verbs with the same present stem generate the *same* present-tense
