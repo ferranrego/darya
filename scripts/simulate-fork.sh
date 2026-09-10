@@ -15,6 +15,12 @@
 # tree stayed green throughout, because both languages were present. Only
 # actually removing one shows it.
 #
+# It deletes scripts/data/*<lang>* too. An earlier version did not, and so
+# missed that `SeedTextSource` - the type every language's seed data is
+# described by - lived inside the *Dari data file*, which the Catalan data file
+# imported. The real fork caught it; the simulation had not. If this script says
+# a split is viable, it has to actually be viable.
+#
 # Run this after touching anything under src/lib/lang, scripts/ or the tests
 # that loop over languages.
 set -euo pipefail
@@ -37,9 +43,10 @@ simulate () {
     rm -rf src/lib/ai/alphabet-reading.ts src/app/api/generate/alphabet-reading \
            "src/app/(app)/alphabet" src/components/alphabet
     rm -f scripts/enrich-verb-stems.ts scripts/fix-verb-pos.ts
+    rm -f scripts/*prs*.* scripts/data/*prs*.*
   else
     rm -f scripts/*-ca-*.ts scripts/*ca*.cjs scripts/derive-ca-gender.ts \
-          scripts/process-local-b2-lexicon.ts
+          scripts/process-local-b2-lexicon.ts scripts/data/*ca*.*
     # add-lexicon-entries calls Catalan corpus attestation under a lang guard;
     # a Dari-only repo drops that block with the script it calls.
     python3 - <<'PY'

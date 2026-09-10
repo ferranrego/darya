@@ -4,22 +4,9 @@
  * Constraint: every word must resolve to a lexeme (build fails otherwise).
  */
 
-export interface SeedTextSource {
-  slug: string;
-  level: string;
-  /** Curriculum order within the level. Must be unique per level. */
-  seq: number;
-  titleTarget: string;
-  titleTranslit?: string;
-  titleEn: string;
-  /**
-   * Lexeme ids this text was written to introduce, from the schedule slot.
-   * Optional; when present the build asserts the computed newWords match, so
-   * a drafted text that quietly failed to use its assigned words fails loudly.
-   */
-  introduces?: string[];
-  sentences: Array<{ target: string; translit?: string; en: string }>;
-}
+import type { SeedTextSource } from "./seed-text-source.ts";
+
+export type { SeedTextSource };
 
 export const seedTexts: SeedTextSource[] = [
   {
