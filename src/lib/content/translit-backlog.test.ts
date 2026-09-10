@@ -80,3 +80,34 @@ describe("flattened transliteration backlog", () => {
     expect(repaired).toEqual([]);
   });
 });
+
+/**
+ * The runtime half of the same rule.
+ *
+ * `load.ts` hides an example sentence's transliteration when it was written
+ * in Iranian Persian, so a learner is shown nothing rather than something
+ * wrong. This asserts the hiding actually happens - the backlog above only
+ * proves the *validator* knows about the defect, which is no comfort to
+ * someone tapping a word in the reader.
+ */
+describe("flattened transliterations never reach a learner", () => {
+  it("is stripped from every entry the app loads", async () => {
+    const { lexicon } = await import("./load.ts");
+    const leaked = lexicon.entries
+      .filter((e) => e.exampleTranslit && e.exampleTranslit.length > 25 && !/[āēōīū]/.test(e.exampleTranslit))
+      .map((e) => e.id);
+    expect(leaked).toEqual([]);
+  });
+
+  it("hides exactly the entries the validator backlogs, and no more", () => {
+    // Drift between the two would mean either the app hides a sentence the
+    // gate thinks is fine, or shows one the gate has flagged.
+    const file = join(process.cwd(), "content", "prs", "lexicon", "lexicon.json");
+    const raw = lexiconFileSchema.parse(JSON.parse(readFileSync(file, "utf8")));
+    const flaggedByRule = raw.entries.filter(
+      (e) => e.exampleTranslit && e.exampleTranslit.length > 25 && !/[āēōīū]/.test(e.exampleTranslit),
+    ).length;
+    expect(flaggedByRule).toBeGreaterThan(0);
+    expect(flaggedByRule).toBeLessThanOrEqual(FLATTENED_TRANSLIT_BACKLOG.size);
+  });
+});

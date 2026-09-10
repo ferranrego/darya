@@ -29,7 +29,56 @@ import {
   type Theme,
 } from "./schema";
 
-export const lexicon: LexiconFile = lexiconFileSchema.parse(lexiconJson);
+/**
+ * Longer than this, a transliterated Dari sentence containing no long or
+ * majhul vowel at all is not Dari. Same threshold and same rule as
+ * `checkDariTranslit` in `scripts/validate-content.ts`; kept in sync by
+ * `translit-backlog.test.ts`, which measures both against the same corpus.
+ */
+const MIN_FLATTENING_LENGTH = 25;
+
+function isFlattenedTranslit(text: string | undefined): boolean {
+  return Boolean(text && text.length > MIN_FLATTENING_LENGTH && !/[āēōīū]/.test(text));
+}
+
+/**
+ * Hide an example sentence's transliteration when it was written in Iranian
+ * Persian rather than Dari.
+ *
+ * 1,214 entries (19%) carry one: every long ā and every majhul ē/ō flattened
+ * away, so `anjām wa ghāyat-i insān rasēdan ba kamāl-i mutlaq ast` shipped as
+ * `Anjam va ghayat-e ensan residan be kamal-e motlaq ast`. All but six came
+ * from one bulk generation pass over lx-3000..lx-5999. They surface in the
+ * reader's word sheet and the vocabulary browser, and since the app has no
+ * audio, that line is the only pronunciation a learner ever gets - so a
+ * learner tapping one of these words memorises an Iranian accent, which
+ * PEDAGOGY §9 calls the defect this product cares most about.
+ *
+ * Repairing 1,212 sentences is philology, not a script: measured, only 49% of
+ * their tokens resolve to a lemma whose own transliteration can be trusted,
+ * and *no* sentence is fully covered - 20% of tokens are inflected forms the
+ * morphology engine has no transliteration for, and another 20% do not resolve
+ * at all. So the repair is authored in reviewed batches, and until a given
+ * sentence is repaired the app shows none rather than a wrong one. CLAUDE.md:
+ * a wrong entry is worse than a missing one.
+ *
+ * Deliberately a *rule* and not a list of ids: an entry starts displaying
+ * again the moment its transliteration is fixed, with nothing to keep in sync
+ * and no way for the exemption to outlive the defect.
+ */
+function withoutFlattenedExamples(file: LexiconFile): LexiconFile {
+  let hidden = 0;
+  const entries = file.entries.map((e) => {
+    if (!isFlattenedTranslit(e.exampleTranslit)) return e;
+    hidden++;
+    return { ...e, exampleTranslit: undefined };
+  });
+  return hidden === 0 ? file : { ...file, entries };
+}
+
+export const lexicon: LexiconFile = withoutFlattenedExamples(
+  lexiconFileSchema.parse(lexiconJson),
+);
 export const themes: Theme[] = themesFileSchema.parse(themesJson);
 export const beginnerSpec: BeginnerSpec = beginnerSpecSchema.parse(beginnerSpecJson);
 export const alphabetCourse: AlphabetCourse = alphabetCourseSchema.parse(alphabetJson);
