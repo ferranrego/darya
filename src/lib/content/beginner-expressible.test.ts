@@ -36,88 +36,10 @@ import { BEGINNER_CORE_TAG } from "./word-selection.ts";
  *     not to `costar`, because an authored headword outranks a generated verb
  *     form. The learner gets a gloss; it is the wrong one. Homograph
  *     disambiguation needs sentence context and is not built.
- *   - Multi-word entries (`خدا حافظ`, `si us plau`) cannot be reached through a
+ *   - Multi-word entries (`خدا حافظ`) cannot be reached through a
  *     tokenizer that splits on whitespace, so they are asserted separately
  *     below rather than inside a sentence.
  */
-
-const CA_SENTENCES = [
-  // being, having, identity
-  "Jo soc estudiant.",
-  "Com et dius?",
-  "Quin és el teu nom?",
-  "El meu pare és intel·ligent.",
-  "La meva mare treballa a l'hospital.",
-  "Aquest és el meu germà.",
-  "Tenim una casa petita.",
-  "No tinc gana.",
-  "Ella té dos fills.",
-  "Som quatre a casa.",
-  // description
-  "El riu és blau.",
-  "La casa era gran.",
-  "El gat és molt gras.",
-  "Aquell gos és petit i negre.",
-  "La poma és vermella i dolça.",
-  "El cafè és amarg.",
-  "Aquesta cadira és molt vella.",
-  "El llit és tou.",
-  "El got és buit.",
-  "El carrer és fosc.",
-  // daily life
-  "El gos menja carn.",
-  "Els plats són a taula.",
-  "El gat dorm sota la taula.",
-  "Bec aigua cada dia.",
-  "Mengem pa amb formatge.",
-  "Els dilluns treballo molt.",
-  "Em rento les mans.",
-  "Vaig a l'escola a les vuit.",
-  "Estudio català cada tarda.",
-  "Dormo set hores.",
-  // shopping and money
-  "Quant costa la poma?",
-  "Vull comprar tres ous.",
-  "Aquest llibre és massa car.",
-  "Pago amb diners.",
-  "La botiga és a la dreta.",
-  "Necessito sal i oli.",
-  // place and direction
-  "On és el bany?",
-  "La cuina és petita.",
-  "El parc és a prop.",
-  "Visc en un poble petit.",
-  "El tren arriba tard.",
-  "Anem a la platja.",
-  "Puja amunt, si us plau.",
-  "El llibre és sobre la cadira.",
-  // weather and time
-  "Avui fa sol.",
-  "Ahir va ploure molt.",
-  "Al desembre fa molt fred.",
-  "Demà anirem al mercat.",
-  "A l'estiu fa calor.",
-  "Ara són les tres.",
-  "És dilluns.",
-  // people and feelings
-  "Estic molt cansat.",
-  "Els nens estan contents.",
-  "Tinc son.",
-  "La meva germana està trista.",
-  "M'agrada la música.",
-  // asking
-  "Qui és aquell home?",
-  "Què vols menjar?",
-  "Quan arriba el teu amic?",
-  "Per què no menges?",
-  "Com estàs?",
-  "Parles català?",
-  // polite
-  "Hola, bon dia.",
-  "Moltes gràcies.",
-  "Perdó, no entenc.",
-  "Adeu, fins demà.",
-];
 
 const PRS_SENTENCES = [
   // being, having, identity
@@ -222,7 +144,7 @@ const PRS_SENTENCES = [
  * made it - a test in the default suite - unable to run in a deployment that
  * carries one language.
  */
-const SENTENCES: Record<string, string[]> = { ca: CA_SENTENCES, prs: PRS_SENTENCES };
+const SENTENCES: Record<string, string[]> = { prs: PRS_SENTENCES };
 
 const LANGS = Object.entries(PROFILES)
   .filter(([lang]) => SENTENCES[lang])
@@ -271,15 +193,14 @@ describe.each(LANGS)("$lang: a beginner can say these", ({ lang, sentences, toke
 /**
  * Multi-word entries, asserted as whole strings.
  *
- * `خدا حافظ` and `si us plau` are single lexicon entries, so a whitespace
- * tokenizer can never reach them from inside a sentence - it asks for `حافظ`
- * and `plau`, which are not words anyone authored. Checking them here keeps the
+ * `خدا حافظ` is a single lexicon entry, so a whitespace tokenizer can never
+ * reach it from inside a sentence - it asks for `حافظ`, which is not a word
+ * anyone authored. Checking it here keeps the
  * requirement honest instead of quietly dropping the commonest greeting in the
  * language from the test.
  */
 describe("multi-word entries resolve as phrases", () => {
   const PHRASES: Record<string, string[]> = {
-    ca: ["si us plau", "bon dia", "bona nit", "per què"],
     prs: ["خدا حافظ"],
   };
   const cases = Object.keys(PROFILES)

@@ -690,7 +690,7 @@
     ]
   },
   "pragmaticFunctions": {
-    "_comment": "Same gap as the Catalan spec, found the same way: beginner-expressible.test.ts held ~65 canonical sentences and not one was a request, a permission question, an invitation, an agree/disagree exchange, or a repair strategy beyond ببخشید. closedClasses.politeness stops at greeting/farewell/thanks/one apology token. These are the Council of Europe Threshold / PCIC A1-A2 functions, grouped by speech act rather than semantic domain for the same reason verbFunctions is not. Afghan register matters here specifically: قبول and موافقم are what people actually say to agree, نمی‌توانم to decline, and اجازه (not a calque of a European 'permission') is the ordinary Kabul word for asking or granting it. Three phrases from the original draft named INFLECTED forms and were replaced: امکان ندارد -> امکان and لطفاً تکرار کنید -> تکرار (the content lemma each is built on, which is what a learner has to be able to reach), and می‌خواهی بیایی was dropped outright since both its verbs are already covered by می‌خواهی and بیا in this same block. Every component of each resolves to a teachable lemma, but they name INFLECTED forms, and verify-beginner-core's `direct()` has required a lemma-identical hit since a256cc7 - deliberately, so a requirement cannot be satisfied by a word one derivation removed. The draft predated that and was measured against the laxer checker, which is why it reported no gaps. Each function still carries three or more verified members, so every speech act stays covered; a requirement that can never pass would only leave this gate permanently red.",
+    "_comment": "Same gap as the Catalan spec, found the same way: beginner-expressible.test.ts held ~65 canonical sentences and not one was a request, a permission question, an invitation, an agree/disagree exchange, or a repair strategy beyond ببخشید. closedClasses.politeness stops at greeting/farewell/thanks/one apology token. These are the Council of Europe Threshold / PCIC A1-A2 functions, grouped by speech act rather than semantic domain for the same reason verbFunctions is not. Afghan register matters here specifically: قبول and موافقم are what people actually say to agree, نمی‌توانم to decline, and اجازه (not a calque of a European 'permission') is the ordinary Kabul word for asking or granting it. Members here are inflected surface forms on purpose - what a person says, not citation forms - so verify-beginner-core checks this category against the language's own paradigm (text.generatedFormsByKey) rather than by the lemma-identical rule the other categories use. That rule still guards them: a form is accepted only if the entry really generates it, so the resolver landing on an unrelated lexeme is still rejected.",
     "requestingFavour": [
       "می‌خواهم",
       "خواهش می‌کنم",
@@ -706,13 +706,14 @@
     "offeringInviting": [
       "می‌خواهی",
       "بیا",
-      "دعوت"
+      "دعوت",
+      "می‌خواهی بیایی"
     ],
     "acceptingDeclining": [
       "چرا که نه",
       "حتماً می‌آیم",
       "خوب است",
-      "امکان"
+      "امکان ندارد"
     ],
     "agreeingDisagreeing": [
       "موافق",
@@ -730,7 +731,7 @@
       "آهسته",
       "نمی‌فهمم",
       "معنی این چی است",
-      "تکرار"
+      "لطفاً تکرار کنید"
     ],
     "apologising": [
       "ببخشید",

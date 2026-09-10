@@ -12,6 +12,13 @@
 # this repo deleted. Those are removed here and left visible in the diff: if a
 # port re-adds the other language, you want to see it, not have it land quietly.
 #
+#
+# NOT everything ports. A commit whose point is to remove the OTHER language's
+# dead data has a *mirror* in this repo, not a copy: porting riera's "drop the
+# dead PRS_SENTENCES block" into darya deleted the Dari sentences darya
+# actually runs, and left it testing Catalan it does not ship. Read what a
+# commit does before porting it; this script cherry-picks, it does not think.
+#
 # What never ports: content/ (different languages), brand strings, and anything
 # under src/lib/lang/<code>/. What always ports cleanly: src/ outside lang/,
 # supabase/migrations/ (apply with `supabase db push` afterwards), and shared
@@ -30,15 +37,30 @@ git fetch riera
 OTHER=ca
 for sha in "$@"; do
   echo "==> $(git log -1 --format='%h %s' "$sha")"
-  git cherry-pick -n "$sha"
-  removed=$(git diff --cached --name-only -- \
-    "src/lib/lang/$OTHER" "content/$OTHER" "scripts/data" 2>/dev/null \
-    | grep -E "(^|/)($OTHER)(/|[.-])" || true)
+
+  # A commit touching the other language conflicts modify/delete against files
+  # this repo deleted, and cherry-pick stops there - so do not let that abort
+  # the run before those very files are dropped, which is the point.
+  git cherry-pick -n "$sha" || true
+
+  # Both the staged additions and the unresolved modify/delete conflicts.
+  removed=$( { git diff --cached --name-only; git diff --name-only --diff-filter=U; } \
+    | sort -u | grep -E "(^|/)$OTHER(/|[.-])|(^|/)[^/]*-$OTHER\." || true )
   if [ -n "$removed" ]; then
     echo "    dropping Riera-only files this repo does not carry:"
     printf '      %s\n' $removed
     git rm -rq --ignore-unmatch $removed
   fi
+
+  # Anything still conflicted is a real overlap in shared code: stop and let a
+  # person read it, rather than committing a half-merge.
+  if [ -n "$(git diff --name-only --diff-filter=U)" ]; then
+    echo "    unresolved conflicts in shared files:"
+    git diff --name-only --diff-filter=U | sed 's/^/      /'
+    echo "    resolve them, then: git commit -C $sha"
+    exit 1
+  fi
+
   git commit -q -C "$sha"
   echo "    -> $(git log -1 --format='%h')"
 done
