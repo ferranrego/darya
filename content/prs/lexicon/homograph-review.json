@@ -86,6 +86,56 @@
       "surface": "خرد",
       "correctLexemeId": "lx-3247",
       "reason": "خرد is the adjective 'small', not the verb خریدن."
+    },
+    {
+      "surface": "می‌شنوم",
+      "correctLexemeId": "lx-0156",
+      "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
+    },
+    {
+      "surface": "برمی‌گردد",
+      "correctLexemeId": "lx-6138",
+      "reason": "The bar- prefix settles it: only this verb ('to return') carries it. The verbs it shares a bare stem with ('to stroll', 'to become') do not produce this prefixed form at all."
+    },
+    {
+      "surface": "می‌شنود",
+      "correctLexemeId": "lx-0156",
+      "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
+    },
+    {
+      "surface": "می‌پالید",
+      "correctLexemeId": "lx-0402",
+      "reason": "The collision is with 'to chew'. Every seed sentence using this form takes an abstract or human object, which rules chewing out, so the resolver's pick ('to seek') is the true one."
+    },
+    {
+      "surface": "می‌کشد",
+      "correctLexemeId": "lx-0388",
+      "reason": "Genuinely ambiguous - 'to kill' and 'to pull/draw' share this present stem. In the sentence that survives, the snow kills the flowers, and the resolver picks 'to kill' correctly. The other seed sentence, which meant 'draws water', was rewritten instead: there the resolver's pick was wrong and no review could have fixed it."
+    },
+    {
+      "surface": "می‌شنوند",
+      "correctLexemeId": "lx-0156",
+      "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
+    },
+    {
+      "surface": "گشت",
+      "correctLexemeId": "lx-0380",
+      "reason": "This is the noun half of the ordinary Dari compound for 'to stroll'. The stem collision is with a verb needing the bar- prefix and with 'to become', neither of which fits the sentence."
+    },
+    {
+      "surface": "می‌رهد",
+      "correctLexemeId": "lx-0400",
+      "reason": "Both verbs sharing this stem mean 'to escape'; either resolution is true."
+    },
+    {
+      "surface": "می‌جوید",
+      "correctLexemeId": "lx-0402",
+      "reason": "The collision is with 'to chew'. Every seed sentence using this form takes an abstract or human object, which rules chewing out, so the resolver's pick ('to seek') is the true one."
+    },
+    {
+      "surface": "شنیدند",
+      "correctLexemeId": "lx-0156",
+      "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
     }
   ]
 }

@@ -86,8 +86,8 @@
       ]
     },
     {
-      "target": "او آب می‌کشد.",
-      "en": "He draws water.",
+      "target": "او آب می‌خورد.",
+      "en": "He drinks water.",
       "tokens": [
         {
           "surface": "او",
@@ -98,8 +98,8 @@
           "lexemeId": "lx-0037"
         },
         {
-          "surface": "می‌کشد",
-          "lexemeId": "lx-0388"
+          "surface": "می‌خورد",
+          "lexemeId": "lx-0091"
         }
       ]
     }
@@ -114,20 +114,19 @@
     "lx-0052",
     "lx-0055",
     "lx-0074",
+    "lx-0091",
     "lx-0098",
     "lx-0197",
     "lx-0216",
     "lx-0368",
     "lx-0373",
-    "lx-0382",
-    "lx-0388"
+    "lx-0382"
   ],
   "newWords": [
     "lx-0216",
     "lx-0368",
     "lx-0373",
-    "lx-0382",
-    "lx-0388"
+    "lx-0382"
   ],
   "newWordRatio": 0,
   "source": "seed",

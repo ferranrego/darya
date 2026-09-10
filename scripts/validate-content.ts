@@ -12,6 +12,7 @@ import {
   textDocumentSchema,
   type AlphabetCourse,
   type GrammarExercise,
+  type LexiconEntry,
   type LexiconFile,
   type LevelsFile,
   type TextDocument,
@@ -556,6 +557,85 @@ if (existsSync(seedDir)) {
   console.log(`✓ seed texts (${ok}/${files.length} valid)`);
 } else {
   fail("content/texts/seed missing");
+}
+
+// --- Verbs that share a present stem -----------------------------------------
+//
+// Two verbs with the same present stem generate the *same* present-tense
+// surfaces, so the resolver has to pick one and the other becomes unreachable.
+// `audit-homographs.ts` does not see this: it compares lexicon surfaces, and
+// these forms are generated rather than listed, so it reported "no unreviewed
+// homograph usages" while three shipped beginner texts pointed at the wrong
+// verb.
+//
+// Measured when this check was added, all three learner-facing:
+//   L1 "او آب می‌کشد" (he draws water) linked می‌کشد to کشتن, "to kill" - so a
+//   beginner tapping that word had "to kill" written into their review deck.
+//   L2 "آنها گندم کشت می‌کنند" (they plant wheat) linked کشت to کشتن too, and
+//   L2 "مرد دوباره در شهر می‌گردد" (the man strolls) linked می‌گردد to گردیدن,
+//   "to become". All three sentences were rewritten to use a verb whose forms
+//   belong to one lexeme only.
+//
+// Light-verb compounds are excluded: کار کردن and کردن share کن by
+// construction, and resolving the verb token to کردن is correct there because
+// the noun half is tokenized separately and carries the meaning. The check is
+// therefore about *simplex* verbs whose meanings differ.
+if (lexicon && lang === "prs") {
+  const simplexByStem = new Map<string, LexiconEntry[]>();
+  for (const e of lexicon.entries) {
+    if (e.pos !== "verb" || !e.presentStem) continue;
+    if (e.targetNormalized.includes(" ")) continue; // compound: noun + light verb
+    const key = matchKey(e.presentStem);
+    simplexByStem.set(key, [...(simplexByStem.get(key) ?? []), e]);
+  }
+  const lexemeById = new Map(lexicon.entries.map((e) => [e.id, e]));
+  // A stem collision that a human has looked at and accepted is recorded in
+  // the same file the surface-level homograph audit already uses, so there is
+  // one place a reviewer signs off ambiguity rather than two.
+  const reviewPath = join(root, "lexicon", "homograph-review.json");
+  const stemReview = new Map<string, string>();
+  if (existsSync(reviewPath)) {
+    const file = loadJson(reviewPath) as {
+      reviewed?: Array<{ surface: string; correctLexemeId: string }>;
+    };
+    for (const r of file.reviewed ?? []) {
+      stemReview.set(`${r.surface}\u0000${r.correctLexemeId}`, r.correctLexemeId);
+    }
+  }
+  const contested = new Map<string, LexiconEntry[]>();
+  for (const [key, group] of simplexByStem) {
+    // Same stem *and* the same gloss is a duplicate spelling, not a trap:
+    // شنیدن/شنفتن both mean "to hear", so either resolution teaches the truth.
+    const glosses = new Set(group.map((e) => e.glossEn.trim().toLowerCase()));
+    if (group.length > 1 && glosses.size > 1) contested.set(key, group);
+  }
+
+  const seedFiles = existsSync(seedDir)
+    ? readdirSync(seedDir).filter((f) => f.endsWith(".json"))
+    : [];
+  for (const f of seedFiles) {
+    const parsed = textDocumentSchema.safeParse(loadJson(join(seedDir, f)));
+    if (!parsed.success) continue;
+    for (const s of parsed.data.sentences) {
+      for (const t of s.tokens) {
+        if (!t.lexemeId) continue;
+        const entry = lexemeById.get(t.lexemeId);
+        if (!entry || entry.pos !== "verb" || !entry.presentStem) continue;
+        const group = contested.get(matchKey(entry.presentStem));
+        if (!group) continue;
+        const decided = stemReview.get(`${t.surface}\u0000${t.lexemeId}`);
+        if (decided) continue;
+        const others = group.filter((e) => e.id !== entry.id);
+        fail(
+          `${f}: "${t.surface}" resolves to ${entry.id} ${entry.targetNormalized} ` +
+            `("${entry.glossEn}") but shares its present stem with ` +
+            others.map((e) => `${e.targetNormalized} ("${e.glossEn}")`).join(", ") +
+            ` - either rewrite "${s.target}" to use a verb whose forms belong to one ` +
+            `lexeme, or record the decision in homograph-review.json`,
+        );
+      }
+    }
+  }
 }
 
 // --- Homographs --------------------------------------------------------------

@@ -439,7 +439,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او دروازه را می‌بندد.", en: "He closes the door." },
       { target: "پدر چای می‌فروشد.", en: "The father sells tea." },
       { target: "پسر درس می‌خواند.", en: "The boy studies the lesson." },
-      { target: "او آب می‌کشد.", en: "He draws water." },
+      { target: "او آب می‌خورد.", en: "He drinks water." },
     ],
   },
   {
@@ -678,7 +678,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTarget: "خبر تازه",
     titleEn: "Fresh news",
     sentences: [
-      { target: "مرد دوباره در شهر می‌گردد.", en: "The man strolls in the city again." },
+      { target: "مرد دوباره در شهر گشت می‌زند.", en: "The man strolls in the city again." },
       { target: "او یک خبر تازه دارد.", en: "He has fresh news." },
       { target: "حرف او بسیار خوب است.", en: "His word is very good." },
     ],
@@ -1074,7 +1074,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "قریه ما بسیار آرام است.", en: "Our village is very quiet." },
       { target: "دهقان‌ها در زمین کار می‌کنند.", en: "The farmers work in the land." },
-      { target: "آنها گندم کشت می‌کنند.", en: "They plant wheat." },
+      { target: "آنها گندم می‌کارند.", en: "They plant wheat." },
       { target: "هوای قریه پاک و تازه است.", en: "The weather of the village is clean and fresh." },
     ],
   },
