@@ -24,6 +24,7 @@ import { PROFILES } from "../src/lib/lang/index.ts";
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { insertionOrderSuffix } from "./freq-integrity.ts";
+import { FLATTENED_TRANSLIT_BACKLOG } from "./data/flattened-translit-backlog.ts";
 
 const lang = targetLang();
 const root = contentRoot();
@@ -48,6 +49,49 @@ function fail(msg: string) {
 
 function loadJson(path: string): unknown {
   return JSON.parse(readFileSync(path, "utf8"));
+}
+
+/**
+ * Dari transliteration rules, applied to the lexicon and to seed texts alike.
+ *
+ * PEDAGOGY §9 calls Iranian forms taught as Dari the defect the product cares
+ * most about, and since the app ships no audio, the Latin line *is* the
+ * pronunciation a learner internalises. Getting it wrong does not look like a
+ * bug; it looks like a word, and the learner memorises an Iranian accent.
+ *
+ * The two named-word rules came first and are kept. The third is the one that
+ * generalises: a batch of drafted texts arrived with every long ā and every
+ * majhul ē/ō flattened out - `emroz` for `emrōz`, `khob` for `khōb`, `seb`
+ * for `sēb`, `merawem` for `mērawēm` - and not one of them contained a word
+ * from a blocklist. What they did have in common is that a whole sentence of
+ * Dari went by without a single long vowel in it, which effectively cannot
+ * happen in real Kabuli transliteration. Measured before this shipped: it
+ * flags 30 of those draft lines and none of the 127 transliterated sentences
+ * already in the corpus. A rule that matches a list of words cannot catch a
+ * whole language written the wrong way; this one can.
+ */
+const MIN_FLATTENING_LENGTH = 25;
+
+function checkDariTranslit(text: string, subject: string, field: string, id?: string) {
+  if (/\bmi-/i.test(text)) {
+    fail(`${subject}: ${field} present prefix must be mē-, not mi- (${text})`);
+  }
+  if (/\bshir\b/i.test(text)) {
+    fail(`${subject}: ${field} must use majhul vowel ē (shēr, not shir) (${text})`);
+  }
+  if (/\bdust/i.test(text)) {
+    fail(`${subject}: ${field} must use majhul vowel ō (dōst, not dust) (${text})`);
+  }
+  if (
+    text.length > MIN_FLATTENING_LENGTH &&
+    !/[āēōīū]/.test(text) &&
+    !(id && FLATTENED_TRANSLIT_BACKLOG.has(id))
+  ) {
+    fail(
+      `${subject}: ${field} has no long or majhul vowel anywhere - ` +
+        `Iranian-flattened transliteration (${text})`,
+    );
+  }
 }
 
 // --- Lexicon ---------------------------------------------------------------
@@ -81,13 +125,10 @@ if (existsSync(lexiconPath)) {
         if (!e.translit) fail(`lexicon ${e.id}: missing translit`);
         if (!e.exampleTranslit) fail(`lexicon ${e.id}: missing exampleTranslit`);
         if (lang === "prs") {
-          const checkMajhul = (text: string, field: string) => {
-            if (/\bmi-/i.test(text)) fail(`lexicon ${e.id}: ${field} present prefix must be mē-, not mi- (${text})`);
-            if (/\bshir\b/i.test(text)) fail(`lexicon ${e.id}: ${field} must use majhul vowel ē (shēr, not shir) (${text})`);
-            if (/\bdust/i.test(text)) fail(`lexicon ${e.id}: ${field} must use majhul vowel ō (dōst, not dust) (${text})`);
-          };
-          if (e.translit) checkMajhul(e.translit, "translit");
-          if (e.exampleTranslit) checkMajhul(e.exampleTranslit, "exampleTranslit");
+          if (e.translit) checkDariTranslit(e.translit, `lexicon ${e.id}`, "translit", e.id);
+          if (e.exampleTranslit) {
+            checkDariTranslit(e.exampleTranslit, `lexicon ${e.id}`, "exampleTranslit", e.id);
+          }
         }
       }
       if (e.presentStem !== undefined) {
@@ -451,6 +492,7 @@ if (!profile.capabilities.scriptCourse) {
   }
 }
 
+
 // --- Seed texts ------------------------------------------------------------
 const seedDir = join(root, "texts", "seed");
 const seedIndex = lexicon ? buildIndex(lexicon.entries) : null;
@@ -465,6 +507,12 @@ if (existsSync(seedDir)) {
     }
     const doc: TextDocument = parsed.data;
     if (!levelIds.has(doc.level)) fail(`${f}: unknown level ${doc.level}`);
+    if (lang === "prs") {
+      if (doc.titleTranslit) checkDariTranslit(doc.titleTranslit, f, "titleTranslit");
+      for (const s of doc.sentences) {
+        if (s.translit) checkDariTranslit(s.translit, f, "translit");
+      }
+    }
     for (const s of doc.sentences) {
       for (const t of s.tokens) {
         if (!t.lexemeId) continue;
