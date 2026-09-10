@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "دوستی که در قریه ما کلان شد، حالا در کابل زندگی می‌کند.",
-      "translit": "dōstē ke dar qarya-ye mā kalān shud, hālā dar kābul zendagī mēkunad.",
+      "translit": "dōstē ki dar qarya-ye mā kalān shud, hālā dar kābul zindagī mēkunad.",
       "en": "A friend who grew up in our village now lives in Kabul.",
       "tokens": [
         {
@@ -188,7 +188,7 @@
     },
     {
       "target": "هفته پیش او به ما زنگ زد و گفت که دلش برای قریه تنگ شده است.",
-      "translit": "hafta pēsh ō ba mā zang zad wa guft ke delash barā-ye qarya tang shuda ast.",
+      "translit": "hafta pēsh ō ba mā zang zad wa guft ki delash barā-ye qarya tang shuda ast.",
       "en": "Last week he called us and said that he has become homesick for the village.",
       "tokens": [
         {
@@ -259,7 +259,7 @@
     },
     {
       "target": "ما هم منتظر هستیم که او دوباره به دیدن ما بیاید.",
-      "translit": "mā ham muntazir hastēm ke ō dōbāra ba dīdan-e mā biyāyad.",
+      "translit": "mā ham muntazir hastēm ki ō dōbāra ba dīdan-e mā biyāyad.",
       "en": "We are also waiting for him to come see us again.",
       "tokens": [
         {

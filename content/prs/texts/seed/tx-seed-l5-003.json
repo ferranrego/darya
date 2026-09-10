@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "تاجری که در بازار کابل دکان داشت، تصمیم گرفت کار خود را کلان‌تر کند.",
-      "translit": "tājirē ke dar bāzār-e kābul dukān dāsht, tasmīm gereft kār-e khud rā kalāntar kunad.",
+      "translit": "tājirē ki dar bāzār-e kābul dukān dāsht, tasmīm gereft kār-e khud rā kalāntar kunad.",
       "en": "A trader who had a shop in Kabul's bazaar decided to expand his business.",
       "tokens": [
         {
@@ -71,7 +71,7 @@
     },
     {
       "target": "دوستان او گفتند که این کار خطر دارد و ممکن است ضرر کند.",
-      "translit": "dōstān-e ō guftand ke īn kār khatar dārad wa mumken ast zarar kunad.",
+      "translit": "dōstān-e ō guftand ki īn kār khatar dārad wa mumken ast zarar kunad.",
       "en": "His friends said that this was risky and he might suffer a loss.",
       "tokens": [
         {
@@ -130,7 +130,7 @@
     },
     {
       "target": "اما او فکر کرد که باید دل به دریا بزند.",
-      "translit": "ammā ō fikr kard ke bāyad del ba daryā bezanad.",
+      "translit": "ammā ō fikr kard ki bāyad dil ba daryā bezanad.",
       "en": "But he thought that he had to take the plunge.",
       "tokens": [
         {
@@ -177,7 +177,7 @@
     },
     {
       "target": "او با یک تاجر دیگر در هرات موافقت کرد که با هم کار کنند.",
-      "translit": "ō bā yak tājir-e dīgar dar herāt muwāfiqat kard ke bā ham kār kunand.",
+      "translit": "ō bā yak tājir-e dīgar dar herāt muwāfiqat kard ki bā ham kār kunand.",
       "en": "He agreed with another trader in Herat that they would work together.",
       "tokens": [
         {
@@ -240,7 +240,7 @@
     },
     {
       "target": "اگر این تجارت خوب پیش برود، هر دو تاجر سود خوبی می‌برند.",
-      "translit": "agar īn tejārat khōb pēsh berawad, har dū tājir sūd-e khōbī mēbarand.",
+      "translit": "agar īn tijārat khōb pēsh berawad, har dū tājir sūd-e khōbī mēbarand.",
       "en": "If this trade goes well, both traders will earn a good profit.",
       "tokens": [
         {
@@ -295,7 +295,7 @@
     },
     {
       "target": "بعد از یک سال، تجارت آن‌ها موفق شد و دکانی دیگر هم باز کردند.",
-      "translit": "ba'd az yak sāl, tejārat-e ānhā muwaffaq shud wa dukānī dīgar ham bāz kardand.",
+      "translit": "ba'd az yak sāl, tijārat-e ānhā muwaffaq shud wa dukānī dīgar ham bāz kardand.",
       "en": "After a year, their business succeeded, and they also opened another shop.",
       "tokens": [
         {
@@ -358,7 +358,7 @@
     },
     {
       "target": "مردم گفتند که تصمیم تاجر درست بود.",
-      "translit": "mardum guftand ke tasmīm-e tājir durust būd.",
+      "translit": "mardum guftand ki tasmīm-e tājir durust būd.",
       "en": "People said that the trader's decision was right.",
       "tokens": [
         {
