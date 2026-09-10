@@ -93,3 +93,50 @@ export async function resolveErrors(
     // Deliberately swallowed; see logErrors.
   }
 }
+
+/** One word a learner keeps getting wrong, with how often. */
+export interface StickingPoint {
+  lexemeId: string;
+  /** Open mistakes about this word, most-missed first. */
+  misses: number;
+  /** The most recent one, so a screen can say when. */
+  lastAt: string;
+}
+
+/** How many open mistakes to read back; far more than any screen or session shows. */
+const STICKING_POINT_LIMIT = 200;
+
+/**
+ * The words this learner keeps losing, worst first.
+ *
+ * Counting happens here rather than in SQL because PostgREST cannot group, and
+ * a few hundred rows is nothing. Returns `[]` on any failure: every caller uses
+ * this to *improve* an ordering it can already produce, so a failed read must
+ * degrade to the old behaviour rather than empty a practice session.
+ */
+export async function stickingPoints(
+  db: SupabaseClient,
+  userId: string,
+): Promise<StickingPoint[]> {
+  try {
+    const { data, error } = await db
+      .from("learner_errors")
+      .select("lexeme_id,created_at")
+      .eq("user_id", userId)
+      .is("resolved_at", null)
+      .not("lexeme_id", "is", null)
+      .order("created_at", { ascending: false })
+      .limit(STICKING_POINT_LIMIT);
+    if (error || !data) return [];
+    const byId = new Map<string, StickingPoint>();
+    for (const row of data as { lexeme_id: string; created_at: string }[]) {
+      const seen = byId.get(row.lexeme_id);
+      if (seen) seen.misses += 1;
+      // Rows arrive newest first, so the first one seen is the latest.
+      else byId.set(row.lexeme_id, { lexemeId: row.lexeme_id, misses: 1, lastAt: row.created_at });
+    }
+    return [...byId.values()].sort((a, b) => b.misses - a.misses || b.lastAt.localeCompare(a.lastAt));
+  } catch {
+    return [];
+  }
+}
