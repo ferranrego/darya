@@ -1,6 +1,6 @@
 import { WordsView } from "./words-view";
 
-const FILTERS = ["categories", "learning", "known"] as const;
+const FILTERS = ["categories", "learning", "known", "losing"] as const;
 type Filter = (typeof FILTERS)[number];
 
 export default async function WordsPage({

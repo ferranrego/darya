@@ -4,14 +4,15 @@ import { useMemo, useState } from "react";
 import { Check } from "lucide-react";
 import { levels, themes } from "@/lib/content/load";
 import { curricularKnownCount, entryFor, isPersonalId } from "@/lib/lexeme/lookup";
-import { usePersonalLexemeMap, useUserWords } from "@/lib/queries/hooks";
+import { usePersonalLexemeMap, useStickingPoints, useUserWords } from "@/lib/queries/hooks";
 import { KNOWN_STABILITY_DAYS } from "@/lib/srs/scheduler";
 import { profile as langProfile } from "@/lib/lang";
 
-type Filter = "categories" | "learning" | "known";
+type Filter = "categories" | "learning" | "known" | "losing";
 
 export function WordsView({ initialFilter = "categories" }: { initialFilter?: Filter }) {
   const { data: words } = useUserWords();
+  const { data: sticking } = useStickingPoints();
   const personal = usePersonalLexemeMap();
   const [filter, setFilter] = useState<Filter>(initialFilter);
 
@@ -162,6 +163,20 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
           </button>
           <button
             type="button"
+            onClick={() => setFilter("losing")}
+            className={`flex-1 rounded-lg py-2.5 text-center text-[14px] font-semibold transition-all duration-300 ${
+              filter === "losing"
+                ? "bg-saffron-soft text-saffron shadow-md transform scale-[1.02]"
+                : "text-ink-soft hover:text-ink hover:bg-line/30"
+            }`}
+          >
+            Losing
+            {sticking && sticking.length > 0 ? (
+              <span className="ml-1.5 text-[11px] font-bold">{sticking.length}</span>
+            ) : null}
+          </button>
+          <button
+            type="button"
             onClick={() => setFilter("known")}
             className={`flex-1 rounded-lg py-2.5 text-center text-[14px] font-semibold transition-all duration-300 ${
               filter === "known"
@@ -173,7 +188,49 @@ export function WordsView({ initialFilter = "categories" }: { initialFilter?: Fi
           </button>
         </div>
 
-        {filter === "categories" ? (
+        {filter === "losing" ? (
+          <div className="flex flex-col gap-3 pb-24">
+            {!sticking || sticking.length === 0 ? (
+              <div className="py-12 text-center text-ink-faint text-[15px] bg-surface rounded-2xl border border-line">
+                Nothing to fix right now. Words land here when you miss them, and
+                leave when you get them right again.
+              </div>
+            ) : (
+              sticking.map((point) => {
+                const lexeme = entryFor(point.lexemeId, personal);
+                if (!lexeme) return null;
+                return (
+                  <div
+                    key={point.lexemeId}
+                    className="flex items-center justify-between rounded-2xl border border-line bg-surface p-4 shadow-sm"
+                  >
+                    <div className="flex flex-col gap-1 max-w-[65%]">
+                      <p lang={langProfile.code} className="text-[22px] leading-snug text-left text-ink">
+                        {lexeme.target}
+                      </p>
+                      <p className="text-[13px] text-ink-soft font-medium">{lexeme.translit}</p>
+                      <p className="mt-1 text-[15px] font-semibold leading-tight text-ink">
+                        {lexeme.glossEn}
+                      </p>
+                    </div>
+                    <div className="flex flex-col items-end gap-1 shrink-0">
+                      <span className="text-[20px] font-bold text-saffron">{point.misses}</span>
+                      <span className="text-[10px] uppercase tracking-wider font-bold text-ink-faint">
+                        {point.misses === 1 ? "miss" : "misses"}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })
+            )}
+            {sticking && sticking.length > 0 ? (
+              <p className="px-1 text-[13px] text-ink-soft">
+                Practice starts with these. Get one right first time and it
+                leaves the list.
+              </p>
+            ) : null}
+          </div>
+        ) : filter === "categories" ? (
           <div className="grid grid-cols-2 gap-3 sm:gap-4 pb-24">
             {themes.map((theme) => (
               <a

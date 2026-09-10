@@ -4,6 +4,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useMemo, useState } from "react";
 import { getAlphabetProgress } from "../db/alphabet";
 import { getHistoryActivity } from "../db/activity";
+import { stickingPoints } from "../db/errors";
 import { getGrammarProgress } from "../db/grammar";
 import { getProfile } from "../db/profiles";
 import { getReadTexts, getReadTextsWithDocs, getText, getTextsForLevel } from "../db/texts";
@@ -49,6 +50,23 @@ export function useUserWords() {
     queryKey: ["user_words", user?.id],
     enabled: !!user,
     queryFn: () => getUserWords(db, user!.id),
+  });
+}
+
+/**
+ * The words this learner keeps getting wrong and has not yet got right again.
+ *
+ * Until now every mistake the app saw was discarded, so it could not do the one
+ * thing a teacher does without thinking: notice what this person keeps losing.
+ * This is the read side of that record, and the only one a learner sees.
+ */
+export function useStickingPoints() {
+  const db = useSupabase();
+  const { data: user } = useUser();
+  return useQuery({
+    queryKey: ["sticking_points", user?.id],
+    enabled: !!user,
+    queryFn: () => stickingPoints(db, user!.id),
   });
 }
 

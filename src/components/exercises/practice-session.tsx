@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { logErrors } from "@/lib/db/errors";
+import { logErrors, resolveErrors } from "@/lib/db/errors";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { Loader2, Sparkles } from "lucide-react";
 import { ClozeExercise } from "./cloze-exercise";
@@ -57,7 +57,11 @@ export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
   const wrongRef = useRef<string[]>([]);
 
   const recordResult = useMutation({
-    mutationFn: async ({ exId, isCorrect }: { exId: string; isCorrect: boolean }) => {
+    mutationFn: async ({
+      exId,
+      isCorrect,
+      lexemeIds,
+    }: { exId: string; isCorrect: boolean; lexemeIds: string[] }) => {
       if (!user) return;
       const wrong = wrongRef.current;
       wrongRef.current = [];
@@ -68,11 +72,22 @@ export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
         chosen_answer: wrong[0] ?? null,
         attempt: wrong.length + 1,
       });
+      // The word the exercise was about has to travel with the mistake. A row
+      // carrying only the exercise id records that something went wrong and
+      // nothing that can be re-taught - the whole point is that practice can
+      // lead with the words this learner keeps losing.
+      const lexemeId = lexemeIds[0] ?? null;
       await logErrors(
         db,
         user.id,
-        wrong.map((given) => ({ kind: "exercise" as const, itemId: exId, given })),
+        wrong.map((given) => ({ kind: "exercise" as const, itemId: exId, lexemeId, given })),
       );
+      // Right first time closes the open mistakes about this word. Resolving
+      // rather than deleting keeps "got this wrong four times before it stuck",
+      // which is the shape any later report needs.
+      if (isCorrect && wrong.length === 0 && lexemeId) {
+        await resolveErrors(db, user.id, lexemeId);
+      }
     }
   });
 
@@ -136,7 +151,7 @@ export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
   const data = ex.data as any;
 
   const handleComplete = (isCorrect: boolean) => {
-    recordResult.mutate({ exId: ex.id, isCorrect });
+    recordResult.mutate({ exId: ex.id, isCorrect, lexemeIds: ex.lexeme_ids ?? [] });
     if (index + 1 >= exercises.length) {
       setIsDone(true);
     } else {
