@@ -274,6 +274,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       // Only the targets the text actually contains. Asking for eight and
       // delivering none was invisible before this was recorded.
       newWords: [...taught].sort(),
+      questions: [],
       newWordRatio: req.newWordRatio,
       source: "generated",
       model,

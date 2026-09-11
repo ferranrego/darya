@@ -43,7 +43,7 @@ describe("buildErrorRow", () => {
   });
 
   it("uses the kinds the database check constraint allows", () => {
-    const allowed = ["srs", "exercise", "grammar", "chat", "interference"];
+    const allowed = ["srs", "exercise", "grammar", "chat", "interference", "comprehension"];
     for (const kind of allowed) {
       expect(buildErrorRow("u", { kind: kind as never }).kind).toBe(kind);
     }

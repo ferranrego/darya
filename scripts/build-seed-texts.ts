@@ -173,6 +173,7 @@ for (const levelTexts of byLevel.values()) {
       sentences,
       vocabUsed: [...vocab].sort(),
       newWords,
+      questions: source.questions ?? [],
       newWordRatio: 0,
       source: "seed",
       createdAt: "2026-07-20T00:00:00.000Z",

@@ -589,6 +589,54 @@ export const sentenceSchema = z.object({
   tokens: z.array(tokenSchema).min(1),
 });
 
+/**
+ * One comprehension question about a text.
+ *
+ * Reading questions were originally an AI call on the first read of every
+ * text, which the shared free-tier quota could not afford - so the feature
+ * quietly died and `texts.questions` has been a column nothing reads or
+ * writes. They are written content now, exactly as the texts themselves are,
+ * and derived for free where nobody has written any.
+ *
+ * Both languages are always carried. Which one a learner is shown is a
+ * rendering decision made per level (`questionDisplay` in `comprehension.ts`):
+ * a beginner sees both, because a Dari question about a Dari text makes the
+ * question itself the test rather than the text; above that the Dari stands
+ * alone. Storing only what one level needs would make the other level's
+ * rendering impossible without rewriting the content.
+ */
+export const comprehensionQuestionSchema = z.object({
+  questionEn: z.string().min(1),
+  questionTarget: targetText,
+  questionTranslit: optionalTranslit,
+  /** Two or more answers; exactly one is right. */
+  options: z
+    .array(
+      z.object({
+        en: z.string().min(1),
+        target: targetText,
+        translit: optionalTranslit,
+      }),
+    )
+    .min(2),
+  answerIndex: z.number().int().nonnegative(),
+  /**
+   * Index of the sentence that proves the answer, so a wrong answer can point
+   * at the line it was in rather than only saying "no".
+   */
+  evidenceSentence: z.number().int().nonnegative(),
+  /**
+   * `authored` is hand-written and reviewed; `derived` is built mechanically
+   * from the text's own sentences. Kept because the two are not equally good
+   * and any later measurement has to be able to tell them apart.
+   */
+  source: z.enum(["authored", "derived"]),
+});
+
+export type ComprehensionQuestion = z.infer<typeof comprehensionQuestionSchema>;
+
+export const comprehensionQuestionsSchema = z.array(comprehensionQuestionSchema);
+
 export const textDocumentSchema = z.object({
   /** "tx-seed-l1-001" or "tx-gen-<hash>". */
   id: z.string().min(1),
@@ -616,6 +664,14 @@ export const textDocumentSchema = z.object({
   /** Model identifier when source = "generated". */
   model: z.string().optional(),
   createdAt: z.string(),
+  /**
+   * Hand-written comprehension questions, where somebody has written them.
+   *
+   * Defaulted rather than required because every text cached before this
+   * existed has none, and because generated and imported texts will never have
+   * any - those get derived questions at read time instead.
+   */
+  questions: z.array(comprehensionQuestionSchema).default([]),
   /**
    * Curriculum order within a level. Authored texts are read in this order;
    * generated ones have none and sort after. Optional because every text
@@ -662,6 +718,15 @@ export interface ReaderDocument {
   titleTranslit?: string;
   titleEn: string;
   sentences: ReaderSentence[];
+  /**
+   * The level this text belongs to, which decides whether the comprehension
+   * check is shown in both languages or in Dari alone. Optional because an
+   * imported article has no level - it is whatever the learner brought in -
+   * and those fall back to showing both.
+   */
+  level?: string;
+  /** Hand-written comprehension questions, where a text has any. */
+  questions?: ComprehensionQuestion[];
 }
 
 export const importedTokenSchema = tokenSchema.extend({

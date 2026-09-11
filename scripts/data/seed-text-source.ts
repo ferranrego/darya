@@ -9,6 +9,8 @@
  *
  * Types belong with neither language's content. Data files import this.
  */
+import type { ComprehensionQuestion } from "../../src/lib/content/schema.ts";
+
 export interface SeedTextSource {
   slug: string;
   level: string;
@@ -24,4 +26,12 @@ export interface SeedTextSource {
    */
   introduces?: string[];
   sentences: Array<{ target: string; translit?: string; en: string }>;
+  /**
+   * Hand-written comprehension questions about this text.
+   *
+   * Optional while the beginner course is still being written; the reader
+   * derives questions mechanically for any text that has none, so a text
+   * without them is never unquizzed - only quizzed less well.
+   */
+  questions?: ComprehensionQuestion[];
 }

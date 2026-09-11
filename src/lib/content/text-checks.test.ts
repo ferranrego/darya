@@ -22,6 +22,7 @@ function doc(overrides: Partial<TextDocument> & { sentences: TextDocument["sente
     titleEn: "test",
     vocabUsed: [],
     newWords: [],
+    questions: [],
     newWordRatio: 0,
     source: "generated",
     createdAt: "2026-01-01T00:00:00.000Z",

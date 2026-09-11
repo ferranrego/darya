@@ -5,12 +5,15 @@ import { Check, CircleHelp, Highlighter, Trophy, ArrowRight, Languages, Sparkles
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { ComprehensionCheck } from "./comprehension-check";
 import { availableLevels, lexicon, lexiconIndex } from "@/lib/content/load";
+import { questionsFor, type QuizResult } from "@/lib/content/comprehension";
 import { levelVocabulary } from "@/lib/content/level-vocabulary";
 import { nextLevelFor, type LevelCoverage } from "@/lib/content/promotion";
 import type { ReaderDocument } from "@/lib/content/schema";
 import { isTeachable } from "@/lib/content/teachability";
 import { isBeginnerLevel, isContentWord } from "@/lib/content/word-selection";
+import { logErrors } from "@/lib/db/errors";
 import { markTextRead } from "@/lib/db/texts";
 import { upsertUserWord } from "@/lib/db/words";
 import { XP, recordActivity } from "@/lib/gamification";
@@ -96,13 +99,24 @@ export function TextReader({
   const personalEntries = usePersonalLexemeMap();
   const invalidate = useInvalidateLearning();
 
+  /**
+   * The comprehension check for this text, settled once.
+   *
+   * Hand-written questions where a text has them, derived from its own
+   * sentences where it does not - so no text goes unquizzed while the
+   * authoring is unfinished, and no model is called either way. Recomputing
+   * this on every render would reshuffle the options under the learner's
+   * finger mid-answer.
+   */
+  const questions = useMemo(() => questionsFor(doc, Math.random), [doc]);
+
   const [tapped, setTapped] = useState<TappedWord | null>(null);
   const [tappedSentence, setTappedSentence] = useState<string | null>(null);
   const [tapCount, setTapCount] = useState(0);
   const [expandedSentences, setExpandedSentences] = useState<Set<number>>(new Set());
   const [showTranslit, setShowTranslit] = useState(false);
   const [showSyntax, setShowSyntax] = useState(false);
-  const [phase, setPhase] = useState<"reading" | "done">("reading");
+  const [phase, setPhase] = useState<"reading" | "quiz" | "done">("reading");
   const [showGuide, setShowGuide] = useState(false);
   const [highlightNewWords, setHighlightNewWords] = useState(false);
   const [showRequirementMessage, setShowRequirementMessage] = useState(false);
@@ -277,8 +291,53 @@ export function TextReader({
     onSuccess: async () => {
       await invalidate();
       hapticSuccess();
-      setPhase("done");
+      // The check comes between finishing and the reward screen, but the
+      // reward is already banked above: the score is recorded, not spent. A
+      // text too short to draw four plausible options from has no check, and
+      // goes straight through rather than being given a guessable one.
+      setPhase(questions.length > 0 ? "quiz" : "done");
       window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+  });
+
+  /**
+   * Store what the comprehension check found.
+   *
+   * Never throws and never blocks the reward screen: a learner who has
+   * finished a text must not be held at a spinner because an analytics write
+   * failed. The missed questions go into the same mistake record the practice
+   * session reads from, so a text understood badly comes back as practice.
+   */
+  const recordComprehension = useMutation({
+    mutationFn: async (result: QuizResult) => {
+      if (!user) return;
+      try {
+        await db
+          .from("user_texts")
+          .update({
+            comprehension_correct: result.correct,
+            comprehension_total: result.total,
+            comprehension_at: new Date().toISOString(),
+          })
+          .eq("user_id", user.id)
+          .eq("text_id", doc.id);
+      } catch {
+        // Deliberately swallowed; see above.
+      }
+      await logErrors(
+        db,
+        user.id,
+        result.missed.map(({ index, chosen }) => ({
+          kind: "comprehension" as const,
+          itemId: doc.id,
+          // What they picked, and what the text actually said. A skipped
+          // question has no `given` - which is itself worth telling apart from
+          // a wrong choice.
+          given: chosen === null ? null : questions[index].options[chosen].target,
+          expected: questions[index].options[questions[index].answerIndex].target,
+          whyEn: questions[index].questionEn,
+        })),
+      );
     },
   });
 
@@ -368,6 +427,21 @@ export function TextReader({
   const tappedStatus = tapped?.lexemeId
     ? (statusMap?.get(tapped.lexemeId) ?? "learning")
     : "new";
+
+  if (phase === "quiz") {
+    return (
+      <ComprehensionCheck
+        questions={questions}
+        // An imported article has no level; showing both languages is the
+        // safe fallback, since nothing here knows how hard it is.
+        level={doc.level ?? "L1"}
+        onDone={(result) => {
+          recordComprehension.mutate(result);
+          setPhase("done");
+        }}
+      />
+    );
+  }
 
   if (phase === "done") {
     return <DoneScreen tapCount={tapCount} onNext={onFinished} />;

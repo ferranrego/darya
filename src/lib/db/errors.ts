@@ -17,7 +17,13 @@ import type { SupabaseClient } from "@supabase/supabase-js";
  * teaching signal without extending how long anything a learner wrote is
  * retained. The 48-hour chat purge is untouched.
  */
-export type ErrorKind = "srs" | "exercise" | "grammar" | "chat" | "interference";
+export type ErrorKind =
+  | "srs"
+  | "exercise"
+  | "grammar"
+  | "chat"
+  | "interference"
+  | "comprehension";
 
 export interface LearnerError {
   kind: ErrorKind;
