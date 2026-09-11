@@ -113,7 +113,7 @@
     {
       "target": "رنگ این لباس سرخ است.",
       "translit": "rang-e īn libās surkh ast.",
-      "en": "The color of these clothes is red.",
+      "en": "The color of this clothing is red.",
       "tokens": [
         {
           "surface": "رنگ",
@@ -138,36 +138,35 @@
       ]
     },
     {
-      "target": "من لباس را تیز می‌پوشم.",
-      "translit": "man libās rā tēz mēpōsham.",
-      "en": "I put the clothes on quickly.",
+      "target": "این لباس بسیار گرم است.",
+      "translit": "īn libās bisyār garm ast.",
+      "en": "These clothes are very warm.",
       "tokens": [
         {
-          "surface": "من",
-          "lexemeId": "lx-0011"
+          "surface": "این",
+          "lexemeId": "lx-0006"
         },
         {
           "surface": "لباس",
           "lexemeId": "lx-0230"
         },
         {
-          "surface": "را",
-          "lexemeId": "lx-0007"
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
         },
         {
-          "surface": "تیز",
-          "lexemeId": "lx-6071"
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
         },
         {
-          "surface": "می‌پوشم",
-          "lexemeId": "lx-0231"
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     }
   ],
   "vocabUsed": [
     "lx-0006",
-    "lx-0007",
     "lx-0010",
     "lx-0011",
     "lx-0043",
@@ -183,8 +182,7 @@
     "lx-0205",
     "lx-0230",
     "lx-0231",
-    "lx-0656",
-    "lx-6071"
+    "lx-0656"
   ],
   "newWords": [
     "lx-0656"

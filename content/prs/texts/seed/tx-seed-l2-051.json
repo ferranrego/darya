@@ -128,6 +128,29 @@
           "lexemeId": "lx-0096"
         }
       ]
+    },
+    {
+      "target": "من امروز تیز نمی‌روم.",
+      "translit": "man emrōz tēz namērawam.",
+      "en": "I do not go fast today.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "نمی‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
     }
   ],
   "vocabUsed": [
@@ -135,6 +158,7 @@
     "lx-0011",
     "lx-0024",
     "lx-0043",
+    "lx-0089",
     "lx-0096",
     "lx-0097",
     "lx-0106",
@@ -143,12 +167,14 @@
     "lx-0123",
     "lx-0125",
     "lx-0142",
-    "lx-0209"
+    "lx-0209",
+    "lx-6071"
   ],
   "newWords": [
     "lx-0123",
     "lx-0125",
-    "lx-0209"
+    "lx-0209",
+    "lx-6071"
   ],
   "questions": [],
   "grammarPoints": [

@@ -7,8 +7,8 @@
   "titleEn": "Our game",
   "sentences": [
     {
-      "target": "من و برادرم هر روز بازی می‌کنیم.",
-      "translit": "man wa barādaram har rōz bāzī mēkunēm.",
+      "target": "من و برادر من هر روز بازی می‌کنیم.",
+      "translit": "man wa barādar-e man har rōz bāzī mēkunēm.",
       "en": "My brother and I play every day.",
       "tokens": [
         {
@@ -20,8 +20,12 @@
           "lexemeId": "lx-0001"
         },
         {
-          "surface": "برادرم",
+          "surface": "برادر",
           "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
         },
         {
           "surface": "هر",
@@ -159,8 +163,7 @@
   ],
   "newWords": [
     "lx-0107",
-    "lx-0376",
-    "lx-6071"
+    "lx-0376"
   ],
   "questions": [],
   "grammarPoints": [

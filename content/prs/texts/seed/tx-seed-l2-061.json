@@ -35,7 +35,7 @@
     },
     {
       "target": "در هر دو طرف سرک گل است.",
-      "translit": "dar har dō taraf-e sarak gul ast.",
+      "translit": "dar har dū taraf-e sarak gul ast.",
       "en": "There are flowers on both sides of the street.",
       "tokens": [
         {
@@ -69,14 +69,10 @@
       ]
     },
     {
-      "target": "رنگ این گل سرخ است.",
-      "translit": "rang-e īn gul surkh ast.",
-      "en": "The color of this flower is red.",
+      "target": "این گل بسیار مقبول است.",
+      "translit": "īn gul bisyār maqbūl ast.",
+      "en": "This flower is very beautiful.",
       "tokens": [
-        {
-          "surface": "رنگ",
-          "lexemeId": "lx-0141"
-        },
         {
           "surface": "این",
           "lexemeId": "lx-0006"
@@ -86,8 +82,12 @@
           "lexemeId": "lx-0140"
         },
         {
-          "surface": "سرخ",
-          "lexemeId": "lx-0142"
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
         },
         {
           "surface": "است",
@@ -148,7 +148,7 @@
     {
       "target": "مردم اینجا تیز می‌روند.",
       "translit": "mardum-e īnjā tēz mērawand.",
-      "en": "The people here walk fast.",
+      "en": "The people here go fast.",
       "tokens": [
         {
           "surface": "مردم",
@@ -177,15 +177,15 @@
     "lx-0014",
     "lx-0026",
     "lx-0059",
+    "lx-0073",
     "lx-0075",
     "lx-0082",
     "lx-0089",
     "lx-0133",
     "lx-0136",
     "lx-0140",
-    "lx-0141",
-    "lx-0142",
     "lx-0166",
+    "lx-0167",
     "lx-0168",
     "lx-0174",
     "lx-0176",

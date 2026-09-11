@@ -38,17 +38,17 @@
       ]
     },
     {
-      "target": "حالا من چای می‌خورم.",
-      "translit": "hālā man chāy mēkhuram.",
+      "target": "من حالا چای می‌خورم.",
+      "translit": "man hālā chāy mēkhuram.",
       "en": "Now I am drinking tea.",
       "tokens": [
         {
-          "surface": "حالا",
-          "lexemeId": "lx-0046"
-        },
-        {
           "surface": "من",
           "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
         },
         {
           "surface": "چای",
@@ -63,7 +63,7 @@
     {
       "target": "این هفته کار من زیاد است.",
       "translit": "īn hafta kār-e man ziyād ast.",
-      "en": "This week my work is a lot.",
+      "en": "My work is heavy this week.",
       "tokens": [
         {
           "surface": "این",

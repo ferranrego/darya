@@ -61,25 +61,29 @@
       ]
     },
     {
-      "target": "حالا ماه نو است.",
-      "translit": "hālā māh-e naw ast.",
-      "en": "Now it is a new month.",
+      "target": "یک هفته هفت روز دارد.",
+      "translit": "yak hafta haft rōz dārad.",
+      "en": "One week has seven days.",
       "tokens": [
         {
-          "surface": "حالا",
-          "lexemeId": "lx-0046"
+          "surface": "یک",
+          "lexemeId": "lx-0025"
         },
         {
-          "surface": "ماه",
-          "lexemeId": "lx-0049"
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
         },
         {
-          "surface": "نو",
-          "lexemeId": "lx-0067"
+          "surface": "هفت",
+          "lexemeId": "lx-0031"
         },
         {
-          "surface": "است",
-          "lexemeId": "lx-0010"
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
         }
       ]
     },
@@ -144,12 +148,12 @@
     "lx-0011",
     "lx-0025",
     "lx-0028",
-    "lx-0046",
+    "lx-0031",
+    "lx-0040",
     "lx-0048",
     "lx-0049",
     "lx-0050",
     "lx-0063",
-    "lx-0067",
     "lx-0069",
     "lx-0079",
     "lx-0095",

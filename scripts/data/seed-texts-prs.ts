@@ -1530,8 +1530,8 @@ export const seedTexts: SeedTextSource[] = [
     grammarPoints: ["present-me", "ezafa-possession", "object-ra", "negation"],
     sentences: [
       { target: "من امروز صبح کار زیاد دارم.", translit: "man emrōz subh kār ziyād dāram.", en: "I have a lot of work this morning." },
-      { target: "حالا من چای می‌خورم.", translit: "hālā man chāy mēkhuram.", en: "Now I am drinking tea." },
-      { target: "این هفته کار من زیاد است.", translit: "īn hafta kār-e man ziyād ast.", en: "This week my work is a lot." },
+      { target: "من حالا چای می‌خورم.", translit: "man hālā chāy mēkhuram.", en: "Now I am drinking tea." },
+      { target: "این هفته کار من زیاد است.", translit: "īn hafta kār-e man ziyād ast.", en: "My work is heavy this week." },
       { target: "من شب کم می‌خوابم.", translit: "man shab kam mēkhābam.", en: "At night I sleep little." },
       { target: "پس من هر روز مانده هستم.", translit: "pas man har rōz mānda hastam.", en: "So I am tired every day." },
       { target: "چای من سر میز است.", translit: "chāy-e man sar-e mēz ast.", en: "My tea is on the table." },
@@ -1548,7 +1548,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "معلم ما زبان دری را درس می‌دهد.", translit: "mu'allem-e mā zabān-e darī rā dars mēdihad.", en: "Our teacher teaches the Dari language." },
       { target: "شاگردان هر روز می‌خوانند و می‌نویسند.", translit: "shāgerdān har rōz mēkhānand wa mēnawīsand.", en: "The students read and write every day." },
-      { target: "من نام خود را می‌نویسم.", translit: "man nām-e khud rā mēnawīsam.", en: "I write my own name." },
+      { target: "من نام او را می‌نویسم.", translit: "man nām-e ō rā mēnawīsam.", en: "I write his name." },
       { target: "معلم به ما یک کتاب نو می‌دهد.", translit: "mu'allem ba mā yak ketāb-e naw mēdihad.", en: "The teacher gives us a new book." },
       { target: "من این زبان را یاد می‌گیرم.", translit: "man īn zabān rā yād mēgīram.", en: "I am learning this language." },
       { target: "معلم ما بسیار مهربان است.", translit: "mu'allem-e mā bisyār mehrabān ast.", en: "Our teacher is very kind." },
@@ -1601,6 +1601,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "سر من هم درد می‌کند.", translit: "sar-e man ham dard mēkunad.", en: "My head hurts too." },
       { target: "چشم من سرخ است.", translit: "chashm-e man surkh ast.", en: "My eye is red." },
       { target: "من امروز جور نیستم.", translit: "man emrōz jōr nēstam.", en: "I am not well today." },
+      { target: "من امروز تیز نمی‌روم.", translit: "man emrōz tēz namērawam.", en: "I do not go fast today." },
     ],
   },
   {
@@ -1612,7 +1613,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Our game",
     grammarPoints: ["present-me", "ezafa-possession", "object-ra", "negation"],
     sentences: [
-      { target: "من و برادرم هر روز بازی می‌کنیم.", translit: "man wa barādaram har rōz bāzī mēkunēm.", en: "My brother and I play every day." },
+      { target: "من و برادر من هر روز بازی می‌کنیم.", translit: "man wa barādar-e man har rōz bāzī mēkunēm.", en: "My brother and I play every day." },
       { target: "دوست من هم با ما بازی می‌کند.", translit: "dōst-e man ham bā mā bāzī mēkunad.", en: "My friend also plays with us." },
       { target: "ما بسیار خوش هستیم.", translit: "mā bisyār khush hastēm.", en: "We are very happy." },
       { target: "من تیز می‌دوم.", translit: "man tēz mēdawam.", en: "I run fast." },
@@ -1665,8 +1666,8 @@ export const seedTexts: SeedTextSource[] = [
       { target: "امروز هوا بسیار سرد است.", translit: "emrōz hawā bisyār sard ast.", en: "Today the weather is very cold." },
       { target: "لباس کهنه من تنگ است.", translit: "libās-e kuhna-ye man tang ast.", en: "My old clothes are tight." },
       { target: "خواهر من لباس نو می‌خرد.", translit: "khāhar-e man libās-e naw mēkharad.", en: "My sister buys new clothes." },
-      { target: "رنگ این لباس سرخ است.", translit: "rang-e īn libās surkh ast.", en: "The color of these clothes is red." },
-      { target: "من لباس را تیز می‌پوشم.", translit: "man libās rā tēz mēpōsham.", en: "I put the clothes on quickly." },
+      { target: "رنگ این لباس سرخ است.", translit: "rang-e īn libās surkh ast.", en: "The color of this clothing is red." },
+      { target: "این لباس بسیار گرم است.", translit: "īn libās bisyār garm ast.", en: "These clothes are very warm." },
     ],
   },
   {
@@ -1762,11 +1763,11 @@ export const seedTexts: SeedTextSource[] = [
     grammarPoints: ["present-me", "ezafa-possession", "object-ra", "negation"],
     sentences: [
       { target: "سرک ما نزدیک دریا است.", translit: "sarak-e mā nazdīk-e daryā ast.", en: "Our street is near the river." },
-      { target: "در هر دو طرف سرک گل است.", translit: "dar har dō taraf-e sarak gul ast.", en: "There are flowers on both sides of the street." },
-      { target: "رنگ این گل سرخ است.", translit: "rang-e īn gul surkh ast.", en: "The color of this flower is red." },
+      { target: "در هر دو طرف سرک گل است.", translit: "dar har dū taraf-e sarak gul ast.", en: "There are flowers on both sides of the street." },
+      { target: "این گل بسیار مقبول است.", translit: "īn gul bisyār maqbūl ast.", en: "This flower is very beautiful." },
       { target: "بازار از اینجا دور است.", translit: "bāzār az īnjā dūr ast.", en: "The bazaar is far from here." },
       { target: "اما مکتب نزدیک است.", translit: "ammā maktab nazdīk ast.", en: "But the school is near." },
-      { target: "مردم اینجا تیز می‌روند.", translit: "mardum-e īnjā tēz mērawand.", en: "The people here walk fast." },
+      { target: "مردم اینجا تیز می‌روند.", translit: "mardum-e īnjā tēz mērawand.", en: "The people here go fast." },
     ],
   },
   {
@@ -1780,7 +1781,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "یک ماه چهار هفته دارد.", translit: "yak māh chār hafta dārad.", en: "One month has four weeks." },
       { target: "یک سال دوازده ماه دارد.", translit: "yak sāl dawāzda māh dārad.", en: "One year has twelve months." },
-      { target: "حالا ماه نو است.", translit: "hālā māh-e naw ast.", en: "Now it is a new month." },
+      { target: "یک هفته هفت روز دارد.", translit: "yak hafta haft rōz dārad.", en: "One week has seven days." },
       { target: "من این هفته کار زیاد دارم.", translit: "man īn hafta kār ziyād dāram.", en: "I have a lot of work this week." },
       { target: "زندگی اینجا خوب است.", translit: "zindagī īnjā khōb ast.", en: "Life here is good." },
     ],
