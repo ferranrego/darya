@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { entryFor } from "@/lib/lexeme/lookup";
 import { segmentForHighlight } from "@/lib/text/highlight";
 import { logErrors, resolveErrors } from "@/lib/db/errors";
+import { useQueryClient } from "@tanstack/react-query";
 import { logReview, recordProduction, upsertUserWord } from "@/lib/db/words";
 import type { UserWordRow } from "@/lib/db/types";
 import { XP, recordActivity } from "@/lib/gamification";
@@ -31,6 +32,10 @@ import {
 } from "@/lib/srs/scheduler";
 import { PracticeSession } from "@/components/exercises/practice-session";
 import { ProductionCard } from "@/components/review/production-card";
+import { GrammarExercisePlayer } from "@/components/grammar/exercise-player";
+import { grammarLessons } from "@/lib/content/load";
+import { getGrammarCards, saveGrammarReview } from "@/lib/db/grammar";
+import { dueGrammarItems, interleave } from "@/lib/srs/grammar-queue";
 import { defaultInputMode, directionFor, type InputMode } from "@/lib/srs/direction";
 import type { AnswerCheck } from "@/lib/srs/answer-check";
 import { useProfile } from "@/lib/queries/hooks";
@@ -55,6 +60,7 @@ export default function ReviewPage() {
   const personal = usePersonalLexemeMap();
   const personalIndex = usePersonalIndex();
   const invalidate = useInvalidateLearning();
+  const queryClient = useQueryClient();
   const router = useRouter();
 
   const [mode, setMode] = useState<"srs" | "practice">("srs");
@@ -67,6 +73,23 @@ export default function ReviewPage() {
    * switching once does not have to be repeated on every word.
    */
   const [inputMode, setInputMode] = useState<InputMode | null>(null);
+
+  /**
+   * Grammar points due today, mixed into the same session as the words.
+   *
+   * One queue, not a second tab. Grammar has been an island: 93 lessons, each
+   * finished once and never seen again, in a tab a learner stops opening -
+   * which is precisely how it became an island. The questions come from the
+   * lessons' own written exercises, so none of this costs a model call, where
+   * the existing "extra practice" button is a generation.
+   */
+  const { data: grammarCards } = useQuery({
+    queryKey: ["grammar_cards", user?.id],
+    enabled: !!user,
+    queryFn: () => getGrammarCards(db, user!.id),
+    staleTime: Infinity,
+  });
+  const [grammarDone, setGrammarDone] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -127,6 +150,38 @@ export default function ReviewPage() {
       setQueue(due);
     }
   }, [queue, due]);
+
+  /**
+   * Which positions in the word queue a grammar item sits at.
+   *
+   * Interleaved rather than appended, for the same reason the queue is
+   * combined at all: a block at the end is a block people stop reaching. The
+   * word queue keeps its own type and its own logic - this only decides where
+   * a grammar question interrupts it.
+   */
+  const grammarAt = useMemo(() => {
+    const at = new Map<number, ReturnType<typeof dueGrammarItems>[number]>();
+    if (!queue || !grammarCards) return at;
+    const items = dueGrammarItems({
+      cards: grammarCards,
+      lessons: grammarLessons,
+      now: new Date(),
+      // Roughly one grammar point per four words: enough that the point comes
+      // back, few enough that a review session is still a review session.
+      limit: Math.max(1, Math.ceil(queue.length / 4)),
+      rand: Math.random,
+    });
+    const mixed = interleave(
+      queue.map((_, i) => ({ word: i })),
+      items.map((item) => ({ item })),
+    );
+    let wordsSeen = 0;
+    for (const slot of mixed) {
+      if ("word" in slot) wordsSeen++;
+      else at.set(wordsSeen, slot.item);
+    }
+    return at;
+  }, [queue, grammarCards]);
 
   // If the user navigates away mid-session or uses the back button instead of "Done",
   // we must invalidate the cache so the homepage due counts are immediately accurate.
@@ -201,6 +256,30 @@ export default function ReviewPage() {
    * but does not count as produced, so the card keeps asking until the form is
    * right. Only a genuinely wrong word is a lapse.
    */
+  /**
+   * A grammar point was reviewed.
+   *
+   * Uses the same scheduler as vocabulary, unchanged and shared: two
+   * schedulers would become two different ideas of when something is due. A
+   * missed point is recorded as a mistake like any other, so practice can lead
+   * with it - the mistake record does not care which system produced it.
+   */
+  function gradeGrammar(item: { lessonId: string; grammarPoint: string }, correct: boolean) {
+    const card = grammarCards?.find((c) => c.lesson_id === item.lessonId);
+    if (user && card?.fsrs) {
+      const { card: next } = reviewCard(reviveCard(card.fsrs), correct ? "got_it" : "forgot", new Date());
+      void saveGrammarReview(db, user.id, item.lessonId, next, !correct, card.lapses ?? 0).catch(() => {
+        // Never blocks the session; the learner keeps reviewing.
+      });
+      if (!correct) {
+        void logErrors(db, user.id, [{ kind: "grammar", grammarPoint: item.grammarPoint, itemId: item.lessonId }]);
+      }
+    }
+    setGrammarDone((prev) => new Set(prev).add(item.lessonId));
+    statsRef.current.totalReps += 1;
+    void queryClient.invalidateQueries({ queryKey: ["grammar_cards", user?.id] });
+  }
+
   function handleProduced(check: AnswerCheck, given: string) {
     if (!queue) return;
     const r = queue[index];
@@ -319,6 +398,44 @@ export default function ReviewPage() {
     return <div className="flex flex-1 items-center justify-center py-32 text-ink-faint">Loading…</div>;
   }
 
+  /**
+   * Grammar due with no words due.
+   *
+   * Without this the session says "All caught up" and the grammar point is
+   * never asked - which would leave grammar exactly as much of an island as
+   * before, just with a scheduler behind it. The combined queue has to work
+   * when one half of it is empty.
+   */
+  const grammarOnly =
+    queue.length === 0 && grammarCards
+      ? dueGrammarItems({
+          cards: grammarCards,
+          lessons: grammarLessons,
+          now: new Date(),
+          limit: 10,
+          rand: Math.random,
+        }).filter((i) => !grammarDone.has(i.lessonId))
+      : [];
+
+  if (queue.length === 0 && grammarOnly.length > 0 && mode === "srs") {
+    const item = grammarOnly[0];
+    return (
+      <div className="flex flex-1 flex-col">
+        <SegmentedControl mode={mode} setMode={setMode} />
+        <div className="flex flex-1 flex-col p-4">
+          <p className="mb-2 text-[12px] font-bold uppercase tracking-wider text-ink-faint">
+            Grammar · {item.lessonTitle}
+          </p>
+          <GrammarExercisePlayer
+            key={item.lessonId}
+            exercises={[item.exercise]}
+            onComplete={(correct) => gradeGrammar(item, correct > 0)}
+          />
+        </div>
+      </div>
+    );
+  }
+
   if (queue.length === 0) {
     return (
       <div className="flex flex-1 flex-col">
@@ -365,6 +482,10 @@ export default function ReviewPage() {
    * written, never from the schedule: the interval says when the review
    * happens, this says what is asked at it.
    */
+  // A grammar item sits at this position and has not been answered yet.
+  const candidate = grammarAt.get(index);
+  const pendingGrammar = candidate && !grammarDone.has(candidate.lessonId) ? candidate : null;
+
   const direction = row!.fsrs
     ? directionFor(reviveCard(row!.fsrs), row!.produced_count ?? 0, index)
     : "recognition";
@@ -403,7 +524,18 @@ export default function ReviewPage() {
             </span>
           </div>
 
-      {direction === "production" && personalIndex ? (
+      {pendingGrammar ? (
+        <div className="flex flex-1 flex-col p-4">
+          <p className="mb-2 text-[12px] font-bold uppercase tracking-wider text-ink-faint">
+            Grammar · {pendingGrammar.lessonTitle}
+          </p>
+          <GrammarExercisePlayer
+            key={pendingGrammar.lessonId}
+            exercises={[pendingGrammar.exercise]}
+            onComplete={(correct) => gradeGrammar(pendingGrammar, correct > 0)}
+          />
+        </div>
+      ) : direction === "production" && personalIndex ? (
         <ProductionCard
           key={`${row!.lexeme_id}-${index}`}
           entry={entry}
