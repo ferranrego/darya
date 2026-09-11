@@ -14,6 +14,7 @@ import type { ReaderDocument } from "@/lib/content/schema";
 import { isTeachable } from "@/lib/content/teachability";
 import { isBeginnerLevel, isContentWord } from "@/lib/content/word-selection";
 import { logErrors } from "@/lib/db/errors";
+import { promotionEvidence } from "@/lib/db/evidence";
 import { markTextRead } from "@/lib/db/texts";
 import { upsertUserWord } from "@/lib/db/words";
 import { XP, recordActivity } from "@/lib/gamification";
@@ -283,6 +284,10 @@ export function TextReader({
         levels: availableLevels,
         knownCount: count ?? 0,
         levelCoverage,
+        // Retention and comprehension. Undefined on any failure, which never
+        // blocks: a learner must not lose a level they earned because an
+        // analytics read timed out.
+        evidence: await promotionEvidence(db, user.id),
       });
       if (eligible) {
         await db.from("profiles").update({ level_estimate: eligible.id }).eq("id", user.id);

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { curricularKnownCount } from "../lexeme/lookup.ts";
-import { nextLevelFor, type LevelCoverage } from "./promotion.ts";
+import { evidenceBlocks, nextLevelFor, type LevelCoverage } from "./promotion.ts";
 import type { Level } from "./schema.ts";
 
 /**
@@ -144,5 +144,81 @@ describe("nextLevelFor", () => {
       knownCount: curricularKnownCount(words),
     });
     expect(result).toBeNull();
+  });
+});
+
+/**
+ * Promotion has only ever counted words marked "known" - never accuracy, never
+ * retention, never comprehension. These pin the two decisions that make the
+ * new floors safe to ship: they must not fire on noise, and they must never
+ * cost a learner a level they already have.
+ */
+describe("promoting on evidence rather than on claims", () => {
+  const levels = [L1, L2, L3, L4];
+  const advanced = { current: L1, levels, knownCount: L4.entryKnownWords };
+
+  it("promotes exactly as before when there is no evidence yet", () => {
+    // Every learner already mid-course has no comprehension history at all -
+    // the feature did not exist. Holding them for the app's own omission would
+    // punish them for a change they did not make.
+    expect(nextLevelFor(advanced)?.id).toBe(nextLevelFor({ ...advanced, evidence: undefined })?.id);
+  });
+
+  it("holds a learner whose words are not sticking", () => {
+    const blocked = nextLevelFor({
+      ...advanced,
+      evidence: { reviews: 200, retention: 0.4, checks: 0, comprehension: 0 },
+    });
+    expect(blocked).toBeNull();
+  });
+
+  it("holds a learner who is finishing texts without understanding them", () => {
+    const blocked = nextLevelFor({
+      ...advanced,
+      evidence: { reviews: 200, retention: 0.95, checks: 40, comprehension: 0.2 },
+    });
+    expect(blocked).toBeNull();
+  });
+
+  it("does not fire on too little evidence to mean anything", () => {
+    // Two reviews and one quiz is not a measurement, and refusing a promotion
+    // on it would be refusing on noise.
+    const thin = nextLevelFor({
+      ...advanced,
+      evidence: { reviews: 3, retention: 0, checks: 1, comprehension: 0 },
+    });
+    expect(thin?.id).toBe(nextLevelFor(advanced)?.id);
+  });
+
+  it("lets a learner doing the work through without noticing the floors", () => {
+    // FSRS here targets 0.90 retention, so this is what doing the work looks
+    // like. The floors are a guard against coasting, not a bar to clear.
+    const fine = nextLevelFor({
+      ...advanced,
+      evidence: { reviews: 200, retention: 0.9, checks: 40, comprehension: 0.85 },
+    });
+    expect(fine?.id).toBe(nextLevelFor(advanced)?.id);
+  });
+
+  it("says which floor is missing, so the learner can act on it", () => {
+    // "Not yet" with no reason is the same dead end as having no requirement.
+    expect(evidenceBlocks({ reviews: 200, retention: 0.4, checks: 0, comprehension: 0 }))
+      .toMatch(/sticking/);
+    expect(evidenceBlocks({ reviews: 200, retention: 0.95, checks: 40, comprehension: 0.2 }))
+      .toMatch(/understood/);
+    expect(evidenceBlocks(undefined)).toBeNull();
+  });
+
+  it("never demotes: the rule applies to the next promotion, not the level held", () => {
+    // nextLevelFor returns null to mean "stay put", never a lower level.
+    for (const retention of [0, 0.3, 0.5, 0.9]) {
+      const result = nextLevelFor({
+        current: L3,
+        levels,
+        knownCount: 0,
+        evidence: { reviews: 200, retention, checks: 40, comprehension: 0.1 },
+      });
+      expect(result, `retention ${retention}`).toBeNull();
+    }
   });
 });
