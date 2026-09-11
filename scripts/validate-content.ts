@@ -823,6 +823,76 @@ function withinOneEdit(a: string, b: string): boolean {
   return true;
 }
 
+// --- Beginner re-exposure --------------------------------------------------
+//
+// PEDAGOGY §7: a person needs to meet a word roughly 6 to 12 times before it
+// sticks. Measured across the beginner course, 371 of its 430 content words
+// are met fewer than six times and 221 exactly once - the finding that
+// produced this whole refactor, and the one that cannot be fixed in code,
+// because the fix is rewriting texts by hand.
+//
+// So this is a ratchet rather than a gate. The backlog file lists the words
+// currently short; a word that is short and NOT listed is a new regression and
+// fails the build, and the list itself may never grow. Authoring shrinks it,
+// and it cannot quietly be undone in the meantime. Delete file and check when
+// it empties.
+const backlogPath = join(root, "texts", "re-exposure-backlog.json");
+if (existsSync(backlogPath) && lexicon) {
+  const backlog = loadJson(backlogPath) as {
+    minEncounters: number;
+    count: number;
+    lexemeIds: string[];
+  };
+  const counts = new Map<string, number>();
+  if (existsSync(seedDir)) {
+    for (const f of readdirSync(seedDir).filter((x) => x.endsWith(".json"))) {
+      const parsed = textDocumentSchema.safeParse(loadJson(join(seedDir, f)));
+      if (!parsed.success) continue;
+      if (parsed.data.level !== "L1" && parsed.data.level !== "L2") continue;
+      for (const sentence of parsed.data.sentences) {
+        for (const token of sentence.tokens) {
+          if (token.lexemeId) counts.set(token.lexemeId, (counts.get(token.lexemeId) ?? 0) + 1);
+        }
+      }
+    }
+  }
+  const listed = new Set(backlog.lexemeIds);
+  const byId = new Map(lexicon.entries.map((e) => [e.id, e]));
+  const regressions: string[] = [];
+  let fixed = 0;
+  for (const [id, n] of counts) {
+    const entry = byId.get(id);
+    // Function words repeat by their nature; the rule is about content words,
+    // which is where "met once and never again" actually costs a learner.
+    if (!entry || !isContentWord(entry)) continue;
+    if (n < backlog.minEncounters) {
+      if (!listed.has(id)) {
+        regressions.push(`${entry.target} (${id}) appears ${n} time(s), needs ${backlog.minEncounters}`);
+      }
+    } else if (listed.has(id)) {
+      fixed++;
+    }
+  }
+  for (const r of regressions.slice(0, 10)) {
+    fail(`beginner re-exposure: ${r} - and it is not in the backlog, so this is new`);
+  }
+  if (regressions.length > 10) {
+    fail(`beginner re-exposure: ${regressions.length - 10} more not shown`);
+  }
+  if (backlog.lexemeIds.length > backlog.count) {
+    fail(
+      `re-exposure-backlog.json lists ${backlog.lexemeIds.length} words but records ${backlog.count} - ` +
+        `the backlog may shrink, never grow`,
+    );
+  }
+  if (regressions.length === 0) {
+    console.log(
+      `✓ beginner re-exposure (${backlog.lexemeIds.length - fixed} of ${backlog.count} still short, ` +
+        `${fixed} fixed since the backlog was taken)`,
+    );
+  }
+}
+
 // --- Placement controls ----------------------------------------------------
 //
 // The invented words mixed into the sign-up grid. A control that turns out to
