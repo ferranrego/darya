@@ -2032,7 +2032,7 @@
       "target": "سر",
       "targetNormalized": "سر",
       "translit": "sar",
-      "glossEn": "head; top",
+      "glossEn": "head; top; (prep.) on, on top of",
       "pos": "noun",
       "freqRank": 92,
       "freqBand": 1,
@@ -2308,9 +2308,9 @@
       "variants": [
         "جا"
       ],
-      "exampleTarget": "این جای آرام است.",
-      "exampleTranslit": "īn jāy-e ārām ast.",
-      "exampleEn": "This is a calm place.",
+      "exampleTarget": "اینجا آرام است.",
+      "exampleTranslit": "īnjā ārām ast.",
+      "exampleEn": "It is calm here.",
       "tags": [
         "Geography & Places"
       ],
@@ -2939,7 +2939,7 @@
       "target": "یاد",
       "targetNormalized": "یاد",
       "translit": "yād",
-      "glossEn": "memory; (yād gereftan: to learn)",
+      "glossEn": "memory; (yād gīriftan: to learn)",
       "pos": "noun",
       "freqRank": 133,
       "freqBand": 2,
@@ -4660,7 +4660,7 @@
       "target": "ماندن",
       "targetNormalized": "ماندن",
       "translit": "māndan",
-      "glossEn": "to stay, to remain",
+      "glossEn": "to stay, to remain; to put, to place",
       "pos": "verb",
       "freqRank": 217,
       "freqBand": 2,
@@ -4672,9 +4672,9 @@
         "ماند",
         "بمان"
       ],
-      "exampleTarget": "امشب در خانه می‌مانم.",
-      "exampleTranslit": "emshab dar khāna mēmānam.",
-      "exampleEn": "Tonight I am staying home.",
+      "exampleTarget": "کتاب را سر میز می‌مانم.",
+      "exampleTranslit": "ketāb rā sar-e mēz mēmānam.",
+      "exampleEn": "I put the book on the table.",
       "tags": [
         "Actions & Movement",
         "beginner-core",
@@ -5627,8 +5627,8 @@
       "freqBand": 2,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "سرم درد دارد.",
-      "exampleTranslit": "saram dard dārad.",
+      "exampleTarget": "سرم درد می‌کند.",
+      "exampleTranslit": "saram dard mēkunad.",
       "exampleEn": "My head aches.",
       "tags": [
         "Health & Medicine",
@@ -12423,13 +12423,13 @@
     },
     {
       "target": "قیمت",
-      "translit": "qimat",
-      "glossEn": "price",
+      "translit": "qīmat",
+      "glossEn": "price; (adj.) expensive",
       "pos": "noun",
       "register": "neutral",
       "variants": [],
       "exampleTarget": "قیمت این کتاب چند است؟",
-      "exampleTranslit": "qīmat-e īn kitāb chand ast?",
+      "exampleTranslit": "qīmat-e īn ketāb chand ast?",
       "exampleEn": "What is the price of this book?",
       "tags": [
         "beginner-core",
@@ -26867,15 +26867,15 @@
       "id": "lx-6032",
       "target": "گران",
       "targetNormalized": "گران",
-      "translit": "gerān",
-      "glossEn": "expensive",
+      "translit": "girān",
+      "glossEn": "expensive (Dari prefers قیمت)",
       "pos": "adjective",
       "freqRank": 1362,
       "freqBand": 5,
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این کتاب گران است.",
-      "exampleTranslit": "īn ketāb gerān ast.",
+      "exampleTranslit": "īn ketāb girān ast.",
       "exampleEn": "This book is expensive.",
       "tags": [
         "Advanced"
@@ -45793,15 +45793,15 @@
       "target": "پاک",
       "targetNormalized": "پاک",
       "translit": "pāk",
-      "glossEn": "clean (energy/air)",
+      "glossEn": "clean; pure",
       "pos": "adjective",
       "freqRank": 2361,
       "freqBand": 3,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "استفاده از انرژی پاک به کاهش آلودگی کمک می‌کند.",
-      "exampleTranslit": "istifāda az inirzhī-ye pāk ba kāhish-e ālūdagī kumak mēkunad.",
-      "exampleEn": "Using clean energy helps reduce pollution.",
+      "exampleTarget": "دل او بسیار پاک است.",
+      "exampleTranslit": "dil-e ō bisyār pāk ast.",
+      "exampleEn": "His heart is very pure.",
       "tags": [
         "Science & Technology",
         "beginner-core"
@@ -87416,7 +87416,7 @@
       "target": "دوست داشتن",
       "targetNormalized": "دوست داشتن",
       "pos": "verb",
-      "glossEn": "love/like",
+      "glossEn": "to like, to love",
       "tags": [
         "beginner-core",
         "super-7"
@@ -87429,9 +87429,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "این دوست داشتن است.",
-      "exampleEn": "This is a love/like.",
-      "exampleTranslit": "īn dōst dāshtan ast."
+      "exampleTarget": "من این کتاب را دوست دارم.",
+      "exampleEn": "I like this book.",
+      "exampleTranslit": "man īn ketāb rā dōst dāram."
     },
     {
       "id": "lx-6391",
