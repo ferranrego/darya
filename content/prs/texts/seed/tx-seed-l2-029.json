@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "بانک چند کیلومتر دور است؟",
-      "translit": "bānk chand kilōmetr dūr ast?",
+      "translit": "bānk chand kīlōmitr dūr ast?",
       "en": "How many kilometers away is the bank?",
       "tokens": [
         {
@@ -85,7 +85,7 @@
     },
     {
       "target": "پل تا بانک یک کیلومتر است.",
-      "translit": "pul tā bānk yak kilōmetr ast.",
+      "translit": "pul tā bānk yak kīlōmitr ast.",
       "en": "The bridge to the bank is one kilometer.",
       "tokens": [
         {

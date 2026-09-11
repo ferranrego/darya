@@ -749,7 +749,7 @@ export const seedTexts: SeedTextSource[] = [
           {
             target: "یک خبر تازه",
             translit: "yak khabar-e tāza",
-            en: "Fresh news"
+            en: "A piece of fresh news"
           },
           {
             target: "یک کتاب",
@@ -874,8 +874,8 @@ export const seedTexts: SeedTextSource[] = [
       },
       {
         questionEn: "What does he throw in the water?",
-        questionTarget: "او چه را در آب می‌اندازد؟",
-        questionTranslit: "ō che rā dar āb mēandāzad?",
+        questionTarget: "او چه در آب می‌اندازد؟",
+        questionTranslit: "ō che dar āb mēandāzad?",
         options: [
           {
             target: "درخت",
@@ -895,7 +895,7 @@ export const seedTexts: SeedTextSource[] = [
           {
             target: "قند",
             translit: "qand",
-            en: "Sugar"
+            en: "Lump sugar"
           }
         ],
         answerIndex: 3,
@@ -1013,7 +1013,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "East",
     sentences: [
       { target: "کارمند در شرق جنگل کار می‌کند.", translit: "kārmand dar sharq-e jangal kār mēkunad.", en: "The employee works in the east of the forest." },
-      { target: "او به متر نیاز دارد.", translit: "ō ba metr niyāz dārad.", en: "He needs a tape measure." },
+      { target: "او به متر نیاز دارد.", translit: "ō ba mitr niyāz dārad.", en: "He needs a tape measure." },
       { target: "او می‌بیند که این درخت می‌پوسد.", translit: "ō mēbīnad ki īn darakht mēpōsad.", en: "He sees that this tree rots." }
     ],
     questions: [
@@ -1053,23 +1053,23 @@ export const seedTexts: SeedTextSource[] = [
         questionTranslit: "kārmand che mēbīnad?",
         options: [
           {
-            target: "آب سرد است",
-            translit: "āb sard ast",
+            target: "که آب سرد است",
+            translit: "ki āb sard ast",
             en: "The water is cold"
           },
           {
-            target: "این درخت می‌پوسد",
-            translit: "īn darakht mēpōsad",
+            target: "که این درخت می‌پوسد",
+            translit: "ki īn darakht mēpōsad",
             en: "This tree is rotting"
           },
           {
-            target: "خبر تازه است",
-            translit: "khabar tāza ast",
+            target: "که خبر تازه است",
+            translit: "ki khabar tāza ast",
             en: "The news is fresh"
           },
           {
-            target: "درخت کلان است",
-            translit: "darakht kalān ast",
+            target: "که درخت کلان است",
+            translit: "ki darakht kalān ast",
             en: "The tree is big"
           }
         ],
@@ -1143,10 +1143,10 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "pul wa bānk",
     titleEn: "Bridge and bank",
     sentences: [
-      { target: "بانک چند کیلومتر دور است؟", translit: "bānk chand kilōmetr dūr ast?", en: "How many kilometers away is the bank?" },
+      { target: "بانک چند کیلومتر دور است؟", translit: "bānk chand kīlōmitr dūr ast?", en: "How many kilometers away is the bank?" },
       { target: "روی پل نقشه را می‌بینم.", translit: "rō-ye pul naqsha rā mēbīnam.", en: "On the bridge I see the map." },
       { target: "او یک مرض دارد.", translit: "ō yak maraz dārad.", en: "He has a disease." },
-      { target: "پل تا بانک یک کیلومتر است.", translit: "pul tā bānk yak kilōmetr ast.", en: "The bridge to the bank is one kilometer." },
+      { target: "پل تا بانک یک کیلومتر است.", translit: "pul tā bānk yak kīlōmitr ast.", en: "The bridge to the bank is one kilometer." },
     ],
   },
   {

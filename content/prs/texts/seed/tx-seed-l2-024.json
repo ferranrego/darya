@@ -39,7 +39,7 @@
     },
     {
       "target": "او به متر نیاز دارد.",
-      "translit": "ō ba metr niyāz dārad.",
+      "translit": "ō ba mitr niyāz dārad.",
       "en": "He needs a tape measure.",
       "tokens": [
         {
@@ -160,23 +160,23 @@
       "questionTranslit": "kārmand che mēbīnad?",
       "options": [
         {
-          "target": "آب سرد است",
-          "translit": "āb sard ast",
+          "target": "که آب سرد است",
+          "translit": "ki āb sard ast",
           "en": "The water is cold"
         },
         {
-          "target": "این درخت می‌پوسد",
-          "translit": "īn darakht mēpōsad",
+          "target": "که این درخت می‌پوسد",
+          "translit": "ki īn darakht mēpōsad",
           "en": "This tree is rotting"
         },
         {
-          "target": "خبر تازه است",
-          "translit": "khabar tāza ast",
+          "target": "که خبر تازه است",
+          "translit": "ki khabar tāza ast",
           "en": "The news is fresh"
         },
         {
-          "target": "درخت کلان است",
-          "translit": "darakht kalān ast",
+          "target": "که درخت کلان است",
+          "translit": "ki darakht kalān ast",
           "en": "The tree is big"
         }
       ],

@@ -146,8 +146,8 @@
     },
     {
       "questionEn": "What does he throw in the water?",
-      "questionTarget": "او چه را در آب می‌اندازد؟",
-      "questionTranslit": "ō che rā dar āb mēandāzad?",
+      "questionTarget": "او چه در آب می‌اندازد؟",
+      "questionTranslit": "ō che dar āb mēandāzad?",
       "options": [
         {
           "target": "درخت",
@@ -167,7 +167,7 @@
         {
           "target": "قند",
           "translit": "qand",
-          "en": "Sugar"
+          "en": "Lump sugar"
         }
       ],
       "answerIndex": 3,
