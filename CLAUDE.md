@@ -24,7 +24,10 @@ Each of these shipped, reached a learner, and was invisible until measured.
    the code and conclude it works.
 
 2. **One command runs the gate: `pnpm gate`.** It is typecheck, lint, test and
-   validate:content in order. There is one language here now, so the old
+   validate:content in order. **It does not run `pnpm build`**, and a Next.js
+   page can fail the static prerender while the gate reports green - a
+   `useSearchParams` added to `/onboarding` did exactly that, passing gate and
+   failing the build. Run `pnpm build` too before calling a change done. There is one language here now, so the old
    `for L in ca prs` loop is gone - and so is the trap that made it necessary,
    where a bare `pnpm validate:content` in a Catalan session validated the
    other language and reported success. The default language is now read from
