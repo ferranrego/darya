@@ -41,7 +41,26 @@ const INITIAL_SEED_SIZE_HINT = 32;
 export default function OnboardingPage() {
   const router = useRouter();
   const db = useSupabase();
-  const [step, setStep] = useState<Step>("hello");
+  /**
+   * A retake goes straight to the grid.
+   *
+   * Until now the placement ran exactly once per account and there was no way
+   * back: a learner mis-placed on their first day - by over-claiming, by
+   * under-claiming, or by having learnt a lot since - was stuck there. A
+   * retake re-estimates the level and can move words back into review; it
+   * never deletes anything, which is enforced where it matters, in the two
+   * seeding functions rather than here.
+   */
+  // Read from the window in a lazy initialiser rather than `useSearchParams`,
+  // which forces the whole page behind a Suspense boundary and fails the
+  // static prerender. The file already reads the window this way for
+  // standalone detection.
+  const [step, setStep] = useState<Step>(() =>
+    typeof window !== "undefined" &&
+    new URLSearchParams(window.location.search).get("retake") === "1"
+      ? "assessment"
+      : "hello",
+  );
   const [canRead, setCanRead] = useState(true);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [result, setResult] = useState<{ estimatedVocab: number; levelId: string } | null>(null);

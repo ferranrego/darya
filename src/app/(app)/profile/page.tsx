@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { BarChart3, BookOpen, Flame, Library, LogOut, Trophy, Bell, Settings2, BookType, Hash, Skull, Send } from "lucide-react";
+import { Target, BarChart3, BookOpen, Flame, Library, LogOut, Trophy, Bell, Settings2, BookType, Hash, Skull, Send } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { motion, useReducedMotion } from "motion/react";
 import { levelLabel } from "@/lib/content/load";
@@ -139,6 +139,14 @@ export default function ProfilePage() {
             iconColor="text-[#3e7c59]" // sabz
             title="Leaderboard"
             subtitle="Top learners by total XP"
+          />
+          <SettingsItem
+            href="/onboarding?retake=1"
+            icon={<Target size={18} />}
+            iconBgColor="bg-lapis-soft"
+            iconColor="text-lapis"
+            title="Retake placement test"
+            subtitle="Re-estimate your level · nothing is deleted"
           />
           <SettingsItem
             href="/stats"
