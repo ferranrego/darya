@@ -13,6 +13,8 @@
     "lint": "eslint",
     "prebuild": "node scripts/link-content.ts",
     "predev": "node scripts/link-content.ts",
+    "report:content": "node scripts/report-content.ts",
+    "report:learning": "node --env-file=.env.local scripts/report-learning.ts",
     "seed": "node --env-file=.env.local scripts/seed.ts",
     "smoke": "node --env-file=.env.local scripts/smoke-prod.ts",
     "start": "next start",

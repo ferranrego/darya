@@ -21,14 +21,25 @@ export const PROMOTION_COVERAGE = 0.7;
  * while forgetting most of it, and the app promotes them into harder text on
  * the strength of a number that stopped being true.
  *
- * 0.75 is a product choice, not a research figure, and it is set where it is
- * for a specific reason: FSRS here is configured to a 0.90 target retention,
- * so a learner doing the work lands near 90% and clears this without noticing.
- * It is a floor against coasting, not a bar to clear. Revisit once there is
- * real per-level accuracy data - which, as of this change, the app finally
- * collects.
+ * 0.50, and the number was corrected by measuring rather than reasoned to.
+ *
+ * The first value here was 0.75, argued from FSRS being configured to a 0.90
+ * target retention. Running `pnpm report:learning` against the real deployment
+ * the same afternoon said mature-card retention is **54%** - so the "obvious"
+ * threshold would have frozen every current learner at their level, silently,
+ * which is precisely the class of defect this repo's first rule is about.
+ *
+ * 0.50 is therefore set from the data: below half of mature cards remembered
+ * is a learner who has stopped retaining anything, which is worth acting on;
+ * anywhere above it is within reach of everyone currently using the app. It is
+ * a floor against coasting, not a bar to clear.
+ *
+ * That 54% is itself a finding - FSRS is scheduling for 90% and getting 54%,
+ * on 70 mature reviews across seven learners. Too thin to retune a scheduler
+ * on, and the reason this constant must be revisited as the data grows rather
+ * than left to calcify.
  */
-export const PROMOTION_RETENTION = 0.75;
+export const PROMOTION_RETENTION = 0.5;
 
 /**
  * Share of comprehension checks the learner must be passing.
