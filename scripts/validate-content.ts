@@ -508,6 +508,21 @@ if (!profile.capabilities.scriptCourse) {
 }
 
 
+// Every `grammarPoint` the course defines, for the seed-text tag check below.
+// Read from the same barrel the course itself is validated from, so the two
+// cannot drift into different ideas of which points exist.
+const grammarPointIds = new Set<string>();
+{
+  const parsed = grammarCoursesFileSchema.safeParse(loadJson(join(root, "grammar", "all.json")));
+  if (parsed.success) {
+    for (const course of parsed.data.courses) {
+      for (const block of course.blocks) {
+        for (const lesson of block.lessons) grammarPointIds.add(lesson.grammarPoint);
+      }
+    }
+  }
+}
+
 // --- Seed texts ------------------------------------------------------------
 const seedDir = join(root, "texts", "seed");
 const seedIndex = lexicon ? buildIndex(lexicon.entries) : null;
@@ -570,6 +585,19 @@ if (existsSync(seedDir)) {
      * a learner a correction that does not correct anything. None of it throws,
      * and the learner concludes they misunderstood the text.
      */
+    /**
+     * A grammar tag that names no lesson silently links nothing.
+     *
+     * The whole value of tagging is "read something that uses what you just
+     * learned", and a typo'd tag makes that query return an empty list rather
+     * than an error - the text simply never surfaces, and nobody finds out.
+     */
+    for (const point of doc.grammarPoints) {
+      if (!grammarPointIds.has(point)) {
+        fail(`${f}: grammar point "${point}" names no lesson in the course`);
+      }
+    }
+
     doc.questions.forEach((q, qi) => {
       const where = `${f}: question ${qi + 1}`;
       if (q.answerIndex >= q.options.length) {
@@ -821,6 +849,32 @@ function withinOneEdit(a: string, b: string): boolean {
     j++;
   }
   return true;
+}
+
+// --- Set phrases -----------------------------------------------------------
+//
+// People do not speak in words, they speak in chunks: "چطور استید", "خیر است",
+// "به امان خدا". The dictionary holds 39 of them against 6,466 entries - 0.6% -
+// which is why a learner can know a thousand words and still not be able to
+// open a conversation.
+//
+// A floor rather than a target: this cannot say how many phrases a course
+// needs, only that the number must not go down. Phrases are the easiest thing
+// to lose in a bulk lexicon edit, because a multi-word entry looks like a data
+// error to anything scanning for headwords - and losing them is invisible,
+// since every individual word survives.
+const MIN_SET_PHRASES = 39;
+if (lexicon) {
+  const phrases = lexicon.entries.filter((e) => e.pos === "phrase");
+  if (phrases.length < MIN_SET_PHRASES) {
+    fail(
+      `lexicon: ${phrases.length} set phrases, down from ${MIN_SET_PHRASES} - ` +
+        `phrases are how people actually speak and are the easiest entries to lose ` +
+        `in a bulk edit, because a multi-word headword looks like a data error`,
+    );
+  } else {
+    console.log(`✓ set phrases (${phrases.length}, floor ${MIN_SET_PHRASES})`);
+  }
 }
 
 // --- Beginner re-exposure --------------------------------------------------

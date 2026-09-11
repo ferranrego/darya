@@ -1,0 +1,233 @@
+{
+  "id": "tx-seed-l1-052",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "سر و چشم",
+  "titleTranslit": "sar wa chashm",
+  "titleEn": "Head and eye",
+  "sentences": [
+    {
+      "target": "امروز سر من درد می‌کند.",
+      "translit": "emrōz sar-e man dard mēkunad.",
+      "en": "Today my head hurts.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "سر",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "درد",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "چشم من هم درد می‌کند.",
+      "translit": "chashm-e man ham dard mēkunad.",
+      "en": "My eye hurts too.",
+      "tokens": [
+        {
+          "surface": "چشم",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "درد",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من چیزی را دور خوب نمی‌بینم.",
+      "translit": "man chīzē rā dūr khōb namēbīnam.",
+      "en": "I cannot see things far away well.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "چیزی",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "دور",
+          "lexemeId": "lx-0177"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "نمی‌بینم",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "دست و پای من سرد است.",
+      "translit": "dast wa pāy-e man sard ast.",
+      "en": "My hands and feet are cold.",
+      "tokens": [
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "پای",
+          "lexemeId": "lx-0125"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من امروز جور نیستم و حال بد دارم.",
+      "translit": "man emrōz jōr nēstam wa hāl-e bad dāram.",
+      "en": "I am not well today and I feel bad.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "نیستم",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "حال",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "دل من می‌خواهد که بخوابم.",
+      "translit": "dil-e man mēkhāhad bukhābam.",
+      "en": "I feel like sleeping.",
+      "tokens": [
+        {
+          "surface": "دل",
+          "lexemeId": "lx-0124"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "می‌خواهد",
+          "lexemeId": "lx-0099"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "بخوابم",
+          "lexemeId": "lx-0159"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0005",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0043",
+    "lx-0063",
+    "lx-0064",
+    "lx-0072",
+    "lx-0092",
+    "lx-0095",
+    "lx-0096",
+    "lx-0097",
+    "lx-0099",
+    "lx-0106",
+    "lx-0121",
+    "lx-0122",
+    "lx-0123",
+    "lx-0124",
+    "lx-0125",
+    "lx-0159",
+    "lx-0164",
+    "lx-0177",
+    "lx-0209",
+    "lx-0325"
+  ],
+  "newWords": [
+    "lx-0325"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "ezafa-possession",
+    "present-me",
+    "negation"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 52
+}

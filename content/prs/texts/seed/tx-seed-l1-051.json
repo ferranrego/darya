@@ -1,0 +1,271 @@
+{
+  "id": "tx-seed-l1-051",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "کشور من",
+  "titleTranslit": "kishwar-e man",
+  "titleEn": "My country",
+  "sentences": [
+    {
+      "target": "افغانستان کشور من است.",
+      "translit": "afghānestān kishwar-e man ast.",
+      "en": "Afghanistan is my country.",
+      "tokens": [
+        {
+          "surface": "افغانستان",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "کشور",
+          "lexemeId": "lx-0161"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "کابل در این کشور است.",
+      "translit": "kābul dar īn kishwar ast.",
+      "en": "Kabul is in this country.",
+      "tokens": [
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "کشور",
+          "lexemeId": "lx-0161"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "خانه ما از سرک کلان دور نیست.",
+      "translit": "khāna-ye mā az sarak-e kalān dūr nēst.",
+      "en": "Our house is not far from the main road.",
+      "tokens": [
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "دور",
+          "lexemeId": "lx-0177"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "مکتب من نزدیک است.",
+      "translit": "maktab-e man nazdīk ast.",
+      "en": "My school is near.",
+      "tokens": [
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من هر روز از این سرک می‌روم.",
+      "translit": "man har rōz az īn sarak mērawam.",
+      "en": "I go along this road every day.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "می‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "افغانستان جای مقبول است.",
+      "translit": "afghānestān jāy-e maqbūl ast.",
+      "en": "Afghanistan is a beautiful place.",
+      "tokens": [
+        {
+          "surface": "افغانستان",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "جای",
+          "lexemeId": "lx-0163"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم این کشور مهربان هستند.",
+      "translit": "mardum-e īn kishwar mehrabān hastand.",
+      "en": "The people of this country are kind.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "کشور",
+          "lexemeId": "lx-0161"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "من هنوز کابل را ندیده‌ام.",
+      "translit": "man hanōz kābul rā nadīda-am.",
+      "en": "I have not seen Kabul yet.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هنوز",
+          "lexemeId": "lx-0304"
+        },
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "ندیده‌ام",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0004",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0036",
+    "lx-0040",
+    "lx-0059",
+    "lx-0065",
+    "lx-0073",
+    "lx-0075",
+    "lx-0082",
+    "lx-0085",
+    "lx-0086",
+    "lx-0089",
+    "lx-0092",
+    "lx-0096",
+    "lx-0161",
+    "lx-0163",
+    "lx-0166",
+    "lx-0176",
+    "lx-0177",
+    "lx-0256",
+    "lx-0304"
+  ],
+  "newWords": [
+    "lx-0163"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "prepositions",
+    "ezafa-possession",
+    "negation"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 51
+}

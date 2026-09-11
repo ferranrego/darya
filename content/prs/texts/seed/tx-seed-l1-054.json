@@ -1,0 +1,256 @@
+{
+  "id": "tx-seed-l1-054",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "سرک ما",
+  "titleTranslit": "sarak-e mā",
+  "titleEn": "Our street",
+  "sentences": [
+    {
+      "target": "سرک ما نزدیک دریا است.",
+      "translit": "sarak-e mā nazdīk-e daryā ast.",
+      "en": "Our street is near the river.",
+      "tokens": [
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "در دو طرف سرک گل است.",
+      "translit": "dar dō taraf-e sarak gul ast.",
+      "en": "There are flowers on both sides of the street.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "طرف",
+          "lexemeId": "lx-0607"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "گل",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "رنگ این گل سرخ است.",
+      "translit": "rang-e īn gul surkh ast.",
+      "en": "The color of this flower is red.",
+      "tokens": [
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "گل",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "بازار از اینجا دور است.",
+      "translit": "bāzār az īnjā dūr ast.",
+      "en": "The bazaar is far from here.",
+      "tokens": [
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "دور",
+          "lexemeId": "lx-0177"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "اینجا گل زیاد است.",
+      "translit": "īnjā gul ziyād ast.",
+      "en": "There are many flowers here.",
+      "tokens": [
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "گل",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم اینجا مهربان هستند.",
+      "translit": "mardum-e īnjā mehrabān hastand.",
+      "en": "The people here are kind.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "مکتب اما نزدیک است.",
+      "translit": "maktab ammā nazdīk ast.",
+      "en": "The school, however, is near.",
+      "tokens": [
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "اما",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "این جای بسیار مقبول است.",
+      "translit": "īn jāy bisyār maqbūl ast.",
+      "en": "This place is very beautiful.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "جای",
+          "lexemeId": "lx-0163"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0004",
+    "lx-0006",
+    "lx-0010",
+    "lx-0014",
+    "lx-0026",
+    "lx-0059",
+    "lx-0069",
+    "lx-0073",
+    "lx-0075",
+    "lx-0082",
+    "lx-0096",
+    "lx-0133",
+    "lx-0136",
+    "lx-0140",
+    "lx-0141",
+    "lx-0142",
+    "lx-0163",
+    "lx-0167",
+    "lx-0168",
+    "lx-0174",
+    "lx-0176",
+    "lx-0177",
+    "lx-0256",
+    "lx-0607"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [
+    "prepositions",
+    "ezafa-possession",
+    "existential-hast"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 54
+}

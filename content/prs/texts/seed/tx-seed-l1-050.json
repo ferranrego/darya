@@ -1,0 +1,266 @@
+{
+  "id": "tx-seed-l1-050",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "زبان دری",
+  "titleTranslit": "zabān-e darī",
+  "titleEn": "The Dari language",
+  "sentences": [
+    {
+      "target": "من زبان دری را یاد می‌گیرم.",
+      "translit": "man zabān-e darī rā yād mēgīram.",
+      "en": "I am learning the Dari language.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "زبان",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "دری",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "یاد",
+          "lexemeId": "lx-0154"
+        },
+        {
+          "surface": "می‌گیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "دری زبان مردم افغانستان است.",
+      "translit": "darī zabān-e mardum-e afghānestān ast.",
+      "en": "Dari is the language of the people of Afghanistan.",
+      "tokens": [
+        {
+          "surface": "دری",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "زبان",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "افغانستان",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "شاگردان دری می‌نویسند و می‌خوانند.",
+      "translit": "shāgerdān darī mēnawīsand wa mēkhānand.",
+      "en": "The students write and read Dari.",
+      "tokens": [
+        {
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "دری",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "می‌نویسند",
+          "lexemeId": "lx-0155"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "می‌خوانند",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "من هنوز دری را خوب نمی‌دانم.",
+      "translit": "man hanōz darī rā khōb namēdānam.",
+      "en": "I still do not know Dari well.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هنوز",
+          "lexemeId": "lx-0304"
+        },
+        {
+          "surface": "دری",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "نمی‌دانم",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "من هنوز شاگرد هستم.",
+      "translit": "man hanōz shāgerd hastam.",
+      "en": "I am still a student.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هنوز",
+          "lexemeId": "lx-0304"
+        },
+        {
+          "surface": "شاگرد",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "هستم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "اما هر هفته یک چیز نو یاد می‌گیرم.",
+      "translit": "ammā har hafta yak chīz-e naw yād mēgīram.",
+      "en": "But every week I learn something new.",
+      "tokens": [
+        {
+          "surface": "اما",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "یاد",
+          "lexemeId": "lx-0154"
+        },
+        {
+          "surface": "می‌گیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "معلم می‌گوید که دری زبان مقبول است.",
+      "translit": "mu'allem mēgōyad ki darī zabān-e maqbūl ast.",
+      "en": "The teacher says Dari is a beautiful language.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "دری",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "زبان",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0005",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0025",
+    "lx-0050",
+    "lx-0059",
+    "lx-0063",
+    "lx-0067",
+    "lx-0073",
+    "lx-0077",
+    "lx-0078",
+    "lx-0085",
+    "lx-0087",
+    "lx-0088",
+    "lx-0093",
+    "lx-0094",
+    "lx-0096",
+    "lx-0098",
+    "lx-0153",
+    "lx-0154",
+    "lx-0155",
+    "lx-0164",
+    "lx-0166",
+    "lx-0168",
+    "lx-0304"
+  ],
+  "newWords": [
+    "lx-0164"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "object-ra",
+    "present-me",
+    "negation",
+    "plural-ha"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 50
+}

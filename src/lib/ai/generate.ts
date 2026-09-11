@@ -275,6 +275,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       // delivering none was invisible before this was recorded.
       newWords: [...taught].sort(),
       questions: [],
+      grammarPoints: [],
       newWordRatio: req.newWordRatio,
       source: "generated",
       model,

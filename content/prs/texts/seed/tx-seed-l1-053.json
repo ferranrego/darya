@@ -1,0 +1,254 @@
+{
+  "id": "tx-seed-l1-053",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "شیر و گوشت",
+  "titleTranslit": "shīr wa gōsht",
+  "titleEn": "Milk and meat",
+  "sentences": [
+    {
+      "target": "مادر من هر صبح شیر می‌آورد.",
+      "translit": "mādar-e man har subh shīr mēāwarad.",
+      "en": "My mother brings milk every morning.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "شیر",
+          "lexemeId": "lx-0117"
+        },
+        {
+          "surface": "می‌آورد",
+          "lexemeId": "lx-0232"
+        }
+      ]
+    },
+    {
+      "target": "من شیر زیاد می‌خورم.",
+      "translit": "man shīr-e ziyād mēkhuram.",
+      "en": "I drink a lot of milk.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "شیر",
+          "lexemeId": "lx-0117"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "می‌خورم",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "برادر من گوشت می‌خواهد.",
+      "translit": "barādar-e man gōsht mēkhāhad.",
+      "en": "My brother wants meat.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "می‌خواهد",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "گوشت در بازار قیمت است.",
+      "translit": "gōsht dar bāzār qīmat ast.",
+      "en": "Meat is expensive at the bazaar.",
+      "tokens": [
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "قیمت",
+          "lexemeId": "lx-6132"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "پس ما گوشت کم می‌خریم.",
+      "translit": "pas mā gōsht-e kam mēkharēm.",
+      "en": "So we buy little meat.",
+      "tokens": [
+        {
+          "surface": "پس",
+          "lexemeId": "lx-0172"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "می‌خریم",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "شیر و نان چیز خوب است.",
+      "translit": "shīr wa nān chīz-e khōb ast.",
+      "en": "Milk and bread are good things.",
+      "tokens": [
+        {
+          "surface": "شیر",
+          "lexemeId": "lx-0117"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما هر روز نان را سر میز می‌مانیم.",
+      "translit": "mā har rōz nān rā sar-e mēz mēmānēm.",
+      "en": "We put the bread on the table every day.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "سر",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "میز",
+          "lexemeId": "lx-6043"
+        },
+        {
+          "surface": "می‌مانیم",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0038",
+    "lx-0040",
+    "lx-0042",
+    "lx-0051",
+    "lx-0053",
+    "lx-0063",
+    "lx-0069",
+    "lx-0070",
+    "lx-0091",
+    "lx-0099",
+    "lx-0112",
+    "lx-0117",
+    "lx-0122",
+    "lx-0133",
+    "lx-0164",
+    "lx-0166",
+    "lx-0172",
+    "lx-0205",
+    "lx-0232",
+    "lx-0234",
+    "lx-6043",
+    "lx-6132"
+  ],
+  "newWords": [
+    "lx-6043"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "present-me",
+    "ezafa-adjectives",
+    "prepositions"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 53
+}

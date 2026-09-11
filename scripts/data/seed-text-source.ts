@@ -34,4 +34,9 @@ export interface SeedTextSource {
    * without them is never unquizzed - only quizzed less well.
    */
   questions?: ComprehensionQuestion[];
+  /**
+   * Grammar points this text exercises, as `grammarPoint` tags from the course.
+   * Optional: an untagged text is honest, a guessed tag is not.
+   */
+  grammarPoints?: string[];
 }

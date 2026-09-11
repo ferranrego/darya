@@ -694,6 +694,21 @@ export const textDocumentSchema = z.object({
   model: z.string().optional(),
   createdAt: z.string(),
   /**
+   * Grammar points this text exercises, as `grammarPoint` tags from the course.
+   *
+   * The grammar course and the reading course have been two separate products
+   * sharing an app: 93 lessons on one side, 100 texts on the other, and
+   * nothing saying which text lets a learner see a lesson in use. Tagging is
+   * what makes "read something that uses what you just learned" answerable at
+   * all.
+   *
+   * Defaulted rather than required: a generated text has no tags and an
+   * imported article cannot have any, and a tag nobody has written is better
+   * than a tag somebody guessed. `validate-content.ts` checks that every tag
+   * present names a real lesson.
+   */
+  grammarPoints: z.array(z.string()).default([]),
+  /**
    * Hand-written comprehension questions, where somebody has written them.
    *
    * Defaulted rather than required because every text cached before this

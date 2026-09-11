@@ -1,0 +1,327 @@
+{
+  "id": "tx-seed-l1-049",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "زن و دختر",
+  "titleTranslit": "zan wa dukhtar",
+  "titleEn": "The woman and the girl",
+  "sentences": [
+    {
+      "target": "یک زن و یک دختر در خانه ما هستند.",
+      "translit": "yak zan wa yak dukhtar dar khāna-ye mā hastand.",
+      "en": "A woman and a girl are in our house.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "زن",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "من نام آن زن را نمی‌دانم.",
+      "translit": "man nām-e ān zan rā namēdānam.",
+      "en": "I do not know that woman's name.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "زن",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "نمی‌دانم",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "دختر او بسیار خورد است.",
+      "translit": "dukhtar-e ō bisyār khurd ast.",
+      "en": "Her daughter is very small.",
+      "tokens": [
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من آن دختر را دیروز دیدم.",
+      "translit": "man ān dukhtar rā dīrōz dīdam.",
+      "en": "I saw that girl yesterday.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "دیروز",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "دیدم",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "آن زن به من گفت که دختر او مریض است.",
+      "translit": "ān zan ba man guft ki dukhtar-e ō marīz ast.",
+      "en": "That woman told me her daughter is ill.",
+      "tokens": [
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "زن",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "گفت",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "مریض",
+          "lexemeId": "lx-0262"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "حالا دختر جور است و ما خوش هستیم.",
+      "translit": "hālā dukhtar jōr ast wa mā khush hastēm.",
+      "en": "Now the girl is well and we are happy.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "او هنوز خورد است.",
+      "translit": "ō hanōz khurd ast.",
+      "en": "She is still small.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هنوز",
+          "lexemeId": "lx-0304"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مادر او یک زن مهربان است.",
+      "translit": "mādar-e ō yak zan-e mehrabān ast.",
+      "en": "Her mother is a kind woman.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "زن",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0005",
+    "lx-0007",
+    "lx-0009",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0036",
+    "lx-0045",
+    "lx-0046",
+    "lx-0051",
+    "lx-0056",
+    "lx-0061",
+    "lx-0062",
+    "lx-0066",
+    "lx-0092",
+    "lx-0093",
+    "lx-0094",
+    "lx-0096",
+    "lx-0106",
+    "lx-0107",
+    "lx-0167",
+    "lx-0256",
+    "lx-0262",
+    "lx-0304"
+  ],
+  "newWords": [
+    "lx-0256"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "ezafa-possession",
+    "demonstratives",
+    "object-ra",
+    "simple-past"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 49
+}

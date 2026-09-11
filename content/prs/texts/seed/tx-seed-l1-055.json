@@ -1,0 +1,242 @@
+{
+  "id": "tx-seed-l1-055",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "یک ماه",
+  "titleTranslit": "yak māh",
+  "titleEn": "One month",
+  "sentences": [
+    {
+      "target": "یک ماه چهار هفته است.",
+      "translit": "yak māh chār hafta ast.",
+      "en": "One month is four weeks.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "چهار",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "یک سال دوازده ماه دارد.",
+      "translit": "yak sāl dawāzda māh dārad.",
+      "en": "One year has twelve months.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "سال",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "دوازده",
+          "lexemeId": "lx-6076"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "حالا ماه نو شروع شد.",
+      "translit": "hālā māh-e naw shurū' shud.",
+      "en": "Now the new month has started.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "شروع",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "شد",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "این هفته من کار زیاد دارم.",
+      "translit": "īn hafta man kār-e ziyād dāram.",
+      "en": "This week I have a lot of work.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "پس این ماه مهم است.",
+      "translit": "pas īn māh muhim ast.",
+      "en": "So this month is important.",
+      "tokens": [
+        {
+          "surface": "پس",
+          "lexemeId": "lx-0172"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "مهم",
+          "lexemeId": "lx-6155"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "زندگی هر سال تیزتر می‌شود.",
+      "translit": "zindagī har sāl tēztar mēshawad.",
+      "en": "Life gets faster every year.",
+      "tokens": [
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "سال",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "تیزتر",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "اما زندگی اینجا خوب است.",
+      "translit": "ammā zindagī īnjā khōb ast.",
+      "en": "But life here is good.",
+      "tokens": [
+        {
+          "surface": "اما",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0025",
+    "lx-0028",
+    "lx-0046",
+    "lx-0048",
+    "lx-0049",
+    "lx-0050",
+    "lx-0063",
+    "lx-0067",
+    "lx-0069",
+    "lx-0079",
+    "lx-0095",
+    "lx-0149",
+    "lx-0150",
+    "lx-0166",
+    "lx-0168",
+    "lx-0172",
+    "lx-0174",
+    "lx-0215",
+    "lx-6071",
+    "lx-6076",
+    "lx-6155"
+  ],
+  "newWords": [
+    "lx-0215"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "dashtan-numbers",
+    "ezafa-adjectives",
+    "present-me"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 55
+}

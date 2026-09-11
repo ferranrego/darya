@@ -1,0 +1,246 @@
+{
+  "id": "tx-seed-l1-056",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "کمک",
+  "titleTranslit": "kumak",
+  "titleEn": "Help",
+  "sentences": [
+    {
+      "target": "دوست من کمک می‌خواهد.",
+      "translit": "dōst-e man kumak mēkhāhad.",
+      "en": "My friend wants help.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کمک",
+          "lexemeId": "lx-0208"
+        },
+        {
+          "surface": "می‌خواهد",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "من به او کمک کرده می‌توانم.",
+      "translit": "man ba ō kumak karda mētawānam.",
+      "en": "I can help him.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "کمک",
+          "lexemeId": "lx-0208"
+        },
+        {
+          "surface": "کرده",
+          "lexemeId": "lx-0097"
+        },
+        {
+          "surface": "می‌توانم",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "او به من گفت که حال بد دارد.",
+      "translit": "ō ba man guft ki hāl-e bad dārad.",
+      "en": "He told me he feels bad.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "گفت",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "حال",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من نمی‌دانم که چه شد.",
+      "translit": "man namēdānam ki che shud.",
+      "en": "I do not know what happened.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نمی‌دانم",
+          "lexemeId": "lx-0094"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "چه",
+          "lexemeId": "lx-0017"
+        },
+        {
+          "surface": "شد",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "اما کمک یک چیز مهم است.",
+      "translit": "ammā kumak yak chīz-e muhim ast.",
+      "en": "But help is an important thing.",
+      "tokens": [
+        {
+          "surface": "اما",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "کمک",
+          "lexemeId": "lx-0208"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "مهم",
+          "lexemeId": "lx-6155"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "حالا او خوش است.",
+      "translit": "hālā ō khush ast.",
+      "en": "Now he is happy.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من هنوز اینجا هستم.",
+      "translit": "man hanōz īnjā hastam.",
+      "en": "I am still here.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هنوز",
+          "lexemeId": "lx-0304"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "هستم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0005",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0017",
+    "lx-0025",
+    "lx-0046",
+    "lx-0058",
+    "lx-0064",
+    "lx-0093",
+    "lx-0094",
+    "lx-0095",
+    "lx-0096",
+    "lx-0097",
+    "lx-0099",
+    "lx-0107",
+    "lx-0149",
+    "lx-0158",
+    "lx-0164",
+    "lx-0168",
+    "lx-0174",
+    "lx-0208",
+    "lx-0304",
+    "lx-0325",
+    "lx-6155"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [
+    "present-me",
+    "negation",
+    "object-ra"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 56
+}

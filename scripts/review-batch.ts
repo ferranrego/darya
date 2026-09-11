@@ -310,6 +310,7 @@ async function renderTexts(lang: string, textsPath: string, entries: LexiconEntr
         vocabUsed: [...vocab].sort(),
         newWords,
         questions: source.questions ?? [],
+        grammarPoints: source.grammarPoints ?? [],
         newWordRatio: 0,
         source: "seed",
         createdAt: new Date().toISOString(),
