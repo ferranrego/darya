@@ -101,7 +101,7 @@
     },
     {
       "target": "او به من یک کتاب داد.",
-      "translit": "ō ba man yak kitāb dād.",
+      "translit": "ō ba man yak ketāb dād.",
       "en": "He gave me a book.",
       "tokens": [
         {
@@ -132,7 +132,7 @@
     },
     {
       "target": "من به او گفتم که کتاب خوب است.",
-      "translit": "man ba ō guftam ki kitāb khōb ast.",
+      "translit": "man ba ō guftam ki ketāb khōb ast.",
       "en": "I told him the book is good.",
       "tokens": [
         {
