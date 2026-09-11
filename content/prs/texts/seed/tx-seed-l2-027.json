@@ -113,7 +113,68 @@
     "lx-0587",
     "lx-1049"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does mom go?",
+      "questionTarget": "مامان کجا می‌رود؟",
+      "questionTranslit": "māmān kujā mērawad?",
+      "options": [
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به پرواز",
+          "translit": "ba parwāz",
+          "en": "To the flight"
+        },
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the bazaar"
+        },
+        {
+          "target": "به خانه",
+          "translit": "ba khāna",
+          "en": "Home"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Whom does the guard seek?",
+      "questionTarget": "محافظ کی را می‌جوید؟",
+      "questionTranslit": "muhāfiz kī rā mējōyad?",
+      "options": [
+        {
+          "target": "پدر را",
+          "translit": "padar rā",
+          "en": "The father"
+        },
+        {
+          "target": "معلم را",
+          "translit": "mu'allem rā",
+          "en": "The teacher"
+        },
+        {
+          "target": "دوست را",
+          "translit": "dōst rā",
+          "en": "The friend"
+        },
+        {
+          "target": "مامان را",
+          "translit": "māmān rā",
+          "en": "Mom"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

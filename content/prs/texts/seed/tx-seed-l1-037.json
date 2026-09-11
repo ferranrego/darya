@@ -148,7 +148,68 @@
     "lx-6229",
     "lx-6230"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What has mother cooked?",
+      "questionTarget": "مادر چه پخته است؟",
+      "questionTranslit": "mādar chē pukhta ast?",
+      "options": [
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "کلچه",
+          "translit": "kulcha",
+          "en": "Cookies"
+        },
+        {
+          "target": "قابلی پلو",
+          "translit": "qābilī palaw",
+          "en": "Qabili Palaw"
+        },
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How are we all?",
+      "questionTarget": "همه ما چطور هستیم؟",
+      "questionTranslit": "hama-ye mā chetōr hastēm?",
+      "options": [
+        {
+          "target": "بسیار خوش",
+          "translit": "bisyār khush",
+          "en": "Very happy"
+        },
+        {
+          "target": "بسیار مانده",
+          "translit": "bisyār mānda",
+          "en": "Very tired"
+        },
+        {
+          "target": "بسیار مریض",
+          "translit": "bisyār marīz",
+          "en": "Very sick"
+        },
+        {
+          "target": "بسیار غمگین",
+          "translit": "bisyār ghamgin",
+          "en": "Very sad"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

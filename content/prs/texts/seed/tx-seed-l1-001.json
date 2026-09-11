@@ -154,7 +154,68 @@
     "lx-0089",
     "lx-0096"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is our house?",
+      "questionTarget": "خانه ما چطور است؟",
+      "questionTranslit": "khāna-ye mā chetōr ast?",
+      "options": [
+        {
+          "target": "کلان",
+          "translit": "kalān",
+          "en": "Big"
+        },
+        {
+          "target": "خورد",
+          "translit": "khurd",
+          "en": "Small"
+        },
+        {
+          "target": "نو",
+          "translit": "naw",
+          "en": "New"
+        },
+        {
+          "target": "کهنه",
+          "translit": "kuhna",
+          "en": "Old"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where does the brother go?",
+      "questionTarget": "برادر کجا می‌رود؟",
+      "questionTranslit": "barādar kujā mērawad?",
+      "options": [
+        {
+          "target": "به کار",
+          "translit": "ba kār",
+          "en": "To work"
+        },
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به باغ",
+          "translit": "ba bāgh",
+          "en": "To the garden"
+        },
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the bazaar"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

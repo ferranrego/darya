@@ -157,7 +157,68 @@
     "lx-0495",
     "lx-0658"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where is the blood?",
+      "questionTarget": "خون کجا است؟",
+      "questionTranslit": "khūn kujā ast?",
+      "options": [
+        {
+          "target": "در دست او",
+          "translit": "dar dast-e ō",
+          "en": "On his hand"
+        },
+        {
+          "target": "در پای او",
+          "translit": "dar pāy-e ō",
+          "en": "On his foot"
+        },
+        {
+          "target": "در سر او",
+          "translit": "dar sar-e ō",
+          "en": "On his head"
+        },
+        {
+          "target": "در چشم او",
+          "translit": "dar chashm-e ō",
+          "en": "In his eye"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What colour is his blood?",
+      "questionTarget": "خون او چه رنگ است؟",
+      "questionTranslit": "khūn-e ō chē rang ast?",
+      "options": [
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        },
+        {
+          "target": "آبی",
+          "translit": "ābī",
+          "en": "Blue"
+        },
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

@@ -181,7 +181,68 @@
     "lx-0330",
     "lx-1051"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does my father sit?",
+      "questionTarget": "پدرم کجا می‌نشیند؟",
+      "questionTranslit": "padar-am kujā mēneshīnad?",
+      "options": [
+        {
+          "target": "در باغ",
+          "translit": "dar bāgh",
+          "en": "In the garden"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        },
+        {
+          "target": "در دکان",
+          "translit": "dar dukān",
+          "en": "In the shop"
+        },
+        {
+          "target": "در مکتب",
+          "translit": "dar maktab",
+          "en": "At school"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is my father now?",
+      "questionTarget": "حالا پدرم چطور است؟",
+      "questionTranslit": "hālā padar-am chetōr ast?",
+      "options": [
+        {
+          "target": "مریض",
+          "translit": "marīz",
+          "en": "Sick"
+        },
+        {
+          "target": "مانده",
+          "translit": "mānda",
+          "en": "Tired"
+        },
+        {
+          "target": "جور",
+          "translit": "jōr",
+          "en": "Well"
+        },
+        {
+          "target": "غمگین",
+          "translit": "ghamgin",
+          "en": "Sad"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

@@ -129,7 +129,68 @@
     "lx-0292",
     "lx-0379"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is the boy?",
+      "questionTarget": "پسر چطور است؟",
+      "questionTranslit": "pesar chetōr ast?",
+      "options": [
+        {
+          "target": "خوش",
+          "translit": "khush",
+          "en": "Happy"
+        },
+        {
+          "target": "مانده",
+          "translit": "mānda",
+          "en": "Tired"
+        },
+        {
+          "target": "مریض",
+          "translit": "marīz",
+          "en": "Sick"
+        },
+        {
+          "target": "پیر",
+          "translit": "pīr",
+          "en": "Old"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the father do?",
+      "questionTarget": "پدر چه می‌کند؟",
+      "questionTranslit": "padar chē mēkunad?",
+      "options": [
+        {
+          "target": "کار می‌کند",
+          "translit": "kār mēkunad",
+          "en": "He works"
+        },
+        {
+          "target": "چای می‌خورد",
+          "translit": "chāy mēkhurad",
+          "en": "He drinks tea"
+        },
+        {
+          "target": "او را می‌بیند",
+          "translit": "ō rā mēbīnad",
+          "en": "He sees him"
+        },
+        {
+          "target": "او را می‌شناسد",
+          "translit": "ō rā mēshināsad",
+          "en": "He recognizes him"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

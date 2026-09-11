@@ -142,7 +142,68 @@
     "lx-0197",
     "lx-0199"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is my room?",
+      "questionTarget": "اتاق من چطور است؟",
+      "questionTranslit": "utāq-e man chetōr ast?",
+      "options": [
+        {
+          "target": "کلان",
+          "translit": "kalān",
+          "en": "Big"
+        },
+        {
+          "target": "خورد",
+          "translit": "khurd",
+          "en": "Small"
+        },
+        {
+          "target": "گرم",
+          "translit": "garm",
+          "en": "Warm"
+        },
+        {
+          "target": "تاریک",
+          "translit": "tārīk",
+          "en": "Dark"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What colour is the room?",
+      "questionTarget": "رنگ اتاق چه است؟",
+      "questionTranslit": "rang-e utāq chē ast?",
+      "options": [
+        {
+          "target": "سبز",
+          "translit": "sabz",
+          "en": "Green"
+        },
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "زرد",
+          "translit": "zard",
+          "en": "Yellow"
+        },
+        {
+          "target": "آبی",
+          "translit": "ābī",
+          "en": "Blue"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "ezafa-possession",
     "pronouns-budan",

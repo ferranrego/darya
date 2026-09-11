@@ -176,7 +176,68 @@
     "lx-0209",
     "lx-6071"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What colour is my eye?",
+      "questionTarget": "چشم من چه رنگ است؟",
+      "questionTranslit": "chashm-e man chē rang ast?",
+      "options": [
+        {
+          "target": "سبز",
+          "translit": "sabz",
+          "en": "Green"
+        },
+        {
+          "target": "آبی",
+          "translit": "ābī",
+          "en": "Blue"
+        },
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How am I today?",
+      "questionTarget": "من امروز چطور هستم؟",
+      "questionTranslit": "man emrōz chetōr hastam?",
+      "options": [
+        {
+          "target": "جور هستم",
+          "translit": "jōr hastam",
+          "en": "I am well"
+        },
+        {
+          "target": "جور نیستم",
+          "translit": "jōr nēstam",
+          "en": "I am not well"
+        },
+        {
+          "target": "خوش هستم",
+          "translit": "khush hastam",
+          "en": "I am happy"
+        },
+        {
+          "target": "مانده هستم",
+          "translit": "mānda hastam",
+          "en": "I am tired"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

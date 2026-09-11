@@ -167,7 +167,68 @@
     "lx-0049",
     "lx-0068"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What is today?",
+      "questionTarget": "امروز چه است؟",
+      "questionTranslit": "emrōz chē ast?",
+      "options": [
+        {
+          "target": "سال کهنه",
+          "translit": "sāl-e kuhna",
+          "en": "The old year"
+        },
+        {
+          "target": "سال نو",
+          "translit": "sāl-e naw",
+          "en": "The new year"
+        },
+        {
+          "target": "ماه نو",
+          "translit": "māh-e naw",
+          "en": "The new month"
+        },
+        {
+          "target": "یک روز بد",
+          "translit": "yak rōz-e bad",
+          "en": "A bad day"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I want?",
+      "questionTarget": "من چه می‌خواهم؟",
+      "questionTranslit": "man chē mēkhāham?",
+      "options": [
+        {
+          "target": "کتاب نو",
+          "translit": "ketāb-e naw",
+          "en": "New books"
+        },
+        {
+          "target": "خانه نو",
+          "translit": "khāna-ye naw",
+          "en": "A new house"
+        },
+        {
+          "target": "لباس نو",
+          "translit": "libās-e naw",
+          "en": "New clothes"
+        },
+        {
+          "target": "موتر نو",
+          "translit": "mōtar-e naw",
+          "en": "A new car"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

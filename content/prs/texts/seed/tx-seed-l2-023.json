@@ -139,7 +139,68 @@
     "lx-0617",
     "lx-1070"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do I count?",
+      "questionTarget": "من چه می‌شمارم؟",
+      "questionTranslit": "man chē mēshumāram?",
+      "options": [
+        {
+          "target": "موی او",
+          "translit": "mōy-e ō",
+          "en": "His hair"
+        },
+        {
+          "target": "پیسه",
+          "translit": "paysa",
+          "en": "Money"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "Books"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where is my homeland?",
+      "questionTarget": "وطن من کجا است؟",
+      "questionTranslit": "watan-e man kujā ast?",
+      "options": [
+        {
+          "target": "در شرق",
+          "translit": "dar sharq",
+          "en": "In the east"
+        },
+        {
+          "target": "در شمال",
+          "translit": "dar shamāl",
+          "en": "In the north"
+        },
+        {
+          "target": "در غرب",
+          "translit": "dar gharb",
+          "en": "In the west"
+        },
+        {
+          "target": "در جنوب",
+          "translit": "dar junūb",
+          "en": "In the south"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

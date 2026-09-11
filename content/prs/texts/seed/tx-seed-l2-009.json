@@ -145,7 +145,68 @@
     "lx-0290",
     "lx-0306"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is this place?",
+      "questionTarget": "این جای چطور است؟",
+      "questionTranslit": "īn jāy chetōr ast?",
+      "options": [
+        {
+          "target": "خوب",
+          "translit": "khōb",
+          "en": "Good"
+        },
+        {
+          "target": "بد",
+          "translit": "bad",
+          "en": "Bad"
+        },
+        {
+          "target": "تاریک",
+          "translit": "tārīk",
+          "en": "Dark"
+        },
+        {
+          "target": "سرد",
+          "translit": "sard",
+          "en": "Cold"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where must he go?",
+      "questionTarget": "او کجا باید برود؟",
+      "questionTranslit": "ō kujā bāyad birawad?",
+      "options": [
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the bazaar"
+        },
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به خانه",
+          "translit": "ba khāna",
+          "en": "Home"
+        },
+        {
+          "target": "به این جای",
+          "translit": "ba īn jāy",
+          "en": "To this place"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "must-bayad",
     "demonstratives",

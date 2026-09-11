@@ -135,7 +135,68 @@
     "lx-0194",
     "lx-0316"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What colour is our house?",
+      "questionTarget": "رنگ خانه ما چه است؟",
+      "questionTranslit": "rang-e khāna-ye mā chē ast?",
+      "options": [
+        {
+          "target": "سبز",
+          "translit": "sabz",
+          "en": "Green"
+        },
+        {
+          "target": "آبی",
+          "translit": "ābī",
+          "en": "Blue"
+        },
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "زرد",
+          "translit": "zard",
+          "en": "Yellow"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is the house?",
+      "questionTarget": "خانه چطور است؟",
+      "questionTranslit": "khāna chetōr ast?",
+      "options": [
+        {
+          "target": "تاریک",
+          "translit": "tārīk",
+          "en": "Dark"
+        },
+        {
+          "target": "کلان",
+          "translit": "kalān",
+          "en": "Big"
+        },
+        {
+          "target": "روشن",
+          "translit": "rōshan",
+          "en": "Bright"
+        },
+        {
+          "target": "کهنه",
+          "translit": "kuhna",
+          "en": "Old"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "negation",

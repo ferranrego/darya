@@ -206,7 +206,68 @@
     "lx-0062",
     "lx-0256"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does he give me?",
+      "questionTarget": "او به من چه می‌دهد؟",
+      "questionTranslit": "ō ba man chē mēdihad?",
+      "options": [
+        {
+          "target": "یک قلم",
+          "translit": "yak qalam",
+          "en": "A pen"
+        },
+        {
+          "target": "یک نان",
+          "translit": "yak nān",
+          "en": "A bread"
+        },
+        {
+          "target": "یک کتاب",
+          "translit": "yak ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "یک گل",
+          "translit": "yak gul",
+          "en": "A flower"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is my friend?",
+      "questionTarget": "دوست من چطور است؟",
+      "questionTranslit": "dōst-e man chetōr ast?",
+      "options": [
+        {
+          "target": "بسیار مهربان",
+          "translit": "bisyār mehrabān",
+          "en": "Very kind"
+        },
+        {
+          "target": "بسیار مانده",
+          "translit": "bisyār mānda",
+          "en": "Very tired"
+        },
+        {
+          "target": "بسیار پیر",
+          "translit": "bisyār pīr",
+          "en": "Very old"
+        },
+        {
+          "target": "بسیار مریض",
+          "translit": "bisyār marīz",
+          "en": "Very sick"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 5,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

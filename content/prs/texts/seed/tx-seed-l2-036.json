@@ -154,7 +154,68 @@
     "lx-6238",
     "lx-6239"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How are the groceries in the Kabul Mandawi?",
+      "questionTarget": "در مندوی کابل سودا چطور است؟",
+      "questionTranslit": "dar mandawī-ye kābul sawdā chetōr ast?",
+      "options": [
+        {
+          "target": "قیمت",
+          "translit": "qīmat",
+          "en": "Expensive"
+        },
+        {
+          "target": "کم",
+          "translit": "kam",
+          "en": "Little"
+        },
+        {
+          "target": "ارزان",
+          "translit": "arzān",
+          "en": "Cheap"
+        },
+        {
+          "target": "تازه",
+          "translit": "tāza",
+          "en": "Fresh"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do the shopkeepers sell?",
+      "questionTarget": "دکاندارها چه می‌فروشند؟",
+      "questionTranslit": "dukāndār-hā chē mēfurōshand?",
+      "options": [
+        {
+          "target": "گوشت و شیر",
+          "translit": "gōsht wa shīr",
+          "en": "Meat and milk"
+        },
+        {
+          "target": "نان و چای",
+          "translit": "nān wa chāy",
+          "en": "Bread and tea"
+        },
+        {
+          "target": "برنج و روغن",
+          "translit": "berenj wa rōghan",
+          "en": "Rice and oil"
+        },
+        {
+          "target": "میوه و سبزی",
+          "translit": "mēwa wa sabzī",
+          "en": "Fruit and vegetables"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "plural-ha",

@@ -132,7 +132,68 @@
     "lx-0499",
     "lx-0500"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "With what does he hear?",
+      "questionTarget": "او با چه می‌شنود؟",
+      "questionTranslit": "ō bā chē mēshinawad?",
+      "options": [
+        {
+          "target": "با چشم",
+          "translit": "bā chashm",
+          "en": "With the eye"
+        },
+        {
+          "target": "با دست",
+          "translit": "bā dast",
+          "en": "With the hand"
+        },
+        {
+          "target": "با بینی",
+          "translit": "bā bīnī",
+          "en": "With the nose"
+        },
+        {
+          "target": "با گوش",
+          "translit": "bā gōsh",
+          "en": "With the ear"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is the man?",
+      "questionTarget": "مرد چطور است؟",
+      "questionTranslit": "mard chetōr ast?",
+      "options": [
+        {
+          "target": "جوان",
+          "translit": "jawān",
+          "en": "Young"
+        },
+        {
+          "target": "پیر",
+          "translit": "pīr",
+          "en": "Old"
+        },
+        {
+          "target": "مانده",
+          "translit": "mānda",
+          "en": "Tired"
+        },
+        {
+          "target": "خوش",
+          "translit": "khush",
+          "en": "Happy"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

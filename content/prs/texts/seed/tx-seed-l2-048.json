@@ -224,7 +224,68 @@
   "newWords": [
     "lx-0155"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does our teacher teach?",
+      "questionTarget": "معلم ما چه درس می‌دهد؟",
+      "questionTranslit": "mu'allem-e mā chē dars mēdihad?",
+      "options": [
+        {
+          "target": "زبان انگلیسی",
+          "translit": "zabān-e inglīsī",
+          "en": "The English language"
+        },
+        {
+          "target": "حساب",
+          "translit": "hisāb",
+          "en": "Arithmetic"
+        },
+        {
+          "target": "زبان دری",
+          "translit": "zabān-e darī",
+          "en": "The Dari language"
+        },
+        {
+          "target": "تاریخ",
+          "translit": "tārīkh",
+          "en": "History"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the teacher give us?",
+      "questionTarget": "معلم به ما چه می‌دهد؟",
+      "questionTranslit": "mu'allem ba mā chē mēdihad?",
+      "options": [
+        {
+          "target": "یک کتاب نو",
+          "translit": "yak ketāb-e naw",
+          "en": "A new book"
+        },
+        {
+          "target": "یک کتاب کهنه",
+          "translit": "yak ketāb-e kuhna",
+          "en": "An old book"
+        },
+        {
+          "target": "یک قلم نو",
+          "translit": "yak qalam-e naw",
+          "en": "A new pen"
+        },
+        {
+          "target": "یک نام نو",
+          "translit": "yak nām-e naw",
+          "en": "A new name"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

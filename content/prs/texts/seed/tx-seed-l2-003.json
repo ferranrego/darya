@@ -160,7 +160,68 @@
     "lx-0224",
     "lx-0232"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does my grandfather do?",
+      "questionTarget": "پدرکلانم چه می‌کند؟",
+      "questionTranslit": "padarkalān-am chē mēkunad?",
+      "options": [
+        {
+          "target": "چای می‌آورد",
+          "translit": "chāy mēāwarad",
+          "en": "He brings tea"
+        },
+        {
+          "target": "قصه می‌گوید",
+          "translit": "qessa mēgōyad",
+          "en": "He tells stories"
+        },
+        {
+          "target": "کتاب می‌خواند",
+          "translit": "ketāb mēkhānad",
+          "en": "He reads a book"
+        },
+        {
+          "target": "کار می‌کند",
+          "translit": "kār mēkunad",
+          "en": "He works"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does my grandmother bring?",
+      "questionTarget": "مادرکلانم چه می‌آورد؟",
+      "questionTranslit": "mādarkalān-am chē mēāwarad?",
+      "options": [
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "میوه",
+          "translit": "mēwa",
+          "en": "Fruit"
+        },
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

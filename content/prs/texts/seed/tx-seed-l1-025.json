@@ -98,7 +98,68 @@
     "lx-0247",
     "lx-0367"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is the music?",
+      "questionTarget": "موسیقی چطور است؟",
+      "questionTranslit": "mōsīqī chetōr ast?",
+      "options": [
+        {
+          "target": "بد",
+          "translit": "bad",
+          "en": "Bad"
+        },
+        {
+          "target": "مقبول",
+          "translit": "maqbūl",
+          "en": "Beautiful"
+        },
+        {
+          "target": "بلند",
+          "translit": "buland",
+          "en": "Loud"
+        },
+        {
+          "target": "کهنه",
+          "translit": "kuhna",
+          "en": "Old"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Who answers?",
+      "questionTarget": "کی جواب می‌دهد؟",
+      "questionTranslit": "kī jawāb mēdehad?",
+      "options": [
+        {
+          "target": "پدر",
+          "translit": "padar",
+          "en": "The father"
+        },
+        {
+          "target": "معلم",
+          "translit": "mu'allem",
+          "en": "The teacher"
+        },
+        {
+          "target": "مادر",
+          "translit": "mādar",
+          "en": "The mother"
+        },
+        {
+          "target": "پسر",
+          "translit": "pesar",
+          "en": "The boy"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "pronouns-budan"

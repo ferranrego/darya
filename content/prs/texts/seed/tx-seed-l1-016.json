@@ -98,7 +98,68 @@
     "lx-0669",
     "lx-6114"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is the wind?",
+      "questionTarget": "باد چطور است؟",
+      "questionTranslit": "bād chetōr ast?",
+      "options": [
+        {
+          "target": "قوی",
+          "translit": "qawī",
+          "en": "Strong"
+        },
+        {
+          "target": "سرد",
+          "translit": "sard",
+          "en": "Cold"
+        },
+        {
+          "target": "گرم",
+          "translit": "garm",
+          "en": "Warm"
+        },
+        {
+          "target": "خشک",
+          "translit": "khushk",
+          "en": "Dry"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What comes?",
+      "questionTarget": "چه می‌آید؟",
+      "questionTranslit": "chē mēāyad?",
+      "options": [
+        {
+          "target": "برف",
+          "translit": "barf",
+          "en": "Snow"
+        },
+        {
+          "target": "باد",
+          "translit": "bād",
+          "en": "Wind"
+        },
+        {
+          "target": "آفتاب",
+          "translit": "āftāb",
+          "en": "Sun"
+        },
+        {
+          "target": "باران",
+          "translit": "bārān",
+          "en": "Rain"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "pronouns-budan"

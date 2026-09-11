@@ -146,7 +146,68 @@
     "lx-0097",
     "lx-0191"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do we do at home?",
+      "questionTarget": "ما در خانه چه می‌کنیم؟",
+      "questionTranslit": "mā dar khāna chē mēkunēm?",
+      "options": [
+        {
+          "target": "نان می‌خوریم",
+          "translit": "nān mēkhurēm",
+          "en": "We eat food"
+        },
+        {
+          "target": "کار می‌کنیم",
+          "translit": "kār mēkunēm",
+          "en": "We work"
+        },
+        {
+          "target": "بازی می‌کنیم",
+          "translit": "bāzī mēkunēm",
+          "en": "We play"
+        },
+        {
+          "target": "چای می‌آوریم",
+          "translit": "chāy mēāwarēm",
+          "en": "We bring tea"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I read at home?",
+      "questionTarget": "من در خانه چه می‌خوانم؟",
+      "questionTranslit": "man dar khāna chē mēkhānam?",
+      "options": [
+        {
+          "target": "نامه",
+          "translit": "nāma",
+          "en": "A letter"
+        },
+        {
+          "target": "قصه",
+          "translit": "qessa",
+          "en": "A story"
+        },
+        {
+          "target": "درس",
+          "translit": "dars",
+          "en": "The lesson"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "A book"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

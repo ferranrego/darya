@@ -155,7 +155,68 @@
     "lx-6128",
     "lx-6232"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where is our teacher sitting?",
+      "questionTarget": "معلم ما کجا نشسته است؟",
+      "questionTranslit": "mu'allem-e mā kujā nishasta ast?",
+      "options": [
+        {
+          "target": "در موتر",
+          "translit": "dar mōtar",
+          "en": "In the car"
+        },
+        {
+          "target": "در بس",
+          "translit": "dar bas",
+          "en": "In the bus"
+        },
+        {
+          "target": "در صنف",
+          "translit": "dar senf",
+          "en": "In the classroom"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is the weather there?",
+      "questionTarget": "در آنجا آب و هوا چطور است؟",
+      "questionTranslit": "dar ānjā āb wa hawā chetōr ast?",
+      "options": [
+        {
+          "target": "خوب",
+          "translit": "khōb",
+          "en": "Good"
+        },
+        {
+          "target": "بد",
+          "translit": "bad",
+          "en": "Bad"
+        },
+        {
+          "target": "سرد",
+          "translit": "sard",
+          "en": "Cold"
+        },
+        {
+          "target": "گرم",
+          "translit": "garm",
+          "en": "Hot"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

@@ -138,7 +138,68 @@
     "lx-6246",
     "lx-6247"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where are the guests sitting?",
+      "questionTarget": "مهمان‌ها کجا نشسته‌اند؟",
+      "questionTranslit": "mehmān-hā kujā nishasta-and?",
+      "options": [
+        {
+          "target": "در آشپزخانه",
+          "translit": "dar āshpazkhāna",
+          "en": "In the kitchen"
+        },
+        {
+          "target": "در مهمانخانه",
+          "translit": "dar mihmānkhāna",
+          "en": "In the guest room"
+        },
+        {
+          "target": "در باغ",
+          "translit": "dar bāgh",
+          "en": "In the garden"
+        },
+        {
+          "target": "در دکان",
+          "translit": "dar dukān",
+          "en": "In the shop"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I take to them?",
+      "questionTarget": "من برایشان چه می‌برم؟",
+      "questionTranslit": "man barā-yishān chē mēbaram?",
+      "options": [
+        {
+          "target": "نان و پنیر",
+          "translit": "nān wa panēr",
+          "en": "Bread and cheese"
+        },
+        {
+          "target": "شیر و گوشت",
+          "translit": "shīr wa gōsht",
+          "en": "Milk and meat"
+        },
+        {
+          "target": "میوه و آب",
+          "translit": "mēwa wa āb",
+          "en": "Fruit and water"
+        },
+        {
+          "target": "چای و کلچه",
+          "translit": "chāy wa kulcha",
+          "en": "Tea and cookies"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "plural-ha",

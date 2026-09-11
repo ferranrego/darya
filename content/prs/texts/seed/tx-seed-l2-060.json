@@ -193,7 +193,68 @@
   "newWords": [
     "lx-6132"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does my mother bring every morning?",
+      "questionTarget": "مادر من هر صبح چه می‌آورد؟",
+      "questionTranslit": "mādar-e man har subh chē mēāwarad?",
+      "options": [
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is the meat at the bazaar?",
+      "questionTarget": "در بازار گوشت چطور است؟",
+      "questionTranslit": "dar bāzār gōsht chetōr ast?",
+      "options": [
+        {
+          "target": "ارزان",
+          "translit": "arzān",
+          "en": "Cheap"
+        },
+        {
+          "target": "قیمت",
+          "translit": "qīmat",
+          "en": "Expensive"
+        },
+        {
+          "target": "تازه",
+          "translit": "tāza",
+          "en": "Fresh"
+        },
+        {
+          "target": "کم",
+          "translit": "kam",
+          "en": "Scarce"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

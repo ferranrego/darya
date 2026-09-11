@@ -170,7 +170,68 @@
     "lx-0232"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does my mother bring?",
+      "questionTarget": "مادر من چه می‌آورد؟",
+      "questionTranslit": "mādar-e man chē mēāwarad?",
+      "options": [
+        {
+          "target": "چای و کلچه",
+          "translit": "chāy wa kulcha",
+          "en": "Tea and cookies"
+        },
+        {
+          "target": "چای و میوه",
+          "translit": "chāy wa mēwa",
+          "en": "Tea and fruit"
+        },
+        {
+          "target": "نان و پنیر",
+          "translit": "nān wa panēr",
+          "en": "Bread and cheese"
+        },
+        {
+          "target": "شیر و گوشت",
+          "translit": "shīr wa gōsht",
+          "en": "Milk and meat"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the guest sing?",
+      "questionTarget": "مهمان چه می‌خواند؟",
+      "questionTranslit": "mehmān chē mēkhānad?",
+      "options": [
+        {
+          "target": "یک کتاب",
+          "translit": "yak ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "یک قصه",
+          "translit": "yak qessa",
+          "en": "A story"
+        },
+        {
+          "target": "یک آهنگ",
+          "translit": "yak āhang",
+          "en": "A song"
+        },
+        {
+          "target": "یک نامه",
+          "translit": "yak nāma",
+          "en": "A letter"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

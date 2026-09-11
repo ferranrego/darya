@@ -135,7 +135,68 @@
     "lx-0678",
     "lx-0879"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "With what does the man work?",
+      "questionTarget": "مرد با چه کار می‌کند؟",
+      "questionTranslit": "mard bā chē kār mēkunad?",
+      "options": [
+        {
+          "target": "با اره",
+          "translit": "bā arra",
+          "en": "With the saw"
+        },
+        {
+          "target": "با دست",
+          "translit": "bā dast",
+          "en": "With the hand"
+        },
+        {
+          "target": "با موتر",
+          "translit": "bā mōtar",
+          "en": "With the car"
+        },
+        {
+          "target": "با کتاب",
+          "translit": "bā ketāb",
+          "en": "With a book"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does this season have?",
+      "questionTarget": "این فصل چه دارد؟",
+      "questionTranslit": "īn fasl chē dārad?",
+      "options": [
+        {
+          "target": "باران",
+          "translit": "bārān",
+          "en": "Rain"
+        },
+        {
+          "target": "برف",
+          "translit": "barf",
+          "en": "Snow"
+        },
+        {
+          "target": "مه",
+          "translit": "mah",
+          "en": "Fog"
+        },
+        {
+          "target": "باد",
+          "translit": "bād",
+          "en": "Wind"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "demonstratives",

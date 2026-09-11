@@ -131,7 +131,68 @@
   "newWords": [
     "lx-0114"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What is in our garden?",
+      "questionTarget": "در باغ ما چه است؟",
+      "questionTranslit": "dar bāgh-e mā chē ast?",
+      "options": [
+        {
+          "target": "درخت سیب",
+          "translit": "darakht-e sēb",
+          "en": "An apple tree"
+        },
+        {
+          "target": "درخت انگور",
+          "translit": "darakht-e angūr",
+          "en": "A grape vine"
+        },
+        {
+          "target": "گل سرخ",
+          "translit": "gul-e surkh",
+          "en": "A red flower"
+        },
+        {
+          "target": "یک چوکی",
+          "translit": "yak chawkī",
+          "en": "A chair"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do we sit?",
+      "questionTarget": "ما کجا می‌نشینیم؟",
+      "questionTranslit": "mā kujā mēnishīnēm?",
+      "options": [
+        {
+          "target": "در مکتب",
+          "translit": "dar maktab",
+          "en": "At school"
+        },
+        {
+          "target": "زیر درخت",
+          "translit": "zēr-e darakht",
+          "en": "Under the tree"
+        },
+        {
+          "target": "در دکان",
+          "translit": "dar dukān",
+          "en": "In the shop"
+        },
+        {
+          "target": "در بازار",
+          "translit": "dar bāzār",
+          "en": "At the bazaar"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

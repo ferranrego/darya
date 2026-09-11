@@ -118,7 +118,68 @@
     "lx-0150",
     "lx-0209"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "With what do I see?",
+      "questionTarget": "من با چه می‌بینم؟",
+      "questionTranslit": "man bā chē mēbīnam?",
+      "options": [
+        {
+          "target": "با چشم",
+          "translit": "bā chashm",
+          "en": "With the eye"
+        },
+        {
+          "target": "با گوش",
+          "translit": "bā gōsh",
+          "en": "With the ear"
+        },
+        {
+          "target": "با دست",
+          "translit": "bā dast",
+          "en": "With the hand"
+        },
+        {
+          "target": "با بینی",
+          "translit": "bā bīnī",
+          "en": "With the nose"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How many legs does he have?",
+      "questionTarget": "او چند پای دارد؟",
+      "questionTranslit": "ō chand pāy dārad?",
+      "options": [
+        {
+          "target": "دو",
+          "translit": "dū",
+          "en": "Two"
+        },
+        {
+          "target": "سه",
+          "translit": "sē",
+          "en": "Three"
+        },
+        {
+          "target": "یک",
+          "translit": "yak",
+          "en": "One"
+        },
+        {
+          "target": "چهار",
+          "translit": "chār",
+          "en": "Four"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

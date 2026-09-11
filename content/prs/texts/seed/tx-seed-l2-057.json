@@ -177,7 +177,68 @@
     "lx-0166"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What am I learning?",
+      "questionTarget": "من چه یاد می‌گیرم؟",
+      "questionTranslit": "man chē yād mēgīram?",
+      "options": [
+        {
+          "target": "زبان انگلیسی",
+          "translit": "zabān-e inglīsī",
+          "en": "The English language"
+        },
+        {
+          "target": "زبان دری",
+          "translit": "zabān-e darī",
+          "en": "The Dari language"
+        },
+        {
+          "target": "یک قصه",
+          "translit": "yak qessa",
+          "en": "A story"
+        },
+        {
+          "target": "یک آهنگ",
+          "translit": "yak āhang",
+          "en": "A song"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do the students do?",
+      "questionTarget": "شاگردان چه می‌کنند؟",
+      "questionTranslit": "shāgerdān chē mēkunand?",
+      "options": [
+        {
+          "target": "بازی می‌کنند",
+          "translit": "bāzī mēkunand",
+          "en": "They play"
+        },
+        {
+          "target": "کار می‌کنند",
+          "translit": "kār mēkunand",
+          "en": "They work"
+        },
+        {
+          "target": "می‌خوانند و می‌نویسند",
+          "translit": "mēkhānand wa mēnawīsand",
+          "en": "They read and write"
+        },
+        {
+          "target": "قصه می‌گویند",
+          "translit": "qessa mēgōyand",
+          "en": "They tell stories"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

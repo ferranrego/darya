@@ -138,7 +138,68 @@
     "lx-6142",
     "lx-6225"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does the baker bake the bread?",
+      "questionTarget": "نانوا نان را کجا می‌پزد؟",
+      "questionTranslit": "nānwā nān rā kujā mēpazad?",
+      "options": [
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        },
+        {
+          "target": "در تنور",
+          "translit": "dar tanūr",
+          "en": "In the tandoor"
+        },
+        {
+          "target": "در دکان",
+          "translit": "dar dukān",
+          "en": "In the shop"
+        },
+        {
+          "target": "در باغ",
+          "translit": "dar bāgh",
+          "en": "In the garden"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How many breads do I buy?",
+      "questionTarget": "من چند نان می‌خرم؟",
+      "questionTranslit": "man chand nān mēkharam?",
+      "options": [
+        {
+          "target": "یک",
+          "translit": "yak",
+          "en": "One"
+        },
+        {
+          "target": "سه",
+          "translit": "sē",
+          "en": "Three"
+        },
+        {
+          "target": "دو",
+          "translit": "dū",
+          "en": "Two"
+        },
+        {
+          "target": "پنج",
+          "translit": "panj",
+          "en": "Five"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-adjectives",

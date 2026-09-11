@@ -135,7 +135,68 @@
     "lx-3933",
     "lx-6252"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where do we have an exam today?",
+      "questionTarget": "امروز کجا امتحان داریم؟",
+      "questionTranslit": "emrōz kujā imtihān dārēm?",
+      "options": [
+        {
+          "target": "در مکتب",
+          "translit": "dar maktab",
+          "en": "At school"
+        },
+        {
+          "target": "در پوهنتون",
+          "translit": "dar pōhantūn",
+          "en": "At the university"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        },
+        {
+          "target": "در صنف",
+          "translit": "dar senf",
+          "en": "In the classroom"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How were the questions?",
+      "questionTarget": "سوال‌ها چطور بود؟",
+      "questionTranslit": "sawāl-hā chetōr būd?",
+      "options": [
+        {
+          "target": "آسان",
+          "translit": "āsān",
+          "en": "Easy"
+        },
+        {
+          "target": "خوب",
+          "translit": "khōb",
+          "en": "Good"
+        },
+        {
+          "target": "مشکل",
+          "translit": "mushkil",
+          "en": "Difficult"
+        },
+        {
+          "target": "بد",
+          "translit": "bad",
+          "en": "Bad"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "simple-past",
     "plural-ha",

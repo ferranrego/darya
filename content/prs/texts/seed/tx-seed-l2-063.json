@@ -178,7 +178,68 @@
     "lx-6155"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does my friend want?",
+      "questionTarget": "دوست من چه می‌خواهد؟",
+      "questionTranslit": "dōst-e man chē mēkhāhad?",
+      "options": [
+        {
+          "target": "کمک",
+          "translit": "kumak",
+          "en": "Help"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "پیسه",
+          "translit": "paysa",
+          "en": "Money"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Food"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How are the people here?",
+      "questionTarget": "مردم اینجا چطور هستند؟",
+      "questionTranslit": "mardum-e īnjā chetōr hastand?",
+      "options": [
+        {
+          "target": "مانده",
+          "translit": "mānda",
+          "en": "Tired"
+        },
+        {
+          "target": "پیر",
+          "translit": "pīr",
+          "en": "Old"
+        },
+        {
+          "target": "مهربان",
+          "translit": "mehrabān",
+          "en": "Kind"
+        },
+        {
+          "target": "مریض",
+          "translit": "marīz",
+          "en": "Sick"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 5,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

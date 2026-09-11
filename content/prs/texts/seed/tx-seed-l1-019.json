@@ -99,7 +99,68 @@
     "lx-0624",
     "lx-6111"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is the car?",
+      "questionTarget": "موتر چطور است؟",
+      "questionTranslit": "mōtar chetōr ast?",
+      "options": [
+        {
+          "target": "سبک",
+          "translit": "subuk",
+          "en": "Light"
+        },
+        {
+          "target": "سنگین",
+          "translit": "sangīn",
+          "en": "Heavy"
+        },
+        {
+          "target": "نو",
+          "translit": "naw",
+          "en": "New"
+        },
+        {
+          "target": "کهنه",
+          "translit": "kuhna",
+          "en": "Old"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the boy have?",
+      "questionTarget": "پسر چه دارد؟",
+      "questionTranslit": "pesar chē dārad?",
+      "options": [
+        {
+          "target": "موتر",
+          "translit": "mōtar",
+          "en": "A car"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "بایسکل",
+          "translit": "bāysikl",
+          "en": "A bicycle"
+        },
+        {
+          "target": "خانه",
+          "translit": "khāna",
+          "en": "A house"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "dashtan-numbers",

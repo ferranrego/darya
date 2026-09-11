@@ -190,7 +190,68 @@
     "lx-0492",
     "lx-6005"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is the weather?",
+      "questionTarget": "هوا چطور است؟",
+      "questionTranslit": "hawā chetōr ast?",
+      "options": [
+        {
+          "target": "گرم",
+          "translit": "garm",
+          "en": "Warm"
+        },
+        {
+          "target": "سرد",
+          "translit": "sard",
+          "en": "Cold"
+        },
+        {
+          "target": "خشک",
+          "translit": "khushk",
+          "en": "Dry"
+        },
+        {
+          "target": "روشن",
+          "translit": "rōshan",
+          "en": "Bright"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where does his name remain?",
+      "questionTarget": "اسم او کجا می‌ماند؟",
+      "questionTranslit": "ism-e ō kujā mēmānad?",
+      "options": [
+        {
+          "target": "در کتاب",
+          "translit": "dar ketāb",
+          "en": "In a book"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        },
+        {
+          "target": "در تاریخ",
+          "translit": "dar tārīkh",
+          "en": "In history"
+        },
+        {
+          "target": "در مکتب",
+          "translit": "dar maktab",
+          "en": "At school"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

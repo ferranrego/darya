@@ -134,7 +134,68 @@
     "lx-0373",
     "lx-0382"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the father sell?",
+      "questionTarget": "پدر چه می‌فروشد؟",
+      "questionTranslit": "padar chē mēfurōshad?",
+      "options": [
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "Books"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does he close?",
+      "questionTarget": "او چه می‌بندد؟",
+      "questionTranslit": "ō chē mēbandad?",
+      "options": [
+        {
+          "target": "دکان",
+          "translit": "dukān",
+          "en": "The shop"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "The book"
+        },
+        {
+          "target": "دروازه",
+          "translit": "darwāza",
+          "en": "The door"
+        },
+        {
+          "target": "چشم",
+          "translit": "chashm",
+          "en": "The eye"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra"

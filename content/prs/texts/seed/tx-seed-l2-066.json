@@ -148,7 +148,68 @@
     "lx-0127",
     "lx-0196"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What falls in winter?",
+      "questionTarget": "در زمستان چه می‌بارد؟",
+      "questionTranslit": "dar zemestān chē mēbārad?",
+      "options": [
+        {
+          "target": "برف",
+          "translit": "barf",
+          "en": "Snow"
+        },
+        {
+          "target": "باران",
+          "translit": "bārān",
+          "en": "Rain"
+        },
+        {
+          "target": "باد",
+          "translit": "bād",
+          "en": "Wind"
+        },
+        {
+          "target": "آفتاب",
+          "translit": "āftāb",
+          "en": "Sunshine"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is our room?",
+      "questionTarget": "اتاق ما چطور است؟",
+      "questionTranslit": "utāq-e mā chetōr ast?",
+      "options": [
+        {
+          "target": "سرد",
+          "translit": "sard",
+          "en": "Cold"
+        },
+        {
+          "target": "خورد",
+          "translit": "khurd",
+          "en": "Small"
+        },
+        {
+          "target": "گرم",
+          "translit": "garm",
+          "en": "Warm"
+        },
+        {
+          "target": "تاریک",
+          "translit": "tārīk",
+          "en": "Dark"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "prepositions",

@@ -177,7 +177,68 @@
     "lx-0455",
     "lx-0784"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "With what do we go to peace?",
+      "questionTarget": "ما با چه به صلح می‌رویم؟",
+      "questionTranslit": "mā bā chē ba sulh mērawēm?",
+      "options": [
+        {
+          "target": "با جنگ",
+          "translit": "bā jang",
+          "en": "With war"
+        },
+        {
+          "target": "با صبر",
+          "translit": "bā sabr",
+          "en": "With patience"
+        },
+        {
+          "target": "با کار",
+          "translit": "bā kār",
+          "en": "With work"
+        },
+        {
+          "target": "با پیسه",
+          "translit": "bā paysa",
+          "en": "With money"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does he name?",
+      "questionTarget": "او چه می‌نامد؟",
+      "questionTranslit": "ō chē mēnāmad?",
+      "options": [
+        {
+          "target": "یک کتاب",
+          "translit": "yak ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "یک آهنگ",
+          "translit": "yak āhang",
+          "en": "A song"
+        },
+        {
+          "target": "یک اپلیکیشن",
+          "translit": "yak aplīkēshan",
+          "en": "An application"
+        },
+        {
+          "target": "یک موتر",
+          "translit": "yak mōtar",
+          "en": "A car"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",
