@@ -34,7 +34,7 @@ export const MAX_QUESTIONS = 3;
 const DERIVED_PROMPT = {
   en: "Which sentence says this?",
   target: "کدام جمله این را می‌گوید؟",
-  translit: "kudām jumla ēn rā mēgōyad?",
+  translit: "kudām jumla īn rā mēgōyad?",
 } as const;
 
 /**

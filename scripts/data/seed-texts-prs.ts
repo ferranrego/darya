@@ -705,6 +705,68 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او یک خبر تازه دارد.", translit: "ō yak khabar-e tāza dārad.", en: "He has fresh news." },
       { target: "حرف او بسیار خوب است.", translit: "harf-e ō bisyār khōb ast.", en: "His word is very good." },
     ],
+    questions: [
+      {
+        questionEn: "Where does the man stroll?",
+        questionTarget: "مرد کجا گشت می‌زند؟",
+        questionTranslit: "mard kujā gasht mēzanad?",
+        options: [
+          {
+            target: "در شهر",
+            translit: "dar shahr",
+            en: "In the city"
+          },
+          {
+            target: "در جنگل",
+            translit: "dar jangal",
+            en: "In the forest"
+          },
+          {
+            target: "در ساحل",
+            translit: "dar sāhil",
+            en: "On the beach"
+          },
+          {
+            target: "در خانه",
+            translit: "dar khāna",
+            en: "At home"
+          }
+        ],
+        answerIndex: 0,
+        evidenceSentence: 0,
+        source: "authored"
+      },
+      {
+        questionEn: "What does the man have?",
+        questionTarget: "مرد چه دارد؟",
+        questionTranslit: "mard che dārad?",
+        options: [
+          {
+            target: "یک درخت",
+            translit: "yak darakht",
+            en: "A tree"
+          },
+          {
+            target: "یک خبر تازه",
+            translit: "yak khabar-e tāza",
+            en: "Fresh news"
+          },
+          {
+            target: "یک کتاب",
+            translit: "yak ketāb",
+            en: "A book"
+          },
+          {
+            target: "یک خانه",
+            translit: "yak khāna",
+            en: "A house"
+          }
+        ],
+        answerIndex: 1,
+        evidenceSentence: 1,
+        source: "authored"
+      }
+    ],
   },
   {
     slug: "l2-012",
@@ -778,6 +840,68 @@ export const seedTexts: SeedTextSource[] = [
       { target: "رئیس کشتی در ساحل است.", translit: "ra'īs-e kishtī dar sāhil ast.", en: "The boss of the ship is on the beach." },
       { target: "او یک درخت می‌کارد.", translit: "ō yak darakht mēkārad.", en: "He plants a tree." },
       { target: "او قند را در آب می‌اندازد.", translit: "ō qand rā dar āb mēandāzad.", en: "He throws sugar in the water." },
+    ],
+    questions: [
+      {
+        questionEn: "Where is the boss of the ship?",
+        questionTarget: "رئیس کشتی کجا است؟",
+        questionTranslit: "ra'īs-e kishtī kujā ast?",
+        options: [
+          {
+            target: "در کشتی",
+            translit: "dar kishtī",
+            en: "On the ship"
+          },
+          {
+            target: "در شهر",
+            translit: "dar shahr",
+            en: "In the city"
+          },
+          {
+            target: "در ساحل",
+            translit: "dar sāhil",
+            en: "On the beach"
+          },
+          {
+            target: "در جنگل",
+            translit: "dar jangal",
+            en: "In the forest"
+          }
+        ],
+        answerIndex: 2,
+        evidenceSentence: 0,
+        source: "authored"
+      },
+      {
+        questionEn: "What does he throw in the water?",
+        questionTarget: "او چه را در آب می‌اندازد؟",
+        questionTranslit: "ō che rā dar āb mēandāzad?",
+        options: [
+          {
+            target: "درخت",
+            translit: "darakht",
+            en: "A tree"
+          },
+          {
+            target: "نان",
+            translit: "nān",
+            en: "Bread"
+          },
+          {
+            target: "متر",
+            translit: "mitr",
+            en: "A tape measure"
+          },
+          {
+            target: "قند",
+            translit: "qand",
+            en: "Sugar"
+          }
+        ],
+        answerIndex: 3,
+        evidenceSentence: 2,
+        source: "authored"
+      }
     ],
   },
   {
@@ -891,6 +1015,68 @@ export const seedTexts: SeedTextSource[] = [
       { target: "کارمند در شرق جنگل کار می‌کند.", translit: "kārmand dar sharq-e jangal kār mēkunad.", en: "The employee works in the east of the forest." },
       { target: "او به متر نیاز دارد.", translit: "ō ba metr niyāz dārad.", en: "He needs a tape measure." },
       { target: "او می‌بیند که این درخت می‌پوسد.", translit: "ō mēbīnad ki īn darakht mēpōsad.", en: "He sees that this tree rots." }
+    ],
+    questions: [
+      {
+        questionEn: "Where does the employee work?",
+        questionTarget: "کارمند کجا کار می‌کند؟",
+        questionTranslit: "kārmand kujā kār mēkunad?",
+        options: [
+          {
+            target: "در شرق جنگل",
+            translit: "dar sharq-e jangal",
+            en: "In the east of the forest"
+          },
+          {
+            target: "در غرب شهر",
+            translit: "dar gharb-e shahr",
+            en: "In the west of the city"
+          },
+          {
+            target: "در ساحل",
+            translit: "dar sāhil",
+            en: "On the beach"
+          },
+          {
+            target: "در خانه",
+            translit: "dar khāna",
+            en: "At home"
+          }
+        ],
+        answerIndex: 0,
+        evidenceSentence: 0,
+        source: "authored"
+      },
+      {
+        questionEn: "What does the employee see?",
+        questionTarget: "کارمند چه می‌بیند؟",
+        questionTranslit: "kārmand che mēbīnad?",
+        options: [
+          {
+            target: "آب سرد است",
+            translit: "āb sard ast",
+            en: "The water is cold"
+          },
+          {
+            target: "این درخت می‌پوسد",
+            translit: "īn darakht mēpōsad",
+            en: "This tree is rotting"
+          },
+          {
+            target: "خبر تازه است",
+            translit: "khabar tāza ast",
+            en: "The news is fresh"
+          },
+          {
+            target: "درخت کلان است",
+            translit: "darakht kalān ast",
+            en: "The tree is big"
+          }
+        ],
+        answerIndex: 1,
+        evidenceSentence: 2,
+        source: "authored"
+      }
     ],
   },
   {

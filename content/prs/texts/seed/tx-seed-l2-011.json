@@ -118,6 +118,68 @@
     "lx-0315",
     "lx-0380"
   ],
+  "questions": [
+    {
+      "questionEn": "Where does the man stroll?",
+      "questionTarget": "مرد کجا گشت می‌زند؟",
+      "questionTranslit": "mard kujā gasht mēzanad?",
+      "options": [
+        {
+          "target": "در شهر",
+          "translit": "dar shahr",
+          "en": "In the city"
+        },
+        {
+          "target": "در جنگل",
+          "translit": "dar jangal",
+          "en": "In the forest"
+        },
+        {
+          "target": "در ساحل",
+          "translit": "dar sāhil",
+          "en": "On the beach"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the man have?",
+      "questionTarget": "مرد چه دارد؟",
+      "questionTranslit": "mard che dārad?",
+      "options": [
+        {
+          "target": "یک درخت",
+          "translit": "yak darakht",
+          "en": "A tree"
+        },
+        {
+          "target": "یک خبر تازه",
+          "translit": "yak khabar-e tāza",
+          "en": "Fresh news"
+        },
+        {
+          "target": "یک کتاب",
+          "translit": "yak ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "یک خانه",
+          "translit": "yak khāna",
+          "en": "A house"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

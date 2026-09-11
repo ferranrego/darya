@@ -113,6 +113,68 @@
     "lx-0560",
     "lx-2989"
   ],
+  "questions": [
+    {
+      "questionEn": "Where is the boss of the ship?",
+      "questionTarget": "رئیس کشتی کجا است؟",
+      "questionTranslit": "ra'īs-e kishtī kujā ast?",
+      "options": [
+        {
+          "target": "در کشتی",
+          "translit": "dar kishtī",
+          "en": "On the ship"
+        },
+        {
+          "target": "در شهر",
+          "translit": "dar shahr",
+          "en": "In the city"
+        },
+        {
+          "target": "در ساحل",
+          "translit": "dar sāhil",
+          "en": "On the beach"
+        },
+        {
+          "target": "در جنگل",
+          "translit": "dar jangal",
+          "en": "In the forest"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does he throw in the water?",
+      "questionTarget": "او چه را در آب می‌اندازد؟",
+      "questionTranslit": "ō che rā dar āb mēandāzad?",
+      "options": [
+        {
+          "target": "درخت",
+          "translit": "darakht",
+          "en": "A tree"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "متر",
+          "translit": "mitr",
+          "en": "A tape measure"
+        },
+        {
+          "target": "قند",
+          "translit": "qand",
+          "en": "Sugar"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

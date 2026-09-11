@@ -123,6 +123,68 @@
     "lx-1082",
     "lx-6144"
   ],
+  "questions": [
+    {
+      "questionEn": "Where does the employee work?",
+      "questionTarget": "کارمند کجا کار می‌کند؟",
+      "questionTranslit": "kārmand kujā kār mēkunad?",
+      "options": [
+        {
+          "target": "در شرق جنگل",
+          "translit": "dar sharq-e jangal",
+          "en": "In the east of the forest"
+        },
+        {
+          "target": "در غرب شهر",
+          "translit": "dar gharb-e shahr",
+          "en": "In the west of the city"
+        },
+        {
+          "target": "در ساحل",
+          "translit": "dar sāhil",
+          "en": "On the beach"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the employee see?",
+      "questionTarget": "کارمند چه می‌بیند؟",
+      "questionTranslit": "kārmand che mēbīnad?",
+      "options": [
+        {
+          "target": "آب سرد است",
+          "translit": "āb sard ast",
+          "en": "The water is cold"
+        },
+        {
+          "target": "این درخت می‌پوسد",
+          "translit": "īn darakht mēpōsad",
+          "en": "This tree is rotting"
+        },
+        {
+          "target": "خبر تازه است",
+          "translit": "khabar tāza ast",
+          "en": "The news is fresh"
+        },
+        {
+          "target": "درخت کلان است",
+          "translit": "darakht kalān ast",
+          "en": "The tree is big"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

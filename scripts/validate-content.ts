@@ -559,6 +559,47 @@ if (existsSync(seedDir)) {
     for (const v of doc.vocabUsed) {
       if (!lexemeIds.has(v)) fail(`${f}: vocabUsed references missing lexeme ${v}`);
     }
+
+    /**
+     * A comprehension question that cannot be answered is invisible.
+     *
+     * Every defect here renders perfectly: an `answerIndex` past the end of
+     * the options marks every answer wrong, two identical options mark a right
+     * answer wrong, and an `evidenceSentence` pointing at the wrong line shows
+     * a learner a correction that does not correct anything. None of it throws,
+     * and the learner concludes they misunderstood the text.
+     */
+    doc.questions.forEach((q, qi) => {
+      const where = `${f}: question ${qi + 1}`;
+      if (q.answerIndex >= q.options.length) {
+        fail(`${where}: answerIndex ${q.answerIndex} but only ${q.options.length} options`);
+      }
+      if (q.evidenceSentence >= doc.sentences.length) {
+        fail(`${where}: evidenceSentence ${q.evidenceSentence} but only ${doc.sentences.length} sentences`);
+      }
+      const targets = new Set(q.options.map((o) => o.target));
+      if (targets.size !== q.options.length) {
+        fail(`${where}: two options say the same thing in Dari`);
+      }
+      const glosses = new Set(q.options.map((o) => o.en.trim().toLowerCase()));
+      if (glosses.size !== q.options.length) {
+        fail(`${where}: two options say the same thing in English`);
+      }
+      if (lang === "prs") {
+        if (q.questionTranslit) {
+          checkDariTranslit(q.questionTranslit, f, `question ${qi + 1} translit`, undefined, q.questionTarget);
+        }
+        // Pronunciation is the only guide to how Dari sounds in a text-only
+        // app, so an option without one is an option a learner cannot say.
+        q.options.forEach((o, oi) => {
+          if (!o.translit) {
+            fail(`${where}: option ${oi + 1} ("${o.target}") has no transliteration`);
+            return;
+          }
+          checkDariTranslit(o.translit, f, `question ${qi + 1} option ${oi + 1}`, undefined, o.target);
+        });
+      }
+    });
     ok++;
   }
   console.log(`✓ seed texts (${ok}/${files.length} valid)`);
