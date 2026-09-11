@@ -83,4 +83,32 @@ const textRows = readdirSync(seedDir)
   const { error } = await db.from("texts").upsert(textRows);
   if (error) throw new Error(`texts upsert: ${error.message}`);
   console.log(`seeded ${textRows.length} texts`);
+
+  /**
+   * Seed texts in the database with no source file left.
+   *
+   * This script only upserts, so a text renamed, re-levelled or deleted in
+   * `content/` keeps its database row - and a row is what the app actually
+   * serves, so the old text goes on being offered to learners with nothing
+   * anywhere saying it should not be. `build-seed-texts.ts` now removes the
+   * stale files; this is the same blind spot one layer down.
+   *
+   * Reported, never deleted. `user_texts.text_id` is a foreign key to this
+   * table, so a text somebody has read cannot be removed without taking their
+   * reading history with it - which is exactly the rule CLAUDE.md states for
+   * lexicon entries, for the same reason.
+   */
+  const { data: existing } = await db.from("texts").select("id").eq("source", "seed");
+  const built = new Set(textRows.map((r) => r.id));
+  const orphaned = ((existing ?? []) as { id: string }[]).filter((r) => !built.has(r.id));
+  if (orphaned.length > 0) {
+    console.warn(
+      `\n⚠ ${orphaned.length} seed text(s) in the database have no file in content/:`,
+    );
+    for (const o of orphaned.slice(0, 20)) console.warn(`    ${o.id}`);
+    console.warn(
+      "  These are still served to learners. They are not deleted here because\n" +
+        "  user_texts references them; removing one drops somebody's reading history.",
+    );
+  }
 }
