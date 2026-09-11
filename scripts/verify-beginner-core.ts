@@ -220,6 +220,9 @@ function main() {
   };
 
   const gaps: { where: string; missing: string[] }[] = [];
+  // Formal-register words found in the "what a person says" list. Reported at
+  // the end rather than failed - see the pragmatic-functions block below.
+  const bookish: string[] = [];
   let required = 0;
   let met = 0;
 
@@ -250,6 +253,30 @@ function main() {
     required += words.length;
     met += words.length - missing.length;
     if (missing.length) gaps.push({ where: `pragmatic function: ${fn}`, missing });
+
+    /**
+     * These are what a person says out loud, so they must not be bookish.
+     *
+     * This is the one category whose members are utterances rather than
+     * citation forms - asking a favour, declining, repairing a
+     * misunderstanding - and a formal-register word in it teaches a learner to
+     * say the written equivalent of "kindly repeat" to a friend. The dictionary
+     * is 58% formal, so drifting that way is the default rather than a slip.
+     *
+     * Reported, not failed. Which register a given Kabul utterance belongs to
+     * is a philologist's call on the lexicon's own tagging, and turning a
+     * judgement about Dari into a build failure would mean the next person to
+     * touch this file edits the register field to get the gate green.
+     */
+    for (const phrase of words) {
+      for (const part of tokenize(phrase)) {
+        const entry = index.resolve(part);
+        if (!entry) continue;
+        if (entry.register === "formal" || entry.register === "literary") {
+          bookish.push(`${fn}: "${phrase}" uses ${entry.target} (${entry.register})`);
+        }
+      }
+    }
   }
 
   // --- descriptive dimensions: every pole of every dimension ------------------
@@ -294,7 +321,7 @@ function main() {
   if (thin.length) gaps.push({ where: "fields below their minimum", missing: thin });
 
   if (process.argv.includes("--json")) {
-    console.log(JSON.stringify({ lang, required, met, gaps }, null, 2));
+    console.log(JSON.stringify({ lang, required, met, gaps, bookish }, null, 2));
     process.exit(gaps.length ? 1 : 0);
   }
 
@@ -305,6 +332,17 @@ function main() {
         `${[...compositional].slice(0, 6).join(", ")}${compositional.size > 6 ? "…" : ""})`,
     );
   }
+  if (bookish.length) {
+    console.log(
+      `\n${bookish.length} bookish word(s) in what a person says out loud:`,
+    );
+    for (const b of bookish) console.log(`  ${b}`);
+    console.log(
+      "  These are utterances, not citation forms. A formal word here teaches a\n" +
+        "  learner to say the written equivalent of \"kindly repeat\" to a friend.",
+    );
+  }
+
   console.log();
   for (const g of gaps) {
     console.log(`  ${g.where}`);
