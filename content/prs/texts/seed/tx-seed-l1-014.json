@@ -103,7 +103,68 @@
     "lx-0376",
     "lx-6138"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the young person do?",
+      "questionTarget": "جوان چه می‌کند؟",
+      "questionTranslit": "jawān che mēkunad?",
+      "options": [
+        {
+          "target": "به سفر می‌رود",
+          "translit": "ba safar mērawad",
+          "en": "Goes on a trip"
+        },
+        {
+          "target": "می‌دود",
+          "translit": "mēdawad",
+          "en": "Runs"
+        },
+        {
+          "target": "برمی‌گردد",
+          "translit": "barmēgardad",
+          "en": "Comes back"
+        },
+        {
+          "target": "به دروازه می‌زند",
+          "translit": "ba darwāza mēzanad",
+          "en": "Knocks on the door"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Who comes back?",
+      "questionTarget": "کی برمی‌گردد؟",
+      "questionTranslit": "kī barmēgardad?",
+      "options": [
+        {
+          "target": "پسر",
+          "translit": "pesar",
+          "en": "The boy"
+        },
+        {
+          "target": "مادر",
+          "translit": "mādar",
+          "en": "The mother"
+        },
+        {
+          "target": "پدر",
+          "translit": "padar",
+          "en": "The father"
+        },
+        {
+          "target": "جوان",
+          "translit": "jawān",
+          "en": "The young person"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "prepositions"

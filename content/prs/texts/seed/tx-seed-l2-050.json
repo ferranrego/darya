@@ -205,7 +205,68 @@
   "newWords": [
     "lx-0136"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What colour is this flower?",
+      "questionTarget": "رنگ این گل چیست؟",
+      "questionTranslit": "rang-e īn gul chēst?",
+      "options": [
+        {
+          "target": "زرد",
+          "translit": "zard",
+          "en": "Yellow"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        },
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "آبی",
+          "translit": "ābī",
+          "en": "Blue"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do the people here like?",
+      "questionTarget": "مردم اینجا چه دوست دارند؟",
+      "questionTranslit": "mardum-e īnjā che dōst dārand?",
+      "options": [
+        {
+          "target": "گل",
+          "translit": "gul",
+          "en": "Flowers"
+        },
+        {
+          "target": "درخت",
+          "translit": "darakht",
+          "en": "Trees"
+        },
+        {
+          "target": "آب",
+          "translit": "āb",
+          "en": "Water"
+        },
+        {
+          "target": "میوه",
+          "translit": "mēwa",
+          "en": "Fruit"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 5,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

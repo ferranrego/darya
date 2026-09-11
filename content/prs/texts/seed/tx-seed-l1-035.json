@@ -133,7 +133,68 @@
     "lx-6059",
     "lx-6226"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do I wear?",
+      "questionTarget": "من چه می‌پوشم؟",
+      "questionTranslit": "man che mēpōsham?",
+      "options": [
+        {
+          "target": "لباس نو",
+          "translit": "libās-e naw",
+          "en": "New clothes"
+        },
+        {
+          "target": "کلاه سیاه",
+          "translit": "kulāh-e siyāh",
+          "en": "A black hat"
+        },
+        {
+          "target": "بوت کهنه",
+          "translit": "būt-e kuhna",
+          "en": "Old shoes"
+        },
+        {
+          "target": "کرتی گرم",
+          "translit": "kurtī-ye garm",
+          "en": "A warm jacket"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What was my brother looking for?",
+      "questionTarget": "برادرم چه می‌پالید؟",
+      "questionTranslit": "barādar-am che mēpālēd?",
+      "options": [
+        {
+          "target": "کرتی خود",
+          "translit": "kurtī-ye khud",
+          "en": "His jacket"
+        },
+        {
+          "target": "کلاه خود",
+          "translit": "kulāh-e khud",
+          "en": "His hat"
+        },
+        {
+          "target": "بوت خود",
+          "translit": "būt-e khud",
+          "en": "His shoes"
+        },
+        {
+          "target": "کتاب خود",
+          "translit": "ketāb-e khud",
+          "en": "His book"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

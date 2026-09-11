@@ -137,7 +137,68 @@
     "lx-0529",
     "lx-6048"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where do the children play?",
+      "questionTarget": "بچه‌ها کجا بازی می‌کنند؟",
+      "questionTranslit": "bacha-hā kujā bāzī mēkunand?",
+      "options": [
+        {
+          "target": "در سرک",
+          "translit": "dar sarak",
+          "en": "In the street"
+        },
+        {
+          "target": "در باغ",
+          "translit": "dar bāgh",
+          "en": "In the garden"
+        },
+        {
+          "target": "در حویلی",
+          "translit": "dar hawēlī",
+          "en": "In the yard"
+        },
+        {
+          "target": "در مکتب",
+          "translit": "dar maktab",
+          "en": "At school"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is the weather today?",
+      "questionTarget": "امروز هوا چطور است؟",
+      "questionTranslit": "emrōz hawā chetōr ast?",
+      "options": [
+        {
+          "target": "بسیار گرم",
+          "translit": "bisyār garm",
+          "en": "Very hot"
+        },
+        {
+          "target": "بسیار سرد",
+          "translit": "bisyār sard",
+          "en": "Very cold"
+        },
+        {
+          "target": "بسیار خوب",
+          "translit": "bisyār khōb",
+          "en": "Very good"
+        },
+        {
+          "target": "تاریک",
+          "translit": "tārīk",
+          "en": "Dark"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "plural-ha",

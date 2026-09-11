@@ -160,7 +160,68 @@
     "lx-6253",
     "lx-6254"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does my father go on Friday?",
+      "questionTarget": "پدرم روز جمعه کجا می‌رود؟",
+      "questionTranslit": "padar-am rōz-e jum'a kujā mērawad?",
+      "options": [
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the market"
+        },
+        {
+          "target": "به مسجد",
+          "translit": "ba masjid",
+          "en": "To the mosque"
+        },
+        {
+          "target": "به دکان",
+          "translit": "ba dukān",
+          "en": "To the shop"
+        },
+        {
+          "target": "به قریه",
+          "translit": "ba qarya",
+          "en": "To the village"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Who does he pray with?",
+      "questionTarget": "او با کی نماز می‌خواند؟",
+      "questionTranslit": "ō bā kī namāz mēkhānad?",
+      "options": [
+        {
+          "target": "با بچه‌ها",
+          "translit": "bā bacha-hā",
+          "en": "With the children"
+        },
+        {
+          "target": "با برادر خود",
+          "translit": "bā barādar-e khud",
+          "en": "With his own brother"
+        },
+        {
+          "target": "با همسایه‌ها",
+          "translit": "bā hamsāya-hā",
+          "en": "With the neighbours"
+        },
+        {
+          "target": "با معلم",
+          "translit": "bā mu'allem",
+          "en": "With the teacher"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

@@ -120,7 +120,68 @@
     "lx-5557",
     "lx-6132"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What breaks?",
+      "questionTarget": "چه می‌شکند؟",
+      "questionTranslit": "che mēshikanad?",
+      "options": [
+        {
+          "target": "ساعت",
+          "translit": "sā'at",
+          "en": "The watch"
+        },
+        {
+          "target": "دروازه",
+          "translit": "darwāza",
+          "en": "The door"
+        },
+        {
+          "target": "شیشه",
+          "translit": "shīsha",
+          "en": "The glass"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "The book"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What is hard?",
+      "questionTarget": "چه سخت است؟",
+      "questionTranslit": "che sakht ast?",
+      "options": [
+        {
+          "target": "درس",
+          "translit": "dars",
+          "en": "The lesson"
+        },
+        {
+          "target": "امتحان",
+          "translit": "imtihān",
+          "en": "The exam"
+        },
+        {
+          "target": "زندگی",
+          "translit": "zindagī",
+          "en": "Life"
+        },
+        {
+          "target": "کار",
+          "translit": "kār",
+          "en": "The work"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "question-words",
     "demonstratives",

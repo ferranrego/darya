@@ -124,7 +124,68 @@
     "lx-2996",
     "lx-6046"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where is the mother?",
+      "questionTarget": "مادر کجا است؟",
+      "questionTranslit": "mādar kujā ast?",
+      "options": [
+        {
+          "target": "در باغ",
+          "translit": "dar bāgh",
+          "en": "In the garden"
+        },
+        {
+          "target": "در بازار",
+          "translit": "dar bāzār",
+          "en": "In the market"
+        },
+        {
+          "target": "در اتاق",
+          "translit": "dar utāq",
+          "en": "In the room"
+        },
+        {
+          "target": "در آشپزخانه",
+          "translit": "dar āshpazkhāna",
+          "en": "In the kitchen"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do we drink?",
+      "questionTarget": "ما چه می‌خوریم؟",
+      "questionTranslit": "mā che mēkhurēm?",
+      "options": [
+        {
+          "target": "شیر گرم",
+          "translit": "shīr-e garm",
+          "en": "Warm milk"
+        },
+        {
+          "target": "چای سبز",
+          "translit": "chāy-e sabz",
+          "en": "Green tea"
+        },
+        {
+          "target": "آب سرد",
+          "translit": "āb-e sard",
+          "en": "Cold water"
+        },
+        {
+          "target": "نان تازه",
+          "translit": "nān-e tāza",
+          "en": "Fresh bread"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

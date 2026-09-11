@@ -106,7 +106,68 @@
     "lx-0135",
     "lx-0226"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does he go?",
+      "questionTarget": "او کجا می‌رود؟",
+      "questionTranslit": "ō kujā mērawad?",
+      "options": [
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به باغ",
+          "translit": "ba bāgh",
+          "en": "To the garden"
+        },
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the market"
+        },
+        {
+          "target": "به مسجد",
+          "translit": "ba masjid",
+          "en": "To the mosque"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What is tall?",
+      "questionTarget": "چه بلند است؟",
+      "questionTranslit": "che buland ast?",
+      "options": [
+        {
+          "target": "سرک",
+          "translit": "sarak",
+          "en": "The street"
+        },
+        {
+          "target": "مسجد",
+          "translit": "masjid",
+          "en": "The mosque"
+        },
+        {
+          "target": "خانه",
+          "translit": "khāna",
+          "en": "The house"
+        },
+        {
+          "target": "درخت",
+          "translit": "darakht",
+          "en": "The tree"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "prepositions",

@@ -73,7 +73,7 @@
     },
     {
       "target": "در بازار مردم زیاد است.",
-      "translit": "dar bāzār mardum-e ziyād ast.",
+      "translit": "dar bāzār mardum ziyād ast.",
       "en": "There are many people at the market.",
       "tokens": [
         {
@@ -155,7 +155,68 @@
     "lx-0142",
     "lx-0205"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where do I buy bread from?",
+      "questionTarget": "من از کجا نان می‌خرم؟",
+      "questionTranslit": "man az kujā nān mēkharam?",
+      "options": [
+        {
+          "target": "از دکان",
+          "translit": "az dukān",
+          "en": "From the shop"
+        },
+        {
+          "target": "از خانه",
+          "translit": "az khāna",
+          "en": "From home"
+        },
+        {
+          "target": "از مکتب",
+          "translit": "az maktab",
+          "en": "From school"
+        },
+        {
+          "target": "از همسایه",
+          "translit": "az hamsāya",
+          "en": "From the neighbour"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What is there a lot of at the market?",
+      "questionTarget": "در بازار چه زیاد است؟",
+      "questionTranslit": "dar bāzār che ziyād ast?",
+      "options": [
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "گل",
+          "translit": "gul",
+          "en": "Flowers"
+        },
+        {
+          "target": "مردم",
+          "translit": "mardum",
+          "en": "People"
+        },
+        {
+          "target": "سیب",
+          "translit": "sēb",
+          "en": "Apples"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "prepositions",

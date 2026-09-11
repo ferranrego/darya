@@ -123,7 +123,68 @@
     "lx-0077",
     "lx-0098"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What is my friend?",
+      "questionTarget": "دوست من چیست؟",
+      "questionTranslit": "dōst-e man chēst?",
+      "options": [
+        {
+          "target": "معلم",
+          "translit": "mu'allem",
+          "en": "A teacher"
+        },
+        {
+          "target": "داکتر",
+          "translit": "dāktar",
+          "en": "A doctor"
+        },
+        {
+          "target": "شاگرد",
+          "translit": "shāgerd",
+          "en": "A student"
+        },
+        {
+          "target": "دهقان",
+          "translit": "dehqān",
+          "en": "A farmer"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do we drink together?",
+      "questionTarget": "ما چه می‌خوریم؟",
+      "questionTranslit": "mā che mēkhurēm?",
+      "options": [
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        },
+        {
+          "target": "آب",
+          "translit": "āb",
+          "en": "Water"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

@@ -208,7 +208,68 @@
     "lx-6043"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What colour is the table?",
+      "questionTarget": "رنگ میز چه است؟",
+      "questionTranslit": "rang-e mēz che ast?",
+      "options": [
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "سبز",
+          "translit": "sabz",
+          "en": "Green"
+        },
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do we put the bread?",
+      "questionTarget": "ما نان را کجا می‌مانیم؟",
+      "questionTranslit": "mā nān rā kujā mēmānēm?",
+      "options": [
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "In the house"
+        },
+        {
+          "target": "در دکان",
+          "translit": "dar dukān",
+          "en": "In the shop"
+        },
+        {
+          "target": "سر میز",
+          "translit": "sar-e mēz",
+          "en": "On the table"
+        },
+        {
+          "target": "در الماری",
+          "translit": "dar almārī",
+          "en": "In the cupboard"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

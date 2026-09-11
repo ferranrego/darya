@@ -204,7 +204,68 @@
     "lx-0159",
     "lx-6043"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where is my tea?",
+      "questionTarget": "چای من کجا است؟",
+      "questionTranslit": "chāy-e man kujā ast?",
+      "options": [
+        {
+          "target": "در آشپزخانه",
+          "translit": "dar āshpazkhāna",
+          "en": "In the kitchen"
+        },
+        {
+          "target": "سر میز",
+          "translit": "sar-e mēz",
+          "en": "On the table"
+        },
+        {
+          "target": "در اتاق",
+          "translit": "dar utāq",
+          "en": "In the room"
+        },
+        {
+          "target": "در دکان",
+          "translit": "dar dukān",
+          "en": "In the shop"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 5,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What am I drinking now?",
+      "questionTarget": "من حالا چه می‌خورم؟",
+      "questionTranslit": "man hālā che mēkhuram?",
+      "options": [
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        },
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        },
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

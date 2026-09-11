@@ -135,7 +135,68 @@
     "lx-0241",
     "lx-6108"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What is falling?",
+      "questionTarget": "چه می‌بارد؟",
+      "questionTranslit": "che mēbārad?",
+      "options": [
+        {
+          "target": "باران",
+          "translit": "bārān",
+          "en": "Rain"
+        },
+        {
+          "target": "ابر",
+          "translit": "abr",
+          "en": "Cloud"
+        },
+        {
+          "target": "برف",
+          "translit": "barf",
+          "en": "Snow"
+        },
+        {
+          "target": "آب",
+          "translit": "āb",
+          "en": "Water"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I bring?",
+      "questionTarget": "من چه می‌آورم؟",
+      "questionTranslit": "man che mēāwaram?",
+      "options": [
+        {
+          "target": "آب گرم",
+          "translit": "āb-e garm",
+          "en": "Warm water"
+        },
+        {
+          "target": "برف سفید",
+          "translit": "barf-e safēd",
+          "en": "White snow"
+        },
+        {
+          "target": "چای گرم",
+          "translit": "chāy-e garm",
+          "en": "Warm tea"
+        },
+        {
+          "target": "آب سرد",
+          "translit": "āb-e sard",
+          "en": "Cold water"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

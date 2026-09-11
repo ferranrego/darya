@@ -131,7 +131,68 @@
     "lx-0848",
     "lx-1237"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do I want?",
+      "questionTarget": "من چه می‌خواهم؟",
+      "questionTranslit": "man che mēkhāham?",
+      "options": [
+        {
+          "target": "یک سیب",
+          "translit": "yak sēb",
+          "en": "An apple"
+        },
+        {
+          "target": "یک انار",
+          "translit": "yak anār",
+          "en": "A pomegranate"
+        },
+        {
+          "target": "یک نان",
+          "translit": "yak nān",
+          "en": "A loaf of bread"
+        },
+        {
+          "target": "یک کتاب",
+          "translit": "yak ketāb",
+          "en": "A book"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the company buy?",
+      "questionTarget": "شرکت چه می‌خرد؟",
+      "questionTranslit": "shirkat che mēkharad?",
+      "options": [
+        {
+          "target": "سیب",
+          "translit": "sēb",
+          "en": "Apples"
+        },
+        {
+          "target": "گندم",
+          "translit": "gandum",
+          "en": "Wheat"
+        },
+        {
+          "target": "ترکاری",
+          "translit": "tarkārī",
+          "en": "Vegetables"
+        },
+        {
+          "target": "انار",
+          "translit": "anār",
+          "en": "Pomegranate"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "demonstratives",

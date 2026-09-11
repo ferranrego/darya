@@ -163,7 +163,68 @@
     "lx-0158",
     "lx-0292"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What can I build?",
+      "questionTarget": "من چه ساخته می‌توانم؟",
+      "questionTranslit": "man che sākhta mētawānam?",
+      "options": [
+        {
+          "target": "یک میز",
+          "translit": "yak mēz",
+          "en": "A table"
+        },
+        {
+          "target": "یک دکان",
+          "translit": "yak dukān",
+          "en": "A shop"
+        },
+        {
+          "target": "یک موتر",
+          "translit": "yak mōtar",
+          "en": "A car"
+        },
+        {
+          "target": "یک خانه",
+          "translit": "yak khāna",
+          "en": "A house"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How much do I sleep?",
+      "questionTarget": "من چقدر می‌خوابم؟",
+      "questionTranslit": "man chiqadar mēkhābam?",
+      "options": [
+        {
+          "target": "زیاد",
+          "translit": "ziyād",
+          "en": "A lot"
+        },
+        {
+          "target": "کم",
+          "translit": "kam",
+          "en": "Little"
+        },
+        {
+          "target": "هشت ساعت",
+          "translit": "hasht sā'at",
+          "en": "Eight hours"
+        },
+        {
+          "target": "هیچ",
+          "translit": "hēch",
+          "en": "Not at all"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "dashtan-numbers",
     "present-me",

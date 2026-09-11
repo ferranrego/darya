@@ -120,7 +120,68 @@
     "lx-0138",
     "lx-0140"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What colour is the tree?",
+      "questionTarget": "درخت چه رنگ است؟",
+      "questionTranslit": "darakht che rang ast?",
+      "options": [
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        },
+        {
+          "target": "سبز",
+          "translit": "sabz",
+          "en": "Green"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What is tall?",
+      "questionTarget": "چه بلند است؟",
+      "questionTranslit": "che buland ast?",
+      "options": [
+        {
+          "target": "زمین",
+          "translit": "zamīn",
+          "en": "The ground"
+        },
+        {
+          "target": "کوه",
+          "translit": "kōh",
+          "en": "The mountain"
+        },
+        {
+          "target": "دریا",
+          "translit": "daryā",
+          "en": "The river"
+        },
+        {
+          "target": "درخت",
+          "translit": "darakht",
+          "en": "The tree"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "pronouns-budan"
   ],

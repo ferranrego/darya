@@ -178,7 +178,68 @@
     "lx-0375",
     "lx-0388"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the child build out of snow?",
+      "questionTarget": "بچه از برف چه می‌سازد؟",
+      "questionTranslit": "bacha az barf che mēsāzad?",
+      "options": [
+        {
+          "target": "موتر",
+          "translit": "mōtar",
+          "en": "A car"
+        },
+        {
+          "target": "خانه",
+          "translit": "khāna",
+          "en": "A house"
+        },
+        {
+          "target": "پل",
+          "translit": "pul",
+          "en": "A bridge"
+        },
+        {
+          "target": "دروازه",
+          "translit": "darwāza",
+          "en": "A door"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the snow kill?",
+      "questionTarget": "برف چه می‌کشد؟",
+      "questionTranslit": "barf che mēkushad?",
+      "options": [
+        {
+          "target": "درخت‌های ما",
+          "translit": "darakht-hā-ye mā",
+          "en": "Our trees"
+        },
+        {
+          "target": "کتاب‌های ما",
+          "translit": "ketāb-hā-ye mā",
+          "en": "Our books"
+        },
+        {
+          "target": "گل‌های ما",
+          "translit": "gul-hā-ye mā",
+          "en": "Our flowers"
+        },
+        {
+          "target": "خانه ما",
+          "translit": "khāna-ye mā",
+          "en": "Our house"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

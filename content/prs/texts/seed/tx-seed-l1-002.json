@@ -123,7 +123,68 @@
     "lx-0090",
     "lx-0091"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do I drink in the morning?",
+      "questionTarget": "صبح چه می‌خورم؟",
+      "questionTranslit": "subh che mēkhuram?",
+      "options": [
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        },
+        {
+          "target": "آب",
+          "translit": "āb",
+          "en": "Water"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do I come at night?",
+      "questionTarget": "شب به کجا می‌آیم؟",
+      "questionTranslit": "shab ba kujā mēāyam?",
+      "options": [
+        {
+          "target": "به دکان",
+          "translit": "ba dukān",
+          "en": "To the shop"
+        },
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the market"
+        },
+        {
+          "target": "به خانه",
+          "translit": "ba khāna",
+          "en": "Home"
+        },
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "prepositions",

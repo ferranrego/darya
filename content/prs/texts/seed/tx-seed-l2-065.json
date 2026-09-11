@@ -190,7 +190,68 @@
   "newWords": [
     "lx-0124"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does the little girl play?",
+      "questionTarget": "دختر خورد کجا بازی می‌کند؟",
+      "questionTranslit": "dukhtar-e khurd kujā bāzī mēkunad?",
+      "options": [
+        {
+          "target": "در حویلی",
+          "translit": "dar hawēlī",
+          "en": "In the yard"
+        },
+        {
+          "target": "در باغ",
+          "translit": "dar bāgh",
+          "en": "In the garden"
+        },
+        {
+          "target": "در سرک",
+          "translit": "dar sarak",
+          "en": "In the street"
+        },
+        {
+          "target": "در مکتب",
+          "translit": "dar maktab",
+          "en": "At school"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "When do I see her?",
+      "questionTarget": "من او را چه وقت می‌بینم؟",
+      "questionTranslit": "man ō rā che waqt mēbīnam?",
+      "options": [
+        {
+          "target": "هر شب",
+          "translit": "har shab",
+          "en": "Every night"
+        },
+        {
+          "target": "هر هفته",
+          "translit": "har hafta",
+          "en": "Every week"
+        },
+        {
+          "target": "هر ماه",
+          "translit": "har māh",
+          "en": "Every month"
+        },
+        {
+          "target": "هر روز",
+          "translit": "har rōz",
+          "en": "Every day"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

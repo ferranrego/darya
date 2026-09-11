@@ -146,7 +146,68 @@
     "lx-0231",
     "lx-0241"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do people wear?",
+      "questionTarget": "مردم چه می‌پوشند؟",
+      "questionTranslit": "mardum che mēpōshand?",
+      "options": [
+        {
+          "target": "لباس سفید",
+          "translit": "libās-e safēd",
+          "en": "White clothes"
+        },
+        {
+          "target": "کرتی کهنه",
+          "translit": "kurtī-ye kuhna",
+          "en": "An old jacket"
+        },
+        {
+          "target": "بوت سیاه",
+          "translit": "būt-e siyāh",
+          "en": "Black shoes"
+        },
+        {
+          "target": "لباس گرم",
+          "translit": "libās-e garm",
+          "en": "Warm clothes"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do the children play?",
+      "questionTarget": "بچه‌ها کجا بازی می‌کنند؟",
+      "questionTranslit": "bacha-hā kujā bāzī mēkunand?",
+      "options": [
+        {
+          "target": "در برف",
+          "translit": "dar barf",
+          "en": "In the snow"
+        },
+        {
+          "target": "در باغ",
+          "translit": "dar bāgh",
+          "en": "In the garden"
+        },
+        {
+          "target": "در سرک",
+          "translit": "dar sarak",
+          "en": "In the street"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

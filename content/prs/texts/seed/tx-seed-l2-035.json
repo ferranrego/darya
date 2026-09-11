@@ -156,7 +156,68 @@
     "lx-6226",
     "lx-6235"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the tailor sew?",
+      "questionTarget": "خیاط چه می‌دوزد؟",
+      "questionTranslit": "khayyāt che mēdōzad?",
+      "options": [
+        {
+          "target": "خریطه‌ها",
+          "translit": "kharīta-hā",
+          "en": "Bags"
+        },
+        {
+          "target": "لباس‌های بچه‌ها",
+          "translit": "libās-hā-ye bacha-hā",
+          "en": "Children's clothes"
+        },
+        {
+          "target": "لباس‌های زمستانی",
+          "translit": "libās-hā-ye zemestānī",
+          "en": "Winter clothes"
+        },
+        {
+          "target": "بوت‌های نو",
+          "translit": "būt-hā-ye naw",
+          "en": "New shoes"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What colour is the jacket?",
+      "questionTarget": "رنگ کرتی چیست؟",
+      "questionTranslit": "rang-e kurtī chēst?",
+      "options": [
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        },
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "آبی",
+          "translit": "ābī",
+          "en": "Blue"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "simple-past",

@@ -159,7 +159,68 @@
     "lx-0085",
     "lx-0137"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does this country have a lot of?",
+      "questionTarget": "این کشور چه زیاد دارد؟",
+      "questionTranslit": "īn kishwar che ziyād dārad?",
+      "options": [
+        {
+          "target": "دریا",
+          "translit": "daryā",
+          "en": "Rivers"
+        },
+        {
+          "target": "درخت",
+          "translit": "darakht",
+          "en": "Trees"
+        },
+        {
+          "target": "بازار",
+          "translit": "bāzār",
+          "en": "Markets"
+        },
+        {
+          "target": "کوه",
+          "translit": "kōh",
+          "en": "Mountains"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I like?",
+      "questionTarget": "من چه دوست دارم؟",
+      "questionTranslit": "man che dōst dāram?",
+      "options": [
+        {
+          "target": "برف",
+          "translit": "barf",
+          "en": "Snow"
+        },
+        {
+          "target": "هوای سرد",
+          "translit": "hawā-ye sard",
+          "en": "Cold weather"
+        },
+        {
+          "target": "کوه",
+          "translit": "kōh",
+          "en": "Mountains"
+        },
+        {
+          "target": "هوای گرم",
+          "translit": "hawā-ye garm",
+          "en": "Warm weather"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

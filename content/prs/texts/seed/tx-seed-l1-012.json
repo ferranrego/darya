@@ -111,7 +111,68 @@
     "lx-0199",
     "lx-0200"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What is closed?",
+      "questionTarget": "چه بسته است؟",
+      "questionTranslit": "che basta ast?",
+      "options": [
+        {
+          "target": "اتاق",
+          "translit": "utāq",
+          "en": "The room"
+        },
+        {
+          "target": "باغ",
+          "translit": "bāgh",
+          "en": "The garden"
+        },
+        {
+          "target": "خانه",
+          "translit": "khāna",
+          "en": "The house"
+        },
+        {
+          "target": "دکان",
+          "translit": "dukān",
+          "en": "The shop"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is this house?",
+      "questionTarget": "این خانه چطور است؟",
+      "questionTranslit": "īn khāna chetōr ast?",
+      "options": [
+        {
+          "target": "کلان",
+          "translit": "kalān",
+          "en": "Big"
+        },
+        {
+          "target": "مقبول",
+          "translit": "maqbūl",
+          "en": "Pretty"
+        },
+        {
+          "target": "کهنه",
+          "translit": "kuhna",
+          "en": "Old"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "demonstratives",
     "ezafa-possession",

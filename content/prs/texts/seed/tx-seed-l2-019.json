@@ -126,7 +126,68 @@
     "lx-0615",
     "lx-3212"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What is beautiful in the south?",
+      "questionTarget": "در جنوب چه زیبا است؟",
+      "questionTranslit": "dar junūb che zēbā ast?",
+      "options": [
+        {
+          "target": "سرک",
+          "translit": "sarak",
+          "en": "The street"
+        },
+        {
+          "target": "قانون",
+          "translit": "qānūn",
+          "en": "The law"
+        },
+        {
+          "target": "باغ",
+          "translit": "bāgh",
+          "en": "The garden"
+        },
+        {
+          "target": "شهر",
+          "translit": "shahr",
+          "en": "The city"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Who regains consciousness?",
+      "questionTarget": "کی به هوش می‌آید؟",
+      "questionTranslit": "kī ba hōsh mēāyad?",
+      "options": [
+        {
+          "target": "مرد",
+          "translit": "mard",
+          "en": "The man"
+        },
+        {
+          "target": "زن",
+          "translit": "zan",
+          "en": "The woman"
+        },
+        {
+          "target": "بچه",
+          "translit": "bacha",
+          "en": "The child"
+        },
+        {
+          "target": "دختر",
+          "translit": "dukhtar",
+          "en": "The girl"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

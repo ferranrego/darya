@@ -137,7 +137,68 @@
     "lx-0871",
     "lx-6224"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the tailor sew?",
+      "questionTarget": "خیاط چه می‌دوزد؟",
+      "questionTranslit": "khayyāt che mēdōzad?",
+      "options": [
+        {
+          "target": "کلاه سفید",
+          "translit": "kulāh-e safēd",
+          "en": "A white hat"
+        },
+        {
+          "target": "لباس نو",
+          "translit": "libās-e naw",
+          "en": "New clothes"
+        },
+        {
+          "target": "لباس کهنه",
+          "translit": "libās-e kuhna",
+          "en": "Old clothes"
+        },
+        {
+          "target": "قالین نو",
+          "translit": "qālīn-e naw",
+          "en": "A new carpet"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I want?",
+      "questionTarget": "من چه می‌خواهم؟",
+      "questionTranslit": "man che mēkhāham?",
+      "options": [
+        {
+          "target": "یک کرتی گرم",
+          "translit": "yak kurtī-ye garm",
+          "en": "A warm jacket"
+        },
+        {
+          "target": "یک قالین سرخ",
+          "translit": "yak qālīn-e surkh",
+          "en": "A red carpet"
+        },
+        {
+          "target": "یک جامه سیاه",
+          "translit": "yak jāma-ye siyāh",
+          "en": "A black garment"
+        },
+        {
+          "target": "یک جامه سفید",
+          "translit": "yak jāma-ye safēd",
+          "en": "A white garment"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

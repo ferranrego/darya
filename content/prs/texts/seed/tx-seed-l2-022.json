@@ -134,7 +134,68 @@
     "lx-0474",
     "lx-0496"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the guest steal?",
+      "questionTarget": "مهمان چه می‌دزدد؟",
+      "questionTranslit": "mehmān che mēduzdad?",
+      "options": [
+        {
+          "target": "بایسکل",
+          "translit": "bāyskel",
+          "en": "A bicycle"
+        },
+        {
+          "target": "موتر",
+          "translit": "mōtar",
+          "en": "A car"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "ساعت",
+          "translit": "sā'at",
+          "en": "A watch"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do I deliver him?",
+      "questionTarget": "من او را کجا می‌رسانم؟",
+      "questionTranslit": "man ō rā kujā mērasānam?",
+      "options": [
+        {
+          "target": "به قریه",
+          "translit": "ba qarya",
+          "en": "To the village"
+        },
+        {
+          "target": "به خانه",
+          "translit": "ba khāna",
+          "en": "Home"
+        },
+        {
+          "target": "به شهر",
+          "translit": "ba shahr",
+          "en": "To the city"
+        },
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the market"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

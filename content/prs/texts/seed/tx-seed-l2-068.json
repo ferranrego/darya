@@ -175,7 +175,68 @@
     "lx-0113",
     "lx-0145"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does this shop sell?",
+      "questionTarget": "این دکان چه می‌فروشد؟",
+      "questionTranslit": "īn dukān che mēfarōshad?",
+      "options": [
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        },
+        {
+          "target": "میوه",
+          "translit": "mēwa",
+          "en": "Fruit"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "Books"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I buy?",
+      "questionTarget": "من چه می‌خرم؟",
+      "questionTranslit": "man che mēkharam?",
+      "options": [
+        {
+          "target": "سیب و کچالو",
+          "translit": "sēb wa kachālū",
+          "en": "Apples and potatoes"
+        },
+        {
+          "target": "نان و شیر",
+          "translit": "nān wa shīr",
+          "en": "Bread and milk"
+        },
+        {
+          "target": "انار و سیب",
+          "translit": "anār wa sēb",
+          "en": "Pomegranates and apples"
+        },
+        {
+          "target": "گوشت و برنج",
+          "translit": "gōsht wa berenj",
+          "en": "Meat and rice"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

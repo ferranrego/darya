@@ -142,7 +142,68 @@
     "lx-0421",
     "lx-0614"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does he have an exam?",
+      "questionTarget": "او در کجا امتحان دارد؟",
+      "questionTranslit": "ō dar kujā imtihān dārad?",
+      "options": [
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        },
+        {
+          "target": "در شمال",
+          "translit": "dar shamāl",
+          "en": "In the north"
+        },
+        {
+          "target": "در جنوب",
+          "translit": "dar junūb",
+          "en": "In the south"
+        },
+        {
+          "target": "در شهر",
+          "translit": "dar shahr",
+          "en": "In the city"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How do I go to the exam?",
+      "questionTarget": "من چطور به امتحان می‌روم؟",
+      "questionTranslit": "man chetōr ba imtihān mērawam?",
+      "options": [
+        {
+          "target": "با بس",
+          "translit": "bā bas",
+          "en": "By bus"
+        },
+        {
+          "target": "با بایسکل",
+          "translit": "bā bāyskel",
+          "en": "By bicycle"
+        },
+        {
+          "target": "با موتر",
+          "translit": "bā mōtar",
+          "en": "By car"
+        },
+        {
+          "target": "پیاده",
+          "translit": "piyāda",
+          "en": "On foot"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

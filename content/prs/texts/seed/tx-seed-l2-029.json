@@ -139,7 +139,68 @@
     "lx-0632",
     "lx-0701"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How far is the bridge from the bank?",
+      "questionTarget": "پل تا بانک چند کیلومتر است؟",
+      "questionTranslit": "pul tā bānk chand kīlōmitr ast?",
+      "options": [
+        {
+          "target": "یک کیلومتر",
+          "translit": "yak kīlōmitr",
+          "en": "One kilometre"
+        },
+        {
+          "target": "دو کیلومتر",
+          "translit": "dū kīlōmitr",
+          "en": "Two kilometres"
+        },
+        {
+          "target": "سه کیلومتر",
+          "translit": "sē kīlōmitr",
+          "en": "Three kilometres"
+        },
+        {
+          "target": "ده کیلومتر",
+          "translit": "dah kīlōmitr",
+          "en": "Ten kilometres"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I see on the bridge?",
+      "questionTarget": "من روی پل چه می‌بینم؟",
+      "questionTranslit": "man rō-ye pul che mēbīnam?",
+      "options": [
+        {
+          "target": "عکس",
+          "translit": "aks",
+          "en": "A photo"
+        },
+        {
+          "target": "موتر",
+          "translit": "mōtar",
+          "en": "A car"
+        },
+        {
+          "target": "نقشه",
+          "translit": "naqsha",
+          "en": "The map"
+        },
+        {
+          "target": "نامه",
+          "translit": "nāma",
+          "en": "A letter"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "question-words",
     "present-me",

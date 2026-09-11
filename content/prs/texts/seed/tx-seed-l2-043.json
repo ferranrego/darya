@@ -152,7 +152,68 @@
     "lx-3247",
     "lx-6143"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Who has a new baby?",
+      "questionTarget": "کی یک طفل نو دارد؟",
+      "questionTranslit": "kī yak tifl-e naw dārad?",
+      "options": [
+        {
+          "target": "همسایه ما",
+          "translit": "hamsāya-ye mā",
+          "en": "Our neighbour"
+        },
+        {
+          "target": "خواهر من",
+          "translit": "khāhar-e man",
+          "en": "My sister"
+        },
+        {
+          "target": "مادر من",
+          "translit": "mādar-e man",
+          "en": "My mother"
+        },
+        {
+          "target": "برادر من",
+          "translit": "barādar-e man",
+          "en": "My brother"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does my mother sew for the baby?",
+      "questionTarget": "مادر من برای طفل چه می‌دوزد؟",
+      "questionTranslit": "mādar-e man barā-ye tifl che mēdōzad?",
+      "options": [
+        {
+          "target": "کلاه",
+          "translit": "kulāh",
+          "en": "A hat"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "قالین",
+          "translit": "qālīn",
+          "en": "A carpet"
+        },
+        {
+          "target": "کالا",
+          "translit": "kālā",
+          "en": "Clothes"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

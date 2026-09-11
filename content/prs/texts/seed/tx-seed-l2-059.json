@@ -168,7 +168,68 @@
     "lx-0209"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is my head today?",
+      "questionTarget": "سر من امروز چطور است؟",
+      "questionTranslit": "sar-e man emrōz chetōr ast?",
+      "options": [
+        {
+          "target": "درد می‌کند",
+          "translit": "dard mēkunad",
+          "en": "It hurts"
+        },
+        {
+          "target": "سرد است",
+          "translit": "sard ast",
+          "en": "It is cold"
+        },
+        {
+          "target": "گرم است",
+          "translit": "garm ast",
+          "en": "It is warm"
+        },
+        {
+          "target": "خوب است",
+          "translit": "khōb ast",
+          "en": "It is fine"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Which things do I not see well?",
+      "questionTarget": "من کدام چیزها را خوب نمی‌بینم؟",
+      "questionTranslit": "man kudām chīz-hā rā khōb namēbīnam?",
+      "options": [
+        {
+          "target": "چیزهای نزدیک",
+          "translit": "chīz-hā-ye nazdīk",
+          "en": "Near things"
+        },
+        {
+          "target": "چیزهای خورد",
+          "translit": "chīz-hā-ye khurd",
+          "en": "Small things"
+        },
+        {
+          "target": "چیزهای دور",
+          "translit": "chīz-hā-ye dūr",
+          "en": "Distant things"
+        },
+        {
+          "target": "چیزهای کلان",
+          "translit": "chīz-hā-ye kalān",
+          "en": "Big things"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

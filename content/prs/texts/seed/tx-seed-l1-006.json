@@ -138,7 +138,68 @@
     "lx-0190",
     "lx-0370"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What colour is our house?",
+      "questionTarget": "رنگ خانه ما چیست؟",
+      "questionTranslit": "rang-e khāna-ye mā chēst?",
+      "options": [
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        },
+        {
+          "target": "سبز",
+          "translit": "sabz",
+          "en": "Green"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Who comes home?",
+      "questionTarget": "کی به خانه می‌آید؟",
+      "questionTranslit": "kī ba khāna mēāyad?",
+      "options": [
+        {
+          "target": "پدر",
+          "translit": "padar",
+          "en": "The father"
+        },
+        {
+          "target": "مادر",
+          "translit": "mādar",
+          "en": "The mother"
+        },
+        {
+          "target": "برادر",
+          "translit": "barādar",
+          "en": "The brother"
+        },
+        {
+          "target": "معلم",
+          "translit": "mu'allem",
+          "en": "The teacher"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "prepositions",

@@ -219,10 +219,70 @@
   ],
   "newWords": [
     "lx-0056",
-    "lx-0061",
-    "lx-0066"
+    "lx-0061"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What is my brother's wife's job?",
+      "questionTarget": "زن برادر من چه کاره است؟",
+      "questionTranslit": "zan-e barādar-e man che kāra ast?",
+      "options": [
+        {
+          "target": "مدیر",
+          "translit": "mudīr",
+          "en": "A manager"
+        },
+        {
+          "target": "داکتر",
+          "translit": "dāktar",
+          "en": "A doctor"
+        },
+        {
+          "target": "معلم",
+          "translit": "mu'allem",
+          "en": "A teacher"
+        },
+        {
+          "target": "خیاط",
+          "translit": "khayyāt",
+          "en": "A tailor"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do we eat together every night?",
+      "questionTarget": "ما هر شب با هم چه می‌خوریم؟",
+      "questionTranslit": "mā har shab bā ham che mēkhurēm?",
+      "options": [
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        },
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 5,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

@@ -136,7 +136,68 @@
     "lx-6244",
     "lx-6245"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How are the streets of Kabul?",
+      "questionTarget": "سرک‌های کابل چطور است؟",
+      "questionTranslit": "sarak-hā-ye kābul chetōr ast?",
+      "options": [
+        {
+          "target": "بسیار بیروبار",
+          "translit": "bisyār bērūbār",
+          "en": "Very crowded"
+        },
+        {
+          "target": "بسیار آرام",
+          "translit": "bisyār ārām",
+          "en": "Very quiet"
+        },
+        {
+          "target": "بسیار پاک",
+          "translit": "bisyār pāk",
+          "en": "Very clean"
+        },
+        {
+          "target": "بسیار تنگ",
+          "translit": "bisyār tang",
+          "en": "Very narrow"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the traffic police stop?",
+      "questionTarget": "ترافیک چه ایستاد می‌کند؟",
+      "questionTranslit": "tarāfīk che īstād mēkunad?",
+      "options": [
+        {
+          "target": "بایسکل‌ها",
+          "translit": "bāyskel-hā",
+          "en": "The bicycles"
+        },
+        {
+          "target": "موترها",
+          "translit": "mōtar-hā",
+          "en": "The cars"
+        },
+        {
+          "target": "مردم",
+          "translit": "mardum",
+          "en": "The people"
+        },
+        {
+          "target": "بچه‌ها",
+          "translit": "bacha-hā",
+          "en": "The children"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "plural-ha",

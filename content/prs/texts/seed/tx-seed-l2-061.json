@@ -194,7 +194,68 @@
     "lx-6071"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What is our street near?",
+      "questionTarget": "سرک ما نزدیک کجا است؟",
+      "questionTranslit": "sarak-e mā nazdīk-e kujā ast?",
+      "options": [
+        {
+          "target": "بازار",
+          "translit": "bāzār",
+          "en": "The bazaar"
+        },
+        {
+          "target": "کوه",
+          "translit": "kōh",
+          "en": "The mountain"
+        },
+        {
+          "target": "شفاخانه",
+          "translit": "shafākhāna",
+          "en": "The hospital"
+        },
+        {
+          "target": "دریا",
+          "translit": "daryā",
+          "en": "The river"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What is on both sides of the street?",
+      "questionTarget": "در هر دو طرف سرک چه است؟",
+      "questionTranslit": "dar har dū taraf-e sarak che ast?",
+      "options": [
+        {
+          "target": "درخت",
+          "translit": "darakht",
+          "en": "Trees"
+        },
+        {
+          "target": "گل",
+          "translit": "gul",
+          "en": "Flowers"
+        },
+        {
+          "target": "دکان",
+          "translit": "dukān",
+          "en": "Shops"
+        },
+        {
+          "target": "خانه",
+          "translit": "khāna",
+          "en": "Houses"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

@@ -153,7 +153,68 @@
     "lx-6248",
     "lx-6249"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What colour is that dog?",
+      "questionTarget": "آن سگ چه رنگ است؟",
+      "questionTranslit": "ān sag che rang ast?",
+      "options": [
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "زرد",
+          "translit": "zard",
+          "en": "Yellow"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where has the owner tied the dog?",
+      "questionTarget": "صاحبش سگ را در کجا بسته است؟",
+      "questionTranslit": "sāhib-ash sag rā dar kujā basta ast?",
+      "options": [
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "In the house"
+        },
+        {
+          "target": "در دکان",
+          "translit": "dar dukān",
+          "en": "In the shop"
+        },
+        {
+          "target": "در حویلی",
+          "translit": "dar hawēlī",
+          "en": "In the yard"
+        },
+        {
+          "target": "در کوچه",
+          "translit": "dar kōcha",
+          "en": "In the alley"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

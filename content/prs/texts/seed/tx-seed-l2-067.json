@@ -154,7 +154,68 @@
   "newWords": [
     "lx-0157"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What hurts?",
+      "questionTarget": "چه درد می‌کند؟",
+      "questionTranslit": "che dard mēkunad?",
+      "options": [
+        {
+          "target": "سر من",
+          "translit": "sar-e man",
+          "en": "My head"
+        },
+        {
+          "target": "چشم من",
+          "translit": "chashm-e man",
+          "en": "My eye"
+        },
+        {
+          "target": "دست من",
+          "translit": "dast-e man",
+          "en": "My hand"
+        },
+        {
+          "target": "پای من",
+          "translit": "pāy-e man",
+          "en": "My leg"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do I go?",
+      "questionTarget": "من به کجا می‌روم؟",
+      "questionTranslit": "man ba kujā mērawam?",
+      "options": [
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the market"
+        },
+        {
+          "target": "به خانه",
+          "translit": "ba khāna",
+          "en": "Home"
+        },
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به داکتر",
+          "translit": "ba dāktar",
+          "en": "To the doctor"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "ezafa-possession",
     "present-me",

@@ -165,7 +165,68 @@
     "lx-0107",
     "lx-0376"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Who else plays with us?",
+      "questionTarget": "کی هم با ما بازی می‌کند؟",
+      "questionTranslit": "kī ham bā mā bāzī mēkunad?",
+      "options": [
+        {
+          "target": "دوست من",
+          "translit": "dōst-e man",
+          "en": "My friend"
+        },
+        {
+          "target": "معلم ما",
+          "translit": "mu'allem-e mā",
+          "en": "Our teacher"
+        },
+        {
+          "target": "همسایه ما",
+          "translit": "hamsāya-ye mā",
+          "en": "Our neighbour"
+        },
+        {
+          "target": "پدر من",
+          "translit": "padar-e man",
+          "en": "My father"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How do I run?",
+      "questionTarget": "من چطور می‌دوم؟",
+      "questionTranslit": "man chetōr mēdawam?",
+      "options": [
+        {
+          "target": "زیاد",
+          "translit": "ziyād",
+          "en": "A lot"
+        },
+        {
+          "target": "آهسته",
+          "translit": "āhista",
+          "en": "Slowly"
+        },
+        {
+          "target": "تیز",
+          "translit": "tēz",
+          "en": "Fast"
+        },
+        {
+          "target": "کم",
+          "translit": "kam",
+          "en": "Little"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

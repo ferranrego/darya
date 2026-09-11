@@ -171,7 +171,68 @@
     "lx-0361",
     "lx-0369"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do I listen to?",
+      "questionTarget": "من چه می‌شنوم؟",
+      "questionTranslit": "man che mēshunawam?",
+      "options": [
+        {
+          "target": "یک آهنگ کهنه",
+          "translit": "yak āhang-e kuhna",
+          "en": "An old song"
+        },
+        {
+          "target": "یک درس جدید",
+          "translit": "yak dars-e jadīd",
+          "en": "A new lesson"
+        },
+        {
+          "target": "یک آهنگ جدید",
+          "translit": "yak āhang-e jadīd",
+          "en": "A new song"
+        },
+        {
+          "target": "یک گپ خوب",
+          "translit": "yak gap-e khōb",
+          "en": "A good word"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Who else hears this song?",
+      "questionTarget": "کی هم این آهنگ را می‌شنود؟",
+      "questionTranslit": "kī ham īn āhang rā mēshunawad?",
+      "options": [
+        {
+          "target": "همسایه‌ها",
+          "translit": "hamsāya-hā",
+          "en": "The neighbours"
+        },
+        {
+          "target": "بچه‌ها",
+          "translit": "bacha-hā",
+          "en": "The children"
+        },
+        {
+          "target": "معلم‌ها",
+          "translit": "mu'allem-hā",
+          "en": "The teachers"
+        },
+        {
+          "target": "دخترها",
+          "translit": "dukhtar-hā",
+          "en": "The girls"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

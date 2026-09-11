@@ -147,7 +147,68 @@
     "lx-0263",
     "lx-1671"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Who is sick?",
+      "questionTarget": "کی مریض است؟",
+      "questionTranslit": "kī marēz ast?",
+      "options": [
+        {
+          "target": "داکتر",
+          "translit": "dāktar",
+          "en": "The doctor"
+        },
+        {
+          "target": "پدرکلانم",
+          "translit": "padarkalān-am",
+          "en": "My grandfather"
+        },
+        {
+          "target": "مادرم",
+          "translit": "mādar-am",
+          "en": "My mother"
+        },
+        {
+          "target": "برادرم",
+          "translit": "barādar-am",
+          "en": "My brother"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do we take him?",
+      "questionTarget": "ما او را به کجا می‌بریم؟",
+      "questionTranslit": "mā ō rā ba kujā mēbarēm?",
+      "options": [
+        {
+          "target": "به دکان",
+          "translit": "ba dukān",
+          "en": "To the shop"
+        },
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به خانه",
+          "translit": "ba khāna",
+          "en": "Home"
+        },
+        {
+          "target": "به شفاخانه",
+          "translit": "ba shafākhāna",
+          "en": "To the hospital"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

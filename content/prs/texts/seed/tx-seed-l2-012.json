@@ -179,7 +179,68 @@
     "lx-0336",
     "lx-0340"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do I take for your sake?",
+      "questionTarget": "من به خاطر تو چه می‌گیرم؟",
+      "questionTranslit": "man ba khātir-e tu che mēgīram?",
+      "options": [
+        {
+          "target": "یک عکس",
+          "translit": "yak aks",
+          "en": "A photo"
+        },
+        {
+          "target": "یک کتاب",
+          "translit": "yak ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "یک نامه",
+          "translit": "yak nāma",
+          "en": "A letter"
+        },
+        {
+          "target": "یک خریطه",
+          "translit": "yak kharīta",
+          "en": "A bag"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is this photo?",
+      "questionTarget": "این عکس چطور است؟",
+      "questionTranslit": "īn aks chetōr ast?",
+      "options": [
+        {
+          "target": "تاریک",
+          "translit": "tārīk",
+          "en": "Dark"
+        },
+        {
+          "target": "قدیمی",
+          "translit": "qadīmī",
+          "en": "Old"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        },
+        {
+          "target": "ارزان",
+          "translit": "arzān",
+          "en": "Cheap"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "possibility-subjunctive",
     "demonstratives",

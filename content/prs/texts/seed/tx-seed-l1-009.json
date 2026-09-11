@@ -118,7 +118,68 @@
     "lx-0151",
     "lx-0153"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the father give the boy?",
+      "questionTarget": "پدر به پسر چه می‌دهد؟",
+      "questionTranslit": "padar ba pesar che mēdehad?",
+      "options": [
+        {
+          "target": "آب",
+          "translit": "āb",
+          "en": "Water"
+        },
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the boy take?",
+      "questionTarget": "پسر چه می‌گیرد؟",
+      "questionTranslit": "pesar che mēgīrad?",
+      "options": [
+        {
+          "target": "قلم",
+          "translit": "qalam",
+          "en": "A pen"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "The book"
+        },
+        {
+          "target": "نامه",
+          "translit": "nāma",
+          "en": "A letter"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "prepositions"

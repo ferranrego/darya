@@ -162,7 +162,68 @@
     "lx-6076"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How many weeks does one month have?",
+      "questionTarget": "یک ماه چند هفته دارد؟",
+      "questionTranslit": "yak māh chand hafta dārad?",
+      "options": [
+        {
+          "target": "چهار هفته",
+          "translit": "chār hafta",
+          "en": "Four weeks"
+        },
+        {
+          "target": "دوازده هفته",
+          "translit": "dawāzda hafta",
+          "en": "Twelve weeks"
+        },
+        {
+          "target": "هفت هفته",
+          "translit": "haft hafta",
+          "en": "Seven weeks"
+        },
+        {
+          "target": "سه هفته",
+          "translit": "sē hafta",
+          "en": "Three weeks"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How many months does one year have?",
+      "questionTarget": "یک سال چند ماه دارد؟",
+      "questionTranslit": "yak sāl chand māh dārad?",
+      "options": [
+        {
+          "target": "هفت ماه",
+          "translit": "haft māh",
+          "en": "Seven months"
+        },
+        {
+          "target": "ده ماه",
+          "translit": "dah māh",
+          "en": "Ten months"
+        },
+        {
+          "target": "دوازده ماه",
+          "translit": "dawāzda māh",
+          "en": "Twelve months"
+        },
+        {
+          "target": "چهار ماه",
+          "translit": "chār māh",
+          "en": "Four months"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

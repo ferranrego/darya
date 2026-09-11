@@ -137,7 +137,68 @@
     "lx-3011",
     "lx-6231"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do the farmers plant?",
+      "questionTarget": "دهقان‌ها چه می‌کارند؟",
+      "questionTranslit": "dehqān-hā che mēkārand?",
+      "options": [
+        {
+          "target": "برنج",
+          "translit": "berenj",
+          "en": "Rice"
+        },
+        {
+          "target": "گل",
+          "translit": "gul",
+          "en": "Flowers"
+        },
+        {
+          "target": "گندم",
+          "translit": "gandum",
+          "en": "Wheat"
+        },
+        {
+          "target": "سبزی",
+          "translit": "sabzī",
+          "en": "Vegetables"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do the farmers work?",
+      "questionTarget": "دهقان‌ها کجا کار می‌کنند؟",
+      "questionTranslit": "dehqān-hā kujā kār mēkunand?",
+      "options": [
+        {
+          "target": "در زمین",
+          "translit": "dar zamīn",
+          "en": "In the land"
+        },
+        {
+          "target": "در باغ",
+          "translit": "dar bāgh",
+          "en": "In the garden"
+        },
+        {
+          "target": "در دکان",
+          "translit": "dar dukān",
+          "en": "In the shop"
+        },
+        {
+          "target": "در بازار",
+          "translit": "dar bāzār",
+          "en": "In the market"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

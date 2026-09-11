@@ -135,7 +135,68 @@
     "lx-0419",
     "lx-0625"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is our culture?",
+      "questionTarget": "فرهنگ ما چطور است؟",
+      "questionTranslit": "farhang-e mā chetōr ast?",
+      "options": [
+        {
+          "target": "بد",
+          "translit": "bad",
+          "en": "Bad"
+        },
+        {
+          "target": "کهنه",
+          "translit": "kuhna",
+          "en": "Old"
+        },
+        {
+          "target": "خورد",
+          "translit": "khurd",
+          "en": "Small"
+        },
+        {
+          "target": "خوب",
+          "translit": "khōb",
+          "en": "Good"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "To whom does he entrust the work?",
+      "questionTarget": "او کار را به کی می‌سپارد؟",
+      "questionTranslit": "ō kār rā ba kī mēsipārad?",
+      "options": [
+        {
+          "target": "به تو",
+          "translit": "ba tu",
+          "en": "To you"
+        },
+        {
+          "target": "به من",
+          "translit": "ba man",
+          "en": "To me"
+        },
+        {
+          "target": "به او",
+          "translit": "ba ō",
+          "en": "To him"
+        },
+        {
+          "target": "به ما",
+          "translit": "ba mā",
+          "en": "To us"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

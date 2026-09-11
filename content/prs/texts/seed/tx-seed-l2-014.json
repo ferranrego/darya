@@ -7,8 +7,8 @@
   "titleEn": "Alive person",
   "sentences": [
     {
-      "target": "واقعاً این آدم کوچک است.",
-      "translit": "wāqi'an īn ādam kōchak ast.",
+      "target": "واقعاً این آدم خورد است.",
+      "translit": "wāqi'an īn ādam khurd ast.",
       "en": "Really, this person is small.",
       "tokens": [
         {
@@ -24,8 +24,8 @@
           "lexemeId": "lx-0320"
         },
         {
-          "surface": "کوچک",
-          "lexemeId": "lx-0360"
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
         },
         {
           "surface": "است",
@@ -115,6 +115,7 @@
     "lx-0006",
     "lx-0010",
     "lx-0012",
+    "lx-0066",
     "lx-0079",
     "lx-0097",
     "lx-0290",
@@ -122,17 +123,77 @@
     "lx-0309",
     "lx-0320",
     "lx-0350",
-    "lx-0357",
-    "lx-0360"
+    "lx-0357"
   ],
   "newWords": [
+    "lx-0066",
     "lx-0309",
     "lx-0320",
     "lx-0350",
-    "lx-0357",
-    "lx-0360"
+    "lx-0357"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What must an alive person do?",
+      "questionTarget": "آدم زنده باید چه کند؟",
+      "questionTranslit": "ādam-e zinda bāyad che kunad?",
+      "options": [
+        {
+          "target": "کار کند",
+          "translit": "kār kunad",
+          "en": "Work"
+        },
+        {
+          "target": "بازی کند",
+          "translit": "bāzī kunad",
+          "en": "Play"
+        },
+        {
+          "target": "بخوابد",
+          "translit": "bikhābad",
+          "en": "Sleep"
+        },
+        {
+          "target": "بخورد",
+          "translit": "bikhurad",
+          "en": "Eat"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What is better, really?",
+      "questionTarget": "واقعاً چه بهتر است؟",
+      "questionTranslit": "wāqi'an che bihtar ast?",
+      "options": [
+        {
+          "target": "خانه",
+          "translit": "khāna",
+          "en": "Home"
+        },
+        {
+          "target": "بازی",
+          "translit": "bāzī",
+          "en": "Play"
+        },
+        {
+          "target": "کار",
+          "translit": "kār",
+          "en": "Work"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Food"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "must-bayad",
     "comparatives",

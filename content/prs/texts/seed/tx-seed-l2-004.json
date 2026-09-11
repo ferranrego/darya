@@ -191,7 +191,68 @@
     "lx-0337",
     "lx-0358"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does my child study?",
+      "questionTarget": "بچه من در کجا می‌خواند؟",
+      "questionTranslit": "bacha-ye man dar kujā mēkhānad?",
+      "options": [
+        {
+          "target": "در بازار",
+          "translit": "dar bāzār",
+          "en": "At the market"
+        },
+        {
+          "target": "در مکتب کلان",
+          "translit": "dar maktab-e kalān",
+          "en": "At a big school"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        },
+        {
+          "target": "در مکتب خورد",
+          "translit": "dar maktab-e khurd",
+          "en": "At a small school"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does he have a lot of at school?",
+      "questionTarget": "او در مکتب چه دارد؟",
+      "questionTranslit": "ō dar maktab che dārad?",
+      "options": [
+        {
+          "target": "کتاب نو",
+          "translit": "ketāb-e naw",
+          "en": "A new book"
+        },
+        {
+          "target": "معلم خوب",
+          "translit": "mu'allem-e khōb",
+          "en": "A good teacher"
+        },
+        {
+          "target": "کار زیاد",
+          "translit": "kār-e ziyād",
+          "en": "A lot of work"
+        },
+        {
+          "target": "زمان زیاد",
+          "translit": "zamān-e ziyād",
+          "en": "A lot of time"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

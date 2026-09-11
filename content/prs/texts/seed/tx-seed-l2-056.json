@@ -209,7 +209,68 @@
     "lx-0256"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is her daughter?",
+      "questionTarget": "دختر او چطور است؟",
+      "questionTranslit": "dukhtar-e ō chetōr ast?",
+      "options": [
+        {
+          "target": "بسیار خورد",
+          "translit": "bisyār khurd",
+          "en": "Very small"
+        },
+        {
+          "target": "بسیار کلان",
+          "translit": "bisyār kalān",
+          "en": "Very big"
+        },
+        {
+          "target": "بسیار مانده",
+          "translit": "bisyār mānda",
+          "en": "Very tired"
+        },
+        {
+          "target": "بسیار مقبول",
+          "translit": "bisyār maqbūl",
+          "en": "Very pretty"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Whose name do I not know?",
+      "questionTarget": "من نام کی را نمی‌دانم؟",
+      "questionTranslit": "man nām-e kī rā namēdānam?",
+      "options": [
+        {
+          "target": "نام آن زن",
+          "translit": "nām-e ān zan",
+          "en": "That woman's name"
+        },
+        {
+          "target": "نام آن دختر",
+          "translit": "nām-e ān dukhtar",
+          "en": "That girl's name"
+        },
+        {
+          "target": "نام معلم",
+          "translit": "nām-e mu'allem",
+          "en": "The teacher's name"
+        },
+        {
+          "target": "نام همسایه",
+          "translit": "nām-e hamsāya",
+          "en": "The neighbour's name"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

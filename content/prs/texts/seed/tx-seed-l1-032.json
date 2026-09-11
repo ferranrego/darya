@@ -136,7 +136,68 @@
     "lx-0160",
     "lx-0229"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What did the father buy?",
+      "questionTarget": "پدر چه خرید؟",
+      "questionTranslit": "padar che kharēd?",
+      "options": [
+        {
+          "target": "یک موتر نو",
+          "translit": "yak mōtar-e naw",
+          "en": "A new car"
+        },
+        {
+          "target": "یک کتاب خورد",
+          "translit": "yak ketāb-e khurd",
+          "en": "A small book"
+        },
+        {
+          "target": "یک قالین نو",
+          "translit": "yak qālīn-e naw",
+          "en": "A new carpet"
+        },
+        {
+          "target": "یک میز کهنه",
+          "translit": "yak mēz-e kuhna",
+          "en": "An old table"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What colour is our carpet?",
+      "questionTarget": "قالین ما چه رنگ است؟",
+      "questionTranslit": "qālīn-e mā che rang ast?",
+      "options": [
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "آبی",
+          "translit": "ābī",
+          "en": "Blue"
+        },
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "سبز",
+          "translit": "sabz",
+          "en": "Green"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "simple-past",
     "ezafa-possession",

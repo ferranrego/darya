@@ -217,7 +217,68 @@
     "lx-0117",
     "lx-0385"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does my sister bring?",
+      "questionTarget": "خواهر من چه می‌آورد؟",
+      "questionTranslit": "khāhar-e man che mēāwarad?",
+      "options": [
+        {
+          "target": "گوشت و برنج",
+          "translit": "gōsht wa berenj",
+          "en": "Meat and rice"
+        },
+        {
+          "target": "نان و شیر",
+          "translit": "nān wa shīr",
+          "en": "Bread and milk"
+        },
+        {
+          "target": "میوه و ترکاری",
+          "translit": "mēwa wa tarkārī",
+          "en": "Fruit and vegetables"
+        },
+        {
+          "target": "چای و نان",
+          "translit": "chāy wa nān",
+          "en": "Tea and bread"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does my mother cook every day?",
+      "questionTarget": "مادر من هر روز چه می‌پزد؟",
+      "questionTranslit": "mādar-e man har rōz che mēpazad?",
+      "options": [
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "برنج",
+          "translit": "berenj",
+          "en": "Rice"
+        },
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        },
+        {
+          "target": "سبزی",
+          "translit": "sabzī",
+          "en": "Vegetables"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

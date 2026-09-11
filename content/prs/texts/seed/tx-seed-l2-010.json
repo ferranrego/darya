@@ -160,7 +160,68 @@
     "lx-0370",
     "lx-6155"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How many appointments does he have?",
+      "questionTarget": "او چند قرار دارد؟",
+      "questionTranslit": "ō chand qarār dārad?",
+      "options": [
+        {
+          "target": "دو",
+          "translit": "dū",
+          "en": "Two"
+        },
+        {
+          "target": "سه",
+          "translit": "sē",
+          "en": "Three"
+        },
+        {
+          "target": "چهار",
+          "translit": "chār",
+          "en": "Four"
+        },
+        {
+          "target": "یک",
+          "translit": "yak",
+          "en": "One"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How was his condition before this?",
+      "questionTarget": "قبل از این، حال او چطور بود؟",
+      "questionTranslit": "qabl az īn, hāl-e ō chetōr būd?",
+      "options": [
+        {
+          "target": "خوب",
+          "translit": "khōb",
+          "en": "Good"
+        },
+        {
+          "target": "بد",
+          "translit": "bad",
+          "en": "Bad"
+        },
+        {
+          "target": "مهم",
+          "translit": "muhim",
+          "en": "Important"
+        },
+        {
+          "target": "بهتر",
+          "translit": "bihtar",
+          "en": "Better"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "simple-past",

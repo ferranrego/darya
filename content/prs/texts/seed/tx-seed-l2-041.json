@@ -143,7 +143,68 @@
     "lx-6250",
     "lx-6251"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What drips from the roof of our house?",
+      "questionTarget": "از سقف خانه ما چه می‌چکد؟",
+      "questionTranslit": "az saqf-e khāna-ye mā che mēchakad?",
+      "options": [
+        {
+          "target": "برف",
+          "translit": "barf",
+          "en": "Snow"
+        },
+        {
+          "target": "باران",
+          "translit": "bārān",
+          "en": "Rain"
+        },
+        {
+          "target": "آب",
+          "translit": "āb",
+          "en": "Water"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "When will the work be finished?",
+      "questionTarget": "کار چه وقت تمام می‌شود؟",
+      "questionTranslit": "kār che waqt tamām mēshawad?",
+      "options": [
+        {
+          "target": "پیش از زمستان",
+          "translit": "pēsh az zemestān",
+          "en": "Before winter"
+        },
+        {
+          "target": "پیش از تابستان",
+          "translit": "pēsh az tābestān",
+          "en": "Before summer"
+        },
+        {
+          "target": "امروز",
+          "translit": "emrōz",
+          "en": "Today"
+        },
+        {
+          "target": "فردا",
+          "translit": "fardā",
+          "en": "Tomorrow"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

@@ -165,7 +165,68 @@
     "lx-0361"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the teacher give us?",
+      "questionTarget": "معلم به ما چه می‌دهد؟",
+      "questionTranslit": "mu'allem ba mā che mēdehad?",
+      "options": [
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "درس",
+          "translit": "dars",
+          "en": "The lesson"
+        },
+        {
+          "target": "قلم",
+          "translit": "qalam",
+          "en": "A pen"
+        },
+        {
+          "target": "امتحان",
+          "translit": "imtihān",
+          "en": "An exam"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How well do I know the exam?",
+      "questionTarget": "من امتحان را چطور می‌دانم؟",
+      "questionTranslit": "man imtihān rā chetōr mēdānam?",
+      "options": [
+        {
+          "target": "خوب",
+          "translit": "khōb",
+          "en": "Well"
+        },
+        {
+          "target": "بد",
+          "translit": "bad",
+          "en": "Badly"
+        },
+        {
+          "target": "کم",
+          "translit": "kam",
+          "en": "A little"
+        },
+        {
+          "target": "تیز",
+          "translit": "tēz",
+          "en": "Quickly"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "dashtan-numbers",
     "object-ra",

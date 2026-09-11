@@ -130,7 +130,68 @@
     "lx-0408",
     "lx-6070"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the boy drink?",
+      "questionTarget": "پسر چه می‌آشامد؟",
+      "questionTranslit": "pesar che mēāshāmad?",
+      "options": [
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        },
+        {
+          "target": "آب",
+          "translit": "āb",
+          "en": "Water"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the mother cook?",
+      "questionTarget": "مادر چه می‌پزد؟",
+      "questionTranslit": "mādar che mēpazad?",
+      "options": [
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        },
+        {
+          "target": "برنج",
+          "translit": "berenj",
+          "en": "Rice"
+        },
+        {
+          "target": "ترکاری",
+          "translit": "tarkārī",
+          "en": "Vegetables"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

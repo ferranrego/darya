@@ -176,7 +176,68 @@
     "lx-0383",
     "lx-6008"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the lady send?",
+      "questionTarget": "خانم چه می‌فرستد؟",
+      "questionTranslit": "khānum che mēfiristad?",
+      "options": [
+        {
+          "target": "یک نامه",
+          "translit": "yak nāma",
+          "en": "A letter"
+        },
+        {
+          "target": "یک کتاب",
+          "translit": "yak ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "یک عکس",
+          "translit": "yak aks",
+          "en": "A photo"
+        },
+        {
+          "target": "یک خریطه",
+          "translit": "yak kharīta",
+          "en": "A bag"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Who does he learn from?",
+      "questionTarget": "او از کی می‌آموزد؟",
+      "questionTranslit": "ō az kī mēāmōzad?",
+      "options": [
+        {
+          "target": "از معلم",
+          "translit": "az mu'allem",
+          "en": "From the teacher"
+        },
+        {
+          "target": "از پدر خود",
+          "translit": "az padar-e khud",
+          "en": "From his own father"
+        },
+        {
+          "target": "از خانم مشهور",
+          "translit": "az khānum-e mash'hūr",
+          "en": "From the famous lady"
+        },
+        {
+          "target": "از همسایه",
+          "translit": "az hamsāya",
+          "en": "From the neighbour"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "simple-past",

@@ -187,7 +187,68 @@
   "newWords": [
     "lx-0656"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How are my old clothes?",
+      "questionTarget": "لباس کهنه من چطور است؟",
+      "questionTranslit": "libās-e kuhna-ye man chetōr ast?",
+      "options": [
+        {
+          "target": "سبز",
+          "translit": "sabz",
+          "en": "Green"
+        },
+        {
+          "target": "تنگ",
+          "translit": "tang",
+          "en": "Tight"
+        },
+        {
+          "target": "مقبول",
+          "translit": "maqbūl",
+          "en": "Beautiful"
+        },
+        {
+          "target": "کلان",
+          "translit": "kalān",
+          "en": "Big"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does my sister buy?",
+      "questionTarget": "خواهر من چه می‌خرد؟",
+      "questionTranslit": "khāhar-e man che mēkharad?",
+      "options": [
+        {
+          "target": "لباس کهنه",
+          "translit": "libās-e kuhna",
+          "en": "Old clothes"
+        },
+        {
+          "target": "کرتی گرم",
+          "translit": "kurtī-ye garm",
+          "en": "A warm jacket"
+        },
+        {
+          "target": "کلاه سرخ",
+          "translit": "kulāh-e surkh",
+          "en": "A red hat"
+        },
+        {
+          "target": "لباس نو",
+          "translit": "libās-e naw",
+          "en": "New clothes"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

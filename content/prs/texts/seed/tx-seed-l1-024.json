@@ -139,7 +139,68 @@
     "lx-0329",
     "lx-6005"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where do the people go?",
+      "questionTarget": "مردم کجا می‌روند؟",
+      "questionTranslit": "mardum kujā mērawand?",
+      "options": [
+        {
+          "target": "به مسجد",
+          "translit": "ba masjid",
+          "en": "To the mosque"
+        },
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the market"
+        },
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به پوهنتون",
+          "translit": "ba pohantūn",
+          "en": "To the university"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How many people come?",
+      "questionTarget": "چند نفر می‌آید؟",
+      "questionTranslit": "chand nafar mēāyad?",
+      "options": [
+        {
+          "target": "یک نفر",
+          "translit": "yak nafar",
+          "en": "One person"
+        },
+        {
+          "target": "دو نفر",
+          "translit": "dū nafar",
+          "en": "Two people"
+        },
+        {
+          "target": "سه نفر",
+          "translit": "sē nafar",
+          "en": "Three people"
+        },
+        {
+          "target": "ده نفر",
+          "translit": "dah nafar",
+          "en": "Ten people"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "demonstratives",

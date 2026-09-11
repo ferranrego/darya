@@ -194,7 +194,68 @@
     "lx-6071"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "How is my school?",
+      "questionTarget": "مکتب من چطور است؟",
+      "questionTranslit": "maktab-e man chetōr ast?",
+      "options": [
+        {
+          "target": "کلان",
+          "translit": "kalān",
+          "en": "Big"
+        },
+        {
+          "target": "نو",
+          "translit": "naw",
+          "en": "New"
+        },
+        {
+          "target": "نزدیک",
+          "translit": "nazdīk",
+          "en": "Near"
+        },
+        {
+          "target": "دور",
+          "translit": "dūr",
+          "en": "Far"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What do I see every day?",
+      "questionTarget": "من هر روز چه می‌بینم؟",
+      "questionTranslit": "man har rōz che mēbīnam?",
+      "options": [
+        {
+          "target": "این سرک",
+          "translit": "īn sarak",
+          "en": "This street"
+        },
+        {
+          "target": "این خانه",
+          "translit": "īn khāna",
+          "en": "This house"
+        },
+        {
+          "target": "این مکتب",
+          "translit": "īn maktab",
+          "en": "This school"
+        },
+        {
+          "target": "این کشور",
+          "translit": "īn kishwar",
+          "en": "This country"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

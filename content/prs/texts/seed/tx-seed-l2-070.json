@@ -170,7 +170,68 @@
     "lx-0370"
   ],
   "newWords": [],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What colour is the car?",
+      "questionTarget": "رنگ موتر چه است؟",
+      "questionTranslit": "rang-e mōtar che ast?",
+      "options": [
+        {
+          "target": "سرخ",
+          "translit": "surkh",
+          "en": "Red"
+        },
+        {
+          "target": "سیاه",
+          "translit": "siyāh",
+          "en": "Black"
+        },
+        {
+          "target": "آبی",
+          "translit": "ābī",
+          "en": "Blue"
+        },
+        {
+          "target": "سفید",
+          "translit": "safēd",
+          "en": "White"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where does he take us?",
+      "questionTarget": "او ما را به کجا می‌برد؟",
+      "questionTranslit": "ō mā rā ba kujā mēbarad?",
+      "options": [
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the bazaar"
+        },
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به شفاخانه",
+          "translit": "ba shafākhāna",
+          "en": "To the hospital"
+        },
+        {
+          "target": "به دریا",
+          "translit": "ba daryā",
+          "en": "To the river"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "ezafa-possession",
     "object-ra",

@@ -102,7 +102,68 @@
     "lx-0205",
     "lx-0233"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the mother buy?",
+      "questionTarget": "مادر چه می‌خرد؟",
+      "questionTranslit": "mādar che mēkharad?",
+      "options": [
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "چای",
+          "translit": "chāy",
+          "en": "Tea"
+        },
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the boy carry?",
+      "questionTarget": "پسر چه می‌برد؟",
+      "questionTranslit": "pesar che mēbarad?",
+      "options": [
+        {
+          "target": "گوشت",
+          "translit": "gōsht",
+          "en": "Meat"
+        },
+        {
+          "target": "شیر",
+          "translit": "shīr",
+          "en": "Milk"
+        },
+        {
+          "target": "آب",
+          "translit": "āb",
+          "en": "Water"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "demonstratives",

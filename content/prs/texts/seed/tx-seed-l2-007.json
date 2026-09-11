@@ -193,7 +193,68 @@
     "lx-0339",
     "lx-0387"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the government grant to the people?",
+      "questionTarget": "دولت به مردم چه می‌بخشد؟",
+      "questionTranslit": "dawlat ba mardum che mēbakhshad?",
+      "options": [
+        {
+          "target": "پول",
+          "translit": "pūl",
+          "en": "Money"
+        },
+        {
+          "target": "نان",
+          "translit": "nān",
+          "en": "Bread"
+        },
+        {
+          "target": "زمین",
+          "translit": "zamīn",
+          "en": "Land"
+        },
+        {
+          "target": "خانه",
+          "translit": "khāna",
+          "en": "A house"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Whom does the government help?",
+      "questionTarget": "دولت به کی کمک می‌کند؟",
+      "questionTranslit": "dawlat ba kī kumak mēkunad?",
+      "options": [
+        {
+          "target": "به مردم",
+          "translit": "ba mardum",
+          "en": "The people"
+        },
+        {
+          "target": "به معلم",
+          "translit": "ba mu'allem",
+          "en": "The teacher"
+        },
+        {
+          "target": "به مدیر",
+          "translit": "ba mudīr",
+          "en": "The manager"
+        },
+        {
+          "target": "به داکتر",
+          "translit": "ba dāktar",
+          "en": "The doctor"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

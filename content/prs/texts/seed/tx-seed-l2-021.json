@@ -119,7 +119,68 @@
     "lx-0371",
     "lx-0491"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What starts?",
+      "questionTarget": "چه شروع می‌شود؟",
+      "questionTranslit": "che shurū' mēshawad?",
+      "options": [
+        {
+          "target": "امتحان",
+          "translit": "imtihān",
+          "en": "The exam"
+        },
+        {
+          "target": "کار",
+          "translit": "kār",
+          "en": "The work"
+        },
+        {
+          "target": "جشن",
+          "translit": "jashn",
+          "en": "The celebration"
+        },
+        {
+          "target": "مکتب",
+          "translit": "maktab",
+          "en": "The school"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where does the book burn?",
+      "questionTarget": "کتاب در کجا می‌سوزد؟",
+      "questionTranslit": "ketāb dar kujā mēsōzad?",
+      "options": [
+        {
+          "target": "در آتش",
+          "translit": "dar ātash",
+          "en": "In the fire"
+        },
+        {
+          "target": "در بازار",
+          "translit": "dar bāzār",
+          "en": "In the market"
+        },
+        {
+          "target": "در مکتب",
+          "translit": "dar maktab",
+          "en": "At school"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "question-words",
     "present-me",

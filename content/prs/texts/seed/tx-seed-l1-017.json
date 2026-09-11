@@ -114,7 +114,68 @@
     "lx-0050",
     "lx-0099"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What do I want?",
+      "questionTarget": "من چه می‌خواهم؟",
+      "questionTranslit": "man che mēkhāham?",
+      "options": [
+        {
+          "target": "یک روز",
+          "translit": "yak rōz",
+          "en": "One day"
+        },
+        {
+          "target": "یک هفته",
+          "translit": "yak hafta",
+          "en": "One week"
+        },
+        {
+          "target": "یک ماه",
+          "translit": "yak māh",
+          "en": "One month"
+        },
+        {
+          "target": "یک سال",
+          "translit": "yak sāl",
+          "en": "One year"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What is this?",
+      "questionTarget": "این چه است؟",
+      "questionTranslit": "īn che ast?",
+      "options": [
+        {
+          "target": "یک روز",
+          "translit": "yak rōz",
+          "en": "One day"
+        },
+        {
+          "target": "یک هفته",
+          "translit": "yak hafta",
+          "en": "One week"
+        },
+        {
+          "target": "یک سال",
+          "translit": "yak sāl",
+          "en": "One year"
+        },
+        {
+          "target": "یک ماه",
+          "translit": "yak māh",
+          "en": "One month"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "demonstratives",

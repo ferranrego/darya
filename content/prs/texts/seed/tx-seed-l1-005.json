@@ -146,7 +146,68 @@
     "lx-0232",
     "lx-0234"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What kind of tea do I drink?",
+      "questionTarget": "من چه می‌خورم؟",
+      "questionTranslit": "man che mēkhuram?",
+      "options": [
+        {
+          "target": "آب سرد",
+          "translit": "āb-e sard",
+          "en": "Cold water"
+        },
+        {
+          "target": "چای سیاه",
+          "translit": "chāy-e siyāh",
+          "en": "Black tea"
+        },
+        {
+          "target": "چای سبز",
+          "translit": "chāy-e sabz",
+          "en": "Green tea"
+        },
+        {
+          "target": "شیر گرم",
+          "translit": "shīr-e garm",
+          "en": "Warm milk"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 3,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Where do I bring the work?",
+      "questionTarget": "من کار را به کجا می‌آورم؟",
+      "questionTranslit": "man kār rā ba kujā mēāwaram?",
+      "options": [
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        },
+        {
+          "target": "به دکان",
+          "translit": "ba dukān",
+          "en": "To the shop"
+        },
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the market"
+        },
+        {
+          "target": "به خانه",
+          "translit": "ba khāna",
+          "en": "Home"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

@@ -123,7 +123,68 @@
     "lx-0389",
     "lx-6126"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Who is sick?",
+      "questionTarget": "کی مریض است؟",
+      "questionTranslit": "kī marēz ast?",
+      "options": [
+        {
+          "target": "مرد",
+          "translit": "mard",
+          "en": "The man"
+        },
+        {
+          "target": "پسر",
+          "translit": "pesar",
+          "en": "The boy"
+        },
+        {
+          "target": "داکتر",
+          "translit": "dāktar",
+          "en": "The doctor"
+        },
+        {
+          "target": "زن",
+          "translit": "zan",
+          "en": "The woman"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does the man open?",
+      "questionTarget": "مرد چه می‌گشاید؟",
+      "questionTranslit": "mard che mēgushāyad?",
+      "options": [
+        {
+          "target": "دکان",
+          "translit": "dukān",
+          "en": "The shop"
+        },
+        {
+          "target": "کتاب",
+          "translit": "ketāb",
+          "en": "A book"
+        },
+        {
+          "target": "دروازه",
+          "translit": "darwāza",
+          "en": "The door"
+        },
+        {
+          "target": "کلکین",
+          "translit": "kelkīn",
+          "en": "The window"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 4,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "object-ra",

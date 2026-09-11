@@ -143,7 +143,68 @@
     "lx-6242",
     "lx-6243"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where were we last night?",
+      "questionTarget": "دیشب ما در کجا بودیم؟",
+      "questionTranslit": "dēshab mā dar kujā būdēm?",
+      "options": [
+        {
+          "target": "در بازار",
+          "translit": "dar bāzār",
+          "en": "At the market"
+        },
+        {
+          "target": "در مکتب",
+          "translit": "dar maktab",
+          "en": "At school"
+        },
+        {
+          "target": "در خانه",
+          "translit": "dar khāna",
+          "en": "At home"
+        },
+        {
+          "target": "در عروسی",
+          "translit": "dar arōsī",
+          "en": "At a wedding"
+        }
+      ],
+      "answerIndex": 3,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How was the music?",
+      "questionTarget": "موسیقی چطور بود؟",
+      "questionTranslit": "mūsīqī chetōr būd?",
+      "options": [
+        {
+          "target": "بسیار کهنه",
+          "translit": "bisyār kuhna",
+          "en": "Very old"
+        },
+        {
+          "target": "بسیار بلند",
+          "translit": "bisyār buland",
+          "en": "Very loud"
+        },
+        {
+          "target": "بسیار آهسته",
+          "translit": "bisyār āhista",
+          "en": "Very slow"
+        },
+        {
+          "target": "بسیار بد",
+          "translit": "bisyār bad",
+          "en": "Very bad"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "simple-past",
     "prepositions"

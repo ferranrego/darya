@@ -149,7 +149,68 @@
     "lx-6227",
     "lx-6228"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does my father buy?",
+      "questionTarget": "پدرم چه می‌خرد؟",
+      "questionTranslit": "padar-am che mēkharad?",
+      "options": [
+        {
+          "target": "نان و شیر",
+          "translit": "nān wa shīr",
+          "en": "Bread and milk"
+        },
+        {
+          "target": "گوشت و برنج",
+          "translit": "gōsht wa berenj",
+          "en": "Meat and rice"
+        },
+        {
+          "target": "ترکاری و میوه",
+          "translit": "tarkārī wa mēwa",
+          "en": "Vegetables and fruit"
+        },
+        {
+          "target": "کتاب و قلم",
+          "translit": "ketāb wa qalam",
+          "en": "A book and a pen"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What is cheap?",
+      "questionTarget": "چه ارزان است؟",
+      "questionTranslit": "che arzān ast?",
+      "options": [
+        {
+          "target": "انار و سیب",
+          "translit": "anār wa sēb",
+          "en": "Pomegranates and apples"
+        },
+        {
+          "target": "کچالو و پیاز",
+          "translit": "kachālū wa piyāz",
+          "en": "Potatoes and onions"
+        },
+        {
+          "target": "گوشت و شیر",
+          "translit": "gōsht wa shīr",
+          "en": "Meat and milk"
+        },
+        {
+          "target": "نان و چای",
+          "translit": "nān wa chāy",
+          "en": "Bread and tea"
+        }
+      ],
+      "answerIndex": 1,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "plural-ha",

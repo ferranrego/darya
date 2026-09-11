@@ -152,7 +152,68 @@
     "lx-6233",
     "lx-6234"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does my brother study?",
+      "questionTarget": "برادرم چه می‌خواند؟",
+      "questionTranslit": "barādar-am che mēkhānad?",
+      "options": [
+        {
+          "target": "کتاب خود",
+          "translit": "ketāb-e khud",
+          "en": "His own book"
+        },
+        {
+          "target": "کتاب کهنه",
+          "translit": "ketāb-e kuhna",
+          "en": "An old book"
+        },
+        {
+          "target": "کورس انگلیسی",
+          "translit": "kōrs-e inglīsī",
+          "en": "An English course"
+        },
+        {
+          "target": "درس تاریخ",
+          "translit": "dars-e tārīkh",
+          "en": "A history lesson"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "What does he get every day?",
+      "questionTarget": "او هر روز چه می‌گیرد؟",
+      "questionTranslit": "ō har rōz che mēgīrad?",
+      "options": [
+        {
+          "target": "کتاب‌های نو",
+          "translit": "ketāb-hā-ye naw",
+          "en": "New books"
+        },
+        {
+          "target": "پول زیاد",
+          "translit": "pūl-e ziyād",
+          "en": "A lot of money"
+        },
+        {
+          "target": "نان گرم",
+          "translit": "nān-e garm",
+          "en": "Warm bread"
+        },
+        {
+          "target": "لباس نو",
+          "translit": "libās-e naw",
+          "en": "New clothes"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "want-subjunctive",
     "present-me",

@@ -124,7 +124,68 @@
     "lx-0532",
     "lx-1089"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "Where does the official go?",
+      "questionTarget": "مامور به کجا می‌رود؟",
+      "questionTranslit": "māmūr ba kujā mērawad?",
+      "options": [
+        {
+          "target": "به ساختمان",
+          "translit": "ba sākhtamān",
+          "en": "To the building"
+        },
+        {
+          "target": "به بازار",
+          "translit": "ba bāzār",
+          "en": "To the market"
+        },
+        {
+          "target": "به شفاخانه",
+          "translit": "ba shafākhāna",
+          "en": "To the hospital"
+        },
+        {
+          "target": "به مکتب",
+          "translit": "ba maktab",
+          "en": "To school"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 1,
+      "source": "authored"
+    },
+    {
+      "questionEn": "How is the building?",
+      "questionTarget": "ساختمان چطور است؟",
+      "questionTranslit": "sākhtamān chetōr ast?",
+      "options": [
+        {
+          "target": "کهنه",
+          "translit": "kuhna",
+          "en": "Old"
+        },
+        {
+          "target": "خورد",
+          "translit": "khurd",
+          "en": "Small"
+        },
+        {
+          "target": "کلان",
+          "translit": "kalān",
+          "en": "Big"
+        },
+        {
+          "target": "نو",
+          "translit": "naw",
+          "en": "New"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 3,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me",
     "ezafa-possession",

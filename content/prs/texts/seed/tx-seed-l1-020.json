@@ -89,7 +89,68 @@
     "lx-0155",
     "lx-0158"
   ],
-  "questions": [],
+  "questions": [
+    {
+      "questionEn": "What does the teacher do?",
+      "questionTarget": "معلم چه می‌کند؟",
+      "questionTranslit": "mu'allem che mēkunad?",
+      "options": [
+        {
+          "target": "می‌دود",
+          "translit": "mēdawad",
+          "en": "Runs"
+        },
+        {
+          "target": "می‌خوابد",
+          "translit": "mēkhābad",
+          "en": "Sleeps"
+        },
+        {
+          "target": "می‌نویسد",
+          "translit": "mēnawīsad",
+          "en": "Writes"
+        },
+        {
+          "target": "می‌خواند",
+          "translit": "mēkhānad",
+          "en": "Reads"
+        }
+      ],
+      "answerIndex": 2,
+      "evidenceSentence": 0,
+      "source": "authored"
+    },
+    {
+      "questionEn": "Who learns?",
+      "questionTarget": "کی یاد می‌گیرد؟",
+      "questionTranslit": "kī yād mēgīrad?",
+      "options": [
+        {
+          "target": "پسر",
+          "translit": "pesar",
+          "en": "The boy"
+        },
+        {
+          "target": "دختر",
+          "translit": "dukhtar",
+          "en": "The girl"
+        },
+        {
+          "target": "مادر",
+          "translit": "mādar",
+          "en": "The mother"
+        },
+        {
+          "target": "معلم",
+          "translit": "mu'allem",
+          "en": "The teacher"
+        }
+      ],
+      "answerIndex": 0,
+      "evidenceSentence": 2,
+      "source": "authored"
+    }
+  ],
   "grammarPoints": [
     "present-me"
   ],
