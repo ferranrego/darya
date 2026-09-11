@@ -85,7 +85,13 @@ describe("exercises built from seed text", () => {
     const built = buildFreeExercises({ docs, targetLexemeIds: targets, known, count: 500, rand: rand() });
     for (const { data } of built) {
       if (data.type !== "unscramble") continue;
-      const inSentence = data.sentenceTarget.split(/\s+/).map((w) => w.replace(/[.?!،]/g, ""));
+      // ؟ and ؛ are the Arabic-script question mark and semicolon - different
+      // code points from their ASCII lookalikes. The first seed sentence to end
+      // in one failed this assertion, because the token list correctly excludes
+      // punctuation and this split did not strip it.
+      const inSentence = data.sentenceTarget
+        .split(/\s+/)
+        .map((w) => w.replace(/[.?!،؟؛:]/gu, ""));
       for (const w of data.words) expect(inSentence).toContain(w);
       expect(data.words.length).toBeGreaterThanOrEqual(3);
     }

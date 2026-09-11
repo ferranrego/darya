@@ -1,0 +1,222 @@
+{
+  "id": "tx-seed-l2-074",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "قریه ما",
+  "titleTranslit": "qarya-ye mā",
+  "titleEn": "Our village",
+  "sentences": [
+    {
+      "target": "قریه ما نزدیک کوه است.",
+      "translit": "qarya-ye mā nazdīk-e kōh ast.",
+      "en": "Our village is near the mountain.",
+      "tokens": [
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "کوه",
+          "lexemeId": "lx-0137"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "تمام فامیل ما در قریه زندگی می‌کند.",
+      "translit": "tamām-e fāmīl-e mā dar qarya zindagī mēkunad.",
+      "en": "Our whole family lives in the village.",
+      "tokens": [
+        {
+          "surface": "تمام",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "فامیل",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "زمین قریه بسیار خشک است.",
+      "translit": "zamīn-e qarya bisyār khushk ast.",
+      "en": "The land of the village is very dry.",
+      "tokens": [
+        {
+          "surface": "زمین",
+          "lexemeId": "lx-0237"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خشک",
+          "lexemeId": "lx-0669"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "زمستان درختان خورد را می‌کشد.",
+      "translit": "zemestān darakhtān-e khurd rā mēkushad.",
+      "en": "Winter kills the small trees.",
+      "tokens": [
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "درختان",
+          "lexemeId": "lx-0138"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌کشد",
+          "lexemeId": "lx-0388"
+        }
+      ]
+    },
+    {
+      "target": "اینجا شب تاریک است و کسی نیست.",
+      "translit": "īnjā shab tārīk ast wa kasē nēst.",
+      "en": "Here the night is dark and there is nobody.",
+      "tokens": [
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "تاریک",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "کسی",
+          "lexemeId": "lx-0307"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "مردم قریه زود می‌بخشند.",
+      "translit": "mardum-e qarya zūd mēbakhshand.",
+      "en": "The village people forgive quickly.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "می‌بخشند",
+          "lexemeId": "lx-0387"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0041",
+    "lx-0059",
+    "lx-0066",
+    "lx-0081",
+    "lx-0096",
+    "lx-0097",
+    "lx-0131",
+    "lx-0137",
+    "lx-0138",
+    "lx-0150",
+    "lx-0167",
+    "lx-0174",
+    "lx-0176",
+    "lx-0183",
+    "lx-0195",
+    "lx-0237",
+    "lx-0307",
+    "lx-0310",
+    "lx-0356",
+    "lx-0387",
+    "lx-0388",
+    "lx-0669"
+  ],
+  "newWords": [
+    "lx-0669"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 74
+}

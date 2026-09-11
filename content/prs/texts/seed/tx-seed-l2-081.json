@@ -1,0 +1,207 @@
+{
+  "id": "tx-seed-l2-081",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "زمستان",
+  "titleTranslit": "zemestān",
+  "titleEn": "Winter",
+  "sentences": [
+    {
+      "target": "الان زمستان است و هوا سرد است.",
+      "translit": "al'ān zemestān ast wa hawā sard ast.",
+      "en": "Now it is winter and the weather is cold.",
+      "tokens": [
+        {
+          "surface": "الان",
+          "lexemeId": "lx-0294"
+        },
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "در کوه‌ها برف زیاد است.",
+      "translit": "dar kōh-hā barf ziyād ast.",
+      "en": "In the mountains there is a lot of snow.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "کوه‌ها",
+          "lexemeId": "lx-0137"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "شب زود تاریک می‌شود.",
+      "translit": "shab zūd tārīk mēshawad.",
+      "en": "The night becomes dark early.",
+      "tokens": [
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "تاریک",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "هوای سرد گل‌ها را می‌کشد.",
+      "translit": "hawā-ye sard gul-hā rā mēkushad.",
+      "en": "The cold weather kills the flowers.",
+      "tokens": [
+        {
+          "surface": "هوای",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "گل‌ها",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌کشد",
+          "lexemeId": "lx-0388"
+        }
+      ]
+    },
+    {
+      "target": "شاید الان برف می‌بارد.",
+      "translit": "shāyad al'ān barf mēbārad.",
+      "en": "Maybe it is snowing now.",
+      "tokens": [
+        {
+          "surface": "شاید",
+          "lexemeId": "lx-0313"
+        },
+        {
+          "surface": "الان",
+          "lexemeId": "lx-0294"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "می‌بارد",
+          "lexemeId": "lx-0241"
+        }
+      ]
+    },
+    {
+      "target": "در زمستان کسی در کوچه نیست.",
+      "translit": "dar zemestān kasē dar kōcha nēst.",
+      "en": "In winter there is nobody in the alley.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "کسی",
+          "lexemeId": "lx-0307"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "کوچه",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0007",
+    "lx-0010",
+    "lx-0041",
+    "lx-0069",
+    "lx-0072",
+    "lx-0096",
+    "lx-0126",
+    "lx-0128",
+    "lx-0131",
+    "lx-0137",
+    "lx-0140",
+    "lx-0149",
+    "lx-0195",
+    "lx-0241",
+    "lx-0294",
+    "lx-0307",
+    "lx-0313",
+    "lx-0356",
+    "lx-0388",
+    "lx-0529"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 81
+}

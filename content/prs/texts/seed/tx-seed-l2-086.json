@@ -1,0 +1,205 @@
+{
+  "id": "tx-seed-l2-086",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "پول و بازار",
+  "titleTranslit": "pūl wa bāzār",
+  "titleEn": "Money and the bazaar",
+  "sentences": [
+    {
+      "target": "من پول کم دارم.",
+      "translit": "man pūl kam dāram.",
+      "en": "I have little money.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "پول",
+          "lexemeId": "lx-0327"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من پول را به دکان می‌برم.",
+      "translit": "man pūl rā ba dukān mēbaram.",
+      "en": "I take the money to the shop.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "پول",
+          "lexemeId": "lx-0327"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "می‌برم",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    },
+    {
+      "target": "نان و شیر قیمت است.",
+      "translit": "nān wa shīr qīmat ast.",
+      "en": "Bread and milk are expensive.",
+      "tokens": [
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "شیر",
+          "lexemeId": "lx-0117"
+        },
+        {
+          "surface": "قیمت",
+          "lexemeId": "lx-6132"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من پول زیاد نمی‌دهم.",
+      "translit": "man pūl-e ziyād namēdiham.",
+      "en": "I do not give a lot of money.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "پول",
+          "lexemeId": "lx-0327"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "نمی‌دهم",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "پدر من به من پول می‌دهد.",
+      "translit": "padar-e man ba man pūl mēdihad.",
+      "en": "My father gives me money.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "پول",
+          "lexemeId": "lx-0327"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "من با این پول میوه می‌خرم.",
+      "translit": "man bā īn pūl mēwa mēkharam.",
+      "en": "I buy fruit with this money.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "پول",
+          "lexemeId": "lx-0327"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "می‌خرم",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0006",
+    "lx-0007",
+    "lx-0008",
+    "lx-0010",
+    "lx-0011",
+    "lx-0038",
+    "lx-0052",
+    "lx-0069",
+    "lx-0070",
+    "lx-0095",
+    "lx-0100",
+    "lx-0113",
+    "lx-0117",
+    "lx-0134",
+    "lx-0205",
+    "lx-0233",
+    "lx-0327",
+    "lx-6132"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 86
+}

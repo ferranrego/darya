@@ -1,0 +1,217 @@
+{
+  "id": "tx-seed-l2-084",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "پای من درد می‌کند",
+  "titleTranslit": "pāy-e man dard mēkunad",
+  "titleEn": "My foot hurts",
+  "sentences": [
+    {
+      "target": "پای من الان بسیار درد می‌کند.",
+      "translit": "pāy-e man al'ān bisyār dard mēkunad.",
+      "en": "My foot hurts a lot now.",
+      "tokens": [
+        {
+          "surface": "پای",
+          "lexemeId": "lx-0125"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "الان",
+          "lexemeId": "lx-0294"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "درد",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من پیاده به شفاخانه می‌روم.",
+      "translit": "man piyāda ba shafākhāna mērawam.",
+      "en": "I go to the hospital on foot.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "پیاده",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "شفاخانه",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "می‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "داکتر پای من را می‌بیند.",
+      "translit": "dāktar pāy-e man rā mēbīnad.",
+      "en": "The doctor looks at my foot.",
+      "tokens": [
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "پای",
+          "lexemeId": "lx-0125"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌بیند",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "او به من یک دوا می‌دهد.",
+      "translit": "ō ba man yak dawā mēdihad.",
+      "en": "He gives me a medicine.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دوا",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "شاید کار من بسیار سخت است.",
+      "translit": "shāyad kār-e man bisyār sakht ast.",
+      "en": "Maybe my work is very hard.",
+      "tokens": [
+        {
+          "surface": "شاید",
+          "lexemeId": "lx-0313"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "سخت",
+          "lexemeId": "lx-0212"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "فردا پای من جور می‌شود.",
+      "translit": "fardā pāy-e man jōr mēshawad.",
+      "en": "Tomorrow my foot gets well.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "پای",
+          "lexemeId": "lx-0125"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0025",
+    "lx-0044",
+    "lx-0079",
+    "lx-0089",
+    "lx-0092",
+    "lx-0097",
+    "lx-0100",
+    "lx-0106",
+    "lx-0125",
+    "lx-0149",
+    "lx-0167",
+    "lx-0209",
+    "lx-0210",
+    "lx-0211",
+    "lx-0212",
+    "lx-0219",
+    "lx-0263",
+    "lx-0294",
+    "lx-0313"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 84
+}

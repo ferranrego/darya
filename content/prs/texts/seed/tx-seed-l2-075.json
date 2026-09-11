@@ -1,0 +1,231 @@
+{
+  "id": "tx-seed-l2-075",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "بایسکل من",
+  "titleTranslit": "bāyskel-e man",
+  "titleEn": "My bicycle",
+  "sentences": [
+    {
+      "target": "من یک بایسکل نو دارم.",
+      "translit": "man yak bāyskel-e naw dāram.",
+      "en": "I have a new bicycle.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بایسکل",
+          "lexemeId": "lx-0084"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "بایسکل من سبز و خورد است.",
+      "translit": "bāyskel-e man sabz wa khurd ast.",
+      "en": "My bicycle is green and small.",
+      "tokens": [
+        {
+          "surface": "بایسکل",
+          "lexemeId": "lx-0084"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سبز",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من هر روز با بایسکل به مکتب می‌روم.",
+      "translit": "man har rōz bā bāyskel ba maktab mērawam.",
+      "en": "Every day I go to school by bicycle.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "بایسکل",
+          "lexemeId": "lx-0084"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "می‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "سرک ما بسیار بد است.",
+      "translit": "sarak-e mā bisyār bad ast.",
+      "en": "Our street is very bad.",
+      "tokens": [
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من بایسکل را پیش دروازه می‌گذارم.",
+      "translit": "man bāyskel rā pēsh-e darwāza mēguzāram.",
+      "en": "I put the bicycle in front of the door.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "بایسکل",
+          "lexemeId": "lx-0084"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "پیش",
+          "lexemeId": "lx-0311"
+        },
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "می‌گذارم",
+          "lexemeId": "lx-0369"
+        }
+      ]
+    },
+    {
+      "target": "شاید کوچه الان تاریک است.",
+      "translit": "shāyad kōcha al'ān tārīk ast.",
+      "en": "Maybe the alley is dark now.",
+      "tokens": [
+        {
+          "surface": "شاید",
+          "lexemeId": "lx-0313"
+        },
+        {
+          "surface": "کوچه",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "الان",
+          "lexemeId": "lx-0294"
+        },
+        {
+          "surface": "تاریک",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0007",
+    "lx-0008",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0040",
+    "lx-0064",
+    "lx-0066",
+    "lx-0067",
+    "lx-0075",
+    "lx-0082",
+    "lx-0084",
+    "lx-0089",
+    "lx-0095",
+    "lx-0145",
+    "lx-0166",
+    "lx-0167",
+    "lx-0195",
+    "lx-0197",
+    "lx-0294",
+    "lx-0311",
+    "lx-0313",
+    "lx-0369",
+    "lx-0529"
+  ],
+  "newWords": [
+    "lx-0084",
+    "lx-0529"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 75
+}

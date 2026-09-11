@@ -1,0 +1,253 @@
+{
+  "id": "tx-seed-l2-082",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "کار پدر من",
+  "titleTranslit": "kār-e padar-e man",
+  "titleEn": "My father's work",
+  "sentences": [
+    {
+      "target": "پدر من در دولت کار می‌کند.",
+      "translit": "padar-e man dar dawlat kār mēkunad.",
+      "en": "My father works in the government.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "دولت",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "به نظر من کار او بسیار سخت است.",
+      "translit": "ba nazar-e man kār-e ō bisyār sakht ast.",
+      "en": "In my opinion his work is very hard.",
+      "tokens": [
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "نظر",
+          "lexemeId": "lx-0314"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "سخت",
+          "lexemeId": "lx-0212"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او از موتر دولت استفاده می‌کند.",
+      "translit": "ō az mōtar-e dawlat istifāda mēkunad.",
+      "en": "He uses the government car.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "موتر",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "دولت",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "استفاده",
+          "lexemeId": "lx-0339"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او در مورد کار کم می‌گوید.",
+      "translit": "ō dar mawrid-e kār kam mēgōyad.",
+      "en": "He says little about work.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مورد",
+          "lexemeId": "lx-0306"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "او هر ماه یک بار به قریه می‌رود.",
+      "translit": "ō har māh yak bār ba qarya mērawad.",
+      "en": "He goes to the village once every month.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بار",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "پدر من مهربان است و زود می‌بخشد.",
+      "translit": "padar-e man mehrabān ast wa zūd mēbakhshad.",
+      "en": "My father is kind and forgives quickly.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "می‌بخشد",
+          "lexemeId": "lx-0387"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0025",
+    "lx-0049",
+    "lx-0052",
+    "lx-0070",
+    "lx-0079",
+    "lx-0081",
+    "lx-0083",
+    "lx-0089",
+    "lx-0093",
+    "lx-0097",
+    "lx-0166",
+    "lx-0167",
+    "lx-0212",
+    "lx-0242",
+    "lx-0256",
+    "lx-0306",
+    "lx-0314",
+    "lx-0330",
+    "lx-0339",
+    "lx-0356",
+    "lx-0387"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 82
+}

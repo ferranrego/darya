@@ -1,0 +1,225 @@
+{
+  "id": "tx-seed-l2-080",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "مسجد قریه",
+  "titleTranslit": "masjid-e qarya",
+  "titleEn": "The village mosque",
+  "sentences": [
+    {
+      "target": "مسجد قریه ما بسیار کلان است.",
+      "translit": "masjid-e qarya-ye mā bisyār kalān ast.",
+      "en": "Our village mosque is very big.",
+      "tokens": [
+        {
+          "surface": "مسجد",
+          "lexemeId": "lx-0135"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "دروازه مسجد سفید است.",
+      "translit": "darwāza-ye masjid safēd ast.",
+      "en": "The door of the mosque is white.",
+      "tokens": [
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "مسجد",
+          "lexemeId": "lx-0135"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم پیش از شب به مسجد می‌روند.",
+      "translit": "mardum pēsh az shab ba masjid mērawand.",
+      "en": "People go to the mosque before night.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "پیش",
+          "lexemeId": "lx-0311"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مسجد",
+          "lexemeId": "lx-0135"
+        },
+        {
+          "surface": "می‌روند",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "آنها بایسکل را پیش دروازه می‌گذارند.",
+      "translit": "ānhā bāyskel rā pēsh-e darwāza mēguzārand.",
+      "en": "They put the bicycle in front of the door.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "بایسکل",
+          "lexemeId": "lx-0084"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "پیش",
+          "lexemeId": "lx-0311"
+        },
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "می‌گذارند",
+          "lexemeId": "lx-0369"
+        }
+      ]
+    },
+    {
+      "target": "چهار نفر پیش دروازه گپ می‌زنند.",
+      "translit": "chār nafar pēsh-e darwāza gap mēzanand.",
+      "en": "Four people talk in front of the door.",
+      "tokens": [
+        {
+          "surface": "چهار",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "نفر",
+          "lexemeId": "lx-0329"
+        },
+        {
+          "surface": "پیش",
+          "lexemeId": "lx-0311"
+        },
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زنند",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    },
+    {
+      "target": "الان کسی در مسجد نیست.",
+      "translit": "al'ān kasē dar masjid nēst.",
+      "en": "Now there is nobody in the mosque.",
+      "tokens": [
+        {
+          "surface": "الان",
+          "lexemeId": "lx-0294"
+        },
+        {
+          "surface": "کسی",
+          "lexemeId": "lx-0307"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مسجد",
+          "lexemeId": "lx-0135"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0016",
+    "lx-0028",
+    "lx-0041",
+    "lx-0059",
+    "lx-0065",
+    "lx-0081",
+    "lx-0084",
+    "lx-0089",
+    "lx-0096",
+    "lx-0135",
+    "lx-0143",
+    "lx-0151",
+    "lx-0152",
+    "lx-0167",
+    "lx-0197",
+    "lx-0294",
+    "lx-0307",
+    "lx-0311",
+    "lx-0329",
+    "lx-0369"
+  ],
+  "newWords": [
+    "lx-0143"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 80
+}

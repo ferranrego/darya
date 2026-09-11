@@ -1,0 +1,220 @@
+{
+  "id": "tx-seed-l2-077",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "مکتب ما",
+  "titleTranslit": "maktab-e mā",
+  "titleEn": "Our school",
+  "sentences": [
+    {
+      "target": "مکتب ما هر روز صبح شروع می‌شود.",
+      "translit": "maktab-e mā har rōz subh shurū' mēshawad.",
+      "en": "Our school starts every morning.",
+      "tokens": [
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "شروع",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "تمام شاگردان الان در مکتب هستند.",
+      "translit": "tamām-e shāgerdān al'ān dar maktab hastand.",
+      "en": "All the students are at school now.",
+      "tokens": [
+        {
+          "surface": "تمام",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "الان",
+          "lexemeId": "lx-0294"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "معلم درس را شروع می‌کند.",
+      "translit": "mu'allem dars rā shurū' mēkunad.",
+      "en": "The teacher starts the lesson.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "شروع",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "شاید درس امروز بسیار سخت است.",
+      "translit": "shāyad dars-e emrōz bisyār sakht ast.",
+      "en": "Maybe today's lesson is very difficult.",
+      "tokens": [
+        {
+          "surface": "شاید",
+          "lexemeId": "lx-0313"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "سخت",
+          "lexemeId": "lx-0212"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "شاگردان از کتاب استفاده می‌کنند.",
+      "translit": "shāgerdān az ketāb istifāda mēkunand.",
+      "en": "The students use a book.",
+      "tokens": [
+        {
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "استفاده",
+          "lexemeId": "lx-0339"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "معلم شاگردان را می‌بخشد.",
+      "translit": "mu'allem shāgerdān rā mēbakhshad.",
+      "en": "The teacher forgives the students.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌بخشد",
+          "lexemeId": "lx-0387"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0040",
+    "lx-0042",
+    "lx-0043",
+    "lx-0074",
+    "lx-0075",
+    "lx-0077",
+    "lx-0078",
+    "lx-0096",
+    "lx-0097",
+    "lx-0149",
+    "lx-0166",
+    "lx-0167",
+    "lx-0212",
+    "lx-0215",
+    "lx-0216",
+    "lx-0294",
+    "lx-0310",
+    "lx-0313",
+    "lx-0339",
+    "lx-0387"
+  ],
+  "newWords": [
+    "lx-0212"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 77
+}

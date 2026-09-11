@@ -1,0 +1,236 @@
+{
+  "id": "tx-seed-l2-078",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "خبر شب",
+  "titleTranslit": "khabar-e shab",
+  "titleEn": "The evening news",
+  "sentences": [
+    {
+      "target": "پدر من هر شب خبر می‌شنود.",
+      "translit": "padar-e man har shab khabar mēshunawad.",
+      "en": "My father listens to the news every night.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "خبر",
+          "lexemeId": "lx-0245"
+        },
+        {
+          "surface": "می‌شنود",
+          "lexemeId": "lx-0156"
+        }
+      ]
+    },
+    {
+      "target": "خبر امروز بسیار بد است.",
+      "translit": "khabar-e emrōz bisyār bad ast.",
+      "en": "Today's news is very bad.",
+      "tokens": [
+        {
+          "surface": "خبر",
+          "lexemeId": "lx-0245"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "در خبر مردم در مورد دولت گپ می‌زنند.",
+      "translit": "dar khabar mardum dar mawrid-e dawlat gap mēzanand.",
+      "en": "In the news people talk about the government.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "خبر",
+          "lexemeId": "lx-0245"
+        },
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مورد",
+          "lexemeId": "lx-0306"
+        },
+        {
+          "surface": "دولت",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زنند",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    },
+    {
+      "target": "دولت یک مکتب نو می‌سازد.",
+      "translit": "dawlat yak maktab-e naw mēsāzad.",
+      "en": "The government builds a new school.",
+      "tokens": [
+        {
+          "surface": "دولت",
+          "lexemeId": "lx-0242"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌سازد",
+          "lexemeId": "lx-0375"
+        }
+      ]
+    },
+    {
+      "target": "کسی خبر بد را دوست ندارد.",
+      "translit": "kasē khabar-e bad rā dōst nadārad.",
+      "en": "Nobody likes bad news.",
+      "tokens": [
+        {
+          "surface": "کسی",
+          "lexemeId": "lx-0307"
+        },
+        {
+          "surface": "خبر",
+          "lexemeId": "lx-0245"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "ندارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "پدر من خبر را به ما می‌گوید.",
+      "translit": "padar-e man khabar rā ba mā mēgōyad.",
+      "en": "My father tells us the news.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خبر",
+          "lexemeId": "lx-0245"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0041",
+    "lx-0043",
+    "lx-0052",
+    "lx-0058",
+    "lx-0059",
+    "lx-0064",
+    "lx-0067",
+    "lx-0075",
+    "lx-0093",
+    "lx-0095",
+    "lx-0151",
+    "lx-0152",
+    "lx-0156",
+    "lx-0166",
+    "lx-0167",
+    "lx-0242",
+    "lx-0245",
+    "lx-0306",
+    "lx-0307",
+    "lx-0375"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 78
+}

@@ -1,0 +1,239 @@
+{
+  "id": "tx-seed-l2-076",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "فوتبال در کوچه",
+  "titleTranslit": "fūtbāl dar kōcha",
+  "titleEn": "Football in the alley",
+  "sentences": [
+    {
+      "target": "بچه‌ها هر روز در کوچه فوتبال بازی می‌کنند.",
+      "translit": "bacha-hā har rōz dar kōcha fūtbāl bāzī mēkunand.",
+      "en": "The children play football in the alley every day.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "کوچه",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "فوتبال",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "بازی آنها الان شروع می‌شود.",
+      "translit": "bāzī-ye ānhā al'ān shurū' mēshawad.",
+      "en": "Their game starts now.",
+      "tokens": [
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "الان",
+          "lexemeId": "lx-0294"
+        },
+        {
+          "surface": "شروع",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "پنج نفر در کوچه بازی می‌کنند.",
+      "translit": "panj nafar dar kōcha bāzī mēkunand.",
+      "en": "Five people play in the alley.",
+      "tokens": [
+        {
+          "surface": "پنج",
+          "lexemeId": "lx-0029"
+        },
+        {
+          "surface": "نفر",
+          "lexemeId": "lx-0329"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "کوچه",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "برادر من تنها بازی نمی‌کند.",
+      "translit": "barādar-e man tanhā bāzī namēkunad.",
+      "en": "My brother does not play alone.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "تنها",
+          "lexemeId": "lx-0312"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "نمی‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او هر روز یک بار فوتبال بازی می‌کند.",
+      "translit": "ō har rōz yak bār fūtbāl bāzī mēkunad.",
+      "en": "He plays football once every day.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بار",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "فوتبال",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "بچه‌ها در مورد فوتبال گپ می‌زنند.",
+      "translit": "bacha-hā dar mawrid-e fūtbāl gap mēzanand.",
+      "en": "The children talk about football.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مورد",
+          "lexemeId": "lx-0306"
+        },
+        {
+          "surface": "فوتبال",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زنند",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0011",
+    "lx-0012",
+    "lx-0016",
+    "lx-0025",
+    "lx-0029",
+    "lx-0040",
+    "lx-0053",
+    "lx-0057",
+    "lx-0097",
+    "lx-0149",
+    "lx-0151",
+    "lx-0152",
+    "lx-0166",
+    "lx-0191",
+    "lx-0192",
+    "lx-0215",
+    "lx-0294",
+    "lx-0306",
+    "lx-0312",
+    "lx-0329",
+    "lx-0330",
+    "lx-0529"
+  ],
+  "newWords": [
+    "lx-0151",
+    "lx-0329"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 76
+}

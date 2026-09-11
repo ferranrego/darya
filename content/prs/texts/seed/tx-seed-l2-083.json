@@ -1,0 +1,243 @@
+{
+  "id": "tx-seed-l2-083",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "در بازار",
+  "titleTranslit": "dar bāzār",
+  "titleEn": "At the bazaar",
+  "sentences": [
+    {
+      "target": "ما هر هفته یک بار به بازار می‌رویم.",
+      "translit": "mā har hafta yak bār ba bāzār mērawēm.",
+      "en": "We go to the bazaar once every week.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بار",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "مادر من نان و شیر می‌خرد.",
+      "translit": "mādar-e man nān wa shīr mēkharad.",
+      "en": "My mother buys bread and milk.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "شیر",
+          "lexemeId": "lx-0117"
+        },
+        {
+          "surface": "می‌خرد",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "دو نفر در دکان کار می‌کنند.",
+      "translit": "dū nafar dar dukān kār mēkunand.",
+      "en": "Two people work in the shop.",
+      "tokens": [
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "نفر",
+          "lexemeId": "lx-0329"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "دکاندار قیمت را می‌گوید.",
+      "translit": "dukāndār qīmat rā mēgōyad.",
+      "en": "The shopkeeper says the price.",
+      "tokens": [
+        {
+          "surface": "دکاندار",
+          "lexemeId": "lx-0513"
+        },
+        {
+          "surface": "قیمت",
+          "lexemeId": "lx-6132"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "مادر من به بچه‌ها پول می‌بخشد.",
+      "translit": "mādar-e man ba bacha-hā pūl mēbakhshad.",
+      "en": "My mother gives the children money.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "پول",
+          "lexemeId": "lx-0327"
+        },
+        {
+          "surface": "می‌بخشد",
+          "lexemeId": "lx-0387"
+        }
+      ]
+    },
+    {
+      "target": "ما پیش از شب به خانه می‌آییم.",
+      "translit": "mā pēsh az shab ba khāna mēāyēm.",
+      "en": "We come home before night.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "پیش",
+          "lexemeId": "lx-0311"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌آییم",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0007",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0026",
+    "lx-0036",
+    "lx-0038",
+    "lx-0041",
+    "lx-0050",
+    "lx-0051",
+    "lx-0057",
+    "lx-0079",
+    "lx-0089",
+    "lx-0090",
+    "lx-0093",
+    "lx-0097",
+    "lx-0117",
+    "lx-0133",
+    "lx-0134",
+    "lx-0166",
+    "lx-0205",
+    "lx-0311",
+    "lx-0327",
+    "lx-0329",
+    "lx-0330",
+    "lx-0387",
+    "lx-0513",
+    "lx-6132"
+  ],
+  "newWords": [
+    "lx-0327"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 83
+}
