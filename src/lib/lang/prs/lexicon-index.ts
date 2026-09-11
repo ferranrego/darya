@@ -2,6 +2,7 @@ import type { LexiconEntry } from "../../content/schema.ts";
 import { conjugationSurfaces, derivePastStem, VERB_OVERRIDES, type VerbStems } from "./conjugate.ts";
 import { SUPPLETIVE_FORMS } from "./suppletive.ts";
 import { matchKey, ZWNJ } from "./normalize.ts";
+import { SPOKEN_BY_KEY, spokenPluralBase } from "./spoken.ts";
 
 /**
  * Fast surface-form → lexeme lookup. Headwords win over variants when both
@@ -205,8 +206,26 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
 
   const conjugations = buildGeneratedForms(entries, headwords);
 
+  /**
+   * Kabul spoken forms, between the exact match and the generated paradigms.
+   *
+   * Placement is the whole decision. Above the headwords it would rewrite
+   * words that already have their own entry - مه is genuinely both Kabuli "I"
+   * and the noun "fog", and a text about weather must keep resolving it as
+   * weather. Below the stemmer it would never fire, because the stemmer
+   * already reaches a wrong answer for ره and بری. Here it fixes the silent
+   * mis-resolutions without overruling anything the lexicon states outright.
+   */
+  const spoken = new Map<string, LexiconEntry>();
+  for (const [key, formal] of SPOKEN_BY_KEY) {
+    const entry = headwords.get(matchKey(formal));
+    // A spoken form pointing at a headword the lexicon does not have is a
+    // defect in the table, not something to paper over at runtime.
+    if (entry) spoken.set(key, entry);
+  }
+
   const lookup = (key: string) =>
-    headwords.get(key) ?? variants.get(key) ?? conjugations.get(key);
+    headwords.get(key) ?? variants.get(key) ?? spoken.get(key) ?? conjugations.get(key);
 
   return {
     byId,
@@ -217,7 +236,17 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
       let match = lookup(key);
       if (match) return match;
 
-      // 2. Basic Stemmer for common Persian enclitics, plural markers, and comparatives
+      // 2. The Kabuli plural: کتابا for کتاب‌ها. Productive, so it is a rule
+      // rather than a listed form - but only accepted when what is left is
+      // actually a noun, since a rule firing on any word ending in alef would
+      // swallow half the verb paradigms.
+      const pluralBase = spokenPluralBase(key);
+      if (pluralBase) {
+        const noun = lookup(pluralBase);
+        if (noun && noun.pos === "noun") return noun;
+      }
+
+      // 3. Basic Stemmer for common Persian enclitics, plural markers, and comparatives
       const suffixes = [
         "یم", "ید", "ند", // verb endings (we, you pl, they)
         "ام", "ای", "ایم", "اید", "اند", // verb endings after vowels

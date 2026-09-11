@@ -7,6 +7,7 @@ import type { LexiconEntry } from "@/lib/content/schema";
 import type { WordStatus } from "@/lib/db/types";
 import { analyzeConjugation, type ConjugationResponse } from "@/app/actions/conjugation";
 import { profile as langProfile } from "@/lib/lang";
+import { spokenFormOf } from "@/lib/lang/prs/spoken";
 
 const statusLabel: Record<WordStatus | "new", { text: string; cls: string }> = {
   new: { text: "New word", cls: "bg-new-tint text-ink-soft" },
@@ -72,6 +73,9 @@ export function WordSheet({
   const badge = statusLabel[status];
   
   const isVerb = entry?.pos === "verb";
+  // Null for most words: the two registers only differ for a closed set, and a
+  // line repeating the headword would teach nothing.
+  const spoken = entry ? spokenFormOf(entry.targetNormalized) : null;
 
   const handleAnalyze = async () => {
     if (!surface || !entry) return;
@@ -131,6 +135,29 @@ export function WordSheet({
                 </div>
                 <p className="mt-3 text-[18px] font-medium">{entry.glossEn}</p>
                 <p className="text-[13px] text-ink-faint">{entry.pos}</p>
+                {/*
+                  How Kabul actually says it.
+                  The dictionary is 58% formal against 1% spoken, while the
+                  tutor introduces itself as a speaker from Kabul and learners
+                  can be sent messages by real Afghan speakers. Formal
+                  stays what a learner writes; this is what they need to be
+                  able to read. Shown only where the two registers genuinely
+                  differ - most words sound the same in both, and a line
+                  repeating the headword would teach nothing.
+                */}
+                {spoken ? (
+                  <div className="mt-2.5 rounded-xl bg-saffron-soft/40 px-3.5 py-2.5">
+                    <p className="text-[11px] font-bold uppercase tracking-wider text-ink-faint">
+                      How Kabul says it
+                    </p>
+                    <p lang={langProfile.code} dir="rtl" className="mt-1 text-[20px] text-ink">
+                      {spoken.target}
+                    </p>
+                    {spoken.translit ? (
+                      <p className="text-[13px] text-ink-soft">{spoken.translit}</p>
+                    ) : null}
+                  </div>
+                ) : null}
                 {/* Names are very often built from ordinary words. Saying so is
                     the difference between a learner thinking the app got it
                     wrong and them understanding why a word for "king" is
