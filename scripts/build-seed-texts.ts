@@ -5,7 +5,7 @@
  *
  * Run: pnpm build:texts (after pnpm build:lexicon)
  */
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import {
   CONTENT_FORMAT_VERSION,
@@ -196,4 +196,30 @@ for (const doc of docs) {
 }
 // Report what was actually written, not what was read: the two differed
 // silently for as long as duplicate slugs went unchecked.
-console.log(`wrote ${docs.length} seed texts to content/texts/seed/`);
+/**
+ * Remove built texts whose source entry is gone.
+ *
+ * This script only ever wrote files. A text renamed, re-levelled or deleted in
+ * the source left its old JSON on disk, and every one of those is still a real
+ * text as far as the app is concerned: it is loaded, offered to learners, and
+ * counted by every content report. Twenty-one stale texts survived a
+ * re-levelling this way, so the corpus held 131 files for 110 sources and the
+ * validator dutifully checked all 131.
+ *
+ * Deleting is safe here in a way it is not for lexicon entries: `user_texts`
+ * keys on the text id, so a removed text loses its reading history - which is
+ * the same thing that happens when a text is renamed, and is the reason the
+ * build refuses duplicate slugs rather than letting ids churn.
+ */
+const written = new Set(docs.map((d) => `${d.id}.json`));
+let removed = 0;
+for (const file of readdirSync(outDir)) {
+  if (!file.endsWith(".json") || written.has(file)) continue;
+  unlinkSync(join(outDir, file));
+  removed++;
+}
+
+console.log(
+  `wrote ${docs.length} seed texts to content/texts/seed/` +
+    (removed > 0 ? `, removed ${removed} with no source entry` : ""),
+);

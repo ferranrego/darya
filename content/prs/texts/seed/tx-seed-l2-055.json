@@ -1,0 +1,203 @@
+{
+  "id": "tx-seed-l2-055",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "لباس",
+  "titleTranslit": "libās",
+  "titleEn": "Clothes",
+  "sentences": [
+    {
+      "target": "من لباس گرم می‌پوشم.",
+      "translit": "man libās-e garm mēpōsham.",
+      "en": "I wear warm clothes.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "می‌پوشم",
+          "lexemeId": "lx-0231"
+        }
+      ]
+    },
+    {
+      "target": "امروز هوا بسیار سرد است.",
+      "translit": "emrōz hawā bisyār sard ast.",
+      "en": "Today the weather is very cold.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "لباس کهنه من تنگ است.",
+      "translit": "libās-e kuhna-ye man tang ast.",
+      "en": "My old clothes are tight.",
+      "tokens": [
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "تنگ",
+          "lexemeId": "lx-0656"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "خواهر من لباس نو می‌خرد.",
+      "translit": "khāhar-e man libās-e naw mēkharad.",
+      "en": "My sister buys new clothes.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌خرد",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "رنگ این لباس سرخ است.",
+      "translit": "rang-e īn libās surkh ast.",
+      "en": "The color of these clothes is red.",
+      "tokens": [
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من لباس را تیز می‌پوشم.",
+      "translit": "man libās rā tēz mēpōsham.",
+      "en": "I put the clothes on quickly.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "می‌پوشم",
+          "lexemeId": "lx-0231"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0043",
+    "lx-0054",
+    "lx-0067",
+    "lx-0068",
+    "lx-0071",
+    "lx-0072",
+    "lx-0126",
+    "lx-0141",
+    "lx-0142",
+    "lx-0167",
+    "lx-0205",
+    "lx-0230",
+    "lx-0231",
+    "lx-0656",
+    "lx-6071"
+  ],
+  "newWords": [
+    "lx-0656"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "present-me",
+    "ezafa-possession",
+    "object-ra",
+    "negation"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 55
+}

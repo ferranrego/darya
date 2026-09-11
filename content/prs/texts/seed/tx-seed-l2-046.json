@@ -1,7 +1,7 @@
 {
-  "id": "tx-seed-l1-039",
+  "id": "tx-seed-l2-046",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "خواهر و برادر",
   "titleTranslit": "khāhar wa barādar",
   "titleEn": "Sister and brother",
@@ -42,14 +42,10 @@
       ]
     },
     {
-      "target": "نام خواهر من مقبول است.",
-      "translit": "nām-e khāhar-e man maqbūl ast.",
-      "en": "My sister's name is beautiful.",
+      "target": "خواهر من یک دختر خورد است.",
+      "translit": "khāhar-e man yak dukhtar-e khurd ast.",
+      "en": "My sister is a little girl.",
       "tokens": [
-        {
-          "surface": "نام",
-          "lexemeId": "lx-0062"
-        },
         {
           "surface": "خواهر",
           "lexemeId": "lx-0054"
@@ -57,25 +53,6 @@
         {
           "surface": "من",
           "lexemeId": "lx-0011"
-        },
-        {
-          "surface": "مقبول",
-          "lexemeId": "lx-0073"
-        },
-        {
-          "surface": "است",
-          "lexemeId": "lx-0010"
-        }
-      ]
-    },
-    {
-      "target": "او یک دختر خورد است.",
-      "translit": "ō yak dukhtar-e khurd ast.",
-      "en": "She is a little girl.",
-      "tokens": [
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
         },
         {
           "surface": "یک",
@@ -154,6 +131,33 @@
       ]
     },
     {
+      "target": "او یک زن مهربان است.",
+      "translit": "ō yak zan-e mehrabān ast.",
+      "en": "She is a kind woman.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "زن",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
       "target": "ما هر شب با هم نان می‌خوریم.",
       "translit": "mā har shab bā ham nān mēkhurēm.",
       "en": "We eat together every night.",
@@ -187,37 +191,6 @@
           "lexemeId": "lx-0091"
         }
       ]
-    },
-    {
-      "target": "فردا خواهر من لباس نو می‌خرد.",
-      "translit": "fardā khāhar-e man libās-e naw mēkharad.",
-      "en": "Tomorrow my sister will buy new clothes.",
-      "tokens": [
-        {
-          "surface": "فردا",
-          "lexemeId": "lx-0044"
-        },
-        {
-          "surface": "خواهر",
-          "lexemeId": "lx-0054"
-        },
-        {
-          "surface": "من",
-          "lexemeId": "lx-0011"
-        },
-        {
-          "surface": "لباس",
-          "lexemeId": "lx-0230"
-        },
-        {
-          "surface": "نو",
-          "lexemeId": "lx-0067"
-        },
-        {
-          "surface": "می‌خرد",
-          "lexemeId": "lx-0205"
-        }
-      ]
     }
   ],
   "vocabUsed": [
@@ -231,33 +204,33 @@
     "lx-0025",
     "lx-0038",
     "lx-0041",
-    "lx-0044",
     "lx-0053",
     "lx-0054",
     "lx-0056",
     "lx-0061",
-    "lx-0062",
     "lx-0066",
-    "lx-0067",
-    "lx-0073",
     "lx-0078",
     "lx-0091",
     "lx-0095",
     "lx-0097",
     "lx-0150",
     "lx-0166",
-    "lx-0205",
-    "lx-0230"
+    "lx-0256"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-0056",
+    "lx-0061",
+    "lx-0066"
+  ],
   "questions": [],
   "grammarPoints": [
+    "present-me",
     "ezafa-possession",
-    "dashtan-numbers",
-    "present-me"
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 39
+  "seq": 46
 }

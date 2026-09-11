@@ -1,7 +1,7 @@
 {
-  "id": "tx-seed-l1-058",
+  "id": "tx-seed-l2-065",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "دختر خورد",
   "titleTranslit": "dukhtar-e khurd",
   "titleEn": "The little girl",
@@ -131,52 +131,9 @@
       ]
     },
     {
-      "target": "او به من گفت که مکتب را دوست دارد.",
-      "translit": "ō ba man guft ki maktab rā dōst dārad.",
-      "en": "She told me she likes school.",
-      "tokens": [
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
-        },
-        {
-          "surface": "به",
-          "lexemeId": "lx-0003"
-        },
-        {
-          "surface": "من",
-          "lexemeId": "lx-0011"
-        },
-        {
-          "surface": "گفت",
-          "lexemeId": "lx-0093"
-        },
-        {
-          "surface": "که",
-          "lexemeId": "lx-0005"
-        },
-        {
-          "surface": "مکتب",
-          "lexemeId": "lx-0075"
-        },
-        {
-          "surface": "را",
-          "lexemeId": "lx-0007"
-        },
-        {
-          "surface": "دوست",
-          "lexemeId": "lx-0058"
-        },
-        {
-          "surface": "دارد",
-          "lexemeId": "lx-0095"
-        }
-      ]
-    },
-    {
-      "target": "من او را هر روز در سرک می‌بینم.",
-      "translit": "man ō rā har rōz dar sarak mēbīnam.",
-      "en": "I see her in the street every day.",
+      "target": "من او را هر روز می‌بینم.",
+      "translit": "man ō rā har rōz mēbīnam.",
+      "en": "I see her every day.",
       "tokens": [
         {
           "surface": "من",
@@ -199,97 +156,14 @@
           "lexemeId": "lx-0040"
         },
         {
-          "surface": "در",
-          "lexemeId": "lx-0002"
-        },
-        {
-          "surface": "سرک",
-          "lexemeId": "lx-0082"
-        },
-        {
           "surface": "می‌بینم",
           "lexemeId": "lx-0092"
-        }
-      ]
-    },
-    {
-      "target": "او هنوز مکتب می‌رود.",
-      "translit": "ō hanōz maktab mērawad.",
-      "en": "She still goes to school.",
-      "tokens": [
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
-        },
-        {
-          "surface": "هنوز",
-          "lexemeId": "lx-0304"
-        },
-        {
-          "surface": "مکتب",
-          "lexemeId": "lx-0075"
-        },
-        {
-          "surface": "می‌رود",
-          "lexemeId": "lx-0089"
-        }
-      ]
-    },
-    {
-      "target": "معلم او بسیار مهربان است.",
-      "translit": "mu'allem-e ō bisyār mehrabān ast.",
-      "en": "Her teacher is very kind.",
-      "tokens": [
-        {
-          "surface": "معلم",
-          "lexemeId": "lx-0078"
-        },
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
-        },
-        {
-          "surface": "بسیار",
-          "lexemeId": "lx-0167"
-        },
-        {
-          "surface": "مهربان",
-          "lexemeId": "lx-0256"
-        },
-        {
-          "surface": "است",
-          "lexemeId": "lx-0010"
-        }
-      ]
-    },
-    {
-      "target": "اینجا همه مهربان هستند.",
-      "translit": "īnjā hama mehrabān hastand.",
-      "en": "Everyone here is kind.",
-      "tokens": [
-        {
-          "surface": "اینجا",
-          "lexemeId": "lx-0174"
-        },
-        {
-          "surface": "همه",
-          "lexemeId": "lx-0165"
-        },
-        {
-          "surface": "مهربان",
-          "lexemeId": "lx-0256"
-        },
-        {
-          "surface": "هستند",
-          "lexemeId": "lx-0096"
         }
       ]
     }
   ],
   "vocabUsed": [
     "lx-0002",
-    "lx-0003",
-    "lx-0005",
     "lx-0006",
     "lx-0007",
     "lx-0010",
@@ -299,41 +173,32 @@
     "lx-0040",
     "lx-0051",
     "lx-0056",
-    "lx-0058",
     "lx-0061",
     "lx-0062",
     "lx-0066",
-    "lx-0075",
-    "lx-0078",
     "lx-0082",
-    "lx-0089",
     "lx-0092",
-    "lx-0093",
     "lx-0094",
-    "lx-0095",
-    "lx-0096",
     "lx-0097",
     "lx-0124",
-    "lx-0165",
     "lx-0166",
     "lx-0167",
-    "lx-0174",
     "lx-0191",
     "lx-0256",
-    "lx-0304",
     "lx-3011"
   ],
   "newWords": [
-    "lx-3011"
+    "lx-0124"
   ],
   "questions": [],
   "grammarPoints": [
-    "ezafa-possession",
     "present-me",
-    "object-ra"
+    "ezafa-possession",
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 58
+  "seq": 65
 }

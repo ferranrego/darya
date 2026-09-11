@@ -1,15 +1,15 @@
 {
-  "id": "tx-seed-l1-055",
+  "id": "tx-seed-l2-062",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "یک ماه",
   "titleTranslit": "yak māh",
   "titleEn": "One month",
   "sentences": [
     {
-      "target": "یک ماه چهار هفته است.",
-      "translit": "yak māh chār hafta ast.",
-      "en": "One month is four weeks.",
+      "target": "یک ماه چهار هفته دارد.",
+      "translit": "yak māh chār hafta dārad.",
+      "en": "One month has four weeks.",
       "tokens": [
         {
           "surface": "یک",
@@ -28,8 +28,8 @@
           "lexemeId": "lx-0050"
         },
         {
-          "surface": "است",
-          "lexemeId": "lx-0010"
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
         }
       ]
     },
@@ -61,9 +61,9 @@
       ]
     },
     {
-      "target": "حالا ماه نو شروع شد.",
-      "translit": "hālā māh-e naw shurū' shud.",
-      "en": "Now the new month has started.",
+      "target": "حالا ماه نو است.",
+      "translit": "hālā māh-e naw ast.",
+      "en": "Now it is a new month.",
       "tokens": [
         {
           "surface": "حالا",
@@ -78,20 +78,20 @@
           "lexemeId": "lx-0067"
         },
         {
-          "surface": "شروع",
-          "lexemeId": "lx-0215"
-        },
-        {
-          "surface": "شد",
-          "lexemeId": "lx-0149"
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     },
     {
-      "target": "این هفته من کار زیاد دارم.",
-      "translit": "īn hafta man kār-e ziyād dāram.",
-      "en": "This week I have a lot of work.",
+      "target": "من این هفته کار زیاد دارم.",
+      "translit": "man īn hafta kār ziyād dāram.",
+      "en": "I have a lot of work this week.",
       "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
         {
           "surface": "این",
           "lexemeId": "lx-0006"
@@ -99,10 +99,6 @@
         {
           "surface": "هفته",
           "lexemeId": "lx-0050"
-        },
-        {
-          "surface": "من",
-          "lexemeId": "lx-0011"
         },
         {
           "surface": "کار",
@@ -119,68 +115,10 @@
       ]
     },
     {
-      "target": "پس این ماه مهم است.",
-      "translit": "pas īn māh muhim ast.",
-      "en": "So this month is important.",
+      "target": "زندگی اینجا خوب است.",
+      "translit": "zindagī īnjā khōb ast.",
+      "en": "Life here is good.",
       "tokens": [
-        {
-          "surface": "پس",
-          "lexemeId": "lx-0172"
-        },
-        {
-          "surface": "این",
-          "lexemeId": "lx-0006"
-        },
-        {
-          "surface": "ماه",
-          "lexemeId": "lx-0049"
-        },
-        {
-          "surface": "مهم",
-          "lexemeId": "lx-6155"
-        },
-        {
-          "surface": "است",
-          "lexemeId": "lx-0010"
-        }
-      ]
-    },
-    {
-      "target": "زندگی هر سال تیزتر می‌شود.",
-      "translit": "zindagī har sāl tēztar mēshawad.",
-      "en": "Life gets faster every year.",
-      "tokens": [
-        {
-          "surface": "زندگی",
-          "lexemeId": "lx-0150"
-        },
-        {
-          "surface": "هر",
-          "lexemeId": "lx-0166"
-        },
-        {
-          "surface": "سال",
-          "lexemeId": "lx-0048"
-        },
-        {
-          "surface": "تیزتر",
-          "lexemeId": "lx-6071"
-        },
-        {
-          "surface": "می‌شود",
-          "lexemeId": "lx-0149"
-        }
-      ]
-    },
-    {
-      "target": "اما زندگی اینجا خوب است.",
-      "translit": "ammā zindagī īnjā khōb ast.",
-      "en": "But life here is good.",
-      "tokens": [
-        {
-          "surface": "اما",
-          "lexemeId": "lx-0168"
-        },
         {
           "surface": "زندگی",
           "lexemeId": "lx-0150"
@@ -215,28 +153,20 @@
     "lx-0069",
     "lx-0079",
     "lx-0095",
-    "lx-0149",
     "lx-0150",
-    "lx-0166",
-    "lx-0168",
-    "lx-0172",
     "lx-0174",
-    "lx-0215",
-    "lx-6071",
-    "lx-6076",
-    "lx-6155"
+    "lx-6076"
   ],
-  "newWords": [
-    "lx-0215"
-  ],
+  "newWords": [],
   "questions": [],
   "grammarPoints": [
-    "dashtan-numbers",
-    "ezafa-adjectives",
-    "present-me"
+    "present-me",
+    "ezafa-possession",
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 55
+  "seq": 62
 }

@@ -21,6 +21,7 @@ import {
 
 import { levelVocabulary } from "../src/lib/content/level-vocabulary.ts";
 import { isRuledOut, isTeachable } from "../src/lib/content/teachability.ts";
+import { checkShape } from "../src/lib/content/text-checks.ts";
 import { isContentWord } from "../src/lib/content/word-selection.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
 import { bareEzafeAfterVowel, isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
@@ -526,6 +527,8 @@ const grammarPointIds = new Set<string>();
 // --- Seed texts ------------------------------------------------------------
 const seedDir = join(root, "texts", "seed");
 const seedIndex = lexicon ? buildIndex(lexicon.entries) : null;
+const levelsById = new Map((levels?.levels ?? []).map((l) => [l.id, l]));
+const lexiconById = new Map((lexicon?.entries ?? []).map((e) => [e.id, e]));
 if (existsSync(seedDir)) {
   const files = readdirSync(seedDir).filter((f) => f.endsWith(".json"));
   let ok = 0;
@@ -574,6 +577,49 @@ if (existsSync(seedDir)) {
     }
     for (const v of doc.vocabUsed) {
       if (!lexemeIds.has(v)) fail(`${f}: vocabUsed references missing lexeme ${v}`);
+    }
+
+    /**
+     * The level spec was never checked against the texts.
+     *
+     * `levels.json` states `maxSentenceWords`, `sentenceRange` and `freqBands`
+     * per level, and nothing read any of them for a seed text - `checkShape`
+     * existed and was only ever applied to generated ones. So a batch of new
+     * L1 texts could carry nine-word sentences and vocabulary five bands out
+     * of range and pass green, which is exactly what happened: texts 001-037
+     * obey the spec and a later batch did not, leaving L1 as two courses.
+     *
+     * `checkShape` is reused rather than reimplemented, so the rule a seed
+     * text is held to and the rule a generated one is held to cannot drift.
+     * Length fails the build; `text-checks.ts` says why - "a sentence past the
+     * ceiling is not readable at the level, which is the entire point of the
+     * ceiling". Sentence count and frequency band warn instead: both have
+     * violations in content that shipped long ago, and turning those red would
+     * only teach the next person to silence the check.
+     */
+    const spec = levelsById.get(doc.level);
+    if (spec) {
+      for (const defect of checkShape(doc, spec)) {
+        if (defect.kind === "sentence-length") fail(`${f}: ${defect.message}`);
+        else console.warn(`⚠ ${f}: ${defect.message}`);
+      }
+      const bands = new Set(spec.freqBands ?? []);
+      const outOfBand = new Set<string>();
+      for (const sentence of doc.sentences) {
+        for (const token of sentence.tokens) {
+          if (!token.lexemeId) continue;
+          const entry = lexiconById.get(token.lexemeId);
+          if (entry && bands.size > 0 && !bands.has(entry.freqBand)) {
+            outOfBand.add(`${token.surface} (band ${entry.freqBand})`);
+          }
+        }
+      }
+      if (outOfBand.size > 0) {
+        console.warn(
+          `⚠ ${f}: ${outOfBand.size} word(s) outside ${doc.level}'s bands: ` +
+            `${[...outOfBand].slice(0, 4).join(", ")}`,
+        );
+      }
     }
 
     /**

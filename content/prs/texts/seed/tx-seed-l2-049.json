@@ -1,7 +1,7 @@
 {
-  "id": "tx-seed-l1-042",
+  "id": "tx-seed-l2-049",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "هوای کابل",
   "titleTranslit": "hawā-ye kābul",
   "titleEn": "Kabul weather",
@@ -57,89 +57,8 @@
       ]
     },
     {
-      "target": "من لباس گرم پوشیدم.",
-      "translit": "man libās-e garm pōshīdam.",
-      "en": "I wore warm clothes.",
-      "tokens": [
-        {
-          "surface": "من",
-          "lexemeId": "lx-0011"
-        },
-        {
-          "surface": "لباس",
-          "lexemeId": "lx-0230"
-        },
-        {
-          "surface": "گرم",
-          "lexemeId": "lx-0071"
-        },
-        {
-          "surface": "پوشیدم",
-          "lexemeId": "lx-0231"
-        }
-      ]
-    },
-    {
-      "target": "صبح زود برخاستم و به مکتب رفتم.",
-      "translit": "subh zūd barkhāstam wa ba maktab raftam.",
-      "en": "I got up early and went to school.",
-      "tokens": [
-        {
-          "surface": "صبح",
-          "lexemeId": "lx-0042"
-        },
-        {
-          "surface": "زود",
-          "lexemeId": "lx-0356"
-        },
-        {
-          "surface": "برخاستم",
-          "lexemeId": "lx-0363"
-        },
-        {
-          "surface": "و",
-          "lexemeId": "lx-0001"
-        },
-        {
-          "surface": "به",
-          "lexemeId": "lx-0003"
-        },
-        {
-          "surface": "مکتب",
-          "lexemeId": "lx-0075"
-        },
-        {
-          "surface": "رفتم",
-          "lexemeId": "lx-0089"
-        }
-      ]
-    },
-    {
-      "target": "شب هوا سردتر می‌شود.",
-      "translit": "shab hawā sardtar mēshawad.",
-      "en": "At night the weather gets colder.",
-      "tokens": [
-        {
-          "surface": "شب",
-          "lexemeId": "lx-0041"
-        },
-        {
-          "surface": "هوا",
-          "lexemeId": "lx-0126"
-        },
-        {
-          "surface": "سردتر",
-          "lexemeId": "lx-0072"
-        },
-        {
-          "surface": "می‌شود",
-          "lexemeId": "lx-0149"
-        }
-      ]
-    },
-    {
       "target": "این کشور کوه زیاد دارد.",
-      "translit": "īn kishwar kōh-e ziyād dārad.",
+      "translit": "īn kishwar kōh ziyād dārad.",
       "en": "This country has many mountains.",
       "tokens": [
         {
@@ -216,50 +135,39 @@
     }
   ],
   "vocabUsed": [
-    "lx-0001",
-    "lx-0003",
     "lx-0006",
     "lx-0007",
     "lx-0010",
     "lx-0011",
-    "lx-0041",
-    "lx-0042",
     "lx-0043",
     "lx-0046",
     "lx-0058",
     "lx-0069",
-    "lx-0071",
     "lx-0072",
-    "lx-0075",
     "lx-0085",
     "lx-0086",
-    "lx-0089",
     "lx-0095",
     "lx-0126",
     "lx-0128",
     "lx-0137",
-    "lx-0149",
     "lx-0161",
     "lx-0167",
     "lx-0227",
-    "lx-0230",
-    "lx-0231",
-    "lx-0241",
-    "lx-0356",
-    "lx-0363"
+    "lx-0241"
   ],
   "newWords": [
-    "lx-0161",
-    "lx-0227"
+    "lx-0085",
+    "lx-0137"
   ],
   "questions": [],
   "grammarPoints": [
-    "prepositions",
-    "ezafa-adjectives",
-    "present-me"
+    "present-me",
+    "ezafa-possession",
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 42
+  "seq": 49
 }

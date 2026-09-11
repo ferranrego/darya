@@ -1,7 +1,7 @@
 {
-  "id": "tx-seed-l1-053",
+  "id": "tx-seed-l2-060",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "شیر و گوشت",
   "titleTranslit": "shīr wa gōsht",
   "titleEn": "Milk and meat",
@@ -39,7 +39,7 @@
     },
     {
       "target": "من شیر زیاد می‌خورم.",
-      "translit": "man shīr-e ziyād mēkhuram.",
+      "translit": "man shīr ziyād mēkhuram.",
       "en": "I drink a lot of milk.",
       "tokens": [
         {
@@ -84,14 +84,10 @@
       ]
     },
     {
-      "target": "گوشت در بازار قیمت است.",
-      "translit": "gōsht dar bāzār qīmat ast.",
+      "target": "در بازار گوشت قیمت است.",
+      "translit": "dar bāzār gōsht qīmat ast.",
       "en": "Meat is expensive at the bazaar.",
       "tokens": [
-        {
-          "surface": "گوشت",
-          "lexemeId": "lx-0112"
-        },
         {
           "surface": "در",
           "lexemeId": "lx-0002"
@@ -99,6 +95,10 @@
         {
           "surface": "بازار",
           "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
         },
         {
           "surface": "قیمت",
@@ -112,7 +112,7 @@
     },
     {
       "target": "پس ما گوشت کم می‌خریم.",
-      "translit": "pas mā gōsht-e kam mēkharēm.",
+      "translit": "pas mā gōsht kam mēkharēm.",
       "en": "So we buy little meat.",
       "tokens": [
         {
@@ -138,56 +138,13 @@
       ]
     },
     {
-      "target": "شیر و نان چیز خوب است.",
-      "translit": "shīr wa nān chīz-e khōb ast.",
-      "en": "Milk and bread are good things.",
+      "target": "شیر را سر میز می‌مانیم.",
+      "translit": "shīr rā sar-e mēz mēmānēm.",
+      "en": "We put the milk on the table.",
       "tokens": [
         {
           "surface": "شیر",
           "lexemeId": "lx-0117"
-        },
-        {
-          "surface": "و",
-          "lexemeId": "lx-0001"
-        },
-        {
-          "surface": "نان",
-          "lexemeId": "lx-0038"
-        },
-        {
-          "surface": "چیز",
-          "lexemeId": "lx-0164"
-        },
-        {
-          "surface": "خوب",
-          "lexemeId": "lx-0063"
-        },
-        {
-          "surface": "است",
-          "lexemeId": "lx-0010"
-        }
-      ]
-    },
-    {
-      "target": "ما هر روز نان را سر میز می‌مانیم.",
-      "translit": "mā har rōz nān rā sar-e mēz mēmānēm.",
-      "en": "We put the bread on the table every day.",
-      "tokens": [
-        {
-          "surface": "ما",
-          "lexemeId": "lx-0014"
-        },
-        {
-          "surface": "هر",
-          "lexemeId": "lx-0166"
-        },
-        {
-          "surface": "روز",
-          "lexemeId": "lx-0040"
-        },
-        {
-          "surface": "نان",
-          "lexemeId": "lx-0038"
         },
         {
           "surface": "را",
@@ -209,18 +166,14 @@
     }
   ],
   "vocabUsed": [
-    "lx-0001",
     "lx-0002",
     "lx-0007",
     "lx-0010",
     "lx-0011",
     "lx-0014",
-    "lx-0038",
-    "lx-0040",
     "lx-0042",
     "lx-0051",
     "lx-0053",
-    "lx-0063",
     "lx-0069",
     "lx-0070",
     "lx-0091",
@@ -229,7 +182,6 @@
     "lx-0117",
     "lx-0122",
     "lx-0133",
-    "lx-0164",
     "lx-0166",
     "lx-0172",
     "lx-0205",
@@ -239,16 +191,17 @@
     "lx-6132"
   ],
   "newWords": [
-    "lx-6043"
+    "lx-6132"
   ],
   "questions": [],
   "grammarPoints": [
     "present-me",
-    "ezafa-adjectives",
-    "prepositions"
+    "ezafa-possession",
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 53
+  "seq": 60
 }

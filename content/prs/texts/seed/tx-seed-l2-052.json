@@ -1,7 +1,7 @@
 {
-  "id": "tx-seed-l1-045",
+  "id": "tx-seed-l2-052",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "بازی ما",
   "titleTranslit": "bāzī-ye mā",
   "titleEn": "Our game",
@@ -100,64 +100,6 @@
       ]
     },
     {
-      "target": "من زیاد می‌دوم اما او کم می‌دود.",
-      "translit": "man ziyād mēdawam ammā ō kam mēdawad.",
-      "en": "I run a lot but he runs little.",
-      "tokens": [
-        {
-          "surface": "من",
-          "lexemeId": "lx-0011"
-        },
-        {
-          "surface": "زیاد",
-          "lexemeId": "lx-0069"
-        },
-        {
-          "surface": "می‌دوم",
-          "lexemeId": "lx-0376"
-        },
-        {
-          "surface": "اما",
-          "lexemeId": "lx-0168"
-        },
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
-        },
-        {
-          "surface": "کم",
-          "lexemeId": "lx-0070"
-        },
-        {
-          "surface": "می‌دود",
-          "lexemeId": "lx-0376"
-        }
-      ]
-    },
-    {
-      "target": "او تیز دویده نمی‌تواند.",
-      "translit": "ō tēz dawīda namētawānad.",
-      "en": "He cannot run fast.",
-      "tokens": [
-        {
-          "surface": "او",
-          "lexemeId": "lx-0012"
-        },
-        {
-          "surface": "تیز",
-          "lexemeId": "lx-6071"
-        },
-        {
-          "surface": "دویده",
-          "lexemeId": "lx-0376"
-        },
-        {
-          "surface": "نمی‌تواند",
-          "lexemeId": "lx-0158"
-        }
-      ]
-    },
-    {
       "target": "من تیز می‌دوم.",
       "translit": "man tēz mēdawam.",
       "en": "I run fast.",
@@ -177,99 +119,58 @@
       ]
     },
     {
-      "target": "پس ما در خانه بازی می‌کنیم.",
-      "translit": "pas mā dar khāna bāzī mēkunēm.",
-      "en": "So we play at home.",
+      "target": "او تیز نمی‌دود.",
+      "translit": "ō tēz namēdawad.",
+      "en": "He does not run fast.",
       "tokens": [
         {
-          "surface": "پس",
-          "lexemeId": "lx-0172"
+          "surface": "او",
+          "lexemeId": "lx-0012"
         },
         {
-          "surface": "ما",
-          "lexemeId": "lx-0014"
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
         },
         {
-          "surface": "در",
-          "lexemeId": "lx-0002"
-        },
-        {
-          "surface": "خانه",
-          "lexemeId": "lx-0036"
-        },
-        {
-          "surface": "بازی",
-          "lexemeId": "lx-0191"
-        },
-        {
-          "surface": "می‌کنیم",
-          "lexemeId": "lx-0097"
-        }
-      ]
-    },
-    {
-      "target": "دیروز صبح زود برخاستیم.",
-      "translit": "dīrōz subh zūd barkhāstēm.",
-      "en": "Yesterday morning we got up early.",
-      "tokens": [
-        {
-          "surface": "دیروز",
-          "lexemeId": "lx-0045"
-        },
-        {
-          "surface": "صبح",
-          "lexemeId": "lx-0042"
-        },
-        {
-          "surface": "زود",
-          "lexemeId": "lx-0356"
-        },
-        {
-          "surface": "برخاستیم",
-          "lexemeId": "lx-0363"
+          "surface": "نمی‌دود",
+          "lexemeId": "lx-0376"
         }
       ]
     }
   ],
   "vocabUsed": [
     "lx-0001",
-    "lx-0002",
     "lx-0008",
     "lx-0011",
     "lx-0012",
     "lx-0014",
     "lx-0024",
-    "lx-0036",
     "lx-0040",
-    "lx-0042",
-    "lx-0045",
     "lx-0053",
     "lx-0058",
-    "lx-0069",
-    "lx-0070",
     "lx-0096",
     "lx-0097",
     "lx-0107",
-    "lx-0158",
     "lx-0166",
     "lx-0167",
-    "lx-0168",
-    "lx-0172",
     "lx-0191",
-    "lx-0356",
-    "lx-0363",
     "lx-0376",
     "lx-6071"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-0107",
+    "lx-0376",
+    "lx-6071"
+  ],
   "questions": [],
   "grammarPoints": [
     "present-me",
-    "negation",
-    "prepositions"
+    "ezafa-possession",
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 45
+  "seq": 52
 }

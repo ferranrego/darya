@@ -1,16 +1,20 @@
 {
-  "id": "tx-seed-l1-040",
+  "id": "tx-seed-l2-047",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "صبح و شب",
   "titleTranslit": "subh wa shab",
   "titleEn": "Morning and night",
   "sentences": [
     {
-      "target": "امروز صبح زود برخاستم.",
-      "translit": "emrōz subh zūd barkhāstam.",
-      "en": "This morning I got up early.",
+      "target": "من امروز صبح کار زیاد دارم.",
+      "translit": "man emrōz subh kār ziyād dāram.",
+      "en": "I have a lot of work this morning.",
       "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
         {
           "surface": "امروز",
           "lexemeId": "lx-0043"
@@ -20,23 +24,31 @@
           "lexemeId": "lx-0042"
         },
         {
-          "surface": "زود",
-          "lexemeId": "lx-0356"
+          "surface": "کار",
+          "lexemeId": "lx-0079"
         },
         {
-          "surface": "برخاستم",
-          "lexemeId": "lx-0363"
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
         }
       ]
     },
     {
-      "target": "حالا چای می‌خورم.",
-      "translit": "hālā chāy mēkhuram.",
+      "target": "حالا من چای می‌خورم.",
+      "translit": "hālā man chāy mēkhuram.",
       "en": "Now I am drinking tea.",
       "tokens": [
         {
           "surface": "حالا",
           "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
         },
         {
           "surface": "چای",
@@ -49,9 +61,9 @@
       ]
     },
     {
-      "target": "این هفته کار زیاد دارم.",
-      "translit": "īn hafta kār-e ziyād dāram.",
-      "en": "This week I have a lot of work.",
+      "target": "این هفته کار من زیاد است.",
+      "translit": "īn hafta kār-e man ziyād ast.",
+      "en": "This week my work is a lot.",
       "tokens": [
         {
           "surface": "این",
@@ -66,12 +78,16 @@
           "lexemeId": "lx-0079"
         },
         {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
           "surface": "زیاد",
           "lexemeId": "lx-0069"
         },
         {
-          "surface": "دارم",
-          "lexemeId": "lx-0095"
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     },
@@ -99,17 +115,25 @@
       ]
     },
     {
-      "target": "پس امروز مانده هستم.",
-      "translit": "pas emrōz mānda hastam.",
-      "en": "So today I am tired.",
+      "target": "پس من هر روز مانده هستم.",
+      "translit": "pas man har rōz mānda hastam.",
+      "en": "So I am tired every day.",
       "tokens": [
         {
           "surface": "پس",
           "lexemeId": "lx-0172"
         },
         {
-          "surface": "امروز",
-          "lexemeId": "lx-0043"
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
         },
         {
           "surface": "مانده",
@@ -122,66 +146,42 @@
       ]
     },
     {
-      "target": "فردا صبح دوباره کار دارم.",
-      "translit": "fardā subh dōbāra kār dāram.",
-      "en": "Tomorrow morning I have work again.",
+      "target": "چای من سر میز است.",
+      "translit": "chāy-e man sar-e mēz ast.",
+      "en": "My tea is on the table.",
       "tokens": [
         {
-          "surface": "فردا",
-          "lexemeId": "lx-0044"
+          "surface": "چای",
+          "lexemeId": "lx-0039"
         },
         {
-          "surface": "صبح",
-          "lexemeId": "lx-0042"
+          "surface": "من",
+          "lexemeId": "lx-0011"
         },
         {
-          "surface": "دوباره",
-          "lexemeId": "lx-0315"
+          "surface": "سر",
+          "lexemeId": "lx-0122"
         },
         {
-          "surface": "کار",
-          "lexemeId": "lx-0079"
+          "surface": "میز",
+          "lexemeId": "lx-6043"
         },
         {
-          "surface": "دارم",
-          "lexemeId": "lx-0095"
-        }
-      ]
-    },
-    {
-      "target": "دیروز هم زود برخاستم.",
-      "translit": "dīrōz ham zūd barkhāstam.",
-      "en": "Yesterday I also got up early.",
-      "tokens": [
-        {
-          "surface": "دیروز",
-          "lexemeId": "lx-0045"
-        },
-        {
-          "surface": "هم",
-          "lexemeId": "lx-0024"
-        },
-        {
-          "surface": "زود",
-          "lexemeId": "lx-0356"
-        },
-        {
-          "surface": "برخاستم",
-          "lexemeId": "lx-0363"
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     }
   ],
   "vocabUsed": [
     "lx-0006",
+    "lx-0010",
     "lx-0011",
-    "lx-0024",
     "lx-0039",
+    "lx-0040",
     "lx-0041",
     "lx-0042",
     "lx-0043",
-    "lx-0044",
-    "lx-0045",
     "lx-0046",
     "lx-0050",
     "lx-0069",
@@ -191,24 +191,28 @@
     "lx-0095",
     "lx-0096",
     "lx-0108",
+    "lx-0122",
     "lx-0159",
+    "lx-0166",
     "lx-0172",
-    "lx-0315",
-    "lx-0356",
-    "lx-0363"
+    "lx-6043"
   ],
   "newWords": [
-    "lx-0172",
-    "lx-0315"
+    "lx-0042",
+    "lx-0108",
+    "lx-0122",
+    "lx-0159",
+    "lx-6043"
   ],
   "questions": [],
   "grammarPoints": [
     "present-me",
-    "simple-past",
-    "prepositions"
+    "ezafa-possession",
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 40
+  "seq": 47
 }

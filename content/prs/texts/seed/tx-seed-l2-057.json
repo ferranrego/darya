@@ -1,7 +1,7 @@
 {
-  "id": "tx-seed-l1-050",
+  "id": "tx-seed-l2-057",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "زبان دری",
   "titleTranslit": "zabān-e darī",
   "titleEn": "The Dari language",
@@ -65,9 +65,9 @@
       ]
     },
     {
-      "target": "شاگردان دری می‌نویسند و می‌خوانند.",
-      "translit": "shāgerdān darī mēnawīsand wa mēkhānand.",
-      "en": "The students write and read Dari.",
+      "target": "شاگردان دری می‌خوانند و می‌نویسند.",
+      "translit": "shāgerdān darī mēkhānand wa mēnawīsand.",
+      "en": "The students read and write Dari.",
       "tokens": [
         {
           "surface": "شاگردان",
@@ -78,31 +78,27 @@
           "lexemeId": "lx-0087"
         },
         {
-          "surface": "می‌نویسند",
-          "lexemeId": "lx-0155"
+          "surface": "می‌خوانند",
+          "lexemeId": "lx-0098"
         },
         {
           "surface": "و",
           "lexemeId": "lx-0001"
         },
         {
-          "surface": "می‌خوانند",
-          "lexemeId": "lx-0098"
+          "surface": "می‌نویسند",
+          "lexemeId": "lx-0155"
         }
       ]
     },
     {
-      "target": "من هنوز دری را خوب نمی‌دانم.",
-      "translit": "man hanōz darī rā khōb namēdānam.",
-      "en": "I still do not know Dari well.",
+      "target": "من دری را خوب نمی‌دانم.",
+      "translit": "man darī rā khōb namēdānam.",
+      "en": "I do not know Dari well.",
       "tokens": [
         {
           "surface": "من",
           "lexemeId": "lx-0011"
-        },
-        {
-          "surface": "هنوز",
-          "lexemeId": "lx-0304"
         },
         {
           "surface": "دری",
@@ -123,37 +119,10 @@
       ]
     },
     {
-      "target": "من هنوز شاگرد هستم.",
-      "translit": "man hanōz shāgerd hastam.",
-      "en": "I am still a student.",
+      "target": "هر هفته یک چیز نو یاد می‌گیرم.",
+      "translit": "har hafta yak chīz-e naw yād mēgīram.",
+      "en": "Every week I learn something new.",
       "tokens": [
-        {
-          "surface": "من",
-          "lexemeId": "lx-0011"
-        },
-        {
-          "surface": "هنوز",
-          "lexemeId": "lx-0304"
-        },
-        {
-          "surface": "شاگرد",
-          "lexemeId": "lx-0077"
-        },
-        {
-          "surface": "هستم",
-          "lexemeId": "lx-0096"
-        }
-      ]
-    },
-    {
-      "target": "اما هر هفته یک چیز نو یاد می‌گیرم.",
-      "translit": "ammā har hafta yak chīz-e naw yād mēgīram.",
-      "en": "But every week I learn something new.",
-      "tokens": [
-        {
-          "surface": "اما",
-          "lexemeId": "lx-0168"
-        },
         {
           "surface": "هر",
           "lexemeId": "lx-0166"
@@ -183,46 +152,10 @@
           "lexemeId": "lx-0153"
         }
       ]
-    },
-    {
-      "target": "معلم می‌گوید که دری زبان مقبول است.",
-      "translit": "mu'allem mēgōyad ki darī zabān-e maqbūl ast.",
-      "en": "The teacher says Dari is a beautiful language.",
-      "tokens": [
-        {
-          "surface": "معلم",
-          "lexemeId": "lx-0078"
-        },
-        {
-          "surface": "می‌گوید",
-          "lexemeId": "lx-0093"
-        },
-        {
-          "surface": "که",
-          "lexemeId": "lx-0005"
-        },
-        {
-          "surface": "دری",
-          "lexemeId": "lx-0087"
-        },
-        {
-          "surface": "زبان",
-          "lexemeId": "lx-0088"
-        },
-        {
-          "surface": "مقبول",
-          "lexemeId": "lx-0073"
-        },
-        {
-          "surface": "است",
-          "lexemeId": "lx-0010"
-        }
-      ]
     }
   ],
   "vocabUsed": [
     "lx-0001",
-    "lx-0005",
     "lx-0007",
     "lx-0010",
     "lx-0011",
@@ -231,36 +164,28 @@
     "lx-0059",
     "lx-0063",
     "lx-0067",
-    "lx-0073",
     "lx-0077",
-    "lx-0078",
     "lx-0085",
     "lx-0087",
     "lx-0088",
-    "lx-0093",
     "lx-0094",
-    "lx-0096",
     "lx-0098",
     "lx-0153",
     "lx-0154",
     "lx-0155",
     "lx-0164",
-    "lx-0166",
-    "lx-0168",
-    "lx-0304"
+    "lx-0166"
   ],
-  "newWords": [
-    "lx-0164"
-  ],
+  "newWords": [],
   "questions": [],
   "grammarPoints": [
-    "object-ra",
     "present-me",
-    "negation",
-    "plural-ha"
+    "ezafa-possession",
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 50
+  "seq": 57
 }

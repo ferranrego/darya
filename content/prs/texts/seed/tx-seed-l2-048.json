@@ -1,7 +1,7 @@
 {
-  "id": "tx-seed-l1-041",
+  "id": "tx-seed-l2-048",
   "formatVersion": "1.5.0",
-  "level": "L1",
+  "level": "L2",
   "titleTarget": "مکتب ما",
   "titleTranslit": "maktab-e mā",
   "titleEn": "Our school",
@@ -42,9 +42,9 @@
       ]
     },
     {
-      "target": "شاگردان هر روز می‌نویسند.",
-      "translit": "shāgerdān har rōz mēnawīsand.",
-      "en": "The students write every day.",
+      "target": "شاگردان هر روز می‌خوانند و می‌نویسند.",
+      "translit": "shāgerdān har rōz mēkhānand wa mēnawīsand.",
+      "en": "The students read and write every day.",
       "tokens": [
         {
           "surface": "شاگردان",
@@ -59,30 +59,15 @@
           "lexemeId": "lx-0040"
         },
         {
+          "surface": "می‌خوانند",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
           "surface": "می‌نویسند",
-          "lexemeId": "lx-0155"
-        }
-      ]
-    },
-    {
-      "target": "دوست من تیز می‌نویسد.",
-      "translit": "dōst-e man tēz mēnawīsad.",
-      "en": "My friend writes fast.",
-      "tokens": [
-        {
-          "surface": "دوست",
-          "lexemeId": "lx-0058"
-        },
-        {
-          "surface": "من",
-          "lexemeId": "lx-0011"
-        },
-        {
-          "surface": "تیز",
-          "lexemeId": "lx-6071"
-        },
-        {
-          "surface": "می‌نویسد",
           "lexemeId": "lx-0155"
         }
       ]
@@ -115,9 +100,9 @@
       ]
     },
     {
-      "target": "معلم به ما یک کتاب نو داد.",
-      "translit": "mu'allem ba mā yak ketāb-e naw dād.",
-      "en": "The teacher gave us a new book.",
+      "target": "معلم به ما یک کتاب نو می‌دهد.",
+      "translit": "mu'allem ba mā yak ketāb-e naw mēdihad.",
+      "en": "The teacher gives us a new book.",
       "tokens": [
         {
           "surface": "معلم",
@@ -144,7 +129,7 @@
           "lexemeId": "lx-0067"
         },
         {
-          "surface": "داد",
+          "surface": "می‌دهد",
           "lexemeId": "lx-0100"
         }
       ]
@@ -181,45 +166,44 @@
       ]
     },
     {
-      "target": "شاگرد خوب هر شب می‌خواند.",
-      "translit": "shāgerd-e khōb har shab mēkhānad.",
-      "en": "A good student reads every night.",
+      "target": "معلم ما بسیار مهربان است.",
+      "translit": "mu'allem-e mā bisyār mehrabān ast.",
+      "en": "Our teacher is very kind.",
       "tokens": [
         {
-          "surface": "شاگرد",
-          "lexemeId": "lx-0077"
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
         },
         {
-          "surface": "خوب",
-          "lexemeId": "lx-0063"
+          "surface": "ما",
+          "lexemeId": "lx-0014"
         },
         {
-          "surface": "هر",
-          "lexemeId": "lx-0166"
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
         },
         {
-          "surface": "شب",
-          "lexemeId": "lx-0041"
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
         },
         {
-          "surface": "می‌خواند",
-          "lexemeId": "lx-0098"
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     }
   ],
   "vocabUsed": [
+    "lx-0001",
     "lx-0003",
     "lx-0006",
     "lx-0007",
+    "lx-0010",
     "lx-0011",
     "lx-0014",
     "lx-0025",
     "lx-0040",
-    "lx-0041",
-    "lx-0058",
     "lx-0062",
-    "lx-0063",
     "lx-0067",
     "lx-0074",
     "lx-0077",
@@ -232,24 +216,23 @@
     "lx-0154",
     "lx-0155",
     "lx-0166",
+    "lx-0167",
     "lx-0178",
     "lx-0216",
-    "lx-6071"
+    "lx-0256"
   ],
   "newWords": [
-    "lx-0087",
-    "lx-0088",
-    "lx-6071"
+    "lx-0155"
   ],
   "questions": [],
   "grammarPoints": [
     "present-me",
-    "object-ra",
     "ezafa-possession",
-    "plural-ha"
+    "object-ra",
+    "negation"
   ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
-  "seq": 41
+  "seq": 48
 }
