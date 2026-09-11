@@ -2,14 +2,16 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
 import { getInitialSeed, spawnRelatedWords, scoreAssessment, type AssessmentWord } from "@/lib/assessment";
+import { placementControls } from "@/lib/content/load";
+import type { PlacementControl } from "@/lib/content/schema";
 import { lexicon, levelLabel } from "@/lib/content/load";
 import { detectTimezone } from "@/lib/db/activity";
 import { updateProfile } from "@/lib/db/profiles";
-import { seedKnownWords } from "@/lib/db/words";
+import { seedKnownWords, seedLearningWords } from "@/lib/db/words";
 import { useSupabase } from "@/lib/queries/hooks";
 import { profile as lang } from "@/lib/lang";
 
@@ -21,6 +23,20 @@ const stepMotion = {
   exit: { opacity: 0, y: -12 },
   transition: { duration: 0.25, ease: "easeOut" as const },
 };
+
+/** One tile in the placement grid: a real word, or an invented control. */
+type GridItem =
+  | { kind: "word"; word: AssessmentWord }
+  | { kind: "control"; control: PlacementControl };
+
+/**
+ * Size of the opening grid, used only to scale how many controls to draw.
+ *
+ * Mirrors `INITIAL_SEED_SIZE` in assessment.ts rather than importing it: that
+ * constant governs the sampling schedule and exporting it for this would
+ * invite the two to be tuned as one number when they are two decisions.
+ */
+const INITIAL_SEED_SIZE_HINT = 32;
 
 export default function OnboardingPage() {
   const router = useRouter();
@@ -39,6 +55,46 @@ export default function OnboardingPage() {
     getInitialSeed(lexicon.entries),
   );
   const [displayedWords, setDisplayedWords] = useState<AssessmentWord[]>(sampledWords);
+
+  /**
+   * The invented words shown alongside the real ones, and which were tapped.
+   *
+   * Without these the test cannot tell a learner who knows 3,000 words from
+   * one who taps everything - and it used to credit the second one an entire
+   * frequency band per 80% claimed. They are drawn once, at the size of the
+   * opening grid, and never respawn: a control that reappears after being
+   * tapped would read as the app insisting, and the rate is only meaningful
+   * over a fixed denominator.
+   */
+  const [controlsShown] = useState(() => {
+    const pool = [...placementControls];
+    // Seeded from nothing in particular, but drawn once per mount so the grid
+    // does not rearrange between renders.
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+    // Roughly one invented word per five real ones: enough that tapping
+    // everything is unmistakable, few enough that an honest learner meets one
+    // or two and is unbothered.
+    return pool.slice(0, Math.max(6, Math.round(INITIAL_SEED_SIZE_HINT / 5)));
+  });
+  const [tappedControls, setTappedControls] = useState<Set<string>>(new Set());
+
+  /**
+   * Real words and invented ones in one list, interleaved rather than
+   * appended: controls bunched at the end are a block a learner learns to
+   * skip, and measure nothing.
+   */
+  const gridItems = useMemo(() => {
+    const items: GridItem[] = displayedWords.map((w) => ({ kind: "word" as const, word: w }));
+    const every = Math.max(3, Math.ceil(items.length / (controlsShown.length + 1)));
+    controlsShown.forEach((control, i) => {
+      const at = Math.min(items.length, (i + 1) * every);
+      items.splice(at, 0, { kind: "control" as const, control });
+    });
+    return items;
+  }, [displayedWords, controlsShown]);
 
   function reshuffle() {
     const excludeIds = new Set(sampledWords.map((w) => w.entry.id));
@@ -83,7 +139,10 @@ export default function OnboardingPage() {
   async function finishAssessment() {
     setBusy(true);
     setError(null);
-    const scored = scoreAssessment(sampledWords, selected, lexicon.entries);
+    const scored = scoreAssessment(sampledWords, selected, lexicon.entries, {
+      shown: controlsShown,
+      tapped: tappedControls.size,
+    });
     try {
       const { data, error: authError } = await db.auth.getUser();
       if (authError || !data.user) {
@@ -92,6 +151,9 @@ export default function OnboardingPage() {
         return;
       }
       await seedKnownWords(db, data.user.id, scored.knownLexemeIds);
+      // The topmost band they cleared goes into the review system instead of
+      // being credited outright - checked rather than assumed.
+      await seedLearningWords(db, data.user.id, scored.learningLexemeIds);
       await updateProfile(db, data.user.id, {
         can_read_script: canRead,
         level_estimate: scored.levelId,
@@ -109,6 +171,22 @@ export default function OnboardingPage() {
     }
     setResult(scored);
     setStep("result");
+  }
+
+  /**
+   * An invented word was tapped, or untapped.
+   *
+   * Deliberately does not spawn more words the way a real tap does: a control
+   * is not evidence of anything to probe around, and rewarding the tap with
+   * more grid would be the app agreeing.
+   */
+  function handleTapControl(id: string) {
+    setTappedControls((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
   }
 
   function handleTap(word: AssessmentWord) {
@@ -250,13 +328,21 @@ export default function OnboardingPage() {
                 : "Read the Latin spelling out loud. Tap the ones you already know, even if you can't read the script yet."}
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-2.5 pb-28">
-              {displayedWords.map((w) => {
-                const active = selected.has(w.entry.id);
+              {gridItems.map((item) => {
+                // A control is rendered exactly like a real word - same shape,
+                // same two lines, same unvocalised script. Anything that made
+                // them distinguishable would measure nothing.
+                const id = item.kind === "word" ? item.word.entry.id : `ctl:${item.control.target}`;
+                const target = item.kind === "word" ? item.word.entry.target : item.control.target;
+                const translit =
+                  item.kind === "word" ? item.word.entry.translit : item.control.translit;
+                const active =
+                  item.kind === "word" ? selected.has(item.word.entry.id) : tappedControls.has(id);
                 return (
                   <button
-                    key={w.entry.id}
+                    key={id}
                     type="button"
-                    onClick={() => handleTap(w)}
+                    onClick={() => (item.kind === "word" ? handleTap(item.word) : handleTapControl(id))}
                     aria-pressed={active}
                     className={`flex flex-col items-center rounded-2xl border px-4 py-2.5 transition-all duration-200 ${
                       active
@@ -267,22 +353,22 @@ export default function OnboardingPage() {
                     {canRead ? (
                       <>
                         <span lang={lang.code} className="text-[22px] leading-snug">
-                          {w.entry.target}
+                          {target}
                         </span>
                         <span className={`text-[12px] ${active ? "text-white/75" : "text-ink-faint"}`}>
-                          {w.entry.translit}
+                          {translit}
                         </span>
                       </>
                     ) : (
                       <>
                         <span className="text-[19px] font-medium leading-snug">
-                          {w.entry.translit}
+                          {translit}
                         </span>
                         <span
                           lang={lang.code}
                           className={`text-[15px] ${active ? "text-white/70" : "text-ink-faint"}`}
                         >
-                          {w.entry.target}
+                          {target}
                         </span>
                       </>
                     )}

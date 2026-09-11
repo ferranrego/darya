@@ -568,6 +568,35 @@ export const beginnerSpecSchema = z.object({
 
 export type BeginnerSpec = z.infer<typeof beginnerSpecSchema>;
 
+/**
+ * Invented words mixed into the placement grid.
+ *
+ * The sign-up test shows a grid of Dari words and asks which the learner
+ * knows, with nothing in it that is not a real word - so there has been no way
+ * to tell a learner who knows 3,000 words from one who taps everything. These
+ * are the control items every serious vocabulary test of this shape uses:
+ * plausible-looking Dari that does not exist. Tapping one is evidence of
+ * over-claiming, and the estimate is corrected by how often it happens.
+ *
+ * Hand-written, never generated. The failure mode is inventing a word that
+ * turns out to be real and calling an honest learner a liar, and a generator
+ * cannot check itself for that. `validate-content.ts` adds the half a machine
+ * can check: no control may resolve through the app's own word engine.
+ */
+export const placementControlSchema = z.object({
+  target: targetText,
+  translit: translitText,
+  /** Which band's slice of the grid it is mixed into. */
+  band: freqBandSchema,
+});
+
+export const placementControlsFileSchema = z.object({
+  formatVersion: z.string(),
+  controls: z.array(placementControlSchema).min(1),
+});
+
+export type PlacementControl = z.infer<typeof placementControlSchema>;
+
 // ---------------------------------------------------------------------------
 // Texts: content/texts/seed/*.json and AI-generated (same format)
 // ---------------------------------------------------------------------------

@@ -1,6 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { availableLevels, lexicon } from "./content/load.ts";
-import { getInitialSeed, scoreAssessment } from "./assessment.ts";
+import {
+  getInitialSeed,
+  OVERCLAIM_LIMIT,
+  scoreAssessment,
+  type AssessmentWord,
+  type ControlWord,
+} from "./assessment.ts";
+import { FREQ_BAND_COUNT } from "./content/schema.ts";
 
 describe("assessment", () => {
   it("samples content words spread across frequency bands", () => {
@@ -39,5 +46,145 @@ describe("assessment", () => {
     const all = scoreAssessment(words, new Set(words.map((w) => w.entry.id)), lexicon.entries);
     const availableIds = new Set(availableLevels.map((l) => l.id));
     expect(availableIds.has(all.levelId), `${all.levelId} is not in availableLevels`).toBe(true);
+  });
+});
+
+/**
+ * The placement decides what a learner is shown for weeks, and it is the one
+ * thing in the app that can be beaten by saying yes to everything. These
+ * simulate the two learners that matter: the one who taps the whole grid, and
+ * the honest advanced one who must not be punished for the fix.
+ */
+const entries = lexicon.entries;
+
+/** A grid sampling `per` real words from every band. */
+function grid(per = 4): AssessmentWord[] {
+  const out: AssessmentWord[] = [];
+  for (let band = 1; band <= FREQ_BAND_COUNT; band++) {
+    const inBand = entries.filter((e) => e.freqBand === band).slice(0, per);
+    for (const entry of inBand) out.push({ entry, band });
+  }
+  return out;
+}
+
+const controls: ControlWord[] = Array.from({ length: 8 }, (_, i) => ({
+  target: `fake-${i}`,
+  translit: `fake${i}`,
+  band: (i % FREQ_BAND_COUNT) + 1,
+}));
+
+describe("a learner who taps everything", () => {
+  const sampled = grid();
+  const result = scoreAssessment(
+    sampled,
+    new Set(sampled.map((w) => w.entry.id)),
+    entries,
+    { shown: controls, tapped: controls.length },
+  );
+
+  it("is caught by the invented words", () => {
+    expect(result.overclaimRate).toBe(1);
+    expect(result.overclaimed).toBe(true);
+  });
+
+  it("has nothing added that they did not claim one at a time", () => {
+    // The whole defect: up to 20% of every cleared band used to be marked
+    // known on no evidence, by design.
+    expect(result.knownLexemeIds).toHaveLength(sampled.length);
+    expect(result.learningLexemeIds).toHaveLength(0);
+  });
+
+  it("starts at the first level rather than being placed as advanced", () => {
+    expect(result.levelId).toBe("L1");
+    expect(result.estimatedVocab).toBe(0);
+  });
+});
+
+describe("an honest advanced learner", () => {
+  const sampled = grid();
+  // Knows bands 1-4 completely, nothing above, and taps no invented word.
+  const selected = new Set(sampled.filter((w) => w.band <= 4).map((w) => w.entry.id));
+  const result = scoreAssessment(sampled, selected, entries, { shown: controls, tapped: 0 });
+
+  it("is not penalised at all for the over-claim check", () => {
+    expect(result.overclaimRate).toBe(0);
+    expect(result.overclaimed).toBe(false);
+  });
+
+  it("is credited the bands they cleared completely", () => {
+    const known = new Set(result.knownLexemeIds);
+    const band2 = entries.filter((e) => e.freqBand === 2);
+    expect(band2.every((e) => known.has(e.id))).toBe(true);
+  });
+
+  it("has their topmost cleared band checked rather than assumed", () => {
+    // They almost certainly know these - and "almost certainly" is exactly
+    // what was claimed about the 500 words the old rule invented.
+    const learning = new Set(result.learningLexemeIds);
+    // The four band-4 words they actually tapped are credited outright - an
+    // explicit claim outranks a band-wide inference - so the assertion is
+    // about the rest of the band, which is what the old rule invented.
+    const unclaimed = entries.filter((e) => e.freqBand === 4 && !selected.has(e.id));
+    expect(unclaimed.length).toBeGreaterThan(0);
+    expect(unclaimed.every((e) => learning.has(e.id))).toBe(true);
+    expect(result.knownLexemeIds.some((id) => learning.has(id))).toBe(false);
+  });
+
+  it("is credited nothing from a band they did not clear", () => {
+    const touched = new Set([...result.knownLexemeIds, ...result.learningLexemeIds]);
+    const band6 = entries.filter((e) => e.freqBand === 6 && !selected.has(e.id));
+    expect(band6.some((e) => touched.has(e.id))).toBe(false);
+  });
+
+  it("still reaches a level above the first", () => {
+    expect(result.levelId).not.toBe("L1");
+  });
+});
+
+describe("the over-claim correction", () => {
+  it("leaves a clean run untouched, which is the property that matters", () => {
+    const sampled = grid();
+    const selected = new Set(sampled.filter((w) => w.band <= 3).map((w) => w.entry.id));
+    const clean = scoreAssessment(sampled, selected, entries, { shown: controls, tapped: 0 });
+    const noControls = scoreAssessment(sampled, selected, entries);
+    expect(clean.estimatedVocab).toBe(noControls.estimatedVocab);
+    expect(clean.levelId).toBe(noControls.levelId);
+  });
+
+  it("forgives a slip rather than treating it as dishonesty", () => {
+    // A false memory for a plausible non-word is a real effect in vocabulary
+    // testing, not cheating. One tap in eight must not void the result.
+    const sampled = grid();
+    const selected = new Set(sampled.filter((w) => w.band <= 3).map((w) => w.entry.id));
+    const result = scoreAssessment(sampled, selected, entries, { shown: controls, tapped: 1 });
+    expect(result.overclaimRate).toBeLessThanOrEqual(OVERCLAIM_LIMIT);
+    expect(result.overclaimed).toBe(false);
+    expect(result.knownLexemeIds.length).toBeGreaterThan(selected.size);
+  });
+
+  it("lowers a partial score in proportion to the invented words tapped", () => {
+    // Deliberately a partial claimer: someone who recognised every single real
+    // word is unaffected by the correction, and correctly so - there is no
+    // guessing left to subtract when nothing was missed.
+    const sampled = grid();
+    const selected = new Set(sampled.filter((_, i) => i % 2 === 0).map((w) => w.entry.id));
+    const honest = scoreAssessment(sampled, selected, entries, { shown: controls, tapped: 0 });
+    const slipped = scoreAssessment(sampled, selected, entries, { shown: controls, tapped: 2 });
+    expect(slipped.estimatedVocab).toBeLessThan(honest.estimatedVocab);
+  });
+
+  it("does not punish a perfect run, because there is no guessing to subtract", () => {
+    const sampled = grid();
+    const selected = new Set(sampled.map((w) => w.entry.id));
+    const honest = scoreAssessment(sampled, selected, entries, { shown: controls, tapped: 0 });
+    const slipped = scoreAssessment(sampled, selected, entries, { shown: controls, tapped: 2 });
+    expect(slipped.estimatedVocab).toBe(honest.estimatedVocab);
+  });
+
+  it("works with no controls shown, so an existing sign-up still scores", () => {
+    const sampled = grid();
+    const result = scoreAssessment(sampled, new Set(), entries);
+    expect(result.overclaimRate).toBe(0);
+    expect(result.knownLexemeIds).toHaveLength(0);
   });
 });

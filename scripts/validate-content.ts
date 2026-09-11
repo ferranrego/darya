@@ -9,6 +9,7 @@ import {
   grammarCoursesFileSchema,
   lexiconFileSchema,
   levelsFileSchema,
+  placementControlsFileSchema,
   textDocumentSchema,
   type AlphabetCourse,
   type GrammarExercise,
@@ -788,6 +789,53 @@ if (lexicon && levels) {
   }
   if (shortfalls === 0) {
     console.log(`✓ level reachability (every level's curriculum can reach the next)`);
+  }
+}
+
+// --- Placement controls ----------------------------------------------------
+//
+// The invented words mixed into the sign-up grid. A control that turns out to
+// be a real Dari word calls an honest learner a liar and lowers their placement
+// for knowing their own language - which is worse than having no controls at
+// all, and completely invisible.
+//
+// This is the half a machine can check: no control may resolve through the
+// app's own word engine, which knows every headword, every listed variant and
+// every generated verb form. It cannot prove a word is not Dari - the lexicon
+// is 6,466 entries, not a dictionary of the language - so the list also goes
+// to a philologist. Between them: nothing the app itself would recognise, and
+// nothing a Dari speaker recognises.
+const controlsPath = join(root, "lexicon", "placement-controls.json");
+if (existsSync(controlsPath) && lexicon) {
+  const parsed = placementControlsFileSchema.safeParse(loadJson(controlsPath));
+  if (!parsed.success) {
+    fail(`placement-controls.json: ${parsed.error.issues.slice(0, 3).map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`);
+  } else {
+    const controlIndex = buildIndex(lexicon.entries);
+    const seen = new Set<string>();
+    const before = errors;
+    for (const c of parsed.data.controls) {
+      const resolved = controlIndex.resolve(c.target);
+      if (resolved) {
+        fail(
+          `placement-controls.json: "${c.target}" (${c.translit}) is not invented - it resolves ` +
+            `to ${resolved.id} "${resolved.targetNormalized}" (${resolved.glossEn})`,
+        );
+      }
+      const key = matchKey(c.target);
+      if (seen.has(key)) fail(`placement-controls.json: "${c.target}" appears twice`);
+      seen.add(key);
+      if (lang === "prs") {
+        // A control has to be pronounceable like everything else the app shows,
+        // and one written in Iranian style would be a tell that it is a plant.
+        checkDariTranslit(c.translit, "placement-controls.json", c.target, undefined, c.target);
+      }
+    }
+    // Only claim success when nothing above failed: a tick printed underneath
+    // its own errors is how a red gate gets read as green.
+    if (errors === before) {
+      console.log(`✓ placement controls (${parsed.data.controls.length} invented words, none resolve)`);
+    }
   }
 }
 

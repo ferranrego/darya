@@ -1,6 +1,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Card, ReviewLog } from "ts-fsrs";
 import type { UserWordRow, WordStatus } from "./types";
+import { newCard } from "../srs/scheduler";
 
 export async function getUserWords(db: SupabaseClient, userId: string): Promise<UserWordRow[]> {
   const { data, error } = await db.from("user_words").select("*").eq("user_id", userId);
@@ -92,6 +93,41 @@ export async function seedKnownWords(
   const CHUNK = 500;
   for (let i = 0; i < rows.length; i += CHUNK) {
     const { error } = await db.from("user_words").upsert(rows.slice(i, i + CHUNK));
+    if (error) throw error;
+  }
+}
+
+/**
+ * Seed words into the review system rather than crediting them outright.
+ *
+ * The topmost frequency band a learner cleared at placement. They very likely
+ * do know these - but "very likely" is exactly what the old rule claimed about
+ * the ~500 words it invented per advanced sign-up, and those words never
+ * entered review while still counting toward promotion. These get a real
+ * starting card, so the first thing the app does is check.
+ *
+ * `ignoreDuplicates`: a retake must never reset a card the learner has
+ * actually been reviewing. Nothing here may overwrite existing progress.
+ */
+export async function seedLearningWords(
+  db: SupabaseClient,
+  userId: string,
+  lexemeIds: string[],
+): Promise<void> {
+  if (lexemeIds.length === 0) return;
+  const now = new Date();
+  const rows = lexemeIds.map((lexeme_id) => ({
+    user_id: userId,
+    lexeme_id,
+    status: "learning" as const,
+    due: now.toISOString(),
+    fsrs: newCard(now),
+  }));
+  const CHUNK = 500;
+  for (let i = 0; i < rows.length; i += CHUNK) {
+    const { error } = await db
+      .from("user_words")
+      .upsert(rows.slice(i, i + CHUNK), { ignoreDuplicates: true });
     if (error) throw error;
   }
 }

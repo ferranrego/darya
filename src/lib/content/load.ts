@@ -5,6 +5,7 @@
 import alphabetJson from "@content/alphabet/course.json";
 import grammarJson from "@content/grammar/all.json";
 import lexiconJson from "@content/lexicon/lexicon.json";
+import placementControlsJson from "@content/lexicon/placement-controls.json";
 import themesJson from "@content/lexicon/themes.json";
 import beginnerSpecJson from "@content/lexicon/beginner-spec.json";
 import levelsJson from "@content/levels/levels.json";
@@ -17,6 +18,8 @@ import {
   grammarCoursesFileSchema,
   levelsFileSchema,
   lexiconFileSchema,
+  placementControlsFileSchema,
+  type PlacementControl,
   type AlphabetCourse,
   type BeginnerSpec,
   type GrammarCourse,
@@ -68,6 +71,18 @@ export const lexicon: LexiconFile = withoutFlattenedExamples(
   lexiconFileSchema.parse(lexiconJson),
 );
 export const themes: Theme[] = themesFileSchema.parse(themesJson);
+
+/**
+ * Invented words mixed into the placement grid to catch over-claiming.
+ *
+ * Parsed here with everything else so a malformed file fails the build rather
+ * than the sign-up. `validate-content.ts` additionally proves none of them
+ * resolves through the word engine - the machine-checkable half of "these are
+ * not real words".
+ */
+export const placementControls: PlacementControl[] = placementControlsFileSchema.parse(
+  placementControlsJson,
+).controls;
 export const beginnerSpec: BeginnerSpec = beginnerSpecSchema.parse(beginnerSpecJson);
 export const alphabetCourse: AlphabetCourse = alphabetCourseSchema.parse(alphabetJson);
 export const levelsFile: LevelsFile = levelsFileSchema.parse(levelsJson);

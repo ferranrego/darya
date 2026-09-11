@@ -1,0 +1,205 @@
+{
+  "formatVersion": "1",
+  "controls": [
+    {
+      "target": "کلوند",
+      "translit": "kalwand",
+      "band": 1
+    },
+    {
+      "target": "سرماچ",
+      "translit": "sirmāch",
+      "band": 2
+    },
+    {
+      "target": "برزوک",
+      "translit": "barzōk",
+      "band": 3
+    },
+    {
+      "target": "نغتار",
+      "translit": "naghtār",
+      "band": 4
+    },
+    {
+      "target": "درمیز",
+      "translit": "durmēz",
+      "band": 5
+    },
+    {
+      "target": "شفناک",
+      "translit": "shifnāk",
+      "band": 6
+    },
+    {
+      "target": "تبروش",
+      "translit": "tabrōsh",
+      "band": 7
+    },
+    {
+      "target": "پلمین",
+      "translit": "palmēn",
+      "band": 8
+    },
+    {
+      "target": "چکور",
+      "translit": "chakwar",
+      "band": 1
+    },
+    {
+      "target": "ژبراک",
+      "translit": "zhibrāk",
+      "band": 2
+    },
+    {
+      "target": "همروش",
+      "translit": "hamrōsh",
+      "band": 3
+    },
+    {
+      "target": "وشکیل",
+      "translit": "washkēl",
+      "band": 4
+    },
+    {
+      "target": "گرناب",
+      "translit": "girnāb",
+      "band": 5
+    },
+    {
+      "target": "قلمیچ",
+      "translit": "qalmēch",
+      "band": 6
+    },
+    {
+      "target": "مشتراخ",
+      "translit": "mushtarākh",
+      "band": 7
+    },
+    {
+      "target": "فرگوش",
+      "translit": "fargōsh",
+      "band": 8
+    },
+    {
+      "target": "یلدوم",
+      "translit": "yaldūm",
+      "band": 1
+    },
+    {
+      "target": "کندلیز",
+      "translit": "kandalēz",
+      "band": 2
+    },
+    {
+      "target": "سبزوک",
+      "translit": "sabzōk",
+      "band": 3
+    },
+    {
+      "target": "ترناک",
+      "translit": "turnāk",
+      "band": 4
+    },
+    {
+      "target": "خلبیر",
+      "translit": "khalbēr",
+      "band": 5
+    },
+    {
+      "target": "رفشان",
+      "translit": "rafshān",
+      "band": 6
+    },
+    {
+      "target": "زمتور",
+      "translit": "zamtūr",
+      "band": 7
+    },
+    {
+      "target": "بلقاد",
+      "translit": "bulqād",
+      "band": 8
+    },
+    {
+      "target": "میزاک",
+      "translit": "mēzāk",
+      "band": 1
+    },
+    {
+      "target": "مرغوت",
+      "translit": "murghūt",
+      "band": 2
+    },
+    {
+      "target": "کهنیر",
+      "translit": "kuhnēr",
+      "band": 3
+    },
+    {
+      "target": "تلماس",
+      "translit": "tilmās",
+      "band": 4
+    },
+    {
+      "target": "نوزاق",
+      "translit": "nawzāq",
+      "band": 5
+    },
+    {
+      "target": "گلپرد",
+      "translit": "gulpard",
+      "band": 6
+    },
+    {
+      "target": "جربوش",
+      "translit": "jarbōsh",
+      "band": 7
+    },
+    {
+      "target": "ستراک",
+      "translit": "satrāk",
+      "band": 8
+    },
+    {
+      "target": "پژوند",
+      "translit": "pizhwand",
+      "band": 1
+    },
+    {
+      "target": "مهتاچ",
+      "translit": "mahtāch",
+      "band": 2
+    },
+    {
+      "target": "دشناب",
+      "translit": "dashnāb",
+      "band": 3
+    },
+    {
+      "target": "قندیش",
+      "translit": "qandēsh",
+      "band": 4
+    },
+    {
+      "target": "ورتاج",
+      "translit": "wartāj",
+      "band": 5
+    },
+    {
+      "target": "لشکوم",
+      "translit": "lashkūm",
+      "band": 6
+    },
+    {
+      "target": "نگراب",
+      "translit": "nigrāb",
+      "band": 7
+    },
+    {
+      "target": "بهروش",
+      "translit": "bahrōsh",
+      "band": 8
+    }
+  ]
+}
