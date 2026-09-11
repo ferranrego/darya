@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { entryFor } from "@/lib/lexeme/lookup";
 import { segmentForHighlight } from "@/lib/text/highlight";
 import { logErrors, resolveErrors } from "@/lib/db/errors";
-import { logReview, upsertUserWord } from "@/lib/db/words";
+import { logReview, recordProduction, upsertUserWord } from "@/lib/db/words";
 import type { UserWordRow } from "@/lib/db/types";
 import { XP, recordActivity } from "@/lib/gamification";
 import {
@@ -30,6 +30,10 @@ import {
   type TwoButtonGrade,
 } from "@/lib/srs/scheduler";
 import { PracticeSession } from "@/components/exercises/practice-session";
+import { ProductionCard } from "@/components/review/production-card";
+import { defaultInputMode, directionFor, type InputMode } from "@/lib/srs/direction";
+import type { AnswerCheck } from "@/lib/srs/answer-check";
+import { useProfile } from "@/lib/queries/hooks";
 import { useQuery } from "@tanstack/react-query";
 import { getContextSentences } from "@/app/actions/context-sentences";
 import { hapticFeedback } from "@/lib/util/haptics";
@@ -54,6 +58,15 @@ export default function ReviewPage() {
   const router = useRouter();
 
   const [mode, setMode] = useState<"srs" | "practice">("srs");
+  const { data: profile } = useProfile();
+  /**
+   * How the learner gives a Dari answer, remembered for the session.
+   *
+   * Seeded from their level - tiles for beginners, typing above - and then
+   * theirs to change at any level. Held here rather than inside the card so
+   * switching once does not have to be repeated on every word.
+   */
+  const [inputMode, setInputMode] = useState<InputMode | null>(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -126,11 +139,28 @@ export default function ReviewPage() {
   }, [invalidate]);
 
   const grade = useMutation({
-    mutationFn: async ({ row, g }: { row: UserWordRow; g: TwoButtonGrade }) => {
+    mutationFn: async ({
+      row,
+      g,
+      producedNow = false,
+    }: { row: UserWordRow; g: TwoButtonGrade; producedNow?: boolean }) => {
       if (!user) return { graduated: false, entryId: row.lexeme_id };
       const now = new Date();
       const { card, log } = reviewCard(reviveCard(row.fsrs!), g, now);
-      const graduated = isGraduated(card);
+      /**
+       * "Known" now needs evidence, not only self-report.
+       *
+       * Graduation has always been accumulated Got-it presses on a card whose
+       * answer was already on screen. A word the learner has never once
+       * written stays at "learning" however many times they recognised it -
+       * the FSRS interval is untouched either way, so nothing here changes
+       * when the word comes back, only what the app is willing to claim about
+       * it.
+       */
+      // Counting this review's own production, or a word would be refused
+      // graduation on the very review that first supplied the missing evidence.
+      const producedCount = (row.produced_count ?? 0) + (producedNow ? 1 : 0);
+      const graduated = isGraduated(card) && producedCount > 0;
       await upsertUserWord(db, {
         user_id: user.id,
         lexeme_id: row.lexeme_id,
@@ -161,6 +191,55 @@ export default function ReviewPage() {
       if (result.graduated) s.graduatedIds.push(result.entryId);
     },
   });
+
+  /**
+   * A production card has been answered.
+   *
+   * Three outcomes, deliberately not two. A correct answer counts as a
+   * production and grades as remembered. The right word in the wrong form
+   * grades as remembered too - they knew the word, which is what FSRS models -
+   * but does not count as produced, so the card keeps asking until the form is
+   * right. Only a genuinely wrong word is a lapse.
+   */
+  function handleProduced(check: AnswerCheck, given: string) {
+    if (!queue) return;
+    const r = queue[index];
+    const correct = check.verdict === "correct";
+    const g: TwoButtonGrade = check.verdict === "wrong" ? "forgot" : "got_it";
+
+    if (user) {
+      if (correct) {
+        void recordProduction(db, user.id, r.lexeme_id, r.produced_count ?? 0).catch(() => {
+          // Never blocks the review; the FSRS write below is the one that
+          // must not be lost.
+        });
+      } else {
+        // What they actually wrote is the single most valuable thing the app
+        // can gather about their Dari, and until now it gathered none of it.
+        void logErrors(db, user.id, [
+          {
+            kind: "srs",
+            lexemeId: r.lexeme_id,
+            given,
+            expected: entry?.target ?? null,
+            whyEn: check.verdict === "wrong-form" ? "Right word, wrong form." : null,
+          },
+        ]);
+      }
+    }
+
+    setExitDir(g === "got_it" ? 1 : -1);
+    if (g === "forgot") {
+      hapticFeedback("warning");
+      statsRef.current.forgotIds.add(r.lexeme_id);
+      setQueue((q) => (q ? [...q, r] : [r]));
+    } else {
+      hapticFeedback("success");
+    }
+    grade.mutate({ row: r, g, producedNow: correct });
+    setRevealed(false);
+    setIndex((i) => i + 1);
+  }
 
   function answer(g: TwoButtonGrade) {
     if (!queue) return;
@@ -279,6 +358,18 @@ export default function ReviewPage() {
     return <div className="flex flex-1 items-center justify-center py-32 text-ink-faint">Loading…</div>;
   }
 
+  /**
+   * Recognition or production for this card.
+   *
+   * Decided from the card's own FSRS state and whether this word has ever been
+   * written, never from the schedule: the interval says when the review
+   * happens, this says what is asked at it.
+   */
+  const direction = row!.fsrs
+    ? directionFor(reviveCard(row!.fsrs), row!.produced_count ?? 0, index)
+    : "recognition";
+  const activeInputMode = inputMode ?? defaultInputMode(profile?.level_estimate);
+
   // Compute interval hints for the current card
   const now = new Date();
   const intervals = row!.fsrs ? previewIntervals(reviveCard(row!.fsrs), now) : null;
@@ -312,6 +403,22 @@ export default function ReviewPage() {
             </span>
           </div>
 
+      {direction === "production" && personalIndex ? (
+        <ProductionCard
+          key={`${row!.lexeme_id}-${index}`}
+          entry={entry}
+          index={personalIndex}
+          context={
+            activeContext?.target
+              ? { target: activeContext.target, en: activeContext.en ?? entry.glossEn }
+              : null
+          }
+          mode={activeInputMode}
+          onModeChange={setInputMode}
+          onGraded={handleProduced}
+        />
+      ) : (
+      <>
       <div className="relative flex flex-1 items-center justify-center">
         <AnimatePresence mode="wait" onExitComplete={() => x.set(0)}>
           <motion.div
@@ -444,6 +551,8 @@ export default function ReviewPage() {
             </div>
           )}
         </div>
+        </>
+      )}
       </div>
       )}
     </div>

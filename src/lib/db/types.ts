@@ -33,6 +33,10 @@ export interface UserWordRow {
   context_target: string | null;
   context_translit: string | null;
   context_en: string | null;
+  /** First time the learner wrote this word correctly; null = never. */
+  produced_at: string | null;
+  /** How many times they have. Recognition reviews never touch it. */
+  produced_count: number;
   created_at: string;
   updated_at: string;
 }

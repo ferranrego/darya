@@ -38,9 +38,38 @@ export async function upsertUserWord(
     context_target?: string | null;
     context_translit?: string | null;
     context_en?: string | null;
+    produced_at?: string | null;
+    produced_count?: number;
   },
 ): Promise<void> {
   const { error } = await db.from("user_words").upsert(row);
+  if (error) throw error;
+}
+
+/**
+ * Record that the learner wrote this word correctly.
+ *
+ * Separate from `upsertUserWord` because it must not be able to overwrite the
+ * FSRS card: production and scheduling are different facts about a word, and a
+ * single upsert carrying a stale card would silently reschedule the review.
+ * The count is incremented server-side-ish - read then write - because two
+ * concurrent reviews of the same word are not a thing a single learner does.
+ */
+export async function recordProduction(
+  db: SupabaseClient,
+  userId: string,
+  lexemeId: string,
+  previousCount: number,
+): Promise<void> {
+  const patch: Record<string, unknown> = { produced_count: previousCount + 1 };
+  // First production only: `produced_at` answers "when did this stop being
+  // self-report", and overwriting it every time would lose that.
+  if (previousCount === 0) patch.produced_at = new Date().toISOString();
+  const { error } = await db
+    .from("user_words")
+    .update(patch)
+    .eq("user_id", userId)
+    .eq("lexeme_id", lexemeId);
   if (error) throw error;
 }
 

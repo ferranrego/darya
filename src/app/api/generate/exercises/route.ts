@@ -99,7 +99,9 @@ export async function POST() {
   const learningTargets = [
     ...stickingTargets,
     ...sample(
-      learning.filter((e) => !stickingTargets.some((s) => s.id === e.id)),
+      learning
+        .slice(0, LEARNING_WINDOW)
+        .filter((e) => !stickingTargets.some((s) => s.id === e.id)),
       Math.max(0, 3 - stickingTargets.length),
     ),
   ];
