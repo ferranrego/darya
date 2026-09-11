@@ -1,0 +1,249 @@
+{
+  "id": "tx-seed-l1-041",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "مکتب ما",
+  "titleTranslit": "maktab-e mā",
+  "titleEn": "Our school",
+  "sentences": [
+    {
+      "target": "معلم ما زبان دری را درس می‌دهد.",
+      "translit": "mu'allem-e mā zabān-e darī rā dars mēdihad.",
+      "en": "Our teacher teaches the Dari language.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "زبان",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "دری",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "شاگردان هر روز می‌نویسند.",
+      "translit": "shāgerdān har rōz mēnawīsand.",
+      "en": "The students write every day.",
+      "tokens": [
+        {
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "می‌نویسند",
+          "lexemeId": "lx-0155"
+        }
+      ]
+    },
+    {
+      "target": "دوست من تیز می‌نویسد.",
+      "translit": "dōst-e man tēz mēnawīsad.",
+      "en": "My friend writes fast.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "می‌نویسد",
+          "lexemeId": "lx-0155"
+        }
+      ]
+    },
+    {
+      "target": "من نام خود را می‌نویسم.",
+      "translit": "man nām-e khud rā mēnawīsam.",
+      "en": "I write my own name.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌نویسم",
+          "lexemeId": "lx-0155"
+        }
+      ]
+    },
+    {
+      "target": "معلم به ما یک کتاب نو داد.",
+      "translit": "mu'allem ba mā yak kitāb-e naw dād.",
+      "en": "The teacher gave us a new book.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "داد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "من این زبان را یاد می‌گیرم.",
+      "translit": "man īn zabān rā yād mēgīram.",
+      "en": "I am learning this language.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "زبان",
+          "lexemeId": "lx-0088"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "یاد",
+          "lexemeId": "lx-0154"
+        },
+        {
+          "surface": "می‌گیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "شاگرد خوب هر شب می‌خواند.",
+      "translit": "shāgerd-e khōb har shab mēkhānad.",
+      "en": "A good student reads every night.",
+      "tokens": [
+        {
+          "surface": "شاگرد",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "می‌خواند",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0006",
+    "lx-0007",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0040",
+    "lx-0041",
+    "lx-0058",
+    "lx-0062",
+    "lx-0063",
+    "lx-0067",
+    "lx-0074",
+    "lx-0077",
+    "lx-0078",
+    "lx-0087",
+    "lx-0088",
+    "lx-0098",
+    "lx-0100",
+    "lx-0153",
+    "lx-0154",
+    "lx-0155",
+    "lx-0166",
+    "lx-0178",
+    "lx-0216",
+    "lx-6071"
+  ],
+  "newWords": [
+    "lx-0087",
+    "lx-0088",
+    "lx-6071"
+  ],
+  "questions": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 41
+}

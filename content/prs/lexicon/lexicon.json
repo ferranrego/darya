@@ -473,7 +473,7 @@
       "id": "lx-0027",
       "target": "سه",
       "targetNormalized": "سه",
-      "translit": "se",
+      "translit": "sē",
       "glossEn": "three",
       "pos": "numeral",
       "freqRank": 24,
@@ -481,7 +481,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سه روز کار کردم.",
-      "exampleTranslit": "se rōz kār kardam.",
+      "exampleTranslit": "sē rōz kār kardam.",
       "exampleEn": "I worked for three days.",
       "tags": [
         "Numbers & Quantities",
@@ -1398,7 +1398,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "در بازار مردم زیاد بود.",
-      "exampleTranslit": "dar bāzār mardum-e ziyād būd.",
+      "exampleTranslit": "dar bāzār mardum ziyād būd.",
       "exampleEn": "There were many people at the market.",
       "tags": [
         "Descriptions & Qualities",
@@ -30049,7 +30049,7 @@
     },
     {
       "target": "پنیر",
-      "translit": "panir",
+      "translit": "panēr",
       "glossEn": "cheese",
       "pos": "noun",
       "register": "neutral",

@@ -1,0 +1,238 @@
+{
+  "id": "tx-seed-l1-043",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دریا و گل",
+  "titleTranslit": "daryā wa gul",
+  "titleEn": "The river and the flower",
+  "sentences": [
+    {
+      "target": "یک دریا نزدیک خانه ما است.",
+      "translit": "yak daryā nazdīk-e khāna-ye mā ast.",
+      "en": "A river is near our house.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "آب دریا بسیار سرد است.",
+      "translit": "āb-e daryā bisyār sard ast.",
+      "en": "The river water is very cold.",
+      "tokens": [
+        {
+          "surface": "آب",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "آب دریا تیز می‌رود.",
+      "translit": "āb-e daryā tēz mērawad.",
+      "en": "The river water runs fast.",
+      "tokens": [
+        {
+          "surface": "آب",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "در آنجا گل زیاد است.",
+      "translit": "dar ānjā gul ziyād ast.",
+      "en": "There are many flowers there.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "گل",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "رنگ این گل مقبول است.",
+      "translit": "rang-e īn gul maqbūl ast.",
+      "en": "The color of this flower is beautiful.",
+      "tokens": [
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "گل",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مکتب من از دریا دور است.",
+      "translit": "maktab-e man az daryā dūr ast.",
+      "en": "My school is far from the river.",
+      "tokens": [
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "دور",
+          "lexemeId": "lx-0177"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "امروز صبح به دریا رفتم.",
+      "translit": "emrōz subh ba daryā raftam.",
+      "en": "This morning I went to the river.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "رفتم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0036",
+    "lx-0037",
+    "lx-0042",
+    "lx-0043",
+    "lx-0069",
+    "lx-0072",
+    "lx-0073",
+    "lx-0075",
+    "lx-0089",
+    "lx-0136",
+    "lx-0140",
+    "lx-0141",
+    "lx-0167",
+    "lx-0175",
+    "lx-0176",
+    "lx-0177",
+    "lx-6071"
+  ],
+  "newWords": [
+    "lx-0141"
+  ],
+  "questions": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 43
+}

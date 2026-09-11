@@ -1,0 +1,273 @@
+{
+  "id": "tx-seed-l1-038",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دوست من",
+  "titleTranslit": "dōst-e man",
+  "titleEn": "My friend",
+  "sentences": [
+    {
+      "target": "دوست من یک نام مقبول دارد.",
+      "translit": "dōst-e man yak nām-e maqbūl dārad.",
+      "en": "My friend has a beautiful name.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "او دوست برادر من هم است.",
+      "translit": "ō dōst-e barādar-e man ham ast.",
+      "en": "He is my brother's friend too.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من او را هر روز می‌بینم.",
+      "translit": "man ō rā har rōz mēbīnam.",
+      "en": "I see him every day.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "می‌بینم",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "او به من یک کتاب داد.",
+      "translit": "ō ba man yak kitāb dād.",
+      "en": "He gave me a book.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "داد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "من به او گفتم که کتاب خوب است.",
+      "translit": "man ba ō guftam ki kitāb khōb ast.",
+      "en": "I told him the book is good.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "گفتم",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما دوستان خوب هستیم.",
+      "translit": "mā dōstān-e khōb hastēm.",
+      "en": "We are good friends.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "دوستان",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "دیروز ما زود برخاستیم و به مکتب رفتیم.",
+      "translit": "dīrōz mā zūd barkhāstēm wa ba maktab raftēm.",
+      "en": "Yesterday we got up early and went to school.",
+      "tokens": [
+        {
+          "surface": "دیروز",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "برخاستیم",
+          "lexemeId": "lx-0363"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "رفتیم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0005",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0025",
+    "lx-0040",
+    "lx-0045",
+    "lx-0053",
+    "lx-0058",
+    "lx-0062",
+    "lx-0063",
+    "lx-0073",
+    "lx-0074",
+    "lx-0075",
+    "lx-0089",
+    "lx-0092",
+    "lx-0093",
+    "lx-0095",
+    "lx-0096",
+    "lx-0100",
+    "lx-0166",
+    "lx-0356",
+    "lx-0363"
+  ],
+  "newWords": [
+    "lx-0363"
+  ],
+  "questions": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 38
+}

@@ -1,0 +1,240 @@
+{
+  "id": "tx-seed-l1-048",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دیروز و فردا",
+  "titleTranslit": "dīrōz wa fardā",
+  "titleEn": "Yesterday and tomorrow",
+  "sentences": [
+    {
+      "target": "دیروز من در خانه بودم.",
+      "translit": "dīrōz man dar khāna būdam.",
+      "en": "Yesterday I was at home.",
+      "tokens": [
+        {
+          "surface": "دیروز",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "بودم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "دیروز هوا سرد بود و من لباس گرم پوشیدم.",
+      "translit": "dīrōz hawā sard būd wa man libās-e garm pōshīdam.",
+      "en": "Yesterday the weather was cold and I wore warm clothes.",
+      "tokens": [
+        {
+          "surface": "دیروز",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "بود",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "پوشیدم",
+          "lexemeId": "lx-0231"
+        }
+      ]
+    },
+    {
+      "target": "امروز من به مکتب رفتم.",
+      "translit": "emrōz man ba maktab raftam.",
+      "en": "Today I went to school.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "رفتم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "فردا من با دوست خود بازی می‌کنم.",
+      "translit": "fardā man bā dōst-e khud bāzī mēkunam.",
+      "en": "Tomorrow I will play with my friend.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "فردا صبح زود برمی‌خیزم.",
+      "translit": "fardā subh zūd barmēkhēzam.",
+      "en": "Tomorrow morning I will get up early.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "برمی‌خیزم",
+          "lexemeId": "lx-0363"
+        }
+      ]
+    },
+    {
+      "target": "دیروز در خانه بودم و فردا به مکتب می‌روم.",
+      "translit": "dīrōz dar khāna būdam wa fardā ba maktab mērawam.",
+      "en": "Yesterday I was at home and tomorrow I will go to school.",
+      "tokens": [
+        {
+          "surface": "دیروز",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "بودم",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "می‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0008",
+    "lx-0011",
+    "lx-0036",
+    "lx-0042",
+    "lx-0043",
+    "lx-0044",
+    "lx-0045",
+    "lx-0058",
+    "lx-0071",
+    "lx-0072",
+    "lx-0075",
+    "lx-0089",
+    "lx-0096",
+    "lx-0097",
+    "lx-0126",
+    "lx-0178",
+    "lx-0191",
+    "lx-0230",
+    "lx-0231",
+    "lx-0356",
+    "lx-0363"
+  ],
+  "newWords": [],
+  "questions": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 48
+}
