@@ -1,0 +1,156 @@
+{
+  "id": "tx-seed-l2-069",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "اتاق من",
+  "titleTranslit": "utāq-e man",
+  "titleEn": "My room",
+  "sentences": [
+    {
+      "target": "اتاق من خورد است.",
+      "translit": "utāq-e man khurd ast.",
+      "en": "My room is small.",
+      "tokens": [
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "دروازه اتاق باز است.",
+      "translit": "darwāza-ye utāq bāz ast.",
+      "en": "The room door is open.",
+      "tokens": [
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "باز",
+          "lexemeId": "lx-0199"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "رنگ اتاق آبی است.",
+      "translit": "rang-e utāq ābī ast.",
+      "en": "The room color is blue.",
+      "tokens": [
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "آبی",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من اینجا درس می‌خوانم.",
+      "translit": "man īnjā dars mēkhānam.",
+      "en": "I study here.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "می‌خوانم",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "اینجا بسیار آرام است.",
+      "translit": "īnjā bisyār ārām ast.",
+      "en": "It is very calm here.",
+      "tokens": [
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0066",
+    "lx-0098",
+    "lx-0141",
+    "lx-0146",
+    "lx-0167",
+    "lx-0174",
+    "lx-0196",
+    "lx-0197",
+    "lx-0199",
+    "lx-0214",
+    "lx-0216"
+  ],
+  "newWords": [
+    "lx-0146",
+    "lx-0197",
+    "lx-0199"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "ezafa-possession",
+    "pronouns-budan",
+    "ezafa-adjectives",
+    "present-me"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 69
+}

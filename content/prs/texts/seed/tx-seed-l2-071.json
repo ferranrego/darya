@@ -1,0 +1,179 @@
+{
+  "id": "tx-seed-l2-071",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "درس ما",
+  "titleTranslit": "dars-e mā",
+  "titleEn": "Our lesson",
+  "sentences": [
+    {
+      "target": "امروز ما یک درس جدید داریم.",
+      "translit": "emrōz mā yak dars-e jadīd dārēm.",
+      "en": "Today we have a new lesson.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "جدید",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "معلم به ما درس می‌دهد.",
+      "translit": "mu'allem ba mā dars mēdihad.",
+      "en": "The teacher gives us the lesson.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "من این درس را می‌فهمم.",
+      "translit": "man īn dars rā mēfahmam.",
+      "en": "I understand this lesson.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌فهمم",
+          "lexemeId": "lx-0157"
+        }
+      ]
+    },
+    {
+      "target": "امروز ما یک امتحان داریم.",
+      "translit": "emrōz mā yak imtihān dārēm.",
+      "en": "Today we have an exam.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "امتحان",
+          "lexemeId": "lx-0220"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من امتحان را خوب می‌دانم.",
+      "translit": "man imtihān rā khōb mēdānam.",
+      "en": "I know the exam well.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "امتحان",
+          "lexemeId": "lx-0220"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "می‌دانم",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0006",
+    "lx-0007",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0043",
+    "lx-0063",
+    "lx-0078",
+    "lx-0094",
+    "lx-0095",
+    "lx-0100",
+    "lx-0157",
+    "lx-0216",
+    "lx-0220",
+    "lx-0361"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [
+    "dashtan-numbers",
+    "object-ra",
+    "present-me",
+    "ezafa-adjectives"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 71
+}

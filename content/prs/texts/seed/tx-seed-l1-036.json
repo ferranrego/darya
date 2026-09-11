@@ -150,7 +150,12 @@
     "lx-6228"
   ],
   "questions": [],
-  "grammarPoints": [],
+  "grammarPoints": [
+    "present-me",
+    "plural-ha",
+    "object-ra",
+    "possessive-endings"
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

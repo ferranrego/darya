@@ -1,0 +1,184 @@
+{
+  "id": "tx-seed-l2-070",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "موتر پدر من",
+  "titleTranslit": "mōtar-e padar-e man",
+  "titleEn": "My father's car",
+  "sentences": [
+    {
+      "target": "پدر من یک موتر دارد.",
+      "translit": "padar-e man yak mōtar dārad.",
+      "en": "My father has a car.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "موتر",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "رنگ موتر آبی است.",
+      "translit": "rang-e mōtar ābī ast.",
+      "en": "The car's color is blue.",
+      "tokens": [
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "موتر",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "آبی",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او ما را به بازار می‌برد.",
+      "translit": "ō mā rā ba bāzār mēbarad.",
+      "en": "He takes us to the bazaar.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "می‌برد",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    },
+    {
+      "target": "ما زود به دکان می‌رسیم.",
+      "translit": "mā zūd ba dukān mērasēm.",
+      "en": "We arrive at the shop quickly.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "می‌رسیم",
+          "lexemeId": "lx-0370"
+        }
+      ]
+    },
+    {
+      "target": "پس ما دوباره به خانه می‌آییم.",
+      "translit": "pas mā dōbāra ba khāna mēāyēm.",
+      "en": "Then we come home again.",
+      "tokens": [
+        {
+          "surface": "پس",
+          "lexemeId": "lx-0172"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "دوباره",
+          "lexemeId": "lx-0315"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌آییم",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0036",
+    "lx-0052",
+    "lx-0083",
+    "lx-0090",
+    "lx-0095",
+    "lx-0133",
+    "lx-0134",
+    "lx-0141",
+    "lx-0146",
+    "lx-0172",
+    "lx-0233",
+    "lx-0315",
+    "lx-0356",
+    "lx-0370"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [
+    "ezafa-possession",
+    "object-ra",
+    "present-me",
+    "dashtan-numbers"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 70
+}

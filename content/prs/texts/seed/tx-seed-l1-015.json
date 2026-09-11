@@ -131,7 +131,11 @@
     "lx-6070"
   ],
   "questions": [],
-  "grammarPoints": [],
+  "grammarPoints": [
+    "present-me",
+    "object-ra",
+    "pronouns-budan"
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

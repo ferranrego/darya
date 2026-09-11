@@ -382,7 +382,13 @@
     "lx-6114"
   ],
   "questions": [],
-  "grammarPoints": [],
+  "grammarPoints": [
+    "when-clauses",
+    "reported-speech",
+    "purpose-clauses",
+    "real-conditionals",
+    "passive-shudan"
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

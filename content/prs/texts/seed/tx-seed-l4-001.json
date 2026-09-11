@@ -393,7 +393,13 @@
     "lx-6125"
   ],
   "questions": [],
-  "grammarPoints": [],
+  "grammarPoints": [
+    "relative-clauses",
+    "real-conditionals",
+    "reported-speech",
+    "present-perfect",
+    "object-ra"
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

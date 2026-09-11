@@ -1,0 +1,189 @@
+{
+  "id": "tx-seed-l2-068",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دکان میوه",
+  "titleTranslit": "dukān-e mēwa",
+  "titleEn": "The fruit shop",
+  "sentences": [
+    {
+      "target": "یک دکان نزدیک خانه ما است.",
+      "translit": "yak dukān nazdīk-e khāna-ye mā ast.",
+      "en": "A shop is near our house.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "این دکان میوه می‌فروشد.",
+      "translit": "īn dukān mēwa mēfarōshad.",
+      "en": "This shop sells fruit.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "می‌فروشد",
+          "lexemeId": "lx-0368"
+        }
+      ]
+    },
+    {
+      "target": "من انار و سیب می‌خرم.",
+      "translit": "man anār wa sēb mēkharam.",
+      "en": "I buy pomegranates and apples.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "انار",
+          "lexemeId": "lx-0116"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "می‌خرم",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "انار سرخ و میوه سبز است.",
+      "translit": "anār surkh wa mēwa sabz ast.",
+      "en": "The pomegranate is red and the fruit is green.",
+      "tokens": [
+        {
+          "surface": "انار",
+          "lexemeId": "lx-0116"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "سبز",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من میوه را به خانه می‌برم.",
+      "translit": "man mēwa rā ba khāna mēbaram.",
+      "en": "I take the fruit home.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌برم",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0036",
+    "lx-0113",
+    "lx-0114",
+    "lx-0116",
+    "lx-0134",
+    "lx-0142",
+    "lx-0145",
+    "lx-0176",
+    "lx-0205",
+    "lx-0233",
+    "lx-0368"
+  ],
+  "newWords": [
+    "lx-0113",
+    "lx-0145"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "present-me",
+    "object-ra",
+    "ezafa-possession",
+    "prepositions"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 68
+}

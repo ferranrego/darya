@@ -1,0 +1,184 @@
+{
+  "id": "tx-seed-l2-072",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "مهمان ما",
+  "titleTranslit": "mehmān-e mā",
+  "titleEn": "Our guest",
+  "sentences": [
+    {
+      "target": "امشب یک مهمان به خانه ما می‌آید.",
+      "translit": "emshab yak mehmān ba khāna-ye mā mēāyad.",
+      "en": "Tonight a guest comes to our house.",
+      "tokens": [
+        {
+          "surface": "امشب",
+          "lexemeId": "lx-0201"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "مهمان",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "مادر من چای و میوه می‌آورد.",
+      "translit": "mādar-e man chāy wa mēwa mēāwarad.",
+      "en": "My mother brings tea and fruit.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "می‌آورد",
+          "lexemeId": "lx-0232"
+        }
+      ]
+    },
+    {
+      "target": "مهمان یک آهنگ می‌خواند.",
+      "translit": "mehmān yak āhang mēkhānad.",
+      "en": "The guest sings a song.",
+      "tokens": [
+        {
+          "surface": "مهمان",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "آهنگ",
+          "lexemeId": "lx-0190"
+        },
+        {
+          "surface": "می‌خواند",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "آهنگ او بسیار مقبول است.",
+      "translit": "āhang-e ō bisyār maqbūl ast.",
+      "en": "His song is very beautiful.",
+      "tokens": [
+        {
+          "surface": "آهنگ",
+          "lexemeId": "lx-0190"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "اینجا بسیار خوش است.",
+      "translit": "īnjā bisyār khush ast.",
+      "en": "It is very cheerful here.",
+      "tokens": [
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0036",
+    "lx-0039",
+    "lx-0051",
+    "lx-0073",
+    "lx-0090",
+    "lx-0098",
+    "lx-0107",
+    "lx-0113",
+    "lx-0167",
+    "lx-0174",
+    "lx-0188",
+    "lx-0190",
+    "lx-0201",
+    "lx-0232"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [
+    "present-me",
+    "ezafa-possession",
+    "prepositions",
+    "ezafa-adjectives"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 72
+}

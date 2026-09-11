@@ -1,0 +1,177 @@
+{
+  "id": "tx-seed-l2-073",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "فکر من",
+  "titleTranslit": "fikr-e man",
+  "titleEn": "My thought",
+  "sentences": [
+    {
+      "target": "من یک فکر نو دارم.",
+      "translit": "man yak fikr-e naw dāram.",
+      "en": "I have a new idea.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-0292"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من یک خانه ساخته می‌توانم.",
+      "translit": "man yak khāna sākhta mētawānam.",
+      "en": "I can build a house.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ساخته",
+          "lexemeId": "lx-0375"
+        },
+        {
+          "surface": "می‌توانم",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "این کار زمان زیاد می‌خواهد.",
+      "translit": "īn kār zamān-e ziyād mēkhāhad.",
+      "en": "This work needs a lot of time.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "زمان",
+          "lexemeId": "lx-0358"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "می‌خواهد",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "پس من کم می‌خوابم.",
+      "translit": "pas man kam mēkhābam.",
+      "en": "So I sleep little.",
+      "tokens": [
+        {
+          "surface": "پس",
+          "lexemeId": "lx-0172"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "می‌خوابم",
+          "lexemeId": "lx-0159"
+        }
+      ]
+    },
+    {
+      "target": "اما فکر من خوب است.",
+      "translit": "ammā fikr-e man khōb ast.",
+      "en": "But my idea is good.",
+      "tokens": [
+        {
+          "surface": "اما",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-0292"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0025",
+    "lx-0036",
+    "lx-0063",
+    "lx-0067",
+    "lx-0069",
+    "lx-0070",
+    "lx-0079",
+    "lx-0095",
+    "lx-0099",
+    "lx-0158",
+    "lx-0159",
+    "lx-0168",
+    "lx-0172",
+    "lx-0292",
+    "lx-0358",
+    "lx-0375"
+  ],
+  "newWords": [
+    "lx-0158",
+    "lx-0292"
+  ],
+  "questions": [],
+  "grammarPoints": [
+    "dashtan-numbers",
+    "present-me",
+    "ezafa-possession",
+    "negation"
+  ],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 73
+}

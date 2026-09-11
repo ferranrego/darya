@@ -136,7 +136,12 @@
     "lx-0625"
   ],
   "questions": [],
-  "grammarPoints": [],
+  "grammarPoints": [
+    "present-me",
+    "object-ra",
+    "ezafa-possession",
+    "possessive-endings"
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",

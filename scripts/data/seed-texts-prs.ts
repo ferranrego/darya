@@ -23,6 +23,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "برادر من به مکتب می‌رود.", translit: "barādar-e man ba maktab mērawad.", en: "My brother goes to school." },
       { target: "چای خوب است.", translit: "chāy khōb ast.", en: "The tea is good." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "pronouns-budan"],
   },
   {
     slug: "l1-002",
@@ -38,6 +39,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "نان می‌خورم.", translit: "nān mēkhuram.", en: "I eat food." },
       { target: "شب خوب است.", translit: "shab khōb ast.", en: "The night is good." },
     ],
+    grammarPoints: ["present-me", "prepositions", "pronouns-budan"],
   },
   {
     slug: "l1-003",
@@ -52,6 +54,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ما با هم چای می‌خوریم.", translit: "mā bā ham chāy mēkhurēm.", en: "We drink tea together." },
       { target: "او کتاب می‌خواند.", translit: "ō ketāb mēkhānad.", en: "He reads a book." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "pronouns-budan"],
   },
   {
     slug: "l1-004",
@@ -67,6 +70,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من در خانه کتاب می‌خوانم.", translit: "man dar khāna ketāb mēkhānam.", en: "I read a book at home." },
       { target: "خانه ما خوب است.", translit: "khāna-ye mā khōb ast.", en: "Our house is good." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "prepositions", "pronouns-budan"],
   },
   {
     slug: "l1-005",
@@ -82,6 +86,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "چای سیاه می‌خورم.", translit: "chāy-e siyāh mēkhuram.", en: "I drink black tea." },
       { target: "من زود می‌خوابم.", translit: "man zūd mēkhābam.", en: "I sleep early." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-adjectives", "prepositions"],
   },
   {
     slug: "l1-006",
@@ -97,6 +102,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مادر به خانه می‌آید.", translit: "mādar ba khāna mēāyad.", en: "Mother comes home." },
       { target: "من آهنگ می‌شنوم.", translit: "man āhang mēshunawam.", en: "I listen to a song." },
     ],
+    grammarPoints: ["present-me", "prepositions", "ezafa-possession", "pronouns-budan"],
   },
   {
     slug: "l1-007",
@@ -112,6 +118,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "خانه سبز نیست.", translit: "khāna sabz nēst.", en: "The house isn't green." },
       { target: "خانه سرخ نیست.", translit: "khāna surkh nēst.", en: "The house isn't red." },
     ],
+    grammarPoints: ["present-me", "negation", "ezafa-possession", "pronouns-budan"],
   },
   {
     slug: "l1-008",
@@ -127,6 +134,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من آب گرم می‌آورم.", translit: "man āb-e garm mēāwaram.", en: "I bring warm water." },
       { target: "برف زیاد است.", translit: "barf ziyād ast.", en: "There's a lot of snow." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "ezafa-adjectives", "pronouns-budan"],
   },
   {
     slug: "l2-004",
@@ -142,6 +150,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "به نظر من، مکتب خوب است.", translit: "ba nazar-e man, maktab khōb ast.", en: "In my opinion, the school is good." },
       { target: "در شهر ما مکتب خوب وجود دارد.", translit: "dar shahr-e mā maktab-e khōb wujūd dārad.", en: "In our city there is a good school." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "ezafa-adjectives", "pronouns-budan"],
   },
   {
     slug: "l2-005",
@@ -157,6 +166,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او تمام کار را تنها می‌کند.", translit: "ō tamām-e kār rā tanhā mēkunad.", en: "He does all the work by himself." },
       { target: "پس، او تنها می‌ماند.", translit: "pas, ō tanhā mēmānad.", en: "Then, he remains alone." },
     ],
+    grammarPoints: ["present-me", "object-ra", "plural-ha", "ezafa-possession"],
   },
   {
     slug: "l2-006",
@@ -172,6 +182,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من به پدرم کمک می‌کنم.", translit: "man ba padaram kumak mēkunam.", en: "I help my father." },
       { target: "این بار، همه چیز خوب است.", translit: "īn bār, hama chīz khōb ast.", en: "This time, everything is good." },
     ],
+    grammarPoints: ["present-me", "object-ra", "possessive-endings", "ezafa-adjectives"],
   },
   {
     slug: "l2-007",
@@ -188,6 +199,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "کسی تنها نمی‌ماند.", translit: "kasē tanhā namēmānad.", en: "No one is left alone." },
       { target: "این کار مبارک باشد!", translit: "īn kār mubārak bāshad!", en: "May this work be blessed!" },
     ],
+    grammarPoints: ["present-me", "object-ra", "plural-ha", "negation", "compound-verbs"],
   },
   {
     slug: "l2-008",
@@ -203,6 +215,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "به نظر من، این آهنگ خوب است.", translit: "ba nazar-e man, īn āhang khōb ast.", en: "In my opinion, this song is good." },
       { target: "حتی بچه‌ها این آهنگ را می‌شنوند.", translit: "hattā bacha-hā īn āhang rā mēshunawand.", en: "Even the children hear this song." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-adjectives", "demonstratives"],
   },
   {
     slug: "l2-001",
@@ -218,6 +231,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "در بازار مردم زیاد است.", translit: "dar bāzār mardum-e ziyād ast.", en: "There are many people at the market." },
       { target: "شب به خانه می‌آیم.", translit: "shab ba khāna mēāyam.", en: "At night I come home." },
     ],
+    grammarPoints: ["present-me", "prepositions", "ezafa-adjectives"],
   },
   {
     slug: "l2-002",
@@ -233,6 +247,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "بچه‌ها در برف بازی می‌کنند.", translit: "bacha-hā dar barf bāzī mēkunand.", en: "The children play in the snow." },
       { target: "چای گرم می‌خوریم.", translit: "chāy-e garm mēkhurēm.", en: "We drink hot tea." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "ezafa-adjectives", "plural-ha"],
   },
   {
     slug: "l2-003",
@@ -248,6 +263,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "خاله من در مزار زندگی می‌کند.", translit: "khāla-ye man dar mazār zindagī mēkunad.", en: "My aunt lives in Mazar." },
       { target: "ما با هم نان می‌خوریم.", translit: "mā bā ham nān mēkhurēm.", en: "We eat together." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "possessive-endings", "prepositions"],
   },
   {
     slug: "l3-001",
@@ -263,6 +279,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مردم آنجا مهربان هستند.", translit: "mardum-e ānjā mehrabān hastand.", en: "The people there are kind." },
       { target: "سفر ما پنج روز بود.", translit: "safar-e mā panj rōz būd.", en: "Our trip was five days." },
     ],
+    grammarPoints: ["simple-past", "ezafa-possession", "ezafa-adjectives", "pronouns-budan"],
   },
   {
     slug: "l3-002",
@@ -278,6 +295,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ما به خانه همسایه می‌رویم.", translit: "mā ba khāna-ye hamsāya mērawēm.", en: "We go to the neighbor's house." },
       { target: "سال نو مبارک!", translit: "sāl-e naw mubārak!", en: "Happy New Year!" },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "ezafa-adjectives", "plural-ha"],
   },
   {
     slug: "l4-001",
@@ -295,6 +313,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او گفت که دلش برای قریه تنگ شده است.", translit: "ō guft ki delash barā-ye qarya tang shuda ast.", en: "He said that he has become homesick for the village." },
       { target: "ما هم منتظر هستیم که او دوباره به دیدن ما بیاید.", translit: "mā ham muntazir hastēm ki ō dōbāra ba dīdan-e mā biyāyad.", en: "We are also waiting for him to come see us again." },
     ],
+    grammarPoints: ["relative-clauses", "real-conditionals", "reported-speech", "present-perfect", "object-ra"],
   },
   {
     slug: "l4-002",
@@ -311,6 +330,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "میوه‌ی تازه به بازار برده شده است.", translit: "mēwa-ye tāza ba bāzār burda shuda ast.", en: "The fresh fruit has been taken to the market." },
       { target: "مردم از میوه‌ی شیرین این فصل خوش هستند.", translit: "mardum az mēwa-ye shīrīn-e īn fasl khush hastand.", en: "People are happy with this season's sweet fruit." },
     ],
+    grammarPoints: ["relative-clauses", "real-conditionals", "passive-shudan", "present-perfect", "object-ra"],
   },
   {
     slug: "l4-003",
@@ -327,6 +347,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "خانه ما هم بازسازی شده است.", translit: "khāna-ye mā ham bāzsāzī shuda ast.", en: "Our house has also been renovated." },
       { target: "همه ما از این تغییر خوش هستیم.", translit: "hama-ye mā az īn taghīr khush hastēm.", en: "All of us are happy about this change." },
     ],
+    grammarPoints: ["relative-clauses", "real-conditionals", "present-perfect", "passive-shudan", "ezafa-possession"],
   },
   {
     slug: "l5-001",
@@ -343,6 +364,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مردم گفتند که این تصمیم شورا بسیار خوب است.", translit: "mardum guftand ki īn tasmīm-e shōrā bisyār khōb ast.", en: "People said that this decision of the council was very good." },
       { target: "سرانجام، بعد از چند ماه، مکتب نو برای شاگردان باز شد.", translit: "saranjām, ba'd az chand māh, maktab-e naw barā-ye shāgerdān bāz shud.", en: "Finally, after a few months, the new school opened for the students." },
     ],
+    grammarPoints: ["simple-past", "reported-speech", "real-conditionals", "relative-clauses", "passive-shudan"],
   },
   {
     slug: "l5-002",
@@ -359,6 +381,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "اگر همه دست به دست هم بدهند، هیچ کار دشوار نیست.", translit: "agar hama dast ba dast-e ham bidehand, hēch kār dushwār nēst.", en: "If everyone joins hands, no task is difficult." },
       { target: "وقتی مکتب باز شد، همه مردم قریه جشن گرفتند.", translit: "waqt-e maktab bāz shud, hama-ye mardum-e qarya jashn gereftand.", en: "When the school opened, all the villagers held a celebration." },
     ],
+    grammarPoints: ["when-clauses", "reported-speech", "purpose-clauses", "real-conditionals", "passive-shudan"],
   },
   {
     slug: "l5-003",
@@ -376,6 +399,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "بعد از یک سال، تجارت آن‌ها موفق شد و دکانی دیگر هم باز کردند.", translit: "ba'd az yak sāl, tijārat-e ānhā muwaffaq shud wa dukānī dīgar ham bāz kardand.", en: "After a year, their business succeeded, and they also opened another shop." },
       { target: "مردم گفتند که تصمیم تاجر درست بود.", translit: "mardum guftand ki tasmīm-e tājir durust būd.", en: "People said that the trader's decision was right." },
     ],
+    grammarPoints: ["relative-clauses", "reported-speech", "real-conditionals", "simple-past", "comparatives"],
   },
   {
     slug: "l1-009",
@@ -390,6 +414,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مادر یک گپ می‌گوید.", translit: "mādar yak gap mēgōyad.", en: "The mother says a word." },
       { target: "پسر کتاب می‌گیرد.", translit: "pesar ketāb mēgīrad.", en: "The boy takes the book." },
     ],
+    grammarPoints: ["present-me", "prepositions"],
   },
   {
     slug: "l1-010",
@@ -404,6 +429,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "زندگی خوب است.", translit: "zendagī khōb ast.", en: "Life is good." },
       { target: "او یک پای دارد.", translit: "ō yak pāy dārad.", en: "He has one leg." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "dashtan-numbers", "prepositions", "pronouns-budan"],
   },
   {
     slug: "l1-011",
@@ -418,6 +444,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "این شیرین است.", translit: "īn shīrīn ast.", en: "This is sweet." },
       { target: "گوشت خوب است.", translit: "gōsht khōb ast.", en: "The meat is good." },
     ],
+    grammarPoints: ["present-me", "demonstratives", "pronouns-budan"],
   },
   {
     slug: "l1-012",
@@ -432,6 +459,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "باغ بسته است.", translit: "bāgh basta ast.", en: "The garden is closed." },
       { target: "اتاق کلان است.", translit: "utāq kalān ast.", en: "The room is big." },
     ],
+    grammarPoints: ["demonstratives", "ezafa-possession", "pronouns-budan"],
   },
   {
     slug: "l1-013",
@@ -447,6 +475,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "پسر درس می‌خواند.", translit: "pesar dars mēkhānad.", en: "The boy studies the lesson." },
       { target: "او آب می‌خورد.", translit: "ō āb mēkhurad.", en: "He drinks water." },
     ],
+    grammarPoints: ["present-me", "object-ra"],
   },
   {
     slug: "l1-014",
@@ -461,6 +490,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "پدر برمی‌گردد.", translit: "padar barmēgardad.", en: "The father returns." },
       { target: "او به دروازه می‌زند.", translit: "ō ba darwāza mēzanad.", en: "He hits the door." },
     ],
+    grammarPoints: ["present-me", "prepositions"],
   },
   {
     slug: "l1-015",
@@ -476,6 +506,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مادر نان می‌پزد.", translit: "mādar nān mēpazad.", en: "The mother cooks bread." },
       { target: "او خانه را می‌شوید.", translit: "ō khāna rā mēshōyad.", en: "He washes the house." },
     ],
+    grammarPoints: ["present-me", "object-ra", "pronouns-budan"],
   },
   {
     slug: "l1-016",
@@ -490,6 +521,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "باد قوی است.", translit: "bād qawī ast.", en: "The wind is strong." },
       { target: "زمین خشک است.", translit: "zamīn khushk ast.", en: "The ground is dry." },
     ],
+    grammarPoints: ["present-me", "pronouns-budan"],
   },
   {
     slug: "l1-017",
@@ -504,6 +536,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "یک روز خوب است.", translit: "yak rōz khōb ast.", en: "A good day." },
       { target: "من یک هفته می‌خواهم.", translit: "man yak hafta mēkhāham.", en: "I want one week." },
     ],
+    grammarPoints: ["present-me", "demonstratives", "pronouns-budan"],
   },
   {
     slug: "l1-018",
@@ -518,6 +551,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مسجد بلند است.", translit: "masjid buland ast.", en: "The mosque is tall." },
       { target: "سرک کلان است.", translit: "sarak kalān ast.", en: "The street is big." },
     ],
+    grammarPoints: ["present-me", "prepositions", "pronouns-budan"],
   },
   {
     slug: "l1-019",
@@ -532,6 +566,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "پسر بایسکل دارد.", translit: "pesar bāysikl dārad.", en: "The boy has a bicycle." },
       { target: "پدر می‌پردازد.", translit: "padar mēpardāzad.", en: "The father pays." },
     ],
+    grammarPoints: ["present-me", "dashtan-numbers", "pronouns-budan"],
   },
   {
     slug: "l1-020",
@@ -546,6 +581,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "پسر یاد می‌گیرد.", translit: "pesar yād mēgīrad.", en: "The boy learns." },
       { target: "من می‌توانم.", translit: "man mētawānam.", en: "I am able." },
     ],
+    grammarPoints: ["present-me"],
   },
   {
     slug: "l1-021",
@@ -561,6 +597,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "شیشه می‌شکند.", translit: "shīsha mēshikanad.", en: "The glass breaks." },
       { target: "قیمت آن چیست؟", translit: "qīmat-e ān chēst?", en: "What is its price?" },
     ],
+    grammarPoints: ["question-words", "demonstratives", "ezafa-possession", "present-me"],
   },
   {
     slug: "l1-022",
@@ -576,6 +613,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او فکر می‌کند.", translit: "ō fikr mēkunad.", en: "He thinks." },
       { target: "پدر او را می‌شناسد.", translit: "padar ō rā mēshināsad.", en: "The father recognizes him." },
     ],
+    grammarPoints: ["present-me", "object-ra", "demonstratives", "pronouns-budan"],
   },
   {
     slug: "l1-023",
@@ -591,6 +629,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "زمین کلان است.", translit: "zamīn kalān ast.", en: "The ground is big." },
       { target: "کوه بلند است.", translit: "kōh buland ast.", en: "The mountain is tall." },
     ],
+    grammarPoints: ["pronouns-budan"],
   },
   {
     slug: "l1-024",
@@ -606,6 +645,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "یک نفر می‌آید.", translit: "yak nafar mēāyad.", en: "One person comes." },
       { target: "این افغانستان است.", translit: "īn afghānistān ast.", en: "This is Afghanistan." },
     ],
+    grammarPoints: ["present-me", "demonstratives", "ezafa-possession", "pronouns-budan"],
   },
   {
     slug: "l1-025",
@@ -620,6 +660,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "موسیقی مقبول است.", translit: "mōsīqī maqbūl ast.", en: "The music is beautiful." },
       { target: "معلم می‌پرسد.", translit: "mu'allem mēpursad.", en: "The teacher asks." },
     ],
+    grammarPoints: ["present-me", "pronouns-budan"],
   },
   {
     slug: "l1-026",
@@ -635,6 +676,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "پسر گم است.", translit: "pesar gum ast.", en: "The boy is lost." },
       { target: "مرد دروازه را می‌گشاید.", translit: "mard darwāza rā mēgushāyad.", en: "The man opens the door." },
     ],
+    grammarPoints: ["present-me", "object-ra", "dashtan-numbers", "pronouns-budan"],
   },
   {
     slug: "l1-027",
@@ -650,6 +692,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "خواهر می‌آید.", translit: "khwāhar mēāyad.", en: "The sister comes." },
       { target: "پدر گپ می‌زند.", translit: "padar gap mēzanad.", en: "The father talks." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "pronouns-budan"],
   },
   {
     slug: "l1-028",
@@ -665,6 +708,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "دندان درد دارد.", translit: "dandān dard dārad.", en: "The tooth has pain." },
       { target: "دل او درد دارد.", translit: "del-e ō dard dārad.", en: "His heart has pain." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "dashtan-numbers", "pronouns-budan"],
   },
   {
     slug: "l2-009",
@@ -679,6 +723,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من باید در این مورد بدانم.", translit: "man bāyad dar īn mawrid bidānam.", en: "I must know about this case." },
       { target: "او باید به این جای برود.", translit: "ō bāyad ba īn jāy birawad.", en: "He must go to this place." },
     ],
+    grammarPoints: ["must-bayad", "demonstratives", "ezafa-possession", "pronouns-budan"],
   },
   {
     slug: "l2-010",
@@ -693,6 +738,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او فقط یک قرار دارد.", translit: "ō faqat yak qarār dārad.", en: "He only has one appointment." },
       { target: "قبل از این، حال او بد بود.", translit: "qabl az īn, hāl-e ō bad būd.", en: "Before this, his condition was bad." },
     ],
+    grammarPoints: ["present-me", "simple-past", "ezafa-possession", "dashtan-numbers"],
   },
   {
     slug: "l2-011",
@@ -706,6 +752,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او یک خبر تازه دارد.", translit: "ō yak khabar-e tāza dārad.", en: "He has fresh news." },
       { target: "حرف او بسیار خوب است.", translit: "harf-e ō bisyār khōb ast.", en: "His word is very good." },
     ],
+    grammarPoints: ["present-me", "ezafa-adjectives", "ezafa-possession", "dashtan-numbers"],
     questions: [
       {
         questionEn: "Where does the man stroll?",
@@ -783,6 +830,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "البته این عکس قدیمی است.", translit: "albatta īn aks qadēmī ast.", en: "Of course, this photo is old." },
       { target: "البته این عکس کلان است.", translit: "albatta īn aks kalān ast.", en: "Of course, this photo is big." },
     ],
+    grammarPoints: ["possibility-subjunctive", "demonstratives", "present-me", "pronouns-budan"],
   },
   {
     slug: "l2-013",
@@ -799,6 +847,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "اسم او در تاریخ است.", translit: "ism-e ō dar tārīkh ast.", en: "His name is in history." },
       { target: "این صحبت برای آقای احمد است.", translit: "īn suhbat barā-ye āqā-ye ahmad ast.", en: "This conversation is for Mr. Ahmad." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "prepositions", "compound-verbs"],
   },
   {
     slug: "l2-014",
@@ -813,6 +862,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "این برای او بهتر است.", translit: "īn barā-ye ō bihtar ast.", en: "This is better for him." },
       { target: "واقعاً کار بهتر است.", translit: "wāqi'an kār bihtar ast.", en: "Really, work is better." },
     ],
+    grammarPoints: ["must-bayad", "comparatives", "demonstratives", "ezafa-adjectives"],
   },
   {
     slug: "l2-015",
@@ -829,6 +879,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او از خانم مشهور می‌آموزد.", translit: "ō az khānum-e mashhūr mēāmōzad.", en: "He learns from the famous lady." },
       { target: "این خانم بسیار مشهور است.", translit: "īn khānum bisyār mashhūr ast.", en: "This lady is very famous." },
     ],
+    grammarPoints: ["present-me", "simple-past", "object-ra", "ezafa-adjectives"],
   },
   {
     slug: "l2-016",
@@ -842,6 +893,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او یک درخت می‌کارد.", translit: "ō yak darakht mēkārad.", en: "He plants a tree." },
       { target: "او قند را در آب می‌اندازد.", translit: "ō qand rā dar āb mēandāzad.", en: "He throws sugar in the water." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "prepositions"],
     questions: [
       {
         questionEn: "Where is the boss of the ship?",
@@ -919,6 +971,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "این نان خوش‌مزه است.", translit: "īn nān khushmaza ast.", en: "This bread is tasty." },
       { target: "امشب این را می‌پذیرم.", translit: "imshab īn rā mēpazēram.", en: "Tonight I accept this." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "demonstratives"],
   },
   {
     slug: "l2-018",
@@ -933,6 +986,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من پیاده به امتحان می‌روم.", translit: "man piyāda ba imtihān mērawam.", en: "I go to the exam on foot." },
       { target: "شهر در شمال قدیمی است.", translit: "shahr dar shamāl qadēmī ast.", en: "The city in the north is old." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-adjectives", "prepositions"],
   },
   {
     slug: "l2-019",
@@ -947,6 +1001,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مرد به هوش می‌آید.", translit: "mard ba hōsh mēāyad.", en: "The man regains consciousness." },
       { target: "قانون جنوب خوب است.", translit: "qānūn-e janūb khōb ast.", en: "The law of the south is good." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "prepositions"],
   },
   {
     slug: "l2-020",
@@ -962,6 +1017,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او از دست آنها می‌رهد.", translit: "ō az dast-e ānhā mērahad.", en: "He escapes from their hands." },
       { target: "او با اپلیکیشن صلح می‌کند.", translit: "ō bā aplikēshan sulh mēkunad.", en: "He makes peace with the application." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "prepositions"],
   },
   {
     slug: "l2-021",
@@ -976,6 +1032,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "چقدر سوال در امتحان است؟", translit: "chiqadar su'āl dar imtihān ast?", en: "How many questions are in the exam?" },
       { target: "کتاب در آتش می‌سوزد.", translit: "ketāb dar ātash mēsōzad.", en: "The book burns in the fire." },
     ],
+    grammarPoints: ["question-words", "present-me", "ezafa-possession", "prepositions"],
   },
   {
     slug: "l2-022",
@@ -990,6 +1047,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من او را به شهر می‌رسانم.", translit: "man ō rā ba shahr mērasānam.", en: "I deliver him to the city." },
       { target: "مهمان موتر را می‌دزدد.", translit: "mihmān mōtar rā mēduzdad.", en: "The guest steals the car." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "prepositions"],
   },
   {
     slug: "l2-023",
@@ -1004,6 +1062,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "وطن من در غرب است.", translit: "watan-e man dar gharb ast.", en: "My homeland is in the west." },
       { target: "به این دلیل، وطن مهم است.", translit: "ba īn dalēl, watan muhim ast.", en: "For this reason, homeland is important." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "demonstratives"],
   },
   {
     slug: "l2-024",
@@ -1017,6 +1076,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او به متر نیاز دارد.", translit: "ō ba mitr niyāz dārad.", en: "He needs a tape measure." },
       { target: "او می‌بیند که این درخت می‌پوسد.", translit: "ō mēbīnad ki īn darakht mēpōsad.", en: "He sees that this tree rots." }
     ],
+    grammarPoints: ["present-me", "clauses-ke", "ezafa-possession", "prepositions"],
     questions: [
       {
         questionEn: "Where does the employee work?",
@@ -1093,6 +1153,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او کار را به من می‌سپارد.", translit: "ō kār rā ba man mēsipārad.", en: "He entrusts the work to me." },
       { target: "مسیر پایتخت زیبا است.", translit: "masēr-e pāytakht zēbā ast.", en: "The capital route is beautiful." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "possessive-endings"],
   },
   {
     slug: "l2-026",
@@ -1107,6 +1168,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "از شرکت یک خواهش دارم.", translit: "az shirkat yak khwāhish dāram.", en: "I have a request from the company." },
       { target: "شرکت انار می‌خرد.", translit: "shirkat anār mēkharad.", en: "The company buys pomegranate." },
     ],
+    grammarPoints: ["present-me", "demonstratives", "prepositions", "dashtan-numbers"],
   },
   {
     slug: "l2-027",
@@ -1121,6 +1183,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "محافظ مامان را می‌جوید.", translit: "muhāfiz māmān rā mējōyad.", en: "The guard seeks mom." },
       { target: "پرواز تغییر می‌کند.", translit: "parwāz taghyēr mēkunad.", en: "The flight changes." },
     ],
+    grammarPoints: ["present-me", "object-ra", "compound-verbs", "prepositions"],
   },
   {
     slug: "l2-028",
@@ -1135,6 +1198,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "انتخاب مدیر ساختمان مهم است.", translit: "intikhāb-e mudīr-e sākhtimān muhim ast.", en: "The building manager's choice is important." },
       { target: "ساختمان کلان است.", translit: "sākhtimān kalān ast.", en: "The building is big." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "ezafa-adjectives", "prepositions"],
   },
   {
     slug: "l2-029",
@@ -1149,6 +1213,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او یک مرض دارد.", translit: "ō yak maraz dārad.", en: "He has a disease." },
       { target: "پل تا بانک یک کیلومتر است.", translit: "pul tā bānk yak kīlōmitr ast.", en: "The bridge to the bank is one kilometer." },
     ],
+    grammarPoints: ["question-words", "present-me", "object-ra", "dashtan-numbers"],
   },
   {
     slug: "l2-030",
@@ -1163,6 +1228,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "در مه، او می‌گرید.", translit: "dar mah, ō mēgiryad.", en: "In the fog, he cries." },
       { target: "این فصل مه دارد.", translit: "īn fasl mah dārad.", en: "This season has fog." },
     ],
+    grammarPoints: ["present-me", "demonstratives", "prepositions", "dashtan-numbers"],
   },
   {
     slug: "l1-029",
@@ -1177,6 +1243,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من یک جامه سفید می‌خواهم.", translit: "man yak jāma-ye safēd mēkhāham.", en: "I want a white garment." },
       { target: "لباس من مقبول است.", translit: "libās-e man maqbūl ast.", en: "My clothes are beautiful." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "ezafa-adjectives", "pronouns-budan"],
   },
   {
     slug: "l1-030",
@@ -1191,6 +1258,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ما چای سبز می‌خوریم.", translit: "mā chāy-e sabz mēkhurēm.", en: "We drink green tea." },
       { target: "چای بسیار گرم است.", translit: "chāy bisyār garm ast.", en: "The tea is very hot." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-adjectives", "prepositions"],
   },
   {
     slug: "l1-031",
@@ -1205,6 +1273,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "نان با پنیر مزه دار است.", translit: "nān bā panēr mazadār ast.", en: "Bread with cheese is tasty." },
       { target: "ما ناشتا می‌خوریم.", translit: "mā nāshtā mēkhurēm.", en: "We eat breakfast." },
     ],
+    grammarPoints: ["present-me", "ezafa-adjectives", "prepositions"],
   },
   {
     slug: "l1-032",
@@ -1219,6 +1288,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ما روی قالین می‌نشینیم.", translit: "mā rō-ye qālīn mēnishīnēm.", en: "We sit on the carpet." },
       { target: "اتاق ما حالا مقبول است.", translit: "utāq-e mā hālā maqbūl ast.", en: "Our room is now beautiful." },
     ],
+    grammarPoints: ["simple-past", "ezafa-possession", "ezafa-adjectives", "present-me"],
   },
   {
     slug: "l1-033",
@@ -1233,6 +1303,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "بچه‌ها در حویلی بازی می‌کنند.", translit: "bacha-hā dar hawēlī bāzī mēkunand.", en: "The children play in the yard." },
       { target: "هوا بسیار سرد است.", translit: "hawā bisyār sard ast.", en: "The weather is very cold." },
     ],
+    grammarPoints: ["present-me", "plural-ha", "prepositions"],
   },
   {
     slug: "l1-034",
@@ -1247,6 +1318,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "برادر من آب می‌آورد.", translit: "barādar-e man āb mēāwarad.", en: "My brother brings water." },
       { target: "ما زیر درخت می‌نشینیم.", translit: "mā zēr-e darakht mēnishīnēm.", en: "We sit under the tree." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "ezafa-adjectives", "prepositions"],
   },
   {
     slug: "l1-035",
@@ -1261,6 +1333,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "برادرم کلاه خود را می‌پالید.", translit: "barādar-am kulāh-e khud rā mēpālēd.", en: "My brother was looking for his hat." },
       { target: "ما به مکتب می‌رویم.", translit: "mā ba maktab mērawēm.", en: "We go to school." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-adjectives", "past-habitual"],
   },
   {
     slug: "l1-036",
@@ -1275,6 +1348,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "کچالو و پیاز ارزان است.", translit: "kachālū wa piyāz arzān ast.", en: "Potatoes and onions are cheap." },
       { target: "ما خریطه‌ها را به خانه می‌بریم.", translit: "mā kharēta-hā rā ba khāna mēbarēm.", en: "We take the bags home." },
     ],
+    grammarPoints: ["present-me", "plural-ha", "object-ra", "possessive-endings"],
   },
   {
     slug: "l1-037",
@@ -1289,6 +1363,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "کاکایم از مزار آمده است.", translit: "kākā-yam az mazār āmada ast.", en: "My uncle has come from Mazar." },
       { target: "همه ما بسیار خوش هستیم.", translit: "hama-ye mā bisyār khush hastēm.", en: "We are all very happy." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "present-perfect", "pronouns-budan"],
   },
   {
     slug: "l2-031",
@@ -1303,6 +1378,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "داکتر او را معاینه می‌کند.", translit: "dāktar ō rā mu'āyina mēkunad.", en: "The doctor examines him." },
       { target: "او باید دوا بخورد تا جور شود.", translit: "ō bāyad dawā bikhurad tā jōr shawad.", en: "He must take medicine to get well." },
     ],
+    grammarPoints: ["present-me", "object-ra", "must-bayad", "purpose-clauses"],
   },
   {
     slug: "l2-032",
@@ -1317,6 +1393,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "آنها گندم می‌کارند.", translit: "ānhā gandum mēkārand.", en: "They plant wheat." },
       { target: "هوای قریه پاک و تازه است.", translit: "hawā-ye qarya pāk wa tāza ast.", en: "The weather of the village is clean and fresh." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "plural-ha", "prepositions"],
   },
   {
     slug: "l2-033",
@@ -1331,6 +1408,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ما به بند قرغه می‌رویم.", translit: "mā ba band-e qargha mērawēm.", en: "We go to Qargha Dam." },
       { target: "در آنجا آب و هوا خوب است.", translit: "dar ānjā āb wa hawā khōb ast.", en: "There the weather is good." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "present-perfect", "prepositions"],
   },
   {
     slug: "l2-034",
@@ -1345,6 +1423,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من هم می‌خواهم زبان یاد بگیرم.", translit: "man ham mēkhāham zabān yād bigīram.", en: "I also want to learn a language." },
       { target: "زبان خواندن برای آینده خوب است.", translit: "zabān khāndan barā-ye āyanda khōb ast.", en: "Studying a language is good for the future." },
     ],
+    grammarPoints: ["want-subjunctive", "present-me", "plural-ha", "ezafa-adjectives"],
   },
   {
     slug: "l2-035",
@@ -1359,6 +1438,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "رنگ آن سیاه و تاریک است.", translit: "rang-e ān siyāh wa tārīk ast.", en: "Its color is dark black." },
       { target: "هفته آینده آن را می‌پوشم.", translit: "hafta-ye āyanda ān rā mēpōsham.", en: "Next week I will wear it." },
     ],
+    grammarPoints: ["present-me", "simple-past", "plural-ha", "object-ra", "future-with-present"],
   },
   {
     slug: "l2-036",
@@ -1373,6 +1453,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مردم از هر طرف می‌آیند.", translit: "mardum az har taraf mēāyand.", en: "People come from every side." },
       { target: "روزانه پیسه زیاد تبادله می‌شود.", translit: "rōzāna paysa-ye ziyād tabādila mēshawad.", en: "Daily a lot of money is exchanged." },
     ],
+    grammarPoints: ["present-me", "plural-ha", "ezafa-possession", "compound-verbs"],
   },
   {
     slug: "l2-037",
@@ -1387,6 +1468,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "داماد و عروس خوشحال بودند.", translit: "dāmād wa arūs khushhāl būdand.", en: "The groom and bride were happy." },
       { target: "ما تا دیر شب آنجا ماندیم.", translit: "mā tā dēr-e shab ānjā māndēm.", en: "We stayed there until late at night." },
     ],
+    grammarPoints: ["simple-past", "prepositions"],
   },
   {
     slug: "l2-038",
@@ -1401,6 +1483,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ترافیک موترها را ایستاد می‌کند.", translit: "trāfīk mōtar-hā rā īstād mēkunad.", en: "The traffic police stops the cars." },
       { target: "باید در رانندگی احتیاط کنیم.", translit: "bāyad dar rānandagī ihtiyāt kunēm.", en: "We must be careful in driving." },
     ],
+    grammarPoints: ["present-me", "plural-ha", "object-ra", "must-bayad", "ezafa-possession"],
   },
   {
     slug: "l2-039",
@@ -1415,6 +1498,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "آنها درباره کار قصه می‌کنند.", translit: "ānhā dar bāra-ye kār qissa mēkunand.", en: "They tell stories about work." },
       { target: "پدرم با آنها می‌خندد.", translit: "padar-am bā ānhā mēkhandad.", en: "My father laughs with them." },
     ],
+    grammarPoints: ["present-me", "plural-ha", "present-perfect", "prepositions"],
   },
   {
     slug: "l2-040",
@@ -1429,6 +1513,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "بچه‌ها از او می‌ترسند.", translit: "bacha-hā az ō mētarsand.", en: "The children are afraid of him." },
       { target: "صاحبش او را در حویلی بسته است.", translit: "sāhib-ash ō rā dar hawēlī basta ast.", en: "His owner has tied him in the yard." },
     ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "demonstratives", "plural-ha"],
   },
   {
     slug: "l2-041",
@@ -1443,6 +1528,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "آنها بام را ترمیم می‌کنند.", translit: "ānhā bām rā tarmēm mēkunand.", en: "They repair the roof." },
       { target: "پیش از زمستان کار تمام می‌شود.", translit: "pēsh az zimistān kār tamām mēshawad.", en: "The work will be finished before winter." },
     ],
+    grammarPoints: ["present-me", "object-ra", "present-perfect", "ezafa-possession"],
   },
   {
     slug: "l2-042",
@@ -1457,6 +1543,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "سوال‌ها کمی مشکل بود.", translit: "su'āl-hā kamē mushkil būd.", en: "The questions were a bit difficult." },
       { target: "امیدوارم نمره خوب بگیرم.", translit: "umēdwār-am nimra-ye khōb bigīram.", en: "I hope to get a good grade." },
     ],
+    grammarPoints: ["simple-past", "plural-ha", "ezafa-adjectives", "prepositions"],
   },
   {
     slug: "l2-043",
@@ -1471,6 +1558,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مادر من برای طفل کالا می‌دوزد.", translit: "mādar-e man barā-ye tifl kālā mēdōzad.", en: "My mother sews clothes for the baby." },
       { target: "همه فامیل خوشحال هستند.", translit: "hama-ye fāmīl khushhāl hastand.", en: "The whole family is happy." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "ezafa-adjectives", "dashtan-numbers"],
   },
   {
     slug: "l2-044",
@@ -1485,6 +1573,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مسجد قریه ما تازه رنگ شده است.", translit: "masjid-e qarya-ye mā tāza rang shuda ast.", en: "The mosque of our village has been freshly painted." },
       { target: "صدای اذان بسیار بلند است.", translit: "sadā-ye azān bisyār buland ast.", en: "The sound of the call to prayer is very loud." },
     ],
+    grammarPoints: ["present-me", "ezafa-possession", "plural-ha", "present-perfect"],
   },
   {
     slug: "l2-045",
@@ -1835,5 +1924,133 @@ export const seedTexts: SeedTextSource[] = [
       { target: "دل این دختر بسیار پاک است.", translit: "dil-e īn dukhtar bisyār pāk ast.", en: "This girl's heart is very pure." },
       { target: "من او را هر روز می‌بینم.", translit: "man ō rā har rōz mēbīnam.", en: "I see her every day." },
     ],
+  },
+  {
+    slug: "l2-066",
+    level: "L2",
+    seq: 66,
+    titleTarget: "زمستان",
+    titleTranslit: "zemestān",
+    titleEn: "Winter",
+    sentences: [
+      { target: "در زمستان باران می‌بارد.", translit: "dar zemestān bārān mēbārad.", en: "In winter the rain falls." },
+      { target: "باران بسیار سرد است.", translit: "bārān bisyār sard ast.", en: "The rain is very cold." },
+      { target: "من در اتاق می‌مانم.", translit: "man dar utāq mēmānam.", en: "I stay in the room." },
+      { target: "اتاق ما گرم است.", translit: "utāq-e mā garm ast.", en: "Our room is warm." },
+      { target: "پس من امشب خوب می‌خوابم.", translit: "pas man emshab khōb mēkhābam.", en: "So tonight I sleep well." },
+    ],
+    grammarPoints: ["present-me", "prepositions", "ezafa-possession"],
+  },
+  {
+    slug: "l2-067",
+    level: "L2",
+    seq: 67,
+    titleTarget: "داکتر",
+    titleTranslit: "dāktar",
+    titleEn: "The doctor",
+    sentences: [
+      { target: "حال من امروز خوب نیست.", translit: "hāl-e man emrōz khōb nēst.", en: "My condition is not good today." },
+      { target: "چشم من درد می‌کند.", translit: "chashm-e man dard mēkunad.", en: "My eye hurts." },
+      { target: "من به داکتر می‌روم.", translit: "man ba dāktar mērawam.", en: "I go to the doctor." },
+      { target: "داکتر حال من را می‌فهمد.", translit: "dāktar hāl-e man rā mēfahmad.", en: "The doctor understands my condition." },
+      { target: "داکتر می‌گوید: من مانده هستم.", translit: "dāktar mēgōyad: man mānda hastam.", en: "The doctor says: I am tired." },
+    ],
+    grammarPoints: ["ezafa-possession", "present-me", "object-ra", "negation"],
+  },
+  {
+    slug: "l2-068",
+    level: "L2",
+    seq: 68,
+    titleTarget: "دکان میوه",
+    titleTranslit: "dukān-e mēwa",
+    titleEn: "The fruit shop",
+    sentences: [
+      { target: "یک دکان نزدیک خانه ما است.", translit: "yak dukān nazdīk-e khāna-ye mā ast.", en: "A shop is near our house." },
+      { target: "این دکان میوه می‌فروشد.", translit: "īn dukān mēwa mēfarōshad.", en: "This shop sells fruit." },
+      { target: "من انار و سیب می‌خرم.", translit: "man anār wa sēb mēkharam.", en: "I buy pomegranates and apples." },
+      { target: "انار سرخ و میوه سبز است.", translit: "anār surkh wa mēwa sabz ast.", en: "The pomegranate is red and the fruit is green." },
+      { target: "من میوه را به خانه می‌برم.", translit: "man mēwa rā ba khāna mēbaram.", en: "I take the fruit home." },
+    ],
+    grammarPoints: ["present-me", "object-ra", "ezafa-possession", "prepositions"],
+  },
+  {
+    slug: "l2-069",
+    level: "L2",
+    seq: 69,
+    titleTarget: "اتاق من",
+    titleTranslit: "utāq-e man",
+    titleEn: "My room",
+    sentences: [
+      { target: "اتاق من خورد است.", translit: "utāq-e man khurd ast.", en: "My room is small." },
+      { target: "دروازه اتاق باز است.", translit: "darwāza-ye utāq bāz ast.", en: "The room door is open." },
+      { target: "رنگ اتاق آبی است.", translit: "rang-e utāq ābī ast.", en: "The room color is blue." },
+      { target: "من اینجا درس می‌خوانم.", translit: "man īnjā dars mēkhānam.", en: "I study here." },
+      { target: "اینجا بسیار آرام است.", translit: "īnjā bisyār ārām ast.", en: "It is very calm here." },
+    ],
+    grammarPoints: ["ezafa-possession", "pronouns-budan", "ezafa-adjectives", "present-me"],
+  },
+  {
+    slug: "l2-070",
+    level: "L2",
+    seq: 70,
+    titleTarget: "موتر پدر من",
+    titleTranslit: "mōtar-e padar-e man",
+    titleEn: "My father's car",
+    sentences: [
+      { target: "پدر من یک موتر دارد.", translit: "padar-e man yak mōtar dārad.", en: "My father has a car." },
+      { target: "رنگ موتر آبی است.", translit: "rang-e mōtar ābī ast.", en: "The car's color is blue." },
+      { target: "او ما را به بازار می‌برد.", translit: "ō mā rā ba bāzār mēbarad.", en: "He takes us to the bazaar." },
+      { target: "ما زود به دکان می‌رسیم.", translit: "mā zūd ba dukān mērasēm.", en: "We arrive at the shop quickly." },
+      { target: "پس ما دوباره به خانه می‌آییم.", translit: "pas mā dōbāra ba khāna mēāyēm.", en: "Then we come home again." },
+    ],
+    grammarPoints: ["ezafa-possession", "object-ra", "present-me", "dashtan-numbers"],
+  },
+  {
+    slug: "l2-071",
+    level: "L2",
+    seq: 71,
+    titleTarget: "درس ما",
+    titleTranslit: "dars-e mā",
+    titleEn: "Our lesson",
+    sentences: [
+      { target: "امروز ما یک درس جدید داریم.", translit: "emrōz mā yak dars-e jadīd dārēm.", en: "Today we have a new lesson." },
+      { target: "معلم به ما درس می‌دهد.", translit: "mu'allem ba mā dars mēdihad.", en: "The teacher gives us the lesson." },
+      { target: "من این درس را می‌فهمم.", translit: "man īn dars rā mēfahmam.", en: "I understand this lesson." },
+      { target: "امروز ما یک امتحان داریم.", translit: "emrōz mā yak imtihān dārēm.", en: "Today we have an exam." },
+      { target: "من امتحان را خوب می‌دانم.", translit: "man imtihān rā khōb mēdānam.", en: "I know the exam well." },
+    ],
+    grammarPoints: ["dashtan-numbers", "object-ra", "present-me", "ezafa-adjectives"],
+  },
+  {
+    slug: "l2-072",
+    level: "L2",
+    seq: 72,
+    titleTarget: "مهمان ما",
+    titleTranslit: "mehmān-e mā",
+    titleEn: "Our guest",
+    sentences: [
+      { target: "امشب یک مهمان به خانه ما می‌آید.", translit: "emshab yak mehmān ba khāna-ye mā mēāyad.", en: "Tonight a guest comes to our house." },
+      { target: "مادر من چای و میوه می‌آورد.", translit: "mādar-e man chāy wa mēwa mēāwarad.", en: "My mother brings tea and fruit." },
+      { target: "مهمان یک آهنگ می‌خواند.", translit: "mehmān yak āhang mēkhānad.", en: "The guest sings a song." },
+      { target: "آهنگ او بسیار مقبول است.", translit: "āhang-e ō bisyār maqbūl ast.", en: "His song is very beautiful." },
+      { target: "اینجا بسیار خوش است.", translit: "īnjā bisyār khush ast.", en: "It is very cheerful here." },
+    ],
+    grammarPoints: ["present-me", "ezafa-possession", "prepositions", "ezafa-adjectives"],
+  },
+  {
+    slug: "l2-073",
+    level: "L2",
+    seq: 73,
+    titleTarget: "فکر من",
+    titleTranslit: "fikr-e man",
+    titleEn: "My thought",
+    sentences: [
+      { target: "من یک فکر نو دارم.", translit: "man yak fikr-e naw dāram.", en: "I have a new idea." },
+      { target: "من یک خانه ساخته می‌توانم.", translit: "man yak khāna sākhta mētawānam.", en: "I can build a house." },
+      { target: "این کار زمان زیاد می‌خواهد.", translit: "īn kār zamān-e ziyād mēkhāhad.", en: "This work needs a lot of time." },
+      { target: "پس من کم می‌خوابم.", translit: "pas man kam mēkhābam.", en: "So I sleep little." },
+      { target: "اما فکر من خوب است.", translit: "ammā fikr-e man khōb ast.", en: "But my idea is good." },
+    ],
+    grammarPoints: ["dashtan-numbers", "present-me", "ezafa-possession", "negation"],
   },
 ];

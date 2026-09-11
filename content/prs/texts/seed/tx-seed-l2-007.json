@@ -194,7 +194,13 @@
     "lx-0387"
   ],
   "questions": [],
-  "grammarPoints": [],
+  "grammarPoints": [
+    "present-me",
+    "object-ra",
+    "plural-ha",
+    "negation",
+    "compound-verbs"
+  ],
   "newWordRatio": 0,
   "source": "seed",
   "createdAt": "2026-07-20T00:00:00.000Z",
