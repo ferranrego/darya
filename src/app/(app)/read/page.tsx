@@ -8,6 +8,8 @@ import { PriorWordsSheet } from "@/components/reader/prior-words-sheet";
 import { TextReader } from "@/components/reader/text-reader";
 import { Button } from "@/components/ui/button";
 import { levels, lexicon } from "@/lib/content/load";
+import { reReadCandidates } from "@/lib/content/reading-policy";
+import type { TextDocument } from "@/lib/content/schema";
 import { isTeachable } from "@/lib/content/teachability";
 import { beginnerPositionFor, knownSetsFor, selectUnread } from "@/lib/content/text-pool";
 import { isBeginnerLevel } from "@/lib/content/word-selection";
@@ -16,6 +18,7 @@ import { seedKnownWords } from "@/lib/db/words";
 import {
   useProfile,
   useReadTexts,
+  useReadTextsWithDocs,
   useSupabase,
   useTextsForLevel,
   useUser,
@@ -122,6 +125,31 @@ export default function ReadPage() {
     return selectUnread({ texts, readIds, known, activeTextId, beginnerPosition }) as typeof texts;
   }, [texts, readIds, userWords, activeTextId, known, profile?.level_estimate]);
 
+  /**
+   * A text worth returning to, if there is one and nothing new is waiting.
+   *
+   * Dismissed ids are kept for the session so finishing a re-read does not
+   * immediately offer the same text again - `user_texts` records that it was
+   * read, not how many times, and re-reading must not rewrite the first
+   * reading's date.
+   */
+  const [dismissedReRead, setDismissedReRead] = useState<Set<string>>(new Set());
+  const { data: readWithDocs } = useReadTextsWithDocs();
+  const reRead = useMemo(() => {
+    if (unread.length > 0 || !readWithDocs || !userWords) return null;
+    const due = new Set(
+      userWords
+        .filter((w) => w.status === "learning" && w.due && new Date(w.due) <= new Date())
+        .map((w) => w.lexeme_id),
+    );
+    const rows = readWithDocs
+      .filter((r) => r.texts?.doc && !dismissedReRead.has(r.text_id))
+      .map((r) => ({ doc: r.texts!.doc as TextDocument, readAt: r.read_at }));
+    return (
+      reReadCandidates({ read: rows, dueLexemeIds: due, now: new Date(), limit: 1 })[0] ?? null
+    );
+  }, [unread.length, readWithDocs, userWords, dismissedReRead]);
+
   const generate = useMutation({
     mutationFn: async () => {
       const res = await fetch("/api/generate", {
@@ -200,6 +228,43 @@ export default function ReadPage() {
 
   if (isLoadingTexts || isLoadingRead || !profile || !readRows || !userWords || (isSyncing && unread.length === 0)) {
     return <ReaderSkeleton />;
+  }
+
+  /**
+   * Nothing new to read - so read something again.
+   *
+   * Re-reading is one of the cheapest and best-evidenced ways to build reading
+   * fluency, and the app has never offered it: a text was read once and
+   * abandoned while its words went into a review deck as isolated cards. A
+   * text whose words are due again is the same repetition the scheduler is
+   * already asking for, in the form this app is actually good at.
+   *
+   * Placed before the generation retry on purpose. The old behaviour here was
+   * to ask the provider chain for more text - five free-tier quotas shared by
+   * every learner of the deployment - when something already written and
+   * already at the right level was sitting unread-again. This is better
+   * teaching and cheaper at the same time, which is rare enough to take.
+   */
+  if (reRead) {
+    return (
+      <>
+        <div className="mx-auto mb-2 max-w-md rounded-2xl bg-saffron-soft/40 px-4 py-3 text-center">
+          <p className="text-[13px] font-semibold text-ink">Read this one again</p>
+          <p className="mt-0.5 text-[12px] text-ink-soft">
+            {reRead.dueWords} of its words are due for review - meeting them in
+            a sentence beats meeting them on a card.
+          </p>
+        </div>
+        <TextReader
+          key={`reread-${reRead.doc.id}`}
+          doc={reRead.doc}
+          onFinished={() => {
+            setDismissedReRead((prev) => new Set(prev).add(reRead.doc.id));
+            void refetchRead();
+          }}
+        />
+      </>
+    );
   }
 
   if (unread.length === 0) {

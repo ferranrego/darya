@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ComprehensionCheck } from "./comprehension-check";
 import { availableLevels, lexicon, lexiconIndex } from "@/lib/content/load";
 import { questionsFor, type QuizResult } from "@/lib/content/comprehension";
+import { translitPolicy } from "@/lib/content/reading-policy";
 import { levelVocabulary } from "@/lib/content/level-vocabulary";
 import { nextLevelFor, type LevelCoverage } from "@/lib/content/promotion";
 import type { ReaderDocument } from "@/lib/content/schema";
@@ -115,7 +116,18 @@ export function TextReader({
   const [tappedSentence, setTappedSentence] = useState<string | null>(null);
   const [tapCount, setTapCount] = useState(0);
   const [expandedSentences, setExpandedSentences] = useState<Set<number>>(new Set());
-  const [showTranslit, setShowTranslit] = useState(false);
+  /**
+   * The pronunciation line, faded by level rather than left as one switch.
+   *
+   * With no audio anywhere in the app this line is the entire pronunciation of
+   * the language, so it is never removed - but left permanently on it is never
+   * put down either, and the Afghan script never becomes how a learner reads.
+   * On by default at L1 and one tap away everywhere else; the toggle below
+   * still works at every level, this only decides where it starts.
+   */
+  const [showTranslit, setShowTranslit] = useState(
+    () => translitPolicy(doc.level) === "always",
+  );
   const [showSyntax, setShowSyntax] = useState(false);
   const [phase, setPhase] = useState<"reading" | "quiz" | "done">("reading");
   const [showGuide, setShowGuide] = useState(false);
