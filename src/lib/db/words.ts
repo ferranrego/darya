@@ -90,9 +90,17 @@ export async function seedKnownWords(
   }));
   // A near-native assessment can seed the whole lexicon; chunk the upsert to
   // keep each request payload comfortably under PostgREST limits.
+  //
+  // `ignoreDuplicates`: these rows carry `fsrs: null`, so overwriting an
+  // existing row would erase that word's entire review history. That could not
+  // happen while the placement ran exactly once per account; it is the first
+  // thing that happens the moment a retake exists. A retake re-estimates the
+  // level - it never resets progress.
   const CHUNK = 500;
   for (let i = 0; i < rows.length; i += CHUNK) {
-    const { error } = await db.from("user_words").upsert(rows.slice(i, i + CHUNK));
+    const { error } = await db
+      .from("user_words")
+      .upsert(rows.slice(i, i + CHUNK), { ignoreDuplicates: true });
     if (error) throw error;
   }
 }

@@ -792,6 +792,37 @@ if (lexicon && levels) {
   }
 }
 
+/**
+ * Suffixes productive enough that root+suffix reads as a word.
+ *
+ * Not an exhaustive list of Dari morphology - only the endings that combine
+ * freely enough to make an invented word legible. Longest first, so that -وک
+ * is tried before -ک and the stem reported is the real one.
+ */
+const CONTROL_SUFFIXES = ["فشان", "ناک", "وش", "وک", "بان", "گر", "چه", "ک"];
+
+/** True when two keys differ by at most one insertion, deletion or substitution. */
+function withinOneEdit(a: string, b: string): boolean {
+  if (Math.abs(a.length - b.length) > 1) return false;
+  if (a === b) return true;
+  const [short, long] = a.length <= b.length ? [a, b] : [b, a];
+  let i = 0;
+  let j = 0;
+  let slack = 1;
+  while (i < short.length && j < long.length) {
+    if (short[i] === long[j]) {
+      i++;
+      j++;
+      continue;
+    }
+    if (slack === 0) return false;
+    slack--;
+    if (short.length === long.length) i++;
+    j++;
+  }
+  return true;
+}
+
 // --- Placement controls ----------------------------------------------------
 //
 // The invented words mixed into the sign-up grid. A control that turns out to
@@ -814,6 +845,10 @@ if (existsSync(controlsPath) && lexicon) {
     const controlIndex = buildIndex(lexicon.entries);
     const seen = new Set<string>();
     const before = errors;
+    // The end of the lexicon a learner would actually misread a control as.
+    const commonHeadwords = lexicon.entries
+      .filter((e) => e.freqBand <= 3)
+      .map((e) => ({ entry: e, key: matchKey(e.targetNormalized) }));
     for (const c of parsed.data.controls) {
       const resolved = controlIndex.resolve(c.target);
       if (resolved) {
@@ -825,6 +860,48 @@ if (existsSync(controlsPath) && lexicon) {
       const key = matchKey(c.target);
       if (seen.has(key)) fail(`placement-controls.json: "${c.target}" appears twice`);
       seen.add(key);
+
+      if (lang === "prs") {
+        /**
+         * Two ways a control can be readable without being a dictionary word,
+         * both found by a philologist in the first batch of forty and both
+         * mechanisable - which is this repo's rule: a finding you only fix
+         * comes back.
+         *
+         * First, a real root under a productive suffix. میزاک is میز "table"
+         * plus the Kabuli diminutive -ک and reads unmistakably as "little
+         * table"; سبزوک is سبز "green" the same way. A learner tapping one is
+         * reading, not over-claiming, and gets penalised for it.
+         */
+        for (const suffix of CONTROL_SUFFIXES) {
+          if (!c.target.endsWith(suffix)) continue;
+          const stem = c.target.slice(0, -suffix.length);
+          if (stem.length < 2) continue;
+          const root = controlIndex.resolve(stem);
+          if (root) {
+            fail(
+              `placement-controls.json: "${c.target}" is "${stem}" (${root.id} "${root.glossEn}") ` +
+                `plus the productive suffix "${suffix}" - a learner can read it`,
+            );
+            break;
+          }
+        }
+
+        /**
+         * Second, one letter from a common word. فرگوش differs from خرگوش
+         * "rabbit" only in where a dot sits, and مشتراخ from مشترک "shared"
+         * only in a final letter that is near-identical in most naskh faces.
+         * Checked against the common end of the lexicon only: a control need
+         * not be distant from a rare word nobody would misread it as.
+         */
+        const near = commonHeadwords.find((h) => withinOneEdit(matchKey(c.target), h.key));
+        if (near) {
+          fail(
+            `placement-controls.json: "${c.target}" is one letter from ` +
+              `"${near.entry.targetNormalized}" (${near.entry.id}, "${near.entry.glossEn}")`,
+          );
+        }
+      }
       if (lang === "prs") {
         // A control has to be pronounceable like everything else the app shows,
         // and one written in Iranian style would be a tell that it is a plant.

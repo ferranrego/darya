@@ -8,12 +8,12 @@
     },
     {
       "target": "سرماچ",
-      "translit": "sirmāch",
+      "translit": "sarmāch",
       "band": 2
     },
     {
-      "target": "برزوک",
-      "translit": "barzōk",
+      "target": "جلتور",
+      "translit": "jaltōr",
       "band": 3
     },
     {
@@ -22,18 +22,13 @@
       "band": 4
     },
     {
-      "target": "درمیز",
-      "translit": "durmēz",
-      "band": 5
-    },
-    {
-      "target": "شفناک",
-      "translit": "shifnāk",
+      "target": "چلغوت",
+      "translit": "chalghūt",
       "band": 6
     },
     {
-      "target": "تبروش",
-      "translit": "tabrōsh",
+      "target": "مرتیغ",
+      "translit": "martēgh",
       "band": 7
     },
     {
@@ -42,8 +37,8 @@
       "band": 8
     },
     {
-      "target": "چکور",
-      "translit": "chakwar",
+      "target": "تژمار",
+      "translit": "tizhmār",
       "band": 1
     },
     {
@@ -52,13 +47,13 @@
       "band": 2
     },
     {
-      "target": "همروش",
-      "translit": "hamrōsh",
+      "target": "پرنیچ",
+      "translit": "parnēch",
       "band": 3
     },
     {
-      "target": "وشکیل",
-      "translit": "washkēl",
+      "target": "ژندوق",
+      "translit": "zhandūq",
       "band": 4
     },
     {
@@ -72,13 +67,13 @@
       "band": 6
     },
     {
-      "target": "مشتراخ",
-      "translit": "mushtarākh",
+      "target": "سمغور",
+      "translit": "samghūr",
       "band": 7
     },
     {
-      "target": "فرگوش",
-      "translit": "fargōsh",
+      "target": "پژکال",
+      "translit": "pizhkāl",
       "band": 8
     },
     {
@@ -92,23 +87,18 @@
       "band": 2
     },
     {
-      "target": "سبزوک",
-      "translit": "sabzōk",
+      "target": "کشمود",
+      "translit": "kishmōd",
       "band": 3
     },
     {
-      "target": "ترناک",
-      "translit": "turnāk",
+      "target": "نمبیش",
+      "translit": "nambēsh",
       "band": 4
     },
     {
-      "target": "خلبیر",
-      "translit": "khalbēr",
-      "band": 5
-    },
-    {
-      "target": "رفشان",
-      "translit": "rafshān",
+      "target": "شلمیچ",
+      "translit": "shalmēch",
       "band": 6
     },
     {
@@ -122,13 +112,13 @@
       "band": 8
     },
     {
-      "target": "میزاک",
-      "translit": "mēzāk",
+      "target": "نخبور",
+      "translit": "nakhbōr",
       "band": 1
     },
     {
-      "target": "مرغوت",
-      "translit": "murghūt",
+      "target": "لمبیر",
+      "translit": "lambēr",
       "band": 2
     },
     {
@@ -147,8 +137,8 @@
       "band": 5
     },
     {
-      "target": "گلپرد",
-      "translit": "gulpard",
+      "target": "هلبوز",
+      "translit": "halbōz",
       "band": 6
     },
     {
@@ -162,13 +152,13 @@
       "band": 8
     },
     {
-      "target": "پژوند",
-      "translit": "pizhwand",
+      "target": "فلتاش",
+      "translit": "faltāsh",
       "band": 1
     },
     {
-      "target": "مهتاچ",
-      "translit": "mahtāch",
+      "target": "غنتاش",
+      "translit": "ghantāsh",
       "band": 2
     },
     {
@@ -192,13 +182,8 @@
       "band": 6
     },
     {
-      "target": "نگراب",
-      "translit": "nigrāb",
-      "band": 7
-    },
-    {
-      "target": "بهروش",
-      "translit": "bahrōsh",
+      "target": "غرمیس",
+      "translit": "ghurmēs",
       "band": 8
     }
   ]
