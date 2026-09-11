@@ -1,0 +1,172 @@
+{
+  "id": "tx-seed-l2-097",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "خانم معلم",
+  "titleTranslit": "khānum-e mu'allem",
+  "titleEn": "The lady teacher",
+  "sentences": [
+    {
+      "target": "خانم معلم ما جوان است.",
+      "translit": "khānum-e mu'allem-e mā jawān ast.",
+      "en": "Our lady teacher is young.",
+      "tokens": [
+        {
+          "surface": "خانم",
+          "lexemeId": "lx-0323"
+        },
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "جوان",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او درس را زود شروع می‌کند.",
+      "translit": "ō dars rā zūd shurū' mēkunad.",
+      "en": "She starts the lesson early.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "شروع",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "شاگردان سوال می‌کنند.",
+      "translit": "shāgerdān sawāl mēkunand.",
+      "en": "The students ask questions.",
+      "tokens": [
+        {
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "سوال",
+          "lexemeId": "lx-0221"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او به خاطر شاگردان کار می‌کند.",
+      "translit": "ō ba khātir-e shāgerdān kār mēkunad.",
+      "en": "She works for the students' sake.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خاطر",
+          "lexemeId": "lx-0336"
+        },
+        {
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "ما جواب او را می‌فهمیم.",
+      "translit": "mā jawāb-e ō rā mēfahmēm.",
+      "en": "We understand her answer.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "جواب",
+          "lexemeId": "lx-0222"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌فهمیم",
+          "lexemeId": "lx-0157"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0007",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0077",
+    "lx-0078",
+    "lx-0079",
+    "lx-0097",
+    "lx-0157",
+    "lx-0215",
+    "lx-0216",
+    "lx-0221",
+    "lx-0222",
+    "lx-0257",
+    "lx-0323",
+    "lx-0336",
+    "lx-0356"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 97
+}

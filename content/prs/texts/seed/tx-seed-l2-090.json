@@ -1,0 +1,190 @@
+{
+  "id": "tx-seed-l2-090",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "سفر ما",
+  "titleTranslit": "safar-e mā",
+  "titleEn": "Our trip",
+  "sentences": [
+    {
+      "target": "ما یک سفر خورد داریم.",
+      "translit": "mā yak safar-e khurd dārēm.",
+      "en": "We have a short trip.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "سفر",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "این سفر به قریه مادرکلان است.",
+      "translit": "īn safar ba qarya-ye mādarkalān ast.",
+      "en": "This trip is to grandmother's village.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "سفر",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "مادرکلان",
+          "lexemeId": "lx-0187"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما زود می‌رویم و شب می‌آییم.",
+      "translit": "mā zūd mērawēm wa shab mēāyēm.",
+      "en": "We go early and come at night.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "می‌آییم",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "مامان من نان و چای می‌گذارد.",
+      "translit": "māmān-e man nān wa chāy mēguzārad.",
+      "en": "My mom puts out bread and tea.",
+      "tokens": [
+        {
+          "surface": "مامان",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "می‌گذارد",
+          "lexemeId": "lx-0369"
+        }
+      ]
+    },
+    {
+      "target": "سفر ما بسیار خوش است.",
+      "translit": "safar-e mā bisyār khush ast.",
+      "en": "Our trip is very cheerful.",
+      "tokens": [
+        {
+          "surface": "سفر",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0038",
+    "lx-0039",
+    "lx-0041",
+    "lx-0066",
+    "lx-0081",
+    "lx-0089",
+    "lx-0090",
+    "lx-0095",
+    "lx-0107",
+    "lx-0167",
+    "lx-0187",
+    "lx-0246",
+    "lx-0354",
+    "lx-0356",
+    "lx-0369"
+  ],
+  "newWords": [
+    "lx-0246"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 90
+}

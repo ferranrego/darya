@@ -1,0 +1,148 @@
+{
+  "id": "tx-seed-l2-096",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "شب تاریک",
+  "titleTranslit": "shab-e tārīk",
+  "titleEn": "A dark night",
+  "sentences": [
+    {
+      "target": "شب است و اتاق تاریک است.",
+      "translit": "shab ast wa utāq tārīk ast.",
+      "en": "It is night and the room is dark.",
+      "tokens": [
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "تاریک",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "دروازه بسته است.",
+      "translit": "darwāza basta ast.",
+      "en": "The door is closed.",
+      "tokens": [
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "بسته",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مامان من زود می‌خوابد.",
+      "translit": "māmān-e man zūd mēkhābad.",
+      "en": "My mom sleeps early.",
+      "tokens": [
+        {
+          "surface": "مامان",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "می‌خوابد",
+          "lexemeId": "lx-0159"
+        }
+      ]
+    },
+    {
+      "target": "من هم می‌خوابم.",
+      "translit": "man ham mēkhābam.",
+      "en": "I sleep too.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "می‌خوابم",
+          "lexemeId": "lx-0159"
+        }
+      ]
+    },
+    {
+      "target": "دل من آرام است.",
+      "translit": "dil-e man ārām ast.",
+      "en": "My heart is calm.",
+      "tokens": [
+        {
+          "surface": "دل",
+          "lexemeId": "lx-0124"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0041",
+    "lx-0124",
+    "lx-0159",
+    "lx-0195",
+    "lx-0196",
+    "lx-0197",
+    "lx-0200",
+    "lx-0214",
+    "lx-0354",
+    "lx-0356"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 96
+}

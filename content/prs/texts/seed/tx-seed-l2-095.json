@@ -1,0 +1,185 @@
+{
+  "id": "tx-seed-l2-095",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "رئیس جوان",
+  "titleTranslit": "ra'īs-e jawān",
+  "titleEn": "The young boss",
+  "sentences": [
+    {
+      "target": "رئیس ما بسیار جوان است.",
+      "translit": "ra'īs-e mā bisyār jawān ast.",
+      "en": "Our boss is very young.",
+      "tokens": [
+        {
+          "surface": "رئیس",
+          "lexemeId": "lx-0509"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "جوان",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او هر سوال ما را می‌فهمد.",
+      "translit": "ō har sawāl-e mā rā mēfahmad.",
+      "en": "He understands every question of ours.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "سوال",
+          "lexemeId": "lx-0221"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌فهمد",
+          "lexemeId": "lx-0157"
+        }
+      ]
+    },
+    {
+      "target": "او جواب زود می‌دهد.",
+      "translit": "ō jawāb zūd mēdihad.",
+      "en": "He gives an answer quickly.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "جواب",
+          "lexemeId": "lx-0222"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "ما به خاطر او خوش هستیم.",
+      "translit": "mā ba khātir-e ō khush hastēm.",
+      "en": "We are happy because of him.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خاطر",
+          "lexemeId": "lx-0336"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "رئیس جوان کار زیاد کرده می‌تواند.",
+      "translit": "ra'īs-e jawān kār-e ziyād karda mētawānad.",
+      "en": "The young boss can do a lot of work.",
+      "tokens": [
+        {
+          "surface": "رئیس",
+          "lexemeId": "lx-0509"
+        },
+        {
+          "surface": "جوان",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "کرده",
+          "lexemeId": "lx-0097"
+        },
+        {
+          "surface": "می‌تواند",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0007",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0069",
+    "lx-0079",
+    "lx-0096",
+    "lx-0097",
+    "lx-0100",
+    "lx-0107",
+    "lx-0157",
+    "lx-0158",
+    "lx-0166",
+    "lx-0167",
+    "lx-0221",
+    "lx-0222",
+    "lx-0257",
+    "lx-0336",
+    "lx-0356",
+    "lx-0509"
+  ],
+  "newWords": [
+    "lx-0257"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 95
+}

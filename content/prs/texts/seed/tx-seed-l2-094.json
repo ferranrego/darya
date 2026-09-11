@@ -1,0 +1,180 @@
+{
+  "id": "tx-seed-l2-094",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "پیسه من",
+  "titleTranslit": "paysa-ye man",
+  "titleEn": "My money",
+  "sentences": [
+    {
+      "target": "من پیسه کم دارم.",
+      "translit": "man paysa kam dāram.",
+      "en": "I have little money.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "پیسه",
+          "lexemeId": "lx-0206"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من از این پیسه استفاده می‌کنم.",
+      "translit": "man az īn paysa istifāda mēkunam.",
+      "en": "I use this money.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "پیسه",
+          "lexemeId": "lx-0206"
+        },
+        {
+          "surface": "استفاده",
+          "lexemeId": "lx-0339"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "مامان من هم پیسه می‌دهد.",
+      "translit": "māmān-e man ham paysa mēdihad.",
+      "en": "My mom also gives money.",
+      "tokens": [
+        {
+          "surface": "مامان",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "پیسه",
+          "lexemeId": "lx-0206"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "من با پیسه یک لباس نو می‌خرم.",
+      "translit": "man bā paysa yak libās-e naw mēkharam.",
+      "en": "I buy new clothes with the money.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "پیسه",
+          "lexemeId": "lx-0206"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌خرم",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "پس من لباس نو می‌پوشم.",
+      "translit": "pas man libās-e naw mēpōsham.",
+      "en": "So I wear new clothes.",
+      "tokens": [
+        {
+          "surface": "پس",
+          "lexemeId": "lx-0172"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌پوشم",
+          "lexemeId": "lx-0231"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0006",
+    "lx-0008",
+    "lx-0011",
+    "lx-0024",
+    "lx-0025",
+    "lx-0067",
+    "lx-0070",
+    "lx-0095",
+    "lx-0097",
+    "lx-0100",
+    "lx-0172",
+    "lx-0205",
+    "lx-0206",
+    "lx-0230",
+    "lx-0231",
+    "lx-0339",
+    "lx-0354"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 94
+}

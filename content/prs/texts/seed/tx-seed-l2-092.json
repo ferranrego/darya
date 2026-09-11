@@ -1,0 +1,168 @@
+{
+  "id": "tx-seed-l2-092",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "فوتبال ما",
+  "titleTranslit": "fūtbāl-e mā",
+  "titleEn": "Our football",
+  "sentences": [
+    {
+      "target": "ما هر روز فوتبال بازی می‌کنیم.",
+      "translit": "mā har rōz fūtbāl bāzī mēkunēm.",
+      "en": "We play football every day.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "فوتبال",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "بازی زود شروع می‌شود.",
+      "translit": "bāzī zūd shurū' mēshawad.",
+      "en": "The game starts early.",
+      "tokens": [
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "شروع",
+          "lexemeId": "lx-0215"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "من تیز دویده می‌توانم.",
+      "translit": "man tēz dawīda mētawānam.",
+      "en": "I can run fast.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "دویده",
+          "lexemeId": "lx-0376"
+        },
+        {
+          "surface": "می‌توانم",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "دوست من خوب بازی کرده می‌تواند.",
+      "translit": "dōst-e man khōb bāzī karda mētawānad.",
+      "en": "My friend can play well.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "کرده",
+          "lexemeId": "lx-0097"
+        },
+        {
+          "surface": "می‌تواند",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "شب هوا تاریک می‌شود.",
+      "translit": "shab hawā tārīk mēshawad.",
+      "en": "At night the air gets dark.",
+      "tokens": [
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "تاریک",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0011",
+    "lx-0014",
+    "lx-0040",
+    "lx-0041",
+    "lx-0058",
+    "lx-0063",
+    "lx-0097",
+    "lx-0126",
+    "lx-0149",
+    "lx-0158",
+    "lx-0166",
+    "lx-0191",
+    "lx-0192",
+    "lx-0195",
+    "lx-0215",
+    "lx-0356",
+    "lx-0376",
+    "lx-6071"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 92
+}

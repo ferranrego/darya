@@ -1,0 +1,167 @@
+{
+  "id": "tx-seed-l2-091",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دکان بسته است",
+  "titleTranslit": "dukān basta ast",
+  "titleEn": "The shop is closed",
+  "sentences": [
+    {
+      "target": "امروز دکان بسته است.",
+      "translit": "emrōz dukān basta ast.",
+      "en": "Today the shop is closed.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "بسته",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "رئیس دکان اینجا نیست.",
+      "translit": "ra'īs-e dukān īnjā nēst.",
+      "en": "The shop's owner is not here.",
+      "tokens": [
+        {
+          "surface": "رئیس",
+          "lexemeId": "lx-0509"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "من پیسه دارم اما دکان بسته است.",
+      "translit": "man paysa dāram ammā dukān basta ast.",
+      "en": "I have money but the shop is closed.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "پیسه",
+          "lexemeId": "lx-0206"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        },
+        {
+          "surface": "اما",
+          "lexemeId": "lx-0168"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "بسته",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "حال من بد است.",
+      "translit": "hāl-e man bad ast.",
+      "en": "My condition is bad.",
+      "tokens": [
+        {
+          "surface": "حال",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "پس من به بازار می‌روم.",
+      "translit": "pas man ba bāzār mērawam.",
+      "en": "So I go to the bazaar.",
+      "tokens": [
+        {
+          "surface": "پس",
+          "lexemeId": "lx-0172"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "می‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0043",
+    "lx-0064",
+    "lx-0089",
+    "lx-0095",
+    "lx-0096",
+    "lx-0133",
+    "lx-0134",
+    "lx-0168",
+    "lx-0172",
+    "lx-0174",
+    "lx-0200",
+    "lx-0206",
+    "lx-0325",
+    "lx-0509"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 91
+}

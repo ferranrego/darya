@@ -1,0 +1,176 @@
+{
+  "id": "tx-seed-l2-093",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "فکر من",
+  "titleTranslit": "fikr-e man",
+  "titleEn": "My idea",
+  "sentences": [
+    {
+      "target": "من یک فکر خوب دارم.",
+      "translit": "man yak fikr-e khōb dāram.",
+      "en": "I have a good idea.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-0292"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من این فکر را به خانم خود می‌گویم.",
+      "translit": "man īn fikr rā ba khānum-e khud mēgōyam.",
+      "en": "I tell this idea to my wife.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-0292"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانم",
+          "lexemeId": "lx-0323"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "می‌گویم",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "او فکر من را می‌فهمد.",
+      "translit": "ō fikr-e man rā mēfahmad.",
+      "en": "She understands my idea.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-0292"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌فهمد",
+          "lexemeId": "lx-0157"
+        }
+      ]
+    },
+    {
+      "target": "ما یک قرار می‌گذاریم.",
+      "translit": "mā yak qarār mēguzārēm.",
+      "en": "We make an appointment.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "قرار",
+          "lexemeId": "lx-0324"
+        },
+        {
+          "surface": "می‌گذاریم",
+          "lexemeId": "lx-0369"
+        }
+      ]
+    },
+    {
+      "target": "قرار ما فردا است.",
+      "translit": "qarār-e mā fardā ast.",
+      "en": "Our appointment is tomorrow.",
+      "tokens": [
+        {
+          "surface": "قرار",
+          "lexemeId": "lx-0324"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0044",
+    "lx-0063",
+    "lx-0093",
+    "lx-0095",
+    "lx-0157",
+    "lx-0178",
+    "lx-0292",
+    "lx-0323",
+    "lx-0324",
+    "lx-0369"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 93
+}
