@@ -128,6 +128,52 @@ heading("Re-exposure (PEDAGOGY §7 wants 6-12 encounters)");
   console.log(`L1+L2 together: ${ids.length} words, seen once ${once} (${pct(once, ids.length)})`);
 }
 
+heading("Compound verbs a learner taps the wrong half of");
+{
+  /**
+   * The tokenizer splits compound verbs, so each half resolves on its own.
+   * For کار کردن that is harmless - tapping کار and being told "work" is
+   * roughly right. For دوست داشتن it is not: the learner taps دوست in "I like
+   * this book" and the app teaches them "friend".
+   *
+   * Reported rather than fixed, because the fix is not local. Pointing both
+   * tokens at the compound lexeme would be rejected by the seed-text token
+   * check in `validate-content.ts`, which asserts that a token's stored id is
+   * what `resolve(surface)` returns - and resolve, having no sentence context,
+   * correctly returns the noun. Changing that is a decision about the
+   * tokenizer, not a content repair.
+   */
+  const byId = new Map(lexicon.entries.map((e) => [e.id, e]));
+  // Two-word compounds only. A four-word idiom like "به منصه ظهور رساندن"
+  // starts with به, and matching on that alone reported every "به من" in the
+  // corpus as a mistokenised verb - a report that cries wolf gets ignored,
+  // which is worse than no report.
+  const compounds = lexicon.entries.filter(
+    (e) => e.pos === "verb" && e.targetNormalized.split(" ").length === 2,
+  );
+  const firstHalf = new Map<string, string>();
+  for (const c of compounds) firstHalf.set(c.targetNormalized.split(" ")[0], c.id);
+
+  const hits: string[] = [];
+  for (const doc of docs) {
+    for (const sentence of doc.sentences) {
+      sentence.tokens.forEach((t, i) => {
+        const compoundId = firstHalf.get(t.surface);
+        const next = sentence.tokens[i + 1];
+        if (!compoundId || !next || t.lexemeId === compoundId) return;
+        const light = byId.get(compoundId)!.targetNormalized.split(" ")[1];
+        const stem = light.replace(/(دن|تن)$/u, "");
+        if (stem.length < 2 || !next.surface.includes(stem.slice(0, 2))) return;
+        const got = t.lexemeId ? byId.get(t.lexemeId) : null;
+        hits.push(`${doc.id}: "${t.surface} ${next.surface}" taps as ${got ? `"${got.glossEn}"` : "unresolved"}`);
+      });
+    }
+  }
+  console.log(`${compounds.length} compound verbs in the dictionary`);
+  console.log(`${hits.length} place(s) where tapping the first half teaches the wrong word:`);
+  for (const h of hits.slice(0, 12)) console.log(`  ${h}`);
+}
+
 heading("Register (the app teaches a register nobody speaks)");
 {
   const byRegister = new Map<string, number>();
