@@ -88,9 +88,9 @@
       ]
     },
     {
-      "target": "مادر من لباس را می‌بندد.",
-      "translit": "mādar-e man libās rā mēbandad.",
-      "en": "My mother fastens the clothes.",
+      "target": "مادر من دروازه را می‌بندد.",
+      "translit": "mādar-e man darwāza rā mēbandad.",
+      "en": "My mother closes the door.",
       "tokens": [
         {
           "surface": "مادر",
@@ -101,8 +101,8 @@
           "lexemeId": "lx-0011"
         },
         {
-          "surface": "لباس",
-          "lexemeId": "lx-0230"
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
         },
         {
           "surface": "را",
@@ -148,6 +148,7 @@
     "lx-0068",
     "lx-0141",
     "lx-0143",
+    "lx-0197",
     "lx-0203",
     "lx-0230",
     "lx-0231",

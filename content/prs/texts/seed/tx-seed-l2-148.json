@@ -92,9 +92,9 @@
       ]
     },
     {
-      "target": "ما می‌گوییم مبارک باشد.",
-      "translit": "mā mēgōyēm mubārak bāshad.",
-      "en": "We say congratulations.",
+      "target": "ما می‌گوییم: «مبارک باشد».",
+      "translit": "mā mēgōyēm: «mubārak bāshad».",
+      "en": "We say: congratulations.",
       "tokens": [
         {
           "surface": "ما",

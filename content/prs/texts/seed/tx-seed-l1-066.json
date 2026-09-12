@@ -2,8 +2,8 @@
   "id": "tx-seed-l1-066",
   "formatVersion": "1.5.0",
   "level": "L1",
-  "titleTarget": "سر و پای",
-  "titleTranslit": "sar wa pāy",
+  "titleTarget": "سر و پا",
+  "titleTranslit": "sar wa pā",
   "titleEn": "Head and foot",
   "sentences": [
     {
@@ -35,7 +35,7 @@
     },
     {
       "target": "پای من هم درد می‌کند.",
-      "translit": "pāy-e man ham dard mēkunad.",
+      "translit": "pā-ye man ham dard mēkunad.",
       "en": "My foot hurts too.",
       "tokens": [
         {

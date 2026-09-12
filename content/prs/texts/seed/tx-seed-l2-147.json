@@ -61,9 +61,9 @@
       ]
     },
     {
-      "target": "مردم می‌گویند مبارک باشد.",
-      "translit": "mardum mēgōyand mubārak bāshad.",
-      "en": "People say congratulations.",
+      "target": "مردم می‌گویند: «مبارک باشد».",
+      "translit": "mardum mēgōyand: «mubārak bāshad».",
+      "en": "People say: congratulations.",
       "tokens": [
         {
           "surface": "مردم",

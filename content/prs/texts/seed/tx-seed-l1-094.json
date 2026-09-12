@@ -7,14 +7,10 @@
   "titleEn": "Girl and boy",
   "sentences": [
     {
-      "target": "یک دختر و بچه اینجا هستند.",
-      "translit": "yak dukhtar wa bacha īnjā hastand.",
+      "target": "دختر و بچه اینجا هستند.",
+      "translit": "dukhtar wa bacha īnjā hastand.",
       "en": "A girl and a boy are here.",
       "tokens": [
-        {
-          "surface": "یک",
-          "lexemeId": "lx-0025"
-        },
         {
           "surface": "دختر",
           "lexemeId": "lx-0056"
@@ -130,7 +126,6 @@
     "lx-0001",
     "lx-0002",
     "lx-0016",
-    "lx-0025",
     "lx-0026",
     "lx-0051",
     "lx-0056",

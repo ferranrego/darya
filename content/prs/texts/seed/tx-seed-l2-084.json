@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "پای من درد می‌کند",
-  "titleTranslit": "pāy-e man dard mēkunad",
+  "titleTranslit": "pā-ye man dard mēkunad",
   "titleEn": "My foot hurts",
   "sentences": [
     {
       "target": "پای من الان بسیار درد می‌کند.",
-      "translit": "pāy-e man al'ān bisyār dard mēkunad.",
+      "translit": "pā-ye man al'ān bisyār dard mēkunad.",
       "en": "My foot hurts a lot now.",
       "tokens": [
         {
@@ -66,7 +66,7 @@
     },
     {
       "target": "داکتر پای من را می‌بیند.",
-      "translit": "dāktar pāy-e man rā mēbīnad.",
+      "translit": "dāktar pā-ye man rā mēbīnad.",
       "en": "The doctor looks at my foot.",
       "tokens": [
         {
@@ -155,7 +155,7 @@
     },
     {
       "target": "فردا پای من جور می‌شود.",
-      "translit": "fardā pāy-e man jōr mēshawad.",
+      "translit": "fardā pā-ye man jōr mēshawad.",
       "en": "Tomorrow my foot gets well.",
       "tokens": [
         {

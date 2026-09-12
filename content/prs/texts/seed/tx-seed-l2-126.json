@@ -9,7 +9,7 @@
     {
       "target": "باغ ما یک دیوار خورد دارد.",
       "translit": "bāgh-e mā yak dēwār-e khurd dārad.",
-      "en": "Our garden has a low wall.",
+      "en": "Our garden has a small wall.",
       "tokens": [
         {
           "surface": "باغ",
@@ -131,14 +131,10 @@
       ]
     },
     {
-      "target": "شام ما همه در باغ هستیم.",
-      "translit": "shām mā hama dar bāgh hastēm.",
+      "target": "ما همه شام در باغ هستیم.",
+      "translit": "mā hama shām dar bāgh hastēm.",
       "en": "In the evening we are all in the garden.",
       "tokens": [
-        {
-          "surface": "شام",
-          "lexemeId": "lx-6131"
-        },
         {
           "surface": "ما",
           "lexemeId": "lx-0014"
@@ -146,6 +142,10 @@
         {
           "surface": "همه",
           "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "شام",
+          "lexemeId": "lx-6131"
         },
         {
           "surface": "در",

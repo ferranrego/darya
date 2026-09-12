@@ -88,9 +88,9 @@
       ]
     },
     {
-      "target": "من از کلکین به آسمان می‌بینم.",
-      "translit": "man az kelkīn ba āsmān mēbīnam.",
-      "en": "I look at the sky from the window.",
+      "target": "من از کلکین آسمان را می‌بینم.",
+      "translit": "man az kelkīn āsmān rā mēbīnam.",
+      "en": "I see the sky from the window.",
       "tokens": [
         {
           "surface": "من",
@@ -105,12 +105,12 @@
           "lexemeId": "lx-0198"
         },
         {
-          "surface": "به",
-          "lexemeId": "lx-0003"
-        },
-        {
           "surface": "آسمان",
           "lexemeId": "lx-0147"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
         },
         {
           "surface": "می‌بینم",
@@ -143,7 +143,6 @@
     }
   ],
   "vocabUsed": [
-    "lx-0003",
     "lx-0004",
     "lx-0007",
     "lx-0010",

@@ -7,10 +7,14 @@
   "titleEn": "Fire and winter",
   "sentences": [
     {
-      "target": "در زمستان ما آتش داریم.",
-      "translit": "dar zemestān mā ātash dārēm.",
+      "target": "ما در زمستان آتش داریم.",
+      "translit": "mā dar zemestān ātash dārēm.",
       "en": "In winter we have a fire.",
       "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
         {
           "surface": "در",
           "lexemeId": "lx-0002"
@@ -18,10 +22,6 @@
         {
           "surface": "زمستان",
           "lexemeId": "lx-0131"
-        },
-        {
-          "surface": "ما",
-          "lexemeId": "lx-0014"
         },
         {
           "surface": "آتش",

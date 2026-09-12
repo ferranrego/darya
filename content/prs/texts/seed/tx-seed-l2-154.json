@@ -88,9 +88,9 @@
       ]
     },
     {
-      "target": "کار او حتی شب تمام نمی‌شود.",
-      "translit": "kār-e ō hattā shab tamām namēshawad.",
-      "en": "His work is not even finished at night.",
+      "target": "کار او شب هم تمام نمی‌شود.",
+      "translit": "kār-e ō shab ham tamām namēshawad.",
+      "en": "His work is not finished at night either.",
       "tokens": [
         {
           "surface": "کار",
@@ -101,12 +101,12 @@
           "lexemeId": "lx-0012"
         },
         {
-          "surface": "حتی",
-          "lexemeId": "lx-0343"
-        },
-        {
           "surface": "شب",
           "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
         },
         {
           "surface": "تمام",
@@ -115,6 +115,29 @@
         {
           "surface": "نمی‌شود",
           "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "او وقت زیاد ندارد.",
+      "translit": "ō waqt ziyād nadārad.",
+      "en": "He does not have a lot of time.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "وقت",
+          "lexemeId": "lx-0047"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "ندارد",
+          "lexemeId": "lx-0095"
         }
       ]
     },
@@ -156,21 +179,24 @@
     "lx-0010",
     "lx-0011",
     "lx-0012",
+    "lx-0024",
     "lx-0036",
     "lx-0040",
     "lx-0041",
+    "lx-0047",
     "lx-0059",
     "lx-0062",
+    "lx-0069",
     "lx-0079",
     "lx-0089",
     "lx-0090",
+    "lx-0095",
     "lx-0108",
     "lx-0149",
     "lx-0155",
     "lx-0166",
     "lx-0185",
     "lx-0310",
-    "lx-0343",
     "lx-0507",
     "lx-6131"
   ],

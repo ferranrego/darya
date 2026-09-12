@@ -34,9 +34,9 @@
       ]
     },
     {
-      "target": "مردم افغانستان مهمان را دوست دارند.",
-      "translit": "mardum-e afghānestān mehmān rā dōst dārand.",
-      "en": "The people of Afghanistan love a guest.",
+      "target": "مردم افغانستان مهمان دوست دارند.",
+      "translit": "mardum-e afghānestān mehmān dōst dārand.",
+      "en": "The people of Afghanistan love guests.",
       "tokens": [
         {
           "surface": "مردم",
@@ -49,10 +49,6 @@
         {
           "surface": "مهمان",
           "lexemeId": "lx-0188"
-        },
-        {
-          "surface": "را",
-          "lexemeId": "lx-0007"
         },
         {
           "surface": "دوست",
@@ -100,9 +96,9 @@
       ]
     },
     {
-      "target": "مردم پیر قصه و فرهنگ می‌دانند.",
-      "translit": "mardum-e pīr qessa wa farhang mēdānand.",
-      "en": "Old people know stories and culture.",
+      "target": "مردم پیر قصه‌های زیاد می‌دانند.",
+      "translit": "mardum-e pīr qessa-hā-ye ziyād mēdānand.",
+      "en": "Old people know many stories.",
       "tokens": [
         {
           "surface": "مردم",
@@ -113,16 +109,12 @@
           "lexemeId": "lx-0258"
         },
         {
-          "surface": "قصه",
+          "surface": "قصه‌های",
           "lexemeId": "lx-0189"
         },
         {
-          "surface": "و",
-          "lexemeId": "lx-0001"
-        },
-        {
-          "surface": "فرهنگ",
-          "lexemeId": "lx-0267"
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
         },
         {
           "surface": "می‌دانند",
@@ -163,7 +155,6 @@
     }
   ],
   "vocabUsed": [
-    "lx-0001",
     "lx-0002",
     "lx-0007",
     "lx-0010",
@@ -171,6 +162,7 @@
     "lx-0039",
     "lx-0058",
     "lx-0059",
+    "lx-0069",
     "lx-0085",
     "lx-0094",
     "lx-0095",

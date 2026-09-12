@@ -23,7 +23,8 @@
         "strict SOV word order: subject, then object/predicate, then the verb always last - چای خوب است (the tea is good), never خوب است چای",
         "possessive/attributive ezafe links two nouns, or a noun and an adjective, and its script form depends on what the first word ends in: unwritten after a consonant (برادر من, barādar-e man - the vowel is real in speech and simply not spelled) or after silent-he in ordinary Afghan practice (خانه ما, khāna-ye mā - the ZWNJ+ی spelling خانه‌ی is the Iranian convention, not this corpus's), and a plain ی after ا or و (دنیای من, dunyā-ye man)",
         "yes/no questions (rising intonation only, no marker) and chetōr/kujā content questions",
-        "negation with نـ (na-) directly on the verb: نیست (nēst) is budan's own suppletive negative, not نه + است"
+        "negation with نـ (na-) directly on the verb: نیست (nēst) is budan's own suppletive negative, not نه + است",
+        "the numeral یک (yak) before a noun, as in یک کتاب - it is not the indefinite suffix -ی, which is introduced at L2. Admitted here because 11 of the 39 original L1 texts already used it and nothing flagged them: the spec omitted a structure the shipped corpus had always taught, which is the same silent disagreement between spec and content that left L1 reading as two different courses"
       ],
       "avgSentenceWords": 5,
       "available": true
@@ -47,10 +48,10 @@
       "sentenceLengthHint": "strictly max 8 words per sentence, can use simple conjunctions but no complex clauses",
       "maxSentenceWords": 8,
       "grammarAllowed": [
-        "present tense mē- verbs, always spelled with the ZWNJ (می‌روم, mēravam), never a plain space or fused together (never میروم or می روم); present stems are irregular and must not be guessed from the infinitive",
+        "present tense mē- verbs, always spelled with the ZWNJ (می‌روم, mērawam), never a plain space or fused together (never میروم or می روم); present stems are irregular and must not be guessed from the infinitive",
         "the object marker را marks a definite/specific direct object and is dropped for a generic or indefinite one: من سیب را می‌خورم (I eat the apple - a specific one) but نان می‌خورم (I eat bread - generically) - this is a property of what is meant, not of the noun itself",
         "the indefinite marker ی (yak/-ی) never combines with ezafe on the same noun: یک کتاب or کتابی, never both at once",
-        "ham, besyār, negation with na-/namē- (نمی‌روم, nemēravam - same ZWNJ rule as the affirmative)",
+        "ham, besyār, negation with na-/namē- (نمی‌روم, nemērawam - same ZWNJ rule as the affirmative)",
         "داشتن (to have) is suppletive like بودن: its present is bare دارم/داری/دارد, never a mē- form - never می‌دارم"
       ],
       "avgSentenceWords": 6,

@@ -103,17 +103,17 @@
       ]
     },
     {
-      "target": "بچه‌ها به کشتی می‌بینند.",
-      "translit": "bacha-hā ba kishtī mēbīnand.",
-      "en": "The children look at the ship.",
+      "target": "بچه‌ها طرف کشتی می‌بینند.",
+      "translit": "bacha-hā taraf-e kishtī mēbīnand.",
+      "en": "The children look toward the ship.",
       "tokens": [
         {
           "surface": "بچه‌ها",
           "lexemeId": "lx-0057"
         },
         {
-          "surface": "به",
-          "lexemeId": "lx-0003"
+          "surface": "طرف",
+          "lexemeId": "lx-0607"
         },
         {
           "surface": "کشتی",
@@ -129,7 +129,6 @@
   "vocabUsed": [
     "lx-0001",
     "lx-0002",
-    "lx-0003",
     "lx-0010",
     "lx-0025",
     "lx-0057",
@@ -141,6 +140,7 @@
     "lx-0143",
     "lx-0160",
     "lx-0560",
+    "lx-0607",
     "lx-6071"
   ],
   "newWords": [],

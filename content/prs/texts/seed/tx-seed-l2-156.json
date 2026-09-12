@@ -107,13 +107,17 @@
       ]
     },
     {
-      "target": "خواهش کار بد نیست.",
-      "translit": "khāhish kār-e bad nēst.",
-      "en": "A request is not a bad thing.",
+      "target": "خواهش کردن کار بد نیست.",
+      "translit": "khāhish kardan kār-e bad nēst.",
+      "en": "Asking is not a bad thing.",
       "tokens": [
         {
           "surface": "خواهش",
           "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "کردن",
+          "lexemeId": "lx-0097"
         },
         {
           "surface": "کار",

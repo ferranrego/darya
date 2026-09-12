@@ -53,25 +53,21 @@
       ]
     },
     {
-      "target": "من گپ معلم می‌شنوم.",
-      "translit": "man gap-e mu'allem mēshunawam.",
-      "en": "I hear the teacher's talk.",
+      "target": "معلم گپ می‌زند.",
+      "translit": "mu'allem gap mēzanad.",
+      "en": "The teacher talks.",
       "tokens": [
         {
-          "surface": "من",
-          "lexemeId": "lx-0011"
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
         },
         {
           "surface": "گپ",
           "lexemeId": "lx-0151"
         },
         {
-          "surface": "معلم",
-          "lexemeId": "lx-0078"
-        },
-        {
-          "surface": "می‌شنوم",
-          "lexemeId": "lx-0156"
+          "surface": "می‌زند",
+          "lexemeId": "lx-0152"
         }
       ]
     },
@@ -135,6 +131,7 @@
     "lx-0122",
     "lx-0123",
     "lx-0151",
+    "lx-0152",
     "lx-0156",
     "lx-0317"
   ],

@@ -111,14 +111,10 @@
       ]
     },
     {
-      "target": "بازی ما بسیار خوش است.",
-      "translit": "bāzī-ye mā bisyār khush ast.",
-      "en": "Our game is very cheerful.",
+      "target": "ما بسیار خوش هستیم.",
+      "translit": "mā bisyār khush hastēm.",
+      "en": "We are very happy.",
       "tokens": [
-        {
-          "surface": "بازی",
-          "lexemeId": "lx-0191"
-        },
         {
           "surface": "ما",
           "lexemeId": "lx-0014"
@@ -132,8 +128,8 @@
           "lexemeId": "lx-0107"
         },
         {
-          "surface": "است",
-          "lexemeId": "lx-0010"
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
         }
       ]
     }
@@ -147,6 +143,7 @@
     "lx-0040",
     "lx-0053",
     "lx-0063",
+    "lx-0096",
     "lx-0097",
     "lx-0107",
     "lx-0158",

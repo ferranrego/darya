@@ -2,18 +2,18 @@
   "id": "tx-seed-l2-146",
   "formatVersion": "1.5.0",
   "level": "L2",
-  "titleTarget": "زمان ما",
-  "titleTranslit": "zamān-e mā",
+  "titleTarget": "وقت ما",
+  "titleTranslit": "waqt-e mā",
   "titleEn": "Our time",
   "sentences": [
     {
-      "target": "زمان ما بسیار کم است.",
-      "translit": "zamān-e mā bisyār kam ast.",
+      "target": "وقت ما بسیار کم است.",
+      "translit": "waqt-e mā bisyār kam ast.",
       "en": "Our time is very short.",
       "tokens": [
         {
-          "surface": "زمان",
-          "lexemeId": "lx-0358"
+          "surface": "وقت",
+          "lexemeId": "lx-0047"
         },
         {
           "surface": "ما",
@@ -34,8 +34,8 @@
       ]
     },
     {
-      "target": "ما زمان زیاد نداریم.",
-      "translit": "mā zamān-e ziyād nadārēm.",
+      "target": "ما وقت زیاد نداریم.",
+      "translit": "mā waqt ziyād nadārēm.",
       "en": "We do not have a lot of time.",
       "tokens": [
         {
@@ -43,8 +43,8 @@
           "lexemeId": "lx-0014"
         },
         {
-          "surface": "زمان",
-          "lexemeId": "lx-0358"
+          "surface": "وقت",
+          "lexemeId": "lx-0047"
         },
         {
           "surface": "زیاد",
@@ -80,6 +80,29 @@
       ]
     },
     {
+      "target": "من وقت زیاد ندارم.",
+      "translit": "man waqt ziyād nadāram.",
+      "en": "I do not have a lot of time.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "وقت",
+          "lexemeId": "lx-0047"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "ندارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
       "target": "من به خاطر کار مانده هستم.",
       "translit": "man ba khātir-e kār mānda hastam.",
       "en": "I am tired because of the work.",
@@ -111,25 +134,56 @@
       ]
     },
     {
-      "target": "فردا زمان بهتر است.",
-      "translit": "fardā zamān bihtar ast.",
-      "en": "Tomorrow the time is better.",
+      "target": "وقت من بسیار کم است.",
+      "translit": "waqt-e man bisyār kam ast.",
+      "en": "My time is very short.",
+      "tokens": [
+        {
+          "surface": "وقت",
+          "lexemeId": "lx-0047"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "فردا ما وقت زیاد داریم.",
+      "translit": "fardā mā waqt ziyād dārēm.",
+      "en": "Tomorrow we have a lot of time.",
       "tokens": [
         {
           "surface": "فردا",
           "lexemeId": "lx-0044"
         },
         {
-          "surface": "زمان",
-          "lexemeId": "lx-0358"
+          "surface": "ما",
+          "lexemeId": "lx-0014"
         },
         {
-          "surface": "بهتر",
-          "lexemeId": "lx-0357"
+          "surface": "وقت",
+          "lexemeId": "lx-0047"
         },
         {
-          "surface": "است",
-          "lexemeId": "lx-0010"
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
         }
       ]
     }
@@ -140,6 +194,7 @@
     "lx-0011",
     "lx-0014",
     "lx-0044",
+    "lx-0047",
     "lx-0069",
     "lx-0070",
     "lx-0079",
@@ -148,9 +203,7 @@
     "lx-0108",
     "lx-0167",
     "lx-0310",
-    "lx-0336",
-    "lx-0357",
-    "lx-0358"
+    "lx-0336"
   ],
   "newWords": [],
   "questions": [],

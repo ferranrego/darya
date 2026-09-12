@@ -7,8 +7,8 @@
   "titleEn": "An old thing",
   "sentences": [
     {
-      "target": "در خانه ما چیز کهنه است.",
-      "translit": "dar khāna-ye mā chīz-e kuhna ast.",
+      "target": "در خانه ما چیزهای کهنه است.",
+      "translit": "dar khāna-ye mā chīz-hā-ye kuhna ast.",
       "en": "There are old things in our house.",
       "tokens": [
         {
@@ -24,7 +24,7 @@
           "lexemeId": "lx-0014"
         },
         {
-          "surface": "چیز",
+          "surface": "چیزهای",
           "lexemeId": "lx-0164"
         },
         {
@@ -65,9 +65,9 @@
       ]
     },
     {
-      "target": "پدر من آن می‌برد.",
-      "translit": "padar-e man ān mēbarad.",
-      "en": "My father takes it.",
+      "target": "پدر من چیز کهنه می‌برد.",
+      "translit": "padar-e man chīz-e kuhna mēbarad.",
+      "en": "My father takes the old thing.",
       "tokens": [
         {
           "surface": "پدر",
@@ -78,8 +78,12 @@
           "lexemeId": "lx-0011"
         },
         {
-          "surface": "آن",
-          "lexemeId": "lx-0009"
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
         },
         {
           "surface": "می‌برد",
@@ -144,7 +148,6 @@
   ],
   "vocabUsed": [
     "lx-0002",
-    "lx-0009",
     "lx-0010",
     "lx-0011",
     "lx-0012",
