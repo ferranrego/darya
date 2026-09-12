@@ -731,11 +731,23 @@ if (lexicon && lang === "prs") {
     "lx-5342", // بیمارستان itself, an entry in its own right
   ]);
   for (const rule of profile.prompts.interferenceRules) {
-    const key = matchKey(rule.wrong);
+    /**
+     * Multi-word rules need a sequence match, not a token match.
+     *
+     * `خلیج فارس` is two words, and this compared single tokens against the
+     * whole key - so a two-word rule could never fire, silently. The lexicon's
+     * own خلیج entry carried the example "خلیج فارس منابع نفتی زیادی دارد" the
+     * entire time, which is the exact string the generator is told never to
+     * write. A check that cannot match one of its own rules is worse than no
+     * check, because the passing build says the rule is satisfied.
+     */
+    const wanted = rule.wrong.split(/\s+/).map(matchKey);
+    const matches = (tokens: string[]) =>
+      tokens.some((_, i) => wanted.every((w, k) => matchKey(tokens[i + k] ?? "") === w));
     for (const e of lexicon.entries) {
       if (MACHINE_SENSE.has(e.id)) continue;
       if (!e.exampleTarget) continue;
-      if (!tokenize(e.exampleTarget).some((t) => matchKey(t) === key)) continue;
+      if (!matches(tokenize(e.exampleTarget))) continue;
       fail(
         `lexicon ${e.id}: example uses "${rule.wrong}" where Dari says ` +
           `"${rule.right}" - the same substitution live-check.ts flags in a ` +
