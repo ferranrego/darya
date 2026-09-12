@@ -6076,8 +6076,8 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "شام است و آسمان تاریک می‌شود.", translit: "shām ast wa āsmān tārīk mēshawad.", en: "It is evening and the sky gets dark." },
       { target: "آسمان شب بسیار مقبول است.", translit: "āsmān-e shab bisyār maqbūl ast.", en: "The night sky is very beautiful." },
-      { target: "ما بعد از شام در حویلی می‌نشینیم.", translit: "mā ba'd az shām dar haweli mēnishīnēm.", en: "After dinner we sit in the courtyard." },
-      { target: "دیوار حویلی بلند است.", translit: "dēwār-e haweli buland ast.", en: "The courtyard wall is tall." },
+      { target: "ما بعد از شام در حویلی می‌نشینیم.", translit: "mā ba'd az shām dar hawēlī mēnishīnēm.", en: "After dinner we sit in the courtyard." },
+      { target: "دیوار حویلی بلند است.", translit: "dēwār-e hawēlī buland ast.", en: "The courtyard wall is tall." },
       { target: "مادر من شام را می‌پزد.", translit: "mādar-e man shām rā mēpazad.", en: "My mother cooks the dinner." },
     ],
   },
@@ -6544,7 +6544,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "zan wa khāhar",
     titleEn: "The woman and the sister",
     sentences: [
-      { target: "یک زن در حویلی است.", translit: "yak zan dar haweli ast.", en: "A woman is in the courtyard." },
+      { target: "یک زن در حویلی است.", translit: "yak zan dar hawēlī ast.", en: "A woman is in the courtyard." },
       { target: "خواهر من هم آنجا است.", translit: "khāhar-e man ham ānjā ast.", en: "My sister is there too." },
       { target: "آنها با هم گپ می‌زنند.", translit: "ānhā bā ham gap mēzanand.", en: "They talk together." },
       { target: "زن نام خواهر من می‌داند.", translit: "zan nām-e khāhar-e man mēdānad.", en: "The woman knows my sister's name." },

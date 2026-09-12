@@ -3983,7 +3983,7 @@
     },
     {
       "target": "زیر",
-      "translit": "zer",
+      "translit": "zēr",
       "glossEn": "under, below",
       "pos": "preposition",
       "register": "neutral",
@@ -4082,7 +4082,7 @@
       "id": "lx-0306",
       "target": "مورد",
       "targetNormalized": "مورد",
-      "translit": "mawrid",
+      "translit": "mōrid",
       "glossEn": "case, subject",
       "pos": "noun",
       "freqRank": 188,
@@ -4090,7 +4090,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "در این مورد صحبت کن.",
-      "exampleTranslit": "dar īn mawrid suhbat kun.",
+      "exampleTranslit": "dar īn mōrid suhbat kun.",
       "exampleEn": "Talk about this subject.",
       "tags": [
         "Abstract Concepts"
@@ -93827,7 +93827,7 @@
       "id": "lx-5489",
       "target": "ترمیم",
       "targetNormalized": "ترمیم",
-      "translit": "tarmim",
+      "translit": "tarmēm",
       "glossEn": "restoration/repair",
       "pos": "noun",
       "freqRank": 4889,

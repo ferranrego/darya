@@ -34,6 +34,7 @@ const lexicon = lexiconFileSchema.parse(
   JSON.parse(readFileSync(join(root, "lexicon", "lexicon.json"), "utf8")),
 );
 const index = langProfile.text.buildIndex(lexicon.entries);
+const byLexemeId = new Map(lexicon.entries.map((e) => [e.id, e]));
 const seedDir = join(root, "texts", "seed");
 const docs: TextDocument[] = readdirSync(seedDir)
   .filter((f) => f.endsWith(".json"))
@@ -216,6 +217,53 @@ heading("Compound verbs a learner taps the wrong half of");
   console.log(`${compounds.length} compound verbs in the dictionary`);
   console.log(`${hits.length} place(s) where tapping the first half teaches the wrong word:`);
   for (const h of hits.slice(0, 12)) console.log(`  ${h}`);
+}
+
+heading("Words the beginner texts and the dictionary spell differently");
+{
+  /**
+   * The same word, two spellings, one tap apart.
+   *
+   * Transliteration is the app's only pronunciation guide - there is no audio -
+   * so a word spelled `marēz` in the sentence and `marīz` on the card it opens
+   * teaches two pronunciations of one word. A corpus-wide audit counts 2,678 of
+   * these, which is too many to act on; this lists only the beginner texts,
+   * where they matter most and where the list is short enough to take to a
+   * philologist.
+   *
+   * Deliberately not auto-fixed. Every one of these is a vowel-quality call
+   * (ē vs ī, e vs i, ō vs ū) where both spellings are well-formed, so the
+   * repo's own flattening rule settles none of them - it was tried, and it
+   * settled zero. An earlier attempt to normalise them by corpus majority made
+   * things worse, turning `shīsha` into the Iranian `shishe`, because the
+   * majority is not the authority. A native Kabuli speaker is.
+   */
+  const rows = new Map<string, { script: string; lex: string; text: string; n: number }>();
+  for (const doc of docs) {
+    if (doc.level !== "L1" && doc.level !== "L2") continue;
+    for (const s of doc.sentences) {
+      if (!s.translit) continue;
+      const words = s.translit.replace(/[.,!?؟،]/g, "").split(/\s+/);
+      if (words.length !== s.tokens.length) continue;
+      s.tokens.forEach((t, i) => {
+        if (!t.lexemeId) return;
+        const e = byLexemeId.get(t.lexemeId);
+        if (!e?.translit || t.surface !== e.targetNormalized) return;
+        const w = words[i].replace(/-(e|ye)$/u, "");
+        if (!w || w.toLowerCase() === e.translit.toLowerCase()) return;
+        const key = `${e.id}|${w}`;
+        const row = rows.get(key) ?? { script: e.targetNormalized, lex: e.translit, text: w, n: 0 };
+        row.n += 1;
+        rows.set(key, row);
+      });
+    }
+  }
+  const sorted = [...rows.values()].sort((a, b) => b.n - a.n);
+  console.log(`${sorted.length} words are spelled one way in a beginner sentence and another on their card:`);
+  for (const r of sorted.slice(0, 20)) {
+    console.log(`  ${r.script.padEnd(12)} card "${r.lex}" vs text "${r.text}" (${r.n}x)`);
+  }
+  if (sorted.length > 20) console.log(`  … and ${sorted.length - 20} more`);
 }
 
 heading("Register (the app teaches a register nobody speaks)");
