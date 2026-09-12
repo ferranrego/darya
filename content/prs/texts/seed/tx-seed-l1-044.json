@@ -1,0 +1,171 @@
+{
+  "id": "tx-seed-l1-044",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "کار پدر",
+  "titleTranslit": "kār-e padar",
+  "titleEn": "Father's work",
+  "sentences": [
+    {
+      "target": "پدر من هر روز کار می‌کند.",
+      "translit": "padar-e man har rōz kār mēkunad.",
+      "en": "My father works every day.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او صبح از خانه می‌رود.",
+      "translit": "ō subh az khāna mērawad.",
+      "en": "He leaves the house in the morning.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "شام او به خانه می‌آید.",
+      "translit": "shām ō ba khāna mēāyad.",
+      "en": "In the evening he comes home.",
+      "tokens": [
+        {
+          "surface": "شام",
+          "lexemeId": "lx-6131"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "او مانده می‌شود.",
+      "translit": "ō mānda mēshawad.",
+      "en": "He becomes tired.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "مانده",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "ما به او چای می‌دهیم.",
+      "translit": "mā ba ō chāy mēdihēm.",
+      "en": "We give him tea.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "می‌دهیم",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0004",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0036",
+    "lx-0039",
+    "lx-0040",
+    "lx-0042",
+    "lx-0052",
+    "lx-0079",
+    "lx-0089",
+    "lx-0090",
+    "lx-0097",
+    "lx-0100",
+    "lx-0108",
+    "lx-0149",
+    "lx-0166",
+    "lx-6131"
+  ],
+  "newWords": [
+    "lx-6131"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 44
+}

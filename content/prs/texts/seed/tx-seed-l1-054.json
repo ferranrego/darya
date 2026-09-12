@@ -1,0 +1,165 @@
+{
+  "id": "tx-seed-l1-054",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "من چه می‌خواهم",
+  "titleTranslit": "man che mēkhāham",
+  "titleEn": "What I want",
+  "sentences": [
+    {
+      "target": "من یک کتاب نو می‌خواهم.",
+      "translit": "man yak ketāb-e naw mēkhāham.",
+      "en": "I want a new book.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌خواهم",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "برادر من چای می‌خواهد.",
+      "translit": "barādar-e man chāy mēkhāhad.",
+      "en": "My brother wants tea.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "می‌خواهد",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "مادر من نان می‌گیرد.",
+      "translit": "mādar-e man nān mēgīrad.",
+      "en": "My mother takes bread.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "می‌گیرد",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "من از او یک چیز می‌گیرم.",
+      "translit": "man az ō yak chīz mēgīram.",
+      "en": "I take a thing from him.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "می‌گیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "ما همه خوش هستیم.",
+      "translit": "mā hama khush hastēm.",
+      "en": "We are all happy.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0038",
+    "lx-0039",
+    "lx-0051",
+    "lx-0053",
+    "lx-0067",
+    "lx-0074",
+    "lx-0096",
+    "lx-0099",
+    "lx-0107",
+    "lx-0153",
+    "lx-0164",
+    "lx-0165"
+  ],
+  "newWords": [
+    "lx-0164"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 54
+}

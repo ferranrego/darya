@@ -1,0 +1,174 @@
+{
+  "id": "tx-seed-l1-058",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دو دوست",
+  "titleTranslit": "dū dōst",
+  "titleEn": "Two friends",
+  "sentences": [
+    {
+      "target": "دو بچه دوست هستند.",
+      "translit": "dū bacha dōst hastand.",
+      "en": "Two boys are friends.",
+      "tokens": [
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "بچه",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "آنها هر روز با هم هستند.",
+      "translit": "ānhā har rōz bā ham hastand.",
+      "en": "They are together every day.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "یک بچه کلان و یک خورد.",
+      "translit": "yak bacha kalān wa yak khurd.",
+      "en": "One boy is big, one small.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بچه",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        }
+      ]
+    },
+    {
+      "target": "آنها در سرک می‌دوند.",
+      "translit": "ānhā dar sarak mēdawand.",
+      "en": "They run in the street.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "می‌دوند",
+          "lexemeId": "lx-0376"
+        }
+      ]
+    },
+    {
+      "target": "بعد آنها به خانه می‌روند.",
+      "translit": "ba'd ānhā ba khāna mērawand.",
+      "en": "Then they go home.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌روند",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0008",
+    "lx-0016",
+    "lx-0024",
+    "lx-0025",
+    "lx-0026",
+    "lx-0036",
+    "lx-0040",
+    "lx-0057",
+    "lx-0058",
+    "lx-0065",
+    "lx-0066",
+    "lx-0082",
+    "lx-0089",
+    "lx-0096",
+    "lx-0166",
+    "lx-0301",
+    "lx-0376"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 58
+}

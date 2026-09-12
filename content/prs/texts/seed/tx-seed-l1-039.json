@@ -1,0 +1,130 @@
+{
+  "id": "tx-seed-l1-039",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "روز و شب",
+  "titleTranslit": "rōz wa shab",
+  "titleEn": "Day and night",
+  "sentences": [
+    {
+      "target": "روز روشن است.",
+      "translit": "rōz rōshan ast.",
+      "en": "The day is bright.",
+      "tokens": [
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "روشن",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "شب تاریک می‌شود.",
+      "translit": "shab tārīk mēshawad.",
+      "en": "The night becomes dark.",
+      "tokens": [
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "تاریک",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "من شب می‌خوابم.",
+      "translit": "man shab mēkhābam.",
+      "en": "I sleep at night.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "می‌خوابم",
+          "lexemeId": "lx-0159"
+        }
+      ]
+    },
+    {
+      "target": "حالا روز است.",
+      "translit": "hālā rōz ast.",
+      "en": "Now it is day.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "امروز هوا گرم است.",
+      "translit": "emrōz hawā garm ast.",
+      "en": "Today the weather is warm.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0040",
+    "lx-0041",
+    "lx-0043",
+    "lx-0046",
+    "lx-0071",
+    "lx-0126",
+    "lx-0149",
+    "lx-0159",
+    "lx-0194",
+    "lx-0195"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 39
+}

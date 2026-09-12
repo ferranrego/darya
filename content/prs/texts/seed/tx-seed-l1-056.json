@@ -1,0 +1,149 @@
+{
+  "id": "tx-seed-l1-056",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "آن مرد",
+  "titleTranslit": "ān mard",
+  "titleEn": "That man",
+  "sentences": [
+    {
+      "target": "آن مرد اینجا کار می‌کند.",
+      "translit": "ān mard īnjā kār mēkunad.",
+      "en": "That man works here.",
+      "tokens": [
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "مرد",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او یک دختر دارد.",
+      "translit": "ō yak dukhtar dārad.",
+      "en": "He has a daughter.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "دختر او مکتب می‌رود.",
+      "translit": "dukhtar-e ō maktab mērawad.",
+      "en": "His daughter goes to school.",
+      "tokens": [
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "او خوب می‌داند.",
+      "translit": "ō khōb mēdānad.",
+      "en": "She knows well.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "می‌داند",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "آنها زندگی خوب دارند.",
+      "translit": "ānhā zindagī-ye khōb dārand.",
+      "en": "They have a good life.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "دارند",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0009",
+    "lx-0012",
+    "lx-0016",
+    "lx-0025",
+    "lx-0056",
+    "lx-0060",
+    "lx-0063",
+    "lx-0075",
+    "lx-0079",
+    "lx-0089",
+    "lx-0094",
+    "lx-0095",
+    "lx-0097",
+    "lx-0150",
+    "lx-0174"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 56
+}

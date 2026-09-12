@@ -1,0 +1,155 @@
+{
+  "id": "tx-seed-l1-038",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "من و دوست من",
+  "titleTranslit": "man wa dōst-e man",
+  "titleEn": "My friend and I",
+  "sentences": [
+    {
+      "target": "من یک دوست دارم.",
+      "translit": "man yak dōst dāram.",
+      "en": "I have a friend.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "دوست من مرد جوان است.",
+      "translit": "dōst-e man mard-e jawān ast.",
+      "en": "My friend is a young man.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "مرد",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "جوان",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما دو نفر هستیم.",
+      "translit": "mā dū nafar hastēm.",
+      "en": "We are two people.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "نفر",
+          "lexemeId": "lx-0329"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "ما هم کار می‌کنیم.",
+      "translit": "mā ham kār mēkunēm.",
+      "en": "We work too.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "امروز روز خوب است.",
+      "translit": "emrōz rōz-e khōb ast.",
+      "en": "Today is a good day.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0024",
+    "lx-0025",
+    "lx-0026",
+    "lx-0040",
+    "lx-0043",
+    "lx-0058",
+    "lx-0060",
+    "lx-0063",
+    "lx-0079",
+    "lx-0095",
+    "lx-0096",
+    "lx-0097",
+    "lx-0257",
+    "lx-0329"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 38
+}

@@ -1,0 +1,159 @@
+{
+  "id": "tx-seed-l1-052",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دریا و شهر",
+  "titleTranslit": "daryā wa shahr",
+  "titleEn": "The river and the city",
+  "sentences": [
+    {
+      "target": "یک دریا نزدیک شهر است.",
+      "translit": "yak daryā nazdīk-e shahr ast.",
+      "en": "A river is near the city.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "شهر",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "آب دریا سرد است.",
+      "translit": "āb-e daryā sard ast.",
+      "en": "The river water is cold.",
+      "tokens": [
+        {
+          "surface": "آب",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم شهر اینجا می‌آیند.",
+      "translit": "mardum-e shahr īnjā mēāyand.",
+      "en": "The city people come here.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "شهر",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "می‌آیند",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "همه با هم خوش هستند.",
+      "translit": "hama bā ham khush hastand.",
+      "en": "Everyone is happy together.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "زندگی اینجا خوب است.",
+      "translit": "zindagī īnjā khōb ast.",
+      "en": "Life here is good.",
+      "tokens": [
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0008",
+    "lx-0010",
+    "lx-0024",
+    "lx-0025",
+    "lx-0037",
+    "lx-0059",
+    "lx-0063",
+    "lx-0072",
+    "lx-0080",
+    "lx-0090",
+    "lx-0096",
+    "lx-0107",
+    "lx-0136",
+    "lx-0150",
+    "lx-0165",
+    "lx-0174",
+    "lx-0176"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 52
+}

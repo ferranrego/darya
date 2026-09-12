@@ -1,0 +1,164 @@
+{
+  "id": "tx-seed-l1-047",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "امروز",
+  "titleTranslit": "emrōz",
+  "titleEn": "Today",
+  "sentences": [
+    {
+      "target": "امروز من به مکتب می‌روم.",
+      "translit": "emrōz man ba maktab mērawam.",
+      "en": "Today I go to school.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "می‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "معلم ما اینجا است.",
+      "translit": "mu'allem-e mā īnjā ast.",
+      "en": "Our teacher is here.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او به ما درس می‌دهد.",
+      "translit": "ō ba mā dars mēdihad.",
+      "en": "He gives us a lesson.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "من و دوست من می‌خوانیم.",
+      "translit": "man wa dōst-e man mēkhānēm.",
+      "en": "My friend and I read.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "می‌خوانیم",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "حالا ما خوش هستیم.",
+      "translit": "hālā mā khush hastēm.",
+      "en": "Now we are happy.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0043",
+    "lx-0046",
+    "lx-0058",
+    "lx-0075",
+    "lx-0078",
+    "lx-0089",
+    "lx-0096",
+    "lx-0098",
+    "lx-0100",
+    "lx-0107",
+    "lx-0174",
+    "lx-0216"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 47
+}

@@ -1,0 +1,172 @@
+{
+  "id": "tx-seed-l1-040",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "مردم شهر",
+  "titleTranslit": "mardum-e shahr",
+  "titleEn": "City people",
+  "sentences": [
+    {
+      "target": "مردم این شهر زیاد هستند.",
+      "translit": "mardum-e īn shahr ziyād hastand.",
+      "en": "The people of this city are many.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "شهر",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "مردم هر روز کار می‌کنند.",
+      "translit": "mardum har rōz kār mēkunand.",
+      "en": "People work every day.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "آن مرد از بازار می‌آید.",
+      "translit": "ān mard az bāzār mēāyad.",
+      "en": "That man comes from the bazaar.",
+      "tokens": [
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "مرد",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "او با دوست خود می‌رود.",
+      "translit": "ō bā dōst-e khud mērawad.",
+      "en": "He goes with his friend.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "شهر ما کلان است.",
+      "translit": "shahr-e mā kalān ast.",
+      "en": "Our city is big.",
+      "tokens": [
+        {
+          "surface": "شهر",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0006",
+    "lx-0008",
+    "lx-0009",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0040",
+    "lx-0058",
+    "lx-0059",
+    "lx-0060",
+    "lx-0065",
+    "lx-0069",
+    "lx-0079",
+    "lx-0080",
+    "lx-0089",
+    "lx-0090",
+    "lx-0096",
+    "lx-0097",
+    "lx-0133",
+    "lx-0166",
+    "lx-0178"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 40
+}

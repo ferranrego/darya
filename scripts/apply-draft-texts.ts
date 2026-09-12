@@ -100,6 +100,16 @@ draft.forEach((text, i) => {
       problems.push(`${where} sentence ${j + 1}: subordinator - ${level} is main clauses only`);
     }
     /**
+     * The object marker را below L2.
+     *
+     * `levels.json` introduces را in L2's `grammarAllowed`; L1 has only the
+     * present mē- verbs, the copula and داشتن. A beginner meeting را before
+     * the lesson that explains it reads it as a word rather than a marker.
+     */
+    if (level === "L1" && /(^|\s)را(\s|$)/u.test(s.target)) {
+      problems.push(`${where} sentence ${j + 1}: را is introduced at L2, not L1`);
+    }
+    /**
      * `این جای` / `آن جای` instead of `اینجا` / `آنجا`.
      *
      * Written apart it reads as the ezafe construct "this place of…", which

@@ -1,0 +1,195 @@
+{
+  "id": "tx-seed-l1-050",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "هفته من",
+  "titleTranslit": "hafta-ye man",
+  "titleEn": "My week",
+  "sentences": [
+    {
+      "target": "یک هفته هفت روز دارد.",
+      "translit": "yak hafta haft rōz dārad.",
+      "en": "A week has seven days.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "هفت",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "هر هفته من کار می‌کنم.",
+      "translit": "har hafta man kār mēkunam.",
+      "en": "Every week I work.",
+      "tokens": [
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "این هفته هوا سرد است.",
+      "translit": "īn hafta hawā sard ast.",
+      "en": "This week the weather is cold.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "صبح من زود برمی‌خیزم.",
+      "translit": "subh man zūd barmēkhēzam.",
+      "en": "In the morning I get up early.",
+      "tokens": [
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "برمی‌خیزم",
+          "lexemeId": "lx-0363"
+        }
+      ]
+    },
+    {
+      "target": "هفته نو زود می‌آید.",
+      "translit": "hafta-ye naw zūd mēāyad.",
+      "en": "The new week comes soon.",
+      "tokens": [
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "پدر من هم زود برمی‌خیزد.",
+      "translit": "padar-e man ham zūd barmēkhēzad.",
+      "en": "My father also gets up early.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "برمی‌خیزد",
+          "lexemeId": "lx-0363"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0025",
+    "lx-0031",
+    "lx-0040",
+    "lx-0042",
+    "lx-0050",
+    "lx-0052",
+    "lx-0067",
+    "lx-0072",
+    "lx-0079",
+    "lx-0090",
+    "lx-0095",
+    "lx-0097",
+    "lx-0126",
+    "lx-0166",
+    "lx-0356",
+    "lx-0363"
+  ],
+  "newWords": [
+    "lx-0363"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 50
+}

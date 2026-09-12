@@ -1,0 +1,178 @@
+{
+  "id": "tx-seed-l1-055",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "صبح ما",
+  "titleTranslit": "subh-e mā",
+  "titleEn": "Our morning",
+  "sentences": [
+    {
+      "target": "صبح هوا سرد است.",
+      "translit": "subh hawā sard ast.",
+      "en": "In the morning the air is cold.",
+      "tokens": [
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من صبح چای می‌خورم.",
+      "translit": "man subh chāy mēkhuram.",
+      "en": "I drink tea in the morning.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "می‌خورم",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "پدر من صبح کار می‌کند.",
+      "translit": "padar-e man subh kār mēkunad.",
+      "en": "My father works in the morning.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "مادر من نان می‌پزد.",
+      "translit": "mādar-e man nān mēpazad.",
+      "en": "My mother bakes bread.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "می‌پزد",
+          "lexemeId": "lx-0385"
+        }
+      ]
+    },
+    {
+      "target": "همه صبح زود برمی‌خیزند.",
+      "translit": "hama subh zūd barmēkhēzand.",
+      "en": "Everyone gets up early in the morning.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "برمی‌خیزند",
+          "lexemeId": "lx-0363"
+        }
+      ]
+    },
+    {
+      "target": "من هم زود برمی‌خیزم.",
+      "translit": "man ham zūd barmēkhēzam.",
+      "en": "I get up early too.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "برمی‌خیزم",
+          "lexemeId": "lx-0363"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0038",
+    "lx-0039",
+    "lx-0042",
+    "lx-0051",
+    "lx-0052",
+    "lx-0072",
+    "lx-0079",
+    "lx-0091",
+    "lx-0097",
+    "lx-0126",
+    "lx-0165",
+    "lx-0356",
+    "lx-0363",
+    "lx-0385"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 55
+}

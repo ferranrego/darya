@@ -1,0 +1,148 @@
+{
+  "id": "tx-seed-l1-051",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دست و پای",
+  "titleTranslit": "dast wa pāy",
+  "titleEn": "Hand and foot",
+  "sentences": [
+    {
+      "target": "دست من خورد است.",
+      "translit": "dast-e man khurd ast.",
+      "en": "My hand is small.",
+      "tokens": [
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "پای من کلان است.",
+      "translit": "pāy-e man kalān ast.",
+      "en": "My foot is big.",
+      "tokens": [
+        {
+          "surface": "پای",
+          "lexemeId": "lx-0125"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "سر من گرم است.",
+      "translit": "sar-e man garm ast.",
+      "en": "My head is warm.",
+      "tokens": [
+        {
+          "surface": "سر",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "امروز دست من سرد است.",
+      "translit": "emrōz dast-e man sard ast.",
+      "en": "Today my hand is cold.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من جور هستم.",
+      "translit": "man jōr hastam.",
+      "en": "I am well.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "هستم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0043",
+    "lx-0065",
+    "lx-0066",
+    "lx-0071",
+    "lx-0072",
+    "lx-0096",
+    "lx-0106",
+    "lx-0121",
+    "lx-0122",
+    "lx-0125"
+  ],
+  "newWords": [
+    "lx-0106"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 51
+}
