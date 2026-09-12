@@ -1,0 +1,146 @@
+{
+  "id": "tx-seed-l1-093",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "امروز و فردا",
+  "titleTranslit": "emrōz wa fardā",
+  "titleEn": "Today and tomorrow",
+  "sentences": [
+    {
+      "target": "امروز من کار زیاد دارم.",
+      "translit": "emrōz man kār-e ziyād dāram.",
+      "en": "Today I have a lot of work.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "فردا من مکتب می‌روم.",
+      "translit": "fardā man maktab mērawam.",
+      "en": "Tomorrow I go to school.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "می‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "معلم من درس می‌دهد.",
+      "translit": "mu'allem-e man dars mēdihad.",
+      "en": "My teacher gives a lesson.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "من یاد می‌گیرم.",
+      "translit": "man yād mēgīram.",
+      "en": "I learn.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یاد",
+          "lexemeId": "lx-0154"
+        },
+        {
+          "surface": "می‌گیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "زندگی خوب است.",
+      "translit": "zindagī khōb ast.",
+      "en": "Life is good.",
+      "tokens": [
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0043",
+    "lx-0044",
+    "lx-0063",
+    "lx-0069",
+    "lx-0075",
+    "lx-0078",
+    "lx-0079",
+    "lx-0089",
+    "lx-0095",
+    "lx-0100",
+    "lx-0150",
+    "lx-0153",
+    "lx-0154",
+    "lx-0216"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 93
+}

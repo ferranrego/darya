@@ -1,0 +1,156 @@
+{
+  "id": "tx-seed-l1-094",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دختر و بچه",
+  "titleTranslit": "dukhtar wa bacha",
+  "titleEn": "Girl and boy",
+  "sentences": [
+    {
+      "target": "یک دختر و بچه اینجا هستند.",
+      "translit": "yak dukhtar wa bacha īnjā hastand.",
+      "en": "A girl and a boy are here.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "بچه",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "دختر کتاب می‌خواند.",
+      "translit": "dukhtar ketāb mēkhānad.",
+      "en": "The girl reads a book.",
+      "tokens": [
+        {
+          "surface": "دختر",
+          "lexemeId": "lx-0056"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "می‌خواند",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "بچه در باغ می‌دود.",
+      "translit": "bacha dar bāgh mēdawad.",
+      "en": "The boy runs in the garden.",
+      "tokens": [
+        {
+          "surface": "بچه",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "می‌دود",
+          "lexemeId": "lx-0376"
+        }
+      ]
+    },
+    {
+      "target": "هر دو خوش هستند.",
+      "translit": "har dū khush hastand.",
+      "en": "Both are happy.",
+      "tokens": [
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "مادر آنها گوشت می‌پزد.",
+      "translit": "mādar-e ānhā gōsht mēpazad.",
+      "en": "Their mother cooks meat.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "می‌پزد",
+          "lexemeId": "lx-0385"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0016",
+    "lx-0025",
+    "lx-0026",
+    "lx-0051",
+    "lx-0056",
+    "lx-0057",
+    "lx-0074",
+    "lx-0096",
+    "lx-0098",
+    "lx-0107",
+    "lx-0112",
+    "lx-0139",
+    "lx-0166",
+    "lx-0174",
+    "lx-0376",
+    "lx-0385"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 94
+}

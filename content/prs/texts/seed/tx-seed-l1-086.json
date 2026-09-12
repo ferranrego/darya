@@ -1,0 +1,150 @@
+{
+  "id": "tx-seed-l1-086",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "سرک و موتر",
+  "titleTranslit": "sarak wa mōtar",
+  "titleEn": "Street and car",
+  "sentences": [
+    {
+      "target": "سرک ما کلان است.",
+      "translit": "sarak-e mā kalān ast.",
+      "en": "Our street is big.",
+      "tokens": [
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "یک موتر در سرک می‌رود.",
+      "translit": "yak mōtar dar sarak mērawad.",
+      "en": "A car goes in the street.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "موتر",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "موتر تیز می‌رود.",
+      "translit": "mōtar tēz mērawad.",
+      "en": "The car goes fast.",
+      "tokens": [
+        {
+          "surface": "موتر",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "بچه‌ها نزدیک سرک می‌مانند.",
+      "translit": "bacha-hā nazdīk-e sarak mēmānand.",
+      "en": "The children stay near the street.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "می‌مانند",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "مادر آنها گپ می‌زند.",
+      "translit": "mādar-e ānhā gap mēzanad.",
+      "en": "Their mother talks.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زند",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0010",
+    "lx-0014",
+    "lx-0016",
+    "lx-0025",
+    "lx-0051",
+    "lx-0057",
+    "lx-0065",
+    "lx-0082",
+    "lx-0083",
+    "lx-0089",
+    "lx-0151",
+    "lx-0152",
+    "lx-0176",
+    "lx-0234",
+    "lx-6071"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 86
+}

@@ -1,0 +1,154 @@
+{
+  "id": "tx-seed-l1-090",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "باران و باغ",
+  "titleTranslit": "bārān wa bāgh",
+  "titleEn": "Rain and garden",
+  "sentences": [
+    {
+      "target": "امروز باران می‌بارد.",
+      "translit": "emrōz bārān mēbārad.",
+      "en": "Today rain falls.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "باران",
+          "lexemeId": "lx-0127"
+        },
+        {
+          "surface": "می‌بارد",
+          "lexemeId": "lx-0241"
+        }
+      ]
+    },
+    {
+      "target": "باغ ما تر می‌شود.",
+      "translit": "bāgh-e mā tar mēshawad.",
+      "en": "Our garden becomes wet.",
+      "tokens": [
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "تر",
+          "lexemeId": "lx-6108"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "درخت باغ سبز است.",
+      "translit": "darakht-e bāgh sabz ast.",
+      "en": "The garden tree is green.",
+      "tokens": [
+        {
+          "surface": "درخت",
+          "lexemeId": "lx-0138"
+        },
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "سبز",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من از کلکین می‌بینم.",
+      "translit": "man az kelkīn mēbīnam.",
+      "en": "I look from the window.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کلکین",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "می‌بینم",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "هوا سرد و تاریک است.",
+      "translit": "hawā sard wa tārīk ast.",
+      "en": "The air is cold and dark.",
+      "tokens": [
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "تاریک",
+          "lexemeId": "lx-0195"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0004",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0043",
+    "lx-0072",
+    "lx-0092",
+    "lx-0126",
+    "lx-0127",
+    "lx-0138",
+    "lx-0139",
+    "lx-0145",
+    "lx-0149",
+    "lx-0195",
+    "lx-0198",
+    "lx-0241",
+    "lx-6108"
+  ],
+  "newWords": [
+    "lx-0198"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 90
+}

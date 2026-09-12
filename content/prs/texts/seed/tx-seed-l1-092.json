@@ -1,0 +1,172 @@
+{
+  "id": "tx-seed-l1-092",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "خانه پدرکلان",
+  "titleTranslit": "khāna-ye padarkalān",
+  "titleEn": "Grandfather's house",
+  "sentences": [
+    {
+      "target": "پدرکلان من در قریه می‌ماند.",
+      "translit": "padarkalān-e man dar qarya mēmānad.",
+      "en": "My grandfather stays in the village.",
+      "tokens": [
+        {
+          "surface": "پدرکلان",
+          "lexemeId": "lx-0186"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "می‌ماند",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "خانه او کهنه و کلان است.",
+      "translit": "khāna-ye ō kuhna wa kalān ast.",
+      "en": "His house is old and big.",
+      "tokens": [
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما هر ماه آنجا می‌رویم.",
+      "translit": "mā har māh ānjā mērawēm.",
+      "en": "We go there every month.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "مادرکلان من نان می‌پزد.",
+      "translit": "mādarkalān-e man nān mēpazad.",
+      "en": "My grandmother bakes bread.",
+      "tokens": [
+        {
+          "surface": "مادرکلان",
+          "lexemeId": "lx-0187"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "می‌پزد",
+          "lexemeId": "lx-0385"
+        }
+      ]
+    },
+    {
+      "target": "ما سر قالین می‌نشینیم.",
+      "translit": "mā sar-e qālīn mēnishīnēm.",
+      "en": "We sit on the carpet.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "سر",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "قالین",
+          "lexemeId": "lx-0229"
+        },
+        {
+          "surface": "می‌نشینیم",
+          "lexemeId": "lx-0160"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0036",
+    "lx-0038",
+    "lx-0049",
+    "lx-0065",
+    "lx-0068",
+    "lx-0081",
+    "lx-0089",
+    "lx-0122",
+    "lx-0160",
+    "lx-0166",
+    "lx-0175",
+    "lx-0186",
+    "lx-0187",
+    "lx-0229",
+    "lx-0234",
+    "lx-0385"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 92
+}

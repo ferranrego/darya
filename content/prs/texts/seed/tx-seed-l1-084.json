@@ -1,0 +1,154 @@
+{
+  "id": "tx-seed-l1-084",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دو برادر",
+  "titleTranslit": "dū barādar",
+  "titleEn": "Two brothers",
+  "sentences": [
+    {
+      "target": "من دو برادر دارم.",
+      "translit": "man dū barādar dāram.",
+      "en": "I have two brothers.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "یک برادر جوان است.",
+      "translit": "yak barādar jawān ast.",
+      "en": "One brother is young.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "جوان",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او هر روز می‌دود.",
+      "translit": "ō har rōz mēdawad.",
+      "en": "He runs every day.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "می‌دود",
+          "lexemeId": "lx-0376"
+        }
+      ]
+    },
+    {
+      "target": "برادر دیگر من درس می‌خواند.",
+      "translit": "barādar-e dīgar-e man dars mēkhānad.",
+      "en": "My other brother studies.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "دیگر",
+          "lexemeId": "lx-0173"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "می‌خواند",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "هر دو خوب هستند.",
+      "translit": "har dū khōb hastand.",
+      "en": "Both are good.",
+      "tokens": [
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0025",
+    "lx-0026",
+    "lx-0040",
+    "lx-0053",
+    "lx-0063",
+    "lx-0095",
+    "lx-0096",
+    "lx-0098",
+    "lx-0166",
+    "lx-0173",
+    "lx-0216",
+    "lx-0257",
+    "lx-0376"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 84
+}

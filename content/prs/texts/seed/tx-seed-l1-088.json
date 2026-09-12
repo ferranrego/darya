@@ -1,0 +1,167 @@
+{
+  "id": "tx-seed-l1-088",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "زندگی ما",
+  "titleTranslit": "zindagī-ye mā",
+  "titleEn": "Our life",
+  "sentences": [
+    {
+      "target": "زندگی ما خوب است.",
+      "translit": "zindagī-ye mā khōb ast.",
+      "en": "Our life is good.",
+      "tokens": [
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما هر روز کار می‌کنیم.",
+      "translit": "mā har rōz kār mēkunēm.",
+      "en": "We work every day.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "پدر من به بازار می‌رود.",
+      "translit": "padar-e man ba bāzār mērawad.",
+      "en": "My father goes to the bazaar.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "او نان و گوشت می‌آورد.",
+      "translit": "ō nān wa gōsht mēāwarad.",
+      "en": "He brings bread and meat.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "می‌آورد",
+          "lexemeId": "lx-0232"
+        }
+      ]
+    },
+    {
+      "target": "ما همه خوش هستیم.",
+      "translit": "mā hama khush hastēm.",
+      "en": "We are all happy.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0038",
+    "lx-0040",
+    "lx-0052",
+    "lx-0063",
+    "lx-0079",
+    "lx-0089",
+    "lx-0096",
+    "lx-0097",
+    "lx-0107",
+    "lx-0112",
+    "lx-0133",
+    "lx-0150",
+    "lx-0165",
+    "lx-0166",
+    "lx-0232"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 88
+}

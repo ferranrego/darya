@@ -1,0 +1,150 @@
+{
+  "id": "tx-seed-l1-091",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "من می‌توانم",
+  "titleTranslit": "man mētawānam",
+  "titleEn": "I can",
+  "sentences": [
+    {
+      "target": "من نان پخته می‌توانم.",
+      "translit": "man nān pukhta mētawānam.",
+      "en": "I can bake bread.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "پخته",
+          "lexemeId": "lx-0651"
+        },
+        {
+          "surface": "می‌توانم",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "من کتاب خوانده می‌توانم.",
+      "translit": "man ketāb khānda mētawānam.",
+      "en": "I can read a book.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "خوانده",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "می‌توانم",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "برادر من دویده می‌تواند.",
+      "translit": "barādar-e man dawīda mētawānad.",
+      "en": "My brother can run.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "دویده",
+          "lexemeId": "lx-0376"
+        },
+        {
+          "surface": "می‌تواند",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "ما همه یاد می‌گیریم.",
+      "translit": "mā hama yād mēgīrēm.",
+      "en": "We all learn.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "یاد",
+          "lexemeId": "lx-0154"
+        },
+        {
+          "surface": "می‌گیریم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "این کار بد نیست.",
+      "translit": "īn kār bad nēst.",
+      "en": "This work is not bad.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0006",
+    "lx-0011",
+    "lx-0014",
+    "lx-0038",
+    "lx-0053",
+    "lx-0064",
+    "lx-0074",
+    "lx-0079",
+    "lx-0096",
+    "lx-0098",
+    "lx-0153",
+    "lx-0154",
+    "lx-0158",
+    "lx-0165",
+    "lx-0376",
+    "lx-0651"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 91
+}
