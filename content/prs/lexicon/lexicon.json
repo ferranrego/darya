@@ -23993,7 +23993,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "درمان این بیماری ماه‌ها طول می‌کشد.",
-      "exampleTranslit": "darmān-e īn bīmārī māh-hā tūl mēkashad.",
+      "exampleTranslit": "tadāwī-ye īn bīmārī māh-hā tūl mēkashad.",
       "exampleEn": "The treatment of this disease takes months.",
       "tags": [
         "Abstract Concepts"
@@ -25839,7 +25839,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این دارو را باید بعد از غذا بخورید.",
-      "exampleTranslit": "īn dārū rā bāyad ba'd az ghazā bukhūrēd.",
+      "exampleTranslit": "īn dawā rā bāyad ba'd az ghazā bukhūrēd.",
       "exampleEn": "You should take this medicine after food.",
       "tags": [
         "Health & Medicine"
@@ -29444,7 +29444,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سن بازنشستگی در این کشور شصت سال است.",
-      "exampleTranslit": "sinn-e bāznishastagī dar īn kishwar shast sāl ast.",
+      "exampleTranslit": "sinn-e taqā'ud dar īn kishwar shast sāl ast.",
       "exampleEn": "The retirement age in this country is sixty years.",
       "tags": [
         "Abstract Concepts"
@@ -33053,7 +33053,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "رعایت بهداشت برای جلوگیری از مرض ضروری است.",
-      "exampleTranslit": "ri'āyat-e bihdāsht barā-ye jilawgīrī az maraz zurūrī ast.",
+      "exampleTranslit": "ri'āyat-e sihat barā-ye jilawgīrī az maraz zurūrī ast.",
       "exampleEn": "Observing hygiene is essential to prevent disease.",
       "tags": [
         "Health & Medicine"
@@ -36216,8 +36216,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "گیرنده عضو باید دارو مصرف کند.",
-      "exampleTranslit": "gīranda-ye uzw bāyad dārū masraf kunad.",
+      "exampleTarget": "گیرنده عضو باید دوا مصرف کند.",
+      "exampleTranslit": "gīranda-ye uzw bāyad dawā masraf kunad.",
       "exampleEn": "The organ recipient must take medicine.",
       "tags": [
         "Abstract Concepts"
@@ -37368,8 +37368,8 @@
       "freqBand": 6,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "روانپزشک دارو تجویز کرد.",
-      "exampleTranslit": "rawānpizishk dārū tajwīz kard.",
+      "exampleTarget": "روانپزشک دوا تجویز کرد.",
+      "exampleTranslit": "rawānpizishk dawā tajwīz kard.",
       "exampleEn": "The psychiatrist prescribed medicine.",
       "tags": [
         "Abstract Concepts"
@@ -42504,8 +42504,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "مشکل تیروئید نیاز به درمان دارد.",
-      "exampleTranslit": "mushkil-e tērō'ēd niyāz ba darmān dārad.",
+      "exampleTarget": "مشکل تیروئید نیاز به تداوی دارد.",
+      "exampleTranslit": "mushkil-e tērō'ēd niyāz ba tadāwī dārad.",
       "exampleEn": "Thyroid problem needs treatment.",
       "tags": [
         "Abstract Concepts"
@@ -44842,7 +44842,7 @@
       "target": "کالای",
       "targetNormalized": "کالای",
       "pos": "noun",
-      "glossEn": "clothes",
+      "glossEn": "[not a headword: the ezafe form of کالا, not a lemma; Dari is لباس] clothes",
       "tags": [],
       "concreteness": true,
       "translit": "kālāy",
@@ -45451,8 +45451,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "دررفتگی شانه با فیزیوتراپی درمان می‌شود.",
-      "exampleTranslit": "dar-raftagī-ye shāna bā fīzīyōtirāpī darmān mēshawad.",
+      "exampleTarget": "دررفتگی شانه با فیزیوتراپی تداوی می‌شود.",
+      "exampleTranslit": "dar-raftagī-ye shāna bā fīzīyōtirāpī tadāwī mēshawad.",
       "exampleEn": "Shoulder dislocation is treated with physiotherapy.",
       "tags": [
         "Abstract Concepts"
@@ -45996,8 +45996,8 @@
       "freqBand": 6,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "هر دارو عوارض جانبی خود را دارد.",
-      "exampleTranslit": "har dārū awāriz-e jānibī-ye khud rā dārad.",
+      "exampleTarget": "هر دوا عوارض جانبی خود را دارد.",
+      "exampleTranslit": "har dawā awāriz-e jānibī-ye khud rā dārad.",
       "exampleEn": "Every medicine has its own side effects.",
       "tags": [
         "Abstract Concepts"
@@ -47528,7 +47528,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "داروی بی‌هوشی قوی بود.",
-      "exampleTranslit": "dārū-ye bē-hōshī qawī būd.",
+      "exampleTranslit": "dawā-ye bē-hōshī qawī būd.",
       "exampleEn": "The anesthetic was strong.",
       "tags": [
         "Abstract Concepts"
@@ -49120,7 +49120,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "پرستار داروها را به مریض داد.",
-      "exampleTranslit": "parastār dārū-hā rā ba marīz dād.",
+      "exampleTranslit": "parastār dawā-hā rā ba marīz dād.",
       "exampleEn": "The nurse gave the medicines to the patient.",
       "tags": [
         "Health & Medicine"
@@ -50192,8 +50192,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "این دارو باعث تسکین درد می‌شود.",
-      "exampleTranslit": "īn dārū bā'is-e taskīn-e dard mēshawad.",
+      "exampleTarget": "این دوا باعث تسکین درد می‌شود.",
+      "exampleTranslit": "īn dawā bā'is-e taskīn-e dard mēshawad.",
       "exampleEn": "This medicine causes relief of pain.",
       "tags": [
         "Abstract Concepts"
@@ -55963,7 +55963,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "داکتر داروی جدیدی تجویز کرد.",
-      "exampleTranslit": "dāktar dārū-ye jadīdī tajwīz kard.",
+      "exampleTranslit": "dāktar dawā-ye jadīdī tajwīz kard.",
       "exampleEn": "The doctor wrote a new prescription.",
       "tags": [
         "Abstract Concepts"
@@ -62831,8 +62831,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "صندوق بازنشستگی با بحران مالی روبرو است.",
-      "exampleTranslit": "sandūq-e bāznishastagī bā buhrān-e mālī rūbarū ast.",
+      "exampleTarget": "صندوق تقاعد با بحران مالی روبرو است.",
+      "exampleTranslit": "sandūq-e taqā'ud bā buhrān-e mālī rūbarū ast.",
       "exampleEn": "The pension fund is facing a financial crisis.",
       "tags": [
         "Abstract Concepts"
@@ -65115,8 +65115,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پدر بزرگم با حقوق بازنشستگی زندگی می‌کند.",
-      "exampleTranslit": "pidar-buzurgam bā huqūq-e bāznishastagī zindagī mēkunad.",
+      "exampleTarget": "پدر بزرگم با حقوق تقاعد زندگی می‌کند.",
+      "exampleTranslit": "pidar-buzurgam bā huqūq-e taqā'ud zindagī mēkunad.",
       "exampleEn": "My grandfather lives on his pension.",
       "tags": [
         "Abstract Concepts"
@@ -67287,7 +67287,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "جلسات پرتودرمانی او فردا آغاز می‌شود.",
-      "exampleTranslit": "jalasāt-e partaw-darmānī-ye ō fardā āghāz mēshawad.",
+      "exampleTranslit": "jalasāt-e partaw-tadāwīī-ye ō fardā āghāz mēshawad.",
       "exampleEn": "His radiotherapy sessions start tomorrow.",
       "tags": [
         "Abstract Concepts"
@@ -67382,7 +67382,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "انتقال احساسات به درمانگر شایع است.",
-      "exampleTranslit": "intiqāl-e ihsāsāt ba darmāngar shāyi' ast.",
+      "exampleTranslit": "intiqāl-e ihsāsāt ba tadāwīgar shāyi' ast.",
       "exampleEn": "Transference of feelings to the therapist is common.",
       "tags": [
         "Abstract Concepts"
@@ -67533,8 +67533,8 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "پمادهای خاصی برای درمان اگزما وجود دارد.",
-      "exampleTranslit": "pumād-hāyi khāsī barā-ye darmān-e igzimā wujūd dārad.",
+      "exampleTarget": "پمادهای خاصی برای تداوی اگزما وجود دارد.",
+      "exampleTranslit": "pumād-hāyi khāsī barā-ye tadāwī-ye igzimā wujūd dārad.",
       "exampleEn": "There are specific ointments for treating eczema.",
       "tags": [
         "Abstract Concepts"
@@ -68174,8 +68174,8 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "کم‌خونی با مصرف آهن قابل درمان است.",
-      "exampleTranslit": "kam-khūnī bā masraf-e āhan qābil-e darmān ast.",
+      "exampleTarget": "کم‌خونی با مصرف آهن قابل تداوی است.",
+      "exampleTranslit": "kam-khūnī bā masraf-e āhan qābil-e tadāwī ast.",
       "exampleEn": "Anemia is treatable by consuming iron.",
       "tags": [
         "Abstract Concepts"
@@ -68439,8 +68439,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "درمان با سلول‌های بنیادی امیدهای جدیدی ایجاد کرده است.",
-      "exampleTranslit": "darmān bā silūl-hā-ye bunyādī umēdhā-ye jadīdī ījād karda ast.",
+      "exampleTarget": "تداوی با سلول‌های بنیادی امیدهای جدیدی ایجاد کرده است.",
+      "exampleTranslit": "tadāwī bā silūl-hā-ye bunyādī umēdhā-ye jadīdī ījād karda ast.",
       "exampleEn": "Stem cell therapy has created new hopes.",
       "tags": [
         "Abstract Concepts"
@@ -69155,7 +69155,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "شیمی‌درمانی باعث ریزش مو می‌شود.",
-      "exampleTranslit": "shīmī-darmānī bā'is-e rēzish-e mō mēshawad.",
+      "exampleTranslit": "shīmī-tadāwīī bā'is-e rēzish-e mō mēshawad.",
       "exampleEn": "Chemotherapy causes hair loss.",
       "tags": [
         "Abstract Concepts"
@@ -69992,7 +69992,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "پزشکی از راه دور خدمات درمانی را در مناطق دورافتاده فراهم می‌کند.",
-      "exampleTranslit": "pizishkī az rāh-e dūr khadamāt-e darmānī rā dar manātiq-e dūr-uftāda farāham mēkunad.",
+      "exampleTranslit": "pizishkī az rāh-e dūr khadamāt-e tadāwīī rā dar manātiq-e dūr-uftāda farāham mēkunad.",
       "exampleEn": "Telemedicine provides healthcare services in remote areas.",
       "tags": [
         "Abstract Concepts"
@@ -70086,8 +70086,8 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "انکولوژیست برنامه درمان سرطان را توضیح داد.",
-      "exampleTranslit": "unkūlōzhīst barnāma-ye darmān-e saratān rā tawzīh dād.",
+      "exampleTarget": "انکولوژیست برنامه تداوی سرطان را توضیح داد.",
+      "exampleTranslit": "unkūlōzhīst barnāma-ye tadāwī-ye saratān rā tawzīh dād.",
       "exampleEn": "The oncologist explained the cancer treatment plan.",
       "tags": [
         "Abstract Concepts"
@@ -71389,8 +71389,8 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "این دارو بر دستگاه گوارش تاثیر می‌گذارد.",
-      "exampleTranslit": "īn dārū bar dastgāh-e guwārish ta'sīr mēguzārad.",
+      "exampleTarget": "این دوا بر دستگاه گوارش تاثیر می‌گذارد.",
+      "exampleTranslit": "īn dawā bar dastgāh-e guwārish ta'sīr mēguzārad.",
       "exampleEn": "This medicine affects the digestive system.",
       "tags": [
         "Abstract Concepts"
@@ -71604,7 +71604,7 @@
         "tajwīz kun"
       ],
       "exampleTarget": "او برای من داروی جدید تجویز کرد.",
-      "exampleTranslit": "ō barā-ye man dārū-ye jadīd tajwīz kard.",
+      "exampleTranslit": "ō barā-ye man dawā-ye jadīd tajwīz kard.",
       "exampleEn": "He prescribed a new medicine for me.",
       "tags": [
         "Actions & Movement"
@@ -72172,8 +72172,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "ضربه روحی نیاز به درمان دارد.",
-      "exampleTranslit": "zarba-ye rūhī niyāz ba darmān dārad.",
+      "exampleTarget": "ضربه روحی نیاز به تداوی دارد.",
+      "exampleTranslit": "zarba-ye rūhī niyāz ba tadāwī dārad.",
       "exampleEn": "Psychological trauma needs treatment.",
       "tags": [
         "Abstract Concepts"
@@ -73500,7 +73500,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "روان‌درمانی می‌تواند به حل مشکلات خانوادگی کمک کند.",
-      "exampleTranslit": "rawān-darmānī mētawānad ba hall-e mushkilāt-e khānawādagī kumak kunad.",
+      "exampleTranslit": "rawān-tadāwīī mētawānad ba hall-e mushkilāt-e khānawādagī kumak kunad.",
       "exampleEn": "Psychotherapy can help solve family problems.",
       "tags": [
         "Abstract Concepts"
@@ -76264,7 +76264,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "حاشیه‌نشینی مشکلات بهداشتی فراوانی به همراه دارد.",
-      "exampleTranslit": "hāshiya-nishīnī mushkilāt-e bihdāshtī-ye farāwānī ba hamrāh dārad.",
+      "exampleTranslit": "hāshiya-nishīnī mushkilāt-e sihatī-ye farāwānī ba hamrāh dārad.",
       "exampleEn": "Marginalization brings many health problems.",
       "tags": [
         "Abstract Concepts"
@@ -76810,8 +76810,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "تثبیت‌کننده‌های خلق در درمان مهم‌اند.",
-      "exampleTranslit": "tasbīt-kunanda-hā-ye khulq dar darmān muhimm-and.",
+      "exampleTarget": "تثبیت‌کننده‌های خلق در تداوی مهم‌اند.",
+      "exampleTranslit": "tasbīt-kunanda-hā-ye khulq dar tadāwī muhimm-and.",
       "exampleEn": "Mood stabilizers are important in treatment.",
       "tags": [
         "Abstract Concepts"
@@ -77457,8 +77457,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "روند درمان ممکن است طولانی باشد.",
-      "exampleTranslit": "rawand-e darmān mumkin ast tūlānī bāshad.",
+      "exampleTarget": "روند تداوی ممکن است طولانی باشد.",
+      "exampleTranslit": "rawand-e tadāwī mumkin ast tūlānī bāshad.",
       "exampleEn": "The treatment process may be long.",
       "tags": [
         "Abstract Concepts"
@@ -84316,8 +84316,8 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "آنها برای درمان به چشمه آب گرم رفتند.",
-      "exampleTranslit": "ānhā barā-ye darmān ba chashma-ye āb-e garm raftand.",
+      "exampleTarget": "آنها برای تداوی به چشمه آب گرم رفتند.",
+      "exampleTranslit": "ānhā barā-ye tadāwī ba chashma-ye āb-e garm raftand.",
       "exampleEn": "They went to the hot spring for treatment.",
       "tags": [
         "Weather & Climate"
@@ -92538,8 +92538,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "ارتوپدی شامل درمان شکستگی‌های استخوان است.",
-      "exampleTranslit": "ortopēdī shāmil-e darmān-e shikastagī-hā-ye ustukhwān ast.",
+      "exampleTarget": "ارتوپدی شامل تداوی شکستگی‌های استخوان است.",
+      "exampleTranslit": "ortopēdī shāmil-e tadāwī-ye shikastagī-hā-ye ustukhwān ast.",
       "exampleEn": "Orthopedics includes the treatment of bone fractures.",
       "tags": [
         "Abstract Concepts"
@@ -93167,7 +93167,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "شیوع ابولا در افریقا یک بحران بهداشتی بود.",
-      "exampleTranslit": "shuyū'-e ebōlā dar afrīqā yak buhrān-e bihdāshtī būd.",
+      "exampleTranslit": "shuyū'-e ebōlā dar afrīqā yak buhrān-e sihatī būd.",
       "exampleEn": "The Ebola outbreak in Africa was a health crisis.",
       "tags": [
         "Abstract Concepts"
@@ -93984,8 +93984,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "بخش نفرولوژی بیماران کلیوی را درمان می‌کند.",
-      "exampleTranslit": "bakhsh-e nefrolōzhī bēmārān-e kulyawī rā darmān mēkunad.",
+      "exampleTarget": "بخش نفرولوژی بیماران کلیوی را تداوی می‌کند.",
+      "exampleTranslit": "bakhsh-e nefrolōzhī bēmārān-e kulyawī rā tadāwī mēkunad.",
       "exampleEn": "The nephrology department treats kidney patients.",
       "tags": [
         "Abstract Concepts"
@@ -94669,8 +94669,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "انکولوژیست روش‌های جدید درمان سرطان را معرفی کرد.",
-      "exampleTranslit": "onkolōzhist rawish-hā-ye jadīd-e darmān-e saratān rā mu'arrifī kard.",
+      "exampleTarget": "انکولوژیست روش‌های جدید تداوی سرطان را معرفی کرد.",
+      "exampleTranslit": "onkolōzhist rawish-hā-ye jadīd-e tadāwī-ye saratān rā mu'arrifī kard.",
       "exampleEn": "The oncologist introduced new cancer treatment methods.",
       "tags": [
         "Abstract Concepts"
@@ -95391,8 +95391,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "روماتولوژی به درمان التهاب مفاصل کمک می‌کند.",
-      "exampleTranslit": "rumātolōzhī ba darmān-e iltihāb-e mafāsil kumak mēkunad.",
+      "exampleTarget": "روماتولوژی به تداوی التهاب مفاصل کمک می‌کند.",
+      "exampleTranslit": "rumātolōzhī ba tadāwī-ye iltihāb-e mafāsil kumak mēkunad.",
       "exampleEn": "Rheumatology helps treat joint inflammation.",
       "tags": [
         "Abstract Concepts"
@@ -95524,8 +95524,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دولت هزینه‌های سرمایه‌ای را در بخش بهداشت افزایش داد.",
-      "exampleTranslit": "dawlat hazīna-hā-ye sarmāya-ī rā dar bakhsh-e bihdāsht afzāyish dād.",
+      "exampleTarget": "دولت هزینه‌های سرمایه‌ای را در بخش صحت افزایش داد.",
+      "exampleTranslit": "dawlat hazīna-hā-ye sarmāya-ī rā dar bakhsh-e sihat afzāyish dād.",
       "exampleEn": "The government increased capital expenditures in the health sector.",
       "tags": [
         "Geography & Places"
@@ -95829,7 +95829,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "فارماکولوژی به توسعه داروهای جدید کمک می‌کند.",
-      "exampleTranslit": "fārmākolōzhī ba tawsi'a-ye dārū-hā-ye jadīd kumak mēkunad.",
+      "exampleTranslit": "fārmākolōzhī ba tawsi'a-ye dawā-hā-ye jadīd kumak mēkunad.",
       "exampleEn": "Pharmacology helps in the development of new drugs.",
       "tags": [
         "Abstract Concepts"
@@ -96988,7 +96988,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "درمانجو به بینش عمیقی دست یافت.",
-      "exampleTranslit": "darmānjū ba bīnish-e amēqī dast yāft.",
+      "exampleTranslit": "tadāwījū ba bīnish-e amēqī dast yāft.",
       "exampleEn": "The client achieved deep insight.",
       "tags": [
         "Abstract Concepts"
@@ -97693,7 +97693,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مواجهه‌درمانی ترس‌ها را کاهش می‌دهد.",
-      "exampleTranslit": "muwājaha-darmānī tars-hā rā kāhish mēdihad.",
+      "exampleTranslit": "muwājaha-tadāwīī tars-hā rā kāhish mēdihad.",
       "exampleEn": "Exposure therapy reduces fears.",
       "tags": [
         "Abstract Concepts"
@@ -98244,7 +98244,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "داروها باعث سرکوب سیستم ایمنی می‌شوند.",
-      "exampleTranslit": "dārū-hā bā'is-e sarkōb-e sistam-e ēmnī mēshawand.",
+      "exampleTranslit": "dawā-hā bā'is-e sarkōb-e sistam-e ēmnī mēshawand.",
       "exampleEn": "The drugs cause immunosuppression.",
       "tags": [
         "Abstract Concepts"
@@ -98300,8 +98300,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "درمان فقط برای بیماران سیمپتوماتیک انجام می‌شود.",
-      "exampleTranslit": "darmān faqat barā-ye bēmārān-e simptomātīk anjām mēshawad.",
+      "exampleTarget": "تداوی فقط برای بیماران سیمپتوماتیک انجام می‌شود.",
+      "exampleTranslit": "tadāwī faqat barā-ye bēmārān-e simptomātīk anjām mēshawad.",
       "exampleEn": "Treatment is only provided for symptomatic patients.",
       "tags": [
         "Abstract Concepts"
@@ -98376,8 +98376,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "کودک مبتلا به هیدروسفالی تحت درمان قرار گرفت.",
-      "exampleTranslit": "kōdak-e mubtalā ba hīdrōsifālī taht-e darmān qarār girift.",
+      "exampleTarget": "کودک مبتلا به هیدروسفالی تحت تداوی قرار گرفت.",
+      "exampleTranslit": "kōdak-e mubtalā ba hīdrōsifālī taht-e tadāwī qarār girift.",
       "exampleEn": "The child suffering from hydrocephalus underwent treatment.",
       "tags": [
         "Abstract Concepts"
@@ -98395,8 +98395,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "لرزش دست از عوارض جانبی دارو است.",
-      "exampleTranslit": "larzish-e dast az awāriz-e jānibī-ye dārū ast.",
+      "exampleTarget": "لرزش دست از عوارض جانبی دوا است.",
+      "exampleTranslit": "larzish-e dast az awāriz-e jānibī-ye dawā ast.",
       "exampleEn": "Hand tremor is a side effect of the medication.",
       "tags": [
         "Abstract Concepts"
@@ -98529,7 +98529,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "پژوهش‌های نوروفارماکولوژی داروهای جدیدی را توسعه می‌دهند.",
-      "exampleTranslit": "pazhōhish-hā-ye nēwrōfārmākolōzhī dārū-hā-ye jadēdē rā tawsi'a mēdihand.",
+      "exampleTranslit": "pazhōhish-hā-ye nēwrōfārmākolōzhī dawā-hā-ye jadēdē rā tawsi'a mēdihand.",
       "exampleEn": "Neuropharmacology research develops new drugs.",
       "tags": [
         "Abstract Concepts"
@@ -98889,8 +98889,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "فارماکوژنومیک به شخصی‌سازی درمان دارویی کمک می‌کند.",
-      "exampleTranslit": "fārmākōzhenōmīk ba shakhsī-sāzī-ye darmān-e dārūyī kumak mēkunad.",
+      "exampleTarget": "فارماکوژنومیک به شخصی‌سازی تداوی دارویی کمک می‌کند.",
+      "exampleTranslit": "fārmākōzhenōmīk ba shakhsī-sāzī-ye tadāwī-ye dārūyī kumak mēkunad.",
       "exampleEn": "Pharmacogenomics helps in personalizing drug therapy.",
       "tags": [
         "Abstract Concepts"
@@ -99536,7 +99536,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "داروهای آنتی‌وایرال به کنترول بیماری کمک می‌کنند.",
-      "exampleTranslit": "dārū-hā-ye āntī-wāyrāl ba kontrōl-e bēmārī kumak mēkunand.",
+      "exampleTranslit": "dawā-hā-ye āntī-wāyrāl ba kontrōl-e bēmārī kumak mēkunand.",
       "exampleEn": "Antiviral drugs help control the disease.",
       "tags": [
         "Abstract Concepts"
@@ -100089,7 +100089,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بسیاری از تحلیل‌گران آن را یک دولت درمانده می‌دانند.",
-      "exampleTranslit": "bisyārē az tahlēlgarān ān rā yak dawlat-e darmānda mēdānand.",
+      "exampleTranslit": "bisyārē az tahlēlgarān ān rā yak dawlat-e tadāwīda mēdānand.",
       "exampleEn": "Many analysts consider it a failed state.",
       "tags": [
         "Society & Politics"
@@ -101534,7 +101534,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "هیپنوتیزم در روان‌درمانی کاربرد دارد.",
-      "exampleTranslit": "hīpnūtīzm dar rawān-darmānī kārburd dārad.",
+      "exampleTranslit": "hīpnūtīzm dar rawān-tadāwīī kārburd dārad.",
       "exampleEn": "Hypnosis is used in psychotherapy.",
       "tags": [
         "Abstract Concepts"
@@ -104538,7 +104538,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "درمانگر باید رازدار باشد.",
-      "exampleTranslit": "darmāngar bāyad rāz-dār bāshad.",
+      "exampleTranslit": "tadāwīgar bāyad rāz-dār bāshad.",
       "exampleEn": "A therapist must be strictly confidential.",
       "tags": [
         "Abstract Concepts"
@@ -111492,7 +111492,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "رفتاردرمانی برای فوبیا موثر است.",
-      "exampleTranslit": "raftār-darmānī barā-ye fūbyā mu'assir ast.",
+      "exampleTranslit": "raftār-tadāwīī barā-ye fūbyā mu'assir ast.",
       "exampleEn": "Behavioral therapy is effective for phobias.",
       "tags": [
         "Abstract Concepts"
@@ -111681,8 +111681,8 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "روان‌پزشک دارو تجویز می‌کند.",
-      "exampleTranslit": "rawān-pizishk dārū tajwīz mēkunad.",
+      "exampleTarget": "روان‌پزشک دوا تجویز می‌کند.",
+      "exampleTranslit": "rawān-pizishk dawā tajwīz mēkunad.",
       "exampleEn": "The psychiatrist prescribes medication.",
       "tags": [
         "Abstract Concepts"
@@ -113449,7 +113449,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "دارودرمانی همراه با مشاوره موثرتر است.",
-      "exampleTranslit": "dārū-darmānī hamrāh bā mushāwira mu'assir-tar ast.",
+      "exampleTranslit": "dawā-tadāwīī hamrāh bā mushāwira mu'assir-tar ast.",
       "exampleEn": "Pharmacotherapy combined with counseling is more effective.",
       "tags": [
         "Abstract Concepts"
@@ -114893,7 +114893,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "شناخت‌درمانی افکار منفی را تغییر می‌دهد.",
-      "exampleTranslit": "shinākht-darmānī afkār-e manfī rā taghyīr mēdihad.",
+      "exampleTranslit": "shinākht-tadāwīī afkār-e manfī rā taghyīr mēdihad.",
       "exampleEn": "Cognitive therapy changes negative thoughts.",
       "tags": [
         "Abstract Concepts"
@@ -115672,7 +115672,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "غرقه‌سازی یک تکنیک درمانی سریع است.",
-      "exampleTranslit": "gharqa-sāzī yak tīknīk-e darmānī-ye sarī' ast.",
+      "exampleTranslit": "gharqa-sāzī yak tīknīk-e tadāwīī-ye sarī' ast.",
       "exampleEn": "Flooding is a rapid therapeutic technique.",
       "tags": [
         "Abstract Concepts"
@@ -115709,8 +115709,8 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "درمانجو در فرآیند درمان مشارکت می‌کند.",
-      "exampleTranslit": "darmānjū dar farāyind-e darmān mushārakat mēkunad.",
+      "exampleTarget": "تداویجو در فرآیند تداوی مشارکت می‌کند.",
+      "exampleTranslit": "tadāwījū dar farāyind-e tadāwī mushārakat mēkunad.",
       "exampleEn": "The client participates in the treatment process.",
       "tags": [
         "Abstract Concepts"
@@ -115767,7 +115767,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "طرح‌واره‌درمانی مشکلات ریشه‌ای را حل می‌کند.",
-      "exampleTranslit": "tarh-wāra-darmānī mushkilāt-e rēsha-ē rā hall mēkunad.",
+      "exampleTranslit": "tarh-wāra-tadāwīī mushkilāt-e rēsha-ē rā hall mēkunad.",
       "exampleEn": "Schema therapy solves deep-rooted problems.",
       "tags": [
         "Abstract Concepts"
@@ -116716,8 +116716,8 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "امید به زندگی با بهبود بهداشت افزایش یافته است.",
-      "exampleTranslit": "umēd ba zindagī bā bihbūd-e bihdāsht afzāyish yāfta ast.",
+      "exampleTarget": "امید به زندگی با بهبود صحت افزایش یافته است.",
+      "exampleTranslit": "umēd ba zindagī bā bihbūd-e sihat afzāyish yāfta ast.",
       "exampleEn": "Life expectancy has increased with better healthcare.",
       "tags": [
         "Abstract Concepts"
@@ -121528,8 +121528,8 @@
       "variants": [
         "mī-yāb-"
       ],
-      "exampleTarget": "درد او با دارو تسکین یافت.",
-      "exampleTranslit": "dard-e ō bā dārū taskīn yāft.",
+      "exampleTarget": "درد او با دوا تسکین یافت.",
+      "exampleTranslit": "dard-e ō bā dawā taskīn yāft.",
       "exampleEn": "His pain was alleviated with medication.",
       "tags": [
         "Actions & Movement"
@@ -122661,8 +122661,8 @@
       "variants": [
         "mī-namāy-"
       ],
-      "exampleTarget": "او در مصرف دارو افراط نمود.",
-      "exampleTranslit": "ō dar masraf-e dārū efrāt namūd.",
+      "exampleTarget": "او در مصرف دوا افراط نمود.",
+      "exampleTranslit": "ō dar masraf-e dawā efrāt namūd.",
       "exampleEn": "He overdid the use of medication.",
       "tags": [
         "Actions & Movement"

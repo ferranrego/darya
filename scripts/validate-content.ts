@@ -742,6 +742,10 @@ if (lexicon && lang === "prs") {
     "lx-4651", // example mentions machine learning
     "lx-6420", // مدرسه itself: a madrassa is not a مکتب
     "lx-5342", // بیمارستان itself, an entry in its own right
+    // کره زمین is the globe. کره means "sphere" there, not the Iranian word
+    // for butter that the rule is about - the same shape as the ماشین
+    // exemptions above, and for the same reason.
+    "lx-1518",
   ]);
   for (const rule of profile.prompts.interferenceRules) {
     /**
