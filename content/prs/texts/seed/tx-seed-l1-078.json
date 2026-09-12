@@ -1,0 +1,155 @@
+{
+  "id": "tx-seed-l1-078",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "دو دست",
+  "titleTranslit": "dū dast",
+  "titleEn": "Two hands",
+  "sentences": [
+    {
+      "target": "من دو دست دارم.",
+      "translit": "man dū dast dāram.",
+      "en": "I have two hands.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "دست من کار می‌کند.",
+      "translit": "dast-e man kār mēkunad.",
+      "en": "My hand works.",
+      "tokens": [
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من نان با دست می‌گیرم.",
+      "translit": "man nān bā dast mēgīram.",
+      "en": "I take bread with my hand.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "می‌گیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "دو پای من هم کار می‌کند.",
+      "translit": "dū pāy-e man ham kār mēkunad.",
+      "en": "My two feet work too.",
+      "tokens": [
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "پای",
+          "lexemeId": "lx-0125"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من جور هستم.",
+      "translit": "man jōr hastam.",
+      "en": "I am well.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "هستم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0008",
+    "lx-0011",
+    "lx-0024",
+    "lx-0026",
+    "lx-0038",
+    "lx-0079",
+    "lx-0095",
+    "lx-0096",
+    "lx-0097",
+    "lx-0106",
+    "lx-0121",
+    "lx-0125",
+    "lx-0153"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 78
+}

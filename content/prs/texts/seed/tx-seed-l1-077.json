@@ -1,0 +1,147 @@
+{
+  "id": "tx-seed-l1-077",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "گپ ما",
+  "titleTranslit": "gap-e mā",
+  "titleEn": "Our talk",
+  "sentences": [
+    {
+      "target": "ما هر شب گپ می‌زنیم.",
+      "translit": "mā har shab gap mēzanēm.",
+      "en": "We talk every night.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زنیم",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    },
+    {
+      "target": "پدر من گپ می‌زند.",
+      "translit": "padar-e man gap mēzanad.",
+      "en": "My father talks.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زند",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    },
+    {
+      "target": "ما گپ او می‌شنویم.",
+      "translit": "mā gap-e ō mēshunawēm.",
+      "en": "We hear his talk.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "می‌شنویم",
+          "lexemeId": "lx-0156"
+        }
+      ]
+    },
+    {
+      "target": "گپ او خوب است.",
+      "translit": "gap-e ō khōb ast.",
+      "en": "His talk is good.",
+      "tokens": [
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما زیاد می‌دانیم.",
+      "translit": "mā ziyād mēdānēm.",
+      "en": "We know a lot.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "می‌دانیم",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0041",
+    "lx-0052",
+    "lx-0063",
+    "lx-0069",
+    "lx-0094",
+    "lx-0151",
+    "lx-0152",
+    "lx-0156",
+    "lx-0166"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 77
+}

@@ -1,0 +1,162 @@
+{
+  "id": "tx-seed-l1-083",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "چه می‌توانم",
+  "titleTranslit": "che mētawānam",
+  "titleEn": "What I can do",
+  "sentences": [
+    {
+      "target": "من تیز دویده می‌توانم.",
+      "translit": "man tēz dawīda mētawānam.",
+      "en": "I can run fast.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "دویده",
+          "lexemeId": "lx-0376"
+        },
+        {
+          "surface": "می‌توانم",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "برادر من نان پخته می‌تواند.",
+      "translit": "barādar-e man nān pukhta mētawānad.",
+      "en": "My brother can bake bread.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "پخته",
+          "lexemeId": "lx-0651"
+        },
+        {
+          "surface": "می‌تواند",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "خواهر من خوب نوشته می‌تواند.",
+      "translit": "khāhar-e man khōb nawishta mētawānad.",
+      "en": "My sister can write well.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "نوشته",
+          "lexemeId": "lx-0155"
+        },
+        {
+          "surface": "می‌تواند",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "ما همه کار کرده می‌توانیم.",
+      "translit": "mā hama kār karda mētawānēm.",
+      "en": "We can all work.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "کرده",
+          "lexemeId": "lx-0097"
+        },
+        {
+          "surface": "می‌توانیم",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "زندگی ما خوب است.",
+      "translit": "zindagī-ye mā khōb ast.",
+      "en": "Our life is good.",
+      "tokens": [
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0038",
+    "lx-0053",
+    "lx-0054",
+    "lx-0063",
+    "lx-0079",
+    "lx-0097",
+    "lx-0150",
+    "lx-0155",
+    "lx-0158",
+    "lx-0165",
+    "lx-0376",
+    "lx-0651",
+    "lx-6071"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 83
+}

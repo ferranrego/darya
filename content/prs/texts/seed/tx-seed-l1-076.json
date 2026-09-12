@@ -1,0 +1,158 @@
+{
+  "id": "tx-seed-l1-076",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "درس فردا",
+  "titleTranslit": "dars-e fardā",
+  "titleEn": "Tomorrow's lesson",
+  "sentences": [
+    {
+      "target": "فردا ما یک درس نو داریم.",
+      "translit": "fardā mā yak dars-e naw dārēm.",
+      "en": "Tomorrow we have a new lesson.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من درس خود می‌خوانم.",
+      "translit": "man dars-e khud mēkhānam.",
+      "en": "I read my lesson.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "می‌خوانم",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "معلم ما درس می‌دهد.",
+      "translit": "mu'allem-e mā dars mēdihad.",
+      "en": "Our teacher gives the lesson.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "من یاد می‌گیرم.",
+      "translit": "man yād mēgīram.",
+      "en": "I learn.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یاد",
+          "lexemeId": "lx-0154"
+        },
+        {
+          "surface": "می‌گیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "فردا من به مکتب می‌روم.",
+      "translit": "fardā man ba maktab mērawam.",
+      "en": "Tomorrow I go to school.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "می‌روم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0044",
+    "lx-0067",
+    "lx-0075",
+    "lx-0078",
+    "lx-0089",
+    "lx-0095",
+    "lx-0098",
+    "lx-0100",
+    "lx-0153",
+    "lx-0154",
+    "lx-0178",
+    "lx-0216"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 76
+}

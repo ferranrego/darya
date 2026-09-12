@@ -1,0 +1,160 @@
+{
+  "id": "tx-seed-l1-081",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "نام من",
+  "titleTranslit": "nām-e man",
+  "titleEn": "My name",
+  "sentences": [
+    {
+      "target": "نام من خورد است.",
+      "translit": "nām-e man khurd ast.",
+      "en": "My name is short.",
+      "tokens": [
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "نام پدر من هم خورد است.",
+      "translit": "nām-e padar-e man ham khurd ast.",
+      "en": "My father's name is short too.",
+      "tokens": [
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من نام خود می‌نویسم.",
+      "translit": "man nām-e khud mēnawīsam.",
+      "en": "I write my own name.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "می‌نویسم",
+          "lexemeId": "lx-0155"
+        }
+      ]
+    },
+    {
+      "target": "معلم نام من می‌داند.",
+      "translit": "mu'allem nām-e man mēdānad.",
+      "en": "The teacher knows my name.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "می‌داند",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "هر شاگرد یک نام دارد.",
+      "translit": "har shāgerd yak nām dārad.",
+      "en": "Every student has a name.",
+      "tokens": [
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "شاگرد",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0025",
+    "lx-0052",
+    "lx-0062",
+    "lx-0066",
+    "lx-0077",
+    "lx-0078",
+    "lx-0094",
+    "lx-0095",
+    "lx-0155",
+    "lx-0166",
+    "lx-0178"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 81
+}

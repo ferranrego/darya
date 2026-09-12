@@ -1,0 +1,159 @@
+{
+  "id": "tx-seed-l1-074",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "قالین اتاق",
+  "titleTranslit": "qālīn-e utāq",
+  "titleEn": "The room carpet",
+  "sentences": [
+    {
+      "target": "در اتاق ما یک قالین است.",
+      "translit": "dar utāq-e mā yak qālīn ast.",
+      "en": "There is a carpet in our room.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "قالین",
+          "lexemeId": "lx-0229"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "قالین سرخ و سبز است.",
+      "translit": "qālīn surkh wa sabz ast.",
+      "en": "The carpet is red and green.",
+      "tokens": [
+        {
+          "surface": "قالین",
+          "lexemeId": "lx-0229"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "سبز",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما سر قالین می‌نشینیم.",
+      "translit": "mā sar-e qālīn mēnishīnēm.",
+      "en": "We sit on the carpet.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "سر",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "قالین",
+          "lexemeId": "lx-0229"
+        },
+        {
+          "surface": "می‌نشینیم",
+          "lexemeId": "lx-0160"
+        }
+      ]
+    },
+    {
+      "target": "قالین ما کهنه است.",
+      "translit": "qālīn-e mā kuhna ast.",
+      "en": "Our carpet is old.",
+      "tokens": [
+        {
+          "surface": "قالین",
+          "lexemeId": "lx-0229"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "اتاق ما گرم است.",
+      "translit": "utāq-e mā garm ast.",
+      "en": "Our room is warm.",
+      "tokens": [
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0010",
+    "lx-0014",
+    "lx-0025",
+    "lx-0068",
+    "lx-0071",
+    "lx-0122",
+    "lx-0142",
+    "lx-0145",
+    "lx-0160",
+    "lx-0196",
+    "lx-0229"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 74
+}

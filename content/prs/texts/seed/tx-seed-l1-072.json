@@ -1,0 +1,158 @@
+{
+  "id": "tx-seed-l1-072",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "بازار ما",
+  "titleTranslit": "bāzār-e mā",
+  "titleEn": "Our bazaar",
+  "sentences": [
+    {
+      "target": "بازار ما نزدیک است.",
+      "translit": "bāzār-e mā nazdīk ast.",
+      "en": "Our bazaar is near.",
+      "tokens": [
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من در بازار سیب می‌خرم.",
+      "translit": "man dar bāzār sēb mēkharam.",
+      "en": "I buy apples in the bazaar.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "می‌خرم",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "سیب سرخ و شیرین است.",
+      "translit": "sēb surkh wa shīrīn ast.",
+      "en": "The apple is red and sweet.",
+      "tokens": [
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مادر من گوشت می‌خرد.",
+      "translit": "mādar-e man gōsht mēkharad.",
+      "en": "My mother buys meat.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "می‌خرد",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "ما به خانه می‌آییم.",
+      "translit": "mā ba khāna mēāyēm.",
+      "en": "We come home.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌آییم",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0036",
+    "lx-0051",
+    "lx-0090",
+    "lx-0112",
+    "lx-0114",
+    "lx-0120",
+    "lx-0133",
+    "lx-0142",
+    "lx-0176",
+    "lx-0205"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 72
+}

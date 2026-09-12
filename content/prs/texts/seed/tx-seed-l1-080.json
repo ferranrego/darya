@@ -1,0 +1,158 @@
+{
+  "id": "tx-seed-l1-080",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "کابل",
+  "titleTranslit": "kābul",
+  "titleEn": "Kabul",
+  "sentences": [
+    {
+      "target": "کابل شهر کلان افغانستان است.",
+      "translit": "kābul shahr-e kalān-e afghānestān ast.",
+      "en": "Kabul is a big city of Afghanistan.",
+      "tokens": [
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "شهر",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "افغانستان",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "سرک کابل بسیار زیاد است.",
+      "translit": "sarak-e kābul bisyār ziyād ast.",
+      "en": "Kabul's streets are very many.",
+      "tokens": [
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم کابل جوان هستند.",
+      "translit": "mardum-e kābul jawān hastand.",
+      "en": "Kabul's people are young.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "جوان",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "زندگی در کابل خوب است.",
+      "translit": "zindagī dar kābul khōb ast.",
+      "en": "Life in Kabul is good.",
+      "tokens": [
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من کابل می‌دانم.",
+      "translit": "man kābul mēdānam.",
+      "en": "I know Kabul.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "می‌دانم",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0010",
+    "lx-0011",
+    "lx-0059",
+    "lx-0063",
+    "lx-0065",
+    "lx-0069",
+    "lx-0080",
+    "lx-0082",
+    "lx-0085",
+    "lx-0086",
+    "lx-0094",
+    "lx-0096",
+    "lx-0150",
+    "lx-0167",
+    "lx-0257"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 80
+}
