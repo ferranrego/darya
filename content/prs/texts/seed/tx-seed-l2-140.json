@@ -1,0 +1,181 @@
+{
+  "id": "tx-seed-l2-140",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "سفر پیاده",
+  "titleTranslit": "safar-e piyāda",
+  "titleEn": "A walk",
+  "sentences": [
+    {
+      "target": "ما یک سفر خورد داریم.",
+      "translit": "mā yak safar-e khurd dārēm.",
+      "en": "We have a short trip.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "سفر",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "ما پیاده به قریه می‌رویم.",
+      "translit": "mā piyāda ba qarya mērawēm.",
+      "en": "We go to the village on foot.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "پیاده",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "راه بسته نیست و باز است.",
+      "translit": "rāh basta nēst wa bāz ast.",
+      "en": "The road is not closed, it is open.",
+      "tokens": [
+        {
+          "surface": "راه",
+          "lexemeId": "lx-0624"
+        },
+        {
+          "surface": "بسته",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "باز",
+          "lexemeId": "lx-0199"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما در راه صحبت می‌کنیم.",
+      "translit": "mā dar rāh suhbat mēkunēm.",
+      "en": "We talk on the way.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "راه",
+          "lexemeId": "lx-0624"
+        },
+        {
+          "surface": "صحبت",
+          "lexemeId": "lx-0318"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "این سفر بسیار خوب است.",
+      "translit": "īn safar bisyār khōb ast.",
+      "en": "This trip is very good.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "سفر",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0006",
+    "lx-0010",
+    "lx-0014",
+    "lx-0025",
+    "lx-0063",
+    "lx-0066",
+    "lx-0081",
+    "lx-0089",
+    "lx-0095",
+    "lx-0096",
+    "lx-0097",
+    "lx-0167",
+    "lx-0199",
+    "lx-0200",
+    "lx-0219",
+    "lx-0246",
+    "lx-0318",
+    "lx-0624"
+  ],
+  "newWords": [
+    "lx-0624"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 140
+}

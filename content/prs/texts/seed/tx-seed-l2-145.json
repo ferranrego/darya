@@ -1,0 +1,164 @@
+{
+  "id": "tx-seed-l2-145",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "لباس جدید",
+  "titleTranslit": "libās-e jadīd",
+  "titleEn": "New clothes",
+  "sentences": [
+    {
+      "target": "خواهر من لباس جدید می‌پوشد.",
+      "translit": "khāhar-e man libās-e jadīd mēpōshad.",
+      "en": "My sister wears new clothes.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "جدید",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "می‌پوشد",
+          "lexemeId": "lx-0231"
+        }
+      ]
+    },
+    {
+      "target": "رنگ لباس او سفید است.",
+      "translit": "rang-e libās-e ō safēd ast.",
+      "en": "Her clothes are white.",
+      "tokens": [
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او لباس کهنه را نمی‌پوشد.",
+      "translit": "ō libās-e kuhna rā namēpōshad.",
+      "en": "She does not wear the old clothes.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "نمی‌پوشد",
+          "lexemeId": "lx-0231"
+        }
+      ]
+    },
+    {
+      "target": "مادر من لباس را می‌بندد.",
+      "translit": "mādar-e man libās rā mēbandad.",
+      "en": "My mother fastens the clothes.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌بندد",
+          "lexemeId": "lx-0373"
+        }
+      ]
+    },
+    {
+      "target": "خواهر من آماده است.",
+      "translit": "khāhar-e man āmāda ast.",
+      "en": "My sister is ready.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "آماده",
+          "lexemeId": "lx-0203"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0051",
+    "lx-0054",
+    "lx-0068",
+    "lx-0141",
+    "lx-0143",
+    "lx-0203",
+    "lx-0230",
+    "lx-0231",
+    "lx-0361",
+    "lx-0373"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 145
+}

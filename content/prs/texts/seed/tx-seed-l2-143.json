@@ -1,0 +1,170 @@
+{
+  "id": "tx-seed-l2-143",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "نان آماده است",
+  "titleTranslit": "nān āmāda ast",
+  "titleEn": "The bread is ready",
+  "sentences": [
+    {
+      "target": "مادر من نان می‌پزد.",
+      "translit": "mādar-e man nān mēpazad.",
+      "en": "My mother bakes bread.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "می‌پزد",
+          "lexemeId": "lx-0385"
+        }
+      ]
+    },
+    {
+      "target": "نان حالا آماده است.",
+      "translit": "nān hālā āmāda ast.",
+      "en": "The bread is ready now.",
+      "tokens": [
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "آماده",
+          "lexemeId": "lx-0203"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او برنج را هم آماده می‌کند.",
+      "translit": "ō berenj rā ham āmāda mēkunad.",
+      "en": "She gets the rice ready too.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "برنج",
+          "lexemeId": "lx-0111"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "آماده",
+          "lexemeId": "lx-0203"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "همه فامیل آماده هستند.",
+      "translit": "hama fāmīl āmāda hastand.",
+      "en": "The whole family is ready.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "فامیل",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "آماده",
+          "lexemeId": "lx-0203"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "کار تمام است و ما می‌خوریم.",
+      "translit": "kār tamām ast wa mā mēkhurēm.",
+      "en": "The work is done and we eat.",
+      "tokens": [
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "تمام",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "می‌خوریم",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0038",
+    "lx-0046",
+    "lx-0051",
+    "lx-0079",
+    "lx-0091",
+    "lx-0096",
+    "lx-0097",
+    "lx-0111",
+    "lx-0165",
+    "lx-0183",
+    "lx-0203",
+    "lx-0310",
+    "lx-0385"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 143
+}

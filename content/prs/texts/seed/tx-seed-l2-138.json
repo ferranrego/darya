@@ -1,0 +1,170 @@
+{
+  "id": "tx-seed-l2-138",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "پرسیدن و یافتن",
+  "titleTranslit": "pursīdan wa yāftan",
+  "titleEn": "Asking and finding",
+  "sentences": [
+    {
+      "target": "من یک چیز می‌پرسم.",
+      "translit": "man yak chīz mēpursam.",
+      "en": "I ask a thing.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "می‌پرسم",
+          "lexemeId": "lx-0367"
+        }
+      ]
+    },
+    {
+      "target": "دوست من جواب می‌یابد.",
+      "translit": "dōst-e man jawāb mēyābad.",
+      "en": "My friend finds an answer.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "جواب",
+          "lexemeId": "lx-0222"
+        },
+        {
+          "surface": "می‌یابد",
+          "lexemeId": "lx-0382"
+        }
+      ]
+    },
+    {
+      "target": "او هر روز یک حرف نو می‌یابد.",
+      "translit": "ō har rōz yak harf-e naw mēyābad.",
+      "en": "He finds a new word every day.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "حرف",
+          "lexemeId": "lx-0298"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌یابد",
+          "lexemeId": "lx-0382"
+        }
+      ]
+    },
+    {
+      "target": "من از معلم می‌پرسم.",
+      "translit": "man az mu'allem mēpursam.",
+      "en": "I ask the teacher.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "می‌پرسم",
+          "lexemeId": "lx-0367"
+        }
+      ]
+    },
+    {
+      "target": "معلم نظر خود را می‌گوید.",
+      "translit": "mu'allem nazar-e khud rā mēgōyad.",
+      "en": "The teacher says his opinion.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "نظر",
+          "lexemeId": "lx-0314"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0007",
+    "lx-0011",
+    "lx-0012",
+    "lx-0025",
+    "lx-0040",
+    "lx-0058",
+    "lx-0067",
+    "lx-0078",
+    "lx-0093",
+    "lx-0164",
+    "lx-0166",
+    "lx-0178",
+    "lx-0222",
+    "lx-0298",
+    "lx-0314",
+    "lx-0367",
+    "lx-0382"
+  ],
+  "newWords": [
+    "lx-0382"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 138
+}

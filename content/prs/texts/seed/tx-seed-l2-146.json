@@ -1,0 +1,162 @@
+{
+  "id": "tx-seed-l2-146",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "زمان ما",
+  "titleTranslit": "zamān-e mā",
+  "titleEn": "Our time",
+  "sentences": [
+    {
+      "target": "زمان ما بسیار کم است.",
+      "translit": "zamān-e mā bisyār kam ast.",
+      "en": "Our time is very short.",
+      "tokens": [
+        {
+          "surface": "زمان",
+          "lexemeId": "lx-0358"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما زمان زیاد نداریم.",
+      "translit": "mā zamān-e ziyād nadārēm.",
+      "en": "We do not have a lot of time.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "زمان",
+          "lexemeId": "lx-0358"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "نداریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "کار من تمام نیست.",
+      "translit": "kār-e man tamām nēst.",
+      "en": "My work is not finished.",
+      "tokens": [
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "تمام",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "من به خاطر کار مانده هستم.",
+      "translit": "man ba khātir-e kār mānda hastam.",
+      "en": "I am tired because of the work.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خاطر",
+          "lexemeId": "lx-0336"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "مانده",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "هستم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "فردا زمان بهتر است.",
+      "translit": "fardā zamān bihtar ast.",
+      "en": "Tomorrow the time is better.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "زمان",
+          "lexemeId": "lx-0358"
+        },
+        {
+          "surface": "بهتر",
+          "lexemeId": "lx-0357"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0044",
+    "lx-0069",
+    "lx-0070",
+    "lx-0079",
+    "lx-0095",
+    "lx-0096",
+    "lx-0108",
+    "lx-0167",
+    "lx-0310",
+    "lx-0336",
+    "lx-0357",
+    "lx-0358"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 146
+}

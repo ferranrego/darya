@@ -100,6 +100,18 @@ draft.forEach((text, i) => {
       problems.push(`${where} sentence ${j + 1}: subordinator - ${level} is main clauses only`);
     }
     /**
+     * داشتن and بودن never take mē-.
+     *
+     * Both are suppletive: the present of داشتن is bare دارم/داری/دارد and its
+     * negative is نداریم, not نمی‌داریم - `levels.json` states this at L1 and
+     * repeats it at L2, and the build rejects the form as unresolvable, which
+     * is a confusing way to be told you conjugated a verb that does not
+     * conjugate that way.
+     */
+    if (/ن?می\u200c(دار|هست|باش)/u.test(s.target)) {
+      problems.push(`${where} sentence ${j + 1}: داشتن/بودن are suppletive - no mē- form`);
+    }
+    /**
      * The object marker را below L2.
      *
      * `levels.json` introduces را in L2's `grammarAllowed`; L1 has only the

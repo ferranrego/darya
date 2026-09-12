@@ -1,0 +1,162 @@
+{
+  "id": "tx-seed-l2-141",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دکان بسته",
+  "titleTranslit": "dukān-e basta",
+  "titleEn": "The closed shop",
+  "sentences": [
+    {
+      "target": "امروز دکان بسته است.",
+      "translit": "emrōz dukān basta ast.",
+      "en": "Today the shop is closed.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "بسته",
+          "lexemeId": "lx-0200"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "آقای رئیس اینجا نیست.",
+      "translit": "āqā-ye ra'īs īnjā nēst.",
+      "en": "Mr. Boss is not here.",
+      "tokens": [
+        {
+          "surface": "آقای",
+          "lexemeId": "lx-0332"
+        },
+        {
+          "surface": "رئیس",
+          "lexemeId": "lx-0509"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "او دروازه را می‌بندد.",
+      "translit": "ō darwāza rā mēbandad.",
+      "en": "He closes the door.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌بندد",
+          "lexemeId": "lx-0373"
+        }
+      ]
+    },
+    {
+      "target": "فردا دکان باز می‌شود.",
+      "translit": "fardā dukān bāz mēshawad.",
+      "en": "Tomorrow the shop will open.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "باز",
+          "lexemeId": "lx-0199"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "من فردا برنج و قند می‌خرم.",
+      "translit": "man fardā berenj wa qand mēkharam.",
+      "en": "Tomorrow I will buy rice and sugar.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "برنج",
+          "lexemeId": "lx-0111"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "قند",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "می‌خرم",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0043",
+    "lx-0044",
+    "lx-0096",
+    "lx-0111",
+    "lx-0118",
+    "lx-0134",
+    "lx-0149",
+    "lx-0174",
+    "lx-0197",
+    "lx-0199",
+    "lx-0200",
+    "lx-0205",
+    "lx-0332",
+    "lx-0373",
+    "lx-0509"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 141
+}

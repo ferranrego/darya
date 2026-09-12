@@ -1,0 +1,156 @@
+{
+  "id": "tx-seed-l2-144",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "فوتبال در باغ",
+  "titleTranslit": "fūtbāl dar bāgh",
+  "titleEn": "Football in the garden",
+  "sentences": [
+    {
+      "target": "بچه‌ها در باغ فوتبال می‌کنند.",
+      "translit": "bacha-hā dar bāgh fūtbāl mēkunand.",
+      "en": "The boys play football in the garden.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "فوتبال",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "آنها لباس سبز می‌پوشند.",
+      "translit": "ānhā libās-e sabz mēpōshand.",
+      "en": "They wear green clothes.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "سبز",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "می‌پوشند",
+          "lexemeId": "lx-0231"
+        }
+      ]
+    },
+    {
+      "target": "بازی زود تمام می‌شود.",
+      "translit": "bāzī zūd tamām mēshawad.",
+      "en": "The game finishes early.",
+      "tokens": [
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "تمام",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "بعد آنها آب می‌خورند.",
+      "translit": "ba'd ānhā āb mēkhurand.",
+      "en": "Afterwards they drink water.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "آب",
+          "lexemeId": "lx-0037"
+        },
+        {
+          "surface": "می‌خورند",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "فوتبال بازی خوب است.",
+      "translit": "fūtbāl bāzī-ye khōb ast.",
+      "en": "Football is a good game.",
+      "tokens": [
+        {
+          "surface": "فوتبال",
+          "lexemeId": "lx-0192"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0010",
+    "lx-0016",
+    "lx-0037",
+    "lx-0057",
+    "lx-0063",
+    "lx-0091",
+    "lx-0097",
+    "lx-0139",
+    "lx-0145",
+    "lx-0149",
+    "lx-0191",
+    "lx-0192",
+    "lx-0230",
+    "lx-0231",
+    "lx-0301",
+    "lx-0310",
+    "lx-0356"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 144
+}

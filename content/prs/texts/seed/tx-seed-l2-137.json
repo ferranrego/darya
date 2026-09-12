@@ -1,0 +1,170 @@
+{
+  "id": "tx-seed-l2-137",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "ساختن خانه",
+  "titleTranslit": "sākhtan-e khāna",
+  "titleEn": "Building a house",
+  "sentences": [
+    {
+      "target": "کاکای من یک خانه می‌سازد.",
+      "translit": "kākā-ye man yak khāna mēsāzad.",
+      "en": "My uncle builds a house.",
+      "tokens": [
+        {
+          "surface": "کاکای",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌سازد",
+          "lexemeId": "lx-0375"
+        }
+      ]
+    },
+    {
+      "target": "او دیوار نو می‌سازد.",
+      "translit": "ō dēwār-e naw mēsāzad.",
+      "en": "He builds a new wall.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "دیوار",
+          "lexemeId": "lx-6045"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌سازد",
+          "lexemeId": "lx-0375"
+        }
+      ]
+    },
+    {
+      "target": "کار او تمام می‌شود.",
+      "translit": "kār-e ō tamām mēshawad.",
+      "en": "His work is finished.",
+      "tokens": [
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "تمام",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "خانه جدید بسیار روشن است.",
+      "translit": "khāna-ye jadīd bisyār rōshan ast.",
+      "en": "The new house is very bright.",
+      "tokens": [
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "جدید",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "روشن",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما از این خانه استفاده می‌کنیم.",
+      "translit": "mā az īn khāna istifāda mēkunēm.",
+      "en": "We use this house.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "استفاده",
+          "lexemeId": "lx-0339"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0036",
+    "lx-0067",
+    "lx-0079",
+    "lx-0097",
+    "lx-0149",
+    "lx-0167",
+    "lx-0185",
+    "lx-0194",
+    "lx-0310",
+    "lx-0339",
+    "lx-0361",
+    "lx-0375",
+    "lx-6045"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 137
+}

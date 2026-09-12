@@ -1,0 +1,172 @@
+{
+  "id": "tx-seed-l2-139",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "نظر من",
+  "titleTranslit": "nazar-e man",
+  "titleEn": "My opinion",
+  "sentences": [
+    {
+      "target": "نظر من خوب است.",
+      "translit": "nazar-e man khōb ast.",
+      "en": "My opinion is good.",
+      "tokens": [
+        {
+          "surface": "نظر",
+          "lexemeId": "lx-0314"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من نظر خود را می‌گویم.",
+      "translit": "man nazar-e khud rā mēgōyam.",
+      "en": "I say my opinion.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نظر",
+          "lexemeId": "lx-0314"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌گویم",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "دوست من نظر دیگر دارد.",
+      "translit": "dōst-e man nazar-e dīgar dārad.",
+      "en": "My friend has a different opinion.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نظر",
+          "lexemeId": "lx-0314"
+        },
+        {
+          "surface": "دیگر",
+          "lexemeId": "lx-0173"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "ما در مورد کار صحبت می‌کنیم.",
+      "translit": "mā dar mōrid-e kār suhbat mēkunēm.",
+      "en": "We talk about the work.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مورد",
+          "lexemeId": "lx-0306"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "صحبت",
+          "lexemeId": "lx-0318"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "نظر او هم خوب است.",
+      "translit": "nazar-e ō ham khōb ast.",
+      "en": "His opinion is good too.",
+      "tokens": [
+        {
+          "surface": "نظر",
+          "lexemeId": "lx-0314"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0058",
+    "lx-0063",
+    "lx-0079",
+    "lx-0093",
+    "lx-0095",
+    "lx-0097",
+    "lx-0173",
+    "lx-0178",
+    "lx-0306",
+    "lx-0314",
+    "lx-0318"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 139
+}

@@ -1,0 +1,187 @@
+{
+  "id": "tx-seed-l2-135",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "عکس فامیل",
+  "titleTranslit": "aks-e fāmīl",
+  "titleEn": "The family photo",
+  "sentences": [
+    {
+      "target": "ما یک عکس کهنه داریم.",
+      "translit": "mā yak aks-e kuhna dārēm.",
+      "en": "We have an old photo.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "عکس",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "در این عکس فامیل ما است.",
+      "translit": "dar īn aks fāmīl-e mā ast.",
+      "en": "Our family is in this photo.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "عکس",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "فامیل",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "پدرکلان و مادرکلان من هم هستند.",
+      "translit": "padarkalān wa mādarkalān-e man ham hastand.",
+      "en": "My grandfather and grandmother are there too.",
+      "tokens": [
+        {
+          "surface": "پدرکلان",
+          "lexemeId": "lx-0186"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "مادرکلان",
+          "lexemeId": "lx-0187"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "این عکس بسیار قدیمی است.",
+      "translit": "īn aks bisyār qadīmī ast.",
+      "en": "This photo is very old.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "عکس",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "قدیمی",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من عکس را سر دیوار می‌مانم.",
+      "translit": "man aks rā sar-e dēwār mēmānam.",
+      "en": "I put the photo on the wall.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "عکس",
+          "lexemeId": "lx-0240"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "سر",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "دیوار",
+          "lexemeId": "lx-6045"
+        },
+        {
+          "surface": "می‌مانم",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0024",
+    "lx-0025",
+    "lx-0068",
+    "lx-0095",
+    "lx-0096",
+    "lx-0122",
+    "lx-0167",
+    "lx-0183",
+    "lx-0186",
+    "lx-0187",
+    "lx-0234",
+    "lx-0240",
+    "lx-0259",
+    "lx-6045"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 135
+}
