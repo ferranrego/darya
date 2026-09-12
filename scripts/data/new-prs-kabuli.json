@@ -1,0 +1,132 @@
+[
+  {
+    "target": "همان",
+    "translit": "hamān",
+    "glossEn": "that same, the very same",
+    "pos": "determiner",
+    "register": "neutral",
+    "exampleTarget": "همان کتاب را بده.",
+    "exampleTranslit": "hamān ketāb rā bidih.",
+    "exampleEn": "Give me that same book.",
+    "variants": [
+      "همو"
+    ],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "پلیت",
+    "translit": "pilēt",
+    "glossEn": "plate",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "نان را در پلیت ماندم.",
+    "exampleTranslit": "nān rā dar pilēt māndam.",
+    "exampleEn": "I put the bread on the plate.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "مسکه",
+    "translit": "maska",
+    "glossEn": "butter",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "نان و مسکه می‌خورم.",
+    "exampleTranslit": "nān wa maska mēkhuram.",
+    "exampleEn": "I eat bread and butter.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "پته",
+    "translit": "pata",
+    "glossEn": "address",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "پته خانه شما چیست؟",
+    "exampleTranslit": "pata-ye khāna-ye shumā chīst?",
+    "exampleEn": "What is your home address?",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "تیار",
+    "translit": "tayār",
+    "glossEn": "ready",
+    "pos": "adjective",
+    "register": "neutral",
+    "exampleTarget": "چای تیار است.",
+    "exampleTranslit": "chāy tayār ast.",
+    "exampleEn": "The tea is ready.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "پالیدن",
+    "translit": "pālīdan",
+    "glossEn": "to look for, to search",
+    "pos": "verb",
+    "register": "neutral",
+    "presentStem": "پال",
+    "presentStemTranslit": "pāl",
+    "exampleTarget": "کتاب خود را می‌پالم.",
+    "exampleTranslit": "ketāb-e khud rā mēpālam.",
+    "exampleEn": "I am looking for my book.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "نمبر",
+    "translit": "nambar",
+    "glossEn": "number",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "نمبر تیلفون شما چیست؟",
+    "exampleTranslit": "nambar-e tēlifūn-e shumā chīst?",
+    "exampleEn": "What is your telephone number?",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "چپرکت",
+    "translit": "chaparkat",
+    "glossEn": "bed",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "من بالای چپرکت می‌خوابم.",
+    "exampleTranslit": "man bālā-ye chaparkat mēkhābam.",
+    "exampleEn": "I sleep on the bed.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "کوشش",
+    "translit": "kōshish",
+    "glossEn": "effort, try (کوشش کردن: to try)",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "من کوشش می‌کنم.",
+    "exampleTranslit": "man kōshish mēkunam.",
+    "exampleEn": "I am trying.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  }
+]

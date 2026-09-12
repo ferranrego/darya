@@ -54,6 +54,20 @@ export const INTERFERENCE_RULES = [
   { wrong: "استان", right: "ولایت", whyEn: "“province” is ولایت in Afghanistan." },
   { wrong: "خلیج فارس", right: "خلیج", whyEn: "“Persian Gulf” is often just referred to as خلیج in Dari." },
   { wrong: "پیامک", right: "مسج", whyEn: "“text message” is مسج in Dari; پیامک is Iranian." },
+  // Found by a philologist audit of the 1,768 dictionary entries a beginner
+  // meets. Every one of these was in the dictionary as an ordinary `neutral`
+  // headword, so the app taught the Iranian word and had no way to know.
+  { wrong: "کفش", right: "بوت", whyEn: "“shoe” is بوت in Dari; کفش is Iranian." },
+  { wrong: "لیوان", right: "گیلاس", whyEn: "a drinking glass is گیلاس in Dari; لیوان is Iranian." },
+  { wrong: "فنجان", right: "پیاله", whyEn: "“cup” is پیاله in Dari; فنجان is Iranian." },
+  { wrong: "بشقاب", right: "پلیت", whyEn: "“plate” is پلیت in Dari; بشقاب is Iranian." },
+  { wrong: "کره", right: "مسکه", whyEn: "“butter” is مسکه in Dari; کره is Iranian." },
+  { wrong: "پنجره", right: "کلکین", whyEn: "“window” is کلکین in Dari; پنجره is Iranian." },
+  { wrong: "دارو", right: "دوا", whyEn: "“medicine” is دوا in Dari; دارو is Iranian." },
+  { wrong: "درمان", right: "تداوی", whyEn: "“treatment” is تداوی in Dari; درمان is Iranian." },
+  { wrong: "بهداشت", right: "صحت", whyEn: "“health” is صحت in Afghanistan - وزارت صحت عامه; بهداشت is Iran's word." },
+  { wrong: "بازنشستگی", right: "تقاعد", whyEn: "“retirement” is تقاعد in Dari; بازنشستگی is Iranian." },
+  { wrong: "تیرماه", right: "خزان", whyEn: "تیر is an Iranian solar month and falls in summer; it is not in the Afghan calendar. Autumn is خزان." },
 ];
 
 export const INTERFERENCE = [
@@ -80,7 +94,7 @@ export const BEGINNER_PATTERNS = [
   "خانه ما کلان است.",
   "پدر من معلم است.",
   "سگ گوشت می‌خورد.",
-  "بشقاب‌ها بالای میز است.",
+  "پلیت‌ها بالای میز است.",
   "امروز آفتاب است.",
   "دوشنبه به مکتب می‌روم.",
   "سیب چند است؟",

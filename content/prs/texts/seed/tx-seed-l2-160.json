@@ -1,0 +1,241 @@
+{
+  "id": "tx-seed-l2-160",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "چیزهای گم شده",
+  "titleTranslit": "chīz-hā-ye gum shuda",
+  "titleEn": "Lost things",
+  "sentences": [
+    {
+      "target": "من کتاب خود را می‌پالم.",
+      "translit": "man ketāb-e khud rā mēpālam.",
+      "en": "I am looking for my book.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌پالم",
+          "lexemeId": "lx-9999"
+        }
+      ]
+    },
+    {
+      "target": "برادر من هم می‌پالد.",
+      "translit": "barādar-e man ham mēpālad.",
+      "en": "My brother is looking too.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "می‌پالد",
+          "lexemeId": "lx-9999"
+        }
+      ]
+    },
+    {
+      "target": "ما در اتاق می‌پالیم.",
+      "translit": "mā dar utāq mēpālēm.",
+      "en": "We look in the room.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "می‌پالیم",
+          "lexemeId": "lx-9999"
+        }
+      ]
+    },
+    {
+      "target": "مادر من کتاب را می‌یابد.",
+      "translit": "mādar-e man ketāb rā mēyābad.",
+      "en": "My mother finds the book.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌یابد",
+          "lexemeId": "lx-0382"
+        }
+      ]
+    },
+    {
+      "target": "من هر روز کوشش می‌کنم.",
+      "translit": "man har rōz kōshish mēkunam.",
+      "en": "I try every day.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "کوشش",
+          "lexemeId": "lx-10002"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "برادر من هم کوشش می‌کند.",
+      "translit": "barādar-e man ham kōshish mēkunad.",
+      "en": "My brother tries too.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "کوشش",
+          "lexemeId": "lx-10002"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من چیز دیگر می‌پالم.",
+      "translit": "man chīz-e dīgar mēpālam.",
+      "en": "I am looking for another thing.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "دیگر",
+          "lexemeId": "lx-0173"
+        },
+        {
+          "surface": "می‌پالم",
+          "lexemeId": "lx-9999"
+        }
+      ]
+    },
+    {
+      "target": "ما همه کوشش می‌کنیم.",
+      "translit": "mā hama kōshish mēkunēm.",
+      "en": "We all try.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "کوشش",
+          "lexemeId": "lx-10002"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0007",
+    "lx-0011",
+    "lx-0014",
+    "lx-0024",
+    "lx-0040",
+    "lx-0051",
+    "lx-0053",
+    "lx-0074",
+    "lx-0097",
+    "lx-0164",
+    "lx-0165",
+    "lx-0166",
+    "lx-0173",
+    "lx-0178",
+    "lx-0196",
+    "lx-0382",
+    "lx-10002",
+    "lx-9999"
+  ],
+  "newWords": [
+    "lx-10002",
+    "lx-9999"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 160
+}

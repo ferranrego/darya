@@ -1,0 +1,166 @@
+{
+  "id": "tx-seed-l2-161",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "کوشش ما",
+  "titleTranslit": "kōshish-e mā",
+  "titleEn": "Our effort",
+  "sentences": [
+    {
+      "target": "من هر روز کوشش می‌کنم.",
+      "translit": "man har rōz kōshish mēkunam.",
+      "en": "I try every day.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "کوشش",
+          "lexemeId": "lx-10002"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "خواهر من هم کوشش می‌کند.",
+      "translit": "khāhar-e man ham kōshish mēkunad.",
+      "en": "My sister tries too.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "کوشش",
+          "lexemeId": "lx-10002"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "ما درس خود را می‌پالیم.",
+      "translit": "mā dars-e khud rā mēpālēm.",
+      "en": "We look for our lesson.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌پالیم",
+          "lexemeId": "lx-9999"
+        }
+      ]
+    },
+    {
+      "target": "کوشش کار خوب است.",
+      "translit": "kōshish kār-e khōb ast.",
+      "en": "Trying is good work.",
+      "tokens": [
+        {
+          "surface": "کوشش",
+          "lexemeId": "lx-10002"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "معلم ما هم کوشش می‌کند.",
+      "translit": "mu'allem-e mā ham kōshish mēkunad.",
+      "en": "Our teacher tries too.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "کوشش",
+          "lexemeId": "lx-10002"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0024",
+    "lx-0040",
+    "lx-0054",
+    "lx-0063",
+    "lx-0078",
+    "lx-0079",
+    "lx-0097",
+    "lx-0166",
+    "lx-0178",
+    "lx-0216",
+    "lx-10002",
+    "lx-9999"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 161
+}

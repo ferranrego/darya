@@ -88,6 +88,22 @@ for (const [i, f] of findings.entries()) {
   if (entry && isRuledOut(entry)) {
     problems.push(`${where}: already ruled out - "${entry.glossEn}"`);
   }
+  /**
+   * A `preferred` that names the entry's own headword is a different finding.
+   *
+   * گیلاس came back as `iranian` with preferred "گیلاس = drinking glass
+   * (cherry is آلبالو)" - the auditor meant the *gloss* carries the Iranian
+   * sense, not that the word is Iranian. Applied literally this wrote "Dari is
+   * گیلاس" onto گیلاس and ruled a genuinely Afghan word out of the course.
+   * This tool can only say "prefer a different word"; a wrong gloss is a
+   * repair it cannot express, so it refuses rather than mangles.
+   */
+  if (entry && f.preferred?.includes(entry.targetNormalized)) {
+    problems.push(
+      `${where}: preferred names the headword itself ("${f.preferred}") - ` +
+        `this reads as a wrong-gloss finding, which this tool cannot apply`,
+    );
+  }
 }
 if (problems.length > 0) {
   for (const p of problems.slice(0, 30)) console.error(`✗ ${p}`);
@@ -97,6 +113,7 @@ if (problems.length > 0) {
 }
 
 let ruledOut = 0;
+let noted = 0;
 let reregistered = 0;
 const wanted: Finding[] = [];
 for (const f of findings) {
@@ -111,8 +128,20 @@ for (const f of findings) {
     e.glossEn = `[not a headword: Iranian; Dari is ${f.preferred}] ${e.glossEn}`;
     ruledOut++;
   } else if (f.verdict === "bookish") {
-    e.glossEn = `[not a headword: bookish; everyday Dari is ${f.preferred}] ${e.glossEn}`;
-    ruledOut++;
+    /**
+     * A bookish word is not ruled out, because it is correct Dari.
+     *
+     * The auditors were clear that the defect here is usually the *band*, not
+     * the word: گوهر سفتن is real Dari that a corpus ranked as beginner
+     * vocabulary because the corpora available are Iranian-dominated. So the
+     * entry keeps its place and gets told the truth about itself - the gloss
+     * names the everyday word, and the register stops claiming to be neutral.
+     */
+    if (!e.glossEn.includes(f.preferred!)) {
+      e.glossEn = `${e.glossEn} (everyday Dari is ${f.preferred})`;
+    }
+    if (e.register === "neutral") e.register = "formal";
+    noted++;
   } else if (f.verdict === "register-wrong") {
     e.register = f.register!;
     reregistered++;
@@ -131,6 +160,7 @@ if (!parsed.success) {
 }
 
 console.log(`ruled out of teaching: ${ruledOut}`);
+console.log(`bookish, gloss noted:    ${noted}`);
 console.log(`register corrected:    ${reregistered}`);
 if (wanted.length > 0) {
   console.log(`\n${wanted.length} everyday Dari word(s) the dictionary is missing - author with add-lexicon-entries.ts:`);
