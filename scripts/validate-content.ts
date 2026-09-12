@@ -786,6 +786,38 @@ if (lexicon && lang === "prs") {
   }
 }
 
+// --- A ruled-out word must leave a way to say the thing ----------------------
+//
+// Ruling an Iranian entry out of teaching removes the word. It does not check
+// that the *meaning* survives, and when 48 were ruled out in one pass, 20 left
+// the app able to teach neither the Iranian word nor its Afghan replacement -
+// 11 replacements were not in the dictionary at all. That was measured after
+// the fact, which is the wrong order; this is the check that makes the order
+// right.
+//
+// A gloss of the form "[not a headword: … Dari is X]" is a promise that X can
+// be taught instead. The promise is kept only if X resolves to a teachable
+// entry.
+if (lexicon && lang === "prs") {
+  const RULED_OUT_ALTERNATIVE = /^\[not a headword: [^\]]*?Dari is ([^\]]+)\]/;
+  const byNormalized = new Map(lexicon.entries.map((e) => [e.targetNormalized, e]));
+  for (const e of lexicon.entries) {
+    const named = RULED_OUT_ALTERNATIVE.exec(e.glossEn)?.[1];
+    if (!named) continue;
+    // "X / Y" offers alternatives, and a parenthetical is a note, not a word.
+    const candidates = named
+      .split("/")
+      .map((w) => w.replace(/\(.*?\)/g, "").trim())
+      .filter(Boolean);
+    if (candidates.some((c) => { const alt = byNormalized.get(c); return alt && isTeachable(alt); })) continue;
+    fail(
+      `lexicon ${e.id}: "${e.target}" is ruled out in favour of "${named}", but ` +
+        `that is not a teachable entry - the app can now teach neither, so the ` +
+        `meaning has left the course entirely`,
+    );
+  }
+}
+
 // --- The app must not teach a word it forbids --------------------------------
 //
 // The check above reads example sentences. Nothing read the *headword*, so the
