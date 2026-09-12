@@ -21,11 +21,11 @@
         },
         {
           "surface": "دوست",
-          "lexemeId": "lx-0058"
+          "lexemeId": "lx-6384"
         },
         {
           "surface": "دارم",
-          "lexemeId": "lx-0095"
+          "lexemeId": "lx-6384"
         }
       ]
     },
@@ -94,11 +94,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "می‌کنیم",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         }
       ]
     },
@@ -143,9 +143,13 @@
     "lx-0096",
     "lx-0097",
     "lx-0257",
-    "lx-0329"
+    "lx-0329",
+    "lx-6369",
+    "lx-6384"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-6384"
+  ],
   "questions": [],
   "grammarPoints": [],
   "newWordRatio": 0,

@@ -37,11 +37,11 @@
         },
         {
           "surface": "بازی",
-          "lexemeId": "lx-0191"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "می‌کنیم",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6370"
         }
       ]
     },
@@ -72,11 +72,11 @@
         },
         {
           "surface": "بازی",
-          "lexemeId": "lx-0191"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6370"
         }
       ]
     },
@@ -159,7 +159,8 @@
     "lx-0167",
     "lx-0191",
     "lx-0376",
-    "lx-6071"
+    "lx-6071",
+    "lx-6370"
   ],
   "newWords": [
     "lx-0107",

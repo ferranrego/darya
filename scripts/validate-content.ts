@@ -567,7 +567,28 @@ if (existsSync(seedDir)) {
          * got that word written into their review deck.
          */
         const resolved = seedIndex?.resolve(t.surface);
-        if (resolved && resolved.id !== t.lexemeId) {
+        /**
+         * A two-word compound verb is the one case where a token deliberately
+         * does not resolve to its own id.
+         *
+         * `build-seed-texts.ts` links both halves of دوست داشتن to the
+         * compound, because دوست on its own is the noun "friend" and a learner
+         * tapping it in "I like this book" was told exactly that. The stored id
+         * therefore differs from `resolve(surface)` on purpose - which is the
+         * same shape as the drift this check exists to catch, so it has to be
+         * told the difference. A link is accepted only when the stored lexeme
+         * really is a two-word verb and this surface really is one of its two
+         * words; anything else is still drift.
+         */
+        const linked = t.lexemeId ? lexiconById.get(t.lexemeId) : undefined;
+        const compoundParts =
+          linked?.pos === "verb" && linked.targetNormalized.includes(" ")
+            ? linked.targetNormalized.split(" ")
+            : null;
+        const isCompoundHalf =
+          compoundParts?.length === 2 &&
+          compoundParts.some((part) => seedIndex?.resolve(part)?.id === resolved?.id);
+        if (resolved && resolved.id !== t.lexemeId && !isCompoundHalf) {
           fail(
             `${f}: token "${t.surface}" is linked to ${t.lexemeId} but resolves to ` +
               `${resolved.id} ("${resolved.targetNormalized}")`,
@@ -816,6 +837,27 @@ if (lexicon) {
   const { ambiguities, usages } = auditHomographs(lang, root, lexicon.entries, matchKey);
   for (const u of usages) {
     if (u.ok) continue;
+    /**
+     * A compound-verb link has already been decided by context.
+     *
+     * `homograph-review.json` is keyed by surface, so one entry cannot say
+     * "the compound when a light verb follows, the noun otherwise" - and بازی
+     * is both, in the same corpus. `build-seed-texts.ts` now makes that call
+     * per sentence by looking at the next token, which is strictly more
+     * information than a surface-keyed file can hold. Where it has linked a
+     * token to a two-word verb containing that surface, the reviewed decision
+     * does not apply; everywhere else it still does.
+     */
+    const linked = lexiconById.get(u.storedLexemeId);
+    if (
+      linked?.pos === "verb" &&
+      linked.targetNormalized.split(" ").length === 2 &&
+      linked.targetNormalized
+        .split(" ")
+        .some((part) => matchKey(normalize(part)) === matchKey(normalize(u.surface)))
+    ) {
+      continue;
+    }
     if (!u.review) {
       fail(
         `${u.file}: "${u.surface}" in "${u.sentence}" is bound to ${u.storedLexemeId}, ambiguous with ` +

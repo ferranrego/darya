@@ -48,11 +48,11 @@
         },
         {
           "surface": "کمک",
-          "lexemeId": "lx-0208"
+          "lexemeId": "lx-2198"
         },
         {
           "surface": "می‌کنم",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-2198"
         }
       ]
     },
@@ -175,6 +175,7 @@
     "lx-0174",
     "lx-0208",
     "lx-0256",
+    "lx-2198",
     "lx-6155"
   ],
   "newWords": [],

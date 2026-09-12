@@ -34,6 +34,25 @@ const lexicon = lexiconFileSchema.parse(
 const index = buildIndex(lexicon.entries);
 
 /**
+ * Two-word compound verbs, indexed by their first word and their light verb.
+ *
+ * Used to relink a split compound below. Two-word only: a four-word idiom like
+ * "به منصه ظهور رساندن" starts with به, and matching on that alone would treat
+ * every "به من" in the corpus as a mistokenised verb.
+ */
+const compoundFirstHalf = new Map<string, string>();
+const lightVerbOf = new Map<string, string>();
+for (const entry of lexicon.entries) {
+  if (entry.pos !== "verb") continue;
+  const parts = entry.targetNormalized.split(" ");
+  if (parts.length !== 2) continue;
+  const light = index.resolve(parts[1]);
+  if (!light) continue;
+  compoundFirstHalf.set(parts[0], entry.id);
+  lightVerbOf.set(entry.id, light.id);
+}
+
+/**
  * Closed-class words - articles, pronouns, prepositions - are absorbed on
  * sight rather than taught (PEDAGOGY §5), so every level's `introduced` set
  * below starts with them instead of ever counting one as a `newWords` word.
@@ -138,12 +157,38 @@ for (const levelTexts of byLevel.values()) {
 
     const vocab = new Set<string>();
     const sentences = source.sentences.map((s) => {
-      const tokens = tokenize(s.target).map((surface) => {
+      const surfaces = tokenize(s.target);
+      const tokens = surfaces.map((surface) => {
         const entry = index.resolve(surface);
         if (!entry) failures.push(`${source.slug}: unresolved word "${surface}" in "${s.target}"`);
         else vocab.add(entry.id);
         return { surface, lexemeId: entry?.id ?? null };
       });
+      /**
+       * Link both halves of a compound verb to the compound.
+       *
+       * The tokenizer splits on spaces, so each half of دوست داشتن resolves on
+       * its own - and دوست on its own is the noun "friend". A learner tapping
+       * it in "I like this book" was told "friend", which is a wrong answer
+       * delivered with complete confidence. Seven places in the shipped corpus
+       * did this, including تصمیم گرفتن ("decision") and فکر کردن ("thought").
+       *
+       * Only relinked when the light verb that actually follows is a form of
+       * the compound's own second word, so `کار` before a noun stays the noun
+       * `کار`. Both halves point at the compound, so tapping either one gives
+       * the verb the sentence is really using.
+       */
+      for (let i = 0; i < tokens.length - 1; i++) {
+        const compoundId = compoundFirstHalf.get(tokens[i].surface);
+        if (!compoundId || tokens[i].lexemeId === compoundId) continue;
+        const light = lightVerbOf.get(compoundId);
+        if (!light) continue;
+        const next = index.resolve(tokens[i + 1].surface);
+        if (next?.id !== light) continue;
+        tokens[i].lexemeId = compoundId;
+        tokens[i + 1].lexemeId = compoundId;
+        vocab.add(compoundId);
+      }
       return { ...s, tokens };
     });
 

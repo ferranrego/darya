@@ -159,11 +159,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "کردند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         }
       ]
     },
@@ -360,7 +360,8 @@
     "lx-2073",
     "lx-3798",
     "lx-3962",
-    "lx-6114"
+    "lx-6114",
+    "lx-6369"
   ],
   "newWords": [
     "lx-0036",
@@ -379,7 +380,8 @@
     "lx-2073",
     "lx-3798",
     "lx-3962",
-    "lx-6114"
+    "lx-6114",
+    "lx-6369"
   ],
   "questions": [],
   "grammarPoints": [

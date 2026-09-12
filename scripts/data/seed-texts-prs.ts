@@ -7454,4 +7454,20 @@ export const seedTexts: SeedTextSource[] = [
       { target: "این روز بسیار خوب است.", translit: "īn rōz bisyār khōb ast.", en: "This day is very good." },
     ],
   },
+  {
+    slug: "l2-159",
+    level: "L2",
+    seq: 159,
+    titleTarget: "فکر و جواب",
+    titleTranslit: "fikr wa jawāb",
+    titleEn: "Thinking and answering",
+    sentences: [
+      { target: "من در مورد این کار فکر می‌کنم.", translit: "man dar mōrid-e īn kār fikr mēkunam.", en: "I think about this work." },
+      { target: "دوست من هم فکر می‌کند.", translit: "dōst-e man ham fikr mēkunad.", en: "My friend thinks too." },
+      { target: "معلم ما به هر سوال جواب می‌دهد.", translit: "mu'allem-e mā ba har sawāl jawāb mēdihad.", en: "Our teacher answers every question." },
+      { target: "من هم به معلم جواب می‌دهم.", translit: "man ham ba mu'allem jawāb mēdiham.", en: "I answer the teacher too." },
+      { target: "بعد دل من آرام می‌شود.", translit: "ba'd dil-e man ārām mēshawad.", en: "Then my heart becomes calm." },
+      { target: "بچه‌ها هم آرام می‌شوند.", translit: "bacha-hā ham ārām mēshawand.", en: "The children become calm too." },
+    ],
+  },
 ];

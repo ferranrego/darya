@@ -76,11 +76,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         }
       ]
     },
@@ -103,11 +103,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "معاش",
@@ -150,11 +150,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "نزدیک",
@@ -271,7 +271,8 @@
     "lx-1049",
     "lx-1243",
     "lx-1253",
-    "lx-3978"
+    "lx-3978",
+    "lx-6369"
   ],
   "newWords": [
     "lx-0049",
@@ -281,7 +282,8 @@
     "lx-1049",
     "lx-1243",
     "lx-1253",
-    "lx-3978"
+    "lx-3978",
+    "lx-6369"
   ],
   "questions": [],
   "grammarPoints": [

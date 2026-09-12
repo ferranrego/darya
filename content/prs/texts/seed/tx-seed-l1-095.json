@@ -25,11 +25,11 @@
         },
         {
           "surface": "زندگی",
-          "lexemeId": "lx-0150"
+          "lexemeId": "lx-6383"
         },
         {
           "surface": "می‌کنم",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6383"
         }
       ]
     },
@@ -155,9 +155,12 @@
     "lx-0175",
     "lx-0177",
     "lx-0185",
-    "lx-0234"
+    "lx-0234",
+    "lx-6383"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-6383"
+  ],
   "questions": [],
   "grammarPoints": [],
   "newWordRatio": 0,

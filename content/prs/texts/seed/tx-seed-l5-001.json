@@ -135,11 +135,11 @@
         },
         {
           "surface": "کمک",
-          "lexemeId": "lx-0208"
+          "lexemeId": "lx-2198"
         },
         {
           "surface": "کنند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-2198"
         },
         {
           "surface": "مکتب",
@@ -356,6 +356,7 @@
     "lx-1051",
     "lx-1264",
     "lx-1457",
+    "lx-2198",
     "lx-3557"
   ],
   "newWords": [
@@ -391,6 +392,7 @@
     "lx-1051",
     "lx-1264",
     "lx-1457",
+    "lx-2198",
     "lx-3557"
   ],
   "questions": [],

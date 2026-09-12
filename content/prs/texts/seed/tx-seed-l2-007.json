@@ -25,11 +25,11 @@
         },
         {
           "surface": "کمک",
-          "lexemeId": "lx-0208"
+          "lexemeId": "lx-2198"
         },
         {
           "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-2198"
         }
       ]
     },
@@ -83,11 +83,11 @@
         },
         {
           "surface": "استفاده",
-          "lexemeId": "lx-0339"
+          "lexemeId": "lx-0957"
         },
         {
           "surface": "می‌کنند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-0957"
         }
       ]
     },
@@ -181,7 +181,9 @@
     "lx-0307",
     "lx-0312",
     "lx-0339",
-    "lx-0387"
+    "lx-0387",
+    "lx-0957",
+    "lx-2198"
   ],
   "newWords": [
     "lx-0141",
@@ -191,7 +193,8 @@
     "lx-0287",
     "lx-0307",
     "lx-0339",
-    "lx-0387"
+    "lx-0387",
+    "lx-0957"
   ],
   "questions": [
     {

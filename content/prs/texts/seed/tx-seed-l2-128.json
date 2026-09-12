@@ -117,11 +117,11 @@
         },
         {
           "surface": "آرام",
-          "lexemeId": "lx-0214"
+          "lexemeId": "lx-0933"
         },
         {
           "surface": "می‌شود",
-          "lexemeId": "lx-0149"
+          "lexemeId": "lx-0933"
         }
       ]
     }
@@ -143,9 +143,12 @@
     "lx-0160",
     "lx-0167",
     "lx-0214",
+    "lx-0933",
     "lx-6099"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-0933"
+  ],
   "questions": [],
   "grammarPoints": [],
   "newWordRatio": 0,

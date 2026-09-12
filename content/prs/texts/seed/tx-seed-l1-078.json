@@ -44,11 +44,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         }
       ]
     },
@@ -102,11 +102,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         }
       ]
     },
@@ -143,7 +143,8 @@
     "lx-0106",
     "lx-0121",
     "lx-0125",
-    "lx-0153"
+    "lx-0153",
+    "lx-6369"
   ],
   "newWords": [],
   "questions": [],

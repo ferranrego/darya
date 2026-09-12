@@ -29,11 +29,11 @@
         },
         {
           "surface": "بازی",
-          "lexemeId": "lx-0191"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "می‌کنیم",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6370"
         }
       ]
     },
@@ -102,11 +102,11 @@
         },
         {
           "surface": "بازی",
-          "lexemeId": "lx-0191"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "کرده",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "می‌تواند",
@@ -156,7 +156,8 @@
     "lx-0215",
     "lx-0356",
     "lx-0376",
-    "lx-6071"
+    "lx-6071",
+    "lx-6370"
   ],
   "newWords": [],
   "questions": [],

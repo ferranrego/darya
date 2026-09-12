@@ -52,11 +52,11 @@
         },
         {
           "surface": "دوست",
-          "lexemeId": "lx-0058"
+          "lexemeId": "lx-6384"
         },
         {
           "surface": "دارند",
-          "lexemeId": "lx-0095"
+          "lexemeId": "lx-6384"
         }
       ]
     },
@@ -145,11 +145,11 @@
         },
         {
           "surface": "یاد",
-          "lexemeId": "lx-0154"
+          "lexemeId": "lx-6376"
         },
         {
           "surface": "می‌گیریم",
-          "lexemeId": "lx-0153"
+          "lexemeId": "lx-6376"
         }
       ]
     }
@@ -175,7 +175,9 @@
     "lx-0258",
     "lx-0259",
     "lx-0267",
-    "lx-6155"
+    "lx-6155",
+    "lx-6376",
+    "lx-6384"
   ],
   "newWords": [],
   "questions": [],

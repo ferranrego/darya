@@ -21,6 +21,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
 import { contentRoot } from "./content-path.ts";
+import { profile as langProfile } from "../src/lib/lang/index.ts";
 import {
   lexiconFileSchema,
   textDocumentSchema,
@@ -32,6 +33,7 @@ const root = contentRoot();
 const lexicon = lexiconFileSchema.parse(
   JSON.parse(readFileSync(join(root, "lexicon", "lexicon.json"), "utf8")),
 );
+const index = langProfile.text.buildIndex(lexicon.entries);
 const seedDir = join(root, "texts", "seed");
 const docs: TextDocument[] = readdirSync(seedDir)
   .filter((f) => f.endsWith(".json"))
@@ -200,9 +202,12 @@ heading("Compound verbs a learner taps the wrong half of");
         const compoundId = firstHalf.get(t.surface);
         const next = sentence.tokens[i + 1];
         if (!compoundId || !next || t.lexemeId === compoundId) return;
+        // Resolve the next token rather than matching letters in it. A
+        // substring test reported "این کار فکر می‌کنم" as a mistokenised
+        // کار کردن, because فکر happens to contain the letters of کردن's
+        // stem - a report that cries wolf gets ignored.
         const light = byId.get(compoundId)!.targetNormalized.split(" ")[1];
-        const stem = light.replace(/(دن|تن)$/u, "");
-        if (stem.length < 2 || !next.surface.includes(stem.slice(0, 2))) return;
+        if (index.resolve(next.surface)?.id !== index.resolve(light)?.id) return;
         const got = t.lexemeId ? byId.get(t.lexemeId) : null;
         hits.push(`${doc.id}: "${t.surface} ${next.surface}" taps as ${got ? `"${got.glossEn}"` : "unresolved"}`);
       });

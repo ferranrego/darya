@@ -5,7 +5,7 @@
     {
       "surface": "بازی",
       "correctLexemeId": "lx-0191",
-      "reason": "'بازی می‌کنند' (they play) uses بازی as the noun half of the light-verb compound 'بازی کردن' (to play); the collision is with باختن (to lose, lx-0474)'s 2nd-person-singular present 'بازی' (تو می‌بازی), which does not fit before 'می‌کنند'."
+      "reason": "Standalone بازی is the noun 'game' (lx-0191); the collision is with باختن (to lose, lx-0474)'s 2nd-person-singular present بازی, which does not fit any of these sentences. This entry now covers only the standalone uses - 'این بازی بسیار خوب است', 'بازی زود شروع می‌شود'. Where a light verb follows (بازی می‌کنند), the build links both halves to the compound بازی کردن by context, which a surface-keyed file cannot express, and this decision does not apply there."
     },
     {
       "surface": "باشد",

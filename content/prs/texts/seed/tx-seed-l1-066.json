@@ -125,11 +125,11 @@
         },
         {
           "surface": "جور",
-          "lexemeId": "lx-0106"
+          "lexemeId": "lx-0697"
         },
         {
           "surface": "می‌شوم",
-          "lexemeId": "lx-0149"
+          "lexemeId": "lx-0697"
         }
       ]
     }
@@ -151,10 +151,12 @@
     "lx-0158",
     "lx-0209",
     "lx-0210",
-    "lx-0325"
+    "lx-0325",
+    "lx-0697"
   ],
   "newWords": [
-    "lx-0325"
+    "lx-0325",
+    "lx-0697"
   ],
   "questions": [],
   "grammarPoints": [],

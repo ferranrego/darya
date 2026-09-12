@@ -41,11 +41,11 @@
         },
         {
           "surface": "تصمیم",
-          "lexemeId": "lx-1046"
+          "lexemeId": "lx-0897"
         },
         {
           "surface": "گرفت",
-          "lexemeId": "lx-0153"
+          "lexemeId": "lx-0897"
         },
         {
           "surface": "کار",
@@ -143,11 +143,11 @@
         },
         {
           "surface": "فکر",
-          "lexemeId": "lx-0292"
+          "lexemeId": "lx-6375"
         },
         {
           "surface": "کرد",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6375"
         },
         {
           "surface": "که",
@@ -210,11 +210,11 @@
         },
         {
           "surface": "موافقت",
-          "lexemeId": "lx-3239"
+          "lexemeId": "lx-0900"
         },
         {
           "surface": "کرد",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-0900"
         },
         {
           "surface": "که",
@@ -230,11 +230,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "کنند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         }
       ]
     },
@@ -348,11 +348,11 @@
         },
         {
           "surface": "باز",
-          "lexemeId": "lx-0199"
+          "lexemeId": "lx-6371"
         },
         {
           "surface": "کردند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6371"
         }
       ]
     },
@@ -441,13 +441,18 @@
     "lx-0302",
     "lx-0311",
     "lx-0525",
+    "lx-0897",
+    "lx-0900",
     "lx-1046",
     "lx-1058",
     "lx-1061",
     "lx-1220",
     "lx-3239",
     "lx-6002",
-    "lx-6034"
+    "lx-6034",
+    "lx-6369",
+    "lx-6371",
+    "lx-6375"
   ],
   "newWords": [
     "lx-0058",
@@ -466,12 +471,16 @@
     "lx-0292",
     "lx-0302",
     "lx-0525",
+    "lx-0897",
+    "lx-0900",
     "lx-1058",
     "lx-1061",
     "lx-1220",
     "lx-3239",
     "lx-6002",
-    "lx-6034"
+    "lx-6034",
+    "lx-6371",
+    "lx-6375"
   ],
   "questions": [],
   "grammarPoints": [

@@ -1,0 +1,224 @@
+{
+  "id": "tx-seed-l2-159",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "فکر و جواب",
+  "titleTranslit": "fikr wa jawāb",
+  "titleEn": "Thinking and answering",
+  "sentences": [
+    {
+      "target": "من در مورد این کار فکر می‌کنم.",
+      "translit": "man dar mōrid-e īn kār fikr mēkunam.",
+      "en": "I think about this work.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مورد",
+          "lexemeId": "lx-0306"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-6375"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-6375"
+        }
+      ]
+    },
+    {
+      "target": "دوست من هم فکر می‌کند.",
+      "translit": "dōst-e man ham fikr mēkunad.",
+      "en": "My friend thinks too.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-6375"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-6375"
+        }
+      ]
+    },
+    {
+      "target": "معلم ما به هر سوال جواب می‌دهد.",
+      "translit": "mu'allem-e mā ba har sawāl jawāb mēdihad.",
+      "en": "Our teacher answers every question.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "سوال",
+          "lexemeId": "lx-0221"
+        },
+        {
+          "surface": "جواب",
+          "lexemeId": "lx-6377"
+        },
+        {
+          "surface": "می‌دهد",
+          "lexemeId": "lx-6377"
+        }
+      ]
+    },
+    {
+      "target": "من هم به معلم جواب می‌دهم.",
+      "translit": "man ham ba mu'allem jawāb mēdiham.",
+      "en": "I answer the teacher too.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "جواب",
+          "lexemeId": "lx-6377"
+        },
+        {
+          "surface": "می‌دهم",
+          "lexemeId": "lx-6377"
+        }
+      ]
+    },
+    {
+      "target": "بعد دل من آرام می‌شود.",
+      "translit": "ba'd dil-e man ārām mēshawad.",
+      "en": "Then my heart becomes calm.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "دل",
+          "lexemeId": "lx-0124"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0933"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0933"
+        }
+      ]
+    },
+    {
+      "target": "بچه‌ها هم آرام می‌شوند.",
+      "translit": "bacha-hā ham ārām mēshawand.",
+      "en": "The children become calm too.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0933"
+        },
+        {
+          "surface": "می‌شوند",
+          "lexemeId": "lx-0933"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0006",
+    "lx-0011",
+    "lx-0014",
+    "lx-0024",
+    "lx-0057",
+    "lx-0058",
+    "lx-0078",
+    "lx-0079",
+    "lx-0097",
+    "lx-0100",
+    "lx-0124",
+    "lx-0149",
+    "lx-0166",
+    "lx-0214",
+    "lx-0221",
+    "lx-0222",
+    "lx-0292",
+    "lx-0301",
+    "lx-0306",
+    "lx-0933",
+    "lx-6375",
+    "lx-6377"
+  ],
+  "newWords": [
+    "lx-6375",
+    "lx-6377"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 159
+}

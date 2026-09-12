@@ -56,11 +56,11 @@
         },
         {
           "surface": "کمک",
-          "lexemeId": "lx-0208"
+          "lexemeId": "lx-2198"
         },
         {
           "surface": "می‌کنم",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-2198"
         }
       ]
     },
@@ -176,11 +176,11 @@
         },
         {
           "surface": "کار",
-          "lexemeId": "lx-0079"
+          "lexemeId": "lx-6369"
         },
         {
           "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6369"
         }
       ]
     }
@@ -210,7 +210,9 @@
     "lx-0208",
     "lx-0232",
     "lx-0385",
-    "lx-6071"
+    "lx-2198",
+    "lx-6071",
+    "lx-6369"
   ],
   "newWords": [
     "lx-0112",

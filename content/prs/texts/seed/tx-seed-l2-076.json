@@ -37,11 +37,11 @@
         },
         {
           "surface": "بازی",
-          "lexemeId": "lx-0191"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "می‌کنند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6370"
         }
       ]
     },
@@ -95,11 +95,11 @@
         },
         {
           "surface": "بازی",
-          "lexemeId": "lx-0191"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "می‌کنند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6370"
         }
       ]
     },
@@ -122,11 +122,11 @@
         },
         {
           "surface": "بازی",
-          "lexemeId": "lx-0191"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "نمی‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6370"
         }
       ]
     },
@@ -161,11 +161,11 @@
         },
         {
           "surface": "بازی",
-          "lexemeId": "lx-0191"
+          "lexemeId": "lx-6370"
         },
         {
           "surface": "می‌کند",
-          "lexemeId": "lx-0097"
+          "lexemeId": "lx-6370"
         }
       ]
     },
@@ -192,11 +192,11 @@
         },
         {
           "surface": "گپ",
-          "lexemeId": "lx-0151"
+          "lexemeId": "lx-6368"
         },
         {
           "surface": "می‌زنند",
-          "lexemeId": "lx-0152"
+          "lexemeId": "lx-6368"
         }
       ]
     }
@@ -224,11 +224,14 @@
     "lx-0312",
     "lx-0329",
     "lx-0330",
-    "lx-0529"
+    "lx-0529",
+    "lx-6368",
+    "lx-6370"
   ],
   "newWords": [
     "lx-0151",
-    "lx-0329"
+    "lx-0329",
+    "lx-6368"
   ],
   "questions": [],
   "grammarPoints": [],
