@@ -1,0 +1,153 @@
+{
+  "id": "tx-seed-l2-155",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "کشتی در دریا",
+  "titleTranslit": "kishtī dar daryā",
+  "titleEn": "A ship on the river",
+  "sentences": [
+    {
+      "target": "یک کشتی در دریا است.",
+      "translit": "yak kishtī dar daryā ast.",
+      "en": "A ship is on the river.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "کشتی",
+          "lexemeId": "lx-0560"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "دریا",
+          "lexemeId": "lx-0136"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "کشتی کلان و سفید است.",
+      "translit": "kishtī kalān wa safēd ast.",
+      "en": "The ship is big and white.",
+      "tokens": [
+        {
+          "surface": "کشتی",
+          "lexemeId": "lx-0560"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم در کشتی می‌نشینند.",
+      "translit": "mardum dar kishtī mēnishīnand.",
+      "en": "People sit on the ship.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "کشتی",
+          "lexemeId": "lx-0560"
+        },
+        {
+          "surface": "می‌نشینند",
+          "lexemeId": "lx-0160"
+        }
+      ]
+    },
+    {
+      "target": "کشتی تیز می‌رود.",
+      "translit": "kishtī tēz mērawad.",
+      "en": "The ship goes fast.",
+      "tokens": [
+        {
+          "surface": "کشتی",
+          "lexemeId": "lx-0560"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "بچه‌ها به کشتی می‌بینند.",
+      "translit": "bacha-hā ba kishtī mēbīnand.",
+      "en": "The children look at the ship.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "کشتی",
+          "lexemeId": "lx-0560"
+        },
+        {
+          "surface": "می‌بینند",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0010",
+    "lx-0025",
+    "lx-0057",
+    "lx-0059",
+    "lx-0065",
+    "lx-0089",
+    "lx-0092",
+    "lx-0136",
+    "lx-0143",
+    "lx-0160",
+    "lx-0560",
+    "lx-6071"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 155
+}

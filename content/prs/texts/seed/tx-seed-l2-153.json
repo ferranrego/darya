@@ -1,0 +1,176 @@
+{
+  "id": "tx-seed-l2-153",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "مو و چشم",
+  "titleTranslit": "mō wa chashm",
+  "titleEn": "Hair and eyes",
+  "sentences": [
+    {
+      "target": "مو خواهر من سیاه است.",
+      "translit": "mō-ye khāhar-e man siyāh ast.",
+      "en": "My sister's hair is black.",
+      "tokens": [
+        {
+          "surface": "مو",
+          "lexemeId": "lx-0494"
+        },
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سیاه",
+          "lexemeId": "lx-0144"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "چشم او هم سیاه است.",
+      "translit": "chashm-e ō ham siyāh ast.",
+      "en": "Her eyes are black too.",
+      "tokens": [
+        {
+          "surface": "چشم",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "سیاه",
+          "lexemeId": "lx-0144"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مو مادرکلان من سفید است.",
+      "translit": "mō-ye mādarkalān-e man safēd ast.",
+      "en": "My grandmother's hair is white.",
+      "tokens": [
+        {
+          "surface": "مو",
+          "lexemeId": "lx-0494"
+        },
+        {
+          "surface": "مادرکلان",
+          "lexemeId": "lx-0187"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او پیر و مهربان است.",
+      "translit": "ō pīr wa mehrabān ast.",
+      "en": "She is old and kind.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "پیر",
+          "lexemeId": "lx-0258"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما همه او را دوست داریم.",
+      "translit": "mā hama ō rā dōst dārēm.",
+      "en": "We all love her.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0054",
+    "lx-0058",
+    "lx-0095",
+    "lx-0123",
+    "lx-0143",
+    "lx-0144",
+    "lx-0165",
+    "lx-0187",
+    "lx-0256",
+    "lx-0258",
+    "lx-0494"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 153
+}

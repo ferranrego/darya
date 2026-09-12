@@ -1,0 +1,165 @@
+{
+  "id": "tx-seed-l2-147",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "عروسی خواهر من",
+  "titleTranslit": "arōsī-ye khāhar-e man",
+  "titleEn": "My sister's wedding",
+  "sentences": [
+    {
+      "target": "امروز عروسی خواهر من است.",
+      "translit": "emrōz arōsī-ye khāhar-e man ast.",
+      "en": "Today is my sister's wedding.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "عروسی",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "همه فامیل ما اینجا هستند.",
+      "translit": "hama fāmīl-e mā īnjā hastand.",
+      "en": "All our family are here.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "فامیل",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "مردم می‌گویند مبارک باشد.",
+      "translit": "mardum mēgōyand mubārak bāshad.",
+      "en": "People say congratulations.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "می‌گویند",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "مبارک",
+          "lexemeId": "lx-0251"
+        },
+        {
+          "surface": "باشد",
+          "lexemeId": "lx-0287"
+        }
+      ]
+    },
+    {
+      "target": "خواهر من لباس سفید می‌پوشد.",
+      "translit": "khāhar-e man libās-e safēd mēpōshad.",
+      "en": "My sister wears a white dress.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "می‌پوشد",
+          "lexemeId": "lx-0231"
+        }
+      ]
+    },
+    {
+      "target": "همه در عروسی می‌خندند.",
+      "translit": "hama dar arōsī mēkhandand.",
+      "en": "Everyone laughs at the wedding.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "عروسی",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "می‌خندند",
+          "lexemeId": "lx-0364"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0043",
+    "lx-0054",
+    "lx-0059",
+    "lx-0093",
+    "lx-0096",
+    "lx-0143",
+    "lx-0165",
+    "lx-0174",
+    "lx-0183",
+    "lx-0230",
+    "lx-0231",
+    "lx-0251",
+    "lx-0254",
+    "lx-0287",
+    "lx-0364"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 147
+}

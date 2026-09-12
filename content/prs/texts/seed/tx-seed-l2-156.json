@@ -1,0 +1,158 @@
+{
+  "id": "tx-seed-l2-156",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "خواهش من",
+  "titleTranslit": "khāhish-e man",
+  "titleEn": "My request",
+  "sentences": [
+    {
+      "target": "من یک خواهش دارم.",
+      "translit": "man yak khāhish dāram.",
+      "en": "I have a request.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "خواهش",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من از معلم خواهش می‌کنم.",
+      "translit": "man az mu'allem khāhish mēkunam.",
+      "en": "I make a request to the teacher.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "خواهش",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او خواهش من را می‌پذیرد.",
+      "translit": "ō khāhish-e man rā mēpazīrad.",
+      "en": "He accepts my request.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "خواهش",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌پذیرد",
+          "lexemeId": "lx-0384"
+        }
+      ]
+    },
+    {
+      "target": "من بسیار خوش می‌شوم.",
+      "translit": "man bisyār khush mēshawam.",
+      "en": "I become very happy.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "می‌شوم",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "خواهش کار بد نیست.",
+      "translit": "khāhish kār-e bad nēst.",
+      "en": "A request is not a bad thing.",
+      "tokens": [
+        {
+          "surface": "خواهش",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0007",
+    "lx-0011",
+    "lx-0012",
+    "lx-0025",
+    "lx-0064",
+    "lx-0078",
+    "lx-0079",
+    "lx-0095",
+    "lx-0096",
+    "lx-0097",
+    "lx-0107",
+    "lx-0149",
+    "lx-0167",
+    "lx-0344",
+    "lx-0384"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 156
+}

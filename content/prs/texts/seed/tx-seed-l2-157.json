@@ -1,0 +1,195 @@
+{
+  "id": "tx-seed-l2-157",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "فرهنگ ما",
+  "titleTranslit": "farhang-e mā",
+  "titleEn": "Our culture",
+  "sentences": [
+    {
+      "target": "فرهنگ ما بسیار قدیمی است.",
+      "translit": "farhang-e mā bisyār qadīmī ast.",
+      "en": "Our culture is very old.",
+      "tokens": [
+        {
+          "surface": "فرهنگ",
+          "lexemeId": "lx-0267"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "قدیمی",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم افغانستان مهمان را دوست دارند.",
+      "translit": "mardum-e afghānestān mehmān rā dōst dārand.",
+      "en": "The people of Afghanistan love a guest.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "افغانستان",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "مهمان",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "دارند",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "در فرهنگ ما چای بسیار مهم است.",
+      "translit": "dar farhang-e mā chāy bisyār muhim ast.",
+      "en": "In our culture tea is very important.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "فرهنگ",
+          "lexemeId": "lx-0267"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "مهم",
+          "lexemeId": "lx-6155"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم پیر قصه و فرهنگ می‌دانند.",
+      "translit": "mardum-e pīr qessa wa farhang mēdānand.",
+      "en": "Old people know stories and culture.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "پیر",
+          "lexemeId": "lx-0258"
+        },
+        {
+          "surface": "قصه",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "فرهنگ",
+          "lexemeId": "lx-0267"
+        },
+        {
+          "surface": "می‌دانند",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "ما فرهنگ خود را یاد می‌گیریم.",
+      "translit": "mā farhang-e khud rā yād mēgīrēm.",
+      "en": "We learn our own culture.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "فرهنگ",
+          "lexemeId": "lx-0267"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "یاد",
+          "lexemeId": "lx-0154"
+        },
+        {
+          "surface": "می‌گیریم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0039",
+    "lx-0058",
+    "lx-0059",
+    "lx-0085",
+    "lx-0094",
+    "lx-0095",
+    "lx-0153",
+    "lx-0154",
+    "lx-0167",
+    "lx-0178",
+    "lx-0188",
+    "lx-0189",
+    "lx-0258",
+    "lx-0259",
+    "lx-0267",
+    "lx-6155"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 157
+}

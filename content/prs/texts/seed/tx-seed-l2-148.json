@@ -1,0 +1,173 @@
+{
+  "id": "tx-seed-l2-148",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "عروسی در قریه",
+  "titleTranslit": "arōsī dar qarya",
+  "titleEn": "A wedding in the village",
+  "sentences": [
+    {
+      "target": "در قریه ما یک عروسی است.",
+      "translit": "dar qarya-ye mā yak arōsī ast.",
+      "en": "There is a wedding in our village.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "عروسی",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مردم پیر و جوان می‌آیند.",
+      "translit": "mardum-e pīr wa jawān mēāyand.",
+      "en": "Old and young people come.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "پیر",
+          "lexemeId": "lx-0258"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "جوان",
+          "lexemeId": "lx-0257"
+        },
+        {
+          "surface": "می‌آیند",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "همه می‌خندند و خوش هستند.",
+      "translit": "hama mēkhandand wa khush hastand.",
+      "en": "Everyone laughs and is happy.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "می‌خندند",
+          "lexemeId": "lx-0364"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستند",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "ما می‌گوییم مبارک باشد.",
+      "translit": "mā mēgōyēm mubārak bāshad.",
+      "en": "We say congratulations.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "می‌گوییم",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "مبارک",
+          "lexemeId": "lx-0251"
+        },
+        {
+          "surface": "باشد",
+          "lexemeId": "lx-0287"
+        }
+      ]
+    },
+    {
+      "target": "عروسی تا شب می‌ماند.",
+      "translit": "arōsī tā shab mēmānad.",
+      "en": "The wedding lasts until night.",
+      "tokens": [
+        {
+          "surface": "عروسی",
+          "lexemeId": "lx-0254"
+        },
+        {
+          "surface": "تا",
+          "lexemeId": "lx-0288"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "می‌ماند",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0010",
+    "lx-0014",
+    "lx-0025",
+    "lx-0041",
+    "lx-0059",
+    "lx-0081",
+    "lx-0090",
+    "lx-0093",
+    "lx-0096",
+    "lx-0107",
+    "lx-0165",
+    "lx-0234",
+    "lx-0251",
+    "lx-0254",
+    "lx-0257",
+    "lx-0258",
+    "lx-0287",
+    "lx-0288",
+    "lx-0364"
+  ],
+  "newWords": [
+    "lx-0258"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 148
+}

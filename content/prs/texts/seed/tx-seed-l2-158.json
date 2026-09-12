@@ -1,0 +1,166 @@
+{
+  "id": "tx-seed-l2-158",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "روز مبارک",
+  "titleTranslit": "rōz-e mubārak",
+  "titleEn": "A blessed day",
+  "sentences": [
+    {
+      "target": "امروز یک روز مبارک است.",
+      "translit": "emrōz yak rōz-e mubārak ast.",
+      "en": "Today is a blessed day.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "مبارک",
+          "lexemeId": "lx-0251"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "همه فامیل می‌خندند.",
+      "translit": "hama fāmīl mēkhandand.",
+      "en": "The whole family laughs.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "فامیل",
+          "lexemeId": "lx-0183"
+        },
+        {
+          "surface": "می‌خندند",
+          "lexemeId": "lx-0364"
+        }
+      ]
+    },
+    {
+      "target": "مادر من نان شیرین می‌پزد.",
+      "translit": "mādar-e man nān-e shīrīn mēpazad.",
+      "en": "My mother bakes sweet bread.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "می‌پزد",
+          "lexemeId": "lx-0385"
+        }
+      ]
+    },
+    {
+      "target": "حتی پدرکلان من هم می‌آید.",
+      "translit": "hattā padarkalān-e man ham mēāyad.",
+      "en": "Even my grandfather comes.",
+      "tokens": [
+        {
+          "surface": "حتی",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "پدرکلان",
+          "lexemeId": "lx-0186"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "این روز بسیار خوب است.",
+      "translit": "īn rōz bisyār khōb ast.",
+      "en": "This day is very good.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0025",
+    "lx-0038",
+    "lx-0040",
+    "lx-0043",
+    "lx-0051",
+    "lx-0063",
+    "lx-0090",
+    "lx-0120",
+    "lx-0165",
+    "lx-0167",
+    "lx-0183",
+    "lx-0186",
+    "lx-0251",
+    "lx-0343",
+    "lx-0364",
+    "lx-0385"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 158
+}

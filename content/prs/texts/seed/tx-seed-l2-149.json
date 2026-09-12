@@ -1,0 +1,171 @@
+{
+  "id": "tx-seed-l2-149",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "مرد پیر",
+  "titleTranslit": "mard-e pīr",
+  "titleEn": "The old man",
+  "sentences": [
+    {
+      "target": "یک مرد پیر در سرک می‌نشیند.",
+      "translit": "yak mard-e pīr dar sarak mēnishīnad.",
+      "en": "An old man sits in the street.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "مرد",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "پیر",
+          "lexemeId": "lx-0258"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "می‌نشیند",
+          "lexemeId": "lx-0160"
+        }
+      ]
+    },
+    {
+      "target": "مو او سفید است.",
+      "translit": "mō-ye ō safēd ast.",
+      "en": "His hair is white.",
+      "tokens": [
+        {
+          "surface": "مو",
+          "lexemeId": "lx-0494"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او می‌خندد و گپ می‌زند.",
+      "translit": "ō mēkhandad wa gap mēzanad.",
+      "en": "He laughs and talks.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "می‌خندد",
+          "lexemeId": "lx-0364"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زند",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    },
+    {
+      "target": "مردم پیر زیاد می‌دانند.",
+      "translit": "mardum-e pīr ziyād mēdānand.",
+      "en": "Old people know a lot.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "پیر",
+          "lexemeId": "lx-0258"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "می‌دانند",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "من به او سلام می‌کنم.",
+      "translit": "man ba ō salām mēkunam.",
+      "en": "I greet him.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "سلام",
+          "lexemeId": "lx-0101"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0025",
+    "lx-0059",
+    "lx-0060",
+    "lx-0069",
+    "lx-0082",
+    "lx-0094",
+    "lx-0097",
+    "lx-0101",
+    "lx-0143",
+    "lx-0151",
+    "lx-0152",
+    "lx-0160",
+    "lx-0258",
+    "lx-0364",
+    "lx-0494"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 149
+}

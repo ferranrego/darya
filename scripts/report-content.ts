@@ -128,6 +128,45 @@ heading("Re-exposure (PEDAGOGY §7 wants 6-12 encounters)");
   console.log(`L1+L2 together: ${ids.length} words, seen once ${once} (${pct(once, ids.length)})`);
 }
 
+heading("What is left in the re-exposure backlog, and why");
+{
+  /**
+   * Not every backlogged word should be taught to six.
+   *
+   * The backlog was taken from what the texts happened to contain, so it lists
+   * words that got in by accident as well as words the course means to teach.
+   * Two groups will never be closed by writing more beginner texts, and saying
+   * so is more useful than a single number that quietly never reaches zero:
+   *
+   *  - **Out of band.** L1 allows frequency bands 1-3 and L2 bands 1-5.
+   *    Teaching a band-8 word six times at L1 would break the level's own
+   *    spec, so these should leave the beginner texts rather than be repeated
+   *    in them.
+   *  - **Not beginner vocabulary.** Literary verbs a Kabuli speaker would not
+   *    use (گریستن for "to cry", آشامیدن for "to drink"), and words no
+   *    beginner course should drill at all.
+   */
+  const counts = new Map<string, number>();
+  for (const doc of docs) {
+    if (doc.level !== "L1" && doc.level !== "L2") continue;
+    for (const s of doc.sentences) {
+      for (const t of s.tokens) if (t.lexemeId) counts.set(t.lexemeId, (counts.get(t.lexemeId) ?? 0) + 1);
+    }
+  }
+  const byId = new Map(lexicon.entries.map((e) => [e.id, e]));
+  const backlogPath = join(root, "texts", "re-exposure-backlog.json");
+  const ids: string[] = JSON.parse(readFileSync(backlogPath, "utf8")).lexemeIds;
+  const short = ids
+    .map((id) => ({ e: byId.get(id), n: counts.get(id) ?? 0 }))
+    .filter((r): r is { e: LexiconEntry; n: number } => !!r.e && r.n < 6);
+  const outOfBand = short.filter((r) => r.e.freqBand >= 4);
+  const inBand = short.filter((r) => r.e.freqBand <= 3);
+  console.log(`${ids.length} words were backlogged; ${ids.length - short.length} now reach six`);
+  console.log(`${short.length} still short:`);
+  console.log(`  ${outOfBand.length} are band 4+, above the beginner levels' own frequency bands`);
+  console.log(`  ${inBand.length} are band 1-3 and worth teaching (${inBand.reduce((n, r) => n + (6 - r.n), 0)} appearances short)`);
+}
+
 heading("Compound verbs a learner taps the wrong half of");
 {
   /**

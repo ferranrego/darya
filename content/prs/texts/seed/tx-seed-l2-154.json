@@ -1,0 +1,184 @@
+{
+  "id": "tx-seed-l2-154",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "مامور",
+  "titleTranslit": "māmūr",
+  "titleEn": "The official",
+  "sentences": [
+    {
+      "target": "کاکای من مامور است.",
+      "translit": "kākā-ye man māmūr ast.",
+      "en": "My uncle is an official.",
+      "tokens": [
+        {
+          "surface": "کاکای",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "مامور",
+          "lexemeId": "lx-0507"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او هر روز به کار می‌رود.",
+      "translit": "ō har rōz ba kār mērawad.",
+      "en": "He goes to work every day.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "مامور نام مردم را می‌نویسد.",
+      "translit": "māmūr nām-e mardum rā mēnawīsad.",
+      "en": "The official writes people's names.",
+      "tokens": [
+        {
+          "surface": "مامور",
+          "lexemeId": "lx-0507"
+        },
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌نویسد",
+          "lexemeId": "lx-0155"
+        }
+      ]
+    },
+    {
+      "target": "کار او حتی شب تمام نمی‌شود.",
+      "translit": "kār-e ō hattā shab tamām namēshawad.",
+      "en": "His work is not even finished at night.",
+      "tokens": [
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "حتی",
+          "lexemeId": "lx-0343"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "تمام",
+          "lexemeId": "lx-0310"
+        },
+        {
+          "surface": "نمی‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "او شام مانده به خانه می‌آید.",
+      "translit": "ō shām mānda ba khāna mēāyad.",
+      "en": "He comes home tired in the evening.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "شام",
+          "lexemeId": "lx-6131"
+        },
+        {
+          "surface": "مانده",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0036",
+    "lx-0040",
+    "lx-0041",
+    "lx-0059",
+    "lx-0062",
+    "lx-0079",
+    "lx-0089",
+    "lx-0090",
+    "lx-0108",
+    "lx-0149",
+    "lx-0155",
+    "lx-0166",
+    "lx-0185",
+    "lx-0310",
+    "lx-0343",
+    "lx-0507",
+    "lx-6131"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 154
+}

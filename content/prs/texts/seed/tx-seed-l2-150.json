@@ -1,0 +1,183 @@
+{
+  "id": "tx-seed-l2-150",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "نانوا",
+  "titleTranslit": "nānwā",
+  "titleEn": "The baker",
+  "sentences": [
+    {
+      "target": "نانوای ما نزدیک خانه است.",
+      "translit": "nānwā-ye mā nazdīk-e khāna ast.",
+      "en": "Our baker is near the house.",
+      "tokens": [
+        {
+          "surface": "نانوای",
+          "lexemeId": "lx-0511"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او هر صبح نان می‌پزد.",
+      "translit": "ō har subh nān mēpazad.",
+      "en": "He bakes bread every morning.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "می‌پزد",
+          "lexemeId": "lx-0385"
+        }
+      ]
+    },
+    {
+      "target": "آتش دکان او گرم است.",
+      "translit": "ātash-e dukān-e ō garm ast.",
+      "en": "The fire of his shop is warm.",
+      "tokens": [
+        {
+          "surface": "آتش",
+          "lexemeId": "lx-0491"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "نان نانوا بسیار خوب است.",
+      "translit": "nān-e nānwā bisyār khōb ast.",
+      "en": "The baker's bread is very good.",
+      "tokens": [
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "نانوا",
+          "lexemeId": "lx-0511"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من هر روز از نانوا نان می‌خرم.",
+      "translit": "man har rōz az nānwā nān mēkharam.",
+      "en": "I buy bread from the baker every day.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "نانوا",
+          "lexemeId": "lx-0511"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "می‌خرم",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0036",
+    "lx-0038",
+    "lx-0040",
+    "lx-0042",
+    "lx-0063",
+    "lx-0071",
+    "lx-0134",
+    "lx-0166",
+    "lx-0167",
+    "lx-0176",
+    "lx-0205",
+    "lx-0385",
+    "lx-0491",
+    "lx-0511"
+  ],
+  "newWords": [
+    "lx-0511"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 150
+}

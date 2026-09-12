@@ -1,0 +1,151 @@
+{
+  "id": "tx-seed-l2-151",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "آتش و زمستان",
+  "titleTranslit": "ātash wa zemestān",
+  "titleEn": "Fire and winter",
+  "sentences": [
+    {
+      "target": "در زمستان ما آتش داریم.",
+      "translit": "dar zemestān mā ātash dārēm.",
+      "en": "In winter we have a fire.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "آتش",
+          "lexemeId": "lx-0491"
+        },
+        {
+          "surface": "داریم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "آتش اتاق را گرم می‌کند.",
+      "translit": "ātash utāq rā garm mēkunad.",
+      "en": "The fire warms the room.",
+      "tokens": [
+        {
+          "surface": "آتش",
+          "lexemeId": "lx-0491"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "ما نزدیک آتش می‌نشینیم.",
+      "translit": "mā nazdīk-e ātash mēnishīnēm.",
+      "en": "We sit near the fire.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "آتش",
+          "lexemeId": "lx-0491"
+        },
+        {
+          "surface": "می‌نشینیم",
+          "lexemeId": "lx-0160"
+        }
+      ]
+    },
+    {
+      "target": "مادرکلان من قصه می‌گوید.",
+      "translit": "mādarkalān-e man qessa mēgōyad.",
+      "en": "My grandmother tells a story.",
+      "tokens": [
+        {
+          "surface": "مادرکلان",
+          "lexemeId": "lx-0187"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "قصه",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "همه می‌خندند.",
+      "translit": "hama mēkhandand.",
+      "en": "Everyone laughs.",
+      "tokens": [
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "می‌خندند",
+          "lexemeId": "lx-0364"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0007",
+    "lx-0011",
+    "lx-0014",
+    "lx-0071",
+    "lx-0093",
+    "lx-0095",
+    "lx-0097",
+    "lx-0131",
+    "lx-0160",
+    "lx-0165",
+    "lx-0176",
+    "lx-0187",
+    "lx-0189",
+    "lx-0196",
+    "lx-0364",
+    "lx-0491"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 151
+}
