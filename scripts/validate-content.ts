@@ -630,7 +630,20 @@ if (existsSync(seedDir)) {
         for (const token of sentence.tokens) {
           if (!token.lexemeId) continue;
           const entry = lexiconById.get(token.lexemeId);
-          if (entry && bands.size > 0 && !bands.has(entry.freqBand)) {
+          /**
+           * A multi-word compound's band is not a frequency measurement.
+           *
+           * `add-lexicon-entries.ts` appends authored entries at the frequency
+           * *tail* on purpose - a word absent from the corpora is genuinely
+           * rare in text. بازی کردن and کار کردن went in that way, so they sit
+           * at band 8 while being among the first verbs any beginner learns.
+           * Once the build began linking both halves of a compound to the
+           * compound, every beginner text saying "بازی می‌کنیم" reported two
+           * out-of-band words. The band records how the entry arrived, not a
+           * claim about Kabul.
+           */
+          const isCompound = entry?.targetNormalized.includes(" ") ?? false;
+          if (entry && !isCompound && bands.size > 0 && !bands.has(entry.freqBand)) {
             outOfBand.add(`${token.surface} (band ${entry.freqBand})`);
           }
         }
