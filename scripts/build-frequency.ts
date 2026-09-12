@@ -18,7 +18,30 @@
  *   ca   OpenSubtitles 2018 via hermitdave/FrequencyWords (CC BY-SA)
  *        Wikipedia 2021 via Leipzig Corpora Collection (CC BY-NC)
  *   prs  the same two, but for PERSIAN (fa/pes), because no Dari corpus of
- *        usable size exists. See the note on DARI_IS_PERSIAN_SOURCED below.
+ *        usable size exists.
+ *
+ * **Dari is ranked from Iranian Persian, and that has a cost.** The note this
+ * line used to point at ("see DARI_IS_PERSIAN_SOURCED below") was never
+ * written, so the consequence went unrecorded until a philologist audit of the
+ * 1,768 entries a beginner meets measured it.
+ *
+ * The corpora are Iranian, visibly so: the commonest surfaces they contain
+ * that the Dari lexicon cannot resolve are یه، باشه، اگه، خونه، واسه - Tehrani
+ * reductions, none of them Kabuli. So a word Iranians use ranks high and its
+ * Afghan equivalent ranks low, and the effect lands exactly where it hurts:
+ * فنجان at band 5 against پیاله at band 8, حیاط at 5 against حویلی at 8,
+ * برنامه‌ریزی at 5 against پلان at 9. The beginner course reached the Tehran
+ * word first, by construction, with nothing on the card saying which was
+ * Afghan.
+ *
+ * This is why `curated` carries 0.75 of the blend against 0.125 each for the
+ * two corpora: a hand-authored rank is the only signal here that knows what
+ * country the learner is in. Raising the corpus weight would make the ranking
+ * more "accurate" about Persian and worse about Dari.
+ *
+ * The audit's other half of the answer is `beginner-core`, which
+ * `levelVocabulary` honours regardless of band - so an Afghan word the corpora
+ * have never seen can still be taught on day one.
  *
  * The blend matters. Subtitles alone over-rank conversational particles and
  * under-rank anything written; Wikipedia alone over-ranks encyclopedic nouns and

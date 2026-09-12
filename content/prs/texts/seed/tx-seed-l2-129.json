@@ -129,11 +129,34 @@
         },
         {
           "surface": "خواب",
-          "lexemeId": "lx-0159"
+          "lexemeId": "lx-10008"
         },
         {
           "surface": "برمی‌خیزم",
           "lexemeId": "lx-0363"
+        }
+      ]
+    },
+    {
+      "target": "خواب من کم است.",
+      "translit": "khāb-e man kam ast.",
+      "en": "My sleep is short.",
+      "tokens": [
+        {
+          "surface": "خواب",
+          "lexemeId": "lx-10008"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
         }
       ]
     }
@@ -147,14 +170,15 @@
     "lx-0031",
     "lx-0042",
     "lx-0066",
+    "lx-0070",
     "lx-0095",
     "lx-0122",
     "lx-0143",
-    "lx-0159",
     "lx-0181",
     "lx-0234",
     "lx-0356",
     "lx-0363",
+    "lx-10008",
     "lx-6043"
   ],
   "newWords": [

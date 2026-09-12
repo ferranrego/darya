@@ -99,6 +99,29 @@
       ]
     },
     {
+      "target": "خواب ما آرام است.",
+      "translit": "khāb-e mā ārām ast.",
+      "en": "Our sleep is calm.",
+      "tokens": [
+        {
+          "surface": "خواب",
+          "lexemeId": "lx-10008"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
       "target": "دل من آرام است.",
       "translit": "dil-e man ārām ast.",
       "en": "My heart is calm.",
@@ -126,6 +149,7 @@
     "lx-0001",
     "lx-0010",
     "lx-0011",
+    "lx-0014",
     "lx-0024",
     "lx-0041",
     "lx-0124",
@@ -136,7 +160,8 @@
     "lx-0200",
     "lx-0214",
     "lx-0354",
-    "lx-0356"
+    "lx-0356",
+    "lx-10008"
   ],
   "newWords": [],
   "questions": [],

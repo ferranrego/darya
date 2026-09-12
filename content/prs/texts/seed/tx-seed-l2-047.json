@@ -115,6 +115,33 @@
       ]
     },
     {
+      "target": "خواب من بسیار کم است.",
+      "translit": "khāb-e man bisyār kam ast.",
+      "en": "My sleep is very short.",
+      "tokens": [
+        {
+          "surface": "خواب",
+          "lexemeId": "lx-10008"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
       "target": "پس من هر روز مانده هستم.",
       "translit": "pas man har rōz mānda hastam.",
       "en": "So I am tired every day.",
@@ -194,7 +221,9 @@
     "lx-0122",
     "lx-0159",
     "lx-0166",
+    "lx-0167",
     "lx-0172",
+    "lx-10008",
     "lx-6043"
   ],
   "newWords": [
@@ -202,6 +231,7 @@
     "lx-0108",
     "lx-0122",
     "lx-0159",
+    "lx-10008",
     "lx-6043"
   ],
   "questions": [

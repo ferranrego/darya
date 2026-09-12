@@ -30,6 +30,29 @@
       ]
     },
     {
+      "target": "خواب من مهم است.",
+      "translit": "khāb-e man muhim ast.",
+      "en": "My sleep is important.",
+      "tokens": [
+        {
+          "surface": "خواب",
+          "lexemeId": "lx-10008"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "مهم",
+          "lexemeId": "lx-6155"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
       "target": "اتاق من تاریک است.",
       "translit": "utāq-e man tārīk ast.",
       "en": "My room is dark.",
@@ -139,9 +162,14 @@
     "lx-0196",
     "lx-0301",
     "lx-0356",
-    "lx-0697"
+    "lx-0697",
+    "lx-10008",
+    "lx-6155"
   ],
-  "newWords": [],
+  "newWords": [
+    "lx-10008",
+    "lx-6155"
+  ],
   "questions": [],
   "grammarPoints": [],
   "newWordRatio": 0,

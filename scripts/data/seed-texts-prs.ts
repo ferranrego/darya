@@ -4022,6 +4022,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من حالا چای می‌خورم.", translit: "man hālā chāy mēkhuram.", en: "Now I am drinking tea." },
       { target: "این هفته کار من زیاد است.", translit: "īn hafta kār-e man ziyād ast.", en: "My work is heavy this week." },
       { target: "من شب کم می‌خوابم.", translit: "man shab kam mēkhābam.", en: "At night I sleep little." },
+      { target: "خواب من بسیار کم است.", translit: "khāb-e man bisyār kam ast.", en: "My sleep is very short." },
       { target: "پس من هر روز مانده هستم.", translit: "pas man har rōz mānda hastam.", en: "So I am tired every day." },
       { target: "چای من سر میز است.", translit: "chāy-e man sar-e mēz ast.", en: "My tea is on the table." },
     ],
@@ -5618,6 +5619,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "دروازه بسته است.", translit: "darwāza basta ast.", en: "The door is closed." },
       { target: "مامان من زود می‌خوابد.", translit: "māmān-e man zūd mēkhābad.", en: "My mom sleeps early." },
       { target: "من هم می‌خوابم.", translit: "man ham mēkhābam.", en: "I sleep too." },
+      { target: "خواب ما آرام است.", translit: "khāb-e mā ārām ast.", en: "Our sleep is calm." },
       { target: "دل من آرام است.", translit: "dil-e man ārām ast.", en: "My heart is calm." },
     ],
   },
@@ -6654,6 +6656,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من ساعت را سر میز می‌مانم.", translit: "man sā'at rā sar-e mēz mēmānam.", en: "I put the watch on the table." },
       { target: "صبح ساعت هفت است.", translit: "subh sā'at haft ast.", en: "In the morning it is seven o'clock." },
       { target: "من زود از خواب برمی‌خیزم.", translit: "man zūd az khāb barmēkhēzam.", en: "I get up from sleep early." },
+      { target: "خواب من کم است.", translit: "khāb-e man kam ast.", en: "My sleep is short." },
     ],
   },
   {
@@ -6714,6 +6717,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "حالا من بسیار مانده هستم.", translit: "hālā man bisyār mānda hastam.", en: "Now I am very tired." },
       { target: "دل من آرام نیست.", translit: "dil-e man ārām nēst.", en: "My heart is not calm." },
       { target: "من امشب زود می‌خوابم.", translit: "man emshab zūd mēkhābam.", en: "Tonight I sleep early." },
+      { target: "خواب من خوب است.", translit: "khāb-e man khōb ast.", en: "My sleep is good." },
     ],
   },
   {
@@ -7072,6 +7076,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "My sleep",
     sentences: [
       { target: "من شب زود می‌خوابم.", translit: "man shab zūd mēkhābam.", en: "I sleep early at night." },
+      { target: "خواب من مهم است.", translit: "khāb-e man muhim ast.", en: "My sleep is important." },
       { target: "اتاق من تاریک است.", translit: "utāq-e man tārīk ast.", en: "My room is dark." },
       { target: "من مانده هستم.", translit: "man mānda hastam.", en: "I am tired." },
       { target: "صبح من جور می‌شوم.", translit: "subh man jōr mēshawam.", en: "In the morning I become well." },

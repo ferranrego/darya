@@ -1,0 +1,72 @@
+[
+  {
+    "target": "وعده",
+    "translit": "wa'da",
+    "glossEn": "appointment, promise",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "من با داکتر وعده دارم.",
+    "exampleTranslit": "man bā dāktar wa'da dāram.",
+    "exampleEn": "I have an appointment with the doctor.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "مزه‌دار",
+    "translit": "mazadār",
+    "glossEn": "tasty, delicious",
+    "pos": "adjective",
+    "register": "neutral",
+    "exampleTarget": "این نان بسیار مزه‌دار است.",
+    "exampleTranslit": "īn nān bisyār mazadār ast.",
+    "exampleEn": "This bread is very tasty.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "مصرف",
+    "translit": "masraf",
+    "glossEn": "cost, expense; use",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "مصرف خانه زیاد است.",
+    "exampleTranslit": "masraf-e khāna ziyād ast.",
+    "exampleEn": "The cost of the house is high.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "صحت",
+    "translit": "sihat",
+    "glossEn": "health",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "صحت شما چطور است؟",
+    "exampleTranslit": "sihat-e shumā chetōr ast?",
+    "exampleEn": "How is your health?",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  },
+  {
+    "target": "روی‌پاک",
+    "translit": "rōypāk",
+    "glossEn": "towel",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "روی‌پاک من پاک است.",
+    "exampleTranslit": "rōypāk-e man pāk ast.",
+    "exampleEn": "My towel is clean.",
+    "variants": [],
+    "tags": [
+      "beginner-core"
+    ]
+  }
+]

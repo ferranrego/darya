@@ -128,6 +128,29 @@
           "lexemeId": "lx-0159"
         }
       ]
+    },
+    {
+      "target": "خواب من خوب است.",
+      "translit": "khāb-e man khōb ast.",
+      "en": "My sleep is good.",
+      "tokens": [
+        {
+          "surface": "خواب",
+          "lexemeId": "lx-10008"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
     }
   ],
   "vocabUsed": [
@@ -146,6 +169,7 @@
     "lx-0201",
     "lx-0214",
     "lx-0356",
+    "lx-10008",
     "lx-6240"
   ],
   "newWords": [],

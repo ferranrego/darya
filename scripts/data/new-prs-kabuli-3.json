@@ -1,0 +1,74 @@
+[
+  {
+    "target": "خواب",
+    "translit": "khāb",
+    "glossEn": "sleep; a dream",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "خواب من کم است.",
+    "exampleTranslit": "khāb-e man kam ast.",
+    "exampleEn": "My sleep is short.",
+    "variants": [],
+    "tags": ["beginner-core"]
+  },
+  {
+    "target": "استری",
+    "translit": "istirī",
+    "glossEn": "ironing (استری کردن: to iron)",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "مادرم لباس را استری می‌کند.",
+    "exampleTranslit": "mādaram libās rā istirī mēkunad.",
+    "exampleEn": "My mother irons the clothes.",
+    "variants": [],
+    "tags": []
+  },
+  {
+    "target": "اپدیت",
+    "translit": "apdēt",
+    "glossEn": "update (software)",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "تیلفون من اپدیت می‌خواهد.",
+    "exampleTranslit": "tēlifūn-e man apdēt mēkhāhad.",
+    "exampleEn": "My phone needs an update.",
+    "variants": [],
+    "tags": []
+  },
+  {
+    "target": "براوزر",
+    "translit": "brāwzar",
+    "glossEn": "web browser",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "براوزر خود را باز کن.",
+    "exampleTranslit": "brāwzar-e khud rā bāz kun.",
+    "exampleEn": "Open your browser.",
+    "variants": [],
+    "tags": []
+  },
+  {
+    "target": "متشبث",
+    "translit": "mutashabbis",
+    "glossEn": "entrepreneur",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "او یک متشبث جوان است.",
+    "exampleTranslit": "ō yak mutashabbis-e jawān ast.",
+    "exampleEn": "He is a young entrepreneur.",
+    "variants": [],
+    "tags": []
+  },
+  {
+    "target": "ویدیو کال",
+    "translit": "wīdiyō kāl",
+    "glossEn": "video call",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "ما هر هفته ویدیو کال می‌کنیم.",
+    "exampleTranslit": "mā har hafta wīdiyō kāl mēkunēm.",
+    "exampleEn": "We make a video call every week.",
+    "variants": [],
+    "tags": []
+  }
+]
