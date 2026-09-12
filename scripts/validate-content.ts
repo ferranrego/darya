@@ -745,6 +745,38 @@ if (lexicon && lang === "prs") {
   }
 }
 
+// --- The app must not teach a word it forbids --------------------------------
+//
+// The check above reads example sentences. Nothing read the *headword*, so the
+// dictionary could carry مدرسه glossed "school" - at band 3, inside the
+// beginner course and the placement grid - while `live-check.ts` corrected a
+// learner on every keystroke for typing that same word. The app taught the
+// word it forbids, and the two checks were one line apart.
+//
+// An entry is allowed to stand as the wrong side of an interference rule only
+// when it has been ruled out of teaching (still resolvable for lookup, which
+// imported Iranian text needs) or when its gloss is a genuinely different
+// sense, named here with its reason.
+if (lexicon && lang === "prs") {
+  const HEADWORD_SENSE_OK = new Map([
+    ["lx-6221", "ماشین glossed \"machine\" - ordinary Dari; only the *car* sense is Iranian"],
+    ["lx-6420", "مدرسه glossed as a madrassa - a real Dari word for a religious school, which is not a مکتب"],
+  ]);
+  for (const rule of profile.prompts.interferenceRules) {
+    const key = matchKey(rule.wrong);
+    for (const e of lexicon.entries) {
+      if (matchKey(e.targetNormalized) !== key) continue;
+      if (HEADWORD_SENSE_OK.has(e.id) || isRuledOut(e)) continue;
+      fail(
+        `lexicon ${e.id}: the headword "${e.target}" (glossed "${e.glossEn}") is the ` +
+          `Iranian form live-check.ts tells learners never to write - Dari says ` +
+          `"${rule.right}". Rule it out with a "[not a headword: …]" gloss, or name ` +
+          `it in HEADWORD_SENSE_OK if its gloss is a different sense.`,
+      );
+    }
+  }
+}
+
 // --- Verbs that share a present stem -----------------------------------------
 //
 // Two verbs with the same present stem generate the *same* present-tense

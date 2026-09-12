@@ -275,8 +275,33 @@ heading("Register (the app teaches a register nobody speaks)");
   for (const [register, n] of [...byRegister].sort((a, b) => b[1] - a[1])) {
     console.log(`  ${register}: ${n} (${pct(n, lexicon.entries.length)})`);
   }
-  const phrases = lexicon.entries.filter((e) => e.pos === "phrase").length;
-  console.log(`  set phrases: ${phrases} of ${lexicon.entries.length}`);
+  console.log(`  set phrases: ${lexicon.entries.filter((e) => e.pos === "phrase").length} of ${lexicon.entries.length}`);
+
+  /**
+   * The same counts split by where a learner meets the word.
+   *
+   * The four global numbers hid the thing that matters: the beginner range is
+   * almost entirely `neutral`, which is the *default* bucket, not a judgement
+   * anyone made. `neutral` there conflates "everyday Kabuli" with "Iranian
+   * word nobody in Afghanistan says" - which is how مدرسه sat at band 3
+   * glossed "school" while the app's own spell-checker forbade it. The tail is
+   * the opposite and is fine: bands 6-10 are technical and abstract vocabulary
+   * where `formal` is the correct answer.
+   */
+  console.log("\n  by frequency band - where the learner actually meets them:");
+  for (const [lo, hi, label] of [
+    [1, 3, "bands 1-3  (L1 teaches)"],
+    [4, 5, "bands 4-5  (L2 teaches)"],
+    [6, 10, "bands 6-10 (beyond the course)"],
+  ] as const) {
+    const slice = lexicon.entries.filter((e) => e.freqBand >= lo && e.freqBand <= hi);
+    const counts = new Map<string, number>();
+    for (const e of slice) counts.set(e.register, (counts.get(e.register) ?? 0) + 1);
+    const parts = ["neutral", "formal", "spoken", "literary"]
+      .map((r) => `${r} ${counts.get(r) ?? 0} (${pct(counts.get(r) ?? 0, slice.length)})`)
+      .join("  ");
+    console.log(`    ${label}  n=${slice.length}  ${parts}`);
+  }
 }
 
 heading("Dictionary");

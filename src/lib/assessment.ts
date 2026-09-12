@@ -1,4 +1,5 @@
 import { FREQ_BAND_COUNT, type LexiconEntry } from "./content/schema";
+import { isTeachable } from "./content/teachability";
 import { availableLevels } from "./content/load";
 
 /**
@@ -83,12 +84,33 @@ export interface ControlWord {
   band: number;
 }
 
+/**
+ * Words the placement grid may show.
+ *
+ * The grid filtered on frequency band and part of speech only, so anything in
+ * the dictionary could be put in front of someone on sign-up and counted as
+ * vocabulary they know - including entries deliberately ruled out of teaching.
+ * That made the rule-out lever useless exactly where it matters most: the
+ * placement test is the first thing a learner sees, and a word marked there is
+ * written into their vocabulary without ever being taught.
+ *
+ * `isTeachable` is the same gate the curriculum uses, so the two cannot
+ * disagree about what the app is willing to teach.
+ */
+function placeable(e: LexiconEntry): boolean {
+  return (
+    isTeachable(e) &&
+    e.pos !== "particle" &&
+    e.pos !== "conjunction" &&
+    e.pos !== "preposition"
+  );
+}
+
 export function getInitialSeed(entries: LexiconEntry[], excludeIds?: Set<string>): AssessmentWord[] {
   const out: AssessmentWord[] = [];
   for (const band of INITIAL_SEED_BANDS) {
     const candidates = entries.filter(e => 
-      e.freqBand === band && 
-      e.pos !== "particle" && e.pos !== "conjunction" && e.pos !== "preposition" &&
+      e.freqBand === band && placeable(e) &&
       (!excludeIds || !excludeIds.has(e.id))
     );
     if (candidates.length > 0) {
@@ -114,8 +136,7 @@ export function spawnRelatedWords(
   
   for (const band of targetBands) {
     const candidates = entries.filter(e => 
-      e.freqBand === band && 
-      e.pos !== "particle" && e.pos !== "conjunction" && e.pos !== "preposition" &&
+      e.freqBand === band && placeable(e) &&
       !excludeIds.has(e.id)
     );
     if (candidates.length > 0) {
