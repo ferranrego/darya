@@ -1,0 +1,224 @@
+{
+  "id": "tx-seed-l2-112",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "رنگ‌ها",
+  "titleTranslit": "rang-hā",
+  "titleEn": "Colours",
+  "sentences": [
+    {
+      "target": "اسم این رنگ آبی است.",
+      "translit": "ism-e īn rang ābī ast.",
+      "en": "The name of this colour is blue.",
+      "tokens": [
+        {
+          "surface": "اسم",
+          "lexemeId": "lx-0346"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "آبی",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من به آسمان آبی نگاه می‌کنم.",
+      "translit": "man ba āsmān-e ābī nigāh mēkunam.",
+      "en": "I look at the blue sky.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "آسمان",
+          "lexemeId": "lx-0147"
+        },
+        {
+          "surface": "آبی",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "نگاه",
+          "lexemeId": "lx-0316"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "کتاب من سیاه است.",
+      "translit": "ketāb-e man siyāh ast.",
+      "en": "My book is black.",
+      "tokens": [
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سیاه",
+          "lexemeId": "lx-0144"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "قلم من هم سیاه است.",
+      "translit": "qalam-e man ham siyāh ast.",
+      "en": "My pen is black too.",
+      "tokens": [
+        {
+          "surface": "قلم",
+          "lexemeId": "lx-0238"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "سیاه",
+          "lexemeId": "lx-0144"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "خون سرخ است و برف سفید است.",
+      "translit": "khūn surkh ast wa barf safēd ast.",
+      "en": "Blood is red and snow is white.",
+      "tokens": [
+        {
+          "surface": "خون",
+          "lexemeId": "lx-0495"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "باغ ما جای سبز و زیبا است.",
+      "translit": "bāgh-e mā jāy-e sabz wa zēbā ast.",
+      "en": "Our garden is a green and beautiful place.",
+      "tokens": [
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "جای",
+          "lexemeId": "lx-0163"
+        },
+        {
+          "surface": "سبز",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "زیبا",
+          "lexemeId": "lx-0362"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0024",
+    "lx-0074",
+    "lx-0097",
+    "lx-0128",
+    "lx-0139",
+    "lx-0141",
+    "lx-0142",
+    "lx-0143",
+    "lx-0144",
+    "lx-0145",
+    "lx-0146",
+    "lx-0147",
+    "lx-0163",
+    "lx-0238",
+    "lx-0316",
+    "lx-0346",
+    "lx-0362",
+    "lx-0495"
+  ],
+  "newWords": [
+    "lx-0147",
+    "lx-0238"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 112
+}

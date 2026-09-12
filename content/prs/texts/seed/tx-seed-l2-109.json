@@ -1,0 +1,240 @@
+{
+  "id": "tx-seed-l2-109",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دوست نو من",
+  "titleTranslit": "dōst-e naw-e man",
+  "titleEn": "My new friend",
+  "sentences": [
+    {
+      "target": "دوست نو من یک نفر مهربان است.",
+      "translit": "dōst-e naw-e man yak nafar-e mehrabān ast.",
+      "en": "My new friend is a kind person.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "نفر",
+          "lexemeId": "lx-0329"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او را از مکتب می‌شناسم.",
+      "translit": "ō rā az maktab mēshināsam.",
+      "en": "I know him from school.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "می‌شناسم",
+          "lexemeId": "lx-0379"
+        }
+      ]
+    },
+    {
+      "target": "پدر و مادر او را هم می‌شناسم.",
+      "translit": "padar wa mādar-e ō rā ham mēshināsam.",
+      "en": "I also know his father and mother.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "می‌شناسم",
+          "lexemeId": "lx-0379"
+        }
+      ]
+    },
+    {
+      "target": "دوست من هر آدم قریه را می‌شناسد.",
+      "translit": "dōst-e man har ādam-e qarya rā mēshināsad.",
+      "en": "My friend knows every person in the village.",
+      "tokens": [
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "آدم",
+          "lexemeId": "lx-0320"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌شناسد",
+          "lexemeId": "lx-0379"
+        }
+      ]
+    },
+    {
+      "target": "او یک آدم خوب است و موسیقی می‌شنود.",
+      "translit": "ō yak ādam-e khōb ast wa mūsīqī mēshunawad.",
+      "en": "He is a good person and listens to music.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "آدم",
+          "lexemeId": "lx-0320"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "موسیقی",
+          "lexemeId": "lx-0247"
+        },
+        {
+          "surface": "می‌شنود",
+          "lexemeId": "lx-0156"
+        }
+      ]
+    },
+    {
+      "target": "من فقط او را می‌شناسم.",
+      "translit": "man faqat ō rā mēshināsam.",
+      "en": "I only know him.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "فقط",
+          "lexemeId": "lx-0293"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌شناسم",
+          "lexemeId": "lx-0379"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0024",
+    "lx-0025",
+    "lx-0051",
+    "lx-0052",
+    "lx-0058",
+    "lx-0063",
+    "lx-0067",
+    "lx-0075",
+    "lx-0081",
+    "lx-0156",
+    "lx-0166",
+    "lx-0247",
+    "lx-0256",
+    "lx-0293",
+    "lx-0320",
+    "lx-0329",
+    "lx-0379"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 109
+}

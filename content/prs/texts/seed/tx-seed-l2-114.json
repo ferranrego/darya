@@ -1,0 +1,227 @@
+{
+  "id": "tx-seed-l2-114",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "مکتب من",
+  "titleTranslit": "maktab-e man",
+  "titleEn": "My school",
+  "sentences": [
+    {
+      "target": "ما صبح زنگ مکتب را می‌شنویم.",
+      "translit": "mā subh zang-e maktab rā mēshnawēm.",
+      "en": "In the morning we hear the school bell.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "زنگ",
+          "lexemeId": "lx-0349"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌شنویم",
+          "lexemeId": "lx-0156"
+        }
+      ]
+    },
+    {
+      "target": "این زنگ بسیار بلند است.",
+      "translit": "īn zang bisyār buland ast.",
+      "en": "This bell is very loud.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "زنگ",
+          "lexemeId": "lx-0349"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "بلند",
+          "lexemeId": "lx-0226"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "معلم اسم هر شاگرد را می‌نویسد.",
+      "translit": "mu'allem ism-e har shāgerd rā mēnawīsad.",
+      "en": "The teacher writes the name of every pupil.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "اسم",
+          "lexemeId": "lx-0346"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "شاگرد",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌نویسد",
+          "lexemeId": "lx-0155"
+        }
+      ]
+    },
+    {
+      "target": "البته درس امروز کوتاه است.",
+      "translit": "albatta dars-e emrōz kōtāh ast.",
+      "en": "Of course today's lesson is short.",
+      "tokens": [
+        {
+          "surface": "البته",
+          "lexemeId": "lx-0340"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "کوتاه",
+          "lexemeId": "lx-6070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما در صنف دری می‌آموزیم.",
+      "translit": "mā dar senf darī mēāmōzēm.",
+      "en": "We learn Dari in the classroom.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "صنف",
+          "lexemeId": "lx-0217"
+        },
+        {
+          "surface": "دری",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "می‌آموزیم",
+          "lexemeId": "lx-0383"
+        }
+      ]
+    },
+    {
+      "target": "بعد از زنگ ما به خانه برمی‌گردیم.",
+      "translit": "ba'd az zang mā ba khāna barmēgardēm.",
+      "en": "After the bell we go back home.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "زنگ",
+          "lexemeId": "lx-0349"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "برمی‌گردیم",
+          "lexemeId": "lx-6138"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0036",
+    "lx-0042",
+    "lx-0043",
+    "lx-0075",
+    "lx-0077",
+    "lx-0078",
+    "lx-0087",
+    "lx-0155",
+    "lx-0156",
+    "lx-0166",
+    "lx-0167",
+    "lx-0216",
+    "lx-0217",
+    "lx-0226",
+    "lx-0301",
+    "lx-0340",
+    "lx-0346",
+    "lx-0349",
+    "lx-0383",
+    "lx-6070",
+    "lx-6138"
+  ],
+  "newWords": [
+    "lx-0217"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 114
+}

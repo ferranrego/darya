@@ -1,0 +1,243 @@
+{
+  "id": "tx-seed-l2-107",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "برف و زمستان",
+  "titleTranslit": "barf wa zemestān",
+  "titleEn": "Snow and winter",
+  "sentences": [
+    {
+      "target": "چقدر هوا در زمستان سرد است!",
+      "translit": "chiqadar hawā dar zemestān sard ast!",
+      "en": "How cold the weather is in winter!",
+      "tokens": [
+        {
+          "surface": "چقدر",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "امروز آفتاب نیست و برف می‌بارد.",
+      "translit": "emrōz āftāb nēst wa barf mēbārad.",
+      "en": "Today there is no sun and it is snowing.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "آفتاب",
+          "lexemeId": "lx-0129"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "می‌بارد",
+          "lexemeId": "lx-0241"
+        }
+      ]
+    },
+    {
+      "target": "بچه‌ها برف را می‌اندازند و می‌دوند.",
+      "translit": "bacha-hā barf rā mēandāzand wa mēdawand.",
+      "en": "The children throw the snow and run.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌اندازند",
+          "lexemeId": "lx-0372"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "می‌دوند",
+          "lexemeId": "lx-0376"
+        }
+      ]
+    },
+    {
+      "target": "آنها در برف می‌پرند و برف می‌اندازند.",
+      "translit": "ānhā dar barf mēparand wa barf mēandāzand.",
+      "en": "They jump in the snow and throw snow.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "می‌پرند",
+          "lexemeId": "lx-0378"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "می‌اندازند",
+          "lexemeId": "lx-0372"
+        }
+      ]
+    },
+    {
+      "target": "یک بچه خورد برف می‌اندازد و می‌پرد.",
+      "translit": "yak bacha-ye khurd barf mēandāzad wa mēparad.",
+      "en": "A small child throws snow and jumps.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بچه",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "می‌اندازد",
+          "lexemeId": "lx-0372"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "می‌پرد",
+          "lexemeId": "lx-0378"
+        }
+      ]
+    },
+    {
+      "target": "ما شب موسیقی می‌شنویم و قصه می‌گوییم.",
+      "translit": "mā shab mūsīqī mēshunawēm wa qessa mēgōyēm.",
+      "en": "At night we listen to music and tell stories.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "موسیقی",
+          "lexemeId": "lx-0247"
+        },
+        {
+          "surface": "می‌شنویم",
+          "lexemeId": "lx-0156"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "قصه",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "می‌گوییم",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0016",
+    "lx-0025",
+    "lx-0041",
+    "lx-0043",
+    "lx-0057",
+    "lx-0066",
+    "lx-0072",
+    "lx-0093",
+    "lx-0096",
+    "lx-0126",
+    "lx-0128",
+    "lx-0129",
+    "lx-0131",
+    "lx-0156",
+    "lx-0189",
+    "lx-0241",
+    "lx-0247",
+    "lx-0342",
+    "lx-0372",
+    "lx-0376",
+    "lx-0378"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 107
+}

@@ -1,0 +1,224 @@
+{
+  "id": "tx-seed-l2-126",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دیوار باغ",
+  "titleTranslit": "dēwār-e bāgh",
+  "titleEn": "The garden wall",
+  "sentences": [
+    {
+      "target": "باغ ما یک دیوار خورد دارد.",
+      "translit": "bāgh-e mā yak dēwār-e khurd dārad.",
+      "en": "Our garden has a low wall.",
+      "tokens": [
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دیوار",
+          "lexemeId": "lx-6045"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "این دیوار کهنه و خراب است.",
+      "translit": "īn dēwār kuhna wa kharāb ast.",
+      "en": "This wall is old and broken.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "دیوار",
+          "lexemeId": "lx-6045"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "خراب",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "کاکای من دیوار را جور می‌کند.",
+      "translit": "kākā-ye man dēwār rā jōr mēkunad.",
+      "en": "My uncle fixes the wall.",
+      "tokens": [
+        {
+          "surface": "کاکای",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "دیوار",
+          "lexemeId": "lx-6045"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "بعد از کار او چای می‌خورد.",
+      "translit": "ba'd az kār ō chāy mēkhurad.",
+      "en": "After work he drinks tea.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "می‌خورد",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "شام ما همه در باغ هستیم.",
+      "translit": "shām mā hama dar bāgh hastēm.",
+      "en": "In the evening we are all in the garden.",
+      "tokens": [
+        {
+          "surface": "شام",
+          "lexemeId": "lx-6131"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "حالا دیوار خراب نیست.",
+      "translit": "hālā dēwār kharāb nēst.",
+      "en": "Now the wall is not broken.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "دیوار",
+          "lexemeId": "lx-6045"
+        },
+        {
+          "surface": "خراب",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0004",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0039",
+    "lx-0046",
+    "lx-0066",
+    "lx-0068",
+    "lx-0079",
+    "lx-0091",
+    "lx-0095",
+    "lx-0096",
+    "lx-0097",
+    "lx-0106",
+    "lx-0139",
+    "lx-0165",
+    "lx-0185",
+    "lx-0265",
+    "lx-0301",
+    "lx-6045",
+    "lx-6131"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 126
+}

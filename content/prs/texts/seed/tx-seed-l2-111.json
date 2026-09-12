@@ -1,0 +1,228 @@
+{
+  "id": "tx-seed-l2-111",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دکان ما",
+  "titleTranslit": "dukān-e mā",
+  "titleEn": "Our shop",
+  "sentences": [
+    {
+      "target": "نزدیک خانه ما یک دکان است.",
+      "translit": "nazdīk-e khāna-ye mā yak dukān ast.",
+      "en": "Near our house there is a shop.",
+      "tokens": [
+        {
+          "surface": "نزدیک",
+          "lexemeId": "lx-0176"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "اسم این دکان کوتاه است.",
+      "translit": "ism-e īn dukān kōtāh ast.",
+      "en": "The name of this shop is short.",
+      "tokens": [
+        {
+          "surface": "اسم",
+          "lexemeId": "lx-0346"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "کوتاه",
+          "lexemeId": "lx-6070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "در این دکان قند و چای می‌فروشند.",
+      "translit": "dar īn dukān qand wa chāy mēfurōshand.",
+      "en": "In this shop they sell sugar and tea.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "قند",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "می‌فروشند",
+          "lexemeId": "lx-0368"
+        }
+      ]
+    },
+    {
+      "target": "آنها میوه تازه هم می‌فروشند.",
+      "translit": "ānhā mēwa-ye tāza ham mēfurōshand.",
+      "en": "They also sell fresh fruit.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "تازه",
+          "lexemeId": "lx-0204"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "می‌فروشند",
+          "lexemeId": "lx-0368"
+        }
+      ]
+    },
+    {
+      "target": "مردم آنجا قند و نان می‌خرند.",
+      "translit": "mardum ānjā qand wa nān mēkharand.",
+      "en": "People buy sugar and bread there.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "قند",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "می‌خرند",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "این دکان واقعاً جای خوب است.",
+      "translit": "īn dukān wāqean jāy-e khōb ast.",
+      "en": "This shop is really a good place.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "واقعاً",
+          "lexemeId": "lx-0309"
+        },
+        {
+          "surface": "جای",
+          "lexemeId": "lx-0163"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0006",
+    "lx-0010",
+    "lx-0014",
+    "lx-0016",
+    "lx-0024",
+    "lx-0025",
+    "lx-0036",
+    "lx-0038",
+    "lx-0039",
+    "lx-0059",
+    "lx-0063",
+    "lx-0113",
+    "lx-0118",
+    "lx-0134",
+    "lx-0163",
+    "lx-0175",
+    "lx-0176",
+    "lx-0204",
+    "lx-0205",
+    "lx-0309",
+    "lx-0346",
+    "lx-0368",
+    "lx-6070"
+  ],
+  "newWords": [
+    "lx-6070"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 111
+}

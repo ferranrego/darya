@@ -1,0 +1,223 @@
+{
+  "id": "tx-seed-l2-105",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "پایتخت افغانستان",
+  "titleTranslit": "pāytakht-e afghānestān",
+  "titleEn": "The capital of Afghanistan",
+  "sentences": [
+    {
+      "target": "کابل پایتخت افغانستان است.",
+      "translit": "kābul pāytakht-e afghānestān ast.",
+      "en": "Kabul is the capital of Afghanistan.",
+      "tokens": [
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "پایتخت",
+          "lexemeId": "lx-0227"
+        },
+        {
+          "surface": "افغانستان",
+          "lexemeId": "lx-0085"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "در این پایتخت پوهنتون مشهور وجود دارد.",
+      "translit": "dar īn pāytakht pohantūn-e mash'hūr wujūd dārad.",
+      "en": "There is a famous university in this capital.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "پایتخت",
+          "lexemeId": "lx-0227"
+        },
+        {
+          "surface": "پوهنتون",
+          "lexemeId": "lx-0076"
+        },
+        {
+          "surface": "مشهور",
+          "lexemeId": "lx-0228"
+        },
+        {
+          "surface": "وجود",
+          "lexemeId": "lx-0337"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "تاریخ کابل بسیار قدیمی است.",
+      "translit": "tārīkh-e kābul bisyār qadīmī ast.",
+      "en": "The history of Kabul is very old.",
+      "tokens": [
+        {
+          "surface": "تاریخ",
+          "lexemeId": "lx-0266"
+        },
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "قدیمی",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من هر آدم این شهر را می‌شناسم.",
+      "translit": "man har ādam-e īn shahr rā mēshināsam.",
+      "en": "I know every person in this city.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "آدم",
+          "lexemeId": "lx-0320"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "شهر",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌شناسم",
+          "lexemeId": "lx-0379"
+        }
+      ]
+    },
+    {
+      "target": "هر نفر اینجا کار دارد.",
+      "translit": "har nafar īnjā kār dārad.",
+      "en": "Every person here has work.",
+      "tokens": [
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "نفر",
+          "lexemeId": "lx-0329"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من در این پایتخت زندگی می‌کنم.",
+      "translit": "man dar īn pāytakht zindagī mēkunam.",
+      "en": "I live in this capital.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "پایتخت",
+          "lexemeId": "lx-0227"
+        },
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0076",
+    "lx-0079",
+    "lx-0080",
+    "lx-0085",
+    "lx-0086",
+    "lx-0095",
+    "lx-0097",
+    "lx-0150",
+    "lx-0166",
+    "lx-0167",
+    "lx-0174",
+    "lx-0227",
+    "lx-0228",
+    "lx-0259",
+    "lx-0266",
+    "lx-0320",
+    "lx-0329",
+    "lx-0337",
+    "lx-0379"
+  ],
+  "newWords": [
+    "lx-0379"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 105
+}

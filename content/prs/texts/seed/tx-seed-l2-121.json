@@ -1,0 +1,236 @@
+{
+  "id": "tx-seed-l2-121",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "زمستان",
+  "titleTranslit": "zemestān",
+  "titleEn": "Winter",
+  "sentences": [
+    {
+      "target": "زمستان اینجا سرد است و زمین تر است.",
+      "translit": "zemestān īnjā sard ast wa zamīn tar ast.",
+      "en": "Winter here is cold and the ground is wet.",
+      "tokens": [
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "زمین",
+          "lexemeId": "lx-0237"
+        },
+        {
+          "surface": "تر",
+          "lexemeId": "lx-6108"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "روز در زمستان کوتاه است.",
+      "translit": "rōz dar zemestān kōtāh ast.",
+      "en": "The day is short in winter.",
+      "tokens": [
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "کوتاه",
+          "lexemeId": "lx-6070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "برف می‌بارد و کوه سفید است.",
+      "translit": "barf mēbārad wa kōh safēd ast.",
+      "en": "Snow falls and the mountain is white.",
+      "tokens": [
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "می‌بارد",
+          "lexemeId": "lx-0241"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "کوه",
+          "lexemeId": "lx-0137"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من از کلکین به برف نگاه می‌کنم.",
+      "translit": "man az kelkīn ba barf nigāh mēkunam.",
+      "en": "I look at the snow from the window.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کلکین",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "برف",
+          "lexemeId": "lx-0128"
+        },
+        {
+          "surface": "نگاه",
+          "lexemeId": "lx-0316"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "قریه ما واقعاً جای آرام است.",
+      "translit": "qarya-ye mā wāqean jāy-e ārām ast.",
+      "en": "Our village is really a quiet place.",
+      "tokens": [
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "واقعاً",
+          "lexemeId": "lx-0309"
+        },
+        {
+          "surface": "جای",
+          "lexemeId": "lx-0163"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما در زمستان صبر می‌آموزیم.",
+      "translit": "mā dar zemestān sabr mēāmōzēm.",
+      "en": "In winter we learn patience.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "زمستان",
+          "lexemeId": "lx-0131"
+        },
+        {
+          "surface": "صبر",
+          "lexemeId": "lx-0333"
+        },
+        {
+          "surface": "می‌آموزیم",
+          "lexemeId": "lx-0383"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0040",
+    "lx-0072",
+    "lx-0081",
+    "lx-0097",
+    "lx-0128",
+    "lx-0131",
+    "lx-0137",
+    "lx-0143",
+    "lx-0163",
+    "lx-0174",
+    "lx-0198",
+    "lx-0214",
+    "lx-0237",
+    "lx-0241",
+    "lx-0309",
+    "lx-0316",
+    "lx-0333",
+    "lx-0383",
+    "lx-6070",
+    "lx-6108"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 121
+}

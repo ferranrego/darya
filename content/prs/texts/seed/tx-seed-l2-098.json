@@ -1,0 +1,252 @@
+{
+  "id": "tx-seed-l2-098",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "کاکا و خاله من",
+  "titleTranslit": "kākā wa khāla-ye man",
+  "titleEn": "My uncle and my aunt",
+  "sentences": [
+    {
+      "target": "کاکا من در قریه زندگی می‌کند.",
+      "translit": "kākā-ye man dar qarya zindagī mēkunad.",
+      "en": "My uncle lives in the village.",
+      "tokens": [
+        {
+          "surface": "کاکا",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "زندگی",
+          "lexemeId": "lx-0150"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او یک آدم مهربان و مشهور است.",
+      "translit": "ō yak ādam-e mehrabān wa mash'hūr ast.",
+      "en": "He is a kind and famous person.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "آدم",
+          "lexemeId": "lx-0320"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "مشهور",
+          "lexemeId": "lx-0228"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "کاکا تنها نیست و بسیار خوش است.",
+      "translit": "kākā tanhā nēst wa bisyār khush ast.",
+      "en": "Uncle is not alone and is very happy.",
+      "tokens": [
+        {
+          "surface": "کاکا",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "تنها",
+          "lexemeId": "lx-0312"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "خاله من هر شب یک قصه قدیمی می‌گوید.",
+      "translit": "khāla-ye man har shab yak qessa-ye qadīmī mēgōyad.",
+      "en": "Every night my aunt tells an old story.",
+      "tokens": [
+        {
+          "surface": "خاله",
+          "lexemeId": "lx-0184"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "شب",
+          "lexemeId": "lx-0041"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "قصه",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "قدیمی",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "ما در اتاق می‌نشینیم و قصه می‌شنویم.",
+      "translit": "mā dar utāq mēnishīnēm wa qessa mēshunawēm.",
+      "en": "We sit in the room and listen to stories.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "می‌نشینیم",
+          "lexemeId": "lx-0160"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "قصه",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "می‌شنویم",
+          "lexemeId": "lx-0156"
+        }
+      ]
+    },
+    {
+      "target": "خاله هم موسیقی قدیمی می‌شنود.",
+      "translit": "khāla ham mūsīqī-ye qadīmī mēshunawad.",
+      "en": "Aunt also listens to old music.",
+      "tokens": [
+        {
+          "surface": "خاله",
+          "lexemeId": "lx-0184"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "موسیقی",
+          "lexemeId": "lx-0247"
+        },
+        {
+          "surface": "قدیمی",
+          "lexemeId": "lx-0259"
+        },
+        {
+          "surface": "می‌شنود",
+          "lexemeId": "lx-0156"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0025",
+    "lx-0041",
+    "lx-0081",
+    "lx-0093",
+    "lx-0096",
+    "lx-0097",
+    "lx-0107",
+    "lx-0150",
+    "lx-0156",
+    "lx-0160",
+    "lx-0166",
+    "lx-0167",
+    "lx-0184",
+    "lx-0185",
+    "lx-0189",
+    "lx-0196",
+    "lx-0228",
+    "lx-0247",
+    "lx-0256",
+    "lx-0259",
+    "lx-0312",
+    "lx-0320"
+  ],
+  "newWords": [
+    "lx-0185"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 98
+}

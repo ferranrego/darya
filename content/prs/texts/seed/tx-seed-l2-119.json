@@ -1,0 +1,238 @@
+{
+  "id": "tx-seed-l2-119",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "صلح",
+  "titleTranslit": "sulh",
+  "titleEn": "Peace",
+  "sentences": [
+    {
+      "target": "مردم ما جنگ نمی‌خواهند و صلح می‌خواهند.",
+      "translit": "mardum-e mā jang namēkhāhand wa sulh mēkhāhand.",
+      "en": "Our people do not want war and they want peace.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "جنگ",
+          "lexemeId": "lx-0244"
+        },
+        {
+          "surface": "نمی‌خواهند",
+          "lexemeId": "lx-0099"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "صلح",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "می‌خواهند",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "کسی جنگ را دوست ندارد.",
+      "translit": "kasē jang rā dōst nadārad.",
+      "en": "No one likes war.",
+      "tokens": [
+        {
+          "surface": "کسی",
+          "lexemeId": "lx-0307"
+        },
+        {
+          "surface": "جنگ",
+          "lexemeId": "lx-0244"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "ندارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "جنگ خانه و مکتب را خراب می‌کند.",
+      "translit": "jang khāna wa maktab rā kharāb mēkunad.",
+      "en": "War destroys houses and schools.",
+      "tokens": [
+        {
+          "surface": "جنگ",
+          "lexemeId": "lx-0244"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "خراب",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "جنگ خون و درد می‌آورد.",
+      "translit": "jang khūn wa dard mēāwarad.",
+      "en": "War brings blood and pain.",
+      "tokens": [
+        {
+          "surface": "جنگ",
+          "lexemeId": "lx-0244"
+        },
+        {
+          "surface": "خون",
+          "lexemeId": "lx-0495"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "درد",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "می‌آورد",
+          "lexemeId": "lx-0232"
+        }
+      ]
+    },
+    {
+      "target": "ما در مورد صلح و جنگ گپ می‌زنیم.",
+      "translit": "mā dar mawrid-e sulh wa jang gap mēzanēm.",
+      "en": "We talk about peace and war.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "مورد",
+          "lexemeId": "lx-0306"
+        },
+        {
+          "surface": "صلح",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "جنگ",
+          "lexemeId": "lx-0244"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زنیم",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    },
+    {
+      "target": "مردم واقعاً صلح و صبر می‌خواهند.",
+      "translit": "mardum wāqean sulh wa sabr mēkhāhand.",
+      "en": "People really want peace and patience.",
+      "tokens": [
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "واقعاً",
+          "lexemeId": "lx-0309"
+        },
+        {
+          "surface": "صلح",
+          "lexemeId": "lx-0243"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "صبر",
+          "lexemeId": "lx-0333"
+        },
+        {
+          "surface": "می‌خواهند",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0007",
+    "lx-0014",
+    "lx-0036",
+    "lx-0058",
+    "lx-0059",
+    "lx-0075",
+    "lx-0095",
+    "lx-0097",
+    "lx-0099",
+    "lx-0151",
+    "lx-0152",
+    "lx-0209",
+    "lx-0232",
+    "lx-0243",
+    "lx-0244",
+    "lx-0265",
+    "lx-0306",
+    "lx-0307",
+    "lx-0309",
+    "lx-0333",
+    "lx-0495"
+  ],
+  "newWords": [
+    "lx-0265"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 119
+}

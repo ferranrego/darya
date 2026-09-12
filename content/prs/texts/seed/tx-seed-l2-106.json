@@ -1,0 +1,245 @@
+{
+  "id": "tx-seed-l2-106",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "بازی در سرک",
+  "titleTranslit": "bāzī dar sarak",
+  "titleEn": "Playing in the street",
+  "sentences": [
+    {
+      "target": "بچه‌ها هر روز در سرک بازی می‌کنند.",
+      "translit": "bacha-hā har rōz dar sarak bāzī mēkunand.",
+      "en": "The children play in the street every day.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "آنها بسیار تیز می‌دوند و می‌پرند.",
+      "translit": "ānhā bisyār tēz mēdawand wa mēparand.",
+      "en": "They run and jump very fast.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "تیز",
+          "lexemeId": "lx-6071"
+        },
+        {
+          "surface": "می‌دوند",
+          "lexemeId": "lx-0376"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "می‌پرند",
+          "lexemeId": "lx-0378"
+        }
+      ]
+    },
+    {
+      "target": "یک بچه گل را با دست می‌اندازد.",
+      "translit": "yak bacha gul rā bā dast mēandāzad.",
+      "en": "One child throws the flower with his hand.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بچه",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "گل",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "می‌اندازد",
+          "lexemeId": "lx-0372"
+        }
+      ]
+    },
+    {
+      "target": "برادر من هم گل را می‌اندازد.",
+      "translit": "barādar-e man ham gul rā mēandāzad.",
+      "en": "My brother also throws the flower.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "گل",
+          "lexemeId": "lx-0140"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌اندازد",
+          "lexemeId": "lx-0372"
+        }
+      ]
+    },
+    {
+      "target": "آنها دوباره می‌پرند و دوباره می‌دوند.",
+      "translit": "ānhā dōbāra mēparand wa dōbāra mēdawand.",
+      "en": "They jump again and run again.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "دوباره",
+          "lexemeId": "lx-0315"
+        },
+        {
+          "surface": "می‌پرند",
+          "lexemeId": "lx-0378"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "دوباره",
+          "lexemeId": "lx-0315"
+        },
+        {
+          "surface": "می‌دوند",
+          "lexemeId": "lx-0376"
+        }
+      ]
+    },
+    {
+      "target": "بچه‌ها دوباره می‌پرند و به خانه می‌رسند.",
+      "translit": "bacha-hā dōbāra mēparand wa ba khāna mērasand.",
+      "en": "The children jump again and arrive home.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "دوباره",
+          "lexemeId": "lx-0315"
+        },
+        {
+          "surface": "می‌پرند",
+          "lexemeId": "lx-0378"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌رسند",
+          "lexemeId": "lx-0370"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0007",
+    "lx-0008",
+    "lx-0011",
+    "lx-0016",
+    "lx-0024",
+    "lx-0025",
+    "lx-0036",
+    "lx-0040",
+    "lx-0053",
+    "lx-0057",
+    "lx-0082",
+    "lx-0097",
+    "lx-0121",
+    "lx-0140",
+    "lx-0166",
+    "lx-0167",
+    "lx-0191",
+    "lx-0315",
+    "lx-0370",
+    "lx-0372",
+    "lx-0376",
+    "lx-0378",
+    "lx-6071"
+  ],
+  "newWords": [
+    "lx-0378"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 106
+}

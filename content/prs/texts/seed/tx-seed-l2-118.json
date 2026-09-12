@@ -1,0 +1,252 @@
+{
+  "id": "tx-seed-l2-118",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "جشن امشب",
+  "titleTranslit": "jashn-e emshab",
+  "titleEn": "Tonight's celebration",
+  "sentences": [
+    {
+      "target": "امشب در خانه ما جشن است.",
+      "translit": "emshab dar khāna-ye mā jashn ast.",
+      "en": "Tonight there is a celebration at our house.",
+      "tokens": [
+        {
+          "surface": "امشب",
+          "lexemeId": "lx-0201"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "جشن",
+          "lexemeId": "lx-0253"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "کسی زنگ دروازه را می‌زند و مهمانان می‌آیند.",
+      "translit": "kasē zang-e darwāza rā mēzanad wa mehmānān mēāyand.",
+      "en": "Someone rings the doorbell and the guests come.",
+      "tokens": [
+        {
+          "surface": "کسی",
+          "lexemeId": "lx-0307"
+        },
+        {
+          "surface": "زنگ",
+          "lexemeId": "lx-0349"
+        },
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌زند",
+          "lexemeId": "lx-0152"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "مهمانان",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "می‌آیند",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "مهمانان در جشن چای با قند می‌خورند.",
+      "translit": "mehmānān dar jashn chāy bā qand mēkhurand.",
+      "en": "At the celebration the guests drink tea with sugar.",
+      "tokens": [
+        {
+          "surface": "مهمانان",
+          "lexemeId": "lx-0188"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "جشن",
+          "lexemeId": "lx-0253"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "قند",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "می‌خورند",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "مادر من برای جشن نان و گوشت می‌پزد.",
+      "translit": "mādar-e man barā-ye jashn nān wa gōsht mēpazad.",
+      "en": "My mother cooks bread and meat for the celebration.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "برای",
+          "lexemeId": "lx-0299"
+        },
+        {
+          "surface": "جشن",
+          "lexemeId": "lx-0253"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "می‌پزد",
+          "lexemeId": "lx-0385"
+        }
+      ]
+    },
+    {
+      "target": "اطفال در جشن بازی می‌کنند.",
+      "translit": "atfāl dar jashn bāzī mēkunand.",
+      "en": "The children play at the celebration.",
+      "tokens": [
+        {
+          "surface": "اطفال",
+          "lexemeId": "lx-6143"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "جشن",
+          "lexemeId": "lx-0253"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "البته این جشن واقعاً زیبا است.",
+      "translit": "albatta īn jashn wāqean zēbā ast.",
+      "en": "Of course this celebration is really beautiful.",
+      "tokens": [
+        {
+          "surface": "البته",
+          "lexemeId": "lx-0340"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "جشن",
+          "lexemeId": "lx-0253"
+        },
+        {
+          "surface": "واقعاً",
+          "lexemeId": "lx-0309"
+        },
+        {
+          "surface": "زیبا",
+          "lexemeId": "lx-0362"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0006",
+    "lx-0007",
+    "lx-0008",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0036",
+    "lx-0038",
+    "lx-0039",
+    "lx-0051",
+    "lx-0090",
+    "lx-0091",
+    "lx-0097",
+    "lx-0112",
+    "lx-0118",
+    "lx-0152",
+    "lx-0188",
+    "lx-0191",
+    "lx-0197",
+    "lx-0201",
+    "lx-0253",
+    "lx-0299",
+    "lx-0307",
+    "lx-0309",
+    "lx-0340",
+    "lx-0349",
+    "lx-0362",
+    "lx-0385",
+    "lx-6143"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 118
+}

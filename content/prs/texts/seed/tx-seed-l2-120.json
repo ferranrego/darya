@@ -1,0 +1,224 @@
+{
+  "id": "tx-seed-l2-120",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "سرک ما",
+  "titleTranslit": "sarak-e mā",
+  "titleEn": "Our street",
+  "sentences": [
+    {
+      "target": "سرک ما کوتاه و آرام است.",
+      "translit": "sarak-e mā kōtāh wa ārām ast.",
+      "en": "Our street is short and quiet.",
+      "tokens": [
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "کوتاه",
+          "lexemeId": "lx-6070"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "آنجا یک دیوار بلند و سفید است.",
+      "translit": "ānjā yak dēwār-e buland wa safēd ast.",
+      "en": "There is a tall white wall there.",
+      "tokens": [
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دیوار",
+          "lexemeId": "lx-6045"
+        },
+        {
+          "surface": "بلند",
+          "lexemeId": "lx-0226"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "اطفال آنجا بازی می‌کنند.",
+      "translit": "atfāl ānjā bāzī mēkunand.",
+      "en": "The children play there.",
+      "tokens": [
+        {
+          "surface": "اطفال",
+          "lexemeId": "lx-6143"
+        },
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-0191"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "یک مرد آنجا میوه می‌فروشد.",
+      "translit": "yak mard ānjā mēwa mēfurōshad.",
+      "en": "A man sells fruit there.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "مرد",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "می‌فروشد",
+          "lexemeId": "lx-0368"
+        }
+      ]
+    },
+    {
+      "target": "این سرک واقعاً جای زیبا است.",
+      "translit": "īn sarak wāqean jāy-e zēbā ast.",
+      "en": "This street is really a beautiful place.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "واقعاً",
+          "lexemeId": "lx-0309"
+        },
+        {
+          "surface": "جای",
+          "lexemeId": "lx-0163"
+        },
+        {
+          "surface": "زیبا",
+          "lexemeId": "lx-0362"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "بعد از باران سرک تر است.",
+      "translit": "ba'd az bārān sarak tar ast.",
+      "en": "After the rain the street is wet.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "باران",
+          "lexemeId": "lx-0127"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "تر",
+          "lexemeId": "lx-6108"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0004",
+    "lx-0006",
+    "lx-0010",
+    "lx-0014",
+    "lx-0025",
+    "lx-0060",
+    "lx-0082",
+    "lx-0097",
+    "lx-0113",
+    "lx-0127",
+    "lx-0143",
+    "lx-0163",
+    "lx-0175",
+    "lx-0191",
+    "lx-0214",
+    "lx-0226",
+    "lx-0301",
+    "lx-0309",
+    "lx-0362",
+    "lx-0368",
+    "lx-6045",
+    "lx-6070",
+    "lx-6108",
+    "lx-6143"
+  ],
+  "newWords": [
+    "lx-6045"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 120
+}

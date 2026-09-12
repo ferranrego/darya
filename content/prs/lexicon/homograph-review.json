@@ -3,34 +3,49 @@
   "language": "prs",
   "reviewed": [
     {
-      "surface": "باشد",
-      "correctLexemeId": "lx-0287",
-      "reason": "'این کار مبارک باشد' (may this work be blessed) uses باشد as the fixed optative expression its own entry is authored for - lx-0287's own example, 'سال نو مبارک باشد', is the identical construction; the collision is with بودن (to be, lx-0096)'s generated 3rd-person subjunctive 'باشد', the same word under a different entry, not a different one."
-    },
-    {
       "surface": "بازی",
       "correctLexemeId": "lx-0191",
       "reason": "'بازی می‌کنند' (they play) uses بازی as the noun half of the light-verb compound 'بازی کردن' (to play); the collision is with باختن (to lose, lx-0474)'s 2nd-person-singular present 'بازی' (تو می‌بازی), which does not fit before 'می‌کنند'."
     },
     {
-      "surface": "گذشته",
-      "correctLexemeId": "lx-1051",
-      "reason": "'سال گذشته' (last year) uses گذشته attributively for 'past/last' - the same word as گذشتن (to pass, lx-0621)'s participle, so the noun entry's gloss already covers this reading; not a different-meaning collision like cuina/cuinar."
+      "surface": "باشد",
+      "correctLexemeId": "lx-0287",
+      "reason": "'این کار مبارک باشد' (may this work be blessed) uses باشد as the fixed optative expression its own entry is authored for - lx-0287's own example, 'سال نو مبارک باشد', is the identical construction; the collision is with بودن (to be, lx-0096)'s generated 3rd-person subjunctive 'باشد', the same word under a different entry, not a different one."
     },
     {
-      "surface": "خورد",
-      "correctLexemeId": "lx-0066",
-      "reason": "'... خورد است' (... is small) is the adjective; the collision is with خوردن (to eat/drink, lx-0091)'s 3rd-person-singular past 'خورد' (he ate), which does not fit as a predicate after 'برای همه شاگردان'."
+      "surface": "برمی‌گردد",
+      "correctLexemeId": "lx-6138",
+      "reason": "The bar- prefix settles it: only this verb ('to return') carries it. The verbs it shares a bare stem with ('to stroll', 'to become') do not produce this prefixed form at all."
     },
     {
-      "surface": "چشم",
-      "correctLexemeId": "lx-0123",
-      "reason": "Used as the noun 'eye'. The collision is with چشیدن (to taste, lx-0433)'s imperative form."
+      "surface": "برمی‌گردم",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares the present stem گرد with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone: neither of the other two has a برمی‌ form at all. So a برمی‌گرد* surface is unambiguous even though the bare stem is not, and the collision the checker sees cannot actually occur in these forms. Recorded rather than rewritten because 'to come back' is ordinary beginner vocabulary and the bare forms of گشتن/گردیدن stay correctly blocked."
     },
     {
-      "surface": "درد",
-      "correctLexemeId": "lx-0209",
-      "reason": "Used as the noun 'pain'. The collision is with دریدن (to tear, lx-0440)'s imperative form."
+      "surface": "برمی‌گردند",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares the present stem گرد with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone: neither of the other two has a برمی‌ form at all. So a برمی‌گرد* surface is unambiguous even though the bare stem is not, and the collision the checker sees cannot actually occur in these forms. Recorded rather than rewritten because 'to come back' is ordinary beginner vocabulary and the bare forms of گشتن/گردیدن stay correctly blocked."
+    },
+    {
+      "surface": "برمی‌گردی",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares the present stem گرد with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone: neither of the other two has a برمی‌ form at all. So a برمی‌گرد* surface is unambiguous even though the bare stem is not, and the collision the checker sees cannot actually occur in these forms. Recorded rather than rewritten because 'to come back' is ordinary beginner vocabulary and the bare forms of گشتن/گردیدن stay correctly blocked."
+    },
+    {
+      "surface": "برمی‌گردید",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares the present stem گرد with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone: neither of the other two has a برمی‌ form at all. So a برمی‌گرد* surface is unambiguous even though the bare stem is not, and the collision the checker sees cannot actually occur in these forms. Recorded rather than rewritten because 'to come back' is ordinary beginner vocabulary and the bare forms of گشتن/گردیدن stay correctly blocked."
+    },
+    {
+      "surface": "برمی‌گردیم",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares the present stem گرد with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone: neither of the other two has a برمی‌ form at all. So a برمی‌گرد* surface is unambiguous even though the bare stem is not, and the collision the checker sees cannot actually occur in these forms. Recorded rather than rewritten because 'to come back' is ordinary beginner vocabulary and the bare forms of گشتن/گردیدن stay correctly blocked."
+    },
+    {
+      "surface": "برنج",
+      "correctLexemeId": "lx-0111",
+      "reason": "برنج is the noun 'rice', not the verb رنجیدن."
     },
     {
       "surface": "بسته",
@@ -38,14 +53,24 @@
       "reason": "Used as the adjective 'closed'. The collision is with بستن (to close, lx-0373)'s participle."
     },
     {
-      "surface": "مانده",
-      "correctLexemeId": "lx-0108",
-      "reason": "Used as the adjective 'tired'. The collision is with ماندن (to remain, lx-0234)'s participle."
-    },
-    {
       "surface": "بینی",
       "correctLexemeId": "lx-0500",
       "reason": "Used as the noun 'nose'. The collision is with دیدن (to see, lx-0092)'s 2nd-person-singular present 'می‌بینی' or subjunctive 'ببینی' ending."
+    },
+    {
+      "surface": "خرد",
+      "correctLexemeId": "lx-3247",
+      "reason": "خرد is the adjective 'small', not the verb خریدن."
+    },
+    {
+      "surface": "خورد",
+      "correctLexemeId": "lx-0066",
+      "reason": "'... خورد است' (... is small) is the adjective; the collision is with خوردن (to eat/drink, lx-0091)'s 3rd-person-singular past 'خورد' (he ate), which does not fit as a predicate after 'برای همه شاگردان'."
+    },
+    {
+      "surface": "درد",
+      "correctLexemeId": "lx-0209",
+      "reason": "Used as the noun 'pain'. The collision is with دریدن (to tear, lx-0440)'s imperative form."
     },
     {
       "surface": "دری",
@@ -58,9 +83,14 @@
       "reason": "Used as the adverb 'maybe'. The collision is with شایستن (to be worthy, lx-0405)'s 3rd-person-singular present."
     },
     {
-      "surface": "کشتی",
-      "correctLexemeId": "lx-0560",
-      "reason": "Used as the noun 'ship'. The collision is with کشتن (to kill, lx-0388)'s 2nd-person-singular past."
+      "surface": "شدید",
+      "correctLexemeId": "lx-0681",
+      "reason": "Used as the adjective 'severe'. The collision is with شدن (to become, lx-0149)'s 2nd-person-plural past."
+    },
+    {
+      "surface": "شنیدند",
+      "correctLexemeId": "lx-0156",
+      "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
     },
     {
       "surface": "شکست",
@@ -68,24 +98,24 @@
       "reason": "Used as the noun 'defeat'. The collision is with شکستن (to break, lx-0374)'s 3rd-person-singular past."
     },
     {
-      "surface": "شدید",
-      "correctLexemeId": "lx-0681",
-      "reason": "Used as the adjective 'severe'. The collision is with شدن (to become, lx-0149)'s 2nd-person-plural past."
+      "surface": "مانده",
+      "correctLexemeId": "lx-0108",
+      "reason": "Used as the adjective 'tired'. The collision is with ماندن (to remain, lx-0234)'s participle."
     },
     {
-      "surface": "پخته",
-      "correctLexemeId": "lx-0651",
-      "reason": "پخته is the adjective 'cooked', not the verb پختن."
+      "surface": "می‌جوید",
+      "correctLexemeId": "lx-0402",
+      "reason": "The collision is with 'to chew'. Every seed sentence using this form takes an abstract or human object, which rules chewing out, so the resolver's pick ('to seek') is the true one."
     },
     {
-      "surface": "برنج",
-      "correctLexemeId": "lx-0111",
-      "reason": "برنج is the noun 'rice', not the verb رنجیدن."
+      "surface": "می‌رهد",
+      "correctLexemeId": "lx-0400",
+      "reason": "Both verbs sharing this stem mean 'to escape'; either resolution is true."
     },
     {
-      "surface": "خرد",
-      "correctLexemeId": "lx-3247",
-      "reason": "خرد is the adjective 'small', not the verb خریدن."
+      "surface": "می‌شنود",
+      "correctLexemeId": "lx-0156",
+      "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
     },
     {
       "surface": "می‌شنوم",
@@ -93,14 +123,24 @@
       "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
     },
     {
-      "surface": "برمی‌گردد",
-      "correctLexemeId": "lx-6138",
-      "reason": "The bar- prefix settles it: only this verb ('to return') carries it. The verbs it shares a bare stem with ('to stroll', 'to become') do not produce this prefixed form at all."
-    },
-    {
-      "surface": "می‌شنود",
+      "surface": "می‌شنوند",
       "correctLexemeId": "lx-0156",
       "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
+    },
+    {
+      "surface": "می‌شنوی",
+      "correctLexemeId": "lx-0156",
+      "reason": "شنیدن (lx-0156, rank 156) and شنفتن (lx-0467, rank 719) are the same verb: شنفتن is the older/dialectal infinitive of شنیدن, and both generate the present stem شنو, so no present form of either resolves to one lexeme. The collision is between two entries for one word, not between two words. شنیدن wins - it is the standard written and Kabuli form and four times commoner - which is what lets a band-2 verb be used in the present tense at all; without this decision the course cannot say 'I hear'."
+    },
+    {
+      "surface": "می‌شنوید",
+      "correctLexemeId": "lx-0156",
+      "reason": "شنیدن (lx-0156, rank 156) and شنفتن (lx-0467, rank 719) are the same verb: شنفتن is the older/dialectal infinitive of شنیدن, and both generate the present stem شنو, so no present form of either resolves to one lexeme. The collision is between two entries for one word, not between two words. شنیدن wins - it is the standard written and Kabuli form and four times commoner - which is what lets a band-2 verb be used in the present tense at all; without this decision the course cannot say 'I hear'."
+    },
+    {
+      "surface": "می‌شنویم",
+      "correctLexemeId": "lx-0156",
+      "reason": "شنیدن (lx-0156, rank 156) and شنفتن (lx-0467, rank 719) are the same verb: شنفتن is the older/dialectal infinitive of شنیدن, and both generate the present stem شنو, so no present form of either resolves to one lexeme. The collision is between two entries for one word, not between two words. شنیدن wins - it is the standard written and Kabuli form and four times commoner - which is what lets a band-2 verb be used in the present tense at all; without this decision the course cannot say 'I hear'."
     },
     {
       "surface": "می‌پالید",
@@ -113,29 +153,39 @@
       "reason": "Genuinely ambiguous - 'to kill' and 'to pull/draw' share this present stem. In the sentence that survives, the snow kills the flowers, and the resolver picks 'to kill' correctly. The other seed sentence, which meant 'draws water', was rewritten instead: there the resolver's pick was wrong and no review could have fixed it."
     },
     {
-      "surface": "می‌شنوند",
+      "surface": "نمی‌شنود",
       "correctLexemeId": "lx-0156",
-      "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
+      "reason": "شنیدن (lx-0156, rank 156) and شنفتن (lx-0467, rank 719) are the same verb: شنفتن is the older/dialectal infinitive of شنیدن, and both generate the present stem شنو, so no present form of either resolves to one lexeme. The collision is between two entries for one word, not between two words. شنیدن wins - it is the standard written and Kabuli form and four times commoner - which is what lets a band-2 verb be used in the present tense at all; without this decision the course cannot say 'I hear'."
+    },
+    {
+      "surface": "نمی‌شنوم",
+      "correctLexemeId": "lx-0156",
+      "reason": "شنیدن (lx-0156, rank 156) and شنفتن (lx-0467, rank 719) are the same verb: شنفتن is the older/dialectal infinitive of شنیدن, and both generate the present stem شنو, so no present form of either resolves to one lexeme. The collision is between two entries for one word, not between two words. شنیدن wins - it is the standard written and Kabuli form and four times commoner - which is what lets a band-2 verb be used in the present tense at all; without this decision the course cannot say 'I hear'."
+    },
+    {
+      "surface": "پخته",
+      "correctLexemeId": "lx-0651",
+      "reason": "پخته is the adjective 'cooked', not the verb پختن."
+    },
+    {
+      "surface": "چشم",
+      "correctLexemeId": "lx-0123",
+      "reason": "Used as the noun 'eye'. The collision is with چشیدن (to taste, lx-0433)'s imperative form."
+    },
+    {
+      "surface": "کشتی",
+      "correctLexemeId": "lx-0560",
+      "reason": "Used as the noun 'ship'. The collision is with کشتن (to kill, lx-0388)'s 2nd-person-singular past."
+    },
+    {
+      "surface": "گذشته",
+      "correctLexemeId": "lx-1051",
+      "reason": "'سال گذشته' (last year) uses گذشته attributively for 'past/last' - the same word as گذشتن (to pass, lx-0621)'s participle, so the noun entry's gloss already covers this reading; not a different-meaning collision like cuina/cuinar."
     },
     {
       "surface": "گشت",
       "correctLexemeId": "lx-0380",
       "reason": "This is the noun half of the ordinary Dari compound for 'to stroll'. The stem collision is with a verb needing the bar- prefix and with 'to become', neither of which fits the sentence."
-    },
-    {
-      "surface": "می‌رهد",
-      "correctLexemeId": "lx-0400",
-      "reason": "Both verbs sharing this stem mean 'to escape'; either resolution is true."
-    },
-    {
-      "surface": "می‌جوید",
-      "correctLexemeId": "lx-0402",
-      "reason": "The collision is with 'to chew'. Every seed sentence using this form takes an abstract or human object, which rules chewing out, so the resolver's pick ('to seek') is the true one."
-    },
-    {
-      "surface": "شنیدند",
-      "correctLexemeId": "lx-0156",
-      "reason": "The two verbs sharing the present stem here both mean 'to hear' - one is the Kabuli variant of the other - so either resolution teaches the learner the same thing. Reviewed rather than rewritten because there is nothing to get wrong."
     }
   ]
 }

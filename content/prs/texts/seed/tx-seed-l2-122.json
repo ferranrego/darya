@@ -1,0 +1,191 @@
+{
+  "id": "tx-seed-l2-122",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "صنف ما",
+  "titleTranslit": "senf-e mā",
+  "titleEn": "Our classroom",
+  "sentences": [
+    {
+      "target": "صنف ما کلان و روشن است.",
+      "translit": "senf-e mā kalān wa rōshan ast.",
+      "en": "Our classroom is big and bright.",
+      "tokens": [
+        {
+          "surface": "صنف",
+          "lexemeId": "lx-0217"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "روشن",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "در صنف یک کلکین بلند است.",
+      "translit": "dar senf yak kelkīn-e buland ast.",
+      "en": "There is a tall window in the classroom.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "صنف",
+          "lexemeId": "lx-0217"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "کلکین",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "بلند",
+          "lexemeId": "lx-0226"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "دیوار صنف سفید است.",
+      "translit": "dēwār-e senf safēd ast.",
+      "en": "The classroom wall is white.",
+      "tokens": [
+        {
+          "surface": "دیوار",
+          "lexemeId": "lx-6045"
+        },
+        {
+          "surface": "صنف",
+          "lexemeId": "lx-0217"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من قلم خود را می‌گیرم.",
+      "translit": "man qalam-e khud rā mēgīram.",
+      "en": "I take my pen.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "قلم",
+          "lexemeId": "lx-0238"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌گیرم",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "بعد از درس ما به خانه می‌رویم.",
+      "translit": "ba'd az dars mā ba khāna mērawēm.",
+      "en": "After the lesson we go home.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0036",
+    "lx-0065",
+    "lx-0089",
+    "lx-0143",
+    "lx-0153",
+    "lx-0178",
+    "lx-0194",
+    "lx-0198",
+    "lx-0216",
+    "lx-0217",
+    "lx-0226",
+    "lx-0238",
+    "lx-0301",
+    "lx-6045"
+  ],
+  "newWords": [
+    "lx-0194"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 122
+}

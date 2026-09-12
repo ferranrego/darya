@@ -1,0 +1,240 @@
+{
+  "id": "tx-seed-l2-110",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "صبح ما",
+  "titleTranslit": "subh-e mā",
+  "titleEn": "Our morning",
+  "sentences": [
+    {
+      "target": "صبح خانه ما آرام است.",
+      "translit": "subh khāna-ye mā ārām ast.",
+      "en": "In the morning our house is quiet.",
+      "tokens": [
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من هر صبح چای با قند می‌خورم.",
+      "translit": "man har subh chāy bā qand mēkhuram.",
+      "en": "Every morning I drink tea with sugar.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "قند",
+          "lexemeId": "lx-0118"
+        },
+        {
+          "surface": "می‌خورم",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "من به پدر نگاه می‌کنم و گوش می‌کنم.",
+      "translit": "man ba padar nigāh mēkunam wa gōsh mēkunam.",
+      "en": "I look at my father and I listen.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "نگاه",
+          "lexemeId": "lx-0316"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "گوش",
+          "lexemeId": "lx-0317"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "پدر من صبح به کار می‌رود.",
+      "translit": "padar-e man subh ba kār mērawad.",
+      "en": "My father goes to work in the morning.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "او در کار چیز نو می‌آموزد.",
+      "translit": "ō dar kār chīz-e naw mēāmōzad.",
+      "en": "At work he learns something new.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌آموزد",
+          "lexemeId": "lx-0383"
+        }
+      ]
+    },
+    {
+      "target": "او شام به خانه برمی‌گردد.",
+      "translit": "ō shām ba khāna barmēgardad.",
+      "en": "In the evening he comes back home.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "شام",
+          "lexemeId": "lx-6131"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "برمی‌گردد",
+          "lexemeId": "lx-6138"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0008",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0036",
+    "lx-0039",
+    "lx-0042",
+    "lx-0052",
+    "lx-0067",
+    "lx-0079",
+    "lx-0089",
+    "lx-0091",
+    "lx-0097",
+    "lx-0118",
+    "lx-0164",
+    "lx-0166",
+    "lx-0214",
+    "lx-0316",
+    "lx-0317",
+    "lx-0383",
+    "lx-6131",
+    "lx-6138"
+  ],
+  "newWords": [
+    "lx-0316",
+    "lx-0317",
+    "lx-6131",
+    "lx-6138"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 110
+}

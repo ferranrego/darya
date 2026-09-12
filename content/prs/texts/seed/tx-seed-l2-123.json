@@ -1,0 +1,211 @@
+{
+  "id": "tx-seed-l2-123",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "قلم و کتاب",
+  "titleTranslit": "qalam wa ketāb",
+  "titleEn": "Pen and book",
+  "sentences": [
+    {
+      "target": "من یک قلم نو دارم.",
+      "translit": "man yak qalam-e naw dāram.",
+      "en": "I have a new pen.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "قلم",
+          "lexemeId": "lx-0238"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "این قلم سیاه است.",
+      "translit": "īn qalam siyāh ast.",
+      "en": "This pen is black.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "قلم",
+          "lexemeId": "lx-0238"
+        },
+        {
+          "surface": "سیاه",
+          "lexemeId": "lx-0144"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "قلم دوست من خراب است.",
+      "translit": "qalam-e dōst-e man kharāb ast.",
+      "en": "My friend's pen is broken.",
+      "tokens": [
+        {
+          "surface": "قلم",
+          "lexemeId": "lx-0238"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خراب",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من قلم خود را به او می‌دهم.",
+      "translit": "man qalam-e khud rā ba ō mēdiham.",
+      "en": "I give my pen to him.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "قلم",
+          "lexemeId": "lx-0238"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "می‌دهم",
+          "lexemeId": "lx-0100"
+        }
+      ]
+    },
+    {
+      "target": "بعد او در صنف می‌نویسد.",
+      "translit": "ba'd ō dar senf mēnawīsad.",
+      "en": "Afterwards he writes in the classroom.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "صنف",
+          "lexemeId": "lx-0217"
+        },
+        {
+          "surface": "می‌نویسد",
+          "lexemeId": "lx-0155"
+        }
+      ]
+    },
+    {
+      "target": "کتاب کهنه من هم خراب است.",
+      "translit": "ketāb-e kuhna-ye man ham kharāb ast.",
+      "en": "My old book is broken too.",
+      "tokens": [
+        {
+          "surface": "کتاب",
+          "lexemeId": "lx-0074"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "خراب",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0003",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0024",
+    "lx-0025",
+    "lx-0058",
+    "lx-0067",
+    "lx-0068",
+    "lx-0074",
+    "lx-0095",
+    "lx-0100",
+    "lx-0144",
+    "lx-0155",
+    "lx-0178",
+    "lx-0217",
+    "lx-0238",
+    "lx-0265",
+    "lx-0301"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 123
+}

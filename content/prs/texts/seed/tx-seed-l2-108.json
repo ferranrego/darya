@@ -1,0 +1,247 @@
+{
+  "id": "tx-seed-l2-108",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دهقان و باغ",
+  "titleTranslit": "dehqān wa bāgh",
+  "titleEn": "The farmer and the garden",
+  "sentences": [
+    {
+      "target": "کاکا من یک دهقان مشهور است.",
+      "translit": "kākā-ye man yak dehqān-e mash'hūr ast.",
+      "en": "My uncle is a famous farmer.",
+      "tokens": [
+        {
+          "surface": "کاکا",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دهقان",
+          "lexemeId": "lx-0236"
+        },
+        {
+          "surface": "مشهور",
+          "lexemeId": "lx-0228"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "در قریه او یک باغ کلان وجود دارد.",
+      "translit": "dar qarya-ye ō yak bāgh-e kalān wujūd dārad.",
+      "en": "There is a big garden in his village.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "وجود",
+          "lexemeId": "lx-0337"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "دهقان هر صبح به زمین می‌رود.",
+      "translit": "dehqān har subh ba zamīn mērawad.",
+      "en": "The farmer goes to the land every morning.",
+      "tokens": [
+        {
+          "surface": "دهقان",
+          "lexemeId": "lx-0236"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "زمین",
+          "lexemeId": "lx-0237"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "آفتاب گرم است و دهقان کار می‌کند.",
+      "translit": "āftāb garm ast wa dehqān kār mēkunad.",
+      "en": "The sun is hot and the farmer works.",
+      "tokens": [
+        {
+          "surface": "آفتاب",
+          "lexemeId": "lx-0129"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "دهقان",
+          "lexemeId": "lx-0236"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "دهقان میوه تازه به بازار می‌فرستد.",
+      "translit": "dehqān mēwa-ye tāza ba bāzār mēfiristad.",
+      "en": "The farmer sends fresh fruit to the bazaar.",
+      "tokens": [
+        {
+          "surface": "دهقان",
+          "lexemeId": "lx-0236"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "تازه",
+          "lexemeId": "lx-0204"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "می‌فرستد",
+          "lexemeId": "lx-0377"
+        }
+      ]
+    },
+    {
+      "target": "چقدر میوه این دهقان خوش‌مزه است!",
+      "translit": "chiqadar mēwa-ye īn dehqān khushmaza ast!",
+      "en": "How tasty this farmer's fruit is!",
+      "tokens": [
+        {
+          "surface": "چقدر",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "دهقان",
+          "lexemeId": "lx-0236"
+        },
+        {
+          "surface": "خوش‌مزه",
+          "lexemeId": "lx-0119"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0025",
+    "lx-0042",
+    "lx-0065",
+    "lx-0071",
+    "lx-0079",
+    "lx-0081",
+    "lx-0089",
+    "lx-0095",
+    "lx-0097",
+    "lx-0113",
+    "lx-0119",
+    "lx-0129",
+    "lx-0133",
+    "lx-0139",
+    "lx-0166",
+    "lx-0185",
+    "lx-0204",
+    "lx-0228",
+    "lx-0236",
+    "lx-0237",
+    "lx-0337",
+    "lx-0342",
+    "lx-0377"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 108
+}

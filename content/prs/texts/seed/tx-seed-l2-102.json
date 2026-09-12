@@ -1,0 +1,236 @@
+{
+  "id": "tx-seed-l2-102",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "میوه تازه",
+  "titleTranslit": "mēwa-ye tāza",
+  "titleEn": "Fresh fruit",
+  "sentences": [
+    {
+      "target": "در بازار میوه تازه زیاد وجود دارد.",
+      "translit": "dar bāzār mēwa-ye tāza ziyād wujūd dārad.",
+      "en": "There is a lot of fresh fruit in the bazaar.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "تازه",
+          "lexemeId": "lx-0204"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "وجود",
+          "lexemeId": "lx-0337"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "سیب تازه بسیار شیرین و خوش‌مزه است.",
+      "translit": "sēb-e tāza bisyār shīrīn wa khushmaza ast.",
+      "en": "Fresh apples are very sweet and tasty.",
+      "tokens": [
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "تازه",
+          "lexemeId": "lx-0204"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "خوش‌مزه",
+          "lexemeId": "lx-0119"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من هر هفته یک بار میوه می‌خرم.",
+      "translit": "man har hafta yak bār mēwa mēkharam.",
+      "en": "I buy fruit once every week.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بار",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "می‌خرم",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    },
+    {
+      "target": "نان تازه هم بسیار خوش‌مزه است.",
+      "translit": "nān-e tāza ham bisyār khushmaza ast.",
+      "en": "Fresh bread is also very tasty.",
+      "tokens": [
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "تازه",
+          "lexemeId": "lx-0204"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوش‌مزه",
+          "lexemeId": "lx-0119"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "چقدر این میوه شیرین است!",
+      "translit": "chiqadar īn mēwa shīrīn ast!",
+      "en": "How sweet this fruit is!",
+      "tokens": [
+        {
+          "surface": "چقدر",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مادر من دوباره سیب می‌خرد.",
+      "translit": "mādar-e man dōbāra sēb mēkharad.",
+      "en": "My mother buys apples again.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "دوباره",
+          "lexemeId": "lx-0315"
+        },
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "می‌خرد",
+          "lexemeId": "lx-0205"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0025",
+    "lx-0038",
+    "lx-0050",
+    "lx-0051",
+    "lx-0069",
+    "lx-0095",
+    "lx-0113",
+    "lx-0114",
+    "lx-0119",
+    "lx-0120",
+    "lx-0133",
+    "lx-0166",
+    "lx-0167",
+    "lx-0204",
+    "lx-0205",
+    "lx-0315",
+    "lx-0330",
+    "lx-0337",
+    "lx-0342"
+  ],
+  "newWords": [
+    "lx-0120"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 102
+}

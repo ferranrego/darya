@@ -1,0 +1,239 @@
+{
+  "id": "tx-seed-l2-099",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "نامه به کاکا",
+  "titleTranslit": "nāma ba kākā",
+  "titleEn": "A letter to uncle",
+  "sentences": [
+    {
+      "target": "من فقط یک بار در ماه نامه می‌فرستم.",
+      "translit": "man faqat yak bār dar māh nāma mēfiristam.",
+      "en": "I send a letter only once a month.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "فقط",
+          "lexemeId": "lx-0293"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بار",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "نامه",
+          "lexemeId": "lx-6008"
+        },
+        {
+          "surface": "می‌فرستم",
+          "lexemeId": "lx-0377"
+        }
+      ]
+    },
+    {
+      "target": "نامه من به قریه کاکا می‌رسد.",
+      "translit": "nāma-ye man ba qarya-ye kākā mērasad.",
+      "en": "My letter arrives at uncle's village.",
+      "tokens": [
+        {
+          "surface": "نامه",
+          "lexemeId": "lx-6008"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "کاکا",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "می‌رسد",
+          "lexemeId": "lx-0370"
+        }
+      ]
+    },
+    {
+      "target": "کاکا نامه را می‌خواند و خوش می‌شود.",
+      "translit": "kākā nāma rā mēkhānad wa khush mēshawad.",
+      "en": "Uncle reads the letter and becomes happy.",
+      "tokens": [
+        {
+          "surface": "کاکا",
+          "lexemeId": "lx-0185"
+        },
+        {
+          "surface": "نامه",
+          "lexemeId": "lx-6008"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌خواند",
+          "lexemeId": "lx-0098"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    },
+    {
+      "target": "او هم برای من یک نامه می‌فرستد.",
+      "translit": "ō ham barā-ye man yak nāma mēfiristad.",
+      "en": "He also sends me a letter.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "برای",
+          "lexemeId": "lx-0299"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "نامه",
+          "lexemeId": "lx-6008"
+        },
+        {
+          "surface": "می‌فرستد",
+          "lexemeId": "lx-0377"
+        }
+      ]
+    },
+    {
+      "target": "من نامه او را دوباره می‌خوانم.",
+      "translit": "man nāma-ye ō rā dōbāra mēkhānam.",
+      "en": "I read his letter again.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نامه",
+          "lexemeId": "lx-6008"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "دوباره",
+          "lexemeId": "lx-0315"
+        },
+        {
+          "surface": "می‌خوانم",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "خاله من هم نامه می‌فرستد.",
+      "translit": "khāla-ye man ham nāma mēfiristad.",
+      "en": "My aunt also sends letters.",
+      "tokens": [
+        {
+          "surface": "خاله",
+          "lexemeId": "lx-0184"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "نامه",
+          "lexemeId": "lx-6008"
+        },
+        {
+          "surface": "می‌فرستد",
+          "lexemeId": "lx-0377"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0007",
+    "lx-0011",
+    "lx-0012",
+    "lx-0024",
+    "lx-0025",
+    "lx-0049",
+    "lx-0081",
+    "lx-0098",
+    "lx-0107",
+    "lx-0149",
+    "lx-0184",
+    "lx-0185",
+    "lx-0293",
+    "lx-0299",
+    "lx-0315",
+    "lx-0330",
+    "lx-0370",
+    "lx-0377",
+    "lx-6008"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 99
+}

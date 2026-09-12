@@ -1,0 +1,231 @@
+{
+  "id": "tx-seed-l2-103",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "چای شیرین",
+  "titleTranslit": "chāy-e shīrīn",
+  "titleEn": "Sweet tea",
+  "sentences": [
+    {
+      "target": "ما قبل از کار چای شیرین می‌خوریم.",
+      "translit": "mā qabl az kār chāy-e shīrīn mēkhurēm.",
+      "en": "We drink sweet tea before work.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "قبل",
+          "lexemeId": "lx-0319"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "می‌خوریم",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "چای گرم بسیار خوش‌مزه است.",
+      "translit": "chāy-e garm bisyār khushmaza ast.",
+      "en": "Hot tea is very tasty.",
+      "tokens": [
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوش‌مزه",
+          "lexemeId": "lx-0119"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "خاله من نان تازه می‌آورد.",
+      "translit": "khāla-ye man nān-e tāza mēāwarad.",
+      "en": "My aunt brings fresh bread.",
+      "tokens": [
+        {
+          "surface": "خاله",
+          "lexemeId": "lx-0184"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "تازه",
+          "lexemeId": "lx-0204"
+        },
+        {
+          "surface": "می‌آورد",
+          "lexemeId": "lx-0232"
+        }
+      ]
+    },
+    {
+      "target": "چقدر نان او خوش‌مزه است!",
+      "translit": "chiqadar nān-e ō khushmaza ast!",
+      "en": "How tasty her bread is!",
+      "tokens": [
+        {
+          "surface": "چقدر",
+          "lexemeId": "lx-0342"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "خوش‌مزه",
+          "lexemeId": "lx-0119"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "پدر من چای شیرین دوست دارد.",
+      "translit": "padar-e man chāy-e shīrīn dōst dārad.",
+      "en": "My father likes sweet tea.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "چای",
+          "lexemeId": "lx-0039"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من و خاله موسیقی می‌شنویم و قصه می‌گوییم.",
+      "translit": "man wa khāla mūsīqī mēshunawēm wa qessa mēgōyēm.",
+      "en": "My aunt and I listen to music and tell stories.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "خاله",
+          "lexemeId": "lx-0184"
+        },
+        {
+          "surface": "موسیقی",
+          "lexemeId": "lx-0247"
+        },
+        {
+          "surface": "می‌شنویم",
+          "lexemeId": "lx-0156"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "قصه",
+          "lexemeId": "lx-0189"
+        },
+        {
+          "surface": "می‌گوییم",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0004",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0038",
+    "lx-0039",
+    "lx-0052",
+    "lx-0058",
+    "lx-0071",
+    "lx-0079",
+    "lx-0091",
+    "lx-0093",
+    "lx-0095",
+    "lx-0119",
+    "lx-0120",
+    "lx-0156",
+    "lx-0167",
+    "lx-0184",
+    "lx-0189",
+    "lx-0204",
+    "lx-0232",
+    "lx-0247",
+    "lx-0319",
+    "lx-0342"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 103
+}

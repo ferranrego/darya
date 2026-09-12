@@ -1,0 +1,215 @@
+{
+  "id": "tx-seed-l2-113",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "باران",
+  "titleTranslit": "bārān",
+  "titleEn": "Rain",
+  "sentences": [
+    {
+      "target": "امروز باران می‌بارد و باغ تر است.",
+      "translit": "emrōz bārān mēbārad wa bāgh tar ast.",
+      "en": "Today it is raining and the garden is wet.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "باران",
+          "lexemeId": "lx-0127"
+        },
+        {
+          "surface": "می‌بارد",
+          "lexemeId": "lx-0241"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "تر",
+          "lexemeId": "lx-6108"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "آسمان امروز آبی نیست.",
+      "translit": "āsmān emrōz ābī nēst.",
+      "en": "The sky is not blue today.",
+      "tokens": [
+        {
+          "surface": "آسمان",
+          "lexemeId": "lx-0147"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "آبی",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "سرک بسیار تر است.",
+      "translit": "sarak bisyār tar ast.",
+      "en": "The street is very wet.",
+      "tokens": [
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "تر",
+          "lexemeId": "lx-6108"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "لباس من هم تر است.",
+      "translit": "libās-e man ham tar ast.",
+      "en": "My clothes are wet too.",
+      "tokens": [
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "تر",
+          "lexemeId": "lx-6108"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من از کلکین به باران نگاه می‌کنم.",
+      "translit": "man az kelkīn ba bārān nigāh mēkunam.",
+      "en": "I look at the rain from the window.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کلکین",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "باران",
+          "lexemeId": "lx-0127"
+        },
+        {
+          "surface": "نگاه",
+          "lexemeId": "lx-0316"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من زود به خانه برمی‌گردم.",
+      "translit": "man zūd ba khāna barmēgardam.",
+      "en": "I go back home quickly.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "برمی‌گردم",
+          "lexemeId": "lx-6138"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0004",
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0036",
+    "lx-0043",
+    "lx-0082",
+    "lx-0096",
+    "lx-0097",
+    "lx-0127",
+    "lx-0139",
+    "lx-0146",
+    "lx-0147",
+    "lx-0167",
+    "lx-0198",
+    "lx-0230",
+    "lx-0241",
+    "lx-0316",
+    "lx-0356",
+    "lx-6108",
+    "lx-6138"
+  ],
+  "newWords": [
+    "lx-0198",
+    "lx-6108"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 113
+}

@@ -1,0 +1,173 @@
+{
+  "id": "tx-seed-l2-124",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "کلکین خانه",
+  "titleTranslit": "kelkīn-e khāna",
+  "titleEn": "The house window",
+  "sentences": [
+    {
+      "target": "خانه ما دو کلکین دارد.",
+      "translit": "khāna-ye mā dū kelkīn dārad.",
+      "en": "Our house has two windows.",
+      "tokens": [
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "دو",
+          "lexemeId": "lx-0026"
+        },
+        {
+          "surface": "کلکین",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "یک کلکین خراب است.",
+      "translit": "yak kelkīn kharāb ast.",
+      "en": "One window is broken.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "کلکین",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "خراب",
+          "lexemeId": "lx-0265"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "پدر من کلکین را جور می‌کند.",
+      "translit": "padar-e man kelkīn rā jōr mēkunad.",
+      "en": "My father fixes the window.",
+      "tokens": [
+        {
+          "surface": "پدر",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کلکین",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من از کلکین به آسمان می‌بینم.",
+      "translit": "man az kelkīn ba āsmān mēbīnam.",
+      "en": "I look at the sky from the window.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کلکین",
+          "lexemeId": "lx-0198"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "آسمان",
+          "lexemeId": "lx-0147"
+        },
+        {
+          "surface": "می‌بینم",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "آسمان امروز آبی است.",
+      "translit": "āsmān emrōz ābī ast.",
+      "en": "The sky is blue today.",
+      "tokens": [
+        {
+          "surface": "آسمان",
+          "lexemeId": "lx-0147"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "آبی",
+          "lexemeId": "lx-0146"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0026",
+    "lx-0036",
+    "lx-0043",
+    "lx-0052",
+    "lx-0092",
+    "lx-0095",
+    "lx-0097",
+    "lx-0106",
+    "lx-0146",
+    "lx-0147",
+    "lx-0198",
+    "lx-0265"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 124
+}

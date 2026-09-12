@@ -1,0 +1,228 @@
+{
+  "id": "tx-seed-l2-116",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "شفاخانه",
+  "titleTranslit": "shafākhāna",
+  "titleEn": "The hospital",
+  "sentences": [
+    {
+      "target": "خواهر من مریض است و شفاخانه دور نیست.",
+      "translit": "khāhar-e man marīz ast wa shafākhāna dūr nēst.",
+      "en": "My sister is sick and the hospital is not far.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "مریض",
+          "lexemeId": "lx-0262"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "شفاخانه",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "دور",
+          "lexemeId": "lx-0177"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "ما به شفاخانه می‌رویم.",
+      "translit": "mā ba shafākhāna mērawēm.",
+      "en": "We go to the hospital.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "شفاخانه",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "داکتر به گوش او نگاه می‌کند.",
+      "translit": "dāktar ba gōsh-e ō nigāh mēkunad.",
+      "en": "The doctor looks at her ear.",
+      "tokens": [
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "گوش",
+          "lexemeId": "lx-0317"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "نگاه",
+          "lexemeId": "lx-0316"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "داکتر خون او را هم می‌گیرد.",
+      "translit": "dāktar khūn-e ō rā ham mēgīrad.",
+      "en": "The doctor also takes her blood.",
+      "tokens": [
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "خون",
+          "lexemeId": "lx-0495"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "می‌گیرد",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "در شفاخانه مردم زیاد صبر می‌کنند.",
+      "translit": "dar shafākhāna mardum ziyād sabr mēkunand.",
+      "en": "At the hospital people wait a lot.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "شفاخانه",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "صبر",
+          "lexemeId": "lx-0333"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "ما شام از شفاخانه برمی‌گردیم.",
+      "translit": "mā shām az shafākhāna barmēgardēm.",
+      "en": "In the evening we come back from the hospital.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "شام",
+          "lexemeId": "lx-6131"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "شفاخانه",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "برمی‌گردیم",
+          "lexemeId": "lx-6138"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0054",
+    "lx-0059",
+    "lx-0069",
+    "lx-0089",
+    "lx-0096",
+    "lx-0097",
+    "lx-0153",
+    "lx-0177",
+    "lx-0210",
+    "lx-0211",
+    "lx-0262",
+    "lx-0316",
+    "lx-0317",
+    "lx-0333",
+    "lx-0495",
+    "lx-6131",
+    "lx-6138"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 116
+}

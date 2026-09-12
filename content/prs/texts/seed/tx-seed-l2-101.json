@@ -1,0 +1,257 @@
+{
+  "id": "tx-seed-l2-101",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "ساعت من",
+  "titleTranslit": "sā'at-e man",
+  "titleEn": "My watch",
+  "sentences": [
+    {
+      "target": "در اتاق من یک ساعت کلان وجود دارد.",
+      "translit": "dar utāq-e man yak sā'at-e kalān wujūd dārad.",
+      "en": "There is a big clock in my room.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "وجود",
+          "lexemeId": "lx-0337"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "من هر روز یک بار ساعت را می‌بینم.",
+      "translit": "man har rōz yak bār sā'at rā mēbīnam.",
+      "en": "I look at the clock once every day.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "بار",
+          "lexemeId": "lx-0330"
+        },
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌بینم",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "من قبل از مکتب نان می‌خورم.",
+      "translit": "man qabl az maktab nān mēkhuram.",
+      "en": "I eat food before school.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "قبل",
+          "lexemeId": "lx-0319"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "می‌خورم",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "من فقط یک ساعت درس می‌خوانم.",
+      "translit": "man faqat yak sā'at dars mēkhānam.",
+      "en": "I study for only one hour.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "فقط",
+          "lexemeId": "lx-0293"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "درس",
+          "lexemeId": "lx-0216"
+        },
+        {
+          "surface": "می‌خوانم",
+          "lexemeId": "lx-0098"
+        }
+      ]
+    },
+    {
+      "target": "برادر من هم یک ساعت کار می‌کند.",
+      "translit": "barādar-e man ham yak sā'at kār mēkunad.",
+      "en": "My brother also works for one hour.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "ساعت او کهنه و خورد است.",
+      "translit": "sā'at-e ō kuhna wa khurd ast.",
+      "en": "His watch is old and small.",
+      "tokens": [
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0024",
+    "lx-0025",
+    "lx-0038",
+    "lx-0040",
+    "lx-0053",
+    "lx-0065",
+    "lx-0066",
+    "lx-0068",
+    "lx-0075",
+    "lx-0079",
+    "lx-0091",
+    "lx-0092",
+    "lx-0095",
+    "lx-0097",
+    "lx-0098",
+    "lx-0166",
+    "lx-0181",
+    "lx-0196",
+    "lx-0216",
+    "lx-0293",
+    "lx-0319",
+    "lx-0330",
+    "lx-0337"
+  ],
+  "newWords": [
+    "lx-0181"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 101
+}

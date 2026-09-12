@@ -1,0 +1,227 @@
+{
+  "id": "tx-seed-l2-115",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "معلم ما",
+  "titleTranslit": "mu'allem-e mā",
+  "titleEn": "Our teacher",
+  "sentences": [
+    {
+      "target": "معلم ما آرام است و صبر دارد.",
+      "translit": "mu'allem-e mā ārām ast wa sabr dārad.",
+      "en": "Our teacher is calm and has patience.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "صبر",
+          "lexemeId": "lx-0333"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "بعد از زنگ او به صنف می‌آید.",
+      "translit": "ba'd az zang ō ba senf mēāyad.",
+      "en": "After the bell he comes to the classroom.",
+      "tokens": [
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "زنگ",
+          "lexemeId": "lx-0349"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "صنف",
+          "lexemeId": "lx-0217"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "او به ما دری می‌آموزد.",
+      "translit": "ō ba mā darī mēāmōzad.",
+      "en": "He teaches us Dari.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "دری",
+          "lexemeId": "lx-0087"
+        },
+        {
+          "surface": "می‌آموزد",
+          "lexemeId": "lx-0383"
+        }
+      ]
+    },
+    {
+      "target": "ما همه به معلم گوش می‌کنیم.",
+      "translit": "mā hama ba mu'allem gōsh mēkunēm.",
+      "en": "We all listen to the teacher.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "گوش",
+          "lexemeId": "lx-0317"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "البته شاگردان خوب گوش می‌کنند.",
+      "translit": "albatta shāgerdān khōb gōsh mēkunand.",
+      "en": "Of course the pupils listen well.",
+      "tokens": [
+        {
+          "surface": "البته",
+          "lexemeId": "lx-0340"
+        },
+        {
+          "surface": "شاگردان",
+          "lexemeId": "lx-0077"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "گوش",
+          "lexemeId": "lx-0317"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او اطفال خورد را می‌بخشد.",
+      "translit": "ō atfāl-e khurd rā mēbakhshad.",
+      "en": "He forgives the small children.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "اطفال",
+          "lexemeId": "lx-6143"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌بخشد",
+          "lexemeId": "lx-0387"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0063",
+    "lx-0066",
+    "lx-0077",
+    "lx-0078",
+    "lx-0087",
+    "lx-0090",
+    "lx-0095",
+    "lx-0097",
+    "lx-0165",
+    "lx-0214",
+    "lx-0217",
+    "lx-0301",
+    "lx-0317",
+    "lx-0333",
+    "lx-0340",
+    "lx-0349",
+    "lx-0383",
+    "lx-0387",
+    "lx-6143"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 115
+}
