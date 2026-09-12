@@ -1,0 +1,167 @@
+{
+  "id": "tx-seed-l1-067",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "زن و خواهر",
+  "titleTranslit": "zan wa khāhar",
+  "titleEn": "The woman and the sister",
+  "sentences": [
+    {
+      "target": "یک زن در حویلی است.",
+      "translit": "yak zan dar haweli ast.",
+      "en": "A woman is in the courtyard.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "زن",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "حویلی",
+          "lexemeId": "lx-6048"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "خواهر من هم آنجا است.",
+      "translit": "khāhar-e man ham ānjā ast.",
+      "en": "My sister is there too.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "آنها با هم گپ می‌زنند.",
+      "translit": "ānhā bā ham gap mēzanand.",
+      "en": "They talk together.",
+      "tokens": [
+        {
+          "surface": "آنها",
+          "lexemeId": "lx-0016"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-0151"
+        },
+        {
+          "surface": "می‌زنند",
+          "lexemeId": "lx-0152"
+        }
+      ]
+    },
+    {
+      "target": "زن نام خواهر من می‌داند.",
+      "translit": "zan nām-e khāhar-e man mēdānad.",
+      "en": "The woman knows my sister's name.",
+      "tokens": [
+        {
+          "surface": "زن",
+          "lexemeId": "lx-0061"
+        },
+        {
+          "surface": "نام",
+          "lexemeId": "lx-0062"
+        },
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "می‌داند",
+          "lexemeId": "lx-0094"
+        }
+      ]
+    },
+    {
+      "target": "خواهر من خوش می‌شود.",
+      "translit": "khāhar-e man khush mēshawad.",
+      "en": "My sister becomes happy.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0008",
+    "lx-0010",
+    "lx-0011",
+    "lx-0016",
+    "lx-0024",
+    "lx-0025",
+    "lx-0054",
+    "lx-0061",
+    "lx-0062",
+    "lx-0094",
+    "lx-0107",
+    "lx-0149",
+    "lx-0151",
+    "lx-0152",
+    "lx-0175",
+    "lx-6048"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 67
+}

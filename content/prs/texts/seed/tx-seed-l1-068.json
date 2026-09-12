@@ -1,0 +1,163 @@
+{
+  "id": "tx-seed-l1-068",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "سال و هفته",
+  "titleTranslit": "sāl wa hafta",
+  "titleEn": "Year and week",
+  "sentences": [
+    {
+      "target": "یک سال دوازده ماه دارد.",
+      "translit": "yak sāl dawāzda māh dārad.",
+      "en": "A year has twelve months.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "سال",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "دوازده",
+          "lexemeId": "lx-6076"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "یک ماه چهار هفته دارد.",
+      "translit": "yak māh chār hafta dārad.",
+      "en": "A month has four weeks.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "ماه",
+          "lexemeId": "lx-0049"
+        },
+        {
+          "surface": "چهار",
+          "lexemeId": "lx-0028"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "دارد",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "حالا سال نو است.",
+      "translit": "hālā sāl-e naw ast.",
+      "en": "Now it is the new year.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "سال",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "این هفته هوا گرم است.",
+      "translit": "īn hafta hawā garm ast.",
+      "en": "This week the weather is warm.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "هوا",
+          "lexemeId": "lx-0126"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما همه خوش هستیم.",
+      "translit": "mā hama khush hastēm.",
+      "en": "We are all happy.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0006",
+    "lx-0010",
+    "lx-0014",
+    "lx-0025",
+    "lx-0028",
+    "lx-0046",
+    "lx-0048",
+    "lx-0049",
+    "lx-0050",
+    "lx-0067",
+    "lx-0071",
+    "lx-0095",
+    "lx-0096",
+    "lx-0107",
+    "lx-0126",
+    "lx-0165",
+    "lx-6076"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 68
+}

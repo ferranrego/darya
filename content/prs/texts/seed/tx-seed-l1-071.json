@@ -1,0 +1,164 @@
+{
+  "id": "tx-seed-l1-071",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "من چه می‌خواهم",
+  "titleTranslit": "man che mēkhāham",
+  "titleEn": "What I want",
+  "sentences": [
+    {
+      "target": "من یک چیز نو می‌خواهم.",
+      "translit": "man yak chīz-e naw mēkhāham.",
+      "en": "I want a new thing.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "می‌خواهم",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "خواهر من هم می‌خواهد.",
+      "translit": "khāhar-e man ham mēkhāhad.",
+      "en": "My sister wants one too.",
+      "tokens": [
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "می‌خواهد",
+          "lexemeId": "lx-0099"
+        }
+      ]
+    },
+    {
+      "target": "مادر من به بازار می‌رود.",
+      "translit": "mādar-e man ba bāzār mērawad.",
+      "en": "My mother goes to the bazaar.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "می‌رود",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "او یک چیز خوب می‌برد.",
+      "translit": "ō yak chīz-e khōb mēbarad.",
+      "en": "She takes a good thing.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "می‌برد",
+          "lexemeId": "lx-0233"
+        }
+      ]
+    },
+    {
+      "target": "ما بسیار خوش می‌شویم.",
+      "translit": "mā bisyār khush mēshawēm.",
+      "en": "We become very happy.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "می‌شویم",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0025",
+    "lx-0051",
+    "lx-0054",
+    "lx-0063",
+    "lx-0067",
+    "lx-0089",
+    "lx-0099",
+    "lx-0107",
+    "lx-0133",
+    "lx-0149",
+    "lx-0164",
+    "lx-0167",
+    "lx-0233"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 71
+}

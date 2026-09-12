@@ -1,0 +1,155 @@
+{
+  "id": "tx-seed-l1-063",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "چه می‌گویم",
+  "titleTranslit": "che mēgōyam",
+  "titleEn": "What I say",
+  "sentences": [
+    {
+      "target": "من به دوست خود می‌گویم.",
+      "translit": "man ba dōst-e khud mēgōyam.",
+      "en": "I speak to my friend.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "دوست",
+          "lexemeId": "lx-0058"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "می‌گویم",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "او هم به من می‌گوید.",
+      "translit": "ō ham ba man mēgōyad.",
+      "en": "He speaks to me too.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "مادر من به ما می‌گوید.",
+      "translit": "mādar-e man ba mā mēgōyad.",
+      "en": "My mother speaks to us.",
+      "tokens": [
+        {
+          "surface": "مادر",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "ما همه می‌گوییم.",
+      "translit": "mā hama mēgōyēm.",
+      "en": "We all speak.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "می‌گوییم",
+          "lexemeId": "lx-0093"
+        }
+      ]
+    },
+    {
+      "target": "گفتن کار خوب است.",
+      "translit": "guftan kār-e khōb ast.",
+      "en": "Speaking is good work.",
+      "tokens": [
+        {
+          "surface": "گفتن",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0051",
+    "lx-0058",
+    "lx-0063",
+    "lx-0079",
+    "lx-0093",
+    "lx-0165",
+    "lx-0178"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 63
+}

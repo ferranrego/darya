@@ -1,0 +1,169 @@
+{
+  "id": "tx-seed-l2-129",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "ساعت من",
+  "titleTranslit": "sā'at-e man",
+  "titleEn": "My watch",
+  "sentences": [
+    {
+      "target": "من یک ساعت خورد دارم.",
+      "translit": "man yak sā'at-e khurd dāram.",
+      "en": "I have a small watch.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "دارم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "ساعت من سفید است.",
+      "translit": "sā'at-e man safēd ast.",
+      "en": "My watch is white.",
+      "tokens": [
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من ساعت را سر میز می‌مانم.",
+      "translit": "man sā'at rā sar-e mēz mēmānam.",
+      "en": "I put the watch on the table.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "سر",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "میز",
+          "lexemeId": "lx-6043"
+        },
+        {
+          "surface": "می‌مانم",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "صبح ساعت هفت است.",
+      "translit": "subh sā'at haft ast.",
+      "en": "In the morning it is seven o'clock.",
+      "tokens": [
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "ساعت",
+          "lexemeId": "lx-0181"
+        },
+        {
+          "surface": "هفت",
+          "lexemeId": "lx-0031"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من زود از خواب برمی‌خیزم.",
+      "translit": "man zūd az khāb barmēkhēzam.",
+      "en": "I get up from sleep early.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "خواب",
+          "lexemeId": "lx-0159"
+        },
+        {
+          "surface": "برمی‌خیزم",
+          "lexemeId": "lx-0363"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0025",
+    "lx-0031",
+    "lx-0042",
+    "lx-0066",
+    "lx-0095",
+    "lx-0122",
+    "lx-0143",
+    "lx-0159",
+    "lx-0181",
+    "lx-0234",
+    "lx-0356",
+    "lx-0363",
+    "lx-6043"
+  ],
+  "newWords": [
+    "lx-0363"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 129
+}

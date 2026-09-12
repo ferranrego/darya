@@ -1,0 +1,178 @@
+{
+  "id": "tx-seed-l2-132",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دروازه باز",
+  "titleTranslit": "darwāza-ye bāz",
+  "titleEn": "The open door",
+  "sentences": [
+    {
+      "target": "دروازه خانه ما باز است.",
+      "translit": "darwāza-ye khāna-ye mā bāz ast.",
+      "en": "Our house door is open.",
+      "tokens": [
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "خانه",
+          "lexemeId": "lx-0036"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "باز",
+          "lexemeId": "lx-0199"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "یک نفر از دروازه می‌آید.",
+      "translit": "yak nafar az darwāza mēāyad.",
+      "en": "A person comes through the door.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "نفر",
+          "lexemeId": "lx-0329"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "دروازه",
+          "lexemeId": "lx-0197"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "او مانده و مریض است.",
+      "translit": "ō mānda wa marīz ast.",
+      "en": "He is tired and ill.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "مانده",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "مریض",
+          "lexemeId": "lx-0262"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما او را در اتاق می‌مانیم.",
+      "translit": "mā ō rā dar utāq mēmānēm.",
+      "en": "We put him in the room.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "اتاق",
+          "lexemeId": "lx-0196"
+        },
+        {
+          "surface": "می‌مانیم",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "دل ما به او می‌سوزد.",
+      "translit": "dil-e mā ba ō mēsōzad.",
+      "en": "We feel for him.",
+      "tokens": [
+        {
+          "surface": "دل",
+          "lexemeId": "lx-0124"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "می‌سوزد",
+          "lexemeId": "lx-0371"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0003",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0036",
+    "lx-0090",
+    "lx-0108",
+    "lx-0124",
+    "lx-0196",
+    "lx-0197",
+    "lx-0199",
+    "lx-0234",
+    "lx-0262",
+    "lx-0329",
+    "lx-0371"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 132
+}

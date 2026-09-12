@@ -1,0 +1,158 @@
+{
+  "id": "tx-seed-l2-133",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "چشم و دل",
+  "titleTranslit": "chashm wa dil",
+  "titleEn": "Eye and heart",
+  "sentences": [
+    {
+      "target": "چشم من امروز سرخ است.",
+      "translit": "chashm-e man emrōz surkh ast.",
+      "en": "My eye is red today.",
+      "tokens": [
+        {
+          "surface": "چشم",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من دیشب خوب نمی‌خوابم.",
+      "translit": "man dēshab khōb namēkhābam.",
+      "en": "I do not sleep well at night.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "دیشب",
+          "lexemeId": "lx-6240"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "نمی‌خوابم",
+          "lexemeId": "lx-0159"
+        }
+      ]
+    },
+    {
+      "target": "حالا من بسیار مانده هستم.",
+      "translit": "hālā man bisyār mānda hastam.",
+      "en": "Now I am very tired.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "مانده",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "هستم",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "دل من آرام نیست.",
+      "translit": "dil-e man ārām nēst.",
+      "en": "My heart is not calm.",
+      "tokens": [
+        {
+          "surface": "دل",
+          "lexemeId": "lx-0124"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "آرام",
+          "lexemeId": "lx-0214"
+        },
+        {
+          "surface": "نیست",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "من امشب زود می‌خوابم.",
+      "translit": "man emshab zūd mēkhābam.",
+      "en": "Tonight I sleep early.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "امشب",
+          "lexemeId": "lx-0201"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "می‌خوابم",
+          "lexemeId": "lx-0159"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0010",
+    "lx-0011",
+    "lx-0043",
+    "lx-0046",
+    "lx-0063",
+    "lx-0096",
+    "lx-0108",
+    "lx-0123",
+    "lx-0124",
+    "lx-0142",
+    "lx-0159",
+    "lx-0167",
+    "lx-0201",
+    "lx-0214",
+    "lx-0356",
+    "lx-6240"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 133
+}

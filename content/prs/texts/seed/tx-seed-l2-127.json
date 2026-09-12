@@ -1,0 +1,184 @@
+{
+  "id": "tx-seed-l2-127",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "سیب و انار",
+  "titleTranslit": "sēb wa anār",
+  "titleEn": "Apple and pomegranate",
+  "sentences": [
+    {
+      "target": "در باغ ما درخت سیب است.",
+      "translit": "dar bāgh-e mā darakht-e sēb ast.",
+      "en": "There is an apple tree in our garden.",
+      "tokens": [
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "باغ",
+          "lexemeId": "lx-0139"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "درخت",
+          "lexemeId": "lx-0138"
+        },
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "سیب این درخت شیرین است.",
+      "translit": "sēb-e īn darakht shīrīn ast.",
+      "en": "The apple of this tree is sweet.",
+      "tokens": [
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "درخت",
+          "lexemeId": "lx-0138"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "یک درخت انار هم اینجا است.",
+      "translit": "yak darakht-e anār ham īnjā ast.",
+      "en": "A pomegranate tree is here too.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "درخت",
+          "lexemeId": "lx-0138"
+        },
+        {
+          "surface": "انار",
+          "lexemeId": "lx-0116"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "انار سرخ و سیب سبز است.",
+      "translit": "anār surkh wa sēb sabz ast.",
+      "en": "The pomegranate is red and the apple is green.",
+      "tokens": [
+        {
+          "surface": "انار",
+          "lexemeId": "lx-0116"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "سبز",
+          "lexemeId": "lx-0145"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من سیب شیرین را می‌خورم.",
+      "translit": "man sēb-e shīrīn rā mēkhuram.",
+      "en": "I eat the sweet apple.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سیب",
+          "lexemeId": "lx-0114"
+        },
+        {
+          "surface": "شیرین",
+          "lexemeId": "lx-0120"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌خورم",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0006",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0024",
+    "lx-0025",
+    "lx-0091",
+    "lx-0114",
+    "lx-0116",
+    "lx-0120",
+    "lx-0138",
+    "lx-0139",
+    "lx-0142",
+    "lx-0145",
+    "lx-0174"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 127
+}

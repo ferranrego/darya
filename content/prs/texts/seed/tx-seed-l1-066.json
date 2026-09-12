@@ -1,0 +1,165 @@
+{
+  "id": "tx-seed-l1-066",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "سر و پای",
+  "titleTranslit": "sar wa pāy",
+  "titleEn": "Head and foot",
+  "sentences": [
+    {
+      "target": "سر من امروز درد می‌کند.",
+      "translit": "sar-e man emrōz dard mēkunad.",
+      "en": "My head hurts today.",
+      "tokens": [
+        {
+          "surface": "سر",
+          "lexemeId": "lx-0122"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "درد",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "پای من هم درد می‌کند.",
+      "translit": "pāy-e man ham dard mēkunad.",
+      "en": "My foot hurts too.",
+      "tokens": [
+        {
+          "surface": "پای",
+          "lexemeId": "lx-0125"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "درد",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "حال من بد است.",
+      "translit": "hāl-e man bad ast.",
+      "en": "My condition is bad.",
+      "tokens": [
+        {
+          "surface": "حال",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "بد",
+          "lexemeId": "lx-0064"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "من به داکتر رفته می‌توانم.",
+      "translit": "man ba dāktar rafta mētawānam.",
+      "en": "I can go to the doctor.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "رفته",
+          "lexemeId": "lx-0089"
+        },
+        {
+          "surface": "می‌توانم",
+          "lexemeId": "lx-0158"
+        }
+      ]
+    },
+    {
+      "target": "فردا من جور می‌شوم.",
+      "translit": "fardā man jōr mēshawam.",
+      "en": "Tomorrow I will be well.",
+      "tokens": [
+        {
+          "surface": "فردا",
+          "lexemeId": "lx-0044"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "می‌شوم",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0010",
+    "lx-0011",
+    "lx-0024",
+    "lx-0043",
+    "lx-0044",
+    "lx-0064",
+    "lx-0089",
+    "lx-0097",
+    "lx-0106",
+    "lx-0122",
+    "lx-0125",
+    "lx-0149",
+    "lx-0158",
+    "lx-0209",
+    "lx-0210",
+    "lx-0325"
+  ],
+  "newWords": [
+    "lx-0325"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 66
+}

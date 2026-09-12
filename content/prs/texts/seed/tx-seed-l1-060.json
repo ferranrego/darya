@@ -1,0 +1,156 @@
+{
+  "id": "tx-seed-l1-060",
+  "formatVersion": "1.5.0",
+  "level": "L1",
+  "titleTarget": "چشم و دست",
+  "titleTranslit": "chashm wa dast",
+  "titleEn": "Eye and hand",
+  "sentences": [
+    {
+      "target": "چشم من خوب می‌بیند.",
+      "translit": "chashm-e man khōb mēbīnad.",
+      "en": "My eye sees well.",
+      "tokens": [
+        {
+          "surface": "چشم",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "می‌بیند",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "دست من کار می‌کند.",
+      "translit": "dast-e man kār mēkunad.",
+      "en": "My hand works.",
+      "tokens": [
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من یک چیز می‌بینم.",
+      "translit": "man yak chīz mēbīnam.",
+      "en": "I see a thing.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "می‌بینم",
+          "lexemeId": "lx-0092"
+        }
+      ]
+    },
+    {
+      "target": "این چیز کهنه است.",
+      "translit": "īn chīz kuhna ast.",
+      "en": "This thing is old.",
+      "tokens": [
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "چشم و دست من جور است.",
+      "translit": "chashm wa dast-e man jōr ast.",
+      "en": "My eye and hand are well.",
+      "tokens": [
+        {
+          "surface": "چشم",
+          "lexemeId": "lx-0123"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "دست",
+          "lexemeId": "lx-0121"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0106"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0025",
+    "lx-0063",
+    "lx-0068",
+    "lx-0079",
+    "lx-0092",
+    "lx-0097",
+    "lx-0106",
+    "lx-0121",
+    "lx-0123",
+    "lx-0164"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 60
+}
