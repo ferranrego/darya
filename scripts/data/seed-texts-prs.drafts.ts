@@ -15,7 +15,7 @@ import type { SeedTextSource } from "./seed-text-source.ts";
  *    Afghan (اطفال for اطفال, بیروبار for بیروبار, which another text here
  *    already uses correctly).
  *  - **Iranian transliteration.** `l3-003` .. `l3-007` have every long ā and
- *    every majhul ē/ō flattened out: `emroz` for `emrōz`, `khob` for `khūb`,
+ *    every majhul ē/ō flattened out: `emroz` for `emrōz`, `dost` for `dōst`,
  *    `seb` for `sēb`, `merawem` for `mērawēm`. PEDAGOGY §9 calls this the
  *    single defect the product cares most about, and since the app has no
  *    audio, that Latin line *is* the pronunciation a learner internalises.

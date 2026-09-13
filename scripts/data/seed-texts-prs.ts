@@ -787,7 +787,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "دوستی که در قریه ما کلان شد، حالا در کابل زندگی می‌کند.", translit: "dōstē ki dar qarya-ye mā kalān shud, hālā dar kābul zindagī mēkunad.", en: "A friend who grew up in our village now lives in Kabul." },
       { target: "او سال گذشته به آنجا رفته است.", translit: "ō sāl-e guzashta ba ānjā rafta ast.", en: "He went there last year." },
-      { target: "اگر کارش خوب پیش برود، فامیلش را هم به کابل می‌آورد.", translit: "agar kārash khūb pēsh berawad, fāmīlash rā ham ba kābul mēāwarad.", en: "If his work goes well, he will bring his family to Kabul too." },
+      { target: "اگر کارش خوب پیش برود، فامیلش را هم به کابل می‌آورد.", translit: "agar kārash khūb pēsh burawad, fāmīlash rā ham ba kābul mēāwarad.", en: "If his work goes well, he will bring his family to Kabul too." },
       { target: "خانه نو او در شهر ساخته شده است.", translit: "khāna-ye naw-e ō dar shahr sākhta shuda ast.", en: "His new house has been built in the city." },
       { target: "هفته پیش او به ما زنگ زد.", translit: "hafta pēsh ō ba mā zang zad.", en: "Last week he called us." },
       { target: "او گفت که دلش برای قریه تنگ شده است.", translit: "ō guft ki delash barā-ye qarya tang shuda ast.", en: "He said that he has become homesick for the village." },
@@ -875,7 +875,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "دوستان او گفتند که این کار خطر دارد و ممکن است ضرر کند.", translit: "dōstān-e ō guftand ki īn kār khatar dārad wa mumken ast zarar kunad.", en: "His friends said that this was risky and he might suffer a loss." },
       { target: "اما او فکر کرد که باید دل به دریا بزند.", translit: "ammā ō fikr kard ki bāyad dil ba daryā bezanad.", en: "But he thought that he had to take the plunge." },
       { target: "او با یک تاجر دیگر در هرات موافقت کرد که با هم کار کنند.", translit: "ō bā yak tājir-e dīgar dar herāt muwāfiqat kard ki bā ham kār kunand.", en: "He agreed with another trader in Herat that they would work together." },
-      { target: "اگر این تجارت خوب پیش برود، هر دو تاجر سود خوبی می‌برند.", translit: "agar īn tijārat khūb pēsh berawad, har dū tājir sūd-e khūbī mēbarand.", en: "If this trade goes well, both traders will earn a good profit." },
+      { target: "اگر این تجارت خوب پیش برود، هر دو تاجر سود خوبی می‌برند.", translit: "agar īn tijārat khūb pēsh burawad, har dū tājir sūd-e khūbē mēbarand.", en: "If this trade goes well, both traders will earn a good profit." },
       { target: "بعد از یک سال، تجارت آن‌ها موفق شد و دکانی دیگر هم باز کردند.", translit: "ba'd az yak sāl, tijārat-e ānhā muwaffaq shud wa dukānī dīgar ham bāz kardand.", en: "After a year, their business succeeded, and they also opened another shop." },
       { target: "مردم گفتند که تصمیم تاجر درست بود.", translit: "mardum guftand ki tasmīm-e tājir durust būd.", en: "People said that the trader's decision was right." },
     ],
