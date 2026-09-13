@@ -250,26 +250,55 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
       const suffixes = [
         "یم", "ید", "ند", // verb endings (we, you pl, they)
         "ام", "ای", "ایم", "اید", "اند", // verb endings after vowels
+        "ات", "اش", // possessives after a silent-h noun (خانه‌ات، خانه‌اش) - ZWNJ only, see below
         "ها", "ان", // plurals
+        // Plural possessives (کتابتان، خانه‌شان). After "ان" on purpose: a
+        // surface like درختان must be tried as the plural of درخت before it
+        // is tried as درخ + تان, and the plural reading is the one that wins
+        // when both roots exist.
+        "مان", "تان", "شان",
         "تر", "ترین", // comparative / superlative
         "م", "ت", "ش", "ی", // possessives / singular verb endings
       ];
 
+      // -at and -ash with their alef are the silent-h spelling, which always
+      // carries the ZWNJ (خانه‌ات). Without it the same letters are an Arabic
+      // plural or part of the stem - امکانات "facilities" is not "your امکان"
+      // (possibility), and it is not in the lexicon, so nothing else would
+      // stop that split - and after a consonant the enclitic
+      // is written bare (کتابت) and already reached by "ت"/"ش".
+      const zwnjOnly = new Set(["ات", "اش"]);
+
+      // -mān/-tān/-shān are written bare, so unlike -at/-ash they cannot be
+      // told apart from stem letters by spelling - and -stān is also the
+      // place-noun suffix. پستان "breast" peeled to پس "then", and بوستان
+      // "garden" to بوس, the imperative of بوسیدن. Neither word is in the
+      // lexicon, so nothing outranked the wrong reading. A possessive sits on
+      // a noun, pronoun, determiner or preposition (کتابتان، خودتان، همه‌شان،
+      // برایتان), not a bare adverb or verb stem, so a root that resolves to
+      // one of those is treated as a false split and left unresolved. The
+      // known cost: پیش is tagged adverb, so پیشتان stays unresolved, as it
+      // was before these suffixes existed.
+      const pluralPossessives = new Set(["مان", "تان", "شان"]);
+      const fits = (suffix: string, m: LexiconEntry) =>
+        !pluralPossessives.has(suffix) || (m.pos !== "verb" && m.pos !== "adverb");
+
       for (const suffix of suffixes) {
         if (key.endsWith(suffix) && key.length > suffix.length + 1) {
           const root = key.slice(0, -suffix.length);
+          if (zwnjOnly.has(suffix) && !root.endsWith(ZWNJ)) continue;
           // Strip ZWNJ if it was placed immediately before the suffix (e.g., خانه-ام)
           const cleanRoot = root.endsWith(ZWNJ) ? root.slice(0, -1) : root;
 
           match = lookup(cleanRoot);
-          if (match) return match;
+          if (match && fits(suffix, match)) return match;
 
           // Perfect participle safety net (uncommon verbs without stems):
           // strip the participle's ه to reach the past stem, e.g. an object
           // enclitic form like دیده‌مش → دیده → دید.
           if (cleanRoot.endsWith("ه") && cleanRoot.length > 2) {
             match = lookup(cleanRoot.slice(0, -1));
-            if (match) return match;
+            if (match && fits(suffix, match)) return match;
           }
 
           // Stacked suffixes: standard Dari only stacks plural -ها/-ان
@@ -301,7 +330,7 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
                     ? pluralRoot.slice(0, -1)
                     : pluralRoot;
                   match = lookup(cleanPluralRoot);
-                  if (match) return match;
+                  if (match && fits(suffix, match)) return match;
                 }
               }
             }

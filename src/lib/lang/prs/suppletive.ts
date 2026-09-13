@@ -10,8 +10,10 @@ import { ZWNJ } from "./normalize.ts";
  *
  *   - budan's present is هست/است, not *بوم, and its subjunctive is باش-
  *   - impersonal مې‌توان is a fixed form with no personal ending
+ *   - the modal باید has no infinitive, so its negative نباید has no stems
  *
- * The map is form → infinitive of the lexeme the form belongs to, so a learner
+ * The map is form → infinitive of the lexeme the form belongs to (for باید,
+ * which has no infinitive, its headword), so a learner
  * tapping باشم is shown بودن. Forms carrying a ZWNJ are listed in both the
  * ZWNJ and joined spellings, since `matchKey` does not fold ZWNJ and real text
  * uses both (می‌توان and میتوان).
@@ -79,4 +81,12 @@ export const SUPPLETIVE_FORMS: Record<string, string> = withZwnjVariants({
   // derived توان- paradigm does not cover it.
   [`می${ZWNJ}توان`]: "توانستن",
   [`نمی${ZWNJ}توان`]: "توانستن",
+
+  // The modal باید is a headword in its own right, not an infinitive (see
+  // NON_INFINITIVE_HEADWORDS in lexicon-index.ts), so no paradigm is ever
+  // generated for it and its negative نباید "must not" resolved to nothing.
+  // Listed rather than handled by stripping ن in the stemmer: a ن- rule would
+  // run on نان, نام and نه. The value is the headword the form belongs to,
+  // which the caller looks up exactly as it does an infinitive.
+  نباید: "باید",
 });

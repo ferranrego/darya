@@ -120,6 +120,78 @@ describe("resolve against the real lexicon", () => {
     expect(idx.resolve("خانه‌ام")?.target).toBe("خانه");
   });
 
+  // The full possessive set, not just -am. خانه‌ام resolved while خانه‌ات,
+  // خانه‌تان and کتابتان did not, so a learner tapping "your house" in the
+  // reader was told it was a name. Both spellings: after a silent-h noun the
+  // enclitic follows a ZWNJ and takes an alef (-at, -ash); after a consonant
+  // it attaches directly. The plural persons (-mān, -tān, -shān) had no
+  // suffix at all in the stemmer.
+  const possessives: Array<[string, string]> = [
+    ...["ام", "ات", "اش", "مان", "تان", "شان"].map((s): [string, string] => [`خانه${ZWNJ}${s}`, "خانه"]),
+    ...["م", "ت", "ش", "مان", "تان", "شان"].map((s): [string, string] => [`کتاب${s}`, "کتاب"]),
+    ["دوستتان", "دوست"], // a ت-final noun under -tān
+    ["دوستانشان", "دوست"], // plural underneath a plural possessive
+    ["نامه‌هایتان", "نامه"], // plural + ezafe glide + -tān
+    ["لباستان", "لباس"], // a س-final noun: -tān here is not the place suffix -stān
+    ["خودتان", "خود"], // pronoun
+    ["همه‌شان", "همه"], // determiner
+  ];
+  it.each(possessives)("possessive %s → %s", (surface, headword) => {
+    expect(idx.resolve(surface)?.target).toBe(headword);
+  });
+
+  // The direction the fix could break: words that merely END in the new
+  // suffixes, or begin with ن, must keep their own entry and must not be
+  // peeled into a different one (مهمان → مه "fog", پریشان → پری, نان → ان).
+  const ownEntry = [
+    "دوست", "درست", "خوش", "نان", "نام", "نه",
+    "مهمان", "سازمان", "زمان", "داستان", "پریشان", "نشان", "ایشان",
+  ];
+  it.each(ownEntry)("%s keeps resolving to its own entry", (word) => {
+    expect(idx.resolve(word)?.targetNormalized).toBe(word);
+  });
+
+  it("does not split a -stān word the lexicon lacks into an adverb or verb stem", () => {
+    // Both are in lexicon example sentences (سرطان پستان, بوستان سعدی) and
+    // resolved to پس "then" and بوسیدن "to kiss" on the first cut of this fix.
+    expect(idx.resolve("پستان")).toBeNull();
+    expect(idx.resolve("بوستان")).toBeNull();
+  });
+
+  it("does not peel a bare -āt or -āsh without the ZWNJ", () => {
+    // امکانات "facilities" is not in the lexicon but امکان "possibility" is:
+    // an Arabic -āt plural, not "your امکان", and not the same word to a
+    // learner. Only the ZWNJ spelling marks -āt/-āsh as an enclitic.
+    expect(idx.resolve("امکانات")).toBeNull();
+    expect(idx.resolve("کتاباش")).toBeNull();
+    expect(idx.resolve(`کتاب${ZWNJ}اش`)?.target).toBe("کتاب");
+  });
+
+  it("every headword ending in ت, ش, مان, تان or شان still resolves to itself", () => {
+    const tails = entries.filter((e) => /(ت|ش|مان|تان|شان)$/.test(e.targetNormalized));
+    expect(tails.length).toBeGreaterThan(300);
+    for (const e of tails) {
+      expect(idx.resolve(e.targetNormalized)?.targetNormalized, e.targetNormalized).toBe(e.targetNormalized);
+    }
+  });
+
+  // Negation. باید is a modal, not an infinitive, so the paradigm generator
+  // never produced its negative - نباید ("must not") was unresolvable while
+  // every generated verb's ن- form resolved. Assert both kinds together.
+  const negated: Array<[string, string]> = [
+    ["نباید", "باید"],
+    ["نمی‌خورم", "خوردن"],
+    ["نرفتم", "رفتن"],
+    ["نکردم", "کردن"],
+    ["نخواهم", "خواستن"],
+    ["نیست", "بودن"],
+    ["نباشد", "بودن"],
+    ["نمی‌توان", "توانستن"],
+  ];
+  it.each(negated)("negated %s → %s", (surface, headword) => {
+    expect(idx.resolve(surface)?.target).toBe(headword);
+  });
+
   it("still returns null for actual names", () => {
     expect(idx.resolve("فرشته‌جان")).toBeNull();
   });
