@@ -50,8 +50,8 @@
       "grammarAllowed": [
         "present tense mē- verbs, always spelled with the ZWNJ (می‌روم, mērawam), never a plain space or fused together (never میروم or می روم); present stems are irregular and must not be guessed from the infinitive",
         "the object marker را marks a definite/specific direct object and is dropped for a generic or indefinite one: من سیب را می‌خورم (I eat the apple - a specific one) but نان می‌خورم (I eat bread - generically) - this is a property of what is meant, not of the noun itself",
-        "the indefinite marker ی (yak/-ی) never combines with ezafe on the same noun: یک کتاب or کتابی, never both at once",
-        "ham, besyār, negation with na-/namē- (نمی‌روم, nemērawam - same ZWNJ rule as the affirmative)",
+        "the indefinite suffix ی (-ē: کتابی, ketābē) and an ezafe never sit on the same noun; with an adjective the -ē goes on the adjective instead (کتاب نوی, ketāb-e nawē - never ketābē-ye naw). یک and -ی may combine (یک روزی, yak rōzē, one day), though either alone is enough",
+        "ham, besyār, negation with na-/namē- (نمی‌روم, namērawam - same ZWNJ rule as the affirmative)",
         "داشتن (to have) is suppletive like بودن: its present is bare دارم/داری/دارد, never a mē- form - never می‌دارم"
       ],
       "avgSentenceWords": 6,
@@ -81,7 +81,7 @@
         "simple past and present tenses",
         "future with mē- + context",
         "subordinate clauses with ke",
-        "subjunctive (bāyad berawad)",
+        "subjunctive (bāyad burawad)",
         "comparatives (-tar)"
       ],
       "avgSentenceWords": 7,
