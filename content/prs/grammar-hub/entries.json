@@ -3760,6 +3760,1853 @@
         "gl-10",
         "gl-04"
       ]
+    },
+    {
+      "id": "gh-23",
+      "slug": "subjunctive",
+      "level": "B1",
+      "rank": 1,
+      "title": "The subjunctive: the bu- form",
+      "summary": "The bu- form is for actions that are not real yet: wanted, possible or planned. shāyad biyāyad, maybe he'll come; raftam tā nān bukharam, I went to buy bread.",
+      "sample": {
+        "target": "شاید بیاید",
+        "translit": "shāyad biyāyad"
+      },
+      "aliases": [
+        "subjunctive",
+        "subjunctive mood",
+        "subjuntive",
+        "subjunctve",
+        "bu form",
+        "the bu form",
+        "be form",
+        "maybe",
+        "perhaps",
+        "might",
+        "may",
+        "possible",
+        "possibility",
+        "so that",
+        "in order to",
+        "shayad",
+        "shāyad",
+        "mumken",
+        "mumkin",
+        "ta",
+        "tā",
+        "basham",
+        "bāsham",
+        "bashad",
+        "شاید",
+        "ممکن",
+        "تا",
+        "باشد",
+        "باشم"
+      ],
+      "keywords": [
+        "wish",
+        "purpose",
+        "not yet real",
+        "uncertain",
+        "it is better that"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "For what is not real yet",
+          "body": "You met the bu- form after 'want', 'can' and 'must'. It is called the subjunctive, and those three are only the start. Dari uses it whenever an action is wished for, possible, needed or planned, but has not happened."
+        },
+        {
+          "type": "table",
+          "heading": "The forms, with khurdan (to eat)",
+          "columns": [
+            "Person",
+            "Subjunctive"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "bukhuram"
+            ],
+            [
+              "tu, you",
+              "bukhurī"
+            ],
+            [
+              "ō, he or she",
+              "bukhurad"
+            ],
+            [
+              "mā, we",
+              "bukhurēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "bukhurēd"
+            ],
+            [
+              "ānhā, they",
+              "bukhurand"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Words that call for it",
+          "columns": [
+            "After",
+            "Example"
+          ],
+          "rows": [
+            [
+              "mēkhāham, mētawānam, bāyad",
+              "bāyad burawam, I must go"
+            ],
+            [
+              "shāyad, maybe",
+              "shāyad biyāyad, maybe he'll come"
+            ],
+            [
+              "mumken ast ke, it may be that",
+              "mumken ast ke dēr biyāyad, he may come late"
+            ],
+            [
+              "tā, so that",
+              "tā nān bukharam, to buy bread"
+            ],
+            [
+              "bihtar ast ke, it is better to",
+              "bihtar ast ke narawī, better not to go"
+            ],
+            [
+              "agar, if",
+              "agar biyāyī, if you come"
+            ],
+            [
+              "pēsh az ān ke, before",
+              "pēsh az ān ke burawam, before I go"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "شاید فردا بیاید",
+              "translit": "shāyad fardā biyāyad",
+              "en": "Maybe he'll come tomorrow.",
+              "highlight": "شاید"
+            },
+            {
+              "target": "به بازار رفتم تا نان بخرم",
+              "translit": "ba bāzār raftam tā nān bukharam",
+              "en": "I went to the bazaar to buy bread.",
+              "highlight": "تا"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Someone else does it: ke",
+          "body": "When the person who wants is not the person who acts, the second verb gets its own person, usually after ke (that): mēkhāham ke tu biyāyī, I want you to come."
+        },
+        {
+          "type": "rule",
+          "heading": "'To be': bāsham",
+          "body": "būdan, to be, has its own subjunctive with no bu-: bāsham, bāshī, bāshad, bāshēm, bāshēd, bāshand."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "شاید او در خانه باشد",
+              "translit": "shāyad ō dar khāna bāshad",
+              "en": "Maybe she is at home.",
+              "highlight": "باشد"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Not",
+          "body": "For 'not', na- takes the place of bu-: narawam, nakhuram. bāsham simply adds na-: nabāsham. A compound verb puts na- on the helper: kār nakunam."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "نبخوری",
+            "translit": "nabukhurī"
+          },
+          "right": {
+            "target": "بهتر است که نخوری",
+            "translit": "bihtar ast ke nakhurī",
+            "en": "It is better not to eat it."
+          },
+          "why": "na- replaces bu-. The two do not go on the same verb."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "رفتم تا نان خریدن",
+            "translit": "raftam tā nān kharīdan"
+          },
+          "right": {
+            "target": "رفتم تا نان بخرم",
+            "translit": "raftam tā nān bukharam",
+            "en": "I went to buy bread."
+          },
+          "why": "English says 'to buy', but after tā Dari needs a full verb with its own ending."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "من شاید بروم",
+            "translit": "man shāyad burawam"
+          },
+          "spoken": {
+            "target": "مه شاید بروم",
+            "translit": "ma shāyad burum"
+          },
+          "note": "Kabul speech says ma for man and shortens burawam to burum."
+        }
+      ],
+      "related": [
+        "want-can-must",
+        "commands",
+        "conditionals",
+        "time-clauses"
+      ],
+      "lessonIds": [
+        "gl-31",
+        "gl-32",
+        "gl-33"
+      ]
+    },
+    {
+      "id": "gh-24",
+      "slug": "conjunctions",
+      "level": "B1",
+      "rank": 2,
+      "title": "Linking words: but, because, then",
+      "summary": "walē or ammā (but) and chūn or zērā (because) join two whole sentences: naraftam, chūn marīz būdam, I didn't go because I was sick. awwal and ba'd put events in order.",
+      "sample": {
+        "target": "چون مریض بودم",
+        "translit": "chūn marīz būdam"
+      },
+      "aliases": [
+        "conjunction",
+        "conjunctions",
+        "linking words",
+        "linkers",
+        "connectors",
+        "connecting words",
+        "and",
+        "or",
+        "but",
+        "because",
+        "because of",
+        "since",
+        "so",
+        "that's why",
+        "then",
+        "first",
+        "wa",
+        "va",
+        "ya",
+        "yā",
+        "wale",
+        "walē",
+        "wali",
+        "vali",
+        "amma",
+        "ammā",
+        "ama",
+        "chun",
+        "chūn",
+        "chon",
+        "zera",
+        "zērā",
+        "zira",
+        "pas",
+        "awwal",
+        "awal",
+        "bad",
+        "ba'd",
+        "barā-ye hamīn",
+        "baraye hamin",
+        "و",
+        "یا",
+        "ولی",
+        "اما",
+        "چون",
+        "زیرا",
+        "پس",
+        "اول",
+        "بعد",
+        "برای همین"
+      ],
+      "keywords": [
+        "reason",
+        "cause",
+        "contrast",
+        "story",
+        "sequence",
+        "join sentences"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "And, or",
+          "body": "wa (and) and yā (or) join words or whole sentences, as in English: nān wa chāy, bread and tea; chāy yā āb, tea or water."
+        },
+        {
+          "type": "rule",
+          "heading": "But: walē, ammā",
+          "body": "walē and ammā both mean 'but'. They start the second half of the sentence."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "هوا سرد بود ولی ما بیرون رفتیم",
+              "translit": "hawā sard būd walē mā bērōn raftēm",
+              "en": "It was cold, but we went out.",
+              "highlight": "ولی"
+            },
+            {
+              "target": "او را دیدم اما با او گپ نزدم",
+              "translit": "ō rā dīdam ammā bā ō gap nazadam",
+              "en": "I saw him, but I didn't talk to him.",
+              "highlight": "اما"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Because: chūn, zērā",
+          "body": "chūn and zērā both mean 'because'. zērā is more formal and only starts the second half. chūn can also come first, like English 'since'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "امروز به مکتب نرفتم، چون مریض بودم",
+              "translit": "emrōz ba maktab naraftam, chūn marīz būdam",
+              "en": "I didn't go to school today because I was sick.",
+              "highlight": "چون"
+            },
+            {
+              "target": "چون باران می‌بارید، در خانه ماندیم",
+              "translit": "chūn bārān mēbārīd, dar khāna māndēm",
+              "en": "Since it was raining, we stayed at home.",
+              "highlight": "چون"
+            },
+            {
+              "target": "او نیامد، زیرا کار داشت",
+              "translit": "ō nayāmad, zērā kār dāsht",
+              "en": "He didn't come, because he had work.",
+              "highlight": "زیرا"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "So: barā-ye hamīn, pas",
+          "body": "For 'so' or 'that's why', say barā-ye hamīn at the start of the second half. pas also means 'so', often at the start of a question: pas chī kunēm? So what shall we do?"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "مریض بودم، برای همین نرفتم",
+              "translit": "marīz būdam, barā-ye hamīn naraftam",
+              "en": "I was sick, so I didn't go.",
+              "highlight": "برای همین"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Telling a story in order",
+          "body": "awwal (first), ba'd (then) and ba'd az ān (after that) put past events in order. The verbs stay in the simple past."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اول نان خوردم، بعد به مکتب رفتم",
+              "translit": "awwal nān khurdam, ba'd ba maktab raftam",
+              "en": "First I ate, then I went to school.",
+              "highlight": "اول"
+            },
+            {
+              "target": "بعد از آن به خانه آمدم",
+              "translit": "ba'd az ān ba khāna āmadam",
+              "en": "After that I came home.",
+              "highlight": "بعد از آن"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "زیرا مریض بودم، نرفتم",
+            "translit": "zērā marīz būdam, naraftam"
+          },
+          "right": {
+            "target": "چون مریض بودم، نرفتم",
+            "translit": "chūn marīz būdam, naraftam",
+            "en": "Since I was sick, I didn't go."
+          },
+          "why": "zērā only starts the second half. To give the reason first, use chūn."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "چون باران نرفتم",
+            "translit": "chūn bārān naraftam"
+          },
+          "right": {
+            "target": "به خاطر باران نرفتم",
+            "translit": "ba khātir-e bārān naraftam",
+            "en": "I didn't go because of the rain."
+          },
+          "why": "chūn needs a whole sentence after it. Before a single noun, 'because of' is ba khātir-e."
+        }
+      ],
+      "related": [
+        "time-clauses",
+        "reported-speech",
+        "simple-past"
+      ],
+      "lessonIds": [
+        "gl-41",
+        "gl-38"
+      ]
+    },
+    {
+      "id": "gh-25",
+      "slug": "quantifiers",
+      "level": "B1",
+      "rank": 3,
+      "title": "Every, all, none: har, hama, hēch",
+      "summary": "har (every) takes a singular noun: har rōz, every day. hama means all or everyone. hēch (no, none) needs a negative verb: hēch kas nayāmad, nobody came.",
+      "sample": {
+        "target": "هیچ کس",
+        "translit": "hēch kas"
+      },
+      "aliases": [
+        "quantifier",
+        "quantifiers",
+        "every",
+        "each",
+        "all",
+        "everyone",
+        "everybody",
+        "everything",
+        "everywhere",
+        "nobody",
+        "no one",
+        "nothing",
+        "none",
+        "nowhere",
+        "never",
+        "some",
+        "a few",
+        "several",
+        "har",
+        "hama",
+        "hame",
+        "hēch",
+        "hech",
+        "hich",
+        "heech",
+        "hēch kas",
+        "hich kas",
+        "chand",
+        "ba'zē",
+        "bazi",
+        "baze",
+        "bazē",
+        "هر",
+        "همه",
+        "هیچ",
+        "هیچ کس",
+        "چند",
+        "بعضی"
+      ],
+      "keywords": [
+        "amount",
+        "quantity",
+        "any",
+        "not any",
+        "how many"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Every: har",
+          "body": "har means 'every' or 'each'. The noun after it stays singular, and so does the verb: har shāgerd ketāb dārad, every student has a book."
+        },
+        {
+          "type": "table",
+          "heading": "Built on har and hēch",
+          "columns": [
+            "Dari",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "har rōz",
+              "every day"
+            ],
+            [
+              "har kas",
+              "everyone"
+            ],
+            [
+              "har chīz",
+              "everything"
+            ],
+            [
+              "har jā",
+              "everywhere"
+            ],
+            [
+              "hēch kas",
+              "nobody"
+            ],
+            [
+              "hēch chīz",
+              "nothing"
+            ],
+            [
+              "hēch jā",
+              "nowhere"
+            ],
+            [
+              "hēch waqt",
+              "never"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "هر روز چای می‌خورم",
+              "translit": "har rōz chāy mēkhuram",
+              "en": "I drink tea every day.",
+              "highlight": "هر روز"
+            },
+            {
+              "target": "هر کس این را می‌داند",
+              "translit": "har kas īn rā mēdānad",
+              "en": "Everyone knows this.",
+              "highlight": "هر کس"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "None: hēch + not",
+          "body": "hēch means 'no' or 'not any'. Unlike English, the verb is negative as well: hēch kas nayāmad, nobody came."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "هیچ کس نیامد",
+              "translit": "hēch kas nayāmad",
+              "en": "Nobody came.",
+              "highlight": "هیچ کس"
+            },
+            {
+              "target": "امروز هیچ چیز نخوردم",
+              "translit": "emrōz hēch chīz nakhurdam",
+              "en": "I ate nothing today.",
+              "highlight": "نخوردم"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "هیچ کس آمد",
+            "translit": "hēch kas āmad"
+          },
+          "right": {
+            "target": "هیچ کس نیامد",
+            "translit": "hēch kas nayāmad",
+            "en": "Nobody came."
+          },
+          "why": "English allows only one 'no'. Dari needs both: hēch and a negative verb."
+        },
+        {
+          "type": "rule",
+          "heading": "All: hama",
+          "body": "hama on its own means 'everyone', with a plural verb. Before a noun or pronoun it usually takes the ezafe: hama-ye shāgerdān, all the students; hama-ye mā, all of us."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "همه آمدند",
+              "translit": "hama āmadand",
+              "en": "Everyone came.",
+              "highlight": "همه"
+            },
+            {
+              "target": "همه ما در کابل زندگی می‌کنیم",
+              "translit": "hama-ye mā dar kābul zindagī mēkunēm",
+              "en": "All of us live in Kabul.",
+              "highlight": "همه ما"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "A few, some: chand, ba'zē",
+          "body": "chand means 'a few' and takes a singular noun: chand rōz, a few days. ba'zē means 'some' and is often followed by az: ba'zē az shāgerdān, some of the students."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "چند روز در کابل ماندم",
+              "translit": "chand rōz dar kābul māndam",
+              "en": "I stayed in Kabul for a few days.",
+              "highlight": "چند روز"
+            },
+            {
+              "target": "بعضی از شاگردان نیامدند",
+              "translit": "ba'zē az shāgerdān nayāmadand",
+              "en": "Some of the students didn't come.",
+              "highlight": "بعضی"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "هر روزها",
+            "translit": "har rōz-hā"
+          },
+          "right": {
+            "target": "هر روز",
+            "translit": "har rōz",
+            "en": "every day"
+          },
+          "why": "har is followed by a singular noun, just like English 'every day'."
+        }
+      ],
+      "related": [
+        "indefinite",
+        "negation",
+        "plurals"
+      ],
+      "lessonIds": [
+        "gl-44"
+      ]
+    },
+    {
+      "id": "gh-26",
+      "slug": "relative-clauses",
+      "level": "B1",
+      "rank": 4,
+      "title": "Relative clauses: mardē ke",
+      "summary": "To say 'the man who came', add -ē to the noun and follow it with ke: mardē ke āmad. ke does the work of who, which and that.",
+      "sample": {
+        "target": "مردی که آمد",
+        "translit": "mardē ke āmad"
+      },
+      "aliases": [
+        "relative clause",
+        "relative clauses",
+        "relative pronoun",
+        "who",
+        "which",
+        "that",
+        "whom",
+        "the man who",
+        "the book that",
+        "ke",
+        "ki",
+        "keh",
+        "-ē ke",
+        "e ke",
+        "mardē ke",
+        "marde ke",
+        "که",
+        "مردی که"
+      ],
+      "keywords": [
+        "describe",
+        "clause",
+        "describing a noun"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "noun + -ē + ke",
+          "body": "To describe a noun with a whole sentence, add -ē to the noun, then ke, then the sentence. The -ē looks like the 'a' ending, but here it points to 'the one that'. ke does the work of English who, which and that."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "noun",
+              "kind": "slot"
+            },
+            {
+              "text": "-ē",
+              "kind": "fixed"
+            },
+            {
+              "text": "ke",
+              "kind": "fixed"
+            },
+            {
+              "text": "sentence",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "مردی که آمد، دوست من است",
+              "translit": "mardē ke āmad, dōst-e man ast",
+              "en": "The man who came is my friend.",
+              "highlight": "مردی که"
+            },
+            {
+              "target": "کتابی که دیروز خریدم اینجا است",
+              "translit": "ketābē ke dīrōz kharīdam īnjā ast",
+              "en": "The book I bought yesterday is here.",
+              "highlight": "کتابی که"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "When the noun is the object",
+          "body": "If the noun is the object of the main verb, rā comes right after it, before ke."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کتابی را که خریدی خواندم",
+              "translit": "ketābē rā ke kharīdī khāndam",
+              "en": "I read the book you bought.",
+              "highlight": "را که"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Prepositions need a pronoun",
+          "body": "English can end with a preposition: 'the house we live in'. Dari cannot. Keep the preposition inside the sentence, with ān (it) for a thing or ō for a person."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "خانه‌ای که در آن زندگی می‌کنیم کلان نیست",
+              "translit": "khāna-yē ke dar ān zindagī mēkunēm kalān nēst",
+              "en": "The house we live in isn't big.",
+              "highlight": "در آن"
+            },
+            {
+              "target": "مردی که با او گپ زدم داکتر است",
+              "translit": "mardē ke bā ō gap zadam dāktar ast",
+              "en": "The man I talked to is a doctor.",
+              "highlight": "با او"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "No -ē after 'my'",
+          "body": "A name, or a noun with 'my' or 'your', takes no -ē. The sentence just adds more about it."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "دوست من که داکتر است فردا می‌آید",
+              "translit": "dōst-e man ke dāktar ast fardā mēāyad",
+              "en": "My friend, who is a doctor, is coming tomorrow.",
+              "highlight": "که"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "مردی کی آمد",
+            "translit": "mardē kī āmad"
+          },
+          "right": {
+            "target": "مردی که آمد، دوست من است",
+            "translit": "mardē ke āmad, dōst-e man ast",
+            "en": "The man who came is my friend."
+          },
+          "why": "kī asks the question 'who?'. Inside a description, 'who' is ke."
+        }
+      ],
+      "related": [
+        "indefinite",
+        "object-marker-ra",
+        "ezafe"
+      ],
+      "lessonIds": [
+        "gl-39"
+      ]
+    },
+    {
+      "id": "gh-27",
+      "slug": "conditionals",
+      "level": "B1",
+      "rank": 5,
+      "title": "If: agar",
+      "summary": "For a real 'if', use agar with the bu- form: agar biyāyī, ō rā mēbīnī, if you come, you'll see him. The result is an ordinary present or a command.",
+      "sample": {
+        "target": "اگر بیایی",
+        "translit": "agar biyāyī"
+      },
+      "aliases": [
+        "conditional",
+        "conditionals",
+        "condition",
+        "conditions",
+        "if",
+        "if clause",
+        "if not",
+        "unless",
+        "first conditional",
+        "zero conditional",
+        "agar",
+        "agr",
+        "aga",
+        "اگر"
+      ],
+      "keywords": [
+        "possible",
+        "result",
+        "in case"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "A real 'if'",
+          "body": "agar introduces something that may happen. The 'if' half usually comes first and takes the bu- form. The result is in the present, or is a command."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "agar",
+              "kind": "fixed"
+            },
+            {
+              "text": "bu- form",
+              "kind": "fixed"
+            },
+            {
+              "text": "result: present or command",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگر بیایی، او را می‌بینی",
+              "translit": "agar biyāyī, ō rā mēbīnī",
+              "en": "If you come, you'll see him.",
+              "highlight": "اگر"
+            },
+            {
+              "target": "اگر فردا باران ببارد، به بازار نمی‌رویم",
+              "translit": "agar fardā bārān bubārad, ba bāzār namērawēm",
+              "en": "If it rains tomorrow, we won't go to the bazaar.",
+              "highlight": "ببارد"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "agar with the past",
+          "body": "agar with the simple past is also common for something that may happen later. English uses the present here; Dari says it as if it had already happened."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگر او آمد، به من بگو",
+              "translit": "agar ō āmad, ba man bugō",
+              "en": "If he comes, tell me.",
+              "highlight": "آمد"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "agar with the present",
+          "body": "For something that is already true now, agar takes the ordinary present."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگر وقت داری، بیا",
+              "translit": "agar waqt dārī, biyā",
+              "en": "If you have time, come.",
+              "highlight": "داری"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "If not",
+          "body": "Put na- on the verb in the 'if' half: agar narawī, if you don't go; agar nayāmad, if he doesn't come."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "اگر فردا خواهی آمد",
+            "translit": "agar fardā khāhī āmad"
+          },
+          "right": {
+            "target": "اگر فردا بیایی، من در خانه هستم",
+            "translit": "agar fardā biyāyī, man dar khāna hastam",
+            "en": "If you come tomorrow, I'll be at home."
+          },
+          "why": "As in English 'if you come', not 'if you will come': the 'if' half does not take the khāham future."
+        },
+        {
+          "type": "rule",
+          "heading": "Things that are not true",
+          "body": "For something that is not true or did not happen, like 'if I had known', Dari uses the past continuous instead: agar mēdānestam, if I had known."
+        }
+      ],
+      "related": [
+        "subjunctive",
+        "time-clauses",
+        "future"
+      ],
+      "lessonIds": [
+        "gl-34"
+      ]
+    },
+    {
+      "id": "gh-28",
+      "slug": "time-clauses",
+      "level": "B1",
+      "rank": 6,
+      "title": "When, before, after: waqtē ke",
+      "summary": "waqtē ke (when) and ba'd az ān ke (after) take the tense you would expect. pēsh az ān ke (before) always takes the bu- form: pēsh az ān ke burawam, before I go.",
+      "sample": {
+        "target": "وقتی که آمد",
+        "translit": "waqtē ke āmad"
+      },
+      "aliases": [
+        "time clause",
+        "time clauses",
+        "when",
+        "before",
+        "after",
+        "when clause",
+        "waqte ke",
+        "waqtē ke",
+        "waqti ke",
+        "vaqti ke",
+        "wakhti",
+        "waqtē",
+        "pesh az an ke",
+        "pēsh az ān ke",
+        "qabl az an ke",
+        "qabl az ān ke",
+        "bad az an ke",
+        "ba'd az ān ke",
+        "وقتی",
+        "وقتی که",
+        "پیش از آن که",
+        "قبل از آن که",
+        "بعد از آن که"
+      ],
+      "keywords": [
+        "time",
+        "sequence",
+        "at the moment",
+        "earlier",
+        "later"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "When: waqtē ke",
+          "body": "waqtē ke means 'when' and joins two events. Each verb takes the tense it would have on its own: for past events, both are past."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "وقتی که او آمد، من در خانه بودم",
+              "translit": "waqtē ke ō āmad, man dar khāna būdam",
+              "en": "When he came, I was at home.",
+              "highlight": "وقتی که"
+            },
+            {
+              "target": "وقتی که باران می‌بارد، در خانه می‌مانیم",
+              "translit": "waqtē ke bārān mēbārad, dar khāna mēmānēm",
+              "en": "When it rains, we stay at home.",
+              "highlight": "وقتی که"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "A 'when' still to come",
+          "body": "For a 'when' that has not happened yet, Dari often uses the simple past, just as agar can."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "وقتی که به خانه آمدی، به من بگو",
+              "translit": "waqtē ke ba khāna āmadī, ba man bugō",
+              "en": "When you get home, tell me.",
+              "highlight": "آمدی"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Before: pēsh az ān ke",
+          "body": "pēsh az ān ke means 'before'. The verb after it is always in the bu- form, even in a story about the past, because at that moment the action had not happened yet. qabl az ān ke means the same."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "pēsh az ān ke",
+              "kind": "fixed"
+            },
+            {
+              "text": "bu- form",
+              "kind": "fixed"
+            },
+            {
+              "text": "main sentence",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "پیش از آن که بروم، نان خوردم",
+              "translit": "pēsh az ān ke burawam, nān khurdam",
+              "en": "Before I went, I ate.",
+              "highlight": "بروم"
+            },
+            {
+              "target": "پیش از آن که بیایی، به من بگو",
+              "translit": "pēsh az ān ke biyāyī, ba man bugō",
+              "en": "Tell me before you come.",
+              "highlight": "بیایی"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "After: ba'd az ān ke",
+          "body": "ba'd az ān ke means 'after'. For past events it takes the simple past."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "بعد از آن که نان خوردم، به مکتب رفتم",
+              "translit": "ba'd az ān ke nān khurdam, ba maktab raftam",
+              "en": "After I ate, I went to school.",
+              "highlight": "بعد از آن که"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "پیش از آن که رفتم",
+            "translit": "pēsh az ān ke raftam"
+          },
+          "right": {
+            "target": "پیش از آن که بروم، نان خوردم",
+            "translit": "pēsh az ān ke burawam, nān khurdam",
+            "en": "Before I went, I ate."
+          },
+          "why": "English says 'before I went', but after pēsh az ān ke Dari needs the bu- form, whatever the tense of the story."
+        },
+        {
+          "type": "rule",
+          "heading": "Before a noun",
+          "body": "With a noun instead of a sentence, drop ān ke: pēsh az nān, before the meal; ba'd az maktab, after school."
+        }
+      ],
+      "related": [
+        "subjunctive",
+        "conditionals",
+        "past-perfect"
+      ],
+      "lessonIds": [
+        "gl-35",
+        "gl-38"
+      ]
+    },
+    {
+      "id": "gh-29",
+      "slug": "reported-speech",
+      "level": "B1",
+      "rank": 7,
+      "title": "Reported speech: guft ke",
+      "summary": "Report what someone said with ke and keep their original tense: ō guft ke mērawad, he said he was going. Only the person changes.",
+      "sample": {
+        "target": "گفت که می‌رود",
+        "translit": "guft ke mērawad"
+      },
+      "aliases": [
+        "reported speech",
+        "indirect speech",
+        "indirect question",
+        "said that",
+        "he said",
+        "she said",
+        "told",
+        "told me to",
+        "asked",
+        "reporting",
+        "backshift",
+        "sequence of tenses",
+        "guft",
+        "goft",
+        "guft ke",
+        "goft ke",
+        "pursid",
+        "pursīd",
+        "گفت",
+        "گفت که",
+        "پرسید"
+      ],
+      "keywords": [
+        "say",
+        "tell",
+        "ask",
+        "quote",
+        "news"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Keep the tense",
+          "body": "English moves the verb back when it reports: 'I am going' becomes 'he said he was going'. Dari does not. It keeps the verb as it was first said and changes only the person."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "guft",
+              "kind": "fixed"
+            },
+            {
+              "text": "ke",
+              "kind": "fixed"
+            },
+            {
+              "text": "the words, in their original tense",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "He said... → you report",
+          "columns": [
+            "He said",
+            "Reported"
+          ],
+          "rows": [
+            [
+              "mērawam, I'm going",
+              "guft ke mērawad, he said he was going"
+            ],
+            [
+              "raftam, I went",
+              "guft ke raft, he said he had gone"
+            ],
+            [
+              "marīz hastam, I'm sick",
+              "guft ke marīz ast, he said he was sick"
+            ],
+            [
+              "namētawānam, I can't",
+              "guft ke namētawānad, he said he couldn't"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "او گفت که می‌رود",
+              "translit": "ō guft ke mērawad",
+              "en": "He said he was going.",
+              "highlight": "می‌رود"
+            },
+            {
+              "target": "او گفت که مریض است",
+              "translit": "ō guft ke marīz ast",
+              "en": "She said she was sick.",
+              "highlight": "مریض است"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "او گفت که می‌رفت",
+            "translit": "ō guft ke mēraft"
+          },
+          "right": {
+            "target": "او گفت که می‌رود",
+            "translit": "ō guft ke mērawad",
+            "en": "He said he was going."
+          },
+          "why": "mēraft moves the action into the past: 'he said he used to go'. Keep the tense he used."
+        },
+        {
+          "type": "rule",
+          "heading": "Questions: pursīd",
+          "body": "Report a question with pursīd (asked) and ke, again keeping the tense."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "از من پرسید که کجا می‌روم",
+              "translit": "az man pursīd ke kujā mērawam",
+              "en": "He asked me where I was going.",
+              "highlight": "پرسید"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Commands: the bu- form",
+          "body": "When you report a command or a request, the verb takes the bu- form."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "به من گفت که بروم",
+              "translit": "ba man guft ke burawam",
+              "en": "He told me to go.",
+              "highlight": "بروم"
+            },
+            {
+              "target": "معلم گفت که کتاب را بخوانیم",
+              "translit": "mu'allem guft ke ketāb rā bukhānēm",
+              "en": "The teacher told us to read the book.",
+              "highlight": "بخوانیم"
+            }
+          ]
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "گفت که می‌رود",
+            "translit": "guft ke mērawad"
+          },
+          "spoken": {
+            "target": "گفت میره",
+            "translit": "guft mēra"
+          },
+          "note": "Speech often leaves out ke, and Kabul shortens mērawad to mēra."
+        }
+      ],
+      "related": [
+        "subjunctive",
+        "present-perfect",
+        "questions"
+      ],
+      "lessonIds": [
+        "gl-40"
+      ]
+    },
+    {
+      "id": "gh-30",
+      "slug": "past-perfect",
+      "level": "B1",
+      "rank": 8,
+      "title": "Past perfect: rafta būdam",
+      "summary": "The -a form of the verb plus būdam (I was) says 'I had done': waqtē ke āmadī, man rafta būdam, when you came, I had gone.",
+      "sample": {
+        "target": "رفته بودم",
+        "translit": "rafta būdam"
+      },
+      "aliases": [
+        "past perfect",
+        "pluperfect",
+        "had done",
+        "had gone",
+        "had been",
+        "had eaten",
+        "had",
+        "rafta budam",
+        "rafta būdam",
+        "budam",
+        "būdam",
+        "رفته بودم",
+        "بودم"
+      ],
+      "keywords": [
+        "earlier",
+        "already",
+        "before another past",
+        "story"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Before another past",
+          "body": "Use it for something already finished at a moment in the past: 'when you came, I had gone'. It is the -a form from the present perfect (rafta) followed by the past of būdan, to be."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "past stem",
+              "kind": "slot"
+            },
+            {
+              "text": "-a",
+              "kind": "fixed"
+            },
+            {
+              "text": "būdam, būdī, būd...",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "With raftan (to go)",
+          "columns": [
+            "Person",
+            "Past perfect"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "rafta būdam"
+            ],
+            [
+              "tu, you",
+              "rafta būdī"
+            ],
+            [
+              "ō, he or she",
+              "rafta būd"
+            ],
+            [
+              "mā, we",
+              "rafta būdēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "rafta būdēd"
+            ],
+            [
+              "ānhā, they",
+              "rafta būdand"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "In script",
+          "body": "The two words are written apart, with a full space: رفته بودم. Only būdam changes for the person."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "وقتی که آمدی، من رفته بودم",
+              "translit": "waqtē ke āmadī, man rafta būdam",
+              "en": "When you came, I had already gone.",
+              "highlight": "رفته بودم"
+            },
+            {
+              "target": "وقتی که او را دیدم، نان خورده بود",
+              "translit": "waqtē ke ō rā dīdam, nān khurda būd",
+              "en": "When I saw him, he had already eaten.",
+              "highlight": "خورده بود"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Not",
+          "body": "na- goes on the first word: narafta būdam, I hadn't gone. A compound verb keeps its first part in front: kār nakarda būdam."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من پیش از آن کابل را ندیده بودم",
+              "translit": "man pēsh az ān kābul rā nadīda būdam",
+              "en": "I had not seen Kabul before that.",
+              "highlight": "ندیده بودم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Have or had?",
+          "body": "rafta-am links the past to now: I have gone, and I am still away. rafta būdam links it to a moment in the past: by then, I had gone."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "رفتم بودم",
+            "translit": "raftam būdam"
+          },
+          "right": {
+            "target": "رفته بودم",
+            "translit": "rafta būdam",
+            "en": "I had gone."
+          },
+          "why": "The first word is the -a form, rafta, with no ending. Only būdam shows the person."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "رفته بودم",
+            "translit": "rafta būdam"
+          },
+          "spoken": {
+            "target": "رفته بودم",
+            "translit": "rafta būdum"
+          },
+          "note": "Kabul speech says the ending -um here too, so the spelling stays the same."
+        }
+      ],
+      "related": [
+        "present-perfect",
+        "simple-past",
+        "time-clauses"
+      ],
+      "lessonIds": [
+        "gl-36",
+        "gl-37"
+      ]
+    },
+    {
+      "id": "gh-31",
+      "slug": "passive",
+      "level": "B1",
+      "rank": 9,
+      "title": "The passive: nawishta shud",
+      "summary": "For 'it was done', put the -a form of the verb before shudan: nāma nawishta shud, the letter was written. The doer is usually left out.",
+      "sample": {
+        "target": "نوشته شد",
+        "translit": "nawishta shud"
+      },
+      "aliases": [
+        "passive",
+        "passive voice",
+        "was done",
+        "is done",
+        "was written",
+        "was made",
+        "been",
+        "is said",
+        "shudan",
+        "shodan",
+        "shuda",
+        "nawishta shud",
+        "neweshta shud",
+        "شد",
+        "شده",
+        "می‌شود",
+        "نوشته شد"
+      ],
+      "keywords": [
+        "done to",
+        "who did it",
+        "news",
+        "formal",
+        "by"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Something was done",
+          "body": "To say what happened to something without saying who did it, use the -a form of the verb (nawishta, written) with shudan, to become. Literally: 'the letter became written'."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "thing",
+              "kind": "slot"
+            },
+            {
+              "text": "past stem",
+              "kind": "slot"
+            },
+            {
+              "text": "-a",
+              "kind": "fixed"
+            },
+            {
+              "text": "shudan",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "With nawishtan (to write)",
+          "columns": [
+            "Tense",
+            "Passive"
+          ],
+          "rows": [
+            [
+              "past",
+              "nawishta shud, it was written"
+            ],
+            [
+              "present",
+              "nawishta mēshawad, it is written"
+            ],
+            [
+              "present perfect",
+              "nawishta shuda ast, it has been written"
+            ],
+            [
+              "bu- form",
+              "nawishta shawad, (that) it is written"
+            ],
+            [
+              "formal future",
+              "nawishta khāhad shud, it will be written"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Only shudan changes",
+          "body": "The -a form stays the same. mē-, na- and the ending go on shudan, just as with kharāb shudan on the compound verbs page. shudan takes no bu-: bāyad nawishta shawad, it must be written."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "نامه دیروز نوشته شد",
+              "translit": "nāma dīrōz nawishta shud",
+              "en": "The letter was written yesterday.",
+              "highlight": "نوشته شد"
+            },
+            {
+              "target": "این کتاب در کابل خوانده می‌شود",
+              "translit": "īn ketāb dar kābul khānda mēshawad",
+              "en": "This book is read in Kabul.",
+              "highlight": "خوانده می‌شود"
+            },
+            {
+              "target": "این سرک ساخته نشده است",
+              "translit": "īn sarak sākhta nashuda ast",
+              "en": "This road has not been built.",
+              "highlight": "ساخته نشده است"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "It is said that",
+          "body": "gufta mēshawad ke means 'it is said that', and the news uses the passive often. Everyday speech prefers an active verb with 'they': mēgōyand ke, they say that."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "گفته می‌شود که او در کابل است",
+              "translit": "gufta mēshawad ke ō dar kābul ast",
+              "en": "It is said that he is in Kabul.",
+              "highlight": "گفته می‌شود"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Who did it?",
+          "body": "If you want to say who did it, an active verb is usually more natural: man nāma rā nawishtam, I wrote the letter."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "نامه نوشت شد",
+            "translit": "nāma nawisht shud"
+          },
+          "right": {
+            "target": "نامه نوشته شد",
+            "translit": "nāma nawishta shud",
+            "en": "The letter was written."
+          },
+          "why": "The passive needs the -a form, nawishta. The bare past stem goes with khāham, in the future."
+        }
+      ],
+      "related": [
+        "present-perfect",
+        "compound-verbs",
+        "verb-stems"
+      ],
+      "lessonIds": [
+        "gl-42"
+      ]
+    },
+    {
+      "id": "gh-32",
+      "slug": "word-building",
+      "level": "B1",
+      "rank": 10,
+      "title": "Building words: -ī, -gar, bē-",
+      "summary": "A few endings and prefixes make new words from ones you know: āzād (free) → āzādī (freedom), kār (work) → kārgar (worker), adab (manners) → bē-adab (rude).",
+      "sample": {
+        "target": "آزادی",
+        "translit": "āzādī"
+      },
+      "aliases": [
+        "word building",
+        "word formation",
+        "building words",
+        "derivation",
+        "suffix",
+        "suffixes",
+        "prefix",
+        "prefixes",
+        "endings",
+        "-ī",
+        "-gar",
+        "gar",
+        "-dān",
+        "dan",
+        "-stān",
+        "stan",
+        "istan",
+        "estan",
+        "-istan",
+        "nā-",
+        "without",
+        "-less",
+        "-ness",
+        "un-",
+        "-er",
+        "گر",
+        "دان",
+        "ستان",
+        "بی",
+        "با",
+        "نا"
+      ],
+      "keywords": [
+        "vocabulary",
+        "new words",
+        "guess",
+        "opposite",
+        "meaning"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Guessing new words",
+          "body": "Dari builds many words from a small set of endings and prefixes. Once you know them, you can often guess a new word from one you already know."
+        },
+        {
+          "type": "rule",
+          "heading": "-ī: ideas and origins",
+          "body": "Added to an adjective, -ī makes a noun for the idea: āzād, free → āzādī, freedom. Added to a place, it means 'from there': kābul → kābulī."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "From",
+            "With -ī"
+          ],
+          "rows": [
+            [
+              "āzād, free",
+              "āzādī, freedom"
+            ],
+            [
+              "dōst, friend",
+              "dōstī, friendship"
+            ],
+            [
+              "bēkār, jobless",
+              "bēkārī, unemployment"
+            ],
+            [
+              "zinda, alive",
+              "zindagī, life"
+            ],
+            [
+              "kābul",
+              "kābulī, from Kabul"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "body": "After -a, the ending becomes -gī and the ه is dropped: زنده → زندگی."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "آزادی مهم است",
+              "translit": "āzādī muhim ast",
+              "en": "Freedom is important.",
+              "highlight": "آزادی"
+            },
+            {
+              "target": "من زندگی در کابل را دوست دارم",
+              "translit": "man zindagī dar kābul rā dōst dāram",
+              "en": "I like life in Kabul.",
+              "highlight": "زندگی"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "People, holders and places",
+          "body": "-gar makes the person who does something. -dān makes something that holds. -stān makes a place."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Ending",
+            "Example"
+          ],
+          "rows": [
+            [
+              "-gar, who does it",
+              "kār, work → kārgar, worker"
+            ],
+            [
+              "-gar",
+              "bāzī, play → bāzīgar, actor"
+            ],
+            [
+              "-dān, a holder",
+              "gul, flower → guldān, vase"
+            ],
+            [
+              "-dān",
+              "qalam, pen → qalamdān, pencil case"
+            ],
+            [
+              "-stān, a place",
+              "afghān → afghānestān"
+            ],
+            [
+              "-stān",
+              "qabr, grave → qabristān, graveyard"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "پدرم کارگر است",
+              "translit": "padaram kārgar ast",
+              "en": "My father is a worker.",
+              "highlight": "کارگر"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Prefixes: nā-, bē-, bā-",
+          "body": "nā- means 'not'. bē- means 'without' and bā- means 'with', so they often make opposite pairs. bē- is often written apart with a half-space: بی‌ادب."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Prefix",
+            "Example"
+          ],
+          "rows": [
+            [
+              "nā-, not",
+              "nārāhat, upset (rāhat, at ease)"
+            ],
+            [
+              "nā-",
+              "nā-umēd, hopeless (umēd, hope)"
+            ],
+            [
+              "bē-, without",
+              "bēkār, jobless (kār, work)"
+            ],
+            [
+              "bē-",
+              "bē-adab, rude (adab, manners)"
+            ],
+            [
+              "bā-, with",
+              "bā-adab, polite"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "او بسیار باادب است",
+              "translit": "ō bisyār bā-adab ast",
+              "en": "She is very polite.",
+              "highlight": "باادب"
+            },
+            {
+              "target": "او بی‌گناه است",
+              "translit": "ō bē-gunāh ast",
+              "en": "He is innocent.",
+              "highlight": "بی‌گناه"
+            }
+          ]
+        }
+      ],
+      "related": [
+        "indefinite",
+        "compound-verbs",
+        "ezafe"
+      ],
+      "lessonIds": [
+        "gl-46"
+      ]
     }
   ]
 }
