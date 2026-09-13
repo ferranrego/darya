@@ -2156,6 +2156,1610 @@
         "gl-13",
         "gl-14"
       ]
+    },
+    {
+      "id": "gh-13",
+      "slug": "comparatives",
+      "level": "A2",
+      "rank": 5,
+      "title": "Comparing: -tar and -tarīn",
+      "summary": "Add -tar for 'more': kalāntar az, bigger than. Add -tarīn for 'most' and put it before the noun: kalāntarīn shahr, the biggest city.",
+      "sample": {
+        "target": "کلان‌تر",
+        "translit": "kalāntar"
+      },
+      "aliases": [
+        "comparative",
+        "comparatives",
+        "superlative",
+        "superlatives",
+        "comparison",
+        "compare",
+        "tar",
+        "-tar",
+        "tarin",
+        "-tarīn",
+        "than",
+        "more",
+        "most",
+        "bigger",
+        "biggest",
+        "better",
+        "best",
+        "bihtar",
+        "تر",
+        "ترین",
+        "بهتر"
+      ],
+      "keywords": [
+        "er",
+        "est",
+        "az"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "More: -tar",
+          "body": "To say 'bigger' or 'newer', add -tar to the adjective. The thing you compare with comes after az, which here means 'than'. In careful writing it is joined with a half-space, کلان‌تر, but you will often see it written joined, کلانتر."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "A",
+              "kind": "slot"
+            },
+            {
+              "text": "az",
+              "kind": "fixed"
+            },
+            {
+              "text": "B",
+              "kind": "slot"
+            },
+            {
+              "text": "adjective + -tar",
+              "kind": "slot"
+            },
+            {
+              "text": "verb",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کابل از شهر ما کلان‌تر است",
+              "translit": "kābul az shahr-e mā kalāntar ast",
+              "en": "Kabul is bigger than our city.",
+              "highlight": "کلان‌تر"
+            },
+            {
+              "target": "چای از آب گرم‌تر است",
+              "translit": "chāy az āb garmtar ast",
+              "en": "Tea is warmer than water.",
+              "highlight": "از"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Most: -tarīn",
+          "body": "Add -tarīn for 'the most'. Unlike ordinary adjectives, it comes before the noun, with no ezafe."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کابل کلان‌ترین شهر است",
+              "translit": "kābul kalāntarīn shahr ast",
+              "en": "Kabul is the biggest city.",
+              "highlight": "کلان‌ترین"
+            },
+            {
+              "target": "او بهترین دوست من است",
+              "translit": "ō bihtarīn dōst-e man ast",
+              "en": "He is my best friend.",
+              "highlight": "بهترین"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Words to know",
+          "columns": [
+            "Base",
+            "More, most"
+          ],
+          "rows": [
+            [
+              "kalān, big",
+              "kalāntar, kalāntarīn"
+            ],
+            [
+              "naw, new",
+              "nawtar, nawtarīn"
+            ],
+            [
+              "ziyād, much",
+              "ziyādtar or bēshtar; bēshtarīn"
+            ],
+            [
+              "good (irregular)",
+              "bihtar, bihtarīn"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Than all of them",
+          "body": "Everyday Dari also says 'the most' with az hama, 'than all': az hama kalāntar, the biggest of all."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "این خانه از همه کلان‌تر است",
+              "translit": "īn khāna az hama kalāntar ast",
+              "en": "This house is the biggest of all.",
+              "highlight": "از همه"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "شهر کلان‌ترین",
+            "translit": "shahr-e kalāntarīn"
+          },
+          "right": {
+            "target": "کلان‌ترین شهر",
+            "translit": "kalāntarīn shahr",
+            "en": "the biggest city"
+          },
+          "why": "-tarīn words go before the noun and take no ezafe. Only -tar and plain adjectives follow the noun."
+        }
+      ],
+      "related": [
+        "ezafe",
+        "word-order"
+      ],
+      "lessonIds": [
+        "gl-15",
+        "gl-16"
+      ]
+    },
+    {
+      "id": "gh-14",
+      "slug": "future",
+      "level": "A2",
+      "rank": 7,
+      "title": "Talking about the future",
+      "summary": "In everyday Dari the present tense plus a time word is the future: fardā mērawam, I'll go tomorrow. Writing also has khāham raft.",
+      "sample": {
+        "target": "خواهم رفت",
+        "translit": "khāham raft"
+      },
+      "aliases": [
+        "future",
+        "future tense",
+        "will",
+        "going to",
+        "khaham",
+        "khāham",
+        "khāstan",
+        "tomorrow",
+        "خواهم",
+        "خواهد"
+      ],
+      "keywords": [
+        "plan",
+        "later",
+        "next",
+        "fardā"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Everyday: just the present",
+          "body": "For plans and predictions, Dari simply uses the present tense. A time word like fardā (tomorrow) makes it future."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "فردا به کابل می‌روم",
+              "translit": "fardā ba kābul mērawam",
+              "en": "I'll go to Kabul tomorrow.",
+              "highlight": "فردا"
+            },
+            {
+              "target": "او سال بعد می‌آید",
+              "translit": "ō sāl-e ba'd mēāyad",
+              "en": "He will come next year.",
+              "highlight": "می‌آید"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Written: khāham + past stem",
+          "body": "News, books and formal speech use a separate future: the present of khāstan without mē-, followed by the bare past stem of the verb."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "khāham, khāhī, khāhad...",
+              "kind": "fixed"
+            },
+            {
+              "text": "past stem",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "With raftan (to go)",
+          "columns": [
+            "Person",
+            "Future"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "khāham raft"
+            ],
+            [
+              "tu, you",
+              "khāhī raft"
+            ],
+            [
+              "ō, he or she",
+              "khāhad raft"
+            ],
+            [
+              "mā, we",
+              "khāhēm raft"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "khāhēd raft"
+            ],
+            [
+              "ānhā, they",
+              "khāhand raft"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "او فردا به کابل خواهد رفت",
+              "translit": "ō fardā ba kābul khāhad raft",
+              "en": "He will go to Kabul tomorrow.",
+              "highlight": "خواهد رفت"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Not, and compounds",
+          "body": "Put na- on khāham: nakhāham raft, I will not go. With a compound verb, khāham sits between the two parts: kār khāham kard."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "خواهم رفتم",
+            "translit": "khāham raftam"
+          },
+          "right": {
+            "target": "خواهم رفت",
+            "translit": "khāham raft",
+            "en": "I will go."
+          },
+          "why": "Only khāham changes for the person. The second verb is always the bare past stem, with no ending."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "می‌خواهم رفت",
+            "translit": "mēkhāham raft"
+          },
+          "right": {
+            "target": "خواهم رفت",
+            "translit": "khāham raft",
+            "en": "I will go."
+          },
+          "why": "With mē-, khāham means 'I want'. The future uses it bare."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "فردا به کابل می‌روم",
+            "translit": "fardā ba kābul mērawam"
+          },
+          "spoken": {
+            "target": "صبا کابل میرم",
+            "translit": "sabā kābul mērum"
+          },
+          "note": "In Kabul 'tomorrow' is usually sabā, ba before a place is often left out, and the future is simply the present: mērum."
+        }
+      ],
+      "related": [
+        "present-tense",
+        "want-can-must"
+      ],
+      "lessonIds": [
+        "gl-20",
+        "gl-45"
+      ]
+    },
+    {
+      "id": "gh-15",
+      "slug": "verb-stems",
+      "level": "A2",
+      "rank": 1,
+      "title": "Past and present stems",
+      "summary": "Every verb has two stems. The past stem (raft) builds the past tenses; the present stem (raw) builds the present, commands and 'want to' forms.",
+      "sample": {
+        "target": "رفتن",
+        "translit": "raftan"
+      },
+      "aliases": [
+        "stem",
+        "stems",
+        "verb stem",
+        "present stem",
+        "past stem",
+        "root",
+        "infinitive",
+        "irregular verbs",
+        "conjugation"
+      ],
+      "keywords": [
+        "verb",
+        "forms",
+        "tenses",
+        "how to conjugate"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Two stems per verb",
+          "body": "A Dari verb is listed by its infinitive, ending in -an: raftan, to go. Every other form is built from one of its two stems, so learning a verb means learning both."
+        },
+        {
+          "type": "rule",
+          "heading": "The past stem is easy",
+          "body": "The past stem is always the infinitive without -an: raftan → raft, kardan → kard. No exceptions."
+        },
+        {
+          "type": "rule",
+          "heading": "The present stem must be learned",
+          "body": "The present stem often looks different and cannot be guessed. Most verbs in -īdan are the kind exception: drop the whole -īdan. kharīdan → khar, fahmīdan → fahm, pursīdan → purs. Two common ones do not follow it: dīdan → bīn and shunīdan → shunaw."
+        },
+        {
+          "type": "table",
+          "heading": "Common verbs",
+          "columns": [
+            "Verb",
+            "Past · present stem"
+          ],
+          "rows": [
+            [
+              "raftan, to go",
+              "raft · raw"
+            ],
+            [
+              "āmadan, to come",
+              "āmad · ā"
+            ],
+            [
+              "kardan, to do",
+              "kard · kun"
+            ],
+            [
+              "dīdan, to see",
+              "dīd · bīn"
+            ],
+            [
+              "guftan, to say",
+              "guft · gō"
+            ],
+            [
+              "dādan, to give",
+              "dād · deh"
+            ],
+            [
+              "gereftan, to take",
+              "gereft · gīr"
+            ],
+            [
+              "khāstan, to want",
+              "khāst · khāh"
+            ],
+            [
+              "nawishtan, to write",
+              "nawisht · nawīs"
+            ],
+            [
+              "shudan, to become",
+              "shud · shaw"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "What each stem builds",
+          "columns": [
+            "Form",
+            "Example"
+          ],
+          "rows": [
+            [
+              "past stem: simple past",
+              "raftam, I went"
+            ],
+            [
+              "past stem: past continuous",
+              "mēraftam, I used to go"
+            ],
+            [
+              "past stem: present perfect",
+              "rafta-am, I have gone"
+            ],
+            [
+              "present stem: present",
+              "mērawam, I go"
+            ],
+            [
+              "present stem: command",
+              "buraw, go!"
+            ],
+            [
+              "present stem: 'want to' form",
+              "burawam, (that) I go"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "دیروز نامه نوشتم",
+              "translit": "dīrōz nāma nawishtam",
+              "en": "Yesterday I wrote a letter.",
+              "highlight": "نوشتم"
+            },
+            {
+              "target": "هر روز نامه می‌نویسم",
+              "translit": "har rōz nāma mēnawīsam",
+              "en": "I write a letter every day.",
+              "highlight": "می‌نویسم"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "می‌نوشتم",
+            "translit": "mēnawishtam"
+          },
+          "right": {
+            "target": "می‌نویسم",
+            "translit": "mēnawīsam",
+            "en": "I write."
+          },
+          "why": "The present is built on the present stem, nawīs, not on the past stem. mēnawishtam means 'I used to write'."
+        }
+      ],
+      "related": [
+        "present-tense",
+        "simple-past",
+        "commands"
+      ],
+      "lessonIds": [
+        "gl-10",
+        "gl-13"
+      ]
+    },
+    {
+      "id": "gh-16",
+      "slug": "commands",
+      "level": "A2",
+      "rank": 2,
+      "title": "Commands with bu-",
+      "summary": "Put bu- on the present stem to tell someone to do something: bukhur, eat! Add -ēd to be polite: lutfan bukhurēd.",
+      "sample": {
+        "target": "بخور",
+        "translit": "bukhur"
+      },
+      "aliases": [
+        "command",
+        "commands",
+        "imperative",
+        "order",
+        "request",
+        "please",
+        "lutfan",
+        "be",
+        "bu",
+        "be-",
+        "bu-",
+        "don't",
+        "لطفاً"
+      ],
+      "keywords": [
+        "tell someone",
+        "instruction",
+        "polite request"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "The command form",
+          "body": "A command is the prefix bu- plus the present stem, with no ending. It is how you speak to one person you know well. The prefix is written ب and its vowel is not written. In Afghanistan it is usually said bu-: bukhur, bukun, buraw, bubīn. Some speakers say bi-, and before yā it is always bi-: biyā."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "bu-",
+              "kind": "fixed"
+            },
+            {
+              "text": "present stem",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Verb",
+            "Command"
+          ],
+          "rows": [
+            [
+              "khurdan, to eat",
+              "bukhur"
+            ],
+            [
+              "kardan, to do",
+              "bukun"
+            ],
+            [
+              "raftan, to go",
+              "buraw"
+            ],
+            [
+              "dīdan, to see",
+              "bubīn"
+            ],
+            [
+              "gereftan, to take",
+              "bugīr"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "نان بخور",
+              "translit": "nān bukhur",
+              "en": "Eat!",
+              "highlight": "بخور"
+            },
+            {
+              "target": "به مکتب برو",
+              "translit": "ba maktab buraw",
+              "en": "Go to school.",
+              "highlight": "برو"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Polite: add -ēd",
+          "body": "To one person you respect, or to several people, add -ēd. Starting with lutfan (please) makes it a polite request."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "لطفاً بنشینید",
+              "translit": "lutfan buneshīnēd",
+              "en": "Please sit down.",
+              "highlight": "بنشینید"
+            },
+            {
+              "target": "لطفاً کتاب را بخوانید",
+              "translit": "lutfan ketāb rā bukhānēd",
+              "en": "Please read the book.",
+              "highlight": "بخوانید"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Don't",
+          "body": "For 'don't', na- replaces the bu- prefix: nakhur, don't eat; naraw, don't go."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "آنجا نرو",
+              "translit": "ānjā naraw",
+              "en": "Don't go there.",
+              "highlight": "نرو"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Compound verbs",
+          "body": "Compound verbs keep the first part and put the command on kardan, usually without bu-: kār kun, work! kumak kunēd, help!"
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "می‌خور",
+            "translit": "mēkhur"
+          },
+          "right": {
+            "target": "بخور",
+            "translit": "bukhur",
+            "en": "Eat!"
+          },
+          "why": "Commands never take mē-. They take bu-."
+        },
+        {
+          "type": "rule",
+          "heading": "Come!",
+          "body": "āmadan, to come, has the stem ā. bu- + ā is written بیا and said biyā, come! To be polite: biyāyēd (بیایید)."
+        }
+      ],
+      "related": [
+        "verb-stems",
+        "negation",
+        "want-can-must"
+      ],
+      "lessonIds": [
+        "gl-21",
+        "gl-22"
+      ]
+    },
+    {
+      "id": "gh-17",
+      "slug": "want-can-must",
+      "level": "A2",
+      "rank": 3,
+      "title": "Want, can, must",
+      "summary": "mēkhāham, mētawānam and bāyad are followed by a second verb with bu-: mēkhāham burawam, I want to go.",
+      "sample": {
+        "target": "می‌خواهم بروم",
+        "translit": "mēkhāham burawam"
+      },
+      "aliases": [
+        "want",
+        "want to",
+        "can",
+        "could",
+        "able",
+        "must",
+        "have to",
+        "should",
+        "need to",
+        "subjunctive",
+        "modal",
+        "modals",
+        "bayad",
+        "bāyad",
+        "mekhaham",
+        "mētawānam",
+        "tawanestan",
+        "باید",
+        "می‌خواهم",
+        "می‌توانم"
+      ],
+      "keywords": [
+        "wish",
+        "ability",
+        "obligation",
+        "second verb",
+        "infinitive"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Two verbs, both with an ending",
+          "body": "English says 'I want to go' with an infinitive. Dari uses two finished verbs instead: 'I want' + '(that) I go'. The second verb takes bu- (written ب) and a normal ending. This is called the subjunctive."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "main verb",
+              "kind": "slot"
+            },
+            {
+              "text": "bu-",
+              "kind": "fixed"
+            },
+            {
+              "text": "present stem",
+              "kind": "slot"
+            },
+            {
+              "text": "ending",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The second verb, with raftan",
+          "columns": [
+            "Person",
+            "Subjunctive"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "burawam"
+            ],
+            [
+              "tu, you",
+              "burawī"
+            ],
+            [
+              "ō, he or she",
+              "burawad"
+            ],
+            [
+              "mā, we",
+              "burawēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "burawēd"
+            ],
+            [
+              "ānhā, they",
+              "burawand"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "می‌خواهم بروم",
+              "translit": "mēkhāham burawam",
+              "en": "I want to go.",
+              "highlight": "بروم"
+            },
+            {
+              "target": "او می‌تواند بیاید",
+              "translit": "ō mētawānad biyāyad",
+              "en": "She can come.",
+              "highlight": "می‌تواند"
+            },
+            {
+              "target": "ما باید کار کنیم",
+              "translit": "mā bāyad kār kunēm",
+              "en": "We must work.",
+              "highlight": "باید"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "bāyad stays the same",
+          "body": "bāyad never changes: the same word for every person. Only the second verb shows who."
+        },
+        {
+          "type": "rule",
+          "heading": "Compound verbs",
+          "body": "Compound verbs usually drop bu- in this form: kār kunam rather than kār bukunam."
+        },
+        {
+          "type": "rule",
+          "heading": "Not",
+          "body": "Put the negative on the first verb: namēkhāham burawam, I don't want to go. With bāyad, nabāyad means 'must not'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "تو نباید آنجا بروی",
+              "translit": "tu nabāyad ānjā burawī",
+              "en": "You must not go there.",
+              "highlight": "نباید"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "می‌خواهم می‌روم",
+            "translit": "mēkhāham mērawam"
+          },
+          "right": {
+            "target": "می‌خواهم بروم",
+            "translit": "mēkhāham burawam",
+            "en": "I want to go."
+          },
+          "why": "The second verb is never in the present with mē-. It takes bu-."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "می‌خواهم رفتن",
+            "translit": "mēkhāham raftan"
+          },
+          "right": {
+            "target": "می‌خواهم بروم",
+            "translit": "mēkhāham burawam",
+            "en": "I want to go."
+          },
+          "why": "The English-style infinitive does not work here. Give the second verb its own ending."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "می‌توانم بروم",
+            "translit": "mētawānam burawam"
+          },
+          "spoken": {
+            "target": "میتانم بروم",
+            "translit": "mētānum burum"
+          },
+          "note": "Kabul speech shortens mētawānam to mētānum and burawam to burum."
+        }
+      ],
+      "related": [
+        "verb-stems",
+        "commands",
+        "future"
+      ],
+      "lessonIds": [
+        "gl-23",
+        "gl-24",
+        "gl-25"
+      ]
+    },
+    {
+      "id": "gh-18",
+      "slug": "compound-verbs",
+      "level": "A2",
+      "rank": 4,
+      "title": "Compound verbs: kār kardan",
+      "summary": "Many Dari verbs are a noun plus a helper verb: kār kardan, to work. Only the helper changes: kār mēkunam, kār nakardam.",
+      "sample": {
+        "target": "کار می‌کنم",
+        "translit": "kār mēkunam"
+      },
+      "aliases": [
+        "compound verb",
+        "compound verbs",
+        "light verb",
+        "kardan",
+        "shudan",
+        "zadan",
+        "kar kardan",
+        "noun plus verb",
+        "کردن",
+        "شدن"
+      ],
+      "keywords": [
+        "work",
+        "help",
+        "think",
+        "live",
+        "talk"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Meaning plus helper",
+          "body": "A large share of Dari verbs are built from a noun or adjective and a small helper verb, most often kardan (to do). The first part carries the meaning; the helper carries the tense and the person."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "noun or adjective",
+              "kind": "slot"
+            },
+            {
+              "text": "kardan, shudan, zadan...",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Everyday compound verbs",
+          "columns": [
+            "Verb",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "kār kardan",
+              "to work"
+            ],
+            [
+              "kumak kardan",
+              "to help"
+            ],
+            [
+              "fikr kardan",
+              "to think"
+            ],
+            [
+              "zindagī kardan",
+              "to live"
+            ],
+            [
+              "gap zadan",
+              "to talk, to chat"
+            ],
+            [
+              "kharāb shudan",
+              "to break down"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Only the helper changes",
+          "body": "mē-, na- and the ending all go on the helper. The first part stays in front and does not change. Only khāham, in the formal future, can come between them: kār khāham kard."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من در کابل زندگی می‌کنم",
+              "translit": "man dar kābul zindagī mēkunam",
+              "en": "I live in Kabul.",
+              "highlight": "می‌کنم"
+            },
+            {
+              "target": "او به من کمک کرد",
+              "translit": "ō ba man kumak kard",
+              "en": "He helped me.",
+              "highlight": "کمک کرد"
+            },
+            {
+              "target": "امروز کار نکردم",
+              "translit": "emrōz kār nakardam",
+              "en": "I didn't work today.",
+              "highlight": "نکردم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "kardan or shudan?",
+          "body": "kardan means 'to do' something, shudan means 'to become'. The pair often gives an active and a non-active verb: kharāb kardan, to break something; kharāb shudan, to break down. khush shudan means 'to be pleased'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "موتر ما خراب شد",
+              "translit": "mōtar-e mā kharāb shud",
+              "en": "Our car broke down.",
+              "highlight": "خراب شد"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "می‌کار کنم",
+            "translit": "mēkār kunam"
+          },
+          "right": {
+            "target": "کار می‌کنم",
+            "translit": "kār mēkunam",
+            "en": "I work."
+          },
+          "why": "mē- belongs to the helper verb, not to the noun in front of it."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "صحبت می‌کنیم",
+            "translit": "suhbat mēkunēm"
+          },
+          "spoken": {
+            "target": "گپ میزنیم",
+            "translit": "gap mēzanēm"
+          },
+          "note": "suhbat kardan is the more formal word for 'talking'. In everyday Dari people say gap zadan, and it is fine in writing too. Kabul speech then shortens the verb: gap mēzanēm."
+        }
+      ],
+      "related": [
+        "present-tense",
+        "want-can-must",
+        "commands"
+      ],
+      "lessonIds": [
+        "gl-28"
+      ]
+    },
+    {
+      "id": "gh-19",
+      "slug": "past-continuous",
+      "level": "A2",
+      "rank": 8,
+      "title": "Past continuous: mēraftam",
+      "summary": "Put mē- on the simple past for 'used to' or 'was doing': mēraftam, I used to go, or I was going.",
+      "sample": {
+        "target": "می‌رفتم",
+        "translit": "mēraftam"
+      },
+      "aliases": [
+        "past continuous",
+        "past progressive",
+        "past habitual",
+        "imperfect",
+        "used to",
+        "was doing",
+        "were doing",
+        "would",
+        "meraftam",
+        "mēraftam",
+        "می‌رفتم"
+      ],
+      "keywords": [
+        "habit",
+        "repeated",
+        "background",
+        "every day in the past"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "One form, two meanings",
+          "body": "Add mē- to a simple past verb. The result covers two English meanings: a habit in the past ('I used to go') and something that was going on at the time ('I was going')."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "mē-",
+              "kind": "fixed"
+            },
+            {
+              "text": "past stem",
+              "kind": "slot"
+            },
+            {
+              "text": "ending",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "With raftan (to go)",
+          "columns": [
+            "Person",
+            "Past continuous"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "mēraftam"
+            ],
+            [
+              "tu, you",
+              "mēraftī"
+            ],
+            [
+              "ō, he or she",
+              "mēraft"
+            ],
+            [
+              "mā, we",
+              "mēraftēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "mēraftēd"
+            ],
+            [
+              "ānhā, they",
+              "mēraftand"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "هر روز به مکتب می‌رفتم",
+              "translit": "har rōz ba maktab mēraftam",
+              "en": "I used to go to school every day.",
+              "highlight": "می‌رفتم"
+            },
+            {
+              "target": "ما در کابل زندگی می‌کردیم",
+              "translit": "mā dar kābul zindagī mēkardēm",
+              "en": "We used to live in Kabul.",
+              "highlight": "می‌کردیم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Watch the spelling",
+          "body": "For 'he' and 'she' this form can look exactly like the present: می‌خورد is both mēkhurad, he eats, and mēkhurd, he used to eat. Only the context and the pronunciation tell them apart."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "او همیشه چای می‌خورد",
+              "translit": "ō hamēsha chāy mēkhurd",
+              "en": "He always used to drink tea.",
+              "highlight": "می‌خورد"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Not",
+          "body": "Put na- in front of mē-, just as in the present: namēraftam, I didn't use to go."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "هر روز به مکتب رفتم",
+            "translit": "har rōz ba maktab raftam"
+          },
+          "right": {
+            "target": "هر روز به مکتب می‌رفتم",
+            "translit": "har rōz ba maktab mēraftam",
+            "en": "I used to go to school every day."
+          },
+          "why": "'Every day' in the past is a habit, so the verb needs mē-. Without it, raftam sounds like one finished action, not a habit."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "می‌رفتم",
+            "translit": "mēraftam"
+          },
+          "spoken": {
+            "target": "میرفتم",
+            "translit": "mēraftum"
+          },
+          "note": "Kabul speech says the ending -um, and messages usually skip the half-space: میرفتم."
+        }
+      ],
+      "related": [
+        "simple-past",
+        "present-tense",
+        "present-perfect"
+      ],
+      "lessonIds": [
+        "gl-26"
+      ]
+    },
+    {
+      "id": "gh-20",
+      "slug": "present-perfect",
+      "level": "A2",
+      "rank": 9,
+      "title": "Present perfect: rafta-am",
+      "summary": "Past stem + -a, then a short ending: rafta-am, I have gone. For 'he' or 'she' it is rafta ast.",
+      "sample": {
+        "target": "رفته‌ام",
+        "translit": "rafta-am"
+      },
+      "aliases": [
+        "present perfect",
+        "perfect",
+        "have done",
+        "has done",
+        "have been",
+        "ever",
+        "yet",
+        "already",
+        "participle",
+        "past participle",
+        "rafta",
+        "رفته"
+      ],
+      "keywords": [
+        "experience",
+        "result",
+        "so far",
+        "hanōz"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "When to use it",
+          "body": "Use it for experiences ('I have been to Kabul') and for results that still matter now ('he has eaten'). It is also often used for things you heard about or worked out rather than saw. That is why the news writes gufta ast, '(he) has said', for what someone said."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "past stem",
+              "kind": "slot"
+            },
+            {
+              "text": "-a",
+              "kind": "fixed"
+            },
+            {
+              "text": "ending",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "With raftan (to go)",
+          "columns": [
+            "Person",
+            "Present perfect"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "rafta-am"
+            ],
+            [
+              "tu, you",
+              "rafta-ī"
+            ],
+            [
+              "ō, he or she",
+              "rafta ast"
+            ],
+            [
+              "mā, we",
+              "rafta-ēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "rafta-ēd"
+            ],
+            [
+              "ānhā, they",
+              "rafta-and"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "In script",
+          "body": "The -a is written ه, and the endings join it with a half-space: رفته‌ام. Only 'he' or 'she' keeps ast as a separate word."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من به کابل رفته‌ام",
+              "translit": "man ba kābul rafta-am",
+              "en": "I have been to Kabul.",
+              "highlight": "رفته‌ام"
+            },
+            {
+              "target": "او نان خورده است",
+              "translit": "ō nān khurda ast",
+              "en": "He has eaten.",
+              "highlight": "خورده است"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Not yet",
+          "body": "na- goes on the front: narafta-am, I haven't gone. With hanōz (yet) it means 'not yet'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من هنوز نان نخورده‌ام",
+              "translit": "man hanōz nān nakhurda-am",
+              "en": "I haven't eaten yet.",
+              "highlight": "نخورده‌ام"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من به کابل رفتم است",
+            "translit": "man ba kābul raftam ast"
+          },
+          "right": {
+            "target": "من به کابل رفته‌ام",
+            "translit": "man ba kābul rafta-am",
+            "en": "I have been to Kabul."
+          },
+          "why": "The perfect is built on the -a form, rafta, not on the simple past raftam."
+        }
+      ],
+      "related": [
+        "simple-past",
+        "past-continuous",
+        "verb-stems"
+      ],
+      "lessonIds": [
+        "gl-27"
+      ]
+    },
+    {
+      "id": "gh-21",
+      "slug": "indefinite",
+      "level": "A2",
+      "rank": 6,
+      "title": "'A' and 'some': yak and -ē",
+      "summary": "Say 'a book' with yak ketāb or with the ending -ē: ketābē. Either is enough, but you will also hear both together: yak rōzē, one day.",
+      "sample": {
+        "target": "یک کتاب",
+        "translit": "yak ketāb"
+      },
+      "aliases": [
+        "indefinite",
+        "indefinite article",
+        "article",
+        "a",
+        "an",
+        "one",
+        "some",
+        "someone",
+        "something",
+        "yak",
+        "-e",
+        "-ē",
+        "یک",
+        "کسی",
+        "چیزی"
+      ],
+      "keywords": [
+        "unknown",
+        "any",
+        "a certain"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Two ways to say 'a'",
+          "body": "Dari has no word for 'the': a plain noun is already definite or general. For 'a', put yak (one) before the noun, or add -ē to its end. Either is enough; yak is more usual in speech, and the two also appear together: yak rōzē, one day."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "یک کتاب خریدم",
+              "translit": "yak ketāb kharīdam",
+              "en": "I bought a book.",
+              "highlight": "یک"
+            },
+            {
+              "target": "کتابی خریدم",
+              "translit": "ketābē kharīdam",
+              "en": "I bought a book.",
+              "highlight": "کتابی"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "-ē in script",
+          "columns": [
+            "The noun ends in",
+            "With -ē"
+          ],
+          "rows": [
+            [
+              "a consonant: ketāb",
+              "ketābē, کتابی"
+            ],
+            [
+              "-a: khāna",
+              "khāna-yē, خانه‌ای (also خانه‌یی)"
+            ],
+            [
+              "-ā: jā",
+              "jāyē, جایی"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "With an adjective",
+          "body": "With an adjective, -ē moves to the end of the phrase: ketāb-e nawē, a new book."
+        },
+        {
+          "type": "rule",
+          "heading": "Someone, something",
+          "body": "Some everyday words are built this way: kasē, someone; chīzē, something; jāyē, somewhere."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کسی می‌آید",
+              "translit": "kasē mēāyad",
+              "en": "Someone is coming.",
+              "highlight": "کسی"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "یک کتاب‌ها",
+            "translit": "yak ketāb-hā"
+          },
+          "right": {
+            "target": "چند کتاب",
+            "translit": "chand ketāb",
+            "en": "a few books"
+          },
+          "why": "yak means 'one', so it cannot go with a plural. For 'some books', use chand (a few)."
+        }
+      ],
+      "related": [
+        "plurals",
+        "ezafe",
+        "object-marker-ra"
+      ],
+      "lessonIds": [
+        "gl-43",
+        "gl-44"
+      ]
+    },
+    {
+      "id": "gh-22",
+      "slug": "half-space",
+      "level": "A2",
+      "rank": 10,
+      "title": "Writing: the half-space",
+      "summary": "Dari joins some word parts with a half-space, a break between letters without a gap: می‌خوانم, کتاب‌ها.",
+      "sample": {
+        "target": "می‌خوانم",
+        "translit": "mēkhānam"
+      },
+      "aliases": [
+        "half space",
+        "half-space",
+        "zwnj",
+        "nim fasela",
+        "nīm-fāsila",
+        "zero width non joiner",
+        "spelling",
+        "writing",
+        "joining letters",
+        "typing",
+        "keyboard",
+        "نیم‌فاصله"
+      ],
+      "keywords": [
+        "write",
+        "script",
+        "space",
+        "prefix",
+        "suffix"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "What it is",
+          "body": "Arabic-script letters join to their neighbours. A half-space stops that join without leaving a gap, so a prefix or ending stays visibly separate but still part of the word."
+        },
+        {
+          "type": "table",
+          "heading": "Where it goes",
+          "columns": [
+            "Part",
+            "Example"
+          ],
+          "rows": [
+            [
+              "mē- and namē-",
+              "می‌خوانم, نمی‌خوانم"
+            ],
+            [
+              "-hā plural",
+              "کتاب‌ها"
+            ],
+            [
+              "-tar and -tarīn",
+              "کلان‌تر"
+            ],
+            [
+              "endings after -a",
+              "خانه‌ام"
+            ],
+            [
+              "present perfect",
+              "رفته‌ام"
+            ],
+            [
+              "-ē after -a",
+              "خانه‌ای"
+            ]
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "میخوانم",
+            "translit": "mēkhānam"
+          },
+          "right": {
+            "target": "می‌خوانم",
+            "translit": "mēkhānam",
+            "en": "I read."
+          },
+          "why": "In careful writing mē- is kept apart with a half-space. Written together (میخوانم) is common in quick typing, as below, but not in edited text."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "می خوانم",
+            "translit": "mē khānam"
+          },
+          "right": {
+            "target": "می‌خوانم",
+            "translit": "mēkhānam",
+            "en": "I read."
+          },
+          "why": "A full space splits one word into two. mē- is a prefix, not a word."
+        },
+        {
+          "type": "rule",
+          "heading": "On a phone",
+          "body": "On a computer with the Persian (Standard) layout, Shift+Space types a half-space. On an Android phone, hold the space bar. In quick messages many people skip it and type میخوانم; you will need to read both."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "کتاب‌ها",
+            "translit": "ketāb-hā"
+          },
+          "spoken": {
+            "target": "کتابا",
+            "translit": "ketābā"
+          },
+          "note": "Casual Kabuli messages rarely use the half-space, partly because spoken forms like کتابا and میرم do not need one."
+        }
+      ],
+      "related": [
+        "present-tense",
+        "plurals",
+        "present-perfect"
+      ],
+      "lessonIds": [
+        "gl-10",
+        "gl-04"
+      ]
     }
   ]
 }
