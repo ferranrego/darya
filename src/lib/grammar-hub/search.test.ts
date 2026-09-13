@@ -45,6 +45,23 @@ describe("grammar hub search", () => {
     for (const [q, slug] of Object.entries(cases)) expect(top(q), q).toBe(slug);
   });
 
+  it("finds each A2 page from the plain English a learner would type", () => {
+    const cases: Record<string, string> = {
+      bigger: "comparatives",
+      will: "future",
+      stem: "verb-stems",
+      imperative: "commands",
+      "want to": "want-can-must",
+      must: "want-can-must",
+      "compound verbs": "compound-verbs",
+      "used to": "past-continuous",
+      "present perfect": "present-perfect",
+      someone: "indefinite",
+      zwnj: "half-space",
+    };
+    for (const [q, slug] of Object.entries(cases)) expect(top(q), q).toBe(slug);
+  });
+
   it("does not forgive typos on short words, where one letter is a different rule", () => {
     // "na" is negation, "ra" is the object marker: one edit apart, never the same page.
     expect(searchHub("na", hubEntries).map((h) => h.entry.slug)).not.toContain("object-marker-ra");

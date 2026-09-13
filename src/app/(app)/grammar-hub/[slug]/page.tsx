@@ -39,7 +39,7 @@ export default async function GrammarHubEntryPage({ params }: { params: Promise<
             {entry.level} {HUB_CHAPTER_TITLE[entry.level]}
           </span>
         </Link>
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
           <h1 className="text-balance text-[28px] font-semibold leading-tight tracking-tight">{entry.title}</h1>
           <span lang={lang.code} dir={lang.dir} className="shrink-0 pb-0.5 text-[26px] leading-none text-lapis">
             {entry.sample.target}
