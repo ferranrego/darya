@@ -3291,7 +3291,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "hidden": true
             }
           ]
         }
@@ -4455,12 +4456,12 @@
               "title": "Go! Read!",
               "subtitle": "The imperative",
               "grammarPoint": "imperative",
-              "grammarPointEn": "The imperative: be- + present stem (buraw! = go!, bukhān! = read!); negative na- (naraw! = don't go!).",
+              "grammarPointEn": "The imperative: bu- + present stem (buraw! = go!, bukhān! = read!); negative na- (naraw! = don't go!).",
               "slides": [
                 {
                   "id": "gs-21-1",
-                  "title": "be- + stem",
-                  "body": "To give a command to one person, put be- on the present stem: raw → buraw (go!), khān → bukhān (read!). For 'don't', use na-: naraw (don't go).",
+                  "title": "bu- + stem",
+                  "body": "To give a command to one person, put bu- on the present stem: raw → buraw (go!), khān → bukhān (read!). For 'don't', use na-: naraw (don't go).",
                   "table": [
                     [
                       "raftan → buraw",
@@ -4497,7 +4498,7 @@
                 {
                   "id": "gs-21-2",
                   "title": "Saying don't",
-                  "body": "Swap be- for na- to forbid: naraw (don't go), nakhur (don't eat).",
+                  "body": "Swap bu- for na- to forbid: naraw (don't go), nakhur (don't eat).",
                   "examples": [
                     {
                       "target": "آنجا نرو",
@@ -4641,12 +4642,12 @@
               "title": "Please sit down",
               "subtitle": "Polite requests with the plural",
               "grammarPoint": "polite-imperative",
-              "grammarPointEn": "Polite requests use the plural imperative (be- + stem + -ēd) with lutfan: lutfan bukhānēd (please read); the plural is polite even to one person.",
+              "grammarPointEn": "Polite requests use the plural imperative (bu- + stem + -ēd) with lutfan: lutfan bukhānēd (please read); the plural is polite even to one person.",
               "slides": [
                 {
                   "id": "gs-22-1",
                   "title": "Add -ēd, add lutfan",
-                  "body": "To be polite, use the plural command (be- + stem + -ēd) and start with lutfan (please). It is polite even when speaking to one person.",
+                  "body": "To be polite, use the plural command (bu- + stem + -ēd) and start with lutfan (please). It is polite even when speaking to one person.",
                   "examples": [
                     {
                       "target": "لطفاً بنشینید",
@@ -4803,12 +4804,12 @@
               "title": "I want to go",
               "subtitle": "mēkhāham + the want-form",
               "grammarPoint": "want-subjunctive",
-              "grammarPointEn": "mēkhāham (I want) plus a second verb in the subjunctive (be- form): mēkhāham burawam (I want to go); the second verb has no mē-.",
+              "grammarPointEn": "mēkhāham (I want) plus a second verb in the subjunctive (bu- form): mēkhāham burawam (I want to go); the second verb has no mē-.",
               "slides": [
                 {
                   "id": "gs-23-1",
                   "title": "Want + a second verb",
-                  "body": "'I want to go' uses two verbs: mēkhāham (I want) + burawam (go). This second form - be- + stem + ending - is the 'want-form' (subjunctive). It never takes mē-.",
+                  "body": "'I want to go' uses two verbs: mēkhāham (I want) + burawam (go). This second form - bu- + stem + ending - is the 'want-form' (subjunctive). It never takes mē-.",
                   "examples": [
                     {
                       "target": "می‌خواهم بروم",
@@ -4958,12 +4959,12 @@
               "title": "I can read",
               "subtitle": "mētawānam + the want-form",
               "grammarPoint": "can-subjunctive",
-              "grammarPointEn": "mētawānam (I can) plus a second verb in the subjunctive: mētawānam bukhānam (I can read); same be- form as with 'want'.",
+              "grammarPointEn": "mētawānam (I can) plus a second verb in the subjunctive: mētawānam bukhānam (I can read); same bu- form as with 'want'.",
               "slides": [
                 {
                   "id": "gs-24-1",
                   "title": "Can + a second verb",
-                  "body": "'Can' works just like 'want': mētawānam (I can) + the be- form. mētawānam bukhānam - 'I can read'.",
+                  "body": "'Can' works just like 'want': mētawānam (I can) + the bu- form. mētawānam bukhānam - 'I can read'.",
                   "examples": [
                     {
                       "target": "می‌توانم دری بخوانم",
@@ -5122,7 +5123,7 @@
                 {
                   "id": "gs-25-1",
                   "title": "bāyad never changes",
-                  "body": "bāyad means 'must'. Unlike other verbs it stays the same for everyone - only the second verb (the be- form) changes for person.",
+                  "body": "bāyad means 'must'. Unlike other verbs it stays the same for everyone - only the second verb (the bu- form) changes for person.",
                   "examples": [
                     {
                       "target": "باید بروم",
@@ -5788,24 +5789,24 @@
             {
               "id": "gl-29",
               "title": "I know that…",
-              "subtitle": "Joining sentences with ke",
+              "subtitle": "Joining sentences with ki",
               "grammarPoint": "clauses-ke",
-              "grammarPointEn": "The conjunction ke (that) joins a main verb of thinking/saying to a full clause: mēdānam ke ō āmad (I know that he came).",
+              "grammarPointEn": "The conjunction ki (that) joins a main verb of thinking/saying to a full clause: mēdānam ki ō āmad (I know that he came).",
               "slides": [
                 {
                   "id": "gs-29-1",
-                  "title": "ke links two ideas",
-                  "body": "Use ke (that) after verbs like 'know', 'say', 'think' to attach a whole sentence: guftam ke mērawam - 'I said that I am going'.",
+                  "title": "ki links two ideas",
+                  "body": "Use ki (that) after verbs like 'know', 'say', 'think' to attach a whole sentence: guftam ki mērawam - 'I said that I am going'.",
                   "examples": [
                     {
                       "target": "می‌دانم که او آمد",
-                      "translit": "mēdānam ke ō āmad",
+                      "translit": "mēdānam ki ō āmad",
                       "en": "I know that he came.",
                       "highlight": "که"
                     },
                     {
                       "target": "گفتم که به بازار می‌روم",
-                      "translit": "guftam ke ba bāzār mērawam",
+                      "translit": "guftam ki ba bāzār mērawam",
                       "en": "I said that I am going to the bazaar.",
                       "highlight": "که"
                     }
@@ -5821,7 +5822,7 @@
                   "en": "I know that he came.",
                   "answer": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
                   "distractors": [
                     {
@@ -5839,7 +5840,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "گفتم که به بازار می‌روم",
-                  "translit": "guftam ke ba bāzār mērawam",
+                  "translit": "guftam ki ba bāzār mērawam",
                   "en": "I said that I am going to the bazaar.",
                   "distractorsEn": [
                     "I go to the bazaar.",
@@ -5861,7 +5862,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "او",
@@ -5876,7 +5877,7 @@
                       "translit": "ast"
                     }
                   ],
-                  "translit": "fikr mēkunam ke ō mu'allem ast",
+                  "translit": "fikr mēkunam ki ō mu'allem ast",
                   "extraWords": [
                     {
                       "target": "و",
@@ -5889,16 +5890,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او گفت که نان خورد",
-                  "translit": "ō guft ke nān khurd",
+                  "translit": "ō guft ki nān khurd",
                   "en": "He said that he ate bread.",
                   "distractorsTarget": [
                     {
                       "target": "او گفت که نان می‌خورد",
-                      "translit": "ō guft ke nān mēkhurad"
+                      "translit": "ō guft ki nān mēkhurad"
                     },
                     {
                       "target": "من گفتم که نان خوردم",
-                      "translit": "man guftam ke nān khurdam"
+                      "translit": "man guftam ki nān khurdam"
                     }
                   ]
                 },
@@ -5910,7 +5911,7 @@
                   "en": "He knows that I am here.",
                   "answer": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
                   "distractors": [
                     {
@@ -5930,7 +5931,7 @@
                   "pairs": [
                     {
                       "target": "که",
-                      "translit": "ke",
+                      "translit": "ki",
                       "en": "that"
                     },
                     {
@@ -5957,12 +5958,12 @@
               "title": "A2 review",
               "subtitle": "Everything from this level, mixed",
               "grammarPoint": "a2-capstone",
-              "grammarPointEn": "Mixed review of A2: comparatives, superlatives, possessive endings, telling time, frequency, future, imperative, modals with the subjunctive, past habitual, present perfect, compound verbs, and ke-clauses.",
+              "grammarPointEn": "Mixed review of A2: comparatives, superlatives, possessive endings, telling time, frequency, future, imperative, modals with the subjunctive, past habitual, present perfect, compound verbs, and ki-clauses.",
               "slides": [
                 {
                   "id": "gs-30-1",
                   "title": "You've come far",
-                  "body": "You can now compare things, give commands, say what you want and must do, talk about habits and experiences, and join ideas with ke. These exercises mix it all.",
+                  "body": "You can now compare things, give commands, say what you want and must do, talk about habits and experiences, and join ideas with ki. These exercises mix it all.",
                   "examples": [
                     {
                       "target": "می‌خواهم به بهترین شهر بروم",
@@ -6062,16 +6063,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "می‌دانم که او بهترین دوست من است",
-                  "translit": "mēdānam ke ō bihtarīn dōst-e man ast",
+                  "translit": "mēdānam ki ō bihtarīn dōst-e man ast",
                   "en": "I know that he is my best friend.",
                   "distractorsTarget": [
                     {
                       "target": "می‌دانم که او دوست من است",
-                      "translit": "mēdānam ke ō dōst-e man ast"
+                      "translit": "mēdānam ki ō dōst-e man ast"
                     },
                     {
                       "target": "فکر می‌کنم که او بهترین دوست من است",
-                      "translit": "fikr mēkunam ke ō bihtarīn dōst-e man ast"
+                      "translit": "fikr mēkunam ki ō bihtarīn dōst-e man ast"
                     }
                   ]
                 },
@@ -6163,7 +6164,7 @@
                   "id": "ge-95-1",
                   "type": "fillBlank",
                   "target": "من سیب ___ می‌خورم",
-                  "translit": "man sēb ___ mēkhoram",
+                  "translit": "man sēb ___ mēkhuram",
                   "en": "I eat the apple.",
                   "answer": {
                     "target": "را",
@@ -6242,8 +6243,8 @@
                 {
                   "id": "ge-95-5",
                   "type": "fillBlank",
-                  "target": "شما آب ___ می‌نوشید",
-                  "translit": "shumā āb ___ mēnōshēd",
+                  "target": "شما آب ___ می‌خورید",
+                  "translit": "shumā āb ___ mēkhurēd",
                   "en": "You drink the water.",
                   "answer": {
                     "target": "را",
@@ -6260,7 +6261,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "hidden": true
             }
           ]
         }
@@ -6274,19 +6276,19 @@
         {
           "id": "gb-11",
           "title": "The Subjunctive System",
-          "subtitle": "The be- form, on its own terms",
+          "subtitle": "The bu- form, on its own terms",
           "lessons": [
             {
               "id": "gl-31",
-              "title": "The be- form in full",
+              "title": "The bu- form in full",
               "subtitle": "Subjunctive for every person",
               "grammarPoint": "subjunctive-full",
-              "grammarPointEn": "The present subjunctive: be- + present stem + personal endings, used after modals, wishes and purpose; the verb drops mē-. Negative is na- + stem.",
+              "grammarPointEn": "The present subjunctive: bu- + present stem + personal endings, used after modals, wishes and purpose; the verb drops mē-. Negative is na- + stem.",
               "slides": [
                 {
                   "id": "gs-31-1",
                   "title": "One form, many uses",
-                  "body": "You met the be- form after want/can/must. It is the subjunctive, and it appears whenever an action is wished, needed, or not yet real. It never takes mē-.",
+                  "body": "You met the bu- form after want/can/must. It is the subjunctive, and it appears whenever an action is wished, needed, or not yet real. It never takes mē-.",
                   "table": [
                     [
                       "man",
@@ -6316,7 +6318,7 @@
                   "examples": [
                     {
                       "target": "او می‌خواهد که ما برویم",
-                      "translit": "ō mēkhāhad ke mā burawēm",
+                      "translit": "ō mēkhāhad ki mā burawēm",
                       "en": "He wants us to go.",
                       "highlight": "برویم"
                     }
@@ -6329,7 +6331,7 @@
                   "examples": [
                     {
                       "target": "بهتر است که نروی",
-                      "translit": "bihtar ast ke narawī",
+                      "translit": "bihtar ast ki narawī",
                       "en": "It is better that you don't go.",
                       "highlight": "نروی"
                     }
@@ -6341,7 +6343,7 @@
                   "id": "ge-31-1",
                   "type": "fillBlank",
                   "target": "او می‌خواهد که ما ___",
-                  "translit": "ō mēkhāhad ke mā ___",
+                  "translit": "ō mēkhāhad ki mā ___",
                   "en": "He wants us to go.",
                   "answer": {
                     "target": "برویم",
@@ -6363,7 +6365,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "بهتر است که نروی",
-                  "translit": "bihtar ast ke narawī",
+                  "translit": "bihtar ast ki narawī",
                   "en": "It is better that you don't go.",
                   "distractorsEn": [
                     "It is better that you go.",
@@ -6374,7 +6376,7 @@
                   "id": "ge-31-3",
                   "type": "spotError",
                   "target": "باید که او می‌رود",
-                  "translit": "bāyad ke ō mērawad",
+                  "translit": "bāyad ki ō mērawad",
                   "en": "He must go.",
                   "errorWord": {
                     "target": "می‌رود",
@@ -6384,7 +6386,7 @@
                     "target": "برود",
                     "translit": "burawad"
                   },
-                  "hint": "After bāyad, the verb takes the be- form, not mē-."
+                  "hint": "After bāyad, the verb takes the bu- form, not mē-."
                 },
                 {
                   "id": "ge-31-4",
@@ -6397,7 +6399,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "کتاب",
@@ -6412,7 +6414,7 @@
                       "translit": "bukhānī"
                     }
                   ],
-                  "translit": "mēkhāham ke ketāb rā bukhānī",
+                  "translit": "mēkhāham ki ketāb rā bukhānī",
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
@@ -6424,7 +6426,7 @@
                   "id": "ge-31-5",
                   "type": "fillBlank",
                   "target": "ممکن است که او ___",
-                  "translit": "mumken ast ke ō ___",
+                  "translit": "mumken ast ki ō ___",
                   "en": "It is possible that he comes.",
                   "answer": {
                     "target": "بیاید",
@@ -6473,12 +6475,12 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او می‌خواهد که کار کنم",
-                  "translit": "ō mēkhāhad ke kār kunam",
+                  "translit": "ō mēkhāhad ki kār kunam",
                   "en": "He wants me to work.",
                   "distractorsTarget": [
                     {
                       "target": "او می‌خواهد که کار کنی",
-                      "translit": "ō mēkhāhad ke kār kunī"
+                      "translit": "ō mēkhāhad ki kār kunī"
                     },
                     {
                       "target": "او می‌خواهد کار کند",
@@ -6497,7 +6499,7 @@
               "slides": [
                 {
                   "id": "gs-32-1",
-                  "title": "Possibility takes the be- form",
+                  "title": "Possibility takes the bu- form",
                   "body": "Because a possibility is not yet real, shāyad (maybe) and mumkin ast (it is possible that) are followed by the subjunctive.",
                   "examples": [
                     {
@@ -6508,7 +6510,7 @@
                     },
                     {
                       "target": "ممکن است که باران بیاید",
-                      "translit": "mumken ast ke bārān biyāyad",
+                      "translit": "mumken ast ki bārān biyāyad",
                       "en": "It might rain.",
                       "highlight": "ممکن"
                     }
@@ -6542,7 +6544,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "ممکن است که باران بیاید",
-                  "translit": "mumken ast ke bārān biyāyad",
+                  "translit": "mumken ast ki bārān biyāyad",
                   "en": "It might rain.",
                   "distractorsEn": [
                     "It is raining.",
@@ -6563,7 +6565,7 @@
                     "target": "بخورد",
                     "translit": "bukhurad"
                   },
-                  "hint": "After shāyad, use the be- form."
+                  "hint": "After shāyad, use the bu- form."
                 },
                 {
                   "id": "ge-32-4",
@@ -6617,7 +6619,7 @@
                   "id": "ge-32-6",
                   "type": "fillBlank",
                   "target": "ممکن است که ما ___",
-                  "translit": "mumken ast ke mā ___",
+                  "translit": "mumken ast ki mā ___",
                   "en": "It's possible that we'll work.",
                   "answer": {
                     "target": "کار کنیم",
@@ -6639,14 +6641,14 @@
             {
               "id": "gl-33",
               "title": "So that I can buy bread",
-              "subtitle": "Purpose with tā and ke",
+              "subtitle": "Purpose with tā and ki",
               "grammarPoint": "purpose-clauses",
-              "grammarPointEn": "Purpose clauses with tā or ke ('so that', 'in order to') taking the subjunctive: raftam tā nān bukharam (I went to buy bread).",
+              "grammarPointEn": "Purpose clauses with tā or ki ('so that', 'in order to') taking the subjunctive: raftam tā nān bukharam (I went to buy bread).",
               "slides": [
                 {
                   "id": "gs-33-1",
                   "title": "Why you did it",
-                  "body": "To say why you do something, use tā (or ke) + the subjunctive: 'I went so that I could buy bread'. tā here means 'in order to'.",
+                  "body": "To say why you do something, use tā (or ki) + the subjunctive: 'I went so that I could buy bread'. tā here means 'in order to'.",
                   "examples": [
                     {
                       "target": "به بازار رفتم تا نان بخرم",
@@ -6743,7 +6745,7 @@
                     "target": "کنم",
                     "translit": "kunam"
                   },
-                  "hint": "After tā (in order to), use the be- form."
+                  "hint": "After tā (in order to), use the bu- form."
                 },
                 {
                   "id": "ge-33-5",
@@ -6802,7 +6804,7 @@
               "slides": [
                 {
                   "id": "gs-34-1",
-                  "title": "agar + be- form",
+                  "title": "agar + bu- form",
                   "body": "For a real, possible condition, use agar (if) with the subjunctive, and the present tense for the result. 'If you go, you'll see him.'",
                   "examples": [
                     {
@@ -6868,7 +6870,7 @@
                     "target": "بیایی",
                     "translit": "biyāyī"
                   },
-                  "hint": "After agar, the if-verb takes the be- form."
+                  "hint": "After agar, the if-verb takes the bu- form."
                 },
                 {
                   "id": "ge-34-4",
@@ -6948,18 +6950,18 @@
             {
               "id": "gl-35",
               "title": "When he came…",
-              "subtitle": "Time clauses with waqtē ke",
+              "subtitle": "Time clauses with waqtē ki",
               "grammarPoint": "when-clauses",
-              "grammarPointEn": "Time clauses with waqtē ke (when): waqtē ke āmad, khāna būdam (when he came, I was at home); a past time-clause takes the past tense.",
+              "grammarPointEn": "Time clauses with waqtē ki (when): waqtē ki āmad, khāna būdam (when he came, I was at home); a past time-clause takes the past tense.",
               "slides": [
                 {
                   "id": "gs-35-1",
-                  "title": "waqtē ke - when",
-                  "body": "waqtē ke means 'when' and joins two events. For past events, both verbs are in the past.",
+                  "title": "waqtē ki - when",
+                  "body": "waqtē ki means 'when' and joins two events. For past events, both verbs are in the past.",
                   "examples": [
                     {
                       "target": "وقتی که آمد، من خانه بودم",
-                      "translit": "waqtē ke āmad, man khāna būdam",
+                      "translit": "waqtē ki āmad, man khāna būdam",
                       "en": "When he came, I was at home.",
                       "highlight": "وقتی که"
                     }
@@ -6971,7 +6973,7 @@
                   "id": "ge-35-1",
                   "type": "fillBlank",
                   "target": "وقتی که آمد، من خانه ___",
-                  "translit": "waqtē ke āmad, man khāna ___",
+                  "translit": "waqtē ki āmad, man khāna ___",
                   "en": "When he came, I was at home.",
                   "answer": {
                     "target": "بودم",
@@ -6993,7 +6995,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "وقتی که او رفت، ما آمدیم",
-                  "translit": "waqtē ke ō raft, mā āmadēm",
+                  "translit": "waqtē ki ō raft, mā āmadēm",
                   "en": "When he left, we came.",
                   "distractorsEn": [
                     "When he leaves, we come.",
@@ -7011,7 +7013,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "او را",
@@ -7030,7 +7032,7 @@
                       "translit": "shudam"
                     }
                   ],
-                  "translit": "waqtē ke ō rā dīdam, khush shudam",
+                  "translit": "waqtē ki ō rā dīdam, khush shudam",
                   "extraWords": [
                     {
                       "target": "می‌بینم",
@@ -7043,7 +7045,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "وقتی که نان خوردم، به مکتب رفتم",
-                  "translit": "waqtē ke nān khurdam, ba maktab raftam",
+                  "translit": "waqtē ki nān khurdam, ba maktab raftam",
                   "en": "When I had eaten, I went to school.",
                   "distractorsTarget": [
                     {
@@ -7052,7 +7054,7 @@
                     },
                     {
                       "target": "وقتی که نان می‌خورم، به مکتب می‌روم",
-                      "translit": "waqtē ke nān mēkhuram, ba maktab mērawam"
+                      "translit": "waqtē ki nān mēkhuram, ba maktab mērawam"
                     }
                   ]
                 },
@@ -7060,7 +7062,7 @@
                   "id": "ge-35-5",
                   "type": "fillBlank",
                   "target": "وقتی که تو ___، ما رفتیم",
-                  "translit": "waqtē ke tu ___, mā raftēm",
+                  "translit": "waqtē ki tu ___, mā raftēm",
                   "en": "When you came, we left.",
                   "answer": {
                     "target": "آمدی",
@@ -7084,7 +7086,7 @@
                   "pairs": [
                     {
                       "target": "وقتی که",
-                      "translit": "waqtē ke",
+                      "translit": "waqtē ki",
                       "en": "when"
                     },
                     {
@@ -7099,7 +7101,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke",
+                      "translit": "ki",
                       "en": "that"
                     }
                   ]
@@ -7118,7 +7120,7 @@
               "title": "I had already gone",
               "subtitle": "The past perfect",
               "grammarPoint": "past-perfect",
-              "grammarPointEn": "Past perfect: past participle + budam/būdī/būd… (rafta būdam = I had gone), for an action completed before another past moment.",
+              "grammarPointEn": "Past perfect: past participle + būdam/būdī/būd… (rafta būdam = I had gone), for an action completed before another past moment.",
               "slides": [
                 {
                   "id": "gs-36-1",
@@ -7153,7 +7155,7 @@
                   "examples": [
                     {
                       "target": "وقتی که آمدی، من رفته بودم",
-                      "translit": "waqtē ke āmadī, man rafta būdam",
+                      "translit": "waqtē ki āmadī, man rafta būdam",
                       "en": "When you came, I had already gone.",
                       "highlight": "رفته بودم"
                     }
@@ -7165,7 +7167,7 @@
                   "id": "ge-36-1",
                   "type": "fillBlank",
                   "target": "وقتی که آمدی، من ___",
-                  "translit": "waqtē ke āmadī, man ___",
+                  "translit": "waqtē ki āmadī, man ___",
                   "en": "When you came, I had already gone.",
                   "answer": {
                     "target": "رفته بودم",
@@ -7232,7 +7234,7 @@
                   "id": "ge-36-4",
                   "type": "spotError",
                   "target": "وقتی که من آمدم، او رفته است",
-                  "translit": "waqtē ke man āmadam, ō rafta ast",
+                  "translit": "waqtē ki man āmadam, ō rafta ast",
                   "en": "When I came, he had gone.",
                   "errorWord": {
                     "target": "است",
@@ -7609,24 +7611,24 @@
             {
               "id": "gl-39",
               "title": "The man who came",
-              "subtitle": "Relative clauses with ke",
+              "subtitle": "Relative clauses with ki",
               "grammarPoint": "relative-clauses",
-              "grammarPointEn": "Relative clauses: an indefinite noun marked with -ē plus ke introduces a describing clause: mardē ke āmad (the man who came), ketābē ke khāndam (the book that I read).",
+              "grammarPointEn": "Relative clauses: an indefinite noun marked with -ē plus ki introduces a describing clause: mardē ki āmad (the man who came), ketābē ki khāndam (the book that I read).",
               "slides": [
                 {
                   "id": "gs-39-1",
-                  "title": "noun + ‑ē + ke",
-                  "body": "To say 'the man who…' or 'the book that…', add ‑ē to the noun and follow with ke and a clause. The ‑ē signals 'the particular one that…'.",
+                  "title": "noun + ‑ē + ki",
+                  "body": "To say 'the man who…' or 'the book that…', add ‑ē to the noun and follow with ki and a clause. The ‑ē signals 'the particular one that…'.",
                   "examples": [
                     {
                       "target": "مردی که آمد، دوست من است",
-                      "translit": "mardē ke āmad, dōst-e man ast",
+                      "translit": "mardē ki āmad, dōst-e man ast",
                       "en": "The man who came is my friend.",
                       "highlight": "مردی که"
                     },
                     {
                       "target": "کتابی که خواندم، خوب بود",
-                      "translit": "ketābē ke khāndam, khūb būd",
+                      "translit": "ketābē ki khāndam, khūb būd",
                       "en": "The book that I read was good.",
                       "highlight": "کتابی که"
                     }
@@ -7642,7 +7644,7 @@
                   "en": "The man who came is my friend.",
                   "answer": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
                   "distractors": [
                     {
@@ -7660,7 +7662,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "کتابی که خواندم، خوب بود",
-                  "translit": "ketābē ke khāndam, khūb būd",
+                  "translit": "ketābē ki khāndam, khūb būd",
                   "en": "The book that I read was good.",
                   "distractorsEn": [
                     "The book is good.",
@@ -7678,7 +7680,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "آمد",
@@ -7693,7 +7695,7 @@
                       "translit": "ast"
                     }
                   ],
-                  "translit": "zanē ke āmad, mu'allem ast",
+                  "translit": "zanē ki āmad, mu'allem ast",
                   "extraWords": [
                     {
                       "target": "را",
@@ -7705,7 +7707,7 @@
                   "id": "ge-39-4",
                   "type": "spotError",
                   "target": "شهری را که دیدم، کلان بود",
-                  "translit": "shahrē rā ke dīdam, kalān būd",
+                  "translit": "shahrē rā ki dīdam, kalān būd",
                   "en": "The city that I saw was big.",
                   "errorWord": {
                     "target": "را",
@@ -7713,16 +7715,17 @@
                   },
                   "correction": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
-                  "hint": "A relative clause opens with ke; here rā does not belong."
+                  "hint": "A relative clause opens with ki; here rā does not belong.",
+                  "correctedTarget": "شهری که دیدم، کلان بود"
                 },
                 {
                   "id": "ge-39-5",
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "شاگردی که درس خواند، آمد",
-                  "translit": "shāgerdē ke dars khānd, āmad",
+                  "translit": "shāgerdē ki dars khānd, āmad",
                   "en": "The student who studied came.",
                   "distractorsTarget": [
                     {
@@ -7731,7 +7734,7 @@
                     },
                     {
                       "target": "شاگردی که درس می‌خواند، می‌آید",
-                      "translit": "shāgerdē ke dars mēkhānad, mēāyad"
+                      "translit": "shāgerdē ki dars mēkhānad, mēāyad"
                     }
                   ]
                 },
@@ -7743,7 +7746,7 @@
                   "en": "The house that I saw was beautiful.",
                   "answer": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
                   "distractors": [
                     {
@@ -7763,22 +7766,22 @@
               "title": "He said that…",
               "subtitle": "Reporting what people say",
               "grammarPoint": "reported-speech",
-              "grammarPointEn": "Reported speech with ke: guft ke mērawad (he said that he is going); unlike English, the reported verb's tense does not shift back.",
+              "grammarPointEn": "Reported speech with ki: guft ki mērawad (he said that he is going); unlike English, the reported verb's tense does not shift back.",
               "slides": [
                 {
                   "id": "gs-40-1",
                   "title": "Keep the tense",
-                  "body": "Report speech with ke. Dari keeps the original tense: 'He said that he IS going' (not 'was going'). The verb stays as first spoken.",
+                  "body": "Report speech with ki. Dari keeps the original tense: 'He said that he IS going' (not 'was going'). The verb stays as first spoken.",
                   "examples": [
                     {
                       "target": "او گفت که می‌رود",
-                      "translit": "ō guft ke mērawad",
+                      "translit": "ō guft ki mērawad",
                       "en": "He said that he is going.",
                       "highlight": "می‌رود"
                     },
                     {
                       "target": "او گفت که نان خورد",
-                      "translit": "ō guft ke nān khurd",
+                      "translit": "ō guft ki nān khurd",
                       "en": "He said that he ate bread.",
                       "highlight": "خورد"
                     }
@@ -7791,7 +7794,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "او گفت که می‌رود",
-                  "translit": "ō guft ke mērawad",
+                  "translit": "ō guft ki mērawad",
                   "en": "He said that he is going.",
                   "distractorsEn": [
                     "He said that he went.",
@@ -7806,7 +7809,7 @@
                   "en": "He said that he ate bread.",
                   "answer": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
                   "distractors": [
                     {
@@ -7834,7 +7837,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "معلم",
@@ -7845,7 +7848,7 @@
                       "translit": "ast"
                     }
                   ],
-                  "translit": "ō guft ke mu'allem ast",
+                  "translit": "ō guft ki mu'allem ast",
                   "extraWords": [
                     {
                       "target": "بود",
@@ -7858,16 +7861,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او گفت که فردا می‌آید",
-                  "translit": "ō guft ke fardā mēāyad",
+                  "translit": "ō guft ki fardā mēāyad",
                   "en": "He said that he will come tomorrow.",
                   "distractorsTarget": [
                     {
                       "target": "او گفت که فردا آمد",
-                      "translit": "ō guft ke fardā āmad"
+                      "translit": "ō guft ki fardā āmad"
                     },
                     {
                       "target": "او می‌گوید که فردا می‌آید",
-                      "translit": "ō mēgōyad ke fardā mēāyad"
+                      "translit": "ō mēgōyad ki fardā mēāyad"
                     }
                   ]
                 },
@@ -7875,7 +7878,7 @@
                   "id": "ge-40-5",
                   "type": "fillBlank",
                   "target": "من گفتم که کار ___",
-                  "translit": "man guftam ke kār ___",
+                  "translit": "man guftam ki kār ___",
                   "en": "I said that I am working.",
                   "answer": {
                     "target": "می‌کنم",
@@ -8214,7 +8217,7 @@
                   "pairs": [
                     {
                       "target": "نوشت",
-                      "translit": "neweasht",
+                      "translit": "nawisht",
                       "en": "he wrote"
                     },
                     {
@@ -8899,7 +8902,7 @@
                   "examples": [
                     {
                       "target": "اگر بیایی، مردی را که دیدم می‌بینی",
-                      "translit": "agar biyāyī, mardē rā ke dīdam mēbīnī",
+                      "translit": "agar biyāyī, mardē rā ki dīdam mēbīnī",
                       "en": "If you come, you'll see the man I saw."
                     }
                   ]
@@ -8920,7 +8923,7 @@
                     "target": "بیایی",
                     "translit": "biyāyī"
                   },
-                  "hint": "After agar, the if-verb takes the be- form."
+                  "hint": "After agar, the if-verb takes the bu- form."
                 },
                 {
                   "id": "ge-47-2",
@@ -8930,7 +8933,7 @@
                   "en": "He said that he will come tomorrow.",
                   "answer": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
                   "distractors": [
                     {
@@ -8948,7 +8951,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "وقتی که آمدی، من رفته بودم",
-                  "translit": "waqtē ke āmadī, man rafta būdam",
+                  "translit": "waqtē ki āmadī, man rafta būdam",
                   "en": "When you came, I had already gone.",
                   "distractorsEn": [
                     "When you came, I went.",
@@ -8982,7 +8985,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "خواندم",
@@ -8997,7 +9000,7 @@
                       "translit": "būd"
                     }
                   ],
-                  "translit": "ketābē ke khāndam, khūb būd",
+                  "translit": "ketābē ki khāndam, khūb būd",
                   "extraWords": [
                     {
                       "target": "را",
@@ -9470,7 +9473,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "ممکن است که نان خورده باشد",
-                  "translit": "mumken ast ke nān khurda bāshad",
+                  "translit": "mumken ast ki nān khurda bāshad",
                   "en": "He may have eaten bread.",
                   "distractorsEn": [
                     "He is eating bread.",
@@ -9591,7 +9594,7 @@
                   "examples": [
                     {
                       "target": "می‌توان گفت که او خوب است",
-                      "translit": "mētawān guft ke ō khūb ast",
+                      "translit": "mētawān guft ki ō khūb ast",
                       "en": "One can say that he is good.",
                       "highlight": "می‌توان گفت"
                     }
@@ -9603,7 +9606,7 @@
                   "id": "ge-51-1",
                   "type": "fillBlank",
                   "target": "___ گفت که او خوب است",
-                  "translit": "___ guft ke ō khūb ast",
+                  "translit": "___ guft ki ō khūb ast",
                   "en": "One can say that he is good.",
                   "answer": {
                     "target": "می‌توان",
@@ -9636,7 +9639,7 @@
                   "id": "ge-51-3",
                   "type": "spotError",
                   "target": "می‌توانم دید که او آمد",
-                  "translit": "mētawānam dīd ke ō āmad",
+                  "translit": "mētawānam dīd ki ō āmad",
                   "en": "One can see that he came.",
                   "errorWord": {
                     "target": "می‌توانم",
@@ -10050,16 +10053,16 @@
               "title": "The very book that…",
               "subtitle": "Advanced relative clauses",
               "grammarPoint": "advanced-relatives",
-              "grammarPointEn": "Relative clauses with a definite antecedent using ān … ke and resumptive structure: ān ketābē ke khāndam (that book which I read); distinguishing defining from adding information.",
+              "grammarPointEn": "Relative clauses with a definite antecedent using ān … ki and resumptive structure: ān ketābē ki khāndam (that book which I read); distinguishing defining from adding information.",
               "slides": [
                 {
                   "id": "gs-54-1",
-                  "title": "ān … ke",
-                  "body": "To point precisely, frame the noun with ān (that) and close with ke: ān mardē ke dīdam - 'that man whom I saw'. The clause narrows down exactly which one.",
+                  "title": "ān … ki",
+                  "body": "To point precisely, frame the noun with ān (that) and close with ki: ān mardē ki dīdam - 'that man whom I saw'. The clause narrows down exactly which one.",
                   "examples": [
                     {
                       "target": "آن کتابی که خواندم، مقبول بود",
-                      "translit": "ān ketābē ke khāndam, maqbūl būd",
+                      "translit": "ān ketābē ki khāndam, maqbūl būd",
                       "en": "That book which I read was beautiful.",
                       "highlight": "آن کتابی که"
                     }
@@ -10075,7 +10078,7 @@
                   "en": "That man whom I saw was a teacher.",
                   "answer": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
                   "distractors": [
                     {
@@ -10093,7 +10096,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "آن کتابی که خواندم، مقبول بود",
-                  "translit": "ān ketābē ke khāndam, maqbūl būd",
+                  "translit": "ān ketābē ki khāndam, maqbūl būd",
                   "en": "That book which I read was beautiful.",
                   "distractorsEn": [
                     "A book I read was beautiful.",
@@ -10115,7 +10118,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "دیدم",
@@ -10130,7 +10133,7 @@
                       "translit": "būd"
                     }
                   ],
-                  "translit": "ān shahrē ke dīdam, kalān būd",
+                  "translit": "ān shahrē ki dīdam, kalān būd",
                   "extraWords": [
                     {
                       "target": "را",
@@ -10141,30 +10144,31 @@
                 {
                   "id": "ge-54-4",
                   "type": "spotError",
-                  "target": "آن دوستی را که آمد، دیدم",
-                  "translit": "ān dōstē rā ke āmad, dīdam",
-                  "en": "I saw that friend who came.",
+                  "target": "آن دوستی را که آمد، معلم است",
+                  "translit": "ān dōstē rā ki āmad, mu'allem ast",
+                  "en": "That friend who came is a teacher.",
                   "errorWord": {
                     "target": "را",
                     "translit": "rā"
                   },
                   "correction": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
-                  "hint": "The subject of the relative clause takes ke directly, not rā."
+                  "hint": "The friend is the subject of 'is a teacher', not an object, so there is no rā.",
+                  "correctedTarget": "آن دوستی که آمد، معلم است"
                 },
                 {
                   "id": "ge-54-5",
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "آن خانه‌ای که خریدم، کلان است",
-                  "translit": "ān khāna-ē ke kharīdam, kalān ast",
+                  "translit": "ān khāna-ē ki kharīdam, kalān ast",
                   "en": "That house which I bought is big.",
                   "distractorsTarget": [
                     {
                       "target": "خانه‌ای خریدم که کلان است",
-                      "translit": "khāna-ē kharīdam ke kalān ast"
+                      "translit": "khāna-ē kharīdam ki kalān ast"
                     },
                     {
                       "target": "آن خانه کلان است",
@@ -10176,7 +10180,7 @@
                   "id": "ge-54-6",
                   "type": "fillBlank",
                   "target": "___ کتابی که خواندم، خوب بود",
-                  "translit": "___ ketābē ke khāndam, khūb būd",
+                  "translit": "___ ketābē ki khāndam, khūb būd",
                   "en": "That book which I read was good.",
                   "answer": {
                     "target": "آن",
@@ -10348,7 +10352,7 @@
               "title": "Until, as soon as",
               "subtitle": "The many senses of tā",
               "grammarPoint": "ta-constructions",
-              "grammarPointEn": "The word tā across senses: 'until' (tā ke), 'as soon as', and 'so that' (purpose); reading which meaning from context.",
+              "grammarPointEn": "The word tā across senses: 'until' (tā ki), 'as soon as', and 'so that' (purpose); reading which meaning from context.",
               "slides": [
                 {
                   "id": "gs-56-1",
@@ -10408,7 +10412,7 @@
                   "distractors": [
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "چون",
@@ -10481,7 +10485,7 @@
                     },
                     {
                       "target": "وقتی که",
-                      "translit": "waqtē ke",
+                      "translit": "waqtē ki",
                       "en": "when"
                     },
                     {
@@ -10498,16 +10502,16 @@
               "title": "While and the moment that",
               "subtitle": "Simultaneous actions",
               "grammarPoint": "simultaneity",
-              "grammarPointEn": "Simultaneous actions with dar hālē ke (while) and hamīn ke (the moment that), joining two overlapping events.",
+              "grammarPointEn": "Simultaneous actions with dar hālē ki (while) and hamīn ki (the moment that), joining two overlapping events.",
               "slides": [
                 {
                   "id": "gs-57-1",
                   "title": "At the same time",
-                  "body": "dar hālē ke means 'while' - two things at once. hamīn ke means 'the moment that' - one triggers the other.",
+                  "body": "dar hālē ki means 'while' - two things at once. hamīn ki means 'the moment that' - one triggers the other.",
                   "examples": [
                     {
                       "target": "در حالی که نان می‌خوردم، او آمد",
-                      "translit": "dar hālē ke nān mēkhurdam, ō āmad",
+                      "translit": "dar hālē ki nān mēkhurdam, ō āmad",
                       "en": "While I was eating, he came.",
                       "highlight": "در حالی که"
                     }
@@ -10520,7 +10524,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "در حالی که نان می‌خوردم، او آمد",
-                  "translit": "dar hālē ke nān mēkhurdam, ō āmad",
+                  "translit": "dar hālē ki nān mēkhurdam, ō āmad",
                   "en": "While I was eating, he came.",
                   "distractorsEn": [
                     "After I ate, he came.",
@@ -10531,7 +10535,7 @@
                   "id": "ge-57-2",
                   "type": "fillBlank",
                   "target": "___ که او را دیدم، خوش شدم",
-                  "translit": "___ ke ō rā dīdam, khush shudam",
+                  "translit": "___ ki ō rā dīdam, khush shudam",
                   "en": "The moment I saw him, I was happy.",
                   "answer": {
                     "target": "همین",
@@ -10555,7 +10559,7 @@
                   "words": [
                     {
                       "target": "در حالی که",
-                      "translit": "dar hālē ke"
+                      "translit": "dar hālē ki"
                     },
                     {
                       "target": "می‌خواندم",
@@ -10570,7 +10574,7 @@
                       "translit": "khābīd"
                     }
                   ],
-                  "translit": "dar hālē ke mēkhāndam, ō khābīd",
+                  "translit": "dar hālē ki mēkhāndam, ō khābīd",
                   "extraWords": [
                     {
                       "target": "خواندم",
@@ -10583,12 +10587,12 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "همین که آمد، رفتیم",
-                  "translit": "hamīn ke āmad, raftēm",
+                  "translit": "hamīn ki āmad, raftēm",
                   "en": "The moment he came, we left.",
                   "distractorsTarget": [
                     {
                       "target": "وقتی که آمد، رفتیم",
-                      "translit": "waqtē ke āmad, raftēm"
+                      "translit": "waqtē ki āmad, raftēm"
                     },
                     {
                       "target": "چون آمد، رفتیم",
@@ -10603,12 +10607,12 @@
                   "pairs": [
                     {
                       "target": "در حالی که",
-                      "translit": "dar hālē ke",
+                      "translit": "dar hālē ki",
                       "en": "while"
                     },
                     {
                       "target": "همین که",
-                      "translit": "hamīn ke",
+                      "translit": "hamīn ki",
                       "en": "the moment that"
                     },
                     {
@@ -10635,7 +10639,7 @@
                   },
                   "correction": {
                     "target": "در حالی که",
-                    "translit": "dar hālē ke"
+                    "translit": "dar hālē ki"
                   },
                   "hint": "Two actions at once use 'while', not 'because'."
                 }
@@ -10879,8 +10883,8 @@
                   "en": "His leaving ruined everything.",
                   "distractorsTarget": [
                     {
-                      "target": "او رفت و همه چیز خراب شد",
-                      "translit": "ō raft wa hama chīz kharāb shud"
+                      "target": "آمدن او همه چیز را خراب کرد",
+                      "translit": "āmadan-e ō hama chīz rā kharāb kard"
                     },
                     {
                       "target": "رفتن من همه چیز را خراب کرد",
@@ -11107,22 +11111,22 @@
               "title": "He told me that…",
               "subtitle": "Reported speech, deeper",
               "grammarPoint": "reported-speech-2",
-              "grammarPointEn": "Reported speech across frames: reporting questions and commands with ke and the subjunctive; the reported tense still does not shift back as in English.",
+              "grammarPointEn": "Reported speech across frames: reporting questions and commands with ki and the subjunctive; the reported tense still does not shift back as in English.",
               "slides": [
                 {
                   "id": "gs-61-1",
                   "title": "Reporting asks and orders",
-                  "body": "To report a request or command, use ke + the subjunctive: guft ke burawam - 'he told me to go'. To report a question, keep the question word after ke.",
+                  "body": "To report a request or command, use ki + the subjunctive: guft ki burawam - 'he told me to go'. To report a question, keep the question word after ki.",
                   "examples": [
                     {
                       "target": "او گفت که بروم",
-                      "translit": "ō guft ke burawam",
+                      "translit": "ō guft ki burawam",
                       "en": "He told me to go.",
                       "highlight": "که بروم"
                     },
                     {
                       "target": "پرسید که کجا می‌روم",
-                      "translit": "pursīd ke kujā mērawam",
+                      "translit": "pursīd ki kujā mērawam",
                       "en": "He asked where I was going.",
                       "highlight": "که کجا"
                     }
@@ -11135,7 +11139,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "او گفت که بروم",
-                  "translit": "ō guft ke burawam",
+                  "translit": "ō guft ki burawam",
                   "en": "He told me to go.",
                   "distractorsEn": [
                     "He said that he is going.",
@@ -11146,7 +11150,7 @@
                   "id": "ge-61-2",
                   "type": "fillBlank",
                   "target": "پرسید که کجا ___",
-                  "translit": "pursīd ke kujā ___",
+                  "translit": "pursīd ki kujā ___",
                   "en": "He asked where I was going.",
                   "answer": {
                     "target": "می‌روم",
@@ -11167,7 +11171,7 @@
                   "id": "ge-61-3",
                   "type": "spotError",
                   "target": "معلم گفت که درس می‌خوانم",
-                  "translit": "mu'allem guft ke dars mēkhānam",
+                  "translit": "mu'allem guft ki dars mēkhānam",
                   "en": "The teacher told me to study.",
                   "errorWord": {
                     "target": "می‌خوانم",
@@ -11194,14 +11198,14 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "بیایم",
                       "translit": "biyāyam"
                     }
                   ],
-                  "translit": "ō guft ke biyāyam",
+                  "translit": "ō guft ki biyāyam",
                   "extraWords": [
                     {
                       "target": "می‌آیم",
@@ -11214,16 +11218,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او پرسید که چی می‌خواهم",
-                  "translit": "ō pursīd ke che mēkhāham",
+                  "translit": "ō pursīd ki che mēkhāham",
                   "en": "He asked what I wanted.",
                   "distractorsTarget": [
                     {
                       "target": "او پرسید که چی خواستم",
-                      "translit": "ō pursīd ke che khāstam"
+                      "translit": "ō pursīd ki che khāstam"
                     },
                     {
                       "target": "او گفت که چی می‌خواهم",
-                      "translit": "ō guft ke che mēkhāham"
+                      "translit": "ō guft ki che mēkhāham"
                     }
                   ]
                 },
@@ -11239,7 +11243,7 @@
                     },
                     {
                       "target": "گفت که می‌رود",
-                      "translit": "guft ke mērawad",
+                      "translit": "guft ki mērawad",
                       "en": "he said he goes"
                     },
                     {
@@ -11249,7 +11253,7 @@
                     },
                     {
                       "target": "گفت که بروم",
-                      "translit": "guft ke burawam",
+                      "translit": "guft ki burawam",
                       "en": "he told me to go"
                     }
                   ]
@@ -11418,7 +11422,7 @@
                   "examples": [
                     {
                       "target": "اگر می‌دانستم که آمده است، صبر می‌کردم",
-                      "translit": "agar mēdānistam ke āmada ast, sabr mēkardam",
+                      "translit": "agar mēdānistam ki āmada ast, sabr mēkardam",
                       "en": "If I had known he had come, I would have waited."
                     }
                   ]
@@ -11505,7 +11509,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "خواندم",
@@ -11520,7 +11524,7 @@
                       "translit": "būd"
                     }
                   ],
-                  "translit": "ān ketābē ke khāndam, khūb būd",
+                  "translit": "ān ketābē ki khāndam, khūb būd",
                   "extraWords": [
                     {
                       "target": "را",
@@ -11613,18 +11617,18 @@
             {
               "id": "gl-64",
               "title": "Although, and still",
-              "subtitle": "Concession with agarche",
+              "subtitle": "Concession with agarchi",
               "grammarPoint": "concession-agarche",
-              "grammarPointEn": "Concession with agarche / garche (although) answered by bāz ham (still, even so) in the main clause: agarche mānda būd, bāz ham kār kard.",
+              "grammarPointEn": "Concession with agarchi / garchi (although) answered by bāz ham (still, even so) in the main clause: agarchi mānda būd, bāz ham kār kard.",
               "slides": [
                 {
                   "id": "gs-64-1",
-                  "title": "agarche … bāz ham",
-                  "body": "agarche (although) opens a conceded fact; the main clause often answers with bāz ham (still). Together they sharpen a contrast beyond a plain amā.",
+                  "title": "agarchi … bāz ham",
+                  "body": "agarchi (although) opens a conceded fact; the main clause often answers with bāz ham (still). Together they sharpen a contrast beyond a plain amā.",
                   "examples": [
                     {
                       "target": "اگرچه مانده بود، باز هم کار کرد",
-                      "translit": "agarche mānda būd, bāz ham kār kard",
+                      "translit": "agarchi mānda būd, bāz ham kār kard",
                       "en": "Although he was tired, he still worked.",
                       "highlight": "اگرچه"
                     }
@@ -11640,7 +11644,7 @@
                   "en": "Although he was tired, he still worked.",
                   "answer": {
                     "target": "اگرچه",
-                    "translit": "agarche"
+                    "translit": "agarchi"
                   },
                   "distractors": [
                     {
@@ -11658,7 +11662,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "گرچه باران بود، باز هم رفتیم",
-                  "translit": "garche bārān būd, bāz ham raftēm",
+                  "translit": "garchi bārān būd, bāz ham raftēm",
                   "en": "Although it was raining, we still went.",
                   "distractorsEn": [
                     "Because it was raining, we went.",
@@ -11677,7 +11681,7 @@
                   },
                   "correction": {
                     "target": "اگرچه",
-                    "translit": "agarche"
+                    "translit": "agarchi"
                   },
                   "hint": "'Although' concedes a point; chun means 'because'."
                 },
@@ -11688,7 +11692,7 @@
                   "words": [
                     {
                       "target": "اگرچه",
-                      "translit": "agarche"
+                      "translit": "agarchi"
                     },
                     {
                       "target": "سرد",
@@ -11707,7 +11711,7 @@
                       "translit": "raftēm"
                     }
                   ],
-                  "translit": "agarche sard būd, ba bāzār raftēm",
+                  "translit": "agarchi sard būd, ba bāzār raftēm",
                   "extraWords": [
                     {
                       "target": "چون",
@@ -11720,7 +11724,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "اگرچه پول نداشت، کتاب خرید",
-                  "translit": "agarche pūl nadāsht, ketāb kharīd",
+                  "translit": "agarchi pūl nadāsht, ketāb kharīd",
                   "en": "Although he had no money, he bought a book.",
                   "distractorsTarget": [
                     {
@@ -11740,7 +11744,7 @@
                   "pairs": [
                     {
                       "target": "اگرچه",
-                      "translit": "agarche",
+                      "translit": "agarchi",
                       "en": "although"
                     },
                     {
@@ -11807,7 +11811,7 @@
                     },
                     {
                       "target": "اگرچه",
-                      "translit": "agarche"
+                      "translit": "agarchi"
                     }
                   ]
                 },
@@ -11857,11 +11861,11 @@
                   "id": "ge-65-4",
                   "type": "spotError",
                   "target": "نمی‌آیم اگرچه تو بروی",
-                  "translit": "namēāyam agarche tu burawī",
+                  "translit": "namēāyam agarchi tu burawī",
                   "en": "I won't come unless you go.",
                   "errorWord": {
                     "target": "اگرچه",
-                    "translit": "agarche"
+                    "translit": "agarchi"
                   },
                   "correction": {
                     "target": "مگر",
@@ -11909,7 +11913,7 @@
                     },
                     {
                       "target": "اگرچه",
-                      "translit": "agarche",
+                      "translit": "agarchi",
                       "en": "although"
                     }
                   ]
@@ -11919,18 +11923,18 @@
             {
               "id": "gl-66",
               "title": "On the condition that",
-              "subtitle": "Stipulating with ba shart-ē ke",
+              "subtitle": "Stipulating with ba shart-ē ki",
               "grammarPoint": "stipulation",
-              "grammarPointEn": "Stipulating a condition with ba shart-ē ke (on the condition that) + subjunctive: mēāyam ba shart-ē ke tu ham biyāyī.",
+              "grammarPointEn": "Stipulating a condition with ba shart-ē ki (on the condition that) + subjunctive: mēāyam ba shart-ē ki tu ham biyāyī.",
               "slides": [
                 {
                   "id": "gs-66-1",
                   "title": "Setting a term",
-                  "body": "ba shart-ē ke means 'on the condition that' and takes the subjunctive. It states a precise term for agreeing to something.",
+                  "body": "ba shart-ē ki means 'on the condition that' and takes the subjunctive. It states a precise term for agreeing to something.",
                   "examples": [
                     {
                       "target": "می‌آیم به شرطی که تو هم بیایی",
-                      "translit": "mēāyam ba shart-ē ke tu ham biyāyī",
+                      "translit": "mēāyam ba shart-ē ki tu ham biyāyī",
                       "en": "I'll come, on the condition that you come too.",
                       "highlight": "به شرطی که"
                     }
@@ -11942,7 +11946,7 @@
                   "id": "ge-66-1",
                   "type": "fillBlank",
                   "target": "می‌آیم به شرطی که تو هم ___",
-                  "translit": "mēāyam ba shart-ē ke tu ham ___",
+                  "translit": "mēāyam ba shart-ē ki tu ham ___",
                   "en": "I'll come, on the condition that you come too.",
                   "answer": {
                     "target": "بیایی",
@@ -11964,7 +11968,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "کمک می‌کنم به شرطی که کار کنی",
-                  "translit": "kumak mēkunam ba shart-ē ke kār kunī",
+                  "translit": "kumak mēkunam ba shart-ē ki kār kunī",
                   "en": "I'll help, on the condition that you work.",
                   "distractorsEn": [
                     "I help because you work.",
@@ -11982,14 +11986,14 @@
                     },
                     {
                       "target": "به شرطی که",
-                      "translit": "ba shart-ē ke"
+                      "translit": "ba shart-ē ki"
                     },
                     {
                       "target": "بخوانی",
                       "translit": "bukhānī"
                     }
                   ],
-                  "translit": "ketāb rā mēdiham ba shart-ē ke bukhānī",
+                  "translit": "ketāb rā mēdiham ba shart-ē ki bukhānī",
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
@@ -12002,12 +12006,12 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "می‌روم به شرطی که تو بمانی",
-                  "translit": "mērawam ba shart-ē ke tu bumānī",
+                  "translit": "mērawam ba shart-ē ki tu bumānī",
                   "en": "I'll go, provided that you stay.",
                   "distractorsTarget": [
                     {
                       "target": "می‌روم اگرچه تو بمانی",
-                      "translit": "mērawam agarche tu bumānī"
+                      "translit": "mērawam agarchi tu bumānī"
                     },
                     {
                       "target": "می‌روم چون تو می‌مانی",
@@ -12043,7 +12047,7 @@
                   "pairs": [
                     {
                       "target": "به شرطی که",
-                      "translit": "ba shart-ē ke",
+                      "translit": "ba shart-ē ki",
                       "en": "on condition that"
                     },
                     {
@@ -12075,18 +12079,18 @@
             {
               "id": "gl-67",
               "title": "Before I go",
-              "subtitle": "qabl az īnke + subjunctive",
+              "subtitle": "qabl az īnki + subjunctive",
               "grammarPoint": "before-clause",
-              "grammarPointEn": "The 'before' clause qabl az īnke (before) always takes the subjunctive, even for past events: qabl az īnke burawam.",
+              "grammarPointEn": "The 'before' clause qabl az īnki (before) always takes the subjunctive, even for past events: qabl az īnki burawam.",
               "slides": [
                 {
                   "id": "gs-67-1",
                   "title": "'Before' loves the subjunctive",
-                  "body": "qabl az īnke (before) is always followed by the subjunctive - the event it names hasn't happened yet at that point in the story.",
+                  "body": "qabl az īnki (before) is always followed by the subjunctive - the event it names hasn't happened yet at that point in the story.",
                   "examples": [
                     {
                       "target": "قبل از اینکه بروم، نان خوردم",
-                      "translit": "qabl az īnke burawam, nān khurdam",
+                      "translit": "qabl az īnki burawam, nān khurdam",
                       "en": "Before I went, I ate.",
                       "highlight": "قبل از اینکه"
                     }
@@ -12098,7 +12102,7 @@
                   "id": "ge-67-1",
                   "type": "fillBlank",
                   "target": "قبل از اینکه ___، نان خوردم",
-                  "translit": "qabl az īnke ___, nān khurdam",
+                  "translit": "qabl az īnki ___, nān khurdam",
                   "en": "Before I went, I ate.",
                   "answer": {
                     "target": "بروم",
@@ -12120,7 +12124,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "قبل از اینکه بیاید، رفتیم",
-                  "translit": "qabl az īnke biyāyad, raftēm",
+                  "translit": "qabl az īnki biyāyad, raftēm",
                   "en": "Before he came, we left.",
                   "distractorsEn": [
                     "After he came, we left.",
@@ -12131,7 +12135,7 @@
                   "id": "ge-67-3",
                   "type": "spotError",
                   "target": "قبل از اینکه آمد، رفتم",
-                  "translit": "qabl az īnke āmad, raftam",
+                  "translit": "qabl az īnki āmad, raftam",
                   "en": "Before he came, I left.",
                   "errorWord": {
                     "target": "آمد",
@@ -12150,7 +12154,7 @@
                   "words": [
                     {
                       "target": "قبل از اینکه",
-                      "translit": "qabl az īnke"
+                      "translit": "qabl az īnki"
                     },
                     {
                       "target": "بخوابی",
@@ -12165,7 +12169,7 @@
                       "translit": "bukhān"
                     }
                   ],
-                  "translit": "qabl az īnke bukhābī, ketāb bukhān",
+                  "translit": "qabl az īnki bukhābī, ketāb bukhān",
                   "extraWords": [
                     {
                       "target": "می‌خوابی",
@@ -12178,16 +12182,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "قبل از اینکه بروی، مرا ببین",
-                  "translit": "qabl az īnke burawī, marā bubīn",
+                  "translit": "qabl az īnki burawī, marā bubīn",
                   "en": "Before you go, see me.",
                   "distractorsTarget": [
                     {
                       "target": "قبل از اینکه رفتی، مرا دیدی",
-                      "translit": "qabl az īnke raftī, marā dīdī"
+                      "translit": "qabl az īnki raftī, marā dīdī"
                     },
                     {
                       "target": "بعد از اینکه بروی، مرا ببین",
-                      "translit": "bād az īnke burawī, marā bubīn"
+                      "translit": "bād az īnki burawī, marā bubīn"
                     }
                   ]
                 },
@@ -12195,7 +12199,7 @@
                   "id": "ge-67-6",
                   "type": "fillBlank",
                   "target": "قبل از اینکه او ___، ما آمدیم",
-                  "translit": "qabl az īnke ō ___, mā āmadēm",
+                  "translit": "qabl az īnki ō ___, mā āmadēm",
                   "en": "Before he left, we came.",
                   "answer": {
                     "target": "برود",
@@ -12217,18 +12221,18 @@
             {
               "id": "gl-68",
               "title": "After it happened",
-              "subtitle": "bād az īnke + past",
+              "subtitle": "bād az īnki + past",
               "grammarPoint": "after-clause",
-              "grammarPointEn": "The 'after' clause bād az īnke (after) takes the indicative past, unlike 'before': bād az īnke āmad, raftēm.",
+              "grammarPointEn": "The 'after' clause bād az īnki (after) takes the indicative past, unlike 'before': bād az īnki āmad, raftēm.",
               "slides": [
                 {
                   "id": "gs-68-1",
                   "title": "'After' takes the real tense",
-                  "body": "bād az īnke (after) describes something that did happen, so it takes the ordinary past - the mirror image of 'before'.",
+                  "body": "bād az īnki (after) describes something that did happen, so it takes the ordinary past - the mirror image of 'before'.",
                   "examples": [
                     {
                       "target": "بعد از اینکه آمد، رفتیم",
-                      "translit": "bād az īnke āmad, raftēm",
+                      "translit": "bād az īnki āmad, raftēm",
                       "en": "After he came, we left.",
                       "highlight": "بعد از اینکه"
                     }
@@ -12240,7 +12244,7 @@
                   "id": "ge-68-1",
                   "type": "fillBlank",
                   "target": "بعد از اینکه ___، رفتیم",
-                  "translit": "bād az īnke ___, raftēm",
+                  "translit": "bād az īnki ___, raftēm",
                   "en": "After he came, we left.",
                   "answer": {
                     "target": "آمد",
@@ -12262,7 +12266,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "بعد از اینکه نان خوردم، خوابیدم",
-                  "translit": "bād az īnke nān khurdam, khābīdam",
+                  "translit": "bād az īnki nān khurdam, khābīdam",
                   "en": "After I ate, I slept.",
                   "distractorsEn": [
                     "Before I ate, I slept.",
@@ -12273,7 +12277,7 @@
                   "id": "ge-68-3",
                   "type": "spotError",
                   "target": "بعد از اینکه بیاید، رفتیم",
-                  "translit": "bād az īnke biyāyad, raftēm",
+                  "translit": "bād az īnki biyāyad, raftēm",
                   "en": "After he came, we left.",
                   "errorWord": {
                     "target": "بیاید",
@@ -12292,7 +12296,7 @@
                   "words": [
                     {
                       "target": "بعد از اینکه",
-                      "translit": "bād az īnke"
+                      "translit": "bād az īnki"
                     },
                     {
                       "target": "کتاب را خواندم",
@@ -12303,7 +12307,7 @@
                       "translit": "ba tu dādam"
                     }
                   ],
-                  "translit": "bād az īnke ketāb rā khāndam, ba tu dādam",
+                  "translit": "bād az īnki ketāb rā khāndam, ba tu dādam",
                   "extraWords": [
                     {
                       "target": "بخوانم",
@@ -12318,17 +12322,17 @@
                   "pairs": [
                     {
                       "target": "قبل از اینکه بروم",
-                      "translit": "qabl az īnke burawam",
+                      "translit": "qabl az īnki burawam",
                       "en": "before I go"
                     },
                     {
                       "target": "بعد از اینکه رفتم",
-                      "translit": "bād az īnke raftam",
+                      "translit": "bād az īnki raftam",
                       "en": "after I went"
                     },
                     {
                       "target": "وقتی که رفتم",
-                      "translit": "waqtē ke raftam",
+                      "translit": "waqtē ki raftam",
                       "en": "when I went"
                     },
                     {
@@ -12343,12 +12347,12 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "بعد از اینکه کار کردم، مانده شدم",
-                  "translit": "bād az īnke kār kardam, mānda shudam",
+                  "translit": "bād az īnki kār kardam, mānda shudam",
                   "en": "After I worked, I got tired.",
                   "distractorsTarget": [
                     {
                       "target": "قبل از اینکه کار کنم، مانده شدم",
-                      "translit": "qabl az īnke kār kunam, mānda shudam"
+                      "translit": "qabl az īnki kār kunam, mānda shudam"
                     },
                     {
                       "target": "چون کار کردم، مانده شدم",
@@ -12361,18 +12365,18 @@
             {
               "id": "gl-69",
               "title": "Whenever",
-              "subtitle": "har waqt ke and hargāh",
+              "subtitle": "har waqt ki and hargāh",
               "grammarPoint": "whenever",
-              "grammarPointEn": "Generalizing time with har waqt ke / hargāh (whenever), used for repeated or conditional-in-time situations.",
+              "grammarPointEn": "Generalizing time with har waqt ki / hargāh (whenever), used for repeated or conditional-in-time situations.",
               "slides": [
                 {
                   "id": "gs-69-1",
                   "title": "Any time it happens",
-                  "body": "har waqt ke and hargāh both mean 'whenever' - the event repeats or holds any time the condition is met.",
+                  "body": "har waqt ki and hargāh both mean 'whenever' - the event repeats or holds any time the condition is met.",
                   "examples": [
                     {
                       "target": "هر وقت که می‌آیی، خوش می‌شوم",
-                      "translit": "har waqt ke mēāyī, khush mēshawam",
+                      "translit": "har waqt ki mēāyī, khush mēshawam",
                       "en": "Whenever you come, I am glad.",
                       "highlight": "هر وقت که"
                     },
@@ -12390,7 +12394,7 @@
                   "id": "ge-69-1",
                   "type": "fillBlank",
                   "target": "___ که می‌آیی، خوش می‌شوم",
-                  "translit": "___ ke mēāyī, khush mēshawam",
+                  "translit": "___ ki mēāyī, khush mēshawam",
                   "en": "Whenever you come, I am glad.",
                   "answer": {
                     "target": "هر وقت",
@@ -12403,7 +12407,7 @@
                     },
                     {
                       "target": "اگرچه",
-                      "translit": "agarche"
+                      "translit": "agarchi"
                     }
                   ]
                 },
@@ -12426,7 +12430,7 @@
                   "words": [
                     {
                       "target": "هر وقت که",
-                      "translit": "har waqt ke"
+                      "translit": "har waqt ki"
                     },
                     {
                       "target": "او را",
@@ -12441,7 +12445,7 @@
                       "translit": "khush mēshawam"
                     }
                   ],
-                  "translit": "har waqt ke ō rā mēbīnam, khush mēshawam",
+                  "translit": "har waqt ki ō rā mēbīnam, khush mēshawam",
                   "extraWords": [
                     {
                       "target": "دیدم",
@@ -12463,7 +12467,7 @@
                     },
                     {
                       "target": "اگرچه کار داری، به من بگو",
-                      "translit": "agarche kār dārī, ba man bugō"
+                      "translit": "agarchi kār dārī, ba man bugō"
                     }
                   ]
                 },
@@ -12474,22 +12478,22 @@
                   "pairs": [
                     {
                       "target": "هر وقت که",
-                      "translit": "har waqt ke",
+                      "translit": "har waqt ki",
                       "en": "whenever"
                     },
                     {
                       "target": "وقتی که",
-                      "translit": "waqtē ke",
+                      "translit": "waqtē ki",
                       "en": "when"
                     },
                     {
                       "target": "قبل از اینکه",
-                      "translit": "qabl az īnke",
+                      "translit": "qabl az īnki",
                       "en": "before"
                     },
                     {
                       "target": "بعد از اینکه",
-                      "translit": "bād az īnke",
+                      "translit": "bād az īnki",
                       "en": "after"
                     }
                   ]
@@ -12529,22 +12533,22 @@
               "title": "It is said that",
               "subtitle": "Impersonal reporting",
               "grammarPoint": "impersonal-reporting",
-              "grammarPointEn": "Impersonal reporting with gufta mēshawad ke and mēgōyand ke (it is said that / they say that), attributing without a named source.",
+              "grammarPointEn": "Impersonal reporting with gufta mēshawad ki and mēgōyand ki (it is said that / they say that), attributing without a named source.",
               "slides": [
                 {
                   "id": "gs-70-1",
                   "title": "No named source",
-                  "body": "gufta mēshawad ke ('it is said that') and mēgōyand ke ('they say that') report general belief without naming who says it - common in formal and written Dari.",
+                  "body": "gufta mēshawad ki ('it is said that') and mēgōyand ki ('they say that') report general belief without naming who says it - common in formal and written Dari.",
                   "examples": [
                     {
                       "target": "گفته می‌شود که او رفته است",
-                      "translit": "gufta mēshawad ke ō rafta ast",
+                      "translit": "gufta mēshawad ki ō rafta ast",
                       "en": "It is said that he has gone.",
                       "highlight": "گفته می‌شود"
                     },
                     {
                       "target": "می‌گویند که کابل مقبول است",
-                      "translit": "mēgōyand ke kābul maqbūl ast",
+                      "translit": "mēgōyand ki kābul maqbūl ast",
                       "en": "They say that Kabul is beautiful.",
                       "highlight": "می‌گویند"
                     }
@@ -12557,7 +12561,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "گفته می‌شود که او رفته است",
-                  "translit": "gufta mēshawad ke ō rafta ast",
+                  "translit": "gufta mēshawad ki ō rafta ast",
                   "en": "It is said that he has gone.",
                   "distractorsEn": [
                     "He said that he has gone.",
@@ -12568,7 +12572,7 @@
                   "id": "ge-70-2",
                   "type": "fillBlank",
                   "target": "___ که کابل مقبول است",
-                  "translit": "___ ke kābul maqbūl ast",
+                  "translit": "___ ki kābul maqbūl ast",
                   "en": "They say that Kabul is beautiful.",
                   "answer": {
                     "target": "می‌گویند",
@@ -12596,7 +12600,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "این کتاب",
@@ -12607,7 +12611,7 @@
                       "translit": "khūb ast"
                     }
                   ],
-                  "translit": "gufta mēshawad ke īn ketāb khūb ast",
+                  "translit": "gufta mēshawad ki īn ketāb khūb ast",
                   "extraWords": [
                     {
                       "target": "می‌گویم",
@@ -12619,7 +12623,7 @@
                   "id": "ge-70-4",
                   "type": "spotError",
                   "target": "گفته کرد که او آمد",
-                  "translit": "gufta kard ke ō āmad",
+                  "translit": "gufta kard ki ō āmad",
                   "en": "It is said that he came.",
                   "errorWord": {
                     "target": "کرد",
@@ -12636,16 +12640,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "می‌گویند که او معلم خوب است",
-                  "translit": "mēgōyand ke ō mu'allem-e khūb ast",
+                  "translit": "mēgōyand ki ō mu'allem-e khūb ast",
                   "en": "They say that he is a good teacher.",
                   "distractorsTarget": [
                     {
                       "target": "او می‌گوید که معلم خوب است",
-                      "translit": "ō mēgōyad ke mu'allem-e khūb ast"
+                      "translit": "ō mēgōyad ki mu'allem-e khūb ast"
                     },
                     {
                       "target": "گفتند که او معلم خوب است",
-                      "translit": "guftand ke ō mu'allem-e khūb ast"
+                      "translit": "guftand ki ō mu'allem-e khūb ast"
                     }
                   ]
                 },
@@ -12681,18 +12685,18 @@
             {
               "id": "gl-71",
               "title": "It seems that",
-              "subtitle": "be nazar mērasad ke",
+              "subtitle": "be nazar mērasad ki",
               "grammarPoint": "it-seems",
-              "grammarPointEn": "Expressing appearance with be nazar mērasad ke (it seems that) + clause, a hedge that softens a claim.",
+              "grammarPointEn": "Expressing appearance with be nazar mērasad ki (it seems that) + clause, a hedge that softens a claim.",
               "slides": [
                 {
                   "id": "gs-71-1",
                   "title": "Softening a claim",
-                  "body": "be nazar mērasad ke ('it seems that') presents something as an impression rather than a fact - a key move in careful, formal speech.",
+                  "body": "be nazar mērasad ki ('it seems that') presents something as an impression rather than a fact - a key move in careful, formal speech.",
                   "examples": [
                     {
                       "target": "به نظر می‌رسد که او مانده است",
-                      "translit": "be nazar mērasad ke ō mānda ast",
+                      "translit": "be nazar mērasad ki ō mānda ast",
                       "en": "It seems that he is tired.",
                       "highlight": "به نظر می‌رسد"
                     }
@@ -12705,7 +12709,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "به نظر می‌رسد که او مانده است",
-                  "translit": "be nazar mērasad ke ō mānda ast",
+                  "translit": "be nazar mērasad ki ō mānda ast",
                   "en": "It seems that he is tired.",
                   "distractorsEn": [
                     "He is certainly tired.",
@@ -12716,7 +12720,7 @@
                   "id": "ge-71-2",
                   "type": "fillBlank",
                   "target": "به نظر ___ که باران می‌آید",
-                  "translit": "be nazar ___ ke bārān mēāyad",
+                  "translit": "be nazar ___ ki bārān mēāyad",
                   "en": "It seems that it will rain.",
                   "answer": {
                     "target": "می‌رسد",
@@ -12744,7 +12748,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "او",
@@ -12759,7 +12763,7 @@
                       "translit": "rafta ast"
                     }
                   ],
-                  "translit": "be nazar mērasad ke ō ba khāna rafta ast",
+                  "translit": "be nazar mērasad ki ō ba khāna rafta ast",
                   "extraWords": [
                     {
                       "target": "می‌رود",
@@ -12772,7 +12776,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "به نظر می‌رسد که کار سخت است",
-                  "translit": "be nazar mērasad ke kār sakht ast",
+                  "translit": "be nazar mērasad ki kār sakht ast",
                   "en": "It seems that the work is hard.",
                   "distractorsTarget": [
                     {
@@ -12781,7 +12785,7 @@
                     },
                     {
                       "target": "به نظر می‌رسد که کار آسان است",
-                      "translit": "be nazar mērasad ke kār āsān ast"
+                      "translit": "be nazar mērasad ki kār āsān ast"
                     }
                   ]
                 },
@@ -12820,7 +12824,7 @@
                   "en": "It seems that he is happy.",
                   "answer": {
                     "target": "که",
-                    "translit": "ke"
+                    "translit": "ki"
                   },
                   "distractors": [
                     {
@@ -12838,18 +12842,18 @@
             {
               "id": "gl-72",
               "title": "Not only… but also",
-              "subtitle": "na tanhā … balke",
+              "subtitle": "na tanhā … balki",
               "grammarPoint": "not-only-but-also",
-              "grammarPointEn": "The paired structure na tanhā … balke … (ham) (not only … but also …), used to add and intensify.",
+              "grammarPointEn": "The paired structure na tanhā … balki … (ham) (not only … but also …), used to add and intensify.",
               "slides": [
                 {
                   "id": "gs-72-1",
                   "title": "Adding with emphasis",
-                  "body": "na tanhā (not only) opens the pair; balke (but rather / but also) completes it, often with ham (too). It raises the stakes of a statement.",
+                  "body": "na tanhā (not only) opens the pair; balki (but rather / but also) completes it, often with ham (too). It raises the stakes of a statement.",
                   "examples": [
                     {
                       "target": "او نه تنها معلم، بلکه دوست من هم است",
-                      "translit": "ō na tanhā mu'allem, balke dōst-e man ham ast",
+                      "translit": "ō na tanhā mu'allem, balki dōst-e man ham ast",
                       "en": "He is not only a teacher, but also my friend.",
                       "highlight": "نه تنها"
                     }
@@ -12861,7 +12865,7 @@
                   "id": "ge-72-1",
                   "type": "fillBlank",
                   "target": "او ___ معلم، بلکه دوست من هم است",
-                  "translit": "ō ___ mu'allem, balke dōst-e man ham ast",
+                  "translit": "ō ___ mu'allem, balki dōst-e man ham ast",
                   "en": "He is not only a teacher, but also my friend.",
                   "answer": {
                     "target": "نه تنها",
@@ -12870,7 +12874,7 @@
                   "distractors": [
                     {
                       "target": "اگرچه",
-                      "translit": "agarche"
+                      "translit": "agarchi"
                     },
                     {
                       "target": "چون",
@@ -12883,7 +12887,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "نه تنها آمد، بلکه کمک هم کرد",
-                  "translit": "na tanhā āmad, balke kumak ham kard",
+                  "translit": "na tanhā āmad, balki kumak ham kard",
                   "en": "He not only came, but also helped.",
                   "distractorsEn": [
                     "He came but didn't help.",
@@ -12898,7 +12902,7 @@
                   "en": "He not only came, but also helped.",
                   "answer": {
                     "target": "بلکه",
-                    "translit": "balke"
+                    "translit": "balki"
                   },
                   "distractors": [
                     {
@@ -12926,7 +12930,7 @@
                     },
                     {
                       "target": "بلکه",
-                      "translit": "balke"
+                      "translit": "balki"
                     },
                     {
                       "target": "هرات هم",
@@ -12937,7 +12941,7 @@
                       "translit": "kalān ast"
                     }
                   ],
-                  "translit": "na tanhā kābul, balke herāt ham kalān ast",
+                  "translit": "na tanhā kābul, balki herāt ham kalān ast",
                   "extraWords": [
                     {
                       "target": "اما",
@@ -12950,7 +12954,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "نه تنها خواند، بلکه نوشت هم",
-                  "translit": "na tanhā khānd, balke newesht ham",
+                  "translit": "na tanhā khānd, balki newesht ham",
                   "en": "He not only read, but also wrote.",
                   "distractorsTarget": [
                     {
@@ -12975,7 +12979,7 @@
                     },
                     {
                       "target": "بلکه",
-                      "translit": "balke",
+                      "translit": "balki",
                       "en": "but also"
                     },
                     {
@@ -13152,16 +13156,16 @@
               "title": "I thought he might have gone",
               "subtitle": "Embedded doubt about the past",
               "grammarPoint": "embedded-doubt",
-              "grammarPointEn": "Embedding doubt: a matrix verb of thinking with a past-subjunctive complement: fikr kardam ke rafta bāshad (I thought he might have gone).",
+              "grammarPointEn": "Embedding doubt: a matrix verb of thinking with a past-subjunctive complement: fikr kardam ki rafta bāshad (I thought he might have gone).",
               "slides": [
                 {
                   "id": "gs-74-1",
                   "title": "Doubt inside a thought",
-                  "body": "When you report an uncertain guess about the past, the inner clause takes the past subjunctive: fikr kardam ke rafta bāshad.",
+                  "body": "When you report an uncertain guess about the past, the inner clause takes the past subjunctive: fikr kardam ki rafta bāshad.",
                   "examples": [
                     {
                       "target": "فکر کردم که او رفته باشد",
-                      "translit": "fikr kardam ke ō rafta bāshad",
+                      "translit": "fikr kardam ki ō rafta bāshad",
                       "en": "I thought he might have gone.",
                       "highlight": "رفته باشد"
                     }
@@ -13173,7 +13177,7 @@
                   "id": "ge-74-1",
                   "type": "fillBlank",
                   "target": "فکر کردم که او ___",
-                  "translit": "fikr kardam ke ō ___",
+                  "translit": "fikr kardam ki ō ___",
                   "en": "I thought he might have gone.",
                   "answer": {
                     "target": "رفته باشد",
@@ -13195,7 +13199,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "گمان کردم که نان خورده باشد",
-                  "translit": "gumān kardam ke nān khurda bāshad",
+                  "translit": "gumān kardam ki nān khurda bāshad",
                   "en": "I supposed he might have eaten.",
                   "distractorsEn": [
                     "I know he ate.",
@@ -13206,7 +13210,7 @@
                   "id": "ge-74-3",
                   "type": "spotError",
                   "target": "فکر کردم که او رفت باشد",
-                  "translit": "fikr kardam ke ō raft bāshad",
+                  "translit": "fikr kardam ki ō raft bāshad",
                   "en": "I thought he might have gone.",
                   "errorWord": {
                     "target": "رفت",
@@ -13229,7 +13233,7 @@
                     },
                     {
                       "target": "که",
-                      "translit": "ke"
+                      "translit": "ki"
                     },
                     {
                       "target": "تو",
@@ -13240,7 +13244,7 @@
                       "translit": "āmada bāshī"
                     }
                   ],
-                  "translit": "fikr kardam ke tu āmada bāshī",
+                  "translit": "fikr kardam ki tu āmada bāshī",
                   "extraWords": [
                     {
                       "target": "آمدی",
@@ -13253,16 +13257,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "گمان کردم که او را دیده باشی",
-                  "translit": "gumān kardam ke ō rā dīda bāshī",
+                  "translit": "gumān kardam ki ō rā dīda bāshī",
                   "en": "I supposed you might have seen him.",
                   "distractorsTarget": [
                     {
                       "target": "گمان کردم که او را دیدی",
-                      "translit": "gumān kardam ke ō rā dīdī"
+                      "translit": "gumān kardam ki ō rā dīdī"
                     },
                     {
                       "target": "فکر کردم که او را ببینی",
-                      "translit": "fikr kardam ke ō rā bubīnī"
+                      "translit": "fikr kardam ki ō rā bubīnī"
                     }
                   ]
                 },
@@ -13273,12 +13277,12 @@
                   "pairs": [
                     {
                       "target": "می‌دانم که رفت",
-                      "translit": "mēdānam ke raft",
+                      "translit": "mēdānam ki raft",
                       "en": "I know he went"
                     },
                     {
                       "target": "فکر کردم که رفته باشد",
-                      "translit": "fikr kardam ke rafta bāshad",
+                      "translit": "fikr kardam ki rafta bāshad",
                       "en": "I thought he might have gone"
                     },
                     {
@@ -13298,7 +13302,7 @@
             {
               "id": "gl-75",
               "title": "As if it were true",
-              "subtitle": "gōyā and mānand-e īnke",
+              "subtitle": "gōyā and mānand-e īnki",
               "grammarPoint": "as-if",
               "grammarPointEn": "Unreal comparison with gōyā (as if / as though) + past, presenting something contrary to fact for effect.",
               "slides": [
@@ -13760,7 +13764,7 @@
                   "examples": [
                     {
                       "target": "گفته می‌شود که اگرچه سخت بود، باز هم کار کرد",
-                      "translit": "gufta mēshawad ke agarche sakht būd, bāz ham kār kard",
+                      "translit": "gufta mēshawad ki agarchi sakht būd, bāz ham kār kard",
                       "en": "It is said that although it was hard, he still worked."
                     }
                   ]
@@ -13779,7 +13783,7 @@
                   },
                   "correction": {
                     "target": "اگرچه",
-                    "translit": "agarche"
+                    "translit": "agarchi"
                   },
                   "hint": "'Although' concedes; chun means 'because'."
                 },
@@ -13787,7 +13791,7 @@
                   "id": "ge-78-2",
                   "type": "fillBlank",
                   "target": "قبل از اینکه ___، نان خوردم",
-                  "translit": "qabl az īnke ___, nān khurdam",
+                  "translit": "qabl az īnki ___, nān khurdam",
                   "en": "Before I went, I ate.",
                   "answer": {
                     "target": "بروم",
@@ -13809,7 +13813,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "به نظر می‌رسد که او رفته باشد",
-                  "translit": "be nazar mērasad ke ō rafta bāshad",
+                  "translit": "be nazar mērasad ki ō rafta bāshad",
                   "en": "It seems that he might have gone.",
                   "distractorsEn": [
                     "It is certain that he went.",
@@ -13872,7 +13876,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او نه تنها آمد، بلکه کمک هم کرد",
-                  "translit": "ō na tanhā āmad, balke kumak ham kard",
+                  "translit": "ō na tanhā āmad, balki kumak ham kard",
                   "en": "He not only came, but also helped.",
                   "distractorsTarget": [
                     {
@@ -13892,7 +13896,7 @@
                   "pairs": [
                     {
                       "target": "اگرچه",
-                      "translit": "agarche",
+                      "translit": "agarchi",
                       "en": "although"
                     },
                     {
@@ -15296,7 +15300,7 @@
                   "distractors": [
                     {
                       "target": "اگرچه",
-                      "translit": "agarche"
+                      "translit": "agarchi"
                     },
                     {
                       "target": "بنابراین",
@@ -15564,16 +15568,16 @@
               "title": "Layered concession",
               "subtitle": "Stacking counter-arguments",
               "grammarPoint": "layered-concession",
-              "grammarPointEn": "Building a nuanced argument by stacking concession and result: agarche … amā … bā īn ham … (although … but … even so …).",
+              "grammarPointEn": "Building a nuanced argument by stacking concession and result: agarchi … amā … bā īn ham … (although … but … even so …).",
               "slides": [
                 {
                   "id": "gs-90-1",
                   "title": "Grant, counter, conclude",
-                  "body": "A sophisticated argument concedes a point (agarche), counters it (amā), and still concludes (bā īn ham / bāz ham). Layering these shows control.",
+                  "body": "A sophisticated argument concedes a point (agarchi), counters it (amā), and still concludes (bā īn ham / bāz ham). Layering these shows control.",
                   "examples": [
                     {
                       "target": "اگرچه سخت بود، اما با این هم موفق شد",
-                      "translit": "agarche sakht būd, amā bā īn ham muwaffaq shud",
+                      "translit": "agarchi sakht būd, amā bā īn ham muwaffaq shud",
                       "en": "Although it was hard, but even so he succeeded.",
                       "highlight": "با این هم"
                     }
@@ -15586,7 +15590,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "اگرچه سخت بود، اما با این هم کرد",
-                  "translit": "agarche sakht būd, amā bā īn ham kard",
+                  "translit": "agarchi sakht būd, amā bā īn ham kard",
                   "en": "Although it was hard, even so he did it.",
                   "distractorsEn": [
                     "Because it was hard, he did it.",
@@ -15597,7 +15601,7 @@
                   "id": "ge-90-2",
                   "type": "fillBlank",
                   "target": "اگرچه مانده بود، اما ___ کار کرد",
-                  "translit": "agarche mānda būd, amā ___ kār kard",
+                  "translit": "agarchi mānda būd, amā ___ kār kard",
                   "en": "Although he was tired, even so he worked.",
                   "answer": {
                     "target": "با این هم",
@@ -15621,7 +15625,7 @@
                   "words": [
                     {
                       "target": "اگرچه",
-                      "translit": "agarche"
+                      "translit": "agarchi"
                     },
                     {
                       "target": "مریض بود",
@@ -15636,7 +15640,7 @@
                       "translit": "āmad"
                     }
                   ],
-                  "translit": "agarche marīz būd, bā īn ham āmad",
+                  "translit": "agarchi marīz būd, bā īn ham āmad",
                   "extraWords": [
                     {
                       "target": "چون",
@@ -15651,7 +15655,7 @@
                   "pairs": [
                     {
                       "target": "اگرچه",
-                      "translit": "agarche",
+                      "translit": "agarchi",
                       "en": "although (concede)"
                     },
                     {
@@ -15676,7 +15680,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "اگرچه پول نداشت، با این هم کتاب خرید",
-                  "translit": "agarche pūl nadāsht, bā īn ham ketāb kharīd",
+                  "translit": "agarchi pūl nadāsht, bā īn ham ketāb kharīd",
                   "en": "Although he had no money, even so he bought a book.",
                   "distractorsTarget": [
                     {
@@ -15693,7 +15697,7 @@
                   "id": "ge-90-6",
                   "type": "spotError",
                   "target": "اگرچه سرد بود، بنابراین رفتیم",
-                  "translit": "agarche sard būd, binābar'īn raftēm",
+                  "translit": "agarchi sard būd, binābar'īn raftēm",
                   "en": "Although it was cold, even so we went.",
                   "errorWord": {
                     "target": "بنابراین",
@@ -16004,7 +16008,7 @@
                   "examples": [
                     {
                       "target": "اگرچه سخت بود، اما با این هم به هدف خود رسید",
-                      "translit": "agarche sakht būd, amā bā īn ham ba hadaf-e khud rasīd",
+                      "translit": "agarchi sakht būd, amā bā īn ham ba hadaf-e khud rasīd",
                       "en": "Although it was hard, even so he reached his goal."
                     }
                   ]
@@ -16136,7 +16140,7 @@
                   "id": "ge-93-7",
                   "type": "spotError",
                   "target": "اگرچه سرد بود، بنابراین رفتیم",
-                  "translit": "agarche sard būd, binābar'īn raftēm",
+                  "translit": "agarchi sard būd, binābar'īn raftēm",
                   "en": "Although it was cold, even so we went.",
                   "errorWord": {
                     "target": "بنابراین",
