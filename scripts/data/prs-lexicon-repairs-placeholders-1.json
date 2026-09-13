@@ -805,9 +805,9 @@
       "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
     ],
     "set": {
-      "exampleTarget": "کمان پدرکلانم به دیوار آویزان است.",
-      "exampleTranslit": "kamān-e padarkalānam ba dēwār āwēzān ast.",
-      "exampleEn": "My grandfather's bow hangs on the wall."
+      "exampleTarget": "کمان پدرکلانم بالای دیوار است.",
+      "exampleTranslit": "kamān-e padarkalānam bālā-ye dēwār ast.",
+      "exampleEn": "My grandfather's bow is up on the wall."
     },
     "was": {
       "exampleTarget": "این کمان است.",

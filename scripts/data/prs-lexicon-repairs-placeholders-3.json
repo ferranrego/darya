@@ -1,0 +1,594 @@
+{
+  "lx-6455": {
+    "target": "ملخ",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "ملخ‌ها گندم دهقانان را خوردند.",
+      "exampleTranslit": "malakh-hā gandum-e dehqānān rā khurdand.",
+      "exampleEn": "The locusts ate the farmers' wheat."
+    },
+    "was": {
+      "exampleTarget": "این ملخ است.",
+      "exampleTranslit": "īn malakh ast.",
+      "exampleEn": "This is a grasshopper."
+    }
+  },
+  "lx-6282": {
+    "target": "لیمو",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "من چای را با لیمو می‌خورم.",
+      "exampleTranslit": "man chāy rā bā lēmū mēkhuram.",
+      "exampleEn": "I drink my tea with lemon."
+    },
+    "was": {
+      "exampleTarget": "این لیمو است.",
+      "exampleTranslit": "īn lēmū ast.",
+      "exampleEn": "This is a lemon."
+    }
+  },
+  "lx-6446": {
+    "target": "بوقلمون",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "همسایه ما دو بوقلمون دارد.",
+      "exampleTranslit": "hamsāya-ye mā dū būqalamūn dārad.",
+      "exampleEn": "Our neighbour has two turkeys."
+    },
+    "was": {
+      "exampleTarget": "این بوقلمون است.",
+      "exampleTranslit": "īn būqalamūn ast.",
+      "exampleEn": "This is a turkey."
+    }
+  },
+  "lx-6334": {
+    "target": "آیینه",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "دختر خود را در آیینه دید.",
+      "exampleTranslit": "dukhtar khud rā dar āyēna dīd.",
+      "exampleEn": "The girl saw herself in the mirror."
+    },
+    "was": {
+      "exampleTarget": "این آیینه است.",
+      "exampleTranslit": "īn āyēna ast.",
+      "exampleEn": "This is a mirror."
+    }
+  },
+  "lx-6273": {
+    "target": "پسته",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "برای عید پسته و بادام خریدیم.",
+      "exampleTranslit": "barā-ye ēd pista wa bādām kharīdēm.",
+      "exampleEn": "We bought pistachios and almonds for Eid."
+    },
+    "was": {
+      "exampleTarget": "این پسته است.",
+      "exampleTranslit": "īn pista ast.",
+      "exampleEn": "This is a pistachio."
+    }
+  },
+  "lx-6449": {
+    "target": "گراز",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "گرازها به زمین دهقان آمدند.",
+      "exampleTranslit": "gurāz-hā ba zamīn-e dehqān āmadand.",
+      "exampleEn": "Wild boars came onto the farmer's land."
+    },
+    "was": {
+      "exampleTarget": "این گراز است.",
+      "exampleTranslit": "īn gurāz ast.",
+      "exampleEn": "This is a boar."
+    }
+  },
+  "lx-6348": {
+    "target": "کبریت",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "پدرم با کبریت بخاری را روشن کرد.",
+      "exampleTranslit": "padaram bā kibrīt bukhārī rā rōshan kard.",
+      "exampleEn": "My father lit the stove with a match."
+    },
+    "was": {
+      "exampleTarget": "این کبریت است.",
+      "exampleTranslit": "īn kibrīt ast.",
+      "exampleEn": "This is a match."
+    }
+  },
+  "lx-6326": {
+    "target": "گوساله",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "گاو ما یک گوساله دارد.",
+      "exampleTranslit": "gāw-e mā yak gōsāla dārad.",
+      "exampleEn": "Our cow has a calf."
+    },
+    "was": {
+      "exampleTarget": "این گوساله است.",
+      "exampleTranslit": "īn gōsāla ast.",
+      "exampleEn": "This is a calf."
+    }
+  },
+  "lx-6453": {
+    "target": "گوریل",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "گوریل حیوان کلان و قوی است.",
+      "exampleTranslit": "gūrīl haywān-e kalān wa qawī ast.",
+      "exampleEn": "The gorilla is a big, strong animal."
+    },
+    "was": {
+      "exampleTarget": "این گوریل است.",
+      "exampleTranslit": "īn gūrīl ast.",
+      "exampleEn": "This is a gorilla."
+    }
+  },
+  "lx-6270": {
+    "target": "عدس",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "عدس و برنج غذای ارزان است.",
+      "exampleTranslit": "adas wa berenj ghazā-ye arzān ast.",
+      "exampleEn": "Lentils and rice are cheap food."
+    },
+    "was": {
+      "exampleTarget": "این عدس است.",
+      "exampleTranslit": "īn adas ast.",
+      "exampleEn": "This is a lentil."
+    }
+  },
+  "lx-6358": {
+    "target": "لجن",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "بعد از سیل، خانه‌ها زیر لجن ماند.",
+      "exampleTranslit": "ba'd az sēl, khāna-hā zēr-e lajan mānd.",
+      "exampleEn": "After the flood the houses were left under mud."
+    },
+    "was": {
+      "exampleTarget": "این لجن است.",
+      "exampleTranslit": "īn lajan ast.",
+      "exampleEn": "This is a mud."
+    }
+  },
+  "lx-6469": {
+    "target": "میگو",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "در افغانستان مردم کم میگو می‌خورند.",
+      "exampleTranslit": "dar afghānestān mardum kam maygū mēkhurand.",
+      "exampleEn": "In Afghanistan people rarely eat shrimp."
+    },
+    "was": {
+      "exampleTarget": "این میگو است.",
+      "exampleTranslit": "īn maygū ast.",
+      "exampleEn": "This is a shrimp."
+    }
+  },
+  "lx-6465": {
+    "target": "کرکس",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "کرکس بالای کوه پرواز می‌کند.",
+      "exampleTranslit": "karkas bālā-ye kōh parwāz mēkunad.",
+      "exampleEn": "A vulture is flying over the mountain."
+    },
+    "was": {
+      "exampleTarget": "این کرکس است.",
+      "exampleTranslit": "īn karkas ast.",
+      "exampleEn": "This is a vulture."
+    }
+  },
+  "lx-6275": {
+    "target": "انجیر",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "انجیر خشک برای زمستان خوب است.",
+      "exampleTranslit": "anjīr-e khushk barā-ye zemestān khūb ast.",
+      "exampleEn": "Dried figs are good for winter."
+    },
+    "was": {
+      "exampleTarget": "این انجیر است.",
+      "exampleTranslit": "īn anjīr ast.",
+      "exampleEn": "This is a fig."
+    }
+  },
+  "lx-6345": {
+    "target": "نل",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "نل آب آشپزخانه خراب شده است.",
+      "exampleTranslit": "nal-e āb-e āshpazkhāna kharāb shuda ast.",
+      "exampleEn": "The kitchen water pipe is broken."
+    },
+    "was": {
+      "exampleTarget": "این نل است.",
+      "exampleTranslit": "īn nal ast.",
+      "exampleEn": "This is a pipe."
+    }
+  },
+  "lx-6450": {
+    "target": "کفتار",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "کفتار از گرگ کوچک‌تر است.",
+      "exampleTranslit": "kaftār az gurg kōchaktar ast.",
+      "exampleEn": "A hyena is smaller than a wolf."
+    },
+    "was": {
+      "exampleTarget": "این کفتار است.",
+      "exampleTranslit": "īn kaftār ast.",
+      "exampleEn": "This is a hyena."
+    }
+  },
+  "lx-6318": {
+    "target": "زاغ",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "زاغ‌ها بالای درخت نشسته‌اند.",
+      "exampleTranslit": "zāgh-hā bālā-ye darakht neshasta-and.",
+      "exampleEn": "Crows are sitting in the tree."
+    },
+    "was": {
+      "exampleTarget": "این زاغ است.",
+      "exampleTranslit": "īn zāgh ast.",
+      "exampleEn": "This is a crow."
+    }
+  },
+  "lx-6456": {
+    "target": "شپش",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "بچه‌های مکتب شپش گرفته‌اند.",
+      "exampleTranslit": "bacha-hā-ye maktab shupush gerefta-and.",
+      "exampleEn": "The school children have caught lice."
+    },
+    "was": {
+      "exampleTarget": "این شپش است.",
+      "exampleTranslit": "īn shupush ast.",
+      "exampleEn": "This is a louse."
+    }
+  },
+  "lx-6414": {
+    "target": "دهلیز",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "بوت‌هایت را در دهلیز بگذار.",
+      "exampleTranslit": "būt-hāyat rā dar dahlēz buguzār.",
+      "exampleEn": "Leave your shoes in the hallway."
+    },
+    "was": {
+      "exampleTarget": "این دهلیز است.",
+      "exampleTranslit": "īn dahlēz ast.",
+      "exampleEn": "This is a hallway."
+    }
+  },
+  "lx-6409": {
+    "target": "آرایشگر",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "به دکان آرایشگر رفتم.",
+      "exampleTranslit": "ba dukān-e ārāyishgar raftam.",
+      "exampleEn": "I went to the barber's shop."
+    },
+    "was": {
+      "exampleTarget": "این آرایشگر است.",
+      "exampleTranslit": "īn ārāyishgar ast.",
+      "exampleEn": "This is a barber."
+    }
+  },
+  "lx-6448": {
+    "target": "قاطر",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "مردم کوه بار را با قاطر می‌برند.",
+      "exampleTranslit": "mardum-e kōh bār rā bā qātir mēbarand.",
+      "exampleEn": "People in the mountains carry loads by mule."
+    },
+    "was": {
+      "exampleTarget": "این قاطر است.",
+      "exampleTranslit": "īn qātir ast.",
+      "exampleEn": "This is a mule."
+    }
+  },
+  "lx-6359": {
+    "target": "شبنم",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "صبح بالای علف‌ها شبنم بود.",
+      "exampleTranslit": "subh bālā-ye alaf-hā shabnam būd.",
+      "exampleEn": "In the morning there was dew on the grass."
+    },
+    "was": {
+      "exampleTarget": "این شبنم است.",
+      "exampleTranslit": "īn shabnam ast.",
+      "exampleEn": "This is a dew."
+    }
+  },
+  "lx-6302": {
+    "target": "مرغابی",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "مرغابی‌ها در دریا شنا می‌کنند.",
+      "exampleTranslit": "murghābī-hā dar daryā shinā mēkunand.",
+      "exampleEn": "Ducks are swimming in the river."
+    },
+    "was": {
+      "exampleTarget": "این مرغابی است.",
+      "exampleTranslit": "īn murghābī ast.",
+      "exampleEn": "This is a duck."
+    }
+  },
+  "lx-6451": {
+    "target": "شغال",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "شغال شب یک مرغ ما را برد.",
+      "exampleTranslit": "shaghāl shab yak murgh-e mā rā burd.",
+      "exampleEn": "A jackal took one of our hens in the night."
+    },
+    "was": {
+      "exampleTarget": "این شغال است.",
+      "exampleTranslit": "īn shaghāl ast.",
+      "exampleEn": "This is a jackal."
+    }
+  },
+  "lx-6319": {
+    "target": "گنجشک",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "گنجشک‌ها در باغ نان خشک می‌خورند.",
+      "exampleTranslit": "gunjishk-hā dar bāgh nān-e khushk mēkhurand.",
+      "exampleEn": "The sparrows eat dry bread in the garden."
+    },
+    "was": {
+      "exampleTarget": "این گنجشک است.",
+      "exampleTranslit": "īn gunjishk ast.",
+      "exampleEn": "This is a sparrow."
+    }
+  },
+  "lx-6277": {
+    "target": "زردآلو",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "زردآلوهای باغ ما شیرین است.",
+      "exampleTranslit": "zardālū-hā-ye bāgh-e mā shīrīn ast.",
+      "exampleEn": "The apricots in our garden are sweet."
+    },
+    "was": {
+      "exampleTarget": "این زردآلو است.",
+      "exampleTranslit": "īn zardālū ast.",
+      "exampleEn": "This is a apricot."
+    }
+  },
+  "lx-6332": {
+    "target": "کمپل",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "شب سرد است، یک کمپل دیگر بیاور.",
+      "exampleTranslit": "shab sard ast, yak kampal-e dīgar biyāwar.",
+      "exampleEn": "The night is cold, bring another blanket."
+    },
+    "was": {
+      "exampleTarget": "این کمپل است.",
+      "exampleTranslit": "īn kampal ast.",
+      "exampleEn": "This is a blanket."
+    }
+  },
+  "lx-6254": {
+    "target": "اذان",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "وقت اذان پدرم به مسجد می‌رود.",
+      "exampleTranslit": "waqt-e azān padaram ba masjid mērawad.",
+      "exampleEn": "At the call to prayer my father goes to the mosque."
+    },
+    "was": {
+      "exampleTarget": "این اذان است.",
+      "exampleTranslit": "īn azān ast.",
+      "exampleEn": "This is a call to prayer."
+    }
+  },
+  "lx-6427": {
+    "target": "رسن",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "گاو را با رسن بستند.",
+      "exampleTranslit": "gāw rā bā rasan bastand.",
+      "exampleEn": "They tied the cow with a rope."
+    },
+    "was": {
+      "exampleTarget": "این رسن است.",
+      "exampleTranslit": "īn rasan ast.",
+      "exampleEn": "This is a rope."
+    }
+  },
+  "lx-6429": {
+    "target": "ترازو",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "دکاندار سیب را با ترازو وزن کرد.",
+      "exampleTranslit": "dukāndār sēb rā bā tarāzū wazn kard.",
+      "exampleEn": "The shopkeeper weighed the apples on the scale."
+    },
+    "was": {
+      "exampleTarget": "این ترازو است.",
+      "exampleTranslit": "īn tarāzū ast.",
+      "exampleEn": "This is a scale."
+    }
+  },
+  "lx-6421": {
+    "target": "چوک",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "دکان ما نزدیک چوک شهر است.",
+      "exampleTranslit": "dukān-e mā nazdīk-e chawk-e shahr ast.",
+      "exampleEn": "Our shop is near the city square."
+    },
+    "was": {
+      "exampleTarget": "این چوک است.",
+      "exampleTranslit": "īn chawk ast.",
+      "exampleEn": "This is a square."
+    }
+  },
+  "lx-6428": {
+    "target": "کلنگ",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "کارگرها با کلنگ کار می‌کنند.",
+      "exampleTranslit": "kārgar-hā bā kulang kār mēkunand.",
+      "exampleEn": "The workers are working with pickaxes."
+    },
+    "was": {
+      "exampleTarget": "این کلنگ است.",
+      "exampleTranslit": "īn kulang ast.",
+      "exampleEn": "This is a pickaxe."
+    }
+  },
+  "lx-6413": {
+    "target": "زرگر",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "زرگر طلا و نقره می‌فروشد.",
+      "exampleTranslit": "zargar talā wa nuqra mēfurōshad.",
+      "exampleEn": "The jeweller sells gold and silver."
+    },
+    "was": {
+      "exampleTarget": "این زرگر است.",
+      "exampleTranslit": "īn zargar ast.",
+      "exampleEn": "This is a jeweler."
+    }
+  },
+  "lx-6407": {
+    "target": "محصل",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "خواهرم محصل پوهنتون کابل است.",
+      "exampleTranslit": "khāharam muhassil-e pohantūn-e kābul ast.",
+      "exampleEn": "My sister is a student at Kabul University."
+    },
+    "was": {
+      "exampleTarget": "این محصل است.",
+      "exampleTranslit": "īn muhassil ast.",
+      "exampleEn": "This is a university student."
+    }
+  },
+  "lx-6458": {
+    "target": "موریانه",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "موریانه چوب دروازه را خورده است.",
+      "exampleTranslit": "mōryāna chōb-e darwāza rā khurda ast.",
+      "exampleEn": "Termites have eaten the wood of the door."
+    },
+    "was": {
+      "exampleTarget": "این موریانه است.",
+      "exampleTranslit": "īn mōryāna ast.",
+      "exampleEn": "This is a termite."
+    }
+  },
+  "lx-6459": {
+    "target": "سوسمار",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "در کوه یک سوسمار کلان دیدیم.",
+      "exampleTranslit": "dar kōh yak sōsmār-e kalān dīdēm.",
+      "exampleEn": "We saw a big lizard on the mountain."
+    },
+    "was": {
+      "exampleTarget": "این سوسمار است.",
+      "exampleTranslit": "īn sōsmār ast.",
+      "exampleEn": "This is a lizard."
+    }
+  },
+  "lx-6452": {
+    "target": "کانگورو",
+    "why": [
+      "placeholder example \"این X است / This is a X.\" replaced with a real sentence using the word in its own part of speech and meaning; every token resolves to a lexicon entry"
+    ],
+    "set": {
+      "exampleTarget": "من کانگورو را در تلویزیون دیدم.",
+      "exampleTranslit": "man kāngūrō rā dar tilwīzyōn dīdam.",
+      "exampleEn": "I saw a kangaroo on television."
+    },
+    "was": {
+      "exampleTarget": "این کانگورو است.",
+      "exampleTranslit": "īn kāngūrō ast.",
+      "exampleEn": "This is a kangaroo."
+    }
+  }
+}
