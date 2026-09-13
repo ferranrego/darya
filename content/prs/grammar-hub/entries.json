@@ -3975,7 +3975,9 @@
         "want-can-must",
         "commands",
         "conditionals",
-        "time-clauses"
+        "time-clauses",
+        "perfect-subjunctive",
+        "wishes"
       ],
       "lessonIds": [
         "gl-31",
@@ -4183,7 +4185,8 @@
       "related": [
         "time-clauses",
         "reported-speech",
-        "simple-past"
+        "simple-past",
+        "concessive"
       ],
       "lessonIds": [
         "gl-41",
@@ -4721,7 +4724,8 @@
       "related": [
         "subjunctive",
         "time-clauses",
-        "future"
+        "future",
+        "unreal-conditionals"
       ],
       "lessonIds": [
         "gl-34"
@@ -4896,7 +4900,8 @@
       "related": [
         "subjunctive",
         "conditionals",
-        "past-perfect"
+        "past-perfect",
+        "temporal-connectors"
       ],
       "lessonIds": [
         "gl-35",
@@ -5415,7 +5420,8 @@
       "related": [
         "present-perfect",
         "compound-verbs",
-        "verb-stems"
+        "verb-stems",
+        "impersonal"
       ],
       "lessonIds": [
         "gl-42"
@@ -5641,11 +5647,1426 @@
       "related": [
         "indefinite",
         "compound-verbs",
-        "ezafe"
+        "ezafe",
+        "verbal-nouns"
       ],
       "lessonIds": [
         "gl-46",
         "gl-60"
+      ]
+    },
+    {
+      "id": "gh-33",
+      "slug": "unreal-conditionals",
+      "level": "B2",
+      "rank": 1,
+      "title": "If I had known: unreal 'if'",
+      "summary": "For something that is not true, or did not happen, both halves take the mē- past: agar mēdānestam, namēraftam, if I had known, I wouldn't have gone.",
+      "sample": {
+        "target": "اگر می‌دانستم",
+        "translit": "agar mēdānestam"
+      },
+      "aliases": [
+        "unreal conditional",
+        "unreal conditionals",
+        "unreal if",
+        "counterfactual",
+        "contrary to fact",
+        "hypothetical",
+        "if I had",
+        "if I had known",
+        "if I were",
+        "would have",
+        "wouldn't have",
+        "second conditional",
+        "third conditional",
+        "agar medanestam",
+        "mēdānestam",
+        "اگر می‌دانستم"
+      ],
+      "keywords": [
+        "imagine",
+        "not true",
+        "did not happen",
+        "regret"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Real or unreal",
+          "body": "An 'if' sentence can be about something that can still happen: agar burawī or agar raftī, if you go. That kind takes the subjunctive, or just as often the simple past. This page is about the other kind: something that is not true now, or that did not happen. For that, Dari puts mē- on the past verb in both halves."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "agar",
+              "kind": "fixed"
+            },
+            {
+              "text": "if-half",
+              "kind": "slot"
+            },
+            {
+              "text": "mē- past",
+              "kind": "fixed"
+            },
+            {
+              "text": "result",
+              "kind": "slot"
+            },
+            {
+              "text": "mē- past",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگر می‌دانستم، نمی‌رفتم",
+              "translit": "agar mēdānestam, namēraftam",
+              "en": "If I had known, I wouldn't have gone.",
+              "highlight": "می‌دانستم"
+            },
+            {
+              "target": "اگر زودتر می‌آمدی، او را می‌دیدی",
+              "translit": "agar zūdtar mēāmadī, ō rā mēdīdī",
+              "en": "If you had come earlier, you would have seen him.",
+              "highlight": "می‌آمدی"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Now or in the past?",
+          "body": "The same form covers both: agar mēdānestam can mean 'if I knew' or 'if I had known'. The rest of the sentence usually makes it clear."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگر دری می‌دانستم، با او گپ می‌زدم",
+              "translit": "agar darī mēdānestam, bā ō gap mēzadam",
+              "en": "If I knew Dari, I would talk to him.",
+              "highlight": "گپ می‌زدم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Clearly in the past",
+          "body": "To make the 'if' half clearly past, you can use the past perfect instead: agar dīda būdam, if I had seen. The result half keeps the mē- past."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگر او را دیده بودم، به او می‌گفتم",
+              "translit": "agar ō rā dīda būdam, ba ō mēguftam",
+              "en": "If I had seen him, I would have told him.",
+              "highlight": "دیده بودم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Not",
+          "body": "Put na- in front of mē-, as usual: agar namēāmadī, if you hadn't come. With the past perfect it goes on the front of the first word: agar narafta būdam, if I hadn't gone."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگر باران نمی‌بارید، به بازار می‌رفتیم",
+              "translit": "agar bārān namēbārīd, ba bāzār mēraftēm",
+              "en": "If it weren't raining, we would go to the market.",
+              "highlight": "نمی‌بارید"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "اگر می‌دانستم، نرفتم",
+            "translit": "agar mēdānestam, naraftam"
+          },
+          "right": {
+            "target": "اگر می‌دانستم، نمی‌رفتم",
+            "translit": "agar mēdānestam, namēraftam",
+            "en": "If I had known, I wouldn't have gone."
+          },
+          "why": "The result half needs mē- too. naraftam only says 'I didn't go'. namēraftam says 'I wouldn't have gone'."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "اگر زودتر آمدی، او را می‌دیدی",
+            "translit": "agar zūdtar āmadī, ō rā mēdīdī"
+          },
+          "right": {
+            "target": "اگر زودتر می‌آمدی، او را می‌دیدی",
+            "translit": "agar zūdtar mēāmadī, ō rā mēdīdī",
+            "en": "If you had come earlier, you would have seen him."
+          },
+          "why": "agar with the simple past is a real 'if': agar āmadī usually means 'if you come'. It can never mean 'if you had come'. For something that did not happen, use the mē- past in both halves."
+        }
+      ],
+      "related": [
+        "wishes",
+        "past-continuous",
+        "perfect-subjunctive",
+        "conditionals",
+        "past-perfect",
+        "subjunctive"
+      ],
+      "lessonIds": [
+        "gl-48"
+      ]
+    },
+    {
+      "id": "gh-34",
+      "slug": "wishes",
+      "level": "B2",
+      "rank": 2,
+      "title": "Wishes with kāsh",
+      "summary": "kāsh means 'if only'. The verb after it says what kind of wish: kāsh mēāmad, if only he would come; kāsh āmada būd, if only he had come; kāsh biyāyad, I hope he comes.",
+      "sample": {
+        "target": "کاش",
+        "translit": "kāsh"
+      },
+      "aliases": [
+        "wish",
+        "wishes",
+        "I wish",
+        "if only",
+        "hope",
+        "I hope",
+        "regret",
+        "regrets",
+        "kash",
+        "kāsh",
+        "kashki",
+        "kāshki",
+        "کاش",
+        "کاشکی"
+      ],
+      "keywords": [
+        "sorry",
+        "too late",
+        "dream",
+        "want"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "If only",
+          "body": "kāsh means 'if only' or 'I wish'. It does not change. In speech it is often kāshki (کاشکی). The verb after it tells you what kind of wish it is."
+        },
+        {
+          "type": "table",
+          "heading": "Three kinds of wish",
+          "columns": [
+            "After kāsh",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "mē- past: kāsh mēāmad",
+              "if only he would come, or had come (he didn't)"
+            ],
+            [
+              "past perfect: kāsh āmada būd",
+              "if only he had come (too late now)"
+            ],
+            [
+              "subjunctive: kāsh biyāyad",
+              "I hope he comes (it can still happen)"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Not true now",
+          "body": "For something you want but do not have, use the mē- past, just as in an unreal 'if'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کاش اینجا می‌بودی",
+              "translit": "kāsh īnjā mēbūdī",
+              "en": "I wish you were here.",
+              "highlight": "می‌بودی"
+            },
+            {
+              "target": "کاش دری را بهتر می‌دانستم",
+              "translit": "kāsh darī rā bihtar mēdānestam",
+              "en": "I wish I knew Dari better.",
+              "highlight": "می‌دانستم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Regrets",
+          "body": "For something in the past that you are sorry about, use the past perfect. The mē- past works here too, and in speech it is the more common: kāsh wa'da namēdādam, I wish I hadn't promised."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کاش نرفته بودم",
+              "translit": "kāsh narafta būdam",
+              "en": "I wish I hadn't gone.",
+              "highlight": "نرفته بودم"
+            },
+            {
+              "target": "کاش او را دیده بودم",
+              "translit": "kāsh ō rā dīda būdam",
+              "en": "If only I had seen him.",
+              "highlight": "دیده بودم"
+            },
+            {
+              "target": "کاش وعده نمی‌دادم",
+              "translit": "kāsh wa'da namēdādam",
+              "en": "I wish I hadn't promised.",
+              "highlight": "نمی‌دادم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Hopes",
+          "body": "When the wish can still come true, use the subjunctive with bu-. It is close to English 'I hope'. For hopes about the weather, health or luck, Dari more often says khudā kunad ki, 'God grant that'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کاش زود بیاید",
+              "translit": "kāsh zūd biyāyad",
+              "en": "I hope he comes soon.",
+              "highlight": "بیاید"
+            },
+            {
+              "target": "کاش فردا باران نبارد",
+              "translit": "kāsh fardā bārān nabārad",
+              "en": "I hope it doesn't rain tomorrow.",
+              "highlight": "نبارد"
+            },
+            {
+              "target": "خدا کند که فردا باران نبارد",
+              "translit": "khudā kunad ki fardā bārān nabārad",
+              "en": "I hope it doesn't rain tomorrow.",
+              "highlight": "خدا کند"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "کاش او می‌آید",
+            "translit": "kāsh ō mēāyad"
+          },
+          "right": {
+            "target": "کاش او می‌آمد",
+            "translit": "kāsh ō mēāmad",
+            "en": "If only he would come."
+          },
+          "why": "The present with mē- does not follow kāsh. Use the mē- past, or the subjunctive for a hope: kāsh biyāyad."
+        }
+      ],
+      "related": [
+        "unreal-conditionals",
+        "want-can-must",
+        "past-continuous",
+        "subjunctive",
+        "past-perfect"
+      ],
+      "lessonIds": [
+        "gl-49"
+      ]
+    },
+    {
+      "id": "gh-35",
+      "slug": "perfect-subjunctive",
+      "level": "B2",
+      "rank": 3,
+      "title": "May have, must have: rafta bāshad",
+      "summary": "The -a form plus bāsham, bāshī, bāshad guesses about the past: shāyad rafta bāshad, he may have gone; bāyad rafta bāshad, he must have gone.",
+      "sample": {
+        "target": "رفته باشد",
+        "translit": "rafta bāshad"
+      },
+      "aliases": [
+        "perfect subjunctive",
+        "past subjunctive",
+        "may have",
+        "might have",
+        "must have",
+        "must have gone",
+        "may have gone",
+        "deduction",
+        "bashad",
+        "bāshad",
+        "rafta bashad",
+        "rafta bāshad",
+        "shayad",
+        "shāyad",
+        "رفته باشد",
+        "باشد",
+        "شاید"
+      ],
+      "keywords": [
+        "maybe",
+        "perhaps",
+        "probably",
+        "not sure",
+        "doubt",
+        "guess",
+        "should have"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Guessing about the past",
+          "body": "When you are not sure something happened, or you work it out from what you can see, Dari uses the perfect subjunctive. It is the -a form of the verb, as in rafta, followed by bāsh- and a normal ending."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "past stem",
+              "kind": "slot"
+            },
+            {
+              "text": "-a",
+              "kind": "fixed"
+            },
+            {
+              "text": "bāsh-",
+              "kind": "fixed"
+            },
+            {
+              "text": "ending",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "With raftan (to go)",
+          "columns": [
+            "Person",
+            "Perfect subjunctive"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "rafta bāsham"
+            ],
+            [
+              "tu, you",
+              "rafta bāshī"
+            ],
+            [
+              "ō, he or she",
+              "rafta bāshad"
+            ],
+            [
+              "mā, we",
+              "rafta bāshēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "rafta bāshēd"
+            ],
+            [
+              "ānhā, they",
+              "rafta bāshand"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "May have: shāyad",
+          "body": "shāyad (maybe) with this form says that something may have happened. For 'not', na- goes on the -a form: narafta bāshad."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "شاید او رفته باشد",
+              "translit": "shāyad ō rafta bāshad",
+              "en": "He may have gone.",
+              "highlight": "رفته باشد"
+            },
+            {
+              "target": "شاید نامه را نخوانده باشند",
+              "translit": "shāyad nāma rā nakhānda bāshand",
+              "en": "Maybe they haven't read the letter.",
+              "highlight": "نخوانده باشند"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Must have: bāyad",
+          "body": "bāyad with this form is a confident guess: it must have happened. With the plain subjunctive, bāyad burawad, it is a duty instead: he must go."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "او در خانه نیست، باید به بازار رفته باشد",
+              "translit": "ō dar khāna nēst, bāyad ba bāzār rafta bāshad",
+              "en": "He isn't at home. He must have gone to the market.",
+              "highlight": "باید"
+            },
+            {
+              "target": "فکر نمی‌کنم که او رفته باشد",
+              "translit": "fikr namēkunam ki ō rafta bāshad",
+              "en": "I don't think he has gone.",
+              "highlight": "رفته باشد"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "او باید رفته است",
+            "translit": "ō bāyad rafta ast"
+          },
+          "right": {
+            "target": "او باید رفته باشد",
+            "translit": "ō bāyad rafta bāshad",
+            "en": "He must have gone."
+          },
+          "why": "After bāyad the helper is bāshad, not ast. After shāyad, bāshad is also the normal choice."
+        },
+        {
+          "type": "rule",
+          "heading": "Should have",
+          "body": "'Should have' is a different form. For something that ought to have happened but did not, use bāyad with the mē- past."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "تو باید دیروز می‌آمدی",
+              "translit": "tu bāyad dīrōz mēāmadī",
+              "en": "You should have come yesterday.",
+              "highlight": "می‌آمدی"
+            }
+          ]
+        }
+      ],
+      "related": [
+        "present-perfect",
+        "want-can-must",
+        "unreal-conditionals",
+        "subjunctive"
+      ],
+      "lessonIds": [
+        "gl-50",
+        "gl-53"
+      ]
+    },
+    {
+      "id": "gh-36",
+      "slug": "concessive",
+      "level": "B2",
+      "rank": 4,
+      "title": "Although and even so",
+      "summary": "agarchi and harchand mean 'although'. bā wujūd-e means 'despite'. bā īn ham, 'even so', starts a sentence that goes against the one before.",
+      "sample": {
+        "target": "اگرچه",
+        "translit": "agarchi"
+      },
+      "aliases": [
+        "although",
+        "though",
+        "even though",
+        "despite",
+        "in spite of",
+        "even so",
+        "nevertheless",
+        "even if",
+        "concession",
+        "concessive",
+        "agarche",
+        "agarchi",
+        "agar che",
+        "harchand",
+        "ba wujud",
+        "bā wujūd",
+        "ba in ham",
+        "bā īn ham",
+        "اگرچه",
+        "هرچند",
+        "با وجود",
+        "با این هم"
+      ],
+      "keywords": [
+        "still",
+        "anyway",
+        "contrast",
+        "yet"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Although",
+          "body": "agarchi and harchand both mean 'although' or 'even though'. They open the half of the sentence that you admit is true. The other half says what happened anyway."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "agarchi / harchand",
+              "kind": "fixed"
+            },
+            {
+              "text": "what is true",
+              "kind": "slot"
+            },
+            {
+              "text": "what happened anyway",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگرچه مانده بودم، کار کردم",
+              "translit": "agarchi mānda būdam, kār kardam",
+              "en": "Although I was tired, I worked.",
+              "highlight": "اگرچه"
+            },
+            {
+              "target": "هرچند باران می‌بارید، به مکتب رفتیم",
+              "translit": "harchand bārān mēbārīd, ba maktab raftēm",
+              "en": "Even though it was raining, we went to school.",
+              "highlight": "هرچند"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "With walē or ammā",
+          "body": "English says 'although' or 'but', not both. Dari often starts the second half with walē or ammā (but) as well."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگرچه پول نداشت، ولی خوش بود",
+              "translit": "agarchi pūl nadāsht, walē khush būd",
+              "en": "Although he had no money, he was happy.",
+              "highlight": "ولی"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Despite",
+          "body": "bā wujūd-e means 'despite'. Before a noun that is enough: bā wujūd-e bārān, despite the rain. Before a whole clause, the written form is bā wujūd-e ān ki or bā wujūd-e īn ki. Speech shortens it to bā wujūd-e ki."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "با وجود باران به بازار رفتیم",
+              "translit": "bā wujūd-e bārān ba bāzār raftēm",
+              "en": "Despite the rain, we went to the market.",
+              "highlight": "با وجود"
+            },
+            {
+              "target": "با وجود آن که مانده بود، کار کرد",
+              "translit": "bā wujūd-e ān ki mānda būd, kār kard",
+              "en": "Despite being tired, he worked.",
+              "highlight": "آن که"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Even so",
+          "body": "bā īn ham (even so) and bā wujūd-e īn (despite this) start the second of two sentences, when it goes against the first."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "باران می‌بارید، با این هم بیرون رفتیم",
+              "translit": "bārān mēbārīd, bā īn ham bērōn raftēm",
+              "en": "It was raining. Even so, we went out.",
+              "highlight": "با این هم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Even if",
+          "body": "Put ham (also, even) into the 'if' half and agar becomes 'even if'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "اگر باران هم ببارد، می‌روم",
+              "translit": "agar bārān ham bubārad, mērawam",
+              "en": "Even if it rains, I will go.",
+              "highlight": "هم"
+            }
+          ]
+        }
+      ],
+      "related": [
+        "unreal-conditionals",
+        "temporal-connectors",
+        "verbal-nouns",
+        "conjunctions",
+        "conditionals"
+      ],
+      "lessonIds": [
+        "gl-55"
+      ]
+    },
+    {
+      "id": "gh-37",
+      "slug": "temporal-connectors",
+      "level": "B2",
+      "rank": 5,
+      "title": "Until, as soon as, while",
+      "summary": "tā means 'until' with the subjunctive and 'as soon as' with the past. hamīn ki is 'the moment that'. dar hālē ki is 'while'.",
+      "sample": {
+        "target": "در حالی که",
+        "translit": "dar hālē ki"
+      },
+      "aliases": [
+        "until",
+        "till",
+        "as soon as",
+        "the moment",
+        "the moment that",
+        "while",
+        "whereas",
+        "ta",
+        "tā",
+        "ta ke",
+        "tā ki",
+        "hamin ke",
+        "hamīn ki",
+        "dar hale ke",
+        "dar hālē ki",
+        "تا",
+        "همین که",
+        "در حالی که"
+      ],
+      "keywords": [
+        "when",
+        "time",
+        "at the same time",
+        "so that"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "tā: until",
+          "body": "tā has several jobs. With the subjunctive it means 'until', for something that has not happened yet. It can also mean 'so that'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "صبر کن تا بیایم",
+              "translit": "sabr kun tā biyāyam",
+              "en": "Wait until I come.",
+              "highlight": "تا"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "The extra 'not'",
+          "body": "When tā means 'until', Dari usually puts na- on the verb in the tā half, whether or not the main verb is negative. It still means 'until': do not translate that na- as 'not'. Without na-, tā ki with a present or past verb means 'as long as' or 'while'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "تا کار تمام نشود، به خانه نمی‌روم",
+              "translit": "tā kār tamām nashawad, ba khāna namērawam",
+              "en": "I won't go home until the work is finished.",
+              "highlight": "نشود"
+            },
+            {
+              "target": "تا کار تمام نشود، اینجا باش",
+              "translit": "tā kār tamām nashawad, īnjā bāsh",
+              "en": "Stay here until the work is finished.",
+              "highlight": "نشود"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "As soon as: tā and hamīn ki",
+          "body": "With a past verb, tā means 'as soon as'. hamīn ki means the same, and stresses the very moment: one thing happens and the other follows at once."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "تا مرا دید، خندید",
+              "translit": "tā marā dīd, khandīd",
+              "en": "As soon as he saw me, he laughed.",
+              "highlight": "تا"
+            },
+            {
+              "target": "همین که به خانه رسیدم، باران شروع شد",
+              "translit": "hamīn ki ba khāna rasīdam, bārān shurū' shud",
+              "en": "The moment I got home, it started to rain.",
+              "highlight": "همین که"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "While: dar hālē ki",
+          "body": "dar hālē ki joins two things happening at the same time. It is also used for a contrast, like English 'whereas'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "در حالی که نان می‌خوردم، او آمد",
+              "translit": "dar hālē ki nān mēkhurdam, ō āmad",
+              "en": "While I was eating, he came.",
+              "highlight": "در حالی که"
+            },
+            {
+              "target": "او کار می‌کند، در حالی که برادرش درس می‌خواند",
+              "translit": "ō kār mēkunad, dar hālē ki barādarash dars mēkhānad",
+              "en": "He works, whereas his brother studies.",
+              "highlight": "در حالی که"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Which one?",
+          "columns": [
+            "Word",
+            "Use it for"
+          ],
+          "rows": [
+            [
+              "waqtē ki",
+              "when: the plain, everyday word"
+            ],
+            [
+              "hamīn ki",
+              "the moment that: one thing right after another"
+            ],
+            [
+              "tā + past",
+              "as soon as"
+            ],
+            [
+              "tā + subjunctive",
+              "until; also 'so that'"
+            ],
+            [
+              "dar hālē ki",
+              "while: two things at once; also 'whereas'"
+            ]
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "صبر کن تا می‌آیم",
+            "translit": "sabr kun tā mēāyam"
+          },
+          "right": {
+            "target": "صبر کن تا بیایم",
+            "translit": "sabr kun tā biyāyam",
+            "en": "Wait until I come."
+          },
+          "why": "'Until' points to something that has not happened yet, so the verb after tā takes the subjunctive, not mē-."
+        }
+      ],
+      "related": [
+        "concessive",
+        "past-continuous",
+        "want-can-must",
+        "time-clauses",
+        "subjunctive",
+        "conjunctions"
+      ],
+      "lessonIds": [
+        "gl-56",
+        "gl-57"
+      ]
+    },
+    {
+      "id": "gh-38",
+      "slug": "impersonal",
+      "level": "B2",
+      "rank": 7,
+      "title": "One can, one must: mētawān guft",
+      "summary": "mētawān and bāyad with the short infinitive make a sentence about anybody: mētawān guft, one can say; bāyad raft, it's time to go. mēgōyand means 'people say'.",
+      "sample": {
+        "target": "می‌توان گفت",
+        "translit": "mētawān guft"
+      },
+      "aliases": [
+        "impersonal",
+        "one can",
+        "one must",
+        "one should",
+        "it is possible to",
+        "it is necessary to",
+        "people say",
+        "they say",
+        "it is said",
+        "short infinitive",
+        "metawan",
+        "mētawān",
+        "metawan guft",
+        "namētawān",
+        "bayad raft",
+        "mēgōyand",
+        "می‌توان",
+        "نمی‌توان",
+        "می‌گویند"
+      ],
+      "keywords": [
+        "anybody",
+        "no subject",
+        "general",
+        "rumour",
+        "news"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "A sentence about anybody",
+          "body": "English often says 'you' or 'one' when it means anybody: 'you can see Kabul from here'. Dari leaves the person out. It uses mētawān (one can) or bāyad (one must) with the short infinitive. This is written Dari. In speech, Kabul says ādam bāyad ... ('a person must ...') or puts mēsha after the -a form: az īnjā kābul dīda mēsha, you can see Kabul from here."
+        },
+        {
+          "type": "rule",
+          "heading": "The short infinitive",
+          "body": "Take -an off an infinitive and you have the short infinitive: raftan → raft, guftan → guft, dīdan → dīd. It looks like the past for 'he' or 'she', but here it has no time and no person."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "mētawān / bāyad",
+              "kind": "fixed"
+            },
+            {
+              "text": "short infinitive",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Dari",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "mētawān guft",
+              "one can say"
+            ],
+            [
+              "namētawān guft",
+              "one cannot say"
+            ],
+            [
+              "bāyad raft",
+              "one must go; it's time to go"
+            ],
+            [
+              "nabāyad guft",
+              "one must not say"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "از اینجا می‌توان کابل را دید",
+              "translit": "az īnjā mētawān kābul rā dīd",
+              "en": "From here you can see Kabul.",
+              "highlight": "می‌توان"
+            },
+            {
+              "target": "با این پول موتر نمی‌توان خرید",
+              "translit": "bā īn pūl mōtar namētawān kharīd",
+              "en": "You can't buy a car with this money.",
+              "highlight": "نمی‌توان"
+            },
+            {
+              "target": "حالا باید رفت",
+              "translit": "hālā bāyad raft",
+              "en": "It's time to go now.",
+              "highlight": "باید رفت"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "When you mean a person",
+          "body": "For a particular person, use the subjunctive with an ending instead: bāyad burawam, I must go. The short infinitive is for anybody."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "می‌توان گفتن",
+            "translit": "mētawān guftan"
+          },
+          "right": {
+            "target": "می‌توان گفت",
+            "translit": "mētawān guft",
+            "en": "One can say."
+          },
+          "why": "After mētawān, and after bāyad used this way, the verb loses its -an. guftan is the full infinitive."
+        },
+        {
+          "type": "rule",
+          "heading": "People say: mēgōyand",
+          "body": "For 'people say' or 'it is said', Dari uses mēgōyand, 'they say', without saying who. The news also uses the passive gufta mēshawad, 'it is said'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "می‌گویند که او به کابل رفته است",
+              "translit": "mēgōyand ki ō ba kābul rafta ast",
+              "en": "They say he has gone to Kabul.",
+              "highlight": "می‌گویند"
+            },
+            {
+              "target": "گفته می‌شود که او مریض است",
+              "translit": "gufta mēshawad ki ō marīz ast",
+              "en": "It is said that he is ill.",
+              "highlight": "گفته می‌شود"
+            }
+          ]
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "می‌گویند",
+            "translit": "mēgōyand"
+          },
+          "spoken": {
+            "target": "میگن",
+            "translit": "mēgan"
+          },
+          "note": "Kabul speech shortens mēgōyand to mēgan, and people type it میگن."
+        }
+      ],
+      "related": [
+        "want-can-must",
+        "perfect-subjunctive",
+        "present-perfect",
+        "passive"
+      ],
+      "lessonIds": [
+        "gl-51"
+      ]
+    },
+    {
+      "id": "gh-39",
+      "slug": "verbal-nouns",
+      "level": "B2",
+      "rank": 8,
+      "title": "Verbs as nouns: raftan, kōshish",
+      "summary": "The infinitive also works as a noun: raftan ba kābul āsān nēst, going to Kabul is not easy. Formal writing then links ideas with words like binābar'īn, therefore.",
+      "sample": {
+        "target": "رفتن",
+        "translit": "raftan"
+      },
+      "aliases": [
+        "verbal noun",
+        "verbal nouns",
+        "gerund",
+        "ing",
+        "-ing",
+        "infinitive as noun",
+        "nominalization",
+        "nominalisation",
+        "masdar",
+        "ish",
+        "-ish",
+        "kōshish",
+        "therefore",
+        "on the one hand",
+        "on the other hand",
+        "connectors",
+        "linking words",
+        "binabarin",
+        "binābar'īn",
+        "az yak taraf",
+        "بنابراین",
+        "از یک طرف"
+      ],
+      "keywords": [
+        "noun",
+        "formal",
+        "essay",
+        "argument",
+        "before going",
+        "after eating"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "The infinitive is a noun",
+          "body": "raftan means 'to go', but it also works as a noun: 'going'. It can be the subject of a sentence, and it can follow a preposition. English uses -ing for this."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "رفتن به کابل آسان نیست",
+              "translit": "raftan ba kābul āsān nēst",
+              "en": "Going to Kabul is not easy.",
+              "highlight": "رفتن"
+            },
+            {
+              "target": "خواندن کتاب مفید است",
+              "translit": "khāndan-e ketāb mufīd ast",
+              "en": "Reading books is useful.",
+              "highlight": "خواندن"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Its object",
+          "body": "What you do can follow with the ezafe, khāndan-e ketāb, or come first with no ezafe, ketāb khāndan. For 'reading books' in general both work, and ketāb khāndan is the everyday one. For one particular book, use the ezafe (khāndan-e īn ketāb) or rā (īn ketāb rā khāndan)."
+        },
+        {
+          "type": "rule",
+          "heading": "After prepositions",
+          "body": "The infinitive is common after barā-ye (for), pēsh az (before) and ba'd az (after)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "برای خواندن آمدم",
+              "translit": "barā-ye khāndan āmadam",
+              "en": "I came to read.",
+              "highlight": "برای خواندن"
+            },
+            {
+              "target": "پیش از رفتن چای بخور",
+              "translit": "pēsh az raftan chāy bukhur",
+              "en": "Have some tea before you go.",
+              "highlight": "پیش از رفتن"
+            },
+            {
+              "target": "بعد از خوردن نان خوابیدم",
+              "translit": "ba'd az khurdan-e nān khābīdam",
+              "en": "After eating, I slept.",
+              "highlight": "بعد از خوردن"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "پیش از رفتم چای بخور",
+            "translit": "pēsh az raftam chāy bukhur"
+          },
+          "right": {
+            "target": "پیش از رفتن چای بخور",
+            "translit": "pēsh az raftan chāy bukhur",
+            "en": "Have some tea before you go."
+          },
+          "why": "pēsh az goes straight onto a noun, and the infinitive is one. A verb with an ending needs pēsh az ān ki and the subjunctive: pēsh az ān ki burawī."
+        },
+        {
+          "type": "rule",
+          "heading": "Nouns in -ish",
+          "body": "Many abstract nouns are a present stem plus -ish. You cannot make new ones freely, but once you know the stem they are easy to recognise."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Stem",
+            "Noun"
+          ],
+          "rows": [
+            [
+              "kōsh-, try",
+              "kōshish, effort"
+            ],
+            [
+              "dān-, know",
+              "dānish, knowledge"
+            ],
+            [
+              "āmōz-, learn",
+              "āmōzish, learning, training"
+            ],
+            [
+              "khāh-, want",
+              "khāhish, request"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Linking ideas in writing",
+          "body": "Formal writing and speeches organise an argument with a few set phrases. binābar'īn means 'therefore'. az yak taraf ... az taraf-e dīgar means 'on the one hand ... on the other hand'. In everyday talk people say az hamīn khātir (that's why) instead: mānda būdam, az hamīn khātir naraftam."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "مانده بودم، بنابراین نرفتم",
+              "translit": "mānda būdam, binābar'īn naraftam",
+              "en": "I was tired, so I didn't go.",
+              "highlight": "بنابراین"
+            },
+            {
+              "target": "از یک طرف کار زیاد است، از طرف دیگر وقت کم است",
+              "translit": "az yak taraf kār ziyād ast, az taraf-e dīgar waqt kam ast",
+              "en": "On the one hand there is a lot of work; on the other, there is little time.",
+              "highlight": "از طرف دیگر"
+            }
+          ]
+        }
+      ],
+      "related": [
+        "impersonal",
+        "concessive",
+        "verb-stems",
+        "word-building",
+        "conjunctions"
+      ],
+      "lessonIds": [
+        "gl-59",
+        "gl-62"
+      ]
+    },
+    {
+      "id": "gh-40",
+      "slug": "spoken-vs-written",
+      "level": "B2",
+      "rank": 6,
+      "title": "Written Dari and Kabul speech",
+      "summary": "Kabul speech shortens written Dari in regular ways: man becomes ma, hastam becomes astum, mērawam becomes mērum. Write the full forms, and learn to read both.",
+      "sample": {
+        "target": "مه میرم",
+        "translit": "ma mērum"
+      },
+      "aliases": [
+        "spoken",
+        "spoken dari",
+        "speech",
+        "kabuli",
+        "kabul dialect",
+        "colloquial",
+        "informal",
+        "slang",
+        "written",
+        "formal",
+        "register",
+        "texting",
+        "messages",
+        "astum",
+        "merum",
+        "mērum",
+        "مه",
+        "استم",
+        "میرم"
+      ],
+      "keywords": [
+        "conversation",
+        "chat",
+        "everyday",
+        "pronunciation",
+        "dialect"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Two ways to say the same thing",
+          "body": "The other pages teach written Dari: the language of books, news and school. In Kabul, people speak a shorter form of it, and they type that form in messages too. Most words stay the same, and the changes follow a few regular patterns."
+        },
+        {
+          "type": "rule",
+          "heading": "Which to use",
+          "body": "Write the full forms. If you speak them you will be understood everywhere, though in conversation full forms like mērawam and hastam sound like reading aloud from a book. Learn the Kabul forms so you can follow people and read what they send you."
+        },
+        {
+          "type": "table",
+          "heading": "Pronouns",
+          "columns": [
+            "Written",
+            "Kabul speech"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "ma, مه"
+            ],
+            [
+              "ō, he or she",
+              "ū, او"
+            ],
+            [
+              "ānhā, they",
+              "unā, اونا"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "body": "mā (we) and shumā (you) stay the same in speech."
+        },
+        {
+          "type": "table",
+          "heading": "'To be'",
+          "columns": [
+            "Written",
+            "Kabul speech"
+          ],
+          "rows": [
+            [
+              "hastam",
+              "astum, استم"
+            ],
+            [
+              "hastī",
+              "astī, استی"
+            ],
+            [
+              "hastēm",
+              "astēm, استیم"
+            ],
+            [
+              "hastēd",
+              "astēn, استین"
+            ],
+            [
+              "hastand",
+              "astan, استن"
+            ],
+            [
+              "ast",
+              "as, اس"
+            ],
+            [
+              "nēst",
+              "nēs, نیس"
+            ]
+          ]
+        },
+        {
+          "type": "spoken",
+          "written": {
+            "target": "ما در خانه هستیم",
+            "translit": "mā dar khāna hastēm"
+          },
+          "spoken": {
+            "target": "ما ده خانه استیم",
+            "translit": "mā da khāna astēm"
+          },
+          "note": "dar becomes da (typed ده), and hastēm becomes astēm. mā stays mā."
+        },
+        {
+          "type": "rule",
+          "heading": "Verbs",
+          "body": "Speech changes some endings: -am is said -um, -ad is said -a, and -ēd becomes -ēn. The commonest verbs also lose part of their stem, so mērawam becomes mērum."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Written",
+            "Kabul speech"
+          ],
+          "rows": [
+            [
+              "mērawam, I go",
+              "mērum, میرم"
+            ],
+            [
+              "mērawad, he or she goes",
+              "mēra, میره"
+            ],
+            [
+              "mēgōyam, I say",
+              "mēgum, میگم"
+            ],
+            [
+              "mēgōyand, they say",
+              "mēgan, میگن"
+            ],
+            [
+              "mētawānam, I can",
+              "mētānum, میتانم"
+            ],
+            [
+              "raftam, I went",
+              "raftum, رفتم"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Small words",
+          "body": "rā is said ra and typed ره. After a consonant it is often just -a, joined to the word: ketāba, 'the book' (object). dar becomes da, typed ده, and da also stands where writing has ba. ba before a place is often left out. The plural -hā loses its h: ketābā."
+        },
+        {
+          "type": "spoken",
+          "written": {
+            "target": "من کتاب‌ها را می‌خوانم",
+            "translit": "man ketāb-hā rā mēkhānam"
+          },
+          "spoken": {
+            "target": "مه کتابا ره میخانم",
+            "translit": "ma ketābā ra mēkhānum"
+          },
+          "note": "man becomes ma, -hā becomes -ā, rā becomes ra, and the ending -am is said -um. Messages usually skip the half-space too."
+        },
+        {
+          "type": "spoken",
+          "written": {
+            "target": "او چه می‌گوید؟",
+            "translit": "ō che mēgōyad?"
+          },
+          "spoken": {
+            "target": "او چی میگه؟",
+            "translit": "ū chī mēga?"
+          },
+          "note": "che is said chī and typed چی, and mēgōyad becomes mēga."
+        }
+      ],
+      "related": [
+        "pronouns-and-to-be",
+        "present-tense",
+        "object-marker-ra"
+      ],
+      "lessonIds": [
+        "gl-58"
       ]
     }
   ]
