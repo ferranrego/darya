@@ -16,7 +16,7 @@
               "title": "I am, you are",
               "subtitle": "Six pronouns and the verb 'to be'",
               "grammarPoint": "pronouns-budan",
-              "grammarPointEn": "Personal pronouns (man, tu, ō, mā, shumā, ānhā) with the present of 'to be': hastam, hasti, ast, hastēm, hastēd, hastand; the verb always comes last.",
+              "grammarPointEn": "Personal pronouns (man, tu, ō, mā, shumā, ānhā) with the present of 'to be': hastam, hastī, ast, hastēm, hastēd, hastand; the verb always comes last.",
               "slides": [
                 {
                   "id": "gs-01-1",
@@ -68,7 +68,7 @@
                     ],
                     [
                       "tu",
-                      "hasti"
+                      "hastī"
                     ],
                     [
                       "ō / īn / ān",
@@ -96,7 +96,7 @@
                     },
                     {
                       "target": "تو شاگرد هستی",
-                      "translit": "tu shāgerd hasti",
+                      "translit": "tu shāgerd hastī",
                       "en": "You are a student.",
                       "highlight": "هستی"
                     },
@@ -142,7 +142,7 @@
                   "distractors": [
                     {
                       "target": "هستی",
-                      "translit": "hasti"
+                      "translit": "hastī"
                     },
                     {
                       "target": "است",
@@ -162,7 +162,7 @@
                   "en": "You are a friend.",
                   "answer": {
                     "target": "هستی",
-                    "translit": "hasti"
+                    "translit": "hastī"
                   },
                   "distractors": [
                     {
@@ -238,7 +238,7 @@
                   "extraWords": [
                     {
                       "target": "هستی",
-                      "translit": "hasti"
+                      "translit": "hastī"
                     }
                   ]
                 },
@@ -304,7 +304,7 @@
                     },
                     {
                       "target": "هستی",
-                      "translit": "hasti"
+                      "translit": "hastī"
                     },
                     {
                       "target": "هستم",
@@ -429,7 +429,7 @@
                     },
                     {
                       "target": "هستی",
-                      "translit": "hasti"
+                      "translit": "hastī"
                     }
                   ]
                 },
@@ -563,7 +563,7 @@
                   "examples": [
                     {
                       "target": "تو کجا هستی؟",
-                      "translit": "tu kujā hasti?",
+                      "translit": "tu kujā hastī?",
                       "en": "Where are you?",
                       "highlight": "کجا"
                     },
@@ -582,7 +582,7 @@
                   "examples": [
                     {
                       "target": "تو معلم هستی؟",
-                      "translit": "tu mu'allem hasti?",
+                      "translit": "tu mu'allem hastī?",
                       "en": "Are you a teacher?"
                     },
                     {
@@ -599,7 +599,7 @@
                   "id": "ge-03-1",
                   "type": "fillBlank",
                   "target": "تو ___ هستی؟",
-                  "translit": "tu ___ hasti?",
+                  "translit": "tu ___ hastī?",
                   "en": "Where are you?",
                   "answer": {
                     "target": "کجا",
@@ -680,16 +680,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "تو چطور هستی؟",
-                  "translit": "tu chetōr hasti?",
+                  "translit": "tu chetōr hastī?",
                   "en": "How are you?",
                   "distractorsTarget": [
                     {
                       "target": "تو کجا هستی؟",
-                      "translit": "tu kujā hasti?"
+                      "translit": "tu kujā hastī?"
                     },
                     {
                       "target": "تو کی هستی؟",
-                      "translit": "tu kī hasti?"
+                      "translit": "tu kī hastī?"
                     }
                   ]
                 },
@@ -789,7 +789,7 @@
                     },
                     {
                       "target": "سه شاگرد اینجا هستند",
-                      "translit": "se shāgerd īnjā hastand",
+                      "translit": "sē shāgerd īnjā hastand",
                       "en": "Three students are here.",
                       "highlight": "سه شاگرد"
                     }
@@ -1154,7 +1154,7 @@
               "title": "Good friends, hot tea",
               "subtitle": "Describe things with ezāfa + adjective",
               "grammarPoint": "ezafa-adjectives",
-              "grammarPointEn": "Attributive adjectives follow the noun with ezāfa: dōst-e khōb (good friend), chāy-e garm (hot tea); chains like dōst-e khōb-e man (my good friend).",
+              "grammarPointEn": "Attributive adjectives follow the noun with ezāfa: dōst-e khūb (good friend), chāy-e garm (hot tea); chains like dōst-e khūb-e man (my good friend).",
               "slides": [
                 {
                   "id": "gs-06-1",
@@ -1163,7 +1163,7 @@
                   "examples": [
                     {
                       "target": "چای گرم خوب است",
-                      "translit": "chāy-e garm khōb ast",
+                      "translit": "chāy-e garm khūb ast",
                       "en": "Hot tea is good.",
                       "highlight": "چای گرم"
                     },
@@ -1178,11 +1178,11 @@
                 {
                   "id": "gs-06-2",
                   "title": "Chain it further",
-                  "body": "Noun, adjective, owner - all linked with -e: dōst-e khōb-e man, 'my good friend'.",
+                  "body": "Noun, adjective, owner - all linked with -e: dōst-e khūb-e man, 'my good friend'.",
                   "examples": [
                     {
                       "target": "او دوست خوب من است",
-                      "translit": "ō dōst-e khōb-e man ast",
+                      "translit": "ō dōst-e khūb-e man ast",
                       "en": "He is my good friend.",
                       "highlight": "دوست خوب من"
                     }
@@ -1195,7 +1195,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "او دوست خوب من است",
-                  "translit": "ō dōst-e khōb-e man ast",
+                  "translit": "ō dōst-e khūb-e man ast",
                   "en": "He is my good friend.",
                   "distractorsEn": [
                     "He is my friend.",
@@ -1206,7 +1206,7 @@
                   "id": "ge-06-2",
                   "type": "fillBlank",
                   "target": "چای ___ خوب است",
-                  "translit": "chāy-e ___ khōb ast",
+                  "translit": "chāy-e ___ khūb ast",
                   "en": "Hot tea is good.",
                   "answer": {
                     "target": "گرم",
@@ -1257,7 +1257,7 @@
                   "id": "ge-06-4",
                   "type": "fillBlank",
                   "target": "آب ___ خوب است",
-                  "translit": "āb-e ___ khōb ast",
+                  "translit": "āb-e ___ khūb ast",
                   "en": "Cold water is good.",
                   "answer": {
                     "target": "سرد",
@@ -1334,7 +1334,7 @@
                     },
                     {
                       "target": "خوب",
-                      "translit": "khōb-e"
+                      "translit": "khūb-e"
                     },
                     {
                       "target": "من",
@@ -1345,7 +1345,7 @@
                       "translit": "ast"
                     }
                   ],
-                  "translit": "ō khāhar-e khōb-e man ast",
+                  "translit": "ō khāhar-e khūb-e man ast",
                   "extraWords": [
                     {
                       "target": "برادر",
@@ -1750,7 +1750,7 @@
                     },
                     {
                       "target": "نان خوب نیست",
-                      "translit": "nān khōb nēst"
+                      "translit": "nān khūb nēst"
                     }
                   ]
                 },
@@ -1789,7 +1789,7 @@
               "title": "I have two brothers",
               "subtitle": "dāshtan and counting to ten",
               "grammarPoint": "dashtan-numbers",
-              "grammarPointEn": "The verb dāshtan (to have) in the present - dāram, dāri, dārad, dārēm, dārēd, dārand, with no mē- prefix - plus numbers and chand (how many).",
+              "grammarPointEn": "The verb dāshtan (to have) in the present - dāram, dārī, dārad, dārēm, dārēd, dārand, with no mē- prefix - plus numbers and chand (how many).",
               "slides": [
                 {
                   "id": "gs-09-1",
@@ -1802,7 +1802,7 @@
                     ],
                     [
                       "tu",
-                      "dāri"
+                      "dārī"
                     ],
                     [
                       "ō",
@@ -1844,7 +1844,7 @@
                       "2"
                     ],
                     [
-                      "se",
+                      "sē",
                       "3"
                     ],
                     [
@@ -1863,13 +1863,13 @@
                   "examples": [
                     {
                       "target": "تو چند خواهر داری؟",
-                      "translit": "tu chand khāhar dāri?",
+                      "translit": "tu chand khāhar dārī?",
                       "en": "How many sisters do you have?",
                       "highlight": "چند"
                     },
                     {
                       "target": "من سه خواهر دارم",
-                      "translit": "man se khāhar dāram",
+                      "translit": "man sē khāhar dāram",
                       "en": "I have three sisters."
                     }
                   ]
@@ -1889,7 +1889,7 @@
                   "distractors": [
                     {
                       "target": "داری",
-                      "translit": "dāri"
+                      "translit": "dārī"
                     },
                     {
                       "target": "دارد",
@@ -1945,10 +1945,10 @@
                     },
                     {
                       "target": "داری",
-                      "translit": "dāri"
+                      "translit": "dārī"
                     }
                   ],
-                  "translit": "tu chāy dāri?",
+                  "translit": "tu chāy dārī?",
                   "extraWords": [
                     {
                       "target": "دارم",
@@ -1960,7 +1960,7 @@
                   "id": "ge-09-5",
                   "type": "fillBlank",
                   "target": "تو ___ برادر داری؟",
-                  "translit": "tu ___ barādar dāri?",
+                  "translit": "tu ___ barādar dārī?",
                   "en": "How many brothers do you have?",
                   "answer": {
                     "target": "چند",
@@ -1994,7 +1994,7 @@
                     },
                     {
                       "target": "سه",
-                      "translit": "se",
+                      "translit": "sē",
                       "en": "three"
                     },
                     {
@@ -2050,7 +2050,7 @@
               "title": "The mē- machine",
               "subtitle": "Say what you do with mē- + verb",
               "grammarPoint": "present-me",
-              "grammarPointEn": "Present tense: mē- + present stem + personal ending (mēkhānam, mēkhāni, mēkhānad, mēkhānēm, mēkhānēd, mēkhānand); the verb stays at the end of the sentence.",
+              "grammarPointEn": "Present tense: mē- + present stem + personal ending (mēkhānam, mēkhānī, mēkhānad, mēkhānēm, mēkhānēd, mēkhānand); the verb stays at the end of the sentence.",
               "slides": [
                 {
                   "id": "gs-10-1",
@@ -2063,7 +2063,7 @@
                     ],
                     [
                       "tu",
-                      "mēkhāni"
+                      "mēkhānī"
                     ],
                     [
                       "ō",
@@ -2156,7 +2156,7 @@
                   "distractors": [
                     {
                       "target": "می‌خوانی",
-                      "translit": "mēkhāni"
+                      "translit": "mēkhānī"
                     },
                     {
                       "target": "می‌خواند",
@@ -2181,7 +2181,7 @@
                     },
                     {
                       "target": "می‌روی",
-                      "translit": "mērawi"
+                      "translit": "mērawī"
                     }
                   ]
                 },
@@ -2281,7 +2281,7 @@
                   "distractorsTarget": [
                     {
                       "target": "شما دری می‌خوانی",
-                      "translit": "shumā darī mēkhāni"
+                      "translit": "shumā darī mēkhānī"
                     },
                     {
                       "target": "ما دری می‌خوانیم",
@@ -2456,10 +2456,10 @@
                     },
                     {
                       "target": "می‌بینی",
-                      "translit": "mēbīni"
+                      "translit": "mēbīnī"
                     }
                   ],
-                  "translit": "tu khāna-ye man rā mēbīni",
+                  "translit": "tu khāna-ye man rā mēbīnī",
                   "extraWords": [
                     {
                       "target": "است",
@@ -2471,7 +2471,7 @@
                   "id": "ge-11-7",
                   "type": "fillBlank",
                   "target": "تو چای ___ می‌خوری؟",
-                  "translit": "tu chāy ___ mēkhuri?",
+                  "translit": "tu chāy ___ mēkhurī?",
                   "en": "Are you drinking the tea?",
                   "answer": {
                     "target": "را",
@@ -2527,7 +2527,7 @@
                     ],
                     [
                       "tu",
-                      "nēsti"
+                      "nēstī"
                     ],
                     [
                       "ō",
@@ -2558,7 +2558,7 @@
                 {
                   "id": "gs-12-3",
                   "title": "nadāram - I don't have",
-                  "body": "dāshtan takes plain na-: nadāram, nadāri, nadārad…",
+                  "body": "dāshtan takes plain na-: nadāram, nadārī, nadārad…",
                   "examples": [
                     {
                       "target": "من چای ندارم",
@@ -2641,7 +2641,7 @@
                     },
                     {
                       "target": "نداری",
-                      "translit": "nadāri"
+                      "translit": "nadārī"
                     }
                   ]
                 },
@@ -2743,7 +2743,7 @@
                     ],
                     [
                       "tu",
-                      "rafti"
+                      "raftī"
                     ],
                     [
                       "ō",
@@ -2884,7 +2884,7 @@
                   "en": "You drank tea.",
                   "answer": {
                     "target": "خوردی",
-                    "translit": "khurdi"
+                    "translit": "khurdī"
                   },
                   "distractors": [
                     {
@@ -2893,7 +2893,7 @@
                     },
                     {
                       "target": "می‌خوری",
-                      "translit": "mēkhuri"
+                      "translit": "mēkhurī"
                     }
                   ]
                 },
@@ -3082,7 +3082,7 @@
                   "distractors": [
                     {
                       "target": "داری",
-                      "translit": "dāri"
+                      "translit": "dārī"
                     },
                     {
                       "target": "ندارم",
@@ -3317,7 +3317,7 @@
                 {
                   "id": "gs-15-1",
                   "title": "Add -tar",
-                  "body": "To compare, add -tar to the adjective: kalān → kalāntar (bigger), khōb → khōbtar (better in speech; bihtar is more common). The thing you compare against comes after az.",
+                  "body": "To compare, add -tar to the adjective: kalān → kalāntar (bigger), khūb → khūbtar (better in speech; bihtar is more common). The thing you compare against comes after az.",
                   "table": [
                     [
                       "kalān → kalāntar",
@@ -3373,7 +3373,7 @@
                   "translit": "īn ketāb az ān ketāb ___ ast",
                   "en": "This book is newer than that book.",
                   "answer": {
-                    "target": "نو‌تر",
+                    "target": "نوتر",
                     "translit": "nawtar"
                   },
                   "distractors": [
@@ -3607,7 +3607,7 @@
                       "translit": "īn"
                     },
                     {
-                      "target": "نو‌ترین",
+                      "target": "نوترین",
                       "translit": "nawtarīn"
                     },
                     {
@@ -3622,7 +3622,7 @@
                   "translit": "īn nawtarīn ketāb ast",
                   "extraWords": [
                     {
-                      "target": "نو‌تر",
+                      "target": "نوتر",
                       "translit": "nawtar"
                     }
                   ],
@@ -3630,7 +3630,7 @@
                     [
                       "این",
                       "کتاب",
-                      "نو‌ترین",
+                      "نوترین",
                       "است"
                     ]
                   ]
@@ -3697,7 +3697,7 @@
                     },
                     {
                       "target": "خوب",
-                      "translit": "khōb"
+                      "translit": "khūb"
                     }
                   ]
                 },
@@ -3720,7 +3720,7 @@
               "title": "My book, her name",
               "subtitle": "Possessive endings and khud",
               "grammarPoint": "possessive-endings",
-              "grammarPointEn": "Attached possessive endings -am, -at, -ash, -emā, -etān, -eshān (ketābam = my book) as a shorter alternative to ketāb-e man; khud for 'own'.",
+              "grammarPointEn": "Attached possessive endings -am, -at, -ash, -emān, -etān, -eshān (ketābam = my book) as a shorter alternative to ketāb-e man; khud for 'own'.",
               "slides": [
                 {
                   "id": "gs-17-1",
@@ -3740,7 +3740,7 @@
                       "his / her"
                     ],
                     [
-                      "-emā",
+                      "-emān",
                       "our"
                     ],
                     [
@@ -3990,7 +3990,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "ساعت سه است",
-                  "translit": "sā'at se ast",
+                  "translit": "sā'at sē ast",
                   "en": "It is three o'clock.",
                   "distractorsEn": [
                     "It is two o'clock.",
@@ -4061,7 +4061,7 @@
                     },
                     {
                       "target": "ساعت سه",
-                      "translit": "sā'at se",
+                      "translit": "sā'at sē",
                       "en": "three o'clock"
                     },
                     {
@@ -4389,7 +4389,7 @@
                     },
                     {
                       "target": "فردا کار می‌کنی",
-                      "translit": "fardā kār mēkuni"
+                      "translit": "fardā kār mēkunī"
                     }
                   ]
                 },
@@ -4401,12 +4401,12 @@
                   "en": "Tomorrow you will go to school.",
                   "answer": {
                     "target": "می‌روی",
-                    "translit": "mērawi"
+                    "translit": "mērawī"
                   },
                   "distractors": [
                     {
                       "target": "رفتی",
-                      "translit": "rafti"
+                      "translit": "raftī"
                     },
                     {
                       "target": "می‌روم",
@@ -4455,15 +4455,15 @@
               "title": "Go! Read!",
               "subtitle": "The imperative",
               "grammarPoint": "imperative",
-              "grammarPointEn": "The imperative: be- + present stem (bura! = go!, bukhān! = read!); negative na- (naraw! = don't go!).",
+              "grammarPointEn": "The imperative: be- + present stem (buraw! = go!, bukhān! = read!); negative na- (naraw! = don't go!).",
               "slides": [
                 {
                   "id": "gs-21-1",
                   "title": "be- + stem",
-                  "body": "To give a command to one person, put be- on the present stem: raw → bura (go!), khān → bukhān (read!). For 'don't', use na-: naraw (don't go).",
+                  "body": "To give a command to one person, put be- on the present stem: raw → buraw (go!), khān → bukhān (read!). For 'don't', use na-: naraw (don't go).",
                   "table": [
                     [
-                      "raftan → bura",
+                      "raftan → buraw",
                       "go!"
                     ],
                     [
@@ -4482,7 +4482,7 @@
                   "examples": [
                     {
                       "target": "به مکتب برو",
-                      "translit": "ba maktab bura",
+                      "translit": "ba maktab buraw",
                       "en": "Go to school.",
                       "highlight": "برو"
                     },
@@ -4517,16 +4517,16 @@
                   "en": "Go to school!",
                   "answer": {
                     "target": "برو",
-                    "translit": "bura"
+                    "translit": "buraw"
                   },
                   "distractors": [
                     {
                       "target": "می‌روی",
-                      "translit": "mērawi"
+                      "translit": "mērawī"
                     },
                     {
                       "target": "رفتی",
-                      "translit": "rafti"
+                      "translit": "raftī"
                     }
                   ]
                 },
@@ -4555,11 +4555,11 @@
                   "distractors": [
                     {
                       "target": "برو",
-                      "translit": "bura"
+                      "translit": "buraw"
                     },
                     {
                       "target": "می‌روی",
-                      "translit": "mērawi"
+                      "translit": "mērawī"
                     }
                   ]
                 },
@@ -4585,7 +4585,7 @@
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
-                      "translit": "mēkhāni"
+                      "translit": "mēkhānī"
                     }
                   ]
                 },
@@ -4596,7 +4596,7 @@
                   "pairs": [
                     {
                       "target": "برو",
-                      "translit": "bura",
+                      "translit": "buraw",
                       "en": "go!"
                     },
                     {
@@ -4626,7 +4626,7 @@
                   "distractorsTarget": [
                     {
                       "target": "کار می‌کنی",
-                      "translit": "kār mēkuni"
+                      "translit": "kār mēkunī"
                     },
                     {
                       "target": "کار نکن",
@@ -4650,7 +4650,7 @@
                   "examples": [
                     {
                       "target": "لطفاً بنشینید",
-                      "translit": "lutfan bunshinēd",
+                      "translit": "lutfan buneshīnēd",
                       "en": "Please sit down.",
                       "highlight": "لطفاً"
                     },
@@ -4668,7 +4668,7 @@
                   "id": "ge-22-1",
                   "type": "fillBlank",
                   "target": "___ بنشینید",
-                  "translit": "___ bunshinēd",
+                  "translit": "___ buneshīnēd",
                   "en": "Please sit down.",
                   "answer": {
                     "target": "لطفاً",
@@ -4712,14 +4712,14 @@
                     },
                     {
                       "target": "بیایید",
-                      "translit": "biāyēd"
+                      "translit": "biyāyēd"
                     }
                   ],
-                  "translit": "lutfan īnjā biāyēd",
+                  "translit": "lutfan īnjā biyāyēd",
                   "extraWords": [
                     {
                       "target": "بیا",
-                      "translit": "biā"
+                      "translit": "biyā"
                     }
                   ]
                 },
@@ -4730,7 +4730,7 @@
                   "pairs": [
                     {
                       "target": "برو",
-                      "translit": "bura",
+                      "translit": "buraw",
                       "en": "go! (to a friend)"
                     },
                     {
@@ -4776,12 +4776,12 @@
                   "en": "Please sit here.",
                   "answer": {
                     "target": "بنشینید",
-                    "translit": "bunshinēd"
+                    "translit": "buneshīnēd"
                   },
                   "distractors": [
                     {
                       "target": "بنشین",
-                      "translit": "bunshin"
+                      "translit": "buneshīn"
                     },
                     {
                       "target": "می‌نشینید",
@@ -4920,7 +4920,7 @@
                     },
                     {
                       "target": "می‌خواهی دری بخوانی",
-                      "translit": "mēkhāhi darī bukhāni"
+                      "translit": "mēkhāhī darī bukhānī"
                     }
                   ]
                 },
@@ -4973,7 +4973,7 @@
                     },
                     {
                       "target": "او می‌تواند بیاید",
-                      "translit": "ō mētawānad biāyad",
+                      "translit": "ō mētawānad biyāyad",
                       "en": "He can come.",
                       "highlight": "بیاید"
                     }
@@ -5007,7 +5007,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "او می‌تواند بیاید",
-                  "translit": "ō mētawānad biāyad",
+                  "translit": "ō mētawānad biyāyad",
                   "en": "He can come.",
                   "distractorsEn": [
                     "He comes.",
@@ -5048,20 +5048,20 @@
                   "id": "ge-24-4",
                   "type": "fillBlank",
                   "target": "تو ___ نان بخوری",
-                  "translit": "tu ___ nān bukhuri",
+                  "translit": "tu ___ nān bukhurī",
                   "en": "You can eat bread.",
                   "answer": {
                     "target": "می‌توانی",
-                    "translit": "mētawāni"
+                    "translit": "mētawānī"
                   },
                   "distractors": [
                     {
                       "target": "می‌خواهی",
-                      "translit": "mēkhāhi"
+                      "translit": "mēkhāhī"
                     },
                     {
                       "target": "می‌خوری",
-                      "translit": "mēkhuri"
+                      "translit": "mēkhurī"
                     }
                   ]
                 },
@@ -5095,7 +5095,7 @@
                     },
                     {
                       "target": "می‌توانی",
-                      "translit": "mētawāni",
+                      "translit": "mētawānī",
                       "en": "you can"
                     },
                     {
@@ -5132,7 +5132,7 @@
                     },
                     {
                       "target": "تو باید کار کنی",
-                      "translit": "tu bāyad kār kuni",
+                      "translit": "tu bāyad kār kunī",
                       "en": "You must work.",
                       "highlight": "کنی"
                     }
@@ -5166,7 +5166,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "تو باید کار کنی",
-                  "translit": "tu bāyad kār kuni",
+                  "translit": "tu bāyad kār kunī",
                   "en": "You must work.",
                   "distractorsEn": [
                     "You can work.",
@@ -5399,16 +5399,16 @@
                   "en": "You used to work every day.",
                   "answer": {
                     "target": "می‌کردی",
-                    "translit": "mēkardi"
+                    "translit": "mēkardī"
                   },
                   "distractors": [
                     {
                       "target": "کردی",
-                      "translit": "kardi"
+                      "translit": "kardī"
                     },
                     {
                       "target": "می‌کنی",
-                      "translit": "mēkuni"
+                      "translit": "mēkunī"
                     }
                   ]
                 },
@@ -5571,11 +5571,11 @@
                   "distractors": [
                     {
                       "target": "دیدی",
-                      "translit": "dīdi"
+                      "translit": "dīdī"
                     },
                     {
                       "target": "می‌بینی",
-                      "translit": "mēbīni"
+                      "translit": "mēbīnī"
                     }
                   ]
                 },
@@ -5667,7 +5667,7 @@
                   "distractors": [
                     {
                       "target": "می‌کنی",
-                      "translit": "mēkuni"
+                      "translit": "mēkunī"
                     },
                     {
                       "target": "کردم",
@@ -6294,7 +6294,7 @@
                     ],
                     [
                       "tu",
-                      "burawi"
+                      "burawī"
                     ],
                     [
                       "ō",
@@ -6329,7 +6329,7 @@
                   "examples": [
                     {
                       "target": "بهتر است که نروی",
-                      "translit": "bihtar ast ke narawi",
+                      "translit": "bihtar ast ke narawī",
                       "en": "It is better that you don't go.",
                       "highlight": "نروی"
                     }
@@ -6363,7 +6363,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "بهتر است که نروی",
-                  "translit": "bihtar ast ke narawi",
+                  "translit": "bihtar ast ke narawī",
                   "en": "It is better that you don't go.",
                   "distractorsEn": [
                     "It is better that you go.",
@@ -6409,14 +6409,14 @@
                     },
                     {
                       "target": "بخوانی",
-                      "translit": "bukhāni"
+                      "translit": "bukhānī"
                     }
                   ],
-                  "translit": "mēkhāham ke ketāb rā bukhāni",
+                  "translit": "mēkhāham ke ketāb rā bukhānī",
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
-                      "translit": "mēkhāni"
+                      "translit": "mēkhānī"
                     }
                   ]
                 },
@@ -6428,7 +6428,7 @@
                   "en": "It is possible that he comes.",
                   "answer": {
                     "target": "بیاید",
-                    "translit": "biāyad"
+                    "translit": "biyāyad"
                   },
                   "distractors": [
                     {
@@ -6478,7 +6478,7 @@
                   "distractorsTarget": [
                     {
                       "target": "او می‌خواهد که کار کنی",
-                      "translit": "ō mēkhāhad ke kār kuni"
+                      "translit": "ō mēkhāhad ke kār kunī"
                     },
                     {
                       "target": "او می‌خواهد کار کند",
@@ -6493,7 +6493,7 @@
               "title": "Maybe he'll come",
               "subtitle": "shāyad and mumkin ast",
               "grammarPoint": "possibility-subjunctive",
-              "grammarPointEn": "Expressing possibility with shāyad (maybe) and mumkin ast (it's possible) followed by the subjunctive: shāyad biāyad (maybe he'll come).",
+              "grammarPointEn": "Expressing possibility with shāyad (maybe) and mumkin ast (it's possible) followed by the subjunctive: shāyad biyāyad (maybe he'll come).",
               "slides": [
                 {
                   "id": "gs-32-1",
@@ -6502,13 +6502,13 @@
                   "examples": [
                     {
                       "target": "شاید فردا بیاید",
-                      "translit": "shāyad fardā biāyad",
+                      "translit": "shāyad fardā biyāyad",
                       "en": "Maybe he'll come tomorrow.",
                       "highlight": "شاید"
                     },
                     {
                       "target": "ممکن است که باران بیاید",
-                      "translit": "mumken ast ke bārān biāyad",
+                      "translit": "mumken ast ke bārān biyāyad",
                       "en": "It might rain.",
                       "highlight": "ممکن"
                     }
@@ -6524,7 +6524,7 @@
                   "en": "Maybe he'll come tomorrow.",
                   "answer": {
                     "target": "بیاید",
-                    "translit": "biāyad"
+                    "translit": "biyāyad"
                   },
                   "distractors": [
                     {
@@ -6542,7 +6542,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "ممکن است که باران بیاید",
-                  "translit": "mumken ast ke bārān biāyad",
+                  "translit": "mumken ast ke bārān biyāyad",
                   "en": "It might rain.",
                   "distractorsEn": [
                     "It is raining.",
@@ -6798,7 +6798,7 @@
               "title": "If you go…",
               "subtitle": "Real conditions with agar",
               "grammarPoint": "real-conditionals",
-              "grammarPointEn": "Real (possible) conditionals: agar + subjunctive in the if-clause, present tense in the result clause: agar burawi, ō rā mēbīni (if you go, you'll see him).",
+              "grammarPointEn": "Real (possible) conditionals: agar + subjunctive in the if-clause, present tense in the result clause: agar burawī, ō rā mēbīnī (if you go, you'll see him).",
               "slides": [
                 {
                   "id": "gs-34-1",
@@ -6807,13 +6807,13 @@
                   "examples": [
                     {
                       "target": "اگر بروی، او را می‌بینی",
-                      "translit": "agar burawi, ō rā mēbīni",
+                      "translit": "agar burawī, ō rā mēbīnī",
                       "en": "If you go, you will see him.",
                       "highlight": "اگر"
                     },
                     {
                       "target": "اگر باران بیاید، نمی‌رویم",
-                      "translit": "agar bārān biāyad, namērawēm",
+                      "translit": "agar bārān biyāyad, namērawēm",
                       "en": "If it rains, we won't go.",
                       "highlight": "بیاید"
                     }
@@ -6825,20 +6825,20 @@
                   "id": "ge-34-1",
                   "type": "fillBlank",
                   "target": "اگر ___، او را می‌بینی",
-                  "translit": "agar ___, ō rā mēbīni",
+                  "translit": "agar ___, ō rā mēbīnī",
                   "en": "If you go, you will see him.",
                   "answer": {
                     "target": "بروی",
-                    "translit": "burawi"
+                    "translit": "burawī"
                   },
                   "distractors": [
                     {
                       "target": "می‌روی",
-                      "translit": "mērawi"
+                      "translit": "mērawī"
                     },
                     {
                       "target": "رفتی",
-                      "translit": "rafti"
+                      "translit": "raftī"
                     }
                   ]
                 },
@@ -6847,7 +6847,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "اگر باران بیاید، نمی‌رویم",
-                  "translit": "agar bārān biāyad, namērawēm",
+                  "translit": "agar bārān biyāyad, namērawēm",
                   "en": "If it rains, we won't go.",
                   "distractorsEn": [
                     "It rained, so we didn't go.",
@@ -6858,15 +6858,15 @@
                   "id": "ge-34-3",
                   "type": "spotError",
                   "target": "اگر تو می‌آیی، من خوش می‌شوم",
-                  "translit": "agar tu mēāyi, man khush mēshawam",
+                  "translit": "agar tu mēāyī, man khush mēshawam",
                   "en": "If you come, I'll be happy.",
                   "errorWord": {
                     "target": "می‌آیی",
-                    "translit": "mēāyi"
+                    "translit": "mēāyī"
                   },
                   "correction": {
                     "target": "بیایی",
-                    "translit": "biāyi"
+                    "translit": "biyāyī"
                   },
                   "hint": "After agar, the if-verb takes the be- form."
                 },
@@ -6885,7 +6885,7 @@
                     },
                     {
                       "target": "بخوانی",
-                      "translit": "bukhāni"
+                      "translit": "bukhānī"
                     },
                     {
                       "target": "یاد",
@@ -6893,14 +6893,14 @@
                     },
                     {
                       "target": "می‌گیری",
-                      "translit": "mēgīri"
+                      "translit": "mēgīrī"
                     }
                   ],
-                  "translit": "agar dars bukhāni, yād mēgīri",
+                  "translit": "agar dars bukhānī, yād mēgīrī",
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
-                      "translit": "mēkhāni"
+                      "translit": "mēkhānī"
                     }
                   ]
                 },
@@ -6930,7 +6930,7 @@
                   "en": "If he comes, I'll be happy.",
                   "answer": {
                     "target": "بیاید",
-                    "translit": "biāyad"
+                    "translit": "biyāyad"
                   },
                   "distractors": [
                     {
@@ -7064,16 +7064,16 @@
                   "en": "When you came, we left.",
                   "answer": {
                     "target": "آمدی",
-                    "translit": "āmadi"
+                    "translit": "āmadī"
                   },
                   "distractors": [
                     {
                       "target": "می‌آیی",
-                      "translit": "mēāyi"
+                      "translit": "mēāyī"
                     },
                     {
                       "target": "بیایی",
-                      "translit": "biāyi"
+                      "translit": "biyāyī"
                     }
                   ]
                 },
@@ -7118,7 +7118,7 @@
               "title": "I had already gone",
               "subtitle": "The past perfect",
               "grammarPoint": "past-perfect",
-              "grammarPointEn": "Past perfect: past participle + budam/būdi/būd… (rafta būdam = I had gone), for an action completed before another past moment.",
+              "grammarPointEn": "Past perfect: past participle + budam/būdī/būd… (rafta būdam = I had gone), for an action completed before another past moment.",
               "slides": [
                 {
                   "id": "gs-36-1",
@@ -7131,7 +7131,7 @@
                     ],
                     [
                       "tu",
-                      "rafta būdi"
+                      "rafta būdī"
                     ],
                     [
                       "ō",
@@ -7153,7 +7153,7 @@
                   "examples": [
                     {
                       "target": "وقتی که آمدی، من رفته بودم",
-                      "translit": "waqtē ke āmadi, man rafta būdam",
+                      "translit": "waqtē ke āmadī, man rafta būdam",
                       "en": "When you came, I had already gone.",
                       "highlight": "رفته بودم"
                     }
@@ -7165,7 +7165,7 @@
                   "id": "ge-36-1",
                   "type": "fillBlank",
                   "target": "وقتی که آمدی، من ___",
-                  "translit": "waqtē ke āmadi, man ___",
+                  "translit": "waqtē ke āmadī, man ___",
                   "en": "When you came, I had already gone.",
                   "answer": {
                     "target": "رفته بودم",
@@ -7379,11 +7379,11 @@
                   "distractorsTarget": [
                     {
                       "target": "آیا کابل را دیدی؟",
-                      "translit": "āyā kābul rā dīdi?"
+                      "translit": "āyā kābul rā dīdī?"
                     },
                     {
                       "target": "آیا کابل را می‌بینی؟",
-                      "translit": "āyā kābul rā mēbīni?"
+                      "translit": "āyā kābul rā mēbīnī?"
                     }
                   ]
                 },
@@ -7626,7 +7626,7 @@
                     },
                     {
                       "target": "کتابی که خواندم، خوب بود",
-                      "translit": "ketābē ke khāndam, khōb būd",
+                      "translit": "ketābē ke khāndam, khūb būd",
                       "en": "The book that I read was good.",
                       "highlight": "کتابی که"
                     }
@@ -7660,7 +7660,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "کتابی که خواندم، خوب بود",
-                  "translit": "ketābē ke khāndam, khōb būd",
+                  "translit": "ketābē ke khāndam, khūb būd",
                   "en": "The book that I read was good.",
                   "distractorsEn": [
                     "The book is good.",
@@ -8565,7 +8565,7 @@
               "title": "He will go",
               "subtitle": "The formal future with khāhad",
               "grammarPoint": "future-khahad",
-              "grammarPointEn": "Formal future: khāham/khāhi/khāhad… + the bare past stem (khāham raft = I will go); common in writing and formal speech, alongside the everyday present-as-future.",
+              "grammarPointEn": "Formal future: khāham/khāhī/khāhad… + the bare past stem (khāham raft = I will go); common in writing and formal speech, alongside the everyday present-as-future.",
               "slides": [
                 {
                   "id": "gs-45-1",
@@ -8578,7 +8578,7 @@
                     ],
                     [
                       "tu",
-                      "khāhi raft"
+                      "khāhī raft"
                     ],
                     [
                       "ō",
@@ -8729,7 +8729,7 @@
                   "distractors": [
                     {
                       "target": "خواهی",
-                      "translit": "khāhi"
+                      "translit": "khāhī"
                     },
                     {
                       "target": "کردم",
@@ -8759,7 +8759,7 @@
                     },
                     {
                       "target": "زندگی در کابل خوب است",
-                      "translit": "zendagī dar kābul khōb ast",
+                      "translit": "zendagī dar kābul khūb ast",
                       "en": "Life in Kabul is good.",
                       "highlight": "زندگی"
                     }
@@ -8810,7 +8810,7 @@
                   "id": "ge-46-3",
                   "type": "fillBlank",
                   "target": "___ در کابل خوب است",
-                  "translit": "___ dar kābul khōb ast",
+                  "translit": "___ dar kābul khūb ast",
                   "en": "Life in Kabul is good.",
                   "answer": {
                     "target": "زندگی",
@@ -8832,12 +8832,12 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "مردم این شهر خوب هستند",
-                  "translit": "mardum-e īn shahr khōb hastand",
+                  "translit": "mardum-e īn shahr khūb hastand",
                   "en": "The people of this city are good.",
                   "distractorsTarget": [
                     {
                       "target": "مرد این شهر خوب است",
-                      "translit": "mard-e īn shahr khōb ast"
+                      "translit": "mard-e īn shahr khūb ast"
                     },
                     {
                       "target": "مردم این شهر آمدند",
@@ -8856,14 +8856,14 @@
                     },
                     {
                       "target": "خوب",
-                      "translit": "khōb"
+                      "translit": "khūb"
                     },
                     {
                       "target": "است",
                       "translit": "ast"
                     }
                   ],
-                  "translit": "āzādī khōb ast",
+                  "translit": "āzādī khūb ast",
                   "extraWords": [
                     {
                       "target": "آزاد",
@@ -8899,7 +8899,7 @@
                   "examples": [
                     {
                       "target": "اگر بیایی، مردی را که دیدم می‌بینی",
-                      "translit": "agar biāyi, mardē rā ke dīdam mēbīni",
+                      "translit": "agar biyāyī, mardē rā ke dīdam mēbīnī",
                       "en": "If you come, you'll see the man I saw."
                     }
                   ]
@@ -8910,15 +8910,15 @@
                   "id": "ge-47-1",
                   "type": "spotError",
                   "target": "اگر تو می‌آیی، خوش می‌شوم",
-                  "translit": "agar tu mēāyi, khush mēshawam",
+                  "translit": "agar tu mēāyī, khush mēshawam",
                   "en": "If you come, I'll be happy.",
                   "errorWord": {
                     "target": "می‌آیی",
-                    "translit": "mēāyi"
+                    "translit": "mēāyī"
                   },
                   "correction": {
                     "target": "بیایی",
-                    "translit": "biāyi"
+                    "translit": "biyāyī"
                   },
                   "hint": "After agar, the if-verb takes the be- form."
                 },
@@ -8948,7 +8948,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "وقتی که آمدی، من رفته بودم",
-                  "translit": "waqtē ke āmadi, man rafta būdam",
+                  "translit": "waqtē ke āmadī, man rafta būdam",
                   "en": "When you came, I had already gone.",
                   "distractorsEn": [
                     "When you came, I went.",
@@ -8990,14 +8990,14 @@
                     },
                     {
                       "target": "خوب",
-                      "translit": "khōb"
+                      "translit": "khūb"
                     },
                     {
                       "target": "بود",
                       "translit": "būd"
                     }
                   ],
-                  "translit": "ketābē ke khāndam, khōb būd",
+                  "translit": "ketābē ke khāndam, khūb būd",
                   "extraWords": [
                     {
                       "target": "را",
@@ -9031,7 +9031,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "شاید فردا بیاید",
-                  "translit": "shāyad fardā biāyad",
+                  "translit": "shāyad fardā biyāyad",
                   "en": "Maybe he'll come tomorrow.",
                   "distractorsTarget": [
                     {
@@ -9110,7 +9110,7 @@
                 {
                   "id": "gs-48-2",
                   "title": "Real vs unreal",
-                  "body": "Compare: agar burawi (if you go - still possible) with agar mērafti (if you had gone - but you didn't). The mē- past signals 'unreal'.",
+                  "body": "Compare: agar burawī (if you go - still possible) with agar mēraftī (if you had gone - but you didn't). The mē- past signals 'unreal'.",
                   "examples": [
                     {
                       "target": "اگر وقت می‌داشتم، می‌آمدم",
@@ -9182,7 +9182,7 @@
                     },
                     {
                       "target": "می‌آمدی",
-                      "translit": "mēāmadi"
+                      "translit": "mēāmadī"
                     },
                     {
                       "target": "او را",
@@ -9190,14 +9190,14 @@
                     },
                     {
                       "target": "می‌دیدی",
-                      "translit": "mēdīdi"
+                      "translit": "mēdīdī"
                     }
                   ],
-                  "translit": "agar mēāmadi, ō rā mēdīdi",
+                  "translit": "agar mēāmadī, ō rā mēdīdī",
                   "extraWords": [
                     {
                       "target": "بیایی",
-                      "translit": "biāyi"
+                      "translit": "biyāyī"
                     }
                   ]
                 },
@@ -9256,7 +9256,7 @@
                   "examples": [
                     {
                       "target": "کاش اینجا می‌بودی",
-                      "translit": "kāsh īnjā mēbūdi",
+                      "translit": "kāsh īnjā mēbūdī",
                       "en": "If only you were here.",
                       "highlight": "کاش"
                     },
@@ -9296,7 +9296,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "کاش اینجا می‌بودی",
-                  "translit": "kāsh īnjā mēbūdi",
+                  "translit": "kāsh īnjā mēbūdī",
                   "en": "If only you were here.",
                   "distractorsEn": [
                     "Maybe you are here.",
@@ -9354,12 +9354,12 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "کاش می‌توانستم بیایم",
-                  "translit": "kāsh mētawānistam biāyam",
+                  "translit": "kāsh mētawānistam biyāyam",
                   "en": "If only I could come.",
                   "distractorsTarget": [
                     {
                       "target": "می‌توانم بیایم",
-                      "translit": "mētawānam biāyam"
+                      "translit": "mētawānam biyāyam"
                     },
                     {
                       "target": "کاش آمدم",
@@ -9379,17 +9379,17 @@
                     },
                     {
                       "target": "شاید بیاید",
-                      "translit": "shāyad biāyad",
+                      "translit": "shāyad biyāyad",
                       "en": "maybe he'll come"
                     },
                     {
                       "target": "باید بیاید",
-                      "translit": "bāyad biāyad",
+                      "translit": "bāyad biyāyad",
                       "en": "he must come"
                     },
                     {
                       "target": "اگر بیاید",
-                      "translit": "agar biāyad",
+                      "translit": "agar biyāyad",
                       "en": "if he comes"
                     }
                   ]
@@ -9401,7 +9401,7 @@
               "title": "He may have gone",
               "subtitle": "The past subjunctive",
               "grammarPoint": "past-subjunctive",
-              "grammarPointEn": "Past subjunctive: past participle + bāsham/bāshi/bāshad… (rafta bāsham), used after shāyad, mumkin, and doubt about a past event.",
+              "grammarPointEn": "Past subjunctive: past participle + bāsham/bāshī/bāshad… (rafta bāsham), used after shāyad, mumkin, and doubt about a past event.",
               "slides": [
                 {
                   "id": "gs-50-1",
@@ -9414,7 +9414,7 @@
                     ],
                     [
                       "tu",
-                      "rafta bāshi"
+                      "rafta bāshī"
                     ],
                     [
                       "ō",
@@ -9528,16 +9528,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "شاید کتاب را خوانده باشی",
-                  "translit": "shāyad ketāb rā khānda bāshi",
+                  "translit": "shāyad ketāb rā khānda bāshī",
                   "en": "Maybe you have read the book.",
                   "distractorsTarget": [
                     {
                       "target": "کتاب را خواندی",
-                      "translit": "ketāb rā khāndi"
+                      "translit": "ketāb rā khāndī"
                     },
                     {
                       "target": "شاید کتاب را بخوانی",
-                      "translit": "shāyad ketāb rā bukhāni"
+                      "translit": "shāyad ketāb rā bukhānī"
                     }
                   ]
                 },
@@ -9591,7 +9591,7 @@
                   "examples": [
                     {
                       "target": "می‌توان گفت که او خوب است",
-                      "translit": "mētawān guft ke ō khōb ast",
+                      "translit": "mētawān guft ke ō khūb ast",
                       "en": "One can say that he is good.",
                       "highlight": "می‌توان گفت"
                     }
@@ -9603,7 +9603,7 @@
                   "id": "ge-51-1",
                   "type": "fillBlank",
                   "target": "___ گفت که او خوب است",
-                  "translit": "___ guft ke ō khōb ast",
+                  "translit": "___ guft ke ō khūb ast",
                   "en": "One can say that he is good.",
                   "answer": {
                     "target": "می‌توان",
@@ -9695,7 +9695,7 @@
                     },
                     {
                       "target": "اینجا باید نان بخری",
-                      "translit": "īnjā bāyad nān bukhari"
+                      "translit": "īnjā bāyad nān bukharī"
                     }
                   ]
                 },
@@ -9971,7 +9971,7 @@
                   "extraWords": [
                     {
                       "target": "بیایند",
-                      "translit": "biāyand"
+                      "translit": "biyāyand"
                     }
                   ]
                 },
@@ -10176,7 +10176,7 @@
                   "id": "ge-54-6",
                   "type": "fillBlank",
                   "target": "___ کتابی که خواندم، خوب بود",
-                  "translit": "___ ketābē ke khāndam, khōb būd",
+                  "translit": "___ ketābē ke khāndam, khūb būd",
                   "en": "That book which I read was good.",
                   "answer": {
                     "target": "آن",
@@ -10357,7 +10357,7 @@
                   "examples": [
                     {
                       "target": "صبر کن تا بیایم",
-                      "translit": "sabr kun tā biāyam",
+                      "translit": "sabr kun tā biyāyam",
                       "en": "Wait until I come.",
                       "highlight": "تا"
                     },
@@ -10376,7 +10376,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "صبر کن تا بیایم",
-                  "translit": "sabr kun tā biāyam",
+                  "translit": "sabr kun tā biyāyam",
                   "en": "Wait until I come.",
                   "distractorsEn": [
                     "Wait because I am coming.",
@@ -10399,7 +10399,7 @@
                   "id": "ge-56-3",
                   "type": "fillBlank",
                   "target": "صبر کن ___ بیایم",
-                  "translit": "sabr kun ___ biāyam",
+                  "translit": "sabr kun ___ biyāyam",
                   "en": "Wait until I come.",
                   "answer": {
                     "target": "تا",
@@ -10471,7 +10471,7 @@
                   "pairs": [
                     {
                       "target": "تا بیایم",
-                      "translit": "tā biāyam",
+                      "translit": "tā biyāyam",
                       "en": "until / so that I come"
                     },
                     {
@@ -10797,7 +10797,7 @@
                   "examples": [
                     {
                       "target": "خواندن خوب است",
-                      "translit": "khāndan khōb ast",
+                      "translit": "khāndan khūb ast",
                       "en": "Reading is good.",
                       "highlight": "خواندن"
                     },
@@ -10816,7 +10816,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "خواندن خوب است",
-                  "translit": "khāndan khōb ast",
+                  "translit": "khāndan khūb ast",
                   "en": "Reading is good.",
                   "distractorsEn": [
                     "He reads well.",
@@ -10855,14 +10855,14 @@
                     },
                     {
                       "target": "خوب",
-                      "translit": "khōb"
+                      "translit": "khūb"
                     },
                     {
                       "target": "است",
                       "translit": "ast"
                     }
                   ],
-                  "translit": "kār kardan khōb ast",
+                  "translit": "kār kardan khūb ast",
                   "extraWords": [
                     {
                       "target": "می‌کنم",
@@ -10874,17 +10874,17 @@
                   "id": "ge-59-4",
                   "type": "chooseTranslation",
                   "direction": "toTarget",
-                  "target": "رفتن او من را خوش نکرد",
-                  "translit": "raftan-e ō man rā khush nakard",
-                  "en": "His going did not make me happy.",
+                  "target": "رفتن او همه چیز را خراب کرد",
+                  "translit": "raftan-e ō hama chīz rā kharāb kard",
+                  "en": "His leaving ruined everything.",
                   "distractorsTarget": [
                     {
-                      "target": "او رفت و من خوش نشدم",
-                      "translit": "ō raft wa man khush nashudam"
+                      "target": "او رفت و همه چیز خراب شد",
+                      "translit": "ō raft wa hama chīz kharāb shud"
                     },
                     {
-                      "target": "رفتن من او را خوش کرد",
-                      "translit": "raftan-e man ō rā khush kard"
+                      "target": "رفتن من همه چیز را خراب کرد",
+                      "translit": "raftan-e man hama chīz rā kharāb kard"
                     }
                   ]
                 },
@@ -10919,7 +10919,7 @@
                   "id": "ge-59-6",
                   "type": "fillBlank",
                   "target": "___ در کابل خوب است",
-                  "translit": "___ dar kābul khōb ast",
+                  "translit": "___ dar kābul khūb ast",
                   "en": "Living in Kabul is good.",
                   "answer": {
                     "target": "زندگی کردن",
@@ -11198,10 +11198,10 @@
                     },
                     {
                       "target": "بیایم",
-                      "translit": "biāyam"
+                      "translit": "biyāyam"
                     }
                   ],
-                  "translit": "ō guft ke biāyam",
+                  "translit": "ō guft ke biyāyam",
                   "extraWords": [
                     {
                       "target": "می‌آیم",
@@ -11244,7 +11244,7 @@
                     },
                     {
                       "target": "برو",
-                      "translit": "bura",
+                      "translit": "buraw",
                       "en": "go!"
                     },
                     {
@@ -11513,14 +11513,14 @@
                     },
                     {
                       "target": "خوب",
-                      "translit": "khōb"
+                      "translit": "khūb"
                     },
                     {
                       "target": "بود",
                       "translit": "būd"
                     }
                   ],
-                  "translit": "ān ketābē ke khāndam, khōb būd",
+                  "translit": "ān ketābē ke khāndam, khūb būd",
                   "extraWords": [
                     {
                       "target": "را",
@@ -11776,13 +11776,13 @@
                   "examples": [
                     {
                       "target": "نمی‌روم مگر تو بیایی",
-                      "translit": "namērawam magar tu biāyi",
+                      "translit": "namērawam magar tu biyāyī",
                       "en": "I won't go unless you come.",
                       "highlight": "مگر"
                     },
                     {
                       "target": "زود بیا، وگرنه می‌رویم",
-                      "translit": "zūd biā, wa gar na mērawēm",
+                      "translit": "zūd biyā, wa gar na mērawēm",
                       "en": "Come soon, otherwise we'll go.",
                       "highlight": "وگرنه"
                     }
@@ -11794,7 +11794,7 @@
                   "id": "ge-65-1",
                   "type": "fillBlank",
                   "target": "نمی‌روم ___ تو بیایی",
-                  "translit": "namērawam ___ tu biāyi",
+                  "translit": "namērawam ___ tu biyāyī",
                   "en": "I won't go unless you come.",
                   "answer": {
                     "target": "مگر",
@@ -11816,7 +11816,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "زود بیا، وگرنه می‌رویم",
-                  "translit": "zūd biā, wa gar na mērawēm",
+                  "translit": "zūd biyā, wa gar na mērawēm",
                   "en": "Come soon, otherwise we'll go.",
                   "distractorsEn": [
                     "Come soon, because we are going.",
@@ -11842,10 +11842,10 @@
                     },
                     {
                       "target": "می‌شوی",
-                      "translit": "mēshawi"
+                      "translit": "mēshawī"
                     }
                   ],
-                  "translit": "bukhāb, wa gar na mānda mēshawi",
+                  "translit": "bukhāb, wa gar na mānda mēshawī",
                   "extraWords": [
                     {
                       "target": "چون",
@@ -11857,7 +11857,7 @@
                   "id": "ge-65-4",
                   "type": "spotError",
                   "target": "نمی‌آیم اگرچه تو بروی",
-                  "translit": "namēāyam agarche tu burawi",
+                  "translit": "namēāyam agarche tu burawī",
                   "en": "I won't come unless you go.",
                   "errorWord": {
                     "target": "اگرچه",
@@ -11874,16 +11874,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "کار کن، وگرنه پول نمی‌گیری",
-                  "translit": "kār kun, wa gar na pūl namēgīri",
+                  "translit": "kār kun, wa gar na pūl namēgīrī",
                   "en": "Work, otherwise you won't get money.",
                   "distractorsTarget": [
                     {
                       "target": "کار کن چون پول می‌گیری",
-                      "translit": "kār kun chun pūl mēgīri"
+                      "translit": "kār kun chun pūl mēgīrī"
                     },
                     {
                       "target": "کار کن تا پول بگیری",
-                      "translit": "kār kun tā pūl bigīri"
+                      "translit": "kār kun tā pūl bigīrī"
                     }
                   ]
                 },
@@ -11921,7 +11921,7 @@
               "title": "On the condition that",
               "subtitle": "Stipulating with ba shart-ē ke",
               "grammarPoint": "stipulation",
-              "grammarPointEn": "Stipulating a condition with ba shart-ē ke (on the condition that) + subjunctive: mēāyam ba shart-ē ke tu ham biāyi.",
+              "grammarPointEn": "Stipulating a condition with ba shart-ē ke (on the condition that) + subjunctive: mēāyam ba shart-ē ke tu ham biyāyī.",
               "slides": [
                 {
                   "id": "gs-66-1",
@@ -11930,7 +11930,7 @@
                   "examples": [
                     {
                       "target": "می‌آیم به شرطی که تو هم بیایی",
-                      "translit": "mēāyam ba shart-ē ke tu ham biāyi",
+                      "translit": "mēāyam ba shart-ē ke tu ham biyāyī",
                       "en": "I'll come, on the condition that you come too.",
                       "highlight": "به شرطی که"
                     }
@@ -11946,16 +11946,16 @@
                   "en": "I'll come, on the condition that you come too.",
                   "answer": {
                     "target": "بیایی",
-                    "translit": "biāyi"
+                    "translit": "biyāyī"
                   },
                   "distractors": [
                     {
                       "target": "می‌آیی",
-                      "translit": "mēāyi"
+                      "translit": "mēāyī"
                     },
                     {
                       "target": "آمدی",
-                      "translit": "āmadi"
+                      "translit": "āmadī"
                     }
                   ]
                 },
@@ -11964,7 +11964,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "کمک می‌کنم به شرطی که کار کنی",
-                  "translit": "kumak mēkunam ba shart-ē ke kār kuni",
+                  "translit": "kumak mēkunam ba shart-ē ke kār kunī",
                   "en": "I'll help, on the condition that you work.",
                   "distractorsEn": [
                     "I help because you work.",
@@ -11986,14 +11986,14 @@
                     },
                     {
                       "target": "بخوانی",
-                      "translit": "bukhāni"
+                      "translit": "bukhānī"
                     }
                   ],
-                  "translit": "ketāb rā mēdiham ba shart-ē ke bukhāni",
+                  "translit": "ketāb rā mēdiham ba shart-ē ke bukhānī",
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
-                      "translit": "mēkhāni"
+                      "translit": "mēkhānī"
                     }
                   ]
                 },
@@ -12002,16 +12002,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "می‌روم به شرطی که تو بمانی",
-                  "translit": "mērawam ba shart-ē ke tu bumāni",
+                  "translit": "mērawam ba shart-ē ke tu bumānī",
                   "en": "I'll go, provided that you stay.",
                   "distractorsTarget": [
                     {
                       "target": "می‌روم اگرچه تو بمانی",
-                      "translit": "mērawam agarche tu bumāni"
+                      "translit": "mērawam agarche tu bumānī"
                     },
                     {
                       "target": "می‌روم چون تو می‌مانی",
-                      "translit": "mērawam chun tu mēmāni"
+                      "translit": "mērawam chun tu mēmānī"
                     }
                   ]
                 },
@@ -12120,7 +12120,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "قبل از اینکه بیاید، رفتیم",
-                  "translit": "qabl az īnke biāyad, raftēm",
+                  "translit": "qabl az īnke biyāyad, raftēm",
                   "en": "Before he came, we left.",
                   "distractorsEn": [
                     "After he came, we left.",
@@ -12139,7 +12139,7 @@
                   },
                   "correction": {
                     "target": "بیاید",
-                    "translit": "biāyad"
+                    "translit": "biyāyad"
                   },
                   "hint": "'Before' always takes the subjunctive."
                 },
@@ -12154,7 +12154,7 @@
                     },
                     {
                       "target": "بخوابی",
-                      "translit": "bukhābi"
+                      "translit": "bukhābī"
                     },
                     {
                       "target": "کتاب",
@@ -12165,11 +12165,11 @@
                       "translit": "bukhān"
                     }
                   ],
-                  "translit": "qabl az īnke bukhābi, ketāb bukhān",
+                  "translit": "qabl az īnke bukhābī, ketāb bukhān",
                   "extraWords": [
                     {
                       "target": "می‌خوابی",
-                      "translit": "mēkhābi"
+                      "translit": "mēkhābī"
                     }
                   ]
                 },
@@ -12178,16 +12178,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "قبل از اینکه بروی، مرا ببین",
-                  "translit": "qabl az īnke burawi, marā bubīn",
+                  "translit": "qabl az īnke burawī, marā bubīn",
                   "en": "Before you go, see me.",
                   "distractorsTarget": [
                     {
                       "target": "قبل از اینکه رفتی، مرا دیدی",
-                      "translit": "qabl az īnke rafti, marā dīdi"
+                      "translit": "qabl az īnke raftī, marā dīdī"
                     },
                     {
                       "target": "بعد از اینکه بروی، مرا ببین",
-                      "translit": "bād az īnke burawi, marā bubīn"
+                      "translit": "bād az īnke burawī, marā bubīn"
                     }
                   ]
                 },
@@ -12249,7 +12249,7 @@
                   "distractors": [
                     {
                       "target": "بیاید",
-                      "translit": "biāyad"
+                      "translit": "biyāyad"
                     },
                     {
                       "target": "می‌آید",
@@ -12273,11 +12273,11 @@
                   "id": "ge-68-3",
                   "type": "spotError",
                   "target": "بعد از اینکه بیاید، رفتیم",
-                  "translit": "bād az īnke biāyad, raftēm",
+                  "translit": "bād az īnke biyāyad, raftēm",
                   "en": "After he came, we left.",
                   "errorWord": {
                     "target": "بیاید",
-                    "translit": "biāyad"
+                    "translit": "biyāyad"
                   },
                   "correction": {
                     "target": "آمد",
@@ -12372,13 +12372,13 @@
                   "examples": [
                     {
                       "target": "هر وقت که می‌آیی، خوش می‌شوم",
-                      "translit": "har waqt ke mēāyi, khush mēshawam",
+                      "translit": "har waqt ke mēāyī, khush mēshawam",
                       "en": "Whenever you come, I am glad.",
                       "highlight": "هر وقت که"
                     },
                     {
                       "target": "هرگاه بخواهی، بیا",
-                      "translit": "hargāh bukhāhi, biā",
+                      "translit": "hargāh bukhāhī, biyā",
                       "en": "Come whenever you want.",
                       "highlight": "هرگاه"
                     }
@@ -12390,7 +12390,7 @@
                   "id": "ge-69-1",
                   "type": "fillBlank",
                   "target": "___ که می‌آیی، خوش می‌شوم",
-                  "translit": "___ ke mēāyi, khush mēshawam",
+                  "translit": "___ ke mēāyī, khush mēshawam",
                   "en": "Whenever you come, I am glad.",
                   "answer": {
                     "target": "هر وقت",
@@ -12412,7 +12412,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "هرگاه بخواهی، بیا",
-                  "translit": "hargāh bukhāhi, biā",
+                  "translit": "hargāh bukhāhī, biyā",
                   "en": "Come whenever you want.",
                   "distractorsEn": [
                     "Come because you want.",
@@ -12454,16 +12454,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "هرگاه کار داری، به من بگو",
-                  "translit": "hargāh kār dāri, ba man bugō",
+                  "translit": "hargāh kār dārī, ba man bugō",
                   "en": "Whenever you have work, tell me.",
                   "distractorsTarget": [
                     {
                       "target": "چون کار داری، به من بگو",
-                      "translit": "chun kār dāri, ba man bugō"
+                      "translit": "chun kār dārī, ba man bugō"
                     },
                     {
                       "target": "اگرچه کار داری، به من بگو",
-                      "translit": "agarche kār dāri, ba man bugō"
+                      "translit": "agarche kār dārī, ba man bugō"
                     }
                   ]
                 },
@@ -12498,7 +12498,7 @@
                   "id": "ge-69-6",
                   "type": "fillBlank",
                   "target": "___ بخواهی، می‌توانی بیایی",
-                  "translit": "___ bukhāhi, mētawāni biāyi",
+                  "translit": "___ bukhāhī, mētawānī biyāyī",
                   "en": "Whenever you want, you can come.",
                   "answer": {
                     "target": "هرگاه",
@@ -12604,10 +12604,10 @@
                     },
                     {
                       "target": "خوب است",
-                      "translit": "khōb ast"
+                      "translit": "khūb ast"
                     }
                   ],
-                  "translit": "gufta mēshawad ke īn ketāb khōb ast",
+                  "translit": "gufta mēshawad ke īn ketāb khūb ast",
                   "extraWords": [
                     {
                       "target": "می‌گویم",
@@ -12636,16 +12636,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "می‌گویند که او معلم خوب است",
-                  "translit": "mēgōyand ke ō mu'allem-e khōb ast",
+                  "translit": "mēgōyand ke ō mu'allem-e khūb ast",
                   "en": "They say that he is a good teacher.",
                   "distractorsTarget": [
                     {
                       "target": "او می‌گوید که معلم خوب است",
-                      "translit": "ō mēgōyad ke mu'allem-e khōb ast"
+                      "translit": "ō mēgōyad ke mu'allem-e khūb ast"
                     },
                     {
                       "target": "گفتند که او معلم خوب است",
-                      "translit": "guftand ke ō mu'allem-e khōb ast"
+                      "translit": "guftand ke ō mu'allem-e khūb ast"
                     }
                   ]
                 },
@@ -13117,12 +13117,12 @@
                     },
                     {
                       "target": "شاید بیاید",
-                      "translit": "shāyad biāyad",
+                      "translit": "shāyad biyāyad",
                       "en": "maybe he'll come"
                     },
                     {
                       "target": "کاش بیاید",
-                      "translit": "kāsh biāyad",
+                      "translit": "kāsh biyāyad",
                       "en": "I hope he comes"
                     }
                   ]
@@ -13237,14 +13237,14 @@
                     },
                     {
                       "target": "آمده باشی",
-                      "translit": "āmada bāshi"
+                      "translit": "āmada bāshī"
                     }
                   ],
-                  "translit": "fikr kardam ke tu āmada bāshi",
+                  "translit": "fikr kardam ke tu āmada bāshī",
                   "extraWords": [
                     {
                       "target": "آمدی",
-                      "translit": "āmadi"
+                      "translit": "āmadī"
                     }
                   ]
                 },
@@ -13253,16 +13253,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "گمان کردم که او را دیده باشی",
-                  "translit": "gumān kardam ke ō rā dīda bāshi",
+                  "translit": "gumān kardam ke ō rā dīda bāshī",
                   "en": "I supposed you might have seen him.",
                   "distractorsTarget": [
                     {
                       "target": "گمان کردم که او را دیدی",
-                      "translit": "gumān kardam ke ō rā dīdi"
+                      "translit": "gumān kardam ke ō rā dīdī"
                     },
                     {
                       "target": "فکر کردم که او را ببینی",
-                      "translit": "fikr kardam ke ō rā bubīni"
+                      "translit": "fikr kardam ke ō rā bubīnī"
                     }
                   ]
                 },
@@ -13683,7 +13683,7 @@
                   "id": "ge-77-4",
                   "type": "fillBlank",
                   "target": "کتاب خوب را به دست ___",
-                  "translit": "ketāb-e khōb rā ba dast ___",
+                  "translit": "ketāb-e khūb rā ba dast ___",
                   "en": "He obtained a good book.",
                   "answer": {
                     "target": "آورد",
@@ -13856,14 +13856,14 @@
                     },
                     {
                       "target": "بیایی",
-                      "translit": "biāyi"
+                      "translit": "biyāyī"
                     }
                   ],
-                  "translit": "namērawam magar tu biāyi",
+                  "translit": "namērawam magar tu biyāyī",
                   "extraWords": [
                     {
                       "target": "می‌آیی",
-                      "translit": "mēāyi"
+                      "translit": "mēāyī"
                     }
                   ]
                 },
@@ -14047,7 +14047,7 @@
                   "distractorsTarget": [
                     {
                       "target": "دوست خوب، تشکر",
-                      "translit": "dōst-e khōb, tashakur"
+                      "translit": "dōst-e khūb, tashakur"
                     },
                     {
                       "target": "دوست محترم، سلام",
@@ -14059,11 +14059,11 @@
                   "id": "ge-79-5",
                   "type": "spotError",
                   "target": "جناب رئیس، تو کجا می‌روی؟",
-                  "translit": "jenāb-e ra'īs, tu kujā mērawi?",
+                  "translit": "jenāb-e ra'īs, tu kujā mērawī?",
                   "en": "Your Excellency, where are you going?",
                   "errorWord": {
                     "target": "می‌روی",
-                    "translit": "mērawi"
+                    "translit": "mērawī"
                   },
                   "correction": {
                     "target": "می‌روید",
@@ -14522,7 +14522,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "خودت این را نوشتی؟",
-                  "translit": "khudat īn rā neweshti?",
+                  "translit": "khudat īn rā neweshtī?",
                   "en": "Did you write this yourself?",
                   "distractorsTarget": [
                     {
@@ -14531,7 +14531,7 @@
                     },
                     {
                       "target": "این را نوشتی؟",
-                      "translit": "īn rā neweshti?"
+                      "translit": "īn rā neweshtī?"
                     }
                   ]
                 },
@@ -14778,7 +14778,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "نام دوست خوب برادر من",
-                  "translit": "nām-e dōst-e khōb-e barādar-e man",
+                  "translit": "nām-e dōst-e khūb-e barādar-e man",
                   "en": "The name of my brother's good friend.",
                   "distractorsEn": [
                     "My good friend's brother's name.",
@@ -14802,7 +14802,7 @@
                     },
                     {
                       "target": "دوست خوب من",
-                      "translit": "dōst-e khōb-e man",
+                      "translit": "dōst-e khūb-e man",
                       "en": "my good friend"
                     },
                     {
@@ -15079,16 +15079,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "دلش نمی‌خواهد بیاید",
-                  "translit": "dilash namēkhāhad biāyad",
+                  "translit": "dilash namēkhāhad biyāyad",
                   "en": "He doesn't feel like coming.",
                   "distractorsTarget": [
                     {
                       "target": "دلم نمی‌خواهد بیایم",
-                      "translit": "dilam namēkhāhad biāyam"
+                      "translit": "dilam namēkhāhad biyāyam"
                     },
                     {
                       "target": "او نمی‌خواهد بیاید",
-                      "translit": "ō namēkhāhad biāyad"
+                      "translit": "ō namēkhāhad biyāyad"
                     }
                   ]
                 },
@@ -15275,7 +15275,7 @@
                   "examples": [
                     {
                       "target": "از یک سو خوب است، از سوی دیگر گران است",
-                      "translit": "az yak sū khōb ast, az sū-ye dīgar gerān ast",
+                      "translit": "az yak sū khūb ast, az sū-ye dīgar gerān ast",
                       "en": "On one hand it's good, on the other it's expensive.",
                       "highlight": "از یک سو"
                     }
@@ -15287,7 +15287,7 @@
                   "id": "ge-88-1",
                   "type": "fillBlank",
                   "target": "___ خوب است، از سوی دیگر گران است",
-                  "translit": "___ khōb ast, az sū-ye dīgar gerān ast",
+                  "translit": "___ khūb ast, az sū-ye dīgar gerān ast",
                   "en": "On one hand it's good, on the other it's expensive.",
                   "answer": {
                     "target": "از یک سو",
@@ -15868,13 +15868,13 @@
                   "examples": [
                     {
                       "target": "به دوست: بیا برویم",
-                      "translit": "ba dōst: biā burawēm",
+                      "translit": "ba dōst: biyā burawēm",
                       "en": "To a friend: come, let's go.",
                       "highlight": "بیا"
                     },
                     {
                       "target": "به رئیس: لطفاً تشریف بیاورید",
-                      "translit": "ba ra'īs: lutfan tashrīf biāwarēd",
+                      "translit": "ba ra'īs: lutfan tashrīf biyāwarēd",
                       "en": "To an official: please come.",
                       "highlight": "تشریف"
                     }
@@ -15887,7 +15887,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "لطفاً تشریف بیاورید",
-                  "translit": "lutfan tashrīf biāwarēd",
+                  "translit": "lutfan tashrīf biyāwarēd",
                   "en": "Please come. (formal)",
                   "distractorsEn": [
                     "Come here! (to a friend)",
@@ -15902,16 +15902,16 @@
                   "en": "Tell your friend: come, let's go.",
                   "answer": {
                     "target": "بیا",
-                    "translit": "biā"
+                    "translit": "biyā"
                   },
                   "distractors": [
                     {
                       "target": "تشریف بیاورید",
-                      "translit": "tashrīf biāwarēd"
+                      "translit": "tashrīf biyāwarēd"
                     },
                     {
                       "target": "بیایید",
-                      "translit": "biāyēd"
+                      "translit": "biyāyēd"
                     }
                   ]
                 },
@@ -15922,12 +15922,12 @@
                   "pairs": [
                     {
                       "target": "بیا",
-                      "translit": "biā",
+                      "translit": "biyā",
                       "en": "come (to a friend)"
                     },
                     {
                       "target": "تشریف بیاورید",
-                      "translit": "tashrīf biāwarēd",
+                      "translit": "tashrīf biyāwarēd",
                       "en": "come (to an official)"
                     },
                     {
@@ -15946,15 +15946,15 @@
                   "id": "ge-92-4",
                   "type": "spotError",
                   "target": "جناب رئیس، بیا اینجا",
-                  "translit": "jenāb-e ra'īs, biā īnjā",
+                  "translit": "jenāb-e ra'īs, biyā īnjā",
                   "en": "Your Excellency, please come here.",
                   "errorWord": {
                     "target": "بیا",
-                    "translit": "biā"
+                    "translit": "biyā"
                   },
                   "correction": {
                     "target": "تشریف بیاورید",
-                    "translit": "tashrīf biāwarēd"
+                    "translit": "tashrīf biyāwarēd"
                   },
                   "hint": "An honorific address needs the formal 'please come'."
                 },
@@ -15963,7 +15963,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "به معلم محترم: لطفاً بنشینید",
-                  "translit": "ba mu'allem-e mohtaram: lutfan bunshinēd",
+                  "translit": "ba mu'allem-e mohtaram: lutfan buneshīnēd",
                   "en": "To the respected teacher: please sit.",
                   "distractorsTarget": [
                     {
@@ -15972,7 +15972,7 @@
                     },
                     {
                       "target": "به دوست: بنشینید",
-                      "translit": "ba dōst: bunshinēd"
+                      "translit": "ba dōst: buneshīnēd"
                     }
                   ]
                 },
@@ -16015,11 +16015,11 @@
                   "id": "ge-93-1",
                   "type": "spotError",
                   "target": "جناب رئیس، تو کجا می‌روی؟",
-                  "translit": "jenāb-e ra'īs, tu kujā mērawi?",
+                  "translit": "jenāb-e ra'īs, tu kujā mērawī?",
                   "en": "Your Excellency, where are you going?",
                   "errorWord": {
                     "target": "می‌روی",
-                    "translit": "mērawi"
+                    "translit": "mērawī"
                   },
                   "correction": {
                     "target": "می‌روید",
