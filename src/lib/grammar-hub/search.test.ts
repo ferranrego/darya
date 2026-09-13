@@ -30,6 +30,21 @@ describe("grammar hub search", () => {
     expect(top("می")).toBe("present-tense");
   });
 
+  it("finds each A1 page from the plain English a beginner would type", () => {
+    const cases: Record<string, string> = {
+      "to be": "pronouns-and-to-be",
+      "word order": "word-order",
+      plural: "plurals",
+      "where": "questions",
+      "didn't": "negation",
+      "my": "possessive-endings",
+      "with": "prepositions",
+      "there is": "there-is-and-to-have",
+      "past tense": "simple-past",
+    };
+    for (const [q, slug] of Object.entries(cases)) expect(top(q), q).toBe(slug);
+  });
+
   it("does not forgive typos on short words, where one letter is a different rule", () => {
     // "na" is negation, "ra" is the object marker: one edit apart, never the same page.
     expect(searchHub("na", hubEntries).map((h) => h.entry.slug)).not.toContain("object-marker-ra");

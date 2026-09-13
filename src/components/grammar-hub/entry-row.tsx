@@ -28,16 +28,16 @@ export function EntryRow({
       }`}
     >
       <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-2">
+        <div className="flex items-start gap-2">
           {showLevel && (
-            <span className="rounded-full bg-paper px-2 py-0.5 text-[11px] font-semibold text-ink-soft">
+            <span className="mt-0.5 shrink-0 rounded-full bg-paper px-2 py-0.5 text-[11px] font-semibold text-ink-soft">
               {entry.level}
             </span>
           )}
-          <p className="truncate text-[16px] font-medium text-ink">{entry.title}</p>
+          <p className="text-[16px] font-medium leading-snug text-ink">{entry.title}</p>
           {studied && (
             <span
-              className="flex size-4 shrink-0 items-center justify-center rounded-full bg-sabz-soft text-sabz"
+              className="mt-1 flex size-4 shrink-0 items-center justify-center rounded-full bg-sabz-soft text-sabz"
               title="You studied this in a lesson"
             >
               <Check size={11} strokeWidth={3} aria-label="Studied in a lesson" />
