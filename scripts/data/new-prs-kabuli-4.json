@@ -1,0 +1,26 @@
+[
+  {
+    "target": "طب",
+    "translit": "tib",
+    "glossEn": "medicine (the field)",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "برادرم در پوهنځی طب درس می‌خواند.",
+    "exampleTranslit": "barādaram dar pōhanzay-e tib dars mēkhānad.",
+    "exampleEn": "My brother studies at the faculty of medicine.",
+    "variants": [],
+    "tags": []
+  },
+  {
+    "target": "تکنالوژی",
+    "translit": "taknālōzhī",
+    "glossEn": "technology",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "تکنالوژی نو کار را آسان می‌کند.",
+    "exampleTranslit": "taknālōzhī-ye naw kār rā āsān mēkunad.",
+    "exampleEn": "New technology makes work easier.",
+    "variants": [],
+    "tags": []
+  }
+]

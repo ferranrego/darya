@@ -31131,8 +31131,8 @@
       "freqBand": 5,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "ما به توسعه پایدار نیاز داریم.",
-      "exampleTranslit": "mā ba tawsia-ye pāydār niyāz dārēm.",
+      "exampleTarget": "ما به انکشاف پایدار نیاز داریم.",
+      "exampleTranslit": "mā ba inkishāf-ye pāydār niyāz dārēm.",
       "exampleEn": "We need sustainable development.",
       "tags": [
         "Descriptions & Qualities"
@@ -35246,7 +35246,7 @@
       "target": "مهندسی",
       "targetNormalized": "مهندسی",
       "translit": "muhandisī",
-      "glossEn": "engineering",
+      "glossEn": "[not a headword: Iranian; Dari is انجنیری] engineering",
       "pos": "noun",
       "freqRank": 1803,
       "freqBand": 6,
@@ -35360,7 +35360,7 @@
       "target": "پشتیبانی",
       "targetNormalized": "پشتیبانی",
       "translit": "pushtēbānī",
-      "glossEn": "support",
+      "glossEn": "[not a headword: Iranian; Dari is حمایت] support",
       "pos": "noun",
       "freqRank": 1809,
       "freqBand": 6,
@@ -35442,8 +35442,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "هزینه حمل‌ونقل کالا افزایش یافته است.",
-      "exampleTranslit": "hazīna-ye haml-wa-naql-e kālā afzāyish yāfta ast.",
+      "exampleTarget": "مصرف حمل‌ونقل کالا افزایش یافته است.",
+      "exampleTranslit": "masraf-ye haml-wa-naql-e kālā afzāyish yāfta ast.",
       "exampleEn": "The transportation cost of goods has increased.",
       "tags": [
         "Abstract Concepts"
@@ -35476,7 +35476,7 @@
       "target": "نماد",
       "targetNormalized": "نماد",
       "translit": "namād",
-      "glossEn": "symbol",
+      "glossEn": "[not a headword: Iranian; Dari is سمبول / نشانه] symbol",
       "pos": "noun",
       "freqRank": 1815,
       "freqBand": 6,
@@ -36096,7 +36096,7 @@
       "target": "مجوز",
       "targetNormalized": "مجوز",
       "translit": "mujāwiz",
-      "glossEn": "authorization",
+      "glossEn": "[not a headword: Iranian; Dari is جواز / اجازه‌نامه] authorization",
       "pos": "noun",
       "freqRank": 1848,
       "freqBand": 6,
@@ -38077,7 +38077,7 @@
       "target": "ایمنی",
       "targetNormalized": "ایمنی",
       "translit": "ēmnī",
-      "glossEn": "safety",
+      "glossEn": "[not a headword: Iranian; Dari is مصونیت / امنیت کاری] safety",
       "pos": "noun",
       "freqRank": 1953,
       "freqBand": 6,
@@ -38989,7 +38989,7 @@
       "target": "جمعیت",
       "targetNormalized": "جمعیت",
       "translit": "jam'iyat",
-      "glossEn": "population",
+      "glossEn": "[not a headword: Iranian; Dari is نفوس] population",
       "pos": "noun",
       "freqRank": 2001,
       "freqBand": 6,
@@ -39216,7 +39216,7 @@
       "target": "زیست‌شناسی",
       "targetNormalized": "زیست‌شناسی",
       "translit": "zīstshināsī",
-      "glossEn": "biology",
+      "glossEn": "[not a headword: Iranian; Dari is بیولوژی] biology",
       "pos": "noun",
       "freqRank": 2013,
       "freqBand": 6,
@@ -41371,7 +41371,7 @@
       "target": "کاربردی",
       "targetNormalized": "کاربردی",
       "translit": "kārburdī",
-      "glossEn": "practical/functional",
+      "glossEn": "[not a headword: Iranian; Dari is عملی] practical/functional",
       "pos": "adjective",
       "freqRank": 2127,
       "freqBand": 6,
@@ -42721,11 +42721,11 @@
       "target": "طبل",
       "targetNormalized": "طبل",
       "translit": "tabl",
-      "glossEn": "drum",
+      "glossEn": "drum (everyday Dari is دهل)",
       "pos": "noun",
       "freqRank": 2199,
       "freqBand": 6,
-      "register": "neutral",
+      "register": "formal",
       "variants": [],
       "exampleTarget": "آنها طبل می‌زدند و شادی می‌کردند.",
       "exampleTranslit": "ānhā tabl mēzadand wa shādī mēkardand.",
@@ -43862,7 +43862,7 @@
       "target": "خوابگاه",
       "targetNormalized": "خوابگاه",
       "pos": "noun",
-      "glossEn": "dormitory",
+      "glossEn": "[not a headword: Iranian; Dari is لیلیه] dormitory",
       "tags": [],
       "concreteness": true,
       "translit": "khwābgāh",
@@ -44203,7 +44203,7 @@
       "target": "همه‌گیری",
       "targetNormalized": "همه‌گیری",
       "translit": "hama-gīrī",
-      "glossEn": "pandemic",
+      "glossEn": "[not a headword: Iranian; Dari is پاندمی] pandemic",
       "pos": "noun",
       "freqRank": 2277,
       "freqBand": 6,
@@ -44950,8 +44950,8 @@
     },
     {
       "id": "lx-1917",
-      "target": "جستجوگر",
-      "targetNormalized": "جستجوگر",
+      "target": "سرچ انجن",
+      "targetNormalized": "سرچ انجن",
       "translit": "justujōgar",
       "glossEn": "search engine",
       "pos": "noun",
@@ -47502,7 +47502,7 @@
       "target": "جایگزین",
       "targetNormalized": "جایگزین",
       "translit": "jāyguzīn",
-      "glossEn": "alternative",
+      "glossEn": "[not a headword: Iranian; Dari is بدیل] alternative",
       "pos": "noun",
       "freqRank": 2452,
       "freqBand": 6,
@@ -47612,8 +47612,8 @@
     },
     {
       "id": "lx-1786",
-      "target": "سیستم ایمنی بدن",
-      "targetNormalized": "سیستم ایمنی بدن",
+      "target": "سیستم معافیتی بدن",
+      "targetNormalized": "سیستم معافیتی بدن",
       "translit": "sīstim-e ēmanī-ye badan",
       "glossEn": "body's immune system",
       "pos": "noun",
@@ -47716,8 +47716,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "بیوتکنولوژی به پزشکی کمک می‌کند.",
-      "exampleTranslit": "biyōtēknōlōzhī ba pizishkī kumak mēkunad.",
+      "exampleTarget": "بیوتکنولوژی به طب کمک می‌کند.",
+      "exampleTranslit": "biyōtēknōlōzhī ba tib kumak mēkunad.",
       "exampleEn": "Biotechnology helps medicine.",
       "tags": [
         "Abstract Concepts"
@@ -47843,7 +47843,7 @@
       "target": "رودخانه",
       "targetNormalized": "رودخانه",
       "translit": "rōd-khāna",
-      "glossEn": "river",
+      "glossEn": "[not a headword: Iranian; Dari is دریا] river",
       "pos": "noun",
       "freqRank": 2470,
       "freqBand": 6,
@@ -48372,8 +48372,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "همگرایی فناوری‌ها آینده را می‌سازد.",
-      "exampleTranslit": "hamgarāyī-ye fanāwarī-hā āyanda rā mēsāzad.",
+      "exampleTarget": "همگرایی تکنالوژی‌ها آینده را می‌سازد.",
+      "exampleTranslit": "hamgarāyī-ye taknālōzhī-hā āyanda rā mēsāzad.",
       "exampleEn": "Convergence of technologies shapes the future.",
       "tags": [
         "Abstract Concepts"
@@ -48459,7 +48459,7 @@
       "target": "پویا",
       "targetNormalized": "پویا",
       "translit": "pōyā",
-      "glossEn": "dynamic",
+      "glossEn": "[not a headword: Iranian; Dari is فعال / سرزنده] dynamic",
       "pos": "adjective",
       "freqRank": 2503,
       "freqBand": 6,
@@ -48852,7 +48852,7 @@
       "target": "به‌روزرسانی",
       "targetNormalized": "به‌روزرسانی",
       "translit": "ba-rōz-rasānī",
-      "glossEn": "update",
+      "glossEn": "[not a headword: Iranian; Dari is اپدیت] update",
       "pos": "noun",
       "freqRank": 2524,
       "freqBand": 6,
@@ -49132,13 +49132,13 @@
       "target": "توسعه‌دهنده",
       "targetNormalized": "توسعه‌دهنده",
       "translit": "tawsīa-dihanda",
-      "glossEn": "developer",
+      "glossEn": "[not a headword: Iranian; Dari is دیولوپر / پروگرامر] developer",
       "pos": "noun",
       "freqRank": 2539,
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "توسعه‌دهنده برنامه در حال کار است.",
+      "exampleTarget": "انکشاف‌دهنده برنامه در حال کار است.",
       "exampleTranslit": "tawsīa-dihanda-ye barnāma dar hāl-e kār ast.",
       "exampleEn": "The app developer is working.",
       "tags": [
@@ -49250,8 +49250,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "مجازی‌سازی هزینه‌ها را کاهش می‌دهد.",
-      "exampleTranslit": "majāzī-sāzī hazīna-hā rā kāhish mēdahad.",
+      "exampleTarget": "مجازی‌سازی مصرف‌ها را کاهش می‌دهد.",
+      "exampleTranslit": "majāzī-sāzī masraf-hā rā kāhish mēdahad.",
       "exampleEn": "Virtualization reduces costs.",
       "tags": [
         "Abstract Concepts"
@@ -49415,7 +49415,7 @@
       "pos": "verb",
       "freqRank": 2554,
       "freqBand": 6,
-      "register": "neutral",
+      "register": "formal",
       "variants": [
         "اندیش"
       ],
@@ -49692,8 +49692,8 @@
     },
     {
       "id": "lx-2048",
-      "target": "اشتراک‌گذاری",
-      "targetNormalized": "اشتراک‌گذاری",
+      "target": "شریک ساختن",
+      "targetNormalized": "شریک ساختن",
       "translit": "ishtirāk-guzārī",
       "glossEn": "sharing",
       "pos": "noun",
@@ -49909,8 +49909,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "فناوری نانو پیشرفت کرده است.",
-      "exampleTranslit": "fanāwarī-ye nānō pēshraft karda ast.",
+      "exampleTarget": "تکنالوژی نانو پیشرفت کرده است.",
+      "exampleTranslit": "taknālōzhī-ye nānō pēshraft karda ast.",
       "exampleEn": "Nanotechnology has advanced.",
       "tags": [
         "Abstract Concepts"
@@ -50036,14 +50036,14 @@
       "target": "دادستان",
       "targetNormalized": "دادستان",
       "translit": "dādistān",
-      "glossEn": "prosecutor",
+      "glossEn": "[not a headword: Iranian; Dari is سارنوال] prosecutor",
       "pos": "noun",
       "freqRank": 2587,
       "freqBand": 6,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دادستان مدارک جدیدی به دادگاه ارائه کرد.",
-      "exampleTranslit": "dādistān madārik-e jadīdī ba dādgāh irā'a kard.",
+      "exampleTarget": "دادستان مدارک جدیدی به محکمه ارائه کرد.",
+      "exampleTranslit": "dādistān madārik-e jadīdī ba mahkama irā'a kard.",
       "exampleEn": "The prosecutor presented new evidence to the court.",
       "tags": [
         "Abstract Concepts"
@@ -50595,7 +50595,7 @@
       "target": "پشتیبان‌گیری",
       "targetNormalized": "پشتیبان‌گیری",
       "translit": "pushtēbān-gīrī",
-      "glossEn": "backup",
+      "glossEn": "[not a headword: Iranian; Dari is بک‌اپ] backup",
       "pos": "noun",
       "freqRank": 2617,
       "freqBand": 7,
@@ -50818,7 +50818,7 @@
       "target": "نام کاربری",
       "targetNormalized": "نام کاربری",
       "translit": "nām-e kārbarī",
-      "glossEn": "username",
+      "glossEn": "[not a headword: Iranian; Dari is یوزرنیم] username",
       "pos": "noun",
       "freqRank": 2629,
       "freqBand": 7,
@@ -51025,7 +51025,7 @@
       "target": "دادگاه",
       "targetNormalized": "دادگاه",
       "translit": "dādgāh",
-      "glossEn": "court (formal)",
+      "glossEn": "[not a headword: Iranian; Dari is محکمه] court (formal)",
       "pos": "noun",
       "freqRank": 2640,
       "freqBand": 7,
@@ -51044,7 +51044,7 @@
       "target": "پایگاه داده‌ها",
       "targetNormalized": "پایگاه داده‌ها",
       "translit": "pāygāh-e dāda-hā",
-      "glossEn": "database",
+      "glossEn": "[not a headword: Iranian; Dari is دیتابیس] database",
       "pos": "noun",
       "freqRank": 2641,
       "freqBand": 7,
@@ -51660,8 +51660,8 @@
     },
     {
       "id": "lx-2017",
-      "target": "پشتیبانی فنی",
-      "targetNormalized": "پشتیبانی فنی",
+      "target": "خدمات تخنیکی",
+      "targetNormalized": "خدمات تخنیکی",
       "translit": "pushtēbānī-ye fannī",
       "glossEn": "technical support",
       "pos": "noun",
@@ -51908,7 +51908,7 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "توسعه وب یک شغل پردرآمد است.",
+      "exampleTarget": "انکشاف وب یک شغل پرعایدات است.",
       "exampleTranslit": "tawsīa-ye wēb yak shughl-e pur-dar-āmad ast.",
       "exampleEn": "Web development is a lucrative job.",
       "tags": [
@@ -52452,8 +52452,8 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "پردازش تصویر در پزشکی کاربرد دارد.",
-      "exampleTranslit": "pardāzish-e taswīr dar pizishkī kārburd dārad.",
+      "exampleTarget": "پردازش تصویر در طب کاربرد دارد.",
+      "exampleTranslit": "pardāzish-e taswīr dar tib kārburd dārad.",
       "exampleEn": "Image processing is used in medicine.",
       "tags": [
         "Abstract Concepts"
@@ -52859,7 +52859,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "خزانه دولت به دلیل کاهش درآمدها خالی شده است.",
+      "exampleTarget": "خزانه دولت به دلیل کاهش عایداتها خالی شده است.",
       "exampleTranslit": "khazāna-ye dawlat ba dalēl-e kāhish-e dar-āmad-hā khālī shuda ast.",
       "exampleEn": "The government treasury has been emptied due to falling revenues.",
       "tags": [
@@ -53331,8 +53331,8 @@
     },
     {
       "id": "lx-2552",
-      "target": "مدیرعامل",
-      "targetNormalized": "مدیرعامل",
+      "target": "رئیس اجرائیه",
+      "targetNormalized": "رئیس اجرائیه",
       "translit": "mudīr-e 'āmil",
       "glossEn": "CEO (Chief Executive Officer)",
       "pos": "noun",
@@ -53340,8 +53340,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "مدیرعامل جدید برنامه‌های توسعه‌ای خود را اعلام کرد.",
-      "exampleTranslit": "mudīr-e 'āmil-e jadīd barnāma-hā-ye tawsia'ī-ye khud rā i'lām kard.",
+      "exampleTarget": "مدیرعامل جدید برنامه‌های انکشاف‌ای خود را اعلام کرد.",
+      "exampleTranslit": "mudīr-e 'āmil-e jadīd barnāma-hā-ye inkishāf'ī-ye khud rā i'lām kard.",
       "exampleEn": "The new CEO announced his development plans.",
       "tags": [
         "Abstract Concepts"
@@ -53668,7 +53668,7 @@
       "target": "همچنان",
       "targetNormalized": "همچنان",
       "translit": "hamchunān",
-      "glossEn": "still",
+      "glossEn": "[not a headword: Iranian; Dari is هنوز] still",
       "pos": "adverb",
       "freqRank": 2782,
       "freqBand": 7,
@@ -54004,7 +54004,7 @@
       "target": "کلافه",
       "targetNormalized": "کلافه",
       "translit": "kalāfa",
-      "glossEn": "frustrated",
+      "glossEn": "[not a headword: Iranian; Dari is سرگردان / عاجز] frustrated",
       "pos": "adjective",
       "freqRank": 2800,
       "freqBand": 7,
@@ -55195,7 +55195,7 @@
       "target": "حسابرسی",
       "targetNormalized": "حسابرسی",
       "translit": "hisābrasī",
-      "glossEn": "auditing",
+      "glossEn": "[not a headword: Iranian; Dari is تفتیش] auditing",
       "pos": "noun",
       "freqRank": 2863,
       "freqBand": 7,
@@ -57069,7 +57069,7 @@
       "target": "پاسخگویی",
       "targetNormalized": "پاسخگویی",
       "translit": "pāsuh-gū'ī",
-      "glossEn": "accountability",
+      "glossEn": "[not a headword: Iranian; Dari is حسابدهی] accountability",
       "pos": "noun",
       "freqRank": 2962,
       "freqBand": 7,
@@ -57189,8 +57189,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پایداری محیطی باید در برنامه‌های توسعه لحاظ شود.",
-      "exampleTranslit": "pāydārī-ye muhītī bāyad dar barnāma-hā-ye tawsi'a luhāz shawad.",
+      "exampleTarget": "پایداری محیطی باید در برنامه‌های انکشاف لحاظ شود.",
+      "exampleTranslit": "pāydārī-ye muhītī bāyad dar barnāma-hā-ye inkishāf luhāz shawad.",
       "exampleEn": "Environmental sustainability must be included in development plans.",
       "tags": [
         "Abstract Concepts"
@@ -57826,8 +57826,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "متهمان پرونده اختلاس به دادگاه معرفی شدند.",
-      "exampleTranslit": "muttahamān-e parwanda-ye ikhtilās ba dādgāh mu'arrifī shudand.",
+      "exampleTarget": "متهمان پرونده اختلاس به محکمه معرفی شدند.",
+      "exampleTranslit": "muttahamān-e parwanda-ye ikhtilās ba mahkama mu'arrifī shudand.",
       "exampleEn": "The suspects in the embezzlement case were referred to the court.",
       "tags": [
         "Abstract Concepts"
@@ -58368,7 +58368,7 @@
       "target": "مسیریاب",
       "targetNormalized": "مسیریاب",
       "translit": "masīr-yāb",
-      "glossEn": "router",
+      "glossEn": "[not a headword: Iranian; Dari is روتر] router",
       "pos": "noun",
       "freqRank": 3031,
       "freqBand": 7,
@@ -59783,8 +59783,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "صنعت هوافضا نیازمند فناوری‌های پیشرفته است.",
-      "exampleTranslit": "san'at-e hawā-fazā niyāzmand-e fanāwarīhā-ye pēshrafta ast.",
+      "exampleTarget": "صنعت هوافضا نیازمند تکنالوژی‌های پیشرفته است.",
+      "exampleTranslit": "san'at-e hawā-fazā niyāzmand-e taknālōzhīhā-ye pēshrafta ast.",
       "exampleEn": "The aerospace industry requires advanced technologies.",
       "tags": [
         "Abstract Concepts"
@@ -59824,8 +59824,8 @@
       "variants": [
         "تخمین میزند"
       ],
-      "exampleTarget": "ما هزینه را صد دالر تخمین زدیم.",
-      "exampleTranslit": "mā hazīna rā sad dālar takhmīn zadēm.",
+      "exampleTarget": "ما مصرف را صد دالر تخمین زدیم.",
+      "exampleTranslit": "mā masraf rā sad dālar takhmīn zadēm.",
       "exampleEn": "We estimated the cost at one hundred dollars.",
       "tags": [
         "Actions & Movement"
@@ -60385,8 +60385,8 @@
     },
     {
       "id": "lx-2513",
-      "target": "تراز تجاری",
-      "targetNormalized": "تراز تجاری",
+      "target": "بیلانس تجارتی",
+      "targetNormalized": "بیلانس تجارتی",
       "translit": "tarāz-e tijārī",
       "glossEn": "trade balance",
       "pos": "noun",
@@ -60432,7 +60432,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "افزایش تعرفه گمرکی بر واردات خودرو اعمال شد.",
+      "exampleTarget": "افزایش تعرفه گمرکی بر واردات موتر اعمال شد.",
       "exampleTranslit": "afzāyish-e ta'rifa-ye gumrukī bar wāridāt-e khudraw a'māl shud.",
       "exampleEn": "An increase in customs tariff was applied to car imports.",
       "tags": [
@@ -60442,8 +60442,8 @@
     },
     {
       "id": "lx-2515",
-      "target": "قاچاق کالا",
-      "targetNormalized": "قاچاق کالا",
+      "target": "قاچاق اموال",
+      "targetNormalized": "قاچاق اموال",
       "translit": "qāchāq-e kālā",
       "glossEn": "smuggling of goods",
       "pos": "noun",
@@ -60498,8 +60498,8 @@
     },
     {
       "id": "lx-2518",
-      "target": "تسهیلات بانکی",
-      "targetNormalized": "تسهیلات بانکی",
+      "target": "قرضه بانکی",
+      "targetNormalized": "قرضه بانکی",
       "translit": "tashīlāt-e bānkī",
       "glossEn": "bank facilities/loans",
       "pos": "noun",
@@ -60667,8 +60667,8 @@
     },
     {
       "id": "lx-2525",
-      "target": "هزینه‌های سربار",
-      "targetNormalized": "هزینه‌های سربار",
+      "target": "مصارف سربار",
+      "targetNormalized": "مصارف سربار",
       "translit": "hazīna-hā-ye sarbār",
       "glossEn": "overhead costs",
       "pos": "noun",
@@ -60676,8 +60676,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "مدیران در تلاش برای کاهش هزینه‌های سربار هستند.",
-      "exampleTranslit": "mudīrān dar talāsh barā-ye kāhish-e hazīna-hā-ye sarbār hastand.",
+      "exampleTarget": "مدیران در تلاش برای کاهش مصرف‌های سربار هستند.",
+      "exampleTranslit": "mudīrān dar talāsh barā-ye kāhish-e masraf-hā-ye sarbār hastand.",
       "exampleEn": "Managers are trying to reduce overhead costs.",
       "tags": [
         "Abstract Concepts"
@@ -61320,7 +61320,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "حق بیمه خودروهای مدل بالا گران‌تر است.",
+      "exampleTarget": "حق بیمه موترهای مدل بالا گران‌تر است.",
       "exampleTranslit": "haqq-e bīma-ye khudraw-hā-ye mudal-bālā girān-tar ast.",
       "exampleEn": "The insurance premium for high-end cars is more expensive.",
       "tags": [
@@ -61358,8 +61358,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "ادغام این دو شرکت باعث ایجاد یک غول فناوری شد.",
-      "exampleTranslit": "idghām-e īn dū shirkat bā'is-e ījād-e yak ghūl-e fanāwarī shud.",
+      "exampleTarget": "ادغام این دو شرکت باعث ایجاد یک غول تکنالوژی شد.",
+      "exampleTranslit": "idghām-e īn dū shirkat bā'is-e ījād-e yak ghūl-e taknālōzhī shud.",
       "exampleEn": "The merger of these two companies created a tech giant.",
       "tags": [
         "Abstract Concepts"
@@ -61415,8 +61415,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دادگاه به دفاعیات متهم گوش داد.",
-      "exampleTranslit": "dādgāh ba difā'iyāt-e muttaham gōsh dād.",
+      "exampleTarget": "محکمه به دفاعیات متهم گوش داد.",
+      "exampleTranslit": "mahkama ba difā'iyāt-e muttaham gōsh dād.",
       "exampleEn": "The court listened to the accused's defense.",
       "tags": [
         "Abstract Concepts"
@@ -61577,8 +61577,8 @@
     },
     {
       "id": "lx-2557",
-      "target": "طرح کسب و کار",
-      "targetNormalized": "طرح کسب و کار",
+      "target": "پلان تجارتی",
+      "targetNormalized": "پلان تجارتی",
       "translit": "tarh-e kasb-u-kār",
       "glossEn": "business plan",
       "pos": "noun",
@@ -61687,8 +61687,8 @@
     },
     {
       "id": "lx-2562",
-      "target": "توسعه پایدار",
-      "targetNormalized": "توسعه پایدار",
+      "target": "انکشاف پایدار",
+      "targetNormalized": "انکشاف پایدار",
       "translit": "tawsia-ye pāydār",
       "glossEn": "sustainable development",
       "pos": "noun",
@@ -61696,8 +61696,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "رشد اقتصادی باید همراه با توسعه پایدار باشد.",
-      "exampleTranslit": "rushd-e iqtisādī bāyad hamrāh bā tawsia-ye pāydār bāshad.",
+      "exampleTarget": "رشد اقتصادی باید همراه با انکشاف پایدار باشد.",
+      "exampleTranslit": "rushd-e iqtisādī bāyad hamrāh bā inkishāf-ye pāydār bāshad.",
       "exampleEn": "Economic growth must be accompanied by sustainable development.",
       "tags": [
         "Abstract Concepts"
@@ -61799,8 +61799,8 @@
     },
     {
       "id": "lx-2565",
-      "target": "درآمد سرانه",
-      "targetNormalized": "درآمد سرانه",
+      "target": "عایدات سرانه",
+      "targetNormalized": "عایدات سرانه",
       "translit": "dar-āmad-e sarāna",
       "glossEn": "per capita income",
       "pos": "noun",
@@ -61808,8 +61808,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "کشورهای توسعه‌یافته درآمد سرانه بالایی دارند.",
-      "exampleTranslit": "kishwar-hā-ye tawsia-yāfta dar-āmad-e sarāna-ye bālāyī dārand.",
+      "exampleTarget": "کشورهای انکشاف‌یافته عایدات سرانه بالایی دارند.",
+      "exampleTranslit": "kishwar-hā-ye inkishāf-yāfta dar-āmad-e sarāna-ye bālāyī dārand.",
       "exampleEn": "Developed countries have a high per capita income.",
       "tags": [
         "Abstract Concepts"
@@ -61884,7 +61884,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "درآمد نفت به صندوق ثروت ملی واریز می‌شود.",
+      "exampleTarget": "عایدات نفت به صندوق ثروت ملی واریز می‌شود.",
       "exampleTranslit": "dar-āmad-e naft ba sandūq-e sarwat-e millī wārīz mēshawad.",
       "exampleEn": "Oil revenue is deposited into the sovereign wealth fund.",
       "tags": [
@@ -62209,8 +62209,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه صنعتگری باعث ایجاد شغل می‌شود.",
-      "exampleTranslit": "tawsia-ye san'atgarī bā'is-e ījād-e shughl mēshawad.",
+      "exampleTarget": "انکشاف صنعتگری باعث ایجاد شغل می‌شود.",
+      "exampleTranslit": "inkishāf-ye san'atgarī bā'is-e ījād-e shughl mēshawad.",
       "exampleEn": "The development of industry creates jobs.",
       "tags": [
         "Work & Business"
@@ -62369,8 +62369,8 @@
     },
     {
       "id": "lx-2589",
-      "target": "مالیات بر درآمد",
-      "targetNormalized": "مالیات بر درآمد",
+      "target": "مالیات بر عایدات",
+      "targetNormalized": "مالیات بر عایدات",
       "translit": "māliyāt bar dar-āmad",
       "glossEn": "income tax",
       "pos": "noun",
@@ -62378,7 +62378,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "نرخ مالیات بر درآمد برای افراد ثروتمند بیشتر است.",
+      "exampleTarget": "نرخ مالیات بر عایدات برای افراد ثروتمند بیشتر است.",
       "exampleTranslit": "nirkh-e māliyāt bar dar-āmad barā-ye afrād-e sarwatmand bēshtar ast.",
       "exampleEn": "The income tax rate is higher for wealthy individuals.",
       "tags": [
@@ -62653,8 +62653,8 @@
     },
     {
       "id": "lx-2602",
-      "target": "تراز پرداخت‌ها",
-      "targetNormalized": "تراز پرداخت‌ها",
+      "target": "بیلانس پرداخت‌ها",
+      "targetNormalized": "بیلانس پرداخت‌ها",
       "translit": "tarāz-e pardākht-hā",
       "glossEn": "balance of payments",
       "pos": "noun",
@@ -62822,8 +62822,8 @@
     },
     {
       "id": "lx-2608",
-      "target": "صندوق بازنشستگی",
-      "targetNormalized": "صندوق بازنشستگی",
+      "target": "صندوق تقاعد",
+      "targetNormalized": "صندوق تقاعد",
       "translit": "sandūq-e bāznishastagī",
       "glossEn": "pension fund",
       "pos": "noun",
@@ -62924,7 +62924,7 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "این قانون به نفع اقشار کم‌درآمد است.",
+      "exampleTarget": "این قانون به نفع اقشار کم‌عایدات است.",
       "exampleTranslit": "īn qānūn ba naf'-e aqshār-e kam-dar-āmad ast.",
       "exampleEn": "This law is in favor of low-income strata.",
       "tags": [
@@ -62941,7 +62941,7 @@
       "pos": "noun",
       "freqRank": 3271,
       "freqBand": 7,
-      "register": "spoken",
+      "register": "formal",
       "variants": [],
       "exampleTarget": "در بازار خرسی، سرمایه‌گذاران با احتیاط عمل می‌کنند.",
       "exampleTranslit": "dar bāzār-e khirsī, sarmāya-guzārān bā ihtiyāt amal mēkunand.",
@@ -63217,8 +63217,8 @@
     },
     {
       "id": "lx-2621",
-      "target": "کمیته حسابرسی",
-      "targetNormalized": "کمیته حسابرسی",
+      "target": "کمیته تفتیش",
+      "targetNormalized": "کمیته تفتیش",
       "translit": "kumīta-ye hisābrasī",
       "glossEn": "audit committee",
       "pos": "noun",
@@ -64235,8 +64235,8 @@
     },
     {
       "id": "lx-2656",
-      "target": "تسهیلات خرد",
-      "targetNormalized": "تسهیلات خرد",
+      "target": "قرضه‌های خرد",
+      "targetNormalized": "قرضه‌های خرد",
       "translit": "tashīlāt-e khurd",
       "glossEn": "microfinance",
       "pos": "noun",
@@ -64301,7 +64301,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "طراحی آیرودینامیک خودرو مصرف سوخت را کاهش می‌دهد.",
+      "exampleTarget": "طراحی آیرودینامیک موتر مصرف سوخت را کاهش می‌دهد.",
       "exampleTranslit": "tarāhī-ye āyrūdīnāmīk-e khwudrō masraf-e sōkht rā kāhish mēdihad.",
       "exampleEn": "The aerodynamic design of the car reduces fuel consumption.",
       "tags": [
@@ -64396,8 +64396,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "استراتژی جدید بر توسعه بانکداری خرد تمرکز دارد.",
-      "exampleTranslit": "istrātēzhī-ye jadīd bar tawsia-ye bānkdārī-ye khurd tamarkuz dārad.",
+      "exampleTarget": "استراتژی جدید بر انکشاف بانکداری خرد تمرکز دارد.",
+      "exampleTranslit": "istrātēzhī-ye jadīd bar inkishāf-ye bānkdārī-ye khurd tamarkuz dārad.",
       "exampleEn": "The new strategy focuses on retail banking development.",
       "tags": [
         "Abstract Concepts"
@@ -65398,8 +65398,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پروژه سدسازی از محل صندوق توسعه ملی تامین مالی شد.",
-      "exampleTranslit": "purōzha-ye sad-sāzī az mahal-e sandūq-e tawsia-ye millī ta'mīn-e mālī shud.",
+      "exampleTarget": "پروژه سدسازی از محل صندوق انکشاف ملی تامین مالی شد.",
+      "exampleTranslit": "purōzha-ye sad-sāzī az mahal-e sandūq-e inkishāf-ye millī ta'mīn-e mālī shud.",
       "exampleEn": "The dam project was financed by the national development fund.",
       "tags": [
         "Abstract Concepts"
@@ -65648,8 +65648,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "در اقتصاد، در نظر گرفتن هزینه فرصت تصمیمات مهم است.",
-      "exampleTranslit": "dar iqtisād, dar nazar giriftan-e hazīna-ye fursat-e tasmīmāt muhimm ast.",
+      "exampleTarget": "در اقتصاد، در نظر گرفتن مصرف فرصت تصمیمات مهم است.",
+      "exampleTranslit": "dar iqtisād, dar nazar giriftan-e masraf-ye fursat-e tasmīmāt muhimm ast.",
       "exampleEn": "In economics, considering the opportunity cost of decisions is important.",
       "tags": [
         "Money & Finance"
@@ -65856,8 +65856,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "فناوری هولوگرام در آینده ارتباطات نقش مهمی خواهد داشت.",
-      "exampleTranslit": "fanāwarī-ye hūlūgrām dar āyanda-ye irtibātāt naqsh-e muhimmī khāhad dāsht.",
+      "exampleTarget": "تکنالوژی هولوگرام در آینده ارتباطات نقش مهمی خواهد داشت.",
+      "exampleTranslit": "taknālōzhī-ye hūlūgrām dar āyanda-ye irtibātāt naqsh-e muhimmī khāhad dāsht.",
       "exampleEn": "Hologram technology will play an important role in the future of communication.",
       "tags": [
         "Abstract Concepts"
@@ -65945,14 +65945,14 @@
       "target": "دادگاه عالی",
       "targetNormalized": "دادگاه عالی",
       "translit": "dādgāh-e 'ālī",
-      "glossEn": "supreme court",
+      "glossEn": "[not a headword: Iranian; Dari is ستره محکمه] supreme court",
       "pos": "noun",
       "freqRank": 3430,
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دادگاه عالی حکم نهایی را صادر کرد.",
-      "exampleTranslit": "dādgāh-e ālī hukm-e nihā'ī rā ṣādir kard.",
+      "exampleTarget": "محکمه عالی حکم نهایی را صادر کرد.",
+      "exampleTranslit": "mahkama-ye ālī hukm-e nihā'ī rā ṣādir kard.",
       "exampleEn": "The supreme court issued the final ruling.",
       "tags": [
         "Law & Justice"
@@ -66102,7 +66102,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "اسکرام یکی از چارچوب‌های محبوب توسعه است.",
+      "exampleTarget": "اسکرام یکی از چارچوب‌های محبوب انکشاف است.",
       "exampleTranslit": "iskrām yakī az chārchūb-hā-ye mahbūb-e tawsē'a ast.",
       "exampleEn": "Scrum is one of the popular development frameworks.",
       "tags": [
@@ -67058,7 +67058,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "جذب سرمایه‌گذاری خارجی برای توسعه کشور مهم است.",
+      "exampleTarget": "جذب سرمایه‌گذاری خارجی برای انکشاف کشور مهم است.",
       "exampleTranslit": "jazb-e sarmāya-guzārī-ye khārijī barā-ye tawsī'a-ye kishwar muhimm ast.",
       "exampleEn": "Attracting foreign investment is important for the country's development.",
       "tags": [
@@ -67210,8 +67210,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "زیست‌فناوری به تولید داروهای جدید کمک می‌کند.",
-      "exampleTranslit": "zīst-fanāwarī ba tawlīd-e dārūhā-ye jadīd kumak mēkunad.",
+      "exampleTarget": "زیست‌تکنالوژی به تولید داروهای جدید کمک می‌کند.",
+      "exampleTranslit": "zīst-taknālōzhī ba tawlīd-e dārūhā-ye jadīd kumak mēkunad.",
       "exampleEn": "Biotechnology helps in producing new drugs.",
       "tags": [
         "Abstract Concepts"
@@ -67280,7 +67280,7 @@
       "target": "پرتودرمانی",
       "targetNormalized": "پرتودرمانی",
       "translit": "partaw-darmānī",
-      "glossEn": "radiotherapy",
+      "glossEn": "[not a headword: Iranian; Dari is رادیوتراپی] radiotherapy",
       "pos": "noun",
       "freqRank": 3500,
       "freqBand": 7,
@@ -67438,8 +67438,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "تخمین دقیق هزینه پروژه مشکل است.",
-      "exampleTranslit": "takhmēn-e daqēq-e hazīna-ye prōzha mushkil ast.",
+      "exampleTarget": "تخمین دقیق مصرف پروژه مشکل است.",
+      "exampleTranslit": "takhmēn-e daqēq-e masraf-ye prōzha mushkil ast.",
       "exampleEn": "Accurate estimation of the project cost is difficult.",
       "tags": [
         "Abstract Concepts"
@@ -67778,7 +67778,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "برنامه‌نویسان به محیط توسعه مناسب نیاز دارند.",
+      "exampleTarget": "برنامه‌نویسان به محیط انکشاف مناسب نیاز دارند.",
       "exampleTranslit": "barnāmanawīsān ba muhīt-e tawsē'a-ye munāsib niyāz dārand.",
       "exampleEn": "Programmers need an appropriate development environment.",
       "tags": [
@@ -67890,8 +67890,8 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "خودکارسازی فرآیندها هزینه‌ها را کاهش می‌دهد.",
-      "exampleTranslit": "khwudkār-sāzī-ye farāyand-hā hazīnahā rā kāhish mēdihad.",
+      "exampleTarget": "خودکارسازی فرآیندها مصرف‌ها را کاهش می‌دهد.",
+      "exampleTranslit": "khwudkār-sāzī-ye farāyand-hā masrafhā rā kāhish mēdihad.",
       "exampleEn": "Process automation reduces costs.",
       "tags": [
         "Abstract Concepts"
@@ -68212,7 +68212,7 @@
       "freqBand": 7,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "سیستم‌های تعبیه‌شده در خودروها بسیار مهم هستند.",
+      "exampleTarget": "سیستم‌های تعبیه‌شده در موترها بسیار مهم هستند.",
       "exampleTranslit": "sīstam-hā-ye ta'bīya-shuda dar khwudrōhā bisyār muhim hastand.",
       "exampleEn": "Embedded systems are very important in cars.",
       "tags": [
@@ -68666,7 +68666,7 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "بینایی ماشین در خودروهای خودران کاربرد دارد.",
+      "exampleTarget": "بینایی ماشین در موترهای خودران کاربرد دارد.",
       "exampleTranslit": "bīnā'ī-ye māshīn dar khwudrōhā-ye khwud-rān kārburd dārad.",
       "exampleEn": "Computer vision is used in self-driving cars.",
       "tags": [
@@ -68685,7 +68685,7 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "خودروهای خودران آینده حمل و نقل هستند.",
+      "exampleTarget": "موترهای خودران آینده حمل و نقل هستند.",
       "exampleTranslit": "khwudrōhā-ye khwud-rān āyanda-ye haml wa naql hastand.",
       "exampleEn": "Self-driving cars are the future of transportation.",
       "tags": [
@@ -68742,7 +68742,7 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "تیم توسعه از متدولوژی چابک استفاده می‌کند.",
+      "exampleTarget": "تیم انکشاف از متدولوژی چابک استفاده می‌کند.",
       "exampleTranslit": "tīm-e tawsē'a az mētūdūlūzhī-ye chābuk istifāda mēkunad.",
       "exampleEn": "The development team uses the agile methodology.",
       "tags": [
@@ -69230,8 +69230,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "طراحی وب نیازمند آشنایی با فناوری‌های جدید است.",
-      "exampleTranslit": "tarāhī-ye wib niyāzmand-e āshnā'ī bā fanāwarīhā-ye jadīd ast.",
+      "exampleTarget": "طراحی وب نیازمند آشنایی با تکنالوژی‌های جدید است.",
+      "exampleTranslit": "tarāhī-ye wib niyāzmand-e āshnā'ī bā taknālōzhīhā-ye jadīd ast.",
       "exampleEn": "Web design requires familiarity with new technologies.",
       "tags": [
         "Science & Technology"
@@ -69879,8 +69879,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "ساعت‌های هوشمند نمونه‌ای از فناوری پوشیدنی هستند.",
-      "exampleTranslit": "sā'at-hā-ye hūshmand namūna-ī az fanāwarī-ye pōshīdanī hastand.",
+      "exampleTarget": "ساعت‌های هوشمند نمونه‌ای از تکنالوژی پوشیدنی هستند.",
+      "exampleTranslit": "sā'at-hā-ye hūshmand namūna-ī az taknālōzhī-ye pōshīdanī hastand.",
       "exampleEn": "Smartwatches are an example of wearable technology.",
       "tags": [
         "Science & Technology"
@@ -69991,8 +69991,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پزشکی از راه دور خدمات درمانی را در مناطق دورافتاده فراهم می‌کند.",
-      "exampleTranslit": "pizishkī az rāh-e dūr khadamāt-e tadāwīī rā dar manātiq-e dūr-uftāda farāham mēkunad.",
+      "exampleTarget": "طب از راه دور خدمات درمانی را در مناطق دورافتاده فراهم می‌کند.",
+      "exampleTranslit": "tib az rāh-e dūr khadamāt-e tadāwīī rā dar manātiq-e dūr-uftāda farāham mēkunad.",
       "exampleEn": "Telemedicine provides healthcare services in remote areas.",
       "tags": [
         "Abstract Concepts"
@@ -70029,8 +70029,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "هزینه توالی‌یابی دی‌ان‌ای به شدت کاهش یافته است.",
-      "exampleTranslit": "hazīna-ye tawālī-yābī-ye dī-in-ay ba shiddat kāhish yāfta ast.",
+      "exampleTarget": "مصرف توالی‌یابی دی‌ان‌ای به شدت کاهش یافته است.",
+      "exampleTranslit": "masraf-ye tawālī-yābī-ye dī-in-ay ba shiddat kāhish yāfta ast.",
       "exampleEn": "The cost of DNA sequencing has drastically decreased.",
       "tags": [
         "Abstract Concepts"
@@ -70276,8 +70276,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "تلفیق نانو و بیوتکنولوژی یک فناوری همگرا است.",
-      "exampleTranslit": "talfīq-e nāno wa bīyū-tiknūlūzhī yak fanāwarī-ye hamgarā ast.",
+      "exampleTarget": "تلفیق نانو و بیوتکنولوژی یک تکنالوژی همگرا است.",
+      "exampleTranslit": "talfīq-e nāno wa bīyū-tiknūlūzhī yak taknālōzhī-ye hamgarā ast.",
       "exampleEn": "The integration of nano and biotechnology is a converging technology.",
       "tags": [
         "Science & Technology"
@@ -72191,7 +72191,7 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "طبیعت گردی می‌تواند منبع درآمد خوبی باشد.",
+      "exampleTarget": "طبیعت گردی می‌تواند منبع عایدات خوبی باشد.",
       "exampleTranslit": "tabī'at-gardī mētawānad manba'-e dar-āmad-e khūbē bāshad.",
       "exampleEn": "Ecotourism can be a good source of income.",
       "tags": [
@@ -73801,8 +73801,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "میزان توسعه یافتگی کشورها بر محیط زیست تأثیر دارد.",
-      "exampleTranslit": "mēzān-e tawsi'a-yāftagī-ye kishwar-hā bar muhīt-e zīst ta'sīr dārad.",
+      "exampleTarget": "میزان انکشاف یافتگی کشورها بر محیط زیست تأثیر دارد.",
+      "exampleTranslit": "mēzān-e inkishāf-yāftagī-ye kishwar-hā bar muhīt-e zīst ta'sīr dārad.",
       "exampleEn": "The level of countries' development affects the environment.",
       "tags": [
         "Society & Politics"
@@ -74180,8 +74180,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "کشورهای توسعه نیافته بیشتر در معرض خطرات اقلیمی هستند.",
-      "exampleTranslit": "kishwar-hā-ye tawsi'a nā-yāfta bēshtar dar ma'raz-e khatarāt-e iqlīmī hastand.",
+      "exampleTarget": "کشورهای انکشاف نیافته بیشتر در معرض خطرات اقلیمی هستند.",
+      "exampleTranslit": "kishwar-hā-ye inkishāf nā-yāfta bēshtar dar ma'raz-e khatarāt-e iqlīmī hastand.",
       "exampleEn": "Underdeveloped countries are more exposed to climate risks.",
       "tags": [
         "Descriptions & Qualities"
@@ -75178,8 +75178,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "آینده‌نگری در توسعه پایدار بسیار مهم است.",
-      "exampleTranslit": "āyinda-nigarī dar tawsi'a-ye pāydār bisyār muhimm ast.",
+      "exampleTarget": "آینده‌نگری در انکشاف پایدار بسیار مهم است.",
+      "exampleTranslit": "āyinda-nigarī dar inkishāf-ye pāydār bisyār muhimm ast.",
       "exampleEn": "Foresight is very important in sustainable development.",
       "tags": [
         "Abstract Concepts"
@@ -75426,8 +75426,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار می‌تواند به کاهش فقر کمک کند.",
-      "exampleTranslit": "tawsi'a-ye pāydār mētawānad ba kāhish-e faqr kumak kunad.",
+      "exampleTarget": "انکشاف پایدار می‌تواند به کاهش فقر کمک کند.",
+      "exampleTranslit": "inkishāf-ye pāydār mētawānad ba kāhish-e faqr kumak kunad.",
       "exampleEn": "Sustainable development can help poverty reduction.",
       "tags": [
         "Abstract Concepts"
@@ -75522,8 +75522,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "سرمایه‌گذاری روی فناوری پاک ضروری است.",
-      "exampleTranslit": "sarmāya-guzārī rō-ye fanāwarī-ye pāk zarūrī ast.",
+      "exampleTarget": "سرمایه‌گذاری روی تکنالوژی پاک ضروری است.",
+      "exampleTranslit": "sarmāya-guzārī rō-ye taknālōzhī-ye pāk zarūrī ast.",
       "exampleEn": "Investing in clean technology is essential.",
       "tags": [
         "Science & Technology"
@@ -77816,8 +77816,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پزشکی جایگزین اغلب رویکردی مبتنی بر کل‌گرایی دارد.",
-      "exampleTranslit": "pizishkī-ye jāyguzīn aghlab rōykardē mubtanī bar kull-garāī dārad.",
+      "exampleTarget": "طب جایگزین اغلب رویکردی مبتنی بر کل‌گرایی دارد.",
+      "exampleTranslit": "tib-ye jāyguzīn aghlab rōykardē mubtanī bar kull-garāī dārad.",
       "exampleEn": "Alternative medicine often has a holism-based approach.",
       "tags": [
         "Abstract Concepts"
@@ -79691,8 +79691,8 @@
       "variants": [
         "توسعه مییابد"
       ],
-      "exampleTarget": "صنعت در سال‌های اخیر توسعه یافته است.",
-      "exampleTranslit": "san'at dar sāl-hā-ye akhīr tawsi'a yāfta ast.",
+      "exampleTarget": "صنعت در سال‌های اخیر انکشاف یافته است.",
+      "exampleTranslit": "san'at dar sāl-hā-ye akhīr inkishāf yāfta ast.",
       "exampleEn": "Industry has developed in recent years.",
       "tags": [
         "Actions & Movement"
@@ -80400,8 +80400,8 @@
       "variants": [
         "محاسبه میکند"
       ],
-      "exampleTarget": "هزینه‌های پروژه باید دقیق محاسبه شود.",
-      "exampleTranslit": "hazīna-hā-ye purōzha bāyad daqīq muhāsaba shawad.",
+      "exampleTarget": "مصرف‌های پروژه باید دقیق محاسبه شود.",
+      "exampleTranslit": "masraf-hā-ye purōzha bāyad daqīq muhāsaba shawad.",
       "exampleEn": "The project costs must be calculated accurately.",
       "tags": [
         "Actions & Movement"
@@ -80440,8 +80440,8 @@
       "variants": [
         "تجدید نظر میکند"
       ],
-      "exampleTarget": "دادگاه در حکم خود تجدید نظر کرد.",
-      "exampleTranslit": "dādgāh dar hukm-e khud tajdīd-e nazar kard.",
+      "exampleTarget": "محکمه در حکم خود تجدید نظر کرد.",
+      "exampleTranslit": "mahkama dar hukm-e khud tajdīd-e nazar kard.",
       "exampleEn": "The court reconsidered its verdict.",
       "tags": [
         "Actions & Movement"
@@ -83397,8 +83397,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دادگاه متهم را به پرداخت دیه محکوم کرد.",
-      "exampleTranslit": "dādgāh muttaham rā ba pardākht-e diya mahkūm kard.",
+      "exampleTarget": "محکمه متهم را به پرداخت دیه محکوم کرد.",
+      "exampleTranslit": "mahkama muttaham rā ba pardākht-e diya mahkūm kard.",
       "exampleEn": "The court sentenced the accused to pay blood money.",
       "tags": [
         "Money & Finance"
@@ -84077,8 +84077,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "سیاحتگری در این کشور توسعه یافته است.",
-      "exampleTranslit": "siyāhatgarī dar īn kishwar tawsi'a yāfta ast.",
+      "exampleTarget": "سیاحتگری در این کشور انکشاف یافته است.",
+      "exampleTranslit": "siyāhatgarī dar īn kishwar inkishāf yāfta ast.",
       "exampleEn": "Tourism has developed in this country.",
       "tags": [
         "Abstract Concepts"
@@ -85647,8 +85647,8 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "هزینه اتاق دوتخته چقدر است؟",
-      "exampleTranslit": "hazīna-ye utāq-e dū-takhta chiqadar ast?",
+      "exampleTarget": "مصرف اتاق دوتخته چقدر است؟",
+      "exampleTranslit": "masraf-ye utāq-e dū-takhta chiqadar ast?",
       "exampleEn": "How much does a double room cost?",
       "tags": [
         "Home & Furniture"
@@ -86180,8 +86180,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "هزینه ترجمه کتبی این اسناد بالاست.",
-      "exampleTranslit": "hazīna-ye tarjuma-ye kitbī-ye īn asnād bālāst.",
+      "exampleTarget": "مصرف ترجمه کتبی این اسناد بالاست.",
+      "exampleTranslit": "masraf-ye tarjuma-ye kitbī-ye īn asnād bālāst.",
       "exampleEn": "The cost of written translation for these documents is high.",
       "tags": [
         "Abstract Concepts"
@@ -89734,8 +89734,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "حکم دادگاه به صورت غیابی صادر شد.",
-      "exampleTranslit": "hukm-e dādgāh ba sūrat-e ghiyābī sādir shud.",
+      "exampleTarget": "حکم محکمه به صورت غیابی صادر شد.",
+      "exampleTranslit": "hukm-e mahkama ba sūrat-e ghiyābī sādir shud.",
       "exampleEn": "The court verdict was issued in absentia.",
       "tags": [
         "Abstract Concepts"
@@ -90118,8 +90118,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه شهری باید با برنامه‌ریزی دقیق همراه باشد.",
-      "exampleTranslit": "tawsi'a-ye shahrī bāyad bā barnāma-rēzī-ye daqēq hamrāh bāshad.",
+      "exampleTarget": "انکشاف شهری باید با برنامه‌ریزی دقیق همراه باشد.",
+      "exampleTranslit": "inkishāf-ye shahrī bāyad bā barnāma-rēzī-ye daqēq hamrāh bāshad.",
       "exampleEn": "Urban development must be accompanied by careful planning.",
       "tags": [
         "Abstract Concepts"
@@ -90376,8 +90376,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "مننژیت باکتریایی یک وضعیت اورژانسی پزشکی است.",
-      "exampleTranslit": "meninzhīt-e bāktēriyāyī yak waz'iyat-e ōrzhānsī-ye pizishkī ast.",
+      "exampleTarget": "مننژیت باکتریایی یک وضعیت اورژانسی طب است.",
+      "exampleTranslit": "meninzhīt-e bāktēriyāyī yak waz'iyat-e ōrzhānsī-ye tib ast.",
       "exampleEn": "Bacterial meningitis is a medical emergency.",
       "tags": [
         "Abstract Concepts"
@@ -90435,8 +90435,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "برآورد هزینه‌ها با دقت انجام شده است.",
-      "exampleTranslit": "barāward-e hazīna-hā bā diqqat anjām shuda ast.",
+      "exampleTarget": "برآورد مصرف‌ها با دقت انجام شده است.",
+      "exampleTranslit": "barāward-e masraf-hā bā diqqat anjām shuda ast.",
       "exampleEn": "Cost estimation has been done carefully.",
       "tags": [
         "Abstract Concepts"
@@ -90774,8 +90774,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "ابلاغیه دادگاه به آدرس خوانده ارسال شد.",
-      "exampleTranslit": "iblāghiya-ye dādgāh ba ādres-e khwānda irsāl shud.",
+      "exampleTarget": "ابلاغیه محکمه به آدرس خوانده ارسال شد.",
+      "exampleTranslit": "iblāghiya-ye mahkama ba ādres-e khwānda irsāl shud.",
       "exampleEn": "The court notification was sent to the defendant's address.",
       "tags": [
         "Abstract Concepts"
@@ -91664,8 +91664,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "عدم تمرکز قدرت باعث توسعه متوازن می‌شود.",
-      "exampleTranslit": "adam-e tamarkuz-e qudrat bā'is-e tawsi'a-ye mutawāzin mēshawad.",
+      "exampleTarget": "عدم تمرکز قدرت باعث انکشاف متوازن می‌شود.",
+      "exampleTranslit": "adam-e tamarkuz-e qudrat bā'is-e inkishāf-ye mutawāzin mēshawad.",
       "exampleEn": "Decentralization of power leads to balanced development.",
       "tags": [
         "Abstract Concepts"
@@ -91949,8 +91949,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پرونده به دادگاه استیناف فرستاده شد.",
-      "exampleTranslit": "parwanda ba dādgāh-e istīnāf firistāda shud.",
+      "exampleTarget": "پرونده به محکمه استیناف فرستاده شد.",
+      "exampleTranslit": "parwanda ba mahkama-ye istīnāf firistāda shud.",
       "exampleEn": "The case was sent to the appeals court.",
       "tags": [
         "Law & Justice"
@@ -92805,8 +92805,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "شاخص توسعه انسانی در این کشور بهبود یافته است.",
-      "exampleTranslit": "shākhis-e tawsi'a-ye insānī dar īn kishwar bihbūd yāfta ast.",
+      "exampleTarget": "شاخص انکشاف انسانی در این کشور بهبود یافته است.",
+      "exampleTranslit": "shākhis-e inkishāf-ye insānī dar īn kishwar bihbūd yāfta ast.",
       "exampleEn": "The human development index in this country has improved.",
       "tags": [
         "Abstract Concepts"
@@ -93604,8 +93604,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "مدعی علیه با وکیل خود در دادگاه حاضر شد.",
-      "exampleTranslit": "mudda'ā alayh bā wakēl-e khud dar dādgāh hāzir shud.",
+      "exampleTarget": "مدعی علیه با وکیل خود در محکمه حاضر شد.",
+      "exampleTranslit": "mudda'ā alayh bā wakēl-e khud dar mahkama hāzir shud.",
       "exampleEn": "The defendant appeared in court with their lawyer.",
       "tags": [
         "Abstract Concepts"
@@ -93680,8 +93680,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دادگاه موضوع را به کارشناس رسمی ارجاع داد.",
-      "exampleTranslit": "dādgāh mawzū' rā ba kārshinās-e rasmī irjā' dād.",
+      "exampleTarget": "محکمه موضوع را به کارشناس رسمی ارجاع داد.",
+      "exampleTranslit": "mahkama mawzū' rā ba kārshinās-e rasmī irjā' dād.",
       "exampleEn": "The court referred the matter to an official expert.",
       "tags": [
         "Abstract Concepts"
@@ -93699,8 +93699,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "حکم قطعی دادگاه قابل اجرا است.",
-      "exampleTranslit": "hukm-e qat'ī-ye dādgāh qābil-e ijrā ast.",
+      "exampleTarget": "حکم قطعی محکمه قابل اجرا است.",
+      "exampleTranslit": "hukm-e qat'ī-ye mahkama qābil-e ijrā ast.",
       "exampleEn": "The final verdict of the court is executable.",
       "tags": [
         "Abstract Concepts"
@@ -94289,8 +94289,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "نابرابری در توزیع درآمد یک مشکل جدی است.",
-      "exampleTranslit": "nābarābarī dar tawzē'-e darāmad yak mushkil-e jiddī ast.",
+      "exampleTarget": "نابرابری در توزیع عایدات یک مشکل جدی است.",
+      "exampleTranslit": "nābarābarī dar tawzē'-e āyidāt yak mushkil-e jiddī ast.",
       "exampleEn": "Inequality in income distribution is a serious problem.",
       "tags": [
         "Abstract Concepts"
@@ -95296,8 +95296,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "مالیات تنازلی بار بیشتری بر دوش اقشار کم‌درآمد می‌گذارد.",
-      "exampleTranslit": "māliyāt-e tanāzulī bār-e bēshtarē bar dōsh-e aqshār-e kam-darāmad mēguzārad.",
+      "exampleTarget": "مالیات تنازلی بار بیشتری بر دوش اقشار کم‌عایدات می‌گذارد.",
+      "exampleTranslit": "māliyāt-e tanāzulī bār-e bēshtarē bar dōsh-e aqshār-e kam-āyidāt mēguzārad.",
       "exampleEn": "A regressive tax places a heavier burden on low-income groups.",
       "tags": [
         "Money & Finance"
@@ -95353,8 +95353,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دولت درآمدهای خود را از طریق مالیات غیرمستقیم افزایش داد.",
-      "exampleTranslit": "dawlat darāmad-hā-ye khud rā az tarēq-e māliyāt-e ghayr-mustaqēm afzāyish dād.",
+      "exampleTarget": "دولت عایداتهای خود را از طریق مالیات غیرمستقیم افزایش داد.",
+      "exampleTranslit": "dawlat āyidāt-hā-ye khud rā az tarēq-e māliyāt-e ghayr-mustaqēm afzāyish dād.",
       "exampleEn": "The government increased its revenues through indirect taxes.",
       "tags": [
         "Money & Finance"
@@ -95486,8 +95486,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "بخش عمده‌ای از بودجه صرف هزینه‌های جاری می‌شود.",
-      "exampleTranslit": "bakhsh-e umda-ē az bōdja sarf-e hazīna-hā-ye jārī mēshawad.",
+      "exampleTarget": "بخش عمده‌ای از بودجه صرف مصرف‌های جاری می‌شود.",
+      "exampleTranslit": "bakhsh-e umda-ē az bōdja sarf-e masraf-hā-ye jārī mēshawad.",
       "exampleEn": "A major part of the budget is spent on current expenditures.",
       "tags": [
         "Abstract Concepts"
@@ -95524,8 +95524,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دولت هزینه‌های سرمایه‌ای را در بخش صحت افزایش داد.",
-      "exampleTranslit": "dawlat hazīna-hā-ye sarmāya-ī rā dar bakhsh-e sihat afzāyish dād.",
+      "exampleTarget": "دولت مصرف‌های سرمایه‌ای را در بخش صحت افزایش داد.",
+      "exampleTranslit": "dawlat masraf-hā-ye sarmāya-ī rā dar bakhsh-e sihat afzāyish dād.",
       "exampleEn": "The government increased capital expenditures in the health sector.",
       "tags": [
         "Geography & Places"
@@ -95543,8 +95543,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "مالیات بر درآمد و بیمه بیکاری از تثبیت‌کننده‌های خودکار هستند.",
-      "exampleTranslit": "māliyāt bar darāmad wa bīma-ye bēkārī az tasbēt-kunanda-hā-ye khudkār hastand.",
+      "exampleTarget": "مالیات بر عایدات و بیمه بیکاری از تثبیت‌کننده‌های خودکار هستند.",
+      "exampleTranslit": "māliyāt bar āyidāt wa bīma-ye bēkārī az tasbēt-kunanda-hā-ye khudkār hastand.",
       "exampleEn": "Income tax and unemployment insurance are among automatic stabilizers.",
       "tags": [
         "Abstract Concepts"
@@ -95828,8 +95828,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "فارماکولوژی به توسعه داروهای جدید کمک می‌کند.",
-      "exampleTranslit": "fārmākolōzhī ba tawsi'a-ye dawā-hā-ye jadīd kumak mēkunad.",
+      "exampleTarget": "فارماکولوژی به انکشاف داروهای جدید کمک می‌کند.",
+      "exampleTranslit": "fārmākolōzhī ba inkishāf-ye dawā-hā-ye jadīd kumak mēkunad.",
       "exampleEn": "Pharmacology helps in the development of new drugs.",
       "tags": [
         "Abstract Concepts"
@@ -95942,8 +95942,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "شرکت‌ها برای تحقیق و توسعه اعتبار مالیاتی دریافت می‌کنند.",
-      "exampleTranslit": "shirkat-hā barā-ye tahqēq wa tawsi'a i'tibār-e māliyātī daryāft mēkunand.",
+      "exampleTarget": "شرکت‌ها برای تحقیق و انکشاف اعتبار مالیاتی دریافت می‌کنند.",
+      "exampleTranslit": "shirkat-hā barā-ye tahqēq wa inkishāf i'tibār-e māliyātī daryāft mēkunand.",
       "exampleEn": "Companies receive a tax credit for research and development.",
       "tags": [
         "Money & Finance"
@@ -96132,8 +96132,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "فناوری بلاک‌چین شفافیت تراکنش‌ها را تضمین می‌کند.",
-      "exampleTranslit": "fanāwarī-ye blāk-chayn shaffāfiyat-e tarākunish-hā rā tazmēn mēkunad.",
+      "exampleTarget": "تکنالوژی بلاک‌چین شفافیت تراکنش‌ها را تضمین می‌کند.",
+      "exampleTranslit": "taknālōzhī-ye blāk-chayn shaffāfiyat-e tarākunish-hā rā tazmēn mēkunad.",
       "exampleEn": "Blockchain technology ensures the transparency of transactions.",
       "tags": [
         "Science & Technology"
@@ -98528,8 +98528,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پژوهش‌های نوروفارماکولوژی داروهای جدیدی را توسعه می‌دهند.",
-      "exampleTranslit": "pazhōhish-hā-ye nēwrōfārmākolōzhī dawā-hā-ye jadēdē rā tawsi'a mēdihand.",
+      "exampleTarget": "پژوهش‌های نوروفارماکولوژی داروهای جدیدی را انکشاف می‌دهند.",
+      "exampleTranslit": "pazhōhish-hā-ye nēwrōfārmākolōzhī dawā-hā-ye jadēdē rā inkishāf mēdihand.",
       "exampleEn": "Neuropharmacology research develops new drugs.",
       "tags": [
         "Abstract Concepts"
@@ -100050,8 +100050,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پرونده به دادگاه بین‌المللی ارجاع شد.",
-      "exampleTranslit": "parwanda ba dādgāh-e bayn-ul-milalī irjā' shud.",
+      "exampleTarget": "پرونده به محکمه بین‌المللی ارجاع شد.",
+      "exampleTranslit": "parwanda ba mahkama-ye bayn-ul-milalī irjā' shud.",
       "exampleEn": "The case was referred to the international court.",
       "tags": [
         "Law & Justice"
@@ -101875,8 +101875,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "برخی از تکینگی فناوری ابراز نگرانی می‌کنند.",
-      "exampleTranslit": "barkhē az takēnagī-ye fanāwarī ibrāz-e nigarānī mēkunand.",
+      "exampleTarget": "برخی از تکینگی تکنالوژی ابراز نگرانی می‌کنند.",
+      "exampleTranslit": "barkhē az takēnagī-ye taknālōzhī ibrāz-e nigarānī mēkunand.",
       "exampleEn": "Some express concern about the technological singularity.",
       "tags": [
         "Abstract Concepts"
@@ -101913,7 +101913,7 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "حسگر لایدار برای خودروهای خودران ضروری است.",
+      "exampleTarget": "حسگر لایدار برای موترهای خودران ضروری است.",
       "exampleTranslit": "hisgar-e lāydār barā-ye khudraw-hā-ye khudrān zarūrī ast.",
       "exampleEn": "Lidar sensor is essential for self-driving cars.",
       "tags": [
@@ -102276,8 +102276,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "معماری رایانش بی‌سرور هزینه‌ها را بهینه‌سازی می‌کند.",
-      "exampleTranslit": "mi'mārī-ye rāyānish-e bē-serwer hazīna-hā rā bihīna-sāzī mēkunad.",
+      "exampleTarget": "معماری رایانش بی‌سرور مصرف‌ها را بهینه‌سازی می‌کند.",
+      "exampleTranslit": "mi'mārī-ye rāyānish-e bē-serwer masraf-hā rā bihīna-sāzī mēkunad.",
       "exampleEn": "Serverless computing architecture optimizes costs.",
       "tags": [
         "Abstract Concepts"
@@ -102846,8 +102846,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "الگوریتم در تلاش است تا تابع هزینه را به حداقل برساند.",
-      "exampleTranslit": "algōrītm dar talāsh ast tā tābi'-e hazīna rā ba hadd-e aqall birasānad.",
+      "exampleTarget": "الگوریتم در تلاش است تا تابع مصرف را به حداقل برساند.",
+      "exampleTranslit": "algōrītm dar talāsh ast tā tābi'-e masraf rā ba hadd-e aqall birasānad.",
       "exampleEn": "The algorithm strives to minimize the cost function.",
       "tags": [
         "Money & Finance"
@@ -103131,8 +103131,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه رمزنگاری پسا‌کوانتومی یک اولویت امنیتی است.",
-      "exampleTranslit": "tawsi'a-ye ramznigārī-ye pasā-kwāntumī yak awlawiyat-e amniyatī ast.",
+      "exampleTarget": "انکشاف رمزنگاری پسا‌کوانتومی یک اولویت امنیتی است.",
+      "exampleTranslit": "inkishāf-ye ramznigārī-ye pasā-kwāntumī yak awlawiyat-e amniyatī ast.",
       "exampleEn": "Developing post-quantum cryptography is a security priority.",
       "tags": [
         "Abstract Concepts"
@@ -103834,8 +103834,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه‌دهندگان از پلتفرم به عنوان سرویس استفاده می‌کنند.",
-      "exampleTranslit": "tawsi'a-dihandagān az platform ba unwān-e serwis istifāda mēkunand.",
+      "exampleTarget": "انکشاف‌دهندگان از پلتفرم به عنوان سرویس استفاده می‌کنند.",
+      "exampleTranslit": "inkishāf-dihandagān az platform ba unwān-e serwis istifāda mēkunand.",
       "exampleEn": "Developers use Platform as a Service.",
       "tags": [
         "Abstract Concepts"
@@ -103948,8 +103948,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "تیم ما از روش‌های توسعه چابک پیروی می‌کند.",
-      "exampleTranslit": "tēm-e mā az rawish-hā-ye tawsi'a-ye chābuk payrawī mēkunad.",
+      "exampleTarget": "تیم ما از روش‌های انکشاف چابک پیروی می‌کند.",
+      "exampleTranslit": "tēm-e mā az rawish-hā-ye inkishāf-ye chābuk payrawī mēkunad.",
       "exampleEn": "Our team follows agile development methodologies.",
       "tags": [
         "Abstract Concepts"
@@ -104347,8 +104347,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "معماری سیستم باید قابلیت توسعه را داشته باشد.",
-      "exampleTranslit": "mi'mārī-ye sistam bāyad qābiliyat-e tawsi'a rā dāshta bāshad.",
+      "exampleTarget": "معماری سیستم باید قابلیت انکشاف را داشته باشد.",
+      "exampleTranslit": "mi'mārī-ye sistam bāyad qābiliyat-e inkishāf rā dāshta bāshad.",
       "exampleEn": "System architecture must have the capability for expansion.",
       "tags": [
         "Abstract Concepts"
@@ -109097,8 +109097,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "فناوری موشک بالستیک در سفرهای فضایی استفاده می‌شود.",
-      "exampleTranslit": "fanāwarī-ye mūshak-e bālestīk dar safar-hā-ye fazāyī istifāda meshawad.",
+      "exampleTarget": "تکنالوژی موشک بالستیک در سفرهای فضایی استفاده می‌شود.",
+      "exampleTranslit": "taknālōzhī-ye mūshak-e bālestīk dar safar-hā-ye fazāyī istifāda meshawad.",
       "exampleEn": "Ballistic missile technology is used in space travel.",
       "tags": [
         "Abstract Concepts"
@@ -109268,8 +109268,8 @@
       "freqBand": 9,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "دانشمندان در حال توسعه یک زیست‌کره مصنوعی هستند.",
-      "exampleTranslit": "dāneshmandān dar hāl-e tawse'a-ye yak zīst-kura-ye masnū'ī hastand.",
+      "exampleTarget": "دانشمندان در حال انکشاف یک زیست‌کره مصنوعی هستند.",
+      "exampleTranslit": "dāneshmandān dar hāl-e inkishāf-ye yak zīst-kura-ye masnū'ī hastand.",
       "exampleEn": "Scientists are developing an artificial biosphere.",
       "tags": [
         "Abstract Concepts"
@@ -110674,7 +110674,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 4.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 4.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 4.",
       "exampleEn": "Sustainable development is our main goal 4.",
       "tags": [
@@ -110902,7 +110902,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 14.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 14.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 14.",
       "exampleEn": "Sustainable development is our main goal 14.",
       "tags": [
@@ -111111,7 +111111,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 24.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 24.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 24.",
       "exampleEn": "Sustainable development is our main goal 24.",
       "tags": [
@@ -111358,7 +111358,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 34.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 34.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 34.",
       "exampleEn": "Sustainable development is our main goal 34.",
       "tags": [
@@ -111586,8 +111586,8 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توانمندسازی زنان برای توسعه اقتصادی حیاتی است.",
-      "exampleTranslit": "tawānmand-sāzī-ye zanān barā-ye tawsi'a-ye iqtisādī hayātī ast.",
+      "exampleTarget": "توانمندسازی زنان برای انکشاف اقتصادی حیاتی است.",
+      "exampleTranslit": "tawānmand-sāzī-ye zanān barā-ye inkishāf-ye iqtisādī hayātī ast.",
       "exampleEn": "Women's empowerment is vital for economic development.",
       "tags": [
         "Abstract Concepts"
@@ -111605,7 +111605,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 44.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 44.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 44.",
       "exampleEn": "Sustainable development is our main goal 44.",
       "tags": [
@@ -111928,7 +111928,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 54.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 54.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 54.",
       "exampleEn": "Sustainable development is our main goal 54.",
       "tags": [
@@ -112213,7 +112213,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 64.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 64.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 64.",
       "exampleEn": "Sustainable development is our main goal 64.",
       "tags": [
@@ -112403,7 +112403,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 74.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 74.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 74.",
       "exampleEn": "Sustainable development is our main goal 74.",
       "tags": [
@@ -112707,7 +112707,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 84.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 84.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 84.",
       "exampleEn": "Sustainable development is our main goal 84.",
       "tags": [
@@ -112954,7 +112954,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 94.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 94.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 94.",
       "exampleEn": "Sustainable development is our main goal 94.",
       "tags": [
@@ -113201,7 +113201,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 104.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 104.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 104.",
       "exampleEn": "Sustainable development is our main goal 104.",
       "tags": [
@@ -113467,7 +113467,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 114.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 114.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 114.",
       "exampleEn": "Sustainable development is our main goal 114.",
       "tags": [
@@ -113733,7 +113733,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 124.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 124.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 124.",
       "exampleEn": "Sustainable development is our main goal 124.",
       "tags": [
@@ -113961,7 +113961,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 134.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 134.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 134.",
       "exampleEn": "Sustainable development is our main goal 134.",
       "tags": [
@@ -114208,7 +114208,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 144.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 144.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 144.",
       "exampleEn": "Sustainable development is our main goal 144.",
       "tags": [
@@ -114493,7 +114493,7 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "توسعه پایدار هدف اصلی ماست 154.",
+      "exampleTarget": "انکشاف پایدار هدف اصلی ماست 154.",
       "exampleTranslit": "tawsiyah-e pāydār hadaf-e aslī-ye māst 154.",
       "exampleEn": "Sustainable development is our main goal 154.",
       "tags": [
@@ -115557,8 +115557,8 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "بومی‌سازی فناوری نیازمند زیرساخت است.",
-      "exampleTranslit": "bōmī-sāzī-ye fanāwarī niyāzmand-e zērsākht ast.",
+      "exampleTarget": "بومی‌سازی تکنالوژی نیازمند زیرساخت است.",
+      "exampleTranslit": "bōmī-sāzī-ye taknālōzhī niyāzmand-e zērsākht ast.",
       "exampleEn": "The localization of technology requires infrastructure.",
       "tags": [
         "Abstract Concepts"
@@ -116545,8 +116545,8 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "تحقیقات توسعه‌ای با هدف ارتقای فرآیندها صورت می‌گیرند.",
-      "exampleTranslit": "tahqēqāt-e tawsi'a-ē bā hadaf-e irtiqā-ye farāyand-hā sūrat mēgīrand.",
+      "exampleTarget": "تحقیقات انکشاف‌ای با هدف ارتقای فرآیندها صورت می‌گیرند.",
+      "exampleTranslit": "tahqēqāt-e inkishāf-ē bā hadaf-e irtiqā-ye farāyand-hā sūrat mēgīrand.",
       "exampleEn": "Developmental research is conducted with the aim of improving processes.",
       "tags": [
         "Abstract Concepts"
@@ -118312,8 +118312,8 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "استفاده از مصالح نوین هزینه را کاهش می‌دهد.",
-      "exampleTranslit": "istifāda az masālih-e nawīn hazīna rā kāhish mēdihad.",
+      "exampleTarget": "استفاده از مصالح نوین مصرف را کاهش می‌دهد.",
+      "exampleTranslit": "istifāda az masālih-e nawīn masraf rā kāhish mēdihad.",
       "exampleEn": "Using modern materials reduces the cost.",
       "tags": [
         "Abstract Concepts"
@@ -119397,8 +119397,8 @@
       "freqBand": 10,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "چارچوب نظری تحقیق بر اساس مدل پذیرش فناوری بنا شده است.",
-      "exampleTranslit": "chārchūb-e nazarī-ye tahqēq bar asās-e model-e pazērish-e fanāwarī binā shuda ast.",
+      "exampleTarget": "چارچوب نظری تحقیق بر اساس مدل پذیرش تکنالوژی بنا شده است.",
+      "exampleTranslit": "chārchūb-e nazarī-ye tahqēq bar asās-e model-e pazērish-e taknālōzhī binā shuda ast.",
       "exampleEn": "The theoretical framework of the research is built on the technology acceptance model.",
       "tags": [
         "Abstract Concepts"
@@ -121088,8 +121088,8 @@
       "variants": [
         "mī-sāz-"
       ],
-      "exampleTarget": "دادگاه او را مبرا ساخت.",
-      "exampleTranslit": "dādgāh ō rā mobarrā sākht.",
+      "exampleTarget": "محکمه او را مبرا ساخت.",
+      "exampleTranslit": "mahkama ō rā mobarrā sākht.",
       "exampleEn": "The court exonerated him.",
       "tags": [
         "Actions & Movement"
@@ -122042,8 +122042,8 @@
       "variants": [
         "mī-bakhsh-"
       ],
-      "exampleTarget": "عملیات خود را توسعه بخشیدند.",
-      "exampleTranslit": "amalīyāt-e khud rā tawse'a bakhshīdand.",
+      "exampleTarget": "عملیات خود را انکشاف بخشیدند.",
+      "exampleTranslit": "amalīyāt-e khud rā inkishāf bakhshīdand.",
       "exampleEn": "They expanded their operations.",
       "tags": [
         "Actions & Movement"
@@ -124280,6 +124280,230 @@
         "Abstract Concepts"
       ],
       "concreteness": true
+    },
+    {
+      "target": "طب",
+      "translit": "tib",
+      "glossEn": "medicine (the field)",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "برادرم در پوهنځی طب درس می‌خواند.",
+      "exampleTranslit": "barādaram dar pōhanzay-e tib dars mēkhānad.",
+      "exampleEn": "My brother studies at the faculty of medicine.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10014",
+      "targetNormalized": "طب",
+      "freqRank": 6487,
+      "freqBand": 10
+    },
+    {
+      "target": "تکنالوژی",
+      "translit": "taknālōzhī",
+      "glossEn": "technology",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "تکنالوژی نو کار را آسان می‌کند.",
+      "exampleTranslit": "taknālōzhī-ye naw kār rā āsān mēkunad.",
+      "exampleEn": "New technology makes work easier.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10015",
+      "targetNormalized": "تکنالوژی",
+      "freqRank": 6488,
+      "freqBand": 10
+    },
+    {
+      "target": "انجنیری",
+      "translit": "injinīrī",
+      "glossEn": "engineering",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "برادرم انجنیری می‌خواند.",
+      "exampleTranslit": "barādaram injinīrī mēkhānad.",
+      "exampleEn": "My brother studies engineering.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10016",
+      "targetNormalized": "انجنیری",
+      "freqRank": 6489,
+      "freqBand": 10
+    },
+    {
+      "target": "بیولوژی",
+      "translit": "biyōlōzhī",
+      "glossEn": "biology",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بیولوژی یک مضمون مهم است.",
+      "exampleTranslit": "biyōlōzhī yak mazmūn-e muhim ast.",
+      "exampleEn": "Biology is an important subject.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10017",
+      "targetNormalized": "بیولوژی",
+      "freqRank": 6490,
+      "freqBand": 10
+    },
+    {
+      "target": "لیلیه",
+      "translit": "laylīya",
+      "glossEn": "dormitory",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "شاگردان در لیلیه می‌مانند.",
+      "exampleTranslit": "shāgerdān dar laylīya mēmānand.",
+      "exampleEn": "The students stay in the dormitory.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10018",
+      "targetNormalized": "لیلیه",
+      "freqRank": 6491,
+      "freqBand": 10
+    },
+    {
+      "target": "بدیل",
+      "translit": "badīl",
+      "glossEn": "alternative, substitute",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بدیل بهتر وجود دارد.",
+      "exampleTranslit": "badīl-e bihtar wujūd dārad.",
+      "exampleEn": "A better alternative exists.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10019",
+      "targetNormalized": "بدیل",
+      "freqRank": 6492,
+      "freqBand": 10
+    },
+    {
+      "target": "فعال",
+      "translit": "fa'āl",
+      "glossEn": "active",
+      "pos": "adjective",
+      "register": "neutral",
+      "exampleTarget": "او یک شاگرد فعال است.",
+      "exampleTranslit": "ō yak shāgerd-e fa'āl ast.",
+      "exampleEn": "He is an active student.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10020",
+      "targetNormalized": "فعال",
+      "freqRank": 6493,
+      "freqBand": 10
+    },
+    {
+      "target": "دیولوپر",
+      "translit": "dēwalōpar",
+      "glossEn": "software developer",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "دیولوپر پروگرام را می‌سازد.",
+      "exampleTranslit": "dēwalōpar prōgrām rā mēsāzad.",
+      "exampleEn": "The developer builds the program.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10021",
+      "targetNormalized": "دیولوپر",
+      "freqRank": 6494,
+      "freqBand": 10
+    },
+    {
+      "target": "بک‌اپ",
+      "translit": "bakap",
+      "glossEn": "backup",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بک‌اپ معلومات مهم است.",
+      "exampleTranslit": "bakap-e ma'lūmāt muhim ast.",
+      "exampleEn": "The backup of the data is important.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10022",
+      "targetNormalized": "بک‌اپ",
+      "freqRank": 6495,
+      "freqBand": 10
+    },
+    {
+      "target": "یوزرنیم",
+      "translit": "yūzarnēm",
+      "glossEn": "username",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "یوزرنیم خود را بنویسید.",
+      "exampleTranslit": "yūzarnēm-e khud rā binawīsēd.",
+      "exampleEn": "Write your username.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10023",
+      "targetNormalized": "یوزرنیم",
+      "freqRank": 6496,
+      "freqBand": 10
+    },
+    {
+      "target": "دیتابیس",
+      "translit": "dētābēs",
+      "glossEn": "database",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "دیتابیس معلومات را نگه می‌دارد.",
+      "exampleTranslit": "dētābēs ma'lūmāt rā nigah mēdārad.",
+      "exampleEn": "The database keeps the data.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10024",
+      "targetNormalized": "دیتابیس",
+      "freqRank": 6497,
+      "freqBand": 10
+    },
+    {
+      "target": "سرگردان",
+      "translit": "sargardān",
+      "glossEn": "confused, at a loss",
+      "pos": "adjective",
+      "register": "neutral",
+      "exampleTarget": "او در شهر سرگردان است.",
+      "exampleTranslit": "ō dar shahr sargardān ast.",
+      "exampleEn": "He is lost in the city.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10025",
+      "targetNormalized": "سرگردان",
+      "freqRank": 6498,
+      "freqBand": 10
+    },
+    {
+      "target": "حسابدهی",
+      "translit": "hisābdihī",
+      "glossEn": "accountability",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "حسابدهی در کار مهم است.",
+      "exampleTranslit": "hisābdihī dar kār muhim ast.",
+      "exampleEn": "Accountability is important at work.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10026",
+      "targetNormalized": "حسابدهی",
+      "freqRank": 6499,
+      "freqBand": 10
+    },
+    {
+      "target": "رادیوتراپی",
+      "translit": "rādiyōtirāpī",
+      "glossEn": "radiotherapy",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "داکتر رادیوتراپی را پیشنهاد کرد.",
+      "exampleTranslit": "dāktar rādiyōtirāpī rā pēshnihād kard.",
+      "exampleEn": "The doctor suggested radiotherapy.",
+      "variants": [],
+      "tags": [],
+      "id": "lx-10027",
+      "targetNormalized": "رادیوتراپی",
+      "freqRank": 6500,
+      "freqBand": 10
     }
   ]
 }

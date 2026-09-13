@@ -68,11 +68,35 @@ export const INTERFERENCE_RULES = [
   { wrong: "بهداشت", right: "صحت", whyEn: "“health” is صحت in Afghanistan - وزارت صحت عامه; بهداشت is Iran's word." },
   { wrong: "بازنشستگی", right: "تقاعد", whyEn: "“retirement” is تقاعد in Dari; بازنشستگی is Iranian." },
   { wrong: "تیرماه", right: "خزان", whyEn: "تیر is an Iranian solar month and falls in summer; it is not in the Afghan calendar. Autumn is خزان." },
+  // From the bands 6-7 audit. These matter twice over: the same table drives
+  // the check on every lexicon *example*, and the audit found Iranian words
+  // leaking through examples on entries whose headwords were fine - خودرو in
+  // an aerodynamics example, پزشکی in an image-processing one. Examples were
+  // unaudited surface until the table grew to cover them.
+  { wrong: "خودرو", right: "موتر", whyEn: "“car” is موتر in Dari; خودرو is Iranian." },
+  { wrong: "پزشکی", right: "طب", whyEn: "“medicine” as a field is طب in Afghanistan; پزشکی is Iranian." },
+  { wrong: "فناوری", right: "تکنالوژی", whyEn: "“technology” is تکنالوژی in Dari; فناوری is an Iranian coinage." },
+  { wrong: "دادگاه", right: "محکمه", whyEn: "“court” is محکمه in Afghanistan; دادگاه is Iranian." },
+  { wrong: "دادستان", right: "سارنوال", whyEn: "“prosecutor” is سارنوال in Afghanistan; دادستان is Iranian." },
+  { wrong: "توسعه", right: "انکشاف", whyEn: "“development” is انکشاف in Afghanistan; توسعه is Iranian." },
+  { wrong: "درآمد", right: "عایدات", whyEn: "“income/revenue” is عایدات in Afghanistan; درآمد is Iranian." },
+  { wrong: "هزینه", right: "مصرف", whyEn: "“cost/expense” is مصرف in Dari; هزینه is Iranian." },
 ];
 
 export const INTERFERENCE = [
   "Never use these Iranian Persian forms. The Dari is on the right:",
-  ...INTERFERENCE_RULES.map((r) => `  ${r.wrong} -> ${r.right} (${r.whyEn})`),
+  /**
+   * The pairs go to the model; the English explanations do not.
+   *
+   * `whyEn` exists for the learner - `live-check.ts` shows it when their own
+   * draft trips a rule. The model only needs the substitution, and every
+   * character here is spent on every tutor turn out of a free-tier budget
+   * shared by every learner of the deployment. The table grew from 9 pairs to
+   * 28 in one audit and pushed the prompt past the 4,000-character ceiling its
+   * own test guards; dropping the rationales took it back under while adding
+   * nineteen more substitutions the model now knows about.
+   */
+  ...INTERFERENCE_RULES.map((r) => `  ${r.wrong} -> ${r.right}`),
   // Below the line: still worth telling the model, but NOT mechanically
   // checkable. Both are ordinary Dari that the shipped seed texts use - پیسه
   // and کلان are simply the more colloquial choice. The corpus test caught
