@@ -53,7 +53,10 @@ const liveExclusions = process.env.LIVE_AI ? [] : ["**/*.live.test.ts"];
 const manualExclusions = process.env.MANUAL ? [] : ["**/*.manual.test.ts"];
 
 export default defineConfig({
-  test: { exclude: ["**/node_modules/**", ...liveExclusions, ...manualExclusions] },
+  // `.claude/worktrees` holds agent checkouts of this same repo: without the
+  // exclusion every test runs again once per worktree, against that worktree's
+  // unmerged code.
+  test: { exclude: ["**/node_modules/**", ".claude/worktrees/**", ...liveExclusions, ...manualExclusions] },
   resolve: {
     alias: {
       "server-only": r("./test/server-only-stub.ts"),

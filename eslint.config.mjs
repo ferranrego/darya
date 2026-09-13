@@ -17,6 +17,10 @@ const eslintConfig = defineConfig([
     // holding `pnpm lint` red, which made the whole gate useless - a lint run
     // nobody can get to zero is a lint run nobody reads.
     "**/*.cjs",
+    // Agent worktrees are full checkouts of this repo, each with its own
+    // .next build output. Linting them from the main checkout reported
+    // thousands of errors in compiled code and turned the gate red.
+    ".claude/worktrees/**",
     "temp/**",
     "test-db.js",
     "scripts/migrate-grammar-to-yaml.js",

@@ -46,6 +46,8 @@
     // untracked and often import dev-only packages, so type-checking them
     // fails the build for everyone else.
     "test-*.ts",
-    "temp/**"
+    "temp/**",
+    // Agent worktrees: full checkouts of this repo with their own unmerged code.
+    ".claude/worktrees/**"
   ]
 }
