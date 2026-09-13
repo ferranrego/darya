@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { VERIFIED_SHORT_VOWEL, isFlattenedTranslit, scriptLongVowelCount } from "./translit-check.ts";
+import {
+  VERIFIED_SHORT_VOWEL,
+  bareShortIEnding,
+  isFlattenedTranslit,
+  scriptLongVowelCount,
+} from "./translit-check.ts";
 
 /**
  * These four sentences are the whole reason this check is script-aware.
@@ -73,5 +78,26 @@ describe("verified short-vowel sentences", () => {
     // The exemption is about one sentence, so a real defect under a listed id
     // would still be wrong - the point is that ids here are verified by hand.
     expect(VERIFIED_SHORT_VOWEL.size).toBeLessThanOrEqual(5);
+  });
+});
+
+/**
+ * The 2sg ending is ی, a long vowel, and the app writes it -ī. The grammar
+ * course wrote -i in ~200 places while its own summary said -ī.
+ */
+describe("bare short -i ending", () => {
+  it("catches a 2sg verb written with a short -i", () => {
+    expect(bareShortIEnding("tu kujā hasti?")).toBe("hasti");
+    expect(bareShortIEnding("agar burawi, ō rā mēbīnī")).toBe("burawi");
+  });
+
+  it("accepts the long -ī the app uses", () => {
+    expect(bareShortIEnding("tu kujā hastī?")).toBeNull();
+    expect(bareShortIEnding("agar biyāyī, khush mēshawam")).toBeNull();
+  });
+
+  it("ignores a capitalised name and a word that only contains an i", () => {
+    expect(bareShortIEnding("nāmash Ali ast")).toBeNull();
+    expect(bareShortIEnding("fikr mēkunam")).toBeNull();
   });
 });

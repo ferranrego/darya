@@ -57,6 +57,9 @@ const changed: { id: string; fields: string[]; from: LexiconEntry; to: LexiconEn
 const FIELDS = [
   "target", "pos", "glossEn", "register", "freqRank", "freqBand",
   "exampleTarget", "exampleEn", "translit", "presentStem",
+  // A Dari transliteration repair touches only these two, so without them a
+  // batch of 30 repaired entries reported "changed 5".
+  "exampleTranslit", "presentStemTranslit",
 ] as const;
 
 for (const [id, a] of after) {
@@ -119,5 +122,21 @@ if (posChanges.length) {
   console.log(`\n  part of speech changed on ${posChanges.length} entries, for example:`);
   for (const c of posChanges.slice(0, 12)) {
     console.log(`    ${c.to.target.padEnd(16)} ${c.from.pos} -> ${c.to.pos}   ${c.to.glossEn.slice(0, 40)}`);
+  }
+}
+
+// Which fields moved, with a sample of each - the view a transliteration or
+// example repair needs, since those never change a part of speech.
+const byField = new Map<string, typeof changed>();
+for (const c of changed) for (const f of c.fields) byField.set(f, [...(byField.get(f) ?? []), c]);
+if (byField.size) {
+  console.log("\n  fields changed:");
+  for (const [f, cs] of byField) {
+    console.log(`    ${f.padEnd(20)} ${String(cs.length).padStart(4)}`);
+    for (const c of cs.slice(0, 5)) {
+      const from = String(c.from[f as keyof LexiconEntry] ?? "");
+      const to = String(c.to[f as keyof LexiconEntry] ?? "");
+      console.log(`      ${c.id} ${c.to.target}: ${from.slice(0, 50)} -> ${to.slice(0, 50)}`);
+    }
   }
 }

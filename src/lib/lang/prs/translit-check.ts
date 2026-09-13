@@ -86,6 +86,33 @@ export function bareEzafeAfterVowel(translit: string | undefined): string | null
   return m ? m[0] : null;
 }
 
+/**
+ * A word ending in a bare short `-i`: `hasti`, `mērawi`, `rafti`.
+ *
+ * The 2sg verb ending is written ی, a long vowel, and the app writes it `-ī`
+ * everywhere a learner meets it - the lexicon, `spoken.ts`, the Grammar Hub,
+ * and gl-13's own grammarPointEn. The grammar course's tables and exercises
+ * said `-i` in about 200 places anyway, so the same lesson taught `hastī` in
+ * its summary and `hasti` in its table (167 tokens in all). A Dari philologist
+ * found it; nothing mechanical could, because every one of those forms is a
+ * real word.
+ *
+ * Checked only where the convention already holds (the grammar course and the
+ * hub), never the lexicon: the lexicon still carries ~500 bare `-i` tokens,
+ * most of them -ī adjectives (`farhangi`, `dawlati`) from an older
+ * transcription, and pointing this at it would bury the signal. Capitalised
+ * tokens are skipped because a name is spelled however its owner spells it.
+ * Measured when it shipped: 138 course transliteration fields failed before
+ * the repair, 0 after; the hub was already at 0. The only lowercase-looking
+ * -i words left in the course are `Dari`, `Ali` and `Kabuli`, all capitalised
+ * and all in English prose, which this is never run on.
+ */
+export function bareShortIEnding(translit: string | undefined): string | null {
+  if (!translit) return null;
+  const m = translit.match(/(?<![\p{L}'’])[a-zāēīōū'’-]*[a-zāēīōū'’]i(?![\p{L}'’])/u);
+  return m ? m[0] : null;
+}
+
 /** True when `translit` dropped the long vowels its own script spells out. */
 export function isFlattenedTranslit(
   translit: string | undefined,

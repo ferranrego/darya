@@ -25,7 +25,7 @@ import { isRuledOut, isTeachable } from "../src/lib/content/teachability.ts";
 import { checkShape } from "../src/lib/content/text-checks.ts";
 import { isContentWord } from "../src/lib/content/word-selection.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
-import { bareEzafeAfterVowel, isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
+import { bareEzafeAfterVowel, bareShortIEnding, isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { insertionOrderSuffix } from "./freq-integrity.ts";
@@ -65,7 +65,7 @@ function loadJson(path: string): unknown {
  *
  * The two named-word rules came first and are kept. The third is the one that
  * generalises: a batch of drafted texts arrived with every long ā and every
- * majhul ē/ō flattened out - `emroz` for `emrōz`, `khob` for `khōb`, `seb`
+ * majhul ē/ō flattened out - `emroz` for `emrōz`, `khob` for `khūb`, `seb`
  * for `sēb`, `merawem` for `mērawēm` - and not one of them contained a word
  * from a blocklist. What they did have in common is that a whole sentence of
  * Dari went by without a single long vowel in it, which effectively cannot
@@ -459,6 +459,40 @@ if (!profile.capabilities.scriptCourse) {
     }
   }
 
+  /**
+   * Every transliteration in a lesson - slides, answers, distractors, word
+   * chips, pairs - through the same Dari rules the lexicon, the seed texts and
+   * the hub already pass, plus the 2sg `-ī` rule.
+   *
+   * The course was the one place no transliteration check reached, and it
+   * showed: a philologist reviewing the hub found `hasti`/`rafti` 167 times
+   * against the app's `-ī`, `se` for `sē`, `bura` for `buraw`. Wrong-
+   * by-design fields (distractors, extraWords, a spotError sentence) are
+   * included on purpose: they are wrong in grammar, never in spelling, so a
+   * learner reading one still learns how it is pronounced.
+   */
+  function checkCourseTranslit(lessonId: string, node: unknown, where = ""): void {
+    if (Array.isArray(node)) {
+      node.forEach((v, i) => checkCourseTranslit(lessonId, v, `${where}[${i}]`));
+      return;
+    }
+    if (!node || typeof node !== "object") return;
+    const o = node as Record<string, unknown>;
+    const here = typeof o.id === "string" ? o.id : where;
+    if (typeof o.translit === "string") {
+      const subject = `grammar ${lessonId}/${here}`;
+      const script = typeof o.target === "string" ? o.target : undefined;
+      checkDariTranslit(o.translit, subject, "translit", undefined, script);
+      const bareI = bareShortIEnding(o.translit);
+      if (bareI) {
+        fail(`${subject}: translit "${bareI}" ends in a short -i - the 2sg ending is -ī (${o.translit})`);
+      }
+    }
+    for (const [k, v] of Object.entries(o)) {
+      if (v && typeof v === "object") checkCourseTranslit(lessonId, v, `${here}.${k}`);
+    }
+  }
+
   // All of a language's grammar courses live in one barrel, because languages
   // ship different numbers of CEFR levels.
   const grammarPath = join(root, "grammar", "all.json");
@@ -496,6 +530,7 @@ if (!profile.capabilities.scriptCourse) {
             checkVocab(`${lesson.id}/${slide.id}`, exm.target, warn);
           }
         }
+        if (lang === "prs") checkCourseTranslit(lesson.id, lesson);
         for (const ex of lesson.exercises) {
           if (exerciseIds.has(ex.id)) fail(`grammar: duplicate exercise id ${ex.id}`);
           exerciseIds.add(ex.id);
@@ -562,7 +597,11 @@ const grammarPointIds = new Set<string>();
           fail(`grammar-hub ${where}: missing translit for "${target}"`);
           return;
         }
-        if (lang === "prs") checkDariTranslit(translit, `grammar-hub ${where}`, "translit", undefined, target);
+        if (lang === "prs") {
+          checkDariTranslit(translit, `grammar-hub ${where}`, "translit", undefined, target);
+          const bareI = bareShortIEnding(translit);
+          if (bareI) fail(`grammar-hub ${where}: translit "${bareI}" ends in a short -i - the 2sg ending is -ī (${translit})`);
+        }
       };
       const checkWords = (where: string, target: string) => {
         if (!hubIndex) return;
