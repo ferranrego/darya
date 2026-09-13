@@ -1,0 +1,203 @@
+{
+  "id": "tx-seed-l3-003",
+  "formatVersion": "1.5.0",
+  "level": "L3",
+  "titleTarget": "سفر به مزار",
+  "titleTranslit": "safar ba mazār",
+  "titleEn": "A trip to Mazar",
+  "sentences": [
+    {
+      "target": "سال گذشته ما به مزار سفر کردیم.",
+      "translit": "sāl-e guzashta mā ba mazār safar kardēm.",
+      "en": "Last year we travelled to Mazar.",
+      "tokens": [
+        {
+          "surface": "سال",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "گذشته",
+          "lexemeId": "lx-1051"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مزار",
+          "lexemeId": "lx-0224"
+        },
+        {
+          "surface": "سفر",
+          "lexemeId": "lx-0246"
+        },
+        {
+          "surface": "کردیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "مادرم گفت که این شهر بسیار مقبول است.",
+      "translit": "mādaram guft ki īn shahr bisyār maqbūl ast.",
+      "en": "My mother said that this city is very beautiful.",
+      "tokens": [
+        {
+          "surface": "مادرم",
+          "lexemeId": "lx-0051"
+        },
+        {
+          "surface": "گفت",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "شهر",
+          "lexemeId": "lx-0080"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "مقبول",
+          "lexemeId": "lx-0073"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما سه روز آنجا ماندیم و بعد برگشتیم.",
+      "translit": "mā sē rōz ānjā māndēm wa ba'd bargashtēm.",
+      "en": "We stayed there three days and then came back.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "سه",
+          "lexemeId": "lx-0027"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "ماندیم",
+          "lexemeId": "lx-0234"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "بعد",
+          "lexemeId": "lx-0301"
+        },
+        {
+          "surface": "برگشتیم",
+          "lexemeId": "lx-6138"
+        }
+      ]
+    },
+    {
+      "target": "من می‌خواهم که دوباره به مزار بروم.",
+      "translit": "man mēkhāham ki dōbāra ba mazār birawam.",
+      "en": "I want to go to Mazar again.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "می‌خواهم",
+          "lexemeId": "lx-0099"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "دوباره",
+          "lexemeId": "lx-0315"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "مزار",
+          "lexemeId": "lx-0224"
+        },
+        {
+          "surface": "بروم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0005",
+    "lx-0006",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0027",
+    "lx-0040",
+    "lx-0048",
+    "lx-0051",
+    "lx-0073",
+    "lx-0080",
+    "lx-0089",
+    "lx-0093",
+    "lx-0097",
+    "lx-0099",
+    "lx-0167",
+    "lx-0175",
+    "lx-0224",
+    "lx-0234",
+    "lx-0246",
+    "lx-0301",
+    "lx-0315",
+    "lx-1051",
+    "lx-6138"
+  ],
+  "newWords": [
+    "lx-0051",
+    "lx-0073",
+    "lx-0093",
+    "lx-0099",
+    "lx-0224",
+    "lx-0234",
+    "lx-0315",
+    "lx-1051",
+    "lx-6138"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 3
+}

@@ -1,0 +1,208 @@
+{
+  "id": "tx-seed-l3-007",
+  "formatVersion": "1.5.0",
+  "level": "L3",
+  "titleTarget": "داکتر و مریض",
+  "titleTranslit": "dāktar wa marīz",
+  "titleEn": "The doctor and the patient",
+  "sentences": [
+    {
+      "target": "دیروز خواهرم مریض شد و ما به شفاخانه رفتیم.",
+      "translit": "dīrōz khāharam marīz shud wa mā ba shafākhāna raftēm.",
+      "en": "Yesterday my sister got ill and we went to the hospital.",
+      "tokens": [
+        {
+          "surface": "دیروز",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "خواهرم",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "مریض",
+          "lexemeId": "lx-0262"
+        },
+        {
+          "surface": "شد",
+          "lexemeId": "lx-0149"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "شفاخانه",
+          "lexemeId": "lx-0211"
+        },
+        {
+          "surface": "رفتیم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "داکتر گفت که او باید دوا بخورد.",
+      "translit": "dāktar guft ki ō bāyad dawā bikhurad.",
+      "en": "The doctor said she must take medicine.",
+      "tokens": [
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "گفت",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "باید",
+          "lexemeId": "lx-0290"
+        },
+        {
+          "surface": "دوا",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "بخورد",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    },
+    {
+      "target": "امروز حال او از دیروز بهتر است.",
+      "translit": "emrōz hāl-e ō az dīrōz bihtar ast.",
+      "en": "Today she is better than yesterday.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "حال",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "دیروز",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "بهتر",
+          "lexemeId": "lx-0357"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما خوش هستیم که او زود جور می‌شود.",
+      "translit": "mā khush hastēm ki ō zūd jōr mēshawad.",
+      "en": "We are glad that she gets well soon.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "زود",
+          "lexemeId": "lx-0356"
+        },
+        {
+          "surface": "جور",
+          "lexemeId": "lx-0697"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0697"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0004",
+    "lx-0005",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0043",
+    "lx-0045",
+    "lx-0054",
+    "lx-0089",
+    "lx-0091",
+    "lx-0093",
+    "lx-0096",
+    "lx-0106",
+    "lx-0107",
+    "lx-0149",
+    "lx-0210",
+    "lx-0211",
+    "lx-0262",
+    "lx-0263",
+    "lx-0290",
+    "lx-0325",
+    "lx-0356",
+    "lx-0357",
+    "lx-0697"
+  ],
+  "newWords": [
+    "lx-0054",
+    "lx-0091",
+    "lx-0106",
+    "lx-0210",
+    "lx-0211",
+    "lx-0262",
+    "lx-0263",
+    "lx-0325",
+    "lx-0357",
+    "lx-0697"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 7
+}

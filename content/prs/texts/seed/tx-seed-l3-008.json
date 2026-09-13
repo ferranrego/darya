@@ -1,0 +1,205 @@
+{
+  "id": "tx-seed-l3-008",
+  "formatVersion": "1.5.0",
+  "level": "L3",
+  "titleTarget": "بازار کابل",
+  "titleTranslit": "bāzār-e kābul",
+  "titleEn": "The Kabul bazaar",
+  "sentences": [
+    {
+      "target": "هفته گذشته من به بازار کابل رفتم.",
+      "translit": "hafta-ye guzashta man ba bāzār-e kābul raftam.",
+      "en": "Last week I went to the Kabul bazaar.",
+      "tokens": [
+        {
+          "surface": "هفته",
+          "lexemeId": "lx-0050"
+        },
+        {
+          "surface": "گذشته",
+          "lexemeId": "lx-1051"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "رفتم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "آنجا مردم زیاد بودند و سرک بیروبار بود.",
+      "translit": "ānjā mardum ziyād būdand wa sarak bērūbār būd.",
+      "en": "There were many people there and the street was crowded.",
+      "tokens": [
+        {
+          "surface": "آنجا",
+          "lexemeId": "lx-0175"
+        },
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "زیاد",
+          "lexemeId": "lx-0069"
+        },
+        {
+          "surface": "بودند",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "سرک",
+          "lexemeId": "lx-0082"
+        },
+        {
+          "surface": "بیروبار",
+          "lexemeId": "lx-6227"
+        },
+        {
+          "surface": "بود",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "من میوه خریدم که قیمت آن کم بود.",
+      "translit": "man mēwa kharīdam ki qīmat-e ān kam būd.",
+      "en": "I bought fruit whose price was low.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "خریدم",
+          "lexemeId": "lx-0205"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "قیمت",
+          "lexemeId": "lx-6132"
+        },
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "کم",
+          "lexemeId": "lx-0070"
+        },
+        {
+          "surface": "بود",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "بازار کابل از بازار قریه ما کلان‌تر است.",
+      "translit": "bāzār-e kābul az bāzār-e qarya-ye mā kalāntar ast.",
+      "en": "The Kabul bazaar is bigger than our village bazaar.",
+      "tokens": [
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "کابل",
+          "lexemeId": "lx-0086"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "بازار",
+          "lexemeId": "lx-0133"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "کلان‌تر",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0004",
+    "lx-0005",
+    "lx-0009",
+    "lx-0010",
+    "lx-0011",
+    "lx-0014",
+    "lx-0050",
+    "lx-0059",
+    "lx-0065",
+    "lx-0069",
+    "lx-0070",
+    "lx-0081",
+    "lx-0082",
+    "lx-0086",
+    "lx-0089",
+    "lx-0096",
+    "lx-0113",
+    "lx-0133",
+    "lx-0175",
+    "lx-0205",
+    "lx-1051",
+    "lx-6132",
+    "lx-6227"
+  ],
+  "newWords": [
+    "lx-0050",
+    "lx-0082",
+    "lx-0086",
+    "lx-0113",
+    "lx-0133",
+    "lx-0205",
+    "lx-6132",
+    "lx-6227"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 8
+}

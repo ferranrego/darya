@@ -1,0 +1,187 @@
+{
+  "id": "tx-seed-l3-004",
+  "formatVersion": "1.5.0",
+  "level": "L3",
+  "titleTarget": "امتحان مشکل",
+  "titleTranslit": "imtihān-e mushkil",
+  "titleEn": "A difficult exam",
+  "sentences": [
+    {
+      "target": "دیروز ما یک امتحان مشکل داشتیم.",
+      "translit": "dīrōz mā yak imtihān-e mushkil dāshtēm.",
+      "en": "Yesterday we had a difficult exam.",
+      "tokens": [
+        {
+          "surface": "دیروز",
+          "lexemeId": "lx-0045"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "امتحان",
+          "lexemeId": "lx-0220"
+        },
+        {
+          "surface": "مشکل",
+          "lexemeId": "lx-1276"
+        },
+        {
+          "surface": "داشتیم",
+          "lexemeId": "lx-0095"
+        }
+      ]
+    },
+    {
+      "target": "سوال‌ها از امتحان گذشته مشکل‌تر بود.",
+      "translit": "sawāl-hā az imtihān-e guzashta mushkil-tar būd.",
+      "en": "The questions were harder than the last exam.",
+      "tokens": [
+        {
+          "surface": "سوال‌ها",
+          "lexemeId": "lx-0221"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "امتحان",
+          "lexemeId": "lx-0220"
+        },
+        {
+          "surface": "گذشته",
+          "lexemeId": "lx-1051"
+        },
+        {
+          "surface": "مشکل‌تر",
+          "lexemeId": "lx-1276"
+        },
+        {
+          "surface": "بود",
+          "lexemeId": "lx-0096"
+        }
+      ]
+    },
+    {
+      "target": "معلم گفت که باید بیشتر کوشش کنیم.",
+      "translit": "mu'allem guft ki bāyad bishtar kōshish kunēm.",
+      "en": "The teacher said we must try harder.",
+      "tokens": [
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "گفت",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "باید",
+          "lexemeId": "lx-0290"
+        },
+        {
+          "surface": "بیشتر",
+          "lexemeId": "lx-0331"
+        },
+        {
+          "surface": "کوشش",
+          "lexemeId": "lx-10002"
+        },
+        {
+          "surface": "کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "من فکر می‌کنم که نتیجه خوب می‌شود.",
+      "translit": "man fikr mēkunam ki natīja khōb mēshawad.",
+      "en": "I think the result will be good.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-6375"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-6375"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "نتیجه",
+          "lexemeId": "lx-1071"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "می‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0005",
+    "lx-0011",
+    "lx-0014",
+    "lx-0025",
+    "lx-0045",
+    "lx-0063",
+    "lx-0078",
+    "lx-0093",
+    "lx-0095",
+    "lx-0096",
+    "lx-0097",
+    "lx-0149",
+    "lx-0220",
+    "lx-0221",
+    "lx-0290",
+    "lx-0292",
+    "lx-0331",
+    "lx-10002",
+    "lx-1051",
+    "lx-1071",
+    "lx-1276",
+    "lx-6375"
+  ],
+  "newWords": [
+    "lx-0063",
+    "lx-0078",
+    "lx-0095",
+    "lx-0149",
+    "lx-0220",
+    "lx-0221",
+    "lx-0290",
+    "lx-0292",
+    "lx-10002",
+    "lx-1071",
+    "lx-1276",
+    "lx-6375"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 4
+}

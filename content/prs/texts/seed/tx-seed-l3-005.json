@@ -1,0 +1,199 @@
+{
+  "id": "tx-seed-l3-005",
+  "formatVersion": "1.5.0",
+  "level": "L3",
+  "titleTarget": "کار پدرم",
+  "titleTranslit": "kār-e padaram",
+  "titleEn": "My father's work",
+  "sentences": [
+    {
+      "target": "پدرم سال‌ها در یک فابریکه کار کرد.",
+      "translit": "padaram sāl-hā dar yak fābrika kār kard.",
+      "en": "My father worked in a factory for years.",
+      "tokens": [
+        {
+          "surface": "پدرم",
+          "lexemeId": "lx-0052"
+        },
+        {
+          "surface": "سال‌ها",
+          "lexemeId": "lx-0048"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "فابریکه",
+          "lexemeId": "lx-1300"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-6369"
+        },
+        {
+          "surface": "کرد",
+          "lexemeId": "lx-6369"
+        }
+      ]
+    },
+    {
+      "target": "حالا او در یک دکان خورد کار می‌کند.",
+      "translit": "hālā ō dar yak dukān-e khurd kār mēkunad.",
+      "en": "Now he works in a small shop.",
+      "tokens": [
+        {
+          "surface": "حالا",
+          "lexemeId": "lx-0046"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "دکان",
+          "lexemeId": "lx-0134"
+        },
+        {
+          "surface": "خورد",
+          "lexemeId": "lx-0066"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-6369"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-6369"
+        }
+      ]
+    },
+    {
+      "target": "او می‌گوید که کار نو آسان‌تر است.",
+      "translit": "ō mēgōyad ki kār-e naw āsān-tar ast.",
+      "en": "He says the new work is easier.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "نو",
+          "lexemeId": "lx-0067"
+        },
+        {
+          "surface": "آسان‌تر",
+          "lexemeId": "lx-0213"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما همه خوش هستیم که او مانده نمی‌شود.",
+      "translit": "mā hama khush hastēm ki ō mānda namēshawad.",
+      "en": "We are all glad that he does not get tired.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "همه",
+          "lexemeId": "lx-0165"
+        },
+        {
+          "surface": "خوش",
+          "lexemeId": "lx-0107"
+        },
+        {
+          "surface": "هستیم",
+          "lexemeId": "lx-0096"
+        },
+        {
+          "surface": "که",
+          "lexemeId": "lx-0005"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "مانده",
+          "lexemeId": "lx-0108"
+        },
+        {
+          "surface": "نمی‌شود",
+          "lexemeId": "lx-0149"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0005",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0025",
+    "lx-0046",
+    "lx-0048",
+    "lx-0052",
+    "lx-0066",
+    "lx-0067",
+    "lx-0079",
+    "lx-0093",
+    "lx-0096",
+    "lx-0097",
+    "lx-0107",
+    "lx-0108",
+    "lx-0134",
+    "lx-0149",
+    "lx-0165",
+    "lx-0213",
+    "lx-1300",
+    "lx-6369"
+  ],
+  "newWords": [
+    "lx-0052",
+    "lx-0066",
+    "lx-0079",
+    "lx-0108",
+    "lx-0134",
+    "lx-0213",
+    "lx-1300",
+    "lx-6369"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 5
+}

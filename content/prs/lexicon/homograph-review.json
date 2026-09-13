@@ -48,6 +48,36 @@
       "reason": "برنج is the noun 'rice', not the verb رنجیدن."
     },
     {
+      "surface": "برگشت",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares its stem with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone - neither of the other two forms a برگشت* surface. The present forms were recorded earlier for the same reason; these are the past ones, which an L3 text reaches as soon as the simple past is allowed."
+    },
+    {
+      "surface": "برگشتم",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares its stem with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone - neither of the other two forms a برگشت* surface. The present forms were recorded earlier for the same reason; these are the past ones, which an L3 text reaches as soon as the simple past is allowed."
+    },
+    {
+      "surface": "برگشتند",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares its stem with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone - neither of the other two forms a برگشت* surface. The present forms were recorded earlier for the same reason; these are the past ones, which an L3 text reaches as soon as the simple past is allowed."
+    },
+    {
+      "surface": "برگشتی",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares its stem with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone - neither of the other two forms a برگشت* surface. The present forms were recorded earlier for the same reason; these are the past ones, which an L3 text reaches as soon as the simple past is allowed."
+    },
+    {
+      "surface": "برگشتید",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares its stem with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone - neither of the other two forms a برگشت* surface. The present forms were recorded earlier for the same reason; these are the past ones, which an L3 text reaches as soon as the simple past is allowed."
+    },
+    {
+      "surface": "برگشتیم",
+      "correctLexemeId": "lx-6138",
+      "reason": "برگشتن (lx-6138) shares its stem with گشتن (lx-0380) and گردیدن (lx-6028), but the بر- prefix belongs to برگشتن alone - neither of the other two forms a برگشت* surface. The present forms were recorded earlier for the same reason; these are the past ones, which an L3 text reaches as soon as the simple past is allowed."
+    },
+    {
       "surface": "بسته",
       "correctLexemeId": "lx-0200",
       "reason": "Used as the adjective 'closed'. The collision is with بستن (to close, lx-0373)'s participle."
