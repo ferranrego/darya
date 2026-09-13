@@ -53,7 +53,6 @@ export interface UserLetterRow {
 export interface TextRow {
   id: string;
   level: string;
-  vocab_hash: string | null;
   theme: string | null;
   source: "seed" | "generated";
   doc: TextDocument;

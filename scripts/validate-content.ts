@@ -7,6 +7,7 @@ import { join } from "node:path";
 import {
   alphabetCourseSchema,
   grammarCoursesFileSchema,
+  grammarHubFileSchema,
   lexiconFileSchema,
   levelsFileSchema,
   placementControlsFileSchema,
@@ -520,6 +521,121 @@ const grammarPointIds = new Set<string>();
       for (const block of course.blocks) {
         for (const lesson of block.lessons) grammarPointIds.add(lesson.grammarPoint);
       }
+    }
+  }
+}
+
+// --- Grammar Hub -------------------------------------------------------------
+// A reference book, so the checks are about integrity rather than pedagogy:
+// every link lands somewhere, every example is real normalised Dari with an
+// honest transliteration, and the reading order is unambiguous.
+{
+  const hubPath = join(root, "grammar-hub", "entries.json");
+  if (existsSync(hubPath)) {
+    const parsed = grammarHubFileSchema.safeParse(loadJson(hubPath));
+    if (!parsed.success) {
+      fail(
+        `grammar-hub/entries.json: ${parsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`,
+      );
+    } else {
+      const courseLessonIds = new Set<string>();
+      const grammarFile = grammarCoursesFileSchema.safeParse(loadJson(join(root, "grammar", "all.json")));
+      if (grammarFile.success) {
+        for (const course of grammarFile.data.courses) {
+          for (const block of course.blocks) for (const l of block.lessons) courseLessonIds.add(l.id);
+        }
+      }
+      const hubIndex = lexicon ? buildIndex(lexicon.entries) : null;
+      const entries = parsed.data.entries;
+      const ids = new Set<string>();
+      const slugs = new Set(entries.map((e) => e.slug));
+      const ranks = new Set<string>();
+      const seenSlugs = new Set<string>();
+      let warnings = 0;
+
+      const checkTarget = (where: string, target: string) => {
+        if (target !== normalize(target)) fail(`grammar-hub ${where}: Dari not normalized ("${target}")`);
+      };
+      const checkTranslit = (where: string, translit: string | undefined, target: string) => {
+        if (!profile.capabilities.transliteration) return;
+        if (!translit) {
+          fail(`grammar-hub ${where}: missing translit for "${target}"`);
+          return;
+        }
+        if (lang === "prs") checkDariTranslit(translit, `grammar-hub ${where}`, "translit", undefined, target);
+      };
+      const checkWords = (where: string, target: string) => {
+        if (!hubIndex) return;
+        for (const token of tokenize(target)) {
+          if (hubIndex.resolve(token)) continue;
+          warnings++;
+          console.warn(`⚠ grammar-hub ${where}: "${token}" not in lexicon`);
+        }
+      };
+      /** A correct Dari phrase: normalised, transliterated, made of known words. */
+      const checkOption = (where: string, o: { target: string; translit?: string }) => {
+        checkTarget(where, o.target);
+        checkTranslit(where, o.translit, o.target);
+        checkWords(where, o.target);
+      };
+
+      for (const e of entries) {
+        if (ids.has(e.id)) fail(`grammar-hub: duplicate id ${e.id}`);
+        ids.add(e.id);
+        if (seenSlugs.has(e.slug)) fail(`grammar-hub: duplicate slug ${e.slug}`);
+        seenSlugs.add(e.slug);
+        const rankKey = `${e.level}/${e.rank}`;
+        if (ranks.has(rankKey)) fail(`grammar-hub ${e.id}: rank ${e.rank} already used in ${e.level}`);
+        ranks.add(rankKey);
+        for (const r of e.related) {
+          if (r === e.slug) fail(`grammar-hub ${e.id}: relates to itself`);
+          else if (!slugs.has(r)) fail(`grammar-hub ${e.id}: related page "${r}" does not exist`);
+        }
+        for (const l of e.lessonIds) {
+          if (!courseLessonIds.has(l)) fail(`grammar-hub ${e.id}: lesson ${l} does not exist`);
+        }
+        checkOption(`${e.id} sample`, e.sample);
+
+        e.blocks.forEach((b, i) => {
+          const where = `${e.id} block ${i + 1} (${b.type})`;
+          // Dari quoted inside the English prose is rendered and searched like
+          // any other Dari, so it has to be normalised too.
+          const prose = b.type === "rule" ? b.body : b.type === "mistake" ? b.why : b.type === "spoken" ? b.note : "";
+          for (const run of prose.match(/[؀-ۿ‌]+(?:\s+[؀-ۿ‌]+)*/g) ?? []) checkTarget(`${where} prose`, run);
+          switch (b.type) {
+            case "examples":
+              for (const item of b.items) {
+                checkOption(where, item);
+                if (item.highlight && !item.target.includes(item.highlight)) {
+                  fail(`grammar-hub ${where}: highlight "${item.highlight}" not in "${item.target}"`);
+                }
+              }
+              break;
+            case "mistake":
+              // `wrong` is wrong on purpose: only its shape is checked, never
+              // its words, or the validator would demand the mistake be fixed.
+              checkTarget(where, b.wrong.target);
+              checkOption(`${where} right`, b.right);
+              if (normalize(b.wrong.target) === normalize(b.right.target) && b.wrong.translit === b.right.translit) {
+                fail(`grammar-hub ${where}: the wrong and right forms are identical`);
+              }
+              break;
+            case "spoken":
+              // The spoken form is Kabuli as people type it, which the formal
+              // lexicon does not carry - so it is checked for normalisation only.
+              checkOption(`${where} written`, b.written);
+              checkTarget(`${where} spoken`, b.spoken.target);
+              if (!b.spoken.translit && profile.capabilities.transliteration) {
+                fail(`grammar-hub ${where}: spoken form has no translit`);
+              }
+              break;
+            default:
+              break;
+          }
+        });
+      }
+      const warnNote = warnings > 0 ? `, ${warnings} vocab warning(s)` : "";
+      console.log(`✓ grammar-hub/entries.json (${entries.length} pages${warnNote})`);
     }
   }
 }

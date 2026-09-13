@@ -1,30 +1,5 @@
-import type { GrammarExample, GrammarSlide } from "@/lib/content/schema";
-import { profile as langProfile } from "@/lib/lang";
-
-/** Dari example with the taught pattern highlighted in lapis. */
-function ExampleLine({ example }: { example: GrammarExample }) {
-  const { target, highlight } = example;
-  let parts: React.ReactNode = target;
-  if (highlight && target.includes(highlight)) {
-    const at = target.indexOf(highlight);
-    parts = (
-      <>
-        {target.slice(0, at)}
-        <span className="text-lapis">{highlight}</span>
-        {target.slice(at + highlight.length)}
-      </>
-    );
-  }
-  return (
-    <div className="rounded-2xl border border-line bg-surface px-5 py-4">
-      <p lang={langProfile.code} dir={langProfile.dir} className="text-[28px] leading-[1.8]">
-        {parts}
-      </p>
-      <p className="mt-1.5 text-[15px] text-ink-soft">{example.translit}</p>
-      <p className="mt-0.5 text-[14px] text-ink-faint">{example.en}</p>
-    </div>
-  );
-}
+import type { GrammarSlide } from "@/lib/content/schema";
+import { ExampleLine } from "./example-line";
 
 /** One teaching slide: explanation, optional paradigm table, examples. */
 export function SlideCard({ slide }: { slide: GrammarSlide }) {

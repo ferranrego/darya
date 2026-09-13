@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { generateText, vocabHash } from "@/lib/ai/generate";
+import { generateText } from "@/lib/ai/generate";
 import { lexicon, levelById, levels } from "@/lib/content/load";
 import { levelVocabulary } from "@/lib/content/level-vocabulary";
 import { scheduleFor, type Slot } from "@/lib/content/schedule";
@@ -266,7 +266,7 @@ export async function POST(req: Request) {
     if (finalDoc.newWords.length === 0) {
       return NextResponse.json({ error: "generated text teaches nothing" }, { status: 502 });
     }
-    await insertGeneratedText(supabaseService(), finalDoc, vocabHash(finalDoc), theme);
+    await insertGeneratedText(supabaseService(), finalDoc, theme);
     return NextResponse.json({ created: true, id: finalDoc.id });
   } catch (e: unknown) {
     // Logged in full, reported in brief: the message can carry provider names,

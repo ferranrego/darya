@@ -8,6 +8,7 @@ import { z } from "zod";
 import {
   alphabetCourseSchema,
   grammarCourseSchema,
+  grammarHubFileSchema,
   lexiconFileSchema,
   levelsFileSchema,
   textDocumentSchema,
@@ -21,6 +22,7 @@ const targets: Array<[string, z.ZodType]> = [
   ["lexicon", lexiconFileSchema],
   ["alphabet-course", alphabetCourseSchema],
   ["grammar-course", grammarCourseSchema],
+  ["grammar-hub", grammarHubFileSchema],
   ["levels", levelsFileSchema],
   ["text-document", textDocumentSchema],
 ];

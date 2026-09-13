@@ -448,6 +448,130 @@ export type GrammarCoursesFile = z.infer<typeof grammarCoursesFileSchema>;
 export type GrammarLevel = z.infer<typeof grammarLevelSchema>;
 
 // ---------------------------------------------------------------------------
+// Grammar Hub: content/grammar-hub/entries.json
+// ---------------------------------------------------------------------------
+
+/**
+ * The Grammar Hub is a reference book, not a course: nothing here is taught in
+ * order or scored. Each entry is one page a learner looks up ("what is the
+ * ezafe?"), built from a small set of typed blocks so every page reads the same
+ * way and each block is designed once.
+ */
+const hubBlockBase = {
+  /** Optional section heading shown above the block. */
+  heading: z.string().min(1).optional(),
+};
+
+export const hubRuleBlockSchema = z.object({
+  ...hubBlockBase,
+  type: z.literal("rule"),
+  /** Plain-English explanation. Short paragraphs, no jargon without a gloss. */
+  body: z.string().min(1),
+});
+
+/**
+ * The shape of the construction as a formula: `noun + -e + adjective`.
+ * `fixed` parts are the grammar being taught and render in lapis; `slot`
+ * parts are the placeholders a learner fills with their own words.
+ */
+export const hubPatternBlockSchema = z.object({
+  ...hubBlockBase,
+  type: z.literal("pattern"),
+  parts: z
+    .array(z.object({ text: z.string().min(1), kind: z.enum(["slot", "fixed"]) }))
+    .min(2)
+    .max(6),
+});
+
+export const hubTableBlockSchema = z.object({
+  ...hubBlockBase,
+  type: z.literal("table"),
+  columns: z.tuple([z.string(), z.string()]).optional(),
+  rows: z.array(z.tuple([z.string().min(1), z.string().min(1)])).min(2).max(10),
+});
+
+export const hubExamplesBlockSchema = z.object({
+  ...hubBlockBase,
+  type: z.literal("examples"),
+  items: z.array(grammarExampleSchema).min(1).max(5),
+});
+
+/**
+ * A mistake learners actually make, next to the fix.
+ *
+ * `wrong` is wrong on purpose. The validator skips it for normalisation and
+ * vocabulary, exactly as it skips distractors and spotError sentences - do not
+ * "fix" it.
+ */
+export const hubMistakeBlockSchema = z.object({
+  ...hubBlockBase,
+  type: z.literal("mistake"),
+  wrong: grammarOptionSchema,
+  right: grammarExampleSchema,
+  why: z.string().min(1),
+});
+
+/** How Kabul speech says it next to how it is written. */
+export const hubSpokenBlockSchema = z.object({
+  ...hubBlockBase,
+  type: z.literal("spoken"),
+  written: grammarOptionSchema,
+  spoken: grammarOptionSchema,
+  note: z.string().min(1),
+});
+
+export const hubBlockSchema = z.discriminatedUnion("type", [
+  hubRuleBlockSchema,
+  hubPatternBlockSchema,
+  hubTableBlockSchema,
+  hubExamplesBlockSchema,
+  hubMistakeBlockSchema,
+  hubSpokenBlockSchema,
+]);
+
+export const hubEntrySchema = z.object({
+  /**
+   * "gh-01" … Permanent. Assigned in authoring order, never renumbered and
+   * never reused, so a link or bookmark to a page keeps meaning that page.
+   * Display order comes from `level` + `rank`, not from the id.
+   */
+  id: z.string().regex(/^gh-\d{2,3}$/),
+  /** URL segment: /grammar-hub/<slug>. Lowercase, hyphenated. */
+  slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
+  level: grammarLevelSchema,
+  /** 1 = most useful within its level; pages list in this order. */
+  rank: z.number().int().min(1),
+  title: z.string().min(1),
+  /** The whole rule in one line: the "In one line" callout and the list subtitle. */
+  summary: z.string().min(1),
+  /** Short Dari sample shown on the list row, e.g. "کتاب من". */
+  sample: grammarOptionSchema,
+  /**
+   * Other names and misspellings a learner might type ("hezafe", "izafat").
+   * Matched exactly-ish by search; this is how a page is found by someone who
+   * does not know what it is called.
+   */
+  aliases: z.array(z.string().min(1)).default([]),
+  /** Broader English search terms ("possession", "adjective"). */
+  keywords: z.array(z.string().min(1)).default([]),
+  blocks: z.array(hubBlockSchema).min(2).max(12),
+  /** Slugs of related hub pages. */
+  related: z.array(z.string()).default([]),
+  /** Course lessons that practise this ("gl-05"). */
+  lessonIds: z.array(z.string().regex(/^gl-\d{2}$/)).default([]),
+});
+
+export const grammarHubFileSchema = z.object({
+  formatVersion: z.string(),
+  language: contentLanguageSchema,
+  entries: z.array(hubEntrySchema).min(1),
+});
+
+export type HubBlock = z.infer<typeof hubBlockSchema>;
+export type HubEntry = z.infer<typeof hubEntrySchema>;
+export type GrammarHubFile = z.infer<typeof grammarHubFileSchema>;
+
+// ---------------------------------------------------------------------------
 // Levels: content/levels/levels.json
 // ---------------------------------------------------------------------------
 

@@ -111,7 +111,6 @@
                           },
                           "required": [
                             "target",
-                            "translit",
                             "en"
                           ],
                           "additionalProperties": false
@@ -142,7 +141,7 @@
                   }
                 },
                 "exercises": {
-                  "minItems": 6,
+                  "minItems": 5,
                   "maxItems": 12,
                   "type": "array",
                   "items": {
@@ -186,8 +185,7 @@
                               }
                             },
                             "required": [
-                              "target",
-                              "translit"
+                              "target"
                             ],
                             "additionalProperties": false
                           },
@@ -208,8 +206,7 @@
                                 }
                               },
                               "required": [
-                                "target",
-                                "translit"
+                                "target"
                               ],
                               "additionalProperties": false
                             }
@@ -219,7 +216,6 @@
                           "id",
                           "type",
                           "target",
-                          "translit",
                           "en",
                           "answer",
                           "distractors"
@@ -261,8 +257,7 @@
                                 }
                               },
                               "required": [
-                                "target",
-                                "translit"
+                                "target"
                               ],
                               "additionalProperties": false
                             }
@@ -287,8 +282,7 @@
                                 }
                               },
                               "required": [
-                                "target",
-                                "translit"
+                                "target"
                               ],
                               "additionalProperties": false
                             }
@@ -310,7 +304,6 @@
                           "type",
                           "en",
                           "words",
-                          "translit",
                           "extraWords",
                           "altOrders"
                         ],
@@ -372,8 +365,7 @@
                                 }
                               },
                               "required": [
-                                "target",
-                                "translit"
+                                "target"
                               ],
                               "additionalProperties": false
                             }
@@ -384,7 +376,6 @@
                           "type",
                           "direction",
                           "target",
-                          "translit",
                           "en",
                           "distractorsEn",
                           "distractorsTarget"
@@ -431,7 +422,6 @@
                               },
                               "required": [
                                 "target",
-                                "translit",
                                 "en"
                               ],
                               "additionalProperties": false
@@ -485,8 +475,7 @@
                               }
                             },
                             "required": [
-                              "target",
-                              "translit"
+                              "target"
                             ],
                             "additionalProperties": false
                           },
@@ -503,17 +492,19 @@
                               }
                             },
                             "required": [
-                              "target",
-                              "translit"
+                              "target"
                             ],
                             "additionalProperties": false
+                          },
+                          "correctedTarget": {
+                            "type": "string",
+                            "minLength": 1
                           }
                         },
                         "required": [
                           "id",
                           "type",
                           "target",
-                          "translit",
                           "en",
                           "errorWord",
                           "correction"

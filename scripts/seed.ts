@@ -24,23 +24,21 @@ const root = contentRoot();
 const lexicon = lexiconFileSchema.parse(
   JSON.parse(readFileSync(join(root, "lexicon", "lexicon.json"), "utf8")),
 );
-const lexemeRows = lexicon.entries.map((e) => ({
-  id: e.id,
-  target: e.target,
-  target_normalized: e.targetNormalized,
-  translit: e.translit,
-  gloss_en: e.glossEn,
-  pos: e.pos,
-  freq_rank: e.freqRank,
-  freq_band: e.freqBand,
-  register: e.register,
-  variants: e.variants,
-  example_target: e.exampleTarget,
-  example_translit: e.exampleTranslit,
-  example_en: e.exampleEn,
-  audio_url: e.audioUrl ?? null,
-  tags: e.tags,
-}));
+/**
+ * Only the id reaches the database.
+ *
+ * The app never reads this table - it builds its dictionary from the bundled
+ * `lexicon.json`. The table exists for one job: `assert_lexeme_ref` rejects a
+ * `user_words` or `review_logs` row pointing at a word the app does not ship,
+ * and that trigger reads `lexemes.id` and nothing else.
+ *
+ * It used to hold a full copy of every entry - word, gloss, examples, spelling,
+ * frequency - which nothing read, and a copy that has to be kept in step by
+ * hand eventually is not. It drifted once to 6,033 rows against 5,997 in the
+ * file, and a learner ended up with flashcards `lexemeById` could not find and
+ * so could never review. Storing only the id leaves nothing to drift.
+ */
+const lexemeRows = lexicon.entries.map((e) => ({ id: e.id }));
 
 {
   // Chunked, so a rejected row costs one batch rather than the whole seed.
@@ -71,7 +69,6 @@ const textRows = readdirSync(seedDir)
   .map((doc) => ({
     id: doc.id,
     level: doc.level,
-    vocab_hash: null,
     source: doc.source,
     doc,
     // Mirrored onto its own column so getTextsForLevel can sort in SQL

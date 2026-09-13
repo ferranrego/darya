@@ -285,10 +285,6 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
   };
 }
 
-export function vocabHash(doc: TextDocument): string {
-  return createHash("sha256").update(doc.vocabUsed.join(",")).digest("hex").slice(0, 16);
-}
-
 export async function repairText(
   doc: TextDocument,
   req: GenerationRequest,

@@ -33,6 +33,34 @@ export default function ChatPage() {
   const [draft, setDraft] = useState("");
   const bottomRef = useRef<HTMLDivElement>(null);
 
+  /**
+   * `/chat?ask=…` arrives from the Grammar Hub's "Ask the tutor" button with
+   * the learner's question already written.
+   *
+   * It always opens the *tutor*, never the room: the room is one public thread
+   * for every learner, and a grammar question typed for a private explanation
+   * must not be one tap from being posted there. It only fills the draft - the
+   * learner still decides to send, because each send spends the free-tier
+   * quota every learner shares. The parameter is then dropped from the URL so
+   * a reload or a back-navigation does not refill a draft already sent.
+   *
+   * Read from `window.location` in an effect rather than `useSearchParams`,
+   * which would break this page's static prerender (see CLAUDE.md).
+   */
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const ask = url.searchParams.get("ask")?.trim();
+    if (!ask) return;
+    url.searchParams.delete("ask");
+    window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    // Deferred like the word sheet's reset: this syncs from the URL, an
+    // external source, once on arrival.
+    setTimeout(() => {
+      setMode("tutor");
+      setDraft(ask.slice(0, MAX_MESSAGE_LENGTH));
+    }, 0);
+  }, [setMode]);
+
   useEffect(() => {
     if (mode === "room") bottomRef.current?.scrollIntoView({ block: "end" });
   }, [room.data?.length, mode]);

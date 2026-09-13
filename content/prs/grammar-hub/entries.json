@@ -1,0 +1,550 @@
+{
+  "formatVersion": "1.0.0",
+  "language": "prs",
+  "entries": [
+    {
+      "id": "gh-01",
+      "slug": "ezafe",
+      "level": "A1",
+      "rank": 3,
+      "title": "The ezafe",
+      "summary": "Put -e between a noun and the word that describes or owns it: ketāb-e man, my book.",
+      "sample": {
+        "target": "کتاب من",
+        "translit": "ketāb-e man"
+      },
+      "aliases": [
+        "ezafe",
+        "ezafa",
+        "ezāfa",
+        "ezafeh",
+        "izafe",
+        "izafa",
+        "izafat",
+        "hezafe",
+        "kasra",
+        "linker",
+        "اضافه",
+        "کسره"
+      ],
+      "keywords": [
+        "possession",
+        "owner",
+        "of",
+        "adjective",
+        "describe",
+        "my book",
+        "linking"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "What it does",
+          "body": "Dari links two words that belong together with a short -e sound. It joins a noun to the adjective that describes it, or to the person or thing that owns it. English puts the describing word first (a new book). Dari puts the noun first and links the rest to it: ketāb-e naw, literally 'book-of new'."
+        },
+        {
+          "type": "pattern",
+          "heading": "The pattern",
+          "parts": [
+            {
+              "text": "noun",
+              "kind": "slot"
+            },
+            {
+              "text": "-e",
+              "kind": "fixed"
+            },
+            {
+              "text": "adjective / owner",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کتاب نو",
+              "translit": "ketāb-e naw",
+              "en": "a new book",
+              "highlight": "کتاب نو"
+            },
+            {
+              "target": "کتاب من کجا است؟",
+              "translit": "ketāb-e man kujā ast?",
+              "en": "Where is my book?",
+              "highlight": "کتاب من"
+            },
+            {
+              "target": "خانه ما کلان است",
+              "translit": "khāna-ye mā kalān ast",
+              "en": "Our house is big.",
+              "highlight": "خانه ما"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "You hear it, you don't see it",
+          "body": "The -e is usually not written in Dari script. کتاب من is read ketāb-e man, even though nothing between the two words shows it. The transliteration line always shows it, so use that line to learn where it goes."
+        },
+        {
+          "type": "table",
+          "heading": "After a vowel it becomes -ye",
+          "columns": [
+            "The noun ends in",
+            "With the ezafe"
+          ],
+          "rows": [
+            [
+              "a consonant: ketāb",
+              "ketāb-e man"
+            ],
+            [
+              "-a: khāna",
+              "khāna-ye mā"
+            ],
+            [
+              "-ā: hawā",
+              "hawā-ye kābul"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "body": "After -ā, -ō or -ū the ezafe is written as ی: هوای کابل. After -a it is usually left unwritten, just like after a consonant: خانه ما."
+        },
+        {
+          "type": "rule",
+          "heading": "Chains",
+          "body": "You can keep linking: noun, then adjective, then owner, each joined with -e. The last word of the chain takes nothing."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "هوای کابل سرد است",
+              "translit": "hawā-ye kābul sard ast",
+              "en": "The weather in Kabul is cold.",
+              "highlight": "هوای کابل"
+            },
+            {
+              "target": "دوست خوب من اینجا است",
+              "translit": "dōst-e khōb-e man īnjā ast",
+              "en": "My good friend is here.",
+              "highlight": "دوست خوب من"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من کتاب",
+            "translit": "man ketāb"
+          },
+          "right": {
+            "target": "کتاب من",
+            "translit": "ketāb-e man",
+            "en": "my book"
+          },
+          "why": "The owner comes after the thing, never before it. man ketāb sounds like 'I, book'."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "نو کتاب",
+            "translit": "naw ketāb"
+          },
+          "right": {
+            "target": "کتاب نو",
+            "translit": "ketāb-e naw",
+            "en": "a new book"
+          },
+          "why": "Adjectives follow the noun in Dari. Put the noun first and link the adjective with -e."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "کتاب من",
+            "translit": "ketāb-e man"
+          },
+          "spoken": {
+            "target": "کتابم",
+            "translit": "ketābam"
+          },
+          "note": "For 'my', 'your' and 'his' or 'her', people often skip the separate word and add a short ending to the noun instead. Both are correct."
+        }
+      ],
+      "related": [
+        "object-marker-ra"
+      ],
+      "lessonIds": [
+        "gl-05",
+        "gl-06",
+        "gl-94"
+      ]
+    },
+    {
+      "id": "gh-02",
+      "slug": "present-tense",
+      "level": "A1",
+      "rank": 7,
+      "title": "Present tense with mē-",
+      "summary": "mē- + present stem + ending: mēkhānam, I read. One pattern for almost every verb.",
+      "sample": {
+        "target": "می‌خوانم",
+        "translit": "mēkhānam"
+      },
+      "aliases": [
+        "me",
+        "mē",
+        "me-",
+        "mē-",
+        "mi",
+        "mi-",
+        "mey",
+        "present",
+        "present tense",
+        "simple present",
+        "می"
+      ],
+      "keywords": [
+        "now",
+        "every day",
+        "habit",
+        "verb",
+        "conjugation",
+        "endings",
+        "doing"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "One tense, two English meanings",
+          "body": "Dari uses one present tense where English uses two. من نان می‌خورم means both 'I eat bread' and 'I am eating bread'. The rest of the sentence tells you which."
+        },
+        {
+          "type": "pattern",
+          "heading": "The pattern",
+          "parts": [
+            {
+              "text": "mē-",
+              "kind": "fixed"
+            },
+            {
+              "text": "present stem",
+              "kind": "slot"
+            },
+            {
+              "text": "ending",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The endings, with khāndan (to read)",
+          "columns": [
+            "Person",
+            "Verb"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "mēkhānam"
+            ],
+            [
+              "tu, you",
+              "mēkhānī"
+            ],
+            [
+              "ō, he or she",
+              "mēkhānad"
+            ],
+            [
+              "mā, we",
+              "mēkhānēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "mēkhānēd"
+            ],
+            [
+              "ānhā, they",
+              "mēkhānand"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Learn the stem with the verb",
+          "columns": [
+            "Verb",
+            "Present"
+          ],
+          "rows": [
+            [
+              "raftan, to go",
+              "mēraw-"
+            ],
+            [
+              "khurdan, to eat or drink",
+              "mēkhur-"
+            ],
+            [
+              "dīdan, to see",
+              "mēbīn-"
+            ],
+            [
+              "kardan, to do",
+              "mēkun-"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "body": "The present stem often looks different from the infinitive, so there is no safe way to guess it. Learn it together with the verb."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من هر روز به مکتب می‌روم",
+              "translit": "man har rōz ba maktab mērawam",
+              "en": "I go to school every day.",
+              "highlight": "می‌روم"
+            },
+            {
+              "target": "او حالا چای می‌خورد",
+              "translit": "ō hālā chāy mēkhurad",
+              "en": "He is drinking tea now.",
+              "highlight": "می‌خورد"
+            },
+            {
+              "target": "آنها چه می‌کنند؟",
+              "translit": "ānhā che mēkunand?",
+              "en": "What are they doing?",
+              "highlight": "می‌کنند"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Saying 'don't'",
+          "body": "Change mē- to namē-. Everything else stays the same."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من نان نمی‌خورم",
+              "translit": "man nān namēkhuram",
+              "en": "I don't eat bread.",
+              "highlight": "نمی‌خورم"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من کتاب می‌دارم",
+            "translit": "man ketāb mēdāram"
+          },
+          "right": {
+            "target": "من کتاب دارم",
+            "translit": "man ketāb dāram",
+            "en": "I have a book."
+          },
+          "why": "dāshtan, 'to have', takes no mē- in the present. The same goes for 'to be': hastam, never mēhastam."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "من به مکتب می‌روم",
+            "translit": "man ba maktab mērawam"
+          },
+          "spoken": {
+            "target": "مه مکتب میرم",
+            "translit": "ma maktab mērum"
+          },
+          "note": "Kabul speech shortens the most common verbs: mērawam becomes mērum. You will see this spelling in messages and on social media."
+        }
+      ],
+      "related": [
+        "object-marker-ra"
+      ],
+      "lessonIds": [
+        "gl-10",
+        "gl-12"
+      ]
+    },
+    {
+      "id": "gh-03",
+      "slug": "object-marker-ra",
+      "level": "A1",
+      "rank": 8,
+      "title": "The object marker rā",
+      "summary": "Put rā after a specific object: ketāb rā mēkhānam, I read the book.",
+      "sample": {
+        "target": "کتاب را",
+        "translit": "ketāb rā"
+      },
+      "aliases": [
+        "ra",
+        "rā",
+        "raa",
+        "ro",
+        "object marker",
+        "direct object",
+        "را",
+        "ره"
+      ],
+      "keywords": [
+        "object",
+        "the",
+        "specific",
+        "definite",
+        "accusative"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "What rā marks",
+          "body": "rā comes right after the object of the verb when that object is specific: a thing you both have in mind, a named person, or something with 'this' or 'my'. It is how Dari tells 'I read the book' from 'I read books'."
+        },
+        {
+          "type": "pattern",
+          "heading": "The pattern",
+          "parts": [
+            {
+              "text": "who",
+              "kind": "slot"
+            },
+            {
+              "text": "the object",
+              "kind": "slot"
+            },
+            {
+              "text": "rā",
+              "kind": "fixed"
+            },
+            {
+              "text": "verb",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "heading": "Specific or general",
+          "items": [
+            {
+              "target": "من کتاب را می‌خوانم",
+              "translit": "man ketāb rā mēkhānam",
+              "en": "I am reading the book.",
+              "highlight": "را"
+            },
+            {
+              "target": "من کتاب می‌خوانم",
+              "translit": "man ketāb mēkhānam",
+              "en": "I read books."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "When to use it",
+          "columns": [
+            "The object is",
+            "rā?"
+          ],
+          "rows": [
+            [
+              "something specific: the book",
+              "yes"
+            ],
+            [
+              "a name: Ahmad",
+              "yes"
+            ],
+            [
+              "with this or that: īn khāna",
+              "yes"
+            ],
+            [
+              "a person: him, her, them",
+              "yes"
+            ],
+            [
+              "something in general: books, bread",
+              "no"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "After the whole phrase",
+          "body": "rā goes after the complete object, however long it is. It never breaks into an ezafe chain."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "او برادر من را می‌بیند",
+              "translit": "ō barādar-e man rā mēbīnad",
+              "en": "He sees my brother.",
+              "highlight": "را"
+            },
+            {
+              "target": "ما این خانه را می‌خریم",
+              "translit": "mā īn khāna rā mēkharēm",
+              "en": "We are buying this house.",
+              "highlight": "را"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "او برادر را من می‌بیند",
+            "translit": "ō barādar rā man mēbīnad"
+          },
+          "right": {
+            "target": "او برادر من را می‌بیند",
+            "translit": "ō barādar-e man rā mēbīnad",
+            "en": "He sees my brother."
+          },
+          "why": "barādar-e man is one object, so rā waits until the end of it."
+        },
+        {
+          "type": "rule",
+          "heading": "Not for the subject",
+          "body": "rā only ever marks the object. The person doing the action never takes it, and a place you go to takes ba, not rā."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "من کتاب را می‌خوانم",
+            "translit": "man ketāb rā mēkhānam"
+          },
+          "spoken": {
+            "target": "مه کتاب ره میخانم",
+            "translit": "ma ketāb ra mēkhānum"
+          },
+          "note": "In speech and in casual writing rā is usually ra, spelled ره."
+        }
+      ],
+      "related": [
+        "ezafe",
+        "present-tense"
+      ],
+      "lessonIds": [
+        "gl-11",
+        "gl-95"
+      ]
+    }
+  ]
+}

@@ -69,7 +69,7 @@
           "freqBand": {
             "type": "integer",
             "minimum": 1,
-            "maximum": 8
+            "maximum": 10
           },
           "register": {
             "type": "string",
@@ -120,6 +120,14 @@
             "items": {
               "type": "string"
             }
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "m",
+              "f",
+              "common"
+            ]
           }
         },
         "required": [

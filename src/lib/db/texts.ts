@@ -60,13 +60,11 @@ export async function markTextRead(
 export async function insertGeneratedText(
   db: SupabaseClient,
   doc: TextDocument,
-  vocabHash: string,
   theme?: string,
 ): Promise<void> {
   const { error } = await db.from("texts").upsert({
     id: doc.id,
     level: doc.level,
-    vocab_hash: vocabHash,
     theme: theme ?? null,
     source: "generated",
     seq: doc.seq ?? null,
