@@ -35,7 +35,9 @@ describe("grammar hub search, B1", () => {
 
   it("finds B1 pages from transliterations typed without macrons", () => {
     expect(top("shayad")).toBe("subjunctive");
+    expect(top("waqti ki")).toBe("time-clauses");
+    expect(top("guft ki")).toBe("reported-speech");
+    // که is written ki, but learners taught elsewhere type ke.
     expect(top("waqti ke")).toBe("time-clauses");
-    expect(top("guft ke")).toBe("reported-speech");
   });
 });
