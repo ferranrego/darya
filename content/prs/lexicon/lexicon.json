@@ -1745,7 +1745,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "خواهرم کتاب می‌خواند.",
-      "exampleTranslit": "khwāhar-am kitāb mēkhwānad.",
+      "exampleTranslit": "khāhar-am kitāb mēkhānad.",
       "exampleEn": "My sister reads a book.",
       "tags": [
         "Family & Relationships",
@@ -2186,9 +2186,9 @@
       "freqBand": 1,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "پس فردا می‌بینمت.",
-      "exampleTranslit": "pas fardā mēbīnamet.",
-      "exampleEn": "So I will see you tomorrow.",
+      "exampleTarget": "پس چه کنیم؟",
+      "exampleTranslit": "pas che kunēm?",
+      "exampleEn": "So what shall we do?",
       "tags": [
         "Time & Calendar"
       ]
@@ -2402,7 +2402,7 @@
       ],
       "exampleTarget": "شب‌ها کتاب می‌خوانم.",
       "exampleTranslit": "shab-hā ketāb mēkhānam.",
-      "exampleEn": "In the evenings I read books.",
+      "exampleEn": "At night I read books.",
       "tags": [
         "Arts & Entertainment",
         "beginner-core",
@@ -3903,7 +3903,7 @@
         "نشسته"
       ],
       "exampleTarget": "لطفاً اینجا بنشین.",
-      "exampleTranslit": "lutfan īnjā benshīn.",
+      "exampleTranslit": "lutfan īnjā buneshīn.",
       "exampleEn": "Please sit here.",
       "tags": [
         "Actions & Movement"
@@ -5345,7 +5345,7 @@
       "id": "lx-0297",
       "target": "وقتی",
       "targetNormalized": "وقتی",
-      "translit": "waqt-e",
+      "translit": "waqtē",
       "glossEn": "when (conj)",
       "pos": "conjunction",
       "freqRank": 251,
@@ -5353,7 +5353,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "وقتی آمدی، خبر بده.",
-      "exampleTranslit": "waqt-e āmadī, khabar bidi.",
+      "exampleTranslit": "waqtē āmadī, khabar bidi.",
       "exampleEn": "When you arrive, let me know.",
       "tags": [
         "Grammar & Connectors",
@@ -5817,7 +5817,7 @@
       "id": "lx-0370",
       "target": "رسیدن",
       "targetNormalized": "رسیدن",
-      "translit": "rasēdan",
+      "translit": "rasīdan",
       "glossEn": "to arrive",
       "pos": "verb",
       "freqRank": 275,
@@ -6670,7 +6670,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "کنار من بنشین.",
-      "exampleTranslit": "kinār-e man binishīn.",
+      "exampleTranslit": "kinār-e man buneshīn.",
       "exampleEn": "Sit next to me.",
       "tags": [
         "Grammar & Connectors"
@@ -6965,7 +6965,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "او آدم خوبی است.",
-      "exampleTranslit": "ō ādam-e khūbī ast.",
+      "exampleTranslit": "ō ādam-e khūbē ast.",
       "exampleEn": "He is a good person.",
       "tags": [
         "People & Identity"
@@ -7352,7 +7352,7 @@
     },
     {
       "target": "بعضی",
-      "translit": "ba'zi",
+      "translit": "ba'zē",
       "glossEn": "some",
       "pos": "adjective",
       "register": "neutral",
@@ -14725,7 +14725,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "پدرم روزنامه می‌خواند.",
-      "exampleTranslit": "padar-am rōznāma mēkhwāna.",
+      "exampleTranslit": "padar-am rōznāma mēkhāna.",
       "exampleEn": "My father reads the newspaper.",
       "tags": [
         "Communication & Media"
@@ -18195,7 +18195,7 @@
       "id": "lx-1323",
       "target": "رسید",
       "targetNormalized": "رسید",
-      "translit": "rasēd",
+      "translit": "rasīd",
       "glossEn": "receipt",
       "pos": "noun",
       "freqRank": 904,
@@ -18203,7 +18203,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "لطفاً رسید پرداخت را نزد خود نگهدارید.",
-      "exampleTranslit": "lutfan rasēd-e pardākht rā nazd-e khud nigahdārēd.",
+      "exampleTranslit": "lutfan rasīd-e pardākht rā nazd-e khud nigahdārēd.",
       "exampleEn": "Please keep the payment receipt with you.",
       "tags": [
         "Abstract Concepts"
@@ -19174,7 +19174,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "شربت سرفه طعم خوبی ندارد.",
-      "exampleTranslit": "sharbat-e surfa ta'm-e khūbī nadārad.",
+      "exampleTranslit": "sharbat-e surfa ta'm-e khūbē nadārad.",
       "exampleEn": "Cough syrup doesn't taste good.",
       "tags": [
         "Abstract Concepts"
@@ -20854,7 +20854,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "مضمون دلخواهت چیست؟",
-      "exampleTranslit": "mazmūn-e dilkhwāh-it chīst?",
+      "exampleTranslit": "mazmūn-e dilkhāh-it chīst?",
       "exampleEn": "What is your favorite subject?",
       "tags": [
         "Education & Learning"
@@ -20969,7 +20969,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این جنس کیفیت خوبی ندارد.",
-      "exampleTranslit": "īn jins kayfiyat-e khūbī nadārad.",
+      "exampleTranslit": "īn jins kayfiyat-e khūbē nadārad.",
       "exampleEn": "This item does not have good quality.",
       "tags": [
         "Abstract Concepts"
@@ -21977,7 +21977,7 @@
       "pos": "determiner",
       "register": "neutral",
       "exampleTarget": "کدام کتاب را می‌خواهی؟",
-      "exampleTranslit": "kudām kitāb rā mēkhwāhī?",
+      "exampleTranslit": "kudām kitāb rā mēkhāhī?",
       "exampleEn": "Which book do you want?",
       "variants": [],
       "tags": [
@@ -22552,7 +22552,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این معامله سود خوبی داشت.",
-      "exampleTranslit": "īn mu'āmila sūd-e khūbī dāsht.",
+      "exampleTranslit": "īn mu'āmila sūd-e khūbē dāsht.",
       "exampleEn": "This transaction had a good profit.",
       "tags": [
         "Abstract Concepts"
@@ -23879,7 +23879,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "دو طرف به توافق رسیدند.",
-      "exampleTranslit": "dū taraf ba tawāfuq rasēdand.",
+      "exampleTranslit": "dū taraf ba tawāfuq rasīdand.",
       "exampleEn": "The two sides reached an agreement.",
       "tags": [
         "Abstract Concepts"
@@ -24326,7 +24326,7 @@
       "id": "lx-0874",
       "target": "آوازخوانی",
       "targetNormalized": "آوازخوانی",
-      "translit": "āwāz-khwānī",
+      "translit": "āwāz-khānī",
       "glossEn": "singing",
       "pos": "noun",
       "freqRank": 1227,
@@ -24334,7 +24334,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "آوازخوانی او زیباست.",
-      "exampleTranslit": "āwāz-khwānī-ye ō zēbā-st.",
+      "exampleTranslit": "āwāz-khānī-ye ō zēbā-st.",
       "exampleEn": "Her singing is beautiful.",
       "tags": [
         "Abstract Concepts"
@@ -24580,7 +24580,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "من در انستیتوت زبان می‌خوانم.",
-      "exampleTranslit": "man dar institūt zabān mēkhwānum.",
+      "exampleTranslit": "man dar institūt zabān mēkhānum.",
       "exampleEn": "I study language at the institute.",
       "tags": [
         "Abstract Concepts"
@@ -26088,7 +26088,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "بایسکل‌رانی ورزش خوبی است.",
-      "exampleTranslit": "bāyskil-rānī warzish-e khūbī ast.",
+      "exampleTranslit": "bāyskil-rānī warzish-e khūbē ast.",
       "exampleEn": "Cycling is a good exercise.",
       "tags": [
         "Abstract Concepts"
@@ -29483,7 +29483,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سیستم مالیاتی اصلاح خواهد شد.",
-      "exampleTranslit": "sīstam-e mālīyātī islāh khwāhad shud.",
+      "exampleTranslit": "sīstam-e mālīyātī islāh khāhad shud.",
       "exampleEn": "The tax system will be reformed.",
       "tags": [
         "Money & Finance"
@@ -30090,7 +30090,7 @@
       "id": "lx-1005",
       "target": "خواب‌آلود",
       "targetNormalized": "خواب‌آلود",
-      "translit": "khwāb-ālūda",
+      "translit": "khāb-ālūda",
       "glossEn": "sleepy",
       "pos": "adjective",
       "freqRank": 1529,
@@ -30098,7 +30098,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "هنگام رانندگی خواب‌آلود بودم.",
-      "exampleTranslit": "hangām-e rānandagī khwāb-ālūda būdam.",
+      "exampleTranslit": "hangām-e rānandagī khāb-ālūda būdam.",
       "exampleEn": "I was sleepy while driving.",
       "tags": [
         "Descriptions & Qualities"
@@ -31048,7 +31048,7 @@
       "id": "lx-1694",
       "target": "استخوان",
       "targetNormalized": "استخوان",
-      "translit": "ustukhwān",
+      "translit": "ustukhān",
       "glossEn": "bone",
       "pos": "noun",
       "freqRank": 1579,
@@ -31056,7 +31056,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "استخوان پای او شکسته است.",
-      "exampleTranslit": "ustukhwān-e pā-ye ō shikasta ast.",
+      "exampleTranslit": "ustukhān-e pā-ye ō shikasta ast.",
       "exampleEn": "The bone in his leg is broken.",
       "tags": [
         "Body & Anatomy"
@@ -31662,7 +31662,7 @@
         "-"
       ],
       "exampleTarget": "انجام و غایت انسان رسیدن به کمال مطلق است.",
-      "exampleTranslit": "anjām wa ghāyat-e insān rasēdan ba kamāl-e mutlaq ast.",
+      "exampleTranslit": "anjām wa ghāyat-e insān rasīdan ba kamāl-e mutlaq ast.",
       "exampleEn": "The end and telos of man is to reach absolute perfection.",
       "tags": [
         "Abstract Concepts"
@@ -32511,7 +32511,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "هنگام خواب تنفس آرام‌تر می‌شود.",
-      "exampleTranslit": "hangām-e khwāb tanaffus ārāmtar mēshawad.",
+      "exampleTranslit": "hangām-e khāb tanaffus ārāmtar mēshawad.",
       "exampleEn": "During sleep, breathing becomes calmer.",
       "tags": [
         "Abstract Concepts"
@@ -33709,7 +33709,7 @@
       "id": "lx-1167",
       "target": "خواه... خواه",
       "targetNormalized": "خواه... خواه",
-      "translit": "khwāh... khwāh",
+      "translit": "khāh... khāh",
       "glossEn": "whether... or",
       "pos": "conjunction",
       "freqRank": 1721,
@@ -33995,7 +33995,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "گروه کر آواز خواندند.",
-      "exampleTranslit": "gurōh-e kor āwāz khwāndand.",
+      "exampleTranslit": "gurōh-e kor āwāz khāndand.",
       "exampleEn": "The choir sang.",
       "tags": [
         "Abstract Concepts"
@@ -34142,7 +34142,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این تجارت مفاد خوبی برای ما دارد.",
-      "exampleTranslit": "īn tijārat mufād-e khūbī barā-ye mā dārad.",
+      "exampleTranslit": "īn tijārat mufād-e khūbē barā-ye mā dārad.",
       "exampleEn": "This business has a good profit for us.",
       "tags": [
         "Abstract Concepts"
@@ -37535,7 +37535,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سرگرمی مورد علاقه او خواندن کتاب است.",
-      "exampleTranslit": "sargarmē-ye mawrid-e alāqa-ye ō khwāndan-e kitāb ast.",
+      "exampleTranslit": "sargarmē-ye mawrid-e alāqa-ye ō khāndan-e kitāb ast.",
       "exampleEn": "His favorite hobby is reading books.",
       "tags": [
         "Abstract Concepts"
@@ -37785,7 +37785,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "عکس رادیولوژی نشان داد که استخوان شکستگی دارد.",
-      "exampleTranslit": "aks-e rādiyūlūzhī nishān dād ki ustukhwān shikastagī dārad.",
+      "exampleTranslit": "aks-e rādiyūlūzhī nishān dād ki ustukhān shikastagī dārad.",
       "exampleEn": "The X-ray showed that the bone has a fracture.",
       "tags": [
         "Abstract Concepts"
@@ -39120,7 +39120,7 @@
       "id": "lx-1553",
       "target": "گیاهخوار",
       "targetNormalized": "گیاهخوار",
-      "translit": "giyāhkhwār",
+      "translit": "giyāhkhār",
       "glossEn": "herbivore",
       "pos": "noun",
       "freqRank": 2008,
@@ -39128,7 +39128,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "گوزن یک حیوان گیاهخوار است.",
-      "exampleTranslit": "gawazn yak haywān-e giyāhkhwār ast.",
+      "exampleTranslit": "gawazn yak haywān-e giyāhkhār ast.",
       "exampleEn": "The deer is an herbivorous animal.",
       "tags": [
         "Abstract Concepts"
@@ -39299,7 +39299,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "آنها در حال خواندن نمایشنامه هستند.",
-      "exampleTranslit": "ānhā dar hāl-e khwāndan-e namāyish-nāma hastand.",
+      "exampleTranslit": "ānhā dar hāl-e khāndan-e namāyish-nāma hastand.",
       "exampleEn": "They are reading the play.",
       "tags": [
         "Arts & Entertainment"
@@ -39373,7 +39373,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او انگیزه کافی برای درس خواندن ندارد.",
-      "exampleTranslit": "ō angēza-ye kāfī barā-ye dars khwāndan nadārad.",
+      "exampleTranslit": "ō angēza-ye kāfī barā-ye dars khāndan nadārad.",
       "exampleEn": "He doesn't have enough motivation to study.",
       "tags": [
         "Abstract Concepts"
@@ -40339,7 +40339,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "من از شما معذرت می‌خواهم.",
-      "exampleTranslit": "man az shumā mazirat mēkhwāham.",
+      "exampleTranslit": "man az shumā mazirat mēkhāham.",
       "exampleEn": "I apologize to you.",
       "tags": [
         "Abstract Concepts"
@@ -40502,7 +40502,7 @@
       "id": "lx-1552",
       "target": "گوشتخوار",
       "targetNormalized": "گوشتخوار",
-      "translit": "gōshtkhwār",
+      "translit": "gōshtkhār",
       "glossEn": "carnivore",
       "pos": "noun",
       "freqRank": 2081,
@@ -40510,7 +40510,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "شیر یک حیوان گوشتخوار است.",
-      "exampleTranslit": "shēr yak haywān-e gōshtkhwār ast.",
+      "exampleTranslit": "shēr yak haywān-e gōshtkhār ast.",
       "exampleEn": "The lion is a carnivorous animal.",
       "tags": [
         "Abstract Concepts"
@@ -42188,7 +42188,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او یک غزل زیبا از حافظ خواند.",
-      "exampleTranslit": "ō yak ghazal-e zēbā az hāfiz khwānd.",
+      "exampleTranslit": "ō yak ghazal-e zēbā az hāfiz khānd.",
       "exampleEn": "He read a beautiful ghazal by Hafez.",
       "tags": [
         "Abstract Concepts"
@@ -42655,7 +42655,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "داکتر درخواست سونوگرافی کرد.",
-      "exampleTranslit": "dāktar darkhwāst-e sōnōgrāfī kard.",
+      "exampleTranslit": "dāktar darkhāst-e sōnōgrāfī kard.",
       "exampleEn": "The doctor requested an ultrasound.",
       "tags": [
         "Abstract Concepts"
@@ -43865,14 +43865,14 @@
       "glossEn": "[not a headword: Iranian; Dari is لیلیه] dormitory",
       "tags": [],
       "concreteness": true,
-      "translit": "khwābgāh",
+      "translit": "khābgāh",
       "freqRank": 2259,
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این خوابگاه است.",
       "exampleEn": "This is a dormitory.",
-      "exampleTranslit": "īn khwābgāh ast."
+      "exampleTranslit": "īn khābgāh ast."
     },
     {
       "id": "lx-2100",
@@ -44491,7 +44491,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او از خدمات صحی خوبی برخوردار است.",
-      "exampleTranslit": "ō az khadamāt-e sihhī-ye khūbī barkhurdār ast.",
+      "exampleTranslit": "ō az khadamāt-e sihhī-ye khūbē barkhurdār ast.",
       "exampleEn": "He enjoys good medical services.",
       "tags": [
         "Abstract Concepts"
@@ -44565,7 +44565,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "خواب کافی سیستم ایمنی را تقویت می‌کند.",
-      "exampleTranslit": "khwāb-e kāfī sīstam-e ēmnī rā taqwiyat mēkunad.",
+      "exampleTranslit": "khāb-e kāfī sīstam-e ēmnī rā taqwiyat mēkunad.",
       "exampleEn": "Adequate sleep strengthens the immune system.",
       "tags": [
         "Abstract Concepts"
@@ -44990,7 +44990,7 @@
       "id": "lx-1803",
       "target": "آوازخوان",
       "targetNormalized": "آوازخوان",
-      "translit": "āwāzkhwān",
+      "translit": "āwāzkhān",
       "glossEn": "singer",
       "pos": "noun",
       "freqRank": 2319,
@@ -44998,7 +44998,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "آوازخوان مشهور کنسرت بزرگی داشت.",
-      "exampleTranslit": "āwāzkhwān-e mashhūr kansart-e buzurgī dāsht.",
+      "exampleTranslit": "āwāzkhān-e mashhūr kansart-e buzurgī dāsht.",
       "exampleEn": "The famous singer had a big concert.",
       "tags": [
         "Abstract Concepts"
@@ -45577,7 +45577,7 @@
       "id": "lx-2322",
       "target": "عذرخواهی",
       "targetNormalized": "عذرخواهی",
-      "translit": "uzr-khwāhī",
+      "translit": "uzr-khāhī",
       "glossEn": "apology",
       "pos": "noun",
       "freqRank": 2350,
@@ -45585,7 +45585,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "من یک عذرخواهی به شما بدهکارم.",
-      "exampleTranslit": "man yak uzr-khwāhī ba shumā bidihkāram.",
+      "exampleTranslit": "man yak uzr-khāhī ba shumā bidihkāram.",
       "exampleEn": "I owe you an apology.",
       "tags": [
         "Abstract Concepts"
@@ -45651,7 +45651,7 @@
       "id": "lx-2133",
       "target": "خودخواه",
       "targetNormalized": "خودخواه",
-      "translit": "khudkhwāh",
+      "translit": "khudkhāh",
       "glossEn": "selfish",
       "pos": "adjective",
       "freqRank": 2354,
@@ -45659,7 +45659,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "رفتار او بسیار خودخواهانه بود.",
-      "exampleTranslit": "raftār-e ō bisyār khudkhwāhāna būd.",
+      "exampleTranslit": "raftār-e ō bisyār khudkhāhāna būd.",
       "exampleEn": "His behavior was very selfish.",
       "tags": [
         "Descriptions & Qualities"
@@ -46377,7 +46377,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "نقاشی با آبرنگ تکنیک خاصی می‌خواهد.",
-      "exampleTranslit": "naqqāshī bā ābrang tiknīk-e khāsī mēkhwāhad.",
+      "exampleTranslit": "naqqāshī bā ābrang tiknīk-e khāsī mēkhāhad.",
       "exampleEn": "Watercolor painting requires a special technique.",
       "tags": [
         "Abstract Concepts"
@@ -46559,7 +46559,7 @@
       "id": "lx-1778",
       "target": "خواب‌آور",
       "targetNormalized": "خواب‌آور",
-      "translit": "khwāb-āwar",
+      "translit": "khāb-āwar",
       "glossEn": "sleeping pill/soporific",
       "pos": "noun",
       "freqRank": 2402,
@@ -46567,7 +46567,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این قرص‌ها خواب‌آور هستند.",
-      "exampleTranslit": "īn qurs-hā khwāb-āwar hastand.",
+      "exampleTranslit": "īn qurs-hā khāb-āwar hastand.",
       "exampleEn": "These pills are soporific.",
       "tags": [
         "Health & Medicine"
@@ -46586,7 +46586,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "تعامل با دیگران مهارت می‌خواهد.",
-      "exampleTranslit": "taāmul bā dīgarān mahārat mēkhwāhad.",
+      "exampleTranslit": "taāmul bā dīgarān mahārat mēkhāhad.",
       "exampleEn": "Interacting with others requires skill.",
       "tags": [
         "Abstract Concepts"
@@ -47334,7 +47334,7 @@
       "id": "lx-1839",
       "target": "شعرخوانی",
       "targetNormalized": "شعرخوانی",
-      "translit": "shi'r-khwānī",
+      "translit": "shi'r-khānī",
       "glossEn": "poetry recitation",
       "pos": "noun",
       "freqRank": 2443,
@@ -47342,7 +47342,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مراسم شعرخوانی در کتابخانه برگزار شد.",
-      "exampleTranslit": "marāsim-e shi'r-khwānī dar kitābkhāna barguzār shud.",
+      "exampleTranslit": "marāsim-e shi'r-khānī dar kitābkhāna barguzār shud.",
       "exampleEn": "The poetry recitation ceremony was held in the library.",
       "tags": [
         "Abstract Concepts"
@@ -47622,7 +47622,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "خواب کافی سیستم ایمنی بدن را تقویت می‌کند.",
-      "exampleTranslit": "khwāb-e kāfī sīstim-e ēmnī-ye badan rā taqwiyat mēkunad.",
+      "exampleTranslit": "khāb-e kāfī sīstim-e ēmnī-ye badan rā taqwiyat mēkunad.",
       "exampleEn": "Enough sleep strengthens the body's immune system.",
       "tags": [
         "Body & Anatomy"
@@ -48651,7 +48651,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "او با دلسوزی به بیماران رسیدگی می‌کند.",
-      "exampleTranslit": "ō bā dil-sōzī ba bēmārān rasēdagī mēkunad.",
+      "exampleTranslit": "ō bā dil-sōzī ba bēmārān rasīdagī mēkunad.",
       "exampleEn": "She attends to the patients with compassion.",
       "tags": [
         "Abstract Concepts"
@@ -51273,7 +51273,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "شرکت میزبانی وب خدمات خوبی دارد.",
-      "exampleTranslit": "shirkat-e mēzbānī-ye wēb khadamāt-e khūbī dārad.",
+      "exampleTranslit": "shirkat-e mēzbānī-ye wēb khadamāt-e khūbē dārad.",
       "exampleEn": "The web hosting company has good services.",
       "tags": [
         "Science & Technology"
@@ -51577,7 +51577,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او قطعا خواهد آمد.",
-      "exampleTranslit": "ō qat'an khwāhad āmad.",
+      "exampleTranslit": "ō qat'an khāhad āmad.",
       "exampleEn": "He will definitely come.",
       "tags": [
         "Descriptions & Qualities"
@@ -52109,7 +52109,7 @@
       "id": "lx-2271",
       "target": "خیرخواه",
       "targetNormalized": "خیرخواه",
-      "translit": "khayrkhwāh",
+      "translit": "khayrkhāh",
       "glossEn": "benevolent",
       "pos": "adjective",
       "freqRank": 2698,
@@ -52117,7 +52117,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او یک انسان خیرخواه است.",
-      "exampleTranslit": "ō yak insān-e khayrkhwāh ast.",
+      "exampleTranslit": "ō yak insān-e khayrkhāh ast.",
       "exampleEn": "He is a benevolent human being.",
       "tags": [
         "Descriptions & Qualities"
@@ -53415,7 +53415,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "او دچار اختلال خواب شده است.",
-      "exampleTranslit": "ū duchār-e ikhtilāl-e khwāb shuda ast.",
+      "exampleTranslit": "ū duchār-e ikhtilāl-e khāb shuda ast.",
       "exampleEn": "He has developed a sleep disorder.",
       "tags": [
         "Abstract Concepts"
@@ -53483,7 +53483,7 @@
       "id": "lx-2272",
       "target": "بدخواه",
       "targetNormalized": "بدخواه",
-      "translit": "badkhwāh",
+      "translit": "badkhāh",
       "glossEn": "malevolent",
       "pos": "adjective",
       "freqRank": 2772,
@@ -53491,7 +53491,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بدخواهان همیشه شکست می‌خورند.",
-      "exampleTranslit": "badkhwāhān hamēsha shikast mēkhurand.",
+      "exampleTranslit": "badkhāhān hamēsha shikast mēkhurand.",
       "exampleEn": "Malevolent people always fail.",
       "tags": [
         "Descriptions & Qualities"
@@ -54289,7 +54289,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او در پوهنتون الهیات می‌خواند.",
-      "exampleTranslit": "ō dar pōhantūn ilāhiyāt mēkhwānad.",
+      "exampleTranslit": "ō dar pōhantūn ilāhiyāt mēkhānad.",
       "exampleEn": "He studies theology at the university.",
       "tags": [
         "Abstract Concepts"
@@ -54636,7 +54636,7 @@
       "id": "lx-2329",
       "target": "خیرخواهی",
       "targetNormalized": "خیرخواهی",
-      "translit": "khayr-khwāhī",
+      "translit": "khayr-khāhī",
       "glossEn": "benevolence",
       "pos": "noun",
       "freqRank": 2834,
@@ -54644,7 +54644,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "خیرخواهی صفت نیکویی است.",
-      "exampleTranslit": "khayr-khwāhī sifat-e nēkōyē ast.",
+      "exampleTranslit": "khayr-khāhī sifat-e nēkōyē ast.",
       "exampleEn": "Benevolence is a good trait.",
       "tags": [
         "Abstract Concepts"
@@ -54955,7 +54955,7 @@
         "kun"
       ],
       "exampleTarget": "درخواست من رد شد.",
-      "exampleTranslit": "darkhwāst-e man rad shud.",
+      "exampleTranslit": "darkhāst-e man rad shud.",
       "exampleEn": "My request was rejected.",
       "tags": [
         "Actions & Movement"
@@ -54983,7 +54983,7 @@
       "id": "lx-2202",
       "target": "معذرت خواستن",
       "targetNormalized": "معذرت خواستن",
-      "translit": "mazirat khwāstan",
+      "translit": "mazirat khāstan",
       "glossEn": "to apologize",
       "pos": "verb",
       "freqRank": 2852,
@@ -54993,7 +54993,7 @@
         "khwāh"
       ],
       "exampleTarget": "باید از او معذرت بخواهی.",
-      "exampleTranslit": "bāyad az ō mazirat bikhwāhī.",
+      "exampleTranslit": "bāyad az ō mazirat bikhāhī.",
       "exampleEn": "You must apologize to him.",
       "tags": [
         "Actions & Movement"
@@ -59322,7 +59322,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "من مشخصاً این کتاب را خواستم.",
-      "exampleTranslit": "man mushakhkhasan īn kitāb rā khwāstam.",
+      "exampleTranslit": "man mushakhkhasan īn kitāb rā khāstam.",
       "exampleEn": "I specifically asked for this book.",
       "tags": [
         "Descriptions & Qualities"
@@ -59549,7 +59549,7 @@
         "تظاهر میکند"
       ],
       "exampleTarget": "او تظاهر کرد که خواب است.",
-      "exampleTranslit": "ō tazāhur kard ki khwāb ast.",
+      "exampleTranslit": "ō tazāhur kard ki khāb ast.",
       "exampleEn": "He pretended to be asleep.",
       "tags": [
         "Actions & Movement"
@@ -59745,7 +59745,7 @@
         "-"
       ],
       "exampleTarget": "نتایج این تصمیم در بلندمدت آشکار خواهد شد.",
-      "exampleTranslit": "natāyij-e īn tasmēm dar buland-muddat āshkār khwāhad shud.",
+      "exampleTranslit": "natāyij-e īn tasmēm dar buland-muddat āshkār khāhad shud.",
       "exampleEn": "The consequences of this decision will become apparent in the long run.",
       "tags": [
         "Abstract Concepts"
@@ -60167,7 +60167,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این منطقه خواهان خودمختاری بیشتر است.",
-      "exampleTranslit": "īn minṭaqa khwāhān-e khwud-mukhtārī-ye bēshtar ast.",
+      "exampleTranslit": "īn minṭaqa khāhān-e khwud-mukhtārī-ye bēshtar ast.",
       "exampleEn": "This region seeks greater autonomy.",
       "tags": [
         "Abstract Concepts"
@@ -60471,7 +60471,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "برعکس، من فکر می‌کنم این ایده خوبی است.",
-      "exampleTranslit": "bar'aks, man fikr mēkunam īn aīda-ye khūbī ast.",
+      "exampleTranslit": "bar'aks, man fikr mēkunam īn aīda-ye khūbē ast.",
       "exampleEn": "On the contrary, I think it's a good idea.",
       "tags": [
         "Descriptions & Qualities"
@@ -60960,7 +60960,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "کشور از صندوق بین‌المللی پول وام درخواست کرد.",
-      "exampleTranslit": "kishwar az sandūq-e bayn-ul-milalī-ye pūl wām dar-khwāst kard.",
+      "exampleTranslit": "kishwar az sandūq-e bayn-ul-milalī-ye pūl wām dar-khāst kard.",
       "exampleEn": "The country requested a loan from the International Monetary Fund.",
       "tags": [
         "Abstract Concepts"
@@ -61560,7 +61560,7 @@
       "id": "lx-2586",
       "target": "رانت‌خواری",
       "targetNormalized": "رانت‌خواری",
-      "translit": "rānt-khwārī",
+      "translit": "rānt-khārī",
       "glossEn": "rent-seeking/profiteering",
       "pos": "noun",
       "freqRank": 3198,
@@ -61568,7 +61568,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "اقتصاد کشور از مشکل رانت‌خواری رنج می‌برد.",
-      "exampleTranslit": "iqtisād-e kishwar az mushkil-e rānt-khwārī ranj mēbarad.",
+      "exampleTranslit": "iqtisād-e kishwar az mushkil-e rānt-khārī ranj mēbarad.",
       "exampleEn": "The country's economy suffers from the problem of rent-seeking.",
       "tags": [
         "Abstract Concepts"
@@ -65819,7 +65819,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سازمان ملل متحد خواستار آتش‌بس فوری شد.",
-      "exampleTranslit": "sāzmān-e milal-e muttaḥid khwāstār-e ātash-bas-e fawrī shud.",
+      "exampleTranslit": "sāzmān-e milal-e muttaḥid khāstār-e ātash-bas-e fawrī shud.",
       "exampleEn": "The United Nations called for an immediate ceasefire.",
       "tags": [
         "Abstract Concepts"
@@ -66653,7 +66653,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "آزادی زندانیان سیاسی یکی از خواسته‌های اصلی بود.",
-      "exampleTranslit": "āzādī-ye zindānyān-e siyāsī yakī az khwāsta-hā-ye aṣlī būd.",
+      "exampleTranslit": "āzādī-ye zindānyān-e siyāsī yakī az khāsta-hā-ye aṣlī būd.",
       "exampleEn": "The release of political prisoners was one of the main demands.",
       "tags": [
         "Abstract Concepts"
@@ -68836,7 +68836,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "بین خواسته‌های آنها تعارض وجود دارد.",
-      "exampleTranslit": "bayn-e khwāsta-hā-ye ānhā ta'āruz wujūd dārad.",
+      "exampleTranslit": "bayn-e khāsta-hā-ye ānhā ta'āruz wujūd dārad.",
       "exampleEn": "There is a conflict between their desires.",
       "tags": [
         "Society & Politics"
@@ -70125,7 +70125,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "فضانوردان به ایستگاه فضایی بین‌المللی رسیدند.",
-      "exampleTranslit": "fazā-nawardān ba ēstgāh-e fazā'ī-ye baynulmilalī rasēdand.",
+      "exampleTranslit": "fazā-nawardān ba ēstgāh-e fazā'ī-ye baynulmilalī rasīdand.",
       "exampleEn": "The astronauts arrived at the International Space Station.",
       "tags": [
         "Travel & Transportation"
@@ -70505,7 +70505,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "پړسوب پای او هنوز نخوابیده است.",
-      "exampleTranslit": "pārsōb-e pāyi ō hanōz nakhwābēda ast.",
+      "exampleTranslit": "pārsōb-e pāyi ō hanōz nakhābēda ast.",
       "exampleEn": "The swelling in his leg has not gone down yet.",
       "tags": [
         "Abstract Concepts"
@@ -71536,7 +71536,7 @@
       "id": "lx-2963",
       "target": "پوکی استخوان",
       "targetNormalized": "پوکی استخوان",
-      "translit": "pūkī-ye ustukhwān",
+      "translit": "pūkī-ye ustukhān",
       "glossEn": "osteoporosis",
       "pos": "noun",
       "freqRank": 3725,
@@ -71544,7 +71544,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "مصرف کلسیم از پوکی استخوان جلوگیری می‌کند.",
-      "exampleTranslit": "masraf-e kalsiyam az pūkī-ye ustukhwān jilawgīrī mēkunad.",
+      "exampleTranslit": "masraf-e kalsiyam az pūkī-ye ustukhān jilawgīrī mēkunad.",
       "exampleEn": "Calcium consumption prevents osteoporosis.",
       "tags": [
         "Abstract Concepts"
@@ -72894,7 +72894,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مرتاض‌ها برای رسیدن به کمال ریاضت می‌کشند.",
-      "exampleTranslit": "murtāz-hā barā-ye rasēdan ba kamāl riyāzat mēkashand.",
+      "exampleTranslit": "murtāz-hā barā-ye rasīdan ba kamāl riyāzat mēkashand.",
       "exampleEn": "Ascetics endure austerity to reach perfection.",
       "tags": [
         "Abstract Concepts"
@@ -74278,7 +74278,7 @@
         "-"
       ],
       "exampleTarget": "هر انسانی بالقوه توانایی رسیدن به کمال را دارد.",
-      "exampleTranslit": "har insānē bil-quwwa tawānāyī-ye rasēdan ba kamāl rā dārad.",
+      "exampleTranslit": "har insānē bil-quwwa tawānāyī-ye rasīdan ba kamāl rā dārad.",
       "exampleEn": "Every human potentially has the ability to reach perfection.",
       "tags": [
         "Descriptions & Qualities"
@@ -76321,7 +76321,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "یقیناً او پیروز خواهد شد.",
-      "exampleTranslit": "yaqīnan ō pērōz khwāhad shud.",
+      "exampleTranslit": "yaqīnan ō pērōz khāhad shud.",
       "exampleEn": "Surely he will win.",
       "tags": [
         "Descriptions & Qualities"
@@ -77304,7 +77304,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "حمله کننده انتحاری قبل از رسیدن به هدف شناسایی شد.",
-      "exampleTranslit": "hamla-kunanda-ye intihārī qabl az rasēdan ba hadaf shināsāyī shud.",
+      "exampleTranslit": "hamla-kunanda-ye intihārī qabl az rasīdan ba hadaf shināsāyī shud.",
       "exampleEn": "The suicide bomber was identified before reaching the target.",
       "tags": [
         "Abstract Concepts"
@@ -78312,7 +78312,7 @@
         "-"
       ],
       "exampleTarget": "ارسطو غایت زندگی انسان را رسیدن به سعادت می‌داند.",
-      "exampleTranslit": "arastū ghāyat-e zindagī-ye insān rā rasēdan ba sa'ādat mēdānad.",
+      "exampleTranslit": "arastū ghāyat-e zindagī-ye insān rā rasīdan ba sa'ādat mēdānad.",
       "exampleEn": "Aristotle considers the ultimate goal of human life to be reaching eudaimonia.",
       "tags": [
         "Abstract Concepts"
@@ -78804,7 +78804,7 @@
         "برملا میسازد"
       ],
       "exampleTarget": "حقیقت بالاخره برملا خواهد شد.",
-      "exampleTranslit": "haqīqat bilākhira barmalā khwāhad shud.",
+      "exampleTranslit": "haqīqat bilākhira barmalā khāhad shud.",
       "exampleEn": "The truth will finally be exposed.",
       "tags": [
         "Actions & Movement"
@@ -79870,7 +79870,7 @@
         "فایق میآید"
       ],
       "exampleTarget": "ما بر تمام مشکلات فایق خواهیم آمد.",
-      "exampleTranslit": "mā bar tamām-e mushkilāt fāyiq khwāhēm āmad.",
+      "exampleTranslit": "mā bar tamām-e mushkilāt fāyiq khāhēm āmad.",
       "exampleEn": "We will overcome all problems.",
       "tags": [
         "Actions & Movement"
@@ -80085,7 +80085,7 @@
         "منجر میشود"
       ],
       "exampleTarget": "این تصمیم به بحران منجر خواهد شد.",
-      "exampleTranslit": "īn tasmīm ba buhrān munjar khwāhad shud.",
+      "exampleTranslit": "īn tasmīm ba buhrān munjar khāhad shud.",
       "exampleEn": "This decision will lead to a crisis.",
       "tags": [
         "Actions & Movement"
@@ -80263,7 +80263,7 @@
         "پیامد دارد"
       ],
       "exampleTarget": "این کار پیامدهای بدی خواهد داشت.",
-      "exampleTranslit": "īn kār payāmad-hā-ye badī khwāhad dāsht.",
+      "exampleTranslit": "īn kār payāmad-hā-ye badī khāhad dāsht.",
       "exampleEn": "This action will have bad consequences.",
       "tags": [
         "Actions & Movement"
@@ -80301,7 +80301,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بالطبع او ناراحت خواهد شد.",
-      "exampleTranslit": "bi-t-tab' ō nārāhat khwāhad shud.",
+      "exampleTranslit": "bi-t-tab' ō nārāhat khāhad shud.",
       "exampleEn": "Naturally he will be upset.",
       "tags": [
         "Descriptions & Qualities"
@@ -81243,7 +81243,7 @@
         "پیگرد قانونی میکند"
       ],
       "exampleTarget": "مجرمان تحت پیگرد قانونی قرار خواهند گرفت.",
-      "exampleTranslit": "mujrimān taht-e paygard-e qānūnī qarār khwāhand girift.",
+      "exampleTranslit": "mujrimān taht-e paygard-e qānūnī qarār khāhand girift.",
       "exampleEn": "The criminals will be prosecuted.",
       "tags": [
         "Actions & Movement"
@@ -81617,7 +81617,7 @@
         "ادغام میشود"
       ],
       "exampleTarget": "این دو بانک با هم ادغام خواهند شد.",
-      "exampleTranslit": "īn dō bānk bā ham idghām khwāhand shud.",
+      "exampleTranslit": "īn dō bānk bā ham idghām khāhand shud.",
       "exampleEn": "These two banks will merge together.",
       "tags": [
         "Actions & Movement"
@@ -82015,7 +82015,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "روی هم رفته، روز خوبی بود.",
-      "exampleTranslit": "rōy-e ham rafta, rōz-e khūbī būd.",
+      "exampleTranslit": "rōy-e ham rafta, rōz-e khūbē būd.",
       "exampleEn": "Altogether, it was a good day.",
       "tags": [
         "Abstract Concepts"
@@ -82356,7 +82356,7 @@
       "id": "lx-3580",
       "target": "خواه... خواه...",
       "targetNormalized": "خواه... خواه...",
-      "translit": "khwāh... khwāh...",
+      "translit": "khāh... khāh...",
       "glossEn": "whether... or...",
       "pos": "conjunction",
       "freqRank": 4289,
@@ -82364,7 +82364,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "خواه بخواهی خواه نخواهی، باید بروی.",
-      "exampleTranslit": "khwāh bikhwāhī khwāh nakhwāhī, bāyad birawī.",
+      "exampleTranslit": "khāh bikhāhī khāh nakhāhī, bāyad birawī.",
       "exampleEn": "Whether you want to or not, you must go.",
       "tags": [
         "Grammar & Connectors"
@@ -82702,7 +82702,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او به عبارتی پدر خوانده این پروژه است.",
-      "exampleTranslit": "ō ba ibāratī padar-khwānda-ye īn prōzha ast.",
+      "exampleTranslit": "ō ba ibāratī padar-khānda-ye īn prōzha ast.",
       "exampleEn": "He is, so to speak, the godfather of this project.",
       "tags": [
         "Communication & Media"
@@ -82884,7 +82884,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ولو اینکه نخواهی، باید انجام دهی.",
-      "exampleTranslit": "walaw īnki nakhwāhī, bāyad anjām dihī.",
+      "exampleTranslit": "walaw īnki nakhāhī, bāyad anjām dihī.",
       "exampleEn": "Even if you don't want to, you must do it.",
       "tags": [
         "Grammar & Connectors"
@@ -86285,7 +86285,7 @@
       "id": "lx-3760",
       "target": "کیسه خواب",
       "targetNormalized": "کیسه خواب",
-      "translit": "kēsa-ye khwāb",
+      "translit": "kēsa-ye khāb",
       "glossEn": "sleeping bag",
       "pos": "noun",
       "freqRank": 4499,
@@ -86293,7 +86293,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "برای کمپینگ به یک کیسه خواب گرم نیاز داری.",
-      "exampleTranslit": "barā-ye kamping ba yak kēsa-ye khwāb-e garm niyāz dārī.",
+      "exampleTranslit": "barā-ye kamping ba yak kēsa-ye khāb-e garm niyāz dārī.",
       "exampleEn": "You need a warm sleeping bag for camping.",
       "tags": [
         "Abstract Concepts"
@@ -86767,7 +86767,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "څارنوالی مبارزه با فساد به قضیه رسیدگی می‌کند.",
-      "exampleTranslit": "sāranwālī-ye mubāraza bā fasād ba qaziya rasēdagī mēkunad.",
+      "exampleTranslit": "sāranwālī-ye mubāraza bā fasād ba qaziya rasīdagī mēkunad.",
       "exampleEn": "The anti-corruption prosecutor's office is handling the case.",
       "tags": [
         "Work & Business"
@@ -87704,7 +87704,7 @@
       "target": "گپ زدن",
       "targetNormalized": "گپ زدن",
       "pos": "verb",
-      "glossEn": "speak",
+      "glossEn": "to talk, to speak; to chat",
       "tags": [
         "beginner-core",
         "super-7"
@@ -87726,7 +87726,7 @@
       "target": "کار کردن",
       "targetNormalized": "کار کردن",
       "pos": "verb",
-      "glossEn": "work",
+      "glossEn": "to work",
       "tags": [
         "beginner-core",
         "super-7"
@@ -87852,7 +87852,7 @@
       "target": "فکر کردن",
       "targetNormalized": "فکر کردن",
       "pos": "verb",
-      "glossEn": "think",
+      "glossEn": "to think",
       "tags": [
         "beginner-core",
         "super-7"
@@ -87867,7 +87867,7 @@
       "variants": [],
       "exampleTarget": "فکر می‌کنم که او فردا می‌آید.",
       "exampleEn": "I think he is coming tomorrow.",
-      "exampleTranslit": "fikr mēkunam ke ō fardā mēāyad."
+      "exampleTranslit": "fikr mēkunam ki ō fardā mēāyad."
     },
     {
       "id": "lx-6376",
@@ -87975,7 +87975,7 @@
       "target": "زندگی کردن",
       "targetNormalized": "زندگی کردن",
       "pos": "verb",
-      "glossEn": "live",
+      "glossEn": "to live",
       "tags": [
         "beginner-core",
         "super-7"
@@ -89130,7 +89130,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او حساب تفاضلی می‌خواند.",
-      "exampleTranslit": "ō hisāb-e tafāzulī mēkhwānad.",
+      "exampleTranslit": "ō hisāb-e tafāzulī mēkhānad.",
       "exampleEn": "He studies calculus.",
       "tags": [
         "Abstract Concepts"
@@ -90775,7 +90775,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ابلاغیه محکمه به آدرس خوانده ارسال شد.",
-      "exampleTranslit": "iblāghiya-ye mahkama ba ādres-e khwānda irsāl shud.",
+      "exampleTranslit": "iblāghiya-ye mahkama ba ādres-e khānda irsāl shud.",
       "exampleEn": "The court notification was sent to the defendant's address.",
       "tags": [
         "Abstract Concepts"
@@ -91267,7 +91267,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "وزارت خزانه‌داری اوراق قرضه جدیدی منتشر خواهد کرد.",
-      "exampleTranslit": "wizārat-e khazāna-dārī awrāq-e qarza-ye jadēdē muntashir khwāhad kard.",
+      "exampleTranslit": "wizārat-e khazāna-dārī awrāq-e qarza-ye jadēdē muntashir khāhad kard.",
       "exampleEn": "The Treasury Department will issue new bonds.",
       "tags": [
         "Abstract Concepts"
@@ -91278,7 +91278,7 @@
       "id": "lx-4149",
       "target": "فرجام‌خواهی",
       "targetNormalized": "فرجام‌خواهی",
-      "translit": "farjām-khwāhī",
+      "translit": "farjām-khāhī",
       "glossEn": "Appeal to the Supreme Court",
       "pos": "noun",
       "freqRank": 4758,
@@ -91286,7 +91286,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "حق فرجام‌خواهی برای محکومین محفوظ است.",
-      "exampleTranslit": "haqq-e farjām-khwāhī barā-ye mahkūmīn mahfūz ast.",
+      "exampleTranslit": "haqq-e farjām-khāhī barā-ye mahkūmīn mahfūz ast.",
       "exampleEn": "The right to appeal to the supreme court is reserved for convicts.",
       "tags": [
         "Law & Justice"
@@ -91874,7 +91874,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "قیمت بیت‌کوین به بالاترین سطح تاریخی خود رسید.",
-      "exampleTranslit": "qīmat-e bit-kōyn ba bālātarīn sath-e tārīkhī-ye khud rasēd.",
+      "exampleTranslit": "qīmat-e bit-kōyn ba bālātarīn sath-e tārīkhī-ye khud rasīd.",
       "exampleEn": "The price of Bitcoin reached its all-time high.",
       "tags": [
         "Abstract Concepts"
@@ -92026,7 +92026,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "درخواست تجدید نظر در مهلت قانونی ثبت شد.",
-      "exampleTranslit": "darkhwāst-e tajdēd-e nazar dar muhlat-e qānūnī sabt shud.",
+      "exampleTranslit": "darkhāst-e tajdēd-e nazar dar muhlat-e qānūnī sabt shud.",
       "exampleEn": "The appeal was filed within the legal timeframe.",
       "tags": [
         "Abstract Concepts"
@@ -92501,7 +92501,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "شکستن این تابو شهامت می‌خواهد.",
-      "exampleTranslit": "shikastan-e īn tābū shahāmat mēkhwāhad.",
+      "exampleTranslit": "shikastan-e īn tābū shahāmat mēkhāhad.",
       "exampleEn": "Breaking this taboo requires courage.",
       "tags": [
         "Abstract Concepts"
@@ -92539,7 +92539,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ارتوپدی شامل تداوی شکستگی‌های استخوان است.",
-      "exampleTranslit": "ortopēdī shāmil-e tadāwī-ye shikastagī-hā-ye ustukhwān ast.",
+      "exampleTranslit": "ortopēdī shāmil-e tadāwī-ye shikastagī-hā-ye ustukhān ast.",
       "exampleEn": "Orthopedics includes the treatment of bone fractures.",
       "tags": [
         "Abstract Concepts"
@@ -93300,7 +93300,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "دیوان کیفری بین‌المللی به جنایات علیه بشریت رسیدگی می‌کند.",
-      "exampleTranslit": "dēwān-e kayfarī-ye bayn-ul-milalī ba jināyāt alayh-e bashariyat rasēdagī mēkunad.",
+      "exampleTranslit": "dēwān-e kayfarī-ye bayn-ul-milalī ba jināyāt alayh-e bashariyat rasīdagī mēkunad.",
       "exampleEn": "The International Criminal Court prosecutes crimes against humanity.",
       "tags": [
         "Law & Justice"
@@ -95031,7 +95031,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ابزارهای بازار پول دارای سررسید کوتاه‌مدت هستند.",
-      "exampleTranslit": "abzār-hā-ye bāzār-e pūl dārā-ye sar-rasēd-e kōtāh-muddat hastand.",
+      "exampleTranslit": "abzār-hā-ye bāzār-e pūl dārā-ye sar-rasīd-e kōtāh-muddat hastand.",
       "exampleEn": "Money market instruments have a short-term maturity.",
       "tags": [
         "Work & Business"
@@ -95734,7 +95734,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بسته محرک اقتصادی به تصویب پارلمان رسید.",
-      "exampleTranslit": "basta-ye muharrik-e iqtisādī ba taswēb-e pārliman rasēd.",
+      "exampleTranslit": "basta-ye muharrik-e iqtisādī ba taswēb-e pārliman rasīd.",
       "exampleEn": "The economic stimulus package was approved by the parliament.",
       "tags": [
         "Abstract Concepts"
@@ -96798,7 +96798,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این بروزرسانی منجر به یک فورک سخت در شبکه خواهد شد.",
-      "exampleTranslit": "īn birōz-rasānī munjar ba yak fork-e sakht dar shabaka khwāhad shud.",
+      "exampleTranslit": "īn birōz-rasānī munjar ba yak fork-e sakht dar shabaka khāhad shud.",
       "exampleEn": "This update will result in a hard fork in the network.",
       "tags": [
         "Abstract Concepts"
@@ -99365,7 +99365,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "لذا خواهشمند است اقدام فرمایید.",
-      "exampleTranslit": "lizā khwāhishmand ast iqdām farmāyēd.",
+      "exampleTranslit": "lizā khāhishmand ast iqdām farmāyēd.",
       "exampleEn": "Therefore, you are requested to take action.",
       "tags": [
         "Abstract Concepts"
@@ -100318,7 +100318,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او از کشور همسایه درخواست پناهندگی سیاسی کرد.",
-      "exampleTranslit": "ō az kishwar-e hamsāya darkhwāst-e panāhandagī-ye siyāsī kard.",
+      "exampleTranslit": "ō az kishwar-e hamsāya darkhāst-e panāhandagī-ye siyāsī kard.",
       "exampleEn": "He requested political asylum from the neighboring country.",
       "tags": [
         "Abstract Concepts"
@@ -100451,7 +100451,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "استفاده از جنگ‌افزار هسته‌ای فاجعه‌بار خواهد بود.",
-      "exampleTranslit": "istifāda az jang-afzār-e hastawī fāji'a-bār khwāhad būd.",
+      "exampleTranslit": "istifāda az jang-afzār-e hastawī fāji'a-bār khāhad būd.",
       "exampleEn": "The use of nuclear weapons would be catastrophic.",
       "tags": [
         "Society & Politics"
@@ -100869,7 +100869,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "رسیدگی به وضعیت آوارگان داخلی در اولویت است.",
-      "exampleTranslit": "rasēdagī ba waz'iyat-e āwāragān-e dākhilī dar awlawiyat ast.",
+      "exampleTranslit": "rasīdagī ba waz'iyat-e āwāragān-e dākhilī dar awlawiyat ast.",
       "exampleEn": "Addressing the situation of internally displaced persons is a priority.",
       "tags": [
         "Abstract Concepts"
@@ -101040,7 +101040,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مردم خواستار برگزاری انتخابات آزاد هستند.",
-      "exampleTranslit": "mardum khwāstār-e barguzārī-ye intikhābāt-e āzād hastand.",
+      "exampleTranslit": "mardum khāstār-e barguzārī-ye intikhābāt-e āzād hastand.",
       "exampleEn": "The people demand the holding of free elections.",
       "tags": [
         "Abstract Concepts"
@@ -101857,7 +101857,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "رسیدن به هوش جامع مصنوعی چالش‌برانگیز است.",
-      "exampleTranslit": "rasēdan ba hōsh-e jāmi'-e masnū'ī chālish-bar-angēz ast.",
+      "exampleTranslit": "rasīdan ba hōsh-e jāmi'-e masnū'ī chālish-bar-angēz ast.",
       "exampleEn": "Achieving AGI is challenging.",
       "tags": [
         "Abstract Concepts"
@@ -105659,7 +105659,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "گره‌گشایی نهایی به تمام پرسش‌های خواننده پاسخ داد.",
-      "exampleTranslit": "gira-gushāyī-ye nihāyī ba tamām-e pursish-hā-ye khwānanda pāsukh dād.",
+      "exampleTranslit": "gira-gushāyī-ye nihāyī ba tamām-e pursish-hā-ye khānanda pāsukh dād.",
       "exampleEn": "The final resolution answered all of the reader's questions.",
       "tags": [
         "Abstract Concepts"
@@ -105716,7 +105716,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "تک‌گویی درونی به خواننده اجازه می‌دهد به افکار شخصیت دسترسی پیدا کند.",
-      "exampleTranslit": "tak-gōyī-ye darūnī ba khwānanda ijāza mēdihad ba afkār-e shakhsiyat dastrasī paydā kunad.",
+      "exampleTranslit": "tak-gōyī-ye darūnī ba khānanda ijāza mēdihad ba afkār-e shakhsiyat dastrasī paydā kunad.",
       "exampleEn": "Interior monologue allows the reader to access the character's thoughts.",
       "tags": [
         "Abstract Concepts"
@@ -114980,7 +114980,7 @@
       "id": "lx-5315",
       "target": "ذهن‌خوانی",
       "targetNormalized": "ذهن‌خوانی",
-      "translit": "zihn-khwānī",
+      "translit": "zihn-khānī",
       "glossEn": "mind reading",
       "pos": "noun",
       "freqRank": 6004,
@@ -114988,7 +114988,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ذهن‌خوانی یک خطای شناختی است.",
-      "exampleTranslit": "zihn-khwānī yak khatā-ye shinākhtī ast.",
+      "exampleTranslit": "zihn-khānī yak khatā-ye shinākhtī ast.",
       "exampleEn": "Mind reading is a cognitive error.",
       "tags": [
         "Abstract Concepts"
@@ -118028,7 +118028,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سفت‌کاری پروژه به پایان رسید.",
-      "exampleTranslit": "saft-kārī-ye prōzha ba pāyān rasēd.",
+      "exampleTranslit": "saft-kārī-ye prōzha ba pāyān rasīd.",
       "exampleEn": "The rough construction of the project has finished.",
       "tags": [
         "Abstract Concepts"
@@ -119664,7 +119664,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "نمونه‌گیری تا رسیدن به اشباع نظری ادامه یافت.",
-      "exampleTranslit": "namūna-gīrī tā rasēdan ba ishbā'-e nazarī idāma yāft.",
+      "exampleTranslit": "namūna-gīrī tā rasīdan ba ishbā'-e nazarī idāma yāft.",
       "exampleEn": "Sampling continued until theoretical saturation was reached.",
       "tags": [
         "Abstract Concepts"
@@ -119892,7 +119892,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "لطفاً درخواست خود را کتباً ارائه دهید.",
-      "exampleTranslit": "lutfan darkhwāst-e khud rā kitban irā'a dihēd.",
+      "exampleTranslit": "lutfan darkhāst-e khud rā kitban irā'a dihēd.",
       "exampleEn": "Please submit your request in writing.",
       "tags": [
         "Abstract Concepts"
@@ -122253,7 +122253,7 @@
       "id": "lx-5801",
       "target": "بازخواست کردن",
       "targetNormalized": "بازخواست کردن",
-      "translit": "bāzkhwāst kardan",
+      "translit": "bāzkhāst kardan",
       "glossEn": "to hold accountable",
       "pos": "verb",
       "freqRank": 6382,
@@ -122263,7 +122263,7 @@
         "mī-kon-"
       ],
       "exampleTarget": "مدیر او را بازخواست کرد.",
-      "exampleTranslit": "modīr ō rā bāzkhwāst kard.",
+      "exampleTranslit": "modīr ō rā bāzkhāst kard.",
       "exampleEn": "The manager held him accountable.",
       "tags": [
         "Actions & Movement"
@@ -123514,7 +123514,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "به مجرد رسیدن، تماس بگیرید.",
-      "exampleTranslit": "ba mujarrad-e rasēdan, tamās bigīrēd.",
+      "exampleTranslit": "ba mujarrad-e rasīdan, tamās bigīrēd.",
       "exampleEn": "As soon as you arrive, call me.",
       "tags": [
         "Time & Calendar"
@@ -123590,7 +123590,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "از طرفی دلم می‌خواهد بروم، از طرفی کار دارم.",
-      "exampleTranslit": "az tarafē dil-am mēkhwāhad birawam, az tarafē kār dāram.",
+      "exampleTranslit": "az tarafē dil-am mēkhāhad birawam, az tarafē kār dāram.",
       "exampleEn": "On the one hand I want to go, on the other hand I have work.",
       "tags": [
         "Body & Anatomy"
@@ -123647,7 +123647,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "در حالیکه او درس می‌خواند، برادرش بازی می‌کرد.",
-      "exampleTranslit": "dar hālē ki ō dars mēkhwānd, birādar-ash bāzī mēkard.",
+      "exampleTranslit": "dar hālē ki ō dars mēkhānd, birādar-ash bāzī mēkard.",
       "exampleEn": "While he was studying, his brother was playing.",
       "tags": [
         "Abstract Concepts"
