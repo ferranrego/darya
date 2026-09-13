@@ -192,6 +192,86 @@ describe("resolve against the real lexicon", () => {
     expect(idx.resolve(surface)?.target).toBe(headword);
   });
 
+  // A word resolved to a DIFFERENT word. Nothing looks broken: the reader
+  // shows a gloss, and the learner writes the wrong lexeme into their deck.
+  // Every surface below is a real token from shipped content (seed texts,
+  // grammar course, grammar hub, lexicon examples), found by classifying how
+  // each content token resolves and reading every stripped one.
+  describe("does not resolve a word to a different lexeme", () => {
+    // باش is the imperative of بودن ("be!"), from the suppletive باش- stem,
+    // in "تا کار تمام نشود، اینجا باش". The stemmer peeled a possessive ش
+    // off it and answered با "with" - but after a vowel-final word a
+    // possessive is written with a glide (پایش، برایش), never bare.
+    it("باش is بودن, not با + ش", () => {
+      expect(idx.resolve("باش")?.target).toBe("بودن");
+      expect(idx.resolve("نباش")?.target).toBe("بودن");
+    });
+
+    // حالی in "در حالی که" ("while") is حال hāl + the -ē of در حالی. It was
+    // listed as a variant of الان "now", and a variant outranks the stemmer,
+    // so all nine content occurrences - every one of them "در حالی که" -
+    // taught "now".
+    it("حالی is حال + ی, not الان", () => {
+      expect(idx.resolve("حالی")?.target).toBe("حال");
+    });
+
+    // The superlatives lesson teaches بهترین "best" (16 content tokens); it
+    // resolved to به "to". -tarīn is -tar + -īn, so its nearest lexeme is the
+    // listed comparative بهتر.
+    it("بهترین is بهتر + ین, not به + ترین", () => {
+      expect(idx.resolve("بهترین")?.target).toBe("بهتر");
+      expect(idx.resolve("کلان‌ترین")?.target).toBe("کلان");
+    });
+
+    // Words the guards must NOT lose: the glide spelling after a vowel, a
+    // copula on a headword verb, an enclitic on a finite verb, a numeral
+    // plural, and ezafe/indefinite ی after a vowel-final noun.
+    const kept: Array<[string, string]> = [
+      ["برایت", "برای"], ["پایم", "پای"], ["استند", "است"], ["می‌بینمت", "دیدن"],
+      ["هزاران", "هزار"], ["صدها", "صد"], ["صدای", "صدا"], ["خطای", "خطا"], ["دوستانم", "دوست"],
+    ];
+    it.each(kept)("%s still resolves to %s", (surface, target) => {
+      expect(idx.resolve(surface)?.target).toBe(target);
+    });
+
+    // The rest of the class, one representative per rule that produced it.
+    const wrong: Array<[string, string, string]> = [
+      // bare enclitic after a vowel-final root (needs a glide: پایم، برایت)
+      ["بام", "با", "roof, not with + my"],
+      ["تام", "تا", "complete, not until + my"],
+      ["بیش", "بی", "more, not without + his"],
+      ["جوش", "جو", "boil, not atmosphere + his"],
+      ["حیات", "حیا", "life, not modesty + your"],
+      ["قطعات", "قطعا", "pieces, not definitely + your"],
+      ["قابلیت", "قابلی", "capability, not Qabili + your"],
+      // alef-initial ending after a consonant (only follows ZWNJ or silent h)
+      ["صدای", "صد", "sound of, not hundred"],
+      ["اتمام", "اتم", "completion, not atom"],
+      ["دارای", "دار", "possessing, not gallows"],
+      ["مدام", "مود", "constantly, not fashion"],
+      // the participle ه-net peeling a noun's own ه
+      ["ایده‌ها", "اید", "ideas, not Id"],
+      ["کمیته‌ای", "کمیت", "committee, not quantity"],
+      // a plural marker on a verb or a particle
+      ["داده‌ها", "دادن", "data, not to give"],
+      ["بخش‌های", "بخشیدن", "parts, not to forgive"],
+      ["میان", "می", "between, not the می- prefix"],
+      // a comparative on a preposition
+      ["بهترین", "به", "best, not to"],
+      ["برتر", "بر", "superior, not on"],
+      // a person ending stacked on a finite verb form
+      ["بازدید", "باختن", "visit, not to lose"],
+      // a possessive on a bare present stem, which never takes one
+      ["چرت", "چریدن", "nap, not to graze"],
+      // the Kabuli plural rule on a three-letter Arabic root
+      ["اجرا", "آجر", "performance, not brick"],
+      ["فقرا", "فقر", "the poor, not poverty"],
+    ];
+    it.each(wrong)("%s does not resolve to %s (%s)", (surface, notTarget) => {
+      expect(idx.resolve(surface)?.target).not.toBe(notTarget);
+    });
+  });
+
   it("still returns null for actual names", () => {
     expect(idx.resolve("فرشته‌جان")).toBeNull();
   });

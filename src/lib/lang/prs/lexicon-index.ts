@@ -227,6 +227,10 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
   const lookup = (key: string) =>
     headwords.get(key) ?? variants.get(key) ?? spoken.get(key) ?? conjugations.get(key);
 
+  /** A key that is only a verb's listed bare stem (چر، کن), not a finite form or a headword. */
+  const isBareStem = (key: string) =>
+    !headwords.has(key) && variants.get(key)?.pos === "verb" && !conjugations.has(key);
+
   return {
     byId,
     resolve(surface: string) {
@@ -240,8 +244,19 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
       // rather than a listed form - but only accepted when what is left is
       // actually a noun, since a rule firing on any word ending in alef would
       // swallow half the verb paradigms.
+      //
+      // A three-letter base is where the rule meets Arabic: the broken plural
+      // faʿalā (فقرا "the poor", فقها "jurists") and the maṣdar ifʿāl (اجرا
+      // "performance", 14 content tokens) are spelled exactly like a Kabuli
+      // plural of فقر "poverty", فقه, آجر "brick". None of those words is in the
+      // lexicon, so nothing outranked the wrong reading, and اصلاً "at all"
+      // (tanwin folds away) became اصل "principle", and سرما "cold" reached سر
+      // "head" through its variant سرم. Content had 3 correct Kabuli plurals
+      // through this rule (کتابا) against 19 wrong tokens, every one on a
+      // three-letter base, so the rule needs four. The cost: روزا, سالا
+      // stay unresolved - unresolved, not wrong.
       const pluralBase = spokenPluralBase(key);
-      if (pluralBase) {
+      if (pluralBase && pluralBase.length >= 4) {
         const noun = lookup(pluralBase);
         if (noun && noun.pos === "noun") return noun;
       }
@@ -280,25 +295,105 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
       // known cost: پیش is tagged adverb, so پیشتان stays unresolved, as it
       // was before these suffixes existed.
       const pluralPossessives = new Set(["مان", "تان", "شان"]);
-      const fits = (suffix: string, m: LexiconEntry) =>
-        !pluralPossessives.has(suffix) || (m.pos !== "verb" && m.pos !== "adverb");
+
+      // Every guard below was found the same way: by resolving every token in
+      // shipped content, listing the ones reached by stripping, and reading
+      // them. Each one answered a DIFFERENT word - not a near miss, a wrong
+      // card in a learner's deck. A guard rejects a split the orthography or
+      // grammar rules out; it never picks between two readings, so what it
+      // costs is an unresolved token, never a new wrong one.
+      //
+      // Person endings (یم ید ند ام ای ایم اید اند) on a verb: every finite
+      // form is already generated, so a verb reached only by stripping one is
+      // a second ending stacked on a finite form - بازدید "visit" as بازد
+      // (subjunctive of باختن "to lose") + ید. A verb HEADWORD is exempt: است
+      // is a finite form kept as its own entry, and Kabuli استند "they are"
+      // really is است + ند.
+      const personEndings = new Set(["یم", "ید", "ند", "ام", "ای", "ایم", "اید", "اند"]);
+      // Plurals and comparatives attach to what can be counted or compared.
+      // داده‌ها "data" and بخش‌های "parts" peeled to دادن "to give" and
+      // بخشیدن "to forgive"; میان "between" to the می- prefix; بهترین "best"
+      // (16 tokens) and برتر "superior" to the prepositions به and بر.
+      const neverPlural = new Set(["verb", "particle", "preposition", "conjunction", "interjection"]);
+      const comparable = new Set(["adjective", "adverb", "noun"]);
+      // The bare single-letter enclitics.
+      const bareEnclitics = new Set(["م", "ت", "ش"]);
+
+      /**
+       * Whether `root` + `suffix` is a split Dari can actually spell, given
+       * that `root` resolved to `m`. `bare` is true when no ZWNJ separated them.
+       */
+      const fits = (suffix: string, m: LexiconEntry, root: string, bare: boolean) => {
+        if (pluralPossessives.has(suffix) && (m.pos === "verb" || m.pos === "adverb")) return false;
+        if (personEndings.has(suffix) && m.pos === "verb" && !headwords.has(root)) return false;
+        if ((suffix === "ها" || suffix === "ان") && neverPlural.has(m.pos)) return false;
+        if ((suffix === "تر" || suffix === "ترین") && !comparable.has(m.pos)) return false;
+        if (bareEnclitics.has(suffix) && bare) {
+          // After a vowel-final word the enclitic takes a glide: پایم, رویش,
+          // برایت - never bare. So a bare م/ت/ش after ا or و is stem letters:
+          // باش "be!" is not با "with" + ش, nor بام "roof" با + م, تام
+          // "complete" تا + م, جوش "boil" جو + ش, حیات "life" حیا + ت, and
+          // قطعات "pieces" is not قطعاً "definitely" + ت.
+          if (/[او]$/.test(root)) return false;
+          // After -ī the same holds (the enclitic follows a ZWNJ and an alef:
+          // صندلی‌ات), and a bare ت there is the Arabic abstract -iyyat:
+          // قابلیت is not "your قابلی", قطعیت not "your قطعی" (outage). The
+          // glide spelling itself - برای + ت - ends in ای/وی and is allowed,
+          // and so is a finite verb (بگیریش).
+          if (/[^او]ی$/.test(root) && m.pos !== "verb") return false;
+          // A verb reached through a bare present stem, which is only ever
+          // listed as a variant (چر, آموز, تاب, کن): an enclitic pronoun
+          // attaches to a finite form (دیدمش، می‌بینمت), never to a stem,
+          // and stem + ش/ت is the -ish/-t noun instead - چرت "nap" is not
+          // چریدن "to graze", آموزش "education" not آموختن.
+          if (m.pos === "verb" && isBareStem(root)) return false;
+        }
+        return true;
+      };
 
       for (const suffix of suffixes) {
         if (key.endsWith(suffix) && key.length > suffix.length + 1) {
           const root = key.slice(0, -suffix.length);
           if (zwnjOnly.has(suffix) && !root.endsWith(ZWNJ)) continue;
+          // The other alef-initial endings (-am, -ē, -ēm, -ēd, -and) follow a
+          // vowel the same way: after a ZWNJ or a silent h (خانه‌ام، رفته‌اند).
+          // After a consonant Dari writes the enclitic without the alef
+          // (کتابم، خوبند), so a bare alef there belongs to the word: صدای is
+          // صدا "sound" + ی and not صد "hundred" (12 tokens), دارای is not دار
+          // "gallows", اتمام "completion" is not اتم "atom", مدام "constantly"
+          // is not مد "fashion". Skipping lets the shorter ی/م be tried next,
+          // which is how صدای still reaches صدا.
+          if (personEndings.has(suffix) && suffix.startsWith("ا") && !root.endsWith(ZWNJ) && !root.endsWith("ه")) {
+            continue;
+          }
           // Strip ZWNJ if it was placed immediately before the suffix (e.g., خانه-ام)
+          const bare = !root.endsWith(ZWNJ);
           const cleanRoot = root.endsWith(ZWNJ) ? root.slice(0, -1) : root;
 
+          // -tarīn is -tar + -īn, so a comparative the lexicon lists as its own
+          // word is the nearer lexeme: بهترین "best" is بهتر "better" + ین. The
+          // comparative guard below stops it reaching به "to", which is what
+          // it answered in the superlatives lesson before; without this it
+          // would have fallen to unresolved instead.
+          if (suffix === "ترین") {
+            match = lookup(key.slice(0, -2));
+            if (match && fits("تر", match, cleanRoot, bare)) return match;
+          }
+
           match = lookup(cleanRoot);
-          if (match && fits(suffix, match)) return match;
+          if (match && fits(suffix, match, cleanRoot, bare)) return match;
 
           // Perfect participle safety net (uncommon verbs without stems):
           // strip the participle's ه to reach the past stem, e.g. an object
           // enclitic form like دیده‌مش → دیده → دید.
+          //
+          // Verbs only - that is the whole premise. On a noun it strips the
+          // noun's own final h: ایده‌ها "ideas" became اید "Id", کمیته‌ای
+          // "a committee" کمیت "quantity", حرفه‌ای "professional" حرف "word",
+          // لبه‌ای "edge" لب "lip".
           if (cleanRoot.endsWith("ه") && cleanRoot.length > 2) {
             match = lookup(cleanRoot.slice(0, -1));
-            if (match && fits(suffix, match)) return match;
+            if (match && match.pos === "verb" && fits(suffix, match, cleanRoot, bare)) return match;
           }
 
           // Stacked suffixes: standard Dari only stacks plural -ها/-ان
@@ -330,7 +425,13 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
                     ? pluralRoot.slice(0, -1)
                     : pluralRoot;
                   match = lookup(cleanPluralRoot);
-                  if (match && fits(suffix, match)) return match;
+                  if (
+                    match &&
+                    fits(suffix, match, cleanRoot, bare) &&
+                    fits(pluralSuffix, match, cleanPluralRoot, !pluralRoot.endsWith(ZWNJ))
+                  ) {
+                    return match;
+                  }
                 }
               }
             }

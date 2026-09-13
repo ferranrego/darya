@@ -64,6 +64,12 @@ export const SUPPLETIVE_FORMS: Record<string, string> = withZwnjVariants({
   نباشید: BUDAN,
   نباشند: BUDAN,
 
+  // budan - imperative, on the same باش- stem ("اینجا باش" "stay here", "خون‌سرد
+  // باش" "be calm"). Missing, so the stemmer answered با "with" + ش - see the
+  // vowel-final guard in lexicon-index.ts's stemmer.
+  باش: BUDAN,
+  نباش: BUDAN,
+
   // budan - formal present (mē-bāsh-). Common in written and polite Dari, and
   // built on the same suppletive باش- stem as the subjunctive above, so it is
   // no more derivable from بود than باشم is.

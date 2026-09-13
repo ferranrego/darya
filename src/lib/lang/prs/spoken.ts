@@ -20,14 +20,27 @@
  * the wrong word written into their review deck, and nothing anywhere looks
  * broken. That is the `registre` failure this repo already has a rule about.
  *
- * Of those three, only بری is fixed here. مه, مو and ره are genuine
- * homographs - the lexicon really does contain مه "fog", مو "hair" and ره as a
- * stem of رستن "to escape" - and a table that quietly outranked stated lexicon
- * entries would be the same defect pointing the other way: a text about
- * weather would stop resolving مه as weather. They are listed in
- * `CONTESTED_SPOKEN` below with the reasoning, pinned by a test so a new
- * collision cannot appear unnoticed, and left for a philologist to decide -
- * which is a decision about Dari, not about code.
+ * Of those three, only بری is fixed here. مه and ره are genuine homographs -
+ * the lexicon really does contain مه "fog" and ره as a stem of رستن "to
+ * escape" - and a table that quietly outranked stated lexicon entries would be
+ * the same defect pointing the other way: a text about weather would stop
+ * resolving مه as weather. They are listed in `CONTESTED_SPOKEN` below with the
+ * reasoning, pinned by a test so a new collision cannot appear unnoticed, and
+ * left for a philologist to decide - which is a decision about Dari, not about
+ * code.
+ *
+ * مو (mu, "we") and شمو (shumu, "you" plural) used to be listed too, and have
+ * been removed on exactly that kind of decision. A philologist ruled, citing
+ * Glassman's Conversational Dari (1971) and Encyclopaedia Iranica "Kabuli",
+ * that the Kabul pronouns are mā and shumā - the same words as the written
+ * ما and شما - so neither form is Kabuli at all. That made the entries wrong
+ * in both directions the table is used: `spokenFormOf("ما")` showed every
+ * learner who opened ما, one of the most frequent words in the app, "how Kabul
+ * says it: مو mu", teaching a form Kabul does not use; and مو was never
+ * resolved as "we" anyway, because it collides with مو "hair" (it was in
+ * `CONTESTED_SPOKEN`). Removing them costs one resolution, شمو → شما, which
+ * occurs nowhere in shipped content. If a variety that does say mu/shumu is
+ * ever taught, it gets its own table - not the one labelled Kabul.
  *
  * Everything here is written by hand and reviewed, never derived: a guessed
  * form is one a learner will memorise as correct. The list is deliberately
@@ -48,8 +61,7 @@ export const SPOKEN_FORMS: Readonly<Record<string, string>> = {
   // Pronouns and the object marker.
   مه: "من", // ma - "I". Homographic with مه "fog", which see below.
   ره: "را", // ra - object marker, written as a separate word
-  مو: "ما", // mu - "we"
-  شمو: "شما", // shumu - "you" (plural/polite)
+  // No مو/شمو: Kabul says mā and shumā, written ما and شما. See the header.
   // "for" - بری is also a real form of بردن, which is why it resolves wrongly.
   بری: "برای",
   // The copula, which in Kabuli attaches and shortens.
@@ -90,18 +102,20 @@ export const SPOKEN_FORMS: Readonly<Record<string, string>> = {
  * so adding a spoken form that silently does nothing fails the suite.
  *
  *   مه  - Kabuli "I", and the noun "fog"
- *   مو  - Kabuli "we", and the noun "hair"
  *   ره  - Kabuli object marker, and the present stem of رستن "to escape"
  *   استین - Kabuli "you are" (plural), and آستین "sleeve": `matchKey` folds
  *           ا and آ together, so the two are the same key. This one was found
  *           by the test below rather than by reading the list, which is the
  *           argument for the test existing.
  *
- * All three are far more common as the Kabuli form in anything a learner would
+ * (مو "we" was listed here too, until it was ruled not to be Kabuli at all
+ * and removed from the table - see the header.)
+ *
+ * The first three are far more common as the Kabuli form in anything a learner would
  * import or be sent, so overriding is probably right - but "probably" is not
  * the standard for a word written into somebody's review deck.
  */
-export const CONTESTED_SPOKEN: ReadonlySet<string> = new Set(["مه", "مو", "ره", "استین"]);
+export const CONTESTED_SPOKEN: ReadonlySet<string> = new Set(["مه", "ره", "استین"]);
 
 /**
  * How Kabul pronounces each of those, for the "how Kabul says it" line.
@@ -113,8 +127,6 @@ export const CONTESTED_SPOKEN: ReadonlySet<string> = new Set(["مه", "مو", "�
 export const SPOKEN_TRANSLIT: Readonly<Record<string, string>> = {
   مه: "ma",
   ره: "ra",
-  مو: "mu",
-  شمو: "shumu",
   بری: "barē",
   استم: "astum",
   استی: "astī",

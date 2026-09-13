@@ -72,4 +72,15 @@ describe("Kabul spoken forms in the recogniser", () => {
     // only worth showing where they actually differ.
     expect(spokenFormOf("کتاب")).toBeNull();
   });
+
+  it("does not teach mu/shumu as how Kabul says ما and شما", () => {
+    // Ruled by a philologist (Glassman 1971; Encyclopaedia Iranica "Kabuli"):
+    // Kabul says mā and shumā. The word sheet for ما used to show "مو mu".
+    expect(spokenFormOf("ما")).toBeNull();
+    expect(spokenFormOf("شما")).toBeNull();
+    expect(SPOKEN_FORMS["مو"]).toBeUndefined();
+    expect(SPOKEN_FORMS["شمو"]).toBeUndefined();
+    // مو stays the noun "hair" it always resolved to.
+    expect(index.resolve("مو")?.glossEn).toContain("hair");
+  });
 });
