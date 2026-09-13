@@ -6,7 +6,7 @@
       "id": "gh-01",
       "slug": "ezafe",
       "level": "A1",
-      "rank": 3,
+      "rank": 5,
       "title": "The ezafe",
       "summary": "Put -e between a noun and the word that describes or owns it: ketāb-e man, my book.",
       "sample": {
@@ -112,7 +112,7 @@
         },
         {
           "type": "rule",
-          "body": "After -ā, -ō or -ū the ezafe is written as ی: هوای کابل. After -a it is usually left unwritten, just like after a consonant: خانه ما."
+          "body": "After -ā, -ō or -ū the ezafe is written as ی: هوای کابل. After -a, and after -ī, it is usually left unwritten, just like after a consonant: خانه ما."
         },
         {
           "type": "rule",
@@ -129,10 +129,10 @@
               "highlight": "هوای کابل"
             },
             {
-              "target": "دوست خوب من اینجا است",
-              "translit": "dōst-e khōb-e man īnjā ast",
-              "en": "My good friend is here.",
-              "highlight": "دوست خوب من"
+              "target": "دوست نو من اینجا است",
+              "translit": "dōst-e naw-e man īnjā ast",
+              "en": "My new friend is here.",
+              "highlight": "دوست نو من"
             }
           ]
         },
@@ -163,20 +163,14 @@
           "why": "Adjectives follow the noun in Dari. Put the noun first and link the adjective with -e."
         },
         {
-          "type": "spoken",
-          "heading": "In everyday speech",
-          "written": {
-            "target": "کتاب من",
-            "translit": "ketāb-e man"
-          },
-          "spoken": {
-            "target": "کتابم",
-            "translit": "ketābam"
-          },
-          "note": "For 'my', 'your' and 'his' or 'her', people often skip the separate word and add a short ending to the noun instead. Both are correct."
+          "type": "rule",
+          "heading": "A shorter way to say 'my'",
+          "body": "For 'my', 'your' and 'his' or 'her' you will often see an ending on the noun instead of a separate word: کتابم, ketābam, my book. Both are correct. See Possessive endings."
         }
       ],
       "related": [
+        "possessive-endings",
+        "plurals",
         "object-marker-ra"
       ],
       "lessonIds": [
@@ -189,7 +183,7 @@
       "id": "gh-02",
       "slug": "present-tense",
       "level": "A1",
-      "rank": 7,
+      "rank": 8,
       "title": "Present tense with mē-",
       "summary": "mē- + present stem + ending: mēkhānam, I read. One pattern for almost every verb.",
       "sample": {
@@ -281,24 +275,24 @@
           "heading": "Learn the stem with the verb",
           "columns": [
             "Verb",
-            "Present"
+            "Present stem"
           ],
           "rows": [
             [
               "raftan, to go",
-              "mēraw-"
+              "raw- (mērawam)"
             ],
             [
               "khurdan, to eat or drink",
-              "mēkhur-"
+              "khur- (mēkhuram)"
             ],
             [
               "dīdan, to see",
-              "mēbīn-"
+              "bīn- (mēbīnam)"
             ],
             [
               "kardan, to do",
-              "mēkun-"
+              "kun- (mēkunam)"
             ]
           ]
         },
@@ -369,10 +363,12 @@
             "target": "مه مکتب میرم",
             "translit": "ma maktab mērum"
           },
-          "note": "Kabul speech shortens the most common verbs: mērawam becomes mērum. You will see this spelling in messages and on social media."
+          "note": "Kabul speech shortens the most common verbs: mērawam becomes mērum. man becomes ma, and ba before a place is often left out. You will see this spelling in messages and on social media."
         }
       ],
       "related": [
+        "negation",
+        "simple-past",
         "object-marker-ra"
       ],
       "lessonIds": [
@@ -384,7 +380,7 @@
       "id": "gh-03",
       "slug": "object-marker-ra",
       "level": "A1",
-      "rank": 8,
+      "rank": 9,
       "title": "The object marker rā",
       "summary": "Put rā after a specific object: ketāb rā mēkhānam, I read the book.",
       "sample": {
@@ -485,6 +481,10 @@
         },
         {
           "type": "rule",
+          "body": "With 'me' and 'you', rā joins the pronoun in writing: man + rā is مرا, marā, and tu + rā is ترا, turā."
+        },
+        {
+          "type": "rule",
           "heading": "After the whole phrase",
           "body": "rā goes after the complete object, however long it is. It never breaks into an ezafe chain."
         },
@@ -539,11 +539,1622 @@
       ],
       "related": [
         "ezafe",
-        "present-tense"
+        "present-tense",
+        "word-order"
       ],
       "lessonIds": [
         "gl-11",
         "gl-95"
+      ]
+    },
+    {
+      "id": "gh-04",
+      "slug": "pronouns-and-to-be",
+      "level": "A1",
+      "rank": 1,
+      "title": "Pronouns and 'to be'",
+      "summary": "Six pronouns, each with its own form of 'to be' at the end of the sentence: man shāgerd hastam, I am a student.",
+      "sample": {
+        "target": "من هستم",
+        "translit": "man hastam"
+      },
+      "aliases": [
+        "pronoun",
+        "pronouns",
+        "personal pronouns",
+        "to be",
+        "be",
+        "am",
+        "is",
+        "are",
+        "hastam",
+        "ast",
+        "budan",
+        "būdan",
+        "copula",
+        "من",
+        "هستم",
+        "است"
+      ],
+      "keywords": [
+        "I",
+        "you",
+        "he",
+        "she",
+        "we",
+        "they",
+        "polite"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Six pronouns",
+          "body": "Dari has six personal pronouns. ō means both 'he' and 'she': Dari has no grammatical gender, so adjectives and verbs never change for male or female."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Dari",
+            "English"
+          ],
+          "rows": [
+            [
+              "man, من",
+              "I"
+            ],
+            [
+              "tu, تو",
+              "you (one person)"
+            ],
+            [
+              "ō, او",
+              "he or she"
+            ],
+            [
+              "mā, ما",
+              "we"
+            ],
+            [
+              "shumā, شما",
+              "you (plural or polite)"
+            ],
+            [
+              "ānhā, آنها",
+              "they"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Polite 'you'",
+          "body": "Use shumā with anyone older than you, with strangers and with anyone you want to show respect to, even when you speak to one person. tu is for close friends, children and people your own age you know well."
+        },
+        {
+          "type": "table",
+          "heading": "'To be' goes at the end",
+          "columns": [
+            "Person",
+            "To be"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "hastam"
+            ],
+            [
+              "tu, you",
+              "hastī"
+            ],
+            [
+              "ō, he or she",
+              "ast"
+            ],
+            [
+              "mā, we",
+              "hastēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "hastēd"
+            ],
+            [
+              "ānhā, they",
+              "hastand"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من شاگرد هستم",
+              "translit": "man shāgerd hastam",
+              "en": "I am a student.",
+              "highlight": "هستم"
+            },
+            {
+              "target": "شما معلم هستید",
+              "translit": "shumā mu'allem hastēd",
+              "en": "You are a teacher.",
+              "highlight": "هستید"
+            },
+            {
+              "target": "او از کابل است",
+              "translit": "ō az kābul ast",
+              "en": "She is from Kabul.",
+              "highlight": "است"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من هستم شاگرد",
+            "translit": "man hastam shāgerd"
+          },
+          "right": {
+            "target": "من شاگرد هستم",
+            "translit": "man shāgerd hastam",
+            "en": "I am a student."
+          },
+          "why": "'To be' closes the sentence. The word that describes you comes before it."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من معلم است",
+            "translit": "man mu'allem ast"
+          },
+          "right": {
+            "target": "من معلم هستم",
+            "translit": "man mu'allem hastam",
+            "en": "I am a teacher."
+          },
+          "why": "The form of 'to be' has to match the person. ast is for one person or thing that is not 'I' or 'you': ō, īn (this), ketāb (the book)."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "من معلم هستم",
+            "translit": "man mu'allem hastam"
+          },
+          "spoken": {
+            "target": "مه معلم استم",
+            "translit": "ma mu'allem astum"
+          },
+          "note": "In Kabul, man is said ma and hastam is said astum. People type it this way in messages too."
+        }
+      ],
+      "related": [
+        "word-order",
+        "negation",
+        "possessive-endings"
+      ],
+      "lessonIds": [
+        "gl-01",
+        "gl-02"
+      ]
+    },
+    {
+      "id": "gh-05",
+      "slug": "word-order",
+      "level": "A1",
+      "rank": 2,
+      "title": "Word order: the verb goes last",
+      "summary": "Who does it comes first, the verb comes last, and everything else goes in between.",
+      "sample": {
+        "target": "به مکتب می‌روم",
+        "translit": "ba maktab mērawam"
+      },
+      "aliases": [
+        "word order",
+        "sentence order",
+        "order",
+        "sov",
+        "syntax",
+        "verb last",
+        "verb at the end",
+        "sentence structure"
+      ],
+      "keywords": [
+        "sentence",
+        "structure",
+        "position",
+        "where does the verb go"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "The basic order",
+          "body": "A Dari sentence starts with who does something and ends with the verb. Time, place and the object all go in between."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "who",
+              "kind": "slot"
+            },
+            {
+              "text": "when",
+              "kind": "slot"
+            },
+            {
+              "text": "where",
+              "kind": "slot"
+            },
+            {
+              "text": "what",
+              "kind": "slot"
+            },
+            {
+              "text": "verb",
+              "kind": "slot"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من امروز در خانه نان می‌خورم",
+              "translit": "man emrōz dar khāna nān mēkhuram",
+              "en": "I am eating at home today.",
+              "highlight": "می‌خورم"
+            },
+            {
+              "target": "او فردا به کابل می‌رود",
+              "translit": "ō fardā ba kābul mērawad",
+              "en": "He is going to Kabul tomorrow.",
+              "highlight": "می‌رود"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Time can come first",
+          "body": "Words like dīrōz (yesterday), emrōz (today) and fardā (tomorrow) often open the sentence, even before who. The verb still stays last."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "دیروز من به بازار رفتم",
+              "translit": "dīrōz man ba bāzār raftam",
+              "en": "Yesterday I went to the bazaar.",
+              "highlight": "دیروز"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "You can drop the pronoun",
+          "body": "The ending of the verb already says who: raftam can only mean 'I went'. So the pronoun is often left out."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "دیروز به بازار رفتم",
+              "translit": "dīrōz ba bāzār raftam",
+              "en": "Yesterday I went to the bazaar.",
+              "highlight": "رفتم"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Small words and describing words",
+          "body": "One thing works like English: prepositions such as dar (in) and ba (to) go before their noun. One thing does not: adjectives follow the noun, joined with the ezafe."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من می‌خورم نان",
+            "translit": "man mēkhuram nān"
+          },
+          "right": {
+            "target": "من نان می‌خورم",
+            "translit": "man nān mēkhuram",
+            "en": "I eat bread."
+          },
+          "why": "The object goes before the verb, not after it as in English."
+        }
+      ],
+      "related": [
+        "pronouns-and-to-be",
+        "prepositions",
+        "ezafe"
+      ],
+      "lessonIds": [
+        "gl-01",
+        "gl-10"
+      ]
+    },
+    {
+      "id": "gh-06",
+      "slug": "plurals",
+      "level": "A1",
+      "rank": 4,
+      "title": "Plurals: -hā and -ān",
+      "summary": "Add -hā to make almost any noun plural: ketāb, ketāb-hā. After a number the noun stays singular.",
+      "sample": {
+        "target": "کتاب‌ها",
+        "translit": "ketāb-hā"
+      },
+      "aliases": [
+        "plural",
+        "plurals",
+        "ha",
+        "hā",
+        "-ha",
+        "-hā",
+        "an",
+        "-ān",
+        "ها",
+        "ان",
+        "more than one"
+      ],
+      "keywords": [
+        "many",
+        "several",
+        "number",
+        "counting",
+        "singular"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "-hā works for everything",
+          "body": "Add -hā to the end of a noun. It works for things, animals and people. In Dari script it is joined with a half-space, so the word stays readable: کتاب‌ها."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "noun",
+              "kind": "slot"
+            },
+            {
+              "text": "-hā",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کتاب‌ها اینجا هستند",
+              "translit": "ketāb-hā īnjā hastand",
+              "en": "The books are here.",
+              "highlight": "کتاب‌ها"
+            },
+            {
+              "target": "خانه‌ها کلان هستند",
+              "translit": "khāna-hā kalān hastand",
+              "en": "The houses are big.",
+              "highlight": "خانه‌ها"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "-ān for people",
+          "body": "Nouns for people can also take -ān. It sounds more formal and is common in writing, but -hā is always understood."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Singular",
+            "Plural"
+          ],
+          "rows": [
+            [
+              "dōst, friend",
+              "dōst-hā or dōstān"
+            ],
+            [
+              "mard, man",
+              "mard-hā or mardān"
+            ],
+            [
+              "ketāb, book",
+              "ketāb-hā (never ketābān)"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "After a number, no plural",
+          "body": "A number already says how many, so the noun after it stays singular: dū ketāb, literally 'two book'."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من سه برادر دارم",
+              "translit": "man sē barādar dāram",
+              "en": "I have three brothers.",
+              "highlight": "سه برادر"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "دو کتاب‌ها",
+            "translit": "dū ketāb-hā"
+          },
+          "right": {
+            "target": "دو کتاب",
+            "translit": "dū ketāb",
+            "en": "two books"
+          },
+          "why": "After a number the noun never takes -hā."
+        },
+        {
+          "type": "rule",
+          "heading": "Plural with the ezafe",
+          "body": "A -hā plural ends in a vowel, so its ezafe is -ye and is written ی: ketāb-hā-ye man, my books. An -ān plural ends in a consonant and takes a plain -e: dōstān-e man, my friends."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کتاب‌های من اینجا هستند",
+              "translit": "ketāb-hā-ye man īnjā hastand",
+              "en": "My books are here.",
+              "highlight": "کتاب‌های"
+            }
+          ]
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "کتاب‌ها",
+            "translit": "ketāb-hā"
+          },
+          "spoken": {
+            "target": "کتابا",
+            "translit": "ketābā"
+          },
+          "note": "In Kabul speech -hā usually loses its h and becomes -ā. You will see it spelled that way in messages."
+        }
+      ],
+      "related": [
+        "ezafe",
+        "possessive-endings"
+      ],
+      "lessonIds": [
+        "gl-04"
+      ]
+    },
+    {
+      "id": "gh-07",
+      "slug": "questions",
+      "level": "A1",
+      "rank": 3,
+      "title": "Asking questions",
+      "summary": "Put the question word where the answer would go and keep the verb last. For yes or no, just let your voice rise.",
+      "sample": {
+        "target": "کجا؟",
+        "translit": "kujā?"
+      },
+      "aliases": [
+        "question",
+        "questions",
+        "question words",
+        "asking",
+        "what",
+        "who",
+        "where",
+        "when",
+        "how",
+        "how many",
+        "why",
+        "which",
+        "che",
+        "chi",
+        "ki",
+        "kujā",
+        "chetōr",
+        "chand",
+        "cherā",
+        "āyā",
+        "کجا",
+        "چه",
+        "چرا",
+        "چطور"
+      ],
+      "keywords": [
+        "ask",
+        "interrogative",
+        "yes no question",
+        "question mark"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Same order as the answer",
+          "body": "Dari does not move words around to ask a question. The question word sits exactly where the answer would sit, and the verb stays at the end."
+        },
+        {
+          "type": "table",
+          "heading": "The question words",
+          "columns": [
+            "Dari",
+            "English"
+          ],
+          "rows": [
+            [
+              "che, چه",
+              "what"
+            ],
+            [
+              "kī, کی",
+              "who"
+            ],
+            [
+              "kujā, کجا",
+              "where"
+            ],
+            [
+              "chetōr, چطور",
+              "how"
+            ],
+            [
+              "chand, چند",
+              "how many"
+            ],
+            [
+              "cherā, چرا",
+              "why"
+            ],
+            [
+              "kudām, کدام",
+              "which"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "body": "The letters کی spell kī, who. They can also spell kay, when, but in Kabul 'when' is usually said che waqt."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "تو کجا هستی؟",
+              "translit": "tu kujā hastī?",
+              "en": "Where are you?",
+              "highlight": "کجا"
+            },
+            {
+              "target": "او کی است؟",
+              "translit": "ō kī ast?",
+              "en": "Who is he?",
+              "highlight": "کی"
+            },
+            {
+              "target": "تو چند برادر داری؟",
+              "translit": "tu chand barādar dārī?",
+              "en": "How many brothers do you have?",
+              "highlight": "چند"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "chīst: what is",
+          "body": "'What is' is squeezed into one word, chīst: nām-e shumā chīst? What is your name?"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "نام شما چیست؟",
+              "translit": "nām-e shumā chīst?",
+              "en": "What is your name?",
+              "highlight": "چیست"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Yes or no questions",
+          "body": "Keep the sentence exactly as it is and let your voice rise at the end. In writing, add the Dari question mark ؟. Formal Dari can open with āyā, but you rarely need it. Answer with balē (yes) or na (no)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "تو معلم هستی؟",
+              "translit": "tu mu'allem hastī?",
+              "en": "Are you a teacher?"
+            },
+            {
+              "target": "بلی، من معلم هستم",
+              "translit": "balē, man mu'allem hastam",
+              "en": "Yes, I am a teacher.",
+              "highlight": "بلی"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "هستی تو معلم؟",
+            "translit": "hastī tu mu'allem?"
+          },
+          "right": {
+            "target": "تو معلم هستی؟",
+            "translit": "tu mu'allem hastī?",
+            "en": "Are you a teacher?"
+          },
+          "why": "Dari never moves the verb to the front to make a question. Only your voice changes."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "حال تو چطور است؟",
+            "translit": "hāl-e tu chetōr ast?"
+          },
+          "spoken": {
+            "target": "چطور استی؟",
+            "translit": "chetōr astī?"
+          },
+          "note": "Kabul's everyday 'How are you?' to a friend drops hāl and uses astī, the spoken form of hastī."
+        }
+      ],
+      "related": [
+        "word-order",
+        "pronouns-and-to-be"
+      ],
+      "lessonIds": [
+        "gl-03",
+        "gl-02"
+      ]
+    },
+    {
+      "id": "gh-08",
+      "slug": "negation",
+      "level": "A1",
+      "rank": 10,
+      "title": "Saying no: na- and nēst",
+      "summary": "Put na- in front of the verb: mērawam, namērawam. 'To be' has its own negative: nēstam, I am not.",
+      "sample": {
+        "target": "نمی‌روم",
+        "translit": "namērawam"
+      },
+      "aliases": [
+        "negation",
+        "negative",
+        "not",
+        "no",
+        "don't",
+        "didn't",
+        "doesn't",
+        "na",
+        "na-",
+        "nami",
+        "namē",
+        "nemi",
+        "nest",
+        "nēst",
+        "نه",
+        "نمی",
+        "نیست"
+      ],
+      "keywords": [
+        "deny",
+        "never",
+        "opposite"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "One prefix",
+          "body": "To make almost any verb negative, put na- in front of it. In the present tense mē- becomes namē-."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Yes",
+            "No"
+          ],
+          "rows": [
+            [
+              "mērawam, I go",
+              "namērawam, I don't go"
+            ],
+            [
+              "raftam, I went",
+              "naraftam, I didn't go"
+            ],
+            [
+              "dāram, I have",
+              "nadāram, I don't have"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من گوشت نمی‌خورم",
+              "translit": "man gōsht namēkhuram",
+              "en": "I don't eat meat.",
+              "highlight": "نمی‌خورم"
+            },
+            {
+              "target": "او دیروز به مکتب نرفت",
+              "translit": "ō dīrōz ba maktab naraft",
+              "en": "He didn't go to school yesterday.",
+              "highlight": "نرفت"
+            },
+            {
+              "target": "ما موتر نداریم",
+              "translit": "mā mōtar nadārēm",
+              "en": "We don't have a car.",
+              "highlight": "نداریم"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "'To be' has its own negative",
+          "columns": [
+            "Yes",
+            "No"
+          ],
+          "rows": [
+            [
+              "hastam",
+              "nēstam"
+            ],
+            [
+              "hastī",
+              "nēstī"
+            ],
+            [
+              "ast",
+              "nēst"
+            ],
+            [
+              "hastēm",
+              "nēstēm"
+            ],
+            [
+              "hastēd",
+              "nēstēd"
+            ],
+            [
+              "hastand",
+              "nēstand"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من معلم نیستم",
+              "translit": "man mu'allem nēstam",
+              "en": "I am not a teacher.",
+              "highlight": "نیستم"
+            },
+            {
+              "target": "کتاب اینجا نیست",
+              "translit": "ketāb īnjā nēst",
+              "en": "The book isn't here.",
+              "highlight": "نیست"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Answering no",
+          "body": "On its own, 'no' is na, نه, and 'yes' is balē, بلی."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من نه می‌روم",
+            "translit": "man na mērawam"
+          },
+          "right": {
+            "target": "من نمی‌روم",
+            "translit": "man namērawam",
+            "en": "I don't go."
+          },
+          "why": "na- joins the verb as a prefix. Written as a separate word, نه is an answer, 'no'."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من معلم نه هستم",
+            "translit": "man mu'allem na hastam"
+          },
+          "right": {
+            "target": "من معلم نیستم",
+            "translit": "man mu'allem nēstam",
+            "en": "I am not a teacher."
+          },
+          "why": "'To be' does not take na-. Use its own negative forms: nēstam, nēst."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "نیست",
+            "translit": "nēst"
+          },
+          "spoken": {
+            "target": "نیس",
+            "translit": "nēs"
+          },
+          "note": "In speech the final t of nēst is usually dropped: nēs. Messages often spell it that way."
+        }
+      ],
+      "related": [
+        "present-tense",
+        "simple-past",
+        "pronouns-and-to-be"
+      ],
+      "lessonIds": [
+        "gl-12",
+        "gl-14"
+      ]
+    },
+    {
+      "id": "gh-09",
+      "slug": "possessive-endings",
+      "level": "A1",
+      "rank": 12,
+      "title": "Possessive endings",
+      "summary": "Instead of ketāb-e man you can add an ending to the noun: ketābam, my book. Both are correct.",
+      "sample": {
+        "target": "کتابم",
+        "translit": "ketābam"
+      },
+      "aliases": [
+        "possessive",
+        "possessives",
+        "possessive endings",
+        "possessive suffix",
+        "pronoun suffix",
+        "my",
+        "your",
+        "his",
+        "her",
+        "our",
+        "their",
+        "-am",
+        "-at",
+        "-ash",
+        "-et",
+        "-esh",
+        "enclitic"
+      ],
+      "keywords": [
+        "mine",
+        "yours",
+        "owner",
+        "belong"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "A shorter 'my'",
+          "body": "Dari has two ways to say whose something is. The long way links a pronoun with the ezafe: ketāb-e man. The short way adds an ending to the noun: ketābam. They mean the same; the short way is what you hear most in speech."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "noun",
+              "kind": "slot"
+            },
+            {
+              "text": "ending",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The endings",
+          "columns": [
+            "Owner",
+            "Ending"
+          ],
+          "rows": [
+            [
+              "my",
+              "-am: ketābam"
+            ],
+            [
+              "your",
+              "-at: ketābat"
+            ],
+            [
+              "his or her",
+              "-ash: ketābash"
+            ],
+            [
+              "our",
+              "-emān: ketābemān"
+            ],
+            [
+              "your (plural or polite)",
+              "-etān: ketābetān"
+            ],
+            [
+              "their",
+              "-eshān: ketābeshān"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "کتابم اینجا است",
+              "translit": "ketābam īnjā ast",
+              "en": "My book is here.",
+              "highlight": "کتابم"
+            },
+            {
+              "target": "نامش احمد است",
+              "translit": "nāmash ahmad ast",
+              "en": "His name is Ahmad.",
+              "highlight": "نامش"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "After -a",
+          "body": "After a noun ending in -a, the ending is written apart with a half-space. The singular endings keep their vowel, the plural ones lose their e: khāna-am, my house, but khāna-mān, our house."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Owner",
+            "khāna, house"
+          ],
+          "rows": [
+            [
+              "my",
+              "khāna-am"
+            ],
+            [
+              "your",
+              "khāna-at"
+            ],
+            [
+              "his or her",
+              "khāna-ash"
+            ],
+            [
+              "our",
+              "khāna-mān"
+            ],
+            [
+              "your (plural or polite)",
+              "khāna-tān"
+            ],
+            [
+              "their",
+              "khāna-shān"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "خانه‌ام کلان است",
+              "translit": "khāna-am kalān ast",
+              "en": "My house is big.",
+              "highlight": "خانه‌ام"
+            },
+            {
+              "target": "خانه‌ات کجا است؟",
+              "translit": "khāna-at kujā ast?",
+              "en": "Where is your house?",
+              "highlight": "خانه‌ات"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "With an adjective",
+          "body": "The ending goes on the last word of the whole phrase. With an adjective, that is the adjective: barādar-e kalānam, my older brother."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "برادرم کلان",
+            "translit": "barādaram-e kalān"
+          },
+          "right": {
+            "target": "برادر کلانم",
+            "translit": "barādar-e kalānam",
+            "en": "my older brother"
+          },
+          "why": "The ending waits until the end of the phrase, after the adjective."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "کتابت",
+            "translit": "ketābat"
+          },
+          "spoken": {
+            "target": "کتابت",
+            "translit": "ketābet"
+          },
+          "note": "The spelling is the same, but in Kabul the endings are said -et and -esh: ketābet, ketābesh."
+        }
+      ],
+      "related": [
+        "ezafe",
+        "plurals",
+        "pronouns-and-to-be"
+      ],
+      "lessonIds": [
+        "gl-17"
+      ]
+    },
+    {
+      "id": "gh-10",
+      "slug": "prepositions",
+      "level": "A1",
+      "rank": 6,
+      "title": "Prepositions: dar, ba, az, bā",
+      "summary": "Small words that go before a noun: dar kābul (in Kabul), ba maktab (to school), az khāna (from home), bā dōst (with a friend).",
+      "sample": {
+        "target": "در کابل",
+        "translit": "dar kābul"
+      },
+      "aliases": [
+        "preposition",
+        "prepositions",
+        "in",
+        "at",
+        "to",
+        "from",
+        "with",
+        "for",
+        "without",
+        "dar",
+        "da",
+        "ba",
+        "be",
+        "az",
+        "bā",
+        "barā-ye",
+        "bē",
+        "در",
+        "به",
+        "از",
+        "با",
+        "برای"
+      ],
+      "keywords": [
+        "place",
+        "direction",
+        "location"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Before the noun",
+          "body": "Prepositions work like English ones: they come right before the noun they belong to."
+        },
+        {
+          "type": "table",
+          "heading": "The everyday ones",
+          "columns": [
+            "Dari",
+            "English"
+          ],
+          "rows": [
+            [
+              "dar, در",
+              "in, at"
+            ],
+            [
+              "ba, به",
+              "to"
+            ],
+            [
+              "az, از",
+              "from"
+            ],
+            [
+              "bā, با",
+              "with"
+            ],
+            [
+              "barā-ye, برای",
+              "for"
+            ],
+            [
+              "bē, بی",
+              "without"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من در کابل زندگی می‌کنم",
+              "translit": "man dar kābul zindagī mēkunam",
+              "en": "I live in Kabul.",
+              "highlight": "در"
+            },
+            {
+              "target": "او به بازار می‌رود",
+              "translit": "ō ba bāzār mērawad",
+              "en": "He is going to the bazaar.",
+              "highlight": "به"
+            },
+            {
+              "target": "او با پدر من است",
+              "translit": "ō bā padar-e man ast",
+              "en": "He is with my father.",
+              "highlight": "با"
+            },
+            {
+              "target": "این برای شما است",
+              "translit": "īn barā-ye shumā ast",
+              "en": "This is for you.",
+              "highlight": "برای"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "ba or dar?",
+          "body": "ba is for moving towards a place. For being in a place, use dar."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من به خانه هستم",
+            "translit": "man ba khāna hastam"
+          },
+          "right": {
+            "target": "من در خانه هستم",
+            "translit": "man dar khāna hastam",
+            "en": "I am at home."
+          },
+          "why": "You are not moving, so the place takes dar, not ba."
+        },
+        {
+          "type": "rule",
+          "heading": "Some take the ezafe",
+          "body": "A few words that began life as nouns link to their noun with the ezafe: pusht-e khāna, behind the house; zēr-e mēz, under the table. pēsh-e works the same way and usually means 'at someone's place': pēsh-e dāktar, at the doctor's. barā-ye already carries its ezafe."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من کابل در هستم",
+            "translit": "man kābul dar hastam"
+          },
+          "right": {
+            "target": "من در کابل هستم",
+            "translit": "man dar kābul hastam",
+            "en": "I am in Kabul."
+          },
+          "why": "Prepositions go before the noun. Only the verb moves to the end of the sentence."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "من در خانه هستم",
+            "translit": "man dar khāna hastam"
+          },
+          "spoken": {
+            "target": "مه ده خانه استم",
+            "translit": "ma da khāna astum"
+          },
+          "note": "In Kabul speech dar becomes da, usually typed ده, and da is also used where writing has ba: ma da maktab mērum, I go to school."
+        }
+      ],
+      "related": [
+        "word-order",
+        "there-is-and-to-have",
+        "ezafe"
+      ],
+      "lessonIds": [
+        "gl-07"
+      ]
+    },
+    {
+      "id": "gh-11",
+      "slug": "there-is-and-to-have",
+      "level": "A1",
+      "rank": 7,
+      "title": "'There is' and 'to have'",
+      "summary": "hast says something exists: chāy hast, there is tea. dāram says you have it: chāy dāram, I have tea.",
+      "sample": {
+        "target": "هست",
+        "translit": "hast"
+      },
+      "aliases": [
+        "there is",
+        "there are",
+        "there isn't",
+        "have",
+        "has",
+        "to have",
+        "have got",
+        "hast",
+        "nest",
+        "nēst",
+        "daram",
+        "dāram",
+        "dashtan",
+        "dāshtan",
+        "هست",
+        "دارم",
+        "داشتن"
+      ],
+      "keywords": [
+        "exist",
+        "own",
+        "possess",
+        "available"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "ast or hast?",
+          "body": "For 'it' or 'he' and 'she', Dari has two words. ast links a thing to a description: the tea is hot. hast says that something exists: there is tea. The negative of both is nēst. With every other person there is just one set, hastam, hastī and so on, as on the 'to be' page."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "چای گرم است",
+              "translit": "chāy garm ast",
+              "en": "The tea is hot.",
+              "highlight": "است"
+            },
+            {
+              "target": "در خانه چای هست",
+              "translit": "dar khāna chāy hast",
+              "en": "There is tea at home.",
+              "highlight": "هست"
+            },
+            {
+              "target": "در اتاق آب نیست",
+              "translit": "dar utāq āb nēst",
+              "en": "There is no water in the room.",
+              "highlight": "نیست"
+            }
+          ]
+        },
+        {
+          "type": "pattern",
+          "heading": "The pattern",
+          "parts": [
+            {
+              "text": "where",
+              "kind": "slot"
+            },
+            {
+              "text": "what",
+              "kind": "slot"
+            },
+            {
+              "text": "hast / nēst",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "To have: dāshtan",
+          "body": "When dāshtan means 'to have', it takes no mē- in the present: dāram, not mēdāram. Its negative is nadāram. The same goes for dōst dāram, 'I like'."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Person",
+            "To have"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "dāram"
+            ],
+            [
+              "tu, you",
+              "dārī"
+            ],
+            [
+              "ō, he or she",
+              "dārad"
+            ],
+            [
+              "mā, we",
+              "dārēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "dārēd"
+            ],
+            [
+              "ānhā, they",
+              "dārand"
+            ]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من دو برادر دارم",
+              "translit": "man dū barādar dāram",
+              "en": "I have two brothers.",
+              "highlight": "دارم"
+            },
+            {
+              "target": "او موتر ندارد",
+              "translit": "ō mōtar nadārad",
+              "en": "She doesn't have a car.",
+              "highlight": "ندارد"
+            },
+            {
+              "target": "تو وقت داری؟",
+              "translit": "tu waqt dārī?",
+              "en": "Do you have time?",
+              "highlight": "داری"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "من کتاب هست",
+            "translit": "man ketāb hast"
+          },
+          "right": {
+            "target": "من کتاب دارم",
+            "translit": "man ketāb dāram",
+            "en": "I have a book."
+          },
+          "why": "hast says a thing exists somewhere. It cannot mean 'I have'. For having, use dāram."
+        }
+      ],
+      "related": [
+        "negation",
+        "prepositions",
+        "present-tense"
+      ],
+      "lessonIds": [
+        "gl-08",
+        "gl-09"
+      ]
+    },
+    {
+      "id": "gh-12",
+      "slug": "simple-past",
+      "level": "A1",
+      "rank": 11,
+      "title": "Simple past",
+      "summary": "Take the infinitive, drop -an and add the endings: raftan, raftam, I went.",
+      "sample": {
+        "target": "رفتم",
+        "translit": "raftam"
+      },
+      "aliases": [
+        "past",
+        "past tense",
+        "simple past",
+        "preterite",
+        "went",
+        "did",
+        "was",
+        "past stem",
+        "raftam",
+        "ed"
+      ],
+      "keywords": [
+        "yesterday",
+        "finished",
+        "happened",
+        "ago"
+      ],
+      "blocks": [
+        {
+          "type": "rule",
+          "heading": "Built from the infinitive",
+          "body": "Every past form starts from the past stem, which is the infinitive without its final -an: raftan → raft, kardan → kard, khurdan → khurd."
+        },
+        {
+          "type": "pattern",
+          "parts": [
+            {
+              "text": "past stem",
+              "kind": "slot"
+            },
+            {
+              "text": "ending",
+              "kind": "fixed"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "The endings, with raftan (to go)",
+          "columns": [
+            "Person",
+            "Past"
+          ],
+          "rows": [
+            [
+              "man, I",
+              "raftam"
+            ],
+            [
+              "tu, you",
+              "raftī"
+            ],
+            [
+              "ō, he or she",
+              "raft"
+            ],
+            [
+              "mā, we",
+              "raftēm"
+            ],
+            [
+              "shumā, you (plural or polite)",
+              "raftēd"
+            ],
+            [
+              "ānhā, they",
+              "raftand"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "body": "ō takes no ending at all: ō raft, he went. And unlike the present, the simple past has no mē-."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "دیروز به بازار رفتم",
+              "translit": "dīrōz ba bāzār raftam",
+              "en": "Yesterday I went to the bazaar.",
+              "highlight": "رفتم"
+            },
+            {
+              "target": "او نان خورد",
+              "translit": "ō nān khurd",
+              "en": "He ate.",
+              "highlight": "خورد"
+            },
+            {
+              "target": "ما یک کتاب خریدیم",
+              "translit": "mā yak ketāb kharīdēm",
+              "en": "We bought a book.",
+              "highlight": "خریدیم"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Common past stems",
+          "columns": [
+            "Verb",
+            "Past stem"
+          ],
+          "rows": [
+            [
+              "raftan, to go",
+              "raft"
+            ],
+            [
+              "āmadan, to come",
+              "āmad"
+            ],
+            [
+              "kardan, to do",
+              "kard"
+            ],
+            [
+              "dīdan, to see",
+              "dīd"
+            ],
+            [
+              "guftan, to say",
+              "guft"
+            ],
+            [
+              "khurdan, to eat or drink",
+              "khurd"
+            ]
+          ]
+        },
+        {
+          "type": "rule",
+          "heading": "Didn't",
+          "body": "Put na- in front: naraftam, I didn't go."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "target": "من دیروز کار نکردم",
+              "translit": "man dīrōz kār nakardam",
+              "en": "I didn't work yesterday.",
+              "highlight": "نکردم"
+            }
+          ]
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "دیروز به بازار می‌روم",
+            "translit": "dīrōz ba bāzār mērawam"
+          },
+          "right": {
+            "target": "دیروز به بازار رفتم",
+            "translit": "dīrōz ba bāzār raftam",
+            "en": "Yesterday I went to the bazaar."
+          },
+          "why": "A time word like dīrōz does not make the sentence past. The verb itself has to be in the past."
+        },
+        {
+          "type": "mistake",
+          "wrong": {
+            "target": "او رفتم",
+            "translit": "ō raftam"
+          },
+          "right": {
+            "target": "او رفت",
+            "translit": "ō raft",
+            "en": "He went."
+          },
+          "why": "The ending must match the person, and for ō there is no ending."
+        },
+        {
+          "type": "spoken",
+          "heading": "In everyday speech",
+          "written": {
+            "target": "رفتم",
+            "translit": "raftam"
+          },
+          "spoken": {
+            "target": "رفتم",
+            "translit": "raftum"
+          },
+          "note": "The spelling stays the same, but Kabul speech says the ending -am as -um: raftum, kardum."
+        }
+      ],
+      "related": [
+        "present-tense",
+        "negation",
+        "word-order"
+      ],
+      "lessonIds": [
+        "gl-13",
+        "gl-14"
       ]
     }
   ]
