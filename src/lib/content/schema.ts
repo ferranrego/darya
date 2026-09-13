@@ -407,6 +407,19 @@ export const grammarLessonSchema = z.object({
   grammarPointEn: z.string().min(1),
   slides: z.array(grammarSlideSchema).min(1).max(5),
   exercises: z.array(grammarExerciseSchema).min(5).max(12),
+  /**
+   * Off the course path, but still a real lesson.
+   *
+   * Dari gl-94 (ezafe) and gl-95 (rā) were late one-slide duplicates of gl-05/
+   * gl-06 and gl-11, parked after the A1 and A2 capstones, and gl-95 taught
+   * Iranian نوشیدن for drinking water. Deleting them is not an option: a
+   * learner's `grammar_progress` and grammar review cards store the lesson id,
+   * and old links point at /grammar/gl-94. So a hidden lesson is left out of
+   * the map, the unlock order and every progress count, but still renders at
+   * its own URL and still answers review cards. The Grammar Hub must not link
+   * to one (validate-content enforces it).
+   */
+  hidden: z.boolean().optional(),
 });
 
 export const grammarBlockSchema = z.object({

@@ -119,7 +119,9 @@ export default function GrammarLessonPage() {
         </Link>
         <div>
           <p className="text-[15px] font-semibold leading-tight">
-            {lessonNumber}. {lesson.title}
+            {/* A hidden lesson is off the path, so it has no number to show. */}
+            {lessonNumber > 0 ? `${lessonNumber}. ` : ""}
+            {lesson.title}
           </p>
           <p className="text-[12px] text-ink-faint">
             {phase.kind === "slides"

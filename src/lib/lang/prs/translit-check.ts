@@ -106,11 +106,41 @@ export function bareEzafeAfterVowel(translit: string | undefined): string | null
  * the repair, 0 after; the hub was already at 0. The only lowercase-looking
  * -i words left in the course are `Dari`, `Ali` and `Kabuli`, all capitalised
  * and all in English prose, which this is never run on.
+ *
+ * The first version said "no Dari word ends in a short i", which is true
+ * except for exactly one family: که is `ki` app-wide (philologist ruling -
+ * Dari [kʰɪ], Tajik ки; `ke` is the Iranian reading), and so are the words
+ * built on it and on چه. The rule fired on every one of them the moment the
+ * hub adopted `ki` (40 hub fields: 37 `ki`, 3 `agarchi`), and blamed "the
+ * 2sg ending" for it. With them exempt, the 40 hub pages and the course, now
+ * 209 `ki`, pass with no other exception. Those particles are
+ * named below rather than loosening the pattern, because a 2sg verb can end
+ * in any consonant + i and no shape separates it from `balki`.
  */
+export const SHORT_I_PARTICLES: ReadonlySet<string> = new Set([
+  "ki",
+  "chi",
+  "balki",
+  "chunki",
+  "chūnki",
+  "īnki",
+  "agarchi",
+  "garchi",
+  "chunānki",
+  "hamchunānki",
+]);
+
 export function bareShortIEnding(translit: string | undefined): string | null {
   if (!translit) return null;
-  const m = translit.match(/(?<![\p{L}'’])[a-zāēīōū'’-]*[a-zāēīōū'’]i(?![\p{L}'’])/u);
-  return m ? m[0] : null;
+  // \p{M} in the lookahead: a decomposed ī (i + U+0304) is a long vowel, not
+  // a bare i followed by a non-letter.
+  for (const m of translit.matchAll(/(?<![\p{L}\p{M}'’])[a-zāēīōū'’-]*[a-zāēīōū'’]i(?![\p{L}\p{M}'’])/gu)) {
+    // `waqtē-ki` style hyphen compounds end in the particle, so judge the last part.
+    const last = m[0].split("-").pop() ?? m[0];
+    if (SHORT_I_PARTICLES.has(m[0]) || SHORT_I_PARTICLES.has(last)) continue;
+    return m[0];
+  }
+  return null;
 }
 
 /** True when `translit` dropped the long vowels its own script spells out. */

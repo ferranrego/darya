@@ -65,7 +65,7 @@ function loadJson(path: string): unknown {
  *
  * The two named-word rules came first and are kept. The third is the one that
  * generalises: a batch of drafted texts arrived with every long ā and every
- * majhul ē/ō flattened out - `emroz` for `emrōz`, `khob` for `khūb`, `seb`
+ * majhul ē/ō flattened out - `emroz` for `emrōz`, `dost` for `dōst`, `seb`
  * for `sēb`, `merawem` for `mērawēm` - and not one of them contained a word
  * from a blocklist. What they did have in common is that a whole sentence of
  * Dari went by without a single long vowel in it, which effectively cannot
@@ -485,7 +485,7 @@ if (!profile.capabilities.scriptCourse) {
       checkDariTranslit(o.translit, subject, "translit", undefined, script);
       const bareI = bareShortIEnding(o.translit);
       if (bareI) {
-        fail(`${subject}: translit "${bareI}" ends in a short -i - the 2sg ending is -ī (${o.translit})`);
+        fail(`${subject}: translit "${bareI}" ends in a short -i; a final ی is -ī or -ē (${o.translit})`);
       }
     }
     for (const [k, v] of Object.entries(o)) {
@@ -574,10 +574,19 @@ const grammarPointIds = new Set<string>();
       );
     } else {
       const courseLessonIds = new Set<string>();
+      // Lessons taken off the course path (schema `hidden`). The hub is where a
+      // learner goes to find "the lesson for this", so it must never send them
+      // to one the course itself no longer offers.
+      const hiddenLessonIds = new Set<string>();
       const grammarFile = grammarCoursesFileSchema.safeParse(loadJson(join(root, "grammar", "all.json")));
       if (grammarFile.success) {
         for (const course of grammarFile.data.courses) {
-          for (const block of course.blocks) for (const l of block.lessons) courseLessonIds.add(l.id);
+          for (const block of course.blocks) {
+            for (const l of block.lessons) {
+              courseLessonIds.add(l.id);
+              if (l.hidden) hiddenLessonIds.add(l.id);
+            }
+          }
         }
       }
       const hubIndex = lexicon ? buildIndex(lexicon.entries) : null;
@@ -600,7 +609,7 @@ const grammarPointIds = new Set<string>();
         if (lang === "prs") {
           checkDariTranslit(translit, `grammar-hub ${where}`, "translit", undefined, target);
           const bareI = bareShortIEnding(translit);
-          if (bareI) fail(`grammar-hub ${where}: translit "${bareI}" ends in a short -i - the 2sg ending is -ī (${translit})`);
+          if (bareI) fail(`grammar-hub ${where}: translit "${bareI}" ends in a short -i; a final ی is -ī or -ē (${translit})`);
         }
       };
       const checkWords = (where: string, target: string) => {
@@ -632,6 +641,7 @@ const grammarPointIds = new Set<string>();
         }
         for (const l of e.lessonIds) {
           if (!courseLessonIds.has(l)) fail(`grammar-hub ${e.id}: lesson ${l} does not exist`);
+          else if (hiddenLessonIds.has(l)) fail(`grammar-hub ${e.id}: lesson ${l} is hidden from the course`);
         }
         checkOption(`${e.id} sample`, e.sample);
 

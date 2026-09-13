@@ -96,6 +96,21 @@ describe("bare short -i ending", () => {
     expect(bareShortIEnding("agar biyāyī, khush mēshawam")).toBeNull();
   });
 
+  it("accepts که and the particles built on it, which really end in short i", () => {
+    expect(bareShortIEnding("mēdānam ki tu hastī")).toBeNull();
+    for (const p of ["balki", "chūnki", "īnki", "agarchi", "hamchunānki", "chi"]) {
+      expect(bareShortIEnding(`${p} ō āmad`), p).toBeNull();
+    }
+  });
+
+  it("still finds a 2sg -i after a particle in the same string", () => {
+    expect(bareShortIEnding("mēdānam ki tu hasti")).toBe("hasti");
+  });
+
+  it("reads a decomposed ī as long", () => {
+    expect(bareShortIEnding("tu hastī")).toBeNull();
+  });
+
   it("ignores a capitalised name and a word that only contains an i", () => {
     expect(bareShortIEnding("nāmash Ali ast")).toBeNull();
     expect(bareShortIEnding("fikr mēkunam")).toBeNull();

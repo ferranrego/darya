@@ -97,26 +97,48 @@ export { GRAMMAR_LEVEL_ORDER, cefrOf, buildJourneyNodes, type JourneyNode } from
  * a1..c2 import list would fail the build on the missing files instead of
  * simply offering fewer levels.
  */
-export const grammarCourses: GrammarCourse[] = grammarCoursesFileSchema
+const allGrammarCourses: GrammarCourse[] = grammarCoursesFileSchema
   .parse(grammarJson)
   .courses.sort(
     (a, b) => GRAMMAR_LEVEL_ORDER.indexOf(a.level) - GRAMMAR_LEVEL_ORDER.indexOf(b.level),
   );
 
-/** All grammar lessons in course order, flattened across every level and block. */
+/**
+ * The course path: every level and block, without `hidden` lessons (see the
+ * schema). Everything that draws the map, decides unlock order or counts
+ * progress reads this, so a hidden lesson can never be the one a learner is
+ * waiting to unlock or the one that keeps a level from reading "complete".
+ */
+export const grammarCourses: GrammarCourse[] = allGrammarCourses.map((c) => ({
+  ...c,
+  blocks: c.blocks
+    .map((b) => ({ ...b, lessons: b.lessons.filter((l) => !l.hidden) }))
+    .filter((b) => b.lessons.length > 0),
+}));
+
+/** Lessons on the course path, in course order, flattened across every level and block. */
 export const grammarLessons: GrammarLesson[] = grammarCourses.flatMap((c) =>
   c.blocks.flatMap((b) => b.lessons),
 );
 
+/**
+ * Every lesson, hidden ones included. For lookups by id - a lesson URL, a
+ * review card, the practice route - where a learner who already did a hidden
+ * lesson must still reach it.
+ */
+export const allGrammarLessons: GrammarLesson[] = allGrammarCourses.flatMap((c) =>
+  c.blocks.flatMap((b) => b.lessons),
+);
+
 const lessonLevelById = new Map<string, GrammarLevel>();
-for (const course of grammarCourses) {
+for (const course of allGrammarCourses) {
   for (const block of course.blocks) {
     for (const lesson of block.lessons) lessonLevelById.set(lesson.id, course.level);
   }
 }
 
 export function grammarLessonById(id: string): GrammarLesson | undefined {
-  return grammarLessons.find((l) => l.id === id);
+  return allGrammarLessons.find((l) => l.id === id);
 }
 
 export function grammarLessonLevel(id: string): GrammarLevel | undefined {

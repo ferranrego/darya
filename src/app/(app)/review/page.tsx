@@ -33,7 +33,9 @@ import {
 import { PracticeSession } from "@/components/exercises/practice-session";
 import { ProductionCard } from "@/components/review/production-card";
 import { GrammarExercisePlayer } from "@/components/grammar/exercise-player";
-import { grammarLessons } from "@/lib/content/load";
+// All lessons, hidden ones included: a card from a lesson taken off the course
+// path is still the learner's own review, and must keep coming back.
+import { allGrammarLessons } from "@/lib/content/load";
 import { getGrammarCards, saveGrammarReview } from "@/lib/db/grammar";
 import { dueGrammarItems, interleave } from "@/lib/srs/grammar-queue";
 import { defaultInputMode, directionFor, type InputMode } from "@/lib/srs/direction";
@@ -164,7 +166,7 @@ export default function ReviewPage() {
     if (!queue || !grammarCards) return at;
     const items = dueGrammarItems({
       cards: grammarCards,
-      lessons: grammarLessons,
+      lessons: allGrammarLessons,
       now: new Date(),
       // Roughly one grammar point per four words: enough that the point comes
       // back, few enough that a review session is still a review session.
@@ -410,7 +412,7 @@ export default function ReviewPage() {
     queue.length === 0 && grammarCards
       ? dueGrammarItems({
           cards: grammarCards,
-          lessons: grammarLessons,
+          lessons: allGrammarLessons,
           now: new Date(),
           limit: 10,
           rand: Math.random,
