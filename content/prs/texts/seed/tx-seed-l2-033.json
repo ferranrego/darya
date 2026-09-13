@@ -93,7 +93,7 @@
     },
     {
       "target": "در آنجا آب و هوا خوب است.",
-      "translit": "dar ānjā āb wa hawā khōb ast.",
+      "translit": "dar ānjā āb wa hawā khūb ast.",
       "en": "There the weather is good.",
       "tokens": [
         {
@@ -193,7 +193,7 @@
       "options": [
         {
           "target": "خوب",
-          "translit": "khōb",
+          "translit": "khūb",
           "en": "Good"
         },
         {

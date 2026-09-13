@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "نظر من خوب است.",
-      "translit": "nazar-e man khōb ast.",
+      "translit": "nazar-e man khūb ast.",
       "en": "My opinion is good.",
       "tokens": [
         {
@@ -116,7 +116,7 @@
     },
     {
       "target": "نظر او هم خوب است.",
-      "translit": "nazar-e ō ham khōb ast.",
+      "translit": "nazar-e ō ham khūb ast.",
       "en": "His opinion is good too.",
       "tokens": [
         {

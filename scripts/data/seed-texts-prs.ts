@@ -21,7 +21,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من با مادر هستم.", translit: "man bā mādar hastam.", en: "I am with mother." },
       { target: "پدر به کار می‌رود.", translit: "padar ba kār mērawad.", en: "Father goes to work." },
       { target: "برادر من به مکتب می‌رود.", translit: "barādar-e man ba maktab mērawad.", en: "My brother goes to school." },
-      { target: "چای خوب است.", translit: "chāy khōb ast.", en: "The tea is good." },
+      { target: "چای خوب است.", translit: "chāy khūb ast.", en: "The tea is good." },
     ],
     questions: [
       {
@@ -67,7 +67,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "به کار می‌روم.", translit: "ba kār mērawam.", en: "I go to work." },
       { target: "شب به خانه می‌آیم.", translit: "shab ba khāna mēāyam.", en: "At night I come home." },
       { target: "نان می‌خورم.", translit: "nān mēkhuram.", en: "I eat food." },
-      { target: "شب خوب است.", translit: "shab khōb ast.", en: "The night is good." },
+      { target: "شب خوب است.", translit: "shab khūb ast.", en: "The night is good." },
     ],
     questions: [
       {
@@ -158,7 +158,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "خانه خورد است.", translit: "khāna khurd ast.", en: "The house is small." },
       { target: "ما در خانه بازی می‌کنیم.", translit: "mā dar khāna bāzī mēkunēm.", en: "We play at home." },
       { target: "من در خانه کتاب می‌خوانم.", translit: "man dar khāna ketāb mēkhānam.", en: "I read a book at home." },
-      { target: "خانه ما خوب است.", translit: "khāna-ye mā khōb ast.", en: "Our house is good." },
+      { target: "خانه ما خوب است.", translit: "khāna-ye mā khūb ast.", en: "Our house is good." },
     ],
     questions: [
       {
@@ -387,8 +387,8 @@ export const seedTexts: SeedTextSource[] = [
       { target: "بچه من در مکتب کلان می‌خواند.", translit: "bacha-ye man dar maktab-e kalān mēkhānad.", en: "My child studies at a big school." },
       { target: "مکتب ما شروع می‌شود.", translit: "maktab-e mā shurū' mēshawad.", en: "Our school is starting." },
       { target: "او در مکتب زمان زیاد دارد.", translit: "ō dar maktab zamān-e ziyād dārad.", en: "He has a lot of time at school." },
-      { target: "به نظر من، مکتب خوب است.", translit: "ba nazar-e man, maktab khōb ast.", en: "In my opinion, the school is good." },
-      { target: "در شهر ما مکتب خوب وجود دارد.", translit: "dar shahr-e mā maktab-e khōb wujūd dārad.", en: "In our city there is a good school." },
+      { target: "به نظر من، مکتب خوب است.", translit: "ba nazar-e man, maktab khūb ast.", en: "In my opinion, the school is good." },
+      { target: "در شهر ما مکتب خوب وجود دارد.", translit: "dar shahr-e mā maktab-e khūb wujūd dārad.", en: "In our city there is a good school." },
     ],
     questions: [
       {
@@ -411,7 +411,7 @@ export const seedTexts: SeedTextSource[] = [
         questionTranslit: "ō dar maktab che dārad?",
         options: [
           { target: "کتاب نو", translit: "ketāb-e naw", en: "A new book" },
-          { target: "معلم خوب", translit: "mu'allem-e khōb", en: "A good teacher" },
+          { target: "معلم خوب", translit: "mu'allem-e khūb", en: "A good teacher" },
           { target: "کار زیاد", translit: "kār-e ziyād", en: "A lot of work" },
           { target: "زمان زیاد", translit: "zamān-e ziyād", en: "A lot of time" },
         ],
@@ -480,7 +480,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او جنگ گذشته را به یاد دارد.", translit: "ō jang-e guzashta rā ba yād dārad.", en: "He remembers the past war." },
       { target: "حالا پدرم جور است.", translit: "hālā padaram jōr ast.", en: "Now my father is well." },
       { target: "من به پدرم کمک می‌کنم.", translit: "man ba padaram kumak mēkunam.", en: "I help my father." },
-      { target: "این بار، همه چیز خوب است.", translit: "īn bār, hama chīz khōb ast.", en: "This time, everything is good." },
+      { target: "این بار، همه چیز خوب است.", translit: "īn bār, hama chīz khūb ast.", en: "This time, everything is good." },
     ],
     questions: [
       {
@@ -572,7 +572,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من کتاب را می‌گذارم.", translit: "man ketāb rā mēguzāram.", en: "I put down the book." },
       { target: "من آماده هستم.", translit: "man āmāda hastam.", en: "I am ready." },
       { target: "من یک آهنگ جدید می‌شنوم.", translit: "man yak āhang-e jadīd mēshunawam.", en: "I listen to a new song." },
-      { target: "به نظر من، این آهنگ خوب است.", translit: "ba nazar-e man, īn āhang khōb ast.", en: "In my opinion, this song is good." },
+      { target: "به نظر من، این آهنگ خوب است.", translit: "ba nazar-e man, īn āhang khūb ast.", en: "In my opinion, this song is good." },
       { target: "حتی بچه‌ها این آهنگ را می‌شنوند.", translit: "hattā bacha-hā īn āhang rā mēshunawand.", en: "Even the children hear this song." },
     ],
     questions: [
@@ -584,7 +584,7 @@ export const seedTexts: SeedTextSource[] = [
           { target: "یک آهنگ کهنه", translit: "yak āhang-e kuhna", en: "An old song" },
           { target: "یک درس جدید", translit: "yak dars-e jadīd", en: "A new lesson" },
           { target: "یک آهنگ جدید", translit: "yak āhang-e jadīd", en: "A new song" },
-          { target: "یک گپ خوب", translit: "yak gap-e khōb", en: "A good word" },
+          { target: "یک گپ خوب", translit: "yak gap-e khūb", en: "A good word" },
         ],
         answerIndex: 2,
         evidenceSentence: 2,
@@ -787,7 +787,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "دوستی که در قریه ما کلان شد، حالا در کابل زندگی می‌کند.", translit: "dōstē ki dar qarya-ye mā kalān shud, hālā dar kābul zindagī mēkunad.", en: "A friend who grew up in our village now lives in Kabul." },
       { target: "او سال گذشته به آنجا رفته است.", translit: "ō sāl-e guzashta ba ānjā rafta ast.", en: "He went there last year." },
-      { target: "اگر کارش خوب پیش برود، فامیلش را هم به کابل می‌آورد.", translit: "agar kārash khōb pēsh berawad, fāmīlash rā ham ba kābul mēāwarad.", en: "If his work goes well, he will bring his family to Kabul too." },
+      { target: "اگر کارش خوب پیش برود، فامیلش را هم به کابل می‌آورد.", translit: "agar kārash khūb pēsh berawad, fāmīlash rā ham ba kābul mēāwarad.", en: "If his work goes well, he will bring his family to Kabul too." },
       { target: "خانه نو او در شهر ساخته شده است.", translit: "khāna-ye naw-e ō dar shahr sākhta shuda ast.", en: "His new house has been built in the city." },
       { target: "هفته پیش او به ما زنگ زد.", translit: "hafta pēsh ō ba mā zang zad.", en: "Last week he called us." },
       { target: "او گفت که دلش برای قریه تنگ شده است.", translit: "ō guft ki delash barā-ye qarya tang shuda ast.", en: "He said that he has become homesick for the village." },
@@ -841,7 +841,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "رئیس شورا گفت که مکتب قدیمی برای همه شاگردان خورد است.", translit: "ra'īs-e shōrā guft ki maktab-e qadīmī barā-ye hama-ye shāgerdān khurd ast.", en: "The council head said that the old school is too small for all the students." },
       { target: "اگر مردم کمک کنند، مکتب نو زودتر ساخته می‌شود.", translit: "agar mardum kumak kunand, maktab-e naw zūdtar sākhta mēshawad.", en: "If people help, the new school will be built sooner." },
       { target: "دهقانی که زمین کنار سرک داشت، آن را برای مکتب داد.", translit: "dehqānē ki zamīn kinār-e sarak dāsht, ān rā barā-ye maktab dād.", en: "A farmer who had land beside the road gave it for the school." },
-      { target: "مردم گفتند که این تصمیم شورا بسیار خوب است.", translit: "mardum guftand ki īn tasmīm-e shōrā bisyār khōb ast.", en: "People said that this decision of the council was very good." },
+      { target: "مردم گفتند که این تصمیم شورا بسیار خوب است.", translit: "mardum guftand ki īn tasmīm-e shōrā bisyār khūb ast.", en: "People said that this decision of the council was very good." },
       { target: "سرانجام، بعد از چند ماه، مکتب نو برای شاگردان باز شد.", translit: "saranjām, ba'd az chand māh, maktab-e naw barā-ye shāgerdān bāz shud.", en: "Finally, after a few months, the new school opened for the students." },
     ],
     grammarPoints: ["simple-past", "reported-speech", "real-conditionals", "relative-clauses", "passive-shudan"],
@@ -875,7 +875,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "دوستان او گفتند که این کار خطر دارد و ممکن است ضرر کند.", translit: "dōstān-e ō guftand ki īn kār khatar dārad wa mumken ast zarar kunad.", en: "His friends said that this was risky and he might suffer a loss." },
       { target: "اما او فکر کرد که باید دل به دریا بزند.", translit: "ammā ō fikr kard ki bāyad dil ba daryā bezanad.", en: "But he thought that he had to take the plunge." },
       { target: "او با یک تاجر دیگر در هرات موافقت کرد که با هم کار کنند.", translit: "ō bā yak tājir-e dīgar dar herāt muwāfiqat kard ki bā ham kār kunand.", en: "He agreed with another trader in Herat that they would work together." },
-      { target: "اگر این تجارت خوب پیش برود، هر دو تاجر سود خوبی می‌برند.", translit: "agar īn tijārat khōb pēsh berawad, har dū tājir sūd-e khōbī mēbarand.", en: "If this trade goes well, both traders will earn a good profit." },
+      { target: "اگر این تجارت خوب پیش برود، هر دو تاجر سود خوبی می‌برند.", translit: "agar īn tijārat khūb pēsh berawad, har dū tājir sūd-e khūbī mēbarand.", en: "If this trade goes well, both traders will earn a good profit." },
       { target: "بعد از یک سال، تجارت آن‌ها موفق شد و دکانی دیگر هم باز کردند.", translit: "ba'd az yak sāl, tijārat-e ānhā muwaffaq shud wa dukānī dīgar ham bāz kardand.", en: "After a year, their business succeeded, and they also opened another shop." },
       { target: "مردم گفتند که تصمیم تاجر درست بود.", translit: "mardum guftand ki tasmīm-e tājir durust būd.", en: "People said that the trader's decision was right." },
     ],
@@ -936,7 +936,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "من با چشم می‌بینم.", translit: "man bā chashm mēbīnam.", en: "I see with the eye." },
       { target: "سر من درد دارد.", translit: "sar-e man dard dārad.", en: "My head has pain." },
-      { target: "زندگی خوب است.", translit: "zendagī khōb ast.", en: "Life is good." },
+      { target: "زندگی خوب است.", translit: "zendagī khūb ast.", en: "Life is good." },
       { target: "او یک پای دارد.", translit: "ō yak pāy dārad.", en: "He has one leg." },
     ],
     questions: [
@@ -982,7 +982,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مادر گوشت می‌خرد.", translit: "mādar gōsht mēkharad.", en: "Mother buys meat." },
       { target: "پسر شیر می‌برد.", translit: "pesar shīr mēbarad.", en: "The boy carries milk." },
       { target: "این شیرین است.", translit: "īn shīrīn ast.", en: "This is sweet." },
-      { target: "گوشت خوب است.", translit: "gōsht khōb ast.", en: "The meat is good." },
+      { target: "گوشت خوب است.", translit: "gōsht khūb ast.", en: "The meat is good." },
     ],
     questions: [
       {
@@ -1206,7 +1206,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "bārān",
     titleEn: "Rain",
     sentences: [
-      { target: "آفتاب خوب است.", translit: "āftāb khōb ast.", en: "The sun is good." },
+      { target: "آفتاب خوب است.", translit: "āftāb khūb ast.", en: "The sun is good." },
       { target: "باران می‌آید.", translit: "bārān mēāyad.", en: "Rain comes." },
       { target: "باد قوی است.", translit: "bād qawī ast.", en: "The wind is strong." },
       { target: "زمین خشک است.", translit: "zamīn khushk ast.", en: "The ground is dry." },
@@ -1253,7 +1253,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "یک سال می‌رود.", translit: "yak sāl mērawad.", en: "One year goes." },
       { target: "این یک ماه است.", translit: "īn yak māh ast.", en: "This is one month." },
-      { target: "یک روز خوب است.", translit: "yak rōz khōb ast.", en: "A good day." },
+      { target: "یک روز خوب است.", translit: "yak rōz khūb ast.", en: "A good day." },
       { target: "من یک هفته می‌خواهم.", translit: "man yak hafta mēkhāham.", en: "I want one week." },
     ],
     questions: [
@@ -1524,7 +1524,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "The river",
     sentences: [
       { target: "دریا کلان است.", translit: "daryā kalān ast.", en: "The river is big." },
-      { target: "گل خوب است.", translit: "gul khōb ast.", en: "The flower is good." },
+      { target: "گل خوب است.", translit: "gul khūb ast.", en: "The flower is good." },
       { target: "درخت سبز است.", translit: "darakht sabz ast.", en: "The tree is green." },
       { target: "زمین کلان است.", translit: "zamīn kalān ast.", en: "The ground is big." },
       { target: "کوه بلند است.", translit: "kōh buland ast.", en: "The mountain is tall." },
@@ -1798,7 +1798,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "kishwar",
     titleEn: "Country",
     sentences: [
-      { target: "این جای خوبی است.", translit: "īn jāy-e khōbē ast.", en: "This is a good place." },
+      { target: "این جای خوبی است.", translit: "īn jāy-e khūbē ast.", en: "This is a good place." },
       { target: "زبان این کشور دری است.", translit: "zabān-e īn kishwar darī ast.", en: "The language of this country is Dari." },
       { target: "من باید در این مورد بدانم.", translit: "man bāyad dar īn mawrid bidānam.", en: "I must know about this case." },
       { target: "او باید به این جای برود.", translit: "ō bāyad ba īn jāy birawad.", en: "He must go to this place." },
@@ -1809,7 +1809,7 @@ export const seedTexts: SeedTextSource[] = [
         questionTarget: "این جای چطور است؟",
         questionTranslit: "īn jāy chetōr ast?",
         options: [
-          { target: "خوب", translit: "khōb", en: "Good" },
+          { target: "خوب", translit: "khūb", en: "Good" },
           { target: "بد", translit: "bad", en: "Bad" },
           { target: "تاریک", translit: "tārīk", en: "Dark" },
           { target: "سرد", translit: "sard", en: "Cold" },
@@ -1868,7 +1868,7 @@ export const seedTexts: SeedTextSource[] = [
         questionTarget: "قبل از این، حال او چطور بود؟",
         questionTranslit: "qabl az īn, hāl-e ō chetōr būd?",
         options: [
-          { target: "خوب", translit: "khōb", en: "Good" },
+          { target: "خوب", translit: "khūb", en: "Good" },
           { target: "بد", translit: "bad", en: "Bad" },
           { target: "مهم", translit: "muhim", en: "Important" },
           { target: "بهتر", translit: "bihtar", en: "Better" },
@@ -1890,7 +1890,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "مرد دوباره در شهر گشت می‌زند.", translit: "mard dubāra dar shahr gasht mēzanad.", en: "The man strolls in the city again." },
       { target: "او یک خبر تازه دارد.", translit: "ō yak khabar-e tāza dārad.", en: "He has fresh news." },
-      { target: "حرف او بسیار خوب است.", translit: "harf-e ō bisyār khōb ast.", en: "His word is very good." },
+      { target: "حرف او بسیار خوب است.", translit: "harf-e ō bisyār khūb ast.", en: "His word is very good." },
     ],
     grammarPoints: ["present-me", "ezafa-adjectives", "ezafa-possession", "dashtan-numbers"],
     questions: [
@@ -1965,7 +1965,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Football",
     sentences: [
       { target: "شاید او فوتبال بازی کند.", translit: "shāyad ō fūtbāl bāzī kunad.", en: "Maybe he plays football." },
-      { target: "البته این عکس خوب است.", translit: "albatta īn aks khōb ast.", en: "Of course, this photo is good." },
+      { target: "البته این عکس خوب است.", translit: "albatta īn aks khūb ast.", en: "Of course, this photo is good." },
       { target: "من یک عکس به خاطر تو می‌گیرم.", translit: "man yak aks ba khātir-e tu mēgīram.", en: "I take a photo for your sake." },
       { target: "البته این عکس قدیمی است.", translit: "albatta īn aks qadēmī ast.", en: "Of course, this photo is old." },
       { target: "البته این عکس کلان است.", translit: "albatta īn aks kalān ast.", en: "Of course, this photo is big." },
@@ -2103,7 +2103,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Famous lady",
     sentences: [
       { target: "یک اتفاق کلان است.", translit: "yak ittifāq-e kalān ast.", en: "It is a big event." },
-      { target: "اتفاق خوبی بود.", translit: "ittifāq-e khōbē būd.", en: "It was a good event." },
+      { target: "اتفاق خوبی بود.", translit: "ittifāq-e khūbē būd.", en: "It was a good event." },
       { target: "خانم یک نامه می‌فرستد.", translit: "khānum yak nāma mēfiristad.", en: "The lady sends a letter." },
       { target: "خانم آن را می‌فرستد.", translit: "khānum ān rā mēfiristad.", en: "The lady sends it." },
       { target: "او از خانم مشهور می‌آموزد.", translit: "ō az khānum-e mashhūr mēāmōzad.", en: "He learns from the famous lady." },
@@ -2319,7 +2319,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "در جنوب، قانون زیبا است.", translit: "dar janūb, qānūn zēbā ast.", en: "In the south, the law is beautiful." },
       { target: "او آب را می‌ریزد.", translit: "ō āb rā mērēzad.", en: "He pours the water." },
       { target: "مرد به هوش می‌آید.", translit: "mard ba hōsh mēāyad.", en: "The man regains consciousness." },
-      { target: "قانون جنوب خوب است.", translit: "qānūn-e janūb khōb ast.", en: "The law of the south is good." },
+      { target: "قانون جنوب خوب است.", translit: "qānūn-e janūb khūb ast.", en: "The law of the south is good." },
     ],
     questions: [
       {
@@ -2619,7 +2619,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Capital culture",
     sentences: [
       { target: "مسیر پایتخت کلان است.", translit: "masēr-e pāytakht kalān ast.", en: "The capital route is big." },
-      { target: "عزیزم، فرهنگ ما خوب است.", translit: "azēz-am, farhang-e mā khōb ast.", en: "My dear, our culture is good." },
+      { target: "عزیزم، فرهنگ ما خوب است.", translit: "azēz-am, farhang-e mā khūb ast.", en: "My dear, our culture is good." },
       { target: "او کار را به من می‌سپارد.", translit: "ō kār rā ba man mēsipārad.", en: "He entrusts the work to me." },
       { target: "مسیر پایتخت زیبا است.", translit: "masēr-e pāytakht zēbā ast.", en: "The capital route is beautiful." },
     ],
@@ -2632,7 +2632,7 @@ export const seedTexts: SeedTextSource[] = [
           { target: "بد", translit: "bad", en: "Bad" },
           { target: "کهنه", translit: "kuhna", en: "Old" },
           { target: "خورد", translit: "khurd", en: "Small" },
-          { target: "خوب", translit: "khōb", en: "Good" },
+          { target: "خوب", translit: "khūb", en: "Good" },
         ],
         answerIndex: 3,
         evidenceSentence: 1,
@@ -3095,7 +3095,7 @@ export const seedTexts: SeedTextSource[] = [
         options: [
           { target: "بسیار گرم", translit: "bisyār garm", en: "Very hot" },
           { target: "بسیار سرد", translit: "bisyār sard", en: "Very cold" },
-          { target: "بسیار خوب", translit: "bisyār khōb", en: "Very good" },
+          { target: "بسیار خوب", translit: "bisyār khūb", en: "Very good" },
           { target: "تاریک", translit: "tārīk", en: "Dark" },
         ],
         answerIndex: 1,
@@ -3386,7 +3386,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "شاگردان مکتب به چکر می‌روند.", translit: "shāgirdān-e maktab ba chakar mērawand.", en: "The school students go on a trip." },
       { target: "معلم ما در بس نشسته است.", translit: "mu'allem-e mā dar bas nishasta ast.", en: "Our teacher is sitting in the bus." },
       { target: "ما به بند قرغه می‌رویم.", translit: "mā ba band-e qargha mērawēm.", en: "We go to Qargha Dam." },
-      { target: "در آنجا آب و هوا خوب است.", translit: "dar ānjā āb wa hawā khōb ast.", en: "There the weather is good." },
+      { target: "در آنجا آب و هوا خوب است.", translit: "dar ānjā āb wa hawā khūb ast.", en: "There the weather is good." },
     ],
     questions: [
       {
@@ -3408,7 +3408,7 @@ export const seedTexts: SeedTextSource[] = [
         questionTarget: "در آنجا آب و هوا چطور است؟",
         questionTranslit: "dar ānjā āb wa hawā chetōr ast?",
         options: [
-          { target: "خوب", translit: "khōb", en: "Good" },
+          { target: "خوب", translit: "khūb", en: "Good" },
           { target: "بد", translit: "bad", en: "Bad" },
           { target: "سرد", translit: "sard", en: "Cold" },
           { target: "گرم", translit: "garm", en: "Hot" },
@@ -3431,7 +3431,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "برادرم کورس انگلیسی می‌خواند.", translit: "barādar-am kōrs-e inglīsī mēkhānad.", en: "My brother studies an English course." },
       { target: "او هر روز کتاب‌های نو می‌گیرد.", translit: "ō har rōz ketāb-hā-ye naw mēgīrad.", en: "He gets new books every day." },
       { target: "من هم می‌خواهم زبان یاد بگیرم.", translit: "man ham mēkhāham zabān yād bigīram.", en: "I also want to learn a language." },
-      { target: "زبان خواندن برای آینده خوب است.", translit: "zabān khāndan barā-ye āyanda khōb ast.", en: "Studying a language is good for the future." },
+      { target: "زبان خواندن برای آینده خوب است.", translit: "zabān khāndan barā-ye āyanda khūb ast.", en: "Studying a language is good for the future." },
     ],
     questions: [
       {
@@ -3791,7 +3791,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "امروز در پوهنتون امتحان داریم.", translit: "imrōz dar pōhantūn imtihān dārēm.", en: "Today we have an exam at the university." },
       { target: "من دیشب بسیار درس خواندم.", translit: "man dēshab bisyār dars khāndam.", en: "I studied a lot last night." },
       { target: "سوال‌ها کمی مشکل بود.", translit: "su'āl-hā kamē mushkil būd.", en: "The questions were a bit difficult." },
-      { target: "امیدوارم نمره خوب بگیرم.", translit: "umēdwār-am nimra-ye khōb bigīram.", en: "I hope to get a good grade." },
+      { target: "امیدوارم نمره خوب بگیرم.", translit: "umēdwār-am nimra-ye khūb bigīram.", en: "I hope to get a good grade." },
     ],
     questions: [
       {
@@ -3814,7 +3814,7 @@ export const seedTexts: SeedTextSource[] = [
         questionTranslit: "sawāl-hā chetōr būd?",
         options: [
           { target: "آسان", translit: "āsān", en: "Easy" },
-          { target: "خوب", translit: "khōb", en: "Good" },
+          { target: "خوب", translit: "khūb", en: "Good" },
           { target: "مشکل", translit: "mushkil", en: "Difficult" },
           { target: "بد", translit: "bad", en: "Bad" },
         ],
@@ -3928,7 +3928,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او دوست برادر من هم است.", translit: "ō dōst-e barādar-e man ham ast.", en: "He is my brother's friend too." },
       { target: "من او را هر روز می‌بینم.", translit: "man ō rā har rōz mēbīnam.", en: "I see him every day." },
       { target: "او به من یک کتاب می‌دهد.", translit: "ō ba man yak ketāb mēdihad.", en: "He gives me a book." },
-      { target: "ما دوستان خوب هستیم.", translit: "mā dōstān-e khōb hastēm.", en: "We are good friends." },
+      { target: "ما دوستان خوب هستیم.", translit: "mā dōstān-e khūb hastēm.", en: "We are good friends." },
       { target: "او بسیار مهربان است.", translit: "ō bisyār mehrabān ast.", en: "He is very kind." },
     ],
     questions: [
@@ -4489,7 +4489,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من زبان دری را یاد می‌گیرم.", translit: "man zabān-e darī rā yād mēgīram.", en: "I am learning the Dari language." },
       { target: "دری زبان مردم افغانستان است.", translit: "darī zabān-e mardum-e afghānestān ast.", en: "Dari is the language of the people of Afghanistan." },
       { target: "شاگردان دری می‌خوانند و می‌نویسند.", translit: "shāgerdān darī mēkhānand wa mēnawīsand.", en: "The students read and write Dari." },
-      { target: "من دری را خوب نمی‌دانم.", translit: "man darī rā khōb namēdānam.", en: "I do not know Dari well." },
+      { target: "من دری را خوب نمی‌دانم.", translit: "man darī rā khūb namēdānam.", en: "I do not know Dari well." },
       { target: "هر هفته یک چیز نو یاد می‌گیرم.", translit: "har hafta yak chīz-e naw yād mēgīram.", en: "Every week I learn something new." },
     ],
     questions: [
@@ -4582,7 +4582,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "امروز سر من درد می‌کند.", translit: "emrōz sar-e man dard mēkunad.", en: "Today my head hurts." },
       { target: "چشم من هم درد می‌کند.", translit: "chashm-e man ham dard mēkunad.", en: "My eye hurts too." },
       { target: "دست و پای من سرد است.", translit: "dast wa pā-ye man sard ast.", en: "My hands and feet are cold." },
-      { target: "من چیزهای دور را خوب نمی‌بینم.", translit: "man chīz-hā-ye dūr rā khōb namēbīnam.", en: "I do not see distant things well." },
+      { target: "من چیزهای دور را خوب نمی‌بینم.", translit: "man chīz-hā-ye dūr rā khūb namēbīnam.", en: "I do not see distant things well." },
       { target: "من امروز جور نیستم.", translit: "man emrōz jōr nēstam.", en: "I am not well today." },
     ],
     questions: [
@@ -4594,7 +4594,7 @@ export const seedTexts: SeedTextSource[] = [
           { target: "درد می‌کند", translit: "dard mēkunad", en: "It hurts" },
           { target: "سرد است", translit: "sard ast", en: "It is cold" },
           { target: "گرم است", translit: "garm ast", en: "It is warm" },
-          { target: "خوب است", translit: "khōb ast", en: "It is fine" },
+          { target: "خوب است", translit: "khūb ast", en: "It is fine" },
         ],
         answerIndex: 0,
         evidenceSentence: 0,
@@ -4603,7 +4603,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "Which things do I not see well?",
         questionTarget: "من کدام چیزها را خوب نمی‌بینم؟",
-        questionTranslit: "man kudām chīz-hā rā khōb namēbīnam?",
+        questionTranslit: "man kudām chīz-hā rā khūb namēbīnam?",
         options: [
           { target: "چیزهای نزدیک", translit: "chīz-hā-ye nazdīk", en: "Near things" },
           { target: "چیزهای خورد", translit: "chīz-hā-ye khurd", en: "Small things" },
@@ -4723,7 +4723,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "یک سال دوازده ماه دارد.", translit: "yak sāl dawāzda māh dārad.", en: "One year has twelve months." },
       { target: "یک هفته هفت روز دارد.", translit: "yak hafta haft rōz dārad.", en: "One week has seven days." },
       { target: "من این هفته کار زیاد دارم.", translit: "man īn hafta kār ziyād dāram.", en: "I have a lot of work this week." },
-      { target: "زندگی اینجا خوب است.", translit: "zindagī īnjā khōb ast.", en: "Life here is good." },
+      { target: "زندگی اینجا خوب است.", translit: "zindagī īnjā khūb ast.", en: "Life here is good." },
     ],
     questions: [
       {
@@ -4908,7 +4908,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "باران بسیار سرد است.", translit: "bārān bisyār sard ast.", en: "The rain is very cold." },
       { target: "من در اتاق می‌مانم.", translit: "man dar utāq mēmānam.", en: "I stay in the room." },
       { target: "اتاق ما گرم است.", translit: "utāq-e mā garm ast.", en: "Our room is warm." },
-      { target: "پس من امشب خوب می‌خوابم.", translit: "pas man emshab khōb mēkhābam.", en: "So tonight I sleep well." },
+      { target: "پس من امشب خوب می‌خوابم.", translit: "pas man emshab khūb mēkhābam.", en: "So tonight I sleep well." },
     ],
     questions: [
       {
@@ -4950,7 +4950,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "dāktar",
     titleEn: "The doctor",
     sentences: [
-      { target: "حال من امروز خوب نیست.", translit: "hāl-e man emrōz khōb nēst.", en: "My condition is not good today." },
+      { target: "حال من امروز خوب نیست.", translit: "hāl-e man emrōz khūb nēst.", en: "My condition is not good today." },
       { target: "چشم من درد می‌کند.", translit: "chashm-e man dard mēkunad.", en: "My eye hurts." },
       { target: "من به داکتر می‌روم.", translit: "man ba dāktar mērawam.", en: "I go to the doctor." },
       { target: "داکتر حال من را می‌فهمد.", translit: "dāktar hāl-e man rā mēfahmad.", en: "The doctor understands my condition." },
@@ -5138,7 +5138,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "معلم به ما درس می‌دهد.", translit: "mu'allem ba mā dars mēdihad.", en: "The teacher gives us the lesson." },
       { target: "من این درس را می‌فهمم.", translit: "man īn dars rā mēfahmam.", en: "I understand this lesson." },
       { target: "امروز ما یک امتحان داریم.", translit: "emrōz mā yak imtihān dārēm.", en: "Today we have an exam." },
-      { target: "من امتحان را خوب می‌دانم.", translit: "man imtihān rā khōb mēdānam.", en: "I know the exam well." },
+      { target: "من امتحان را خوب می‌دانم.", translit: "man imtihān rā khūb mēdānam.", en: "I know the exam well." },
     ],
     questions: [
       {
@@ -5160,7 +5160,7 @@ export const seedTexts: SeedTextSource[] = [
         questionTarget: "من امتحان را چطور می‌دانم؟",
         questionTranslit: "man imtihān rā chetōr mēdānam?",
         options: [
-          { target: "خوب", translit: "khōb", en: "Well" },
+          { target: "خوب", translit: "khūb", en: "Well" },
           { target: "بد", translit: "bad", en: "Badly" },
           { target: "کم", translit: "kam", en: "A little" },
           { target: "تیز", translit: "tēz", en: "Quickly" },
@@ -5230,7 +5230,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من یک خانه ساخته می‌توانم.", translit: "man yak khāna sākhta mētawānam.", en: "I can build a house." },
       { target: "این کار زمان زیاد می‌خواهد.", translit: "īn kār zamān-e ziyād mēkhāhad.", en: "This work needs a lot of time." },
       { target: "پس من کم می‌خوابم.", translit: "pas man kam mēkhābam.", en: "So I sleep little." },
-      { target: "اما فکر من خوب است.", translit: "ammā fikr-e man khōb ast.", en: "But my idea is good." },
+      { target: "اما فکر من خوب است.", translit: "ammā fikr-e man khūb ast.", en: "But my idea is good." },
     ],
     questions: [
       {
@@ -5453,7 +5453,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "پوهنتون هر سال شاگردان نو می‌گیرد.", translit: "pohantūn har sāl shāgerdān-e naw mēgērad.", en: "The university takes new students every year." },
       { target: "درس پوهنتون بسیار سخت است.", translit: "dars-e pohantūn bisyār sakht ast.", en: "The university lesson is very difficult." },
       { target: "شاید او الان در پوهنتون است.", translit: "shāyad ō al'ān dar pohantūn ast.", en: "Maybe she is at the university now." },
-      { target: "به نظر من او یک شاگرد خوب است.", translit: "ba nazar-e man ō yak shāgerd-e khōb ast.", en: "In my opinion she is a good student." },
+      { target: "به نظر من او یک شاگرد خوب است.", translit: "ba nazar-e man ō yak shāgerd-e khūb ast.", en: "In my opinion she is a good student." },
     ],
   },
   {
@@ -5483,7 +5483,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "فردا من به مکتب می‌روم.", translit: "fardā man ba maktab mērawam.", en: "Tomorrow I will go to school." },
       { target: "فردا معلم ما یک درس نو می‌دهد.", translit: "fardā mu'allem-e mā yak dars-e naw mēdihad.", en: "Tomorrow our teacher will give a new lesson." },
       { target: "من فردا یک امتحان دارم.", translit: "man fardā yak imtihān dāram.", en: "Tomorrow I have an exam." },
-      { target: "فردا هوا خوب است.", translit: "fardā hawā khōb ast.", en: "Tomorrow the weather will be good." },
+      { target: "فردا هوا خوب است.", translit: "fardā hawā khūb ast.", en: "Tomorrow the weather will be good." },
       { target: "پس من فردا خوش هستم.", translit: "pas man fardā khush hastam.", en: "So tomorrow I will be happy." },
     ],
   },
@@ -5514,7 +5514,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من جواب این سوال را نمی‌دانم.", translit: "man jawāb-e īn sawāl rā namēdānam.", en: "I do not know the answer to this question." },
       { target: "دوست من جواب را می‌گوید.", translit: "dōst-e man jawāb rā mēgōyad.", en: "My friend says the answer." },
       { target: "حالا من سوال را می‌فهمم.", translit: "hālā man sawāl rā mēfahmam.", en: "Now I understand the question." },
-      { target: "جواب او بسیار خوب است.", translit: "jawāb-e ō bisyār khōb ast.", en: "His answer is very good." },
+      { target: "جواب او بسیار خوب است.", translit: "jawāb-e ō bisyār khūb ast.", en: "His answer is very good." },
     ],
   },
   {
@@ -5558,7 +5558,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ما هر روز فوتبال بازی می‌کنیم.", translit: "mā har rōz fūtbāl bāzī mēkunēm.", en: "We play football every day." },
       { target: "بازی زود شروع می‌شود.", translit: "bāzī zūd shurū' mēshawad.", en: "The game starts early." },
       { target: "من تیز دویده می‌توانم.", translit: "man tēz dawīda mētawānam.", en: "I can run fast." },
-      { target: "دوست من خوب بازی کرده می‌تواند.", translit: "dōst-e man khōb bāzī karda mētawānad.", en: "My friend can play well." },
+      { target: "دوست من خوب بازی کرده می‌تواند.", translit: "dōst-e man khūb bāzī karda mētawānad.", en: "My friend can play well." },
       { target: "شب هوا تاریک می‌شود.", translit: "shab hawā tārīk mēshawad.", en: "At night the air gets dark." },
     ],
   },
@@ -5570,7 +5570,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "fikr-e man",
     titleEn: "My idea",
     sentences: [
-      { target: "من یک فکر خوب دارم.", translit: "man yak fikr-e khōb dāram.", en: "I have a good idea." },
+      { target: "من یک فکر خوب دارم.", translit: "man yak fikr-e khūb dāram.", en: "I have a good idea." },
       { target: "من این فکر را به خانم خود می‌گویم.", translit: "man īn fikr rā ba khānum-e khud mēgōyam.", en: "I tell this idea to my wife." },
       { target: "او فکر من را می‌فهمد.", translit: "ō fikr-e man rā mēfahmad.", en: "She understands my idea." },
       { target: "ما یک قرار می‌گذاریم.", translit: "mā yak qarār mēguzārēm.", en: "We make an appointment." },
@@ -5826,7 +5826,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او را از مکتب می‌شناسم.", translit: "ō rā az maktab mēshināsam.", en: "I know him from school." },
       { target: "پدر و مادر او را هم می‌شناسم.", translit: "padar wa mādar-e ō rā ham mēshināsam.", en: "I also know his father and mother." },
       { target: "دوست من هر آدم قریه را می‌شناسد.", translit: "dōst-e man har ādam-e qarya rā mēshināsad.", en: "My friend knows every person in the village." },
-      { target: "او یک آدم خوب است و موسیقی می‌شنود.", translit: "ō yak ādam-e khōb ast wa mūsīqī mēshunawad.", en: "He is a good person and listens to music." },
+      { target: "او یک آدم خوب است و موسیقی می‌شنود.", translit: "ō yak ādam-e khūb ast wa mūsīqī mēshunawad.", en: "He is a good person and listens to music." },
       { target: "من فقط او را می‌شناسم.", translit: "man faqat ō rā mēshināsam.", en: "I only know him." },
     ],
   },
@@ -5859,7 +5859,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "در این دکان قند و چای می‌فروشند.", translit: "dar īn dukān qand wa chāy mēfurōshand.", en: "In this shop they sell sugar and tea." },
       { target: "آنها میوه تازه هم می‌فروشند.", translit: "ānhā mēwa-ye tāza ham mēfurōshand.", en: "They also sell fresh fruit." },
       { target: "مردم آنجا قند و نان می‌خرند.", translit: "mardum ānjā qand wa nān mēkharand.", en: "People buy sugar and bread there." },
-      { target: "این دکان واقعاً جای خوب است.", translit: "īn dukān wāqean jāy-e khōb ast.", en: "This shop is really a good place." },
+      { target: "این دکان واقعاً جای خوب است.", translit: "īn dukān wāqean jāy-e khūb ast.", en: "This shop is really a good place." },
     ],
   },
   {
@@ -5922,7 +5922,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "بعد از زنگ او به صنف می‌آید.", translit: "ba'd az zang ō ba senf mēāyad.", en: "After the bell he comes to the classroom." },
       { target: "او به ما دری می‌آموزد.", translit: "ō ba mā darī mēāmōzad.", en: "He teaches us Dari." },
       { target: "ما همه به معلم گوش می‌کنیم.", translit: "mā hama ba mu'allem gōsh mēkunēm.", en: "We all listen to the teacher." },
-      { target: "البته شاگردان خوب گوش می‌کنند.", translit: "albatta shāgerdān khōb gōsh mēkunand.", en: "Of course the pupils listen well." },
+      { target: "البته شاگردان خوب گوش می‌کنند.", translit: "albatta shāgerdān khūb gōsh mēkunand.", en: "Of course the pupils listen well." },
       { target: "او اطفال خورد را می‌بخشد.", translit: "ō atfāl-e khurd rā mēbakhshad.", en: "He forgives the small children." },
     ],
   },
@@ -6111,7 +6111,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "دوست من مرد جوان است.", translit: "dōst-e man mard-e jawān ast.", en: "My friend is a young man." },
       { target: "ما دو نفر هستیم.", translit: "mā dū nafar hastēm.", en: "We are two people." },
       { target: "ما هم کار می‌کنیم.", translit: "mā ham kār mēkunēm.", en: "We work too." },
-      { target: "امروز روز خوب است.", translit: "emrōz rōz-e khōb ast.", en: "Today is a good day." },
+      { target: "امروز روز خوب است.", translit: "emrōz rōz-e khūb ast.", en: "Today is a good day." },
     ],
   },
   {
@@ -6213,7 +6213,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Water and bread",
     sentences: [
       { target: "ما نان و آب داریم.", translit: "mā nān wa āb dārēm.", en: "We have bread and water." },
-      { target: "آب سرد و خوب است.", translit: "āb sard wa khōb ast.", en: "The water is cold and good." },
+      { target: "آب سرد و خوب است.", translit: "āb sard wa khūb ast.", en: "The water is cold and good." },
       { target: "من از آب می‌خورم.", translit: "man az āb mēkhuram.", en: "I drink water." },
       { target: "مادر من نان می‌دهد.", translit: "mādar-e man nān mēdihad.", en: "My mother gives bread." },
       { target: "ما هم با هم می‌خوریم.", translit: "mā ham bā ham mēkhurēm.", en: "We eat together too." },
@@ -6273,7 +6273,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "The woman and the child",
     sentences: [
       { target: "یک زن اینجا است.", translit: "yak zan īnjā ast.", en: "A woman is here." },
-      { target: "نام آن زن خوب است.", translit: "nām-e ān zan khōb ast.", en: "That woman's name is good." },
+      { target: "نام آن زن خوب است.", translit: "nām-e ān zan khūb ast.", en: "That woman's name is good." },
       { target: "بچه او خورد است.", translit: "bacha-ye ō khurd ast.", en: "Her child is small." },
       { target: "زن به بچه نان می‌دهد.", translit: "zan ba bacha nān mēdihad.", en: "The woman gives the child bread." },
       { target: "بچه خوش می‌شود.", translit: "bacha khush mēshawad.", en: "The child becomes happy." },
@@ -6322,7 +6322,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "آب دریا سرد است.", translit: "āb-e daryā sard ast.", en: "The river water is cold." },
       { target: "مردم شهر اینجا می‌آیند.", translit: "mardum-e shahr īnjā mēāyand.", en: "The city people come here." },
       { target: "همه با هم خوش هستند.", translit: "hama bā ham khush hastand.", en: "Everyone is happy together." },
-      { target: "زندگی اینجا خوب است.", translit: "zindagī īnjā khōb ast.", en: "Life here is good." },
+      { target: "زندگی اینجا خوب است.", translit: "zindagī īnjā khūb ast.", en: "Life here is good." },
     ],
   },
   {
@@ -6336,7 +6336,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "معلم ما اینجا است.", translit: "mu'allem-e mā īnjā ast.", en: "Our teacher is here." },
       { target: "هر شاگرد یک کتاب دارد.", translit: "har shāgerd yak ketāb dārad.", en: "Every student has a book." },
       { target: "معلم به شاگرد درس می‌دهد.", translit: "mu'allem ba shāgerd dars mēdihad.", en: "The teacher gives the student a lesson." },
-      { target: "شاگرد خوب می‌خواند.", translit: "shāgerd khōb mēkhānad.", en: "The student reads well." },
+      { target: "شاگرد خوب می‌خواند.", translit: "shāgerd khūb mēkhānad.", en: "The student reads well." },
       { target: "همه شاگردان خوش هستند.", translit: "hama shāgerdān khush hastand.", en: "All the students are happy." },
     ],
   },
@@ -6382,8 +6382,8 @@ export const seedTexts: SeedTextSource[] = [
       { target: "آن مرد اینجا کار می‌کند.", translit: "ān mard īnjā kār mēkunad.", en: "That man works here." },
       { target: "او یک دختر دارد.", translit: "ō yak dukhtar dārad.", en: "He has a daughter." },
       { target: "دختر او مکتب می‌رود.", translit: "dukhtar-e ō maktab mērawad.", en: "His daughter goes to school." },
-      { target: "او خوب می‌داند.", translit: "ō khōb mēdānad.", en: "She knows well." },
-      { target: "آنها زندگی خوب دارند.", translit: "ānhā zindagī-ye khōb dārand.", en: "They have a good life." },
+      { target: "او خوب می‌داند.", translit: "ō khūb mēdānad.", en: "She knows well." },
+      { target: "آنها زندگی خوب دارند.", translit: "ānhā zindagī-ye khūb dārand.", en: "They have a good life." },
     ],
   },
   {
@@ -6429,7 +6429,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "همه مردم خوش هستند.", translit: "hama mardum khush hastand.", en: "All the people are happy." },
       { target: "ما گوشت و نان می‌خوریم.", translit: "mā gōsht wa nān mēkhurēm.", en: "We eat meat and bread." },
       { target: "مادرکلان من هم می‌آید.", translit: "mādarkalān-e man ham mēāyad.", en: "My grandmother comes too." },
-      { target: "این روز بسیار خوب است.", translit: "īn rōz bisyār khōb ast.", en: "This day is very good." },
+      { target: "این روز بسیار خوب است.", translit: "īn rōz bisyār khūb ast.", en: "This day is very good." },
       { target: "همه زود برمی‌خیزند.", translit: "hama zūd barmēkhēzand.", en: "Everyone gets up early." },
     ],
   },
@@ -6441,7 +6441,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "chashm wa dast",
     titleEn: "Eye and hand",
     sentences: [
-      { target: "چشم من خوب می‌بیند.", translit: "chashm-e man khōb mēbīnad.", en: "My eye sees well." },
+      { target: "چشم من خوب می‌بیند.", translit: "chashm-e man khūb mēbīnad.", en: "My eye sees well." },
       { target: "دست من کار می‌کند.", translit: "dast-e man kār mēkunad.", en: "My hand works." },
       { target: "من یک چیز می‌بینم.", translit: "man yak chīz mēbīnam.", en: "I see a thing." },
       { target: "این چیز کهنه است.", translit: "īn chīz kuhna ast.", en: "This thing is old." },
@@ -6460,7 +6460,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "کابل در افغانستان است.", translit: "kābul dar afghānestān ast.", en: "Kabul is in Afghanistan." },
       { target: "مردم افغانستان مهربان هستند.", translit: "mardum-e afghānestān mehrabān hastand.", en: "The people of Afghanistan are kind." },
       { target: "کابل شهر کلان است.", translit: "kābul shahr-e kalān ast.", en: "Kabul is a big city." },
-      { target: "زندگی در کابل خوب است.", translit: "zindagī dar kābul khōb ast.", en: "Life in Kabul is good." },
+      { target: "زندگی در کابل خوب است.", translit: "zindagī dar kābul khūb ast.", en: "Life in Kabul is good." },
     ],
   },
   {
@@ -6475,7 +6475,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "معلم من هم می‌نویسد.", translit: "mu'allem-e man ham mēnawīsad.", en: "My teacher writes too." },
       { target: "شاگردان در صنف می‌نویسند.", translit: "shāgerdān dar senf mēnawīsand.", en: "The students write in the classroom." },
       { target: "من یک نام می‌نویسم.", translit: "man yak nām mēnawīsam.", en: "I write a name." },
-      { target: "نوشتن کار خوب است.", translit: "nawishtan kār-e khōb ast.", en: "Writing is good work." },
+      { target: "نوشتن کار خوب است.", translit: "nawishtan kār-e khūb ast.", en: "Writing is good work." },
     ],
   },
   {
@@ -6490,7 +6490,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او هم به من می‌گوید.", translit: "ō ham ba man mēgōyad.", en: "He speaks to me too." },
       { target: "مادر من به ما می‌گوید.", translit: "mādar-e man ba mā mēgōyad.", en: "My mother speaks to us." },
       { target: "ما همه می‌گوییم.", translit: "mā hama mēgōyēm.", en: "We all speak." },
-      { target: "گفتن کار خوب است.", translit: "guftan kār-e khōb ast.", en: "Speaking is good work." },
+      { target: "گفتن کار خوب است.", translit: "guftan kār-e khūb ast.", en: "Speaking is good work." },
     ],
   },
   {
@@ -6517,7 +6517,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Our game",
     sentences: [
       { target: "ما هر روز بازی می‌کنیم.", translit: "mā har rōz bāzī mēkunēm.", en: "We play every day." },
-      { target: "این بازی بسیار خوب است.", translit: "īn bāzī bisyār khōb ast.", en: "This game is very good." },
+      { target: "این بازی بسیار خوب است.", translit: "īn bāzī bisyār khūb ast.", en: "This game is very good." },
       { target: "من تیز دویده می‌توانم.", translit: "man tēz dawīda mētawānam.", en: "I can run fast." },
       { target: "برادر من هم دویده می‌تواند.", translit: "barādar-e man ham dawīda mētawānad.", en: "My brother can run too." },
       { target: "ما بسیار خوش هستیم.", translit: "mā bisyār khush hastēm.", en: "We are very happy." },
@@ -6580,7 +6580,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "یک میز کهنه اینجا است.", translit: "yak mēz-e kuhna īnjā ast.", en: "An old table is here." },
       { target: "پدر من چیز کهنه می‌برد.", translit: "padar-e man chīz-e kuhna mēbarad.", en: "My father takes the old thing." },
       { target: "او یک چیز نو می‌آورد.", translit: "ō yak chīz-e naw mēāwarad.", en: "He brings a new thing." },
-      { target: "حالا خانه ما خوب است.", translit: "hālā khāna-ye mā khōb ast.", en: "Now our house is good." },
+      { target: "حالا خانه ما خوب است.", translit: "hālā khāna-ye mā khūb ast.", en: "Now our house is good." },
     ],
   },
   {
@@ -6591,11 +6591,11 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "mu'allem-e mā",
     titleEn: "Our teacher",
     sentences: [
-      { target: "معلم ما بسیار خوب است.", translit: "mu'allem-e mā bisyār khōb ast.", en: "Our teacher is very good." },
+      { target: "معلم ما بسیار خوب است.", translit: "mu'allem-e mā bisyār khūb ast.", en: "Our teacher is very good." },
       { target: "او به شاگردان درس می‌دهد.", translit: "ō ba shāgerdān dars mēdihad.", en: "He gives the students a lesson." },
       { target: "شاگردان زیاد می‌دانند.", translit: "shāgerdān ziyād mēdānand.", en: "The students know a lot." },
       { target: "من هم یاد می‌گیرم.", translit: "man ham yād mēgīram.", en: "I learn too." },
-      { target: "زندگی شاگرد خوب است.", translit: "zindagī-ye shāgerd khōb ast.", en: "A student's life is good." },
+      { target: "زندگی شاگرد خوب است.", translit: "zindagī-ye shāgerd khūb ast.", en: "A student's life is good." },
     ],
   },
   {
@@ -6609,7 +6609,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من یک چیز نو می‌خواهم.", translit: "man yak chīz-e naw mēkhāham.", en: "I want a new thing." },
       { target: "خواهر من هم می‌خواهد.", translit: "khāhar-e man ham mēkhāhad.", en: "My sister wants one too." },
       { target: "مادر من به بازار می‌رود.", translit: "mādar-e man ba bāzār mērawad.", en: "My mother goes to the bazaar." },
-      { target: "او یک چیز خوب می‌برد.", translit: "ō yak chīz-e khōb mēbarad.", en: "She takes a good thing." },
+      { target: "او یک چیز خوب می‌برد.", translit: "ō yak chīz-e khūb mēbarad.", en: "She takes a good thing." },
       { target: "ما بسیار خوش می‌شویم.", translit: "mā bisyār khush mēshawēm.", en: "We become very happy." },
     ],
   },
@@ -6683,7 +6683,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Bread and rice",
     sentences: [
       { target: "مادر من برنج می‌پزد.", translit: "mādar-e man berenj mēpazad.", en: "My mother cooks rice." },
-      { target: "برنج با گوشت بسیار خوب است.", translit: "berenj bā gōsht bisyār khōb ast.", en: "Rice with meat is very good." },
+      { target: "برنج با گوشت بسیار خوب است.", translit: "berenj bā gōsht bisyār khūb ast.", en: "Rice with meat is very good." },
       { target: "ما شش نفر هستیم.", translit: "mā shash nafar hastēm.", en: "We are six people." },
       { target: "همه سر میز می‌نشینیم.", translit: "hama sar-e mēz mēnishīnēm.", en: "We all sit at the table." },
       { target: "برنج امروز شیرین نیست.", translit: "berenj emrōz shīrīn nēst.", en: "The rice is not sweet today." },
@@ -6713,11 +6713,11 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Eye and heart",
     sentences: [
       { target: "چشم من امروز سرخ است.", translit: "chashm-e man emrōz surkh ast.", en: "My eye is red today." },
-      { target: "من دیشب خوب نمی‌خوابم.", translit: "man dēshab khōb namēkhābam.", en: "I do not sleep well at night." },
+      { target: "من دیشب خوب نمی‌خوابم.", translit: "man dēshab khūb namēkhābam.", en: "I do not sleep well at night." },
       { target: "حالا من بسیار مانده هستم.", translit: "hālā man bisyār mānda hastam.", en: "Now I am very tired." },
       { target: "دل من آرام نیست.", translit: "dil-e man ārām nēst.", en: "My heart is not calm." },
       { target: "من امشب زود می‌خوابم.", translit: "man emshab zūd mēkhābam.", en: "Tonight I sleep early." },
-      { target: "خواب من خوب است.", translit: "khāb-e man khōb ast.", en: "My sleep is good." },
+      { target: "خواب من خوب است.", translit: "khāb-e man khūb ast.", en: "My sleep is good." },
     ],
   },
   {
@@ -6803,11 +6803,11 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "nazar-e man",
     titleEn: "My opinion",
     sentences: [
-      { target: "نظر من خوب است.", translit: "nazar-e man khōb ast.", en: "My opinion is good." },
+      { target: "نظر من خوب است.", translit: "nazar-e man khūb ast.", en: "My opinion is good." },
       { target: "من نظر خود را می‌گویم.", translit: "man nazar-e khud rā mēgōyam.", en: "I say my opinion." },
       { target: "دوست من نظر دیگر دارد.", translit: "dōst-e man nazar-e dīgar dārad.", en: "My friend has a different opinion." },
       { target: "ما در مورد کار صحبت می‌کنیم.", translit: "mā dar mōrid-e kār suhbat mēkunēm.", en: "We talk about the work." },
-      { target: "نظر او هم خوب است.", translit: "nazar-e ō ham khōb ast.", en: "His opinion is good too." },
+      { target: "نظر او هم خوب است.", translit: "nazar-e ō ham khūb ast.", en: "His opinion is good too." },
     ],
   },
   {
@@ -6822,7 +6822,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ما پیاده به قریه می‌رویم.", translit: "mā piyāda ba qarya mērawēm.", en: "We go to the village on foot." },
       { target: "راه بسته نیست و باز است.", translit: "rāh basta nēst wa bāz ast.", en: "The road is not closed, it is open." },
       { target: "ما در راه صحبت می‌کنیم.", translit: "mā dar rāh suhbat mēkunēm.", en: "We talk on the way." },
-      { target: "این سفر بسیار خوب است.", translit: "īn safar bisyār khōb ast.", en: "This trip is very good." },
+      { target: "این سفر بسیار خوب است.", translit: "īn safar bisyār khūb ast.", en: "This trip is very good." },
     ],
   },
   {
@@ -6882,7 +6882,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "آنها لباس سبز می‌پوشند.", translit: "ānhā libās-e sabz mēpōshand.", en: "They wear green clothes." },
       { target: "بازی زود تمام می‌شود.", translit: "bāzī zūd tamām mēshawad.", en: "The game finishes early." },
       { target: "بعد آنها آب می‌خورند.", translit: "ba'd ānhā āb mēkhurand.", en: "Afterwards they drink water." },
-      { target: "فوتبال بازی خوب است.", translit: "fūtbāl bāzī-ye khōb ast.", en: "Football is a good game." },
+      { target: "فوتبال بازی خوب است.", translit: "fūtbāl bāzī-ye khūb ast.", en: "Football is a good game." },
     ],
   },
   {
@@ -6944,7 +6944,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "دروازه کهنه و سفید است.", translit: "darwāza kuhna wa safēd ast.", en: "The door is old and white." },
       { target: "پدر من دروازه می‌سازد.", translit: "padar-e man darwāza mēsāzad.", en: "My father builds the door." },
       { target: "او یک چیز نو می‌آورد.", translit: "ō yak chīz-e naw mēāwarad.", en: "He brings a new thing." },
-      { target: "حالا دروازه خوب است.", translit: "hālā darwāza khōb ast.", en: "Now the door is good." },
+      { target: "حالا دروازه خوب است.", translit: "hālā darwāza khūb ast.", en: "Now the door is good." },
     ],
   },
   {
@@ -7003,7 +7003,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "ما هر شب گپ می‌زنیم.", translit: "mā har shab gap mēzanēm.", en: "We talk every night." },
       { target: "پدر من گپ می‌زند.", translit: "padar-e man gap mēzanad.", en: "My father talks." },
       { target: "ما گپ او می‌شنویم.", translit: "mā gap-e ō mēshunawēm.", en: "We hear his talk." },
-      { target: "گپ او خوب است.", translit: "gap-e ō khōb ast.", en: "His talk is good." },
+      { target: "گپ او خوب است.", translit: "gap-e ō khūb ast.", en: "His talk is good." },
       { target: "ما زیاد می‌دانیم.", translit: "mā ziyād mēdānēm.", en: "We know a lot." },
     ],
   },
@@ -7048,7 +7048,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "کابل شهر کلان افغانستان است.", translit: "kābul shahr-e kalān-e afghānestān ast.", en: "Kabul is a big city of Afghanistan." },
       { target: "سرک کابل بسیار زیاد است.", translit: "sarak-e kābul bisyār ziyād ast.", en: "Kabul's streets are very many." },
       { target: "مردم کابل جوان هستند.", translit: "mardum-e kābul jawān hastand.", en: "Kabul's people are young." },
-      { target: "زندگی در کابل خوب است.", translit: "zindagī dar kābul khōb ast.", en: "Life in Kabul is good." },
+      { target: "زندگی در کابل خوب است.", translit: "zindagī dar kābul khūb ast.", en: "Life in Kabul is good." },
       { target: "من کابل می‌دانم.", translit: "man kābul mēdānam.", en: "I know Kabul." },
     ],
   },
@@ -7093,9 +7093,9 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "من تیز دویده می‌توانم.", translit: "man tēz dawīda mētawānam.", en: "I can run fast." },
       { target: "برادر من نان پخته می‌تواند.", translit: "barādar-e man nān pukhta mētawānad.", en: "My brother can bake bread." },
-      { target: "خواهر من خوب نوشته می‌تواند.", translit: "khāhar-e man khōb nawishta mētawānad.", en: "My sister can write well." },
+      { target: "خواهر من خوب نوشته می‌تواند.", translit: "khāhar-e man khūb nawishta mētawānad.", en: "My sister can write well." },
       { target: "ما همه کار کرده می‌توانیم.", translit: "mā hama kār karda mētawānēm.", en: "We can all work." },
-      { target: "زندگی ما خوب است.", translit: "zindagī-ye mā khōb ast.", en: "Our life is good." },
+      { target: "زندگی ما خوب است.", translit: "zindagī-ye mā khūb ast.", en: "Our life is good." },
     ],
   },
   {
@@ -7110,7 +7110,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "یک برادر جوان است.", translit: "yak barādar jawān ast.", en: "One brother is young." },
       { target: "او هر روز می‌دود.", translit: "ō har rōz mēdawad.", en: "He runs every day." },
       { target: "برادر دیگر من درس می‌خواند.", translit: "barādar-e dīgar-e man dars mēkhānad.", en: "My other brother studies." },
-      { target: "هر دو خوب هستند.", translit: "har dū khōb hastand.", en: "Both are good." },
+      { target: "هر دو خوب هستند.", translit: "har dū khūb hastand.", en: "Both are good." },
     ],
   },
   {
@@ -7121,8 +7121,8 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "chashm wa gōsh",
     titleEn: "Eye and ear",
     sentences: [
-      { target: "چشم من خوب می‌بیند.", translit: "chashm-e man khōb mēbīnad.", en: "My eye sees well." },
-      { target: "گوش من خوب می‌شنود.", translit: "gōsh-e man khōb mēshunawad.", en: "My ear hears well." },
+      { target: "چشم من خوب می‌بیند.", translit: "chashm-e man khūb mēbīnad.", en: "My eye sees well." },
+      { target: "گوش من خوب می‌شنود.", translit: "gōsh-e man khūb mēshunawad.", en: "My ear hears well." },
       { target: "معلم گپ می‌زند.", translit: "mu'allem gap mēzanad.", en: "The teacher talks." },
       { target: "سر من امروز جور است.", translit: "sar-e man emrōz jōr ast.", en: "My head is well today." },
       { target: "من خوش هستم.", translit: "man khush hastam.", en: "I am happy." },
@@ -7152,7 +7152,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Sweet bread",
     sentences: [
       { target: "مادر من نان شیرین می‌پزد.", translit: "mādar-e man nān-e shīrīn mēpazad.", en: "My mother bakes sweet bread." },
-      { target: "نان گرم و خوب است.", translit: "nān garm wa khōb ast.", en: "The bread is warm and good." },
+      { target: "نان گرم و خوب است.", translit: "nān garm wa khūb ast.", en: "The bread is warm and good." },
       { target: "ما نان با چای می‌خوریم.", translit: "mā nān bā chāy mēkhurēm.", en: "We eat bread with tea." },
       { target: "من یک سیب هم می‌گیرم.", translit: "man yak sēb ham mēgīram.", en: "I take an apple too." },
       { target: "سیب شیرین است.", translit: "sēb shīrīn ast.", en: "The apple is sweet." },
@@ -7166,7 +7166,7 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "zindagī-ye mā",
     titleEn: "Our life",
     sentences: [
-      { target: "زندگی ما خوب است.", translit: "zindagī-ye mā khōb ast.", en: "Our life is good." },
+      { target: "زندگی ما خوب است.", translit: "zindagī-ye mā khūb ast.", en: "Our life is good." },
       { target: "ما هر روز کار می‌کنیم.", translit: "mā har rōz kār mēkunēm.", en: "We work every day." },
       { target: "پدر من به بازار می‌رود.", translit: "padar-e man ba bāzār mērawad.", en: "My father goes to the bazaar." },
       { target: "او نان و گوشت می‌آورد.", translit: "ō nān wa gōsht mēāwarad.", en: "He brings bread and meat." },
@@ -7184,7 +7184,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من یک کتاب کهنه دارم.", translit: "man yak ketāb-e kuhna dāram.", en: "I have an old book." },
       { target: "این کتاب از پدرکلان من است.", translit: "īn ketāb az padarkalān-e man ast.", en: "This book is from my grandfather." },
       { target: "من هر شب می‌خوانم.", translit: "man har shab mēkhānam.", en: "I read every night." },
-      { target: "کتاب بسیار خوب است.", translit: "ketāb bisyār khōb ast.", en: "The book is very good." },
+      { target: "کتاب بسیار خوب است.", translit: "ketāb bisyār khūb ast.", en: "The book is very good." },
       { target: "من کتاب به مکتب می‌برم.", translit: "man ketāb ba maktab mēbaram.", en: "I take the book to school." },
     ],
   },
@@ -7245,7 +7245,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "فردا من مکتب می‌روم.", translit: "fardā man maktab mērawam.", en: "Tomorrow I go to school." },
       { target: "معلم من درس می‌دهد.", translit: "mu'allem-e man dars mēdihad.", en: "My teacher gives a lesson." },
       { target: "من یاد می‌گیرم.", translit: "man yād mēgīram.", en: "I learn." },
-      { target: "زندگی خوب است.", translit: "zindagī khōb ast.", en: "Life is good." },
+      { target: "زندگی خوب است.", translit: "zindagī khūb ast.", en: "Life is good." },
     ],
   },
   {
@@ -7334,7 +7334,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "نانوای ما نزدیک خانه است.", translit: "nānwā-ye mā nazdīk-e khāna ast.", en: "Our baker is near the house." },
       { target: "او هر صبح نان می‌پزد.", translit: "ō har subh nān mēpazad.", en: "He bakes bread every morning." },
       { target: "آتش دکان او گرم است.", translit: "ātash-e dukān-e ō garm ast.", en: "The fire of his shop is warm." },
-      { target: "نان نانوا بسیار خوب است.", translit: "nān-e nānwā bisyār khōb ast.", en: "The baker's bread is very good." },
+      { target: "نان نانوا بسیار خوب است.", translit: "nān-e nānwā bisyār khūb ast.", en: "The baker's bread is very good." },
       { target: "من هر روز از نانوا نان می‌خرم.", translit: "man har rōz az nānwā nān mēkharam.", en: "I buy bread from the baker every day." },
     ],
   },
@@ -7456,7 +7456,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "همه فامیل می‌خندند.", translit: "hama fāmīl mēkhandand.", en: "The whole family laughs." },
       { target: "مادر من نان شیرین می‌پزد.", translit: "mādar-e man nān-e shīrīn mēpazad.", en: "My mother bakes sweet bread." },
       { target: "حتی پدرکلان من هم می‌آید.", translit: "hattā padarkalān-e man ham mēāyad.", en: "Even my grandfather comes." },
-      { target: "این روز بسیار خوب است.", translit: "īn rōz bisyār khōb ast.", en: "This day is very good." },
+      { target: "این روز بسیار خوب است.", translit: "īn rōz bisyār khūb ast.", en: "This day is very good." },
     ],
   },
   {
@@ -7504,7 +7504,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "من هر روز کوشش می‌کنم.", translit: "man har rōz kōshish mēkunam.", en: "I try every day." },
       { target: "خواهر من هم کوشش می‌کند.", translit: "khāhar-e man ham kōshish mēkunad.", en: "My sister tries too." },
       { target: "ما درس خود را می‌پالیم.", translit: "mā dars-e khud rā mēpālēm.", en: "We look for our lesson." },
-      { target: "کوشش کار خوب است.", translit: "kōshish kār-e khōb ast.", en: "Trying is good work." },
+      { target: "کوشش کار خوب است.", translit: "kōshish kār-e khūb ast.", en: "Trying is good work." },
       { target: "معلم ما هم کوشش می‌کند.", translit: "mu'allem-e mā ham kōshish mēkunad.", en: "Our teacher tries too." },
     ],
   },
@@ -7533,7 +7533,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "دیروز ما یک امتحان مشکل داشتیم.", translit: "dīrōz mā yak imtihān-e mushkil dāshtēm.", en: "Yesterday we had a difficult exam." },
       { target: "سوال‌ها از امتحان گذشته مشکل‌تر بود.", translit: "sawāl-hā az imtihān-e guzashta mushkil-tar būd.", en: "The questions were harder than the last exam." },
       { target: "معلم گفت که باید بیشتر کوشش کنیم.", translit: "mu'allem guft ki bāyad bishtar kōshish kunēm.", en: "The teacher said we must try harder." },
-      { target: "من فکر می‌کنم که نتیجه خوب می‌شود.", translit: "man fikr mēkunam ki natīja khōb mēshawad.", en: "I think the result will be good." },
+      { target: "من فکر می‌کنم که نتیجه خوب می‌شود.", translit: "man fikr mēkunam ki natīja khūb mēshawad.", en: "I think the result will be good." },
     ],
   },
   {
@@ -7619,7 +7619,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او هر روز با ما گپ می‌زند.", translit: "ō har rōz bā mā gap mēzanad.", en: "He talks with us every day." },
       { target: "ما به همسایه خود کمک می‌کنیم.", translit: "mā ba hamsāya-ye khud kumak mēkunēm.", en: "We help our neighbor." },
       { target: "او هم به ما کمک می‌کند.", translit: "ō ham ba mā kumak mēkunad.", en: "He helps us too." },
-      { target: "همسایه خوب یک چیز مبارک است.", translit: "hamsāya-ye khōb yak chīz-e mubārak ast.", en: "A good neighbor is a blessed thing." },
+      { target: "همسایه خوب یک چیز مبارک است.", translit: "hamsāya-ye khūb yak chīz-e mubārak ast.", en: "A good neighbor is a blessed thing." },
     ],
   },
   {
@@ -7709,7 +7709,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "او خواهش من را می‌شنود.", translit: "ō khāhish-e man rā mēshunawad.", en: "He hears my request." },
       { target: "من از او یک چیز می‌پرسم.", translit: "man az ō yak chīz mēpursam.", en: "I ask him something." },
       { target: "او جواب بهتر می‌یابد.", translit: "ō jawāb-e bihtar mēyābad.", en: "He finds a better answer." },
-      { target: "خواهش کردن کار خوب است.", translit: "khāhish kardan kār-e khōb ast.", en: "Asking is a good thing." },
+      { target: "خواهش کردن کار خوب است.", translit: "khāhish kardan kār-e khūb ast.", en: "Asking is a good thing." },
     ],
   },
   {

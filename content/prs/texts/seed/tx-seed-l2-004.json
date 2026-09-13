@@ -93,7 +93,7 @@
     },
     {
       "target": "به نظر من، مکتب خوب است.",
-      "translit": "ba nazar-e man, maktab khōb ast.",
+      "translit": "ba nazar-e man, maktab khūb ast.",
       "en": "In my opinion, the school is good.",
       "tokens": [
         {
@@ -124,7 +124,7 @@
     },
     {
       "target": "در شهر ما مکتب خوب وجود دارد.",
-      "translit": "dar shahr-e mā maktab-e khōb wujūd dārad.",
+      "translit": "dar shahr-e mā maktab-e khūb wujūd dārad.",
       "en": "In our city there is a good school.",
       "tokens": [
         {
@@ -234,7 +234,7 @@
         },
         {
           "target": "معلم خوب",
-          "translit": "mu'allem-e khōb",
+          "translit": "mu'allem-e khūb",
           "en": "A good teacher"
         },
         {

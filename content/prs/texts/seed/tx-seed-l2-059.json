@@ -93,7 +93,7 @@
     },
     {
       "target": "من چیزهای دور را خوب نمی‌بینم.",
-      "translit": "man chīz-hā-ye dūr rā khōb namēbīnam.",
+      "translit": "man chīz-hā-ye dūr rā khūb namēbīnam.",
       "en": "I do not see distant things well.",
       "tokens": [
         {
@@ -191,7 +191,7 @@
         },
         {
           "target": "خوب است",
-          "translit": "khōb ast",
+          "translit": "khūb ast",
           "en": "It is fine"
         }
       ],
@@ -202,7 +202,7 @@
     {
       "questionEn": "Which things do I not see well?",
       "questionTarget": "من کدام چیزها را خوب نمی‌بینم؟",
-      "questionTranslit": "man kudām chīz-hā rā khōb namēbīnam?",
+      "questionTranslit": "man kudām chīz-hā rā khūb namēbīnam?",
       "options": [
         {
           "target": "چیزهای نزدیک",

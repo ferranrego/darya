@@ -12,7 +12,7 @@ edit the data files, not the JSON.
   بایسکل (bicycle), مقبول (beautiful), کلان (big), خورد (small), پیسه (money),
   بجه (o'clock), دریا (river), شفاخانه (hospital), کلکین (window), بلی (yes)…
 - **Transliteration reflects Kabuli pronunciation**, including the majhul vowels
-  ē/ō lost in Iranian Persian (شیر shēr "lion" vs shīr "milk", خوب khōb, روز rōz).
+  ē/ō lost in Iranian Persian (شیر shēr "lion" vs shīr "milk", دوست dōst, روز rōz).
 - **Surface-form matching, lemma entries.** Verbs are listed as infinitives with
   common conjugations in `variants`, so tapping می‌روم resolves to رفتن. Homographs
   (نه no/nine, شیر milk/lion) are one entry with a combined gloss.

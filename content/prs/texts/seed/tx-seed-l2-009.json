@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "این جای خوبی است.",
-      "translit": "īn jāy-e khōbē ast.",
+      "translit": "īn jāy-e khūbē ast.",
       "en": "This is a good place.",
       "tokens": [
         {
@@ -153,7 +153,7 @@
       "options": [
         {
           "target": "خوب",
-          "translit": "khōb",
+          "translit": "khūb",
           "en": "Good"
         },
         {

@@ -120,7 +120,7 @@
     },
     {
       "target": "من امتحان را خوب می‌دانم.",
-      "translit": "man imtihān rā khōb mēdānam.",
+      "translit": "man imtihān rā khūb mēdānam.",
       "en": "I know the exam well.",
       "tokens": [
         {
@@ -203,7 +203,7 @@
       "options": [
         {
           "target": "خوب",
-          "translit": "khōb",
+          "translit": "khūb",
           "en": "Well"
         },
         {

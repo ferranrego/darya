@@ -674,13 +674,13 @@
           "id": "au04-e9",
           "type": "readWord",
           "word": "خوب",
-          "translit": "khōb",
+          "translit": "khūb",
           "glossEn": "good",
           "choices": [
-            "khōb",
+            "khūb",
             "khab",
             "bōkh",
-            "khūb"
+            "khōb"
           ]
         },
         {
@@ -700,7 +700,7 @@
           "id": "au04-e11",
           "type": "readSentence",
           "target": "هوا خوب است.",
-          "translit": "hawā khōb ast.",
+          "translit": "hawā khūb ast.",
           "en": "The weather is good.",
           "hint": "است (ast) = 'is'. You can read every letter in it."
         },

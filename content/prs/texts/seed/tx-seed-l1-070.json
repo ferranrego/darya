@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "معلم ما بسیار خوب است.",
-      "translit": "mu'allem-e mā bisyār khōb ast.",
+      "translit": "mu'allem-e mā bisyār khūb ast.",
       "en": "Our teacher is very good.",
       "tokens": [
         {
@@ -104,7 +104,7 @@
     },
     {
       "target": "زندگی شاگرد خوب است.",
-      "translit": "zindagī-ye shāgerd khōb ast.",
+      "translit": "zindagī-ye shāgerd khūb ast.",
       "en": "A student's life is good.",
       "tokens": [
         {

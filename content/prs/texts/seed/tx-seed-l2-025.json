@@ -31,7 +31,7 @@
     },
     {
       "target": "عزیزم، فرهنگ ما خوب است.",
-      "translit": "azēz-am, farhang-e mā khōb ast.",
+      "translit": "azēz-am, farhang-e mā khūb ast.",
       "en": "My dear, our culture is good.",
       "tokens": [
         {
@@ -158,7 +158,7 @@
         },
         {
           "target": "خوب",
-          "translit": "khōb",
+          "translit": "khūb",
           "en": "Good"
         }
       ],
