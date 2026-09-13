@@ -68,9 +68,13 @@ Authoring vocabulary, examples or texts, in order:
    no validator can express: a card reading *registre · verb · record* is
    obviously wrong to anyone, in any language. It is also how the `register`
    field turned out to be `formal` on every everyday word.
-3. **`--apply`, which prints `lexicon-diff.ts` automatically** - counts by part
-   of speech and register, before and after, plus a sample of the actual edits.
-   "142 repaired" is not checkable; "noun 290 → 63, verb 0 → 43" is.
+3. **Apply, then `node scripts/lexicon-diff.ts --lang <lang>`** - counts by
+   part of speech and register, before and after, plus a sample of the actual
+   edits. "142 repaired" is not checkable; "noun 290 → 63, verb 0 → 43" is.
+   New entries apply with `node scripts/add-lexicon-entries.ts --lang <lang>
+   --from <file> --apply`. `review-batch.ts` has **no** `--apply`: this line
+   used to say it did, and repairs to existing entries are applied by a script
+   of your own, so the diff is the only proof of what that script touched.
 4. **`pnpm validate:content --lang <lang>`**, then the language gates.
 5. **Only then a philologist**, on one batch at a time. Running three batches
    back to back put 142 entries into a single review, which is not a review.
