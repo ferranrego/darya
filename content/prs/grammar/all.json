@@ -12685,18 +12685,18 @@
             {
               "id": "gl-71",
               "title": "It seems that",
-              "subtitle": "be nazar mērasad ki",
+              "subtitle": "ba nazar mērasad ki",
               "grammarPoint": "it-seems",
-              "grammarPointEn": "Expressing appearance with be nazar mērasad ki (it seems that) + clause, a hedge that softens a claim.",
+              "grammarPointEn": "Expressing appearance with ba nazar mērasad ki (it seems that) + clause, a hedge that softens a claim.",
               "slides": [
                 {
                   "id": "gs-71-1",
                   "title": "Softening a claim",
-                  "body": "be nazar mērasad ki ('it seems that') presents something as an impression rather than a fact - a key move in careful, formal speech.",
+                  "body": "ba nazar mērasad ki ('it seems that') presents something as an impression rather than a fact - a key move in careful, formal speech.",
                   "examples": [
                     {
                       "target": "به نظر می‌رسد که او مانده است",
-                      "translit": "be nazar mērasad ki ō mānda ast",
+                      "translit": "ba nazar mērasad ki ō mānda ast",
                       "en": "It seems that he is tired.",
                       "highlight": "به نظر می‌رسد"
                     }
@@ -12709,7 +12709,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "به نظر می‌رسد که او مانده است",
-                  "translit": "be nazar mērasad ki ō mānda ast",
+                  "translit": "ba nazar mērasad ki ō mānda ast",
                   "en": "It seems that he is tired.",
                   "distractorsEn": [
                     "He is certainly tired.",
@@ -12720,7 +12720,7 @@
                   "id": "ge-71-2",
                   "type": "fillBlank",
                   "target": "به نظر ___ که باران می‌آید",
-                  "translit": "be nazar ___ ki bārān mēāyad",
+                  "translit": "ba nazar ___ ki bārān mēāyad",
                   "en": "It seems that it will rain.",
                   "answer": {
                     "target": "می‌رسد",
@@ -12744,7 +12744,7 @@
                   "words": [
                     {
                       "target": "به نظر می‌رسد",
-                      "translit": "be nazar mērasad"
+                      "translit": "ba nazar mērasad"
                     },
                     {
                       "target": "که",
@@ -12763,7 +12763,7 @@
                       "translit": "rafta ast"
                     }
                   ],
-                  "translit": "be nazar mērasad ki ō ba khāna rafta ast",
+                  "translit": "ba nazar mērasad ki ō ba khāna rafta ast",
                   "extraWords": [
                     {
                       "target": "می‌رود",
@@ -12776,7 +12776,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "به نظر می‌رسد که کار سخت است",
-                  "translit": "be nazar mērasad ki kār sakht ast",
+                  "translit": "ba nazar mērasad ki kār sakht ast",
                   "en": "It seems that the work is hard.",
                   "distractorsTarget": [
                     {
@@ -12785,7 +12785,7 @@
                     },
                     {
                       "target": "به نظر می‌رسد که کار آسان است",
-                      "translit": "be nazar mērasad ki kār āsān ast"
+                      "translit": "ba nazar mērasad ki kār āsān ast"
                     }
                   ]
                 },
@@ -12796,7 +12796,7 @@
                   "pairs": [
                     {
                       "target": "به نظر می‌رسد",
-                      "translit": "be nazar mērasad",
+                      "translit": "ba nazar mērasad",
                       "en": "it seems"
                     },
                     {
@@ -12820,7 +12820,7 @@
                   "id": "ge-71-6",
                   "type": "fillBlank",
                   "target": "به نظر می‌رسد ___ او خوش است",
-                  "translit": "be nazar mērasad ___ ō khush ast",
+                  "translit": "ba nazar mērasad ___ ō khush ast",
                   "en": "It seems that he is happy.",
                   "answer": {
                     "target": "که",
@@ -13813,7 +13813,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "به نظر می‌رسد که او رفته باشد",
-                  "translit": "be nazar mērasad ki ō rafta bāshad",
+                  "translit": "ba nazar mērasad ki ō rafta bāshad",
                   "en": "It seems that he might have gone.",
                   "distractorsEn": [
                     "It is certain that he went.",
