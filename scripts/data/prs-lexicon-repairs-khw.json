@@ -1,0 +1,178 @@
+{
+  "lx-2344": {
+    "target": "خویشتن‌دار",
+    "why": [
+      "خویشتن is khēshtan: the و of خوی is silent, as in خواهر"
+    ],
+    "set": {
+      "translit": "khēshtan-dār",
+      "exampleTranslit": "dar asabāniyat khēshtan-dār bāsh."
+    },
+    "was": {
+      "translit": "khwēshtan-dār",
+      "exampleTranslit": "dar asabāniyat khwēshtan-dār bāsh."
+    }
+  },
+  "lx-2786": {
+    "target": "خودمختاری",
+    "why": [
+      "خود is khud"
+    ],
+    "set": {
+      "translit": "khud-mukhtārī",
+      "exampleTranslit": "īn minṭaqa khāhān-e khud-mukhtārī-ye bēshtar ast."
+    },
+    "was": {
+      "translit": "khwud-mukhtārī",
+      "exampleTranslit": "īn minṭaqa khāhān-e khwud-mukhtārī-ye bēshtar ast."
+    }
+  },
+  "lx-2884": {
+    "target": "آیرودینامیک",
+    "why": [
+      "the example script says موتر; the Latin still said khwudrō (خودرو)"
+    ],
+    "set": {
+      "exampleTranslit": "tarāhī-ye āyrūdīnāmīk-e mōtar masraf-e sōkht rā kāhish mēdihad."
+    },
+    "was": {
+      "exampleTranslit": "tarāhī-ye āyrūdīnāmīk-e khwudrō masraf-e sōkht rā kāhish mēdihad."
+    }
+  },
+  "lx-2762": {
+    "target": "خویشاوندپروری",
+    "why": [
+      "خویش is khēsh"
+    ],
+    "set": {
+      "translit": "khēshāwand-parwarī",
+      "exampleTranslit": "khēshāwand-parwarī yakī az 'awāmil-e aṣlī-ye fasād ast."
+    },
+    "was": {
+      "translit": "khwēshāwand-parwarī",
+      "exampleTranslit": "khwēshāwand-parwarī yakī az 'awāmil-e aṣlī-ye fasād ast."
+    }
+  },
+  "lx-2863": {
+    "target": "خودکارسازی",
+    "why": [
+      "خود is khud"
+    ],
+    "set": {
+      "translit": "khudkār-sāzī",
+      "exampleTranslit": "khudkār-sāzī-ye farāyand-hā masrafhā rā kāhish mēdihad."
+    },
+    "was": {
+      "translit": "khwudkār-sāzī",
+      "exampleTranslit": "khwudkār-sāzī-ye farāyand-hā masrafhā rā kāhish mēdihad."
+    }
+  },
+  "lx-2801": {
+    "target": "صفحه خورشیدی",
+    "why": [
+      "خورشید is khurshēd; the example script is the plural صفحات (safahāt), not safhahā"
+    ],
+    "set": {
+      "translit": "safha-ye khurshēdī",
+      "exampleTranslit": "safahāt-e khurshēdī inirzhī-ye pāk tawlīd mēkunand."
+    },
+    "was": {
+      "translit": "safha-ye khwurshēdī",
+      "exampleTranslit": "safhahā-ye khwurshēdī inirzhī-ye pāk tawlīd mēkunand."
+    }
+  },
+  "lx-2821": {
+    "target": "تعبیه‌شده",
+    "why": [
+      "the example script says موترها; the Latin still said khwudrōhā (خودروها)"
+    ],
+    "set": {
+      "exampleTranslit": "sīstam-hā-ye ta'bīya-shuda dar mōtar-hā bisyār muhim hastand."
+    },
+    "was": {
+      "exampleTranslit": "sīstam-hā-ye ta'bīya-shuda dar khwudrōhā bisyār muhim hastand."
+    }
+  },
+  "lx-2827": {
+    "target": "بینایی ماشین",
+    "why": [
+      "the example script says موترهای خودران; the Latin said khwudrōhā-ye khwud-rān"
+    ],
+    "set": {
+      "exampleTranslit": "bīnā'ī-ye māshīn dar mōtar-hā-ye khud-rān kārburd dārad."
+    },
+    "was": {
+      "exampleTranslit": "bīnā'ī-ye māshīn dar khwudrōhā-ye khwud-rān kārburd dārad."
+    }
+  },
+  "lx-2828": {
+    "target": "خودرو خودران",
+    "why": [
+      "خودرو خودران is khudrō-ye khud-rān; the example script says موترهای خودران"
+    ],
+    "set": {
+      "translit": "khudrō-ye khud-rān",
+      "exampleTranslit": "mōtar-hā-ye khud-rān āyanda-ye haml wa naql hastand."
+    },
+    "was": {
+      "translit": "khwudrō-ye khwud-rān",
+      "exampleTranslit": "khwudrōhā-ye khwud-rān āyanda-ye haml wa naql hastand."
+    }
+  },
+  "lx-2875": {
+    "target": "سلول خورشیدی",
+    "why": [
+      "خورشید is khurshēd"
+    ],
+    "set": {
+      "translit": "silūl-e khurshēdī",
+      "exampleTranslit": "bāzdihī-ye silūl-hā-ye khurshēdī-ye jadīd afzāyish yāfta ast."
+    },
+    "was": {
+      "translit": "silūl-e khwurshēdī",
+      "exampleTranslit": "bāzdihī-ye silūl-hā-ye khwurshēdī-ye jadīd afzāyish yāfta ast."
+    }
+  },
+  "lx-5390": {
+    "target": "خویشاوندی",
+    "why": [
+      "خویش is khēsh"
+    ],
+    "set": {
+      "translit": "khēshāwandī",
+      "exampleTranslit": "rawābit-e khēshāwandī dar afghānistān bisyār mustahkam ast."
+    },
+    "was": {
+      "translit": "khwēshāwandī",
+      "exampleTranslit": "rawābit-e khwēshāwandī dar afghānistān bisyār mustahkam ast."
+    }
+  },
+  "lx-5438": {
+    "target": "خویشاوندسالاری",
+    "why": [
+      "خویش is khēsh"
+    ],
+    "set": {
+      "translit": "khēshāwand-sālārī",
+      "exampleTranslit": "khēshāwand-sālārī dar intisābāt-e dawlatī ghayr-e qānūnī ast."
+    },
+    "was": {
+      "translit": "khwēshāwand-sālārī",
+      "exampleTranslit": "khwēshāwand-sālārī dar intisābāt-e dawlatī ghayr-e qānūnī ast."
+    }
+  },
+  "lx-2202": {
+    "target": "معذرت خواستن",
+    "why": [
+      "variants must hold Dari script; \"khwāh\" is a Latin present stem, which matches no surface. Removed rather than rewritten as خواه, which would make the conjunction خواه ... خواه resolve to this verb"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "khwāh"
+      ]
+    }
+  }
+}

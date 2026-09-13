@@ -55045,9 +55045,7 @@
       "freqRank": 2852,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "khwāh"
-      ],
+      "variants": [],
       "exampleTarget": "باید از او معذرت بخواهی.",
       "exampleTranslit": "bāyad az ō mazirat bikhāhī.",
       "exampleEn": "You must apologize to him.",
@@ -56732,7 +56730,7 @@
       "id": "lx-2344",
       "target": "خویشتن‌دار",
       "targetNormalized": "خویشتن‌دار",
-      "translit": "khwēshtan-dār",
+      "translit": "khēshtan-dār",
       "glossEn": "self-restrained",
       "pos": "adjective",
       "freqRank": 2941,
@@ -56740,7 +56738,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "در عصبانیت خویشتن‌دار باش.",
-      "exampleTranslit": "dar asabāniyat khwēshtan-dār bāsh.",
+      "exampleTranslit": "dar asabāniyat khēshtan-dār bāsh.",
       "exampleEn": "Be self-restrained in anger.",
       "tags": [
         "Descriptions & Qualities"
@@ -60215,7 +60213,7 @@
       "id": "lx-2786",
       "target": "خودمختاری",
       "targetNormalized": "خودمختاری",
-      "translit": "khwud-mukhtārī",
+      "translit": "khud-mukhtārī",
       "glossEn": "autonomy",
       "pos": "noun",
       "freqRank": 3124,
@@ -60223,7 +60221,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این منطقه خواهان خودمختاری بیشتر است.",
-      "exampleTranslit": "īn minṭaqa khāhān-e khwud-mukhtārī-ye bēshtar ast.",
+      "exampleTranslit": "īn minṭaqa khāhān-e khud-mukhtārī-ye bēshtar ast.",
       "exampleEn": "This region seeks greater autonomy.",
       "tags": [
         "Abstract Concepts"
@@ -64358,7 +64356,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "طراحی آیرودینامیک موتر مصرف سوخت را کاهش می‌دهد.",
-      "exampleTranslit": "tarāhī-ye āyrūdīnāmīk-e khwudrō masraf-e sōkht rā kāhish mēdihad.",
+      "exampleTranslit": "tarāhī-ye āyrūdīnāmīk-e mōtar masraf-e sōkht rā kāhish mēdihad.",
       "exampleEn": "The aerodynamic design of the car reduces fuel consumption.",
       "tags": [
         "Abstract Concepts"
@@ -67069,7 +67067,7 @@
       "id": "lx-2762",
       "target": "خویشاوندپروری",
       "targetNormalized": "خویشاوندپروری",
-      "translit": "khwēshāwand-parwarī",
+      "translit": "khēshāwand-parwarī",
       "glossEn": "nepotism",
       "pos": "noun",
       "freqRank": 3486,
@@ -67077,7 +67075,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "خویشاوندپروری یکی از عوامل اصلی فساد است.",
-      "exampleTranslit": "khwēshāwand-parwarī yakī az 'awāmil-e aṣlī-ye fasād ast.",
+      "exampleTranslit": "khēshāwand-parwarī yakī az 'awāmil-e aṣlī-ye fasād ast.",
       "exampleEn": "Nepotism is one of the main factors of corruption.",
       "tags": [
         "Abstract Concepts"
@@ -67939,7 +67937,7 @@
       "id": "lx-2863",
       "target": "خودکارسازی",
       "targetNormalized": "خودکارسازی",
-      "translit": "khwudkār-sāzī",
+      "translit": "khudkār-sāzī",
       "glossEn": "automation",
       "pos": "noun",
       "freqRank": 3532,
@@ -67947,7 +67945,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "خودکارسازی فرآیندها مصرف‌ها را کاهش می‌دهد.",
-      "exampleTranslit": "khwudkār-sāzī-ye farāyand-hā masrafhā rā kāhish mēdihad.",
+      "exampleTranslit": "khudkār-sāzī-ye farāyand-hā masrafhā rā kāhish mēdihad.",
       "exampleEn": "Process automation reduces costs.",
       "tags": [
         "Abstract Concepts"
@@ -68109,7 +68107,7 @@
       "id": "lx-2801",
       "target": "صفحه خورشیدی",
       "targetNormalized": "صفحه خورشیدی",
-      "translit": "safha-ye khwurshēdī",
+      "translit": "safha-ye khurshēdī",
       "glossEn": "solar panel",
       "pos": "noun",
       "freqRank": 3541,
@@ -68117,7 +68115,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "صفحات خورشیدی انرژی پاک تولید می‌کنند.",
-      "exampleTranslit": "safhahā-ye khwurshēdī inirzhī-ye pāk tawlīd mēkunand.",
+      "exampleTranslit": "safahāt-e khurshēdī inirzhī-ye pāk tawlīd mēkunand.",
       "exampleEn": "Solar panels generate clean energy.",
       "tags": [
         "Abstract Concepts"
@@ -68269,7 +68267,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم‌های تعبیه‌شده در موترها بسیار مهم هستند.",
-      "exampleTranslit": "sīstam-hā-ye ta'bīya-shuda dar khwudrōhā bisyār muhim hastand.",
+      "exampleTranslit": "sīstam-hā-ye ta'bīya-shuda dar mōtar-hā bisyār muhim hastand.",
       "exampleEn": "Embedded systems are very important in cars.",
       "tags": [
         "Descriptions & Qualities"
@@ -68723,7 +68721,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بینایی ماشین در موترهای خودران کاربرد دارد.",
-      "exampleTranslit": "bīnā'ī-ye māshīn dar khwudrōhā-ye khwud-rān kārburd dārad.",
+      "exampleTranslit": "bīnā'ī-ye māshīn dar mōtar-hā-ye khud-rān kārburd dārad.",
       "exampleEn": "Computer vision is used in self-driving cars.",
       "tags": [
         "Science & Technology"
@@ -68734,7 +68732,7 @@
       "id": "lx-2828",
       "target": "خودرو خودران",
       "targetNormalized": "خودرو خودران",
-      "translit": "khwudrō-ye khwud-rān",
+      "translit": "khudrō-ye khud-rān",
       "glossEn": "self-driving car",
       "pos": "noun",
       "freqRank": 3574,
@@ -68742,7 +68740,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "موترهای خودران آینده حمل و نقل هستند.",
-      "exampleTranslit": "khwudrōhā-ye khwud-rān āyanda-ye haml wa naql hastand.",
+      "exampleTranslit": "mōtar-hā-ye khud-rān āyanda-ye haml wa naql hastand.",
       "exampleEn": "Self-driving cars are the future of transportation.",
       "tags": [
         "Travel & Transportation"
@@ -69852,7 +69850,7 @@
       "id": "lx-2875",
       "target": "سلول خورشیدی",
       "targetNormalized": "سلول خورشیدی",
-      "translit": "silūl-e khwurshēdī",
+      "translit": "silūl-e khurshēdī",
       "glossEn": "solar cell",
       "pos": "noun",
       "freqRank": 3633,
@@ -69860,7 +69858,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بازدهی سلول‌های خورشیدی جدید افزایش یافته است.",
-      "exampleTranslit": "bāzdihī-ye silūl-hā-ye khwurshēdī-ye jadīd afzāyish yāfta ast.",
+      "exampleTranslit": "bāzdihī-ye silūl-hā-ye khurshēdī-ye jadīd afzāyish yāfta ast.",
       "exampleEn": "The efficiency of new solar cells has increased.",
       "tags": [
         "Abstract Concepts"
@@ -104092,7 +104090,7 @@
       "id": "lx-5390",
       "target": "خویشاوندی",
       "targetNormalized": "خویشاوندی",
-      "translit": "khwēshāwandī",
+      "translit": "khēshāwandī",
       "glossEn": "kinship",
       "pos": "noun",
       "freqRank": 5428,
@@ -104100,7 +104098,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "روابط خویشاوندی در افغانستان بسیار مستحکم است.",
-      "exampleTranslit": "rawābit-e khwēshāwandī dar afghānistān bisyār mustahkam ast.",
+      "exampleTranslit": "rawābit-e khēshāwandī dar afghānistān bisyār mustahkam ast.",
       "exampleEn": "Kinship ties are very strong in Afghanistan.",
       "tags": [
         "Abstract Concepts"
@@ -117449,7 +117447,7 @@
       "id": "lx-5438",
       "target": "خویشاوندسالاری",
       "targetNormalized": "خویشاوندسالاری",
-      "translit": "khwēshāwand-sālārī",
+      "translit": "khēshāwand-sālārī",
       "glossEn": "nepotism",
       "pos": "noun",
       "freqRank": 6131,
@@ -117457,7 +117455,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "خویشاوندسالاری در انتصابات دولتی غیرقانونی است.",
-      "exampleTranslit": "khwēshāwand-sālārī dar intisābāt-e dawlatī ghayr-e qānūnī ast.",
+      "exampleTranslit": "khēshāwand-sālārī dar intisābāt-e dawlatī ghayr-e qānūnī ast.",
       "exampleEn": "Nepotism in government appointments is illegal.",
       "tags": [
         "Abstract Concepts"
