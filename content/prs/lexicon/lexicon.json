@@ -116,7 +116,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این کتاب خوب است.",
-      "exampleTranslit": "īn ketāb khōb ast.",
+      "exampleTranslit": "īn ketāb khūb ast.",
       "exampleEn": "This book is good.",
       "tags": [
         "Grammar & Connectors",
@@ -619,7 +619,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "امروز روز خوب است.",
-      "exampleTranslit": "emrōz rōz-e khōb ast.",
+      "exampleTranslit": "emrōz rōz-e khūb ast.",
       "exampleEn": "Today is a good day.",
       "tags": [
         "Time & Calendar",
@@ -1094,7 +1094,7 @@
       ],
       "presentStem": "ده",
       "concreteness": true,
-      "presentStemTranslit": "dih"
+      "presentStemTranslit": "deh"
     },
     {
       "id": "lx-0059",
@@ -1292,7 +1292,7 @@
       "id": "lx-0063",
       "target": "خوب",
       "targetNormalized": "خوب",
-      "translit": "khōb",
+      "translit": "khūb",
       "glossEn": "good, well",
       "pos": "adjective",
       "freqRank": 59,
@@ -1300,7 +1300,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "حال من خوب است.",
-      "exampleTranslit": "hāl-e man khōb ast.",
+      "exampleTranslit": "hāl-e man khūb ast.",
       "exampleEn": "I am well.",
       "tags": [
         "Descriptions & Qualities",
@@ -1650,7 +1650,7 @@
         "super-7"
       ],
       "presentStem": "خواه",
-      "presentStemTranslit": "khwāh",
+      "presentStemTranslit": "khāh",
       "concreteness": true
     },
     {
@@ -2308,9 +2308,9 @@
       "variants": [
         "جا"
       ],
-      "exampleTarget": "اینجا آرام است.",
-      "exampleTranslit": "īnjā ārām ast.",
-      "exampleEn": "It is calm here.",
+      "exampleTarget": "کابل جای خوبی است.",
+      "exampleTranslit": "kābul jāy-e khūbē ast.",
+      "exampleEn": "Kabul is a good place.",
       "tags": [
         "Geography & Places"
       ],
@@ -2410,7 +2410,7 @@
       ],
       "presentStem": "خوان",
       "concreteness": true,
-      "presentStemTranslit": "khwān"
+      "presentStemTranslit": "khān"
     },
     {
       "id": "lx-0165",
@@ -2444,7 +2444,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "معلم ما بسیار خوب است.",
-      "exampleTranslit": "mu'allem-e mā bisyār khōb ast.",
+      "exampleTranslit": "mu'allem-e mā bisyār khūb ast.",
       "exampleEn": "Our teacher is very good.",
       "tags": [
         "Education & Learning",
@@ -3361,7 +3361,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "تشکر، حال من خوب است.",
-      "exampleTranslit": "tashakur, hāl-e man khōb ast.",
+      "exampleTranslit": "tashakur, hāl-e man khūb ast.",
       "exampleEn": "Thank you, I am well.",
       "tags": [
         "Abstract Concepts",
@@ -3422,7 +3422,7 @@
       ],
       "presentStem": "شنو",
       "concreteness": true,
-      "presentStemTranslit": "shinaw"
+      "presentStemTranslit": "shunaw"
     },
     {
       "id": "lx-0144",
@@ -3467,7 +3467,7 @@
         "نمی‌فهمم"
       ],
       "exampleTarget": "دری را خوب می‌فهمم.",
-      "exampleTranslit": "darī rā khōb mēfahmam.",
+      "exampleTranslit": "darī rā khūb mēfahmam.",
       "exampleEn": "I understand Dari well.",
       "tags": [
         "Actions & Movement",
@@ -3736,7 +3736,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "روش کار او خوب است.",
-      "exampleTranslit": "rawish-e kār-e ō khōb ast.",
+      "exampleTranslit": "rawish-e kār-e ō khūb ast.",
       "exampleEn": "His way of working is good.",
       "tags": [
         "Abstract Concepts"
@@ -3909,7 +3909,7 @@
         "Actions & Movement"
       ],
       "presentStem": "نشین",
-      "presentStemTranslit": "nishīn",
+      "presentStemTranslit": "neshīn",
       "concreteness": true
     },
     {
@@ -4556,7 +4556,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "او یک انسان خوب است.",
-      "exampleTranslit": "ō yak insān-e khōb ast.",
+      "exampleTranslit": "ō yak insān-e khūb ast.",
       "exampleEn": "He is a good person.",
       "tags": [
         "People & Identity"
@@ -4932,7 +4932,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این خیلی خوب است.",
-      "exampleTranslit": "īn khayli khōb ast.",
+      "exampleTranslit": "īn khayli khūb ast.",
       "exampleEn": "This is very good.",
       "tags": [
         "Descriptions & Qualities",
@@ -5511,7 +5511,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "انار قندهار بسیار خوب است.",
-      "exampleTranslit": "anār-e qandahār bisyār khōb ast.",
+      "exampleTranslit": "anār-e qandahār bisyār khūb ast.",
       "exampleEn": "Kandahar's pomegranates are very good.",
       "tags": [
         "Abstract Concepts"
@@ -5589,7 +5589,7 @@
         "بودن"
       ],
       "exampleTarget": "خوب باشد.",
-      "exampleTranslit": "khōb bāshad.",
+      "exampleTranslit": "khūb bāshad.",
       "exampleEn": "It should be good.",
       "tags": [
         "Time & Calendar"
@@ -5782,7 +5782,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "ازدواج آنها خوب است.",
-      "exampleTranslit": "izdiwāj-e ānhā khōb ast.",
+      "exampleTranslit": "izdiwāj-e ānhā khūb ast.",
       "exampleEn": "Their marriage is good.",
       "tags": [
         "Family & Relationships"
@@ -6839,7 +6839,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این یک عمل خوب است.",
-      "exampleTranslit": "īn yak amal-e khōb ast.",
+      "exampleTranslit": "īn yak amal-e khūb ast.",
       "exampleEn": "This is a good deed.",
       "tags": [
         "Abstract Concepts"
@@ -6965,7 +6965,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "او آدم خوبی است.",
-      "exampleTranslit": "ō ādam-e khōbī ast.",
+      "exampleTranslit": "ō ādam-e khūbī ast.",
       "exampleEn": "He is a good person.",
       "tags": [
         "People & Identity"
@@ -7809,7 +7809,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "از یک سو خوب است.",
-      "exampleTranslit": "az yak sū khōb ast.",
+      "exampleTranslit": "az yak sū khūb ast.",
       "exampleEn": "On one side it is good.",
       "tags": [
         "Advanced"
@@ -8470,7 +8470,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "رفتار او خوب است.",
-      "exampleTranslit": "raftār-e ō khōb ast.",
+      "exampleTranslit": "raftār-e ō khūb ast.",
       "exampleEn": "His behaviour is good.",
       "tags": [
         "Abstract Concepts"
@@ -9445,7 +9445,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "موقعیت این شهر خوب است.",
-      "exampleTranslit": "mawqe'iyat-e īn shahr khōb ast.",
+      "exampleTranslit": "mawqe'iyat-e īn shahr khūb ast.",
       "exampleEn": "The location of this city is good.",
       "tags": [
         "Abstract Concepts"
@@ -10359,7 +10359,7 @@
         "سنج"
       ],
       "exampleTarget": "خوب بسنج.",
-      "exampleTranslit": "khōb bisanj.",
+      "exampleTranslit": "khūb bisanj.",
       "exampleEn": "Consider it well.",
       "tags": [
         "Actions & Movement"
@@ -14548,7 +14548,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "خیال خوبی است.",
-      "exampleTranslit": "khayāl-e khōbē ast.",
+      "exampleTranslit": "khayāl-e khūbē ast.",
       "exampleEn": "It is a good thought.",
       "tags": [
         "Advanced"
@@ -87717,9 +87717,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "این گپ زدن است.",
-      "exampleEn": "This is a speak.",
-      "exampleTranslit": "īn gap zadan ast."
+      "exampleTarget": "شام‌ها با دوستانم گپ می‌زنم.",
+      "exampleEn": "In the evenings I chat with my friends.",
+      "exampleTranslit": "shām-hā bā dōstānam gap mēzanam."
     },
     {
       "id": "lx-6369",
@@ -87739,9 +87739,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "این کار کردن است.",
-      "exampleEn": "This is a work.",
-      "exampleTranslit": "īn kār kardan ast."
+      "exampleTarget": "پدرم در بازار کار می‌کند.",
+      "exampleEn": "My father works in the bazaar.",
+      "exampleTranslit": "padaram dar bāzār kār mēkunad."
     },
     {
       "id": "lx-6370",
@@ -87865,9 +87865,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "این فکر کردن است.",
-      "exampleEn": "This is a think.",
-      "exampleTranslit": "īn fikr kardan ast."
+      "exampleTarget": "فکر می‌کنم که او فردا می‌آید.",
+      "exampleEn": "I think he is coming tomorrow.",
+      "exampleTranslit": "fikr mēkunam ke ō fardā mēāyad."
     },
     {
       "id": "lx-6376",
@@ -87878,7 +87878,7 @@
       "tags": [],
       "concreteness": true,
       "presentStem": "گیر",
-      "presentStemTranslit": "gēr",
+      "presentStemTranslit": "gīr",
       "translit": "yād giriftan",
       "freqRank": 4583,
       "freqBand": 8,
@@ -87900,7 +87900,7 @@
       ],
       "concreteness": true,
       "presentStem": "ده",
-      "presentStemTranslit": "dih",
+      "presentStemTranslit": "deh",
       "translit": "jawāb dādan",
       "freqRank": 4584,
       "freqBand": 8,
@@ -87988,9 +87988,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "این زندگی کردن است.",
-      "exampleEn": "This is a live.",
-      "exampleTranslit": "īn zindagī kardan ast."
+      "exampleTarget": "ما در کابل زندگی می‌کنیم.",
+      "exampleEn": "We live in Kabul.",
+      "exampleTranslit": "mā dar kābul zindagī mēkunēm."
     },
     {
       "id": "lx-6384",

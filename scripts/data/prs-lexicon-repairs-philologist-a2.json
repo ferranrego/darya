@@ -1,0 +1,396 @@
+{
+  "lx-0098": {
+    "target": "خواندن",
+    "why": [
+      "present-stem transliteration follows the app convention (hub gh-15, course): the w of خوا is not pronounced; the example already says mēkhānam"
+    ],
+    "set": {
+      "presentStemTranslit": "khān"
+    },
+    "was": {
+      "presentStemTranslit": "khwān"
+    }
+  },
+  "lx-0099": {
+    "target": "خواستن",
+    "why": [
+      "present-stem transliteration follows the app convention (hub gh-15, course): the w of خوا is not pronounced; the example already says mēkhāham"
+    ],
+    "set": {
+      "presentStemTranslit": "khāh"
+    },
+    "was": {
+      "presentStemTranslit": "khwāh"
+    }
+  },
+  "lx-0100": {
+    "target": "دادن",
+    "why": [
+      "present-stem transliteration follows the app convention (hub gh-15, course): kasra is written e (ketāb, shāgerd)"
+    ],
+    "set": {
+      "presentStemTranslit": "deh"
+    },
+    "was": {
+      "presentStemTranslit": "dih"
+    }
+  },
+  "lx-6377": {
+    "target": "جواب دادن",
+    "why": [
+      "present-stem transliteration follows the app convention (hub gh-15, course): same stem as lx-0100"
+    ],
+    "set": {
+      "presentStemTranslit": "deh"
+    },
+    "was": {
+      "presentStemTranslit": "dih"
+    }
+  },
+  "lx-0160": {
+    "target": "نشستن",
+    "why": [
+      "present-stem transliteration follows the app convention (hub gh-15, course): the headword is neshastan"
+    ],
+    "set": {
+      "presentStemTranslit": "neshīn"
+    },
+    "was": {
+      "presentStemTranslit": "nishīn"
+    }
+  },
+  "lx-0156": {
+    "target": "شنیدن",
+    "why": [
+      "present-stem transliteration follows the app convention (hub gh-15, course): the headword is shunīdan, the example mēshunawam"
+    ],
+    "set": {
+      "presentStemTranslit": "shunaw"
+    },
+    "was": {
+      "presentStemTranslit": "shinaw"
+    }
+  },
+  "lx-6376": {
+    "target": "یاد گرفتن",
+    "why": [
+      "present-stem transliteration follows the app convention (hub gh-15, course): گیر has ma'ruf ī, as lx-0153 gereftan (gīr)"
+    ],
+    "set": {
+      "presentStemTranslit": "gīr"
+    },
+    "was": {
+      "presentStemTranslit": "gēr"
+    }
+  },
+  "lx-6368": {
+    "target": "گپ زدن",
+    "why": [
+      "placeholder example 'این X است' replaced with a real sentence"
+    ],
+    "set": {
+      "exampleTarget": "شام‌ها با دوستانم گپ می‌زنم.",
+      "exampleTranslit": "shām-hā bā dōstānam gap mēzanam.",
+      "exampleEn": "In the evenings I chat with my friends."
+    },
+    "was": {
+      "exampleTarget": "این گپ زدن است.",
+      "exampleTranslit": "īn gap zadan ast.",
+      "exampleEn": "This is a speak."
+    }
+  },
+  "lx-6369": {
+    "target": "کار کردن",
+    "why": [
+      "placeholder example 'این X است' replaced with a real sentence"
+    ],
+    "set": {
+      "exampleTarget": "پدرم در بازار کار می‌کند.",
+      "exampleTranslit": "padaram dar bāzār kār mēkunad.",
+      "exampleEn": "My father works in the bazaar."
+    },
+    "was": {
+      "exampleTarget": "این کار کردن است.",
+      "exampleTranslit": "īn kār kardan ast.",
+      "exampleEn": "This is a work."
+    }
+  },
+  "lx-6375": {
+    "target": "فکر کردن",
+    "why": [
+      "placeholder example 'این X است' replaced with a real sentence"
+    ],
+    "set": {
+      "exampleTarget": "فکر می‌کنم که او فردا می‌آید.",
+      "exampleTranslit": "fikr mēkunam ke ō fardā mēāyad.",
+      "exampleEn": "I think he is coming tomorrow."
+    },
+    "was": {
+      "exampleTarget": "این فکر کردن است.",
+      "exampleTranslit": "īn fikr kardan ast.",
+      "exampleEn": "This is a think."
+    }
+  },
+  "lx-6383": {
+    "target": "زندگی کردن",
+    "why": [
+      "placeholder example 'این X است' replaced with a real sentence"
+    ],
+    "set": {
+      "exampleTarget": "ما در کابل زندگی می‌کنیم.",
+      "exampleTranslit": "mā dar kābul zindagī mēkunēm.",
+      "exampleEn": "We live in Kabul."
+    },
+    "was": {
+      "exampleTarget": "این زندگی کردن است.",
+      "exampleTranslit": "īn zindagī kardan ast.",
+      "exampleEn": "This is a live."
+    }
+  },
+  "lx-0163": {
+    "target": "جای",
+    "why": [
+      "the example did not contain its headword جای"
+    ],
+    "set": {
+      "exampleTarget": "کابل جای خوبی است.",
+      "exampleTranslit": "kābul jāy-e khūbē ast.",
+      "exampleEn": "Kabul is a good place."
+    },
+    "was": {
+      "exampleTarget": "اینجا آرام است.",
+      "exampleTranslit": "īnjā ārām ast.",
+      "exampleEn": "It is calm here."
+    }
+  },
+  "lx-0006": {
+    "target": "این",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "īn ketāb khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "īn ketāb khōb ast."
+    }
+  },
+  "lx-0040": {
+    "target": "روز",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "emrōz rōz-e khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "emrōz rōz-e khōb ast."
+    }
+  },
+  "lx-0063": {
+    "target": "خوب",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "translit": "khūb",
+      "exampleTranslit": "hāl-e man khūb ast."
+    },
+    "was": {
+      "translit": "khōb",
+      "exampleTranslit": "hāl-e man khōb ast."
+    }
+  },
+  "lx-0078": {
+    "target": "معلم",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "mu'allem-e mā bisyār khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "mu'allem-e mā bisyār khōb ast."
+    }
+  },
+  "lx-0102": {
+    "target": "تشکر",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "tashakur, hāl-e man khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "tashakur, hāl-e man khōb ast."
+    }
+  },
+  "lx-0157": {
+    "target": "فهمیدن",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "darī rā khūb mēfahmam."
+    },
+    "was": {
+      "exampleTranslit": "darī rā khōb mēfahmam."
+    }
+  },
+  "lx-6180": {
+    "target": "روش",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "rawish-e kār-e ō khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "rawish-e kār-e ō khōb ast."
+    }
+  },
+  "lx-6187": {
+    "target": "انسان",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "ō yak insān-e khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "ō yak insān-e khōb ast."
+    }
+  },
+  "lx-0291": {
+    "target": "خیلی",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "īn khayli khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "īn khayli khōb ast."
+    }
+  },
+  "lx-0116": {
+    "target": "انار",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "anār-e qandahār bisyār khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "anār-e qandahār bisyār khōb ast."
+    }
+  },
+  "lx-0287": {
+    "target": "باشد",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "khūb bāshad."
+    },
+    "was": {
+      "exampleTranslit": "khōb bāshad."
+    }
+  },
+  "lx-6174": {
+    "target": "ازدواج",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "izdiwāj-e ānhā khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "izdiwāj-e ānhā khōb ast."
+    }
+  },
+  "lx-6220": {
+    "target": "عمل",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "īn yak amal-e khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "īn yak amal-e khōb ast."
+    }
+  },
+  "lx-0320": {
+    "target": "آدم",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "ō ādam-e khūbī ast."
+    },
+    "was": {
+      "exampleTranslit": "ō ādam-e khōbī ast."
+    }
+  },
+  "lx-6025": {
+    "target": "سو",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "az yak sū khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "az yak sū khōb ast."
+    }
+  },
+  "lx-6191": {
+    "target": "رفتار",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "raftār-e ō khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "raftār-e ō khōb ast."
+    }
+  },
+  "lx-6216": {
+    "target": "موقعیت",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "mawqe'iyat-e īn shahr khūb ast."
+    },
+    "was": {
+      "exampleTranslit": "mawqe'iyat-e īn shahr khōb ast."
+    }
+  },
+  "lx-0386": {
+    "target": "سنجیدن",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "khūb bisanj."
+    },
+    "was": {
+      "exampleTranslit": "khōb bisanj."
+    }
+  },
+  "lx-6024": {
+    "target": "خیال",
+    "why": [
+      "خوب is khūb (ma'ruf ū): Wiktionary Dari xūb, Tajik хуб not хӯб, 1967 Kabul dictionary khub beside dost/roz"
+    ],
+    "set": {
+      "exampleTranslit": "khayāl-e khūbē ast."
+    },
+    "was": {
+      "exampleTranslit": "khayāl-e khōbē ast."
+    }
+  }
+}
