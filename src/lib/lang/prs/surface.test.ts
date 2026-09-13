@@ -61,9 +61,19 @@ describe("presentIndicative", () => {
   });
 
   it("conjugates all three persons with the same stem", () => {
-    expect(presentIndicative({ target: "خوردن", presentStem: "خور", presentStemTranslit: "khor" }, "1sg")).toEqual({ target: "می‌خورم", translit: "mēkhoram" });
-    expect(presentIndicative({ target: "خوردن", presentStem: "خور", presentStemTranslit: "khor" }, "2sg")).toEqual({ target: "می‌خوری", translit: "mēkhorē" });
-    expect(presentIndicative({ target: "خوردن", presentStem: "خور", presentStemTranslit: "khor" }, "3sg")).toEqual({ target: "می‌خورد", translit: "mēkhorad" });
+    // Dari has u in khurdan (lx-0091's own stem is khur); khor is Iranian.
+    const khurdan = { target: "خوردن", presentStem: "خور", presentStemTranslit: "khur" };
+    expect(presentIndicative(khurdan, "1sg")).toEqual({ target: "می‌خورم", translit: "mēkhuram" });
+    expect(presentIndicative(khurdan, "2sg")).toEqual({ target: "می‌خوری", translit: "mēkhurī" });
+    expect(presentIndicative(khurdan, "3sg")).toEqual({ target: "می‌خورد", translit: "mēkhurad" });
+  });
+
+  it("writes the 2sg ending as long -ī, never the indefinite's -ē", () => {
+    // The ی of می‌روی is the 2sg -ī the lexicon, course and hub all write;
+    // -ē is the indefinite (khūbē). This table once said -ē.
+    const v = presentIndicative({ target: "رفتن", presentStem: "رو", presentStemTranslit: "raw" }, "2sg");
+    expect(v).toEqual({ target: "می‌روی", translit: "mērawī" });
+    expect(v.translit).not.toMatch(/ē$/);
   });
 
   it("throws for a verb with no authored present stem, rather than guess", () => {
@@ -77,6 +87,7 @@ describe("presentOfDashtan", () => {
     expect(p1.target).toBe("دارم");
     expect(p1.target).not.toContain("می");
     expect(p1.translit).toBe("dāram");
+    expect(presentOfDashtan("2sg")).toEqual({ target: "داری", translit: "dārī" });
     expect(presentOfDashtan("3sg")).toEqual({ target: "دارد", translit: "dārad" });
   });
 });

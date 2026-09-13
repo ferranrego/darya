@@ -82,9 +82,15 @@ export function pluralOf(nounTarget: string, nounTranslit: string): { target: st
 export const COPULA = { "3sg": { target: "است", translit: "ast" } } as const;
 
 export type Person = "1sg" | "2sg" | "3sg";
+/**
+ * The 2sg ending ی is the long vowel -ī (mēkhurī, dārī), the app-wide
+ * convention the lexicon, `spoken.ts`, the course and the hub all write. This
+ * table said -ē, the indefinite's vowel, and the test locked it in as
+ * `mēkhorē` - with an Iranian short o in the stem as well.
+ */
 const PRESENT_ENDING: Record<Person, { target: string; translit: string }> = {
   "1sg": { target: "م", translit: "am" },
-  "2sg": { target: "ی", translit: "ē" },
+  "2sg": { target: "ی", translit: "ī" },
   "3sg": { target: "د", translit: "ad" },
 };
 
