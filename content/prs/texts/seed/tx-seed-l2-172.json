@@ -1,0 +1,177 @@
+{
+  "id": "tx-seed-l2-172",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "خون و شفاخانه",
+  "titleTranslit": "khūn wa shafākhāna",
+  "titleEn": "Blood and the hospital",
+  "sentences": [
+    {
+      "target": "برادر من مریض است.",
+      "translit": "barādar-e man marīz ast.",
+      "en": "My brother is ill.",
+      "tokens": [
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "مریض",
+          "lexemeId": "lx-0262"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "داکتر خون او را می‌گیرد.",
+      "translit": "dāktar khūn-e ō rā mēgīrad.",
+      "en": "The doctor takes his blood.",
+      "tokens": [
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "خون",
+          "lexemeId": "lx-0495"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌گیرد",
+          "lexemeId": "lx-0153"
+        }
+      ]
+    },
+    {
+      "target": "خون او سرخ و پاک است.",
+      "translit": "khūn-e ō surkh wa pāk ast.",
+      "en": "His blood is red and clean.",
+      "tokens": [
+        {
+          "surface": "خون",
+          "lexemeId": "lx-0495"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "سرخ",
+          "lexemeId": "lx-0142"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "پاک",
+          "lexemeId": "lx-3011"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "داکتر می‌گوید: حال او بهتر است.",
+      "translit": "dāktar mēgōyad: hāl-e ō bihtar ast.",
+      "en": "The doctor says: he is better.",
+      "tokens": [
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "می‌گوید",
+          "lexemeId": "lx-0093"
+        },
+        {
+          "surface": "حال",
+          "lexemeId": "lx-0325"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "بهتر",
+          "lexemeId": "lx-0357"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما به داکتر تشکر می‌کنیم.",
+      "translit": "mā ba dāktar tashakkur mēkunēm.",
+      "en": "We thank the doctor.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "داکتر",
+          "lexemeId": "lx-0210"
+        },
+        {
+          "surface": "تشکر",
+          "lexemeId": "lx-0102"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0003",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0014",
+    "lx-0053",
+    "lx-0093",
+    "lx-0097",
+    "lx-0102",
+    "lx-0142",
+    "lx-0153",
+    "lx-0210",
+    "lx-0262",
+    "lx-0325",
+    "lx-0357",
+    "lx-0495",
+    "lx-3011"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 172
+}

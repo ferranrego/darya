@@ -1,0 +1,189 @@
+{
+  "id": "tx-seed-l2-171",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دوختن لباس",
+  "titleTranslit": "dōkhtan-e libās",
+  "titleEn": "Sewing clothes",
+  "sentences": [
+    {
+      "target": "مامان من لباس می‌دوزد.",
+      "translit": "māmān-e man libās mēdōzad.",
+      "en": "My mom sews clothes.",
+      "tokens": [
+        {
+          "surface": "مامان",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "می‌دوزد",
+          "lexemeId": "lx-0468"
+        }
+      ]
+    },
+    {
+      "target": "او لباس جدید من را می‌دوزد.",
+      "translit": "ō libās-e jadīd-e man rā mēdōzad.",
+      "en": "She sews my new clothes.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "جدید",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌دوزد",
+          "lexemeId": "lx-0468"
+        }
+      ]
+    },
+    {
+      "target": "رنگ این لباس روشن است.",
+      "translit": "rang-e īn libās rōshan ast.",
+      "en": "The color of these clothes is bright.",
+      "tokens": [
+        {
+          "surface": "رنگ",
+          "lexemeId": "lx-0141"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "روشن",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "لباس کوتاه است و او آن را می‌بندد.",
+      "translit": "libās kōtāh ast wa ō ān rā mēbandad.",
+      "en": "The dress is short and she fastens it.",
+      "tokens": [
+        {
+          "surface": "لباس",
+          "lexemeId": "lx-0230"
+        },
+        {
+          "surface": "کوتاه",
+          "lexemeId": "lx-6070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "آن",
+          "lexemeId": "lx-0009"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌بندد",
+          "lexemeId": "lx-0373"
+        }
+      ]
+    },
+    {
+      "target": "من از مامان خود تشکر می‌کنم.",
+      "translit": "man az māmān-e khud tashakkur mēkunam.",
+      "en": "I thank my mom.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "مامان",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "تشکر",
+          "lexemeId": "lx-0102"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0004",
+    "lx-0006",
+    "lx-0007",
+    "lx-0009",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0097",
+    "lx-0102",
+    "lx-0141",
+    "lx-0178",
+    "lx-0194",
+    "lx-0230",
+    "lx-0354",
+    "lx-0361",
+    "lx-0373",
+    "lx-0468",
+    "lx-6070"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 171
+}

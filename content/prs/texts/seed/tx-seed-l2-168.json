@@ -1,0 +1,178 @@
+{
+  "id": "tx-seed-l2-168",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "قیمت بازار",
+  "titleTranslit": "qīmat-e bāzār",
+  "titleEn": "Bazaar prices",
+  "sentences": [
+    {
+      "target": "امروز قیمت نان بلند است.",
+      "translit": "emrōz qīmat-e nān buland ast.",
+      "en": "Today the price of bread is high.",
+      "tokens": [
+        {
+          "surface": "امروز",
+          "lexemeId": "lx-0043"
+        },
+        {
+          "surface": "قیمت",
+          "lexemeId": "lx-6132"
+        },
+        {
+          "surface": "نان",
+          "lexemeId": "lx-0038"
+        },
+        {
+          "surface": "بلند",
+          "lexemeId": "lx-0226"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "گوشت هم بسیار قیمت است.",
+      "translit": "gōsht ham bisyār qīmat ast.",
+      "en": "Meat is very expensive too.",
+      "tokens": [
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "قیمت",
+          "lexemeId": "lx-6132"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مامان من فکر می‌کند.",
+      "translit": "māmān-e man fikr mēkunad.",
+      "en": "My mom thinks.",
+      "tokens": [
+        {
+          "surface": "مامان",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "فکر",
+          "lexemeId": "lx-6375"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-6375"
+        }
+      ]
+    },
+    {
+      "target": "او از دکاندار قیمت را می‌پرسد.",
+      "translit": "ō az dukāndār qīmat rā mēpursad.",
+      "en": "She asks the shopkeeper the price.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "دکاندار",
+          "lexemeId": "lx-0513"
+        },
+        {
+          "surface": "قیمت",
+          "lexemeId": "lx-6132"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌پرسد",
+          "lexemeId": "lx-0367"
+        }
+      ]
+    },
+    {
+      "target": "قیمت میوه از گوشت بهتر است.",
+      "translit": "qīmat-e mēwa az gōsht bihtar ast.",
+      "en": "The price of fruit is better than meat.",
+      "tokens": [
+        {
+          "surface": "قیمت",
+          "lexemeId": "lx-6132"
+        },
+        {
+          "surface": "میوه",
+          "lexemeId": "lx-0113"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "گوشت",
+          "lexemeId": "lx-0112"
+        },
+        {
+          "surface": "بهتر",
+          "lexemeId": "lx-0357"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0024",
+    "lx-0038",
+    "lx-0043",
+    "lx-0097",
+    "lx-0112",
+    "lx-0113",
+    "lx-0167",
+    "lx-0226",
+    "lx-0292",
+    "lx-0354",
+    "lx-0357",
+    "lx-0367",
+    "lx-0513",
+    "lx-6132",
+    "lx-6375"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 168
+}

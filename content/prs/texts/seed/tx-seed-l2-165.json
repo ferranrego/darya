@@ -1,0 +1,163 @@
+{
+  "id": "tx-seed-l2-165",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "آتش و باد",
+  "titleTranslit": "ātash wa bād",
+  "titleEn": "Fire and wind",
+  "sentences": [
+    {
+      "target": "امشب باد سرد می‌آید.",
+      "translit": "emshab bād-e sard mēāyad.",
+      "en": "Tonight a cold wind comes.",
+      "tokens": [
+        {
+          "surface": "امشب",
+          "lexemeId": "lx-0201"
+        },
+        {
+          "surface": "باد",
+          "lexemeId": "lx-0492"
+        },
+        {
+          "surface": "سرد",
+          "lexemeId": "lx-0072"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "ما در حویلی آتش می‌کنیم.",
+      "translit": "mā dar haweli ātash mēkunēm.",
+      "en": "We make a fire in the courtyard.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "حویلی",
+          "lexemeId": "lx-6048"
+        },
+        {
+          "surface": "آتش",
+          "lexemeId": "lx-0491"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "آتش روشن و گرم است.",
+      "translit": "ātash rōshan wa garm ast.",
+      "en": "The fire is bright and warm.",
+      "tokens": [
+        {
+          "surface": "آتش",
+          "lexemeId": "lx-0491"
+        },
+        {
+          "surface": "روشن",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "گرم",
+          "lexemeId": "lx-0071"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "باد آتش را کلان می‌کند.",
+      "translit": "bād ātash rā kalān mēkunad.",
+      "en": "The wind makes the fire bigger.",
+      "tokens": [
+        {
+          "surface": "باد",
+          "lexemeId": "lx-0492"
+        },
+        {
+          "surface": "آتش",
+          "lexemeId": "lx-0491"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "کلان",
+          "lexemeId": "lx-0065"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "ما طرف آتش می‌نشینیم.",
+      "translit": "mā taraf-e ātash mēnishīnēm.",
+      "en": "We sit toward the fire.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "طرف",
+          "lexemeId": "lx-0607"
+        },
+        {
+          "surface": "آتش",
+          "lexemeId": "lx-0491"
+        },
+        {
+          "surface": "می‌نشینیم",
+          "lexemeId": "lx-0160"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0007",
+    "lx-0010",
+    "lx-0014",
+    "lx-0065",
+    "lx-0071",
+    "lx-0072",
+    "lx-0090",
+    "lx-0097",
+    "lx-0160",
+    "lx-0194",
+    "lx-0201",
+    "lx-0491",
+    "lx-0492",
+    "lx-0607",
+    "lx-6048"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 165
+}

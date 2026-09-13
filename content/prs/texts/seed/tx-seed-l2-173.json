@@ -1,0 +1,181 @@
+{
+  "id": "tx-seed-l2-173",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "راه و طرف",
+  "titleTranslit": "rāh wa taraf",
+  "titleEn": "The road and the direction",
+  "sentences": [
+    {
+      "target": "راه قریه ما دراز است.",
+      "translit": "rāh-e qarya-ye mā darāz ast.",
+      "en": "The road to our village is long.",
+      "tokens": [
+        {
+          "surface": "راه",
+          "lexemeId": "lx-0624"
+        },
+        {
+          "surface": "قریه",
+          "lexemeId": "lx-0081"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "دراز",
+          "lexemeId": "lx-6111"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "ما طرف شرق می‌رویم.",
+      "translit": "mā taraf-e sharq mērawēm.",
+      "en": "We go toward the east.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "طرف",
+          "lexemeId": "lx-0607"
+        },
+        {
+          "surface": "شرق",
+          "lexemeId": "lx-0616"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "یک موتر از طرف دیگر می‌آید.",
+      "translit": "yak mōtar az taraf-e dīgar mēāyad.",
+      "en": "A car comes from the other direction.",
+      "tokens": [
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "موتر",
+          "lexemeId": "lx-0083"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "طرف",
+          "lexemeId": "lx-0607"
+        },
+        {
+          "surface": "دیگر",
+          "lexemeId": "lx-0173"
+        },
+        {
+          "surface": "می‌آید",
+          "lexemeId": "lx-0090"
+        }
+      ]
+    },
+    {
+      "target": "ما پیاده در راه می‌مانیم.",
+      "translit": "mā piyāda dar rāh mēmānēm.",
+      "en": "We stay on the road on foot.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "پیاده",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "راه",
+          "lexemeId": "lx-0624"
+        },
+        {
+          "surface": "می‌مانیم",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "راه جدید از راه کهنه بهتر است.",
+      "translit": "rāh-e jadīd az rāh-e kuhna bihtar ast.",
+      "en": "The new road is better than the old one.",
+      "tokens": [
+        {
+          "surface": "راه",
+          "lexemeId": "lx-0624"
+        },
+        {
+          "surface": "جدید",
+          "lexemeId": "lx-0361"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "راه",
+          "lexemeId": "lx-0624"
+        },
+        {
+          "surface": "کهنه",
+          "lexemeId": "lx-0068"
+        },
+        {
+          "surface": "بهتر",
+          "lexemeId": "lx-0357"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0002",
+    "lx-0004",
+    "lx-0010",
+    "lx-0014",
+    "lx-0025",
+    "lx-0068",
+    "lx-0081",
+    "lx-0083",
+    "lx-0089",
+    "lx-0090",
+    "lx-0173",
+    "lx-0219",
+    "lx-0234",
+    "lx-0357",
+    "lx-0361",
+    "lx-0607",
+    "lx-0616",
+    "lx-0624",
+    "lx-6111"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 173
+}

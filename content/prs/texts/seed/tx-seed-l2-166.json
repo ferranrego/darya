@@ -1,0 +1,188 @@
+{
+  "id": "tx-seed-l2-166",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "رئیس و مامور",
+  "titleTranslit": "ra'īs wa māmūr",
+  "titleEn": "The boss and the official",
+  "sentences": [
+    {
+      "target": "رئیس ما هر صبح می‌پرسد.",
+      "translit": "ra'īs-e mā har subh mēpursad.",
+      "en": "Our boss asks every morning.",
+      "tokens": [
+        {
+          "surface": "رئیس",
+          "lexemeId": "lx-0509"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "صبح",
+          "lexemeId": "lx-0042"
+        },
+        {
+          "surface": "می‌پرسد",
+          "lexemeId": "lx-0367"
+        }
+      ]
+    },
+    {
+      "target": "مامور جواب او را می‌یابد.",
+      "translit": "māmūr jawāb-e ō rā mēyābad.",
+      "en": "The official finds his answer.",
+      "tokens": [
+        {
+          "surface": "مامور",
+          "lexemeId": "lx-0507"
+        },
+        {
+          "surface": "جواب",
+          "lexemeId": "lx-0222"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌یابد",
+          "lexemeId": "lx-0382"
+        }
+      ]
+    },
+    {
+      "target": "آقای رئیس بسیار مهربان است.",
+      "translit": "āqā-ye ra'īs bisyār mehrabān ast.",
+      "en": "Mr. Boss is very kind.",
+      "tokens": [
+        {
+          "surface": "آقای",
+          "lexemeId": "lx-0332"
+        },
+        {
+          "surface": "رئیس",
+          "lexemeId": "lx-0509"
+        },
+        {
+          "surface": "بسیار",
+          "lexemeId": "lx-0167"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او به خاطر مردم کار می‌کند.",
+      "translit": "ō ba khātir-e mardum kār mēkunad.",
+      "en": "He works for the people's sake.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "خاطر",
+          "lexemeId": "lx-0336"
+        },
+        {
+          "surface": "مردم",
+          "lexemeId": "lx-0059"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-6369"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-6369"
+        }
+      ]
+    },
+    {
+      "target": "کار او از کار ما بهتر است.",
+      "translit": "kār-e ō az kār-e mā bihtar ast.",
+      "en": "His work is better than ours.",
+      "tokens": [
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "بهتر",
+          "lexemeId": "lx-0357"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0042",
+    "lx-0059",
+    "lx-0079",
+    "lx-0097",
+    "lx-0166",
+    "lx-0167",
+    "lx-0222",
+    "lx-0256",
+    "lx-0332",
+    "lx-0336",
+    "lx-0357",
+    "lx-0367",
+    "lx-0382",
+    "lx-0507",
+    "lx-0509",
+    "lx-6369"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 166
+}

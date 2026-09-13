@@ -1,0 +1,176 @@
+{
+  "id": "tx-seed-l2-169",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "خواهش من",
+  "titleTranslit": "khāhish-e man",
+  "titleEn": "My request",
+  "sentences": [
+    {
+      "target": "من از آقای معلم خواهش می‌کنم.",
+      "translit": "man az āqā-ye mu'allem khāhish mēkunam.",
+      "en": "I make a request to the teacher.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "آقای",
+          "lexemeId": "lx-0332"
+        },
+        {
+          "surface": "معلم",
+          "lexemeId": "lx-0078"
+        },
+        {
+          "surface": "خواهش",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "می‌کنم",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او خواهش من را می‌شنود.",
+      "translit": "ō khāhish-e man rā mēshunawad.",
+      "en": "He hears my request.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "خواهش",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌شنود",
+          "lexemeId": "lx-0156"
+        }
+      ]
+    },
+    {
+      "target": "من از او یک چیز می‌پرسم.",
+      "translit": "man az ō yak chīz mēpursam.",
+      "en": "I ask him something.",
+      "tokens": [
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "می‌پرسم",
+          "lexemeId": "lx-0367"
+        }
+      ]
+    },
+    {
+      "target": "او جواب بهتر می‌یابد.",
+      "translit": "ō jawāb-e bihtar mēyābad.",
+      "en": "He finds a better answer.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "جواب",
+          "lexemeId": "lx-0222"
+        },
+        {
+          "surface": "بهتر",
+          "lexemeId": "lx-0357"
+        },
+        {
+          "surface": "می‌یابد",
+          "lexemeId": "lx-0382"
+        }
+      ]
+    },
+    {
+      "target": "خواهش کردن کار خوب است.",
+      "translit": "khāhish kardan kār-e khōb ast.",
+      "en": "Asking is a good thing.",
+      "tokens": [
+        {
+          "surface": "خواهش",
+          "lexemeId": "lx-0344"
+        },
+        {
+          "surface": "کردن",
+          "lexemeId": "lx-0097"
+        },
+        {
+          "surface": "کار",
+          "lexemeId": "lx-0079"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0004",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0025",
+    "lx-0063",
+    "lx-0078",
+    "lx-0079",
+    "lx-0097",
+    "lx-0156",
+    "lx-0164",
+    "lx-0222",
+    "lx-0332",
+    "lx-0344",
+    "lx-0357",
+    "lx-0367",
+    "lx-0382"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 169
+}

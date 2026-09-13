@@ -1,0 +1,178 @@
+{
+  "id": "tx-seed-l2-167",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "دندان و مو",
+  "titleTranslit": "dandān wa mō",
+  "titleEn": "Tooth and hair",
+  "sentences": [
+    {
+      "target": "دندان من سفید است.",
+      "translit": "dandān-e man safēd ast.",
+      "en": "My tooth is white.",
+      "tokens": [
+        {
+          "surface": "دندان",
+          "lexemeId": "lx-0499"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "سفید",
+          "lexemeId": "lx-0143"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مو خواهر من دراز است.",
+      "translit": "mō-ye khāhar-e man darāz ast.",
+      "en": "My sister's hair is long.",
+      "tokens": [
+        {
+          "surface": "مو",
+          "lexemeId": "lx-0494"
+        },
+        {
+          "surface": "خواهر",
+          "lexemeId": "lx-0054"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "دراز",
+          "lexemeId": "lx-6111"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "مامان من مو او را می‌بندد.",
+      "translit": "māmān-e man mō-ye ō rā mēbandad.",
+      "en": "My mom ties her hair.",
+      "tokens": [
+        {
+          "surface": "مامان",
+          "lexemeId": "lx-0354"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "مو",
+          "lexemeId": "lx-0494"
+        },
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "را",
+          "lexemeId": "lx-0007"
+        },
+        {
+          "surface": "می‌بندد",
+          "lexemeId": "lx-0373"
+        }
+      ]
+    },
+    {
+      "target": "دندان برادر من درد می‌کند.",
+      "translit": "dandān-e barādar-e man dard mēkunad.",
+      "en": "My brother's tooth hurts.",
+      "tokens": [
+        {
+          "surface": "دندان",
+          "lexemeId": "lx-0499"
+        },
+        {
+          "surface": "برادر",
+          "lexemeId": "lx-0053"
+        },
+        {
+          "surface": "من",
+          "lexemeId": "lx-0011"
+        },
+        {
+          "surface": "درد",
+          "lexemeId": "lx-0209"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-0097"
+        }
+      ]
+    },
+    {
+      "target": "او مریض است و دوا می‌خورد.",
+      "translit": "ō marīz ast wa dawā mēkhurad.",
+      "en": "He is ill and takes medicine.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "مریض",
+          "lexemeId": "lx-0262"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "دوا",
+          "lexemeId": "lx-0263"
+        },
+        {
+          "surface": "می‌خورد",
+          "lexemeId": "lx-0091"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0007",
+    "lx-0010",
+    "lx-0011",
+    "lx-0012",
+    "lx-0053",
+    "lx-0054",
+    "lx-0091",
+    "lx-0097",
+    "lx-0143",
+    "lx-0209",
+    "lx-0262",
+    "lx-0263",
+    "lx-0354",
+    "lx-0373",
+    "lx-0494",
+    "lx-0499",
+    "lx-6111"
+  ],
+  "newWords": [
+    "lx-6111"
+  ],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 167
+}

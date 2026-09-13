@@ -1,0 +1,186 @@
+{
+  "id": "tx-seed-l2-162",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "کوچه ما",
+  "titleTranslit": "kōcha-ye mā",
+  "titleEn": "Our alley",
+  "sentences": [
+    {
+      "target": "کوچه ما کوتاه و روشن است.",
+      "translit": "kōcha-ye mā kōtāh wa rōshan ast.",
+      "en": "Our alley is short and bright.",
+      "tokens": [
+        {
+          "surface": "کوچه",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "کوتاه",
+          "lexemeId": "lx-6070"
+        },
+        {
+          "surface": "و",
+          "lexemeId": "lx-0001"
+        },
+        {
+          "surface": "روشن",
+          "lexemeId": "lx-0194"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "همسایه ما در این کوچه می‌ماند.",
+      "translit": "hamsāya-ye mā dar īn kōcha mēmānad.",
+      "en": "Our neighbor lives in this alley.",
+      "tokens": [
+        {
+          "surface": "همسایه",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "این",
+          "lexemeId": "lx-0006"
+        },
+        {
+          "surface": "کوچه",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "می‌ماند",
+          "lexemeId": "lx-0234"
+        }
+      ]
+    },
+    {
+      "target": "بچه‌ها در کوچه بازی می‌کنند.",
+      "translit": "bacha-hā dar kōcha bāzī mēkunand.",
+      "en": "The children play in the alley.",
+      "tokens": [
+        {
+          "surface": "بچه‌ها",
+          "lexemeId": "lx-0057"
+        },
+        {
+          "surface": "در",
+          "lexemeId": "lx-0002"
+        },
+        {
+          "surface": "کوچه",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "بازی",
+          "lexemeId": "lx-6370"
+        },
+        {
+          "surface": "می‌کنند",
+          "lexemeId": "lx-6370"
+        }
+      ]
+    },
+    {
+      "target": "ما پیاده از کوچه می‌رویم.",
+      "translit": "mā piyāda az kōcha mērawēm.",
+      "en": "We go along the alley on foot.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "پیاده",
+          "lexemeId": "lx-0219"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "کوچه",
+          "lexemeId": "lx-0529"
+        },
+        {
+          "surface": "می‌رویم",
+          "lexemeId": "lx-0089"
+        }
+      ]
+    },
+    {
+      "target": "راه مکتب از اینجا کوتاه است.",
+      "translit": "rāh-e maktab az īnjā kōtāh ast.",
+      "en": "The way to school is short from here.",
+      "tokens": [
+        {
+          "surface": "راه",
+          "lexemeId": "lx-0624"
+        },
+        {
+          "surface": "مکتب",
+          "lexemeId": "lx-0075"
+        },
+        {
+          "surface": "از",
+          "lexemeId": "lx-0004"
+        },
+        {
+          "surface": "اینجا",
+          "lexemeId": "lx-0174"
+        },
+        {
+          "surface": "کوتاه",
+          "lexemeId": "lx-6070"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0001",
+    "lx-0002",
+    "lx-0004",
+    "lx-0006",
+    "lx-0010",
+    "lx-0014",
+    "lx-0057",
+    "lx-0075",
+    "lx-0089",
+    "lx-0097",
+    "lx-0174",
+    "lx-0191",
+    "lx-0194",
+    "lx-0219",
+    "lx-0234",
+    "lx-0255",
+    "lx-0529",
+    "lx-0624",
+    "lx-6070",
+    "lx-6370"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 162
+}

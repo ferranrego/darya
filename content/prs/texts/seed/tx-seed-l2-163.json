@@ -1,0 +1,200 @@
+{
+  "id": "tx-seed-l2-163",
+  "formatVersion": "1.5.0",
+  "level": "L2",
+  "titleTarget": "همسایه ما",
+  "titleTranslit": "hamsāya-ye mā",
+  "titleEn": "Our neighbor",
+  "sentences": [
+    {
+      "target": "همسایه ما یک مرد مهربان است.",
+      "translit": "hamsāya-ye mā yak mard-e mehrabān ast.",
+      "en": "Our neighbor is a kind man.",
+      "tokens": [
+        {
+          "surface": "همسایه",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "مرد",
+          "lexemeId": "lx-0060"
+        },
+        {
+          "surface": "مهربان",
+          "lexemeId": "lx-0256"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    },
+    {
+      "target": "او هر روز با ما گپ می‌زند.",
+      "translit": "ō har rōz bā mā gap mēzanad.",
+      "en": "He talks with us every day.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هر",
+          "lexemeId": "lx-0166"
+        },
+        {
+          "surface": "روز",
+          "lexemeId": "lx-0040"
+        },
+        {
+          "surface": "با",
+          "lexemeId": "lx-0008"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "گپ",
+          "lexemeId": "lx-6368"
+        },
+        {
+          "surface": "می‌زند",
+          "lexemeId": "lx-6368"
+        }
+      ]
+    },
+    {
+      "target": "ما به همسایه خود کمک می‌کنیم.",
+      "translit": "mā ba hamsāya-ye khud kumak mēkunēm.",
+      "en": "We help our neighbor.",
+      "tokens": [
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "همسایه",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "خود",
+          "lexemeId": "lx-0178"
+        },
+        {
+          "surface": "کمک",
+          "lexemeId": "lx-2198"
+        },
+        {
+          "surface": "می‌کنیم",
+          "lexemeId": "lx-2198"
+        }
+      ]
+    },
+    {
+      "target": "او هم به ما کمک می‌کند.",
+      "translit": "ō ham ba mā kumak mēkunad.",
+      "en": "He helps us too.",
+      "tokens": [
+        {
+          "surface": "او",
+          "lexemeId": "lx-0012"
+        },
+        {
+          "surface": "هم",
+          "lexemeId": "lx-0024"
+        },
+        {
+          "surface": "به",
+          "lexemeId": "lx-0003"
+        },
+        {
+          "surface": "ما",
+          "lexemeId": "lx-0014"
+        },
+        {
+          "surface": "کمک",
+          "lexemeId": "lx-2198"
+        },
+        {
+          "surface": "می‌کند",
+          "lexemeId": "lx-2198"
+        }
+      ]
+    },
+    {
+      "target": "همسایه خوب یک چیز مبارک است.",
+      "translit": "hamsāya-ye khōb yak chīz-e mubārak ast.",
+      "en": "A good neighbor is a blessed thing.",
+      "tokens": [
+        {
+          "surface": "همسایه",
+          "lexemeId": "lx-0255"
+        },
+        {
+          "surface": "خوب",
+          "lexemeId": "lx-0063"
+        },
+        {
+          "surface": "یک",
+          "lexemeId": "lx-0025"
+        },
+        {
+          "surface": "چیز",
+          "lexemeId": "lx-0164"
+        },
+        {
+          "surface": "مبارک",
+          "lexemeId": "lx-0251"
+        },
+        {
+          "surface": "است",
+          "lexemeId": "lx-0010"
+        }
+      ]
+    }
+  ],
+  "vocabUsed": [
+    "lx-0003",
+    "lx-0008",
+    "lx-0010",
+    "lx-0012",
+    "lx-0014",
+    "lx-0024",
+    "lx-0025",
+    "lx-0040",
+    "lx-0060",
+    "lx-0063",
+    "lx-0097",
+    "lx-0151",
+    "lx-0152",
+    "lx-0164",
+    "lx-0166",
+    "lx-0178",
+    "lx-0208",
+    "lx-0251",
+    "lx-0255",
+    "lx-0256",
+    "lx-2198",
+    "lx-6368"
+  ],
+  "newWords": [],
+  "questions": [],
+  "grammarPoints": [],
+  "newWordRatio": 0,
+  "source": "seed",
+  "createdAt": "2026-07-20T00:00:00.000Z",
+  "seq": 163
+}
