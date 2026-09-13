@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { logErrors, resolveErrors } from "@/lib/db/errors";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { Loader2, Sparkles } from "lucide-react";
@@ -55,13 +55,37 @@ export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
   // lets them retry, so `onComplete` always reports success - without this the
   // only thing ever recorded is that they eventually passed.
   const wrongRef = useRef<string[]>([]);
+  /**
+   * When the current exercise was put on screen.
+   *
+   * `latency_ms` and `correct_answer` were added to `user_exercises` for this
+   * and then never written, so two columns sat empty while the plan they came
+   * from said to record "which answer was chosen and how long it took". Time
+   * on an item separates "knew it" from "worked it out", which is the
+   * difference the recognition-vs-recall work turns on.
+   */
+  const shownAtRef = useRef(0);
+  // Set in an effect rather than in the ref's initializer: `Date.now()` during
+  // render is impure, and React's own rule says so. Keyed on `index`, so the
+  // clock restarts for each exercise rather than timing the whole session.
+  useEffect(() => {
+    shownAtRef.current = Date.now();
+  }, [index]);
 
   const recordResult = useMutation({
     mutationFn: async ({
       exId,
       isCorrect,
       lexemeIds,
-    }: { exId: string; isCorrect: boolean; lexemeIds: string[] }) => {
+      correctAnswer,
+      latencyMs,
+    }: {
+      exId: string;
+      isCorrect: boolean;
+      lexemeIds: string[];
+      correctAnswer: string | null;
+      latencyMs: number;
+    }) => {
       if (!user) return;
       const wrong = wrongRef.current;
       wrongRef.current = [];
@@ -70,7 +94,9 @@ export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
         exercise_id: exId,
         is_correct: isCorrect && wrong.length === 0,
         chosen_answer: wrong[0] ?? null,
+        correct_answer: correctAnswer,
         attempt: wrong.length + 1,
+        latency_ms: latencyMs,
       });
       // The word the exercise was about has to travel with the mistake. A row
       // carrying only the exercise id records that something went wrong and
@@ -150,8 +176,28 @@ export function PracticeSession({ onFinish }: { onFinish?: () => void }) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data = ex.data as any;
 
+  /**
+   * What the learner should have answered, per exercise type.
+   *
+   * Stored alongside what they actually chose, so a later report can say
+   * "picked خانه where the answer was مکتب" rather than only "got it wrong".
+   */
+  const correctAnswerOf = (d: typeof data): string | null => {
+    if (d?.type === "cloze") return d.missingWord ?? null;
+    if (d?.type === "unscramble") return d.sentenceTarget ?? null;
+    if (d?.type === "grammar_detective") return d.correctSentenceTarget ?? null;
+    return null;
+  };
+
   const handleComplete = (isCorrect: boolean) => {
-    recordResult.mutate({ exId: ex.id, isCorrect, lexemeIds: ex.lexeme_ids ?? [] });
+    recordResult.mutate({
+      exId: ex.id,
+      isCorrect,
+      lexemeIds: ex.lexeme_ids ?? [],
+      correctAnswer: correctAnswerOf(data),
+      latencyMs: Date.now() - shownAtRef.current,
+    });
+    shownAtRef.current = Date.now();
     if (index + 1 >= exercises.length) {
       setIsDone(true);
     } else {

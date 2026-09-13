@@ -125,21 +125,27 @@ export async function stickingPoints(
   userId: string,
 ): Promise<StickingPoint[]> {
   try {
+    // The column is `occurred_at`, not `created_at`. This asked for
+    // `created_at`, which does not exist on this table, so every call failed
+    // with a 400 and the catch below turned it into an empty list - meaning
+    // practice never once led with the words a learner keeps losing, which is
+    // the entire point of the table. Nothing surfaced, because a silent
+    // failure is exactly what this degrade-to-empty is designed to produce.
     const { data, error } = await db
       .from("learner_errors")
-      .select("lexeme_id,created_at")
+      .select("lexeme_id,occurred_at")
       .eq("user_id", userId)
       .is("resolved_at", null)
       .not("lexeme_id", "is", null)
-      .order("created_at", { ascending: false })
+      .order("occurred_at", { ascending: false })
       .limit(STICKING_POINT_LIMIT);
     if (error || !data) return [];
     const byId = new Map<string, StickingPoint>();
-    for (const row of data as { lexeme_id: string; created_at: string }[]) {
+    for (const row of data as { lexeme_id: string; occurred_at: string }[]) {
       const seen = byId.get(row.lexeme_id);
       if (seen) seen.misses += 1;
       // Rows arrive newest first, so the first one seen is the latest.
-      else byId.set(row.lexeme_id, { lexemeId: row.lexeme_id, misses: 1, lastAt: row.created_at });
+      else byId.set(row.lexeme_id, { lexemeId: row.lexeme_id, misses: 1, lastAt: row.occurred_at });
     }
     return [...byId.values()].sort((a, b) => b.misses - a.misses || b.lastAt.localeCompare(a.lastAt));
   } catch {

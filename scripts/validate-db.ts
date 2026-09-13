@@ -16,6 +16,7 @@
  *
  * Run: pnpm validate:db
  */
+import { readFileSync, readdirSync } from "node:fs";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import type { z } from "zod";
 import {
@@ -181,6 +182,62 @@ for (const check of CHECKS) {
     } else {
       console.log(`✓ ${table}.lexeme_id (${rows.length} rows resolve)`);
     }
+  }
+}
+
+/**
+ * Every column the app asks for must exist.
+ *
+ * `stickingPoints` selected `created_at` from `learner_errors`, whose column is
+ * `occurred_at`. Postgres returned a 400, the caller's own `catch` turned that
+ * into an empty list - deliberately, so an analytics read can never break a
+ * learner's review - and practice therefore never once led with the words they
+ * keep losing. That is the headline of the feature, silently doing nothing,
+ * and nothing anywhere said so. A degrade-to-empty path makes a wrong column
+ * name invisible by design, so the names have to be checked somewhere else.
+ *
+ * The queries are string literals, so the source is scanned for `.from("x")`
+ * followed by the next `.select("a,b")`, and each one is then put to the
+ * database with `limit 0`. That asks Postgres the exact question rather than
+ * reimplementing its answer.
+ */
+{
+  const walk = (dir: string): string[] =>
+    readdirSync(dir, { withFileTypes: true }).flatMap((d: { name: string; isDirectory(): boolean }) =>
+      d.isDirectory()
+        ? walk(`${dir}/${d.name}`)
+        : /\.tsx?$/.test(d.name) && !d.name.includes(".test.")
+          ? [`${dir}/${d.name}`]
+          : [],
+    );
+
+  const seen = new Set<string>();
+  const offenders: string[] = [];
+  for (const file of [...walk("src"), ...walk("scripts")]) {
+    const text = readFileSync(file, "utf8");
+    for (const m of text.matchAll(/\.from\(\s*"([a-z_]+)"\s*\)/g)) {
+      const table = m[1];
+      const at = (m.index ?? 0) + m[0].length;
+      const sel = /\.select\(\s*"((?:[^"\\]|\\.)*)"/.exec(text.slice(at, at + 400));
+      if (!sel) continue;
+      const cols = sel[1];
+      const key = `${table}|${cols}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const { error } = await db.from(table).select(cols).limit(0);
+      // 42703 is "column does not exist". Anything else is a permissions or
+      // relation problem, which is not what this check is about.
+      if (error && error.code === "42703") {
+        offenders.push(`${file}: ${table}.select("${cols}") - ${error.message}`);
+      }
+    }
+  }
+  if (offenders.length > 0) {
+    failed++;
+    console.error(`\n\u2717 ${offenders.length} quer(ies) name a column the table does not have:`);
+    for (const o of offenders) console.error(`    ${o}`);
+  } else {
+    console.log(`\u2713 every selected column exists (${seen.size} distinct queries checked)`);
   }
 }
 
