@@ -1,13 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Check, Loader2, Wand2 } from "lucide-react";
+import { Check, ChevronRight, Loader2, Wand2 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
 import type { LexiconEntry } from "@/lib/content/schema";
+import { hubEntryBySlug } from "@/lib/content/grammar-hub";
 import type { WordStatus } from "@/lib/db/types";
 import { analyzeConjugation, type ConjugationResponse } from "@/app/actions/conjugation";
 import { profile as langProfile } from "@/lib/lang";
 import { spokenFormOf } from "@/lib/lang/prs/spoken";
+import { topicsForToken } from "@/lib/lang/prs/grammar-topics";
 
 const statusLabel: Record<WordStatus | "new", { text: string; cls: string }> = {
   new: { text: "New word", cls: "bg-new-tint text-ink-soft" },
@@ -76,6 +79,16 @@ export function WordSheet({
   // Null for most words: the two registers only differ for a closed set, and a
   // line repeating the headword would teach nothing.
   const spoken = entry ? spokenFormOf(entry.targetNormalized) : null;
+  // Chips into the Grammar Hub. topicsForToken only emits a slug when the
+  // grammar is certain from the written form (see its own doc comment) - the
+  // hub-page lookup here is the second half of that: a slug with no page
+  // (not yet written, or a typo) must never render a link to nowhere.
+  const grammarTopics =
+    surface && entry
+      ? topicsForToken(surface, entry)
+          .map((slug) => hubEntryBySlug(slug))
+          .filter((page) => page !== undefined)
+      : [];
 
   const handleAnalyze = async () => {
     if (!surface || !entry) return;
@@ -135,6 +148,21 @@ export function WordSheet({
                 </div>
                 <p className="mt-3 text-[18px] font-medium">{entry.glossEn}</p>
                 <p className="text-[13px] text-ink-faint">{entry.pos}</p>
+                {grammarTopics.length > 0 ? (
+                  <div className="mt-2.5 flex flex-wrap gap-2">
+                    {grammarTopics.map((page) => (
+                      <Link
+                        key={page.slug}
+                        href={`/grammar-hub/${page.slug}`}
+                        onClick={onClose}
+                        className="flex min-h-11 items-center gap-1 rounded-full border border-line bg-surface px-3.5 text-[13.5px] font-medium text-lapis transition-colors hover:bg-paper"
+                      >
+                        Grammar: {page.title}
+                        <ChevronRight size={14} />
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
                 {/*
                   How Kabul actually says it.
                   The dictionary is 58% formal against 1% spoken, while the

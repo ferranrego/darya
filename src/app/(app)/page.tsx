@@ -1,6 +1,6 @@
 "use client";
 
-import { Blocks, BookOpen, CircleHelp, Flame, Link2, Map, RotateCcw, SpellCheck, BarChart2, Brain } from "lucide-react";
+import { Blocks, BookMarked, BookOpen, CircleHelp, Flame, Link2, Map, RotateCcw, SpellCheck, BarChart2, Brain } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
@@ -250,6 +250,14 @@ export default function HomePage() {
 
       <motion.section {...stagger(0.06)} className="flex flex-col gap-3">
         <p className="text-[13px] font-medium text-ink-soft">Keep going</p>
+        {/*
+          Grammar Hub and Import are always present, like a fixed pair at the
+          end of the shelf - but `shelfKeys` itself varies (3 items normally,
+          4 during the alphabet stage), so the total tile count is not always
+          even. Rather than leave a lone tile stranded in its own row with
+          empty space beside it, the last tile spans both columns whenever the
+          total is odd - the grid always reads as full rows.
+        */}
         <div className="grid grid-cols-2 gap-3">
           {shelfKeys.map((key) => {
             if (key === "alphabet")
@@ -314,13 +322,21 @@ export default function HomePage() {
               />
             );
           })}
-          {/* Always present, unlike the rest of the shelf: importing is a thing
-              the learner initiates, not something the app schedules for them. */}
+          {/* Always present, unlike the rest of the shelf: looking up a rule
+              or importing an article are both things the learner initiates,
+              not something the app schedules for them. */}
+          <QuickTile
+            href="/grammar-hub"
+            icon={<BookMarked size={18} />}
+            title="Grammar Hub"
+            detail="Look up any rule"
+          />
           <QuickTile
             href="/read/import"
             icon={<Link2 size={18} />}
             title="Import"
             detail="Read your own article"
+            className={(shelfKeys.length + 2) % 2 === 1 ? "col-span-2" : undefined}
           />
         </div>
         <ActionCard

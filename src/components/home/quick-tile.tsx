@@ -15,6 +15,7 @@ export function QuickTile({
   detail,
   progress,
   onTapHaptic = true,
+  className,
 }: {
   href: string;
   icon: React.ReactNode;
@@ -25,6 +26,8 @@ export function QuickTile({
   /** 0–1; draws a slim lapis progress bar along the bottom when provided. */
   progress?: number;
   onTapHaptic?: boolean;
+  /** Extra classes on the tile's root, e.g. `col-span-2` for a lone trailing tile. */
+  className?: string;
 }) {
   return (
     <Link
@@ -32,7 +35,7 @@ export function QuickTile({
       onClick={() => {
         if (onTapHaptic && typeof navigator !== "undefined") navigator.vibrate?.(8);
       }}
-      className="group flex flex-col gap-3 rounded-2xl border border-line bg-surface p-4 transition-all duration-200 hover:shadow-[0_4px_16px_rgba(31,26,23,0.06)]"
+      className={`group flex flex-col gap-3 rounded-2xl border border-line bg-surface p-4 transition-all duration-200 hover:shadow-[0_4px_16px_rgba(31,26,23,0.06)] ${className ?? ""}`}
     >
       <div className="flex items-start justify-between gap-2">
         <div className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-paper text-lapis">
