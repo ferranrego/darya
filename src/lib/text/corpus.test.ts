@@ -119,7 +119,15 @@ describe("shipped content is recognised by the runtime acceptance rule", () => {
     // restored to content/ - they were the vocabulary the C1/C2 lessons use.
     // ca is 0: every word of correct Catalan in the A1-A2 course and the seed
     // texts resolves, which is the standard a tap-to-reveal reader has to meet.
-    const BUDGET: Record<string, number> = { prs: 5, ca: 100 };
+    //
+    // prs went from 5 to 3 when جوش, بام and راننده were given lexicon
+    // entries (lx-10030, lx-10028, lx-10029). All three had counted as
+    // recognised before that only because the stemmer resolved them to
+    // different words - جو "atmosphere", با "with", به حاشیه راندن "to
+    // marginalize". With entries of their own they resolve as themselves
+    // (a headword outranks every stripping rule). The three left are علی (a name), the
+    // blank کتاب___ and a lone ی.
+    const BUDGET: Record<string, number> = { prs: 3, ca: 100 };
     const budget = BUDGET[profile.code] ?? 0;
     expect(unknown.length, `unresolved tokens for "${profile.code}"`).toBeLessThanOrEqual(budget);
   });

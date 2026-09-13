@@ -1,0 +1,41 @@
+[
+  {
+    "target": "بام",
+    "translit": "bām",
+    "glossEn": "roof (flat roof of a house)",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "برف را از بام پاک کردیم.",
+    "exampleTranslit": "barf rā az bām pāk kardēm.",
+    "exampleEn": "We cleared the snow off the roof.",
+    "variants": [],
+    "tags": ["Home & Furniture"],
+    "concreteness": true
+  },
+  {
+    "target": "راننده",
+    "translit": "rānanda",
+    "glossEn": "driver (everyday Kabul Dari is دریور)",
+    "pos": "noun",
+    "register": "formal",
+    "exampleTarget": "راننده ما را تا دروازه پوهنتون رساند.",
+    "exampleTranslit": "rānanda mā rā tā darwāza-ye pōhantūn rasānd.",
+    "exampleEn": "The driver took us as far as the university gate.",
+    "variants": [],
+    "tags": ["Travel & Transportation"],
+    "concreteness": true
+  },
+  {
+    "target": "جوش",
+    "translit": "jōsh",
+    "glossEn": "boiling, the boil (جوش دادن to boil, جوش آمدن to come to the boil)",
+    "pos": "noun",
+    "register": "neutral",
+    "exampleTarget": "آب برای چای به جوش آمد.",
+    "exampleTranslit": "āb barā-ye chāy ba jōsh āmad.",
+    "exampleEn": "The water for the tea has come to the boil.",
+    "variants": [],
+    "tags": ["Food & Drink"],
+    "concreteness": true
+  }
+]
