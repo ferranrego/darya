@@ -197,6 +197,13 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
 
   for (const entry of entries) {
     byId.set(entry.id, entry);
+    // A Dari headword never contains a digit. The 160 that do (lx-5070 to
+    // lx-5229, "گرمایش جهانی 1" … "محیط زیست 160") are bulk-generation
+    // filler, ruled out in their gloss and kept only because user_words may
+    // reference their ids. `byId` still finds them for that reason; nothing
+    // may reach them by lookup, including a caller that resolves a whole
+    // phrase rather than a token.
+    if (/[0-9۰-۹٠-٩]/.test(entry.targetNormalized)) continue;
     headwords.set(matchKey(entry.targetNormalized), entry);
     for (const v of entry.variants) {
       const key = matchKey(v);

@@ -1,0 +1,1922 @@
+{
+  "lx-5070": {
+    "target": "گرمایش جهانی 1",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 1\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 1"
+    }
+  },
+  "lx-5071": {
+    "target": "تغییر اقلیم 2",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 2\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 2"
+    }
+  },
+  "lx-5072": {
+    "target": "تنوع زیستی 3",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 3\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 3"
+    }
+  },
+  "lx-5073": {
+    "target": "توسعه پایدار 4",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 4\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 4"
+    }
+  },
+  "lx-5074": {
+    "target": "انرژی تجدیدپذیر 5",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 5\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 5"
+    }
+  },
+  "lx-5075": {
+    "target": "انرژی بادی 6",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 6\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 6"
+    }
+  },
+  "lx-5076": {
+    "target": "انرژی خورشیدی 7",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 7\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 7"
+    }
+  },
+  "lx-5077": {
+    "target": "ردپای کربن 8",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 8\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 8"
+    }
+  },
+  "lx-5078": {
+    "target": "گازهای گلخانه‌ای 9",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 9\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 9"
+    }
+  },
+  "lx-5079": {
+    "target": "محیط زیست 10",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 10\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 10"
+    }
+  },
+  "lx-5080": {
+    "target": "گرمایش جهانی 11",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 11\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 11"
+    }
+  },
+  "lx-5081": {
+    "target": "تغییر اقلیم 12",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 12\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 12"
+    }
+  },
+  "lx-5082": {
+    "target": "تنوع زیستی 13",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 13\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 13"
+    }
+  },
+  "lx-5083": {
+    "target": "توسعه پایدار 14",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 14\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 14"
+    }
+  },
+  "lx-5084": {
+    "target": "انرژی تجدیدپذیر 15",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 15\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 15"
+    }
+  },
+  "lx-5085": {
+    "target": "انرژی بادی 16",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 16\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 16"
+    }
+  },
+  "lx-5086": {
+    "target": "انرژی خورشیدی 17",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 17\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 17"
+    }
+  },
+  "lx-5087": {
+    "target": "ردپای کربن 18",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 18\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 18"
+    }
+  },
+  "lx-5088": {
+    "target": "گازهای گلخانه‌ای 19",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 19\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 19"
+    }
+  },
+  "lx-5089": {
+    "target": "محیط زیست 20",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 20\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 20"
+    }
+  },
+  "lx-5090": {
+    "target": "گرمایش جهانی 21",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 21\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 21"
+    }
+  },
+  "lx-5091": {
+    "target": "تغییر اقلیم 22",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 22\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 22"
+    }
+  },
+  "lx-5092": {
+    "target": "تنوع زیستی 23",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 23\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 23"
+    }
+  },
+  "lx-5093": {
+    "target": "توسعه پایدار 24",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 24\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 24"
+    }
+  },
+  "lx-5094": {
+    "target": "انرژی تجدیدپذیر 25",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 25\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 25"
+    }
+  },
+  "lx-5095": {
+    "target": "انرژی بادی 26",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 26\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 26"
+    }
+  },
+  "lx-5096": {
+    "target": "انرژی خورشیدی 27",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 27\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 27"
+    }
+  },
+  "lx-5097": {
+    "target": "ردپای کربن 28",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 28\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 28"
+    }
+  },
+  "lx-5098": {
+    "target": "گازهای گلخانه‌ای 29",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 29\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 29"
+    }
+  },
+  "lx-5099": {
+    "target": "محیط زیست 30",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 30\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 30"
+    }
+  },
+  "lx-5100": {
+    "target": "گرمایش جهانی 31",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 31\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 31"
+    }
+  },
+  "lx-5101": {
+    "target": "تغییر اقلیم 32",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 32\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 32"
+    }
+  },
+  "lx-5102": {
+    "target": "تنوع زیستی 33",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 33\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 33"
+    }
+  },
+  "lx-5103": {
+    "target": "توسعه پایدار 34",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 34\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 34"
+    }
+  },
+  "lx-5104": {
+    "target": "انرژی تجدیدپذیر 35",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 35\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 35"
+    }
+  },
+  "lx-5105": {
+    "target": "انرژی بادی 36",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 36\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 36"
+    }
+  },
+  "lx-5106": {
+    "target": "انرژی خورشیدی 37",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 37\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 37"
+    }
+  },
+  "lx-5107": {
+    "target": "ردپای کربن 38",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 38\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 38"
+    }
+  },
+  "lx-5108": {
+    "target": "گازهای گلخانه‌ای 39",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 39\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 39"
+    }
+  },
+  "lx-5109": {
+    "target": "محیط زیست 40",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 40\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 40"
+    }
+  },
+  "lx-5110": {
+    "target": "گرمایش جهانی 41",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 41\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 41"
+    }
+  },
+  "lx-5111": {
+    "target": "تغییر اقلیم 42",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 42\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 42"
+    }
+  },
+  "lx-5112": {
+    "target": "تنوع زیستی 43",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 43\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 43"
+    }
+  },
+  "lx-5113": {
+    "target": "توسعه پایدار 44",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 44\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 44"
+    }
+  },
+  "lx-5114": {
+    "target": "انرژی تجدیدپذیر 45",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 45\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 45"
+    }
+  },
+  "lx-5115": {
+    "target": "انرژی بادی 46",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 46\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 46"
+    }
+  },
+  "lx-5116": {
+    "target": "انرژی خورشیدی 47",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 47\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 47"
+    }
+  },
+  "lx-5117": {
+    "target": "ردپای کربن 48",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 48\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 48"
+    }
+  },
+  "lx-5118": {
+    "target": "گازهای گلخانه‌ای 49",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 49\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 49"
+    }
+  },
+  "lx-5119": {
+    "target": "محیط زیست 50",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 50\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 50"
+    }
+  },
+  "lx-5120": {
+    "target": "گرمایش جهانی 51",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 51\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 51"
+    }
+  },
+  "lx-5121": {
+    "target": "تغییر اقلیم 52",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 52\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 52"
+    }
+  },
+  "lx-5122": {
+    "target": "تنوع زیستی 53",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 53\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 53"
+    }
+  },
+  "lx-5123": {
+    "target": "توسعه پایدار 54",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 54\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 54"
+    }
+  },
+  "lx-5124": {
+    "target": "انرژی تجدیدپذیر 55",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 55\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 55"
+    }
+  },
+  "lx-5125": {
+    "target": "انرژی بادی 56",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 56\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 56"
+    }
+  },
+  "lx-5126": {
+    "target": "انرژی خورشیدی 57",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 57\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 57"
+    }
+  },
+  "lx-5127": {
+    "target": "ردپای کربن 58",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 58\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 58"
+    }
+  },
+  "lx-5128": {
+    "target": "گازهای گلخانه‌ای 59",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 59\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 59"
+    }
+  },
+  "lx-5129": {
+    "target": "محیط زیست 60",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 60\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 60"
+    }
+  },
+  "lx-5130": {
+    "target": "گرمایش جهانی 61",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 61\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 61"
+    }
+  },
+  "lx-5131": {
+    "target": "تغییر اقلیم 62",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 62\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 62"
+    }
+  },
+  "lx-5132": {
+    "target": "تنوع زیستی 63",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 63\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 63"
+    }
+  },
+  "lx-5133": {
+    "target": "توسعه پایدار 64",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 64\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 64"
+    }
+  },
+  "lx-5134": {
+    "target": "انرژی تجدیدپذیر 65",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 65\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 65"
+    }
+  },
+  "lx-5135": {
+    "target": "انرژی بادی 66",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 66\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 66"
+    }
+  },
+  "lx-5136": {
+    "target": "انرژی خورشیدی 67",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 67\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 67"
+    }
+  },
+  "lx-5137": {
+    "target": "ردپای کربن 68",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 68\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 68"
+    }
+  },
+  "lx-5138": {
+    "target": "گازهای گلخانه‌ای 69",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 69\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 69"
+    }
+  },
+  "lx-5139": {
+    "target": "محیط زیست 70",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 70\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 70"
+    }
+  },
+  "lx-5140": {
+    "target": "گرمایش جهانی 71",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 71\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 71"
+    }
+  },
+  "lx-5141": {
+    "target": "تغییر اقلیم 72",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 72\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 72"
+    }
+  },
+  "lx-5142": {
+    "target": "تنوع زیستی 73",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 73\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 73"
+    }
+  },
+  "lx-5143": {
+    "target": "توسعه پایدار 74",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 74\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 74"
+    }
+  },
+  "lx-5144": {
+    "target": "انرژی تجدیدپذیر 75",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 75\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 75"
+    }
+  },
+  "lx-5145": {
+    "target": "انرژی بادی 76",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 76\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 76"
+    }
+  },
+  "lx-5146": {
+    "target": "انرژی خورشیدی 77",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 77\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 77"
+    }
+  },
+  "lx-5147": {
+    "target": "ردپای کربن 78",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 78\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 78"
+    }
+  },
+  "lx-5148": {
+    "target": "گازهای گلخانه‌ای 79",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 79\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 79"
+    }
+  },
+  "lx-5149": {
+    "target": "محیط زیست 80",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 80\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 80"
+    }
+  },
+  "lx-5150": {
+    "target": "گرمایش جهانی 81",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 81\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 81"
+    }
+  },
+  "lx-5151": {
+    "target": "تغییر اقلیم 82",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 82\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 82"
+    }
+  },
+  "lx-5152": {
+    "target": "تنوع زیستی 83",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 83\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 83"
+    }
+  },
+  "lx-5153": {
+    "target": "توسعه پایدار 84",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 84\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 84"
+    }
+  },
+  "lx-5154": {
+    "target": "انرژی تجدیدپذیر 85",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 85\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 85"
+    }
+  },
+  "lx-5155": {
+    "target": "انرژی بادی 86",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 86\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 86"
+    }
+  },
+  "lx-5156": {
+    "target": "انرژی خورشیدی 87",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 87\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 87"
+    }
+  },
+  "lx-5157": {
+    "target": "ردپای کربن 88",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 88\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 88"
+    }
+  },
+  "lx-5158": {
+    "target": "گازهای گلخانه‌ای 89",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 89\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 89"
+    }
+  },
+  "lx-5159": {
+    "target": "محیط زیست 90",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 90\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 90"
+    }
+  },
+  "lx-5160": {
+    "target": "گرمایش جهانی 91",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 91\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 91"
+    }
+  },
+  "lx-5161": {
+    "target": "تغییر اقلیم 92",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 92\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 92"
+    }
+  },
+  "lx-5162": {
+    "target": "تنوع زیستی 93",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 93\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 93"
+    }
+  },
+  "lx-5163": {
+    "target": "توسعه پایدار 94",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 94\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 94"
+    }
+  },
+  "lx-5164": {
+    "target": "انرژی تجدیدپذیر 95",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 95\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 95"
+    }
+  },
+  "lx-5165": {
+    "target": "انرژی بادی 96",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 96\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 96"
+    }
+  },
+  "lx-5166": {
+    "target": "انرژی خورشیدی 97",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 97\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 97"
+    }
+  },
+  "lx-5167": {
+    "target": "ردپای کربن 98",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 98\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 98"
+    }
+  },
+  "lx-5168": {
+    "target": "گازهای گلخانه‌ای 99",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 99\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 99"
+    }
+  },
+  "lx-5169": {
+    "target": "محیط زیست 100",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 100\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 100"
+    }
+  },
+  "lx-5170": {
+    "target": "گرمایش جهانی 101",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 101\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 101"
+    }
+  },
+  "lx-5171": {
+    "target": "تغییر اقلیم 102",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 102\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 102"
+    }
+  },
+  "lx-5172": {
+    "target": "تنوع زیستی 103",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 103\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 103"
+    }
+  },
+  "lx-5173": {
+    "target": "توسعه پایدار 104",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 104\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 104"
+    }
+  },
+  "lx-5174": {
+    "target": "انرژی تجدیدپذیر 105",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 105\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 105"
+    }
+  },
+  "lx-5175": {
+    "target": "انرژی بادی 106",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 106\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 106"
+    }
+  },
+  "lx-5176": {
+    "target": "انرژی خورشیدی 107",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 107\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 107"
+    }
+  },
+  "lx-5177": {
+    "target": "ردپای کربن 108",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 108\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 108"
+    }
+  },
+  "lx-5178": {
+    "target": "گازهای گلخانه‌ای 109",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 109\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 109"
+    }
+  },
+  "lx-5179": {
+    "target": "محیط زیست 110",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 110\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 110"
+    }
+  },
+  "lx-5180": {
+    "target": "گرمایش جهانی 111",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 111\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 111"
+    }
+  },
+  "lx-5181": {
+    "target": "تغییر اقلیم 112",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 112\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 112"
+    }
+  },
+  "lx-5182": {
+    "target": "تنوع زیستی 113",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 113\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 113"
+    }
+  },
+  "lx-5183": {
+    "target": "توسعه پایدار 114",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 114\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 114"
+    }
+  },
+  "lx-5184": {
+    "target": "انرژی تجدیدپذیر 115",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 115\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 115"
+    }
+  },
+  "lx-5185": {
+    "target": "انرژی بادی 116",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 116\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 116"
+    }
+  },
+  "lx-5186": {
+    "target": "انرژی خورشیدی 117",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 117\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 117"
+    }
+  },
+  "lx-5187": {
+    "target": "ردپای کربن 118",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 118\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 118"
+    }
+  },
+  "lx-5188": {
+    "target": "گازهای گلخانه‌ای 119",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 119\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 119"
+    }
+  },
+  "lx-5189": {
+    "target": "محیط زیست 120",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 120\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 120"
+    }
+  },
+  "lx-5190": {
+    "target": "گرمایش جهانی 121",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 121\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 121"
+    }
+  },
+  "lx-5191": {
+    "target": "تغییر اقلیم 122",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 122\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 122"
+    }
+  },
+  "lx-5192": {
+    "target": "تنوع زیستی 123",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 123\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 123"
+    }
+  },
+  "lx-5193": {
+    "target": "توسعه پایدار 124",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 124\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 124"
+    }
+  },
+  "lx-5194": {
+    "target": "انرژی تجدیدپذیر 125",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 125\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 125"
+    }
+  },
+  "lx-5195": {
+    "target": "انرژی بادی 126",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 126\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 126"
+    }
+  },
+  "lx-5196": {
+    "target": "انرژی خورشیدی 127",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 127\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 127"
+    }
+  },
+  "lx-5197": {
+    "target": "ردپای کربن 128",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 128\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 128"
+    }
+  },
+  "lx-5198": {
+    "target": "گازهای گلخانه‌ای 129",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 129\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 129"
+    }
+  },
+  "lx-5199": {
+    "target": "محیط زیست 130",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 130\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 130"
+    }
+  },
+  "lx-5200": {
+    "target": "گرمایش جهانی 131",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 131\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 131"
+    }
+  },
+  "lx-5201": {
+    "target": "تغییر اقلیم 132",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 132\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 132"
+    }
+  },
+  "lx-5202": {
+    "target": "تنوع زیستی 133",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 133\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 133"
+    }
+  },
+  "lx-5203": {
+    "target": "توسعه پایدار 134",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 134\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 134"
+    }
+  },
+  "lx-5204": {
+    "target": "انرژی تجدیدپذیر 135",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 135\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 135"
+    }
+  },
+  "lx-5205": {
+    "target": "انرژی بادی 136",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 136\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 136"
+    }
+  },
+  "lx-5206": {
+    "target": "انرژی خورشیدی 137",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 137\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 137"
+    }
+  },
+  "lx-5207": {
+    "target": "ردپای کربن 138",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 138\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 138"
+    }
+  },
+  "lx-5208": {
+    "target": "گازهای گلخانه‌ای 139",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 139\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 139"
+    }
+  },
+  "lx-5209": {
+    "target": "محیط زیست 140",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 140\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 140"
+    }
+  },
+  "lx-5210": {
+    "target": "گرمایش جهانی 141",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 141\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 141"
+    }
+  },
+  "lx-5211": {
+    "target": "تغییر اقلیم 142",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 142\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 142"
+    }
+  },
+  "lx-5212": {
+    "target": "تنوع زیستی 143",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 143\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 143"
+    }
+  },
+  "lx-5213": {
+    "target": "توسعه پایدار 144",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 144\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 144"
+    }
+  },
+  "lx-5214": {
+    "target": "انرژی تجدیدپذیر 145",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 145\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 145"
+    }
+  },
+  "lx-5215": {
+    "target": "انرژی بادی 146",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 146\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 146"
+    }
+  },
+  "lx-5216": {
+    "target": "انرژی خورشیدی 147",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 147\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 147"
+    }
+  },
+  "lx-5217": {
+    "target": "ردپای کربن 148",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 148\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 148"
+    }
+  },
+  "lx-5218": {
+    "target": "گازهای گلخانه‌ای 149",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 149\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 149"
+    }
+  },
+  "lx-5219": {
+    "target": "محیط زیست 150",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 150\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 150"
+    }
+  },
+  "lx-5220": {
+    "target": "گرمایش جهانی 151",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گرمایش جهانی 151\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1508 گرمایش جهانی] global warming"
+    },
+    "was": {
+      "glossEn": "global warming variant 151"
+    }
+  },
+  "lx-5221": {
+    "target": "تغییر اقلیم 152",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تغییر اقلیم 152\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1503 تغییر اقلیم] climate change"
+    },
+    "was": {
+      "glossEn": "climate change variant 152"
+    }
+  },
+  "lx-5222": {
+    "target": "تنوع زیستی 153",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"تنوع زیستی 153\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1518 تنوع زیستی] biodiversity"
+    },
+    "was": {
+      "glossEn": "biodiversity variant 153"
+    }
+  },
+  "lx-5223": {
+    "target": "توسعه پایدار 154",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"توسعه پایدار 154\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated filler; توسعه پایدار has no real entry] sustainable development"
+    },
+    "was": {
+      "glossEn": "sustainable development variant 154"
+    }
+  },
+  "lx-5224": {
+    "target": "انرژی تجدیدپذیر 155",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی تجدیدپذیر 155\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1510 انرژی تجدیدپذیر] renewable energy"
+    },
+    "was": {
+      "glossEn": "renewable energy variant 155"
+    }
+  },
+  "lx-5225": {
+    "target": "انرژی بادی 156",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی بادی 156\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2982 انرژی بادی] wind energy"
+    },
+    "was": {
+      "glossEn": "wind energy variant 156"
+    }
+  },
+  "lx-5226": {
+    "target": "انرژی خورشیدی 157",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"انرژی خورشیدی 157\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2981 انرژی خورشیدی] solar energy"
+    },
+    "was": {
+      "glossEn": "solar energy variant 157"
+    }
+  },
+  "lx-5227": {
+    "target": "ردپای کربن 158",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"ردپای کربن 158\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-3045 ردپای کربن] carbon footprint"
+    },
+    "was": {
+      "glossEn": "carbon footprint variant 158"
+    }
+  },
+  "lx-5228": {
+    "target": "گازهای گلخانه‌ای 159",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"گازهای گلخانه‌ای 159\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-2970 گازهای گلخانه‌ای] greenhouse gases"
+    },
+    "was": {
+      "glossEn": "greenhouse gases variant 159"
+    }
+  },
+  "lx-5229": {
+    "target": "محیط زیست 160",
+    "why": [
+      "bulk generation wrote ten topics sixteen times each with a counter in the headword (\"محیط زیست 160\") and \"variant N\" in the gloss; the entry cannot be deleted (user_words.lexeme_id), so it is ruled out of teaching and lookup"
+    ],
+    "set": {
+      "glossEn": "[not a headword: generated duplicate of lx-1501 محیط زیست] environment"
+    },
+    "was": {
+      "glossEn": "environment variant 160"
+    }
+  }
+}

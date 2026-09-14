@@ -280,6 +280,17 @@ describe("resolve against the real lexicon", () => {
       ["جوی", "جستن"], ["بخش", "بخشیدن"], ["پر", "پریدن"], ["بند", "بستن"],
       ["مال", "مالیدن"], ["دزد", "دزدیدن"], ["دم", "دمیدن"], ["ترس", "ترسیدن"],
     ];
+    it("never resolves the numbered generation filler (lx-5070..lx-5229)", () => {
+      const filler = entries.filter((e) => /\d/.test(e.targetNormalized));
+      expect(filler.length).toBe(160);
+      for (const e of filler) {
+        expect(idx.resolve(e.targetNormalized), e.id).toBeNull();
+        expect(idx.byId.get(e.id)?.id).toBe(e.id); // still reachable by id for user_words
+      }
+      // The real entry each one duplicated keeps resolving.
+      expect(idx.resolve("گرمایش جهانی")?.id).toBe("lx-1508");
+    });
+
     it.each(stemNouns)("%s is its own noun, not %s", (surface, verb) => {
       const hit = idx.resolve(surface);
       expect(hit?.targetNormalized).toBe(surface);
