@@ -333,6 +333,13 @@ export function buildLexiconIndex(entries: LexiconEntry[]): LexiconIndex {
       const fits = (suffix: string, m: LexiconEntry, root: string, bare: boolean) => {
         if (pluralPossessives.has(suffix) && (m.pos === "verb" || m.pos === "adverb")) return false;
         if (personEndings.has(suffix) && m.pos === "verb" && !headwords.has(root)) return false;
+        // -and "they are" is a copula, and a copula attaches to what can be
+        // predicated (خوبند، استادند) - never to a function word. باند
+        // "runway, gang" peeled to با "with" + ند once a wrong variant stopped
+        // catching it first. Only the 3pl: -am, -ī, -ēm, -ēd are also spelled
+        // like a possessive or a glide + possessive, which a preposition does
+        // take (درباره‌ام "about me", برایم).
+        if ((suffix === "ند" || suffix === "اند") && neverPlural.has(m.pos) && m.pos !== "verb") return false;
         if ((suffix === "ها" || suffix === "ان") && neverPlural.has(m.pos)) return false;
         if ((suffix === "تر" || suffix === "ترین") && !comparable.has(m.pos)) return false;
         if (bareEnclitics.has(suffix) && bare) {

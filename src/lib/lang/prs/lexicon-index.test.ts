@@ -261,6 +261,8 @@ describe("resolve against the real lexicon", () => {
       ["برتر", "بر", "superior, not on"],
       // a person ending stacked on a finite verb form
       ["بازدید", "باختن", "visit, not to lose"],
+      // a person ending on a function word
+      ["باند", "با", "runway, gang, not with + they are"],
       // a possessive on a bare present stem, which never takes one
       ["چرت", "چریدن", "nap, not to graze"],
       // the Kabuli plural rule on a three-letter Arabic root
