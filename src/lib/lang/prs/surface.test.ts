@@ -108,7 +108,7 @@ describe("presentIndicative", () => {
   it("خوردن (lx-0091): conjugates all three persons, real authored stem translit (khur)", () => {
     const khordan = entry("lx-0091");
     expect(presentIndicative(khordan, "1sg")).toEqual({ target: "می‌خورم", translit: "mēkhuram" });
-    expect(presentIndicative(khordan, "2sg")).toEqual({ target: "می‌خوری", translit: "mēkhurē" });
+    expect(presentIndicative(khordan, "2sg")).toEqual({ target: "می‌خوری", translit: "mēkhurī" });
     expect(presentIndicative(khordan, "3sg")).toEqual({ target: "می‌خورد", translit: "mēkhurad" });
   });
 
