@@ -809,7 +809,7 @@
           "type": "pickForm",
           "targetChar": "ک",
           "word": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "glossEn": "book",
           "targetIndex": 0
         },
@@ -830,26 +830,26 @@
           "id": "au05-e7",
           "type": "readWord",
           "word": "دل",
-          "translit": "del",
+          "translit": "dil",
           "glossEn": "heart",
           "choices": [
-            "del",
+            "dil",
             "dal",
-            "led",
-            "dil"
+            "lid",
+            "dul"
           ]
         },
         {
           "id": "au05-e8",
           "type": "readWord",
           "word": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "glossEn": "book",
           "choices": [
-            "ketāb",
+            "kitāb",
             "kabāt",
             "tābak",
-            "kitāb"
+            "kutāb"
           ]
         },
         {

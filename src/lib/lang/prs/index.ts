@@ -62,7 +62,7 @@ export const prs: LanguageProfile = {
 
   samples: {
     greeting: { target: "خوش آمدید", translit: "khush āmadēd", en: "welcome" },
-    sentence: { target: "سلام، چطور هستید؟", translit: "salām, chetōr hastēd?", en: "Hello, how are you?" },
+    sentence: { target: "سلام، چطور هستید؟", translit: "salām, chitōr hastēd?", en: "Hello, how are you?" },
     words: ["کتاب", "خانه", "من"],
     phaseGreetings: {
       morning: "Sobh bekheir",
