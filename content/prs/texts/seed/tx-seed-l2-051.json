@@ -108,7 +108,7 @@
     },
     {
       "target": "من امروز جور نیستم.",
-      "translit": "man emrōz jōr nēstam.",
+      "translit": "man imrōz jōr nēstam.",
       "en": "I am not well today.",
       "tokens": [
         {
@@ -131,7 +131,7 @@
     },
     {
       "target": "من امروز تیز نمی‌روم.",
-      "translit": "man emrōz tēz namērawam.",
+      "translit": "man imrōz tēz namērawam.",
       "en": "I do not go fast today.",
       "tokens": [
         {
@@ -210,7 +210,7 @@
     {
       "questionEn": "How am I today?",
       "questionTarget": "من امروز چطور هستم؟",
-      "questionTranslit": "man emrōz chetōr hastam?",
+      "questionTranslit": "man imrōz chitōr hastam?",
       "options": [
         {
           "target": "جور هستم",

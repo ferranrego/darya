@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "من امروز صبح کار زیاد دارم.",
-      "translit": "man emrōz subh kār ziyād dāram.",
+      "translit": "man imrōz subh kār ziyād dāram.",
       "en": "I have a lot of work this morning.",
       "tokens": [
         {
@@ -268,7 +268,7 @@
     {
       "questionEn": "What am I drinking now?",
       "questionTarget": "من حالا چه می‌خورم؟",
-      "questionTranslit": "man hālā che mēkhuram?",
+      "questionTranslit": "man hālā chi mēkhuram?",
       "options": [
         {
           "target": "نان",

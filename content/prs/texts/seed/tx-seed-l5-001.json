@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "سال گذشته بزرگان قریه یک جلسه گرفتند و درباره ساختن مکتب نو صحبت کردند.",
-      "translit": "sāl-e guzashta buzurgān-e qarya yak jalasa gereftand wa darbāra-ye sākhtan-e maktab-e naw suhbat kardand.",
+      "translit": "sāl-e guzashta buzurgān-e qarya yak jalasa giriftand wa darbāra-ye sākhtan-e maktab-e naw suhbat kardand.",
       "en": "Last year the village elders held a meeting and talked about building a new school.",
       "tokens": [
         {
@@ -71,7 +71,7 @@
     },
     {
       "target": "رئیس شورا گفت که مکتب قدیمی برای همه شاگردان خورد است.",
-      "translit": "ra'īs-e shōrā guft ki maktab-e qadīmī barā-ye hama-ye shāgerdān khurd ast.",
+      "translit": "ra'īs-e shōrā guft ki maktab-e qadīmī barā-ye hama-ye shāgirdān khurd ast.",
       "en": "The council head said that the old school is too small for all the students.",
       "tokens": [
         {
@@ -165,7 +165,7 @@
     },
     {
       "target": "دهقانی که زمین کنار سرک داشت، آن را برای مکتب داد.",
-      "translit": "dehqānē ki zamīn kinār-e sarak dāsht, ān rā barā-ye maktab dād.",
+      "translit": "dihqānē ki zamīn kinār-e sarak dāsht, ān rā barā-ye maktab dād.",
       "en": "A farmer who had land beside the road gave it for the school.",
       "tokens": [
         {
@@ -259,7 +259,7 @@
     },
     {
       "target": "سرانجام، بعد از چند ماه، مکتب نو برای شاگردان باز شد.",
-      "translit": "saranjām, ba'd az chand māh, maktab-e naw barā-ye shāgerdān bāz shud.",
+      "translit": "saranjām, ba'd az chand māh, maktab-e naw barā-ye shāgirdān bāz shud.",
       "en": "Finally, after a few months, the new school opened for the students.",
       "tokens": [
         {

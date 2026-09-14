@@ -101,7 +101,7 @@
     },
     {
       "target": "او به من یک کتاب می‌دهد.",
-      "translit": "ō ba man yak ketāb mēdihad.",
+      "translit": "ō ba man yak kitāb mēdihad.",
       "en": "He gives me a book.",
       "tokens": [
         {
@@ -155,7 +155,7 @@
     },
     {
       "target": "او بسیار مهربان است.",
-      "translit": "ō bisyār mehrabān ast.",
+      "translit": "ō bisyār mihrabān ast.",
       "en": "He is very kind.",
       "tokens": [
         {
@@ -224,7 +224,7 @@
         },
         {
           "target": "یک کتاب",
-          "translit": "yak ketāb",
+          "translit": "yak kitāb",
           "en": "A book"
         },
         {
@@ -240,11 +240,11 @@
     {
       "questionEn": "How is my friend?",
       "questionTarget": "دوست من چطور است؟",
-      "questionTranslit": "dōst-e man chetōr ast?",
+      "questionTranslit": "dōst-e man chitōr ast?",
       "options": [
         {
           "target": "بسیار مهربان",
-          "translit": "bisyār mehrabān",
+          "translit": "bisyār mihrabān",
           "en": "Very kind"
         },
         {

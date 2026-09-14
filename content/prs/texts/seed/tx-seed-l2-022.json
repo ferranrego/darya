@@ -138,11 +138,11 @@
     {
       "questionEn": "What does the guest steal?",
       "questionTarget": "مهمان چه می‌دزدد؟",
-      "questionTranslit": "mehmān che mēduzdad?",
+      "questionTranslit": "mihmān chi mēduzdad?",
       "options": [
         {
           "target": "بایسکل",
-          "translit": "bāyskel",
+          "translit": "bāyskil",
           "en": "A bicycle"
         },
         {
@@ -152,7 +152,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "A book"
         },
         {

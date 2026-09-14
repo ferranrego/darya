@@ -194,7 +194,7 @@
     {
       "questionEn": "How is the weather?",
       "questionTarget": "هوا چطور است؟",
-      "questionTranslit": "hawā chetōr ast?",
+      "questionTranslit": "hawā chitōr ast?",
       "options": [
         {
           "target": "گرم",
@@ -228,7 +228,7 @@
       "options": [
         {
           "target": "در کتاب",
-          "translit": "dar ketāb",
+          "translit": "dar kitāb",
           "en": "In a book"
         },
         {

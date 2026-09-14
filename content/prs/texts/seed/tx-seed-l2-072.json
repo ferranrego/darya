@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "مهمان ما",
-  "titleTranslit": "mehmān-e mā",
+  "titleTranslit": "mihmān-e mā",
   "titleEn": "Our guest",
   "sentences": [
     {
       "target": "امشب یک مهمان به خانه ما می‌آید.",
-      "translit": "emshab yak mehmān ba khāna-ye mā mēāyad.",
+      "translit": "imshab yak mihmān ba khāna-ye mā mēāyad.",
       "en": "Tonight a guest comes to our house.",
       "tokens": [
         {
@@ -74,7 +74,7 @@
     },
     {
       "target": "مهمان یک آهنگ می‌خواند.",
-      "translit": "mehmān yak āhang mēkhānad.",
+      "translit": "mihmān yak āhang mēkhānad.",
       "en": "The guest sings a song.",
       "tokens": [
         {
@@ -204,16 +204,16 @@
     {
       "questionEn": "What does the guest sing?",
       "questionTarget": "مهمان چه می‌خواند؟",
-      "questionTranslit": "mehmān chē mēkhānad?",
+      "questionTranslit": "mihmān chē mēkhānad?",
       "options": [
         {
           "target": "یک کتاب",
-          "translit": "yak ketāb",
+          "translit": "yak kitāb",
           "en": "A book"
         },
         {
           "target": "یک قصه",
-          "translit": "yak qessa",
+          "translit": "yak qissa",
           "en": "A story"
         },
         {

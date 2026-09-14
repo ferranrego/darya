@@ -3,7 +3,7 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "زندگی ما",
-  "titleTranslit": "zendagī-ye mā",
+  "titleTranslit": "zindagī-ye mā",
   "titleEn": "Our life",
   "sentences": [
     {
@@ -54,7 +54,7 @@
     },
     {
       "target": "زندگی خوب است.",
-      "translit": "zendagī khūb ast.",
+      "translit": "zindagī khūb ast.",
       "en": "Life is good.",
       "tokens": [
         {

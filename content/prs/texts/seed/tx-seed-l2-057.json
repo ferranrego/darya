@@ -39,7 +39,7 @@
     },
     {
       "target": "دری زبان مردم افغانستان است.",
-      "translit": "darī zabān-e mardum-e afghānestān ast.",
+      "translit": "darī zabān-e mardum-e afghānistān ast.",
       "en": "Dari is the language of the people of Afghanistan.",
       "tokens": [
         {
@@ -66,7 +66,7 @@
     },
     {
       "target": "شاگردان دری می‌خوانند و می‌نویسند.",
-      "translit": "shāgerdān darī mēkhānand wa mēnawīsand.",
+      "translit": "shāgirdān darī mēkhānand wa mēnawīsand.",
       "en": "The students read and write Dari.",
       "tokens": [
         {
@@ -196,7 +196,7 @@
         },
         {
           "target": "یک قصه",
-          "translit": "yak qessa",
+          "translit": "yak qissa",
           "en": "A story"
         },
         {
@@ -212,7 +212,7 @@
     {
       "questionEn": "What do the students do?",
       "questionTarget": "شاگردان چه می‌کنند؟",
-      "questionTranslit": "shāgerdān chē mēkunand?",
+      "questionTranslit": "shāgirdān chē mēkunand?",
       "options": [
         {
           "target": "بازی می‌کنند",
@@ -231,7 +231,7 @@
         },
         {
           "target": "قصه می‌گویند",
-          "translit": "qessa mēgōyand",
+          "translit": "qissa mēgōyand",
           "en": "They tell stories"
         }
       ],

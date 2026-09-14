@@ -180,7 +180,7 @@
     {
       "questionEn": "What does the lady send?",
       "questionTarget": "خانم چه می‌فرستد؟",
-      "questionTranslit": "khānum che mēfiristad?",
+      "questionTranslit": "khānum chi mēfiristad?",
       "options": [
         {
           "target": "یک نامه",
@@ -189,7 +189,7 @@
         },
         {
           "target": "یک کتاب",
-          "translit": "yak ketāb",
+          "translit": "yak kitāb",
           "en": "A book"
         },
         {
@@ -214,7 +214,7 @@
       "options": [
         {
           "target": "از معلم",
-          "translit": "az mu'allem",
+          "translit": "az mu'allim",
           "en": "From the teacher"
         },
         {

@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "امروز سر من درد می‌کند.",
-      "translit": "emrōz sar-e man dard mēkunad.",
+      "translit": "imrōz sar-e man dard mēkunad.",
       "en": "Today my head hurts.",
       "tokens": [
         {
@@ -124,7 +124,7 @@
     },
     {
       "target": "من امروز جور نیستم.",
-      "translit": "man emrōz jōr nēstam.",
+      "translit": "man imrōz jōr nēstam.",
       "en": "I am not well today.",
       "tokens": [
         {
@@ -172,7 +172,7 @@
     {
       "questionEn": "How is my head today?",
       "questionTarget": "سر من امروز چطور است؟",
-      "questionTranslit": "sar-e man emrōz chetōr ast?",
+      "questionTranslit": "sar-e man imrōz chitōr ast?",
       "options": [
         {
           "target": "درد می‌کند",

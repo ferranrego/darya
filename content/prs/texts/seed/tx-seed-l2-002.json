@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "زمستان کابل",
-  "titleTranslit": "zemestān-e kābul",
+  "titleTranslit": "zimistān-e kābul",
   "titleEn": "Kabul's winter",
   "sentences": [
     {
       "target": "زمستان کابل سرد است.",
-      "translit": "zemestān-e kābul sard ast.",
+      "translit": "zimistān-e kābul sard ast.",
       "en": "Kabul's winter is cold.",
       "tokens": [
         {
@@ -152,7 +152,7 @@
     {
       "questionEn": "What do people wear?",
       "questionTarget": "مردم چه می‌پوشند؟",
-      "questionTranslit": "mardum che mēpōshand?",
+      "questionTranslit": "mardum chi mēpōshand?",
       "options": [
         {
           "target": "لباس سفید",

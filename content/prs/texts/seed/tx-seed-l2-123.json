@@ -3,7 +3,7 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "قلم و کتاب",
-  "titleTranslit": "qalam wa ketāb",
+  "titleTranslit": "qalam wa kitāb",
   "titleEn": "Pen and book",
   "sentences": [
     {
@@ -120,7 +120,7 @@
     },
     {
       "target": "بعد او در صنف می‌نویسد.",
-      "translit": "ba'd ō dar senf mēnawīsad.",
+      "translit": "ba'd ō dar sinf mēnawīsad.",
       "en": "Afterwards he writes in the classroom.",
       "tokens": [
         {
@@ -147,7 +147,7 @@
     },
     {
       "target": "کتاب کهنه من هم خراب است.",
-      "translit": "ketāb-e kuhna-ye man ham kharāb ast.",
+      "translit": "kitāb-e kuhna-ye man ham kharāb ast.",
       "en": "My old book is broken too.",
       "tokens": [
         {

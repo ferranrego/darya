@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "تاجری که در بازار کابل دکان داشت، تصمیم گرفت کار خود را کلان‌تر کند.",
-      "translit": "tājirē ki dar bāzār-e kābul dukān dāsht, tasmīm gereft kār-e khud rā kalāntar kunad.",
+      "translit": "tājirē ki dar bāzār-e kābul dukān dāsht, tasmīm girift kār-e khud rā kalāntar kunad.",
       "en": "A trader who had a shop in Kabul's bazaar decided to expand his business.",
       "tokens": [
         {
@@ -71,7 +71,7 @@
     },
     {
       "target": "دوستان او گفتند که این کار خطر دارد و ممکن است ضرر کند.",
-      "translit": "dōstān-e ō guftand ki īn kār khatar dārad wa mumken ast zarar kunad.",
+      "translit": "dōstān-e ō guftand ki īn kār khatar dārad wa mumkin ast zarar kunad.",
       "en": "His friends said that this was risky and he might suffer a loss.",
       "tokens": [
         {
@@ -130,7 +130,7 @@
     },
     {
       "target": "اما او فکر کرد که باید دل به دریا بزند.",
-      "translit": "ammā ō fikr kard ki bāyad dil ba daryā bezanad.",
+      "translit": "ammā ō fikr kard ki bāyad dil ba daryā buzanad.",
       "en": "But he thought that he had to take the plunge.",
       "tokens": [
         {
@@ -177,7 +177,7 @@
     },
     {
       "target": "او با یک تاجر دیگر در هرات موافقت کرد که با هم کار کنند.",
-      "translit": "ō bā yak tājir-e dīgar dar herāt muwāfiqat kard ki bā ham kār kunand.",
+      "translit": "ō bā yak tājir-e dīgar dar hirāt muwāfiqat kard ki bā ham kār kunand.",
       "en": "He agreed with another trader in Herat that they would work together.",
       "tokens": [
         {

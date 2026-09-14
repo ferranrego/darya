@@ -176,7 +176,7 @@
     {
       "questionEn": "How do I go to the exam?",
       "questionTarget": "من چطور به امتحان می‌روم؟",
-      "questionTranslit": "man chetōr ba imtihān mērawam?",
+      "questionTranslit": "man chitōr ba imtihān mērawam?",
       "options": [
         {
           "target": "با بس",
@@ -185,7 +185,7 @@
         },
         {
           "target": "با بایسکل",
-          "translit": "bā bāyskel",
+          "translit": "bā bāyskil",
           "en": "By bicycle"
         },
         {

@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "پدرم در خانه می‌نشیند.",
-      "translit": "padaram dar khāna mēneshīnad.",
+      "translit": "padaram dar khāna mēnishīnad.",
       "en": "My father sits at home.",
       "tokens": [
         {
@@ -187,7 +187,7 @@
     {
       "questionEn": "Where does my father sit?",
       "questionTarget": "پدرم کجا می‌نشیند؟",
-      "questionTranslit": "padar-am kujā mēneshīnad?",
+      "questionTranslit": "padar-am kujā mēnishīnad?",
       "options": [
         {
           "target": "در باغ",
@@ -217,7 +217,7 @@
     {
       "questionEn": "How is my father now?",
       "questionTarget": "حالا پدرم چطور است؟",
-      "questionTranslit": "hālā padar-am chetōr ast?",
+      "questionTranslit": "hālā padar-am chitōr ast?",
       "options": [
         {
           "target": "مریض",

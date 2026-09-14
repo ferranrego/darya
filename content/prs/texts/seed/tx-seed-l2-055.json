@@ -31,7 +31,7 @@
     },
     {
       "target": "امروز هوا بسیار سرد است.",
-      "translit": "emrōz hawā bisyār sard ast.",
+      "translit": "imrōz hawā bisyār sard ast.",
       "en": "Today the weather is very cold.",
       "tokens": [
         {
@@ -191,7 +191,7 @@
     {
       "questionEn": "How are my old clothes?",
       "questionTarget": "لباس کهنه من چطور است؟",
-      "questionTranslit": "libās-e kuhna-ye man chetōr ast?",
+      "questionTranslit": "libās-e kuhna-ye man chitōr ast?",
       "options": [
         {
           "target": "سبز",
@@ -221,7 +221,7 @@
     {
       "questionEn": "What does my sister buy?",
       "questionTarget": "خواهر من چه می‌خرد؟",
-      "questionTranslit": "khāhar-e man che mēkharad?",
+      "questionTranslit": "khāhar-e man chi mēkharad?",
       "options": [
         {
           "target": "لباس کهنه",

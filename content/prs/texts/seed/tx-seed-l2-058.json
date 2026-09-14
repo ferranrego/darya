@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "افغانستان کشور من است.",
-      "translit": "afghānestān kishwar-e man ast.",
+      "translit": "afghānistān kishwar-e man ast.",
       "en": "Afghanistan is my country.",
       "tokens": [
         {
@@ -198,7 +198,7 @@
     {
       "questionEn": "How is my school?",
       "questionTarget": "مکتب من چطور است؟",
-      "questionTranslit": "maktab-e man chetōr ast?",
+      "questionTranslit": "maktab-e man chitōr ast?",
       "options": [
         {
           "target": "کلان",
@@ -228,7 +228,7 @@
     {
       "questionEn": "What do I see every day?",
       "questionTarget": "من هر روز چه می‌بینم؟",
-      "questionTranslit": "man har rōz che mēbīnam?",
+      "questionTranslit": "man har rōz chi mēbīnam?",
       "options": [
         {
           "target": "این سرک",

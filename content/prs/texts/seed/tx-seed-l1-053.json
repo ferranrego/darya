@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "معلم و شاگرد",
-  "titleTranslit": "mu'allem wa shāgerd",
+  "titleTranslit": "mu'allim wa shāgird",
   "titleEn": "Teacher and student",
   "sentences": [
     {
       "target": "معلم ما اینجا است.",
-      "translit": "mu'allem-e mā īnjā ast.",
+      "translit": "mu'allim-e mā īnjā ast.",
       "en": "Our teacher is here.",
       "tokens": [
         {
@@ -31,7 +31,7 @@
     },
     {
       "target": "هر شاگرد یک کتاب دارد.",
-      "translit": "har shāgerd yak ketāb dārad.",
+      "translit": "har shāgird yak kitāb dārad.",
       "en": "Every student has a book.",
       "tokens": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "target": "معلم به شاگرد درس می‌دهد.",
-      "translit": "mu'allem ba shāgerd dars mēdihad.",
+      "translit": "mu'allim ba shāgird dars mēdihad.",
       "en": "The teacher gives the student a lesson.",
       "tokens": [
         {
@@ -85,7 +85,7 @@
     },
     {
       "target": "شاگرد خوب می‌خواند.",
-      "translit": "shāgerd khūb mēkhānad.",
+      "translit": "shāgird khūb mēkhānad.",
       "en": "The student reads well.",
       "tokens": [
         {
@@ -104,7 +104,7 @@
     },
     {
       "target": "همه شاگردان خوش هستند.",
-      "translit": "hama shāgerdān khush hastand.",
+      "translit": "hama shāgirdān khush hastand.",
       "en": "All the students are happy.",
       "tokens": [
         {

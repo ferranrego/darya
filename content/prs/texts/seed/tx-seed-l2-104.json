@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "مزار یک شهر مشهور افغانستان است.",
-      "translit": "mazār yak shahr-e mash'hūr-e afghānestān ast.",
+      "translit": "mazār yak shahr-e mash'hūr-e afghānistān ast.",
       "en": "Mazar is a famous city of Afghanistan.",
       "tokens": [
         {
@@ -140,7 +140,7 @@
     },
     {
       "target": "این شهر در تاریخ افغانستان مشهور است.",
-      "translit": "īn shahr dar tārīkh-e afghānestān mash'hūr ast.",
+      "translit": "īn shahr dar tārīkh-e afghānistān mash'hūr ast.",
       "en": "This city is famous in the history of Afghanistan.",
       "tokens": [
         {

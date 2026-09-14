@@ -200,7 +200,7 @@
     {
       "questionEn": "What does the government grant to the people?",
       "questionTarget": "دولت به مردم چه می‌بخشد؟",
-      "questionTranslit": "dawlat ba mardum che mēbakhshad?",
+      "questionTranslit": "dawlat ba mardum chi mēbakhshad?",
       "options": [
         {
           "target": "پول",
@@ -239,7 +239,7 @@
         },
         {
           "target": "به معلم",
-          "translit": "ba mu'allem",
+          "translit": "ba mu'allim",
           "en": "The teacher"
         },
         {

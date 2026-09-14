@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L3",
   "titleTarget": "سفر به هرات",
-  "titleTranslit": "safar ba herāt",
+  "titleTranslit": "safar ba hirāt",
   "titleEn": "A trip to Herat",
   "sentences": [
     {
       "target": "ما به هرات سفر کردیم.",
-      "translit": "mā ba herāt safar kardēm.",
+      "translit": "mā ba hirāt safar kardēm.",
       "en": "We traveled to Herat.",
       "tokens": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "هرات شهر قدیمی است.",
-      "translit": "herāt shahr-e qadīmī ast.",
+      "translit": "hirāt shahr-e qadīmī ast.",
       "en": "Herat is an ancient city.",
       "tokens": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "target": "انگور هرات مشهور است.",
-      "translit": "angūr-e herāt mash'hūr ast.",
+      "translit": "angūr-e hirāt mash'hūr ast.",
       "en": "Herat's grapes are famous.",
       "tokens": [
         {
@@ -81,7 +81,7 @@
     },
     {
       "target": "مردم آنجا مهربان هستند.",
-      "translit": "mardum-e ānjā mehrabān hastand.",
+      "translit": "mardum-e ānjā mihrabān hastand.",
       "en": "The people there are kind.",
       "tokens": [
         {

@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "کابل پایتخت افغانستان است.",
-      "translit": "kābul pāytakht-e afghānestān ast.",
+      "translit": "kābul pāytakht-e afghānistān ast.",
       "en": "Kabul is the capital of Afghanistan.",
       "tokens": [
         {
@@ -31,7 +31,7 @@
     },
     {
       "target": "امروز هوا بسیار سرد است.",
-      "translit": "emrōz hawā bisyār sard ast.",
+      "translit": "imrōz hawā bisyār sard ast.",
       "en": "Today the weather is very cold.",
       "tokens": [
         {
@@ -165,7 +165,7 @@
     {
       "questionEn": "What does this country have a lot of?",
       "questionTarget": "این کشور چه زیاد دارد؟",
-      "questionTranslit": "īn kishwar che ziyād dārad?",
+      "questionTranslit": "īn kishwar chi ziyād dārad?",
       "options": [
         {
           "target": "دریا",
@@ -195,7 +195,7 @@
     {
       "questionEn": "What do I like?",
       "questionTarget": "من چه دوست دارم؟",
-      "questionTranslit": "man che dōst dāram?",
+      "questionTranslit": "man chi dōst dāram?",
       "options": [
         {
           "target": "برف",

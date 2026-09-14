@@ -153,7 +153,7 @@
     {
       "questionEn": "What does my father buy?",
       "questionTarget": "پدرم چه می‌خرد؟",
-      "questionTranslit": "padar-am che mēkharad?",
+      "questionTranslit": "padar-am chi mēkharad?",
       "options": [
         {
           "target": "نان و شیر",
@@ -162,7 +162,7 @@
         },
         {
           "target": "گوشت و برنج",
-          "translit": "gōsht wa berenj",
+          "translit": "gōsht wa birinj",
           "en": "Meat and rice"
         },
         {
@@ -172,7 +172,7 @@
         },
         {
           "target": "کتاب و قلم",
-          "translit": "ketāb wa qalam",
+          "translit": "kitāb wa qalam",
           "en": "A book and a pen"
         }
       ],
@@ -183,7 +183,7 @@
     {
       "questionEn": "What is cheap?",
       "questionTarget": "چه ارزان است؟",
-      "questionTranslit": "che arzān ast?",
+      "questionTranslit": "chi arzān ast?",
       "options": [
         {
           "target": "انار و سیب",

@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "پسر مانده است.",
-      "translit": "pesar mānda ast.",
+      "translit": "pisar mānda ast.",
       "en": "The boy is tired.",
       "tokens": [
         {
@@ -27,7 +27,7 @@
     },
     {
       "target": "مادر جواب می‌دهد.",
-      "translit": "mādar jawāb mēdehad.",
+      "translit": "mādar jawāb mēdihad.",
       "en": "The mother answers.",
       "tokens": [
         {
@@ -65,7 +65,7 @@
     },
     {
       "target": "معلم می‌پرسد.",
-      "translit": "mu'allem mēpursad.",
+      "translit": "mu'allim mēpursad.",
       "en": "The teacher asks.",
       "tokens": [
         {
@@ -104,7 +104,7 @@
     {
       "questionEn": "How is the music?",
       "questionTarget": "موسیقی چطور است؟",
-      "questionTranslit": "mōsīqī chetōr ast?",
+      "questionTranslit": "mōsīqī chitōr ast?",
       "options": [
         {
           "target": "بد",
@@ -134,7 +134,7 @@
     {
       "questionEn": "Who answers?",
       "questionTarget": "کی جواب می‌دهد؟",
-      "questionTranslit": "kī jawāb mēdehad?",
+      "questionTranslit": "kī jawāb mēdihad?",
       "options": [
         {
           "target": "پدر",
@@ -143,7 +143,7 @@
         },
         {
           "target": "معلم",
-          "translit": "mu'allem",
+          "translit": "mu'allim",
           "en": "The teacher"
         },
         {
@@ -153,7 +153,7 @@
         },
         {
           "target": "پسر",
-          "translit": "pesar",
+          "translit": "pisar",
           "en": "The boy"
         }
       ],

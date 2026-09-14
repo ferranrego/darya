@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "دوست من شاگرد است.",
-      "translit": "dōst-e man shāgerd ast.",
+      "translit": "dōst-e man shāgird ast.",
       "en": "My friend is a student.",
       "tokens": [
         {
@@ -81,7 +81,7 @@
     },
     {
       "target": "او کتاب می‌خواند.",
-      "translit": "ō ketāb mēkhānad.",
+      "translit": "ō kitāb mēkhānad.",
       "en": "He reads a book.",
       "tokens": [
         {
@@ -131,7 +131,7 @@
       "options": [
         {
           "target": "معلم",
-          "translit": "mu'allem",
+          "translit": "mu'allim",
           "en": "A teacher"
         },
         {
@@ -141,12 +141,12 @@
         },
         {
           "target": "شاگرد",
-          "translit": "shāgerd",
+          "translit": "shāgird",
           "en": "A student"
         },
         {
           "target": "دهقان",
-          "translit": "dehqān",
+          "translit": "dihqān",
           "en": "A farmer"
         }
       ],
@@ -157,7 +157,7 @@
     {
       "questionEn": "What do we drink together?",
       "questionTarget": "ما چه می‌خوریم؟",
-      "questionTranslit": "mā che mēkhurēm?",
+      "questionTranslit": "mā chi mēkhurēm?",
       "options": [
         {
           "target": "نان",

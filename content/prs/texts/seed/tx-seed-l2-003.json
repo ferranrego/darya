@@ -31,7 +31,7 @@
     },
     {
       "target": "پدرکلانم قصه می‌گوید.",
-      "translit": "padarkalānam qessa mēgōyad.",
+      "translit": "padarkalānam qissa mēgōyad.",
       "en": "My grandfather tells stories.",
       "tokens": [
         {
@@ -175,12 +175,12 @@
         },
         {
           "target": "قصه می‌گوید",
-          "translit": "qessa mēgōyad",
+          "translit": "qissa mēgōyad",
           "en": "He tells stories"
         },
         {
           "target": "کتاب می‌خواند",
-          "translit": "ketāb mēkhānad",
+          "translit": "kitāb mēkhānad",
           "en": "He reads a book"
         },
         {

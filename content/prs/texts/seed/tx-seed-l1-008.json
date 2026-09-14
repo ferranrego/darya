@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "امروز هوا سرد است.",
-      "translit": "emrōz hawā sard ast.",
+      "translit": "imrōz hawā sard ast.",
       "en": "Today the weather is cold.",
       "tokens": [
         {
@@ -139,7 +139,7 @@
     {
       "questionEn": "What is falling?",
       "questionTarget": "چه می‌بارد؟",
-      "questionTranslit": "che mēbārad?",
+      "questionTranslit": "chi mēbārad?",
       "options": [
         {
           "target": "باران",
@@ -169,7 +169,7 @@
     {
       "questionEn": "What do I bring?",
       "questionTarget": "من چه می‌آورم؟",
-      "questionTranslit": "man che mēāwaram?",
+      "questionTranslit": "man chi mēāwaram?",
       "options": [
         {
           "target": "آب گرم",

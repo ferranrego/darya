@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "پایتخت افغانستان",
-  "titleTranslit": "pāytakht-e afghānestān",
+  "titleTranslit": "pāytakht-e afghānistān",
   "titleEn": "The capital of Afghanistan",
   "sentences": [
     {
       "target": "کابل پایتخت افغانستان است.",
-      "translit": "kābul pāytakht-e afghānestān ast.",
+      "translit": "kābul pāytakht-e afghānistān ast.",
       "en": "Kabul is the capital of Afghanistan.",
       "tokens": [
         {

@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "زمستان",
-  "titleTranslit": "zemestān",
+  "titleTranslit": "zimistān",
   "titleEn": "Winter",
   "sentences": [
     {
       "target": "الان زمستان است و هوا سرد است.",
-      "translit": "al'ān zemestān ast wa hawā sard ast.",
+      "translit": "al'ān zimistān ast wa hawā sard ast.",
       "en": "Now it is winter and the weather is cold.",
       "tokens": [
         {
@@ -143,7 +143,7 @@
     },
     {
       "target": "در زمستان کسی در کوچه نیست.",
-      "translit": "dar zemestān kasē dar kōcha nēst.",
+      "translit": "dar zimistān kasē dar kōcha nēst.",
       "en": "In winter there is nobody in the alley.",
       "tokens": [
         {

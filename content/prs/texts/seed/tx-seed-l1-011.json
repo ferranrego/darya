@@ -27,7 +27,7 @@
     },
     {
       "target": "پسر شیر می‌برد.",
-      "translit": "pesar shīr mēbarad.",
+      "translit": "pisar shīr mēbarad.",
       "en": "The boy carries milk.",
       "tokens": [
         {
@@ -106,7 +106,7 @@
     {
       "questionEn": "What does the mother buy?",
       "questionTarget": "مادر چه می‌خرد؟",
-      "questionTranslit": "mādar che mēkharad?",
+      "questionTranslit": "mādar chi mēkharad?",
       "options": [
         {
           "target": "شیر",
@@ -136,7 +136,7 @@
     {
       "questionEn": "What does the boy carry?",
       "questionTarget": "پسر چه می‌برد؟",
-      "questionTranslit": "pesar che mēbarad?",
+      "questionTranslit": "pisar chi mēbarad?",
       "options": [
         {
           "target": "گوشت",

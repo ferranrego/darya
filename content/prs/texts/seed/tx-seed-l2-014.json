@@ -3,7 +3,7 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "آدم زنده",
-  "titleTranslit": "ādam-e zenda",
+  "titleTranslit": "ādam-e zinda",
   "titleEn": "Alive person",
   "sentences": [
     {
@@ -138,7 +138,7 @@
     {
       "questionEn": "What must an alive person do?",
       "questionTarget": "آدم زنده باید چه کند؟",
-      "questionTranslit": "ādam-e zinda bāyad che kunad?",
+      "questionTranslit": "ādam-e zinda bāyad chi kunad?",
       "options": [
         {
           "target": "کار کند",
@@ -168,7 +168,7 @@
     {
       "questionEn": "What is better, really?",
       "questionTarget": "واقعاً چه بهتر است؟",
-      "questionTranslit": "wāqi'an che bihtar ast?",
+      "questionTranslit": "wāqi'an chi bihtar ast?",
       "options": [
         {
           "target": "خانه",

@@ -184,7 +184,7 @@
     {
       "questionEn": "What do I take for your sake?",
       "questionTarget": "من به خاطر تو چه می‌گیرم؟",
-      "questionTranslit": "man ba khātir-e tu che mēgīram?",
+      "questionTranslit": "man ba khātir-e tu chi mēgīram?",
       "options": [
         {
           "target": "یک عکس",
@@ -193,7 +193,7 @@
         },
         {
           "target": "یک کتاب",
-          "translit": "yak ketāb",
+          "translit": "yak kitāb",
           "en": "A book"
         },
         {
@@ -214,7 +214,7 @@
     {
       "questionEn": "How is this photo?",
       "questionTarget": "این عکس چطور است؟",
-      "questionTranslit": "īn aks chetōr ast?",
+      "questionTranslit": "īn aks chitōr ast?",
       "options": [
         {
           "target": "تاریک",

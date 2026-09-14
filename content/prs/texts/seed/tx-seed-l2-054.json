@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "امروز سال نو است.",
-      "translit": "emrōz sāl-e naw ast.",
+      "translit": "imrōz sāl-e naw ast.",
       "en": "Today is the new year.",
       "tokens": [
         {
@@ -171,7 +171,7 @@
     {
       "questionEn": "What is today?",
       "questionTarget": "امروز چه است؟",
-      "questionTranslit": "emrōz chē ast?",
+      "questionTranslit": "imrōz chē ast?",
       "options": [
         {
           "target": "سال کهنه",
@@ -205,7 +205,7 @@
       "options": [
         {
           "target": "کتاب نو",
-          "translit": "ketāb-e naw",
+          "translit": "kitāb-e naw",
           "en": "New books"
         },
         {

@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "امروز باران می‌بارد.",
-      "translit": "emrōz bārān mēbārad.",
+      "translit": "imrōz bārān mēbārad.",
       "en": "Today rain falls.",
       "tokens": [
         {
@@ -73,7 +73,7 @@
     },
     {
       "target": "من از کلکین می‌بینم.",
-      "translit": "man az kelkīn mēbīnam.",
+      "translit": "man az kilkīn mēbīnam.",
       "en": "I look from the window.",
       "tokens": [
         {

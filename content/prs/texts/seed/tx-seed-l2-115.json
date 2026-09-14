@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "معلم ما",
-  "titleTranslit": "mu'allem-e mā",
+  "titleTranslit": "mu'allim-e mā",
   "titleEn": "Our teacher",
   "sentences": [
     {
       "target": "معلم ما آرام است و صبر دارد.",
-      "translit": "mu'allem-e mā ārām ast wa sabr dārad.",
+      "translit": "mu'allim-e mā ārām ast wa sabr dārad.",
       "en": "Our teacher is calm and has patience.",
       "tokens": [
         {
@@ -43,7 +43,7 @@
     },
     {
       "target": "بعد از زنگ او به صنف می‌آید.",
-      "translit": "ba'd az zang ō ba senf mēāyad.",
+      "translit": "ba'd az zang ō ba sinf mēāyad.",
       "en": "After the bell he comes to the classroom.",
       "tokens": [
         {
@@ -105,7 +105,7 @@
     },
     {
       "target": "ما همه به معلم گوش می‌کنیم.",
-      "translit": "mā hama ba mu'allem gōsh mēkunēm.",
+      "translit": "mā hama ba mu'allim gōsh mēkunēm.",
       "en": "We all listen to the teacher.",
       "tokens": [
         {
@@ -136,7 +136,7 @@
     },
     {
       "target": "البته شاگردان خوب گوش می‌کنند.",
-      "translit": "albatta shāgerdān khūb gōsh mēkunand.",
+      "translit": "albatta shāgirdān khūb gōsh mēkunand.",
       "en": "Of course the pupils listen well.",
       "tokens": [
         {

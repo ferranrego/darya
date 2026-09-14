@@ -105,7 +105,7 @@
     },
     {
       "target": "زن برادر من معلم است.",
-      "translit": "zan-e barādar-e man mu'allem ast.",
+      "translit": "zan-e barādar-e man mu'allim ast.",
       "en": "My brother's wife is a teacher.",
       "tokens": [
         {
@@ -132,7 +132,7 @@
     },
     {
       "target": "او یک زن مهربان است.",
-      "translit": "ō yak zan-e mehrabān ast.",
+      "translit": "ō yak zan-e mihrabān ast.",
       "en": "She is a kind woman.",
       "tokens": [
         {
@@ -226,7 +226,7 @@
     {
       "questionEn": "What is my brother's wife's job?",
       "questionTarget": "زن برادر من چه کاره است؟",
-      "questionTranslit": "zan-e barādar-e man che kāra ast?",
+      "questionTranslit": "zan-e barādar-e man chi kāra ast?",
       "options": [
         {
           "target": "مدیر",
@@ -240,7 +240,7 @@
         },
         {
           "target": "معلم",
-          "translit": "mu'allem",
+          "translit": "mu'allim",
           "en": "A teacher"
         },
         {
@@ -256,7 +256,7 @@
     {
       "questionEn": "What do we eat together every night?",
       "questionTarget": "ما هر شب با هم چه می‌خوریم؟",
-      "questionTranslit": "mā har shab bā ham che mēkhurēm?",
+      "questionTranslit": "mā har shab bā ham chi mēkhurēm?",
       "options": [
         {
           "target": "نان",

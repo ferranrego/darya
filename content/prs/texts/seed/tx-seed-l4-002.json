@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L4",
   "titleTarget": "باغ در تابستان",
-  "titleTranslit": "bāgh dar tābestān",
+  "titleTranslit": "bāgh dar tābistān",
   "titleEn": "The garden in summer",
   "sentences": [
     {
       "target": "تابستان در قریه ما گرم و آفتابی است.",
-      "translit": "tābestān dar qarya-ye mā garm wa āftābī ast.",
+      "translit": "tābistān dar qarya-ye mā garm wa āftābī ast.",
       "en": "Summer in our village is hot and sunny.",
       "tokens": [
         {
@@ -86,7 +86,7 @@
     },
     {
       "target": "اگر باران کم ببارد، میوه‌ها زودتر می‌رسند.",
-      "translit": "agar bārān kam bebārad, mēwa-hā zūdtar mērasand.",
+      "translit": "agar bārān kam bubārad, mēwa-hā zūdtar mērasand.",
       "en": "If little rain falls, the fruits ripen sooner.",
       "tokens": [
         {
@@ -121,7 +121,7 @@
     },
     {
       "target": "دهقانی که این باغ را دارد، هر روز به آن آب می‌دهد.",
-      "translit": "dehqānē ki īn bāgh rā dārad, har rōz ba ān āb mēdehad.",
+      "translit": "dihqānē ki īn bāgh rā dārad, har rōz ba ān āb mēdihad.",
       "en": "The farmer who owns this garden waters it every day.",
       "tokens": [
         {

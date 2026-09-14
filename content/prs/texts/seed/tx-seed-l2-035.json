@@ -160,7 +160,7 @@
     {
       "questionEn": "What does the tailor sew?",
       "questionTarget": "خیاط چه می‌دوزد؟",
-      "questionTranslit": "khayyāt che mēdōzad?",
+      "questionTranslit": "khayyāt chi mēdōzad?",
       "options": [
         {
           "target": "خریطه‌ها",
@@ -174,7 +174,7 @@
         },
         {
           "target": "لباس‌های زمستانی",
-          "translit": "libās-hā-ye zemestānī",
+          "translit": "libās-hā-ye zimistānī",
           "en": "Winter clothes"
         },
         {

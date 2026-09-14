@@ -140,7 +140,7 @@
     {
       "questionEn": "How are the streets of Kabul?",
       "questionTarget": "سرک‌های کابل چطور است؟",
-      "questionTranslit": "sarak-hā-ye kābul chetōr ast?",
+      "questionTranslit": "sarak-hā-ye kābul chitōr ast?",
       "options": [
         {
           "target": "بسیار بیروبار",
@@ -170,11 +170,11 @@
     {
       "questionEn": "What does the traffic police stop?",
       "questionTarget": "ترافیک چه ایستاد می‌کند؟",
-      "questionTranslit": "tarāfīk che īstād mēkunad?",
+      "questionTranslit": "tarāfīk chi īstād mēkunad?",
       "options": [
         {
           "target": "بایسکل‌ها",
-          "translit": "bāyskel-hā",
+          "translit": "bāyskil-hā",
           "en": "The bicycles"
         },
         {

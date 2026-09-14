@@ -70,7 +70,7 @@
     },
     {
       "target": "مادر او یک زن مهربان است.",
-      "translit": "mādar-e ō yak zan-e mehrabān ast.",
+      "translit": "mādar-e ō yak zan-e mihrabān ast.",
       "en": "Her mother is a kind woman.",
       "tokens": [
         {
@@ -225,7 +225,7 @@
     {
       "questionEn": "When do I see her?",
       "questionTarget": "من او را چه وقت می‌بینم؟",
-      "questionTranslit": "man ō rā che waqt mēbīnam?",
+      "questionTranslit": "man ō rā chi waqt mēbīnam?",
       "options": [
         {
           "target": "هر شب",

@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "بایسکل من",
-  "titleTranslit": "bāyskel-e man",
+  "titleTranslit": "bāyskil-e man",
   "titleEn": "My bicycle",
   "sentences": [
     {
       "target": "من یک بایسکل نو دارم.",
-      "translit": "man yak bāyskel-e naw dāram.",
+      "translit": "man yak bāyskil-e naw dāram.",
       "en": "I have a new bicycle.",
       "tokens": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "بایسکل من سبز و خورد است.",
-      "translit": "bāyskel-e man sabz wa khurd ast.",
+      "translit": "bāyskil-e man sabz wa khurd ast.",
       "en": "My bicycle is green and small.",
       "tokens": [
         {
@@ -66,7 +66,7 @@
     },
     {
       "target": "من هر روز با بایسکل به مکتب می‌روم.",
-      "translit": "man har rōz bā bāyskel ba maktab mērawam.",
+      "translit": "man har rōz bā bāyskil ba maktab mērawam.",
       "en": "Every day I go to school by bicycle.",
       "tokens": [
         {
@@ -132,7 +132,7 @@
     },
     {
       "target": "من بایسکل را پیش دروازه می‌گذارم.",
-      "translit": "man bāyskel rā pēsh-e darwāza mēguzāram.",
+      "translit": "man bāyskil rā pēsh-e darwāza mēguzāram.",
       "en": "I put the bicycle in front of the door.",
       "tokens": [
         {

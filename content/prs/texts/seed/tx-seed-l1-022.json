@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "پسر خوش است.",
-      "translit": "pesar khush ast.",
+      "translit": "pisar khush ast.",
       "en": "The boy is happy.",
       "tokens": [
         {
@@ -135,7 +135,7 @@
     {
       "questionEn": "How is the boy?",
       "questionTarget": "پسر چطور است؟",
-      "questionTranslit": "pesar chetōr ast?",
+      "questionTranslit": "pisar chitōr ast?",
       "options": [
         {
           "target": "خوش",

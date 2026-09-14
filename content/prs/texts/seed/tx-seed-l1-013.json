@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "من یک کتاب می‌یابم.",
-      "translit": "man yak ketāb mēyābam.",
+      "translit": "man yak kitāb mēyābam.",
       "en": "I find a book.",
       "tokens": [
         {
@@ -73,7 +73,7 @@
     },
     {
       "target": "پسر درس می‌خواند.",
-      "translit": "pesar dars mēkhānad.",
+      "translit": "pisar dars mēkhānad.",
       "en": "The boy studies the lesson.",
       "tokens": [
         {
@@ -152,7 +152,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "Books"
         },
         {
@@ -177,7 +177,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "The book"
         },
         {

@@ -148,7 +148,7 @@
     {
       "questionEn": "What drips from the roof of our house?",
       "questionTarget": "از سقف خانه ما چه می‌چکد؟",
-      "questionTranslit": "az saqf-e khāna-ye mā che mēchakad?",
+      "questionTranslit": "az saqf-e khāna-ye mā chi mēchakad?",
       "options": [
         {
           "target": "برف",
@@ -178,21 +178,21 @@
     {
       "questionEn": "When will the work be finished?",
       "questionTarget": "کار چه وقت تمام می‌شود؟",
-      "questionTranslit": "kār che waqt tamām mēshawad?",
+      "questionTranslit": "kār chi waqt tamām mēshawad?",
       "options": [
         {
           "target": "پیش از زمستان",
-          "translit": "pēsh az zemestān",
+          "translit": "pēsh az zimistān",
           "en": "Before winter"
         },
         {
           "target": "پیش از تابستان",
-          "translit": "pēsh az tābestān",
+          "translit": "pēsh az tābistān",
           "en": "Before summer"
         },
         {
           "target": "امروز",
-          "translit": "emrōz",
+          "translit": "imrōz",
           "en": "Today"
         },
         {

@@ -135,7 +135,7 @@
     {
       "questionEn": "What do I want?",
       "questionTarget": "من چه می‌خواهم؟",
-      "questionTranslit": "man che mēkhāham?",
+      "questionTranslit": "man chi mēkhāham?",
       "options": [
         {
           "target": "یک سیب",
@@ -154,7 +154,7 @@
         },
         {
           "target": "یک کتاب",
-          "translit": "yak ketāb",
+          "translit": "yak kitāb",
           "en": "A book"
         }
       ],
@@ -165,7 +165,7 @@
     {
       "questionEn": "What does the company buy?",
       "questionTarget": "شرکت چه می‌خرد؟",
-      "questionTranslit": "shirkat che mēkharad?",
+      "questionTranslit": "shirkat chi mēkharad?",
       "options": [
         {
           "target": "سیب",

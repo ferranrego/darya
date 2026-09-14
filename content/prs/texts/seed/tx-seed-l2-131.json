@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "نان و برنج",
-  "titleTranslit": "nān wa berenj",
+  "titleTranslit": "nān wa birinj",
   "titleEn": "Bread and rice",
   "sentences": [
     {
       "target": "مادر من برنج می‌پزد.",
-      "translit": "mādar-e man berenj mēpazad.",
+      "translit": "mādar-e man birinj mēpazad.",
       "en": "My mother cooks rice.",
       "tokens": [
         {
@@ -31,7 +31,7 @@
     },
     {
       "target": "برنج با گوشت بسیار خوب است.",
-      "translit": "berenj bā gōsht bisyār khūb ast.",
+      "translit": "birinj bā gōsht bisyār khūb ast.",
       "en": "Rice with meat is very good.",
       "tokens": [
         {
@@ -108,7 +108,7 @@
     },
     {
       "target": "برنج امروز شیرین نیست.",
-      "translit": "berenj emrōz shīrīn nēst.",
+      "translit": "birinj imrōz shīrīn nēst.",
       "en": "The rice is not sweet today.",
       "tokens": [
         {

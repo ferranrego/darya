@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "پسر",
-  "titleTranslit": "pesar",
+  "titleTranslit": "pisar",
   "titleEn": "The boy",
   "sentences": [
     {
       "target": "پسر کلان می‌شود.",
-      "translit": "pesar kalān mēshawad.",
+      "translit": "pisar kalān mēshawad.",
       "en": "The boy becomes big.",
       "tokens": [
         {
@@ -27,7 +27,7 @@
     },
     {
       "target": "پدر به پسر نان می‌دهد.",
-      "translit": "padar ba pesar nān mēdehad.",
+      "translit": "padar ba pisar nān mēdihad.",
       "en": "The father gives bread to the boy.",
       "tokens": [
         {
@@ -77,7 +77,7 @@
     },
     {
       "target": "پسر کتاب می‌گیرد.",
-      "translit": "pesar ketāb mēgīrad.",
+      "translit": "pisar kitāb mēgīrad.",
       "en": "The boy takes the book.",
       "tokens": [
         {
@@ -122,7 +122,7 @@
     {
       "questionEn": "What does the father give the boy?",
       "questionTarget": "پدر به پسر چه می‌دهد؟",
-      "questionTranslit": "padar ba pesar che mēdehad?",
+      "questionTranslit": "padar ba pisar chi mēdihad?",
       "options": [
         {
           "target": "آب",
@@ -136,7 +136,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "A book"
         },
         {
@@ -152,7 +152,7 @@
     {
       "questionEn": "What does the boy take?",
       "questionTarget": "پسر چه می‌گیرد؟",
-      "questionTranslit": "pesar che mēgīrad?",
+      "questionTranslit": "pisar chi mēgīrad?",
       "options": [
         {
           "target": "قلم",
@@ -166,7 +166,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "The book"
         },
         {

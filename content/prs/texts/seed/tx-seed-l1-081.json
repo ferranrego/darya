@@ -85,7 +85,7 @@
     },
     {
       "target": "معلم نام من می‌داند.",
-      "translit": "mu'allem nām-e man mēdānad.",
+      "translit": "mu'allim nām-e man mēdānad.",
       "en": "The teacher knows my name.",
       "tokens": [
         {
@@ -108,7 +108,7 @@
     },
     {
       "target": "هر شاگرد یک نام دارد.",
-      "translit": "har shāgerd yak nām dārad.",
+      "translit": "har shāgird yak nām dārad.",
       "en": "Every student has a name.",
       "tokens": [
         {

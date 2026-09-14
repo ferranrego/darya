@@ -139,7 +139,7 @@
     {
       "questionEn": "Where do we have an exam today?",
       "questionTarget": "امروز کجا امتحان داریم؟",
-      "questionTranslit": "emrōz kujā imtihān dārēm?",
+      "questionTranslit": "imrōz kujā imtihān dārēm?",
       "options": [
         {
           "target": "در مکتب",
@@ -158,7 +158,7 @@
         },
         {
           "target": "در صنف",
-          "translit": "dar senf",
+          "translit": "dar sinf",
           "en": "In the classroom"
         }
       ],
@@ -169,7 +169,7 @@
     {
       "questionEn": "How were the questions?",
       "questionTarget": "سوال‌ها چطور بود؟",
-      "questionTranslit": "sawāl-hā chetōr būd?",
+      "questionTranslit": "sawāl-hā chitōr būd?",
       "options": [
         {
           "target": "آسان",

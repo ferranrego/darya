@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "خانم معلم",
-  "titleTranslit": "khānum-e mu'allem",
+  "titleTranslit": "khānum-e mu'allim",
   "titleEn": "The lady teacher",
   "sentences": [
     {
       "target": "خانم معلم ما جوان است.",
-      "translit": "khānum-e mu'allem-e mā jawān ast.",
+      "translit": "khānum-e mu'allim-e mā jawān ast.",
       "en": "Our lady teacher is young.",
       "tokens": [
         {
@@ -66,7 +66,7 @@
     },
     {
       "target": "شاگردان سوال می‌کنند.",
-      "translit": "shāgerdān sawāl mēkunand.",
+      "translit": "shāgirdān sawāl mēkunand.",
       "en": "The students ask questions.",
       "tokens": [
         {
@@ -85,7 +85,7 @@
     },
     {
       "target": "او به خاطر شاگردان کار می‌کند.",
-      "translit": "ō ba khātir-e shāgerdān kār mēkunad.",
+      "translit": "ō ba khātir-e shāgirdān kār mēkunad.",
       "en": "She works for the students' sake.",
       "tokens": [
         {

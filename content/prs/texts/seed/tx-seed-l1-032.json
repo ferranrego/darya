@@ -140,7 +140,7 @@
     {
       "questionEn": "What did the father buy?",
       "questionTarget": "پدر چه خرید؟",
-      "questionTranslit": "padar che kharēd?",
+      "questionTranslit": "padar chi kharēd?",
       "options": [
         {
           "target": "یک موتر نو",
@@ -149,7 +149,7 @@
         },
         {
           "target": "یک کتاب خورد",
-          "translit": "yak ketāb-e khurd",
+          "translit": "yak kitāb-e khurd",
           "en": "A small book"
         },
         {
@@ -170,7 +170,7 @@
     {
       "questionEn": "What colour is our carpet?",
       "questionTarget": "قالین ما چه رنگ است؟",
-      "questionTranslit": "qālīn-e mā che rang ast?",
+      "questionTranslit": "qālīn-e mā chi rang ast?",
       "options": [
         {
           "target": "سرخ",

@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "معلم ما",
-  "titleTranslit": "mu'allem-e mā",
+  "titleTranslit": "mu'allim-e mā",
   "titleEn": "Our teacher",
   "sentences": [
     {
       "target": "معلم ما بسیار خوب است.",
-      "translit": "mu'allem-e mā bisyār khūb ast.",
+      "translit": "mu'allim-e mā bisyār khūb ast.",
       "en": "Our teacher is very good.",
       "tokens": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "او به شاگردان درس می‌دهد.",
-      "translit": "ō ba shāgerdān dars mēdihad.",
+      "translit": "ō ba shāgirdān dars mēdihad.",
       "en": "He gives the students a lesson.",
       "tokens": [
         {
@@ -62,7 +62,7 @@
     },
     {
       "target": "شاگردان زیاد می‌دانند.",
-      "translit": "shāgerdān ziyād mēdānand.",
+      "translit": "shāgirdān ziyād mēdānand.",
       "en": "The students know a lot.",
       "tokens": [
         {
@@ -104,7 +104,7 @@
     },
     {
       "target": "زندگی شاگرد خوب است.",
-      "translit": "zindagī-ye shāgerd khūb ast.",
+      "translit": "zindagī-ye shāgird khūb ast.",
       "en": "A student's life is good.",
       "tokens": [
         {

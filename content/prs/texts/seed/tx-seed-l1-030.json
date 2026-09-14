@@ -31,7 +31,7 @@
     },
     {
       "target": "او آب را جوش می‌دهد.",
-      "translit": "ō āb rā jōsh mēdehad.",
+      "translit": "ō āb rā jōsh mēdihad.",
       "en": "She boils the water.",
       "tokens": [
         {
@@ -158,7 +158,7 @@
     {
       "questionEn": "What do we drink?",
       "questionTarget": "ما چه می‌خوریم؟",
-      "questionTranslit": "mā che mēkhurēm?",
+      "questionTranslit": "mā chi mēkhurēm?",
       "options": [
         {
           "target": "شیر گرم",

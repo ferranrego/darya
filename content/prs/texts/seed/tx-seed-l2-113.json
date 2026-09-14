@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "امروز باران می‌بارد و باغ تر است.",
-      "translit": "emrōz bārān mēbārad wa bāgh tar ast.",
+      "translit": "imrōz bārān mēbārad wa bāgh tar ast.",
       "en": "Today it is raining and the garden is wet.",
       "tokens": [
         {
@@ -43,7 +43,7 @@
     },
     {
       "target": "آسمان امروز آبی نیست.",
-      "translit": "āsmān emrōz ābī nēst.",
+      "translit": "āsmān imrōz ābī nēst.",
       "en": "The sky is not blue today.",
       "tokens": [
         {
@@ -116,7 +116,7 @@
     },
     {
       "target": "من از کلکین به باران نگاه می‌کنم.",
-      "translit": "man az kelkīn ba bārān nigāh mēkunam.",
+      "translit": "man az kilkīn ba bārān nigāh mēkunam.",
       "en": "I look at the rain from the window.",
       "tokens": [
         {

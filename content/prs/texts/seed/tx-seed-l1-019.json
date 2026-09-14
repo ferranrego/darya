@@ -46,7 +46,7 @@
     },
     {
       "target": "پسر بایسکل دارد.",
-      "translit": "pesar bāysikl dārad.",
+      "translit": "pisar bāysikl dārad.",
       "en": "The boy has a bicycle.",
       "tokens": [
         {
@@ -103,7 +103,7 @@
     {
       "questionEn": "How is the car?",
       "questionTarget": "موتر چطور است؟",
-      "questionTranslit": "mōtar chetōr ast?",
+      "questionTranslit": "mōtar chitōr ast?",
       "options": [
         {
           "target": "سبک",
@@ -133,7 +133,7 @@
     {
       "questionEn": "What does the boy have?",
       "questionTarget": "پسر چه دارد؟",
-      "questionTranslit": "pesar chē dārad?",
+      "questionTranslit": "pisar chē dārad?",
       "options": [
         {
           "target": "موتر",
@@ -142,7 +142,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "A book"
         },
         {

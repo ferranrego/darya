@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "چشم من امروز سرخ است.",
-      "translit": "chashm-e man emrōz surkh ast.",
+      "translit": "chashm-e man imrōz surkh ast.",
       "en": "My eye is red today.",
       "tokens": [
         {
@@ -108,7 +108,7 @@
     },
     {
       "target": "من امشب زود می‌خوابم.",
-      "translit": "man emshab zūd mēkhābam.",
+      "translit": "man imshab zūd mēkhābam.",
       "en": "Tonight I sleep early.",
       "tokens": [
         {

@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "امروز ما یک درس جدید داریم.",
-      "translit": "emrōz mā yak dars-e jadīd dārēm.",
+      "translit": "imrōz mā yak dars-e jadīd dārēm.",
       "en": "Today we have a new lesson.",
       "tokens": [
         {
@@ -39,7 +39,7 @@
     },
     {
       "target": "معلم به ما درس می‌دهد.",
-      "translit": "mu'allem ba mā dars mēdihad.",
+      "translit": "mu'allim ba mā dars mēdihad.",
       "en": "The teacher gives us the lesson.",
       "tokens": [
         {
@@ -93,7 +93,7 @@
     },
     {
       "target": "امروز ما یک امتحان داریم.",
-      "translit": "emrōz mā yak imtihān dārēm.",
+      "translit": "imrōz mā yak imtihān dārēm.",
       "en": "Today we have an exam.",
       "tokens": [
         {
@@ -169,11 +169,11 @@
     {
       "questionEn": "What does the teacher give us?",
       "questionTarget": "معلم به ما چه می‌دهد؟",
-      "questionTranslit": "mu'allem ba mā che mēdehad?",
+      "questionTranslit": "mu'allim ba mā chi mēdihad?",
       "options": [
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "A book"
         },
         {
@@ -199,7 +199,7 @@
     {
       "questionEn": "How well do I know the exam?",
       "questionTarget": "من امتحان را چطور می‌دانم؟",
-      "questionTranslit": "man imtihān rā chetōr mēdānam?",
+      "questionTranslit": "man imtihān rā chitōr mēdānam?",
       "options": [
         {
           "target": "خوب",

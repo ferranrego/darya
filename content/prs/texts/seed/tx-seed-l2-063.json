@@ -135,7 +135,7 @@
     },
     {
       "target": "مردم اینجا مهربان هستند.",
-      "translit": "mardum-e īnjā mehrabān hastand.",
+      "translit": "mardum-e īnjā mihrabān hastand.",
       "en": "The people here are kind.",
       "tokens": [
         {
@@ -192,7 +192,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "A book"
         },
         {
@@ -213,7 +213,7 @@
     {
       "questionEn": "How are the people here?",
       "questionTarget": "مردم اینجا چطور هستند؟",
-      "questionTranslit": "mardum-e īnjā chetōr hastand?",
+      "questionTranslit": "mardum-e īnjā chitōr hastand?",
       "options": [
         {
           "target": "مانده",
@@ -227,7 +227,7 @@
         },
         {
           "target": "مهربان",
-          "translit": "mehrabān",
+          "translit": "mihrabān",
           "en": "Kind"
         },
         {

@@ -101,7 +101,7 @@
     },
     {
       "target": "من فقط صبح کتاب تاریخ می‌خوانم.",
-      "translit": "man faqat subh ketāb-e tārīkh mēkhānam.",
+      "translit": "man faqat subh kitāb-e tārīkh mēkhānam.",
       "en": "I read the history book only in the morning.",
       "tokens": [
         {
@@ -132,7 +132,7 @@
     },
     {
       "target": "امروز آفتاب است و برف نیست.",
-      "translit": "emrōz āftāb ast wa barf nēst.",
+      "translit": "imrōz āftāb ast wa barf nēst.",
       "en": "Today there is sun and there is no snow.",
       "tokens": [
         {

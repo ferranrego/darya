@@ -46,7 +46,7 @@
     },
     {
       "target": "پسر آب می‌آشامد.",
-      "translit": "pesar āb mēāshāmad.",
+      "translit": "pisar āb mēāshāmad.",
       "en": "The boy drinks water.",
       "tokens": [
         {
@@ -134,7 +134,7 @@
     {
       "questionEn": "What does the boy drink?",
       "questionTarget": "پسر چه می‌آشامد؟",
-      "questionTranslit": "pesar che mēāshāmad?",
+      "questionTranslit": "pisar chi mēāshāmad?",
       "options": [
         {
           "target": "چای",
@@ -164,7 +164,7 @@
     {
       "questionEn": "What does the mother cook?",
       "questionTarget": "مادر چه می‌پزد؟",
-      "questionTranslit": "mādar che mēpazad?",
+      "questionTranslit": "mādar chi mēpazad?",
       "options": [
         {
           "target": "گوشت",
@@ -173,7 +173,7 @@
         },
         {
           "target": "برنج",
-          "translit": "berenj",
+          "translit": "birinj",
           "en": "Rice"
         },
         {

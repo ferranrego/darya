@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "معلم ما زبان دری را درس می‌دهد.",
-      "translit": "mu'allem-e mā zabān-e darī rā dars mēdihad.",
+      "translit": "mu'allim-e mā zabān-e darī rā dars mēdihad.",
       "en": "Our teacher teaches the Dari language.",
       "tokens": [
         {
@@ -43,7 +43,7 @@
     },
     {
       "target": "شاگردان هر روز می‌خوانند و می‌نویسند.",
-      "translit": "shāgerdān har rōz mēkhānand wa mēnawīsand.",
+      "translit": "shāgirdān har rōz mēkhānand wa mēnawīsand.",
       "en": "The students read and write every day.",
       "tokens": [
         {
@@ -101,7 +101,7 @@
     },
     {
       "target": "معلم به ما یک کتاب نو می‌دهد.",
-      "translit": "mu'allem ba mā yak ketāb-e naw mēdihad.",
+      "translit": "mu'allim ba mā yak kitāb-e naw mēdihad.",
       "en": "The teacher gives us a new book.",
       "tokens": [
         {
@@ -167,7 +167,7 @@
     },
     {
       "target": "معلم ما بسیار مهربان است.",
-      "translit": "mu'allem-e mā bisyār mehrabān ast.",
+      "translit": "mu'allim-e mā bisyār mihrabān ast.",
       "en": "Our teacher is very kind.",
       "tokens": [
         {
@@ -229,7 +229,7 @@
     {
       "questionEn": "What does our teacher teach?",
       "questionTarget": "معلم ما چه درس می‌دهد؟",
-      "questionTranslit": "mu'allem-e mā chē dars mēdihad?",
+      "questionTranslit": "mu'allim-e mā chē dars mēdihad?",
       "options": [
         {
           "target": "زبان انگلیسی",
@@ -259,16 +259,16 @@
     {
       "questionEn": "What does the teacher give us?",
       "questionTarget": "معلم به ما چه می‌دهد؟",
-      "questionTranslit": "mu'allem ba mā chē mēdihad?",
+      "questionTranslit": "mu'allim ba mā chē mēdihad?",
       "options": [
         {
           "target": "یک کتاب نو",
-          "translit": "yak ketāb-e naw",
+          "translit": "yak kitāb-e naw",
           "en": "A new book"
         },
         {
           "target": "یک کتاب کهنه",
-          "translit": "yak ketāb-e kuhna",
+          "translit": "yak kitāb-e kuhna",
           "en": "An old book"
         },
         {

@@ -73,7 +73,7 @@
     },
     {
       "target": "کتاب در آتش می‌سوزد.",
-      "translit": "ketāb dar ātash mēsōzad.",
+      "translit": "kitāb dar ātash mēsōzad.",
       "en": "The book burns in the fire.",
       "tokens": [
         {
@@ -123,7 +123,7 @@
     {
       "questionEn": "What starts?",
       "questionTarget": "چه شروع می‌شود؟",
-      "questionTranslit": "che shurū' mēshawad?",
+      "questionTranslit": "chi shurū' mēshawad?",
       "options": [
         {
           "target": "امتحان",
@@ -153,7 +153,7 @@
     {
       "questionEn": "Where does the book burn?",
       "questionTarget": "کتاب در کجا می‌سوزد؟",
-      "questionTranslit": "ketāb dar kujā mēsōzad?",
+      "questionTranslit": "kitāb dar kujā mēsōzad?",
       "options": [
         {
           "target": "در آتش",

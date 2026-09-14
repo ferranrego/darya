@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "کتاب کهنه",
-  "titleTranslit": "ketāb-e kuhna",
+  "titleTranslit": "kitāb-e kuhna",
   "titleEn": "An old book",
   "sentences": [
     {
       "target": "من یک کتاب کهنه دارم.",
-      "translit": "man yak ketāb-e kuhna dāram.",
+      "translit": "man yak kitāb-e kuhna dāram.",
       "en": "I have an old book.",
       "tokens": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "این کتاب از پدرکلان من است.",
-      "translit": "īn ketāb az padarkalān-e man ast.",
+      "translit": "īn kitāb az padarkalān-e man ast.",
       "en": "This book is from my grandfather.",
       "tokens": [
         {
@@ -89,7 +89,7 @@
     },
     {
       "target": "کتاب بسیار خوب است.",
-      "translit": "ketāb bisyār khūb ast.",
+      "translit": "kitāb bisyār khūb ast.",
       "en": "The book is very good.",
       "tokens": [
         {
@@ -112,7 +112,7 @@
     },
     {
       "target": "من کتاب به مکتب می‌برم.",
-      "translit": "man ketāb ba maktab mēbaram.",
+      "translit": "man kitāb ba maktab mēbaram.",
       "en": "I take the book to school.",
       "tokens": [
         {

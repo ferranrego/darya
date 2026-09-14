@@ -225,16 +225,16 @@
     {
       "questionEn": "What does he have a lot of at school?",
       "questionTarget": "او در مکتب چه دارد؟",
-      "questionTranslit": "ō dar maktab che dārad?",
+      "questionTranslit": "ō dar maktab chi dārad?",
       "options": [
         {
           "target": "کتاب نو",
-          "translit": "ketāb-e naw",
+          "translit": "kitāb-e naw",
           "en": "A new book"
         },
         {
           "target": "معلم خوب",
-          "translit": "mu'allem-e khūb",
+          "translit": "mu'allim-e khūb",
           "en": "A good teacher"
         },
         {

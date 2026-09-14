@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "امروز و فردا",
-  "titleTranslit": "emrōz wa fardā",
+  "titleTranslit": "imrōz wa fardā",
   "titleEn": "Today and tomorrow",
   "sentences": [
     {
       "target": "امروز من کار زیاد دارم.",
-      "translit": "emrōz man kār-e ziyād dāram.",
+      "translit": "imrōz man kār-e ziyād dāram.",
       "en": "Today I have a lot of work.",
       "tokens": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "target": "معلم من درس می‌دهد.",
-      "translit": "mu'allem-e man dars mēdihad.",
+      "translit": "mu'allim-e man dars mēdihad.",
       "en": "My teacher gives a lesson.",
       "tokens": [
         {

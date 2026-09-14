@@ -137,7 +137,7 @@
     {
       "questionEn": "What do I wear?",
       "questionTarget": "من چه می‌پوشم؟",
-      "questionTranslit": "man che mēpōsham?",
+      "questionTranslit": "man chi mēpōsham?",
       "options": [
         {
           "target": "لباس نو",
@@ -167,7 +167,7 @@
     {
       "questionEn": "What was my brother looking for?",
       "questionTarget": "برادرم چه می‌پالید؟",
-      "questionTranslit": "barādar-am che mēpālēd?",
+      "questionTranslit": "barādar-am chi mēpālēd?",
       "options": [
         {
           "target": "کرتی خود",
@@ -186,7 +186,7 @@
         },
         {
           "target": "کتاب خود",
-          "translit": "ketāb-e khud",
+          "translit": "kitāb-e khud",
           "en": "His book"
         }
       ],

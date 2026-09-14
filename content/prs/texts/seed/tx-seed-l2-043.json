@@ -186,7 +186,7 @@
     {
       "questionEn": "What does my mother sew for the baby?",
       "questionTarget": "مادر من برای طفل چه می‌دوزد؟",
-      "questionTranslit": "mādar-e man barā-ye tifl che mēdōzad?",
+      "questionTranslit": "mādar-e man barā-ye tifl chi mēdōzad?",
       "options": [
         {
           "target": "کلاه",
@@ -195,7 +195,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "A book"
         },
         {

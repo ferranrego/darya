@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "دو کتاب",
-  "titleTranslit": "dū ketāb",
+  "titleTranslit": "dū kitāb",
   "titleEn": "Two books",
   "sentences": [
     {
       "target": "من دو کتاب دارم.",
-      "translit": "man dū ketāb dāram.",
+      "translit": "man dū kitāb dāram.",
       "en": "I have two books.",
       "tokens": [
         {
@@ -31,7 +31,7 @@
     },
     {
       "target": "یک کتاب نو است.",
-      "translit": "yak ketāb naw ast.",
+      "translit": "yak kitāb naw ast.",
       "en": "One book is new.",
       "tokens": [
         {
@@ -54,7 +54,7 @@
     },
     {
       "target": "آن کتاب کهنه است.",
-      "translit": "ān ketāb kuhna ast.",
+      "translit": "ān kitāb kuhna ast.",
       "en": "That book is old.",
       "tokens": [
         {
@@ -77,7 +77,7 @@
     },
     {
       "target": "من از کتاب نو می‌خوانم.",
-      "translit": "man az ketāb-e naw mēkhānam.",
+      "translit": "man az kitāb-e naw mēkhānam.",
       "en": "I read from the new book.",
       "tokens": [
         {

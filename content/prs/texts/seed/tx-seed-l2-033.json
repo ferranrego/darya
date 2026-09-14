@@ -35,7 +35,7 @@
     },
     {
       "target": "معلم ما در بس نشسته است.",
-      "translit": "mu'allem-e mā dar bas nishasta ast.",
+      "translit": "mu'allim-e mā dar bas nishasta ast.",
       "en": "Our teacher is sitting in the bus.",
       "tokens": [
         {
@@ -159,7 +159,7 @@
     {
       "questionEn": "Where is our teacher sitting?",
       "questionTarget": "معلم ما کجا نشسته است؟",
-      "questionTranslit": "mu'allem-e mā kujā nishasta ast?",
+      "questionTranslit": "mu'allim-e mā kujā nishasta ast?",
       "options": [
         {
           "target": "در موتر",
@@ -173,7 +173,7 @@
         },
         {
           "target": "در صنف",
-          "translit": "dar senf",
+          "translit": "dar sinf",
           "en": "In the classroom"
         },
         {
@@ -189,7 +189,7 @@
     {
       "questionEn": "How is the weather there?",
       "questionTarget": "در آنجا آب و هوا چطور است؟",
-      "questionTranslit": "dar ānjā āb wa hawā chetōr ast?",
+      "questionTranslit": "dar ānjā āb wa hawā chitōr ast?",
       "options": [
         {
           "target": "خوب",

@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "معلم",
-  "titleTranslit": "mu'allem",
+  "titleTranslit": "mu'allim",
   "titleEn": "The teacher",
   "sentences": [
     {
       "target": "معلم می‌نویسد.",
-      "translit": "mu'allem mēnawīsad.",
+      "translit": "mu'allim mēnawīsad.",
       "en": "The teacher writes.",
       "tokens": [
         {
@@ -38,7 +38,7 @@
     },
     {
       "target": "پسر یاد می‌گیرد.",
-      "translit": "pesar yād mēgīrad.",
+      "translit": "pisar yād mēgīrad.",
       "en": "The boy learns.",
       "tokens": [
         {
@@ -95,7 +95,7 @@
     {
       "questionEn": "What does the teacher do?",
       "questionTarget": "معلم چه می‌کند؟",
-      "questionTranslit": "mu'allem che mēkunad?",
+      "questionTranslit": "mu'allim chi mēkunad?",
       "options": [
         {
           "target": "می‌دود",
@@ -129,7 +129,7 @@
       "options": [
         {
           "target": "پسر",
-          "translit": "pesar",
+          "translit": "pisar",
           "en": "The boy"
         },
         {
@@ -144,7 +144,7 @@
         },
         {
           "target": "معلم",
-          "translit": "mu'allem",
+          "translit": "mu'allim",
           "en": "The teacher"
         }
       ],

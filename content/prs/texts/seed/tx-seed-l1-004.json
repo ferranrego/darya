@@ -77,7 +77,7 @@
     },
     {
       "target": "من در خانه کتاب می‌خوانم.",
-      "translit": "man dar khāna ketāb mēkhānam.",
+      "translit": "man dar khāna kitāb mēkhānam.",
       "en": "I read a book at home.",
       "tokens": [
         {
@@ -191,7 +191,7 @@
         },
         {
           "target": "قصه",
-          "translit": "qessa",
+          "translit": "qissa",
           "en": "A story"
         },
         {
@@ -201,7 +201,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "A book"
         }
       ],

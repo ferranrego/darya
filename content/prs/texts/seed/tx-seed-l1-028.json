@@ -88,7 +88,7 @@
     },
     {
       "target": "دل او درد دارد.",
-      "translit": "del-e ō dard dārad.",
+      "translit": "dil-e ō dard dārad.",
       "en": "His heart has pain.",
       "tokens": [
         {
@@ -166,7 +166,7 @@
     {
       "questionEn": "How is the man?",
       "questionTarget": "مرد چطور است؟",
-      "questionTranslit": "mard chetōr ast?",
+      "questionTranslit": "mard chitōr ast?",
       "options": [
         {
           "target": "جوان",

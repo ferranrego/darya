@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "امروز دکان بسته است.",
-      "translit": "emrōz dukān basta ast.",
+      "translit": "imrōz dukān basta ast.",
       "en": "Today the shop is closed.",
       "tokens": [
         {
@@ -100,7 +100,7 @@
     },
     {
       "target": "من فردا برنج و قند می‌خرم.",
-      "translit": "man fardā berenj wa qand mēkharam.",
+      "translit": "man fardā birinj wa qand mēkharam.",
       "en": "Tomorrow I will buy rice and sugar.",
       "tokens": [
         {

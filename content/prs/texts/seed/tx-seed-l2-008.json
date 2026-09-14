@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "من کتاب را می‌گذارم.",
-      "translit": "man ketāb rā mēguzāram.",
+      "translit": "man kitāb rā mēguzāram.",
       "en": "I put down the book.",
       "tokens": [
         {
@@ -175,7 +175,7 @@
     {
       "questionEn": "What do I listen to?",
       "questionTarget": "من چه می‌شنوم؟",
-      "questionTranslit": "man che mēshunawam?",
+      "questionTranslit": "man chi mēshunawam?",
       "options": [
         {
           "target": "یک آهنگ کهنه",
@@ -219,7 +219,7 @@
         },
         {
           "target": "معلم‌ها",
-          "translit": "mu'allem-hā",
+          "translit": "mu'allim-hā",
           "en": "The teachers"
         },
         {

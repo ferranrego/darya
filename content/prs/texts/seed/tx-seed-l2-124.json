@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "کلکین خانه",
-  "titleTranslit": "kelkīn-e khāna",
+  "titleTranslit": "kilkīn-e khāna",
   "titleEn": "The house window",
   "sentences": [
     {
       "target": "خانه ما دو کلکین دارد.",
-      "translit": "khāna-ye mā dū kelkīn dārad.",
+      "translit": "khāna-ye mā dū kilkīn dārad.",
       "en": "Our house has two windows.",
       "tokens": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "یک کلکین خراب است.",
-      "translit": "yak kelkīn kharāb ast.",
+      "translit": "yak kilkīn kharāb ast.",
       "en": "One window is broken.",
       "tokens": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "target": "پدر من کلکین را جور می‌کند.",
-      "translit": "padar-e man kelkīn rā jōr mēkunad.",
+      "translit": "padar-e man kilkīn rā jōr mēkunad.",
       "en": "My father fixes the window.",
       "tokens": [
         {
@@ -89,7 +89,7 @@
     },
     {
       "target": "من از کلکین آسمان را می‌بینم.",
-      "translit": "man az kelkīn āsmān rā mēbīnam.",
+      "translit": "man az kilkīn āsmān rā mēbīnam.",
       "en": "I see the sky from the window.",
       "tokens": [
         {
@@ -120,7 +120,7 @@
     },
     {
       "target": "آسمان امروز آبی است.",
-      "translit": "āsmān emrōz ābī ast.",
+      "translit": "āsmān imrōz ābī ast.",
       "en": "The sky is blue today.",
       "tokens": [
         {

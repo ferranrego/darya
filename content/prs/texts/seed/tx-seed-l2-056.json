@@ -159,7 +159,7 @@
     },
     {
       "target": "آن زن بسیار مهربان است.",
-      "translit": "ān zan bisyār mehrabān ast.",
+      "translit": "ān zan bisyār mihrabān ast.",
       "en": "That woman is very kind.",
       "tokens": [
         {
@@ -213,7 +213,7 @@
     {
       "questionEn": "How is her daughter?",
       "questionTarget": "دختر او چطور است؟",
-      "questionTranslit": "dukhtar-e ō chetōr ast?",
+      "questionTranslit": "dukhtar-e ō chitōr ast?",
       "options": [
         {
           "target": "بسیار خورد",
@@ -257,7 +257,7 @@
         },
         {
           "target": "نام معلم",
-          "translit": "nām-e mu'allem",
+          "translit": "nām-e mu'allim",
           "en": "The teacher's name"
         },
         {

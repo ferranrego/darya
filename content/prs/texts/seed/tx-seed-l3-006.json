@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L3",
   "titleTarget": "زمستان قریه",
-  "titleTranslit": "zemestān-e qarya",
+  "titleTranslit": "zimistān-e qarya",
   "titleEn": "Winter in the village",
   "sentences": [
     {
       "target": "زمستان گذشته برف بسیار زیاد بارید.",
-      "translit": "zemestān-e guzashta barf bisyār ziyād bārīd.",
+      "translit": "zimistān-e guzashta barf bisyār ziyād bārīd.",
       "en": "Last winter a lot of snow fell.",
       "tokens": [
         {
@@ -109,7 +109,7 @@
     },
     {
       "target": "این زمستان سردتر از سال گذشته است.",
-      "translit": "īn zemestān sardtar az sāl-e guzashta ast.",
+      "translit": "īn zimistān sardtar az sāl-e guzashta ast.",
       "en": "This winter is colder than last year.",
       "tokens": [
         {

@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "صنف ما",
-  "titleTranslit": "senf-e mā",
+  "titleTranslit": "sinf-e mā",
   "titleEn": "Our classroom",
   "sentences": [
     {
       "target": "صنف ما کلان و روشن است.",
-      "translit": "senf-e mā kalān wa rōshan ast.",
+      "translit": "sinf-e mā kalān wa rōshan ast.",
       "en": "Our classroom is big and bright.",
       "tokens": [
         {
@@ -39,7 +39,7 @@
     },
     {
       "target": "در صنف یک کلکین بلند است.",
-      "translit": "dar senf yak kelkīn-e buland ast.",
+      "translit": "dar sinf yak kilkīn-e buland ast.",
       "en": "There is a tall window in the classroom.",
       "tokens": [
         {
@@ -70,7 +70,7 @@
     },
     {
       "target": "دیوار صنف سفید است.",
-      "translit": "dēwār-e senf safēd ast.",
+      "translit": "dēwār-e sinf safēd ast.",
       "en": "The classroom wall is white.",
       "tokens": [
         {

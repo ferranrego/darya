@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "زمستان",
-  "titleTranslit": "zemestān",
+  "titleTranslit": "zimistān",
   "titleEn": "Winter",
   "sentences": [
     {
       "target": "زمستان اینجا سرد است و زمین تر است.",
-      "translit": "zemestān īnjā sard ast wa zamīn tar ast.",
+      "translit": "zimistān īnjā sard ast wa zamīn tar ast.",
       "en": "Winter here is cold and the ground is wet.",
       "tokens": [
         {
@@ -47,7 +47,7 @@
     },
     {
       "target": "روز در زمستان کوتاه است.",
-      "translit": "rōz dar zemestān kōtāh ast.",
+      "translit": "rōz dar zimistān kōtāh ast.",
       "en": "The day is short in winter.",
       "tokens": [
         {
@@ -105,7 +105,7 @@
     },
     {
       "target": "من از کلکین به برف نگاه می‌کنم.",
-      "translit": "man az kelkīn ba barf nigāh mēkunam.",
+      "translit": "man az kilkīn ba barf nigāh mēkunam.",
       "en": "I look at the snow from the window.",
       "tokens": [
         {
@@ -140,7 +140,7 @@
     },
     {
       "target": "قریه ما واقعاً جای آرام است.",
-      "translit": "qarya-ye mā wāqean jāy-e ārām ast.",
+      "translit": "qarya-ye mā wāqian jāy-e ārām ast.",
       "en": "Our village is really a quiet place.",
       "tokens": [
         {
@@ -171,7 +171,7 @@
     },
     {
       "target": "ما در زمستان صبر می‌آموزیم.",
-      "translit": "mā dar zemestān sabr mēāmōzēm.",
+      "translit": "mā dar zimistān sabr mēāmōzēm.",
       "en": "In winter we learn patience.",
       "tokens": [
         {

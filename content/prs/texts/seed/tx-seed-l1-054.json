@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "من چه می‌خواهم",
-  "titleTranslit": "man che mēkhāham",
+  "titleTranslit": "man chi mēkhāham",
   "titleEn": "What I want",
   "sentences": [
     {
       "target": "من یک کتاب نو می‌خواهم.",
-      "translit": "man yak ketāb-e naw mēkhāham.",
+      "translit": "man yak kitāb-e naw mēkhāham.",
       "en": "I want a new book.",
       "tokens": [
         {

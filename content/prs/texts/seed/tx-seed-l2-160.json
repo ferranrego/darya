@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "من کتاب خود را می‌پالم.",
-      "translit": "man ketāb-e khud rā mēpālam.",
+      "translit": "man kitāb-e khud rā mēpālam.",
       "en": "I am looking for my book.",
       "tokens": [
         {
@@ -81,7 +81,7 @@
     },
     {
       "target": "مادر من کتاب را می‌یابد.",
-      "translit": "mādar-e man ketāb rā mēyābad.",
+      "translit": "mādar-e man kitāb rā mēyābad.",
       "en": "My mother finds the book.",
       "tokens": [
         {

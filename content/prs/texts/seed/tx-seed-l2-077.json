@@ -43,7 +43,7 @@
     },
     {
       "target": "تمام شاگردان الان در مکتب هستند.",
-      "translit": "tamām-e shāgerdān al'ān dar maktab hastand.",
+      "translit": "tamām-e shāgirdān al'ān dar maktab hastand.",
       "en": "All the students are at school now.",
       "tokens": [
         {
@@ -74,7 +74,7 @@
     },
     {
       "target": "معلم درس را شروع می‌کند.",
-      "translit": "mu'allem dars rā shurū' mēkunad.",
+      "translit": "mu'allim dars rā shurū' mēkunad.",
       "en": "The teacher starts the lesson.",
       "tokens": [
         {
@@ -101,7 +101,7 @@
     },
     {
       "target": "شاید درس امروز بسیار سخت است.",
-      "translit": "shāyad dars-e emrōz bisyār sakht ast.",
+      "translit": "shāyad dars-e imrōz bisyār sakht ast.",
       "en": "Maybe today's lesson is very difficult.",
       "tokens": [
         {
@@ -132,7 +132,7 @@
     },
     {
       "target": "شاگردان از کتاب استفاده می‌کنند.",
-      "translit": "shāgerdān az ketāb istifāda mēkunand.",
+      "translit": "shāgirdān az kitāb istifāda mēkunand.",
       "en": "The students use a book.",
       "tokens": [
         {
@@ -159,7 +159,7 @@
     },
     {
       "target": "معلم شاگردان را می‌بخشد.",
-      "translit": "mu'allem shāgerdān rā mēbakhshad.",
+      "translit": "mu'allim shāgirdān rā mēbakhshad.",
       "en": "The teacher forgives the students.",
       "tokens": [
         {

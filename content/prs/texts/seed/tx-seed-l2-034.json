@@ -31,7 +31,7 @@
     },
     {
       "target": "او هر روز کتاب‌های نو می‌گیرد.",
-      "translit": "ō har rōz ketāb-hā-ye naw mēgīrad.",
+      "translit": "ō har rōz kitāb-hā-ye naw mēgīrad.",
       "en": "He gets new books every day.",
       "tokens": [
         {
@@ -158,16 +158,16 @@
     {
       "questionEn": "What does my brother study?",
       "questionTarget": "برادرم چه می‌خواند؟",
-      "questionTranslit": "barādar-am che mēkhānad?",
+      "questionTranslit": "barādar-am chi mēkhānad?",
       "options": [
         {
           "target": "کتاب خود",
-          "translit": "ketāb-e khud",
+          "translit": "kitāb-e khud",
           "en": "His own book"
         },
         {
           "target": "کتاب کهنه",
-          "translit": "ketāb-e kuhna",
+          "translit": "kitāb-e kuhna",
           "en": "An old book"
         },
         {
@@ -188,11 +188,11 @@
     {
       "questionEn": "What does he get every day?",
       "questionTarget": "او هر روز چه می‌گیرد؟",
-      "questionTranslit": "ō har rōz che mēgīrad?",
+      "questionTranslit": "ō har rōz chi mēgīrad?",
       "options": [
         {
           "target": "کتاب‌های نو",
-          "translit": "ketāb-hā-ye naw",
+          "translit": "kitāb-hā-ye naw",
           "en": "New books"
         },
         {

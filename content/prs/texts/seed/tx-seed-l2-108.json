@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "دهقان و باغ",
-  "titleTranslit": "dehqān wa bāgh",
+  "titleTranslit": "dihqān wa bāgh",
   "titleEn": "The farmer and the garden",
   "sentences": [
     {
       "target": "کاکا من یک دهقان مشهور است.",
-      "translit": "kākā-ye man yak dehqān-e mash'hūr ast.",
+      "translit": "kākā-ye man yak dihqān-e mash'hūr ast.",
       "en": "My uncle is a famous farmer.",
       "tokens": [
         {
@@ -78,7 +78,7 @@
     },
     {
       "target": "دهقان هر صبح به زمین می‌رود.",
-      "translit": "dehqān har subh ba zamīn mērawad.",
+      "translit": "dihqān har subh ba zamīn mērawad.",
       "en": "The farmer goes to the land every morning.",
       "tokens": [
         {
@@ -109,7 +109,7 @@
     },
     {
       "target": "آفتاب گرم است و دهقان کار می‌کند.",
-      "translit": "āftāb garm ast wa dehqān kār mēkunad.",
+      "translit": "āftāb garm ast wa dihqān kār mēkunad.",
       "en": "The sun is hot and the farmer works.",
       "tokens": [
         {
@@ -144,7 +144,7 @@
     },
     {
       "target": "دهقان میوه تازه به بازار می‌فرستد.",
-      "translit": "dehqān mēwa-ye tāza ba bāzār mēfiristad.",
+      "translit": "dihqān mēwa-ye tāza ba bāzār mēfiristad.",
       "en": "The farmer sends fresh fruit to the bazaar.",
       "tokens": [
         {
@@ -175,7 +175,7 @@
     },
     {
       "target": "چقدر میوه این دهقان خوش‌مزه است!",
-      "translit": "chiqadar mēwa-ye īn dehqān khushmaza ast!",
+      "translit": "chiqadar mēwa-ye īn dihqān khushmaza ast!",
       "en": "How tasty this farmer's fruit is!",
       "tokens": [
         {

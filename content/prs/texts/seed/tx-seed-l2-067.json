@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "حال من امروز خوب نیست.",
-      "translit": "hāl-e man emrōz khūb nēst.",
+      "translit": "hāl-e man imrōz khūb nēst.",
       "en": "My condition is not good today.",
       "tokens": [
         {
@@ -158,7 +158,7 @@
     {
       "questionEn": "What hurts?",
       "questionTarget": "چه درد می‌کند؟",
-      "questionTranslit": "che dard mēkunad?",
+      "questionTranslit": "chi dard mēkunad?",
       "options": [
         {
           "target": "سر من",

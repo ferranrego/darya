@@ -142,11 +142,11 @@
     {
       "questionEn": "What do the farmers plant?",
       "questionTarget": "دهقان‌ها چه می‌کارند؟",
-      "questionTranslit": "dehqān-hā che mēkārand?",
+      "questionTranslit": "dihqān-hā chi mēkārand?",
       "options": [
         {
           "target": "برنج",
-          "translit": "berenj",
+          "translit": "birinj",
           "en": "Rice"
         },
         {
@@ -172,7 +172,7 @@
     {
       "questionEn": "Where do the farmers work?",
       "questionTarget": "دهقان‌ها کجا کار می‌کنند؟",
-      "questionTranslit": "dehqān-hā kujā kār mēkunand?",
+      "questionTranslit": "dihqān-hā kujā kār mēkunand?",
       "options": [
         {
           "target": "در زمین",

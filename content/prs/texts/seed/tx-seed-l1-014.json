@@ -31,7 +31,7 @@
     },
     {
       "target": "پسر می‌دود.",
-      "translit": "pesar mēdawad.",
+      "translit": "pisar mēdawad.",
       "en": "The boy runs.",
       "tokens": [
         {
@@ -107,7 +107,7 @@
     {
       "questionEn": "What does the young person do?",
       "questionTarget": "جوان چه می‌کند؟",
-      "questionTranslit": "jawān che mēkunad?",
+      "questionTranslit": "jawān chi mēkunad?",
       "options": [
         {
           "target": "به سفر می‌رود",
@@ -141,7 +141,7 @@
       "options": [
         {
           "target": "پسر",
-          "translit": "pesar",
+          "translit": "pisar",
           "en": "The boy"
         },
         {

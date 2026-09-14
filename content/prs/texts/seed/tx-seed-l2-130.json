@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "بایسکل من",
-  "titleTranslit": "bāyskel-e man",
+  "titleTranslit": "bāyskil-e man",
   "titleEn": "My bicycle",
   "sentences": [
     {
       "target": "من یک بایسکل دارم.",
-      "translit": "man yak bāyskel dāram.",
+      "translit": "man yak bāyskil dāram.",
       "en": "I have a bicycle.",
       "tokens": [
         {
@@ -31,7 +31,7 @@
     },
     {
       "target": "رنگ بایسکل من سبز است.",
-      "translit": "rang-e bāyskel-e man sabz ast.",
+      "translit": "rang-e bāyskil-e man sabz ast.",
       "en": "My bicycle's color is green.",
       "tokens": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "target": "من با بایسکل به مکتب می‌روم.",
-      "translit": "man bā bāyskel ba maktab mērawam.",
+      "translit": "man bā bāyskil ba maktab mērawam.",
       "en": "I go to school by bicycle.",
       "tokens": [
         {

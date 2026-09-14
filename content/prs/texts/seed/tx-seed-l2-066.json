@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "زمستان",
-  "titleTranslit": "zemestān",
+  "titleTranslit": "zimistān",
   "titleEn": "Winter",
   "sentences": [
     {
       "target": "در زمستان باران می‌بارد.",
-      "translit": "dar zemestān bārān mēbārad.",
+      "translit": "dar zimistān bārān mēbārad.",
       "en": "In winter the rain falls.",
       "tokens": [
         {
@@ -100,7 +100,7 @@
     },
     {
       "target": "پس من امشب خوب می‌خوابم.",
-      "translit": "pas man emshab khūb mēkhābam.",
+      "translit": "pas man imshab khūb mēkhābam.",
       "en": "So tonight I sleep well.",
       "tokens": [
         {
@@ -152,7 +152,7 @@
     {
       "questionEn": "What falls in winter?",
       "questionTarget": "در زمستان چه می‌بارد؟",
-      "questionTranslit": "dar zemestān chē mēbārad?",
+      "questionTranslit": "dar zimistān chē mēbārad?",
       "options": [
         {
           "target": "برف",
@@ -182,7 +182,7 @@
     {
       "questionEn": "How is our room?",
       "questionTarget": "اتاق ما چطور است؟",
-      "questionTranslit": "utāq-e mā chetōr ast?",
+      "questionTranslit": "utāq-e mā chitōr ast?",
       "options": [
         {
           "target": "سرد",

@@ -223,11 +223,11 @@
     {
       "questionEn": "What does my sister bring?",
       "questionTarget": "خواهر من چه می‌آورد؟",
-      "questionTranslit": "khāhar-e man che mēāwarad?",
+      "questionTranslit": "khāhar-e man chi mēāwarad?",
       "options": [
         {
           "target": "گوشت و برنج",
-          "translit": "gōsht wa berenj",
+          "translit": "gōsht wa birinj",
           "en": "Meat and rice"
         },
         {
@@ -253,7 +253,7 @@
     {
       "questionEn": "What does my mother cook every day?",
       "questionTarget": "مادر من هر روز چه می‌پزد؟",
-      "questionTranslit": "mādar-e man har rōz che mēpazad?",
+      "questionTranslit": "mādar-e man har rōz chi mēpazad?",
       "options": [
         {
           "target": "نان",
@@ -262,7 +262,7 @@
         },
         {
           "target": "برنج",
-          "translit": "berenj",
+          "translit": "birinj",
           "en": "Rice"
         },
         {

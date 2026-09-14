@@ -182,7 +182,7 @@
     {
       "questionEn": "What does the child build out of snow?",
       "questionTarget": "بچه از برف چه می‌سازد؟",
-      "questionTranslit": "bacha az barf che mēsāzad?",
+      "questionTranslit": "bacha az barf chi mēsāzad?",
       "options": [
         {
           "target": "موتر",
@@ -212,7 +212,7 @@
     {
       "questionEn": "What does the snow kill?",
       "questionTarget": "برف چه می‌کشد؟",
-      "questionTranslit": "barf che mēkushad?",
+      "questionTranslit": "barf chi mēkushad?",
       "options": [
         {
           "target": "درخت‌های ما",
@@ -221,7 +221,7 @@
         },
         {
           "target": "کتاب‌های ما",
-          "translit": "ketāb-hā-ye mā",
+          "translit": "kitāb-hā-ye mā",
           "en": "Our books"
         },
         {

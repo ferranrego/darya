@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "افغانستان",
-  "titleTranslit": "afghānestān",
+  "titleTranslit": "afghānistān",
   "titleEn": "Afghanistan",
   "sentences": [
     {
       "target": "افغانستان کشور ما است.",
-      "translit": "afghānestān kishwar-e mā ast.",
+      "translit": "afghānistān kishwar-e mā ast.",
       "en": "Afghanistan is our country.",
       "tokens": [
         {
@@ -31,7 +31,7 @@
     },
     {
       "target": "کابل در افغانستان است.",
-      "translit": "kābul dar afghānestān ast.",
+      "translit": "kābul dar afghānistān ast.",
       "en": "Kabul is in Afghanistan.",
       "tokens": [
         {
@@ -54,7 +54,7 @@
     },
     {
       "target": "مردم افغانستان مهربان هستند.",
-      "translit": "mardum-e afghānestān mehrabān hastand.",
+      "translit": "mardum-e afghānistān mihrabān hastand.",
       "en": "The people of Afghanistan are kind.",
       "tokens": [
         {

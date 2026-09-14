@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "جشن امشب",
-  "titleTranslit": "jashn-e emshab",
+  "titleTranslit": "jashn-e imshab",
   "titleEn": "Tonight's celebration",
   "sentences": [
     {
       "target": "امشب در خانه ما جشن است.",
-      "translit": "emshab dar khāna-ye mā jashn ast.",
+      "translit": "imshab dar khāna-ye mā jashn ast.",
       "en": "Tonight there is a celebration at our house.",
       "tokens": [
         {
@@ -39,7 +39,7 @@
     },
     {
       "target": "کسی زنگ دروازه را می‌زند و مهمانان می‌آیند.",
-      "translit": "kasē zang-e darwāza rā mēzanad wa mehmānān mēāyand.",
+      "translit": "kasē zang-e darwāza rā mēzanad wa mihmānān mēāyand.",
       "en": "Someone rings the doorbell and the guests come.",
       "tokens": [
         {
@@ -78,7 +78,7 @@
     },
     {
       "target": "مهمانان در جشن چای با قند می‌خورند.",
-      "translit": "mehmānān dar jashn chāy bā qand mēkhurand.",
+      "translit": "mihmānān dar jashn chāy bā qand mēkhurand.",
       "en": "At the celebration the guests drink tea with sugar.",
       "tokens": [
         {
@@ -179,7 +179,7 @@
     },
     {
       "target": "البته این جشن واقعاً زیبا است.",
-      "translit": "albatta īn jashn wāqean zēbā ast.",
+      "translit": "albatta īn jashn wāqian zēbā ast.",
       "en": "Of course this celebration is really beautiful.",
       "tokens": [
         {

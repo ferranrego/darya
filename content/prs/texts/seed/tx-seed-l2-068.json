@@ -179,7 +179,7 @@
     {
       "questionEn": "What does this shop sell?",
       "questionTarget": "این دکان چه می‌فروشد؟",
-      "questionTranslit": "īn dukān che mēfarōshad?",
+      "questionTranslit": "īn dukān chi mēfarōshad?",
       "options": [
         {
           "target": "گوشت",
@@ -198,7 +198,7 @@
         },
         {
           "target": "کتاب",
-          "translit": "ketāb",
+          "translit": "kitāb",
           "en": "Books"
         }
       ],
@@ -209,7 +209,7 @@
     {
       "questionEn": "What do I buy?",
       "questionTarget": "من چه می‌خرم؟",
-      "questionTranslit": "man che mēkharam?",
+      "questionTranslit": "man chi mēkharam?",
       "options": [
         {
           "target": "سیب و کچالو",
@@ -228,7 +228,7 @@
         },
         {
           "target": "گوشت و برنج",
-          "translit": "gōsht wa berenj",
+          "translit": "gōsht wa birinj",
           "en": "Meat and rice"
         }
       ],

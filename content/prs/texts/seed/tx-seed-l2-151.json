@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "آتش و زمستان",
-  "titleTranslit": "ātash wa zemestān",
+  "titleTranslit": "ātash wa zimistān",
   "titleEn": "Fire and winter",
   "sentences": [
     {
       "target": "ما در زمستان آتش داریم.",
-      "translit": "mā dar zemestān ātash dārēm.",
+      "translit": "mā dar zimistān ātash dārēm.",
       "en": "In winter we have a fire.",
       "tokens": [
         {
@@ -85,7 +85,7 @@
     },
     {
       "target": "مادرکلان من قصه می‌گوید.",
-      "translit": "mādarkalān-e man qessa mēgōyad.",
+      "translit": "mādarkalān-e man qissa mēgōyad.",
       "en": "My grandmother tells a story.",
       "tokens": [
         {

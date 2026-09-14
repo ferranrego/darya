@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L1",
   "titleTarget": "امروز",
-  "titleTranslit": "emrōz",
+  "titleTranslit": "imrōz",
   "titleEn": "Today",
   "sentences": [
     {
       "target": "امروز من به مکتب می‌روم.",
-      "translit": "emrōz man ba maktab mērawam.",
+      "translit": "imrōz man ba maktab mērawam.",
       "en": "Today I go to school.",
       "tokens": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "معلم ما اینجا است.",
-      "translit": "mu'allem-e mā īnjā ast.",
+      "translit": "mu'allim-e mā īnjā ast.",
       "en": "Our teacher is here.",
       "tokens": [
         {
