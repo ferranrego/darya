@@ -532,7 +532,7 @@
               "title": "Asking questions",
               "subtitle": "Question words, yes and no",
               "grammarPoint": "question-words",
-              "grammarPointEn": "Question words chi (what), kī (who), kujā (where), chitōr (how), chand (how many); yes/no questions are made by intonation alone and answered with balē (yes) or na (no).",
+              "grammarPointEn": "Question words chī (چی, what; formal written چه is chi), kī (who), kujā (where), chitōr (how), chand (how many); yes/no questions are made by intonation alone and answered with balē (yes) or na (no).",
               "slides": [
                 {
                   "id": "gs-03-1",
@@ -4786,7 +4786,7 @@
                     },
                     {
                       "target": "می‌نشینید",
-                      "translit": "mēnishinēd"
+                      "translit": "mēnishīnēd"
                     }
                   ]
                 }
@@ -7529,7 +7529,7 @@
                   "extraWords": [
                     {
                       "target": "می‌نشیند",
-                      "translit": "mēnishinad"
+                      "translit": "mēnishīnad"
                     }
                   ]
                 },
@@ -8747,12 +8747,12 @@
               "title": "Building new words",
               "subtitle": "The -ī that makes nouns",
               "grammarPoint": "word-formation",
-              "grammarPointEn": "Word formation: the suffix -ī turns adjectives into abstract nouns (āzād → āzādī 'freedom', zenda → zindagī 'life'); recognizing built words widens vocabulary.",
+              "grammarPointEn": "Word formation: the suffix -ī turns adjectives into abstract nouns (āzād → āzādī 'freedom', khush → khushī 'happiness'); recognizing built words widens vocabulary.",
               "slides": [
                 {
                   "id": "gs-46-1",
                   "title": "The -ī of ideas",
-                  "body": "A final -ī often turns a word into an abstract idea: āzād (free) → āzādī (freedom), zenda (alive) → zindagī (life). Spotting the pattern helps you guess new words.",
+                  "body": "A final -ī often turns a word into an abstract idea: āzād (free) → āzādī (freedom), khush (happy) → khushī (happiness). Spotting the pattern helps you guess new words.",
                   "examples": [
                     {
                       "target": "آزادی مهم است",
@@ -9138,7 +9138,7 @@
                   "distractors": [
                     {
                       "target": "بدانم",
-                      "translit": "bidānam"
+                      "translit": "budānam"
                     },
                     {
                       "target": "دانستم",
@@ -10947,7 +10947,7 @@
               "title": "Words built from words",
               "subtitle": "Compounds and the -gī noun",
               "grammarPoint": "word-formation-2",
-              "grammarPointEn": "Word formation: ham- 'co-' compounds (hamkār = colleague, hamsinf = classmate) and the -gī ending that makes nouns from words ending in -a (zenda → zindagī).",
+              "grammarPointEn": "Word formation: ham- 'co-' compounds (hamkār = colleague, hamsinf = classmate) and the -gī ending that makes nouns from words ending in -a (zinda → zindagī).",
               "slides": [
                 {
                   "id": "gs-60-1",
@@ -10965,7 +10965,7 @@
                 {
                   "id": "gs-60-2",
                   "title": "-gī makes ideas",
-                  "body": "Words ending in -a take -gī to become abstract nouns: zenda (alive) → zindagī (life).",
+                  "body": "Words ending in -a take -gī to become abstract nouns: zinda (alive) → zindagī (life).",
                   "examples": [
                     {
                       "target": "زندگی در قریه آرام است",
@@ -11217,17 +11217,17 @@
                   "id": "ge-61-5",
                   "type": "chooseTranslation",
                   "direction": "toTarget",
-                  "target": "او پرسید که چی می‌خواهم",
-                  "translit": "ō pursīd ki chī mēkhāham",
+                  "target": "او پرسید که چه می‌خواهم",
+                  "translit": "ō pursīd ki chi mēkhāham",
                   "en": "He asked what I wanted.",
                   "distractorsTarget": [
                     {
-                      "target": "او پرسید که چی خواستم",
-                      "translit": "ō pursīd ki chī khāstam"
+                      "target": "او پرسید که چه خواستم",
+                      "translit": "ō pursīd ki chi khāstam"
                     },
                     {
-                      "target": "او گفت که چی می‌خواهم",
-                      "translit": "ō guft ki chī mēkhāham"
+                      "target": "او گفت که چه می‌خواهم",
+                      "translit": "ō guft ki chi mēkhāham"
                     }
                   ]
                 },
@@ -11769,14 +11769,14 @@
             {
               "id": "gl-65",
               "title": "Unless, or else",
-              "subtitle": "magar and wa gar na",
+              "subtitle": "magar and wagarna",
               "grammarPoint": "exception-magar",
-              "grammarPointEn": "Exclusion and warning: magar (unless / except) and wa gar na (otherwise), which introduce a consequence if a condition fails.",
+              "grammarPointEn": "Exclusion and warning: magar (unless / except) and wagarna (otherwise), which introduce a consequence if a condition fails.",
               "slides": [
                 {
                   "id": "gs-65-1",
                   "title": "The escape clauses",
-                  "body": "magar means 'unless' or 'except'. wa gar na means 'otherwise' - it warns what happens if the first clause isn't met.",
+                  "body": "magar means 'unless' or 'except'. wagarna means 'otherwise' - it warns what happens if the first clause isn't met.",
                   "examples": [
                     {
                       "target": "نمی‌روم مگر تو بیایی",
@@ -11786,7 +11786,7 @@
                     },
                     {
                       "target": "زود بیا، وگرنه می‌رویم",
-                      "translit": "zūd biyā, wa gar na mērawēm",
+                      "translit": "zūd biyā, wagarna mērawēm",
                       "en": "Come soon, otherwise we'll go.",
                       "highlight": "وگرنه"
                     }
@@ -11820,7 +11820,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "زود بیا، وگرنه می‌رویم",
-                  "translit": "zūd biyā, wa gar na mērawēm",
+                  "translit": "zūd biyā, wagarna mērawēm",
                   "en": "Come soon, otherwise we'll go.",
                   "distractorsEn": [
                     "Come soon, because we are going.",
@@ -11838,7 +11838,7 @@
                     },
                     {
                       "target": "وگرنه",
-                      "translit": "wa gar na"
+                      "translit": "wagarna"
                     },
                     {
                       "target": "مانده",
@@ -11849,7 +11849,7 @@
                       "translit": "mēshawī"
                     }
                   ],
-                  "translit": "bukhāb, wa gar na mānda mēshawī",
+                  "translit": "bukhāb, wagarna mānda mēshawī",
                   "extraWords": [
                     {
                       "target": "چون",
@@ -11878,7 +11878,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "کار کن، وگرنه پول نمی‌گیری",
-                  "translit": "kār kun, wa gar na pūl namēgīrī",
+                  "translit": "kār kun, wagarna pūl namēgīrī",
                   "en": "Work, otherwise you won't get money.",
                   "distractorsTarget": [
                     {
@@ -11887,7 +11887,7 @@
                     },
                     {
                       "target": "کار کن تا پول بگیری",
-                      "translit": "kār kun tā pūl bigīrī"
+                      "translit": "kār kun tā pūl bugīrī"
                     }
                   ]
                 },
@@ -11903,7 +11903,7 @@
                     },
                     {
                       "target": "وگرنه",
-                      "translit": "wa gar na",
+                      "translit": "wagarna",
                       "en": "otherwise"
                     },
                     {
@@ -12062,7 +12062,7 @@
                     },
                     {
                       "target": "وگرنه",
-                      "translit": "wa gar na",
+                      "translit": "wagarna",
                       "en": "otherwise"
                     }
                   ]
@@ -12911,7 +12911,7 @@
                     },
                     {
                       "target": "وگرنه",
-                      "translit": "wa gar na"
+                      "translit": "wagarna"
                     }
                   ]
                 },
@@ -15412,7 +15412,7 @@
                     },
                     {
                       "target": "وگرنه",
-                      "translit": "wa gar na"
+                      "translit": "wagarna"
                     }
                   ]
                 }
@@ -15614,7 +15614,7 @@
                     },
                     {
                       "target": "وگرنه",
-                      "translit": "wa gar na"
+                      "translit": "wagarna"
                     }
                   ]
                 },
@@ -15972,7 +15972,7 @@
                   "distractorsTarget": [
                     {
                       "target": "به معلم: بشین",
-                      "translit": "ba mu'allim: bushin"
+                      "translit": "ba mu'allim: bushīn"
                     },
                     {
                       "target": "به دوست: بنشینید",

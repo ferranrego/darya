@@ -152,7 +152,7 @@
     {
       "questionEn": "What do we do at home?",
       "questionTarget": "ما در خانه چه می‌کنیم؟",
-      "questionTranslit": "mā dar khāna chē mēkunēm?",
+      "questionTranslit": "mā dar khāna chi mēkunēm?",
       "options": [
         {
           "target": "نان می‌خوریم",
@@ -182,7 +182,7 @@
     {
       "questionEn": "What do I read at home?",
       "questionTarget": "من در خانه چه می‌خوانم؟",
-      "questionTranslit": "man dar khāna chē mēkhānam?",
+      "questionTranslit": "man dar khāna chi mēkhānam?",
       "options": [
         {
           "target": "نامه",

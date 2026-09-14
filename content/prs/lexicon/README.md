@@ -43,20 +43,56 @@ audio, so the Latin line is the only pronunciation a learner gets.
 | 2sg verb ending is **-ī** | hastī, mērawī | hasti |
 | خوب is **khūb**; خوا- is **khā** | khūb, mēkhāham | khōb, mēkhwāham |
 | A final ه is **-a** | khāna, qissa | khāne |
+| Arabic words keep their **a** (the Iranian e is not a kasra) | ta'dād, takrār, takya, asālat, zamānat, wakālat | ti'dād, tikrār |
+| The agent suffix ـنده is **-anda** | nawīsanda, paranda, kunandagān, dihanda | nawīsinda, parinda (but zinda) |
+| A ی written inside a word is **ē or ī**, never short i | rēzish, pēchish, andēsha, hawēlī, bē-rawiya | rizish, bi-rawiya |
+| Letter names have majhul ē; alif with i | alif, bē, pē, tē, sē, chē, khē, rē, zē, zhē, fē | alef, be |
 
 Exempt from the i rule: European loanwords that keep a real e sound (`model`,
-`hotel`, `internet`, the `-lōzhī` sciences) and foreign proper names
-(`tehrān`). They are listed in `SHORT_E_LOANWORDS` in
-`src/lib/lang/prs/translit-check.ts`; add a word there only after checking
-that it really is one. Afghan and Persian names take the rule (`hirāt`,
-`afghānistān`).
+`hotel`, `internet`, the `-lōzhī` sciences), and names of places and people
+outside Afghanistan, which keep their own spelling (`tehrān`, `dānte`). They
+are listed in `SHORT_E_LOANWORDS` in `src/lib/lang/prs/translit-check.ts`;
+add a word there only after checking that it really is one. Afghan names take
+the rule (`hirāt`, `afghānistān`, `mazār`).
 
-`pnpm validate:content` enforces the i, chi and -ēm rules
-(`shortEVowel`, `cheAsWord`, `verb1plIm`). When it fails after new content
-lands, run `node scripts/normalise-dari-spelling.ts --dry`, read the report,
-then `--apply`: it aligns each transliteration with its own Dari line, so it
-can tell a kasra (→ i) from a majhul ē that lost its macron (`mekonad` for
-می‌کند → mēkonad) and re-running it on its own output changes nothing.
+Each loanword has **one** spelling, the one the lexicon teaches at the lowest
+band: `tēlifōn`, `sīstim`, `sigrit`, `mitr`, `restorān`, `model`, `modern`,
+`hāstel`, `kānkrīt`, `plān`. Only the winning spelling may be listed as an
+exception, so a losing variant fails validation if it comes back. The
+prothetic vowel before s + consonant is written **i**, as in `istres`:
+`istāndārd`, `iskan`, `isklerōz`, `ispūtnīk`.
+
+`pnpm validate:content` enforces the i, chi, -ēm and bu- rules
+(`shortEVowel`, `cheAsWord`, `verb1plIm`, `nonBuPrefix`) on every
+transliteration field and, through `shortEInLooseText`, on hub table rows,
+pattern parts and course table cells. It also warns - review, not an error -
+about words whose Dari writes a ی inside the word while the Latin shows no
+long vowel (`medialYehWithoutLongVowel`): whether that vowel is ē or ī needs a
+person (`tārīk`, not `tarēk`).
+
+When it fails after new content lands, run
+`node scripts/normalise-dari-spelling.ts --dry`, read the report, then
+`--apply`: it aligns each transliteration with its own Dari line, so it can
+tell a kasra (→ i) from a majhul ē that lost its macron (`mekonad` for می‌کند
+→ mēkonad), and re-running it on its own output changes nothing.
+
+### Known open issues (a later pass)
+
+Found by the philologist while reviewing the i sweep, deliberately not fixed
+in it, because each is its own sweep of about the same size:
+
+- **Arabic taf'īl nouns written with ē for ī**: `ta'kēd` ×11 beside `ta'kīd`
+  ×4, `ta'yēd`, `ta'sēr`, `ta'mēn`, `tasmēm`, `tafsēr`, `tashkēl`, `tawjēh`.
+  The reverse of the ی rule above.
+- **Iranian o for u** is still widespread: `mēkonad`, `mokhtal`, `mohim`,
+  `konish`, `sho'arā`.
+- **The -ī adjective suffix written -ē** (`ismē-ye`, `ilmē-ye`): -ē is the
+  indefinite ending, not the adjective.
+- Also listed by the validator's ی warning: flattened ī in high-register
+  entries (`kharid`, `tahlil`, `natija`, `daqiqa`, `in` for īn).
+- Waiting for a native speaker: `sākhtimān` or `sākhtmān`; `serī` (سری,
+  series) against `siri`; `injinīr`; `kōlerā` or `kōlarā`; the letter
+  names of ح and ه.
 
 ## Expansion
 

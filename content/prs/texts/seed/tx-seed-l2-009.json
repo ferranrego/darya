@@ -58,7 +58,7 @@
     },
     {
       "target": "من باید در این مورد بدانم.",
-      "translit": "man bāyad dar īn mawrid bidānam.",
+      "translit": "man bāyad dar īn mawrid budānam.",
       "en": "I must know about this case.",
       "tokens": [
         {
@@ -89,7 +89,7 @@
     },
     {
       "target": "او باید به این جای برود.",
-      "translit": "ō bāyad ba īn jāy birawad.",
+      "translit": "ō bāyad ba īn jāy burawad.",
       "en": "He must go to this place.",
       "tokens": [
         {
@@ -179,7 +179,7 @@
     {
       "questionEn": "Where must he go?",
       "questionTarget": "او کجا باید برود؟",
-      "questionTranslit": "ō kujā bāyad birawad?",
+      "questionTranslit": "ō kujā bāyad burawad?",
       "options": [
         {
           "target": "به بازار",

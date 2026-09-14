@@ -60,7 +60,7 @@ export const draftSeedTexts: SeedTextSource[] = [
       { target: "پدرم سیب و نان می‌آورد.", translit: "padaram sēb wa nan mēawarad.", en: "My father brings apples and bread." },
       { target: "مادرم چای درست می‌کند.", translit: "madaram chay dorost mēkonad.", en: "My mother makes tea." },
       { target: "برادر کوچکم با توپ بازی می‌کند.", translit: "baradar-e kochakam ba top bazi mēkonad.", en: "My little brother plays with a ball." },
-      { target: "ما زیر یک درخت بزرگ می‌نشینیم.", translit: "ma zēr-e yak dirakht-e bozorg mēnishīnēm.", en: "We sit under a big tree." },
+      { target: "ما زیر یک درخت بزرگ می‌نشینیم.", translit: "ma zēr-e yak darakht-e bozorg mēnishīnēm.", en: "We sit under a big tree." },
       { target: "همه ما خوشحال هستیم.", translit: "hama-ye ma khoshhal hastēm.", en: "We are all happy." },
     ],
   },

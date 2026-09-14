@@ -152,7 +152,7 @@
     {
       "questionEn": "What has mother cooked?",
       "questionTarget": "مادر چه پخته است؟",
-      "questionTranslit": "mādar chē pukhta ast?",
+      "questionTranslit": "mādar chi pukhta ast?",
       "options": [
         {
           "target": "نان",
@@ -201,7 +201,7 @@
         },
         {
           "target": "بسیار غمگین",
-          "translit": "bisyār ghamgin",
+          "translit": "bisyār ghamgīn",
           "en": "Very sad"
         }
       ],

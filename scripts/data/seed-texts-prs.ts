@@ -164,7 +164,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What do we do at home?",
         questionTarget: "ما در خانه چه می‌کنیم؟",
-        questionTranslit: "mā dar khāna chē mēkunēm?",
+        questionTranslit: "mā dar khāna chi mēkunēm?",
         options: [
           { target: "نان می‌خوریم", translit: "nān mēkhurēm", en: "We eat food" },
           { target: "کار می‌کنیم", translit: "kār mēkunēm", en: "We work" },
@@ -178,7 +178,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What do I read at home?",
         questionTarget: "من در خانه چه می‌خوانم؟",
-        questionTranslit: "man dar khāna chē mēkhānam?",
+        questionTranslit: "man dar khāna chi mēkhānam?",
         options: [
           { target: "نامه", translit: "nāma", en: "A letter" },
           { target: "قصه", translit: "qissa", en: "A story" },
@@ -302,7 +302,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What colour is our house?",
         questionTarget: "رنگ خانه ما چه است؟",
-        questionTranslit: "rang-e khāna-ye mā chē ast?",
+        questionTranslit: "rang-e khāna-ye mā chi ast?",
         options: [
           { target: "سبز", translit: "sabz", en: "Green" },
           { target: "آبی", translit: "ābī", en: "Blue" },
@@ -505,7 +505,7 @@ export const seedTexts: SeedTextSource[] = [
           { target: "مریض", translit: "marīz", en: "Sick" },
           { target: "مانده", translit: "mānda", en: "Tired" },
           { target: "جور", translit: "jōr", en: "Well" },
-          { target: "غمگین", translit: "ghamgin", en: "Sad" },
+          { target: "غمگین", translit: "ghamgīn", en: "Sad" },
         ],
         answerIndex: 2,
         evidenceSentence: 2,
@@ -717,7 +717,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does my grandfather do?",
         questionTarget: "پدرکلانم چه می‌کند؟",
-        questionTranslit: "padarkalān-am chē mēkunad?",
+        questionTranslit: "padarkalān-am chi mēkunad?",
         options: [
           { target: "چای می‌آورد", translit: "chāy mēāwarad", en: "He brings tea" },
           { target: "قصه می‌گوید", translit: "qissa mēgōyad", en: "He tells stories" },
@@ -731,7 +731,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does my grandmother bring?",
         questionTarget: "مادرکلانم چه می‌آورد؟",
-        questionTranslit: "mādarkalān-am chē mēāwarad?",
+        questionTranslit: "mādarkalān-am chi mēāwarad?",
         options: [
           { target: "شیر", translit: "shīr", en: "Milk" },
           { target: "نان", translit: "nān", en: "Bread" },
@@ -825,7 +825,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "اگر او سخت کار کند، معاش بیشتر می‌گیرد.", translit: "agar ō sakht kār kunad, ma'āsh bēshtar mēgīrad.", en: "If he works hard, he gets more pay." },
       { target: "دفتری که او در آن کار می‌کند، نزدیک بازار است.", translit: "daftarē ki ō dar ān kār mēkunad, nazdīk-e bāzār ast.", en: "The office where he works is near the market." },
       { target: "خانه ما هم بازسازی شده است.", translit: "khāna-ye mā ham bāzsāzī shuda ast.", en: "Our house has also been renovated." },
-      { target: "همه ما از این تغییر خوش هستیم.", translit: "hama-ye mā az īn taghīr khush hastēm.", en: "All of us are happy about this change." },
+      { target: "همه ما از این تغییر خوش هستیم.", translit: "hama-ye mā az īn taghyīr khush hastēm.", en: "All of us are happy about this change." },
     ],
     grammarPoints: ["relative-clauses", "real-conditionals", "present-perfect", "passive-shudan", "ezafa-possession"],
   },
@@ -858,7 +858,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "مردم گفتند که دست به دست هم می‌دهند تا مکتب زودتر ساخته شود.", translit: "mardum guftand ki dast ba dast-e ham mēdihand tā maktab zūdtar sākhta shawad.", en: "The people said that they would join hands so that the school would be built sooner." },
       { target: "هر خانه مقداری پول داد و کارگران هم بدون معاش کار کردند.", translit: "har khāna miqdārē pūl dād wa kārgarān ham bidūn-e ma'āsh kār kardand.", en: "Each household gave some money, and the workers also worked without pay." },
       { target: "معلم مکتب گفت که این کار همکاری قوی مردم را نشان می‌دهد.", translit: "mu'allim-e maktab guft ki īn kār hamkārī-ye qawī-ye mardum rā nishān mēdihad.", en: "The school's teacher said that this shows the people's strong cooperation." },
-      { target: "اگر همه دست به دست هم بدهند، هیچ کار دشوار نیست.", translit: "agar hama dast ba dast-e ham bidihand, hēch kār dushwār nēst.", en: "If everyone joins hands, no task is difficult." },
+      { target: "اگر همه دست به دست هم بدهند، هیچ کار دشوار نیست.", translit: "agar hama dast ba dast-e ham budihand, hēch kār dushwār nēst.", en: "If everyone joins hands, no task is difficult." },
       { target: "وقتی مکتب باز شد، همه مردم قریه جشن گرفتند.", translit: "waqt-e maktab bāz shud, hama-ye mardum-e qarya jashn giriftand.", en: "When the school opened, all the villagers held a celebration." },
     ],
     grammarPoints: ["when-clauses", "reported-speech", "purpose-clauses", "real-conditionals", "passive-shudan"],
@@ -943,7 +943,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "With what do I see?",
         questionTarget: "من با چه می‌بینم؟",
-        questionTranslit: "man bā chē mēbīnam?",
+        questionTranslit: "man bā chi mēbīnam?",
         options: [
           { target: "با چشم", translit: "bā chashm", en: "With the eye" },
           { target: "با گوش", translit: "bā gōsh", en: "With the ear" },
@@ -1079,7 +1079,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does the father sell?",
         questionTarget: "پدر چه می‌فروشد؟",
-        questionTranslit: "padar chē mēfurōshad?",
+        questionTranslit: "padar chi mēfurōshad?",
         options: [
           { target: "نان", translit: "nān", en: "Bread" },
           { target: "چای", translit: "chāy", en: "Tea" },
@@ -1093,7 +1093,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does he close?",
         questionTarget: "او چه می‌بندد؟",
-        questionTranslit: "ō chē mēbandad?",
+        questionTranslit: "ō chi mēbandad?",
         options: [
           { target: "دکان", translit: "dukān", en: "The shop" },
           { target: "کتاب", translit: "kitāb", en: "The book" },
@@ -1229,7 +1229,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What comes?",
         questionTarget: "چه می‌آید؟",
-        questionTranslit: "chē mēāyad?",
+        questionTranslit: "chi mēāyad?",
         options: [
           { target: "برف", translit: "barf", en: "Snow" },
           { target: "باد", translit: "bād", en: "Wind" },
@@ -1364,7 +1364,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does the boy have?",
         questionTarget: "پسر چه دارد؟",
-        questionTranslit: "pisar chē dārad?",
+        questionTranslit: "pisar chi dārad?",
         options: [
           { target: "موتر", translit: "mōtar", en: "A car" },
           { target: "کتاب", translit: "kitāb", en: "A book" },
@@ -1501,7 +1501,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does the father do?",
         questionTarget: "پدر چه می‌کند؟",
-        questionTranslit: "padar chē mēkunad?",
+        questionTranslit: "padar chi mēkunad?",
         options: [
           { target: "کار می‌کند", translit: "kār mēkunad", en: "He works" },
           { target: "چای می‌خورد", translit: "chāy mēkhurad", en: "He drinks tea" },
@@ -1762,7 +1762,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "With what does he hear?",
         questionTarget: "او با چه می‌شنود؟",
-        questionTranslit: "ō bā chē mēshinawad?",
+        questionTranslit: "ō bā chi mēshinawad?",
         options: [
           { target: "با چشم", translit: "bā chashm", en: "With the eye" },
           { target: "با دست", translit: "bā dast", en: "With the hand" },
@@ -1800,8 +1800,8 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "این جای خوبی است.", translit: "īn jāy-e khūbē ast.", en: "This is a good place." },
       { target: "زبان این کشور دری است.", translit: "zabān-e īn kishwar darī ast.", en: "The language of this country is Dari." },
-      { target: "من باید در این مورد بدانم.", translit: "man bāyad dar īn mawrid bidānam.", en: "I must know about this case." },
-      { target: "او باید به این جای برود.", translit: "ō bāyad ba īn jāy birawad.", en: "He must go to this place." },
+      { target: "من باید در این مورد بدانم.", translit: "man bāyad dar īn mawrid budānam.", en: "I must know about this case." },
+      { target: "او باید به این جای برود.", translit: "ō bāyad ba īn jāy burawad.", en: "He must go to this place." },
     ],
     questions: [
       {
@@ -1821,7 +1821,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "Where must he go?",
         questionTarget: "او کجا باید برود؟",
-        questionTranslit: "ō kujā bāyad birawad?",
+        questionTranslit: "ō kujā bāyad burawad?",
         options: [
           { target: "به بازار", translit: "ba bāzār", en: "To the bazaar" },
           { target: "به مکتب", translit: "ba maktab", en: "To school" },
@@ -2071,7 +2071,7 @@ export const seedTexts: SeedTextSource[] = [
           { target: "کار کند", translit: "kār kunad", en: "Work" },
           { target: "بازی کند", translit: "bāzī kunad", en: "Play" },
           { target: "بخوابد", translit: "bikhābad", en: "Sleep" },
-          { target: "بخورد", translit: "bikhurad", en: "Eat" },
+          { target: "بخورد", translit: "bukhurad", en: "Eat" },
         ],
         answerIndex: 0,
         evidenceSentence: 1,
@@ -2249,7 +2249,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What colour is his blood?",
         questionTarget: "خون او چه رنگ است؟",
-        questionTranslit: "khūn-e ō chē rang ast?",
+        questionTranslit: "khūn-e ō chi rang ast?",
         options: [
           { target: "سیاه", translit: "siyāh", en: "Black" },
           { target: "سفید", translit: "safēd", en: "White" },
@@ -2371,7 +2371,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "With what do we go to peace?",
         questionTarget: "ما با چه به صلح می‌رویم؟",
-        questionTranslit: "mā bā chē ba sulh mērawēm?",
+        questionTranslit: "mā bā chi ba sulh mērawēm?",
         options: [
           { target: "با جنگ", translit: "bā jang", en: "With war" },
           { target: "با صبر", translit: "bā sabr", en: "With patience" },
@@ -2385,7 +2385,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does he name?",
         questionTarget: "او چه می‌نامد؟",
-        questionTranslit: "ō chē mēnāmad?",
+        questionTranslit: "ō chi mēnāmad?",
         options: [
           { target: "یک کتاب", translit: "yak kitāb", en: "A book" },
           { target: "یک آهنگ", translit: "yak āhang", en: "A song" },
@@ -2506,7 +2506,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What do I count?",
         questionTarget: "من چه می‌شمارم؟",
-        questionTranslit: "man chē mēshumāram?",
+        questionTranslit: "man chi mēshumāram?",
         options: [
           { target: "موی او", translit: "mōy-e ō", en: "His hair" },
           { target: "پیسه", translit: "paysa", en: "Money" },
@@ -2852,7 +2852,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "With what does the man work?",
         questionTarget: "مرد با چه کار می‌کند؟",
-        questionTranslit: "mard bā chē kār mēkunad?",
+        questionTranslit: "mard bā chi kār mēkunad?",
         options: [
           { target: "با اره", translit: "bā arra", en: "With the saw" },
           { target: "با دست", translit: "bā dast", en: "With the hand" },
@@ -2866,7 +2866,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does this season have?",
         questionTarget: "این فصل چه دارد؟",
-        questionTranslit: "īn fasl chē dārad?",
+        questionTranslit: "īn fasl chi dārad?",
         options: [
           { target: "باران", translit: "bārān", en: "Rain" },
           { target: "برف", translit: "barf", en: "Snow" },
@@ -3122,7 +3122,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What is in our garden?",
         questionTarget: "در باغ ما چه است؟",
-        questionTranslit: "dar bāgh-e mā chē ast?",
+        questionTranslit: "dar bāgh-e mā chi ast?",
         options: [
           { target: "درخت سیب", translit: "darakht-e sēb", en: "An apple tree" },
           { target: "درخت انگور", translit: "darakht-e angūr", en: "A grape vine" },
@@ -3257,7 +3257,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What has mother cooked?",
         questionTarget: "مادر چه پخته است؟",
-        questionTranslit: "mādar chē pukhta ast?",
+        questionTranslit: "mādar chi pukhta ast?",
         options: [
           { target: "نان", translit: "nān", en: "Bread" },
           { target: "کلچه", translit: "kulcha", en: "Cookies" },
@@ -3276,7 +3276,7 @@ export const seedTexts: SeedTextSource[] = [
           { target: "بسیار خوش", translit: "bisyār khush", en: "Very happy" },
           { target: "بسیار مانده", translit: "bisyār mānda", en: "Very tired" },
           { target: "بسیار مریض", translit: "bisyār marīz", en: "Very sick" },
-          { target: "بسیار غمگین", translit: "bisyār ghamgin", en: "Very sad" },
+          { target: "بسیار غمگین", translit: "bisyār ghamgīn", en: "Very sad" },
         ],
         answerIndex: 0,
         evidenceSentence: 3,
@@ -3296,7 +3296,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "پدرکلانم مریض است.", translit: "padar-kalān-am marēz ast.", en: "My grandfather is sick." },
       { target: "ما او را به شفاخانه می‌بریم.", translit: "mā ō rā ba shafākhāna mēbarēm.", en: "We take him to the hospital." },
       { target: "داکتر او را معاینه می‌کند.", translit: "dāktar ō rā mu'āyina mēkunad.", en: "The doctor examines him." },
-      { target: "او باید دوا بخورد تا جور شود.", translit: "ō bāyad dawā bikhurad tā jōr shawad.", en: "He must take medicine to get well." },
+      { target: "او باید دوا بخورد تا جور شود.", translit: "ō bāyad dawā bukhurad tā jōr shawad.", en: "He must take medicine to get well." },
     ],
     questions: [
       {
@@ -3430,7 +3430,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "برادرم کورس انگلیسی می‌خواند.", translit: "barādar-am kōrs-e inglīsī mēkhānad.", en: "My brother studies an English course." },
       { target: "او هر روز کتاب‌های نو می‌گیرد.", translit: "ō har rōz kitāb-hā-ye naw mēgīrad.", en: "He gets new books every day." },
-      { target: "من هم می‌خواهم زبان یاد بگیرم.", translit: "man ham mēkhāham zabān yād bigīram.", en: "I also want to learn a language." },
+      { target: "من هم می‌خواهم زبان یاد بگیرم.", translit: "man ham mēkhāham zabān yād bugīram.", en: "I also want to learn a language." },
       { target: "زبان خواندن برای آینده خوب است.", translit: "zabān khāndan barā-ye āyanda khūb ast.", en: "Studying a language is good for the future." },
     ],
     questions: [
@@ -3541,7 +3541,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What do the shopkeepers sell?",
         questionTarget: "دکاندارها چه می‌فروشند؟",
-        questionTranslit: "dukāndār-hā chē mēfurōshand?",
+        questionTranslit: "dukāndār-hā chi mēfurōshand?",
         options: [
           { target: "گوشت و شیر", translit: "gōsht wa shīr", en: "Meat and milk" },
           { target: "نان و چای", translit: "nān wa chāy", en: "Bread and tea" },
@@ -3676,7 +3676,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What do I take to them?",
         questionTarget: "من برایشان چه می‌برم؟",
-        questionTranslit: "man barā-yishān chē mēbaram?",
+        questionTranslit: "man barā-yishān chi mēbaram?",
         options: [
           { target: "نان و پنیر", translit: "nān wa panēr", en: "Bread and cheese" },
           { target: "شیر و گوشت", translit: "shīr wa gōsht", en: "Milk and meat" },
@@ -3791,7 +3791,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "امروز در پوهنتون امتحان داریم.", translit: "imrōz dar pōhantūn imtihān dārēm.", en: "Today we have an exam at the university." },
       { target: "من دیشب بسیار درس خواندم.", translit: "man dīshab bisyār dars khāndam.", en: "I studied a lot last night." },
       { target: "سوال‌ها کمی مشکل بود.", translit: "su'āl-hā kamē mushkil būd.", en: "The questions were a bit difficult." },
-      { target: "امیدوارم نمره خوب بگیرم.", translit: "umēdwār-am nimra-ye khūb bigīram.", en: "I hope to get a good grade." },
+      { target: "امیدوارم نمره خوب بگیرم.", translit: "umēdwār-am nimra-ye khūb bugīram.", en: "I hope to get a good grade." },
     ],
     questions: [
       {
@@ -3935,7 +3935,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does he give me?",
         questionTarget: "او به من چه می‌دهد؟",
-        questionTranslit: "ō ba man chē mēdihad?",
+        questionTranslit: "ō ba man chi mēdihad?",
         options: [
           { target: "یک قلم", translit: "yak qalam", en: "A pen" },
           { target: "یک نان", translit: "yak nān", en: "A bread" },
@@ -4077,7 +4077,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does our teacher teach?",
         questionTarget: "معلم ما چه درس می‌دهد؟",
-        questionTranslit: "mu'allim-e mā chē dars mēdihad?",
+        questionTranslit: "mu'allim-e mā chi dars mēdihad?",
         options: [
           { target: "زبان انگلیسی", translit: "zabān-e inglīsī", en: "The English language" },
           { target: "حساب", translit: "hisāb", en: "Arithmetic" },
@@ -4091,7 +4091,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does the teacher give us?",
         questionTarget: "معلم به ما چه می‌دهد؟",
-        questionTranslit: "mu'allim ba mā chē mēdihad?",
+        questionTranslit: "mu'allim ba mā chi mēdihad?",
         options: [
           { target: "یک کتاب نو", translit: "yak kitāb-e naw", en: "A new book" },
           { target: "یک کتاب کهنه", translit: "yak kitāb-e kuhna", en: "An old book" },
@@ -4217,7 +4217,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What colour is my eye?",
         questionTarget: "چشم من چه رنگ است؟",
-        questionTranslit: "chashm-e man chē rang ast?",
+        questionTranslit: "chashm-e man chi rang ast?",
         options: [
           { target: "سبز", translit: "sabz", en: "Green" },
           { target: "آبی", translit: "ābī", en: "Blue" },
@@ -4356,7 +4356,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What is today?",
         questionTarget: "امروز چه است؟",
-        questionTranslit: "imrōz chē ast?",
+        questionTranslit: "imrōz chi ast?",
         options: [
           { target: "سال کهنه", translit: "sāl-e kuhna", en: "The old year" },
           { target: "سال نو", translit: "sāl-e naw", en: "The new year" },
@@ -4370,7 +4370,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What do I want?",
         questionTarget: "من چه می‌خواهم؟",
-        questionTranslit: "man chē mēkhāham?",
+        questionTranslit: "man chi mēkhāham?",
         options: [
           { target: "کتاب نو", translit: "kitāb-e naw", en: "New books" },
           { target: "خانه نو", translit: "khāna-ye naw", en: "A new house" },
@@ -4496,7 +4496,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What am I learning?",
         questionTarget: "من چه یاد می‌گیرم؟",
-        questionTranslit: "man chē yād mēgīram?",
+        questionTranslit: "man chi yād mēgīram?",
         options: [
           { target: "زبان انگلیسی", translit: "zabān-e inglīsī", en: "The English language" },
           { target: "زبان دری", translit: "zabān-e darī", en: "The Dari language" },
@@ -4510,7 +4510,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What do the students do?",
         questionTarget: "شاگردان چه می‌کنند؟",
-        questionTranslit: "shāgirdān chē mēkunand?",
+        questionTranslit: "shāgirdān chi mēkunand?",
         options: [
           { target: "بازی می‌کنند", translit: "bāzī mēkunand", en: "They play" },
           { target: "کار می‌کنند", translit: "kār mēkunand", en: "They work" },
@@ -4636,7 +4636,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does my mother bring every morning?",
         questionTarget: "مادر من هر صبح چه می‌آورد؟",
-        questionTranslit: "mādar-e man har subh chē mēāwarad?",
+        questionTranslit: "mādar-e man har subh chi mēāwarad?",
         options: [
           { target: "گوشت", translit: "gōsht", en: "Meat" },
           { target: "نان", translit: "nān", en: "Bread" },
@@ -4776,7 +4776,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does my friend want?",
         questionTarget: "دوست من چه می‌خواهد؟",
-        questionTranslit: "dōst-e man chē mēkhāhad?",
+        questionTranslit: "dōst-e man chi mēkhāhad?",
         options: [
           { target: "کمک", translit: "kumak", en: "Help" },
           { target: "کتاب", translit: "kitāb", en: "A book" },
@@ -4914,7 +4914,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What falls in winter?",
         questionTarget: "در زمستان چه می‌بارد؟",
-        questionTranslit: "dar zimistān chē mēbārad?",
+        questionTranslit: "dar zimistān chi mēbārad?",
         options: [
           { target: "برف", translit: "barf", en: "Snow" },
           { target: "باران", translit: "bārān", en: "Rain" },
@@ -5066,7 +5066,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What colour is the room?",
         questionTarget: "رنگ اتاق چه است؟",
-        questionTranslit: "rang-e utāq chē ast?",
+        questionTranslit: "rang-e utāq chi ast?",
         options: [
           { target: "سبز", translit: "sabz", en: "Green" },
           { target: "سرخ", translit: "surkh", en: "Red" },
@@ -5190,7 +5190,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does my mother bring?",
         questionTarget: "مادر من چه می‌آورد؟",
-        questionTranslit: "mādar-e man chē mēāwarad?",
+        questionTranslit: "mādar-e man chi mēāwarad?",
         options: [
           { target: "چای و کلچه", translit: "chāy wa kulcha", en: "Tea and cookies" },
           { target: "چای و میوه", translit: "chāy wa mēwa", en: "Tea and fruit" },
@@ -5204,7 +5204,7 @@ export const seedTexts: SeedTextSource[] = [
       {
         questionEn: "What does the guest sing?",
         questionTarget: "مهمان چه می‌خواند؟",
-        questionTranslit: "mihmān chē mēkhānad?",
+        questionTranslit: "mihmān chi mēkhānad?",
         options: [
           { target: "یک کتاب", translit: "yak kitāb", en: "A book" },
           { target: "یک قصه", translit: "yak qissa", en: "A story" },
@@ -5450,7 +5450,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "خواهر من در پوهنتون می‌خواند.", translit: "khāhar-e man dar pohantūn mēkhānad.", en: "My sister studies at the university." },
       { target: "پوهنتون از خانه ما دور است.", translit: "pohantūn az khāna-ye mā dūr ast.", en: "The university is far from our house." },
-      { target: "پوهنتون هر سال شاگردان نو می‌گیرد.", translit: "pohantūn har sāl shāgirdān-e naw mēgērad.", en: "The university takes new students every year." },
+      { target: "پوهنتون هر سال شاگردان نو می‌گیرد.", translit: "pohantūn har sāl shāgirdān-e naw mēgīrad.", en: "The university takes new students every year." },
       { target: "درس پوهنتون بسیار سخت است.", translit: "dars-e pohantūn bisyār sakht ast.", en: "The university lesson is very difficult." },
       { target: "شاید او الان در پوهنتون است.", translit: "shāyad ō al'ān dar pohantūn ast.", en: "Maybe she is at the university now." },
       { target: "به نظر من او یک شاگرد خوب است.", translit: "ba nazar-e man ō yak shāgird-e khūb ast.", en: "In my opinion she is a good student." },
@@ -7519,7 +7519,7 @@ export const seedTexts: SeedTextSource[] = [
       { target: "سال گذشته ما به مزار سفر کردیم.", translit: "sāl-e guzashta mā ba mazār safar kardēm.", en: "Last year we travelled to Mazar." },
       { target: "مادرم گفت که این شهر بسیار مقبول است.", translit: "mādaram guft ki īn shahr bisyār maqbūl ast.", en: "My mother said that this city is very beautiful." },
       { target: "ما سه روز آنجا ماندیم و بعد برگشتیم.", translit: "mā sē rōz ānjā māndēm wa ba'd bargashtēm.", en: "We stayed there three days and then came back." },
-      { target: "من می‌خواهم که دوباره به مزار بروم.", translit: "man mēkhāham ki dōbāra ba mazār birawam.", en: "I want to go to Mazar again." },
+      { target: "من می‌خواهم که دوباره به مزار بروم.", translit: "man mēkhāham ki dōbāra ba mazār burawam.", en: "I want to go to Mazar again." },
     ],
   },
   {
@@ -7532,7 +7532,7 @@ export const seedTexts: SeedTextSource[] = [
     sentences: [
       { target: "دیروز ما یک امتحان مشکل داشتیم.", translit: "dīrōz mā yak imtihān-e mushkil dāshtēm.", en: "Yesterday we had a difficult exam." },
       { target: "سوال‌ها از امتحان گذشته مشکل‌تر بود.", translit: "sawāl-hā az imtihān-e guzashta mushkil-tar būd.", en: "The questions were harder than the last exam." },
-      { target: "معلم گفت که باید بیشتر کوشش کنیم.", translit: "mu'allim guft ki bāyad bishtar kōshish kunēm.", en: "The teacher said we must try harder." },
+      { target: "معلم گفت که باید بیشتر کوشش کنیم.", translit: "mu'allim guft ki bāyad bēshtar kōshish kunēm.", en: "The teacher said we must try harder." },
       { target: "من فکر می‌کنم که نتیجه خوب می‌شود.", translit: "man fikr mēkunam ki natīja khūb mēshawad.", en: "I think the result will be good." },
     ],
   },
@@ -7573,7 +7573,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "The doctor and the patient",
     sentences: [
       { target: "دیروز خواهرم مریض شد و ما به شفاخانه رفتیم.", translit: "dīrōz khāharam marīz shud wa mā ba shafākhāna raftēm.", en: "Yesterday my sister got ill and we went to the hospital." },
-      { target: "داکتر گفت که او باید دوا بخورد.", translit: "dāktar guft ki ō bāyad dawā bikhurad.", en: "The doctor said she must take medicine." },
+      { target: "داکتر گفت که او باید دوا بخورد.", translit: "dāktar guft ki ō bāyad dawā bukhurad.", en: "The doctor said she must take medicine." },
       { target: "امروز حال او از دیروز بهتر است.", translit: "imrōz hāl-e ō az dīrōz bihtar ast.", en: "Today she is better than yesterday." },
       { target: "ما خوش هستیم که او زود جور می‌شود.", translit: "mā khush hastēm ki ō zūd jōr mēshawad.", en: "We are glad that she gets well soon." },
     ],
@@ -7646,7 +7646,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Fire and wind",
     sentences: [
       { target: "امشب باد سرد می‌آید.", translit: "imshab bād-e sard mēāyad.", en: "Tonight a cold wind comes." },
-      { target: "ما در حویلی آتش می‌کنیم.", translit: "mā dar hawēli ātash mēkunēm.", en: "We make a fire in the courtyard." },
+      { target: "ما در حویلی آتش می‌کنیم.", translit: "mā dar hawēlī ātash mēkunēm.", en: "We make a fire in the courtyard." },
       { target: "آتش روشن و گرم است.", translit: "ātash rōshan wa garm ast.", en: "The fire is bright and warm." },
       { target: "باد آتش را کلان می‌کند.", translit: "bād ātash rā kalān mēkunad.", en: "The wind makes the fire bigger." },
       { target: "ما طرف آتش می‌نشینیم.", translit: "mā taraf-e ātash mēnishīnēm.", en: "We sit toward the fire." },

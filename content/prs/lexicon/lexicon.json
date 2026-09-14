@@ -2754,7 +2754,7 @@
         "بنویس"
       ],
       "exampleTarget": "نامت را اینجا بنویس.",
-      "exampleTranslit": "nāmat rā īnjā banawīs.",
+      "exampleTranslit": "nāmat rā īnjā bunawīs.",
       "exampleEn": "Write your name here.",
       "tags": [
         "Arts & Entertainment",
@@ -3548,7 +3548,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "من باید بروم.",
-      "exampleTranslit": "man bāyad birawam.",
+      "exampleTranslit": "man bāyad burawam.",
       "exampleEn": "I must go.",
       "tags": [
         "Actions & Movement"
@@ -7064,7 +7064,7 @@
       "pos": "determiner",
       "register": "neutral",
       "exampleTarget": "همان کتاب را بده.",
-      "exampleTranslit": "hamān kitāb rā bidih.",
+      "exampleTranslit": "hamān kitāb rā budih.",
       "exampleEn": "Give me that same book.",
       "variants": [
         "همو"
@@ -7585,7 +7585,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "زود برو.",
-      "exampleTranslit": "zūd biraw.",
+      "exampleTranslit": "zūd buraw.",
       "exampleEn": "Go quickly.",
       "tags": [
         "Time & Calendar",
@@ -10724,7 +10724,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "نقشه کابل را ببین.",
-      "exampleTranslit": "naqsha-ye kābul rā bibīn.",
+      "exampleTranslit": "naqsha-ye kābul rā bubīn.",
       "exampleEn": "Look at the map of Kabul.",
       "tags": [
         "Travel & Transportation"
@@ -11016,7 +11016,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "برگ درخت زرد شد.",
-      "exampleTranslit": "barg-e dirakht zard shud.",
+      "exampleTranslit": "barg-e darakht zard shud.",
       "exampleEn": "The tree leaf turned yellow.",
       "tags": [
         "Nature & Environment"
@@ -11829,7 +11829,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "مستقیم برو.",
-      "exampleTranslit": "mustaqīm biraw.",
+      "exampleTranslit": "mustaqīm buraw.",
       "exampleEn": "Go straight.",
       "tags": [
         "Abstract Concepts"
@@ -12168,7 +12168,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "طول اتاق را با متر اندازه بگیر.",
-      "exampleTranslit": "tūl-e utāq rā bā mitr andāza bigīr.",
+      "exampleTranslit": "tūl-e utāq rā bā mitr andāza bugīr.",
       "exampleEn": "Measure the length of the room with a tape measure.",
       "tags": [
         "Abstract Concepts"
@@ -12688,7 +12688,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "یک مثال بده.",
-      "exampleTranslit": "yak misāl bidih.",
+      "exampleTranslit": "yak misāl budih.",
       "exampleEn": "Give an example.",
       "tags": [
         "Advanced"
@@ -13429,7 +13429,7 @@
       "id": "lx-1049",
       "target": "تغییر",
       "targetNormalized": "تغییر",
-      "translit": "taghīr",
+      "translit": "taghyīr",
       "glossEn": "change",
       "pos": "noun",
       "freqRank": 662,
@@ -13437,7 +13437,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "تغییر همیشه خوب نیست.",
-      "exampleTranslit": "taghīr hamēsha khūb nēst.",
+      "exampleTranslit": "taghyīr hamēsha khūb nēst.",
       "exampleEn": "Change is not always good.",
       "tags": [
         "Abstract Concepts"
@@ -15160,7 +15160,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "از پیاده‌رو بروید.",
-      "exampleTranslit": "az piyāda-raw birawēd.",
+      "exampleTranslit": "az piyāda-raw burawēd.",
       "exampleEn": "Walk on the sidewalk.",
       "tags": [
         "Abstract Concepts"
@@ -15394,7 +15394,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "بریک را محکم بگیر.",
-      "exampleTranslit": "brēk rā muhkam bigīr.",
+      "exampleTranslit": "brēk rā muhkam bugīr.",
       "exampleEn": "Hold the brake firmly.",
       "tags": [
         "Abstract Concepts"
@@ -15803,13 +15803,13 @@
     },
     {
       "target": "پرنده",
-      "translit": "parinda",
+      "translit": "paranda",
       "glossEn": "bird",
       "pos": "noun",
       "register": "neutral",
       "variants": [],
       "exampleTarget": "پرنده بالای درخت است.",
-      "exampleTranslit": "parinda bālā-ye darakht ast.",
+      "exampleTranslit": "paranda bālā-ye darakht ast.",
       "exampleEn": "The bird is on the tree.",
       "tags": [
         "beginner-core",
@@ -18173,7 +18173,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بنابراین ما تصمیم گرفتیم برویم.",
-      "exampleTranslit": "binābar'īn mā tasmīm giriftēm birawēm.",
+      "exampleTranslit": "binābar'īn mā tasmīm giriftēm burawēm.",
       "exampleEn": "Therefore, we decided to go.",
       "tags": [
         "Grammar & Connectors"
@@ -18815,7 +18815,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "اطراف خانه درخت است.",
-      "exampleTranslit": "atrāf-e khāna dirakht ast.",
+      "exampleTranslit": "atrāf-e khāna darakht ast.",
       "exampleEn": "There are trees in the surroundings of the house.",
       "tags": [
         "Grammar & Connectors"
@@ -19702,7 +19702,7 @@
       "pos": "noun",
       "register": "neutral",
       "exampleTarget": "کلاه خود را بگیر.",
-      "exampleTranslit": "kulāh-e khud rā bigīr.",
+      "exampleTranslit": "kulāh-e khud rā bugīr.",
       "exampleEn": "Take your hat.",
       "variants": [],
       "tags": [
@@ -19934,7 +19934,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "از کوچه فرعی برو.",
-      "exampleTranslit": "az kōcha-ye far'ī biraw.",
+      "exampleTranslit": "az kōcha-ye far'ī buraw.",
       "exampleEn": "Go through the side street.",
       "tags": [
         "Travel & Transportation"
@@ -20662,7 +20662,7 @@
         "دماسنج"
       ],
       "exampleTarget": "درجه حرارت را با ترمامیتر اندازه بگیرید.",
-      "exampleTranslit": "daraja-ye harārat rā bā tarmāmītar andāza bigīrēd.",
+      "exampleTranslit": "daraja-ye harārat rā bā tarmāmītar andāza bugīrēd.",
       "exampleEn": "Measure the temperature with a thermometer.",
       "tags": [
         "Abstract Concepts"
@@ -21340,7 +21340,7 @@
       "register": "spoken",
       "variants": [],
       "exampleTarget": "از روی دندآب خیز بزن.",
-      "exampleTranslit": "az rō-ye dandāb khēz bizan.",
+      "exampleTranslit": "az rō-ye dandāb khēz buzan.",
       "exampleEn": "Jump over the puddle.",
       "tags": [
         "Abstract Concepts"
@@ -22983,7 +22983,7 @@
         "تناب"
       ],
       "exampleTarget": "ریسمان را محکم بگیر.",
-      "exampleTranslit": "rīsmān rā muhkam bigīr.",
+      "exampleTranslit": "rīsmān rā muhkam bugīr.",
       "exampleEn": "Hold the rope tightly.",
       "tags": [
         "Abstract Concepts"
@@ -23271,7 +23271,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "او هنر مدرن را دوست دارد.",
-      "exampleTranslit": "ō hunar-e mudern rā dōst dārad.",
+      "exampleTranslit": "ō hunar-e modern rā dōst dārad.",
       "exampleEn": "He likes modern art.",
       "tags": [
         "Arts & Entertainment"
@@ -26735,7 +26735,7 @@
         "تصمیم می‌گیرد"
       ],
       "exampleTarget": "من تصمیم گرفتم بروم.",
-      "exampleTranslit": "man tasmīm giriftam birawam.",
+      "exampleTranslit": "man tasmīm giriftam burawam.",
       "exampleEn": "I decided to go.",
       "tags": [
         "Actions & Movement"
@@ -26908,7 +26908,7 @@
         "حدس می‌زند"
       ],
       "exampleTarget": "می‌توانی حدس بزنی چه اتفاقی افتاد؟",
-      "exampleTranslit": "mētāwānī hads bizanī chi ittifāqī uftād?",
+      "exampleTranslit": "mētāwānī hads buzanī chi ittifāqī uftād?",
       "exampleEn": "Can you guess what happened?",
       "tags": [
         "Actions & Movement"
@@ -27334,7 +27334,7 @@
         "احترام می‌گذارد"
       ],
       "exampleTarget": "ما باید به بزرگان احترام بگذاریم.",
-      "exampleTranslit": "mā bāyad ba buzurgān ihtirām biguzārēm.",
+      "exampleTranslit": "mā bāyad ba buzurgān ihtirām buguzārēm.",
       "exampleEn": "We must respect the elders.",
       "tags": [
         "Actions & Movement"
@@ -27428,7 +27428,7 @@
         "پیشنهاد می‌دهد"
       ],
       "exampleTarget": "دوستم پیشنهاد داد که به پارک برویم.",
-      "exampleTranslit": "dōst-am pēshnihād dād ki ba pārk birawēm.",
+      "exampleTranslit": "dōst-am pēshnihād dād ki ba pārk burawēm.",
       "exampleEn": "My friend suggested that we go to the park.",
       "tags": [
         "Actions & Movement"
@@ -28593,7 +28593,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سیستم عصبی پیام‌ها را به مغز می‌فرستد.",
-      "exampleTranslit": "sīstam-e asabī payām-hā rā ba maghz mēfiristad.",
+      "exampleTranslit": "sīstim-e asabī payām-hā rā ba maghz mēfiristad.",
       "exampleEn": "The nervous system sends messages to the brain.",
       "tags": [
         "Abstract Concepts"
@@ -28725,7 +28725,7 @@
         "نفس می‌کشد"
       ],
       "exampleTarget": "عمیق نفس بکشید.",
-      "exampleTranslit": "amīq nafs bikashēd.",
+      "exampleTranslit": "amīq nafs bukashēd.",
       "exampleEn": "Breathe deeply.",
       "tags": [
         "Actions & Movement"
@@ -29360,7 +29360,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سیستم مالیاتی اصلاح خواهد شد.",
-      "exampleTranslit": "sīstam-e mālīyātī islāh khāhad shud.",
+      "exampleTranslit": "sīstim-e mālīyātī islāh khāhad shud.",
       "exampleEn": "The tax system will be reformed.",
       "tags": [
         "Money & Finance"
@@ -30103,7 +30103,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "میمون‌ها روی شاخه‌های درختان بازی می‌کردند.",
-      "exampleTranslit": "maymūn-hā rō-ye shākha-hā-ye dirakhtān bāzī mēkardand.",
+      "exampleTranslit": "maymūn-hā rō-ye shākha-hā-ye darakhtān bāzī mēkardand.",
       "exampleEn": "The monkeys were playing on the tree branches.",
       "tags": [
         "Animals & Pets"
@@ -30579,7 +30579,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سیستم بانکداری نیاز به مدرن‌سازی دارد.",
-      "exampleTranslit": "sīstam-e bānkdārī niyāz ba mudirn-sāzī dārad.",
+      "exampleTranslit": "sīstim-e bānkdārī niyāz ba modern-sāzī dārad.",
       "exampleEn": "The banking system needs modernization.",
       "tags": [
         "Abstract Concepts"
@@ -30736,7 +30736,7 @@
         "پنهان می‌شود"
       ],
       "exampleTarget": "پشت درخت پنهان شدم.",
-      "exampleTranslit": "pusht-e dirakht pinhān shudam.",
+      "exampleTranslit": "pusht-e darakht pinhān shudam.",
       "exampleEn": "I hid behind the tree.",
       "tags": [
         "Actions & Movement"
@@ -32939,7 +32939,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "از طریق ایمیل تماس بگیرید.",
-      "exampleTranslit": "az tarīq-e ēmēl tamās bigīrēd.",
+      "exampleTranslit": "az tarīq-e ēmēl tamās bugīrēd.",
       "exampleEn": "Contact via email.",
       "tags": [
         "Grammar & Connectors"
@@ -34306,7 +34306,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "او نمک را در آب حل کرد تا محلول بسازد.",
-      "exampleTranslit": "ū namak rā dar āb hal kard tā mahlūl bisāzad.",
+      "exampleTranslit": "ū namak rā dar āb hal kard tā mahlūl busāzad.",
       "exampleEn": "He dissolved salt in water to make a solution.",
       "tags": [
         "Abstract Concepts"
@@ -36194,7 +36194,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "کارایی سیستم بهتر شده است.",
-      "exampleTranslit": "kārāyī-ye sīstam bihtar shuda ast.",
+      "exampleTranslit": "kārāyī-ye sīstim bihtar shuda ast.",
       "exampleEn": "The system efficiency has improved.",
       "tags": [
         "Abstract Concepts"
@@ -36308,7 +36308,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سیستم ترانسپورت عمومی نیاز به بهبود دارد.",
-      "exampleTranslit": "sīstam-e tarānspōrt-e umūmī niyāz ba bihbūd dārad.",
+      "exampleTranslit": "sīstim-e tarānspōrt-e umūmī niyāz ba bihbūd dārad.",
       "exampleEn": "The public transport system needs improvement.",
       "tags": [
         "Abstract Concepts"
@@ -36626,7 +36626,7 @@
       "pos": "adverb",
       "register": "neutral",
       "exampleTarget": "آهسته گپ بزن.",
-      "exampleTranslit": "āhista gap bizan.",
+      "exampleTranslit": "āhista gap buzan.",
       "exampleEn": "Speak slowly.",
       "variants": [],
       "tags": [
@@ -37363,7 +37363,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "گردباد درختان را از ریشه کند.",
-      "exampleTranslit": "gardbād dirakhtān rā az rēsha kand.",
+      "exampleTranslit": "gardbād darakhtān rā az rēsha kand.",
       "exampleEn": "The tornado uprooted the trees.",
       "tags": [
         "Abstract Concepts"
@@ -40272,7 +40272,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "عریضه را بدهید.",
-      "exampleTranslit": "arīza rā badihēd.",
+      "exampleTranslit": "arīza rā budihēd.",
       "exampleEn": "Give the petition.",
       "tags": [
         "Abstract Concepts"
@@ -40595,7 +40595,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ما نباید دشمنان خود را دست کم بگیریم.",
-      "exampleTranslit": "mā nabāyad dushmanān-e khud rā dast kam bigīrēm.",
+      "exampleTranslit": "mā nabāyad dushmanān-e khud rā dast kam bugīrēm.",
       "exampleEn": "We must not underestimate our enemies.",
       "tags": [
         "People & Identity"
@@ -40652,7 +40652,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "هنگام تب باید مایعات زیاد بنوشید.",
-      "exampleTranslit": "hangām-e tab bāyad māyi'āt-e ziyād binōshēd.",
+      "exampleTranslit": "hangām-e tab bāyad māyi'āt-e ziyād bunōshēd.",
       "exampleEn": "When having a fever, you should drink plenty of fluids.",
       "tags": [
         "Abstract Concepts"
@@ -41302,7 +41302,7 @@
       "id": "lx-1494",
       "target": "ضمانت‌خط",
       "targetNormalized": "ضمانت‌خط",
-      "translit": "zimānat-khat",
+      "translit": "zamānat-khat",
       "glossEn": "guarantee letter",
       "pos": "noun",
       "freqRank": 2130,
@@ -41310,7 +41310,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ضمانت‌خط ضروری است.",
-      "exampleTranslit": "zimānat-khat zarūrī ast.",
+      "exampleTranslit": "zamānat-khat zarūrī ast.",
       "exampleEn": "A guarantee letter is necessary.",
       "tags": [
         "Communication & Media"
@@ -42821,13 +42821,13 @@
     },
     {
       "target": "غمگین",
-      "translit": "ghamgin",
+      "translit": "ghamgīn",
       "glossEn": "sad",
       "pos": "adjective",
       "register": "neutral",
       "variants": [],
       "exampleTarget": "طفل غمگین است.",
-      "exampleTranslit": "tifl ghamgin ast.",
+      "exampleTranslit": "tifl ghamgīn ast.",
       "exampleEn": "The child is sad.",
       "tags": [
         "beginner-core",
@@ -43771,7 +43771,7 @@
       "id": "lx-2381",
       "target": "فرشته",
       "targetNormalized": "فرشته",
-      "translit": "firishta",
+      "translit": "farishta",
       "glossEn": "angel",
       "pos": "noun",
       "freqRank": 2261,
@@ -43779,7 +43779,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "او مثل یک فرشته مهربان است.",
-      "exampleTranslit": "ō misl-e yak firishta mihrabān ast.",
+      "exampleTranslit": "ō misl-e yak farishta mihrabān ast.",
       "exampleEn": "She is kind like an angel.",
       "tags": [
         "Religion & Beliefs"
@@ -44429,7 +44429,7 @@
       "id": "lx-1648",
       "target": "سیستم ایمنی",
       "targetNormalized": "سیستم ایمنی",
-      "translit": "sīstam-e īmanī",
+      "translit": "sīstim-e īmanī",
       "glossEn": "immune system",
       "pos": "noun",
       "freqRank": 2296,
@@ -44437,7 +44437,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "خواب کافی سیستم ایمنی را تقویت می‌کند.",
-      "exampleTranslit": "khāb-e kāfī sīstam-e ēmnī rā taqwiyat mēkunad.",
+      "exampleTranslit": "khāb-e kāfī sīstim-e ēmnī rā taqwiyat mēkunad.",
       "exampleEn": "Adequate sleep strengthens the immune system.",
       "tags": [
         "Abstract Concepts"
@@ -44762,7 +44762,7 @@
       "variants": [],
       "exampleTarget": "یک گیلاس آب بده.",
       "exampleEn": "Give me a glass of water.",
-      "exampleTranslit": "yak gīlās āb bidih."
+      "exampleTranslit": "yak gīlās āb budih."
     },
     {
       "id": "lx-2020",
@@ -44776,7 +44776,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "تلفن سیار در همه جا کار می‌کند.",
-      "exampleTranslit": "tilifōn-e sayyār dar hama jā kār mēkunad.",
+      "exampleTranslit": "tēlifōn-e sayyār dar hama jā kār mēkunad.",
       "exampleEn": "Mobile phones work everywhere.",
       "tags": [
         "Descriptions & Qualities"
@@ -45474,7 +45474,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "بهینه‌سازی سیستم زمان‌بر است.",
-      "exampleTranslit": "bihīna-sāzī-ye sīstam zamān-bar ast.",
+      "exampleTranslit": "bihīna-sāzī-ye sīstim zamān-bar ast.",
       "exampleEn": "System optimization is time-consuming.",
       "tags": [
         "Abstract Concepts"
@@ -46130,7 +46130,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "باید از پای شما اشعه ایکس بگیریم.",
-      "exampleTranslit": "bāyad az pā-ye shumā ashi'a-ye ēks bigīrēm.",
+      "exampleTranslit": "bāyad az pā-ye shumā ashi'a-ye ēks bugīrēm.",
       "exampleEn": "We must take an X-ray of your leg.",
       "tags": [
         "Abstract Concepts"
@@ -46321,7 +46321,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "یک چای آرام‌بخش بنوش.",
-      "exampleTranslit": "yak chāy-e ārām-bakhsh binōsh.",
+      "exampleTranslit": "yak chāy-e ārām-bakhsh bunōsh.",
       "exampleEn": "Drink a sedative tea.",
       "tags": [
         "Abstract Concepts"
@@ -48384,7 +48384,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این سیستم آسیب‌پذیری دارد.",
-      "exampleTranslit": "īn sīstam āsēb-pazīrī dārad.",
+      "exampleTranslit": "īn sīstim āsēb-pazīrī dārad.",
       "exampleEn": "This system has a vulnerability.",
       "tags": [
         "Abstract Concepts"
@@ -49882,7 +49882,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "دیوار آتش سیستم را محافظت می‌کند.",
-      "exampleTranslit": "dēwār-e ātash sīstam rā muhāfazat mēkunad.",
+      "exampleTranslit": "dēwār-e ātash sīstim rā muhāfazat mēkunad.",
       "exampleEn": "The firewall protects the system.",
       "tags": [
         "Abstract Concepts"
@@ -50213,7 +50213,7 @@
       "id": "lx-1956",
       "target": "سیستم عامل",
       "targetNormalized": "سیستم عامل",
-      "translit": "sīstam-e āmil",
+      "translit": "sīstim-e āmil",
       "glossEn": "operating system",
       "pos": "noun",
       "freqRank": 2604,
@@ -50221,7 +50221,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "کدام سیستم عامل بهتر است؟",
-      "exampleTranslit": "kudām sīstam-e āmil bihtar ast?",
+      "exampleTranslit": "kudām sīstim-e āmil bihtar ast?",
       "exampleEn": "Which operating system is better?",
       "tags": [
         "Abstract Concepts"
@@ -50507,7 +50507,7 @@
       "id": "lx-2375",
       "target": "رستگاری",
       "targetNormalized": "رستگاری",
-      "translit": "rastigārī",
+      "translit": "rastagārī",
       "glossEn": "salvation",
       "pos": "noun",
       "freqRank": 2620,
@@ -50515,7 +50515,7 @@
       "register": "literary",
       "variants": [],
       "exampleTarget": "او به دنبال رستگاری است.",
-      "exampleTranslit": "ō ba dumbāl-e rastigārī ast.",
+      "exampleTranslit": "ō ba dumbāl-e rastagārī ast.",
       "exampleEn": "He is seeking salvation.",
       "tags": [
         "Abstract Concepts"
@@ -51814,7 +51814,7 @@
       "id": "lx-2037",
       "target": "سیستم تعبیه‌شده",
       "targetNormalized": "سیستم تعبیه‌شده",
-      "translit": "sīstam-e tabīya-shuda",
+      "translit": "sīstim-e tabīya-shuda",
       "glossEn": "embedded system",
       "pos": "noun",
       "freqRank": 2690,
@@ -51822,7 +51822,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سیستم تعبیه‌شده در موتر کار می‌کند.",
-      "exampleTranslit": "sīstam-e tabīya-shuda dar mōtar kār mēkunad.",
+      "exampleTranslit": "sīstim-e tabīya-shuda dar mōtar kār mēkunad.",
       "exampleEn": "The embedded system works in the car.",
       "tags": [
         "Abstract Concepts"
@@ -52458,7 +52458,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "درختان اکسیژن مورد نیاز ما را تولید می‌کنند.",
-      "exampleTranslit": "dirakhtān uksīzhan-e mawrid-e niyāz-e mā rā tawlīd mēkunand.",
+      "exampleTranslit": "darakhtān uksīzhan-e mawrid-e niyāz-e mā rā tawlīd mēkunand.",
       "exampleEn": "Trees produce the oxygen we need.",
       "tags": [
         "Abstract Concepts"
@@ -53752,7 +53752,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم رادار برای شناسایی هواپیماها استفاده می‌شود.",
-      "exampleTranslit": "sīstam-e rādār barā-ye shināsā'ī-ye hawāpaymāhā istifāda mēshavad.",
+      "exampleTranslit": "sīstim-e rādār barā-ye shināsā'ī-ye hawāpaymāhā istifāda mēshavad.",
       "exampleEn": "The radar system is used for detecting aircraft.",
       "tags": [
         "Abstract Concepts"
@@ -54831,7 +54831,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "باید از او معذرت بخواهی.",
-      "exampleTranslit": "bāyad az ō mazirat bikhāhī.",
+      "exampleTranslit": "bāyad az ō mazirat bukhāhī.",
       "exampleEn": "You must apologize to him.",
       "tags": [
         "Actions & Movement"
@@ -55863,7 +55863,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "گیاهان مهاجم می‌توانند به محصولات زراعتی آسیب بزنند.",
-      "exampleTranslit": "giyāhān-e muhājim mētawānand ba mahsūlāt-e zirā'atī āsēb bizanand.",
+      "exampleTranslit": "giyāhān-e muhājim mētawānand ba mahsūlāt-e zirā'atī āsēb buzanand.",
       "exampleEn": "Invasive plants can damage agricultural crops.",
       "tags": [
         "Descriptions & Qualities"
@@ -58200,7 +58200,7 @@
         "نقد کن"
       ],
       "exampleTarget": "منتقدان فیلم او را نقد کردند.",
-      "exampleTranslit": "muntiqidān fīlm-e ō rā naqd kardand.",
+      "exampleTranslit": "muntaqidān fīlm-e ō rā naqd kardand.",
       "exampleEn": "Critics critiqued his film.",
       "tags": [
         "Actions & Movement"
@@ -59081,7 +59081,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "محتوای این کتاب بسیار آموزنده است.",
-      "exampleTranslit": "muhtawā-ye īn kitāb bisyār āmōzinda ast.",
+      "exampleTranslit": "muhtawā-ye īn kitāb bisyār āmōzanda ast.",
       "exampleEn": "The content of this book is very instructive.",
       "tags": [
         "Abstract Concepts"
@@ -59365,7 +59365,7 @@
         "پیشنهاد میکند"
       ],
       "exampleTarget": "او پیشنهاد کرد که به پارک برویم.",
-      "exampleTranslit": "ō pēshnihād kard ki ba pārk birawēm.",
+      "exampleTranslit": "ō pēshnihād kard ki ba pārk burawēm.",
       "exampleEn": "He suggested that we go to the park.",
       "tags": [
         "Actions & Movement"
@@ -59812,7 +59812,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او گرایش زیادی به هنر مدرن دارد.",
-      "exampleTranslit": "ō garāyish-e ziyādī ba hunar-e mudirn dārad.",
+      "exampleTranslit": "ō garāyish-e ziyādī ba hunar-e modern dārad.",
       "exampleEn": "He has a great tendency towards modern art.",
       "tags": [
         "Abstract Concepts"
@@ -60920,7 +60920,7 @@
       "pos": "noun",
       "register": "neutral",
       "exampleTarget": "تیلفون من اپدیت می‌خواهد.",
-      "exampleTranslit": "tēlifūn-e man apdēt mēkhāhad.",
+      "exampleTranslit": "tēlifōn-e man apdēt mēkhāhad.",
       "exampleEn": "My phone needs an update.",
       "variants": [],
       "tags": [],
@@ -61152,7 +61152,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "رویکرد نویسنده به این موضوع متفاوت است.",
-      "exampleTranslit": "rōykard-e nawīsinda ba īn mawzū' mutafāwit ast.",
+      "exampleTranslit": "rōykard-e nawīsanda ba īn mawzū' mutafāwit ast.",
       "exampleEn": "The author's approach to this subject is different.",
       "tags": [
         "Abstract Concepts"
@@ -61716,7 +61716,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم پیشرانه موشک آزمایش شد.",
-      "exampleTranslit": "sīstam-e pēshrāna-ye mūshak āzmāyish shud.",
+      "exampleTranslit": "sīstim-e pēshrāna-ye mūshak āzmāyish shud.",
       "exampleEn": "The rocket's propulsion system was tested.",
       "tags": [
         "Abstract Concepts"
@@ -64506,7 +64506,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "نمود استمراری نشان‌دهنده جریان عمل در زمان است.",
-      "exampleTranslit": "nimud-e istimrāri nishān-dihanda-ye jaryān-e amal dar zamān ast.",
+      "exampleTranslit": "namūd-e istimrāri nishān-dihanda-ye jaryān-e amal dar zamān ast.",
       "exampleEn": "The continuous aspect indicates the flow of action in time.",
       "tags": [
         "Abstract Concepts"
@@ -64639,7 +64639,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "تحرک اجتماعی در جوامع مدرن بیشتر است.",
-      "exampleTranslit": "taharruk-e ijtimā'ī dar jawāmi'-e mudirn bēshtar ast.",
+      "exampleTranslit": "taharruk-e ijtimā'ī dar jawāmi'-e modern bēshtar ast.",
       "exampleEn": "Social mobility is higher in modern societies.",
       "tags": [
         "Abstract Concepts"
@@ -64962,7 +64962,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم‌های بیومتریک امنیت را افزایش می‌دهند.",
-      "exampleTranslit": "sīstam-hā-ye biyūmitrīk amniyat rā afzāyish mēdihand.",
+      "exampleTranslit": "sīstim-hā-ye biyūmitrīk amniyat rā afzāyish mēdihand.",
       "exampleEn": "Biometric systems increase security.",
       "tags": [
         "Abstract Concepts"
@@ -66002,7 +66002,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم قضایی باید مستقل و بی‌طرف باشد.",
-      "exampleTranslit": "sistam-e qazāyī bāyad mustaqil wa bē-taraf bāshad.",
+      "exampleTranslit": "sīstim-e qazāyī bāyad mustaqil wa bē-taraf bāshad.",
       "exampleEn": "The judicial system must be independent and impartial.",
       "tags": [
         "Descriptions & Qualities"
@@ -66188,7 +66188,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "میکروکنترلرها در سیستم‌های تعبیه‌شده کاربرد دارند.",
-      "exampleTranslit": "mīkrūkūntrūlarhā dar sīstam-hā-ye ta'bīya-shuda kārburd dārand.",
+      "exampleTranslit": "mīkrūkūntrūlarhā dar sīstim-hā-ye ta'bīya-shuda kārburd dārand.",
       "exampleEn": "Microcontrollers are used in embedded systems.",
       "tags": [
         "Abstract Concepts"
@@ -66337,7 +66337,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "صنعت نیمه‌رسانا پایه الکترونیک مدرن است.",
-      "exampleTranslit": "san'at-e nīma-rasānā pāya-ye ilīktrūnīk-e mudirn ast.",
+      "exampleTranslit": "san'at-e nīma-rasānā pāya-ye ilīktrūnīk-e modern ast.",
       "exampleEn": "The semiconductor industry is the foundation of modern electronics.",
       "tags": [
         "Abstract Concepts"
@@ -66579,7 +66579,7 @@
       "id": "lx-4869",
       "target": "تکرار",
       "targetNormalized": "تکرار",
-      "translit": "tikrār",
+      "translit": "takrār",
       "glossEn": "repetition (cohesion)",
       "pos": "noun",
       "freqRank": 3476,
@@ -66587,7 +66587,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "تکرار واژگان کلیدی یکی از راه‌های ایجاد انسجام در متن است.",
-      "exampleTranslit": "tikrār-e wāzhagān-e kilēdī yakē az rāh-hā-ye ījād-e insijām dar matn ast.",
+      "exampleTranslit": "takrār-e wāzhagān-e kilēdī yakē az rāh-hā-ye ījād-e insijām dar matn ast.",
       "exampleEn": "The repetition of key words is one of the ways to create cohesion in the text.",
       "tags": [
         "Abstract Concepts",
@@ -67003,7 +67003,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "علم سایبرنتیک سیستم‌های کنترل را بررسی می‌کند.",
-      "exampleTranslit": "'ilm-e sāybarnitīk sīstam-hā-ye kūntrūl rā barrasī mēkunad.",
+      "exampleTranslit": "'ilm-e sāybarnitīk sīstim-hā-ye kūntrūl rā barrasī mēkunad.",
       "exampleEn": "Cybernetics studies control systems.",
       "tags": [
         "Abstract Concepts"
@@ -67664,7 +67664,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مدارهای مجتمع در تلفن‌های هوشمند استفاده می‌شوند.",
-      "exampleTranslit": "madārhā-ye mujtama' dar tilifūnhā-ye hōshmand istifāda mēshavand.",
+      "exampleTranslit": "madārhā-ye mujtama' dar tēlifōnhā-ye hōshmand istifāda mēshavand.",
       "exampleEn": "Integrated circuits are used in smartphones.",
       "tags": [
         "Abstract Concepts"
@@ -67891,7 +67891,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "حمله باج‌افزار به سیستم‌های شفاخانه خسارت وارد کرد.",
-      "exampleTranslit": "hamla-ye bāj-afzār ba sistam-hā-ye shafākhāna khasārat wārid kard.",
+      "exampleTranslit": "hamla-ye bāj-afzār ba sīstim-hā-ye shafākhāna khasārat wārid kard.",
       "exampleEn": "The ransomware attack caused damage to the hospital's systems.",
       "tags": [
         "Abstract Concepts"
@@ -67910,7 +67910,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم‌های ذخیره‌سازی انرژی در حال پیشرفت هستند.",
-      "exampleTranslit": "sīstam-hā-ye zakhīra-sāzī-ye inirzhī dar hāl-e pēshraft hastand.",
+      "exampleTranslit": "sīstim-hā-ye zakhīra-sāzī-ye inirzhī dar hāl-e pēshraft hastand.",
       "exampleEn": "Energy storage systems are advancing.",
       "tags": [
         "Science & Technology"
@@ -67967,7 +67967,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم‌های تعبیه‌شده در موترها بسیار مهم هستند.",
-      "exampleTranslit": "sīstam-hā-ye ta'bīya-shuda dar mōtar-hā bisyār muhim hastand.",
+      "exampleTranslit": "sīstim-hā-ye ta'bīya-shuda dar mōtar-hā bisyār muhim hastand.",
       "exampleEn": "Embedded systems are very important in cars.",
       "tags": [
         "Descriptions & Qualities"
@@ -68700,7 +68700,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم نسخه‌گذاری به مدیریت تغییرات کمک می‌کند.",
-      "exampleTranslit": "sīstam-e nusxha-guzārī ba mudīriyat-e taghyīrāt kumak mēkunad.",
+      "exampleTranslit": "sīstim-e nusxha-guzārī ba mudīriyat-e taghyīrāt kumak mēkunad.",
       "exampleEn": "The versioning system helps manage changes.",
       "tags": [
         "Abstract Concepts"
@@ -69126,7 +69126,7 @@
       "id": "lx-2902",
       "target": "پاندمی",
       "targetNormalized": "پاندمی",
-      "translit": "pāndimī",
+      "translit": "pāndemī",
       "glossEn": "pandemic",
       "pos": "noun",
       "freqRank": 3611,
@@ -69134,7 +69134,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "پاندمی کرونا جهان را تغییر داد.",
-      "exampleTranslit": "pāndimī-ye kurōnā jahān rā taghyīr dād.",
+      "exampleTranslit": "pāndemī-ye kurōnā jahān rā taghyīr dād.",
       "exampleEn": "The corona pandemic changed the world.",
       "tags": [
         "Abstract Concepts"
@@ -69400,7 +69400,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم تشخیص الگو در حال پیشرفت است.",
-      "exampleTranslit": "sīstam-e tashkhīs-e ulgū dar hāl-e pēshraft ast.",
+      "exampleTranslit": "sīstim-e tashkhīs-e ulgū dar hāl-e pēshraft ast.",
       "exampleEn": "The pattern recognition system is advancing.",
       "tags": [
         "Abstract Concepts"
@@ -69685,7 +69685,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم خانه هوشمند از طریق تلفن همراه کنترل می‌شود.",
-      "exampleTranslit": "sīstam-e khāna-ye hōshmand az tarīq-e tilifūn-e hamrāh kūntrūl mēshavad.",
+      "exampleTranslit": "sīstim-e khāna-ye hōshmand az tarīq-e tēlifōn-e hamrāh kūntrūl mēshavad.",
       "exampleEn": "The smart home system is controlled via mobile phone.",
       "tags": [
         "Home & Furniture"
@@ -69704,7 +69704,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "کارهای تکراری باعث ملال می‌شود.",
-      "exampleTranslit": "kār-hā-ye tikrārī bā'is-e malāl mēshawad.",
+      "exampleTranslit": "kār-hā-ye takrārī bā'is-e malāl mēshawad.",
       "exampleEn": "Repetitive tasks cause boredom.",
       "tags": [
         "Abstract Concepts"
@@ -70008,7 +70008,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم‌های رایانش شناختی رفتار مغز انسان را شبیه‌سازی می‌کنند.",
-      "exampleTranslit": "sīstam-hā-ye rāyānish-e shinākhtī raftār-e maghz-e insān rā shabēh-sāzī mēkunand.",
+      "exampleTranslit": "sīstim-hā-ye rāyānish-e shinākhtī raftār-e maghz-e insān rā shabēh-sāzī mēkunand.",
       "exampleEn": "Cognitive computing systems simulate the behavior of the human brain.",
       "tags": [
         "Abstract Concepts"
@@ -70369,7 +70369,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "شعاع دایره پنج سانتی‌متر است.",
-      "exampleTranslit": "shu'ā'-e dāyira panj sāntī-metr ast.",
+      "exampleTranslit": "shu'ā'-e dāyira panj sāntī-mitr ast.",
       "exampleEn": "The radius of the circle is five centimeters.",
       "tags": [
         "Abstract Concepts"
@@ -70606,7 +70606,7 @@
       "id": "lx-4019",
       "target": "اندیشه",
       "targetNormalized": "اندیشه",
-      "translit": "andisha",
+      "translit": "andēsha",
       "glossEn": "thought/idea",
       "pos": "noun",
       "freqRank": 3689,
@@ -71807,7 +71807,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "کاشت درختان از فرسایش خاک جلوگیری می‌کند.",
-      "exampleTranslit": "kāsht-e dirakhtān az farsāyish-e khāk jilaw-gīrī mēkunad.",
+      "exampleTranslit": "kāsht-e darakhtān az farsāyish-e khāk jilaw-gīrī mēkunad.",
       "exampleEn": "Planting trees prevents soil erosion.",
       "tags": [
         "Abstract Concepts"
@@ -71818,7 +71818,7 @@
       "id": "lx-3234",
       "target": "مدرنیته",
       "targetNormalized": "مدرنیته",
-      "translit": "mudirnīta",
+      "translit": "modernīta",
       "glossEn": "modernity",
       "pos": "noun",
       "freqRank": 3754,
@@ -71826,7 +71826,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "تقابل سنت و مدرنیته موضوع جالبی است.",
-      "exampleTranslit": "taqābul-e sunnat wa mudirnīta mawzū'-e jālibī ast.",
+      "exampleTranslit": "taqābul-e sunnat wa modernīta mawzū'-e jālibī ast.",
       "exampleEn": "The confrontation of tradition and modernity is an interesting topic.",
       "tags": [
         "Abstract Concepts"
@@ -72119,7 +72119,7 @@
       "id": "lx-3001",
       "target": "سیستم بوم‌شناختی",
       "targetNormalized": "سیستم بوم‌شناختی",
-      "translit": "sīstam-e būm-shinākhtī",
+      "translit": "sīstim-e būm-shinākhtī",
       "glossEn": "ecological system",
       "pos": "noun",
       "freqRank": 3770,
@@ -72127,7 +72127,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "هر تغییری در سیستم بوم‌شناختی اثرات زنجیره‌ای دارد.",
-      "exampleTranslit": "har taghyīrē dar sīstam-e būm-shinākhtī asarāt-e zanjīra-ī dārad.",
+      "exampleTranslit": "har taghyīrē dar sīstim-e būm-shinākhtī asarāt-e zanjīra-ī dārad.",
       "exampleEn": "Any change in the ecological system has chain effects.",
       "tags": [
         "Abstract Concepts"
@@ -72575,7 +72575,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این بدان معنا نیست که الزاماً اشتباه است.",
-      "exampleTranslit": "īn bidān ma'nā nēst ki ilzāman ishtibāh ast.",
+      "exampleTranslit": "īn budān ma'nā nēst ki ilzāman ishtibāh ast.",
       "exampleEn": "This does not mean it is necessarily wrong.",
       "tags": [
         "Descriptions & Qualities"
@@ -72710,7 +72710,7 @@
       "variants": [],
       "exampleTarget": "شترمرغ پرنده کلان است اما پرواز نمی‌کند.",
       "exampleEn": "The ostrich is a big bird, but it does not fly.",
-      "exampleTranslit": "shuturmurgh parinda-ye kalān ast ammā parwāz namēkunad."
+      "exampleTranslit": "shuturmurgh paranda-ye kalān ast ammā parwāz namēkunad."
     },
     {
       "id": "lx-3034",
@@ -72838,7 +72838,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "من در حال خواندن بیوگرافی این نویسنده هستم.",
-      "exampleTranslit": "man dar hāl-e khāndan-e biyōgrāfī-ye īn nawīsinda hastam.",
+      "exampleTranslit": "man dar hāl-e khāndan-e biyōgrāfī-ye īn nawīsanda hastam.",
       "exampleEn": "I am reading the biography of this author.",
       "tags": [
         "Abstract Concepts"
@@ -73749,7 +73749,7 @@
       "id": "lx-3081",
       "target": "سیستم آبیاری",
       "targetNormalized": "سیستم آبیاری",
-      "translit": "sīstam-e āb-yārī",
+      "translit": "sīstim-e āb-yārī",
       "glossEn": "irrigation system",
       "pos": "noun",
       "freqRank": 3857,
@@ -73757,7 +73757,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم آبیاری قطره‌ای از هدر رفتن آب جلوگیری می‌کند.",
-      "exampleTranslit": "sīstam-e āb-yārī-ye qatra-ī az hadar raftan-e āb jilaw-gīrī mēkunad.",
+      "exampleTranslit": "sīstim-e āb-yārī-ye qatra-ī az hadar raftan-e āb jilaw-gīrī mēkunad.",
       "exampleEn": "A drip irrigation system prevents water waste.",
       "tags": [
         "Abstract Concepts"
@@ -73776,7 +73776,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "منابع آبی نباید هدر بروند.",
-      "exampleTranslit": "manābi'-e ābī nabāyad hadar birawand.",
+      "exampleTranslit": "manābi'-e ābī nabāyad hadar burawand.",
       "exampleEn": "Water resources should not be wasted.",
       "tags": [
         "Actions & Movement"
@@ -74252,7 +74252,7 @@
       "id": "lx-3866",
       "target": "وکالت",
       "targetNormalized": "وکالت",
-      "translit": "wikalat",
+      "translit": "wakālat",
       "glossEn": "legal representation/power of attorney",
       "pos": "noun",
       "freqRank": 3884,
@@ -75322,7 +75322,7 @@
       "id": "lx-3147",
       "target": "گازهای آلاینده",
       "targetNormalized": "گازهای آلاینده",
-      "translit": "gāz-hā-ye ālāyinda",
+      "translit": "gāz-hā-ye ālāyanda",
       "glossEn": "polluting gases",
       "pos": "noun",
       "freqRank": 3941,
@@ -75330,7 +75330,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "کارخانه‌ها مقدار زیادی گازهای آلاینده تولید می‌کنند.",
-      "exampleTranslit": "kār-khāna-hā miqdār-e ziyādī gāz-hā-ye ālāyinda tawlīd mēkunand.",
+      "exampleTranslit": "kār-khāna-hā miqdār-e ziyādī gāz-hā-ye ālāyanda tawlīd mēkunand.",
       "exampleEn": "Factories produce a large amount of polluting gases.",
       "tags": [
         "Abstract Concepts"
@@ -76365,7 +76365,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "در این رستوران دادن انعام مرسوم است.",
-      "exampleTranslit": "dar īn resturān dādan-e in'ām marsūm ast.",
+      "exampleTranslit": "dar īn restorān dādan-e in'ām marsūm ast.",
       "exampleEn": "Giving a tip is customary in this restaurant.",
       "tags": [
         "Abstract Concepts"
@@ -76695,7 +76695,7 @@
       "id": "lx-4105",
       "target": "اصالت",
       "targetNormalized": "اصالت",
-      "translit": "isalat",
+      "translit": "asālat",
       "glossEn": "authenticity",
       "pos": "noun",
       "freqRank": 4014,
@@ -76947,7 +76947,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ظرفیت افعال تعیین‌کننده تعداد گروه‌های اسمی همراه آن‌هاست.",
-      "exampleTranslit": "zarfiyat-e af'āl ta'yin-konanda-ye ti'dād-e goruh-hā-ye ismē-ye hamrāh-e ān-hā-st.",
+      "exampleTranslit": "zarfiyat-e af'āl ta'yin-konanda-ye ta'dād-e goruh-hā-ye ismē-ye hamrāh-e ān-hā-st.",
       "exampleEn": "The valency of verbs determines the number of noun phrases accompanying them.",
       "tags": [
         "Abstract Concepts"
@@ -77167,7 +77167,7 @@
       "id": "lx-3325",
       "target": "پسامدرنیسم",
       "targetNormalized": "پسامدرنیسم",
-      "translit": "pasā-mudirnīsm",
+      "translit": "pasā-modernīsm",
       "glossEn": "postmodernism",
       "pos": "noun",
       "freqRank": 4039,
@@ -77175,7 +77175,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "هنر امروز به شدت تحت تاثیر پسامدرنیسم است.",
-      "exampleTranslit": "hunar-e imrōz ba shiddat taht-e ta'sīr-e pasā-mudirnīsm ast.",
+      "exampleTranslit": "hunar-e imrōz ba shiddat taht-e ta'sīr-e pasā-modernīsm ast.",
       "exampleEn": "Today's art is heavily influenced by postmodernism.",
       "tags": [
         "Abstract Concepts"
@@ -77194,7 +77194,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "گرایش به مادی‌گرایی در جوامع مدرن رو به افزایش است.",
-      "exampleTranslit": "girāyish ba mādī-garāī dar jawāmi'-e mudirn rō ba afzāyish ast.",
+      "exampleTranslit": "girāyish ba mādī-garāī dar jawāmi'-e modern rō ba afzāyish ast.",
       "exampleEn": "The inclination toward materialism in modern societies is on the rise.",
       "tags": [
         "Abstract Concepts"
@@ -77534,7 +77534,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "تنقید سازنده به رشد هنرمند کمک می‌کند.",
-      "exampleTranslit": "tanqīd-e sāzinda ba rushd-e hunarmand kumak mēkunad.",
+      "exampleTranslit": "tanqīd-e sāzanda ba rushd-e hunarmand kumak mēkunad.",
       "exampleEn": "Constructive critique helps the artist grow.",
       "tags": [
         "Abstract Concepts"
@@ -79238,7 +79238,7 @@
         "ممانعت میکند"
       ],
       "exampleTarget": "پلیس از ورود تظاهرکنندگان ممانعت کرد.",
-      "exampleTranslit": "pulīs az wurūd-e tazāhurkunindagān mumāna'at kard.",
+      "exampleTranslit": "pulīs az wurūd-e tazāhur-kunandagān mumāna'at kard.",
       "exampleEn": "The police prevented the protesters from entering.",
       "tags": [
         "Actions & Movement"
@@ -80021,7 +80021,7 @@
         "استنتاج میکند"
       ],
       "exampleTarget": "ما از این داده‌ها چه استنتاجی میتوانیم بکنیم؟",
-      "exampleTranslit": "mā az īn dāda-hā chi istintājī mētāwanēm bikunēm?",
+      "exampleTranslit": "mā az īn dāda-hā chi istintājī mētāwanēm bukunēm?",
       "exampleEn": "What can we deduce from these data?",
       "tags": [
         "Actions & Movement"
@@ -80569,7 +80569,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "دشمن قصد داشت نیمه‌شب شبیخون بزند.",
-      "exampleTranslit": "dushman qasd dāsht nēma-shab shabēkhūn bizanad.",
+      "exampleTranslit": "dushman qasd dāsht nēma-shab shabēkhūn buzanad.",
       "exampleEn": "The enemy intended to launch a night raid at midnight.",
       "tags": [
         "Time & Calendar"
@@ -80659,7 +80659,7 @@
       "id": "lx-4855",
       "target": "تکیه",
       "targetNormalized": "تکیه",
-      "translit": "tikya",
+      "translit": "takya",
       "glossEn": "stress",
       "pos": "noun",
       "freqRank": 4219,
@@ -80667,7 +80667,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "جایگاه تکیه می‌تواند معنای واژه را تغییر دهد.",
-      "exampleTranslit": "jāygāh-e tikya mē-tawānad ma'nā-ye wāzha rā taghyir dihad.",
+      "exampleTranslit": "jāygāh-e takya mē-tawānad ma'nā-ye wāzha rā taghyir dihad.",
       "exampleEn": "The position of the stress can change the meaning of the word.",
       "tags": [
         "Abstract Concepts"
@@ -81576,7 +81576,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مخرج مشترک بگیرید.",
-      "exampleTranslit": "makhraj-e mushtarak bigīrēd.",
+      "exampleTranslit": "makhraj-e mushtarak bugīrēd.",
       "exampleEn": "Find a common denominator.",
       "tags": [
         "Abstract Concepts"
@@ -81722,7 +81722,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "به هر حال، من باید بروم.",
-      "exampleTranslit": "ba har hāl, man bāyad birawam.",
+      "exampleTranslit": "ba har hāl, man bāyad burawam.",
       "exampleEn": "Anyway, I have to go.",
       "tags": [
         "Abstract Concepts"
@@ -81777,7 +81777,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "انتروپی این سیستم پیوسته در حال افزایش است.",
-      "exampleTranslit": "entropī-ye īn sistam paywasta dar hāl-e afzāyish ast.",
+      "exampleTranslit": "entropī-ye īn sīstim paywasta dar hāl-e afzāyish ast.",
       "exampleEn": "The entropy of this system is continuously increasing.",
       "tags": [
         "Abstract Concepts"
@@ -81998,7 +81998,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "خواه بخواهی خواه نخواهی، باید بروی.",
-      "exampleTranslit": "khāh bikhāhī khāh nakhāhī, bāyad birawī.",
+      "exampleTranslit": "khāh bukhāhī khāh nakhāhī, bāyad burawī.",
       "exampleEn": "Whether you want to or not, you must go.",
       "tags": [
         "Grammar & Connectors"
@@ -82052,7 +82052,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "یا تو برو یا من می‌روم.",
-      "exampleTranslit": "yā tu biraw yā man mērawam.",
+      "exampleTranslit": "yā tu buraw yā man mērawam.",
       "exampleEn": "Either you go or I go.",
       "tags": [
         "Grammar & Connectors"
@@ -82473,7 +82473,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او با تزویر اسناد توانست وام بگیرد.",
-      "exampleTranslit": "ō bā tazwīr-e asnād tawānist wām bigīrad.",
+      "exampleTranslit": "ō bā tazwīr-e asnād tawānist wām bugīrad.",
       "exampleEn": "He managed to get a loan by forging documents.",
       "tags": [
         "Abstract Concepts"
@@ -82784,7 +82784,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "یک خط مماس بر دایره بکشید.",
-      "exampleTranslit": "yak khat-e mammās bar dāyira bikashēd.",
+      "exampleTranslit": "yak khat-e mammās bar dāyira bukashēd.",
       "exampleEn": "Draw a line tangent to the circle.",
       "tags": [
         "Abstract Concepts"
@@ -83149,7 +83149,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "به موازات این کار، باید کار دیگری هم بکنیم.",
-      "exampleTranslit": "ba muwāzāt-e īn kār, bāyad kār-e dīgarē ham bikunēm.",
+      "exampleTranslit": "ba muwāzāt-e īn kār, bāyad kār-e dīgarē ham bukunēm.",
       "exampleEn": "In parallel with this work, we must do another work too.",
       "tags": [
         "Grammar & Connectors"
@@ -84174,7 +84174,7 @@
       "id": "lx-3721",
       "target": "هاستل",
       "targetNormalized": "هاستل",
-      "translit": "hastel",
+      "translit": "hāstel",
       "glossEn": "hostel",
       "pos": "noun",
       "freqRank": 4408,
@@ -84597,7 +84597,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "نورون‌ها سلول‌های اصلی سیستم عصبی هستند.",
-      "exampleTranslit": "nēwrōn-hā sallūl-hā-ye aslī-ye sistam-e asabī hastand.",
+      "exampleTranslit": "nēwrōn-hā sallūl-hā-ye aslī-ye sīstim-e asabī hastand.",
       "exampleEn": "Neurons are the primary cells of the nervous system.",
       "tags": [
         "Abstract Concepts"
@@ -85241,7 +85241,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "سیستم جی‌پی‌اس مسیر را به ما نشان می‌دهد.",
-      "exampleTranslit": "sistam-e jī-pī-es masēr rā ba mā nishān mēdihad.",
+      "exampleTranslit": "sīstim-e jī-pī-es masēr rā ba mā nishān mēdihad.",
       "exampleEn": "The GPS system shows us the route.",
       "tags": [
         "Abstract Concepts"
@@ -85355,7 +85355,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "اشیاء قیمتی خود را در صندوق امانات بگذارید.",
-      "exampleTranslit": "ashyā-ye qīmatī-ye khud rā dar sandūq-e amānāt biguzārēd.",
+      "exampleTranslit": "ashyā-ye qīmatī-ye khud rā dar sandūq-e amānāt buguzārēd.",
       "exampleEn": "Put your valuables in the safe deposit box.",
       "tags": [
         "Abstract Concepts"
@@ -86045,7 +86045,7 @@
       "id": "lx-3963",
       "target": "اسکالر",
       "targetNormalized": "اسکالر",
-      "translit": "eskalar",
+      "translit": "iskalar",
       "glossEn": "scalar",
       "pos": "noun",
       "freqRank": 4507,
@@ -86443,7 +86443,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "پولیس در حال رد یابی تماس‌های تیلفونی مظنون است.",
-      "exampleTranslit": "pōlīs dar hāl-e radd-yābī-ye tamās-hā-ye telefōnī-ye maznūn ast.",
+      "exampleTranslit": "pōlīs dar hāl-e radd-yābī-ye tamās-hā-ye tēlifōnī-ye maznūn ast.",
       "exampleEn": "Police are tracking the suspect's phone calls.",
       "tags": [
         "Abstract Concepts"
@@ -87257,7 +87257,7 @@
       "tags": [],
       "concreteness": true,
       "presentStem": "شو",
-      "presentStemTranslit": "shō",
+      "presentStemTranslit": "shaw",
       "translit": "bēdār shudan",
       "freqRank": 4573,
       "freqBand": 8,
@@ -87798,7 +87798,7 @@
       "pos": "noun",
       "register": "neutral",
       "exampleTarget": "نمبر تیلفون شما چیست؟",
-      "exampleTranslit": "nambar-e tēlifūn-e shumā chīst?",
+      "exampleTranslit": "nambar-e tēlifōn-e shumā chīst?",
       "exampleEn": "What is your telephone number?",
       "variants": [],
       "tags": [
@@ -89095,7 +89095,7 @@
       "id": "lx-3981",
       "target": "کانکریت",
       "targetNormalized": "کانکریت",
-      "translit": "kānkerit",
+      "translit": "kānkrīt",
       "glossEn": "concrete",
       "pos": "noun",
       "freqRank": 4670,
@@ -89103,7 +89103,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "برای استحکام بیشتر از کانکریت استفاده می‌کنند.",
-      "exampleTranslit": "barā-ye istihkām-e bēshtar az kānkrēt istifāda mēkunand.",
+      "exampleTranslit": "barā-ye istihkām-e bēshtar az kānkrīt istifāda mēkunand.",
       "exampleEn": "They use concrete for greater strength.",
       "tags": [
         "Abstract Concepts"
@@ -89179,7 +89179,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم مترو نقش مهمی در کاهش ترافیک شهری دارد.",
-      "exampleTranslit": "sistam-e metrō naqsh-e muhimmē dar kāhish-e trāfīk-e shahrī dārad.",
+      "exampleTranslit": "sīstim-e metrō naqsh-e muhimmē dar kāhish-e trāfīk-e shahrī dārad.",
       "exampleEn": "The subway system plays an important role in reducing urban traffic.",
       "tags": [
         "Abstract Concepts"
@@ -89436,7 +89436,7 @@
       "id": "lx-4465",
       "target": "آلل",
       "targetNormalized": "آلل",
-      "translit": "alil",
+      "translit": "ālel",
       "glossEn": "allele",
       "pos": "noun",
       "freqRank": 4688,
@@ -89444,7 +89444,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "هر فرد دو آلل برای هر ژن دارد.",
-      "exampleTranslit": "har fard dū ālil barā-ye har zhen dārad.",
+      "exampleTranslit": "har fard dū ālel barā-ye har zhen dārad.",
       "exampleEn": "Each individual has two alleles for each gene.",
       "tags": [
         "Abstract Concepts"
@@ -90206,7 +90206,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "کشورهای امضاکننده باید به روح معاهده احترام بگذارند.",
-      "exampleTranslit": "kishwar-hā-ye imzā-kunanda bāyad ba rūh-e mu'āhida ihtirām biguzārand.",
+      "exampleTranslit": "kishwar-hā-ye imzā-kunanda bāyad ba rūh-e mu'āhida ihtirām buguzārand.",
       "exampleEn": "Signatory countries must respect the spirit of the treaty.",
       "tags": [
         "Abstract Concepts"
@@ -90472,7 +90472,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "هر سیستم هندسی بر پایه چند اصول موضوعه بنا شده است.",
-      "exampleTranslit": "har sistam-e handasī bar pāya-ye chand usūl-e mawzū'a binā shuda ast.",
+      "exampleTranslit": "har sīstim-e handasī bar pāya-ye chand usūl-e mawzū'a binā shuda ast.",
       "exampleEn": "Every geometric system is built on a few axioms.",
       "tags": [
         "Abstract Concepts"
@@ -90909,7 +90909,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "انسجام‌گرایی توجیه را در هماهنگی درونی سیستم باورها می‌داند.",
-      "exampleTranslit": "insijām-garāyī tawjēh rā dar hamāhangī-ye darūnī-ye sistam-e bāwar-hā mēdānad.",
+      "exampleTranslit": "insijām-garāyī tawjēh rā dar hamāhangī-ye darūnī-ye sīstim-e bāwar-hā mēdānad.",
       "exampleEn": "Coherentism sees justification in the internal harmony of a system of beliefs.",
       "tags": [
         "Abstract Concepts"
@@ -91536,7 +91536,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "در حقوق افغانستان سیستم هیئت منصفه وجود ندارد.",
-      "exampleTranslit": "dar huqūq-e afghānistān sistam-e hay'at-e munsifa wujūd nadārad.",
+      "exampleTranslit": "dar huqūq-e afghānistān sīstim-e hay'at-e munsifa wujūd nadārad.",
       "exampleEn": "There is no jury system in Afghan law.",
       "tags": [
         "Abstract Concepts"
@@ -92238,7 +92238,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم ایمنی برای مقابله با ویروس آنتی‌بادی تولید می‌کند.",
-      "exampleTranslit": "sistam-e ēmnī barā-ye muqābala bā wērūs āntī-bādī tawlīd mēkunad.",
+      "exampleTranslit": "sīstim-e ēmnī barā-ye muqābala bā wērūs āntī-bādī tawlīd mēkunad.",
       "exampleEn": "The immune system produces antibodies to fight the virus.",
       "tags": [
         "Abstract Concepts"
@@ -93836,7 +93836,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم نرخ ارز شناور در بسیاری از کشورها اعمال می‌شود.",
-      "exampleTranslit": "sistam-e nirkh-e arz-e shināwar dar bisyārē az kishwar-hā a'māl mēshawad.",
+      "exampleTranslit": "sīstim-e nirkh-e arz-e shināwar dar bisyārē az kishwar-hā a'māl mēshawad.",
       "exampleEn": "The floating exchange rate system is applied in many countries.",
       "tags": [
         "Abstract Concepts"
@@ -93874,7 +93874,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "چاپ بی‌رویه پول منجر به تورم حاد شد.",
-      "exampleTranslit": "chāp-e bi-rawiya-ye pūl monjar ba tawarrum-e hād shod.",
+      "exampleTranslit": "chāp-e bē-rawiya-ye pūl monjar ba tawarrum-e hād shod.",
       "exampleEn": "The excessive printing of money led to hyperinflation.",
       "tags": [
         "Abstract Concepts"
@@ -94748,7 +94748,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم مالیات تصاعدی به کاهش نابرابری کمک می‌کند.",
-      "exampleTranslit": "sistam-e māliyāt-e tasā'udī ba kāhish-e nābarābarī kumak mēkunad.",
+      "exampleTranslit": "sīstim-e māliyāt-e tasā'udī ba kāhish-e nābarābarī kumak mēkunad.",
       "exampleEn": "A progressive tax system helps reduce inequality.",
       "tags": [
         "Money & Finance"
@@ -94976,7 +94976,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم تهویه مطبوع نصب گردید.",
-      "exampleTranslit": "sistam-e tahwiya-ye matbū' nasb gardēd.",
+      "exampleTranslit": "sīstim-e tahwiya-ye matbū' nasb gardēd.",
       "exampleEn": "The HVAC system was installed.",
       "tags": [
         "Abstract Concepts"
@@ -95432,7 +95432,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "کاهش عوارض واردات به نفع مصرف‌کنندگان است.",
-      "exampleTranslit": "kāhish-e awāriz-e wāridāt ba naf'-e masraf-konindagān ast.",
+      "exampleTranslit": "kāhish-e awāriz-e wāridāt ba naf'-e masraf-kunandagān ast.",
       "exampleEn": "Reducing import duties is beneficial to consumers.",
       "tags": [
         "Abstract Concepts"
@@ -95622,7 +95622,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این سیستم بر پایه دفتر کل توزیع‌شده کار می‌کند.",
-      "exampleTranslit": "īn sistam bar pāya-ye daftar-e kull-e tawzē'-shuda kār mēkunad.",
+      "exampleTranslit": "īn sīstim bar pāya-ye daftar-e kull-e tawzē'-shuda kār mēkunad.",
       "exampleEn": "This system works based on a distributed ledger.",
       "tags": [
         "Abstract Concepts"
@@ -95812,7 +95812,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "شما می‌توانید کلید عمومی خود را با دیگران به اشتراک بگذارید.",
-      "exampleTranslit": "shumā mētawānēd kilēd-e umūmī-ye khud rā bā dīgarān ba ishtirāk biguzārēd.",
+      "exampleTranslit": "shumā mētawānēd kilēd-e umūmī-ye khud rā bā dīgarān ba ishtirāk buguzārēd.",
       "exampleEn": "You can share your public key with others.",
       "tags": [
         "Home & Furniture"
@@ -96192,7 +96192,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ایمونولوژی نقش سیستم ایمنی را مطالعه می‌کند.",
-      "exampleTranslit": "imunolōzhī naqsh-e sistam-e ēmnī rā mutāli'a mēkunad.",
+      "exampleTranslit": "imunolōzhī naqsh-e sīstim-e ēmnī rā mutāli'a mēkunad.",
       "exampleEn": "Immunology studies the role of the immune system.",
       "tags": [
         "Abstract Concepts"
@@ -97106,7 +97106,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ویروس‌شناسی در دوران پاندمی اهمیت یافت.",
-      "exampleTranslit": "wērūs-shināsī dar dawrān-e pāndimī ahammiyat yāft.",
+      "exampleTranslit": "wērūs-shināsī dar dawrān-e pāndemī ahammiyat yāft.",
       "exampleEn": "Virology gained importance during the pandemic.",
       "tags": [
         "Abstract Concepts"
@@ -97638,7 +97638,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سگرت کشیدن یک ریسک‌فکتور برای سرطان است.",
-      "exampleTranslit": "sigret kashēdan yak rīsk-fāktor barā-ye saratān ast.",
+      "exampleTranslit": "sigrit kashēdan yak rīsk-fāktor barā-ye saratān ast.",
       "exampleEn": "Smoking is a risk factor for cancer.",
       "tags": [
         "Abstract Concepts"
@@ -97706,7 +97706,7 @@
       "id": "lx-4420",
       "target": "سرکوب‌سیستم‌ایمنی",
       "targetNormalized": "سرکوب‌سیستم‌ایمنی",
-      "translit": "sarkōb-e sistam-e ēmnī",
+      "translit": "sarkōb-e sīstim-e ēmnī",
       "glossEn": "immunosuppression",
       "pos": "noun",
       "freqRank": 5123,
@@ -97714,7 +97714,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "داروها باعث سرکوب سیستم ایمنی می‌شوند.",
-      "exampleTranslit": "dawā-hā bā'is-e sarkōb-e sistam-e ēmnī mēshawand.",
+      "exampleTranslit": "dawā-hā bā'is-e sarkōb-e sīstim-e ēmnī mēshawand.",
       "exampleEn": "The drugs cause immunosuppression.",
       "tags": [
         "Abstract Concepts"
@@ -97809,7 +97809,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "اوت‌بریک کولرا در این منطقه کنترل شد.",
-      "exampleTranslit": "awt-brēk-e kolirā dar īn mantaqa kontrōl shud.",
+      "exampleTranslit": "awt-brēk-e kōlerā dar īn mantaqa kontrōl shud.",
       "exampleEn": "The cholera outbreak in this area was controlled.",
       "tags": [
         "Abstract Concepts"
@@ -97953,7 +97953,7 @@
       "id": "lx-4437",
       "target": "مالتیپل‌اسکلروزیس",
       "targetNormalized": "مالتیپل‌اسکلروزیس",
-      "translit": "māltipl-esklerōz",
+      "translit": "māltipl-isklerōz",
       "glossEn": "multiple sclerosis",
       "pos": "noun",
       "freqRank": 5136,
@@ -97961,7 +97961,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مالتیپل اسکلروزیس یک بیماری خودایمنی عصبی است.",
-      "exampleTranslit": "multipl-e eskleroz yak bēmārī-ye khud-ēmnī-ye asabī ast.",
+      "exampleTranslit": "multipl-e isklerōz yak bēmārī-ye khud-ēmnī-ye asabī ast.",
       "exampleEn": "Multiple sclerosis is an autoimmune neurological disease.",
       "tags": [
         "Abstract Concepts"
@@ -98227,7 +98227,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "اسکن ام‌آرآی نشان‌دهنده آتروفی مغزی بود.",
-      "exampleTranslit": "eskan-e em-ār-āy nishān-dihanda-ye ātrōfī-ye maghzī būd.",
+      "exampleTranslit": "iskan-e em-ār-āy nishān-dihanda-ye ātrōfī-ye maghzī būd.",
       "exampleEn": "The MRI scan showed cerebral atrophy.",
       "tags": [
         "Abstract Concepts"
@@ -98683,7 +98683,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "جناس تام در شعر نیازمند مهارت بالای زبانی است.",
-      "exampleTranslit": "jinās-e tām dar shi'r niyāzmand-e mahārat-e bālā-ye zabāni ast.",
+      "exampleTranslit": "jinās-e tām dar shi'r niyāzmand-e mahārat-e bālā-ye zabānī ast.",
       "exampleEn": "Complete paronomasia in poetry requires high linguistic skill.",
       "tags": [
         "Abstract Concepts"
@@ -98797,7 +98797,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ویروس ربیز بر سیستم عصبی مرکزی اثر می‌گذارد.",
-      "exampleTranslit": "wērūs-e ribīz bar sistam-e asabī-ye markazī asar mēguzārad.",
+      "exampleTranslit": "wērūs-e ribīz bar sīstim-e asabī-ye markazī asar mēguzārad.",
       "exampleEn": "The rabies virus affects the central nervous system.",
       "tags": [
         "Abstract Concepts"
@@ -98854,7 +98854,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سایتومگالوویروس در افراد با سیستم ایمنی ضعیف مشکل‌ساز است.",
-      "exampleTranslit": "sāytōmegālōwērūs dar afrād bā sistam-e ēmnī-ye za'īf mushkil-sāz ast.",
+      "exampleTranslit": "sāytōmegālōwērūs dar afrād bā sīstim-e ēmnī-ye za'īf mushkil-sāz ast.",
       "exampleEn": "Cytomegalovirus is problematic in immunocompromised individuals.",
       "tags": [
         "Abstract Concepts"
@@ -99976,7 +99976,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم پدافند هوایی موشک‌ها را رهگیری کرد.",
-      "exampleTranslit": "sistam-e padāfand-e hawāyī mūshak-hā rā rahgīrī kard.",
+      "exampleTranslit": "sīstim-e padāfand-e hawāyī mūshak-hā rā rahgīrī kard.",
       "exampleEn": "The air defense system intercepted the missiles.",
       "tags": [
         "Abstract Concepts"
@@ -100766,7 +100766,7 @@
       "id": "lx-5574",
       "target": "ریزش",
       "targetNormalized": "ریزش",
-      "translit": "rizish",
+      "translit": "rēzish",
       "glossEn": "collapse/cave-in",
       "pos": "noun",
       "freqRank": 5284,
@@ -100926,7 +100926,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "علم سیبرنتیک سیستم‌های کنترلی را مطالعه می‌کند.",
-      "exampleTranslit": "ilm-e sībernetīk sistam-hā-ye kontrōlī rā mutāli'a mēkunad.",
+      "exampleTranslit": "ilm-e sībernetīk sīstim-hā-ye kontrōlī rā mutāli'a mēkunad.",
       "exampleEn": "Cybernetics studies control systems.",
       "tags": [
         "Abstract Concepts"
@@ -101059,7 +101059,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم کنترل از منطق فازی بهره می‌برد.",
-      "exampleTranslit": "sistam-e kontrōl az mantiq-e fāzī bahra mēbarad.",
+      "exampleTranslit": "sīstim-e kontrōl az mantiq-e fāzī bahra mēbarad.",
       "exampleEn": "The control system utilizes fuzzy logic.",
       "tags": [
         "Abstract Concepts"
@@ -101230,7 +101230,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم‌های بازشناسی گفتار دقت بالایی دارند.",
-      "exampleTranslit": "sistam-hā-ye bāzshināsī-ye guftār diqqat-e bālāyē dārand.",
+      "exampleTranslit": "sīstim-hā-ye bāzshināsī-ye guftār diqqat-e bālāyē dārand.",
       "exampleEn": "Speech recognition systems have high accuracy.",
       "tags": [
         "Abstract Concepts"
@@ -101260,7 +101260,7 @@
       "id": "lx-4615",
       "target": "سیستم خبره",
       "targetNormalized": "سیستم خبره",
-      "translit": "sistem-e khibora",
+      "translit": "sīstim-e khibora",
       "glossEn": "expert system",
       "pos": "noun",
       "freqRank": 5310,
@@ -101268,7 +101268,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این سیستم خبره بیماری‌ها را تشخیص می‌دهد.",
-      "exampleTranslit": "īn sistam-e khubra bēmārī-hā rā tashkhēs mēdihad.",
+      "exampleTranslit": "īn sīstim-e khubra bēmārī-hā rā tashkhēs mēdihad.",
       "exampleEn": "This expert system diagnoses diseases.",
       "tags": [
         "Abstract Concepts"
@@ -101450,7 +101450,7 @@
       "id": "lx-4624",
       "target": "سیستم نهفته",
       "targetNormalized": "سیستم نهفته",
-      "translit": "sistem-e nohofta",
+      "translit": "sīstim-e nohofta",
       "glossEn": "embedded system",
       "pos": "noun",
       "freqRank": 5320,
@@ -101458,7 +101458,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این دستگاه دارای یک سیستم نهفته پیچیده است.",
-      "exampleTranslit": "īn dastgāh dārā-ye yak sistam-e nihufta-ye pēchīda ast.",
+      "exampleTranslit": "īn dastgāh dārā-ye yak sīstim-e nihufta-ye pēchīda ast.",
       "exampleEn": "This device has a complex embedded system.",
       "tags": [
         "Abstract Concepts"
@@ -102066,7 +102066,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "آیرونی دراماتیک زمانی رخ می‌دهد که تماشاگر بیشتر از شخصیت بداند.",
-      "exampleTranslit": "āyrōnī-ye drāmātīk zamānē rukh mēdihad ki tamāshāgar bēshtar az shakhsiyat bidānad.",
+      "exampleTranslit": "āyrōnī-ye drāmātīk zamānē rukh mēdihad ki tamāshāgar bēshtar az shakhsiyat budānad.",
       "exampleEn": "Dramatic irony occurs when the audience knows more than the character.",
       "tags": [
         "Abstract Concepts"
@@ -102134,7 +102134,7 @@
       "id": "lx-4647",
       "target": "سیستم توصیه‌گر",
       "targetNormalized": "سیستم توصیه‌گر",
-      "translit": "sistem-e tawsiya-gar",
+      "translit": "sīstim-e tawsiya-gar",
       "glossEn": "recommender system",
       "pos": "noun",
       "freqRank": 5356,
@@ -102142,7 +102142,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم توصیه‌گر محصولات مرتبط را پیشنهاد می‌دهد.",
-      "exampleTranslit": "sistam-e tawsiya-gar mahsūlāt-e murtabit rā pēshnihād mēdihad.",
+      "exampleTranslit": "sīstim-e tawsiya-gar mahsūlāt-e murtabit rā pēshnihād mēdihad.",
       "exampleEn": "The recommender system suggests relevant products.",
       "tags": [
         "Abstract Concepts"
@@ -102362,7 +102362,7 @@
       "id": "lx-4657",
       "target": "درخت تصمیم",
       "targetNormalized": "درخت تصمیم",
-      "translit": "dirakht-e tasmim",
+      "translit": "darakht-e tasmim",
       "glossEn": "decision tree",
       "pos": "noun",
       "freqRank": 5368,
@@ -102370,7 +102370,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "درخت تصمیم یک مدل قابل تفسیر است.",
-      "exampleTranslit": "dirakht-e tasmēm yak model-e qābil-e tafsēr ast.",
+      "exampleTranslit": "darakht-e tasmēm yak model-e qābil-e tafsēr ast.",
       "exampleEn": "A decision tree is an interpretable model.",
       "tags": [
         "Nature & Environment"
@@ -102389,7 +102389,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "الگوریتم جنگل تصادفی از چندین درخت تصمیم تشکیل شده است.",
-      "exampleTranslit": "algōrītm-e jangal-e tasādufī az chandīn dirakht-e tasmēm tashkēl shuda ast.",
+      "exampleTranslit": "algōrītm-e jangal-e tasādufī az chandīn darakht-e tasmēm tashkēl shuda ast.",
       "exampleEn": "The random forest algorithm consists of multiple decision trees.",
       "tags": [
         "Nature & Environment"
@@ -102446,7 +102446,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم تشخیص ناهنجاری رفتارهای مشکوک را شناسایی می‌کند.",
-      "exampleTranslit": "sistam-e tashkhēs-e nāhanjārī raftār-hā-ye mashkūk rā shināsāyī mēkunad.",
+      "exampleTranslit": "sīstim-e tashkhēs-e nāhanjārī raftār-hā-ye mashkūk rā shināsāyī mēkunad.",
       "exampleEn": "The anomaly detection system identifies suspicious behaviors.",
       "tags": [
         "Abstract Concepts"
@@ -102674,7 +102674,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم کوانتومی به حالت پایه خود افت کرد.",
-      "exampleTranslit": "sistam-e kwāntumī ba hālat-e pāya-ye khud uft kard.",
+      "exampleTranslit": "sīstim-e kwāntumī ba hālat-e pāya-ye khud uft kard.",
       "exampleEn": "The quantum system dropped to its ground state.",
       "tags": [
         "Society & Politics"
@@ -102742,7 +102742,7 @@
       "id": "lx-4676",
       "target": "سیستم کنترل حلقه بسته",
       "targetNormalized": "سیستم کنترل حلقه بسته",
-      "translit": "sistem-e kontrol-e halqa-basta",
+      "translit": "sīstim-e kontrol-e halqa-basta",
       "glossEn": "closed-loop control system",
       "pos": "noun",
       "freqRank": 5388,
@@ -102750,7 +102750,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این بازو از سیستم کنترل حلقه بسته استفاده می‌کند.",
-      "exampleTranslit": "īn bāzū az sistam-e kontrōl-e halqa-ye basta istifāda mēkunad.",
+      "exampleTranslit": "īn bāzū az sīstim-e kontrōl-e halqa-ye basta istifāda mēkunad.",
       "exampleEn": "This arm uses a closed-loop control system.",
       "tags": [
         "Abstract Concepts"
@@ -103073,7 +103073,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "حافظه دسترسی تصادفی نقش مهمی در سرعت سیستم دارد.",
-      "exampleTranslit": "hāfiza-ye dastrasī-ye tasādufī naqsh-e muhimmē dar sur'at-e sistam dārad.",
+      "exampleTranslit": "hāfiza-ye dastrasī-ye tasādufī naqsh-e muhimmē dar sur'at-e sīstim dārad.",
       "exampleEn": "RAM plays an important role in system speed.",
       "tags": [
         "Abstract Concepts"
@@ -103103,7 +103103,7 @@
       "id": "lx-4694",
       "target": "سیستم روی تراشه",
       "targetNormalized": "سیستم روی تراشه",
-      "translit": "sistam rō-ye tarāsha",
+      "translit": "sīstim rō-ye tarāsha",
       "glossEn": "system on a chip",
       "pos": "noun",
       "freqRank": 5407,
@@ -103111,7 +103111,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "تلفن‌های هوشمند از سیستم روی تراشه استفاده می‌کنند.",
-      "exampleTranslit": "telefōn-hā-ye hōshmand az sistam-e rō-ye tarāsha istifāda mēkunand.",
+      "exampleTranslit": "tēlifōn-hā-ye hōshmand az sīstim-e rō-ye tarāsha istifāda mēkunand.",
       "exampleEn": "Smartphones use system-on-a-chip.",
       "tags": [
         "Abstract Concepts"
@@ -103244,7 +103244,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "احراز هویت بیومتریک امنیت سیستم را ارتقا داده است.",
-      "exampleTranslit": "ihrāz-e huwiyat-e biyōmetrīk amniyat-e sistam rā irtiqā dāda ast.",
+      "exampleTranslit": "ihrāz-e huwiyat-e biyōmetrīk amniyat-e sīstim rā irtiqā dāda ast.",
       "exampleEn": "Biometric authentication has enhanced system security.",
       "tags": [
         "Abstract Concepts"
@@ -103453,7 +103453,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم کنترل نسخه تاریخچه تغییرات کد را حفظ می‌کند.",
-      "exampleTranslit": "sistam-e kontrōl-e nuskha tārīkhcha-ye taghyērāt-e kod rā hifz mēkunad.",
+      "exampleTranslit": "sīstim-e kontrōl-e nuskha tārīkhcha-ye taghyērāt-e kod rā hifz mēkunad.",
       "exampleEn": "The version control system maintains the code change history.",
       "tags": [
         "Abstract Concepts"
@@ -103806,7 +103806,7 @@
       "id": "lx-4718",
       "target": "معماری سیستم",
       "targetNormalized": "معماری سیستم",
-      "translit": "mi'mārī-ye sistam",
+      "translit": "mi'mārī-ye sīstim",
       "glossEn": "system architecture",
       "pos": "noun",
       "freqRank": 5444,
@@ -103814,7 +103814,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "معماری سیستم باید قابلیت انکشاف را داشته باشد.",
-      "exampleTranslit": "mi'mārī-ye sistam bāyad qābiliyat-e inkishāf rā dāshta bāshad.",
+      "exampleTranslit": "mi'mārī-ye sīstim bāyad qābiliyat-e inkishāf rā dāshta bāshad.",
       "exampleEn": "System architecture must have the capability for expansion.",
       "tags": [
         "Abstract Concepts"
@@ -104528,7 +104528,7 @@
       "id": "lx-5492",
       "target": "پلان",
       "targetNormalized": "پلان",
-      "translit": "pelan",
+      "translit": "plān",
       "glossEn": "plan/floorplan",
       "pos": "noun",
       "freqRank": 5482,
@@ -104935,7 +104935,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "نقش‌مایه سفر قهرمان در بسیاری از داستان‌ها تکرار می‌شود.",
-      "exampleTranslit": "naqsh-māya-ye safar-e qahramān dar bisyāri az dāstān-hā tikrār mē-shawad.",
+      "exampleTranslit": "naqsh-māya-ye safar-e qahramān dar bisyāri az dāstān-hā takrār mē-shawad.",
       "exampleEn": "The motif of the hero's journey is repeated in many stories.",
       "tags": [
         "Abstract Concepts"
@@ -105144,7 +105144,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "زبان فارسی باستان سیستم حالت‌نمایی پیچیده‌ای داشت.",
-      "exampleTranslit": "zabān-e fārsī-ye bāstān sistam-e hālat-namāyī-ye pēchīda-ē dāsht.",
+      "exampleTranslit": "zabān-e fārsī-ye bāstān sīstim-e hālat-namāyī-ye pēchīda-ē dāsht.",
       "exampleEn": "Old Persian had a complex case marking system.",
       "tags": [
         "Abstract Concepts"
@@ -105991,7 +105991,7 @@
       "id": "lx-5568",
       "target": "پیچش",
       "targetNormalized": "پیچش",
-      "translit": "pichish",
+      "translit": "pēchish",
       "glossEn": "torsion",
       "pos": "noun",
       "freqRank": 5559,
@@ -106113,7 +106113,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "زبانجی در شرایط تماس زبانی برای ارتباط اولیه شکل می‌گیرد.",
-      "exampleTranslit": "zabān-ji dar sharāyit-e tamās-e zabāni barā irtibāt-e awwaliya shakl mē-girad.",
+      "exampleTranslit": "zabān-ji dar sharāyit-e tamās-e zabānī barā irtibāt-e awwaliya shakl mē-girad.",
       "exampleEn": "A pidgin is formed in language contact situations for basic communication.",
       "tags": [
         "Abstract Concepts"
@@ -106170,7 +106170,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیاست‌های زبانی باید چندزبانگی را در نظر بگیرند.",
-      "exampleTranslit": "siyāsat-hā-ye zabānī bāyad chand-zabānagī rā dar nazar bigīrand.",
+      "exampleTranslit": "siyāsat-hā-ye zabānī bāyad chand-zabānagī rā dar nazar bugīrand.",
       "exampleEn": "Language policies must consider multilingualism.",
       "tags": [
         "Abstract Concepts"
@@ -106219,7 +106219,7 @@
       "id": "lx-4887",
       "target": "برنامه‌ریزی زبانی",
       "targetNormalized": "برنامه‌ریزی زبانی",
-      "translit": "barnāma-rizi-ye zabāni",
+      "translit": "barnāma-rēzī-ye zabānī",
       "glossEn": "language planning",
       "pos": "noun",
       "freqRank": 5571,
@@ -106257,7 +106257,7 @@
       "id": "lx-4888",
       "target": "سیاست زبانی",
       "targetNormalized": "سیاست زبانی",
-      "translit": "siyāsat-e zabāni",
+      "translit": "siyāsat-e zabānī",
       "glossEn": "language policy",
       "pos": "noun",
       "freqRank": 5573,
@@ -106276,7 +106276,7 @@
       "id": "lx-4889",
       "target": "پالایش زبانی",
       "targetNormalized": "پالایش زبانی",
-      "translit": "pālāyish-e zabāni",
+      "translit": "pālāyish-e zabānī",
       "glossEn": "linguistic purism",
       "pos": "noun",
       "freqRank": 5574,
@@ -106713,7 +106713,7 @@
       "id": "lx-4911",
       "target": "مدل استاندارد",
       "targetNormalized": "مدل استاندارد",
-      "translit": "modīl-e estāndārd",
+      "translit": "model-e istāndārd",
       "glossEn": "Standard Model",
       "pos": "noun",
       "freqRank": 5597,
@@ -106721,7 +106721,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مدل استاندارد ذرات هنوز کامل نیست.",
-      "exampleTranslit": "modīl-e istāndārd-e zarrāt hanōz kāmil nēst.",
+      "exampleTranslit": "model-e istāndārd-e zarrāt hanōz kāmil nēst.",
       "exampleEn": "The Standard Model of particles is not yet complete.",
       "tags": [
         "Abstract Concepts"
@@ -106816,7 +106816,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم قنات یک نوآوری باستانی است.",
-      "exampleTranslit": "sīstam-e qanāt yak naw-āwarī-ye bāstānī ast.",
+      "exampleTranslit": "sīstim-e qanāt yak naw-āwarī-ye bāstānī ast.",
       "exampleEn": "The qanat system is an ancient innovation.",
       "tags": [
         "Abstract Concepts"
@@ -107234,7 +107234,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "برافروختگی ستاره‌ای می‌تواند سیستم‌های ارتباطی را مختل کند.",
-      "exampleTranslit": "bar-afrūkhtagī-ye sitāra-ī mētawānad sīstem-hā-ye irtibātī rā mokhtal konad.",
+      "exampleTranslit": "bar-afrūkhtagī-ye sitāra-ī mētawānad sīstim-hā-ye irtibātī rā mokhtal konad.",
       "exampleEn": "A stellar flare can disrupt communication systems.",
       "tags": [
         "Abstract Concepts"
@@ -107443,7 +107443,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "انتروپی تعیین‌کننده جهت پیکان زمان است.",
-      "exampleTranslit": "entrūpī ta'yīn-kononda-ye jihat-e paykān-e zamān ast.",
+      "exampleTranslit": "entrūpī ta'yīn-kunanda-ye jihat-e paykān-e zamān ast.",
       "exampleEn": "Entropy determines the direction of the arrow of time.",
       "tags": [
         "Time & Calendar"
@@ -107462,7 +107462,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مکانیک آماری رفتار سیستم‌های بزرگ را تحلیل می‌کند.",
-      "exampleTranslit": "mekānīk-e āmārī raftār-e sīstem-hā-ye buzurg rā tahlīl mēkonad.",
+      "exampleTranslit": "mekānīk-e āmārī raftār-e sīstim-hā-ye buzurg rā tahlīl mēkonad.",
       "exampleEn": "Statistical mechanics analyzes the behavior of large systems.",
       "tags": [
         "Abstract Concepts"
@@ -107842,7 +107842,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مدل‌های گرانش تعمیم‌یافته نیازی به ماده تاریک ندارند.",
-      "exampleTranslit": "modīl-hā-ye girānish-e ta'mīm-yāfta niyāzī ba māda-ye tārīk nadārand.",
+      "exampleTranslit": "model-hā-ye girānish-e ta'mīm-yāfta niyāzī ba māda-ye tārīk nadārand.",
       "exampleEn": "Modified gravity models do not need dark matter.",
       "tags": [
         "Abstract Concepts"
@@ -107899,7 +107899,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "جابجایی به سرخ نشان‌دهنده دور شدن کهکشان‌ها است.",
-      "exampleTranslit": "jā-ba-jāyī ba surkh nishān-dihonda-ye dūr shudan-e kahkashān-hā ast.",
+      "exampleTranslit": "jā-ba-jāyī ba surkh nishān-dihanda-ye dūr shudan-e kahkashān-hā ast.",
       "exampleEn": "Redshift indicates that galaxies are moving away.",
       "tags": [
         "Abstract Concepts"
@@ -108678,7 +108678,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "نخستین ماهواره مصنوعی اسپوتنیک بود.",
-      "exampleTranslit": "nokhastīn māhwāra-ye masnū'ī espūtnīk būd.",
+      "exampleTranslit": "nokhastīn māhwāra-ye masnū'ī ispūtnīk būd.",
       "exampleEn": "The first artificial satellite was Sputnik.",
       "tags": [
         "Abstract Concepts"
@@ -108830,7 +108830,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم زهکشی جاده باید اصلاح شود.",
-      "exampleTranslit": "sistam-e zihkashī-ye jāda bāyad islāh shawad.",
+      "exampleTranslit": "sīstim-e zihkashī-ye jāda bāyad islāh shawad.",
       "exampleEn": "The road's drainage system must be corrected.",
       "tags": [
         "Abstract Concepts"
@@ -109134,7 +109134,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "عملگر هامیلتونی مجموع انرژی سیستم را می‌دهد.",
-      "exampleTranslit": "amal-gar-e hāmīltūnī majmū'-e enerzhī-ye sīstem rā mēdihad.",
+      "exampleTranslit": "amal-gar-e hāmīltūnī majmū'-e enerzhī-ye sīstim rā mēdihad.",
       "exampleEn": "The Hamiltonian operator gives the total energy of the system.",
       "tags": [
         "Abstract Concepts"
@@ -109419,7 +109419,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "یک مطالعه تطبیقی بین دو سیستم آموزشی انجام گرفت.",
-      "exampleTranslit": "yak mutāli'a-ye tatbēqī bayn-e dū sistam-e āmōzishī anjām girift.",
+      "exampleTranslit": "yak mutāli'a-ye tatbēqī bayn-e dū sīstim-e āmōzishī anjām girift.",
       "exampleEn": "A comparative study was conducted between the two educational systems.",
       "tags": [
         "Abstract Concepts"
@@ -109533,7 +109533,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بازتولید نابرابری در سیستم آموزشی دیده می‌شود.",
-      "exampleTranslit": "bāz-tawlēd-e nābarābarī dar sistam-e āmōzishī dēda mēshawad.",
+      "exampleTranslit": "bāz-tawlēd-e nābarābarī dar sīstim-e āmōzishī dēda mēshawad.",
       "exampleEn": "The reproduction of inequality is seen in the educational system.",
       "tags": [
         "Abstract Concepts"
@@ -109590,7 +109590,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "آلفا قنطورس نزدیکترین سیستم ستاره‌ای به خورشید است.",
-      "exampleTranslit": "ālfā qintūris nazdīk-tarīn sīstem-e sitāra-ī ba khorshēd ast.",
+      "exampleTranslit": "ālfā qintūris nazdīk-tarīn sīstim-e sitāra-ī ba khorshēd ast.",
       "exampleEn": "Alpha Centauri is the closest star system to the sun.",
       "tags": [
         "Abstract Concepts"
@@ -110057,7 +110057,7 @@
       "id": "lx-5069",
       "target": "شتاب‌دهنده هادرونی بزرگ",
       "targetNormalized": "شتاب‌دهنده هادرونی بزرگ",
-      "translit": "shitāb-dihonda-ye hādrūnī-ye bozorg",
+      "translit": "shitāb-dihanda-ye hādrūnī-ye bozorg",
       "glossEn": "Large Hadron Collider",
       "pos": "noun",
       "freqRank": 5773,
@@ -110065,7 +110065,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "شتاب‌دهنده هادرونی بزرگ در سرن قرار دارد.",
-      "exampleTranslit": "shitāb-dihonda-ye hādrūnī-ye buzurg dar sern qarār dārad.",
+      "exampleTranslit": "shitāb-dihanda-ye hādrūnī-ye buzurg dar sern qarār dārad.",
       "exampleEn": "The Large Hadron Collider is located at CERN.",
       "tags": [
         "Abstract Concepts"
@@ -113078,7 +113078,7 @@
       "id": "lx-5533",
       "target": "متره",
       "targetNormalized": "متره",
-      "translit": "metre",
+      "translit": "metra",
       "glossEn": "quantity surveying",
       "pos": "noun",
       "freqRank": 5932,
@@ -113618,7 +113618,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "نسبت میرایی در سیستم‌های لرزه‌ای مهم است.",
-      "exampleTranslit": "nisbat-e mīrāyī dar sistam-hā-ye larzayī muhim ast.",
+      "exampleTranslit": "nisbat-e mīrāyī dar sīstim-hā-ye larzayī muhim ast.",
       "exampleEn": "The damping ratio in seismic systems is important.",
       "tags": [
         "Abstract Concepts"
@@ -114598,7 +114598,7 @@
       "id": "lx-5618",
       "target": "انگاره",
       "targetNormalized": "انگاره",
-      "translit": "ingāra",
+      "translit": "angāra",
       "glossEn": "concept/notion",
       "pos": "noun",
       "freqRank": 6012,
@@ -116783,7 +116783,7 @@
       "id": "lx-5487",
       "target": "لرزه‌خیز",
       "targetNormalized": "لرزه‌خیز",
-      "translit": "larza-khiz",
+      "translit": "larza-khēz",
       "glossEn": "seismically active",
       "pos": "noun",
       "freqRank": 6127,
@@ -117125,7 +117125,7 @@
       "id": "lx-5481",
       "target": "بتن‌آرمه",
       "targetNormalized": "بتن‌آرمه",
-      "translit": "beton-arme",
+      "translit": "beton-arma",
       "glossEn": "reinforced concrete",
       "pos": "noun",
       "freqRank": 6145,
@@ -118368,7 +118368,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "درون‌داد سیستم باید با دقت کنترل شود.",
-      "exampleTranslit": "darūn-dād-e sistam bāyad bā diqqat kontrōl shawad.",
+      "exampleTranslit": "darūn-dād-e sīstim bāyad bā diqqat kontrōl shawad.",
       "exampleEn": "The system's input must be carefully controlled.",
       "tags": [
         "Abstract Concepts"
@@ -118672,7 +118672,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "فرضیه توزیع نرمال با آزمون کلموگروف-اسمیرنوف تایید شد.",
-      "exampleTranslit": "farziya-ye tawzē'-e normāl bā āzmūn-e kolmogorof-esmirnof ta'yēd shud.",
+      "exampleTranslit": "farziya-ye tawzē'-e normāl bā āzmūn-e kolmogorof-ismirnof ta'yēd shud.",
       "exampleEn": "The normal distribution hypothesis was confirmed by the Kolmogorov-Smirnov test.",
       "tags": [
         "Abstract Concepts"
@@ -119394,7 +119394,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مضافاً، باید مالیات را هم در نظر بگیریم.",
-      "exampleTranslit": "muzāfan, bāyad māliyāt rā ham dar nazar bigīrēm.",
+      "exampleTranslit": "muzāfan, bāyad māliyāt rā ham dar nazar bugīrēm.",
       "exampleEn": "Additionally, we must consider the tax.",
       "tags": [
         "Abstract Concepts"
@@ -119862,7 +119862,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سیستم امنیتی را تعبیه کردند.",
-      "exampleTranslit": "sīstam-e amnyatī rā ta'biya kardand.",
+      "exampleTranslit": "sīstim-e amnyatī rā ta'biya kardand.",
       "exampleEn": "They installed the security system.",
       "tags": [
         "Actions & Movement"
@@ -120857,7 +120857,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "آرزوهای او سرانجام تحقق یافت.",
-      "exampleTranslit": "ārizōhā-ye ō saranjām tahaqqoq yāft.",
+      "exampleTranslit": "ārzōhā-ye ō saranjām tahaqqoq yāft.",
       "exampleEn": "His dreams finally materialized.",
       "tags": [
         "Actions & Movement"
@@ -121764,7 +121764,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "سرنوشت آنها به هم گره خورد.",
-      "exampleTranslit": "sarnivisht-e ānhā ba ham gora khurd.",
+      "exampleTranslit": "sarnawisht-e ānhā ba ham gora khurd.",
       "exampleEn": "Their destinies became intertwined.",
       "tags": [
         "Actions & Movement"
@@ -122688,7 +122688,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مشکل در بطن سیستم قرار دارد.",
-      "exampleTranslit": "mushkil dar batn-e sistam qarār dārad.",
+      "exampleTranslit": "mushkil dar batn-e sīstim qarār dārad.",
       "exampleEn": "The problem is at the core of the system.",
       "tags": [
         "Abstract Concepts"
@@ -122726,7 +122726,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "به مجرد رسیدن، تماس بگیرید.",
-      "exampleTranslit": "ba mujarrad-e rasīdan, tamās bigīrēd.",
+      "exampleTranslit": "ba mujarrad-e rasīdan, tamās bugīrēd.",
       "exampleEn": "As soon as you arrive, call me.",
       "tags": [
         "Time & Calendar"
@@ -122802,7 +122802,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "از طرفی دلم می‌خواهد بروم، از طرفی کار دارم.",
-      "exampleTranslit": "az tarafē dil-am mēkhāhad birawam, az tarafē kār dāram.",
+      "exampleTranslit": "az tarafē dil-am mēkhāhad burawam, az tarafē kār dāram.",
       "exampleEn": "On the one hand I want to go, on the other hand I have work.",
       "tags": [
         "Body & Anatomy"
@@ -123644,7 +123644,7 @@
       "pos": "noun",
       "register": "neutral",
       "exampleTarget": "یوزرنیم خود را بنویسید.",
-      "exampleTranslit": "yūzarnēm-e khud rā binawīsēd.",
+      "exampleTranslit": "yūzarnēm-e khud rā bunawīsēd.",
       "exampleEn": "Write your username.",
       "variants": [],
       "tags": [],

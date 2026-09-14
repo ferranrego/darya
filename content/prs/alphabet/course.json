@@ -9,7 +9,7 @@
       "letters": [
         {
           "char": "آ",
-          "name": "alef maddā",
+          "name": "alif maddā",
           "translit": "ā",
           "sound": "deep 'aw' as in 'saw'",
           "forms": {
@@ -22,7 +22,7 @@
         },
         {
           "char": "ا",
-          "name": "alef",
+          "name": "alif",
           "translit": "ā / –",
           "sound": "deep 'aw', or a vowel seat at the start of words",
           "forms": {
@@ -35,7 +35,7 @@
         },
         {
           "char": "ب",
-          "name": "be",
+          "name": "bē",
           "translit": "b",
           "sound": "b as in bread",
           "forms": {
@@ -211,7 +211,7 @@
         },
         {
           "char": "ر",
-          "name": "re",
+          "name": "rē",
           "translit": "r",
           "sound": "rolled r, like Spanish 'r'",
           "forms": {
@@ -346,7 +346,7 @@
       "letters": [
         {
           "char": "ت",
-          "name": "te",
+          "name": "tē",
           "translit": "t",
           "sound": "t as in tea",
           "forms": {
@@ -570,7 +570,7 @@
         },
         {
           "char": "خ",
-          "name": "khe",
+          "name": "khē",
           "translit": "kh",
           "sound": "kh as in Scottish 'loch'",
           "forms": {
@@ -821,7 +821,7 @@
           "glossEn": "flower",
           "choices": [
             "gul",
-            "gil",
+            "gal",
             "lag",
             "gōl"
           ]
@@ -906,7 +906,7 @@
       "letters": [
         {
           "char": "چ",
-          "name": "che",
+          "name": "chē",
           "translit": "ch",
           "sound": "ch as in chai",
           "forms": {
@@ -932,7 +932,7 @@
         },
         {
           "char": "ز",
-          "name": "ze",
+          "name": "zē",
           "translit": "z",
           "sound": "z as in zoo",
           "forms": {
@@ -945,7 +945,7 @@
         },
         {
           "char": "ژ",
-          "name": "zhe",
+          "name": "zhē",
           "translit": "zh",
           "sound": "zh, the 's' in 'vision'",
           "forms": {
@@ -1100,7 +1100,7 @@
       "letters": [
         {
           "char": "پ",
-          "name": "pe",
+          "name": "pē",
           "translit": "p",
           "sound": "p as in pen",
           "forms": {
@@ -1113,7 +1113,7 @@
         },
         {
           "char": "ف",
-          "name": "fe",
+          "name": "fē",
           "translit": "f",
           "sound": "f as in fruit",
           "forms": {
@@ -1246,7 +1246,7 @@
             "panj",
             "ganj",
             "jang",
-            "penj"
+            "pinj"
           ]
         },
         {
@@ -1381,7 +1381,7 @@
         },
         {
           "char": "ث",
-          "name": "se",
+          "name": "sē",
           "translit": "s",
           "sound": "s, same sound as س",
           "forms": {
