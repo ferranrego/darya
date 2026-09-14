@@ -273,7 +273,8 @@ export function checkInterference(doc: TextDocument): TextDefect[] {
     }
   } else if (profile.code === "prs") {
     for (const word of PRS_IRANIAN_WORDS) {
-      if (text.includes(word)) hits.push(`Iranian Persian "${word}"`);
+      const re = new RegExp(`(?<![؀-ۿ])${word}(?![؀-ۿ])`, "u");
+      if (re.test(text)) hits.push(`Iranian Persian "${word}"`);
     }
     if (PRS_MI_WITHOUT_ZWNJ.test(text)) hits.push("می without ZWNJ");
   }
