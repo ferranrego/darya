@@ -3,9 +3,9 @@
 import { useMutation } from "@tanstack/react-query";
 import { Check, CircleHelp, Highlighter, Trophy, ArrowRight, Languages, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ComprehensionCheck } from "./comprehension-check";
 import { availableLevels } from "@/lib/content/levels";
 import { lexicon, lexiconIndex } from "@/lib/content/lexicon";
 import { questionsFor, type QuizResult } from "@/lib/content/comprehension";
@@ -34,10 +34,30 @@ import {
 import { newCard } from "@/lib/srs/scheduler";
 import { hapticTap, hapticSuccess } from "@/lib/util/haptics";
 
-import { ReaderGuideSheet } from "./reader-guide-sheet";
 import { segmentSentence } from "./segments";
-import { WordSheet } from "./word-sheet";
-import { SentenceSheet } from "./sentence-sheet";
+
+/**
+ * The reader's sheets and the quiz, split out of the reader's own chunk.
+ *
+ * All four were static imports, so the first text waited on code for panels
+ * the learner opens later - the word sheet alone carries the 204 KB Grammar Hub
+ * file. They are client-only overlays with no server markup to lose. The
+ * sheets stay mounted and own their AnimatePresence, so enter and exit
+ * animations are unchanged; the effect in TextReader warms the chunks so the
+ * first tap does not wait on the network.
+ */
+const ComprehensionCheck = dynamic(
+  () => import("./comprehension-check").then((m) => m.ComprehensionCheck),
+  { ssr: false },
+);
+const ReaderGuideSheet = dynamic(
+  () => import("./reader-guide-sheet").then((m) => m.ReaderGuideSheet),
+  { ssr: false },
+);
+const WordSheet = dynamic(() => import("./word-sheet").then((m) => m.WordSheet), { ssr: false });
+const SentenceSheet = dynamic(() => import("./sentence-sheet").then((m) => m.SentenceSheet), {
+  ssr: false,
+});
 
 export type GlossOutcome =
   | { kind: "lexeme"; lexemeId: string; usedAsName?: boolean }
@@ -140,6 +160,12 @@ export function TextReader({
   // the same sentence in quick succession are two model calls.
   const [translating, setTranslating] = useState<Set<number>>(new Set());
   const [translationErrors, setTranslationErrors] = useState<Map<number, string>>(new Map());
+
+  // Fetch the quiz chunk while the learner reads, so finishing a text never
+  // shows a blank screen waiting on it. The sheets load on mount anyway.
+  useEffect(() => {
+    void import("./comprehension-check");
+  }, []);
 
   useEffect(() => {
     if (localStorage.getItem("hasSeenReaderGuide")) return;

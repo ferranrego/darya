@@ -1,13 +1,28 @@
 "use client";
 
 import { ChevronLeft } from "lucide-react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useAlphabetProgress, useProfile, useUserWords } from "@/lib/queries/hooks";
 import { curricularKnownCount } from "@/lib/lexeme/lookup";
 import { levelLabel, levels } from "@/lib/content/levels";
 import { profile as lang } from "@/lib/lang";
-import { VocabChart } from "./vocab-chart";
-import { ActivityHeatmap } from "./heatmap";
+
+/**
+ * Charts load after the numbers, not before them.
+ *
+ * recharts is a 381 KB chunk and the heatmap library is another, and both were
+ * static imports, so the Stats tab's figures waited on chart code the learner
+ * reads last. Neither renders anything meaningful on the server. The chart's
+ * placeholder is its exact box (`h-48 mt-6`), so nothing moves when it arrives.
+ */
+const VocabChart = dynamic(() => import("./vocab-chart").then((m) => m.VocabChart), {
+  ssr: false,
+  loading: () => <div className="mt-6 h-48 w-full" />,
+});
+const ActivityHeatmap = dynamic(() => import("./heatmap").then((m) => m.ActivityHeatmap), {
+  ssr: false,
+});
 
 export default function StatsPage() {
   const { data: profile } = useProfile();
@@ -72,7 +87,11 @@ export default function StatsPage() {
             <p className="text-[13px] text-ink-soft">Learning words</p>
           </div>
         </div>
-        <VocabChart knownCount={knownCount} learningCount={learningCount} startTimestamp={startTimestamp} />
+        {/* VocabChart renders nothing for an empty vocabulary; checking here too
+            keeps its loading placeholder from flashing an empty box. */}
+        {(knownCount > 0 || learningCount > 0) && (
+          <VocabChart knownCount={knownCount} learningCount={learningCount} startTimestamp={startTimestamp} />
+        )}
       </section>
 
       <section className="grid grid-cols-2 gap-4">

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import confetti from "canvas-confetti";
 import { useProfile, useUserWords } from "@/lib/queries/hooks";
 import { levels } from "@/lib/content/levels";
 import { curricularKnownCount } from "@/lib/lexeme/lookup";
@@ -46,7 +45,7 @@ export function MilestoneObserver() {
     }
 
     if (shouldCelebrate) {
-      triggerConfetti();
+      void triggerConfetti();
     }
 
     // Update refs for next render
@@ -58,7 +57,16 @@ export function MilestoneObserver() {
   return null;
 }
 
-function triggerConfetti() {
+/**
+ * Loads canvas-confetti on the first celebration rather than with the app.
+ *
+ * This observer is mounted by the `(app)` layout, so a static import put the
+ * library into the shell chunk of every page for an animation that fires a few
+ * times in a learner's life. The dynamic import resolves in well under the
+ * 250 ms tick below; the browser caches it after the first milestone.
+ */
+async function triggerConfetti() {
+  const { default: confetti } = await import("canvas-confetti");
   const duration = 3 * 1000;
   const animationEnd = Date.now() + duration;
   const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 100 };
