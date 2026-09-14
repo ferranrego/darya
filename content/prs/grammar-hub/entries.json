@@ -8,10 +8,10 @@
       "level": "A1",
       "rank": 5,
       "title": "The ezafe",
-      "summary": "Put -e between a noun and the word that describes or owns it: ketāb-e man, my book.",
+      "summary": "Put -e between a noun and the word that describes or owns it: kitāb-e man, my book.",
       "sample": {
         "target": "کتاب من",
-        "translit": "ketāb-e man"
+        "translit": "kitāb-e man"
       },
       "aliases": [
         "ezafe",
@@ -40,7 +40,7 @@
         {
           "type": "rule",
           "heading": "What it does",
-          "body": "Dari links two words that belong together with a short -e sound. It joins a noun to the adjective that describes it, or to the person or thing that owns it. English puts the describing word first (a new book). Dari puts the noun first and links the rest to it: ketāb-e naw, literally 'book-of new'."
+          "body": "Dari links two words that belong together with a short -e sound. It joins a noun to the adjective that describes it, or to the person or thing that owns it. English puts the describing word first (a new book). Dari puts the noun first and links the rest to it: kitāb-e naw, literally 'book-of new'."
         },
         {
           "type": "pattern",
@@ -65,13 +65,13 @@
           "items": [
             {
               "target": "کتاب نو",
-              "translit": "ketāb-e naw",
+              "translit": "kitāb-e naw",
               "en": "a new book",
               "highlight": "کتاب نو"
             },
             {
               "target": "کتاب من کجا است؟",
-              "translit": "ketāb-e man kujā ast?",
+              "translit": "kitāb-e man kujā ast?",
               "en": "Where is my book?",
               "highlight": "کتاب من"
             },
@@ -86,7 +86,7 @@
         {
           "type": "rule",
           "heading": "You hear it, you don't see it",
-          "body": "The -e is usually not written in Dari script. کتاب من is read ketāb-e man, even though nothing between the two words shows it. The transliteration line always shows it, so use that line to learn where it goes."
+          "body": "The -e is usually not written in Dari script. کتاب من is read kitāb-e man, even though nothing between the two words shows it. The transliteration line always shows it, so use that line to learn where it goes."
         },
         {
           "type": "table",
@@ -97,8 +97,8 @@
           ],
           "rows": [
             [
-              "a consonant: ketāb",
-              "ketāb-e man"
+              "a consonant: kitāb",
+              "kitāb-e man"
             ],
             [
               "-a: khāna",
@@ -140,24 +140,24 @@
           "type": "mistake",
           "wrong": {
             "target": "من کتاب",
-            "translit": "man ketāb"
+            "translit": "man kitāb"
           },
           "right": {
             "target": "کتاب من",
-            "translit": "ketāb-e man",
+            "translit": "kitāb-e man",
             "en": "my book"
           },
-          "why": "The owner comes after the thing, never before it. man ketāb sounds like 'I, book'."
+          "why": "The owner comes after the thing, never before it. man kitāb sounds like 'I, book'."
         },
         {
           "type": "mistake",
           "wrong": {
             "target": "نو کتاب",
-            "translit": "naw ketāb"
+            "translit": "naw kitāb"
           },
           "right": {
             "target": "کتاب نو",
-            "translit": "ketāb-e naw",
+            "translit": "kitāb-e naw",
             "en": "a new book"
           },
           "why": "Adjectives follow the noun in Dari. Put the noun first and link the adjective with -e."
@@ -165,7 +165,7 @@
         {
           "type": "rule",
           "heading": "A shorter way to say 'my'",
-          "body": "For 'my', 'your' and 'his' or 'her' you will often see an ending on the noun instead of a separate word: کتابم, ketābam, my book. Both are correct. See Possessive endings."
+          "body": "For 'my', 'your' and 'his' or 'her' you will often see an ending on the noun instead of a separate word: کتابم, kitābam, my book. Both are correct. See Possessive endings."
         }
       ],
       "related": [
@@ -316,7 +316,7 @@
             },
             {
               "target": "آنها چه می‌کنند؟",
-              "translit": "ānhā che mēkunand?",
+              "translit": "ānhā chi mēkunand?",
               "en": "What are they doing?",
               "highlight": "می‌کنند"
             }
@@ -342,11 +342,11 @@
           "type": "mistake",
           "wrong": {
             "target": "من کتاب می‌دارم",
-            "translit": "man ketāb mēdāram"
+            "translit": "man kitāb mēdāram"
           },
           "right": {
             "target": "من کتاب دارم",
-            "translit": "man ketāb dāram",
+            "translit": "man kitāb dāram",
             "en": "I have a book."
           },
           "why": "dāshtan, 'to have', takes no mē- in the present. The same goes for 'to be': hastam, never mēhastam."
@@ -381,10 +381,10 @@
       "level": "A1",
       "rank": 9,
       "title": "The object marker rā",
-      "summary": "Put rā after a specific object: ketāb rā mēkhānam, I read the book.",
+      "summary": "Put rā after a specific object: kitāb rā mēkhānam, I read the book.",
       "sample": {
         "target": "کتاب را",
-        "translit": "ketāb rā"
+        "translit": "kitāb rā"
       },
       "aliases": [
         "ra",
@@ -437,13 +437,13 @@
           "items": [
             {
               "target": "من کتاب را می‌خوانم",
-              "translit": "man ketāb rā mēkhānam",
+              "translit": "man kitāb rā mēkhānam",
               "en": "I am reading the book.",
               "highlight": "را"
             },
             {
               "target": "من کتاب می‌خوانم",
-              "translit": "man ketāb mēkhānam",
+              "translit": "man kitāb mēkhānam",
               "en": "I read books."
             }
           ]
@@ -527,11 +527,11 @@
           "heading": "In everyday speech",
           "written": {
             "target": "من کتاب را می‌خوانم",
-            "translit": "man ketāb rā mēkhānam"
+            "translit": "man kitāb rā mēkhānam"
           },
           "spoken": {
             "target": "مه کتاب ره میخانم",
-            "translit": "ma ketāb ra mēkhānum"
+            "translit": "ma kitāb ra mēkhānum"
           },
           "note": "In speech and in casual writing rā is usually ra, spelled ره."
         }
@@ -551,7 +551,7 @@
       "level": "A1",
       "rank": 1,
       "title": "Pronouns and 'to be'",
-      "summary": "Six pronouns, each with its own form of 'to be' at the end of the sentence: man shāgerd hastam, I am a student.",
+      "summary": "Six pronouns, each with its own form of 'to be' at the end of the sentence: man shāgird hastam, I am a student.",
       "sample": {
         "target": "من هستم",
         "translit": "man hastam"
@@ -666,13 +666,13 @@
           "items": [
             {
               "target": "من شاگرد هستم",
-              "translit": "man shāgerd hastam",
+              "translit": "man shāgird hastam",
               "en": "I am a student.",
               "highlight": "هستم"
             },
             {
               "target": "شما معلم هستید",
-              "translit": "shumā mu'allem hastēd",
+              "translit": "shumā mu'allim hastēd",
               "en": "You are a teacher.",
               "highlight": "هستید"
             },
@@ -688,11 +688,11 @@
           "type": "mistake",
           "wrong": {
             "target": "من هستم شاگرد",
-            "translit": "man hastam shāgerd"
+            "translit": "man hastam shāgird"
           },
           "right": {
             "target": "من شاگرد هستم",
-            "translit": "man shāgerd hastam",
+            "translit": "man shāgird hastam",
             "en": "I am a student."
           },
           "why": "'To be' closes the sentence. The word that describes you comes before it."
@@ -701,25 +701,25 @@
           "type": "mistake",
           "wrong": {
             "target": "من معلم است",
-            "translit": "man mu'allem ast"
+            "translit": "man mu'allim ast"
           },
           "right": {
             "target": "من معلم هستم",
-            "translit": "man mu'allem hastam",
+            "translit": "man mu'allim hastam",
             "en": "I am a teacher."
           },
-          "why": "The form of 'to be' has to match the person. ast is for one person or thing that is not 'I' or 'you': ō, īn (this), ketāb (the book)."
+          "why": "The form of 'to be' has to match the person. ast is for one person or thing that is not 'I' or 'you': ō, īn (this), kitāb (the book)."
         },
         {
           "type": "spoken",
           "heading": "In everyday speech",
           "written": {
             "target": "من معلم هستم",
-            "translit": "man mu'allem hastam"
+            "translit": "man mu'allim hastam"
           },
           "spoken": {
             "target": "مه معلم استم",
-            "translit": "ma mu'allem astum"
+            "translit": "ma mu'allim astum"
           },
           "note": "In Kabul, man is said ma and hastam is said astum. People type it this way in messages too."
         }
@@ -797,7 +797,7 @@
           "items": [
             {
               "target": "من امروز در خانه نان می‌خورم",
-              "translit": "man emrōz dar khāna nān mēkhuram",
+              "translit": "man imrōz dar khāna nān mēkhuram",
               "en": "I am eating at home today.",
               "highlight": "می‌خورم"
             },
@@ -812,7 +812,7 @@
         {
           "type": "rule",
           "heading": "Time can come first",
-          "body": "Words like dīrōz (yesterday), emrōz (today) and fardā (tomorrow) often open the sentence, even before who. The verb still stays last."
+          "body": "Words like dīrōz (yesterday), imrōz (today) and fardā (tomorrow) often open the sentence, even before who. The verb still stays last."
         },
         {
           "type": "examples",
@@ -876,10 +876,10 @@
       "level": "A1",
       "rank": 4,
       "title": "Plurals: -hā and -ān",
-      "summary": "Add -hā to make almost any noun plural: ketāb, ketāb-hā. After a number the noun stays singular.",
+      "summary": "Add -hā to make almost any noun plural: kitāb, kitāb-hā. After a number the noun stays singular.",
       "sample": {
         "target": "کتاب‌ها",
-        "translit": "ketāb-hā"
+        "translit": "kitāb-hā"
       },
       "aliases": [
         "plural",
@@ -925,7 +925,7 @@
           "items": [
             {
               "target": "کتاب‌ها اینجا هستند",
-              "translit": "ketāb-hā īnjā hastand",
+              "translit": "kitāb-hā īnjā hastand",
               "en": "The books are here.",
               "highlight": "کتاب‌ها"
             },
@@ -958,15 +958,15 @@
               "mard-hā or mardān"
             ],
             [
-              "ketāb, book",
-              "ketāb-hā (never ketābān)"
+              "kitāb, book",
+              "kitāb-hā (never kitābān)"
             ]
           ]
         },
         {
           "type": "rule",
           "heading": "After a number, no plural",
-          "body": "A number already says how many, so the noun after it stays singular: dū ketāb, literally 'two book'."
+          "body": "A number already says how many, so the noun after it stays singular: dū kitāb, literally 'two book'."
         },
         {
           "type": "examples",
@@ -983,11 +983,11 @@
           "type": "mistake",
           "wrong": {
             "target": "دو کتاب‌ها",
-            "translit": "dū ketāb-hā"
+            "translit": "dū kitāb-hā"
           },
           "right": {
             "target": "دو کتاب",
-            "translit": "dū ketāb",
+            "translit": "dū kitāb",
             "en": "two books"
           },
           "why": "After a number the noun never takes -hā."
@@ -995,14 +995,14 @@
         {
           "type": "rule",
           "heading": "Plural with the ezafe",
-          "body": "A -hā plural ends in a vowel, so its ezafe is -ye and is written ی: ketāb-hā-ye man, my books. An -ān plural ends in a consonant and takes a plain -e: dōstān-e man, my friends."
+          "body": "A -hā plural ends in a vowel, so its ezafe is -ye and is written ی: kitāb-hā-ye man, my books. An -ān plural ends in a consonant and takes a plain -e: dōstān-e man, my friends."
         },
         {
           "type": "examples",
           "items": [
             {
               "target": "کتاب‌های من اینجا هستند",
-              "translit": "ketāb-hā-ye man īnjā hastand",
+              "translit": "kitāb-hā-ye man īnjā hastand",
               "en": "My books are here.",
               "highlight": "کتاب‌های"
             }
@@ -1013,11 +1013,11 @@
           "heading": "In everyday speech",
           "written": {
             "target": "کتاب‌ها",
-            "translit": "ketāb-hā"
+            "translit": "kitāb-hā"
           },
           "spoken": {
             "target": "کتابا",
-            "translit": "ketābā"
+            "translit": "kitābā"
           },
           "note": "In Kabul speech -hā usually loses its h and becomes -ā. You will see it spelled that way in messages."
         }
@@ -1059,8 +1059,10 @@
         "kī",
         "kujā",
         "chetōr",
+        "chitōr",
         "chand",
         "cherā",
+        "chirā",
         "āyā",
         "کجا",
         "چه",
@@ -1089,7 +1091,7 @@
           ],
           "rows": [
             [
-              "che, چه",
+              "chi, چه",
               "what"
             ],
             [
@@ -1101,7 +1103,7 @@
               "where"
             ],
             [
-              "chetōr, چطور",
+              "chitōr, چطور",
               "how"
             ],
             [
@@ -1109,7 +1111,7 @@
               "how many"
             ],
             [
-              "cherā, چرا",
+              "chirā, چرا",
               "why"
             ],
             [
@@ -1120,7 +1122,7 @@
         },
         {
           "type": "rule",
-          "body": "The letters کی spell kī, who. They can also spell kay, when, but in Kabul 'when' is usually said che waqt."
+          "body": "The letters کی spell kī, who. They can also spell kay, when, but in Kabul 'when' is usually said chi waqt."
         },
         {
           "type": "examples",
@@ -1171,12 +1173,12 @@
           "items": [
             {
               "target": "تو معلم هستی؟",
-              "translit": "tu mu'allem hastī?",
+              "translit": "tu mu'allim hastī?",
               "en": "Are you a teacher?"
             },
             {
               "target": "بلی، من معلم هستم",
-              "translit": "balē, man mu'allem hastam",
+              "translit": "balē, man mu'allim hastam",
               "en": "Yes, I am a teacher.",
               "highlight": "بلی"
             }
@@ -1186,11 +1188,11 @@
           "type": "mistake",
           "wrong": {
             "target": "هستی تو معلم؟",
-            "translit": "hastī tu mu'allem?"
+            "translit": "hastī tu mu'allim?"
           },
           "right": {
             "target": "تو معلم هستی؟",
-            "translit": "tu mu'allem hastī?",
+            "translit": "tu mu'allim hastī?",
             "en": "Are you a teacher?"
           },
           "why": "Dari never moves the verb to the front to make a question. Only your voice changes."
@@ -1200,11 +1202,11 @@
           "heading": "In everyday speech",
           "written": {
             "target": "حال تو چطور است؟",
-            "translit": "hāl-e tu chetōr ast?"
+            "translit": "hāl-e tu chitōr ast?"
           },
           "spoken": {
             "target": "چطور استی؟",
-            "translit": "chetōr astī?"
+            "translit": "chitōr astī?"
           },
           "note": "Kabul's everyday 'How are you?' to a friend drops hāl and uses astī, the spoken form of hastī."
         }
@@ -1342,13 +1344,13 @@
           "items": [
             {
               "target": "من معلم نیستم",
-              "translit": "man mu'allem nēstam",
+              "translit": "man mu'allim nēstam",
               "en": "I am not a teacher.",
               "highlight": "نیستم"
             },
             {
               "target": "کتاب اینجا نیست",
-              "translit": "ketāb īnjā nēst",
+              "translit": "kitāb īnjā nēst",
               "en": "The book isn't here.",
               "highlight": "نیست"
             }
@@ -1376,11 +1378,11 @@
           "type": "mistake",
           "wrong": {
             "target": "من معلم نه هستم",
-            "translit": "man mu'allem na hastam"
+            "translit": "man mu'allim na hastam"
           },
           "right": {
             "target": "من معلم نیستم",
-            "translit": "man mu'allem nēstam",
+            "translit": "man mu'allim nēstam",
             "en": "I am not a teacher."
           },
           "why": "'To be' does not take na-. Use its own negative forms: nēstam, nēst."
@@ -1415,10 +1417,10 @@
       "level": "A1",
       "rank": 12,
       "title": "Possessive endings",
-      "summary": "Instead of ketāb-e man you can add an ending to the noun: ketābam, my book. Both are correct.",
+      "summary": "Instead of kitāb-e man you can add an ending to the noun: kitābam, my book. Both are correct.",
       "sample": {
         "target": "کتابم",
-        "translit": "ketābam"
+        "translit": "kitābam"
       },
       "aliases": [
         "possessive",
@@ -1436,7 +1438,9 @@
         "-at",
         "-ash",
         "-et",
+        "-it",
         "-esh",
+        "-ish",
         "enclitic"
       ],
       "keywords": [
@@ -1449,7 +1453,7 @@
         {
           "type": "rule",
           "heading": "A shorter 'my'",
-          "body": "Dari has two ways to say whose something is. The long way links a pronoun with the ezafe: ketāb-e man. The short way adds an ending to the noun: ketābam. They mean the same; the short way is what you hear most in speech."
+          "body": "Dari has two ways to say whose something is. The long way links a pronoun with the ezafe: kitāb-e man. The short way adds an ending to the noun: kitābam. They mean the same; the short way is what you hear most in speech."
         },
         {
           "type": "pattern",
@@ -1474,27 +1478,27 @@
           "rows": [
             [
               "my",
-              "-am: ketābam"
+              "-am: kitābam"
             ],
             [
               "your",
-              "-at: ketābat"
+              "-at: kitābat"
             ],
             [
               "his or her",
-              "-ash: ketābash"
+              "-ash: kitābash"
             ],
             [
               "our",
-              "-emān: ketābemān"
+              "-imān: kitābimān"
             ],
             [
               "your (plural or polite)",
-              "-etān: ketābetān"
+              "-itān: kitābitān"
             ],
             [
               "their",
-              "-eshān: ketābeshān"
+              "-ishān: kitābishān"
             ]
           ]
         },
@@ -1503,7 +1507,7 @@
           "items": [
             {
               "target": "کتابم اینجا است",
-              "translit": "ketābam īnjā ast",
+              "translit": "kitābam īnjā ast",
               "en": "My book is here.",
               "highlight": "کتابم"
             },
@@ -1593,13 +1597,13 @@
           "heading": "In everyday speech",
           "written": {
             "target": "کتابت",
-            "translit": "ketābat"
+            "translit": "kitābat"
           },
           "spoken": {
             "target": "کتابت",
-            "translit": "ketābet"
+            "translit": "kitābit"
           },
-          "note": "The spelling is the same, but in Kabul the endings are said -et and -esh: ketābet, ketābesh."
+          "note": "The spelling is the same, but in Kabul the endings are said -it and -ish: kitābit, kitābish."
         }
       ],
       "related": [
@@ -1927,11 +1931,11 @@
           "type": "mistake",
           "wrong": {
             "target": "من کتاب هست",
-            "translit": "man ketāb hast"
+            "translit": "man kitāb hast"
           },
           "right": {
             "target": "من کتاب دارم",
-            "translit": "man ketāb dāram",
+            "translit": "man kitāb dāram",
             "en": "I have a book."
           },
           "why": "hast says a thing exists somewhere. It cannot mean 'I have'. For having, use dāram."
@@ -2050,7 +2054,7 @@
             },
             {
               "target": "ما یک کتاب خریدیم",
-              "translit": "mā yak ketāb kharīdēm",
+              "translit": "mā yak kitāb kharīdēm",
               "en": "We bought a book.",
               "highlight": "خریدیم"
             }
@@ -2774,13 +2778,13 @@
           "items": [
             {
               "target": "لطفاً بنشینید",
-              "translit": "lutfan buneshīnēd",
+              "translit": "lutfan bunishīnēd",
               "en": "Please sit down.",
               "highlight": "بنشینید"
             },
             {
               "target": "لطفاً کتاب را بخوانید",
-              "translit": "lutfan ketāb rā bukhānēd",
+              "translit": "lutfan kitāb rā bukhānēd",
               "en": "Please read the book.",
               "highlight": "بخوانید"
             }
@@ -3142,7 +3146,7 @@
             },
             {
               "target": "امروز کار نکردم",
-              "translit": "emrōz kār nakardam",
+              "translit": "imrōz kār nakardam",
               "en": "I didn't work today.",
               "highlight": "نکردم"
             }
@@ -3516,10 +3520,10 @@
       "level": "A2",
       "rank": 6,
       "title": "'A' and 'some': yak and -ē",
-      "summary": "Say 'a book' with yak ketāb or with the ending -ē: ketābē. Either is enough, but you will also hear both together: yak rōzē, one day.",
+      "summary": "Say 'a book' with yak kitāb or with the ending -ē: kitābē. Either is enough, but you will also hear both together: yak rōzē, one day.",
       "sample": {
         "target": "یک کتاب",
-        "translit": "yak ketāb"
+        "translit": "yak kitāb"
       },
       "aliases": [
         "indefinite",
@@ -3554,13 +3558,13 @@
           "items": [
             {
               "target": "یک کتاب خریدم",
-              "translit": "yak ketāb kharīdam",
+              "translit": "yak kitāb kharīdam",
               "en": "I bought a book.",
               "highlight": "یک"
             },
             {
               "target": "کتابی خریدم",
-              "translit": "ketābē kharīdam",
+              "translit": "kitābē kharīdam",
               "en": "I bought a book.",
               "highlight": "کتابی"
             }
@@ -3575,8 +3579,8 @@
           ],
           "rows": [
             [
-              "a consonant: ketāb",
-              "ketābē, کتابی"
+              "a consonant: kitāb",
+              "kitābē, کتابی"
             ],
             [
               "-a: khāna",
@@ -3591,7 +3595,7 @@
         {
           "type": "rule",
           "heading": "With an adjective",
-          "body": "With an adjective, -ē moves to the end of the phrase: ketāb-e nawē, a new book."
+          "body": "With an adjective, -ē moves to the end of the phrase: kitāb-e nawē, a new book."
         },
         {
           "type": "rule",
@@ -3613,11 +3617,11 @@
           "type": "mistake",
           "wrong": {
             "target": "یک کتاب‌ها",
-            "translit": "yak ketāb-hā"
+            "translit": "yak kitāb-hā"
           },
           "right": {
             "target": "چند کتاب",
-            "translit": "chand ketāb",
+            "translit": "chand kitāb",
             "en": "a few books"
           },
           "why": "yak means 'one', so it cannot go with a plural. For 'some books', use chand (a few)."
@@ -3741,11 +3745,11 @@
           "heading": "In everyday speech",
           "written": {
             "target": "کتاب‌ها",
-            "translit": "ketāb-hā"
+            "translit": "kitāb-hā"
           },
           "spoken": {
             "target": "کتابا",
-            "translit": "ketābā"
+            "translit": "kitābā"
           },
           "note": "Casual Kabuli messages rarely use the half-space, partly because spoken forms like کتابا and میرم do not need one."
         }
@@ -4098,7 +4102,7 @@
           "items": [
             {
               "target": "امروز به مکتب نرفتم، چون مریض بودم",
-              "translit": "emrōz ba maktab naraftam, chun marīz būdam",
+              "translit": "imrōz ba maktab naraftam, chun marīz būdam",
               "en": "I didn't go to school today because I was sick.",
               "highlight": "چون"
             },
@@ -4119,7 +4123,7 @@
         {
           "type": "rule",
           "heading": "So: ba hamīn khātir, pas",
-          "body": "For 'so' or 'that's why', say ba hamīn khātir (or az hamīn khātir) at the start of the second half. It is the same khātir as ba khātir-e, because of. pas also means 'so', often at the start of a question: pas che kunēm? So what shall we do?"
+          "body": "For 'so' or 'that's why', say ba hamīn khātir (or az hamīn khātir) at the start of the second half. It is the same khātir as ba khātir-e, because of. pas also means 'so', often at the start of a question: pas chi kunēm? So what shall we do?"
         },
         {
           "type": "examples",
@@ -4254,7 +4258,7 @@
         {
           "type": "rule",
           "heading": "Every: har",
-          "body": "har means 'every' or 'each'. The noun after it stays singular, and so does the verb: har shāgerd ketāb dārad, every student has a book."
+          "body": "har means 'every' or 'each'. The noun after it stays singular, and so does the verb: har shāgird kitāb dārad, every student has a book."
         },
         {
           "type": "table",
@@ -4335,7 +4339,7 @@
             },
             {
               "target": "امروز هیچ چیز نخوردم",
-              "translit": "emrōz hēch chīz nakhurdam",
+              "translit": "imrōz hēch chīz nakhurdam",
               "en": "I ate nothing today.",
               "highlight": "نخوردم"
             }
@@ -4357,7 +4361,7 @@
         {
           "type": "rule",
           "heading": "All: hama",
-          "body": "hama on its own means 'everyone', with a plural verb. Before a noun or pronoun it takes the ezafe, which after -a is heard but not written: همه ما, hama-ye mā, all of us; hama-ye shāgerdān, all the students."
+          "body": "hama on its own means 'everyone', with a plural verb. Before a noun or pronoun it takes the ezafe, which after -a is heard but not written: همه ما, hama-ye mā, all of us; hama-ye shāgirdān, all the students."
         },
         {
           "type": "examples",
@@ -4379,7 +4383,7 @@
         {
           "type": "rule",
           "heading": "A few, some: chand, ba'zē",
-          "body": "chand means 'a few' and takes a singular noun: chand rōz, a few days. ba'zē means 'some' and is often followed by az: ba'zē az shāgerdān, some of the students."
+          "body": "chand means 'a few' and takes a singular noun: chand rōz, a few days. ba'zē means 'some' and is often followed by az: ba'zē az shāgirdān, some of the students."
         },
         {
           "type": "examples",
@@ -4392,7 +4396,7 @@
             },
             {
               "target": "بعضی از شاگردان نیامدند",
-              "translit": "ba'zē az shāgerdān nayāmadand",
+              "translit": "ba'zē az shāgirdān nayāmadand",
               "en": "Some of the students didn't come.",
               "highlight": "بعضی"
             }
@@ -4499,7 +4503,7 @@
             },
             {
               "target": "کتابی که دیروز خریدم اینجا است",
-              "translit": "ketābē ki dīrōz kharīdam īnjā ast",
+              "translit": "kitābē ki dīrōz kharīdam īnjā ast",
               "en": "The book I bought yesterday is here.",
               "highlight": "کتابی که"
             }
@@ -4508,14 +4512,14 @@
         {
           "type": "rule",
           "heading": "When the noun is the object",
-          "body": "If the noun is the object of the main verb, rā comes right after it, before ki. In speech, ra often comes after the whole clause instead: ketābē ki kharīdī ra khāndum."
+          "body": "If the noun is the object of the main verb, rā comes right after it, before ki. In speech, ra often comes after the whole clause instead: kitābē ki kharīdī ra khāndum."
         },
         {
           "type": "examples",
           "items": [
             {
               "target": "کتابی را که خریدی خواندم",
-              "translit": "ketābē rā ki kharīdī khāndam",
+              "translit": "kitābē rā ki kharīdī khāndam",
               "en": "I read the book you bought.",
               "highlight": "را که"
             }
@@ -4546,7 +4550,7 @@
         {
           "type": "rule",
           "heading": "No -ē after 'my'",
-          "body": "A name, or a noun with 'my' or 'your', takes no -ē: it is already specific, and the sentence just adds more about it. In writing, this kind of clause is often set off with commas. With an adjective, -ē goes on the adjective: ketāb-e nawē ki kharīdam."
+          "body": "A name, or a noun with 'my' or 'your', takes no -ē: it is already specific, and the sentence just adds more about it. In writing, this kind of clause is often set off with commas. With an adjective, -ē goes on the adjective: kitāb-e nawē ki kharīdam."
         },
         {
           "type": "examples",
@@ -4718,7 +4722,7 @@
         {
           "type": "rule",
           "heading": "Things that are not true",
-          "body": "For something that is not true or did not happen, Dari uses the past continuous in both halves: agar mēdānestam, ba tu mēguftam, if I had known, I would have told you. The same form also means 'if I knew, I would tell you'."
+          "body": "For something that is not true or did not happen, Dari uses the past continuous in both halves: agar mēdānistam, ba tu mēguftam, if I had known, I would have told you. The same form also means 'if I knew, I would tell you'."
         }
       ],
       "related": [
@@ -5062,7 +5066,7 @@
             },
             {
               "target": "معلم گفت که کتاب را بخوانیم",
-              "translit": "mu'allem guft ki ketāb rā bukhānēm",
+              "translit": "mu'allim guft ki kitāb rā bukhānēm",
               "en": "The teacher told us to read the book.",
               "highlight": "بخوانیم"
             }
@@ -5370,7 +5374,7 @@
             },
             {
               "target": "این کتاب در کابل خوانده می‌شود",
-              "translit": "īn ketāb dar kābul khānda mēshawad",
+              "translit": "īn kitāb dar kābul khānda mēshawad",
               "en": "This book is read in Kabul.",
               "highlight": "خوانده می‌شود"
             },
@@ -5569,11 +5573,11 @@
             ],
             [
               "-stān, a place",
-              "afghān → afghānestān"
+              "afghān → afghānistān"
             ],
             [
               "-stān",
-              "qabr, grave → qabrestān, graveyard"
+              "qabr, grave → qabristān, graveyard"
             ]
           ]
         },
@@ -5661,10 +5665,10 @@
       "level": "B2",
       "rank": 1,
       "title": "If I had known: unreal 'if'",
-      "summary": "For something that is not true, or did not happen, both halves take the mē- past: agar mēdānestam, namēraftam, if I had known, I wouldn't have gone.",
+      "summary": "For something that is not true, or did not happen, both halves take the mē- past: agar mēdānistam, namēraftam, if I had known, I wouldn't have gone.",
       "sample": {
         "target": "اگر می‌دانستم",
-        "translit": "agar mēdānestam"
+        "translit": "agar mēdānistam"
       },
       "aliases": [
         "unreal conditional",
@@ -5682,6 +5686,7 @@
         "third conditional",
         "agar medanestam",
         "mēdānestam",
+        "mēdānistam",
         "اگر می‌دانستم"
       ],
       "keywords": [
@@ -5726,7 +5731,7 @@
           "items": [
             {
               "target": "اگر می‌دانستم، نمی‌رفتم",
-              "translit": "agar mēdānestam, namēraftam",
+              "translit": "agar mēdānistam, namēraftam",
               "en": "If I had known, I wouldn't have gone.",
               "highlight": "می‌دانستم"
             },
@@ -5741,14 +5746,14 @@
         {
           "type": "rule",
           "heading": "Now or in the past?",
-          "body": "The same form covers both: agar mēdānestam can mean 'if I knew' or 'if I had known'. The rest of the sentence usually makes it clear."
+          "body": "The same form covers both: agar mēdānistam can mean 'if I knew' or 'if I had known'. The rest of the sentence usually makes it clear."
         },
         {
           "type": "examples",
           "items": [
             {
               "target": "اگر دری می‌دانستم، با او گپ می‌زدم",
-              "translit": "agar darī mēdānestam, bā ō gap mēzadam",
+              "translit": "agar darī mēdānistam, bā ō gap mēzadam",
               "en": "If I knew Dari, I would talk to him.",
               "highlight": "گپ می‌زدم"
             }
@@ -5790,11 +5795,11 @@
           "type": "mistake",
           "wrong": {
             "target": "اگر می‌دانستم، نرفتم",
-            "translit": "agar mēdānestam, naraftam"
+            "translit": "agar mēdānistam, naraftam"
           },
           "right": {
             "target": "اگر می‌دانستم، نمی‌رفتم",
-            "translit": "agar mēdānestam, namēraftam",
+            "translit": "agar mēdānistam, namēraftam",
             "en": "If I had known, I wouldn't have gone."
           },
           "why": "The result half needs mē- too. naraftam only says 'I didn't go'. namēraftam says 'I wouldn't have gone'."
@@ -5902,7 +5907,7 @@
             },
             {
               "target": "کاش دری را بهتر می‌دانستم",
-              "translit": "kāsh darī rā bihtar mēdānestam",
+              "translit": "kāsh darī rā bihtar mēdānistam",
               "en": "I wish I knew Dari better.",
               "highlight": "می‌دانستم"
             }
@@ -6199,6 +6204,7 @@
         "agarche",
         "agarchi",
         "agar che",
+        "agar chi",
         "harchand",
         "ba wujud",
         "bā wujūd",
@@ -6359,10 +6365,13 @@
         "ta",
         "tā",
         "ta ke",
+        "ta ki",
         "tā ki",
         "hamin ke",
+        "hamin ki",
         "hamīn ki",
         "dar hale ke",
+        "dar hale ki",
         "dar hālē ki",
         "تا",
         "همین که",
@@ -6749,7 +6758,7 @@
             },
             {
               "target": "خواندن کتاب مفید است",
-              "translit": "khāndan-e ketāb mufīd ast",
+              "translit": "khāndan-e kitāb mufīd ast",
               "en": "Reading books is useful.",
               "highlight": "خواندن"
             }
@@ -6758,7 +6767,7 @@
         {
           "type": "rule",
           "heading": "Its object",
-          "body": "What you do can follow with the ezafe, khāndan-e ketāb, or come first with no ezafe, ketāb khāndan. For 'reading books' in general both work, and ketāb khāndan is the everyday one. For one particular book, use the ezafe (khāndan-e īn ketāb) or rā (īn ketāb rā khāndan)."
+          "body": "What you do can follow with the ezafe, khāndan-e kitāb, or come first with no ezafe, kitāb khāndan. For 'reading books' in general both work, and kitāb khāndan is the everyday one. For one particular book, use the ezafe (khāndan-e īn kitāb) or rā (īn kitāb rā khāndan)."
         },
         {
           "type": "rule",
@@ -7033,17 +7042,17 @@
         {
           "type": "rule",
           "heading": "Small words",
-          "body": "rā is said ra and typed ره. After a consonant it is often just -a, joined to the word: ketāba, 'the book' (object). dar becomes da, typed ده, and da also stands where writing has ba. ba before a place is often left out. The plural -hā loses its h: ketābā."
+          "body": "rā is said ra and typed ره. After a consonant it is often just -a, joined to the word: kitāba, 'the book' (object). dar becomes da, typed ده, and da also stands where writing has ba. ba before a place is often left out. The plural -hā loses its h: kitābā."
         },
         {
           "type": "spoken",
           "written": {
             "target": "من کتاب‌ها را می‌خوانم",
-            "translit": "man ketāb-hā rā mēkhānam"
+            "translit": "man kitāb-hā rā mēkhānam"
           },
           "spoken": {
             "target": "مه کتابا ره میخانم",
-            "translit": "ma ketābā ra mēkhānum"
+            "translit": "ma kitābā ra mēkhānum"
           },
           "note": "man becomes ma, -hā becomes -ā, rā becomes ra, and the ending -am is said -um. Messages usually skip the half-space too."
         },
@@ -7051,13 +7060,13 @@
           "type": "spoken",
           "written": {
             "target": "او چه می‌گوید؟",
-            "translit": "ō che mēgōyad?"
+            "translit": "ō chi mēgōyad?"
           },
           "spoken": {
             "target": "او چی میگه؟",
             "translit": "ū chī mēga?"
           },
-          "note": "che is said chī and typed چی, and mēgōyad becomes mēga."
+          "note": "chi is said chī and typed چی, and mēgōyad becomes mēga."
         }
       ],
       "related": [
