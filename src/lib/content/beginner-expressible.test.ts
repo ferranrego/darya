@@ -67,10 +67,9 @@ const PRS_SENTENCES = [
   "سگ گوشت می‌خورد.",
   "پلیت‌ها بالای میز است.",
   "پشک زیر میز خواب است.",
-  // Not می‌نوشم: نوشیدن for drinking water is Iranian, and Dari drinks with
-  // خوردن. The sentence used to assert نوشیدن was beginner vocabulary, which
-  // is exactly the tag that was taken off it.
-  "من هر روز آب می‌خورم.",
+  // There used to be a "آب می‌نوشم" line here too. نوشیدن is formal and
+  // written in both varieties; spoken Dari drinks with خوردن, which is why
+  // نوشیدن is no longer beginner vocabulary and the line asserting it went.
   "من هر روز آب می‌خورم.",
   "ما نان و پنیر می‌خوریم.",
   "من بسیار کار می‌کنم.",

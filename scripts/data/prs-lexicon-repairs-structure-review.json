@@ -1,0 +1,1100 @@
+{
+  "lx-6325": {
+    "target": "شپرک",
+    "why": [
+      "philologist-structure CRITICAL: unqualified شپرک is the butterfly/moth; the bat needs the qualifier چرمی (fa.wikipedia خفاش: شب‌پرک چرمی; gooshe.net Dari شهپرک چرمی = bat), and Tajik шапарак is butterfly. The example uses بالای, not روی, because روی has no entry and resolves to رفتن"
+    ],
+    "set": {
+      "glossEn": "butterfly, moth (a bat is شپرک چرمی)",
+      "exampleTarget": "شپرک بالای گل نشست.",
+      "exampleTranslit": "shaparak bālā-ye gul nishast.",
+      "exampleEn": "The butterfly landed on the flower."
+    },
+    "was": {
+      "glossEn": "bat (the animal)",
+      "exampleTarget": "شپرک‌ها شب‌ها پرواز می‌کنند.",
+      "exampleTranslit": "shaparak-hā shab-hā parwāz mēkunand.",
+      "exampleEn": "Bats fly at night."
+    }
+  },
+  "lx-0052": {
+    "target": "پدر",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "exampleTranslit": "padaram dar dukān kār mēkunad."
+    },
+    "was": {
+      "exampleTranslit": "padaram dar dōkān kār mēkunad."
+    }
+  },
+  "lx-0060": {
+    "target": "مرد",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "exampleTranslit": "ān mard dukāndār ast."
+    },
+    "was": {
+      "exampleTranslit": "ān mard dōkāndār ast."
+    }
+  },
+  "lx-0176": {
+    "target": "نزدیک",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "exampleTranslit": "dukān nazdīk ast."
+    },
+    "was": {
+      "exampleTranslit": "dōkān nazdīk ast."
+    }
+  },
+  "lx-0199": {
+    "target": "باز",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "exampleTranslit": "dukān bāz ast."
+    },
+    "was": {
+      "exampleTranslit": "dōkān bāz ast."
+    }
+  },
+  "lx-0134": {
+    "target": "دکان",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "translit": "dukān",
+      "exampleTranslit": "az dukān nān kharīdam."
+    },
+    "was": {
+      "translit": "dōkān",
+      "exampleTranslit": "az dōkān nān kharīdam."
+    }
+  },
+  "lx-6102": {
+    "target": "راست",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "exampleTranslit": "dukān taraf-e rāst ast."
+    },
+    "was": {
+      "exampleTranslit": "dōkān taraf-e rāst ast."
+    }
+  },
+  "lx-0185": {
+    "target": "کاکا",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "exampleTranslit": "kākāyam dukān dārad."
+    },
+    "was": {
+      "exampleTranslit": "kākāyam dōkān dārad."
+    }
+  },
+  "lx-1763": {
+    "target": "به هوش آمدن",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "ba hōsh āmadan",
+      "exampleTranslit": "bēmār pas az dū sā'at ba hōsh āmad."
+    },
+    "was": {
+      "translit": "ba hūsh āmadan",
+      "exampleTranslit": "bēmār pas az dū sā'at ba hūsh āmad."
+    }
+  },
+  "lx-0513": {
+    "target": "دکاندار",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "translit": "dukāndār",
+      "exampleTranslit": "dukāndār sawdā mēfurōshad."
+    },
+    "was": {
+      "translit": "dōkāndār",
+      "exampleTranslit": "dōkāndār sawdā mēfurōshad."
+    }
+  },
+  "lx-1660": {
+    "target": "بیهوشی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "bēhōshī",
+      "exampleTranslit": "bēmār qabl az amal taht-e bēhōshī qarār girift."
+    },
+    "was": {
+      "translit": "bēhūshī",
+      "exampleTranslit": "bēmār qabl az amal taht-e bēhūshī qarār girift."
+    }
+  },
+  "lx-1564": {
+    "target": "شامپانزه",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "exampleTranslit": "shāmpānza-hā haywānāt-e bisyār bāhōshē hastand."
+    },
+    "was": {
+      "exampleTranslit": "shāmpānza-hā haywānāt-e bisyār bāhūshē hastand."
+    }
+  },
+  "lx-2149": {
+    "target": "باهوش",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "bā-hōsh",
+      "exampleTranslit": "shāgird-e bā-hōsh hamēsha numra-ye khūb mēgīrad."
+    },
+    "was": {
+      "translit": "bā-hūsh",
+      "exampleTranslit": "shāgird-e bā-hūsh hamēsha numra-ye khūb mēgīrad."
+    }
+  },
+  "lx-6147": {
+    "target": "هوشیار",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "hōshyār",
+      "exampleTranslit": "padaram bisyār hōshyār ast."
+    },
+    "was": {
+      "translit": "hūshyār",
+      "exampleTranslit": "padaram bisyār hūshyār ast."
+    }
+  },
+  "lx-1780": {
+    "target": "داروی بی‌هوشی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "dārū-ye bē-hōshī",
+      "exampleTranslit": "dawā-ye bē-hōshī qawī būd."
+    },
+    "was": {
+      "translit": "dārū-ye bē-hūshī",
+      "exampleTranslit": "dawā-ye bē-hūshī qawī būd."
+    }
+  },
+  "lx-1913": {
+    "target": "هوش مصنوعی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "hōsh-e masnōī",
+      "exampleTranslit": "hōsh-e masnū'ī āyanda rā taghyīr mēdahad."
+    },
+    "was": {
+      "translit": "hūsh-e masnōī",
+      "exampleTranslit": "hūsh-e masnū'ī āyanda rā taghyīr mēdahad."
+    }
+  },
+  "lx-3212": {
+    "target": "هوش",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel",
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel; this field wrote hūsh before the branch too, and is aligned so the file has one reading"
+    ],
+    "set": {
+      "translit": "hōsh",
+      "exampleTranslit": "hōsh-e masnū'ī ba sur'at dar hāl-e pēshraft ast."
+    },
+    "was": {
+      "translit": "hūsh",
+      "exampleTranslit": "hūsh-e masnū'ī ba sur'at dar hāl-e pēshraft ast."
+    }
+  },
+  "lx-2055": {
+    "target": "هوشمندسازی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "hōshmand-sāzī",
+      "exampleTranslit": "hōshmand-sāzī-ye shahr-hā āghāz shuda ast."
+    },
+    "was": {
+      "translit": "hūshmand-sāzī",
+      "exampleTranslit": "hūshmand-sāzī-ye shahr-hā āghāz shuda ast."
+    }
+  },
+  "lx-2054": {
+    "target": "اینترنت اشیا",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "exampleTranslit": "intarnēt-e ashyā khāna-hā rā hōshmand mēkunad."
+    },
+    "was": {
+      "exampleTranslit": "intarnēt-e ashyā khāna-hā rā hūshmand mēkunad."
+    }
+  },
+  "lx-2058": {
+    "target": "یادگیری ماشین",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "exampleTranslit": "yādgīrī-ye māshīn bakhshī az hōsh-e masnū'ī ast."
+    },
+    "was": {
+      "exampleTranslit": "yādgīrī-ye māshīn bakhshī az hūsh-e masnū'ī ast."
+    }
+  },
+  "lx-2300": {
+    "target": "مدهوش",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "madhōsh",
+      "exampleTranslit": "az dīdan-e ān manzara madhōsh shudam."
+    },
+    "was": {
+      "translit": "madhūsh",
+      "exampleTranslit": "az dīdan-e ān manzara madhūsh shudam."
+    }
+  },
+  "lx-6429": {
+    "target": "ترازو",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "exampleTranslit": "dukāndār sēb rā bā tarāzū wazn kard."
+    },
+    "was": {
+      "exampleTranslit": "dōkāndār sēb rā bā tarāzū wazn kard."
+    }
+  },
+  "lx-2799": {
+    "target": "استارتاپ",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "exampleTranslit": "īn istārtāp rō-ye hōsh-e masnū'ī kār mēkunad."
+    },
+    "was": {
+      "exampleTranslit": "īn istārtāp rō-ye hūsh-e masnū'ī kār mēkunad."
+    }
+  },
+  "lx-6421": {
+    "target": "چوک",
+    "why": [
+      "philologist-structure MAJOR: revert to dukān. Arabic dukkān with short u; Wiktionary Dari [dʊkɑːn]/[duːkɑːn], standard Tajik дукон; دوکان shows a long vowel but not ō. The variants دوکان/دوکاندار stay"
+    ],
+    "set": {
+      "exampleTranslit": "dukān-e mā nazdīk-e chawk-e shahr ast."
+    },
+    "was": {
+      "exampleTranslit": "dōkān-e mā nazdīk-e chawk-e shahr ast."
+    }
+  },
+  "lx-2679": {
+    "target": "قرارداد هوشمند",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "qarārdād-e hōshmand",
+      "exampleTranslit": "qarārdād-hā-ye hōshmand dar bistar-e blāk-chayn ijrā mēshawand."
+    },
+    "was": {
+      "translit": "qarārdād-e hūshmand",
+      "exampleTranslit": "qarārdād-hā-ye hūshmand dar bistar-e blāk-chayn ijrā mēshawand."
+    }
+  },
+  "lx-3927": {
+    "target": "طبقه‌بندی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "exampleTranslit": "tabaqa-bandī-ye tasāwīr tawassut-e hōsh-e masnū'ī anjām shud."
+    },
+    "was": {
+      "exampleTranslit": "tabaqa-bandī-ye tasāwīr tawassut-e hūsh-e masnū'ī anjām shud."
+    }
+  },
+  "lx-3582": {
+    "target": "نه تنها... بلکه...",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "exampleTranslit": "ō na tanhā bāhōsh ast balki bisyār mihrabān nēz hast."
+    },
+    "was": {
+      "exampleTranslit": "ō na tanhā bāhūsh ast balki bisyār mihrabān nēz hast."
+    }
+  },
+  "lx-4618": {
+    "target": "هوش جامع مصنوعی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "hōsh-e jāmi'-e masnū'ī",
+      "exampleTranslit": "rasīdan ba hōsh-e jāmi'-e masnū'ī chālish-bar-angēz ast."
+    },
+    "was": {
+      "translit": "hūsh-e jāmi'-e masnū'ī",
+      "exampleTranslit": "rasīdan ba hūsh-e jāmi'-e masnū'ī chālish-bar-angēz ast."
+    }
+  },
+  "lx-4627": {
+    "target": "مواد هوشمند",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "mawādd-e hōshmand",
+      "exampleTranslit": "mawādd-e hōshmand ba taghyērāt-e muhētī wākunish nishān mēdihand."
+    },
+    "was": {
+      "translit": "mawādd-e hūshmand",
+      "exampleTranslit": "mawādd-e hūshmand ba taghyērāt-e muhētī wākunish nishān mēdihand."
+    }
+  },
+  "lx-4638": {
+    "target": "هوش ازدحامی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "hōsh-e izdihāmī",
+      "exampleTranslit": "algōrītm-hā-ye mubtanī bar hōsh-e izdihāmī barā-ye masēr-yābī istifāda mēshawand."
+    },
+    "was": {
+      "translit": "hūsh-e izdihāmī",
+      "exampleTranslit": "algōrītm-hā-ye mubtanī bar hūsh-e izdihāmī barā-ye masēr-yābī istifāda mēshawand."
+    }
+  },
+  "lx-4648": {
+    "target": "عامل هوشمند",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "āmil-e hōshmand",
+      "exampleTranslit": "īn āmil-e hōshmand ba tawr-e khudkār tasmēm mēgīrad."
+    },
+    "was": {
+      "translit": "āmil-e hūshmand",
+      "exampleTranslit": "īn āmil-e hūshmand ba tawr-e khudkār tasmēm mēgīrad."
+    }
+  },
+  "lx-4660": {
+    "target": "هوش تجاری",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "translit": "hōsh-e tijāratī",
+      "exampleTranslit": "abzār-hā-ye hōsh-e tijāratī dāda-hā rā ba itilā'āt-e mufīd tabdēl mēkunand."
+    },
+    "was": {
+      "translit": "hūsh-e tijāratī",
+      "exampleTranslit": "abzār-hā-ye hūsh-e tijāratī dāda-hā rā ba itilā'āt-e mufīd tabdēl mēkunand."
+    }
+  },
+  "lx-4694": {
+    "target": "سیستم روی تراشه",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel"
+    ],
+    "set": {
+      "exampleTranslit": "telefōn-hā-ye hōshmand az sistam-e rō-ye tarāsha istifāda mēkunand."
+    },
+    "was": {
+      "exampleTranslit": "telefōn-hā-ye hūshmand az sistam-e rō-ye tarāsha istifāda mēkunand."
+    }
+  },
+  "lx-2796": {
+    "target": "مدار مجتمع",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel; this field wrote hūsh before the branch too, and is aligned so the file has one reading"
+    ],
+    "set": {
+      "exampleTranslit": "madārhā-ye mujtama' dar tilifūnhā-ye hōshmand istifāda mēshavand."
+    },
+    "was": {
+      "exampleTranslit": "madārhā-ye mujtama' dar tilifūnhā-ye hūshmand istifāda mēshavand."
+    }
+  },
+  "lx-2805": {
+    "target": "شبکه هوشمند",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel; this field wrote hūsh before the branch too, and is aligned so the file has one reading"
+    ],
+    "set": {
+      "translit": "shabaka-ye hōshmand",
+      "exampleTranslit": "shabaka-ye hōshmand tawzī'-e barq rā bihīna-sāzī mēkunad."
+    },
+    "was": {
+      "translit": "shabaka-ye hūshmand",
+      "exampleTranslit": "shabaka-ye hūshmand tawzī'-e barq rā bihīna-sāzī mēkunad."
+    }
+  },
+  "lx-2825": {
+    "target": "پردازش زبان طبیعی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel; this field wrote hūsh before the branch too, and is aligned so the file has one reading"
+    ],
+    "set": {
+      "exampleTranslit": "pardāzish-e zabān-e tabī'ī dastyārhā-ye sawtī rā hōshmand karda ast."
+    },
+    "was": {
+      "exampleTranslit": "pardāzish-e zabān-e tabī'ī dastyārhā-ye sawtī rā hūshmand karda ast."
+    }
+  },
+  "lx-2877": {
+    "target": "فناوری پوشیدنی",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel; this field wrote hūsh before the branch too, and is aligned so the file has one reading"
+    ],
+    "set": {
+      "exampleTranslit": "sā'at-hā-ye hōshmand namūna-ī az taknālōzhī-ye pōshīdanī hastand."
+    },
+    "was": {
+      "exampleTranslit": "sā'at-hā-ye hūshmand namūna-ī az taknālōzhī-ye pōshīdanī hastand."
+    }
+  },
+  "lx-2878": {
+    "target": "خانه هوشمند",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel; this field wrote hūsh before the branch too, and is aligned so the file has one reading"
+    ],
+    "set": {
+      "translit": "khāna-ye hōshmand",
+      "exampleTranslit": "sīstam-e khāna-ye hōshmand az tarīq-e tilifūn-e hamrāh kūntrūl mēshavad."
+    },
+    "was": {
+      "translit": "khāna-ye hūshmand",
+      "exampleTranslit": "sīstam-e khāna-ye hūshmand az tarīq-e tilifūn-e hamrāh kūntrūl mēshavad."
+    }
+  },
+  "lx-2879": {
+    "target": "شهر هوشمند",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel; this field wrote hūsh before the branch too, and is aligned so the file has one reading"
+    ],
+    "set": {
+      "translit": "shahr-e hōshmand",
+      "exampleTranslit": "prūzha-ye shahr-e hōshmand ba kāhish-e tarāfīk kumak mēkunad."
+    },
+    "was": {
+      "translit": "shahr-e hūshmand",
+      "exampleTranslit": "prūzha-ye shahr-e hūshmand ba kāhish-e tarāfīk kumak mēkunad."
+    }
+  },
+  "lx-3164": {
+    "target": "هوش‌بهر",
+    "why": [
+      "philologist-structure MAJOR: revert to hōsh. Middle Persian ōš, Wiktionary Classical /hoːʃ/ and Kabuli [hóːʃ], Tajik ҳӯш, Urdu hosh, rhymes with گوش/نوش; hūsh is the Iranian merged vowel; this field wrote hūsh before the branch too, and is aligned so the file has one reading"
+    ],
+    "set": {
+      "translit": "hōsh-bahr",
+      "exampleTranslit": "hōsh-bahr tanhā mi'yār-e muwaffaqiyat nēst."
+    },
+    "was": {
+      "translit": "hūsh-bahr",
+      "exampleTranslit": "hūsh-bahr tanhā mi'yār-e muwaffaqiyat nēst."
+    }
+  },
+  "lx-10043": {
+    "target": "تهکوی",
+    "why": [
+      "philologist-structure MAJOR: an Afghan word must not be scheduled after the Iranian word it replaces (PEDAGOGY §9: the prs corpora are Iranian, so they ranked it at the tail). There is no per-entry rank override short of a full build-frequency --apply re-rank, so this shares the rank and band of the entry at the reviewer's target position, lx-0626 سرک عمومی 1000/band 4, and moves no other entry"
+    ],
+    "set": {
+      "freqRank": 1000,
+      "freqBand": 4
+    },
+    "was": {
+      "freqRank": 6499,
+      "freqBand": 10
+    }
+  },
+  "lx-10041": {
+    "target": "گوگرد",
+    "why": [
+      "philologist-structure MAJOR: an Afghan word must not be scheduled after the Iranian word it replaces (PEDAGOGY §9: the prs corpora are Iranian, so they ranked it at the tail). There is no per-entry rank override short of a full build-frequency --apply re-rank, so this shares the rank and band of the entry at the reviewer's target position, lx-1344 بازرسی 1500/band 5, and moves no other entry"
+    ],
+    "set": {
+      "freqRank": 1500,
+      "freqBand": 5
+    },
+    "was": {
+      "freqRank": 2662,
+      "freqBand": 7
+    }
+  },
+  "lx-10045": {
+    "target": "چادری",
+    "why": [
+      "philologist-structure MAJOR: an Afghan word must not be scheduled after the Iranian word it replaces (PEDAGOGY §9: the prs corpora are Iranian, so they ranked it at the tail). There is no per-entry rank override short of a full build-frequency --apply re-rank, so this shares the rank and band of the entry at the reviewer's target position, lx-2463 مخالف 2000/band 6, and moves no other entry",
+      "philologist-structure MINOR: در بازار ... می‌پوشد reads as putting it on in the bazaar; 'when she goes to the market' is what is meant"
+    ],
+    "set": {
+      "freqRank": 2000,
+      "freqBand": 6,
+      "exampleTarget": "مادرکلانم وقتی به بازار می‌رود، چادری می‌پوشد.",
+      "exampleTranslit": "mādarkalānam waqtē ba bāzār mērawad, chādarī mēpōshad.",
+      "exampleEn": "My grandmother wears a burqa when she goes to the market."
+    },
+    "was": {
+      "freqRank": 4036,
+      "freqBand": 8,
+      "exampleTarget": "مادرکلانم در بازار چادری می‌پوشد.",
+      "exampleTranslit": "mādarkalānam dar bāzār chādarī mēpōshad.",
+      "exampleEn": "My grandmother wears a burqa at the market."
+    }
+  },
+  "lx-10040": {
+    "target": "فیل‌مرغ",
+    "why": [
+      "philologist-structure MAJOR: an Afghan word must not be scheduled after the Iranian word it replaces (PEDAGOGY §9: the prs corpora are Iranian, so they ranked it at the tail). There is no per-entry rank override short of a full build-frequency --apply re-rank, so this shares the rank and band of the entry at the reviewer's target position, lx-3200 گذشت 2500/band 6, and moves no other entry",
+      "philologist-structure MINOR: ZWNJ compounds are hyphenated in 195 of 220 lexicon translits (āb-bāzī)"
+    ],
+    "set": {
+      "freqRank": 2500,
+      "freqBand": 6,
+      "translit": "fīl-murgh",
+      "exampleTranslit": "hamsāya-ye mā dar hawēlī-ye khud fīl-murgh dārad."
+    },
+    "was": {
+      "freqRank": 6499,
+      "freqBand": 10,
+      "translit": "fīlmurgh",
+      "exampleTranslit": "hamsāya-ye mā dar hawēlī-ye khud fīlmurgh dārad."
+    }
+  },
+  "lx-10042": {
+    "target": "نسک",
+    "why": [
+      "philologist-structure MAJOR: an Afghan word must not be scheduled after the Iranian word it replaces (PEDAGOGY §9: the prs corpora are Iranian, so they ranked it at the tail). There is no per-entry rank override short of a full build-frequency --apply re-rank, so this shares the rank and band of the entry at the reviewer's target position, lx-3200 گذشت 2500/band 6, and moves no other entry",
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "freqRank": 2500,
+      "freqBand": 6,
+      "exampleTranslit": "nask wa birinj ghizā-ye arzān ast."
+    },
+    "was": {
+      "freqRank": 3615,
+      "freqBand": 8,
+      "exampleTranslit": "nask wa birinj ghazā-ye arzān ast."
+    }
+  },
+  "lx-10044": {
+    "target": "موچی",
+    "why": [
+      "philologist-structure MAJOR: an Afghan word must not be scheduled after the Iranian word it replaces (PEDAGOGY §9: the prs corpora are Iranian, so they ranked it at the tail). There is no per-entry rank override short of a full build-frequency --apply re-rank, so this shares the rank and band of the entry at the reviewer's target position, lx-2480 معرفت‌شناسی 3000/band 7, and moves no other entry"
+    ],
+    "set": {
+      "freqRank": 3000,
+      "freqBand": 7
+    },
+    "was": {
+      "freqRank": 4105,
+      "freqBand": 8
+    }
+  },
+  "lx-10046": {
+    "target": "رنگمال",
+    "why": [
+      "philologist-structure MAJOR: an Afghan word must not be scheduled after the Iranian word it replaces (PEDAGOGY §9: the prs corpora are Iranian, so they ranked it at the tail). There is no per-entry rank override short of a full build-frequency --apply re-rank, so this shares the rank and band of the entry at the reviewer's target position, lx-2480 معرفت‌شناسی 3000/band 7, and moves no other entry"
+    ],
+    "set": {
+      "freqRank": 3000,
+      "freqBand": 7
+    },
+    "was": {
+      "freqRank": 6499,
+      "freqBand": 10
+    }
+  },
+  "lx-6283": {
+    "target": "غذا",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "translit": "ghizā",
+      "exampleTranslit": "ghizā āmāda ast, biyāyēd."
+    },
+    "was": {
+      "translit": "ghazā",
+      "exampleTranslit": "ghazā āmāda ast, biyāyēd."
+    }
+  },
+  "lx-0433": {
+    "target": "چشیدن",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizā rā bichash."
+    },
+    "was": {
+      "exampleTranslit": "ghazā rā bichash."
+    }
+  },
+  "lx-0730": {
+    "target": "فک",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "hangām-e jawīdan-e ghizā fakam dard mēkunad."
+    },
+    "was": {
+      "exampleTranslit": "hangām-e jawīdan-e ghazā fakam dard mēkunad."
+    }
+  },
+  "lx-0766": {
+    "target": "طعم",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ta'm-e īn ghizā ālī ast."
+    },
+    "was": {
+      "exampleTranslit": "ta'm-e īn ghazā ālī ast."
+    }
+  },
+  "lx-0763": {
+    "target": "تند",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizāhā-ye hindī tund hastand."
+    },
+    "was": {
+      "exampleTranslit": "ghazāhā-ye hindī tund hastand."
+    }
+  },
+  "lx-0540": {
+    "target": "رستورانت",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "rastūrānt ghizā-ye maza-dār dārad."
+    },
+    "was": {
+      "exampleTranslit": "rastūrānt ghazā-ye maza-dār dārad."
+    }
+  },
+  "lx-0752": {
+    "target": "پنجه",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "bā qāshuq wa panja ghizā mēkhōrēm."
+    },
+    "was": {
+      "exampleTranslit": "bā qāshuq wa panja ghazā mēkhōrēm."
+    }
+  },
+  "lx-0745": {
+    "target": "مصالح",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "dar īn ghizā masālih ziyād ast."
+    },
+    "was": {
+      "exampleTranslit": "dar īn ghazā masālih ziyād ast."
+    }
+  },
+  "lx-0712": {
+    "target": "استفراغ",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ba'd az khōrdan-e ān ghizā istifrāgh kard."
+    },
+    "was": {
+      "exampleTranslit": "ba'd az khōrdan-e ān ghazā istifrāgh kard."
+    }
+  },
+  "lx-1002": {
+    "target": "سالم",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizāhā-ye sālim bukhurēd."
+    },
+    "was": {
+      "exampleTranslit": "ghazāhā-ye sālim bukhurēd."
+    }
+  },
+  "lx-0751": {
+    "target": "بشقاب",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizā rā dar bushqāb kashīdam."
+    },
+    "was": {
+      "exampleTranslit": "ghazā rā dar bushqāb kashīdam."
+    }
+  },
+  "lx-0743": {
+    "target": "طرزالعمل",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "tarzul'amal-e īn ghizā chīst?"
+    },
+    "was": {
+      "exampleTranslit": "tarzul'amal-e īn ghazā chīst?"
+    }
+  },
+  "lx-6039": {
+    "target": "نمک",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "namak dar ghizā kam ast."
+    },
+    "was": {
+      "exampleTranslit": "namak dar ghazā kam ast."
+    }
+  },
+  "lx-6240": {
+    "target": "دیشب",
+    "why": [
+      "philologist-structure MAJOR: دی- 'yesterday' has ordinary ī: Wiktionary Classical /diːˈʃab/, Tajik дишаб, and the lexicon's own dīrōz and dīshab (lx-0661, 1796, 1837)"
+    ],
+    "set": {
+      "translit": "dīshab",
+      "exampleTranslit": "dīshab"
+    },
+    "was": {
+      "translit": "dēshab",
+      "exampleTranslit": "dēshab"
+    }
+  },
+  "lx-0945": {
+    "target": "جویدن",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizā rā khūb bijawēd."
+    },
+    "was": {
+      "exampleTranslit": "ghazā rā khūb bijawēd."
+    }
+  },
+  "lx-1659": {
+    "target": "دارو",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "īn dawā rā bāyad ba'd az ghizā bukhūrēd."
+    },
+    "was": {
+      "exampleTranslit": "īn dawā rā bāyad ba'd az ghazā bukhūrēd."
+    }
+  },
+  "lx-0914": {
+    "target": "شکایت کردن",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "mushtarī az ghizā shikāyat kard."
+    },
+    "was": {
+      "exampleTranslit": "mushtarī az ghazā shikāyat kard."
+    }
+  },
+  "lx-1186": {
+    "target": "اجاق",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizā rō-ye ujāq ast."
+    },
+    "was": {
+      "exampleTranslit": "ghazā rō-ye ujāq ast."
+    }
+  },
+  "lx-1633": {
+    "target": "معده",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizā dar mi'da hazm mēshawad."
+    },
+    "was": {
+      "exampleTranslit": "ghazā dar mi'da hazm mēshawad."
+    }
+  },
+  "lx-1650": {
+    "target": "هضم",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "hazm-e īn ghizā barā-ye mi'da sakht ast."
+    },
+    "was": {
+      "exampleTranslit": "hazm-e īn ghazā barā-ye mi'da sakht ast."
+    }
+  },
+  "lx-6269": {
+    "target": "لوبیا",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "lōbyā ghizā-ye khūb wa arzān ast."
+    },
+    "was": {
+      "exampleTranslit": "lōbyā ghazā-ye khūb wa arzān ast."
+    }
+  },
+  "lx-1690": {
+    "target": "سوء هاضمه",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizā-ye charb bā'is-e sū-ye hāzima mēshawad."
+    },
+    "was": {
+      "exampleTranslit": "ghazā-ye charb bā'is-e sū-ye hāzima mēshawad."
+    }
+  },
+  "lx-2185": {
+    "target": "مهمانی",
+    "why": [
+      "philologist-structure MAJOR: دی- 'yesterday' has ordinary ī: Wiktionary Classical /diːˈʃab/, Tajik дишаб, and the lexicon's own dīrōz and dīshab (lx-0661, 1796, 1837)"
+    ],
+    "set": {
+      "exampleTranslit": "dīshab ba yak mihmānī raftēm."
+    },
+    "was": {
+      "exampleTranslit": "dēshab ba yak mihmānī raftēm."
+    }
+  },
+  "lx-1740": {
+    "target": "غیرصحی",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ghizā-hā-ye khayābānī ma'mūlan ghayr-e sihhī hastand."
+    },
+    "was": {
+      "exampleTranslit": "ghazā-hā-ye khayābānī ma'mūlan ghayr-e sihhī hastand."
+    }
+  },
+  "lx-1746": {
+    "target": "رژیم غذایی",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "translit": "rizhēm-e ghizāyī",
+      "exampleTranslit": "dāktar barāyam yak rizhēm-e ghizāyī dād."
+    },
+    "was": {
+      "translit": "rizhēm-e ghazāyī",
+      "exampleTranslit": "dāktar barāyam yak rizhēm-e ghazāyī dād."
+    }
+  },
+  "lx-6270": {
+    "target": "عدس",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "adas wa berenj ghizā-ye arzān ast."
+    },
+    "was": {
+      "exampleTranslit": "adas wa berenj ghazā-ye arzān ast."
+    }
+  },
+  "lx-2907": {
+    "target": "دیابت",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "ruzhīm-e ghizāyī barā-ye kuntrūl-e diyābit muhimm ast."
+    },
+    "was": {
+      "exampleTranslit": "ruzhīm-e ghazāyī barā-ye kuntrūl-e diyābit muhimm ast."
+    }
+  },
+  "lx-6451": {
+    "target": "شغال",
+    "why": [
+      "philologist-structure MAJOR: دی- 'yesterday' has ordinary ī: Wiktionary Classical /diːˈʃab/, Tajik дишаб, and the lexicon's own dīrōz and dīshab (lx-0661, 1796, 1837)"
+    ],
+    "set": {
+      "exampleTranslit": "shaghāl dīshab murgh-e mā rā burd."
+    },
+    "was": {
+      "exampleTranslit": "shaghāl dēshab murgh-e mā rā burd."
+    }
+  },
+  "lx-3427": {
+    "target": "اجتناب ورزیدن",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "az khōrdan-e ghizā-hā-ye charb ijtināb buwarzēd."
+    },
+    "was": {
+      "exampleTranslit": "az khōrdan-e ghazā-hā-ye charb ijtināb buwarzēd."
+    }
+  },
+  "lx-3109": {
+    "target": "امنیت غذایی",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "translit": "amniyyat-e ghizāyī",
+      "exampleTranslit": "amniyyat-e ghizāyī yakī az daghdagha-hā-ye aslī-ye dawlat ast."
+    },
+    "was": {
+      "translit": "amniyyat-e ghazāyī",
+      "exampleTranslit": "amniyyat-e ghazāyī yakī az daghdagha-hā-ye aslī-ye dawlat ast."
+    }
+  },
+  "lx-6257": {
+    "target": "مرچ",
+    "why": [
+      "philologist-structure MAJOR: غذا is ghizā in Dari (Wiktionary Kabuli [ɣɪzɑː], Tajik ғизо); ghazā is the Iranian colloquial reading, and a vs i is outside the kasra sweep"
+    ],
+    "set": {
+      "exampleTranslit": "īn ghizā murch-e ziyād dārad."
+    },
+    "was": {
+      "exampleTranslit": "īn ghazā murch-e ziyād dārad."
+    }
+  },
+  "lx-10035": {
+    "target": "دزد",
+    "why": [
+      "philologist-structure MAJOR: دی- 'yesterday' has ordinary ī: Wiktionary Classical /diːˈʃab/, Tajik дишаб, and the lexicon's own dīrōz and dīshab (lx-0661, 1796, 1837)"
+    ],
+    "set": {
+      "exampleTranslit": "dīshab duzd ba khāna-ye hamsāya-ye mā āmad."
+    },
+    "was": {
+      "exampleTranslit": "dēshab duzd ba khāna-ye hamsāya-ye mā āmad."
+    }
+  },
+  "lx-10032": {
+    "target": "پر",
+    "why": [
+      "philologist-structure MINOR: say that the second sense is a noun with a different vowel (the شیر precedent)"
+    ],
+    "set": {
+      "glossEn": "full (pur); (noun, par) feather, wing"
+    },
+    "was": {
+      "glossEn": "full (pur); feather (par, same spelling)"
+    }
+  },
+  "lx-10033": {
+    "target": "بند",
+    "why": [
+      "philologist-structure MINOR: lead with the everyday Kabuli senses, closed and busy; the clause sense stays last because content uses بندهای/بندها that way"
+    ],
+    "set": {
+      "glossEn": "closed, shut, blocked (دکان بند است; بند کردن to close); busy (Kabuli: امروز بند هستم); dam; strap, band; clause (grammar)"
+    },
+    "was": {
+      "glossEn": "dam; strap, band; clause (grammar); (adj.) closed, blocked"
+    }
+  },
+  "lx-10034": {
+    "target": "مال",
+    "why": [
+      "philologist-structure MINOR: in Afghan Dari مال commonly means livestock (مال و مواشی), and Kabuli says از من for mine; example kept"
+    ],
+    "set": {
+      "glossEn": "property, goods; livestock (مال‌داری); مال من, mine (Kabuli also از من)"
+    },
+    "was": {
+      "glossEn": "property, belongings, goods (مال من, mine)"
+    }
+  },
+  "lx-6395": {
+    "target": "برقع",
+    "why": [
+      "philologist-structure MINOR: در بازار ... می‌پوشد reads as putting it on in the bazaar; 'when she goes to the market' is what is meant (same sentence as lx-10045 چادری)"
+    ],
+    "set": {
+      "exampleTarget": "مادرکلانم وقتی به بازار می‌رود، برقع می‌پوشد.",
+      "exampleTranslit": "mādarkalānam waqtē ba bāzār mērawad, burqa mēpōshad.",
+      "exampleEn": "My grandmother wears a burqa when she goes to the market."
+    },
+    "was": {
+      "exampleTarget": "مادرکلانم در بازار برقع می‌پوشد.",
+      "exampleTranslit": "mādarkalānam dar bāzār burqa mēpōshad.",
+      "exampleEn": "My grandmother wears a burqa at the market."
+    }
+  },
+  "lx-10037": {
+    "target": "ترس",
+    "why": [
+      "philologist-structure MINOR: 'cried out' reads as 'shouted'"
+    ],
+    "set": {
+      "exampleEn": "The child cried because he was scared."
+    },
+    "was": {
+      "exampleEn": "The child cried out of fear."
+    }
+  }
+}

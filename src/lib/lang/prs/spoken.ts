@@ -27,9 +27,11 @@
  * resolving مه as weather. They are listed in `CONTESTED_SPOKEN` below with the
  * reasoning, pinned by a test so a new collision cannot appear unnoticed, and
  * left for a philologist to decide - which is a decision about Dari, not about
- * code. ره has since been decided: its "stem" was a variant listed on رستن and
- * رهیدن, not a word, and with the variant removed this table resolves ره to
- * را, which is what all five of its content uses mean.
+ * code. ره has since been decided. It is a real word - the classical present
+ * stem of رستن and رهیدن (می‌رهد), and poetic for راه - but bare ره in shipped
+ * content is always Kabuli را, all five uses. The lexicon listed it as a
+ * variant on both verbs; with those variants removed, this table resolves it
+ * to را.
  *
  * مو (mu, "we") and شمو (shumu, "you" plural) used to be listed too, and have
  * been removed on exactly that kind of decision. A philologist ruled, citing
@@ -111,9 +113,9 @@ export const SPOKEN_FORMS: Readonly<Record<string, string>> = {
  *
  * (مو "we" was listed here too, until it was ruled not to be Kabuli at all
  * and removed from the table - see the header. ره was listed as well, while
- * رستن and رهیدن carried ره as a "present stem" variant; it is neither verb's
- * stem in any text, every content use is the Kabuli را, and dropping those
- * variants let this table answer it - see the header.)
+ * رستن and رهیدن carried it as a variant. It is their classical present stem,
+ * but bare ره in content is always the Kabuli را, so dropping those variants
+ * let this table answer it - see the header.)
  *
  * These are far more common as the Kabuli form in anything a learner would
  * import or be sent, so overriding is probably right - but "probably" is not

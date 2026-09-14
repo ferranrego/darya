@@ -3563,16 +3563,16 @@ export const seedTexts: SeedTextSource[] = [
     titleTranslit: "arōsī",
     titleEn: "The wedding",
     sentences: [
-      { target: "دیشب ما در عروسی بودیم.", translit: "dēshab mā dar arōsī būdēm.", en: "Last night we were at a wedding." },
+      { target: "دیشب ما در عروسی بودیم.", translit: "dīshab mā dar arōsī būdēm.", en: "Last night we were at a wedding." },
       { target: "موسیقی بسیار بلند بود.", translit: "mōsīqī bisyār buland būd.", en: "The music was very loud." },
-      { target: "داماد و عروس خوشحال بودند.", translit: "dāmād wa arūs khushhāl būdand.", en: "The groom and bride were happy." },
+      { target: "داماد و عروس خوشحال بودند.", translit: "dāmād wa arōs khushhāl būdand.", en: "The groom and bride were happy." },
       { target: "ما تا دیر شب آنجا ماندیم.", translit: "mā tā dēr-e shab ānjā māndēm.", en: "We stayed there until late at night." },
     ],
     questions: [
       {
         questionEn: "Where were we last night?",
         questionTarget: "دیشب ما در کجا بودیم؟",
-        questionTranslit: "dēshab mā dar kujā būdēm?",
+        questionTranslit: "dīshab mā dar kujā būdēm?",
         options: [
           { target: "در بازار", translit: "dar bāzār", en: "At the market" },
           { target: "در مکتب", translit: "dar maktab", en: "At school" },
@@ -3789,7 +3789,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Taking an exam",
     sentences: [
       { target: "امروز در پوهنتون امتحان داریم.", translit: "imrōz dar pōhantūn imtihān dārēm.", en: "Today we have an exam at the university." },
-      { target: "من دیشب بسیار درس خواندم.", translit: "man dēshab bisyār dars khāndam.", en: "I studied a lot last night." },
+      { target: "من دیشب بسیار درس خواندم.", translit: "man dīshab bisyār dars khāndam.", en: "I studied a lot last night." },
       { target: "سوال‌ها کمی مشکل بود.", translit: "su'āl-hā kamē mushkil būd.", en: "The questions were a bit difficult." },
       { target: "امیدوارم نمره خوب بگیرم.", translit: "umēdwār-am nimra-ye khūb bigīram.", en: "I hope to get a good grade." },
     ],
@@ -6713,7 +6713,7 @@ export const seedTexts: SeedTextSource[] = [
     titleEn: "Eye and heart",
     sentences: [
       { target: "چشم من امروز سرخ است.", translit: "chashm-e man emrōz surkh ast.", en: "My eye is red today." },
-      { target: "من دیشب خوب نمی‌خوابم.", translit: "man dēshab khūb namēkhābam.", en: "I do not sleep well at night." },
+      { target: "من دیشب خوب نمی‌خوابم.", translit: "man dīshab khūb namēkhābam.", en: "I do not sleep well at night." },
       { target: "حالا من بسیار مانده هستم.", translit: "hālā man bisyār mānda hastam.", en: "Now I am very tired." },
       { target: "دل من آرام نیست.", translit: "dil-e man ārām nēst.", en: "My heart is not calm." },
       { target: "من امشب زود می‌خوابم.", translit: "man emshab zūd mēkhābam.", en: "Tonight I sleep early." },

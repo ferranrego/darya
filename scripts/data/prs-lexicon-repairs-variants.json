@@ -193,7 +193,7 @@
   "lx-0380": {
     "target": "گشتن",
     "why": [
-      "drop گرد: گرد is 'dust' (گرد و خاک) and is گردیدن's stem, not گشتن's"
+      "drop گرد: گرد is the present stem of گشتن (می‌گردم) and of گردیدن, but bare گرد in content is the noun dust (گرد و خاک) or round, so a bare-stem variant answered the wrong word. [reason corrected after philologist-structure review: an earlier version wrongly said it is not گشتن stem]"
     ],
     "set": {
       "variants": []
@@ -583,7 +583,7 @@
   "lx-0400": {
     "target": "رستن",
     "why": [
-      "drop ره: ره is Kabuli spoken را (hub: مه کتاب ره میخانم); without the variant spoken.ts resolves it to را"
+      "drop ره: ره is the classical present stem of رستن (and poetic for راه), but bare ره in content is always Kabuli spoken را (hub: مه کتاب ره میخانم); without the variant spoken.ts resolves it to را. [reason corrected after philologist-structure review]"
     ],
     "set": {
       "variants": [
@@ -645,7 +645,7 @@
   "lx-0658": {
     "target": "مود",
     "why": [
-      "drop مد: مد in content is madd, the tide (جزر و مد), and the stemmer took مدت 'duration' to مود 'fashion' through it"
+      "drop مد: مد is the Iranian spelling of this same word (mōd, fashion), so it was a genuine spelling variant; it is removed because Dari writes مود and the variant collided with madd (the tide, جزر و مد), taking مدت duration to مود through the stemmer. [reason corrected after philologist-structure review]"
     ],
     "set": {
       "variants": []
@@ -1133,7 +1133,7 @@
   "lx-0442": {
     "target": "رهیدن",
     "why": [
-      "drop ره: ره is Kabuli spoken را; without the variant spoken.ts resolves it to را"
+      "drop ره: ره is the classical present stem of رهیدن (می‌رهد), but bare ره in content is always Kabuli spoken را; without the variant spoken.ts resolves it to را. [reason corrected after philologist-structure review]"
     ],
     "set": {
       "variants": [

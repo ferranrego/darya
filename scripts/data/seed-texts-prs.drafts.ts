@@ -212,7 +212,7 @@ export const draftSeedTexts: SeedTextSource[] = [
     titleTranslit: "mihmān dar khāna-yi mā",
     titleEn: "Guest in Our House",
     sentences: [
-      { target: "دیشب کاکایم به خانه ما آمد.", translit: "dēshab kākā-yam ba khāna-yi mā āmad.", en: "Last night my uncle came to our house." },
+      { target: "دیشب کاکایم به خانه ما آمد.", translit: "dīshab kākā-yam ba khāna-yi mā āmad.", en: "Last night my uncle came to our house." },
       { target: "او در یک شهر دور زندگی می‌کند.", translit: "ō dar yak shahr-i dūr zindagē mēkunad.", en: "He lives in a far city." },
       { target: "ما از دیدن او بسیار خوشحال شدیم.", translit: "mā az dēdan-i ō bisyār khushhāl shudēm.", en: "We were very happy to see him." },
       { target: "مادرم یک غذای مزه‌دار پخته کرد.", translit: "mādar-am yak ghizā-yi maza-dār pukhta kard.", en: "My mother cooked a delicious meal." },
@@ -296,10 +296,10 @@ export const draftSeedTexts: SeedTextSource[] = [
     sentences: [
       { target: "مادرم شام می‌پزد.", translit: "mādar-am shām mēpazad.", en: "My mother is cooking dinner." },
       { target: "او برنج و گوشت آماده می‌کند.", translit: "ō birinj wa gōsht āmāda mēkunad.", en: "She prepares rice and meat." },
-      { target: "بوی غذا بسیار خوب است.", translit: "bōy-ē ghazā bisyār khūb ast.", en: "The smell of the food is very good." },
+      { target: "بوی غذا بسیار خوب است.", translit: "bōy-ē ghizā bisyār khūb ast.", en: "The smell of the food is very good." },
       { target: "ما دور میز می‌نشینیم.", translit: "mā dawr-ē mēz mēnishīnēm.", en: "We sit around the table." },
       { target: "همه گرسنه هستند.", translit: "hama gursna hastand.", en: "Everyone is hungry." },
-      { target: "ما با هم غذا می‌خوریم.", translit: "mā bā ham ghazā mēkhōrēm.", en: "We eat food together." },
+      { target: "ما با هم غذا می‌خوریم.", translit: "mā bā ham ghizā mēkhōrēm.", en: "We eat food together." },
     ],
   },
 ];

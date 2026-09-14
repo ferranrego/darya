@@ -8,7 +8,7 @@
   "sentences": [
     {
       "target": "دیشب ما در عروسی بودیم.",
-      "translit": "dēshab mā dar arōsī būdēm.",
+      "translit": "dīshab mā dar arōsī būdēm.",
       "en": "Last night we were at a wedding.",
       "tokens": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "target": "داماد و عروس خوشحال بودند.",
-      "translit": "dāmād wa arūs khushhāl būdand.",
+      "translit": "dāmād wa arōs khushhāl būdand.",
       "en": "The groom and bride were happy.",
       "tokens": [
         {
@@ -147,7 +147,7 @@
     {
       "questionEn": "Where were we last night?",
       "questionTarget": "دیشب ما در کجا بودیم؟",
-      "questionTranslit": "dēshab mā dar kujā būdēm?",
+      "questionTranslit": "dīshab mā dar kujā būdēm?",
       "options": [
         {
           "target": "در بازار",

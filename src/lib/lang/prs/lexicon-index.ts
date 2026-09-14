@@ -147,10 +147,14 @@ export function buildGeneratedForms(
 
   // Pass 2b: variant infinitives conjugate too.
   //
-  // `نوشیدن` is listed as a variant of the headword `آشامیدن`, so it resolved
-  // as a bare infinitive and nothing else: a text saying `می‌نوشم` - the
-  // ordinary way to say "I drink" - left the learner tapping a word the reader
-  // could not gloss. The paradigm was only ever built from `targetNormalized`.
+  // A verb listed only as a variant of another headword (a literary synonym)
+  // resolved as a bare infinitive and nothing else, because the paradigm was
+  // only ever built from `targetNormalized`. The case that found it was
+  // `نوشیدن`, then a variant of `آشامیدن`: a text saying `می‌نوشم` left the
+  // learner tapping a word the reader could not gloss. نوشیدن has since got
+  // its own headword (lx-6365), so می‌نوشم resolves through pass 2 and that
+  // variant was removed as shadowed; the pass still serves any verb that is
+  // a variant only.
   //
   // The present stem cannot be taken from the headword (آشام is not نوش), but
   // `-یدن` verbs form it by dropping that suffix, which is regular: نوشیدن→نوش,
