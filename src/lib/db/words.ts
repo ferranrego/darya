@@ -9,6 +9,54 @@ export async function getUserWords(db: SupabaseClient, userId: string): Promise<
   return data as UserWordRow[];
 }
 
+export interface WordCounts {
+  /** Known words from the shipped lexicon only - same rule as `curricularKnownCount`. */
+  known: number;
+  /** Every word in review, personal ones included. */
+  learning: number;
+  /** Learning words whose card is due at `now`. */
+  due: number;
+}
+
+/**
+ * The three numbers the app shell and Home show, without the rows.
+ *
+ * The Review badge and the milestone observer are mounted on every page, and
+ * both used to download the learner's whole `user_words` table - every row,
+ * with its FSRS card - to count it in the browser. A near-native placement
+ * seeds thousands of rows, so every tab switch paid for all of them. Three
+ * head-only counts return integers, served by `user_words_due_idx
+ * (user_id, status, due)`.
+ *
+ * `known` excludes `ux-` ids in SQL for the reason `curricularKnownCount`
+ * gives: level thresholds count the shipped lexicon, and an imported article's
+ * vocabulary is not on that path.
+ */
+export async function getWordCounts(
+  db: SupabaseClient,
+  userId: string,
+  now: Date,
+): Promise<WordCounts> {
+  const head = { count: "exact" as const, head: true };
+  const [known, learning, due] = await Promise.all([
+    db
+      .from("user_words")
+      .select("lexeme_id", head)
+      .eq("user_id", userId)
+      .eq("status", "known")
+      .not("lexeme_id", "like", "ux-%"),
+    db.from("user_words").select("lexeme_id", head).eq("user_id", userId).eq("status", "learning"),
+    db
+      .from("user_words")
+      .select("lexeme_id", head)
+      .eq("user_id", userId)
+      .eq("status", "learning")
+      .lte("due", now.toISOString()),
+  ]);
+  for (const r of [known, learning, due]) if (r.error) throw r.error;
+  return { known: known.count ?? 0, learning: learning.count ?? 0, due: due.count ?? 0 };
+}
+
 export async function getDueWords(
   db: SupabaseClient,
   userId: string,

@@ -1,24 +1,24 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { useProfile, useUserWords } from "@/lib/queries/hooks";
+import { useProfile, useWordCounts } from "@/lib/queries/hooks";
 import { levels } from "@/lib/content/levels";
-import { curricularKnownCount } from "@/lib/lexeme/lookup";
 
 export function MilestoneObserver() {
   const { data: profile } = useProfile();
-  const { data: words } = useUserWords();
+  const { data: counts } = useWordCounts();
 
   const prevKnownCount = useRef<number | null>(null);
   const prevLevelIdx = useRef<number | null>(null);
   const prevStreak = useRef<number | null>(null);
 
   useEffect(() => {
-    if (!words || !profile) return;
+    if (!counts || !profile) return;
 
     // Curricular only, so the "100 words" milestone keeps meaning the same
-    // thing it did before imported articles existed.
-    const knownCount = curricularKnownCount(words);
+    // thing it did before imported articles existed. `counts.known` applies
+    // that exclusion in SQL (see getWordCounts).
+    const knownCount = counts.known;
     const currentLevelIdx = levels.findIndex((l) => l.id === profile.level_estimate);
     const streak = profile.streak_current;
 
@@ -52,7 +52,7 @@ export function MilestoneObserver() {
     prevKnownCount.current = knownCount;
     prevLevelIdx.current = currentLevelIdx;
     prevStreak.current = streak;
-  }, [words, profile]);
+  }, [counts, profile]);
 
   return null;
 }

@@ -1,14 +1,14 @@
 "use client";
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { getAlphabetProgress } from "../db/alphabet";
 import { getHistoryActivity } from "../db/activity";
 import { stickingPoints } from "../db/errors";
 import { getGrammarProgress } from "../db/grammar";
 import { getProfile } from "../db/profiles";
 import { getReadTexts, getReadTextsWithDocs, getText, getTextsForLevel } from "../db/texts";
-import { getUserWords } from "../db/words";
+import { getUserWords, getWordCounts } from "../db/words";
 import { asLexiconEntry, getUserLexemes } from "../db/user-lexemes";
 import { getImport, getImports } from "../db/imports";
 import type { LexiconEntry } from "../content/schema";
@@ -140,29 +140,36 @@ export function useImport(id: string | undefined) {
   });
 }
 
-/** Current time as reactive state, re-read every `intervalMs`. */
-function useNow(intervalMs: number): number {
-  const [now, setNow] = useState(() => Date.now());
-  useEffect(() => {
-    const id = setInterval(() => setNow(Date.now()), intervalMs);
-    return () => clearInterval(id);
-  }, [intervalMs]);
-  return now;
+/**
+ * Known, learning and due counts, as integers from the database.
+ *
+ * For everything that only needs a number - the Review badge, Home, Stats,
+ * Profile and the milestone observer. Pages that need the rows themselves
+ * (review, the reader, the word list) still use `useUserWords`.
+ *
+ * The key extends `["user_words", id]` on purpose: every existing
+ * `invalidateQueries({ queryKey: ["user_words"] })` is a prefix match, so a
+ * learning action refreshes the counts too and no call site can forget to.
+ *
+ * Refetched every minute so the badge appears as words come due, without a
+ * reload. It used to tick a local clock over the full row set instead; the
+ * refetch pauses while offline, which is when there is nothing to review
+ * against the server anyway.
+ */
+export function useWordCounts() {
+  const db = useSupabase();
+  const { data: user } = useUser();
+  return useQuery({
+    queryKey: ["user_words", user?.id, "counts"],
+    enabled: !!user,
+    queryFn: () => getWordCounts(db, user!.id, new Date()),
+    refetchInterval: 60_000,
+  });
 }
 
-/**
- * How many learning words are due right now. Derived from the shared `user_words`
- * query, so it costs no extra request. Ticks every minute so the Review badge
- * appears as words come due, without a reload.
- */
+/** How many learning words are due right now. See `useWordCounts`. */
 export function useDueCount(): number {
-  const { data } = useUserWords();
-  const now = useNow(60_000);
-  return useMemo(() => {
-    if (!data) return 0;
-    return data.filter((w) => w.status === "learning" && w.due && new Date(w.due).getTime() <= now)
-      .length;
-  }, [data, now]);
+  return useWordCounts().data?.due ?? 0;
 }
 
 export function useTextsForLevel(level: string | undefined) {

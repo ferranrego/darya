@@ -28,9 +28,8 @@ import {
   useReadTexts,
   useSupabase,
   useUser,
-  useUserWords,
+  useWordCounts,
 } from "@/lib/queries/hooks";
-import { curricularKnownCount } from "@/lib/lexeme/lookup";
 import { levelForecast } from "@/lib/util/level-forecast";
 import { timeOfDay, type TimeOfDay } from "@/lib/util/time-of-day";
 import type { PonchaPose } from "@/components/poncha";
@@ -78,7 +77,7 @@ type HeroKey = Extract<ActionKey, "alphabet" | "grammar" | "read" | "review">;
 
 export default function HomePage() {
   const { data: profile } = useProfile();
-  const { data: words } = useUserWords();
+  const { data: counts } = useWordCounts();
   const { data: todayXp = 0 } = useTodayXp();
   const { data: alphaProgress } = useAlphabetProgress();
   const { data: grammarProgress } = useGrammarProgress();
@@ -99,8 +98,8 @@ export default function HomePage() {
 
   // Curricular only - `levelForecast` projects progress through the lexicon,
   // and words from imported articles are not on that path.
-  const knownCount = words ? curricularKnownCount(words) : 0;
-  const learningCount = words?.filter((w) => w.status === "learning").length ?? 0;
+  const knownCount = counts?.known ?? 0;
+  const learningCount = counts?.learning ?? 0;
   const forecast = levelForecast(profile, knownCount);
 
   const completedUnits = alphaProgress?.filter((u) => u.completed_at).length ?? 0;

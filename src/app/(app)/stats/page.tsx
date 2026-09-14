@@ -3,8 +3,7 @@
 import { ChevronLeft } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useAlphabetProgress, useProfile, useUserWords } from "@/lib/queries/hooks";
-import { curricularKnownCount } from "@/lib/lexeme/lookup";
+import { useAlphabetProgress, useProfile, useWordCounts } from "@/lib/queries/hooks";
 import { levelLabel, levels } from "@/lib/content/levels";
 import { profile as lang } from "@/lib/lang";
 
@@ -26,17 +25,15 @@ const ActivityHeatmap = dynamic(() => import("./heatmap").then((m) => m.Activity
 
 export default function StatsPage() {
   const { data: profile } = useProfile();
-  const { data: words } = useUserWords();
+  const { data: counts } = useWordCounts();
   const { data: alphabet } = useAlphabetProgress();
 
   if (!profile) return null;
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const totalWords = words?.length ?? 0;
   // Curricular only: the level forecast measures progress through the
   // frequency-ordered lexicon, which an imported article is not part of.
-  const knownCount = words ? curricularKnownCount(words) : 0;
-  const learningCount = words?.filter((w) => w.status === "learning").length ?? 0;
+  const knownCount = counts?.known ?? 0;
+  const learningCount = counts?.learning ?? 0;
   
   const completedAlphabetUnits = alphabet?.filter(u => u.completed_at !== null).length ?? 0;
 

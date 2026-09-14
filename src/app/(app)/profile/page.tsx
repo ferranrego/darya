@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { motion, useReducedMotion } from "motion/react";
 import { levelLabel } from "@/lib/content/levels";
 import { updateProfile } from "@/lib/db/profiles";
-import { useProfile, useSignOut, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
+import { useProfile, useSignOut, useSupabase, useUser, useWordCounts } from "@/lib/queries/hooks";
 import { useSettingsStore, type ReadingFont } from "@/lib/settings-store";
 import { usePushSubscription } from "@/lib/use-push-subscription";
 import { ProfileHero } from "@/components/profile/profile-hero";
@@ -53,7 +53,7 @@ export default function ProfilePage() {
   const qc = useQueryClient();
   const { data: user } = useUser();
   const { data: profile } = useProfile();
-  const { data: words } = useUserWords();
+  const { data: counts } = useWordCounts();
   const signOut = useSignOut();
   const { readingFont, setReadingFont } = useSettingsStore();
   const { isSupported, isSubscribed, isSubscribing, error: pushError, subscribe } =
@@ -88,7 +88,10 @@ export default function ProfilePage() {
     onSuccess: () => qc.invalidateQueries({ queryKey: ["profile"] }),
   });
 
-  const knownCount = words?.filter((w) => w.status === "known").length ?? 0;
+  // Curricular, like Home, Stats and the word list it links to. It used to count
+  // personal `ux-` words too, so Profile and Home disagreed for anyone who had
+  // imported an article.
+  const knownCount = counts?.known ?? 0;
 
   if (!profile) return null;
 
