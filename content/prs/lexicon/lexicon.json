@@ -14686,9 +14686,9 @@
       "freqBand": 4,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "پیش از خواب یک گیلاس شیر نوشید.",
-      "exampleEn": "Before bed he drank a glass of milk.",
-      "exampleTranslit": "pēsh az khāb yak gīlās shīr nōshīd."
+      "exampleTarget": "نوشیدن چای بعد از نان در افغانستان رسم است.",
+      "exampleEn": "Drinking tea after a meal is a custom in Afghanistan.",
+      "exampleTranslit": "nōshīdan-e chāy ba'd az nān dar afghānestān rasm ast."
     },
     {
       "id": "lx-0467",
@@ -15691,7 +15691,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "دروازه خانه ما از آهن است.",
-      "exampleEn": "The door of our house is made of iron.",
+      "exampleEn": "The gate of our house is made of iron.",
       "exampleTranslit": "darwāza-ye khāna-ye mā az āhan ast."
     },
     {
@@ -21486,7 +21486,7 @@
       "target": "زیرزمین",
       "targetNormalized": "زیرزمین",
       "pos": "noun",
-      "glossEn": "basement",
+      "glossEn": "basement (everyday Dari is تهکوی)",
       "tags": [],
       "concreteness": true,
       "translit": "zērzamīn",
@@ -26761,9 +26761,9 @@
       "freqBand": 5,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "صبح نان را با عسل می‌خورم.",
+      "exampleTarget": "صبح نان با عسل می‌خورم.",
       "exampleEn": "In the morning I eat bread with honey.",
-      "exampleTranslit": "subh nān rā bā asal mēkhuram."
+      "exampleTranslit": "subh nān bā asal mēkhuram."
     },
     {
       "id": "lx-1067",
@@ -27522,7 +27522,7 @@
       "target": "حیاط",
       "targetNormalized": "حیاط",
       "pos": "noun",
-      "glossEn": "courtyard",
+      "glossEn": "courtyard (everyday Dari is حویلی)",
       "tags": [],
       "concreteness": true,
       "translit": "hayāt",
@@ -27530,9 +27530,9 @@
       "freqBand": 5,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "بچه‌ها در حیاط مکتب بازی می‌کنند.",
-      "exampleEn": "The children play in the school yard.",
-      "exampleTranslit": "bacha-hā dar hayāt-e maktab bāzī mēkunand."
+      "exampleTarget": "خانه‌های کهنه حیاط کلان دارند.",
+      "exampleEn": "Old houses have large courtyards.",
+      "exampleTranslit": "khāna-hā-ye kuhna hayāt-e kalān dārand."
     },
     {
       "id": "lx-0914",
@@ -31567,7 +31567,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این تکه برای زمستان بسیار نازک است.",
-      "exampleEn": "This fabric is too thin for winter.",
+      "exampleEn": "This fabric is very thin for winter.",
       "exampleTranslit": "īn tuka barā-ye zemestān bisyār nāzuk ast."
     },
     {
@@ -32429,7 +32429,7 @@
       "target": "نقاش",
       "targetNormalized": "نقاش",
       "pos": "noun",
-      "glossEn": "painter",
+      "glossEn": "painter (artist)",
       "tags": [],
       "concreteness": true,
       "translit": "naqqāsh",
@@ -32437,9 +32437,9 @@
       "freqBand": 5,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "نقاش دیوار خانه را رنگ کرد.",
-      "exampleEn": "The painter painted the wall of the house.",
-      "exampleTranslit": "naqqāsh dēwār-e khāna rā rang kard."
+      "exampleTarget": "این نقاشی کار یک نقاش مشهور است.",
+      "exampleEn": "This painting is the work of a famous painter.",
+      "exampleTranslit": "īn naqqāshī kār-e yak naqqāsh-e mash'hūr ast."
     },
     {
       "id": "lx-1282",
@@ -37503,7 +37503,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "در تابستان حشره‌ها زیاد می‌شوند.",
-      "exampleEn": "In summer there are more and more insects.",
+      "exampleEn": "In summer the insects multiply.",
       "exampleTranslit": "dar tābestān hashara-hā ziyād mēshawand."
     },
     {
@@ -37557,9 +37557,9 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "بعد از بازی عرق زیاد کردم.",
+      "exampleTarget": "بعد از بازی بسیار عرق کردم.",
       "exampleEn": "After the game I sweated a lot.",
-      "exampleTranslit": "ba'd az bāzī araq ziyād kardam."
+      "exampleTranslit": "ba'd az bāzī bisyār araq kardam."
     },
     {
       "id": "lx-2266",
@@ -39394,9 +39394,9 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "توت‌های کابل بسیار شیرین است.",
+      "exampleTarget": "توت کابل بسیار شیرین است.",
       "exampleEn": "Kabul's mulberries are very sweet.",
-      "exampleTranslit": "tūt-hā-ye kābul bisyār shīrīn ast."
+      "exampleTranslit": "tūt-e kābul bisyār shīrīn ast."
     },
     {
       "id": "lx-1882",
@@ -39983,7 +39983,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "شب با دوستانم کباب خوردیم.",
-      "exampleEn": "At night we ate kebab with my friends.",
+      "exampleEn": "In the evening my friends and I ate kebab.",
       "exampleTranslit": "shab bā dōstānam kabāb khurdēm."
     },
     {
@@ -41088,7 +41088,7 @@
       "target": "قاب",
       "targetNormalized": "قاب",
       "pos": "noun",
-      "glossEn": "plate",
+      "glossEn": "plate, dish, platter",
       "tags": [],
       "concreteness": true,
       "translit": "qāb",
@@ -41096,9 +41096,9 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "نان را در قاب گذاشت.",
-      "exampleEn": "She put the bread on the plate.",
-      "exampleTranslit": "nān rā dar qāb guzāsht."
+      "exampleTarget": "مادرم پلو را در قاب کلان گذاشت.",
+      "exampleEn": "My mother put the rice on a large platter.",
+      "exampleTranslit": "mādaram palaw rā dar qāb-e kalān guzāsht."
     },
     {
       "id": "lx-1898",
@@ -44493,9 +44493,9 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "در باغ ما یک قورباغه است.",
-      "exampleEn": "There is a toad in our garden.",
-      "exampleTranslit": "dar bāgh-e mā yak qūrbāgha ast."
+      "exampleTarget": "در باغ ما قورباغه‌ها زندگی می‌کنند.",
+      "exampleEn": "Frogs live in our garden.",
+      "exampleTranslit": "dar bāgh-e mā qūrbāgha-hā zindagī mēkunand."
     },
     {
       "id": "lx-1822",
@@ -44567,9 +44567,9 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "اتو بسیار گرم است، دست نزن.",
-      "exampleEn": "The iron is very hot, don't touch it.",
-      "exampleTranslit": "utū bisyār garm ast, dast nazan."
+      "exampleTarget": "اتو داغ است، دست نزن.",
+      "exampleEn": "The iron is hot, don't touch it.",
+      "exampleTranslit": "utū dāgh ast, dast nazan."
     },
     {
       "id": "lx-3398",
@@ -48692,7 +48692,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "مادرم نخود را شب در آب گذاشت.",
-      "exampleEn": "My mother left the chickpeas in water overnight.",
+      "exampleEn": "My mother put the chickpeas in water at night.",
       "exampleTranslit": "mādaram nakhud rā shab dar āb guzāsht."
     },
     {
@@ -49338,7 +49338,7 @@
       "target": "بخاری",
       "targetNormalized": "بخاری",
       "pos": "noun",
-      "glossEn": "heater",
+      "glossEn": "stove, heater",
       "tags": [],
       "concreteness": true,
       "translit": "bukhārī",
@@ -50431,7 +50431,7 @@
       "target": "ملخ",
       "targetNormalized": "ملخ",
       "pos": "noun",
-      "glossEn": "grasshopper",
+      "glossEn": "grasshopper, locust",
       "tags": [],
       "concreteness": true,
       "translit": "malakh",
@@ -50521,7 +50521,7 @@
       "target": "بوقلمون",
       "targetNormalized": "بوقلمون",
       "pos": "noun",
-      "glossEn": "turkey",
+      "glossEn": "turkey (Iranian; everyday Dari is فیل‌مرغ)",
       "tags": [],
       "concreteness": true,
       "translit": "būqalamūn",
@@ -51887,7 +51887,7 @@
       "target": "کبریت",
       "targetNormalized": "کبریت",
       "pos": "noun",
-      "glossEn": "match",
+      "glossEn": "match (everyday Dari is گوگرد)",
       "tags": [],
       "concreteness": true,
       "translit": "kibrīt",
@@ -52743,7 +52743,7 @@
       "target": "عدس",
       "targetNormalized": "عدس",
       "pos": "noun",
-      "glossEn": "lentil",
+      "glossEn": "lentil (everyday Dari is نسک)",
       "tags": [],
       "concreteness": true,
       "translit": "adas",
@@ -53225,7 +53225,7 @@
       "target": "لجن",
       "targetNormalized": "لجن",
       "pos": "noun",
-      "glossEn": "mud",
+      "glossEn": "sludge, slime, silt",
       "tags": [],
       "concreteness": true,
       "translit": "lajan",
@@ -53234,7 +53234,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "بعد از سیل، خانه‌ها زیر لجن ماند.",
-      "exampleEn": "After the flood the houses were left under mud.",
+      "exampleEn": "After the flood the houses were buried in sludge.",
       "exampleTranslit": "ba'd az sēl, khāna-hā zēr-e lajan mānd."
     },
     {
@@ -57019,9 +57019,9 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "کفتار از گرگ کوچک‌تر است.",
-      "exampleEn": "A hyena is smaller than a wolf.",
-      "exampleTranslit": "kaftār az gurg kōchaktar ast."
+      "exampleTarget": "شب صدای کفتار را شنیدیم.",
+      "exampleEn": "At night we heard a hyena.",
+      "exampleTranslit": "shab sadā-ye kaftār rā shunīdēm."
     },
     {
       "id": "lx-3145",
@@ -58096,7 +58096,7 @@
       "target": "آرایشگر",
       "targetNormalized": "آرایشگر",
       "pos": "noun",
-      "glossEn": "barber",
+      "glossEn": "hairdresser, beautician",
       "tags": [],
       "concreteness": true,
       "translit": "ārāyishgar",
@@ -58104,9 +58104,9 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "به دکان آرایشگر رفتم.",
-      "exampleEn": "I went to the barber's shop.",
-      "exampleTranslit": "ba dukān-e ārāyishgar raftam."
+      "exampleTarget": "خواهرم برای عروسی پیش آرایشگر رفت.",
+      "exampleEn": "My sister went to the hairdresser for the wedding.",
+      "exampleTranslit": "khāharam barā-ye arōsī pēsh-e ārāyishgar raft."
     },
     {
       "id": "lx-2407",
@@ -58663,9 +58663,9 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "مردم کوه بار را با قاطر می‌برند.",
+      "exampleTarget": "مردم کوهستان بار را با قاطر می‌برند.",
       "exampleEn": "People in the mountains carry loads by mule.",
-      "exampleTranslit": "mardum-e kōh bār rā bā qātir mēbarand."
+      "exampleTranslit": "mardum-e kōhistān bār rā bā qātir mēbarand."
     },
     {
       "id": "lx-2426",
@@ -59452,9 +59452,9 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "مرغابی‌ها در دریا شنا می‌کنند.",
+      "exampleTarget": "مرغابی‌ها در دریا آب‌بازی می‌کنند.",
       "exampleEn": "Ducks are swimming in the river.",
-      "exampleTranslit": "murghābī-hā dar daryā shinā mēkunand."
+      "exampleTranslit": "murghābī-hā dar daryā āb-bāzī mēkunand."
     },
     {
       "id": "lx-3393",
@@ -59526,9 +59526,9 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "شغال شب یک مرغ ما را برد.",
-      "exampleEn": "A jackal took one of our hens in the night.",
-      "exampleTranslit": "shaghāl shab yak murgh-e mā rā burd."
+      "exampleTarget": "شغال دیشب مرغ ما را برد.",
+      "exampleEn": "Last night a jackal took our hen.",
+      "exampleTranslit": "shaghāl dēshab murgh-e mā rā burd."
     },
     {
       "id": "lx-2486",
@@ -64707,7 +64707,7 @@
       "target": "زرگر",
       "targetNormalized": "زرگر",
       "pos": "noun",
-      "glossEn": "jeweler",
+      "glossEn": "goldsmith, jeweller",
       "tags": [],
       "concreteness": true,
       "translit": "zargar",
@@ -67902,7 +67902,7 @@
       "target": "سوسمار",
       "targetNormalized": "سوسمار",
       "pos": "noun",
-      "glossEn": "lizard",
+      "glossEn": "large lizard, monitor lizard",
       "tags": [],
       "concreteness": true,
       "translit": "sōsmār",
@@ -68362,9 +68362,9 @@
       "freqBand": 7,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "من کانگورو را در تلویزیون دیدم.",
+      "exampleTarget": "من در تلویزیون یک کانگورو دیدم.",
       "exampleEn": "I saw a kangaroo on television.",
-      "exampleTranslit": "man kāngūrō rā dar tilwīzyōn dīdam."
+      "exampleTranslit": "man dar tilwīzyōn yak kāngūrō dīdam."
     },
     {
       "id": "lx-2860",
@@ -69014,7 +69014,7 @@
       "target": "گروپ",
       "targetNormalized": "گروپ",
       "pos": "noun",
-      "glossEn": "lamp/bulb",
+      "glossEn": "light bulb",
       "tags": [],
       "concreteness": true,
       "translit": "gurūp",
@@ -69973,9 +69973,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "بوت کهنه‌ام را به کفاش دادم.",
-      "exampleEn": "I gave my old shoes to the shoemaker.",
-      "exampleTranslit": "būt-e kuhna-am rā ba kaffāsh dādam."
+      "exampleTarget": "بوت کهنه‌ام را پیش کفاش بردم.",
+      "exampleEn": "I took my old shoes to the shoemaker.",
+      "exampleTranslit": "būt-e kuhna-am rā pēsh-e kaffāsh burdam."
     },
     {
       "id": "lx-2878",
@@ -72734,7 +72734,7 @@
       "target": "برقع",
       "targetNormalized": "برقع",
       "pos": "noun",
-      "glossEn": "burqa",
+      "glossEn": "burqa (everyday Dari is چادری)",
       "tags": [],
       "concreteness": true,
       "translit": "burqa",
@@ -74522,9 +74522,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "مارماهی ماهی دراز است.",
+      "exampleTarget": "مارماهی یک ماهی دراز است.",
       "exampleEn": "An eel is a long fish.",
-      "exampleTranslit": "mārmāhī māhī-ye darāz ast."
+      "exampleTranslit": "mārmāhī yak māhī-ye darāz ast."
     },
     {
       "id": "lx-4051",
@@ -75074,7 +75074,7 @@
       "target": "منقل",
       "targetNormalized": "منقل",
       "pos": "noun",
-      "glossEn": "stove",
+      "glossEn": "brazier (charcoal)",
       "tags": [],
       "concreteness": true,
       "translit": "manqal",
@@ -77657,7 +77657,7 @@
       "target": "گلکار",
       "targetNormalized": "گلکار",
       "translit": "gilkār",
-      "glossEn": "mud-worker",
+      "glossEn": "mason, plasterer (mud and straw)",
       "pos": "noun",
       "freqRank": 4044,
       "freqBand": 8,
@@ -77961,7 +77961,7 @@
       "target": "مرچ",
       "targetNormalized": "مرچ",
       "pos": "noun",
-      "glossEn": "pepper",
+      "glossEn": "chilli, hot pepper; pepper",
       "tags": [],
       "concreteness": true,
       "translit": "murch",
@@ -77970,7 +77970,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "این غذا مرچ زیاد دارد.",
-      "exampleEn": "This food has a lot of pepper in it.",
+      "exampleEn": "This food has a lot of chilli in it.",
       "exampleTranslit": "īn ghazā murch-e ziyād dārad."
     },
     {
@@ -83519,7 +83519,7 @@
       "target": "بزگر",
       "targetNormalized": "بزگر",
       "pos": "noun",
-      "glossEn": "peasant",
+      "glossEn": "sharecropper, tenant farmer",
       "tags": [],
       "concreteness": true,
       "translit": "bazgar",
@@ -83528,7 +83528,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "بزگر از صبح تا شام کار می‌کند.",
-      "exampleEn": "The peasant works from morning to evening.",
+      "exampleEn": "The sharecropper works from morning till evening.",
       "exampleTranslit": "bazgar az subh tā shām kār mēkunad."
     },
     {
@@ -84109,15 +84109,15 @@
       "target": "می‌چکد",
       "targetNormalized": "می‌چکد",
       "translit": "mēchakad",
-      "glossEn": "leaks",
+      "glossEn": "drips, leaks (3sg present of چکیدن)",
       "pos": "phrase",
       "freqRank": 4381,
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "سقف خانه ما می‌چکد.",
-      "exampleTranslit": "saqf-e khāna-ye mā mēchakad.",
-      "exampleEn": "The roof of our house leaks.",
+      "exampleTarget": "بام خانه ما می‌چکد.",
+      "exampleTranslit": "bām-e khāna-ye mā mēchakad.",
+      "exampleEn": "Our roof leaks.",
       "tags": []
     },
     {
@@ -84347,7 +84347,7 @@
       "target": "درشی",
       "targetNormalized": "درشی",
       "pos": "noun",
-      "glossEn": "suit",
+      "glossEn": "[not a headword: misspelling of دریشی (lx-0634)] suit",
       "tags": [],
       "concreteness": true,
       "translit": "drishī",
@@ -84355,9 +84355,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "برای عروسی برادرم یک درشی نو خریدم.",
-      "exampleEn": "I bought a new suit for my brother's wedding.",
-      "exampleTranslit": "barā-ye arōsī-ye barādaram yak drishī-ye naw kharīdam."
+      "exampleTarget": "این درشی است.",
+      "exampleEn": "This is a suit.",
+      "exampleTranslit": "īn drishī ast."
     },
     {
       "id": "lx-3668",
@@ -85848,9 +85848,9 @@
       "glossEn": "courtyard, compound",
       "pos": "noun",
       "register": "neutral",
-      "exampleTarget": "بچه‌ها در حویلی بازی می‌کنند.",
-      "exampleTranslit": "bacha-hā dar hawēlī bāzī mēkunand.",
-      "exampleEn": "The children are playing in the courtyard.",
+      "exampleTarget": "بچه‌ها در حویلی مکتب بازی می‌کنند.",
+      "exampleTranslit": "bacha-hā dar hawēlī-ye maktab bāzī mēkunand.",
+      "exampleEn": "The children play in the school yard.",
       "variants": [],
       "tags": [
         "beginner-core"
@@ -85893,9 +85893,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "خربوزه‌های مزار بسیار شیرین است.",
-      "exampleEn": "The melons of Mazar are very sweet.",
-      "exampleTranslit": "kharbōza-hā-ye mazār bisyār shīrīn ast."
+      "exampleTarget": "خربوزه مزار بسیار شیرین است.",
+      "exampleEn": "Mazar melons are very sweet.",
+      "exampleTranslit": "kharbōza-ye mazār bisyār shīrīn ast."
     },
     {
       "id": "lx-3805",
@@ -87573,7 +87573,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "کف دستم زخمی شد.",
-      "exampleEn": "I hurt the palm of my hand.",
+      "exampleEn": "The palm of my hand got hurt.",
       "exampleTranslit": "kaf-e dastam zakhmī shud."
     },
     {
@@ -87640,9 +87640,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "شپرک‌ها شب پرواز می‌کنند.",
+      "exampleTarget": "شپرک‌ها شب‌ها پرواز می‌کنند.",
       "exampleEn": "Bats fly at night.",
-      "exampleTranslit": "shaparak-hā shab parwāz mēkunand."
+      "exampleTranslit": "shaparak-hā shab-hā parwāz mēkunand."
     },
     {
       "id": "lx-6328",
@@ -87749,9 +87749,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "شام‌ها با پدرم در باغ قدم می‌زنیم.",
-      "exampleEn": "In the evenings my father and I walk in the garden.",
-      "exampleTranslit": "shām-hā bā padaram dar bāgh qadam mēzanēm."
+      "exampleTarget": "هر شام با پدرم در باغ قدم می‌زنیم.",
+      "exampleEn": "Every evening my father and I walk in the garden.",
+      "exampleTranslit": "har shām bā padaram dar bāgh qadam mēzanēm."
     },
     {
       "id": "lx-6368",
@@ -88020,9 +88020,9 @@
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "طفل گرسنه است و گریه می‌کند.",
-      "exampleEn": "The baby is hungry and crying.",
-      "exampleTranslit": "tifl gushna ast wa girya mēkunad."
+      "exampleTarget": "طفل از درد گریه می‌کند.",
+      "exampleEn": "The child is crying in pain.",
+      "exampleTranslit": "tifl az dard girya mēkunad."
     },
     {
       "id": "lx-6383",
@@ -88189,20 +88189,20 @@
     },
     {
       "id": "lx-6447",
-      "target": "غزگاو",
-      "targetNormalized": "غزگاو",
+      "target": "غژگاو",
+      "targetNormalized": "غژگاو",
       "pos": "noun",
       "glossEn": "yak",
       "tags": [],
       "concreteness": true,
-      "translit": "ghazgāw",
+      "translit": "ghazhgāw",
       "freqRank": 4597,
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "غزگاو در کوه‌های بلند زندگی می‌کند.",
+      "exampleTarget": "غژگاو در کوه‌های بلند زندگی می‌کند.",
       "exampleEn": "The yak lives in high mountains.",
-      "exampleTranslit": "ghazgāw dar kōh-hā-ye buland zindagī mēkunad."
+      "exampleTranslit": "ghazhgāw dar kōh-hā-ye buland zindagī mēkunad."
     },
     {
       "id": "lx-6462",

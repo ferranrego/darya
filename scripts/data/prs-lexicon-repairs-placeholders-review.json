@@ -1,0 +1,662 @@
+{
+  "lx-6405": {
+    "target": "نقاش",
+    "why": [
+      "philologist-placeholders-1: نقاش is an artist; the Afghan house painter is رنگمال"
+    ],
+    "set": {
+      "glossEn": "painter (artist)",
+      "exampleTarget": "این نقاشی کار یک نقاش مشهور است.",
+      "exampleTranslit": "īn naqqāshī kār-e yak naqqāsh-e mash'hūr ast.",
+      "exampleEn": "This painting is the work of a famous painter."
+    },
+    "was": {
+      "glossEn": "painter",
+      "exampleTarget": "نقاش دیوار خانه را رنگ کرد.",
+      "exampleTranslit": "naqqāsh dēwār-e khāna rā rang kard.",
+      "exampleEn": "The painter painted the wall of the house."
+    }
+  },
+  "lx-6365": {
+    "target": "نوشیدن",
+    "why": [
+      "philologist-placeholders-1: a formal verb needs a formal context; milk before bed is شیر خورد in Kabul"
+    ],
+    "set": {
+      "exampleTarget": "نوشیدن چای بعد از نان در افغانستان رسم است.",
+      "exampleTranslit": "nōshīdan-e chāy ba'd az nān dar afghānestān rasm ast.",
+      "exampleEn": "Drinking tea after a meal is a custom in Afghanistan."
+    },
+    "was": {
+      "exampleTarget": "پیش از خواب یک گیلاس شیر نوشید.",
+      "exampleTranslit": "pēsh az khāb yak gīlās shīr nōshīd.",
+      "exampleEn": "Before bed he drank a glass of milk."
+    }
+  },
+  "lx-6415": {
+    "target": "زیرزمین",
+    "why": [
+      "philologist-placeholders-1: the Afghan word for basement is تهکوی (not in the lexicon); زیرزمین as a noun follows Iranian usage"
+    ],
+    "set": {
+      "glossEn": "basement (everyday Dari is تهکوی)"
+    },
+    "was": {
+      "glossEn": "basement"
+    }
+  },
+  "lx-6416": {
+    "target": "حیاط",
+    "why": [
+      "philologist-placeholders-1: Kabul schools have a حویلی or صحن, not a حیاط; the school-yard sentence moves to حویلی (lx-6048)"
+    ],
+    "set": {
+      "glossEn": "courtyard (everyday Dari is حویلی)",
+      "exampleTarget": "خانه‌های کهنه حیاط کلان دارند.",
+      "exampleTranslit": "khāna-hā-ye kuhna hayāt-e kalān dārand.",
+      "exampleEn": "Old houses have large courtyards."
+    },
+    "was": {
+      "glossEn": "courtyard",
+      "exampleTarget": "بچه‌ها در حیاط مکتب بازی می‌کنند.",
+      "exampleTranslit": "bacha-hā dar hayāt-e maktab bāzī mēkunand.",
+      "exampleEn": "The children play in the school yard."
+    }
+  },
+  "lx-6048": {
+    "target": "حویلی",
+    "why": [
+      "philologist-placeholders-1: the school-yard sentence belongs on the Afghan word"
+    ],
+    "set": {
+      "exampleTarget": "بچه‌ها در حویلی مکتب بازی می‌کنند.",
+      "exampleTranslit": "bacha-hā dar hawēlī-ye maktab bāzī mēkunand.",
+      "exampleEn": "The children play in the school yard."
+    },
+    "was": {
+      "exampleTarget": "بچه‌ها در حویلی بازی می‌کنند.",
+      "exampleTranslit": "bacha-hā dar hawēlī bāzī mēkunand.",
+      "exampleEn": "The children are playing in the courtyard."
+    }
+  },
+  "lx-6444": {
+    "target": "نازک",
+    "why": [
+      "philologist-placeholders-1: بسیار is very, not too"
+    ],
+    "set": {
+      "exampleEn": "This fabric is very thin for winter."
+    },
+    "was": {
+      "exampleEn": "This fabric is too thin for winter."
+    }
+  },
+  "lx-6266": {
+    "target": "عسل",
+    "why": [
+      "philologist-placeholders-1: a habit takes the generic object, without را"
+    ],
+    "set": {
+      "exampleTarget": "صبح نان با عسل می‌خورم.",
+      "exampleTranslit": "subh nān bā asal mēkhuram."
+    },
+    "was": {
+      "exampleTarget": "صبح نان را با عسل می‌خورم.",
+      "exampleTranslit": "subh nān rā bā asal mēkhuram."
+    }
+  },
+  "lx-6436": {
+    "target": "آهن",
+    "why": [
+      "philologist-placeholders-1: an iron دروازه of a house is its gate"
+    ],
+    "set": {
+      "exampleEn": "The gate of our house is made of iron."
+    },
+    "was": {
+      "exampleEn": "The door of our house is made of iron."
+    }
+  },
+  "lx-6296": {
+    "target": "عرق",
+    "why": [
+      "philologist-placeholders-2: the adverb goes before the compound verb عرق کردن"
+    ],
+    "set": {
+      "exampleTarget": "بعد از بازی بسیار عرق کردم.",
+      "exampleTranslit": "ba'd az bāzī bisyār araq kardam."
+    },
+    "was": {
+      "exampleTarget": "بعد از بازی عرق زیاد کردم.",
+      "exampleTranslit": "ba'd az bāzī araq ziyād kardam."
+    }
+  },
+  "lx-6329": {
+    "target": "حشره",
+    "why": [
+      "philologist-placeholders-2: زیاد می‌شوند has no progressive 'more and more'"
+    ],
+    "set": {
+      "exampleEn": "In summer the insects multiply."
+    },
+    "was": {
+      "exampleEn": "In summer there are more and more insects."
+    }
+  },
+  "lx-6461": {
+    "target": "قورباغه",
+    "why": [
+      "philologist-placeholders-2: existential یک X است reads like the placeholder template; جوی resolves to جستن, so the fallback sentence"
+    ],
+    "set": {
+      "exampleTarget": "در باغ ما قورباغه‌ها زندگی می‌کنند.",
+      "exampleTranslit": "dar bāgh-e mā qūrbāgha-hā zindagī mēkunand.",
+      "exampleEn": "Frogs live in our garden."
+    },
+    "was": {
+      "exampleTarget": "در باغ ما یک قورباغه است.",
+      "exampleTranslit": "dar bāgh-e mā yak qūrbāgha ast.",
+      "exampleEn": "There is a toad in our garden."
+    }
+  },
+  "lx-6274": {
+    "target": "توت",
+    "why": [
+      "philologist-placeholders-2: the generic singular avoids a plural subject with است"
+    ],
+    "set": {
+      "exampleTarget": "توت کابل بسیار شیرین است.",
+      "exampleTranslit": "tūt-e kābul bisyār shīrīn ast.",
+      "exampleEn": "Kabul's mulberries are very sweet."
+    },
+    "was": {
+      "exampleTarget": "توت‌های کابل بسیار شیرین است.",
+      "exampleTranslit": "tūt-hā-ye kābul bisyār shīrīn ast.",
+      "exampleEn": "Kabul's mulberries are very sweet."
+    }
+  },
+  "lx-6284": {
+    "target": "کباب",
+    "why": [
+      "philologist-placeholders-2: idiomatic English; شب here is the evening"
+    ],
+    "set": {
+      "exampleEn": "In the evening my friends and I ate kebab."
+    },
+    "was": {
+      "exampleEn": "At night we ate kebab with my friends."
+    }
+  },
+  "lx-6268": {
+    "target": "نخود",
+    "why": [
+      "philologist-placeholders-2: شب is at night, گذاشت is put"
+    ],
+    "set": {
+      "exampleEn": "My mother put the chickpeas in water at night."
+    },
+    "was": {
+      "exampleEn": "My mother left the chickpeas in water overnight."
+    }
+  },
+  "lx-6336": {
+    "target": "قاب",
+    "why": [
+      "philologist-placeholders-2: Afghan قاب is a serving dish; the reviewer's کشید resolves to کشتن 'to kill', so گذاشت"
+    ],
+    "set": {
+      "glossEn": "plate, dish, platter",
+      "exampleTarget": "مادرم پلو را در قاب کلان گذاشت.",
+      "exampleTranslit": "mādaram palaw rā dar qāb-e kalān guzāsht.",
+      "exampleEn": "My mother put the rice on a large platter."
+    },
+    "was": {
+      "glossEn": "plate",
+      "exampleTarget": "نان را در قاب گذاشت.",
+      "exampleTranslit": "nān rā dar qāb guzāsht.",
+      "exampleEn": "She put the bread on the plate."
+    }
+  },
+  "lx-6343": {
+    "target": "بخاری",
+    "why": [
+      "philologist-placeholders-2: the card said heater and the sentence said stove"
+    ],
+    "set": {
+      "glossEn": "stove, heater"
+    },
+    "was": {
+      "glossEn": "heater"
+    }
+  },
+  "lx-6400": {
+    "target": "اتو",
+    "why": [
+      "philologist-placeholders-2: داغ is the everyday word for a hot surface"
+    ],
+    "set": {
+      "exampleTarget": "اتو داغ است، دست نزن.",
+      "exampleTranslit": "utū dāgh ast, dast nazan.",
+      "exampleEn": "The iron is hot, don't touch it."
+    },
+    "was": {
+      "exampleTarget": "اتو بسیار گرم است، دست نزن.",
+      "exampleTranslit": "utū bisyār garm ast, dast nazan.",
+      "exampleEn": "The iron is very hot, don't touch it."
+    }
+  },
+  "lx-6446": {
+    "target": "بوقلمون",
+    "why": [
+      "philologist-placeholders-3: بوقلمون is the Iranian word; in Afghanistan a turkey is فیل‌مرغ (not in the lexicon). A gloss note, not [not a headword], because the validator refuses to rule a meaning out of the course with no teachable replacement"
+    ],
+    "set": {
+      "glossEn": "turkey (Iranian; everyday Dari is فیل‌مرغ)"
+    },
+    "was": {
+      "glossEn": "turkey"
+    }
+  },
+  "lx-6409": {
+    "target": "آرایشگر",
+    "why": [
+      "philologist-placeholders-3: the Afghan barber is سلمانی (lx-0527); آرایشگر is a hairdresser or beautician"
+    ],
+    "set": {
+      "glossEn": "hairdresser, beautician",
+      "exampleTarget": "خواهرم برای عروسی پیش آرایشگر رفت.",
+      "exampleTranslit": "khāharam barā-ye arōsī pēsh-e ārāyishgar raft.",
+      "exampleEn": "My sister went to the hairdresser for the wedding."
+    },
+    "was": {
+      "glossEn": "barber",
+      "exampleTarget": "به دکان آرایشگر رفتم.",
+      "exampleTranslit": "ba dukān-e ārāyishgar raftam.",
+      "exampleEn": "I went to the barber's shop."
+    }
+  },
+  "lx-6451": {
+    "target": "شغال",
+    "why": [
+      "philologist-placeholders-3: یک مرغ ما را (numeral plus possessive) is not standard"
+    ],
+    "set": {
+      "exampleTarget": "شغال دیشب مرغ ما را برد.",
+      "exampleTranslit": "shaghāl dēshab murgh-e mā rā burd.",
+      "exampleEn": "Last night a jackal took our hen."
+    },
+    "was": {
+      "exampleTarget": "شغال شب یک مرغ ما را برد.",
+      "exampleTranslit": "shaghāl shab yak murgh-e mā rā burd.",
+      "exampleEn": "A jackal took one of our hens in the night."
+    }
+  },
+  "lx-6348": {
+    "target": "کبریت",
+    "why": [
+      "philologist-placeholders-3: the everyday Afghan word for a match is گوگرد (not in the lexicon)"
+    ],
+    "set": {
+      "glossEn": "match (everyday Dari is گوگرد)"
+    },
+    "was": {
+      "glossEn": "match"
+    }
+  },
+  "lx-6270": {
+    "target": "عدس",
+    "why": [
+      "philologist-placeholders-3: the everyday Afghan word for lentils is نسک (not in the lexicon)"
+    ],
+    "set": {
+      "glossEn": "lentil (everyday Dari is نسک)"
+    },
+    "was": {
+      "glossEn": "lentil"
+    }
+  },
+  "lx-6302": {
+    "target": "مرغابی",
+    "why": [
+      "philologist-placeholders-3: the Afghan word for swimming is آب‌بازی (lx-0855); شنا leans Iranian"
+    ],
+    "set": {
+      "exampleTarget": "مرغابی‌ها در دریا آب‌بازی می‌کنند.",
+      "exampleTranslit": "murghābī-hā dar daryā āb-bāzī mēkunand."
+    },
+    "was": {
+      "exampleTarget": "مرغابی‌ها در دریا شنا می‌کنند.",
+      "exampleTranslit": "murghābī-hā dar daryā shinā mēkunand."
+    }
+  },
+  "lx-6450": {
+    "target": "کفتار",
+    "why": [
+      "philologist-placeholders-3: a striped hyena is about the size of a wolf, so the comparison is not a safe fact"
+    ],
+    "set": {
+      "exampleTarget": "شب صدای کفتار را شنیدیم.",
+      "exampleTranslit": "shab sadā-ye kaftār rā shunīdēm.",
+      "exampleEn": "At night we heard a hyena."
+    },
+    "was": {
+      "exampleTarget": "کفتار از گرگ کوچک‌تر است.",
+      "exampleTranslit": "kaftār az gurg kōchaktar ast.",
+      "exampleEn": "A hyena is smaller than a wolf."
+    }
+  },
+  "lx-6358": {
+    "target": "لجن",
+    "why": [
+      "philologist-placeholders-3: لجن is foul wet sediment; ordinary mud is گل"
+    ],
+    "set": {
+      "glossEn": "sludge, slime, silt",
+      "exampleEn": "After the flood the houses were buried in sludge."
+    },
+    "was": {
+      "glossEn": "mud",
+      "exampleEn": "After the flood the houses were left under mud."
+    }
+  },
+  "lx-6455": {
+    "target": "ملخ",
+    "why": [
+      "philologist-placeholders-3: ملخ covers both, and the sentence says locusts"
+    ],
+    "set": {
+      "glossEn": "grasshopper, locust"
+    },
+    "was": {
+      "glossEn": "grasshopper"
+    }
+  },
+  "lx-6459": {
+    "target": "سوسمار",
+    "why": [
+      "philologist-placeholders-3: the everyday small lizard is کلپاسه; سوسمار is a large one"
+    ],
+    "set": {
+      "glossEn": "large lizard, monitor lizard"
+    },
+    "was": {
+      "glossEn": "lizard"
+    }
+  },
+  "lx-6448": {
+    "target": "قاطر",
+    "why": [
+      "philologist-placeholders-3: مردم کوهستان is the natural phrase"
+    ],
+    "set": {
+      "exampleTarget": "مردم کوهستان بار را با قاطر می‌برند.",
+      "exampleTranslit": "mardum-e kōhistān bār rā bā qātir mēbarand."
+    },
+    "was": {
+      "exampleTarget": "مردم کوه بار را با قاطر می‌برند.",
+      "exampleTranslit": "mardum-e kōh bār rā bā qātir mēbarand."
+    }
+  },
+  "lx-6452": {
+    "target": "کانگورو",
+    "why": [
+      "philologist-placeholders-3: را made the object definite while the English says 'a'"
+    ],
+    "set": {
+      "exampleTarget": "من در تلویزیون یک کانگورو دیدم.",
+      "exampleTranslit": "man dar tilwīzyōn yak kāngūrō dīdam."
+    },
+    "was": {
+      "exampleTarget": "من کانگورو را در تلویزیون دیدم.",
+      "exampleTranslit": "man kāngūrō rā dar tilwīzyōn dīdam."
+    }
+  },
+  "lx-6413": {
+    "target": "زرگر",
+    "why": [
+      "philologist-placeholders-3: زرگر is literally gold-worker"
+    ],
+    "set": {
+      "glossEn": "goldsmith, jeweller"
+    },
+    "was": {
+      "glossEn": "jeweler"
+    }
+  },
+  "lx-6390": {
+    "target": "درشی",
+    "why": [
+      "philologist-placeholders-4: misspelling of دریشی (lx-0634), which already has this sentence; handled like کفش, placeholder restored"
+    ],
+    "set": {
+      "glossEn": "[not a headword: misspelling of دریشی (lx-0634)] suit",
+      "exampleTarget": "این درشی است.",
+      "exampleTranslit": "īn drishī ast.",
+      "exampleEn": "This is a suit."
+    },
+    "was": {
+      "glossEn": "suit",
+      "exampleTarget": "برای عروسی برادرم یک درشی نو خریدم.",
+      "exampleTranslit": "barā-ye arōsī-ye barādaram yak drishī-ye naw kharīdam.",
+      "exampleEn": "I bought a new suit for my brother's wedding."
+    }
+  },
+  "lx-6341": {
+    "target": "منقل",
+    "why": [
+      "philologist-placeholders-4: منقل is a charcoal brazier, not a stove"
+    ],
+    "set": {
+      "glossEn": "brazier (charcoal)"
+    },
+    "was": {
+      "glossEn": "stove"
+    }
+  },
+  "lx-6250": {
+    "target": "می‌چکد",
+    "why": [
+      "philologist-placeholders-4: the flat roof of an Afghan house is بام (lx-10028); سقف is the ceiling. The headword is the 3sg present of چکیدن"
+    ],
+    "set": {
+      "glossEn": "drips, leaks (3sg present of چکیدن)",
+      "exampleTarget": "بام خانه ما می‌چکد.",
+      "exampleTranslit": "bām-e khāna-ye mā mēchakad.",
+      "exampleEn": "Our roof leaks."
+    },
+    "was": {
+      "glossEn": "leaks",
+      "exampleTarget": "سقف خانه ما می‌چکد.",
+      "exampleTranslit": "saqf-e khāna-ye mā mēchakad.",
+      "exampleEn": "The roof of our house leaks."
+    }
+  },
+  "lx-6412": {
+    "target": "کفاش",
+    "why": [
+      "philologist-placeholders-4: 'gave my old shoes to the shoemaker' reads as giving them away"
+    ],
+    "set": {
+      "exampleTarget": "بوت کهنه‌ام را پیش کفاش بردم.",
+      "exampleTranslit": "būt-e kuhna-am rā pēsh-e kaffāsh burdam.",
+      "exampleEn": "I took my old shoes to the shoemaker."
+    },
+    "was": {
+      "exampleTarget": "بوت کهنه‌ام را به کفاش دادم.",
+      "exampleTranslit": "būt-e kuhna-am rā ba kaffāsh dādam.",
+      "exampleEn": "I gave my old shoes to the shoemaker."
+    }
+  },
+  "lx-6257": {
+    "target": "مرچ",
+    "why": [
+      "philologist-placeholders-4: in Afghan food مرچ alone is chilli; black pepper is مرچ سیاه"
+    ],
+    "set": {
+      "glossEn": "chilli, hot pepper; pepper",
+      "exampleEn": "This food has a lot of chilli in it."
+    },
+    "was": {
+      "glossEn": "pepper",
+      "exampleEn": "This food has a lot of pepper in it."
+    }
+  },
+  "lx-6410": {
+    "target": "بزگر",
+    "why": [
+      "philologist-placeholders-4: بزگر is a sharecropper; the generic farmer is دهقان"
+    ],
+    "set": {
+      "glossEn": "sharecropper, tenant farmer",
+      "exampleEn": "The sharecropper works from morning till evening."
+    },
+    "was": {
+      "glossEn": "peasant",
+      "exampleEn": "The peasant works from morning to evening."
+    }
+  },
+  "lx-6395": {
+    "target": "برقع",
+    "why": [
+      "philologist-placeholders-4: the everyday Kabul name for the garment is چادری (not in the lexicon)"
+    ],
+    "set": {
+      "glossEn": "burqa (everyday Dari is چادری)"
+    },
+    "was": {
+      "glossEn": "burqa"
+    }
+  },
+  "lx-6333": {
+    "target": "گروپ",
+    "why": [
+      "philologist-placeholders-4: گروپ is the bulb; a lamp is چراغ"
+    ],
+    "set": {
+      "glossEn": "light bulb"
+    },
+    "was": {
+      "glossEn": "lamp/bulb"
+    }
+  },
+  "lx-6251": {
+    "target": "گلکار",
+    "why": [
+      "philologist-placeholders-4: 'mud-worker' is not usable English"
+    ],
+    "set": {
+      "glossEn": "mason, plasterer (mud and straw)"
+    },
+    "was": {
+      "glossEn": "mud-worker"
+    }
+  },
+  "lx-6258": {
+    "target": "خربوزه",
+    "why": [
+      "philologist-placeholders-4: the generic singular avoids a plural subject with است"
+    ],
+    "set": {
+      "exampleTarget": "خربوزه مزار بسیار شیرین است.",
+      "exampleTranslit": "kharbōza-ye mazār bisyār shīrīn ast.",
+      "exampleEn": "Mazar melons are very sweet."
+    },
+    "was": {
+      "exampleTarget": "خربوزه‌های مزار بسیار شیرین است.",
+      "exampleTranslit": "kharbōza-hā-ye mazār bisyār shīrīn ast.",
+      "exampleEn": "The melons of Mazar are very sweet."
+    }
+  },
+  "lx-6460": {
+    "target": "مارماهی",
+    "why": [
+      "philologist-placeholders-4: ماهی ماهی back to back stumbles; یک makes it a definition"
+    ],
+    "set": {
+      "exampleTarget": "مارماهی یک ماهی دراز است.",
+      "exampleTranslit": "mārmāhī yak māhī-ye darāz ast."
+    },
+    "was": {
+      "exampleTarget": "مارماهی ماهی دراز است.",
+      "exampleTranslit": "mārmāhī māhī-ye darāz ast."
+    }
+  },
+  "lx-6381": {
+    "target": "گریه کردن",
+    "why": [
+      "philologist-placeholders-5: گرسنه is not read gushna, and طفل is child, not baby; the sentence avoids the word"
+    ],
+    "set": {
+      "exampleTarget": "طفل از درد گریه می‌کند.",
+      "exampleTranslit": "tifl az dard girya mēkunad.",
+      "exampleEn": "The child is crying in pain."
+    },
+    "was": {
+      "exampleTarget": "طفل گرسنه است و گریه می‌کند.",
+      "exampleTranslit": "tifl gushna ast wa girya mēkunad.",
+      "exampleEn": "The baby is hungry and crying."
+    }
+  },
+  "lx-6447": {
+    "target": "غزگاو",
+    "why": [
+      "philologist-placeholders-5: the standard spelling, in Afghan sources too, is غژگاو (غژ silk + گاو); repaired in place, same id"
+    ],
+    "set": {
+      "target": "غژگاو",
+      "translit": "ghazhgāw",
+      "exampleTarget": "غژگاو در کوه‌های بلند زندگی می‌کند.",
+      "exampleTranslit": "ghazhgāw dar kōh-hā-ye buland zindagī mēkunad.",
+      "targetNormalized": "غژگاو"
+    },
+    "was": {
+      "target": "غزگاو",
+      "translit": "ghazgāw",
+      "exampleTarget": "غزگاو در کوه‌های بلند زندگی می‌کند.",
+      "exampleTranslit": "ghazgāw dar kōh-hā-ye buland zindagī mēkunad.",
+      "targetNormalized": "غزگاو"
+    }
+  },
+  "lx-6325": {
+    "target": "شپرک",
+    "why": [
+      "philologist-placeholders-5: a habitual statement takes شب‌ها"
+    ],
+    "set": {
+      "exampleTarget": "شپرک‌ها شب‌ها پرواز می‌کنند.",
+      "exampleTranslit": "shaparak-hā shab-hā parwāz mēkunand."
+    },
+    "was": {
+      "exampleTarget": "شپرک‌ها شب پرواز می‌کنند.",
+      "exampleTranslit": "shaparak-hā shab parwāz mēkunand."
+    }
+  },
+  "lx-6292": {
+    "target": "کف دست",
+    "why": [
+      "philologist-placeholders-5: the Dari is intransitive"
+    ],
+    "set": {
+      "exampleEn": "The palm of my hand got hurt."
+    },
+    "was": {
+      "exampleEn": "I hurt the palm of my hand."
+    }
+  },
+  "lx-6367": {
+    "target": "قدم زدن",
+    "why": [
+      "philologist-placeholders-5: lx-6368 already opens with شام‌ها"
+    ],
+    "set": {
+      "exampleTarget": "هر شام با پدرم در باغ قدم می‌زنیم.",
+      "exampleTranslit": "har shām bā padaram dar bāgh qadam mēzanēm.",
+      "exampleEn": "Every evening my father and I walk in the garden."
+    },
+    "was": {
+      "exampleTarget": "شام‌ها با پدرم در باغ قدم می‌زنیم.",
+      "exampleTranslit": "shām-hā bā padaram dar bāgh qadam mēzanēm.",
+      "exampleEn": "In the evenings my father and I walk in the garden."
+    }
+  }
+}
