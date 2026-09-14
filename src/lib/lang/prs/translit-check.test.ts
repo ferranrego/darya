@@ -8,7 +8,69 @@ import {
   scriptLongVowelCount,
   shortEVowel,
   verb1plIm,
+  isShortEException,
+  medialYehWithoutLongVowel,
+  nonBuPrefix,
+  shortEInLooseText,
 } from "./translit-check.ts";
+
+/** Checks added after the philologist reviewed the i sweep. */
+describe("spelling review checks", () => {
+  const stems = [
+    { latin: "dān", dari: "دان" },
+    { latin: "gīr", dari: "گیر" },
+    { latin: "dih", dari: "ده" },
+    { latin: "raw", dari: "رو" },
+    { latin: "bast", dari: "بست" },
+  ];
+
+  it("nonBuPrefix catches bi-/ba- verbs and leaves bu-, biyā, nouns and b-root pasts", () => {
+    expect(nonBuPrefix("man bāyad bidānam.", "من باید بدانم.", stems)).toBe("bidānam");
+    expect(nonBuPrefix("kitāb badihēd", "کتاب بدهید", stems)).toBe("badihēd");
+    expect(nonBuPrefix("man bāyad budānam.", "من باید بدانم.", stems)).toBeNull();
+    expect(nonBuPrefix("zūd biyā", "زود بیا", stems)).toBeNull();
+    expect(nonBuPrefix("pardākht-e bidihī", "پرداخت بدهی", stems)).toBeNull();
+    expect(nonBuPrefix("birinj", "برنج", stems)).toBeNull();
+    // unaligned: no evidence, no verdict
+    expect(nonBuPrefix("bidānam", "من بدانم", stems)).toBeNull();
+  });
+
+  it("medialYehWithoutLongVowel reports a written ی with no long vowel, not the ezafe or a final -i", () => {
+    expect(medialYehWithoutLongVowel("rizish", "ریزش")).toEqual(["rizish"]);
+    expect(medialYehWithoutLongVowel("bi-rawiya-ye", "بی‌رویه")).toEqual(["bi-rawiya-ye"]);
+    expect(medialYehWithoutLongVowel("rēzish", "ریزش")).toEqual([]);
+    expect(medialYehWithoutLongVowel("tijāri", "تجاری")).toEqual([]);
+    expect(medialYehWithoutLongVowel("kitāb-hā-ye", "کتابهای")).toEqual([]);
+  });
+
+  it("shortEInLooseText flags a Dari word in a table cell and never the English beside it", () => {
+    const vocab = new Set(["giriftan", "girift", "mumkin", "dih"]);
+    expect(shortEInLooseText("gereftan, to take", vocab)).toBe("gereftan");
+    expect(shortEInLooseText("dād · deh", vocab)).toBe("deh");
+    expect(shortEInLooseText("mumken ast ki, it may be that", vocab)).toBe("mumken");
+    expect(shortEInLooseText("never before, the verb", vocab)).toBeNull();
+  });
+
+  it("cheAsWord catches چه written with a majhul ē too", () => {
+    expect(cheAsWord("padar chē mēkunad?")).toBe("chē");
+  });
+
+  it("verb1plIm knows bāsh, mān and gōy without a stem table", () => {
+    expect(verb1plIm("mā bāshīm")).toBe("bāshīm");
+    expect(verb1plIm("bumānīm")).toBe("bumānīm");
+    expect(verb1plIm("bugōyīm")).toBe("bugōyīm");
+  });
+
+  it("exempts a short loanword only whole: tez passes, tezī does not", () => {
+    expect(isShortEException("tez")).toBe(true);
+    expect(isShortEException("tezī")).toBe(false);
+    expect(isShortEException("internetī")).toBe(true);
+    // losing variants are not exempt, so they cannot come back
+    for (const w of ["telefōn", "sistem", "sīstem", "sigret", "metr", "resturān", "hastel", "pelan", "arme", "estāndārd"]) {
+      expect(isShortEException(w), w).toBe(false);
+    }
+  });
+});
 
 /**
  * The spelling convention: short kasra i, چه chi, 1pl -ēm. Each test that
@@ -40,7 +102,7 @@ describe("short e", () => {
   });
 
   it("exempts listed loanwords, inflected too, but not a word that only starts like one", () => {
-    expect(shortEVowel("hotel, model-hā, internetī, sīstem-hā-ye naw")).toBeNull();
+    expect(shortEVowel("hotel, model-hā, internetī, restorān-hā-ye naw")).toBeNull();
     expect(shortEVowel("testament")).toBe("testament");
   });
 

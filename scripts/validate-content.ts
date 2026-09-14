@@ -30,6 +30,10 @@ import {
   bareShortIEnding,
   cheAsWord,
   isFlattenedTranslit,
+  medialYehWithoutLongVowel,
+  nonBuPrefix,
+  normDari,
+  shortEInLooseText,
   shortEVowel,
   verb1plIm,
 } from "../src/lib/lang/prs/translit-check.ts";
@@ -129,7 +133,27 @@ function checkDariTranslit(
   if (che) fail(`${subject}: ${field} writes چه as "${che}" - it is chi (${text})`);
   const im = verb1plIm(text, (s) => verbStems.has(s));
   if (im) fail(`${subject}: ${field} writes the 1pl verb "${im}" with -īm - it is -ēm (${text})`);
+  /**
+   * bu- for the subjunctive and imperative, everywhere (settled convention).
+   * The philologist's review of the spelling sweep found 78 bi-/ba- forms
+   * the sweep never touched, because nothing checked for them.
+   */
+  const bi = nonBuPrefix(text, script, presentStemPairs, nonVerbHeadwords);
+  if (bi) fail(`${subject}: ${field} writes the verb prefix as "${bi}" - it is bu- (budānam, bugīr; biyā stays) (${text})`);
+  // Review only: which long vowel a written ی was cannot be decided here.
+  for (const w of medialYehWithoutLongVowel(text, script)) yehReview.push(`${subject} ${field}: ${w}`);
 }
+
+/** Present stems in both scripts, and the lexicon's non-verb headwords, for the bu- check. */
+const presentStemPairs: Array<{ latin: string; dari: string }> = [];
+const nonVerbHeadwords = new Set<string>();
+for (const m of readFileSync(join(import.meta.dirname, "../src/lib/lang/prs/conjugate.ts"), "utf8").matchAll(
+  /presentStem: "([^"]+)", presentStemTranslit: "([^"]+)"/g,
+)) {
+  presentStemPairs.push({ latin: m[2].normalize("NFC"), dari: normDari(m[1]) });
+}
+/** Words whose ی has no long vowel in the Latin, reported as warnings. */
+const yehReview: string[] = [];
 
 /** Latin past and present stems of the lexicon's verbs, for the 1pl check. */
 const verbStems = new Set<string>(["hast", "nēst", "būd", "bud", "kard", "raft", "khānd", "guft", "dīd"]);
@@ -148,7 +172,11 @@ if (existsSync(lexiconPath)) {
       const last = (e.translit ?? "").normalize("NFC").split(/\s+/).pop() ?? "";
       if (/an$/u.test(last) && last.length > 4) verbStems.add(last.slice(0, -2));
       if (e.presentStemTranslit) verbStems.add(e.presentStemTranslit.normalize("NFC"));
+      if (e.presentStemTranslit && e.presentStem && e.presentStemTranslit.length >= 2) {
+        presentStemPairs.push({ latin: e.presentStemTranslit.normalize("NFC"), dari: normDari(e.presentStem) });
+      }
     }
+    for (const e of lexicon.entries) if (e.pos !== "verb") nonVerbHeadwords.add(normDari(e.target));
     const ids = new Set<string>();
     const keys = new Map<string, string>();
     const glosses = new Map<string, string>();
@@ -1482,6 +1510,60 @@ if (existsSync(controlsPath) && lexicon) {
     if (errors === before) {
       console.log(`✓ placement controls (${parsed.data.controls.length} invented words, none resolve)`);
     }
+  }
+}
+
+// --- Transliteration in fields with no Dari of their own ---------------------
+/**
+ * Hub table rows, pattern parts and course table cells carry transliteration
+ * with no script beside it, and the spelling checks above only ever saw
+ * `translit` fields. That is how gh-15 kept `gereftan, to take` and `dād ·
+ * deh`, and gh-23 `mumken ast ki`, after the sweep (philologist review).
+ * A cell word fails when its i-spelling is a transliteration the content
+ * uses elsewhere, which leaves the English in the same cell alone.
+ */
+if (lang === "prs" && lexicon) {
+  const vocabulary = new Set<string>();
+  const addWords = (t: string | undefined) => {
+    for (const m of (t ?? "").normalize("NFC").matchAll(/[\p{Script=Latin}'’\p{M}-]+/gu)) vocabulary.add(m[0].toLowerCase());
+  };
+  const cells: Array<{ where: string; text: string }> = [];
+  const collect = (source: string, node: unknown, where: string): void => {
+    if (Array.isArray(node)) return node.forEach((v, i) => collect(source, v, `${where}[${i}]`));
+    if (!node || typeof node !== "object") return;
+    const o = node as Record<string, unknown>;
+    const here = typeof o.id === "string" ? o.id : where;
+    for (const [k, v] of Object.entries(o)) {
+      if (k === "translit" && typeof v === "string") addWords(v);
+      else if ((k === "text" || k === "fixed") && typeof v === "string") cells.push({ where: `${source} ${here}.${k}`, text: v });
+      else if ((k === "rows" || k === "columns" || k === "table") && Array.isArray(v)) {
+        const flat = (x: unknown): string[] => (Array.isArray(x) ? x.flatMap(flat) : typeof x === "string" ? [x] : []);
+        for (const c of flat(v)) cells.push({ where: `${source} ${here}.${k}`, text: c });
+      } else if (v && typeof v === "object") collect(source, v, `${here}.${k}`);
+    }
+  };
+  for (const e of lexicon.entries) {
+    addWords(e.translit);
+    addWords(e.exampleTranslit);
+  }
+  for (const [source, rel] of [["grammar", "grammar/all.json"], ["grammar-hub", "grammar-hub/entries.json"]] as const) {
+    const path = join(root, rel);
+    if (existsSync(path)) collect(source, loadJson(path), "");
+  }
+  let cellFailures = 0;
+  for (const c of cells) {
+    const bad = shortEInLooseText(c.text, vocabulary);
+    const che = cheAsWord(c.text);
+    if (bad) fail(`${c.where}: table cell writes "${bad}" with a short e - the kasra is i (${c.text})`);
+    if (che) fail(`${c.where}: table cell writes چه as "${che}" - it is chi (${c.text})`);
+    if (bad || che) cellFailures++;
+  }
+  if (cellFailures === 0) console.log(`✓ transliteration in ${cells.length} table cells and pattern parts`);
+  if (yehReview.length) {
+    console.warn(
+      `⚠ ${yehReview.length} word(s) where the Dari writes a ی inside the word and the Latin shows no long vowel ` +
+        `(review, not an error; e.g. ${yehReview.slice(0, 3).join("; ")})`,
+    );
   }
 }
 

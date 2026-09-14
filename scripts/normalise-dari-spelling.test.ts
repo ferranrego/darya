@@ -80,6 +80,64 @@ describe("normaliseToken", () => {
   });
 });
 
+/**
+ * The philologist's review findings, each on both the Iranian original and
+ * the already-swept i form, since the script must repair content it swept.
+ */
+describe("review repairs", () => {
+  it("R1: Arabic taf'āl masdars keep a", () => {
+    expect(n("te'dād-e", "تعداد")).toBe("ta'dād-e");
+    expect(n("ti'dād-e", "تعداد")).toBe("ta'dād-e");
+    expect(n("tikrār", "تکرار")).toBe("takrār");
+    expect(n("tikya", "تکیه")).toBe("takya");
+    expect(n("isti'māl", "استعمال")).toBe("isti'māl");
+    expect(n("tijāri", "تجاری")).toBe("tijāri");
+  });
+
+  it("R2: the agent suffix is -anda, and zinda is not one", () => {
+    expect(n("nawīsinda", "نویسنده")).toBe("nawīsanda");
+    expect(n("masraf-konindagān", "مصرف‌کنندگان")).toBe("masraf-kunandagān");
+    expect(n("nishān-dihonda-ye", "نشان‌دهنده")).toBe("nishān-dihanda-ye");
+    expect(n("parinda", "پرنده")).toBe("paranda");
+    expect(n("zinda", "زنده")).toBe("zinda");
+    expect(n("zenda", "زنده")).toBe("zinda");
+  });
+
+  it("R3: darakht and the other Persian a/u words", () => {
+    expect(n("derakht-e", "درخت")).toBe("darakht-e");
+    expect(n("dirakhtān", "درختان")).toBe("darakhtān");
+    expect(n("nimud-e", "نمود")).toBe("namūd-e");
+    expect(n("sarnivisht-e", "سرنوشت")).toBe("sarnawisht-e");
+  });
+
+  it("R4: counts a ی inside the root even when an ezafe or -i is present", () => {
+    // the cause: the old count let -ye and a bare -i cover the root's ی
+    expect(n("be-rawiya-ye", "بی‌رویه")).toBe("bē-rawiya-ye");
+    expect(n("pichesh", "پیچش")).toBe("pēchish");
+    expect(n("ketāb-hā-ye", "کتابهای")).toBe("kitāb-hā-ye");
+  });
+
+  it("R6: bi-/ba- verb prefixes become bu-, nouns and biyā stay", () => {
+    const stems: Ctx = { ...ctx, presentStems: [...ctx.presentStems, { latin: "dān", dari: "دان" }] };
+    expect(normaliseToken("bidānam", "بدانم", stems).out).toBe("budānam");
+    expect(normaliseToken("badihēd", "بدهید", stems).out).toBe("budihēd");
+    expect(n("bidihī", "بدهی")).toBe("bidihī");
+    expect(n("biyā", "بیا")).toBe("biyā");
+  });
+
+  it("loanwords converge on one spelling", () => {
+    expect(n("telefōn", "تلفون")).toBe("tēlifōn");
+    expect(n("sistam-e", "سیستم")).toBe("sīstim-e");
+    expect(n("resturān", "رستوران")).toBe("restorān");
+    expect(n("estāndārd", "استاندارد")).toBe("istāndārd");
+  });
+
+  it("chē for چه is chi; mēgērad is mēgīrad", () => {
+    expect(n("chē", "چه")).toBe("chi");
+    expect(n("mēgērad", "میگیرد")).toBe("mēgīrad");
+  });
+});
+
 describe("helpers", () => {
   it("joins a detached می to its verb so the words align", () => {
     expect(dariWords("ما می رویم.")).toEqual(["ما", "میرویم"]);

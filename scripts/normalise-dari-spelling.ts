@@ -47,6 +47,16 @@
  *  - hub search aliases gain the new spelling and keep the old one, so a
  *    search for "ketab" still finds the page.
  *
+ * The philologist's review of the first sweep found what an `e` → `i` rule
+ * cannot see: words whose Iranian e stood for a, u, ē or ī (ti'dād for
+ * ta'dād, nawīsinda for nawīsanda, dirakht for darakht, rizish for rēzish),
+ * bi-/ba- verb prefixes nothing enforced, loanword variants the exception
+ * list had enshrined, and transliteration in table cells no check read. Those
+ * repairs (`postRules`, `POST_OVERRIDES`, `LOANWORD_SPELLINGS`,
+ * `TEXT_OVERRIDES`, `ALPHABET_NAMES`) judge the finished word, so they hold on
+ * swept content as well as on the Iranian original. A written ی with no long
+ * vowel in the Latin is only reported ("For review"): ē or ī is a judgement.
+ *
  * Idempotent: a second run over its own output changes nothing, and it is
  * meant to be re-run after any content merge.
  *
@@ -63,14 +73,22 @@ import { readFileSync, readdirSync, realpathSync, writeFileSync } from "node:fs"
 import { join } from "node:path";
 
 import {
+  ENGLISH_WORDS,
   LATIN_WORD,
+  cheAsWord,
+  dariWords,
+  iSpelling,
   isEzafeSegment,
+  isNonBuVerb,
   isShortEException,
   isVerb1plStem,
+  medialYehWithoutLongVowel,
+  normDari,
   shortEVowels,
-  cheAsWord,
   verb1plIm,
 } from "../src/lib/lang/prs/translit-check.ts";
+
+export { dariWords, normDari };
 
 // --- rules --------------------------------------------------------------------
 
@@ -82,6 +100,9 @@ export type Rule =
   | "bu-prefix"
   | "majhul-ē"
   | "final-a"
+  | "arabic-a"
+  | "agent-anda"
+  | "loanword"
   | "override";
 
 /**
@@ -116,23 +137,140 @@ export const OVERRIDES: ReadonlyArray<readonly [RegExp, string]> = [
   [/^m[eē]newisem$/u, "mēnawīsēm"],
 ];
 
-/** Common English words the prose pass must never touch, whatever the maps say. */
-export const ENGLISH_WORDS: ReadonlySet<string> = new Set(
-  (
-    "a an the be been me he she we ye her hen men ten den pen hem set sent send see seen " +
-    "the then them these there here were where when whet deh del bed beg bet get jet let " +
-    "led net met pet peg set vet wet yet yes eg ie etc de le se ne mesh mere merit " +
-    "sheer shed shell sher ever even event never seven eleven key keys model modern hotel " +
-    "test web internet general metro opera cricket " +
-    // the grammar term, written as English in the course and hub prose
-    "ezāfa ezafe"
-  ).split(" "),
-);
+/**
+ * Repairs applied to the finished word, after the rules - so they hold both
+ * on the Iranian original and on content the sweep already rewrote. Every
+ * one is a philologist finding (review of the first sweep) where the Iranian
+ * e was not a kasra at all, so `e` → `i` produced a word that looks
+ * conventional and is still wrong. Each pattern matches only its wrong form,
+ * so re-running is a no-op.
+ */
+export const POST_OVERRIDES: ReadonlyArray<readonly [RegExp, string]> = [
+  // R1: Arabic words keep the Arabic a (Tajik замонат, вакolat)
+  [/^[ie]salat$/u, "asālat"],
+  [/^z[ie]mānat/u, "zamānat"],
+  [/^w[ie]kalat$/u, "wakālat"],
+  // R2: the one agent noun written without a hyphen
+  [/^tazāhurkunandagān$/u, "tazāhur-kunandagān"],
+  // R3: Persian words with a or u where Iran says e
+  [/(^|-)(bi|na|mē)?d[ie]rakht/u, "$1$2darakht"],
+  [/^n[ie]mud(?=$|-)/u, "namūd"],
+  [/^ār[ie]zō/u, "ārzō"],
+  [/^munt[ie]q[ie]d/u, "muntaqid"],
+  [/^sarn[ie]v[ie]sht/u, "sarnawisht"],
+  [/^f[ie]r[ie]shta/u, "farishta"],
+  [/^rast[ie]gārī/u, "rastagārī"],
+  [/^[ie]ngāra/u, "angāra"],
+  // R4: a written ی the Latin had lost - majhul ē in these Persian roots
+  [/^b[ie]-rawiya/u, "bē-rawiya"],
+  [/^larza-kh[ie]z$/u, "larza-khēz"],
+  [/^barnāma-r[ie]z[iī](?=$|-)/u, "barnāma-rēzī"],
+  [/^zabāni$/u, "zabānī"],
+  [/^r[ie]z[ie]sh$/u, "rēzish"],
+  [/^p[ie]ch[ie]sh$/u, "pēchish"],
+  [/^and[ie]sha$/u, "andēsha"],
+  [/^haw[eē]l[ie]$/u, "hawēlī"],
+  // R4 check hits in shipped course and seed texts, read one by one: each
+  // is the word's own long vowel elsewhere in the app (nishīn is the stem in
+  // conjugate.ts; ghamgīn, bēshtar, taghyīr in the lexicon)
+  [/^(mē|na|bu)?nish[ie]n(ēd|ad|am|ī|and|ēm)?$/u, "$1nishīn$2"],
+  [/^bush[ie]n$/u, "bushīn"],
+  [/^ghamg[ie]n$/u, "ghamgīn"],
+  [/^b[ie]shtar$/u, "bēshtar"],
+  [/^taghīr$/u, "taghyīr"],
+  // R5: European loans the first sweep treated as Dari
+  [/^[aā]l[ie]l$/u, "ālel"],
+  [/^pānd[ie]mī/u, "pāndemī"],
+  [/^kol[ie]rā$/u, "kōlerā"],
+  // an older error: می‌گیرد is mēgīrad everywhere else (27 times)
+  [/^(na)?mēgērad$/u, "$1mēgīrad"],
+];
+
+/**
+ * One spelling per loanword: the one the lexicon already teaches at the
+ * lowest band. The losing spellings are not in SHORT_E_LOANWORDS, so the
+ * validator flags them if they come back.
+ */
+export const LOANWORD_SPELLINGS: ReadonlyArray<readonly [RegExp, string]> = [
+  [/^t[eēi]l[eēiī]f[oōuū]n/u, "tēlifōn"],
+  [/^s[iī]st[aeiī]m(?!ātīk)/u, "sīstim"],
+  [/^sigr[eiē]t/u, "sigrit"],
+  [/^m[ie]tr$/u, "mitr"],
+  [/^metre$/u, "metra"],
+  [/^rest[ou]rān/u, "restorān"],
+  [/^mod[iī]l(?=$|-)/u, "model"],
+  [/^mud[ie]rn/u, "modern"],
+  [/^hast[ie]l$/u, "hāstel"],
+  [/^kānk[ie]?r[iīeē]t$/u, "kānkrīt"],
+  [/^p[ie]lan$/u, "plān"],
+  [/^arme$/u, "arma"],
+  // the prothetic vowel before s + consonant is i, as in istres
+  [/^es(?=tāndārd|kan|kalar|kler|mirnof|pūtnīk)/u, "is"],
+  [/^isklir/u, "iskler"],
+  [/^iskler[oō]z$/u, "isklerōz"],
+];
 
 /** Endings quoted after a hyphen in prose and tables. */
 const SUFFIX_QUOTES: ReadonlyMap<string, string> = new Map([
   ["emān", "imān"], ["etān", "itān"], ["eshān", "ishān"], ["et", "it"], ["esh", "ish"],
 ]);
+
+/**
+ * Sentence-level repairs where no word rule applies: explanations that were
+ * wrong, or became wrong when the words around them changed. Scoped to one
+ * source and unit (lesson, hub page, lexicon entry); the find string no
+ * longer occurs once applied, so re-running is a no-op.
+ */
+export const TEXT_OVERRIDES: ReadonlyArray<{
+  source: string;
+  unit: string;
+  path?: RegExp;
+  find: string | RegExp;
+  replace: string;
+  /** Also rewrite the unit's Dari fields, which are not sweep fields. */
+  dari?: boolean;
+}> = [
+  // zindagī is zinda + -gī, not an -ī noun (philologist); gl-60 teaches -gī
+  { source: "course", unit: "gl-46", find: ", zenda → zindagī 'life')", replace: ", khush → khushī 'happiness')" },
+  { source: "course", unit: "gl-46", find: ", zinda → zindagī 'life')", replace: ", khush → khushī 'happiness')" },
+  { source: "course", unit: "gl-46", find: ", zenda (alive) → zindagī (life)", replace: ", khush (happy) → khushī (happiness)" },
+  { source: "course", unit: "gl-46", find: ", zinda (alive) → zindagī (life)", replace: ", khush (happy) → khushī (happiness)" },
+  // the table above now reads -imān, -itān, -ishān
+  { source: "hub", unit: "gh-09", find: "the plural ones lose their e:", replace: "the plural ones lose their i:" },
+  // gl-03 drills the spoken چی throughout, so its summary must say chī
+  { source: "course", unit: "gl-03", path: /grammarPointEn$/u, find: "Question words chi (what)", replace: "Question words chī (چی, what; formal written چه is chi)" },
+  // describes Kabul speech, and gh-40 says chi is said chī
+  { source: "hub", unit: "gh-07", find: "usually said chi waqt", replace: "usually said chī waqt" },
+  // ge-61-5: formal پرسید که … with the formal چه, not the spoken چی
+  { source: "course", unit: "gl-61", find: /که چی (?=(?:می‌خواهم|خواستم))/gu, replace: "که چه ", dari: true },
+  { source: "course", unit: "gl-61", find: /\bki chī (?=(?:mēkhāham|khāstam))/gu, replace: "ki chi " },
+  // وگرنه is one word
+  { source: "course", unit: "*", find: /\b([Ww])a gar na\b/gu, replace: "$1agarna" },
+  { source: "hub", unit: "*", find: /\b([Ww])a gar na\b/gu, replace: "$1agarna" },
+  // lx-6366 بیدار شدن: the stem of shudan is shaw (mēshawad)
+  { source: "lexicon", unit: "lx-6366", path: /^presentStemTranslit$/u, find: /^shō$/u, replace: "shaw" },
+];
+
+/**
+ * Alphabet letter names are words a learner says aloud, so the convention
+ * applies: majhul ē (Tajik бе, пе, те), alif with i. ح and ه (`he`,
+ * `he (hutti)`) are left for a native check of the Afghan school names.
+ */
+export const ALPHABET_NAMES: ReadonlyMap<string, string> = new Map([
+  ["alef", "alif"], ["alef maddā", "alif maddā"], ["be", "bē"], ["pe", "pē"], ["te", "tē"],
+  ["se", "sē"], ["che", "chē"], ["khe", "khē"], ["re", "rē"], ["ze", "zē"], ["zhe", "zhē"],
+  ["fe", "fē"],
+]);
+
+/**
+ * Alphabet reading distractors: `penj` was wrong only in spelling convention,
+ * so a learner could rule it out without reading; `gil` for گل is a real
+ * word with the same letters (گِل, mud).
+ */
+export const ALPHABET_CHOICES: ReadonlyArray<{ exercise: string; from: string; to: string }> = [
+  { exercise: "au07-e9", from: "penj", to: "pinj" },
+  { exercise: "au05-e6", from: "gil", to: "gal" },
+];
 
 export interface Ctx {
   /** i-normalised present stems (Latin) keyed to their Dari spelling. */
@@ -149,34 +287,29 @@ export interface TokenResult {
   skip?: string;
 }
 
-const DARI_STRIP = /[‌‍ـً-ٰٟٔ]/g;
-export function normDari(w: string): string {
-  return w.replace(DARI_STRIP, "").replace(/ي/g, "ی").replace(/ك/g, "ک");
-}
-
-/** Dari words, with a detached می/نمی joined back to its verb. */
-export function dariWords(script: string): string[] {
-  const raw = script
-    .split(/[\s.,،؛؟?!:;()«»"\/…]+/u)
-    .map(normDari)
-    .filter((w) => /[؀-ۿ]/.test(w));
-  const out: string[] = [];
-  for (let i = 0; i < raw.length; i++) {
-    if ((raw[i] === "می" || raw[i] === "نمی") && i + 1 < raw.length) {
-      out.push(raw[i] + raw[++i]);
-    } else out.push(raw[i]);
-  }
-  return out;
-}
-
 const i = (s: string) => s.replace(/e/g, "i");
-const yehCount = (d: string) => (d.match(/[یېۍ]/g) ?? []).length;
+
 /**
- * Latin letters that can stand for a written ی. A bare `i` counts: the lexicon
- * often writes the -ī suffix short (`tejāri` for تجاری), and that ی is spoken
- * for, so it must not make the `e` look like a flattened ē.
+ * How many written ی the Latin word does not account for.
+ *
+ * The first version counted every ī, ē, y and bare i anywhere in the word
+ * against every ی anywhere in the Dari. That let the y of an ezafe `-ye` and a
+ * short suffix `-i` "use up" a ی inside the root, so the root's flattened ē
+ * went to i: بی‌رویه became `bi-rawiya`, ریزش `rizish`, حویلی `hawēli`
+ * (philologist, R4). Now the ezafe is dropped, and a medial ی must be matched
+ * by a medial ī/ē/y; only a word-final ی may be matched by a final short i
+ * (`tejāri` for تجاری) or by the ezafe's own ی (`kitāb-hā-ye` for کتابهای).
  */
-const latinYCount = (w: string) => (w.match(/[īēy]|i(?!̄)/g) ?? []).length;
+function unaccountedYehCount(latin: string, dari: string): number {
+  const segs = latin.split("-");
+  const hasEzafe = segs.length > 1 && isEzafeSegment(segs[segs.length - 1], segs.length - 1);
+  const core = segs.filter((s, k) => !isEzafeSegment(s, k)).join("-");
+  const dMedial = (dari.slice(0, -1).match(/[یېۍ]/g) ?? []).length;
+  const dFinal = /[یېۍ]$/u.test(dari) ? 1 : 0;
+  const lMedial = (core.slice(0, -1).match(/[īēy]/g) ?? []).length;
+  const lFinal = /[īēyi]$/u.test(core) || hasEzafe ? 1 : 0;
+  return Math.max(0, dMedial - lMedial) + Math.max(0, dFinal - lFinal);
+}
 
 /**
  * Decide one Latin word. `dari` is its aligned Dari word when the pair aligned,
@@ -198,10 +331,13 @@ export function normaliseToken(token: string, dari: string | undefined, ctx: Ctx
       rules.add("override");
     }
   }
+  // Loanword spellings first too, so the rules never see `sistem` or
+  // `resturān` and turn them into a third variant (`sistēm`, `risturān`).
+  w = applyLoanwordSpellings(w, rules);
 
   // How many written ی the Latin does not account for. Each is a long vowel
   // the Latin flattened; a flattened ē must not become i.
-  let unaccountedYeh = D === undefined ? 0 : yehCount(D) - latinYCount(w);
+  let unaccountedYeh = D === undefined ? 0 : unaccountedYehCount(w, D);
 
   const segs = w.split("-");
   let skip: string | undefined;
@@ -300,12 +436,20 @@ export function normaliseToken(token: string, dari: string | undefined, ctx: Ctx
       rules.add("short-i");
     }
 
+    if (/e/u.test(s) && isShortEException(s)) {
+      segs[k] = s;
+      continue;
+    }
     if (/e/u.test(s)) {
       if (D !== undefined && unaccountedYeh > 0) {
         // The script writes a long vowel the Latin does not show. Exactly one
         // `e` and one missing ی: that e is the flattened ē.
         const bareE = (s.match(/e/g) ?? []).length;
-        if (bareE === 1 && unaccountedYeh === 1) {
+        // A short i inside the word could just as well be the flattened vowel
+        // (پیچش `pichesh`: the ی is the first vowel, not the second), so then
+        // the position is unknown and nothing is restored.
+        const medialBareI = /i(?!̄)./u.test(s);
+        if (bareE === 1 && unaccountedYeh === 1 && !medialBareI) {
           s = s.replace("e", "ē");
           unaccountedYeh--;
           rules.add("majhul-ē");
@@ -322,10 +466,87 @@ export function normaliseToken(token: string, dari: string | undefined, ctx: Ctx
     segs[k] = s;
   }
 
-  let out = segs.join("-");
+  let out = postRules(segs.join("-"), D, ctx, rules);
   if (cap) out = out.charAt(0).toUpperCase() + out.slice(1);
   if (out === nfc) return skip ? { ...same, skip } : same;
   return { out, rules: [...rules], skip };
+}
+
+function applyLoanwordSpellings(word: string, rules: Set<Rule>): string {
+  // per segment: `sīstim-hā`, `sāntī-mitr`, `māltipl-isklerōz`
+  let w = word;
+  for (const [re, rep] of LOANWORD_SPELLINGS) {
+    const next = w
+      .split("-")
+      .map((s, k) => (isEzafeSegment(s, k) ? s : s.replace(re, rep)))
+      .join("-");
+    if (next !== w) {
+      w = next;
+      rules.add("loanword");
+    }
+  }
+  return w;
+}
+
+/**
+ * Rules that judge the finished word, whether or not it had an e: they repair
+ * what an `e` → `i` sweep cannot see, so they run on swept content too.
+ */
+function postRules(word: string, D: string | undefined, ctx: Ctx, rules: Set<Rule>): string {
+  let w = word;
+  const apply = (list: ReadonlyArray<readonly [RegExp, string]>, rule: Rule) => {
+    for (const [re, rep] of list) {
+      const next = w.replace(re, rep);
+      if (next !== w) {
+        w = next;
+        rules.add(rule);
+      }
+    }
+  };
+  apply(POST_OVERRIDES, "override");
+  w = applyLoanwordSpellings(w, rules);
+
+  // چه written with a majhul ē (`chē`) is still chi; the letter name چ `chē`
+  // lives in the alphabet's name field, which never reaches this function.
+  if (w === "chē" && (D === undefined || D === "چه")) {
+    w = "chi";
+    rules.add("chi");
+  }
+
+  if (D !== undefined) {
+    // R1: an Arabic taf'āl masdar keeps its a: تعداد ta'dād, تکرار takrār, تکیه takya.
+    const r1 = w
+      .replace(/^ti'/u, /^تع/u.test(D) ? "ta'" : "ti'")
+      .replace(/^tikr/u, /^تکر/u.test(D) ? "takr" : "tikr")
+      .replace(/^tiky/u, /^تکی/u.test(D) ? "taky" : "tiky");
+    if (r1 !== w) {
+      w = r1;
+      rules.add("arabic-a");
+    }
+
+    // R2: the agent suffix ـنده is -anda (nawīsanda, paranda, kunandagān).
+    // The stem before it must be a real stem on both sides, which is what
+    // keeps زنده `zinda` (ز + نده, the i belongs to the root) out.
+    const segs = w.split("-");
+    const last = segs.length - 1 - (segs.length > 1 && isEzafeSegment(segs[segs.length - 1], segs.length - 1) ? 1 : 0);
+    const m = segs[last].match(/^(.*?)[ieo]nd(a|agān)$/u);
+    const dm = D.match(/^(.*)ند(ه|گان)$/u);
+    if (m && dm && m[1].length >= 2 && dm[1].length >= 2) {
+      // کن is kun (kunanda), never the Iranian kon
+      segs[last] = m[1].replace(/kon$/u, "kun") + "and" + m[2];
+      w = segs.join("-");
+      rules.add("agent-anda");
+    }
+
+    // R6: bi-/ba- subjunctive and imperative prefixes are bu-.
+    if (!/^bu/u.test(w) && isNonBuVerb(w, D, ctx.presentStems, ctx.nonVerbTargets)) {
+      w = "bu" + w.slice(2);
+      rules.add("bu-prefix");
+    }
+  }
+  // again, for an override written against a rule's output (tazāhur-kunandagān)
+  apply(POST_OVERRIDES, "override");
+  return w;
 }
 
 function trailingEzafe(segs: string[]): number {
@@ -499,7 +720,27 @@ function main() {
       }
     }
   }
-  walk("course", loadJson("content/prs/grammar/all.json"), "", "", /^gl-/);
+  const course = loadJson("content/prs/grammar/all.json");
+  // Dari-side sentence overrides: rewrite every string in the named lesson.
+  for (const t of TEXT_OVERRIDES.filter((x) => x.dari && x.source === "course")) {
+    (function rewrite(node: unknown, inUnit: boolean): void {
+      if (Array.isArray(node)) {
+        node.forEach((v, idx) => {
+          if (typeof v === "string" && inUnit) node[idx] = v.replace(t.find, t.replace);
+          else rewrite(v, inUnit);
+        });
+        return;
+      }
+      if (!node || typeof node !== "object") return;
+      const o = node as Record<string, unknown>;
+      const here = inUnit || o.id === t.unit;
+      for (const [k, v] of Object.entries(o)) {
+        if (typeof v === "string" && here) o[k] = v.replace(t.find, t.replace);
+        else if (v && typeof v === "object") rewrite(v, here);
+      }
+    })(course, false);
+  }
+  walk("course", course, "", "", /^gl-/);
   walk("hub", loadJson("content/prs/grammar-hub/entries.json"), "", "", /^gh-/);
   walk("placement", loadJson("content/prs/lexicon/placement-controls.json"), "placement", "", /^$/);
 
@@ -555,6 +796,47 @@ function main() {
     tsEdits.set(rel, spans);
   }
 
+  // --- alphabet course: letter names and reading choices ---
+  const alphabet = loadJson("content/prs/alphabet/course.json");
+  const preEdits: Array<{ source: string; unit: string; path: string; from: string; to: string; rules: Rule[] }> = [];
+  (function walkAlphabet(node: unknown, unit: string) {
+    if (Array.isArray(node)) return node.forEach((v) => walkAlphabet(v, unit));
+    if (!node || typeof node !== "object") return;
+    const o = node as Record<string, unknown>;
+    const id = typeof o.id === "string" ? o.id : unit;
+    if (typeof o.name === "string" && ALPHABET_NAMES.has(o.name)) {
+      preEdits.push({ source: "alphabet", unit: id, path: "name", from: o.name, to: ALPHABET_NAMES.get(o.name)!, rules: ["override"] });
+      o.name = ALPHABET_NAMES.get(o.name);
+    }
+    if (Array.isArray(o.choices)) {
+      for (const c of ALPHABET_CHOICES) {
+        const at = (o.choices as string[]).indexOf(c.from);
+        if (c.exercise === id && at !== -1) {
+          preEdits.push({ source: "alphabet", unit: id, path: "choices", from: c.from, to: c.to, rules: ["override"] });
+          (o.choices as string[])[at] = c.to;
+        }
+      }
+    }
+    for (const v of Object.values(o)) if (v && typeof v === "object") walkAlphabet(v, id);
+  })(alphabet, "");
+  walk("alphabet", alphabet.units ?? alphabet, "", "", /^au-?\d/);
+
+  // --- sentence-level overrides ---
+  for (const t of TEXT_OVERRIDES) {
+    if (t.dari) continue;
+    for (const f of fields) {
+      if (f.source !== t.source || f.kind === "alias") continue;
+      if (t.unit !== "*" && f.unit !== t.unit) continue;
+      if (t.path && !t.path.test(f.path)) continue;
+      const before = f.get();
+      const after = typeof t.find === "string" ? before.split(t.find).join(t.replace) : before.replace(t.find, t.replace);
+      if (after !== before) {
+        preEdits.push({ source: f.source, unit: f.unit, path: f.path, from: before, to: after, rules: ["override"] });
+        f.set(after);
+      }
+    }
+  }
+
   // --- pass 1: decide every paired word with its script ---
   const unitMap = new Map<string, Map<string, string>>(); // unit -> old -> new
   const corpusVotes = new Map<string, Map<string, number>>();
@@ -575,7 +857,7 @@ function main() {
         return;
       }
       const r = normaliseToken(word, dw[idx], ctx);
-      if (r.skip) {
+      if (r.skip && r.out === word.normalize("NFC")) {
         const key = word.toLowerCase();
         const s = skips.get(key) ?? { n: 0, reason: r.skip, example: `${f.source} ${f.unit}: ${text}` };
         s.n++;
@@ -595,6 +877,12 @@ function main() {
     decided.set(f, list);
   }
 
+  // Every transliteration word the structured fields now use, for the fields
+  // with no Dari: a cell word is rewritten only to a spelling this holds.
+  const vocabulary = new Set<string>();
+  for (const list of decided.values()) for (const d of list) vocabulary.add((d.out ?? d.word).toLowerCase());
+  for (const p of presentStems) vocabulary.add(p.latin);
+
   // A word decided one way everywhere it had evidence.
   const corpusMap = new Map<string, string>();
   const conflicts: string[] = [];
@@ -612,6 +900,7 @@ function main() {
   const record = (f: Field, before: string, after: string, from: string, to: string, rules: Rule[], evidence: Edit["evidence"]) =>
     edits.push({ source: f.source, unit: f.unit, path: f.path, from, to, rules, evidence, before, after });
 
+  for (const e of preEdits) edits.push({ ...e, evidence: "none", before: e.from, after: e.to });
   const hasMark = (w: string) => /[āēīōūṭ]/u.test(w.normalize("NFC"));
   const fromUnitOrCorpus = (f: Field, word: string, allowCorpus: boolean): { to: string; evidence: Edit["evidence"] } | undefined => {
     const nfc = word.normalize("NFC");
@@ -643,6 +932,13 @@ function main() {
     }
     const hit = fromUnitOrCorpus(f, word, f.kind !== "prose" || hasMark(nfc));
     if (hit) return hit.to === nfc ? undefined : { to: hit.to, rules: [], evidence: hit.evidence };
+    // A cell or prose word whose i-spelling is a transliteration the app uses:
+    // `gereftan, to take` beside `giriftan`, `dād · deh` beside the stem `dih`.
+    // English never matches, because `never` → `nivir` is no Dari word.
+    if (shortEVowels(nfc).length && vocabulary.has(iSpelling(nfc))) {
+      const to = withCase(nfc, iSpelling(nfc));
+      return { to, rules: ["short-i"], evidence: "corpus" };
+    }
     // A word with a macron no structured field decided (`ketābemān` in a table
     // of endings, `ketāb-e man` on a page about something else). A macron
     // cannot be English, so the script-free rules decide it.
@@ -760,6 +1056,16 @@ function main() {
   for (const [w, s] of [...skips].sort((a, b) => b[1].n - a[1].n)) console.log(`  ${w} ×${s.n} - ${s.reason}\n      ${s.example.slice(0, 140)}`);
   console.log(`\nStill flagged by shortEVowel after this run (${leftovers.size} words):`);
   for (const [w, l] of [...leftovers].sort((a, b) => b[1].n - a[1].n)) console.log(`  ${w} ×${l.n}  ${l.example.slice(0, 140)}`);
+
+  // R4: a written ی with no long vowel in the Latin. Reported, never applied:
+  // whether it was ē or ī is a judgement (tārīk, not tarēk).
+  const review: string[] = [];
+  for (const f of fields) {
+    if (f.kind !== "paired" || !f.script) continue;
+    for (const w of medialYehWithoutLongVowel(f.get(), f.script)) review.push(`${w}  [${f.source} ${f.unit} ${f.path}] ${f.get().slice(0, 90)}`);
+  }
+  console.log(`\nFor review - Dari writes a ی inside the word, the Latin shows no long vowel (${review.length}):`);
+  for (const r of review) console.log(`  ${r}`);
 
   // Validator-shaped counts over the structured fields.
   const measure = (texts: string[]) => ({

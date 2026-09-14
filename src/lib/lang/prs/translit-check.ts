@@ -189,21 +189,34 @@ export function isEzafeSegment(segment: string, index: number): boolean {
  *    left as they are rather than guessed at.
  *  - Foreign proper names: `tehrān`, `hāyzenberg`, `dānte`.
  *
- * Matched per hyphen segment, and a segment may add one of `LOAN_SUFFIXES`
- * (`model-hā`, `internetī`), so an inflected loanword needs no entry of its
- * own. Afghan and Persian names are NOT here: `hirāt`, `afghānistān`, `misr`
- * take the i rule like any other Dari word.
+ * Matched per hyphen segment. An entry of four or more letters may add `-hā`
+ * or `-ī` (`model-hā`, `internetī`); a shorter one matches only whole, so
+ * `tez` (thesis) cannot hide a flattened تیزی.
+ *
+ * One spelling per loanword. The list once held `sistem` and `sīstem`,
+ * `telefōn` beside the band-2 `tēlifōn`, `restorān` and `resturān` - an
+ * exemption per variant is how variants survive. Where the lexicon already
+ * teaches a spelling at a low band the sweep converges on it
+ * (`LOANWORD_SPELLINGS` in the script: tēlifōn, sīstim, sigrit, mitr) and the
+ * losing forms are not listed here, so the validator catches them coming back.
+ *
+ * The prothetic vowel before s + consonant is written `i`, as in `istres`:
+ * `istāndārd`, `iskan`, `isklerōz`, `ispūtnīk`.
+ *
+ * Names of places and people outside Afghanistan keep their own spelling
+ * (`tehrān`); Afghan names take the i rule like any other Dari word
+ * (`hirāt`, `afghānistān`, `misr`).
  */
 export const SHORT_E_LOANWORDS: ReadonlySet<string> = new Set([
   // everyday and technical loans
-  "model", "modern", "mudern", "hotel", "motel", "metro", "metrō", "metr", "metre", "metra",
-  "operā", "kriket", "restorān", "resturān", "general", "integral", "integrāl", "personel",
+  "model", "modern", "hotel", "motel", "metro", "metrō", "metra", "ālel", "pāndemī", "kōlerā",
+  "operā", "kriket", "restorān", "general", "integral", "integrāl", "personel",
   "klaster", "internet", "enterenat", "token", "test", "web", "serwer", "serwis", "serwō",
-  "sistem", "sīstem", "sistemātīk", "sigret", "istres", "estāndārd", "ādres", "rekord",
-  "rezerv", "rizerw", "kānkerit", "kongera", "gālerī", "hāstel", "hastel", "beton", "arme",
-  "pelan", "jet", "chek", "telefōn", "telepōrt", "pārlemān", "fedrāl", "fedrātīw", "nektāyī",
+  "sistemātīk", "isklerōz", "istres", "modernīta", "modernīsm", "ādres", "rekord",
+  "rezerv", "rizerw", "kongera", "gālerī", "hāstel", "beton",
+  "jet", "chek", "telepōrt", "pārlemān", "fedrāl", "fedrātīw", "nektāyī",
   "kodeks", "komedi", "kumedyān", "grotesk", "tez", "santez", "sintez", "wektor", "tensor",
-  "eskalar", "regresyon", "regresiyōn", "potansiyel", "potānsiyel", "difrānsiyel", "pārāmetr",
+  "regresyon", "regresiyōn", "potansiyel", "potānsiyel", "difrānsiyel", "pārāmetr",
   "hāyparpārāmetr", "frekāns", "rezūnāns", "pārsek", "bālestīk", "metrīk", "shātel",
   "māykrōserwis", "grānded", "emprātōrī", "imperiyālīzm", "obzheh", "ate'ism", "diyalektīk",
   "enerzhī", "enerzhi", "inerzhī", "oksīzhen", "demokrāsī", "demokrātīk", "demōgrāfī",
@@ -223,26 +236,21 @@ export const SHORT_E_LOANWORDS: ReadonlySet<string> = new Set([
   "fārmākōzhenōmīk", "sāytōmegālōwērūs", "ādenōwērūs", "retrōwērūs", "enwelōp", "egzon",
   "egzōn", "egzom", "egzōm", "endemik", "endemīk", "endemi", "endemī", "terāpōtīk",
   "pātōzhen", "pātōzhenez", "menenjit", "meninzhīt", "telomer", "telōmer", "krisper",
-  "eskleroz", "esklerōz", "diyābet", "demans", "demāns", "eskan", "epī", "molekūl",
+  "diyābet", "demans", "demāns", "epī", "molekūl",
   "māyelōpātī", "wīremī", "biyōmetrīk", "rezhīm",
   // spelled-out initialisms: dī-en-ē, ār-en-ē, jī-pī-es, em-ār-āy
   "en", "es", "em",
   // foreign proper names
   "tehrān", "dānte", "derīdā", "hāyzenberg", "sherūdīnger", "hīlbert", "kūyper", "cherenkof",
-  "dūpler", "likert", "ārent", "kolmogorof", "esmirnof", "voyējer", "espūtnīk", "hermes",
+  "dūpler", "likert", "ārent", "kolmogorof", "voyējer", "hermes",
   "gerāys", "zhenēw", "sern", "ebōlā", "hersh", "āndrūmedā",
 ]);
-
-/** Endings an exempt loanword may carry without an entry of its own. */
-const LOAN_SUFFIXES = /^(?:ī|ē|hā|ān|am|at|ash|ist|īst|īk|ī-hā)?$/u;
 
 export function isShortEException(segment: string): boolean {
   const s = segment.toLowerCase();
   if (SHORT_E_LOANWORDS.has(s)) return true;
-  for (let cut = s.length - 1; cut >= 3; cut--) {
-    if (SHORT_E_LOANWORDS.has(s.slice(0, cut)) && LOAN_SUFFIXES.test(s.slice(cut))) return true;
-  }
-  return false;
+  const stem = s.replace(/(?:hā|ī)$/u, "");
+  return stem !== s && stem.length >= 4 && SHORT_E_LOANWORDS.has(stem);
 }
 
 /**
@@ -276,12 +284,178 @@ export function shortEVowels(translit: string | undefined): string[] {
   return found;
 }
 
-/** چه is `chi`; `che` as a word is the Iranian reading. */
+/**
+ * چه is `chi`; `che` as a word is the Iranian reading, and `chē` wrongly
+ * makes it majhul. (The alphabet's letter name for چ is `chē`, a different
+ * word in a field this is never run on.)
+ */
 export function cheAsWord(translit: string | undefined): string | null {
   if (!translit) return null;
-  const m = translit.normalize("NFC").match(/(?<![\p{L}\p{M}'’-])che(?![\p{L}\p{M}'’-])/iu);
+  const m = translit.normalize("NFC").match(/(?<![\p{L}\p{M}'’-])ch[eē](?![\p{L}\p{M}'’-])/iu);
   return m ? m[0] : null;
 }
+
+// --- Word alignment and the checks that need the Dari --------------------------
+
+const DARI_STRIP = /[‌‍ـً-ٰٟٔ]/g;
+export function normDari(w: string): string {
+  return w.replace(DARI_STRIP, "").replace(/ي/g, "ی").replace(/ك/g, "ک");
+}
+
+/** Dari words, with a detached می/نمی joined back to its verb. */
+export function dariWords(script: string): string[] {
+  const raw = script
+    .split(/[\s.,،؛؟?!:;()«»"\/…]+/u)
+    .map(normDari)
+    .filter((w) => /[؀-ۿ]/.test(w));
+  const out: string[] = [];
+  for (let i = 0; i < raw.length; i++) {
+    if ((raw[i] === "می" || raw[i] === "نمی") && i + 1 < raw.length) {
+      out.push(raw[i] + raw[++i]);
+    } else out.push(raw[i]);
+  }
+  return out;
+}
+
+/** Latin and Dari words paired by position, or none when the counts differ. */
+export function alignWords(translit: string, script: string): Array<[string, string]> {
+  const latin = [...translit.normalize("NFC").matchAll(LATIN_WORD)].map((m) => m[0]);
+  const dari = dariWords(script);
+  return latin.length === dari.length ? latin.map((w, i) => [w, dari[i]]) : [];
+}
+
+/**
+ * A Dari word writing a ی inside it where its transliteration shows no long
+ * vowel or y at all: ریزش `rizish`, بی‌رویه `bi-rawiya`, حویلی `haweli`.
+ *
+ * ی is written for ī, ē or y and never for a kasra, so the Latin lost a long
+ * vowel. The spelling sweep made several of these: it counted the y of an
+ * ezafe `-ye` and a bare suffix `-i` as covering the root's ی, and sent the
+ * root's e to i. Which long vowel it was cannot be read off the script - ē
+ * in Persian roots (rēzish, pēchish), ī in Arabic patterns (tārīk, nazdīk
+ * went wrong exactly that way in the drafts) - so this is reported for a
+ * person to review and never applied.
+ */
+export function medialYehWithoutLongVowel(translit: string | undefined, script: string | undefined): string[] {
+  if (!translit || !script) return [];
+  const found: string[] = [];
+  for (const [latin, dari] of alignWords(translit, script)) {
+    if (medialYehGap(latin, dari) > 0) found.push(latin);
+  }
+  return found;
+}
+
+/**
+ * How many ی inside the Dari word (not word-final) have no ī, ē or y inside
+ * the Latin word, with the ezafe segment dropped. A final ی is left out on
+ * both sides: it may be the -ī suffix written short or the ezafe's own ی.
+ * Counted, not merely present: بی‌رویه has two, and `bi-rawiya`'s one y
+ * covers only one of them.
+ */
+export function medialYehGap(latin: string, dari: string): number {
+  const core = latin
+    .normalize("NFC")
+    .toLowerCase()
+    .split("-")
+    .filter((s, i) => !isEzafeSegment(s, i))
+    .join("-");
+  // ـایی `-āī`: the glide ی before the final ی is spoken for by that ī
+  const d = normDari(dari).replace(/[یئ]ی$/u, "ی");
+  const dMedial = (d.slice(0, -1).match(/[یېۍ]/g) ?? []).length;
+  const lMedial = (core.slice(0, -1).match(/[īēy]/g) ?? []).length;
+  return Math.max(0, dMedial - lMedial);
+}
+
+/**
+ * The subjunctive/imperative prefix written `bi-`/`ba-` instead of the app's
+ * `bu-`: بدانم `bidānam`, بدهید `badihēd`.
+ *
+ * Only a verb, and only a prefix: the rest after ب must be a present stem in
+ * both scripts with a person ending after it. That keeps `bastand` (a past
+ * of بستن, whose b is the root), `birinj` and `bihtar` out, and `biyā` too
+ * (بیا, spelled بی, is bu + ā). بدهی `bidihī` "debt" is a noun; `nonVerbs`
+ * holds the lexicon's non-verb headwords so it stays exempt.
+ */
+export function nonBuPrefix(
+  translit: string | undefined,
+  script: string | undefined,
+  presentStems: ReadonlyArray<{ latin: string; dari: string }>,
+  nonVerbs?: ReadonlySet<string>,
+): string | null {
+  if (!translit || !script) return null;
+  for (const [latin, dari] of alignWords(translit, script)) {
+    if (isNonBuVerb(latin, dari, presentStems, nonVerbs)) return latin;
+  }
+  return null;
+}
+
+export function isNonBuVerb(
+  latin: string,
+  dari: string,
+  presentStems: ReadonlyArray<{ latin: string; dari: string }>,
+  nonVerbs?: ReadonlySet<string>,
+): boolean {
+  const w = latin.normalize("NFC").toLowerCase();
+  const D = normDari(dari);
+  const m = w.match(/^b[iae](?=[^aeiouāēīōūy'-])(.+)$/u);
+  if (!m || !/^ب(?!ی)/u.test(D) || nonVerbs?.has(D)) return false;
+  // بدهی `bidihī` "debt" and بدهکار `bidihkār` "debtor" are nouns built on
+  // the same letters; a 2sg "you give" is written budihī by then.
+  if (/^bidih(?:ī|i|kār)/u.test(w)) return false;
+  // a 2sg is -ī; a bare final i is a noun (bidihi, bāzi)
+  if (/[^ī]i$/u.test(w)) return false;
+  const rest = m[1].replace(/e/g, "i");
+  return presentStems.some(
+    (st) =>
+      st.latin.length >= 2 &&
+      rest.startsWith(st.latin) &&
+      /^(|am|ī|ad|ēm|ēd|and|īm|īd)$/u.test(rest.slice(st.latin.length)) &&
+      D.slice(1).startsWith(st.dari) &&
+      /^(|م|ی|د|یم|ید|ند)$/u.test(D.slice(1 + st.dari.length)),
+  );
+}
+
+/**
+ * A short e in a field with no Dari of its own - a hub table cell, a pattern
+ * part - where the i-spelling of the same word is a transliteration the app
+ * uses elsewhere: `gereftan, to take` beside `giriftan`. English in the same
+ * cell never matches, because `never` → `nivir` is no Dari word.
+ */
+export function shortEInLooseText(
+  text: string | undefined,
+  vocabulary: ReadonlySet<string>,
+): string | null {
+  if (!text) return null;
+  for (const w of shortEVowels(text)) {
+    if (ENGLISH_WORDS.has(w.toLowerCase())) continue;
+    if (vocabulary.has(iSpelling(w))) return w;
+  }
+  return null;
+}
+
+/** A word with every non-ezafe e written i, lower-cased. */
+export function iSpelling(word: string): string {
+  return word
+    .normalize("NFC")
+    .toLowerCase()
+    .split("-")
+    .map((s, i) => (isEzafeSegment(s, i) ? s : s.replace(/e/g, "i")))
+    .join("-");
+}
+
+/** Common English words that look like transliteration and must never be rewritten. */
+export const ENGLISH_WORDS: ReadonlySet<string> = new Set(
+  (
+    "a an the be been me he she we ye her hen men ten den pen hem set sent send see seen " +
+    "then them these there here were where when whet bed beg bet get jet let " +
+    "led net met pet peg vet wet yet yes eg ie etc de le se ne mesh mere merit " +
+    "sheer shed shell ever even event never seven eleven key keys model modern hotel " +
+    "test web internet general metro opera cricket bid lid din tin sit hit pit fit kit " +
+    "him his is it in if bin sin win shin chin skin " +
+    // the grammar term, written as English in the course and hub prose
+    "ezāfa ezafe"
+  ).split(" "),
+);
 
 /**
  * A 1pl verb ending written `-īm` rather than the Kabuli majhul `-ēm`:
@@ -306,7 +480,12 @@ export function verb1plIm(
   return null;
 }
 
-const COPULA_STEMS: ReadonlySet<string> = new Set(["hast", "nēst", "nist", "būd", "bud"]);
+/**
+ * Stems a 1pl can be built on even when the lexicon gives no stem translit:
+ * the copula, and three the philologist found missed (`bāshīm`: būdan has no
+ * presentStemTranslit; `mānīm`: māndan's is empty; `gōyīm`).
+ */
+const COPULA_STEMS: ReadonlySet<string> = new Set(["hast", "nēst", "nist", "būd", "bud", "bāsh", "mān", "gōy", "bar"]);
 
 export function isVerb1plStem(stem: string, isVerbStem?: (stem: string) => boolean): boolean {
   const s = stem.toLowerCase().replace(/-$/, "");
