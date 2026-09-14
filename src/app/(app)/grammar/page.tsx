@@ -11,7 +11,7 @@ import {
   grammarLessonLevel,
   grammarLessons,
   grammarStartLevel,
-} from "@/lib/content/load";
+} from "@/lib/content/courses";
 import type { GrammarLevel } from "@/lib/content/schema";
 import { useGrammarProgress, useProfile } from "@/lib/queries/hooks";
 import { profile as lang } from "@/lib/lang";

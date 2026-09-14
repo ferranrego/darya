@@ -11,7 +11,7 @@ import { SlideCard } from "@/components/grammar/slide-card";
 import { NotificationPrompt } from "@/components/notification-prompt";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
-import { grammarLessonById, grammarLessons } from "@/lib/content/load";
+import { grammarLessonById, grammarLessons } from "@/lib/content/courses";
 import type { GrammarExercise } from "@/lib/content/schema";
 import { completeGrammarLesson } from "@/lib/db/grammar";
 import { XP, recordActivity } from "@/lib/gamification";

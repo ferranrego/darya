@@ -7,12 +7,12 @@ import { useEffect, useRef } from "react";
 import { profile as lang } from "@/lib/lang";
 import {
   GRAMMAR_LEVEL_ORDER,
-  availableLevels,
   buildJourneyNodes,
   grammarCourses,
   cefrOf,
   grammarStartLevel,
-} from "@/lib/content/load";
+} from "@/lib/content/courses";
+import { availableLevels } from "@/lib/content/levels";
 
 export type MapNodeState = "locked" | "current" | "completed";
 

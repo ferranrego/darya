@@ -2,7 +2,7 @@
 
 import { Check, Lock } from "lucide-react";
 import Link from "next/link";
-import { alphabetCourse } from "@/lib/content/load";
+import { alphabetCourse } from "@/lib/content/courses";
 import { useAlphabetProgress } from "@/lib/queries/hooks";
 import { profile as lang } from "@/lib/lang";
 

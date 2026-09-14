@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState, useEffect } from "react";
 import { Poncha, type PonchaPose } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
-import { entryFor } from "@/lib/lexeme/lookup";
+import { entryFor } from "@/lib/lexeme/entry-for";
 import { segmentForHighlight } from "@/lib/text/highlight";
 import { logErrors, resolveErrors } from "@/lib/db/errors";
 import { useQueryClient } from "@tanstack/react-query";
@@ -35,7 +35,7 @@ import { ProductionCard } from "@/components/review/production-card";
 import { GrammarExercisePlayer } from "@/components/grammar/exercise-player";
 // All lessons, hidden ones included: a card from a lesson taken off the course
 // path is still the learner's own review, and must keep coming back.
-import { allGrammarLessons } from "@/lib/content/load";
+import { allGrammarLessons } from "@/lib/content/courses";
 import { getGrammarCards, saveGrammarReview } from "@/lib/db/grammar";
 import { dueGrammarItems, interleave } from "@/lib/srs/grammar-queue";
 import { defaultInputMode, directionFor, type InputMode } from "@/lib/srs/direction";

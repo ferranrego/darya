@@ -1,4 +1,4 @@
-import { lexiconIndex } from "../content/load";
+import { lexiconIndex } from "../content/lexicon";
 import { tokenize } from "../text";
 
 /**

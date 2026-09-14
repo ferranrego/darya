@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import confetti from "canvas-confetti";
 import { useProfile, useUserWords } from "@/lib/queries/hooks";
-import { levels } from "@/lib/content/load";
+import { levels } from "@/lib/content/levels";
 import { curricularKnownCount } from "@/lib/lexeme/lookup";
 
 export function MilestoneObserver() {

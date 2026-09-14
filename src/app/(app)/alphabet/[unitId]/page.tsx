@@ -10,7 +10,7 @@ import { ExercisePlayer } from "@/components/alphabet/exercise-player";
 import { LetterCard } from "@/components/alphabet/letter-card";
 import { NotificationPrompt } from "@/components/notification-prompt";
 import { Button } from "@/components/ui/button";
-import { alphabetCourse } from "@/lib/content/load";
+import { alphabetCourse } from "@/lib/content/courses";
 import { completeAlphabetUnit } from "@/lib/db/alphabet";
 import { XP, recordActivity } from "@/lib/gamification";
 import { useAlphabetProgress, useGrammarProgress, useInvalidateLearning, useSupabase, useUser } from "@/lib/queries/hooks";

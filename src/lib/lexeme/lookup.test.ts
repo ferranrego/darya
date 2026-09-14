@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { lexicon } from "../content/load.ts";
 import type { LexiconEntry } from "../content/schema.ts";
-import { curricularKnownCount, entryFor, isPersonalId } from "./lookup.ts";
+import { curricularKnownCount, isPersonalId } from "./lookup.ts";
+import { entryFor } from "./entry-for.ts";
 
 /**
  * These guard the rule that makes personal dictionaries safe to put in

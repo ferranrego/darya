@@ -1,7 +1,7 @@
 "use client";
 
 import { JourneyMap } from "@/components/ui/journey-map";
-import { alphabetCourse } from "@/lib/content/load";
+import { alphabetCourse } from "@/lib/content/courses";
 import {
   useAlphabetProgress,
   useGrammarProgress,

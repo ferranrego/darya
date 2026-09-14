@@ -13,7 +13,7 @@ import {
   hubLevels,
   hubMostLookedUp,
 } from "@/lib/content/grammar-hub";
-import { grammarStartLevel } from "@/lib/content/load";
+import { grammarStartLevel } from "@/lib/content/courses";
 import type { GrammarLevel } from "@/lib/content/schema";
 import { searchHub } from "@/lib/grammar-hub/search";
 import { profile as lang } from "@/lib/lang";

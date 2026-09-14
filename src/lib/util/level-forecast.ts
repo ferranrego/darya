@@ -1,4 +1,4 @@
-import { levels } from "@/lib/content/load";
+import { levels } from "@/lib/content/levels";
 import type { ProfileRow } from "@/lib/db/types";
 
 /**

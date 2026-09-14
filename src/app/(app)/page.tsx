@@ -17,8 +17,8 @@ import {
   grammarLessonLevel,
   grammarLessons,
   grammarStartLevel,
-  levelLabel,
-} from "@/lib/content/load";
+} from "@/lib/content/courses";
+import { levelLabel } from "@/lib/content/levels";
 import { getTodayActivity } from "@/lib/db/activity";
 import {
   useAlphabetProgress,

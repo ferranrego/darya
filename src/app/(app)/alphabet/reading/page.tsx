@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { alphabetCourse } from "@/lib/content/load";
+import { alphabetCourse } from "@/lib/content/courses";
 import { useAlphabetProgress } from "@/lib/queries/hooks";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";

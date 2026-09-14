@@ -12,7 +12,7 @@ import {
 import { AnimatePresence, motion } from "motion/react";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
-import { levelLabel, levels } from "@/lib/content/load";
+import { levelLabel, levels } from "@/lib/content/levels";
 import { profile as lang } from "@/lib/lang";
 
 /**

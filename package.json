@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "postbuild": "node scripts/check-bundle.ts",
     "build:lexicon": "node scripts/build-lexicon.ts",
     "build:texts": "node scripts/build-seed-texts.ts",
+    "check:bundle": "node scripts/check-bundle.ts",
     "dev": "next dev",
     "export:schemas": "node scripts/export-schemas.ts",
     "gate": "pnpm typecheck && pnpm lint && pnpm test && pnpm validate:content",

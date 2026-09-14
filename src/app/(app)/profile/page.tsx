@@ -4,7 +4,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Target, BarChart3, BookOpen, Flame, Library, LogOut, Trophy, Bell, Settings2, BookType, Hash, Skull, Send } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { motion, useReducedMotion } from "motion/react";
-import { levelLabel } from "@/lib/content/load";
+import { levelLabel } from "@/lib/content/levels";
 import { updateProfile } from "@/lib/db/profiles";
 import { useProfile, useSignOut, useSupabase, useUser, useUserWords } from "@/lib/queries/hooks";
 import { useSettingsStore, type ReadingFont } from "@/lib/settings-store";

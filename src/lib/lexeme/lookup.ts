@@ -1,5 +1,3 @@
-import { lexemeById } from "../content/load";
-import type { LexiconEntry } from "../content/schema";
 
 /**
  * Resolving a lexeme id that may be personal.
@@ -10,7 +8,7 @@ import type { LexiconEntry } from "../content/schema";
  * `lexemeById` has to decide which it means, and the two questions are genuinely
  * different:
  *
- *  - "show me this word"          -> entryFor, which handles both
+ *  - "show me this word"          -> entryFor (in `entry-for.ts`), which handles both
  *  - "how far through the course
  *     is this learner"            -> curricularKnownCount, which counts only the
  *                                    shipped lexicon
@@ -19,24 +17,14 @@ import type { LexiconEntry } from "../content/schema";
  * docs/PEDAGOGY.md are counts against the frequency-ordered lexicon. Counting a
  * news article's vocabulary toward them promotes a learner for reading one hard
  * article, which is the opposite of what the number means.
+ *
+ * `entryFor` lives next door in `entry-for.ts` because it needs the lexicon,
+ * and this module is imported by the app shell (the milestone observer, Home,
+ * Stats). Importing the lexicon here put a 3.56 MB chunk on every page.
  */
 
 export function isPersonalId(lexemeId: string): boolean {
   return lexemeId.startsWith("ux-");
-}
-
-/**
- * The shipped lexicon always wins.
- *
- * A personal entry is a model's guess at a lemma; a lexicon entry is reviewed
- * content. If a gloss ever mints a `ux-` row for a word that is really in the
- * lexicon, the curated entry must still be what the learner sees.
- */
-export function entryFor(
-  lexemeId: string,
-  personal?: ReadonlyMap<string, LexiconEntry>,
-): LexiconEntry | undefined {
-  return lexemeById(lexemeId) ?? personal?.get(lexemeId);
 }
 
 /**

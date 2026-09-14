@@ -2,8 +2,10 @@
 
 import { useMemo, useState } from "react";
 import { Check } from "lucide-react";
-import { levels, themes } from "@/lib/content/load";
-import { curricularKnownCount, entryFor, isPersonalId } from "@/lib/lexeme/lookup";
+import { levels } from "@/lib/content/levels";
+import { themes } from "@/lib/content/courses";
+import { curricularKnownCount, isPersonalId } from "@/lib/lexeme/lookup";
+import { entryFor } from "@/lib/lexeme/entry-for";
 import { usePersonalLexemeMap, useStickingPoints, useUserWords } from "@/lib/queries/hooks";
 import { KNOWN_STABILITY_DAYS } from "@/lib/srs/scheduler";
 import { profile as langProfile } from "@/lib/lang";

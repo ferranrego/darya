@@ -1,6 +1,6 @@
 import { FREQ_BAND_COUNT, type LexiconEntry } from "./content/schema";
 import { isTeachable } from "./content/teachability";
-import { availableLevels } from "./content/load";
+import { availableLevels } from "./content/levels";
 
 /**
  * Level assessment: sample words across frequency bands, estimate vocabulary

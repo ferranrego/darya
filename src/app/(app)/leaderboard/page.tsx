@@ -3,7 +3,7 @@
 import { useQuery } from "@tanstack/react-query";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Medal, Trophy } from "lucide-react";
-import { levelLabel } from "@/lib/content/load";
+import { levelLabel } from "@/lib/content/levels";
 import { useSupabase, useUser } from "@/lib/queries/hooks";
 
 export default function LeaderboardPage() {

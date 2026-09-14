@@ -21,7 +21,8 @@
  */
 
 import { profile } from "../lang/index.ts";
-import { beginnerSpec, lexiconIndex } from "./load.ts";
+import { beginnerSpec } from "./courses.ts";
+import { lexiconIndex } from "./lexicon.ts";
 import { isTeachable } from "./teachability.ts";
 import type { LexiconEntry } from "./schema.ts";
 

@@ -1,8 +1,8 @@
 "use client";
 
 import { Send } from "lucide-react";
+import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
-import { DraftHints } from "@/components/chat/draft-hints";
 import { MessageBubble } from "@/components/chat/message-bubble";
 import { TutorThread } from "@/components/chat/tutor-thread";
 import { Poncha } from "@/components/poncha";
@@ -20,6 +20,20 @@ import { profile as lang } from "@/lib/lang";
  */
 const BLOCKING: readonly string[] = ["busy", "limit"];
 
+/**
+ * Loaded on the first keystroke, not with the page.
+ *
+ * The hints resolve every token against the lexicon, and a static import put
+ * the whole 3.56 MB lexicon chunk on the Chat tab before anyone had typed a
+ * letter - most visits only read the room. An empty draft never has a hint
+ * (`checkDraft` returns none below one token), so nothing is lost by not
+ * mounting it until there is text.
+ */
+const DraftHints = dynamic(
+  () => import("@/components/chat/draft-hints").then((m) => m.DraftHints),
+  { ssr: false },
+);
+
 export default function ChatPage() {
   const { data: user } = useUser();
   const mode = useSettingsStore((s) => s.chatMode);
@@ -31,6 +45,11 @@ export default function ChatPage() {
   const sendToTutor = useSendTutorMessage();
 
   const [draft, setDraft] = useState("");
+  // Latched rather than `draft !== ""`: once mounted the hints stay mounted, so
+  // clearing the draft on send still plays their exit animation. Adjusted during
+  // render, React's pattern for state derived from a changed value.
+  const [hintsWanted, setHintsWanted] = useState(false);
+  if (draft !== "" && !hintsWanted) setHintsWanted(true);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   /**
@@ -180,7 +199,7 @@ export default function ChatPage() {
 
           {/* Free, instant, provider-free. Shown in both threads: the room is
               somewhere learners write the target language too. */}
-          <DraftHints draft={draft} />
+          {hintsWanted && <DraftHints draft={draft} />}
 
           <div className="flex items-end gap-2">
             <textarea

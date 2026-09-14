@@ -4,7 +4,7 @@ import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import { useAlphabetProgress, useProfile, useUserWords } from "@/lib/queries/hooks";
 import { curricularKnownCount } from "@/lib/lexeme/lookup";
-import { levelLabel, levels } from "@/lib/content/load";
+import { levelLabel, levels } from "@/lib/content/levels";
 import { profile as lang } from "@/lib/lang";
 import { VocabChart } from "./vocab-chart";
 import { ActivityHeatmap } from "./heatmap";

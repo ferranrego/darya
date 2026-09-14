@@ -6,7 +6,8 @@ import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ComprehensionCheck } from "./comprehension-check";
-import { availableLevels, lexicon, lexiconIndex } from "@/lib/content/load";
+import { availableLevels } from "@/lib/content/levels";
+import { lexicon, lexiconIndex } from "@/lib/content/lexicon";
 import { questionsFor, type QuizResult } from "@/lib/content/comprehension";
 import { translitPolicy } from "@/lib/content/reading-policy";
 import { levelVocabulary } from "@/lib/content/level-vocabulary";
@@ -20,7 +21,7 @@ import { markTextRead } from "@/lib/db/texts";
 import { upsertUserWord } from "@/lib/db/words";
 import { XP, recordActivity } from "@/lib/gamification";
 import { profile as langProfile } from "@/lib/lang";
-import { entryFor } from "@/lib/lexeme/lookup";
+import { entryFor } from "@/lib/lexeme/entry-for";
 import type { LexiconIndex } from "@/lib/lang/types";
 import {
   useInvalidateLearning,

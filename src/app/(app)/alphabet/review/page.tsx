@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useState, useMemo, useEffect, useRef } from "react";
 import { AnimatePresence, motion, useMotionValue, useTransform, animate } from "motion/react";
-import { alphabetCourse } from "@/lib/content/load";
+import { alphabetCourse } from "@/lib/content/courses";
 import { useInvalidateLearning, useSupabase, useUser } from "@/lib/queries/hooks";
 import { getUserLetters, updateUserLetter } from "@/lib/db/letters";
 import { Button } from "@/components/ui/button";

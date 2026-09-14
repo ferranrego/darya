@@ -1,4 +1,4 @@
-import { lexiconIndex } from "../content/load";
+import { lexiconIndex } from "../content/lexicon";
 import type { LexiconEntry, LexiconIndexLike } from "./highlight-types.ts";
 import { matchKey, normalize, tokenize } from "./index.ts";
 

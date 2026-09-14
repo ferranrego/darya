@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { Poncha } from "@/components/poncha";
 import { Button } from "@/components/ui/button";
-import { levelLabel } from "@/lib/content/load";
+import { levelLabel } from "@/lib/content/levels";
 
 /**
  * One-time choice offered before the learner's second text: bulk-mark the
