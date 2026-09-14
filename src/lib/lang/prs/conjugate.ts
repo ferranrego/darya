@@ -44,9 +44,26 @@ const PERFECT_ENCLITICS = ["ام", "ای", "ایم", "اید", "اند"];
  */
 const Y_EPENTHESIS_STEMS = new Set(["گو", "جو"]);
 
-function takesEpenthesis(stem: string): boolean {
+/**
+ * Exported so `surface.ts` applies the identical rule when it builds a
+ * single present-tense form for the authoring brief - the two must not
+ * disagree about which stems take the glide (see this file's own header).
+ */
+export function takesEpenthesis(stem: string): boolean {
   return /[اآ]$/.test(stem) || Y_EPENTHESIS_STEMS.has(stem);
 }
+
+/**
+ * Transliteration of a separable prefix (برمی‌گردد، فرومی‌پاشد), keyed the
+ * same way as `VERB_OVERRIDES`' own `prefix` field. Kept beside it rather
+ * than inferred, because a prefix's script and its reading do not share
+ * enough letters to derive one from the other (بر is "bar", not a
+ * transliteration of the letters ب+ر in isolation).
+ */
+export const PREFIX_TRANSLIT: Record<string, string> = {
+  بر: "bar",
+  فرو: "furō",
+};
 
 /** Attach the subjunctive/imperative ب: ب+کن→بکن، ب+آ→بیا، ب+افت→بیفت. */
 function joinB(stem: string): string {
@@ -128,43 +145,55 @@ export function conjugationSurfaces(stems: VerbStems): string[] {
  * infinitive. These take precedence over `presentStem` in the lexicon data and
  * over regex extraction in the enrichment script. `skip: true` blocks present
  * generation entirely (بودن is suppletive - هست/است live in authored variants).
+ *
+ * `presentStemTranslit` takes the same precedence, and for the same reason:
+ * a compound verb's own lexicon entry (دوست داشتن, بیدار شدن) authors its own
+ * copy of the light verb's stem translit, and that copy can drift from the
+ * light verb's own headword entry - بیدار شدن had "shō" where شدن's own
+ * entry has "shaw", which surfaced as mēshōad instead of mēshawad. Sourcing
+ * it from here instead, the same way the script stem already is, means every
+ * compound built on a given light verb reads identically regardless of what
+ * its own entry happens to say.
  */
-export const VERB_OVERRIDES: Record<string, Partial<VerbStems> & { skip?: boolean }> = {
-  [k("کردن")]: { presentStem: "کن" },
-  [k("رفتن")]: { presentStem: "رو" },
-  [k("گفتن")]: { presentStem: "گو" },
-  [k("دیدن")]: { presentStem: "بین" },
-  [k("آمدن")]: { presentStem: "آ" },
-  [k("دادن")]: { presentStem: "ده" },
-  [k("گرفتن")]: { presentStem: "گیر" },
-  [k("خواستن")]: { presentStem: "خواه" },
-  [k("توانستن")]: { presentStem: "توان" },
-  [k("زدن")]: { presentStem: "زن" },
-  [k("خوردن")]: { presentStem: "خور" },
-  [k("شدن")]: { presentStem: "شو" },
-  [k("آوردن")]: { presentStem: "آور" },
-  [k("گذاشتن")]: { presentStem: "گذار" },
-  [k("نشستن")]: { presentStem: "نشین" },
-  [k("ساختن")]: { presentStem: "ساز" },
-  [k("فروختن")]: { presentStem: "فروش" },
-  [k("ریختن")]: { presentStem: "ریز" },
-  [k("یافتن")]: { presentStem: "یاب" },
-  [k("دانستن")]: { presentStem: "دان" },
-  [k("خواندن")]: { presentStem: "خوان" },
-  [k("نوشتن")]: { presentStem: "نویس" },
-  [k("شنیدن")]: { presentStem: "شنو" },
-  [k("گشتن")]: { presentStem: "گرد" },
-  [k("کشیدن")]: { presentStem: "کش" },
-  [k("راندن")]: { presentStem: "ران" },
-  [k("چیدن")]: { presentStem: "چین" },
-  [k("انگاشتن")]: { presentStem: "انگار" },
-  [k("ورزیدن")]: { presentStem: "ورز" },
-  [k("داشتن")]: { presentStem: "دار", noMiPresent: true },
-  [k("برداشتن")]: { presentStem: "دار", prefix: "بر" },
-  [k("برگشتن")]: { presentStem: "گرد", prefix: "بر" },
-  [k("برخاستن")]: { presentStem: "خیز", prefix: "بر" },
-  [k("برانگیختن")]: { presentStem: "انگیز", prefix: "بر" },
-  [k("فروپاشیدن")]: { presentStem: "پاش", prefix: "فرو" },
+export const VERB_OVERRIDES: Record<
+  string,
+  Partial<VerbStems> & { skip?: boolean; presentStemTranslit?: string }
+> = {
+  [k("کردن")]: { presentStem: "کن", presentStemTranslit: "kun" },
+  [k("رفتن")]: { presentStem: "رو", presentStemTranslit: "raw" },
+  [k("گفتن")]: { presentStem: "گو", presentStemTranslit: "gō" },
+  [k("دیدن")]: { presentStem: "بین", presentStemTranslit: "bīn" },
+  [k("آمدن")]: { presentStem: "آ", presentStemTranslit: "ā" },
+  [k("دادن")]: { presentStem: "ده", presentStemTranslit: "deh" },
+  [k("گرفتن")]: { presentStem: "گیر", presentStemTranslit: "gīr" },
+  [k("خواستن")]: { presentStem: "خواه", presentStemTranslit: "khāh" },
+  [k("توانستن")]: { presentStem: "توان", presentStemTranslit: "tawān" },
+  [k("زدن")]: { presentStem: "زن", presentStemTranslit: "zan" },
+  [k("خوردن")]: { presentStem: "خور", presentStemTranslit: "khur" },
+  [k("شدن")]: { presentStem: "شو", presentStemTranslit: "shaw" },
+  [k("آوردن")]: { presentStem: "آور", presentStemTranslit: "āwar" },
+  [k("گذاشتن")]: { presentStem: "گذار", presentStemTranslit: "guzār" },
+  [k("نشستن")]: { presentStem: "نشین", presentStemTranslit: "neshīn" },
+  [k("ساختن")]: { presentStem: "ساز", presentStemTranslit: "sāz" },
+  [k("فروختن")]: { presentStem: "فروش", presentStemTranslit: "furōsh" },
+  [k("ریختن")]: { presentStem: "ریز", presentStemTranslit: "rēz" },
+  [k("یافتن")]: { presentStem: "یاب", presentStemTranslit: "yāb" },
+  [k("دانستن")]: { presentStem: "دان", presentStemTranslit: "dān" },
+  [k("خواندن")]: { presentStem: "خوان", presentStemTranslit: "khān" },
+  [k("نوشتن")]: { presentStem: "نویس", presentStemTranslit: "nawīs" },
+  [k("شنیدن")]: { presentStem: "شنو", presentStemTranslit: "shunaw" },
+  [k("گشتن")]: { presentStem: "گرد", presentStemTranslit: "gard" },
+  [k("کشیدن")]: { presentStem: "کش", presentStemTranslit: "kash" },
+  [k("راندن")]: { presentStem: "ران", presentStemTranslit: "rān" },
+  [k("چیدن")]: { presentStem: "چین", presentStemTranslit: "chīn" },
+  [k("انگاشتن")]: { presentStem: "انگار", presentStemTranslit: "angār" },
+  [k("ورزیدن")]: { presentStem: "ورز", presentStemTranslit: "warz" },
+  [k("داشتن")]: { presentStem: "دار", noMiPresent: true, presentStemTranslit: "dār" },
+  [k("برداشتن")]: { presentStem: "دار", prefix: "بر", presentStemTranslit: "dār" },
+  [k("برگشتن")]: { presentStem: "گرد", prefix: "بر", presentStemTranslit: "gard" },
+  [k("برخاستن")]: { presentStem: "خیز", prefix: "بر", presentStemTranslit: "khēz" },
+  [k("برانگیختن")]: { presentStem: "انگیز", prefix: "بر", presentStemTranslit: "angēz" },
+  [k("فروپاشیدن")]: { presentStem: "پاش", prefix: "فرو", presentStemTranslit: "pāsh" },
   [k("بودن")]: { skip: true },
 };
 

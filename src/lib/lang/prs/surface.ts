@@ -33,7 +33,7 @@
  */
 
 import { ZWNJ } from "./normalize.ts";
-import { derivePastStem, VERB_OVERRIDES } from "./conjugate.ts";
+import { derivePastStem, PREFIX_TRANSLIT, takesEpenthesis, VERB_OVERRIDES } from "./conjugate.ts";
 
 export interface Ezafe {
   /** The head word's script form, with its connector attached if it needs one. */
@@ -101,35 +101,104 @@ const PRESENT_ENDING: Record<Person, { target: string; translit: string }> = {
  * transliteration require an authored entry rather than a guess; a verb
  * missing either throws, the same fail-loudly contract as the Catalan
  * module's unauthored forms.
+ *
+ * Three hazards this used to get wrong, all fixed by reusing exactly what
+ * `conjugate.ts`/`lexicon-index.ts` already know rather than re-deriving it,
+ * so the authoring brief and the resolver can never disagree:
+ *
+ *   - **Compound verbs** (دوست داشتن، بیدار شدن) conjugate their light verb
+ *     only - the carrier (دوست، بیدار) is invariant and must be re-attached.
+ *     `VERB_OVERRIDES` is keyed by the light verb's own infinitive (the last
+ *     space-separated token), the same lookup `buildGeneratedForms` does.
+ *   - **Prefixed verbs** (برگشتن) attach their prefix outside می، not
+ *     replacing it (برمی‌گردد, never *می‌گردد) - `VERB_OVERRIDES`' `prefix`
+ *     field, previously computed as `override` and then never read.
+ *   - **The epenthetic ی** (`takesEpenthesis`, exported from `conjugate.ts`)
+ *     was not applied here at all: گفتن/آمدن's vowel-final stems produced
+ *     می‌گود/می‌آد instead of می‌گوید/می‌آید.
+ *
+ * `VERB_OVERRIDES`' `presentStemTranslit` (script stem AND its reading, both
+ * keyed to the light verb) takes precedence over whatever the calling entry
+ * authored, for the same reason its `presentStem` already did: a compound's
+ * own entry can carry a stale copy of the light verb's data - بیدار شدن's
+ * entry said "shō" where شدن's own entry says "shaw", which is what actually
+ * surfaced (mēshōad) until this was applied. A carrier's own translit still
+ * has to come from the entry (`entry.translit`, split the same way as the
+ * target), since `VERB_OVERRIDES` only ever knows light verbs.
  */
 export function presentIndicative(
-  entry: { target: string; targetNormalized?: string; presentStem?: string; presentStemTranslit?: string },
+  entry: {
+    target: string;
+    targetNormalized?: string;
+    translit?: string | null;
+    presentStem?: string;
+    presentStemTranslit?: string;
+  },
   person: Person
 ): { target: string; translit: string } {
   const infinitive = entry.targetNormalized ?? entry.target;
-  const key = infinitive.replace(/[آأإ]/g, "ا");
+  const parts = infinitive.split(" ");
+  const lightInfinitive = parts.at(-1)!;
+  const carrierTarget = parts.length > 1 ? parts.slice(0, -1).join(" ") : "";
+
+  const key = lightInfinitive.replace(/[آأإ]/g, "ا");
   const override = VERB_OVERRIDES[key];
-  const stemTranslit = entry.presentStemTranslit;
-  if (!entry.presentStem || !stemTranslit) {
-    throw new Error(`presentIndicative("${infinitive}"): no presentStem/translit authored for this verb`);
+  if (override?.skip) {
+    throw new Error(`presentIndicative("${infinitive}"): ${lightInfinitive} is suppletive, has no derivable present`);
   }
-  const past = derivePastStem(infinitive);
+
+  const past = derivePastStem(lightInfinitive);
   if (!past) throw new Error(`presentIndicative("${infinitive}"): not a دن/تن infinitive`);
 
-  const stem = entry.presentStem;
+  const stem = override?.presentStem ?? entry.presentStem;
+  const stemTranslit = override?.presentStemTranslit ?? entry.presentStemTranslit;
+  if (!stem || !stemTranslit) {
+    throw new Error(`presentIndicative("${infinitive}"): no presentStem/translit authored for this verb`);
+  }
+
+  const prefix = override?.prefix ?? "";
+  const prefixTranslit = prefix ? PREFIX_TRANSLIT[prefix] : "";
+  if (prefix && !prefixTranslit) {
+    throw new Error(`presentIndicative("${infinitive}"): no transliteration authored for prefix "${prefix}"`);
+  }
+
+  let carrierTranslit = "";
+  if (carrierTarget) {
+    if (!entry.translit) {
+      throw new Error(`presentIndicative("${infinitive}"): compound verb has no translit authored for its carrier`);
+    }
+    // entry.translit mirrors entry.target's structure - all tokens but the
+    // last (the light verb's own infinitive translit, unused here) are the
+    // carrier's.
+    carrierTranslit = entry.translit.split(" ").slice(0, -1).join(" ");
+  }
+
+  const glide = takesEpenthesis(stem);
+  const stemForm = stem + (glide ? "ی" : "");
+  const stemTranslitForm = stemTranslit + (glide ? "y" : "");
   const ending = PRESENT_ENDING[person];
+
+  const core = override?.noMiPresent
+    ? `${prefix}${stemForm}${ending.target}`
+    : `${prefix}می${ZWNJ}${stemForm}${ending.target}`;
+  const coreTranslit = override?.noMiPresent
+    ? `${prefixTranslit}${stemTranslitForm}${ending.translit}`
+    : `${prefixTranslit}mē${stemTranslitForm}${ending.translit}`;
+
   return {
-    target: `می${ZWNJ}${stem}${ending.target}`,
-    translit: `mē${stemTranslit}${ending.translit}`,
+    target: carrierTarget ? `${carrierTarget} ${core}` : core,
+    translit: carrierTranslit ? `${carrierTranslit} ${coreTranslit}` : coreTranslit,
   };
 }
 
 /**
  * داشتن ("to have") - suppletive in the same way بودن is: its present is
  * bare دارم/داری/دارد, never *می‌دارم (`conjugate.ts`'s own `noMiPresent`
- * flag exists specifically for this verb). `presentIndicative` always
- * prepends می, so داشتن needs its own function rather than a VERB_OVERRIDES
- * entry that function would apply the wrong prefix to.
+ * flag exists specifically for this verb, and `presentIndicative` now
+ * honours it via `VERB_OVERRIDES` - including for compounds built on
+ * داشتن, e.g. دوست داشتن → دوست دارد, never *دوست می‌دارد). This standalone
+ * helper predates that and is kept as the simpler call for the bare verb,
+ * where no compound carrier or lexicon entry is in scope.
  */
 export function presentOfDashtan(person: Person): { target: string; translit: string } {
   const ending = PRESENT_ENDING[person];

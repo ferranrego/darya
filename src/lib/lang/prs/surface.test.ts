@@ -1,5 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { COPULA, ezafe, pluralOf, presentIndicative, presentOfDashtan, withRa } from "./surface.ts";
+import { lexicon } from "../../content/load.ts";
+
+/** Real, authored lexicon entries - the fix must work on what is actually shipped, not a hand-typed stand-in. */
+function entry(id: string) {
+  const e = lexicon.entries.find((x) => x.id === id);
+  if (!e) throw new Error(`fixture entry ${id} missing from the real lexicon - update this test's id`);
+  return e;
+}
 
 /**
  * Every hazard the Dari philology review named for a slot-filling engine,
@@ -78,6 +86,80 @@ describe("presentIndicative", () => {
 
   it("throws for a verb with no authored present stem, rather than guess", () => {
     expect(() => presentIndicative({ target: "خندیدن" }, "3sg")).toThrow(/no presentStem\/translit authored/);
+  });
+
+  // ---------------------------------------------------------------------
+  // Regular verbs - controls. No compound, no prefix, no epenthesis: these
+  // must render exactly as before the fix.
+  // ---------------------------------------------------------------------
+
+  it("کردن (lx-0097): plain present, no glide, no prefix, no carrier", () => {
+    const v = presentIndicative(entry("lx-0097"), "3sg");
+    expect(v.target).toBe("می‌کند");
+    expect(v.translit).toBe("mēkunad");
+  });
+
+  it("رفتن (lx-0089): plain present, و-final stem that does NOT take the glide", () => {
+    const v = presentIndicative(entry("lx-0089"), "3sg");
+    expect(v.target).toBe("می‌رود");
+    expect(v.translit).toBe("mērawad");
+  });
+
+  it("خوردن (lx-0091): conjugates all three persons, real authored stem translit (khur)", () => {
+    const khordan = entry("lx-0091");
+    expect(presentIndicative(khordan, "1sg")).toEqual({ target: "می‌خورم", translit: "mēkhuram" });
+    expect(presentIndicative(khordan, "2sg")).toEqual({ target: "می‌خوری", translit: "mēkhurē" });
+    expect(presentIndicative(khordan, "3sg")).toEqual({ target: "می‌خورد", translit: "mēkhurad" });
+  });
+
+  // ---------------------------------------------------------------------
+  // The glide: vowel-final present stems need the epenthetic ی
+  // (گو/جو take it; رو/شو/دو do not, despite also ending in و).
+  // ---------------------------------------------------------------------
+
+  it("گفتن (lx-0093): گو takes the glide - می‌گوید/mēgōyad, never می‌گود/mēgōad", () => {
+    const v = presentIndicative(entry("lx-0093"), "3sg");
+    expect(v.target).toBe("می‌گوید");
+    expect(v.translit).toBe("mēgōyad");
+  });
+
+  it("آمدن (lx-0090): آ takes the glide - می‌آید/mēāyad, never می‌آد/mēāad", () => {
+    const v = presentIndicative(entry("lx-0090"), "3sg");
+    expect(v.target).toBe("می‌آید");
+    expect(v.translit).toBe("mēāyad");
+  });
+
+  // ---------------------------------------------------------------------
+  // Compound verbs: the carrier (دوست، بیدار) is invariant and must survive;
+  // only the light verb (داشتن، شدن) conjugates.
+  // ---------------------------------------------------------------------
+
+  it("دوست داشتن (lx-6384): compound on داشتن keeps the carrier AND takes no می - دوست دارد, never *می‌دارد", () => {
+    const v = presentIndicative(entry("lx-6384"), "3sg");
+    expect(v.target).toBe("دوست دارد");
+    expect(v.translit).toBe("dōst dārad");
+    expect(v.target).not.toContain("می");
+  });
+
+  it("بیدار شدن (lx-6366): compound on شدن keeps the carrier - بیدار می‌شود/bēdār mēshawad, never mēshōad", () => {
+    // The entry's own presentStemTranslit is authored as "shō" (a stale copy
+    // of شدن's stem translit); VERB_OVERRIDES' own "shaw" must win, the same
+    // way its presentStem already does.
+    const v = presentIndicative(entry("lx-6366"), "3sg");
+    expect(v.target).toBe("بیدار می‌شود");
+    expect(v.translit).toBe("bēdār mēshawad");
+    expect(v.translit).not.toBe("bēdār mēshōad");
+  });
+
+  // ---------------------------------------------------------------------
+  // Prefixed verbs: the prefix attaches outside می، the verb never loses it.
+  // ---------------------------------------------------------------------
+
+  it("برگشتن (lx-6138): the بر prefix survives - برمی‌گردد, never *می‌گردد", () => {
+    const v = presentIndicative(entry("lx-6138"), "3sg");
+    expect(v.target).toBe("برمی‌گردد");
+    expect(v.translit).toBe("barmēgardad");
+    expect(v.target.startsWith("بر")).toBe(true);
   });
 });
 
