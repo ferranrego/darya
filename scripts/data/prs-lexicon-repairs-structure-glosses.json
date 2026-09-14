@@ -1,0 +1,26 @@
+{
+  "lx-6412": {
+    "target": "کفاش",
+    "why": [
+      "philologist-placeholders-4: the everyday Kabul word for a street shoe-mender is موچی (now lx-10044); کفاش is real but more formal, so the card points to it rather than ruling کفاش out"
+    ],
+    "set": {
+      "glossEn": "shoemaker (a street shoe-mender is موچی)"
+    },
+    "was": {
+      "glossEn": "shoemaker"
+    }
+  },
+  "lx-6405": {
+    "target": "نقاش",
+    "why": [
+      "philologist-placeholders-1: in Afghanistan the person who paints walls is a رنگمال (now lx-10046); نقاش is the artist, so the card says which painter it means and where the other one is"
+    ],
+    "set": {
+      "glossEn": "painter (artist; a house painter is رنگمال)"
+    },
+    "was": {
+      "glossEn": "painter (artist)"
+    }
+  }
+}

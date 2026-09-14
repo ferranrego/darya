@@ -270,6 +270,21 @@ describe("resolve against the real lexicon", () => {
     it.each(wrong)("%s does not resolve to %s (%s)", (surface, notTarget) => {
       expect(idx.resolve(surface)?.target).not.toBe(notTarget);
     });
+
+    // Nouns spelled like a verb's present stem. The stem was listed as a
+    // variant of the verb and the noun had no entry, so the variant answered:
+    // جوی "stream" was جستن "to seek", بخش "section" (31 content tokens)
+    // بخشیدن "to forgive", پر "full" پریدن "to jump", دزد "thief" دزدیدن.
+    // Each now has its own entry, and a headword outranks any variant.
+    const stemNouns: Array<[string, string]> = [
+      ["جوی", "جستن"], ["بخش", "بخشیدن"], ["پر", "پریدن"], ["بند", "بستن"],
+      ["مال", "مالیدن"], ["دزد", "دزدیدن"], ["دم", "دمیدن"], ["ترس", "ترسیدن"],
+    ];
+    it.each(stemNouns)("%s is its own noun, not %s", (surface, verb) => {
+      const hit = idx.resolve(surface);
+      expect(hit?.targetNormalized).toBe(surface);
+      expect(hit?.target).not.toBe(verb);
+    });
   });
 
   it("still returns null for actual names", () => {

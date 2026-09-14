@@ -32429,7 +32429,7 @@
       "target": "نقاش",
       "targetNormalized": "نقاش",
       "pos": "noun",
-      "glossEn": "painter (artist)",
+      "glossEn": "painter (artist; a house painter is رنگمال)",
       "tags": [],
       "concreteness": true,
       "translit": "naqqāsh",
@@ -69965,7 +69965,7 @@
       "target": "کفاش",
       "targetNormalized": "کفاش",
       "pos": "noun",
-      "glossEn": "shoemaker",
+      "glossEn": "shoemaker (a street shoe-mender is موچی)",
       "tags": [],
       "concreteness": true,
       "translit": "kaffāsh",
@@ -124557,6 +124557,312 @@
       "id": "lx-10027",
       "targetNormalized": "رادیوتراپی",
       "freqRank": 6500,
+      "freqBand": 10
+    },
+    {
+      "target": "بخش",
+      "translit": "bakhsh",
+      "glossEn": "part, section; department (of a hospital or office)",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "پدرم در بخش عاجل شفاخانه کار می‌کند.",
+      "exampleTranslit": "padaram dar bakhsh-e ājil-e shafākhāna kār mēkunad.",
+      "exampleEn": "My father works in the emergency department of the hospital.",
+      "variants": [],
+      "tags": [
+        "Abstract Concepts"
+      ],
+      "concreteness": false,
+      "id": "lx-10031",
+      "targetNormalized": "بخش",
+      "freqRank": 136,
+      "freqBand": 2
+    },
+    {
+      "target": "پر",
+      "translit": "pur",
+      "glossEn": "full (pur); feather (par, same spelling)",
+      "pos": "adjective",
+      "register": "neutral",
+      "exampleTarget": "گیلاس پر از آب است.",
+      "exampleTranslit": "gīlās pur az āb ast.",
+      "exampleEn": "The glass is full of water.",
+      "variants": [],
+      "tags": [
+        "Descriptions & Qualities"
+      ],
+      "concreteness": true,
+      "id": "lx-10032",
+      "targetNormalized": "پر",
+      "freqRank": 350,
+      "freqBand": 3
+    },
+    {
+      "target": "بند",
+      "translit": "band",
+      "glossEn": "dam; strap, band; clause (grammar); (adj.) closed, blocked",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بند قرغه نزدیک کابل است.",
+      "exampleTranslit": "band-e qargha nazdīk-e kābul ast.",
+      "exampleEn": "Qargha Dam is near Kabul.",
+      "variants": [],
+      "tags": [
+        "Geography & Places"
+      ],
+      "concreteness": true,
+      "id": "lx-10033",
+      "targetNormalized": "بند",
+      "freqRank": 795,
+      "freqBand": 4
+    },
+    {
+      "target": "مال",
+      "translit": "māl",
+      "glossEn": "property, belongings, goods (مال من, mine)",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "این کتاب مال من است.",
+      "exampleTranslit": "īn kitāb māl-e man ast.",
+      "exampleEn": "This book is mine.",
+      "variants": [],
+      "tags": [
+        "Money & Finance"
+      ],
+      "concreteness": false,
+      "id": "lx-10034",
+      "targetNormalized": "مال",
+      "freqRank": 539,
+      "freqBand": 3
+    },
+    {
+      "target": "دزد",
+      "translit": "duzd",
+      "glossEn": "thief",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "دیشب دزد به خانه همسایه ما آمد.",
+      "exampleTranslit": "dēshab duzd ba khāna-ye hamsāya-ye mā āmad.",
+      "exampleEn": "Last night a thief got into our neighbour's house.",
+      "variants": [],
+      "tags": [
+        "Law & Justice"
+      ],
+      "concreteness": true,
+      "id": "lx-10035",
+      "targetNormalized": "دزد",
+      "freqRank": 1189,
+      "freqBand": 5
+    },
+    {
+      "target": "دم",
+      "translit": "dam",
+      "glossEn": "breath; moment; brewing (چای دم کردن, to brew tea)",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "مادرم چای را دم کرد.",
+      "exampleTranslit": "mādaram chāy rā dam kard.",
+      "exampleEn": "My mother brewed the tea.",
+      "variants": [],
+      "tags": [
+        "Food & Drink"
+      ],
+      "concreteness": false,
+      "id": "lx-10036",
+      "targetNormalized": "دم",
+      "freqRank": 560,
+      "freqBand": 3
+    },
+    {
+      "target": "ترس",
+      "translit": "tars",
+      "glossEn": "fear",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "طفل از ترس گریه کرد.",
+      "exampleTranslit": "tifl az tars girya kard.",
+      "exampleEn": "The child cried out of fear.",
+      "variants": [],
+      "tags": [
+        "Emotions & Feelings"
+      ],
+      "concreteness": false,
+      "id": "lx-10037",
+      "targetNormalized": "ترس",
+      "freqRank": 794,
+      "freqBand": 4
+    },
+    {
+      "target": "برنامه",
+      "translit": "barnāma",
+      "glossEn": "plan, schedule; programme (on TV, radio or a computer)",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "برنامه ما برای فردا چیست؟",
+      "exampleTranslit": "barnāma-ye mā barā-ye fardā chīst?",
+      "exampleEn": "What is our plan for tomorrow?",
+      "variants": [],
+      "tags": [
+        "Time & Calendar"
+      ],
+      "concreteness": false,
+      "id": "lx-10038",
+      "targetNormalized": "برنامه",
+      "freqRank": 181,
+      "freqBand": 2
+    },
+    {
+      "target": "جوی",
+      "translit": "jōy",
+      "glossEn": "ditch, stream (a small irrigation channel)",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "آب جوی به باغ ما می‌رود.",
+      "exampleTranslit": "āb-e jōy ba bāgh-e mā mērawad.",
+      "exampleEn": "The water of the stream runs into our garden.",
+      "variants": [],
+      "tags": [
+        "Nature & Environment"
+      ],
+      "concreteness": true,
+      "id": "lx-10039",
+      "targetNormalized": "جوی",
+      "freqRank": 1563,
+      "freqBand": 5
+    },
+    {
+      "target": "فیل‌مرغ",
+      "translit": "fīlmurgh",
+      "glossEn": "turkey (the bird)",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "همسایه ما در حویلی خود فیل‌مرغ دارد.",
+      "exampleTranslit": "hamsāya-ye mā dar hawēlī-ye khud fīlmurgh dārad.",
+      "exampleEn": "Our neighbour keeps turkeys in his yard.",
+      "variants": [
+        "فیلمرغ"
+      ],
+      "tags": [
+        "Animals & Pets"
+      ],
+      "concreteness": true,
+      "id": "lx-10040",
+      "targetNormalized": "فیل‌مرغ",
+      "freqRank": 6499,
+      "freqBand": 10
+    },
+    {
+      "target": "گوگرد",
+      "translit": "gōgird",
+      "glossEn": "match (for lighting a fire); sulphur",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "پدرم با گوگرد بخاری را روشن کرد.",
+      "exampleTranslit": "padaram bā gōgird bukhārī rā rōshan kard.",
+      "exampleEn": "My father lit the stove with a match.",
+      "variants": [],
+      "tags": [
+        "Home & Furniture"
+      ],
+      "concreteness": true,
+      "id": "lx-10041",
+      "targetNormalized": "گوگرد",
+      "freqRank": 2662,
+      "freqBand": 7
+    },
+    {
+      "target": "نسک",
+      "translit": "nask",
+      "glossEn": "lentils",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "نسک و برنج غذای ارزان است.",
+      "exampleTranslit": "nask wa birinj ghazā-ye arzān ast.",
+      "exampleEn": "Lentils and rice are cheap food.",
+      "variants": [],
+      "tags": [
+        "Food & Drink"
+      ],
+      "concreteness": true,
+      "id": "lx-10042",
+      "targetNormalized": "نسک",
+      "freqRank": 3615,
+      "freqBand": 8
+    },
+    {
+      "target": "تهکوی",
+      "translit": "tahkawī",
+      "glossEn": "basement",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "در زمستان کچالو و پیاز را در تهکوی می‌مانیم.",
+      "exampleTranslit": "dar zimistān kachālū wa piyāz rā dar tahkawī mēmānēm.",
+      "exampleEn": "In winter we keep potatoes and onions in the basement.",
+      "variants": [],
+      "tags": [
+        "Home & Furniture"
+      ],
+      "concreteness": true,
+      "id": "lx-10043",
+      "targetNormalized": "تهکوی",
+      "freqRank": 6499,
+      "freqBand": 10
+    },
+    {
+      "target": "موچی",
+      "translit": "mōchī",
+      "glossEn": "cobbler, shoe-mender",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "بوت کهنه‌ام را پیش موچی بردم.",
+      "exampleTranslit": "būt-e kuhna-am rā pēsh-e mōchī burdam.",
+      "exampleEn": "I took my old shoes to the cobbler.",
+      "variants": [],
+      "tags": [
+        "Work & Business"
+      ],
+      "concreteness": true,
+      "id": "lx-10044",
+      "targetNormalized": "موچی",
+      "freqRank": 4105,
+      "freqBand": 8
+    },
+    {
+      "target": "چادری",
+      "translit": "chādarī",
+      "glossEn": "burqa (the full-length Afghan veil)",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "مادرکلانم در بازار چادری می‌پوشد.",
+      "exampleTranslit": "mādarkalānam dar bāzār chādarī mēpōshad.",
+      "exampleEn": "My grandmother wears a burqa at the market.",
+      "variants": [],
+      "tags": [
+        "Clothing & Fashion"
+      ],
+      "concreteness": true,
+      "id": "lx-10045",
+      "targetNormalized": "چادری",
+      "freqRank": 4036,
+      "freqBand": 8
+    },
+    {
+      "target": "رنگمال",
+      "translit": "rangmāl",
+      "glossEn": "house painter, decorator",
+      "pos": "noun",
+      "register": "neutral",
+      "exampleTarget": "رنگمال دیوار خانه را رنگ کرد.",
+      "exampleTranslit": "rangmāl dēwār-e khāna rā rang kard.",
+      "exampleEn": "The painter painted the wall of the house.",
+      "variants": [],
+      "tags": [
+        "Work & Business"
+      ],
+      "concreteness": true,
+      "id": "lx-10046",
+      "targetNormalized": "رنگمال",
+      "freqRank": 6499,
       "freqBand": 10
     }
   ]
