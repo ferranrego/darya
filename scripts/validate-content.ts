@@ -25,7 +25,14 @@ import { isRuledOut, isTeachable } from "../src/lib/content/teachability.ts";
 import { checkShape } from "../src/lib/content/text-checks.ts";
 import { isContentWord } from "../src/lib/content/word-selection.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
-import { bareEzafeAfterVowel, bareShortIEnding, isFlattenedTranslit } from "../src/lib/lang/prs/translit-check.ts";
+import {
+  bareEzafeAfterVowel,
+  bareShortIEnding,
+  cheAsWord,
+  isFlattenedTranslit,
+  shortEVowel,
+  verb1plIm,
+} from "../src/lib/lang/prs/translit-check.ts";
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { insertionOrderSuffix } from "./freq-integrity.ts";
@@ -103,7 +110,29 @@ function checkDariTranslit(
         `Iranian-flattened transliteration (${text})`,
     );
   }
+  /**
+   * The spelling convention (owner's decision on the philologist's advice):
+   * short kasra `i`, چه `chi`, 1pl `-ēm`. Measured when it shipped: 2,359
+   * short-e words, 101 `che` and one 1pl `-im` across these fields before
+   * `scripts/normalise-dari-spelling.ts`, 0 after. The sweep is re-runnable,
+   * so a failure here is fixed by running it, not by hand.
+   */
+  const shortE = shortEVowel(text);
+  if (shortE) {
+    fail(
+      `${subject}: ${field} writes "${shortE}" with a short e - the kasra is i ` +
+        `(kitāb, not ketāb); only the ezafe stays -e/-ye. ` +
+        `Run node scripts/normalise-dari-spelling.ts, or list a real loanword in SHORT_E_LOANWORDS (${text})`,
+    );
+  }
+  const che = cheAsWord(text);
+  if (che) fail(`${subject}: ${field} writes چه as "${che}" - it is chi (${text})`);
+  const im = verb1plIm(text, (s) => verbStems.has(s));
+  if (im) fail(`${subject}: ${field} writes the 1pl verb "${im}" with -īm - it is -ēm (${text})`);
 }
+
+/** Latin past and present stems of the lexicon's verbs, for the 1pl check. */
+const verbStems = new Set<string>(["hast", "nēst", "būd", "bud", "kard", "raft", "khānd", "guft", "dīd"]);
 
 // --- Lexicon ---------------------------------------------------------------
 const lexiconPath = join(root, "lexicon", "lexicon.json");
@@ -114,6 +143,12 @@ if (existsSync(lexiconPath)) {
     fail(`lexicon.json: ${parsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`);
   } else {
     lexicon = parsed.data;
+    for (const e of lexicon.entries) {
+      if (e.pos !== "verb") continue;
+      const last = (e.translit ?? "").normalize("NFC").split(/\s+/).pop() ?? "";
+      if (/an$/u.test(last) && last.length > 4) verbStems.add(last.slice(0, -2));
+      if (e.presentStemTranslit) verbStems.add(e.presentStemTranslit.normalize("NFC"));
+    }
     const ids = new Set<string>();
     const keys = new Map<string, string>();
     const glosses = new Map<string, string>();

@@ -3,9 +3,83 @@ import { describe, expect, it } from "vitest";
 import {
   VERIFIED_SHORT_VOWEL,
   bareShortIEnding,
+  cheAsWord,
   isFlattenedTranslit,
   scriptLongVowelCount,
+  shortEVowel,
+  verb1plIm,
 } from "./translit-check.ts";
+
+/**
+ * The spelling convention: short kasra i, چه chi, 1pl -ēm. Each test that
+ * accepts something pins a way the rule could have been written too broadly:
+ * the ezafe, majhul ē, a loanword, a noun in -īm.
+ */
+describe("short e", () => {
+  it("catches the Iranian kasra", () => {
+    expect(shortEVowel("man ketāb mēkhānam")).toBe("ketāb");
+    expect(shortEVowel("emrōz sard ast")).toBe("emrōz");
+    expect(shortEVowel("ō mu'allem ast")).toBe("mu'allem");
+    expect(shortEVowel("Ketāb-e man")).toBe("Ketāb-e");
+  });
+
+  it("keeps the ezafe, which is its own segment", () => {
+    expect(shortEVowel("kitāb-e man")).toBeNull();
+    expect(shortEVowel("khāna-ye mā")).toBeNull();
+    expect(shortEVowel("kitāb-hā-ye naw-e man")).toBeNull();
+  });
+
+  it("never reads majhul ē as a short e, composed or decomposed", () => {
+    expect(shortEVowel("mā dōst hastēm, nēst, sē, mērawēm")).toBeNull();
+    expect(shortEVowel("mērawēm")).toBeNull();
+  });
+
+  it("still catches a short e hiding in a hyphen compound", () => {
+    expect(shortEVowel("zabān-shenāsi")).toBe("zabān-shenāsi");
+    expect(shortEVowel("kitāb-e ketāb")).toBe("ketāb");
+  });
+
+  it("exempts listed loanwords, inflected too, but not a word that only starts like one", () => {
+    expect(shortEVowel("hotel, model-hā, internetī, sīstem-hā-ye naw")).toBeNull();
+    expect(shortEVowel("testament")).toBe("testament");
+  });
+
+  it("ignores the ezafe quoted as a word of its own", () => {
+    // Run on transliteration only, never on English: "after" would fail.
+    expect(shortEVowel("kitāb + -e = kitāb-e; khāna + -ye = khāna-ye")).toBeNull();
+  });
+});
+
+describe("che", () => {
+  it("catches چه written che, alone or sentence-initial", () => {
+    expect(cheAsWord("ō che mēgōyad?")).toBe("che");
+    expect(cheAsWord("Che gap ast?")).toBe("Che");
+  });
+
+  it("accepts chi, the spoken chī, and words that merely contain che", () => {
+    expect(cheAsWord("ō chi mēgōyad? chī?")).toBeNull();
+    expect(cheAsWord("chek-e musāfiratī")).toBeNull();
+  });
+});
+
+describe("1pl -īm", () => {
+  const stems = new Set(["kard", "raft", "khur"]);
+  const isStem = (s: string) => stems.has(s);
+
+  it("catches a present, a copula and a past written -īm", () => {
+    expect(verb1plIm("mā mērawīm")).toBe("mērawīm");
+    expect(verb1plIm("mā hastīm")).toBe("hastīm");
+    expect(verb1plIm("mā kardīm", isStem)).toBe("kardīm");
+    expect(verb1plIm("mā namēkhurīm")).toBe("namēkhurīm");
+  });
+
+  it("accepts -ēm, and never a noun that ends in -īm", () => {
+    expect(verb1plIm("mā mērawēm, hastēm, kardēm", isStem)).toBeNull();
+    for (const noun of ["taqsīm", "ta'līm", "qadīm", "tasmīm", "iqlīm", "muhim", "mu'allim"]) {
+      expect(verb1plIm(`yak ${noun}`, isStem), noun).toBeNull();
+    }
+  });
+});
 
 /**
  * These four sentences are the whole reason this check is script-aware.

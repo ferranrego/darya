@@ -25,6 +25,39 @@ edit the data files, not the JSON.
 - **IDs (`lx-NNNN`) are stable**: data lines may be edited in place but never
   reordered or deleted once shipped, since per-user SRS state references these IDs.
 
+## Transliteration convention
+
+One spelling app-wide - lexicon, grammar course, Grammar Hub, seed texts,
+alphabet course, level descriptions and `src/lib/lang/prs/`. The app has no
+audio, so the Latin line is the only pronunciation a learner gets.
+
+| Rule | Write | Not |
+|---|---|---|
+| Short kasra is **i** (Dari has three short vowels: a, i, u) | kitāb, bisyār, zindagī, mu'allim, imrōz, shāgird | ketāb, besyār |
+| **Majhul ē/ō** keep their macron and never become i/u | dōst, nēst, sē, mē-, pēsh | dost, se, me-, pesh |
+| The **ezafe** stays -e / -ye (its own hyphen segment) | kitāb-e man, khāna-ye mā | kitāb-i man, khāna-e mā |
+| چه is **chi**, in compounds too; spoken چی is chī | chi, chirā, chitōr | che, cherā, chetōr |
+| که is **ki** (and balki, chunki, agarchi) | ki | ke |
+| 1pl verb ending is majhul **-ēm** | mērawēm, hastēm, kardēm | mērawīm, hastīm |
+| Subjunctive/imperative prefix is **bu-** (biyā before ā) | bubīn, bugīr, budih | bebīn, bi-gīr |
+| 2sg verb ending is **-ī** | hastī, mērawī | hasti |
+| خوب is **khūb**; خوا- is **khā** | khūb, mēkhāham | khōb, mēkhwāham |
+| A final ه is **-a** | khāna, qissa | khāne |
+
+Exempt from the i rule: European loanwords that keep a real e sound (`model`,
+`hotel`, `internet`, the `-lōzhī` sciences) and foreign proper names
+(`tehrān`). They are listed in `SHORT_E_LOANWORDS` in
+`src/lib/lang/prs/translit-check.ts`; add a word there only after checking
+that it really is one. Afghan and Persian names take the rule (`hirāt`,
+`afghānistān`).
+
+`pnpm validate:content` enforces the i, chi and -ēm rules
+(`shortEVowel`, `cheAsWord`, `verb1plIm`). When it fails after new content
+lands, run `node scripts/normalise-dari-spelling.ts --dry`, read the report,
+then `--apply`: it aligns each transliteration with its own Dari line, so it
+can tell a kasra (→ i) from a majhul ē that lost its macron (`mekonad` for
+می‌کند → mēkonad) and re-running it on its own output changes nothing.
+
 ## Expansion
 
 The core set (~280 entries, bands 1–5) is hand-curated. Expansion toward ~2,000
