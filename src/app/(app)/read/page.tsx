@@ -135,7 +135,12 @@ export default function ReadPage() {
    * reading's date.
    */
   const [dismissedReRead, setDismissedReRead] = useState<Set<string>>(new Set());
-  const { data: readWithDocs } = useReadTextsWithDocs();
+  // Only once the pool is known to be empty - the one case `reRead` below can
+  // use them. `unread` is [] while its inputs load too, hence the extra checks.
+  const wantReRead = !!texts && !!userWords && !!known && unread.length === 0;
+  const { data: readWithDocs, isLoading: isLoadingReRead } = useReadTextsWithDocs({
+    enabled: wantReRead,
+  });
   const reRead = useMemo(() => {
     if (unread.length > 0 || !readWithDocs || !userWords) return null;
     const due = new Set(
@@ -227,7 +232,9 @@ export default function ReadPage() {
     }
   }, [unread, activeTextId]);
 
-  if (isLoadingTexts || isLoadingRead || !profile || !readRows || !userWords || (isSyncing && unread.length === 0)) {
+  // `isLoadingReRead` keeps the skeleton up while a possible re-read is still
+  // being fetched, rather than flashing "Writing your next text…" before it.
+  if (isLoadingTexts || isLoadingRead || !profile || !readRows || !userWords || (isSyncing && unread.length === 0) || (wantReRead && isLoadingReRead)) {
     return <ReaderSkeleton />;
   }
 

@@ -200,12 +200,20 @@ export function useReadTexts() {
   });
 }
 
-export function useReadTextsWithDocs() {
+/**
+ * Every text this learner has read, with its full document.
+ *
+ * `enabled` lets a caller defer it: the reader only needs these documents to
+ * offer a re-read when nothing new is waiting, and fetching them on every
+ * visit downloaded the learner's entire reading history - a list that only
+ * grows - to render a text that was usually already chosen.
+ */
+export function useReadTextsWithDocs({ enabled = true }: { enabled?: boolean } = {}) {
   const db = useSupabase();
   const { data: user } = useUser();
   return useQuery({
     queryKey: ["user_texts_docs", user?.id],
-    enabled: !!user,
+    enabled: !!user && enabled,
     queryFn: () => getReadTextsWithDocs(db, user!.id),
   });
 }

@@ -24,7 +24,8 @@ export default function HistoryPage() {
           texts (
             id,
             level,
-            doc
+            titleTarget:doc->>titleTarget,
+            titleEn:doc->>titleEn
           )
         `)
         .eq("user_id", user.id)
@@ -58,8 +59,10 @@ export default function HistoryPage() {
         <div className="flex flex-col gap-4">
           {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           {history?.map((entry: any, index: number) => {
+            // Only the two titles are selected: this list used to download every
+            // read text's full document to show a heading and a date.
             const textData = entry.texts;
-            const doc = textData.doc;
+            const doc = { titleTarget: textData.titleTarget, titleEn: textData.titleEn };
             const date = new Date(entry.read_at).toLocaleDateString();
 
             return (

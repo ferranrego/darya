@@ -1,12 +1,37 @@
 "use client";
 
+import { useQuery } from "@tanstack/react-query";
 import { ChevronLeft, Sparkles, BookOpen } from "lucide-react";
 import Link from "next/link";
-import { useReadTextsWithDocs } from "@/lib/queries/hooks";
+import { useSupabase, useUser } from "@/lib/queries/hooks";
 import { profile as langProfile } from "@/lib/lang";
 
+interface HistoryRow {
+  text_id: string;
+  read_at: string;
+  texts: { theme: string | null; source: "seed" | "generated"; titleTarget: string; titleEn: string } | null;
+}
+
 export default function HistoryPage() {
-  const { data: rows, isLoading } = useReadTextsWithDocs();
+  const db = useSupabase();
+  const { data: user } = useUser();
+  // Titles only. This list used to share the reader's full-document query and
+  // download every text the learner had ever read to show two headings each.
+  // Its own key on purpose: under `user_texts_docs` this trimmed shape would
+  // reach the reader's re-read, which needs the whole document.
+  const { data: rows, isLoading } = useQuery({
+    queryKey: ["user_texts_titles", user?.id],
+    enabled: !!user,
+    queryFn: async () => {
+      const { data, error } = await db
+        .from("user_texts")
+        .select("text_id, read_at, texts(theme, source, titleTarget:doc->>titleTarget, titleEn:doc->>titleEn)")
+        .eq("user_id", user!.id)
+        .order("read_at", { ascending: false });
+      if (error) throw error;
+      return data as unknown as HistoryRow[];
+    },
+  });
 
   return (
     <div className="flex flex-col gap-6 pb-12">
@@ -35,7 +60,7 @@ export default function HistoryPage() {
       ) : (
         <div className="flex flex-col gap-3">
           {rows?.map((row) => {
-            const doc = row.texts?.doc;
+            const doc = row.texts;
             if (!doc) return null;
             return (
               <Link
