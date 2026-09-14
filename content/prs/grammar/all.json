@@ -51,7 +51,7 @@
                   "examples": [
                     {
                       "target": "من شاگرد هستم",
-                      "translit": "man shāgerd hastam",
+                      "translit": "man shāgird hastam",
                       "en": "I am a student.",
                       "highlight": "من"
                     }
@@ -90,13 +90,13 @@
                   "examples": [
                     {
                       "target": "من معلم هستم",
-                      "translit": "man mu'allem hastam",
+                      "translit": "man mu'allim hastam",
                       "en": "I am a teacher.",
                       "highlight": "هستم"
                     },
                     {
                       "target": "تو شاگرد هستی",
-                      "translit": "tu shāgerd hastī",
+                      "translit": "tu shāgird hastī",
                       "en": "You are a student.",
                       "highlight": "هستی"
                     },
@@ -121,7 +121,7 @@
                     },
                     {
                       "target": "شما معلم هستید",
-                      "translit": "shumā mu'allem hastēd",
+                      "translit": "shumā mu'allim hastēd",
                       "en": "You are teachers.",
                       "highlight": "هستید"
                     }
@@ -133,7 +133,7 @@
                   "id": "ge-01-1",
                   "type": "fillBlank",
                   "target": "من شاگرد ___",
-                  "translit": "man shāgerd ___",
+                  "translit": "man shāgird ___",
                   "en": "I am a student.",
                   "answer": {
                     "target": "هستم",
@@ -184,7 +184,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "او معلم است",
-                  "translit": "ō mu'allem ast",
+                  "translit": "ō mu'allim ast",
                   "en": "He is a teacher.",
                   "distractorsEn": [
                     "I am a teacher.",
@@ -195,7 +195,7 @@
                   "id": "ge-01-4",
                   "type": "fillBlank",
                   "target": "ما شاگرد ___",
-                  "translit": "mā shāgerd ___",
+                  "translit": "mā shāgird ___",
                   "en": "We are students.",
                   "answer": {
                     "target": "هستیم",
@@ -227,14 +227,14 @@
                     },
                     {
                       "target": "معلم",
-                      "translit": "mu'allem"
+                      "translit": "mu'allim"
                     },
                     {
                       "target": "هستم",
                       "translit": "hastam"
                     }
                   ],
-                  "translit": "man mu'allem hastam",
+                  "translit": "man mu'allim hastam",
                   "extraWords": [
                     {
                       "target": "هستی",
@@ -274,16 +274,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "آنها شاگرد هستند",
-                  "translit": "ānhā shāgerd hastand",
+                  "translit": "ānhā shāgird hastand",
                   "en": "They are students.",
                   "distractorsTarget": [
                     {
                       "target": "ما شاگرد هستیم",
-                      "translit": "mā shāgerd hastēm"
+                      "translit": "mā shāgird hastēm"
                     },
                     {
                       "target": "او شاگرد است",
-                      "translit": "ō shāgerd ast"
+                      "translit": "ō shāgird ast"
                     }
                   ]
                 },
@@ -291,7 +291,7 @@
                   "id": "ge-01-8",
                   "type": "fillBlank",
                   "target": "شما معلم ___",
-                  "translit": "shumā mu'allem ___",
+                  "translit": "shumā mu'allim ___",
                   "en": "You (plural) are teachers.",
                   "answer": {
                     "target": "هستید",
@@ -328,7 +328,7 @@
                   "examples": [
                     {
                       "target": "این کتاب است",
-                      "translit": "īn ketāb ast",
+                      "translit": "īn kitāb ast",
                       "en": "This is a book.",
                       "highlight": "این"
                     },
@@ -343,7 +343,7 @@
                 {
                   "id": "gs-02-2",
                   "title": "What is this?",
-                  "body": "che (what) + ast squeezes into one word: chīst. It is the question you will ask most as a learner.",
+                  "body": "chi (what) + ast squeezes into one word: chīst. It is the question you will ask most as a learner.",
                   "examples": [
                     {
                       "target": "این چیست؟",
@@ -365,7 +365,7 @@
                   "examples": [
                     {
                       "target": "کتاب اینجا است",
-                      "translit": "ketāb īnjā ast",
+                      "translit": "kitāb īnjā ast",
                       "en": "The book is here.",
                       "highlight": "اینجا"
                     },
@@ -384,7 +384,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "این کتاب است",
-                  "translit": "īn ketāb ast",
+                  "translit": "īn kitāb ast",
                   "en": "This is a book.",
                   "distractorsEn": [
                     "That is a book.",
@@ -473,7 +473,7 @@
                     },
                     {
                       "target": "این کتاب است",
-                      "translit": "īn ketāb ast"
+                      "translit": "īn kitāb ast"
                     }
                   ]
                 },
@@ -532,7 +532,7 @@
               "title": "Asking questions",
               "subtitle": "Question words, yes and no",
               "grammarPoint": "question-words",
-              "grammarPointEn": "Question words che (what), kī (who), kujā (where), chetōr (how), chand (how many); yes/no questions are made by intonation alone and answered with balē (yes) or na (no).",
+              "grammarPointEn": "Question words chi (what), kī (who), kujā (where), chitōr (how), chand (how many); yes/no questions are made by intonation alone and answered with balē (yes) or na (no).",
               "slides": [
                 {
                   "id": "gs-03-1",
@@ -540,7 +540,7 @@
                   "body": "Five words unlock most beginner questions. They sit where the answer would go - the verb still comes last.",
                   "table": [
                     [
-                      "che - چی",
+                      "chī - چی",
                       "what"
                     ],
                     [
@@ -552,7 +552,7 @@
                       "where"
                     ],
                     [
-                      "chetōr - چطور",
+                      "chitōr - چطور",
                       "how"
                     ],
                     [
@@ -582,12 +582,12 @@
                   "examples": [
                     {
                       "target": "تو معلم هستی؟",
-                      "translit": "tu mu'allem hastī?",
+                      "translit": "tu mu'allim hastī?",
                       "en": "Are you a teacher?"
                     },
                     {
                       "target": "بلی، من معلم هستم",
-                      "translit": "balē, man mu'allem hastam",
+                      "translit": "balē, man mu'allim hastam",
                       "en": "Yes, I am a teacher.",
                       "highlight": "بلی"
                     }
@@ -608,7 +608,7 @@
                   "distractors": [
                     {
                       "target": "چی",
-                      "translit": "che"
+                      "translit": "chī"
                     },
                     {
                       "target": "کی",
@@ -636,7 +636,7 @@
                   "en": "What is this?",
                   "answer": {
                     "target": "چی",
-                    "translit": "che"
+                    "translit": "chī"
                   },
                   "distractors": [
                     {
@@ -671,7 +671,7 @@
                   "extraWords": [
                     {
                       "target": "چی",
-                      "translit": "che"
+                      "translit": "chī"
                     }
                   ]
                 },
@@ -680,7 +680,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "تو چطور هستی؟",
-                  "translit": "tu chetōr hastī?",
+                  "translit": "tu chitōr hastī?",
                   "en": "How are you?",
                   "distractorsTarget": [
                     {
@@ -705,7 +705,7 @@
                     },
                     {
                       "target": "چطور",
-                      "translit": "chetōr",
+                      "translit": "chitōr",
                       "en": "how"
                     },
                     {
@@ -724,7 +724,7 @@
                   "id": "ge-03-7",
                   "type": "fillBlank",
                   "target": "___، من شاگرد هستم",
-                  "translit": "___, man shāgerd hastam",
+                  "translit": "___, man shāgird hastam",
                   "en": "Yes, I am a student.",
                   "answer": {
                     "target": "بلی",
@@ -737,7 +737,7 @@
                     },
                     {
                       "target": "چطور",
-                      "translit": "chetōr"
+                      "translit": "chitōr"
                     }
                   ]
                 }
@@ -755,7 +755,7 @@
               "title": "More than one",
               "subtitle": "Make plurals with -hā",
               "grammarPoint": "plural-ha",
-              "grammarPointEn": "Plural nouns with the suffix -hā (ketāb → ketāb-hā); after a number the noun stays singular (dū ketāb, never dū ketāb-hā).",
+              "grammarPointEn": "Plural nouns with the suffix -hā (kitāb → kitāb-hā); after a number the noun stays singular (dū kitāb, never dū kitāb-hā).",
               "slides": [
                 {
                   "id": "gs-04-1",
@@ -764,7 +764,7 @@
                   "examples": [
                     {
                       "target": "کتاب‌ها اینجا هستند",
-                      "translit": "ketāb-hā īnjā hastand",
+                      "translit": "kitāb-hā īnjā hastand",
                       "en": "The books are here.",
                       "highlight": "کتاب‌ها"
                     },
@@ -783,13 +783,13 @@
                   "examples": [
                     {
                       "target": "دو کتاب اینجا است",
-                      "translit": "dū ketāb īnjā ast",
+                      "translit": "dū kitāb īnjā ast",
                       "en": "Two books are here.",
                       "highlight": "دو کتاب"
                     },
                     {
                       "target": "سه شاگرد اینجا هستند",
-                      "translit": "sē shāgerd īnjā hastand",
+                      "translit": "sē shāgird īnjā hastand",
                       "en": "Three students are here.",
                       "highlight": "سه شاگرد"
                     }
@@ -805,12 +805,12 @@
                   "en": "The books are here.",
                   "answer": {
                     "target": "کتاب‌ها",
-                    "translit": "ketāb-hā"
+                    "translit": "kitāb-hā"
                   },
                   "distractors": [
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "خانه",
@@ -838,12 +838,12 @@
                   "en": "Two books are here.",
                   "answer": {
                     "target": "کتاب",
-                    "translit": "ketāb"
+                    "translit": "kitāb"
                   },
                   "distractors": [
                     {
                       "target": "کتاب‌ها",
-                      "translit": "ketāb-hā"
+                      "translit": "kitāb-hā"
                     },
                     {
                       "target": "قلم‌ها",
@@ -859,7 +859,7 @@
                   "words": [
                     {
                       "target": "شاگردها",
-                      "translit": "shāgerd-hā"
+                      "translit": "shāgird-hā"
                     },
                     {
                       "target": "اینجا",
@@ -870,7 +870,7 @@
                       "translit": "hastand"
                     }
                   ],
-                  "translit": "shāgerd-hā īnjā hastand",
+                  "translit": "shāgird-hā īnjā hastand",
                   "extraWords": [
                     {
                       "target": "است",
@@ -885,12 +885,12 @@
                   "pairs": [
                     {
                       "target": "کتاب",
-                      "translit": "ketāb",
+                      "translit": "kitāb",
                       "en": "book"
                     },
                     {
                       "target": "کتاب‌ها",
-                      "translit": "ketāb-hā",
+                      "translit": "kitāb-hā",
                       "en": "books"
                     },
                     {
@@ -919,7 +919,7 @@
                     },
                     {
                       "target": "پسرها اینجا هستند",
-                      "translit": "pesar-hā īnjā hastand"
+                      "translit": "pisar-hā īnjā hastand"
                     }
                   ]
                 },
@@ -951,16 +951,16 @@
               "title": "My, your, the teacher's",
               "subtitle": "Link owner and thing with ezāfa",
               "grammarPoint": "ezafa-possession",
-              "grammarPointEn": "Possession with the ezāfa linker -e / -ye: ketāb-e man (my book), khāna-ye mā (our house); the linker is spoken but usually not written in script.",
+              "grammarPointEn": "Possession with the ezāfa linker -e / -ye: kitāb-e man (my book), khāna-ye mā (our house); the linker is spoken but usually not written in script.",
               "slides": [
                 {
                   "id": "gs-05-1",
                   "title": "The invisible -e",
-                  "body": "'My book' is ketāb-e man - literally 'book of me'. The little -e (called ezāfa) is spoken but usually not written. After a vowel it becomes -ye.",
+                  "body": "'My book' is kitāb-e man - literally 'book of me'. The little -e (called ezāfa) is spoken but usually not written. After a vowel it becomes -ye.",
                   "examples": [
                     {
                       "target": "این کتاب من است",
-                      "translit": "īn ketāb-e man ast",
+                      "translit": "īn kitāb-e man ast",
                       "en": "This is my book.",
                       "highlight": "کتاب من"
                     },
@@ -985,7 +985,7 @@
                     },
                     {
                       "target": "کتاب معلم اینجا است",
-                      "translit": "ketāb-e mu'allem īnjā ast",
+                      "translit": "kitāb-e mu'allim īnjā ast",
                       "en": "The teacher's book is here.",
                       "highlight": "کتاب معلم"
                     }
@@ -998,7 +998,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "این کتاب من است",
-                  "translit": "īn ketāb-e man ast",
+                  "translit": "īn kitāb-e man ast",
                   "en": "This is my book.",
                   "distractorsEn": [
                     "This is your book.",
@@ -1088,12 +1088,12 @@
                   "pairs": [
                     {
                       "target": "کتاب من",
-                      "translit": "ketāb-e man",
+                      "translit": "kitāb-e man",
                       "en": "my book"
                     },
                     {
                       "target": "کتاب تو",
-                      "translit": "ketāb-e tu",
+                      "translit": "kitāb-e tu",
                       "en": "your book"
                     },
                     {
@@ -1113,16 +1113,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "کتاب معلم اینجا است",
-                  "translit": "ketāb-e mu'allem īnjā ast",
+                  "translit": "kitāb-e mu'allim īnjā ast",
                   "en": "The teacher's book is here.",
                   "distractorsTarget": [
                     {
                       "target": "کتاب من اینجا است",
-                      "translit": "ketāb-e man īnjā ast"
+                      "translit": "kitāb-e man īnjā ast"
                     },
                     {
                       "target": "معلم اینجا است",
-                      "translit": "mu'allem īnjā ast"
+                      "translit": "mu'allim īnjā ast"
                     }
                   ]
                 },
@@ -1169,7 +1169,7 @@
                     },
                     {
                       "target": "کتاب نو اینجا است",
-                      "translit": "ketāb-e naw īnjā ast",
+                      "translit": "kitāb-e naw īnjā ast",
                       "en": "The new book is here.",
                       "highlight": "کتاب نو"
                     }
@@ -1291,7 +1291,7 @@
                     },
                     {
                       "target": "کتاب نو",
-                      "translit": "ketāb-e naw",
+                      "translit": "kitāb-e naw",
                       "en": "new book"
                     },
                     {
@@ -1400,7 +1400,7 @@
                     },
                     {
                       "target": "او از افغانستان است",
-                      "translit": "ō az afghānestān ast",
+                      "translit": "ō az afghānistān ast",
                       "en": "He is from Afghanistan.",
                       "highlight": "از"
                     }
@@ -1451,7 +1451,7 @@
                   "id": "ge-07-2",
                   "type": "fillBlank",
                   "target": "او ___ افغانستان است",
-                  "translit": "ō ___ afghānestān ast",
+                  "translit": "ō ___ afghānistān ast",
                   "en": "He is from Afghanistan.",
                   "answer": {
                     "target": "از",
@@ -1583,7 +1583,7 @@
               "title": "There is, there isn't",
               "subtitle": "hast and nēst - saying what exists",
               "grammarPoint": "existential-hast",
-              "grammarPointEn": "Existential hast (there is) and nēst (there isn't) versus linking ast (is): dar khāna yak ketāb hast (there is a book in the house).",
+              "grammarPointEn": "Existential hast (there is) and nēst (there isn't) versus linking ast (is): dar khāna yak kitāb hast (there is a book in the house).",
               "slides": [
                 {
                   "id": "gs-08-1",
@@ -1592,7 +1592,7 @@
                   "examples": [
                     {
                       "target": "در خانه یک کتاب هست",
-                      "translit": "dar khāna yak ketāb hast",
+                      "translit": "dar khāna yak kitāb hast",
                       "en": "There is a book in the house.",
                       "highlight": "هست"
                     },
@@ -1629,7 +1629,7 @@
                   "id": "ge-08-1",
                   "type": "fillBlank",
                   "target": "در خانه یک کتاب ___",
-                  "translit": "dar khāna yak ketāb ___",
+                  "translit": "dar khāna yak kitāb ___",
                   "en": "There is a book in the house.",
                   "answer": {
                     "target": "هست",
@@ -1672,7 +1672,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "در مکتب معلم هست",
-                  "translit": "dar maktab mu'allem hast",
+                  "translit": "dar maktab mu'allim hast",
                   "en": "There is a teacher at the school.",
                   "distractorsEn": [
                     "There is a student at the school.",
@@ -1969,7 +1969,7 @@
                   "distractors": [
                     {
                       "target": "چی",
-                      "translit": "che"
+                      "translit": "chī"
                     },
                     {
                       "target": "کجا",
@@ -2009,16 +2009,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "من پنج کتاب دارم",
-                  "translit": "man panj ketāb dāram",
+                  "translit": "man panj kitāb dāram",
                   "en": "I have five books.",
                   "distractorsTarget": [
                     {
                       "target": "من پنج کتاب‌ها دارم",
-                      "translit": "man panj ketāb-hā dāram"
+                      "translit": "man panj kitāb-hā dāram"
                     },
                     {
                       "target": "من چهار کتاب دارم",
-                      "translit": "man chār ketāb dāram"
+                      "translit": "man chār kitāb dāram"
                     }
                   ]
                 },
@@ -2296,7 +2296,7 @@
               "title": "The little word rā",
               "subtitle": "Mark the thing you act on",
               "grammarPoint": "object-ra",
-              "grammarPointEn": "The object marker rā after definite direct objects: man ketāb rā mēkhānam (I read THE book) versus man ketāb mēkhānam (I read books in general).",
+              "grammarPointEn": "The object marker rā after definite direct objects: man kitāb rā mēkhānam (I read THE book) versus man kitāb mēkhānam (I read books in general).",
               "slides": [
                 {
                   "id": "gs-11-1",
@@ -2305,13 +2305,13 @@
                   "examples": [
                     {
                       "target": "من کتاب را می‌خوانم",
-                      "translit": "man ketāb rā mēkhānam",
+                      "translit": "man kitāb rā mēkhānam",
                       "en": "I read the book.",
                       "highlight": "را"
                     },
                     {
                       "target": "من کتاب می‌خوانم",
-                      "translit": "man ketāb mēkhānam",
+                      "translit": "man kitāb mēkhānam",
                       "en": "I read books."
                     }
                   ]
@@ -2335,7 +2335,7 @@
                   "id": "ge-11-1",
                   "type": "fillBlank",
                   "target": "من کتاب ___ می‌خوانم",
-                  "translit": "man ketāb ___ mēkhānam",
+                  "translit": "man kitāb ___ mēkhānam",
                   "en": "I read the book.",
                   "answer": {
                     "target": "را",
@@ -2375,7 +2375,7 @@
                     },
                     {
                       "target": "معلم",
-                      "translit": "mu'allem"
+                      "translit": "mu'allim"
                     },
                     {
                       "target": "را",
@@ -2386,7 +2386,7 @@
                       "translit": "mēbīnam"
                     }
                   ],
-                  "translit": "man mu'allem rā mēbīnam",
+                  "translit": "man mu'allim rā mēbīnam",
                   "extraWords": [
                     {
                       "target": "و",
@@ -2420,16 +2420,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او کتاب را می‌خواند",
-                  "translit": "ō ketāb rā mēkhānad",
+                  "translit": "ō kitāb rā mēkhānad",
                   "en": "She reads the book.",
                   "distractorsTarget": [
                     {
                       "target": "او کتاب می‌خواند",
-                      "translit": "ō ketāb mēkhānad"
+                      "translit": "ō kitāb mēkhānad"
                     },
                     {
                       "target": "او کتاب را خواند",
-                      "translit": "ō ketāb rā khānd"
+                      "translit": "ō kitāb rā khānd"
                     }
                   ]
                 },
@@ -2549,7 +2549,7 @@
                   "examples": [
                     {
                       "target": "من معلم نیستم",
-                      "translit": "man mu'allem nēstam",
+                      "translit": "man mu'allim nēstam",
                       "en": "I am not a teacher.",
                       "highlight": "نیستم"
                     }
@@ -2595,7 +2595,7 @@
                   "id": "ge-12-2",
                   "type": "fillBlank",
                   "target": "او معلم ___",
-                  "translit": "ō mu'allem ___",
+                  "translit": "ō mu'allim ___",
                   "en": "He is not a teacher.",
                   "answer": {
                     "target": "نیست",
@@ -2656,14 +2656,14 @@
                     },
                     {
                       "target": "شاگرد",
-                      "translit": "shāgerd"
+                      "translit": "shāgird"
                     },
                     {
                       "target": "نیستم",
                       "translit": "nēstam"
                     }
                   ],
-                  "translit": "man shāgerd nēstam",
+                  "translit": "man shāgird nēstam",
                   "extraWords": [
                     {
                       "target": "هستم",
@@ -2730,7 +2730,7 @@
               "title": "Yesterday I went",
               "subtitle": "The simple past",
               "grammarPoint": "simple-past",
-              "grammarPointEn": "Simple past: past stem (infinitive minus -an) + endings -am, -ī, nothing, -ēm, -ēd, -and: raftam, raft, raftēm; time words dīrōz (yesterday), emrōz (today).",
+              "grammarPointEn": "Simple past: past stem (infinitive minus -an) + endings -am, -ī, nothing, -ēm, -ēd, -and: raftam, raft, raftēm; time words dīrōz (yesterday), imrōz (today).",
               "slides": [
                 {
                   "id": "gs-13-1",
@@ -2774,7 +2774,7 @@
                 {
                   "id": "gs-13-2",
                   "title": "Time words",
-                  "body": "dīrōz - yesterday, emrōz - today, fardā - tomorrow. They usually open the sentence.",
+                  "body": "dīrōz - yesterday, imrōz - today, fardā - tomorrow. They usually open the sentence.",
                   "examples": [
                     {
                       "target": "دیروز کار کردم",
@@ -2784,7 +2784,7 @@
                     },
                     {
                       "target": "او امروز آمد",
-                      "translit": "ō emrōz āmad",
+                      "translit": "ō imrōz āmad",
                       "en": "He came today.",
                       "highlight": "آمد"
                     }
@@ -2857,7 +2857,7 @@
                     },
                     {
                       "target": "معلم",
-                      "translit": "mu'allem"
+                      "translit": "mu'allim"
                     },
                     {
                       "target": "را",
@@ -2868,7 +2868,7 @@
                       "translit": "dīdam"
                     }
                   ],
-                  "translit": "man mu'allem rā dīdam",
+                  "translit": "man mu'allim rā dīdam",
                   "extraWords": [
                     {
                       "target": "دید",
@@ -2977,7 +2977,7 @@
                   "examples": [
                     {
                       "target": "من دری می‌خوانم و دیروز یک کتاب خواندم",
-                      "translit": "man darī mēkhānam wa dīrōz yak ketāb khāndam",
+                      "translit": "man darī mēkhānam wa dīrōz yak kitāb khāndam",
                       "en": "I study Dari, and yesterday I read a book."
                     }
                   ]
@@ -3031,7 +3031,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "ما آن کتاب را نخواندیم",
-                  "translit": "mā ān ketāb rā nakhāndēm",
+                  "translit": "mā ān kitāb rā nakhāndēm",
                   "en": "We didn't read that book.",
                   "distractorsEn": [
                     "We read that book.",
@@ -3186,7 +3186,7 @@
                   "examples": [
                     {
                       "target": "کتاب خوب",
-                      "translit": "ketāb-e khūb",
+                      "translit": "kitāb-e khūb",
                       "en": "good book",
                       "highlight": "کتاب"
                     }
@@ -3234,7 +3234,7 @@
                   "words": [
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "خوب",
@@ -3245,7 +3245,7 @@
                       "translit": "man"
                     }
                   ],
-                  "translit": "ketāb-e khūb-e man",
+                  "translit": "kitāb-e khūb-e man",
                   "extraWords": []
                 },
                 {
@@ -3255,17 +3255,17 @@
                   "pairs": [
                     {
                       "target": "کتاب من",
-                      "translit": "ketāb-e man",
+                      "translit": "kitāb-e man",
                       "en": "my book"
                     },
                     {
                       "target": "کتاب تو",
-                      "translit": "ketāb-e tu",
+                      "translit": "kitāb-e tu",
                       "en": "your book"
                     },
                     {
                       "target": "کتاب او",
-                      "translit": "ketāb-e ō",
+                      "translit": "kitāb-e ō",
                       "en": "his book"
                     }
                   ]
@@ -3371,7 +3371,7 @@
                   "id": "ge-15-1",
                   "type": "fillBlank",
                   "target": "این کتاب از آن کتاب ___ است",
-                  "translit": "īn ketāb az ān ketāb ___ ast",
+                  "translit": "īn kitāb az ān kitāb ___ ast",
                   "en": "This book is newer than that book.",
                   "answer": {
                     "target": "نوتر",
@@ -3613,14 +3613,14 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "است",
                       "translit": "ast"
                     }
                   ],
-                  "translit": "īn nawtarīn ketāb ast",
+                  "translit": "īn nawtarīn kitāb ast",
                   "extraWords": [
                     {
                       "target": "نوتر",
@@ -3668,16 +3668,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او بهترین شاگرد است",
-                  "translit": "ō bihtarīn shāgerd ast",
+                  "translit": "ō bihtarīn shāgird ast",
                   "en": "She is the best student.",
                   "distractorsTarget": [
                     {
                       "target": "او بهتر شاگرد است",
-                      "translit": "ō bihtar shāgerd ast"
+                      "translit": "ō bihtar shāgird ast"
                     },
                     {
                       "target": "او بهترین معلم است",
-                      "translit": "ō bihtarīn mu'allem ast"
+                      "translit": "ō bihtarīn mu'allim ast"
                     }
                   ]
                 },
@@ -3721,12 +3721,12 @@
               "title": "My book, her name",
               "subtitle": "Possessive endings and khud",
               "grammarPoint": "possessive-endings",
-              "grammarPointEn": "Attached possessive endings -am, -at, -ash, -emān, -etān, -eshān (ketābam = my book) as a shorter alternative to ketāb-e man; khud for 'own'.",
+              "grammarPointEn": "Attached possessive endings -am, -at, -ash, -imān, -itān, -ishān (kitābam = my book) as a shorter alternative to kitāb-e man; khud for 'own'.",
               "slides": [
                 {
                   "id": "gs-17-1",
                   "title": "Stick it on the end",
-                  "body": "Instead of ketāb-e man you can say ketābam - 'my book' - by attaching a short ending. Both are correct; the ending is quicker.",
+                  "body": "Instead of kitāb-e man you can say kitābam - 'my book' - by attaching a short ending. Both are correct; the ending is quicker.",
                   "table": [
                     [
                       "-am",
@@ -3741,22 +3741,22 @@
                       "his / her"
                     ],
                     [
-                      "-emān",
+                      "-imān",
                       "our"
                     ],
                     [
-                      "-etān",
+                      "-itān",
                       "your (pl)"
                     ],
                     [
-                      "-eshān",
+                      "-ishān",
                       "their"
                     ]
                   ],
                   "examples": [
                     {
                       "target": "کتابم اینجا است",
-                      "translit": "ketābam īnjā ast",
+                      "translit": "kitābam īnjā ast",
                       "en": "My book is here.",
                       "highlight": "کتابم"
                     },
@@ -3790,17 +3790,17 @@
                   "pairs": [
                     {
                       "target": "کتابم",
-                      "translit": "ketābam",
+                      "translit": "kitābam",
                       "en": "my book"
                     },
                     {
                       "target": "کتابت",
-                      "translit": "ketābat",
+                      "translit": "kitābat",
                       "en": "your book"
                     },
                     {
                       "target": "کتابش",
-                      "translit": "ketābash",
+                      "translit": "kitābash",
                       "en": "his book"
                     },
                     {
@@ -3830,16 +3830,16 @@
                   "en": "My book is here.",
                   "answer": {
                     "target": "کتابم",
-                    "translit": "ketābam"
+                    "translit": "kitābam"
                   },
                   "distractors": [
                     {
                       "target": "کتابت",
-                      "translit": "ketābat"
+                      "translit": "kitābat"
                     },
                     {
                       "target": "کتابش",
-                      "translit": "ketābash"
+                      "translit": "kitābash"
                     }
                   ]
                 },
@@ -3882,16 +3882,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "کتابت نو است",
-                  "translit": "ketābat naw ast",
+                  "translit": "kitābat naw ast",
                   "en": "Your book is new.",
                   "distractorsTarget": [
                     {
                       "target": "کتابم نو است",
-                      "translit": "ketābam naw ast"
+                      "translit": "kitābam naw ast"
                     },
                     {
                       "target": "کتابش نو است",
-                      "translit": "ketābash naw ast"
+                      "translit": "kitābash naw ast"
                     }
                   ]
                 },
@@ -3978,7 +3978,7 @@
                   "distractors": [
                     {
                       "target": "چی",
-                      "translit": "che"
+                      "translit": "chī"
                     },
                     {
                       "target": "کجا",
@@ -4097,12 +4097,12 @@
               "title": "Always, sometimes, never",
               "subtitle": "How often you do things",
               "grammarPoint": "frequency-adverbs",
-              "grammarPointEn": "Frequency expressions hamēsha (always), har rōz (every day), gāhē (sometimes), hargez + negative (never), placed before the verb.",
+              "grammarPointEn": "Frequency expressions hamēsha (always), har rōz (every day), gāhē (sometimes), hargiz + negative (never), placed before the verb.",
               "slides": [
                 {
                   "id": "gs-19-1",
                   "title": "Where they go",
-                  "body": "Frequency words sit before the verb: hamēsha (always), har rōz (every day), gāhē (sometimes). hargez means 'never' and pairs with a negative verb.",
+                  "body": "Frequency words sit before the verb: hamēsha (always), har rōz (every day), gāhē (sometimes). hargiz means 'never' and pairs with a negative verb.",
                   "table": [
                     [
                       "hamēsha",
@@ -4117,7 +4117,7 @@
                       "sometimes"
                     ],
                     [
-                      "hargez … na-",
+                      "hargiz … na-",
                       "never"
                     ]
                   ],
@@ -4130,7 +4130,7 @@
                     },
                     {
                       "target": "او هرگز نان نمی‌خورد",
-                      "translit": "ō hargez nān namēkhurad",
+                      "translit": "ō hargiz nān namēkhurad",
                       "en": "He never eats bread.",
                       "highlight": "هرگز"
                     }
@@ -4151,7 +4151,7 @@
                   "distractors": [
                     {
                       "target": "هرگز",
-                      "translit": "hargez"
+                      "translit": "hargiz"
                     },
                     {
                       "target": "گاهی",
@@ -4164,7 +4164,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "او هرگز نان نمی‌خورد",
-                  "translit": "ō hargez nān namēkhurad",
+                  "translit": "ō hargiz nān namēkhurad",
                   "en": "He never eats bread.",
                   "distractorsEn": [
                     "He always eats bread.",
@@ -4207,14 +4207,14 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "می‌خوانم",
                       "translit": "mēkhānam"
                     }
                   ],
-                  "translit": "man gāhē ketāb mēkhānam",
+                  "translit": "man gāhē kitāb mēkhānam",
                   "extraWords": [
                     {
                       "target": "همیشه",
@@ -4247,7 +4247,7 @@
                     },
                     {
                       "target": "هرگز",
-                      "translit": "hargez",
+                      "translit": "hargiz",
                       "en": "never"
                     },
                     {
@@ -4271,7 +4271,7 @@
                     },
                     {
                       "target": "او هرگز کار نمی‌کند",
-                      "translit": "ō hargez kār namēkunad"
+                      "translit": "ō hargiz kār namēkunad"
                     }
                   ]
                 }
@@ -4353,14 +4353,14 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "می‌خوانیم",
                       "translit": "mēkhānēm"
                     }
                   ],
-                  "translit": "fardā mā ketāb mēkhānēm",
+                  "translit": "fardā mā kitāb mēkhānēm",
                   "extraWords": [
                     {
                       "target": "خواندیم",
@@ -4427,7 +4427,7 @@
                     },
                     {
                       "target": "امروز",
-                      "translit": "emrōz",
+                      "translit": "imrōz",
                       "en": "today"
                     },
                     {
@@ -4571,7 +4571,7 @@
                   "words": [
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "را",
@@ -4582,7 +4582,7 @@
                       "translit": "bukhān"
                     }
                   ],
-                  "translit": "ketāb rā bukhān",
+                  "translit": "kitāb rā bukhān",
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
@@ -4651,13 +4651,13 @@
                   "examples": [
                     {
                       "target": "لطفاً بنشینید",
-                      "translit": "lutfan buneshīnēd",
+                      "translit": "lutfan bunishīnēd",
                       "en": "Please sit down.",
                       "highlight": "لطفاً"
                     },
                     {
                       "target": "لطفاً کتاب را بخوانید",
-                      "translit": "lutfan ketāb rā bukhānēd",
+                      "translit": "lutfan kitāb rā bukhānēd",
                       "en": "Please read the book.",
                       "highlight": "بخوانید"
                     }
@@ -4669,7 +4669,7 @@
                   "id": "ge-22-1",
                   "type": "fillBlank",
                   "target": "___ بنشینید",
-                  "translit": "___ buneshīnēd",
+                  "translit": "___ bunishīnēd",
                   "en": "Please sit down.",
                   "answer": {
                     "target": "لطفاً",
@@ -4691,7 +4691,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "لطفاً کتاب را بخوانید",
-                  "translit": "lutfan ketāb rā bukhānēd",
+                  "translit": "lutfan kitāb rā bukhānēd",
                   "en": "Please read the book.",
                   "distractorsEn": [
                     "Read the book! (to a friend)",
@@ -4777,12 +4777,12 @@
                   "en": "Please sit here.",
                   "answer": {
                     "target": "بنشینید",
-                    "translit": "buneshīnēd"
+                    "translit": "bunishīnēd"
                   },
                   "distractors": [
                     {
                       "target": "بنشین",
-                      "translit": "buneshīn"
+                      "translit": "bunishīn"
                     },
                     {
                       "target": "می‌نشینید",
@@ -4871,14 +4871,14 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "بخوانم",
                       "translit": "bukhānam"
                     }
                   ],
-                  "translit": "mēkhāham ketāb bukhānam",
+                  "translit": "mēkhāham kitāb bukhānam",
                   "extraWords": [
                     {
                       "target": "می‌خوانم",
@@ -5185,7 +5185,7 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "را",
@@ -5196,7 +5196,7 @@
                       "translit": "bukhānēm"
                     }
                   ],
-                  "translit": "bāyad ketāb rā bukhānēm",
+                  "translit": "bāyad kitāb rā bukhānēm",
                   "extraWords": [
                     {
                       "target": "می‌خوانیم",
@@ -5359,14 +5359,14 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "می‌خواندیم",
                       "translit": "mēkhāndēm"
                     }
                   ],
-                  "translit": "mā ketāb mēkhāndēm",
+                  "translit": "mā kitāb mēkhāndēm",
                   "extraWords": [
                     {
                       "target": "خواندیم",
@@ -5540,7 +5540,7 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "را",
@@ -5551,7 +5551,7 @@
                       "translit": "khānda-ēm"
                     }
                   ],
-                  "translit": "mā ketāb rā khānda-ēm",
+                  "translit": "mā kitāb rā khānda-ēm",
                   "extraWords": [
                     {
                       "target": "خواندیم",
@@ -5632,7 +5632,7 @@
               "title": "Doing and making",
               "subtitle": "Compound verbs with kardan",
               "grammarPoint": "compound-verbs",
-              "grammarPointEn": "Compound verbs = noun + kardan: kār kardan (to work), zendagī kardan (to live), fikr kardan (to think), kumak kardan (to help); only kardan conjugates.",
+              "grammarPointEn": "Compound verbs = noun + kardan: kār kardan (to work), zindagī kardan (to live), fikr kardan (to think), kumak kardan (to help); only kardan conjugates.",
               "slides": [
                 {
                   "id": "gs-28-1",
@@ -5641,7 +5641,7 @@
                   "examples": [
                     {
                       "target": "من در کابل زندگی می‌کنم",
-                      "translit": "man dar kābul zendagī mēkunam",
+                      "translit": "man dar kābul zindagī mēkunam",
                       "en": "I live in Kabul.",
                       "highlight": "زندگی می‌کنم"
                     },
@@ -5659,7 +5659,7 @@
                   "id": "ge-28-1",
                   "type": "fillBlank",
                   "target": "من در کابل زندگی ___",
-                  "translit": "man dar kābul zendagī ___",
+                  "translit": "man dar kābul zindagī ___",
                   "en": "I live in Kabul.",
                   "answer": {
                     "target": "می‌کنم",
@@ -5699,7 +5699,7 @@
                     },
                     {
                       "target": "بسیار",
-                      "translit": "besyār"
+                      "translit": "bisyār"
                     },
                     {
                       "target": "فکر",
@@ -5710,7 +5710,7 @@
                       "translit": "mēkunam"
                     }
                   ],
-                  "translit": "man besyār fikr mēkunam",
+                  "translit": "man bisyār fikr mēkunam",
                   "extraWords": [
                     {
                       "target": "کردم",
@@ -5730,7 +5730,7 @@
                     },
                     {
                       "target": "زندگی کردن",
-                      "translit": "zendagī kardan",
+                      "translit": "zindagī kardan",
                       "en": "to live"
                     },
                     {
@@ -5870,14 +5870,14 @@
                     },
                     {
                       "target": "معلم",
-                      "translit": "mu'allem"
+                      "translit": "mu'allim"
                     },
                     {
                       "target": "است",
                       "translit": "ast"
                     }
                   ],
-                  "translit": "fikr mēkunam ki ō mu'allem ast",
+                  "translit": "fikr mēkunam ki ō mu'allim ast",
                   "extraWords": [
                     {
                       "target": "و",
@@ -6039,7 +6039,7 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "را",
@@ -6050,7 +6050,7 @@
                       "translit": "bukhānēd"
                     }
                   ],
-                  "translit": "lutfan ketāb rā bukhānēd",
+                  "translit": "lutfan kitāb rā bukhānēd",
                   "extraWords": [
                     {
                       "target": "می‌خوانید",
@@ -6129,7 +6129,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "او هرگز دروغ نمی‌گوید",
-                  "translit": "ō hargez durōgh namēgōyad",
+                  "translit": "ō hargiz durōgh namēgōyad",
                   "en": "He never tells a lie.",
                   "distractorsEn": [
                     "He always tells the truth.",
@@ -6152,7 +6152,7 @@
                   "examples": [
                     {
                       "target": "من کتاب را می‌خوانم",
-                      "translit": "man ketāb rā mēkhānam",
+                      "translit": "man kitāb rā mēkhānam",
                       "en": "I read the book.",
                       "highlight": "را"
                     }
@@ -6204,7 +6204,7 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "را",
@@ -6215,7 +6215,7 @@
                       "translit": "mēkhānam"
                     }
                   ],
-                  "translit": "man ketāb rā mēkhānam",
+                  "translit": "man kitāb rā mēkhānam",
                   "extraWords": []
                 },
                 {
@@ -6403,7 +6403,7 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "را",
@@ -6414,7 +6414,7 @@
                       "translit": "bukhānī"
                     }
                   ],
-                  "translit": "mēkhāham ki ketāb rā bukhānī",
+                  "translit": "mēkhāham ki kitāb rā bukhānī",
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
@@ -6426,7 +6426,7 @@
                   "id": "ge-31-5",
                   "type": "fillBlank",
                   "target": "ممکن است که او ___",
-                  "translit": "mumken ast ki ō ___",
+                  "translit": "mumkin ast ki ō ___",
                   "en": "It is possible that he comes.",
                   "answer": {
                     "target": "بیاید",
@@ -6510,7 +6510,7 @@
                     },
                     {
                       "target": "ممکن است که باران بیاید",
-                      "translit": "mumken ast ki bārān biyāyad",
+                      "translit": "mumkin ast ki bārān biyāyad",
                       "en": "It might rain.",
                       "highlight": "ممکن"
                     }
@@ -6544,7 +6544,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "ممکن است که باران بیاید",
-                  "translit": "mumken ast ki bārān biyāyad",
+                  "translit": "mumkin ast ki bārān biyāyad",
                   "en": "It might rain.",
                   "distractorsEn": [
                     "It is raining.",
@@ -6619,7 +6619,7 @@
                   "id": "ge-32-6",
                   "type": "fillBlank",
                   "target": "ممکن است که ما ___",
-                  "translit": "mumken ast ki mā ___",
+                  "translit": "mumkin ast ki mā ___",
                   "en": "It's possible that we'll work.",
                   "answer": {
                     "target": "کار کنیم",
@@ -6769,7 +6769,7 @@
                   "id": "ge-33-6",
                   "type": "fillBlank",
                   "target": "کتاب خریدم تا ___",
-                  "translit": "ketāb kharīdam tā ___",
+                  "translit": "kitāb kharīdam tā ___",
                   "en": "I bought a book to read.",
                   "answer": {
                     "target": "بخوانم",
@@ -7207,7 +7207,7 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "را",
@@ -7222,7 +7222,7 @@
                       "translit": "būdēm"
                     }
                   ],
-                  "translit": "mā ketāb rā khānda būdēm",
+                  "translit": "mā kitāb rā khānda būdēm",
                   "extraWords": [
                     {
                       "target": "خواندیم",
@@ -7348,7 +7348,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "من این کتاب را خوانده‌ام",
-                  "translit": "man īn ketāb rā khānda-am",
+                  "translit": "man īn kitāb rā khānda-am",
                   "en": "I have read this book.",
                   "distractorsEn": [
                     "I read this book yesterday.",
@@ -7613,7 +7613,7 @@
               "title": "The man who came",
               "subtitle": "Relative clauses with ki",
               "grammarPoint": "relative-clauses",
-              "grammarPointEn": "Relative clauses: an indefinite noun marked with -ē plus ki introduces a describing clause: mardē ki āmad (the man who came), ketābē ki khāndam (the book that I read).",
+              "grammarPointEn": "Relative clauses: an indefinite noun marked with -ē plus ki introduces a describing clause: mardē ki āmad (the man who came), kitābē ki khāndam (the book that I read).",
               "slides": [
                 {
                   "id": "gs-39-1",
@@ -7628,7 +7628,7 @@
                     },
                     {
                       "target": "کتابی که خواندم، خوب بود",
-                      "translit": "ketābē ki khāndam, khūb būd",
+                      "translit": "kitābē ki khāndam, khūb būd",
                       "en": "The book that I read was good.",
                       "highlight": "کتابی که"
                     }
@@ -7662,7 +7662,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "کتابی که خواندم، خوب بود",
-                  "translit": "ketābē ki khāndam, khūb būd",
+                  "translit": "kitābē ki khāndam, khūb būd",
                   "en": "The book that I read was good.",
                   "distractorsEn": [
                     "The book is good.",
@@ -7688,14 +7688,14 @@
                     },
                     {
                       "target": "معلم",
-                      "translit": "mu'allem"
+                      "translit": "mu'allim"
                     },
                     {
                       "target": "است",
                       "translit": "ast"
                     }
                   ],
-                  "translit": "zanē ki āmad, mu'allem ast",
+                  "translit": "zanē ki āmad, mu'allim ast",
                   "extraWords": [
                     {
                       "target": "را",
@@ -7725,16 +7725,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "شاگردی که درس خواند، آمد",
-                  "translit": "shāgerdē ki dars khānd, āmad",
+                  "translit": "shāgirdē ki dars khānd, āmad",
                   "en": "The student who studied came.",
                   "distractorsTarget": [
                     {
                       "target": "شاگرد درس خواند و آمد",
-                      "translit": "shāgerd dars khānd wa āmad"
+                      "translit": "shāgird dars khānd wa āmad"
                     },
                     {
                       "target": "شاگردی که درس می‌خواند، می‌آید",
-                      "translit": "shāgerdē ki dars mēkhānad, mēāyad"
+                      "translit": "shāgirdē ki dars mēkhānad, mēāyad"
                     }
                   ]
                 },
@@ -7841,14 +7841,14 @@
                     },
                     {
                       "target": "معلم",
-                      "translit": "mu'allem"
+                      "translit": "mu'allim"
                     },
                     {
                       "target": "است",
                       "translit": "ast"
                     }
                   ],
-                  "translit": "ō guft ki mu'allem ast",
+                  "translit": "ō guft ki mu'allim ast",
                   "extraWords": [
                     {
                       "target": "بود",
@@ -8094,22 +8094,22 @@
               "title": "It was written",
               "subtitle": "The passive with shudan",
               "grammarPoint": "passive-shudan",
-              "grammarPointEn": "Passive voice with the past participle + shudan: neweshta shud (it was written), dīda mēshawad (it is seen); no doer is named.",
+              "grammarPointEn": "Passive voice with the past participle + shudan: nawishta shud (it was written), dīda mēshawad (it is seen); no doer is named.",
               "slides": [
                 {
                   "id": "gs-42-1",
                   "title": "participle + shudan",
-                  "body": "To say something 'was done' without naming who did it, use the participle + a form of shudan (to become): neweshta shud - 'it was written'.",
+                  "body": "To say something 'was done' without naming who did it, use the participle + a form of shudan (to become): nawishta shud - 'it was written'.",
                   "examples": [
                     {
                       "target": "نامه نوشته شد",
-                      "translit": "nāma neweshta shud",
+                      "translit": "nāma nawishta shud",
                       "en": "The letter was written.",
                       "highlight": "نوشته شد"
                     },
                     {
                       "target": "این کتاب خوانده می‌شود",
-                      "translit": "īn ketāb khānda mēshawad",
+                      "translit": "īn kitāb khānda mēshawad",
                       "en": "This book is read.",
                       "highlight": "خوانده می‌شود"
                     }
@@ -8121,7 +8121,7 @@
                   "id": "ge-42-1",
                   "type": "fillBlank",
                   "target": "نامه نوشته ___",
-                  "translit": "nāma neweshta ___",
+                  "translit": "nāma nawishta ___",
                   "en": "The letter was written.",
                   "answer": {
                     "target": "شد",
@@ -8143,7 +8143,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "این کتاب خوانده می‌شود",
-                  "translit": "īn ketāb khānda mēshawad",
+                  "translit": "īn kitāb khānda mēshawad",
                   "en": "This book is read.",
                   "distractorsEn": [
                     "He reads this book.",
@@ -8222,7 +8222,7 @@
                     },
                     {
                       "target": "نوشته شد",
-                      "translit": "neweshta shud",
+                      "translit": "nawishta shud",
                       "en": "it was written"
                     },
                     {
@@ -8244,12 +8244,12 @@
               "title": "A certain book",
               "subtitle": "The indefinite -ē",
               "grammarPoint": "indefinite-ye",
-              "grammarPointEn": "The indefinite -ē (yā-ye wahdat) marks 'a certain / some': ketābē kharīdam (I bought a book); contrasts with a bare noun or with yak.",
+              "grammarPointEn": "The indefinite -ē (yā-ye wahdat) marks 'a certain / some': kitābē kharīdam (I bought a book); contrasts with a bare noun or with yak.",
               "slides": [
                 {
                   "id": "gs-43-1",
                   "title": "Add -ē for 'a certain'",
-                  "body": "Attaching -ē to a noun means 'a certain one': ketābē (a book), rōzē (one day). It is softer than yak and common in storytelling.",
+                  "body": "Attaching -ē to a noun means 'a certain one': kitābē (a book), rōzē (one day). It is softer than yak and common in storytelling.",
                   "examples": [
                     {
                       "target": "روزی به بازار رفتم",
@@ -8259,7 +8259,7 @@
                     },
                     {
                       "target": "کتابی خریدم",
-                      "translit": "ketābē kharīdam",
+                      "translit": "kitābē kharīdam",
                       "en": "I bought a book.",
                       "highlight": "کتابی"
                     }
@@ -8283,7 +8283,7 @@
                   "id": "ge-43-2",
                   "type": "fillBlank",
                   "target": "کتاب___ خریدم",
-                  "translit": "ketāb___ kharīdam",
+                  "translit": "kitāb___ kharīdam",
                   "en": "I bought a (certain) book.",
                   "answer": {
                     "target": "ی",
@@ -8347,22 +8347,22 @@
                   "pairs": [
                     {
                       "target": "کتاب",
-                      "translit": "ketāb",
+                      "translit": "kitāb",
                       "en": "the book / books"
                     },
                     {
                       "target": "کتابی",
-                      "translit": "ketābē",
+                      "translit": "kitābē",
                       "en": "a certain book"
                     },
                     {
                       "target": "کتاب‌ها",
-                      "translit": "ketāb-hā",
+                      "translit": "kitāb-hā",
                       "en": "the books"
                     },
                     {
                       "target": "یک کتاب",
-                      "translit": "yak ketāb",
+                      "translit": "yak kitāb",
                       "en": "one book"
                     }
                   ]
@@ -8651,7 +8651,7 @@
                   "words": [
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "را",
@@ -8666,7 +8666,7 @@
                       "translit": "khānd"
                     }
                   ],
-                  "translit": "ketāb rā khāhēm khānd",
+                  "translit": "kitāb rā khāhēm khānd",
                   "extraWords": [
                     {
                       "target": "خواندیم",
@@ -8747,22 +8747,22 @@
               "title": "Building new words",
               "subtitle": "The -ī that makes nouns",
               "grammarPoint": "word-formation",
-              "grammarPointEn": "Word formation: the suffix -ī turns adjectives into abstract nouns (āzād → āzādī 'freedom', zenda → zendagī 'life'); recognizing built words widens vocabulary.",
+              "grammarPointEn": "Word formation: the suffix -ī turns adjectives into abstract nouns (āzād → āzādī 'freedom', zenda → zindagī 'life'); recognizing built words widens vocabulary.",
               "slides": [
                 {
                   "id": "gs-46-1",
                   "title": "The -ī of ideas",
-                  "body": "A final -ī often turns a word into an abstract idea: āzād (free) → āzādī (freedom), zenda (alive) → zendagī (life). Spotting the pattern helps you guess new words.",
+                  "body": "A final -ī often turns a word into an abstract idea: āzād (free) → āzādī (freedom), zenda (alive) → zindagī (life). Spotting the pattern helps you guess new words.",
                   "examples": [
                     {
                       "target": "آزادی مهم است",
-                      "translit": "āzādī muhem ast",
+                      "translit": "āzādī muhim ast",
                       "en": "Freedom is important.",
                       "highlight": "آزادی"
                     },
                     {
                       "target": "زندگی در کابل خوب است",
-                      "translit": "zendagī dar kābul khūb ast",
+                      "translit": "zindagī dar kābul khūb ast",
                       "en": "Life in Kabul is good.",
                       "highlight": "زندگی"
                     }
@@ -8775,7 +8775,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "آزادی مهم است",
-                  "translit": "āzādī muhem ast",
+                  "translit": "āzādī muhim ast",
                   "en": "Freedom is important.",
                   "distractorsEn": [
                     "The free man is here.",
@@ -8794,7 +8794,7 @@
                     },
                     {
                       "target": "زندگی",
-                      "translit": "zendagī",
+                      "translit": "zindagī",
                       "en": "life"
                     },
                     {
@@ -8817,7 +8817,7 @@
                   "en": "Life in Kabul is good.",
                   "answer": {
                     "target": "زندگی",
-                    "translit": "zendagī"
+                    "translit": "zindagī"
                   },
                   "distractors": [
                     {
@@ -8879,7 +8879,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "زندگی مقبول است",
-                  "translit": "zendagī maqbūl ast",
+                  "translit": "zindagī maqbūl ast",
                   "en": "Life is beautiful.",
                   "distractorsEn": [
                     "The living man is beautiful.",
@@ -8962,7 +8962,7 @@
                   "id": "ge-47-4",
                   "type": "spotError",
                   "target": "نامه نوشته کرد",
-                  "translit": "nāma neweshta kard",
+                  "translit": "nāma nawishta kard",
                   "en": "The letter was written.",
                   "errorWord": {
                     "target": "کرد",
@@ -8981,7 +8981,7 @@
                   "words": [
                     {
                       "target": "کتابی",
-                      "translit": "ketābē"
+                      "translit": "kitābē"
                     },
                     {
                       "target": "که",
@@ -9000,7 +9000,7 @@
                       "translit": "būd"
                     }
                   ],
-                  "translit": "ketābē ki khāndam, khūb būd",
+                  "translit": "kitābē ki khāndam, khūb būd",
                   "extraWords": [
                     {
                       "target": "را",
@@ -9209,16 +9209,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "اگر پول می‌داشتم، کتاب می‌خریدم",
-                  "translit": "agar pūl mēdāshtam, ketāb mēkharīdam",
+                  "translit": "agar pūl mēdāshtam, kitāb mēkharīdam",
                   "en": "If I had had money, I would have bought a book.",
                   "distractorsTarget": [
                     {
                       "target": "اگر پول داشته باشم، کتاب می‌خرم",
-                      "translit": "agar pūl dāshta bāsham, ketāb mēkharam"
+                      "translit": "agar pūl dāshta bāsham, kitāb mēkharam"
                     },
                     {
                       "target": "پول داشتم و کتاب خریدم",
-                      "translit": "pūl dāshtam wa ketāb kharīdam"
+                      "translit": "pūl dāshtam wa kitāb kharīdam"
                     }
                   ]
                 },
@@ -9473,7 +9473,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "ممکن است که نان خورده باشد",
-                  "translit": "mumken ast ki nān khurda bāshad",
+                  "translit": "mumkin ast ki nān khurda bāshad",
                   "en": "He may have eaten bread.",
                   "distractorsEn": [
                     "He is eating bread.",
@@ -9531,16 +9531,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "شاید کتاب را خوانده باشی",
-                  "translit": "shāyad ketāb rā khānda bāshī",
+                  "translit": "shāyad kitāb rā khānda bāshī",
                   "en": "Maybe you have read the book.",
                   "distractorsTarget": [
                     {
                       "target": "کتاب را خواندی",
-                      "translit": "ketāb rā khāndī"
+                      "translit": "kitāb rā khāndī"
                     },
                     {
                       "target": "شاید کتاب را بخوانی",
-                      "translit": "shāyad ketāb rā bukhānī"
+                      "translit": "shāyad kitāb rā bukhānī"
                     }
                   ]
                 },
@@ -9628,7 +9628,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "این کتاب را می‌توان خواند",
-                  "translit": "īn ketāb rā mētawān khānd",
+                  "translit": "īn kitāb rā mētawān khānd",
                   "en": "One can read this book.",
                   "distractorsEn": [
                     "I can read this book.",
@@ -9736,7 +9736,7 @@
               "title": "Passive, any tense",
               "subtitle": "shudan across time",
               "grammarPoint": "passive-tenses",
-              "grammarPointEn": "The passive across tenses by conjugating shudan: neweshta mēshawad (is written), neweshta shud (was written), neweshta shuda ast (has been written).",
+              "grammarPointEn": "The passive across tenses by conjugating shudan: nawishta mēshawad (is written), nawishta shud (was written), nawishta shuda ast (has been written).",
               "slides": [
                 {
                   "id": "gs-52-1",
@@ -9759,7 +9759,7 @@
                   "examples": [
                     {
                       "target": "کتاب نوشته شده است",
-                      "translit": "ketāb neweshta shuda ast",
+                      "translit": "kitāb nawishta shuda ast",
                       "en": "The book has been written.",
                       "highlight": "شده است"
                     }
@@ -9771,7 +9771,7 @@
                   "id": "ge-52-1",
                   "type": "fillBlank",
                   "target": "کتاب نوشته شده ___",
-                  "translit": "ketāb neweshta shuda ___",
+                  "translit": "kitāb nawishta shuda ___",
                   "en": "The book has been written.",
                   "answer": {
                     "target": "است",
@@ -9793,7 +9793,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "نامه نوشته می‌شود",
-                  "translit": "nāma neweshta mēshawad",
+                  "translit": "nāma nawishta mēshawad",
                   "en": "The letter is being written.",
                   "distractorsEn": [
                     "The letter was written.",
@@ -9861,7 +9861,7 @@
                   "id": "ge-52-5",
                   "type": "spotError",
                   "target": "کتاب نوشته می‌کند",
-                  "translit": "ketāb neweshta mēkunad",
+                  "translit": "kitāb nawishta mēkunad",
                   "en": "The book is being written.",
                   "errorWord": {
                     "target": "می‌کند",
@@ -9999,16 +9999,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او باید کتاب را خوانده باشد",
-                  "translit": "ō bāyad ketāb rā khānda bāshad",
+                  "translit": "ō bāyad kitāb rā khānda bāshad",
                   "en": "He must have read the book.",
                   "distractorsTarget": [
                     {
                       "target": "او باید کتاب را بخواند",
-                      "translit": "ō bāyad ketāb rā bukhānad"
+                      "translit": "ō bāyad kitāb rā bukhānad"
                     },
                     {
                       "target": "او کتاب را خواند",
-                      "translit": "ō ketāb rā khānd"
+                      "translit": "ō kitāb rā khānd"
                     }
                   ]
                 },
@@ -10053,7 +10053,7 @@
               "title": "The very book that…",
               "subtitle": "Advanced relative clauses",
               "grammarPoint": "advanced-relatives",
-              "grammarPointEn": "Relative clauses with a definite antecedent using ān … ki and resumptive structure: ān ketābē ki khāndam (that book which I read); distinguishing defining from adding information.",
+              "grammarPointEn": "Relative clauses with a definite antecedent using ān … ki and resumptive structure: ān kitābē ki khāndam (that book which I read); distinguishing defining from adding information.",
               "slides": [
                 {
                   "id": "gs-54-1",
@@ -10062,7 +10062,7 @@
                   "examples": [
                     {
                       "target": "آن کتابی که خواندم، مقبول بود",
-                      "translit": "ān ketābē ki khāndam, maqbūl būd",
+                      "translit": "ān kitābē ki khāndam, maqbūl būd",
                       "en": "That book which I read was beautiful.",
                       "highlight": "آن کتابی که"
                     }
@@ -10074,7 +10074,7 @@
                   "id": "ge-54-1",
                   "type": "fillBlank",
                   "target": "آن مردی ___ دیدم، معلم بود",
-                  "translit": "ān mardē ___ dīdam, mu'allem būd",
+                  "translit": "ān mardē ___ dīdam, mu'allim būd",
                   "en": "That man whom I saw was a teacher.",
                   "answer": {
                     "target": "که",
@@ -10096,7 +10096,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "آن کتابی که خواندم، مقبول بود",
-                  "translit": "ān ketābē ki khāndam, maqbūl būd",
+                  "translit": "ān kitābē ki khāndam, maqbūl būd",
                   "en": "That book which I read was beautiful.",
                   "distractorsEn": [
                     "A book I read was beautiful.",
@@ -10145,7 +10145,7 @@
                   "id": "ge-54-4",
                   "type": "spotError",
                   "target": "آن دوستی را که آمد، معلم است",
-                  "translit": "ān dōstē rā ki āmad, mu'allem ast",
+                  "translit": "ān dōstē rā ki āmad, mu'allim ast",
                   "en": "That friend who came is a teacher.",
                   "errorWord": {
                     "target": "را",
@@ -10180,7 +10180,7 @@
                   "id": "ge-54-6",
                   "type": "fillBlank",
                   "target": "___ کتابی که خواندم، خوب بود",
-                  "translit": "___ ketābē ki khāndam, khūb būd",
+                  "translit": "___ kitābē ki khāndam, khūb būd",
                   "en": "That book which I read was good.",
                   "answer": {
                     "target": "آن",
@@ -10298,7 +10298,7 @@
                     },
                     {
                       "target": "کلان است اما گران است",
-                      "translit": "kalān ast amā gerān ast"
+                      "translit": "kalān ast amā girān ast"
                     }
                   ]
                 },
@@ -10768,7 +10768,7 @@
                   "id": "ge-58-6",
                   "type": "fillBlank",
                   "target": "او معلم ___",
-                  "translit": "ō mu'allem ___",
+                  "translit": "ō mu'allim ___",
                   "en": "He is a teacher. (full form)",
                   "answer": {
                     "target": "است",
@@ -10792,12 +10792,12 @@
               "title": "The act of going",
               "subtitle": "Verbs used as nouns",
               "grammarPoint": "nominalization",
-              "grammarPointEn": "Nominalization: the infinitive used as a noun (raftan = going / to go), often with ezāfa (raftan-e ō = his going) or after barāye (barāye khāndan = for reading).",
+              "grammarPointEn": "Nominalization: the infinitive used as a noun (raftan = going / to go), often with ezāfa (raftan-e ō = his going) or after barā-ye (barā-ye khāndan = for reading).",
               "slides": [
                 {
                   "id": "gs-59-1",
                   "title": "The infinitive as a noun",
-                  "body": "The infinitive (raftan, khāndan) can act as a noun: 'going', 'reading'. Use it after barāye (for) or with ezāfa: barāye khāndan - 'for reading'.",
+                  "body": "The infinitive (raftan, khāndan) can act as a noun: 'going', 'reading'. Use it after barā-ye (for) or with ezāfa: barā-ye khāndan - 'for reading'.",
                   "examples": [
                     {
                       "target": "خواندن خوب است",
@@ -10807,7 +10807,7 @@
                     },
                     {
                       "target": "برای خواندن آمدم",
-                      "translit": "barāye khāndan āmadam",
+                      "translit": "barā-ye khāndan āmadam",
                       "en": "I came in order to read.",
                       "highlight": "برای خواندن"
                     }
@@ -10831,7 +10831,7 @@
                   "id": "ge-59-2",
                   "type": "fillBlank",
                   "target": "برای ___ آمدم",
-                  "translit": "barāye ___ āmadam",
+                  "translit": "barā-ye ___ āmadam",
                   "en": "I came for reading.",
                   "answer": {
                     "target": "خواندن",
@@ -10927,16 +10927,16 @@
                   "en": "Living in Kabul is good.",
                   "answer": {
                     "target": "زندگی کردن",
-                    "translit": "zendagī kardan"
+                    "translit": "zindagī kardan"
                   },
                   "distractors": [
                     {
                       "target": "زندگی می‌کنم",
-                      "translit": "zendagī mēkunam"
+                      "translit": "zindagī mēkunam"
                     },
                     {
                       "target": "زندگی کردم",
-                      "translit": "zendagī kardam"
+                      "translit": "zindagī kardam"
                     }
                   ]
                 }
@@ -10947,12 +10947,12 @@
               "title": "Words built from words",
               "subtitle": "Compounds and the -gī noun",
               "grammarPoint": "word-formation-2",
-              "grammarPointEn": "Word formation: ham- 'co-' compounds (hamkār = colleague, hamsenf = classmate) and the -gī ending that makes nouns from words ending in -a (zenda → zendagī).",
+              "grammarPointEn": "Word formation: ham- 'co-' compounds (hamkār = colleague, hamsinf = classmate) and the -gī ending that makes nouns from words ending in -a (zenda → zindagī).",
               "slides": [
                 {
                   "id": "gs-60-1",
                   "title": "ham- = together",
-                  "body": "The prefix ham- means 'co-' or 'fellow': hamkār (co-worker), hamsenf (classmate). Spotting ham- unlocks many words at once.",
+                  "body": "The prefix ham- means 'co-' or 'fellow': hamkār (co-worker), hamsinf (classmate). Spotting ham- unlocks many words at once.",
                   "examples": [
                     {
                       "target": "او همکار من است",
@@ -10965,11 +10965,11 @@
                 {
                   "id": "gs-60-2",
                   "title": "-gī makes ideas",
-                  "body": "Words ending in -a take -gī to become abstract nouns: zenda (alive) → zendagī (life).",
+                  "body": "Words ending in -a take -gī to become abstract nouns: zenda (alive) → zindagī (life).",
                   "examples": [
                     {
                       "target": "زندگی در قریه آرام است",
-                      "translit": "zendagī dar qarya ārām ast",
+                      "translit": "zindagī dar qarya ārām ast",
                       "en": "Life in the village is calm.",
                       "highlight": "زندگی"
                     }
@@ -11001,7 +11001,7 @@
                     },
                     {
                       "target": "همصنف",
-                      "translit": "hamsenf",
+                      "translit": "hamsinf",
                       "en": "classmate"
                     },
                     {
@@ -11024,7 +11024,7 @@
                   "en": "Ahmad is my classmate.",
                   "answer": {
                     "target": "همصنف",
-                    "translit": "hamsenf"
+                    "translit": "hamsinf"
                   },
                   "distractors": [
                     {
@@ -11042,7 +11042,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "زندگی در قریه آرام است",
-                  "translit": "zendagī dar qarya ārām ast",
+                  "translit": "zindagī dar qarya ārām ast",
                   "en": "Life in the village is calm.",
                   "distractorsEn": [
                     "The village is alive.",
@@ -11089,7 +11089,7 @@
                   "distractorsTarget": [
                     {
                       "target": "همصنف من مقبول است",
-                      "translit": "hamsenf-e man maqbūl ast"
+                      "translit": "hamsinf-e man maqbūl ast"
                     },
                     {
                       "target": "همکار تو مقبول است",
@@ -11171,7 +11171,7 @@
                   "id": "ge-61-3",
                   "type": "spotError",
                   "target": "معلم گفت که درس می‌خوانم",
-                  "translit": "mu'allem guft ki dars mēkhānam",
+                  "translit": "mu'allim guft ki dars mēkhānam",
                   "en": "The teacher told me to study.",
                   "errorWord": {
                     "target": "می‌خوانم",
@@ -11218,16 +11218,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او پرسید که چی می‌خواهم",
-                  "translit": "ō pursīd ki che mēkhāham",
+                  "translit": "ō pursīd ki chī mēkhāham",
                   "en": "He asked what I wanted.",
                   "distractorsTarget": [
                     {
                       "target": "او پرسید که چی خواستم",
-                      "translit": "ō pursīd ki che khāstam"
+                      "translit": "ō pursīd ki chī khāstam"
                     },
                     {
                       "target": "او گفت که چی می‌خواهم",
-                      "translit": "ō guft ki che mēkhāham"
+                      "translit": "ō guft ki chī mēkhāham"
                     }
                   ]
                 },
@@ -11471,7 +11471,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "این کتاب را می‌توان خواند",
-                  "translit": "īn ketāb rā mētawān khānd",
+                  "translit": "īn kitāb rā mētawān khānd",
                   "en": "One can read this book.",
                   "distractorsEn": [
                     "I can read this book.",
@@ -11505,7 +11505,7 @@
                     },
                     {
                       "target": "کتابی",
-                      "translit": "ketābē"
+                      "translit": "kitābē"
                     },
                     {
                       "target": "که",
@@ -11524,7 +11524,7 @@
                       "translit": "būd"
                     }
                   ],
-                  "translit": "ān ketābē ki khāndam, khūb būd",
+                  "translit": "ān kitābē ki khāndam, khūb būd",
                   "extraWords": [
                     {
                       "target": "را",
@@ -11724,16 +11724,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "اگرچه پول نداشت، کتاب خرید",
-                  "translit": "agarchi pūl nadāsht, ketāb kharīd",
+                  "translit": "agarchi pūl nadāsht, kitāb kharīd",
                   "en": "Although he had no money, he bought a book.",
                   "distractorsTarget": [
                     {
                       "target": "چون پول نداشت، کتاب نخرید",
-                      "translit": "chun pūl nadāsht, ketāb nakharīd"
+                      "translit": "chun pūl nadāsht, kitāb nakharīd"
                     },
                     {
                       "target": "اگر پول نداشت، کتاب نخرید",
-                      "translit": "agar pūl nadāsht, ketāb nakharīd"
+                      "translit": "agar pūl nadāsht, kitāb nakharīd"
                     }
                   ]
                 },
@@ -11982,7 +11982,7 @@
                   "words": [
                     {
                       "target": "کتاب را می‌دهم",
-                      "translit": "ketāb rā mēdiham"
+                      "translit": "kitāb rā mēdiham"
                     },
                     {
                       "target": "به شرطی که",
@@ -11993,7 +11993,7 @@
                       "translit": "bukhānī"
                     }
                   ],
-                  "translit": "ketāb rā mēdiham ba shart-ē ki bukhānī",
+                  "translit": "kitāb rā mēdiham ba shart-ē ki bukhānī",
                   "extraWords": [
                     {
                       "target": "می‌خوانی",
@@ -12162,14 +12162,14 @@
                     },
                     {
                       "target": "کتاب",
-                      "translit": "ketāb"
+                      "translit": "kitāb"
                     },
                     {
                       "target": "بخوان",
                       "translit": "bukhān"
                     }
                   ],
-                  "translit": "qabl az īnki bukhābī, ketāb bukhān",
+                  "translit": "qabl az īnki bukhābī, kitāb bukhān",
                   "extraWords": [
                     {
                       "target": "می‌خوابی",
@@ -12300,14 +12300,14 @@
                     },
                     {
                       "target": "کتاب را خواندم",
-                      "translit": "ketāb rā khāndam"
+                      "translit": "kitāb rā khāndam"
                     },
                     {
                       "target": "به تو دادم",
                       "translit": "ba tu dādam"
                     }
                   ],
-                  "translit": "bād az īnki ketāb rā khāndam, ba tu dādam",
+                  "translit": "bād az īnki kitāb rā khāndam, ba tu dādam",
                   "extraWords": [
                     {
                       "target": "بخوانم",
@@ -12604,14 +12604,14 @@
                     },
                     {
                       "target": "این کتاب",
-                      "translit": "īn ketāb"
+                      "translit": "īn kitāb"
                     },
                     {
                       "target": "خوب است",
                       "translit": "khūb ast"
                     }
                   ],
-                  "translit": "gufta mēshawad ki īn ketāb khūb ast",
+                  "translit": "gufta mēshawad ki īn kitāb khūb ast",
                   "extraWords": [
                     {
                       "target": "می‌گویم",
@@ -12640,16 +12640,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "می‌گویند که او معلم خوب است",
-                  "translit": "mēgōyand ki ō mu'allem-e khūb ast",
+                  "translit": "mēgōyand ki ō mu'allim-e khūb ast",
                   "en": "They say that he is a good teacher.",
                   "distractorsTarget": [
                     {
                       "target": "او می‌گوید که معلم خوب است",
-                      "translit": "ō mēgōyad ki mu'allem-e khūb ast"
+                      "translit": "ō mēgōyad ki mu'allim-e khūb ast"
                     },
                     {
                       "target": "گفتند که او معلم خوب است",
-                      "translit": "guftand ki ō mu'allem-e khūb ast"
+                      "translit": "guftand ki ō mu'allim-e khūb ast"
                     }
                   ]
                 },
@@ -12811,7 +12811,7 @@
                     },
                     {
                       "target": "ممکن است",
-                      "translit": "mumken ast",
+                      "translit": "mumkin ast",
                       "en": "it is possible"
                     }
                   ]
@@ -12853,7 +12853,7 @@
                   "examples": [
                     {
                       "target": "او نه تنها معلم، بلکه دوست من هم است",
-                      "translit": "ō na tanhā mu'allem, balki dōst-e man ham ast",
+                      "translit": "ō na tanhā mu'allim, balki dōst-e man ham ast",
                       "en": "He is not only a teacher, but also my friend.",
                       "highlight": "نه تنها"
                     }
@@ -12865,7 +12865,7 @@
                   "id": "ge-72-1",
                   "type": "fillBlank",
                   "target": "او ___ معلم، بلکه دوست من هم است",
-                  "translit": "ō ___ mu'allem, balki dōst-e man ham ast",
+                  "translit": "ō ___ mu'allim, balki dōst-e man ham ast",
                   "en": "He is not only a teacher, but also my friend.",
                   "answer": {
                     "target": "نه تنها",
@@ -12934,14 +12934,14 @@
                     },
                     {
                       "target": "هرات هم",
-                      "translit": "herāt ham"
+                      "translit": "hirāt ham"
                     },
                     {
                       "target": "کلان است",
                       "translit": "kalān ast"
                     }
                   ],
-                  "translit": "na tanhā kābul, balki herāt ham kalān ast",
+                  "translit": "na tanhā kābul, balki hirāt ham kalān ast",
                   "extraWords": [
                     {
                       "target": "اما",
@@ -12954,16 +12954,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "نه تنها خواند، بلکه نوشت هم",
-                  "translit": "na tanhā khānd, balki newesht ham",
+                  "translit": "na tanhā khānd, balki nawisht ham",
                   "en": "He not only read, but also wrote.",
                   "distractorsTarget": [
                     {
                       "target": "خواند اما ننوشت",
-                      "translit": "khānd amā nanewesht"
+                      "translit": "khānd amā nanawisht"
                     },
                     {
                       "target": "نه خواند و نه نوشت",
-                      "translit": "na khānd wa na newesht"
+                      "translit": "na khānd wa na nawisht"
                     }
                   ]
                 },
@@ -13136,16 +13136,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "کاش آن کتاب را خوانده بودم",
-                  "translit": "kāsh ān ketāb rā khānda būdam",
+                  "translit": "kāsh ān kitāb rā khānda būdam",
                   "en": "I wish I had read that book.",
                   "distractorsTarget": [
                     {
                       "target": "کاش آن کتاب را بخوانم",
-                      "translit": "kāsh ān ketāb rā bukhānam"
+                      "translit": "kāsh ān kitāb rā bukhānam"
                     },
                     {
                       "target": "آن کتاب را خواندم",
-                      "translit": "ān ketāb rā khāndam"
+                      "translit": "ān kitāb rā khāndam"
                     }
                   ]
                 }
@@ -13369,14 +13369,14 @@
                     },
                     {
                       "target": "معلم",
-                      "translit": "mu'allem"
+                      "translit": "mu'allim"
                     },
                     {
                       "target": "بود",
                       "translit": "būd"
                     }
                   ],
-                  "translit": "gap zad gōyā mu'allem būd",
+                  "translit": "gap zad gōyā mu'allim būd",
                   "extraWords": [
                     {
                       "target": "چون",
@@ -13414,7 +13414,7 @@
                     },
                     {
                       "target": "مثل",
-                      "translit": "mesl",
+                      "translit": "misl",
                       "en": "like"
                     },
                     {
@@ -13552,16 +13552,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "معلم درس را شروع نمود",
-                  "translit": "mu'allem dars rā shurū' namūd",
+                  "translit": "mu'allim dars rā shurū' namūd",
                   "en": "The teacher began the lesson. (formal)",
                   "distractorsTarget": [
                     {
                       "target": "معلم درس را شروع کرد",
-                      "translit": "mu'allem dars rā shurū' kard"
+                      "translit": "mu'allim dars rā shurū' kard"
                     },
                     {
                       "target": "معلم درس را شروع گردید",
-                      "translit": "mu'allem dars rā shurū' gardīd"
+                      "translit": "mu'allim dars rā shurū' gardīd"
                     }
                   ]
                 },
@@ -13585,7 +13585,7 @@
                   "id": "ge-76-6",
                   "type": "fillBlank",
                   "target": "رئیس نامه را امضا ___",
-                  "translit": "ra'īs nāma rā emzā ___",
+                  "translit": "ra'īs nāma rā imzā ___",
                   "en": "The chief signed the letter. (formal)",
                   "answer": {
                     "target": "نمود",
@@ -13687,7 +13687,7 @@
                   "id": "ge-77-4",
                   "type": "fillBlank",
                   "target": "کتاب خوب را به دست ___",
-                  "translit": "ketāb-e khūb rā ba dast ___",
+                  "translit": "kitāb-e khūb rā ba dast ___",
                   "en": "He obtained a good book.",
                   "answer": {
                     "target": "آورد",
@@ -13958,22 +13958,22 @@
               "title": "With respect",
               "subtitle": "Formal address",
               "grammarPoint": "formal-address",
-              "grammarPointEn": "Formal address and honorifics: mohtaram (respected), jenāb (sir/His Excellency), and the polite plural shumā for a single addressee in official settings.",
+              "grammarPointEn": "Formal address and honorifics: mohtaram (respected), janāb (sir/His Excellency), and the polite plural shumā for a single addressee in official settings.",
               "slides": [
                 {
                   "id": "gs-79-1",
                   "title": "Speaking with deference",
-                  "body": "In official Dari you address people with honorifics: mohtaram (respected) before a title, jenāb (sir) for high standing, and always the polite plural shumā.",
+                  "body": "In official Dari you address people with honorifics: mohtaram (respected) before a title, janāb (sir) for high standing, and always the polite plural shumā.",
                   "examples": [
                     {
                       "target": "معلم محترم، خوش آمدید",
-                      "translit": "mu'allem-e mohtaram, khush āmadēd",
+                      "translit": "mu'allim-e mohtaram, khush āmadēd",
                       "en": "Respected teacher, welcome.",
                       "highlight": "محترم"
                     },
                     {
                       "target": "جناب رئیس تشریف آوردند",
-                      "translit": "jenāb-e ra'īs tashrīf āwardand",
+                      "translit": "janāb-e ra'īs tashrīf āwardand",
                       "en": "His Excellency the chief arrived.",
                       "highlight": "جناب"
                     }
@@ -13985,7 +13985,7 @@
                   "id": "ge-79-1",
                   "type": "fillBlank",
                   "target": "معلم ___، خوش آمدید",
-                  "translit": "mu'allem-e ___, khush āmadēd",
+                  "translit": "mu'allim-e ___, khush āmadēd",
                   "en": "Respected teacher, welcome.",
                   "answer": {
                     "target": "محترم",
@@ -14007,7 +14007,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "جناب رئیس آمدند",
-                  "translit": "jenāb-e ra'īs āmadand",
+                  "translit": "janāb-e ra'īs āmadand",
                   "en": "His Excellency the chief came.",
                   "distractorsEn": [
                     "The chief's friend came.",
@@ -14026,7 +14026,7 @@
                     },
                     {
                       "target": "جناب",
-                      "translit": "jenāb",
+                      "translit": "janāb",
                       "en": "sir / Excellency"
                     },
                     {
@@ -14063,7 +14063,7 @@
                   "id": "ge-79-5",
                   "type": "spotError",
                   "target": "جناب رئیس، تو کجا می‌روی؟",
-                  "translit": "jenāb-e ra'īs, tu kujā mērawī?",
+                  "translit": "janāb-e ra'īs, tu kujā mērawī?",
                   "en": "Your Excellency, where are you going?",
                   "errorWord": {
                     "target": "می‌روی",
@@ -14083,7 +14083,7 @@
                   "en": "Your Excellency the chief, welcome.",
                   "answer": {
                     "target": "جناب",
-                    "translit": "jenāb"
+                    "translit": "janāb"
                   },
                   "distractors": [
                     {
@@ -14112,7 +14112,7 @@
                   "examples": [
                     {
                       "target": "تصمیم گرفته شد",
-                      "translit": "tasmīm gerefta shud",
+                      "translit": "tasmīm girifta shud",
                       "en": "The decision was made.",
                       "highlight": "گرفته شد"
                     },
@@ -14131,7 +14131,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "تصمیم گرفته شد",
-                  "translit": "tasmīm gerefta shud",
+                  "translit": "tasmīm girifta shud",
                   "en": "The decision was made.",
                   "distractorsEn": [
                     "He made a decision.",
@@ -14166,12 +14166,12 @@
                   "pairs": [
                     {
                       "target": "تصمیم گرفت",
-                      "translit": "tasmīm gereft",
+                      "translit": "tasmīm girift",
                       "en": "he decided"
                     },
                     {
                       "target": "تصمیم گرفته شد",
-                      "translit": "tasmīm gerefta shud",
+                      "translit": "tasmīm girifta shud",
                       "en": "the decision was made"
                     },
                     {
@@ -14197,14 +14197,14 @@
                     },
                     {
                       "target": "نوشته",
-                      "translit": "neweshta"
+                      "translit": "nawishta"
                     },
                     {
                       "target": "گردید",
                       "translit": "gardīd"
                     }
                   ],
-                  "translit": "nāma neweshta gardīd",
+                  "translit": "nāma nawishta gardīd",
                   "extraWords": [
                     {
                       "target": "کرد",
@@ -14234,7 +14234,7 @@
                   "id": "ge-80-6",
                   "type": "spotError",
                   "target": "نامه امضا کرده شد توسط رئیس",
-                  "translit": "nāma emzā karda shud tawassot-e ra'īs",
+                  "translit": "nāma imzā karda shud tawassot-e ra'īs",
                   "en": "The letter was signed by the chief.",
                   "errorWord": {
                     "target": "کرده",
@@ -14268,7 +14268,7 @@
                     },
                     {
                       "target": "معنی این کلمه چیست؟",
-                      "translit": "ma'nā-ye īn kalema chīst?",
+                      "translit": "ma'nā-ye īn kalima chīst?",
                       "en": "What is the meaning of this word?",
                       "highlight": "معنی"
                     }
@@ -14302,7 +14302,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "معنی این کلمه چیست؟",
-                  "translit": "ma'nā-ye īn kalema chīst?",
+                  "translit": "ma'nā-ye īn kalima chīst?",
                   "en": "What is the meaning of this word?",
                   "distractorsEn": [
                     "What is your intention?",
@@ -14331,7 +14331,7 @@
                     },
                     {
                       "target": "کلمه",
-                      "translit": "kalema",
+                      "translit": "kalima",
                       "en": "word"
                     }
                   ]
@@ -14358,7 +14358,7 @@
                   "id": "ge-81-5",
                   "type": "fillBlank",
                   "target": "___ این کلمه را نمی‌دانم",
-                  "translit": "___ īn kalema rā namēdānam",
+                  "translit": "___ īn kalima rā namēdānam",
                   "en": "I don't know the meaning of this word.",
                   "answer": {
                     "target": "معنی",
@@ -14379,7 +14379,7 @@
                   "id": "ge-81-6",
                   "type": "spotError",
                   "target": "قصد این کلمه چیست؟",
-                  "translit": "qasd-e īn kalema chīst?",
+                  "translit": "qasd-e īn kalima chīst?",
                   "en": "What is the meaning of this word?",
                   "errorWord": {
                     "target": "قصد",
@@ -14526,16 +14526,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "خودت این را نوشتی؟",
-                  "translit": "khudat īn rā neweshtī?",
+                  "translit": "khudat īn rā nawishtī?",
                   "en": "Did you write this yourself?",
                   "distractorsTarget": [
                     {
                       "target": "خودم این را نوشتم؟",
-                      "translit": "khudam īn rā neweshtam?"
+                      "translit": "khudam īn rā nawishtam?"
                     },
                     {
                       "target": "این را نوشتی؟",
-                      "translit": "īn rā neweshtī?"
+                      "translit": "īn rā nawishtī?"
                     }
                   ]
                 },
@@ -14543,7 +14543,7 @@
                   "id": "ge-82-6",
                   "type": "fillBlank",
                   "target": "___ رئیس نامه را امضا کرد",
-                  "translit": "___ ra'īs nāma rā emzā kard",
+                  "translit": "___ ra'īs nāma rā imzā kard",
                   "en": "The chief himself signed the letter.",
                   "answer": {
                     "target": "خود",
@@ -14556,7 +14556,7 @@
                     },
                     {
                       "target": "برای",
-                      "translit": "barāye"
+                      "translit": "barā-ye"
                     }
                   ]
                 }
@@ -14567,7 +14567,7 @@
               "title": "Fronting for effect",
               "subtitle": "Marked word order",
               "grammarPoint": "fronting",
-              "grammarPointEn": "Marked word order: moving an object or adverb to the front for emphasis, keeping the verb final: īn ketāb rā man khāndam (THIS book, I read).",
+              "grammarPointEn": "Marked word order: moving an object or adverb to the front for emphasis, keeping the verb final: īn kitāb rā man khāndam (THIS book, I read).",
               "slides": [
                 {
                   "id": "gs-83-1",
@@ -14576,7 +14576,7 @@
                   "examples": [
                     {
                       "target": "این کتاب را من خواندم",
-                      "translit": "īn ketāb rā man khāndam",
+                      "translit": "īn kitāb rā man khāndam",
                       "en": "This book, I read (it).",
                       "highlight": "این کتاب را"
                     }
@@ -14589,7 +14589,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "این کتاب را من خواندم",
-                  "translit": "īn ketāb rā man khāndam",
+                  "translit": "īn kitāb rā man khāndam",
                   "en": "This book, I read.",
                   "distractorsEn": [
                     "I read a book.",
@@ -14611,14 +14611,14 @@
                     },
                     {
                       "target": "نوشت",
-                      "translit": "newesht"
+                      "translit": "nawisht"
                     }
                   ],
-                  "translit": "ān nāma rā ō newesht",
+                  "translit": "ān nāma rā ō nawisht",
                   "extraWords": [
                     {
                       "target": "نوشتم",
-                      "translit": "neweshtam"
+                      "translit": "nawishtam"
                     }
                   ],
                   "altOrders": [
@@ -14650,16 +14650,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "امروز به کابل می‌رویم",
-                  "translit": "emrōz ba kābul mērawēm",
+                  "translit": "imrōz ba kābul mērawēm",
                   "en": "Today, we go to Kabul.",
                   "distractorsTarget": [
                     {
                       "target": "به کابل امروز می‌رویم",
-                      "translit": "ba kābul emrōz mērawēm"
+                      "translit": "ba kābul imrōz mērawēm"
                     },
                     {
                       "target": "امروز کابل را می‌بینیم",
-                      "translit": "emrōz kābul rā mēbīnēm"
+                      "translit": "imrōz kābul rā mēbīnēm"
                     }
                   ]
                 },
@@ -14670,22 +14670,22 @@
                   "pairs": [
                     {
                       "target": "من کتاب را خواندم",
-                      "translit": "man ketāb rā khāndam",
+                      "translit": "man kitāb rā khāndam",
                       "en": "I read the book"
                     },
                     {
                       "target": "کتاب را من خواندم",
-                      "translit": "ketāb rā man khāndam",
+                      "translit": "kitāb rā man khāndam",
                       "en": "the book, I read"
                     },
                     {
                       "target": "او نامه نوشت",
-                      "translit": "ō nāma newesht",
+                      "translit": "ō nāma nawisht",
                       "en": "he wrote a letter"
                     },
                     {
                       "target": "نامه را او نوشت",
-                      "translit": "nāma rā ō newesht",
+                      "translit": "nāma rā ō nawisht",
                       "en": "the letter, he wrote"
                     }
                   ]
@@ -14718,7 +14718,7 @@
               "title": "Heavy noun phrases",
               "subtitle": "Long ezafe chains",
               "grammarPoint": "ezafe-chains",
-              "grammarPointEn": "Reading long ezāfa chains that stack modifiers and possessors: ketāb-e naw-e mu'allem-e mektab-e mā (our school's teacher's new book).",
+              "grammarPointEn": "Reading long ezāfa chains that stack modifiers and possessors: kitāb-e naw-e mu'allim-e mektab-e mā (our school's teacher's new book).",
               "slides": [
                 {
                   "id": "gs-84-1",
@@ -14727,7 +14727,7 @@
                   "examples": [
                     {
                       "target": "کتاب نو معلم مکتب ما",
-                      "translit": "ketāb-e naw-e mu'allem-e maktab-e mā",
+                      "translit": "kitāb-e naw-e mu'allim-e maktab-e mā",
                       "en": "The new book of our school's teacher.",
                       "highlight": "معلم مکتب ما"
                     }
@@ -14740,7 +14740,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "کتاب نو معلم مکتب ما",
-                  "translit": "ketāb-e naw-e mu'allem-e maktab-e mā",
+                  "translit": "kitāb-e naw-e mu'allim-e maktab-e mā",
                   "en": "The new book of our school's teacher.",
                   "distractorsEn": [
                     "Our teacher's new school book.",
@@ -14801,7 +14801,7 @@
                     },
                     {
                       "target": "کتاب معلم",
-                      "translit": "ketāb-e mu'allem",
+                      "translit": "kitāb-e mu'allim",
                       "en": "the teacher's book"
                     },
                     {
@@ -14821,16 +14821,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "قلم نو دختر معلم",
-                  "translit": "qalam-e naw-e dukhtar-e mu'allem",
+                  "translit": "qalam-e naw-e dukhtar-e mu'allim",
                   "en": "The teacher's daughter's new pen.",
                   "distractorsTarget": [
                     {
                       "target": "قلم نو معلم دختر",
-                      "translit": "qalam-e naw-e mu'allem-e dukhtar"
+                      "translit": "qalam-e naw-e mu'allim-e dukhtar"
                     },
                     {
                       "target": "دختر معلم قلم نو",
-                      "translit": "dukhtar-e mu'allem-e qalam-e naw"
+                      "translit": "dukhtar-e mu'allim-e qalam-e naw"
                     }
                   ]
                 },
@@ -14838,7 +14838,7 @@
                   "id": "ge-84-6",
                   "type": "fillBlank",
                   "target": "کتاب ___ برادر من مقبول است",
-                  "translit": "ketāb-e ___ barādar-e man maqbūl ast",
+                  "translit": "kitāb-e ___ barādar-e man maqbūl ast",
                   "en": "My brother's new book is beautiful.",
                   "answer": {
                     "target": "نو",
@@ -14903,7 +14903,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "کار امروز را به فردا نکن",
-                  "translit": "kār-e emrōz rā ba fardā nakun",
+                  "translit": "kār-e imrōz rā ba fardā nakun",
                   "en": "Don't leave today's work for tomorrow.",
                   "distractorsEn": [
                     "Do tomorrow's work today.",
@@ -14927,7 +14927,7 @@
                     },
                     {
                       "target": "کتاب بهترین دوست است",
-                      "translit": "ketāb bihtarīn dōst ast",
+                      "translit": "kitāb bihtarīn dōst ast",
                       "en": "a book is the best friend"
                     },
                     {
@@ -15179,7 +15179,7 @@
                   "id": "ge-87-3",
                   "type": "fillBlank",
                   "target": "این کلمه را در نوشته خود به کار ___",
-                  "translit": "īn kalema rā dar neweshta-ye khud ba kār ___",
+                  "translit": "īn kalima rā dar nawishta-ye khud ba kār ___",
                   "en": "He used this word in his writing.",
                   "answer": {
                     "target": "برد",
@@ -15279,7 +15279,7 @@
                   "examples": [
                     {
                       "target": "از یک سو خوب است، از سوی دیگر گران است",
-                      "translit": "az yak sū khūb ast, az sū-ye dīgar gerān ast",
+                      "translit": "az yak sū khūb ast, az sū-ye dīgar girān ast",
                       "en": "On one hand it's good, on the other it's expensive.",
                       "highlight": "از یک سو"
                     }
@@ -15291,7 +15291,7 @@
                   "id": "ge-88-1",
                   "type": "fillBlank",
                   "target": "___ خوب است، از سوی دیگر گران است",
-                  "translit": "___ khūb ast, az sū-ye dīgar gerān ast",
+                  "translit": "___ khūb ast, az sū-ye dīgar girān ast",
                   "en": "On one hand it's good, on the other it's expensive.",
                   "answer": {
                     "target": "از یک سو",
@@ -15421,18 +15421,18 @@
             {
               "id": "gl-89",
               "title": "Hedging your claim",
-              "subtitle": "ehtemālan, ba gumān-e man",
+              "subtitle": "ihtimālan, ba gumān-e man",
               "grammarPoint": "hedging-stance",
-              "grammarPointEn": "Marking stance and probability: ehtemālan (probably), ba gumān-e man (in my opinion), ba har hāl (in any case).",
+              "grammarPointEn": "Marking stance and probability: ihtimālan (probably), ba gumān-e man (in my opinion), ba har hāl (in any case).",
               "slides": [
                 {
                   "id": "gs-89-1",
                   "title": "How sure are you?",
-                  "body": "Careful writers mark how strongly they claim something: ehtemālan (probably), ba gumān-e man (in my view). These soften or frame an assertion.",
+                  "body": "Careful writers mark how strongly they claim something: ihtimālan (probably), ba gumān-e man (in my view). These soften or frame an assertion.",
                   "examples": [
                     {
                       "target": "احتمالاً فردا می‌آید",
-                      "translit": "ehtemālan fardā mēāyad",
+                      "translit": "ihtimālan fardā mēāyad",
                       "en": "He'll probably come tomorrow.",
                       "highlight": "احتمالاً"
                     },
@@ -15454,7 +15454,7 @@
                   "en": "He'll probably come tomorrow.",
                   "answer": {
                     "target": "احتمالاً",
-                    "translit": "ehtemālan"
+                    "translit": "ihtimālan"
                   },
                   "distractors": [
                     {
@@ -15463,7 +15463,7 @@
                     },
                     {
                       "target": "هرگز",
-                      "translit": "hargez"
+                      "translit": "hargiz"
                     }
                   ]
                 },
@@ -15486,7 +15486,7 @@
                   "pairs": [
                     {
                       "target": "احتمالاً",
-                      "translit": "ehtemālan",
+                      "translit": "ihtimālan",
                       "en": "probably"
                     },
                     {
@@ -15511,7 +15511,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "احتمالاً او رفته است",
-                  "translit": "ehtemālan ō rafta ast",
+                  "translit": "ihtimālan ō rafta ast",
                   "en": "He has probably gone.",
                   "distractorsTarget": [
                     {
@@ -15520,7 +15520,7 @@
                     },
                     {
                       "target": "او هرگز نرفته است",
-                      "translit": "ō hargez narafta ast"
+                      "translit": "ō hargiz narafta ast"
                     }
                   ]
                 },
@@ -15528,17 +15528,17 @@
                   "id": "ge-89-5",
                   "type": "spotError",
                   "target": "هرگز فردا می‌آید",
-                  "translit": "hargez fardā mēāyad",
+                  "translit": "hargiz fardā mēāyad",
                   "en": "He'll probably come tomorrow.",
                   "errorWord": {
                     "target": "هرگز",
-                    "translit": "hargez"
+                    "translit": "hargiz"
                   },
                   "correction": {
                     "target": "احتمالاً",
-                    "translit": "ehtemālan"
+                    "translit": "ihtimālan"
                   },
-                  "hint": "'Probably' is ehtemālan; hargez means 'never'."
+                  "hint": "'Probably' is ihtimālan; hargiz means 'never'."
                 },
                 {
                   "id": "ge-89-6",
@@ -15680,16 +15680,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "اگرچه پول نداشت، با این هم کتاب خرید",
-                  "translit": "agarchi pūl nadāsht, bā īn ham ketāb kharīd",
+                  "translit": "agarchi pūl nadāsht, bā īn ham kitāb kharīd",
                   "en": "Although he had no money, even so he bought a book.",
                   "distractorsTarget": [
                     {
                       "target": "چون پول نداشت، کتاب نخرید",
-                      "translit": "chun pūl nadāsht, ketāb nakharīd"
+                      "translit": "chun pūl nadāsht, kitāb nakharīd"
                     },
                     {
                       "target": "پول نداشت بنابراین کتاب نخرید",
-                      "translit": "pūl nadāsht binābar'īn ketāb nakharīd"
+                      "translit": "pūl nadāsht binābar'īn kitāb nakharīd"
                     }
                   ]
                 },
@@ -15950,7 +15950,7 @@
                   "id": "ge-92-4",
                   "type": "spotError",
                   "target": "جناب رئیس، بیا اینجا",
-                  "translit": "jenāb-e ra'īs, biyā īnjā",
+                  "translit": "janāb-e ra'īs, biyā īnjā",
                   "en": "Your Excellency, please come here.",
                   "errorWord": {
                     "target": "بیا",
@@ -15967,16 +15967,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "به معلم محترم: لطفاً بنشینید",
-                  "translit": "ba mu'allem-e mohtaram: lutfan buneshīnēd",
+                  "translit": "ba mu'allim-e mohtaram: lutfan bunishīnēd",
                   "en": "To the respected teacher: please sit.",
                   "distractorsTarget": [
                     {
                       "target": "به معلم: بشین",
-                      "translit": "ba mu'allem: bushin"
+                      "translit": "ba mu'allim: bushin"
                     },
                     {
                       "target": "به دوست: بنشینید",
-                      "translit": "ba dōst: buneshīnēd"
+                      "translit": "ba dōst: bunishīnēd"
                     }
                   ]
                 },
@@ -15985,7 +15985,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "رئیس تصمیم را اتخاذ نمود",
-                  "translit": "ra'īs tasmīm rā etekhāz namūd",
+                  "translit": "ra'īs tasmīm rā itikhāz namūd",
                   "en": "The chief made the decision. (formal)",
                   "distractorsEn": [
                     "The chief will decide.",
@@ -16019,7 +16019,7 @@
                   "id": "ge-93-1",
                   "type": "spotError",
                   "target": "جناب رئیس، تو کجا می‌روی؟",
-                  "translit": "jenāb-e ra'īs, tu kujā mērawī?",
+                  "translit": "janāb-e ra'īs, tu kujā mērawī?",
                   "en": "Your Excellency, where are you going?",
                   "errorWord": {
                     "target": "می‌روی",
@@ -16092,7 +16092,7 @@
                   "words": [
                     {
                       "target": "این کتاب را",
-                      "translit": "īn ketāb rā"
+                      "translit": "īn kitāb rā"
                     },
                     {
                       "target": "خودم",
@@ -16103,7 +16103,7 @@
                       "translit": "khāndam"
                     }
                   ],
-                  "translit": "īn ketāb rā khudam khāndam",
+                  "translit": "īn kitāb rā khudam khāndam",
                   "extraWords": [
                     {
                       "target": "خودش",
@@ -16123,7 +16123,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "احتمالاً او هنوز نیامده است",
-                  "translit": "ehtemālan ō hanōz nayāmada ast",
+                  "translit": "ihtimālan ō hanōz nayāmada ast",
                   "en": "He has probably not come yet.",
                   "distractorsTarget": [
                     {
@@ -16174,7 +16174,7 @@
                     },
                     {
                       "target": "احتمالاً",
-                      "translit": "ehtemālan",
+                      "translit": "ihtimālan",
                       "en": "probably"
                     }
                   ]
