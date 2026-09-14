@@ -3,7 +3,7 @@
  * - navigations & API reads: network-first with cache fallback
  * Push handling arrives in Phase 3 (Declarative Web Push payloads). */
 
-const VERSION = "darya-v1.3";
+const VERSION = "darya-v1.4";
 const STATIC_CACHE = `${VERSION}-static`;
 const PAGE_CACHE = `${VERSION}-pages`;
 
@@ -55,25 +55,48 @@ async function cacheFirst(request) {
   const cached = await caches.match(request);
   if (cached) return cached;
   const response = await fetch(request);
-  if (response.ok) {
+  if (response.ok && !response.redirected) {
     const cache = await caches.open(STATIC_CACHE);
     cache.put(request, response.clone());
   }
   return response;
 }
 
+/**
+ * How long a navigation waits on the network before a cached copy is shown.
+ * On a flaky mobile connection a request can hang for tens of seconds before
+ * it fails, and network-first used to wait all of it before falling back.
+ * Only applies when a cached copy exists; without one we keep waiting.
+ */
+const NAVIGATION_TIMEOUT_MS = 4000;
+
 async function networkFirst(request, cacheName) {
-  try {
-    const response = await fetch(request);
-    if (response.ok) {
-      const cache = await caches.open(cacheName);
-      cache.put(request, response.clone());
+  const network = fetch(request).then((response) => {
+    // Never cache a redirect under the URL that was asked for. A signed-out
+    // request for `/` is redirected to /welcome, and storing that response as
+    // `/` meant a signed-in learner opening the app offline got the sign-in
+    // screen instead of their last page.
+    if (response.ok && !response.redirected) {
+      const copy = response.clone();
+      caches.open(cacheName).then((cache) => cache.put(request, copy));
     }
     return response;
+  });
+
+  const cached = await caches.match(request);
+  if (!cached) {
+    try {
+      return await network;
+    } catch {
+      return new Response("Offline", { status: 503, headers: { "Content-Type": "text/plain" } });
+    }
+  }
+
+  const timeout = new Promise((resolve) => setTimeout(() => resolve(cached), NAVIGATION_TIMEOUT_MS));
+  try {
+    return await Promise.race([network, timeout]);
   } catch {
-    const cached = await caches.match(request);
-    if (cached) return cached;
-    return new Response("Offline", { status: 503, headers: { "Content-Type": "text/plain" } });
+    return cached;
   }
 }
 

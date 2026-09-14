@@ -271,6 +271,29 @@ export function useSignOut() {
     mutationFn: async () => {
       await db.auth.signOut();
       qc.clear();
+      await purgeCachedPages();
     },
   });
+}
+
+/**
+ * Delete the service worker's cached pages on sign-out.
+ *
+ * Signed-in pages carry the learner's session in their markup (the `(app)`
+ * layout seeds the user and profile into the client cache), and the service
+ * worker keeps the last copy of each page for offline use. Without this, the
+ * next person to open the app offline on a shared device would be served the
+ * previous learner's pages. Static assets are not personal and stay cached.
+ *
+ * Matches the `${VERSION}-pages` naming in public/sw.js. Best effort: a
+ * browser without Cache Storage has nothing to purge.
+ */
+async function purgeCachedPages(): Promise<void> {
+  if (typeof caches === "undefined") return;
+  try {
+    const names = await caches.keys();
+    await Promise.all(names.filter((n) => n.endsWith("-pages")).map((n) => caches.delete(n)));
+  } catch {
+    // Storage can be unavailable (private mode, quota); sign-out still succeeds.
+  }
 }
