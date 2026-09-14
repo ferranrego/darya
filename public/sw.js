@@ -38,6 +38,7 @@ self.addEventListener("fetch", (event) => {
   if (
     url.pathname.startsWith("/_next/static/") ||
     url.pathname.startsWith("/icons/") ||
+    url.pathname.startsWith("/poncha/") ||
     url.pathname.endsWith(".woff2")
   ) {
     event.respondWith(cacheFirst(request));

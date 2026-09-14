@@ -51,8 +51,15 @@ function useTodayXp() {
   });
 }
 
-/** Deterministic first paint (avoids a clock-based hydration mismatch). */
-const TOD_DEFAULT: TimeOfDay = { phase: "day", greeting: lang.samples.phaseGreetings.day, restPose: "greet", isNight: false };
+/**
+ * Deterministic first paint (avoids a clock-based hydration mismatch).
+ *
+ * `restPose` must be what `timeOfDay` returns for most of the day ("home" for
+ * morning, day and evening). It was "greet", which no phase produces, so the
+ * hero's `priority` preload fetched a still that was swapped out right after
+ * mount - a wasted image request on nearly every Home visit.
+ */
+const TOD_DEFAULT: TimeOfDay = { phase: "day", greeting: lang.samples.phaseGreetings.day, restPose: "home", isNight: false };
 
 type ActionKey = "alphabet" | "grammar" | "read" | "review" | "journey" | "practice";
 

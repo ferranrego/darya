@@ -20,18 +20,33 @@ const scheherazade = Scheherazade_New({
   variable: "--font-scheherazade",
   subsets: ["arabic"],
   weight: ["400", "700"],
+  // Opt-in reading font (Profile's picker): not preloaded. The @font-face rule
+  // still ships, so the browser fetches the file only once FontManager's
+  // `.use-*` class renders text in it. Preloading all three cost
+  // every visitor ~350 KB of fonts that almost nobody selects.
+  preload: false,
 });
 
 const amiri = Amiri({
   variable: "--font-amiri",
   subsets: ["arabic"],
   weight: ["400", "700"],
+  // Opt-in reading font (Profile's picker): not preloaded. The @font-face rule
+  // still ships, so the browser fetches the file only once FontManager's
+  // `.use-*` class renders text in it. Preloading all three cost
+  // every visitor ~350 KB of fonts that almost nobody selects.
+  preload: false,
 });
 
 const lateef = Lateef({
   variable: "--font-lateef",
   subsets: ["arabic"],
   weight: ["400"],
+  // Opt-in reading font (Profile's picker): not preloaded. The @font-face rule
+  // still ships, so the browser fetches the file only once FontManager's
+  // `.use-*` class renders text in it. Preloading all three cost
+  // every visitor ~350 KB of fonts that almost nobody selects.
+  preload: false,
 });
 
 export const metadata: Metadata = {

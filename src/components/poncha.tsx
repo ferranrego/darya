@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 /**
  * Poncha (پونچا) - the app's mascot, a golden Kabul street puppy who accompanies
@@ -47,20 +50,7 @@ export function Poncha({
 }) {
   const p = POSES[pose];
   const anim = animated ? ANIMATED[pose] : undefined;
-  if (anim) {
-    // Plain <img>: the Next image optimizer would re-encode away the frames.
-    return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src={anim.src}
-        alt={p.alt}
-        width={anim.w}
-        height={anim.h}
-        style={{ height: size, width: "auto" }}
-        className={`pointer-events-none select-none ${className}`}
-      />
-    );
-  }
+  if (anim) return <AnimatedPoncha still={p} anim={anim} size={size} priority={priority} className={className} />;
   return (
     <Image
       src={p.src}
@@ -71,5 +61,71 @@ export function Poncha({
       style={{ height: size, width: "auto" }}
       className={`pointer-events-none select-none ${className}`}
     />
+  );
+}
+
+/**
+ * The still first, the animation when it has arrived.
+ *
+ * The looping wave is a 725 KB animated WebP and it sat on /welcome as the
+ * largest image on the page, so the first thing a new visitor saw was an empty
+ * box while it downloaded. The 46 KB still now paints immediately (and is what
+ * `priority` preloads), and the animation fades in over it once decoded.
+ *
+ * The box is sized to the animation's aspect ratio - its final state - so the
+ * swap cannot shift the layout; the still is centred inside it.
+ */
+function AnimatedPoncha({
+  still,
+  anim,
+  size,
+  priority,
+  className,
+}: {
+  still: { src: string; w: number; h: number; alt: string };
+  anim: { src: string; w: number; h: number };
+  size: number;
+  priority: boolean;
+  className: string;
+}) {
+  const [ready, setReady] = useState(false);
+  // A cached animation can finish loading before hydration attaches onLoad,
+  // which would leave the still showing forever. A ref callback runs when the
+  // element is attached, so it sees that case without a setState-in-effect.
+  const checkLoaded = (el: HTMLImageElement | null) => {
+    if (el?.complete && el.naturalWidth > 0) setReady(true);
+  };
+
+  return (
+    <span
+      className={`pointer-events-none relative inline-flex select-none items-center justify-center ${className}`}
+      style={{ height: size, width: (size * anim.w) / anim.h }}
+    >
+      <Image
+        src={still.src}
+        alt={ready ? "" : still.alt}
+        aria-hidden={ready}
+        width={still.w}
+        height={still.h}
+        priority={priority}
+        style={{ height: size, width: "auto", opacity: ready ? 0 : 1 }}
+        className="transition-opacity duration-300"
+      />
+      {/* Plain <img>: the Next image optimizer would re-encode away the frames. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        ref={checkLoaded}
+        src={anim.src}
+        alt={ready ? still.alt : ""}
+        aria-hidden={!ready}
+        width={anim.w}
+        height={anim.h}
+        fetchPriority="low"
+        decoding="async"
+        onLoad={() => setReady(true)}
+        style={{ height: size, width: "auto", opacity: ready ? 1 : 0 }}
+        className="absolute inset-0 m-auto transition-opacity duration-300"
+      />
+    </span>
   );
 }
