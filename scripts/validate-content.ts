@@ -40,6 +40,7 @@ import {
 import { auditHomographs } from "./audit-homographs.ts";
 import { contentRoot, targetLang } from "./content-path.ts";
 import { insertionOrderSuffix } from "./freq-integrity.ts";
+import { readBeginnerCore } from "./tag-beginner-core.ts";
 
 const lang = targetLang();
 const root = contentRoot();
@@ -364,6 +365,42 @@ if (existsSync(lexiconPath)) {
           `(freqRank tracks insertion order) - run 'node scripts/build-frequency.ts --lang ${lang} --apply'. ` +
           `First few: ${unranked.slice(0, 5).map((e) => `${e.id} ${e.target}`).join(", ")}`,
       );
+    }
+
+    const specWords = readBeginnerCore(root);
+    const index = buildIndex(lexicon.entries);
+    const specWanted = new Set<string>();
+    for (const req of specWords) {
+      if (index.resolve(req)) {
+        specWanted.add(req);
+      } else {
+        const parts = tokenize(req);
+        if (parts.length > 1) {
+          parts.forEach(p => specWanted.add(p));
+        } else {
+          specWanted.add(req);
+        }
+      }
+    }
+    const hitIds = new Set<string>();
+    for (const w of specWanted) {
+      const e = index.resolve(w);
+      if (!e) {
+        fail(`lexicon: word "${w}" from beginner-spec.json is missing from lexicon`);
+      } else if (!isTeachable(e)) {
+        fail(`lexicon: word "${w}" from beginner-spec.json is unteachable`);
+      } else {
+        hitIds.add(e.id);
+      }
+    }
+    for (const e of lexicon.entries) {
+      const hasTag = e.tags.includes("beginner-core");
+      const inSpec = hitIds.has(e.id);
+      if (hasTag && !inSpec) {
+        fail(`lexicon ${e.id}: has beginner-core tag but is not in beginner-spec.json`);
+      } else if (!hasTag && inSpec) {
+        fail(`lexicon ${e.id}: is in beginner-spec.json but missing beginner-core tag. Run: node scripts/tag-beginner-core.ts --lang ${lang} --apply`);
+      }
     }
 
     console.log(

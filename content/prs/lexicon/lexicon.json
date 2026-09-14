@@ -1555,7 +1555,8 @@
       "exampleTranslit": "bacha-hā dar sarak bāzī mēkunand.",
       "exampleEn": "The children play in the street.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -1764,7 +1765,8 @@
       "exampleTranslit": "unwān-e kitāb rā khāndam.",
       "exampleEn": "I read the title of the book.",
       "tags": [
-        "Communication & Media"
+        "Communication & Media",
+        "beginner-core"
       ],
       "id": "lx-6178",
       "targetNormalized": "عنوان",
@@ -1915,7 +1917,8 @@
       "exampleTranslit": "kitāb rā paydā kardam.",
       "exampleEn": "I found the book.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ],
       "id": "lx-6167",
       "targetNormalized": "پیدا",
@@ -1937,7 +1940,8 @@
       "exampleTranslit": "darī zabān-e shīrīn ast.",
       "exampleEn": "Dari is a sweet language.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -2109,7 +2113,8 @@
       "exampleEn": "My brother talks with me.",
       "tags": [
         "Actions & Movement",
-        "beginner-core"
+        "beginner-core",
+        "super-7"
       ],
       "presentStem": "زن",
       "concreteness": true,
@@ -2190,7 +2195,8 @@
       "exampleTranslit": "pas chi kunēm?",
       "exampleEn": "So what shall we do?",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -2312,7 +2318,8 @@
       "exampleTranslit": "kābul jāy-e khūbē ast.",
       "exampleEn": "Kabul is a good place.",
       "tags": [
-        "Geography & Places"
+        "Geography & Places",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -2369,7 +2376,8 @@
       "exampleTranslit": "tūl-e īn rāh ziyād ast.",
       "exampleEn": "This road is very long.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ],
       "id": "lx-6185",
       "targetNormalized": "طول",
@@ -2706,7 +2714,8 @@
       "exampleTranslit": "afghānistān kishwar-e man ast.",
       "exampleEn": "Afghanistan is my country.",
       "tags": [
-        "Society & Politics"
+        "Society & Politics",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -2796,7 +2805,8 @@
       "exampleTranslit": "īn awwalīn rōz-e kār-e man ast.",
       "exampleEn": "This is my first day of work.",
       "tags": [
-        "Numbers & Quantities"
+        "Numbers & Quantities",
+        "beginner-core"
       ],
       "id": "lx-6169",
       "targetNormalized": "اولین",
@@ -2989,7 +2999,8 @@
       "exampleTranslit": "jōr hastēd?",
       "exampleEn": "Are you well?",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -3025,7 +3036,8 @@
       "exampleTranslit": "īn kār khayli muhim ast.",
       "exampleEn": "This job is very important.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ],
       "id": "lx-6155",
       "targetNormalized": "مهم",
@@ -3047,7 +3059,8 @@
       "exampleTranslit": "īn rang rā dōst dāram.",
       "exampleEn": "I like this color.",
       "tags": [
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -3122,7 +3135,8 @@
       "exampleTranslit": "īn kār bā'is-e mushkil shud.",
       "exampleEn": "This work caused a problem.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6168",
       "targetNormalized": "باعث",
@@ -3165,7 +3179,8 @@
       "exampleTranslit": "az dōstam kumak khāstam.",
       "exampleEn": "I asked my friend for help.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -3320,7 +3335,8 @@
       "exampleTranslit": "tīm-e mā fūtbāl bāzī mēkunad.",
       "exampleEn": "Our team plays football.",
       "tags": [
-        "Sports & Recreation"
+        "Sports & Recreation",
+        "beginner-core"
       ],
       "id": "lx-6205",
       "targetNormalized": "تیم",
@@ -3551,7 +3567,8 @@
       "exampleTranslit": "man bāyad burawam.",
       "exampleEn": "I must go.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ]
     },
     {
@@ -3738,7 +3755,8 @@
       "exampleTranslit": "rawish-e kār-e ō khūb ast.",
       "exampleEn": "His way of working is good.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6180",
       "targetNormalized": "روش",
@@ -3752,7 +3770,9 @@
       "targetNormalized": "افتادن",
       "pos": "verb",
       "glossEn": "fall",
-      "tags": [],
+      "tags": [
+        "beginner-core"
+      ],
       "concreteness": true,
       "presentStem": "افت",
       "presentStemTranslit": "uft",
@@ -3836,7 +3856,8 @@
       "exampleTranslit": "dunyā kalān ast.",
       "exampleEn": "The world is big.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6165",
       "targetNormalized": "دنیا",
@@ -3879,7 +3900,8 @@
       "exampleTranslit": "dars shurū' shud.",
       "exampleEn": "The lesson started.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -3905,7 +3927,8 @@
       "exampleTranslit": "lutfan īnjā bunishīn.",
       "exampleEn": "Please sit here.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "نشین",
       "presentStemTranslit": "nishīn",
@@ -3946,7 +3969,8 @@
       "exampleTranslit": "ō hamrāh-e man āmad.",
       "exampleEn": "He came along with me.",
       "tags": [
-        "People"
+        "People",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -3961,7 +3985,8 @@
       "exampleTranslit": "īn markaz-e shahr ast.",
       "exampleEn": "This is the city centre.",
       "tags": [
-        "Geography & Places"
+        "Geography & Places",
+        "beginner-core"
       ],
       "id": "lx-6196",
       "targetNormalized": "مرکز",
@@ -3999,7 +4024,8 @@
       "exampleTranslit": "kār rā idāma dādēm.",
       "exampleEn": "We continued the work.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6171",
       "targetNormalized": "ادامه",
@@ -4044,7 +4070,8 @@
       "exampleTranslit": "dar īn mōrid suhbat kun.",
       "exampleEn": "Talk about this subject.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -4059,7 +4086,8 @@
       "exampleTranslit": "ō wārid-e khāna shud.",
       "exampleEn": "He entered the house.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "id": "lx-6173",
       "targetNormalized": "وارد",
@@ -4422,7 +4450,8 @@
       "exampleTranslit": "manzūr-e man īn būd.",
       "exampleEn": "My intention was this.",
       "tags": [
-        "Advanced"
+        "Advanced",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -4503,7 +4532,8 @@
       "exampleTranslit": "hāl-e shumā chitōr ast?",
       "exampleEn": "How is your condition? (How are you?)",
       "tags": [
-        "Society & Politics"
+        "Society & Politics",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -4544,7 +4574,8 @@
       "exampleTranslit": "faqat yak kitāb dāram.",
       "exampleEn": "I only have one book.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -4558,7 +4589,8 @@
       "exampleTranslit": "ō yak insān-e khūb ast.",
       "exampleEn": "He is a good person.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ],
       "id": "lx-6187",
       "targetNormalized": "انسان",
@@ -4577,7 +4609,8 @@
       "exampleTranslit": "marg-e ō khabar-e bad būd.",
       "exampleEn": "His death was bad news.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6175",
       "targetNormalized": "مرگ",
@@ -4625,7 +4658,8 @@
       "exampleTranslit": "īn chi naw'-e kitābī ast?",
       "exampleEn": "What kind of book is this?",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6197",
       "targetNormalized": "نوع",
@@ -4644,7 +4678,8 @@
       "exampleTranslit": "khāna-ye mā dar īn samt ast.",
       "exampleEn": "Our house is on this side.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6172",
       "targetNormalized": "سمت",
@@ -4757,7 +4792,8 @@
       "exampleTranslit": "nazar-e shumā chīst?",
       "exampleEn": "What is your opinion?",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -4796,7 +4832,8 @@
       "exampleTranslit": "chāy rā bā qand mēkhuram.",
       "exampleEn": "I drink tea with sugar.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -4875,7 +4912,8 @@
       "exampleTranslit": "az tēlifōn istifāda kun.",
       "exampleEn": "Use the phone.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -4894,7 +4932,8 @@
       "exampleTranslit": "īn āhang mash'hūr ast.",
       "exampleEn": "This song is famous.",
       "tags": [
-        "Arts & Entertainment"
+        "Arts & Entertainment",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -4933,8 +4972,7 @@
       "exampleTranslit": "īn khayli khūb ast.",
       "exampleEn": "This is very good.",
       "tags": [
-        "Descriptions & Qualities",
-        "beginner-core"
+        "Descriptions & Qualities"
       ],
       "concreteness": true
     },
@@ -5013,7 +5051,8 @@
       "exampleTranslit": "chāy āmāda ast.",
       "exampleEn": "The tea is ready.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -5031,7 +5070,8 @@
       "exampleTranslit": "jang khāna-hā rā kharāb kard.",
       "exampleEn": "The war destroyed the houses.",
       "tags": [
-        "Society & Politics"
+        "Society & Politics",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -5125,7 +5165,8 @@
       "exampleTranslit": "kār tamām shud.",
       "exampleEn": "The work is finished.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -5177,7 +5218,8 @@
       "exampleTranslit": "ānjā āb wujūd dārad.",
       "exampleEn": "There is water there.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -5192,7 +5234,8 @@
       "exampleTranslit": "mahall-e kār-e man nazdīk ast.",
       "exampleEn": "My workplace is near.",
       "tags": [
-        "Geography & Places"
+        "Geography & Places",
+        "beginner-core"
       ],
       "id": "lx-6201",
       "targetNormalized": "محل",
@@ -5215,7 +5258,8 @@
       "exampleTranslit": "man fikr mēkunam.",
       "exampleEn": "I think.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -5272,7 +5316,8 @@
       "exampleTranslit": "mā dar īn mantaqa zindagī mēkunēm.",
       "exampleEn": "We live in this region.",
       "tags": [
-        "Geography & Places"
+        "Geography & Places",
+        "beginner-core"
       ],
       "id": "lx-6195",
       "targetNormalized": "منطقه",
@@ -5295,7 +5340,8 @@
       "exampleTranslit": "man tanhā hastam.",
       "exampleEn": "I am alone.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -5371,7 +5417,8 @@
       "exampleTranslit": "bacha-hā fūtbāl bāzī mēkunand.",
       "exampleEn": "The boys play football.",
       "tags": [
-        "Sports & Recreation"
+        "Sports & Recreation",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -5412,7 +5459,8 @@
       "exampleTranslit": "nān-e tāza kharīdam.",
       "exampleEn": "I bought fresh bread.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -5430,7 +5478,8 @@
       "exampleTranslit": "zamān nadāram.",
       "exampleEn": "I don't have time.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -5445,7 +5494,8 @@
       "exampleTranslit": "khānawāda-ye man kalān ast.",
       "exampleEn": "My family is big.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ],
       "id": "lx-6164",
       "targetNormalized": "خانواده",
@@ -5468,7 +5518,8 @@
       "exampleTranslit": "dawlat maktab-e naw sākht.",
       "exampleEn": "The government built a new school.",
       "tags": [
-        "Society & Politics"
+        "Society & Politics",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -5507,7 +5558,8 @@
       "exampleTranslit": "anār-e qandahār bisyār khūb ast.",
       "exampleEn": "Kandahar's pomegranates are very good.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -5526,7 +5578,8 @@
       "exampleTranslit": "yak bār-e dīgar bugō.",
       "exampleEn": "Say it one more time.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -5545,7 +5598,8 @@
       "exampleTranslit": "harf nazan.",
       "exampleEn": "Don't talk.",
       "tags": [
-        "Communication & Media"
+        "Communication & Media",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -5564,7 +5618,8 @@
       "exampleTranslit": "libās-e naw pōshīdam.",
       "exampleEn": "I wore new clothes.",
       "tags": [
-        "Clothing & Fashion"
+        "Clothing & Fashion",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -5583,7 +5638,8 @@
       "exampleTranslit": "khūb bāshad.",
       "exampleEn": "It should be good.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ]
     },
     {
@@ -5603,7 +5659,8 @@
       "exampleTranslit": "ō rā kushtand.",
       "exampleEn": "They killed him.",
       "tags": [
-        "Law & Justice"
+        "Law & Justice",
+        "beginner-core"
       ],
       "presentStem": "کش"
     },
@@ -5642,7 +5699,8 @@
       "exampleTranslit": "qabl az zuhr mēāyam.",
       "exampleEn": "I will come before noon.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -5700,7 +5758,8 @@
       "exampleTranslit": "khāna sākhtēm.",
       "exampleEn": "We built a house.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "ساز",
       "presentStemTranslit": "sāz"
@@ -5720,7 +5779,8 @@
       "exampleTranslit": "kasē dar khāna nēst.",
       "exampleEn": "No one is at home.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -5759,7 +5819,8 @@
       "exampleTranslit": "ō jawāb-e sawāl rā dād.",
       "exampleEn": "He gave the answer to the question.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -5774,7 +5835,8 @@
       "exampleTranslit": "izdiwāj-e ānhā khūb ast.",
       "exampleEn": "Their marriage is good.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ],
       "id": "lx-6174",
       "targetNormalized": "ازدواج",
@@ -5837,7 +5899,8 @@
       "exampleTranslit": "badan-e man dard mēkunad.",
       "exampleEn": "My body hurts.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ],
       "id": "lx-6184",
       "targetNormalized": "بدن",
@@ -5881,7 +5944,8 @@
       "exampleTranslit": "khabar-hā-ye imrōz rā shunīdī?",
       "exampleEn": "Did you hear today's news?",
       "tags": [
-        "Communication & Media"
+        "Communication & Media",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -5920,7 +5984,8 @@
       "exampleTranslit": "az kōh aks giriftam.",
       "exampleEn": "I took a photo of the mountain.",
       "tags": [
-        "Arts & Entertainment"
+        "Arts & Entertainment",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -5939,7 +6004,8 @@
       "exampleTranslit": "īn kār mumkin ast.",
       "exampleEn": "This task is possible.",
       "tags": [
-        "Grammar & Connectors"
+        "Grammar & Connectors",
+        "beginner-core"
       ]
     },
     {
@@ -5957,7 +6023,8 @@
       "exampleTranslit": "marā bibakhsh.",
       "exampleEn": "Forgive me.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "بخش"
     },
@@ -6004,7 +6071,8 @@
       "exampleTranslit": "libās-e garm bupōsh.",
       "exampleEn": "Wear warm clothes.",
       "tags": [
-        "Clothing & Fashion"
+        "Clothing & Fashion",
+        "beginner-core"
       ],
       "presentStem": "پوش",
       "concreteness": true
@@ -6024,7 +6092,8 @@
       "exampleTranslit": "dōbāra bugō.",
       "exampleEn": "Say it again.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -6058,7 +6127,8 @@
       "exampleTranslit": "hama mardum barābar hastand.",
       "exampleEn": "All people are equal.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ],
       "id": "lx-6198",
       "targetNormalized": "برابر",
@@ -6080,7 +6150,8 @@
       "exampleTranslit": "imshab mihmān mēāyad.",
       "exampleEn": "Tonight a guest is coming.",
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ]
     },
     {
@@ -6098,7 +6169,8 @@
       "exampleTranslit": "watan-e khud rā dōst dāram.",
       "exampleEn": "I love my homeland.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -6330,7 +6402,8 @@
       "exampleTranslit": "imshab mihmān dārēm.",
       "exampleEn": "Tonight we have guests.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -6756,7 +6829,8 @@
       "exampleTranslit": "khāla-am dar mazār zindagī mēkunad.",
       "exampleEn": "My aunt lives in Mazar.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -6952,7 +7026,8 @@
       "exampleTranslit": "ō ādam-e khūbē ast.",
       "exampleEn": "He is a good person.",
       "tags": [
-        "People & Identity"
+        "People & Identity",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -7027,7 +7102,8 @@
       "exampleTranslit": "āqā-ye rahīmī āmad.",
       "exampleEn": "Mr. Rahimi came.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -7149,7 +7225,8 @@
       "exampleTranslit": "khānum-e man dāktar ast.",
       "exampleEn": "My wife is a doctor.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -7188,7 +7265,8 @@
       "exampleTranslit": "pāytakht-e afghānistān kābul ast.",
       "exampleEn": "The capital of Afghanistan is Kabul.",
       "tags": [
-        "Society & Politics"
+        "Society & Politics",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -7245,7 +7323,8 @@
       "exampleTranslit": "ō kārmand-e dawlat ast.",
       "exampleEn": "He is a government employee.",
       "tags": [
-        "Work & Business"
+        "Work & Business",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -7960,7 +8039,8 @@
       "exampleTranslit": "hēch kas nayāmad.",
       "exampleEn": "Nobody came.",
       "tags": [
-        "People"
+        "People",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -8078,7 +8158,8 @@
       "exampleTranslit": "padarkalānam qissa mēgōyad.",
       "exampleEn": "My grandfather tells stories.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -8097,7 +8178,9 @@
       "exampleTranslit": "zang-e maktab zada shud.",
       "exampleEn": "The school bell rang.",
       "tags": [
-        "Clothing & Fashion"
+        "Clothing & Fashion",
+        "beginner-core",
+        "super-7"
       ],
       "concreteness": true
     },
@@ -8137,7 +8220,8 @@
       "exampleTranslit": "mādarkalānam chāy dam mēkunad.",
       "exampleEn": "My grandmother brews tea.",
       "tags": [
-        "Family & Relationships"
+        "Family & Relationships",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -8314,8 +8398,7 @@
       "exampleTranslit": "hamūn kitāb rā bidi.",
       "exampleEn": "Give exactly that book.",
       "tags": [
-        "Grammar & Connectors",
-        "beginner-core"
+        "Grammar & Connectors"
       ],
       "concreteness": true
     },
@@ -8395,7 +8478,8 @@
       "exampleTranslit": "kārē namūd.",
       "exampleEn": "He did a task.",
       "tags": [
-        "Actions & Movement"
+        "Actions & Movement",
+        "beginner-core"
       ],
       "presentStem": "نما"
     },
@@ -8434,7 +8518,8 @@
       "exampleTranslit": "raftār-e ō khūb ast.",
       "exampleEn": "His behaviour is good.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "id": "lx-6191",
       "targetNormalized": "رفتار",
@@ -8477,7 +8562,8 @@
       "exampleTranslit": "dihqān dar zamīn kār mēkunad.",
       "exampleEn": "The farmer works in the field.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -8496,7 +8582,8 @@
       "exampleTranslit": "salām azīzam.",
       "exampleEn": "Hello my dear.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -8515,7 +8602,8 @@
       "exampleTranslit": "jashn-e arōsī kalān būd.",
       "exampleEn": "The wedding celebration was big.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false
     },
@@ -8804,7 +8892,8 @@
       "exampleTranslit": "khūn surkh ast.",
       "exampleEn": "Blood is red.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -8823,7 +8912,8 @@
       "exampleTranslit": "ra'īs-e shirkat jalasa dārad.",
       "exampleEn": "The company boss has a meeting.",
       "tags": [
-        "Work & Business"
+        "Work & Business",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -9689,8 +9779,7 @@
       "exampleTranslit": "khāk martūb ast.",
       "exampleEn": "The soil is moist.",
       "tags": [
-        "Nature & Environment",
-        "beginner-core"
+        "Nature & Environment"
       ],
       "concreteness": true
     },
@@ -9709,7 +9798,8 @@
       "exampleTranslit": "hamsāya-ye mā mihrabān ast.",
       "exampleEn": "Our neighbor is kind.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -9770,7 +9860,8 @@
       "exampleTranslit": "mō-ye ō darāz ast.",
       "exampleEn": "Her hair is long.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -10009,7 +10100,8 @@
       "exampleTranslit": "mudīr-e maktab sukhanrānī kard.",
       "exampleEn": "The school principal gave a speech.",
       "tags": [
-        "Work & Business"
+        "Work & Business",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -10023,9 +10115,7 @@
       "exampleTranslit": "masraf-e khāna ziyād ast.",
       "exampleEn": "The cost of the house is high.",
       "variants": [],
-      "tags": [
-        "beginner-core"
-      ],
+      "tags": [],
       "id": "lx-10005",
       "targetNormalized": "مصرف",
       "freqRank": 490,
@@ -10327,7 +10417,8 @@
       "exampleTranslit": "barā-ye giriftan-e paysa ba bānk raftam.",
       "exampleEn": "I went to the bank to get money.",
       "tags": [
-        "Money & Finance"
+        "Money & Finance",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -10426,7 +10517,8 @@
       "exampleTranslit": "mōtar-hā az bālā-ye pul tēr mēshawand.",
       "exampleEn": "Cars pass over the bridge.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -10785,7 +10877,8 @@
       "exampleTranslit": "maydān-e fūtbāl sabz ast.",
       "exampleEn": "The football field is green.",
       "tags": [
-        "Colors & Shapes"
+        "Colors & Shapes",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -11154,7 +11247,8 @@
       "exampleTranslit": "kārgar dar fābrīka zahmat mēkashad.",
       "exampleEn": "The worker works hard in the factory.",
       "tags": [
-        "Work & Business"
+        "Work & Business",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -11290,7 +11384,8 @@
       "exampleTranslit": "wakīl dar mahkama gap zad.",
       "exampleEn": "The lawyer spoke in court.",
       "tags": [
-        "Law & Justice"
+        "Law & Justice",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -11514,7 +11609,8 @@
       "exampleTranslit": "afghānistān sī-o-chār wilāyat dārad.",
       "exampleEn": "Afghanistan has thirty-four provinces.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -12054,7 +12150,8 @@
       "exampleTranslit": "qāzī faysala kard.",
       "exampleEn": "The judge made a decision.",
       "tags": [
-        "Law & Justice"
+        "Law & Justice",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -12453,7 +12550,8 @@
       "exampleTranslit": "khabar-nigār rāpōr mēdihad.",
       "exampleEn": "The journalist gives a report.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -12792,7 +12890,8 @@
       "exampleTranslit": "dar kitābkhāna mutāla'a mēkunam.",
       "exampleEn": "I study in the library.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -13043,7 +13142,8 @@
       "exampleTranslit": "tōnal-e sālang sard ast.",
       "exampleEn": "The Salang tunnel is cold.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -13160,7 +13260,8 @@
       "exampleTranslit": "mā dar īn kōcha zindagī mēkunēm.",
       "exampleEn": "We live in this alley.",
       "tags": [
-        "Travel & Transportation"
+        "Travel & Transportation",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -13279,7 +13380,8 @@
       "exampleTranslit": "shāna-am dard mēkunad.",
       "exampleEn": "My shoulder hurts.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -13596,7 +13698,8 @@
       "exampleTranslit": "ustād-e mā bisyār mihrabān ast.",
       "exampleEn": "Our professor is very kind.",
       "tags": [
-        "Education & Learning"
+        "Education & Learning",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -13694,7 +13797,8 @@
       "exampleTranslit": "āshpaz qābilī palaw pukhta mēkunad.",
       "exampleEn": "The chef is cooking Qabili palaw.",
       "tags": [
-        "Food & Drink"
+        "Food & Drink",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -13704,7 +13808,9 @@
       "targetNormalized": "قهوه",
       "pos": "noun",
       "glossEn": "coffee",
-      "tags": [],
+      "tags": [
+        "beginner-core"
+      ],
       "concreteness": true,
       "translit": "qahwa",
       "freqRank": 676,
@@ -14087,7 +14193,8 @@
       "exampleTranslit": "kilīnīk-e dandān bāz ast.",
       "exampleEn": "The dental clinic is open.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -14144,7 +14251,8 @@
       "exampleTranslit": "dard-e shadīdī dar sīna ihsās mēkunam.",
       "exampleEn": "I feel a severe pain in my chest.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -14226,7 +14334,8 @@
       "exampleTranslit": "khayyāt kālā rā dōkht.",
       "exampleEn": "The tailor sewed the clothes.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -14245,7 +14354,8 @@
       "exampleTranslit": "gardanband rā dar gardanash andākht.",
       "exampleEn": "She put the necklace around her neck.",
       "tags": [
-        "Body & Anatomy"
+        "Body & Anatomy",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -14358,7 +14468,8 @@
       "exampleTranslit": "pōlīs amniyat rā mēgīrad.",
       "exampleEn": "The police maintain security.",
       "tags": [
-        "Law & Justice"
+        "Law & Justice",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -14455,7 +14566,8 @@
       "exampleTranslit": "najjār yak mēz jōr kard.",
       "exampleEn": "The carpenter made a table.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -14895,7 +15007,8 @@
       "exampleTranslit": "nānwā nān-e garm pukht.",
       "exampleEn": "The baker baked hot bread.",
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": true
     },
@@ -19577,8 +19690,7 @@
       "exampleTranslit": "ghizā rā dar bushqāb kashīdam.",
       "exampleEn": "I served the food on the plate.",
       "tags": [
-        "Abstract Concepts",
-        "beginner-core"
+        "Abstract Concepts"
       ],
       "concreteness": true
     },
@@ -26081,9 +26193,9 @@
       "freqBand": 5,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "قیمت کالاهای اساسی بالا رفته است.",
-      "exampleTranslit": "qīmat-e kālā-hā-ye asāsī bālā rafta ast.",
-      "exampleEn": "The price of basic goods has gone up.",
+      "exampleTarget": "کالای نو خریدم.",
+      "exampleTranslit": "kālā-ye naw kharīdam.",
+      "exampleEn": "I bought new clothes.",
       "tags": [
         "Abstract Concepts",
         "beginner-core"
@@ -31038,9 +31150,7 @@
       "exampleTranslit": "man bā dāktar wa'da dāram.",
       "exampleEn": "I have an appointment with the doctor.",
       "variants": [],
-      "tags": [
-        "beginner-core"
-      ],
+      "tags": [],
       "id": "lx-10003",
       "targetNormalized": "وعده",
       "freqRank": 1585,
@@ -31963,9 +32073,9 @@
       "freqBand": 5,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "مرض شکر در خانواده او ارثی است.",
-      "exampleTranslit": "maraz-e shakar dar khānawāda-ye ō irsī ast.",
-      "exampleEn": "Diabetes is hereditary in his family.",
+      "exampleTarget": "من در چای شکر می‌اندازم.",
+      "exampleTranslit": "man dar chāy shakar mē-andāzam.",
+      "exampleEn": "I put sugar in the tea.",
       "tags": [
         "Abstract Concepts",
         "beginner-core"
@@ -32687,15 +32797,15 @@
       "target": "بستر",
       "targetNormalized": "بستر",
       "translit": "bistar",
-      "glossEn": "bed",
+      "glossEn": "bed / bedding",
       "pos": "noun",
       "freqRank": 1673,
       "freqBand": 5,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "بیمار در بستر استراحت می‌کند.",
-      "exampleTranslit": "bēmār dar bistar istirāhat mēkunad.",
-      "exampleEn": "The patient is resting in bed.",
+      "exampleTarget": "او در بستر است.",
+      "exampleTranslit": "ō dar bistar ast.",
+      "exampleEn": "He is in bed.",
       "tags": [
         "Home & Furniture",
         "beginner-core"
@@ -37931,7 +38041,10 @@
       "variants": [],
       "exampleTarget": "او یک پیراهن خاکی پوشیده است.",
       "exampleTranslit": "ō yak pērāhan-e khākī pōshēda ast.",
-      "exampleEn": "He is wearing a khaki shirt."
+      "exampleEn": "He is wearing a khaki shirt.",
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1350",
@@ -39898,7 +40011,10 @@
       "exampleTarget": "گرمی هوا امروز زیاد است.",
       "exampleTranslit": "garmī-ye hawā imrōz ziyād ast.",
       "exampleEn": "The heat of the weather is high today.",
-      "concreteness": false
+      "concreteness": false,
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-1624",
@@ -41025,9 +41141,7 @@
       "exampleTranslit": "sihat-e shumā chitōr ast?",
       "exampleEn": "How is your health?",
       "variants": [],
-      "tags": [
-        "beginner-core"
-      ],
+      "tags": [],
       "id": "lx-10006",
       "targetNormalized": "صحت",
       "freqRank": 2115,
@@ -42640,9 +42754,7 @@
       "exampleTranslit": "man kōshish mēkunam.",
       "exampleEn": "I am trying.",
       "variants": [],
-      "tags": [
-        "beginner-core"
-      ],
+      "tags": [],
       "id": "lx-10002",
       "targetNormalized": "کوشش",
       "freqRank": 2201,
@@ -43176,7 +43288,8 @@
       "exampleEn": "I am looking for my book.",
       "variants": [],
       "tags": [
-        "beginner-core"
+        "beginner-core",
+        "super-7"
       ],
       "id": "lx-9999",
       "targetNormalized": "پالیدن",
@@ -47338,7 +47451,10 @@
       "variants": [],
       "exampleTarget": "من نزده سال دارم.",
       "exampleTranslit": "man nuzdah sāl dāram.",
-      "exampleEn": "I am nineteen years old."
+      "exampleEn": "I am nineteen years old.",
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2186",
@@ -53961,7 +54077,10 @@
       "exampleTarget": "سردی در زمستان طبیعی است.",
       "exampleTranslit": "sardī dar zamistān tabī'ī ast.",
       "exampleEn": "Coldness in winter is natural.",
-      "concreteness": false
+      "concreteness": false,
+      "tags": [
+        "beginner-core"
+      ]
     },
     {
       "id": "lx-2729",
@@ -71750,9 +71869,7 @@
       "exampleTranslit": "pata-ye khāna-ye shumā chīst?",
       "exampleEn": "What is your home address?",
       "variants": [],
-      "tags": [
-        "beginner-core"
-      ],
+      "tags": [],
       "id": "lx-9997",
       "targetNormalized": "پته",
       "freqRank": 3750,
@@ -87678,7 +87795,9 @@
       "targetNormalized": "دواخانه",
       "pos": "noun",
       "glossEn": "pharmacy",
-      "tags": [],
+      "tags": [
+        "beginner-core"
+      ],
       "concreteness": true,
       "translit": "dawākhāna",
       "freqRank": 4594,
@@ -93705,8 +93824,7 @@
       "exampleTranslit": "tarmēm-e binā-hā-ye tārīkhī ba diqqat niyāz dārad.",
       "exampleEn": "Restoration of historical buildings requires care.",
       "tags": [
-        "Abstract Concepts",
-        "beginner-core"
+        "Abstract Concepts"
       ],
       "concreteness": false
     },
@@ -123728,7 +123846,8 @@
       "exampleEn": "My father works in the emergency department of the hospital.",
       "variants": [],
       "tags": [
-        "Abstract Concepts"
+        "Abstract Concepts",
+        "beginner-core"
       ],
       "concreteness": false,
       "id": "lx-10031",
@@ -123864,7 +123983,8 @@
       "exampleEn": "What is our plan for tomorrow?",
       "variants": [],
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "beginner-core"
       ],
       "concreteness": false,
       "id": "lx-10038",
