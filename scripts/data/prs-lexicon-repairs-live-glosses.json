@@ -1,0 +1,132 @@
+{
+  "lx-0662": {
+    "target": "برق",
+    "why": [
+      "philologist-placeholders-2: electricity is the main Afghan sense (برق رفت 'the power went out'); the card said only lightning in lx-6349, lx-1325, lx-1199, lx-1995, lx-0891 and lx-1930"
+    ],
+    "set": {
+      "glossEn": "electricity; lightning"
+    },
+    "was": {
+      "glossEn": "lightning"
+    }
+  },
+  "lx-1845": {
+    "target": "وزن",
+    "why": [
+      "philologist-placeholders-3: the primary meaning is weight (وزن کردن, to weigh); lx-6429's sentence resolved to a card saying 'meter (poetry)'"
+    ],
+    "set": {
+      "glossEn": "weight; (poetry) metre"
+    },
+    "was": {
+      "glossEn": "meter (poetry)"
+    }
+  },
+  "lx-4768": {
+    "target": "بحر",
+    "why": [
+      "philologist-placeholders-5: بحر is the Dari word for sea (دریا is river); lx-6470's starfish lived in a poetic meter"
+    ],
+    "set": {
+      "glossEn": "sea; (poetry) metre"
+    },
+    "was": {
+      "glossEn": "meter (poetic)"
+    }
+  },
+  "lx-6294": {
+    "target": "صدا",
+    "why": [
+      "philologist-placeholders-1: صدا is first sound, noise; voice is one sense"
+    ],
+    "set": {
+      "glossEn": "sound, noise; voice"
+    },
+    "was": {
+      "glossEn": "voice"
+    }
+  },
+  "lx-6461": {
+    "target": "قورباغه",
+    "why": [
+      "philologist-placeholders-2: قورباغه is the general or formal word for frog; toad was chosen only to keep it apart from بقه (lx-6312)"
+    ],
+    "set": {
+      "glossEn": "frog (formal; everyday Dari is بقه)"
+    },
+    "was": {
+      "glossEn": "toad"
+    }
+  },
+  "lx-6311": {
+    "target": "آهو",
+    "why": [
+      "philologist-placeholders-2: آهو is a gazelle; deer is گوزن (lx-1566)"
+    ],
+    "set": {
+      "glossEn": "gazelle",
+      "exampleEn": "The gazelle runs very fast."
+    },
+    "was": {
+      "glossEn": "deer",
+      "exampleEn": "The deer runs very fast."
+    }
+  },
+  "lx-4202": {
+    "target": "خیار",
+    "why": [
+      "philologist-placeholders-4: a learner looking up خیار expects the Iranian 'cucumber'; in Dari that is بادرنگ, and this entry is the legal term. Headword translit also lacked the ā its own example has"
+    ],
+    "set": {
+      "glossEn": "option, right of withdrawal (law; not cucumber - in Dari that is بادرنگ)",
+      "translit": "khiyār"
+    },
+    "was": {
+      "glossEn": "Option/Right of withdrawal",
+      "translit": "khiyar"
+    }
+  },
+  "lx-0109": {
+    "target": "گرسنه",
+    "why": [
+      "philologist-placeholders-5: the letters گرسنه read gurusna; gushna is the spoken form, spelled گشنه (already this entry's variant). The pair was mixed"
+    ],
+    "set": {
+      "translit": "gurusna",
+      "glossEn": "hungry (spoken گشنه, gushna)",
+      "register": "neutral",
+      "exampleTranslit": "bacha gurusna ast."
+    },
+    "was": {
+      "translit": "gushna",
+      "glossEn": "hungry",
+      "register": "spoken",
+      "exampleTranslit": "bacha gushna ast."
+    }
+  },
+  "lx-0022": {
+    "target": "بلی",
+    "why": [
+      "philologist-placeholders-5: same mixed pair as lx-0109 - the script is گرسنه"
+    ],
+    "set": {
+      "exampleTranslit": "balē, man gurusna hastam."
+    },
+    "was": {
+      "exampleTranslit": "balē, man gushna hastam."
+    }
+  },
+  "lx-6393": {
+    "target": "نیکتایی",
+    "why": [
+      "philologist-placeholders-5: a band-8 spelling of lx-0644 نکتایی, so the learner was taught 'tie' twice"
+    ],
+    "set": {
+      "glossEn": "[not a headword: variant spelling of نکتایی (lx-0644)] tie"
+    },
+    "was": {
+      "glossEn": "tie"
+    }
+  }
+}
