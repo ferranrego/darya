@@ -1,0 +1,6314 @@
+{
+  "lx-0096": {
+    "target": "بودن",
+    "why": [
+      "drop باشد: باشد is the headword of lx-0287 \"it may be (subjunctive)\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "هستم",
+        "هستی",
+        "هستیم",
+        "هستید",
+        "هستند",
+        "بودم",
+        "بودی",
+        "بود",
+        "بودیم",
+        "بودند",
+        "نیست",
+        "نیستم",
+        "نیستیم",
+        "نیستند",
+        "نیستی",
+        "چیست",
+        "نیستید"
+      ]
+    },
+    "was": {
+      "variants": [
+        "هستم",
+        "هستی",
+        "هستیم",
+        "هستید",
+        "هستند",
+        "بودم",
+        "بودی",
+        "بود",
+        "بودیم",
+        "بودند",
+        "باشد",
+        "نیست",
+        "نیستم",
+        "نیستیم",
+        "نیستند",
+        "نیستی",
+        "چیست",
+        "نیستید"
+      ]
+    }
+  },
+  "lx-0158": {
+    "target": "توانستن",
+    "why": [
+      "drop بخوانم: بخوانم is the subjunctive of خواندن (می‌توانم دری بخوانم), not a form of توانستن; without the variant it resolves to خواندن"
+    ],
+    "set": {
+      "variants": [
+        "می‌توانم",
+        "می‌توانی",
+        "می‌تواند",
+        "می‌توانیم",
+        "می‌توانند",
+        "توانستم",
+        "توانست",
+        "نمی‌توانم"
+      ]
+    },
+    "was": {
+      "variants": [
+        "می‌توانم",
+        "می‌توانی",
+        "می‌تواند",
+        "می‌توانیم",
+        "می‌توانند",
+        "توانستم",
+        "توانست",
+        "نمی‌توانم",
+        "بخوانم"
+      ]
+    }
+  },
+  "lx-0159": {
+    "target": "خوابیدن",
+    "why": [
+      "drop خواب: خواب is the headword of lx-10008 \"sleep; a dream\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "می‌خوابم",
+        "می‌خوابی",
+        "می‌خوابد",
+        "خوابیدم",
+        "خوابید",
+        "بخواب"
+      ]
+    },
+    "was": {
+      "variants": [
+        "می‌خوابم",
+        "می‌خوابی",
+        "می‌خوابد",
+        "خوابیدم",
+        "خوابید",
+        "بخواب",
+        "خواب"
+      ]
+    }
+  },
+  "lx-0294": {
+    "target": "الان",
+    "why": [
+      "drop حالا: حالا is the headword of lx-0046 \"now\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "حالا"
+      ]
+    }
+  },
+  "lx-0358": {
+    "target": "زمان",
+    "why": [
+      "drop وقت: وقت is the headword of lx-0047 \"time\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "وقت"
+      ]
+    }
+  },
+  "lx-0287": {
+    "target": "باشد",
+    "why": [
+      "drop بودن: بودن is the headword of lx-0096 \"to be\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "بودن"
+      ]
+    }
+  },
+  "lx-0375": {
+    "target": "ساختن",
+    "why": [
+      "drop ساز: ساز is 'musical instrument' (رباب ساز ملی افغانستان است), not 'to make'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ساز"
+      ]
+    }
+  },
+  "lx-0387": {
+    "target": "بخشیدن",
+    "why": [
+      "drop بخش: بخش is the headword of lx-10031 \"part, section; department (of a hospital or office\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "بخش"
+      ]
+    }
+  },
+  "lx-0369": {
+    "target": "گذاشتن",
+    "why": [
+      "drop گذار: گذار is 'transition' (گذار به اقتصاد بازار), not 'to let, to place'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "گذار"
+      ]
+    }
+  },
+  "lx-0380": {
+    "target": "گشتن",
+    "why": [
+      "drop گرد: گرد is 'dust' (گرد و خاک) and is گردیدن's stem, not گشتن's"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "گرد"
+      ]
+    }
+  },
+  "lx-0382": {
+    "target": "یافتن",
+    "why": [
+      "drop پیدا کردن: پیدا کردن is the headword of lx-6378 \"find\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "یاب"
+      ]
+    },
+    "was": {
+      "variants": [
+        "یاب",
+        "پیدا کردن"
+      ]
+    }
+  },
+  "lx-0346": {
+    "target": "اسم",
+    "why": [
+      "drop نام: نام is the headword of lx-0062 \"name\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "نام"
+      ]
+    }
+  },
+  "lx-0373": {
+    "target": "بستن",
+    "why": [
+      "drop بند: بند is the headword of lx-10033 \"dam; strap, band; clause (grammar); (adj.) closed,\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "بند"
+      ]
+    }
+  },
+  "lx-0378": {
+    "target": "پریدن",
+    "why": [
+      "drop پر: پر is the headword of lx-10032 \"full (pur); feather (par, same spelling)\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "پر"
+      ]
+    }
+  },
+  "lx-0368": {
+    "target": "فروختن",
+    "why": [
+      "drop فروش: فروش is the noun 'sale' (خرید و فروش), not 'to sell'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "فروش"
+      ]
+    }
+  },
+  "lx-0308": {
+    "target": "ممنون",
+    "why": [
+      "drop تشکر: تشکر is the headword of lx-0102 \"thank you\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "تشکر"
+      ]
+    }
+  },
+  "lx-0441": {
+    "target": "دمیدن",
+    "why": [
+      "drop دم: دم is the headword of lx-10036 \"breath; moment; brewing (چای دم کردن, to brew tea)\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "پف کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "دم",
+        "پف کردن"
+      ]
+    }
+  },
+  "lx-0383": {
+    "target": "آموختن",
+    "why": [
+      "drop یاد گرفتن: یاد گرفتن is the headword of lx-6376 \"learn\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "آموز"
+      ]
+    },
+    "was": {
+      "variants": [
+        "آموز",
+        "یاد گرفتن"
+      ]
+    }
+  },
+  "lx-0366": {
+    "target": "ترسیدن",
+    "why": [
+      "drop ترس: ترس is the headword of lx-10037 \"fear\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ترس"
+      ]
+    }
+  },
+  "lx-6007": {
+    "target": "کس",
+    "why": [
+      "drop کسی: کسی is the headword of lx-0307 \"someone, anyone\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "کسی"
+      ]
+    }
+  },
+  "lx-0362": {
+    "target": "زیبا",
+    "why": [
+      "drop مقبول: مقبول is the headword of lx-0073 \"beautiful, pretty\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "مقبول"
+      ]
+    }
+  },
+  "lx-0335": {
+    "target": "همون",
+    "why": [
+      "drop همان: همان is the headword of lx-9994 \"that same, the very same\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "همان"
+      ]
+    }
+  },
+  "lx-0421": {
+    "target": "نمودن",
+    "why": [
+      "drop نمای: نمای is نما 'façade' + ezafe (نمای ساختمان); without the variant it resolves to نما"
+    ],
+    "set": {
+      "variants": [
+        "نشان دادن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "نمای",
+        "نشان دادن"
+      ]
+    }
+  },
+  "lx-0376": {
+    "target": "دویدن",
+    "why": [
+      "drop دو: دو is the headword of lx-0026 \"two\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "دو"
+      ]
+    }
+  },
+  "lx-0371": {
+    "target": "سوختن",
+    "why": [
+      "drop سوز: سوز is the noun 'burning, pain' (سوز و گداز), not 'to burn'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "سوز"
+      ]
+    }
+  },
+  "lx-0393": {
+    "target": "دزدیدن",
+    "why": [
+      "drop دزد: دزد is the headword of lx-10035 \"thief\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "دزد"
+      ]
+    }
+  },
+  "lx-0406": {
+    "target": "کاشتن",
+    "why": [
+      "drop کار: کار is the headword of lx-0079 \"work, job\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "کار"
+      ]
+    }
+  },
+  "lx-0418": {
+    "target": "شمردن",
+    "why": [
+      "drop شمار: شمار is the noun 'number, count' (به شمار رفتن), not 'to count'"
+    ],
+    "set": {
+      "variants": [
+        "حساب کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "شمار",
+        "حساب کردن"
+      ]
+    }
+  },
+  "lx-0455": {
+    "target": "نامیدن",
+    "why": [
+      "drop نام: نام is the headword of lx-0062 \"name\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "نام"
+      ]
+    }
+  },
+  "lx-0365": {
+    "target": "گریستن",
+    "why": [
+      "drop گریه کردن: گریه کردن is the headword of lx-6381 \"cry\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "گری"
+      ]
+    },
+    "was": {
+      "variants": [
+        "گریه کردن",
+        "گری"
+      ]
+    }
+  },
+  "lx-0479": {
+    "target": "ریختن",
+    "why": [
+      "drop ریز: ریز is the adjective 'tiny' (ذرات ریز), not 'to pour'"
+    ],
+    "set": {
+      "variants": [
+        "چپه کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "ریز",
+        "چپه کردن"
+      ]
+    }
+  },
+  "lx-0419": {
+    "target": "سپردن",
+    "why": [
+      "drop سپر: سپر is 'shield' and not سپردن's stem (سپار); it took سپری 'spent' to 'to entrust'"
+    ],
+    "set": {
+      "variants": [
+        "تسلیم کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "سپر",
+        "تسلیم کردن"
+      ]
+    }
+  },
+  "lx-0402": {
+    "target": "جستن",
+    "why": [
+      "drop جوی: جوی is the headword of lx-10039 \"ditch, stream (a small irrigation channel)\": a headword outranks a variant, so this one only mislabels the word",
+      "drop پالیدن: پالیدن is the headword of lx-9999 \"to look for, to search\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "جوی",
+        "پالیدن"
+      ]
+    }
+  },
+  "lx-0474": {
+    "target": "باختن",
+    "why": [
+      "drop باز: باز is the headword of lx-0199 \"open\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "باز"
+      ]
+    }
+  },
+  "lx-0450": {
+    "target": "مالیدن",
+    "why": [
+      "drop مال: مال is the headword of lx-10034 \"property, belongings, goods (مال من, mine)\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "مال"
+      ]
+    }
+  },
+  "lx-0400": {
+    "target": "رستن",
+    "why": [
+      "drop ره: ره is Kabuli spoken را (hub: مه کتاب ره میخانم); without the variant spoken.ts resolves it to را"
+    ],
+    "set": {
+      "variants": [
+        "نجات یافتن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "ره",
+        "نجات یافتن"
+      ]
+    }
+  },
+  "lx-0394": {
+    "target": "رنجیدن",
+    "why": [
+      "drop رنج: رنج is the noun 'suffering' (رنج بردن), not 'to be offended'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "رنج"
+      ]
+    }
+  },
+  "lx-0363": {
+    "target": "برخاستن",
+    "why": [
+      "drop خیز: خیز is the noun 'leap' (خیز بزن), not 'to rise'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "خیز"
+      ]
+    }
+  },
+  "lx-0415": {
+    "target": "بالیدن",
+    "why": [
+      "drop بال: بال is 'wing', not 'to boast'"
+    ],
+    "set": {
+      "variants": [
+        "افتخار کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "بال",
+        "افتخار کردن"
+      ]
+    }
+  },
+  "lx-0658": {
+    "target": "مود",
+    "why": [
+      "drop مد: مد in content is madd, the tide (جزر و مد), and the stemmer took مدت 'duration' to مود 'fashion' through it"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "مد"
+      ]
+    }
+  },
+  "lx-0417": {
+    "target": "آزردن",
+    "why": [
+      "drop آزار: آزار is the noun 'harm' (آزار دادن), not 'to hurt'"
+    ],
+    "set": {
+      "variants": [
+        "خفه کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "آزار",
+        "خفه کردن"
+      ]
+    }
+  },
+  "lx-0422": {
+    "target": "سرودن",
+    "why": [
+      "drop سرای: سرای is the noun 'inn, house' (سرای), not 'to compose poetry'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "سرای"
+      ]
+    }
+  },
+  "lx-0440": {
+    "target": "دریدن",
+    "why": [
+      "drop در: در is the headword of lx-0002 \"in, at\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "پاره کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "در",
+        "پاره کردن"
+      ]
+    }
+  },
+  "lx-0444": {
+    "target": "نازیدن",
+    "why": [
+      "drop ناز: ناز is the noun 'coquetry, charm', not 'to boast'"
+    ],
+    "set": {
+      "variants": [
+        "افتخار کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "ناز",
+        "افتخار کردن"
+      ]
+    }
+  },
+  "lx-0401": {
+    "target": "شتافتن",
+    "why": [
+      "drop شتاب: شتاب is the noun 'haste; acceleration', not 'to hurry'"
+    ],
+    "set": {
+      "variants": [
+        "عجله کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "شتاب",
+        "عجله کردن"
+      ]
+    }
+  },
+  "lx-0389": {
+    "target": "گشودن",
+    "why": [
+      "drop باز کردن: باز کردن is the headword of lx-6371 \"open\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "گشا"
+      ]
+    },
+    "was": {
+      "variants": [
+        "گشا",
+        "باز کردن"
+      ]
+    }
+  },
+  "lx-0408": {
+    "target": "آشامیدن",
+    "why": [
+      "drop نوشیدن: نوشیدن is the headword of lx-6365 \"drink (everyday Dari is خوردن)\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "آشام"
+      ]
+    },
+    "was": {
+      "variants": [
+        "آشام",
+        "نوشیدن"
+      ]
+    }
+  },
+  "lx-0399": {
+    "target": "کاستن",
+    "why": [
+      "drop کاه: کاه is the noun 'straw', not 'to decrease'"
+    ],
+    "set": {
+      "variants": [
+        "کم کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "کاه",
+        "کم کردن"
+      ]
+    }
+  },
+  "lx-0391": {
+    "target": "ارزیدن",
+    "why": [
+      "drop ارز: ارز is 'currency' (9 content tokens: نرخ ارز), not 'to be worth'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ارز"
+      ]
+    }
+  },
+  "lx-0454": {
+    "target": "چسبیدن",
+    "why": [
+      "drop چسب: چسب is the noun 'glue', not 'to stick'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "چسب"
+      ]
+    }
+  },
+  "lx-0784": {
+    "target": "اپلیکیشن",
+    "why": [
+      "drop برنامه: برنامه is the headword of lx-10038 \"plan, schedule; programme (on TV, radio or a compu\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "برنامه"
+      ]
+    }
+  },
+  "lx-0456": {
+    "target": "بوسیدن",
+    "why": [
+      "drop بوس: بوس is the Kabuli noun 'a kiss' (بوس کردن), not 'to kiss'"
+    ],
+    "set": {
+      "variants": [
+        "ماچ کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "بوس",
+        "ماچ کردن"
+      ]
+    }
+  },
+  "lx-0459": {
+    "target": "شکافتن",
+    "why": [
+      "drop شکاف: شکاف is the noun 'crack, slit' (شکاف دوگانه), not 'to split'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "شکاف"
+      ]
+    }
+  },
+  "lx-0424": {
+    "target": "ربودن",
+    "why": [
+      "drop دزدیدن: دزدیدن is the headword of lx-0393 \"to steal\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "ربای"
+      ]
+    },
+    "was": {
+      "variants": [
+        "ربای",
+        "دزدیدن"
+      ]
+    }
+  },
+  "lx-0473": {
+    "target": "نواختن",
+    "why": [
+      "drop زدن: زدن is the headword of lx-0152 \"to hit; (in compounds) to do\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "نواز"
+      ]
+    },
+    "was": {
+      "variants": [
+        "نواز",
+        "زدن"
+      ]
+    }
+  },
+  "lx-0390": {
+    "target": "لرزیدن",
+    "why": [
+      "drop لرز: لرز is the noun 'shivering, a chill', not 'to tremble'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "لرز"
+      ]
+    }
+  },
+  "lx-0409": {
+    "target": "خراشیدن",
+    "why": [
+      "drop خراش: خراش is the noun 'a scratch', not 'to scratch'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "خراش"
+      ]
+    }
+  },
+  "lx-0437": {
+    "target": "گنجیدن",
+    "why": [
+      "drop گنج: گنج is the noun 'treasure', not 'to fit in'"
+    ],
+    "set": {
+      "variants": [
+        "جای شدن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "گنج",
+        "جای شدن"
+      ]
+    }
+  },
+  "lx-0475": {
+    "target": "گریختن",
+    "why": [
+      "drop گریز: گریز is the noun 'escape' (سرعت گریز), not 'to flee'"
+    ],
+    "set": {
+      "variants": [
+        "فرار کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "گریز",
+        "فرار کردن"
+      ]
+    }
+  },
+  "lx-0449": {
+    "target": "شوریدن",
+    "why": [
+      "drop شور: شور is the headword of lx-6439 \"salty\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "بغاوت کردن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "شور",
+        "بغاوت کردن"
+      ]
+    }
+  },
+  "lx-0446": {
+    "target": "گرویدن",
+    "why": [
+      "drop گرو: گرو is the noun 'pledge, pawn', not 'to convert'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "گرو"
+      ]
+    }
+  },
+  "lx-0436": {
+    "target": "افکندن",
+    "why": [
+      "drop انداختن: انداختن is the headword of lx-0372 \"to throw\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "افکن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "افکن",
+        "انداختن"
+      ]
+    }
+  },
+  "lx-0728": {
+    "target": "رخسار",
+    "why": [
+      "drop گونه: گونه in content is 'kind, species' (گونه‌های بومی), not 'cheek'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "گونه"
+      ]
+    }
+  },
+  "lx-0447": {
+    "target": "هراسیدن",
+    "why": [
+      "drop هراس: هراس is the noun 'dread' (هراس دارند), not 'to fear'",
+      "drop ترسیدن: ترسیدن is the headword of lx-0366 \"to fear\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "هراس",
+        "ترسیدن"
+      ]
+    }
+  },
+  "lx-0621": {
+    "target": "گذشتن",
+    "why": [
+      "drop گذر (guzar): \"گذر (guzar)\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "گذر (guzar)"
+      ]
+    }
+  },
+  "lx-0462": {
+    "target": "خفتن",
+    "why": [
+      "drop خوابیدن: خوابیدن is the headword of lx-0159 \"to sleep\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "خسب"
+      ]
+    },
+    "was": {
+      "variants": [
+        "خسب",
+        "خوابیدن"
+      ]
+    }
+  },
+  "lx-0826": {
+    "target": "پرتره",
+    "why": [
+      "drop تصویر: تصویر is any picture or image, not a portrait"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "تصویر"
+      ]
+    }
+  },
+  "lx-0263": {
+    "target": "دوا",
+    "why": [
+      "drop دواخانه: دواخانه is the headword of lx-6422 \"pharmacy\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "دواخانه"
+      ]
+    }
+  },
+  "lx-0747": {
+    "target": "داش",
+    "why": [
+      "drop فر: فر took فرم 'form' to داش 'oven'"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "فر"
+      ]
+    }
+  },
+  "lx-0493": {
+    "target": "تیرماه",
+    "why": [
+      "drop dari-specific: \"dari-specific\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": [],
+      "tags": [
+        "Time & Calendar",
+        "dari-specific"
+      ]
+    },
+    "was": {
+      "variants": [
+        "dari-specific"
+      ],
+      "tags": [
+        "Time & Calendar"
+      ]
+    }
+  },
+  "lx-0442": {
+    "target": "رهیدن",
+    "why": [
+      "drop ره: ره is Kabuli spoken را; without the variant spoken.ts resolves it to را"
+    ],
+    "set": {
+      "variants": [
+        "نجات یافتن"
+      ]
+    },
+    "was": {
+      "variants": [
+        "ره",
+        "نجات یافتن"
+      ]
+    }
+  },
+  "lx-0467": {
+    "target": "شنفتن",
+    "why": [
+      "drop شنیدن: شنیدن is the headword of lx-0156 \"to hear, to listen\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "شنو"
+      ]
+    },
+    "was": {
+      "variants": [
+        "شنو",
+        "شنیدن"
+      ]
+    }
+  },
+  "lx-0461": {
+    "target": "شگافتن",
+    "why": [
+      "drop شکافتن: شکافتن is the headword of lx-0459 \"to split\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": [
+        "شگاف"
+      ]
+    },
+    "was": {
+      "variants": [
+        "شگاف",
+        "شکافتن"
+      ]
+    }
+  },
+  "lx-0695": {
+    "target": "پتی",
+    "why": [
+      "drop باند: باند in content is a runway, a gang or bandwidth, never a bandage"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "باند"
+      ]
+    }
+  },
+  "lx-1763": {
+    "target": "به هوش آمدن",
+    "why": [
+      "drop آی: آی in دیر آی و درست آی is آمدن, not به هوش آمدن"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "آی"
+      ]
+    }
+  },
+  "lx-0481": {
+    "target": "پشک",
+    "why": [
+      "drop dari-specific: \"dari-specific\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": [],
+      "tags": [
+        "Animals & Pets",
+        "beginner-core",
+        "dari-specific"
+      ]
+    },
+    "was": {
+      "variants": [
+        "dari-specific"
+      ],
+      "tags": [
+        "Animals & Pets",
+        "beginner-core"
+      ]
+    }
+  },
+  "lx-1193": {
+    "target": "آینه",
+    "why": [
+      "drop آیینه: آیینه is the headword of lx-6334 \"mirror\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "آیینه"
+      ]
+    }
+  },
+  "lx-0765": {
+    "target": "گنده",
+    "why": [
+      "drop خراب: خراب is the headword of lx-0265 \"broken, ruined, bad\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "خراب"
+      ]
+    }
+  },
+  "lx-0723": {
+    "target": "کوری",
+    "why": [
+      "drop پاشنه: پاشنه is the headword of lx-6289 \"heel\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "پاشنه"
+      ]
+    }
+  },
+  "lx-0682": {
+    "target": "سیلاب",
+    "why": [
+      "drop سیل: سیل is the headword of lx-6356 \"flood\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "سیل"
+      ]
+    }
+  },
+  "lx-0620": {
+    "target": "دور خوردن",
+    "why": [
+      "drop خور (khur): \"خور (khur)\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "خور (khur)"
+      ]
+    }
+  },
+  "lx-0754": {
+    "target": "کارد",
+    "why": [
+      "drop چاقو: چاقو is the headword of lx-6347 \"pocket knife\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "چاقو"
+      ]
+    }
+  },
+  "lx-0785": {
+    "target": "بروزرسانی",
+    "why": [
+      "drop آپدیت: آپدیت is the headword of lx-10010 \"update (software)\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "آپدیت"
+      ]
+    }
+  },
+  "lx-0797": {
+    "target": "مطالعه کردن",
+    "why": [
+      "drop mutāla'a mēkun-: \"mutāla'a mēkun-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mutāla'a mēkun-"
+      ]
+    }
+  },
+  "lx-0809": {
+    "target": "تدریس کردن",
+    "why": [
+      "drop tadrīs mēkun-: \"tadrīs mēkun-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "tadrīs mēkun-"
+      ]
+    }
+  },
+  "lx-0824": {
+    "target": "رسم کردن",
+    "why": [
+      "drop rasm mēkun-: \"rasm mēkun-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "rasm mēkun-"
+      ]
+    }
+  },
+  "lx-0828": {
+    "target": "اجرا کردن",
+    "why": [
+      "drop ijrā mēkun-: \"ijrā mēkun-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ijrā mēkun-"
+      ]
+    }
+  },
+  "lx-0846": {
+    "target": "نشر کردن",
+    "why": [
+      "drop nashar mēkun-: \"nashar mēkun-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "nashar mēkun-"
+      ]
+    }
+  },
+  "lx-1676": {
+    "target": "بستری شدن",
+    "why": [
+      "drop شَو: a bare light-verb stem on a compound (شو belongs to شدن)"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "شَو"
+      ]
+    }
+  },
+  "lx-1182": {
+    "target": "فرش",
+    "why": [
+      "drop قالین: قالین is the headword of lx-0229 \"carpet, rug\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "قالین"
+      ]
+    }
+  },
+  "lx-1423": {
+    "target": "بازداشت",
+    "why": [
+      "drop bāzdāsht kon: \"bāzdāsht kon\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "bāzdāsht kon"
+      ]
+    }
+  },
+  "lx-0860": {
+    "target": "گیم زدن",
+    "why": [
+      "drop gēm mēzan-: \"gēm mēzan-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "gēm mēzan-"
+      ]
+    }
+  },
+  "lx-1187": {
+    "target": "لیوان",
+    "why": [
+      "drop گیلاس: گیلاس is the headword of lx-6279 \"drinking glass, tumbler (in Iranian Persian: cherr\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "گیلاس"
+      ]
+    }
+  },
+  "lx-0896": {
+    "target": "اسپانر",
+    "why": [
+      "drop رنچ: رنچ is the headword of lx-0877 \"wrench\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "رنچ"
+      ]
+    }
+  },
+  "lx-1468": {
+    "target": "تصویب",
+    "why": [
+      "drop taswīb kon: \"taswīb kon\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "taswīb kon"
+      ]
+    }
+  },
+  "lx-1183": {
+    "target": "پتو",
+    "why": [
+      "drop کمپل: کمپل is the headword of lx-6332 \"blanket\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "کمپل"
+      ]
+    }
+  },
+  "lx-1188": {
+    "target": "فنجان",
+    "why": [
+      "drop پیاله: پیاله is the headword of lx-6335 \"cup\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "پیاله"
+      ]
+    }
+  },
+  "lx-1190": {
+    "target": "حوله",
+    "why": [
+      "drop روی‌پاک: روی‌پاک is the headword of lx-10007 \"towel\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "روی‌پاک"
+      ]
+    }
+  },
+  "lx-4066": {
+    "target": "انجام",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-1477": {
+    "target": "احضار",
+    "why": [
+      "drop ehzār kon: \"ehzār kon\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ehzār kon"
+      ]
+    }
+  },
+  "lx-4062": {
+    "target": "اصل",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-1470": {
+    "target": "تعدیل",
+    "why": [
+      "drop ta'dīl kon: \"ta'dīl kon\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ta'dīl kon"
+      ]
+    }
+  },
+  "lx-1461": {
+    "target": "غصب",
+    "why": [
+      "drop ghasb kon: \"ghasb kon\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ghasb kon"
+      ]
+    }
+  },
+  "lx-1469": {
+    "target": "توشیح",
+    "why": [
+      "drop tawshēh kon: \"tawshēh kon\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "tawshēh kon"
+      ]
+    }
+  },
+  "lx-4038": {
+    "target": "کل",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4050": {
+    "target": "شکل",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4045": {
+    "target": "حرکت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-1685": {
+    "target": "عطسه زدن",
+    "why": [
+      "drop زَن: زَن is the headword of lx-0061 \"woman, wife\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "زَن"
+      ]
+    }
+  },
+  "lx-1705": {
+    "target": "بخیه زدن",
+    "why": [
+      "drop زَن: زَن is the headword of lx-0061 \"woman, wife\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "زَن"
+      ]
+    }
+  },
+  "lx-4040": {
+    "target": "خاص",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4065": {
+    "target": "آغاز",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-1772": {
+    "target": "رگ‌به‌رگ شدن",
+    "why": [
+      "drop شَو: a bare light-verb stem on a compound (شو belongs to شدن)"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "شَو"
+      ]
+    }
+  },
+  "lx-4058": {
+    "target": "حضور",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4103": {
+    "target": "دیگری",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4047": {
+    "target": "فضا",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-2129": {
+    "target": "خسیس بودن",
+    "why": [
+      "drop bāsh: \"bāsh\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "bāsh"
+      ]
+    }
+  },
+  "lx-2215": {
+    "target": "رنج بردن",
+    "why": [
+      "drop bar: \"bar\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "bar"
+      ]
+    }
+  },
+  "lx-2210": {
+    "target": "گول زدن",
+    "why": [
+      "drop zan: \"zan\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "zan"
+      ]
+    }
+  },
+  "lx-2197": {
+    "target": "اعتماد کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2198": {
+    "target": "کمک کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2199": {
+    "target": "نصیحت کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2200": {
+    "target": "انتقاد کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2201": {
+    "target": "رد کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2203": {
+    "target": "تمجید کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2204": {
+    "target": "غیبت کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2205": {
+    "target": "راز نگه داشتن",
+    "why": [
+      "drop dār: \"dār\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "dār"
+      ]
+    }
+  },
+  "lx-2206": {
+    "target": "فاش کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2207": {
+    "target": "دروغ گفتن",
+    "why": [
+      "drop gōy: \"gōy\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "gōy"
+      ]
+    }
+  },
+  "lx-2208": {
+    "target": "راست گفتن",
+    "why": [
+      "drop gōy: \"gōy\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "gōy"
+      ]
+    }
+  },
+  "lx-2209": {
+    "target": "فریب دادن",
+    "why": [
+      "drop dih: \"dih\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "dih"
+      ]
+    }
+  },
+  "lx-2211": {
+    "target": "مشورت کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2212": {
+    "target": "بحث کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2213": {
+    "target": "توافق کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2214": {
+    "target": "مذاکره کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2216": {
+    "target": "لبخند زدن",
+    "why": [
+      "drop zan: \"zan\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "zan"
+      ]
+    }
+  },
+  "lx-2217": {
+    "target": "عصبانی شدن",
+    "why": [
+      "drop shaw: \"shaw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "shaw"
+      ]
+    }
+  },
+  "lx-2218": {
+    "target": "دعوا کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2219": {
+    "target": "آشتی کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-4033": {
+    "target": "تصور",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-2253": {
+    "target": "همدردی کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2254": {
+    "target": "ترجیح دادن",
+    "why": [
+      "drop dih: \"dih\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "dih"
+      ]
+    }
+  },
+  "lx-2255": {
+    "target": "باور داشتن",
+    "why": [
+      "drop dār: \"dār\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "dār"
+      ]
+    }
+  },
+  "lx-2256": {
+    "target": "شک کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2260": {
+    "target": "صمیمی شدن",
+    "why": [
+      "drop shaw: \"shaw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "shaw"
+      ]
+    }
+  },
+  "lx-2262": {
+    "target": "طرد کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2263": {
+    "target": "آزار دادن",
+    "why": [
+      "drop dih: \"dih\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "dih"
+      ]
+    }
+  },
+  "lx-2264": {
+    "target": "اذیت کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-2278": {
+    "target": "متقاعد کردن",
+    "why": [
+      "drop kun: \"kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kun"
+      ]
+    }
+  },
+  "lx-4077": {
+    "target": "عدم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4053": {
+    "target": "نشانه",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4014": {
+    "target": "قدم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-3349": {
+    "target": "برانگیختن",
+    "why": [
+      "drop bar-angēz: \"bar-angēz\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "bar-angēz"
+      ]
+    }
+  },
+  "lx-5797": {
+    "target": "پرده برداشتن",
+    "why": [
+      "drop mī-bardār-: \"mī-bardār-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bardār-"
+      ]
+    }
+  },
+  "lx-4022": {
+    "target": "نتایج",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4029": {
+    "target": "ذکر",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4108": {
+    "target": "خیر",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4107": {
+    "target": "شر",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4049": {
+    "target": "هیولا",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4037": {
+    "target": "جزء",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-2735": {
+    "target": "استعفا دادن",
+    "why": [
+      "drop ده: ده is the headword of lx-0033 \"ten\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ده"
+      ]
+    }
+  },
+  "lx-2736": {
+    "target": "برکنار کردن",
+    "why": [
+      "drop کن: a bare light-verb stem on a compound: کن is کردن's, and would answer برکنار کردن if کردن ever lost it"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "کن"
+      ]
+    }
+  },
+  "lx-2738": {
+    "target": "وتو کردن",
+    "why": [
+      "drop کن: a bare light-verb stem on a compound (کن belongs to کردن)"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "کن"
+      ]
+    }
+  },
+  "lx-2753": {
+    "target": "متعهد شدن",
+    "why": [
+      "drop شو: a bare light-verb stem on a compound (شو belongs to شدن)"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "شو"
+      ]
+    }
+  },
+  "lx-2754": {
+    "target": "نقض کردن",
+    "why": [
+      "drop کن: a bare light-verb stem on a compound (کن belongs to کردن)"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "کن"
+      ]
+    }
+  },
+  "lx-2755": {
+    "target": "محکوم کردن",
+    "why": [
+      "drop کن: a bare light-verb stem on a compound (کن belongs to کردن)"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "کن"
+      ]
+    }
+  },
+  "lx-4025": {
+    "target": "گمان",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4039": {
+    "target": "عام",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4021": {
+    "target": "اسباب",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4019": {
+    "target": "اندیشه",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4046": {
+    "target": "سکون",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-2965": {
+    "target": "عمل کردن",
+    "why": [
+      "drop amal kun: \"amal kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "amal kun"
+      ]
+    }
+  },
+  "lx-2966": {
+    "target": "تجویز کردن",
+    "why": [
+      "drop tajwīz kun: \"tajwīz kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "tajwīz kun"
+      ]
+    }
+  },
+  "lx-2967": {
+    "target": "معالجه کردن",
+    "why": [
+      "drop mu'ālaja kun: \"mu'ālaja kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mu'ālaja kun"
+      ]
+    }
+  },
+  "lx-2971": {
+    "target": "ذوب شدن",
+    "why": [
+      "drop zub shuw: \"zub shuw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "zub shuw"
+      ]
+    }
+  },
+  "lx-2973": {
+    "target": "کاهش یافتن",
+    "why": [
+      "drop kāhish yāb: \"kāhish yāb\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kāhish yāb"
+      ]
+    }
+  },
+  "lx-2974": {
+    "target": "افزایش یافتن",
+    "why": [
+      "drop afzāyish yāb: \"afzāyish yāb\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "afzāyish yāb"
+      ]
+    }
+  },
+  "lx-2978": {
+    "target": "حفاظت کردن",
+    "why": [
+      "drop hifāzat kun: \"hifāzat kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "hifāzat kun"
+      ]
+    }
+  },
+  "lx-2979": {
+    "target": "آسیب رساندن",
+    "why": [
+      "drop āsēb rasān: \"āsēb rasān\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "āsēb rasān"
+      ]
+    }
+  },
+  "lx-3005": {
+    "target": "طغیان کردن",
+    "why": [
+      "drop tughyān kun: \"tughyān kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "tughyān kun"
+      ]
+    }
+  },
+  "lx-3009": {
+    "target": "کاهش دادن",
+    "why": [
+      "drop kāhish dih: \"kāhish dih\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "kāhish dih"
+      ]
+    }
+  },
+  "lx-3010": {
+    "target": "افزایش دادن",
+    "why": [
+      "drop afzāyish dih: \"afzāyish dih\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "afzāyish dih"
+      ]
+    }
+  },
+  "lx-3024": {
+    "target": "سازگار شدن",
+    "why": [
+      "drop sāzgār shaw: \"sāzgār shaw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "sāzgār shaw"
+      ]
+    }
+  },
+  "lx-3026": {
+    "target": "محافظت کردن",
+    "why": [
+      "drop muhāfazat kun: \"muhāfazat kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "muhāfazat kun"
+      ]
+    }
+  },
+  "lx-3052": {
+    "target": "منقرض شدن",
+    "why": [
+      "drop munqariz shaw: \"munqariz shaw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "munqariz shaw"
+      ]
+    }
+  },
+  "lx-4060": {
+    "target": "ارزشی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-3071": {
+    "target": "مقابله کردن",
+    "why": [
+      "drop muqābala kun: \"muqābala kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "muqābala kun"
+      ]
+    }
+  },
+  "lx-3073": {
+    "target": "خشک شدن",
+    "why": [
+      "drop khushk shaw: \"khushk shaw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "khushk shaw"
+      ]
+    }
+  },
+  "lx-3082": {
+    "target": "هدر رفتن",
+    "why": [
+      "drop hadar raw: \"hadar raw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "hadar raw"
+      ]
+    }
+  },
+  "lx-3091": {
+    "target": "وضع کردن",
+    "why": [
+      "drop waz' kun: \"waz' kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "waz' kun"
+      ]
+    }
+  },
+  "lx-4007": {
+    "target": "بالقوه",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-3094": {
+    "target": "پایبند بودن",
+    "why": [
+      "drop pāy-band bāsh: \"pāy-band bāsh\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "pāy-band bāsh"
+      ]
+    }
+  },
+  "lx-4051": {
+    "target": "دال",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-3100": {
+    "target": "جذب کردن",
+    "why": [
+      "drop jazb kun: \"jazb kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "jazb kun"
+      ]
+    }
+  },
+  "lx-4026": {
+    "target": "فهم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-3101": {
+    "target": "دفع کردن",
+    "why": [
+      "drop daf' kun: \"daf' kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "daf' kun"
+      ]
+    }
+  },
+  "lx-3103": {
+    "target": "زیر آب رفتن",
+    "why": [
+      "drop zēr-i āb raw: \"zēr-i āb raw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "zēr-i āb raw"
+      ]
+    }
+  },
+  "lx-3106": {
+    "target": "ممنوع کردن",
+    "why": [
+      "drop mamnū' kun: \"mamnū' kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mamnū' kun"
+      ]
+    }
+  },
+  "lx-3107": {
+    "target": "آلوده کردن",
+    "why": [
+      "drop ālūda kun: \"ālūda kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ālūda kun"
+      ]
+    }
+  },
+  "lx-4063": {
+    "target": "فرع",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4061": {
+    "target": "قاعده",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-3122": {
+    "target": "ویران کردن",
+    "why": [
+      "drop wayrān kun: \"wayrān kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "wayrān kun"
+      ]
+    }
+  },
+  "lx-3133": {
+    "target": "صدمه زدن",
+    "why": [
+      "drop sadama zan: \"sadama zan\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "sadama zan"
+      ]
+    }
+  },
+  "lx-3137": {
+    "target": "اختصاص دادن",
+    "why": [
+      "drop ikhtisās dih: \"ikhtisās dih\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "ikhtisās dih"
+      ]
+    }
+  },
+  "lx-3140": {
+    "target": "بهبود یافتن",
+    "why": [
+      "drop bihbūd yāb: \"bihbūd yāb\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "bihbūd yāb"
+      ]
+    }
+  },
+  "lx-3146": {
+    "target": "نجات دادن",
+    "why": [
+      "drop najāt dih: \"najāt dih\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "najāt dih"
+      ]
+    }
+  },
+  "lx-3148": {
+    "target": "تولید کردن",
+    "why": [
+      "drop tawlīd kun: \"tawlīd kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "tawlīd kun"
+      ]
+    }
+  },
+  "lx-3152": {
+    "target": "ثبت شدن",
+    "why": [
+      "drop sabt shaw: \"sabt shaw\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "sabt shaw"
+      ]
+    }
+  },
+  "lx-4044": {
+    "target": "اطلاق",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4020": {
+    "target": "تحقق",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4105": {
+    "target": "اصالت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4110": {
+    "target": "تکلیف",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4034": {
+    "target": "تصدیق",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4084": {
+    "target": "تمایز",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4028": {
+    "target": "فراست",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4079": {
+    "target": "صدق",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4109": {
+    "target": "سعادت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4010": {
+    "target": "تعالی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4124": {
+    "target": "مکانیسم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4009": {
+    "target": "شهود",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4059": {
+    "target": "غیاب",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4057": {
+    "target": "ردپا",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4118": {
+    "target": "تحلیلی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4015": {
+    "target": "ابدیت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4082": {
+    "target": "تقابل",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4027": {
+    "target": "بصیرت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4003": {
+    "target": "فراطبیعی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-5792": {
+    "target": "به حاشیه راندن",
+    "why": [
+      "drop mī-rān-: \"mī-rān-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-rān-"
+      ]
+    }
+  },
+  "lx-4030": {
+    "target": "مراقبه",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4069": {
+    "target": "تبیین",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4117": {
+    "target": "نامتناهی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4017": {
+    "target": "خودآگاهی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4041": {
+    "target": "مقید",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4023": {
+    "target": "پیش‌فرض",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4114": {
+    "target": "هرمس",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4032": {
+    "target": "انتزاع",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4012": {
+    "target": "تکوین",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4008": {
+    "target": "بالفعل",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4011": {
+    "target": "حلول",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4078": {
+    "target": "علیت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4048": {
+    "target": "ملاء",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4089": {
+    "target": "رئالیسم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4080": {
+    "target": "کذب",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4064": {
+    "target": "معاد",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-1249": {
+    "target": "استخدام کردن",
+    "why": [
+      "drop istikhdām kun: \"istikhdām kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "istikhdām kun"
+      ]
+    }
+  },
+  "lx-1252": {
+    "target": "امضا کردن",
+    "why": [
+      "drop imzā kun: \"imzā kun\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "imzā kun"
+      ]
+    }
+  },
+  "lx-1781": {
+    "target": "خون دادن",
+    "why": [
+      "drop دِه: دِه is the headword of lx-0033 \"ten\": a headword outranks a variant, so this one only mislabels the word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "دِه"
+      ]
+    }
+  },
+  "lx-3208": {
+    "target": "شرطی شدن",
+    "why": [
+      "drop shartī mēshaw-: \"shartī mēshaw-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "shartī mēshaw-"
+      ]
+    }
+  },
+  "lx-4104": {
+    "target": "بیگانگی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4081": {
+    "target": "استحاله",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4031": {
+    "target": "تجرید",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4083": {
+    "target": "همانی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4042": {
+    "target": "تعین",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4072": {
+    "target": "ضروریات",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4004": {
+    "target": "دوگانه‌انگاری",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4106": {
+    "target": "ابتذال",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4085": {
+    "target": "تشخص",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4071": {
+    "target": "بدیهیات",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4001": {
+    "target": "پدیدارشناسی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4090": {
+    "target": "ماتریالیسم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4018": {
+    "target": "تنزیه",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4054": {
+    "target": "هرمنوتیک",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4052": {
+    "target": "مدلول",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4013": {
+    "target": "حدوث",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4119": {
+    "target": "تألیفی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4073": {
+    "target": "ممکنات",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4006": {
+    "target": "مطلق‌گرایی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4002": {
+    "target": "نهیلیسم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4005": {
+    "target": "یگانه‌انگاری",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4024": {
+    "target": "مفروضه",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4055": {
+    "target": "پساساختارگرایی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4016": {
+    "target": "سرمدیت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4099": {
+    "target": "شهودگرایی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4115": {
+    "target": "تجسد",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4035": {
+    "target": "قیاس منطقی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4036": {
+    "target": "برهان خلف",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4056": {
+    "target": "شالوده‌شکنی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4092": {
+    "target": "یوتوپیا",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4043": {
+    "target": "عدم تعین",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4102": {
+    "target": "ابژه",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4088": {
+    "target": "ایده‌آلیسم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4097": {
+    "target": "آتئیسم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4067": {
+    "target": "تحقق‌پذیری",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4098": {
+    "target": "نفسانیت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4068": {
+    "target": "ابطال‌پذیری",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4074": {
+    "target": "واجب‌الوجود",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4070": {
+    "target": "اصول موضوعه",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4075": {
+    "target": "ممکن‌الوجود",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4076": {
+    "target": "ممتنع‌الوجود",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4087": {
+    "target": "فنومن",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4091": {
+    "target": "پراگماتیسم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4086": {
+    "target": "نومنون",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4094": {
+    "target": "همه‌خدایی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4093": {
+    "target": "ویران‌شهر",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4095": {
+    "target": "فراخداباوری",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4096": {
+    "target": "اگنوستیسیسم",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4100": {
+    "target": "قصدیت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4101": {
+    "target": "پراکسیس",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4116": {
+    "target": "مطلقیت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4111": {
+    "target": "حتمیت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4112": {
+    "target": "استعلا",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4113": {
+    "target": "حلولیت",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4120": {
+    "target": "مبناگرایی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4121": {
+    "target": "انسجام‌گرایی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4122": {
+    "target": "برساخت‌گرایی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4123": {
+    "target": "غایت‌مندی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4125": {
+    "target": "کاهش‌گرایی",
+    "why": [
+      "drop -: \"-\" is not a Dari word"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "-"
+      ]
+    }
+  },
+  "lx-4178": {
+    "target": "لازم‌الاجرا شدن",
+    "why": [
+      "drop lazim-ul-ijra mesha: \"lazim-ul-ijra mesha\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "lazim-ul-ijra mesha"
+      ]
+    }
+  },
+  "lx-5800": {
+    "target": "انباشتن",
+    "why": [
+      "drop mī-anbār-: \"mī-anbār-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-anbār-"
+      ]
+    }
+  },
+  "lx-5838": {
+    "target": "نادیده انگاشتن",
+    "why": [
+      "drop mī-angār-: \"mī-angār-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-angār-"
+      ]
+    }
+  },
+  "lx-5620": {
+    "target": "عملیاتی‌کردن",
+    "why": [
+      "drop amaliyāti-mikon: \"amaliyāti-mikon\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "amaliyāti-mikon"
+      ]
+    }
+  },
+  "lx-5709": {
+    "target": "استنطاق کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5710": {
+    "target": "اکتفا کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5711": {
+    "target": "پافشاری کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5712": {
+    "target": "استدلال کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5713": {
+    "target": "احتکار کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5714": {
+    "target": "اغراق کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5715": {
+    "target": "انصراف کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5716": {
+    "target": "تعبیه کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5717": {
+    "target": "تدارک کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5718": {
+    "target": "ترویج کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5719": {
+    "target": "تصدیق کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5720": {
+    "target": "تطابق کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5721": {
+    "target": "تعامل کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5722": {
+    "target": "تلقی کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5723": {
+    "target": "تهویه کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5724": {
+    "target": "مجازات کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5725": {
+    "target": "مصادره کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5726": {
+    "target": "مضایقه کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5727": {
+    "target": "مکلف کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5728": {
+    "target": "متبلور شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5729": {
+    "target": "متجلی شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5730": {
+    "target": "متراکم شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5731": {
+    "target": "متشنج شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5732": {
+    "target": "متصاعد شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5733": {
+    "target": "متقاعد شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5734": {
+    "target": "متمرکز شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5735": {
+    "target": "متمایز شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5736": {
+    "target": "متواری شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5737": {
+    "target": "احضار شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5738": {
+    "target": "ارعاب شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5739": {
+    "target": "استیضاح شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5740": {
+    "target": "اشباع شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5741": {
+    "target": "اعدام شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5742": {
+    "target": "اغوا شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5743": {
+    "target": "انباشته شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5744": {
+    "target": "منهدم شدن",
+    "why": [
+      "drop mī-sh-: \"mī-sh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sh-"
+      ]
+    }
+  },
+  "lx-5745": {
+    "target": "مبرا ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5746": {
+    "target": "مجزا ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5747": {
+    "target": "مدون ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5748": {
+    "target": "مرعوب ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5749": {
+    "target": "مسدود ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5750": {
+    "target": "مستثنی ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5751": {
+    "target": "مستهلک ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5752": {
+    "target": "مضاعف ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5753": {
+    "target": "معلق ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5754": {
+    "target": "مغشوش ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5755": {
+    "target": "مفتخر ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5756": {
+    "target": "مقید ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5757": {
+    "target": "مکتوم ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5758": {
+    "target": "ملغی ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5759": {
+    "target": "منزوی ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5760": {
+    "target": "منسوخ ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5761": {
+    "target": "موکول ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5762": {
+    "target": "مهیا ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5763": {
+    "target": "ارتقا یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5764": {
+    "target": "انعکاس یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5765": {
+    "target": "انکشاف یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5766": {
+    "target": "تحقق یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5767": {
+    "target": "تسکین یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5768": {
+    "target": "تشدید یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5769": {
+    "target": "خاتمه یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5770": {
+    "target": "رواج یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5771": {
+    "target": "ارجاع دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5772": {
+    "target": "استرداد دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5773": {
+    "target": "اشاعه دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5774": {
+    "target": "انعکاس دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5775": {
+    "target": "انکشاف دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5776": {
+    "target": "بازتاب دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5777": {
+    "target": "تجلی دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5778": {
+    "target": "تخصیص دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5779": {
+    "target": "تسری دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5780": {
+    "target": "تعمیم دادن",
+    "why": [
+      "drop mī-deh-: \"mī-deh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-deh-"
+      ]
+    }
+  },
+  "lx-5781": {
+    "target": "التیام بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5782": {
+    "target": "انسجام بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5783": {
+    "target": "تبلور بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5784": {
+    "target": "تجلی بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5785": {
+    "target": "تحقق بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5786": {
+    "target": "تسکین بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5787": {
+    "target": "توسعه بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5788": {
+    "target": "حیات بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5789": {
+    "target": "خاتمه بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5790": {
+    "target": "رونق بخشیدن",
+    "why": [
+      "drop mī-bakhsh-: \"mī-bakhsh-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-bakhsh-"
+      ]
+    }
+  },
+  "lx-5791": {
+    "target": "به چالش کشیدن",
+    "why": [
+      "drop mī-kash-: \"mī-kash-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kash-"
+      ]
+    }
+  },
+  "lx-5793": {
+    "target": "به دار آویختن",
+    "why": [
+      "drop mī-āwēz-: \"mī-āwēz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-āwēz-"
+      ]
+    }
+  },
+  "lx-5794": {
+    "target": "به سخره گرفتن",
+    "why": [
+      "drop mī-gīr-: \"mī-gīr-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-gīr-"
+      ]
+    }
+  },
+  "lx-5795": {
+    "target": "به قهقرا رفتن",
+    "why": [
+      "drop mī-raw-: \"mī-raw-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-raw-"
+      ]
+    }
+  },
+  "lx-5796": {
+    "target": "به منصه ظهور رساندن",
+    "why": [
+      "drop mī-rasān-: \"mī-rasān-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-rasān-"
+      ]
+    }
+  },
+  "lx-5798": {
+    "target": "شانه خالی کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5799": {
+    "target": "اغماض کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5801": {
+    "target": "بازخواست کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5802": {
+    "target": "تقبیح کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5803": {
+    "target": "تلنبار کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5804": {
+    "target": "اجتناب کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5805": {
+    "target": "آسیب زدن",
+    "why": [
+      "drop mī-zan-: \"mī-zan-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-zan-"
+      ]
+    }
+  },
+  "lx-5806": {
+    "target": "دامن زدن",
+    "why": [
+      "drop mī-zan-: \"mī-zan-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-zan-"
+      ]
+    }
+  },
+  "lx-5807": {
+    "target": "رقم زدن",
+    "why": [
+      "drop mī-zan-: \"mī-zan-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-zan-"
+      ]
+    }
+  },
+  "lx-5808": {
+    "target": "گمانه زنی کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5809": {
+    "target": "لطمه زدن",
+    "why": [
+      "drop mī-zan-: \"mī-zan-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-zan-"
+      ]
+    }
+  },
+  "lx-5810": {
+    "target": "محک زدن",
+    "why": [
+      "drop mī-zan-: \"mī-zan-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-zan-"
+      ]
+    }
+  },
+  "lx-5811": {
+    "target": "رقم خوردن",
+    "why": [
+      "drop mī-khor-: \"mī-khor-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-khor-"
+      ]
+    }
+  },
+  "lx-5812": {
+    "target": "گره خوردن",
+    "why": [
+      "drop mī-khor-: \"mī-khor-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-khor-"
+      ]
+    }
+  },
+  "lx-5813": {
+    "target": "ابراز نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5814": {
+    "target": "اتخاذ نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5815": {
+    "target": "احراز نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5816": {
+    "target": "اخلال نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5817": {
+    "target": "اذعان نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5818": {
+    "target": "ارایه نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5819": {
+    "target": "استیلا یافتن",
+    "why": [
+      "drop mī-yāb-: \"mī-yāb-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-yāb-"
+      ]
+    }
+  },
+  "lx-5820": {
+    "target": "افراط نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5821": {
+    "target": "انحصار نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5822": {
+    "target": "انکار نمودن",
+    "why": [
+      "drop mī-namāy-: \"mī-namāy-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-namāy-"
+      ]
+    }
+  },
+  "lx-5823": {
+    "target": "ابا ورزیدن",
+    "why": [
+      "drop mī-warz-: \"mī-warz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-warz-"
+      ]
+    }
+  },
+  "lx-5824": {
+    "target": "اهتمام ورزیدن",
+    "why": [
+      "drop mī-warz-: \"mī-warz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-warz-"
+      ]
+    }
+  },
+  "lx-5825": {
+    "target": "تجلیل به عمل آوردن",
+    "why": [
+      "drop mī-āwar-: \"mī-āwar-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-āwar-"
+      ]
+    }
+  },
+  "lx-5826": {
+    "target": "تکیه کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5827": {
+    "target": "چشم پوشی کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5828": {
+    "target": "دستبرد زدن",
+    "why": [
+      "drop mī-zan-: \"mī-zan-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-zan-"
+      ]
+    }
+  },
+  "lx-5829": {
+    "target": "رویکرد داشتن",
+    "why": [
+      "drop dār-: \"dār-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "dār-"
+      ]
+    }
+  },
+  "lx-5830": {
+    "target": "مبادرت ورزیدن",
+    "why": [
+      "drop mī-warz-: \"mī-warz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-warz-"
+      ]
+    }
+  },
+  "lx-5831": {
+    "target": "بازدارندگی ایجاد کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5832": {
+    "target": "برچسب زدن",
+    "why": [
+      "drop mī-zan-: \"mī-zan-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-zan-"
+      ]
+    }
+  },
+  "lx-5833": {
+    "target": "تنفیذ کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5834": {
+    "target": "توطئه چیدن",
+    "why": [
+      "drop mī-chīn-: \"mī-chīn-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-chīn-"
+      ]
+    }
+  },
+  "lx-5835": {
+    "target": "خنثی ساختن",
+    "why": [
+      "drop mī-sāz-: \"mī-sāz-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-sāz-"
+      ]
+    }
+  },
+  "lx-5836": {
+    "target": "مصالحه کردن",
+    "why": [
+      "drop mī-kon-: \"mī-kon-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "mī-kon-"
+      ]
+    }
+  },
+  "lx-5837": {
+    "target": "مطابقت داشتن",
+    "why": [
+      "drop dār-: \"dār-\" is Latin: variants hold Dari surfaces for the resolver, and Latin matches nothing"
+    ],
+    "set": {
+      "variants": []
+    },
+    "was": {
+      "variants": [
+        "dār-"
+      ]
+    }
+  },
+  "lx-0090": {
+    "target": "آمدن",
+    "why": [
+      "add آی: the bare present stem in the proverb دیر آی و درست آی (course, 2 tokens), which the variant on lx-1763 به هوش آمدن used to catch for the wrong verb; آمدن owns the stem"
+    ],
+    "set": {
+      "variants": [
+        "می‌آیم",
+        "می‌آیی",
+        "می‌آید",
+        "می‌آییم",
+        "می‌آیند",
+        "آمدم",
+        "آمدی",
+        "آمد",
+        "آمدیم",
+        "آمدند",
+        "بیا",
+        "بیایید",
+        "آی"
+      ]
+    },
+    "was": {
+      "variants": [
+        "می‌آیم",
+        "می‌آیی",
+        "می‌آید",
+        "می‌آییم",
+        "می‌آیند",
+        "آمدم",
+        "آمدی",
+        "آمد",
+        "آمدیم",
+        "آمدند",
+        "بیا",
+        "بیایید"
+      ]
+    }
+  }
+}

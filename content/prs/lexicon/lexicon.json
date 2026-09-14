@@ -648,7 +648,6 @@
         "بود",
         "بودیم",
         "بودند",
-        "باشد",
         "نیست",
         "نیستم",
         "نیستیم",
@@ -1504,7 +1503,8 @@
         "آمدیم",
         "آمدند",
         "بیا",
-        "بیایید"
+        "بیایید",
+        "آی"
       ],
       "exampleTarget": "فردا به خانه ما بیا.",
       "exampleTranslit": "fardā ba khāna-ye mā biyā.",
@@ -2512,8 +2512,7 @@
         "می‌توانند",
         "توانستم",
         "توانست",
-        "نمی‌توانم",
-        "بخوانم"
+        "نمی‌توانم"
       ],
       "exampleTarget": "می‌توانم دری بخوانم.",
       "exampleTranslit": "mētawānam darī bukhānam.",
@@ -4602,8 +4601,7 @@
         "می‌خوابد",
         "خوابیدم",
         "خوابید",
-        "بخواب",
-        "خواب"
+        "بخواب"
       ],
       "exampleTarget": "من زود می‌خوابم.",
       "exampleTranslit": "man zūd mēkhābam.",
@@ -5047,9 +5045,7 @@
       "freqRank": 236,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [
-        "حالا"
-      ],
+      "variants": [],
       "exampleTarget": "الان می‌روم.",
       "exampleTranslit": "al'ān mērawam.",
       "exampleEn": "I am going now.",
@@ -5429,9 +5425,7 @@
       "freqRank": 255,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [
-        "وقت"
-      ],
+      "variants": [],
       "exampleTarget": "زمان ندارم.",
       "exampleTranslit": "zamān nadāram.",
       "exampleEn": "I don't have time.",
@@ -5584,9 +5578,7 @@
       "freqRank": 263,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [
-        "بودن"
-      ],
+      "variants": [],
       "exampleTarget": "خوب باشد.",
       "exampleTranslit": "khūb bāshad.",
       "exampleEn": "It should be good.",
@@ -5703,9 +5695,7 @@
       "freqRank": 269,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [
-        "ساز"
-      ],
+      "variants": [],
       "exampleTarget": "خانه ساختیم.",
       "exampleTranslit": "khāna sākhtēm.",
       "exampleEn": "We built a house.",
@@ -5962,9 +5952,7 @@
       "freqRank": 282,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [
-        "بخش"
-      ],
+      "variants": [],
       "exampleTarget": "مرا ببخش.",
       "exampleTranslit": "marā bibakhsh.",
       "exampleEn": "Forgive me.",
@@ -6181,9 +6169,7 @@
       "freqRank": 293,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [
-        "گذار"
-      ],
+      "variants": [],
       "exampleTarget": "او را بگذار.",
       "exampleTranslit": "ō rā bugzār.",
       "exampleEn": "Let him be.",
@@ -6743,9 +6729,7 @@
       "freqRank": 322,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [
-        "گرد"
-      ],
+      "variants": [],
       "exampleTarget": "در شهر گشتم.",
       "exampleTranslit": "dar shahr gashtam.",
       "exampleEn": "I strolled in the city.",
@@ -6880,8 +6864,7 @@
       "freqBand": 3,
       "register": "literary",
       "variants": [
-        "یاب",
-        "پیدا کردن"
+        "یاب"
       ],
       "exampleTarget": "کار یافتم.",
       "exampleTranslit": "kār yāftam.",
@@ -7102,9 +7085,7 @@
       "freqRank": 340,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "نام"
-      ],
+      "variants": [],
       "exampleTarget": "اسم شما چیست؟",
       "exampleTranslit": "ism-e shumā chīst?",
       "exampleEn": "What is your name?",
@@ -7276,9 +7257,7 @@
       "freqRank": 349,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "بند"
-      ],
+      "variants": [],
       "exampleTarget": "دروازه را ببند.",
       "exampleTranslit": "darwāza rā biband.",
       "exampleEn": "Close the door.",
@@ -7318,9 +7297,7 @@
       "freqRank": 351,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "پر"
-      ],
+      "variants": [],
       "exampleTarget": "طفل می‌پرد.",
       "exampleTranslit": "tifl mēparad.",
       "exampleEn": "The child jumps.",
@@ -7398,9 +7375,7 @@
       "freqRank": 355,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "فروش"
-      ],
+      "variants": [],
       "exampleTarget": "موتر را فروخت.",
       "exampleTranslit": "mōtar rā furōkht.",
       "exampleEn": "He sold the car.",
@@ -7648,9 +7623,7 @@
       "freqRank": 368,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "تشکر"
-      ],
+      "variants": [],
       "exampleTarget": "ممنون از کمک شما.",
       "exampleTranslit": "mamnōn az kumak-e shumā.",
       "exampleEn": "Thank you for your help.",
@@ -7708,7 +7681,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "دم",
         "پف کردن"
       ],
       "exampleTarget": "در نی می‌دمد.",
@@ -7767,8 +7739,7 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "آموز",
-        "یاد گرفتن"
+        "آموز"
       ],
       "exampleTarget": "دری می‌آموزم.",
       "exampleTranslit": "darī mēāmōzam.",
@@ -7825,9 +7796,7 @@
       "freqRank": 377,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "ترس"
-      ],
+      "variants": [],
       "exampleTarget": "از سگ نترس.",
       "exampleTranslit": "az sag natars.",
       "exampleEn": "Don't fear the dog.",
@@ -7986,9 +7955,7 @@
       "freqRank": 385,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "کسی"
-      ],
+      "variants": [],
       "exampleTarget": "هیچ کس نیامد.",
       "exampleTranslit": "hēch kas nayāmad.",
       "exampleEn": "Nobody came.",
@@ -8225,9 +8192,7 @@
       "freqRank": 397,
       "freqBand": 3,
       "register": "formal",
-      "variants": [
-        "مقبول"
-      ],
+      "variants": [],
       "exampleTarget": "گل‌های زیبا دیدم.",
       "exampleTranslit": "gul-hā-ye zēbā dīdam.",
       "exampleEn": "I saw beautiful flowers.",
@@ -8344,9 +8309,7 @@
       "freqRank": 403,
       "freqBand": 3,
       "register": "spoken",
-      "variants": [
-        "همان"
-      ],
+      "variants": [],
       "exampleTarget": "همون کتاب را بده.",
       "exampleTranslit": "hamūn kitāb rā bidi.",
       "exampleEn": "Give exactly that book.",
@@ -8426,7 +8389,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "نمای",
         "نشان دادن"
       ],
       "exampleTarget": "کاری نمود.",
@@ -8567,9 +8529,7 @@
       "freqRank": 414,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "دو"
-      ],
+      "variants": [],
       "exampleTarget": "او زود می‌دود.",
       "exampleTranslit": "ō zūd mēdawad.",
       "exampleEn": "He runs fast.",
@@ -8591,9 +8551,7 @@
       "freqRank": 415,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "سوز"
-      ],
+      "variants": [],
       "exampleTarget": "چوب می‌سوزد.",
       "exampleTranslit": "chōb mēsōzad.",
       "exampleEn": "The wood burns.",
@@ -8706,9 +8664,7 @@
       "freqRank": 421,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "دزد"
-      ],
+      "variants": [],
       "exampleTarget": "پول را دزدید.",
       "exampleTranslit": "pul rā duzdīd.",
       "exampleEn": "He stole the money.",
@@ -8824,9 +8780,7 @@
       "freqRank": 427,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "کار"
-      ],
+      "variants": [],
       "exampleTarget": "نهال کاشت.",
       "exampleTranslit": "nahāl kāsht.",
       "exampleEn": "He planted a sapling.",
@@ -8993,7 +8947,6 @@
       "freqBand": 3,
       "register": "neutral",
       "variants": [
-        "شمار",
         "حساب کردن"
       ],
       "exampleTarget": "پول را بشمار.",
@@ -9035,9 +8988,7 @@
       "freqRank": 438,
       "freqBand": 3,
       "register": "formal",
-      "variants": [
-        "نام"
-      ],
+      "variants": [],
       "exampleTarget": "او را احمد نامیدند.",
       "exampleTranslit": "ō rā ahmad nāmīdand.",
       "exampleEn": "They named him Ahmad.",
@@ -9057,7 +9008,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "گریه کردن",
         "گری"
       ],
       "exampleTarget": "طفل می‌گرید.",
@@ -9079,7 +9029,6 @@
       "freqBand": 3,
       "register": "neutral",
       "variants": [
-        "ریز",
         "چپه کردن"
       ],
       "exampleTarget": "آب ریخت.",
@@ -9177,7 +9126,6 @@
       "freqBand": 3,
       "register": "neutral",
       "variants": [
-        "سپر",
         "تسلیم کردن"
       ],
       "exampleTarget": "کار را به تو سپردم.",
@@ -9217,10 +9165,7 @@
       "freqRank": 447,
       "freqBand": 3,
       "register": "formal",
-      "variants": [
-        "جوی",
-        "پالیدن"
-      ],
+      "variants": [],
       "exampleTarget": "کار می‌جوید.",
       "exampleTranslit": "kār mējōyad.",
       "exampleEn": "He seeks a job.",
@@ -9261,9 +9206,7 @@
       "freqRank": 449,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "باز"
-      ],
+      "variants": [],
       "exampleTarget": "در بازی باخت.",
       "exampleTranslit": "dar bāzī bākht.",
       "exampleEn": "He lost in the game.",
@@ -9282,9 +9225,7 @@
       "freqRank": 450,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "مال"
-      ],
+      "variants": [],
       "exampleTarget": "چشم خود را مالید.",
       "exampleTranslit": "chashm-e khud rā mālīd.",
       "exampleEn": "He rubbed his eye.",
@@ -9406,7 +9347,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "ره",
         "نجات یافتن"
       ],
       "exampleTarget": "از خطر رست.",
@@ -9521,9 +9461,7 @@
       "freqRank": 462,
       "freqBand": 3,
       "register": "formal",
-      "variants": [
-        "رنج"
-      ],
+      "variants": [],
       "exampleTarget": "از من نرنج.",
       "exampleTranslit": "az man naranj.",
       "exampleEn": "Don't be offended by me.",
@@ -9585,9 +9523,7 @@
       "freqRank": 465,
       "freqBand": 3,
       "register": "formal",
-      "variants": [
-        "خیز"
-      ],
+      "variants": [],
       "exampleTarget": "از خواب برخاست.",
       "exampleTranslit": "az khāb barkhāst.",
       "exampleEn": "He rose from sleep.",
@@ -9789,7 +9725,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "بال",
         "افتخار کردن"
       ],
       "exampleTarget": "به خود می‌بالد.",
@@ -9910,9 +9845,7 @@
       "freqRank": 481,
       "freqBand": 3,
       "register": "spoken",
-      "variants": [
-        "مد"
-      ],
+      "variants": [],
       "exampleTarget": "این رنگ حالا مود است.",
       "exampleTranslit": "īn rang hālā mōd ast.",
       "exampleEn": "This color is in fashion now.",
@@ -10208,7 +10141,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "آزار",
         "خفه کردن"
       ],
       "exampleTarget": "مرا آزرد.",
@@ -10272,9 +10204,7 @@
       "freqRank": 499,
       "freqBand": 3,
       "register": "literary",
-      "variants": [
-        "سرای"
-      ],
+      "variants": [],
       "exampleTarget": "شعر می‌سراید.",
       "exampleTranslit": "shēr mēsurāyad.",
       "exampleEn": "He composes poetry.",
@@ -10333,7 +10263,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "در",
         "پاره کردن"
       ],
       "exampleTarget": "کاغذ را درید.",
@@ -10435,7 +10364,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "ناز",
         "افتخار کردن"
       ],
       "exampleTarget": "به خود می‌نازد.",
@@ -10554,7 +10482,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "شتاب",
         "عجله کردن"
       ],
       "exampleTarget": "به مکتب شتافت.",
@@ -10576,8 +10503,7 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "گشا",
-        "باز کردن"
+        "گشا"
       ],
       "exampleTarget": "در را گشود.",
       "exampleTranslit": "dar rā gushōd.",
@@ -10599,8 +10525,7 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "آشام",
-        "نوشیدن"
+        "آشام"
       ],
       "exampleTarget": "آب آشامید.",
       "exampleTranslit": "āb āshāmīd.",
@@ -10681,7 +10606,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "کاه",
         "کم کردن"
       ],
       "exampleTarget": "از پول کاست.",
@@ -10702,9 +10626,7 @@
       "freqRank": 520,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "ارز"
-      ],
+      "variants": [],
       "exampleTarget": "این کار می‌ارزد.",
       "exampleTranslit": "īn kār mēarzad.",
       "exampleEn": "This job is worth it.",
@@ -10840,9 +10762,7 @@
       "freqRank": 527,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "چسب"
-      ],
+      "variants": [],
       "exampleTarget": "کاغذ چسبید.",
       "exampleTranslit": "kāghaz chasbīd.",
       "exampleEn": "The paper stuck.",
@@ -10880,9 +10800,7 @@
       "freqRank": 529,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "برنامه"
-      ],
+      "variants": [],
       "exampleTarget": "این اپلیکیشن رایگان است.",
       "exampleTranslit": "īn aplīkēshan rāygān ast.",
       "exampleEn": "This application is free.",
@@ -11058,7 +10976,6 @@
       "freqBand": 3,
       "register": "neutral",
       "variants": [
-        "بوس",
         "ماچ کردن"
       ],
       "exampleTarget": "دستش را بوسید.",
@@ -11117,9 +11034,7 @@
       "freqRank": 541,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "شکاف"
-      ],
+      "variants": [],
       "exampleTarget": "چوب را شکافت.",
       "exampleTranslit": "chōb rā shikāft.",
       "exampleEn": "He split the wood.",
@@ -11178,8 +11093,7 @@
       "freqBand": 3,
       "register": "literary",
       "variants": [
-        "ربای",
-        "دزدیدن"
+        "ربای"
       ],
       "exampleTarget": "بکس را ربود.",
       "exampleTranslit": "baks rā rubōd.",
@@ -11432,8 +11346,7 @@
       "freqBand": 3,
       "register": "neutral",
       "variants": [
-        "نواز",
-        "زدن"
+        "نواز"
       ],
       "exampleTarget": "ساز نواخت.",
       "exampleTranslit": "sāz nawākht.",
@@ -11517,9 +11430,7 @@
       "freqRank": 561,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "لرز"
-      ],
+      "variants": [],
       "exampleTarget": "از خنک می‌لرزم.",
       "exampleTranslit": "az khunak mēlarzam.",
       "exampleEn": "I shiver from the cold.",
@@ -11658,9 +11569,7 @@
       "freqRank": 568,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "خراش"
-      ],
+      "variants": [],
       "exampleTarget": "دست خود را خراشید.",
       "exampleTranslit": "dast-e khud rā kharāshīd.",
       "exampleEn": "He scratched his hand.",
@@ -11680,7 +11589,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "گنج",
         "جای شدن"
       ],
       "exampleTarget": "در بکس نمی‌گنجد.",
@@ -11900,7 +11808,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "گریز",
         "فرار کردن"
       ],
       "exampleTarget": "دزد گریخت.",
@@ -11984,7 +11891,6 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "شور",
         "بغاوت کردن"
       ],
       "exampleTarget": "مردم شوریدند.",
@@ -12125,9 +12031,7 @@
       "freqRank": 591,
       "freqBand": 3,
       "register": "formal",
-      "variants": [
-        "گرو"
-      ],
+      "variants": [],
       "exampleTarget": "به او گرویدند.",
       "exampleTranslit": "ba ō girawīdand.",
       "exampleEn": "They inclined towards him.",
@@ -12362,8 +12266,7 @@
       "freqBand": 3,
       "register": "formal",
       "variants": [
-        "افکن",
-        "انداختن"
+        "افکن"
       ],
       "exampleTarget": "سنگ افکند.",
       "exampleTranslit": "sang afkand.",
@@ -12465,9 +12368,7 @@
       "freqRank": 608,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "گونه"
-      ],
+      "variants": [],
       "exampleTarget": "اشک از رخسارش جاری شد.",
       "exampleTranslit": "ashk az rukhsārash jārī shud.",
       "exampleEn": "A tear flowed from her cheek.",
@@ -12686,10 +12587,7 @@
       "freqRank": 619,
       "freqBand": 3,
       "register": "formal",
-      "variants": [
-        "هراس",
-        "ترسیدن"
-      ],
+      "variants": [],
       "exampleTarget": "از جنگ نهراسید.",
       "exampleTranslit": "az jang naharāsīd.",
       "exampleEn": "Do not fear war.",
@@ -12808,9 +12706,7 @@
       "freqRank": 625,
       "freqBand": 3,
       "register": "neutral",
-      "variants": [
-        "گذر (guzar)"
-      ],
+      "variants": [],
       "exampleTarget": "از سرک گذشتم.",
       "exampleTranslit": "az sarak guzashtam.",
       "exampleEn": "I crossed the street.",
@@ -13359,8 +13255,7 @@
       "freqBand": 4,
       "register": "formal",
       "variants": [
-        "خسب",
-        "خوابیدن"
+        "خسب"
       ],
       "exampleTarget": "او خفت.",
       "exampleTranslit": "ō khuft.",
@@ -13890,9 +13785,7 @@
       "freqRank": 680,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "تصویر"
-      ],
+      "variants": [],
       "exampleTarget": "او پرتره مرا کشید.",
       "exampleTranslit": "ō purtrī-ye marā kashīd.",
       "exampleEn": "He drew my portrait.",
@@ -13911,9 +13804,7 @@
       "freqRank": 681,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "دواخانه"
-      ],
+      "variants": [],
       "exampleTarget": "دوا را از دواخانه گرفتم.",
       "exampleTranslit": "dawā rā az dawākhāna gereftam.",
       "exampleEn": "I got the medicine from the pharmacy.",
@@ -14405,9 +14296,7 @@
       "freqRank": 706,
       "freqBand": 4,
       "register": "spoken",
-      "variants": [
-        "فر"
-      ],
+      "variants": [],
       "exampleTarget": "نان را در داش پختیم.",
       "exampleTranslit": "nān rā dar dāsh pukhtēm.",
       "exampleEn": "We baked the bread in the oven.",
@@ -14445,14 +14334,13 @@
       "freqRank": 708,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "dari-specific"
-      ],
+      "variants": [],
       "exampleTarget": "تیرماه برگ‌ها زرد می‌شوند.",
       "exampleTranslit": "tērmāh barg-hā zard mēshawand.",
       "exampleEn": "In autumn leaves turn yellow.",
       "tags": [
-        "Time & Calendar"
+        "Time & Calendar",
+        "dari-specific"
       ],
       "concreteness": false
     },
@@ -14486,7 +14374,6 @@
       "freqBand": 4,
       "register": "formal",
       "variants": [
-        "ره",
         "نجات یافتن"
       ],
       "exampleTarget": "از خطر رهید.",
@@ -14701,8 +14588,7 @@
       "freqBand": 4,
       "register": "spoken",
       "variants": [
-        "شنو",
-        "شنیدن"
+        "شنو"
       ],
       "exampleTarget": "آواز شنفتم.",
       "exampleTranslit": "āwāz shinuftam.",
@@ -14875,8 +14761,7 @@
       "freqBand": 4,
       "register": "formal",
       "variants": [
-        "شگاف",
-        "شکافتن"
+        "شگاف"
       ],
       "exampleTarget": "زمین را شگافت.",
       "exampleTranslit": "zamīn rā shigāft.",
@@ -14972,9 +14857,7 @@
       "freqRank": 735,
       "freqBand": 4,
       "register": "spoken",
-      "variants": [
-        "باند"
-      ],
+      "variants": [],
       "exampleTarget": "روی زخمش پتی بستند.",
       "exampleTranslit": "rō-ye zakhmash patī bastand.",
       "exampleEn": "They put a bandage on his wound.",
@@ -14993,9 +14876,7 @@
       "freqRank": 736,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "آی"
-      ],
+      "variants": [],
       "exampleTarget": "بیمار پس از دو ساعت به هوش آمد.",
       "exampleTranslit": "bēmār pas az dū sā'at ba hōsh āmad.",
       "exampleEn": "The patient regained consciousness after two hours.",
@@ -15358,15 +15239,14 @@
       "freqRank": 755,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "dari-specific"
-      ],
+      "variants": [],
       "exampleTarget": "پشک شیر می‌خورد.",
       "exampleTranslit": "pishak shīr mēkhurad.",
       "exampleEn": "The cat drinks milk.",
       "tags": [
         "Animals & Pets",
-        "beginner-core"
+        "beginner-core",
+        "dari-specific"
       ],
       "concreteness": true
     },
@@ -17020,9 +16900,7 @@
       "freqRank": 842,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "آیینه"
-      ],
+      "variants": [],
       "exampleTarget": "در آینه نگاه کرد.",
       "exampleTranslit": "dar āyina nigāh kard.",
       "exampleEn": "He looked in the mirror.",
@@ -18313,9 +18191,7 @@
       "freqRank": 910,
       "freqBand": 4,
       "register": "spoken",
-      "variants": [
-        "خراب"
-      ],
+      "variants": [],
       "exampleTarget": "سیب‌های گنده را دور بینداز.",
       "exampleTranslit": "sēbhā-ye ganda rā dōr binyandāz.",
       "exampleEn": "Throw away the rotten apples.",
@@ -18465,9 +18341,7 @@
       "freqRank": 918,
       "freqBand": 4,
       "register": "spoken",
-      "variants": [
-        "پاشنه"
-      ],
+      "variants": [],
       "exampleTarget": "کوری بوتم بلند است.",
       "exampleTranslit": "kūrī-ye būtam buland ast.",
       "exampleEn": "My shoe's heel is high.",
@@ -19398,9 +19272,7 @@
       "freqRank": 967,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "سیل"
-      ],
+      "variants": [],
       "exampleTarget": "سیلاب خانه‌های زیادی را ویران کرد.",
       "exampleTranslit": "sēlāb khānahā-ye ziyādī rā wērān kard.",
       "exampleEn": "The flood destroyed many houses.",
@@ -19930,9 +19802,7 @@
       "freqRank": 995,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "خور (khur)"
-      ],
+      "variants": [],
       "exampleTarget": "در چهارراهی دور بخورید.",
       "exampleTranslit": "dar chahār-rāhī dōr bukhurēd.",
       "exampleEn": "Turn at the intersection.",
@@ -19987,9 +19857,7 @@
       "freqRank": 998,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "چاقو"
-      ],
+      "variants": [],
       "exampleTarget": "کارد بسیار تیز است.",
       "exampleTranslit": "kārd bisyār tēz ast.",
       "exampleEn": "The knife is very sharp.",
@@ -21845,9 +21713,7 @@
       "freqRank": 1096,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [
-        "آپدیت"
-      ],
+      "variants": [],
       "exampleTarget": "نیاز به بروزرسانی دارد.",
       "exampleTranslit": "niyāz ba burōz-rasānī dāra.",
       "exampleEn": "It needs an update.",
@@ -24217,9 +24083,7 @@
       "freqRank": 1219,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "mutāla'a mēkun-"
-      ],
+      "variants": [],
       "exampleTarget": "من هر شب مطالعه می‌کنم.",
       "exampleTranslit": "man har shab mutāla'a mēkunum.",
       "exampleEn": "I study every night.",
@@ -24541,9 +24405,7 @@
       "freqRank": 1236,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "tadrīs mēkun-"
-      ],
+      "variants": [],
       "exampleTarget": "او در مکتب تدریس می‌کند.",
       "exampleTranslit": "ō dar maktab tadrīs mēkuna.",
       "exampleEn": "He teaches at the school.",
@@ -25006,9 +24868,7 @@
       "freqRank": 1261,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "rasm mēkun-"
-      ],
+      "variants": [],
       "exampleTarget": "کودک یک گل رسم کرد.",
       "exampleTranslit": "kōdak yak gul rasm kad.",
       "exampleEn": "The child drew a flower.",
@@ -25155,9 +25015,7 @@
       "freqRank": 1269,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "ijrā mēkun-"
-      ],
+      "variants": [],
       "exampleTarget": "او در کنسرت اجرا می‌کند.",
       "exampleTranslit": "ō dar kansart ijrā mēkuna.",
       "exampleEn": "He performs in the concert.",
@@ -25646,9 +25504,7 @@
       "freqRank": 1295,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "nashar mēkun-"
-      ],
+      "variants": [],
       "exampleTarget": "کتاب جدید خود را نشر کرد.",
       "exampleTranslit": "kitāb-e jadīd-e khud rā nashr kard.",
       "exampleEn": "He published his new book.",
@@ -25968,9 +25824,7 @@
       "freqRank": 1312,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "شَو"
-      ],
+      "variants": [],
       "exampleTarget": "او هفته گذشته بستری شد.",
       "exampleTranslit": "ō hafta-ye guzashta bistarī shud.",
       "exampleEn": "He was hospitalized last week.",
@@ -26005,9 +25859,7 @@
       "freqRank": 1314,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "قالین"
-      ],
+      "variants": [],
       "exampleTarget": "فرش جدید خریدم.",
       "exampleTranslit": "farsh-e jadīd kharīdam.",
       "exampleEn": "I bought a new carpet.",
@@ -26026,9 +25878,7 @@
       "freqRank": 1315,
       "freqBand": 5,
       "register": "formal",
-      "variants": [
-        "bāzdāsht kon"
-      ],
+      "variants": [],
       "exampleTarget": "پولیس او را بازداشت کرد.",
       "exampleTranslit": "polīs ō rā bāzdāsht kard.",
       "exampleEn": "The police arrested him.",
@@ -26085,9 +25935,7 @@
       "freqRank": 1318,
       "freqBand": 5,
       "register": "spoken",
-      "variants": [
-        "gēm mēzan-"
-      ],
+      "variants": [],
       "exampleTarget": "او تمام روز گیم می‌زند.",
       "exampleTranslit": "ō tamām-e rōz gēm mēzana.",
       "exampleEn": "He plays video games all day.",
@@ -26365,9 +26213,7 @@
       "freqRank": 1333,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "گیلاس"
-      ],
+      "variants": [],
       "exampleTarget": "یک لیوان آب بده.",
       "exampleTranslit": "yak lēwān āb bidi.",
       "exampleEn": "Give me a glass of water.",
@@ -26849,9 +26695,7 @@
       "freqRank": 1359,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "رنچ"
-      ],
+      "variants": [],
       "exampleTarget": "اسپانر را به من بده.",
       "exampleTranslit": "ispānar rā ba man bidi.",
       "exampleEn": "Give me the spanner.",
@@ -27621,9 +27465,7 @@
       "freqRank": 1399,
       "freqBand": 5,
       "register": "formal",
-      "variants": [
-        "taswīb kon"
-      ],
+      "variants": [],
       "exampleTarget": "قانون تصویب شد.",
       "exampleTranslit": "qānūn taswīb shod.",
       "exampleEn": "The law was approved.",
@@ -29652,9 +29494,7 @@
       "freqRank": 1504,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "کمپل"
-      ],
+      "variants": [],
       "exampleTarget": "هوا سرد است، پتو بیاور.",
       "exampleTranslit": "hawā sard ast, patū biyāwar.",
       "exampleEn": "It is cold, bring a blanket.",
@@ -29768,9 +29608,7 @@
       "freqRank": 1510,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "پیاله"
-      ],
+      "variants": [],
       "exampleTarget": "یک فنجان چای.",
       "exampleTranslit": "yak finjān chāy.",
       "exampleEn": "A cup of tea.",
@@ -29789,9 +29627,7 @@
       "freqRank": 1511,
       "freqBand": 5,
       "register": "neutral",
-      "variants": [
-        "روی‌پاک"
-      ],
+      "variants": [],
       "exampleTarget": "حوله کجاست؟",
       "exampleTranslit": "hawla kujāst?",
       "exampleEn": "Where is the towel?",
@@ -31695,9 +31531,7 @@
       "freqRank": 1611,
       "freqBand": 5,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "انجام و غایت انسان رسیدن به کمال مطلق است.",
       "exampleTranslit": "anjām wa ghāyat-e insān rasīdan ba kamāl-e mutlaq ast.",
       "exampleEn": "The end and telos of man is to reach absolute perfection.",
@@ -32263,9 +32097,7 @@
       "freqRank": 1641,
       "freqBand": 5,
       "register": "formal",
-      "variants": [
-        "ehzār kon"
-      ],
+      "variants": [],
       "exampleTarget": "او احضار شد.",
       "exampleTranslit": "ō ehzār shod.",
       "exampleEn": "He was summoned.",
@@ -35191,9 +35023,7 @@
       "freqRank": 1798,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "اصل علیت پایه تمامی علوم است.",
       "exampleTranslit": "Asl-e elliyat paye-ye tamamē-ye oloom ast.",
       "exampleEn": "The principle of causality is the foundation of all sciences.",
@@ -35497,9 +35327,7 @@
       "freqRank": 1814,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "ta'dīl kon"
-      ],
+      "variants": [],
       "exampleTarget": "قانون تعدیل شد.",
       "exampleTranslit": "qānūn ta'dīl shod.",
       "exampleEn": "The law was amended.",
@@ -37627,9 +37455,7 @@
       "freqRank": 1926,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "ghasb kon"
-      ],
+      "variants": [],
       "exampleTarget": "زمین‌ها غصب شده است.",
       "exampleTranslit": "zamīn-hā ghasb shoda ast.",
       "exampleEn": "Lands have been usurped.",
@@ -39674,9 +39500,7 @@
       "freqRank": 2034,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "tawshēh kon"
-      ],
+      "variants": [],
       "exampleTarget": "رئیس جمهور قانون را توشیح کرد.",
       "exampleTranslit": "ra'īs-e jamhūr qānūn rā tawshēh kard.",
       "exampleEn": "The president endorsed the law.",
@@ -40334,9 +40158,7 @@
       "freqRank": 2069,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "رابطه جزء و کل از مباحث مهم متافیزیک است.",
       "exampleTranslit": "rābita-ye juz' wa kull az mabāhis-e muhim-e metāfīzīk ast.",
       "exampleEn": "The relationship between part and whole is an important topic in metaphysics.",
@@ -43826,9 +43648,7 @@
       "freqRank": 2254,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "شکل ظاهری اشیاء می‌تواند فریبنده باشد.",
       "exampleTranslit": "shakl-e zāhirī-ye ashyā mētawānad farēbanda bāshad.",
       "exampleEn": "The outward shape of objects can be deceptive.",
@@ -44243,9 +44063,7 @@
       "freqRank": 2276,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "حرکت جوهری یکی از نظریات مهم ملاصدرا است.",
       "exampleTranslit": "harakat-e jawharī yakē az nazariyāt-e muhim-e mullā sadrā ast.",
       "exampleEn": "Substantial motion is one of Mulla Sadra's important theories.",
@@ -45297,9 +45115,7 @@
       "freqRank": 2332,
       "freqBand": 6,
       "register": "neutral",
-      "variants": [
-        "زَن"
-      ],
+      "variants": [],
       "exampleTarget": "او مدام عطسه می‌زند.",
       "exampleTranslit": "ō mudām atsa mēzanad.",
       "exampleEn": "He sneezes constantly.",
@@ -45788,9 +45604,7 @@
       "freqRank": 2358,
       "freqBand": 6,
       "register": "neutral",
-      "variants": [
-        "زَن"
-      ],
+      "variants": [],
       "exampleTarget": "داکتر سر او را بخیه زد.",
       "exampleTranslit": "dāktar sar-e ō rā bakhya zad.",
       "exampleEn": "The doctor stitched his head.",
@@ -46678,9 +46492,7 @@
       "freqRank": 2405,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مفاهیم عام از دل موارد خاص استخراج می‌شوند.",
       "exampleTranslit": "mafāhīm-e 'ām az dil-e mawārid-e khās istikhrāj mēshawand.",
       "exampleEn": "General concepts are extracted from specific cases.",
@@ -47375,9 +47187,7 @@
       "freqRank": 2442,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "جهان هستی آیا آغازی زمانی داشته است؟",
       "exampleTranslit": "jahān-e hastī āyā āghāzē zamānī dāshta ast?",
       "exampleEn": "Did the universe have a temporal beginning?",
@@ -47415,9 +47225,7 @@
       "freqRank": 2444,
       "freqBand": 6,
       "register": "neutral",
-      "variants": [
-        "شَو"
-      ],
+      "variants": [],
       "exampleTarget": "مچ پایم رگ‌به‌رگ شد.",
       "exampleTranslit": "much-e pāyam rag-ba-rag shud.",
       "exampleEn": "My ankle sprained.",
@@ -48760,9 +48568,7 @@
       "freqRank": 2516,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "متافیزیک حضور بر اولویت زمان حال و گفتار تأکید دارد.",
       "exampleTranslit": "metāfīzīk-e huzūr bar awlawiyat-e zamān-e hāl wa guftār ta'kēd dārad.",
       "exampleEn": "The metaphysics of presence emphasizes the priority of the present tense and speech.",
@@ -50039,9 +49845,7 @@
       "freqRank": 2584,
       "freqBand": 6,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مفهوم \"دیگری\" در شکل‌گیری هویت فردی نقش اساسی دارد.",
       "exampleTranslit": "mafhūm-e \"dīgarī\" dar shakl-gīrī-ye huwiyat-e fardī naqsh-e asāsī dārad.",
       "exampleEn": "The concept of \"the Other\" plays a fundamental role in the formation of personal identity.",
@@ -51458,9 +51262,7 @@
       "freqRank": 2660,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "آیا فضا یک موجودیت مستقل است یا تنها رابطه‌ای بین اشیاء؟",
       "exampleTranslit": "āyā fazā yak mawjūdiyat-e mustaqil ast yā tanhā rābita-yē bayn-e ashyā?",
       "exampleEn": "Is space an independent entity or just a relationship between objects?",
@@ -53691,9 +53493,7 @@
       "freqRank": 2780,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "bāsh"
-      ],
+      "variants": [],
       "exampleTarget": "او همیشه خسیس بوده است.",
       "exampleTranslit": "ō hamēsha khasīs būda ast.",
       "exampleEn": "He has always been stingy.",
@@ -54513,9 +54313,7 @@
       "freqRank": 2824,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "bar"
-      ],
+      "variants": [],
       "exampleTarget": "او از بیماری رنج می‌برد.",
       "exampleTranslit": "ō az bēmārī ranj mēbarad.",
       "exampleEn": "He suffers from an illness.",
@@ -54850,9 +54648,7 @@
       "freqRank": 2842,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "zan"
-      ],
+      "variants": [],
       "exampleTarget": "آنها مرا گول زدند.",
       "exampleTranslit": "ānhā marā gōl zadand.",
       "exampleEn": "They tricked me.",
@@ -54887,9 +54683,7 @@
       "freqRank": 2844,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "من به تو اعتماد کردم.",
       "exampleTranslit": "man ba tu i'timād kardam.",
       "exampleEn": "I trusted you.",
@@ -54907,9 +54701,7 @@
       "freqRank": 2845,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "لطفاً به من کمک کنید.",
       "exampleTranslit": "lutfan ba man kumak kunēd.",
       "exampleEn": "Please help me.",
@@ -54948,9 +54740,7 @@
       "freqRank": 2847,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "پدرم همیشه مرا نصیحت می‌کند.",
       "exampleTranslit": "padaram hamēsha marā nasīhat mēkunad.",
       "exampleEn": "My father always advises me.",
@@ -54987,9 +54777,7 @@
       "freqRank": 2849,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "مردم از عملکرد دولت انتقاد کردند.",
       "exampleTranslit": "mardum az amal-kard-e dawlat intiqād kardand.",
       "exampleEn": "The people criticized the government's performance.",
@@ -55007,9 +54795,7 @@
       "freqRank": 2850,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "درخواست من رد شد.",
       "exampleTranslit": "darkhāst-e man rad shud.",
       "exampleEn": "My request was rejected.",
@@ -55082,9 +54868,7 @@
       "freqRank": 2854,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "همه از او تمجید کردند.",
       "exampleTranslit": "hama az ō tamjīd kardand.",
       "exampleEn": "Everyone praised him.",
@@ -55102,9 +54886,7 @@
       "freqRank": 2855,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "آنها همیشه پشت سر دیگران غیبت می‌کنند.",
       "exampleTranslit": "ānhā hamēsha pusht-e sar-e dīgarān ghaybat mēkunand.",
       "exampleEn": "They always backbite about others.",
@@ -55141,9 +54923,7 @@
       "freqRank": 2857,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "dār"
-      ],
+      "variants": [],
       "exampleTarget": "آیا می‌توانی راز نگه داری؟",
       "exampleTranslit": "āyā mētawānī rāz nigah dārī?",
       "exampleEn": "Can you keep a secret?",
@@ -55179,9 +54959,7 @@
       "freqRank": 2859,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "او راز مرا فاش کرد.",
       "exampleTranslit": "ō rāz-e marā fāsh kard.",
       "exampleEn": "He revealed my secret.",
@@ -55273,9 +55051,7 @@
       "freqRank": 2864,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "gōy"
-      ],
+      "variants": [],
       "exampleTarget": "چرا به من دروغ گفتی؟",
       "exampleTranslit": "charā ba man durōgh guftī?",
       "exampleEn": "Why did you lie to me?",
@@ -55312,9 +55088,7 @@
       "freqRank": 2866,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "gōy"
-      ],
+      "variants": [],
       "exampleTarget": "من همیشه راست می‌گویم.",
       "exampleTranslit": "man hamēsha rāst mēgōyam.",
       "exampleEn": "I always tell the truth.",
@@ -55332,9 +55106,7 @@
       "freqRank": 2867,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "dih"
-      ],
+      "variants": [],
       "exampleTarget": "او سعی کرد مرا فریب دهد.",
       "exampleTranslit": "ō say kard marā firēb dihad.",
       "exampleEn": "He tried to deceive me.",
@@ -55389,9 +55161,7 @@
       "freqRank": 2870,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "با وکیل خود مشورت کردم.",
       "exampleTranslit": "bā wakīl-e khud mashwarat kardam.",
       "exampleEn": "I consulted with my lawyer.",
@@ -55409,9 +55179,7 @@
       "freqRank": 2871,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "ما ساعت‌ها بحث کردیم.",
       "exampleTranslit": "mā sāat-hā bahs kardēm.",
       "exampleEn": "We discussed for hours.",
@@ -55429,9 +55197,7 @@
       "freqRank": 2872,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "دو طرف به زودی توافق می‌کنند.",
       "exampleTranslit": "dō taraf ba zūdī tawāfuq mēkunand.",
       "exampleEn": "The two sides will agree soon.",
@@ -55449,9 +55215,7 @@
       "freqRank": 2873,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "نمایندگان در حال مذاکره هستند.",
       "exampleTranslit": "namāyandagān dar hāl-e muzākira hastand.",
       "exampleEn": "The representatives are negotiating.",
@@ -55486,9 +55250,7 @@
       "freqRank": 2875,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "zan"
-      ],
+      "variants": [],
       "exampleTarget": "او همیشه لبخند می‌زند.",
       "exampleTranslit": "ō hamēsha labkhand mēzanad.",
       "exampleEn": "She always smiles.",
@@ -55506,9 +55268,7 @@
       "freqRank": 2876,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "shaw"
-      ],
+      "variants": [],
       "exampleTarget": "پدرم خیلی عصبانی شد.",
       "exampleTranslit": "padaram khaylē asabānī shud.",
       "exampleEn": "My father got very angry.",
@@ -55526,9 +55286,7 @@
       "freqRank": 2877,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "برادران گاهی با هم دعوا می‌کنند.",
       "exampleTranslit": "barādarān gāhē bā ham dawā mēkunand.",
       "exampleEn": "Brothers sometimes fight with each other.",
@@ -55565,9 +55323,7 @@
       "freqRank": 2879,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "ما بعد از یک هفته آشتی کردیم.",
       "exampleTranslit": "mā ba'd az yak hafta āshtī kardēm.",
       "exampleEn": "We reconciled after a week.",
@@ -55660,9 +55416,7 @@
       "freqRank": 2884,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تصور یک جهان بدون زمان برای ما غیرممکن است.",
       "exampleTranslit": "tasawwur-e yak jahān-e bidūn-e zamān barā-ye mā ghayr-e mumkin ast.",
       "exampleEn": "The conception of a universe without time is impossible for us.",
@@ -56146,9 +55900,7 @@
       "freqRank": 2910,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "ما با زلزله‌زدگان همدردی می‌کنیم.",
       "exampleTranslit": "mā bā zilzila-zadagān hamdardī mēkunēm.",
       "exampleEn": "We sympathize with the earthquake victims.",
@@ -56185,9 +55937,7 @@
       "freqRank": 2912,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "dih"
-      ],
+      "variants": [],
       "exampleTarget": "من چای را به قهوه ترجیح می‌دهم.",
       "exampleTranslit": "man chāy rā ba qahwa tarjēh mēdiham.",
       "exampleEn": "I prefer tea to coffee.",
@@ -56205,9 +55955,7 @@
       "freqRank": 2913,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "dār"
-      ],
+      "variants": [],
       "exampleTarget": "من به تو باور دارم.",
       "exampleTranslit": "man ba tu bāwar dāram.",
       "exampleEn": "I believe in you.",
@@ -56263,9 +56011,7 @@
       "freqRank": 2916,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "به حرف‌هایش شک کردم.",
       "exampleTranslit": "ba harfhāyash shak kardam.",
       "exampleEn": "I doubted his words.",
@@ -56319,9 +56065,7 @@
       "freqRank": 2919,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "shaw"
-      ],
+      "variants": [],
       "exampleTarget": "آنها به زودی صمیمی شدند.",
       "exampleTranslit": "ānhā ba zūdī samīmī shudand.",
       "exampleEn": "They quickly became close.",
@@ -56339,9 +56083,7 @@
       "freqRank": 2920,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "خانواده‌اش او را طرد کردند.",
       "exampleTranslit": "khānawāda-ash ō rā tard kardand.",
       "exampleEn": "His family rejected him.",
@@ -56359,9 +56101,7 @@
       "freqRank": 2921,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "dih"
-      ],
+      "variants": [],
       "exampleTarget": "دیگران را آزار نده.",
       "exampleTranslit": "dīgarān rā āzār nadih.",
       "exampleEn": "Don't hurt others.",
@@ -56398,9 +56138,7 @@
       "freqRank": 2923,
       "freqBand": 7,
       "register": "neutral",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "صدای بلند مرا اذیت می‌کند.",
       "exampleTranslit": "sadā-ye buland marā aziyat mēkunad.",
       "exampleEn": "The loud noise bothers me.",
@@ -56642,9 +56380,7 @@
       "freqRank": 2936,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "kun"
-      ],
+      "variants": [],
       "exampleTarget": "بالاخره او را متقاعد کردم.",
       "exampleTranslit": "bālākhira ō rā mutaqāid kardam.",
       "exampleEn": "I finally persuaded him.",
@@ -58250,9 +57986,7 @@
       "freqRank": 3022,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "از عدم نمی‌توان چیزی به وجود آورد.",
       "exampleTranslit": "az adam namētawān chēzē ba wujūd āward.",
       "exampleEn": "Nothing can be brought into existence from nothingness.",
@@ -58386,9 +58120,7 @@
       "freqRank": 3029,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "نشانه‌شناسی به بررسی عملکرد نشانه‌ها در جامعه می‌پردازد.",
       "exampleTranslit": "nishāna-shināsī ba barrasī-ye amalkard-e nishāna-hā dar jāmi'a mēpardāzad.",
       "exampleEn": "Semiotics studies the function of signs in society.",
@@ -58582,9 +58314,7 @@
       "freqRank": 3039,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "قدم عالم به معنای بی‌نهایت بودن آن در گذشته است.",
       "exampleTranslit": "qidam-e ālam ba ma'nā-ye bē-nihāyat būdan-e ān dar guzashta ast.",
       "exampleEn": "The eternity of the universe means its infinitude in the past.",
@@ -58834,9 +58564,7 @@
       "freqRank": 3052,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "bar-angēz"
-      ],
+      "variants": [],
       "exampleTarget": "این سخنرانی احساسات مردم را برانگیخت.",
       "exampleTranslit": "īn sukhanrānī ihsāsāt-e mardum rā bar-angēkht.",
       "exampleEn": "This speech provoked the emotions of the people.",
@@ -59277,9 +59005,7 @@
       "freqRank": 3075,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "mī-bardār-"
-      ],
+      "variants": [],
       "exampleTarget": "از مجسمه جدید پرده برداشتند.",
       "exampleTranslit": "az mojassama-ye jadīd parda bardāshtand.",
       "exampleEn": "They unveiled the new statue.",
@@ -59795,9 +59521,7 @@
       "freqRank": 3102,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "نتایج این تصمیم در بلندمدت آشکار خواهد شد.",
       "exampleTranslit": "natāyij-e īn tasmēm dar buland-muddat āshkār khāhad shud.",
       "exampleEn": "The consequences of this decision will become apparent in the long run.",
@@ -61333,9 +61057,7 @@
       "freqRank": 3183,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ذکر مدام باعث آرامش نفس می‌شود.",
       "exampleTranslit": "zikr-e mudām bā'is-e ārāmish-e nafs mēshawad.",
       "exampleEn": "Constant remembrance brings peace to the soul.",
@@ -62241,9 +61963,7 @@
       "freqRank": 3231,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "افلاطون مثال خیر را بالاترین ایده در عالم مُثُل می‌دانست.",
       "exampleTranslit": "aflātūn misāl-e khayr rā bālātarīn ēdiya dar ālam-e musul mēdānist.",
       "exampleEn": "Plato considered the form of the Good as the highest idea in the realm of forms.",
@@ -65147,9 +64867,7 @@
       "freqRank": 3385,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مسئله شر یکی از بزرگترین چالش‌های فلسفه دین است.",
       "exampleTranslit": "mas'ala-ye sharr yakē az buzurgtarīn chālish-hā-ye falsafa-ye dīn ast.",
       "exampleEn": "The problem of evil is one of the greatest challenges in the philosophy of religion.",
@@ -65470,9 +65188,7 @@
       "freqRank": 3402,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "هیولای اولی قوه محض است و فعلیتی ندارد.",
       "exampleTranslit": "hayūlā-ye ūlā quwwa-ye mahz ast wa fi'liyatē nadārad.",
       "exampleEn": "Prime matter is pure potentiality and has no actuality.",
@@ -65548,9 +65264,7 @@
       "freqRank": 3406,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "کل همواره چیزی فراتر از مجموع اجزاء است.",
       "exampleTranslit": "kull hamwāra chēzē farātar az majmū'-e ajzā ast.",
       "exampleEn": "The whole is always something more than the sum of its parts.",
@@ -66419,9 +66133,7 @@
       "freqRank": 3452,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "ده"
-      ],
+      "variants": [],
       "exampleTarget": "وزیر پس از رسوایی مالی استعفا داد.",
       "exampleTranslit": "wazīr pas az ruswā'ī-ye mālī isti'fā dād.",
       "exampleEn": "The minister resigned after the financial scandal.",
@@ -66458,9 +66170,7 @@
       "freqRank": 3454,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "کن"
-      ],
+      "variants": [],
       "exampleTarget": "رئیس جمهور او را از مقامش برکنار کرد.",
       "exampleTranslit": "ra'īs-e jumhūr ō rā az maqām-ash bar-kinār kard.",
       "exampleEn": "The president dismissed him from his position.",
@@ -66533,9 +66243,7 @@
       "freqRank": 3458,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "کن"
-      ],
+      "variants": [],
       "exampleTarget": "شورای امنیت این قطعنامه را وتو کرد.",
       "exampleTranslit": "shūrā-ye amniyat īn qaṭ'nāma rā witū kard.",
       "exampleEn": "The Security Council vetoed this resolution.",
@@ -66899,9 +66607,7 @@
       "freqRank": 3477,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "شو"
-      ],
+      "variants": [],
       "exampleTarget": "دولت متعهد شد که به آزادی بیان احترام بگذارد.",
       "exampleTranslit": "dawlat muta'ahhid shud ki ba āzādī-ye bayān ihtirām bigużārad.",
       "exampleEn": "The government committed to respect freedom of speech.",
@@ -66919,9 +66625,7 @@
       "freqRank": 3478,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "کن"
-      ],
+      "variants": [],
       "exampleTarget": "آنها توافق‌نامه صلح را نقض کردند.",
       "exampleTranslit": "ānhā tawāfuq-nāma-ye sulh rā naqz kardand.",
       "exampleEn": "They violated the peace agreement.",
@@ -66939,9 +66643,7 @@
       "freqRank": 3479,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "کن"
-      ],
+      "variants": [],
       "exampleTarget": "جامعه جهانی این حمله را به شدت محکوم کرد.",
       "exampleTranslit": "jāmi'a-ye jahānī īn hamla rā ba shiddat maḥkūm kard.",
       "exampleEn": "The international community strongly condemned this attack.",
@@ -68395,9 +68097,7 @@
       "freqRank": 3556,
       "freqBand": 7,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "گمانه‌زنی در غیاب شواهد کافی ارزشی ندارد.",
       "exampleTranslit": "gumāna-zanī dar ghiyāb-e shawāhid-e kāfī arzishē nadārad.",
       "exampleEn": "Conjecture in the absence of sufficient evidence has no value.",
@@ -69359,9 +69059,7 @@
       "freqRank": 3607,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "این قانون یک حکم عام است و استثنا ندارد.",
       "exampleTranslit": "īn qānūn yak hukm-e 'ām ast wa istisnā nadārad.",
       "exampleEn": "This rule is a general decree and has no exception.",
@@ -70823,9 +70521,7 @@
       "freqRank": 3684,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "شناخت اسباب و علل پدیده‌ها وظیفه علم است.",
       "exampleTranslit": "shinākht-e asbāb wa ilal-e padīda-hā wazēfa-ye ilm ast.",
       "exampleEn": "Understanding the causes and reasons of phenomena is the duty of science.",
@@ -70918,9 +70614,7 @@
       "freqRank": 3689,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تاریخ اندیشه بشری پر از فراز و نشیب است.",
       "exampleTranslit": "tārīkh-e andēsha-ye basharī pur az farāz wa nashēb ast.",
       "exampleEn": "The history of human thought is full of ups and downs.",
@@ -71575,9 +71269,7 @@
       "freqRank": 3724,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "سکون مطلق در جهان فیزیکی وجود ندارد.",
       "exampleTranslit": "sukūn-e mutlaq dar jahān-e fīzīkī wujūd nadārad.",
       "exampleEn": "Absolute rest does not exist in the physical universe.",
@@ -71634,9 +71326,7 @@
       "freqRank": 3727,
       "freqBand": 8,
       "register": "neutral",
-      "variants": [
-        "amal kun"
-      ],
+      "variants": [],
       "exampleTarget": "داکتر امروز مریض را عمل می‌کند.",
       "exampleTranslit": "dāktar imrōz marīz rā amal mēkunad.",
       "exampleEn": "The doctor is operating on the patient today.",
@@ -71654,9 +71344,7 @@
       "freqRank": 3728,
       "freqBand": 8,
       "register": "neutral",
-      "variants": [
-        "tajwīz kun"
-      ],
+      "variants": [],
       "exampleTarget": "او برای من داروی جدید تجویز کرد.",
       "exampleTranslit": "ō barā-ye man dawā-ye jadīd tajwīz kard.",
       "exampleEn": "He prescribed a new medicine for me.",
@@ -71674,9 +71362,7 @@
       "freqRank": 3729,
       "freqBand": 8,
       "register": "neutral",
-      "variants": [
-        "mu'ālaja kun"
-      ],
+      "variants": [],
       "exampleTarget": "متخصصین تلاش می‌کنند تا او را معالجه کنند.",
       "exampleTranslit": "mutakhassisīn talāsh mēkunand tā ō rā mu'ālaja kunand.",
       "exampleEn": "The specialists are trying to treat him.",
@@ -71768,9 +71454,7 @@
       "freqRank": 3734,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "zub shuw"
-      ],
+      "variants": [],
       "exampleTarget": "ذوب شدن یخچال‌های طبیعی سطح آب دریاها را بالا می‌برد.",
       "exampleTranslit": "zub shudan-e yakh-chāl-hā-ye tabī'ī sath-e āb-e daryā-hā rā bālā mēbarad.",
       "exampleEn": "The melting of glaciers raises sea levels.",
@@ -71826,9 +71510,7 @@
       "freqRank": 3737,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "kāhish yāb"
-      ],
+      "variants": [],
       "exampleTarget": "بارندگی در این منطقه به شدت کاهش یافته است.",
       "exampleTranslit": "bārandagī dar īn mintaqa ba shiddat kāhish yāfta ast.",
       "exampleEn": "Rainfall in this region has decreased severely.",
@@ -71846,9 +71528,7 @@
       "freqRank": 3738,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "afzāyish yāb"
-      ],
+      "variants": [],
       "exampleTarget": "دمای هوا هر سال افزایش می‌یابد.",
       "exampleTranslit": "damā-ye hawā har sāl afzāyish mēyābad.",
       "exampleEn": "The air temperature increases every year.",
@@ -71923,9 +71603,7 @@
       "freqRank": 3742,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "hifāzat kun"
-      ],
+      "variants": [],
       "exampleTarget": "ما باید از منابع آبی خود حفاظت کنیم.",
       "exampleTranslit": "mā bāyad az manābi'-e ābī-ye khud hifāzat kunēm.",
       "exampleEn": "We must conserve our water resources.",
@@ -71943,9 +71621,7 @@
       "freqRank": 3743,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "āsēb rasān"
-      ],
+      "variants": [],
       "exampleTarget": "پلاستیک به طبیعت آسیب می‌رساند.",
       "exampleTranslit": "plāstīk ba tabī'at āsēb mērasānad.",
       "exampleEn": "Plastic damages nature.",
@@ -72508,9 +72184,7 @@
       "freqRank": 3773,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "tughyān kun"
-      ],
+      "variants": [],
       "exampleTarget": "رودخانه هری‌رود امسال طغیان کرد.",
       "exampleTranslit": "rōd-khāna-ye harī-rōd imsāl tughyān kard.",
       "exampleEn": "The Hari River overflowed this year.",
@@ -72623,9 +72297,7 @@
       "freqRank": 3779,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "kāhish dih"
-      ],
+      "variants": [],
       "exampleTarget": "ما باید مصرف آب را کاهش دهیم.",
       "exampleTranslit": "mā bāyad masraf-e āb rā kāhish dihēm.",
       "exampleEn": "We must reduce water consumption.",
@@ -72643,9 +72315,7 @@
       "freqRank": 3780,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "afzāyish dih"
-      ],
+      "variants": [],
       "exampleTarget": "دولت باید سرمایه‌گذاری در انرژی پاک را افزایش دهد.",
       "exampleTranslit": "dawlat bāyad sarmāya-guzārī dar inirzhī-ye pāk rā afzāyish dihad.",
       "exampleEn": "The government should increase investment in clean energy.",
@@ -72774,9 +72444,7 @@
       "freqRank": 3787,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "sāzgār shaw"
-      ],
+      "variants": [],
       "exampleTarget": "ما باید با شرایط جدید محیطی سازگار شویم.",
       "exampleTranslit": "mā bāyad bā sharāyit-e jadīd-e muhītī sāzgār shawēm.",
       "exampleEn": "We must adapt to the new environmental conditions.",
@@ -72794,9 +72462,7 @@
       "freqRank": 3788,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "muhāfazat kun"
-      ],
+      "variants": [],
       "exampleTarget": "وظیفه ماست که از طبیعت محافظت کنیم.",
       "exampleTranslit": "wazīfa-ye māst ki az tabī'at muhāfazat kunēm.",
       "exampleEn": "It is our duty to protect nature.",
@@ -73380,9 +73046,7 @@
       "freqRank": 3819,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "munqariz shaw"
-      ],
+      "variants": [],
       "exampleTarget": "دایناسورها میلیون‌ها سال پیش منقرض شدند.",
       "exampleTranslit": "dāynāsōr-hā milyūn-hā sāl pēsh munqariz shudand.",
       "exampleEn": "Dinosaurs became extinct millions of years ago.",
@@ -73721,9 +73385,7 @@
       "freqRank": 3837,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "قضاوت‌های ارزشی ریشه در باورهای بنیادین دارند.",
       "exampleTranslit": "qazāwat-hā-ye arzishī rēsha dar bāwar-hā-ye bunyādīn dārand.",
       "exampleEn": "Normative judgments are rooted in fundamental beliefs.",
@@ -73759,9 +73421,7 @@
       "freqRank": 3839,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "muqābala kun"
-      ],
+      "variants": [],
       "exampleTarget": "همه کشورها باید با تغییرات اقلیمی مقابله کنند.",
       "exampleTranslit": "hama-ye kishwar-hā bāyad bā taghyīrāt-e iqlīmī muqābala kunand.",
       "exampleEn": "All countries must combat climate change.",
@@ -73834,9 +73494,7 @@
       "freqRank": 3843,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "khushk shaw"
-      ],
+      "variants": [],
       "exampleTarget": "دریاچه هامون در حال خشک شدن است.",
       "exampleTranslit": "daryācha-ye hāmūn dar hāl-e khushk shudan ast.",
       "exampleEn": "Lake Hamun is drying up.",
@@ -74118,9 +73776,7 @@
       "freqRank": 3858,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "hadar raw"
-      ],
+      "variants": [],
       "exampleTarget": "منابع آبی نباید هدر بروند.",
       "exampleTranslit": "manābi'-e ābī nabāyad hadar birawand.",
       "exampleEn": "Water resources should not be wasted.",
@@ -74289,9 +73945,7 @@
       "freqRank": 3867,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "waz' kun"
-      ],
+      "variants": [],
       "exampleTarget": "دولت باید مالیات کربن وضع کند.",
       "exampleTranslit": "dawlat bāyad māliyāt-e karbun waz' kunad.",
       "exampleEn": "The government must enact a carbon tax.",
@@ -74328,9 +73982,7 @@
       "freqRank": 3869,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "هر انسانی بالقوه توانایی رسیدن به کمال را دارد.",
       "exampleTranslit": "har insānē bil-quwwa tawānāyī-ye rasīdan ba kamāl rā dārad.",
       "exampleEn": "Every human potentially has the ability to reach perfection.",
@@ -74348,9 +74000,7 @@
       "freqRank": 3870,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "pāy-band bāsh"
-      ],
+      "variants": [],
       "exampleTarget": "ما به اصول حفاظت از محیط زیست پایبند هستیم.",
       "exampleTranslit": "mā ba usūl-e hifāzat az muhīt-e zīst pāy-band hastēm.",
       "exampleEn": "We are committed to the principles of environmental protection.",
@@ -74536,9 +74186,7 @@
       "freqRank": 3880,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "رابطه بین دال و مدلول قراردادی است.",
       "exampleTranslit": "rābita-ye bayn-e dāll wa madlūl qarārdādī ast.",
       "exampleEn": "The relationship between signifier and signified is arbitrary.",
@@ -74557,9 +74205,7 @@
       "freqRank": 3881,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "jazb kun"
-      ],
+      "variants": [],
       "exampleTarget": "خاک سالم می‌تواند مقدار زیادی آب را جذب کند.",
       "exampleTranslit": "khāk-e sālim mētawānad miqdār-e ziyādī āb rā jazb kunad.",
       "exampleEn": "Healthy soil can absorb a large amount of water.",
@@ -74577,9 +74223,7 @@
       "freqRank": 3882,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "فهم متون فلسفی نیازمند تمرکز بالایی است.",
       "exampleTranslit": "fahm-e mutūn-e falsafī niyāzmand-e tamarkuz-e bālāyē ast.",
       "exampleEn": "Comprehension of philosophical texts requires high concentration.",
@@ -74598,9 +74242,7 @@
       "freqRank": 3883,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "daf' kun"
-      ],
+      "variants": [],
       "exampleTarget": "دفع زباله‌های اتمی یک چالش بزرگ است.",
       "exampleTranslit": "daf'-e zubāla-hā-ye atumī yak chālish-e buzurg ast.",
       "exampleEn": "Disposing of nuclear waste is a big challenge.",
@@ -74694,9 +74336,7 @@
       "freqRank": 3888,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "zēr-i āb raw"
-      ],
+      "variants": [],
       "exampleTarget": "بسیاری از جزایر خطر زیر آب رفتن را حس می‌کنند.",
       "exampleTranslit": "bisyārē az jazāyir khatar-e zēr-e āb raftan rā hiss mēkunand.",
       "exampleEn": "Many islands feel the danger of going under water.",
@@ -74771,9 +74411,7 @@
       "freqRank": 3892,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "mamnū' kun"
-      ],
+      "variants": [],
       "exampleTarget": "شکار این نوع پرنده ممنوع شده است.",
       "exampleTranslit": "shikār-e īn naw' paranda mamnū' shuda ast.",
       "exampleEn": "Hunting this type of bird has been banned.",
@@ -74810,9 +74448,7 @@
       "freqRank": 3894,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "ālūda kun"
-      ],
+      "variants": [],
       "exampleTarget": "کارخانه‌ها نباید هوای شهر را آلوده کنند.",
       "exampleTranslit": "kār-khāna-hā nabāyad hawā-ye shahr rā ālūda kunand.",
       "exampleEn": "Factories must not pollute the city's air.",
@@ -74906,9 +74542,7 @@
       "freqRank": 3899,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "این مسئله تنها فرعی از مبحث اصلی است.",
       "exampleTranslit": "īn mas'ala tanhā far'ē az mabhas-e aslī ast.",
       "exampleEn": "This issue is merely a branch of the main topic.",
@@ -74946,9 +74580,7 @@
       "freqRank": 3901,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "هر قاعده‌ای در منطق دارای کاربرد خاصی است.",
       "exampleTranslit": "har qā'ida-yē dar mantiq dārā-ye kārburd-e khāssē ast.",
       "exampleEn": "Every rule in logic has a specific application.",
@@ -75173,9 +74805,7 @@
       "freqRank": 3913,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "wayrān kun"
-      ],
+      "variants": [],
       "exampleTarget": "زلزله کل روستا را ویران کرد.",
       "exampleTranslit": "zilzila kull-e rōstā rā wayrān kard.",
       "exampleEn": "The earthquake destroyed the whole village.",
@@ -75402,9 +75032,7 @@
       "freqRank": 3925,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "sadama zan"
-      ],
+      "variants": [],
       "exampleTarget": "صید بی‌رویه به جمعیت ماهیان صدمه می‌زند.",
       "exampleTranslit": "sayd-e bē-rawiya ba jam'iyat-e māhiyān sadama mēzanad.",
       "exampleEn": "Overfishing harms the fish population.",
@@ -75535,9 +75163,7 @@
       "freqRank": 3932,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "ikhtisās dih"
-      ],
+      "variants": [],
       "exampleTarget": "منابع بیشتری باید برای تحقیقات اختصاص داده شود.",
       "exampleTranslit": "manābi'-e bēsh-tarē bāyad barā-ye tahqīqāt ikhtisās dāda shawad.",
       "exampleEn": "More resources must be allocated for research.",
@@ -75555,9 +75181,7 @@
       "freqRank": 3933,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "bihbūd yāb"
-      ],
+      "variants": [],
       "exampleTarget": "وضعیت هوا در روزهای اخیر بهبود یافته است.",
       "exampleTranslit": "waz'iyyat-e hawā dar rōz-hā-ye akhīr bihbūd yāfta ast.",
       "exampleEn": "The air condition has improved in recent days.",
@@ -75651,9 +75275,7 @@
       "freqRank": 3938,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "najāt dih"
-      ],
+      "variants": [],
       "exampleTarget": "تیم‌های امداد صدها نفر را نجات دادند.",
       "exampleTranslit": "tīm-hā-ye imdād sad-hā nafar rā najāt dādand.",
       "exampleEn": "Rescue teams saved hundreds of people.",
@@ -75727,9 +75349,7 @@
       "freqRank": 3942,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "tawlīd kun"
-      ],
+      "variants": [],
       "exampleTarget": "ما باید انرژی بیشتری از منابع پاک تولید کنیم.",
       "exampleTranslit": "mā bāyad inirzhī-ye bēsh-tarē az manābi'-e pāk tawlīd kunēm.",
       "exampleEn": "We must produce more energy from clean sources.",
@@ -75843,9 +75463,7 @@
       "freqRank": 3948,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "sabt shaw"
-      ],
+      "variants": [],
       "exampleTarget": "گرم‌ترین روز سال ثبت شد.",
       "exampleTranslit": "garm-tarīn rōz-e sāl sabt shud.",
       "exampleEn": "The hottest day of the year was recorded.",
@@ -75920,9 +75538,7 @@
       "freqRank": 3952,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "اطلاق این حکم بر همه افراد جامعه نادرست است.",
       "exampleTranslit": "itlāq-e īn hukm bar hama-ye afrād-e jāmi'a nādurust ast.",
       "exampleEn": "The universality of this ruling upon all members of society is incorrect.",
@@ -76692,9 +76308,7 @@
       "freqRank": 3993,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تحقق عدالت اجتماعی نیازمند تغییرات ساختاری است.",
       "exampleTranslit": "tahaqquq-e adālat-e ijtimā'ī niyāzmand-e taghyērāt-e sākhtārī ast.",
       "exampleEn": "The realization of social justice requires structural changes.",
@@ -77089,9 +76703,7 @@
       "freqRank": 4014,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "زندگی با اصالت نیازمند پذیرش آزادی و اضطراب آن است.",
       "exampleTranslit": "zindagī bā asālat niyāzmand-e pazērish-e āzādī wa iztirāb-e ān ast.",
       "exampleEn": "Living with authenticity requires accepting freedom and its anxiety.",
@@ -77222,9 +76834,7 @@
       "freqRank": 4021,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "اخلاق کانتی بر پایه تکلیف بنا شده است.",
       "exampleTranslit": "akhlāq-e kāntī bar pāya-ye taklēf binā shuda ast.",
       "exampleEn": "Kantian ethics is built upon duty.",
@@ -77489,9 +77099,7 @@
       "freqRank": 4035,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "در منطق، تصدیق به معنای حکم کردن به درستی یک قضیه است.",
       "exampleTranslit": "dar mantiq, tasdēq ba ma'nā-ye hukm kardan ba durustī-ye yak qaziya ast.",
       "exampleEn": "In logic, affirmation means judging the truth of a proposition.",
@@ -77945,9 +77553,7 @@
       "freqRank": 4059,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تمایز بین ذهن و بدن در فلسفه دکارت بسیار پررنگ است.",
       "exampleTranslit": "tamāyuz-e bayn-e zihn wa badan dar falsafa-ye dēkārt bisyār purrang ast.",
       "exampleEn": "The distinction between mind and body is very prominent in Descartes' philosophy.",
@@ -78225,9 +77831,7 @@
       "freqRank": 4074,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "او با فراست خاصی به تحلیل این مسئله پرداخت.",
       "exampleTranslit": "ō bā firāsat-e khāssē ba tahlēl-e īn mas'ala pardākht.",
       "exampleEn": "He analyzed this problem with a particular sagacity.",
@@ -78322,9 +77926,7 @@
       "freqRank": 4079,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "نظریه مطابقت، صدق را تطابق با واقعیت می‌داند.",
       "exampleTranslit": "nazariya-ye mutābiqat, sidq rā tatābuq bā wāqi'iyat mēdānad.",
       "exampleEn": "The correspondence theory considers truth as correspondence with reality.",
@@ -78362,9 +77964,7 @@
       "freqRank": 4081,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ارسطو غایت زندگی انسان را رسیدن به سعادت می‌داند.",
       "exampleTranslit": "arastū ghāyat-e zindagī-ye insān rā rasīdan ba sa'ādat mēdānad.",
       "exampleEn": "Aristotle considers the ultimate goal of human life to be reaching eudaimonia.",
@@ -78383,9 +77983,7 @@
       "freqRank": 4082,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "روح انسان همواره در جستجوی تعالی است.",
       "exampleTranslit": "rūh-e insān hamwāra dar justujū-ye ta'ālī ast.",
       "exampleEn": "The human soul is always in search of transcendence.",
@@ -78423,9 +78021,7 @@
       "freqRank": 4084,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "جهان‌بینی مکانیکال در قرن هفدهم جایگزین غایت‌شناسی ارسطویی شد.",
       "exampleTranslit": "jahān-bīnī-ye mekānīkāl dar qarn-e hafdahum jāyguzīn-e ghāyat-shināsī-ye arastūyī shud.",
       "exampleEn": "The mechanical worldview replaced Aristotelian teleology in the seventeenth century.",
@@ -78461,9 +78057,7 @@
       "freqRank": 4086,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "عارفان از طریق شهود به حقیقت می‌رسند.",
       "exampleTranslit": "ārifān az tarēq-e shuhūd ba haqīqat mērasand.",
       "exampleEn": "Mystics reach the truth through intuition.",
@@ -79545,9 +79139,7 @@
       "freqRank": 4141,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "معنا نه در حضور، بلکه در غیاب شکل می‌گیرد.",
       "exampleTranslit": "ma'nā na dar huzūr, balki dar ghiyāb shakl mēgīrad.",
       "exampleEn": "Meaning is formed not in presence, but in absence.",
@@ -79684,9 +79276,7 @@
       "freqRank": 4148,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "در فلسفه دریدا، هر معنایی تنها یک ردپا از معانی دیگر است.",
       "exampleTranslit": "dar falsafa-ye derīdā, har ma'nā-yē tanhā yak radd-e pā az ma'ānī-ye dīgar ast.",
       "exampleEn": "In Derrida's philosophy, every meaning is merely a trace of other meanings.",
@@ -79979,9 +79569,7 @@
       "freqRank": 4163,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "گزاره‌های تحلیلی نیازی به تأیید تجربی ندارند.",
       "exampleTranslit": "guzāra-hā-ye tahlēlī niyāzē ba ta'yēd-e tajribī nadārand.",
       "exampleEn": "Analytic propositions do not need empirical verification.",
@@ -80607,9 +80195,7 @@
       "freqRank": 4195,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "انسان همواره آرزوی ابدیت داشته است.",
       "exampleTranslit": "insān hamwāra ārzū-ye abadiyat dāshta ast.",
       "exampleEn": "Man has always desired eternity.",
@@ -81333,9 +80919,7 @@
       "freqRank": 4232,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تقابل‌های دوتایی اساس تفکر ساختارگرا را تشکیل می‌دهند.",
       "exampleTranslit": "taqābul-hā-ye dūtāyī asās-e tafakkur-e sākhtārgarā rā tashkēl mēdihand.",
       "exampleEn": "Binary oppositions form the basis of structuralist thought.",
@@ -81862,9 +81446,7 @@
       "freqRank": 4259,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "بصیرت درونی به انسان در مواقع بحرانی کمک می‌کند.",
       "exampleTranslit": "basīrat-e darūnī ba insān dar mawāqi'-e buhrānī kumak mēkunad.",
       "exampleEn": "Inner insight helps humans in times of crisis.",
@@ -82506,9 +82088,7 @@
       "freqRank": 4294,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "پدیده‌های فراطبیعی خارج از قوانین فیزیک هستند.",
       "exampleTranslit": "padīda-hā-ye farā-tabī'ī khārij az qawānīn-e fīzīk hastand.",
       "exampleEn": "Supernatural phenomena are outside physical laws.",
@@ -82562,9 +82142,7 @@
       "freqRank": 4297,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "mī-rān-"
-      ],
+      "variants": [],
       "exampleTarget": "اقلیت‌ها را به حاشیه راندند.",
       "exampleTranslit": "aqallīyat-hā rā ba hāshiya rāndand.",
       "exampleEn": "They marginalized the minorities.",
@@ -82656,9 +82234,7 @@
       "freqRank": 4302,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مراقبه یکی از راه‌های اتصال به عالم معناست.",
       "exampleTranslit": "murāqiba yakē az rāh-hā-ye ittisāl ba ālam-e ma'nāst.",
       "exampleEn": "Meditation is one of the ways to connect to the spiritual world.",
@@ -82733,9 +82309,7 @@
       "freqRank": 4306,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تبیین علمی پدیده‌ها نیازمند شواهد تجربی است.",
       "exampleTranslit": "tabyīn-e ilmī-ye padīda-hā niyāzmand-e shawāhid-e tajribī ast.",
       "exampleEn": "Scientific explanation of phenomena requires empirical evidence.",
@@ -83155,9 +82729,7 @@
       "freqRank": 4329,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مفهوم نامتناهی در ریاضیات و فلسفه کاربردهای متفاوتی دارد.",
       "exampleTranslit": "mafhūm-e nā-mutanāhī dar riyāziyāt wa falsafa kārburd-hā-ye mutafāwitē dārad.",
       "exampleEn": "The concept of the infinite has different applications in mathematics and philosophy.",
@@ -83705,9 +83277,7 @@
       "freqRank": 4359,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "خودآگاهی ویژگی متمایزکننده انسان از سایر موجودات است.",
       "exampleTranslit": "khud-āgāhī wēzhagī-ye mutamāyiz-kunanda-ye insān az sāyir-e mawjūdāt ast.",
       "exampleEn": "Self-awareness is the distinguishing feature of humans from other beings.",
@@ -83853,9 +83423,7 @@
       "freqRank": 4367,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "آزادی انسان در جامعه همواره مقید به قوانینی است.",
       "exampleTranslit": "āzādī-ye insān dar jāmi'a hamwāra muqayyad ba qawānīnē ast.",
       "exampleEn": "Human freedom in society is always restricted by laws.",
@@ -84074,9 +83642,7 @@
       "freqRank": 4379,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "هر استدلالی مبتنی بر یک سری پیش‌فرض‌هاست.",
       "exampleTranslit": "har istidlālē mubtanī bar yak sirī pēsh-farz-hāst.",
       "exampleEn": "Every argument is based on a series of presuppositions.",
@@ -85050,9 +84616,7 @@
       "freqRank": 4431,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "سنت فلسفی هرمس بر رموز باطنی تأکید دارد.",
       "exampleTranslit": "sunnat-e falsafī-ye hermes bar rumūz-e bātinī ta'kēd dārad.",
       "exampleEn": "The Hermetic philosophical tradition emphasizes esoteric secrets.",
@@ -85185,9 +84749,7 @@
       "freqRank": 4438,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مفاهیم فلسفی اغلب حاصل انتزاع ذهن هستند.",
       "exampleTranslit": "mafāhīm-e falsafī aghlab hāsil-e intizā'-e zihn hastand.",
       "exampleEn": "Philosophical concepts are often the product of the mind's abstraction.",
@@ -85451,9 +85013,7 @@
       "freqRank": 4452,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مراحل تکوین جهان هستی پیچیده است.",
       "exampleTranslit": "marāhil-e takwīn-e jahān-e hastī pēchīda ast.",
       "exampleEn": "The stages of the universe's genesis are complex.",
@@ -86040,9 +85600,7 @@
       "freqRank": 4483,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "او استعدادهای بالقوه خود را بالفعل کرد.",
       "exampleTranslit": "ō isti'dād-hā-ye bil-quwwa-ye khud rā bil-fi'l kard.",
       "exampleEn": "He actualized his potential talents.",
@@ -86212,9 +85770,7 @@
       "freqRank": 4492,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "برخی فلاسفه به حلول خداوند در طبیعت باور دارند.",
       "exampleTranslit": "barkhē falāsifa ba hulūl-e khudāwand dar tabī'at bāwar dārand.",
       "exampleEn": "Some philosophers believe in the immanence of God in nature.",
@@ -86383,9 +85939,7 @@
       "freqRank": 4501,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "نظریه کوانتوم قانون سنتی علیت را به چالش کشید.",
       "exampleTranslit": "nazariya-ye kwāntum qānūn-e sunnatī-ye illiyat rā ba chālish kashēd.",
       "exampleEn": "Quantum theory challenged the traditional law of causality.",
@@ -86571,9 +86125,7 @@
       "freqRank": 4511,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "طرفداران ملاء معتقد بودند که جهان کاملاً پر است.",
       "exampleTranslit": "tarafdārān-e malā' mu'taqid būdand ki jahān kāmilan pur ast.",
       "exampleEn": "Supporters of plenum believed that the universe is completely full.",
@@ -86722,9 +86274,7 @@
       "freqRank": 4519,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "رئالیسم به وجود یک جهان مستقل از ذهن باور دارد.",
       "exampleTranslit": "re'ālīzm ba wujūd-e yak jahān-e mustaqil az zihn bāwar dārad.",
       "exampleEn": "Realism believes in the existence of a mind-independent world.",
@@ -86969,9 +86519,7 @@
       "freqRank": 4532,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تشخیص صدق و کذب گزاره‌ها بر عهده منطق است.",
       "exampleTranslit": "tashkhēs-e sidq wa kizb-e guzāra-hā bar uhda-ye mantiq ast.",
       "exampleEn": "Distinguishing the truth and falsity of propositions is the task of logic.",
@@ -87159,9 +86707,7 @@
       "freqRank": 4542,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "باور به معاد در بسیاری از ادیان وجود دارد.",
       "exampleTranslit": "bāwar ba ma'ād dar bisyārē az adyān wujūd dārad.",
       "exampleEn": "Belief in eschatology exists in many religions.",
@@ -87264,9 +86810,7 @@
       "freqRank": 4548,
       "freqBand": 8,
       "register": "neutral",
-      "variants": [
-        "istikhdām kun"
-      ],
+      "variants": [],
       "exampleTarget": "شرکت ما دو نفر جدید استخدام کرد.",
       "exampleTranslit": "shirkat-e mā dū nafar-e jadīd istikhdām kard.",
       "exampleEn": "Our company hired two new people.",
@@ -87284,9 +86828,7 @@
       "freqRank": 4549,
       "freqBand": 8,
       "register": "neutral",
-      "variants": [
-        "imzā kun"
-      ],
+      "variants": [],
       "exampleTarget": "مدیر قرارداد را امضا کرد.",
       "exampleTranslit": "mudīr qarārdād rā imzā kard.",
       "exampleEn": "The manager signed the contract.",
@@ -87304,9 +86846,7 @@
       "freqRank": 4550,
       "freqBand": 8,
       "register": "neutral",
-      "variants": [
-        "دِه"
-      ],
+      "variants": [],
       "exampleTarget": "خون‌دادن می‌تواند جان کسی را نجات دهد.",
       "exampleTranslit": "khūn-dādan mētawānad jān-e kasē rā najāt dihad.",
       "exampleEn": "Donating blood can save someone's life.",
@@ -87460,9 +87000,7 @@
       "freqRank": 4558,
       "freqBand": 8,
       "register": "neutral",
-      "variants": [
-        "shartī mēshaw-"
-      ],
+      "variants": [],
       "exampleTarget": "حیوانات با دریافت پاداش شرطی می‌شوند.",
       "exampleTranslit": "haywānāt bā daryāft-e pādāsh shartī mēshawand.",
       "exampleEn": "Animals become conditioned by receiving rewards.",
@@ -88463,9 +88001,7 @@
       "freqRank": 4612,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "بیگانگی انسان مدرن از طبیعت موضوع بسیاری از متون فلسفی است.",
       "exampleTranslit": "bēgānagī-ye insān-e modern az tabī'at mawzū'-e bisyārē az mutūn-e falsafī ast.",
       "exampleEn": "The alienation of modern man from nature is the subject of many philosophical texts.",
@@ -88560,9 +88096,7 @@
       "freqRank": 4617,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "استحاله یک ماده به ماده دیگر نیازمند تغییر در ذات آن است.",
       "exampleTranslit": "istihāla-ye yak māda ba māda-ye dīgar niyāzmand-e taghyēr dar zāt-e ān ast.",
       "exampleEn": "The transmutation of one substance into another requires a change in its essence.",
@@ -88619,9 +88153,7 @@
       "freqRank": 4620,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "قدرت تجرید به ما امکان درک ریاضیات را می‌دهد.",
       "exampleTranslit": "qudrat-e tajrēd ba mā imkān-e dark-e riyāziyāt rā mēdihad.",
       "exampleEn": "The power of abstraction allows us to understand mathematics.",
@@ -88678,9 +88210,7 @@
       "freqRank": 4623,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "اصل این‌همانی پایه و اساس تفکر منطقی است.",
       "exampleTranslit": "asl-e īn-hamānī pāya wa asās-e tafakkur-e mantiqī ast.",
       "exampleEn": "The principle of identity is the foundation of logical thought.",
@@ -88699,9 +88229,7 @@
       "freqRank": 4624,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تعین اشیاء در فضا و زمان صورت می‌پذیرد.",
       "exampleTranslit": "ta'ayyun-e ashyā dar fazā wa zamān sūrat mēpazērad.",
       "exampleEn": "The individuation of objects takes place in space and time.",
@@ -88891,9 +88419,7 @@
       "freqRank": 4634,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "شناخت ضروریات زندگی برای بقا الزامی است.",
       "exampleTranslit": "shinākht-e zarūriyāt-e zindagī barā-ye baqā ilzāmī ast.",
       "exampleEn": "Knowing the necessities of life is mandatory for survival.",
@@ -89007,9 +88533,7 @@
       "freqRank": 4640,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "دوگانه‌انگاری ذهن و بدن را دو موجودیت مجزا می‌داند.",
       "exampleTranslit": "dūgāna-angārī zihn wa badan rā dū mawjūdiyat-e mujazzā mēdānad.",
       "exampleEn": "Dualism considers mind and body as two distinct entities.",
@@ -89028,9 +88552,7 @@
       "freqRank": 4641,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ابتذال شر مفهومی است که توسط هانا آرنت مطرح شد.",
       "exampleTranslit": "ibtizāl-e sharr mafhūmē ast ki tawassut-e hānā ārent matrah shud.",
       "exampleEn": "The banality of evil is a concept proposed by Hannah Arendt.",
@@ -89201,9 +88723,7 @@
       "freqRank": 4650,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "معیار تشخص یک شیء در طول زمان چیست؟",
       "exampleTranslit": "mi'yār-e tashakhkhus-e yak shay' dar tūl-e zamān chēst?",
       "exampleEn": "What is the criterion of individuation of an object over time?",
@@ -89317,9 +88837,7 @@
       "freqRank": 4656,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "انکار بدیهیات عقلی منجر به سفسطه می‌شود.",
       "exampleTranslit": "inkār-e badēhiyāt-e aqlī munjar ba safsata mēshawad.",
       "exampleEn": "Denying rational self-evident truths leads to sophistry.",
@@ -89395,9 +88913,7 @@
       "freqRank": 4660,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "پدیدارشناسی تجربه آگاهانه را مطالعه می‌کند.",
       "exampleTranslit": "padēdār-shināsī tajruba-ye āgāhāna rā mutāli'a mēkunad.",
       "exampleEn": "Phenomenology studies conscious experience.",
@@ -89416,9 +88932,7 @@
       "freqRank": 4661,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ماتریالیسم معتقد است که همه چیز در نهایت مادی است.",
       "exampleTranslit": "mātēriyālīzm mu'taqid ast ki hama chīz dar nihāyat māddī ast.",
       "exampleEn": "Materialism believes that everything is ultimately material.",
@@ -89437,9 +88951,7 @@
       "freqRank": 4662,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تنزیه خداوند به معنای مبرا دانستن او از صفات مادی است.",
       "exampleTranslit": "tanzīh-e khudāwand ba ma'nā-ye mubarrā dānistan-e ō az sifāt-e māddī ast.",
       "exampleEn": "The transcendence of God means declaring Him free from material attributes.",
@@ -89515,9 +89027,7 @@
       "freqRank": 4666,
       "freqBand": 8,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "هرمنوتیک علم تفسیر متون است.",
       "exampleTranslit": "hermenōtīk ilm-e tafsēr-e mutūn ast.",
       "exampleEn": "Hermeneutics is the science of text interpretation.",
@@ -89631,9 +89141,7 @@
       "freqRank": 4672,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "هر نشانه‌ای به یک مدلول خاص ارجاع می‌دهد.",
       "exampleTranslit": "har nishāna-yē ba yak madlūl-e khāss irjā' mēdihad.",
       "exampleEn": "Every sign refers to a specific signified.",
@@ -89728,9 +89236,7 @@
       "freqRank": 4677,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "فلاسفه درباره حدوث یا قدم عالم اختلاف نظر دارند.",
       "exampleTranslit": "falāsifa dar bāra-ye hudūs yā qidam-e ālam ikhtilāf-e nazar dārand.",
       "exampleEn": "Philosophers disagree about the temporal origination or eternity of the universe.",
@@ -89863,9 +89369,7 @@
       "freqRank": 4684,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "کانت به امکان وجود گزاره‌های تألیفی پیشینی باور داشت.",
       "exampleTranslit": "kānt ba imkān-e wujūd-e guzāra-hā-ye ta'lēfī-ye pēshīnī bāwar dāsht.",
       "exampleEn": "Kant believed in the possibility of synthetic a priori propositions.",
@@ -89902,9 +89406,7 @@
       "freqRank": 4686,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "جهان پر از ممکناتی است که هنوز محقق نشده‌اند.",
       "exampleTranslit": "jahān pur az mumkināt-ē ast ki hanōz muhaqqaq nashuda-and.",
       "exampleEn": "The world is full of contingencies that have not yet been actualized.",
@@ -90229,9 +89731,7 @@
       "freqRank": 4703,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مطلق‌گرایی بر وجود اصول تغییرناپذیر تأکید دارد.",
       "exampleTranslit": "mutlaq-garāyī bar wujūd-e usūl-e taghyēr-nāpazēr ta'kēd dārad.",
       "exampleEn": "Absolutism emphasizes the existence of immutable principles.",
@@ -90250,9 +89750,7 @@
       "freqRank": 4704,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "نهیلیسم هرگونه معنای ذاتی در زندگی را رد می‌کند.",
       "exampleTranslit": "nihīlīzm har gūna ma'nā-ye zātī dar zindagī rā radd mēkunad.",
       "exampleEn": "Nihilism rejects any inherent meaning in life.",
@@ -90309,9 +89807,7 @@
       "freqRank": 4707,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "یگانه‌انگاری بر این باور است که تنها یک جوهر وجود دارد.",
       "exampleTranslit": "yagāna-angārī bar īn bāwar ast ki tanhā yak jawhar wujūd dārad.",
       "exampleEn": "Monism believes that only one substance exists.",
@@ -90368,9 +89864,7 @@
       "freqRank": 4710,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مفروضات این تحقیق باید به دقت بررسی شوند.",
       "exampleTranslit": "mafrūzāt-e īn tahqēq bāyad ba diqqat barrasī shawand.",
       "exampleEn": "The assumptions of this research must be carefully examined.",
@@ -90389,9 +89883,7 @@
       "freqRank": 4711,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "پساساختارگرایی هرگونه مرکزیت و ثبات معنایی را رد می‌کند.",
       "exampleTranslit": "pasā-sākhtārgarāyī har gūna markaziyat wa sabāt-e ma'nāyī rā radd mēkunad.",
       "exampleEn": "Post-structuralism rejects any centrality and semantic stability.",
@@ -90448,9 +89940,7 @@
       "freqRank": 4714,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "سرمدیت تنها مختص ذات پروردگار است.",
       "exampleTranslit": "sarmadiyat tanhā mukhtass-e zāt-e parwardigār ast.",
       "exampleEn": "Everlastingness is exclusive only to the essence of the Lord.",
@@ -90507,9 +89997,7 @@
       "freqRank": 4717,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "شهودگرایی در ریاضیات مبانی منطق کلاسیک را به چالش می‌کشد.",
       "exampleTranslit": "shuhūdgarāyī dar riyāziyāt mabānī-ye mantiq-e klāsīk rā ba chālish mēkashad.",
       "exampleEn": "Intuitionism in mathematics challenges the foundations of classical logic.",
@@ -90623,9 +90111,7 @@
       "freqRank": 4723,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "تجسد در برخی ادیان به معنای حلول روح الهی در جسم خاکی است.",
       "exampleTranslit": "tajassud dar barkhē adyān ba ma'nā-ye hulūl-e rūh-e ilāhī dar jism-e khākī ast.",
       "exampleEn": "Incarnation in some religions means the immanence of the divine spirit in a earthly body.",
@@ -90644,9 +90130,7 @@
       "freqRank": 4724,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ارسطو بنیان‌گذار قیاس منطقی است.",
       "exampleTranslit": "arastū bunyān-guzār-e qiyās-e mantiqī ast.",
       "exampleEn": "Aristotle is the founder of logical syllogism.",
@@ -90665,9 +90149,7 @@
       "freqRank": 4725,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "در ریاضیات از برهان خلف بسیار استفاده می‌شود.",
       "exampleTranslit": "dar riyāziyāt az burhān-e khulf bisyār istifāda mēshawad.",
       "exampleEn": "Proof by contradiction is widely used in mathematics.",
@@ -90743,9 +90225,7 @@
       "freqRank": 4729,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "شالوده‌شکنی به دنبال کشف تناقضات درونی متون است.",
       "exampleTranslit": "shālōda-shikanī ba dunbāl-e kashf-e tanāquzāt-e darūnī-ye mutūn ast.",
       "exampleEn": "Deconstruction seeks to discover internal contradictions in texts.",
@@ -90764,9 +90244,7 @@
       "freqRank": 4730,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "فیلسوفان بسیاری درباره شهر آرمانی یا یوتوپیا نوشته‌اند.",
       "exampleTranslit": "faylasūfān-e bisyārē dar bāra-ye shahr-e ārmānī yā yūtōpiyā nawishta-and.",
       "exampleEn": "Many philosophers have written about the ideal city or utopia.",
@@ -90785,9 +90263,7 @@
       "freqRank": 4731,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "اصل عدم تعین در مکانیک کوانتوم چالش‌های فلسفی ایجاد کرد.",
       "exampleTranslit": "asl-e adam-e ta'ayyun dar mekānīk-e kwāntum chālish-hā-ye falsafī ījād kard.",
       "exampleEn": "The uncertainty principle in quantum mechanics created philosophical challenges.",
@@ -90806,9 +90282,7 @@
       "freqRank": 4732,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "رابطه بین سوژه و ابژه همواره مسئله‌ای پیچیده بوده است.",
       "exampleTranslit": "rābita-ye bayn-e sōzha wa ubzha hamwāra mas'ala-yē pēchīda būda ast.",
       "exampleEn": "The relationship between subject and object has always been a complex issue.",
@@ -90865,9 +90339,7 @@
       "freqRank": 4735,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ایده‌آلیسم جهان را محصول ذهن و ایده‌ها می‌داند.",
       "exampleTranslit": "ēdi'ālīzm jahān rā mahsūl-e zihn wa ēdiya-hā mēdānad.",
       "exampleEn": "Idealism considers the world as the product of mind and ideas.",
@@ -90905,9 +90377,7 @@
       "freqRank": 4737,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "آتئیسم باوری به هیچ نیروی الهی یا خالقی ندارد.",
       "exampleTranslit": "ātē'īzm bāwarē ba hēch nērū-ye ilāhī yā khāliqē nadārad.",
       "exampleEn": "Atheism has no belief in any divine power or creator.",
@@ -90926,9 +90396,7 @@
       "freqRank": 4738,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "اصل تحقق‌پذیری معیار معناداری در پوزیتیویسم منطقی است.",
       "exampleTranslit": "asl-e tahaqquq-pazērī mi'yār-e ma'nādārī dar pōzitīwīzm-e mantiqī ast.",
       "exampleEn": "The verifiability principle is the criterion of meaning in logical positivism.",
@@ -90947,9 +90415,7 @@
       "freqRank": 4739,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "غلبه بر نفسانیت یکی از اهداف اصلی در عرفان است.",
       "exampleTranslit": "ghalaba bar nafsāniyat yakē az ahdāf-e aslī dar irfān ast.",
       "exampleEn": "Overcoming subjectivity/carnality is one of the main goals in mysticism.",
@@ -90968,9 +90434,7 @@
       "freqRank": 4740,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ابطال‌پذیری معیار تمایز علم از شبه‌علم است.",
       "exampleTranslit": "ibtāl-pazērī mi'yār-e tamāyuz-e ilm az shibh-e ilm ast.",
       "exampleEn": "Falsifiability is the criterion for distinguishing science from pseudoscience.",
@@ -90989,9 +90453,7 @@
       "freqRank": 4741,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "در فلسفه اسلامی، خداوند واجب‌الوجود است.",
       "exampleTranslit": "dar falsafa-ye islāmī, khudāwand wājib-ul-wujūd ast.",
       "exampleEn": "In Islamic philosophy, God is the Necessary Being.",
@@ -91010,9 +90472,7 @@
       "freqRank": 4742,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "هر سیستم هندسی بر پایه چند اصول موضوعه بنا شده است.",
       "exampleTranslit": "har sistam-e handasī bar pāya-ye chand usūl-e mawzū'a binā shuda ast.",
       "exampleEn": "Every geometric system is built on a few axioms.",
@@ -91031,9 +90491,7 @@
       "freqRank": 4743,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "انسان موجودی ممکن‌الوجود است که نیازمند علت است.",
       "exampleTranslit": "insān mawjūdē mumkin-ul-wujūd ast ki niyāzmand-e illat ast.",
       "exampleEn": "Man is a contingent being that requires a cause.",
@@ -91052,9 +90510,7 @@
       "freqRank": 4744,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "شریک الباری در فلسفه، ممتنع‌الوجود دانسته می‌شود.",
       "exampleTranslit": "sharīk-ul-bārī dar falsafa, mumtani'-ul-wujūd dānista mēshawad.",
       "exampleEn": "A partner to the Creator is considered an impossible being in philosophy.",
@@ -91111,9 +90567,7 @@
       "freqRank": 4747,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ما تنها می‌توانیم فنومن‌ها را از طریق حواس درک کنیم.",
       "exampleTranslit": "mā tanhā mētawānēm fenōmen-hā rā az tarēq-e hawāss dark kunēm.",
       "exampleEn": "We can only perceive phenomena through the senses.",
@@ -91132,9 +90586,7 @@
       "freqRank": 4748,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "پراگماتیسم حقیقت را بر اساس کارایی آن می‌سنجد.",
       "exampleTranslit": "prāgmātīzm haqīqat rā bar asās-e kārāyī-ye ān mēsanjad.",
       "exampleEn": "Pragmatism measures truth based on its utility.",
@@ -91153,9 +90605,7 @@
       "freqRank": 4749,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "کانت معتقد بود نومنون‌ها برای ذهن انسان غیرقابل شناخت هستند.",
       "exampleTranslit": "kānt mu'taqid būd nōmenōn-hā barā-ye zihn-e insān ghayr-e qābil-e shinākht hastand.",
       "exampleEn": "Kant believed that noumena are unknowable to the human mind.",
@@ -91174,9 +90624,7 @@
       "freqRank": 4750,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "همه‌خدایی طبیعت و خداوند را یکسان می‌پندارد.",
       "exampleTranslit": "hama-khudāyī tabī'at wa khudāwand rā yaksān mēpindārad.",
       "exampleEn": "Pantheism considers nature and God as identical.",
@@ -91195,9 +90643,7 @@
       "freqRank": 4751,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "ادبیات مدرن پر از تصویرسازی‌های ویران‌شهری است.",
       "exampleTranslit": "adabiyāt-e modern pur az taswēr-sāzī-hā-ye wērān-shahrī ast.",
       "exampleEn": "Modern literature is full of dystopian imagery.",
@@ -91216,9 +90662,7 @@
       "freqRank": 4752,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "در فراخداباوری، جهان بخشی از وجود خداست، اما خدا فراتر از جهان است.",
       "exampleTranslit": "dar farā-khudā-bāwarī, jahān bakhshē az wujūd-e khudāst, ammā khudā farātar az jahān ast.",
       "exampleEn": "In panentheism, the universe is part of God's existence, but God transcends the universe.",
@@ -91256,9 +90700,7 @@
       "freqRank": 4754,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "اگنوستیسیسم در مورد وجود خدا موضعی لاادری دارد.",
       "exampleTranslit": "agnōstīsīzm dar mawrid-e wujūd-e khudā mawzi'ē lā-adrī dārad.",
       "exampleEn": "Agnosticism holds an unknowing stance regarding the existence of God.",
@@ -91277,9 +90719,7 @@
       "freqRank": 4755,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "قصدیت یکی از ویژگی‌های اصلی آگاهی انسان است.",
       "exampleTranslit": "qasdiyat yakē az wēzhagī-hā-ye aslī-ye āgāhī-ye insān ast.",
       "exampleEn": "Intentionality is one of the main features of human consciousness.",
@@ -91298,9 +90738,7 @@
       "freqRank": 4756,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مارکسیسم بر پیوند بین نظریه و پراکسیس تأکید دارد.",
       "exampleTranslit": "mārksīzm bar paywand-e bayn-e nazariya wa prāksīs ta'kēd dārad.",
       "exampleEn": "Marxism emphasizes the link between theory and praxis.",
@@ -91357,9 +90795,7 @@
       "freqRank": 4759,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مطلقیت زمان در فیزیک نسبیت انیشتین رد شد.",
       "exampleTranslit": "mutlaqiyat-e zamān dar fīzīk-e nesbiyat-e ānshtāyn radd shud.",
       "exampleEn": "The absoluteness of time was rejected in Einstein's physics of relativity.",
@@ -91397,9 +90833,7 @@
       "freqRank": 4761,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "حتمیت مرگ تنها حقیقت غیرقابل انکار هستی است.",
       "exampleTranslit": "hatmiyat-e marg tanhā haqīqat-e ghayr-e qābil-e inkār-e hastī ast.",
       "exampleEn": "The inevitability of death is the only undeniable truth of existence.",
@@ -91418,9 +90852,7 @@
       "freqRank": 4762,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "استعلای نفس به معنای فراتر رفتن از محدودیت‌های مادی است.",
       "exampleTranslit": "isti'lā-ye nafs ba ma'nā-ye farātar raftan az mahdūdiyat-hā-ye māddī ast.",
       "exampleEn": "The sublimation of the self means transcending material limitations.",
@@ -91439,9 +90871,7 @@
       "freqRank": 4763,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مفهوم حلولیت در مخالفت با خدای تعالی‌یافته مطرح می‌شود.",
       "exampleTranslit": "mafhūm-e hulūliyat dar mukhālifat bā khudā-ye ta'ālī-yāfta matrah mēshawad.",
       "exampleEn": "The concept of immanentism is proposed in opposition to a transcendent God.",
@@ -91460,9 +90890,7 @@
       "freqRank": 4764,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "مبناگرایی مدعی است که برخی باورها نیازی به توجیه از طریق باورهای دیگر ندارند.",
       "exampleTranslit": "mabnā-garāyī mudda'ī ast ki barkhē bāwar-hā niyāzē ba tawjēh az tarēq-e bāwar-hā-ye dīgar nadārand.",
       "exampleEn": "Foundationalism claims that some beliefs do not need justification through other beliefs.",
@@ -91481,9 +90909,7 @@
       "freqRank": 4765,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "انسجام‌گرایی توجیه را در هماهنگی درونی سیستم باورها می‌داند.",
       "exampleTranslit": "insijām-garāyī tawjēh rā dar hamāhangī-ye darūnī-ye sistam-e bāwar-hā mēdānad.",
       "exampleEn": "Coherentism sees justification in the internal harmony of a system of beliefs.",
@@ -91502,9 +90928,7 @@
       "freqRank": 4766,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "برساخت‌گرایی اجتماعی واقعیت را محصول تعاملات انسانی می‌داند.",
       "exampleTranslit": "barsākht-garāyī-ye ijtimā'ī wāqi'iyat rā mahsūl-e ta'āmulāt-e insānī mēdānad.",
       "exampleEn": "Social constructivism considers reality a product of human interactions.",
@@ -91542,9 +90966,7 @@
       "freqRank": 4768,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "غایت‌مندی جهان یکی از دلایل اثبات وجود خداوند در الاهیات طبیعی است.",
       "exampleTranslit": "ghāyatmandī-ye jahān yakē az dalāyil-e isbāt-e wujūd-e khudāwand dar ilāhiyāt-e tabī'ī ast.",
       "exampleEn": "The purposiveness of the universe is one of the arguments for God's existence in natural theology.",
@@ -91563,9 +90985,7 @@
       "freqRank": 4769,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "-"
-      ],
+      "variants": [],
       "exampleTarget": "کاهش‌گرایی تلاش می‌کند پدیده‌های پیچیده را به اجزای ساده‌تر تقلیل دهد.",
       "exampleTranslit": "kāhish-garāyī talāsh mēkunad padīda-hā-ye pēchīda rā ba ajzā-ye sādatar taqlēl dihad.",
       "exampleEn": "Reductionism attempts to reduce complex phenomena to simpler components.",
@@ -92686,9 +92106,7 @@
       "freqRank": 4828,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "lazim-ul-ijra mesha"
-      ],
+      "variants": [],
       "exampleTarget": "این معاهده سال آینده لازم‌الاجرا می‌شود.",
       "exampleTranslit": "īn mu'āhida sāl-e āyanda lāzim-ul-ijrā mēshawad.",
       "exampleEn": "This treaty will enter into force next year.",
@@ -99987,9 +99405,7 @@
       "freqRank": 5212,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "mī-anbār-"
-      ],
+      "variants": [],
       "exampleTarget": "ثروت زیادی انباشتند.",
       "exampleTranslit": "sarwat-e zīyādī anbāshtand.",
       "exampleEn": "They accumulated a lot of wealth.",
@@ -102270,9 +101686,7 @@
       "freqRank": 5332,
       "freqBand": 9,
       "register": "formal",
-      "variants": [
-        "mī-angār-"
-      ],
+      "variants": [],
       "exampleTarget": "هشدارها را نادیده انگاشتند.",
       "exampleTranslit": "hoshdārhā rā nādīda angāshtand.",
       "exampleEn": "They disregarded the warnings.",
@@ -119087,9 +118501,7 @@
       "freqRank": 6217,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "amaliyāti-mikon"
-      ],
+      "variants": [],
       "exampleTarget": "پژوهشگر متغیرها را برای اندازه‌گیری عملیاتی‌کرد.",
       "exampleTranslit": "pazhōhishgar mutaghayyir-hā rā barā-ye andāza-gīrī amaliyātī kard.",
       "exampleEn": "The researcher operationalized the variables for measurement.",
@@ -120324,9 +119736,7 @@
       "freqRank": 6282,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "پلیس متهم را استنطاق کرد.",
       "exampleTranslit": "pōlīs muttaham rā estentāq kard.",
       "exampleEn": "The police interrogated the suspect.",
@@ -120344,9 +119754,7 @@
       "freqRank": 6283,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "وی به همین مقدار اکتفا کرد.",
       "exampleTranslit": "way ba hamīn miqdār ektefā kard.",
       "exampleEn": "He was content with this amount.",
@@ -120364,9 +119772,7 @@
       "freqRank": 6284,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "او بر مواضع خود پافشاری کرد.",
       "exampleTranslit": "ō bar mawāze'-e khud pāfeshārī kard.",
       "exampleEn": "He persisted in his stances.",
@@ -120384,9 +119790,7 @@
       "freqRank": 6285,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "وکیل برای آزادی او استدلال کرد.",
       "exampleTranslit": "wakīl barā āzādī-ye ō estedlāl kard.",
       "exampleEn": "The lawyer argued for his release.",
@@ -120404,9 +119808,7 @@
       "freqRank": 6286,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "تجار مواد غذایی را احتکار کردند.",
       "exampleTranslit": "tojjār mawād-e ghezāyī rā ehtekār kardand.",
       "exampleEn": "The merchants hoarded the food supplies.",
@@ -120424,9 +119826,7 @@
       "freqRank": 6287,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "رسانه‌ها در این مورد اغراق کردند.",
       "exampleTranslit": "rasānahā dar īn mawrid eghrāq kardand.",
       "exampleEn": "The media exaggerated in this case.",
@@ -120444,9 +119844,7 @@
       "freqRank": 6288,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "او از کاندیداتوری انصراف کرد.",
       "exampleTranslit": "ō az kāndīdātōrī enserāf kard.",
       "exampleEn": "He withdrew from the candidacy.",
@@ -120464,9 +119862,7 @@
       "freqRank": 6289,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "سیستم امنیتی را تعبیه کردند.",
       "exampleTranslit": "sīstam-e amnyatī rā ta'biya kardand.",
       "exampleEn": "They installed the security system.",
@@ -120484,9 +119880,7 @@
       "freqRank": 6290,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "لوازم مورد نیاز را تدارک کردند.",
       "exampleTranslit": "lawāzem-e mawrid-e niyāz rā tadārok kardand.",
       "exampleEn": "They procured the needed supplies.",
@@ -120504,9 +119898,7 @@
       "freqRank": 6291,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "آنها فرهنگ صلح را ترویج کردند.",
       "exampleTranslit": "ānhā farhang-e sulh rā tarwīj kardand.",
       "exampleEn": "They promoted the culture of peace.",
@@ -120524,9 +119916,7 @@
       "freqRank": 6292,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "وزارت این اسناد را تصدیق کرد.",
       "exampleTranslit": "wezārat īn asnād rā tasdīq kard.",
       "exampleEn": "The ministry certified these documents.",
@@ -120544,9 +119934,7 @@
       "freqRank": 6293,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "خود را با محیط جدید تطابق کرد.",
       "exampleTranslit": "khod rā bā muhīt-e jadīd tatāboq kard.",
       "exampleEn": "He adapted himself to the new environment.",
@@ -120583,9 +119971,7 @@
       "freqRank": 6295,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "با کشورهای همسایه تعامل کردیم.",
       "exampleTranslit": "bā keshwarhā-ye hamsāya ta'āmol kardēm.",
       "exampleEn": "We interacted with the neighboring countries.",
@@ -120603,9 +119989,7 @@
       "freqRank": 6296,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "این اقدام را تهدید تلقی کردند.",
       "exampleTranslit": "īn eqdām rā tahdīd talaqqī kardand.",
       "exampleEn": "They perceived this action as a threat.",
@@ -120623,9 +120007,7 @@
       "freqRank": 6297,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "اتاق را به خوبی تهویه کردند.",
       "exampleTranslit": "otāq rā ba khūbī tahwiya kardand.",
       "exampleEn": "They ventilated the room well.",
@@ -120643,9 +120025,7 @@
       "freqRank": 6298,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "مجرمان به شدت مجازات شدند.",
       "exampleTranslit": "mojremān ba shiddat mujāzāt shodand.",
       "exampleEn": "The criminals were severely penalized.",
@@ -120663,9 +120043,7 @@
       "freqRank": 6299,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "اموال او را مصادره کردند.",
       "exampleTranslit": "amwāl-e ō rā mosādara kardand.",
       "exampleEn": "They confiscated his properties.",
@@ -120683,9 +120061,7 @@
       "freqRank": 6300,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "از هیچ کمکی مضایقه نکردند.",
       "exampleTranslit": "az hēch komakī mozāyaqa nakardand.",
       "exampleEn": "They didn't withhold any help.",
@@ -120703,9 +120079,7 @@
       "freqRank": 6301,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "او را مکلف به پرداخت جریمه کردند.",
       "exampleTranslit": "ō rā mokallaf ba pardākht-e jarīma kardand.",
       "exampleEn": "They obligated him to pay the fine.",
@@ -120723,9 +120097,7 @@
       "freqRank": 6302,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "ایده‌های او متبلور شد.",
       "exampleTranslit": "īdāhā-ye ō motabalwer shod.",
       "exampleEn": "His ideas crystallized.",
@@ -120743,9 +120115,7 @@
       "freqRank": 6303,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "هنر او در آثارش متجلی شد.",
       "exampleTranslit": "honar-e ō dar āsār-ash motajallī shod.",
       "exampleEn": "His art manifested in his works.",
@@ -120763,9 +120133,7 @@
       "freqRank": 6304,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "جمعیت در میدان متراکم شد.",
       "exampleTranslit": "jam'īyat dar maydān motarākem shod.",
       "exampleEn": "The crowd accumulated in the square.",
@@ -120783,9 +120151,7 @@
       "freqRank": 6305,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "اوضاع سیاسی متشنج شد.",
       "exampleTranslit": "awzā'-e sīyāsī motashannej shod.",
       "exampleEn": "The political situation became tense.",
@@ -120803,9 +120169,7 @@
       "freqRank": 6306,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "گازهای سمی متصاعد شد.",
       "exampleTranslit": "gāzhā-ye sammī motasā'ed shod.",
       "exampleEn": "Toxic gases evaporated.",
@@ -120823,9 +120187,7 @@
       "freqRank": 6307,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "او سرانجام متقاعد شد.",
       "exampleTranslit": "ō saranjām motaqā'ed shod.",
       "exampleEn": "He finally became convinced.",
@@ -120843,9 +120205,7 @@
       "freqRank": 6308,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "نیروها در مرز متمرکز شدند.",
       "exampleTranslit": "nērōhā dar marz motamarkez shodand.",
       "exampleEn": "Forces concentrated at the border.",
@@ -120863,9 +120223,7 @@
       "freqRank": 6309,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "او از دیگران متمایز شد.",
       "exampleTranslit": "ō az dīgarān motamāyez shod.",
       "exampleEn": "He stood out from the others.",
@@ -120883,9 +120241,7 @@
       "freqRank": 6310,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "مظنون از صحنه متواری شد.",
       "exampleTranslit": "maznūn az sahna motawārī shod.",
       "exampleEn": "The suspect absconded from the scene.",
@@ -120922,9 +120278,7 @@
       "freqRank": 6312,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "سفیر به وزارت خارجه احضار شد.",
       "exampleTranslit": "safīr ba wezārat-e khāreja ehzār shod.",
       "exampleEn": "The ambassador was summoned to the foreign ministry.",
@@ -120961,9 +120315,7 @@
       "freqRank": 6314,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "شاهدان از تهدیدها ارعاب شدند.",
       "exampleTranslit": "shāhedān az tahdīdhā er'āb shodand.",
       "exampleEn": "The witnesses were intimidated by the threats.",
@@ -121000,9 +120352,7 @@
       "freqRank": 6316,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "وزیر در پارلمان استیضاح شد.",
       "exampleTranslit": "wazīr dar pārlemān estīzāh shod.",
       "exampleEn": "The minister was impeached in the parliament.",
@@ -121020,9 +120370,7 @@
       "freqRank": 6317,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "بازار از این محصول اشباع شد.",
       "exampleTranslit": "bāzār az īn mahsūl eshbā' shod.",
       "exampleEn": "The market became saturated with this product.",
@@ -121040,9 +120388,7 @@
       "freqRank": 6318,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "قاتل سحرگاه اعدام شد.",
       "exampleTranslit": "qātel sahargāh e'dām shod.",
       "exampleEn": "The murderer was executed at dawn.",
@@ -121060,9 +120406,7 @@
       "freqRank": 6319,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "او با وعده‌های دروغین اغوا شد.",
       "exampleTranslit": "ō bā wa'dahā-ye dorōghīn eghwā shod.",
       "exampleEn": "He was lured by false promises.",
@@ -121099,9 +120443,7 @@
       "freqRank": 6321,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "بدهی‌های دولت انباشته شد.",
       "exampleTranslit": "bedehīhā-ye dawlat anbāshta shod.",
       "exampleEn": "The government's debts piled up.",
@@ -121119,9 +120461,7 @@
       "freqRank": 6322,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sh-"
-      ],
+      "variants": [],
       "exampleTarget": "پایگاه دشمن منهدم شد.",
       "exampleTranslit": "pāygāh-e dushman monhadem shod.",
       "exampleEn": "The enemy base was demolished.",
@@ -121139,9 +120479,7 @@
       "freqRank": 6323,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "محکمه او را مبرا ساخت.",
       "exampleTranslit": "mahkama ō rā mobarrā sākht.",
       "exampleEn": "The court exonerated him.",
@@ -121159,9 +120497,7 @@
       "freqRank": 6324,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "بیماران را مجزا ساختند.",
       "exampleTranslit": "bēmārān rā mojazzā sākhtand.",
       "exampleEn": "They isolated the patients.",
@@ -121179,9 +120515,7 @@
       "freqRank": 6325,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "قوانین جدیدی را مدون ساختند.",
       "exampleTranslit": "qawānīn-e jadīdī rā modawwan sākhtand.",
       "exampleEn": "They codified new laws.",
@@ -121199,9 +120533,7 @@
       "freqRank": 6326,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "او تلاش کرد رقبا را مرعوب سازد.",
       "exampleTranslit": "ō talāsh kard roqabā rā mar'ūb sāzad.",
       "exampleEn": "He tried to intimidate the competitors.",
@@ -121219,9 +120551,7 @@
       "freqRank": 6327,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "جاده‌ها را مسدود ساختند.",
       "exampleTranslit": "jādahā rā masdūd sākhtand.",
       "exampleEn": "They blocked the roads.",
@@ -121239,9 +120569,7 @@
       "freqRank": 6328,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "برخی کالاها را مستثنی ساختند.",
       "exampleTranslit": "barkhī kālāhā rā mostasnā sākhtand.",
       "exampleEn": "They exempted some goods.",
@@ -121259,9 +120587,7 @@
       "freqRank": 6329,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "وام‌ها را به تدریج مستهلک ساختند.",
       "exampleTranslit": "wāmhā rā ba tadrīj mostahlek sākhtand.",
       "exampleEn": "They gradually amortized the loans.",
@@ -121279,9 +120605,7 @@
       "freqRank": 6330,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "تلاش‌های خود را مضاعف ساختند.",
       "exampleTranslit": "talāshhā-ye khud rā mozā'af sākhtand.",
       "exampleEn": "They doubled their efforts.",
@@ -121299,9 +120623,7 @@
       "freqRank": 6331,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "پروازها را موقتا معلق ساختند.",
       "exampleTranslit": "parwāzhā rā mowaqatan mo'allaq sākhtand.",
       "exampleEn": "They temporarily suspended the flights.",
@@ -121319,9 +120641,7 @@
       "freqRank": 6332,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "اذهان عمومی را مغشوش ساختند.",
       "exampleTranslit": "azhān-e umūmī rā maghshūsh sākhtand.",
       "exampleEn": "They confused the public mind.",
@@ -121339,9 +120659,7 @@
       "freqRank": 6333,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "او کشورش را مفتخر ساخت.",
       "exampleTranslit": "ō keshwar-ash rā moftakhar sākht.",
       "exampleEn": "He made his country proud.",
@@ -121359,9 +120677,7 @@
       "freqRank": 6334,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "مطبوعات را مقید ساختند.",
       "exampleTranslit": "matbū'āt rā moqayyad sākhtand.",
       "exampleEn": "They restricted the press.",
@@ -121379,9 +120695,7 @@
       "freqRank": 6335,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "این راز را سال‌ها مکتوم ساختند.",
       "exampleTranslit": "īn rāz rā sālhā maktūm sākhtand.",
       "exampleEn": "They concealed this secret for years.",
@@ -121399,9 +120713,7 @@
       "freqRank": 6336,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "پارلمان قانون قبلی را ملغی ساخت.",
       "exampleTranslit": "pārlemān qānūn-e qablī rā molghā sākht.",
       "exampleEn": "The parliament abolished the previous law.",
@@ -121419,9 +120731,7 @@
       "freqRank": 6337,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "تحریم‌ها کشور را منزوی ساخت.",
       "exampleTranslit": "tahrīmhā kishwar rā monzawī sākht.",
       "exampleEn": "The sanctions isolated the country.",
@@ -121439,9 +120749,7 @@
       "freqRank": 6338,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "تکنولوژی جدید روش‌های قدیم را منسوخ ساخت.",
       "exampleTranslit": "tekanōlōzhī-ye jadīd raweshhā-ye qadīm rā mansūkh sākht.",
       "exampleEn": "New technology made old methods obsolete.",
@@ -121459,9 +120767,7 @@
       "freqRank": 6339,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "تصمیم‌گیری را به آینده موکول ساختند.",
       "exampleTranslit": "tasmīm-gīrī rā ba āyanda mawkūl sākhtand.",
       "exampleEn": "They deferred the decision to the future.",
@@ -121479,9 +120785,7 @@
       "freqRank": 6340,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "زمینه‌ها را مهیا ساختند.",
       "exampleTranslit": "zamīnahā rā mohayyā sākhtand.",
       "exampleEn": "They prepared the groundwork.",
@@ -121499,9 +120803,7 @@
       "freqRank": 6341,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "وی به مقام بالاتری ارتقا یافت.",
       "exampleTranslit": "way ba maqām-e bālātarī erteqā yāft.",
       "exampleEn": "He was promoted to a higher position.",
@@ -121519,9 +120821,7 @@
       "freqRank": 6342,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "این رویداد در رسانه‌ها انعکاس یافت.",
       "exampleTranslit": "īn rōydād dar rasānahā enekās yāft.",
       "exampleEn": "This event was reflected in the media.",
@@ -121539,9 +120839,7 @@
       "freqRank": 6343,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "اقتصاد کشور انکشاف یافت.",
       "exampleTranslit": "eqtesād-e kishwar enkeshāf yāft.",
       "exampleEn": "The country's economy developed.",
@@ -121559,9 +120857,7 @@
       "freqRank": 6344,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "آرزوهای او سرانجام تحقق یافت.",
       "exampleTranslit": "ārezōhā-ye ō saranjām tahaqqoq yāft.",
       "exampleEn": "His dreams finally materialized.",
@@ -121579,9 +120875,7 @@
       "freqRank": 6345,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "درد او با دوا تسکین یافت.",
       "exampleTranslit": "dard-e ō bā dawā taskīn yāft.",
       "exampleEn": "His pain was alleviated with medication.",
@@ -121599,9 +120893,7 @@
       "freqRank": 6346,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "بحران اقتصادی تشدید یافت.",
       "exampleTranslit": "bohrān-e iqtisādī tashdīd yāft.",
       "exampleEn": "The economic crisis intensified.",
@@ -121638,9 +120930,7 @@
       "freqRank": 6348,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "مذاکرات صلح خاتمه یافت.",
       "exampleTranslit": "mozākerāt-e sulh khātima yāft.",
       "exampleEn": "The peace negotiations concluded.",
@@ -121658,9 +120948,7 @@
       "freqRank": 6349,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "استفاده از انترنت رواج یافت.",
       "exampleTranslit": "estefāda az enterenat rawāj yāft.",
       "exampleEn": "The use of the internet became prevalent.",
@@ -121678,9 +120966,7 @@
       "freqRank": 6350,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "پرونده را به محکمه ارجاع دادند.",
       "exampleTranslit": "parwanda rā ba mahkama irjā' dādand.",
       "exampleEn": "They referred the case to the court.",
@@ -121698,9 +120984,7 @@
       "freqRank": 6351,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "مجرم را استرداد دادند.",
       "exampleTranslit": "mojrem rā esterdād dādand.",
       "exampleEn": "They extradited the criminal.",
@@ -121718,9 +121002,7 @@
       "freqRank": 6352,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "آنها شایعات را اشاعه دادند.",
       "exampleTranslit": "ānhā shāye'āt rā eshā'a dādand.",
       "exampleEn": "They disseminated the rumors.",
@@ -121738,9 +121020,7 @@
       "freqRank": 6353,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "نظرات مردم را انعکاس دادند.",
       "exampleTranslit": "nazarāt-e mardum rā enekās dādand.",
       "exampleEn": "They reflected the people's opinions.",
@@ -121777,9 +121057,7 @@
       "freqRank": 6355,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "دولت زیرساخت‌ها را انکشاف داد.",
       "exampleTranslit": "dawlat zērsākht-hā rā enkeshāf dād.",
       "exampleEn": "The government expanded the infrastructure.",
@@ -121816,9 +121094,7 @@
       "freqRank": 6357,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "رسانه‌ها این خبر را بازتاب دادند.",
       "exampleTranslit": "rasānahā īn khabar rā bāztāb dādand.",
       "exampleEn": "The media mirrored this news.",
@@ -121836,9 +121112,7 @@
       "freqRank": 6358,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "او استعداد خود را تجلی داد.",
       "exampleTranslit": "ō este'dād-e khud rā tajallī dād.",
       "exampleEn": "He manifested his talent.",
@@ -121856,9 +121130,7 @@
       "freqRank": 6359,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "بودجه بیشتری تخصیص دادند.",
       "exampleTranslit": "bōdja-ye bēshtarī takhsīs dādand.",
       "exampleEn": "They allocated more budget.",
@@ -121876,9 +121148,7 @@
       "freqRank": 6360,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "قانون را به سایر بخش‌ها تسری دادند.",
       "exampleTranslit": "qānūn rā ba sāyer bakhshhā tasarrī dādand.",
       "exampleEn": "They extended the law to other sectors.",
@@ -121896,9 +121166,7 @@
       "freqRank": 6361,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-deh-"
-      ],
+      "variants": [],
       "exampleTarget": "این الگو را می‌توان تعمیم داد.",
       "exampleTranslit": "īn olgū rā mē-tawān ta'mīm dād.",
       "exampleEn": "This pattern can be generalized.",
@@ -121916,9 +121184,7 @@
       "freqRank": 6362,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "زمان زخم‌ها را التیام می‌بخشد.",
       "exampleTranslit": "zamān zakhmhā rā eltiyām mē-bakhshad.",
       "exampleEn": "Time heals the wounds.",
@@ -121974,9 +121240,7 @@
       "freqRank": 6365,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "او به تیم انسجام بخشید.",
       "exampleTranslit": "ō ba tēm insijām bakhshīd.",
       "exampleEn": "He organized the team.",
@@ -121994,9 +121258,7 @@
       "freqRank": 6366,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "به ایده‌های خود تبلور بخشید.",
       "exampleTranslit": "ba īdāhā-ye khud tabalwor bakhshīd.",
       "exampleEn": "He crystallized his ideas.",
@@ -122014,9 +121276,7 @@
       "freqRank": 6367,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "او به این مفاهیم تجلی بخشید.",
       "exampleTranslit": "ō ba īn mafāhīm tajallī bakhshīd.",
       "exampleEn": "He embodied these concepts.",
@@ -122053,9 +121313,7 @@
       "freqRank": 6369,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "اهداف شرکت را تحقق بخشیدند.",
       "exampleTranslit": "ahdāf-e shirkat rā tahaqqoq bakhshīdand.",
       "exampleEn": "They actualized the company's goals.",
@@ -122073,9 +121331,7 @@
       "freqRank": 6370,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "این خبر آلام آنها را تسکین بخشید.",
       "exampleTranslit": "īn khabar ālām-e ānhā rā taskīn bakhshīd.",
       "exampleEn": "This news assuaged their sufferings.",
@@ -122093,9 +121349,7 @@
       "freqRank": 6371,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "عملیات خود را انکشاف بخشیدند.",
       "exampleTranslit": "amalīyāt-e khud rā inkishāf bakhshīdand.",
       "exampleEn": "They expanded their operations.",
@@ -122113,9 +121367,7 @@
       "freqRank": 6372,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "این سرمایه‌گذاری به بازار حیات بخشید.",
       "exampleTranslit": "īn sarmāya-guzārī ba bāzār hayāt bakhshīd.",
       "exampleEn": "This investment revitalized the market.",
@@ -122133,9 +121385,7 @@
       "freqRank": 6373,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "به درگیری‌ها خاتمه بخشیدند.",
       "exampleTranslit": "ba dargīrīhā khātima bakhshīdand.",
       "exampleEn": "They put an end to the conflicts.",
@@ -122153,9 +121403,7 @@
       "freqRank": 6374,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-bakhsh-"
-      ],
+      "variants": [],
       "exampleTarget": "گردشگری به اقتصاد رونق بخشید.",
       "exampleTranslit": "gardeshgarī ba iqtisād rawnaq bakhshīd.",
       "exampleEn": "Tourism boosted the economy.",
@@ -122173,9 +121421,7 @@
       "freqRank": 6375,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kash-"
-      ],
+      "variants": [],
       "exampleTarget": "او این نظریه را به چالش کشید.",
       "exampleTranslit": "ō īn nazariya rā ba chālish kashīd.",
       "exampleEn": "He challenged this theory.",
@@ -122193,9 +121439,7 @@
       "freqRank": 6376,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-āwēz-"
-      ],
+      "variants": [],
       "exampleTarget": "محکومان را به دار آویختند.",
       "exampleTranslit": "mahkūmān rā ba dār āwēkhtand.",
       "exampleEn": "They executed the convicts by hanging.",
@@ -122213,9 +121457,7 @@
       "freqRank": 6377,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-gīr-"
-      ],
+      "variants": [],
       "exampleTarget": "او پیشنهادات را به سخره گرفت.",
       "exampleTranslit": "ō pēshnahādāt rā ba sokhra gereft.",
       "exampleEn": "He ridiculed the suggestions.",
@@ -122233,9 +121475,7 @@
       "freqRank": 6378,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-raw-"
-      ],
+      "variants": [],
       "exampleTarget": "جامعه به قهقرا رفت.",
       "exampleTranslit": "jāme'a ba qahqarā raft.",
       "exampleEn": "The society regressed.",
@@ -122253,9 +121493,7 @@
       "freqRank": 6379,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-rasān-"
-      ],
+      "variants": [],
       "exampleTarget": "توانایی‌های خود را به منصه ظهور رساند.",
       "exampleTranslit": "tawānāyīhā-ye khud rā ba manassa-ye zohūr rasānd.",
       "exampleEn": "He brought his abilities to fruition.",
@@ -122273,9 +121511,7 @@
       "freqRank": 6380,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "او از مسئولیت شانه خالی کرد.",
       "exampleTranslit": "ō az mas'ūlīyat shāna khālī kard.",
       "exampleEn": "He shirked the responsibility.",
@@ -122293,9 +121529,7 @@
       "freqRank": 6381,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "از خطاهای او اغماض کردند.",
       "exampleTranslit": "az khatāhā-ye ō eghmāz kardand.",
       "exampleEn": "They overlooked his faults.",
@@ -122313,9 +121547,7 @@
       "freqRank": 6382,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "مدیر او را بازخواست کرد.",
       "exampleTranslit": "modīr ō rā bāzkhāst kard.",
       "exampleEn": "The manager held him accountable.",
@@ -122352,9 +121584,7 @@
       "freqRank": 6384,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "سازمان ملل این حمله را تقبیح کرد.",
       "exampleTranslit": "sāzmān-e melal īn hamla rā taqbīh kard.",
       "exampleEn": "The UN condemned this attack.",
@@ -122372,9 +121602,7 @@
       "freqRank": 6385,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "مشکلات روی هم تلنبار شدند.",
       "exampleTranslit": "moshkelāt rōy-e ham telanbār shodand.",
       "exampleEn": "The problems stockpiled on each other.",
@@ -122392,9 +121620,7 @@
       "freqRank": 6386,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "از درگیری اجتناب کردند.",
       "exampleTranslit": "az dargīrī ejtenāb kardand.",
       "exampleEn": "They avoided the conflict.",
@@ -122412,9 +121638,7 @@
       "freqRank": 6387,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-zan-"
-      ],
+      "variants": [],
       "exampleTarget": "طوفان به مزارع آسیب زد.",
       "exampleTranslit": "tōfān ba mazāre' āsēb zad.",
       "exampleEn": "The storm inflicted damage on the farms.",
@@ -122432,9 +121656,7 @@
       "freqRank": 6388,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-zan-"
-      ],
+      "variants": [],
       "exampleTarget": "این شایعات به ترس دامن زد.",
       "exampleTranslit": "īn shāye'āt ba tars dāman zad.",
       "exampleEn": "These rumors exacerbated the fear.",
@@ -122452,9 +121674,7 @@
       "freqRank": 6389,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-zan-"
-      ],
+      "variants": [],
       "exampleTarget": "آنها تاریخ را رقم زدند.",
       "exampleTranslit": "ānhā tārīkh rā raqam zadand.",
       "exampleEn": "They shaped history.",
@@ -122472,9 +121692,7 @@
       "freqRank": 6390,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "رسانه‌ها در این باره گمانه‌زنی کردند.",
       "exampleTranslit": "rasānahā dar īn bāra gamāna-zanī kardand.",
       "exampleEn": "The media speculated about this.",
@@ -122492,9 +121710,7 @@
       "freqRank": 6391,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-zan-"
-      ],
+      "variants": [],
       "exampleTarget": "تحریم‌ها به اقتصاد لطمه زد.",
       "exampleTranslit": "tahrīmhā ba iqtisād latma zad.",
       "exampleEn": "The sanctions damaged the economy.",
@@ -122512,9 +121728,7 @@
       "freqRank": 6392,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-zan-"
-      ],
+      "variants": [],
       "exampleTarget": "مهارت‌های خود را محک زد.",
       "exampleTranslit": "mahārathā-ye khud rā mahak zad.",
       "exampleEn": "He tested his skills.",
@@ -122532,9 +121746,7 @@
       "freqRank": 6393,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-khor-"
-      ],
+      "variants": [],
       "exampleTarget": "سرنوشت جدیدی رقم خورد.",
       "exampleTranslit": "sarnawisht-e jadēdē raqam khurd.",
       "exampleEn": "A new destiny unfolded.",
@@ -122552,9 +121764,7 @@
       "freqRank": 6394,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-khor-"
-      ],
+      "variants": [],
       "exampleTarget": "سرنوشت آنها به هم گره خورد.",
       "exampleTranslit": "sarnevesht-e ānhā ba ham gora khurd.",
       "exampleEn": "Their destinies became intertwined.",
@@ -122572,9 +121782,7 @@
       "freqRank": 6395,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "وی خرسندی خود را ابراز نمود.",
       "exampleTranslit": "way khorsandī-ye khud rā ebrāz namūd.",
       "exampleEn": "He expressed his satisfaction.",
@@ -122592,9 +121800,7 @@
       "freqRank": 6396,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "تدابیر امنیتی اتخاذ نمودند.",
       "exampleTranslit": "tadābēr-e amnyatī ettekhāz namūdand.",
       "exampleEn": "They adopted security measures.",
@@ -122612,9 +121818,7 @@
       "freqRank": 6397,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "او مقام اول را احراز نمود.",
       "exampleTranslit": "ō maqām-e awwal rā ehrāz namūd.",
       "exampleEn": "He attained the first position.",
@@ -122632,9 +121836,7 @@
       "freqRank": 6398,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "مخالفان در نظم عمومی اخلال نمودند.",
       "exampleTranslit": "mokhālefān dar nazm-e umūmī ekhlāl namūdand.",
       "exampleEn": "The opponents sabotaged public order.",
@@ -122652,9 +121854,7 @@
       "freqRank": 6399,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "وی به اشتباه خود اذعان نمود.",
       "exampleTranslit": "way ba eshtebāh-e khud ez'ān namūd.",
       "exampleEn": "He acknowledged his mistake.",
@@ -122672,9 +121872,7 @@
       "freqRank": 6400,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "اسناد مربوطه را ارایه نمود.",
       "exampleTranslit": "asnād-e marbūta rā erāya namūd.",
       "exampleEn": "He submitted the relevant documents.",
@@ -122692,9 +121890,7 @@
       "freqRank": 6401,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-yāb-"
-      ],
+      "variants": [],
       "exampleTarget": "بر کل منطقه استیلا یافتند.",
       "exampleTranslit": "bar kull-e mantaqa estīlā yāftand.",
       "exampleEn": "They dominated the entire region.",
@@ -122712,9 +121908,7 @@
       "freqRank": 6402,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "او در مصرف دوا افراط نمود.",
       "exampleTranslit": "ō dar masraf-e dawā efrāt namūd.",
       "exampleEn": "He overdid the use of medication.",
@@ -122732,9 +121926,7 @@
       "freqRank": 6403,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "بازار را انحصار نمودند.",
       "exampleTranslit": "bāzār rā inhisār namūdand.",
       "exampleEn": "They monopolized the market.",
@@ -122752,9 +121944,7 @@
       "freqRank": 6404,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-namāy-"
-      ],
+      "variants": [],
       "exampleTarget": "وی تمام اتهامات را انکار نمود.",
       "exampleTranslit": "way tamām-e ettehāmāt rā inkār namūd.",
       "exampleEn": "He denied all accusations.",
@@ -122772,9 +121962,7 @@
       "freqRank": 6405,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-warz-"
-      ],
+      "variants": [],
       "exampleTarget": "از پاسخ دادن ابا ورزید.",
       "exampleTranslit": "az pāsokh dādan ebā warzīd.",
       "exampleEn": "He refused to answer.",
@@ -122792,9 +121980,7 @@
       "freqRank": 6406,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-warz-"
-      ],
+      "variants": [],
       "exampleTarget": "برای موفقیت اهتمام ورزیدند.",
       "exampleTranslit": "barāye muwaffaqiyat ehtemām warzīdand.",
       "exampleEn": "They endeavored for success.",
@@ -122812,9 +121998,7 @@
       "freqRank": 6407,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-āwar-"
-      ],
+      "variants": [],
       "exampleTarget": "از شهدا تجلیل به عمل آوردند.",
       "exampleTranslit": "az shohadā tajlīl ba amal āwordand.",
       "exampleEn": "They commemorated the martyrs.",
@@ -122832,9 +122016,7 @@
       "freqRank": 6408,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "اقتصاد به نفت تکیه کرده است.",
       "exampleTranslit": "eqtesād ba naft takya karda ast.",
       "exampleEn": "The economy relies on oil.",
@@ -122852,9 +122034,7 @@
       "freqRank": 6409,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "از اشتباهات او چشم پوشی کردند.",
       "exampleTranslit": "az eshtebāhāt-e ō chashm pōshī kardand.",
       "exampleEn": "They turned a blind eye to his mistakes.",
@@ -122872,9 +122052,7 @@
       "freqRank": 6410,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-zan-"
-      ],
+      "variants": [],
       "exampleTarget": "به بانک مرکزی دستبرد زدند.",
       "exampleTranslit": "ba bānk-e markazī dastbord zadand.",
       "exampleEn": "They plundered the central bank.",
@@ -122892,9 +122070,7 @@
       "freqRank": 6411,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "dār-"
-      ],
+      "variants": [],
       "exampleTarget": "دولت رویکرد جدیدی داشت.",
       "exampleTranslit": "dawlat rūykard-e jadīdī dāsht.",
       "exampleEn": "The government had a new approach.",
@@ -122912,9 +122088,7 @@
       "freqRank": 6412,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-warz-"
-      ],
+      "variants": [],
       "exampleTarget": "به انجام این کار مبادرت ورزید.",
       "exampleTranslit": "ba anjām-e īn kār mobāderat warzīd.",
       "exampleEn": "He undertook this task.",
@@ -122951,9 +122125,7 @@
       "freqRank": 6414,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "این سلاح بازدارندگی ایجاد می‌کند.",
       "exampleTranslit": "īn selāh bāzdārandagī ējād mē-konad.",
       "exampleEn": "This weapon deters.",
@@ -122990,9 +122162,7 @@
       "freqRank": 6416,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-zan-"
-      ],
+      "variants": [],
       "exampleTarget": "به مخالفان برچسب زدند.",
       "exampleTranslit": "ba mokhālefān barchasb zadand.",
       "exampleEn": "They labeled the opponents.",
@@ -123029,9 +122199,7 @@
       "freqRank": 6418,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "قانون جدید را تنفیذ کردند.",
       "exampleTranslit": "qānūn-e jadīd rā tanfīz kardand.",
       "exampleEn": "They ratified the new law.",
@@ -123049,9 +122217,7 @@
       "freqRank": 6419,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-chīn-"
-      ],
+      "variants": [],
       "exampleTarget": "علیه دولت توطئه چیدند.",
       "exampleTranslit": "alayh-e dawlat tawte'a chēdand.",
       "exampleEn": "They conspired against the government.",
@@ -123070,9 +122236,7 @@
       "freqRank": 6420,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-sāz-"
-      ],
+      "variants": [],
       "exampleTarget": "حمله دشمن را خنثی ساختند.",
       "exampleTranslit": "hamla-ye dushman rā khonsā sākhtand.",
       "exampleEn": "They thwarted the enemy's attack.",
@@ -123090,9 +122254,7 @@
       "freqRank": 6421,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "mī-kon-"
-      ],
+      "variants": [],
       "exampleTarget": "دو طرف مصالحه کردند.",
       "exampleTranslit": "dū taraf mosālaha kardand.",
       "exampleEn": "The two sides compromised.",
@@ -123110,9 +122272,7 @@
       "freqRank": 6422,
       "freqBand": 10,
       "register": "formal",
-      "variants": [
-        "dār-"
-      ],
+      "variants": [],
       "exampleTarget": "این آمار با واقعیت مطابقت دارد.",
       "exampleTranslit": "īn āmār bā wāqe'īyat motābaqat dārad.",
       "exampleEn": "These statistics correspond with reality.",

@@ -20,14 +20,16 @@
  * the wrong word written into their review deck, and nothing anywhere looks
  * broken. That is the `registre` failure this repo already has a rule about.
  *
- * Of those three, only بری is fixed here. مه and ره are genuine homographs -
- * the lexicon really does contain مه "fog" and ره as a stem of رستن "to
- * escape" - and a table that quietly outranked stated lexicon entries would be
+ * Of those three, only بری was fixed here at first. مه and ره looked like
+ * genuine homographs - the lexicon really does contain مه "fog", and it listed
+ * ره as a stem of رستن "to escape" - and a table that quietly outranked stated lexicon entries would be
  * the same defect pointing the other way: a text about weather would stop
  * resolving مه as weather. They are listed in `CONTESTED_SPOKEN` below with the
  * reasoning, pinned by a test so a new collision cannot appear unnoticed, and
  * left for a philologist to decide - which is a decision about Dari, not about
- * code.
+ * code. ره has since been decided: its "stem" was a variant listed on رستن and
+ * رهیدن, not a word, and with the variant removed this table resolves ره to
+ * را, which is what all five of its content uses mean.
  *
  * مو (mu, "we") and شمو (shumu, "you" plural) used to be listed too, and have
  * been removed on exactly that kind of decision. A philologist ruled, citing
@@ -102,20 +104,22 @@ export const SPOKEN_FORMS: Readonly<Record<string, string>> = {
  * so adding a spoken form that silently does nothing fails the suite.
  *
  *   مه  - Kabuli "I", and the noun "fog"
- *   ره  - Kabuli object marker, and the present stem of رستن "to escape"
  *   استین - Kabuli "you are" (plural), and آستین "sleeve": `matchKey` folds
  *           ا and آ together, so the two are the same key. This one was found
  *           by the test below rather than by reading the list, which is the
  *           argument for the test existing.
  *
  * (مو "we" was listed here too, until it was ruled not to be Kabuli at all
- * and removed from the table - see the header.)
+ * and removed from the table - see the header. ره was listed as well, while
+ * رستن and رهیدن carried ره as a "present stem" variant; it is neither verb's
+ * stem in any text, every content use is the Kabuli را, and dropping those
+ * variants let this table answer it - see the header.)
  *
- * The first three are far more common as the Kabuli form in anything a learner would
+ * These are far more common as the Kabuli form in anything a learner would
  * import or be sent, so overriding is probably right - but "probably" is not
  * the standard for a word written into somebody's review deck.
  */
-export const CONTESTED_SPOKEN: ReadonlySet<string> = new Set(["مه", "ره", "استین"]);
+export const CONTESTED_SPOKEN: ReadonlySet<string> = new Set(["مه", "استین"]);
 
 /**
  * How Kabul pronounces each of those, for the "how Kabul says it" line.
