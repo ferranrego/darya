@@ -971,7 +971,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "پدرم در دکان کار می‌کند.",
-      "exampleTranslit": "padaram dar dukān kār mēkunad.",
+      "exampleTranslit": "padaram dar dōkān kār mēkunad.",
       "exampleEn": "My father works in the shop.",
       "tags": [
         "Family & Relationships",
@@ -1243,7 +1243,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "آن مرد دکان‌دار است.",
-      "exampleTranslit": "ān mard dukāndār ast.",
+      "exampleTranslit": "ān mard dōkāndār ast.",
       "exampleEn": "That man is a shopkeeper.",
       "tags": [
         "People & Identity",
@@ -3221,7 +3221,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "دکان نزدیک است.",
-      "exampleTranslit": "dukān nazdīk ast.",
+      "exampleTranslit": "dōkān nazdīk ast.",
       "exampleEn": "The shop is near.",
       "tags": [
         "Descriptions & Qualities",
@@ -3923,7 +3923,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "دکان باز است.",
-      "exampleTranslit": "dukān bāz ast.",
+      "exampleTranslit": "dōkān bāz ast.",
       "exampleEn": "The shop is open.",
       "tags": [
         "Descriptions & Qualities",
@@ -6183,15 +6183,17 @@
       "id": "lx-0134",
       "target": "دکان",
       "targetNormalized": "دکان",
-      "translit": "dukān",
+      "translit": "dōkān",
       "glossEn": "shop, store",
       "pos": "noun",
       "freqRank": 294,
       "freqBand": 2,
       "register": "neutral",
-      "variants": [],
+      "variants": [
+        "دوکان"
+      ],
       "exampleTarget": "از دکان نان خریدم.",
-      "exampleTranslit": "az dukān nān kharīdam.",
+      "exampleTranslit": "az dōkān nān kharīdam.",
       "exampleEn": "I bought bread from the shop.",
       "tags": [
         "Work & Business",
@@ -6981,7 +6983,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "دکان طرف راست است.",
-      "exampleTranslit": "dukān taraf-e rāst ast.",
+      "exampleTranslit": "dōkān taraf-e rāst ast.",
       "exampleEn": "The shop is on the right side.",
       "tags": [
         "beginner-core"
@@ -7302,8 +7304,7 @@
       "exampleTranslit": "tifl mēparad.",
       "exampleEn": "The child jumps.",
       "tags": [
-        "Sports & Recreation",
-        "beginner-core"
+        "Sports & Recreation"
       ],
       "presentStem": "پر",
       "concreteness": true
@@ -7437,7 +7438,7 @@
         "کاکایم"
       ],
       "exampleTarget": "کاکایم دکان دارد.",
-      "exampleTranslit": "kākāyam dukān dārad.",
+      "exampleTranslit": "kākāyam dōkān dārad.",
       "exampleEn": "My uncle has a shop.",
       "tags": [
         "Family & Relationships",
@@ -7801,8 +7802,7 @@
       "exampleTranslit": "az sag natars.",
       "exampleEn": "Don't fear the dog.",
       "tags": [
-        "Emotions & Feelings",
-        "beginner-core"
+        "Emotions & Feelings"
       ],
       "presentStem": "ترس",
       "concreteness": true
@@ -9230,8 +9230,7 @@
       "exampleTranslit": "chashm-e khud rā mālīd.",
       "exampleEn": "He rubbed his eye.",
       "tags": [
-        "Actions & Movement",
-        "beginner-core"
+        "Actions & Movement"
       ],
       "presentStem": "مال",
       "concreteness": true
@@ -14561,10 +14560,7 @@
       "targetNormalized": "نوشیدن",
       "pos": "verb",
       "glossEn": "drink (everyday Dari is خوردن)",
-      "tags": [
-        "beginner-core",
-        "super-7"
-      ],
+      "tags": [],
       "concreteness": true,
       "presentStem": "نوش",
       "presentStemTranslit": "nōsh",
@@ -14870,7 +14866,7 @@
       "id": "lx-1763",
       "target": "به هوش آمدن",
       "targetNormalized": "به هوش آمدن",
-      "translit": "ba hōsh āmadan",
+      "translit": "ba hūsh āmadan",
       "glossEn": "to regain consciousness",
       "pos": "verb",
       "freqRank": 736,
@@ -14878,7 +14874,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "بیمار پس از دو ساعت به هوش آمد.",
-      "exampleTranslit": "bēmār pas az dū sā'at ba hōsh āmad.",
+      "exampleTranslit": "bēmār pas az dū sā'at ba hūsh āmad.",
       "exampleEn": "The patient regained consciousness after two hours.",
       "tags": [
         "Actions & Movement"
@@ -16610,15 +16606,17 @@
       "id": "lx-0513",
       "target": "دکاندار",
       "targetNormalized": "دکاندار",
-      "translit": "dukāndār",
+      "translit": "dōkāndār",
       "glossEn": "shopkeeper",
       "pos": "noun",
       "freqRank": 827,
       "freqBand": 4,
       "register": "neutral",
-      "variants": [],
+      "variants": [
+        "دوکاندار"
+      ],
       "exampleTarget": "دکاندار سودا می‌فروشد.",
-      "exampleTranslit": "dukāndār sawdā mēfurōshad.",
+      "exampleTranslit": "dōkāndār sawdā mēfurōshad.",
       "exampleEn": "The shopkeeper sells goods.",
       "tags": [
         "Abstract Concepts"
@@ -22815,7 +22813,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "عروسی با شادی برگزار شد.",
-      "exampleTranslit": "arūsī bā shādī barguzār shud.",
+      "exampleTranslit": "arōsī bā shādī barguzār shud.",
       "exampleEn": "The wedding was held with happiness.",
       "tags": [
         "Abstract Concepts"
@@ -26883,7 +26881,7 @@
       "id": "lx-6242",
       "target": "عروس",
       "targetNormalized": "عروس",
-      "translit": "arūs",
+      "translit": "arōs",
       "glossEn": "bride",
       "pos": "noun",
       "freqRank": 1369,
@@ -26891,7 +26889,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "عروس",
-      "exampleTranslit": "arūs",
+      "exampleTranslit": "arōs",
       "exampleEn": "bride",
       "tags": [],
       "concreteness": true
@@ -37207,7 +37205,7 @@
       "id": "lx-1660",
       "target": "بیهوشی",
       "targetNormalized": "بیهوشی",
-      "translit": "bēhōshī",
+      "translit": "bēhūshī",
       "glossEn": "anesthesia",
       "pos": "noun",
       "freqRank": 1913,
@@ -37215,7 +37213,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "بیمار قبل از عمل تحت بیهوشی قرار گرفت.",
-      "exampleTranslit": "bēmār qabl az amal taht-e bēhōshī qarār girift.",
+      "exampleTranslit": "bēmār qabl az amal taht-e bēhūshī qarār girift.",
       "exampleEn": "The patient was put under anesthesia before the operation.",
       "tags": [
         "Abstract Concepts"
@@ -39388,7 +39386,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "شامپانزه‌ها حیوانات بسیار باهوشی هستند.",
-      "exampleTranslit": "shāmpānza-hā haywānāt-e bisyār bāhōshē hastand.",
+      "exampleTranslit": "shāmpānza-hā haywānāt-e bisyār bāhūshē hastand.",
       "exampleEn": "Chimpanzees are very intelligent animals.",
       "tags": [
         "Abstract Concepts"
@@ -39589,7 +39587,7 @@
       "id": "lx-2149",
       "target": "باهوش",
       "targetNormalized": "باهوش",
-      "translit": "bā-hōsh",
+      "translit": "bā-hūsh",
       "glossEn": "smart/intelligent",
       "pos": "adjective",
       "freqRank": 2039,
@@ -39597,7 +39595,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "شاگرد باهوش همیشه نمره خوب می‌گیرد.",
-      "exampleTranslit": "shāgird-e bā-hōsh hamēsha numra-ye khūb mēgīrad.",
+      "exampleTranslit": "shāgird-e bā-hūsh hamēsha numra-ye khūb mēgīrad.",
       "exampleEn": "A smart student always gets good grades.",
       "tags": [
         "Descriptions & Qualities"
@@ -41813,13 +41811,13 @@
     },
     {
       "target": "هوشیار",
-      "translit": "hoshyār",
+      "translit": "hūshyār",
       "glossEn": "clever, intelligent",
       "pos": "adjective",
       "register": "neutral",
       "variants": [],
       "exampleTarget": "پدرم بسیار هوشیار است.",
-      "exampleTranslit": "padaram bisyār hoshyār ast.",
+      "exampleTranslit": "padaram bisyār hūshyār ast.",
       "exampleEn": "My father is very intelligent.",
       "tags": [
         "beginner-core"
@@ -43055,7 +43053,7 @@
       "id": "lx-1574",
       "target": "عروس دریایی",
       "targetNormalized": "عروس دریایی",
-      "translit": "arūs-e daryāī",
+      "translit": "arōs-e daryāī",
       "glossEn": "jellyfish",
       "pos": "noun",
       "freqRank": 2223,
@@ -43063,7 +43061,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "نیش عروس دریایی دردناک است.",
-      "exampleTranslit": "nēsh-e arūs-e daryāī dardnāk ast.",
+      "exampleTranslit": "nēsh-e arōs-e daryāī dardnāk ast.",
       "exampleEn": "A jellyfish sting is painful.",
       "tags": [
         "Abstract Concepts"
@@ -47384,7 +47382,7 @@
       "id": "lx-1780",
       "target": "داروی بی‌هوشی",
       "targetNormalized": "داروی بی‌هوشی",
-      "translit": "dārū-ye bē-hōshī",
+      "translit": "dārū-ye bē-hūshī",
       "glossEn": "anesthetic",
       "pos": "noun",
       "freqRank": 2453,
@@ -47392,7 +47390,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "داروی بی‌هوشی قوی بود.",
-      "exampleTranslit": "dawā-ye bē-hōshī qawī būd.",
+      "exampleTranslit": "dawā-ye bē-hūshī qawī būd.",
       "exampleEn": "The anesthetic was strong.",
       "tags": [
         "Abstract Concepts"
@@ -49253,7 +49251,7 @@
       "id": "lx-1913",
       "target": "هوش مصنوعی",
       "targetNormalized": "هوش مصنوعی",
-      "translit": "hōsh-e masnōī",
+      "translit": "hūsh-e masnōī",
       "glossEn": "artificial intelligence",
       "pos": "noun",
       "freqRank": 2553,
@@ -49261,7 +49259,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "هوش مصنوعی آینده را تغییر می‌دهد.",
-      "exampleTranslit": "hōsh-e masnū'ī āyanda rā taghyīr mēdahad.",
+      "exampleTranslit": "hūsh-e masnū'ī āyanda rā taghyīr mēdahad.",
       "exampleEn": "Artificial intelligence is changing the future.",
       "tags": [
         "Abstract Concepts"
@@ -50974,7 +50972,7 @@
       "id": "lx-3212",
       "target": "هوش",
       "targetNormalized": "هوش",
-      "translit": "hōsh",
+      "translit": "hūsh",
       "glossEn": "intelligence",
       "pos": "noun",
       "freqRank": 2645,
@@ -51724,7 +51722,7 @@
       "id": "lx-2055",
       "target": "هوشمندسازی",
       "targetNormalized": "هوشمندسازی",
-      "translit": "hōshmand-sāzī",
+      "translit": "hūshmand-sāzī",
       "glossEn": "smartification/automation",
       "pos": "noun",
       "freqRank": 2685,
@@ -51732,7 +51730,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "هوشمندسازی شهرها آغاز شده است.",
-      "exampleTranslit": "hōshmand-sāzī-ye shahr-hā āghāz shuda ast.",
+      "exampleTranslit": "hūshmand-sāzī-ye shahr-hā āghāz shuda ast.",
       "exampleEn": "The smartification of cities has begun.",
       "tags": [
         "Abstract Concepts"
@@ -52142,7 +52140,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "اینترنت اشیا خانه‌ها را هوشمند می‌کند.",
-      "exampleTranslit": "intarnēt-e ashyā khāna-hā rā hōshmand mēkunad.",
+      "exampleTranslit": "intarnēt-e ashyā khāna-hā rā hūshmand mēkunad.",
       "exampleEn": "The internet of things makes homes smart.",
       "tags": [
         "Science & Technology"
@@ -52218,7 +52216,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "یادگیری ماشین بخشی از هوش مصنوعی است.",
-      "exampleTranslit": "yādgīrī-ye māshīn bakhshī az hōsh-e masnū'ī ast.",
+      "exampleTranslit": "yādgīrī-ye māshīn bakhshī az hūsh-e masnū'ī ast.",
       "exampleEn": "Machine learning is a part of artificial intelligence.",
       "tags": [
         "Science & Technology"
@@ -55392,7 +55390,7 @@
       "id": "lx-2300",
       "target": "مدهوش",
       "targetNormalized": "مدهوش",
-      "translit": "madhōsh",
+      "translit": "madhūsh",
       "glossEn": "intoxicated/amazed",
       "pos": "adjective",
       "freqRank": 2883,
@@ -55400,7 +55398,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "از دیدن آن منظره مدهوش شدم.",
-      "exampleTranslit": "az dīdan-e ān manzara madhōsh shudam.",
+      "exampleTranslit": "az dīdan-e ān manzara madhūsh shudam.",
       "exampleEn": "I was amazed by seeing that view.",
       "tags": [
         "Descriptions & Qualities"
@@ -63399,7 +63397,7 @@
       "variants": [],
       "exampleTarget": "دکاندار سیب را با ترازو وزن کرد.",
       "exampleEn": "The shopkeeper weighed the apples on the scale.",
-      "exampleTranslit": "dukāndār sēb rā bā tarāzū wazn kard."
+      "exampleTranslit": "dōkāndār sēb rā bā tarāzū wazn kard."
     },
     {
       "id": "lx-3264",
@@ -63678,7 +63676,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این استارتاپ روی هوش مصنوعی کار می‌کند.",
-      "exampleTranslit": "īn istārtāp rō-ye hōsh-e masnū'ī kār mēkunad.",
+      "exampleTranslit": "īn istārtāp rō-ye hūsh-e masnū'ī kār mēkunad.",
       "exampleEn": "This startup is working on artificial intelligence.",
       "tags": [
         "Abstract Concepts"
@@ -63929,7 +63927,7 @@
       "variants": [],
       "exampleTarget": "دکان ما نزدیک چوک شهر است.",
       "exampleEn": "Our shop is near the city square.",
-      "exampleTranslit": "dukān-e mā nazdīk-e chawk-e shahr ast."
+      "exampleTranslit": "dōkān-e mā nazdīk-e chawk-e shahr ast."
     },
     {
       "id": "lx-2653",
@@ -64728,7 +64726,7 @@
       "id": "lx-2679",
       "target": "قرارداد هوشمند",
       "targetNormalized": "قرارداد هوشمند",
-      "translit": "qarārdād-e hōshmand",
+      "translit": "qarārdād-e hūshmand",
       "glossEn": "smart contract",
       "pos": "noun",
       "freqRank": 3378,
@@ -64736,7 +64734,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "قراردادهای هوشمند در بستر بلاک‌چین اجرا می‌شوند.",
-      "exampleTranslit": "qarārdād-hā-ye hōshmand dar bistar-e blāk-chayn ijrā mēshawand.",
+      "exampleTranslit": "qarārdād-hā-ye hūshmand dar bistar-e blāk-chayn ijrā mēshawand.",
       "exampleEn": "Smart contracts run on the blockchain platform.",
       "tags": [
         "Abstract Concepts"
@@ -75915,7 +75913,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "طبقه‌بندی تصاویر توسط هوش مصنوعی انجام شد.",
-      "exampleTranslit": "tabaqa-bandī-ye tasāwīr tawassut-e hōsh-e masnū'ī anjām shud.",
+      "exampleTranslit": "tabaqa-bandī-ye tasāwīr tawassut-e hūsh-e masnū'ī anjām shud.",
       "exampleEn": "Image classification was done by artificial intelligence.",
       "tags": [
         "Abstract Concepts"
@@ -82036,7 +82034,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "او نه تنها باهوش است بلکه بسیار مهربان نیز هست.",
-      "exampleTranslit": "ō na tanhā bāhōsh ast balki bisyār mihrabān nēz hast.",
+      "exampleTranslit": "ō na tanhā bāhūsh ast balki bisyār mihrabān nēz hast.",
       "exampleEn": "He is not only smart but also very kind.",
       "tags": [
         "Grammar & Connectors"
@@ -87170,7 +87168,7 @@
       "target": "شپرک",
       "targetNormalized": "شپرک",
       "pos": "noun",
-      "glossEn": "bat",
+      "glossEn": "bat (the animal)",
       "tags": [],
       "concreteness": true,
       "translit": "shaparak",
@@ -101319,7 +101317,7 @@
       "id": "lx-4618",
       "target": "هوش جامع مصنوعی",
       "targetNormalized": "هوش جامع مصنوعی",
-      "translit": "hōsh-e jāmi'-e masnū'ī",
+      "translit": "hūsh-e jāmi'-e masnū'ī",
       "glossEn": "artificial general intelligence",
       "pos": "noun",
       "freqRank": 5313,
@@ -101327,7 +101325,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "رسیدن به هوش جامع مصنوعی چالش‌برانگیز است.",
-      "exampleTranslit": "rasīdan ba hōsh-e jāmi'-e masnū'ī chālish-bar-angēz ast.",
+      "exampleTranslit": "rasīdan ba hūsh-e jāmi'-e masnū'ī chālish-bar-angēz ast.",
       "exampleEn": "Achieving AGI is challenging.",
       "tags": [
         "Abstract Concepts"
@@ -101547,7 +101545,7 @@
       "id": "lx-4627",
       "target": "مواد هوشمند",
       "targetNormalized": "مواد هوشمند",
-      "translit": "mawādd-e hōshmand",
+      "translit": "mawādd-e hūshmand",
       "glossEn": "smart materials",
       "pos": "noun",
       "freqRank": 5325,
@@ -101555,7 +101553,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "مواد هوشمند به تغییرات محیطی واکنش نشان می‌دهند.",
-      "exampleTranslit": "mawādd-e hōshmand ba taghyērāt-e muhētī wākunish nishān mēdihand.",
+      "exampleTranslit": "mawādd-e hūshmand ba taghyērāt-e muhētī wākunish nishān mēdihand.",
       "exampleEn": "Smart materials react to environmental changes.",
       "tags": [
         "Abstract Concepts"
@@ -101870,7 +101868,7 @@
       "id": "lx-4638",
       "target": "هوش ازدحامی",
       "targetNormalized": "هوش ازدحامی",
-      "translit": "hōsh-e izdihāmī",
+      "translit": "hūsh-e izdihāmī",
       "glossEn": "swarm intelligence",
       "pos": "noun",
       "freqRank": 5342,
@@ -101878,7 +101876,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "الگوریتم‌های مبتنی بر هوش ازدحامی برای مسیریابی استفاده می‌شوند.",
-      "exampleTranslit": "algōrītm-hā-ye mubtanī bar hōsh-e izdihāmī barā-ye masēr-yābī istifāda mēshawand.",
+      "exampleTranslit": "algōrītm-hā-ye mubtanī bar hūsh-e izdihāmī barā-ye masēr-yābī istifāda mēshawand.",
       "exampleEn": "Swarm intelligence-based algorithms are used for routing.",
       "tags": [
         "Abstract Concepts"
@@ -102155,7 +102153,7 @@
       "id": "lx-4648",
       "target": "عامل هوشمند",
       "targetNormalized": "عامل هوشمند",
-      "translit": "āmil-e hōshmand",
+      "translit": "āmil-e hūshmand",
       "glossEn": "intelligent agent",
       "pos": "noun",
       "freqRank": 5357,
@@ -102163,7 +102161,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "این عامل هوشمند به طور خودکار تصمیم می‌گیرد.",
-      "exampleTranslit": "īn āmil-e hōshmand ba tawr-e khudkār tasmēm mēgīrad.",
+      "exampleTranslit": "īn āmil-e hūshmand ba tawr-e khudkār tasmēm mēgīrad.",
       "exampleEn": "This intelligent agent makes decisions automatically.",
       "tags": [
         "Abstract Concepts"
@@ -102459,7 +102457,7 @@
       "id": "lx-4660",
       "target": "هوش تجاری",
       "targetNormalized": "هوش تجاری",
-      "translit": "hōsh-e tijāratī",
+      "translit": "hūsh-e tijāratī",
       "glossEn": "business intelligence",
       "pos": "noun",
       "freqRank": 5373,
@@ -102467,7 +102465,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ابزارهای هوش تجاری داده‌ها را به اطلاعات مفید تبدیل می‌کنند.",
-      "exampleTranslit": "abzār-hā-ye hōsh-e tijāratī dāda-hā rā ba itilā'āt-e mufīd tabdēl mēkunand.",
+      "exampleTranslit": "abzār-hā-ye hūsh-e tijāratī dāda-hā rā ba itilā'āt-e mufīd tabdēl mēkunand.",
       "exampleEn": "Business intelligence tools convert data into useful information.",
       "tags": [
         "Work & Business"
@@ -103113,7 +103111,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "تلفن‌های هوشمند از سیستم روی تراشه استفاده می‌کنند.",
-      "exampleTranslit": "telefōn-hā-ye hōshmand az sistam-e rō-ye tarāsha istifāda mēkunand.",
+      "exampleTranslit": "telefōn-hā-ye hūshmand az sistam-e rō-ye tarāsha istifāda mēkunand.",
       "exampleEn": "Smartphones use system-on-a-chip.",
       "tags": [
         "Abstract Concepts"
@@ -123749,7 +123747,8 @@
       "exampleEn": "The glass is full of water.",
       "variants": [],
       "tags": [
-        "Descriptions & Qualities"
+        "Descriptions & Qualities",
+        "beginner-core"
       ],
       "concreteness": true,
       "id": "lx-10032",
@@ -123787,7 +123786,8 @@
       "exampleEn": "This book is mine.",
       "variants": [],
       "tags": [
-        "Money & Finance"
+        "Money & Finance",
+        "beginner-core"
       ],
       "concreteness": false,
       "id": "lx-10034",
@@ -123844,7 +123844,8 @@
       "exampleEn": "The child cried out of fear.",
       "variants": [],
       "tags": [
-        "Emotions & Feelings"
+        "Emotions & Feelings",
+        "beginner-core"
       ],
       "concreteness": false,
       "id": "lx-10037",

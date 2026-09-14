@@ -1,0 +1,597 @@
+{
+  "lx-0052": {
+    "target": "پدر",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains"
+    ],
+    "set": {
+      "exampleTranslit": "padaram dar dōkān kār mēkunad."
+    },
+    "was": {
+      "exampleTranslit": "padaram dar dukān kār mēkunad."
+    }
+  },
+  "lx-0060": {
+    "target": "مرد",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains"
+    ],
+    "set": {
+      "exampleTranslit": "ān mard dōkāndār ast."
+    },
+    "was": {
+      "exampleTranslit": "ān mard dukāndār ast."
+    }
+  },
+  "lx-0176": {
+    "target": "نزدیک",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains"
+    ],
+    "set": {
+      "exampleTranslit": "dōkān nazdīk ast."
+    },
+    "was": {
+      "exampleTranslit": "dukān nazdīk ast."
+    }
+  },
+  "lx-0199": {
+    "target": "باز",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains"
+    ],
+    "set": {
+      "exampleTranslit": "dōkān bāz ast."
+    },
+    "was": {
+      "exampleTranslit": "dukān bāz ast."
+    }
+  },
+  "lx-0134": {
+    "target": "دکان",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains",
+      "add دوکان: the common Afghan spelling (Kabul Municipality, Kabul shop listings), so a learner reading a shop sign can look it up"
+    ],
+    "set": {
+      "translit": "dōkān",
+      "exampleTranslit": "az dōkān nān kharīdam.",
+      "variants": [
+        "دوکان"
+      ]
+    },
+    "was": {
+      "translit": "dukān",
+      "exampleTranslit": "az dukān nān kharīdam.",
+      "variants": []
+    }
+  },
+  "lx-6102": {
+    "target": "راست",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains"
+    ],
+    "set": {
+      "exampleTranslit": "dōkān taraf-e rāst ast."
+    },
+    "was": {
+      "exampleTranslit": "dukān taraf-e rāst ast."
+    }
+  },
+  "lx-0185": {
+    "target": "کاکا",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains"
+    ],
+    "set": {
+      "exampleTranslit": "kākāyam dōkān dārad."
+    },
+    "was": {
+      "exampleTranslit": "kākāyam dukān dārad."
+    }
+  },
+  "lx-1763": {
+    "target": "به هوش آمدن",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "ba hūsh āmadan",
+      "exampleTranslit": "bēmār pas az dū sā'at ba hūsh āmad."
+    },
+    "was": {
+      "translit": "ba hōsh āmadan",
+      "exampleTranslit": "bēmār pas az dū sā'at ba hōsh āmad."
+    }
+  },
+  "lx-0513": {
+    "target": "دکاندار",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains",
+      "add دوکاندار: the same Afghan spelling of the compound"
+    ],
+    "set": {
+      "translit": "dōkāndār",
+      "exampleTranslit": "dōkāndār sawdā mēfurōshad.",
+      "variants": [
+        "دوکاندار"
+      ]
+    },
+    "was": {
+      "translit": "dukāndār",
+      "exampleTranslit": "dukāndār sawdā mēfurōshad.",
+      "variants": []
+    }
+  },
+  "lx-1077": {
+    "target": "شادی",
+    "why": [
+      "عروس is arōs: Tajik арӯс (majhul ӯ), Wiktionary Dari [ʔäˈɾoːs]; عروسی was already arōsī in 5 places against arūs/arūsī in 3"
+    ],
+    "set": {
+      "exampleTranslit": "arōsī bā shādī barguzār shud."
+    },
+    "was": {
+      "exampleTranslit": "arūsī bā shādī barguzār shud."
+    }
+  },
+  "lx-6242": {
+    "target": "عروس",
+    "why": [
+      "عروس is arōs: Tajik арӯс (majhul ӯ), Wiktionary Dari [ʔäˈɾoːs]; عروسی was already arōsī in 5 places against arūs/arūsī in 3"
+    ],
+    "set": {
+      "translit": "arōs",
+      "exampleTranslit": "arōs"
+    },
+    "was": {
+      "translit": "arūs",
+      "exampleTranslit": "arūs"
+    }
+  },
+  "lx-1660": {
+    "target": "بیهوشی",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "bēhūshī",
+      "exampleTranslit": "bēmār qabl az amal taht-e bēhūshī qarār girift."
+    },
+    "was": {
+      "translit": "bēhōshī",
+      "exampleTranslit": "bēmār qabl az amal taht-e bēhōshī qarār girift."
+    }
+  },
+  "lx-1564": {
+    "target": "شامپانزه",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "exampleTranslit": "shāmpānza-hā haywānāt-e bisyār bāhūshē hastand."
+    },
+    "was": {
+      "exampleTranslit": "shāmpānza-hā haywānāt-e bisyār bāhōshē hastand."
+    }
+  },
+  "lx-2149": {
+    "target": "باهوش",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "bā-hūsh",
+      "exampleTranslit": "shāgird-e bā-hūsh hamēsha numra-ye khūb mēgīrad."
+    },
+    "was": {
+      "translit": "bā-hōsh",
+      "exampleTranslit": "shāgird-e bā-hōsh hamēsha numra-ye khūb mēgīrad."
+    }
+  },
+  "lx-6147": {
+    "target": "هوشیار",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "hūshyār",
+      "exampleTranslit": "padaram bisyār hūshyār ast."
+    },
+    "was": {
+      "translit": "hoshyār",
+      "exampleTranslit": "padaram bisyār hoshyār ast."
+    }
+  },
+  "lx-1574": {
+    "target": "عروس دریایی",
+    "why": [
+      "عروس is arōs: Tajik арӯс (majhul ӯ), Wiktionary Dari [ʔäˈɾoːs]; عروسی was already arōsī in 5 places against arūs/arūsī in 3"
+    ],
+    "set": {
+      "translit": "arōs-e daryāī",
+      "exampleTranslit": "nēsh-e arōs-e daryāī dardnāk ast."
+    },
+    "was": {
+      "translit": "arūs-e daryāī",
+      "exampleTranslit": "nēsh-e arūs-e daryāī dardnāk ast."
+    }
+  },
+  "lx-1780": {
+    "target": "داروی بی‌هوشی",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "dārū-ye bē-hūshī",
+      "exampleTranslit": "dawā-ye bē-hūshī qawī būd."
+    },
+    "was": {
+      "translit": "dārū-ye bē-hōshī",
+      "exampleTranslit": "dawā-ye bē-hōshī qawī būd."
+    }
+  },
+  "lx-1913": {
+    "target": "هوش مصنوعی",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "hūsh-e masnōī",
+      "exampleTranslit": "hūsh-e masnū'ī āyanda rā taghyīr mēdahad."
+    },
+    "was": {
+      "translit": "hōsh-e masnōī",
+      "exampleTranslit": "hōsh-e masnū'ī āyanda rā taghyīr mēdahad."
+    }
+  },
+  "lx-3212": {
+    "target": "هوش",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "hūsh"
+    },
+    "was": {
+      "translit": "hōsh"
+    }
+  },
+  "lx-2055": {
+    "target": "هوشمندسازی",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "hūshmand-sāzī",
+      "exampleTranslit": "hūshmand-sāzī-ye shahr-hā āghāz shuda ast."
+    },
+    "was": {
+      "translit": "hōshmand-sāzī",
+      "exampleTranslit": "hōshmand-sāzī-ye shahr-hā āghāz shuda ast."
+    }
+  },
+  "lx-2054": {
+    "target": "اینترنت اشیا",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "exampleTranslit": "intarnēt-e ashyā khāna-hā rā hūshmand mēkunad."
+    },
+    "was": {
+      "exampleTranslit": "intarnēt-e ashyā khāna-hā rā hōshmand mēkunad."
+    }
+  },
+  "lx-2058": {
+    "target": "یادگیری ماشین",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "exampleTranslit": "yādgīrī-ye māshīn bakhshī az hūsh-e masnū'ī ast."
+    },
+    "was": {
+      "exampleTranslit": "yādgīrī-ye māshīn bakhshī az hōsh-e masnū'ī ast."
+    }
+  },
+  "lx-2300": {
+    "target": "مدهوش",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "madhūsh",
+      "exampleTranslit": "az dīdan-e ān manzara madhūsh shudam."
+    },
+    "was": {
+      "translit": "madhōsh",
+      "exampleTranslit": "az dīdan-e ān manzara madhōsh shudam."
+    }
+  },
+  "lx-6429": {
+    "target": "ترازو",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains"
+    ],
+    "set": {
+      "exampleTranslit": "dōkāndār sēb rā bā tarāzū wazn kard."
+    },
+    "was": {
+      "exampleTranslit": "dukāndār sēb rā bā tarāzū wazn kard."
+    }
+  },
+  "lx-2799": {
+    "target": "استارتاپ",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "exampleTranslit": "īn istārtāp rō-ye hūsh-e masnū'ī kār mēkunad."
+    },
+    "was": {
+      "exampleTranslit": "īn istārtāp rō-ye hōsh-e masnū'ī kār mēkunad."
+    }
+  },
+  "lx-6421": {
+    "target": "چوک",
+    "why": [
+      "دکان is dōkān: Tajik дӯкон (majhul ӯ), and Afghan writing spells it دوکان (Kabul Municipality دوکانداران), which only a long vowel explains"
+    ],
+    "set": {
+      "exampleTranslit": "dōkān-e mā nazdīk-e chawk-e shahr ast."
+    },
+    "was": {
+      "exampleTranslit": "dukān-e mā nazdīk-e chawk-e shahr ast."
+    }
+  },
+  "lx-2679": {
+    "target": "قرارداد هوشمند",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "qarārdād-e hūshmand",
+      "exampleTranslit": "qarārdād-hā-ye hūshmand dar bistar-e blāk-chayn ijrā mēshawand."
+    },
+    "was": {
+      "translit": "qarārdād-e hōshmand",
+      "exampleTranslit": "qarārdād-hā-ye hōshmand dar bistar-e blāk-chayn ijrā mēshawand."
+    }
+  },
+  "lx-3927": {
+    "target": "طبقه‌بندی",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "exampleTranslit": "tabaqa-bandī-ye tasāwīr tawassut-e hūsh-e masnū'ī anjām shud."
+    },
+    "was": {
+      "exampleTranslit": "tabaqa-bandī-ye tasāwīr tawassut-e hōsh-e masnū'ī anjām shud."
+    }
+  },
+  "lx-3582": {
+    "target": "نه تنها... بلکه...",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "exampleTranslit": "ō na tanhā bāhūsh ast balki bisyār mihrabān nēz hast."
+    },
+    "was": {
+      "exampleTranslit": "ō na tanhā bāhōsh ast balki bisyār mihrabān nēz hast."
+    }
+  },
+  "lx-4618": {
+    "target": "هوش جامع مصنوعی",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "hūsh-e jāmi'-e masnū'ī",
+      "exampleTranslit": "rasīdan ba hūsh-e jāmi'-e masnū'ī chālish-bar-angēz ast."
+    },
+    "was": {
+      "translit": "hōsh-e jāmi'-e masnū'ī",
+      "exampleTranslit": "rasīdan ba hōsh-e jāmi'-e masnū'ī chālish-bar-angēz ast."
+    }
+  },
+  "lx-4627": {
+    "target": "مواد هوشمند",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "mawādd-e hūshmand",
+      "exampleTranslit": "mawādd-e hūshmand ba taghyērāt-e muhētī wākunish nishān mēdihand."
+    },
+    "was": {
+      "translit": "mawādd-e hōshmand",
+      "exampleTranslit": "mawādd-e hōshmand ba taghyērāt-e muhētī wākunish nishān mēdihand."
+    }
+  },
+  "lx-4638": {
+    "target": "هوش ازدحامی",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "hūsh-e izdihāmī",
+      "exampleTranslit": "algōrītm-hā-ye mubtanī bar hūsh-e izdihāmī barā-ye masēr-yābī istifāda mēshawand."
+    },
+    "was": {
+      "translit": "hōsh-e izdihāmī",
+      "exampleTranslit": "algōrītm-hā-ye mubtanī bar hōsh-e izdihāmī barā-ye masēr-yābī istifāda mēshawand."
+    }
+  },
+  "lx-4648": {
+    "target": "عامل هوشمند",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "āmil-e hūshmand",
+      "exampleTranslit": "īn āmil-e hūshmand ba tawr-e khudkār tasmēm mēgīrad."
+    },
+    "was": {
+      "translit": "āmil-e hōshmand",
+      "exampleTranslit": "īn āmil-e hōshmand ba tawr-e khudkār tasmēm mēgīrad."
+    }
+  },
+  "lx-4660": {
+    "target": "هوش تجاری",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "translit": "hūsh-e tijāratī",
+      "exampleTranslit": "abzār-hā-ye hūsh-e tijāratī dāda-hā rā ba itilā'āt-e mufīd tabdēl mēkunand."
+    },
+    "was": {
+      "translit": "hōsh-e tijāratī",
+      "exampleTranslit": "abzār-hā-ye hōsh-e tijāratī dāda-hā rā ba itilā'āt-e mufīd tabdēl mēkunand."
+    }
+  },
+  "lx-4694": {
+    "target": "سیستم روی تراشه",
+    "why": [
+      "هوش is hūsh: Tajik ҳуш (у, not majhul ӯ; Tajik orthography rules: аз ҳуш рафта), Classical/Iranian hūsh; the lexicon was split 20 hōsh against 9 hūsh"
+    ],
+    "set": {
+      "exampleTranslit": "telefōn-hā-ye hūshmand az sistam-e rō-ye tarāsha istifāda mēkunand."
+    },
+    "was": {
+      "exampleTranslit": "telefōn-hā-ye hōshmand az sistam-e rō-ye tarāsha istifāda mēkunand."
+    }
+  },
+  "lx-6325": {
+    "target": "شپرک",
+    "why": [
+      "شپرک is the bat in Dari (fa.wikipedia خفاش: Afghan شب‌پرک چرمی, also شپرک; gooshe.net Dari شهپرک چرمی for bat, شاه‌پرک for butterfly); the gloss was right, and now cannot be read as a cricket bat or confused with Iranian شاپرک butterfly"
+    ],
+    "set": {
+      "glossEn": "bat (the animal)"
+    },
+    "was": {
+      "glossEn": "bat"
+    }
+  },
+  "lx-0450": {
+    "target": "مالیدن",
+    "why": [
+      "beginner-spec.json asks for مال as a possessive (closedClasses.possessives); مالیدن \"to rub\" carried the tag only because the stem variant مال resolved to it"
+    ],
+    "set": {
+      "tags": [
+        "Actions & Movement"
+      ]
+    },
+    "was": {
+      "tags": [
+        "Actions & Movement",
+        "beginner-core"
+      ]
+    }
+  },
+  "lx-10034": {
+    "target": "مال",
+    "why": [
+      "beginner-spec.json asks for مال (possessives: مال من \"mine\"), which now resolves to this entry"
+    ],
+    "set": {
+      "tags": [
+        "Money & Finance",
+        "beginner-core"
+      ]
+    },
+    "was": {
+      "tags": [
+        "Money & Finance"
+      ]
+    }
+  },
+  "lx-0366": {
+    "target": "ترسیدن",
+    "why": [
+      "beginner-spec.json asks for the noun ترس (Emotions & Feelings); the verb had the tag only through the stem variant"
+    ],
+    "set": {
+      "tags": [
+        "Emotions & Feelings"
+      ]
+    },
+    "was": {
+      "tags": [
+        "Emotions & Feelings",
+        "beginner-core"
+      ]
+    }
+  },
+  "lx-10037": {
+    "target": "ترس",
+    "why": [
+      "beginner-spec.json asks for ترس in Emotions & Feelings, which now resolves to this entry"
+    ],
+    "set": {
+      "tags": [
+        "Emotions & Feelings",
+        "beginner-core"
+      ]
+    },
+    "was": {
+      "tags": [
+        "Emotions & Feelings"
+      ]
+    }
+  },
+  "lx-0378": {
+    "target": "پریدن",
+    "why": [
+      "beginner-spec.json asks for پر \"full\" (descriptiveDimensions.fullness, with خالی); the verb had the tag only through the stem variant"
+    ],
+    "set": {
+      "tags": [
+        "Sports & Recreation"
+      ]
+    },
+    "was": {
+      "tags": [
+        "Sports & Recreation",
+        "beginner-core"
+      ]
+    }
+  },
+  "lx-10032": {
+    "target": "پر",
+    "why": [
+      "beginner-spec.json asks for پر in fullness, which now resolves to this entry"
+    ],
+    "set": {
+      "tags": [
+        "Descriptions & Qualities",
+        "beginner-core"
+      ]
+    },
+    "was": {
+      "tags": [
+        "Descriptions & Qualities"
+      ]
+    }
+  },
+  "lx-6365": {
+    "target": "نوشیدن",
+    "why": [
+      "نوشیدن is formal and Iranian-leaning for everyday drinking (its own gloss: everyday Dari is خوردن; philologist-repairs: آب می‌نوشید is Iranian, Dari says آب می‌خورید). super-7 makes word-selection seed it as the first verb of a beginner text and beginner-core teaches it on day one; خوردن already carries both. Removed from beginner-spec.json (Food & Drink seed, verbFunctions daily routine) and beginner-core.txt, so the tag script agrees"
+    ],
+    "set": {
+      "tags": []
+    },
+    "was": {
+      "tags": [
+        "beginner-core",
+        "super-7"
+      ]
+    }
+  }
+}
