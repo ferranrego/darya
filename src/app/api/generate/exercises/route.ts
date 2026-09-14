@@ -4,6 +4,7 @@ import { generateExercises, taggedLexemes, FALLBACK_THEMES, type ExerciseData } 
 import { buildFreeExercises } from "@/lib/content/free-exercises";
 import { lexicon, levelById, lexemeById } from "@/lib/content/load";
 import { textDocumentSchema, type LexiconEntry, type TextDocument } from "@/lib/content/schema";
+import { isTeachable } from "@/lib/content/teachability";
 import { stickingPoints } from "@/lib/db/errors";
 import { supabaseServer, supabaseService } from "@/lib/supabase/server";
 import { sample, shuffle } from "@/lib/util/shuffle";
@@ -65,8 +66,13 @@ export async function POST() {
     .map((w) => lexemeById(w.lexeme_id))
     .filter((e): e is LexiconEntry => !!e);
   const known = inBand.filter((e) => statusById.get(e.id) === "known");
+  // New targets are words this session will *teach*, so they pass the same
+  // gate the curriculum uses. Without it the frontier at L5/L6 (bands 9-10)
+  // could hand the model a ruled-out entry - one of the 160 numbered
+  // "محیط زیست 160" generation duplicates, or an Iranian word the gloss says
+  // not to teach - as a word to practise.
   const unseen = inBand
-    .filter((e) => !statusById.has(e.id))
+    .filter((e) => !statusById.has(e.id) && isTeachable(e))
     .sort((a, b) => a.freqRank - b.freqRank);
 
   const knownWords = inBand.filter((e) => statusById.has(e.id));

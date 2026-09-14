@@ -234,6 +234,54 @@ if (existsSync(lexiconPath)) {
     }
 
     /**
+     * Generation filler, by its fingerprints.
+     *
+     * A bulk pass once wrote ten Dari topics sixteen times each, numbering
+     * them to get past the duplicate-key check: "گرمایش جهانی 1" glossed
+     * "global warming variant 1", through "محیط زیست 160". Every other gate
+     * passed them and all 160 counted as teachable vocabulary. No headword in
+     * either language contains a digit, and no real gloss says "variant 12".
+     * An entry already ruled out with "[not a headword: …]" is a decision that
+     * has been made (ids cannot be deleted), so it is exempt.
+     */
+    for (const e of lexicon.entries) {
+      if (isRuledOut(e)) continue;
+      if (/\p{Nd}/u.test(e.target)) {
+        fail(`lexicon ${e.id}: headword "${e.target}" contains a digit - generation filler, not a word`);
+      }
+      if (/\bvariant\s+\d+\b/i.test(e.glossEn)) {
+        fail(`lexicon ${e.id}: gloss "${e.glossEn}" is numbered generation filler`);
+      }
+    }
+
+    /**
+     * Variants are surfaces the resolver looks up before any stemming rule,
+     * so a wrong one does not fail - it answers for a different word.
+     *
+     * In a language written in another script a Latin variant ("kun",
+     * "mī-kon-") can match nothing; 215 Dari entries carried one. And a
+     * variant that is another entry's headword is outranked by that headword,
+     * so it resolves nothing and only claims the word for the wrong entry:
+     * دو "two" listed on دویدن "to run", کار "work" on کاشتن "to plant". The
+     * worse case - a variant that is a real word with no entry of its own,
+     * بخش "section" on بخشیدن - cannot be told apart from a genuine stem by a
+     * machine, so it stays with review-batch and the corpus measurement.
+     */
+    for (const e of lexicon.entries) {
+      for (const v of e.variants) {
+        if (profile.capabilities.transliteration && /[A-Za-z]/.test(v)) {
+          fail(`lexicon ${e.id}: variant "${v}" is Latin - variants are ${lang} surfaces for the resolver`);
+        }
+        if (lang === "prs") {
+          const owner = keys.get(matchKey(v));
+          if (owner && owner !== e.id) {
+            fail(`lexicon ${e.id}: variant "${v}" is the headword of ${owner}, which outranks it`);
+          }
+        }
+      }
+    }
+
+    /**
      * `freqRank` must be a frequency, not an arrival time.
      *
      * A batch of 121 Dari entries once shipped with `freqRank` tracking their
