@@ -151,12 +151,14 @@ Schema:
 
   let rawText: string | undefined;
 
+  // Defaults must name models the accounts can still reach; see the same note in
+  // enrich-verb-stems.ts. Both of these had been retired out from under us.
   if (groqKey) {
     console.log("Calling Groq API...");
     rawText = await callOpenAiCompatible(
       groqKey,
       "https://api.groq.com/openai/v1",
-      process.env.GROQ_MODEL ?? "llama-3.3-70b-versatile",
+      process.env.GROQ_MODEL ?? "qwen/qwen3.8-27b",
       prompt
     );
   } else if (openrouterKey) {
@@ -164,7 +166,7 @@ Schema:
     rawText = await callOpenAiCompatible(
       openrouterKey,
       "https://openrouter.ai/api/v1",
-      process.env.OPENROUTER_MODEL ?? "meta-llama/llama-3.3-70b-instruct:free",
+      process.env.OPENROUTER_MODEL ?? "openrouter/free",
       prompt
     );
   }

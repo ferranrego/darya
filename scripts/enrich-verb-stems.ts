@@ -152,9 +152,14 @@ const llmResponseSchema = z.object({
 });
 
 async function callLlm(prompt: string): Promise<string> {
+  // These defaults must name models the accounts can still reach. Both sat dead
+  // for a while - llama-3.3-70b-versatile and the :free Llama had been removed
+  // from their catalogs - and nothing said so, because a script nobody ran that
+  // week fails in private. Re-check them against /v1/models when Groq or
+  // OpenRouter retires something.
   const chain = [
-    { key: process.env.GROQ_API_KEY, url: "https://api.groq.com/openai/v1", model: process.env.GROQ_MODEL ?? "llama-3.3-70b-versatile" },
-    { key: process.env.OPENROUTER_API_KEY, url: "https://openrouter.ai/api/v1", model: process.env.OPENROUTER_MODEL ?? "meta-llama/llama-3.3-70b-instruct:free" },
+    { key: process.env.GROQ_API_KEY, url: "https://api.groq.com/openai/v1", model: process.env.GROQ_MODEL ?? "qwen/qwen3.8-27b" },
+    { key: process.env.OPENROUTER_API_KEY, url: "https://openrouter.ai/api/v1", model: process.env.OPENROUTER_MODEL ?? "openrouter/free" },
   ].filter((p) => p.key);
   if (chain.length === 0) throw new Error("GROQ_API_KEY or OPENROUTER_API_KEY must be set");
   let lastErr: unknown;

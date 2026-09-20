@@ -124,12 +124,22 @@ function openAiCompatible(
  * generation spent two failed requests before falling through to Groq, and the
  * head of the chain was dead weight. Verify a new default with a real call
  * before shipping it; a 400 here is silent, because the chain recovers.
+ *
+ * The Groq slots held `groq/compound`/`groq/compound-mini` until Groq announced
+ * their decommissioning. Compound was an agentic system - built-in tool use and
+ * web search - and nothing here ever wanted either, so the replacements are
+ * plain instruct models. Qwen takes the Groq head for the same reason it heads
+ * the chain on the HF router: it is the better Persian morphologist, and this
+ * slot serves the tutor reply and translation. A model vanishing from a
+ * provider's catalog is the silent-failure case this file is built around, so
+ * when a default here starts 400ing, replace it rather than letting the chain
+ * absorb it.
  */
 const providers: Provider[] = [
   openAiCompatible("huggingface", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL", "Qwen/Qwen2.5-72B-Instruct"),
-  openAiCompatible("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "groq/compound"),
+  openAiCompatible("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "qwen/qwen3.8-27b"),
   openAiCompatible("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", "OPENROUTER_MODEL", "openrouter/free"),
-  openAiCompatible("groq-fallback", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL_FALLBACK", "groq/compound-mini"),
+  openAiCompatible("groq-fallback", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL_FALLBACK", "openai/gpt-oss-20b"),
   openAiCompatible("huggingface-fallback", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL_FALLBACK", "Qwen/Qwen3-32B"),
 ];
 
