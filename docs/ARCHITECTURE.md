@@ -12,7 +12,7 @@ course - for a small circle of users on 100% free infrastructure.
 | State | TanStack Query (server state) + Zustand (ephemeral UI state) |
 | Data | Supabase (Postgres + Auth + RLS), SQL migrations in `supabase/migrations/` |
 | SRS | `ts-fsrs` (FSRS algorithm; we never hand-roll scheduling) |
-| AI | Groq (primary, free tier) → OpenRouter (free-tier fallback) |
+| AI | Five free-tier providers in one chain, see `src/lib/ai/providers.ts` for the order and why |
 | PWA | Hand-written service worker (`public/sw.js`) + web manifest |
 | Push | Web Push API (VAPID) with Declarative Web Push payloads for iOS ≥ 18.4 |
 

@@ -68,12 +68,26 @@ const DEFAULT_BUDGET_MS = 24_000;
  */
 const disabled = new Map<string, string>();
 
+/**
+ * Extra body fields for one provider.
+ *
+ * Every provider here speaks the OpenAI shape, but the *reasoning* controls are
+ * each vendor's own, and the defaults are not neutral: a reasoning model left
+ * alone will happily spend the whole `max_tokens` thinking and return a
+ * truncated answer, or emit its thoughts into `content` where they are not
+ * JSON. Both are silent - the chain just sees a parse failure and moves on,
+ * having paid for the tokens. So the model choice and the reasoning settings
+ * that make it behave travel together, on the same line.
+ */
+type ExtraBody = Record<string, unknown>;
+
 function openAiCompatible(
   name: string,
   baseUrl: string,
   keyEnv: string,
   modelEnv: string,
   defaultModel: string,
+  extraBody: ExtraBody = {},
 ): Provider {
   return {
     name,
@@ -94,6 +108,12 @@ function openAiCompatible(
             messages: [{ role: "user", content: prompt }],
             temperature,
             response_format: { type: "json_object" },
+            // Only meaningful when the model override still names the model
+            // these were chosen for. Setting GROQ_MODEL to something that
+            // rejects them is the one way to make this a 400 - which the chain
+            // treats as fatal for that provider, so it fails loudly per call
+            // rather than degrading.
+            ...extraBody,
             // Omitted unless asked for: every other caller wants JSON of a known
             // shape, where a cap can only truncate it into a parse failure that
             // costs a retry. It exists for free-form prose (the tutor reply),
@@ -137,10 +157,33 @@ function openAiCompatible(
  */
 const providers: Provider[] = [
   openAiCompatible("huggingface", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL", "Qwen/Qwen2.5-72B-Instruct"),
-  openAiCompatible("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "qwen/qwen3.8-27b"),
+  // `reasoning_format` is Groq's, and JSON mode *rejects* its `raw` value with
+  // a 400 - so a reasoning model in this slot is only safe when told to hide
+  // its thinking. `none` effort keeps qwen3.8 behaving like the plain instruct
+  // model that used to sit here, which is what a one-second tutor reply and a
+  // shared daily token cap both want. It is also qwen3.8's own default; set
+  // explicitly because a default that matters should not be inherited.
+  openAiCompatible("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "qwen/qwen3.8-27b", {
+    reasoning_format: "hidden",
+    reasoning_effort: "none",
+  }),
   openAiCompatible("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", "OPENROUTER_MODEL", "openrouter/free"),
-  openAiCompatible("groq-fallback", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL_FALLBACK", "openai/gpt-oss-20b"),
-  openAiCompatible("huggingface-fallback", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL_FALLBACK", "Qwen/Qwen3-32B"),
+  // GPT-OSS does not take `reasoning_format` at all - it has `include_reasoning`
+  // instead, and the two are mutually exclusive - and it always reasons. Its
+  // default effort is `medium`, which on a fallback whose whole job is to be
+  // quick would spend the remaining budget thinking. `low` plus reasoning kept
+  // out of the response is the cheapest honest configuration.
+  openAiCompatible("groq-fallback", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL_FALLBACK", "openai/gpt-oss-20b", {
+    include_reasoning: false,
+    reasoning_effort: "low",
+  }),
+  // Qwen3-32B is a *hybrid* reasoning model and the HF router gives no reliable
+  // way to switch the thinking off - it depends on which upstream provider
+  // serves the request. The -Instruct line has no thinking mode to switch, so
+  // the guarantee comes from the model choice rather than from a parameter this
+  // endpoint may ignore. A3B is 3B active parameters, which is what a
+  // last-resort fallback should cost.
+  openAiCompatible("huggingface-fallback", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL_FALLBACK", "Qwen/Qwen3-Next-80B-A3B-Instruct"),
 ];
 
 interface CompleteOptions<T> {
@@ -183,6 +226,30 @@ function ordered(prefer?: string[]): Provider[] {
 }
 
 /**
+ * Remove a reasoning preamble a model put in `content` instead of keeping to
+ * itself, and return what follows.
+ *
+ * The providers above are each configured not to do this. This is the belt to
+ * that braces, and it earns its place because the failure it prevents is the
+ * expensive kind: `openrouter/free` is an *auto-router* that picks whichever
+ * free model is up, so the model behind that slot changes without anything
+ * here changing, and a reasoning model appearing there would turn every
+ * OpenRouter attempt into a parse failure - two attempts, both paid for, with
+ * nothing to show and no error naming the real cause.
+ *
+ * Unclosed `<think>` is handled deliberately: it means the answer was truncated
+ * mid-thought, and there is no JSON coming. Cutting to the end leaves an empty
+ * string, which fails validation immediately instead of after a confusing
+ * partial parse.
+ */
+export function stripReasoning(raw: string): string {
+  const text = raw.trimStart();
+  if (!text.startsWith("<think>") && !text.startsWith("<reasoning>")) return raw;
+  const close = text.match(/<\/(?:think|reasoning)>/);
+  return close ? text.slice(close.index! + close[0].length).trim() : "";
+}
+
+/**
  * Ask the chain for one JSON completion. The prompt must contain the word
  * "JSON" - providers require it alongside `response_format: json_object`.
  */
@@ -210,6 +277,9 @@ export async function completeJson<T>(prompt: string, opts: CompleteOptions<T>):
           Math.min(PER_CALL_CAP_MS, remaining),
           opts.maxTokens,
         );
+        // Order matters: the fence, when there is one, is inside the answer
+        // and therefore after any reasoning block, never around it.
+        raw = stripReasoning(raw);
         // Strip markdown backticks if present
         if (raw.startsWith("```json")) {
           raw = raw.replace(/^```json\s*/, "").replace(/\s*```$/, "");
