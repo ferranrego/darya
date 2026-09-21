@@ -27,6 +27,7 @@ import { isContentWord } from "../src/lib/content/word-selection.ts";
 import { PROFILES } from "../src/lib/lang/index.ts";
 import {
   bareEzafeAfterVowel,
+  alignWords,
   bareShortIEnding,
   cheAsWord,
   isFlattenedTranslit,
@@ -1611,6 +1612,39 @@ if (lang === "prs" && lexicon) {
     if (bad || che) cellFailures++;
   }
   if (cellFailures === 0) console.log(`✓ transliteration in ${cells.length} table cells and pattern parts`);
+  /**
+   * A headword and its own example must agree about how the word is spelled.
+   *
+   * Found by a philologist review, which put the count near 493; triaged here
+   * it is 279 of 3,833 checkable entries. The rest were multi-word headwords
+   * and ezafe suffixes the first query could not see past. The real ones are
+   * three classes: a macron on one side only (khāli / khālī), two spellings of
+   * one word (pizhōhish / pazhōhish), and a handful where the Latin names a
+   * different word entirely (درمان with tadāwī beside it - those sit in the 238
+   * entries already ruled out of teaching, so no learner meets them).
+   *
+   * A warning, not a failure, because deciding which of the two spellings is
+   * right is philology and 279 of them cannot be settled by this script. The
+   * count is printed so it can only go down.
+   */
+  const strip = (t: string) => t.toLowerCase().normalize("NFC").replace(/-(ye|e|i|ī|hā|am|ash|at|and)$/, "");
+  const headwordMismatch: string[] = [];
+  let headwordCheckable = 0;
+  for (const e of lexicon?.entries ?? []) {
+    if (!e.translit || !e.exampleTranslit || !e.exampleTarget || e.target.includes(" ")) continue;
+    const head = normDari(e.target);
+    const hit = alignWords(e.exampleTranslit, e.exampleTarget).find(([, d]) => normDari(d) === head);
+    if (!hit) continue;
+    headwordCheckable++;
+    if (strip(hit[0]) === strip(e.translit)) continue;
+    headwordMismatch.push(`${e.id} ${e.target}: headword "${e.translit}" vs example "${hit[0]}"`);
+  }
+  if (headwordMismatch.length) {
+    console.warn(
+      `⚠ ${headwordMismatch.length} of ${headwordCheckable} entries spell their headword one way and their own ` +
+        `example another (e.g. ${headwordMismatch.slice(0, 2).join("; ")})`,
+    );
+  }
   if (yehReview.length) {
     console.warn(
       `⚠ ${yehReview.length} word(s) where the Dari writes a ی inside the word and the Latin shows no long vowel ` +

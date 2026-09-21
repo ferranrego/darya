@@ -3017,7 +3017,7 @@
         "دلم"
       ],
       "exampleTarget": "دلم برای وطن تنگ شده است.",
-      "exampleTranslit": "dilam barā watan tang shuda ast.",
+      "exampleTranslit": "dilam barā-ye watan tang shuda ast.",
       "exampleEn": "I miss my homeland.",
       "tags": [
         "Body & Anatomy",
@@ -10988,7 +10988,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "قانون برای همه است.",
-      "exampleTranslit": "qānūn barā hama ast.",
+      "exampleTranslit": "qānūn barā-ye hama ast.",
       "exampleEn": "The law is for everyone.",
       "tags": [
         "Society & Politics"
@@ -13457,7 +13457,7 @@
         "پارچه"
       ],
       "exampleTarget": "این تکه برای لباس مناسب است.",
-      "exampleTranslit": "īn tuka barā libās munāsib ast.",
+      "exampleTranslit": "īn tuka barā-ye libās munāsib ast.",
       "exampleEn": "This fabric is suitable for a dress.",
       "tags": [
         "Abstract Concepts"
@@ -21024,7 +21024,7 @@
         "جوشان"
       ],
       "exampleTarget": "آب را برای چای جوشاند.",
-      "exampleTranslit": "āb rā barā chāy jōshānd.",
+      "exampleTranslit": "āb rā barā-ye chāy jōshānd.",
       "exampleEn": "He boiled the water for tea.",
       "tags": [
         "Actions & Movement"
@@ -22906,7 +22906,7 @@
       "register": "neutral",
       "variants": [],
       "exampleTarget": "مواد لازم برای کیک را خریدم.",
-      "exampleTranslit": "mawād-e lāzim barā kayk rā kharīdam.",
+      "exampleTranslit": "mawād-e lāzim barā-ye kayk rā kharīdam.",
       "exampleEn": "I bought the ingredients for the cake.",
       "tags": [
         "Abstract Concepts"
@@ -44700,8 +44700,8 @@
       "freqBand": 6,
       "register": "neutral",
       "variants": [],
-      "exampleTarget": "او بعد از تصادف در کوما رفت.",
-      "exampleTranslit": "ō ba'd az tasāduf dar kōmā raft.",
+      "exampleTarget": "او بعد از تصادف به کوما رفت.",
+      "exampleTranslit": "ō ba'd az tasāduf ba kōmā raft.",
       "exampleEn": "He went into a coma after the accident.",
       "tags": [
         "Abstract Concepts"
@@ -46597,7 +46597,7 @@
       "id": "lx-4040",
       "target": "خاص",
       "targetNormalized": "خاص",
-      "translit": "khaas",
+      "translit": "khās",
       "glossEn": "particular/specific",
       "pos": "adjective",
       "freqRank": 2405,
@@ -59661,7 +59661,7 @@
         "اصرار میکند"
       ],
       "exampleTarget": "او برای رفتن به آنجا اصرار کرد.",
-      "exampleTranslit": "ō barā raftan ba ānjā isrār kard.",
+      "exampleTranslit": "ō barā-ye raftan ba ānjā isrār kard.",
       "exampleEn": "He insisted on going there.",
       "tags": [
         "Actions & Movement"
@@ -73847,7 +73847,7 @@
       "id": "lx-3819",
       "target": "جنرال",
       "targetNormalized": "جنرال",
-      "translit": "general",
+      "translit": "jinrāl",
       "glossEn": "general",
       "pos": "noun",
       "freqRank": 3856,
@@ -79198,8 +79198,8 @@
       "freqBand": 8,
       "register": "formal",
       "variants": [],
-      "exampleTarget": "یک تولی از سربازان وظیفه تامین امنیت را بر عهده دارند.",
-      "exampleTranslit": "yak tōlī az sarbāzān wazēfa-ye ta'mēn-e amniyat rā bar uhda dārand.",
+      "exampleTarget": "یک تولی از سربازان وظیفه تامین امنیت را بر عهده دارد.",
+      "exampleTranslit": "yak tōlay az sarbāzān wazīfa-ye ta'mēn-e amniyat rā bar uhda dārad.",
       "exampleEn": "A company of soldiers is responsible for providing security.",
       "tags": [
         "Work & Business"
@@ -87356,14 +87356,14 @@
       "glossEn": "dust",
       "tags": [],
       "concreteness": true,
-      "translit": "gard-u khāk",
+      "translit": "gard-u-khāk",
       "freqRank": 4572,
       "freqBand": 8,
       "register": "neutral",
       "variants": [],
       "exampleTarget": "باد گرد و خاک زیاد آورد.",
       "exampleEn": "The wind brought a lot of dust.",
-      "exampleTranslit": "bād gard-u khāk-e ziyād āward."
+      "exampleTranslit": "bād gard-u-khāk-e ziyād āward."
     },
     {
       "id": "lx-6366",
@@ -90021,7 +90021,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "از مقیاس لیکرت برای جمع‌آوری داده‌ها استفاده کردیم.",
-      "exampleTranslit": "Az miqyās-e likert barā jam'āwari-ye dādahā istifāda kardēm.",
+      "exampleTranslit": "Az miqyās-e likert barā-ye jam'āwari-ye dādahā istifāda kardēm.",
       "exampleEn": "We used the Likert scale for data collection.",
       "tags": [
         "Abstract Concepts"
@@ -94809,7 +94809,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "دولت به دنبال ارائه یک بودجه متوازن برای سال آینده است.",
-      "exampleTranslit": "dawlat ba dunbāl-e irā'a-ye yak bōdja-ye mutawāzin barā sāl-e āyanda ast.",
+      "exampleTranslit": "dawlat ba dunbāl-e irā'a-ye yak bōdja-ye mutawāzin barā-ye sāl-e āyanda ast.",
       "exampleEn": "The government is seeking to present a balanced budget for next year.",
       "tags": [
         "Abstract Concepts"
@@ -95569,7 +95569,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "دولت برای حمایت از تولید داخل سهمیه‌بندی واردات اعمال کرد.",
-      "exampleTranslit": "dawlat barā himāyat az tawlīd-e dākhil sahmiya-bandi-ye wāridāt a'māl kard.",
+      "exampleTranslit": "dawlat barā-ye himāyat az tawlīd-e dākhil sahmiya-bandi-ye wāridāt a'māl kard.",
       "exampleEn": "The government imposed an import quota to protect domestic production.",
       "tags": [
         "Abstract Concepts"
@@ -96644,7 +96644,7 @@
       "id": "lx-4368",
       "target": "حمله پنجاه و یک درصد",
       "targetNormalized": "حمله پنجاه و یک درصد",
-      "translit": "hamla-ye panjāh ō yak darsad",
+      "translit": "hamla-ye panjāh wa yak darsad",
       "glossEn": "51% attack",
       "pos": "noun",
       "freqRank": 5061,
@@ -96747,7 +96747,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "بانک‌ها به دنبال راهکارهایی برای نگهداری دارایی رمزنگاری‌شده هستند.",
-      "exampleTranslit": "bānk-hā ba dunbāl-e rāhkār-hā-ye barā nigahdāri-ye dārāyi-ye ramz-nigāri-shuda hastand.",
+      "exampleTranslit": "bānk-hā ba dunbāl-e rāhkār-hā-ye barā-ye nigahdāri-ye dārāyi-ye ramz-nigāri-shuda hastand.",
       "exampleEn": "Banks are looking for solutions for custody of crypto assets.",
       "tags": [
         "Abstract Concepts"
@@ -105205,7 +105205,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "نویسنده زاویه دید دانای کل را برای روایت داستان برگزید.",
-      "exampleTranslit": "nawisanda zāwiya-ye did-e dānā-ye kull rā barā rawāyat-e dāstān bar-guzid.",
+      "exampleTranslit": "nawisanda zāwiya-ye did-e dānā-ye kull rā barā-ye rawāyat-e dāstān bar-guzid.",
       "exampleEn": "The author chose the omniscient point of view to narrate the story.",
       "tags": [
         "Abstract Concepts"
@@ -105813,7 +105813,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ساخت‌های نشان‌دار برای تأکید در کلام استفاده می‌شوند.",
-      "exampleTranslit": "sākht-hā-ye nishān-dār barā ta'kid dar kalām istifāda mē-shawand.",
+      "exampleTranslit": "sākht-hā-ye nishān-dār barā-ye ta'kid dar kalām istifāda mē-shawand.",
       "exampleEn": "Marked structures are used for emphasis in speech.",
       "tags": [
         "Abstract Concepts"
@@ -106174,7 +106174,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ابرتقارن برای هر ذره یک شریک پیشنهاد می‌دهد.",
-      "exampleTranslit": "abar-taqārun barā har zarra yak sharīk pēshnihād mēdihad.",
+      "exampleTranslit": "abar-taqārun barā-ye har zarra yak sharīk pēshnihād mēdihad.",
       "exampleEn": "Supersymmetry proposes a partner for every particle.",
       "tags": [
         "Abstract Concepts"
@@ -106193,7 +106193,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "پارسک واحد بزرگتری برای سنجش فاصله در نجوم است.",
-      "exampleTranslit": "pārsek wāhid-e buzurg-tarī barā sanjish-e fāsila dar nujūm ast.",
+      "exampleTranslit": "pārsek wāhid-e buzurg-tarī barā-ye sanjish-e fāsila dar nujūm ast.",
       "exampleEn": "A parsec is a larger unit for measuring distance in astronomy.",
       "tags": [
         "Abstract Concepts"
@@ -106231,7 +106231,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "زبانجی در شرایط تماس زبانی برای ارتباط اولیه شکل می‌گیرد.",
-      "exampleTranslit": "zabān-ji dar sharāyit-e tamās-e zabānī barā irtibāt-e awwaliya shakl mē-girad.",
+      "exampleTranslit": "zabān-ji dar sharāyit-e tamās-e zabānī barā-ye irtibāt-e awwaliya shakl mē-girad.",
       "exampleEn": "A pidgin is formed in language contact situations for basic communication.",
       "tags": [
         "Abstract Concepts"
@@ -107105,7 +107105,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "پیشرانش یونی برای سفرهای طولانی فضایی مناسب است.",
-      "exampleTranslit": "pēshrānish-e yūnī barā safar-hā-ye tūlānī-ye fazāyī munāsib ast.",
+      "exampleTranslit": "pēshrānish-e yūnī barā-ye safar-hā-ye tūlānī-ye fazāyī munāsib ast.",
       "exampleEn": "Ion propulsion is suitable for long space journeys.",
       "tags": [
         "Abstract Concepts"
@@ -107884,7 +107884,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "ذره مجازی تنها برای مدت بسیار کوتاهی وجود دارد.",
-      "exampleTranslit": "zarra-ye majāzī tanhā barā muddat-e bisyār kōtāhī wujūd dārad.",
+      "exampleTranslit": "zarra-ye majāzī tanhā barā-ye muddat-e bisyār kōtāhī wujūd dārad.",
       "exampleEn": "A virtual particle exists only for a very short time.",
       "tags": [
         "Abstract Concepts"
@@ -108055,7 +108055,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "روش اختلاف منظر برای اندازه‌گیری فواصل نزدیک استفاده می‌شود.",
-      "exampleTranslit": "rawish-e ikhtilāf-e manzar barā andāza-gīrī-ye fawāsil-e nazdīk istifāda mēshawad.",
+      "exampleTranslit": "rawish-e ikhtilāf-e manzar barā-ye andāza-gīrī-ye fawāsil-e nazdīk istifāda mēshawad.",
       "exampleEn": "The parallax method is used to measure nearby distances.",
       "tags": [
         "Abstract Concepts"
@@ -108891,7 +108891,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "آسانسور فضایی یک مفهوم جذاب برای دسترسی به مدار است.",
-      "exampleTranslit": "āsānsūr-e fazāyī yak mafhūm-e jazāb barā dastrasī ba madār ast.",
+      "exampleTranslit": "āsānsūr-e fazāyī yak mafhūm-e jazzāb barā-ye dastrasī ba madār ast.",
       "exampleEn": "The space elevator is a fascinating concept for accessing orbit.",
       "tags": [
         "Science & Technology"
@@ -110031,7 +110031,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "گرانش نیوتنی برای سرعت‌های پایین معتبر است.",
-      "exampleTranslit": "girānish-e niyūtūnī barā sur'at-hā-ye pāyīn mu'tabar ast.",
+      "exampleTranslit": "girānish-e niyūtūnī barā-ye sur'at-hā-ye pāyīn mu'tabar ast.",
       "exampleEn": "Newtonian gravity is valid for low speeds.",
       "tags": [
         "Abstract Concepts"
@@ -110145,7 +110145,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "آشکارساز ذرات برای پیدا کردن بوزون هیگز استفاده شد.",
-      "exampleTranslit": "āshkār-sāz-e zarrāt barā paydā kardan-e bōzōn-e hīgz istifāda shud.",
+      "exampleTranslit": "āshkār-sāz-e zarrāt barā-ye paydā kardan-e bōzōn-e hīgz istifāda shud.",
       "exampleEn": "A particle detector was used to find the Higgs boson.",
       "tags": [
         "Abstract Concepts"
@@ -118334,7 +118334,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "روش بازآزمایی برای بررسی ثبات ابزار استفاده شد.",
-      "exampleTranslit": "Rawish-e bāz-āzmāyi barā barrasī-ye sabāt-e abzār istifāda shud.",
+      "exampleTranslit": "Rawish-e bāz-āzmāyi barā-ye barrasī-ye sabāt-e abzār istifāda shud.",
       "exampleEn": "The test-retest method was used to check the stability of the instrument.",
       "tags": [
         "Education & Learning"
@@ -119607,7 +119607,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "از طیف معنایی برای بررسی نگرش مخاطبان استفاده شد.",
-      "exampleTranslit": "Az tayf-e ma'nāyi barā barrasī-ye nigarish-e mukhātabān istifāda shud.",
+      "exampleTranslit": "Az tayf-e ma'nāyi barā-ye barrasī-ye nigarish-e mukhātabān istifāda shud.",
       "exampleEn": "A semantic differential scale was used to examine audience attitudes.",
       "tags": [
         "Abstract Concepts"
@@ -119908,7 +119908,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "وکیل برای آزادی او استدلال کرد.",
-      "exampleTranslit": "wakīl barā āzādī-ye ō istidlāl kard.",
+      "exampleTranslit": "wakīl barā-ye āzādī-ye ō istidlāl kard.",
       "exampleEn": "The lawyer argued for his release.",
       "tags": [
         "Actions & Movement"
@@ -123007,7 +123007,7 @@
       "id": "lx-5993",
       "target": "دارالترجمه",
       "targetNormalized": "دارالترجمه",
-      "translit": "dār-ul-tarjuma",
+      "translit": "dār-ut-tarjuma",
       "glossEn": "translation center (historical)",
       "pos": "noun",
       "freqRank": 6455,
@@ -123015,7 +123015,7 @@
       "register": "formal",
       "variants": [],
       "exampleTarget": "در بیت‌الحکمه، دارالترجمه مهمی وجود داشت.",
-      "exampleTranslit": "dar bayt-ul-hikma, dār-ul-tarjuma-ye muhimmē wujūd dāsht.",
+      "exampleTranslit": "dar bayt-ul-hikma, dār-ut-tarjuma-ye muhimmē wujūd dāsht.",
       "exampleEn": "In the House of Wisdom, there was an important translation center.",
       "tags": [
         "Abstract Concepts"

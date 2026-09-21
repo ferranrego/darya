@@ -1,7 +1,8 @@
 /**
  * Apply a reviewed transliteration repair file to the lexicon, in place.
  *
- * Repairs only the two transliteration fields of entries that already exist.
+ * Repairs the transliteration fields - and, when the fault is in the script
+ * itself, the example's Dari - of entries that already exist.
  * It cannot add, remove or renumber an entry, and it refuses an id it does not
  * find: `user_words.lexeme_id` is a foreign key and cached texts store
  * `lexemeId`, so a dropped or renumbered entry silently repoints real learner
@@ -23,6 +24,16 @@ interface Repair {
   translitWas?: string;
   exampleTranslit?: string;
   exampleTranslitWas?: string;
+  /**
+   * The example's Dari, for the rarer case where the fault is in the script
+   * itself - an agreement error, a wrong preposition - and not in the Latin.
+   *
+   * Always paired with `exampleTranslit` in practice: changing the Dari
+   * without its transliteration leaves the two disagreeing, which is the
+   * defect a philologist review of this lexicon found 493 candidates for.
+   */
+  exampleTarget?: string;
+  exampleTargetWas?: string;
 }
 
 const at = process.argv.indexOf("--repairs");
@@ -53,6 +64,7 @@ for (const r of repairs) {
   for (const [field, was] of [
     ["translit", r.translitWas],
     ["exampleTranslit", r.exampleTranslitWas],
+    ["exampleTarget", r.exampleTargetWas],
   ] as const) {
     if (was === undefined) continue;
     // The repair was authored against a specific string. If the entry has moved
@@ -61,7 +73,8 @@ for (const r of repairs) {
       stale.push(`${r.id}.${field}: expected ${JSON.stringify(was)}, found ${JSON.stringify(entry[field])}`);
       continue;
     }
-    const next = field === "translit" ? r.translit : r.exampleTranslit;
+    const next =
+      field === "translit" ? r.translit : field === "exampleTranslit" ? r.exampleTranslit : r.exampleTarget;
     if (next === undefined || next === was) continue;
     entry[field] = next;
     changed++;
