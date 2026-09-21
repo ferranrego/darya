@@ -157,32 +157,44 @@ function openAiCompatible(
  */
 const providers: Provider[] = [
   openAiCompatible("huggingface", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL", "Qwen/Qwen2.5-72B-Instruct"),
-  // `reasoning_format` is Groq's, and JSON mode *rejects* its `raw` value with
-  // a 400 - so a reasoning model in this slot is only safe when told to hide
-  // its thinking. `none` effort keeps qwen3.8 behaving like the plain instruct
-  // model that used to sit here, which is what a one-second tutor reply and a
-  // shared daily token cap both want. It is also qwen3.8's own default; set
-  // explicitly because a default that matters should not be inherited.
+  // Both of these are qwen3.8's current defaults, and both are set anyway.
+  // Measured, not assumed: left alone it answers in 6 completion tokens with
+  // clean JSON, so nothing here is repairing a live failure. What it is
+  // guarding is the inheritance - `reasoning_effort` defaults "vary by model"
+  // by Groq's own documentation, and the one value JSON mode *rejects*
+  // outright is `reasoning_format: raw`, with a 400 the chain treats as fatal
+  // for the provider. A default drifting into that is a slot going dark for
+  // the life of the process, so the settings this slot needs are stated rather
+  // than inherited.
   openAiCompatible("groq", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL", "qwen/qwen3.8-27b", {
     reasoning_format: "hidden",
     reasoning_effort: "none",
   }),
   openAiCompatible("openrouter", "https://openrouter.ai/api/v1", "OPENROUTER_API_KEY", "OPENROUTER_MODEL", "openrouter/free"),
-  // GPT-OSS does not take `reasoning_format` at all - it has `include_reasoning`
-  // instead, and the two are mutually exclusive - and it always reasons. Its
-  // default effort is `medium`, which on a fallback whose whole job is to be
-  // quick would spend the remaining budget thinking. `low` plus reasoning kept
-  // out of the response is the cheapest honest configuration.
+  // GPT-OSS takes neither of the settings above: `reasoning_format` is not its
+  // parameter (`include_reasoning` is, and the two are mutually exclusive) and
+  // it rejects `reasoning_effort: none` outright. Hence two configurations for
+  // one vendor - they are not interchangeable, and a copy-paste between these
+  // two lines is a 400.
+  //
+  // It always reasons, and those tokens are billed and counted: measured on the
+  // same trivial prompt, 40 completion tokens at its default `medium` against
+  // 29 at `low`. The reasoning arrives in its own field rather than in
+  // `content`, so this costs budget and latency rather than correctness - but
+  // budget is the constraint that actually binds here, and this is the slot
+  // whose job is to be quick.
   openAiCompatible("groq-fallback", "https://api.groq.com/openai/v1", "GROQ_API_KEY", "GROQ_MODEL_FALLBACK", "openai/gpt-oss-20b", {
     include_reasoning: false,
     reasoning_effort: "low",
   }),
-  // Qwen3-32B is a *hybrid* reasoning model and the HF router gives no reliable
-  // way to switch the thinking off - it depends on which upstream provider
-  // serves the request. The -Instruct line has no thinking mode to switch, so
-  // the guarantee comes from the model choice rather than from a parameter this
-  // endpoint may ignore. A3B is 3B active parameters, which is what a
-  // last-resort fallback should cost.
+  // Qwen3-32B, which sat here, is a *hybrid* reasoning model, and the HF router
+  // offers no dependable switch for the thinking - what works depends on which
+  // upstream serves the request. Its output was never malformed; the cost is
+  // tokens. Measured on one arithmetic question whose answer is about ten
+  // tokens long, it spent 220. The -Instruct line has no thinking mode to
+  // switch off, so the saving comes from the model choice rather than from a
+  // parameter this endpoint may quietly ignore, and A3B's 3B active parameters
+  // are what a last-resort fallback should cost.
   openAiCompatible("huggingface-fallback", "https://router.huggingface.co/v1", "HUGGINGFACE_API_KEY", "HUGGINGFACE_MODEL_FALLBACK", "Qwen/Qwen3-Next-80B-A3B-Instruct"),
 ];
 
@@ -229,13 +241,15 @@ function ordered(prefer?: string[]): Provider[] {
  * Remove a reasoning preamble a model put in `content` instead of keeping to
  * itself, and return what follows.
  *
- * The providers above are each configured not to do this. This is the belt to
- * that braces, and it earns its place because the failure it prevents is the
- * expensive kind: `openrouter/free` is an *auto-router* that picks whichever
- * free model is up, so the model behind that slot changes without anything
- * here changing, and a reasoning model appearing there would turn every
- * OpenRouter attempt into a parse failure - two attempts, both paid for, with
- * nothing to show and no error naming the real cause.
+ * No provider in the chain does this today - all five were checked live, and
+ * every one of them puts reasoning in its own response field and leaves
+ * `content` clean. This is therefore a guard, not a repair, and it is kept for
+ * one specific reason: `openrouter/free` is an *auto-router* that picks
+ * whichever free model is up, so the model behind that slot changes without
+ * anything in this repo changing. The check above served
+ * `nex-agi/nex-n2.5-mini:free`, which is itself a reasoning model. A future
+ * pick that inlines its thoughts would turn every OpenRouter attempt into a
+ * parse failure - two attempts, both paid for, and an error naming nothing.
  *
  * Unclosed `<think>` is handled deliberately: it means the answer was truncated
  * mid-thought, and there is no JSON coming. Cutting to the end leaves an empty

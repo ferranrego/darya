@@ -2,12 +2,13 @@ import { describe, expect, it } from "vitest";
 import { providerOrder, stripReasoning } from "./providers.ts";
 
 /**
- * Every provider in the chain is configured to keep its reasoning out of
- * `content`, so in principle none of this runs. It exists because one slot -
- * `openrouter/free` - is an auto-router whose actual model changes without this
- * repo changing, and because a model swap is exactly the sort of edit that
- * looks harmless. The cost of being wrong is two paid attempts and a parse
- * error that names nothing.
+ * None of this runs against the chain as it stands: all five providers were
+ * checked live and every one returns reasoning in its own field, leaving
+ * `content` clean. It is kept because one slot - `openrouter/free` - is an
+ * auto-router whose actual model changes without this repo changing, and
+ * because a model swap is exactly the sort of edit that looks harmless. The
+ * cost of being wrong is two paid attempts and a parse error that names
+ * nothing.
  */
 describe("stripReasoning", () => {
   it("leaves an ordinary JSON answer untouched", () => {
