@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { translitProblems } from "../lang/prs/translit-rules.ts";
 import type { LexiconEntry } from "../content/schema";
 import { profile } from "../lang/index.ts";
 
@@ -45,6 +46,36 @@ export const translitField = TRANSLITERATED ? z.string().min(1) : z.string().opt
 
 /** Same, for schemas that require a non-empty string in the transliterated case. */
 export const requiredTranslitField = TRANSLITERATED ? z.string() : z.string().optional();
+
+/**
+ * A model's transliteration, or nothing when it broke the conventions.
+ *
+ * The orthography rules are in every prompt in this directory and were in the
+ * prompt behind every sentence in the cache that ignored them: measured, 26 of
+ * 53. A prompt asks; only a check decides.
+ *
+ * Dropped rather than repaired, and dropped rather than rejected. A wrong
+ * transliteration is worse than a missing one - it is the only pronunciation a
+ * learner gets, because the app has no audio - while rejecting the whole item
+ * would spend another provider call out of a budget every learner shares. So
+ * the Dari and the English survive and the Latin line goes quiet, which is
+ * exactly what `withoutFlattenedExamples` in `content/lexicon.ts` already does
+ * with the 1,208 authored examples that had the same fault.
+ *
+ * Callers whose schema makes the transliteration mandatory cannot use this -
+ * they drop the whole item instead (see `context-sentences.ts`).
+ */
+export function checkedTranslit(
+  translit: string | undefined,
+  target: string,
+  where: string,
+): string | undefined {
+  if (!TRANSLITERATED || !translit) return undefined;
+  const problems = translitProblems(translit, target);
+  if (problems.length === 0) return translit;
+  console.warn(`Dropped transliteration (${where}): "${translit}" - ${problems.map((p) => p.message).join("; ")}`);
+  return undefined;
+}
 
 /**
  * Render a vocabulary list for a prompt.

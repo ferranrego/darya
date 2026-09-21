@@ -8,7 +8,7 @@ import { tokenize } from "../text";
 import { completeJson, deadlineIn } from "./providers";
 import { checkGrammar } from "./grammar-check";
 import { profile } from "../lang/index.ts";
-import { TRANSLITERATED, translitField, wordList } from "./lang-format.ts";
+import { TRANSLITERATED, checkedTranslit, translitField, wordList } from "./lang-format.ts";
 import { maxOovRateFor, maxOovTypeRateFor } from "../content/difficulty.ts";
 import { isBeginnerLevel } from "../content/word-selection.ts";
 import { checkShape } from "../content/text-checks.ts";
@@ -252,7 +252,12 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
 
       return { surface, lexemeId: entry?.id ?? null };
     });
-    return { target: s.target, translit: TRANSLITERATED ? s.translit : undefined, en: s.en, tokens };
+    return {
+      target: s.target,
+      translit: checkedTranslit(s.translit, s.target, `text sentence`),
+      en: s.en,
+      tokens,
+    };
   });
 
   const oovRate = total > 0 ? oov / total : 1;
@@ -267,7 +272,7 @@ function assemble(raw: RawText, req: GenerationRequest, model: string): { doc: T
       formatVersion: CONTENT_FORMAT_VERSION,
       level: req.level.id,
       titleTarget: raw.titleTarget,
-      titleTranslit: TRANSLITERATED ? raw.titleTranslit : undefined,
+      titleTranslit: checkedTranslit(raw.titleTranslit, raw.titleTarget, "text title"),
       titleEn: raw.titleEn,
       sentences,
       vocabUsed: [...vocab].sort(),
@@ -362,7 +367,13 @@ where "index" is the number provided above for the sentence.`;
     sentences: doc.sentences.map((s, i) => {
       const repair = repairs.find(r => r.index === i);
       return repair
-        ? { target: repair.target, translit: repair.translit, en: repair.en }
+        ? {
+            target: repair.target,
+            // A repaired sentence is a fresh generation and gets the same
+            // check: nothing about having been rewritten makes its Latin safer.
+            translit: checkedTranslit(repair.translit, repair.target, "repaired sentence"),
+            en: repair.en,
+          }
         : { target: s.target, translit: s.translit, en: s.en };
     })
   };
@@ -473,7 +484,13 @@ where "index" is the number of the sentence above that you rewrote.`;
     sentences: doc.sentences.map((s, i) => {
       const repair = repairs.find((r) => r.index === i);
       return repair
-        ? { target: repair.target, translit: repair.translit, en: repair.en }
+        ? {
+            target: repair.target,
+            // A repaired sentence is a fresh generation and gets the same
+            // check: nothing about having been rewritten makes its Latin safer.
+            translit: checkedTranslit(repair.translit, repair.target, "repaired sentence"),
+            en: repair.en,
+          }
         : { target: s.target, translit: s.translit, en: s.en };
     }),
   };

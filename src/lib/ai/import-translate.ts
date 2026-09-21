@@ -1,7 +1,7 @@
 import "server-only";
 import { z } from "zod";
 import { profile } from "../lang/index.ts";
-import { LANGUAGE_NAME, requiredTranslitField, TRANSLIT_INSTRUCTION, TRANSLITERATED } from "./lang-format.ts";
+import { LANGUAGE_NAME, checkedTranslit, requiredTranslitField, TRANSLIT_INSTRUCTION, TRANSLITERATED } from "./lang-format.ts";
 import { completeJson } from "./providers.ts";
 
 /**
@@ -137,6 +137,19 @@ export async function translateImportSpan(input: {
       }
       if (input.title && !data.titleEn) {
         throw new Error("Translation returned no title");
+      }
+      /**
+       * The transliteration is already optional here, and the comment on that
+       * field says why: it is a bonus beside the English the learner actually
+       * opened the sentence for. So a transliteration that breaks the
+       * conventions is dropped on the same reasoning rather than failing a
+       * batch of otherwise good translations.
+       */
+      for (const s of data.sentences) {
+        s.translit = checkedTranslit(s.translit, input.sentences[s.i], `imported sentence ${s.i}`);
+      }
+      if (input.title) {
+        data.titleTranslit = checkedTranslit(data.titleTranslit, input.title, "imported title");
       }
       return data;
     },
