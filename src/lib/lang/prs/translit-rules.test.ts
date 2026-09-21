@@ -29,14 +29,19 @@ describe("translitProblems, against real generated output", () => {
   });
 
   it("accepts the sentences that were already correct", () => {
-    for (const ok of [
-      "u khāna rā tamīz mē-konad.",
-      "khāna-yam khūb ast.",
-      "in kitāb ast.",
-      "subh havā sarad ast.",
-    ]) {
+    for (const ok of ["khāna-yam khūb ast.", "in kitāb ast.", "subh havā sarad ast."]) {
       expect(translitProblems(ok)).toEqual([]);
     }
+  });
+
+  /**
+   * This sentence passed every rule that existed when it was cached, and was
+   * cited as one of the clean ones. The short-o rule reaches a fault none of
+   * them could see: کند is kunad. The generated set was worse than the first
+   * measurement of it could show.
+   */
+  it("catches a short o the earlier rules all passed", () => {
+    expect(rules("u khāna rā tamīz mē-konad.")).toContain("short-o");
   });
 });
 
@@ -79,6 +84,46 @@ describe("ascii-dash is about dashes inside words", () => {
 
   it("still catches a ZWNJ against a letter", () => {
     expect(rules("mī‌-rom")).toContain("ascii-dash");
+  });
+});
+
+/**
+ * Dari has three short vowels. A bare o was in 1,068 authored fields before
+ * this rule existed, because the README stated the convention and nothing
+ * checked it - the same shape of defect as kh-not-x.
+ */
+describe("short-o", () => {
+  it("catches a zamma written o", () => {
+    for (const bad of ["nomra", "por", "mardom", "bozorg", "qodrat", "soltān"]) {
+      expect(rules(bad)).toContain("short-o");
+    }
+  });
+
+  it("accepts the repaired spellings", () => {
+    for (const ok of ["numra", "pur", "mardum", "buzurg", "qudrat", "sultān"]) {
+      expect(translitProblems(ok)).toEqual([]);
+    }
+  });
+
+  it("accepts a majhul ō, which is not a short o", () => {
+    for (const ok of ["rōshan", "nawrōz", "pōhantūn", "dōst", "mōtar"]) {
+      expect(translitProblems(ok)).toEqual([]);
+    }
+  });
+
+  it("leaves loanwords alone - Dari is full of them", () => {
+    for (const loan of ["model", "hotel", "kārbon", "kod", "operā", "molekūl"]) {
+      expect(translitProblems(loan)).toEqual([]);
+    }
+  });
+
+  it("exempts per segment, so a compound keeps the loan and fixes the rest", () => {
+    expect(translitProblems("kod-guzārī")).toEqual([]);
+    expect(rules("kod-gozāri")).toContain("short-o");
+  });
+
+  it("does not fire on an o inside a longer correct word", () => {
+    expect(translitProblems("mē-rawad")).toEqual([]);
   });
 });
 

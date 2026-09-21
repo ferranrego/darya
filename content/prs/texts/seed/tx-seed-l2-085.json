@@ -3,12 +3,12 @@
   "formatVersion": "1.5.0",
   "level": "L2",
   "titleTarget": "خواهر من و پوهنتون",
-  "titleTranslit": "khāhar-e man wa pohantūn",
+  "titleTranslit": "khāhar-e man wa pōhantūn",
   "titleEn": "My sister and the university",
   "sentences": [
     {
       "target": "خواهر من در پوهنتون می‌خواند.",
-      "translit": "khāhar-e man dar pohantūn mēkhānad.",
+      "translit": "khāhar-e man dar pōhantūn mēkhānad.",
       "en": "My sister studies at the university.",
       "tokens": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "پوهنتون از خانه ما دور است.",
-      "translit": "pohantūn az khāna-ye mā dūr ast.",
+      "translit": "pōhantūn az khāna-ye mā dūr ast.",
       "en": "The university is far from our house.",
       "tokens": [
         {
@@ -66,7 +66,7 @@
     },
     {
       "target": "پوهنتون هر سال شاگردان نو می‌گیرد.",
-      "translit": "pohantūn har sāl shāgirdān-e naw mēgīrad.",
+      "translit": "pōhantūn har sāl shāgirdān-e naw mēgīrad.",
       "en": "The university takes new students every year.",
       "tokens": [
         {
@@ -97,7 +97,7 @@
     },
     {
       "target": "درس پوهنتون بسیار سخت است.",
-      "translit": "dars-e pohantūn bisyār sakht ast.",
+      "translit": "dars-e pōhantūn bisyār sakht ast.",
       "en": "The university lesson is very difficult.",
       "tokens": [
         {
@@ -124,7 +124,7 @@
     },
     {
       "target": "شاید او الان در پوهنتون است.",
-      "translit": "shāyad ō al'ān dar pohantūn ast.",
+      "translit": "shāyad ō al'ān dar pōhantūn ast.",
       "en": "Maybe she is at the university now.",
       "tokens": [
         {

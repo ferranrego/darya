@@ -145,11 +145,12 @@ function checkDariTranslit(
   /**
    * The shared rule set, which the generator also runs.
    *
-   * `kh-not-x` and `ascii-dash` were warnings while 59 lexicon entries spelled
-   * خ the academic way; those entries are repaired, so both fail now and
-   * authored content is held to exactly what generated content is. The checks
-   * above overlap this deliberately - they carry the more specific messages -
-   * so only rules they do not cover are reported here.
+   * `kh-not-x`, `ascii-dash` and `short-o` each began as a convention that was
+   * written down and never checked, and each was promoted to a failure only
+   * once the content behind it was repaired - 59 entries for the first, 1,068
+   * fields for `short-o`. The checks above overlap this deliberately: they
+   * carry the more specific messages, so only rules they do not cover are
+   * reported here.
    */
   const alreadyReported = new Set(["me-prefix", "sher", "dost", "ezafe", "short-e", "chi", "flattened"]);
   for (const problem of translitProblems(text, script, { id })) {

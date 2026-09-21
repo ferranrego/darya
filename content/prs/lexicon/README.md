@@ -34,6 +34,7 @@ audio, so the Latin line is the only pronunciation a learner gets.
 | Rule | Write | Not |
 |---|---|---|
 | Short kasra is **i** (Dari has three short vowels: a, i, u) | kitāb, bisyār, zindagī, mu'allim, imrōz, shāgird | ketāb, besyār |
+| A short **o** is Iranian: the zamma is **u**, and a و is majhul **ō** | numra, pur, mardum, buzurg, qudrat; rōshan, nawrōz | nomra, por, mardom, roshan |
 | **Majhul ē/ō** keep their macron and never become i/u | dōst, nēst, sē, mē-, pēsh | dost, se, me-, pesh |
 | The **ezafe** stays -e / -ye (its own hyphen segment) | kitāb-e man, khāna-ye mā | kitāb-i man, khāna-e mā |
 | چه is **chi**, in compounds too; spoken چی is chī | chi, chirā, chitōr | che, cherā, chetōr |
@@ -47,6 +48,11 @@ audio, so the Latin line is the only pronunciation a learner gets.
 | The agent suffix ـنده is **-anda** | nawīsanda, paranda, kunandagān, dihanda | nawīsinda, parinda (but zinda) |
 | A ی written inside a word is **ē or ī**, never short i | rēzish, pēchish, andēsha, hawēlī, bē-rawiya | rizish, bi-rawiya |
 | Letter names have majhul ē; alif with i | alif, bē, pē, tē, sē, chē, khē, rē, zē, zhē, fē | alef, be |
+
+Loanwords keep their own o (`model`, `hotel`, `kārbon`, `kod`) - Dari is full
+of them, and the registry is the same `SHORT_E_LOANWORDS` the i rule uses. The
+exemption is per hyphen segment, so `kod-guzārī` keeps the loan and still takes
+the u in the Dari half.
 
 Exempt from the i rule: European loanwords that keep a real e sound (`model`,
 `hotel`, `internet`, the `-lōzhī` sciences), and names of places and people

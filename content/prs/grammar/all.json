@@ -3198,7 +3198,7 @@
                   "id": "ge-94-1",
                   "type": "fillBlank",
                   "target": "موتر ___ کلان است",
-                  "translit": "motar-e ___ kalān ast",
+                  "translit": "mōtar-e ___ kalān ast",
                   "en": "My car is big.",
                   "answer": {
                     "target": "من",
@@ -13967,7 +13967,7 @@
                   "examples": [
                     {
                       "target": "معلم محترم، خوش آمدید",
-                      "translit": "mu'allim-e mohtaram, khush āmadēd",
+                      "translit": "mu'allim-e muhtaram, khush āmadēd",
                       "en": "Respected teacher, welcome.",
                       "highlight": "محترم"
                     },
@@ -13989,7 +13989,7 @@
                   "en": "Respected teacher, welcome.",
                   "answer": {
                     "target": "محترم",
-                    "translit": "mohtaram"
+                    "translit": "muhtaram"
                   },
                   "distractors": [
                     {
@@ -14021,7 +14021,7 @@
                   "pairs": [
                     {
                       "target": "محترم",
-                      "translit": "mohtaram",
+                      "translit": "muhtaram",
                       "en": "respected"
                     },
                     {
@@ -14046,7 +14046,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "دوست محترم، تشکر",
-                  "translit": "dōst-e mohtaram, tashakur",
+                  "translit": "dōst-e muhtaram, tashakur",
                   "en": "Respected friend, thank you.",
                   "distractorsTarget": [
                     {
@@ -14055,7 +14055,7 @@
                     },
                     {
                       "target": "دوست محترم، سلام",
-                      "translit": "dōst-e mohtaram, salām"
+                      "translit": "dōst-e muhtaram, salām"
                     }
                   ]
                 },
@@ -14234,7 +14234,7 @@
                   "id": "ge-80-6",
                   "type": "spotError",
                   "target": "نامه امضا کرده شد توسط رئیس",
-                  "translit": "nāma imzā karda shud tawassot-e ra'īs",
+                  "translit": "nāma imzā karda shud tawassut-e ra'īs",
                   "en": "The letter was signed by the chief.",
                   "errorWord": {
                     "target": "کرده",
@@ -15128,7 +15128,7 @@
                   "examples": [
                     {
                       "target": "تجربه به دست آورد",
-                      "translit": "tajroba ba dast āward",
+                      "translit": "tajruba ba dast āward",
                       "en": "He gained experience.",
                       "highlight": "به دست آورد"
                     }
@@ -15141,7 +15141,7 @@
                   "type": "chooseTranslation",
                   "direction": "toEn",
                   "target": "تجربه به دست آورد",
-                  "translit": "tajroba ba dast āward",
+                  "translit": "tajruba ba dast āward",
                   "en": "He gained experience.",
                   "distractorsEn": [
                     "He lost experience.",
@@ -15201,16 +15201,16 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "او فرصت خود را از دست داد",
-                  "translit": "ō forsat-e khud rā az dast dād",
+                  "translit": "ō fursat-e khud rā az dast dād",
                   "en": "He lost his opportunity.",
                   "distractorsTarget": [
                     {
                       "target": "او فرصت خود را به دست آورد",
-                      "translit": "ō forsat-e khud rā ba dast āward"
+                      "translit": "ō fursat-e khud rā ba dast āward"
                     },
                     {
                       "target": "او فرصت خود را به کار برد",
-                      "translit": "ō forsat-e khud rā ba kār burd"
+                      "translit": "ō fursat-e khud rā ba kār burd"
                     }
                   ]
                 },
@@ -15218,7 +15218,7 @@
                   "id": "ge-87-5",
                   "type": "spotError",
                   "target": "تجربه از دست آورد",
-                  "translit": "tajroba az dast āward",
+                  "translit": "tajruba az dast āward",
                   "en": "He gained experience.",
                   "errorWord": {
                     "target": "از",
@@ -15967,7 +15967,7 @@
                   "type": "chooseTranslation",
                   "direction": "toTarget",
                   "target": "به معلم محترم: لطفاً بنشینید",
-                  "translit": "ba mu'allim-e mohtaram: lutfan bunishīnēd",
+                  "translit": "ba mu'allim-e muhtaram: lutfan bunishīnēd",
                   "en": "To the respected teacher: please sit.",
                   "distractorsTarget": [
                     {

@@ -22,6 +22,7 @@ import {
   bareShortIEnding,
   cheAsWord,
   isFlattenedTranslit,
+  isShortEException,
   shortEVowel,
 } from "./translit-check.ts";
 
@@ -62,6 +63,7 @@ export type TranslitRule =
   | "ezafe"
   | "short-e"
   | "chi"
+  | "short-o"
   | "final-yeh"
   | "flattened"
   | "ascii-dash";
@@ -107,6 +109,28 @@ export function translitProblems(
 
   const che = cheAsWord(t);
   if (che) add("chi", `writes چه as "${che}" - it is chi`);
+
+  /**
+   * Dari has three short vowels - a, i, u - so a bare o is Iranian. It is
+   * either a zamma written u (numra, pur, mardum) or a majhul written ō
+   * (rōshan, nawrōz); which one the Dari script decides, and neither is a
+   * plain o. 1,068 fields carried one before this rule existed, because the
+   * convention was written down and never checked.
+   *
+   * A loan keeps its own vowel - Dari is full of them - and the registry for
+   * that is `SHORT_E_LOANWORDS`, which already served the parallel short-e
+   * rule. The exemption is per hyphen segment, so `kod-guzārī` keeps the loan
+   * and still fixes the Dari half.
+   */
+  for (const word of t.split(/\s+/)) {
+    for (const seg of word.split("-")) {
+      const bare = seg.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, "");
+      if (!bare || !/o/i.test(bare.replace(/ō/g, ""))) continue;
+      if (isShortEException(bare)) continue;
+      add("short-o", `writes "${bare}" with a short o - Dari has a, i, u: it is u, or majhul ō`);
+      break;
+    }
+  }
 
   /**
    * Opt-in, because the gate applies it to grammar-hub content only. Run

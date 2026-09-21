@@ -237,6 +237,9 @@ export const SHORT_E_LOANWORDS: ReadonlySet<string> = new Set([
   "egzōn", "egzom", "egzōm", "endemik", "endemīk", "endemi", "endemī", "terāpōtīk",
   "pātōzhen", "pātōzhenez", "menenjit", "meninzhīt", "telomer", "telōmer", "krisper",
   "diyābet", "demans", "demāns", "epī", "molekūl",
+  // Loans whose short o is theirs, not a zamma: the Dari writes no و for it,
+  // so the short-o rule would otherwise nativise them (kārbun, kud).
+  "kārbon", "kod",
   "māyelōpātī", "wīremī", "biyōmetrīk", "rezhīm",
   // spelled-out initialisms: dī-en-ē, ār-en-ē, jī-pī-es, em-ār-āy
   "en", "es", "em",
