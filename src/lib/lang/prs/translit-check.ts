@@ -240,6 +240,10 @@ export const SHORT_E_LOANWORDS: ReadonlySet<string> = new Set([
   // Loans whose short o is theirs, not a zamma: the Dari writes no و for it,
   // so the short-o rule would otherwise nativise them (kārbun, kud).
   "kārbon", "kod",
+  // کر is the choir (chorus), not کر "deaf": a loan whose short o is its own.
+  // The two are homographs in the script, which is how a repair pass matching
+  // on the Dari alone turned the choir into the deaf man.
+  "kor",
   "māyelōpātī", "wīremī", "biyōmetrīk", "rezhīm",
   // spelled-out initialisms: dī-en-ē, ār-en-ē, jī-pī-es, em-ār-āy
   "en", "es", "em",
