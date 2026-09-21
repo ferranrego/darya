@@ -2,7 +2,8 @@ import { z } from "zod";
 import { completeJson } from "./providers";
 import { assertKnownVocab } from "./vocab-check";
 import { profile } from "../lang/index.ts";
-import { LANGUAGE_NAME, requiredTranslitField, sentenceShape, wordWithGloss } from "./lang-format.ts";
+import { translitProblems } from "../lang/prs/translit-rules.ts";
+import { LANGUAGE_NAME, TRANSLITERATED, requiredTranslitField, sentenceShape, wordWithGloss } from "./lang-format.ts";
 
 const MAX_SENTENCE_WORDS = 12;
 
@@ -60,6 +61,23 @@ export async function generateContextSentences(
           // Relaxed validation: we no longer strictly require the exact infinitive form
           // to be present in the sentence, as verbs will naturally be conjugated.
           assertKnownVocab(sentence.target, MAX_SENTENCE_WORDS);
+          /**
+           * The orthography rules are in this prompt, and were in the prompt
+           * that wrote every sentence now cached: 26 of those 53 break them
+           * anyway, with `mi-` for `mē-`, `ketāb` for `kitāb`, `dust` for
+           * `dōst`. Nothing looked at the transliteration - `assertKnownVocab`
+           * reads the Dari - so a prompt was doing a check's job.
+           *
+           * Dropped rather than repaired, and dropped one sentence at a time:
+           * a wrong entry is worse than a missing one, and the batch only
+           * fails, costing a retry, when all three are bad.
+           */
+          if (TRANSLITERATED && sentence.translit) {
+            const bad = translitProblems(sentence.translit, sentence.target);
+            if (bad.length > 0) {
+              throw new Error(`translit "${sentence.translit}": ${bad.map((b) => b.message).join("; ")}`);
+            }
+          }
           good.push(sentence);
         } catch (e) {
           problems.push(e instanceof Error ? e.message : String(e));
