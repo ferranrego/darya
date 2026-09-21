@@ -143,13 +143,18 @@ function checkDariTranslit(
   const bi = nonBuPrefix(text, script, presentStemPairs, nonVerbHeadwords);
   if (bi) fail(`${subject}: ${field} writes the verb prefix as "${bi}" - it is bu- (budānam, bugīr; biyā stays) (${text})`);
   /**
-   * The shared rule set, which the generator also runs. Everything it reports
-   * beyond the checks above is either already failed on (so reporting twice
-   * would be noise) or grandfathered - see NOT_YET_ENFORCED.
+   * The shared rule set, which the generator also runs.
+   *
+   * `kh-not-x` and `ascii-dash` were warnings while 59 lexicon entries spelled
+   * خ the academic way; those entries are repaired, so both fail now and
+   * authored content is held to exactly what generated content is. The checks
+   * above overlap this deliberately - they carry the more specific messages -
+   * so only rules they do not cover are reported here.
    */
+  const alreadyReported = new Set(["me-prefix", "sher", "dost", "ezafe", "short-e", "chi", "flattened"]);
   for (const problem of translitProblems(text, script, { id })) {
-    if (!NOT_YET_ENFORCED.has(problem.rule)) continue;
-    conventionBacklog.push(`${subject} ${field}: ${problem.message} (${text})`);
+    if (alreadyReported.has(problem.rule)) continue;
+    fail(`${subject}: ${field} ${problem.message} (${text})`);
   }
   // Review only: which long vowel a written ی was cannot be decided here.
   for (const w of medialYehWithoutLongVowel(text, script)) yehReview.push(`${subject} ${field}: ${w}`);
@@ -165,23 +170,6 @@ for (const m of readFileSync(join(import.meta.dirname, "../src/lib/lang/prs/conj
 }
 /** Words whose ی has no long vowel in the Latin, reported as warnings. */
 const yehReview: string[] = [];
-
-/**
- * Conventions that are checked but not yet enforced, and the backlog that is
- * the reason why.
- *
- * `kh-not-x` and `ascii-dash` were only ever prompt instructions until the
- * rules moved into `src/lib/lang/prs/translit-rules.ts`, so authored content
- * was never held to them: 59 lexicon entries spell خ as x (moxaddir, pāsox,
- * nusxha) and one alphabet entry carries a non-ASCII dash. Failing on them
- * would make `pnpm gate` red for work unrelated to whoever next runs it, and
- * a gate that cannot be made green is a gate people learn to skip. Generated
- * content *is* rejected on both - it has no backlog to grandfather.
- *
- * Promote these to `fail` once the 60 are repaired.
- */
-const NOT_YET_ENFORCED = new Set(["kh-not-x", "ascii-dash"]);
-const conventionBacklog: string[] = [];
 
 /** Latin past and present stems of the lexicon's verbs, for the 1pl check. */
 const verbStems = new Set<string>(["hast", "nēst", "būd", "bud", "kard", "raft", "khānd", "guft", "dīd"]);
@@ -718,7 +706,6 @@ if (!profile.capabilities.scriptCourse) {
     console.log(`✓ grammar/${level}.json (${course.blocks.length} blocks, ${lessonCount} lessons, ${exerciseCount} exercises${warnNote})`);
   }
 }
-
 
 // Every `grammarPoint` the course defines, for the seed-text tag check below.
 // Read from the same barrel the course itself is validated from, so the two
@@ -1623,12 +1610,6 @@ if (lang === "prs" && lexicon) {
     if (bad || che) cellFailures++;
   }
   if (cellFailures === 0) console.log(`✓ transliteration in ${cells.length} table cells and pattern parts`);
-  if (conventionBacklog.length) {
-    console.warn(
-      `⚠ ${conventionBacklog.length} authored transliteration(s) break a convention that is checked but not ` +
-        `yet enforced (generated content is rejected on these; e.g. ${conventionBacklog.slice(0, 2).join("; ")})`,
-    );
-  }
   if (yehReview.length) {
     console.warn(
       `⚠ ${yehReview.length} word(s) where the Dari writes a ی inside the word and the Latin shows no long vowel ` +

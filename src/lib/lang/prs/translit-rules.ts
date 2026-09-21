@@ -45,6 +45,8 @@ const START = "(?<![\\p{L}\\p{M}])";
  * reason alone. Normalize first, then test.
  */
 const EXOTIC_DASH = /[‐‑‒–—‌‍]/g;
+/** The same set as a character class, for composing into other patterns. */
+const EXOTIC_DASH_CLASS = "[\\u2010\\u2011\\u2012\\u2013\\u2014\\u200c\\u200d]";
 
 /** The ASCII-hyphen form of a transliteration, for matching against. */
 export function normalizeTranslitDashes(translit: string): string {
@@ -126,8 +128,18 @@ export function translitProblems(
     add("flattened", "no long or majhul vowel anywhere - Iranian-flattened");
   }
 
-  if (translit !== normalizeTranslitDashes(translit)) {
-    add("ascii-dash", "contains a non-ASCII dash or ZWNJ - the Latin uses a plain hyphen");
+  /**
+   * Only a dash *inside a word* is the error this catches - `mī‐rom`, where a
+   * U+2010 or a ZWNJ hides the verb prefix from a plain `mi-` test.
+   *
+   * A standalone dash is a typographic choice and none of this rule's
+   * business: the alphabet course writes alif's sound as `ā / –`, meaning "ā,
+   * or nothing", and an earlier version of this check called that a defect and
+   * would have had the content bent to fit the rule. Requiring a letter on one
+   * side keeps it to the case it was written for.
+   */
+  if (new RegExp(`(?:[\\p{L}\\p{M}]${EXOTIC_DASH_CLASS}|${EXOTIC_DASH_CLASS}[\\p{L}\\p{M}])`, "u").test(translit)) {
+    add("ascii-dash", "contains a non-ASCII dash or ZWNJ inside a word - the Latin uses a plain hyphen");
   }
 
   return out;

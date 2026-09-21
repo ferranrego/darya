@@ -62,6 +62,26 @@ describe("word boundaries around long vowels", () => {
   });
 });
 
+/**
+ * The rule exists for a dash hiding inside a word. A standalone one is
+ * typography: the alphabet course gives alif's sound as `ā / –`, meaning "ā,
+ * or nothing". An earlier version of this check called that a defect, which
+ * would have meant editing correct content to satisfy an imprecise rule.
+ */
+describe("ascii-dash is about dashes inside words", () => {
+  it("leaves a standalone en dash alone", () => {
+    expect(translitProblems("ā / –")).toEqual([]);
+  });
+
+  it("still catches one wedged between letters", () => {
+    expect(rules("mī‐rom")).toContain("ascii-dash");
+  });
+
+  it("still catches a ZWNJ against a letter", () => {
+    expect(rules("mī‌-rom")).toContain("ascii-dash");
+  });
+});
+
 describe("normalizeTranslitDashes", () => {
   it("maps the dashes and joiners a model reaches for onto a plain hyphen", () => {
     expect(normalizeTranslitDashes("mī‐rom")).toBe("mī-rom");
